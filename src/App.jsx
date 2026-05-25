@@ -53,11 +53,17 @@ import {
   calculateInvoiceTotals, 
   formatCurrencyHelper 
 } from './accountingUtils';
-import { scanReceiptWithGemini, fileToBase64 } from './geminiService';
+import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini } from './geminiService';
+import ReactMarkdown from 'react-markdown';
 
 export default function App() {
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
+  
+  // Advisor State
+  const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
+  const [advisorLoading, setAdvisorLoading] = useState(false);
+  const [advisorReport, setAdvisorReport] = useState('');
   
   // App States
   const [invoices, setInvoices] = useState(() => {
@@ -124,6 +130,33 @@ export default function App() {
 
   const handleAddExpense = (newExp) => {
     setExpenses([newExp, ...expenses]);
+  };
+
+  const handleRequestAudit = async () => {
+    if (!companyDetails.geminiApiKey) {
+      alert("Veuillez d'abord configurer votre clé API Gemini dans l'onglet Configuration !");
+      return;
+    }
+    setAdvisorModalOpen(true);
+    setAdvisorLoading(true);
+    setAdvisorReport('');
+    try {
+      const dashboardData = {
+        totalRevenues,
+        pendingRevenues,
+        totalExpenses,
+        bankBalance,
+        estimatedTaxes,
+        recentInvoices: invoices.slice(0, 5),
+        recentExpenses: expenses.slice(0, 5)
+      };
+      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey, dashboardData);
+      setAdvisorReport(report);
+    } catch (err) {
+      setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
+    } finally {
+      setAdvisorLoading(false);
+    }
   };
 
   return (
@@ -221,6 +254,15 @@ export default function App() {
 
           <div className="flex items-center gap-4">
             {/* Quick Actions */}
+            {currentTab === 'dashboard' && (
+              <button 
+                onClick={handleRequestAudit} 
+                className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-750 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                Audit Smart-Comptable
+              </button>
+            )}
             <button 
               onClick={() => setCurrentTab('ocr')} 
               className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-750 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
@@ -287,6 +329,43 @@ export default function App() {
           </div>
         </div>
       </main>
+
+      {/* AI Advisor Modal */}
+      {advisorModalOpen && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-surface-900 border border-slate-800 rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <div className="p-6 border-b border-slate-800/50 flex justify-between items-center bg-slate-900/50">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shadow-glow">
+                  <Sparkles className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-extrabold text-lg text-white">Smart-Comptable IA</h3>
+                  <p className="text-xs text-brand-400 font-medium">Assistant Financier & Fiscal Tunisie</p>
+                </div>
+              </div>
+              <button onClick={() => setAdvisorModalOpen(false)} className="text-slate-500 hover:text-white p-2">
+                ✕
+              </button>
+            </div>
+            
+            <div className="p-8 overflow-y-auto flex-1 text-sm text-slate-300 prose prose-invert prose-brand max-w-none">
+              {advisorLoading ? (
+                <div className="flex flex-col items-center justify-center py-12 space-y-4">
+                  <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
+                  <p className="text-slate-400 font-medium animate-pulse">Analyse de vos flux de trésorerie et provisions IS/CNSS en cours...</p>
+                </div>
+              ) : (
+                <ReactMarkdown>{advisorReport}</ReactMarkdown>
+              )}
+            </div>
+            
+            <div className="p-4 border-t border-slate-800/50 bg-slate-900/50 text-center">
+              <p className="text-[10px] text-slate-500">Penni AI n'est pas un conseiller fiscal agréé. Validez toujours vos déclarations avec un expert-comptable inscrit à l'OECT.</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
