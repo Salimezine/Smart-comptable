@@ -15,8 +15,8 @@ export const scanReceiptWithGemini = async (apiKey, base64Image, mimeType) => {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  // Utilisation de gemini-1.5-flash car il est très rapide et excellent pour le texte/images
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  // Utilisation de gemini-3.5-flash car c'est le modèle le plus récent et performant
+  const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
   const prompt = `Tu es un assistant comptable expert tunisien. 
 Analyse l'image de cette facture ou ce reçu et extrais les informations suivantes au format JSON strict (ne retourne QUE le JSON, sans blocs markdown) :
