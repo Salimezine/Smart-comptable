@@ -91,9 +91,7 @@ export default function App() {
       iban: "TN59 3000 6000 0123 4567 8901 234", // RIB tunisien
       bic: "UIBKTNTTXXX",
       currency: "TND",
-      geminiApiKey: "",
-      n8nScanUrl: "https://votre-n8n.com/webhook/scan-receipt",
-      n8nAnalyzeUrl: "https://votre-n8n.com/webhook/analyze-dashboard"
+      geminiApiKey: ""
     };
   });
 
@@ -148,7 +146,7 @@ export default function App() {
         recentInvoices: invoices.slice(0, 5),
         recentExpenses: expenses.slice(0, 5)
       };
-      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey, dashboardData, companyDetails.n8nAnalyzeUrl);
+      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey, dashboardData);
       setAdvisorReport(report);
     } catch (err) {
       setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
@@ -310,7 +308,6 @@ export default function App() {
                 onAddExpense={handleAddExpense}
                 formatCurrency={formatCurrency}
                 geminiApiKey={companyDetails.geminiApiKey}
-                n8nScanUrl={companyDetails.n8nScanUrl}
               />
             )}
             {currentTab === 'workflow' && (
@@ -983,7 +980,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 /* ==========================================================================
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
-function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, n8nScanUrl }) {
+function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
   const [mode, setMode] = useState('choice'); // 'choice' | 'manual' | 'scanning' | 'result' | 'success'
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
@@ -1118,7 +1115,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, n8nScan
     setMode('scanning');
     try {
       const { base64Data, mimeType } = await fileToBase64(file);
-      const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name, n8nScanUrl);
+      const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name);
       applyFormData(data);
       setMode('result');
     } catch (err) {
@@ -1629,38 +1626,16 @@ function SettingsView({ companyDetails, setCompanyDetails }) {
         </div>
       )}
 
-      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30 space-y-4">
-        <label className="block text-[10px] text-brand-400 font-bold uppercase flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5" /> Configuration n8n
+      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30">
+        <label className="block text-[10px] text-brand-400 font-bold mb-1.5 uppercase flex items-center gap-1.5">
+          <Sparkles className="w-3.5 h-3.5" /> Clé API Google Gemini
         </label>
-
-        <div>
-          <label className="block text-[10px] text-slate-400 font-bold mb-1 uppercase">Clé d'API n8n</label>
-          <input type="password" placeholder="Votre clé d'API n8n..."
-            value={companyDetails.geminiApiKey || ''}
-            onChange={(e) => setCompanyDetails({...companyDetails, geminiApiKey: e.target.value})}
-            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-          <p className="text-[9px] text-slate-500 mt-1">Stockée localement, envoyée aux webhooks.</p>
-        </div>
-
-        <div>
-          <label className="block text-[10px] text-slate-400 font-bold mb-1 uppercase">Webhook Scan de reçus</label>
-          <input type="url" placeholder="https://votre-n8n.com/webhook/scan-receipt"
-            value={companyDetails.n8nScanUrl || ''}
-            onChange={(e) => setCompanyDetails({...companyDetails, n8nScanUrl: e.target.value})}
-            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-
-        <div>
-          <label className="block text-[10px] text-slate-400 font-bold mb-1 uppercase">Webhook Analyse financière</label>
-          <input type="url" placeholder="https://votre-n8n.com/webhook/analyze-dashboard"
-            value={companyDetails.n8nAnalyzeUrl || ''}
-            onChange={(e) => setCompanyDetails({...companyDetails, n8nAnalyzeUrl: e.target.value})}
-            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
+        <input type="password" placeholder="AIzaSy..." 
+          value={companyDetails.geminiApiKey || ''}
+          onChange={(e) => setCompanyDetails({...companyDetails, geminiApiKey: e.target.value})}
+          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+        />
+        <p className="text-[9px] text-slate-500 mt-1.5">Clé Gemini stockée localement. Envoyée au workflow n8n pour le scan et l'analyse.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -1797,7 +1772,7 @@ function WorkflowView({
         recentInvoices: invoices.slice(0, 5),
         recentExpenses: expenses.slice(0, 5)
       };
-      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey || "local", dashboardData, companyDetails.n8nAnalyzeUrl);
+      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey || "local", dashboardData);
       setAuditReport(report);
       setActiveStep(4); // aller à l'étape finale
     } catch (e) {
