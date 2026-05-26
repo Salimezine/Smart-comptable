@@ -1,17 +1,7 @@
 import Tesseract from 'tesseract.js';
 
-/* ============================================================
-   CONFIGURATION N8N — Modifie ces valeurs pour pointer vers
-   tes propres webhooks n8n.
-   ============================================================ */
-const N8N_BASE_URL = 'https://votre-n8n.com/webhook';
-const N8N_SCAN_ENDPOINT = `${N8N_BASE_URL}/scan-receipt`;
-const N8N_ANALYZE_ENDPOINT = `${N8N_BASE_URL}/analyze-dashboard`;
-const N8N_AUTH_HEADER = 'X-N8N-API-Key'; // Nom du header d'auth
+const N8N_AUTH_HEADER = 'X-N8N-API-Key';
 
-/**
- * Appel générique à un webhook n8n.
- */
 async function callN8nWebhook(url, payload, apiKey) {
   const headers = { 'Content-Type': 'application/json' };
   if (apiKey && apiKey !== 'local' && apiKey !== 'n8n-local') {
@@ -30,16 +20,16 @@ async function callN8nWebhook(url, payload, apiKey) {
 
 /**
  * Scan d'un justificatif via n8n (ou OCR local / simulation en fallback).
- * @param {string}  apiKey      - Clé d'API n8n
- * @param {string}  base64Image - Document encodé en base64
- * @param {string}  mimeType    - Type MIME (image/png, application/pdf, …)
- * @param {string}  fileName    - Nom du fichier original
+ * @param {string}  apiKey       - Clé d'API n8n
+ * @param {string}  base64Image  - Document encodé en base64
+ * @param {string}  mimeType     - Type MIME (image/png, application/pdf, …)
+ * @param {string}  fileName     - Nom du fichier original
+ * @param {string}  webhookUrl   - URL du webhook n8n pour le scan
  */
-export const scanReceiptWithGemini = async (apiKey, base64Image, mimeType, fileName = '') => {
-  // Tentative webhook n8n
-  if (apiKey && apiKey !== 'local') {
+export const scanReceiptWithGemini = async (apiKey, base64Image, mimeType, fileName = '', webhookUrl = '') => {
+  if (apiKey && apiKey !== 'local' && webhookUrl) {
     try {
-      const data = await callN8nWebhook(N8N_SCAN_ENDPOINT, {
+      const data = await callN8nWebhook(webhookUrl, {
         base64Image,
         mimeType,
         fileName,
@@ -186,11 +176,10 @@ export const scanReceiptWithGemini = async (apiKey, base64Image, mimeType, fileN
  * @param {Object} dashboardData - Indicateurs financiers
  * @returns {Promise<string>}    - Rapport Markdown
  */
-export const analyzeDashboardWithGemini = async (apiKey, dashboardData) => {
-  // Tentative webhook n8n
-  if (apiKey && apiKey !== 'local' && apiKey !== 'n8n-local') {
+export const analyzeDashboardWithGemini = async (apiKey, dashboardData, webhookUrl = '') => {
+  if (apiKey && apiKey !== 'local' && apiKey !== 'n8n-local' && webhookUrl) {
     try {
-      const data = await callN8nWebhook(N8N_ANALYZE_ENDPOINT, { dashboardData }, apiKey);
+      const data = await callN8nWebhook(webhookUrl, { dashboardData }, apiKey);
       return data.report || data.markdown || JSON.stringify(data);
     } catch (e) {
       console.warn("Webhook n8n analyse échoué, basculement vers le moteur local :", e.message);
