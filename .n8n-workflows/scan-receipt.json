@@ -18,22 +18,19 @@
       "parameters": {
         "method": "POST",
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpQueryAuth",
+        "authentication": "none",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "key",
-              "value": "={{ $env.GEMINI_API_KEY }}"
+              "value": "={{ $json.body.apiKey }}"
             }
           ]
         },
         "sendBody": true,
-        "bodyParameters": {
-          "parameters": []
-        },
-        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [\n      { \"text\": {{ $json.body.prompt | toJSON }} },\n      {\n        \"inline_data\": {\n          \"mime_type\": {{ $json.body.mimeType | toJSON }},\n          \"data\": {{ $json.body.base64Image | toJSON }}\n        }\n      }\n    ]\n  }]\n}",
+        "specifyBody": "json",
+        "jsonBody": "={ \"contents\": [ { \"parts\": [ { \"text\": {{ JSON.stringify($json.body.prompt) }} }, { \"inline_data\": { \"mime_type\": {{ JSON.stringify($json.body.mimeType) }}, \"data\": {{ JSON.stringify($json.body.base64Image) }} } } ] } ] }",
         "options": {}
       },
       "id": "gemini-call",
@@ -44,7 +41,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Extraire le texte JSON de la réponse Gemini\nconst text = $input.first().json.candidates[0].content.parts[0].text;\nconst jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();\nconst data = JSON.parse(jsonStr);\n\nreturn [{\n  json: {\n    supplier: data.supplier || '',\n    matriculeFiscal: data.matriculeFiscal || '',\n    date: data.date || new Date().toISOString().split('T')[0],\n    subtotal: parseFloat(data.subtotal) || 0,\n    fodec: parseFloat(data.fodec) || 0,\n    vatRate: parseFloat(data.vatRate) || 19,\n    vatAmount: parseFloat(data.vatAmount) || 0,\n    stampDuty: data.stampDuty !== undefined ? parseFloat(data.stampDuty) : 1.000,\n    totalAmount: parseFloat(data.totalAmount) || 0,\n    category: data.category || 'Autres',\n    invoiceNumber: data.invoiceNumber || ''\n  }\n}];"
+        "jsCode": "const text = $input.first().json.candidates[0].content.parts[0].text;\nconst jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();\nconst data = JSON.parse(jsonStr);\n\nreturn [{\n  json: {\n    supplier: data.supplier || '',\n    matriculeFiscal: data.matriculeFiscal || '',\n    date: data.date || new Date().toISOString().split('T')[0],\n    subtotal: parseFloat(data.subtotal) || 0,\n    fodec: parseFloat(data.fodec) || 0,\n    vatRate: parseFloat(data.vatRate) || 19,\n    vatAmount: parseFloat(data.vatAmount) || 0,\n    stampDuty: data.stampDuty !== undefined ? parseFloat(data.stampDuty) : 1.000,\n    totalAmount: parseFloat(data.totalAmount) || 0,\n    category: data.category || 'Autres',\n    invoiceNumber: data.invoiceNumber || ''\n  }\n}];"
       },
       "id": "parse-response",
       "name": "Parser la réponse",
@@ -80,5 +77,5 @@
     "executionOrder": "v1"
   },
   "tags": ["Smart-Comptable"],
-  "versionId": "1"
+  "versionId": "3"
 }

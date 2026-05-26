@@ -1,5 +1,5 @@
 {
-  "name": "Smart-Comptable - Analyse financière",
+  "name": "Smart-Comptable - Analyse financi\u00e8re",
   "nodes": [
     {
       "parameters": {
@@ -18,18 +18,18 @@
       "parameters": {
         "method": "POST",
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpQueryAuth",
+        "authentication": "none",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "key",
-              "value": "={{ $env.GEMINI_API_KEY }}"
+              "value": "={{ $json.body.apiKey }}"
             }
           ]
         },
         "sendBody": true,
+        "specifyBody": "json",
         "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [\n      { \"text\": {{ $json.body.prompt | toJSON }} }\n    ]\n  }]\n}",
         "options": {}
       },
@@ -55,7 +55,7 @@
         "responseBody": "={{ $json }}"
       },
       "id": "respond-analyze",
-      "name": "Répondre",
+      "name": "R\u00e9pondre",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1,
       "position": [850, 300]
@@ -69,7 +69,7 @@
       "main": [[{ "node": "Extraire le rapport", "type": "main", "index": 0 }]]
     },
     "Extraire le rapport": {
-      "main": [[{ "node": "Répondre", "type": "main", "index": 0 }]]
+      "main": [[{ "node": "R\u00e9pondre", "type": "main", "index": 0 }]]
     }
   },
   "pinData": {},
@@ -77,5 +77,5 @@
     "executionOrder": "v1"
   },
   "tags": ["Smart-Comptable"],
-  "versionId": "1"
+  "versionId": "2"
 }
