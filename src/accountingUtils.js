@@ -114,3 +114,63 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
   }
   return new Intl.NumberFormat('fr-FR', { style: 'currency', currency }).format(val);
 };
+
+/**
+ * Génère les données simplifiées du Bilan (Balance Sheet)
+ */
+export const generateBalanceSheet = (invoices = [], expenses = [], transactions = []) => {
+  const bankBalance = calculateBankBalance(0, transactions); // Trésorerie
+  const pendingInvoices = calculatePendingRevenues(invoices); // Créances clients (Courant)
+  const paidInvoices = calculateTotalRevenues(invoices);
+  const totalExpenses = calculateTotalExpenses(expenses);
+  
+  // Actif (Assets)
+  const currentAssets = bankBalance + pendingInvoices;
+  const nonCurrentAssets = 0; // Simplifié pour cette démo
+  const totalAssets = currentAssets + nonCurrentAssets;
+
+  // Passif et Capitaux Propres (Liabilities & Equity)
+  const currentLiabilities = 0; // Ex: Dettes fournisseurs, impôts à payer
+  const nonCurrentLiabilities = 0; // Ex: Emprunts
+  const totalLiabilities = currentLiabilities + nonCurrentLiabilities;
+  
+  // Capitaux propres = Actif - Passif (pour équilibrer)
+  const equity = totalAssets - totalLiabilities;
+
+  return {
+    assets: { current: currentAssets, nonCurrent: nonCurrentAssets, total: totalAssets },
+    liabilities: { current: currentLiabilities, nonCurrent: nonCurrentLiabilities, total: totalLiabilities },
+    equity: equity,
+    totalLiabilitiesAndEquity: totalLiabilities + equity
+  };
+};
+
+/**
+ * Génère les données simplifiées de l'État de Résultat (Income Statement)
+ */
+export const generateIncomeStatement = (invoices = [], expenses = []) => {
+  // Produits d'exploitation
+  const operatingRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.subtotal) || 0), 0);
+  
+  // Charges d'exploitation
+  const operatingExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.subtotal) || 0), 0);
+  
+  const operatingProfit = operatingRevenue - operatingExpenses;
+  
+  const financialRevenue = 0;
+  const financialExpenses = 0;
+  const ordinaryProfit = operatingProfit + financialRevenue - financialExpenses;
+  
+  const taxAmount = calculateEstimatedTaxes(operatingRevenue); // Approximation (normalement sur le bénéfice)
+  const netProfit = ordinaryProfit - taxAmount;
+
+  return {
+    revenue: operatingRevenue,
+    costOfGoodsSold: 0,
+    operatingExpenses: operatingExpenses,
+    operatingProfit: operatingProfit,
+    ordinaryProfit: ordinaryProfit,
+    tax: taxAmount,
+    netProfit: netProfit
+  };
+};

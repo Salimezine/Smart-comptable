@@ -55,6 +55,9 @@ import {
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini } from './geminiService';
 import ReactMarkdown from 'react-markdown';
+import Onboarding from './Onboarding';
+import CompanySwitcher from './CompanySwitcher';
+import FinancialReportView from './FinancialReportView';
 
 export default function App() {
   // Navigation State
@@ -65,52 +68,81 @@ export default function App() {
   const [advisorLoading, setAdvisorLoading] = useState(false);
   const [advisorReport, setAdvisorReport] = useState('');
   
-  // App States
-  const [invoices, setInvoices] = useState(() => {
-    const saved = localStorage.getItem('penni_tn_invoices');
-    return saved ? JSON.parse(saved) : INITIAL_INVOICES;
+  // App States - Multi-Tenant
+  const [companies, setCompanies] = useState(() => {
+    return JSON.parse(localStorage.getItem('smart_comptable_companies') || '{}');
   });
   
-  const [transactions, setTransactions] = useState(() => {
-    const saved = localStorage.getItem('penni_tn_transactions');
-    return saved ? JSON.parse(saved) : INITIAL_TRANSACTIONS;
+  const [currentCompanyId, setCurrentCompanyId] = useState(() => {
+    return localStorage.getItem('smart_comptable_current_id') || null;
   });
 
-  const [expenses, setExpenses] = useState(() => {
-    const saved = localStorage.getItem('penni_tn_expenses');
-    return saved ? JSON.parse(saved) : INITIAL_EXPENSES;
-  });
+  const [invoices, setInvoices] = useState([]);
+  const [transactions, setTransactions] = useState([]);
+  const [expenses, setExpenses] = useState([]);
+  const [companyDetails, setCompanyDetails] = useState({});
 
-  const [companyDetails, setCompanyDetails] = useState(() => {
-    const saved = localStorage.getItem('penni_tn_company');
-    return saved ? JSON.parse(saved) : {
-      name: "Carthage Creative Studio S.A.R.L",
-      email: "billing@carthage.tn",
-      vatNumber: "1726354/A/M/000", // Matricule Fiscal tunisien typique
-      address: "Immeuble Carthago, Rue du Lac de Côme, Les Berges du Lac 1, 1053 Tunis",
-      iban: "TN59 3000 6000 0123 4567 8901 234", // RIB tunisien
-      bic: "UIBKTNTTXXX",
-      currency: "TND",
-      geminiApiKey: ""
+  // Load specific company data when selected
+  useEffect(() => {
+    if (currentCompanyId && companies[currentCompanyId]) {
+      const data = companies[currentCompanyId];
+      setInvoices(data.invoices || []);
+      setTransactions(data.transactions || []);
+      setExpenses(data.expenses || []);
+      setCompanyDetails(data.companyDetails || {});
+    }
+  }, [currentCompanyId]); // Run only when ID changes
+
+  // Persist local state back to the companies catalogue
+  useEffect(() => {
+    if (currentCompanyId) {
+      setCompanies(prev => {
+        const currentData = prev[currentCompanyId] || {};
+        const updated = {
+          ...prev,
+          [currentCompanyId]: {
+            ...currentData,
+            invoices,
+            transactions,
+            expenses,
+            companyDetails
+          }
+        };
+        localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+        return updated;
+      });
+    }
+  }, [invoices, transactions, expenses, companyDetails, currentCompanyId]);
+
+  const handleCreateCompany = (details) => {
+    const id = `company_${Date.now()}`;
+    const initialData = {
+      companyDetails: details,
+      invoices: [],
+      expenses: [],
+      transactions: [],
+      dashboardData: {}
     };
-  });
+    
+    setCompanies(prev => {
+      const updated = { ...prev, [id]: initialData };
+      localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+      return updated;
+    });
+    
+    setCurrentCompanyId(id);
+    localStorage.setItem('smart_comptable_current_id', id);
+  };
 
-  // Local Storage persistence
-  useEffect(() => {
-    localStorage.setItem('penni_tn_invoices', JSON.stringify(invoices));
-  }, [invoices]);
+  const handleCompanyChange = (id) => {
+    setCurrentCompanyId(id);
+    localStorage.setItem('smart_comptable_current_id', id);
+  };
 
-  useEffect(() => {
-    localStorage.setItem('penni_tn_transactions', JSON.stringify(transactions));
-  }, [transactions]);
-
-  useEffect(() => {
-    localStorage.setItem('penni_tn_expenses', JSON.stringify(expenses));
-  }, [expenses]);
-
-  useEffect(() => {
-    localStorage.setItem('penni_tn_company', JSON.stringify(companyDetails));
-  }, [companyDetails]);
+  // 1. Écran de démarrage obligatoire
+  if (!currentCompanyId || !companies[currentCompanyId]) {
+    return <Onboarding onComplete={handleCreateCompany} />;
+  }
 
   // Core accounting metrics calculations using standard accounting utils
   const totalRevenues = calculateTotalRevenues(invoices);
@@ -215,7 +247,13 @@ export default function App() {
 
         {/* Footer Sidebar / Profile preview */}
         <div className="p-4 border-t border-slate-800/50 bg-slate-900/40">
-          <div className="flex items-center gap-3">
+          <CompanySwitcher 
+            companies={companies}
+            currentCompanyId={currentCompanyId}
+            onCompanyChange={handleCompanyChange}
+            onCreateCompany={handleCreateCompany}
+          />
+          <div className="flex items-center gap-3 mt-2">
             <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700">
               <User className="w-5 h-5 text-slate-300" />
             </div>
@@ -333,6 +371,15 @@ export default function App() {
                 setTransactions={setTransactions}
                 invoices={invoices}
                 setInvoices={setInvoices}
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'financial' && (
+              <FinancialReportView 
+                companyDetails={companyDetails}
+                invoices={invoices}
+                expenses={expenses}
+                transactions={transactions}
                 formatCurrency={formatCurrency}
               />
             )}
