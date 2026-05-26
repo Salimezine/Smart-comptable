@@ -978,240 +978,456 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 }
 
 /* ==========================================================================
-   COMPONENT: OCR VIEW (NUMÉRISATION DE FACTURE ACHAT PAR IA GEMINI)
+   COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
 function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
-  const [scanning, setScanning] = useState(false);
+  const [mode, setMode] = useState('choice'); // 'choice' | 'manual' | 'scanning' | 'result' | 'success'
   const [activeSample, setActiveSample] = useState(null);
-  const [extractedData, setExtractedData] = useState(null);
-  const [successMsg, setSuccessMsg] = useState(false);
+  const [isAiScan, setIsAiScan] = useState(false);
 
-  // Simulation de la détection et extraction intelligente par l'API Gemini 1.5 Flash
-  const handleStartScan = (sample) => {
-    setActiveSample(sample);
-    setScanning(true);
-    setExtractedData(null);
-    setSuccessMsg(false);
+  const BLANK_FORM = {
+    supplier: '',
+    matriculeFiscal: '',
+    date: new Date().toISOString().split('T')[0],
+    subtotal: '',
+    vatRate: '19',
+    fodec: '0.000',
+    vatAmount: '',
+    stampDuty: '1.000',
+    totalAmount: '',
+    category: 'Autres',
+    invoiceNumber: '',
+  };
+  const [formData, setFormData] = useState(BLANK_FORM);
 
-    // Chrono d'analyse visuelle simulée (OCR + LLM)
-    setTimeout(() => {
-      setScanning(false);
-      setExtractedData(sample.data);
-    }, 2800);
+  const CATEGORIES = [
+    'Télécoms & Internet', 'Énergie & Utilités', 'Fournitures de Bureau',
+    'Déplacements', 'Restauration', 'Loyer & Charges', 'Salaires & Charges Sociales', 'Autres',
+  ];
+
+  const isLeakedKey = geminiApiKey === "AIzaSyBpPMhkpRhr0GwHMN8MG-ddUzxoBy-xY7c";
+  const hasValidKey = geminiApiKey && geminiApiKey.startsWith("AIzaSy") && !isLeakedKey;
+
+  const applyFormData = (data) => {
+    setFormData({
+      supplier: data.supplier || '',
+      matriculeFiscal: data.matriculeFiscal || '',
+      date: data.date || new Date().toISOString().split('T')[0],
+      subtotal: String(data.subtotal || ''),
+      vatRate: String(data.vatRate || '19'),
+      fodec: String(data.fodec || '0.000'),
+      vatAmount: String(data.vatAmount || ''),
+      stampDuty: String(data.stampDuty || '1.000'),
+      totalAmount: String(data.totalAmount || ''),
+      category: data.category || 'Autres',
+      invoiceNumber: data.invoiceNumber || '',
+    });
   };
 
-  const handleConfirmExpense = () => {
-    if (!extractedData) return;
+  const getStampDutyForAmount = (amountBeforeStamp) => {
+    if (amountBeforeStamp < 50.000) return 1.000;
+    if (amountBeforeStamp <= 100.000) return 1.500;
+    return 2.000;
+  };
+
+  const getStampDutyForTotal = (total) => {
+    if (total < 51.000) return 1.000;
+    if (total <= 101.500) return 1.500;
+    return 2.000;
+  };
+
+  // Auto-calcul depuis le Total TTC
+  const handleTotalChange = (val) => {
+    const total = parseFloat(val) || 0;
+    const stamp = getStampDutyForTotal(total);
+    const fodecVal = parseFloat(formData.fodec) || 0;
+    const vatRate = parseFloat(formData.vatRate) || 19;
     
+    const baseTva = (total - stamp) / (1 + vatRate / 100);
+    const sub = baseTva - fodecVal;
+    const vat = baseTva * (vatRate / 100);
+
+    setFormData(f => ({
+      ...f,
+      totalAmount: val,
+      stampDuty: total > 0 ? stamp.toFixed(3) : '1.000',
+      subtotal: total > 0 ? (Math.round(sub * 1000) / 1000).toFixed(3) : '',
+      vatAmount: total > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
+    }));
+  };
+
+  // Auto-calcul depuis le Sous-total HT
+  const handleSubtotalChange = (val) => {
+    const sub = parseFloat(val) || 0;
+    const fodecVal = parseFloat(formData.fodec) || 0;
+    const vatRate = parseFloat(formData.vatRate) || 19;
+    const baseTva = sub + fodecVal;
+    const vat = baseTva * (vatRate / 100);
+    const amountBeforeStamp = baseTva + vat;
+    const stamp = getStampDutyForAmount(amountBeforeStamp);
+    const total = amountBeforeStamp + stamp;
+
+    setFormData(f => ({
+      ...f,
+      subtotal: val,
+      stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
+      vatAmount: sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
+      totalAmount: sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : '',
+    }));
+  };
+
+  // Auto-calcul depuis le FODEC
+  const handleFodecChange = (val) => {
+    const fodecVal = parseFloat(val) || 0;
+    const sub = parseFloat(formData.subtotal) || 0;
+    const vatRate = parseFloat(formData.vatRate) || 19;
+    const baseTva = sub + fodecVal;
+    const vat = baseTva * (vatRate / 100);
+    const amountBeforeStamp = baseTva + vat;
+    const stamp = getStampDutyForAmount(amountBeforeStamp);
+    const total = amountBeforeStamp + stamp;
+
+    setFormData(f => ({
+      ...f,
+      fodec: val,
+      stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
+      vatAmount: sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
+      totalAmount: sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : '',
+    }));
+  };
+
+  // Scan par exemple de test
+  const handleStartScan = (sample) => {
+    setActiveSample(sample);
+    setIsAiScan(false);
+    setMode('scanning');
+    setTimeout(() => {
+      applyFormData(sample.data);
+      setMode('result');
+    }, 1800);
+  };
+
+  // Scan fichier réel
+  const handleFileScan = async (e) => {
+    if (!e.target.files || !e.target.files[0]) return;
+    const file = e.target.files[0];
+    setActiveSample(null);
+    setIsAiScan(hasValidKey);
+    setMode('scanning');
+    try {
+      const { base64Data, mimeType } = await fileToBase64(file);
+      const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name);
+      applyFormData(data);
+      setMode('result');
+    } catch (err) {
+      console.error(err);
+      setMode('choice');
+      alert("Erreur lors du scan : " + err.message);
+    }
+  };
+
+  // Enregistrer la dépense
+  const handleConfirmExpense = (e) => {
+    e.preventDefault();
     onAddExpense({
       id: `exp-${Date.now()}`,
-      supplier: extractedData.supplier,
-      date: extractedData.date,
-      subtotal: extractedData.subtotal,
-      vatAmount: extractedData.vatAmount,
-      totalAmount: extractedData.totalAmount,
-      category: extractedData.category,
+      supplier: formData.supplier || 'Fournisseur',
+      matriculeFiscal: formData.matriculeFiscal || '',
+      date: formData.date,
+      subtotal: parseFloat(formData.subtotal) || 0,
+      fodec: parseFloat(formData.fodec) || 0,
+      vatAmount: parseFloat(formData.vatAmount) || 0,
+      stampDuty: parseFloat(formData.stampDuty) || 1,
+      totalAmount: parseFloat(formData.totalAmount) || 0,
+      category: formData.category,
+      invoiceNumber: formData.invoiceNumber,
       status: "VALIDATED"
     });
-
-    setSuccessMsg(true);
-    setExtractedData(null);
+    setMode('success');
+    setFormData(BLANK_FORM);
     setActiveSample(null);
   };
 
+  // Formulaire partagé (saisie manuelle + résultat scan)
+  const EntryForm = ({ isManual }) => (
+    <form onSubmit={handleConfirmExpense} className="space-y-4 animate-slide-up flex-1 overflow-y-auto">
+      <div className="flex justify-between items-center border-b border-slate-800 pb-3">
+        <h4 className={`text-sm font-extrabold flex items-center gap-1.5 ${isManual ? 'text-brand-400' : isAiScan ? 'text-accent-400' : 'text-warning-400'}`}>
+          {isManual
+            ? <><Plus className="w-4 h-4" /> Saisie Manuelle du Justificatif</>
+            : isAiScan
+              ? <><CheckCircle2 className="w-4 h-4" /> Extraction IA — Vérifiez et corrigez</>
+              : <><AlertCircle className="w-4 h-4" /> Données simulées — Corrigez avant d'enregistrer</>
+          }
+        </h4>
+        <button type="button" onClick={() => { setMode('choice'); setFormData(BLANK_FORM); }}
+          className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Annuler</button>
+      </div>
+
+      {!isManual && !isAiScan && (
+        <div className="p-3 bg-warning-500/10 border border-warning-500/30 rounded-xl text-[10px] text-warning-400 flex items-start gap-2">
+          <AlertCircle className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+          <span>
+            <strong>Ces données sont fictives</strong> — L'IA n'a pas pu lire votre document (clé API invalide ou absente).
+            Corrigez tous les champs ci-dessous. Pour activer le scan réel, ajoutez votre clé dans <strong>⚙️ Configuration</strong>.
+          </span>
+        </div>
+      )}
+
+      <div className="grid grid-cols-2 gap-3">
+        <div className="col-span-2">
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Fournisseur / Vendeur *</label>
+          <input type="text" required placeholder="ex: Ooredoo Tunisie, STEG, Monoprix..."
+            value={formData.supplier}
+            onChange={(e) => setFormData(f => ({...f, supplier: e.target.value}))}
+            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          />
+        </div>
+        <div className="col-span-2">
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Matricule Fiscal Fournisseur</label>
+          <input type="text" placeholder="ex: 1234567/A/M/000" value={formData.matriculeFiscal}
+            onChange={(e) => setFormData(f => ({...f, matriculeFiscal: e.target.value}))}
+            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Date du Reçu *</label>
+          <input type="date" required value={formData.date}
+            onChange={(e) => setFormData(f => ({...f, date: e.target.value}))}
+            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">N° Justificatif</label>
+          <input type="text" placeholder="ex: FAC-2026-0012" value={formData.invoiceNumber}
+            onChange={(e) => setFormData(f => ({...f, invoiceNumber: e.target.value}))}
+            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          />
+        </div>
+        <div className="col-span-2">
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Catégorie Comptable *</label>
+          <select required value={formData.category}
+            onChange={(e) => setFormData(f => ({...f, category: e.target.value}))}
+            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          >
+            {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+        </div>
+      </div>
+
+      {/* Section Montants */}
+      <div className="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60 space-y-3">
+        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Détail des Montants (DT)</p>
+        <div className="grid grid-cols-3 gap-3">
+          <div>
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux TVA</label>
+            <select value={formData.vatRate}
+              onChange={(e) => {
+                const r = parseFloat(e.target.value) || 19;
+                const sub = parseFloat(formData.subtotal) || 0;
+                const fodecVal = parseFloat(formData.fodec) || 0;
+                const baseTva = sub + fodecVal;
+                const vat = baseTva * (r / 100);
+                const amountBeforeStamp = baseTva + vat;
+                const newStamp = getStampDutyForAmount(amountBeforeStamp);
+                setFormData(f => ({...f, vatRate: e.target.value,
+                  vatAmount: sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : '',
+                  stampDuty: sub > 0 ? newStamp.toFixed(3) : '1.000',
+                  totalAmount: sub > 0 ? (Math.round((sub+fodecVal+vat+newStamp)*1000)/1000).toFixed(3) : ''
+                }));
+              }}
+              className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
+            >
+              <option value="19">19%</option>
+              <option value="13">13%</option>
+              <option value="7">7%</option>
+              <option value="0">0%</option>
+            </select>
+          </div>
+          <div>
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase" title="Loi de finances 2026 : 1 DT si &lt;50, 1.5 DT si 50-100, 2 DT si &gt;100 DT">
+              Timbre Fiscal (Auto) ⓘ
+            </label>
+            <input type="number" step="0.001" min="0" readOnly value={formData.stampDuty}
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-brand-300 text-sm cursor-not-allowed opacity-75"
+              title="Calculé automatiquement selon la Loi de finances 2026"
+            />
+          </div>
+          <div>
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Sous-total HT *</label>
+            <input type="number" step="0.001" min="0" required placeholder="0.000" value={formData.subtotal}
+              onChange={(e) => handleSubtotalChange(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          <div>
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">FODEC (1%) (DT)</label>
+            <input type="number" step="0.001" min="0" placeholder="0.000" value={formData.fodec}
+              onChange={(e) => handleFodecChange(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Montant TVA</label>
+            <input type="number" step="0.001" min="0" placeholder="Auto-calculé" value={formData.vatAmount}
+              onChange={(e) => setFormData(f => ({...f, vatAmount: e.target.value}))}
+              className="w-full bg-slate-950 border border-slate-650 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-300 text-sm focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-[10px] text-warning-400 font-bold mb-1 uppercase">✦ Total TTC *</label>
+            <input type="number" step="0.001" min="0" required placeholder="Montant total payé" value={formData.totalAmount}
+              onChange={(e) => handleTotalChange(e.target.value)}
+              className="w-full bg-slate-950 border-2 border-warning-500/60 focus:border-warning-400 rounded-xl px-3 py-2 text-warning-300 text-sm font-bold focus:outline-none"
+            />
+          </div>
+        </div>
+        <p className="text-[9px] text-slate-500 mt-1">Saisissez le Total TTC ou le Sous-total HT pour mettre à jour les calculs.</p>
+      </div>
+
+      <div className="flex gap-3 pt-1">
+        <button type="button" onClick={() => { setMode('choice'); setFormData(BLANK_FORM); }}
+          className="flex-1 py-2.5 border border-slate-700 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all">
+          Annuler
+        </button>
+        <button type="submit"
+          className="flex-[2] py-2.5 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5">
+          <CheckCircle2 className="w-4 h-4" /> Enregistrer la dépense
+        </button>
+      </div>
+    </form>
+  );
+
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        {/* Panel gauche : Dépôt & Exemples */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-5 space-y-6">
-          <div>
-            <h3 className="font-bold text-slate-100 flex items-center gap-2">
-              <Upload className="w-5 h-5 text-indigo-400" /> Dépôt de justificatifs
-            </h3>
-            <p className="text-xs text-slate-400 mt-1">Déposez un reçu ou testez notre moteur avec un exemple pour voir l'IA Gemini extraire les données en direct.</p>
+      {/* Bannière clé API */}
+      {!hasValidKey && (
+        <div className="p-3.5 bg-slate-900/50 border border-brand-500/30 rounded-xl flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
+            <p className="text-xs text-slate-300">
+              <strong className="text-brand-400">Mode Simulation actif.</strong>{' '}
+              Pour un scan IA réel, ajoutez une clé API Gemini gratuite dans{' '}
+              <strong>⚙️ Configuration</strong>. En attendant, utilisez la <strong>Saisie Manuelle</strong>.
+            </p>
           </div>
+          <span className="text-[10px] font-bold text-brand-400 border border-brand-500/30 px-2 py-1 rounded-lg shrink-0 bg-brand-500/10 whitespace-nowrap">
+            aistudio.google.com
+          </span>
+        </div>
+      )}
 
-          {/* Zone Drag & Drop Fonctionnelle */}
-          <label className="border-2 border-dashed border-slate-800 rounded-2xl p-8 flex flex-col items-center justify-center bg-slate-900/20 group hover:border-brand-500/50 transition-colors cursor-pointer relative">
-            <input 
-              type="file" 
-              accept=".pdf,image/png,image/jpeg" 
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              onChange={async (e) => {
-                if (e.target.files && e.target.files[0]) {
-                  const file = e.target.files[0];
-                  setActiveSample(null);
-                  setScanning(true);
-                  setExtractedData(null);
-                  setSuccessMsg(false);
-                  try {
-                    const { base64Data, mimeType } = await fileToBase64(file);
-                    const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType);
-                    setExtractedData(data);
-                  } catch (err) {
-                    console.error(err);
-                    alert("Erreur IA : " + err.message);
-                  } finally {
-                    setScanning(false);
-                  }
-                }
-              }}
-            />
-            <div className="w-12 h-12 rounded-full bg-brand-500/10 flex items-center justify-center border border-brand-500/20 group-hover:scale-105 transition-all">
-              <Sparkles className="w-5 h-5 text-brand-400" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+        {/* Panel gauche */}
+        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-5 space-y-4">
+
+          {/* Saisie Manuelle - Option principale */}
+          <button
+            onClick={() => { setFormData(BLANK_FORM); setMode('manual'); }}
+            className="w-full flex items-center gap-4 p-4 bg-brand-500/10 border-2 border-brand-500/40 hover:border-brand-500 rounded-2xl transition-all group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-brand-500/20 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <Plus className="w-5 h-5 text-brand-400" />
             </div>
-            <h4 className="text-xs font-bold text-slate-200 mt-4 text-center">Cliquez ou déposez vos PDF / Images</h4>
-            <p className="text-[10px] text-slate-500 mt-1">Formats acceptés : PDF, PNG, JPG (Max 5Mo)</p>
+            <div className="text-left">
+              <p className="text-sm font-bold text-slate-100">Saisie Manuelle</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">Entrez les données directement — Toujours disponible</p>
+            </div>
+          </button>
+
+          {/* Scanner un fichier */}
+          <label className="w-full flex items-center gap-4 p-4 border-2 border-dashed border-slate-700 hover:border-indigo-500/60 rounded-2xl transition-all group cursor-pointer relative">
+            <input type="file" accept=".pdf,image/png,image/jpeg"
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+              onChange={handleFileScan}
+            />
+            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <Upload className="w-5 h-5 text-indigo-400" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-bold text-slate-100">
+                Scanner un fichier{hasValidKey && <span className="text-accent-400 text-[10px] ml-2 font-bold">● IA ACTIVE</span>}
+              </p>
+              <p className="text-[10px] text-slate-400 mt-0.5">PDF, PNG, JPG — {hasValidKey ? 'Lecture IA de votre document' : 'Données à corriger après scan'}</p>
+            </div>
           </label>
 
-          {/* Échantillons d'exemples de test */}
-          <div className="space-y-3">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Jeux d'essais (Factures Réelles)</span>
+          {/* Exemples de test */}
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Exemples de test (données réelles)</span>
             <div className="grid grid-cols-1 gap-2">
               {RECEIPT_SAMPLES.map((sample, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleStartScan(sample)}
-                  disabled={scanning}
-                  className={`flex items-center justify-between p-3 bg-slate-900/40 hover:bg-slate-850/60 border rounded-xl transition-all text-xs text-left ${
-                    activeSample?.name === sample.name ? 'border-brand-500 bg-brand-500/5' : 'border-slate-800/60'
+                  disabled={mode === 'scanning'}
+                  className={`flex items-center justify-between p-3 border rounded-xl transition-all text-xs text-left ${
+                    activeSample?.name === sample.name ? 'border-brand-500 bg-brand-500/5' : 'border-slate-800/60 bg-slate-900/30 hover:bg-slate-800/30'
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
                     <div className="w-2 h-2 rounded-full bg-indigo-400" />
-                    <span className="font-semibold text-slate-200">{sample.name}</span>
+                    <span className="font-semibold text-slate-300">{sample.name}</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-500" />
                 </button>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Panel droit : Analyse IA & Résultat */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-7 space-y-6 flex flex-col justify-between min-h-[400px] relative overflow-hidden">
-          
-          {/* Scan Line effect during AI scanning */}
-          {scanning && (
+        {/* Panel droit */}
+        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-7 flex flex-col justify-between min-h-[520px] relative overflow-hidden">
+          {mode === 'scanning' && (
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-500 to-transparent animate-[shimmer_1.5s_infinite] shadow-glow" />
           )}
 
-          {scanning ? (
-            /* SCANNING LOADER */
+          {mode === 'scanning' ? (
             <div className="flex-1 flex flex-col items-center justify-center space-y-4 py-12 animate-pulse-soft">
               <div className="w-14 h-14 rounded-full bg-brand-500/10 border border-brand-500/30 flex items-center justify-center">
                 <RefreshCw className="w-6 h-6 text-brand-400 animate-spin" />
               </div>
               <div className="text-center space-y-1">
-                <h4 className="text-sm font-bold text-slate-200">Analyse Smart-Comptable IA en cours...</h4>
-                <p className="text-[11px] text-indigo-400">Lecture intelligente, calcul de la TVA et qualification comptable...</p>
+                <h4 className="text-sm font-bold text-slate-200">Analyse {hasValidKey ? 'Gemini IA' : 'en cours'}...</h4>
+                <p className="text-[11px] text-indigo-400">{hasValidKey ? 'Lecture intelligente par Gemini 1.5 Flash...' : 'Préparation des données...'}</p>
               </div>
             </div>
-          ) : extractedData ? (
-            /* DÉTECTION TERMINÉE ET FORMULAIRE DE VALIDATION */
-            <div className="space-y-5 animate-slide-up flex-1">
-              <div className="flex justify-between items-center border-b border-slate-800 pb-3">
-                <h4 className="text-sm font-extrabold text-accent-400 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4" /> Extraction IA Complétée avec Succès
-                </h4>
-                <span className="text-[10px] font-bold text-slate-400 uppercase">Fiabilité 99.8%</span>
-              </div>
-
-              {/* Editable extracted fields */}
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Fournisseur / Supplier</label>
-                  <input 
-                    type="text" 
-                    value={extractedData.supplier}
-                    onChange={(e) => setExtractedData({...extractedData, supplier: e.target.value})}
-                    className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Catégorie Comptable</label>
-                  <input 
-                    type="text" 
-                    value={extractedData.category}
-                    onChange={(e) => setExtractedData({...extractedData, category: e.target.value})}
-                    className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Date du Document</label>
-                  <input 
-                    type="date" 
-                    value={extractedData.date}
-                    onChange={(e) => setExtractedData({...extractedData, date: e.target.value})}
-                    className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Numéro de Justificatif</label>
-                  <input 
-                    type="text" 
-                    value={extractedData.invoiceNumber}
-                    onChange={(e) => setExtractedData({...extractedData, invoiceNumber: e.target.value})}
-                    className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-                  />
-                </div>
-              </div>
-
-              {/* Totals Section */}
-              <div className="bg-slate-900/60 p-4 rounded-xl border border-slate-800/80 space-y-2 mt-4 text-xs">
-                <div className="flex justify-between text-slate-400">
-                  <span>Sous-total HT :</span>
-                  <span className="font-semibold text-slate-200">{formatCurrency(extractedData.subtotal)}</span>
-                </div>
-                <div className="flex justify-between text-slate-400">
-                  <span>Montant TVA ({extractedData.vatRate}%) :</span>
-                  <span className="font-semibold text-slate-200">{formatCurrency(extractedData.vatAmount)}</span>
-                </div>
-                <div className="flex justify-between text-sm font-bold text-slate-100 border-t border-slate-800/50 pt-2">
-                  <span>Total TTC détecté :</span>
-                  <span className="text-danger-400">{formatCurrency(extractedData.totalAmount)}</span>
-                </div>
-              </div>
-
-              {/* Action */}
-              <div className="pt-4 flex gap-3">
-                <button
-                  onClick={() => setExtractedData(null)}
-                  className="flex-1 py-2 border border-slate-800 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all"
-                >
-                  Recommencer
-                </button>
-                <button
-                  onClick={handleConfirmExpense}
-                  className="flex-1 py-2 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5"
-                >
-                  <CheckCircle2 className="w-4 h-4" /> Enregistrer la dépense
-                </button>
-              </div>
-            </div>
-          ) : successMsg ? (
-            /* SUCCESS BANNER */
+          ) : mode === 'success' ? (
             <div className="flex-1 flex flex-col items-center justify-center space-y-3 py-12 text-center animate-fade-in">
-              <div className="w-12 h-12 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center">
-                <CheckCircle2 className="w-6 h-6 text-accent-400" />
+              <div className="w-14 h-14 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center">
+                <CheckCircle2 className="w-7 h-7 text-accent-400" />
               </div>
-              <h4 className="text-sm font-bold text-slate-200">Dépense comptabilisée !</h4>
-              <p className="text-[11px] text-slate-400 max-w-sm">Le justificatif a été enregistré et vos indicateurs financiers sur le tableau de bord ont été recalculés en temps réel.</p>
-              <button 
-                onClick={() => setSuccessMsg(false)} 
-                className="mt-4 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl transition-colors"
-              >
-                Nouveau scan
-              </button>
+              <h4 className="text-sm font-bold text-slate-200">Dépense enregistrée !</h4>
+              <p className="text-[11px] text-slate-400 max-w-sm">Le justificatif a été comptabilisé et vos indicateurs financiers ont été mis à jour.</p>
+              <div className="flex gap-3 mt-4">
+                <button onClick={() => { setFormData(BLANK_FORM); setMode('manual'); }}
+                  className="px-4 py-2 bg-brand-500/20 hover:bg-brand-500/30 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30">
+                  + Nouvelle saisie
+                </button>
+                <button onClick={() => setMode('choice')}
+                  className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl">
+                  Retour
+                </button>
+              </div>
             </div>
+          ) : mode === 'manual' ? (
+            <EntryForm isManual={true} />
+          ) : mode === 'result' ? (
+            <EntryForm isManual={false} />
           ) : (
-            /* EMPTY STATE INITIAL */
-            <div className="flex-1 flex flex-col items-center justify-center space-y-3 text-slate-500 py-12">
-              <Calculator className="w-10 h-10 text-slate-700" />
-              <div className="text-center space-y-1">
-                <h4 className="text-xs font-bold text-slate-400">Aucun document chargé</h4>
-                <p className="text-[10px] text-slate-500 max-w-xs">Sélectionnez l'un des jeux d'essais à gauche pour lancer la simulation d'OCR et d'extraction de factures.</p>
+            <div className="flex-1 flex flex-col items-center justify-center space-y-4 text-slate-500 py-12">
+              <div className="w-16 h-16 rounded-2xl bg-slate-800/60 flex items-center justify-center border border-slate-700">
+                <FileText className="w-8 h-8 text-slate-600" />
+              </div>
+              <div className="text-center space-y-2">
+                <h4 className="text-sm font-bold text-slate-400">Aucune dépense en cours</h4>
+                <p className="text-[11px] text-slate-500 max-w-xs leading-relaxed">
+                  Cliquez sur <strong className="text-brand-400">Saisie Manuelle</strong> pour entrer vos données directement,
+                  ou importez un fichier pour l'analyse automatique.
+                </p>
               </div>
             </div>
           )}
@@ -1220,6 +1436,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
     </div>
   );
 }
+
 
 /* ==========================================================================
    COMPONENT: BANK SYNC VIEW (RAPPROCHEMENT BANCAIRE SIMULÉ)

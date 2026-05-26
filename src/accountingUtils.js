@@ -73,7 +73,18 @@ export const calculateInvoiceTotals = (items = [], includeStampDuty = true) => {
     return sum + ((qty * price) * (vatRate / 100));
   }, 0);
 
-  const stampDuty = includeStampDuty ? 1.000 : 0; // Timbre fiscal tunisien de 1.000 DT
+  let stampDuty = 0;
+  if (includeStampDuty) {
+    const amountBeforeStamp = subtotal + vatAmount;
+    if (amountBeforeStamp < 50.000) {
+      stampDuty = 1.000;
+    } else if (amountBeforeStamp <= 100.000) {
+      stampDuty = 1.500;
+    } else {
+      stampDuty = 2.000;
+    }
+  }
+
   const totalAmount = subtotal + vatAmount + stampDuty;
 
   // Arrondi à 3 décimales pour le Dinar Tunisien (TND)
