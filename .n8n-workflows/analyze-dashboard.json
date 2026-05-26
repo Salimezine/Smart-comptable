@@ -30,7 +30,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [\n      { \"text\": {{ $json.body.prompt | toJSON }} }\n    ]\n  }]\n}",
+        "jsonBody": "={ \"contents\": [ { \"parts\": [ { \"text\": {{ JSON.stringify($json.body.prompt) }} } ] } ] }",
         "options": {}
       },
       "id": "gemini-analyze",

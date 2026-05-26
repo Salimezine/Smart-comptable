@@ -88,7 +88,18 @@ export const analyzeDashboardWithGemini = async (apiKey, dashboardData) => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          prompt: `Tu es un expert-comptable tunisien. Analyse ces indicateurs financiers et génère un audit structuré en Markdown.\n${JSON.stringify(dashboardData, null, 2)}`,
+          prompt: `Tu es Smart Comptable, un expert-comptable IA spécialisé dans le système comptable tunisien (SCE — Système Comptable des Entreprises, NC 01 à NC 46) et les normes IFRS applicables en Tunisie.
+
+CONSIGNES :
+1. Analyse les données financières fournies ci-dessous
+2. Génère un audit structuré en Markdown
+3. Utilise la terminologie exacte du SCE tunisien
+4. Vérifie : équilibre bilan, cohérence résultat net, variation trésorerie
+5. Calcule : IS (15% PME), TVA (19%/13%/7%), CNSS employeur 16,57%, TCL 0,2% CA
+6. Présente en DT avec 3 décimales
+
+Données financières :
+${JSON.stringify(dashboardData, null, 2)}`,
           dashboardData,
           apiKey,
         }),
