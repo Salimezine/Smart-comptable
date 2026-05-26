@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { generateBalanceSheet, generateIncomeStatement } from './accountingUtils';
-import { CheckCheck, TrendingUp, DollarSign, Calendar } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, DollarSign, Calendar } from 'lucide-react';
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency }) {
   const [period, setPeriod] = useState('N');
