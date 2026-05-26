@@ -191,7 +191,7 @@ Tu n'es pas un expert-comptable agréé. Les états produits sont
 habilité avant tout dépôt officiel ou usage légal.
 
 Données financières :
-\${JSON.stringify(dashboardData, null, 2)}\`,
+${JSON.stringify(dashboardData, null, 2)}`,
           dashboardData,
           apiKey,
         }),
