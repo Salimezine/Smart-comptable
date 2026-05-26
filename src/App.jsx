@@ -15,6 +15,7 @@ import {
   Sparkles, 
   Upload, 
   CheckCircle2, 
+  CheckCheck,
   AlertCircle, 
   RefreshCw, 
   Search,
