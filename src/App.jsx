@@ -91,7 +91,7 @@ export default function App() {
       iban: "TN59 3000 6000 0123 4567 8901 234", // RIB tunisien
       bic: "UIBKTNTTXXX",
       currency: "TND",
-      geminiApiKey: "AIzaSyBpPMhkpRhr0GwHMN8MG-ddUzxoBy-xY7c"
+      geminiApiKey: ""
     };
   });
 
@@ -1005,8 +1005,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
     'Déplacements', 'Restauration', 'Loyer & Charges', 'Salaires & Charges Sociales', 'Autres',
   ];
 
-  const isLeakedKey = geminiApiKey === "AIzaSyBpPMhkpRhr0GwHMN8MG-ddUzxoBy-xY7c";
-  const hasValidKey = geminiApiKey && geminiApiKey.startsWith("AIzaSy") && !isLeakedKey;
+  const hasValidKey = geminiApiKey && geminiApiKey !== '' && geminiApiKey !== 'local';
 
   const applyFormData = (data) => {
     setFormData({
@@ -1309,12 +1308,12 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
             <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
             <p className="text-xs text-slate-300">
               <strong className="text-brand-400">Mode Simulation actif.</strong>{' '}
-              Pour un scan IA réel, ajoutez une clé API Gemini gratuite dans{' '}
+              Pour un scan réel, ajoutez votre clé d'API n8n dans{' '}
               <strong>⚙️ Configuration</strong>. En attendant, utilisez la <strong>Saisie Manuelle</strong>.
             </p>
           </div>
           <span className="text-[10px] font-bold text-brand-400 border border-brand-500/30 px-2 py-1 rounded-lg shrink-0 bg-brand-500/10 whitespace-nowrap">
-            aistudio.google.com
+            n8n workflow
           </span>
         </div>
       )}
@@ -1629,16 +1628,16 @@ function SettingsView({ companyDetails, setCompanyDetails }) {
 
       <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30">
         <label className="block text-[10px] text-brand-400 font-bold mb-1.5 uppercase flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5" /> Clé API Google Gemini (IA OCR)
+          <Sparkles className="w-3.5 h-3.5" /> Clé d'API n8n (Scan + Analyse IA)
         </label>
         <input 
           type="password"
-          placeholder="AIzaSy..." 
+          placeholder="Votre clé n8n..." 
           value={companyDetails.geminiApiKey || ''}
           onChange={(e) => setCompanyDetails({...companyDetails, geminiApiKey: e.target.value})}
           className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
         />
-        <p className="text-[9px] text-slate-500 mt-1.5">Votre clé API est stockée uniquement en local sur votre navigateur et sert à extraire les données de vos reçus.</p>
+        <p className="text-[9px] text-slate-500 mt-1.5">Votre clé est stockée localement dans le navigateur. Elle est envoyée aux webhooks n8n pour le scan de reçus et l'analyse financière.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
