@@ -181,6 +181,7 @@ export default function App() {
               { id: 'invoicing', label: 'Factures Client', icon: FileText },
               { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
+              { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
               { id: 'settings', label: 'Configuration', icon: SettingsIcon },
             ].map(item => {
               const Icon = item.icon;
