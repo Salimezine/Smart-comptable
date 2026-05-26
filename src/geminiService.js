@@ -24,7 +24,7 @@ export const scanReceiptWithGemini = async (apiKey, base64Image, mimeType, fileN
   if (apiKey && apiKey.startsWith("AIzaSy") && !isLeakedKey) {
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       
       const prompt = `En tant qu'expert comptable tunisien, analyse cette image ou ce PDF de reçu/facture d'achat.
 Extrais précisément les champs suivants au format JSON brut (ne mets pas de bloc markdown de type \`\`\`json, retourne uniquement la chaîne JSON brute) :
@@ -404,7 +404,7 @@ export const analyzeDashboardWithGemini = async (apiKey, dashboardData) => {
   if (apiKey && apiKey.startsWith("AIzaSy") && !isLeakedKey) {
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       
       const prompt = `Tu es un expert-comptable tunisien de haut niveau. 
 Analyse les indicateurs financiers suivants issus de notre tableau de bord et génère un audit budgétaire, fiscal et de trésorerie complet en français :
