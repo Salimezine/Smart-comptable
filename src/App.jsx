@@ -1149,7 +1149,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
   };
 
   // Formulaire partagé (saisie manuelle + résultat scan)
-  const EntryForm = ({ isManual }) => (
+  const renderEntryForm = (isManual) => (
     <form onSubmit={handleConfirmExpense} className="space-y-4 animate-slide-up flex-1 overflow-y-auto">
       <div className="flex justify-between items-center border-b border-slate-800 pb-3">
         <h4 className={`text-sm font-extrabold flex items-center gap-1.5 ${isManual ? 'text-brand-400' : isAiScan ? 'text-accent-400' : 'text-warning-400'}`}>
@@ -1414,9 +1414,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
               </div>
             </div>
           ) : mode === 'manual' ? (
-            <EntryForm isManual={true} />
+            renderEntryForm(true)
           ) : mode === 'result' ? (
-            <EntryForm isManual={false} />
+            renderEntryForm(false)
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center space-y-4 text-slate-500 py-12">
               <div className="w-16 h-16 rounded-2xl bg-slate-800/60 flex items-center justify-center border border-slate-700">
