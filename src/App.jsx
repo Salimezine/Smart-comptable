@@ -52,7 +52,6 @@ import {
   calculateTotalRevenues, 
   calculatePendingRevenues, 
   calculateTotalExpenses, 
-  calculateBankBalance, 
   calculateEstimatedTaxes, 
   calculateInvoiceTotals, 
   formatCurrencyHelper 
@@ -239,7 +238,7 @@ export default function App() {
   const totalRevenues = calculateTotalRevenues(invoices);
   const pendingRevenues = calculatePendingRevenues(invoices);
   const totalExpenses = calculateTotalExpenses(expenses);
-  const bankBalance = calculateBankBalance(32800, transactions);
+  const bankBalance = totalRevenues - totalExpenses;
   const estimatedTaxes = calculateEstimatedTaxes(totalRevenues);
 
   // Helpers
@@ -2097,7 +2096,7 @@ function WorkflowView({
         totalRevenues,
         pendingRevenues: invoices.reduce((acc, inv) => acc + (inv.status === 'PENDING' ? inv.total : 0), 0),
         totalExpenses,
-        bankBalance: 32800 + transactions.reduce((acc, t) => acc + (t.type === 'INFLOW' ? t.amount : -t.amount), 0),
+        bankBalance: totalRevenues - totalExpenses,
         estimatedTaxes: estimatedIS,
         recentInvoices: invoices.slice(0, 5),
         recentExpenses: expenses.slice(0, 5)
