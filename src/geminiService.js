@@ -4,6 +4,10 @@ import Tesseract from 'tesseract.js';
 const N8N_SCAN_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/scan-receipt';
 const N8N_ANALYZE_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/analyze-dashboard';
 
+// Secret partagé pour valider les appels aux webhooks n8n
+// (visible côté client — protection de base contre les appels non autorisés)
+const WEBHOOK_SECRET = 'sm4rt-c0mpt4bl3-s3cur3-2026';
+
 /**
  * Scan d'un justificatif via n8n → Gemini (ou OCR local / simulation en fallback).
  */
@@ -31,6 +35,7 @@ Retourne UNIQUEMENT le JSON brut.`,
         mimeType,
         fileName,
         apiKey,
+        secret: WEBHOOK_SECRET,
       };
       const response = await fetch(N8N_SCAN_URL, {
         method: 'POST',
@@ -194,6 +199,7 @@ Données financières :
 ${JSON.stringify(dashboardData, null, 2)}`,
           dashboardData,
           apiKey,
+          secret: WEBHOOK_SECRET,
         }),
       });
       if (!response.ok) throw new Error(`n8n error ${response.status}`);

@@ -1,5 +1,5 @@
 {
-  "name": "Smart-Comptable - Analyse financi\u00e8re",
+  "name": "Smart-Comptable - Analyse financière",
   "nodes": [
     {
       "parameters": {
@@ -13,6 +13,16 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 1,
       "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const secret = $json.body.secret;\nif (secret !== 'sm4rt-c0mpt4bl3-s3cur3-2026') {\n  throw new Error('Accès refusé : secret de validation invalide');\n}\nreturn $input.all();"
+      },
+      "id": "validate-secret-analyze",
+      "name": "Valider secret",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [400, 300]
     },
     {
       "parameters": {
@@ -37,7 +47,7 @@
       "name": "Gemini API",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [450, 300]
+      "position": [550, 300]
     },
     {
       "parameters": {
@@ -47,7 +57,7 @@
       "name": "Extraire le rapport",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [650, 300]
+      "position": [700, 300]
     },
     {
       "parameters": {
@@ -55,7 +65,7 @@
         "responseBody": "={{ $json }}"
       },
       "id": "respond-analyze",
-      "name": "R\u00e9pondre",
+      "name": "Répondre",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1,
       "position": [850, 300]
@@ -63,13 +73,16 @@
   ],
   "connections": {
     "Webhook": {
+      "main": [[{ "node": "Valider secret", "type": "main", "index": 0 }]]
+    },
+    "Valider secret": {
       "main": [[{ "node": "Gemini API", "type": "main", "index": 0 }]]
     },
     "Gemini API": {
       "main": [[{ "node": "Extraire le rapport", "type": "main", "index": 0 }]]
     },
     "Extraire le rapport": {
-      "main": [[{ "node": "R\u00e9pondre", "type": "main", "index": 0 }]]
+      "main": [[{ "node": "Répondre", "type": "main", "index": 0 }]]
     }
   },
   "pinData": {},

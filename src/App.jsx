@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -23,7 +23,10 @@ import {
   User,
   Layers,
   ArrowRight,
-  ShieldCheck
+  ShieldCheck,
+  AlertTriangle,
+  Lock,
+  KeyRound
 } from 'lucide-react';
 import { 
   AreaChart, 
@@ -56,11 +59,19 @@ import {
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini } from './geminiService';
 import ReactMarkdown from 'react-markdown';
+import rehypeSanitize from 'rehype-sanitize';
 import Onboarding from './Onboarding';
 import CompanySwitcher from './CompanySwitcher';
 import FinancialReportView from './FinancialReportView';
+import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll, encryptData, decryptData } from './security';
 
 export default function App() {
+  // Security State
+  const [locked, setLocked] = useState(true);
+  const [pinMode, setPinMode] = useState(null); // 'setup' | 'unlock' | null
+  const pinRef = useRef('');
+  const lockCleanupRef = useRef(null);
+
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
   
@@ -71,7 +82,9 @@ export default function App() {
   
   // App States - Multi-Tenant
   const [companies, setCompanies] = useState(() => {
-    return JSON.parse(localStorage.getItem('smart_comptable_companies') || '{}');
+    const stored = localStorage.getItem('smart_comptable_companies');
+    if (!stored) return {};
+    try { return JSON.parse(stored); } catch { return {}; }
   });
   
   const [currentCompanyId, setCurrentCompanyId] = useState(() => {
@@ -83,20 +96,77 @@ export default function App() {
   const [expenses, setExpenses] = useState([]);
   const [companyDetails, setCompanyDetails] = useState({});
 
+  // PIN initialization
+  useEffect(() => {
+    if (!isPinSet()) {
+      setPinMode('setup');
+    } else {
+      setPinMode('unlock');
+    }
+  }, []);
+
+  const handleLock = useCallback(() => {
+    if (lockCleanupRef.current) lockCleanupRef.current();
+    lockCleanupRef.current = null;
+    pinRef.current = '';
+    setLocked(true);
+    setPinMode('unlock');
+  }, []);
+
+  const handleUnlock = useCallback(async (pin) => {
+    const ok = await verifyPin(pin);
+    if (!ok) return false;
+    pinRef.current = pin;
+    setLocked(false);
+    setPinMode(null);
+    lockCleanupRef.current = setupInactivityTracker(() => handleLock());
+    return true;
+  }, [handleLock]);
+
+  const handleSetupPin = useCallback(async (pin) => {
+    await setPin(pin);
+    const ok = await handleUnlock(pin);
+    return ok;
+  }, [handleUnlock]);
+
   // Load specific company data when selected
   useEffect(() => {
-    if (currentCompanyId && companies[currentCompanyId]) {
-      const data = companies[currentCompanyId];
-      setInvoices(data.invoices || []);
-      setTransactions(data.transactions || []);
-      setExpenses(data.expenses || []);
-      setCompanyDetails(data.companyDetails || {});
-    }
+    const loadData = async () => {
+      if (currentCompanyId && companies[currentCompanyId]) {
+        const data = companies[currentCompanyId];
+        setInvoices(data.invoices || []);
+        setTransactions(data.transactions || []);
+        setExpenses(data.expenses || []);
+
+        const details = { ...(data.companyDetails || {}) };
+        if (pinRef.current && details.geminiApiKey) {
+          const encKey = localStorage.getItem(`sc_enc_api_key_${currentCompanyId}`);
+          if (encKey) {
+            const decrypted = await decryptData(encKey, pinRef.current);
+            if (decrypted) details.geminiApiKey = decrypted;
+          }
+        }
+        setCompanyDetails(details);
+      }
+    };
+    loadData();
   }, [currentCompanyId]); // Run only when ID changes
 
   // Persist local state back to the companies catalogue
   useEffect(() => {
-    if (currentCompanyId) {
+    const saveData = async () => {
+      if (!currentCompanyId) return;
+
+      // Encrypt the API key separately if PIN is available
+      if (pinRef.current && companyDetails.geminiApiKey) {
+        const encrypted = await encryptData(companyDetails.geminiApiKey, pinRef.current);
+        localStorage.setItem(`sc_enc_api_key_${currentCompanyId}`, encrypted);
+      }
+
+      // Store company data without the API key in plaintext
+      const safeDetails = { ...companyDetails };
+      delete safeDetails.geminiApiKey;
+
       setCompanies(prev => {
         const currentData = prev[currentCompanyId] || {};
         const updated = {
@@ -106,19 +176,30 @@ export default function App() {
             invoices,
             transactions,
             expenses,
-            companyDetails
+            companyDetails: safeDetails
           }
         };
         localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
         return updated;
       });
-    }
+    };
+    saveData();
   }, [invoices, transactions, expenses, companyDetails, currentCompanyId]);
 
   const handleCreateCompany = (details) => {
     const id = `company_${Date.now()}`;
+    
+    // Encrypt API key immediately if PIN is available
+    if (pinRef.current && details.geminiApiKey) {
+      encryptData(details.geminiApiKey, pinRef.current).then(enc => {
+        localStorage.setItem(`sc_enc_api_key_${id}`, enc);
+      });
+    }
+    const safeDetails = { ...details };
+    delete safeDetails.geminiApiKey;
+    
     const initialData = {
-      companyDetails: details,
+      companyDetails: safeDetails,
       invoices: [],
       expenses: [],
       transactions: [],
@@ -139,6 +220,14 @@ export default function App() {
     setCurrentCompanyId(id);
     localStorage.setItem('smart_comptable_current_id', id);
   };
+
+  // Security screens
+  if (locked && pinMode === 'setup') {
+    return <PinSetupScreen onComplete={handleSetupPin} />;
+  }
+  if (locked && pinMode === 'unlock') {
+    return <LockScreen onUnlock={handleUnlock} />;
+  }
 
   // 1. Écran de démarrage obligatoire
   if (!currentCompanyId || !companies[currentCompanyId]) {
@@ -254,6 +343,10 @@ export default function App() {
             onCompanyChange={handleCompanyChange}
             onCreateCompany={handleCreateCompany}
           />
+          <button onClick={handleLock} className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-amber-400 hover:bg-slate-800/40 transition-all duration-200">
+            <Lock className="w-3.5 h-3.5" />
+            Verrouiller
+          </button>
           <div className="flex items-center gap-3 mt-2">
             <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700">
               <User className="w-5 h-5 text-slate-300" />
@@ -420,7 +513,7 @@ export default function App() {
                   <p className="text-slate-400 font-medium animate-pulse">Analyse de vos flux de trésorerie et provisions IS/CNSS en cours...</p>
                 </div>
               ) : (
-                <ReactMarkdown>{advisorReport}</ReactMarkdown>
+                <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{advisorReport}</ReactMarkdown>
               )}
             </div>
             
@@ -1646,6 +1739,177 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
   );
 }
 
+
+/* ==========================================================================
+   COMPONENTS: LOCK SCREEN & PIN SETUP
+   ========================================================================== */
+function LockScreen({ onUnlock }) {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState('');
+  const [showReset, setShowReset] = useState(false);
+  const inputRef = useRef(null);
+
+  useEffect(() => { if (inputRef.current) inputRef.current.focus(); }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    const ok = await onUnlock(pin);
+    if (!ok) {
+      setError('Code incorrect');
+      setPin('');
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-surface-900 flex items-center justify-center p-4">
+      <form onSubmit={handleSubmit} className="glass-card p-10 rounded-3xl border border-slate-800 max-w-sm w-full space-y-6 text-center">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center mx-auto shadow-glow">
+          <Lock className="w-8 h-8 text-white" />
+        </div>
+        <div>
+          <h1 className="text-2xl font-extrabold text-slate-100">Smart Comptable</h1>
+          <p className="text-sm text-slate-400 mt-1">Entrez votre code de verrouillage</p>
+        </div>
+        {error && <p className="text-xs text-red-400 font-semibold">{error}</p>}
+        <input
+          ref={inputRef}
+          type="password"
+          maxLength="6"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          autoComplete="off"
+          value={pin}
+          onChange={e => { setPin(e.target.value.replace(/\D/g, '').slice(0, 6)); setError(''); }}
+          placeholder="● ● ● ● ● ●"
+          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-center text-2xl tracking-[0.5em] text-slate-100 focus:outline-none focus:border-brand-500 placeholder:text-slate-700"
+        />
+        <button type="submit" disabled={pin.length < 4} className="w-full py-3 bg-gradient-brand text-white font-bold rounded-xl text-sm shadow-glow hover:opacity-90 transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+          Déverrouiller
+        </button>
+        <p className="text-[10px] text-slate-600">Verrouillage automatique après 5 minutes d'inactivité</p>
+        <div className="space-y-2">
+          {!showReset ? (
+            <button type="button" onClick={() => setShowReset(true)} className="text-[10px] text-slate-600 hover:text-amber-400 underline transition-colors">
+              Code oublié ?
+            </button>
+          ) : (
+            <div className="space-y-2 pt-1">
+              <p className="text-[10px] text-red-400/80">Réinitialiser effacera toutes les données.</p>
+              <button type="button" onClick={() => { resetAll(); localStorage.clear(); window.location.reload(); }} className="text-[10px] px-4 py-2 bg-red-500/20 text-red-400 border border-red-500/30 rounded-xl hover:bg-red-500/30 transition-all">
+                Confirmer la réinitialisation
+              </button>
+              <button type="button" onClick={() => setShowReset(false)} className="text-[10px] text-slate-500 ml-2 hover:text-slate-300">
+                Annuler
+              </button>
+            </div>
+          )}
+        </div>
+      </form>
+    </div>
+  );
+}
+
+function PinSetupScreen({ onComplete }) {
+  const [pin, setPin] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [step, setStep] = useState('create'); // 'create' | 'confirm'
+  const [error, setError] = useState('');
+  const inputRef = useRef(null);
+
+  useEffect(() => { if (inputRef.current) inputRef.current.focus(); }, [step]);
+
+  const handleCreate = (e) => {
+    e.preventDefault();
+    setError('');
+    setStep('confirm');
+  };
+
+  const handleConfirm = async (e) => {
+    e.preventDefault();
+    if (pin !== confirm) {
+      setError('Les codes ne correspondent pas');
+      setConfirm('');
+      return;
+    }
+    await onComplete(pin);
+  };
+
+  const handleReset = () => {
+    setStep('create');
+    setPin('');
+    setConfirm('');
+    setError('');
+  };
+
+  if (step === 'confirm') {
+    return (
+      <div className="min-h-screen bg-surface-900 flex items-center justify-center p-4">
+        <form onSubmit={handleConfirm} className="glass-card p-10 rounded-3xl border border-slate-800 max-w-sm w-full space-y-6 text-center">
+          <div className="w-16 h-16 rounded-2xl bg-indigo-500/20 flex items-center justify-center mx-auto">
+            <KeyRound className="w-8 h-8 text-indigo-400" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-extrabold text-slate-100">Confirmer le code</h1>
+            <p className="text-sm text-slate-400 mt-1">Saisissez à nouveau votre code à 4-6 chiffres</p>
+          </div>
+          {error && <p className="text-xs text-red-400 font-semibold">{error}</p>}
+          <input
+            ref={inputRef}
+            type="password"
+            maxLength="6"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            autoComplete="off"
+            value={confirm}
+            onChange={e => { setConfirm(e.target.value.replace(/\D/g, '').slice(0, 6)); setError(''); }}
+            placeholder="● ● ● ● ● ●"
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-center text-2xl tracking-[0.5em] text-slate-100 focus:outline-none focus:border-brand-500 placeholder:text-slate-700"
+          />
+          <div className="flex gap-3">
+            <button type="button" onClick={handleReset} className="flex-1 py-3 bg-slate-800 text-slate-300 font-bold rounded-xl text-xs hover:bg-slate-700 transition-all">
+              Retour
+            </button>
+            <button type="submit" disabled={confirm.length < 4} className="flex-1 py-3 bg-gradient-brand text-white font-bold rounded-xl text-sm shadow-glow hover:opacity-90 transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+              Confirmer
+            </button>
+          </div>
+        </form>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-surface-900 flex items-center justify-center p-4">
+      <form onSubmit={handleCreate} className="glass-card p-10 rounded-3xl border border-slate-800 max-w-sm w-full space-y-6 text-center">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center mx-auto shadow-glow">
+          <Lock className="w-8 h-8 text-white" />
+        </div>
+        <div>
+          <h1 className="text-2xl font-extrabold text-slate-100">Sécurisez votre application</h1>
+          <p className="text-sm text-slate-400 mt-1">Créez un code de verrouillage à 4-6 chiffres</p>
+        </div>
+        <input
+          ref={inputRef}
+          type="password"
+          maxLength="6"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          autoComplete="off"
+          value={pin}
+          onChange={e => { setPin(e.target.value.replace(/\D/g, '').slice(0, 6)); setError(''); }}
+          placeholder="● ● ● ● ● ●"
+          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-center text-2xl tracking-[0.5em] text-slate-100 focus:outline-none focus:border-brand-500 placeholder:text-slate-700"
+        />
+        <button type="submit" disabled={pin.length < 4} className="w-full py-3 bg-gradient-brand text-white font-bold rounded-xl text-sm shadow-glow hover:opacity-90 transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+          Créer le code
+        </button>
+        <p className="text-[10px] text-slate-600">Ce code protège vos données financières contre tout accès non autorisé</p>
+      </form>
+    </div>
+  );
+}
+
 /* ==========================================================================
    COMPONENT: SETTINGS VIEW (CONFIGURATION COMPAGNIE)
    ========================================================================== */
@@ -1684,7 +1948,8 @@ function SettingsView({ companyDetails, setCompanyDetails }) {
           onChange={(e) => setCompanyDetails({...companyDetails, geminiApiKey: e.target.value})}
           className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
         />
-        <p className="text-[9px] text-slate-500 mt-1.5">Clé Gemini stockée localement. Envoyée au workflow n8n pour le scan et l'analyse.</p>
+        <p className="text-[9px] text-slate-500 mt-1.5">Clé Gemini stockée localement dans le navigateur. Envoyée au workflow n8n pour le scan et l'analyse.</p>
+        <p className="text-[9px] text-amber-400/80 mt-1 flex items-center gap-1"><AlertTriangle className="w-3 h-3 shrink-0" /> Ne partagez jamais cette clé. Évitez de l'utiliser sur un réseau public non sécurisé.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -2193,7 +2458,7 @@ function WorkflowView({
                 </div>
               ) : auditReport ? (
                 <div className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800 text-xs overflow-y-auto max-h-[300px] space-y-4 custom-markdown">
-                  <ReactMarkdown>{auditReport}</ReactMarkdown>
+                  <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{auditReport}</ReactMarkdown>
                 </div>
               ) : (
                 <div className="p-12 text-center border-2 border-dashed border-slate-800 rounded-2xl bg-slate-900/10 flex flex-col items-center justify-center space-y-4">

@@ -16,6 +16,16 @@
     },
     {
       "parameters": {
+        "jsCode": "const secret = $json.body.secret;\nif (secret !== 'sm4rt-c0mpt4bl3-s3cur3-2026') {\n  throw new Error('Accès refusé : secret de validation invalide');\n}\nreturn $input.all();"
+      },
+      "id": "validate-secret-scan",
+      "name": "Valider secret",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
         "method": "POST",
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
         "authentication": "none",
@@ -37,7 +47,7 @@
       "name": "Gemini API",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [450, 300]
+      "position": [550, 300]
     },
     {
       "parameters": {
@@ -47,7 +57,7 @@
       "name": "Parser la réponse",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [650, 300]
+      "position": [700, 300]
     },
     {
       "parameters": {
@@ -63,6 +73,9 @@
   ],
   "connections": {
     "Webhook": {
+      "main": [[{ "node": "Valider secret", "type": "main", "index": 0 }]]
+    },
+    "Valider secret": {
       "main": [[{ "node": "Gemini API", "type": "main", "index": 0 }]]
     },
     "Gemini API": {
