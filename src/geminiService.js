@@ -4,6 +4,21 @@ import Tesseract from 'tesseract.js';
 const N8N_SCAN_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/scan-receipt';
 const N8N_ANALYZE_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/analyze-dashboard';
 
+const GEMINI_MODEL = 'gemini-2.0-flash';
+
+// Fallback direct vers l'API Gemini (quand n8n n'est pas disponible)
+const callGeminiDirect = async (apiKey, parts) => {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ contents: [{ parts }] }),
+  });
+  if (!response.ok) throw new Error(`Gemini direct error ${response.status}`);
+  const data = await response.json();
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+};
+
 // Secret partagé pour valider les appels aux webhooks n8n
 // (visible côté client — protection de base contre les appels non autorisés)
 const WEBHOOK_SECRET = 'sm4rt-c0mpt4bl3-s3cur3-2026';
@@ -58,7 +73,35 @@ Retourne UNIQUEMENT le JSON brut.`,
         invoiceNumber: data.invoiceNumber || '',
       };
     } catch (e) {
-      console.warn("Webhook n8n scan échoué, basculement vers l'OCR local :", e.message);
+      console.warn("Webhook n8n scan échoué, tentative directe Gemini :", e.message);
+    }
+
+    // Fallback direct API Gemini
+    try {
+      const prompt = `En tant qu'expert comptable tunisien, analyse cette image de reçu/facture d'achat. Extrais précisément les champs suivants au format JSON brut (ne mets PAS de markdown, retourne UNIQUEMENT le JSON valide) : {"supplier": "", "matriculeFiscal": "", "date": "YYYY-MM-DD", "subtotal": 0, "fodec": 0, "vatRate": 19, "vatAmount": 0, "stampDuty": 1.000, "totalAmount": 0, "category": "Autres", "invoiceNumber": ""}. Catégories possibles : Télécoms & Internet | Énergie & Utilités | Fournitures de Bureau | Déplacements | Restauration | Autres.`;
+      const text = await callGeminiDirect(apiKey, [
+        { text: prompt },
+        { inline_data: { mime_type: mimeType, data: base64Image } }
+      ]);
+      const jsonStr = text.replace(/```json?/gi, '').replace(/```/g, '').trim();
+      const parsed = JSON.parse(jsonStr);
+      if (parsed.supplier) {
+        return {
+          supplier: parsed.supplier || '',
+          matriculeFiscal: parsed.matriculeFiscal || '',
+          date: parsed.date || new Date().toISOString().split('T')[0],
+          subtotal: parseFloat(parsed.subtotal) || 0,
+          fodec: parseFloat(parsed.fodec) || 0,
+          vatRate: parseFloat(parsed.vatRate) || 19,
+          vatAmount: parseFloat(parsed.vatAmount) || 0,
+          stampDuty: parsed.stampDuty !== undefined ? parseFloat(parsed.stampDuty) : 1.000,
+          totalAmount: parseFloat(parsed.totalAmount) || 0,
+          category: parsed.category || 'Autres',
+          invoiceNumber: parsed.invoiceNumber || '',
+        };
+      }
+    } catch (e2) {
+      console.warn("Gemini direct scan échoué, OCR local :", e2.message);
     }
   }
 
@@ -80,7 +123,7 @@ Retourne UNIQUEMENT le JSON brut.`,
   else if (nameLower.includes("ooredoo") || nameLower.includes("telecom") || nameLower.includes("internet") || nameLower.includes("orange") || nameLower.includes("tt")) { selectedSupplier = { supplier: "Ooredoo Tunisie", matriculeFiscal: "0731024/M/A/M00", subtotal: 126.05, fodec: 0.000, vatRate: 19, vatAmount: 23.95, stampDuty: 1.000, totalAmount: 151.000, category: "Télécoms & Internet" }; }
   else if (nameLower.includes("bureau") || nameLower.includes("papier") || nameLower.includes("monoprix")) { const sub = 84.112; const fodec = Math.round((sub * 0.01) * 1000) / 1000; const baseTva = sub + fodec; const vat = Math.round((baseTva * 0.19) * 1000) / 1000; selectedSupplier = { supplier: "Sotupap", matriculeFiscal: "0948372/C/A/000", subtotal: sub, fodec, vatRate: 19, vatAmount: vat, stampDuty: 1.000, totalAmount: Math.round((baseTva + vat + 1) * 1000) / 1000, category: "Fournitures de Bureau" }; }
   else if (nameLower.includes("tunisair") || nameLower.includes("voyage")) { selectedSupplier = { supplier: "Tunisair", matriculeFiscal: "0001045/P/A/000", subtotal: 620.000, fodec: 0.000, vatRate: 7, vatAmount: 43.400, stampDuty: 1.000, totalAmount: 664.400, category: "Déplacements" }; }
-  return { ...selectedSupplier, date: new Date().toISOString().split('T')[0], invoiceNumber: "FAC-TN-2026-" + Math.floor(Math.random() * 90000 + 10000) };
+  return { ...selectedSupplier, date: new Date().toISOString().split('T')[0], invoiceNumber: "FAC-TN-2026-" + Math.floor(Math.random() * 90000 + 10000), _simulated: true };
 };
 
 /**
@@ -204,9 +247,33 @@ ${JSON.stringify(dashboardData, null, 2)}`,
       });
       if (!response.ok) throw new Error(`n8n error ${response.status}`);
       const data = await response.json();
-      return data.report || data.markdown || JSON.stringify(data);
+      if (data.report) return data.report;
+      throw new Error('Réponse n8n invalide');
     } catch (e) {
-      console.warn("Webhook n8n analyse échoué, basculement local :", e.message);
+      console.warn("Webhook n8n analyse échoué, tentative directe Gemini :", e.message);
+    }
+
+    // Fallback direct API Gemini
+    try {
+      const prompt = `## IDENTITÉ
+Tu es Smart Comptable, un expert-comptable IA spécialisé dans le système comptable tunisien (SCE). Réponds toujours en français.
+
+Données financières à analyser :
+${JSON.stringify(dashboardData, null, 2)}
+
+Tu dois produire :
+1. **Analyse de trésorerie** : liquidité immédiate, besoin en fonds de roulement
+2. **Résultat net estimé** : (Total Revenus - Total Charges)
+3. **Provisions fiscales** : IS (15% du résultat), CNSS employeur (16,57% sur masse salariale estimée)
+4. **Ratios clés** : marge nette, taux de couverture des charges
+5. **Recommandations** : optimisation fiscale et conseils de gestion
+
+Formate la réponse en Markdown avec des tableaux et sections claires.`;
+
+      const text = await callGeminiDirect(apiKey, [{ text: prompt }]);
+      if (text) return text;
+    } catch (e2) {
+      console.warn("Gemini direct analyse échoué, simulation locale :", e2.message);
     }
   }
 
@@ -218,7 +285,7 @@ ${JSON.stringify(dashboardData, null, 2)}`,
   const baseSalariale = Math.max(totalExpenses * 0.35, 4500);
   const provisionCNSS = baseSalariale * 0.1657;
   const fmt = (val) => new Intl.NumberFormat('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }).format(val) + " DT";
-  return `### 📊 Diagnostic Flash Smart-Comptable\n...*(simulation locale - configure n8n pour l'IA réelle)*\n\n**Résultat net :** ${fmt(netResult)}\n**Marge :** ${marginRate}%\n**Provision IS :** ${fmt(provisionIS)}\n**Provision CNSS :** ${fmt(provisionCNSS)}`;
+  return `### ⚠️ Diagnostic Simulé (Mode Hors Ligne)\n*L'IA Gemini n'est pas joignable. Les chiffres ci-dessous sont une estimation basée sur vos données réelles.*\n\n**Résultat net estimé :** ${fmt(netResult)}\n**Marge nette :** ${marginRate}%\n**Provision IS (15%) :** ${fmt(provisionIS)}\n**Provision CNSS (16.57%) :** ${fmt(provisionCNSS)}\n\n> Revenus : ${fmt(totalRevenues)} | Charges : ${fmt(totalExpenses)} | Trésorerie : ${fmt(bankBalance)}`;
 };
 
 // Parsing OCR texte → données structurées
