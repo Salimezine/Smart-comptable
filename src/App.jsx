@@ -74,6 +74,7 @@ export default function App() {
 
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   
   // Advisor State
   const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
@@ -278,9 +279,16 @@ export default function App() {
   };
 
   return (
-    <div className="flex h-screen bg-surface-900 text-slate-100 font-sans overflow-hidden">
-      {/* Sidebar */}
-      <aside className="w-72 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-20">
+    <div className="flex h-screen bg-surface-900 text-slate-100 font-sans overflow-hidden relative">
+      {/* Mobile overlay */}
+      {sidebarOpen && (
+        <div className="fixed inset-0 bg-black/50 z-30 lg:hidden" onClick={() => setSidebarOpen(false)} />
+      )}
+
+      {/* Sidebar - off-canvas on mobile */}
+      <aside className={`w-72 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-40 transition-transform duration-300 ease-in-out lg:translate-x-0 ${
+        sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+      } fixed lg:static inset-y-0 left-0`}>
         <div>
           {/* Logo */}
           <div className="p-6 flex items-center gap-3">
@@ -311,7 +319,7 @@ export default function App() {
               return (
                 <button
                   key={item.id}
-                  onClick={() => setCurrentTab(item.id)}
+                  onClick={() => { setCurrentTab(item.id); setSidebarOpen(false); }}
                   className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-300 font-medium text-sm ${
                     isActive 
                       ? 'bg-gradient-brand text-white shadow-glow' 
@@ -364,17 +372,22 @@ export default function App() {
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col min-w-0 overflow-y-auto relative bg-surface-900">
         {/* Header */}
-        <header className="h-20 border-b border-slate-800/50 flex items-center justify-between px-8 bg-slate-950/20 backdrop-blur-md sticky top-0 z-10">
-          <div>
-            <h2 className="text-xl font-bold tracking-tight text-white capitalize">
-              {currentTab === 'dashboard' && 'Vue d\'ensemble financière'}
-              {currentTab === 'workflow' && 'Flux de Clôture Comptable & Déclaration'}
-              {currentTab === 'invoicing' && 'Factures de Ventes'}
-              {currentTab === 'ocr' && 'Numérisation & OCR intelligent'}
-              {currentTab === 'bank' && 'Synchronisation & Rapprochement Bancaire'}
-              {currentTab === 'settings' && 'Configuration & Entreprise'}
-            </h2>
-            <p className="text-xs text-slate-400">
+        <header className="h-16 lg:h-20 border-b border-slate-800/50 flex items-center justify-between px-4 sm:px-6 lg:px-8 bg-slate-950/20 backdrop-blur-md sticky top-0 z-10">
+          <div className="flex items-center gap-3 min-w-0">
+            {/* Hamburger */}
+            <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 -ml-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+            <div className="min-w-0">
+              <h2 className="text-base lg:text-xl font-bold tracking-tight text-white capitalize truncate">
+                {currentTab === 'dashboard' && 'Vue d\'ensemble financière'}
+                {currentTab === 'workflow' && 'Flux de Clôture'}
+                {currentTab === 'invoicing' && 'Factures de Ventes'}
+                {currentTab === 'ocr' && 'Numérisation & OCR'}
+                {currentTab === 'bank' && 'Rapprochement Bancaire'}
+                {currentTab === 'settings' && 'Configuration & Entreprise'}
+              </h2>
+              <p className="text-[10px] lg:text-xs text-slate-400 hidden sm:block truncate">
               {currentTab === 'dashboard' && 'Suivez la santé de votre trésorerie et vos estimations fiscales en temps réel.'}
               {currentTab === 'invoicing' && 'Créez, gérez et exportez vos factures clients aux normes.'}
               {currentTab === 'ocr' && 'Déposez vos justificatifs. Notre intelligence artificielle Gemini extrait les montants et taxes.'}
@@ -383,38 +396,39 @@ export default function App() {
               {currentTab === 'settings' && 'Renseignez les données légales de votre société pour les QR Codes et factures.'}
             </p>
           </div>
+          </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
             {/* Quick Actions */}
             {currentTab === 'dashboard' && (
               <button 
                 onClick={handleRequestAudit} 
-                className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-750 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
               >
-                <Sparkles className="w-3.5 h-3.5" />
-                Audit Smart-Comptable
+                <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden sm:inline">Audit</span>
               </button>
             )}
             <button 
               onClick={() => setCurrentTab('ocr')} 
-              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-750 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              Scanner un reçu
+              <Sparkles className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden sm:inline">Scan</span>
             </button>
             <button 
               onClick={() => setCurrentTab('invoicing')} 
-              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-gradient-brand hover:opacity-90 text-white rounded-xl transition-all duration-300 shadow-glow"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-gradient-brand hover:opacity-90 text-white rounded-xl transition-all duration-300 shadow-glow"
             >
-              <Plus className="w-3.5 h-3.5" />
-              Nouvelle Facture
+              <Plus className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden sm:inline">Facture</span>
             </button>
           </div>
         </header>
 
         {/* Tab Switcher Body */}
-        <div className="flex-1 p-8">
-          <div className="max-w-7xl mx-auto space-y-8 animate-fade-in">
+        <div className="flex-1 p-4 sm:p-6 lg:p-8">
+          <div className="max-w-7xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-in">
             {currentTab === 'dashboard' && (
               <DashboardView 
                 totalRevenues={totalRevenues}
@@ -549,7 +563,7 @@ function DashboardView({
   return (
     <div className="space-y-6">
       {/* 4 Cards Métriques */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {[
           { title: 'Revenus Encaissés', value: totalRevenues, color: 'text-accent-400', icon: TrendingUp, bg: 'bg-accent-500/10 border-accent-500/20' },
           { title: 'Dépenses Totales', value: totalExpenses, color: 'text-danger-400', icon: TrendingDown, bg: 'bg-danger-500/10 border-danger-500/20' },
@@ -1064,6 +1078,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
       ) : (
         /* TABLEAU PRINCIPAL DES FACTURES */
         <div className="glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-card">
+          <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-900/50 border-b border-slate-800 text-[10px] uppercase tracking-wider text-slate-400 font-bold">
@@ -1113,6 +1128,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       )}
     </div>
@@ -1521,7 +1537,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
         </div>
 
         {/* Panel droit */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-7 flex flex-col justify-between min-h-[520px] relative overflow-hidden">
+        <div className="glass-card p-4 sm:p-6 rounded-2xl border border-slate-800 lg:col-span-7 flex flex-col justify-between min-h-[300px] lg:min-h-[520px] relative overflow-hidden">
           {mode === 'scanning' && (
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-500 to-transparent animate-[shimmer_1.5s_infinite] shadow-glow" />
           )}
@@ -2203,7 +2219,7 @@ function WorkflowView({
 
       {/* Détail de l'étape active */}
       <div className="lg:col-span-8">
-        <div className="glass-card p-8 rounded-2xl border border-slate-800 min-h-[500px] flex flex-col justify-between space-y-8 relative overflow-hidden">
+        <div className="glass-card p-4 sm:p-8 rounded-2xl border border-slate-800 min-h-[300px] lg:min-h-[500px] flex flex-col justify-between space-y-8 relative overflow-hidden">
           
           {/* STEP 1: SCAN & COLLECTE */}
           {activeStep === 0 && (
