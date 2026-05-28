@@ -228,6 +228,14 @@ export default function App() {
     localStorage.setItem('smart_comptable_current_id', id);
   };
 
+  const handleSearch = useCallback((query) => {
+    setSearchQuery(query);
+    if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
+    const results = searchEntities(invoices, expenses, query);
+    setSearchResults(results);
+    setSearchOpen(true);
+  }, [invoices, expenses]);
+
   // Security screens
   if (locked && pinMode === 'setup') {
     return <PinSetupScreen onComplete={handleSetupPin} />;
@@ -252,14 +260,6 @@ export default function App() {
   const formatCurrency = (val) => {
     return formatCurrencyHelper(val, companyDetails.currency);
   };
-
-  const handleSearch = useCallback((query) => {
-    setSearchQuery(query);
-    if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
-    const results = searchEntities(invoices, expenses, query);
-    setSearchResults(results);
-    setSearchOpen(true);
-  }, [invoices, expenses]);
 
   const handleAddInvoice = (newInv) => {
     learnFromInvoice(newInv);
