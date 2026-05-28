@@ -56,7 +56,7 @@ import {
   calculateInvoiceTotals, 
   formatCurrencyHelper 
 } from './accountingUtils';
-import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI } from './geminiService';
+import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 import Onboarding from './Onboarding';
@@ -454,6 +454,7 @@ export default function App() {
                 onAddExpense={handleAddExpense}
                 formatCurrency={formatCurrency}
                 geminiApiKey={companyDetails.geminiApiKey}
+                companyDetails={companyDetails}
               />
             )}
             {currentTab === 'workflow' && (
@@ -1229,7 +1230,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 /* ==========================================================================
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
-function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
+function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, companyDetails }) {
   const [mode, setMode] = useState('choice'); // 'choice' | 'manual' | 'scanning' | 'result' | 'success'
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
@@ -1248,6 +1249,10 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
     invoiceNumber: '',
   };
   const [formData, setFormData] = useState(BLANK_FORM);
+  const [purchaseInput, setPurchaseInput] = useState('');
+  const [purchaseLoading, setPurchaseLoading] = useState(false);
+  const [purchaseResult, setPurchaseResult] = useState('');
+  const [purchaseError, setPurchaseError] = useState('');
 
   const CATEGORIES = [
     'Télécoms & Internet', 'Énergie & Utilités', 'Fournitures de Bureau',
@@ -1394,6 +1399,21 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
     setMode('success');
     setFormData(BLANK_FORM);
     setActiveSample(null);
+  };
+
+  const handlePurchaseProcess = async () => {
+    if (!purchaseInput.trim()) return;
+    setPurchaseLoading(true);
+    setPurchaseError('');
+    setPurchaseResult('');
+    try {
+      const text = await processPurchaseInvoice(geminiApiKey, purchaseInput, companyDetails);
+      setPurchaseResult(text);
+    } catch (err) {
+      setPurchaseError(err.message);
+    } finally {
+      setPurchaseLoading(false);
+    }
   };
 
   // Formulaire partagé (saisie manuelle + résultat scan)
@@ -1603,6 +1623,20 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
             </div>
           </label>
 
+          {/* Traitement Facture d'Achat */}
+          <button
+            onClick={() => setMode('purchase')}
+            className="w-full flex items-center gap-4 p-4 border-2 border-indigo-500/30 hover:border-indigo-500/60 rounded-2xl transition-all group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <FileText className="w-5 h-5 text-indigo-400" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-bold text-slate-100">Facture d'Achat Fournisseur</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">Extraction → Vérifications → RS → Écriture SCE</p>
+            </div>
+          </button>
+
           {/* Exemples de test */}
           <div className="space-y-2">
             <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Exemples de test (données réelles)</span>
@@ -1665,6 +1699,72 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey }) {
             renderEntryForm(true)
           ) : mode === 'result' ? (
             renderEntryForm(false)
+          ) : mode === 'purchase' ? (
+            <div className="flex-1 flex flex-col space-y-4 overflow-y-auto">
+              <div className="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h4 className="text-sm font-extrabold flex items-center gap-1.5 text-purple-400">
+                  <FileText className="w-4 h-4" /> Traitement Facture d'Achat
+                </h4>
+                <button type="button" onClick={() => setMode('choice')}
+                  className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Annuler</button>
+              </div>
+              {!purchaseResult ? (
+                <div className="space-y-3 flex-1 flex flex-col">
+                  <div>
+                    <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">
+                      Collez ou décrivez la facture fournisseur
+                    </label>
+                    <textarea
+                      placeholder='Ex: Facture d&#39;achat N° FAC-2026-0421 du 15/05/2026
+Fournisseur : Société Tunisienne de Fournitures S.A.
+MF : 1234567/X/A/000
+Désignation : Cartouches d&#39;encre HP LaserJet — Qté : 10 — PU : 85.500 DT — TVA 19%
+Total HT : 855.000 DT — TVA : 162.450 DT — TTC : 1 017.450 DT
+Règlement : Virement à 60 jours'
+                      value={purchaseInput}
+                      onChange={(e) => setPurchaseInput(e.target.value)}
+                      rows={8}
+                      className="w-full bg-slate-950 border border-slate-700 focus:border-purple-500 rounded-xl px-4 py-3 text-slate-100 text-xs focus:outline-none resize-none transition-colors font-mono"
+                    />
+                    <p className="text-[10px] text-slate-500 mt-1.5">Incluez le fournisseur, MF, articles, montants et TVA. L'IA effectuera le workflow complet.</p>
+                  </div>
+                  {purchaseError && (
+                    <div className="p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl text-xs text-danger-400 flex items-center gap-2">
+                      <AlertCircle className="w-4 h-4 shrink-0" /> {purchaseError}
+                    </div>
+                  )}
+                  <button
+                    onClick={handlePurchaseProcess}
+                    disabled={purchaseLoading || !purchaseInput.trim()}
+                    className="w-full py-3 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-2 disabled:opacity-30 disabled:cursor-not-allowed"
+                  >
+                    {purchaseLoading ? (
+                      <><RefreshCw className="w-4 h-4 animate-spin" /> Traitement en cours...</>
+                    ) : (
+                      <><FileText className="w-4 h-4" /> Lancer le traitement</>
+                    )}
+                  </button>
+                </div>
+              ) : (
+                <div className="flex-1 space-y-3 overflow-y-auto">
+                  <div className="prose prose-invert prose-sm prose-brand max-w-none text-xs custom-markdown">
+                    <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{purchaseResult}</ReactMarkdown>
+                  </div>
+                  <div className="flex gap-3 pt-2 border-t border-slate-800">
+                    <button
+                      onClick={() => { setPurchaseInput(''); setPurchaseResult(''); setPurchaseError(''); }}
+                      className="flex-1 py-2.5 bg-brand-500/20 hover:bg-brand-500/30 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30"
+                    >
+                      + Nouveau traitement
+                    </button>
+                    <button onClick={() => setMode('choice')}
+                      className="flex-1 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl">
+                      Terminer
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center space-y-4 text-slate-500 py-12">
               <div className="w-16 h-16 rounded-2xl bg-slate-800/60 flex items-center justify-center border border-slate-700">

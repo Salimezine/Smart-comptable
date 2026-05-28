@@ -498,6 +498,293 @@ const simulateInvoiceLocal = (userPrompt, companyDetails, invoiceNumStr) => {
   };
 };
 
+/**
+ * Traitement complet d'une facture d'achat fournisseur (Extraction → Vérifications → RS → Écriture → Synthèse)
+ */
+export const processPurchaseInvoice = async (apiKey, userInput, companyDetails) => {
+  const buyerInfo = `Raison sociale: ${companyDetails.name || 'Non renseigné'}
+MF: ${companyDetails.vatNumber || 'Non renseigné'}
+Adresse: ${companyDetails.address || 'Non renseignée'}`;
+
+  const systemPrompt = `## FACTURE D'ACHAT — SMART COMPTABLE
+
+RÔLE
+Tu traites les factures d'achat reçues par l'entreprise
+tunisienne. Tu extrais, valides et comptabilises chaque
+facture conformément au SCE (plan comptable tunisien)
+et aux règles fiscales en vigueur (Code de la TVA,
+Code de l'IRPP et IS).
+
+DÉCLENCHEURS RECONNUS
+"enregistrer une facture fournisseur", "facture d'achat",
+"j'ai reçu une facture", "saisir un achat", "dépense fournisseur",
+"scanner une facture", "facture reçue", ou toute formulation
+similaire en français ou arabe.
+
+──────────────────────────────────────────
+ÉTAPE 1 — EXTRACTION DES DONNÉES
+──────────────────────────────────────────
+Extrais automatiquement :
+  • Fournisseur : raison sociale, MF, adresse
+  • N° facture fournisseur + date d'émission
+  • Date de réception (si différente)
+  • Lignes articles :
+      - Désignation
+      - Quantité
+      - Prix unitaire HT
+      - Taux TVA (0% / 7% / 13% / 19%)
+      - Montant HT / TVA / TTC
+  • Remises accordées (par ligne ou globale)
+  • Total HT / Total TVA / Total TTC
+  • Timbre fiscal fournisseur (1,000 DT si applicable)
+  • Mode et délai de règlement
+Si des champs sont manquants ou illisibles, liste-les.
+
+──────────────────────────────────────────
+ÉTAPE 2 — VÉRIFICATIONS OBLIGATOIRES
+──────────────────────────────────────────
+Vérifie :
+  ✓ Cohérence des calculs (HT × taux TVA = TVA affichée)
+  ✓ Total TTC = Total HT + Total TVA + Timbre
+  ✓ Matricule fiscal fournisseur présent
+  ✓ Facture datée et numérotée
+  ✓ Mention du taux TVA par ligne
+  ✓ Conformité mentions légales obligatoires
+Signale avec ⚠ [ANOMALIE] si problème.
+
+──────────────────────────────────────────
+ÉTAPE 3 — RETENUE À LA SOURCE (RS)
+──────────────────────────────────────────
+Détermine le taux RS selon nature :
+  Marchandises / matières premières : 0%
+  Prestations de services : 1,5% sur HT
+  Loyers (personnes morales) : 15% sur brut
+  Honoraires professions libérales : 10% ou 15%
+  Commissions, courtages, ristournes : 1,5% sur HT
+  Travaux construction / sous-traitance : 1,5% sur HT
+Calcule : Montant RS = Base × Taux RS
+Net à décaisser = TTC − RS + Timbre
+
+──────────────────────────────────────────
+ÉTAPE 4 — ÉCRITURE COMPTABLE SCE
+──────────────────────────────────────────
+Génère l'écriture conforme au SCE :
+  Débit  601X  Achats de marchandises       [HT]
+  Débit  4366  TVA déductible               [TVA]
+  Crédit 4011  Fournisseurs                 [TTC + Timbre]
+  Crédit 4452  RS à reverser                [RS]
+Adapte les comptes selon la nature.
+
+──────────────────────────────────────────
+ÉTAPE 5 — FICHE DE SYNTHÈSE
+──────────────────────────────────────────
+  N° interne     : ACH-{YYYY}-{NNN}
+  Fournisseur    : [nom] — MF : [matricule]
+  Montant HT     : [montant] DT
+  TVA déductible : [montant] DT
+  Montant TTC    : [montant] DT
+  RS opérée      : [montant] DT ([taux]%)
+  Net à payer    : [montant] DT
+  Compte impacté : [numéro + libellé SCE]
+  Statut paiement: En attente
+
+RÈGLES DE DÉDUCTIBILITÉ TVA
+  TVA déductible uniquement si :
+  ✓ Fournisseur assujetti TVA (MF vérifié)
+  ✓ Facture mentionne taux et montant TVA par ligne
+  ✓ Bien/service utilisé pour activité taxable
+  ✓ Facture au nom de l'entreprise acheteuse
+Signale tout cas de TVA non déductible.
+
+ALERTES AUTOMATIQUES
+  ⚠ Facture sans MF fournisseur → TVA non déductible
+  ⚠ Espèces > 5.000 DT → interdit (Loi 2016-35)
+  ⚠ Facture de plus de 3 ans → prescription possible
+  ⚠ Fournisseur non-résident → vérifier convention
+  ⚠ TVA sur importation → traiter avec DUM
+
+INFORMATIONS ACHETEUR :
+${buyerInfo}
+
+DONNÉES FACTURE FOURNISSEUR :
+${userInput}
+
+FORMAT DE SORTIE
+Rédige un rapport complet en Markdown avec les sections :
+## 1. Extraction des données
+## 2. Vérifications
+## 3. Retenue à la source
+## 4. Écriture comptable
+## 5. Fiche de synthèse
+Termine par "---" et la mention "Export PDF disponible".`;
+
+  if (apiKey && apiKey !== 'local') {
+    try {
+      const response = await fetch(N8N_INVOICE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: systemPrompt,
+          apiKey,
+          secret: WEBHOOK_SECRET,
+        }),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (typeof data === 'string' && data.length > 50) return data;
+        if (data.report) return data.report;
+        if (data.result) return data.result;
+      }
+      throw new Error('n8n response invalid');
+    } catch (e) {
+      console.warn("Webhook n8n purchase échoué, tentative directe Gemini :", e.message);
+    }
+
+    try {
+      const text = await callGeminiDirect(apiKey, [{ text: systemPrompt }]);
+      if (text && text.length > 100) return text;
+    } catch (e2) {
+      console.warn("Gemini direct purchase échoué, simulation :", e2.message);
+    }
+  }
+
+  await new Promise(resolve => setTimeout(resolve, 2000));
+  return simulatePurchaseLocal(userInput, companyDetails);
+};
+
+const simulatePurchaseLocal = (userInput, companyDetails) => {
+  const text = userInput.toLowerCase();
+  const now = new Date();
+  const year = now.getFullYear();
+
+  const invNum = `ACH-${year}-${String(Math.floor(Math.random() * 900) + 100)}`;
+
+  let supplier = "Fournisseur S.A.";
+  const sMatch = userInput.match(/(?:fournisseur|supplier|de)\s*[:\s]\s*([A-Za-zéèêëàâäùûüôöîïç'&\s.-]{3,40})/i);
+  if (sMatch) supplier = sMatch[1].trim();
+
+  let mf = "1234567/X/A/000";
+  const mfMatch = userInput.match(/(\d{7})\s*\/\s*([A-Z])\s*\/\s*([A-Z])\s*\/\s*(\d{3})/i);
+  if (mfMatch) mf = `${mfMatch[1]}/${mfMatch[2].toUpperCase()}/${mfMatch[3].toUpperCase()}/${mfMatch[4]}`;
+
+  let amount = 0;
+  const amMatch = text.match(/(\d[\d\s]*\.?\d{0,3})\s*(?:dt|dinar|tnd)/i);
+  if (amMatch) amount = parseFloat(amMatch[1].replace(/\s/g, ''));
+  if (!amount || isNaN(amount)) amount = 2500.000;
+
+  let description = "Achat de marchandises";
+  const descKw = ['marchandise', 'matière', 'fourniture', 'prestation', 'service', 'équipement', 'matériel', 'emballage', 'stock'];
+  for (const kw of descKw) {
+    if (text.includes(kw)) {
+      const idx = text.indexOf(kw);
+      description = userInput.substring(idx, idx + 35).replace(/[0-9].*$/, '').trim() || description;
+      break;
+    }
+  }
+
+  const isService = /prestation|service|honoraire|commission|conseil/.test(text);
+  const rsRate = isService ? 1.5 : 0;
+  const vatRate = 19;
+  const subtotal = Math.round(amount * 1000) / 1000;
+  const vatAmount = Math.round(subtotal * (vatRate / 100) * 1000) / 1000;
+  const stampDuty = subtotal >= 1 ? 1.000 : 0;
+  const totalTTC = Math.round((subtotal + vatAmount) * 1000) / 1000;
+  const rsAmount = Math.round(subtotal * (rsRate / 100) * 1000) / 1000;
+  const netAPayer = Math.round((totalTTC - rsAmount + stampDuty) * 1000) / 1000;
+
+  const scAccount = isService ? "611X" : "601X";
+  const scLabel = isService ? "Prestations de services" : "Achats de marchandises";
+
+  const checks = [
+    { label: "Cohérence des calculs HT/TVA", ok: true },
+    { label: "Total TTC = HT + TVA + Timbre", ok: true },
+    { label: "MF fournisseur présent", ok: mfMatch ? true : false },
+    { label: "Facture datée et numérotée", ok: true },
+    { label: "Taux TVA mentionné par ligne", ok: true },
+    { label: "Mentions légales conformes", ok: false },
+  ];
+
+  const checkLines = checks.map(c =>
+    c.ok ? `  ✅ ${c.label}` : `  ⚠ [ANOMALIE] ${c.label} — Vérification requise`
+  ).join('\n');
+
+  const alertLines = [];
+  if (!mfMatch) alertLines.push("⚠ Facture sans matricule fiscal fournisseur → TVA non déductible");
+  if (amount > 5000) alertLines.push("⚠ Montant > 5.000 DT → Vérifier mode de règlement (Loi 2016-35)");
+  alertLines.push("⚠ Mentions légales incomplètes — Demander une facture conforme au fournisseur");
+
+  return `## 1. Extraction des données
+
+| Champ | Valeur |
+|-------|--------|
+| **Fournisseur** | ${supplier} |
+| **MF Fournisseur** | ${mf} |
+| **N° facture** | ${userInput.match(/FAC(?:T)?[-\s]\d{4}[-\s]\d{3,4}/i)?.[0]?.toUpperCase() || "FAC-" + year + "-" + Math.floor(Math.random()*900+100)} |
+| **Date facture** | ${now.toISOString().split('T')[0]} |
+| **Date échéance** | ${new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]} |
+| **Description** | ${description} |
+| **Qté** | 1 |
+| **PU HT** | ${subtotal.toFixed(3)} DT |
+| **Taux TVA** | ${vatRate}% |
+| **Total HT** | ${subtotal.toFixed(3)} DT |
+| **TVA** | ${vatAmount.toFixed(3)} DT |
+| **Timbre fiscal** | ${stampDuty.toFixed(3)} DT |
+| **Total TTC** | ${totalTTC.toFixed(3)} DT |
+| **Mode règlement** | ${isService ? "Virement" : "Chèque"} |
+
+## 2. Vérifications
+
+${checkLines}
+
+## 3. Retenue à la source
+
+| Champ | Valeur |
+|-------|--------|
+| **Nature achat** | ${isService ? "Prestation de services" : "Marchandises"} |
+| **Taux RS applicable** | ${rsRate}% |
+| **Base RS** | ${subtotal.toFixed(3)} DT |
+| **Montant RS** | ${rsAmount.toFixed(3)} DT |
+| **Net à décaisser** | ${netAPayer.toFixed(3)} DT |
+
+## 4. Écriture comptable (SCE)
+
+\`\`\`
+N° journal : ${invNum}
+Date : ${now.toISOString().split('T')[0]}
+Libellé : Achat auprès de ${supplier}
+
+  ${scAccount}  ${scLabel}              ${subtotal.toFixed(3)}
+  4366       TVA déductible               ${vatAmount.toFixed(3)}
+  4011       Fournisseurs                           ${totalTTC.toFixed(3)}
+  4452       RS à reverser à l'État                 ${rsAmount.toFixed(3)}
+
+Règlement :
+  4011       Fournisseurs                 ${netAPayer.toFixed(3)}
+  532X       Banque                                 ${netAPayer.toFixed(3)}
+\`\`\`
+
+## 5. Fiche de synthèse
+
+| Champ | Valeur |
+|-------|--------|
+| **N° interne** | ${invNum} |
+| **Fournisseur** | ${supplier} — MF : ${mf} |
+| **N° facture fournisseur** | ${userInput.match(/FAC(?:T)?[-\s]\d{4}[-\s]\d{3,4}/i)?.[0]?.toUpperCase() || "N/C"} |
+| **Montant HT** | ${subtotal.toFixed(3)} DT |
+| **TVA déductible** | ${vatAmount.toFixed(3)} DT |
+| **Montant TTC** | ${totalTTC.toFixed(3)} DT |
+| **RS opérée** | ${rsAmount.toFixed(3)} DT (${rsRate}%) |
+| **Net à payer** | ${netAPayer.toFixed(3)} DT |
+| **Compte impacté** | ${scAccount} — ${scLabel} |
+| **Statut paiement** | En attente |
+
+${alertLines.length > 0 ? `### Alertes\n${alertLines.join('\n')}` : ''}
+
+---
+⚠ *Mode Hors Ligne — Données simulées à des fins de démonstration. Vérifiez et corrigez avant comptabilisation.*  
+*Export PDF disponible.*`;
+};
+
 export const fileToBase64 = (file) => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
