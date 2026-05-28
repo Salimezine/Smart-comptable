@@ -56,7 +56,7 @@ import {
   calculateInvoiceTotals, 
   formatCurrencyHelper 
 } from './accountingUtils';
-import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini } from './geminiService';
+import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI } from './geminiService';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 import Onboarding from './Onboarding';
@@ -748,6 +748,10 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
   const [clientName, setClientName] = useState('');
   const [clientEmail, setClientEmail] = useState('');
   const [dueDate, setDueDate] = useState('');
+  const [aiModalOpen, setAiModalOpen] = useState(false);
+  const [aiPrompt, setAiPrompt] = useState('');
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState('');
   
   // Articles de la facture
   const [items, setItems] = useState([
@@ -812,6 +816,29 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     setDueDate('');
     setItems([{ id: Date.now(), description: 'Prestation de développement logiciel', quantity: 1, unitPrice: 1200.000, vatRate: 19 }]);
     setShowCreateForm(false);
+  };
+
+  const handleGenerateAI = async () => {
+    if (!aiPrompt.trim()) return;
+    setAiLoading(true);
+    setAiError('');
+    try {
+      const lastInv = invoices.length > 0 ? invoices[0].invoiceNumber : null;
+      const data = await generateInvoiceAI(companyDetails.geminiApiKey, aiPrompt, companyDetails, lastInv);
+      setClientName(data.clientName || '');
+      setClientEmail(data.clientEmail || '');
+      setDueDate(data.dueDate || '');
+      if (data.items && data.items.length > 0) {
+        setItems(data.items.map(item => ({ ...item, id: Date.now() + Math.random() })));
+      }
+      setAiModalOpen(false);
+      setAiPrompt('');
+      setShowCreateForm(true);
+    } catch (err) {
+      setAiError(err.message);
+    } finally {
+      setAiLoading(false);
+    }
   };
 
   // Télécharger Facture en PDF
@@ -914,18 +941,26 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
   return (
     <div className="space-y-6">
       {/* View Header with Toggle Action */}
-      <div className="flex justify-between items-center bg-slate-900/20 p-4 rounded-xl border border-slate-800/40">
-        <div>
-          <h3 className="font-bold text-lg text-slate-100">Liste des Factures Clients</h3>
-          <p className="text-xs text-slate-400">Suivez l'encaissement et générez des PDF avec QR Code instantanément.</p>
+        <div className="flex justify-between items-center bg-slate-900/20 p-4 rounded-xl border border-slate-800/40">
+          <div>
+            <h3 className="font-bold text-lg text-slate-100">Liste des Factures Clients</h3>
+            <p className="text-xs text-slate-400">Suivez l'encaissement et générez des PDF avec QR Code instantanément.</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setAiModalOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 text-brand-400 border border-brand-500/30 rounded-xl hover:bg-slate-750 transition-all"
+            >
+              <Sparkles className="w-3.5 h-3.5" /> Générer par IA
+            </button>
+            <button
+              onClick={() => setShowCreateForm(!showCreateForm)}
+              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-gradient-brand text-white rounded-xl shadow-glow transition-all"
+            >
+              {showCreateForm ? 'Annuler' : 'Créer une facture'}
+            </button>
+          </div>
         </div>
-        <button
-          onClick={() => setShowCreateForm(!showCreateForm)}
-          className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-gradient-brand text-white rounded-xl shadow-glow transition-all"
-        >
-          {showCreateForm ? 'Annuler' : 'Créer une facture'}
-        </button>
-      </div>
 
       {showCreateForm ? (
         /* FORMULAIRE DE CRÉATION DE FACTURE */
@@ -1127,6 +1162,63 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
               ))}
             </tbody>
           </table>
+          </div>
+        </div>
+      )}
+
+      {/* AI Invoice Generation Modal */}
+      {aiModalOpen && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-surface-900 border border-slate-800 rounded-3xl w-full max-w-lg max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+            <div className="p-6 border-b border-slate-800/50 flex justify-between items-center">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shadow-glow">
+                  <Sparkles className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-extrabold text-lg text-white">Génération IA</h3>
+                  <p className="text-xs text-brand-400 font-medium">Facture de vente tunisienne</p>
+                </div>
+              </div>
+              <button onClick={() => { setAiModalOpen(false); setAiError(''); }} className="text-slate-500 hover:text-white p-2">✕</button>
+            </div>
+            <div className="p-6 space-y-4">
+              <div>
+                <label className="block text-xs text-slate-400 font-bold mb-2">Décrivez la facture à générer</label>
+                <textarea
+                  placeholder="Ex: Facture pour ACME Corp SARL pour prestation de consulting en comptabilité, montant 5 000 DT, TVA 19%"
+                  value={aiPrompt}
+                  onChange={(e) => setAiPrompt(e.target.value)}
+                  rows={4}
+                  className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none resize-none transition-colors"
+                />
+                <p className="text-[10px] text-slate-500 mt-1.5">Précisez le client, la prestation, le montant. L'IA générera une facture conforme.</p>
+              </div>
+              {aiError && (
+                <div className="p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl text-xs text-danger-400 flex items-center gap-2">
+                  <AlertCircle className="w-4 h-4 shrink-0" /> {aiError}
+                </div>
+              )}
+              <div className="flex gap-3">
+                <button
+                  onClick={() => { setAiModalOpen(false); setAiError(''); }}
+                  className="flex-1 py-2.5 border border-slate-700 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all"
+                >
+                  Annuler
+                </button>
+                <button
+                  onClick={handleGenerateAI}
+                  disabled={aiLoading || !aiPrompt.trim()}
+                  className="flex-[2] py-2.5 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-2 disabled:opacity-30 disabled:cursor-not-allowed"
+                >
+                  {aiLoading ? (
+                    <><RefreshCw className="w-4 h-4 animate-spin" /> Génération en cours...</>
+                  ) : (
+                    <><Sparkles className="w-4 h-4" /> Générer la facture</>
+                  )}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

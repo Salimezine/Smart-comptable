@@ -3,6 +3,7 @@ import Tesseract from 'tesseract.js';
 // URLs des webhooks n8n (workflows Smart-Comptable déjà déployés)
 const N8N_SCAN_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/scan-receipt';
 const N8N_ANALYZE_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/analyze-dashboard';
+const N8N_INVOICE_URL = 'https://ezzinesalim.app.n8n.cloud/webhook/generate-invoice';
 
 const GEMINI_MODEL = 'gemini-2.0-flash';
 
@@ -314,6 +315,187 @@ export const parseInvoiceText = (text) => {
   if (totalAmount > 0 && subtotal === 0) { subtotal = Math.round(((totalAmount - stampDuty) / (1 + vatRate / 100)) * 1000) / 1000; vatAmount = Math.round((subtotal * (vatRate / 100)) * 1000) / 1000; }
   else if (subtotal > 0 && totalAmount === 0) { vatAmount = Math.round((subtotal * (vatRate / 100)) * 1000) / 1000; totalAmount = Math.round((subtotal + vatAmount + stampDuty) * 1000) / 1000; }
   return { supplier, matriculeFiscal, date, subtotal: Math.round(subtotal * 1000) / 1000, fodec: Math.round(fodec * 1000) / 1000, vatRate, vatAmount: Math.round(vatAmount * 1000) / 1000, stampDuty, totalAmount: Math.round(totalAmount * 1000) / 1000, category, invoiceNumber };
+};
+
+/**
+ * Génération de facture par IA (via n8n → Gemini direct → simulation locale)
+ */
+export const generateInvoiceAI = async (apiKey, userPrompt, companyDetails, lastInvoiceNumber) => {
+  const year = new Date().getFullYear();
+  const nextNum = lastInvoiceNumber
+    ? parseInt(lastInvoiceNumber.split('-')[2]) + 1
+    : 1;
+  const invoiceNumStr = `FACT-${year}-${String(nextNum).padStart(3, '0')}`;
+
+  const sellerInfo = `Raison sociale: ${companyDetails.name || 'Non renseigné'}
+MF: ${companyDetails.vatNumber || 'Non renseigné'}
+Adresse: ${companyDetails.address || 'Non renseignée'}
+RIB: ${companyDetails.iban || 'Non renseigné'}
+Téléphone: ${companyDetails.phone || 'Non renseigné'}`;
+
+  const systemPrompt = `## FACTURE DE VENTE — SMART COMPTABLE
+
+RÔLE
+Tu génères des factures de vente conformes à la législation
+tunisienne (Code de la TVA, Loi 2000-57 sur la facturation
+électronique, décret 2008-2572 sur le timbre fiscal).
+
+NUMÉROTATION AUTOMATIQUE
+Format obligatoire : FACT-{YYYY}-{NNN}
+- YYYY = année en cours (ex: ${year})
+- NNN = numéro séquentiel sur 3 chiffres (001, 002…)
+Prochain numéro à utiliser : ${invoiceNumStr}
+
+INFORMATIONS À COLLECTER
+Utilise les données vendeur ci-dessous et la demande client.
+Si des informations client essentielles manquent, déduis-les
+ou utilise des valeurs par défaut raisonnables.
+
+VENDEUR (utilise ces informations pour l'en-tête) :
+${sellerInfo}
+
+DEMANDE DU CLIENT :
+${userPrompt}
+
+CALCULS OBLIGATOIRES
+Pour chaque ligne :
+  Montant HT = Qté × PU HT − Remise
+  Montant TVA = Montant HT × Taux TVA
+  Montant TTC = Montant HT + Montant TVA
+
+Totaux facture :
+  Total HT = Σ montants HT
+  Total TVA = Σ TVA par taux (détailler chaque taux séparé)
+  Timbre fiscal = 1,000 DT (fixe, toute facture ≥ 1 DT)
+  NET À PAYER = Total TTC + Timbre fiscal
+
+Retenue à la source (si client assujetti) :
+  - Prestations de services : 1,5% sur montant HT
+  - Honoraires : 10% ou 15% sur montant HT
+  Indiquer le montant RS et le NET À ENCAISSER résultant.
+
+FORMAT DE SORTIE
+Retourne UNIQUEMENT du JSON brut (sans markdown, sans blocs \`\`\`) :
+{
+  "clientName": "Raison sociale ou nom du client",
+  "clientEmail": "email@client.tn",
+  "clientMF": "Matricule Fiscal ou CIN",
+  "clientAddress": "Adresse du client",
+  "invoiceNumber": "${invoiceNumStr}",
+  "issueDate": "YYYY-MM-DD",
+  "dueDate": "YYYY-MM-DD",
+  "paymentMethod": "espèces|chèque|virement|traite",
+  "items": [
+    { "description": "Désignation article", "quantity": 1, "unitPrice": 0.000, "vatRate": 19, "discount": 0 }
+  ],
+  "subtotal": 0.000,
+  "vatBreakdown": [{ "rate": 19, "amount": 0.000 }],
+  "vatAmount": 0.000,
+  "stampDuty": 1.000,
+  "totalAmount": 0.000,
+  "retenueSource": 0.000,
+  "netAPercevoir": 0.000,
+  "amountInLetters": "Arrêtée à la somme de ... DINARS",
+  "notes": "Facture à payer dans un délai de 30 jours. Tout retard de paiement entraîne des pénalités (taux légal)."
+}
+
+LANGUE
+Facture en français. Montants en DT (3 décimales — millimes).`;
+
+  if (apiKey && apiKey !== 'local') {
+    try {
+      const response = await fetch(N8N_INVOICE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: systemPrompt,
+          apiKey,
+          secret: WEBHOOK_SECRET,
+        }),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.invoiceNumber) {
+          return { ...data, _simulated: false };
+        }
+      }
+      throw new Error('n8n response invalid');
+    } catch (e) {
+      console.warn("Webhook n8n invoice échoué, tentative directe Gemini :", e.message);
+    }
+
+    try {
+      const text = await callGeminiDirect(apiKey, [{ text: systemPrompt }]);
+      const jsonStr = text.replace(/```json?/gi, '').replace(/```/g, '').trim();
+      const parsed = JSON.parse(jsonStr);
+      if (parsed.clientName) {
+        return { ...parsed, _simulated: false };
+      }
+    } catch (e2) {
+      console.warn("Gemini direct invoice échoué, simulation :", e2.message);
+    }
+  }
+
+  await new Promise(resolve => setTimeout(resolve, 1500));
+  return simulateInvoiceLocal(userPrompt, companyDetails, invoiceNumStr);
+};
+
+const simulateInvoiceLocal = (userPrompt, companyDetails, invoiceNumStr) => {
+  const text = userPrompt.toLowerCase();
+  const now = new Date();
+  const dueDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+  let clientName = "Client";
+  const clientMatch = userPrompt.match(/(?:pour|client|à|de|:)\s*([A-Za-zéèêëàâäùûüôöîïç'&\s.-]{3,40}?)(?:\s*(?:pour|de|une|prestation|service|consulting|conseil|développement|formation|mission|\d))/i);
+  if (clientMatch) clientName = clientMatch[1].trim();
+
+  let amount = 0;
+  const amountMatch = text.match(/(\d[\d\s]*\.?\d{0,3})\s*(?:dt|dinar|tnd|€|eur)/i);
+  if (amountMatch) amount = parseFloat(amountMatch[1].replace(/\s/g, ''));
+  if (!amount || isNaN(amount)) amount = 1500.000;
+
+  let description = "Prestation de services";
+  const descKeywords = ['prestation', 'service', 'consulting', 'conseil', 'développement', 'formation', 'mission', 'étude', 'audit', 'maintenance', 'hébergement', 'licence', 'abonnement', 'honoraire'];
+  for (const kw of descKeywords) {
+    if (text.includes(kw)) {
+      const idx = text.indexOf(kw);
+      const phrase = userPrompt.substring(idx, idx + 40).replace(/[0-9].*$/, '').replace(/\s+pour\s+.*$/, '').trim();
+      if (phrase.length > 3) { description = phrase.charAt(0).toUpperCase() + phrase.slice(1); break; }
+    }
+  }
+
+  const subKeywords = ['prestation', 'service', 'consulting', 'conseil', 'honoraire'];
+  const isService = subKeywords.some(k => text.includes(k));
+  const vatRate = 19;
+  const quantity = 1;
+  const unitPrice = Math.round(amount * 1000) / 1000;
+  const subtotal = Math.round(quantity * unitPrice * 1000) / 1000;
+  const vatAmount = Math.round(subtotal * (vatRate / 100) * 1000) / 1000;
+  const stampDuty = 1.000;
+  const totalAmount = Math.round((subtotal + vatAmount + stampDuty) * 1000) / 1000;
+  const retenueSource = isService ? Math.round(subtotal * 0.015 * 1000) / 1000 : 0;
+
+  return {
+    clientName,
+    clientEmail: "client@email.tn",
+    clientMF: "",
+    clientAddress: "",
+    invoiceNumber: invoiceNumStr,
+    issueDate: now.toISOString().split('T')[0],
+    dueDate,
+    paymentMethod: "virement",
+    items: [{ description, quantity, unitPrice, vatRate, discount: 0 }],
+    subtotal,
+    vatBreakdown: [{ rate: vatRate, amount: vatAmount }],
+    vatAmount,
+    stampDuty,
+    totalAmount,
+    retenueSource,
+    netAPercevoir: Math.round((totalAmount - retenueSource) * 1000) / 1000,
+    amountInLetters: `Arrêtée à la somme de ${totalAmount.toFixed(0)} DINARS${totalAmount % 1 !== 0 ? ` ET ${Math.round((totalAmount % 1) * 1000)} MILLIMES` : ''}`,
+    notes: "Facture à payer dans un délai de 30 jours. Tout retard de paiement entraîne des pénalités (taux légal).",
+    _simulated: true,
+  };
 };
 
 export const fileToBase64 = (file) => {
