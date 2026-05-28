@@ -57,6 +57,7 @@ import {
   formatCurrencyHelper 
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
+import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 import Onboarding from './Onboarding';
@@ -75,6 +76,12 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState('dashboard');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
+  // Search State
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState({ invoices: [], expenses: [] });
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchRef = useRef(null);
+
   // Advisor State
   const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
   const [advisorLoading, setAdvisorLoading] = useState(false);
@@ -246,11 +253,21 @@ export default function App() {
     return formatCurrencyHelper(val, companyDetails.currency);
   };
 
+  const handleSearch = useCallback((query) => {
+    setSearchQuery(query);
+    if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
+    const results = searchEntities(invoices, expenses, query);
+    setSearchResults(results);
+    setSearchOpen(true);
+  }, [invoices, expenses]);
+
   const handleAddInvoice = (newInv) => {
+    learnFromInvoice(newInv);
     setInvoices([newInv, ...invoices]);
   };
 
   const handleAddExpense = (newExp) => {
+    learnFromExpense(newExp);
     setExpenses([newExp, ...expenses]);
   };
 
@@ -395,6 +412,49 @@ export default function App() {
               {currentTab === 'settings' && 'Renseignez les données légales de votre société pour les QR Codes et factures.'}
             </p>
           </div>
+            {/* Search */}
+            <div className="hidden sm:block relative flex-1 max-w-xs mx-2">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-500" />
+              <input
+                ref={searchRef}
+                type="text"
+                placeholder="Rechercher facture, fournisseur..."
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                onFocus={() => searchQuery.length >= 2 && setSearchOpen(true)}
+                onBlur={() => setTimeout(() => setSearchOpen(false), 200)}
+                className="w-full bg-slate-900/60 border border-slate-800 focus:border-brand-500 rounded-xl pl-9 pr-3 py-2 text-xs text-slate-200 focus:outline-none transition-colors placeholder:text-slate-600"
+              />
+              {searchOpen && searchQuery.length >= 2 && (
+                <div className="absolute top-full mt-1 left-0 right-0 bg-slate-900 border border-slate-800 rounded-xl shadow-2xl z-50 max-h-72 overflow-y-auto">
+                  <div className="p-2 space-y-0.5">
+                    {searchResults.invoices.length === 0 && searchResults.expenses.length === 0 && (
+                      <p className="text-[11px] text-slate-500 px-3 py-4 text-center">Aucun résultat</p>
+                    )}
+                    {searchResults.invoices.slice(0, 5).map((inv, i) => (
+                      <button key={'si'+i} onClick={() => { setCurrentTab('invoicing'); setSearchOpen(false); setSearchQuery(''); }}
+                        className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-800/60 text-left transition-colors">
+                        <div className="min-w-0">
+                          <p className="text-xs font-semibold text-slate-200 truncate">{inv.clientName}</p>
+                          <p className="text-[10px] text-slate-500 truncate">{inv.invoiceNumber} — {inv.issueDate}</p>
+                        </div>
+                        <span className="text-[11px] font-bold text-accent-400 shrink-0 ml-2">{formatCurrency(inv.totalAmount)}</span>
+                      </button>
+                    ))}
+                    {searchResults.expenses.slice(0, 5).map((exp, i) => (
+                      <button key={'se'+i} onClick={() => { setCurrentTab('ocr'); setSearchOpen(false); setSearchQuery(''); }}
+                        className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-800/60 text-left transition-colors">
+                        <div className="min-w-0">
+                          <p className="text-xs font-semibold text-slate-200 truncate">{exp.supplier}</p>
+                          <p className="text-[10px] text-slate-500 truncate">{exp.category} — {exp.date}</p>
+                        </div>
+                        <span className="text-[11px] font-bold text-danger-400 shrink-0 ml-2">-{formatCurrency(exp.totalAmount)}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
@@ -1447,9 +1507,22 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Fournisseur / Vendeur *</label>
           <input type="text" required placeholder="ex: Ooredoo Tunisie, STEG, Monoprix..."
             value={formData.supplier}
-            onChange={(e) => setFormData(f => ({...f, supplier: e.target.value}))}
+            onChange={(e) => {
+              const val = e.target.value;
+              setFormData(f => ({...f, supplier: val}));
+              if (val.length > 2) {
+                const cat = predictCategory(val, '');
+                const vat = predictVatRate(val, cat);
+                setFormData(f => f.supplier === val ? {...f, category: cat, vatRate: String(vat)} : f);
+              }
+            }}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           />
+          {formData.supplier.length > 2 && (
+            <p className="text-[9px] text-brand-400/70 mt-1 flex items-center gap-1">
+              <Sparkles className="w-3 h-3" /> Suggestion IA : {predictCategory(formData.supplier, '')} — TVA {predictVatRate(formData.supplier, predictCategory(formData.supplier, ''))}%
+            </p>
+          )}
         </div>
         <div className="col-span-2">
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Matricule Fiscal Fournisseur</label>
@@ -2122,6 +2195,9 @@ function PinSetupScreen({ onComplete }) {
    ========================================================================== */
 function SettingsView({ companyDetails, setCompanyDetails }) {
   const [success, setSuccess] = useState(false);
+  const [stats, setStats] = useState(getLearningStats());
+
+  useEffect(() => { setStats(getLearningStats()); }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -2146,17 +2222,43 @@ function SettingsView({ companyDetails, setCompanyDetails }) {
         </div>
       )}
 
-      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30">
-        <label className="block text-[10px] text-brand-400 font-bold mb-1.5 uppercase flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5" /> Clé API Google Gemini
-        </label>
-        <input type="password" placeholder="AIzaSy..." 
-          value={companyDetails.geminiApiKey || ''}
-          onChange={(e) => setCompanyDetails({...companyDetails, geminiApiKey: e.target.value})}
-          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-        />
-        <p className="text-[9px] text-slate-500 mt-1.5">Clé Gemini stockée localement dans le navigateur. Envoyée au workflow n8n pour le scan et l'analyse.</p>
-        <p className="text-[9px] text-amber-400/80 mt-1 flex items-center gap-1"><AlertTriangle className="w-3 h-3 shrink-0" /> Ne partagez jamais cette clé. Évitez de l'utiliser sur un réseau public non sécurisé.</p>
+      {/* Statistiques du Moteur d'Apprentissage */}
+      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30 space-y-3">
+        <div className="flex items-center gap-2 text-brand-400">
+          <Sparkles className="w-4 h-4" />
+          <h4 className="text-xs font-extrabold uppercase tracking-wider">Moteur IA Local — Apprentissage Actif</h4>
+        </div>
+        <div className="grid grid-cols-3 gap-3 text-center">
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{stats.supplierCount}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Fournisseurs mémorisés</p>
+          </div>
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{stats.patternsCount}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Patterns appris</p>
+          </div>
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{Object.keys(stats.categories).length}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Catégories SCE</p>
+          </div>
+        </div>
+        {stats.knownSuppliers.length > 0 && (
+          <div>
+            <p className="text-[10px] text-slate-500 font-bold mb-1.5 uppercase tracking-wider">Fournisseurs Appris</p>
+            <div className="max-h-32 overflow-y-auto space-y-1">
+              {stats.knownSuppliers.map((s, i) => (
+                <div key={i} className="flex items-center justify-between px-3 py-1.5 bg-slate-950/40 rounded-lg">
+                  <div className="min-w-0">
+                    <span className="text-xs font-semibold text-slate-200 truncate block">{s.name}</span>
+                    <span className="text-[9px] text-slate-500">{s.count} entrée{s.count > 1 ? 's' : ''}{s.mf ? ' — MF: ' + s.mf : ''}</span>
+                  </div>
+                  <span className="text-[10px] text-slate-400 shrink-0 ml-2">{s.total.toFixed(0)} DT</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        <p className="text-[9px] text-slate-500 mt-1"><AlertCircle className="w-3 h-3 inline-block mr-1" />L'IA apprend de chaque facture et dépense que vous saisissez. Plus vous l'utilisez, plus les suggestions sont précises.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
