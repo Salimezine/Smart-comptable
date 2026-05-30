@@ -84,7 +84,6 @@ export function exportBalanceSheetPDF(data) {
   ly = item(doc, lx, ly, cw, 'Mobilier & mat. bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 6, color: [120] });
   ly = item(doc, lx, ly, cw, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { bold: true, indent: 2 });
   ly = item(doc, lx, ly, cw, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 2 });
-  ly = sep(doc, lx, ly, cw);
   ly = item(doc, lx, ly, cw, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { bold: true, total: true });
 
   /* --- LEFT: Actifs Courants --- */
@@ -98,7 +97,6 @@ export function exportBalanceSheetPDF(data) {
   ly = item(doc, lx, ly, cw, 'Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 4, color: [120] });
   ly = item(doc, lx, ly, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 2 });
   ly = item(doc, lx, ly, cw, 'Caisse', fmt(bs.assets.current.cashRegister), { indent: 4, color: [120] });
-  ly = sep(doc, lx, ly, cw);
   ly = item(doc, lx, ly, cw, 'Total Actifs Courants', fmt(bs.assets.current.total), { bold: true, total: true });
   ly = sep(doc, lx, ly, cw);
   ly = item(doc, lx, ly, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { bold: true, total: true, color: [26, 26, 46] });
@@ -109,14 +107,12 @@ export function exportBalanceSheetPDF(data) {
   ry = item(doc, rx, ry, cw, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 2 });
   ry = item(doc, rx, ry, cw, 'Autres réserves', fmt(bs.equity.otherReserves), { indent: 4, color: [120] });
   ry = item(doc, rx, ry, cw, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 2 });
-  ry = sep(doc, rx, ry, cw);
   ry = item(doc, rx, ry, cw, 'Total Capitaux Propres', fmt(bs.equity.total), { bold: true, total: true });
 
   /* --- RIGHT: Passifs Non Courants --- */
   ry = sectionH(doc, rx, ry, cw, 'PASSIFS NON COURANTS');
   ry = item(doc, rx, ry, cw, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 2 });
   ry = item(doc, rx, ry, cw, 'Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 4, color: [120] });
-  ry = sep(doc, rx, ry, cw);
   ry = item(doc, rx, ry, cw, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { bold: true, total: true });
 
   /* --- RIGHT: Passifs Courants --- */
@@ -127,7 +123,6 @@ export function exportBalanceSheetPDF(data) {
   ry = item(doc, rx, ry, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 2 });
   ry = item(doc, rx, ry, cw, 'Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 4, color: [120] });
   ry = item(doc, rx, ry, cw, 'Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 4, color: [120] });
-  ry = sep(doc, rx, ry, cw);
   ry = item(doc, rx, ry, cw, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { bold: true, total: true });
   ry = sep(doc, rx, ry, cw);
   ry = item(doc, rx, ry, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { bold: true, total: true, color: [26, 26, 46] });
@@ -161,7 +156,6 @@ export function exportBalanceSheetPDF(data) {
   y = item(doc, x, y, w, 'Ventes de marchandises', fmt(is.productSales), { indent: 4, color: [16, 185, 129] });
   y = item(doc, x, y, w, 'Prestations de services', fmt(is.serviceRevenue), { indent: 4, color: [16, 185, 129] });
   y = item(doc, x, y, w, 'Autres produits', fmt(is.otherRevenue), { indent: 4, color: [100] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Total Produits d\'exploitation', fmt(is.revenue), { bold: true, total: true, color: [16, 185, 129] });
 
   y += 2;
@@ -172,25 +166,21 @@ export function exportBalanceSheetPDF(data) {
   y = item(doc, x, y, w, 'Charges de personnel', `(${fmt(is.personnelCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
   y = item(doc, x, y, w, 'Dotations aux amortissements', `(${fmt(is.depreciation)})`, { indent: 4, color: [120], valColor: [120] });
   y = item(doc, x, y, w, 'Autres charges d\'exploitation', `(${fmt(is.otherOpCharges)})`, { indent: 4, color: [120], valColor: [120] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Total Charges d\'exploitation', `(${fmt(is.operatingExpenses)})`, { bold: true, total: true, color: [200, 50, 50], valColor: [200, 50, 50] });
   y += 1;
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'RÉSULTAT D\'EXPLOITATION', fmt(is.operatingProfit), { bold: true, total: true, color: [26, 26, 46] });
 
   y += 3;
   y = sectionH(doc, x, y, w, 'RÉSULTAT FINANCIER');
   y = item(doc, x, y, w, 'Produits financiers', fmt(is.financialRevenue), { indent: 4, color: [100] });
   y = item(doc, x, y, w, 'Charges financières', `(${fmt(is.financialCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Résultat financier', fmt(is.financialResult), { bold: true });
   y += 1;
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'RÉSULTAT DES ACTIVITÉS ORDINAIRES AVANT IS', fmt(is.ordinaryProfit), { bold: true, total: true });
 
   y += 2;
   y = item(doc, x, y, w, 'Impôt sur les sociétés (15%)', `(${fmt(is.tax)})`, { color: [200, 50, 50], valColor: [200, 50, 50] });
-  y = sep(doc, x, y, w);
+  y += 1;
   const netColor = is.netProfit >= 0 ? [16, 185, 129] : [239, 68, 68];
   y = item(doc, x, y, w, 'RÉSULTAT NET DE L\'EXERCICE', fmt(is.netProfit), { bold: true, total: true, color: netColor, valColor: netColor });
 
@@ -225,7 +215,6 @@ export function exportIncomeStatementPDF(data) {
   y = item(doc, x, y, w, 'Ventes de marchandises', fmt(is.productSales), { indent: 4, color: [16, 185, 129] });
   y = item(doc, x, y, w, 'Prestations de services', fmt(is.serviceRevenue), { indent: 4, color: [16, 185, 129] });
   y = item(doc, x, y, w, 'Autres produits', fmt(is.otherRevenue), { indent: 4, color: [100] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Total Produits d\'exploitation', fmt(is.revenue), { bold: true, total: true, color: [16, 185, 129] });
 
   y += 2;
@@ -236,25 +225,21 @@ export function exportIncomeStatementPDF(data) {
   y = item(doc, x, y, w, 'Charges de personnel', `(${fmt(is.personnelCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
   y = item(doc, x, y, w, 'Dotations aux amortissements', `(${fmt(is.depreciation)})`, { indent: 4, color: [120], valColor: [120] });
   y = item(doc, x, y, w, 'Autres charges d\'exploitation', `(${fmt(is.otherOpCharges)})`, { indent: 4, color: [120], valColor: [120] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Total Charges d\'exploitation', `(${fmt(is.operatingExpenses)})`, { bold: true, total: true, color: [200, 50, 50], valColor: [200, 50, 50] });
   y += 1;
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'RÉSULTAT D\'EXPLOITATION', fmt(is.operatingProfit), { bold: true, total: true, color: [26, 26, 46] });
 
   y += 3;
   y = sectionH(doc, x, y, w, 'RÉSULTAT FINANCIER');
   y = item(doc, x, y, w, 'Produits financiers', fmt(is.financialRevenue), { indent: 4, color: [100] });
   y = item(doc, x, y, w, 'Charges financières', `(${fmt(is.financialCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'Résultat financier', fmt(is.financialResult), { bold: true });
   y += 1;
-  y = sep(doc, x, y, w);
   y = item(doc, x, y, w, 'RÉSULTAT DES ACTIVITÉS ORDINAIRES AVANT IS', fmt(is.ordinaryProfit), { bold: true, total: true });
 
   y += 2;
   y = item(doc, x, y, w, 'Impôt sur les sociétés (15%)', `(${fmt(is.tax)})`, { color: [200, 50, 50], valColor: [200, 50, 50] });
-  y = sep(doc, x, y, w);
+  y += 1;
   const netColor = is.netProfit >= 0 ? [16, 185, 129] : [239, 68, 68];
   y = item(doc, x, y, w, 'RÉSULTAT NET DE L\'EXERCICE', fmt(is.netProfit), { bold: true, total: true, color: netColor, valColor: netColor });
 
