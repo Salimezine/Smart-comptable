@@ -1,87 +1,55 @@
 import { jsPDF } from 'jspdf';
 import { formatCurrencyHelper } from './accountingUtils';
 
-const M = 15;
-const W = 180;
-const LH = 6;
+const LH = 5.8;
 
 function todayStr() {
   const d = new Date();
   return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`;
 }
 
-function drawCompanyHeader(doc, data) {
-  doc.setFontSize(18);
-  doc.setTextColor(26, 26, 46);
-  doc.setFont('helvetica', 'bold');
-  doc.text(data.company.name || 'Smart Comptable', M, 20);
-
-  doc.setFontSize(7.5);
-  doc.setTextColor(100);
-  doc.setFont('helvetica', 'normal');
-  doc.text(`MF: ${data.company.mf}  |  ${data.company.address}`, M, 27);
-  doc.text(`Exercice: ${new Date().getFullYear()}  |  Généré le ${todayStr()}`, M, 32);
-
-  doc.setDrawColor(26, 26, 46);
-  doc.setLineWidth(0.6);
-  doc.line(M, 35, M + W, 35);
+function header(doc, data) {
+  doc.setFontSize(16); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text(data.company.name || 'Smart Comptable', 10, 18);
+  doc.setFontSize(7); doc.setTextColor(100); doc.setFont('helvetica', 'normal');
+  doc.text(`MF: ${data.company.mf}  |  ${data.company.address}`, 10, 24);
+  doc.text(`Exercice: ${new Date().getFullYear()}  |  Généré le ${todayStr()}`, 10, 28);
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.5);
+  doc.line(10, 31, 200, 31);
 }
 
-function drawTitle(doc, text, y) {
-  doc.setFontSize(13);
-  doc.setTextColor(26, 26, 46);
-  doc.setFont('helvetica', 'bold');
-  doc.text(text, M, y);
-  return y + 7;
+function sectionH(doc, x, y, w, text) {
+  doc.setFillColor(26, 26, 46); doc.rect(x, y - 2.5, w, 5.5, 'F');
+  doc.setFontSize(7.5); doc.setTextColor(255, 255, 255); doc.setFont('helvetica', 'bold');
+  doc.text(text, x + 1.5, y + 1);
+  return y + 5.5;
 }
 
-function drawSectionHeader(doc, text, y, w) {
-  doc.setFillColor(26, 26, 46);
-  doc.rect(M, y - 3, w || W, 6.5, 'F');
-  doc.setFontSize(8.5);
-  doc.setTextColor(255, 255, 255);
-  doc.setFont('helvetica', 'bold');
-  doc.text(text, M + 2, y + 1.5);
-  return y + 7;
-}
-
-function drawItem(doc, y, label, value, opts = {}) {
-  const { bold = false, total = false, indent = 0, color = [80, 80, 80] } = opts;
-  const xLabel = M + 2 + indent;
-  const xValue = M + W - 2;
-
-  if (total) {
-    doc.setFillColor(235, 240, 255);
-    doc.rect(M, y - 3, W, 6.5, 'F');
-  }
-
-  doc.setFontSize(total ? 9 : 7.5);
+function item(doc, x, y, w, label, value, opts = {}) {
+  const { bold = false, total = false, indent = 0, color = [80, 80, 80], valColor } = opts;
+  if (total) { doc.setFillColor(235, 240, 255); doc.rect(x, y - 2.5, w, 5.5, 'F'); }
+  doc.setFontSize(total ? 8.5 : 7);
   doc.setTextColor(color[0], color[1], color[2]);
   doc.setFont('helvetica', bold || total ? 'bold' : 'normal');
-  doc.text(label, xLabel, y + 1);
-  doc.text(value, xValue, y + 1, { align: 'right' });
-
-  if (!total) {
-    doc.setDrawColor(220, 220, 220);
-    doc.setLineWidth(0.15);
-    doc.line(M, y + 4, M + W, y + 4);
-  }
+  doc.text(label, x + 1.5 + indent, y + 1);
+  const vc = valColor || (total ? [26, 26, 46] : color);
+  doc.setTextColor(vc[0], vc[1], vc[2]);
+  doc.text(value, x + w - 1.5, y + 1, { align: 'right' });
+  if (!total) { doc.setDrawColor(215, 215, 215); doc.setLineWidth(0.12); doc.line(x, y + 3.8, x + w, y + 3.8); }
   return y + LH;
 }
 
-function drawSeparator(doc, y) {
-  doc.setDrawColor(26, 26, 46);
-  doc.setLineWidth(0.4);
-  doc.line(M, y, M + W, y);
-  return y + 2.5;
+function sep(doc, x, y, w) {
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.3);
+  doc.line(x, y, x + w, y);
+  return y + 2;
 }
 
-function checkPageBreak(doc, y, needed = 30) {
-  if (y + needed > 280) {
-    doc.addPage();
-    return 20;
-  }
-  return y;
+function colHeader(doc, x, y, w, text) {
+  doc.setFillColor(50, 50, 70); doc.rect(x, y - 2.5, w, 5.5, 'F');
+  doc.setFontSize(7.5); doc.setTextColor(255, 255, 255); doc.setFont('helvetica', 'bold');
+  doc.text(text, x + w / 2, y + 1, { align: 'center' });
+  return y + 5.5;
 }
 
 export function exportBalanceSheetPDF(data) {
@@ -90,128 +58,151 @@ export function exportBalanceSheetPDF(data) {
   const fmt = (v) => formatCurrencyHelper(v, ccy);
   const bs = data.balanceSheet;
 
-  drawCompanyHeader(doc, data);
-  let y = drawTitle(doc, 'Bilan — État de la Situation Financière (SCE)', 41);
-  y = drawSectionHeader(doc, 'ACTIFS (Emplois)', y);
+  header(doc, data);
+  doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text('BILAN (SCE) — ACTIF / PASSIF', 10, 37);
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.3);
+  doc.line(10, 39, 200, 39);
 
-  // --- ACTIFS NON COURANTS ---
-  doc.setFontSize(7.5);
-  doc.setTextColor(120);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Actifs Non Courants', M + 2, y + 1);
-  doc.setFont('helvetica', 'normal');
-  y += LH;
-  y = drawItem(doc, y, 'Frais de développement', fmt(bs.assets.nonCurrent.intangibleDetail.devCosts), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Brevets, licences, marques', fmt(bs.assets.nonCurrent.intangibleDetail.patents), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Fonds commercial', fmt(bs.assets.nonCurrent.intangibleDetail.goodwill), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Immobilisations incorporelles', fmt(bs.assets.nonCurrent.intangible), { bold: true, indent: 4 });
+  const lx = 10, rx = 105, cw = 90;
+  let ly = 46, ry = 46;
 
-  y = drawItem(doc, y, 'Terrains', fmt(bs.assets.nonCurrent.tangibleDetail.land), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Constructions', fmt(bs.assets.nonCurrent.tangibleDetail.buildings), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Installations techniques', fmt(bs.assets.nonCurrent.tangibleDetail.equipment), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Matériel de transport', fmt(bs.assets.nonCurrent.tangibleDetail.transport), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Mobilier & matériel de bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { bold: true, indent: 4 });
+  /* === COLUMN HEADERS === */
+  ly = colHeader(doc, lx, ly, cw, 'ACTIFS');
+  ry = colHeader(doc, rx, ry, cw, 'PASSIFS & CAPITAUX PROPRES');
 
-  y = drawItem(doc, y, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 4 });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { bold: true, total: true, color: [26, 26, 46] });
+  /* --- LEFT: Actifs Non Courants --- */
+  ly = sectionH(doc, lx, ly, cw, 'ACTIFS NON COURANTS');
+  ly = item(doc, lx, ly, cw, 'Frais de développement', fmt(bs.assets.nonCurrent.intangibleDetail.devCosts), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Brevets, licences, marques', fmt(bs.assets.nonCurrent.intangibleDetail.patents), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Fonds commercial', fmt(bs.assets.nonCurrent.intangibleDetail.goodwill), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Immobilisations incorporelles', fmt(bs.assets.nonCurrent.intangible), { bold: true, indent: 2 });
+  ly = item(doc, lx, ly, cw, 'Terrains', fmt(bs.assets.nonCurrent.tangibleDetail.land), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Constructions', fmt(bs.assets.nonCurrent.tangibleDetail.buildings), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Installations techniques', fmt(bs.assets.nonCurrent.tangibleDetail.equipment), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Matériel de transport', fmt(bs.assets.nonCurrent.tangibleDetail.transport), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Mobilier & mat. bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { bold: true, indent: 2 });
+  ly = item(doc, lx, ly, cw, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 2 });
+  ly = sep(doc, lx, ly, cw);
+  ly = item(doc, lx, ly, cw, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { bold: true, total: true });
 
-  // --- ACTIFS COURANTS ---
-  y = checkPageBreak(doc, y, 50);
-  doc.setFontSize(7.5);
-  doc.setTextColor(120);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Actifs Courants', M + 2, y + 1);
-  doc.setFont('helvetica', 'normal');
-  y += LH;
+  /* --- LEFT: Actifs Courants --- */
+  ly = sectionH(doc, lx, ly, cw, 'ACTIFS COURANTS');
+  ly = item(doc, lx, ly, cw, 'Marchandises', fmt(bs.assets.current.stockDetail.merchandise), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Matières premières', fmt(bs.assets.current.stockDetail.rawMaterials), { indent: 6, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Stocks', fmt(bs.assets.current.stocks), { bold: true, indent: 2 });
+  ly = item(doc, lx, ly, cw, 'Clients et comptes rattachés', fmt(bs.assets.current.receivables), { indent: 2 });
+  ly = item(doc, lx, ly, cw, 'Personnel', fmt(bs.assets.current.personnelRec), { indent: 4, color: [120] });
+  ly = item(doc, lx, ly, cw, 'État et collectivités', fmt(bs.assets.current.taxRec), { indent: 4, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 4, color: [120] });
+  ly = item(doc, lx, ly, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 2 });
+  ly = item(doc, lx, ly, cw, 'Caisse', fmt(bs.assets.current.cashRegister), { indent: 4, color: [120] });
+  ly = sep(doc, lx, ly, cw);
+  ly = item(doc, lx, ly, cw, 'Total Actifs Courants', fmt(bs.assets.current.total), { bold: true, total: true });
+  ly = sep(doc, lx, ly, cw);
+  ly = item(doc, lx, ly, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { bold: true, total: true, color: [26, 26, 46] });
 
-  y = drawItem(doc, y, 'Marchandises', fmt(bs.assets.current.stockDetail.merchandise), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Matières premières', fmt(bs.assets.current.stockDetail.rawMaterials), { indent: 8, color: [120] });
-  y = drawItem(doc, y, 'Stocks', fmt(bs.assets.current.stocks), { bold: true, indent: 4 });
+  /* --- RIGHT: Capitaux Propres --- */
+  ry = sectionH(doc, rx, ry, cw, 'CAPITAUX PROPRES');
+  ry = item(doc, rx, ry, cw, 'Capital social', fmt(bs.equity.socialCapital), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'Autres réserves', fmt(bs.equity.otherReserves), { indent: 4, color: [120] });
+  ry = item(doc, rx, ry, cw, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 2 });
+  ry = sep(doc, rx, ry, cw);
+  ry = item(doc, rx, ry, cw, 'Total Capitaux Propres', fmt(bs.equity.total), { bold: true, total: true });
 
-  y = drawItem(doc, y, 'Clients et comptes rattachés', fmt(bs.assets.current.receivables), { indent: 4 });
-  y = drawItem(doc, y, 'Personnel', fmt(bs.assets.current.personnelRec), { indent: 4, color: [120] });
-  y = drawItem(doc, y, 'État et collectivités', fmt(bs.assets.current.taxRec), { indent: 4, color: [120] });
-  y = drawItem(doc, y, 'Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 4, color: [120] });
-  y = drawItem(doc, y, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 4 });
-  y = drawItem(doc, y, 'Caisse', fmt(bs.assets.current.cashRegister), { indent: 4, color: [120] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Actifs Courants', fmt(bs.assets.current.total), { bold: true, total: true, color: [26, 26, 46] });
+  /* --- RIGHT: Passifs Non Courants --- */
+  ry = sectionH(doc, rx, ry, cw, 'PASSIFS NON COURANTS');
+  ry = item(doc, rx, ry, cw, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 4, color: [120] });
+  ry = sep(doc, rx, ry, cw);
+  ry = item(doc, rx, ry, cw, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { bold: true, total: true });
 
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'TOTAL ACTIFS', fmt(bs.assets.total), { bold: true, total: true, color: [26, 26, 46] });
+  /* --- RIGHT: Passifs Courants --- */
+  ry = sectionH(doc, rx, ry, cw, 'PASSIFS COURANTS');
+  ry = item(doc, rx, ry, cw, 'Fournisseurs et comptes rattachés', fmt(bs.liabilities.current.accountsPayable), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'Personnel', fmt(bs.liabilities.current.personnelPayable), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'État — IS', fmt(bs.liabilities.current.taxPayable), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 2 });
+  ry = item(doc, rx, ry, cw, 'Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 4, color: [120] });
+  ry = item(doc, rx, ry, cw, 'Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 4, color: [120] });
+  ry = sep(doc, rx, ry, cw);
+  ry = item(doc, rx, ry, cw, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { bold: true, total: true });
+  ry = sep(doc, rx, ry, cw);
+  ry = item(doc, rx, ry, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { bold: true, total: true, color: [26, 26, 46] });
 
-  // --- CAPITAUX PROPRES & PASSIFS ---
-  y += 6;
-  y = checkPageBreak(doc, y, 60);
-  y = drawSectionHeader(doc, 'CAPITAUX PROPRES & PASSIFS (Ressources)', y);
-
-  // --- CAPITAUX PROPRES ---
-  doc.setFontSize(7.5);
-  doc.setTextColor(120);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Capitaux Propres', M + 2, y + 1);
-  doc.setFont('helvetica', 'normal');
-  y += LH;
-
-  y = drawItem(doc, y, 'Capital social', fmt(bs.equity.socialCapital), { indent: 4 });
-  y = drawItem(doc, y, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 4 });
-  y = drawItem(doc, y, 'Autres réserves', fmt(bs.equity.otherReserves), { indent: 4, color: [120] });
-  y = drawItem(doc, y, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 4 });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Capitaux Propres (Classe 1)', fmt(bs.equity.total), { bold: true, total: true, color: [26, 26, 46] });
-
-  // --- PASSIFS NON COURANTS ---
-  y = checkPageBreak(doc, y, 30);
-  doc.setFontSize(7.5);
-  doc.setTextColor(120);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Passifs Non Courants', M + 2, y + 1);
-  doc.setFont('helvetica', 'normal');
-  y += LH;
-
-  y = drawItem(doc, y, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 4 });
-  y = drawItem(doc, y, 'Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 4, color: [120] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { bold: true, total: true, color: [26, 26, 46] });
-
-  // --- PASSIFS COURANTS ---
-  y = checkPageBreak(doc, y, 40);
-  doc.setFontSize(7.5);
-  doc.setTextColor(120);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Passifs Courants', M + 2, y + 1);
-  doc.setFont('helvetica', 'normal');
-  y += LH;
-
-  y = drawItem(doc, y, 'Fournisseurs et comptes rattachés', fmt(bs.liabilities.current.accountsPayable), { indent: 4 });
-  y = drawItem(doc, y, 'Personnel', fmt(bs.liabilities.current.personnelPayable), { indent: 4 });
-  y = drawItem(doc, y, 'État — Impôt sur les sociétés', fmt(bs.liabilities.current.taxPayable), { indent: 4 });
-  y = drawItem(doc, y, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 4 });
-  y = drawItem(doc, y, 'Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 4 });
-  y = drawItem(doc, y, 'Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 4, color: [120] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { bold: true, total: true, color: [26, 26, 46] });
-
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'TOTAL PASSIFS & CAPITAUX PROPRES', fmt(bs.totalLiabilitiesAndEquity), { bold: true, total: true, color: [26, 26, 46] });
-
-  /* Verification */
-  y += 7;
+  /* Balance verification at bottom center */
+  const checkY = Math.max(ly, ry) + 6;
   const balanced = Math.abs(bs.assets.total - bs.totalLiabilitiesAndEquity) < 0.01;
-  doc.setFontSize(8.5);
+  doc.setFontSize(8); doc.setFont('helvetica', 'bold');
   doc.setTextColor(balanced ? 16 : 239, balanced ? 185 : 68, balanced ? 129 : 68);
-  doc.setFont('helvetica', 'bold');
-  doc.text(balanced ? '✓ Bilan équilibré (Actif = Passif + Capitaux Propres)' : '✗ Bilan déséquilibré', M, y);
+  doc.text(balanced ? '✓ Bilan équilibré (Actif = Passif + Capitaux Propres)' : '✗ Bilan déséquilibré', 105, checkY, { align: 'center' });
 
   /* Footer */
-  doc.setFontSize(6.5);
-  doc.setTextColor(150);
-  doc.setFont('helvetica', 'normal');
-  doc.text('Document généré par Smart Comptable — Moteur d\'audit local — SCE Tunisie', M, 285);
-  doc.text(`Généré le ${todayStr()}`, M, 289);
-  doc.text('Page 1', M + W, 285, { align: 'right' });
+  doc.setFontSize(6); doc.setTextColor(150); doc.setFont('helvetica', 'normal');
+  doc.text('Document généré par Smart Comptable — SCE Tunisie', 10, 285);
+  doc.text(`Généré le ${todayStr()}`, 10, 289);
+  doc.text('Page 1', 200, 285, { align: 'right' });
+
+  /* ====== PAGE 2: ÉTAT DE RÉSULTAT ====== */
+  doc.addPage();
+  header(doc, data);
+  const is = data.incomeStatement;
+  doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text('ÉTAT DE RÉSULTAT (SCE)', 10, 37);
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.3);
+  doc.line(10, 39, 200, 39);
+
+  const x = 10, w = 190;
+  let y = 46;
+
+  y = sectionH(doc, x, y, w, 'PRODUITS D\'EXPLOITATION');
+  y = item(doc, x, y, w, 'Ventes de marchandises', fmt(is.productSales), { indent: 4, color: [16, 185, 129] });
+  y = item(doc, x, y, w, 'Prestations de services', fmt(is.serviceRevenue), { indent: 4, color: [16, 185, 129] });
+  y = item(doc, x, y, w, 'Autres produits', fmt(is.otherRevenue), { indent: 4, color: [100] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Total Produits d\'exploitation', fmt(is.revenue), { bold: true, total: true, color: [16, 185, 129] });
+
+  y += 2;
+  y = sectionH(doc, x, y, w, 'CHARGES D\'EXPLOITATION');
+  y = item(doc, x, y, w, 'Achats de marchandises', `(${fmt(is.purchaseGoods)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Achats de matières premières', `(${fmt(is.purchaseRaw)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Autres achats et charges externes', `(${fmt(is.otherPurchases)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Charges de personnel', `(${fmt(is.personnelCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Dotations aux amortissements', `(${fmt(is.depreciation)})`, { indent: 4, color: [120], valColor: [120] });
+  y = item(doc, x, y, w, 'Autres charges d\'exploitation', `(${fmt(is.otherOpCharges)})`, { indent: 4, color: [120], valColor: [120] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Total Charges d\'exploitation', `(${fmt(is.operatingExpenses)})`, { bold: true, total: true, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y += 1;
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'RÉSULTAT D\'EXPLOITATION', fmt(is.operatingProfit), { bold: true, total: true, color: [26, 26, 46] });
+
+  y += 3;
+  y = sectionH(doc, x, y, w, 'RÉSULTAT FINANCIER');
+  y = item(doc, x, y, w, 'Produits financiers', fmt(is.financialRevenue), { indent: 4, color: [100] });
+  y = item(doc, x, y, w, 'Charges financières', `(${fmt(is.financialCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Résultat financier', fmt(is.financialResult), { bold: true });
+  y += 1;
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'RÉSULTAT DES ACTIVITÉS ORDINAIRES AVANT IS', fmt(is.ordinaryProfit), { bold: true, total: true });
+
+  y += 2;
+  y = item(doc, x, y, w, 'Impôt sur les sociétés (15%)', `(${fmt(is.tax)})`, { color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = sep(doc, x, y, w);
+  const netColor = is.netProfit >= 0 ? [16, 185, 129] : [239, 68, 68];
+  y = item(doc, x, y, w, 'RÉSULTAT NET DE L\'EXERCICE', fmt(is.netProfit), { bold: true, total: true, color: netColor, valColor: netColor });
+
+  y += 6;
+  doc.setFontSize(7); doc.setTextColor(100); doc.setFont('helvetica', 'normal');
+  doc.text(`Marge d'exploitation: ${is.revenue > 0 ? Math.round((is.operatingProfit / is.revenue) * 100) : 0}% | Marge nette: ${is.revenue > 0 ? Math.round((is.netProfit / is.revenue) * 100) : 0}%`, x, y);
+  doc.text(`IS calculée au taux standard PME tunisien (15% du résultat ordinaire).`, x, y + 4);
+
+  doc.setFontSize(6); doc.setTextColor(150);
+  doc.text('Document généré par Smart Comptable — SCE Tunisie', 10, 285);
+  doc.text(`Généré le ${todayStr()}`, 10, 289);
+  doc.text('Page 2', 200, 285, { align: 'right' });
 
   doc.save(`Bilan_SCE_${data.company.name.replace(/\s+/g, '_')}_${new Date().getFullYear()}.pdf`);
 }
@@ -222,62 +213,60 @@ export function exportIncomeStatementPDF(data) {
   const fmt = (v) => formatCurrencyHelper(v, ccy);
   const is = data.incomeStatement;
 
-  drawCompanyHeader(doc, data);
-  let y = drawTitle(doc, 'État de Résultat (SCE)', 41);
-  y = drawSectionHeader(doc, 'PRODUITS D\'EXPLOITATION', y);
+  header(doc, data);
+  doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text('ÉTAT DE RÉSULTAT (SCE)', 10, 37);
+  doc.line(10, 39, 200, 39);
 
-  y = drawItem(doc, y, 'Ventes de marchandises', fmt(is.productSales), { indent: 4, color: [16, 185, 129] });
-  y = drawItem(doc, y, 'Prestations de services', fmt(is.serviceRevenue), { indent: 4, color: [16, 185, 129] });
-  y = drawItem(doc, y, 'Autres produits', fmt(is.otherRevenue), { indent: 4, color: [100] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Produits d\'exploitation', fmt(is.revenue), { bold: true, total: true, color: [16, 185, 129] });
+  const x = 10, w = 190;
+  let y = 46;
 
-  y += 3;
-  y = drawSectionHeader(doc, 'CHARGES D\'EXPLOITATION', y);
-
-  y = drawItem(doc, y, 'Achats de marchandises', `(${fmt(is.purchaseGoods)})`, { indent: 4, color: [200, 50, 50] });
-  y = drawItem(doc, y, 'Achats de matières premières', `(${fmt(is.purchaseRaw)})`, { indent: 4, color: [200, 50, 50] });
-  y = drawItem(doc, y, 'Autres achats et charges externes', `(${fmt(is.otherPurchases)})`, { indent: 4, color: [200, 50, 50] });
-  y = drawItem(doc, y, 'Charges de personnel', `(${fmt(is.personnelCosts)})`, { indent: 4, color: [200, 50, 50] });
-  y = drawItem(doc, y, 'Dotations aux amortissements', `(${fmt(is.depreciation)})`, { indent: 4, color: [120] });
-  y = drawItem(doc, y, 'Autres charges d\'exploitation', `(${fmt(is.otherOpCharges)})`, { indent: 4, color: [120] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Total Charges d\'exploitation', `(${fmt(is.operatingExpenses)})`, { bold: true, total: true, color: [200, 50, 50] });
+  y = sectionH(doc, x, y, w, 'PRODUITS D\'EXPLOITATION');
+  y = item(doc, x, y, w, 'Ventes de marchandises', fmt(is.productSales), { indent: 4, color: [16, 185, 129] });
+  y = item(doc, x, y, w, 'Prestations de services', fmt(is.serviceRevenue), { indent: 4, color: [16, 185, 129] });
+  y = item(doc, x, y, w, 'Autres produits', fmt(is.otherRevenue), { indent: 4, color: [100] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Total Produits d\'exploitation', fmt(is.revenue), { bold: true, total: true, color: [16, 185, 129] });
 
   y += 2;
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'RÉSULTAT D\'EXPLOITATION', fmt(is.operatingProfit), { bold: true, total: true, color: [26, 26, 46] });
-
-  y += 4;
-  y = drawSectionHeader(doc, 'RÉSULTAT FINANCIER', y);
-  y = drawItem(doc, y, 'Produits financiers', fmt(is.financialRevenue), { indent: 4, color: [100] });
-  y = drawItem(doc, y, 'Charges financières', `(${fmt(is.financialCosts)})`, { indent: 4, color: [200, 50, 50] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'Résultat financier', fmt(is.financialResult), { bold: true });
-
-  y += 2;
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'RÉSULTAT DES ACTIVITÉS ORDINAIRES AVANT IS', fmt(is.ordinaryProfit), { bold: true, total: true, color: [26, 26, 46] });
+  y = sectionH(doc, x, y, w, 'CHARGES D\'EXPLOITATION');
+  y = item(doc, x, y, w, 'Achats de marchandises', `(${fmt(is.purchaseGoods)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Achats de matières premières', `(${fmt(is.purchaseRaw)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Autres achats et charges externes', `(${fmt(is.otherPurchases)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Charges de personnel', `(${fmt(is.personnelCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = item(doc, x, y, w, 'Dotations aux amortissements', `(${fmt(is.depreciation)})`, { indent: 4, color: [120], valColor: [120] });
+  y = item(doc, x, y, w, 'Autres charges d\'exploitation', `(${fmt(is.otherOpCharges)})`, { indent: 4, color: [120], valColor: [120] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Total Charges d\'exploitation', `(${fmt(is.operatingExpenses)})`, { bold: true, total: true, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y += 1;
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'RÉSULTAT D\'EXPLOITATION', fmt(is.operatingProfit), { bold: true, total: true, color: [26, 26, 46] });
 
   y += 3;
-  y = drawItem(doc, y, 'Impôt sur les sociétés (15%)', `(${fmt(is.tax)})`, { color: [200, 50, 50] });
-  y = drawSeparator(doc, y);
-  y = drawItem(doc, y, 'RÉSULTAT NET DE L\'EXERCICE', fmt(is.netProfit), { bold: true, total: true, color: is.netProfit >= 0 ? [16, 185, 129] : [239, 68, 68] });
+  y = sectionH(doc, x, y, w, 'RÉSULTAT FINANCIER');
+  y = item(doc, x, y, w, 'Produits financiers', fmt(is.financialRevenue), { indent: 4, color: [100] });
+  y = item(doc, x, y, w, 'Charges financières', `(${fmt(is.financialCosts)})`, { indent: 4, color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'Résultat financier', fmt(is.financialResult), { bold: true });
+  y += 1;
+  y = sep(doc, x, y, w);
+  y = item(doc, x, y, w, 'RÉSULTAT DES ACTIVITÉS ORDINAIRES AVANT IS', fmt(is.ordinaryProfit), { bold: true, total: true });
 
-  y += 8;
-  doc.setFontSize(7.5);
-  doc.setTextColor(100);
-  doc.setFont('helvetica', 'normal');
-  doc.text(`Marge d'exploitation: ${is.revenue > 0 ? Math.round((is.operatingProfit / is.revenue) * 100) : 0}%`, M, y);
-  doc.text(`IS calculée au taux standard PME tunisien (15% du résultat ordinaire).`, M, y + 4);
-  doc.text(`Résultat net: ${fmt(is.netProfit)}`, M, y + 8);
+  y += 2;
+  y = item(doc, x, y, w, 'Impôt sur les sociétés (15%)', `(${fmt(is.tax)})`, { color: [200, 50, 50], valColor: [200, 50, 50] });
+  y = sep(doc, x, y, w);
+  const netColor = is.netProfit >= 0 ? [16, 185, 129] : [239, 68, 68];
+  y = item(doc, x, y, w, 'RÉSULTAT NET DE L\'EXERCICE', fmt(is.netProfit), { bold: true, total: true, color: netColor, valColor: netColor });
 
-  /* Footer */
-  doc.setFontSize(6.5);
-  doc.setTextColor(150);
-  doc.text('Document généré par Smart Comptable — Moteur d\'audit local — SCE Tunisie', M, 285);
-  doc.text(`Généré le ${todayStr()}`, M, 289);
-  doc.text('Page 1', M + W, 285, { align: 'right' });
+  y += 6;
+  doc.setFontSize(7); doc.setTextColor(100); doc.setFont('helvetica', 'normal');
+  doc.text(`Marge d'exploitation: ${is.revenue > 0 ? Math.round((is.operatingProfit / is.revenue) * 100) : 0}% | Marge nette: ${is.revenue > 0 ? Math.round((is.netProfit / is.revenue) * 100) : 0}%`, x, y);
+  doc.text(`IS calculée au taux standard PME tunisien (15% du résultat ordinaire).`, x, y + 4);
+
+  doc.setFontSize(6); doc.setTextColor(150);
+  doc.text('Document généré par Smart Comptable — SCE Tunisie', 10, 285);
+  doc.text(`Généré le ${todayStr()}`, 10, 289);
+  doc.text('Page 1', 200, 285, { align: 'right' });
 
   doc.save(`Resultat_SCE_${data.company.name.replace(/\s+/g, '_')}_${new Date().getFullYear()}.pdf`);
 }
