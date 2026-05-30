@@ -65,8 +65,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(customData));
   }, [customData]);
 
-  const balanceData = generateBalanceSheet(invoices, expenses, transactions, customData);
   const incomeData = generateIncomeStatement(invoices, expenses);
+  const balanceData = generateBalanceSheet(invoices, expenses, transactions, customData, incomeData);
 
   const updateCustom = (key, val) => {
     const v = parseFloat(val);

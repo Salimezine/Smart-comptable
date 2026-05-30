@@ -118,13 +118,16 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
 /**
  * Génère les données du Bilan (Balance Sheet) avec détail SCE
  */
-export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}) => {
+export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}, incomeStatement = null) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
   const pendingRevenue = calculatePendingRevenues(invoices);
   const totalExpenses = calculateTotalExpenses(expenses);
   const bankBalance = calculateBankBalance(0, transactions);
-  const netProfit = totalRevenue - totalExpenses;
-  const estimatedTax = netProfit > 0 ? Math.round((netProfit * 0.15) * 1000) / 1000 : 0;
+
+  /* Use income statement data if available, otherwise compute independently */
+  const is = incomeStatement || generateIncomeStatement(invoices, expenses);
+  const netProfit = is.netProfit;
+  const estimatedTax = is.tax;
 
   const R = Math.max(totalRevenue, 1);
   const E = Math.max(totalExpenses, 1);
@@ -297,8 +300,8 @@ export const generateIncomeStatement = (invoices = [], expenses = []) => {
  * Calcule 8 ratios financiers clés
  */
 export const calculateFinancialRatios = (invoices = [], expenses = [], transactions = []) => {
-  const bs = generateBalanceSheet(invoices, expenses, transactions);
   const is = generateIncomeStatement(invoices, expenses);
+  const bs = generateBalanceSheet(invoices, expenses, transactions, {}, is);
 
   const currentAssets = bs.assets.current.total;
   const currentLiabilities = bs.liabilities.current.total;
@@ -338,8 +341,8 @@ export const calculateFinancialRatios = (invoices = [], expenses = [], transacti
  * Retourne toutes les données financières structurées pour export
  */
 export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}) => {
-  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions);
   const incomeStatement = generateIncomeStatement(invoices, expenses);
+  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions, {}, incomeStatement);
   const ratios = calculateFinancialRatios(invoices, expenses, transactions);
 
   return {
