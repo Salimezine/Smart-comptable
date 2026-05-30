@@ -227,3 +227,46 @@ export const getFinancialExportData = (invoices = [], expenses = [], transaction
     generatedAt: new Date().toISOString()
   };
 };
+
+const MONTHS = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
+
+function getMonthKey(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return null;
+  return d.getMonth();
+}
+
+export const computeMonthlyChartData = (invoices = [], expenses = []) => {
+  const monthly = {};
+
+  for (const inv of invoices) {
+    const m = getMonthKey(inv.issueDate || inv.date);
+    if (m === null) continue;
+    if (!monthly[m]) monthly[m] = { revenus: 0, depenses: 0 };
+    monthly[m].revenus += parseFloat(inv.totalAmount) || 0;
+  }
+
+  for (const exp of expenses) {
+    const m = getMonthKey(exp.date);
+    if (m === null) continue;
+    if (!monthly[m]) monthly[m] = { revenus: 0, depenses: 0 };
+    monthly[m].depenses += parseFloat(exp.totalAmount) || 0;
+  }
+
+  const sortedMonths = Object.keys(monthly).map(Number).sort((a, b) => a - b);
+  let tresorerie = 0;
+  const result = [];
+
+  for (const m of sortedMonths) {
+    tresorerie += monthly[m].revenus - monthly[m].depenses;
+    result.push({
+      name: MONTHS[m],
+      Revenus: Math.round(monthly[m].revenus * 1000) / 1000,
+      Dépenses: Math.round(monthly[m].depenses * 1000) / 1000,
+      Trésorerie: Math.round(tresorerie * 1000) / 1000
+    });
+  }
+
+  return result;
+};

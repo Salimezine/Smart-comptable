@@ -45,7 +45,6 @@ import {
   INITIAL_INVOICES, 
   INITIAL_TRANSACTIONS, 
   INITIAL_EXPENSES, 
-  MOCK_CHART_DATA, 
   RECEIPT_SAMPLES 
 } from './mockData';
 import { 
@@ -54,7 +53,8 @@ import {
   calculateTotalExpenses, 
   calculateEstimatedTaxes, 
   calculateInvoiceTotals, 
-  formatCurrencyHelper 
+  formatCurrencyHelper,
+  computeMonthlyChartData 
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
@@ -614,8 +614,8 @@ function DashboardView({
   invoices,
   expenses
 }) {
-  // Evolution de la Trésorerie mockée
-  const chartData = MOCK_CHART_DATA;
+  // Évolution de la Trésorerie calculée à partir des données réelles
+  const chartData = computeMonthlyChartData(invoices, expenses);
 
   // Calcul du taux de taxes
   const taxRatio = Math.min((estimatedTaxes / (totalRevenues || 1)) * 100, 100);
@@ -672,6 +672,10 @@ function DashboardView({
                     <stop offset="5%" stopColor="#10b981" stopOpacity={0.25}/>
                     <stop offset="95%" stopColor="#10b981" stopOpacity={0}/>
                   </linearGradient>
+                  <linearGradient id="colorExpenses" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#ef4444" stopOpacity={0.25}/>
+                    <stop offset="95%" stopColor="#ef4444" stopOpacity={0}/>
+                  </linearGradient>
                   <linearGradient id="colorCash" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#6366f1" stopOpacity={0.25}/>
                     <stop offset="95%" stopColor="#6366f1" stopOpacity={0}/>
@@ -685,6 +689,7 @@ function DashboardView({
                   labelStyle={{ color: '#94a3b8', fontWeight: 'bold' }}
                 />
                 <Area type="monotone" dataKey="Revenus" stroke="#10b981" strokeWidth={2} fillOpacity={1} fill="url(#colorRevenues)" />
+                <Area type="monotone" dataKey="Dépenses" stroke="#ef4444" strokeWidth={2} fillOpacity={1} fill="url(#colorExpenses)" />
                 <Area type="monotone" dataKey="Trésorerie" stroke="#6366f1" strokeWidth={2.5} fillOpacity={1} fill="url(#colorCash)" />
               </AreaChart>
             </ResponsiveContainer>
