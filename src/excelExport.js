@@ -94,96 +94,110 @@ async function buildBilanSheet(wb, data) {
   const bs = data.balanceSheet;
 
   // Title
-  ws.mergeCells('A1:D1');
-  const title = ws.getCell('A1');
+  ws.mergeCells(1, 1, 1, 4);
+  const title = ws.getCell(1, 1);
   title.value = `BILAN SCE — ${data.company.name} — Exercice ${new Date().getFullYear()}`;
   title.font = { bold: true, size: 13, color: { argb: WHITE }, name: 'Arial' };
   fill(title, DARK);
   title.alignment = { horizontal: 'center', vertical: 'middle' };
   ws.getRow(1).height = 30;
 
-  ws.mergeCells('A2:D2');
-  const sub = ws.getCell('A2');
+  ws.mergeCells(2, 1, 2, 4);
+  const sub = ws.getCell(2, 1);
   sub.value = `Généré le ${todayStr()} · MF: ${data.company.mf}`;
   sub.font = { italic: true, size: 9, color: { argb: GRAY }, name: 'Arial' };
   sub.alignment = { horizontal: 'center' };
   ws.getRow(3).height = 4;
 
-  // Headers
+  // Column headers
   setRow(ws, 4, ['ACTIFS', 'Montant', 'PASSIFS & CAPITAUX PROPRES', 'Montant'], 1);
 
-  // Track row for formulas
-  const a = { r: 5 };
+  let r = 5;
+  const L = (txt, val, bold, indent) => { dataRow(ws, r, 1, txt, val, bold, indent); r++; };
+  const T = (txt, val) => { totalRow(ws, r, 1, txt, val); r++; };
+  const S = (txt, col) => {
+    const rr = r;
+    sectionRow(ws, rr, col, txt);
+    const c2 = ws.getCell(rr, col + 1);
+    fill(c2, SECTION); border(c2);
+    r++;
+  };
+  // Right-side helpers
+  const LR = (txt, val, bold, indent) => { dataRow(ws, r, 3, txt, val, bold, indent); r++; };
+  const TR = (txt, val) => { totalRow(ws, r, 3, txt, val); r++; };
+  const SR = (txt) => {
+    const rr = r;
+    sectionRow(ws, rr, 3, txt);
+    const c2 = ws.getCell(rr, 4);
+    fill(c2, SECTION); border(c2);
+    r++;
+  };
 
-  // === ACTIFS ===
-  sectionRow(ws, a.r, 1, 'ACTIFS NON COURANTS'); a.r++;
-  const ancIncorp = a.r; dataRow(ws, a.r, 1, '  Frais de développement', bs.assets.nonCurrent.intangibleDetail.devCosts, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Brevets, licences, marques', bs.assets.nonCurrent.intangibleDetail.patents, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Fonds commercial', bs.assets.nonCurrent.intangibleDetail.goodwill, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Immobilisations incorporelles', bs.assets.nonCurrent.intangible, true); a.r++;
-  const ancCorp = a.r; dataRow(ws, a.r, 1, '  Terrains', bs.assets.nonCurrent.tangibleDetail.land, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Constructions', bs.assets.nonCurrent.tangibleDetail.buildings, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Installations techniques', bs.assets.nonCurrent.tangibleDetail.equipment, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Matériel de transport', bs.assets.nonCurrent.tangibleDetail.transport, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Mobilier & mat. bureau', bs.assets.nonCurrent.tangibleDetail.officeEquip, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Immobilisations corporelles', bs.assets.nonCurrent.tangible, true); a.r++;
-  dataRow(ws, a.r, 1, '  Immobilisations financières', bs.assets.nonCurrent.financial, false); a.r++;
-  const totalANCrow = a.r;
-  totalRow(ws, a.r, 1, 'TOTAL ACTIFS NON COURANTS', bs.assets.nonCurrent.total); a.r++;
+  /* === LEFT: ACTIFS === */
+  const aStart = r;
+  S('ACTIFS', 1);
+  S('Actifs Non Courants', 1);
+  L('  Frais de développement', bs.assets.nonCurrent.intangibleDetail.devCosts, false, 1);
+  L('  Brevets, licences, marques', bs.assets.nonCurrent.intangibleDetail.patents, false, 1);
+  L('  Fonds commercial', bs.assets.nonCurrent.intangibleDetail.goodwill, false, 1);
+  L('Immobilisations incorporelles', bs.assets.nonCurrent.intangible, true);
+  L('  Terrains', bs.assets.nonCurrent.tangibleDetail.land, false, 1);
+  L('  Constructions', bs.assets.nonCurrent.tangibleDetail.buildings, false, 1);
+  L('  Installations techniques', bs.assets.nonCurrent.tangibleDetail.equipment, false, 1);
+  L('  Matériel de transport', bs.assets.nonCurrent.tangibleDetail.transport, false, 1);
+  L('  Mobilier & mat. bureau', bs.assets.nonCurrent.tangibleDetail.officeEquip, false, 1);
+  L('Immobilisations corporelles', bs.assets.nonCurrent.tangible, true);
+  L('Immobilisations financières', bs.assets.nonCurrent.financial, false);
+  T('Total Actifs Non Courants', bs.assets.nonCurrent.total);
+  r++;
 
-  a.r++; // spacing
-  sectionRow(ws, a.r, 1, 'ACTIFS COURANTS'); a.r++;
-  const acStocks = a.r; dataRow(ws, a.r, 1, '  Marchandises', bs.assets.current.stockDetail.merchandise, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Matières premières', bs.assets.current.stockDetail.rawMaterials, false, 1); a.r++;
-  dataRow(ws, a.r, 1, '  Stocks', bs.assets.current.stocks, true); a.r++;
-  dataRow(ws, a.r, 1, '  Clients et comptes rattachés', bs.assets.current.receivables, false); a.r++;
-  dataRow(ws, a.r, 1, '  Personnel', bs.assets.current.personnelRec, false); a.r++;
-  dataRow(ws, a.r, 1, '  État et collectivités', bs.assets.current.taxRec, false); a.r++;
-  dataRow(ws, a.r, 1, '  Autres débiteurs', bs.assets.current.otherRec, false); a.r++;
-  dataRow(ws, a.r, 1, '  Banque', bs.assets.current.cashAndBank, false); a.r++;
-  dataRow(ws, a.r, 1, '  Caisse', bs.assets.current.cashRegister, false); a.r++;
-  const totalACrow = a.r;
-  totalRow(ws, a.r, 1, 'TOTAL ACTIFS COURANTS', bs.assets.current.total); a.r++;
-  a.r++;
-  const totalActRow = a.r;
-  totalRow(ws, a.r, 1, 'TOTAL ACTIFS', bs.assets.total); a.r++;
+  S('Actifs Courants', 1);
+  L('  Marchandises', bs.assets.current.stockDetail.merchandise, false, 1);
+  L('  Matières premières', bs.assets.current.stockDetail.rawMaterials, false, 1);
+  L('Stocks', bs.assets.current.stocks, true);
+  L('Clients et comptes rattachés', bs.assets.current.receivables, false);
+  L('  Personnel', bs.assets.current.personnelRec, false, 1);
+  L('  État et collectivités', bs.assets.current.taxRec, false, 1);
+  L('  Autres débiteurs', bs.assets.current.otherRec, false, 1);
+  L('Banque', bs.assets.current.cashAndBank, false);
+  L('  Caisse', bs.assets.current.cashRegister, false, 1);
+  T('Total Actifs Courants', bs.assets.current.total);
+  r++;
+  const aEnd = r;
+  T('TOTAL ACTIFS', bs.assets.total);
 
-  // === PASSIFS ===
-  const b = { r: 5 };
-  sectionRow(ws, b.r, 3, 'CAPITAUX PROPRES'); b.r++;
-  dataRow(ws, b.r, 3, '  Capital social', bs.equity.socialCapital, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Réserves légales', bs.equity.legalReserve, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Autres réserves', bs.equity.otherReserves, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Résultat net de l\'exercice', bs.equity.retainedEarnings, false, 1); b.r++;
-  const totalCProw = b.r;
-  totalRow(ws, b.r, 3, 'TOTAL CAPITAUX PROPRES', bs.equity.total); b.r++;
+  /* === RIGHT: PASSIFS === */
+  r = aStart;
+  SR('PASSIFS & CAPITAUX PROPRES');
+  SR('Capitaux Propres');
+  LR('Capital social', bs.equity.socialCapital, false);
+  LR('Réserves légales', bs.equity.legalReserve, false);
+  LR('  Autres réserves', bs.equity.otherReserves, false, 1);
+  LR('Résultat net de l\'exercice', bs.equity.retainedEarnings, false);
+  TR('Total Capitaux Propres', bs.equity.total);
+  r++;
 
-  b.r++;
-  sectionRow(ws, b.r, 3, 'PASSIFS NON COURANTS'); b.r++;
-  dataRow(ws, b.r, 3, '  Emprunts bancaires', bs.liabilities.nonCurrent.bankLoans, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Provisions', bs.liabilities.nonCurrent.provisions, false, 1); b.r++;
-  const totalPNCrow = b.r;
-  totalRow(ws, b.r, 3, 'TOTAL PASSIFS NON COURANTS', bs.liabilities.nonCurrent.total); b.r++;
+  SR('Passifs Non Courants');
+  LR('Emprunts bancaires', bs.liabilities.nonCurrent.bankLoans, false);
+  LR('  Provisions', bs.liabilities.nonCurrent.provisions, false, 1);
+  TR('Total Passifs Non Courants', bs.liabilities.nonCurrent.total);
+  r++;
 
-  b.r++;
-  sectionRow(ws, b.r, 3, 'PASSIFS COURANTS'); b.r++;
-  dataRow(ws, b.r, 3, '  Fournisseurs et comptes rattachés', bs.liabilities.current.accountsPayable, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Personnel', bs.liabilities.current.personnelPayable, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  État — Impôt sur les sociétés', bs.liabilities.current.taxPayable, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  État — TVA due', bs.liabilities.current.vatPayable, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Autres dettes', bs.liabilities.current.otherPayables, false, 1); b.r++;
-  dataRow(ws, b.r, 3, '  Concours bancaires', bs.liabilities.current.bankOverdraft, false, 1); b.r++;
-  const totalPCrow = b.r;
-  totalRow(ws, b.r, 3, 'TOTAL PASSIFS COURANTS', bs.liabilities.current.total); b.r++;
-  b.r++;
-  const totalPassRow = b.r;
-  totalRow(ws, b.r, 3, 'TOTAL PASSIFS & CAPITAUX PROPRES', bs.totalLiabilitiesAndEquity); b.r++;
+  SR('Passifs Courants');
+  LR('Fournisseurs et comptes rattachés', bs.liabilities.current.accountsPayable, false);
+  LR('Personnel', bs.liabilities.current.personnelPayable, false);
+  LR('État — Impôt sur les sociétés', bs.liabilities.current.taxPayable, false);
+  LR('État — TVA due', bs.liabilities.current.vatPayable, false);
+  LR('  Autres dettes', bs.liabilities.current.otherPayables, false, 1);
+  LR('  Concours bancaires', bs.liabilities.current.bankOverdraft, false, 1);
+  TR('Total Passifs Courants', bs.liabilities.current.total);
+  r++;
+  TR('TOTAL PASSIFS & CAPITAUX PROPRES', bs.totalLiabilitiesAndEquity);
 
   // Control row
-  const cr = Math.max(a.r, b.r) + 1;
-  const labelR = ws.getRow(cr);
+  const cr = Math.max(aEnd, r) + 1;
   ws.mergeCells(cr, 1, cr, 4);
-  const cc = labelR.getCell(1);
+  const cc = ws.getCell(cr, 1);
   cc.value = Math.abs(bs.assets.total - bs.totalLiabilitiesAndEquity) < 0.01
     ? '✓ Bilan équilibré (Actif = Passif + Capitaux Propres)'
     : '✗ Bilan déséquilibré';

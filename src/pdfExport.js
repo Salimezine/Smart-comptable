@@ -67,65 +67,77 @@ export function exportBalanceSheetPDF(data) {
   const lx = 10, rx = 105, cw = 90;
   let ly = 46, ry = 46;
 
-  /* === COLUMN HEADERS === */
-  ly = colHeader(doc, lx, ly, cw, 'ACTIFS');
-  ry = colHeader(doc, rx, ry, cw, 'PASSIFS & CAPITAUX PROPRES');
+  /* Helper: draws a table row with label + value */
+  function trow(y, x, w, label, val, opts = {}) {
+    const { section, total, indent, valClr } = opts;
+    const bg = total ? [235, 240, 255] : section ? [26, 26, 46] : null;
+    if (bg) { doc.setFillColor(bg[0], bg[1], bg[2]); doc.rect(x, y - 2, w, 5, 'F'); }
+    doc.setFontSize(total ? 8 : section ? 7.5 : 6.8);
+    doc.setTextColor(section ? [255, 255, 255] : total ? [26, 26, 46] : [80, 80, 80]);
+    doc.setFont('helvetica', section || total ? 'bold' : 'normal');
+    doc.text(label, x + 1 + (indent || 0), y + 1.2);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(valClr || (total ? [26, 26, 46] : section ? [255, 255, 255] : [60, 60, 60]));
+    doc.text(val, x + w - 1, y + 1.2, { align: 'right' });
+    doc.setDrawColor(total ? [26, 26, 46] : [210, 210, 210]); doc.setLineWidth(total ? 0.5 : 0.1);
+    doc.line(x, y + 3.5, x + w, y + 3.5);
+    return y + 5;
+  }
 
-  /* --- LEFT: Actifs Non Courants --- */
-  ly = sectionH(doc, lx, ly, cw, 'ACTIFS NON COURANTS');
-  ly = item(doc, lx, ly, cw, 'Frais de développement', fmt(bs.assets.nonCurrent.intangibleDetail.devCosts), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Brevets, licences, marques', fmt(bs.assets.nonCurrent.intangibleDetail.patents), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Fonds commercial', fmt(bs.assets.nonCurrent.intangibleDetail.goodwill), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Immobilisations incorporelles', fmt(bs.assets.nonCurrent.intangible), { bold: true, indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Terrains', fmt(bs.assets.nonCurrent.tangibleDetail.land), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Constructions', fmt(bs.assets.nonCurrent.tangibleDetail.buildings), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Installations techniques', fmt(bs.assets.nonCurrent.tangibleDetail.equipment), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Matériel de transport', fmt(bs.assets.nonCurrent.tangibleDetail.transport), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Mobilier & mat. bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { bold: true, indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { bold: true, total: true });
+  /* === LEFT: ACTIFS === */
+  ly = trow(ly, lx, cw, 'ACTIFS', '', { section: true });
+  ly = trow(ly, lx, cw, 'Actifs Non Courants', '', { section: true, valClr: [200,200,200] });
+  ly = trow(ly, lx, cw, '  Brevets, licences, marques', fmt(bs.assets.nonCurrent.intangibleDetail.patents), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Fonds commercial', fmt(bs.assets.nonCurrent.intangibleDetail.goodwill), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Autres immob. incorporelles', fmt(bs.assets.nonCurrent.intangibleDetail.devCosts), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, 'Immobilisations incorporelles', fmt(bs.assets.nonCurrent.intangible), { indent: 3 });
+  ly = trow(ly, lx, cw, '  Terrains', fmt(bs.assets.nonCurrent.tangibleDetail.land), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Constructions', fmt(bs.assets.nonCurrent.tangibleDetail.buildings), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Installations techniques', fmt(bs.assets.nonCurrent.tangibleDetail.equipment), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Matériel de transport', fmt(bs.assets.nonCurrent.tangibleDetail.transport), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Mobilier & matériel bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { indent: 3 });
+  ly = trow(ly, lx, cw, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 3 });
+  ly = trow(ly, lx, cw, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { total: true });
 
-  /* --- LEFT: Actifs Courants --- */
-  ly = sectionH(doc, lx, ly, cw, 'ACTIFS COURANTS');
-  ly = item(doc, lx, ly, cw, 'Marchandises', fmt(bs.assets.current.stockDetail.merchandise), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Matières premières', fmt(bs.assets.current.stockDetail.rawMaterials), { indent: 6, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Stocks', fmt(bs.assets.current.stocks), { bold: true, indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Clients et comptes rattachés', fmt(bs.assets.current.receivables), { indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Personnel', fmt(bs.assets.current.personnelRec), { indent: 4, color: [120] });
-  ly = item(doc, lx, ly, cw, 'État et collectivités', fmt(bs.assets.current.taxRec), { indent: 4, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 4, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 2 });
-  ly = item(doc, lx, ly, cw, 'Caisse', fmt(bs.assets.current.cashRegister), { indent: 4, color: [120] });
-  ly = item(doc, lx, ly, cw, 'Total Actifs Courants', fmt(bs.assets.current.total), { bold: true, total: true });
-  ly = sep(doc, lx, ly, cw);
-  ly = item(doc, lx, ly, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { bold: true, total: true, color: [26, 26, 46] });
+  ly = trow(ly, lx, cw, 'Actifs Courants', '', { section: true, valClr: [200,200,200] });
+  ly = trow(ly, lx, cw, '  Marchandises', fmt(bs.assets.current.stockDetail.merchandise), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Matières premières', fmt(bs.assets.current.stockDetail.rawMaterials), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, 'Stocks', fmt(bs.assets.current.stocks), { indent: 3 });
+  ly = trow(ly, lx, cw, 'Clients et comptes rattachés', fmt(bs.assets.current.receivables), { indent: 3 });
+  ly = trow(ly, lx, cw, '  Personnel', fmt(bs.assets.current.personnelRec), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  État et collectivités', fmt(bs.assets.current.taxRec), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, '  Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 3 });
+  ly = trow(ly, lx, cw, '  Caisse', fmt(bs.assets.current.cashRegister), { indent: 6, valClr: [110,110,110] });
+  ly = trow(ly, lx, cw, 'Total Actifs Courants', fmt(bs.assets.current.total), { total: true });
+  ly += 1;
+  ly = trow(ly, lx, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { total: true });
 
-  /* --- RIGHT: Capitaux Propres --- */
-  ry = sectionH(doc, rx, ry, cw, 'CAPITAUX PROPRES');
-  ry = item(doc, rx, ry, cw, 'Capital social', fmt(bs.equity.socialCapital), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Autres réserves', fmt(bs.equity.otherReserves), { indent: 4, color: [120] });
-  ry = item(doc, rx, ry, cw, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Total Capitaux Propres', fmt(bs.equity.total), { bold: true, total: true });
+  /* === RIGHT: PASSIFS & CAPITAUX PROPRES === */
+  ry = trow(ry, rx, cw, 'PASSIFS & CAPITAUX PROPRES', '', { section: true });
+  ry = trow(ry, rx, cw, 'Capitaux Propres', '', { section: true, valClr: [200,200,200] });
+  ry = trow(ry, rx, cw, 'Capital social', fmt(bs.equity.socialCapital), { indent: 3 });
+  ry = trow(ry, rx, cw, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 3 });
+  ry = trow(ry, rx, cw, '  Autres réserves', fmt(bs.equity.otherReserves), { indent: 6, valClr: [110,110,110] });
+  ry = trow(ry, rx, cw, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 3 });
+  ry = trow(ry, rx, cw, 'Total Capitaux Propres', fmt(bs.equity.total), { total: true });
 
-  /* --- RIGHT: Passifs Non Courants --- */
-  ry = sectionH(doc, rx, ry, cw, 'PASSIFS NON COURANTS');
-  ry = item(doc, rx, ry, cw, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 4, color: [120] });
-  ry = item(doc, rx, ry, cw, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { bold: true, total: true });
+  ry = trow(ry, rx, cw, 'Passifs Non Courants', '', { section: true, valClr: [200,200,200] });
+  ry = trow(ry, rx, cw, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 3 });
+  ry = trow(ry, rx, cw, '  Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 6, valClr: [110,110,110] });
+  ry = trow(ry, rx, cw, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { total: true });
 
-  /* --- RIGHT: Passifs Courants --- */
-  ry = sectionH(doc, rx, ry, cw, 'PASSIFS COURANTS');
-  ry = item(doc, rx, ry, cw, 'Fournisseurs et comptes rattachés', fmt(bs.liabilities.current.accountsPayable), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Personnel', fmt(bs.liabilities.current.personnelPayable), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'État — IS', fmt(bs.liabilities.current.taxPayable), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 2 });
-  ry = item(doc, rx, ry, cw, 'Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 4, color: [120] });
-  ry = item(doc, rx, ry, cw, 'Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 4, color: [120] });
-  ry = item(doc, rx, ry, cw, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { bold: true, total: true });
-  ry = sep(doc, rx, ry, cw);
-  ry = item(doc, rx, ry, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { bold: true, total: true, color: [26, 26, 46] });
+  ry = trow(ry, rx, cw, 'Passifs Courants', '', { section: true, valClr: [200,200,200] });
+  ry = trow(ry, rx, cw, 'Fournisseurs et comptes rattachés', fmt(bs.liabilities.current.accountsPayable), { indent: 3 });
+  ry = trow(ry, rx, cw, 'Personnel', fmt(bs.liabilities.current.personnelPayable), { indent: 3 });
+  ry = trow(ry, rx, cw, 'État — IS', fmt(bs.liabilities.current.taxPayable), { indent: 3 });
+  ry = trow(ry, rx, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 3 });
+  ry = trow(ry, rx, cw, '  Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 6, valClr: [110,110,110] });
+  ry = trow(ry, rx, cw, '  Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 6, valClr: [110,110,110] });
+  ry = trow(ry, rx, cw, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { total: true });
+  ry += 1;
+  ry = trow(ry, rx, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { total: true });
 
   /* Balance verification at bottom center */
   const checkY = Math.max(ly, ry) + 6;
