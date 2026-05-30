@@ -73,13 +73,20 @@ export function exportBalanceSheetPDF(data) {
     const bg = total ? [235, 240, 255] : section ? [26, 26, 46] : null;
     if (bg) { doc.setFillColor(bg[0], bg[1], bg[2]); doc.rect(x, y - 2, w, 5, 'F'); }
     doc.setFontSize(total ? 8 : section ? 7.5 : 6.8);
-    doc.setTextColor(section ? [255, 255, 255] : total ? [26, 26, 46] : [80, 80, 80]);
+    if (section) doc.setTextColor(255, 255, 255);
+    else if (total) doc.setTextColor(26, 26, 46);
+    else doc.setTextColor(80, 80, 80);
     doc.setFont('helvetica', section || total ? 'bold' : 'normal');
     doc.text(label, x + 1 + (indent || 0), y + 1.2);
     doc.setFont('helvetica', 'bold');
-    doc.setTextColor(valClr || (total ? [26, 26, 46] : section ? [255, 255, 255] : [60, 60, 60]));
+    if (valClr) doc.setTextColor(valClr[0], valClr[1], valClr[2]);
+    else if (total) doc.setTextColor(26, 26, 46);
+    else if (section) doc.setTextColor(255, 255, 255);
+    else doc.setTextColor(60, 60, 60);
     doc.text(val, x + w - 1, y + 1.2, { align: 'right' });
-    doc.setDrawColor(total ? [26, 26, 46] : [210, 210, 210]); doc.setLineWidth(total ? 0.5 : 0.1);
+    if (total) doc.setDrawColor(26, 26, 46);
+    else doc.setDrawColor(210, 210, 210);
+    doc.setLineWidth(total ? 0.5 : 0.1);
     doc.line(x, y + 3.5, x + w, y + 3.5);
     return y + 5;
   }
