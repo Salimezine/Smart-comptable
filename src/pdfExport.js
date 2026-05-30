@@ -1,6 +1,7 @@
 import { jsPDF } from 'jspdf';
 import { formatCurrencyHelper } from './accountingUtils';
 
+const CURR = 'MDT';
 const LH = 5.8;
 
 function todayStr() {
@@ -54,13 +55,12 @@ function colHeader(doc, x, y, w, text) {
 
 export function exportBalanceSheetPDF(data) {
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-  const ccy = data.company.currency;
-  const fmt = (v) => formatCurrencyHelper(v, ccy);
+  const fmt = (v) => formatCurrencyHelper(v, CURR);
   const bs = data.balanceSheet;
 
   header(doc, data);
   doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
-  doc.text('BILAN (SCE) — ACTIF / PASSIF', 10, 37);
+  doc.text('BILAN (SCE) — ACTIF / PASSIF  (en MDT)', 10, 37);
   doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.3);
   doc.line(10, 39, 200, 39);
 
@@ -150,7 +150,7 @@ export function exportBalanceSheetPDF(data) {
   header(doc, data);
   const is = data.incomeStatement;
   doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
-  doc.text('ÉTAT DE RÉSULTAT (SCE)', 10, 37);
+  doc.text('ÉTAT DE RÉSULTAT (SCE)  (en MDT)', 10, 37);
   doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.3);
   doc.line(10, 39, 200, 39);
 
@@ -204,13 +204,12 @@ export function exportBalanceSheetPDF(data) {
 
 export function exportIncomeStatementPDF(data) {
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-  const ccy = data.company.currency;
-  const fmt = (v) => formatCurrencyHelper(v, ccy);
+  const fmt = (v) => formatCurrencyHelper(v, CURR);
   const is = data.incomeStatement;
 
   header(doc, data);
   doc.setFontSize(11); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
-  doc.text('ÉTAT DE RÉSULTAT (SCE)', 10, 37);
+  doc.text('ÉTAT DE RÉSULTAT (SCE)  (en MDT)', 10, 37);
   doc.line(10, 39, 200, 39);
 
   const x = 10, w = 190;

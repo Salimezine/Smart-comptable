@@ -7,8 +7,8 @@ import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadshe
 const CUSTOM_DATA_KEY = 'sc_bilan_custom_data';
 
 const fmt = (v) => {
-  if (v == null || isNaN(v)) return '0,000 DT';
-  return v.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) + ' DT';
+  if (v == null || isNaN(v)) return '0,000 MDT';
+  return v.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) + ' MDT';
 };
 
 function Section({ title, children, defaultOpen = true }) {

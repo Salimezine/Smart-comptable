@@ -103,8 +103,8 @@ export const calculateInvoiceTotals = (items = [], includeStampDuty = true) => {
  * @returns {string}
  */
 export const formatCurrencyHelper = (val, currency = 'TND') => {
-  if (currency === 'TND') {
-    // Format Dinar Tunisien avec 3 décimales (ex: 1 500,350 DT)
+  if (currency === 'TND' || currency === 'MDT') {
+    // Format en Millions de Dinars Tunisiens avec 3 décimales (ex: 1,500 MDT)
     return new Intl.NumberFormat('fr-TN', { 
       style: 'currency', 
       currency: 'TND', 
@@ -129,14 +129,17 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const netProfit = is.netProfit;
   const estimatedTax = is.tax;
 
-  const R = Math.max(totalRevenue, 1);
-  const E = Math.max(totalExpenses, 1);
+  /* Convert to MDT (Millions de Dinars) */
+  const R = Math.max(totalRevenue / 1000, 1);
+  const E = Math.max(totalExpenses / 1000, 1);
+  const PR = Math.max(pendingRevenue / 1000, 0);
+  const BB = Math.max(bankBalance / 1000, 0);
 
   /* --- User-editable values (with auto defaults) --- */
-  const intangibleAssets    = Math.round((customData.immobilisationsIncorporelles ?? Math.min(R * 0.08, 15000)) * 1000) / 1000;
-  const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50000)) * 1000) / 1000;
-  const socialCapital       = Math.round((customData.capitalSocial ?? Math.min(Math.max(R * 0.20, 5000), 30000)) * 1000) / 1000;
-  const bankLoans           = Math.round((customData.empruntsBancaires ?? Math.min(R * 0.15, 25000)) * 1000) / 1000;
+  const intangibleAssets    = Math.round((customData.immobilisationsIncorporelles ?? Math.min(R * 0.08, 15)) * 1000) / 1000;
+  const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50)) * 1000) / 1000;
+  const socialCapital       = Math.round((customData.capitalSocial ?? Math.min(Math.max(R * 0.20, 5), 30)) * 1000) / 1000;
+  const bankLoans           = Math.round((customData.empruntsBancaires ?? Math.min(R * 0.15, 25)) * 1000) / 1000;
   const stocksAmount        = Math.round((customData.stocks ?? E * 0.10) * 1000) / 1000;
 
   /* --- Sub-items (estimated from data) --- */
@@ -153,16 +156,16 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const merchandise   = Math.round(stocksAmount * 0.5 * 1000) / 1000;
   const rawMaterials  = Math.round(stocksAmount * 0.5 * 1000) / 1000;
 
-  const receivables   = Math.round(pendingRevenue * 1000) / 1000;
+  const receivables   = Math.round(PR * 1000) / 1000;
   const personnelRec  = Math.round(E * 0.03 * 1000) / 1000;
   const taxRec        = Math.round(R * 0.02 * 1000) / 1000;
   const otherRec      = Math.round(R * 0.01 * 1000) / 1000;
-  const cashAndBank   = Math.round(bankBalance * 1000) / 1000;
-  const cashRegister  = Math.round(Math.max(cashAndBank * 0.05, 50) * 1000) / 1000;
+  let cashAndBank   = Math.round(BB * 1000) / 1000;
+  let cashRegister  = Math.round(Math.max(cashAndBank * 0.05, 0.050) * 1000) / 1000;
 
   const nonCurrentAssets  = Math.round((intangibleAssets + tangibleAssets + financialAssets) * 1000) / 1000;
-  const currentAssets     = Math.round((stocksAmount + receivables + personnelRec + taxRec + otherRec + cashAndBank + cashRegister) * 1000) / 1000;
-  const totalAssets       = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
+  let currentAssets     = Math.round((stocksAmount + receivables + personnelRec + taxRec + otherRec + cashAndBank + cashRegister) * 1000) / 1000;
+  let totalAssets       = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
 
   /* --- Equity --- */
   const legalReserve      = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
@@ -178,12 +181,24 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const personnelPayable  = Math.round(E * 0.08 * 1000) / 1000;
   const taxPayable        = estimatedTax;
   const vatPayable        = Math.round(R * 0.06 * 1000) / 1000;
-  const otherPayables     = Math.round(Math.max(E * 0.05, 200) * 1000) / 1000;
+  const otherPayables     = Math.round(Math.max(E * 0.05, 0.200) * 1000) / 1000;
   const bankOverdraft     = Math.round(Math.max(currentAssets * (-0.05), 0) * 1000) / 1000;
   const currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
 
   const totalLiabilities              = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
-  const totalLiabilitiesAndEquity     = Math.round((equity + totalLiabilities) * 1000) / 1000;
+  let totalLiabilitiesAndEquity     = Math.round((equity + totalLiabilities) * 1000) / 1000;
+
+  /* --- Balancing: adjust Caisse to force Actif = Passif + CP --- */
+  const balDiff = Math.round((totalAssets - totalLiabilitiesAndEquity) * 1000) / 1000;
+  if (Math.abs(balDiff) > 0.001) {
+    const adjCashReg = Math.round((cashRegister - balDiff) * 1000) / 1000;
+    const adjCashBank = Math.round((cashAndBank - balDiff) * 1000) / 1000;
+    cashRegister = adjCashReg;
+    cashAndBank = adjCashBank;
+    currentAssets = Math.round((currentAssets - balDiff) * 1000) / 1000;
+    totalAssets = Math.round((totalAssets - balDiff) * 1000) / 1000;
+    totalLiabilitiesAndEquity = totalAssets;
+  }
 
   return {
     assets: {
@@ -242,8 +257,9 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
 export const generateIncomeStatement = (invoices = [], expenses = []) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
   const totalExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.totalAmount) || 0), 0);
-  const R = Math.max(totalRevenue, 1);
-  const E = Math.max(totalExpenses, 1);
+  /* Convert to MDT */
+  const R = Math.max(totalRevenue / 1000, 1);
+  const E = Math.max(totalExpenses / 1000, 1);
 
   /* --- Produits d'exploitation --- */
   const productSales      = Math.round(R * 0.55 * 1000) / 1000;
@@ -264,11 +280,11 @@ export const generateIncomeStatement = (invoices = [], expenses = []) => {
 
   /* --- Résultat financier --- */
   const financialRevenue  = 0;
-  const financialCosts    = Math.round(totalExpenses * 0.01 * 1000) / 1000;
+  const financialCosts    = Math.round(E * 0.01 * 1000) / 1000;
   const financialResult   = financialRevenue - financialCosts;
 
   const ordinaryProfit    = operatingProfit + financialResult;
-  const taxAmount         = calculateEstimatedTaxes(ordinaryProfit > 0 ? ordinaryProfit : 0);
+  const taxAmount         = Math.round(calculateEstimatedTaxes(ordinaryProfit > 0 ? ordinaryProfit : 0) * 1000) / 1000;
   const netProfit         = Math.round((ordinaryProfit - taxAmount) * 1000) / 1000;
 
   return {
@@ -357,6 +373,101 @@ export const getFinancialExportData = (invoices = [], expenses = [], transaction
     ratios,
     generatedAt: new Date().toISOString()
   };
+};
+
+/**
+ * Génère des factures/dépenses/transactions fictives qui matchent l'État de Résultat.
+ * Les montants sont en DT (bruts) — l'État de Résultat divise par 1000 pour les MDT.
+ */
+export const generateSimulatedData = () => {
+  const incomeStatement = generateIncomeStatement([], []);
+  const is = incomeStatement;
+  /* Target raw amounts (DT) — income statement values * 1000 */
+  const targetRevenue = is.revenue * 1000;
+  const targetExpenses = is.operatingExpenses * 1000;
+
+  const invoices = [];
+  let invSum = 0;
+  const invCount = 12;
+  for (let i = 0; i < invCount; i++) {
+    const amount = i < invCount - 1
+      ? Math.round((targetRevenue / invCount) * (0.8 + Math.random() * 0.4))
+      : Math.round(targetRevenue - invSum);
+    invSum += amount;
+    const month = String(i + 1).padStart(2, '0');
+    invoices.push({
+      id: `SIM-INV-${String(i + 1).padStart(3, '0')}`,
+      number: `FACT-${2026}-${String(i + 1).padStart(4, '0')}`,
+      clientName: `Client ${String.fromCharCode(65 + (i % 26))}`,
+      clientVat: `1234567${String(i + 1).padStart(3, '0')}/${['A','M','B'][i % 3]}`,
+      issueDate: `2026-${month}-15`,
+      dueDate: `2026-${month}-45`,
+      totalHT: Math.round(amount / 1.19),
+      tvaAmount: Math.round(amount - amount / 1.19),
+      totalAmount: amount,
+      status: i % 3 === 0 ? 'payée' : (i % 3 === 1 ? 'impayée' : 'en_attente'),
+      category: i % 2 === 0 ? 'vente_marchandises' : 'prestation_service'
+    });
+  }
+
+  const expenses = [];
+  let expSum = 0;
+  const expCount = 24;
+  const expCategories = [
+    { cat: 'achat_marchandises', pct: 0.30 },
+    { cat: 'achat_mp', pct: 0.12 },
+    { cat: 'charge_externe', pct: 0.15 },
+    { cat: 'personnel', pct: 0.30 },
+    { cat: 'amortissement', pct: 0.05 },
+    { cat: 'charge_financiere', pct: 0.01 },
+    { cat: 'autre_charge', pct: 0.07 },
+  ];
+  const expByCat = {};
+  for (const c of expCategories) {
+    expByCat[c.cat] = Math.round(targetExpenses * c.pct);
+  }
+  for (let i = 0; i < expCount; i++) {
+    const catIdx = i % expCategories.length;
+    const cat = expCategories[catIdx];
+    const remaining = expByCat[cat.cat] || 0;
+    const perExp = Math.max(1, Math.round(remaining / (Math.ceil((expCount - i) / expCategories.length))));
+    const amount = Math.min(remaining, perExp);
+    expByCat[cat.cat] = remaining - amount;
+    expSum += amount;
+    const month = String((i % 12) + 1).padStart(2, '0');
+    expenses.push({
+      id: `SIM-EXP-${String(i + 1).padStart(3, '0')}`,
+      description: `${cat.cat.replace('_', ' ')} — ${['Fournisseur A','Fournisseur B','Freelance X','SNT','Banque','Locaux'][catIdx % 6]}`,
+      totalAmount: amount,
+      date: `2026-${month}-${10 + (i % 15)}`,
+      category: cat.cat,
+      vatRate: cat.cat === 'personnel' ? 0 : 19,
+      supplier: `Fournisseur ${String.fromCharCode(65 + (catIdx % 6))}`
+    });
+  }
+
+  const transactions = [];
+  for (let i = 0; i < 12; i++) {
+    const month = String(i + 1).padStart(2, '0');
+    transactions.push({
+      id: `SIM-TRX-${String(i + 1).padStart(3, '0')}`,
+      date: `2026-${month}-20`,
+      description: `Virement client — ${['Vente','Prestation','Règlement'][i % 3]} ${i + 1}`,
+      amount: Math.round(invoices[i]?.totalAmount * 0.7 || 1000),
+      type: 'crédit',
+      category: 'vente'
+    });
+    transactions.push({
+      id: `SIM-TRX-${String(i + 13).padStart(3, '0')}`,
+      date: `2026-${month}-25`,
+      description: `Paiement fournisseur — ${['Achats','Charges','Loyer'][i % 3]}`,
+      amount: Math.round((expenses[i * 2]?.totalAmount || 500) * 0.9),
+      type: 'débit',
+      category: 'achat'
+    });
+  }
+
+  return { invoices, expenses, transactions, incomeStatement };
 };
 
 const MONTHS = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];

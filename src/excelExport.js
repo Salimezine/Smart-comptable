@@ -96,7 +96,7 @@ async function buildBilanSheet(wb, data) {
   // Title
   ws.mergeCells(1, 1, 1, 4);
   const title = ws.getCell(1, 1);
-  title.value = `BILAN SCE — ${data.company.name} — Exercice ${new Date().getFullYear()}`;
+  title.value = `BILAN SCE — ${data.company.name} — Exercice ${new Date().getFullYear()}  (en MDT)`;
   title.font = { bold: true, size: 13, color: { argb: WHITE }, name: 'Arial' };
   fill(title, DARK);
   title.alignment = { horizontal: 'center', vertical: 'middle' };
@@ -207,7 +207,7 @@ async function buildResultatSheet(wb, data) {
 
   ws.mergeCells('A1:B1');
   const t = ws.getCell('A1');
-  t.value = `ÉTAT DE RÉSULTAT SCE — ${data.company.name} — Exercice ${new Date().getFullYear()}`;
+  t.value = `ÉTAT DE RÉSULTAT SCE — ${data.company.name} — Exercice ${new Date().getFullYear()}  (en MDT)`;
   t.font = { bold: true, size: 13, color: { argb: WHITE }, name: 'Arial' };
   fill(t, DARK);
   t.alignment = { horizontal: 'center', vertical: 'middle' };
