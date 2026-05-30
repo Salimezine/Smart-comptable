@@ -103,14 +103,22 @@ export const calculateInvoiceTotals = (items = [], includeStampDuty = true) => {
  * @returns {string}
  */
 export const formatCurrencyHelper = (val, currency = 'TND') => {
-  if (currency === 'TND' || currency === 'MDT') {
-    // Format en Millions de Dinars Tunisiens avec 3 décimales (ex: 1,500 MDT)
+  if (currency === 'TND') {
+    // Format Dinar Tunisien avec 3 décimales (ex: 1 500,350 DT)
     return new Intl.NumberFormat('fr-TN', { 
       style: 'currency', 
       currency: 'TND', 
       minimumFractionDigits: 3,
       maximumFractionDigits: 3 
     }).format(val);
+  }
+  if (currency === 'MDT') {
+    // Format Millions de Dinars Tunisiens (ex: 1,500 MDT)
+    const parts = new Intl.NumberFormat('fr-TN', { 
+      minimumFractionDigits: 3,
+      maximumFractionDigits: 3 
+    }).formatToParts(val);
+    return parts.map(p => p.value).join('').trim() + ' MDT';
   }
   return new Intl.NumberFormat('fr-FR', { style: 'currency', currency }).format(val);
 };
@@ -353,9 +361,9 @@ export const calculateFinancialRatios = (invoices = [], expenses = [], transacti
 /**
  * Retourne toutes les données financières structurées pour export
  */
-export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}) => {
+export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}, customData = {}) => {
   const incomeStatement = generateIncomeStatement(invoices, expenses);
-  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions, {}, incomeStatement);
+  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions, customData, incomeStatement);
   const ratios = calculateFinancialRatios(invoices, expenses, transactions);
 
   return {

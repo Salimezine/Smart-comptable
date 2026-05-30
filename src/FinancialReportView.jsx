@@ -95,11 +95,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <option value="N">N</option>
             <option value="N-1">N-1</option>
           </select>
-          <button onClick={() => exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails))}
+          <button onClick={() => {
+            try {
+              exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, customData));
+            } catch(e) { console.error('PDF export error:', e); alert('Erreur PDF: ' + e.message); }
+          }}
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileText className="w-3.5 h-3.5" /> PDF
           </button>
-          <button onClick={() => { exportToExcel(invoices, expenses, transactions, companyDetails).catch(console.error); }}
+          <button onClick={() => { exportToExcel(invoices, expenses, transactions, companyDetails, customData).catch(console.error); }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>

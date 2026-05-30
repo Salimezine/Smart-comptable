@@ -454,8 +454,8 @@ function download(buf, name) {
   URL.revokeObjectURL(url);
 }
 
-export async function exportToExcel(invoices, expenses, transactions, companyDetails) {
-  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails);
+export async function exportToExcel(invoices, expenses, transactions, companyDetails, customData = {}) {
+  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails, customData);
   const wb = new ExcelJS.Workbook();
   await buildBilanSheet(wb, data);
   await buildResultatSheet(wb, data);
