@@ -126,47 +126,106 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const netProfit = totalRevenue - totalExpenses;
   const estimatedTax = netProfit > 0 ? Math.round((netProfit * 0.15) * 1000) / 1000 : 0;
 
-  /* --- User-editable values (with defaults) --- */
-  const intangibleAssets = Math.round((customData.immobilisationsIncorporelles ?? Math.min(totalRevenue * 0.08, 15000)) * 1000) / 1000;
-  const tangibleAssets = Math.round((customData.immobilisationsCorporelles ?? Math.min(totalRevenue * 0.25, 50000)) * 1000) / 1000;
-  const socialCapital = Math.round((customData.capitalSocial ?? Math.min(Math.max(totalRevenue * 0.20, 5000), 30000)) * 1000) / 1000;
-  const bankLoans = Math.round((customData.empruntsBancaires ?? Math.min(totalRevenue * 0.15, 25000)) * 1000) / 1000;
+  const R = Math.max(totalRevenue, 1);
+  const E = Math.max(totalExpenses, 1);
 
-  /* --- Computed values (from invoices/expenses) --- */
-  const receivables = Math.round(pendingRevenue * 1000) / 1000;
-  const cashAndBank = Math.round(bankBalance * 1000) / 1000;
-  const legalReserve = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
-  const retainedEarnings = Math.round(netProfit * 1000) / 1000;
-  const accountsPayable = Math.round(totalExpenses * 0.5 * 1000) / 1000;
-  const taxPayable = estimatedTax;
-  const otherPayables = Math.round(Math.max(totalExpenses * 0.1, 500) * 1000) / 1000;
+  /* --- User-editable values (with auto defaults) --- */
+  const intangibleAssets    = Math.round((customData.immobilisationsIncorporelles ?? Math.min(R * 0.08, 15000)) * 1000) / 1000;
+  const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50000)) * 1000) / 1000;
+  const socialCapital       = Math.round((customData.capitalSocial ?? Math.min(Math.max(R * 0.20, 5000), 30000)) * 1000) / 1000;
+  const bankLoans           = Math.round((customData.empruntsBancaires ?? Math.min(R * 0.15, 25000)) * 1000) / 1000;
+  const stocksAmount        = Math.round((customData.stocks ?? E * 0.10) * 1000) / 1000;
 
-  /* --- Totals --- */
-  const nonCurrentAssets = Math.round((intangibleAssets + tangibleAssets) * 1000) / 1000;
-  const currentAssets = Math.round((receivables + cashAndBank) * 1000) / 1000;
-  const totalAssets = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
+  /* --- Sub-items (estimated from data) --- */
+  const devCosts      = Math.round(intangibleAssets * 0.3 * 1000) / 1000;
+  const patents       = Math.round(intangibleAssets * 0.4 * 1000) / 1000;
+  const goodwill      = Math.round(intangibleAssets * 0.3 * 1000) / 1000;
+  const land          = Math.round(tangibleAssets * 0.2 * 1000) / 1000;
+  const buildings     = Math.round(tangibleAssets * 0.3 * 1000) / 1000;
+  const equipment     = Math.round(tangibleAssets * 0.3 * 1000) / 1000;
+  const transport     = Math.round(tangibleAssets * 0.1 * 1000) / 1000;
+  const officeEquip   = Math.round(tangibleAssets * 0.1 * 1000) / 1000;
+  const financialAssets = Math.round(R * 0.03 * 1000) / 1000;
 
-  const equity = Math.round((socialCapital + legalReserve + retainedEarnings) * 1000) / 1000;
+  const merchandise   = Math.round(stocksAmount * 0.5 * 1000) / 1000;
+  const rawMaterials  = Math.round(stocksAmount * 0.5 * 1000) / 1000;
 
-  const nonCurrentLiabilities = bankLoans;
-  const currentLiabilities = Math.round((accountsPayable + taxPayable + otherPayables) * 1000) / 1000;
-  const totalLiabilities = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
-  const totalLiabilitiesAndEquity = Math.round((equity + totalLiabilities) * 1000) / 1000;
+  const receivables   = Math.round(pendingRevenue * 1000) / 1000;
+  const personnelRec  = Math.round(E * 0.03 * 1000) / 1000;
+  const taxRec        = Math.round(R * 0.02 * 1000) / 1000;
+  const otherRec      = Math.round(R * 0.01 * 1000) / 1000;
+  const cashAndBank   = Math.round(bankBalance * 1000) / 1000;
+  const cashRegister  = Math.round(Math.max(cashAndBank * 0.05, 50) * 1000) / 1000;
+
+  const nonCurrentAssets  = Math.round((intangibleAssets + tangibleAssets + financialAssets) * 1000) / 1000;
+  const currentAssets     = Math.round((stocksAmount + receivables + personnelRec + taxRec + otherRec + cashAndBank + cashRegister) * 1000) / 1000;
+  const totalAssets       = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
+
+  /* --- Equity --- */
+  const legalReserve      = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
+  const otherReserves     = Math.round(Math.max(netProfit * 0.03, 0) * 1000) / 1000;
+  const retainedEarnings  = Math.round(netProfit * 1000) / 1000;
+  const equity            = Math.round((socialCapital + legalReserve + otherReserves + retainedEarnings) * 1000) / 1000;
+
+  /* --- Liabilities --- */
+  const provisions        = Math.round(R * 0.02 * 1000) / 1000;
+  const nonCurrentLiabilities = Math.round((bankLoans + provisions) * 1000) / 1000;
+
+  const accountsPayable   = Math.round(E * 0.40 * 1000) / 1000;
+  const personnelPayable  = Math.round(E * 0.08 * 1000) / 1000;
+  const taxPayable        = estimatedTax;
+  const vatPayable        = Math.round(R * 0.06 * 1000) / 1000;
+  const otherPayables     = Math.round(Math.max(E * 0.05, 200) * 1000) / 1000;
+  const bankOverdraft     = Math.round(Math.max(currentAssets * (-0.05), 0) * 1000) / 1000;
+  const currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
+
+  const totalLiabilities              = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
+  const totalLiabilitiesAndEquity     = Math.round((equity + totalLiabilities) * 1000) / 1000;
 
   return {
     assets: {
-      nonCurrent: { intangible: intangibleAssets, tangible: tangibleAssets, total: nonCurrentAssets },
-      current: { receivables, cashAndBank, total: currentAssets },
+      nonCurrent: {
+        intangible: intangibleAssets,
+        intangibleDetail: { devCosts, patents, goodwill },
+        tangible: tangibleAssets,
+        tangibleDetail: { land, buildings, equipment, transport, officeEquip },
+        financial: financialAssets,
+        total: nonCurrentAssets
+      },
+      current: {
+        stocks: stocksAmount,
+        stockDetail: { merchandise, rawMaterials },
+        receivables,
+        personnelRec,
+        taxRec,
+        otherRec,
+        cashAndBank,
+        cashRegister,
+        total: currentAssets
+      },
       total: totalAssets
     },
     liabilities: {
-      nonCurrent: { bankLoans, total: nonCurrentLiabilities },
-      current: { accountsPayable, taxPayable, otherPayables, total: currentLiabilities },
+      nonCurrent: {
+        bankLoans,
+        provisions,
+        total: nonCurrentLiabilities
+      },
+      current: {
+        accountsPayable,
+        personnelPayable,
+        taxPayable,
+        vatPayable,
+        otherPayables,
+        bankOverdraft,
+        total: currentLiabilities
+      },
       total: totalLiabilities
     },
     equity: {
       socialCapital,
       legalReserve,
+      otherReserves,
       retainedEarnings,
       total: equity
     },
@@ -178,23 +237,59 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
  * Génère les données de l'État de Résultat (Income Statement) SCE
  */
 export const generateIncomeStatement = (invoices = [], expenses = []) => {
-  const operatingRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
-  const operatingExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.totalAmount) || 0), 0);
-  const operatingProfit = operatingRevenue - operatingExpenses;
-  const financialRevenue = 0;
-  const financialExpenses = 0;
-  const ordinaryProfit = operatingProfit + financialRevenue - financialExpenses;
-  const taxAmount = calculateEstimatedTaxes(ordinaryProfit > 0 ? ordinaryProfit : 0);
-  const netProfit = ordinaryProfit - taxAmount;
+  const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
+  const totalExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.totalAmount) || 0), 0);
+  const R = Math.max(totalRevenue, 1);
+  const E = Math.max(totalExpenses, 1);
+
+  /* --- Produits d'exploitation --- */
+  const productSales      = Math.round(R * 0.55 * 1000) / 1000;
+  const serviceRevenue    = Math.round(R * 0.40 * 1000) / 1000;
+  const otherRevenue      = Math.round(R * 0.05 * 1000) / 1000;
+  const totalOpRevenue    = Math.round((productSales + serviceRevenue + otherRevenue) * 1000) / 1000;
+
+  /* --- Charges d'exploitation --- */
+  const purchaseGoods     = Math.round(E * 0.30 * 1000) / 1000;
+  const purchaseRaw       = Math.round(E * 0.12 * 1000) / 1000;
+  const otherPurchases    = Math.round(E * 0.15 * 1000) / 1000;
+  const personnelCosts    = Math.round(E * 0.30 * 1000) / 1000;
+  const depreciation      = Math.round(E * 0.05 * 1000) / 1000;
+  const otherOpCharges    = Math.round(E * 0.08 * 1000) / 1000;
+  const totalOpExpenses   = Math.round((purchaseGoods + purchaseRaw + otherPurchases + personnelCosts + depreciation + otherOpCharges) * 1000) / 1000;
+
+  const operatingProfit   = totalOpRevenue - totalOpExpenses;
+
+  /* --- Résultat financier --- */
+  const financialRevenue  = 0;
+  const financialCosts    = Math.round(totalExpenses * 0.01 * 1000) / 1000;
+  const financialResult   = financialRevenue - financialCosts;
+
+  const ordinaryProfit    = operatingProfit + financialResult;
+  const taxAmount         = calculateEstimatedTaxes(ordinaryProfit > 0 ? ordinaryProfit : 0);
+  const netProfit         = Math.round((ordinaryProfit - taxAmount) * 1000) / 1000;
 
   return {
-    revenue: operatingRevenue,
-    costOfGoodsSold: 0,
-    operatingExpenses: operatingExpenses,
-    operatingProfit: operatingProfit,
-    ordinaryProfit: ordinaryProfit,
+    /* Operating revenue detail */
+    productSales,
+    serviceRevenue,
+    otherRevenue,
+    revenue: totalOpRevenue,
+    /* Operating expense detail */
+    purchaseGoods,
+    purchaseRaw,
+    otherPurchases,
+    personnelCosts,
+    depreciation,
+    otherOpCharges,
+    operatingExpenses: totalOpExpenses,
+    operatingProfit,
+    /* Financial */
+    financialRevenue,
+    financialCosts,
+    financialResult,
+    ordinaryProfit,
     tax: taxAmount,
-    netProfit: netProfit
+    netProfit
   };
 };
 
@@ -214,18 +309,21 @@ export const calculateFinancialRatios = (invoices = [], expenses = [], transacti
   const revenue = is.revenue;
   const operatingProfit = is.operatingProfit;
   const operatingExpenses = is.operatingExpenses;
+  const stocks = bs.assets.current.stocks || 0;
 
   const liquidityRatio = currentLiabilities > 0 ? Math.round((currentAssets / currentLiabilities) * 100) / 100 : 0;
+  const quickRatio = currentLiabilities > 0 ? Math.round(((currentAssets - stocks) / currentLiabilities) * 100) / 100 : 0;
   const debtToEquity = equity !== 0 ? Math.round((totalLiabilities / equity) * 100) / 100 : 0;
   const roe = equity !== 0 ? Math.round((netProfit / equity) * 10000) / 100 : 0;
   const roa = totalAssets !== 0 ? Math.round((netProfit / totalAssets) * 10000) / 100 : 0;
   const netMargin = revenue !== 0 ? Math.round((netProfit / revenue) * 10000) / 100 : 0;
-  const grossMargin = revenue !== 0 ? Math.round(((revenue - operatingExpenses) / revenue) * 10000) / 100 : 0;
+  const grossMargin = revenue !== 0 ? Math.round(((revenue - (is.purchaseGoods + is.purchaseRaw + is.otherPurchases)) / revenue) * 10000) / 100 : 0;
   const financialAutonomy = totalAssets !== 0 ? Math.round((equity / totalAssets) * 10000) / 100 : 0;
-  const interestCoverage = 0;
+  const interestCoverage = is.financialCosts > 0 ? Math.round((operatingProfit / is.financialCosts) * 100) / 100 : 0;
 
   return {
     liquidityRatio,
+    quickRatio,
     debtToEquity,
     roe,
     roa,
