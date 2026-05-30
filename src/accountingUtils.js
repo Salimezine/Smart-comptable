@@ -188,13 +188,10 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const totalLiabilities              = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
   let totalLiabilitiesAndEquity     = Math.round((equity + totalLiabilities) * 1000) / 1000;
 
-  /* --- Balancing: adjust Caisse to force Actif = Passif + CP --- */
+  /* --- Balancing: adjust Banque to force Actif = Passif + CP --- */
   const balDiff = Math.round((totalAssets - totalLiabilitiesAndEquity) * 1000) / 1000;
   if (Math.abs(balDiff) > 0.001) {
-    const adjCashReg = Math.round((cashRegister - balDiff) * 1000) / 1000;
-    const adjCashBank = Math.round((cashAndBank - balDiff) * 1000) / 1000;
-    cashRegister = adjCashReg;
-    cashAndBank = adjCashBank;
+    cashAndBank = Math.round((cashAndBank - balDiff) * 1000) / 1000;
     currentAssets = Math.round((currentAssets - balDiff) * 1000) / 1000;
     totalAssets = Math.round((totalAssets - balDiff) * 1000) / 1000;
     totalLiabilitiesAndEquity = totalAssets;

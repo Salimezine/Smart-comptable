@@ -202,11 +202,6 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
 
             <Line label="TOTAL PASSIFS & CAPITAUX PROPRES" value={balanceData.totalLiabilitiesAndEquity} total />
           </div>
-
-          <div className="mt-4 p-3 rounded-xl border border-brand-500/20 bg-brand-500/10 flex items-center gap-2">
-            <CheckCheck className="w-4 h-4 text-brand-400" />
-            <p className="text-xs font-semibold text-brand-300">Bilan équilibré (Actif = Passif + CP)</p>
-          </div>
         </div>
 
         {/* ÉTAT DE RÉSULTAT */}

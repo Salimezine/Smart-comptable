@@ -113,23 +113,26 @@ async function buildBilanSheet(wb, data) {
   setRow(ws, 4, ['ACTIFS', 'Montant', 'PASSIFS & CAPITAUX PROPRES', 'Montant'], 1);
 
   let r = 5;
-  const L = (txt, val, bold, indent) => { dataRow(ws, r, 1, txt, val, bold, indent); r++; };
-  const T = (txt, val) => { totalRow(ws, r, 1, txt, val); r++; };
+  /* Track row references for formulas */
+  const R = {};
+  const L = (txt, val, bold, indent) => { dataRow(ws, r, 1, txt, val, bold, indent); R[txt.trim()] = r; r++; };
+  const T = (txt, val) => { totalRow(ws, r, 1, txt, val); R[txt.trim()] = r; r++; };
   const S = (txt, col) => {
     const rr = r;
     sectionRow(ws, rr, col, txt);
     const c2 = ws.getCell(rr, col + 1);
     fill(c2, SECTION); border(c2);
+    if (txt.trim()) R[txt.trim()] = rr;
     r++;
   };
-  // Right-side helpers
-  const LR = (txt, val, bold, indent) => { dataRow(ws, r, 3, txt, val, bold, indent); r++; };
-  const TR = (txt, val) => { totalRow(ws, r, 3, txt, val); r++; };
+  const LR = (txt, val, bold, indent) => { dataRow(ws, r, 3, txt, val, bold, indent); R[txt.trim()] = r; r++; };
+  const TR = (txt, val) => { totalRow(ws, r, 3, txt, val); R[txt.trim()] = r; r++; };
   const SR = (txt) => {
     const rr = r;
     sectionRow(ws, rr, 3, txt);
     const c2 = ws.getCell(rr, 4);
     fill(c2, SECTION); border(c2);
+    if (txt.trim()) R[txt.trim()] = rr;
     r++;
   };
 
@@ -157,7 +160,8 @@ async function buildBilanSheet(wb, data) {
   L('  Personnel', bs.assets.current.personnelRec, false, 1);
   L('  État et collectivités', bs.assets.current.taxRec, false, 1);
   L('  Autres débiteurs', bs.assets.current.otherRec, false, 1);
-  L('Banque', bs.assets.current.cashAndBank, false);
+  /* Banque — written as placeholder; formula will replace it */
+  L('Banque', 0, false);
   L('  Caisse', bs.assets.current.cashRegister, false, 1);
   const aEnd = r;
   T('TOTAL ACTIFS', bs.assets.total);
@@ -184,15 +188,84 @@ async function buildBilanSheet(wb, data) {
   LR('  Concours bancaires', bs.liabilities.current.bankOverdraft, false, 1);
   TR('TOTAL PASSIFS & CAPITAUX PROPRES', bs.totalLiabilitiesAndEquity);
 
-  // Control row
-  const cr = Math.max(aEnd, r) + 1;
-  ws.mergeCells(cr, 1, cr, 4);
-  const cc = ws.getCell(cr, 1);
-  cc.value = Math.abs(bs.assets.total - bs.totalLiabilitiesAndEquity) < 0.01
-    ? '✓ Bilan équilibré (Actif = Passif + Capitaux Propres)'
-    : '✗ Bilan déséquilibré';
-  cc.font = { bold: true, size: 10, color: { argb: GREEN }, name: 'Arial' };
-  cc.alignment = { horizontal: 'center' };
+  /* ===== NOW APPLY FORMULAS ===== */
+  /* Helper: col letter for a 0‑based offset from col B (actif) or D (passif) */
+  const B = (row) => `B${row}`;
+  const D = (row) => `D${row}`;
+  const ref = (label) => {
+    const row = R[label];
+    if (!row) throw new Error(`Row not tracked for: "${label}"`);
+    return row;
+  };
+
+  /* 1. TOTAL PASSIFS & CAPITAUX PROPRES = SUM of all CP + Passif items (col D) */
+  /*    Items: Capital social, Réserves légales, Autres réserves, Résultat net,
+              Emprunts, Provisions, Fournisseurs, Personnel, IS, TVA, Autres dettes, Concours bancaires */
+  const passifItems = [
+    'Capital social', 'Réserves légales', 'Autres réserves',
+    'Résultat net de l\'exercice',
+    'Emprunts bancaires', 'Provisions',
+    'Fournisseurs et comptes rattachés', 'Personnel',
+    'État — Impôt sur les sociétés', 'État — TVA due',
+    'Autres dettes', 'Concours bancaires'
+  ];
+  const passifRefs = passifItems.map(item => D(ref(item))).join('+');
+  const totalPassifRow = ref('TOTAL PASSIFS & CAPITAUX PROPRES');
+  ws.getCell(totalPassifRow, 4).value = { formula: passifRefs };
+
+  /* 2. BANQUE = TOTAL PASSIF - SUM(all other Actif items in col B) */
+  const actifItems = [
+    'Frais de développement', 'Brevets, licences, marques', 'Fonds commercial',
+    'Terrains', 'Constructions', 'Installations techniques',
+    'Matériel de transport', 'Mobilier & mat. bureau',
+    'Immobilisations financières',
+    'Marchandises', 'Matières premières',
+    'Clients et comptes rattachés',
+    'Personnel', 'État et collectivités', 'Autres débiteurs',
+    'Caisse'
+  ];
+  const actifSumExceptBanque = actifItems.map(item => B(ref(item))).join('+');
+  const banqueRow = ref('Banque');
+  ws.getCell(banqueRow, 2).value = { formula: `${D(totalPassifRow)}-(${actifSumExceptBanque})` };
+
+  /* 3. TOTAL ACTIFS = TOTAL PASSIF (équalité garantie) */
+  const totalActifRow = ref('TOTAL ACTIFS');
+  ws.getCell(totalActifRow, 2).value = { formula: D(totalPassifRow) };
+
+  /* 4. Single aligned final row with both totals */
+  const finalRow = Math.max(totalActifRow, totalPassifRow) + 1;
+  ws.mergeCells(finalRow, 1, finalRow, 2);
+  const fl = ws.getCell(finalRow, 1);
+  fl.value = 'TOTAL GÉNÉRAL — ACTIF = PASSIF';
+  fl.font = { bold: true, size: 10, color: { argb: WHITE }, name: 'Arial' };
+  fill(fl, DARK);
+  fl.alignment = { horizontal: 'center', vertical: 'middle' };
+  border(fl, { top: { style: 'medium', color: { argb: WHITE } }, bottom: { style: 'medium', color: { argb: WHITE } } });
+
+  const fv = ws.getCell(finalRow, 2);
+  fv.value = { formula: D(totalPassifRow) };
+  fv.numFmt = '#,##0.000';
+  fv.font = { bold: true, size: 10, color: { argb: WHITE }, name: 'Arial' };
+  fill(fv, DARK);
+  fv.alignment = { horizontal: 'right', vertical: 'middle' };
+  border(fv, { top: { style: 'medium', color: { argb: WHITE } }, bottom: { style: 'medium', color: { argb: WHITE } } });
+
+  ws.mergeCells(finalRow, 3, finalRow, 4);
+  const fp = ws.getCell(finalRow, 3);
+  fp.value = 'TOTAL GÉNÉRAL — ACTIF = PASSIF';
+  fp.font = { bold: true, size: 10, color: { argb: WHITE }, name: 'Arial' };
+  fill(fp, DARK);
+  fp.alignment = { horizontal: 'center', vertical: 'middle' };
+  border(fp, { top: { style: 'medium', color: { argb: WHITE } }, bottom: { style: 'medium', color: { argb: WHITE } } });
+
+  const fv2 = ws.getCell(finalRow, 4);
+  fv2.value = { formula: D(totalPassifRow) };
+  fv2.numFmt = '#,##0.000';
+  fv2.font = { bold: true, size: 10, color: { argb: WHITE }, name: 'Arial' };
+  fill(fv2, DARK);
+  fv2.alignment = { horizontal: 'right', vertical: 'middle' };
+  border(fv2, { top: { style: 'medium', color: { argb: WHITE } }, bottom: { style: 'medium', color: { argb: WHITE } } });
+  ws.getRow(finalRow).height = 24;
 
   ws.getColumn(1).width = 36;
   ws.getColumn(2).width = 18;

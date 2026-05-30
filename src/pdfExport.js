@@ -109,7 +109,6 @@ export function exportBalanceSheetPDF(data) {
   ly = trow(ly, lx, cw, '  Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 6, valClr: [110,110,110] });
   ly = trow(ly, lx, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 3 });
   ly = trow(ly, lx, cw, '  Caisse', fmt(bs.assets.current.cashRegister), { indent: 6, valClr: [110,110,110] });
-  ly = trow(ly, lx, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { total: true });
 
   /* === RIGHT: PASSIFS & CAPITAUX PROPRES === */
   ry = trow(ry, rx, cw, 'PASSIFS & CAPITAUX PROPRES', '', { section: true });
@@ -130,14 +129,25 @@ export function exportBalanceSheetPDF(data) {
   ry = trow(ry, rx, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 3 });
   ry = trow(ry, rx, cw, '  Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 6, valClr: [110,110,110] });
   ry = trow(ry, rx, cw, '  Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 6, valClr: [110,110,110] });
-  ry = trow(ry, rx, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { total: true });
 
-  /* Balance verification at bottom center */
-  const checkY = Math.max(ly, ry) + 6;
-  const balanced = Math.abs(bs.assets.total - bs.totalLiabilitiesAndEquity) < 0.01;
-  doc.setFontSize(8); doc.setFont('helvetica', 'bold');
-  doc.setTextColor(balanced ? 16 : 239, balanced ? 185 : 68, balanced ? 129 : 68);
-  doc.text(balanced ? '✓ Bilan équilibré (Actif = Passif + Capitaux Propres)' : '✗ Bilan déséquilibré', 105, checkY, { align: 'center' });
+  /* === SINGLE FINAL TOTAL LINE (aligned horizontally) === */
+  const ty = Math.max(ly, ry) + 1;
+  /* left total */
+  doc.setFillColor(235, 240, 255); doc.rect(lx, ty - 2.5, cw, 6, 'F');
+  doc.setFontSize(9); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text('TOTAL ACTIFS', lx + 1.5, ty + 1.7);
+  doc.setFont('helvetica', 'bold');
+  doc.text(fmt(bs.assets.total), lx + cw - 1.5, ty + 1.7, { align: 'right' });
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.6);
+  doc.line(lx, ty + 3.5, lx + cw, ty + 3.5);
+  /* right total */
+  doc.setFillColor(235, 240, 255); doc.rect(rx, ty - 2.5, cw, 6, 'F');
+  doc.setFontSize(9); doc.setTextColor(26, 26, 46); doc.setFont('helvetica', 'bold');
+  doc.text('TOTAL PASSIFS & CP', rx + 1.5, ty + 1.7);
+  doc.setFont('helvetica', 'bold');
+  doc.text(fmt(bs.totalLiabilitiesAndEquity), rx + cw - 1.5, ty + 1.7, { align: 'right' });
+  doc.setDrawColor(26, 26, 46); doc.setLineWidth(0.6);
+  doc.line(rx, ty + 3.5, rx + cw, ty + 3.5);
 
   /* Footer */
   doc.setFontSize(6); doc.setTextColor(150); doc.setFont('helvetica', 'normal');
