@@ -54,7 +54,8 @@ import {
   calculateEstimatedTaxes, 
   calculateInvoiceTotals, 
   formatCurrencyHelper,
-  computeMonthlyChartData 
+  computeMonthlyChartData,
+  generateSimulatedData 
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
@@ -136,6 +137,13 @@ export default function App() {
     const ok = await handleUnlock(pin);
     return ok;
   }, [handleUnlock]);
+
+  const handleGenerateSimulatedData = useCallback(() => {
+    const data = generateSimulatedData();
+    setInvoices(data.invoices);
+    setExpenses(data.expenses);
+    setTransactions(data.transactions);
+  }, []);
 
   // Load specific company data when selected
   useEffect(() => {
@@ -459,6 +467,15 @@ export default function App() {
               >
                 <Sparkles className="w-3.5 h-3.5 shrink-0" />
                 <span className="hidden sm:inline">Audit</span>
+              </button>
+            )}
+            {(currentTab === 'dashboard' || currentTab === 'financial') && (
+              <button 
+                onClick={handleGenerateSimulatedData} 
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-amber-400 border border-amber-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
+              >
+                <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden sm:inline">Simuler</span>
               </button>
             )}
             <button 

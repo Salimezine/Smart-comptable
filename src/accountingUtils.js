@@ -398,7 +398,7 @@ export const generateSimulatedData = () => {
       clientName: `Client ${String.fromCharCode(65 + (i % 26))}`,
       clientVat: `1234567${String(i + 1).padStart(3, '0')}/${['A','M','B'][i % 3]}`,
       issueDate: `2026-${month}-15`,
-      dueDate: `2026-${month}-45`,
+      dueDate: `2026-${month}-${28 + (i % 3)}`,
       totalHT: Math.round(amount / 1.19),
       tvaAmount: Math.round(amount - amount / 1.19),
       totalAmount: amount,
