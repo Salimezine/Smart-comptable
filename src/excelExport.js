@@ -148,8 +148,6 @@ async function buildBilanSheet(wb, data) {
   L('  Mobilier & mat. bureau', bs.assets.nonCurrent.tangibleDetail.officeEquip, false, 1);
   L('Immobilisations corporelles', bs.assets.nonCurrent.tangible, true);
   L('Immobilisations financières', bs.assets.nonCurrent.financial, false);
-  T('Total Actifs Non Courants', bs.assets.nonCurrent.total);
-  r++;
 
   S('Actifs Courants', 1);
   L('  Marchandises', bs.assets.current.stockDetail.merchandise, false, 1);
@@ -161,8 +159,6 @@ async function buildBilanSheet(wb, data) {
   L('  Autres débiteurs', bs.assets.current.otherRec, false, 1);
   L('Banque', bs.assets.current.cashAndBank, false);
   L('  Caisse', bs.assets.current.cashRegister, false, 1);
-  T('Total Actifs Courants', bs.assets.current.total);
-  r++;
   const aEnd = r;
   T('TOTAL ACTIFS', bs.assets.total);
 
@@ -174,14 +170,10 @@ async function buildBilanSheet(wb, data) {
   LR('Réserves légales', bs.equity.legalReserve, false);
   LR('  Autres réserves', bs.equity.otherReserves, false, 1);
   LR('Résultat net de l\'exercice', bs.equity.retainedEarnings, false);
-  TR('Total Capitaux Propres', bs.equity.total);
-  r++;
 
   SR('Passifs Non Courants');
   LR('Emprunts bancaires', bs.liabilities.nonCurrent.bankLoans, false);
   LR('  Provisions', bs.liabilities.nonCurrent.provisions, false, 1);
-  TR('Total Passifs Non Courants', bs.liabilities.nonCurrent.total);
-  r++;
 
   SR('Passifs Courants');
   LR('Fournisseurs et comptes rattachés', bs.liabilities.current.accountsPayable, false);
@@ -190,8 +182,6 @@ async function buildBilanSheet(wb, data) {
   LR('État — TVA due', bs.liabilities.current.vatPayable, false);
   LR('  Autres dettes', bs.liabilities.current.otherPayables, false, 1);
   LR('  Concours bancaires', bs.liabilities.current.bankOverdraft, false, 1);
-  TR('Total Passifs Courants', bs.liabilities.current.total);
-  r++;
   TR('TOTAL PASSIFS & CAPITAUX PROPRES', bs.totalLiabilitiesAndEquity);
 
   // Control row

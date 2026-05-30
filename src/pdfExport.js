@@ -98,7 +98,6 @@ export function exportBalanceSheetPDF(data) {
   ly = trow(ly, lx, cw, '  Mobilier & matériel bureau', fmt(bs.assets.nonCurrent.tangibleDetail.officeEquip), { indent: 6, valClr: [110,110,110] });
   ly = trow(ly, lx, cw, 'Immobilisations corporelles', fmt(bs.assets.nonCurrent.tangible), { indent: 3 });
   ly = trow(ly, lx, cw, 'Immobilisations financières', fmt(bs.assets.nonCurrent.financial), { indent: 3 });
-  ly = trow(ly, lx, cw, 'Total Actifs Non Courants', fmt(bs.assets.nonCurrent.total), { total: true });
 
   ly = trow(ly, lx, cw, 'Actifs Courants', '', { section: true, valClr: [200,200,200] });
   ly = trow(ly, lx, cw, '  Marchandises', fmt(bs.assets.current.stockDetail.merchandise), { indent: 6, valClr: [110,110,110] });
@@ -110,8 +109,6 @@ export function exportBalanceSheetPDF(data) {
   ly = trow(ly, lx, cw, '  Autres débiteurs', fmt(bs.assets.current.otherRec), { indent: 6, valClr: [110,110,110] });
   ly = trow(ly, lx, cw, 'Banque', fmt(bs.assets.current.cashAndBank), { indent: 3 });
   ly = trow(ly, lx, cw, '  Caisse', fmt(bs.assets.current.cashRegister), { indent: 6, valClr: [110,110,110] });
-  ly = trow(ly, lx, cw, 'Total Actifs Courants', fmt(bs.assets.current.total), { total: true });
-  ly += 1;
   ly = trow(ly, lx, cw, 'TOTAL ACTIFS', fmt(bs.assets.total), { total: true });
 
   /* === RIGHT: PASSIFS & CAPITAUX PROPRES === */
@@ -121,12 +118,10 @@ export function exportBalanceSheetPDF(data) {
   ry = trow(ry, rx, cw, 'Réserves légales', fmt(bs.equity.legalReserve), { indent: 3 });
   ry = trow(ry, rx, cw, '  Autres réserves', fmt(bs.equity.otherReserves), { indent: 6, valClr: [110,110,110] });
   ry = trow(ry, rx, cw, 'Résultat net de l\'exercice', fmt(bs.equity.retainedEarnings), { indent: 3 });
-  ry = trow(ry, rx, cw, 'Total Capitaux Propres', fmt(bs.equity.total), { total: true });
 
   ry = trow(ry, rx, cw, 'Passifs Non Courants', '', { section: true, valClr: [200,200,200] });
   ry = trow(ry, rx, cw, 'Emprunts bancaires', fmt(bs.liabilities.nonCurrent.bankLoans), { indent: 3 });
   ry = trow(ry, rx, cw, '  Provisions', fmt(bs.liabilities.nonCurrent.provisions), { indent: 6, valClr: [110,110,110] });
-  ry = trow(ry, rx, cw, 'Total Passifs Non Courants', fmt(bs.liabilities.nonCurrent.total), { total: true });
 
   ry = trow(ry, rx, cw, 'Passifs Courants', '', { section: true, valClr: [200,200,200] });
   ry = trow(ry, rx, cw, 'Fournisseurs et comptes rattachés', fmt(bs.liabilities.current.accountsPayable), { indent: 3 });
@@ -135,8 +130,6 @@ export function exportBalanceSheetPDF(data) {
   ry = trow(ry, rx, cw, 'État — TVA due', fmt(bs.liabilities.current.vatPayable), { indent: 3 });
   ry = trow(ry, rx, cw, '  Autres dettes', fmt(bs.liabilities.current.otherPayables), { indent: 6, valClr: [110,110,110] });
   ry = trow(ry, rx, cw, '  Concours bancaires', fmt(bs.liabilities.current.bankOverdraft), { indent: 6, valClr: [110,110,110] });
-  ry = trow(ry, rx, cw, 'Total Passifs Courants', fmt(bs.liabilities.current.total), { total: true });
-  ry += 1;
   ry = trow(ry, rx, cw, 'TOTAL PASSIFS & CP', fmt(bs.totalLiabilitiesAndEquity), { total: true });
 
   /* Balance verification at bottom center */
