@@ -31,7 +31,7 @@ function drawFooter(doc, pageNum) {
   doc.setTextColor(150);
   const footerY = 290;
   doc.text('Ce document a été généré par Smart Comptable', MARGIN, footerY);
-  doc.text(`Généré le: ${new Date().toLocaleDateString('fr-TN')}`, MARGIN, footerY + 4);
+  const today = new Date();  doc.text(`Généré le: ${String(today.getDate()).padStart(2,'0')}/${String(today.getMonth()+1).padStart(2,'0')}/${today.getFullYear()}`, MARGIN, footerY + 4);
   doc.text(`Page ${pageNum}`, PAGE_W - MARGIN, footerY, { align: 'right' });
 }
 
@@ -60,6 +60,7 @@ export function exportBalanceSheetPDF(data) {
   const doc = new jsPDF();
   let y = 62;
   let page = 1;
+  const ccy = data.company.currency;
 
   drawHeader(doc, data, 'Bilan (État de la Situation Financière)');
 
@@ -71,9 +72,13 @@ export function exportBalanceSheetPDF(data) {
   doc.text('ACTIF', MARGIN, y);
   y += LINE_H + 2;
 
-  y = drawSectionRow(doc, y, 'Actifs Non Courants (Classe 2)', formatCurrencyHelper(data.balanceSheet.assets.nonCurrent, data.company.currency), { bold: false, color: [80] });
-  y = drawSectionRow(doc, y, 'Actifs Courants (Classe 3, 4, 5)', formatCurrencyHelper(data.balanceSheet.assets.current, data.company.currency), { bold: false, color: [80] });
-  y = drawSectionRow(doc, y, 'Total Actifs', formatCurrencyHelper(data.balanceSheet.assets.total, data.company.currency), { bold: true, color: [26, 26, 46], bg: [240, 240, 250] });
+  y = drawSectionRow(doc, y, 'Immobilisations incorporelles', formatCurrencyHelper(data.balanceSheet.assets.nonCurrent.intangible, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Immobilisations corporelles', formatCurrencyHelper(data.balanceSheet.assets.nonCurrent.tangible, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Actifs Non Courants (Classe 2)', formatCurrencyHelper(data.balanceSheet.assets.nonCurrent.total, ccy), { bold: true, color: [80] });
+  y = drawSectionRow(doc, y, 'Créances clients', formatCurrencyHelper(data.balanceSheet.assets.current.receivables, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Trésorerie', formatCurrencyHelper(data.balanceSheet.assets.current.cashAndBank, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Actifs Courants (Classe 3,4,5)', formatCurrencyHelper(data.balanceSheet.assets.current.total, ccy), { bold: true, color: [80] });
+  y = drawSectionRow(doc, y, 'Total Actifs', formatCurrencyHelper(data.balanceSheet.assets.total, ccy), { bold: true, color: [26, 26, 46], bg: [240, 240, 250] });
 
   y += 6;
   doc.setFontSize(11);
@@ -82,10 +87,16 @@ export function exportBalanceSheetPDF(data) {
   doc.text('PASSIF & CAPITAUX PROPRES', MARGIN, y);
   y += LINE_H + 2;
 
-  y = drawSectionRow(doc, y, 'Capitaux Propres (Classe 1)', formatCurrencyHelper(data.balanceSheet.equity, data.company.currency), { bold: false, color: [80] });
-  y = drawSectionRow(doc, y, 'Passifs Non Courants', formatCurrencyHelper(data.balanceSheet.liabilities.nonCurrent, data.company.currency), { bold: false, color: [80] });
-  y = drawSectionRow(doc, y, 'Passifs Courants', formatCurrencyHelper(data.balanceSheet.liabilities.current, data.company.currency), { bold: false, color: [80] });
-  y = drawSectionRow(doc, y, 'Total Passifs & Capitaux Propres', formatCurrencyHelper(data.balanceSheet.totalLiabilitiesAndEquity, data.company.currency), { bold: true, color: [26, 26, 46], bg: [240, 240, 250] });
+  y = drawSectionRow(doc, y, 'Capital social', formatCurrencyHelper(data.balanceSheet.equity.socialCapital, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Réserves légales', formatCurrencyHelper(data.balanceSheet.equity.legalReserve, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Résultat net', formatCurrencyHelper(data.balanceSheet.equity.retainedEarnings, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Capitaux Propres (Classe 1)', formatCurrencyHelper(data.balanceSheet.equity.total, ccy), { bold: true, color: [80] });
+  y = drawSectionRow(doc, y, 'Emprunts bancaires', formatCurrencyHelper(data.balanceSheet.liabilities.nonCurrent.bankLoans, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Passifs Non Courants', formatCurrencyHelper(data.balanceSheet.liabilities.nonCurrent.total, ccy), { bold: true, color: [80] });
+  y = drawSectionRow(doc, y, 'Dettes fournisseurs', formatCurrencyHelper(data.balanceSheet.liabilities.current.accountsPayable, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Dettes fiscales (IS)', formatCurrencyHelper(data.balanceSheet.liabilities.current.taxPayable, ccy), { bold: false, color: [100] });
+  y = drawSectionRow(doc, y, 'Passifs Courants', formatCurrencyHelper(data.balanceSheet.liabilities.current.total, ccy), { bold: true, color: [80] });
+  y = drawSectionRow(doc, y, 'Total Passifs & Capitaux Propres', formatCurrencyHelper(data.balanceSheet.totalLiabilitiesAndEquity, ccy), { bold: true, color: [26, 26, 46], bg: [240, 240, 250] });
 
   y += 8;
   doc.setFontSize(9);

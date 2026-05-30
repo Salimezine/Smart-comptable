@@ -43,7 +43,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               <FileText className="w-4 h-4" /> PDF
             </button>
             <button
-              onClick={() => exportToExcel(invoices, expenses, transactions, companyDetails)}
+              onClick={() => { exportToExcel(invoices, expenses, transactions, companyDetails).catch(console.error); }}
               className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors"
             >
               <FileSpreadsheet className="w-4 h-4" /> Excel
@@ -62,46 +62,73 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </span>
           </div>
 
-          <div className="space-y-6">
-            {/* Actif */}
-            <div>
-              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Actifs (Emplois)</h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between py-2 border-b border-slate-800/50">
-                  <span className="text-slate-300">Actifs Non Courants (Classe 2)</span>
-                  <span className="font-semibold">{formatCurrency(balanceData.assets.nonCurrent)}</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-slate-800/50">
-                  <span className="text-slate-300">Actifs Courants (Classe 3, 4, 5)</span>
-                  <span className="font-semibold">{formatCurrency(balanceData.assets.current)}</span>
-                </div>
-                <div className="flex justify-between py-2 bg-slate-800/20 rounded-lg px-2 mt-2">
-                  <span className="font-bold text-brand-300">Total Actifs</span>
-                  <span className="font-extrabold text-brand-400">{formatCurrency(balanceData.assets.total)}</span>
-                </div>
+          {/* Actif */}
+          <div>
+            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Actifs (Emplois)</h4>
+            <div className="text-sm space-y-1 mb-3">
+              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations incorporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.intangible)}</span></div>
+              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations corporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.tangible)}</span></div>
+            </div>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Actifs Non Courants (Classe 2)</span>
+                <span className="font-semibold">{formatCurrency(balanceData.assets.nonCurrent.total)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Créances clients</span>
+                <span className="font-semibold">{formatCurrency(balanceData.assets.current.receivables)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Trésorerie</span>
+                <span className="font-semibold">{formatCurrency(balanceData.assets.current.cashAndBank)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Actifs Courants (Classe 3, 4, 5)</span>
+                <span className="font-semibold">{formatCurrency(balanceData.assets.current.total)}</span>
+              </div>
+              <div className="flex justify-between py-2 bg-slate-800/20 rounded-lg px-2 mt-2">
+                <span className="font-bold text-brand-300">Total Actifs</span>
+                <span className="font-extrabold text-brand-400">{formatCurrency(balanceData.assets.total)}</span>
               </div>
             </div>
+          </div>
 
-            {/* Passif et Capitaux Propres */}
-            <div>
-              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Passifs & Capitaux Propres (Ressources)</h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between py-2 border-b border-slate-800/50">
-                  <span className="text-slate-300">Capitaux Propres (Classe 1)</span>
-                  <span className="font-semibold">{formatCurrency(balanceData.equity)}</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-slate-800/50">
-                  <span className="text-slate-300">Passifs Non Courants</span>
-                  <span className="font-semibold">{formatCurrency(balanceData.liabilities.nonCurrent)}</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-slate-800/50">
-                  <span className="text-slate-300">Passifs Courants</span>
-                  <span className="font-semibold">{formatCurrency(balanceData.liabilities.current)}</span>
-                </div>
-                <div className="flex justify-between py-2 bg-slate-800/20 rounded-lg px-2 mt-2">
-                  <span className="font-bold text-brand-300">Total Passifs & Capitaux</span>
-                  <span className="font-extrabold text-brand-400">{formatCurrency(balanceData.totalLiabilitiesAndEquity)}</span>
-                </div>
+          {/* Passif et Capitaux Propres */}
+          <div>
+            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Passifs & Capitaux Propres (Ressources)</h4>
+            <div className="text-sm space-y-1 mb-3">
+              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Capital social</span><span>{formatCurrency(balanceData.equity.socialCapital)}</span></div>
+              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Réserves légales</span><span>{formatCurrency(balanceData.equity.legalReserve)}</span></div>
+              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Résultat net</span><span>{formatCurrency(balanceData.equity.retainedEarnings)}</span></div>
+            </div>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Capitaux Propres (Classe 1)</span>
+                <span className="font-semibold">{formatCurrency(balanceData.equity.total)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Emprunts bancaires</span>
+                <span className="font-semibold">{formatCurrency(balanceData.liabilities.nonCurrent.bankLoans)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Passifs Non Courants</span>
+                <span className="font-semibold">{formatCurrency(balanceData.liabilities.nonCurrent.total)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Dettes fournisseurs</span>
+                <span className="font-semibold">{formatCurrency(balanceData.liabilities.current.accountsPayable)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Dettes fiscales (IS)</span>
+                <span className="font-semibold">{formatCurrency(balanceData.liabilities.current.taxPayable)}</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800/50">
+                <span className="text-slate-300">Passifs Courants</span>
+                <span className="font-semibold">{formatCurrency(balanceData.liabilities.current.total)}</span>
+              </div>
+              <div className="flex justify-between py-2 bg-slate-800/20 rounded-lg px-2 mt-2">
+                <span className="font-bold text-brand-300">Total Passifs & Capitaux</span>
+                <span className="font-extrabold text-brand-400">{formatCurrency(balanceData.totalLiabilitiesAndEquity)}</span>
               </div>
             </div>
           </div>
