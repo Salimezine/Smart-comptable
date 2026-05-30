@@ -56,7 +56,8 @@ import {
   formatCurrencyHelper,
   computeMonthlyChartData 
 } from './accountingUtils';
-import { scanReceiptWithGemini, fileToBase64, analyzeDashboardWithGemini, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
+import { scanReceiptWithGemini, fileToBase64, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
+import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
@@ -271,22 +272,14 @@ export default function App() {
     setExpenses([newExp, ...expenses]);
   };
 
-  const handleRequestAudit = async () => {
+  const handleRequestAudit = () => {
     setAdvisorModalOpen(true);
     setAdvisorLoading(true);
     setAdvisorReport('');
     try {
-      const dashboardData = {
-        totalRevenues,
-        pendingRevenues,
-        totalExpenses,
-        bankBalance,
-        estimatedTaxes,
-        recentInvoices: invoices.slice(0, 5),
-        recentExpenses: expenses.slice(0, 5)
-      };
-      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey, dashboardData);
-      setAdvisorReport(report);
+      const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
+      const md = generateAuditMarkdown(result);
+      setAdvisorReport(md);
     } catch (err) {
       setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
     } finally {
@@ -528,8 +521,6 @@ export default function App() {
                 setInvoices={setInvoices}
                 currentTab={currentTab}
                 setCurrentTab={setCurrentTab}
-                handleRequestAudit={handleRequestAudit}
-                analyzeDashboardWithGemini={analyzeDashboardWithGemini}
                 companyDetails={companyDetails}
               />
             )}
@@ -584,7 +575,7 @@ export default function App() {
               {advisorLoading ? (
                 <div className="flex flex-col items-center justify-center py-12 space-y-4">
                   <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
-                  <p className="text-slate-400 font-medium animate-pulse">Analyse de vos flux de trésorerie et provisions IS/CNSS en cours...</p>
+                  <p className="text-slate-400 font-medium animate-pulse">Analyse locale de vos flux comptables en cours...</p>
                 </div>
               ) : (
                 <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{advisorReport}</ReactMarkdown>
@@ -2363,8 +2354,7 @@ function WorkflowView({
   invoices, 
   formatCurrency, 
   companyDetails, 
-  setCurrentTab, 
-  analyzeDashboardWithGemini 
+  setCurrentTab
 }) {
   const [activeStep, setActiveStep] = useState(0);
   const [payrollBase, setPayrollBase] = useState(4800);
@@ -2391,18 +2381,10 @@ function WorkflowView({
     setGeneratingAudit(true);
     setAuditReport('');
     try {
-      const dashboardData = {
-        totalRevenues,
-        pendingRevenues: invoices.reduce((acc, inv) => acc + (inv.status === 'PENDING' ? inv.total : 0), 0),
-        totalExpenses,
-        bankBalance: totalRevenues - totalExpenses,
-        estimatedTaxes: estimatedIS,
-        recentInvoices: invoices.slice(0, 5),
-        recentExpenses: expenses.slice(0, 5)
-      };
-      const report = await analyzeDashboardWithGemini(companyDetails.geminiApiKey || "local", dashboardData);
-      setAuditReport(report);
-      setActiveStep(4); // aller à l'étape finale
+      const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
+      const md = generateAuditMarkdown(result);
+      setAuditReport(md);
+      setActiveStep(4);
     } catch (e) {
       setAuditReport("❌ Erreur d'audit : " + e.message);
     } finally {

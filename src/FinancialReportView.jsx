@@ -1,14 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel, exportBilanExcel, exportResultatExcel } from './excelExport';
-import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit } from 'lucide-react';
+
+const CUSTOM_DATA_KEY = 'sc_bilan_custom_data';
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency }) {
   const [period, setPeriod] = useState('N');
+  const [editing, setEditing] = useState(false);
+  const [customData, setCustomData] = useState(() => {
+    try {
+      const raw = localStorage.getItem(CUSTOM_DATA_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch {}
+    return {};
+  });
 
-  const balanceData = generateBalanceSheet(invoices, expenses, transactions);
+  useEffect(() => {
+    localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(customData));
+  }, [customData]);
+
+  const balanceData = generateBalanceSheet(invoices, expenses, transactions, customData);
   const incomeData = generateIncomeStatement(invoices, expenses);
+
+  const updateCustom = (key, val) => {
+    const v = parseFloat(val);
+    setCustomData(prev => ({ ...prev, [key]: isNaN(v) ? undefined : v }));
+  };
 
   return (
     <div className="space-y-6 max-w-6xl mx-auto pb-12 animate-fade-in">
@@ -20,7 +39,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             États Financiers Annuels
           </h2>
           <p className="text-xs text-slate-400 mt-1">
-            Conforme au Système Comptable des Entreprises (SCE) - Tunisie. Données indicatives.
+            Conforme au Système Comptable des Entreprises (SCE) - Tunisie. Cliquez sur <Edit className="w-3 h-3 inline" /> pour modifier les valeurs estimées.
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -57,17 +76,43 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         <div className="glass-card p-6 rounded-2xl border border-slate-800 shadow-card">
           <div className="flex items-center justify-between mb-6 border-b border-slate-800 pb-3">
             <h3 className="text-lg font-bold text-slate-100">Bilan (État de la situation financière)</h3>
-            <span className="text-[10px] font-bold px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">
-              ACTIF / PASSIF
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] font-bold px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">
+                ACTIF / PASSIF
+              </span>
+              <button onClick={() => setEditing(!editing)} className="text-slate-400 hover:text-brand-400 transition-colors p-1">
+                <Edit className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           {/* Actif */}
           <div>
             <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Actifs (Emplois)</h4>
             <div className="text-sm space-y-1 mb-3">
-              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations incorporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.intangible)}</span></div>
-              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations corporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.tangible)}</span></div>
+              {editing ? (
+                <>
+                  <div className="flex items-center justify-between py-1.5 px-2 text-slate-400 text-xs">
+                    <span>Immobilisations incorporelles</span>
+                    <input type="number" step="0.001"
+                      value={customData.immobilisationsIncorporelles ?? balanceData.assets.nonCurrent.intangible}
+                      onChange={(e) => updateCustom('immobilisationsIncorporelles', e.target.value)}
+                      className="w-28 text-right bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-slate-100 focus:outline-none focus:border-brand-500 text-xs" />
+                  </div>
+                  <div className="flex items-center justify-between py-1.5 px-2 text-slate-400 text-xs">
+                    <span>Immobilisations corporelles</span>
+                    <input type="number" step="0.001"
+                      value={customData.immobilisationsCorporelles ?? balanceData.assets.nonCurrent.tangible}
+                      onChange={(e) => updateCustom('immobilisationsCorporelles', e.target.value)}
+                      className="w-28 text-right bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-slate-100 focus:outline-none focus:border-brand-500 text-xs" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations incorporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.intangible)}</span></div>
+                  <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Immobilisations corporelles</span><span>{formatCurrency(balanceData.assets.nonCurrent.tangible)}</span></div>
+                </>
+              )}
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between py-2 border-b border-slate-800/50">
@@ -97,9 +142,30 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <div>
             <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Passifs & Capitaux Propres (Ressources)</h4>
             <div className="text-sm space-y-1 mb-3">
-              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Capital social</span><span>{formatCurrency(balanceData.equity.socialCapital)}</span></div>
-              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Réserves légales</span><span>{formatCurrency(balanceData.equity.legalReserve)}</span></div>
-              <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Résultat net</span><span>{formatCurrency(balanceData.equity.retainedEarnings)}</span></div>
+              {editing ? (
+                <>
+                  <div className="flex items-center justify-between py-1.5 px-2 text-slate-400 text-xs">
+                    <span>Capital social</span>
+                    <input type="number" step="0.001"
+                      value={customData.capitalSocial ?? balanceData.equity.socialCapital}
+                      onChange={(e) => updateCustom('capitalSocial', e.target.value)}
+                      className="w-28 text-right bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-slate-100 focus:outline-none focus:border-brand-500 text-xs" />
+                  </div>
+                  <div className="flex items-center justify-between py-1.5 px-2 text-slate-400 text-xs">
+                    <span>Emprunts bancaires</span>
+                    <input type="number" step="0.001"
+                      value={customData.empruntsBancaires ?? balanceData.liabilities.nonCurrent.bankLoans}
+                      onChange={(e) => updateCustom('empruntsBancaires', e.target.value)}
+                      className="w-28 text-right bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-slate-100 focus:outline-none focus:border-brand-500 text-xs" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Capital social</span><span>{formatCurrency(balanceData.equity.socialCapital)}</span></div>
+                  <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Réserves légales</span><span>{formatCurrency(balanceData.equity.legalReserve)}</span></div>
+                  <div className="flex justify-between py-1.5 px-2 text-slate-400 text-xs"><span>Résultat net</span><span>{formatCurrency(balanceData.equity.retainedEarnings)}</span></div>
+                </>
+              )}
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between py-2 border-b border-slate-800/50">

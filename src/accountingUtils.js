@@ -118,40 +118,38 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
 /**
  * Génère les données du Bilan (Balance Sheet) avec détail SCE
  */
-export const generateBalanceSheet = (invoices = [], expenses = [], transactions = []) => {
+export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
-  const paidRevenue = calculateTotalRevenues(invoices);
   const pendingRevenue = calculatePendingRevenues(invoices);
   const totalExpenses = calculateTotalExpenses(expenses);
   const bankBalance = calculateBankBalance(0, transactions);
   const netProfit = totalRevenue - totalExpenses;
   const estimatedTax = netProfit > 0 ? Math.round((netProfit * 0.15) * 1000) / 1000 : 0;
 
-  const annualRevenue = Math.max(totalRevenue, 1);
+  /* --- User-editable values (with defaults) --- */
+  const intangibleAssets = Math.round((customData.immobilisationsIncorporelles ?? Math.min(totalRevenue * 0.08, 15000)) * 1000) / 1000;
+  const tangibleAssets = Math.round((customData.immobilisationsCorporelles ?? Math.min(totalRevenue * 0.25, 50000)) * 1000) / 1000;
+  const socialCapital = Math.round((customData.capitalSocial ?? Math.min(Math.max(totalRevenue * 0.20, 5000), 30000)) * 1000) / 1000;
+  const bankLoans = Math.round((customData.empruntsBancaires ?? Math.min(totalRevenue * 0.15, 25000)) * 1000) / 1000;
 
-  const intangibleAssets = Math.round(Math.min(annualRevenue * 0.08, 15000) * 1000) / 1000;
-  const tangibleAssets = Math.round(Math.min(annualRevenue * 0.25, 50000) * 1000) / 1000;
-  const nonCurrentAssets = Math.round((intangibleAssets + tangibleAssets) * 1000) / 1000;
-
+  /* --- Computed values (from invoices/expenses) --- */
   const receivables = Math.round(pendingRevenue * 1000) / 1000;
   const cashAndBank = Math.round(bankBalance * 1000) / 1000;
-  const currentAssets = Math.round((receivables + cashAndBank) * 1000) / 1000;
-
-  const totalAssets = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
-
-  const socialCapital = Math.round(Math.min(annualRevenue * 0.20, 30000) * 1000) / 1000;
   const legalReserve = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
   const retainedEarnings = Math.round(netProfit * 1000) / 1000;
-  const equity = Math.round((socialCapital + legalReserve + retainedEarnings) * 1000) / 1000;
-
-  const bankLoans = Math.round(Math.min(annualRevenue * 0.15, 25000) * 1000) / 1000;
-  const nonCurrentLiabilities = bankLoans;
-
   const accountsPayable = Math.round(totalExpenses * 0.5 * 1000) / 1000;
   const taxPayable = estimatedTax;
   const otherPayables = Math.round(Math.max(totalExpenses * 0.1, 500) * 1000) / 1000;
-  const currentLiabilities = Math.round((accountsPayable + taxPayable + otherPayables) * 1000) / 1000;
 
+  /* --- Totals --- */
+  const nonCurrentAssets = Math.round((intangibleAssets + tangibleAssets) * 1000) / 1000;
+  const currentAssets = Math.round((receivables + cashAndBank) * 1000) / 1000;
+  const totalAssets = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
+
+  const equity = Math.round((socialCapital + legalReserve + retainedEarnings) * 1000) / 1000;
+
+  const nonCurrentLiabilities = bankLoans;
+  const currentLiabilities = Math.round((accountsPayable + taxPayable + otherPayables) * 1000) / 1000;
   const totalLiabilities = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
   const totalLiabilitiesAndEquity = Math.round((equity + totalLiabilities) * 1000) / 1000;
 
