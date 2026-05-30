@@ -125,6 +125,11 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
 
 /**
  * Génère les données du Bilan (Balance Sheet) avec détail SCE
+ *
+ * Architecture « Passif maître » :
+ *   1. TOTAL PASSIF = Somme(Capitaux Propres) + Somme(Passifs Non Courants) + Somme(Passifs Courants)
+ *   2. Banque = TOTAL PASSIF − Somme(tous les autres éléments de l'Actif)
+ *   3. TOTAL ACTIFS = TOTAL PASSIF (équilibre automatique, zéro ajustement)
  */
 export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}, incomeStatement = null) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
@@ -132,25 +137,23 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const totalExpenses = calculateTotalExpenses(expenses);
   const bankBalance = calculateBankBalance(0, transactions);
 
-  /* Use income statement data if available, otherwise compute independently */
   const is = incomeStatement || generateIncomeStatement(invoices, expenses);
   const netProfit = is.netProfit;
   const estimatedTax = is.tax;
 
-  /* Convert to MDT (Millions de Dinars) */
   const R = Math.max(totalRevenue / 1000, 1);
   const E = Math.max(totalExpenses / 1000, 1);
   const PR = Math.max(pendingRevenue / 1000, 0);
   const BB = Math.max(bankBalance / 1000, 0);
 
-  /* --- User-editable values (with auto defaults) --- */
+  /* --- User-editable values --- */
   const intangibleAssets    = Math.round((customData.immobilisationsIncorporelles ?? Math.min(R * 0.08, 15)) * 1000) / 1000;
   const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50)) * 1000) / 1000;
   const socialCapital       = Math.round((customData.capitalSocial ?? Math.min(Math.max(R * 0.20, 5), 30)) * 1000) / 1000;
   const bankLoans           = Math.round((customData.empruntsBancaires ?? Math.min(R * 0.15, 25)) * 1000) / 1000;
   const stocksAmount        = Math.round((customData.stocks ?? E * 0.10) * 1000) / 1000;
 
-  /* --- Sub-items (estimated from data) --- */
+  /* --- Sub-items --- */
   const devCosts      = Math.round(intangibleAssets * 0.3 * 1000) / 1000;
   const patents       = Math.round(intangibleAssets * 0.4 * 1000) / 1000;
   const goodwill      = Math.round(intangibleAssets * 0.3 * 1000) / 1000;
@@ -160,28 +163,23 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const transport     = Math.round(tangibleAssets * 0.1 * 1000) / 1000;
   const officeEquip   = Math.round(tangibleAssets * 0.1 * 1000) / 1000;
   const financialAssets = Math.round(R * 0.03 * 1000) / 1000;
-
   const merchandise   = Math.round(stocksAmount * 0.5 * 1000) / 1000;
   const rawMaterials  = Math.round(stocksAmount * 0.5 * 1000) / 1000;
-
   const receivables   = Math.round(PR * 1000) / 1000;
   const personnelRec  = Math.round(E * 0.03 * 1000) / 1000;
   const taxRec        = Math.round(R * 0.02 * 1000) / 1000;
   const otherRec      = Math.round(R * 0.01 * 1000) / 1000;
-  let cashAndBank   = Math.round(BB * 1000) / 1000;
-  let cashRegister  = Math.round(Math.max(cashAndBank * 0.05, 0.050) * 1000) / 1000;
 
-  const nonCurrentAssets  = Math.round((intangibleAssets + tangibleAssets + financialAssets) * 1000) / 1000;
-  let currentAssets     = Math.round((stocksAmount + receivables + personnelRec + taxRec + otherRec + cashAndBank + cashRegister) * 1000) / 1000;
-  let totalAssets       = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
+  /* Caisse = estimation initiale (petite fraction des flux, figée une fois pour toutes) */
+  const initialCashEstimate = Math.round(BB * 1000) / 1000;
+  const cashRegister = Math.round(Math.max(initialCashEstimate * 0.05, 0.050) * 1000) / 1000;
 
-  /* --- Equity --- */
+  /* --- STEP 1 : Calcul du TOTAL PASSIF (valeur maître) --- */
   const legalReserve      = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
   const otherReserves     = Math.round(Math.max(netProfit * 0.03, 0) * 1000) / 1000;
   const retainedEarnings  = Math.round(netProfit * 1000) / 1000;
   const equity            = Math.round((socialCapital + legalReserve + otherReserves + retainedEarnings) * 1000) / 1000;
 
-  /* --- Liabilities --- */
   const provisions        = Math.round(R * 0.02 * 1000) / 1000;
   const nonCurrentLiabilities = Math.round((bankLoans + provisions) * 1000) / 1000;
 
@@ -190,20 +188,24 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const taxPayable        = estimatedTax;
   const vatPayable        = Math.round(R * 0.06 * 1000) / 1000;
   const otherPayables     = Math.round(Math.max(E * 0.05, 0.200) * 1000) / 1000;
-  const bankOverdraft     = Math.round(Math.max(currentAssets * (-0.05), 0) * 1000) / 1000;
+  const bankOverdraft     = 0;  /* avec l'équilibre actif/passif automatique, le découvert est nul */
   const currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
 
-  const totalLiabilities              = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
-  let totalLiabilitiesAndEquity     = Math.round((equity + totalLiabilities) * 1000) / 1000;
+  const totalLiabilities  = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
+  const totalPassif       = Math.round((equity + totalLiabilities) * 1000) / 1000;
+  /* totalPassif = totalLiabilitiesAndEquity (coffre fort du bilan) */
 
-  /* --- Balancing: adjust Banque to force Actif = Passif + CP --- */
-  const balDiff = Math.round((totalAssets - totalLiabilitiesAndEquity) * 1000) / 1000;
-  if (Math.abs(balDiff) > 0.001) {
-    cashAndBank = Math.round((cashAndBank - balDiff) * 1000) / 1000;
-    currentAssets = Math.round((currentAssets - balDiff) * 1000) / 1000;
-    totalAssets = Math.round((totalAssets - balDiff) * 1000) / 1000;
-    totalLiabilitiesAndEquity = totalAssets;
-  }
+  /* --- STEP 2 : Somme de l'Actif hors Banque --- */
+  const nonCurrentAssets  = Math.round((intangibleAssets + tangibleAssets + financialAssets) * 1000) / 1000;
+  const autresActifsCourants = Math.round((stocksAmount + receivables + personnelRec + taxRec + otherRec + cashRegister) * 1000) / 1000;
+  const sommeActifSaufBanque = Math.round((nonCurrentAssets + autresActifsCourants) * 1000) / 1000;
+
+  /* --- STEP 3 : Banque = TOTAL PASSIF − Σ(autres Actifs) --- */
+  const cashAndBank = Math.round((totalPassif - sommeActifSaufBanque) * 1000) / 1000;
+
+  /* --- STEP 4 : Totaux Actif (automatiquement = totalPassif) --- */
+  const currentAssets = Math.round((autresActifsCourants + cashAndBank) * 1000) / 1000;
+  const totalAssets   = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
 
   return {
     assets: {
@@ -252,7 +254,7 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
       retainedEarnings,
       total: equity
     },
-    totalLiabilitiesAndEquity
+    totalLiabilitiesAndEquity: totalPassif
   };
 };
 
