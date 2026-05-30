@@ -116,52 +116,45 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
 };
 
 /**
- * Génère les données simplifiées du Bilan (Balance Sheet)
+ * Génère les données du Bilan (Balance Sheet) avec détail SCE
  */
 export const generateBalanceSheet = (invoices = [], expenses = [], transactions = []) => {
-  const bankBalance = calculateBankBalance(0, transactions); // Trésorerie
-  const pendingInvoices = calculatePendingRevenues(invoices); // Créances clients (Courant)
+  const bankBalance = calculateBankBalance(0, transactions);
+  const pendingInvoices = calculatePendingRevenues(invoices);
   const paidInvoices = calculateTotalRevenues(invoices);
   const totalExpenses = calculateTotalExpenses(expenses);
-  
-  // Actif (Assets)
-  const currentAssets = bankBalance + pendingInvoices;
-  const nonCurrentAssets = 0; // Simplifié pour cette démo
-  const totalAssets = currentAssets + nonCurrentAssets;
+  const estimatedTax = calculateEstimatedTaxes(paidInvoices);
 
-  // Passif et Capitaux Propres (Liabilities & Equity)
-  const currentLiabilities = 0; // Ex: Dettes fournisseurs, impôts à payer
-  const nonCurrentLiabilities = 0; // Ex: Emprunts
-  const totalLiabilities = currentLiabilities + nonCurrentLiabilities;
-  
-  // Capitaux propres = Actif - Passif (pour équilibrer)
-  const equity = totalAssets - totalLiabilities;
+  const currentAssets = Math.round((bankBalance + pendingInvoices) * 1000) / 1000;
+  const nonCurrentAssets = 0;
+  const totalAssets = Math.round((currentAssets + nonCurrentAssets) * 1000) / 1000;
+
+  const taxPayable = estimatedTax > 0 ? Math.round(estimatedTax * 1000) / 1000 : 0;
+  const currentLiabilities = Math.round((totalExpenses * 0.3) * 1000) / 1000;
+  const nonCurrentLiabilities = 0;
+  const totalLiabilities = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
+
+  const equity = Math.round((totalAssets - totalLiabilities) * 1000) / 1000;
 
   return {
     assets: { current: currentAssets, nonCurrent: nonCurrentAssets, total: totalAssets },
     liabilities: { current: currentLiabilities, nonCurrent: nonCurrentLiabilities, total: totalLiabilities },
     equity: equity,
-    totalLiabilitiesAndEquity: totalLiabilities + equity
+    totalLiabilitiesAndEquity: Math.round((totalLiabilities + equity) * 1000) / 1000
   };
 };
 
 /**
- * Génère les données simplifiées de l'État de Résultat (Income Statement)
+ * Génère les données de l'État de Résultat (Income Statement) SCE
  */
 export const generateIncomeStatement = (invoices = [], expenses = []) => {
-  // Produits d'exploitation
-  const operatingRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.subtotal) || 0), 0);
-  
-  // Charges d'exploitation
-  const operatingExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.subtotal) || 0), 0);
-  
+  const operatingRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
+  const operatingExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.totalAmount) || 0), 0);
   const operatingProfit = operatingRevenue - operatingExpenses;
-  
   const financialRevenue = 0;
   const financialExpenses = 0;
   const ordinaryProfit = operatingProfit + financialRevenue - financialExpenses;
-  
-  const taxAmount = calculateEstimatedTaxes(operatingRevenue); // Approximation (normalement sur le bénéfice)
+  const taxAmount = calculateEstimatedTaxes(ordinaryProfit > 0 ? ordinaryProfit : 0);
   const netProfit = ordinaryProfit - taxAmount;
 
   return {
@@ -172,5 +165,65 @@ export const generateIncomeStatement = (invoices = [], expenses = []) => {
     ordinaryProfit: ordinaryProfit,
     tax: taxAmount,
     netProfit: netProfit
+  };
+};
+
+/**
+ * Calcule 8 ratios financiers clés
+ */
+export const calculateFinancialRatios = (invoices = [], expenses = [], transactions = []) => {
+  const bs = generateBalanceSheet(invoices, expenses, transactions);
+  const is = generateIncomeStatement(invoices, expenses);
+
+  const currentAssets = bs.assets.current;
+  const currentLiabilities = bs.liabilities.current;
+  const totalAssets = bs.assets.total;
+  const equity = bs.equity;
+  const totalLiabilities = bs.liabilities.total;
+  const netProfit = is.netProfit;
+  const revenue = is.revenue;
+  const operatingProfit = is.operatingProfit;
+  const operatingExpenses = is.operatingExpenses;
+
+  const liquidityRatio = currentLiabilities > 0 ? Math.round((currentAssets / currentLiabilities) * 100) / 100 : 0;
+  const debtToEquity = equity !== 0 ? Math.round((totalLiabilities / equity) * 100) / 100 : 0;
+  const roe = equity !== 0 ? Math.round((netProfit / equity) * 10000) / 100 : 0;
+  const roa = totalAssets !== 0 ? Math.round((netProfit / totalAssets) * 10000) / 100 : 0;
+  const netMargin = revenue !== 0 ? Math.round((netProfit / revenue) * 10000) / 100 : 0;
+  const grossMargin = revenue !== 0 ? Math.round(((revenue - operatingExpenses) / revenue) * 10000) / 100 : 0;
+  const financialAutonomy = totalAssets !== 0 ? Math.round((equity / totalAssets) * 10000) / 100 : 0;
+  const interestCoverage = 0;
+
+  return {
+    liquidityRatio,
+    debtToEquity,
+    roe,
+    roa,
+    netMargin,
+    grossMargin,
+    financialAutonomy,
+    interestCoverage
+  };
+};
+
+/**
+ * Retourne toutes les données financières structurées pour export
+ */
+export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}) => {
+  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions);
+  const incomeStatement = generateIncomeStatement(invoices, expenses);
+  const ratios = calculateFinancialRatios(invoices, expenses, transactions);
+
+  return {
+    company: {
+      name: companyDetails.name || 'N/A',
+      mf: companyDetails.vatNumber || 'N/A',
+      address: companyDetails.address || 'N/A',
+      currency: companyDetails.currency || 'TND'
+    },
+    balanceSheet,
+    incomeStatement,
+    ratios,
+    generatedAt: new Date().toISOString()
   };
 };

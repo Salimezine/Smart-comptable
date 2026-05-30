@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { generateBalanceSheet, generateIncomeStatement } from './accountingUtils';
-import { CheckCheck, TrendingUp, TrendingDown, DollarSign, Calendar } from 'lucide-react';
+import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData } from './accountingUtils';
+import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
+import { exportToExcel, exportBilanExcel, exportResultatExcel } from './excelExport';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet } from 'lucide-react';
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency }) {
   const [period, setPeriod] = useState('N');
@@ -33,6 +35,20 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <option value="N">Exercice en cours (N)</option>
             <option value="N-1">Exercice Précédent (N-1)</option>
           </select>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails))}
+              className="flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors"
+            >
+              <FileText className="w-4 h-4" /> PDF
+            </button>
+            <button
+              onClick={() => exportToExcel(invoices, expenses, transactions, companyDetails)}
+              className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors"
+            >
+              <FileSpreadsheet className="w-4 h-4" /> Excel
+            </button>
+          </div>
         </div>
       </div>
 
