@@ -17,6 +17,11 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build -- --base=/Smart-comptable/
+      - name: Debug build output
+        run: |
+          echo "HEAD: $(git rev-parse HEAD)"
+          echo "Files in dist/:"
+          ls -la dist/assets/
       - name: Deploy to gh-pages branch
         run: |
           mkdir -p $HOME/deploy
