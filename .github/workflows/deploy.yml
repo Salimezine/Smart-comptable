@@ -20,8 +20,12 @@ jobs:
       - name: Debug build output
         run: |
           echo "HEAD: $(git rev-parse HEAD)"
-          echo "Files in dist/:"
-          ls -la dist/assets/
+          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
+          echo "SHA: ${{ github.sha }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "src files:"; ls -la src/*.jsx src/*.js src/*.css 2>/dev/null || true
+          echo "vite config:"; cat vite.config.js
+          echo "dist files:"; ls -la dist/assets/
       - name: Deploy to gh-pages branch
         run: |
           mkdir -p $HOME/deploy
