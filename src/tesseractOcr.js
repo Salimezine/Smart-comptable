@@ -56,7 +56,14 @@ function detectDate(text) {
 }
 
 function detectInvoiceNumber(text) {
-  const patterns = [/N[°o]\s*[:\s]*([A-Z0-9\-/]{4,})/i, /Facture\s*N[°o]?\s*[:\s]*([A-Z0-9\-/]{4,})/i, /FAC\s*[:\s]*([A-Z0-9\-/]{4,})/i, /INV\s*[:\s]*([A-Z0-9\-/]{4,})/i, /(\d{4})[-\/](\d{3,6})/];
+  const patterns = [
+    /([A-Z]{2}\d{2}[A-Z]{2}\d{3,})/,
+    /N[°o]\s*[:\s]*([A-Z0-9\-/]{4,})/i,
+    /Facture\s*N[°o]?\s*[:\s]*([A-Z0-9\-/]{4,})/i,
+    /FAC\s*[:\s]*([A-Z0-9\-/]{4,})/i,
+    /INV\s*[:\s]*([A-Z0-9\-/]{4,})/i,
+    /(\d{4})[-\/](\d{3,6})/,
+  ];
   for (const p of patterns) {
     const m = p.exec(text);
     if (m) return m[1] || m[0];
@@ -71,10 +78,28 @@ function detectMontant(regex, text) {
   return toNumber(val);
 }
 
+function detectLignes(text) {
+  const lignes = [];
+  const regex = /(.{3,40}?)\s+(\d{1,3}(?:[\s.,]\d{3})*[\s.,]\d{3})\s+(\d+)\s+(\d{1,3}(?:[\s.,]\d{3})*[\s.,]\d{3})/gi;
+  let m;
+  while ((m = regex.exec(text)) !== null) {
+    const designation = m[1].trim();
+    if (/^(total|tva|ht|ttc|net|timbre|fodec|retenue|remise|taux)/i.test(designation)) continue;
+    const pu = parseFloat(String(m[2]).replace(/[\s,]/g, '').replace(',', '.'));
+    const qte = parseInt(m[3]);
+    const total = parseFloat(String(m[4]).replace(/[\s,]/g, '').replace(',', '.'));
+    if (!isNaN(pu) && !isNaN(qte) && !isNaN(total) && designation.length > 2) {
+      lignes.push({ designation, prix_unitaire: Math.round(pu * 1000) / 1000, quantite: qte, total_ligne: Math.round(total * 1000) / 1000 });
+    }
+  }
+  return lignes.slice(0, 20);
+}
+
 export function parseFactureText(text) {
   const fournisseur = detectFournisseur(text);
   const date = detectDate(text);
   const numero_facture = detectInvoiceNumber(text);
+  const lignes = detectLignes(text);
 
   const montant_ttc = detectMontant(/(?:Total\s+TTC|Net\s+[àa]\s+payer|Montant\s+TTC|TOTAL\s+TTC|TOTAL)\s*:?\s*(\d{1,3}(?:[\s.,]\d{3})*[\s.,]\d{3})/gi, text);
   const montant_ht = detectMontant(/(?:Montant\s+HT|Total\s+HT|Hors\s+[Tt]axe|H\.T)\s*:?\s*(\d{1,3}(?:[\s.,]\d{3})*[\s.,]\d{3})/gi, text);
@@ -91,10 +116,12 @@ export function parseFactureText(text) {
     fournisseur,
     date,
     numero_facture: numero_facture || '',
+    lignes,
     montant_ht,
     tva,
     montant_ttc,
     taux_tva: tvaRate ? parseInt(tvaRate[1]) : null,
+    timbre_fiscal: montant_ttc != null ? (montant_ttc >= 1000 ? 1.000 : 0.600) : null,
     categorie_sce,
     devise: 'DT',
     champs_manquants: [
