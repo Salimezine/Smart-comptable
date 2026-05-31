@@ -18,7 +18,15 @@ jobs:
       - run: npm install
       - run: npm run build -- --base=/Smart-comptable/
       - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+        run: |
+          mkdir -p $HOME/deploy
+          cp -r dist/. $HOME/deploy/
+          cd $HOME/deploy
+          git init
+          git checkout -b gh-pages
+          git add .
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "deploy: ${{ github.sha }}"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin gh-pages --force
