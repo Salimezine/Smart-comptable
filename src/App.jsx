@@ -48,8 +48,7 @@ import { jsPDF } from 'jspdf';
 import { 
   INITIAL_INVOICES, 
   INITIAL_TRANSACTIONS, 
-  INITIAL_EXPENSES, 
-  RECEIPT_SAMPLES 
+  INITIAL_EXPENSES
 } from './mockData';
 import { 
   calculateTotalRevenues, 
@@ -62,6 +61,7 @@ import {
   generateSimulatedData 
 } from './accountingUtils';
 import { scanReceiptWithGemini, fileToBase64, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
+import { scanAvecTesseract, parseFactureTunisienne, RECEIPT_SAMPLES } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -1423,9 +1423,11 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
 function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, companyDetails }) {
-  const [mode, setMode] = useState('choice'); // 'choice' | 'manual' | 'scanning' | 'result' | 'success'
+  const [mode, setMode] = useState('choice');
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
+  const [ocrProgress, setOcrProgress] = useState(0);
+  const [ocrError, setOcrError] = useState('');
 
   const BLANK_FORM = {
     supplier: '',
@@ -1541,28 +1543,57 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     }));
   };
 
+  function orcToFormData(r) {
+    return {
+      supplier: r.fournisseur || r.supplier || '',
+      matriculeFiscal: r.matricule_fiscal || r.matriculeFiscal || '',
+      date: r.date || new Date().toISOString().split('T')[0],
+      subtotal: r.montant_ht != null ? String(r.montant_ht) : String(r.subtotal || ''),
+      vatRate: String(r.taux_tva || r.vatRate || '19'),
+      fodec: r.fodec != null ? String(r.fodec) : String(r.fodec || '0.000'),
+      vatAmount: r.montant_tva != null ? String(r.montant_tva) : String(r.vatAmount || ''),
+      stampDuty: r.timbre_fiscal != null ? String(r.timbre_fiscal) : String(r.stampDuty || '1.000'),
+      totalAmount: r.montant_ttc != null ? String(r.montant_ttc) : String(r.totalAmount || ''),
+      category: r.categorie_sce || r.category || 'Autres',
+      invoiceNumber: r.numero_facture || r.invoiceNumber || '',
+    };
+  }
+
   // Scan par exemple de test
   const handleStartScan = (sample) => {
     setActiveSample(sample);
     setIsAiScan(false);
+    setOcrProgress(0);
+    setOcrError('');
     setMode('scanning');
     setTimeout(() => {
-      applyFormData(sample.data);
+      applyFormData(orcToFormData(sample.data));
       setMode('result');
     }, 1800);
   };
 
-  // Scan fichier réel
+  // Scan fichier réel — Tesseract.local si pas de clé, Gemini si clé dispo
   const handleFileScan = async (e) => {
     if (!e.target.files || !e.target.files[0]) return;
     const file = e.target.files[0];
     setActiveSample(null);
+    setOcrError('');
+    setOcrProgress(0);
     setIsAiScan(hasValidKey);
     setMode('scanning');
     try {
-      const { base64Data, mimeType } = await fileToBase64(file);
-      const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name);
-      applyFormData(data);
+      if (hasValidKey) {
+        const { base64Data, mimeType } = await fileToBase64(file);
+        const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name);
+        applyFormData(data);
+      } else {
+        const text = await scanAvecTesseract(file, (pct) => setOcrProgress(pct));
+        const parsed = parseFactureTunisienne(text);
+        if (parsed.flag_incoherence && parsed.champs_manquants.length > 2) {
+          setOcrError('⚠️ Incohérence détectée dans les montants extraits — vérifiez manuellement.');
+        }
+        applyFormData(orcToFormData(parsed));
+      }
       setMode('result');
     } catch (err) {
       console.error(err);
@@ -1775,19 +1806,20 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
 
   return (
     <div className="space-y-6">
-      {/* Bannière clé API */}
+      {/* Bannière OCR local */}
       {!hasValidKey && (
-        <div className="p-3.5 bg-slate-900/50 border border-brand-500/30 rounded-xl flex items-center justify-between gap-4">
+        <div className="p-3.5 bg-indigo-500/10 border border-indigo-500/30 rounded-xl flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
+            <Scan className="w-4 h-4 text-indigo-400 shrink-0" />
             <p className="text-xs text-slate-300">
-              <strong className="text-brand-400">Mode Simulation actif.</strong>{' '}
-              Pour un scan réel, ajoutez votre clé d'API n8n dans{' '}
-              <strong>⚙️ Configuration</strong>. En attendant, utilisez la <strong>Saisie Manuelle</strong>.
+              <strong className="text-indigo-400">OCR Local actif.</strong>{' '}
+              Tesseract.js lit vos factures directement dans le navigateur —{' '}
+              <strong>zéro API, zéro clé, 100% privé</strong>.
+              Ajoutez une clé Gemini dans <strong>⚙️ Configuration</strong> pour une extraction améliorée.
             </p>
           </div>
-          <span className="text-[10px] font-bold text-brand-400 border border-brand-500/30 px-2 py-1 rounded-lg shrink-0 bg-brand-500/10 whitespace-nowrap">
-            n8n workflow
+          <span className="text-[10px] font-bold text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-lg shrink-0 bg-indigo-500/10 whitespace-nowrap">
+            Tesseract.js
           </span>
         </div>
       )}
@@ -1813,7 +1845,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
 
           {/* Scanner un fichier */}
           <label className="w-full flex items-center gap-4 p-4 border-2 border-dashed border-slate-700 hover:border-indigo-500/60 rounded-2xl transition-all group cursor-pointer relative">
-            <input type="file" accept=".pdf,image/png,image/jpeg"
+            <input type="file" accept="image/png,image/jpeg"
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
               onChange={handleFileScan}
             />
@@ -1824,7 +1856,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
               <p className="text-sm font-bold text-slate-100">
                 Scanner un fichier{hasValidKey && <span className="text-accent-400 text-[10px] ml-2 font-bold">● IA ACTIVE</span>}
               </p>
-              <p className="text-[10px] text-slate-400 mt-0.5">PDF, PNG, JPG — {hasValidKey ? 'Lecture IA de votre document' : 'Données à corriger après scan'}</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG — (max 10 Mo) — {hasValidKey ? 'Lecture IA Gemini' : 'OCR Local Tesseract.js'}</p>
             </div>
           </label>
 
@@ -1878,9 +1910,28 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
                 <RefreshCw className="w-6 h-6 text-brand-400 animate-spin" />
               </div>
               <div className="text-center space-y-1">
-                <h4 className="text-sm font-bold text-slate-200">Analyse {hasValidKey ? 'Gemini IA' : 'en cours'}...</h4>
-                <p className="text-[11px] text-indigo-400">{hasValidKey ? 'Lecture intelligente par Gemini 1.5 Flash...' : 'Préparation des données...'}</p>
+                <h4 className="text-sm font-bold text-slate-200">
+                  {hasValidKey ? 'Analyse Gemini IA...' : '🔍 Analyse OCR en cours...'}
+                </h4>
+                <p className="text-[11px] text-indigo-400">
+                  {hasValidKey
+                    ? 'Lecture intelligente par Gemini 1.5 Flash...'
+                    : ocrProgress > 0
+                      ? `Tesseract analyse le document — ${ocrProgress}%`
+                      : 'Initialisation du moteur OCR local...'}
+                </p>
               </div>
+              {!hasValidKey && (
+                <div className="w-64 bg-slate-800 rounded-full h-2 overflow-hidden border border-slate-700">
+                  <div
+                    className="h-full bg-gradient-to-r from-brand-500 to-indigo-500 rounded-full transition-all duration-300 ease-out"
+                    style={{ width: `${ocrProgress}%` }}
+                  />
+                </div>
+              )}
+              {ocrError && (
+                <p className="text-[10px] text-warning-400 text-center max-w-xs">{ocrError}</p>
+              )}
             </div>
           ) : mode === 'success' ? (
             <div className="flex-1 flex flex-col items-center justify-center space-y-3 py-12 text-center animate-fade-in">
