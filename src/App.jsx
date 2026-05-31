@@ -60,8 +60,8 @@ import {
   computeMonthlyChartData,
   generateSimulatedData 
 } from './accountingUtils';
-import { scanReceiptWithGemini, fileToBase64, generateInvoiceAI, processPurchaseInvoice } from './geminiService';
-import { scanAvecTesseract, parseFactureTunisienne, RECEIPT_SAMPLES } from './tesseractOcr';
+import { generateInvoiceAI, processPurchaseInvoice } from './geminiService';
+import { scanFacture, parseFactureText, EXEMPLES_TEST } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -1543,57 +1543,45 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     }));
   };
 
-  function orcToFormData(r) {
+  function ocrToFormData(r) {
     return {
-      supplier: r.fournisseur || r.supplier || '',
-      matriculeFiscal: r.matricule_fiscal || r.matriculeFiscal || '',
+      supplier: r.fournisseur || '',
+      matriculeFiscal: r.matriculeFiscal || '',
       date: r.date || new Date().toISOString().split('T')[0],
-      subtotal: r.montant_ht != null ? String(r.montant_ht) : String(r.subtotal || ''),
-      vatRate: String(r.taux_tva || r.vatRate || '19'),
-      fodec: r.fodec != null ? String(r.fodec) : String(r.fodec || '0.000'),
-      vatAmount: r.montant_tva != null ? String(r.montant_tva) : String(r.vatAmount || ''),
-      stampDuty: r.timbre_fiscal != null ? String(r.timbre_fiscal) : String(r.stampDuty || '1.000'),
-      totalAmount: r.montant_ttc != null ? String(r.montant_ttc) : String(r.totalAmount || ''),
-      category: r.categorie_sce || r.category || 'Autres',
-      invoiceNumber: r.numero_facture || r.invoiceNumber || '',
+      subtotal: r.montant_ht != null ? String(r.montant_ht) : '',
+      vatRate: String(r.taux_tva || '19'),
+      fodec: '0.000',
+      vatAmount: r.tva != null ? String(r.tva) : '',
+      stampDuty: '1.000',
+      totalAmount: r.montant_ttc != null ? String(r.montant_ttc) : '',
+      category: r.categorie_sce || 'Autres',
+      invoiceNumber: r.numero_facture || '',
     };
   }
 
-  // Scan par exemple de test
   const handleStartScan = (sample) => {
     setActiveSample(sample);
     setIsAiScan(false);
     setOcrProgress(0);
-    setOcrError('');
     setMode('scanning');
     setTimeout(() => {
-      applyFormData(orcToFormData(sample.data));
+      applyFormData(ocrToFormData(sample.data));
       setMode('result');
     }, 1800);
   };
 
-  // Scan fichier réel — Tesseract.local si pas de clé, Gemini si clé dispo
   const handleFileScan = async (e) => {
     if (!e.target.files || !e.target.files[0]) return;
     const file = e.target.files[0];
     setActiveSample(null);
     setOcrError('');
     setOcrProgress(0);
-    setIsAiScan(hasValidKey);
+    setIsAiScan(false);
     setMode('scanning');
     try {
-      if (hasValidKey) {
-        const { base64Data, mimeType } = await fileToBase64(file);
-        const data = await scanReceiptWithGemini(geminiApiKey, base64Data, mimeType, file.name);
-        applyFormData(data);
-      } else {
-        const text = await scanAvecTesseract(file, (pct) => setOcrProgress(pct));
-        const parsed = parseFactureTunisienne(text);
-        if (parsed.flag_incoherence && parsed.champs_manquants.length > 2) {
-          setOcrError('⚠️ Incohérence détectée dans les montants extraits — vérifiez manuellement.');
-        }
-        applyFormData(orcToFormData(parsed));
-      }
+      const parsed = await scanFacture(file, (pct) => setOcrProgress(pct));
+      if (parsed.champs_manquants.length > 3) setOcrError('Plusieurs champs non détectés — complétez manuellement.');
+      applyFormData(ocrToFormData(parsed));
       setMode('result');
     } catch (err) {
       console.error(err);
@@ -1876,9 +1864,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
 
           {/* Exemples de test */}
           <div className="space-y-2">
-            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Exemples de test (données réelles)</span>
+            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Exemples de test Tesseract</span>
             <div className="grid grid-cols-1 gap-2">
-              {RECEIPT_SAMPLES.map((sample, idx) => (
+              {EXEMPLES_TEST.map((sample, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleStartScan(sample)}
