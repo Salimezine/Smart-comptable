@@ -29,7 +29,8 @@ import {
    KeyRound,
    Filter,
    Send,
-   Package
+   Package,
+   BookOpen
 } from 'lucide-react';
 import { 
   AreaChart, 
