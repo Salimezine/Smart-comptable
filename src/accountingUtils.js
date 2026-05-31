@@ -404,7 +404,7 @@ export const generateSimulatedData = () => {
     const month = String(i + 1).padStart(2, '0');
     invoices.push({
       id: `SIM-INV-${String(i + 1).padStart(3, '0')}`,
-      number: `FACT-${2026}-${String(i + 1).padStart(4, '0')}`,
+      invoiceNumber: `FAC-${2026}-${String(i + 1).padStart(4, '0')}`,
       clientName: `Client ${String.fromCharCode(65 + (i % 26))}`,
       clientVat: `1234567${String(i + 1).padStart(3, '0')}/${['A','M','B'][i % 3]}`,
       issueDate: `2026-${month}-15`,
