@@ -1,4 +1,3 @@
-import Tesseract from 'tesseract.js';
 import { predictCategory, predictVatRate, suggestAccount, detectAnomaly, suggestDefaultAmount, learnFromExpense } from './learningEngine';
 
 /**
@@ -8,7 +7,7 @@ export const scanReceiptWithGemini = async (_apiKeyIgnored, base64Image, mimeTyp
   // OCR local Tesseract
   try {
     const dataUrl = `data:${mimeType};base64,${base64Image}`;
-    const result = await Tesseract.recognize(dataUrl, 'fra+eng');
+    const result = await window.Tesseract.recognize(dataUrl, 'fra+eng');
     const extractedText = result.data.text || "";
     if (extractedText.trim().length > 10) return parseInvoiceText(extractedText);
   } catch (ocrError) {
