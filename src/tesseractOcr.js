@@ -5,15 +5,28 @@ const FOURNISSEURS_TN = {
   orange: 'Télécoms & Internet',
   topnet: 'Télécoms & Internet',
   hexabyte: 'Télécoms & Internet',
+  globalnet: 'Télécoms & Internet',
+  mytele: 'Télécoms & Internet',
+  solytelec: 'Télécoms & Internet',
   steg: 'Énergie & Utilités',
   sonede: 'Énergie & Utilités',
   monoprix: 'Fournitures de Bureau',
   geant: 'Fournitures de Bureau',
   carrefour: 'Fournitures de Bureau',
+  magasin: 'Fournitures de Bureau',
   sndp: 'Déplacements',
+  snt: 'Déplacements',
   total: 'Déplacements',
   star: 'Loyer & Charges',
   gat: 'Loyer & Charges',
+  amen: 'Banque & Finances',
+  biat: 'Banque & Finances',
+  attijari: 'Banque & Finances',
+  uib: 'Banque & Finances',
+  bna: 'Banque & Finances',
+  bh: 'Banque & Finances',
+  atb: 'Banque & Finances',
+  tunisiana: 'Télécoms & Internet',
 };
 
 function toNumber(s) {
@@ -28,17 +41,39 @@ function extractFirst(regex, text) {
 }
 
 function detectFournisseur(text) {
-  const lines = text.split('\n').slice(0, 15).map(l => l.trim()).filter(Boolean);
-  for (const line of lines) {
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  const firstLines = lines.slice(0, 30);
+
+  for (const line of firstLines) {
     const lower = line.toLowerCase();
     for (const key of Object.keys(FOURNISSEURS_TN)) {
-      if (lower.includes(key)) return line.length > 50 ? key.charAt(0).toUpperCase() + key.slice(1) : line;
+      const regex = key.length <= 3 ? new RegExp(`\\b${key}\\b`) : new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+      if (regex.test(lower)) return line;
     }
   }
-  for (const kw of ['société', 'sarl', 'sa.', 'eurl', 'company', 'shop', 'store', 'bureau', 'service']) {
-    const found = lines.find(l => l.toLowerCase().includes(kw) && l.length < 80);
+
+  const noise = ['www.', '@', 'facture', 'n°', 'n°', 'tva', 'tel:', 'tél', 'fax', 'rc°', 'rib', 'matricule', 'adresse'];
+  for (const kw of ['société', 'sarl', 'eurl', 's.a.r.l', 's.a.', 'sarl au', 'sarl à', 'company', 'bureau', 'cabinet']) {
+    const found = firstLines.find(l => l.toLowerCase().includes(kw) && l.length < 80);
     if (found) return found;
   }
+
+  const companyLine = firstLines.find(l => {
+    const lc = l.toLowerCase();
+    if (l.length < 4 || l.length > 80) return false;
+    if (noise.some(n => lc.includes(n))) return false;
+    if (/^\d/.test(l)) return false;
+    const words = l.split(/\s+/);
+    const capCount = words.filter(w => /^[A-Z]/.test(w[0])).length;
+    return capCount >= 2 && words.length >= 2;
+  });
+  if (companyLine) return companyLine;
+
+  if (firstLines.length > 0) {
+    const l = firstLines[0];
+    if (l.length < 80 && l.length > 3 && !noise.some(n => l.toLowerCase().includes(n)) && !/^\d/.test(l)) return l;
+  }
+
   return null;
 }
 
