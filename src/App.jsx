@@ -661,6 +661,7 @@ export default function App() {
                 formatCurrency={formatCurrency}
                 geminiApiKey={companyDetails.geminiApiKey}
                 companyDetails={companyDetails}
+                setInvoices={setInvoices}
               />
             )}
             {currentTab === 'workflow' && (
@@ -1527,7 +1528,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 /* ==========================================================================
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
-function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, companyDetails }) {
+function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, companyDetails, setInvoices }) {
   const [mode, setMode] = useState('choice');
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
@@ -1547,6 +1548,8 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     category: 'Autres',
     invoiceNumber: '',
     rsAmount: '',
+    clientEmail: '',
+    clientAddress: '',
   };
   const [formData, setFormData] = useState(BLANK_FORM);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -1556,10 +1559,18 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
   const [purchaseError, setPurchaseError] = useState('');
+  const [typeJustificatif, setTypeJustificatif] = useState('achat');
+  const [clientEmail, setClientEmail] = useState('');
+  const [clientAddress, setClientAddress] = useState('');
 
   const CATEGORIES = [
     'Télécoms & Internet', 'Énergie & Utilités', 'Fournitures de Bureau',
     'Déplacements', 'Restauration', 'Loyer & Charges', 'Salaires & Charges Sociales', 'Autres',
+  ];
+
+  const CATEGORIES_VENTE = [
+    'Prestations de services', 'Ventes de marchandises', 'Produits financiers',
+    'Produits divers', 'Location & Revenus immobiliers', 'Autres produits',
   ];
 
   const hasValidKey = geminiApiKey && geminiApiKey !== '' && geminiApiKey !== 'local';
@@ -1784,6 +1795,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     const ttcCalc = baseCalc > 0 ? parseFloat((baseCalc + tvaCalc + stamp).toFixed(3)) : 0;
     const netCalc = ttcCalc > 0 ? parseFloat((ttcCalc - rsVal).toFixed(3)) : 0;
 
+    const isAchat = typeJustificatif === 'achat';
+    const isVente = typeJustificatif === 'vente';
+
     const fournisseurInput = formData.supplier || '';
     const lowerInput = fournisseurInput.toLowerCase();
     const suggestions = fournisseurInput.length >= 2
@@ -1799,12 +1813,66 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       : 'border-slate-700';
 
     const requiredMissing = [];
-    if (!formData.supplier) requiredMissing.push('Fournisseur');
+    if (!formData.supplier) requiredMissing.push(isAchat ? 'Fournisseur' : 'Client');
     if (!formData.date) requiredMissing.push('Date');
     if (!formData.subtotal && !formData.totalAmount) requiredMissing.push('Sous-total HT ou Total TTC');
 
+    const resetForm = () => {
+      setFormData(BLANK_FORM);
+      setShowRsField(false);
+      setRsRate('1.5');
+      setMfValid(null);
+      setClientEmail('');
+      setClientAddress('');
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (requiredMissing.length > 0) return;
+
+      if (isAchat) {
+        onAddExpense({
+          id: `exp-${Date.now()}`,
+          supplier: formData.supplier || 'Fournisseur',
+          matriculeFiscal: formData.matriculeFiscal || '',
+          date: formData.date,
+          subtotal: parseFloat(formData.subtotal) || 0,
+          fodec: parseFloat(formData.fodec) || 0,
+          vatAmount: parseFloat(formData.vatAmount) || 0,
+          stampDuty: parseFloat(formData.stampDuty) || 1,
+          totalAmount: parseFloat(formData.totalAmount) || 0,
+          rsAmount: parseFloat(formData.rsAmount) || 0,
+          category: formData.category,
+          invoiceNumber: formData.invoiceNumber,
+          status: "VALIDATED"
+        });
+      } else {
+        const invCount = typeof setInvoices === 'function' ? 0 : 0;
+        const newInvoice = {
+          id: `inv-${Date.now()}`,
+          invoiceNumber: formData.invoiceNumber || `FACT-2026-${String((document.querySelectorAll('#invoices-list li')?.length || 0) + 1).padStart(3, '0')}`,
+          clientName: formData.supplier,
+          clientEmail: formData.clientEmail || clientEmail,
+          issueDate: formData.date,
+          dueDate: formData.date ? new Date(new Date(formData.date).getTime() + 30*86400000).toISOString().split('T')[0] : '',
+          subtotal: parseFloat(formData.subtotal) || 0,
+          vatAmount: parseFloat(formData.vatAmount) || 0,
+          totalAmount: parseFloat(formData.totalAmount) || 0,
+          status: "SENT",
+          items: [{ id: Date.now(), description: formData.category || 'Prestation', quantity: 1, unitPrice: parseFloat(formData.subtotal) || 0, vatRate: parseFloat(formData.vatRate) || 19 }]
+        };
+        if (typeof setInvoices === 'function') {
+          setInvoices(prev => [newInvoice, ...prev]);
+        }
+      }
+
+      setMode('success');
+      resetForm();
+      setActiveSample(null);
+    };
+
     return (
-    <form onSubmit={handleConfirmExpense} className="space-y-4 animate-slide-up flex-1 overflow-y-auto">
+    <form onSubmit={handleSubmit} className="space-y-4 animate-slide-up flex-1 overflow-y-auto">
       <div className="flex justify-between items-center border-b border-slate-800 pb-3">
         <h4 className={`text-sm font-extrabold flex items-center gap-1.5 ${isManual ? 'text-brand-400' : isAiScan ? 'text-accent-400' : 'text-warning-400'}`}>
           {isManual
@@ -1814,7 +1882,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
               : <><AlertCircle className="w-4 h-4" /> Données simulées — Corrigez avant d'enregistrer</>
           }
         </h4>
-        <button type="button" onClick={() => { setMode('choice'); setFormData(BLANK_FORM); }}
+        <button type="button" onClick={() => { setMode('choice'); resetForm(); }}
           className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Annuler</button>
       </div>
 
@@ -1828,22 +1896,42 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
         </div>
       )}
 
+      {/* Toggle Type de Justificatif */}
+      <div className="flex gap-2">
+        <button type="button" onClick={() => { setTypeJustificatif('achat'); resetForm(); }}
+          className={`flex-1 py-2.5 rounded-xl flex items-center justify-center gap-2 text-xs font-bold transition-all
+            ${isAchat ? 'bg-violet-600 text-white border border-violet-400 shadow-lg shadow-violet-600/20' : 'bg-slate-800 text-slate-400 border border-slate-600 hover:border-slate-500'}`}
+        >
+          <span className="text-base">🧾</span> Facture Achat
+          <span className="text-[9px] opacity-70">Fournisseur</span>
+        </button>
+        <button type="button" onClick={() => { setTypeJustificatif('vente'); resetForm(); }}
+          className={`flex-1 py-2.5 rounded-xl flex items-center justify-center gap-2 text-xs font-bold transition-all
+            ${isVente ? 'bg-emerald-600 text-white border border-emerald-400 shadow-lg shadow-emerald-600/20' : 'bg-slate-800 text-slate-400 border border-slate-600 hover:border-slate-500'}`}
+        >
+          <span className="text-base">📤</span> Facture Vente
+          <span className="text-[9px] opacity-70">Client</span>
+        </button>
+      </div>
+
       <div className="grid grid-cols-2 gap-3">
         <div className="col-span-2 relative">
-          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Fournisseur / Vendeur *</label>
-          <input type="text" required placeholder="ex: Ooredoo Tunisie, STEG, Monoprix..."
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">{isAchat ? 'Fournisseur / Vendeur' : 'Client'} *</label>
+          <input type="text" required placeholder={isAchat ? 'ex: Ooredoo Tunisie, STEG, Monoprix...' : 'ex: ABC Entreprise, SARL Tunisie...'}
             value={formData.supplier}
             onChange={(e) => {
               const val = e.target.value;
               setFormData(f => ({...f, supplier: val}));
-              setShowSuggestions(val.length >= 2);
-              if (val.length < 2) setShowSuggestions(false);
+              if (isAchat) {
+                setShowSuggestions(val.length >= 2);
+                if (val.length < 2) setShowSuggestions(false);
+              }
             }}
             onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-            onFocus={() => { if (formData.supplier.length >= 2) setShowSuggestions(true); }}
+            onFocus={() => { if (isAchat && formData.supplier.length >= 2) setShowSuggestions(true); }}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           />
-          {showSuggestions && suggestions.length > 0 && (
+          {isAchat && showSuggestions && suggestions.length > 0 && (
             <div className="absolute z-20 top-full mt-1 left-0 right-0 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
               {suggestions.map(([key, info]) => (
                 <button
@@ -1868,8 +1956,28 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             </div>
           )}
         </div>
+
+        {isVente && (
+          <div className="col-span-2 grid grid-cols-2 gap-3">
+            <div>
+              <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Email Client</label>
+              <input type="email" placeholder="client@entreprise.com" value={formData.clientEmail || clientEmail}
+                onChange={(e) => { setClientEmail(e.target.value); setFormData(f => ({...f, clientEmail: e.target.value})); }}
+                className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none"
+              />
+            </div>
+            <div>
+              <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Adresse Client</label>
+              <input type="text" placeholder="Avenue X, Tunis" value={formData.clientAddress || clientAddress}
+                onChange={(e) => { setClientAddress(e.target.value); setFormData(f => ({...f, clientAddress: e.target.value})); }}
+                className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none"
+              />
+            </div>
+          </div>
+        )}
+
         <div className="col-span-2">
-          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Matricule Fiscal Fournisseur</label>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">{isAchat ? 'Matricule Fiscal Fournisseur' : 'Matricule Fiscal Client'}</label>
           <input type="text" placeholder="ex: 1234567/X/A/M/000" value={mfValue}
             onChange={(e) => {
               const v = e.target.value;
@@ -1886,7 +1994,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
           )}
         </div>
         <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Date du Reçu *</label>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">{isAchat ? 'Date du Reçu' : isVente ? "Date d'émission" : 'Date'} *</label>
           <input type="date" required value={formData.date}
             onChange={(e) => setFormData(f => ({...f, date: e.target.value}))}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
@@ -1894,7 +2002,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
         </div>
         <div>
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">N° Justificatif</label>
-          <input type="text" placeholder="ex: FAC-2026-0012" value={formData.invoiceNumber}
+          <input type="text" placeholder={isAchat ? 'ex: FAC-2026-0012' : 'ex: FACT-2026-001'} value={formData.invoiceNumber}
             onChange={(e) => setFormData(f => ({...f, invoiceNumber: e.target.value}))}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           />
@@ -1905,13 +2013,13 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             onChange={(e) => setFormData(f => ({...f, category: e.target.value}))}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           >
-            {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
+            {(isAchat ? CATEGORIES : CATEGORIES_VENTE).map(c => <option key={c} value={c}>{c}</option>)}
           </select>
         </div>
       </div>
 
       {/* Section Montants */}
-      <div className="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60 space-y-3">
+      <div className={`p-4 rounded-xl border space-y-3 ${isAchat ? 'bg-slate-900/60 border-slate-700/60' : 'bg-emerald-900/20 border-emerald-700/40'}`}>
         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Détail des Montants (DT)</p>
         <div className="grid grid-cols-3 gap-3">
           <div>
@@ -1954,6 +2062,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
           </div>
         </div>
         <div className="grid grid-cols-3 gap-3">
+          {isAchat && (
           <div>
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">FODEC (1%) (DT)</label>
             <input type="number" step="0.001" min="0" placeholder="0.000" value={formData.fodec}
@@ -1961,7 +2070,8 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
               className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
             />
           </div>
-          <div>
+          )}
+          <div className={isAchat ? '' : 'col-span-1'}>
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Montant TVA</label>
             <input type="number" step="0.001" min="0" placeholder="Auto" value={formData.vatAmount}
               onChange={(e) => setFormData(f => ({...f, vatAmount: e.target.value}))}
@@ -1969,15 +2079,17 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             />
           </div>
           <div>
-            <label className="block text-[10px] text-warning-400 font-bold mb-1 uppercase">✦ Total TTC *</label>
-            <input type="text" inputMode="decimal" required placeholder="ex: 1 017,450" value={formData.totalAmount}
-              onChange={(e) => handleTotalChange(e.target.value)}
-              className="w-full bg-slate-950 border-2 border-warning-500/60 focus:border-warning-400 rounded-xl px-3 py-2 text-warning-300 text-sm font-bold focus:outline-none"
+            <label className="block text-[10px] font-bold mb-1 uppercase">{isAchat ? '✦ Total TTC *' : '✦ Total TTC Facture *'}</label>
+            <input type={isAchat ? 'text' : 'number'} step="0.001" min="0" required placeholder={isAchat ? 'ex: 1 017,450' : '0.000'} value={formData.totalAmount}
+              onChange={(e) => isAchat ? handleTotalChange(e.target.value) : setFormData(f => ({...f, totalAmount: e.target.value}))}
+              className={`w-full bg-slate-950 border-2 rounded-xl px-3 py-2 text-sm font-bold focus:outline-none ${isAchat ? 'border-warning-500/60 focus:border-warning-400 text-warning-300' : 'border-emerald-500/60 focus:border-emerald-400 text-emerald-300'}`}
             />
           </div>
         </div>
 
-        {/* RS conditionnel */}
+        {/* RS conditionnel (achat seulement) */}
+        {isAchat && (
+          <>
         <div className="flex items-center gap-3 pt-1">
           <label className="flex items-center gap-2 cursor-pointer">
             <input type="checkbox" checked={showRsField}
@@ -2012,18 +2124,19 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             </div>
           </div>
         )}
+        </>)}
 
         <p className="text-[9px] text-slate-500 mt-1">Saisissez le Total TTC ou le Sous-total HT pour mettre à jour les calculs.</p>
       </div>
 
       {/* Résumé visuel */}
       {(sub > 0 || parseFloat(formData.totalAmount) > 0) && (
-        <div className="bg-slate-900/80 p-4 rounded-xl border border-slate-700/50 space-y-1.5">
+        <div className={`p-4 rounded-xl border space-y-1.5 ${isAchat ? 'bg-slate-900/80 border-slate-700/50' : 'bg-emerald-900/20 border-emerald-700/30'}`}>
           <div className="flex justify-between text-[11px]">
             <span className="text-slate-400">HT</span>
             <span className="text-slate-200 font-mono">{sub.toFixed(3)} DT</span>
           </div>
-          {fodecVal > 0 && (
+          {fodecVal > 0 && isAchat && (
             <div className="flex justify-between text-[11px]">
               <span className="text-slate-400">FODEC</span>
               <span className="text-slate-200 font-mono">{fodecVal.toFixed(3)} DT</span>
@@ -2037,17 +2150,17 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             <span className="text-slate-400">Timbre fiscal</span>
             <span className="text-slate-200 font-mono">{stamp.toFixed(3)} DT</span>
           </div>
-          {rsVal > 0 && (
+          {rsVal > 0 && isAchat && (
             <div className="flex justify-between text-[11px]">
             <span className="text-orange-400">Retenue source ({rsRate}%)</span>
             <span className="text-orange-400 font-mono">− {rsVal.toFixed(3)} DT</span>
           </div>
           )}
-          <div className="border-t border-slate-700 pt-1.5 mt-1.5 flex justify-between text-xs font-bold">
-            <span className="text-warning-400">TTC</span>
-            <span className="text-warning-400 font-mono">{(sub > 0 ? ttcCalc : parseFloat(formData.totalAmount) || 0).toFixed(3)} DT</span>
+          <div className={`border-t pt-1.5 mt-1.5 flex justify-between text-xs font-bold ${isAchat ? 'border-slate-700' : 'border-emerald-700/50'}`}>
+            <span className={isAchat ? 'text-warning-400' : 'text-emerald-400'}>TTC</span>
+            <span className={isAchat ? 'text-warning-400 font-mono' : 'text-emerald-400 font-mono'}>{(sub > 0 ? ttcCalc : parseFloat(formData.totalAmount) || 0).toFixed(3)} DT</span>
           </div>
-          {rsVal > 0 && (
+          {rsVal > 0 && isAchat && (
             <div className="flex justify-between text-xs font-bold">
               <span className="text-accent-400">Net à payer</span>
               <span className="text-accent-400 font-mono">{netCalc.toFixed(3)} DT</span>
@@ -2065,13 +2178,13 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       )}
 
       <div className="flex gap-3 pt-1">
-        <button type="button" onClick={() => { setMode('choice'); setFormData(BLANK_FORM); }}
+        <button type="button" onClick={() => { setMode('choice'); resetForm(); }}
           className="flex-1 py-2.5 border border-slate-700 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all">
           Annuler
         </button>
         <button type="submit" disabled={requiredMissing.length > 0}
-          className="flex-[2] py-2.5 bg-gradient-brand hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5">
-          <CheckCircle2 className="w-4 h-4" /> Enregistrer la dépense
+          className={`flex-[2] py-2.5 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5 ${isAchat ? 'bg-gradient-brand hover:opacity-90' : 'bg-emerald-600 hover:bg-emerald-500'}`}>
+          <CheckCircle2 className="w-4 h-4" /> {isAchat ? 'Enregistrer la dépense' : 'Enregistrer la vente'}
         </button>
       </div>
     </form>
