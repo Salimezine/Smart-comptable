@@ -410,7 +410,6 @@ function validerCalculs(data) {
 
     if (data.base_tva === null || data.base_tva === undefined) data.base_tva = base;
     if (data.montant_tva === null || data.montant_tva === undefined) data.montant_tva = tva;
-    if (data.net_a_payer === null || data.net_a_payer === undefined) data.net_a_payer = net;
 
     if (data.montant_ttc !== null) {
       const diffTTC = Math.abs(sousTotal - data.montant_ttc);
@@ -420,7 +419,7 @@ function validerCalculs(data) {
     }
 
     if (data.net_a_payer === null || data.net_a_payer === undefined) {
-      data.net_a_payer = parseFloat((data.montant_ttc - rs).toFixed(3));
+      data.net_a_payer = net;
     }
 
     // Appliquer règle retenue source seulement si TTC ≥ 1000

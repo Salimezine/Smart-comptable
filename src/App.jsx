@@ -76,19 +76,19 @@ import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll, encryptD
 
 function normaliserMontant(str) {
   if (!str) return null;
-  let s = str.toString().replace(/\s/g, '').replace(/DT|TND/gi, '').trim();
+  let s = str.toString()
+    .replace(/\s/g, '')
+    .replace(/DT|TND/gi, '')
+    .trim();
   if (!s) return null;
-  const points = (s.match(/\./g) || []).length;
-  const virgules = (s.match(/,/g) || []).length;
-  if (points > 1) {
+
+  if ((s.match(/\./g) || []).length > 1) {
     s = s.replace(/\./g, '');
-    const m = s.match(/(\d{3})$/);
-    if (m) s = s.slice(0, -3) + '.' + m[1];
-  } else if (virgules === 1 && points === 1) {
-    s = s.replace('.', '').replace(',', '.');
-  } else if (virgules === 1) {
+    if (s.length > 3) s = s.slice(0, -3) + '.' + s.slice(-3);
+  } else {
     s = s.replace(',', '.');
   }
+
   const n = parseFloat(s);
   return isNaN(n) ? null : parseFloat(n.toFixed(3));
 }
@@ -117,13 +117,21 @@ function parseTexteFacture(text) {
     categorie_sce: null, lignes: [], flag_incoherence: false,
   };
 
-  const numMatch = text.match(/(?:N°|Facture\s*N°?|FAC|INV|FC|FA)\s*[:\s-]*([A-Z0-9][A-Z0-9-]{3,})/i);
-  if (numMatch) result.numero_facture = numMatch[1];
+  const numPatterns = [
+    /(?:Facture\s+)?N°\s*[:\s-]*([A-Z]{2,4}[-\/]\d{4}[-\/]\d{3,6})/i,
+    /(?:FAC|INV|FC|FA|BL|REF)[-\/](\d{4}[-\/]\d{3,6})/i,
+    /([A-Z]{2}\d{2}[A-Z]{2}\d{3,})/,
+    /N°\s*(\d{4,})/i
+  ];
+  for (const pattern of numPatterns) {
+    const m = text.match(pattern);
+    if (m) { result.numero_facture = m[1] || m[0]; break; }
+  }
 
   const dateMatch = text.match(/(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{4})/);
   if (dateMatch) result.date = `${dateMatch[3]}-${dateMatch[2]}-${dateMatch[1]}`;
 
-  const fournMatch = text.match(/(?:Fournisseur|Vendeur|Société|Ste|Client)\s*[:\-]?\s*(.+)/i);
+  const fournMatch = text.match(/(?:Fournisseur|Vendeur|Société|Ste)\s*[:\-]?\s*([^\n\r,]{3,60})/i);
   if (fournMatch) result.fournisseur = fournMatch[1].trim();
 
   const mfMatch = text.match(/(?:MF|Matricule\s*[Ff]iscal[e]?)\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i);
@@ -1714,6 +1722,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       }
       if (parsed.champs_manquants.length > 3) setOcrError('Plusieurs champs non détectés — complétez manuellement.');
       applyFormData(ocrToFormData(parsed));
+      setIsAiScan(true);
       setMode('result');
     } catch (err) {
       console.error(err);
@@ -1776,6 +1785,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       }
 
       setPurchaseLoading(false);
+      setIsAiScan(true);
       setMode('result');
     } catch (err) {
       setPurchaseError('Erreur de parsing — vérifiez le format du texte');
