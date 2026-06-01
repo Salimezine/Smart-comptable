@@ -1,7 +1,7 @@
 /**
  * tesseractOcr.js — OCR local pour factures tunisiennes
  *
- * Stack: Tesseract.js v5 (CDN), window.Tesseract
+ * Stack: Tesseract.js v5 (CDN), window.Tesseract, pdf.js (CDN)
  * Conformité: TVA 7/13/19%, FODEC, Timbre LF2023, Retenue Source
  */
 
@@ -78,13 +78,6 @@ const CATEGORIES_SCE = {
 // Matricule Fiscal: 1234567/Y/A/M/000
 const RGX_MF = /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i;
 
-const RGX_NUM = [
-  /(?:Facture|N°|N\s*°|FAC|INV|FC|FV|FA|BL|REF)\s*[:\-\s]*([A-Z0-9]{4,})/i,
-  /([A-Z]{2}\d{2}[A-Z]{2}\d{3,})/,
-  /(\d{4}[-\/]\d{3,6})/,
-  /N°\s*(\d+)/i,
-];
-
 const RGX_HT = [
   /(?:Total\s+HT|Montant\s+HT|Sous[\s-]total\s+HT|Hors\s+[Tt]axe|H\.T\.?)\s*[:\s]*([\d\s.,]+\d)/i,
   /(?:المبلغ خ\.ض|خارج الأداء)\s*[:\s]*([\d\s.,]+\d)/i,
@@ -137,13 +130,30 @@ const MONTHS = {
 // ──────────────────────────────────────────────────
 // Fonction 4: normaliserMontant(str)
 // ──────────────────────────────────────────────────
-function normaliserMontant(str) {
-  if (str == null) return null;
-  let s = String(str).trim();
+export function normaliserMontant(str) {
+  if (!str && str !== 0) return null;
+  let s = str.toString()
+    .replace(/\s/g, '')
+    .replace(/DT|TND/gi, '')
+    .replace(/\u00A0/g, '')
+    .trim();
   if (!s) return null;
-  s = s.replace(/\s+/g, '').replace(',', '.');
-  const n = parseFloat(s);
-  return isNaN(n) ? null : parseFloat(n.toFixed(3));
+
+  const points = (s.match(/\./g) || []).length;
+  const virgules = (s.match(/,/g) || []).length;
+
+  if (points >= 2) {
+    s = s.replace(/\./g, '');
+    if (s.length > 3) s = s.slice(0, -3) + '.' + s.slice(-3);
+  } else if (points === 1 && virgules === 1) {
+    s = s.replace('.', '').replace(',', '.');
+  } else if (virgules === 1) {
+    s = s.replace(',', '.');
+  }
+
+  const num = parseFloat(s);
+  if (isNaN(num)) return null;
+  return parseFloat(num.toFixed(3));
 }
 
 // ──────────────────────────────────────────────────
@@ -173,44 +183,40 @@ function extraireDernier(patterns, text) {
 // Détection fournisseur
 // ──────────────────────────────────────────────────
 function detectFournisseur(text) {
-  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
-  const firstLines = lines.slice(0, 40);
+  const patterns = [
+    /(?:Fournisseur|Vendeur|Émetteur|Société|Ste|SARL|SA|Sté)\s*[:\-]?\s*([^\n\r]{3,60})/i,
+    /^([A-Z][A-Za-z\s&\.]{5,50})$/m,
+  ];
 
-  for (const line of firstLines) {
-    const lower = line.toLowerCase();
-    for (const key of Object.keys(FOURNISSEURS_TN)) {
-      const regex = key.length <= 3
-        ? new RegExp(`\\b${key}\\b`)
-        : new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
-      if (regex.test(lower)) return line;
+  for (const p of patterns) {
+    const m = text.match(p);
+    if (m) {
+      let nom = m[1].trim();
+      nom = nom.replace(/\s*(MF|Tél|Tel|Email|e-mail|www|N°|Matricule).*/i, '').trim();
+      if (nom.length >= 3) return nom;
     }
   }
+  return null;
+}
 
-  const motsEntreprise = ['société', 'sarl', 'eurl', 's.a.r.l', 's.a.', 'sarl au', 'sarl à', 'company', 'bureau', 'cabinet', 'entreprise', 'ste', 'etablissement', 'générale'];
-  const bruit = ['www.', '@', 'facture', 'n°', 'n°', 'tva', 'tel:', 'tél', 'fax', 'rc°', 'rib', 'matricule', 'adresse', 'banque', 'code', 'designation'];
+// ──────────────────────────────────────────────────
+// Détection numéro de facture
+// ──────────────────────────────────────────────────
+function detectNumeroFacture(text) {
+  const patterns = [
+    /(?:Facture\s*N°?|N°\s*Facture|N°|Ref|Réf)\s*[:\s]*([A-Z]{2,4}[-\/]?\d{4}[-\/]\d{3,6})/i,
+    /\b(FAC|INV|FC|FV|FA|BL|DST|OOR|STEG|MPX)[-\/](\d{4})[-\/](\d{3,6})\b/i,
+    /\b([A-Z]{2}\d{2}[A-Z]{2}\d{3,})\b/,
+    /(?:Facture|N°)\s*[:\s]*(\d{4,})/i,
+  ];
 
-  for (const kw of motsEntreprise) {
-    const found = firstLines.find(l => l.toLowerCase().includes(kw) && l.length < 80);
-    if (found) return found;
+  for (const p of patterns) {
+    const m = text.match(p);
+    if (m) {
+      if (m[2] && m[3]) return `${m[1]}-${m[2]}-${m[3]}`;
+      return (m[1] || m[0]).trim();
+    }
   }
-
-  const companyLine = firstLines.find(l => {
-    const lc = l.toLowerCase();
-    if (l.length < 4 || l.length > 80) return false;
-    if (bruit.some(n => lc.includes(n))) return false;
-    if (/^\d/.test(l)) return false;
-    const words = l.split(/\s+/);
-    if (words.length < 2) return false;
-    const capCount = words.filter(w => /^[A-ZÉÈÊËÀÂÄÙÛÜÔÖÎÏÇ]/.test(w[0])).length;
-    return capCount >= Math.min(2, Math.ceil(words.length / 2));
-  });
-  if (companyLine) return companyLine;
-
-  if (firstLines.length > 0) {
-    const l = firstLines[0];
-    if (l.length < 80 && l.length > 3 && !bruit.some(n => l.toLowerCase().includes(n)) && !/^\d/.test(l)) return l;
-  }
-
   return null;
 }
 
@@ -225,7 +231,7 @@ function detectDate(text) {
   const t = RGX_DATE[2].exec(text);
   if (t) return `${t[3]}-${MONTHS[t[2].toLowerCase()] || '01'}-${t[1].padStart(2, '0')}`;
   const y = RGX_DATE[3].exec(text);
-  if (y) return `${y[1]}-01-01`;
+  if (y) return `${y[3]}-01-01`;
   return null;
 }
 
@@ -319,7 +325,7 @@ function parseFactureTunisienne(text) {
     result.fournisseur = detectFournisseur(text);
     result.date = detectDate(text);
     result.matricule_fiscal = detectMF(text);
-    result.numero_facture = extrairePremier(RGX_NUM, text);
+    result.numero_facture = detectNumeroFacture(text);
     result.lignes = detectLignes(text);
 
     const htStr = extraireDernier(RGX_HT, text);
@@ -375,7 +381,6 @@ function parseFactureTunisienne(text) {
       result.code_comptable = CATEGORIES_SCE[result.categorie_sce].code;
     }
 
-    // Appliquer les règles fournisseur pour la RS seulement si pas déjà détectée
     if (fourniInfo && fourniInfo.rs > 0 && result.retenue_source === 0) {
       result.taux_rs = fourniInfo.rs;
     }
@@ -397,48 +402,30 @@ function parseFactureTunisienne(text) {
 // Fonction 3: validerCalculs(data)
 // ──────────────────────────────────────────────────
 function validerCalculs(data) {
-  const TOLERANCE = 0.005;
+  const TOLERANCE = 0.010;
 
-  if (data.montant_ht !== null && data.taux_tva !== null) {
-    const fodec = parseFloat((data.fodec || 0).toFixed(3));
-    const base = parseFloat((data.montant_ht + fodec).toFixed(3));
-    const tva = parseFloat((base * data.taux_tva / 100).toFixed(3));
-    const timbre = data.timbre_fiscal != null ? data.timbre_fiscal : 0;
-    const sousTotal = parseFloat((base + tva + timbre).toFixed(3));
-    const rs = data.retenue_source || 0;
-    const net = parseFloat((sousTotal - rs).toFixed(3));
+  if (data.montant_ht != null && data.taux_tva != null) {
+    const base  = parseFloat((data.montant_ht + (data.fodec || 0)).toFixed(3));
+    const tva   = parseFloat((base * data.taux_tva / 100).toFixed(3));
+    const timb  = data.timbre_fiscal ?? 1.000;
+    const ttc   = parseFloat((base + tva + timb).toFixed(3));
+    const rs    = data.retenue_source || 0;
+    const net   = parseFloat((ttc - rs).toFixed(3));
 
-    if (data.base_tva === null || data.base_tva === undefined) data.base_tva = base;
-    if (data.montant_tva === null || data.montant_tva === undefined) data.montant_tva = tva;
+    if (data.base_tva == null)    data.base_tva    = base;
+    if (data.montant_tva == null) data.montant_tva = tva;
 
-    if (data.montant_ttc !== null) {
-      const diffTTC = Math.abs(sousTotal - data.montant_ttc);
-      if (diffTTC > TOLERANCE) data.flag_incoherence = true;
-    } else {
-      data.montant_ttc = sousTotal;
+    if (data.montant_ttc == null) {
+      data.montant_ttc = ttc;
+    } else if (Math.abs(ttc - data.montant_ttc) > TOLERANCE) {
+      data.flag_incoherence = true;
     }
 
-    if (data.net_a_payer === null || data.net_a_payer === undefined) {
-      data.net_a_payer = net;
-    }
-
-    // Appliquer règle retenue source seulement si TTC ≥ 1000
-    if (data.retenue_source === 0 && data.taux_rs > 0 && data.montant_ttc >= 1000) {
-      // Ne pas deviner le montant RS — l'OCR doit le trouver
-    }
-  }
-
-  // Timbre: forfait LF2023 = 1 DT, sauf si déjà détecté via OCR
-  if (data.timbre_fiscal === null || data.timbre_fiscal === undefined) {
-    data.timbre_fiscal = 1.000;
-    if (data.fournisseur) {
-      const f = data.fournisseur.toLowerCase();
-      if (f.includes('steg') || f.includes('sonede')) data.timbre_fiscal = 0;
-    }
+    if (data.net_a_payer == null) data.net_a_payer = net;
   }
 
   const requis = ['fournisseur', 'date', 'montant_ht', 'taux_tva', 'montant_ttc'];
-  data.champs_manquants = requis.filter(f => data[f] === null || data[f] === undefined);
+  data.champs_manquants = requis.filter(f => data[f] == null);
 
   return data;
 }
@@ -446,54 +433,57 @@ function validerCalculs(data) {
 // ──────────────────────────────────────────────────
 // Fonction 1: scanFacture(file, onProgress)
 // ──────────────────────────────────────────────────
-async function scanFacture(file, onProgress) {
-  if (file.type === 'application/pdf') {
+export async function scanFacture(file, onProgress) {
+  if (!window.Tesseract) {
     return {
-      error: 'PDF non supporté. Faites une capture écran ou photo de la facture.',
-      source: 'ocr_tesseract',
-      champs_manquants: ['fournisseur', 'date', 'montant_ht', 'taux_tva', 'montant_ttc'],
+      error: 'Tesseract.js non chargé. Vérifiez votre connexion internet.',
+      champs_manquants: ['all']
     };
   }
 
-  if (file.size > 10 * 1024 * 1024) {
+  if (file?.type === 'application/pdf') {
     return {
-      error: 'Fichier trop volumineux (max 10 Mo).',
-      source: 'ocr_tesseract',
-      champs_manquants: ['fournisseur', 'date', 'montant_ht', 'taux_tva', 'montant_ttc'],
-    };
-  }
-
-  if (typeof Tesseract === 'undefined') {
-    return {
-      error: 'Tesseract.js n\'est pas chargé. Vérifiez votre connexion Internet.',
-      source: 'ocr_tesseract',
-      champs_manquants: ['fournisseur', 'date', 'montant_ht', 'taux_tva', 'montant_ttc'],
+      error: 'PDF détecté — convertissez en image avant OCR.',
+      champs_manquants: ['all']
     };
   }
 
   try {
     onProgress?.(5);
-    const { data } = await Tesseract.recognize(file, 'fra+ara', {
-      logger: (m) => {
-        if (m.status === 'recognizing text') {
-          onProgress?.(Math.round(m.progress * 95) + 5);
+
+    const { data: { text, confidence } } = await window.Tesseract.recognize(
+      file,
+      'fra+ara',
+      {
+        logger: (m) => {
+          if (m.status === 'recognizing text') {
+            onProgress?.(Math.round(m.progress * 100));
+          }
         }
-      },
-    });
+      }
+    );
+
+    onProgress?.(95);
+
+    if (!text || text.trim().length < 10) {
+      return {
+        error: 'Image illisible — utilisez une image plus nette (min 150 DPI)',
+        champs_manquants: ['all'],
+        confidence: 0
+      };
+    }
+
+    const parsed = parseFactureTunisienne(text);
+    parsed.confidence = Math.round(confidence);
+    const validated = validerCalculs(parsed);
 
     onProgress?.(100);
-    return parseFactureTunisienne(data.text);
-  } catch (e) {
-    console.error('scanFacture error:', e);
+    return validated;
+
+  } catch (err) {
     return {
-      fournisseur: null, date: null, numero_facture: null,
-      montant_ht: null, fodec: 0, base_tva: null, taux_tva: null,
-      montant_tva: null, timbre_fiscal: 1.000, retenue_source: 0, taux_rs: 0,
-      montant_ttc: null, net_a_payer: null,
-      categorie_sce: null, code_comptable: null, lignes: [],
-      devise: 'DT', flag_incoherence: false, source: 'ocr_tesseract',
-      confidence: 0, error: 'Échec OCR: ' + e.message,
-      champs_manquants: ['fournisseur', 'date', 'montant_ht', 'taux_tva', 'montant_ttc'],
+      error: `OCR échoué: ${err.message}`,
+      champs_manquants: ['all']
     };
   }
 }

@@ -1705,29 +1705,57 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     }, 1800);
   };
 
-  const handleFileScan = async (e) => {
-    if (!e.target.files || !e.target.files[0]) return;
-    const file = e.target.files[0];
-    setActiveSample(null);
-    setOcrError('');
+  const handleFileScan = async (file) => {
     setOcrProgress(0);
-    setIsAiScan(false);
-    setMode('scanning');
+    setOcrError('');
+    setIsAiScan(true);
+
     try {
-      const parsed = await scanFacture(file, (pct) => setOcrProgress(pct));
-      if (parsed.error) {
-        setOcrError(parsed.error);
-        setMode('choice');
+      let imageData = file;
+
+      if (file?.type === 'application/pdf') {
+        setOcrProgress(10);
+
+        if (!window.pdfjsLib) {
+          throw new Error('pdf.js non chargé — rafraîchissez la page');
+        }
+
+        const arrayBuffer = await file.arrayBuffer();
+        const pdfDoc = await window.pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        const page = await pdfDoc.getPage(1);
+
+        const viewport = page.getViewport({ scale: 2.5 });
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        await page.render({
+          canvasContext: canvas.getContext('2d'),
+          viewport
+        }).promise;
+
+        const blob = await new Promise(res => canvas.toBlob(res, 'image/png'));
+        imageData = new File([blob], 'page1.png', { type: 'image/png' });
+        setOcrProgress(25);
+      }
+
+      const result = await scanFacture(imageData, (pct) => {
+        setOcrProgress(25 + Math.round(pct * 0.75));
+      });
+
+      if (result?.error) {
+        setOcrError(result.error);
+        setIsAiScan(false);
         return;
       }
-      if (parsed.champs_manquants.length > 3) setOcrError('Plusieurs champs non détectés — complétez manuellement.');
-      applyFormData(ocrToFormData(parsed));
-      setIsAiScan(true);
+
+      applyFormData(ocrToFormData(result));
+      setOcrProgress(100);
       setMode('result');
+
     } catch (err) {
-      console.error(err);
-      setMode('choice');
-      alert("Erreur lors du scan : " + err.message);
+      setOcrError(`Erreur: ${err.message}`);
+      setIsAiScan(false);
     }
   };
 
@@ -2241,9 +2269,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
 
           {/* Scanner un fichier */}
           <label className="w-full flex items-center gap-4 p-4 border-2 border-dashed border-slate-700 hover:border-indigo-500/60 rounded-2xl transition-all group cursor-pointer relative">
-            <input type="file" accept="image/png,image/jpeg"
+            <input type="file" accept="image/jpeg,image/png,image/webp,application/pdf"
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              onChange={handleFileScan}
+              onChange={(e) => e.target.files[0] && handleFileScan(e.target.files[0])}
             />
             <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
               <Upload className="w-5 h-5 text-indigo-400" />
