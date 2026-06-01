@@ -71,7 +71,7 @@ export default function Onboarding({ onComplete }) {
               </label>
               <input 
                 required 
-                placeholder="ex: 1234567/A/M/000" 
+                placeholder="ex: 1234567/X/A/M/000" 
                 value={newCompany.vatNumber}
                 onChange={(e) => setNewCompany({ ...newCompany, vatNumber: e.target.value })}
                 className="w-full bg-slate-900/60 border border-slate-700 focus:border-brand-500 rounded-xl px-4 py-3 text-sm text-slate-100 transition-all focus:shadow-[0_0_0_2px_rgba(var(--brand-500),0.2)] outline-none" 

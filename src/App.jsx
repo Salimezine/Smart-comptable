@@ -423,7 +423,7 @@ export default function App() {
               {currentTab === 'invoicing' && 'Créez, gérez et exportez vos factures clients aux normes.'}
               {currentTab === 'suppliers' && 'Gérez vos fournisseurs, consultez les historiques d\'achats et les matricules fiscaux.'}
               {currentTab === 'expenses' && 'Consultez, filtrez et gérez l\'ensemble de vos dépenses enregistrées.'}
-              {currentTab === 'ocr' && 'Déposez vos justificatifs. Notre intelligence artificielle Gemini extrait les montants et taxes.'}
+              {currentTab === 'ocr' && 'Tesseract.js lit vos factures directement dans le navigateur — zéro API, zéro clé, 100% privé'}
               {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
               {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
               {currentTab === 'journal' && 'Consultez et filtrez les écritures comptables par journal (Achats, Ventes, Banque, OD).'}
@@ -1689,7 +1689,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
         </div>
         <div className="col-span-2">
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Matricule Fiscal Fournisseur</label>
-          <input type="text" placeholder="ex: 1234567/A/M/000" value={formData.matriculeFiscal}
+          <input type="text" placeholder="ex: 1234567/X/A/M/000" value={formData.matriculeFiscal}
             onChange={(e) => setFormData(f => ({...f, matriculeFiscal: e.target.value}))}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           />
