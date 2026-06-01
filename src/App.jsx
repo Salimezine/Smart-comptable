@@ -60,8 +60,8 @@ import {
   computeMonthlyChartData,
   generateSimulatedData 
 } from './accountingUtils';
-import { generateInvoiceAI, processPurchaseInvoice } from './geminiService';
-import scanFacture, { CATEGORIES_SCE } from './tesseractOcr';
+import { generateInvoiceAI } from './geminiService';
+import scanFacture, { CATEGORIES_SCE, validerCalculs } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -73,6 +73,111 @@ import JournalView from './JournalView';
 import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll, encryptData, decryptData } from './security';
+
+function normaliserMontant(str) {
+  if (!str) return null;
+  let s = str.toString().replace(/\s/g, '').replace(/DT|TND/gi, '').trim();
+  if (!s) return null;
+  const points = (s.match(/\./g) || []).length;
+  const virgules = (s.match(/,/g) || []).length;
+  if (points > 1) {
+    s = s.replace(/\./g, '');
+    const m = s.match(/(\d{3})$/);
+    if (m) s = s.slice(0, -3) + '.' + m[1];
+  } else if (virgules === 1 && points === 1) {
+    s = s.replace('.', '').replace(',', '.');
+  } else if (virgules === 1) {
+    s = s.replace(',', '.');
+  }
+  const n = parseFloat(s);
+  return isNaN(n) ? null : parseFloat(n.toFixed(3));
+}
+
+function detecterCategorie(text) {
+  const t = text.toLowerCase();
+  if (/ooredoo|telecom|orange|internet|topnet|hexabyte|globalnet/.test(t)) return 'frais_telecommunication';
+  if (/steg|sonede|électricité|gaz|eau/.test(t)) return 'frais_energie';
+  if (/carburant|essence|gasoil|sndp/.test(t)) return 'frais_carburant';
+  if (/loyer|local/.test(t)) return 'loyer';
+  if (/honoraire|consultant|expert|avocat/.test(t)) return 'honoraires';
+  if (/transport|livraison|courrier/.test(t)) return 'frais_transport';
+  if (/assurance/.test(t)) return 'frais_assurance';
+  if (/fourniture|bureau|papier|cartouche|imprimante/.test(t)) return 'fournitures_bureau';
+  if (/informatique|ordinateur|logiciel|serveur/.test(t)) return 'frais_informatique';
+  if (/publicité|marketing|pub/.test(t)) return 'frais_publicite';
+  if (/banque|bancaire|agios/.test(t)) return 'frais_bancaires';
+  return 'services_exterieurs';
+}
+
+function parseTexteFacture(text) {
+  const result = {
+    fournisseur: null, matricule_fiscal: null, date: null, numero_facture: null,
+    montant_ht: null, fodec: 0, base_tva: null, taux_tva: null, montant_tva: null,
+    timbre_fiscal: 1.000, retenue_source: 0, montant_ttc: null, net_a_payer: null,
+    categorie_sce: null, lignes: [], flag_incoherence: false,
+  };
+
+  const numMatch = text.match(/(?:N°|Facture\s*N°?|FAC|INV|FC|FA)\s*[:\s-]*([A-Z0-9][A-Z0-9-]{3,})/i);
+  if (numMatch) result.numero_facture = numMatch[1];
+
+  const dateMatch = text.match(/(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{4})/);
+  if (dateMatch) result.date = `${dateMatch[3]}-${dateMatch[2]}-${dateMatch[1]}`;
+
+  const fournMatch = text.match(/(?:Fournisseur|Vendeur|Société|Ste|Client)\s*[:\-]?\s*(.+)/i);
+  if (fournMatch) result.fournisseur = fournMatch[1].trim();
+
+  const mfMatch = text.match(/(?:MF|Matricule\s*[Ff]iscal[e]?)\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i);
+  if (mfMatch) result.matricule_fiscal = mfMatch[1];
+
+  const tvaMatch = text.match(/TVA\s*(7|13|19)\s*%/i);
+  if (tvaMatch) result.taux_tva = parseInt(tvaMatch[1]);
+
+  const htMatch = text.match(/(?:Total\s+HT|HT)\s*[:\-]?\s*([\d\s.,]+\d)/i);
+  if (htMatch) result.montant_ht = normaliserMontant(htMatch[1]);
+
+  const tvaAmountMatch = text.match(/TVA\s*(?:\d+\s*%)?\s*[:\-]\s*([\d\s.,]+\d)/i);
+  if (tvaAmountMatch) result.montant_tva = normaliserMontant(tvaAmountMatch[1]);
+
+  const ttcMatch = text.match(/(?:TTC|Total\s+TTC|Net\s+[àa]\s+payer)\s*[:\-]?\s*(?::\s*)?([\d\s.,]+\d)/i);
+  if (ttcMatch) result.montant_ttc = normaliserMontant(ttcMatch[1]);
+
+  const fodecMatch = text.match(/FODEC\s*[:\-]?\s*([\d.,]+)/i);
+  if (fodecMatch) result.fodec = normaliserMontant(fodecMatch[1]) || 0;
+
+  const timbreMatch = text.match(/[Tt]imbre\s*[:\-]?\s*([\d.,]+)/i);
+  if (timbreMatch) result.timbre_fiscal = normaliserMontant(timbreMatch[1]);
+
+  const rsMatch = text.match(/(?:Retenue|R\.?S\.?)\s*(?:[àa]\s+la\s+source)?\s*(?:\d+\s*%)?\s*[:\-]?\s*([\d.,]+)/i);
+  if (rsMatch) result.retenue_source = normaliserMontant(rsMatch[1]);
+
+  const ligneRegex = /(?:Désignation|Article|Produit|Service)\s*[:\-]?\s*(.+?)(?:Qté?|Quantité)\s*[:\-]?\s*(\d+).*?(?:PU|Prix\s+[Uu]nitaire)\s*[:\-]?\s*([\d.,]+)/gi;
+  let lm;
+  while ((lm = ligneRegex.exec(text)) !== null) {
+    const qte = parseInt(lm[2]);
+    const pu = normaliserMontant(lm[3]);
+    if (qte > 0 && qte < 99999 && pu !== null) {
+      result.lignes.push({
+        designation: lm[1].replace(/Désignation\s*[:\-]?\s*/i, '').trim(),
+        prix_unitaire: pu,
+        quantite: qte,
+        total: parseFloat((pu * qte).toFixed(3)),
+      });
+    }
+  }
+
+  if (result.montant_ht !== null) {
+    result.base_tva = parseFloat((result.montant_ht + result.fodec).toFixed(3));
+  }
+  if (result.montant_ttc !== null) {
+    result.net_a_payer = parseFloat((result.montant_ttc - result.retenue_source).toFixed(3));
+  }
+
+  const textLower = text.toLowerCase();
+  if (textLower.includes('steg') || textLower.includes('sonede')) result.timbre_fiscal = 0;
+  result.categorie_sce = detecterCategorie(textLower);
+
+  return result;
+}
 
 export default function App() {
   // Security State
@@ -1445,7 +1550,6 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
   const [formData, setFormData] = useState(BLANK_FORM);
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
-  const [purchaseResult, setPurchaseResult] = useState('');
   const [purchaseError, setPurchaseError] = useState('');
 
   const CATEGORIES = [
@@ -1624,17 +1728,40 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     setActiveSample(null);
   };
 
-  const handlePurchaseProcess = async () => {
+  const handleLancerTraitement = () => {
     if (!purchaseInput.trim()) return;
     setPurchaseLoading(true);
     setPurchaseError('');
-    setPurchaseResult('');
+
     try {
-      const text = await processPurchaseInvoice(geminiApiKey, purchaseInput, companyDetails);
-      setPurchaseResult(text);
+      const parsed = parseTexteFacture(purchaseInput);
+      const validated = validerCalculs(parsed);
+      const f = validated.categorie_sce && CATEGORIES_SCE[validated.categorie_sce]
+        ? CATEGORIES_SCE[validated.categorie_sce].label
+        : 'Autres';
+
+      applyFormData({
+        supplier: validated.fournisseur || '',
+        matriculeFiscal: validated.matricule_fiscal || '',
+        date: validated.date || new Date().toISOString().split('T')[0],
+        subtotal: validated.montant_ht != null ? String(validated.montant_ht) : '',
+        vatRate: String(validated.taux_tva || '19'),
+        fodec: validated.fodec != null ? String(validated.fodec) : '0.000',
+        vatAmount: validated.montant_tva != null ? String(validated.montant_tva) : '',
+        stampDuty: validated.timbre_fiscal != null ? String(validated.timbre_fiscal) : '1.000',
+        totalAmount: validated.montant_ttc != null ? String(validated.montant_ttc) : '',
+        category: f,
+        invoiceNumber: validated.numero_facture || '',
+      });
+
+      if (validated.flag_incoherence) {
+        setPurchaseError('⚠️ Incohérence détectée dans les montants — vérifiez manuellement');
+      }
+
+      setPurchaseLoading(false);
+      setMode('result');
     } catch (err) {
-      setPurchaseError(err.message);
-    } finally {
+      setPurchaseError('Erreur de parsing — vérifiez le format du texte');
       setPurchaseLoading(false);
     }
   };
@@ -1964,62 +2091,42 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
                 <button type="button" onClick={() => setMode('choice')}
                   className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Annuler</button>
               </div>
-              {!purchaseResult ? (
-                <div className="space-y-3 flex-1 flex flex-col">
-                  <div>
-                    <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">
-                      Collez ou décrivez la facture fournisseur
-                    </label>
-                    <textarea
-                      placeholder='Ex: Facture d&#39;achat N° FAC-2026-0421 du 15/05/2026
+              <div className="space-y-3 flex-1 flex flex-col">
+                <div>
+                  <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">
+                    Collez ou décrivez la facture fournisseur
+                  </label>
+                  <textarea
+                    placeholder='Ex: Facture d&#39;achat N° FAC-2026-0421 du 15/05/2026
 Fournisseur : Société Tunisienne de Fournitures S.A.
 MF : 1234567/X/A/000
 Désignation : Cartouches d&#39;encre HP LaserJet — Qté : 10 — PU : 85.500 DT — TVA 19%
 Total HT : 855.000 DT — TVA : 162.450 DT — TTC : 1 017.450 DT
 Règlement : Virement à 60 jours'
-                      value={purchaseInput}
-                      onChange={(e) => setPurchaseInput(e.target.value)}
-                      rows={8}
-                      className="w-full bg-slate-950 border border-slate-700 focus:border-purple-500 rounded-xl px-4 py-3 text-slate-100 text-xs focus:outline-none resize-none transition-colors font-mono"
-                    />
-                    <p className="text-[10px] text-slate-500 mt-1.5">Incluez le fournisseur, MF, articles, montants et TVA. L'IA effectuera le workflow complet.</p>
+                    value={purchaseInput}
+                    onChange={(e) => setPurchaseInput(e.target.value)}
+                    rows={8}
+                    className="w-full bg-slate-950 border border-slate-700 focus:border-purple-500 rounded-xl px-4 py-3 text-slate-100 text-xs focus:outline-none resize-none transition-colors font-mono"
+                  />
+                  <p className="text-[10px] text-slate-500 mt-1.5">Le parsing local extrait fournisseur, MF, articles, montants et remplit le formulaire automatiquement.</p>
+                </div>
+                {purchaseError && (
+                  <div className="p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl text-xs text-danger-400 flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4 shrink-0" /> {purchaseError}
                   </div>
-                  {purchaseError && (
-                    <div className="p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl text-xs text-danger-400 flex items-center gap-2">
-                      <AlertCircle className="w-4 h-4 shrink-0" /> {purchaseError}
-                    </div>
+                )}
+                <button
+                  onClick={handleLancerTraitement}
+                  disabled={purchaseLoading || !purchaseInput.trim()}
+                  className="w-full py-3 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-2 disabled:opacity-30 disabled:cursor-not-allowed"
+                >
+                  {purchaseLoading ? (
+                    <><RefreshCw className="w-4 h-4 animate-spin" /> Analyse en cours...</>
+                  ) : (
+                    <><FileText className="w-4 h-4" /> Lancer le traitement</>
                   )}
-                  <button
-                    onClick={handlePurchaseProcess}
-                    disabled={purchaseLoading || !purchaseInput.trim()}
-                    className="w-full py-3 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-2 disabled:opacity-30 disabled:cursor-not-allowed"
-                  >
-                    {purchaseLoading ? (
-                      <><RefreshCw className="w-4 h-4 animate-spin" /> Traitement en cours...</>
-                    ) : (
-                      <><FileText className="w-4 h-4" /> Lancer le traitement</>
-                    )}
-                  </button>
-                </div>
-              ) : (
-                <div className="flex-1 space-y-3 overflow-y-auto">
-                  <div className="prose prose-invert prose-sm prose-brand max-w-none text-xs custom-markdown">
-                    <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{purchaseResult}</ReactMarkdown>
-                  </div>
-                  <div className="flex gap-3 pt-2 border-t border-slate-800">
-                    <button
-                      onClick={() => { setPurchaseInput(''); setPurchaseResult(''); setPurchaseError(''); }}
-                      className="flex-1 py-2.5 bg-brand-500/20 hover:bg-brand-500/30 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30"
-                    >
-                      + Nouveau traitement
-                    </button>
-                    <button onClick={() => setMode('choice')}
-                      className="flex-1 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl">
-                      Terminer
-                    </button>
-                  </div>
-                </div>
-              )}
+                </button>
+              </div>
             </div>
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center space-y-4 text-slate-500 py-12">
