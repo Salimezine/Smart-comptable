@@ -61,7 +61,7 @@ import {
   generateSimulatedData 
 } from './accountingUtils';
 import { generateInvoiceAI } from './geminiService';
-import scanFacture, { CATEGORIES_SCE, validerCalculs } from './tesseractOcr';
+import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN, validerCalculs } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -1546,8 +1546,13 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     totalAmount: '',
     category: 'Autres',
     invoiceNumber: '',
+    rsAmount: '',
   };
   const [formData, setFormData] = useState(BLANK_FORM);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [showRsField, setShowRsField] = useState(false);
+  const [rsRate, setRsRate] = useState('1.5');
+  const [mfValid, setMfValid] = useState(null);
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
   const [purchaseError, setPurchaseError] = useState('');
@@ -1719,6 +1724,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       vatAmount: parseFloat(formData.vatAmount) || 0,
       stampDuty: parseFloat(formData.stampDuty) || 1,
       totalAmount: parseFloat(formData.totalAmount) || 0,
+      rsAmount: parseFloat(formData.rsAmount) || 0,
       category: formData.category,
       invoiceNumber: formData.invoiceNumber,
       status: "VALIDATED"
@@ -1766,8 +1772,38 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     }
   };
 
-  // Formulaire partagé (saisie manuelle + résultat scan)
-  const renderEntryForm = (isManual) => (
+   // Formulaire partagé (saisie manuelle + résultat scan)
+  const renderEntryForm = (isManual) => {
+    const sub = parseFloat(formData.subtotal) || 0;
+    const rate = parseFloat(formData.vatRate) || 19;
+    const fodecVal = parseFloat(formData.fodec) || 0;
+    const stamp = parseFloat(formData.stampDuty) || 1;
+    const rsVal = parseFloat(formData.rsAmount) || 0;
+    const baseCalc = sub + fodecVal;
+    const tvaCalc = baseCalc > 0 ? parseFloat((baseCalc * rate / 100).toFixed(3)) : 0;
+    const ttcCalc = baseCalc > 0 ? parseFloat((baseCalc + tvaCalc + stamp).toFixed(3)) : 0;
+    const netCalc = ttcCalc > 0 ? parseFloat((ttcCalc - rsVal).toFixed(3)) : 0;
+
+    const fournisseurInput = formData.supplier || '';
+    const lowerInput = fournisseurInput.toLowerCase();
+    const suggestions = fournisseurInput.length >= 2
+      ? Object.entries(FOURNISSEURS_TN)
+          .filter(([key]) => key.includes(lowerInput) || lowerInput.includes(key))
+          .slice(0, 6)
+      : [];
+
+    const mfValue = formData.matriculeFiscal || '';
+    const mfPattern = /^\d{7}\/[A-Z]\/[AB]\/[MNPE]\/\d{3}$/;
+    const mfBorder = mfValue.length > 0
+      ? (mfPattern.test(mfValue) ? 'border-green-500/60' : 'border-danger-500/60')
+      : 'border-slate-700';
+
+    const requiredMissing = [];
+    if (!formData.supplier) requiredMissing.push('Fournisseur');
+    if (!formData.date) requiredMissing.push('Date');
+    if (!formData.subtotal && !formData.totalAmount) requiredMissing.push('Sous-total HT ou Total TTC');
+
+    return (
     <form onSubmit={handleConfirmExpense} className="space-y-4 animate-slide-up flex-1 overflow-y-auto">
       <div className="flex justify-between items-center border-b border-slate-800 pb-3">
         <h4 className={`text-sm font-extrabold flex items-center gap-1.5 ${isManual ? 'text-brand-400' : isAiScan ? 'text-accent-400' : 'text-warning-400'}`}>
@@ -1793,33 +1829,61 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       )}
 
       <div className="grid grid-cols-2 gap-3">
-        <div className="col-span-2">
+        <div className="col-span-2 relative">
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Fournisseur / Vendeur *</label>
           <input type="text" required placeholder="ex: Ooredoo Tunisie, STEG, Monoprix..."
             value={formData.supplier}
             onChange={(e) => {
               const val = e.target.value;
               setFormData(f => ({...f, supplier: val}));
-              if (val.length > 2) {
-                const cat = predictCategory(val, '');
-                const vat = predictVatRate(val, cat);
-                setFormData(f => f.supplier === val ? {...f, category: cat, vatRate: String(vat)} : f);
-              }
+              setShowSuggestions(val.length >= 2);
+              if (val.length < 2) setShowSuggestions(false);
             }}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+            onFocus={() => { if (formData.supplier.length >= 2) setShowSuggestions(true); }}
             className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
           />
-          {formData.supplier.length > 2 && (
-            <p className="text-[9px] text-brand-400/70 mt-1 flex items-center gap-1">
-              <Sparkles className="w-3 h-3" /> Suggestion IA : {predictCategory(formData.supplier, '')} — TVA {predictVatRate(formData.supplier, predictCategory(formData.supplier, ''))}%
-            </p>
+          {showSuggestions && suggestions.length > 0 && (
+            <div className="absolute z-20 top-full mt-1 left-0 right-0 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+              {suggestions.map(([key, info]) => (
+                <button
+                  key={key}
+                  type="button"
+                  className="w-full text-left px-4 py-2.5 text-xs text-slate-200 hover:bg-brand-500/20 hover:text-white transition-colors border-b border-slate-800 last:border-0"
+                  onClick={() => {
+                    const label = key.charAt(0).toUpperCase() + key.slice(1);
+                    const cat = info.cat && CATEGORIES_SCE[info.cat] ? CATEGORIES_SCE[info.cat].label : 'Autres';
+                    const stampVal = info.timbre === 0 ? '0.000' : '1.000';
+                    setFormData(f => ({...f, supplier: label, vatRate: String(info.tva || '19'), category: cat, stampDuty: stampVal}));
+                    setShowSuggestions(false);
+                    if (info.rs > 0) { setShowRsField(true); setRsRate(String(info.rs)); }
+                  }}
+                >
+                  <span className="font-semibold">{key}</span>
+                  <span className="text-slate-500 ml-2">TVA {info.tva}% — {info.cat ? info.cat.replace(/_/g, ' ') : 'Autres'}</span>
+                  {info.timbre === 0 && <span className="text-green-400 ml-2">Timbre 0 DT</span>}
+                  {info.rs > 0 && <span className="text-orange-400 ml-2">RS {info.rs}%</span>}
+                </button>
+              ))}
+            </div>
           )}
         </div>
         <div className="col-span-2">
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Matricule Fiscal Fournisseur</label>
-          <input type="text" placeholder="ex: 1234567/X/A/M/000" value={formData.matriculeFiscal}
-            onChange={(e) => setFormData(f => ({...f, matriculeFiscal: e.target.value}))}
-            className="w-full bg-slate-900 border border-slate-700 focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+          <input type="text" placeholder="ex: 1234567/X/A/M/000" value={mfValue}
+            onChange={(e) => {
+              const v = e.target.value;
+              setFormData(f => ({...f, matriculeFiscal: v}));
+              setMfValid(v.length > 0 ? mfPattern.test(v) : null);
+            }}
+            className={`w-full bg-slate-900 border ${mfBorder} focus:border-brand-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors`}
           />
+          {mfValid === false && (
+            <p className="text-[10px] text-danger-400 mt-1">Format attendu: 1234567/X/A/M/000</p>
+          )}
+          {mfValid === true && (
+            <p className="text-[10px] text-green-400 mt-1">Format valide ✓</p>
+          )}
         </div>
         <div>
           <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Date du Reçu *</label>
@@ -1855,12 +1919,10 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             <select value={formData.vatRate}
               onChange={(e) => {
                 const r = parseFloat(e.target.value) || 19;
-                const sub = parseFloat(formData.subtotal) || 0;
                 const fodecVal = parseFloat(formData.fodec) || 0;
                 const baseTva = sub + fodecVal;
                 const vat = baseTva * (r / 100);
-                const amountBeforeStamp = baseTva + vat;
-                const newStamp = getStampDutyForAmount(amountBeforeStamp);
+                const newStamp = getStampDutyForAmount(baseTva + vat);
                 setFormData(f => ({...f, vatRate: e.target.value,
                   vatAmount: sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : '',
                   stampDuty: sub > 0 ? newStamp.toFixed(3) : '1.000',
@@ -1876,12 +1938,11 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             </select>
           </div>
           <div>
-            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase" title="Loi de finances 2026 : 1 DT si &lt;50, 1.5 DT si 50-100, 2 DT si &gt;100 DT">
-              Timbre Fiscal (Auto) ⓘ
+            <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase" title="Loi de finances 2023 : 1 DT forfaitaire">
+              Timbre Fiscal ⓘ
             </label>
             <input type="number" step="0.001" min="0" readOnly value={formData.stampDuty}
               className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-brand-300 text-sm cursor-not-allowed opacity-75"
-              title="Calculé automatiquement selon la Loi de finances 2026"
             />
           </div>
           <div>
@@ -1902,34 +1963,119 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
           </div>
           <div>
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Montant TVA</label>
-            <input type="number" step="0.001" min="0" placeholder="Auto-calculé" value={formData.vatAmount}
+            <input type="number" step="0.001" min="0" placeholder="Auto" value={formData.vatAmount}
               onChange={(e) => setFormData(f => ({...f, vatAmount: e.target.value}))}
               className="w-full bg-slate-950 border border-slate-650 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-300 text-sm focus:outline-none"
             />
           </div>
           <div>
             <label className="block text-[10px] text-warning-400 font-bold mb-1 uppercase">✦ Total TTC *</label>
-            <input type="number" step="0.001" min="0" required placeholder="Montant total payé" value={formData.totalAmount}
+            <input type="text" inputMode="decimal" required placeholder="ex: 1 017,450" value={formData.totalAmount}
               onChange={(e) => handleTotalChange(e.target.value)}
               className="w-full bg-slate-950 border-2 border-warning-500/60 focus:border-warning-400 rounded-xl px-3 py-2 text-warning-300 text-sm font-bold focus:outline-none"
             />
           </div>
         </div>
+
+        {/* RS conditionnel */}
+        <div className="flex items-center gap-3 pt-1">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" checked={showRsField}
+              onChange={(e) => { setShowRsField(e.target.checked); if (!e.target.checked) { setFormData(f => ({...f, rsAmount: ''})); } }}
+              className="w-4 h-4 rounded border-slate-600 bg-slate-800 text-brand-500 focus:ring-brand-500"
+            />
+            <span className="text-[10px] text-slate-400 font-bold uppercase">Retenue à la source applicable</span>
+          </label>
+        </div>
+        {showRsField && (
+          <div className="grid grid-cols-3 gap-3 animate-fade-in">
+            <div>
+              <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux RS</label>
+              <select value={rsRate} onChange={(e) => setRsRate(e.target.value)}
+                className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
+              >
+                <option value="1.5">1,5% — Marchandises/services</option>
+                <option value="3">3% — Personne morale</option>
+                <option value="10">10% — Personne physique</option>
+                <option value="0.5">0,5% — Non identifié</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Montant RS (DT)</label>
+              <input type="number" step="0.001" min="0" placeholder="0.000" value={formData.rsAmount || ''}
+                onChange={(e) => setFormData(f => ({...f, rsAmount: e.target.value}))}
+                className="w-full bg-slate-950 border border-orange-500/40 focus:border-orange-400 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
+              />
+            </div>
+            <div className="flex items-end">
+              <p className="text-[10px] text-orange-400 font-bold pb-2">Net à payer: {netCalc.toFixed(3)} DT</p>
+            </div>
+          </div>
+        )}
+
         <p className="text-[9px] text-slate-500 mt-1">Saisissez le Total TTC ou le Sous-total HT pour mettre à jour les calculs.</p>
       </div>
+
+      {/* Résumé visuel */}
+      {(sub > 0 || parseFloat(formData.totalAmount) > 0) && (
+        <div className="bg-slate-900/80 p-4 rounded-xl border border-slate-700/50 space-y-1.5">
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-400">HT</span>
+            <span className="text-slate-200 font-mono">{sub.toFixed(3)} DT</span>
+          </div>
+          {fodecVal > 0 && (
+            <div className="flex justify-between text-[11px]">
+              <span className="text-slate-400">FODEC</span>
+              <span className="text-slate-200 font-mono">{fodecVal.toFixed(3)} DT</span>
+            </div>
+          )}
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-400">TVA ({rate}%)</span>
+            <span className="text-slate-200 font-mono">{(sub > 0 ? tvaCalc : 0).toFixed(3)} DT</span>
+          </div>
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-400">Timbre fiscal</span>
+            <span className="text-slate-200 font-mono">{stamp.toFixed(3)} DT</span>
+          </div>
+          {rsVal > 0 && (
+            <div className="flex justify-between text-[11px]">
+            <span className="text-orange-400">Retenue source ({rsRate}%)</span>
+            <span className="text-orange-400 font-mono">− {rsVal.toFixed(3)} DT</span>
+          </div>
+          )}
+          <div className="border-t border-slate-700 pt-1.5 mt-1.5 flex justify-between text-xs font-bold">
+            <span className="text-warning-400">TTC</span>
+            <span className="text-warning-400 font-mono">{(sub > 0 ? ttcCalc : parseFloat(formData.totalAmount) || 0).toFixed(3)} DT</span>
+          </div>
+          {rsVal > 0 && (
+            <div className="flex justify-between text-xs font-bold">
+              <span className="text-accent-400">Net à payer</span>
+              <span className="text-accent-400 font-mono">{netCalc.toFixed(3)} DT</span>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Validation errors */}
+      {requiredMissing.length > 0 && (
+        <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
+          <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+          Champs obligatoires manquants : {requiredMissing.join(', ')}
+        </div>
+      )}
 
       <div className="flex gap-3 pt-1">
         <button type="button" onClick={() => { setMode('choice'); setFormData(BLANK_FORM); }}
           className="flex-1 py-2.5 border border-slate-700 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all">
           Annuler
         </button>
-        <button type="submit"
-          className="flex-[2] py-2.5 bg-gradient-brand hover:opacity-90 text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5">
+        <button type="submit" disabled={requiredMissing.length > 0}
+          className="flex-[2] py-2.5 bg-gradient-brand hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5">
           <CheckCircle2 className="w-4 h-4" /> Enregistrer la dépense
         </button>
       </div>
     </form>
-  );
+  );};
 
   return (
     <div className="space-y-6">
