@@ -61,7 +61,7 @@ import {
   generateSimulatedData 
 } from './accountingUtils';
 import { generateInvoiceAI, processPurchaseInvoice } from './geminiService';
-import { scanFacture, parseFactureText, EXEMPLES_TEST } from './tesseractOcr';
+import scanFacture, { CATEGORIES_SCE } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -1543,16 +1543,23 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     }));
   };
 
+  const EXEMPLES_TEST = [
+    { name: 'STE BONJOUR — Facture avec timbre 0,600 (pré-LF2023)', data: { fournisseur: 'STE BONJOUR', date: '2023-03-15', numero_facture: 'FA20BJ001', montant_ht: 884.425, fodec: 0, base_tva: 884.425, taux_tva: 13, montant_tva: 114.975, timbre_fiscal: 0.600, retenue_source: 0, montant_ttc: 1000.000, net_a_payer: 1000.000, categorie_sce: null, code_comptable: null, devise: 'DT', flag_incoherence: false, champs_manquants: [], confidence: 100 } },
+    { name: 'Ooredoo — Facture Télécom (19%)', data: { fournisseur: 'Ooredoo Tunisie', date: '2026-05-15', numero_facture: 'FAC-2026-04521', montant_ht: 132.800, fodec: 0, base_tva: 132.800, taux_tva: 19, montant_tva: 25.232, timbre_fiscal: 1.000, retenue_source: 0, montant_ttc: 159.032, net_a_payer: 159.032, categorie_sce: 'frais_telecommunication', code_comptable: '6248', devise: 'DT', flag_incoherence: false, champs_manquants: [], confidence: 95 } },
+    { name: 'STEG — Facture Électricité (13%, exonéré timbre)', data: { fournisseur: 'STEG', date: '2026-04-28', numero_facture: 'FACT-2026-00312', montant_ht: 85.500, fodec: 0, base_tva: 85.500, taux_tva: 13, montant_tva: 11.115, timbre_fiscal: 0, retenue_source: 0, montant_ttc: 96.615, net_a_payer: 96.615, categorie_sce: 'frais_energie', code_comptable: '6042', devise: 'DT', flag_incoherence: false, champs_manquants: [], confidence: 95 } },
+    { name: 'Monoprix — Fournitures Bureau (19%)', data: { fournisseur: 'Monoprix Tunisie', date: '2026-05-10', numero_facture: 'TKT-2026-7812', montant_ht: 45.200, fodec: 0, base_tva: 45.200, taux_tva: 19, montant_tva: 8.588, timbre_fiscal: 1.000, retenue_source: 0, montant_ttc: 54.788, net_a_payer: 54.788, categorie_sce: 'fournitures_bureau', code_comptable: '6024', devise: 'DT', flag_incoherence: false, champs_manquants: [], confidence: 95 } },
+  ];
+
   function ocrToFormData(r) {
     return {
       supplier: r.fournisseur || '',
-      matriculeFiscal: r.matriculeFiscal || '',
+      matriculeFiscal: r.matricule_fiscal || '',
       date: r.date || new Date().toISOString().split('T')[0],
       subtotal: r.montant_ht != null ? String(r.montant_ht) : '',
       vatRate: String(r.taux_tva || '19'),
-      fodec: '0.000',
-      vatAmount: r.tva != null ? String(r.tva) : '',
-      stampDuty: '1.000',
+      fodec: r.fodec != null ? String(r.fodec) : '0.000',
+      vatAmount: r.montant_tva != null ? String(r.montant_tva) : '',
+      stampDuty: r.timbre_fiscal != null ? String(r.timbre_fiscal) : '1.000',
       totalAmount: r.montant_ttc != null ? String(r.montant_ttc) : '',
       category: r.categorie_sce || 'Autres',
       invoiceNumber: r.numero_facture || '',
@@ -1580,6 +1587,11 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     setMode('scanning');
     try {
       const parsed = await scanFacture(file, (pct) => setOcrProgress(pct));
+      if (parsed.error) {
+        setOcrError(parsed.error);
+        setMode('choice');
+        return;
+      }
       if (parsed.champs_manquants.length > 3) setOcrError('Plusieurs champs non détectés — complétez manuellement.');
       applyFormData(ocrToFormData(parsed));
       setMode('result');
