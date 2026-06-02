@@ -184,29 +184,27 @@ function extraireDernier(patterns, text) {
 // Détection fournisseur
 // ──────────────────────────────────────────────────
 function detectFournisseur(text) {
-  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  const partFournisseur = text.split(/FACTURÉ\s*[ÀA]\s*:/i)[0];
+  const lines = partFournisseur
+    .split(/\r?\n/)
+    .map(l => l.trim())
+    .filter(l => l.length >= 3);
 
-  const explicit = text.match(
-    /(?:Fournisseur|Vendeur|Émetteur)\s*[:\-]\s*([^\n\r]{3,60})/i
-  );
-  if (explicit) {
-    return explicit[1]
-      .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
-      .trim();
-  }
+  const IGNORE = /^(avenue|rue|route|impasse|bd\s|boulevard|bp\s|b\.p\.|1002|1000|tunis|sfax|sousse|bizerte|nabeul|ariana|\+216|tél|tel:|fax|email|e-mail|www\.|http|facture\s+client|relevé|relevé\s+de|facturé|société\s+abc|période|date|n°\s*facture|ref|objet|rib|swift|règlement|virement)/i;
 
-  const stopWords = /^(date|facture|client|objet|ref|n°|avenue|rue|route|bp|tél|tel|email|www|mf|matricule|période|relevé|facturé|société\s+abc|1002|1000)/i;
-
-  for (const line of lines.slice(0, 8)) {
-    if (line.length < 3 || line.length > 65) continue;
-    if (stopWords.test(line)) continue;
+  for (const line of lines) {
+    if (!line || line.length > 65) continue;
+    if (IGNORE.test(line)) continue;
     if (/^\d+$/.test(line)) continue;
-    if (/^\+216/.test(line)) continue;
-    if (/[A-Za-zÀ-ü]/.test(line)) {
-      return line
-        .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
-        .trim();
-    }
+    if (/^\W+$/.test(line)) continue;
+    if (!(/[A-Za-zÀ-ü]{2,}/).test(line)) continue;
+
+    const clean = line
+      .replace(/\s*(MF\s*:|Tél\s*:|Tel\s*:|—{2,}|\|).*/i, '')
+      .replace(/^['\s]+/, '')
+      .trim();
+
+    if (clean.length >= 3) return clean;
   }
   return null;
 }
@@ -251,28 +249,19 @@ function detectDate(text) {
 // Détection matricule fiscal
 // ──────────────────────────────────────────────────
 function detectMF(text) {
-  const textFournisseur = text.split(/FACTURÉ\s+[ÀA]/i)[0];
+  const sections = text.split(/FACTURÉ\s*[ÀA]\s*:/i);
+  const partFournisseur = sections[0] || text;
 
-  const patterns = [
-    /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i,
-    /MF\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
-  ];
+  const MF_REGEX = /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i;
 
-  for (const p of patterns) {
-    const m = textFournisseur.match(p);
-    if (m) {
-      if (m[2]) return `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
-      return m[1];
-    }
-  }
+  const m1 = partFournisseur.match(MF_REGEX);
+  if (m1) return `${m1[1]}/${m1[2]}/${m1[3]}/${m1[4]}/${m1[5]}`;
 
-  for (const p of patterns) {
-    const m = text.match(p);
-    if (m) {
-      if (m[2]) return `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
-      return m[1];
-    }
-  }
+  const mfLabel = text.match(
+    /(?:MF|Matricule\s*[Ff]iscal[e]?)\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i
+  );
+  if (mfLabel) return mfLabel[1].replace(/\\/g, '/');
+
   return null;
 }
 
