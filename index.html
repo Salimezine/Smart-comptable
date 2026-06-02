@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: data:;
+      script-src 'self' 'unsafe-eval' 'unsafe-inline'
+                 https://cdn.jsdelivr.net
+                 https://unpkg.com
+                 blob: data:;
       worker-src 'self' blob: data:;
-      connect-src 'self' blob: data:;
+      connect-src 'self'
+                  https://cdn.jsdelivr.net
+                  https://unpkg.com
+                  blob: data:;
       img-src 'self' data: blob:;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
-      base-uri 'self'; form-action 'self'
+      base-uri 'self';
+      form-action 'self'
     " />
     <title>Smart Comptable — Comptabilité Automatisée & Facturation</title>
     <!-- Google Fonts: Outfit & Inter -->
