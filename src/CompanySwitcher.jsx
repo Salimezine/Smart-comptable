@@ -11,7 +11,6 @@ const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreat
     iban: '',
     bic: '',
     currency: 'TND',
-    geminiApiKey: '',
   });
 
   const handleSelect = (e) => {
@@ -21,7 +20,7 @@ const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreat
 
   const handleCreate = () => {
     onCreateCompany(newCompany);
-    setNewCompany({ name: '', email: '', vatNumber: '', address: '', iban: '', bic: '', currency: 'TND', geminiApiKey: '' });
+    setNewCompany({ name: '', email: '', vatNumber: '', address: '', iban: '', bic: '', currency: 'TND' });
     setShowModal(false);
   };
 
@@ -57,12 +56,9 @@ const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreat
               <input required placeholder="E‑mail *" value={newCompany.email}
                 onChange={(e) => setNewCompany({ ...newCompany, email: e.target.value })}
                 className="bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-slate-100 text-sm" />
-              <input required placeholder="Numéro de TVA *" value={newCompany.vatNumber}
+              <input placeholder="Numéro de TVA *" value={newCompany.vatNumber}
                 onChange={(e) => setNewCompany({ ...newCompany, vatNumber: e.target.value })}
                 className="bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-slate-100 text-sm" />
-              <input placeholder="Clé API Gemini (ou 'local')" value={newCompany.geminiApiKey}
-                onChange={(e) => setNewCompany({ ...newCompany, geminiApiKey: e.target.value })}
-                className="bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-slate-100 text-sm font-mono" />
             </div>
             <div className="flex justify-end gap-2 mt-4">
               <button onClick={() => setShowModal(false)} className="px-3 py-1.5 bg-slate-700 text-slate-300 rounded-xl hover:bg-slate-600 text-sm">

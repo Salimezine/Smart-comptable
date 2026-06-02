@@ -10,7 +10,6 @@ export default function Onboarding({ onComplete }) {
     iban: '',
     bic: '',
     currency: 'TND',
-    geminiApiKey: '',
   });
 
   const handleSubmit = (e) => {
@@ -92,15 +91,13 @@ export default function Onboarding({ onComplete }) {
             
             <div className="space-y-2 md:col-span-2">
               <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                <Code className="w-3.5 h-3.5" /> Clé API n8n / Gemini (Optionnel)
+                <Code className="w-3.5 h-3.5" /> Clé API n8n (Optionnel)
               </label>
               <input 
-                placeholder="Laissez vide ou saisissez 'local' pour simuler" 
-                value={newCompany.geminiApiKey}
-                onChange={(e) => setNewCompany({ ...newCompany, geminiApiKey: e.target.value })}
+                placeholder="Laissez vide pour utiliser l'OCR local"
                 className="w-full bg-slate-900/60 border border-slate-700 focus:border-brand-500 rounded-xl px-4 py-3 text-sm text-slate-100 transition-all focus:shadow-[0_0_0_2px_rgba(var(--brand-500),0.2)] outline-none font-mono" 
               />
-              <p className="text-[10px] text-slate-500 mt-1">Vous pourrez l'ajouter plus tard dans la configuration.</p>
+              <p className="text-[10px] text-slate-500 mt-1">L'OCR Tesseract fonctionne sans clé, 100% local.</p>
             </div>
           </div>
 

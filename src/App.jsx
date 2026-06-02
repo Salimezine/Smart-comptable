@@ -60,7 +60,7 @@ import {
   computeMonthlyChartData,
   generateSimulatedData 
 } from './accountingUtils';
-import { generateInvoiceAI } from './geminiService';
+import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN, validerCalculs } from './tesseractOcr';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
@@ -72,7 +72,7 @@ import FournisseursView from './FournisseursView';
 import JournalView from './JournalView';
 import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
-import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll, encryptData, decryptData } from './security';
+import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
 
 function normaliserMontant(str) {
   if (!str) return null;
@@ -275,13 +275,6 @@ export default function App() {
         setExpenses(data.expenses || []);
 
         const details = { ...(data.companyDetails || {}) };
-        if (pinRef.current && details.geminiApiKey) {
-          const encKey = localStorage.getItem(`sc_enc_api_key_${currentCompanyId}`);
-          if (encKey) {
-            const decrypted = await decryptData(encKey, pinRef.current);
-            if (decrypted) details.geminiApiKey = decrypted;
-          }
-        }
         setCompanyDetails(details);
       }
     };
@@ -293,15 +286,8 @@ export default function App() {
     const saveData = async () => {
       if (!currentCompanyId) return;
 
-      // Encrypt the API key separately if PIN is available
-      if (pinRef.current && companyDetails.geminiApiKey) {
-        const encrypted = await encryptData(companyDetails.geminiApiKey, pinRef.current);
-        localStorage.setItem(`sc_enc_api_key_${currentCompanyId}`, encrypted);
-      }
-
-      // Store company data without the API key in plaintext
+      // Store company data
       const safeDetails = { ...companyDetails };
-      delete safeDetails.geminiApiKey;
 
       setCompanies(prev => {
         const currentData = prev[currentCompanyId] || {};
@@ -324,15 +310,7 @@ export default function App() {
 
   const handleCreateCompany = (details) => {
     const id = `company_${Date.now()}`;
-    
-    // Encrypt API key immediately if PIN is available
-    if (pinRef.current && details.geminiApiKey) {
-      encryptData(details.geminiApiKey, pinRef.current).then(enc => {
-        localStorage.setItem(`sc_enc_api_key_${id}`, enc);
-      });
-    }
     const safeDetails = { ...details };
-    delete safeDetails.geminiApiKey;
     
     const initialData = {
       companyDetails: safeDetails,
@@ -667,7 +645,6 @@ export default function App() {
                 expenses={expenses}
                 onAddExpense={handleAddExpense}
                 formatCurrency={formatCurrency}
-                geminiApiKey={companyDetails.geminiApiKey}
                 companyDetails={companyDetails}
                 setInvoices={setInvoices}
               />
@@ -1064,7 +1041,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     setAiError('');
     try {
       const lastInv = invoices.length > 0 ? invoices[0].invoiceNumber : null;
-      const data = await generateInvoiceAI(companyDetails.geminiApiKey, aiPrompt, companyDetails, lastInv);
+      const data = await generateInvoiceLocal(aiPrompt, companyDetails, lastInv);
       setClientName(data.clientName || '');
       setClientEmail(data.clientEmail || '');
       setDueDate(data.dueDate || '');
@@ -1536,7 +1513,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 /* ==========================================================================
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
-function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, companyDetails, setInvoices }) {
+function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setInvoices }) {
   const [mode, setMode] = useState('choice');
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
@@ -1580,8 +1557,6 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     'Prestations de services', 'Ventes de marchandises', 'Produits financiers',
     'Produits divers', 'Location & Revenus immobiliers', 'Autres produits',
   ];
-
-  const hasValidKey = geminiApiKey && geminiApiKey !== '' && geminiApiKey !== 'local';
 
   const applyFormData = (data) => {
     setFormData({
@@ -1918,7 +1893,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
           {isManual
             ? <><Plus className="w-4 h-4" /> Saisie Manuelle du Justificatif</>
             : isAiScan
-              ? <><CheckCircle2 className="w-4 h-4" /> Extraction IA — Vérifiez et corrigez</>
+              ? <><Scan className="w-4 h-4" /> OCR Local — Vérifiez et corrigez</>
               : <><AlertCircle className="w-4 h-4" /> Données simulées — Corrigez avant d'enregistrer</>
           }
         </h4>
@@ -1930,8 +1905,8 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
         <div className="p-3 bg-warning-500/10 border border-warning-500/30 rounded-xl text-[10px] text-warning-400 flex items-start gap-2">
           <AlertCircle className="w-3.5 h-3.5 shrink-0 mt-0.5" />
           <span>
-            <strong>Ces données sont fictives</strong> — L'IA n'a pas pu lire votre document (clé API invalide ou absente).
-            Corrigez tous les champs ci-dessous. Pour activer le scan réel, ajoutez votre clé dans <strong>⚙️ Configuration</strong>.
+            <strong>Ces données sont fictives</strong> — extraites d'un exemple de test.
+            Corrigez tous les champs ci-dessous avant d'enregistrer.
           </span>
         </div>
       )}
@@ -2233,22 +2208,19 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
   return (
     <div className="space-y-6">
       {/* Bannière OCR local */}
-      {!hasValidKey && (
-        <div className="p-3.5 bg-indigo-500/10 border border-indigo-500/30 rounded-xl flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <Scan className="w-4 h-4 text-indigo-400 shrink-0" />
-            <p className="text-xs text-slate-300">
-              <strong className="text-indigo-400">OCR Local actif.</strong>{' '}
-              Tesseract.js lit vos factures directement dans le navigateur —{' '}
-              <strong>zéro API, zéro clé, 100% privé</strong>.
-              Ajoutez une clé Gemini dans <strong>⚙️ Configuration</strong> pour une extraction améliorée.
-            </p>
-          </div>
-          <span className="text-[10px] font-bold text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-lg shrink-0 bg-indigo-500/10 whitespace-nowrap">
-            Tesseract.js
-          </span>
+      <div className="p-3.5 bg-indigo-500/10 border border-indigo-500/30 rounded-xl flex items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <Scan className="w-4 h-4 text-indigo-400 shrink-0" />
+          <p className="text-xs text-slate-300">
+            <strong className="text-indigo-400">OCR Local actif.</strong>{' '}
+            Tesseract.js lit vos factures directement dans le navigateur —{' '}
+            <strong>zéro API, zéro clé, 100% privé</strong>.
+          </p>
         </div>
-      )}
+        <span className="text-[10px] font-bold text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-lg shrink-0 bg-indigo-500/10 whitespace-nowrap">
+          Tesseract.js
+        </span>
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
@@ -2280,9 +2252,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             </div>
             <div className="text-left">
               <p className="text-sm font-bold text-slate-100">
-                Scanner un fichier{hasValidKey && <span className="text-accent-400 text-[10px] ml-2 font-bold">● GEMINI</span>}
+                Scanner un fichier
               </p>
-              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG, PDF — max 10 Mo — {hasValidKey ? 'Analyse IA Gemini' : 'OCR Local Tesseract'}</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG, PDF — max 10 Mo — OCR Local Tesseract</p>
             </div>
           </label>
 
@@ -2337,16 +2309,12 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
               </div>
               <div className="text-center space-y-1">
                 <h4 className="text-sm font-bold text-slate-200">
-                  {hasValidKey ? 'Analyse Gemini AI...' : 'Analyse OCR Tesseract...'}
+                  Analyse OCR Tesseract...
                 </h4>
                 <p className="text-[11px] text-indigo-400">
-                  {hasValidKey
-                    ? ocrProgress > 0
-                      ? `Gemini analyse le document — ${ocrProgress}%`
-                      : 'Envoi à Gemini AI...'
-                    : ocrProgress > 0
-                      ? `Tesseract analyse le document — ${ocrProgress}%`
-                      : 'Initialisation du moteur OCR...'}
+                  {ocrProgress > 0
+                    ? `Tesseract analyse le document — ${ocrProgress}%`
+                    : 'Initialisation du moteur OCR...'}
                 </p>
               </div>
               {ocrProgress > 0 && (

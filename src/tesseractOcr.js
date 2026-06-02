@@ -434,6 +434,32 @@ function validerCalculs(data) {
 // ──────────────────────────────────────────────────
 // Fonction 1: scanFacture(file, onProgress)
 // ──────────────────────────────────────────────────
+async function preprocessImage(file) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const maxDim = 2000;
+      let { width, height } = img;
+      if (width > maxDim || height > maxDim) {
+        if (width > height) { height = Math.round(height * maxDim / width); width = maxDim; }
+        else { width = Math.round(width * maxDim / height); height = maxDim; }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+        canvas.toBlob(blob => {
+          resolve(new File([blob], file.name, { type: 'image/png' }));
+        }, 'image/png');
+      } else {
+        resolve(file);
+      }
+    };
+    img.src = url;
+  });
+}
+
 async function scanFacture(file, onProgress) {
   if (file?.type === 'application/pdf') {
     return {
@@ -445,7 +471,9 @@ async function scanFacture(file, onProgress) {
   try {
     onProgress?.(5);
 
-    const TIMEOUT_MS = 180000; // 3 min
+    file = await preprocessImage(file);
+
+    const TIMEOUT_MS = 180000;
     const ocrPromise = Tesseract.recognize(
       file,
       'fra+ara',
