@@ -1709,6 +1709,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
     setOcrProgress(0);
     setOcrError('');
     setIsAiScan(true);
+    setMode('scanning');
 
     try {
       let imageData = file;
@@ -1746,6 +1747,7 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
       if (result?.error) {
         setOcrError(result.error);
         setIsAiScan(false);
+        setMode('choice');
         return;
       }
 
