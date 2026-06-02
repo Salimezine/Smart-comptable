@@ -1654,16 +1654,17 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
   ];
 
   function ocrToFormData(r) {
+    const fmt = (v) => v != null ? parseFloat(v).toFixed(3) : '';
     return {
       supplier: r.fournisseur || '',
       matriculeFiscal: r.matricule_fiscal || '',
       date: r.date || new Date().toISOString().split('T')[0],
-      subtotal: r.montant_ht != null ? String(r.montant_ht) : '',
+      subtotal: fmt(r.montant_ht),
       vatRate: String(r.taux_tva || '19'),
-      fodec: r.fodec != null ? String(r.fodec) : '0.000',
-      vatAmount: r.montant_tva != null ? String(r.montant_tva) : '',
-      stampDuty: r.timbre_fiscal != null ? String(r.timbre_fiscal) : '1.000',
-      totalAmount: r.montant_ttc != null ? String(r.montant_ttc) : '',
+      fodec: fmt(r.fodec),
+      vatAmount: fmt(r.montant_tva),
+      stampDuty: fmt(r.timbre_fiscal),
+      totalAmount: fmt(r.montant_ttc),
       category: r.categorie_sce || 'Autres',
       invoiceNumber: r.numero_facture || '',
     };

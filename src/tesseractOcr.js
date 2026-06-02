@@ -184,17 +184,28 @@ function extraireDernier(patterns, text) {
 // Détection fournisseur
 // ──────────────────────────────────────────────────
 function detectFournisseur(text) {
-  const patterns = [
-    /(?:Fournisseur|Vendeur|Émetteur|Société|Ste|SARL|SA|Sté)\s*[:\-]?\s*([^\n\r]{3,60})/i,
-    /^([A-Z][A-Za-z\s&\.]{5,50})$/m,
-  ];
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
 
-  for (const p of patterns) {
-    const m = text.match(p);
-    if (m) {
-      let nom = m[1].trim();
-      nom = nom.replace(/\s*(MF|Tél|Tel|Email|e-mail|www|N°|Matricule).*/i, '').trim();
-      if (nom.length >= 3) return nom;
+  const explicit = text.match(
+    /(?:Fournisseur|Vendeur|Émetteur)\s*[:\-]\s*([^\n\r]{3,60})/i
+  );
+  if (explicit) {
+    return explicit[1]
+      .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
+      .trim();
+  }
+
+  const stopWords = /^(date|facture|client|objet|ref|n°|avenue|rue|route|bp|tél|tel|email|www|mf|matricule|période|relevé|facturé|société\s+abc|1002|1000)/i;
+
+  for (const line of lines.slice(0, 8)) {
+    if (line.length < 3 || line.length > 65) continue;
+    if (stopWords.test(line)) continue;
+    if (/^\d+$/.test(line)) continue;
+    if (/^\+216/.test(line)) continue;
+    if (/[A-Za-zÀ-ü]/.test(line)) {
+      return line
+        .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
+        .trim();
     }
   }
   return null;
@@ -240,10 +251,29 @@ function detectDate(text) {
 // Détection matricule fiscal
 // ──────────────────────────────────────────────────
 function detectMF(text) {
-  const m = RGX_MF.exec(text);
-  if (m) return `${m[1]}/${m[2].toUpperCase()}/${m[3].toUpperCase()}/${m[4].toUpperCase()}/${m[5]}`;
-  const simple = /(\d{7})\s*[\/\\]\s*([A-Z0-9])/i.exec(text);
-  return simple ? `${simple[1]}/${simple[2].toUpperCase()}` : null;
+  const textFournisseur = text.split(/FACTURÉ\s+[ÀA]/i)[0];
+
+  const patterns = [
+    /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i,
+    /MF\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
+  ];
+
+  for (const p of patterns) {
+    const m = textFournisseur.match(p);
+    if (m) {
+      if (m[2]) return `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
+      return m[1];
+    }
+  }
+
+  for (const p of patterns) {
+    const m = text.match(p);
+    if (m) {
+      if (m[2]) return `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
+      return m[1];
+    }
+  }
+  return null;
 }
 
 // ──────────────────────────────────────────────────
@@ -334,10 +364,16 @@ function parseFactureTunisienne(text) {
     }
     // Fallback: première ligne significative (majuscules, min 5 chars)
     if (!result.fournisseur) {
-      for (const line of lines.slice(0, 5)) {
-        if (/^[A-ZÀ-Ü][A-Za-zÀ-ü\s&\.\-]{4,50}$/.test(line) &&
-            !/^(date|facture|client|objet|ref|n°)/i.test(line)) {
-          result.fournisseur = line;
+      const stopWords = /^(date|facture|client|objet|ref|n°|avenue|rue|route|bp|tél|tel|email|www|mf|matricule|période|relevé|facturé|société\s+abc|1002|1000)/i;
+      for (const line of lines.slice(0, 8)) {
+        if (line.length < 3 || line.length > 65) continue;
+        if (stopWords.test(line)) continue;
+        if (/^\d+$/.test(line)) continue;
+        if (/^\+216/.test(line)) continue;
+        if (/[A-Za-zÀ-ü]/.test(line)) {
+          result.fournisseur = line
+            .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
+            .trim();
           break;
         }
       }
@@ -346,13 +382,15 @@ function parseFactureTunisienne(text) {
     // ══════════════════════════════════════════
     // 2. MATRICULE FISCAL — format tunisien exact
     // ══════════════════════════════════════════
+    // Couper à "FACTURÉ À" pour ignorer la partie client
+    const textFournisseurMF = text.split(/FACTURÉ\s+[ÀA]/i)[0];
     const mfPatterns = [
       /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i,
       /MF\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
       /Matricule\s*[Ff]iscal[e]?\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
     ];
     for (const p of mfPatterns) {
-      const m = text.match(p);
+      const m = (textFournisseurMF.match(p) || text.match(p));
       if (m) {
         result.matricule_fiscal = m[1] ||
           `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
