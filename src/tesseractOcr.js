@@ -445,7 +445,8 @@ async function scanFacture(file, onProgress) {
   try {
     onProgress?.(5);
 
-    const { data: { text, confidence } } = await Tesseract.recognize(
+    const TIMEOUT_MS = 180000; // 3 min
+    const ocrPromise = Tesseract.recognize(
       file,
       'fra+ara',
       {
@@ -456,6 +457,12 @@ async function scanFacture(file, onProgress) {
         }
       }
     );
+
+    const timeout = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Délai d\'attente dépassé (3 min)')), TIMEOUT_MS)
+    );
+
+    const { data: { text, confidence } } = await Promise.race([ocrPromise, timeout]);
 
     onProgress?.(95);
 
