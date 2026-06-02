@@ -1,9 +1,10 @@
 /**
  * tesseractOcr.js — OCR local pour factures tunisiennes
  *
- * Stack: Tesseract.js v5 (CDN), window.Tesseract, pdf.js (CDN)
+ * Stack: Tesseract.js v5 (npm), pdf.js (CDN)
  * Conformité: TVA 7/13/19%, FODEC, Timbre LF2023, Retenue Source
  */
+import Tesseract from 'tesseract.js';
 
 // ──────────────────────────────────────────────────
 // 4. DICTIONNAIRE FOURNISSEURS TUNISIENS (40+)
@@ -433,14 +434,7 @@ function validerCalculs(data) {
 // ──────────────────────────────────────────────────
 // Fonction 1: scanFacture(file, onProgress)
 // ──────────────────────────────────────────────────
-export async function scanFacture(file, onProgress) {
-  if (!window.Tesseract) {
-    return {
-      error: 'Tesseract.js non chargé. Vérifiez votre connexion internet.',
-      champs_manquants: ['all']
-    };
-  }
-
+async function scanFacture(file, onProgress) {
   if (file?.type === 'application/pdf') {
     return {
       error: 'PDF détecté — convertissez en image avant OCR.',
@@ -451,7 +445,7 @@ export async function scanFacture(file, onProgress) {
   try {
     onProgress?.(5);
 
-    const { data: { text, confidence } } = await window.Tesseract.recognize(
+    const { data: { text, confidence } } = await Tesseract.recognize(
       file,
       'fra+ara',
       {
