@@ -2280,9 +2280,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
             </div>
             <div className="text-left">
               <p className="text-sm font-bold text-slate-100">
-                Scanner un fichier{hasValidKey && <span className="text-accent-400 text-[10px] ml-2 font-bold">● IA ACTIVE</span>}
+                Scanner un fichier{hasValidKey && <span className="text-accent-400 text-[10px] ml-2 font-bold">● GEMINI</span>}
               </p>
-              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG — (max 10 Mo) — {hasValidKey ? 'Lecture IA Gemini' : 'OCR Local Tesseract.js'}</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG, PDF — max 10 Mo — {hasValidKey ? 'Analyse IA Gemini' : 'OCR Local Tesseract'}</p>
             </div>
           </label>
 
@@ -2337,17 +2337,19 @@ function OcrView({ expenses, onAddExpense, formatCurrency, geminiApiKey, company
               </div>
               <div className="text-center space-y-1">
                 <h4 className="text-sm font-bold text-slate-200">
-                  {hasValidKey ? 'Analyse Gemini IA...' : '🔍 Analyse OCR en cours...'}
+                  {hasValidKey ? 'Analyse Gemini AI...' : 'Analyse OCR Tesseract...'}
                 </h4>
                 <p className="text-[11px] text-indigo-400">
                   {hasValidKey
-                    ? 'Lecture intelligente par Gemini 1.5 Flash...'
+                    ? ocrProgress > 0
+                      ? `Gemini analyse le document — ${ocrProgress}%`
+                      : 'Envoi à Gemini AI...'
                     : ocrProgress > 0
                       ? `Tesseract analyse le document — ${ocrProgress}%`
-                      : 'Initialisation du moteur OCR local...'}
+                      : 'Initialisation du moteur OCR...'}
                 </p>
               </div>
-              {!hasValidKey && (
+              {ocrProgress > 0 && (
                 <div className="w-64 bg-slate-800 rounded-full h-2 overflow-hidden border border-slate-700">
                   <div
                     className="h-full bg-gradient-to-r from-brand-500 to-indigo-500 rounded-full transition-all duration-300 ease-out"
