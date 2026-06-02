@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Tesseract local worker/core/wasm (auto-copied via postinstall)
+public/tesseract/

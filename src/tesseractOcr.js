@@ -743,7 +743,14 @@ async function scanFacture(file, onProgress) {
     file = await preprocessImage(file);
     onProgress?.(10);
 
+    const basePath = window.location.pathname.startsWith('/Smart-comptable/')
+      ? '/Smart-comptable/tesseract/'
+      : '/tesseract/';
+
     worker = await Tesseract.createWorker('fra', 1, {
+      workerPath: basePath + 'worker.min.js',
+      corePath: basePath + 'tesseract-core.wasm.js',
+      langPath: 'https://tessdata.projectnaptha.com/4.0.0',
       logger: (m) => {
         if (m.status === 'recognizing text') {
           onProgress?.(10 + Math.round(m.progress * 85));

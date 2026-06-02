@@ -6,16 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' 'unsafe-eval' 'unsafe-inline'
-                 https://cdn.jsdelivr.net
-                 https://unpkg.com
-                 blob: data:;
-      worker-src 'self' blob: data: https://cdn.jsdelivr.net;
-      connect-src 'self'
-                  https://cdn.jsdelivr.net
-                  https://unpkg.com
-                  blob: data:;
-      img-src 'self' data: blob:;
+      script-src 'self' 'unsafe-eval' blob:;
+      worker-src 'self' blob:;
+      connect-src 'self' blob: data: https://tessdata.projectnaptha.com;
+      img-src 'self' blob: data:;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
       base-uri 'self';
