@@ -445,16 +445,14 @@ async function preprocessImage(file) {
       if (width > maxDim || height > maxDim) {
         if (width > height) { height = Math.round(height * maxDim / width); width = maxDim; }
         else { width = Math.round(width * maxDim / height); height = maxDim; }
-        const canvas = document.createElement('canvas');
-        canvas.width = width; canvas.height = height;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, width, height);
-        canvas.toBlob(blob => {
-          resolve(new File([blob], file.name, { type: 'image/png' }));
-        }, 'image/png');
-      } else {
-        resolve(file);
       }
+      const canvas = document.createElement('canvas');
+      canvas.width = width; canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, width, height);
+      canvas.toBlob(blob => {
+        resolve(new File([blob], file.name, { type: 'image/png' }));
+      }, 'image/png');
     };
     img.src = url;
   });
@@ -470,27 +468,34 @@ async function scanFacture(file, onProgress) {
 
   try {
     onProgress?.(5);
-
     file = await preprocessImage(file);
+    onProgress?.(10);
+
+    let aborted = false;
+    let worker;
 
     const TIMEOUT_MS = 180000;
-    const ocrPromise = Tesseract.recognize(
-      file,
-      'fra+ara',
-      {
+    const timeout = new Promise((_, reject) =>
+      setTimeout(() => { aborted = true; reject(new Error('Délai d\'attente dépassé (3 min)')); }, TIMEOUT_MS)
+    );
+
+    const ocrPromise = (async () => {
+      worker = await Tesseract.createWorker('fra', 1, {
         logger: (m) => {
+          if (aborted) return;
           if (m.status === 'recognizing text') {
-            onProgress?.(Math.round(m.progress * 100));
+            onProgress?.(10 + Math.round(m.progress * 85));
           }
         }
-      }
-    );
-
-    const timeout = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Délai d\'attente dépassé (3 min)')), TIMEOUT_MS)
-    );
+      });
+      if (aborted) { worker.terminate(); throw new Error('aborted'); }
+      await worker.setParameters({ tessedit_pageseg_mode: '6' });
+      if (aborted) { worker.terminate(); throw new Error('aborted'); }
+      return worker.recognize(file);
+    })();
 
     const { data: { text, confidence } } = await Promise.race([ocrPromise, timeout]);
+    await worker?.terminate();
 
     onProgress?.(95);
 
@@ -510,6 +515,7 @@ async function scanFacture(file, onProgress) {
     return validated;
 
   } catch (err) {
+    await worker?.terminate();
     return {
       error: `OCR échoué: ${err.message}`,
       champs_manquants: ['all']
