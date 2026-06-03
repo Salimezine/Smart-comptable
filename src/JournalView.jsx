@@ -238,10 +238,10 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                       <td className="py-4 px-6 font-mono text-slate-300">{e.compte}</td>
                       <td className="py-4 px-6 text-slate-200">{e.libelle}</td>
                       <td className="py-4 px-6 text-right text-danger-400 font-semibold">
-                        {e.debit ? formatCurrency(e.debit) : '-'}
+                        {e.debit != null ? formatCurrency(e.debit) : '-'}
                       </td>
                       <td className="py-4 px-6 text-right text-accent-400 font-semibold">
-                        {e.credit ? formatCurrency(e.credit) : '-'}
+                        {e.credit != null ? formatCurrency(e.credit) : '-'}
                       </td>
                       <td className="py-4 px-6 text-center">
                         <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400">{e.journal}</span>

@@ -19,9 +19,7 @@ export default function ManualEntryView({ formatCurrency }) {
   };
 
   const updateLine = (i, field, value) => {
-    const updated = [...lines];
-    updated[i][field] = value;
-    setLines(updated);
+    setLines(lines.map((line, idx) => idx === i ? { ...line, [field]: value } : line));
   };
 
   const totalDebit = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
