@@ -217,7 +217,7 @@ function correctOCRText(text) {
     t = t.replace(/[  ]/g, ' ');
     t = t.replace(/(\d)\s+(\d{3}[.,])/g, '$1$2');
     t = t.replace(/œ/g, 'oe').replace(/Œ/g, 'OE');
-    t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿]/g, '');
+    t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯±²³´µ¶·¸¹º»¼½¾¿]/g, '');
 
     const corrections = {
       'ednfo': 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info', 'e-dnfo': 'E-info',
@@ -256,20 +256,11 @@ function detectFournisseur(text) {
     const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
 
     // PRIORITÉ 1: label explicite
-    const explicit = text.match(
-      /(?:Fournisseur|Vendeur|Émetteur)\s*[:\-]\s*([^\n\r]{3,60})/i
-    );
-    if (explicit) {
-      return explicit[1].replace(/\s*(MF|Tél|—).*/i, '').trim();
-    }
+    const explicit = text.match(/(?:Fournisseur|Vendeur|Émetteur)\s*[:\-]\s*([^\n\r]{3,60})/i);
+    if (explicit) return explicit[1].replace(/\s*(MF|Tél|—).*/i, '').trim();
 
     // PRIORITÉ 2: couper avant section client/tableau
-    const stopMarkers = [
-      /FACTURÉ\s*[ÀA]/i,
-      /Désignation/i,
-      /N°\s+Date\s+Client/i,
-      /Mohamed|Client/i,
-    ];
+    const stopMarkers = [/FACTURÉ\s*[ÀA]/i, /Désignation/i, /N°\s+Date\s+Client/i, /Mohamed|Client/i];
     let textFournisseur = text;
     for (const marker of stopMarkers) {
       const idx = text.search(marker);
@@ -277,8 +268,7 @@ function detectFournisseur(text) {
     }
 
     const IGNORE = /^(avenue|rue|route|bp|tél|tel|fax|email|www\.|http|\+216|mf|matricule|facture|relevé|période|date|n°|ref|rib|swift|règlement|virement|\d{4,})/i;
-    const linesFiltered = textFournisseur
-      .split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+    const linesFiltered = textFournisseur.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
 
     for (const line of linesFiltered.slice(0, 6)) {
       if (line.length < 2 || line.length > 65) continue;
@@ -286,11 +276,8 @@ function detectFournisseur(text) {
       if (/^\d+$/.test(line)) continue;
       if (/^\W+$/.test(line)) continue;
       if (!(/[A-Za-zÀ-ü]{2,}/).test(line)) continue;
-      const clean = line
-        .replace(/\s*(MF\s*:|Tél\s*:|—{2,}|\|).*/i, '')
-        .replace(/^['\s\[]+/, '')
-        .trim();
-      if (clean.length >= 2) return clean;
+      const clean = line.replace(/\s*(MF\s*:|Tél\s*:|—{2,}|\|).*/i, '').replace(/^['\s\[]+/, '').trim();
+      if (clean.length >= 2) return correctOCRText(clean);
     }
     return null;
   } catch { return null; }
@@ -306,6 +293,10 @@ function detectNumeroFacture(text) {
     /\b([A-Z]{2}\d{2}[A-Z]{2}\d{3,})\b/,
     /N°[^\n]*\n\s*(\d{2,6})\s+\d{2}[\/\-\.]\d{2}[\/\-\.]\d{4}/i,
     /\bN°\s*[:\s]*(\d{2,6})\b/i,
+    // Fallback: "N" sans ° (après correctOCRText l'a retiré)
+    /\bN\s+(\d{1,6})\b/i,
+    // "Facture N° 68 pour Mohamed" (fin de texte)
+    /Facture\s*N°?\s*(\d{1,6})\s*(?:pour|du|dat|\/)/i,
   ];
 
   for (const p of patterns) {

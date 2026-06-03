@@ -31,7 +31,7 @@ export function correctOCRText(text) {
     t = t.replace(/[  ]/g, ' ');
     t = t.replace(/(\d)\s+(\d{3}[.,])/g, '$1$2');
     t = t.replace(/œ/g, 'oe').replace(/Œ/g, 'OE');
-    t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿]/g, '');
+    t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯±²³´µ¶·¸¹º»¼½¾¿]/g, '');
 
     const corrections = {
       ednfo: 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info', 'e-dnfo': 'E-info',
@@ -126,6 +126,10 @@ export function detectNumeroFacture(text) {
       // "Facture N° 68" ou "N° : 68"
       /(?:facture|fact\.?)\s*n[°o°º]?\s*:?\s*(\d{1,6})\b/i,
       /\bN[°o°º]\s*:?\s*(\d{1,6})\b/i,
+      // "N" sans ° (correctOCRText a retiré le °)
+      /\bN\s+(\d{1,6})\b/i,
+      // "Facture N 68 pour Mohamed"
+      /Facture\s*N°?\s*(\d{1,6})\s*(?:pour|du|dat|\/)/i,
       // Ligne commençant par le numéro: "68   16/03/2024   Mohamed"
       /^\s{0,5}(\d{1,4})\s+\d{2}[\/.]\d{2}[\/.]\d{4}/m,
       // "N° ture 68" (OCR lit mal le °)
