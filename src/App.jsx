@@ -45,6 +45,11 @@ import {
   Legend
 } from 'recharts';
 import { jsPDF } from 'jspdf';
+import * as pdfjsLib from 'pdfjs-dist';
+const pdfWorkerSrc = window.location.pathname.startsWith('/Smart-comptable/')
+  ? '/Smart-comptable/pdf.worker.min.js'
+  : '/pdf.worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerSrc;
 import { 
   INITIAL_INVOICES, 
   INITIAL_TRANSACTIONS, 
@@ -1967,12 +1972,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       if (file?.type === 'application/pdf') {
         setOcrProgress(10);
 
-        if (!window.pdfjsLib) {
-          throw new Error('pdf.js non chargé — rafraîchissez la page');
-        }
-
         const arrayBuffer = await file.arrayBuffer();
-        const pdfDoc = await window.pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
         const page = await pdfDoc.getPage(1);
 
         const viewport = page.getViewport({ scale: 2.5 });
