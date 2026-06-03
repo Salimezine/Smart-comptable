@@ -596,7 +596,84 @@ export function detectCategoriesSecondaires(text, fournisseur = '') {
 }
 
 // ─────────────────────────────────────────────
-// 20. detectDate — date facture (DD/MM/YYYY)
+// 20a. normaliserMontant — parse "1 234,567" → 1234.567
+// ─────────────────────────────────────────────
+export function normaliserMontant(str) {
+  if (!str && str !== 0) return null;
+  let s = str.toString()
+    .replace(/\s/g, '')
+    .replace(/DT|TND/gi, '')
+    .replace(/\u00A0/g, '')
+    .trim();
+  if (!s) return null;
+
+  const points = (s.match(/\./g) || []).length;
+  const virgules = (s.match(/,/g) || []).length;
+
+  if (points >= 2) {
+    s = s.replace(/\./g, '');
+    if (s.length > 3) s = s.slice(0, -3) + '.' + s.slice(-3);
+  } else if (points === 1 && virgules === 1) {
+    s = s.replace('.', '').replace(',', '.');
+  } else if (virgules === 1) {
+    s = s.replace(',', '.');
+  }
+
+  const val = parseFloat(s);
+  return isNaN(val) ? null : val;
+}
+
+// ─────────────────────────────────────────────
+// 20b. detectLignes — extraire lignes de facture E-INFO
+// ─────────────────────────────────────────────
+function detectLignes(text) {
+  const lignes = [];
+  const sauts = text.split('\n');
+  const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode)/i;
+
+  // E-INFO format large: catégories, types, désignation, qte, prix unitaire ht, tva%, total ttc
+  const LIGNE_EINFO = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s+(\d+[.,]\d{3})\s+(\d+[.,]\d{3})\s+(?:DT\s*)?$/;
+  // E-INFO tableau réel: [Désignation TVA[|] PrixHT[|] TotalTTC]
+  const LIGNE_EINFO3 = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s*(?:\|\s*)?([\d,]+)\s*(?:\|\s*)?([\d,]+)\s*\]?\s*(?:\|\s*)?$/;
+
+  for (const line of sauts) {
+    const l = line.trim();
+
+    LIGNE_EINFO3.lastIndex = 0;
+    const em3 = LIGNE_EINFO3.exec(l);
+    if (em3) {
+      const des = em3[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        const tva = parseInt(em3[2]);
+        const prix = normaliserMontant(em3[3]);
+        const total = normaliserMontant(em3[4]);
+        if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
+          lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
+          continue;
+        }
+      }
+    }
+
+    LIGNE_EINFO.lastIndex = 0;
+    const em = LIGNE_EINFO.exec(l);
+    if (em) {
+      const des = em[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        const tva = parseInt(em[2]);
+        const prix = normaliserMontant(em[3]);
+        const total = normaliserMontant(em[4]);
+        if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
+          lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
+          continue;
+        }
+      }
+    }
+  }
+  return lignes;
+}
+
+// ─────────────────────────────────────────────
+// 20c. detectDate — date facture (DD/MM/YYYY)
 // ─────────────────────────────────────────────
 const MONTHS = {
   janvier: '01', février: '02', mars: '03', avril: '04', mai: '05', juin: '06',
@@ -607,15 +684,29 @@ export function detectDate(text) {
   try {
     if (!text || typeof text !== 'string') return null;
     const p1 = /(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{4})/;
-    const m1 = p1.exec(text);
-    if (m1) return `${m1[3]}-${m1[2].padStart(2, '0')}-${m1[1].padStart(2, '0')}`;
     const p2 = /(\d{4})[\/\-\.](\d{2})[\/\-\.](\d{2})/;
-    const m2 = p2.exec(text);
-    if (m2) return `${m2[1]}-${m2[2].padStart(2, '0')}-${m2[3].padStart(2, '0')}`;
     const p3 = /(\d{1,2})\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+(\d{4})/i;
-    const m3 = p3.exec(text);
-    if (m3) return `${m3[3]}-${MONTHS[m3[2].toLowerCase()] || '01'}-${m3[1].padStart(2, '0')}`;
-    return null;
+    // Collect all valid dates with positions
+    const dates = [];
+    let m;
+    while ((m = p1.exec(text)) !== null) {
+      dates.push({ date: `${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`, pos: m.index });
+    }
+    while ((m = p2.exec(text)) !== null) {
+      dates.push({ date: `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}`, pos: m.index });
+    }
+    while ((m = p3.exec(text)) !== null) {
+      dates.push({ date: `${m[3]}-${MONTHS[m[2].toLowerCase()]||'01'}-${m[1].padStart(2,'0')}`, pos: m.index });
+    }
+    // Prefer dates near keywords; else last match
+    const kw = /\b(?:Date|date|Le|le|Facture|facture|E[\-\s]INFO|émise|du)\s*[:\-]?\s*$/;
+    let best = null;
+    for (const d of dates) {
+      const before = text.slice(Math.max(0, d.pos - 50), d.pos);
+      if (kw.test(before)) { best = d.date; break; }
+    }
+    if (!best && dates.length > 0) best = dates[dates.length - 1].date;
+    return best || null;
   } catch {
     return null;
   }
@@ -636,17 +727,37 @@ export function parseFactureTunisienne(rawText) {
     const mf            = detectMF(text);
     const numero        = detectNumeroFacture(text);
     const date          = detectDate(text) || null;
-    const totalHT       = detectTotalHT(text);
-    const totalTTC      = detectTotalTTC(text);
-    const tauxTVA       = detectTauxTVA(text);
+    let totalHT       = detectTotalHT(text);
+    let totalTTC      = detectTotalTTC(text);
+    let tauxTVA       = detectTauxTVA(text);
     const timbre        = detectTimbre(text);
     const categorie     = detectCategorie(text, fournisseur || '');
     const categoriesSec = detectCategoriesSecondaires(text, fournisseur || '');
-    const totalTVA      = detectMontantTVA(text);
+    let totalTVA      = detectMontantTVA(text);
     const fodec         = detectFODEC(text);
     const retenueSource = detectRetenueSource(text);
     const modeReglement = detectModeReglement(text);
     const rsInfo        = detectRSPrestation(text, fournisseur || '');
+
+    // Détection lignes + calcul TVA par ligne (taux mixtes)
+    const lignes = detectLignes(text);
+    if (lignes.length > 0) {
+      const withTva = lignes.filter(l => l.tva !== undefined);
+      if (withTva.length === lignes.length) {
+        const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+        const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
+        const sumTVA = sumTotals - sumHT;
+        if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
+        if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
+        const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
+        if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
+        // Taux TVA le plus fréquent
+        const comptage = {};
+        for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
+        const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+        if (best) { tauxTVA = parseInt(best[0]); }
+      }
+    }
 
     // Étape 3: calculs
     const montantHT_num  = totalHT || 0;
