@@ -1,7 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, Save, BookOpen } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
 import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
+
+const PCG_LIBELLES = {
+  '401000': 'Achat fournisseur',
+  '411000': 'Vente client',
+  '512000': 'Opération bancaire',
+  '530000': 'Opération caisse',
+  '601000': 'Achat marchandises',
+  '602000': 'Achat matières premières',
+  '604000': 'Prestation de services reçue',
+  '606000': 'Achat non stocké',
+  '607000': 'Achat marchandises revendues',
+  '611000': 'Sous-traitance',
+  '613000': 'Loyer',
+  '614000': 'Charges locatives',
+  '616000': "Prime d'assurance",
+  '622200': 'Honoraires',
+  '623000': 'Publicité et communication',
+  '624000': 'Frais de transport',
+  '626000': 'Frais télécom et postaux',
+  '627000': 'Frais bancaires',
+  '640000': 'Charges de personnel',
+  '645000': 'Cotisations CNSS',
+  '681000': 'Dotation aux amortissements',
+  '700000': 'Vente de marchandises',
+  '706000': 'Prestations de services',
+  '708000': 'Autres produits',
+  '445000': 'TVA collectée',
+  '44550':  'TVA déductible',
+  '43666':  'CNSS à payer',
+  '43671':  'Retenue à la source',
+};
+
+const LIBELLES_FIXES = [
+  'Achat marchandises',
+  'Vente client',
+  'Règlement fournisseur',
+  'Encaissement client',
+  'Loyer mensuel',
+  'Salaires du mois',
+  'Cotisations CNSS',
+  'TVA à décaisser',
+  'Remboursement emprunt',
+  'Dotation amortissement',
+  'Régularisation fin de mois',
+  'Avoir client',
+  'Note de crédit fournisseur',
+  'Frais bancaires',
+  'Retenue à la source',
+];
 
 const EMPTY_LINE = { compte: '', libelle: '', debit: '', credit: '' };
 
@@ -11,6 +60,24 @@ export default function ManualEntryView({ formatCurrency }) {
   const [journal, setJournal] = useState('OD');
   const [lines, setLines] = useState([{ ...EMPTY_LINE }]);
   const [saved, setSaved] = useState(false);
+  const [libelleSuggestions, setLibelleSuggestions] = useState([]);
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('smart_journal');
+      if (!raw) return;
+      const entries = JSON.parse(raw);
+      if (!Array.isArray(entries)) return;
+      const libelles = new Set();
+      entries.forEach(e => {
+        if (e.libelle && e.libelle.trim()) libelles.add(e.libelle.trim());
+      });
+      const merged = [...new Set([...libelles, ...LIBELLES_FIXES])].sort();
+      setLibelleSuggestions(merged);
+    } catch {
+      setLibelleSuggestions(LIBELLES_FIXES);
+    }
+  }, []);
 
   const addLine = () => setLines([...lines, { ...EMPTY_LINE }]);
 
@@ -23,8 +90,8 @@ export default function ManualEntryView({ formatCurrency }) {
     setLines(lines.map((line, idx) => {
       if (idx !== i) return line;
       const updated = { ...line, [field]: value };
-      if (field === 'compte' && PCG_COMPTES[value] && !line.libelle.trim()) {
-        updated.libelle = PCG_COMPTES[value];
+      if (field === 'compte' && PCG_LIBELLES[value] && !line.libelle.trim()) {
+        updated.libelle = PCG_LIBELLES[value];
       }
       return updated;
     }));
@@ -122,8 +189,13 @@ export default function ManualEntryView({ formatCurrency }) {
                       </td>
                       <td className="py-1.5 px-2">
                         <input type="text" value={l.libelle} onChange={e => updateLine(i, 'libelle', e.target.value)}
-                          placeholder="Libellé de l'écriture"
+                          placeholder="Libellé de l'écriture" list={`libelles-list-${i}`}
                           className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-brand-500" />
+                        <datalist id={`libelles-list-${i}`}>
+                          {libelleSuggestions.map((s, si) => (
+                            <option key={si} value={s} />
+                          ))}
+                        </datalist>
                       </td>
                       <td className="py-1.5 px-2">
                         <input type="number" step="0.001" value={l.debit} onChange={e => updateLine(i, 'debit', e.target.value)}
