@@ -20,7 +20,14 @@ export default function ManualEntryView({ formatCurrency }) {
   };
 
   const updateLine = (i, field, value) => {
-    setLines(lines.map((line, idx) => idx === i ? { ...line, [field]: value } : line));
+    setLines(lines.map((line, idx) => {
+      if (idx !== i) return line;
+      const updated = { ...line, [field]: value };
+      if (field === 'compte' && PCG_COMPTES[value] && !line.libelle.trim()) {
+        updated.libelle = PCG_COMPTES[value];
+      }
+      return updated;
+    }));
   };
 
   const totalDebit = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
