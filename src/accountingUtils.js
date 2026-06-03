@@ -131,7 +131,7 @@ export const formatCurrencyHelper = (val, currency = 'TND') => {
  *   2. Banque = TOTAL PASSIF − Somme(tous les autres éléments de l'Actif)
  *   3. TOTAL ACTIFS = TOTAL PASSIF (équilibre automatique, zéro ajustement)
  */
-export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}, incomeStatement = null) => {
+export const generateBalanceSheet = (invoices = [], expenses = [], transactions = [], customData = {}, incomeStatement = null, stockTotalDT = 0) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
   const pendingRevenue = calculatePendingRevenues(invoices);
   const totalExpenses = calculateTotalExpenses(expenses);
@@ -141,8 +141,8 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const netProfit = is.netProfit;
   const estimatedTax = is.tax;
 
-  const R = Math.max(totalRevenue / 1000, 1);
-  const E = Math.max(totalExpenses / 1000, 1);
+  const R = Math.max(totalRevenue / 1000, 0);
+  const E = Math.max(totalExpenses / 1000, 0);
   const PR = Math.max(pendingRevenue / 1000, 0);
   const BB = Math.max(bankBalance / 1000, 0);
 
@@ -151,7 +151,7 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50)) * 1000) / 1000;
   const socialCapital       = Math.round((customData.capitalSocial ?? Math.min(Math.max(R * 0.20, 5), 30)) * 1000) / 1000;
   const bankLoans           = Math.round((customData.empruntsBancaires ?? Math.min(R * 0.15, 25)) * 1000) / 1000;
-  const stocksAmount        = Math.round((customData.stocks ?? E * 0.10) * 1000) / 1000;
+  const stocksAmount        = Math.round((customData.stocks ?? (stockTotalDT / 1000 || E * 0.10)) * 1000) / 1000;
 
   /* --- Sub-items --- */
   const devCosts      = Math.round(intangibleAssets * 0.3 * 1000) / 1000;
@@ -265,8 +265,8 @@ export const generateIncomeStatement = (invoices = [], expenses = []) => {
   const totalRevenue = invoices.reduce((sum, inv) => sum + (parseFloat(inv.totalAmount) || 0), 0);
   const totalExpenses = expenses.reduce((sum, exp) => sum + (parseFloat(exp.totalAmount) || 0), 0);
   /* Convert to MDT */
-  const R = Math.max(totalRevenue / 1000, 1);
-  const E = Math.max(totalExpenses / 1000, 1);
+  const R = Math.max(totalRevenue / 1000, 0);
+  const E = Math.max(totalExpenses / 1000, 0);
 
   /* --- Produits d'exploitation --- */
   const productSales      = Math.round(R * 0.55 * 1000) / 1000;
@@ -363,9 +363,9 @@ export const calculateFinancialRatios = (invoices = [], expenses = [], transacti
 /**
  * Retourne toutes les données financières structurées pour export
  */
-export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}, customData = {}) => {
+export const getFinancialExportData = (invoices = [], expenses = [], transactions = [], companyDetails = {}, customData = {}, stockTotalDT = 0) => {
   const incomeStatement = generateIncomeStatement(invoices, expenses);
-  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions, customData, incomeStatement);
+  const balanceSheet = generateBalanceSheet(invoices, expenses, transactions, customData, incomeStatement, stockTotalDT);
   const ratios = calculateFinancialRatios(invoices, expenses, transactions);
 
   return {

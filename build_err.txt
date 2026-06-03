@@ -1,0 +1,37 @@
+[31m✗[39m Build failed in 1.43s
+[31merror during build:
+[31mBuild failed with 2 errors:
+
+[31m[builtin:vite-transform] [0mExpected corresponding JSX closing tag for 'form'.
+      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/App.jsx:2284:9 [38;5;246m][0m
+      [38;5;246m│[0m
+ [38;5;246m2227 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mform[38;5;249m [0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mm[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m=[0m[38;5;249m{[0m[38;5;249mh[0m[38;5;249ma[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mm[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249mN[0m[38;5;249ma[0m[38;5;249mm[0m[38;5;249me[0m[38;5;249m=[0m[38;5;249m"[0m[38;5;249ms[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m-[0m[38;5;249my[0m[38;5;249m-[0m[38;5;249m4[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mn[0m[38;5;249mi[0m[38;5;249mm[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m-[0m[38;5;249ms[0m[38;5;249ml[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249me[0m[38;5;249m-[0m[38;5;249mu[0m[38;5;249mp[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249m-[0m[38;5;249m1[0m[38;5;249m [0m[38;5;249mo[0m[38;5;249mv[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249mf[0m[38;5;249ml[0m[38;5;249mo[0m[38;5;249mw[0m[38;5;249m-[0m[38;5;249my[0m[38;5;249m-[0m[38;5;249ma[0m[38;5;249mu[0m[38;5;249mt[0m[38;5;249mo[0m[38;5;249m"[0m[38;5;249m>[0m
+ [38;5;240m     │[0m      ──┬─  
+ [38;5;240m     │[0m        ╰─── Opened here
+ [38;5;240m     │[0m 
+ [38;5;246m2284 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mdiv[38;5;249m>[0m
+ [38;5;240m     │[0m         ─┬─  
+ [38;5;240m     │[0m          ╰─── Expected `</form>`
+[38;5;246m──────╯[0m
+
+[31m[builtin:vite-transform] [0mExpected `,` or `)` but found `Identifier`
+      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/App.jsx:2286:12 [38;5;246m][0m
+      [38;5;246m│[0m
+ [38;5;246m2226 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249m [0m(
+ [38;5;240m     │[0m            ┬  
+ [38;5;240m     │[0m            ╰── Opened here
+ [38;5;240m     │[0m 
+ [38;5;246m2286 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249m [0mclassName[38;5;249m=[0m[38;5;249m"[0m[38;5;249mp[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249m4[0m[38;5;249m"[0m[38;5;249m>[0m
+ [38;5;240m     │[0m            ────┬────  
+ [38;5;240m     │[0m                ╰────── `,` or `)` expected
+[38;5;246m──────╯[0m
+[31m
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/ezzin/Downloads/comptable/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/ezzin/Downloads/comptable/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:18:128)
+    at #build (file:///C:/Users/ezzin/Downloads/comptable/node_modules/rolldown/dist/shared/rolldown-build-9MccaWPU.mjs:3236:34)
+    at async buildEnvironment (file:///C:/Users/ezzin/Downloads/comptable/node_modules/vite/dist/node/chunks/node.js:33137:64)
+    at async Object.build (file:///C:/Users/ezzin/Downloads/comptable/node_modules/vite/dist/node/chunks/node.js:33559:19)
+    at async Object.buildApp (file:///C:/Users/ezzin/Downloads/comptable/node_modules/vite/dist/node/chunks/node.js:33556:153)
+    at async CAC.<anonymous> (file:///C:/Users/ezzin/Downloads/comptable/node_modules/vite/dist/node/cli.js:777:3) {
+  errors: [Getter/Setter]
+}[39m

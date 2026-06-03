@@ -50,7 +50,7 @@ function InputLine({ label, value, onChange }) {
   );
 }
 
-export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency }) {
+export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency, stockTotal = 0 }) {
   const [period, setPeriod] = useState('N');
   const [editing, setEditing] = useState(false);
   const [customData, setCustomData] = useState(() => {
@@ -66,7 +66,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   }, [customData]);
 
   const incomeData = generateIncomeStatement(invoices, expenses);
-  const balanceData = generateBalanceSheet(invoices, expenses, transactions, customData, incomeData);
+  const balanceData = generateBalanceSheet(invoices, expenses, transactions, customData, incomeData, stockTotal);
 
   const updateCustom = (key, val) => {
     const v = parseFloat(val);
@@ -97,7 +97,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </select>
           <button onClick={() => {
             try {
-              exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, customData));
+              exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, customData, stockTotal));
             } catch(e) { console.error('PDF export error:', e); alert('Erreur PDF: ' + e.message); }
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">

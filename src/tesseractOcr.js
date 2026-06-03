@@ -50,6 +50,10 @@ const FOURNISSEURS_TN = {
   'rapid poste':        { cat: 'frais_transport', tva: 19, rs: 0 },
   'aramex':             { cat: 'frais_transport', tva: 19, rs: 0 },
   'ups':                { cat: 'frais_transport', tva: 19, rs: 0 },
+  'e-info':            { cat: 'frais_informatique', tva: 7, rs: 0 },
+  'e info':            { cat: 'frais_informatique', tva: 7, rs: 0 },
+  'einfo':             { cat: 'frais_informatique', tva: 7, rs: 0 },
+  'ednfo':             { cat: 'frais_informatique', tva: 7, rs: 0 },
 };
 
 // ──────────────────────────────────────────────────
@@ -180,33 +184,96 @@ function extraireDernier(patterns, text) {
   return dernier;
 }
 
+const OCR_CORRECTIONS = {
+  'ednfo': 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info',
+  'steg': 'STEG', 'steg ': 'STEG',
+  'sonede': 'SONEDE',
+  'ooredoo': 'Ooredoo', 'ooredoo ': 'Ooredoo',
+  'sndp': 'SNDP', 'sndp ': 'SNDP',
+  'monoprix': 'Monoprix',
+  'carrefour': 'Carrefour',
+  'biat': 'BIAT',
+  'attijari': 'Attijari',
+  'bna': 'BNA',
+};
+
+const BLACKLIST_FOURNISSEUR = [
+  /^timbre\s*fiscal/i,
+  /^fodec/i,
+  /^tva\s*\d/i,
+  /^net\s*[àa]\s*payer/i,
+  /^total\s*ttc/i,
+  /^montant\s*tva/i,
+  /^sous.total/i,
+  /^\d{1,3}[.,]\d{3}$/,
+];
+
+function correctOCRText(text) {
+  try {
+    let t = text;
+    t = t.replace(/\r\n/g, '\n');
+    t = t.replace(/\u00A0/g, ' ');
+    t = t.replace(/[•·]/g, ' ');
+    t = t.replace(/[  ]/g, ' ');
+    t = t.replace(/(\d)\s+(\d{3}[.,])/g, '$1$2');
+    t = t.replace(/œ/g, 'oe').replace(/Œ/g, 'OE');
+    t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿]/g, '');
+
+    const corrections = {
+      'ednfo': 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info', 'e-dnfo': 'E-info',
+      'steg': 'STEG', 'steg ': 'STEG',
+      'sonede': 'SONEDE',
+      '0oredoo': 'Ooredoo', 'ooredoo': 'Ooredoo', 'ooredo': 'Ooredoo',
+      'tunisie tel': 'Tunisie Telecom',
+      'sndp': 'SNDP',
+      'monoprix': 'Monoprix',
+      'carrefour': 'Carrefour',
+      'biat': 'BIAT',
+      'attijari': 'Attijari',
+      'bna': 'BNA',
+    };
+    let lower = t.toLowerCase();
+    for (const [wrong, right] of Object.entries(corrections)) {
+      const re = new RegExp('\\b' + wrong.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
+      if (re.test(lower)) {
+        t = t.replace(re, right);
+        lower = t.toLowerCase();
+      }
+    }
+    t = t.replace(/\s{2,}/g, ' ').trim();
+    return t;
+  } catch {
+    return text;
+  }
+}
+
 // ──────────────────────────────────────────────────
 // Détection fournisseur
 // ──────────────────────────────────────────────────
 function detectFournisseur(text) {
-  const partFournisseur = text.split(/FACTURÉ\s*[ÀA]\s*:/i)[0];
-  const lines = partFournisseur
-    .split(/\r?\n/)
-    .map(l => l.trim())
-    .filter(l => l.length >= 3);
-
-  const IGNORE = /^(avenue|rue|route|impasse|bd\s|boulevard|bp\s|b\.p\.|1002|1000|tunis|sfax|sousse|bizerte|nabeul|ariana|\+216|tél|tel:|fax|email|e-mail|www\.|http|facture\s+client|relevé|relevé\s+de|facturé|société\s+abc|période|date|n°\s*facture|ref|objet|rib|swift|règlement|virement)/i;
-
-  for (const line of lines) {
-    if (!line || line.length > 65) continue;
-    if (IGNORE.test(line)) continue;
-    if (/^\d+$/.test(line)) continue;
-    if (/^\W+$/.test(line)) continue;
-    if (!(/[A-Za-zÀ-ü]{2,}/).test(line)) continue;
-
-    const clean = line
-      .replace(/\s*(MF\s*:|Tél\s*:|Tel\s*:|—{2,}|\|).*/i, '')
-      .replace(/^['\s]+/, '')
-      .trim();
-
-    if (clean.length >= 3) return clean;
+  try {
+    if (!text || typeof text !== 'string') return null;
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const noisePatterns = [
+      /rue|avenue|impasse|boulevard|cité|b\.p|bp\b|tél|tel\b|fax|gsm|mobile|e-?mail|www\.|@/i,
+      /^\d{4,}\s/,
+      /^\d{1,3}[.,]\d{3}/,
+      /^(factur|relev|compt|reç|invoic|devis|périod|objet|mati|n°|numéro|dat|total|rib|iban|cod|banqu|adress)/i,
+    ];
+    for (const line of lines.slice(0, 15)) {
+      if (line.length < 3 || line.length > 70) continue;
+      if (/^[\d\+\-\*\/\.\,\#\(\)\[\]]/.test(line)) continue;
+      const lower = line.toLowerCase().trim();
+      if (BLACKLIST_FOURNISSEUR.some(r => r.test(lower))) continue;
+      if (noisePatterns.some(r => r.test(lower))) continue;
+      if (/^[A-ZÀ-Ü][a-zà-ü]/.test(line) && line.length > 4) {
+        return correctOCRText(line);
+      }
+    }
+    return null;
+  } catch {
+    return null;
   }
-  return null;
 }
 
 // ──────────────────────────────────────────────────
@@ -214,17 +281,18 @@ function detectFournisseur(text) {
 // ──────────────────────────────────────────────────
 function detectNumeroFacture(text) {
   const patterns = [
-    /(?:Facture\s*N°?|N°\s*Facture|N°|Ref|Réf)\s*[:\s]*([A-Z]{2,4}[-\/]?\d{4}[-\/]\d{3,6})/i,
+    /(?:Facture\s*N°?|N°\s*Facture|Ref|Réf)\s*[:\s]*([A-Z0-9]{2,8}[-\/]?\d{2,6}[-\/]?\d{2,6})/i,
     /\b(FAC|INV|FC|FV|FA|BL|DST|OOR|STEG|MPX)[-\/](\d{4})[-\/](\d{3,6})\b/i,
     /\b([A-Z]{2}\d{2}[A-Z]{2}\d{3,})\b/,
-    /(?:Facture|N°)\s*[:\s]*(\d{4,})/i,
+    /N°[^\n]*\n\s*(\d{2,6})\s+\d{2}[\/\-\.]\d{2}[\/\-\.]\d{4}/i,
+    /\bN°\s*[:\s]*(\d{2,6})\b/i,
   ];
 
   for (const p of patterns) {
     const m = text.match(p);
     if (m) {
-      if (m[2] && m[3]) return `${m[1]}-${m[2]}-${m[3]}`;
-      return (m[1] || m[0]).trim();
+      const val = m[2] && m[3] ? `${m[1]}-${m[2]}-${m[3]}` : (m[1] || m[0]).trim();
+      if (val && val.toLowerCase() !== 'ture') return val;
     }
   }
   return null;
@@ -249,20 +317,113 @@ function detectDate(text) {
 // Détection matricule fiscal
 // ──────────────────────────────────────────────────
 function detectMF(text) {
-  const sections = text.split(/FACTURÉ\s*[ÀA]\s*:/i);
-  const partFournisseur = sections[0] || text;
+  try {
+    if (!text || typeof text !== 'string') return null;
 
-  const MF_REGEX = /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i;
+    const clientSectionStart = (() => {
+      const keywords = ['FACTURÉ À', 'ADRESSÉ À', 'LIVRÉ À', 'CLIENT :', 'CLIENT:'];
+      let minIdx = text.length;
+      for (const kw of keywords) {
+        const idx = text.toUpperCase().indexOf(kw);
+        if (idx !== -1 && idx > 50 && idx < minIdx) minIdx = idx;
+      }
+      return minIdx;
+    })();
 
-  const m1 = partFournisseur.match(MF_REGEX);
-  if (m1) return `${m1[1]}/${m1[2]}/${m1[3]}/${m1[4]}/${m1[5]}`;
+    const fournisseurZone = text.substring(0, Math.min(clientSectionStart, text.length));
 
-  const mfLabel = text.match(
-    /(?:MF|Matricule\s*[Ff]iscal[e]?)\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i
-  );
-  if (mfLabel) return mfLabel[1].replace(/\\/g, '/');
+    const patterns = [
+      /(?:M\.?F\.?\s*[:﹕]\s*|Matricule\s*[Ff]iscal\s*[:﹕]\s*)?(\d{6,7}\s*\/\s*[A-Za-z0-9]\s*\/\s*[A-Za-z]\s*\/\s*\d{3})/,
+      /(?:M\.?F\.?\s*[:﹕]\s*|Matricule\s*[Ff]iscal\s*[:﹕]\s*)?(\d{6,7})\s*\/\s*([A-Za-z]{1,3})(?:\s|$|[^\/])/,
+      /\b(\d{6,7})\s*\/\s*([A-Za-z])(?:\s|\/|$|\.)/,
+    ];
 
-  return null;
+    for (const pat of patterns) {
+      const m = fournisseurZone.match(pat);
+      if (m) {
+        if (m[2] && !m[2].includes('/')) return (m[1] + '/' + m[2].toUpperCase()).trim();
+        return m[1].trim();
+      }
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+// ──────────────────────────────────────────────────
+// Génération de numéro de facture unique
+// ──────────────────────────────────────────────────
+function generateInvoiceNumber(existingInvoices = []) {
+  try {
+    const year = new Date().getFullYear();
+    const prefix = `FACT-${year}-`;
+    let maxNum = 0;
+    for (const inv of existingInvoices) {
+      const n = inv.invoiceNumber || inv.numero_facture || '';
+      if (typeof n === 'string' && n.startsWith(prefix)) {
+        const num = parseInt(n.slice(prefix.length), 10);
+        if (!isNaN(num) && num > maxNum) maxNum = num;
+      }
+    }
+    return prefix + String(maxNum + 1).padStart(3, '0');
+  } catch {
+    return `FACT-${new Date().getFullYear()}-001`;
+  }
+}
+
+// ──────────────────────────────────────────────────
+// Persistance fournisseur (localStorage)
+// ──────────────────────────────────────────────────
+const FOURNISSEURS_KEY = 'smart_fournisseurs';
+
+function saveOrUpdateFournisseur(name, detectedData = {}) {
+  try {
+    if (!name || typeof name !== 'string') return;
+    const trimmed = name.trim();
+    if (!trimmed) return;
+    if (BLACKLIST_FOURNISSEUR.some(r => r.test(trimmed))) return;
+
+    let fournisseurs = [];
+    try {
+      const raw = localStorage.getItem(FOURNISSEURS_KEY);
+      if (raw) fournisseurs = JSON.parse(raw);
+    } catch {
+      fournisseurs = [];
+    }
+    if (!Array.isArray(fournisseurs)) fournisseurs = [];
+
+    const existing = fournisseurs.find(
+      f => f && f.nom && f.nom.toLowerCase() === trimmed.toLowerCase()
+    );
+
+    if (existing) {
+      if (detectedData.matriculeFiscal && !existing.matriculeFiscal) {
+        existing.matriculeFiscal = detectedData.matriculeFiscal;
+      }
+      if (detectedData.telephone && !existing.telephone) {
+        existing.telephone = detectedData.telephone;
+      }
+      existing.derniereFacture = detectedData.date || new Date().toISOString().slice(0, 10);
+      existing.totalAchats = (existing.totalAchats || 0) + (parseFloat(detectedData.totalAmount) || 0);
+    } else {
+      fournisseurs.unshift({
+        id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        nom: trimmed,
+        matriculeFiscal: detectedData.matriculeFiscal || '',
+        telephone: detectedData.telephone || '',
+        adresse: detectedData.address || '',
+        totalAchats: parseFloat(detectedData.totalAmount) || 0,
+        derniereFacture: detectedData.date || new Date().toISOString().slice(0, 10),
+        dateCreation: new Date().toISOString(),
+      });
+    }
+
+    localStorage.setItem(FOURNISSEURS_KEY, JSON.stringify(fournisseurs));
+  } catch {
+    /* silencieux */
+  }
 }
 
 // ──────────────────────────────────────────────────
@@ -271,10 +432,33 @@ function detectMF(text) {
 function detectLignes(text) {
   const lignes = [];
   const sauts = text.replace(/\r\n/g, '\n').split('\n');
-  const bruitLigne = /^(total|tva|ht|ttc|net|timbre|fodec|retenue|remise|taux|reference|observation)/i;
+  const bruitLigne = /^(total|tva|ht|ttc|net|timbre|fodec|retenue|remise|taux|reference|observation|base|designation|client)/i;
+  const LIGNE_EINFO = /^(.{5,50}?)\s{2,}(\d{1,3})\s+(0|7|13|19)\s+([\d,]+)\s+([\d,]+)$/;
 
   for (const line of sauts) {
     const l = line.trim();
+
+    // E-INFO format: Désignation  Qte  TVA  PrixHT  TotalTTC
+    LIGNE_EINFO.lastIndex = 0;
+    const em = LIGNE_EINFO.exec(l);
+    if (em) {
+      const des = em[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        const qte = parseInt(em[2]);
+        const prix = normaliserMontant(em[4]);
+        const total = normaliserMontant(em[5]);
+        if (qte > 0 && qte < 99999 && prix !== null && total !== null) {
+          lignes.push({
+            designation: des,
+            prix_unitaire: prix,
+            quantite: qte,
+            total: total,
+          });
+          continue;
+        }
+      }
+    }
+
     RGX_LIGNE.lastIndex = 0;
     let m;
     while ((m = RGX_LIGNE.exec(l)) !== null) {
@@ -316,6 +500,8 @@ function detectLignes(text) {
 // Fonction 2: parseFactureTunisienne(text)
 // ──────────────────────────────────────────────────
 function parseFactureTunisienne(text) {
+  text = correctOCRText(text);
+
   const result = {
     fournisseur: null, matricule_fiscal: null, date: null,
     numero_facture: null, montant_ht: null, fodec: 0,
@@ -329,63 +515,17 @@ function parseFactureTunisienne(text) {
   };
 
   try {
-    const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
     const textLower = text.toLowerCase();
 
     // ══════════════════════════════════════════
-    // 1. FOURNISSEUR — stopper à newline, max 60 chars
+    // 1. FOURNISSEUR
     // ══════════════════════════════════════════
-    const fournPatterns = [
-      /(?:Fournisseur|Vendeur|Émetteur|Prestataire)\s*[:\-]\s*([^\n\r]{3,60})/i,
-      /(?:Société|Ste|Sté|SARL|S\.A\.R\.L|S\.A\.|SNC)\s+([^\n\r,]{3,55})/i,
-    ];
-    for (const p of fournPatterns) {
-      const m = text.match(p);
-      if (m) {
-        let nom = m[1].trim()
-          .replace(/\s*(MF|Tél|Tel|Email|e-mail|www\.|N°|Matricule|—|-{2,}).*/i, '')
-          .trim();
-        if (nom.length >= 3 && nom.length <= 60) {
-          result.fournisseur = nom;
-          break;
-        }
-      }
-    }
-    // Fallback: première ligne significative (majuscules, min 5 chars)
-    if (!result.fournisseur) {
-      const stopWords = /^(date|facture|client|objet|ref|n°|avenue|rue|route|bp|tél|tel|email|www|mf|matricule|période|relevé|facturé|société\s+abc|1002|1000)/i;
-      for (const line of lines.slice(0, 8)) {
-        if (line.length < 3 || line.length > 65) continue;
-        if (stopWords.test(line)) continue;
-        if (/^\d+$/.test(line)) continue;
-        if (/^\+216/.test(line)) continue;
-        if (/[A-Za-zÀ-ü]/.test(line)) {
-          result.fournisseur = line
-            .replace(/\s*(MF|Tél|Tel|—|-{2,}|FACTURÉ).*/i, '')
-            .trim();
-          break;
-        }
-      }
-    }
+    result.fournisseur = detectFournisseur(text);
 
     // ══════════════════════════════════════════
-    // 2. MATRICULE FISCAL — format tunisien exact
+    // 2. MATRICULE FISCAL
     // ══════════════════════════════════════════
-    // Couper à "FACTURÉ À" pour ignorer la partie client
-    const textFournisseurMF = text.split(/FACTURÉ\s+[ÀA]/i)[0];
-    const mfPatterns = [
-      /(\d{7})\s*[\/\\]\s*([A-HJ-NP-TV-Z])\s*[\/\\]\s*([AB])\s*[\/\\]\s*([MNPE])\s*[\/\\]\s*(\d{3})/i,
-      /MF\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
-      /Matricule\s*[Ff]iscal[e]?\s*[:\-]?\s*(\d{7}[\/\\][A-Z][\/\\][A-Z][\/\\][A-Z][\/\\]\d{3})/i,
-    ];
-    for (const p of mfPatterns) {
-      const m = (textFournisseurMF.match(p) || text.match(p));
-      if (m) {
-        result.matricule_fiscal = m[1] ||
-          `${m[1]}/${m[2]}/${m[3]}/${m[4]}/${m[5]}`;
-        break;
-      }
-    }
+    result.matricule_fiscal = detectMF(text);
 
     // ══════════════════════════════════════════
     // 3. DATE — tous formats tunisiens
@@ -412,18 +552,9 @@ function parseFactureTunisienne(text) {
     }
 
     // ══════════════════════════════════════════
-    // 4. NUMÉRO FACTURE — patterns tunisiens précis
+    // 4. NUMÉRO FACTURE
     // ══════════════════════════════════════════
-    const numPatterns = [
-      /(?:N°\s*Facture|Facture\s*N°?|Ref(?:érence)?)\s*[:\s]+([A-Z]{2,4}[-\/]\d{4}[-\/]\d{3,6})/i,
-      /\b((?:FAC|INV|FC|FV|FA|BL|DST|OOR|MPX|STEG)[-\/]\d{4}[-\/]\d{3,6})\b/i,
-      /\b([A-Z]{2}\d{2}[A-Z]{2}\d{3,})\b/,  // FA20BJ001
-      /(?:N°|Num(?:éro)?)\s*[:\s]+(\d{4,})/i,
-    ];
-    for (const p of numPatterns) {
-      const m = text.match(p);
-      if (m) { result.numero_facture = m[1].trim(); break; }
-    }
+    result.numero_facture = detectNumeroFacture(text);
 
     // ══════════════════════════════════════════
     // 5. MONTANT HT — chercher DERNIÈRE occurrence
@@ -431,6 +562,8 @@ function parseFactureTunisienne(text) {
     const htPatterns = [
       /(?:Total\s+HT|Montant\s+HT|Sous[\-\s]total\s+HT|Net\s+HT|Base\s+HT)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
       /\bHT\b\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
+      /Total\s+HT\s+([\d\s\.,]+\d)/gi,
+      /\bHT\b\s*(\d[\d\s\.,]*\d)\s*$/gim,
       /(?:H\.T\.)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
     ];
     for (const p of htPatterns) {
@@ -452,7 +585,8 @@ function parseFactureTunisienne(text) {
 
     // Montant TVA — plusieurs patterns
     const tvaAmtPatterns = [
-      /(?:Montant\s+TVA|TVA\s*(?:\d+\s*%)?\s*[:\-])\s*([\d\s\.,]+\d)/gi,
+      /Total\s+TVA\s+([\d\s\.,]+\d)/gi,
+      /(?:Montant\s+TVA|TVA\s*(?:\d+\s*%)?\s*[:\-])\s{0,30}([\d\s\.,]+\d)/gi,
       /T\.V\.A\.?\s*(?:\d+\s*%)?\s*[:\-]\s*([\d\s\.,]+\d)/gi,
       /TVA\s*(7|13|19)\s*%\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
     ];
@@ -546,46 +680,28 @@ function parseFactureTunisienne(text) {
     }
 
     // ══════════════════════════════════════════
-    // 10. TOTAL TTC / NET À PAYER
+    // 10. TOTAL TTC / NET À PAYER — highest value wins
     // ══════════════════════════════════════════
     const ttcPatterns = [
       /(?:Total\s+TTC|Montant\s+TTC|TOTAL\s+TTC)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
-      /(?:Net\s+[àa]\s+[Pp]ayer|Montant\s+[Nn]et)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
+      /(?:Net\s+[àa]\s+[Pp]ayer|Montant\s+[Nn]et|Net\s+payé)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
+      /NET\s+A\s+PAYER\s+([\d\s\.,]+\d)/gi,
       /(?:المبلغ\s+الجملي|الإجمالي)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
     ];
+    let bestTTC = 0;
     for (const p of ttcPatterns) {
       const matches = [...text.matchAll(p)];
-      if (matches.length > 0) {
-        const last = matches[matches.length - 1];
-        const val = normaliserMontant(last[1]);
-        if (val && val > 0) { result.montant_ttc = val; break; }
+      for (const m of matches) {
+        const val = normaliserMontant(m[1]);
+        if (val && val > bestTTC) bestTTC = val;
       }
     }
+    if (bestTTC > 0) result.montant_ttc = bestTTC;
 
     // ══════════════════════════════════════════
     // 11. LIGNES ARTICLES — tableau facture
     // ══════════════════════════════════════════
-    result.lignes = [];
-    const lignePatterns = [
-      /^(.{3,50}?)\s{2,}([\d\.,]+)\s+([\d]+)\s+([\d\s\.,]+\d)\s*(?:DT)?$/gm,
-      /(?:Désignation|Article|Produit|Service)\s*[:\-]?\s*(.+?)(?:Qté?|Quantité)\s*[:\-]?\s*(\d+).*?(?:PU|P\.U\.|Prix\s+[Uu]nitaire)\s*[:\-]?\s*([\d\.,]+)/gi,
-    ];
-    for (const p of lignePatterns) {
-      const matches = [...text.matchAll(p)];
-      for (const m of matches) {
-        const pu  = normaliserMontant(m[3] || m[2]);
-        const qte = parseInt(m[2] || m[3]);
-        if (pu && qte && !isNaN(qte)) {
-          result.lignes.push({
-            designation:   m[1].trim().replace(/^(Désignation|Article)\s*[:\-]?\s*/i, ''),
-            prix_unitaire: pu,
-            quantite:      qte,
-            total:         parseFloat((pu * qte).toFixed(3))
-          });
-        }
-      }
-      if (result.lignes.length > 0) break;
-    }
+    result.lignes = detectLignes(text);
 
     // ══════════════════════════════════════════
     // 12. AUTO-DÉTECTION FOURNISSEUR → catégorie
@@ -623,7 +739,7 @@ function parseFactureTunisienne(text) {
         result.categorie_sce = 'frais_assurance';
       else if (/fourniture|bureau|papier|cartouche|toner/i.test(searchLower))
         result.categorie_sce = 'fournitures_bureau';
-      else if (/informatique|ordinateur|logiciel|software|hardware/i.test(searchLower))
+      else if (/informatique|ordinateur|logiciel|software|hardware|souris|usb|disque|boitier|imprimante|clavier|écran|ecran|micro|pc|laptop|serveur|ramitech|e.?info/i.test(searchLower))
         result.categorie_sce = 'frais_informatique';
       else if (/publicité|marketing|affiche|banner/i.test(searchLower))
         result.categorie_sce = 'frais_publicite';
@@ -846,4 +962,4 @@ const TEST_STE_BONJOUR = (() => {
 // Exports
 // ──────────────────────────────────────────────────
 export default scanFacture;
-export { parseFactureTunisienne, validerCalculs, CATEGORIES_SCE, FOURNISSEURS_TN, TEST_STE_BONJOUR };
+export { parseFactureTunisienne, validerCalculs, CATEGORIES_SCE, FOURNISSEURS_TN, TEST_STE_BONJOUR, generateInvoiceNumber, saveOrUpdateFournisseur };

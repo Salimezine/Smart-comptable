@@ -62,6 +62,7 @@ import {
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN, validerCalculs } from './tesseractOcr';
+import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, generateInvoiceNumber, saveOrUpdateFournisseur } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -73,6 +74,10 @@ import JournalView from './JournalView';
 import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
+import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
+import { generateTEIFXML, validateTEIF as validateTEIFv2, downloadTEIFXML } from './utils/teifGenerator';
+import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
+import { updateStockFromInvoice } from './utils/stockManager';
 
 function normaliserMontant(str) {
   if (!str) return null;
@@ -224,6 +229,9 @@ export default function App() {
   const [transactions, setTransactions] = useState([]);
   const [expenses, setExpenses] = useState([]);
   const [companyDetails, setCompanyDetails] = useState({});
+  const [piecesComptables, setPiecesComptables] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('piecesComptables') || '[]'); } catch { return []; }
+  });
 
   // PIN initialization
   useEffect(() => {
@@ -363,6 +371,19 @@ export default function App() {
   const bankBalance = totalRevenues - totalExpenses;
   const estimatedTaxes = calculateEstimatedTaxes(totalRevenues);
 
+  const stockTotal = (() => {
+    try {
+      const entries = JSON.parse(localStorage.getItem('STOCK_LOG_KEY') || '[]');
+      const map = {};
+      entries.forEach(e => {
+        if (!map[e.designation]) map[e.designation] = { qte: 0, total: 0 };
+        map[e.designation].qte += (e.type === 'entree' ? 1 : -1) * e.quantite;
+        map[e.designation].total += (e.type === 'entree' ? 1 : -1) * e.quantite * e.prixUnitaire;
+      });
+      return Object.values(map).reduce((sum, v) => sum + Math.max(v.total, 0), 0);
+    } catch { return 0; }
+  })();
+
   // Helpers
   const formatCurrency = (val) => {
     return formatCurrencyHelper(val, companyDetails.currency);
@@ -376,6 +397,14 @@ export default function App() {
   const handleAddExpense = (newExp) => {
     learnFromExpense(newExp);
     setExpenses([newExp, ...expenses]);
+  };
+
+  const handleAddPieceComptable = (piece) => {
+    setPiecesComptables(prev => {
+      const updated = [piece, ...prev];
+      localStorage.setItem('piecesComptables', JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const handleRequestAudit = () => {
@@ -426,6 +455,7 @@ export default function App() {
               { id: 'invoicing', label: 'Factures Client', icon: FileText },
               { id: 'suppliers', label: 'Fournisseurs', icon: Package },
               { id: 'expenses', label: 'Dépenses', icon: TrendingDown },
+              { id: 'stock', label: 'Stock', icon: Package },
               { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
               { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
@@ -503,6 +533,7 @@ export default function App() {
                 {currentTab === 'invoicing' && 'Factures de Ventes'}
                 {currentTab === 'suppliers' && 'Gestion des Fournisseurs'}
                 {currentTab === 'expenses' && 'Toutes les Dépenses'}
+                {currentTab === 'stock' && 'Gestion des Stocks'}
                 {currentTab === 'ocr' && 'Numérisation & OCR'}
                 {currentTab === 'bank' && 'Rapprochement Bancaire'}
                 {currentTab === 'financial' && 'Bilan & Rapport Financier SCE'}
@@ -514,6 +545,7 @@ export default function App() {
               {currentTab === 'invoicing' && 'Créez, gérez et exportez vos factures clients aux normes.'}
               {currentTab === 'suppliers' && 'Gérez vos fournisseurs, consultez les historiques d\'achats et les matricules fiscaux.'}
               {currentTab === 'expenses' && 'Consultez, filtrez et gérez l\'ensemble de vos dépenses enregistrées.'}
+              {currentTab === 'stock' && 'Inventaire, entrées/sorties et valorisation des stocks.'}
               {currentTab === 'ocr' && 'Tesseract.js lit vos factures directement dans le navigateur — zéro API, zéro clé, 100% privé'}
               {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
               {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
@@ -625,6 +657,7 @@ export default function App() {
                 setInvoices={setInvoices}
                 formatCurrency={formatCurrency}
                 companyDetails={companyDetails}
+                onAddPieceComptable={handleAddPieceComptable}
               />
             )}
             {currentTab === 'suppliers' && (
@@ -640,13 +673,18 @@ export default function App() {
                 formatCurrency={formatCurrency}
               />
             )}
+            {currentTab === 'stock' && (
+              <StockView formatCurrency={formatCurrency} />
+            )}
             {currentTab === 'ocr' && (
               <OcrView 
                 expenses={expenses}
+                invoices={invoices}
                 onAddExpense={handleAddExpense}
                 formatCurrency={formatCurrency}
                 companyDetails={companyDetails}
                 setInvoices={setInvoices}
+                onAddPieceComptable={handleAddPieceComptable}
               />
             )}
             {currentTab === 'workflow' && (
@@ -679,6 +717,7 @@ export default function App() {
                 expenses={expenses}
                 transactions={transactions}
                 formatCurrency={formatCurrency}
+                stockTotal={stockTotal}
               />
             )}
             {currentTab === 'journal' && (
@@ -693,6 +732,7 @@ export default function App() {
               <SettingsView 
                 companyDetails={companyDetails}
                 setCompanyDetails={setCompanyDetails}
+                onSetTTNMode={setTTNMode}
               />
             )}
           </div>
@@ -755,18 +795,23 @@ function DashboardView({
   // Évolution de la Trésorerie calculée à partir des données réelles
   const chartData = computeMonthlyChartData(invoices, expenses);
 
+  const [dashTeifMap] = React.useState(() => {
+    try { return JSON.parse(localStorage.getItem('teifStatusMap') || '{}'); } catch { return {}; }
+  });
+
   // Calcul du taux de taxes
   const taxRatio = Math.min((estimatedTaxes / (totalRevenues || 1)) * 100, 100);
 
   return (
     <div className="space-y-6">
-      {/* 4 Cards Métriques */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {/* 5 Cards Métriques */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
         {[
           { title: 'Revenus Encaissés', value: totalRevenues, color: 'text-accent-400', icon: TrendingUp, bg: 'bg-accent-500/10 border-accent-500/20' },
           { title: 'Dépenses Totales', value: totalExpenses, color: 'text-danger-400', icon: TrendingDown, bg: 'bg-danger-500/10 border-danger-500/20' },
           { title: 'Factures en Attente', value: pendingRevenues, color: 'text-warning-400', icon: FileText, bg: 'bg-warning-500/10 border-warning-500/20' },
           { title: 'Solde Trésorerie', value: bankBalance, color: 'text-brand-400', icon: DollarSign, bg: 'bg-brand-500/10 border-brand-500/20' },
+          { title: 'TEIF Acceptées', value: invoices.filter(inv => dashTeifMap[inv.id] === 'accepted').length, color: 'text-indigo-400', icon: Send, bg: 'bg-indigo-500/10 border-indigo-500/20', suffix: true },
         ].map((card, i) => {
           const Icon = card.icon;
           return (
@@ -775,7 +820,7 @@ function DashboardView({
                 <div>
                   <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider">{card.title}</p>
                   <h3 className={`text-2xl font-extrabold mt-2 tracking-tight ${card.color}`}>
-                    {formatCurrency(card.value)}
+                    {card.suffix ? card.value : formatCurrency(card.value)}
                   </h3>
                 </div>
                 <div className={`p-2.5 rounded-xl ${card.bg} border border-slate-700/50`}>
@@ -947,10 +992,11 @@ function DashboardView({
 /* ==========================================================================
    COMPONENT: INVOICING VIEW (LIST & CREATE FACTURE)
    ========================================================================== */
-function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }) {
+function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, onAddPieceComptable }) {
   const [showCreateForm, setShowCreateForm] = useState(false);
   const [clientName, setClientName] = useState('');
   const [clientEmail, setClientEmail] = useState('');
+  const [clientVat, setClientVat] = useState('');
   const [dueDate, setDueDate] = useState('');
   const [aiModalOpen, setAiModalOpen] = useState(false);
   const [aiPrompt, setAiPrompt] = useState('');
@@ -961,7 +1007,18 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
   const [filterDateFrom, setFilterDateFrom] = useState('');
   const [filterDateTo, setFilterDateTo] = useState('');
   const [selectedClient, setSelectedClient] = useState(null);
-  
+  const [teifStatusMap, setTeifStatusMap] = React.useState(() => {
+    try { return JSON.parse(localStorage.getItem('teifStatusMap') || '{}'); } catch { return {}; }
+  });
+  const [teifModal, setTeifModal] = React.useState(null);
+  const [teifXmlContent, setTeifXmlContent] = React.useState('');
+  const [pieceComptableView, setPieceComptableView] = React.useState(null);
+  const [isBatchGenerating, setIsBatchGenerating] = React.useState(false);
+  const [batchProgress, setBatchProgress] = React.useState({ current: 0, total: 0 });
+  const [teifErrorModal, setTeifErrorModal] = React.useState(null);
+
+  React.useEffect(() => { localStorage.setItem('teifStatusMap', JSON.stringify(teifStatusMap)); }, [teifStatusMap]);
+
   // Articles de la facture
   const [items, setItems] = useState([
     { id: Date.now(), description: 'Prestation de développement logiciel', quantity: 1, unitPrice: 1200.000, vatRate: 19 }
@@ -1005,14 +1062,14 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     e.preventDefault();
     if (!clientName || !clientEmail || !dueDate) return;
 
-    const count = invoices.length + 1;
-    const invoiceNum = `FACT-2026-${String(count).padStart(3, '0')}`;
+    const invoiceNum = generateInvoiceNumber(invoices);
 
     const newInvoice = {
       id: `inv-${Date.now()}`,
       invoiceNumber: invoiceNum,
       clientName,
       clientEmail,
+      clientVat,
       issueDate: new Date().toISOString().split('T')[0],
       dueDate,
       subtotal,
@@ -1030,6 +1087,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     // Reset state & hide form
     setClientName('');
     setClientEmail('');
+    setClientVat('');
     setDueDate('');
     setItems([{ id: Date.now(), description: 'Prestation de développement logiciel', quantity: 1, unitPrice: 1200.000, vatRate: 19 }]);
     setShowCreateForm(false);
@@ -1044,6 +1102,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
       const data = await generateInvoiceLocal(aiPrompt, companyDetails, lastInv);
       setClientName(data.clientName || '');
       setClientEmail(data.clientEmail || '');
+      setClientVat(data.clientVat || '');
       setDueDate(data.dueDate || '');
       if (data.items && data.items.length > 0) {
         setItems(data.items.map(item => ({ ...item, id: Date.now() + Math.random() })));
@@ -1082,16 +1141,16 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     doc.setTextColor(30, 41, 59);
     doc.text("ÉMETTEUR :", 20, 55);
     doc.setFont("Helvetica", "normal");
-    doc.text(companyDetails.name, 20, 60);
-    doc.text(companyDetails.address, 20, 65);
-    doc.text(`TVA : ${companyDetails.vatNumber}`, 20, 70);
+    doc.text(companyDetails?.name || companyDetails?.raisonSociale || '', 20, 60);
+    doc.text(companyDetails?.address || '', 20, 65);
+    doc.text(`TVA : ${companyDetails?.vatNumber || ''}`, 20, 70);
 
     // Destinataire
     doc.setFont("Helvetica", "bold");
     doc.text("DESTINATAIRE :", 120, 55);
     doc.setFont("Helvetica", "normal");
-    doc.text(invoice.clientName, 120, 60);
-    doc.text(invoice.clientEmail, 120, 65);
+    doc.text(invoice.clientName || invoice.client || '', 120, 60);
+    doc.text(invoice.clientEmail || '', 120, 65);
 
     // Table Header
     doc.setFillColor(241, 245, 249);
@@ -1105,12 +1164,12 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 
     // Table Lines
     let currentY = 99;
-    invoice.items.forEach(item => {
+    (invoice.items || []).forEach(item => {
       doc.setFont("Helvetica", "normal");
-      doc.text(item.description, 22, currentY);
-      doc.text(String(item.quantity), 115, currentY);
-      doc.text(parseFloat(item.unitPrice).toFixed(3), 135, currentY);
-      doc.text(parseFloat(item.total).toFixed(3), 165, currentY);
+      doc.text(item?.description || '', 22, currentY);
+      doc.text(String(item?.quantity ?? ''), 115, currentY);
+      doc.text(parseFloat(item?.unitPrice || 0).toFixed(3), 135, currentY);
+      doc.text(parseFloat(item?.total || 0).toFixed(3), 165, currentY);
       currentY += 8;
     });
 
@@ -1122,10 +1181,10 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     // Totals Block
     doc.setFont("Helvetica", "bold");
     doc.text("Sous-total HT:", 135, currentY);
-    doc.text(parseFloat(invoice.subtotal).toFixed(3) + " DT", 165, currentY);
+    doc.text(parseFloat(invoice?.subtotal || 0).toFixed(3) + " DT", 165, currentY);
     currentY += 6;
     doc.text("Total TVA:", 135, currentY);
-    doc.text(parseFloat(invoice.vatAmount).toFixed(3) + " DT", 165, currentY);
+    doc.text(parseFloat(invoice?.vatAmount || 0).toFixed(3) + " DT", 165, currentY);
     currentY += 6;
     doc.text("Timbre Fiscal:", 135, currentY);
     doc.text("1.000 DT", 165, currentY);
@@ -1135,7 +1194,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
     doc.setFontSize(11);
     doc.setTextColor(99, 102, 241);
     doc.text("Total TTC:", 135, currentY);
-    doc.text(parseFloat(invoice.totalAmount).toFixed(3) + " DT", 165, currentY);
+    doc.text(parseFloat(invoice?.totalAmount || 0).toFixed(3) + " DT", 165, currentY);
 
     // Dynamic QR Code Conforme EPC (Mock)
     currentY += 15;
@@ -1153,6 +1212,97 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 
     // Save document
     doc.save(`${invoice.invoiceNumber}_${invoice.clientName.replace(/\s+/g, '_')}.pdf`);
+  };
+
+  const handleGenerateTEIF = async (invoice) => {
+    setTeifModal(invoice);
+    setTeifXmlContent('');
+    try {
+      const teifInvoice = {
+        id: invoice.invoiceNumber || invoice.id,
+        dateEmission: invoice.issueDate || invoice.date || new Date().toISOString().slice(0, 10),
+        type: '380',
+        timbre: parseFloat(invoice.stampDuty) || 0,
+        fournisseur: {
+          matriculeFiscal: companyDetails.matriculeFiscal || '',
+          nom: companyDetails.companyName || '',
+          adresse: companyDetails.address || '',
+          rne: companyDetails.rne || '',
+        },
+        client: {
+          matriculeFiscal: invoice.clientVat || '',
+          nom: invoice.clientName || 'Client',
+          adresse: invoice.clientAddress || '',
+        },
+        lignes: (invoice.items || [{
+          designation: invoice.category || 'Prestation',
+          quantite: 1,
+          prixUnitaireHT: invoice.subtotal || 0,
+          tauxTVA: 19,
+        }]).map(item => ({
+          designation: item.description || item.designation || 'Prestation',
+          quantite: item.quantity || 1,
+          prixUnitaireHT: parseFloat(item.unitPrice || item.prixUnitaireHT || invoice.subtotal) || 0,
+          tauxTVA: parseFloat(item.vatRate || item.tauxTVA || 19),
+          fodec: parseFloat(item.fodec || 0),
+        })),
+      };
+      const gen = generateTEIFXML(teifInvoice);
+      if (gen.error) throw new Error(gen.error);
+      setTeifXmlContent(gen.xml);
+      setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'generated' }));
+      const valid = validateTEIFv2(gen.xml);
+      if (!valid.valid) {
+        setTeifErrorModal({ title: 'Erreur de validation TEIF', errors: valid.errors });
+        return;
+      }
+      const response = await sendToTTN(gen.xml, { ttnMode: getTTNMode() });
+      if (response.status === 'accepted') {
+        setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'submitted' }));
+        const handled = await handleTTNResponse(teifInvoice, response);
+        if (handled.success) {
+          setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'accepted' }));
+          onAddPieceComptable && onAddPieceComptable({ id: handled.pieceId, ttnId: handled.ttnId, date: teifInvoice.dateEmission, journal: 'VNT', reference: teifInvoice.id, total: gen.totalTTC });
+          setTeifModal(null);
+        } else {
+          setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'failed' }));
+          setTeifErrorModal({ title: 'Rejet TTN', errors: handled.errors || ['Rejeté'] });
+        }
+      } else if (response.status === 'rejected') {
+        setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'failed' }));
+        setTeifErrorModal({ title: 'Échec TTN', errors: (response.errors || []).map(e => e.message || e) });
+      } else {
+        setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'submitted' }));
+      }
+    } catch (err) {
+      setTeifStatusMap(prev => ({ ...prev, [invoice.id]: 'failed' }));
+      setTeifErrorModal({ title: 'Erreur TEIF', errors: [err.message] });
+    }
+  };
+
+  const handleViewPieceComptable = (invoice) => {
+    const status = teifStatusMap[invoice.id];
+    if (status === 'accepted' || status === 'generated') {
+      try {
+        const teifData = fromInvoice(invoice, companyDetails);
+        const piece = oldCreatePieceComptable(teifData, invoice.id);
+        setPieceComptableView(piece);
+      } catch (err) {
+        setTeifErrorModal({ title: 'Erreur écriture comptable', errors: [err.message] });
+      }
+    }
+  };
+
+  const handleBatchGenerateTEIF = async () => {
+    const pending = invoices.filter(inv => !teifStatusMap[inv.id] || teifStatusMap[inv.id] === 'failed');
+    if (pending.length === 0) return;
+    setIsBatchGenerating(true);
+    for (let i = 0; i < pending.length; i++) {
+      setBatchProgress({ current: i + 1, total: pending.length });
+      await handleGenerateTEIF(pending[i]);
+    }
+    setIsBatchGenerating(false);
+    setBatchProgress({ current: 0, total: 0 });
   };
 
   return (
@@ -1176,6 +1326,13 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
             >
               {showCreateForm ? 'Annuler' : 'Créer une facture'}
             </button>
+            {invoices.some(inv => !teifStatusMap[inv.id] || teifStatusMap[inv.id] === 'failed') && (
+              <button onClick={handleBatchGenerateTEIF} disabled={isBatchGenerating} className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-semibold transition-colors">
+                {isBatchGenerating
+                  ? `📨 TEIF ${batchProgress.current}/${batchProgress.total}...`
+                  : `📨 Générer TEIF (${invoices.filter(inv => !teifStatusMap[inv.id] || teifStatusMap[inv.id] === 'failed').length})`}
+              </button>
+            )}
           </div>
         </div>
 
@@ -1195,6 +1352,16 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
                 placeholder="ex: Wayne Enterprises"
                 value={clientName}
                 onChange={(e) => setClientName(e.target.value)}
+                className="w-full bg-slate-900/60 border border-slate-850 focus:border-brand-500 rounded-xl px-4 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
+              />
+            </div>
+            <div>
+              <label className="block text-xs text-slate-400 font-bold mb-2 uppercase">MF Client</label>
+              <input 
+                type="text" 
+                placeholder="Matricule Fiscal du client"
+                value={clientVat}
+                onChange={(e) => setClientVat(e.target.value)}
                 className="w-full bg-slate-900/60 border border-slate-850 focus:border-brand-500 rounded-xl px-4 py-2.5 text-slate-100 text-sm focus:outline-none transition-colors"
               />
             </div>
@@ -1387,6 +1554,37 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
                         }`}>
                           {inv.status === 'PAID' ? 'Payée' : inv.status === 'SENT' ? 'Envoyée' : 'Retard'}
                         </span>
+                        {teifStatusMap[inv.id] && (
+                          <div className="flex items-center gap-1.5 mt-1 justify-center">
+                            <span className={`inline-block w-1.5 h-1.5 rounded-full ${
+                              teifStatusMap[inv.id] === 'accepted' ? 'bg-emerald-400' :
+                              teifStatusMap[inv.id] === 'submitted' ? 'bg-blue-400' :
+                              teifStatusMap[inv.id] === 'generated' ? 'bg-amber-400' :
+                              'bg-red-400'
+                            }`} />
+                            <span className={`text-[10px] font-medium ${
+                              teifStatusMap[inv.id] === 'accepted' ? 'text-emerald-400' :
+                              teifStatusMap[inv.id] === 'submitted' ? 'text-blue-400' :
+                              teifStatusMap[inv.id] === 'generated' ? 'text-amber-400' :
+                              'text-red-400'
+                            }`}>
+                              {teifStatusMap[inv.id] === 'accepted' ? 'TEIF ✓' :
+                               teifStatusMap[inv.id] === 'submitted' ? 'Soumis' :
+                               teifStatusMap[inv.id] === 'generated' ? 'Généré' :
+                               'Échec'}
+                            </span>
+                            {(teifStatusMap[inv.id] === 'accepted' || teifStatusMap[inv.id] === 'generated') && (
+                              <button onClick={() => handleViewPieceComptable(inv)} className="text-[10px] text-amber-400 hover:text-amber-300 underline" title="Voir l'écriture comptable">
+                                📒 PC
+                              </button>
+                            )}
+                            {teifStatusMap[inv.id] === 'failed' && (
+                              <button onClick={() => handleGenerateTEIF(inv)} className="text-[10px] text-red-400 hover:text-red-300 underline">
+                                Réessayer
+                              </button>
+                            )}
+                          </div>
+                        )}
                       </td>
                       <td className="py-4 px-6 text-right">
                         <div className="flex justify-end gap-1.5">
@@ -1406,7 +1604,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
                             className="p-2 bg-slate-800 hover:bg-slate-700 text-indigo-400 rounded-xl border border-slate-700/50" title="PDF">
                             <Download className="w-3.5 h-3.5" />
                           </button>
-                          <button onClick={() => { if (window.confirm(`Supprimer la facture ${inv.invoiceNumber} ?`)) setInvoices(invoices.filter(x => x.id !== inv.id)); }}
+                          <button onClick={() => { if (window.confirm(`Supprimer la facture ${inv.invoiceNumber} ?`)) { setInvoices(invoices.filter(x => x.id !== inv.id)); setTeifStatusMap(prev => { const n = {...prev}; delete n[inv.id]; return n; }); } }}
                             className="p-2 bg-slate-800 hover:bg-danger-500/20 text-danger-400 rounded-xl border border-slate-700/50" title="Supprimer">
                             <Trash2 className="w-3.5 h-3.5" />
                           </button>
@@ -1417,6 +1615,71 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
                 )}
               </tbody>
             </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {teifModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setTeifModal(null)}>
+          <div className="relative w-full max-w-3xl max-h-[85vh] overflow-auto rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-sm font-bold text-slate-200">📄 TEIF — {teifModal.numero || 'Sans numéro'}</h3>
+              <button onClick={() => setTeifModal(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+            </div>
+            <pre className="text-[10px] text-slate-300 bg-slate-900/80 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap break-all max-h-[60vh]">{teifXmlContent || 'Génération en cours...'}</pre>
+            <div className="flex justify-end gap-2 mt-4">
+              {teifXmlContent && <button onClick={() => downloadTEIFXML(teifXmlContent, teifModal.invoiceNumber || teifModal.id)} className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs">Télécharger XML</button>}
+              <button onClick={() => setTeifModal(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs">Fermer</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {pieceComptableView && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setPieceComptableView(null)}>
+          <div className="relative w-full max-w-lg rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-sm font-bold text-slate-200">📒 Écriture Comptable</h3>
+              <button onClick={() => setPieceComptableView(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+            </div>
+            <div className="space-y-2 text-xs">
+              <div className="flex justify-between"><span className="text-slate-400">Journal:</span><span className="text-slate-200 font-medium">{pieceComptableView.journal}</span></div>
+              <div className="flex justify-between"><span className="text-slate-400">Date:</span><span className="text-slate-200 font-medium">{pieceComptableView.date}</span></div>
+              <div className="flex justify-between"><span className="text-slate-400">Pièce:</span><span className="text-slate-200 font-medium">{pieceComptableView.pieceRef}</span></div>
+              <div className="border-t border-slate-700/60 my-2" />
+              <div className="font-bold text-slate-300 mb-1">Lignes d'écriture:</div>
+              {pieceComptableView.lignes?.map((l, i) => (
+                <div key={i} className={`p-2 rounded-lg ${i === 0 ? 'bg-red-900/20' : 'bg-emerald-900/20'}`}>
+                  <div className="flex justify-between"><span className="text-slate-400">{l.compte}</span><span className="text-slate-200">{l.libelle}</span></div>
+                  <div className="flex justify-between text-[10px]"><span className="text-slate-500">Débit:</span><span className="text-slate-300">{formatCurrency(l.debit)}</span></div>
+                  <div className="flex justify-between text-[10px]"><span className="text-slate-500">Crédit:</span><span className="text-slate-300">{formatCurrency(l.credit)}</span></div>
+                </div>
+              ))}
+              <div className="border-t border-slate-700/60 my-2" />
+              <div className="flex justify-between font-bold"><span className="text-slate-400">Total:</span><span className="text-slate-200">{formatCurrency(pieceComptableView.total)}</span></div>
+            </div>
+            <div className="flex justify-end gap-2 mt-4">
+              <button onClick={() => setPieceComptableView(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs">Fermer</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {teifErrorModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setTeifErrorModal(null)}>
+          <div className="relative w-full max-w-md rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-sm font-bold text-red-400">⚠️ {teifErrorModal.title}</h3>
+              <button onClick={() => setTeifErrorModal(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+            </div>
+            <div className="space-y-2">
+              {teifErrorModal.errors?.map((err, i) => (
+                <p key={i} className="text-xs text-slate-300 bg-red-900/20 p-2 rounded-lg">{err}</p>
+              ))}
+            </div>
+            <div className="flex justify-end mt-4">
+              <button onClick={() => setTeifErrorModal(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs">Fermer</button>
             </div>
           </div>
         </div>
@@ -1513,7 +1776,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails }
 /* ==========================================================================
    COMPONENT: OCR VIEW (NUMÉRISATION + SAISIE MANUELLE)
    ========================================================================== */
-function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setInvoices }) {
+function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, companyDetails, setInvoices, onAddPieceComptable }) {
   const [mode, setMode] = useState('choice');
   const [activeSample, setActiveSample] = useState(null);
   const [isAiScan, setIsAiScan] = useState(false);
@@ -1738,9 +2001,9 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
   };
 
   // Enregistrer la dépense
-  const handleConfirmExpense = (e) => {
+  const handleConfirmExpense = async (e) => {
     e.preventDefault();
-    onAddExpense({
+    const inv = {
       id: `exp-${Date.now()}`,
       supplier: formData.supplier || 'Fournisseur',
       matriculeFiscal: formData.matriculeFiscal || '',
@@ -1754,7 +2017,31 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
       category: formData.category,
       invoiceNumber: formData.invoiceNumber,
       status: "VALIDATED"
+    };
+    onAddExpense(inv);
+    saveOrUpdateFournisseur(formData.supplier, {
+      matriculeFiscal: formData.matriculeFiscal,
+      date: formData.date,
+      totalAmount: formData.totalAmount,
     });
+    try {
+      const teifInvoice = {
+        id: inv.invoiceNumber || inv.id,
+        dateEmission: inv.date,
+        type: '380',
+        timbre: inv.stampDuty || 0,
+        fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
+        client: { matriculeFiscal: companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || '' },
+        lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
+      };
+      const gen = generateTEIFXML(teifInvoice);
+      if (!gen.error) {
+        const response = await sendToTTN(gen.xml, { ttnMode: getTTNMode() });
+        if (response.status === 'accepted') await handleTTNResponse(teifInvoice, response);
+      }
+    } catch (e) {
+      console.warn('TEIF auto-generation skipped:', e.message);
+    }
     setMode('success');
     setFormData(BLANK_FORM);
     setActiveSample(null);
@@ -1766,24 +2053,32 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
     setPurchaseError('');
 
     try {
-      const parsed = parseTexteFacture(purchaseInput);
+      const corrected = correctOCRText(purchaseInput);
+      const parsed = parseTexteFacture(corrected);
       const validated = validerCalculs(parsed);
+
+      const supplierOverride = detectFournisseur(corrected);
+      const mfOverride = detectMF(corrected);
+      const numeroOverride = detectNumeroFacture(corrected);
+      const ttcOverride = detectTotalTTC(corrected);
+      const timbreOverride = detectTimbre(corrected);
+
       const f = validated.categorie_sce && CATEGORIES_SCE[validated.categorie_sce]
         ? CATEGORIES_SCE[validated.categorie_sce].label
         : 'Autres';
 
       applyFormData({
-        supplier: validated.fournisseur || '',
-        matriculeFiscal: validated.matricule_fiscal || '',
+        supplier: supplierOverride || validated.fournisseur || '',
+        matriculeFiscal: mfOverride || validated.matricule_fiscal || '',
         date: validated.date || new Date().toISOString().split('T')[0],
         subtotal: validated.montant_ht != null ? String(validated.montant_ht) : '',
         vatRate: String(validated.taux_tva || '19'),
         fodec: validated.fodec != null ? String(validated.fodec) : '0.000',
         vatAmount: validated.montant_tva != null ? String(validated.montant_tva) : '',
-        stampDuty: validated.timbre_fiscal != null ? String(validated.timbre_fiscal) : '1.000',
-        totalAmount: validated.montant_ttc != null ? String(validated.montant_ttc) : '',
+        stampDuty: timbreOverride != null ? String(timbreOverride) : (validated.timbre_fiscal != null ? String(validated.timbre_fiscal) : '1.000'),
+        totalAmount: ttcOverride != null ? String(ttcOverride) : (validated.montant_ttc != null ? String(validated.montant_ttc) : ''),
         category: f,
-        invoiceNumber: validated.numero_facture || '',
+        invoiceNumber: numeroOverride || validated.numero_facture || '',
       });
 
       if (validated.flag_incoherence) {
@@ -1842,12 +2137,12 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
       setClientAddress('');
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
       if (requiredMissing.length > 0) return;
 
       if (isAchat) {
-        onAddExpense({
+        const inv = {
           id: `exp-${Date.now()}`,
           supplier: formData.supplier || 'Fournisseur',
           matriculeFiscal: formData.matriculeFiscal || '',
@@ -1861,12 +2156,35 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
           category: formData.category,
           invoiceNumber: formData.invoiceNumber,
           status: "VALIDATED"
+        };
+        onAddExpense(inv);
+        saveOrUpdateFournisseur(formData.supplier, {
+          matriculeFiscal: formData.matriculeFiscal,
+          date: formData.date,
+          totalAmount: formData.totalAmount,
         });
+        try {
+          const teifInvoice = {
+            id: inv.invoiceNumber || inv.id,
+            dateEmission: inv.date,
+            type: '380',
+            timbre: inv.stampDuty || 0,
+            fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
+            client: { matriculeFiscal: companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || '' },
+            lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
+          };
+          const gen = generateTEIFXML(teifInvoice);
+          if (!gen.error) {
+            const response = await sendToTTN(gen.xml, { ttnMode: getTTNMode() });
+            if (response.status === 'accepted') await handleTTNResponse(teifInvoice, response);
+          }
+        } catch (e) {
+          console.warn('TEIF auto-generation skipped:', e.message);
+        }
       } else {
-        const invCount = typeof setInvoices === 'function' ? 0 : 0;
         const newInvoice = {
           id: `inv-${Date.now()}`,
-          invoiceNumber: formData.invoiceNumber || `FACT-2026-${String((document.querySelectorAll('#invoices-list li')?.length || 0) + 1).padStart(3, '0')}`,
+          invoiceNumber: formData.invoiceNumber || generateInvoiceNumber(invoices),
           clientName: formData.supplier,
           clientEmail: formData.clientEmail || clientEmail,
           issueDate: formData.date,
@@ -2208,6 +2526,13 @@ function OcrView({ expenses, onAddExpense, formatCurrency, companyDetails, setIn
 
   return (
     <div className="space-y-6">
+      {(!companyDetails?.vatNumber || companyDetails.vatNumber.trim() === '') && (
+        <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30">
+          <p className="text-xs text-amber-400 font-medium">
+            ⚠️ Matricule Fiscal non configuré. Allez dans <strong>Configuration</strong> pour définir votre MF avant de générer les TEIF.
+          </p>
+        </div>
+      )}
       {/* Bannière OCR local */}
       <div className="p-3.5 bg-indigo-500/10 border border-indigo-500/30 rounded-xl flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -2715,9 +3040,9 @@ function PinSetupScreen({ onComplete }) {
             </button>
           </div>
         </form>
-      </div>
-    );
-  }
+    </div>
+  );
+}
 
   return (
     <div className="min-h-screen bg-surface-900 flex items-center justify-center p-4">
@@ -2751,9 +3076,135 @@ function PinSetupScreen({ onComplete }) {
 }
 
 /* ==========================================================================
+   COMPONENT: STOCK VIEW
+   ========================================================================== */
+function StockView({ formatCurrency }) {
+  const [stockEntries, setStockEntries] = React.useState(() => {
+    try { return JSON.parse(localStorage.getItem('STOCK_LOG_KEY') || '[]'); } catch { return []; }
+  });
+  const [showForm, setShowForm] = React.useState(false);
+  const [form, setForm] = React.useState({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
+  const [search, setSearch] = React.useState('');
+
+  React.useEffect(() => { localStorage.setItem('STOCK_LOG_KEY', JSON.stringify(stockEntries)); }, [stockEntries]);
+
+  const handleAdd = () => {
+    if (!form.designation || !form.quantite || !form.prixUnitaire) return;
+    const entry = {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      type: 'entree',
+      designation: form.designation,
+      quantite: Number(form.quantite),
+      prixUnitaire: Number(form.prixUnitaire),
+      fournisseur: form.fournisseur || 'Inconnu',
+      date: new Date().toISOString().slice(0, 10),
+      timestamp: Date.now()
+    };
+    setStockEntries(prev => [entry, ...prev]);
+    setForm({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
+    setShowForm(false);
+  };
+
+  const summary = React.useMemo(() => {
+    const map = {};
+    stockEntries.forEach(e => {
+      if (!map[e.designation]) map[e.designation] = { qte: 0, total: 0, count: 0 };
+      map[e.designation].qte += (e.type === 'entree' ? 1 : -1) * e.quantite;
+      map[e.designation].total += (e.type === 'entree' ? 1 : -1) * e.quantite * e.prixUnitaire;
+      map[e.designation].count++;
+    });
+    return Object.entries(map).sort((a, b) => b[1].qte - a[1].qte);
+  }, [stockEntries]);
+
+  const filtered = search ? stockEntries.filter(e => e.designation.toLowerCase().includes(search.toLowerCase())) : stockEntries;
+
+  return (
+    <div className="space-y-4">
+      <div className="flex flex-wrap justify-between items-center gap-2">
+        <h3 className="text-sm font-bold text-slate-200">📦 Mouvements de Stock</h3>
+        <button onClick={() => setShowForm(!showForm)} className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition-colors">
+          {showForm ? '✕ Annuler' : '+ Entrée Stock'}
+        </button>
+      </div>
+
+      {showForm && (
+        <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Désignation *</label>
+              <input value={form.designation} onChange={e => setForm(p => ({...p, designation: e.target.value}))} placeholder="Article" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+            </div>
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Quantité *</label>
+              <input type="number" value={form.quantite} onChange={e => setForm(p => ({...p, quantite: e.target.value}))} placeholder="1" min="1" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+            </div>
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Prix Unitaire (DT) *</label>
+              <input type="number" step="0.001" value={form.prixUnitaire} onChange={e => setForm(p => ({...p, prixUnitaire: e.target.value}))} placeholder="0.000" min="0" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+            </div>
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Fournisseur</label>
+              <input value={form.fournisseur} onChange={e => setForm(p => ({...p, fournisseur: e.target.value}))} placeholder="Optionnel" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+            </div>
+          </div>
+          <button onClick={handleAdd} disabled={!form.designation || !form.quantite || !form.prixUnitaire} className="w-full px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-semibold transition-colors">
+            ✅ Enregistrer l'entrée
+          </button>
+        </div>
+      )}
+
+      {summary.length > 0 && (
+        <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+          <h4 className="text-xs font-bold text-slate-300 mb-3">📊 Résumé du Stock</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            {summary.map(([desig, info]) => (
+              <div key={desig} className="flex justify-between items-center p-2 rounded-lg bg-slate-900/60">
+                <div>
+                  <span className="text-xs text-slate-200 font-medium">{desig}</span>
+                  <span className="text-[10px] text-slate-500 ml-2">({info.count} op.)</span>
+                </div>
+                <div className="text-right">
+                  <span className={`text-xs font-bold ${info.qte < 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                    {info.qte > 0 ? '+' : ''}{info.qte}
+                  </span>
+                  <span className="text-[10px] text-slate-400 ml-1">{formatCurrency(info.total)}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div>
+        <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Rechercher un article..." className="w-full px-3 py-2 rounded-xl bg-slate-800/60 border border-slate-700/50 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50 mb-3"/>
+      </div>
+
+      <div className="space-y-2">
+        {filtered.length === 0 ? (
+          <p className="text-xs text-slate-500 text-center py-8">Aucun mouvement de stock enregistré.</p>
+        ) : filtered.map(e => (
+          <div key={e.id} className="flex justify-between items-center p-3 rounded-xl bg-slate-800/40 border border-slate-700/40">
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-medium text-slate-200 truncate">{e.designation}</p>
+              <p className="text-[10px] text-slate-500">{e.fournisseur} · {e.date}</p>
+            </div>
+            <div className="text-right flex-shrink-0 ml-3">
+              <span className={`text-xs font-bold ${e.type === 'entree' ? 'text-emerald-400' : 'text-red-400'}`}>
+                {e.type === 'entree' ? '+' : '-'}{e.quantite}
+              </span>
+              <span className="text-[10px] text-slate-400 block">{formatCurrency(e.quantite * e.prixUnitaire)}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ==========================================================================
    COMPONENT: SETTINGS VIEW (CONFIGURATION COMPAGNIE)
    ========================================================================== */
-function SettingsView({ companyDetails, setCompanyDetails }) {
+function SettingsView({ companyDetails, setCompanyDetails, onSetTTNMode }) {
   const [success, setSuccess] = useState(false);
   const [stats, setStats] = useState(getLearningStats());
 
@@ -2894,6 +3345,39 @@ function SettingsView({ companyDetails, setCompanyDetails }) {
             onChange={(e) => setCompanyDetails({...companyDetails, bic: e.target.value})}
             className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
           />
+        </div>
+      </div>
+
+      <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+        <h4 className="text-xs font-bold text-slate-300 mb-3">📨 Configuration TEIF (Facture Électronique)</h4>
+        <div className="space-y-3">
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">RNE (Registre National des Entreprises)</label>
+            <input value={companyDetails?.rne || ''} onChange={e => setCompanyDetails(p => ({...p, rne: e.target.value}))} placeholder="Numéro RNE" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
+          </div>
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">Adresse</label>
+            <input value={companyDetails?.address || ''} onChange={e => setCompanyDetails(p => ({...p, address: e.target.value}))} placeholder="Adresse complète" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
+          </div>
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">Code Catégorie (TTN)</label>
+            <select value={companyDetails?.ttnCategoryCode || '43211000'} onChange={e => setCompanyDetails(p => ({...p, ttnCategoryCode: e.target.value}))} className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 focus:outline-none focus:border-indigo-500/50">
+              <option value="43211000">43211000 - Services informatiques</option>
+              <option value="47111000">47111000 - Commerce de gros</option>
+              <option value="47191000">47191000 - Commerce de détail</option>
+              <option value="69101000">69101000 - Services comptables</option>
+              <option value="70221000">70221000 - Conseil en gestion</option>
+              <option value="62011000">62011000 - Développement logiciel</option>
+              <option value="86101000">86101000 - Services de santé</option>
+            </select>
+          </div>
+          <div className="flex items-center gap-3">
+            <label className="text-[10px] font-medium text-slate-400">Mode TTN:</label>
+            <button onClick={() => onSetTTNMode && onSetTTNMode(getTTNMode() === 'dev' ? 'prod' : 'dev')} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${getTTNMode() === 'dev' ? 'bg-amber-600/80 text-amber-200' : 'bg-emerald-600/80 text-emerald-200'}`}>
+              {getTTNMode() === 'dev' ? '🧪 Développement (mock)' : '🚀 Production (SFTP)'}
+            </button>
+          </div>
+          <p className="text-[10px] text-slate-500">En mode <strong>Développement</strong>, les TEIF sont simulées localement. En mode <strong>Production</strong>, elles sont transmises via SFTP.</p>
         </div>
       </div>
 
