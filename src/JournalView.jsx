@@ -138,6 +138,10 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
           <option value="ACH">Achats</option>
           <option value="VNT">Ventes</option>
           <option value="OD">Opérations Diverses</option>
+          <option value="BQ">Banque</option>
+          <option value="CAI">Caisse</option>
+          <option value="AN">À Nouveau</option>
+          <option value="INV">Inventaire</option>
         </select>
         <div className="relative">
           <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-500" />

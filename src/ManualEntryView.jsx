@@ -84,6 +84,10 @@ export default function ManualEntryView({ formatCurrency }) {
                 <option value="OD">Opérations Diverses</option>
                 <option value="ACH">Achats</option>
                 <option value="VNT">Ventes</option>
+                <option value="BQ">Banque</option>
+                <option value="CAI">Caisse</option>
+                <option value="AN">À Nouveau</option>
+                <option value="INV">Inventaire</option>
               </select>
             </div>
           </div>
