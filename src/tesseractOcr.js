@@ -804,6 +804,18 @@ function parseFactureTunisienne(text) {
       if (fourniInfo.rs > 0 && result.retenue_source === 0) result.taux_rs = fourniInfo.rs;
     }
 
+    // Fallback direct: patterns texte → fournisseur connu
+    if (!fourniInfo) {
+      if (/e[ -]?info/i.test(text)) {
+        const info = FOURNISSEURS_TN['e-info'];
+        if (info) { fourniInfo = info; result.categorie_sce = info.cat; if (result.taux_tva === null) result.taux_tva = info.tva; }
+      } else if (/steg|sonede/i.test(text)) {
+        const key = /steg/i.test(text) ? 'steg' : 'sonede';
+        const info = FOURNISSEURS_TN[key];
+        if (info) { fourniInfo = info; result.categorie_sce = info.cat; if (result.taux_tva === null) result.taux_tva = info.tva; }
+      }
+    }
+
     if (!result.categorie_sce) {
       if (/télécom|telecom|mobile|4g|internet|sms/i.test(searchLower))
         result.categorie_sce = 'frais_telecommunication';
@@ -834,11 +846,24 @@ function parseFactureTunisienne(text) {
     }
 
     // ══════════════════════════════════════════
-    // 13. INFÉRER TAUX TVA depuis montants si absent
+    // 13. INFÉRER TAUX TVA depuis montants ou lignes
     // ══════════════════════════════════════════
     if (!result.taux_tva && result.montant_ht && result.montant_tva) {
       const taux = Math.round((result.montant_tva / result.montant_ht) * 100);
       if ([7, 13, 19].includes(taux)) result.taux_tva = taux;
+    }
+    // Fallback: détecter TVA depuis les lignes du tableau
+    if (!result.taux_tva && result.lignes && result.lignes.length > 0) {
+      const comptage = {};
+      for (const line of text.split('\n')) {
+        const m = line.match(/^\[?\s*.+?\s+(\d{1,2})\s*(?:\|\s*)?\d[\d,]+/);
+        if (m && [0, 7, 13, 19].includes(parseInt(m[1]))) {
+          const t = parseInt(m[1]);
+          comptage[t] = (comptage[t] || 0) + 1;
+        }
+      }
+      const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+      if (best) result.taux_tva = parseInt(best[0]);
     }
 
     // ══════════════════════════════════════════
