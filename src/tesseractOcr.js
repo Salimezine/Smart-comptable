@@ -792,9 +792,8 @@ function parseFactureTunisienne(text) {
     const searchLower = searchText.toLowerCase();
     let fourniInfo = null;
     for (const [key, info] of Object.entries(FOURNISSEURS_TN)) {
-      const pattern = key.length <= 3
-        ? new RegExp(`\\b${key}\\b`, 'i')
-        : new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+      const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const pattern = new RegExp(`\\b${escaped}\\b`, 'i');
       if (pattern.test(searchLower)) { fourniInfo = info; break; }
     }
     if (fourniInfo) {
