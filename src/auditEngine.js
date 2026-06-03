@@ -314,12 +314,16 @@ export const generateAuditMarkdown = (auditResult) => {
   md += `- ❌ **${summary.failed}** non-conformités\n\n`;
 
   md += `### Détail des contrôles\n\n`;
-  md += `| # | Catégorie | Contrôle | Statut | Détail |\n`;
-  md += `|---|-----------|----------|--------|--------|\n`;
+  md += `\n\n| # | Catégorie | Contrôle | Statut | Détail |\n`;
+  md += `| --- | --- | --- | --- | --- |\n`;
   checks.forEach((c, i) => {
     const icon = c.status === 'pass' ? '✅' : c.status === 'warn' ? '⚠️' : c.status === 'fail' ? '❌' : 'ℹ️';
-    md += `| ${i + 1} | ${c.category} | ${c.label} | ${icon} | ${c.detail.replace(/\n/g, '<br>')} |\n`;
+    const detail = (c.detail || '').replace(/\|/g, '&#124;').replace(/\n/g, ' · ').trim();
+    const label = (c.label || '').replace(/\|/g, '&#124;');
+    const category = (c.category || '').replace(/\|/g, '&#124;');
+    md += `| ${i + 1} | ${category} | ${label} | ${icon} | ${detail} |\n`;
   });
+  md += `\n`;
 
   if (recommendations.length > 0) {
     md += `\n### Recommandations\n\n`;

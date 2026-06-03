@@ -72,10 +72,12 @@ import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
+
 import Onboarding from './Onboarding';
 import CompanySwitcher from './CompanySwitcher';
 import FournisseursView from './FournisseursView';
 import JournalView from './JournalView';
+import ManualEntryView from './ManualEntryView';
 import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
@@ -204,6 +206,125 @@ function parseTexteFacture(text) {
   result.categorie_sce = detecterCategorie(textLower);
 
   return result;
+}
+
+function AuditReportRenderer({ report }) {
+  console.log('REPORT TYPE:', typeof report, report);
+  if (!report) return null;
+  if (typeof report === 'string') return <p className="text-red-400">{report}</p>;
+
+  const { score, summary, checks = [], recommendations = [], companyName, date } = report;
+
+  const scoreColor = score >= 80 ? 'text-emerald-400 bg-emerald-500/20 border-emerald-500/40'
+                   : score >= 60 ? 'text-amber-400 bg-amber-500/20 border-amber-500/40'
+                   : 'text-red-400 bg-red-500/20 border-red-500/40';
+  const scoreLabel = score >= 80 ? 'Excellent' : score >= 60 ? 'Acceptable' : 'Critique';
+  const scoreEmoji = score >= 80 ? '🟢' : score >= 60 ? '🟡' : '🔴';
+
+  const statusIcon = (s) =>
+    s === 'pass' ? '✅' : s === 'warn' ? '⚠️' : s === 'fail' ? '❌' : 'ℹ️';
+
+  return (
+    <div className="space-y-4 text-sm">
+
+      {/* Header */}
+      <div className="space-y-1">
+        <h2 className="text-lg font-bold text-white">
+          Rapport d'Audit Smart-Comptable
+        </h2>
+        <p className="text-gray-400 text-xs">
+          <strong className="text-gray-300">Société :</strong> {companyName}
+        </p>
+        <p className="text-gray-400 text-xs">
+          <strong className="text-gray-300">Date :</strong> {date}
+        </p>
+        <p className="text-gray-400 text-xs flex items-center gap-2">
+          <strong className="text-gray-300">Score global :</strong>
+          {scoreEmoji}
+          <span className={`px-2 py-0.5 rounded border font-black text-sm ${scoreColor}`}>
+            {score}/100
+          </span>
+          — {scoreLabel}
+        </p>
+      </div>
+
+      {/* Résumé */}
+      <div>
+        <h3 className="text-base font-semibold text-gray-200 mb-2">Résumé</h3>
+        <ul className="space-y-1">
+          <li className="text-gray-300">✅ <strong>{summary?.passed}</strong> conformes</li>
+          <li className="text-gray-300">⚠️ <strong>{summary?.warned}</strong> avertissements</li>
+          <li className="text-gray-300">❌ <strong>{summary?.failed}</strong> non-conformités</li>
+        </ul>
+      </div>
+
+      {/* Tableau des contrôles */}
+      <div>
+        <h3 className="text-base font-semibold text-gray-200 mb-2">
+          Détail des contrôles
+        </h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr className="bg-slate-700">
+                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600 w-6">#</th>
+                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Catégorie</th>
+                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Contrôle</th>
+                <th className="px-2 py-2 text-center text-gray-300 border border-slate-600 w-8">Statut</th>
+                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Détail</th>
+              </tr>
+            </thead>
+            <tbody>
+              {checks.map((c, i) => (
+                <tr key={c.id || i}
+                  className={i % 2 === 0 ? 'bg-slate-800/50' : 'bg-slate-900/50'}>
+                  <td className="px-2 py-1.5 text-gray-500 border border-slate-700 text-center">
+                    {i + 1}
+                  </td>
+                  <td className="px-2 py-1.5 text-gray-400 border border-slate-700 whitespace-nowrap">
+                    {c.category}
+                  </td>
+                  <td className="px-2 py-1.5 text-gray-300 border border-slate-700">
+                    {c.label}
+                  </td>
+                  <td className="px-2 py-1.5 text-center border border-slate-700">
+                    {statusIcon(c.status)}
+                  </td>
+                  <td className="px-2 py-1.5 text-gray-400 border border-slate-700 max-w-xs">
+                    {c.detail}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Recommandations */}
+      {recommendations.length > 0 && (
+        <div>
+          <h3 className="text-base font-semibold text-gray-200 mb-2">
+            Recommandations
+          </h3>
+          <ul className="space-y-1.5">
+            {recommendations.map((r, i) => (
+              <li key={i} className="text-gray-300 flex gap-2">
+                <span className="text-violet-400 mt-0.5">•</span>
+                <span>{r}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Footer */}
+      <hr className="border-slate-700" />
+      <p className="text-gray-500 italic text-xs">
+        Rapport généré par Smart-Comptable — Moteur d'audit local.
+        Validez avec un expert-comptable OECT.
+      </p>
+    </div>
+  );
 }
 
 export default function App() {
@@ -470,6 +591,7 @@ export default function App() {
               { id: 'suppliers', label: 'Fournisseurs', icon: Package },
               { id: 'expenses', label: 'Dépenses', icon: TrendingDown },
               { id: 'stock', label: 'Stock', icon: Package },
+              { id: 'manual', label: 'Saisie Manuelle', icon: BookOpen },
               { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
               { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
@@ -548,6 +670,7 @@ export default function App() {
                 {currentTab === 'suppliers' && 'Gestion des Fournisseurs'}
                 {currentTab === 'expenses' && 'Toutes les Dépenses'}
                 {currentTab === 'stock' && 'Gestion des Stocks'}
+                {currentTab === 'manual' && 'Saisie manuelle d\'écritures comptables'}
                 {currentTab === 'ocr' && 'Numérisation & OCR'}
                 {currentTab === 'bank' && 'Rapprochement Bancaire'}
                 {currentTab === 'financial' && 'Bilan & Rapport Financier SCE'}
@@ -560,6 +683,7 @@ export default function App() {
               {currentTab === 'suppliers' && 'Gérez vos fournisseurs, consultez les historiques d\'achats et les matricules fiscaux.'}
               {currentTab === 'expenses' && 'Consultez, filtrez et gérez l\'ensemble de vos dépenses enregistrées.'}
               {currentTab === 'stock' && 'Inventaire, entrées/sorties et valorisation des stocks.'}
+              {currentTab === 'manual' && 'Ajoutez des écritures comptables manuelles (OD, Achats, Ventes) directement dans le journal.'}
               {currentTab === 'ocr' && 'Tesseract.js lit vos factures directement dans le navigateur — zéro API, zéro clé, 100% privé'}
               {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
               {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
@@ -732,6 +856,11 @@ export default function App() {
                 transactions={transactions}
                 formatCurrency={formatCurrency}
                 stockTotal={stockTotal}
+              />
+            )}
+            {currentTab === 'manual' && (
+              <ManualEntryView
+                formatCurrency={formatCurrency}
               />
             )}
             {currentTab === 'journal' && (
@@ -3453,10 +3582,10 @@ function WorkflowView({
     setAuditReport('');
     try {
       const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
-      const md = generateAuditMarkdown(result);
-      setAuditReport(md);
+      setAuditReport(result);
       setActiveStep(4);
     } catch (e) {
+      console.error('AUDIT ERROR:', e);
       setAuditReport("❌ Erreur d'audit : " + e.message);
     } finally {
       setGeneratingAudit(false);
@@ -3823,9 +3952,9 @@ function WorkflowView({
                   <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
                   <span className="text-xs text-indigo-400 font-semibold">Génération de l'audit expert en cours...</span>
                 </div>
-              ) : auditReport ? (
-                <div className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800 text-xs overflow-y-auto max-h-[300px] space-y-4 custom-markdown">
-                  <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{auditReport}</ReactMarkdown>
+               ) : auditReport ? (
+                <div className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800 text-xs overflow-y-auto max-h-[300px] custom-markdown">
+                  <AuditReportRenderer report={auditReport} />
                 </div>
               ) : (
                 <div className="p-12 text-center border-2 border-dashed border-slate-800 rounded-2xl bg-slate-900/10 flex flex-col items-center justify-center space-y-4">

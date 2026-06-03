@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Filter, RotateCcw } from 'lucide-react';
+import { Filter, RotateCcw, Search, X, Download } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 
 const JOURNAL_KEY = 'smart_journal';
@@ -8,6 +8,11 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [journal, setJournal] = useState([]);
   const [filter, setFilter] = useState('all');
   const [showBalance, setShowBalance] = useState(false);
+  const [searchText, setSearchText] = useState('');
+  const [dateFrom, setDateFrom] = useState('');
+  const [dateTo, setDateTo] = useState('');
+  const [montantMin, setMontantMin] = useState('');
+  const [montantMax, setMontantMax] = useState('');
 
   const loadJournal = () => {
     try {
@@ -44,9 +49,22 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   const displayJournal = journal.length > 0 ? journal : fallbackEntries;
 
-  const filtered = filter === 'all'
-    ? displayJournal
-    : displayJournal.filter(e => e.journal === filter);
+  const filtered = displayJournal.filter(e => {
+    if (filter !== 'all' && e.journal !== filter) return false;
+    if (searchText) {
+      const q = searchText.toLowerCase();
+      const matchLibelle = (e.libelle || '').toLowerCase().includes(q);
+      const matchCompte = (e.compte || '').toLowerCase().includes(q);
+      const matchPiece = (e.numeroPiece || '').toLowerCase().includes(q);
+      if (!matchLibelle && !matchCompte && !matchPiece) return false;
+    }
+    if (dateFrom && e.date && e.date < dateFrom) return false;
+    if (dateTo && e.date && e.date > dateTo) return false;
+    const mt = parseFloat(e.debit) || parseFloat(e.credit) || 0;
+    if (montantMin && mt < parseFloat(montantMin)) return false;
+    if (montantMax && mt > parseFloat(montantMax)) return false;
+    return true;
+  });
 
   const totalDebit = filtered.reduce((s, e) => s + (parseFloat(e.debit) || 0), 0);
   const totalCredit = filtered.reduce((s, e) => s + (parseFloat(e.credit) || 0), 0);
@@ -55,27 +73,108 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const balances = computeBalances(displayJournal);
   const balanceGenerale = buildBalanceGenerale(balances);
 
+  const fmt = v => typeof v === 'number' ? v.toFixed(3) : v;
+
+  const exportPDF = async () => {
+    const { default: jsPDF } = await import('jspdf');
+    const { default: autoTable } = await import('jspdf-autotable');
+    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    const title = showBalance ? 'Balance Générale' : 'Journal Comptable';
+    const filterLabel = filter === 'all' ? 'Tous' : filter;
+    doc.setFontSize(14);
+    doc.text(title, 14, 15);
+    doc.setFontSize(8);
+    doc.text(`Filtre: ${filterLabel} | ${filtered.length} écritures`, 14, 22);
+    if (showBalance) {
+      const rows = balanceGenerale.map(b => [
+        b.compte, fmt(b.debitTotal), fmt(b.creditTotal),
+        b.soldeDebiteur > 0 ? fmt(b.soldeDebiteur) : '-',
+        b.soldeCrediteur > 0 ? fmt(b.soldeCrediteur) : '-'
+      ]);
+      autoTable(doc, {
+        head: [['Compte', 'Total Débit', 'Total Crédit', 'Solde Débiteur', 'Solde Créditeur']],
+        body: rows, startY: 28,
+        styles: { fontSize: 7 },
+        headStyles: { fillColor: [30, 41, 59] },
+      });
+    } else {
+      const rows = filtered.map(e => [
+        e.date || '', e.numeroPiece || '', e.compte || '',
+        (e.libelle || '').substring(0, 50),
+        e.debit ? fmt(e.debit) : '-', e.credit ? fmt(e.credit) : '-', e.journal || ''
+      ]);
+      autoTable(doc, {
+        head: [['Date', 'N° Pièce', 'Compte', 'Libellé', 'Débit', 'Crédit', 'Journal']],
+        body: rows, startY: 28,
+        styles: { fontSize: 7 },
+        headStyles: { fillColor: [30, 41, 59] },
+        foot: [['', '', '', 'Total', fmt(totalDebit), fmt(totalCredit), '']],
+        footStyles: { fontSize: 7, fontStyle: 'bold' },
+      });
+    }
+    doc.save(`comptable_${title.toLowerCase().replace(/\s/g, '_')}_${new Date().toISOString().slice(0, 10)}.pdf`);
+  };
+  const resetFilters = () => {
+    setSearchText('');
+    setDateFrom('');
+    setDateTo('');
+    setMontantMin('');
+    setMontantMax('');
+    setFilter('all');
+  };
+
+  const hasActiveFilters = searchText || dateFrom || dateTo || montantMin || montantMax || filter !== 'all';
+
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-3 flex-wrap">
-        <div className="flex items-center gap-3">
-          <Filter className="w-4 h-4 text-slate-400" />
-          <select value={filter} onChange={e => setFilter(e.target.value)}
-            className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500">
-            <option value="all">Tous les journaux</option>
-            <option value="ACH">Achats</option>
-            <option value="VNT">Ventes</option>
-            <option value="OD">Opérations Diverses</option>
-          </select>
-          <span className="text-[10px] text-slate-500">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}
-            {journal.length === 0 && fallbackEntries.length > 0 && ' (données existantes)'}
-          </span>
+      {/* Filtres avancés */}
+      <div className="flex flex-wrap items-center gap-2">
+        <Filter className="w-4 h-4 text-slate-400" />
+        <select value={filter} onChange={e => setFilter(e.target.value)}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500">
+          <option value="all">Tous les journaux</option>
+          <option value="ACH">Achats</option>
+          <option value="VNT">Ventes</option>
+          <option value="OD">Opérations Diverses</option>
+        </select>
+        <div className="relative">
+          <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-500" />
+          <input type="text" placeholder="Rechercher..." value={searchText}
+            onChange={e => setSearchText(e.target.value)}
+            className="bg-slate-900 border border-slate-800 rounded-xl pl-8 pr-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-40" />
         </div>
-        <button onClick={() => { loadJournal(); setShowBalance(!showBalance); }}
-          className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs rounded-xl transition-colors">
-          <RotateCcw className="w-3 h-3" />
-          {showBalance ? 'Journal' : 'Balance Générale'}
-        </button>
+        <input type="date" value={dateFrom} onChange={e => setDateFrom(e.target.value)}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-36" />
+        <span className="text-slate-600 text-xs">→</span>
+        <input type="date" value={dateTo} onChange={e => setDateTo(e.target.value)}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-36" />
+        <input type="number" placeholder="Min DT" value={montantMin}
+          onChange={e => setMontantMin(e.target.value)}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-24" />
+        <span className="text-slate-600 text-xs">→</span>
+        <input type="number" placeholder="Max DT" value={montantMax}
+          onChange={e => setMontantMax(e.target.value)}
+          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-24" />
+        <span className="text-[10px] text-slate-500 whitespace-nowrap">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}
+          {journal.length === 0 && fallbackEntries.length > 0 && ' (données existantes)'}
+        </span>
+        <div className="flex items-center gap-1 ml-auto">
+          {hasActiveFilters && (
+            <button onClick={resetFilters}
+              className="flex items-center gap-1 px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs rounded-xl transition-colors text-slate-400">
+              <X className="w-3 h-3" /> Réinitialiser
+            </button>
+          )}
+          <button onClick={exportPDF}
+            className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs rounded-xl transition-colors text-slate-400">
+            <Download className="w-3 h-3" /> PDF
+          </button>
+          <button onClick={() => { loadJournal(); setShowBalance(!showBalance); }}
+            className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs rounded-xl transition-colors">
+            <RotateCcw className="w-3 h-3" />
+            {showBalance ? 'Journal' : 'Balance Générale'}
+          </button>
+        </div>
       </div>
 
       {showBalance ? (
