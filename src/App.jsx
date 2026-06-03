@@ -67,7 +67,7 @@ import {
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN, validerCalculs } from './tesseractOcr';
-import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, generateInvoiceNumber, saveOrUpdateFournisseur } from './utils/ocrParser';
+import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -692,7 +692,7 @@ export default function App() {
               {currentTab === 'ocr' && 'Tesseract.js lit vos factures directement dans le navigateur — zéro API, zéro clé, 100% privé'}
               {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
               {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
-              {currentTab === 'journal' && 'Consultez et filtrez les écritures comptables par journal (Achats, Ventes, Banque, OD).'}
+              {currentTab === 'journal' && 'Consultez et filtrez les écritures comptables par journal (Achats, Ventes, Banque, Caisse, OD).'}
               {currentTab === 'workflow' && 'Suivez pas à pas la déclaration de vos charges sociales, impôts IS et validez le mois.'}
               {currentTab === 'settings' && 'Renseignez les données légales de votre société pour les QR Codes et factures.'}
             </p>
@@ -2212,35 +2212,33 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setPurchaseError('');
 
     try {
-      const corrected = correctOCRText(purchaseInput);
-      const parsed = parseTexteFacture(corrected);
-      const validated = validerCalculs(parsed);
+      const parsed = parseFactureTunisienne(purchaseInput);
 
-      const supplierOverride = detectFournisseur(corrected);
-      const mfOverride = detectMF(corrected);
-      const numeroOverride = detectNumeroFacture(corrected);
-      const ttcOverride = detectTotalTTC(corrected);
-      const timbreOverride = detectTimbre(corrected);
+      if (!parsed) {
+        setPurchaseError('Erreur de parsing — vérifiez le format du texte');
+        setPurchaseLoading(false);
+        return;
+      }
 
-      const f = validated.categorie_sce && CATEGORIES_SCE[validated.categorie_sce]
-        ? CATEGORIES_SCE[validated.categorie_sce].label
-        : 'Autres';
+      const f = parsed.formulaire;
+      const v = parsed.verification;
 
       applyFormData({
-        supplier: supplierOverride || validated.fournisseur || '',
-        matriculeFiscal: mfOverride || validated.matricule_fiscal || '',
-        date: validated.date || new Date().toISOString().split('T')[0],
-        subtotal: validated.montant_ht != null ? String(validated.montant_ht) : '',
-        vatRate: String(validated.taux_tva || '19'),
-        fodec: validated.fodec != null ? String(validated.fodec) : '0.000',
-        vatAmount: validated.montant_tva != null ? String(validated.montant_tva) : '',
-        stampDuty: timbreOverride != null ? String(timbreOverride) : (validated.timbre_fiscal != null ? String(validated.timbre_fiscal) : '1.000'),
-        totalAmount: ttcOverride != null ? String(ttcOverride) : (validated.montant_ttc != null ? String(validated.montant_ttc) : ''),
-        category: f,
-        invoiceNumber: numeroOverride || validated.numero_facture || '',
+        supplier: f.fournisseur_nom || '',
+        matriculeFiscal: f.fournisseur_mf || '',
+        date: f.date_facture ? f.date_facture.split('/').reverse().join('-') : new Date().toISOString().split('T')[0],
+        subtotal: f.montant_ht > 0 ? String(f.montant_ht) : '',
+        vatRate: String(f.taux_tva || '19'),
+        fodec: f.fodec > 0 ? String(f.fodec) : '0.000',
+        vatAmount: f.montant_tva > 0 ? String(f.montant_tva) : '',
+        stampDuty: String(f.timbre_fiscal ?? 1.000),
+        totalAmount: f.montant_ttc > 0 ? String(f.montant_ttc) : '',
+        category: f.categorie_principale || 'Autres',
+        invoiceNumber: f.numero_justificatif || '',
+        rsAmount: f.rs_montant > 0 ? String(f.rs_montant) : '',
       });
 
-      if (validated.flag_incoherence) {
+      if (!v.calculs_coherents) {
         setPurchaseError('⚠️ Incohérence détectée dans les montants — vérifiez manuellement');
       }
 
@@ -2386,6 +2384,23 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             <strong>Ces données sont fictives</strong> — extraites d'un exemple de test.
             Corrigez tous les champs ci-dessous avant d'enregistrer.
           </span>
+        </div>
+      )}
+
+      {/* Debug OCR — texte brut */}
+      {!isManual && purchaseInput && (
+        <details className="group">
+          <summary className="text-[10px] text-slate-500 cursor-pointer hover:text-slate-300 select-none flex items-center gap-1.5 py-1">
+            <span className="opacity-50 group-open:opacity-100">▶</span> Texte OCR brut ({purchaseInput.length} car.)
+          </summary>
+          <pre className="mt-2 p-3 bg-slate-950 border border-slate-800 rounded-xl text-[10px] text-slate-400 font-mono leading-relaxed max-h-40 overflow-y-auto whitespace-pre-wrap">{purchaseInput}</pre>
+        </details>
+      )}
+
+      {/* Alertes OCR */}
+      {purchaseError && (
+        <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
+          <AlertCircle className="w-3.5 h-3.5 shrink-0" /> {purchaseError}
         </div>
       )}
 
