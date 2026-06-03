@@ -630,7 +630,6 @@ export function handleAcceptance(invoiceData, ttnResponse) {
 
   switch (status) {
     case 'accepted':
-      console.log(`[TEIF] Facture ${invoiceId} acceptée par TTN. Création pièce comptable...`);
       const piece = createPieceComptable(invoiceData, ttnResponse);
       updateStock(invoiceData.lines || [], invoiceId);
       return { status: 'accepted', piece };
@@ -641,7 +640,6 @@ export function handleAcceptance(invoiceData, ttnResponse) {
       return { status: 'rejected', errorCode: code };
 
     case 'pending':
-      console.log(`[TEIF] Facture ${invoiceId} en attente TTN. Nouvelle tentative dans 30s...`);
       return { status: 'pending', retryAfter: 30000 };
 
     default:
@@ -807,7 +805,6 @@ export function updateStock(lines, invoiceId) {
   }
 
   saveStockMouvements(mouvements);
-  console.log(`[TEIF] Stock: ${nouveaux.length} mouvement(s) enregistré(s) pour facture ${invoiceId}`);
 
   return nouveaux;
 }

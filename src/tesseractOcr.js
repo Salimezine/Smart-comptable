@@ -886,10 +886,6 @@ async function scanFacture(file, onProgress) {
     await worker.terminate();
     onProgress?.(95);
 
-    console.log('=== TESSERACT RAW TEXT ===');
-    console.log(text);
-    console.log('=========================');
-
     if (!text || text.trim().length < 10) {
       return {
         error: 'Image illisible — utilisez une image plus nette (min 150 DPI)',

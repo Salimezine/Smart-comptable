@@ -72,7 +72,7 @@ export function detectFournisseur(text) {
       if (BLACKLIST_FOURNISSEUR.some(r => r.test(lower))) continue;
       if (/^(rue|av\.|avenue|bp|tél|tel|fax|email|www|http)/i.test(lower)) continue;
       if (/\d{8,}/.test(lower)) continue;
-      if (/^[A-ZÀ-Ü][a-zà-ü]/.test(line) && line.length > 4) {
+      if ((/^[A-ZÀ-Ü][a-zà-ü]/.test(line) && line.length > 4) || (/^[A-ZÀ-Ü\s]{2,30}$/.test(line) && line.length >= 3)) {
         return correctOCRText(line);
       }
     }
