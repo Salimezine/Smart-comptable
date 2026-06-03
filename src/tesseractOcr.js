@@ -806,20 +806,28 @@ function parseFactureTunisienne(text) {
     if (result.lignes && result.lignes.length > 0) {
       const withTva = result.lignes.filter(l => l.tva !== undefined);
       if (withTva.length === result.lignes.length) {
-        const totalHT = result.lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
-        const sumTotals = result.lignes.reduce((s, l) => s + (l.total || 0), 0);
-        const totalTVA = sumTotals - totalHT;
-        const timbre = result.timbre_fiscal || 0;
-        if (totalHT > 0) result.montant_ht = parseFloat(totalHT.toFixed(3));
-        if (totalTVA > 0) result.montant_tva = parseFloat(totalTVA.toFixed(3));
-        result.montant_ttc = parseFloat((sumTotals + timbre).toFixed(3));
-        // Compter occurrences de chaque taux TVA
-        const comptage = {};
-        for (const l of result.lignes) {
-          comptage[l.tva] = (comptage[l.tva] || 0) + 1;
+        // Vérifier cohérence: total ≈ prix × (1 + tva/100) pour chaque ligne
+        const sane = result.lignes.every(l => {
+          if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
+          const expected = l.prix_unitaire * (1 + l.tva / 100);
+          return Math.abs(l.total - expected) < 0.010;
+        });
+        if (sane) {
+          const totalHT = result.lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+          const sumTotals = result.lignes.reduce((s, l) => s + (l.total || 0), 0);
+          const totalTVA = sumTotals - totalHT;
+          const timbre = result.timbre_fiscal || 0;
+          if (totalHT > 0) result.montant_ht = parseFloat(totalHT.toFixed(3));
+          if (totalTVA > 0) result.montant_tva = parseFloat(totalTVA.toFixed(3));
+          result.montant_ttc = parseFloat((sumTotals + timbre).toFixed(3));
+          // Compter occurrences de chaque taux TVA
+          const comptage = {};
+          for (const l of result.lignes) {
+            comptage[l.tva] = (comptage[l.tva] || 0) + 1;
+          }
+          const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+          if (best) result.taux_tva = parseInt(best[0]);
         }
-        const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
-        if (best) result.taux_tva = parseInt(best[0]);
       }
     }
 

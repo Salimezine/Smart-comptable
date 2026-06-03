@@ -744,18 +744,26 @@ export function parseFactureTunisienne(rawText) {
     if (lignes.length > 0) {
       const withTva = lignes.filter(l => l.tva !== undefined);
       if (withTva.length === lignes.length) {
-        const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
-        const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-        const sumTVA = sumTotals - sumHT;
-        if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
-        if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
-        const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
-        if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
-        // Taux TVA le plus fréquent
-        const comptage = {};
-        for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
-        const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
-        if (best) { tauxTVA = parseInt(best[0]); }
+        // Vérifier cohérence: total ≈ prix × (1 + tva/100) pour chaque ligne
+        const sane = lignes.every(l => {
+          if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
+          const expected = l.prix_unitaire * (1 + l.tva / 100);
+          return Math.abs(l.total - expected) < 0.010;
+        });
+        if (sane) {
+          const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+          const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
+          const sumTVA = sumTotals - sumHT;
+          if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
+          if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
+          const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
+          if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
+          // Taux TVA le plus fréquent
+          const comptage = {};
+          for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
+          const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+          if (best) { tauxTVA = parseInt(best[0]); }
+        }
       }
     }
 
