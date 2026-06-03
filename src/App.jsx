@@ -2206,14 +2206,15 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     const numero = inv.invoiceNumber || inv.id;
     const catLabel = inv.category || '';
     const catEntry = Object.entries(CATEGORIES_SCE).find(([k, v]) => v.label === catLabel);
-    const codePcg = catEntry ? catEntry[1].code : null;
-    const compteCharge = (codePcg ? codePcg.padEnd(6, '0') : {
+    const cat = catEntry ? catEntry[0] : 'charge_externe';
+    const compteCharge = {
       achat_marchandises: '607000', achat_mp: '601000', frais_energie: '614000',
       prestation_services: '604000', charge_externe: '611000', loyer: '613000',
       transport: '624000', assurance: '616000', honoraires: '622200',
       publicite: '623000', telecom: '626000', frais_bancaires: '627000',
-      personnel: '640000', amortissement: '681000', autre_charge: '637000'
-    }[catLabel] || '611000');
+      personnel: '640000', amortissement: '681000', autre_charge: '637000',
+      frais_informatique: '602400'
+    }[cat] || '611000';
     saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: `${compteCharge}`, libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
     if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '43666 TVA déductible', libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
     if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '4368 Taxes à régulariser', libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
