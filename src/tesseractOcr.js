@@ -445,6 +445,7 @@ function detectLignes(text) {
   const sauts = text.replace(/\r\n/g, '\n').split('\n');
   const bruitLigne = /^(total|tva|ht|ttc|net|timbre|fodec|retenue|remise|taux|reference|observation|base|designation|client)/i;
   const LIGNE_EINFO = /^(.{5,50}?)\s{2,}(\d{1,3})\s+(0|7|13|19)\s+([\d,]+)\s+([\d,]+)$/;
+  const LIGNE_EINFO2 = /^(.{3,60}?)\s{2,}\d{5,7}\s+\d{2}\/\d{2}\/\d{4}\s*(?:\|\s*(\d{1,3})\s*)?\s*(\d{1,3}(?:[.,]\d{1,3})?)\s*$/;
 
   for (const line of sauts) {
     const l = line.trim();
@@ -462,6 +463,26 @@ function detectLignes(text) {
           lignes.push({
             designation: des,
             prix_unitaire: prix,
+            quantite: qte,
+            total: total,
+          });
+          continue;
+        }
+      }
+    }
+
+    // E-INFO pipe format: Désignation  N°  Date  [|  Qte]  TotalTTC
+    LIGNE_EINFO2.lastIndex = 0;
+    const em2 = LIGNE_EINFO2.exec(l);
+    if (em2) {
+      const des = em2[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        const qte = em2[2] ? parseInt(em2[2]) : 1;
+        const total = normaliserMontant(em2[3]);
+        if (qte > 0 && qte < 99999 && total !== null) {
+          lignes.push({
+            designation: des,
+            prix_unitaire: parseFloat((total / qte).toFixed(3)),
             quantite: qte,
             total: total,
           });
@@ -715,6 +736,12 @@ function parseFactureTunisienne(text) {
     // ══════════════════════════════════════════
     result.lignes = detectLignes(text);
 
+    // Fallback: si TTC non trouvé, sommer les totaux des lignes
+    if (!result.montant_ttc && result.lignes && result.lignes.length > 0) {
+      const sumTotals = result.lignes.reduce((s, l) => s + (l.total || 0), 0);
+      if (sumTotals > 0) result.montant_ttc = parseFloat(sumTotals.toFixed(3));
+    }
+
     // ══════════════════════════════════════════
     // 12. AUTO-DÉTECTION FOURNISSEUR → catégorie
     // ══════════════════════════════════════════
@@ -774,10 +801,15 @@ function parseFactureTunisienne(text) {
     // ══════════════════════════════════════════
     // 14. INFÉRER HT depuis TTC si absent
     // ══════════════════════════════════════════
-    if (!result.montant_ht && result.montant_ttc && result.taux_tva) {
+    if (!result.montant_ht && result.montant_ttc) {
       const timb = result.timbre_fiscal || 0;
-      const base = (result.montant_ttc - timb) / (1 + result.taux_tva / 100);
-      result.montant_ht = parseFloat(base.toFixed(3));
+      if (result.taux_tva) {
+        const base = (result.montant_ttc - timb) / (1 + result.taux_tva / 100);
+        result.montant_ht = parseFloat(base.toFixed(3));
+      } else {
+        // Fallback simple: TTC - timbre ≈ HT (quand taux TVA inconnu)
+        result.montant_ht = parseFloat((result.montant_ttc - timb).toFixed(3));
+      }
     }
 
     validerCalculs(result);

@@ -1969,7 +1969,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
   const CATEGORIES = [
     'Télécoms & Internet', 'Énergie & Utilités', 'Fournitures de Bureau',
-    'Déplacements', 'Restauration', 'Loyer & Charges', 'Salaires & Charges Sociales', 'Autres',
+    'Déplacements', 'Restauration', 'Loyer & Charges', 'Salaires & Charges Sociales',
+    'Matériel informatique', 'Honoraires & Conseils', 'Publicité & Marketing',
+    'Assurances', 'Entretien & Réparations', 'Transports', 'Frais Bancaires',
+    'Services extérieurs', 'Achats de marchandises', 'Matières premières',
+    'Autres',
   ];
 
   const CATEGORIES_VENTE = [
@@ -2074,6 +2078,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
   function ocrToFormData(r) {
     const fmt = (v) => v != null ? parseFloat(v).toFixed(3) : '';
+    const catLabel = r.categorie_sce && CATEGORIES_SCE[r.categorie_sce]
+      ? CATEGORIES_SCE[r.categorie_sce].label
+      : (r.categorie_sce || 'Autres');
     return {
       supplier: r.fournisseur || '',
       matriculeFiscal: r.matricule_fiscal || '',
@@ -2084,7 +2091,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       vatAmount: fmt(r.montant_tva),
       stampDuty: fmt(r.timbre_fiscal),
       totalAmount: fmt(r.montant_ttc),
-      category: r.categorie_sce || 'Autres',
+      category: catLabel,
       invoiceNumber: r.numero_facture || '',
     };
   }
