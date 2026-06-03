@@ -87,11 +87,12 @@ export default function ManualEntryView({ formatCurrency }) {
   };
 
   const updateLine = (i, field, value) => {
-    setLines(lines.map((line, idx) => {
+    setLines(prev => prev.map((line, idx) => {
       if (idx !== i) return line;
       const updated = { ...line, [field]: value };
-      if (field === 'compte' && PCG_LIBELLES[value] && !line.libelle.trim()) {
-        updated.libelle = PCG_LIBELLES[value];
+      if (field === 'compte' && value && value.length >= 3 && !line.libelle.trim()) {
+        const label = PCG_LIBELLES[value] || PCG_COMPTES[value];
+        if (label) updated.libelle = label;
       }
       return updated;
     }));
