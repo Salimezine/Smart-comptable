@@ -477,6 +477,112 @@ export const generateSimulatedData = () => {
   return { invoices, expenses, transactions, incomeStatement };
 };
 
+// ─────────────────────────────────────────────
+// Bilan / Résultat depuis le journal réel
+// ─────────────────────────────────────────────
+
+const JOURNAL_KEY = 'smart_journal';
+
+function loadJournal() {
+  try {
+    const raw = localStorage.getItem(JOURNAL_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+/**
+ * Agrège les soldes des comptes depuis le journal réel.
+ * @returns {{ bilan: Object, resultat: Object }}
+ */
+export function generateFromJournal() {
+  const journal = loadJournal();
+  if (!journal.length) return null;
+
+  const balances = {};
+  for (const e of journal) {
+    const compte = (e.compte || '').replace(/\s.*$/, '').trim();
+    const debit = parseFloat(e.debit) || 0;
+    const credit = parseFloat(e.credit) || 0;
+    if (!compte) continue;
+    if (!balances[compte]) balances[compte] = { debit: 0, credit: 0 };
+    balances[compte].debit += debit;
+    balances[compte].credit += credit;
+  }
+
+  const solde = (c) => parseFloat(((balances[c]?.debit || 0) - (balances[c]?.credit || 0)).toFixed(3));
+
+  // BILAN
+  const cl = (p) => Object.keys(balances).filter(k => k.startsWith(p)).reduce((s, k) => s + solde(k), 0);
+
+  const immobilisationsIncorporelles = Math.max(cl('20'), 0) / 1000;
+  const immobilisationsCorporelles   = Math.max(cl('21') + cl('22') + cl('24') + cl('25'), 0) / 1000;
+  const immobilisationsFinancieres   = Math.max(cl('27'), 0) / 1000;
+  const stocks                       = Math.max(cl('3'), 0) / 1000;
+
+  // 4X — on sépare par solde
+  const fournisseurs = Math.max(-solde('40'), cl('419') > 0 ? solde('419') : 0, 0) / 1000;
+  const clients      = Math.max(cl('41') - (balances['419']?.credit || 0), 0) / 1000;
+  const etatDebit    = Math.max(cl('43'), 0) / 1000;
+  const etatCredit   = Math.max(-solde('43'), 0) / 1000;
+  const personnelDebit = Math.max(cl('42'), 0) / 1000;
+  const personnelCredit = Math.max(-solde('45'), cl('45') > 0 ? solde('45') : 0, 0) / 1000;
+  const autresCréances = Math.max(cl('409') + cl('47'), 0) / 1000;
+  const autresDettes = Math.max(-solde('44') - solde('46') - solde('48') - solde('49'), 0) / 1000;
+
+  const tresorerieActif  = Math.max(cl('51') + cl('53') + cl('54') + cl('5') - (balances['52']?.credit || 0), 0) / 1000;
+  const concoursBancaires = Math.max((balances['52']?.credit || 0) - (balances['52']?.debit || 0), 0) / 1000;
+
+  const capitalSocial  = Math.max(cl('11'), 0) / 1000;
+  const reserves       = Math.max(cl('12'), 0) / 1000;
+  const emprunts       = Math.max(cl('16') + cl('17'), 0) / 1000;
+  const provisions     = Math.max(cl('15'), 0) / 1000;
+
+  const actifNC  = immobilisationsIncorporelles + immobilisationsCorporelles + immobilisationsFinancieres;
+  const actifC   = stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif;
+  const totalActif = actifNC + actifC;
+
+  const capPropres   = capitalSocial + reserves;
+  const passifNC     = emprunts + provisions;
+  const passifC      = fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires;
+  const totalPassif  = capPropres + passifNC + passifC;
+
+  // RÉSULTAT
+  const charges  = Object.keys(balances).filter(k => k.startsWith('6')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const produits = Object.keys(balances).filter(k => k.startsWith('7')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+
+  const achats = Object.keys(balances).filter(k => k.startsWith('60')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const chargesExternes = Object.keys(balances).filter(k => k.startsWith('61')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const chargesPersonnel = Object.keys(balances).filter(k => k.startsWith('62') || k.startsWith('64')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const impotsTaxes = Object.keys(balances).filter(k => k.startsWith('63') || k.startsWith('6654')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const autresCharges = Object.keys(balances).filter(k => k.startsWith('65')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const chargesFinancieres = Object.keys(balances).filter(k => k.startsWith('66') && !k.startsWith('6654')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const dotations = Object.keys(balances).filter(k => k.startsWith('68')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+
+  const ventes = Object.keys(balances).filter(k => k.startsWith('70')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const autresProduits = (produits - ventes);
+
+  const resultatExploitation = produits - charges + chargesFinancieres;
+  const resultatNet = produits - charges;
+
+  return {
+    bilan: {
+      actifNC, actifC, totalActif,
+      immobilisationsIncorporelles, immobilisationsCorporelles, immobilisationsFinancieres,
+      stocks, clients, etatDebit, personnelDebit, autresCréances, tresorerieActif,
+      capPropres, passifNC, passifC, totalPassif,
+      capitalSocial, reserves, emprunts, provisions,
+      fournisseurs, etatCredit, personnelCredit, autresDettes, concoursBancaires,
+    },
+    resultat: {
+      produits, charges, resultatNet,
+      ventes, autresProduits,
+      achats, chargesExternes, chargesPersonnel, impotsTaxes,
+      autresCharges, chargesFinancieres, dotations,
+      resultatExploitation,
+    },
+  };
+}
+
 const MONTHS = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
 
 function getMonthKey(dateStr) {

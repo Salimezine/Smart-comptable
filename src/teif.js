@@ -110,12 +110,12 @@ function getCompteParCategorie(categorie) {
 }
 
 function getCompteTvaParTaux(taux) {
-  const map = { 19: '43671', 13: '43672', 7: '43673', 0: '43674' };
-  return map[taux] || '43671';
+  const map = { 19: '43666', 13: '43666', 7: '43666', 0: '43666' };
+  return map[taux] || '43666';
 }
 
 function getCompteTimbre() {
-  return '4311';
+  return '4368';
 }
 
 function getCompteFodec() {

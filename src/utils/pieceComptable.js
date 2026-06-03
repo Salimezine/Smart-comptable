@@ -12,14 +12,14 @@ export const COMPTES_PCG_TN = {
   achat_marchandises: '607000',
   achat_mp: '601000',
   charge_externe: '611000',
-  personnel: '621000',
-  frais_energie: '626000',
+  personnel: '640000',
+  frais_energie: '614000',
   frais_bancaires: '627000',
   amortissement: '681000',
-  autre_charge: '658000',
-  prestation_services: '614000',
+  autre_charge: '637000',
+  prestation_services: '604000',
   loyer: '613000',
-  telecom: '626300',
+  telecom: '626000',
   transport: '624000',
   assurance: '616000',
   honoraires: '622200',
@@ -32,23 +32,23 @@ const LIBELLES_COMPTES = {
   '607000': 'Achats de marchandises',
   '601000': 'Achats de matières premières',
   '611000': 'Charges externes',
-  '621000': 'Charges de personnel',
-  '626000': 'Eau, électricité, gaz',
-  '627000': 'Frais bancaires',
-  '681000': 'Amortissements',
-  '658000': 'Autres charges',
-  '614000': 'Prestations de services',
-  '613000': 'Loyers',
-  '626300': 'Télécommunications',
+  '640000': 'Salaires',
+  '614000': 'Charges locatives et de copropriété',
+  '627000': 'Services bancaires et assimilés',
+  '681000': "Dotations d'exploitation",
+  '637000': 'Réductions de valeur',
+  '604000': "Achats d'études et de prestations",
+  '613000': 'Locations',
+  '626000': 'Frais postaux et frais de télécommunications',
   '624000': 'Transports',
-  '616000': "Primes d'assurance",
+  '616000': "Primes d'assurances",
   '622200': 'Honoraires',
-  '623000': 'Publicité',
-  '43671': 'TVA déductible',
-  '43611': 'TVA collectée',
-  '4311': 'Timbre fiscal',
-  '602000': 'FODEC',
-  '6353': 'Timbre (charge)',
+  '623000': 'Publicité, publications, relations publiques',
+  '43666': 'TVA sur autres biens et services',
+  '43671': 'TVA collectée',
+  '4368': 'Taxes à régulariser',
+  '602000': 'Achats stockés - Autres approvisionnements',
+  '6654': "Droits d'enregistrement et de timbre",
   '70XXXX': 'Ventes de produits',
 };
 
@@ -124,58 +124,58 @@ export function createPieceComptable(invoice, ttnId) {
     const compteTiers = isAchat ? getCompteFournisseur(nomTiers) : getCompteClient(nomTiers);
 
     if (isAchat) {
-      // Débit fournisseur = total TTC
-      ecritures.push({
-        compte: compteTiers,
-        libelleCompte: `${compteTiers.slice(0, 3)} ${LIBELLES_COMPTES[compteTiers.slice(0, 3)] || 'Tiers'}`,
-        libelle: `Facture ${invoice.id} - ${nomTiers}`,
-        debit: totalTTC,
-        credit: 0,
-      });
-
-      // Crédit charge HT
+      // Débit charge HT
       const cat = invoice.categorie_sce || invoice.category || 'charge_externe';
       const compteCharge = COMPTES_PCG_TN[cat] || '611000';
       ecritures.push({
         compte: compteCharge,
         libelleCompte: `${compteCharge} ${LIBELLES_COMPTES[compteCharge] || 'Charge'}`,
         libelle: `HT ${invoice.id}`,
-        debit: 0,
-        credit: baseHT,
+        debit: baseHT,
+        credit: 0,
       });
 
-      // Crédit TVA déductible
+      // Débit TVA déductible
       if (totalTVA > 0.001) {
         ecritures.push({
-          compte: '43671',
-          libelleCompte: '43671 TVA déductible',
+          compte: '43666',
+          libelleCompte: '43666 TVA sur autres biens et services',
           libelle: `TVA ${invoice.id}`,
-          debit: 0,
-          credit: totalTVA,
+          debit: totalTVA,
+          credit: 0,
         });
       }
 
-      // Crédit timbre
+      // Débit timbre fiscale (compte de régularisation)
       if (timbre > 0.001) {
         ecritures.push({
-          compte: '4311',
-          libelleCompte: '4311 Timbre fiscal',
+          compte: '6654',
+          libelleCompte: '6654 Droits d\'enregistrement et de timbre',
           libelle: `Timbre ${invoice.id}`,
-          debit: 0,
-          credit: timbre,
+          debit: timbre,
+          credit: 0,
         });
       }
 
-      // Crédit FODEC
+      // Débit FODEC
       if (fodecTotal > 0.001) {
         ecritures.push({
           compte: '602000',
           libelleCompte: '602000 FODEC',
           libelle: `FODEC ${invoice.id}`,
-          debit: 0,
-          credit: fodecTotal,
+          debit: fodecTotal,
+          credit: 0,
         });
       }
+
+      // Crédit fournisseur = total TTC
+      ecritures.push({
+        compte: compteTiers,
+        libelleCompte: `${compteTiers.slice(0, 3)} ${LIBELLES_COMPTES[compteTiers.slice(0, 3)] || 'Tiers'}`,
+        libelle: `Facture ${invoice.id} - ${nomTiers}`,
+        debit: 0,
+        credit: totalTTC,
+      });
     } else {
       // Facture VENTE
       // Débit client = total TTC
@@ -199,22 +199,22 @@ export function createPieceComptable(invoice, ttnId) {
       // Crédit TVA collectée
       if (totalTVA > 0.001) {
         ecritures.push({
-          compte: '43611',
-          libelleCompte: '43611 TVA collectée',
+          compte: '43671',
+          libelleCompte: '43671 TVA collectée',
           libelle: `TVA ${invoice.id}`,
           debit: 0,
           credit: totalTVA,
         });
       }
 
-      // Débit timbre (charge)
+      // Crédit timbre collecté (dette fiscale)
       if (timbre > 0.001) {
         ecritures.push({
-          compte: '6353',
-          libelleCompte: '6353 Timbre (charge)',
+          compte: '4368',
+          libelleCompte: '4368 Taxes à régulariser',
           libelle: `Timbre ${invoice.id}`,
-          debit: timbre,
-          credit: 0,
+          debit: 0,
+          credit: timbre,
         });
       }
     }
@@ -279,6 +279,38 @@ export function savePieceToJournal(piece) {
     journal.unshift(...entries);
     localStorage.setItem(JOURNAL_KEY, JSON.stringify(journal));
 
+    window.dispatchEvent(new CustomEvent('journal:updated'));
+  } catch {
+    /* silencieux */
+  }
+}
+
+// ─────────────────────────────────────────────
+// 3. saveSimpleEntry — écriture simple rapide
+//    pour opérations sans TEIF (achat direct,
+//    écriture bancaire, OD)
+// ─────────────────────────────────────────────
+export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, credit, journal = 'OD' }) {
+  try {
+    let entries = [];
+    try {
+      const raw = localStorage.getItem(JOURNAL_KEY);
+      if (raw) entries = JSON.parse(raw);
+    } catch { /* ignorer */ }
+    if (!Array.isArray(entries)) entries = [];
+
+    entries.unshift({
+      date: date || new Date().toISOString().slice(0, 10),
+      numeroPiece: numeroPiece || `OD-${Date.now()}`,
+      compte: String(compte || ''),
+      libelle: String(libelle || ''),
+      debit: debit != null ? parseFloat(debit) || 0 : null,
+      credit: credit != null ? parseFloat(credit) || 0 : null,
+      journal: journal || 'OD',
+      ttnId: null,
+    });
+
+    localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
     window.dispatchEvent(new CustomEvent('journal:updated'));
   } catch {
     /* silencieux */
