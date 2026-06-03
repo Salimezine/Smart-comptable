@@ -231,13 +231,6 @@ function AuditReportRenderer({ report }) {
     return cfg;
   };
 
-  const grouped = checks.reduce((acc, c) => {
-    const cat = c.category || 'Autres';
-    if (!acc[cat]) acc[cat] = [];
-    acc[cat].push(c);
-    return acc;
-  }, {});
-
   return (
     <div className="space-y-5">
 
@@ -274,41 +267,44 @@ function AuditReportRenderer({ report }) {
         ))}
       </div>
 
-      {/* Détail des contrôles — groupés par catégorie */}
+      {/* Détail des contrôles — tableau */}
       <div>
         <h3 className="text-base font-semibold text-slate-200 mb-3 flex items-center gap-2">
           <span className="w-1 h-5 bg-brand-400 rounded-full" />
           Détail des contrôles
         </h3>
-        <div className="space-y-3">
-          {Object.entries(grouped).map(([category, items]) => (
-            <div key={category} className="glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-card">
-              <div className="px-4 py-2.5 bg-slate-800/60 border-b border-slate-800">
-                <span className="text-xs font-semibold text-slate-300">{category}</span>
-                <span className="text-[10px] text-slate-500 ml-2">({items.length})</span>
-              </div>
-              <div className="divide-y divide-slate-800/50">
-                {items.map((c, i) => {
+        <div className="glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-card">
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="bg-slate-800/80 border-b border-slate-700">
+                  <th className="px-4 py-3 text-left text-slate-400 font-semibold uppercase tracking-wider w-8">#</th>
+                  <th className="px-4 py-3 text-left text-slate-400 font-semibold uppercase tracking-wider">Catégorie</th>
+                  <th className="px-4 py-3 text-left text-slate-400 font-semibold uppercase tracking-wider">Contrôle</th>
+                  <th className="px-4 py-3 text-center text-slate-400 font-semibold uppercase tracking-wider w-28">Statut</th>
+                  <th className="px-4 py-3 text-left text-slate-400 font-semibold uppercase tracking-wider">Détail</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800/50">
+                {checks.map((c, i) => {
                   const badge = statusBadge(c.status);
                   return (
-                    <div key={c.id || i} className="px-4 py-3 hover:bg-slate-800/20 transition-colors">
-                      <div className="flex items-start gap-3">
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badge.cls} mt-0.5`}>
+                    <tr key={c.id || i} className="hover:bg-slate-800/30 transition-colors">
+                      <td className="px-4 py-3 text-slate-500 text-center">{i + 1}</td>
+                      <td className="px-4 py-3 text-slate-300 font-medium whitespace-nowrap">{c.category}</td>
+                      <td className="px-4 py-3 text-slate-200">{c.label}</td>
+                      <td className="px-4 py-3 text-center">
+                        <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badge.cls}`}>
                           {badge.label}
                         </span>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-xs font-medium text-slate-200">{c.label}</p>
-                          {c.detail && (
-                            <p className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">{c.detail}</p>
-                          )}
-                        </div>
-                      </div>
-                    </div>
+                      </td>
+                      <td className="px-4 py-3 text-slate-400 max-w-xs leading-relaxed">{c.detail}</td>
+                    </tr>
                   );
                 })}
-              </div>
-            </div>
-          ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
