@@ -215,114 +215,124 @@ function AuditReportRenderer({ report }) {
 
   const { score, summary, checks = [], recommendations = [], companyName, date } = report;
 
-  const scoreColor = score >= 80 ? 'text-emerald-400 bg-emerald-500/20 border-emerald-500/40'
-                   : score >= 60 ? 'text-amber-400 bg-amber-500/20 border-amber-500/40'
-                   : 'text-red-400 bg-red-500/20 border-red-500/40';
-  const scoreLabel = score >= 80 ? 'Excellent' : score >= 60 ? 'Acceptable' : 'Critique';
-  const scoreEmoji = score >= 80 ? '🟢' : score >= 60 ? '🟡' : '🔴';
+  const scoreTier = score >= 80 ? 'excellent' : score >= 60 ? 'acceptable' : 'critique';
+  const scoreConfig = {
+    excellent: { color: 'text-emerald-400 bg-emerald-500/20 border-emerald-500/30', bar: 'bg-emerald-400', label: 'Excellent', icon: '🟢' },
+    acceptable: { color: 'text-amber-400 bg-amber-500/20 border-amber-500/30', bar: 'bg-amber-400', label: 'Acceptable', icon: '🟡' },
+    critique: { color: 'text-red-400 bg-red-500/20 border-red-500/30', bar: 'bg-red-400', label: 'Critique', icon: '🔴' },
+  }[scoreTier];
 
-  const statusIcon = (s) =>
-    s === 'pass' ? '✅' : s === 'warn' ? '⚠️' : s === 'fail' ? '❌' : 'ℹ️';
+  const statusBadge = (s) => {
+    const cfg = {
+      pass: { label: 'Conforme', cls: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30' },
+      warn: { label: 'Attention', cls: 'bg-amber-500/15 text-amber-400 border-amber-500/30' },
+      fail: { label: 'Non conforme', cls: 'bg-red-500/15 text-red-400 border-red-500/30' },
+    }[s] || { label: 'Info', cls: 'bg-slate-500/15 text-slate-400 border-slate-500/30' };
+    return cfg;
+  };
+
+  const grouped = checks.reduce((acc, c) => {
+    const cat = c.category || 'Autres';
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(c);
+    return acc;
+  }, {});
 
   return (
-    <div className="space-y-4 text-sm">
+    <div className="space-y-5">
 
-      {/* Header */}
-      <div className="space-y-1">
-        <h2 className="text-lg font-bold text-white">
-          Rapport d'Audit Smart-Comptable
-        </h2>
-        <p className="text-gray-400 text-xs">
-          <strong className="text-gray-300">Société :</strong> {companyName}
-        </p>
-        <p className="text-gray-400 text-xs">
-          <strong className="text-gray-300">Date :</strong> {date}
-        </p>
-        <p className="text-gray-400 text-xs flex items-center gap-2">
-          <strong className="text-gray-300">Score global :</strong>
-          {scoreEmoji}
-          <span className={`px-2 py-0.5 rounded border font-black text-sm ${scoreColor}`}>
-            {score}/100
-          </span>
-          — {scoreLabel}
-        </p>
+      {/* Header — Carte score */}
+      <div className="glass-card rounded-2xl border border-slate-800 p-5 shadow-card space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="space-y-1">
+            <h2 className="text-lg font-bold text-white">Rapport d'Audit</h2>
+            <p className="text-xs text-slate-400">{companyName} &middot; {date}</p>
+          </div>
+          <div className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border ${scoreConfig.color}`}>
+            <span className="text-lg">{scoreConfig.icon}</span>
+            <span className="font-black text-sm">{score}/100</span>
+            <span className="text-[10px] opacity-70">{scoreConfig.label}</span>
+          </div>
+        </div>
+        <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+          <div className={`h-full rounded-full transition-all duration-1000 ${scoreConfig.bar}`}
+            style={{ width: `${score}%` }} />
+        </div>
       </div>
 
-      {/* Résumé */}
-      <div>
-        <h3 className="text-base font-semibold text-gray-200 mb-2">Résumé</h3>
-        <ul className="space-y-1">
-          <li className="text-gray-300">✅ <strong>{summary?.passed}</strong> conformes</li>
-          <li className="text-gray-300">⚠️ <strong>{summary?.warned}</strong> avertissements</li>
-          <li className="text-gray-300">❌ <strong>{summary?.failed}</strong> non-conformités</li>
-        </ul>
+      {/* Résumé — cartes stats */}
+      <div className="grid grid-cols-3 gap-3">
+        {[
+          { label: 'Conformes', count: summary?.passed || 0, cls: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' },
+          { label: 'Avertissements', count: summary?.warned || 0, cls: 'text-amber-400 bg-amber-500/10 border-amber-500/20' },
+          { label: 'Non conformités', count: summary?.failed || 0, cls: 'text-red-400 bg-red-500/10 border-red-500/20' },
+        ].map(s => (
+          <div key={s.label} className={`rounded-xl border ${s.cls} p-4 text-center`}>
+            <div className="text-2xl font-black">{s.count}</div>
+            <div className="text-[10px] uppercase tracking-wider mt-1 opacity-70">{s.label}</div>
+          </div>
+        ))}
       </div>
 
-      {/* Tableau des contrôles */}
+      {/* Détail des contrôles — groupés par catégorie */}
       <div>
-        <h3 className="text-base font-semibold text-gray-200 mb-2">
+        <h3 className="text-base font-semibold text-slate-200 mb-3 flex items-center gap-2">
+          <span className="w-1 h-5 bg-brand-400 rounded-full" />
           Détail des contrôles
         </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs border-collapse">
-            <thead>
-              <tr className="bg-slate-700">
-                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600 w-6">#</th>
-                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Catégorie</th>
-                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Contrôle</th>
-                <th className="px-2 py-2 text-center text-gray-300 border border-slate-600 w-8">Statut</th>
-                <th className="px-2 py-2 text-left text-gray-300 border border-slate-600">Détail</th>
-              </tr>
-            </thead>
-            <tbody>
-              {checks.map((c, i) => (
-                <tr key={c.id || i}
-                  className={i % 2 === 0 ? 'bg-slate-800/50' : 'bg-slate-900/50'}>
-                  <td className="px-2 py-1.5 text-gray-500 border border-slate-700 text-center">
-                    {i + 1}
-                  </td>
-                  <td className="px-2 py-1.5 text-gray-400 border border-slate-700 whitespace-nowrap">
-                    {c.category}
-                  </td>
-                  <td className="px-2 py-1.5 text-gray-300 border border-slate-700">
-                    {c.label}
-                  </td>
-                  <td className="px-2 py-1.5 text-center border border-slate-700">
-                    {statusIcon(c.status)}
-                  </td>
-                  <td className="px-2 py-1.5 text-gray-400 border border-slate-700 max-w-xs">
-                    {c.detail}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="space-y-3">
+          {Object.entries(grouped).map(([category, items]) => (
+            <div key={category} className="glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-card">
+              <div className="px-4 py-2.5 bg-slate-800/60 border-b border-slate-800">
+                <span className="text-xs font-semibold text-slate-300">{category}</span>
+                <span className="text-[10px] text-slate-500 ml-2">({items.length})</span>
+              </div>
+              <div className="divide-y divide-slate-800/50">
+                {items.map((c, i) => {
+                  const badge = statusBadge(c.status);
+                  return (
+                    <div key={c.id || i} className="px-4 py-3 hover:bg-slate-800/20 transition-colors">
+                      <div className="flex items-start gap-3">
+                        <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badge.cls} mt-0.5`}>
+                          {badge.label}
+                        </span>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs font-medium text-slate-200">{c.label}</p>
+                          {c.detail && (
+                            <p className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">{c.detail}</p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Recommandations */}
       {recommendations.length > 0 && (
         <div>
-          <h3 className="text-base font-semibold text-gray-200 mb-2">
+          <h3 className="text-base font-semibold text-slate-200 mb-3 flex items-center gap-2">
+            <span className="w-1 h-5 bg-brand-400 rounded-full" />
             Recommandations
           </h3>
-          <ul className="space-y-1.5">
-            {recommendations.map((r, i) => (
-              <li key={i} className="text-gray-300 flex gap-2">
-                <span className="text-violet-400 mt-0.5">•</span>
-                <span>{r}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-card">
+            <div className="divide-y divide-slate-800/50">
+              {recommendations.map((r, i) => (
+                <div key={i} className="flex items-start gap-3 px-4 py-3 hover:bg-slate-800/20 transition-colors">
+                  <span className="w-6 h-6 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center text-xs font-bold shrink-0">
+                    {i + 1}
+                  </span>
+                  <p className="text-xs text-slate-300 leading-relaxed">{r}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
-
-      {/* Footer */}
-      <hr className="border-slate-700" />
-      <p className="text-gray-500 italic text-xs">
-        Rapport généré par Smart-Comptable — Moteur d'audit local.
-        Validez avec un expert-comptable OECT.
-      </p>
     </div>
   );
 }
