@@ -227,27 +227,63 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                 {filtered.length === 0 ? (
                   <tr><td colSpan={7} className="py-12 text-center text-slate-500">Aucune écriture trouvée. Scannez une facture pour créer une écriture.</td></tr>
                 ) : (
-                  filtered.map((e, i) => (
-                    <tr key={i} className="hover:bg-slate-800/10 transition-colors">
-                      <td className="py-4 px-6 text-slate-400 font-mono">{e.date}</td>
-                      <td className="py-4 px-6 font-bold text-slate-300">{e.numeroPiece}</td>
-                      <td className="py-4 px-6 font-mono text-slate-300">{e.compte}</td>
-                      <td className="py-4 px-6 text-slate-200">{e.libelle}</td>
-                      <td className="py-4 px-6 text-right text-danger-400 font-semibold">
-                        {e.debit && e.debit !== 0
-                          ? Number(e.debit).toFixed(3) + ' DT'
-                          : <span className="text-slate-600">&mdash;</span>}
-                      </td>
-                      <td className="py-4 px-6 text-right text-accent-400 font-semibold">
-                        {e.credit && e.credit !== 0
-                          ? Number(e.credit).toFixed(3) + ' DT'
-                          : <span className="text-slate-600">&mdash;</span>}
-                      </td>
-                      <td className="py-4 px-6 text-center">
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400">{e.journal}</span>
-                      </td>
-                    </tr>
-                  ))
+                  (() => {
+                    const groups = new Map();
+                    filtered.forEach(e => {
+                      const key = e.numeroPiece || 'N/A';
+                      if (!groups.has(key)) groups.set(key, []);
+                      groups.get(key).push(e);
+                    });
+                    const rows = [];
+                    let idx = 0;
+                    for (const [piece, lines] of groups) {
+                      const totalDeb = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
+                      const totalCred = lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
+                      const balanced = Math.abs(totalDeb - totalCred) < 0.001;
+                      const date = lines[0].date || '';
+                      const journal = lines[0].journal || '';
+                      lines.forEach((l, li) => {
+                        rows.push(
+                          <tr key={idx++} className={`hover:bg-slate-800/10 transition-colors ${li === 0 ? 'border-t border-slate-700/50' : ''}`}>
+                            <td className="py-4 px-6 text-slate-400 font-mono">{li === 0 ? date : ''}</td>
+                            <td className="py-4 px-6 font-bold text-slate-300">{li === 0 ? piece : ''}</td>
+                            <td className="py-4 px-6 font-mono text-slate-300">{l.compte}</td>
+                            <td className="py-4 px-6 text-slate-200">{l.libelle}</td>
+                            <td className="py-4 px-6 text-right text-danger-400 font-semibold">
+                              {l.debit && l.debit !== 0
+                                ? Number(l.debit).toFixed(3) + ' DT'
+                                : <span className="text-slate-600">&mdash;</span>}
+                            </td>
+                            <td className="py-4 px-6 text-right text-accent-400 font-semibold">
+                              {l.credit && l.credit !== 0
+                                ? Number(l.credit).toFixed(3) + ' DT'
+                                : <span className="text-slate-600">&mdash;</span>}
+                            </td>
+                            <td className="py-4 px-6 text-center">
+                              {li === 0 && (
+                                <span className={`text-[10px] px-2 py-0.5 rounded-full ${balanced ? 'bg-indigo-500/10 text-indigo-400' : 'bg-danger-500/10 text-danger-400'}`}>
+                                  {journal}{!balanced ? ' ✗' : ''}
+                                </span>
+                              )}
+                            </td>
+                          </tr>
+                        );
+                      });
+                      if (lines.length > 1) {
+                        rows.push(
+                          <tr key={idx++} className="bg-slate-900/30 text-[10px] text-slate-500">
+                            <td colSpan={2}></td>
+                            <td className="py-2 px-6 font-bold">{balanced ? '✓ Équilibré' : '✗ Déséquilibré'}</td>
+                            <td className="py-2 px-6">Total pièce</td>
+                            <td className="py-2 px-6 text-right text-danger-400">{Number(totalDeb).toFixed(3)} DT</td>
+                            <td className="py-2 px-6 text-right text-accent-400">{Number(totalCred).toFixed(3)} DT</td>
+                            <td></td>
+                          </tr>
+                        );
+                      }
+                    }
+                    return rows;
+                  })()
                 )}
               </tbody>
             </table>
