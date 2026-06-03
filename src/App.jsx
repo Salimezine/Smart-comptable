@@ -2015,7 +2015,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     const stamp = getStampDutyForTotal(total);
     const fodecVal = parseFloat(formData.fodec) || 0;
     const vatRate = parseFloat(formData.vatRate) || 19;
-    
+
     const baseTva = (total - stamp) / (1 + vatRate / 100);
     const sub = baseTva - fodecVal;
     const vat = baseTva * (vatRate / 100);
@@ -2024,8 +2024,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       ...f,
       totalAmount: val,
       stampDuty: total > 0 ? stamp.toFixed(3) : '1.000',
-      subtotal: total > 0 ? (Math.round(sub * 1000) / 1000).toFixed(3) : '',
-      vatAmount: total > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
+      subtotal: (f.subtotal && total > 0) ? f.subtotal : (total > 0 ? (Math.round(sub * 1000) / 1000).toFixed(3) : ''),
+      vatAmount: (f.vatAmount && total > 0) ? f.vatAmount : (total > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
     }));
   };
 
@@ -2044,8 +2044,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       ...f,
       subtotal: val,
       stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
-      vatAmount: sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
-      totalAmount: sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : '',
+      vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
+      totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : ''),
     }));
   };
 
@@ -2064,8 +2064,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       ...f,
       fodec: val,
       stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
-      vatAmount: sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : '',
-      totalAmount: sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : '',
+      vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
+      totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : ''),
     }));
   };
 
@@ -2551,9 +2551,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
                 const vat = baseTva * (r / 100);
                 const newStamp = getStampDutyForAmount(baseTva + vat);
                 setFormData(f => ({...f, vatRate: e.target.value,
-                  vatAmount: sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : '',
+                  vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : ''),
                   stampDuty: sub > 0 ? newStamp.toFixed(3) : '1.000',
-                  totalAmount: sub > 0 ? (Math.round((sub+fodecVal+vat+newStamp)*1000)/1000).toFixed(3) : ''
+                  totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round((sub+fodecVal+vat+newStamp)*1000)/1000).toFixed(3) : '')
                 }));
               }}
               className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
