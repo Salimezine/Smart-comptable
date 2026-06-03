@@ -253,27 +253,47 @@ function correctOCRText(text) {
 function detectFournisseur(text) {
   try {
     if (!text || typeof text !== 'string') return null;
-    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
-    const noisePatterns = [
-      /rue|avenue|impasse|boulevard|cité|b\.p|bp\b|tél|tel\b|fax|gsm|mobile|e-?mail|www\.|@/i,
-      /^\d{4,}\s/,
-      /^\d{1,3}[.,]\d{3}/,
-      /^(factur|relev|compt|reç|invoic|devis|périod|objet|mati|n°|numéro|dat|total|rib|iban|cod|banqu|adress)/i,
+    const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+
+    // PRIORITÉ 1: label explicite
+    const explicit = text.match(
+      /(?:Fournisseur|Vendeur|Émetteur)\s*[:\-]\s*([^\n\r]{3,60})/i
+    );
+    if (explicit) {
+      return explicit[1].replace(/\s*(MF|Tél|—).*/i, '').trim();
+    }
+
+    // PRIORITÉ 2: couper avant section client/tableau
+    const stopMarkers = [
+      /FACTURÉ\s*[ÀA]/i,
+      /Désignation/i,
+      /N°\s+Date\s+Client/i,
+      /Mohamed|Client/i,
     ];
-    for (const line of lines.slice(0, 15)) {
-      if (line.length < 3 || line.length > 70) continue;
-      if (/^[\d\+\-\*\/\.\,\#\(\)\[\]]/.test(line)) continue;
-      const lower = line.toLowerCase().trim();
-      if (BLACKLIST_FOURNISSEUR.some(r => r.test(lower))) continue;
-      if (noisePatterns.some(r => r.test(lower))) continue;
-      if (/^[A-ZÀ-Ü][a-zà-ü]/.test(line) && line.length > 4) {
-        return correctOCRText(line);
-      }
+    let textFournisseur = text;
+    for (const marker of stopMarkers) {
+      const idx = text.search(marker);
+      if (idx > 20) { textFournisseur = text.slice(0, idx); break; }
+    }
+
+    const IGNORE = /^(avenue|rue|route|bp|tél|tel|fax|email|www\.|http|\+216|mf|matricule|facture|relevé|période|date|n°|ref|rib|swift|règlement|virement|\d{4,})/i;
+    const linesFiltered = textFournisseur
+      .split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+
+    for (const line of linesFiltered.slice(0, 6)) {
+      if (line.length < 2 || line.length > 65) continue;
+      if (IGNORE.test(line)) continue;
+      if (/^\d+$/.test(line)) continue;
+      if (/^\W+$/.test(line)) continue;
+      if (!(/[A-Za-zÀ-ü]{2,}/).test(line)) continue;
+      const clean = line
+        .replace(/\s*(MF\s*:|Tél\s*:|—{2,}|\|).*/i, '')
+        .replace(/^['\s\[]+/, '')
+        .trim();
+      if (clean.length >= 2) return clean;
     }
     return null;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 // ──────────────────────────────────────────────────
@@ -562,8 +582,8 @@ function parseFactureTunisienne(text) {
     const htPatterns = [
       /(?:Total\s+HT|Montant\s+HT|Sous[\-\s]total\s+HT|Net\s+HT|Base\s+HT)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
       /\bHT\b\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
-      /Total\s+HT\s+([\d\s\.,]+\d)/gi,
-      /\bHT\b\s*(\d[\d\s\.,]*\d)\s*$/gim,
+      /Total\s+HT\s*\|?\s*([\d\s\.,]+\d)/gi,
+      /\bHT\b\s*\|?\s*([\d\s\.,]+\d)\s*$/gim,
       /(?:H\.T\.)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
     ];
     for (const p of htPatterns) {
@@ -685,7 +705,8 @@ function parseFactureTunisienne(text) {
     const ttcPatterns = [
       /(?:Total\s+TTC|Montant\s+TTC|TOTAL\s+TTC)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
       /(?:Net\s+[àa]\s+[Pp]ayer|Montant\s+[Nn]et|Net\s+payé)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
-      /NET\s+A\s+PAYER\s+([\d\s\.,]+\d)/gi,
+      /Net\s+[àa]\s+payer\s*\|?\s*([\d\s\.,]+\d)/gi,
+      /NET\s+A\s+PAYER\s*\|?\s*([\d\s\.,]+\d)/gi,
       /(?:المبلغ\s+الجملي|الإجمالي)\s*[:\-]?\s*([\d\s\.,]+\d)/gi,
     ];
     let bestTTC = 0;
