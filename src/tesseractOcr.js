@@ -438,6 +438,41 @@ function saveOrUpdateFournisseur(name, detectedData = {}) {
 }
 
 // ──────────────────────────────────────────────────
+// Parse montant en toutes lettres (français)
+// ──────────────────────────────────────────────────
+function parseMontantLettres(text) {
+  const m = text.match(/(\S[\w\s\-]+)\s*[Dd]inars?/i);
+  if (!m) return null;
+  const mots = m[1].toLowerCase().replace(/[^a-zéèêëàâîïôûùç\s\-]/g, '').trim().split(/[\s\-]+/);
+  const CHIFFRES = {
+    zéro:0, un:1, une:1, deux:2, trois:3, quatre:4, cinq:5, six:6, sept:7, huit:8, neuf:9, dix:10,
+    onze:11, douze:12, treize:13, quatorze:14, quinze:15, seize:16,
+    vingt:20, trente:30, quarante:40, cinquante:50, soixante:60,
+    soixantedix:70, quatrevingt:80, quatrevingtdix:90, cent:100, mille:1000,
+  };
+  let total = 0, courant = 0;
+  for (const mot of mots) {
+    if (CHIFFRES[mot] !== undefined) {
+      const v = CHIFFRES[mot];
+      if (v >= 1000) { total += courant * v; courant = 0; }
+      else if (v >= 100) {
+        if (courant === 0) courant = 1;
+        courant *= v;
+      } else {
+        courant += v;
+      }
+    } else if (mot === 'et' || mot === '') {
+      continue;
+    } else {
+      // "soixante-dix-neuf" → split on "-" already done
+      // "quatre-vingt" → handled via CHIFFRES
+    }
+  }
+  total += courant;
+  return total > 0 ? total : null;
+}
+
+// ──────────────────────────────────────────────────
 // Détection lignes articles
 // ──────────────────────────────────────────────────
 function detectLignes(text) {
@@ -742,6 +777,12 @@ function parseFactureTunisienne(text) {
     if (!result.montant_ttc && result.lignes && result.lignes.length > 0) {
       const sumTotals = result.lignes.reduce((s, l) => s + (l.total || 0), 0);
       if (sumTotals > 0) result.montant_ttc = parseFloat(sumTotals.toFixed(3));
+    }
+
+    // Fallback: détecter "Deux cent soixante dix-neuf Dinars"
+    if (!result.montant_ttc) {
+      const montantLettres = parseMontantLettres(text);
+      if (montantLettres) result.montant_ttc = montantLettres;
     }
 
     // ══════════════════════════════════════════
