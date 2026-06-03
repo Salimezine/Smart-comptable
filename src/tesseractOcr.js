@@ -917,6 +917,7 @@ async function scanFacture(file, onProgress) {
 
     const parsed = parseFactureTunisienne(text);
     parsed.confidence = Math.round(confidence);
+    parsed.rawText = text;
     const validated = validerCalculs(parsed);
 
     onProgress?.(100);

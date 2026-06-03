@@ -1962,6 +1962,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
   const [purchaseError, setPurchaseError] = useState('');
+  const [ocrRawText, setOcrRawText] = useState('');
   const [typeJustificatif, setTypeJustificatif] = useState('achat');
   const [clientEmail, setClientEmail] = useState('');
   const [clientAddress, setClientAddress] = useState('');
@@ -2142,6 +2143,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       }
 
       applyFormData(ocrToFormData(result));
+      setOcrRawText(result?.rawText || '');
       setOcrProgress(100);
       setMode('result');
 
@@ -2244,6 +2246,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
       setPurchaseLoading(false);
       setIsAiScan(true);
+      setOcrRawText(purchaseInput);
       setMode('result');
     } catch (err) {
       setPurchaseError('Erreur de parsing — vérifiez le format du texte');
@@ -2287,6 +2290,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
     const resetForm = () => {
       setFormData(BLANK_FORM);
+      setOcrRawText('');
       setShowRsField(false);
       setRsRate('1.5');
       setMfValid(null);
@@ -2388,12 +2392,12 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       )}
 
       {/* Debug OCR — texte brut */}
-      {!isManual && purchaseInput && (
+      {!isManual && ocrRawText && (
         <details className="group">
           <summary className="text-[10px] text-slate-500 cursor-pointer hover:text-slate-300 select-none flex items-center gap-1.5 py-1">
-            <span className="opacity-50 group-open:opacity-100">▶</span> Texte OCR brut ({purchaseInput.length} car.)
+            <span className="opacity-50 group-open:opacity-100">▶</span> Texte OCR brut ({ocrRawText.length} car.)
           </summary>
-          <pre className="mt-2 p-3 bg-slate-950 border border-slate-800 rounded-xl text-[10px] text-slate-400 font-mono leading-relaxed max-h-40 overflow-y-auto whitespace-pre-wrap">{purchaseInput}</pre>
+          <pre className="mt-2 p-3 bg-slate-950 border border-slate-800 rounded-xl text-[10px] text-slate-400 font-mono leading-relaxed max-h-60 overflow-y-auto whitespace-pre-wrap">{ocrRawText}</pre>
         </details>
       )}
 
