@@ -501,6 +501,7 @@ function detectLignes(text) {
             prix_unitaire: prix,
             quantite: qte,
             total: total,
+            tva: tva,
           });
           continue;
         }
@@ -522,6 +523,7 @@ function detectLignes(text) {
             prix_unitaire: prix,
             quantite: 1,
             total: total,
+            tva: tva,
           });
           continue;
         }
@@ -611,14 +613,29 @@ function parseFactureTunisienne(text) {
         }
       },
     ];
+    // Collection tous les dates avec leur position
+    const datesTrouvees = [];
     for (const { r, fn } of datePatterns) {
-      const m = text.match(r);
-      if (m) {
+      let m;
+      r.lastIndex = 0;
+      while ((m = r.exec(text)) !== null) {
         const d = fn(m);
-        // Valider date (éviter 2026-02-29 etc.)
-        if (!isNaN(Date.parse(d))) { result.date = d; break; }
+        if (!isNaN(Date.parse(d))) {
+          datesTrouvees.push({ date: d, pos: m.index, raw: m[0] });
+        }
       }
     }
+    // Préférer dates précédées de mots-clés ; sinon la dernière
+    const keywordsDate = /\b(?:Date|date|Le|le|Facture|facture|E[\-\s]INFO|émise|du)\s*[:\-]?\s*$/;
+    let best = null;
+    for (const dt of datesTrouvees) {
+      const before = text.slice(Math.max(0, dt.pos - 40), dt.pos);
+      if (keywordsDate.test(before)) { best = dt; break; }
+    }
+    if (!best && datesTrouvees.length > 0) {
+      best = datesTrouvees[datesTrouvees.length - 1];
+    }
+    if (best) result.date = best.date;
 
     // ══════════════════════════════════════════
     // 4. NUMÉRO FACTURE
@@ -785,6 +802,27 @@ function parseFactureTunisienne(text) {
       if (montantLettres) result.montant_ttc = montantLettres;
     }
 
+    // Si TVA connue par ligne, calculer HT, TVA et TTC réels (taux mixtes)
+    if (result.lignes && result.lignes.length > 0) {
+      const withTva = result.lignes.filter(l => l.tva !== undefined);
+      if (withTva.length === result.lignes.length) {
+        const totalHT = result.lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+        const sumTotals = result.lignes.reduce((s, l) => s + (l.total || 0), 0);
+        const totalTVA = sumTotals - totalHT;
+        const timbre = result.timbre_fiscal || 0;
+        if (totalHT > 0) result.montant_ht = parseFloat(totalHT.toFixed(3));
+        if (totalTVA > 0) result.montant_tva = parseFloat(totalTVA.toFixed(3));
+        result.montant_ttc = parseFloat((sumTotals + timbre).toFixed(3));
+        // Compter occurrences de chaque taux TVA
+        const comptage = {};
+        for (const l of result.lignes) {
+          comptage[l.tva] = (comptage[l.tva] || 0) + 1;
+        }
+        const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+        if (best) result.taux_tva = parseInt(best[0]);
+      }
+    }
+
     // ══════════════════════════════════════════
     // 12. AUTO-DÉTECTION FOURNISSEUR → catégorie
     // ══════════════════════════════════════════
@@ -904,11 +942,20 @@ function validerCalculs(data) {
 
   if (data.montant_ht != null && data.taux_tva != null) {
     const base  = parseFloat((data.montant_ht + (data.fodec || 0)).toFixed(3));
-    const tva   = parseFloat((base * data.taux_tva / 100).toFixed(3));
     const timb  = data.timbre_fiscal ?? 1.000;
-    const ttc   = parseFloat((base + tva + timb).toFixed(3));
     const rs    = data.retenue_source || 0;
-    const net   = parseFloat((ttc - rs).toFixed(3));
+
+    // TVA: utiliser valeur explicite (taux mixtes) ou calculer depuis taux unique
+    const tva = data.montant_tva != null
+      ? data.montant_tva
+      : parseFloat((base * data.taux_tva / 100).toFixed(3));
+
+    // TTC: utiliser valeur existante (ex: somme lignes) ou calculer depuis HT+TVA+timbre
+    const ttc = data.montant_ttc != null
+      ? data.montant_ttc
+      : parseFloat((base + tva + timb).toFixed(3));
+
+    const net = parseFloat((ttc - rs).toFixed(3));
 
     if (data.base_tva == null)    data.base_tva    = base;
     if (data.montant_tva == null) data.montant_tva = tva;
