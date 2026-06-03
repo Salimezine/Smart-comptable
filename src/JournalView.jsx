@@ -36,15 +36,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   }, []);
 
   const fallbackEntries = useMemo(() => {
-    const entries = [];
-    invoices.forEach(inv => {
-      entries.push({ date: inv.issueDate, numeroPiece: inv.invoiceNumber || 'N/A', compte: '411 Clients', libelle: `Vente ${inv.clientName}`, debit: null, credit: inv.totalAmount || 0, journal: 'VNT' });
-    });
-    expenses.forEach(exp => {
-      entries.push({ date: exp.date, numeroPiece: exp.invoiceNumber || `EXP-${entries.length+1}`, compte: '607000 Achats', libelle: `${exp.supplier || 'Fournisseur'} — ${exp.category || ''}`, debit: exp.totalAmount || 0, credit: null, journal: 'ACH' });
-    });
-    entries.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
-    return entries;
+    return [];
   }, [invoices, expenses, transactions]);
 
   const displayJournal = journal.length > 0 ? journal : fallbackEntries;
@@ -161,9 +153,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
         <input type="number" placeholder="Max DT" value={montantMax}
           onChange={e => setMontantMax(e.target.value)}
           className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500 w-24" />
-        <span className="text-[10px] text-slate-500 whitespace-nowrap">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}
-          {journal.length === 0 && fallbackEntries.length > 0 && ' (données existantes)'}
-        </span>
+        <span className="text-[10px] text-slate-500 whitespace-nowrap">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}</span>
         <div className="flex items-center gap-1 ml-auto">
           {hasActiveFilters && (
             <button onClick={resetFilters}
