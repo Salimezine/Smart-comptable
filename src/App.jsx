@@ -2204,9 +2204,17 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     }
     // Journal entry for expense (fallback si TTN non disponible)
     const numero = inv.invoiceNumber || inv.id;
-    const cat = inv.category || 'charge_externe';
-    const compteCharge = { achat_marchandises: '607000', achat_mp: '601000', frais_energie: '614000', prestation_services: '604000', charge_externe: '611000', loyer: '613000', transport: '624000', assurance: '616000', honoraires: '622200', publicite: '623000', telecom: '626000', frais_bancaires: '627000', personnel: '640000', amortissement: '681000', autre_charge: '637000' }[cat] || '611000';
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: `${compteCharge} Charges`, libelle: `HT ${numero}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
+    const catLabel = inv.category || '';
+    const catEntry = Object.entries(CATEGORIES_SCE).find(([k, v]) => v.label === catLabel);
+    const codePcg = catEntry ? catEntry[1].code : null;
+    const compteCharge = (codePcg ? codePcg.padEnd(6, '0') : {
+      achat_marchandises: '607000', achat_mp: '601000', frais_energie: '614000',
+      prestation_services: '604000', charge_externe: '611000', loyer: '613000',
+      transport: '624000', assurance: '616000', honoraires: '622200',
+      publicite: '623000', telecom: '626000', frais_bancaires: '627000',
+      personnel: '640000', amortissement: '681000', autre_charge: '637000'
+    }[catLabel] || '611000');
+    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: `${compteCharge}`, libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
     if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '43666 TVA déductible', libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
     if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '4368 Taxes à régulariser', libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
     saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '401 Fournisseurs', libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH' });
