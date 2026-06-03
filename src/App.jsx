@@ -736,6 +736,9 @@ export default function App() {
             )}
             {currentTab === 'journal' && (
               <JournalView
+                invoices={invoices}
+                expenses={expenses}
+                transactions={transactions}
                 formatCurrency={formatCurrency}
               />
             )}

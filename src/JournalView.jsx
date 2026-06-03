@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Filter, RotateCcw } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 
 const JOURNAL_KEY = 'smart_journal';
 
-export default function JournalView({ formatCurrency }) {
+export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [] }) {
   const [journal, setJournal] = useState([]);
   const [filter, setFilter] = useState('all');
   const [showBalance, setShowBalance] = useState(false);
@@ -30,15 +30,29 @@ export default function JournalView({ formatCurrency }) {
     return () => window.removeEventListener('journal:updated', handler);
   }, []);
 
+  const fallbackEntries = useMemo(() => {
+    const entries = [];
+    invoices.forEach(inv => {
+      entries.push({ date: inv.issueDate, numeroPiece: inv.invoiceNumber || 'N/A', compte: '411 Clients', libelle: `Vente ${inv.clientName}`, debit: null, credit: inv.totalAmount || 0, journal: 'VNT' });
+    });
+    expenses.forEach(exp => {
+      entries.push({ date: exp.date, numeroPiece: exp.invoiceNumber || `EXP-${entries.length+1}`, compte: '607000 Achats', libelle: `${exp.supplier || 'Fournisseur'} — ${exp.category || ''}`, debit: exp.totalAmount || 0, credit: null, journal: 'ACH' });
+    });
+    entries.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    return entries;
+  }, [invoices, expenses, transactions]);
+
+  const displayJournal = journal.length > 0 ? journal : fallbackEntries;
+
   const filtered = filter === 'all'
-    ? journal
-    : journal.filter(e => e.journal === filter);
+    ? displayJournal
+    : displayJournal.filter(e => e.journal === filter);
 
   const totalDebit = filtered.reduce((s, e) => s + (parseFloat(e.debit) || 0), 0);
   const totalCredit = filtered.reduce((s, e) => s + (parseFloat(e.credit) || 0), 0);
   const equilibre = Math.abs(totalDebit - totalCredit) < 0.01;
 
-  const balances = computeBalances(journal);
+  const balances = computeBalances(displayJournal);
   const balanceGenerale = buildBalanceGenerale(balances);
 
   return (
@@ -53,7 +67,9 @@ export default function JournalView({ formatCurrency }) {
             <option value="VNT">Ventes</option>
             <option value="OD">Opérations Diverses</option>
           </select>
-          <span className="text-[10px] text-slate-500">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}</span>
+          <span className="text-[10px] text-slate-500">{filtered.length} écriture{filtered.length > 1 ? 's' : ''}
+            {journal.length === 0 && fallbackEntries.length > 0 && ' (données existantes)'}
+          </span>
         </div>
         <button onClick={() => { loadJournal(); setShowBalance(!showBalance); }}
           className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs rounded-xl transition-colors">
