@@ -445,7 +445,8 @@ function detectLignes(text) {
   const sauts = text.replace(/\r\n/g, '\n').split('\n');
   const bruitLigne = /^(total|tva|ht|ttc|net|timbre|fodec|retenue|remise|taux|reference|observation|base|designation|client)/i;
   const LIGNE_EINFO = /^(.{5,50}?)\s{2,}(\d{1,3})\s+(0|7|13|19)\s+([\d,]+)\s+([\d,]+)$/;
-  const LIGNE_EINFO2 = /^(.{3,60}?)\s{2,}\d{5,7}\s+\d{2}\/\d{2}\/\d{4}\s*(?:\|\s*(\d{1,3})\s*)?\s*(\d{1,3}(?:[.,]\d{1,3})?)\s*$/;
+  // E-INFO actuel: [Désignation TVA[|] PrixHT[|] TotalTTC]
+  const LIGNE_EINFO3 = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s*(?:\|\s*)?([\d,]+)\s*(?:\|\s*)?([\d,]+)\s*\]?\s*(?:\|\s*)?$/;
 
   for (const line of sauts) {
     const l = line.trim();
@@ -471,19 +472,20 @@ function detectLignes(text) {
       }
     }
 
-    // E-INFO pipe format: Désignation  N°  Date  [|  Qte]  TotalTTC
-    LIGNE_EINFO2.lastIndex = 0;
-    const em2 = LIGNE_EINFO2.exec(l);
-    if (em2) {
-      const des = em2[1].trim();
+    // E-INFO tableau réel: [Désignation TVA[|] PrixHT[|] TotalTTC]
+    LIGNE_EINFO3.lastIndex = 0;
+    const em3 = LIGNE_EINFO3.exec(l);
+    if (em3) {
+      const des = em3[1].trim();
       if (!bruitLigne.test(des) && des.length >= 3) {
-        const qte = em2[2] ? parseInt(em2[2]) : 1;
-        const total = normaliserMontant(em2[3]);
-        if (qte > 0 && qte < 99999 && total !== null) {
+        const tva = parseInt(em3[2]);
+        const prix = normaliserMontant(em3[3]);
+        const total = normaliserMontant(em3[4]);
+        if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
           lignes.push({
             designation: des,
-            prix_unitaire: parseFloat((total / qte).toFixed(3)),
-            quantite: qte,
+            prix_unitaire: prix,
+            quantite: 1,
             total: total,
           });
           continue;
