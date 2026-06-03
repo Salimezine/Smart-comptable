@@ -1,40 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Trash2, Save, BookOpen } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
-
-const PCG_COMPTES = {
-  '401000': 'Fournisseurs',
-  '411000': 'Clients',
-  '512000': 'Banque',
-  '530000': 'Caisse',
-  '601000': 'Achats de marchandises',
-  '602000': 'Achats matières premières',
-  '604000': 'Achats études et prestations',
-  '606000': 'Achats non stockés',
-  '607000': 'Achats de marchandises (revendus)',
-  '611000': 'Sous-traitance',
-  '613000': 'Loyers',
-  '614000': 'Charges locatives',
-  '616000': "Primes d'assurance",
-  '622200': 'Honoraires',
-  '623000': 'Publicité',
-  '624000': 'Transports',
-  '626000': 'Frais postaux et télécom',
-  '627000': 'Services bancaires',
-  '640000': 'Charges de personnel',
-  '645000': 'Charges sociales CNSS',
-  '681000': 'Dotations amortissements',
-  '700000': 'Ventes de marchandises',
-  '706000': 'Prestations de services',
-  '708000': 'Autres produits',
-  '445000': 'TVA collectée',
-  '44550':  'TVA déductible',
-  '43666':  'CNSS à payer',
-  '43671':  'Retenue à la source',
-  '4368':   'Autres charges sociales',
-  '164000': 'Emprunts bancaires',
-  '440000': 'Fournisseurs effets à payer',
-};
+import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
 
 const EMPTY_LINE = { compte: '', libelle: '', debit: '', credit: '' };
 
