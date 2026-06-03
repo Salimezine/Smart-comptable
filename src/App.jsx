@@ -551,11 +551,10 @@ export default function App() {
   const handleRequestAudit = () => {
     setAdvisorModalOpen(true);
     setAdvisorLoading(true);
-    setAdvisorReport('');
+    setAdvisorReport(null);
     try {
       const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
-      const md = generateAuditMarkdown(result);
-      setAdvisorReport(md);
+      setAdvisorReport(result);
     } catch (err) {
       setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
     } finally {
@@ -907,14 +906,16 @@ export default function App() {
               </button>
             </div>
             
-            <div className="p-8 overflow-y-auto flex-1 text-sm text-slate-300 prose prose-invert prose-brand max-w-none">
+            <div className="p-8 overflow-y-auto flex-1">
               {advisorLoading ? (
                 <div className="flex flex-col items-center justify-center py-12 space-y-4">
                   <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
                   <p className="text-slate-400 font-medium animate-pulse">Analyse locale de vos flux comptables en cours...</p>
                 </div>
+              ) : typeof advisorReport === 'string' ? (
+                <p className="text-red-400 text-xs">{advisorReport}</p>
               ) : (
-                <ReactMarkdown rehypePlugins={[rehypeSanitize]}>{advisorReport}</ReactMarkdown>
+                <AuditReportRenderer report={advisorReport} />
               )}
             </div>
             
