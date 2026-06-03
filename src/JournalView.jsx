@@ -49,6 +49,8 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   const displayJournal = journal.length > 0 ? journal : fallbackEntries;
 
+  console.log('ENTRY SAMPLE:', displayJournal[0]);
+
   const filtered = displayJournal.filter(e => {
     if (filter !== 'all' && e.journal !== filter) return false;
     if (searchText) {
@@ -238,10 +240,14 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                       <td className="py-4 px-6 font-mono text-slate-300">{e.compte}</td>
                       <td className="py-4 px-6 text-slate-200">{e.libelle}</td>
                       <td className="py-4 px-6 text-right text-danger-400 font-semibold">
-                        {e.debit != null ? formatCurrency(e.debit) : '-'}
+                        {e.debit && e.debit !== 0
+                          ? Number(e.debit).toFixed(3) + ' DT'
+                          : <span className="text-slate-600">&mdash;</span>}
                       </td>
                       <td className="py-4 px-6 text-right text-accent-400 font-semibold">
-                        {e.credit != null ? formatCurrency(e.credit) : '-'}
+                        {e.credit && e.credit !== 0
+                          ? Number(e.credit).toFixed(3) + ' DT'
+                          : <span className="text-slate-600">&mdash;</span>}
                       </td>
                       <td className="py-4 px-6 text-center">
                         <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400">{e.journal}</span>

@@ -2,6 +2,40 @@ import React, { useState } from 'react';
 import { Plus, Trash2, Save, BookOpen } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
 
+const PCG_COMPTES = {
+  '401000': 'Fournisseurs',
+  '411000': 'Clients',
+  '512000': 'Banque',
+  '530000': 'Caisse',
+  '601000': 'Achats de marchandises',
+  '602000': 'Achats matières premières',
+  '604000': 'Achats études et prestations',
+  '606000': 'Achats non stockés',
+  '607000': 'Achats de marchandises (revendus)',
+  '611000': 'Sous-traitance',
+  '613000': 'Loyers',
+  '614000': 'Charges locatives',
+  '616000': "Primes d'assurance",
+  '622200': 'Honoraires',
+  '623000': 'Publicité',
+  '624000': 'Transports',
+  '626000': 'Frais postaux et télécom',
+  '627000': 'Services bancaires',
+  '640000': 'Charges de personnel',
+  '645000': 'Charges sociales CNSS',
+  '681000': 'Dotations amortissements',
+  '700000': 'Ventes de marchandises',
+  '706000': 'Prestations de services',
+  '708000': 'Autres produits',
+  '445000': 'TVA collectée',
+  '44550':  'TVA déductible',
+  '43666':  'CNSS à payer',
+  '43671':  'Retenue à la source',
+  '4368':   'Autres charges sociales',
+  '164000': 'Emprunts bancaires',
+  '440000': 'Fournisseurs effets à payer',
+};
+
 const EMPTY_LINE = { compte: '', libelle: '', debit: '', credit: '' };
 
 export default function ManualEntryView({ formatCurrency }) {
@@ -105,7 +139,7 @@ export default function ManualEntryView({ formatCurrency }) {
                     <tr key={i}>
                       <td className="py-1.5 pr-2">
                         <input type="text" value={l.compte} onChange={e => updateLine(i, 'compte', e.target.value)}
-                          placeholder="401000" list="comptes-list"
+                          placeholder="ex: 401000 — Fournisseurs" list="comptes-list"
                           className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-brand-500 font-mono" />
                       </td>
                       <td className="py-1.5 px-2">
@@ -135,7 +169,9 @@ export default function ManualEntryView({ formatCurrency }) {
               </table>
             </div>
             <datalist id="comptes-list">
-              <option value="401000" /><option value="411000" /><option value="607000" /><option value="700000" /><option value="43666" /><option value="43671" /><option value="4368" /><option value="640000" /><option value="613000" /><option value="626000" /><option value="616000" /><option value="622200" /><option value="611000" /><option value="604000" /><option value="623000" /><option value="624000" /><option value="614000" /><option value="627000" /><option value="512000" /><option value="50000" /><option value="164000" /><option value="440000" /><option value="441100" />
+              {Object.entries(PCG_COMPTES).map(([code, label]) => (
+                <option key={code} value={code}>{code} — {label}</option>
+              ))}
             </datalist>
           </div>
 
