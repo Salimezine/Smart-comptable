@@ -98,6 +98,14 @@ function normaliserMontant(str) {
   return isNaN(n) ? null : parseFloat(n.toFixed(3));
 }
 
+function parseMontant(val) {
+  if (val === null || val === undefined || val === '') return 0;
+  if (typeof val === 'number') return isNaN(val) ? 0 : val;
+  const s = String(val).replace(/\s/g, '').replace(',', '.');
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+
 function detecterCategorie(text) {
   const t = text.toLowerCase();
   if (/ooredoo|telecom|orange|internet|topnet|hexabyte|globalnet/.test(t)) return 'frais_telecommunication';
@@ -1224,8 +1232,8 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
         type: '380',
         timbre: parseFloat(invoice.stampDuty) || 0,
         fournisseur: {
-          matriculeFiscal: companyDetails.matriculeFiscal || '',
-          nom: companyDetails.companyName || '',
+          matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '',
+          nom: companyDetails.companyName || companyDetails.name || '',
           adresse: companyDetails.address || '',
           rne: companyDetails.rne || '',
         },
@@ -1624,7 +1632,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setTeifModal(null)}>
           <div className="relative w-full max-w-3xl max-h-[85vh] overflow-auto rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-sm font-bold text-slate-200">📄 TEIF — {teifModal.numero || 'Sans numéro'}</h3>
+              <h3 className="text-sm font-bold text-slate-200">📄 TEIF — {teifModal.invoiceNumber || teifModal.numero || teifModal.id || 'Sans numéro'}</h3>
               <button onClick={() => setTeifModal(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
             </div>
             <pre className="text-[10px] text-slate-300 bg-slate-900/80 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap break-all max-h-[60vh]">{teifXmlContent || 'Génération en cours...'}</pre>
@@ -1657,7 +1665,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
                 </div>
               ))}
               <div className="border-t border-slate-700/60 my-2" />
-              <div className="flex justify-between font-bold"><span className="text-slate-400">Total:</span><span className="text-slate-200">{formatCurrency(pieceComptableView.total)}</span></div>
+              <div className="flex justify-between font-bold"><span className="text-slate-400">Total:</span><span className="text-slate-200">{(() => { const t = pieceComptableView.total ?? (pieceComptableView.totalDebit ?? pieceComptableView.totalCredit ?? 0); return formatCurrency(typeof t === 'number' && !isNaN(t) ? t : 0); })()}</span></div>
             </div>
             <div className="flex justify-end gap-2 mt-4">
               <button onClick={() => setPieceComptableView(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs">Fermer</button>
@@ -2031,7 +2039,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         type: '380',
         timbre: inv.stampDuty || 0,
         fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
-        client: { matriculeFiscal: companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || '' },
+        client: { matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || companyDetails.name || '' },
         lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
       };
       const gen = generateTEIFXML(teifInvoice);
@@ -2170,7 +2178,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             type: '380',
             timbre: inv.stampDuty || 0,
             fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
-            client: { matriculeFiscal: companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || '' },
+            client: { matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || companyDetails.name || '' },
             lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
           };
           const gen = generateTEIFXML(teifInvoice);

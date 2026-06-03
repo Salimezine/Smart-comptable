@@ -110,16 +110,16 @@ function getCompteParCategorie(categorie) {
 }
 
 function getCompteTvaParTaux(taux) {
-  const map = { 19: '44571', 13: '44572', 7: '44573', 0: '44574' };
-  return map[taux] || '44571';
+  const map = { 19: '43671', 13: '43672', 7: '43673', 0: '43674' };
+  return map[taux] || '43671';
 }
 
 function getCompteTimbre() {
-  return '44785';
+  return '4311';
 }
 
 function getCompteFodec() {
-  return '4478';
+  return '602000';
 }
 
 function getCompteFournisseur(categorie) {
@@ -745,6 +745,9 @@ export function createPieceComptable(invoiceData, ttnResponse) {
     lignes,
     total_debit: formatMontant(totalDebit),
     total_credit: formatMontant(totalCredit),
+    total: Math.max(totalDebit, totalCredit),
+    totalDebit,
+    totalCredit,
     equilibre: Math.abs(totalDebit - totalCredit) < 0.01,
     devise: 'TND',
   };

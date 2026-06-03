@@ -5,9 +5,6 @@
  * Pure JS navigateur — zéro dépendance externe
  */
 
-// ─────────────────────────────────────────────
-// Utilitaires XML
-// ─────────────────────────────────────────────
 function esc(str) {
   if (str == null) return '';
   return String(str)
@@ -29,6 +26,34 @@ function makeId() {
   return `${ds}-${r}`;
 }
 
+function readConfig() {
+  try {
+    const c1 = JSON.parse(localStorage.getItem('smart_config') || '{}');
+    const c2 = JSON.parse(localStorage.getItem('smart_entreprise') || '{}');
+    const c3 = JSON.parse(localStorage.getItem('entreprise') || '{}');
+    return { ...c3, ...c2, ...c1 };
+  } catch {
+    return {};
+  }
+}
+
+function resolveFournisseur(invoice) {
+  const invF = invoice.fournisseur || {};
+  const cfg = readConfig();
+  return {
+    matriculeFiscal: invF.matriculeFiscal || cfg.matriculeFiscal || cfg.mf || cfg.MF || '',
+    nom: invF.nom || cfg.raisonSociale || cfg.nom || cfg.name || '',
+    adresse: invF.adresse || cfg.adresse || cfg.address || '',
+    rne: invF.rne || cfg.rne || cfg.RNE || '',
+  };
+}
+
+function taxExemptionCode(taux) {
+  const t = parseFloat(taux) || 19;
+  if (t === 0) return 'E';
+  return 'S';
+}
+
 function qrData(mf, invId, date, ttc) {
   try {
     return btoa(`${mf}|${invId}|${date}|${fmt3(ttc)}`);
@@ -37,15 +62,19 @@ function qrData(mf, invId, date, ttc) {
   }
 }
 
-// ─────────────────────────────────────────────
-// 1. generateTEIFXML — génération XML complète
-// ─────────────────────────────────────────────
 export function generateTEIFXML(invoice) {
   try {
     if (!invoice) throw new Error('Facture requise');
-    const fournisseur = invoice.fournisseur || {};
+
+    const fournisseur = resolveFournisseur(invoice);
     const client = invoice.client || {};
-    const lignes = Array.isArray(invoice.lignes) ? invoice.lignes : [];
+
+    const lignes = (Array.isArray(invoice.lignes) ? invoice.lignes : [])
+      .filter(l => l && l.designation && (parseFloat(l.quantite) || 0) > 0 && (parseFloat(l.prixUnitaireHT) || 0) > 0);
+
+    if (lignes.length === 0) throw new Error('Aucune ligne article valide — au moins une ligne avec désignation, quantité > 0 et prix > 0');
+
+    if (!fournisseur.matriculeFiscal) throw new Error('MF fournisseur manquant — configurez votre Matricule Fiscal dans Configuration');
 
     const baseHT = lignes.reduce((s, l) => s + (parseFloat(l.quantite) || 0) * (parseFloat(l.prixUnitaireHT) || 0), 0);
 
@@ -66,27 +95,33 @@ export function generateTEIFXML(invoice) {
     const timbre = parseFloat(invoice.timbre) || 0;
     const totalTTC = baseHT + totalTVA + fodecTotal + timbre;
 
-    const invId = invoice.id || '',
-      dateEmission = invoice.dateEmission || new Date().toISOString().slice(0, 10),
+    const invId = invoice.id || invoice.numero || invoice.invoiceNumber || '',
+      dateEmission = invoice.dateEmission || invoice.issueDate || new Date().toISOString().slice(0, 10),
       type = invoice.type || '380',
       intId = makeId();
 
-    const qr = qrData(fournisseur.matriculeFiscal || '', invId, dateEmission, totalTTC);
+    const mfFournisseur = fournisseur.matriculeFiscal;
+    const qr = qrData(mfFournisseur, invId, dateEmission, totalTTC);
 
     function tvaBlock() {
       return Object.entries(tvaGroups)
         .filter(([, v]) => v > 0.001)
-        .map(([taux, mt]) => `
+        .map(([taux, mt]) => {
+          const code = taxExemptionCode(taux);
+          return `
       <cac:TaxSubtotal>
         <cbc:TaxableAmount currencyID="TND">${fmt3(baseHT)}</cbc:TaxableAmount>
         <cbc:TaxAmount currencyID="TND">${fmt3(mt)}</cbc:TaxAmount>
         <cbc:Percent>${fmt3(parseFloat(taux))}</cbc:Percent>
         <cac:TaxCategory>
+          <cbc:TaxExemptionReasonCode>${code}</cbc:TaxExemptionReasonCode>
+          <cbc:Percent>${fmt3(parseFloat(taux))}</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
           </cac:TaxScheme>
         </cac:TaxCategory>
-      </cac:TaxSubtotal>`).join('');
+      </cac:TaxSubtotal>`;
+        }).join('');
     }
 
     function linesBlock() {
@@ -111,7 +146,8 @@ export function generateTEIFXML(invoice) {
         <cac:Price>
           <cbc:PriceAmount currencyID="TND">${fmt3(pu)}</cbc:PriceAmount>
         </cac:Price>
-      </cac:InvoiceLine>`}).join('');
+      </cac:InvoiceLine>`;
+      }).join('');
     }
 
     function partyBlock(role) {
@@ -149,6 +185,12 @@ export function generateTEIFXML(invoice) {
     </cac:${roleTag}>`;
     }
 
+    const note = invoice.note ? `
+  <cac:InvoiceLine>
+    <cbc:ID>0</cbc:ID>
+    <cbc:Note>${esc(invoice.note)}</cbc:Note>
+  </cac:InvoiceLine>` : '';
+
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
          xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -172,12 +214,7 @@ export function generateTEIFXML(invoice) {
 
   ${partyBlock('supplier')}
   ${partyBlock('customer')}
-
-  <cac:InvoiceLine>
-    <cbc:ID>0</cbc:ID>
-    <cbc:Note>${esc(invoice.note || '')}</cbc:Note>
-  </cac:InvoiceLine>
-
+  ${note}
   ${linesBlock()}
 
   <cac:TaxTotal>
@@ -189,15 +226,17 @@ export function generateTEIFXML(invoice) {
     <cbc:LineExtensionAmount currencyID="TND">${fmt3(baseHT)}</cbc:LineExtensionAmount>
     <cbc:TaxExclusiveAmount currencyID="TND">${fmt3(baseHT)}</cbc:TaxExclusiveAmount>
     <cbc:TaxInclusiveAmount currencyID="TND">${fmt3(baseHT + totalTVA)}</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="TND">0.000</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="TND">${fmt3(timbre)}</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="TND">0.000</cbc:PrepaidAmount>
+    ${timbre > 0 ? `
+    <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReason>TIMBRE_FISCAL</cbc:AllowanceChargeReason>
+      <cbc:Amount currencyID="TND">${fmt3(timbre)}</cbc:Amount>
+    </cac:AllowanceCharge>` : ''}
     <cbc:PayableAmount currencyID="TND">${fmt3(totalTTC)}</cbc:PayableAmount>
   </cac:LegalMonetaryTotal>
-
-  ${timbre > 0 ? `
-  <cac:AllowanceCharge>
-    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-    <cbc:AllowanceChargeReason>TIMBRE</cbc:AllowanceChargeReason>
-    <cbc:Amount currencyID="TND">${fmt3(timbre)}</cbc:Amount>
-  </cac:AllowanceCharge>` : ''}
 </Invoice>`;
 
     return { xml, qr, totalTTC, internalId: intId };
@@ -206,9 +245,6 @@ export function generateTEIFXML(invoice) {
   }
 }
 
-// ─────────────────────────────────────────────
-// 2. validateTEIF — validation structure XML
-// ─────────────────────────────────────────────
 export function validateTEIF(xmlString) {
   try {
     if (!xmlString || typeof xmlString !== 'string') {
@@ -228,8 +264,11 @@ export function validateTEIF(xmlString) {
     if (!xmlString.includes('<cbc:PayableAmount')) errors.push('Montant TTC (PayableAmount) manquant');
 
     const mfMatch = xmlString.match(/<cbc:ID schemeID="MF">([^<]+)<\/cbc:ID>/);
-    if (!mfMatch || !/^\d{6,7}\/[A-Z]/.test(mfMatch[1])) {
-      errors.push('MF fournisseur invalide ou absent — vérifiez Configuration > Matricule Fiscal');
+    const mf = mfMatch ? mfMatch[1].trim() : '';
+    if (!mf) {
+      errors.push('MF fournisseur manquant → Allez dans Configuration > Matricule Fiscal (MF) et saisissez votre MF (ex: 1234567/X/A/000)');
+    } else if (!/^\d{6,7}\/[A-Z]/.test(mf)) {
+      errors.push(`MF fournisseur "${mf}" invalide — format attendu: 1234567/X/A/000 (7 chiffres + barre + lettre + barre + lettre + barre + 3 chiffres)`);
     }
 
     const ttcMatch = xmlString.match(/<cbc:PayableAmount[^>]*>([^<]+)<\/cbc:PayableAmount>/);
@@ -238,15 +277,15 @@ export function validateTEIF(xmlString) {
       if (isNaN(ttc) || ttc <= 0) errors.push('Total TTC doit être > 0');
     }
 
+    const lineCount = (xmlString.match(/<cac:InvoiceLine>/g) || []).length;
+    if (lineCount === 0) errors.push('Aucune ligne article dans le XML');
+
     return { valid: errors.length === 0, errors };
   } catch {
     return { valid: false, errors: ["Erreur de validation XML inattendue"] };
   }
 }
 
-// ─────────────────────────────────────────────
-// 3. downloadTEIFXML — téléchargement fichier
-// ─────────────────────────────────────────────
 export function downloadTEIFXML(xmlString, invoiceId) {
   try {
     if (!xmlString) return;
