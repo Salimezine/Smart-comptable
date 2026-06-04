@@ -188,7 +188,6 @@ export function detectMF(text) {
           if (p.length >= 3) {
             p[1] = p[1].replace(/0/g, 'O');
             if (p.length >= 4) p[3] = p[3].replace(/0/g, 'O');
-            if (p.length >= 5) p[4] = p[4].replace(/0/g, 'O');
           }
           return p.join('/');
         }
