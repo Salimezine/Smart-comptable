@@ -1214,7 +1214,7 @@ function extraireRecapitulatif(text) {
 function extraireMFFournisseur(text) {
   const lignes = text.split('\n').filter(Boolean);
   const idxClient = lignes.findIndex(l => /factur[eé]\s*[àa]|client\s*:|adresse\s*client/i.test(l));
-  const mfRegex = /\b(\d{7}\/[A-Z]\/[A-Z](?:\/[A-Z]\/\d{3})?)\b/g;
+  const mfRegex = /\b(\d{7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
   const mfTrouves = [];
   lignes.forEach((ligne, idx) => {
     let m;
@@ -1223,7 +1223,15 @@ function extraireMFFournisseur(text) {
     }
   });
   const mfFour = mfTrouves.find(mf => idxClient === -1 || mf.ligne < idxClient);
-  return mfFour ? mfFour.valeur : null;
+  if (!mfFour) return null;
+  // Normaliser 0→O dans les positions lettres
+  const parts = mfFour.valeur.split('/');
+  if (parts.length >= 3) {
+    parts[1] = parts[1].replace(/0/g, 'O');
+    if (parts.length >= 4) parts[3] = parts[3].replace(/0/g, 'O');
+    return parts.join('/');
+  }
+  return mfFour.valeur;
 }
 
 function formatTauxTVA(val) {
@@ -1384,7 +1392,7 @@ export function corrigerFacture(parsed, texteOCR) {
     );
 
     // Extraire TOUS les MF avec leur position ligne
-    const mfRegex = /\b(\d{7}\/[A-Z]\/[A-Z](?:\/[A-Z]\/\d{3})?)\b/g;
+    const mfRegex = /\b(\d{7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
     const mfTrouves = [];
     lignesTexte.forEach((ligne, idx) => {
       let m;
@@ -1399,7 +1407,16 @@ export function corrigerFacture(parsed, texteOCR) {
     );
 
     if (mfFournisseur) {
-      out.matricule_fiscal = mfFournisseur.valeur;
+      // Normaliser OCR : 0→O dans les positions lettres (ex: 0012345/0/A/M/000 → 0012345/O/A/M/000)
+      // Normaliser OCR : 0→O dans les positions lettres (ex: 0012345/0/A/M/000 → 0012345/O/A/M/000)
+      const mfParts = mfFournisseur.valeur.split('/');
+      if (mfParts.length >= 3) {
+        mfParts[1] = mfParts[1].replace(/0/g, 'O');
+        if (mfParts.length >= 4) mfParts[3] = mfParts[3].replace(/0/g, 'O');
+        out.matricule_fiscal = mfParts.join('/');
+      } else {
+        out.matricule_fiscal = mfFournisseur.valeur;
+      }
     }
 
     // Fournisseur : en-tête (5 premières lignes), exclure "FACTURÉ À", "Client :"
@@ -1412,7 +1429,7 @@ export function corrigerFacture(parsed, texteOCR) {
     }
 
     // Validation MF
-    const MF_FULL = /^\d{7}\/[A-Z]\/[A-Z]\/[A-Z]\/\d{3}$/;
+    const MF_FULL = /^\d{7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3}$/;
     if (!out.matricule_fiscal || !MF_FULL.test(out.matricule_fiscal)) {
       out.alertes.push('mf_manquant');
     }
