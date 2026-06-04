@@ -1,4 +1,4 @@
-const JOURNAL_KEY = 'smart_journal';
+import { getJournalKey } from './journalKey';
 
 export const CATEGORIE_TO_COMPTE = {
   'Télécoms & Internet': '626000',
@@ -244,7 +244,7 @@ export function saveJournalPiece(piece, opts = {}) {
     if (!piece || !piece.validated) return false;
     let journal = [];
     try {
-      const raw = localStorage.getItem(JOURNAL_KEY);
+      const raw = localStorage.getItem(getJournalKey());
       if (raw) journal = JSON.parse(raw);
     } catch { /* ignorer */ }
     if (!Array.isArray(journal)) journal = [];
@@ -265,7 +265,7 @@ export function saveJournalPiece(piece, opts = {}) {
     }));
 
     journal.unshift(...entries);
-    localStorage.setItem(JOURNAL_KEY, JSON.stringify(journal));
+    localStorage.setItem(getJournalKey(), JSON.stringify(journal));
     window.dispatchEvent(new CustomEvent('journal:updated'));
     return true;
   } catch {

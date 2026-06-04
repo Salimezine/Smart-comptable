@@ -81,7 +81,7 @@ export async function handleTTNResponse(invoice, ttnResponse) {
 
     if (status === 'accepted') {
       const piece = await createPieceComptable(invoice, ttnId);
-      await savePieceToJournal(piece);
+      await savePieceToJournal(piece, { locked: true });
       await updateStockFromInvoice(invoice);
 
       invoice.statut = 'validee_teif';

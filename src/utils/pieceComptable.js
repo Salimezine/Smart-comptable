@@ -4,6 +4,7 @@
  * Plan Comptable Général tunisien (PCG TN)
  * Pure JS navigateur — localStorage
  */
+import { getJournalKey } from './journalKey';
 
 // ─────────────────────────────────────────────
 // Comptes PCG TN par catégorie
@@ -251,7 +252,7 @@ export function createPieceComptable(invoice, ttnId) {
 // ─────────────────────────────────────────────
 // 2. savePieceToJournal — persistance journal
 // ─────────────────────────────────────────────
-const JOURNAL_KEY = 'smart_journal';
+
 
 export function savePieceToJournal(piece, opts = {}) {
   try {
@@ -259,7 +260,7 @@ export function savePieceToJournal(piece, opts = {}) {
 
     let journal = [];
     try {
-      const raw = localStorage.getItem(JOURNAL_KEY);
+      const raw = localStorage.getItem(getJournalKey());
       if (raw) journal = JSON.parse(raw);
     } catch {
       journal = [];
@@ -279,7 +280,7 @@ export function savePieceToJournal(piece, opts = {}) {
     }));
 
     journal.unshift(...entries);
-    localStorage.setItem(JOURNAL_KEY, JSON.stringify(journal));
+    localStorage.setItem(getJournalKey(), JSON.stringify(journal));
 
     window.dispatchEvent(new CustomEvent('journal:updated'));
   } catch {
@@ -298,7 +299,7 @@ export function savePieceToJournal(piece, opts = {}) {
 // ─────────────────────────────────────────────
 export function migrateJournal() {
   try {
-    const raw = localStorage.getItem(JOURNAL_KEY);
+    const raw = localStorage.getItem(getJournalKey());
     if (!raw) return;
     let entries = JSON.parse(raw);
     if (!Array.isArray(entries)) return;
@@ -312,7 +313,7 @@ export function migrateJournal() {
       }
       return e;
     });
-    if (changed) localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
+    if (changed) localStorage.setItem(getJournalKey(), JSON.stringify(entries));
   } catch { /* silencieux */ }
 }
 
@@ -320,7 +321,7 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
   try {
     let entries = [];
     try {
-      const raw = localStorage.getItem(JOURNAL_KEY);
+      const raw = localStorage.getItem(getJournalKey());
       if (raw) entries = JSON.parse(raw);
     } catch { /* ignorer */ }
     if (!Array.isArray(entries)) entries = [];
@@ -339,7 +340,7 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
       ttnId: null,
     });
 
-    localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
+    localStorage.setItem(getJournalKey(), JSON.stringify(entries));
     window.dispatchEvent(new CustomEvent('journal:updated'));
   } catch {
     /* silencieux */

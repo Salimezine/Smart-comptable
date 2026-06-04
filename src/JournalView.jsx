@@ -3,8 +3,7 @@ import { Filter, RotateCcw, Search, X, Download, Eye, Edit3, Save, XCircle } fro
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { getDocument } from './utils/docStore';
 import { migrateJournal } from './utils/pieceComptable';
-
-const JOURNAL_KEY = 'smart_journal';
+import { getJournalKey } from './utils/journalKey';
 
 export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [] }) {
   const [journal, setJournal] = useState([]);
@@ -24,13 +23,13 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const saveEditPiece = () => {
     if (!editData || !editingPiece) return;
     try {
-      const raw = localStorage.getItem(JOURNAL_KEY);
+      const raw = localStorage.getItem(getJournalKey());
       let entries = raw ? JSON.parse(raw) : [];
       if (!Array.isArray(entries)) entries = [];
       const filtered = entries.filter(e => e.numeroPiece !== editingPiece);
       const lockedLines = editData.lines.map(l => ({ ...l, locked: true }));
       filtered.unshift(...lockedLines);
-      localStorage.setItem(JOURNAL_KEY, JSON.stringify(filtered));
+      localStorage.setItem(getJournalKey(), JSON.stringify(filtered));
       window.dispatchEvent(new CustomEvent('journal:updated'));
       setEditingPiece(null);
       setEditData(null);
@@ -65,7 +64,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const loadJournal = () => {
     try {
       migrateJournal();
-      const raw = localStorage.getItem(JOURNAL_KEY);
+      const raw = localStorage.getItem(getJournalKey());
       if (raw) {
         const data = JSON.parse(raw);
         setJournal(Array.isArray(data) ? data : []);
@@ -428,12 +427,15 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  {!lines[0].locked && (
-                    <button onClick={() => startEdit(detailPiece, lines)}
-                      className="flex items-center gap-1 px-2.5 py-1.5 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-[10px] rounded-xl transition-colors">
-                      <Edit3 className="w-3 h-3" /> Modifier
-                    </button>
-                  )}
+                  <button onClick={() => {
+                    if (lines[0].locked) {
+                      if (!confirm('Cette écriture est verrouillée. La déverrouiller pour modification ?')) return;
+                    }
+                    startEdit(detailPiece, lines);
+                  }}
+                    className="flex items-center gap-1 px-2.5 py-1.5 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-[10px] rounded-xl transition-colors">
+                    <Edit3 className="w-3 h-3" /> {lines[0].locked ? 'Déverrouiller' : 'Modifier'}
+                  </button>
                   <button onClick={() => setDetailPiece(null)}
                     className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
                     &times;

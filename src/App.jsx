@@ -2397,6 +2397,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       e.preventDefault();
       if (requiredMissing.length > 0) return;
 
+      let ttnCreatedEntry = false;
       if (isAchat) {
         const inv = {
           id: `exp-${Date.now()}`,
@@ -2432,7 +2433,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           const gen = generateTEIFXML(teifInvoice);
           if (!gen.error) {
             const response = await sendToTTN(gen.xml, { ttnMode: getTTNMode() });
-            if (response.status === 'accepted') await handleTTNResponse(teifInvoice, response);
+            if (response.status === 'accepted') {
+              await handleTTNResponse(teifInvoice, response);
+              ttnCreatedEntry = true;
+            }
           }
         } catch (e) {
           console.warn('TEIF auto-generation skipped:', e.message);
@@ -2456,8 +2460,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         }
       }
 
-      // Auto-générer l'écriture comptable (verrouillée après acceptation)
-      runJournalPipeline(true);
+      // TTN a déjà créé l'écriture → ne pas dupliquer
+      if (!ttnCreatedEntry) {
+        runJournalPipeline(true);
+      }
 
       setMode('success');
       resetForm();
