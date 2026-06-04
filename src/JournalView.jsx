@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Filter, RotateCcw, Search, X, Download, Eye } from 'lucide-react';
+import { Filter, RotateCcw, Search, X, Download, Eye, Edit3, Save, XCircle } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { getDocument } from './utils/docStore';
 
@@ -17,6 +17,48 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [docImages, setDocImages] = useState({});
   const [previewDoc, setPreviewDoc] = useState(null);
   const [detailPiece, setDetailPiece] = useState(null);
+  const [editingPiece, setEditingPiece] = useState(null);
+  const [editData, setEditData] = useState(null);
+
+  const saveEditPiece = () => {
+    if (!editData || !editingPiece) return;
+    try {
+      const raw = localStorage.getItem(JOURNAL_KEY);
+      let entries = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(entries)) entries = [];
+      const filtered = entries.filter(e => e.numeroPiece !== editingPiece);
+      filtered.unshift(...editData.lines);
+      localStorage.setItem(JOURNAL_KEY, JSON.stringify(filtered));
+      window.dispatchEvent(new CustomEvent('journal:updated'));
+      setEditingPiece(null);
+      setEditData(null);
+      setDetailPiece(null);
+    } catch (e) {
+      console.error('Save edit failed:', e);
+    }
+  };
+
+  const startEdit = (pieceKey, lines) => {
+    setEditingPiece(pieceKey);
+    setEditData({
+      lines: lines.map(l => ({ ...l })),
+      first: { ...lines[0] },
+    });
+  };
+
+  const updateEditLine = (i, field, value) => {
+    setEditData(prev => {
+      const lines = prev.lines.map((l, idx) => idx === i ? { ...l, [field]: value } : l);
+      return { ...prev, lines };
+    });
+  };
+
+  const updateEditFirst = (field, value) => {
+    setEditData(prev => {
+      const lines = prev.lines.map(l => ({ ...l, [field]: value }));
+      return { ...prev, first: { ...prev.first, [field]: value }, lines };
+    });
+  };
 
   const loadJournal = () => {
     try {
@@ -362,7 +404,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
         </div>
       )}
 
-      {detailPiece && (() => {
+      {detailPiece && !editingPiece && (() => {
         const lines = displayJournal.filter(e => e.numeroPiece === detailPiece);
         if (lines.length === 0) return null;
         const totalDeb = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
@@ -382,10 +424,16 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                     {first.categorie ? ` &middot; ${first.categorie}` : ''}
                   </p>
                 </div>
-                <button onClick={() => setDetailPiece(null)}
-                  className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
-                  &times;
-                </button>
+                <div className="flex items-center gap-2">
+                  <button onClick={() => startEdit(detailPiece, lines)}
+                    className="flex items-center gap-1 px-2.5 py-1.5 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-[10px] rounded-xl transition-colors">
+                    <Edit3 className="w-3 h-3" /> Modifier
+                  </button>
+                  <button onClick={() => setDetailPiece(null)}
+                    className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
+                    &times;
+                  </button>
+                </div>
               </div>
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
@@ -410,6 +458,91 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   <tr className="border-t border-slate-700 text-xs font-bold">
                     <td className="py-3 pr-4"></td>
                     <td className="py-3 pr-4">{balanced ? '✓ Équilibré' : '✗ Déséquilibré'}</td>
+                    <td className="py-3 pr-4 text-right text-danger-400">{totalDeb.toFixed(3)} DT</td>
+                    <td className="py-3 pr-4 text-right text-accent-400">{totalCred.toFixed(3)} DT</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        );
+      })()}
+
+      {editingPiece && editData && (() => {
+        const totalDeb = editData.lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
+        const totalCred = editData.lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
+        const balanced = Math.abs(totalDeb - totalCred) < 0.001;
+        const first = editData.first;
+        return (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={() => { setEditingPiece(null); setEditData(null); }}>
+            <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl p-6 space-y-4" onClick={e => e.stopPropagation()}>
+              <div className="flex items-start justify-between">
+                <h3 className="text-sm font-bold text-white">Modifier {editingPiece}</h3>
+                <div className="flex items-center gap-2">
+                  <button onClick={saveEditPiece}
+                    className="flex items-center gap-1 px-3 py-1.5 bg-accent-500 hover:bg-accent-400 text-white text-[10px] font-bold rounded-xl transition-colors">
+                    <Save className="w-3 h-3" /> Sauvegarder
+                  </button>
+                  <button onClick={() => { setEditingPiece(null); setEditData(null); }}
+                    className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
+                    <XCircle className="w-3 h-3" />
+                  </button>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-3 text-xs">
+                <div>
+                  <label className="text-[10px] text-slate-500 block mb-1">Date</label>
+                  <input type="date" value={first.date || ''} onChange={e => updateEditFirst('date', e.target.value)}
+                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-brand-500" />
+                </div>
+                <div>
+                  <label className="text-[10px] text-slate-500 block mb-1">Journal</label>
+                  <input type="text" value={first.journal || ''} onChange={e => updateEditFirst('journal', e.target.value)}
+                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                </div>
+                <div>
+                  <label className="text-[10px] text-slate-500 block mb-1">Pièce justificative</label>
+                  <input type="text" value={first.piece_justificative || ''} onChange={e => updateEditFirst('piece_justificative', e.target.value)}
+                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                </div>
+              </div>
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="text-[10px] uppercase text-slate-500 border-b border-slate-800">
+                    <th className="py-2 pr-4">Compte</th>
+                    <th className="py-2 pr-4">Libellé</th>
+                    <th className="py-2 pr-4 text-right w-28">Débit</th>
+                    <th className="py-2 pr-4 text-right w-28">Crédit</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/50">
+                  {editData.lines.map((l, i) => (
+                    <tr key={i}>
+                      <td className="py-1.5 pr-2">
+                        <input type="text" value={l.compte || ''} onChange={e => updateEditLine(i, 'compte', e.target.value)}
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                      </td>
+                      <td className="py-1.5 pr-2">
+                        <input type="text" value={l.libelle || ''} onChange={e => updateEditLine(i, 'libelle', e.target.value)}
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-brand-500" />
+                      </td>
+                      <td className="py-1.5 pr-2">
+                        <input type="number" step="0.001" value={l.debit ?? ''} onChange={e => updateEditLine(i, 'debit', e.target.value === '' ? null : parseFloat(e.target.value))}
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-right text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                      </td>
+                      <td className="py-1.5 pr-2">
+                        <input type="number" step="0.001" value={l.credit ?? ''} onChange={e => updateEditLine(i, 'credit', e.target.value === '' ? null : parseFloat(e.target.value))}
+                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-right text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+                <tfoot>
+                  <tr className="border-t border-slate-700 text-xs font-bold">
+                    <td className="py-3 pr-4"></td>
+                    <td className={`py-3 pr-4 ${balanced ? 'text-accent-400' : 'text-danger-400'}`}>
+                      {balanced ? '✓ Équilibré' : '✗ Déséquilibré — ' + (totalDeb - totalCred).toFixed(3) + ' DT d\'écart'}
+                    </td>
                     <td className="py-3 pr-4 text-right text-danger-400">{totalDeb.toFixed(3)} DT</td>
                     <td className="py-3 pr-4 text-right text-accent-400">{totalCred.toFixed(3)} DT</td>
                   </tr>

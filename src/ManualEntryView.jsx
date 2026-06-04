@@ -86,13 +86,22 @@ export default function ManualEntryView({ formatCurrency }) {
     setLines(lines.filter((_, idx) => idx !== i));
   };
 
+  const findLibelle = (code) => {
+    if (!code) return '';
+    const exact = PCG_LIBELLES[code] || PCG_COMPTES[code];
+    if (exact) return `${code} — ${exact}`;
+    const prefix = Object.keys(PCG_COMPTES).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
+    if (prefix) return `${code} — ${PCG_COMPTES[prefix]}`;
+    return '';
+  };
+
   const updateLine = (i, field, value) => {
     setLines(prev => prev.map((line, idx) => {
       if (idx !== i) return line;
       const updated = { ...line, [field]: value };
-      if (field === 'compte' && value && value.length >= 3 && !line.libelle.trim()) {
-        const label = PCG_LIBELLES[value] || PCG_COMPTES[value];
-        if (label) updated.libelle = label;
+      if (field === 'compte' && value) {
+        const lib = findLibelle(value);
+        if (lib) updated.libelle = lib;
       }
       return updated;
     }));

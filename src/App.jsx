@@ -2307,10 +2307,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       frais_informatique: '602400'
     }[cat] || '611000';
     const lib = c => `${c} ${LIBELLES_COMPTES[c] || ''}`;
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib(compteCharge), libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
-    if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('43666'), libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
-    if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('4368'), libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('401'), libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH' });
+    const extra = { piece_justificative: inv.invoiceNumber || null, fournisseur: inv.supplier || null, categorie: inv.category || null };
+    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib(compteCharge), libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH', ...extra });
+    if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('43666'), libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH', ...extra });
+    if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('4368'), libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH', ...extra });
+    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('401'), libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH', ...extra });
     if (scannedDocument) storeDocument(numero, scannedDocument);
     setScannedDocument(null);
     setMode('success');

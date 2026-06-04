@@ -291,7 +291,7 @@ export function savePieceToJournal(piece) {
 //    pour opérations sans TEIF (achat direct,
 //    écriture bancaire, OD)
 // ─────────────────────────────────────────────
-export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, credit, journal = 'OD' }) {
+export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, credit, journal = 'OD', piece_justificative, fournisseur, categorie }) {
   try {
     let entries = [];
     try {
@@ -303,6 +303,9 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
     entries.unshift({
       date: date || new Date().toISOString().slice(0, 10),
       numeroPiece: numeroPiece || `OD-${Date.now()}`,
+      piece_justificative: piece_justificative || numeroPiece || null,
+      fournisseur: fournisseur || null,
+      categorie: categorie || null,
       compte: String(compte || ''),
       libelle: String(libelle || ''),
       debit: debit != null ? parseFloat(debit) || 0 : null,
