@@ -1169,15 +1169,26 @@ export function parseMontantLettres(text) {
 }
 
 // ─────────────────────────────────────────────
-// 11. corrigerFacture — assistant correction OCR (règles P1–P7)
+// 11. corrigerFacture — assistant correction OCR (Étapes 0–6)
 // ─────────────────────────────────────────────
-/**
- * @param {string} rawText - Texte brut OCR
- * @param {object} currentForm - État actuel du formulaire
- * @returns {object} JSON corrigé selon les règles P1–P7
- */
+function extraireDernier(text, patterns) {
+  let dernier = null;
+  let dernierIdx = -1;
+  for (const re of patterns) {
+    const matches = [...text.matchAll(re)];
+    for (const m of matches) {
+      const val = normaliserMontant(m[1] || m[2] || m[3]);
+      if (val !== null && val > 0 && (m.index || 0) > dernierIdx) {
+        dernier = val;
+        dernierIdx = m.index || 0;
+      }
+    }
+  }
+  return dernier;
+}
+
 export function corrigerFacture(rawText, currentForm = {}) {
-  const result = {
+  const out = {
     fournisseur: currentForm.fournisseur || '',
     matricule_fiscal: currentForm.matricule_fiscal || '',
     date: currentForm.date || '',
@@ -1196,146 +1207,134 @@ export function corrigerFacture(rawText, currentForm = {}) {
 
   try {
     if (!rawText || rawText.trim().length < 10) {
-      result.alertes.push('texte_trop_court');
-      return result;
+      out.alertes.push('texte_trop_court');
+      return out;
     }
 
     const { text } = corrigerOCRAvecTrace(rawText);
-
-    // ── P3 : Fournisseur ──
-    const fournisseur = detectFournisseur(text);
-    if (fournisseur) {
-      result.fournisseur = fournisseur;
-    }
-
-    // ── P3 : Matricule Fiscal ──
-    const mf = detectMF(text);
-    const MF_FULL = /^\d{7}\/[A-Z]\/[A-Z]\/[A-Z]\/\d{3}$/;
-    if (mf) {
-      if (MF_FULL.test(mf)) {
-        result.matricule_fiscal = mf;
-      } else {
-        result.matricule_fiscal = mf;
-        result.alertes.push('mf_manquant');
-      }
-    } else {
-      result.alertes.push('mf_manquant');
-    }
-
-    // ── P4 : Date ──
-    const date = detectDate(text);
-    if (date) {
-      result.date = date.split('-').reverse().join('/');
-    }
-
-    // ── Référence ──
-    const numero = detectNumeroFacture(text);
-    if (numero) {
-      result.numero_justificatif = numero;
-    }
-
-    // ── P5 : Catégorie depuis articles ──
     const lignes = detectLignes(text);
     const t = text.toLowerCase();
-    if (/\b(souris|clavier|disque dur|ssd|ram|mémoire|pc bureau|ordinateur|imprimante|tb220|sata m2|informatique)\b/i.test(t)) {
-      result.categorie = 'Matériel informatique';
-    } else if (/\b(forfait|abonnement internet|fibre|4g|5g|sms|télécom)\b/i.test(t)) {
-      result.categorie = 'Télécoms & Internet';
-    } else if (/\b(honoraire|prestation|maintenance|redevance|service)\b/i.test(t)) {
-      result.categorie = 'Services & Honoraires';
-    } else if (/\b(loyer|électricité|eau|steg|sonede|gaz)\b/i.test(t)) {
-      result.categorie = 'Charges & Services';
-    } else if (/\b(stylo|cahier|ramette|papier|classeur|fourniture)\b/i.test(t)) {
-      result.categorie = 'Fournitures & Consommables';
-    }
 
-    // ── P1 : Lecture exclusivement depuis le récapitulatif ──
-    let recapTrouve = false;
+    // ═══════════════════════════════════════════
+    // ÉTAPE 0 — Extraction du récapitulatif
+    // ═══════════════════════════════════════════
+    const recap = { ht: null, tva: null, timbre: null, fodec: null, ttc: null };
 
-    // Net à payer / Total TTC
-    let ttcImprime = null;
-    const netPatterns = [
-      /net\s*(?:à\s*)?payer\s*[:﹕]?\s*([\d\s,.]+)/i,
-      /total\s*ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
-      /ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
-      /total\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)/i,
-    ];
-    for (const re of netPatterns) {
-      const m = text.match(re);
-      if (m) {
-        const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { ttcImprime = val; recapTrouve = true; break; }
-      }
-    }
-
-    // Montant en lettres (recap)
-    const montantLettres = parseMontantLettres(text);
-    if (montantLettres !== null && montantLettres > 0) {
-      if (ttcImprime === null || Math.abs(ttcImprime - montantLettres) > 0.100) {
-        ttcImprime = montantLettres;
-        recapTrouve = true;
-        result.notes.push('Total en lettres : ' + montantLettres.toFixed(3) + ' DT');
-      }
-    }
-    if (ttcImprime !== null) {
-      result.total_ttc = ttcImprime;
-    }
-
-    // Timbre imprimé
-    const fourKey = (result.fournisseur || '').toLowerCase().trim();
-    const metaFour = FOURNISSEURS_LOOKUP[fourKey] || null;
-    if (metaFour?.timbre === 0) {
-      result.timbre = 0.000;
-    } else {
-      const timbreLu = detectTimbre(text, result.fournisseur);
-      result.timbre = timbreLu >= 0 ? timbreLu : 1.000;
-    }
-    if (result.timbre === 1.000) recapTrouve = true;
-
-    // FODEC imprimé
-    const fodecLu = detectFODEC(text);
-    result.fodec = fodecLu > 0 ? fodecLu : 0.000;
-
-    // Total HT imprimé
-    let htImprime = null;
-    const htPatterns = [
+    recap.ht = extraireDernier(text, [
       /total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i,
       /sous[- ]?total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i,
-    ];
-    for (const re of htPatterns) {
-      const m = text.match(re);
-      if (m) {
-        const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { htImprime = val; recapTrouve = true; break; }
-      }
-    }
-    if (htImprime !== null) {
-      result.sous_total_ht = htImprime;
-    }
-
-    // Montant TVA imprimé
-    let tvaImprime = null;
-    const tvaPatterns = [
-      /montant\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /total\s*hors\s*taxe\s*[:﹕]?\s*([\d\s,.]+)/i,
+    ]);
+    recap.tva = extraireDernier(text, [
       /total\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
-      /tva\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)?\s*$/im,
-    ];
-    for (const re of tvaPatterns) {
-      const m = text.match(re);
-      if (m) {
-        const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { tvaImprime = val; recapTrouve = true; break; }
+      /montant\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /tva\s*\(\d+\s*%\)\s*[:﹕]?\s*([\d\s,.]+)/i,
+    ]);
+    recap.timbre = extraireDernier(text, [
+      /timbre\s*(?:fiscal)?\s*[:﹕|]?\s*([\d,\.]+)/i,
+    ]);
+    recap.fodec = extraireDernier(text, [
+      /fodec\s*[:﹕]?\s*([\d\s,.]+)/i,
+    ]);
+    recap.ttc = extraireDernier(text, [
+      /net\s*(?:à\s*)?payer\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /total\s*ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /montant\s*ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /total\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)/i,
+    ]);
+
+    // Montant en lettres comme TTC de secours
+    const mLettres = parseMontantLettres(text);
+    if (mLettres !== null && mLettres > 0 && recap.ttc === null) {
+      recap.ttc = mLettres;
+      out.notes.push('Total en lettres : ' + mLettres.toFixed(3) + ' DT');
+    }
+
+    // Validation recap: TTC ≈ HT + TVA + Timbre + FODEC
+    if (recap.ht !== null && recap.tva !== null && recap.ttc !== null) {
+      const attendu = recap.ht + (recap.tva || 0) + (recap.timbre || 1.000) + (recap.fodec || 0);
+      if (Math.abs(recap.ttc - attendu) > 0.010) {
+        out.alertes.push('ecart_recap');
+        out.notes.push('Récapitulatif : HT=' + recap.ht.toFixed(3) + ' + TVA=' + (recap.tva||0).toFixed(3) + ' + Timbre=' + (recap.timbre||1).toFixed(3) + ' + FODEC=' + (recap.fodec||0).toFixed(3) + ' = ' + attendu.toFixed(3) + ' ≠ TTC=' + recap.ttc.toFixed(3));
       }
     }
-    if (tvaImprime !== null) {
-      result.montant_tva = tvaImprime;
+
+    // Appliquer les valeurs du recap
+    if (recap.ht !== null) out.sous_total_ht = recap.ht;
+    if (recap.tva !== null) out.montant_tva = recap.tva;
+    if (recap.ttc !== null) out.total_ttc = recap.ttc;
+
+    // Alertes pour lignes recap absentes
+    if (recap.ht === null && recap.tva === null && recap.ttc === null && recap.timbre === null && recap.fodec === null) {
+      out.alertes.push('recap_manquant');
     }
 
-    if (!recapTrouve) {
-      result.alertes.push('recap_manquant');
+    // ═══════════════════════════════════════════
+    // ÉTAPE 1 — Fournisseur & Matricule Fiscal
+    // ═══════════════════════════════════════════
+    // Bloc en-tête = 5 premières lignes
+    const lignesTexte = text.split('\n').filter(Boolean);
+    const entete = lignesTexte.slice(0, 5).join('\n');
+
+    // MF fournisseur : chercher dans l'en-tête
+    const mfSupplier = detectMF(entete);
+
+    // MF client : chercher après "FACTURÉ À" / "Client :"
+    let mfClient = null;
+    const clientBlock = text.match(/facturé\s*à|client\s*[:：]/i);
+    if (clientBlock) {
+      const apresClient = text.slice(clientBlock.index);
+      mfClient = detectMF(apresClient);
     }
 
-    // ── P2 : TVA Mixte ──
+    // MF fournisseur = MF dans en-tête, ou MF global s'il n'y en a qu'un
+    let mf = mfSupplier;
+    if (!mf) {
+      const mfGlobal = detectMF(text);
+      if (mfGlobal) {
+        // Si un MF global existe et qu'il n'est pas égal au MF client, c'est le fournisseur
+        if (mfClient && mfGlobal === mfClient) {
+          mf = null;
+        } else {
+          mf = mfGlobal;
+        }
+      }
+    }
+
+    if (mf) {
+      out.matricule_fiscal = mf;
+    }
+
+    // Fournisseur : en-tête, exclure "FACTURÉ À", "Client :", etc.
+    const fournisseur = detectFournisseur(entete);
+    if (fournisseur) {
+      out.fournisseur = fournisseur;
+    } else {
+      out.fournisseur = detectFournisseur(text);
+    }
+
+    // Validation MF
+    const MF_FULL = /^\d{7}\/[A-Z]\/[A-Z]\/[A-Z]\/\d{3}$/;
+    if (!out.matricule_fiscal || !MF_FULL.test(out.matricule_fiscal)) {
+      out.alertes.push('mf_manquant');
+    }
+
+    // ═══════════════════════════════════════════
+    // ÉTAPE 2 — Date & Référence
+    // ═══════════════════════════════════════════
+    const date = detectDate(text);
+    if (date) {
+      out.date = date.split('-').reverse().join('/');
+    }
+    const numero = detectNumeroFacture(text);
+    if (numero) {
+      out.numero_justificatif = numero;
+    }
+
+    // ═══════════════════════════════════════════
+    // ÉTAPE 3 — TVA Mixte
+    // ═══════════════════════════════════════════
     const tauxUniques = new Set();
     if (lignes.length > 0) {
       for (const l of lignes) {
@@ -1348,64 +1347,123 @@ export function corrigerFacture(rawText, currentForm = {}) {
       alt.forEach(m => tauxUniques.add(parseInt(m[1])));
     }
 
-    if (tauxUniques.size > 1) {
-      result.taux_tva = 'Mixte';
-      result.notes.push('Taux TVA : ' + [...tauxUniques].join('% / ') + '%');
-      // P1 interdit de dériver — si recap a TVA, on la garde; sinon on laisse 0
+    if (tauxUniques.has(0) && (tauxUniques.has(7) || tauxUniques.has(13) || tauxUniques.has(19))) {
+      out.taux_tva = 'Mixte';
+      out.notes.push('Taux TVA : ' + [...tauxUniques].join('% / ') + '%');
+      out.alertes.push('tva_mixte_verifier');
     } else if (tauxUniques.size === 1) {
-      const t = [...tauxUniques][0];
-      result.taux_tva = t + '%';
-    } else if (metaFour?.tva != null) {
-      result.taux_tva = metaFour.tva + '%';
-    }
-
-    // Dernier recours TTC si non trouvé dans recap: somme lignes (avec note)
-    if (result.total_ttc === 0 && lignes.length > 0) {
-      const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-      if (sumTotals > 0) {
-        const estTTC = parseFloat((sumTotals + result.timbre).toFixed(3));
-        result.total_ttc = estTTC;
-        result.notes.push('TTC estimé depuis lignes + timbre : ' + estTTC.toFixed(3) + ' DT');
+      out.taux_tva = [...tauxUniques][0] + '%';
+    } else {
+      const fourKey = (out.fournisseur || '').toLowerCase().trim();
+      const metaFour = FOURNISSEURS_LOOKUP[fourKey] || null;
+      if (metaFour?.tva != null) {
+        out.taux_tva = metaFour.tva + '%';
       }
     }
 
-    // ── P7 : Alertes ──
-    if (result.total_ttc > 5000) {
-      result.alertes.push('retenue_source_probable');
+    if (recap.tva !== null && recap.tva === 0 && (recap.ht || 0) > 0) {
+      out.alertes.push('tva_zero_verifier');
+    }
+
+    // ═══════════════════════════════════════════
+    // ÉTAPE 4 — Catégorie
+    // ═══════════════════════════════════════════
+    // Règles A–F sur les désignations
+    const desigs = lignes.map(l => (l.designation || '').toLowerCase());
+    const txtBas = t;
+
+    function testCat(rule) {
+      for (const d of desigs) {
+        if (rule.some(k => d.includes(k))) return true;
+      }
+      return rule.some(k => txtBas.includes(k));
+    }
+
+    if (testCat(['abonnement']) && testCat(['mobile', '4g', 'internet', 'sms'])) {
+      out.categorie = 'Télécoms & Internet';
+      if (testCat(['souris', 'clavier', 'écran', 'pc', 'laptop', 'sim', 'disque', 'mémoire', 'usb', 'chargeur', 'boitier'])) {
+        // Articles mixtes — prendre la catégorie du plus haut HT
+        const sumCat = {};
+        for (const l of lignes) {
+          const d = (l.designation || '').toLowerCase();
+          let cat = 'Autres charges';
+          if (/\b(abonnement|mobile|4g|internet|sms)\b/i.test(d)) cat = 'Télécoms & Internet';
+          else if (/\b(souris|clavier|écran|pc|laptop|sim|disque|mémoire|usb|chargeur|boitier)\b/i.test(d)) cat = 'Matériel informatique';
+          else if (/\b(prestation|honoraire|maintenance|conseil)\b/i.test(d)) cat = 'Services & Honoraires';
+          sumCat[cat] = (sumCat[cat] || 0) + (l.prix_unitaire || 0);
+        }
+        let best = '', bestVal = 0;
+        for (const [c, v] of Object.entries(sumCat)) {
+          if (v > bestVal) { best = c; bestVal = v; }
+        }
+        if (best) out.categorie = best;
+      }
+    } else if (testCat(['souris', 'clavier', 'écran', 'pc', 'laptop', 'sim', 'disque', 'mémoire', 'usb', 'chargeur', 'boitier', 'tb220', 'sata', 'ramitech'])) {
+      out.categorie = 'Matériel informatique';
+    } else if (testCat(['prestation', 'honoraire', 'maintenance', 'conseil', 'redevance'])) {
+      out.categorie = 'Services & Honoraires';
+    } else if (testCat(['loyer', 'électricité', 'eau', 'gaz', 'steg', 'sonede'])) {
+      out.categorie = 'Charges & Services';
+    } else if (testCat(['papier', 'stylo', 'cartouche', 'fourniture', 'classeur', 'ramette'])) {
+      out.categorie = 'Fournitures & Consommables';
+    } else {
+      if (out.categorie === 'Autres charges') out.alertes.push('categorie_inconnue');
+    }
+
+    // ═══════════════════════════════════════════
+    // ÉTAPE 5 — Timbre & FODEC
+    // ═══════════════════════════════════════════
+    const fourKey = (out.fournisseur || '').toLowerCase().trim();
+    const metaFour = FOURNISSEURS_LOOKUP[fourKey] || null;
+
+    if (recap.timbre !== null) {
+      out.timbre = recap.timbre;
+    } else if (metaFour?.timbre === 0) {
+      out.timbre = 0.000;
+    } else {
+      out.timbre = 1.000;
+    }
+
+    out.fodec = recap.fodec !== null ? recap.fodec : 0.000;
+
+    // ═══════════════════════════════════════════
+    // ÉTAPE 6 — Alertes
+    // ═══════════════════════════════════════════
+    if (out.total_ttc > 5000) {
+      out.alertes.push('retenue_source_probable');
     }
     if (!date) {
-      result.alertes.push('date_manquante');
-    } else if (result.date) {
-      const [d, m, y] = result.date.split('/').map(Number);
-      const dateFacture = new Date(y, m - 1, d);
-      if (dateFacture > new Date()) {
-        result.alertes.push('date_future');
+      out.alertes.push('date_manquante');
+    } else if (out.date) {
+      const [d, m, y] = out.date.split('/').map(Number);
+      if (new Date(y, m - 1, d) > new Date()) {
+        out.alertes.push('date_future');
       }
     }
-    if (lignes.length > 0 && htImprime !== null) {
+    if (lignes.length > 0 && recap.ht !== null) {
       const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
-      if (Math.abs(sumHT - htImprime) > 0.100) {
-        result.alertes.push('ecart_lignes_recap');
+      if (Math.abs(sumHT - recap.ht) > 0.100) {
+        out.alertes.push('ecart_lignes_recap');
       }
     }
-    if (tvaImprime !== null && htImprime !== null) {
+    if (recap.tva !== null && recap.ht !== null) {
       const tvaCalculee = lignes.reduce((s, l) => {
         if (l.tva !== undefined) return s + (l.prix_unitaire || 0) * l.tva / 100;
         return s;
       }, 0);
-      if (Math.abs(tvaCalculee - tvaImprime) > 0.010) {
-        result.alertes.push('ecart_tva');
+      if (Math.abs(tvaCalculee - recap.tva) > 0.010) {
+        out.alertes.push('ecart_tva');
       }
     }
 
-    const rs = detectRSPrestation(text, result.fournisseur);
+    const rs = detectRSPrestation(text, out.fournisseur);
     if (rs.applicable) {
-      result.retenue_source = true;
+      out.retenue_source = true;
     }
 
   } catch (e) {
-    result.alertes.push('erreur_correction');
+    out.alertes.push('erreur_correction');
   }
 
-  return result;
+  return out;
 }
