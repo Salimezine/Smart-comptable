@@ -2187,6 +2187,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       reader.readAsDataURL(imageData instanceof File ? imageData : new File([imageData], 'scan.png', { type: 'image/png' }));
 
       const rawText = result?.rawText || '';
+      console.log("result.formulaire keys:", Object.keys(result.formulaire || {}), "values:", result.formulaire);
       // Appliquer corrigerFacture sur le texte OCR brut
       const resultScan = result?.rawText ? corrigerFacture(result.formulaire || {}, result.rawText) : null;
       if (resultScan) {
@@ -2330,6 +2331,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
+      console.log("parsed.formulaire keys:", Object.keys(parsed.formulaire || {}), "values:", parsed.formulaire);
       // Appliquer corrigerFacture(parsed, texteOCR)
       const corrige = corrigerFacture(parsed.formulaire || {}, rawText);
 

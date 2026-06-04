@@ -1182,8 +1182,9 @@ function extraireDernier(text, patterns) {
   let dernier = null;
   let dernierIdx = -1;
   for (const re of patterns) {
-    const matches = [...text.matchAll(re)];
-    for (const m of matches) {
+    const copy = new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g');
+    let m;
+    while ((m = copy.exec(text)) !== null) {
       const val = normaliserMontant(m[1] || m[2] || m[3]);
       if (val !== null && val > 0 && (m.index || 0) > dernierIdx) {
         dernier = val;
@@ -1200,23 +1201,96 @@ function extraireNombre(ligne) {
   return parseFloat(m[1].replace(',', '.'));
 }
 
+function extraireRecapitulatif(text) {
+  return {
+    ht: extraireDernier(text, [/total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i, /sous[- ]?total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i]),
+    tva: extraireDernier(text, [/total\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i, /montant\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i]),
+    timbre: extraireDernier(text, [/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*([\d,\.]+)/i]),
+    fodec: extraireDernier(text, [/fodec\s*[:﹕]?\s*([\d\s,.]+)/i]),
+    ttc: extraireDernier(text, [/net\s*(?:à\s*)?payer\s*[:﹕]?\s*([\d\s,.]+)/i, /total\s*ttc\s*[:﹕]?\s*([\d\s,.]+)/i]),
+  };
+}
+
+function extraireMFFournisseur(text) {
+  const lignes = text.split('\n').filter(Boolean);
+  const idxClient = lignes.findIndex(l => /factur[eé]\s*[àa]|client\s*:|adresse\s*client/i.test(l));
+  const mfRegex = /\b(\d{7}\/[A-Z]\/[A-Z](?:\/[A-Z]\/\d{3})?)\b/g;
+  const mfTrouves = [];
+  lignes.forEach((ligne, idx) => {
+    let m;
+    while ((m = mfRegex.exec(ligne)) !== null) {
+      mfTrouves.push({ valeur: m[1], ligne: idx });
+    }
+  });
+  const mfFour = mfTrouves.find(mf => idxClient === -1 || mf.ligne < idxClient);
+  return mfFour ? mfFour.valeur : null;
+}
+
+function formatTauxTVA(val) {
+  if (!val) return '19%';
+  const s = String(val).replace('%', '').trim();
+  if (s === 'Mixte' || s === 'mixte') return 'Mixte';
+  const n = parseFloat(s);
+  if (isNaN(n)) return '19%';
+  return n + '%';
+}
+
 export function corrigerFacture(parsed, texteOCR) {
   const out = {
-    fournisseur: parsed.fournisseur_nom || parsed.fournisseur || '',
-    matricule_fiscal: parsed.fournisseur_mf || parsed.matricule_fiscal || '',
-    date: parsed.date_facture || parsed.date || '',
-    numero_justificatif: parsed.numero_justificatif || parsed.numero_facture || '',
-    categorie: parsed.categorie_principale || parsed.categorie || 'Autres charges',
-    taux_tva: (parsed.taux_tva || '19') + '%',
-    sous_total_ht: parsed.montant_ht || 0,
-    montant_tva: parsed.montant_tva || 0,
-    timbre: parsed.timbre_fiscal ?? 1.000,
-    fodec: parsed.fodec || 0,
-    total_ttc: parsed.montant_ttc || 0,
-    retenue_source: !!parsed.rs_montant,
+    fournisseur: parsed.fournisseur_nom
+      || parsed.fournisseur
+      || parsed.vendeur
+      || parsed.nom_fournisseur
+      || '',
+    matricule_fiscal: parsed.fournisseur_mf
+      || parsed.mf_fournisseur
+      || parsed.matricule_fiscal
+      || parsed.matricule
+      || parsed.mf
+      || '',
+    date: parsed.date_facture
+      || parsed.date_recu
+      || parsed.date
+      || '',
+    numero_justificatif: parsed.numero_justificatif
+      || parsed.numero_facture
+      || parsed.num_facture
+      || parsed.reference
+      || parsed.numero
+      || '',
+    categorie: parsed.categorie_principale
+      || parsed.categorie
+      || 'Autres charges',
+    taux_tva: formatTauxTVA(
+      parsed.taux_tva
+      || parsed.taux_tva_principal
+      || parsed.tva_taux
+      || '19'
+    ),
+    sous_total_ht: parsed.montant_ht
+      || parsed.total_ht
+      || parsed.base_ht
+      || parsed.ht
+      || 0,
+    montant_tva: parsed.montant_tva
+      || parsed.tva
+      || parsed.total_tva
+      || 0,
+    timbre: parsed.timbre_fiscal
+      ?? parsed.timbre
+      ?? 1.000,
+    fodec: parsed.fodec
+      || parsed.montant_fodec
+      || 0,
+    total_ttc: parsed.montant_ttc
+      || parsed.ttc
+      || parsed.total_ttc
+      || parsed.net_a_payer
+      || 0,
+    retenue_source: !!(parsed.rs_montant || parsed.retenue_source),
     alertes: [],
     notes: [],
-    lignes: [],
+    lignes: parsed.lignes || [],
   };
 
   try {
@@ -1486,6 +1560,21 @@ export function corrigerFacture(parsed, texteOCR) {
 
   } catch (e) {
     out.alertes.push('erreur_correction');
+    out.notes.push('Erreur: ' + e.message);
+  }
+
+  // ── Correction fallback depuis texte OCR brut ─────────────
+  if (texteOCR && texteOCR.trim().length >= 10) {
+    const recap = extraireRecapitulatif(texteOCR);
+    if (recap.ht > 0 && recap.ttc > 0) {
+      if (recap.ht !== null) out.sous_total_ht = recap.ht;
+      if (recap.tva !== null) out.montant_tva = recap.tva;
+      if (recap.ttc !== null) out.total_ttc = recap.ttc;
+      if (recap.timbre !== null) out.timbre = recap.timbre;
+      if (recap.fodec !== null) out.fodec = recap.fodec;
+    }
+    const mfCorrige = extraireMFFournisseur(texteOCR);
+    if (mfCorrige) out.matricule_fiscal = mfCorrige;
   }
 
   return out;
