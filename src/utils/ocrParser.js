@@ -1200,26 +1200,27 @@ function extraireNombre(ligne) {
   return parseFloat(m[1].replace(',', '.'));
 }
 
-export function corrigerFacture(rawText, currentForm = {}) {
+export function corrigerFacture(parsed, texteOCR) {
   const out = {
-    fournisseur: currentForm.fournisseur || '',
-    matricule_fiscal: currentForm.matricule_fiscal || '',
-    date: currentForm.date || '',
-    numero_justificatif: currentForm.numero_justificatif || '',
-    categorie: currentForm.categorie || 'Autres charges',
-    taux_tva: '19%',
-    sous_total_ht: 0.000,
-    montant_tva: 0.000,
-    timbre: 0.000,
-    fodec: 0.000,
-    total_ttc: 0.000,
-    retenue_source: false,
+    fournisseur: parsed.fournisseur_nom || parsed.fournisseur || '',
+    matricule_fiscal: parsed.fournisseur_mf || parsed.matricule_fiscal || '',
+    date: parsed.date_facture || parsed.date || '',
+    numero_justificatif: parsed.numero_justificatif || parsed.numero_facture || '',
+    categorie: parsed.categorie_principale || parsed.categorie || 'Autres charges',
+    taux_tva: (parsed.taux_tva || '19') + '%',
+    sous_total_ht: parsed.montant_ht || 0,
+    montant_tva: parsed.montant_tva || 0,
+    timbre: parsed.timbre_fiscal ?? 1.000,
+    fodec: parsed.fodec || 0,
+    total_ttc: parsed.montant_ttc || 0,
+    retenue_source: !!parsed.rs_montant,
     alertes: [],
     notes: [],
     lignes: [],
   };
 
   try {
+    const rawText = texteOCR;
     if (!rawText || rawText.trim().length < 10) {
       out.alertes.push('texte_trop_court');
       return out;

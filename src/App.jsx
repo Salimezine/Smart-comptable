@@ -2188,7 +2188,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
       const rawText = result?.rawText || '';
       // Appliquer corrigerFacture sur le texte OCR brut
-      const resultScan = result?.rawText ? corrigerFacture(result.rawText, {}) : null;
+      const resultScan = result?.rawText ? corrigerFacture(result.formulaire || {}, result.rawText) : null;
       if (resultScan) {
         applyFormData(corrigeToFormData(resultScan));
         setOcrRawText(result.rawText);
@@ -2210,7 +2210,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     if (!ocrRawText && !formData.supplier) return;
     try {
       const raw = ocrRawText || '';
-      const corrige = raw.trim().length > 10 ? corrigerFacture(raw, {}) : {
+      const corrige = raw.trim().length > 10 ? corrigerFacture({}, raw) : {
         fournisseur: formData.supplier,
         matricule_fiscal: formData.matriculeFiscal,
         date: formData.date ? formData.date.split('-').reverse().join('/') : '',
@@ -2330,8 +2330,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
-      // Appliquer corrigerFacture sur le texte brut
-      const corrige = corrigerFacture(rawText, {});
+      // Appliquer corrigerFacture(parsed, texteOCR)
+      const corrige = corrigerFacture(parsed.formulaire || {}, rawText);
 
       // Mapper les valeurs corrigées vers le formulaire
       applyFormData(corrigeToFormData(corrige));
