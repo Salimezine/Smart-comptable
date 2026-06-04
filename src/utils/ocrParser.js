@@ -1169,26 +1169,12 @@ export function parseMontantLettres(text) {
 }
 
 // ─────────────────────────────────────────────
-// 11. corrigerFacture — assistant correction OCR (règles R1–R12)
+// 11. corrigerFacture — assistant correction OCR (règles P1–P7)
 // ─────────────────────────────────────────────
 /**
  * @param {string} rawText - Texte brut OCR
  * @param {object} currentForm - État actuel du formulaire
- * @returns {object} JSON corrigé selon les règles
- *
- * Règles :
- * R1 – Lire HT,TVA,Timbre,FODEC,TTC depuis le tableau récapitulatif imprimé
- * R2 – Ne jamais dériver HT depuis TTC÷1.xx
- * R3 – Si plusieurs taux TVA → "Mixte" + détail notes[]
- * R4 – FODEC = 1% du HT seulement si mentionné explicitement, sinon 0
- * R5 – Timbre = valeur imprimée ; si <1 ou STEG/SONEDE → 0
- * R6 – Fournisseur = nom commercial en haut de facture
- * R7 – MF = MF du fournisseur (ligne "MF:" côté vendeur)
- * R8 – Format MF = XXXXXXX/X/X/X/XXX
- * R9 – Date = date imprimée, pas la date du jour
- * R10 – N° justificatif = N° Facture imprimé
- * R11 – Catégorie depuis nature des articles
- * R12 – Alertes : TTC>5000, MF absent/invalide, date future, écart lignes>0.100
+ * @returns {object} JSON corrigé selon les règles P1–P7
  */
 export function corrigerFacture(rawText, currentForm = {}) {
   const result = {
@@ -1210,86 +1196,92 @@ export function corrigerFacture(rawText, currentForm = {}) {
 
   try {
     if (!rawText || rawText.trim().length < 10) {
-      result.alertes.push('Texte OCR trop court — impossible de corriger');
+      result.alertes.push('texte_trop_court');
       return result;
     }
 
-    // Correction OCR standard
     const { text } = corrigerOCRAvecTrace(rawText);
 
-    // ── R6 : Fournisseur ──
+    // ── P3 : Fournisseur ──
     const fournisseur = detectFournisseur(text);
     if (fournisseur) {
       result.fournisseur = fournisseur;
-    } else {
-      result.alertes.push('Fournisseur non détecté — vérifier le nom commercial en haut de facture');
     }
 
-    // ── R7/R8 : Matricule Fiscal ──
+    // ── P3 : Matricule Fiscal ──
     const mf = detectMF(text);
-    const MF_PATTERN = /^\d{6,7}[A-Z]?\//;
     const MF_FULL = /^\d{7}\/[A-Z]\/[A-Z]\/[A-Z]\/\d{3}$/;
     if (mf) {
       if (MF_FULL.test(mf)) {
         result.matricule_fiscal = mf;
-      } else if (MF_PATTERN.test(mf)) {
-        result.matricule_fiscal = mf;
-        result.alertes.push(`MF fournisseur incomplet — format attendu XXXXXXX/X/X/X/XXX (lu: ${mf})`);
       } else {
         result.matricule_fiscal = mf;
-        result.alertes.push(`MF fournisseur format invalide — format attendu XXXXXXX/X/X/X/XXX (lu: ${mf})`);
+        result.alertes.push('mf_manquant');
       }
     } else {
-      result.alertes.push('MF fournisseur absent — TVA potentiellement non déductible');
+      result.alertes.push('mf_manquant');
     }
 
-    // ── R9 : Date ──
+    // ── P4 : Date ──
     const date = detectDate(text);
     if (date) {
       result.date = date.split('-').reverse().join('/');
-    } else {
-      result.alertes.push('Date facture absente (champ Date: illisible ou manquant)');
     }
 
-    // ── R10 : Numéro justificatif ──
+    // ── Référence ──
     const numero = detectNumeroFacture(text);
     if (numero) {
       result.numero_justificatif = numero;
     }
 
-    // ── R11 : Catégorie ──
-    const cat = detectCategorie(text, fournisseur || '');
-    if (cat && cat !== 'Autres charges') {
-      result.categorie = cat;
+    // ── P5 : Catégorie depuis articles ──
+    const lignes = detectLignes(text);
+    const t = text.toLowerCase();
+    if (/\b(souris|clavier|disque dur|ssd|ram|mémoire|pc bureau|ordinateur|imprimante|tb220|sata m2|informatique)\b/i.test(t)) {
+      result.categorie = 'Matériel informatique';
+    } else if (/\b(forfait|abonnement internet|fibre|4g|5g|sms|télécom)\b/i.test(t)) {
+      result.categorie = 'Télécoms & Internet';
+    } else if (/\b(honoraire|prestation|maintenance|redevance|service)\b/i.test(t)) {
+      result.categorie = 'Services & Honoraires';
+    } else if (/\b(loyer|électricité|eau|steg|sonede|gaz)\b/i.test(t)) {
+      result.categorie = 'Charges & Services';
+    } else if (/\b(stylo|cahier|ramette|papier|classeur|fourniture)\b/i.test(t)) {
+      result.categorie = 'Fournitures & Consommables';
     }
 
-    // ── R1 : Lecture recap ──
-    // Lire le Net à payer / Total TTC imprimé
+    // ── P1 : Lecture exclusivement depuis le récapitulatif ──
+    let recapTrouve = false;
+
+    // Net à payer / Total TTC
     let ttcImprime = null;
-    // Pattern "Net à payer" / "Total TTC" / "TTC" / "Net à payer"
     const netPatterns = [
       /net\s*(?:à\s*)?payer\s*[:﹕]?\s*([\d\s,.]+)/i,
       /total\s*ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
       /ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /total\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)/i,
     ];
     for (const re of netPatterns) {
       const m = text.match(re);
       if (m) {
         const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { ttcImprime = val; break; }
+        if (val !== null && val > 0) { ttcImprime = val; recapTrouve = true; break; }
       }
     }
 
-    // Montant en lettres
+    // Montant en lettres (recap)
     const montantLettres = parseMontantLettres(text);
     if (montantLettres !== null && montantLettres > 0) {
       if (ttcImprime === null || Math.abs(ttcImprime - montantLettres) > 0.100) {
         ttcImprime = montantLettres;
-        result.notes.push(`Total en lettres : ${montantLettres.toFixed(3)} DT`);
+        recapTrouve = true;
+        result.notes.push('Total en lettres : ' + montantLettres.toFixed(3) + ' DT');
       }
     }
+    if (ttcImprime !== null) {
+      result.total_ttc = ttcImprime;
+    }
 
-    // ── R5 : Timbre ──
+    // Timbre imprimé
     const fourKey = (result.fournisseur || '').toLowerCase().trim();
     const metaFour = FOURNISSEURS_LOOKUP[fourKey] || null;
     if (metaFour?.timbre === 0) {
@@ -1298,12 +1290,13 @@ export function corrigerFacture(rawText, currentForm = {}) {
       const timbreLu = detectTimbre(text, result.fournisseur);
       result.timbre = timbreLu >= 0 ? timbreLu : 1.000;
     }
+    if (result.timbre === 1.000) recapTrouve = true;
 
-    // ── R4 : FODEC ──
+    // FODEC imprimé
     const fodecLu = detectFODEC(text);
     result.fodec = fodecLu > 0 ? fodecLu : 0.000;
 
-    // ── R1 (suite) : HT ──
+    // Total HT imprimé
     let htImprime = null;
     const htPatterns = [
       /total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i,
@@ -1313,51 +1306,52 @@ export function corrigerFacture(rawText, currentForm = {}) {
       const m = text.match(re);
       if (m) {
         const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { htImprime = val; break; }
+        if (val !== null && val > 0) { htImprime = val; recapTrouve = true; break; }
       }
     }
-
     if (htImprime !== null) {
       result.sous_total_ht = htImprime;
     }
 
-    // ── R1 (suite) : TVA ──
+    // Montant TVA imprimé
     let tvaImprime = null;
     const tvaPatterns = [
       /montant\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /total\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
       /tva\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)?\s*$/im,
     ];
     for (const re of tvaPatterns) {
       const m = text.match(re);
       if (m) {
         const val = normaliserMontant(m[1]);
-        if (val !== null && val > 0) { tvaImprime = val; break; }
+        if (val !== null && val > 0) { tvaImprime = val; recapTrouve = true; break; }
       }
     }
-
     if (tvaImprime !== null) {
       result.montant_tva = tvaImprime;
     }
 
-    // ── R3 : Taux TVA Mixte ──
-    const lignes = detectLignes(text);
+    if (!recapTrouve) {
+      result.alertes.push('recap_manquant');
+    }
+
+    // ── P2 : TVA Mixte ──
     const tauxUniques = new Set();
     if (lignes.length > 0) {
       for (const l of lignes) {
         if (l.tva !== undefined) tauxUniques.add(l.tva);
       }
     } else {
-      // Chercher % dans le texte
       const pct = [...text.matchAll(/\b(7|13|19|0)\s*%/g)];
       pct.forEach(m => tauxUniques.add(parseInt(m[1])));
-      // Chercher dans les lignes format "7 7477 8000" sans %
       const alt = [...text.matchAll(/\b(7|13|19|0)\s+(?:\d+[.,])?\d{3,}\s+(?:\d+[.,])?\d{3,}/g)];
       alt.forEach(m => tauxUniques.add(parseInt(m[1])));
     }
 
     if (tauxUniques.size > 1) {
       result.taux_tva = 'Mixte';
-      result.notes.push(`Plusieurs taux TVA : ${[...tauxUniques].join('% / ')}%`);
+      result.notes.push('Taux TVA : ' + [...tauxUniques].join('% / ') + '%');
+      // P1 interdit de dériver — si recap a TVA, on la garde; sinon on laisse 0
     } else if (tauxUniques.size === 1) {
       const t = [...tauxUniques][0];
       result.taux_tva = t + '%';
@@ -1365,70 +1359,52 @@ export function corrigerFacture(rawText, currentForm = {}) {
       result.taux_tva = metaFour.tva + '%';
     }
 
-    // ── R2 : Ne jamais dériver HT depuis TTC÷1.xx ──
-    // Si on a TTC mais pas HT, on laisse HT=0 (on ne dérive pas)
-    // Si on a TTC et Timbre, TTC_corrigé = TTC (déjà lu)
-
-    // ── Total TTC ──
-    if (ttcImprime !== null) {
-      // Vérifier cohérence: si on a HT+TVA, comparer
-      const computedTTC = result.sous_total_ht + result.montant_tva;
-      if (result.sous_total_ht > 0 && result.montant_tva > 0) {
-        const diff = Math.abs(computedTTC - ttcImprime);
-        if (diff > 0.100) {
-          result.notes.push(`Écart entre HT+TVA(${computedTTC.toFixed(3)}) et TTC imprimé(${ttcImprime.toFixed(3)}) = ${diff.toFixed(3)} DT`);
-        }
-      }
-      result.total_ttc = ttcImprime;
-    } else {
-      // Dernier recours : somme lignes TTC + timbre (avec note)
-      if (lignes.length > 0) {
-        const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-        if (sumTotals > 0) {
-          const estTTC = parseFloat((sumTotals + result.timbre).toFixed(3));
-          result.total_ttc = estTTC;
-          result.notes.push(`TTC estimé depuis somme lignes + timbre : ${estTTC.toFixed(3)} DT`);
-        }
+    // Dernier recours TTC si non trouvé dans recap: somme lignes (avec note)
+    if (result.total_ttc === 0 && lignes.length > 0) {
+      const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
+      if (sumTotals > 0) {
+        const estTTC = parseFloat((sumTotals + result.timbre).toFixed(3));
+        result.total_ttc = estTTC;
+        result.notes.push('TTC estimé depuis lignes + timbre : ' + estTTC.toFixed(3) + ' DT');
       }
     }
 
-    // ── R12 : Alertes ──
+    // ── P7 : Alertes ──
     if (result.total_ttc > 5000) {
-      result.alertes.push(`TTC > 5 000 DT (${result.total_ttc.toFixed(3)}) — retenue à la source probable`);
+      result.alertes.push('retenue_source_probable');
     }
-
-    // Date future
-    if (result.date) {
+    if (!date) {
+      result.alertes.push('date_manquante');
+    } else if (result.date) {
       const [d, m, y] = result.date.split('/').map(Number);
       const dateFacture = new Date(y, m - 1, d);
-      const maintenant = new Date();
-      if (dateFacture > maintenant) {
-        result.alertes.push(`Date facture future : ${result.date}`);
+      if (dateFacture > new Date()) {
+        result.alertes.push('date_future');
       }
     }
-
-    // Écart lignes > 0.100
     if (lignes.length > 0 && htImprime !== null) {
       const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
-      const diff = Math.abs(sumHT - htImprime);
-      if (diff > 0.100) {
-        result.alertes.push(`Écart somme lignes (${sumHT.toFixed(3)}) vs Total HT récapitulatif (${htImprime.toFixed(3)}) = ${diff.toFixed(3)} DT`);
+      if (Math.abs(sumHT - htImprime) > 0.100) {
+        result.alertes.push('ecart_lignes_recap');
+      }
+    }
+    if (tvaImprime !== null && htImprime !== null) {
+      const tvaCalculee = lignes.reduce((s, l) => {
+        if (l.tva !== undefined) return s + (l.prix_unitaire || 0) * l.tva / 100;
+        return s;
+      }, 0);
+      if (Math.abs(tvaCalculee - tvaImprime) > 0.010) {
+        result.alertes.push('ecart_tva');
       }
     }
 
-    // Retenue source
     const rs = detectRSPrestation(text, result.fournisseur);
     if (rs.applicable) {
       result.retenue_source = true;
     }
 
-    // Timbre STEG/SONEDE
-    if (metaFour?.timbre === 0 && result.timbre !== 0) {
-      result.timbre = 0.000;
-    }
-
   } catch (e) {
-    result.alertes.push('Erreur lors de la correction : ' + (e.message || 'inconnue'));
+    result.alertes.push('erreur_correction');
   }
 
   return result;
