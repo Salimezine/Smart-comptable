@@ -89,22 +89,24 @@ export function detectMF(text) {
   try {
     if (!text || typeof text !== 'string') return null;
 
+    const mfBody = '\\d{6,7}[A-Z]?\\/[A-Z](?:\\/[A-Z](?:\\/\\d{3})?)?';
     const patterns = [
       // "M F : 130893/B" (cas E-info: espace entre M et F)
-      /M\s+F\s*:?\s*(\d{6,7}\/[A-Z](?:\/[A-Z]\/\d{3})?)/i,
+      new RegExp('M\\s+F\\s*:?\\s*(' + mfBody + ')', 'i'),
       // "MF: 130893/B" avec pipe ou séparateurs alternatifs
-      /M\.?F\.?\s*:?\s*(\d{6,7}[\/\|\\][A-Z])/i,
+      new RegExp('M\\.?F\\.?\\s*:?\\s*(' + mfBody + ')', 'i'),
       // "Matricule Fiscal : 130893/B"
-      /matricule\s*fiscal\s*:?\s*(\d{6,7}\/[A-Z](?:\/[A-Z]\/\d{3})?)/i,
+      new RegExp('matricule\\s*fiscal\\s*:?\\s*(' + mfBody + ')', 'i'),
       // Pattern seul sur une ligne (sans label)
-      /^\s*(\d{6,7}\/[A-Z](?:\/[A-Z]\/\d{3})?)\s*$/m,
+      new RegExp('^\\s*(' + mfBody + ')\\s*$', 'm'),
     ];
+    const validateMf = /^\d{6,7}[A-Z]?\//;
 
     for (const pattern of patterns) {
       const match = text.match(pattern);
       if (match) {
         const val = match[1].trim();
-        if (/^\d{6,7}\/[A-Z]/.test(val)) return val;
+        if (validateMf.test(val)) return val;
       }
     }
     return null;
@@ -121,6 +123,9 @@ export function detectNumeroFacture(text) {
     if (!text || typeof text !== 'string') return null;
 
     const patterns = [
+      // Préférer les captures longues (références avec séparateurs) avant les chiffres courts
+      /(?:N°|NO|NUMÉRO|NUMERO|REF|RÉF|REFERENCE)\s*(?:FACTURE|FACT)?\s*[:﹕]?\s*(\w[\w\-\/]{2,})/i,
+      /(?:facture|fact\.?)\s*n[°o°]?\s*:?\s*(\w[\w\-\/]+)/i,
       // Tableau: "N° | 68" (séparateur tab/pipe)
       /\bN[°o°º]\s*[|\t]\s*(\d{1,6})\s*[|\t]/i,
       // "Facture N° 68" ou "N° : 68"
@@ -134,9 +139,6 @@ export function detectNumeroFacture(text) {
       /^\s{0,5}(\d{1,4})\s+\d{2}[\/.]\d{2}[\/.]\d{4}/m,
       // "N° ture 68" (OCR lit mal le °)
       /n[°o°º]\s*(?:ture\s+)?(\d{1,6})\b/i,
-      // Anciens patterns (fallback)
-      /(?:N°|NO|NUMÉRO|NUMERO|REF|RÉF|REFERENCE)\s*(?:FACTURE|FACT)?\s*[:﹕]?\s*(\w[\w\-\/]{2,})/i,
-      /(?:facture|fact\.?)\s*n[°o°]?\s*:?\s*(\w[\w\-\/]+)/i,
     ];
 
     for (const pat of patterns) {
@@ -683,9 +685,9 @@ const MONTHS = {
 export function detectDate(text) {
   try {
     if (!text || typeof text !== 'string') return null;
-    const p1 = /(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{4})/;
-    const p2 = /(\d{4})[\/\-\.](\d{2})[\/\-\.](\d{2})/;
-    const p3 = /(\d{1,2})\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+(\d{4})/i;
+    const p1 = /(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{4})/g;
+    const p2 = /(\d{4})[\/\-\.](\d{2})[\/\-\.](\d{2})/g;
+    const p3 = /(\d{1,2})\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+(\d{4})/gi;
     // Collect all valid dates with positions
     const dates = [];
     let m;
