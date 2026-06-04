@@ -16,6 +16,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [montantMax, setMontantMax] = useState('');
   const [docImages, setDocImages] = useState({});
   const [previewDoc, setPreviewDoc] = useState(null);
+  const [detailPiece, setDetailPiece] = useState(null);
 
   const loadJournal = () => {
     try {
@@ -266,7 +267,14 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                         rows.push(
                           <tr key={idx++} className={`hover:bg-slate-800/10 transition-colors ${li === 0 ? 'border-t border-slate-700/50' : ''}`}>
                             <td className="py-4 px-6 text-slate-400 font-mono">{li === 0 ? date : ''}</td>
-                            <td className="py-4 px-6 font-bold text-slate-300">{li === 0 ? piece : ''}</td>
+                            <td className="py-4 px-6 font-bold text-slate-300">
+                              {li === 0 ? (
+                                <button onClick={() => setDetailPiece(piece)}
+                                  className="hover:text-indigo-400 transition-colors cursor-pointer underline decoration-dotted underline-offset-2">
+                                  {piece}
+                                </button>
+                              ) : ''}
+                            </td>
                             <td className="py-4 px-6 font-mono text-slate-300">{l.compte}</td>
                             <td className="py-4 px-6 text-slate-200">{l.libelle}</td>
                             <td className="py-4 px-6 text-right text-danger-400 font-semibold">
@@ -347,6 +355,64 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
           </div>
         </div>
       )}
+
+      {detailPiece && (() => {
+        const lines = displayJournal.filter(e => e.numeroPiece === detailPiece);
+        if (lines.length === 0) return null;
+        const totalDeb = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
+        const totalCred = lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
+        const balanced = Math.abs(totalDeb - totalCred) < 0.001;
+        const first = lines[0];
+        return (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={() => setDetailPiece(null)}>
+            <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl p-6 space-y-4" onClick={e => e.stopPropagation()}>
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-sm font-bold text-white">Pièce {detailPiece}</h3>
+                  <p className="text-[10px] text-slate-400 mt-1">
+                    {first.date} &middot; Journal {first.journal}
+                    {first.fournisseur ? ` &middot; ${first.fournisseur}` : ''}
+                    {first.piece_justificative ? ` &middot; n° ${first.piece_justificative}` : ''}
+                    {first.categorie ? ` &middot; ${first.categorie}` : ''}
+                  </p>
+                </div>
+                <button onClick={() => setDetailPiece(null)}
+                  className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
+                  &times;
+                </button>
+              </div>
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="text-[10px] uppercase text-slate-500 border-b border-slate-800">
+                    <th className="py-2 pr-4">Compte</th>
+                    <th className="py-2 pr-4">Libellé</th>
+                    <th className="py-2 pr-4 text-right">Débit</th>
+                    <th className="py-2 pr-4 text-right">Crédit</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/50">
+                  {lines.map((l, i) => (
+                    <tr key={i} className="hover:bg-slate-800/20 transition-colors">
+                      <td className="py-2 pr-4 font-mono text-slate-300">{l.compte}</td>
+                      <td className="py-2 pr-4 text-slate-200">{l.libelle}</td>
+                      <td className="py-2 pr-4 text-right text-danger-400">{l.debit ? Number(l.debit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
+                      <td className="py-2 pr-4 text-right text-accent-400">{l.credit ? Number(l.credit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+                <tfoot>
+                  <tr className="border-t border-slate-700 text-xs font-bold">
+                    <td className="py-3 pr-4"></td>
+                    <td className="py-3 pr-4">{balanced ? '✓ Équilibré' : '✗ Déséquilibré'}</td>
+                    <td className="py-3 pr-4 text-right text-danger-400">{totalDeb.toFixed(3)} DT</td>
+                    <td className="py-3 pr-4 text-right text-accent-400">{totalCred.toFixed(3)} DT</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }

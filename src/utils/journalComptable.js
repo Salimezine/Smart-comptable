@@ -253,6 +253,8 @@ export function saveJournalPiece(piece) {
       date: piece.date,
       numeroPiece: piece.id,
       piece_justificative: piece.piece_justificative || piece.id,
+      fournisseur: piece.fournisseur || '',
+      categorie: piece.categorie || '',
       compte: `${l.compte} ${l.libelleCompte}`,
       libelle: l.libelle,
       debit: l.debit || null,
