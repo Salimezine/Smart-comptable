@@ -2456,6 +2456,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         }
       }
 
+      // Auto-générer l'écriture comptable (verrouillée après acceptation)
+      runJournalPipeline(true);
+
       setMode('success');
       resetForm();
       setActiveSample(null);

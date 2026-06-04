@@ -28,7 +28,8 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
       let entries = raw ? JSON.parse(raw) : [];
       if (!Array.isArray(entries)) entries = [];
       const filtered = entries.filter(e => e.numeroPiece !== editingPiece);
-      filtered.unshift(...editData.lines);
+      const lockedLines = editData.lines.map(l => ({ ...l, locked: true }));
+      filtered.unshift(...lockedLines);
       localStorage.setItem(JOURNAL_KEY, JSON.stringify(filtered));
       window.dispatchEvent(new CustomEvent('journal:updated'));
       setEditingPiece(null);
