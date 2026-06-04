@@ -520,14 +520,14 @@ export function generateFromJournal() {
   const stocks                       = Math.max(cl('3'), 0) / 1000;
 
   // 4X — on sépare par solde
-  const fournisseurs = Math.max(-solde('40'), cl('419') > 0 ? solde('419') : 0, 0) / 1000;
+  const fournisseurs = Math.max(-cl('40'), cl('419') > 0 ? cl('419') : 0, 0) / 1000;
   const clients      = Math.max(cl('41') - (balances['419']?.credit || 0), 0) / 1000;
   const etatDebit    = Math.max(cl('43'), 0) / 1000;
-  const etatCredit   = Math.max(-solde('43'), 0) / 1000;
+  const etatCredit   = Math.max(-cl('43'), 0) / 1000;
   const personnelDebit = Math.max(cl('42'), 0) / 1000;
-  const personnelCredit = Math.max(-solde('45'), cl('45') > 0 ? solde('45') : 0, 0) / 1000;
+  const personnelCredit = Math.max(-cl('45'), cl('45') > 0 ? cl('45') : 0, 0) / 1000;
   const autresCréances = Math.max(cl('409') + cl('47'), 0) / 1000;
-  const autresDettes = Math.max(-solde('44') - solde('46') - solde('48') - solde('49'), 0) / 1000;
+  const autresDettes = Math.max(-cl('44') - cl('46') - cl('48') - cl('49'), 0) / 1000;
 
   const tresorerieActif  = Math.max(cl('51') + cl('53') + cl('54') + cl('5') - (balances['52']?.credit || 0), 0) / 1000;
   const concoursBancaires = Math.max((balances['52']?.credit || 0) - (balances['52']?.debit || 0), 0) / 1000;
