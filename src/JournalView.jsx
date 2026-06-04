@@ -113,14 +113,15 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
       const rows = filtered.map(e => [
         e.date || '', e.numeroPiece || '', e.compte || '',
         (e.libelle || '').substring(0, 50),
-        e.debit ? fmt(e.debit) : '-', e.credit ? fmt(e.credit) : '-', e.journal || ''
+        e.debit ? fmt(e.debit) : '-', e.credit ? fmt(e.credit) : '-',
+        e.journal || '', e.piece_justificative || ''
       ]);
       autoTable(doc, {
-        head: [['Date', 'N° Pièce', 'Compte', 'Libellé', 'Débit', 'Crédit', 'Journal']],
+        head: [['Date', 'N° Pièce', 'Compte', 'Libellé', 'Débit', 'Crédit', 'Journal', 'Pièce justificative']],
         body: rows, startY: 28,
         styles: { fontSize: 7 },
         headStyles: { fillColor: [30, 41, 59] },
-        foot: [['', '', '', 'Total', fmt(totalDebit), fmt(totalCredit), '']],
+        foot: [['', '', '', 'Total', fmt(totalDebit), fmt(totalCredit), '', '']],
         footStyles: { fontSize: 7, fontStyle: 'bold' },
       });
     }
@@ -286,14 +287,17 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                               )}
                             </td>
                             <td className="py-4 px-6 text-center">
-                              {li === 0 && docImages[piece] ? (
-                                <button onClick={() => setPreviewDoc(docImages[piece])}
-                                  className="text-slate-500 hover:text-slate-300 transition-colors"
-                                  title="Voir la pièce justificative">
-                                  <Eye className="w-4 h-4 inline" />
-                                </button>
-                              ) : (
-                                <span className="text-slate-700">&mdash;</span>
+                              {li === 0 && (
+                                docImages[piece] ? (
+                                  <button onClick={() => setPreviewDoc(docImages[piece])}
+                                    className="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
+                                    title="Voir la pièce justificative">
+                                    <Eye className="w-3.5 h-3.5" />
+                                    <span className="text-[10px]">{lines[0].piece_justificative || piece}</span>
+                                  </button>
+                                ) : (
+                                  <span className="text-slate-500 text-[10px]">{lines[0].piece_justificative || piece}</span>
+                                )
                               )}
                             </td>
                           </tr>

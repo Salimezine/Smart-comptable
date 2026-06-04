@@ -216,6 +216,7 @@ export function journalComptable(corrige, options = {}) {
     date: datePiece,
     journal: type === 'achat' ? 'ACH' : 'VNT',
     reference: numeroPiece,
+    piece_justificative: corrige.numero_justificatif || '',
     ttnId: '',
     libelle: `${numeroPiece} — ${fournisseurNom}`,
     fournisseur: fournisseurNom,
@@ -251,6 +252,7 @@ export function saveJournalPiece(piece) {
     const entries = piece.lignes.map(l => ({
       date: piece.date,
       numeroPiece: piece.id,
+      piece_justificative: piece.piece_justificative || piece.id,
       compte: `${l.compte} ${l.libelleCompte}`,
       libelle: l.libelle,
       debit: l.debit || null,
