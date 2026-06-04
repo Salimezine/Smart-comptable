@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Filter, RotateCcw, Search, X, Download } from 'lucide-react';
+import { Filter, RotateCcw, Search, X, Download, Eye } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
+import { getDocument } from './utils/docStore';
 
 const JOURNAL_KEY = 'smart_journal';
 
@@ -13,6 +14,8 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [dateTo, setDateTo] = useState('');
   const [montantMin, setMontantMin] = useState('');
   const [montantMax, setMontantMax] = useState('');
+  const [docImages, setDocImages] = useState({});
+  const [previewDoc, setPreviewDoc] = useState(null);
 
   const loadJournal = () => {
     try {
@@ -63,6 +66,21 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const totalDebit = filtered.reduce((s, e) => s + (parseFloat(e.debit) || 0), 0);
   const totalCredit = filtered.reduce((s, e) => s + (parseFloat(e.credit) || 0), 0);
   const equilibre = Math.abs(totalDebit - totalCredit) < 0.01;
+
+  useEffect(() => {
+    const pieceIds = [...new Set(filtered.map(e => e.numeroPiece).filter(Boolean))];
+    if (pieceIds.length === 0) { setDocImages({}); return; }
+    let cancelled = false;
+    (async () => {
+      const docs = {};
+      for (const id of pieceIds) {
+        const data = await getDocument(id);
+        if (data) docs[id] = data;
+      }
+      if (!cancelled) setDocImages(docs);
+    })();
+    return () => { cancelled = true; };
+  }, [filtered]);
 
   const balances = computeBalances(displayJournal);
   const balanceGenerale = buildBalanceGenerale(balances);
@@ -221,11 +239,12 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   <th className="py-4 px-6 text-right">Débit</th>
                   <th className="py-4 px-6 text-right">Crédit</th>
                   <th className="py-4 px-6 text-center">Journal</th>
+                  <th className="py-4 px-6 text-center">Pièce justificative</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/50 text-xs">
                 {filtered.length === 0 ? (
-                  <tr><td colSpan={7} className="py-12 text-center text-slate-500">Aucune écriture trouvée. Scannez une facture pour créer une écriture.</td></tr>
+                  <tr><td colSpan={8} className="py-12 text-center text-slate-500">Aucune écriture trouvée. Scannez une facture pour créer une écriture.</td></tr>
                 ) : (
                   (() => {
                     const groups = new Map();
@@ -266,6 +285,17 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                                 </span>
                               )}
                             </td>
+                            <td className="py-4 px-6 text-center">
+                              {li === 0 && docImages[piece] ? (
+                                <button onClick={() => setPreviewDoc(docImages[piece])}
+                                  className="text-slate-500 hover:text-slate-300 transition-colors"
+                                  title="Voir la pièce justificative">
+                                  <Eye className="w-4 h-4 inline" />
+                                </button>
+                              ) : (
+                                <span className="text-slate-700">&mdash;</span>
+                              )}
+                            </td>
                           </tr>
                         );
                       });
@@ -277,6 +307,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                             <td className="py-2 px-6">Total pièce</td>
                             <td className="py-2 px-6 text-right text-danger-400">{Number(totalDeb).toFixed(3)} DT</td>
                             <td className="py-2 px-6 text-right text-accent-400">{Number(totalCred).toFixed(3)} DT</td>
+                            <td></td>
                             <td></td>
                           </tr>
                         );
@@ -298,6 +329,18 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
           <span className={equilibre ? 'text-accent-400' : 'text-danger-400'}>
             {equilibre ? '✓ Équilibré' : '✗ Déséquilibré'}
           </span>
+        </div>
+      )}
+
+      {previewDoc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={() => setPreviewDoc(null)}>
+          <div className="relative max-w-3xl max-h-[90vh]" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setPreviewDoc(null)}
+              className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-800 text-slate-300 flex items-center justify-center text-lg hover:bg-slate-700 z-10">
+              &times;
+            </button>
+            <img src={previewDoc} alt="Pièce justificative" className="max-w-full max-h-[85vh] rounded-xl border border-slate-700 shadow-2xl" />
+          </div>
         </div>
       )}
     </div>

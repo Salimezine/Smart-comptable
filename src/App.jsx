@@ -83,6 +83,7 @@ import FinancialReportView from './FinancialReportView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
 import { saveSimpleEntry } from './utils/pieceComptable';
+import { storeDocument } from './utils/docStore';
 import { generateTEIFXML, validateTEIF as validateTEIFv2, downloadTEIFXML } from './utils/teifGenerator';
 import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
@@ -1937,6 +1938,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [isAiScan, setIsAiScan] = useState(false);
   const [ocrProgress, setOcrProgress] = useState(0);
   const [ocrError, setOcrError] = useState('');
+  const [scannedDocument, setScannedDocument] = useState(null);
 
   const BLANK_FORM = {
     supplier: '',
@@ -2149,6 +2151,13 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
+      // Store scanned document as base64 for pièce justificative
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setScannedDocument(reader.result);
+      };
+      reader.readAsDataURL(imageData instanceof File ? imageData : new File([imageData], 'scan.png', { type: 'image/png' }));
+
       applyFormData(ocrToFormData(result));
       setOcrRawText(result?.rawText || '');
       setOcrProgress(100);
@@ -2219,6 +2228,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '43666 TVA déductible', libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
     if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '4368 Taxes à régulariser', libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
     saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '401 Fournisseurs', libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH' });
+    if (scannedDocument) storeDocument(numero, scannedDocument);
+    setScannedDocument(null);
     setMode('success');
     setFormData(BLANK_FORM);
     setActiveSample(null);
