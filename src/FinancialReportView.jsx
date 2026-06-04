@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel } from './excelExport';
@@ -38,7 +38,16 @@ function Line({ label, value, indent = 0, color, bold, total }) {
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency, stockTotal = 0 }) {
   const [period, setPeriod] = useState('N');
+  const [refreshKey, setRefreshKey] = useState(0);
 
+  useEffect(() => {
+    const handler = () => setRefreshKey(k => k + 1);
+    window.addEventListener('journal:updated', handler);
+    return () => window.removeEventListener('journal:updated', handler);
+  }, []);
+
+  // eslint-disable-next-line no-unused-vars
+  const _ = refreshKey; // force re-render when journal changes
   const journalData = generateFromJournal();
   const useJournal = journalData !== null;
 
