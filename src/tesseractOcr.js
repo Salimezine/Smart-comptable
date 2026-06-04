@@ -1042,15 +1042,27 @@ async function scanFacture(file, onProgress) {
     await worker.setParameters({ tessedit_pageseg_mode: '6' });
 
     const TIMEOUT_MS = 300000;
+    let timedOut = false;
+    const recoPromise = worker.recognize(file).catch(err => {
+      if (timedOut) return { data: { text: '', confidence: 0 } };
+      throw err;
+    });
     const { data: { text, confidence } } = await Promise.race([
-      worker.recognize(file),
+      recoPromise,
       new Promise((_, reject) =>
-        setTimeout(() => reject(new Error('Délai d\'attente dépassé (5 min)')), TIMEOUT_MS)
+        setTimeout(() => {
+          timedOut = true;
+          reject(new Error('Délai d\'attente dépassé (5 min)'));
+        }, TIMEOUT_MS)
       )
     ]);
 
     onProgress?.(96, 'Fermeture du moteur OCR...');
-    await worker.terminate();
+    await Promise.race([
+      worker.terminate().catch(() => {}),
+      new Promise(resolve => setTimeout(resolve, 3000))
+    ]);
+
     onProgress?.(97, 'Analyse du texte extrait...');
 
     if (!text || text.trim().length < 10) {
@@ -1073,7 +1085,10 @@ async function scanFacture(file, onProgress) {
     return validated;
 
   } catch (err) {
-    await worker?.terminate();
+    await Promise.race([
+      worker?.terminate().catch(() => {}),
+      new Promise(resolve => setTimeout(resolve, 3000))
+    ]);
     const msg = err.message === 'Délai d\'attente dépassé (5 min)'
       ? err.message
       : `OCR échoué: ${err.message}`;
