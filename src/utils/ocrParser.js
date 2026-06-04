@@ -1194,6 +1194,12 @@ function extraireDernier(text, patterns) {
   return dernier;
 }
 
+function extraireNombre(ligne) {
+  const m = ligne.match(/(\d{1,6}[,\.]\d{3})\b/);
+  if (!m) return 0;
+  return parseFloat(m[1].replace(',', '.'));
+}
+
 export function corrigerFacture(rawText, currentForm = {}) {
   const out = {
     fournisseur: currentForm.fournisseur || '',
@@ -1253,12 +1259,32 @@ export function corrigerFacture(rawText, currentForm = {}) {
       /total\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)/i,
     ]);
 
+    // Fallback: scan ligne par ligne si extraireDernier a raté des valeurs
+    const lignesTexte = text.split('\n').filter(Boolean);
+    if (recap.ht === null || recap.tva === null || recap.ttc === null) {
+      const ancresHT = /total\s*ht|sous[- ]?total\s*ht|total\s*hors\s*taxe/i;
+      const ancresTVA = /total\s*tva|montant\s*tva|tva\s*\(\d+\s*%\)/i;
+      const ancresTTC = /net\s*(?:à\s*)?payer|total\s*ttc|montant\s*ttc|ttc\b/i;
+      for (const ligne of lignesTexte) {
+        const nb = extraireNombre(ligne);
+        if (nb <= 0) continue;
+        if (ancresHT.test(ligne) && recap.ht === null) recap.ht = nb;
+        if (ancresTVA.test(ligne) && recap.tva === null) recap.tva = nb;
+        if (ancresTTC.test(ligne) && recap.ttc === null) recap.ttc = nb;
+      }
+    }
+
     // Montant en lettres comme TTC de secours
     const mLettres = parseMontantLettres(text);
     if (mLettres !== null && mLettres > 0 && recap.ttc === null) {
       recap.ttc = mLettres;
       out.notes.push('Total en lettres : ' + mLettres.toFixed(3) + ' DT');
     }
+
+    // Appliquer les valeurs du recap
+    if (recap.ht !== null) out.sous_total_ht = recap.ht;
+    if (recap.tva !== null) out.montant_tva = recap.tva;
+    if (recap.ttc !== null) out.total_ttc = recap.ttc;
 
     // Validation recap: TTC ≈ HT + TVA + Timbre + FODEC
     if (recap.ht !== null && recap.tva !== null && recap.ttc !== null) {
@@ -1269,11 +1295,6 @@ export function corrigerFacture(rawText, currentForm = {}) {
       }
     }
 
-    // Appliquer les valeurs du recap
-    if (recap.ht !== null) out.sous_total_ht = recap.ht;
-    if (recap.tva !== null) out.montant_tva = recap.tva;
-    if (recap.ttc !== null) out.total_ttc = recap.ttc;
-
     // Alertes pour lignes recap absentes
     if (recap.ht === null && recap.tva === null && recap.ttc === null && recap.timbre === null && recap.fodec === null) {
       out.alertes.push('recap_manquant');
@@ -1282,40 +1303,32 @@ export function corrigerFacture(rawText, currentForm = {}) {
     // ═══════════════════════════════════════════
     // ÉTAPE 1 — Fournisseur & Matricule Fiscal
     // ═══════════════════════════════════════════
-    // Bloc en-tête = 5 premières lignes
-    const lignesTexte = text.split('\n').filter(Boolean);
-    const entete = lignesTexte.slice(0, 5).join('\n');
+    // Trouver l'index de la ligne "FACTURÉ À" / "Client :"
+    const idxClientBloc = lignesTexte.findIndex(l =>
+      /factur[eé]\s*[àa]|client\s*:|adresse\s*client/i.test(l)
+    );
 
-    // MF fournisseur : chercher dans l'en-tête
-    const mfSupplier = detectMF(entete);
-
-    // MF client : chercher après "FACTURÉ À" / "Client :"
-    let mfClient = null;
-    const clientBlock = text.match(/facturé\s*à|client\s*[:：]/i);
-    if (clientBlock) {
-      const apresClient = text.slice(clientBlock.index);
-      mfClient = detectMF(apresClient);
-    }
-
-    // MF fournisseur = MF dans en-tête, ou MF global s'il n'y en a qu'un
-    let mf = mfSupplier;
-    if (!mf) {
-      const mfGlobal = detectMF(text);
-      if (mfGlobal) {
-        // Si un MF global existe et qu'il n'est pas égal au MF client, c'est le fournisseur
-        if (mfClient && mfGlobal === mfClient) {
-          mf = null;
-        } else {
-          mf = mfGlobal;
-        }
+    // Extraire TOUS les MF avec leur position ligne
+    const mfRegex = /\b(\d{7}\/[A-Z]\/[A-Z](?:\/[A-Z]\/\d{3})?)\b/g;
+    const mfTrouves = [];
+    lignesTexte.forEach((ligne, idx) => {
+      let m;
+      while ((m = mfRegex.exec(ligne)) !== null) {
+        mfTrouves.push({ valeur: m[1], ligne: idx });
       }
+    });
+
+    // MF fournisseur = premier MF AVANT le bloc client
+    const mfFournisseur = mfTrouves.find(mf =>
+      idxClientBloc === -1 || mf.ligne < idxClientBloc
+    );
+
+    if (mfFournisseur) {
+      out.matricule_fiscal = mfFournisseur.valeur;
     }
 
-    if (mf) {
-      out.matricule_fiscal = mf;
-    }
-
-    // Fournisseur : en-tête, exclure "FACTURÉ À", "Client :", etc.
+    // Fournisseur : en-tête (5 premières lignes), exclure "FACTURÉ À", "Client :"
+    const entete = lignesTexte.slice(0, 5).join('\n');
     const fournisseur = detectFournisseur(entete);
     if (fournisseur) {
       out.fournisseur = fournisseur;
