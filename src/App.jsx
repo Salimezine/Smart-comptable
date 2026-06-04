@@ -70,6 +70,7 @@ import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
  import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
+import { journalComptable, saveJournalPiece } from './utils/journalComptable';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 
@@ -1965,6 +1966,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
   const [purchaseError, setPurchaseError] = useState('');
+  const [journalMessage, setJournalMessage] = useState('');
   const [ocrRawText, setOcrRawText] = useState('');
   const [typeJustificatif, setTypeJustificatif] = useState('achat');
   const [clientEmail, setClientEmail] = useState('');
@@ -2203,6 +2205,47 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     }
   };
 
+  // Générer écriture comptable depuis le JSON corrigé
+  const handleGenererEcriture = () => {
+    if (!ocrRawText && !formData.supplier) return;
+    try {
+      const raw = ocrRawText || '';
+      const corrige = raw.trim().length > 10 ? corrigerFacture(raw, {}) : {
+        fournisseur: formData.supplier,
+        matricule_fiscal: formData.matriculeFiscal,
+        date: formData.date ? formData.date.split('-').reverse().join('/') : '',
+        numero_justificatif: formData.invoiceNumber,
+        categorie: formData.category,
+        taux_tva: formData.vatRate + '%',
+        sous_total_ht: parseFloat(formData.subtotal) || 0,
+        montant_tva: parseFloat(formData.vatAmount) || 0,
+        timbre: parseFloat(formData.stampDuty) || 0,
+        fodec: parseFloat(formData.fodec) || 0,
+        total_ttc: parseFloat(formData.totalAmount) || 0,
+        retenue_source: !!formData.rsAmount,
+        alertes: [],
+        notes: [],
+        lignes: [],
+      };
+      const piece = journalComptable(corrige, {
+        type: isAchat ? 'achat' : 'vente',
+        fournisseurNom: formData.supplier || 'Fournisseur',
+        datePiece: formData.date,
+      });
+      if (!piece.validated) {
+        setPurchaseError('⚠️ ' + (piece.error || 'Erreur génération écriture'));
+        return;
+      }
+      const saved = saveJournalPiece(piece);
+      if (saved) {
+        setPurchaseError('');
+        setJournalMessage(`Écriture ${piece.id} enregistrée dans le journal ${piece.journal}`);
+      }
+    } catch (err) {
+      setPurchaseError('⚠️ Erreur écriture: ' + err.message);
+    }
+  };
+
   // Enregistrer la dépense
   const handleConfirmExpense = async (e) => {
     e.preventDefault();
@@ -2350,6 +2393,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       setMfValid(null);
       setClientEmail('');
       setClientAddress('');
+      setJournalMessage('');
+      setPurchaseError('');
     };
 
     const handleSubmit = async (e) => {
@@ -2459,6 +2504,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       {purchaseError && (
         <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
           <AlertCircle className="w-3.5 h-3.5 shrink-0" /> {purchaseError}
+        </div>
+      )}
+      {journalMessage && (
+        <div className="p-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-[10px] text-emerald-400 flex items-center gap-2">
+          <CheckCircle2 className="w-3.5 h-3.5 shrink-0" /> {journalMessage}
         </div>
       )}
 
@@ -2748,6 +2798,12 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           className="flex-1 py-2.5 border border-slate-700 hover:bg-slate-800/40 text-slate-400 text-xs font-bold rounded-xl transition-all">
           Annuler
         </button>
+        {mode === 'result' && (
+          <button type="button" onClick={handleGenererEcriture}
+            className="flex-1 py-2.5 border border-amber-600/40 hover:bg-amber-600/10 text-amber-400 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+            <BookOpen className="w-4 h-4" /> Écriture
+          </button>
+        )}
         <button type="submit" disabled={requiredMissing.length > 0}
           className={`flex-[2] py-2.5 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold rounded-xl shadow-glow transition-all flex items-center justify-center gap-1.5 ${isAchat ? 'bg-gradient-brand hover:opacity-90' : 'bg-emerald-600 hover:bg-emerald-500'}`}>
           <CheckCircle2 className="w-4 h-4" /> {isAchat ? 'Enregistrer la dépense' : 'Enregistrer la vente'}

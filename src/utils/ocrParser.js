@@ -1210,6 +1210,7 @@ export function corrigerFacture(rawText, currentForm = {}) {
     retenue_source: false,
     alertes: [],
     notes: [],
+    lignes: [],
   };
 
   try {
@@ -1221,6 +1222,7 @@ export function corrigerFacture(rawText, currentForm = {}) {
     const { text } = corrigerOCRAvecTrace(rawText);
     const lignes = detectLignes(text);
     const t = text.toLowerCase();
+    out.lignes = lignes;
 
     // ═══════════════════════════════════════════
     // ÉTAPE 0 — Extraction du récapitulatif
