@@ -987,10 +987,15 @@ function validerCalculs(data) {
 // Fonction 1: scanFacture(file, onProgress)
 // ──────────────────────────────────────────────────
 async function preprocessImage(file) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const img = new Image();
     const url = URL.createObjectURL(file);
+    const timer = setTimeout(() => {
+      URL.revokeObjectURL(url);
+      reject(new Error('Prétraitement image trop long'));
+    }, 30000);
     img.onload = () => {
+      clearTimeout(timer);
       URL.revokeObjectURL(url);
       const maxDim = 2000;
       let { width, height } = img;
@@ -1002,16 +1007,24 @@ async function preprocessImage(file) {
       canvas.width = width; canvas.height = height;
       const ctx = canvas.getContext('2d');
       ctx.drawImage(img, 0, 0, width, height);
+      const pngTimer = setTimeout(() => reject(new Error('Conversion PNG trop long')), 15000);
       canvas.toBlob(blob => {
+        clearTimeout(pngTimer);
         resolve(new File([blob], file.name, { type: 'image/png' }));
       }, 'image/png');
+    };
+    img.onerror = () => {
+      clearTimeout(timer);
+      URL.revokeObjectURL(url);
+      reject(new Error('Image invalide'));
     };
     img.src = url;
   });
 }
 
 async function scanFacture(file, onProgress) {
-  if (file?.type === 'application/pdf') {
+  const isPdf = file?.type === 'application/pdf' || /\.pdf$/i.test(file?.name || '');
+  if (isPdf) {
     return {
       error: 'PDF détecté — convertissez en image avant OCR.',
       champs_manquants: ['all']

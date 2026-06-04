@@ -2119,8 +2119,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
     try {
       let imageData = file;
+      const isPdfFile = file?.type === 'application/pdf' || /\.pdf$/i.test(file?.name || '');
 
-      if (file?.type === 'application/pdf') {
+      if (isPdfFile) {
         setOcrProgress(10);
         setOcrStatus('Conversion PDF en image...');
 
@@ -2138,7 +2139,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           viewport
         }).promise;
 
-        const blob = await new Promise(res => canvas.toBlob(res, 'image/png'));
+        const blob = await new Promise((res, rej) => {
+          canvas.toBlob(b => { b ? res(b) : rej(new Error('Échec conversion PNG')); }, 'image/png');
+        });
         imageData = new File([blob], 'page1.png', { type: 'image/png' });
         setOcrProgress(25);
       }
