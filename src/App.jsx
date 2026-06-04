@@ -2229,7 +2229,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         lignes: [],
       };
       const piece = journalComptable(corrige, {
-        type: isAchat ? 'achat' : 'vente',
+        type: typeJustificatif === 'achat' ? 'achat' : 'vente',
         fournisseurNom: formData.supplier || 'Fournisseur',
         datePiece: formData.date,
       });
