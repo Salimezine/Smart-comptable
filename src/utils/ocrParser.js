@@ -498,7 +498,7 @@ export function genererAlertes(data, text = '') {
   }
 
   const mf = data.matriculeFiscal || data.matricule_fiscal || '';
-  if (mf && !/^\d{6,7}\/[A-Z]/.test(mf)) {
+  if (mf && !/^\d{6,7}[A-Z]?\//.test(mf)) {
     alertes.push({ code: 'MF_FORMAT_INVALIDE', message: `Format MF non conforme: "${mf}"` });
   }
 
@@ -802,7 +802,10 @@ export function parseFactureTunisienne(rawText) {
     const montantTTC_num = totalTTC || 0;
     const timbre_num     = timbre ?? 1.000;
     const fodec_num      = fodec || 0;
-    const rs_num         = retenueSource || 0;
+    // RS: utiliser le montant explicite de l'OCR, sinon calculer rs_base × taux
+    const rsExplicite    = retenueSource || 0;
+    const rsCalcule      = rsInfo.applicable ? parseFloat((rs_base * (rsInfo.taux || 1.5) / 100).toFixed(3)) : 0;
+    const rs_num         = rsExplicite || rsCalcule;
     const netADecaisser  = parseFloat((montantTTC_num + timbre_num + fodec_num - rs_num).toFixed(3));
 
     // Étape 4: vérification croisée
