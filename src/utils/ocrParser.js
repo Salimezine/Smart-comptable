@@ -19,6 +19,66 @@ export const BLACKLIST_FOURNISSEUR = [
 ];
 
 // ─────────────────────────────────────────────
+// 1b. FOURNISSEURS_LOOKUP — table de référence avec métadonnées
+// ─────────────────────────────────────────────
+export const FOURNISSEURS_LOOKUP = {
+  // Télécoms
+  'ooredoo':            { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'orange tn':          { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'orange':             { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'tunisie telecom':    { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'topnet':             { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'globalnet':          { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'hexabyte':           { categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  // Énergie & eau
+  'steg':               { categorie: 'Électricité & eau', tva: 13, rs: false, timbre: 0 },
+  'sonede':             { categorie: 'Électricité & eau', tva: 0,  rs: false, timbre: 0 },
+  // Grande distribution
+  'monoprix':           { categorie: 'Fournitures bureau', tva: 19, rs: false },
+  'geant':              { categorie: 'Fournitures bureau', tva: 19, rs: false },
+  'mg':                 { categorie: 'Fournitures bureau', tva: 19, rs: false },
+  'carrefour':          { categorie: 'Fournitures bureau', tva: 19, rs: false },
+  // Carburant
+  'sndp':               { categorie: 'Carburant', tva: 19, rs: false },
+  'total energie':      { categorie: 'Carburant', tva: 19, rs: false },
+  'total tunisie':      { categorie: 'Carburant', tva: 19, rs: false },
+  'agil':               { categorie: 'Carburant', tva: 19, rs: false },
+  'vivo energy':        { categorie: 'Carburant', tva: 19, rs: false },
+  // Informatique
+  'e-info':            { categorie: 'Matériel informatique', tva: 7, rs: false },
+  'e info':            { categorie: 'Matériel informatique', tva: 7, rs: false },
+  'einfo':             { categorie: 'Matériel informatique', tva: 7, rs: false },
+  'ednfo':             { categorie: 'Matériel informatique', tva: 7, rs: false },
+  'microsoft tn':       { categorie: 'Matériel informatique', tva: 19, rs: false },
+  'tunisie bureautique':{ categorie: 'Matériel informatique', tva: 7, rs: false },
+  // Services / impression
+  'ste bonjour':        { categorie: 'Prestation services', tva: null, rs: true },
+  'rapid press':        { categorie: 'Prestation services', tva: 7, rs: true },
+  // Assurance
+  'star':               { categorie: 'Assurance', tva: 0, rs: false },
+  'gat':                { categorie: 'Assurance', tva: 0, rs: false },
+  'maghrebia':          { categorie: 'Assurance', tva: 0, rs: false },
+  'comar':              { categorie: 'Assurance', tva: 0, rs: false },
+  // Transport
+  'sncft':              { categorie: 'Transport', tva: 0, rs: false },
+  'transtu':            { categorie: 'Transport', tva: 0, rs: false },
+  // Banque
+  'biat':               { categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'attijari':           { categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'bna':                { categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'bh bank':            { categorie: 'Frais bancaires', tva: 19, rs: 10 },
+};
+
+// ─────────────────────────────────────────────
+// 1c. detectPDF — vérifie si le texte vient d'un PDF
+// ─────────────────────────────────────────────
+export function detectPDF(text) {
+  if (!text || typeof text !== 'string') return false;
+  const pdfMarkers = /%PDF|endobj|xref|stream\s*BT\s*\/F|endstream|\/Type\s*\/Page/;
+  return pdfMarkers.test(text.slice(0, 2000));
+}
+
+// ─────────────────────────────────────────────
 // 2. correctOCRText — dictionnaire corrections Tesseract
 // ─────────────────────────────────────────────
 export function correctOCRText(text) {
@@ -32,6 +92,14 @@ export function correctOCRText(text) {
     t = t.replace(/(\d)\s+(\d{3}[.,])/g, '$1$2');
     t = t.replace(/œ/g, 'oe').replace(/Œ/g, 'OE');
     t = t.replace(/[¡¢£¤¥¦§¨©ª«¬®¯±²³´µ¶·¸¹º»¼½¾¿]/g, '');
+
+    // Corriger "0" lu comme "O" ou "D" dans les montants
+    t = t.replace(/(\d)[,.]O{2,}/g, '$1,000');
+
+    // TVA "1%" → "7%" si contexte matériel informatique
+    if (/\b(e-info|e info|einfo|ednfo|informatique|ordinateur|imprimante)\b/i.test(t)) {
+      t = t.replace(/\b1\s*%/g, '7%');
+    }
 
     const corrections = {
       ednfo: 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info', 'e-dnfo': 'E-info',
@@ -63,18 +131,30 @@ export function correctOCRText(text) {
 export function detectFournisseur(text) {
   try {
     if (!text || typeof text !== 'string') return null;
-    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const lower = text.toLowerCase();
 
-    for (const line of lines.slice(0, 15)) {
-      if (line.length < 3 || line.length > 70) continue;
-      if (/^[\d\+\-\*\/\.\,\#\(\)\[\]]/.test(line)) continue;
-      const lower = line.toLowerCase().trim();
-      if (BLACKLIST_FOURNISSEUR.some(r => r.test(lower))) continue;
-      if (/^(rue|av\.|avenue|bp|tél|tel|fax|email|www|http)/i.test(lower)) continue;
-      if (/\d{8,}/.test(lower)) continue;
-      if ((/^[A-ZÀ-Ü][a-zà-ü]/.test(line) && line.length > 4) || (/^[A-ZÀ-Ü\s]{2,30}$/.test(line) && line.length >= 3)) {
-        return correctOCRText(line);
+    // Pass 1 — lookup table (priorité absolue)
+    for (const [key, meta] of Object.entries(FOURNISSEURS_LOOKUP)) {
+      const re = new RegExp('\\b' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+      const match = text.match(re);
+      if (match) {
+        return match[0].trim();
       }
+    }
+
+    // Pass 2 — heuristique sur les 15 premières lignes
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const ignorePatterns = [
+      /^[\d\+\-\*\/\.\,\#\(\)\[\]]/, /facture|invoice|reçu|recu|matricule|fiscal|client|adresse|date|total|montant|tva|timbre|page|désignation|designation|téléphone|telephone|fax|email|www|http|arrêtée|arretee|dinars|net à payer|net a payer|mode de|bon de livraison/i,
+      /^rue|^av\.|^avenue|^bp|^tél|^tel/i, /\d{6,}/,
+    ];
+    for (const line of lines.slice(0, 15)) {
+      if (line.length < 3 || line.length > 60) continue;
+      if (line.includes(':') && line.indexOf(':') < 30) continue;
+      const lowerLine = line.toLowerCase();
+      if (ignorePatterns.some(p => p.test(lowerLine))) continue;
+      if (BLACKLIST_FOURNISSEUR.some(r => r.test(lowerLine))) continue;
+      if (/^[A-ZÀ-Ü][a-zà-üéèêëôöîïûü]/.test(line) && line.length > 4) return correctOCRText(line);
     }
     return null;
   } catch {
@@ -212,9 +292,13 @@ export function detectTotalHT(text) {
 // ─────────────────────────────────────────────
 // 8. detectTimbre — timbre fiscal (défaut 1.000)
 // ─────────────────────────────────────────────
-export function detectTimbre(text) {
+export function detectTimbre(text, fournisseur = '') {
   try {
     if (!text || typeof text !== 'string') return 1.000;
+    // STEG/SONEDE/services publics → pas de timbre
+    const fLower = fournisseur.toLowerCase();
+    if (/steg|sonede/i.test(fLower)) return 0;
+    // Lire le montant "Timbre" imprimé sur la facture
     const m = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*([\d,\.]+)/i);
     if (m) {
       const val = parseFloat(m[1].replace(',', '.'));
@@ -497,13 +581,21 @@ export function genererAlertes(data, text = '') {
     alertes.push({ code: 'MF_MANQUANT', message: 'MF non détecté — TVA potentiellement non déductible' });
   }
 
+  if (!data.fournisseur) {
+    alertes.push({ code: 'FOURNISSEUR_INCONNU', message: 'Fournisseur non reconnu — vérifier le nom' });
+  }
+
   const mf = data.matriculeFiscal || data.matricule_fiscal || '';
   if (mf && !/^\d{6,7}[A-Z]?\//.test(mf)) {
     alertes.push({ code: 'MF_FORMAT_INVALIDE', message: `Format MF non conforme: "${mf}"` });
   }
 
+  if (data.type === 'avoir') {
+    alertes.push({ code: 'AVOIR_DETECTE', message: 'Avoir / Note de crédit — vérifier les montants négatifs' });
+  }
+
   if (data.mode_reglement === 'espèces' && (data.montant_ttc || 0) > 5000) {
-    alertes.push({ code: 'PAIEMENT_CASH', message: 'Paiement espèces > 5 000 DT — Loi 2016-35' });
+    alertes.push({ code: 'PAIEMENT_CASH_RISQUE', message: 'Paiement espèces > 5 000 DT — Loi 2016-35' });
   }
 
   if (data.flag_incoherence) {
@@ -537,6 +629,10 @@ export function genererAlertes(data, text = '') {
 
   if (data.categorie && data.categorie.toLowerCase().includes('industri')) {
     alertes.push({ code: 'FODEC_APPLICABLE', message: 'Activité industrielle — vérifier applicabilité FODEC' });
+  }
+
+  if (data.confiance != null && data.confiance < 60) {
+    alertes.push({ code: 'IMAGE_FAIBLE_QUALITE', message: `Confiance OCR ${data.confiance}% — image de faible qualité` });
   }
 
   return alertes;
@@ -675,8 +771,32 @@ function detectLignes(text) {
 }
 
 // ─────────────────────────────────────────────
-// 20c. detectDate — date facture (DD/MM/YYYY)
+// 3b. detectTypeFacture — achat / vente / achat_avec_prestation / note_frais / avoir
 // ─────────────────────────────────────────────
+export function detectTypeFacture(text, fournisseur = '', montantTTC = 0) {
+  try {
+    if (!text || typeof text !== 'string') return 'achat';
+    const lower = text.toLowerCase();
+
+    // Note de crédit / avoir
+    if (/\b(avoir|note de crédit|note de credit|remboursement)\b/i.test(lower)) return 'avoir';
+
+    // Note de frais: pas de MF, montant < 200 DT
+    if (montantTTC > 0 && montantTTC < 200 && !/matricule\s*fiscal|MF\s*:/i.test(lower)) return 'note_frais';
+
+    // Vente (facture client Smart Comptable)
+    if (/votre facture|facturé à|facture a |client|FACT-\d{4}-\d{3}/i.test(lower)) return 'vente';
+
+    // Prestation de services
+    if (/\b(honoraires|consultation|maintenance|impression|sous-traitance|prestation|installation|réparation)\b/i.test(lower)) return 'achat_avec_prestation';
+
+    // Fournisseur connu avec RS
+    const fourKey = fournisseur ? fournisseur.toLowerCase() : '';
+    if (fourKey && FOURNISSEURS_LOOKUP[fourKey]?.rs) return 'achat_avec_prestation';
+
+    return 'achat';
+  } catch { return 'achat'; }
+}
 const MONTHS = {
   janvier: '01', février: '02', mars: '03', avril: '04', mai: '05', juin: '06',
   juillet: '07', août: '08', septembre: '09', octobre: '10', novembre: '11', décembre: '12',
@@ -721,6 +841,23 @@ export function parseFactureTunisienne(rawText) {
   try {
     if (!rawText || rawText.trim().length < 10) return null;
 
+    // Étape 0: détection PDF
+    if (detectPDF(rawText)) {
+      return {
+        erreur: 'PDF_DETECTE',
+        formulaire: null,
+        verification: {
+          calculs_coherents: false,
+          mf_present: false,
+          source_valeurs: 'recap_imprime',
+          alertes: [{ code: 'PDF_DETECTE', message: 'Le fichier semble être un PDF non interprété par OCR' }],
+          corrections_ocr: [],
+        },
+        confiance_ocr: 0,
+        champs_a_confirmer: ['fournisseur_nom', 'fournisseur_mf', 'numero_justificatif', 'date_facture', 'montant_ht', 'montant_ttc'],
+      };
+    }
+
     // Étape 1: correction OCR avec trace
     const { text, corrections: correctionsOCR } = corrigerOCRAvecTrace(rawText);
 
@@ -732,7 +869,7 @@ export function parseFactureTunisienne(rawText) {
     let totalHT       = detectTotalHT(text);
     let totalTTC      = detectTotalTTC(text);
     let tauxTVA       = detectTauxTVA(text);
-    const timbre        = detectTimbre(text);
+    const timbre        = detectTimbre(text, fournisseur || '');
     const categorie     = detectCategorie(text, fournisseur || '');
     const categoriesSec = detectCategoriesSecondaires(text, fournisseur || '');
     let totalTVA      = detectMontantTVA(text);
@@ -741,12 +878,32 @@ export function parseFactureTunisienne(rawText) {
     const modeReglement = detectModeReglement(text);
     const rsInfo        = detectRSPrestation(text, fournisseur || '');
 
+    // Appliquer métadonnées fournisseur (lookup table) si disponible
+    const fourKey = fournisseur ? fournisseur.toLowerCase().trim() : '';
+    const metaFournisseur = FOURNISSEURS_LOOKUP[fourKey] || null;
+    if (metaFournisseur) {
+      // Suggérer la catégorie
+      if (!categorie) {
+        // detectCategorie already uses fournisseur, skip
+      }
+      // Suggérer TVA si pas détectée
+      if (metaFournisseur.tva != null && (!tauxTVA || tauxTVA === 19)) {
+        tauxTVA = metaFournisseur.tva;
+      }
+      // Suggérer RS
+      if (metaFournisseur.rs != null && !rsInfo.applicable) {
+        rsInfo.applicable = metaFournisseur.rs;
+      }
+    }
+
+    // Type de facture
+    const typeFacture = detectTypeFacture(text, fournisseur, totalTTC);
+
     // Détection lignes + calcul TVA par ligne (taux mixtes)
     const lignes = detectLignes(text);
     if (lignes.length > 0) {
       const withTva = lignes.filter(l => l.tva !== undefined);
       if (withTva.length === lignes.length) {
-        // Vérifier cohérence: total ≈ prix × (1 + tva/100) pour chaque ligne
         const sane = lignes.every(l => {
           if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
           const expected = l.prix_unitaire * (1 + l.tva / 100);
@@ -760,7 +917,6 @@ export function parseFactureTunisienne(rawText) {
           if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
           const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
           if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
-          // Taux TVA le plus fréquent
           const comptage = {};
           for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
           const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
@@ -802,7 +958,6 @@ export function parseFactureTunisienne(rawText) {
     const montantTTC_num = totalTTC || 0;
     const timbre_num     = timbre ?? 1.000;
     const fodec_num      = fodec || 0;
-    // RS: utiliser le montant explicite de l'OCR, sinon calculer rs_base × taux
     const rsExplicite    = retenueSource || 0;
     const rsCalcule      = rsInfo.applicable ? parseFloat((rs_base * (rsInfo.taux || 1.5) / 100).toFixed(3)) : 0;
     const rs_num         = rsExplicite || rsCalcule;
@@ -822,6 +977,7 @@ export function parseFactureTunisienne(rawText) {
     const verif = verifierCoherence(coherenceData);
 
     // Étape 5: alertes
+    const confiance = Math.min(100, Math.round(([fournisseur, mf, numero, date, totalHT, totalTTC, totalTVA, timbre].filter(Boolean).length / 8) * 100));
     const alertes = genererAlertes({
       ...coherenceData,
       date,
@@ -830,6 +986,8 @@ export function parseFactureTunisienne(rawText) {
       mode_reglement: modeReglement,
       flag_incoherence: !verif.calculs_coherents,
       categorie,
+      type: typeFacture,
+      confiance,
     }, text);
 
     // Étape 6: champs à confirmer
@@ -841,13 +999,9 @@ export function parseFactureTunisienne(rawText) {
     if (!totalHT) champsAConfirmer.push('montant_ht');
     if (!totalTTC) champsAConfirmer.push('montant_ttc');
 
-    // Confiance OCR
-    const champsTrouves = [fournisseur, mf, numero, date, totalHT, totalTTC, totalTVA, timbre].filter(Boolean).length;
-    const confiance = Math.min(100, Math.round((champsTrouves / 8) * 100));
-
     return {
       formulaire: {
-        type: rsInfo.applicable ? 'achat_avec_prestation' : 'achat',
+        type: typeFacture,
         fournisseur_nom: fournisseur || '',
         fournisseur_mf: mf || '',
         date_facture: date ? date.split('-').reverse().join('/') : '',

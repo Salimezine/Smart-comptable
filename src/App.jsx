@@ -2252,8 +2252,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     try {
       const parsed = parseFactureTunisienne(purchaseInput);
 
-      if (!parsed) {
-        setPurchaseError('Erreur de parsing — vérifiez le format du texte');
+      if (!parsed || parsed.erreur) {
+        setPurchaseError(parsed?.erreur === 'PDF_DETECTE'
+          ? '⚠️ Fichier PDF détecté — veuillez utiliser la fonction "Scanner une facture" au lieu de coller le texte brut'
+          : 'Erreur de parsing — vérifiez le format du texte');
         setPurchaseLoading(false);
         return;
       }

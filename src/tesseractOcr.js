@@ -161,8 +161,8 @@ async function scanFacture(file, onProgress) {
 
     onProgress?.(98, 'Parsing facture...');
     const parsed = parseFactureTunisienne(text);
-    if (!parsed) {
-      return { error: 'Échec du parsing OCR — texte illisible', champs_manquants: ['all'] };
+    if (!parsed || parsed.erreur) {
+      return { error: parsed?.erreur === 'PDF_DETECTE' ? 'PDF détecté dans l\'OCR' : 'Échec du parsing OCR — texte illisible', champs_manquants: ['all'] };
     }
     parsed.confiance_ocr = Math.round(confidence);
     parsed.rawText = text;
