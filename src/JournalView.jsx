@@ -435,6 +435,22 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   </button>
                 </div>
               </div>
+              {(() => {
+                const docKey = docImages[detailPiece] ? detailPiece : (first.piece_justificative && docImages[first.piece_justificative] ? first.piece_justificative : null);
+                const docData = docKey ? docImages[docKey] : null;
+                return docData ? (
+                  <div className="flex justify-center">
+                    <button onClick={() => setPreviewDoc(docData)}
+                      className="group relative max-h-48 rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500 transition-all">
+                      <img src={docData} alt="Pièce justificative"
+                        className="max-h-48 object-contain" />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all flex items-center justify-center">
+                        <Eye className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                    </button>
+                  </div>
+                ) : null;
+              })()}
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
                   <tr className="text-[10px] uppercase text-slate-500 border-b border-slate-800">
