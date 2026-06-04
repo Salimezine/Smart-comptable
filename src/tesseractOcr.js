@@ -1021,9 +1021,9 @@ async function scanFacture(file, onProgress) {
   let worker;
 
   try {
-    onProgress?.(5);
+    onProgress?.(5, 'Prétraitement de l\'image...');
     file = await preprocessImage(file);
-    onProgress?.(10);
+    onProgress?.(10, 'Initialisation du moteur OCR...');
 
     const basePath = window.location.pathname.startsWith('/Smart-comptable/')
       ? '/Smart-comptable/tesseract/'
@@ -1035,22 +1035,23 @@ async function scanFacture(file, onProgress) {
       langPath: 'https://tessdata.projectnaptha.com/4.0.0',
       logger: (m) => {
         if (m.status === 'recognizing text') {
-          onProgress?.(10 + Math.round(m.progress * 85));
+          onProgress?.(10 + Math.round(m.progress * 85), `Reconnaissance OCR... ${Math.round(m.progress * 100)}%`);
         }
       }
     });
     await worker.setParameters({ tessedit_pageseg_mode: '6' });
 
-    const TIMEOUT_MS = 180000;
+    const TIMEOUT_MS = 300000;
     const { data: { text, confidence } } = await Promise.race([
       worker.recognize(file),
       new Promise((_, reject) =>
-        setTimeout(() => reject(new Error('Délai d\'attente dépassé (3 min)')), TIMEOUT_MS)
+        setTimeout(() => reject(new Error('Délai d\'attente dépassé (5 min)')), TIMEOUT_MS)
       )
     ]);
 
+    onProgress?.(96, 'Fermeture du moteur OCR...');
     await worker.terminate();
-    onProgress?.(95);
+    onProgress?.(97, 'Analyse du texte extrait...');
 
     if (!text || text.trim().length < 10) {
       return {
@@ -1060,17 +1061,20 @@ async function scanFacture(file, onProgress) {
       };
     }
 
+    onProgress?.(98, 'Parsing de la facture...');
     const parsed = parseFactureTunisienne(text);
     parsed.confidence = Math.round(confidence);
     parsed.rawText = text;
+
+    onProgress?.(99, 'Validation des calculs...');
     const validated = validerCalculs(parsed);
 
-    onProgress?.(100);
+    onProgress?.(100, 'Terminé ✓');
     return validated;
 
   } catch (err) {
     await worker?.terminate();
-    const msg = err.message === 'Délai d\'attente dépassé (3 min)'
+    const msg = err.message === 'Délai d\'attente dépassé (5 min)'
       ? err.message
       : `OCR échoué: ${err.message}`;
     return { error: msg, champs_manquants: ['all'] };

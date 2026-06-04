@@ -1938,6 +1938,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [isAiScan, setIsAiScan] = useState(false);
   const [ocrProgress, setOcrProgress] = useState(0);
   const [ocrError, setOcrError] = useState('');
+  const [ocrStatus, setOcrStatus] = useState('');
   const [scannedDocument, setScannedDocument] = useState(null);
 
   const BLANK_FORM = {
@@ -2112,6 +2113,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const handleFileScan = async (file) => {
     setOcrProgress(0);
     setOcrError('');
+    setOcrStatus('');
     setIsAiScan(true);
     setMode('scanning');
 
@@ -2120,6 +2122,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
       if (file?.type === 'application/pdf') {
         setOcrProgress(10);
+        setOcrStatus('Conversion PDF en image...');
 
         const arrayBuffer = await file.arrayBuffer();
         const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
@@ -2140,8 +2143,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         setOcrProgress(25);
       }
 
-      const result = await scanFacture(imageData, (pct) => {
+      const result = await scanFacture(imageData, (pct, status) => {
         setOcrProgress(25 + Math.round(pct * 0.75));
+        if (status) setOcrStatus(status);
       });
 
       if (result?.error) {
@@ -2844,9 +2848,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
                   Analyse OCR Tesseract...
                 </h4>
                 <p className="text-[11px] text-indigo-400">
-                  {ocrProgress > 0
-                    ? `Tesseract analyse le document — ${ocrProgress}%`
-                    : 'Initialisation du moteur OCR...'}
+                  {ocrStatus || (ocrProgress > 0
+                    ? `Traitement — ${ocrProgress}%`
+                    : 'Initialisation du moteur OCR...')}
                 </p>
               </div>
               {ocrProgress > 0 && (
