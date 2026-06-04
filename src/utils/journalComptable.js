@@ -255,7 +255,7 @@ export function saveJournalPiece(piece) {
       piece_justificative: piece.piece_justificative || piece.id,
       fournisseur: piece.fournisseur || '',
       categorie: piece.categorie || '',
-      compte: `${l.compte} ${l.libelleCompte}`,
+      compte: l.libelleCompte,
       libelle: l.libelle,
       debit: l.debit || null,
       credit: l.credit || null,

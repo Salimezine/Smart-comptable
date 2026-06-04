@@ -269,7 +269,7 @@ export function savePieceToJournal(piece) {
     const entries = piece.lignes.map(l => ({
       date: piece.date,
       numeroPiece: piece.id,
-      compte: `${l.compte} ${l.libelleCompte}`,
+      compte: l.libelleCompte,
       libelle: l.libelle,
       debit: l.debit || null,
       credit: l.credit || null,
