@@ -26,7 +26,7 @@ export const COMPTES_PCG_TN = {
   publicite: '623000',
 };
 
-const LIBELLES_COMPTES = {
+export const LIBELLES_COMPTES = {
   '401': 'Fournisseurs',
   '411': 'Clients',
   '607000': 'Achats de marchandises',
@@ -48,6 +48,7 @@ const LIBELLES_COMPTES = {
   '43671': 'TVA collectée',
   '4368': 'Taxes à régulariser',
   '602000': 'Achats stockés - Autres approvisionnements',
+  '602400': 'Fournitures de bureau et informatiques',
   '6654': "Droits d'enregistrement et de timbre",
   '70XXXX': 'Ventes de produits',
 };

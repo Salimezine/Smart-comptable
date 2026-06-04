@@ -82,7 +82,7 @@ import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
-import { saveSimpleEntry } from './utils/pieceComptable';
+import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
 import { generateTEIFXML, validateTEIF as validateTEIFv2, downloadTEIFXML } from './utils/teifGenerator';
 import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
@@ -2224,10 +2224,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       personnel: '640000', amortissement: '681000', autre_charge: '637000',
       frais_informatique: '602400'
     }[cat] || '611000';
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: `${compteCharge}`, libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
-    if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '43666 TVA déductible', libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
-    if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '4368 Taxes à régulariser', libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: '401 Fournisseurs', libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH' });
+    const lib = c => `${c} ${LIBELLES_COMPTES[c] || ''}`;
+    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib(compteCharge), libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH' });
+    if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('43666'), libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH' });
+    if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('4368'), libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH' });
+    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('401'), libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH' });
     if (scannedDocument) storeDocument(numero, scannedDocument);
     setScannedDocument(null);
     setMode('success');
