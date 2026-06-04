@@ -2207,8 +2207,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   };
 
   // Générer écriture comptable depuis le JSON corrigé
-  const handleGenererEcriture = () => {
-    if (!ocrRawText && !formData.supplier) return;
+  const runJournalPipeline = (locked) => {
+    if (!ocrRawText && !formData.supplier) return null;
     try {
       const raw = ocrRawText || '';
       const corrige = raw.trim().length > 10 ? corrigerFacture({}, raw) : {
@@ -2235,9 +2235,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       });
       if (!piece.validated) {
         setPurchaseError('⚠️ ' + (piece.error || 'Erreur génération écriture'));
-        return;
+        return null;
       }
-      const saved = saveJournalPiece(piece);
+      const saved = saveJournalPiece(piece, locked ? { locked: true } : {});
       if (saved) {
         if (scannedDocument) storeDocument(piece.id, scannedDocument);
         if (scannedDocument && piece.piece_justificative && piece.piece_justificative !== piece.id) {
@@ -2245,10 +2245,17 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         }
         setPurchaseError('');
         setJournalMessage(`Écriture ${piece.id} enregistrée dans le journal ${piece.journal}`);
+        return piece;
       }
+      return null;
     } catch (err) {
       setPurchaseError('⚠️ Erreur écriture: ' + err.message);
+      return null;
     }
+  };
+
+  const handleGenererEcriture = () => {
+    runJournalPipeline(false);
   };
 
   // Enregistrer la dépense
@@ -2293,26 +2300,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     } catch (e) {
       console.warn('TEIF auto-generation skipped:', e.message);
     }
-    // Journal entry for expense (fallback si TTN non disponible)
-    const numero = inv.invoiceNumber || inv.id;
-    const catLabel = inv.category || '';
-    const catEntry = Object.entries(CATEGORIES_SCE).find(([k, v]) => v.label === catLabel);
-    const cat = catEntry ? catEntry[0] : 'charge_externe';
-    const compteCharge = {
-      achat_marchandises: '607000', achat_mp: '601000', frais_energie: '614000',
-      prestation_services: '604000', charge_externe: '611000', loyer: '613000',
-      transport: '624000', assurance: '616000', honoraires: '622200',
-      publicite: '623000', telecom: '626000', frais_bancaires: '627000',
-      personnel: '640000', amortissement: '681000', autre_charge: '637000',
-      frais_informatique: '602400'
-    }[cat] || '611000';
-    const lib = c => `${c} ${LIBELLES_COMPTES[c] || ''}`;
-    const extra = { piece_justificative: inv.invoiceNumber || null, fournisseur: inv.supplier || null, categorie: inv.category || null };
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib(compteCharge), libelle: `HT ${numero} - ${inv.supplier}`, debit: inv.subtotal, credit: 0, journal: 'ACH', ...extra });
-    if (inv.vatAmount > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('43666'), libelle: `TVA ${numero}`, debit: inv.vatAmount, credit: 0, journal: 'ACH', ...extra });
-    if (inv.stampDuty > 0.001) saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('4368'), libelle: `Timbre ${numero}`, debit: inv.stampDuty, credit: 0, journal: 'ACH', ...extra });
-    saveSimpleEntry({ date: inv.date, numeroPiece: numero, compte: lib('401'), libelle: `Facture ${numero} - ${inv.supplier}`, debit: 0, credit: inv.totalAmount, journal: 'ACH', ...extra });
-    if (scannedDocument) storeDocument(numero, scannedDocument);
+    // Journal entry via pipeline (verrouillée après acceptation)
+    runJournalPipeline(true);
     setScannedDocument(null);
     setMode('success');
     setFormData(BLANK_FORM);

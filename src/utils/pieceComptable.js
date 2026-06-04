@@ -253,7 +253,7 @@ export function createPieceComptable(invoice, ttnId) {
 // ─────────────────────────────────────────────
 const JOURNAL_KEY = 'smart_journal';
 
-export function savePieceToJournal(piece) {
+export function savePieceToJournal(piece, opts = {}) {
   try {
     if (!piece || !piece.validated) return;
 
@@ -275,6 +275,7 @@ export function savePieceToJournal(piece) {
       credit: l.credit || null,
       journal: piece.journal,
       ttnId: piece.ttnId || null,
+      locked: !!opts.locked,
     }));
 
     journal.unshift(...entries);
@@ -291,6 +292,30 @@ export function savePieceToJournal(piece) {
 //    pour opérations sans TEIF (achat direct,
 //    écriture bancaire, OD)
 // ─────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Migration: nettoyer les comptes dupliqués
+// (ex: "602400 602400 Fournitures" → "602400 Fournitures")
+// ─────────────────────────────────────────────
+export function migrateJournal() {
+  try {
+    const raw = localStorage.getItem(JOURNAL_KEY);
+    if (!raw) return;
+    let entries = JSON.parse(raw);
+    if (!Array.isArray(entries)) return;
+    let changed = false;
+    entries = entries.map(e => {
+      if (!e.compte) return e;
+      const m = e.compte.match(/^(\S+)\s+\1(?:\s|$)/);
+      if (m) {
+        changed = true;
+        return { ...e, compte: e.compte.slice(m[1].length + 1) };
+      }
+      return e;
+    });
+    if (changed) localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
+  } catch { /* silencieux */ }
+}
+
 export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, credit, journal = 'OD', piece_justificative, fournisseur, categorie }) {
   try {
     let entries = [];

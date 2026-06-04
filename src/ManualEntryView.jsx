@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Save, BookOpen } from 'lucide-react';
+import { Plus, Trash2, Save, BookOpen, Paperclip } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
+import { storeDocument } from './utils/docStore';
 import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
 
 const PCG_LIBELLES = {
@@ -61,6 +62,8 @@ export default function ManualEntryView({ formatCurrency }) {
   const [lines, setLines] = useState([{ ...EMPTY_LINE }]);
   const [saved, setSaved] = useState(false);
   const [libelleSuggestions, setLibelleSuggestions] = useState([]);
+  const [docFile, setDocFile] = useState(null);
+  const [docName, setDocName] = useState('');
 
   useEffect(() => {
     try {
@@ -120,6 +123,7 @@ export default function ManualEntryView({ formatCurrency }) {
       saveSimpleEntry({
         date,
         numeroPiece,
+        piece_justificative: docName || numeroPiece,
         compte: compte || 'OD',
         libelle: libelle || `Pièce ${numeroPiece}`,
         debit: parseFloat(l.debit) || 0,
@@ -127,9 +131,14 @@ export default function ManualEntryView({ formatCurrency }) {
         journal,
       });
     });
+    if (docFile) {
+      storeDocument(numeroPiece, docFile);
+    }
     setSaved(true);
     setLines([{ ...EMPTY_LINE }]);
     setNumeroPiece(`OD-${Date.now()}`);
+    setDocFile(null);
+    setDocName('');
     setTimeout(() => setSaved(false), 3000);
   };
 
@@ -233,6 +242,27 @@ export default function ManualEntryView({ formatCurrency }) {
                 <option key={code} value={code}>{code} — {label}</option>
               ))}
             </datalist>
+          </div>
+
+          {/* Pièce justificative */}
+          <div className="flex items-center gap-3">
+            <Paperclip className="w-3.5 h-3.5 text-slate-500" />
+            <label className="text-[10px] text-slate-500 font-bold uppercase cursor-pointer flex items-center gap-2">
+              <span>Pièce justificative (PNG/PDF)</span>
+              <input type="file" accept="image/png,application/pdf,image/jpeg" className="hidden"
+                onChange={e => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  setDocName(file.name.replace(/\.[^.]+$/, ''));
+                  const reader = new FileReader();
+                  reader.onloadend = () => setDocFile(reader.result);
+                  reader.readAsDataURL(file);
+                }} />
+              <span className="text-brand-400 text-[10px] underline">Parcourir</span>
+            </label>
+            {docFile && (
+              <span className="text-[10px] text-accent-400">{docName}</span>
+            )}
           </div>
 
           {/* Totaux et soumission */}

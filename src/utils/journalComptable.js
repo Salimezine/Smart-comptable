@@ -239,7 +239,7 @@ export function journalComptable(corrige, options = {}) {
   };
 }
 
-export function saveJournalPiece(piece) {
+export function saveJournalPiece(piece, opts = {}) {
   try {
     if (!piece || !piece.validated) return false;
     let journal = [];
@@ -261,6 +261,7 @@ export function saveJournalPiece(piece) {
       credit: l.credit || null,
       journal: piece.journal,
       ttnId: piece.ttnId || null,
+      locked: !!opts.locked,
     }));
 
     journal.unshift(...entries);
