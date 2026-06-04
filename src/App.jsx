@@ -66,7 +66,7 @@ import {
   generateSimulatedData 
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
-import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN, validerCalculs } from './tesseractOcr';
+import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
 import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
@@ -2081,21 +2081,22 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
   function ocrToFormData(r) {
     const fmt = (v) => v != null ? parseFloat(v).toFixed(3) : '';
-    const catLabel = r.categorie_sce && CATEGORIES_SCE[r.categorie_sce]
-      ? CATEGORIES_SCE[r.categorie_sce].label
-      : (r.categorie_sce || 'Autres');
+    const f = r.formulaire || r;
+    const catLabel = f.categorie_sce && CATEGORIES_SCE[f.categorie_sce]
+      ? CATEGORIES_SCE[f.categorie_sce].label
+      : (f.categorie_principale || f.categorie_sce || 'Autres');
     return {
-      supplier: r.fournisseur || '',
-      matriculeFiscal: r.matricule_fiscal || '',
-      date: r.date || new Date().toISOString().split('T')[0],
-      subtotal: fmt(r.montant_ht),
-      vatRate: String(r.taux_tva || '19'),
-      fodec: fmt(r.fodec),
-      vatAmount: fmt(r.montant_tva),
-      stampDuty: fmt(r.timbre_fiscal),
-      totalAmount: fmt(r.montant_ttc),
+      supplier: f.fournisseur_nom || f.fournisseur || '',
+      matriculeFiscal: f.fournisseur_mf || f.matricule_fiscal || '',
+      date: f.date_facture ? f.date_facture.split('/').reverse().join('-') : (f.date || new Date().toISOString().split('T')[0]),
+      subtotal: fmt(f.montant_ht),
+      vatRate: String(f.taux_tva || '19'),
+      fodec: fmt(f.fodec),
+      vatAmount: fmt(f.montant_tva),
+      stampDuty: fmt(f.timbre_fiscal),
+      totalAmount: fmt(f.montant_ttc),
       category: catLabel,
-      invoiceNumber: r.numero_facture || '',
+      invoiceNumber: f.numero_justificatif || f.numero_facture || '',
     };
   }
 

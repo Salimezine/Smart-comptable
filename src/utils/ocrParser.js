@@ -762,10 +762,38 @@ export function parseFactureTunisienne(rawText) {
           const comptage = {};
           for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
           const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
-          if (best) { tauxTVA = parseInt(best[0]); }
-        }
+        if (best) { tauxTVA = parseInt(best[0]); }
       }
     }
+  }
+
+    // taux_tva_details: per-rate breakdown from lines
+    const taux_tva_details = [];
+    const byRate = {};
+    if (lignes.length > 0) {
+      for (const l of lignes) {
+        const t = l.tva;
+        if (t !== undefined) {
+          if (!byRate[t]) byRate[t] = { base: 0, tva: 0 };
+          byRate[t].base += l.prix_unitaire || 0;
+          byRate[t].tva += (l.total || 0) - (l.prix_unitaire || 0);
+        }
+      }
+      for (const [taux, d] of Object.entries(byRate)) {
+        taux_tva_details.push({ taux: parseInt(taux), base_ht: parseFloat(d.base.toFixed(3)), montant_tva: parseFloat(d.tva.toFixed(3)) });
+      }
+    }
+
+    // Track source_valeurs: recap_imprime / somme_lignes / calcul_derive
+    let source_valeurs;
+    if (totalHT && totalTTC) {
+      source_valeurs = lignes.length > 0 ? 'somme_lignes' : 'recap_imprime';
+    } else {
+      source_valeurs = 'calcul_derive';
+    }
+
+    // rs_base: HT prestation portion when RS applicable
+    const rs_base = rsInfo.applicable ? (totalHT || 0) : 0;
 
     // Étape 3: calculs
     const montantHT_num  = totalHT || 0;
@@ -822,6 +850,7 @@ export function parseFactureTunisienne(rawText) {
         categorie_principale: categorie,
         categories_secondaires: categoriesSec,
         taux_tva: tauxTVA,
+        taux_tva_details: taux_tva_details,
         montant_ht: montantHT_num,
         montant_tva: totalTVA || 0,
         montant_ttc: montantTTC_num,
@@ -829,6 +858,7 @@ export function parseFactureTunisienne(rawText) {
         fodec: fodec_num,
         rs_applicable: rsInfo.applicable,
         rs_taux: rsInfo.applicable ? rsInfo.taux : 0,
+        rs_base: rs_base,
         rs_montant: rs_num,
         net_a_decaisser: netADecaisser || 0,
         mode_reglement: modeReglement,
@@ -836,13 +866,14 @@ export function parseFactureTunisienne(rawText) {
       verification: {
         calculs_coherents: verif.calculs_coherents,
         mf_present: !!mf,
+        source_valeurs: source_valeurs,
         alertes: verif.alertes.concat(alertes.map(a => a.message)),
         corrections_ocr: correctionsOCR,
       },
       confiance_ocr: confiance,
       champs_a_confirmer: champsAConfirmer,
     };
-  } catch {
+  } catch (e) {
     return null;
   }
 }
