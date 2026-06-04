@@ -353,10 +353,16 @@ export function detectCategorie(text, fournisseur = '') {
     const t = text.toLowerCase();
     const f = fournisseur.toLowerCase();
 
+    // Vérifier FOURNISSEURS_LOOKUP en priorité
+    const fTrim = f.trim();
+    if (FOURNISSEURS_LOOKUP[fTrim]?.categorie) {
+      return FOURNISSEURS_LOOKUP[fTrim].categorie;
+    }
+
     const categories = [
       {
         cat: 'Informatique & Matériel',
-        fournisseurs: ['e-info', 'einfo', 'ramitech', 'tunisie info', 'informatique'],
+        fournisseurs: ['e-info', 'einfo', 'ednfo', 'ramitech', 'tunisie info', 'informatique'],
         keywords: ['souris', 'clavier', 'écran', 'moniteur', 'ordinateur', 'laptop',
                    'pc bureau', 'disque dur', 'ssd', 'ram', 'mémoire', 'carte mémoire',
                    'boitier', 'alimentation pc', 'carte mère', 'processeur', 'imprimante',
@@ -743,9 +749,12 @@ function detectLignes(text) {
       const des = em3[1].trim();
       if (!bruitLigne.test(des) && des.length >= 3) {
         const tva = parseInt(em3[2]);
-        const prix = normaliserMontant(em3[3]);
-        const total = normaliserMontant(em3[4]);
+        let prix = normaliserMontant(em3[3]);
+        let total = normaliserMontant(em3[4]);
         if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
+          // Normaliser prix si en millièmes (OCRsans séparateur décimal ex: 7477 → 7.477)
+          if (prix > total * 100) { prix = prix / 1000; }
+          if (total > 0 && prix > total) { total = total / 1000; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
           continue;
         }
@@ -758,9 +767,11 @@ function detectLignes(text) {
       const des = em[1].trim();
       if (!bruitLigne.test(des) && des.length >= 3) {
         const tva = parseInt(em[2]);
-        const prix = normaliserMontant(em[3]);
-        const total = normaliserMontant(em[4]);
+        let prix = normaliserMontant(em[3]);
+        let total = normaliserMontant(em[4]);
         if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
+          if (prix > total * 100) { prix = prix / 1000; }
+          if (total > 0 && prix > total) { total = total / 1000; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
           continue;
         }
@@ -882,19 +893,19 @@ export function parseFactureTunisienne(rawText) {
     const fourKey = fournisseur ? fournisseur.toLowerCase().trim() : '';
     const metaFournisseur = FOURNISSEURS_LOOKUP[fourKey] || null;
     if (metaFournisseur) {
-      // Suggérer la catégorie
-      if (!categorie) {
-        // detectCategorie already uses fournisseur, skip
-      }
-      // Suggérer TVA si pas détectée
-      if (metaFournisseur.tva != null && (!tauxTVA || tauxTVA === 19)) {
+      // Catégorie depuis la lookup (surcharge detectCategorie)
+      const catFromLookup = metaFournisseur.categorie;
+      // TVA: surcharge si la lookup a un taux défini
+      if (metaFournisseur.tva != null) {
         tauxTVA = metaFournisseur.tva;
       }
-      // Suggérer RS
+      // RS
       if (metaFournisseur.rs != null && !rsInfo.applicable) {
         rsInfo.applicable = metaFournisseur.rs;
       }
     }
+    // Appliquer catégorie depuis la lookup si définie
+    const categorieFinale = (metaFournisseur?.categorie) || categorie;
 
     // Type de facture
     const typeFacture = detectTypeFacture(text, fournisseur, totalTTC);
@@ -902,28 +913,29 @@ export function parseFactureTunisienne(rawText) {
     // Détection lignes + calcul TVA par ligne (taux mixtes)
     const lignes = detectLignes(text);
     if (lignes.length > 0) {
-      const withTva = lignes.filter(l => l.tva !== undefined);
-      if (withTva.length === lignes.length) {
-        const sane = lignes.every(l => {
-          if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
-          const expected = l.prix_unitaire * (1 + l.tva / 100);
-          return Math.abs(l.total - expected) < 0.010;
-        });
-        if (sane) {
-          const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
-          const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-          const sumTVA = sumTotals - sumHT;
-          if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
-          if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
-          const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
-          if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
-          const comptage = {};
-          for (const l of lignes) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
-          const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
+      // Somme brute de toutes les lignes détectées
+      const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+      const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
+      const sumTVA = sumTotals - sumHT;
+      if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
+      if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
+      // TTC = somme des totaux ligne + timbre
+      const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
+      if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
+
+      // Taux TVA le plus fréquent parmi les lignes cohérentes
+      const saneLines = lignes.filter(l => {
+        if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
+        const expected = l.prix_unitaire * (1 + l.tva / 100);
+        return Math.abs(l.total - expected) < 0.010;
+      });
+      if (saneLines.length > 0) {
+        const comptage = {};
+        for (const l of saneLines) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
+        const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
         if (best) { tauxTVA = parseInt(best[0]); }
       }
     }
-  }
 
     // taux_tva_details: per-rate breakdown from lines
     const taux_tva_details = [];
@@ -985,7 +997,7 @@ export function parseFactureTunisienne(rawText) {
       matriculeFiscal: mf,
       mode_reglement: modeReglement,
       flag_incoherence: !verif.calculs_coherents,
-      categorie,
+      categorie: categorieFinale,
       type: typeFacture,
       confiance,
     }, text);
@@ -1006,7 +1018,7 @@ export function parseFactureTunisienne(rawText) {
         fournisseur_mf: mf || '',
         date_facture: date ? date.split('-').reverse().join('/') : '',
         numero_justificatif: numero || '',
-        categorie_principale: categorie,
+        categorie_principale: categorieFinale,
         categories_secondaires: categoriesSec,
         taux_tva: tauxTVA,
         taux_tva_details: taux_tva_details,
