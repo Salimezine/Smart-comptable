@@ -67,7 +67,7 @@ import {
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
-import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur } from './utils/ocrParser';
+ import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import ReactMarkdown from 'react-markdown';
@@ -2100,6 +2100,24 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     };
   }
 
+  function corrigeToFormData(c) {
+    const fmt = (v) => v != null ? parseFloat(v).toFixed(3) : '';
+    return {
+      supplier: c.fournisseur || '',
+      matriculeFiscal: c.matricule_fiscal || '',
+      date: c.date ? c.date.split('/').reverse().join('-') : new Date().toISOString().split('T')[0],
+      subtotal: fmt(c.sous_total_ht),
+      vatRate: c.taux_tva || '19',
+      fodec: fmt(c.fodec),
+      vatAmount: fmt(c.montant_tva),
+      stampDuty: fmt(c.timbre),
+      totalAmount: fmt(c.total_ttc),
+      category: c.categorie || 'Autres',
+      invoiceNumber: c.numero_justificatif || '',
+      rsAmount: c.retenue_source ? '1' : '',
+    };
+  }
+
   const handleStartScan = (sample) => {
     setActiveSample(sample);
     setIsAiScan(false);
@@ -2166,8 +2184,16 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       };
       reader.readAsDataURL(imageData instanceof File ? imageData : new File([imageData], 'scan.png', { type: 'image/png' }));
 
-      applyFormData(ocrToFormData(result));
-      setOcrRawText(result?.rawText || '');
+      const rawText = result?.rawText || '';
+      // Appliquer corrigerFacture sur le texte OCR brut
+      const resultScan = result?.rawText ? corrigerFacture(result.rawText, {}) : null;
+      if (resultScan) {
+        applyFormData(corrigeToFormData(resultScan));
+        setOcrRawText(result.rawText);
+      } else {
+        applyFormData(ocrToFormData(result));
+        setOcrRawText(rawText);
+      }
       setOcrProgress(100);
       setMode('result');
 
@@ -2250,7 +2276,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setPurchaseError('');
 
     try {
-      const parsed = parseFactureTunisienne(purchaseInput);
+      const rawText = purchaseInput;
+      const parsed = parseFactureTunisienne(rawText);
 
       if (!parsed || parsed.erreur) {
         setPurchaseError(parsed?.erreur === 'PDF_DETECTE'
@@ -2260,31 +2287,20 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
-      const f = parsed.formulaire;
-      const v = parsed.verification;
+      // Appliquer corrigerFacture sur le texte brut
+      const corrige = corrigerFacture(rawText, {});
 
-      applyFormData({
-        supplier: f.fournisseur_nom || '',
-        matriculeFiscal: f.fournisseur_mf || '',
-        date: f.date_facture ? f.date_facture.split('/').reverse().join('-') : new Date().toISOString().split('T')[0],
-        subtotal: f.montant_ht > 0 ? String(f.montant_ht) : '',
-        vatRate: String(f.taux_tva || '19'),
-        fodec: f.fodec > 0 ? String(f.fodec) : '0.000',
-        vatAmount: f.montant_tva > 0 ? String(f.montant_tva) : '',
-        stampDuty: String(f.timbre_fiscal ?? 1.000),
-        totalAmount: f.montant_ttc > 0 ? String(f.montant_ttc) : '',
-        category: f.categorie_principale || 'Autres',
-        invoiceNumber: f.numero_justificatif || '',
-        rsAmount: f.rs_montant > 0 ? String(f.rs_montant) : '',
-      });
+      // Mapper les valeurs corrigées vers le formulaire
+      applyFormData(corrigeToFormData(corrige));
 
-      if (!v.calculs_coherents) {
-        setPurchaseError('⚠️ Incohérence détectée dans les montants — vérifiez manuellement');
+      // Afficher les alertes si présentes
+      if (corrige.alertes && corrige.alertes.length > 0) {
+        setPurchaseError('⚠️ ' + corrige.alertes.join(', '));
       }
 
       setPurchaseLoading(false);
       setIsAiScan(true);
-      setOcrRawText(purchaseInput);
+      setOcrRawText(rawText);
       setMode('result');
     } catch (err) {
       setPurchaseError('Erreur de parsing — vérifiez le format du texte');

@@ -755,6 +755,8 @@ function detectLignes(text) {
           // Normaliser prix si en millièmes (OCRsans séparateur décimal ex: 7477 → 7.477)
           if (prix > total * 100) { prix = prix / 1000; }
           if (total > 0 && prix > total) { total = total / 1000; }
+          // TVA 0% mais total ≠ prix → OCR a mal lu le prix, corriger
+          if (tva === 0 && Math.abs(total - prix) > 0.010) { prix = total; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
           continue;
         }
@@ -772,6 +774,7 @@ function detectLignes(text) {
         if ([0, 7, 13, 19].includes(tva) && prix !== null && total !== null) {
           if (prix > total * 100) { prix = prix / 1000; }
           if (total > 0 && prix > total) { total = total / 1000; }
+          if (tva === 0 && Math.abs(total - prix) > 0.010) { prix = total; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
           continue;
         }
@@ -916,9 +919,13 @@ export function parseFactureTunisienne(rawText) {
       // Somme brute de toutes les lignes détectées
       const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
       const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-      const sumTVA = sumTotals - sumHT;
+      // TVA calculée ligne par ligne : Σ(prix × taux / 100)
+      const sumTVACalc = lignes.reduce((s, l) => {
+        if (l.tva !== undefined) return s + (l.prix_unitaire || 0) * l.tva / 100;
+        return s;
+      }, 0);
       if (sumHT > 0) { totalHT = parseFloat(sumHT.toFixed(3)); }
-      if (sumTVA > 0) { totalTVA = parseFloat(sumTVA.toFixed(3)); }
+      if (sumTVACalc > 0) { totalTVA = parseFloat(sumTVACalc.toFixed(3)); }
       // TTC = somme des totaux ligne + timbre
       const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
       if (totalTTCFromLines > 0) { totalTTC = totalTTCFromLines; }
