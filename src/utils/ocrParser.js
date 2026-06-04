@@ -169,24 +169,29 @@ export function detectMF(text) {
   try {
     if (!text || typeof text !== 'string') return null;
 
-    const mfBody = '\\d{6,7}[A-Z]?\\/[A-Z](?:\\/[A-Z](?:\\/\\d{3})?)?';
+    // Accepte 0 (OCR error O→0) comme lettre + capture complet X/X/X/X/XXX
+    const mfBody = '\\d{6,7}[A-Z0-9]?\\/[A-Z0-9](?:\\/[A-Z0-9](?:\\/[A-Z0-9]\\/\\d{3})?)?';
     const patterns = [
-      // "M F : 130893/B" (cas E-info: espace entre M et F)
       new RegExp('M\\s+F\\s*:?\\s*(' + mfBody + ')', 'i'),
-      // "MF: 130893/B" avec pipe ou séparateurs alternatifs
       new RegExp('M\\.?F\\.?\\s*:?\\s*(' + mfBody + ')', 'i'),
-      // "Matricule Fiscal : 130893/B"
       new RegExp('matricule\\s*fiscal\\s*:?\\s*(' + mfBody + ')', 'i'),
-      // Pattern seul sur une ligne (sans label)
       new RegExp('^\\s*(' + mfBody + ')\\s*$', 'm'),
     ];
-    const validateMf = /^\d{6,7}[A-Z]?\//;
+    const validateMf = /^\d{6,7}[A-Z0-9]?\//;
 
     for (const pattern of patterns) {
       const match = text.match(pattern);
       if (match) {
-        const val = match[1].trim();
-        if (validateMf.test(val)) return val;
+        let val = match[1].trim();
+        if (validateMf.test(val)) {
+          const p = val.split('/');
+          if (p.length >= 3) {
+            p[1] = p[1].replace(/0/g, 'O');
+            if (p.length >= 4) p[3] = p[3].replace(/0/g, 'O');
+            if (p.length >= 5) p[4] = p[4].replace(/0/g, 'O');
+          }
+          return p.join('/');
+        }
       }
     }
     return null;
