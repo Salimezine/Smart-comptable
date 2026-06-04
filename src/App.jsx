@@ -2239,6 +2239,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       }
       const saved = saveJournalPiece(piece);
       if (saved) {
+        if (scannedDocument) storeDocument(piece.id, scannedDocument);
+        if (scannedDocument && piece.piece_justificative && piece.piece_justificative !== piece.id) {
+          storeDocument(piece.piece_justificative, scannedDocument);
+        }
         setPurchaseError('');
         setJournalMessage(`Écriture ${piece.id} enregistrée dans le journal ${piece.journal}`);
       }

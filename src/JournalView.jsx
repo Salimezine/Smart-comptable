@@ -70,11 +70,13 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   useEffect(() => {
     const pieceIds = [...new Set(filtered.map(e => e.numeroPiece).filter(Boolean))];
-    if (pieceIds.length === 0) { setDocImages({}); return; }
+    const justifIds = [...new Set(filtered.map(e => e.piece_justificative).filter(Boolean))];
+    const allIds = [...new Set([...pieceIds, ...justifIds])];
+    if (allIds.length === 0) { setDocImages({}); return; }
     let cancelled = false;
     (async () => {
       const docs = {};
-      for (const id of pieceIds) {
+      for (const id of allIds) {
         const data = await getDocument(id);
         if (data) docs[id] = data;
       }
@@ -296,16 +298,20 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                             </td>
                             <td className="py-4 px-6 text-center">
                               {li === 0 && (
-                                docImages[piece] ? (
-                                  <button onClick={() => setPreviewDoc(docImages[piece])}
-                                    className="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
-                                    title="Voir la pièce justificative">
-                                    <Eye className="w-3.5 h-3.5" />
-                                    <span className="text-[10px]">{lines[0].piece_justificative || piece}</span>
-                                  </button>
-                                ) : (
-                                  <span className="text-slate-500 text-[10px]">{lines[0].piece_justificative || piece}</span>
-                                )
+                                (() => {
+                                  const docKey = docImages[piece] ? piece : (lines[0].piece_justificative && docImages[lines[0].piece_justificative] ? lines[0].piece_justificative : null);
+                                  const docData = docKey ? docImages[docKey] : null;
+                                  return docData ? (
+                                    <button onClick={() => setPreviewDoc(docData)}
+                                      className="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
+                                      title="Voir la pièce justificative">
+                                      <Eye className="w-3.5 h-3.5" />
+                                      <span className="text-[10px]">{lines[0].piece_justificative || piece}</span>
+                                    </button>
+                                  ) : (
+                                    <span className="text-slate-500 text-[10px]">{lines[0].piece_justificative || piece}</span>
+                                  );
+                                })()
                               )}
                             </td>
                           </tr>
