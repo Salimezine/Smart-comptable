@@ -65,6 +65,8 @@ export default function ManualEntryView({ formatCurrency }) {
   const [libelleSuggestions, setLibelleSuggestions] = useState([]);
   const [docFile, setDocFile] = useState(null);
   const [docName, setDocName] = useState('');
+  const [showPlan, setShowPlan] = useState(false);
+  const [planSearch, setPlanSearch] = useState('');
 
   useEffect(() => {
     try {
@@ -183,10 +185,16 @@ export default function ManualEntryView({ formatCurrency }) {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[10px] text-slate-500 font-bold uppercase">Lignes d'écriture</span>
-              <button type="button" onClick={addLine}
-                className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
-                <Plus className="w-3 h-3" /> Ajouter une ligne
-              </button>
+              <div className="flex items-center gap-2">
+                <button type="button" onClick={() => setShowPlan(true)}
+                  className="flex items-center gap-1 text-[10px] text-slate-400 hover:text-brand-300">
+                  Plan comptable
+                </button>
+                <button type="button" onClick={addLine}
+                  className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
+                  <Plus className="w-3 h-3" /> Ajouter une ligne
+                </button>
+              </div>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
@@ -287,6 +295,41 @@ export default function ManualEntryView({ formatCurrency }) {
           </div>
         )}
       </div>
+
+      {showPlan && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => { setShowPlan(false); setPlanSearch(''); }}>
+          <div className="relative w-full max-w-2xl max-h-[80vh] rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl flex flex-col" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-4 border-b border-slate-700">
+              <h3 className="text-sm font-bold text-slate-200">Plan Comptable</h3>
+              <button onClick={() => { setShowPlan(false); setPlanSearch(''); }} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+            </div>
+            <div className="p-4 border-b border-slate-700">
+              <input type="text" value={planSearch} onChange={e => setPlanSearch(e.target.value)}
+                placeholder="Rechercher un compte (code ou libellé)..."
+                className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500" />
+            </div>
+            <div className="overflow-y-auto p-4 space-y-0.5 flex-1">
+              {Object.entries(PCG_COMPTES)
+                .filter(([code, label]) => !planSearch || code.includes(planSearch) || label.toLowerCase().includes(planSearch.toLowerCase()))
+                .map(([code, label]) => (
+                  <div key={code} className="flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-slate-700/50 cursor-pointer text-xs"
+                    onClick={() => {
+                      setLines(prev => {
+                        const last = prev.length - 1;
+                        const lib = findLibelle(code);
+                        return prev.map((l, idx) => idx === last ? { ...l, compte: code, libelle: lib || label } : l);
+                      });
+                      setShowPlan(false);
+                      setPlanSearch('');
+                    }}>
+                    <span className="font-mono text-slate-400">{code}</span>
+                    <span className="text-slate-200">{label}</span>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
