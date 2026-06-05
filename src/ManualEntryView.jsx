@@ -93,9 +93,9 @@ export default function ManualEntryView({ formatCurrency }) {
   const findLibelle = (code) => {
     if (!code) return '';
     const exact = PCG_LIBELLES[code] || PCG_COMPTES[code];
-    if (exact) return `${code} — ${exact}`;
+    if (exact) return exact;
     const prefix = Object.keys(PCG_COMPTES).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
-    if (prefix) return `${code} — ${PCG_COMPTES[prefix]}`;
+    if (prefix) return PCG_COMPTES[prefix];
     return '';
   };
 
