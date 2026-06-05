@@ -207,9 +207,13 @@ export function detectNumeroFacture(text) {
     if (!text || typeof text !== 'string') return null;
 
     const patterns = [
+      // "Facture FA20BJ001" sans N°
+      /(?:facture|fact\.?)\s+([A-Z]{1,3}\d{2}[A-Z]{1,3}\d{3,})/i,
       // Préférer les captures longues (références avec séparateurs) avant les chiffres courts
       /(?:N°|NO|NUMÉRO|NUMERO|REF|RÉF|REFERENCE)\s*(?:FACTURE|FACT)?\s*[:﹕]?\s*(\w[\w\-\/]{2,})/i,
       /(?:facture|fact\.?)\s*n[°o°]?\s*:?\s*(\w[\w\-\/]+)/i,
+      // "N° Facture: REF123"
+      /(?:facture|fact\.?)\s*[:﹕]?\s*(\w[\w\-\/]{3,})/i,
       // Tableau: "N° | 68" (séparateur tab/pipe)
       /\bN[°o°º]\s*[|\t]\s*(\d{1,6})\s*[|\t]/i,
       // "Facture N° 68" ou "N° : 68"
@@ -236,6 +240,20 @@ export function detectNumeroFacture(text) {
   } catch {
     return null;
   }
+}
+
+/**
+ * Extrait le nom du client depuis le bloc "Client :" (pour factures de vente)
+ */
+export function detectClient(text) {
+  try {
+    if (!text || typeof text !== 'string') return '';
+    const m = text.match(/(?:Client|Client\s*[:﹕]?)\s*\n+\s*([A-Za-zÀ-ÿ\s\-']{3,60}?)(?:\s*,|\s*\n|$)/i);
+    if (m) return m[1].trim();
+    const m2 = text.match(/Client\s*[:﹕]?\s*([A-Za-zÀ-ÿ\s\-']{3,60}?)\s*,/i);
+    if (m2) return m2[1].trim();
+    return '';
+  } catch { return ''; }
 }
 
 // ─────────────────────────────────────────────
@@ -1025,6 +1043,7 @@ export function parseFactureTunisienne(rawText) {
     return {
       formulaire: {
         type: typeFacture,
+        client: detectClient(text),
         fournisseur_nom: fournisseur || '',
         fournisseur_mf: mf || '',
         date_facture: date ? date.split('-').reverse().join('/') : '',

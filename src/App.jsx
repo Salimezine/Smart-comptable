@@ -2087,9 +2087,13 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     const catLabel = f.categorie_sce && CATEGORIES_SCE[f.categorie_sce]
       ? CATEGORIES_SCE[f.categorie_sce].label
       : (f.categorie_principale || f.categorie_sce || 'Autres');
+    const type = f.type || 'achat';
+    const client = f.client || '';
     return {
-      supplier: f.fournisseur_nom || f.fournisseur || '',
-      matriculeFiscal: f.fournisseur_mf || f.matricule_fiscal || '',
+      type,
+      client,
+      supplier: type === 'vente' && client ? client : (f.fournisseur_nom || f.fournisseur || ''),
+      matriculeFiscal: type === 'vente' ? '' : (f.fournisseur_mf || f.matricule_fiscal || ''),
       date: f.date_facture ? f.date_facture.split('/').reverse().join('-') : (f.date || new Date().toISOString().split('T')[0]),
       subtotal: fmt(f.montant_ht),
       vatRate: String(f.taux_tva || '19'),
@@ -2126,7 +2130,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setOcrProgress(0);
     setMode('scanning');
     setTimeout(() => {
-      applyFormData(ocrToFormData(sample.data));
+      const formData = ocrToFormData(sample.data);
+      applyFormData(formData);
+      if (formData.type === 'vente') setTypeJustificatif('vente');
       setMode('result');
     }, 1800);
   };
@@ -2194,8 +2200,14 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         applyFormData(corrigeToFormData(resultScan));
         setOcrRawText(result.rawText);
       } else {
-        applyFormData(ocrToFormData(result));
+        const fd = ocrToFormData(result);
+        applyFormData(fd);
+        if (fd.type === 'vente') setTypeJustificatif('vente');
         setOcrRawText(rawText);
+      }
+      // Auto-set type from OCR detection
+      if (result.formulaire?.type === 'vente') {
+        setTypeJustificatif('vente');
       }
       setOcrProgress(100);
       setMode('result');
@@ -2326,6 +2338,13 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       }
 
       console.log("parsed.formulaire keys:", Object.keys(parsed.formulaire || {}), "values:", parsed.formulaire);
+      // Auto-set typeJustificatif from OCR detection
+      if (parsed.formulaire?.type === 'vente') {
+        setTypeJustificatif('vente');
+      } else if (parsed.formulaire?.type === 'achat') {
+        setTypeJustificatif('achat');
+      }
+
       // Appliquer corrigerFacture(parsed, texteOCR)
       const corrige = corrigerFacture(parsed.formulaire || {}, rawText);
 
