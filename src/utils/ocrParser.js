@@ -1404,10 +1404,12 @@ export function corrigerFacture(parsed, texteOCR) {
       out.notes.push('Total en lettres : ' + mLettres.toFixed(3) + ' DT');
     }
 
-    // Appliquer les valeurs du recap
+    // Appliquer les valeurs du recap (timbre+fodec avant fallback TVA)
     if (recap.ht !== null) out.sous_total_ht = recap.ht;
     if (recap.tva !== null) out.montant_tva = recap.tva;
     if (recap.ttc !== null) out.total_ttc = recap.ttc;
+    if (recap.timbre !== null) out.timbre = recap.timbre;
+    if (recap.fodec !== null) out.fodec = recap.fodec;
 
     // Validation recap: TTC ≈ HT + TVA + Timbre + FODEC
     if (recap.ht !== null && recap.tva !== null && recap.ttc !== null) {
