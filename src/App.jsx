@@ -3064,6 +3064,7 @@ Règlement : Virement à 60 jours'
    ========================================================================== */
 function BankSyncView({ transactions, setTransactions, invoices, setInvoices, formatCurrency }) {
   const [successMatchId, setSuccessMatchId] = useState(null);
+  const [selectedInvoice, setSelectedInvoice] = useState(null);
 
   // Rapprochement manuel
   const handleReconcile = (txId, invoiceId) => {
@@ -3196,12 +3197,104 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
               </div>
             ) : (
               unpaidInvoices.map((inv) => (
-                <div key={inv.id} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2">
+                <div key={inv.id} onClick={() => setSelectedInvoice(inv)} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2 cursor-pointer hover:border-brand-500/40 transition-all">
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="text-xs font-extrabold text-white">{inv.clientName}</h4>
                       <span className="text-[10px] font-mono text-slate-400">{inv.invoiceNumber}</span>
                     </div>
+
+                    <span className="text-xs font-bold text-slate-200">{formatCurrency(inv.totalAmount)}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
+                    <span>Échéance : {inv.dueDate}</span>
+                    <span className="text-warning-400 font-bold">Attente</span>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        {selectedInvoice && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setSelectedInvoice(null)}>
+            <div className="relative w-full max-w-lg rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-sm font-bold text-slate-200">
+                  {selectedInvoice.invoiceNumber || 'Sans N°'}
+                </h3>
+                <button onClick={() => setSelectedInvoice(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+              </div>
+              <div className="space-y-3 text-xs">
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Client</label>
+                    <span className="text-slate-200 font-bold">{selectedInvoice.clientName}</span>
+                  </div>
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Email</label>
+                    <span className="text-slate-300">{selectedInvoice.clientEmail || '—'}</span>
+                  </div>
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Date d'émission</label>
+                    <span className="text-slate-300">{selectedInvoice.issueDate}</span>
+                  </div>
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Échéance</label>
+                    <span className="text-slate-300">{selectedInvoice.dueDate}</span>
+                  </div>
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Matricule Fiscal</label>
+                    <span className="text-slate-300 font-mono">{selectedInvoice.clientVat || '—'}</span>
+                  </div>
+                  <div>
+                    <label className="text-[10px] text-slate-500 block">Statut</label>
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                      selectedInvoice.status === 'PAID' ? 'bg-accent-500/10 text-accent-400' :
+                      selectedInvoice.status === 'SENT' ? 'bg-warning-500/10 text-warning-400' :
+                      'bg-danger-500/10 text-danger-400'
+                    }`}>
+                      {selectedInvoice.status === 'PAID' ? 'Payée' : selectedInvoice.status === 'SENT' ? 'Envoyée' : 'Retard'}
+                    </span>
+                  </div>
+                </div>
+                <div className="border-t border-slate-700 pt-3">
+                  <label className="text-[10px] text-slate-500 block mb-2">Montants (DT)</label>
+                  <div className="space-y-1.5">
+                    {selectedInvoice.items?.map((item, idx) => (
+                      <div key={idx} className="flex justify-between text-[11px] text-slate-400">
+                        <span>{item.description}</span>
+                        <span>{formatCurrency(item.quantity * item.unitPrice)}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="border-t border-slate-700 mt-2 pt-2 space-y-1">
+                    <div className="flex justify-between text-[11px]">
+                      <span className="text-slate-400">Sous-total HT</span>
+                      <span className="text-slate-300">{formatCurrency(selectedInvoice.subtotal || (selectedInvoice.items || []).reduce((s, it) => s + it.quantity * it.unitPrice, 0))}</span>
+                    </div>
+                    {!!selectedInvoice.vatAmount && (
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-slate-400">TVA</span>
+                        <span className="text-slate-300">{formatCurrency(selectedInvoice.vatAmount)}</span>
+                      </div>
+                    )}
+                    <div className="flex justify-between text-sm font-bold">
+                      <span className="text-slate-200">Total TTC</span>
+                      <span className="text-white">{formatCurrency(selectedInvoice.totalAmount)}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-end mt-6">
+                <button onClick={() => setSelectedInvoice(null)}
+                  className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-[10px] font-bold">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
                     <span className="text-xs font-bold text-slate-200">{formatCurrency(inv.totalAmount)}</span>
                   </div>
                   <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
