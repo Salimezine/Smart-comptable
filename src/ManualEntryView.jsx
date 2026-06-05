@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, Save, BookOpen, Paperclip } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
+import { getJournalKey } from './utils/journalKey';
 import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
 
 const PCG_LIBELLES = {
@@ -67,7 +68,7 @@ export default function ManualEntryView({ formatCurrency }) {
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem('smart_journal');
+      const raw = localStorage.getItem(getJournalKey());
       if (!raw) return;
       const entries = JSON.parse(raw);
       if (!Array.isArray(entries)) return;

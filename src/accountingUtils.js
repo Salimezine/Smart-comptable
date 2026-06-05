@@ -2,6 +2,8 @@
  * Utilitaires de calculs comptables et fiscaux de Penni AI
  */
 
+import { getJournalKey } from './utils/journalKey';
+
 /**
  * Calcule le total des revenus encaissés (factures payées)
  * @param {Array} invoices - Liste des factures
@@ -478,14 +480,13 @@ export const generateSimulatedData = () => {
 };
 
 // ─────────────────────────────────────────────
-// Bilan / Résultat depuis le journal réel
 // ─────────────────────────────────────────────
 
-const JOURNAL_KEY = 'smart_journal';
+const JOURNAL_KEY = () => getJournalKey();
 
 function loadJournal() {
   try {
-    const raw = localStorage.getItem(JOURNAL_KEY);
+    const raw = localStorage.getItem(JOURNAL_KEY());
     return raw ? JSON.parse(raw) : [];
   } catch { return []; }
 }
