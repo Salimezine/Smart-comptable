@@ -61,6 +61,20 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
     });
   };
 
+  const addEditLine = () => {
+    setEditData(prev => ({
+      ...prev,
+      lines: [...prev.lines, { compte: '', libelle: '', debit: null, credit: null }],
+    }));
+  };
+
+  const removeEditLine = (i) => {
+    setEditData(prev => {
+      if (prev.lines.length <= 1) return prev;
+      return { ...prev, lines: prev.lines.filter((_, idx) => idx !== i) };
+    });
+  };
+
   const loadJournal = () => {
     try {
       migrateJournal();
@@ -536,6 +550,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                     <th className="py-2 pr-4">Libellé</th>
                     <th className="py-2 pr-4 text-right w-28">Débit</th>
                     <th className="py-2 pr-4 text-right w-28">Crédit</th>
+                    <th className="py-2 w-8"></th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800/50">
@@ -557,17 +572,30 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                         <input type="number" step="0.001" value={l.credit ?? ''} onChange={e => updateEditLine(i, 'credit', e.target.value === '' ? null : parseFloat(e.target.value))}
                           className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-right text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
                       </td>
+                      <td className="py-1.5">
+                        <button type="button" onClick={() => removeEditLine(i)}
+                          className="text-slate-600 hover:text-danger-400 transition-colors">
+                          <XCircle className="w-3.5 h-3.5" />
+                        </button>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
                 <tfoot>
                   <tr className="border-t border-slate-700 text-xs font-bold">
-                    <td className="py-3 pr-4"></td>
+                    <td className="py-3 pr-4">
+                      <button type="button" onClick={addEditLine}
+                        className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
+                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 5v14M5 12h14"/></svg>
+                        Ajouter une ligne
+                      </button>
+                    </td>
                     <td className={`py-3 pr-4 ${balanced ? 'text-accent-400' : 'text-danger-400'}`}>
                       {balanced ? '✓ Équilibré' : '✗ Déséquilibré — ' + (totalDeb - totalCred).toFixed(3) + ' DT d\'écart'}
                     </td>
                     <td className="py-3 pr-4 text-right text-danger-400">{totalDeb.toFixed(3)} DT</td>
                     <td className="py-3 pr-4 text-right text-accent-400">{totalCred.toFixed(3)} DT</td>
+                    <td></td>
                   </tr>
                 </tfoot>
               </table>
