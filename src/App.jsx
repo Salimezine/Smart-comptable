@@ -3295,17 +3295,6 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
             </div>
           </div>
         )}
-                    <span className="text-xs font-bold text-slate-200">{formatCurrency(inv.totalAmount)}</span>
-                  </div>
-                  <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
-                    <span>Échéance : {inv.dueDate}</span>
-                    <span className="text-warning-400 font-bold">Attente</span>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-        </div>
 
       </div>
     </div>
