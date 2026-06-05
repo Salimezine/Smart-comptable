@@ -515,28 +515,30 @@ export function generateFromJournal() {
   // BILAN
   const cl = (p) => Object.keys(balances).filter(k => k.startsWith(p)).reduce((s, k) => s + solde(k), 0);
 
-  const immobilisationsIncorporelles = Math.max(cl('20'), 0) / 1000;
-  const immobilisationsCorporelles   = Math.max(cl('21') + cl('22') + cl('24') + cl('25'), 0) / 1000;
+  // Actifs non courants (SCT class 2)
+  const immobilisationsIncorporelles = Math.max(cl('21'), 0) / 1000;  // 21 = incorporelles
+  const immobilisationsCorporelles   = Math.max(cl('22') + cl('23') + cl('24') + cl('25') + cl('26'), 0) / 1000;
   const immobilisationsFinancieres   = Math.max(cl('27'), 0) / 1000;
   const stocks                       = Math.max(cl('3'), 0) / 1000;
 
-  // 4X — on sépare par solde
-  const fournisseurs = Math.max(-cl('40'), cl('419') > 0 ? cl('419') : 0, 0) / 1000;
-  const clients      = Math.max(cl('41') - (balances['419']?.credit || 0), 0) / 1000;
-  const etatDebit    = Math.max(cl('43'), 0) / 1000;
-  const etatCredit   = Math.max(-cl('43'), 0) / 1000;
-  const personnelDebit = Math.max(cl('42'), 0) / 1000;
-  const personnelCredit = Math.max(-cl('45'), cl('45') > 0 ? cl('45') : 0, 0) / 1000;
-  const autresCréances = Math.max(cl('409') + cl('47'), 0) / 1000;
-  const autresDettes = Math.max(-cl('44') - cl('46') - cl('48') - cl('49'), 0) / 1000;
+  // Tiers — on sépare par solde
+  const fournisseurs    = Math.max(-cl('40'), 0) / 1000;
+  const clients         = Math.max(cl('41'), 0) / 1000;
+  const etatDebit       = Math.max(cl('43'), 0) / 1000;
+  const etatCredit      = Math.max(-cl('43'), 0) / 1000;
+  const personnelDebit  = Math.max(cl('45'), 0) / 1000;   // 45 = avances (débit)
+  const personnelCredit = Math.max(-cl('42'), 0) / 1000;  // 42 = rémunérations dues (crédit)
+  const autresCréances  = Math.max(cl('409') + cl('47') - cl('472'), 0) / 1000;  // exclut 472 (PCA)
+  const autresDettes    = Math.max(-cl('44') - cl('46') - cl('48') - cl('49'), 0) / 1000;
 
-  const tresorerieActif  = Math.max(cl('51') + cl('53') + cl('54') + cl('5') - (balances['52']?.credit || 0), 0) / 1000;
-  const concoursBancaires = Math.max((balances['52']?.credit || 0) - (balances['52']?.debit || 0), 0) / 1000;
+  const tresorerieActif   = Math.max(cl('5') - cl('52'), 0) / 1000;
+  const concoursBancaires = Math.max(-cl('52'), 0) / 1000;
 
-  const capitalSocial  = Math.max(cl('11'), 0) / 1000;
-  const reserves       = Math.max(cl('12'), 0) / 1000;
-  const emprunts       = Math.max(cl('16') + cl('17'), 0) / 1000;
-  const provisions     = Math.max(cl('15'), 0) / 1000;
+  // Capitaux propres (SCT class 1)
+  const capitalSocial = Math.max(cl('10'), 0) / 1000;  // 10 = capital
+  const reserves      = Math.max(cl('11'), 0) / 1000;  // 11 = primes et réserves
+  const emprunts      = Math.max(cl('16') + cl('17'), 0) / 1000;
+  const provisions    = Math.max(cl('15'), 0) / 1000;
 
   const actifNC  = immobilisationsIncorporelles + immobilisationsCorporelles + immobilisationsFinancieres;
   const actifC   = stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif;

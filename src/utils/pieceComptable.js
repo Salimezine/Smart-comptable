@@ -270,6 +270,9 @@ export function savePieceToJournal(piece, opts = {}) {
     const entries = piece.lignes.map(l => ({
       date: piece.date,
       numeroPiece: piece.id,
+      piece_justificative: piece.piece_justificative || piece.id,
+      fournisseur: piece.fournisseur || '',
+      categorie: piece.categorie || '',
       compte: l.libelleCompte,
       libelle: l.libelle,
       debit: l.debit || null,
@@ -281,7 +284,6 @@ export function savePieceToJournal(piece, opts = {}) {
 
     journal.unshift(...entries);
     localStorage.setItem(getJournalKey(), JSON.stringify(journal));
-
     window.dispatchEvent(new CustomEvent('journal:updated'));
   } catch {
     /* silencieux */
