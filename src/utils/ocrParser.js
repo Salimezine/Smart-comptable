@@ -802,6 +802,23 @@ function detectLignes(text) {
         }
       }
     }
+
+    // General line: "DESIGNATION PU DT [QTY] TOTAL DT"
+    const LIGNE_GEN = /(.{3,60}?)\s+(\d+[.,]\d{3})\s+DT\s+(\d+\s+)?(\d+[.,]\d{3})\s+DT/i;
+    LIGNE_GEN.lastIndex = 0;
+    const eg = LIGNE_GEN.exec(l);
+    if (eg) {
+      const des = eg[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        let prix = normaliserMontant(eg[2]);
+        let total = normaliserMontant(eg[4]);
+        let qte = eg[3] ? parseInt(eg[3].trim()) : 1;
+        if (prix !== null && total !== null && prix > 0 && total > 0) {
+          lignes.push({ designation: des, prix_unitaire: prix, quantite: qte, total: total });
+          continue;
+        }
+      }
+    }
   }
   return lignes;
 }
@@ -1404,6 +1421,31 @@ export function corrigerFacture(parsed, texteOCR) {
     // Alertes pour lignes recap absentes
     if (recap.ht === null && recap.tva === null && recap.ttc === null && recap.timbre === null && recap.fodec === null) {
       out.alertes.push('recap_manquant');
+    }
+
+    // ── Fallback: HT/TVA manquants → dériver des lignes article + TTC ──
+    if ((recap.ht === null || recap.tva === null) && out.total_ttc > 0 && lignes.length > 0) {
+      const sumHT = lignes.reduce((s, l) => s + (l.total || l.prix_unitaire || 0), 0);
+      if (sumHT > 0) {
+        if (recap.ht === null) {
+          out.sous_total_ht = parseFloat(sumHT.toFixed(3));
+          out.notes.push('HT dérivé des lignes article : ' + out.sous_total_ht.toFixed(3));
+        }
+        if (recap.tva === null) {
+          const tvaDerivee = out.total_ttc - out.sous_total_ht - (out.timbre || 0) - (out.fodec || 0);
+          if (tvaDerivee > -0.010 && tvaDerivee < out.total_ttc) {
+            out.montant_tva = Math.round(Math.max(0, tvaDerivee) * 1000) / 1000;
+            out.notes.push('TVA dérivée : TTC - HT - Timbre = ' + out.montant_tva.toFixed(3));
+          }
+        }
+        if (out.sous_total_ht > 0 && out.montant_tva > 0) {
+          const pct = Math.round(out.montant_tva / out.sous_total_ht * 100);
+          if ([0, 7, 13, 19].includes(pct)) {
+            out.taux_tva = pct + '%';
+            out.notes.push('Taux TVA dérivé : ' + out.taux_tva);
+          }
+        }
+      }
     }
 
     // ═══════════════════════════════════════════

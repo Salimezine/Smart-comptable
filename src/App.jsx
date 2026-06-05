@@ -572,7 +572,7 @@ export default function App() {
       )}
 
       {/* Sidebar - off-canvas on mobile */}
-      <aside className={`w-72 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-40 transition-transform duration-300 ease-in-out lg:translate-x-0 ${
+      <aside className={`w-72 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-40 transition-transform duration-300 ease-in-out lg:translate-x-0 overflow-y-auto ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       } fixed lg:static inset-y-0 left-0`}>
         <div>
@@ -2113,7 +2113,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       matriculeFiscal: c.matricule_fiscal || '',
       date: c.date ? c.date.split('/').reverse().join('-') : new Date().toISOString().split('T')[0],
       subtotal: fmt(c.sous_total_ht),
-      vatRate: c.taux_tva || '19',
+      vatRate: (c.taux_tva || '19').replace('%', ''),
       fodec: fmt(c.fodec),
       vatAmount: fmt(c.montant_tva),
       stampDuty: fmt(c.timbre),
@@ -2141,6 +2141,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setOcrProgress(0);
     setOcrError('');
     setOcrStatus('');
+    setPurchaseError('');
     setIsAiScan(true);
     setMode('scanning');
 
@@ -2223,7 +2224,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     if (!ocrRawText && !formData.supplier) return null;
     try {
       const raw = ocrRawText || '';
-      const corrige = raw.trim().length > 10 ? corrigerFacture({}, raw) : {
+      const useCorriger = raw.trim().length > 10;
+      const corrige = useCorriger ? corrigerFacture({}, raw) : {
         fournisseur: formData.supplier,
         matricule_fiscal: formData.matriculeFiscal,
         date: formData.date ? formData.date.split('-').reverse().join('/') : '',
@@ -2240,6 +2242,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         notes: [],
         lignes: [],
       };
+      console.log('runJournalPipeline corrige:', JSON.stringify(corrige, null, 2));
       const piece = journalComptable(corrige, {
         type: typeJustificatif === 'achat' ? 'achat' : 'vente',
         fournisseurNom: formData.supplier || 'Fournisseur',
