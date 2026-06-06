@@ -1,12 +1,525 @@
+import { getJournalKey } from './utils/journalKey';
+import { generateFromJournal, generateBalanceSheet, generateIncomeStatement, calculateFinancialRatios } from './accountingUtils';
 import { detectAnomaly, getLearningStats } from './learningEngine';
-import { generateBalanceSheet, generateIncomeStatement, calculateFinancialRatios } from './accountingUtils';
 
 const fmt = (val) => {
   if (val == null || isNaN(val)) return '0,000 DT';
   return val.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) + ' DT';
 };
 
+const fmtPct = (v) => (v * 100).toFixed(1) + '%';
+
 const tvaRates = [19, 13, 7, 0];
+
+function loadJournal() {
+  try {
+    const key = getJournalKey();
+    const raw = localStorage.getItem(key);
+    if (!raw) return [];
+    const data = JSON.parse(raw);
+    return Array.isArray(data) ? data : [];
+  } catch { return []; }
+}
+
+// ─────────────────────────────────────────────
+//  Journal-based audit
+// ─────────────────────────────────────────────
+export const runJournalAudit = ({ companyDetails } = {}) => {
+  const journal = loadJournal();
+  const checks = [];
+
+  // Compute aggregates from journal
+  const totalDebit = journal.reduce((s, e) => s + (e.debit || 0), 0);
+  const totalCredit = journal.reduce((s, e) => s + (e.credit || 0), 0);
+  const entriesCount = journal.length;
+
+  const tvaCollected = journal.filter(e => e.compte && e.compte.startsWith('43671')).reduce((s, e) => s + (e.credit || 0), 0);
+  const tvaDeductible = journal.filter(e => e.compte && e.compte.startsWith('43666')).reduce((s, e) => s + (e.debit || 0), 0);
+  const tvaDue = Math.max(0, tvaCollected - tvaDeductible);
+
+  const rsCredit = journal.filter(e => e.compte && e.compte.startsWith('43674')).reduce((s, e) => s + (e.credit || 0), 0);
+  const rsDebit = journal.filter(e => e.compte && e.compte.startsWith('43674')).reduce((s, e) => s + (e.debit || 0), 0);
+  const rsSolde = rsCredit - rsDebit;
+
+  const is631 = journal.filter(e => e.compte && e.compte.startsWith('631000')).reduce((s, e) => s + (e.debit || 0), 0);
+  const is437 = journal.filter(e => e.compte && e.compte.startsWith('437000')).reduce((s, e) => s + (e.credit || 0), 0);
+
+  const payrollBrut = journal.filter(e => e.compte && e.compte.startsWith('6411')).reduce((s, e) => s + (e.debit || 0), 0);
+  const payrollCnssPat = journal.filter(e => e.compte && e.compte.startsWith('6431')).reduce((s, e) => s + (e.debit || 0), 0);
+  const payrollCP = journal.filter(e => e.compte && e.compte.startsWith('6412')).reduce((s, e) => s + (e.debit || 0), 0);
+
+  const bankEntries = journal.filter(e => e.compte && e.compte.startsWith('532'));
+  const bankDebitTotal = bankEntries.reduce((s, e) => s + (e.debit || 0), 0);
+  const bankCreditTotal = bankEntries.reduce((s, e) => s + (e.credit || 0), 0);
+
+  const lockedCount = journal.filter(e => e.locked === true).length;
+  const pieceIds = journal.map(e => e.numeroPiece).filter(Boolean);
+  const uniquePieces = new Set(pieceIds);
+  const duplicatePieces = pieceIds.length - uniquePieces.size;
+
+  // Compute balanced entry checks
+  const piecesMap = new Map();
+  for (const e of journal) {
+    const pid = e.numeroPiece || 'sans_piece';
+    if (!piecesMap.has(pid)) piecesMap.set(pid, []);
+    piecesMap.get(pid).push(e);
+  }
+  let unbalancedCount = 0;
+  let unbalancedDetails = [];
+  for (const [pid, lignes] of piecesMap) {
+    const d = lignes.reduce((s, l) => s + (l.debit || 0), 0);
+    const c = lignes.reduce((s, l) => s + (l.credit || 0), 0);
+    if (Math.abs(d - c) > 0.001) {
+      unbalancedCount++;
+      if (unbalancedDetails.length < 5) unbalancedDetails.push(pid);
+    }
+  }
+
+  const result = generateFromJournal();
+  const bilan = result?.bilan ?? {};
+  const resultat = result?.resultat ?? {};
+  const ratios = result?.ratios ?? {};
+  const currentAssets = bilan?.assets?.current?.total || 0;
+  const currentLiabilities = bilan?.liabilities?.current?.total || 0;
+  const equity = bilan?.equity?.total || 0;
+  const totalLiabilities = bilan?.liabilities?.total || 0;
+  const totalAssets = bilan?.assets?.total || 0;
+  const totalLiabEq = bilan?.totalLiabilitiesAndEquity || 0;
+  const revenue = resultat?.chiffreAffaires || resultat?.productionVendue || 0;
+  const netResult = resultat?.resultatNet || 0;
+
+  // Helper to push a check
+  const addCheck = (id, category, label, status, detail, value) => {
+    checks.push({ id, category, label, status, detail, value });
+  };
+
+  // ── 1. Volume d'écritures ──
+  addCheck('journal-volume', 'Journal',
+    'Volume d\'écritures comptables',
+    entriesCount >= 5 ? 'pass' : entriesCount >= 1 ? 'warn' : 'fail',
+    `${entriesCount} écriture(s) dans le journal`,
+    entriesCount);
+
+  // ── 2. TVA collectée vs déductible ──
+  addCheck('tva-compliance', 'TVA',
+    'Conformité TVA — Collecte vs Déduction',
+    tvaDue > 0 && tvaDue < (tvaCollected || 1) * 1.5 ? 'pass' : tvaDue === 0 && tvaCollected > 0 ? 'warn' : tvaCollected > 0 ? 'pass' : 'info',
+    `TVA collectée (43671) : ${fmt(tvaCollected)} | TVA déductible (43666) : ${fmt(tvaDeductible)} | TVA due : ${fmt(tvaDue)}`,
+    tvaDue);
+
+  // ── 3. Déclaration TVA ──
+  const hasTvaEntries = tvaCollected > 0 || tvaDeductible > 0;
+  addCheck('tva-declaration', 'TVA',
+    'Déclaration TVA périodique',
+    hasTvaEntries ? 'pass' : 'info',
+    hasTvaEntries ? 'Comptes TVA (43671/43666) utilisés' : 'Aucune écriture TVA détectée',
+    hasTvaEntries ? 100 : 0);
+
+  // ── 4. Taux TVA conformes ──
+  const tvaAccounts = journal.filter(e => e.compte && (e.compte.startsWith('43671') || e.compte.startsWith('43666')));
+  addCheck('tva-rates', 'TVA',
+    'Taux TVA — Comptes conformes',
+    tvaAccounts.length > 0 ? 'pass' : 'info',
+    `${tvaAccounts.length} écriture(s) sur comptes TVA`,
+    tvaAccounts.length);
+
+  // ── 5. RS (Retenue à la source) ──
+  addCheck('retenue-source', 'RS',
+    'Retenue à la Source (43674)',
+    rsSolde > 0 ? 'pass' : rsCredit > 0 ? 'pass' : 'info',
+    `RS débit: ${fmt(rsDebit)} | RS crédit: ${fmt(rsCredit)} | Solde: ${fmt(rsSolde)}`,
+    rsSolde);
+
+  // ── 6. Provision IS ──
+  addCheck('is-provision', 'IS',
+    'Provision IS (631000 / 437000)',
+    is631 > 0 && is437 > 0 ? 'pass' : is631 > 0 || is437 > 0 ? 'warn' : netResult > 0 ? 'warn' : 'info',
+    `631000 (débit): ${fmt(is631)} | 437000 (crédit): ${fmt(is437)} | Résultat net: ${fmt(netResult)}`,
+    is631);
+
+  // ── 7. Équilibre du bilan ──
+  const bilanBalanced = Math.abs(totalAssets - totalLiabEq) < 0.01;
+  addCheck('balance-check', 'Bilan',
+    'Équilibre du Bilan (Actif = Passif + CP)',
+    bilanBalanced ? 'pass' : 'fail',
+    bilanBalanced
+      ? `Actif ${fmt(totalAssets)} = Passif + CP ${fmt(totalLiabEq)}`
+      : `Écart: ${fmt(Math.abs(totalAssets - totalLiabEq))}`,
+    bilanBalanced ? 100 : 0);
+
+  // ── 8. Pièces équilibrées ──
+  addCheck('balanced-entries', 'Journal',
+    'Pièces comptables équilibrées',
+    unbalancedCount === 0 ? 'pass' : unbalancedCount <= 2 ? 'warn' : 'fail',
+    `${unbalancedCount} pièce(s) non équilibrée(s)${unbalancedDetails.length ? ' : ' + unbalancedDetails.join(', ') : ''}`,
+    unbalancedCount);
+
+  // ── 9. Pièces en double ──
+  addCheck('duplicate-pieces', 'Journal',
+    'Doublons de pièces comptables',
+    duplicatePieces === 0 ? 'pass' : 'warn',
+    `${duplicatePieces} N° pièce(s) en double`,
+    duplicatePieces);
+
+  // ── 10. Écritures verrouillées ──
+  const lockPct = entriesCount > 0 ? lockedCount / entriesCount : 0;
+  addCheck('locked-entries', 'Journal',
+    'Écritures verrouillées',
+    lockPct >= 0.8 ? 'pass' : lockPct >= 0.5 ? 'warn' : 'fail',
+    `${lockedCount}/${entriesCount} verrouillées (${fmtPct(lockPct)})`,
+    lockPct);
+
+  // ── 11. Paie — écritures salaires ──
+  addCheck('payroll-entries', 'Paie',
+    'Écritures de paie (6411)',
+    payrollBrut > 0 ? 'pass' : 'info',
+    `Salaire brut comptabilisé: ${fmt(payrollBrut)}`,
+    payrollBrut);
+
+  // ── 12. Paie — CNSS patronale ──
+  addCheck('payroll-cnss', 'Paie',
+    'CNSS patronale (6431)',
+    payrollCnssPat > 0 ? 'pass' : payrollBrut > 0 ? 'warn' : 'info',
+    `CNSS patronale: ${fmt(payrollCnssPat)}`,
+    payrollCnssPat);
+
+  // ── 13. Paie — Provision CP ──
+  addCheck('payroll-cp', 'Paie',
+    'Provision congés payés (6412)',
+    payrollCP > 0 ? 'pass' : payrollBrut > 0 ? 'warn' : 'info',
+    `Provision CP: ${fmt(payrollCP)}`,
+    payrollCP);
+
+  // ── 14. Compte banque ──
+  const bankNet = bankDebitTotal - bankCreditTotal;
+  addCheck('bank-account', 'Trésorerie',
+    'Solde compte Banque (532)',
+    bankEntries.length > 0 ? 'pass' : 'info',
+    `${bankEntries.length} écriture(s) · Solde: ${fmt(bankNet)}`,
+    bankNet);
+
+  // ── 15. Ratio de liquidité ──
+  const liqRatio = currentLiabilities > 0 ? currentAssets / currentLiabilities : 0;
+  addCheck('liquidity-ratio', 'Ratios',
+    'Ratio de liquidité générale',
+    liqRatio >= 1.2 ? 'pass' : liqRatio >= 0.8 ? 'warn' : 'fail',
+    `Ratio: ${liqRatio.toFixed(2)}x (seuil ≥ 1.2)`,
+    liqRatio);
+
+  // ── 16. Ratio d'endettement ──
+  const debtRatio = equity > 0 ? totalLiabilities / equity : 0;
+  addCheck('debt-equity', 'Ratios',
+    'Ratio d\'endettement',
+    debtRatio <= 1.5 ? 'pass' : debtRatio <= 2.5 ? 'warn' : 'fail',
+    `Ratio: ${debtRatio.toFixed(2)}x (seuil ≤ 1.5)`,
+    debtRatio);
+
+  // ── 17. Marge nette ──
+  const margin = revenue > 0 ? (netResult / revenue) * 100 : 0;
+  addCheck('operating-margin', 'Ratios',
+    'Marge nette',
+    margin >= 10 ? 'pass' : margin >= 3 ? 'warn' : revenue > 0 ? 'warn' : 'info',
+    `Marge: ${margin.toFixed(1)}% (seuil ≥ 10%)`,
+    margin);
+
+  // ── 18. Résultat net ──
+  addCheck('net-result', 'Résultat',
+    'Résultat net de l\'exercice',
+    netResult > 0 ? 'pass' : netResult === 0 ? 'info' : 'warn',
+    `Résultat net: ${fmt(netResult)}`,
+    netResult);
+
+  // ── 19. Chronologie des dates ──
+  const dates = journal.map(e => e.date).filter(Boolean).sort();
+  let dateIssues = 0;
+  try {
+    const now = new Date();
+    for (const d of dates) {
+      if (new Date(d) > now) dateIssues++;
+    }
+  } catch {}
+  addCheck('date-chronology', 'Journal',
+    'Dates chronologiques (aucune date future)',
+    dateIssues === 0 ? 'pass' : 'warn',
+    dateIssues > 0 ? `${dateIssues} écriture(s) avec date future` : `${dates.length} écriture(s) avec dates valides`,
+    dateIssues);
+
+  // ── 20. Comptes PCG couverts ──
+  const usedPrefixes = new Set(journal.map(e => (e.compte || '').substring(0, 2)).filter(Boolean));
+  const expectedPrefixes = ['1', '2', '3', '4', '5', '6', '7'];
+  const missingClasses = expectedPrefixes.filter(p => ![...usedPrefixes].some(u => u.startsWith(p)));
+  const coveragePct = Math.round((1 - missingClasses.length / expectedPrefixes.length) * 100);
+  addCheck('sce-mapping', 'SCE',
+    'Couverture classes comptables (1-7)',
+    missingClasses.length <= 1 ? 'pass' : missingClasses.length <= 2 ? 'warn' : 'fail',
+    `${coveragePct}% couvert · Classes manquantes: ${missingClasses.join(', ') || 'aucune'}`,
+    coveragePct);
+
+  // ── 21. Revenus vs charges ──
+  const class7 = journal.filter(e => (e.compte || '').startsWith('7'));
+  const class6 = journal.filter(e => (e.compte || '').startsWith('6'));
+  const totalProd = class7.reduce((s, e) => s + (e.credit || 0), 0) + class7.reduce((s, e) => s + (e.debit || 0), 0);
+  const totalCharges = class6.reduce((s, e) => s + (e.debit || 0), 0) + class6.reduce((s, e) => s + (e.credit || 0), 0);
+  addCheck('income-vs-expenses', 'Résultat',
+    'Produits vs Charges (classes 6 & 7)',
+    totalProd > 0 || totalCharges > 0 ? 'pass' : 'info',
+    `Produits: ${fmt(totalProd)} | Charges: ${fmt(totalCharges)}`,
+    totalProd);
+
+  // ── 22. Fournisseurs / Clients ──
+  const fournisseurs = journal.filter(e => e.compte && e.compte.startsWith('401'));
+  const clients = journal.filter(e => e.compte && e.compte.startsWith('411'));
+  addCheck('clients-fournisseurs', 'Bilan',
+    'Comptes Clients (411) & Fournisseurs (401)',
+    fournisseurs.length > 0 || clients.length > 0 ? 'pass' : 'info',
+    `Fournisseurs: ${fournisseurs.length} écrit. | Clients: ${clients.length} écrit.`,
+    fournisseurs.length + clients.length);
+
+  // ── 23. Actifs immobilisés ──
+  const immobilisations = journal.filter(e => e.compte && (e.compte.startsWith('20') || e.compte.startsWith('21') || e.compte.startsWith('22') || e.compte.startsWith('23')));
+  addCheck('fixed-assets', 'Bilan',
+    'Actifs immobilisés (20-23)',
+    immobilisations.length > 0 ? 'pass' : 'info',
+    `${immobilisations.length} écriture(s) d'immobilisation`,
+    immobilisations.length);
+
+  // ── 24. Amortissements ──
+  const amortissements = journal.filter(e => e.compte && e.compte.startsWith('28'));
+  const dotations = journal.filter(e => e.compte && (e.compte.startsWith('681') || e.compte.startsWith('682')));
+  addCheck('amortissements', 'Bilan',
+    'Amortissements (28) & Dotations (681/682)',
+    amortissements.length > 0 || dotations.length > 0 ? 'pass' : 'info',
+    `Amortissements: ${amortissements.length} écrit. | Dotations: ${dotations.length} écrit.`,
+    amortissements.length + dotations.length);
+
+  // ── 25. Provisions ──
+  const provisions = journal.filter(e => e.compte && (e.compte.startsWith('29') || e.compte.startsWith('39') || e.compte.startsWith('49') || e.compte.startsWith('59')));
+  addCheck('provisions', 'Bilan',
+    'Provisions pour dépréciation (29/39/49/59)',
+    provisions.length > 0 ? 'pass' : 'info',
+    `${provisions.length} écriture(s) de provision`,
+    provisions.length);
+
+  // ── 26. Capitaux propres ──
+  const capital = journal.filter(e => e.compte && e.compte.startsWith('101')).reduce((s, e) => s + (e.credit || 0) - (e.debit || 0), 0);
+  addCheck('share-capital', 'Bilan',
+    'Capital social (101)',
+    capital > 0 ? 'pass' : 'info',
+    `Capital social: ${fmt(capital)}`,
+    capital);
+
+  // ── 27. Paie — virement bancaire ──
+  const paiementNet = journal.filter(e => e.libelle && e.libelle.toLowerCase().includes('paiement net'));
+  addCheck('payroll-payment', 'Paie',
+    'Virement salaires (paiement net)',
+    paiementNet.length > 0 ? 'pass' : payrollBrut > 0 ? 'warn' : 'info',
+    `${paiementNet.length} virement(s) salaires`,
+    paiementNet.length);
+
+  // ── 28. Paie — paiement CNSS ──
+  const paiementCnss = journal.filter(e => e.libelle && e.libelle.toLowerCase().includes('paiement cnss'));
+  addCheck('payroll-cnss-payment', 'Paie',
+    'Paiement CNSS',
+    paiementCnss.length > 0 ? 'pass' : payrollCnssPat > 0 ? 'warn' : 'info',
+    `${paiementCnss.length} paiement(s) CNSS`,
+    paiementCnss.length);
+
+  // ── 29. Paie — paiement IRPP ──
+  const paiementIrpp = journal.filter(e => e.libelle && e.libelle.toLowerCase().includes('paiement irpp'));
+  addCheck('payroll-irpp-payment', 'Paie',
+    'Paiement IRPP/RS',
+    paiementIrpp.length > 0 ? 'pass' : rsSolde > 0 ? 'warn' : 'info',
+    `${paiementIrpp.length} paiement(s) IRPP`,
+    paiementIrpp.length);
+
+  // ── 30. Total débit = total crédit ──
+  const journalBalanced = Math.abs(totalDebit - totalCredit) < 0.01;
+  addCheck('journal-balance', 'Journal',
+    'Total Débit = Total Crédit',
+    journalBalanced ? 'pass' : 'fail',
+    `Débit: ${fmt(totalDebit)} | Crédit: ${fmt(totalCredit)} | Écart: ${fmt(Math.abs(totalDebit - totalCredit))}`,
+    Math.abs(totalDebit - totalCredit));
+
+  // ── 31. Réserves légales ──
+  const reserveLegale = journal.filter(e => e.compte && e.compte.startsWith('102')).reduce((s, e) => s + (e.credit || 0) - (e.debit || 0), 0);
+  addCheck('legal-reserve', 'Bilan',
+    'Réserves légales (102)',
+    reserveLegale > 0 ? 'pass' : capital > 0 ? 'warn' : 'info',
+    `Réserves légales: ${fmt(reserveLegale)}`,
+    reserveLegale);
+
+  // ── 32. Résultat reporté ──
+  const resultatReporte = journal.filter(e => e.compte && e.compte.startsWith('12')).reduce((s, e) => s + (e.credit || 0) - (e.debit || 0), 0);
+  addCheck('retained-earnings', 'Bilan',
+    'Résultats reportés (12)',
+    resultatReporte !== 0 ? 'pass' : 'info',
+    `Résultats reportés: ${fmt(resultatReporte)}`,
+    resultatReporte);
+
+  // ── 33. Timbre fiscal sur ventes ──
+  const timbreEntries = journal.filter(e => e.compte && e.compte.startsWith('43675'));
+  addCheck('timbre-fiscal', 'TVA',
+    'Timbre fiscal (43675)',
+    timbreEntries.length > 0 ? 'pass' : 'info',
+    `${timbreEntries.length} écriture(s) de timbre fiscal`,
+    timbreEntries.length);
+
+  // ── 34. Écritures sans N° pièce ──
+  const sansPiece = journal.filter(e => !e.numeroPiece);
+  addCheck('missing-piece-num', 'Journal',
+    'Écritures sans N° pièce',
+    sansPiece.length === 0 ? 'pass' : sansPiece.length <= 3 ? 'warn' : 'fail',
+    `${sansPiece.length} écriture(s) sans numéro de pièce`,
+    sansPiece.length);
+
+  // ── 35. Écritures avec montant nul ──
+  const nulMontant = journal.filter(e => e.debit === 0 && e.credit === 0);
+  addCheck('zero-amount-entries', 'Journal',
+    'Écritures avec montant nul',
+    nulMontant.length === 0 ? 'pass' : 'warn',
+    `${nulMontant.length} écriture(s) sans montant`,
+    nulMontant.length);
+
+  // ── Score calculation ──
+  const weights = {};
+  const defaultWeight = 1;
+  checks.forEach(c => { weights[c.id] = weights[c.id] || defaultWeight; });
+  weights['tva-compliance'] = 3;
+  weights['balance-check'] = 3;
+  weights['balanced-entries'] = 2;
+  weights['journal-balance'] = 3;
+  weights['is-provision'] = 2;
+  weights['retenue-source'] = 2;
+  weights['tva-declaration'] = 2;
+  weights['liquidity-ratio'] = 1.5;
+  weights['debt-equity'] = 1.5;
+  weights['locked-entries'] = 1.5;
+  weights['duplicate-pieces'] = 1.5;
+  weights['operating-margin'] = 1;
+  weights['missing-piece-num'] = 1;
+  weights['zero-amount-entries'] = 1;
+
+  const scoreMap = { pass: 100, warn: 50, info: 75, fail: 0 };
+  let totalWeight = 0;
+  let weightedScore = 0;
+  checks.forEach(c => {
+    const w = weights[c.id] || 1;
+    totalWeight += w;
+    weightedScore += w * (scoreMap[c.status] || 0);
+  });
+  const auditScore = totalWeight > 0 ? Math.round(weightedScore / totalWeight) : 0;
+
+  const passed = checks.filter(c => c.status === 'pass').length;
+  const warned = checks.filter(c => c.status === 'warn').length;
+  const failed = checks.filter(c => c.status === 'fail').length;
+
+  const recommendations = [];
+  checks.filter(c => c.status === 'fail' || c.status === 'warn').forEach(c => {
+    if (c.id === 'tva-compliance') recommendations.push('Rapprochez vos déclarations TVA. TVA collectée (43671) et déductible (43666) doivent être déclarées mensuellement.');
+    if (c.id === 'balance-check') recommendations.push('Le bilan doit être équilibré. Vérifiez les montants saisis dans les écritures.');
+    if (c.id === 'balanced-entries' || c.id === 'journal-balance') recommendations.push('Toute pièce comptable doit être équilibrée (total débit = total crédit). Corrigez les écritures non équilibrées.');
+    if (c.id === 'is-provision' && netResult > 0) recommendations.push('Provisionnez l\'IS (15%) via 631000/437000 depuis la vue Déclaration Fiscale.');
+    if (c.id === 'retenue-source') recommendations.push('Comptabilisez la retenue à la source (43674) sur les prestations de services.');
+    if (c.id === 'locked-entries') recommendations.push('Verrouillez les écritures validées pour éviter les modifications non contrôlées.');
+    if (c.id === 'duplicate-pieces') recommendations.push('Évitez les doublons de N° de pièce. Supprimez ou renumérotez les pièces en double.');
+    if (c.id === 'missing-piece-num') recommendations.push('Attribuez un N° de pièce à chaque écriture pour assurer la traçabilité.');
+    if (c.id === 'zero-amount-entries') recommendations.push('Supprimez les écritures sans montant (débit=0 et crédit=0).');
+    if (c.id === 'liquidity-ratio') recommendations.push('Améliorez le ratio de liquidité en réduisant les dettes CT ou augmentant les actifs courants.');
+    if (c.id === 'debt-equity') recommendations.push('Réduisez l\'endettement ou augmentez les capitaux propres.');
+    if (c.id === 'operating-margin') recommendations.push('La marge nette est faible. Optimisez les charges ou augmentez le chiffre d\'affaires.');
+    if (c.id === 'payroll-entries' && c.status === 'info' && payrollBrut === 0) {
+      // Only suggest if there's indication payroll should exist
+    }
+    if (c.id === 'legal-reserve') recommendations.push('Constituer la réserve légale (5% du résultat) au compte 102.');
+    if (c.id === 'timbre-fiscal') recommendations.push('Appliquez le timbre fiscal (43675) sur les factures de vente.');
+    if (c.id === 'date-chronology') recommendations.push('Les dates d\'écritures ne doivent pas être dans le futur.');
+    if (c.id.startsWith('payroll-') && c.status === 'warn') recommendations.push('Comptabilisez les écritures de paie (salaires, CNSS, virement) pour une comptabilité complète.');
+  });
+
+  if (auditScore >= 80) recommendations.push('Excellent niveau de conformité comptable. Continuez à tenir vos écritures à jour.');
+  else if (auditScore >= 60) recommendations.push('Niveau de conformité acceptable. Quelques points d\'attention à corriger.');
+  else recommendations.push('Plusieurs non-conformités détectées. Consultez un expert-comptable agréé OECT.');
+
+  return {
+    score: auditScore,
+    summary: { total: checks.length, passed, warned, failed },
+    checks,
+    recommendations,
+    stats: {
+      entriesCount,
+      lockedCount,
+      unbalancedCount,
+      duplicatePieces,
+      tvaCollected,
+      tvaDeductible,
+      tvaDue,
+      rsSolde,
+      isProvision: is631,
+      payrollBrut,
+      totalDebit,
+      totalCredit,
+    },
+    companyName: companyDetails?.name || 'Société',
+    date: new Date().toISOString().split('T')[0]
+  };
+};
+
+export const generateAuditMarkdown = (auditResult) => {
+  const { score, summary, checks, recommendations, stats, companyName, date } = auditResult;
+  const grade = score >= 80 ? '🟢' : score >= 60 ? '🟡' : '🔴';
+  const gradeLabel = score >= 80 ? 'Excellent' : score >= 60 ? 'Acceptable' : 'Critique';
+
+  let md = `## Rapport d'Audit Smart-Comptable\n\n`;
+  md += `**Société :** ${companyName}  \n`;
+  md += `**Date :** ${date}  \n`;
+  md += `**Score global :** ${grade} **${score}/100** — ${gradeLabel}\n\n`;
+
+  if (stats) {
+    md += `### Statistiques du journal\n\n`;
+    md += `- Écritures : **${stats.entriesCount}** (dont ${stats.lockedCount} verrouillées)\n`;
+    md += `- Total Débit : **${stats.totalDebit?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+    md += `- Total Crédit : **${stats.totalCredit?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+
+    if (stats.tvaCollected > 0 || stats.tvaDeductible > 0) {
+      md += `- TVA collectée : **${stats.tvaCollected?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+      md += `- TVA déductible : **${stats.tvaDeductible?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+    }
+    if (stats.rsSolde) md += `- RS (43674) : **${stats.rsSolde?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+    if (stats.isProvision) md += `- IS provisionné : **${stats.isProvision?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+    if (stats.payrollBrut) md += `- Masse salariale : **${stats.payrollBrut?.toLocaleString('fr-TN', { minimumFractionDigits: 3 })} DT**\n`;
+    md += `\n`;
+  }
+
+  md += `### Résumé\n\n`;
+  md += `- ✅ **${summary.passed}** conformes\n`;
+  md += `- ⚠️ **${summary.warned}** avertissements\n`;
+  md += `- ❌ **${summary.failed}** non-conformités\n\n`;
+
+  md += `### Détail des contrôles\n\n`;
+  md += `| # | Catégorie | Contrôle | Statut | Détail |\n`;
+  md += `|---|----------|----------|--------|-------|\n`;
+  checks.forEach((c, i) => {
+    const icon = c.status === 'pass' ? '✅' : c.status === 'warn' ? '⚠️' : c.status === 'fail' ? '❌' : 'ℹ️';
+    const detail = (c.detail || '').replace(/\|/g, '&#124;').replace(/\n/g, ' · ').trim();
+    const label = (c.label || '').replace(/\|/g, '&#124;');
+    const category = (c.category || '').replace(/\|/g, '&#124;');
+    md += `| ${i + 1} | ${category} | ${label} | ${icon} | ${detail} |\n`;
+  });
+  md += `\n`;
+
+  if (recommendations.length > 0) {
+    md += `### Recommandations\n\n`;
+    recommendations.forEach(r => { md += `- ${r}\n`; });
+  }
+
+  md += `\n---\n`;
+  md += `_Rapport généré par Smart-Comptable — Audit basé sur le journal comptable. Validez avec un expert-comptable OECT._`;
+  return md;
+};
+
+// ─────────────────────────────────────────────
+// Legacy audit (old data model)
+// ─────────────────────────────────────────────
 
 export const runFullAudit = ({ invoices, expenses, transactions, companyDetails }) => {
   const checks = [];
@@ -18,7 +531,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
   const pendingRevenue = invoices.filter(i => i.status === 'PENDING').reduce((s, i) => s + (parseFloat(i.totalAmount) || 0), 0);
   const bankBalance = paidRevenue - totalExpenses;
 
-  // 1. TVA collected vs deducted
   const tvaCollected = invoices.reduce((s, inv) => {
     const items = inv.items || [];
     return s + items.reduce((si, item) => si + ((item.unitPrice || 0) * (item.vatRate || 0) / 100), 0);
@@ -38,9 +550,7 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: tvaDue
   });
 
-  // 2. IS (Impôt sur les Sociétés) provision
   const estimatedIS = netProfit > 0 ? Math.round(netProfit * 0.15 * 1000) / 1000 : 0;
-  const isRate = netProfit > 0 ? (estimatedIS / netProfit) * 100 : 0;
   checks.push({
     id: 'is-provision',
     category: 'IS',
@@ -50,7 +560,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: estimatedIS
   });
 
-  // 3. CNSS provision
   const payrollBase = Math.max(totalExpenses * 0.35, 4500);
   const cnssRate = 0.1657;
   const estimatedCNSS = payrollBase * cnssRate;
@@ -63,7 +572,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: estimatedCNSS
   });
 
-  // 4. Timbre Fiscal compliance
   const invoicesWithoutStamp = invoices.filter(inv => !inv.stampDuty || inv.stampDuty === 0);
   const stampPct = invoices.length > 0 ? ((invoices.length - invoicesWithoutStamp.length) / invoices.length) * 100 : 0;
   checks.push({
@@ -75,9 +583,8 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: stampPct
   });
 
-  // 5. Retenue à la Source (RS) on service expenses
   const serviceExpenses = expenses.filter(exp => /service|prestation|honoraire|conseil|commission/i.test(exp.category || ''));
-  const rsApplied = serviceExpenses.filter(exp => exp.retenueSource && exp.retenueSource > 0);
+  const rsApplied = serviceExpenses.filter(exp => (exp.rsAmount || exp.retenueSource) > 0);
   const rsPct = serviceExpenses.length > 0 ? (rsApplied.length / serviceExpenses.length) * 100 : 100;
   checks.push({
     id: 'retenue-source',
@@ -88,7 +595,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: rsPct
   });
 
-  // 6. Missing MF (Matricule Fiscal)
   const missingMf = expenses.filter(exp => !exp.matriculeFiscal || exp.matriculeFiscal.trim() === '');
   const mfPct = expenses.length > 0 ? (missingMf.length / expenses.length) * 100 : 0;
   checks.push({
@@ -100,7 +606,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: mfPct
   });
 
-  // 7. Bank Reconciliation
   const unreconciled = transactions.filter(t => t.status === 'UNRECONCILED').length;
   const totalTx = transactions.length;
   const recPct = totalTx > 0 ? ((totalTx - unreconciled) / totalTx) * 100 : 100;
@@ -113,7 +618,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: recPct
   });
 
-  // 8. Liquidity Ratio (Current Ratio)
   const balanceSheet = generateBalanceSheet(invoices, expenses, transactions);
   const currentAssets = balanceSheet.assets.current.total;
   const currentLiabilities = balanceSheet.liabilities.current.total;
@@ -127,7 +631,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: currentRatio
   });
 
-  // 9. Debt-to-Equity Ratio
   const totalLiabilities = balanceSheet.liabilities.total;
   const equity = balanceSheet.equity.total;
   const debtEquity = equity > 0 ? totalLiabilities / equity : 0;
@@ -140,7 +643,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: debtEquity
   });
 
-  // 10. Operating Margin
   const margin = totalRevenue > 0 ? (netProfit / totalRevenue) * 100 : 0;
   checks.push({
     id: 'operating-margin',
@@ -151,7 +653,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: margin
   });
 
-  // 11. Anomalies (from learning engine)
   let anomalyCount = 0;
   const anomalyDetails = [];
   expenses.forEach(exp => {
@@ -172,7 +673,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: anomalyCount
   });
 
-  // 12. Balance Sheet Balance Check
   const totalAssets = balanceSheet.assets.total;
   const totalLiabilitiesEquity = balanceSheet.totalLiabilitiesAndEquity;
   const balanced = Math.abs(totalAssets - totalLiabilitiesEquity) < 0.01;
@@ -187,7 +687,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: balanced ? 100 : 0
   });
 
-  // 13. TVA Rate Compliance
   const invalidRateExpenses = expenses.filter(exp => exp.vatRate != null && !tvaRates.includes(exp.vatRate));
   checks.push({
     id: 'tva-rates',
@@ -200,7 +699,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: invalidRateExpenses.length
   });
 
-  // 14. Overdue Invoices
   const now = new Date();
   const overdue = invoices.filter(inv => {
     if (inv.status === 'PAID' || !inv.dueDate) return false;
@@ -217,7 +715,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: overdue.length
   });
 
-  // 15. SCE Account Mapping Coverage
   const stats = getLearningStats();
   const categoriesUsed = [...new Set(expenses.map(e => e.category).filter(Boolean))];
   const mappedCategories = categoriesUsed.filter(c => stats.categories[c]);
@@ -231,23 +728,11 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
     value: mappingPct
   });
 
-  // Score calculation (weighted)
   const weights = {
-    'tva-compliance': 3,
-    'is-provision': 2,
-    'cnss-provision': 1,
-    'timbre-fiscal': 2,
-    'retenue-source': 2,
-    'missing-mf': 2,
-    'bank-reconciliation': 2,
-    'liquidity-ratio': 1.5,
-    'debt-equity': 1.5,
-    'operating-margin': 1,
-    'anomalies': 2,
-    'balance-check': 1,
-    'tva-rates': 1,
-    'overdue': 1.5,
-    'sce-mapping': 0.5
+    'tva-compliance': 3, 'is-provision': 2, 'cnss-provision': 1, 'timbre-fiscal': 2,
+    'retenue-source': 2, 'missing-mf': 2, 'bank-reconciliation': 2, 'liquidity-ratio': 1.5,
+    'debt-equity': 1.5, 'operating-margin': 1, 'anomalies': 2, 'balance-check': 1,
+    'tva-rates': 1, 'overdue': 1.5, 'sce-mapping': 0.5
   };
   const scoreMap = { pass: 100, warn: 50, info: 75, fail: 0 };
   let totalWeight = 0;
@@ -259,7 +744,6 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
   });
   const auditScore = totalWeight > 0 ? Math.round(weightedScore / totalWeight) : 0;
 
-  // Summary
   const passed = checks.filter(c => c.status === 'pass').length;
   const warned = checks.filter(c => c.status === 'warn').length;
   const failed = checks.filter(c => c.status === 'fail').length;
@@ -268,71 +752,27 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
   if (failed > 0 || warned > 0) {
     const critical = checks.filter(c => c.status === 'fail');
     critical.forEach(c => {
-      if (c.id === 'tva-compliance') recommendations.push('Rapprochez vos déclarations TVA avec les relevés bancaires. Assurez-vous de déclarer avant le 20 du mois suivant.');
-      if (c.id === 'timbre-fiscal') recommendations.push('Apposez le timbre fiscal (1 DT par facture) sur toutes les factures de vente éligibles.');
-      if (c.id === 'missing-mf') recommendations.push('Exigez le Matricule Fiscal (MF) de tous vos fournisseurs pour déduire la TVA.');
-      if (c.id === 'bank-reconciliation') recommendations.push('Effectuez le lettrage des transactions bancaires en attente dans l\'onglet "Banque".');
-      if (c.id === 'liquidity-ratio') recommendations.push('Réduisez les dettes à court terme ou augmentez les actifs liquides pour améliorer le ratio de liquidité.');
-      if (c.id === 'debt-equity') recommendations.push('Réduisez l\'endettement ou augmentez les capitaux propres (apport en capital).');
-      if (c.id === 'anomalies') recommendations.push('Vérifiez les montants inhabituels signalés. Il peut s\'agir d\'erreurs de saisie ou de fraudes potentielles.');
-      if (c.id === 'retenue-source') recommendations.push('Appliquez la retenue à la source (1.5% ou 2.5%) sur toutes les prestations de services.');
-      if (c.id === 'overdue') recommendations.push('Relancez les clients avec des factures échues. Envisagez des pénalités de retard.');
-      if (c.id === 'sce-mapping') recommendations.push('Mappez les catégories manquantes au plan SCE pour une comptabilité conforme.');
+      if (c.id === 'tva-compliance') recommendations.push('Rapprochez vos déclarations TVA avec les relevés bancaires.');
+      if (c.id === 'timbre-fiscal') recommendations.push('Apposez le timbre fiscal (1 DT par facture) sur toutes les factures de vente.');
+      if (c.id === 'missing-mf') recommendations.push('Exigez le MF de tous vos fournisseurs pour déduire la TVA.');
+      if (c.id === 'bank-reconciliation') recommendations.push('Effectuez le lettrage des transactions bancaires.');
+      if (c.id === 'liquidity-ratio') recommendations.push('Améliorez le ratio de liquidité.');
+      if (c.id === 'debt-equity') recommendations.push('Réduisez l\'endettement ou augmentez les capitaux propres.');
+      if (c.id === 'anomalies') recommendations.push('Vérifiez les montants inhabituels signalés.');
+      if (c.id === 'retenue-source') recommendations.push('Appliquez la RS sur toutes les prestations de services.');
+      if (c.id === 'overdue') recommendations.push('Relancez les clients avec des factures échues.');
+      if (c.id === 'sce-mapping') recommendations.push('Mappez les catégories manquantes au plan SCE.');
     });
   }
-  if (auditScore >= 80) recommendations.push('Excellent niveau de conformité. Continuez à tenir vos registres à jour.');
-  else if (auditScore >= 60) recommendations.push('Niveau de conformité acceptable. Quelques points d\'attention à corriger.');
-  else recommendations.push('Plusieurs non-conformités critiques détectées. Consultez un expert-comptable agréé OECT.');
+  if (auditScore >= 80) recommendations.push('Excellent niveau de conformité.');
+  else if (auditScore >= 60) recommendations.push('Niveau de conformité acceptable.');
+  else recommendations.push('Plusieurs non-conformités critiques détectées.');
 
   return {
     score: auditScore,
-    summary: {
-      total: checks.length,
-      passed,
-      warned,
-      failed
-    },
-    checks,
-    recommendations,
+    summary: { total: checks.length, passed, warned, failed },
+    checks, recommendations,
     companyName: companyDetails?.name || 'Société',
     date: new Date().toISOString().split('T')[0]
   };
-};
-
-export const generateAuditMarkdown = (auditResult) => {
-  const { score, summary, checks, recommendations, companyName, date } = auditResult;
-  const grade = score >= 80 ? '🟢' : score >= 60 ? '🟡' : '🔴';
-  const gradeLabel = score >= 80 ? 'Excellent' : score >= 60 ? 'Acceptable' : 'Critique';
-
-  let md = `## Rapport d'Audit Smart-Comptable\n\n`;
-  md += `**Société :** ${companyName}  \n`;
-  md += `**Date :** ${date}  \n`;
-  md += `**Score global :** ${grade} **${score}/100** — ${gradeLabel}\n\n`;
-  md += `### Résumé\n\n`;
-  md += `- ✅ **${summary.passed}** conformes\n`;
-  md += `- ⚠️ **${summary.warned}** avertissements\n`;
-  md += `- ❌ **${summary.failed}** non-conformités\n\n`;
-
-  md += `### Détail des contrôles\n\n`;
-  md += `\n\n| # | Catégorie | Contrôle | Statut | Détail |\n`;
-  md += `| --- | --- | --- | --- | --- |\n`;
-  checks.forEach((c, i) => {
-    const icon = c.status === 'pass' ? '✅' : c.status === 'warn' ? '⚠️' : c.status === 'fail' ? '❌' : 'ℹ️';
-    const detail = (c.detail || '').replace(/\|/g, '&#124;').replace(/\n/g, ' · ').trim();
-    const label = (c.label || '').replace(/\|/g, '&#124;');
-    const category = (c.category || '').replace(/\|/g, '&#124;');
-    md += `| ${i + 1} | ${category} | ${label} | ${icon} | ${detail} |\n`;
-  });
-  md += `\n`;
-
-  if (recommendations.length > 0) {
-    md += `\n### Recommandations\n\n`;
-    recommendations.forEach(r => {
-      md += `- ${r}\n`;
-    });
-  }
-
-  md += `\n---\n`;
-  md += `_Rapport généré par Smart-Comptable — Moteur d'audit local. Validez avec un expert-comptable OECT._`;
-  return md;
 };

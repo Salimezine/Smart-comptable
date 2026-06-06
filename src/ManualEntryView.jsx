@@ -32,8 +32,9 @@ const PCG_LIBELLES = {
   '708000': 'Autres produits',
   '445000': 'TVA collectée',
   '44550':  'TVA déductible',
-  '43666':  'CNSS à payer',
-  '43671':  'Retenue à la source',
+  '43666':  'TVA sur autres biens et services',
+  '43671':  'TVA collectée',
+  '43674':  'Retenue à la source',
 };
 
 const LIBELLES_FIXES = [

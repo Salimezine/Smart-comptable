@@ -147,7 +147,9 @@ export function journalComptable(corrige, options = {}) {
 
     // Retenue à la source : crédit fournisseur réduit, débit 43674
     if (rs && ttc > 0) {
-      const rsMontant = parseFloat((ttc * 0.015).toFixed(3));
+      const rsMontant = corrige.rs_montant > 0
+        ? corrige.rs_montant
+        : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3));
       ecritures.push({
         compte: compteFournisseur,
         libelleCompte: `${compteFournisseur.slice(0, 3)} ${LIBELLES_COMPTES[compteFournisseur.slice(0, 3)] || 'Tiers'}`,
@@ -164,15 +166,33 @@ export function journalComptable(corrige, options = {}) {
       });
     }
   } else {
-    // VENTE — pas encore utilisé par l'OCR (plutôt pour factures émises)
+    // VENTE
     const compteClient = getCompteTiers(fournisseurNom, '411');
+    const clientMontant = rs && ttc > 0
+      ? ttc - (corrige.rs_montant > 0 ? corrige.rs_montant : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3)))
+      : ttc;
     ecritures.push({
       compte: compteClient,
       libelleCompte: `${compteClient.slice(0, 3)} ${LIBELLES_COMPTES[compteClient.slice(0, 3)] || 'Tiers'}`,
       libelle: `Facture ${numeroPiece} - ${fournisseurNom}`,
-      debit: ttc,
+      debit: clientMontant > 0 ? parseFloat(clientMontant.toFixed(3)) : 0,
       credit: 0,
     });
+    // RS sur vente : débit 43674 (RS à recevoir du client/état)
+    if (rs && ttc > 0) {
+      const rsMontant = corrige.rs_montant > 0
+        ? corrige.rs_montant
+        : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3));
+      if (rsMontant > 0) {
+        ecritures.push({
+          compte: '43674',
+          libelleCompte: '43674 Retenue à la source',
+          libelle: `Ret. source ${numeroPiece}`,
+          debit: parseFloat(rsMontant.toFixed(3)),
+          credit: 0,
+        });
+      }
+    }
     ecritures.push({
       compte: '70XXXX',
       libelleCompte: '70XXXX Ventes de produits',

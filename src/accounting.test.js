@@ -102,7 +102,7 @@ describe('Tests Unitaires - Moteur Comptable & Fiscal (Penni AI)', () => {
       });
     });
 
-    it('devrait calculer correctement HT, TVA 19%, Timbre 1.000 DT et TTC', () => {
+    it('devrait calculer correctement HT, TVA 19%, Timbre 2.000 DT (>100DT) et TTC', () => {
       const mockItems = [
         { quantity: 2, unitPrice: 150.000, vatRate: 19 }, // HT = 300, TVA = 57
         { quantity: 1, unitPrice: 45.000, vatRate: 13 }   // HT = 45, TVA = 5.850
@@ -110,8 +110,8 @@ describe('Tests Unitaires - Moteur Comptable & Fiscal (Penni AI)', () => {
       expect(calculateInvoiceTotals(mockItems)).toEqual({
         subtotal: 345.000,
         vatAmount: 62.850,
-        stampDuty: 1.000,
-        totalAmount: 408.850
+        stampDuty: 2.000,
+        totalAmount: 409.850
       });
     });
 

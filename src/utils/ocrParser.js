@@ -248,10 +248,40 @@ export function detectNumeroFacture(text) {
 export function detectClient(text) {
   try {
     if (!text || typeof text !== 'string') return '';
-    const m = text.match(/(?:Client|Client\s*[:﹕]?)\s*\n+\s*([A-Za-zÀ-ÿ\s\-']{3,60}?)(?:\s*,|\s*\n|$)/i);
+    const m = text.match(/(?:Client|Client\s*[:﹕]?|FACTURÉ\s*[Àa]\s*)\s*\n+\s*([A-Za-zÀ-ÿ\s\-'()]{3,60}?)(?:\s*,|\s*\n|$)/i);
     if (m) return m[1].trim();
-    const m2 = text.match(/Client\s*[:﹕]?\s*([A-Za-zÀ-ÿ\s\-']{3,60}?)\s*,/i);
+    const m2 = text.match(/(?:Client|FACTURÉ\s*[Àa])\s*[:﹕]?\s*([A-Za-zÀ-ÿ\s\-'()]{3,60}?)\s*,/i);
     if (m2) return m2[1].trim();
+    return '';
+  } catch { return ''; }
+}
+
+export function detectClientAdresse(text) {
+  try {
+    if (!text || typeof text !== 'string') return '';
+    const lignes = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const idx = lignes.findIndex(l => /factur[eé]\s*[àa]|client\s*[:﹕]|adresse\s*client/i.test(l));
+    if (idx === -1) return '';
+    // Skip the marker line and the client name line
+    const adrLigne = lignes[idx + 2];
+    if (!adrLigne || /^mf\s*[:﹕]|^\d{6,7}|^t[eé]l|^fax|^email|^rib/i.test(adrLigne)) return '';
+    return adrLigne;
+  } catch { return ''; }
+}
+
+export function detectClientMF(text) {
+  try {
+    if (!text || typeof text !== 'string') return '';
+    const lignes = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const idx = lignes.findIndex(l => /factur[eé]\s*[àa]|client\s*[:﹕]|adresse\s*client/i.test(l));
+    if (idx === -1) return '';
+    // Find the first MF line AFTER the client block marker
+    const mfTrouves = [];
+    for (let i = idx + 1; i < lignes.length; i++) {
+      const m = lignes[i].match(/(?:\bMF\s*[:﹕]\s*|M\.F\.\s*[:﹕]\s*|Matricule\s*Fiscal\s*[:﹕]\s*)?(\d{6,7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3})/i);
+      if (m) { mfTrouves.push({ mf: m[1], ligne: i }); }
+    }
+    if (mfTrouves.length > 0) return mfTrouves[0].mf;
     return '';
   } catch { return ''; }
 }
@@ -263,16 +293,21 @@ export function detectTotalTTC(text) {
   try {
     if (!text || typeof text !== 'string') return null;
 
+    // Normaliser les espaces dans les nombres (ex: "4 450,000" → "4450,000")
+    const norm = text.replace(/(\d)\s+(\d{3})/g, '$1$2');
+
     const patterns = [
-      /Net\s*[àa]\s*payer\s*[:﹕|]\s*([\d\s]{1,8}[.,]\d{2,3})/i,
-      /Total\s*TTC\s*[:﹕|]\s*([\d\s]{1,8}[.,]\d{2,3})/i,
-      /Montant\s*TTC\s*[:﹕|]\s*([\d\s]{1,8}[.,]\d{2,3})/i,
-      /Total\s*général\s*[:﹕|]\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /Sous[- ]total\s*TTC\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /Total\s*TTC\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /Montant\s*TTC\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /Total\s*général\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /(?:الإجمالي|المجموع\s+الكلي)\s*[:﹕|]*\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      // "Net à payer" en dernier (ce n'est PAS le TTC, c'est TTC - RS)
+      /Net\s*[àa]\s*payer\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
     ];
 
     for (const pat of patterns) {
-      const m = text.match(pat);
+      const m = norm.match(pat);
       if (m) {
         let s = m[1].replace(/\s/g, '').replace(',', '.');
         const n = parseFloat(s);
@@ -489,12 +524,13 @@ export function detectFODEC(text) {
 export function detectRetenueSource(text) {
   try {
     if (!text || typeof text !== 'string') return 0;
+    const norm = text.replace(/(\d)\s+(\d{3})/g, '$1$2');
     const patterns = [
-      /(?:retenue\s+[àa]\s+la\s+source|r\.?s\.?)\s*[:﹕|]?\s*([\d,\.\s]+)/i,
-      /retenue\s*(?:\d+[.,]?\d*\s*%)?\s*[:﹕|]?\s*([\d,\.\s]+)/i,
+      /(?:retenue\s+[àa]\s+la\s+source|r\.?s\.?)\s*[:﹕|]?\s*-?\s*([\d,\.\s]+)/i,
+      /retenue\s*(?:\d+[.,]?\d*\s*%)?\s*[:﹕|]?\s*-?\s*([\d,\.\s]+)/i,
     ];
     for (const pat of patterns) {
-      const m = text.match(pat);
+      const m = norm.match(pat);
       if (m) {
         const val = parseFloat(m[1].replace(/\s/g, '').replace(',', '.'));
         if (!isNaN(val) && val > 0) return val;
@@ -804,9 +840,23 @@ function detectLignes(text) {
     }
 
     // General line: "DESIGNATION PU DT [QTY] TOTAL DT"
-    const LIGNE_GEN = /(.{3,60}?)\s+(\d+[.,]\d{3})\s+DT\s+(\d+\s+)?(\d+[.,]\d{3})\s+DT/i;
-    LIGNE_GEN.lastIndex = 0;
-    const eg = LIGNE_GEN.exec(l);
+    const tryMatch = (txt) => {
+      const RE = /(.{3,60}?)\s+(\d+[.,]\d{3})\s+DT\s+(\d+\s+)?(\d+[.,]\d{3})\s+DT/i;
+      RE.lastIndex = 0;
+      return RE.exec(txt);
+    };
+    let eg = tryMatch(l);
+    // If inconsistent qty*PU ≈ total, try normalising spaces in numbers
+    if (eg) {
+      const p0 = normaliserMontant(eg[2]);
+      const t0 = normaliserMontant(eg[4]);
+      const q0 = eg[3] ? parseInt(eg[3].trim()) : 1;
+      const ratio = p0 !== null && t0 !== null && t0 > 0 ? Math.abs(q0 * p0 - t0) / t0 : 0;
+      if (ratio > 0.02) {
+        const norm = l.replace(/(\d)\s+(?=\d{1,3}[.,]\d{2,3}\s+DT)/g, '$1');
+        eg = tryMatch(norm);
+      }
+    }
     if (eg) {
       const des = eg[1].trim();
       if (!bruitLigne.test(des) && des.length >= 3) {
@@ -1336,6 +1386,8 @@ export function corrigerFacture(parsed, texteOCR) {
       || parsed.net_a_payer
       || 0,
     retenue_source: !!(parsed.rs_montant || parsed.retenue_source),
+    rs_montant: parseFloat(parsed.rs_montant) || 0,
+    rs_taux: parseFloat(parsed.rs_taux) || 0,
     alertes: [],
     notes: [],
     lignes: parsed.lignes || [],
@@ -1421,8 +1473,12 @@ export function corrigerFacture(parsed, texteOCR) {
     }
 
     // Alertes pour lignes recap absentes
-    if (recap.ht === null && recap.tva === null && recap.ttc === null && recap.timbre === null && recap.fodec === null) {
+    const recapAllNull = recap.ht === null && recap.tva === null && recap.ttc === null && recap.timbre === null && recap.fodec === null;
+    if (recapAllNull) {
       out.alertes.push('recap_manquant');
+    } else {
+      if (recap.ht === null) out.alertes.push('recap_manquant_ht');
+      if (recap.tva === null) out.alertes.push('recap_manquant_tva');
     }
 
     // ── Fallback: HT/TVA manquants → dériver des lignes article + TTC ──
@@ -1640,6 +1696,11 @@ export function corrigerFacture(parsed, texteOCR) {
     const rs = detectRSPrestation(text, out.fournisseur);
     if (rs.applicable) {
       out.retenue_source = true;
+      out.rs_taux = rs.taux || 1.5;
+      if (!out.rs_montant) {
+        const montantTTC = out.total_ttc || 0;
+        out.rs_montant = parseFloat((montantTTC * (rs.taux || 1.5) / 100).toFixed(3));
+      }
     }
 
   } catch (e) {

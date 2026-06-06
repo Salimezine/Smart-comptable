@@ -52,6 +52,8 @@ export const LIBELLES_COMPTES = {
   '602400': 'Fournitures de bureau et informatiques',
   '6654': "Droits d'enregistrement et de timbre",
   '70XXXX': 'Ventes de produits',
+  '631000': 'Impôt sur les sociétés',
+  '437000': 'État - Impôt sur les sociétés',
 };
 
 // ─────────────────────────────────────────────
@@ -346,5 +348,64 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
     window.dispatchEvent(new CustomEvent('journal:updated'));
   } catch {
     /* silencieux */
+  }
+}
+
+export function generateProvisionIS() {
+  try {
+    const raw = localStorage.getItem(getJournalKey());
+    if (!raw) return null;
+    const journal = JSON.parse(raw);
+    if (!Array.isArray(journal) || journal.length === 0) return null;
+
+    const alreadyExists = journal.some(e =>
+      (e.compte || '').startsWith('437000') && (e.numeroPiece || '').startsWith('IS-')
+    );
+    if (alreadyExists) return { alreadyExists: true };
+
+    const exercice = new Date().getFullYear();
+    const charges = journal.filter(e => (e.compte || '').startsWith('6')).reduce((s, e) => s + (parseFloat(e.debit) || 0), 0);
+    const produits = journal.filter(e => (e.compte || '').startsWith('7')).reduce((s, e) => s + (parseFloat(e.credit) || 0), 0);
+    const resultatNet = produits - charges;
+    if (resultatNet <= 0) return { resultatNet: 0 };
+
+    const isAmount = parseFloat((resultatNet * 0.15).toFixed(3));
+    const numeroPiece = `IS-${exercice}`;
+
+    journal.unshift(
+      {
+        date: `${exercice}-12-31`,
+        numeroPiece,
+        piece_justificative: `Provision IS ${exercice}`,
+        fournisseur: null,
+        categorie: null,
+        compte: '631000 Impôt sur les sociétés',
+        libelle: `Provision IS ${exercice}`,
+        debit: isAmount,
+        credit: null,
+        journal: 'OD',
+        ttnId: null,
+        locked: true,
+      },
+      {
+        date: `${exercice}-12-31`,
+        numeroPiece,
+        piece_justificative: `Provision IS ${exercice}`,
+        fournisseur: null,
+        categorie: null,
+        compte: '437000 État - Impôt sur les sociétés',
+        libelle: `Provision IS ${exercice}`,
+        debit: null,
+        credit: isAmount,
+        journal: 'OD',
+        ttnId: null,
+        locked: true,
+      }
+    );
+    localStorage.setItem(getJournalKey(), JSON.stringify(journal));
+    window.dispatchEvent(new CustomEvent('journal:updated'));
+    return { isAmount, resultatNet, exercice };
+  } catch {
+    return null;
   }
 }

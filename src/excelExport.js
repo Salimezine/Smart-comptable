@@ -454,8 +454,8 @@ function download(buf, name) {
   URL.revokeObjectURL(url);
 }
 
-export async function exportToExcel(invoices, expenses, transactions, companyDetails, customData = {}) {
-  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails, customData);
+export async function exportToExcel(invoices, expenses, transactions, companyDetails, customData = {}, stockTotalDT = 0) {
+  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails, customData, stockTotalDT);
   const wb = new ExcelJS.Workbook();
   await buildBilanSheet(wb, data);
   await buildResultatSheet(wb, data);
@@ -465,16 +465,16 @@ export async function exportToExcel(invoices, expenses, transactions, companyDet
     `EtatsFinanciers_SCE_${(companyDetails.name || 'Societe').replace(/\s+/g, '_')}_${new Date().getFullYear()}.xlsx`);
 }
 
-export async function exportBilanExcel(invoices, expenses, transactions, companyDetails) {
-  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails);
+export async function exportBilanExcel(invoices, expenses, transactions, companyDetails, stockTotalDT = 0) {
+  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotalDT);
   const wb = new ExcelJS.Workbook();
   await buildBilanSheet(wb, data);
   download(await wb.xlsx.writeBuffer(),
     `Bilan_SCE_${(companyDetails.name || 'Societe').replace(/\s+/g, '_')}_${new Date().getFullYear()}.xlsx`);
 }
 
-export async function exportResultatExcel(invoices, expenses, transactions, companyDetails) {
-  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails);
+export async function exportResultatExcel(invoices, expenses, transactions, companyDetails, stockTotalDT = 0) {
+  const data = getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotalDT);
   const wb = new ExcelJS.Workbook();
   await buildResultatSheet(wb, data);
   download(await wb.xlsx.writeBuffer(),

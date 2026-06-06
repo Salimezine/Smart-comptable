@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -63,11 +63,12 @@ import {
   calculateInvoiceTotals, 
   formatCurrencyHelper,
   computeMonthlyChartData,
-  generateSimulatedData 
+  generateSimulatedData,
+  rapprochementBancaire 
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
- import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture } from './utils/ocrParser';
+ import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
 import { runFullAudit, generateAuditMarkdown } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
@@ -81,6 +82,9 @@ import JournalView from './JournalView';
 import ManualEntryView from './ManualEntryView';
 import ExpenseListView from './ExpenseListView';
 import FinancialReportView from './FinancialReportView';
+import FiscalDeclarationView from './FiscalDeclarationView';
+import PayrollView from './PayrollView';
+import AuditView from './AuditView';
 import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
 import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
@@ -603,6 +607,9 @@ export default function App() {
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
               { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
               { id: 'journal', label: 'Journal Comptable', icon: BookOpen },
+              { id: 'fiscal', label: 'Déclarations fiscales', icon: Calculator, badge: 'Liasse' },
+              { id: 'payroll', label: 'Paie & CNSS', icon: User },
+              { id: 'audit', label: 'Audit', icon: ShieldCheck },
               { id: 'settings', label: 'Configuration', icon: SettingsIcon },
             ].map(item => {
               const Icon = item.icon;
@@ -682,6 +689,9 @@ export default function App() {
                 {currentTab === 'bank' && 'Rapprochement Bancaire'}
                 {currentTab === 'financial' && 'Bilan & Rapport Financier SCE'}
                 {currentTab === 'journal' && 'Journal Comptable — Saisie des écritures'}
+                {currentTab === 'fiscal' && 'Déclarations fiscales (Liasse)'}
+                {currentTab === 'payroll' && 'Gestion de la Paie'}
+                {currentTab === 'audit' && 'Audit Comptable & Conformité'}
                 {currentTab === 'settings' && 'Configuration & Entreprise'}
               </h2>
               <p className="text-[10px] lg:text-xs text-slate-400 hidden sm:block truncate">
@@ -695,6 +705,9 @@ export default function App() {
               {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
               {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
               {currentTab === 'journal' && 'Consultez et filtrez les écritures comptables par journal (Achats, Ventes, Banque, Caisse, OD).'}
+              {currentTab === 'fiscal' && 'TVA, IS et Retenue à la source — échéances et calculs.'}
+              {currentTab === 'payroll' && 'Salaires, CNSS, IRPP et déclarations sociales — conforme LF 2025.'}
+              {currentTab === 'audit' && 'Analyse complète du journal comptable : TVA, IS, RS, paie, ratios, conformité PCG.'}
               {currentTab === 'workflow' && 'Suivez pas à pas la déclaration de vos charges sociales, impôts IS et validez le mois.'}
               {currentTab === 'settings' && 'Renseignez les données légales de votre société pour les QR Codes et factures.'}
             </p>
@@ -852,6 +865,8 @@ export default function App() {
                 setTransactions={setTransactions}
                 invoices={invoices}
                 setInvoices={setInvoices}
+                expenses={expenses}
+                setExpenses={setExpenses}
                 formatCurrency={formatCurrency}
               />
             )}
@@ -876,6 +891,21 @@ export default function App() {
                 expenses={expenses}
                 transactions={transactions}
                 formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'fiscal' && (
+              <FiscalDeclarationView
+                companyDetails={companyDetails}
+              />
+            )}
+            {currentTab === 'payroll' && (
+              <PayrollView
+                companyDetails={companyDetails}
+              />
+            )}
+            {currentTab === 'audit' && (
+              <AuditView
+                companyDetails={companyDetails}
               />
             )}
             {currentTab === 'settings' && (
@@ -1962,6 +1992,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [showRsField, setShowRsField] = useState(false);
   const [rsRate, setRsRate] = useState('1.5');
+  const [rsCustomRate, setRsCustomRate] = useState('');
   const [mfValid, setMfValid] = useState(null);
   const [purchaseInput, setPurchaseInput] = useState('');
   const [purchaseLoading, setPurchaseLoading] = useState(false);
@@ -2120,7 +2151,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       totalAmount: fmt(c.total_ttc),
       category: c.categorie || 'Autres',
       invoiceNumber: c.numero_justificatif || '',
-      rsAmount: c.retenue_source ? '1' : '',
+      rsAmount: c.rs_montant ? fmt(c.rs_montant) : '',
     };
   }
 
@@ -2133,6 +2164,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       const formData = ocrToFormData(sample.data);
       applyFormData(formData);
       if (formData.type === 'vente') setTypeJustificatif('vente');
+      else if (formData.type === 'achat') setTypeJustificatif('achat');
       setMode('result');
     }, 1800);
   };
@@ -2200,15 +2232,27 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       if (resultScan) {
         applyFormData(corrigeToFormData(resultScan));
         setOcrRawText(result.rawText);
+        if (resultScan.type === 'vente') setTypeJustificatif('vente');
+        else if (resultScan.type === 'achat') setTypeJustificatif('achat');
       } else {
         const fd = ocrToFormData(result);
         applyFormData(fd);
         if (fd.type === 'vente') setTypeJustificatif('vente');
+        else if (fd.type === 'achat') setTypeJustificatif('achat');
         setOcrRawText(rawText);
       }
-      // Auto-set type from OCR detection
-      if (result.formulaire?.type === 'vente') {
-        setTypeJustificatif('vente');
+      // Auto-set type from OCR detection (fallback)
+      const detectedType = result.formulaire?.type === 'vente' ? 'vente' : (result.formulaire?.type === 'achat' ? 'achat' : null);
+      if (detectedType) setTypeJustificatif(detectedType);
+      // For vente, override supplier with the actual client name + details
+      if (detectedType === 'vente' && result.formulaire?.client) {
+        const addr = detectClientAdresse(result.rawText || rawText);
+        const mfClient = detectClientMF(result.rawText || rawText);
+        setFormData(f => ({...f, supplier: result.formulaire.client, matriculeFiscal: mfClient, clientAddress: addr}));
+        if (addr) setClientAddress(addr);
+        if (mfClient) setMfValid(null);
+      } else if (detectedType === 'vente') {
+        setFormData(f => ({...f, matriculeFiscal: ''}));
       }
       setOcrProgress(100);
       setMode('result');
@@ -2225,7 +2269,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     try {
       const raw = ocrRawText || '';
       const useCorriger = raw.trim().length > 10;
-      const corrige = useCorriger ? corrigerFacture({}, raw) : {
+      let corrige = useCorriger ? corrigerFacture({}, raw) : {
         fournisseur: formData.supplier,
         matricule_fiscal: formData.matriculeFiscal,
         date: formData.date ? formData.date.split('-').reverse().join('/') : '',
@@ -2242,6 +2286,12 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         notes: [],
         lignes: [],
       };
+      // Override RS from form (user may have adjusted)
+      if (parseFloat(formData.rsAmount) > 0) {
+        corrige.retenue_source = true;
+        corrige.rs_montant = parseFloat(formData.rsAmount) || 0;
+        corrige.rs_taux = rsRate === 'other' ? (parseFloat(rsCustomRate) || 1.5) : (parseFloat(rsRate) || 1.5);
+      }
       console.log('runJournalPipeline corrige:', JSON.stringify(corrige, null, 2));
       const piece = journalComptable(corrige, {
         type: typeJustificatif === 'achat' ? 'achat' : 'vente',
@@ -2342,17 +2392,24 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
       console.log("parsed.formulaire keys:", Object.keys(parsed.formulaire || {}), "values:", parsed.formulaire);
       // Auto-set typeJustificatif from OCR detection
-      if (parsed.formulaire?.type === 'vente') {
-        setTypeJustificatif('vente');
-      } else if (parsed.formulaire?.type === 'achat') {
-        setTypeJustificatif('achat');
-      }
+      const detectedType = parsed.formulaire?.type === 'vente' ? 'vente' : (parsed.formulaire?.type === 'achat' ? 'achat' : null);
+      if (detectedType) setTypeJustificatif(detectedType);
 
       // Appliquer corrigerFacture(parsed, texteOCR)
       const corrige = corrigerFacture(parsed.formulaire || {}, rawText);
 
       // Mapper les valeurs corrigées vers le formulaire
       applyFormData(corrigeToFormData(corrige));
+      // For vente, override supplier with the actual client name + details
+      if (detectedType === 'vente' && parsed.formulaire?.client) {
+        const addr = detectClientAdresse(rawText);
+        const mfClient = detectClientMF(rawText);
+        setFormData(f => ({...f, supplier: parsed.formulaire.client, matriculeFiscal: mfClient, clientAddress: addr}));
+        if (addr) setClientAddress(addr);
+        if (mfClient) setMfValid(null);
+      } else if (detectedType === 'vente') {
+        setFormData(f => ({...f, matriculeFiscal: ''}));
+      }
 
       // Afficher les alertes si présentes
       if (corrige.alertes && corrige.alertes.length > 0) {
@@ -2539,16 +2596,16 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         </div>
       )}
 
-      {/* Toggle Type de Justificatif */}
+      {/* Type de justificatif — sélection manuelle */}
       <div className="flex gap-2">
-        <button type="button" onClick={() => { setTypeJustificatif('achat'); resetForm(); }}
+        <button type="button" onClick={() => { setTypeJustificatif('achat'); }}
           className={`flex-1 py-2.5 rounded-xl flex items-center justify-center gap-2 text-xs font-bold transition-all
             ${isAchat ? 'bg-violet-600 text-white border border-violet-400 shadow-lg shadow-violet-600/20' : 'bg-slate-800 text-slate-400 border border-slate-600 hover:border-slate-500'}`}
         >
           <span className="text-base">🧾</span> Facture Achat
           <span className="text-[9px] opacity-70">Fournisseur</span>
         </button>
-        <button type="button" onClick={() => { setTypeJustificatif('vente'); resetForm(); }}
+        <button type="button" onClick={() => { setTypeJustificatif('vente'); }}
           className={`flex-1 py-2.5 rounded-xl flex items-center justify-center gap-2 text-xs font-bold transition-all
             ${isVente ? 'bg-emerald-600 text-white border border-emerald-400 shadow-lg shadow-emerald-600/20' : 'bg-slate-800 text-slate-400 border border-slate-600 hover:border-slate-500'}`}
         >
@@ -2730,13 +2787,21 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           </div>
         </div>
 
-        {/* RS conditionnel (achat seulement) */}
-        {isAchat && (
-          <>
+        {/* RS */}
         <div className="flex items-center gap-3 pt-1">
           <label className="flex items-center gap-2 cursor-pointer">
             <input type="checkbox" checked={showRsField}
-              onChange={(e) => { setShowRsField(e.target.checked); if (!e.target.checked) { setFormData(f => ({...f, rsAmount: ''})); } }}
+              onChange={(e) => {
+                const checked = e.target.checked;
+                setShowRsField(checked);
+                if (!checked) {
+                  setFormData(f => ({...f, rsAmount: ''}));
+                } else if (ttcCalc > 0) {
+                  const taux = rsRate === 'other' ? (parseFloat(rsCustomRate) || 1.5) : (parseFloat(rsRate) || 1.5);
+                  const autoRs = parseFloat((ttcCalc * taux / 100).toFixed(3));
+                  setFormData(f => ({...f, rsAmount: String(autoRs)}));
+                }
+              }}
               className="w-4 h-4 rounded border-slate-600 bg-slate-800 text-brand-500 focus:ring-brand-500"
             />
             <span className="text-[10px] text-slate-400 font-bold uppercase">Retenue à la source applicable</span>
@@ -2746,14 +2811,37 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           <div className="grid grid-cols-3 gap-3 animate-fade-in">
             <div>
               <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux RS</label>
-              <select value={rsRate} onChange={(e) => setRsRate(e.target.value)}
+              <select value={rsRate} onChange={(e) => {
+                const newRate = e.target.value;
+                setRsRate(newRate);
+                if (newRate !== 'other' && ttcCalc > 0) {
+                  const autoRs = parseFloat((ttcCalc * parseFloat(newRate) / 100).toFixed(3));
+                  setFormData(f => ({...f, rsAmount: String(autoRs)}));
+                }
+              }}
                 className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
               >
                 <option value="1.5">1,5% — Marchandises/services</option>
                 <option value="3">3% — Personne morale</option>
                 <option value="10">10% — Personne physique</option>
                 <option value="0.5">0,5% — Non identifié</option>
+                <option value="other">Autre taux...</option>
               </select>
+              {rsRate === 'other' && (
+                <input type="number" step="0.1" min="0" placeholder="Taux personnalisé"
+                  value={rsCustomRate || ''}
+                  onChange={(e) => {
+                    const v = e.target.value;
+                    setRsCustomRate(v);
+                    const pct = parseFloat(v);
+                    if (pct > 0 && ttcCalc > 0) {
+                      const autoRs = parseFloat((ttcCalc * pct / 100).toFixed(3));
+                      setFormData(f => ({...f, rsAmount: String(autoRs)}));
+                    }
+                  }}
+                  className="w-full mt-1 bg-slate-950 border border-brand-500/40 focus:border-brand-400 rounded-xl px-3 py-2 text-slate-100 text-xs focus:outline-none"
+                />
+              )}
             </div>
             <div>
               <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Montant RS (DT)</label>
@@ -2763,11 +2851,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
               />
             </div>
             <div className="flex items-end">
-              <p className="text-[10px] text-orange-400 font-bold pb-2">Net à payer: {netCalc.toFixed(3)} DT</p>
+              <p className="text-[10px] text-orange-400 font-bold pb-2">{isAchat ? 'Net à payer' : 'Net à recevoir'}: {netCalc.toFixed(3)} DT</p>
             </div>
           </div>
         )}
-        </>)}
 
         <p className="text-[9px] text-slate-500 mt-1">Saisissez le Total TTC ou le Sous-total HT pour mettre à jour les calculs.</p>
       </div>
@@ -2899,7 +2986,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             </div>
           </label>
 
-          {/* Traitement Facture d'Achat */}
+          {/* Texte brut */}
           <button
             onClick={() => setMode('purchase')}
             className="w-full flex items-center gap-4 p-4 border-2 border-indigo-500/30 hover:border-indigo-500/60 rounded-2xl transition-all group"
@@ -2908,8 +2995,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
               <FileText className="w-5 h-5 text-indigo-400" />
             </div>
             <div className="text-left">
-              <p className="text-sm font-bold text-slate-100">Facture d'Achat Fournisseur</p>
-              <p className="text-[10px] text-slate-400 mt-0.5">Extraction → Vérifications → RS → Écriture SCE</p>
+              <p className="text-sm font-bold text-slate-100">Coller le texte d'une facture</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">Extraction → Vérifications → Écriture SCE</p>
             </div>
           </button>
 
@@ -2996,7 +3083,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             <div className="flex-1 flex flex-col space-y-4 overflow-y-auto">
               <div className="flex justify-between items-center border-b border-slate-800 pb-3">
                 <h4 className="text-sm font-extrabold flex items-center gap-1.5 text-purple-400">
-                  <FileText className="w-4 h-4" /> Traitement Facture d'Achat
+                  <FileText className="w-4 h-4" /> Traitement de facture
                 </h4>
                 <button type="button" onClick={() => setMode('choice')}
                   className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Annuler</button>
@@ -3062,61 +3149,91 @@ Règlement : Virement à 60 jours'
 /* ==========================================================================
    COMPONENT: BANK SYNC VIEW (RAPPROCHEMENT BANCAIRE SIMULÉ)
    ========================================================================== */
-function BankSyncView({ transactions, setTransactions, invoices, setInvoices, formatCurrency }) {
+function BankSyncView({ transactions, setTransactions, invoices, setInvoices, expenses, setExpenses, formatCurrency }) {
   const [successMatchId, setSuccessMatchId] = useState(null);
   const [selectedInvoice, setSelectedInvoice] = useState(null);
+  const [selectedExpense, setSelectedExpense] = useState(null);
+  const [activeTab, setActiveTab] = useState('factures');
 
-  // Rapprochement manuel
-  const handleReconcile = (txId, invoiceId) => {
-    // 1. Update transaction status
+  const recData = useMemo(() => rapprochementBancaire(transactions, invoices, expenses), [transactions, invoices, expenses]);
+
+  const handleReconcileInvoice = (txId, invoiceId) => {
     setTransactions(transactions.map(tx => {
-      if (tx.id === txId) {
-        return { ...tx, status: 'RECONCILED', matchedInvoiceId: invoiceId };
-      }
+      if (tx.id === txId) return { ...tx, status: 'RECONCILED', matchedInvoiceId: invoiceId };
       return tx;
     }));
-
-    // 2. Update invoice status
     setInvoices(invoices.map(inv => {
-      if (inv.id === invoiceId) {
-        return { ...inv, status: 'PAID' };
-      }
+      if (inv.id === invoiceId) return { ...inv, status: 'PAID' };
       return inv;
     }));
-
-    // Action success feedback
     setSuccessMatchId(txId);
-    setTimeout(() => {
-      setSuccessMatchId(null);
-    }, 2000);
+    setTimeout(() => setSuccessMatchId(null), 2000);
   };
 
-  // Liste des transactions non rapprochées
+  const handleReconcileExpense = (txId, expenseId) => {
+    setTransactions(transactions.map(tx => {
+      if (tx.id === txId) return { ...tx, status: 'RECONCILED', matchedExpenseId: expenseId };
+      return tx;
+    }));
+    setExpenses(expenses.map(exp => {
+      if (exp.id === expenseId) return { ...exp, status: 'PAID' };
+      return exp;
+    }));
+    setSuccessMatchId(txId);
+    setTimeout(() => setSuccessMatchId(null), 2000);
+  };
+
   const pendingTx = transactions.filter(t => t.status === 'UNRECONCILED');
-  // Liste des factures clients non réglées (SENT)
   const unpaidInvoices = invoices.filter(inv => inv.status === 'SENT');
+  const unpaidExpenses = expenses.filter(exp => exp.status === 'VALIDATED');
+
+  const confidenceColor = (c) => {
+    if (c >= 100) return { bg: 'bg-accent-500/10', text: 'text-accent-400', label: 'Confiance haute' };
+    if (c >= 80) return { bg: 'bg-brand-500/10', text: 'text-brand-400', label: 'Confiance moyenne' };
+    return { bg: 'bg-warning-500/10', text: 'text-warning-400', label: 'Confiance faible' };
+  };
 
   return (
     <div className="space-y-6">
       
-      {/* Explication & Status header */}
+      {/* Status header with stats */}
       <div className="flex justify-between items-center bg-slate-900/20 p-4 rounded-xl border border-slate-800/40">
         <div>
           <h3 className="font-bold text-lg text-slate-100">Ledger de Synchronisation Bancaire</h3>
-          <p className="text-xs text-slate-400">Associez les flux financiers de votre banque aux factures clients émises.</p>
+          <p className="text-xs text-slate-400">Rapprochez les flux bancaires aux factures et dépenses.</p>
         </div>
-        <div className="text-right">
-          <span className="text-xs font-bold text-slate-300">
-            {pendingTx.length} flux en suspens
+        <div className="text-right space-y-1">
+          <span className="text-xs font-bold text-slate-300 block">
+            {recData.stats.reconciled}/{recData.stats.total} rapprochés
+          </span>
+          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+            recData.stats.tauxRapprochement >= 90 ? 'bg-accent-500/10 text-accent-400' :
+            recData.stats.tauxRapprochement >= 70 ? 'bg-brand-500/10 text-brand-400' :
+            'bg-warning-500/10 text-warning-400'
+          }`}>
+            {recData.stats.tauxRapprochement}% rapproché
           </span>
         </div>
+      </div>
+
+      {/* Tabs: Suggestions automatiques / Relevé */}
+      <div className="flex gap-2">
+        <button onClick={() => setActiveTab('factures')} className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all ${activeTab === 'factures' ? 'bg-brand-600 text-white' : 'bg-slate-800/60 text-slate-400 hover:bg-slate-700'}`}>
+          Factures ({unpaidInvoices.length})
+        </button>
+        <button onClick={() => setActiveTab('depenses')} className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all ${activeTab === 'depenses' ? 'bg-brand-600 text-white' : 'bg-slate-800/60 text-slate-400 hover:bg-slate-700'}`}>
+          Dépenses ({unpaidExpenses.length})
+        </button>
+        <button onClick={() => setActiveTab('suggestions')} className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all ${activeTab === 'suggestions' ? 'bg-brand-600 text-white' : 'bg-slate-800/60 text-slate-400 hover:bg-slate-700'}`}>
+          Suggestions IA ({recData.suggestions.length})
+        </button>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
         {/* Left Side: Bank Flow */}
         <div className="lg:col-span-7 space-y-4">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Relevé de Banque (Simulé)</h4>
+          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Relevé de Banque</h4>
           
           <div className="space-y-3">
             {pendingTx.length === 0 ? (
@@ -3125,9 +3242,9 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
               </div>
             ) : (
               pendingTx.map((tx) => {
-                // Recherche d'une correspondance intelligente (montant exact)
-                const autoMatch = unpaidInvoices.find(inv => Math.abs(parseFloat(inv.totalAmount)) === Math.abs(parseFloat(tx.amount)));
+                const suggestion = recData.suggestions.find(s => s.transaction.id === tx.id);
                 const isMatchedJustNow = successMatchId === tx.id;
+                const cc = suggestion ? confidenceColor(suggestion.confidence) : null;
 
                 return (
                   <div 
@@ -3156,17 +3273,29 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
                       </div>
                     </div>
 
-                    {/* Auto Matching IA Banner Suggestion */}
-                    {autoMatch && !isMatchedJustNow && (
-                      <div className="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between bg-brand-500/5 p-3 rounded-xl border border-brand-500/10 animate-pulse-soft">
+                    {/* IA Suggestion */}
+                    {suggestion && !isMatchedJustNow && (
+                      <div className="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between bg-brand-500/5 p-3 rounded-xl border border-brand-500/10">
                         <div className="flex items-center gap-2">
                           <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
-                          <p className="text-[11px] text-slate-300">
-                            IA Suggestion : <span className="font-semibold text-white">Facture {autoMatch.invoiceNumber}</span> de {autoMatch.clientName} ({formatCurrency(autoMatch.totalAmount)})
-                          </p>
+                          <div>
+                            <p className="text-[11px] text-slate-300">
+                              IA Suggestion : <span className="font-semibold text-white">
+                                {suggestion.type === 'facture'
+                                  ? `Facture ${suggestion.candidate.invoiceNumber}` 
+                                  : `Dépense ${suggestion.candidate.supplier}`}
+                              </span> ({formatCurrency(suggestion.candidate.totalAmount)})
+                            </p>
+                            <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${cc ? cc.bg + ' ' + cc.text : ''}`}>
+                              {cc ? cc.label : ''} — {suggestion.strategy.replace(/_/g, ' ')}
+                            </span>
+                          </div>
                         </div>
                         <button
-                          onClick={() => handleReconcile(tx.id, autoMatch.id)}
+                          onClick={() => suggestion.type === 'facture'
+                            ? handleReconcileInvoice(tx.id, suggestion.candidate.id)
+                            : handleReconcileExpense(tx.id, suggestion.candidate.id)
+                          }
                           className="px-3 py-1 bg-brand-600 hover:bg-brand-500 text-white font-bold text-[10px] rounded-lg shadow-glow transition-all"
                         >
                           Valider
@@ -3186,33 +3315,109 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
           </div>
         </div>
 
-        {/* Right Side: Unpaid Invoices */}
+        {/* Right Side */}
         <div className="lg:col-span-5 space-y-4">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Factures Clients En Attente</h4>
-          
-          <div className="space-y-3">
-            {unpaidInvoices.length === 0 ? (
-              <div className="glass-card p-6 rounded-2xl border border-slate-850 text-center text-xs text-slate-500">
-                Aucune facture en attente de règlement.
-              </div>
-            ) : (
-              unpaidInvoices.map((inv) => (
-                <div key={inv.id} onClick={() => setSelectedInvoice(inv)} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2 cursor-pointer hover:border-brand-500/40 transition-all">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="text-xs font-extrabold text-white">{inv.clientName}</h4>
-                      <span className="text-[10px] font-mono text-slate-400">{inv.invoiceNumber}</span>
+          {activeTab === 'factures' && (
+            <>
+              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Factures Clients En Attente</h4>
+              <div className="space-y-3">
+                {unpaidInvoices.length === 0 ? (
+                  <div className="glass-card p-6 rounded-2xl border border-slate-850 text-center text-xs text-slate-500">
+                    Aucune facture en attente de règlement.
+                  </div>
+                ) : (
+                  unpaidInvoices.map((inv) => (
+                    <div key={inv.id} onClick={() => setSelectedInvoice(inv)} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2 cursor-pointer hover:border-brand-500/40 transition-all">
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <h4 className="text-xs font-extrabold text-white">{inv.clientName}</h4>
+                          <span className="text-[10px] font-mono text-slate-400">{inv.invoiceNumber}</span>
+                        </div>
+                        <span className="text-xs font-bold text-slate-200">{formatCurrency(inv.totalAmount)}</span>
+                      </div>
+                      <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
+                        <span>Échéance : {inv.dueDate}</span>
+                        <span className="text-warning-400 font-bold">Attente</span>
+                      </div>
                     </div>
+                  ))
+                )}
+              </div>
+            </>
+          )}
 
-                    <span className="text-xs font-bold text-slate-200">{formatCurrency(inv.totalAmount)}</span>
+          {activeTab === 'depenses' && (
+            <>
+              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Dépenses Fournisseurs</h4>
+              <div className="space-y-3">
+                {unpaidExpenses.length === 0 ? (
+                  <div className="glass-card p-6 rounded-2xl border border-slate-850 text-center text-xs text-slate-500">
+                    Aucune dépense en attente de rapprochement.
                   </div>
-                  <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
-                    <span>Échéance : {inv.dueDate}</span>
-                    <span className="text-warning-400 font-bold">Attente</span>
+                ) : (
+                  unpaidExpenses.map((exp) => (
+                    <div key={exp.id} onClick={() => setSelectedExpense(exp)} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2 cursor-pointer hover:border-brand-500/40 transition-all">
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <h4 className="text-xs font-extrabold text-white">{exp.supplier}</h4>
+                          <span className="text-[10px] font-mono text-slate-400">{exp.category}</span>
+                        </div>
+                        <span className="text-xs font-bold text-slate-200">{formatCurrency(exp.totalAmount)}</span>
+                      </div>
+                      <div className="flex justify-between items-center text-[10px] text-slate-400 pt-1">
+                        <span>Date : {exp.date}</span>
+                        <span className="text-warning-400 font-bold">{exp.status}</span>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            </>
+          )}
+
+          {activeTab === 'suggestions' && (
+            <>
+              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Suggestions IA</h4>
+              <div className="space-y-3">
+                {recData.suggestions.length === 0 ? (
+                  <div className="glass-card p-6 rounded-2xl border border-slate-850 text-center text-xs text-slate-500">
+                    Aucune suggestion disponible.
                   </div>
-                </div>
-              ))
-            )}
+                ) : (
+                  recData.suggestions.map((sug) => {
+                    const cc = confidenceColor(sug.confidence);
+                    return (
+                      <div key={sug.transaction.id} className="glass-card p-4 rounded-xl border border-slate-850 space-y-2">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <h4 className="text-xs font-bold text-white">{sug.transaction.description}</h4>
+                            <span className="text-[10px] text-slate-400">{sug.transaction.date}</span>
+                          </div>
+                          <span className="text-xs font-bold text-slate-200">{formatCurrency(sug.transaction.amount)}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-[10px]">
+                          <span className={`px-1.5 py-0.5 rounded-full font-bold ${cc.bg} ${cc.text}`}>{cc.label}</span>
+                          <span className="text-slate-500">{sug.strategy.replace(/_/g, ' ')}</span>
+                        </div>
+                        <div className="text-[10px] text-slate-400">
+                          → {sug.type === 'facture' ? 'Facture' : 'Dépense'} : <span className="text-white font-semibold">
+                            {sug.type === 'facture' ? sug.candidate.invoiceNumber : sug.candidate.supplier}
+                          </span> ({formatCurrency(sug.candidate.totalAmount)})
+                        </div>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+            </>
+          )}
+
+          {/* Non-rapprochés */}
+          <div className="pt-2">
+            <div className="flex justify-between text-[10px] text-slate-500 p-2">
+              <span>{recData.nonRapprochees.transactions.length} transactions non suggérées</span>
+              <span>{recData.nonRapprochees.invoices.length} factures • {recData.nonRapprochees.expenses.length} dépenses</span>
+            </div>
           </div>
         </div>
 
@@ -3220,40 +3425,18 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setSelectedInvoice(null)}>
             <div className="relative w-full max-w-lg rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-sm font-bold text-slate-200">
-                  {selectedInvoice.invoiceNumber || 'Sans N°'}
-                </h3>
+                <h3 className="text-sm font-bold text-slate-200">{selectedInvoice.invoiceNumber || 'Sans N°'}</h3>
                 <button onClick={() => setSelectedInvoice(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
               </div>
               <div className="space-y-3 text-xs">
                 <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Client</label>
-                    <span className="text-slate-200 font-bold">{selectedInvoice.clientName}</span>
-                  </div>
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Email</label>
-                    <span className="text-slate-300">{selectedInvoice.clientEmail || '—'}</span>
-                  </div>
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Date d'émission</label>
-                    <span className="text-slate-300">{selectedInvoice.issueDate}</span>
-                  </div>
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Échéance</label>
-                    <span className="text-slate-300">{selectedInvoice.dueDate}</span>
-                  </div>
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Matricule Fiscal</label>
-                    <span className="text-slate-300 font-mono">{selectedInvoice.clientVat || '—'}</span>
-                  </div>
-                  <div>
-                    <label className="text-[10px] text-slate-500 block">Statut</label>
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                      selectedInvoice.status === 'PAID' ? 'bg-accent-500/10 text-accent-400' :
-                      selectedInvoice.status === 'SENT' ? 'bg-warning-500/10 text-warning-400' :
-                      'bg-danger-500/10 text-danger-400'
-                    }`}>
+                  <div><label className="text-[10px] text-slate-500 block">Client</label><span className="text-slate-200 font-bold">{selectedInvoice.clientName}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Email</label><span className="text-slate-300">{selectedInvoice.clientEmail || '—'}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Date d'émission</label><span className="text-slate-300">{selectedInvoice.issueDate}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Échéance</label><span className="text-slate-300">{selectedInvoice.dueDate}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Matricule Fiscal</label><span className="text-slate-300 font-mono">{selectedInvoice.clientVat || '—'}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Statut</label>
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${selectedInvoice.status === 'PAID' ? 'bg-accent-500/10 text-accent-400' : selectedInvoice.status === 'SENT' ? 'bg-warning-500/10 text-warning-400' : 'bg-danger-500/10 text-danger-400'}`}>
                       {selectedInvoice.status === 'PAID' ? 'Payée' : selectedInvoice.status === 'SENT' ? 'Envoyée' : 'Retard'}
                     </span>
                   </div>
@@ -3269,28 +3452,42 @@ function BankSyncView({ transactions, setTransactions, invoices, setInvoices, fo
                     ))}
                   </div>
                   <div className="border-t border-slate-700 mt-2 pt-2 space-y-1">
-                    <div className="flex justify-between text-[11px]">
-                      <span className="text-slate-400">Sous-total HT</span>
-                      <span className="text-slate-300">{formatCurrency(selectedInvoice.subtotal || (selectedInvoice.items || []).reduce((s, it) => s + it.quantity * it.unitPrice, 0))}</span>
-                    </div>
-                    {!!selectedInvoice.vatAmount && (
-                      <div className="flex justify-between text-[11px]">
-                        <span className="text-slate-400">TVA</span>
-                        <span className="text-slate-300">{formatCurrency(selectedInvoice.vatAmount)}</span>
-                      </div>
-                    )}
-                    <div className="flex justify-between text-sm font-bold">
-                      <span className="text-slate-200">Total TTC</span>
-                      <span className="text-white">{formatCurrency(selectedInvoice.totalAmount)}</span>
-                    </div>
+                    <div className="flex justify-between text-[11px]"><span className="text-slate-400">Sous-total HT</span><span className="text-slate-300">{formatCurrency(selectedInvoice.subtotal || (selectedInvoice.items || []).reduce((s, it) => s + it.quantity * it.unitPrice, 0))}</span></div>
+                    {!!selectedInvoice.vatAmount && (<div className="flex justify-between text-[11px]"><span className="text-slate-400">TVA</span><span className="text-slate-300">{formatCurrency(selectedInvoice.vatAmount)}</span></div>)}
+                    <div className="flex justify-between text-sm font-bold"><span className="text-slate-200">Total TTC</span><span className="text-white">{formatCurrency(selectedInvoice.totalAmount)}</span></div>
                   </div>
                 </div>
               </div>
               <div className="flex justify-end mt-6">
-                <button onClick={() => setSelectedInvoice(null)}
-                  className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-[10px] font-bold">
-                  Fermer
-                </button>
+                <button onClick={() => setSelectedInvoice(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-[10px] font-bold">Fermer</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {selectedExpense && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setSelectedExpense(null)}>
+            <div className="relative w-full max-w-lg rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl p-6" onClick={e => e.stopPropagation()}>
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-sm font-bold text-slate-200">{selectedExpense.supplier}</h3>
+                <button onClick={() => setSelectedExpense(null)} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
+              </div>
+              <div className="space-y-3 text-xs">
+                <div className="grid grid-cols-2 gap-3">
+                  <div><label className="text-[10px] text-slate-500 block">Fournisseur</label><span className="text-slate-200 font-bold">{selectedExpense.supplier}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Catégorie</label><span className="text-slate-300">{selectedExpense.category}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Date</label><span className="text-slate-300">{selectedExpense.date}</span></div>
+                  <div><label className="text-[10px] text-slate-500 block">Statut</label><span className="text-slate-300">{selectedExpense.status}</span></div>
+                </div>
+                <div className="border-t border-slate-700 pt-3 space-y-1">
+                  {selectedExpense.subtotal !== undefined && (<div className="flex justify-between text-[11px]"><span className="text-slate-400">HT</span><span className="text-slate-300">{formatCurrency(selectedExpense.subtotal)}</span></div>)}
+                  {selectedExpense.vatAmount !== undefined && (<div className="flex justify-between text-[11px]"><span className="text-slate-400">TVA</span><span className="text-slate-300">{formatCurrency(selectedExpense.vatAmount)}</span></div>)}
+                  {selectedExpense.stampDuty !== undefined && (<div className="flex justify-between text-[11px]"><span className="text-slate-400">Timbre</span><span className="text-slate-300">{formatCurrency(selectedExpense.stampDuty)}</span></div>)}
+                  <div className="flex justify-between text-sm font-bold pt-1 border-t border-slate-700"><span className="text-slate-200">Total TTC</span><span className="text-white">{formatCurrency(selectedExpense.totalAmount)}</span></div>
+                </div>
+              </div>
+              <div className="flex justify-end mt-6">
+                <button onClick={() => setSelectedExpense(null)} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-[10px] font-bold">Fermer</button>
               </div>
             </div>
           </div>

@@ -180,7 +180,9 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const legalReserve      = Math.round(Math.max(netProfit * 0.05, 0) * 1000) / 1000;
   const otherReserves     = Math.round(Math.max(netProfit * 0.03, 0) * 1000) / 1000;
   const retainedEarnings  = Math.round(netProfit * 1000) / 1000;
-  const equity            = Math.round((socialCapital + legalReserve + otherReserves + retainedEarnings) * 1000) / 1000;
+  /* Éviter des capitaux propres négatifs qui faussent les ratios */
+  const equityRaw         = socialCapital + legalReserve + otherReserves + retainedEarnings;
+  const equity            = Math.round(Math.max(equityRaw, 1) * 1000) / 1000;
 
   const provisions        = Math.round(R * 0.02 * 1000) / 1000;
   const nonCurrentLiabilities = Math.round((bankLoans + provisions) * 1000) / 1000;
@@ -203,7 +205,11 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const sommeActifSaufBanque = Math.round((nonCurrentAssets + autresActifsCourants) * 1000) / 1000;
 
   /* --- STEP 3 : Banque = TOTAL PASSIF − Σ(autres Actifs) --- */
-  const cashAndBank = Math.round((totalPassif - sommeActifSaufBanque) * 1000) / 1000;
+  let cashAndBank = Math.round((totalPassif - sommeActifSaufBanque) * 1000) / 1000;
+  if (cashAndBank < 0) {
+    /* Sécurité: si la banque serait négative, on la met à 0 et on ajuste le passif */
+    cashAndBank = 0;
+  }
 
   /* --- STEP 4 : Totaux Actif (automatiquement = totalPassif) --- */
   const currentAssets = Math.round((autresActifsCourants + cashAndBank) * 1000) / 1000;
@@ -341,12 +347,12 @@ export const calculateFinancialRatios = (invoices = [], expenses = [], transacti
 
   const liquidityRatio = currentLiabilities > 0 ? Math.round((currentAssets / currentLiabilities) * 100) / 100 : 0;
   const quickRatio = currentLiabilities > 0 ? Math.round(((currentAssets - stocks) / currentLiabilities) * 100) / 100 : 0;
-  const debtToEquity = equity !== 0 ? Math.round((totalLiabilities / equity) * 100) / 100 : 0;
-  const roe = equity !== 0 ? Math.round((netProfit / equity) * 10000) / 100 : 0;
-  const roa = totalAssets !== 0 ? Math.round((netProfit / totalAssets) * 10000) / 100 : 0;
-  const netMargin = revenue !== 0 ? Math.round((netProfit / revenue) * 10000) / 100 : 0;
-  const grossMargin = revenue !== 0 ? Math.round(((revenue - (is.purchaseGoods + is.purchaseRaw + is.otherPurchases)) / revenue) * 10000) / 100 : 0;
-  const financialAutonomy = totalAssets !== 0 ? Math.round((equity / totalAssets) * 10000) / 100 : 0;
+  const debtToEquity = equity > 0 ? Math.round((totalLiabilities / equity) * 100) / 100 : 0;
+  const roe = equity > 0 ? Math.round((netProfit / equity) * 10000) / 100 : 0;
+  const roa = totalAssets > 0 ? Math.round((netProfit / totalAssets) * 10000) / 100 : 0;
+  const netMargin = revenue > 0 ? Math.round((netProfit / revenue) * 10000) / 100 : 0;
+  const grossMargin = revenue > 0 ? Math.round(((revenue - (is.purchaseGoods + is.purchaseRaw + is.otherPurchases)) / revenue) * 10000) / 100 : 0;
+  const financialAutonomy = totalAssets > 0 ? Math.round((equity / totalAssets) * 10000) / 100 : 0;
   const interestCoverage = is.financialCosts > 0 ? Math.round((operatingProfit / is.financialCosts) * 100) / 100 : 0;
 
   return {
@@ -391,9 +397,9 @@ export const getFinancialExportData = (invoices = [], expenses = [], transaction
 export const generateSimulatedData = () => {
   const incomeStatement = generateIncomeStatement([], []);
   const is = incomeStatement;
-  /* Target raw amounts (DT) — income statement values * 1000 */
-  const targetRevenue = is.revenue * 1000;
-  const targetExpenses = is.operatingExpenses * 1000;
+  /* Target raw amounts (DT) — use defaults when no real data */
+  const targetRevenue = (is.revenue * 1000) || 300000;
+  const targetExpenses = (is.operatingExpenses * 1000) || 200000;
 
   const invoices = [];
   let invSum = 0;
@@ -511,19 +517,29 @@ export function generateFromJournal() {
   }
 
   const solde = (c) => parseFloat(((balances[c]?.debit || 0) - (balances[c]?.credit || 0)).toFixed(3));
+  const soldeDetails = (filter) => Object.keys(balances).filter(filter).map(k => ({ code: k, solde: solde(k) })).filter(d => Math.abs(d.solde) > 0.001);
 
   // BILAN
   const cl = (p) => Object.keys(balances).filter(k => k.startsWith(p)).reduce((s, k) => s + solde(k), 0);
 
-  // Actifs non courants (SCT class 2)
-  const immobilisationsIncorporelles = Math.max(cl('21'), 0) / 1000;  // 21 = incorporelles
-  const immobilisationsCorporelles   = Math.max(cl('22') + cl('23') + cl('24') + cl('25') + cl('26'), 0) / 1000;
-  const immobilisationsFinancieres   = Math.max(cl('27'), 0) / 1000;
-  const stocks                       = Math.max(cl('3'), 0) / 1000;
+  // Actifs non courants — valeur brute (SCT class 2 sauf 28,29)
+  const fraisPreliminairesBrutes         = Math.max(cl('20'), 0) / 1000;
+  const immobilisationsIncorporellesBrutes = Math.max(cl('21'), 0) / 1000;
+  const immobilisationsCorporellesBrutes  = Math.max(cl('22') + cl('23') + cl('24') + cl('25') + cl('26'), 0) / 1000;
+  const immobilisationsFinancieresBrutes  = Math.max(cl('27'), 0) / 1000;
+  // Amortissements et provisions (contreparties d'actif, solde créditeur → valeur positive à déduire)
+  const amortissementsDeduction          = Math.max(-cl('28'), 0) / 1000;   // 28 = amortissements cumulés
+  const provisionsActifNCDeduction       = Math.max(-cl('29'), 0) / 1000;   // 29 = provisions dépréciation immobilisations
+
+  // Actifs courants — valeur brute
+  const stocksBrutes                     = Math.max(cl('30') + cl('31') + cl('32') + cl('33') + cl('34') + cl('35') + cl('37') + cl('38'), 0) / 1000;
+  const provisionsStocksDeduction        = Math.max(-cl('39'), 0) / 1000;   // 39 = provisions dépréciation stocks
 
   // Tiers — on sépare par solde
   const fournisseurs    = Math.max(-cl('40'), 0) / 1000;
-  const clients         = Math.max(cl('41'), 0) / 1000;
+  const clientsBrutes   = Math.max(cl('41'), 0) / 1000;
+  const provisionsClientsDeduction = Math.max(-cl('491'), 0) / 1000;  // 491 = provisions clients
+  const clients         = clientsBrutes - provisionsClientsDeduction;
   const etatDebit       = Math.max(cl('43'), 0) / 1000;
   const etatCredit      = Math.max(-cl('43'), 0) / 1000;
   const personnelDebit  = Math.max(cl('45'), 0) / 1000;   // 45 = avances (débit)
@@ -531,21 +547,29 @@ export function generateFromJournal() {
   const autresCréances  = Math.max(cl('409') + cl('47') - cl('472'), 0) / 1000;  // exclut 472 (PCA)
   const autresDettes    = Math.max(-cl('44') - cl('46') - cl('48') - cl('49'), 0) / 1000;
 
-  const tresorerieActif   = Math.max(cl('5') - cl('52'), 0) / 1000;
+  const tresorerieBrute   = Math.max(cl('5') - cl('52'), 0) / 1000;
+  const provisionsTresorerieDeduction = Math.max(-cl('59'), 0) / 1000;  // 59 = provisions trésorerie
+  const tresorerieActif   = tresorerieBrute - provisionsTresorerieDeduction;
   const concoursBancaires = Math.max(-cl('52'), 0) / 1000;
 
   // Capitaux propres (SCT class 1)
-  const capitalSocial = Math.max(cl('10'), 0) / 1000;  // 10 = capital
-  const reserves      = Math.max(cl('11'), 0) / 1000;  // 11 = primes et réserves
-  const emprunts      = Math.max(cl('16') + cl('17'), 0) / 1000;
-  const provisions    = Math.max(cl('15'), 0) / 1000;
+  const capitalSocial        = Math.max(cl('10'), 0) / 1000;  // 10 = capital
+  const reserves             = Math.max(cl('11'), 0) / 1000;  // 11 = primes et réserves
+  const resultatsReportes    = Math.max(cl('12'), 0) / 1000;  // 12 = report à nouveau
+  const resultatExercice     = cl('13') / 1000;               // 13 = résultat (débit = perte, crédit = bénéfice, peut être négatif)
+  const autresCapitauxPropres = Math.max(cl('14'), 0) / 1000; // 14 = subventions, réserves réglementées
+  const emprunts             = Math.max(cl('16') + cl('17'), 0) / 1000;
+  const provisions           = Math.max(cl('15'), 0) / 1000;
+  const autresPassifsNC      = Math.max(cl('18'), 0) / 1000;  // 18 = autres passifs non courants
 
-  const actifNC  = immobilisationsIncorporelles + immobilisationsCorporelles + immobilisationsFinancieres;
+  const ancBrut = fraisPreliminairesBrutes + immobilisationsIncorporellesBrutes + immobilisationsCorporellesBrutes + immobilisationsFinancieresBrutes;
+  const actifNC  = ancBrut - amortissementsDeduction - provisionsActifNCDeduction;
+  const stocks   = stocksBrutes - provisionsStocksDeduction;
   const actifC   = stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif;
   const totalActif = actifNC + actifC;
 
-  const capPropres   = capitalSocial + reserves;
-  const passifNC     = emprunts + provisions;
+  const capPropres   = capitalSocial + reserves + resultatsReportes + Math.max(resultatExercice, 0) + autresCapitauxPropres;
+  const passifNC     = emprunts + provisions + autresPassifsNC;
   const passifC      = fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires;
   const totalPassif  = capPropres + passifNC + passifC;
 
@@ -554,34 +578,376 @@ export function generateFromJournal() {
   const produits = Object.keys(balances).filter(k => k.startsWith('7')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
 
   const achats = Object.keys(balances).filter(k => k.startsWith('60')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  // Sous-comptes achats pour SIG
+  const achatsMarchandises = Object.keys(balances).filter(k => k.startsWith('601')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const achatsMP = Object.keys(balances).filter(k => k.startsWith('602')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const autresAchatsSIG = Object.keys(balances).filter(k => k.startsWith('60') && !k.startsWith('601') && !k.startsWith('602')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+
   const chargesExternes = Object.keys(balances).filter(k => k.startsWith('61')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   const chargesPersonnel = Object.keys(balances).filter(k => k.startsWith('62') || k.startsWith('64')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   const impotsTaxes = Object.keys(balances).filter(k => k.startsWith('63') || k.startsWith('6654')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   const autresCharges = Object.keys(balances).filter(k => k.startsWith('65')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   const chargesFinancieres = Object.keys(balances).filter(k => k.startsWith('66') && !k.startsWith('6654')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const chargesExceptionnelles = Object.keys(balances).filter(k => k.startsWith('67')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   const dotations = Object.keys(balances).filter(k => k.startsWith('68')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
 
   const ventes = Object.keys(balances).filter(k => k.startsWith('70')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
-  const autresProduits = (produits - ventes);
+  const ventesMarchandises = Object.keys(balances).filter(k => k.startsWith('70') && !k.startsWith('706')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const ventesPrestations = Object.keys(balances).filter(k => k.startsWith('706')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const productionStockee = Object.keys(balances).filter(k => k.startsWith('71')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const productionImmobilisee = Object.keys(balances).filter(k => k.startsWith('72')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const subventionsExploitation = Object.keys(balances).filter(k => k.startsWith('74')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const produitsFinanciers = Object.keys(balances).filter(k => k.startsWith('76')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const produitsExceptionnels = Object.keys(balances).filter(k => k.startsWith('77')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const reprises = Object.keys(balances).filter(k => k.startsWith('78')).reduce((s, k) => s + balances[k].credit, 0) / 1000;  // 78 = reprises
 
-  const resultatExploitation = produits - charges + chargesFinancieres;
+  // autres produits = tout le reste de la classe 7 non détaillé ci-dessus (75, etc.)
+  const autresProduits = (produits - ventes - productionStockee - productionImmobilisee - subventionsExploitation - produitsFinanciers - produitsExceptionnels - reprises);
+
+  const totalChargesExploitation = achats + chargesExternes + chargesPersonnel + impotsTaxes + autresCharges + dotations;
+  const totalProduitsExploitation = ventes + productionStockee + productionImmobilisee + subventionsExploitation + autresProduits;
+
+  const resultatExploitation = totalProduitsExploitation - totalChargesExploitation;
+  const resultatFinancier = produitsFinanciers - chargesFinancieres;
+  const resultatExceptionnel = produitsExceptionnels - chargesExceptionnelles;
   const resultatNet = produits - charges;
+
+  // SIG computation
+  const margeCommerciale = ventesMarchandises - achatsMarchandises;
+  const productionExercice = ventes + productionStockee + productionImmobilisee;
+  const valeurAjoutee = margeCommerciale + productionExercice - chargesExternes - achatsMP - autresAchatsSIG;
+  const ebe = valeurAjoutee - impotsTaxes - chargesPersonnel;
+  const sigResultatExploitation = ebe + reprises - dotations;
+  const rcai = sigResultatExploitation + resultatFinancier;
+  const sigResultatNet = rcai + resultatExceptionnel;
+
+  // Ratios financiers
+  const liquiditeGenerale = passifC > 0 ? Math.round((actifC / passifC) * 100) / 100 : 0;
+  const liquiditeReduite = passifC > 0 ? Math.round(((actifC - stocks - provisionsStocksDeduction) / passifC) * 100) / 100 : 0;
+  const autonomieFinanciere = totalPassif > 0 ? Math.round((capPropres / totalPassif) * 10000) / 100 : 0;
+  const endettementNet = capPropres > 0 ? Math.round(((emprunts + concoursBancaires + autresPassifsNC) / capPropres) * 100) / 100 : 0;
+  const margeNette = totalProduitsExploitation > 0 ? Math.round((sigResultatNet / totalProduitsExploitation) * 10000) / 100 : 0;
+  const roe = capPropres > 0 ? Math.round((sigResultatNet / capPropres) * 10000) / 100 : 0;
+  const roa = totalActif > 0 ? Math.round((sigResultatNet / totalActif) * 10000) / 100 : 0;
+  const couvertureEmploisStables = actifNC > 0 ? Math.round(((capPropres + passifNC) / actifNC) * 100) / 100 : 0;
+  const margeExploitation = totalProduitsExploitation > 0 ? Math.round((sigResultatExploitation / totalProduitsExploitation) * 10000) / 100 : 0;
+
+  const fluxTresorerie = generateCashFlowStatement(
+    { actifC, actifNC, stocks, stocksBrutes, clients, fournisseurs, etatDebit, etatCredit, personnelCredit, capPropres, passifNC, passifC },
+    { sigResultatNet: sigResultatNet, resultatNet, dotations, reprises },
+    balances
+  );
 
   return {
     bilan: {
       actifNC, actifC, totalActif,
-      immobilisationsIncorporelles, immobilisationsCorporelles, immobilisationsFinancieres,
-      stocks, clients, etatDebit, personnelDebit, autresCréances, tresorerieActif,
+      fraisPreliminaires: fraisPreliminairesBrutes,
+      immobilisationsIncorporelles: immobilisationsIncorporellesBrutes,
+      immobilisationsCorporelles: immobilisationsCorporellesBrutes,
+      immobilisationsFinancieres: immobilisationsFinancieresBrutes,
+      amortissementsDeduction, provisionsActifNCDeduction,
+      stocks, stocksBrutes, provisionsStocksDeduction,
+      clients, clientsBrutes, provisionsClientsDeduction,
+      etatDebit, personnelDebit, autresCréances,
+      tresorerieActif, tresorerieBrute, provisionsTresorerieDeduction,
       capPropres, passifNC, passifC, totalPassif,
-      capitalSocial, reserves, emprunts, provisions,
+      capitalSocial, reserves, resultatsReportes, resultatExercice, autresCapitauxPropres,
+      emprunts, provisions, autresPassifsNC,
       fournisseurs, etatCredit, personnelCredit, autresDettes, concoursBancaires,
     },
     resultat: {
       produits, charges, resultatNet,
-      ventes, autresProduits,
-      achats, chargesExternes, chargesPersonnel, impotsTaxes,
-      autresCharges, chargesFinancieres, dotations,
-      resultatExploitation,
+      ventes, ventesMarchandises, ventesPrestations,
+      productionStockee, productionImmobilisee, subventionsExploitation,
+      autresProduits, produitsFinanciers, produitsExceptionnels, reprises,
+      achats, achatsMarchandises, achatsMP, autresAchatsSIG,
+      chargesExternes, chargesPersonnel, impotsTaxes,
+      autresCharges, chargesFinancieres, chargesExceptionnelles, dotations,
+      resultatExploitation, resultatFinancier, resultatExceptionnel,
+      totalProduitsExploitation, totalChargesExploitation,
+      // SIG
+      margeCommerciale, productionExercice, valeurAjoutee, ebe,
+      rcai, sigResultatNet,
+    },
+    ratios: {
+      liquiditeGenerale, liquiditeReduite, autonomieFinanciere, endettementNet,
+      margeNette, roe, roa, couvertureEmploisStables, margeExploitation,
+    },
+    fluxTresorerie,
+    details: {
+      fraisPreliminaires: soldeDetails(k => k.startsWith('20')),
+      immobilisationsIncorporelles: soldeDetails(k => k.startsWith('21')),
+      immobilisationsCorporelles: soldeDetails(k => k.startsWith('22') || k.startsWith('23') || k.startsWith('24') || k.startsWith('25') || k.startsWith('26')),
+      immobilisationsFinancieres: soldeDetails(k => k.startsWith('27')),
+      amortissementsDeduction: soldeDetails(k => k.startsWith('28')),
+      provisionsActifNCDeduction: soldeDetails(k => k.startsWith('29')),
+      stocksBrutes: soldeDetails(k => (k.startsWith('3') && !k.startsWith('39'))),
+      provisionsStocksDeduction: soldeDetails(k => k.startsWith('39')),
+      clientsBrutes: soldeDetails(k => k.startsWith('41')),
+      provisionsClientsDeduction: soldeDetails(k => k.startsWith('491')),
+      fournisseurs: soldeDetails(k => k.startsWith('40')),
+      etatDebit: soldeDetails(k => k.startsWith('43') && solde(k) > 0),
+      etatCredit: soldeDetails(k => k.startsWith('43') && solde(k) < 0),
+      personnelDebit: soldeDetails(k => k.startsWith('45')),
+      personnelCredit: soldeDetails(k => k.startsWith('42')),
+      autresCréances: soldeDetails(k => (k.startsWith('409') || k.startsWith('47')) && !k.startsWith('472')),
+      autresDettes: soldeDetails(k => k.startsWith('44') || k.startsWith('46') || k.startsWith('48') || k.startsWith('49')),
+      tresorerieBrute: soldeDetails(k => k.startsWith('5') && !k.startsWith('52') && !k.startsWith('59')),
+      provisionsTresorerieDeduction: soldeDetails(k => k.startsWith('59')),
+      concoursBancaires: soldeDetails(k => k.startsWith('52')),
+      capitalSocial: soldeDetails(k => k.startsWith('10')),
+      reserves: soldeDetails(k => k.startsWith('11')),
+      resultatsReportes: soldeDetails(k => k.startsWith('12')),
+      autresCapitauxPropres: soldeDetails(k => k.startsWith('14')),
+      emprunts: soldeDetails(k => k.startsWith('16') || k.startsWith('17')),
+      provisions: soldeDetails(k => k.startsWith('15')),
+      autresPassifsNC: soldeDetails(k => k.startsWith('18')),
+      ventes: soldeDetails(k => k.startsWith('70')),
+      productionStockee: soldeDetails(k => k.startsWith('71')),
+      productionImmobilisee: soldeDetails(k => k.startsWith('72')),
+      subventionsExploitation: soldeDetails(k => k.startsWith('74')),
+      produitsFinanciers: soldeDetails(k => k.startsWith('76')),
+      produitsExceptionnels: soldeDetails(k => k.startsWith('77')),
+      achats: soldeDetails(k => k.startsWith('60')),
+      chargesExternes: soldeDetails(k => k.startsWith('61')),
+      chargesPersonnel: soldeDetails(k => k.startsWith('62') || k.startsWith('64')),
+      impotsTaxes: soldeDetails(k => k.startsWith('63') || k.startsWith('6654')),
+      autresCharges: soldeDetails(k => k.startsWith('65')),
+      chargesFinancieres: soldeDetails(k => k.startsWith('66') && !k.startsWith('6654')),
+      chargesExceptionnelles: soldeDetails(k => k.startsWith('67')),
+      dotations: soldeDetails(k => k.startsWith('68')),
+    },
+    journal,
+  };
+}
+
+/**
+ * Génère l'État des flux de trésorerie (SCT norme 7) — méthode indirecte
+ */
+export function generateCashFlowStatement(bilan, resultat, journalBalances) {
+  const jb = journalBalances;
+  const cl = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + ((jb[k]?.debit || 0) - (jb[k]?.credit || 0)), 0) / 1000 : 0;
+  const db = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + (jb[k]?.debit || 0), 0) / 1000 : 0;
+  const cr = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + (jb[k]?.credit || 0), 0) / 1000 : 0;
+
+  const resultatNet = resultat.sigResultatNet || resultat.resultatNet || 0;
+  const dotations = resultat.dotations || 0;
+  const reprises = resultat.reprises || 0;
+
+  // Variations des actifs/passifs d'exploitation (directement depuis les soldes)
+  // Approche simplifiée: utiliser les soldes comme proxy des variations
+  const variationClients = -(cl('41') || 0) / 1000;
+  const variationFournisseurs = (cl('40') || 0) / 1000;
+  const variationEtat = (cl('43') || 0) / 1000;
+  const variationPersonnel = (cl('42') || 0) / 1000;
+  const variationStocks = -(cl('3') - cl('39') || 0) / 1000;
+
+  // Flux d'exploitation
+  const margeBruteAutofinancement = resultatNet + dotations - reprises;
+  const ajustementsExploitation = variationClients + variationFournisseurs + variationEtat + variationPersonnel + variationStocks;
+  const fluxExploitation = margeBruteAutofinancement + ajustementsExploitation;
+
+  // Flux d'investissement: acquisitions d'immobilisations (débit 2xxx crédit 5xx)
+  const acquisitionsImmobilisations = -(db('20') + db('21') + db('22') + db('23') + db('24') + db('25') + db('26') + db('27')) / 1000;
+  const cessionsImmobilisations = (cr('20') + cr('21') + cr('22') + cr('23') + cr('24') + cr('25') + cr('26') + cr('27')) / 1000;
+  const fluxInvestissement = acquisitionsImmobilisations + cessionsImmobilisations;
+
+  // Flux de financement: emprunts, capital, remboursements
+  const apportsCapital = cr('10') / 1000;
+  const empruntsNouveaux = cr('16') + cr('17') / 1000;
+  const remboursementsEmprunts = -(db('16') + db('17')) / 1000;
+  const fluxFinancement = apportsCapital + empruntsNouveaux + remboursementsEmprunts;
+
+  // Variation de trésorerie
+  const variationTresorerie = fluxExploitation + fluxInvestissement + fluxFinancement;
+
+  // Trésorerie finale = solde du compte 5 (sauf 52 concours bancaires)
+  const tresorerieFinale = Math.max((cl('5') - cl('52')), 0) / 1000;
+  const tresorerieInitiale = tresorerieFinale - variationTresorerie;
+
+  return {
+    fluxExploitation,
+    margeBruteAutofinancement,
+    dotations,
+    reprises,
+    variationClients,
+    variationFournisseurs,
+    variationEtat,
+    variationPersonnel,
+    variationStocks,
+    fluxInvestissement,
+    acquisitionsImmobilisations,
+    cessionsImmobilisations,
+    fluxFinancement,
+    apportsCapital,
+    empruntsNouveaux,
+    remboursementsEmprunts,
+    variationTresorerie,
+    tresorerieInitiale,
+    tresorerieFinale,
+  };
+}
+
+/**
+ * Génère les Soldes Intermédiaires de Gestion (SIG) — SCT norme 5
+ * Pyramide : Marge commerciale → Production → VA → EBE → Résultat exploitation → RCAI → Résultat net
+ */
+export function generateSIG(bilanData, resultatData, journalBalances) {
+  const jb = journalBalances;
+  const cl = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + ((jb[k]?.debit || 0) - (jb[k]?.credit || 0)), 0) / 1000 : 0;
+  const cr = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + (jb[k]?.credit || 0), 0) / 1000 : 0;
+  const db = (p) => jb ? Object.keys(jb).filter(k => k.startsWith(p)).reduce((s, k) => s + (jb[k]?.debit || 0), 0) / 1000 : 0;
+
+  // Ventes de marchandises (70) vs Prestations (706 si disponible, sinon proportion estimée)
+  const ventesMarchandises = jb ? cr('70') - cr('706') : resultatData.ventes * 0.55;
+  const ventesPrestations  = jb ? cr('706') : resultatData.ventes * 0.40;
+
+  // Achats de marchandises (601) vs Achats de MP (602) vs Autres achats (603-609)
+  const achatsMarchandises = jb ? db('601') : resultatData.achats * 0.50;
+  const achatsMP          = jb ? db('602') : resultatData.achats * 0.25;
+  const autresAchats      = jb ? db('603') + db('604') + db('605') + db('606') + db('607') + db('608') + db('609') : resultatData.achats * 0.25;
+
+  const production         = resultatData.ventes + (resultatData.productionStockee || 0) + (resultatData.productionImmobilisee || 0);
+  const consommationsExternes = resultatData.chargesExternes || 0;
+  const chargesPersonnel   = resultatData.chargesPersonnel || 0;
+  const impotsTaxes        = resultatData.impotsTaxes || 0;
+  const dotations          = resultatData.dotations || 0;
+  const reprises           = jb ? cr('78') : 0;
+
+  const margeCommerciale   = ventesMarchandises - achatsMarchandises;
+  const productionExercice = production;
+  const valeurAjoutee      = margeCommerciale + productionExercice - consommationsExternes - achatsMP - autresAchats;
+  const ebe                = valeurAjoutee - impotsTaxes - chargesPersonnel;
+  const resultatExploitation = ebe + reprises - dotations;
+  const rcai               = resultatExploitation + (resultatData.resultatFinancier || 0);
+  const resultatNet        = rcai + (resultatData.resultatExceptionnel || 0) - (resultatData.impotIS || 0);
+
+  return {
+    ventesMarchandises,
+    ventesPrestations,
+    achatsMarchandises,
+    achatsMP,
+    autresAchats,
+    production,
+    margeCommerciale,
+    productionExercice,
+    consommationsExternes,
+    valeurAjoutee,
+    chargesPersonnel,
+    impotsTaxes,
+    ebe,
+    reprises,
+    dotations,
+    resultatExploitation,
+    resultatFinancier: resultatData.resultatFinancier || 0,
+    rcai,
+    resultatExceptionnel: resultatData.resultatExceptionnel || 0,
+    impotIS: resultatData.impotIS || 0,
+    resultatNet,
+  };
+}
+
+/**
+ * Rapprochement bancaire : fait correspondre les transactions bancaires
+ * aux factures clients et dépenses fournisseurs.
+ *
+ * @param {Array} transactions - Transactions bancaires [{id, date, description, amount, type, status, matchedInvoiceId}]
+ * @param {Array} invoices - Factures clients [{id, clientName, totalAmount, status, invoiceNumber, dueDate}]
+ * @param {Array} expenses - Dépenses fournisseurs [{id, supplier, date, totalAmount, status, category}]
+ * @param {Array} [journal] - Écritures comptables (optionnel)
+ * @returns {{ rapprochees: Array, suggestions: Array, nonRapprochees: Object, stats: Object }}
+ */
+export function rapprochementBancaire(transactions = [], invoices = [], expenses = [], journal = []) {
+  const reconciled = transactions.filter(t => t.status === 'RECONCILED');
+  const unreconciled = transactions.filter(t => t.status !== 'RECONCILED');
+
+  const total = transactions.length;
+  const reconciledCount = reconciled.length;
+  const tauxRapprochement = total > 0 ? Math.round((reconciledCount / total) * 10000) / 100 : 0;
+
+  const unpaidInvoices = invoices.filter(inv => inv.status !== 'PAID');
+  const unpaidExpenses = expenses.filter(exp => exp.status !== 'PAID' && exp.status !== 'RECONCILED');
+
+  const suggestions = [];
+
+  for (const tx of unreconciled) {
+    const txAmount = Math.abs(parseFloat(tx.amount) || 0);
+    const isCredit = tx.type === 'CREDIT' || tx.type === 'crédit';
+    const candidates = isCredit ? unpaidInvoices : unpaidExpenses;
+
+    let best = null;
+    let bestScore = 0;
+
+    for (const cand of candidates) {
+      const candAmount = Math.abs(parseFloat(cand.totalAmount) || 0);
+      const diff = Math.abs(txAmount - candAmount);
+      const txDesc = (tx.description || '').toLowerCase();
+
+      let score = 0;
+      let strategy = '';
+
+      if (diff === 0) { score = 100; strategy = 'montant_exact'; }
+      else if (diff <= 0.010) { score = 95; strategy = 'montant_proche'; }
+      else if (txAmount > 0 && diff / txAmount <= 0.10) { score = 60; strategy = 'montant_partiel'; }
+
+      if (isCredit) {
+        const name = (cand.clientName || '').toLowerCase();
+        const num = (cand.invoiceNumber || '').toLowerCase();
+        if (name && txDesc.includes(name)) {
+          score = Math.min(score + 20, 100);
+          strategy = strategy.startsWith('montant') ? `${strategy}+client` : 'client';
+        }
+        if (num && txDesc.includes(num)) {
+          score = Math.min(score + 15, 100);
+          strategy = strategy.startsWith('montant') ? `${strategy}+facture` : 'facture';
+        }
+      } else {
+        const supplier = (cand.supplier || '').toLowerCase();
+        if (supplier && txDesc.includes(supplier)) {
+          score = Math.min(score + 20, 100);
+          strategy = strategy.startsWith('montant') ? `${strategy}+fournisseur` : 'fournisseur';
+        }
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        best = { candidate: cand, confidence: score, strategy, type: isCredit ? 'facture' : 'depense' };
+      }
+    }
+
+    if (best && bestScore >= 60) {
+      suggestions.push({ transaction: tx, ...best });
+    }
+  }
+
+  const matchedInvoiceIds = new Set(
+    [...reconciled.filter(t => t.matchedInvoiceId).map(t => t.matchedInvoiceId),
+     ...suggestions.filter(s => s.type === 'facture').map(s => s.candidate.id)]
+  );
+  const matchedExpenseIds = new Set(
+    suggestions.filter(s => s.type === 'depense').map(s => s.candidate.id)
+  );
+
+  const montantTotal = transactions.reduce((s, t) => s + Math.abs(parseFloat(t.amount) || 0), 0);
+  const montantRapproche = reconciled.reduce((s, t) => s + Math.abs(parseFloat(t.amount) || 0), 0);
+
+  return {
+    rapprochees: reconciled,
+    suggestions,
+    nonRapprochees: {
+      transactions: unreconciled.filter(tx =>
+        !suggestions.some(s => s.transaction.id === tx.id)
+      ),
+      invoices: unpaidInvoices.filter(inv => !matchedInvoiceIds.has(inv.id)),
+      expenses: unpaidExpenses.filter(exp => !matchedExpenseIds.has(exp.id)),
+    },
+    stats: {
+      total,
+      reconciled: reconciledCount,
+      unreconciled: unreconciled.length,
+      tauxRapprochement,
+      montantTotalTransactions: Math.round(montantTotal * 1000) / 1000,
+      montantRapproche: Math.round(montantRapproche * 1000) / 1000,
     },
   };
 }

@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Filter, RotateCcw, Search, X, Download, Eye, Edit3, Save, XCircle } from 'lucide-react';
+import { Filter, RotateCcw, Search, X, Download, Eye, Edit3, Save, XCircle, Lock } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { getDocument } from './utils/docStore';
 import { migrateJournal } from './utils/pieceComptable';
 import { getJournalKey } from './utils/journalKey';
+import { PCG_COMPLET } from './utils/pcgComplet';
 
 export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [] }) {
   const [journal, setJournal] = useState([]);
@@ -19,6 +20,30 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [detailPiece, setDetailPiece] = useState(null);
   const [editingPiece, setEditingPiece] = useState(null);
   const [editData, setEditData] = useState(null);
+  const [compteSuggest, setCompteSuggest] = useState({});
+
+  const cleanLibelle = (compte, libelle) => {
+    if (!libelle || !compte) return libelle || '';
+    const code = compte.toString().trim();
+    if (libelle.startsWith(code)) {
+      return libelle.slice(code.length).replace(/^[—–\-:\s]{1,3}/, '').trim();
+    }
+    return libelle;
+  };
+
+  const findLibelle = (code) => {
+    if (!code) return '';
+    const exact = PCG_COMPLET[code];
+    if (exact) return exact;
+    const prefix = Object.keys(PCG_COMPLET).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
+    return prefix ? PCG_COMPLET[prefix] : '';
+  };
+
+  const getSuggestions = (value) => {
+    if (!value || value.length < 1) return [];
+    const q = value.toLowerCase();
+    return Object.entries(PCG_COMPLET).filter(([k, v]) => k.includes(q) || v.toLowerCase().includes(q)).slice(0, 10);
+  };
 
   const saveEditPiece = () => {
     if (!editData || !editingPiece) return;
@@ -49,9 +74,20 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   const updateEditLine = (i, field, value) => {
     setEditData(prev => {
-      const lines = prev.lines.map((l, idx) => idx === i ? { ...l, [field]: value } : l);
+      const lines = prev.lines.map((l, idx) => {
+        if (idx !== i) return l;
+        const updated = { ...l, [field]: value };
+        if (field === 'compte' && value) {
+          const lib = findLibelle(value);
+          if (lib) updated.libelle = lib;
+        }
+        return updated;
+      });
       return { ...prev, lines };
     });
+    if (field === 'compte') {
+      setCompteSuggest(prev => ({ ...prev, [i]: getSuggestions(value) }));
+    }
   };
 
   const updateEditFirst = (field, value) => {
@@ -336,7 +372,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                               ) : ''}
                             </td>
                             <td className="py-4 px-6 font-mono text-slate-300">{l.compte}</td>
-                            <td className="py-4 px-6 text-slate-200">{l.libelle}</td>
+                            <td className="py-4 px-6 text-slate-200">{cleanLibelle(l.compte, l.libelle)}</td>
                             <td className="py-4 px-6 text-right text-danger-400 font-semibold">
                               {l.debit && l.debit !== 0
                                 ? Number(l.debit).toFixed(3) + ' DT'
@@ -485,7 +521,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   {lines.map((l, i) => (
                     <tr key={i} className="hover:bg-slate-800/20 transition-colors">
                       <td className="py-2 pr-4 font-mono text-slate-300">{l.compte}</td>
-                      <td className="py-2 pr-4 text-slate-200">{l.libelle}</td>
+                      <td className="py-2 pr-4 text-slate-200">{cleanLibelle(l.compte, l.libelle)}</td>
                       <td className="py-2 pr-4 text-right text-danger-400">{l.debit ? Number(l.debit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
                       <td className="py-2 pr-4 text-right text-accent-400">{l.credit ? Number(l.credit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
                     </tr>
@@ -510,14 +546,20 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
         const totalCred = editData.lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
         const balanced = Math.abs(totalDeb - totalCred) < 0.001;
         const first = editData.first;
+        const lockedEdit = balanced;
+        const inputClass = (readOnly) => `w-full bg-slate-800 border ${readOnly ? 'border-slate-700/50 text-slate-500 cursor-not-allowed' : 'border-slate-700 text-slate-300'} rounded-lg px-2 py-1.5 font-mono focus:outline-none ${readOnly ? '' : 'focus:border-brand-500'}`;
+        const inputClassNorm = (readOnly) => inputClass(readOnly).replace('font-mono', '');
         return (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={() => { setEditingPiece(null); setEditData(null); }}>
             <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl p-6 space-y-4" onClick={e => e.stopPropagation()}>
               <div className="flex items-start justify-between">
-                <h3 className="text-sm font-bold text-white">Modifier {editingPiece}</h3>
                 <div className="flex items-center gap-2">
-                  <button onClick={saveEditPiece}
-                    className="flex items-center gap-1 px-3 py-1.5 bg-accent-500 hover:bg-accent-400 text-white text-[10px] font-bold rounded-xl transition-colors">
+                  <h3 className="text-sm font-bold text-white">Modifier {editingPiece}</h3>
+                  {lockedEdit && <span className="text-[10px] flex items-center gap-1 px-2 py-0.5 bg-slate-700/50 text-slate-400 rounded-full"><Lock className="w-3 h-3" /> Verrouillé</span>}
+                </div>
+                <div className="flex items-center gap-2">
+                  <button onClick={saveEditPiece} disabled={!balanced}
+                    className={`flex items-center gap-1 px-3 py-1.5 text-[10px] font-bold rounded-xl transition-colors ${balanced ? 'bg-accent-500 hover:bg-accent-400 text-white' : 'bg-slate-800 text-slate-600 cursor-not-allowed'}`}>
                     <Save className="w-3 h-3" /> Sauvegarder
                   </button>
                   <button onClick={() => { setEditingPiece(null); setEditData(null); }}
@@ -526,21 +568,26 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   </button>
                 </div>
               </div>
+              {lockedEdit && (
+                <div className="text-[11px] text-slate-500 bg-slate-800/50 rounded-xl px-3 py-2">
+                  ⚠ Écriture équilibrée — les champs sont verrouillés. Pour modifier, videz d'abord un débit ou crédit.
+                </div>
+              )}
               <div className="grid grid-cols-3 gap-3 text-xs">
                 <div>
                   <label className="text-[10px] text-slate-500 block mb-1">Date</label>
-                  <input type="date" value={first.date || ''} onChange={e => updateEditFirst('date', e.target.value)}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-brand-500" />
+                  <input type="date" value={first.date || ''} onChange={e => updateEditFirst('date', e.target.value)} disabled={lockedEdit}
+                    className={inputClassNorm(lockedEdit)} />
                 </div>
                 <div>
                   <label className="text-[10px] text-slate-500 block mb-1">Journal</label>
-                  <input type="text" value={first.journal || ''} onChange={e => updateEditFirst('journal', e.target.value)}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                  <input type="text" value={first.journal || ''} onChange={e => updateEditFirst('journal', e.target.value)} disabled={lockedEdit}
+                    className={inputClassNorm(lockedEdit)} />
                 </div>
                 <div>
                   <label className="text-[10px] text-slate-500 block mb-1">Pièce justificative</label>
-                  <input type="text" value={first.piece_justificative || ''} onChange={e => updateEditFirst('piece_justificative', e.target.value)}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                  <input type="text" value={first.piece_justificative || ''} onChange={e => updateEditFirst('piece_justificative', e.target.value)} disabled={lockedEdit}
+                    className={inputClassNorm(lockedEdit)} />
                 </div>
               </div>
               <table className="w-full text-left text-xs border-collapse">
@@ -556,25 +603,36 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                 <tbody className="divide-y divide-slate-800/50">
                   {editData.lines.map((l, i) => (
                     <tr key={i}>
-                      <td className="py-1.5 pr-2">
-                        <input type="text" value={l.compte || ''} onChange={e => updateEditLine(i, 'compte', e.target.value)}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                      <td className="py-1.5 pr-2 relative">
+                        <input type="text" value={l.compte || ''} onChange={e => updateEditLine(i, 'compte', e.target.value)} onFocus={e => updateEditLine(i, 'compte', l.compte || '')} disabled={lockedEdit}
+                          className={inputClass(lockedEdit)} />
+                        {!lockedEdit && compteSuggest[i]?.length > 0 && (
+                          <div className="absolute z-10 top-full left-0 right-0 mt-0.5 bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-h-36 overflow-y-auto">
+                            {compteSuggest[i].map(([code, lib]) => (
+                              <button key={code} type="button" onClick={() => { updateEditLine(i, 'compte', code); setCompteSuggest(prev => ({ ...prev, [i]: [] })); }}
+                                className="w-full text-left px-2 py-1.5 text-[11px] text-slate-300 hover:bg-brand-600/30 font-mono flex justify-between">
+                                <span>{code}</span>
+                                <span className="text-slate-500 ml-2 truncate">{lib}</span>
+                              </button>
+                            ))}
+                          </div>
+                        )}
                       </td>
                       <td className="py-1.5 pr-2">
-                        <input type="text" value={l.libelle || ''} onChange={e => updateEditLine(i, 'libelle', e.target.value)}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-brand-500" />
+                        <input type="text" value={l.libelle || ''} onChange={e => updateEditLine(i, 'libelle', e.target.value)} disabled={lockedEdit}
+                          className={inputClassNorm(lockedEdit)} />
                       </td>
                       <td className="py-1.5 pr-2">
-                        <input type="number" step="0.001" value={l.debit ?? ''} onChange={e => updateEditLine(i, 'debit', e.target.value === '' ? null : parseFloat(e.target.value))}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-right text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                        <input type="number" step="0.001" value={l.debit ?? ''} onChange={e => updateEditLine(i, 'debit', e.target.value === '' ? null : parseFloat(e.target.value))} disabled={lockedEdit}
+                          className={`${inputClass(lockedEdit)} text-right`} />
                       </td>
                       <td className="py-1.5 pr-2">
-                        <input type="number" step="0.001" value={l.credit ?? ''} onChange={e => updateEditLine(i, 'credit', e.target.value === '' ? null : parseFloat(e.target.value))}
-                          className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-right text-slate-300 font-mono focus:outline-none focus:border-brand-500" />
+                        <input type="number" step="0.001" value={l.credit ?? ''} onChange={e => updateEditLine(i, 'credit', e.target.value === '' ? null : parseFloat(e.target.value))} disabled={lockedEdit}
+                          className={`${inputClass(lockedEdit)} text-right`} />
                       </td>
                       <td className="py-1.5">
-                        <button type="button" onClick={() => removeEditLine(i)}
-                          className="text-slate-600 hover:text-danger-400 transition-colors">
+                        <button type="button" onClick={() => removeEditLine(i)} disabled={lockedEdit}
+                          className={`transition-colors ${lockedEdit ? 'text-slate-700 cursor-not-allowed' : 'text-slate-600 hover:text-danger-400'}`}>
                           <XCircle className="w-3.5 h-3.5" />
                         </button>
                       </td>
@@ -584,11 +642,13 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                 <tfoot>
                   <tr className="border-t border-slate-700 text-xs font-bold">
                     <td className="py-3 pr-4">
-                      <button type="button" onClick={addEditLine}
-                        className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
-                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 5v14M5 12h14"/></svg>
-                        Ajouter une ligne
-                      </button>
+                      {!lockedEdit && (
+                        <button type="button" onClick={addEditLine}
+                          className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
+                          <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 5v14M5 12h14"/></svg>
+                          Ajouter une ligne
+                        </button>
+                      )}
                     </td>
                     <td className={`py-3 pr-4 ${balanced ? 'text-accent-400' : 'text-danger-400'}`}>
                       {balanced ? '✓ Équilibré' : '✗ Déséquilibré — ' + (totalDeb - totalCred).toFixed(3) + ' DT d\'écart'}
