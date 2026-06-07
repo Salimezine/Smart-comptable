@@ -1,4 +1,5 @@
 import { getJournalKey } from './journalKey';
+import { logAction, AUDIT_ACTIONS } from './security/auditLog';
 
 export const CATEGORIE_TO_COMPTE = {
   'Télécoms & Internet': '626000',
@@ -287,6 +288,7 @@ export function saveJournalPiece(piece, opts = {}) {
     journal.unshift(...entries);
     localStorage.setItem(getJournalKey(), JSON.stringify(journal));
     window.dispatchEvent(new CustomEvent('journal:updated'));
+    logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: `Pièce ${piece.id} sauvegardée (${piece.lignes.length} lignes)` });
     return true;
   } catch {
     return false;

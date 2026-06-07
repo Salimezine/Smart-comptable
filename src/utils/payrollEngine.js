@@ -5,6 +5,7 @@
 
 import { jsPDF } from 'jspdf';
 import { autoTable } from 'jspdf-autotable';
+import { logAction, AUDIT_ACTIONS } from './security/auditLog';
 
 export const TAUX = {
   cnss_sal: 0.0968,
@@ -171,7 +172,7 @@ export function genererEcrituresPaie(bulletins, mois, annee) {
     credit: parseFloat(e.credit.toFixed(3)),
   }));
 
-  return {
+  const piece = {
     id: libelleNumero,
     date: `${annee}-${String(mois).padStart(2, '0')}-01`,
     journal: 'OD',
@@ -185,6 +186,8 @@ export function genererEcrituresPaie(bulletins, mois, annee) {
     totalCredit,
     validated: true,
   };
+  logAction(AUDIT_ACTIONS.PAIE_VALIDATE, { mois, annee, employes: bulletins.length, totalBrut, totalNet });
+  return piece;
 }
 
 // ─────────────────────────────────────────────
@@ -228,7 +231,7 @@ export function genererPaiementPaie(bulletins, type, mois, annee) {
   const totalDebit = parseFloat(ecritures.reduce((s, e) => s + e.debit, 0).toFixed(3));
   const totalCredit = parseFloat(ecritures.reduce((s, e) => s + e.credit, 0).toFixed(3));
 
-  return {
+  const piece = {
     id: paiementId,
     date,
     journal: 'BQ',
@@ -242,6 +245,8 @@ export function genererPaiementPaie(bulletins, type, mois, annee) {
     totalCredit,
     validated: true,
   };
+  logAction(AUDIT_ACTIONS.PAIE_SAVE, { mois, annee, type, montant: totalDebit });
+  return piece;
 }
 
 export function saveJournalPiece(piece) {

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Plus, CheckCircle2, X } from 'lucide-react';
+import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
+import { can } from './utils/auth/permissionEngine';
 
-const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreateCompany }) => {
+const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreateCompany, currentUser }) => {
   const [showModal, setShowModal] = useState(false);
   const [newCompany, setNewCompany] = useState({
     name: '',
@@ -13,13 +15,20 @@ const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreat
     currency: 'TND',
   });
 
+  const canCreate = !currentUser || can(currentUser, 'companies', 'create');
+
   const handleSelect = (e) => {
     const id = e.target.value;
-    if (id) onCompanyChange(id);
+    if (id) {
+      logAction(AUDIT_ACTIONS.COMPANY_SWITCH, { from: currentCompanyId, to: id });
+      onCompanyChange(id);
+    }
   };
 
   const handleCreate = () => {
+    if (!canCreate) return;
     onCreateCompany(newCompany);
+    logAction(AUDIT_ACTIONS.COMPANY_CREATE, { name: newCompany.name });
     setNewCompany({ name: '', email: '', vatNumber: '', address: '', iban: '', bic: '', currency: 'TND' });
     setShowModal(false);
   };
@@ -37,12 +46,14 @@ const CompanySwitcher = ({ companies, currentCompanyId, onCompanyChange, onCreat
         ))}
       </select>
 
-      <button
-        onClick={() => setShowModal(true)}
-        className="mt-2 w-full flex items-center justify-center gap-2 px-3 py-1.5 bg-brand-500/10 border border-brand-500/20 text-brand-400 rounded-xl hover:bg-brand-500/20 transition-colors text-xs font-bold"
-      >
-        <Plus className="w-3.5 h-3.5" /> Nouvelle Société
-      </button>
+      {canCreate && (
+        <button
+          onClick={() => setShowModal(true)}
+          className="mt-2 w-full flex items-center justify-center gap-2 px-3 py-1.5 bg-brand-500/10 border border-brand-500/20 text-brand-400 rounded-xl hover:bg-brand-500/20 transition-colors text-xs font-bold"
+        >
+          <Plus className="w-3.5 h-3.5" /> Nouvelle Société
+        </button>
+      )}
 
       {showModal && (
         <div className="fixed inset-0 bg-slate-950/80 flex items-center justify-center z-50">

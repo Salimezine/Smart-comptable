@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { runJournalAudit, generateAuditMarkdown } from './auditEngine';
-import { ShieldCheck, AlertTriangle, CheckCircle, XCircle, Download, RefreshCw, FileText, Sparkles, BarChart3, ListChecks } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, CheckCircle, XCircle, Download, RefreshCw, FileText, Sparkles, BarChart3, ListChecks, Info } from 'lucide-react';
 import { jsPDF } from 'jspdf';
 
 const fmt = (v) => {
@@ -243,6 +243,31 @@ export default function AuditView({ companyDetails }) {
               </div>
             ))}
           </div>
+
+          {/* Optimisations fiscales & réduction de charges */}
+          {auditResult.optimizations?.length > 0 && (
+            <div className="space-y-1.5">
+              <h4 className="text-xs font-bold text-emerald-300 flex items-center gap-2">
+                <Sparkles className="w-3.5 h-3.5" /> Conseils d'optimisation ({auditResult.optimizations.length})
+              </h4>
+              {auditResult.optimizations.map((o, i) => {
+                const typeColors = { reduction: 'border-red-600/20 bg-red-500/5', fiscal: 'border-amber-600/20 bg-amber-500/5', structure: 'border-blue-600/20 bg-blue-500/5', investissement: 'border-emerald-600/20 bg-emerald-500/5' };
+                const bg = typeColors[o.type] || 'border-slate-600/20 bg-slate-800/30';
+                return (
+                  <div key={i} className={`flex items-start gap-3 p-3 rounded-xl border ${bg}`}>
+                    <span className="text-lg">{o.icon}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-bold text-slate-200">{o.title}</p>
+                      <p className="text-[10px] text-slate-400 mt-0.5">{o.detail}</p>
+                      {o.gain && (
+                        <p className="text-[10px] text-emerald-400 font-semibold mt-1">{o.gain}</p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
 
           {/* Recommendations */}
           {auditResult.recommendations.length > 0 && (

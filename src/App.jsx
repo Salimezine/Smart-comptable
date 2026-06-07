@@ -76,7 +76,6 @@ import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 
 import Onboarding from './Onboarding';
-import CompanySwitcher from './CompanySwitcher';
 import FournisseursView from './FournisseursView';
 import JournalView from './JournalView';
 import ManualEntryView from './ManualEntryView';
@@ -85,7 +84,16 @@ import FinancialReportView from './FinancialReportView';
 import FiscalDeclarationView from './FiscalDeclarationView';
 import PayrollView from './PayrollView';
 import AuditView from './AuditView';
-import { isPinSet, setPin, verifyPin, setupInactivityTracker, resetAll } from './security';
+import LoginView from './views/LoginView';
+import AdminDashboardView from './views/AdminDashboardView';
+import CompanySwitcher from './CompanySwitcher';
+import { isLocked, lockApp, unlockApp, startInactivityTimer, stopInactivityTimer, resetInactivityTimer, getConfig } from './utils/security/pinManager';
+import { validateSession, createSession, destroySession, getCurrentUser, getCurrentCompany } from './utils/security/sessionManager';
+import PermissionGuard from './components/PermissionGuard';
+import { getUsers, getUserById, hasUsers } from './utils/auth/userStore';
+import { can, filterModules } from './utils/auth/permissionEngine';
+import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
+import { isBackupOverdue } from './utils/security/backupManager';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
 import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
@@ -340,11 +348,10 @@ function AuditReportRenderer({ report }) {
 }
 
 export default function App() {
-  // Security State
-  const [locked, setLocked] = useState(true);
-  const [pinMode, setPinMode] = useState(null); // 'setup' | 'unlock' | null
-  const pinRef = useRef('');
-  const lockCleanupRef = useRef(null);
+  // Security State — session-based (replaces old PIN)
+  const [sessionValid, setSessionValid] = useState(null); // null = loading, true = valid, false = show login
+  const [currentUser, setCurrentUser] = useState(null);
+  const [appLocked, setAppLocked] = useState(false);
 
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
@@ -356,21 +363,105 @@ export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchRef = useRef(null);
 
-  // Advisor State
-  const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
-  const [advisorLoading, setAdvisorLoading] = useState(false);
-  const [advisorReport, setAdvisorReport] = useState('');
-  
-  // App States - Multi-Tenant
+  // Session validation on startup
+  useEffect(() => {
+    const init = async () => {
+      const { valid, userId, companyId } = validateSession();
+      if (valid && userId) {
+        const user = getUserById(userId);
+        if (user) {
+          setCurrentUser(user);
+          setSessionValid(true);
+          if (companyId && companyId !== 'default') {
+            setCurrentCompanyId(companyId);
+            localStorage.setItem('smart_comptable_current_id', companyId);
+          }
+          if (isLocked()) {
+            unlockApp();
+          }
+          return;
+        }
+      }
+      setSessionValid(false);
+    };
+    init();
+  }, []);
+
+  // Inactivity timeout
+  useEffect(() => {
+    if (!sessionValid) return;
+    const cfg = getConfig();
+    const handler = () => resetInactivityTimer(() => {
+      setAppLocked(true);
+      lockApp();
+      logAction(AUDIT_ACTIONS.APP_LOCKED, {});
+    });
+    window.addEventListener('mousemove', handler);
+    window.addEventListener('keydown', handler);
+    startInactivityTimer(() => {
+      setAppLocked(true);
+      lockApp();
+      logAction(AUDIT_ACTIONS.APP_LOCKED, {});
+    });
+    return () => {
+      window.removeEventListener('mousemove', handler);
+      window.removeEventListener('keydown', handler);
+      stopInactivityTimer();
+    };
+  }, [sessionValid]);
+
+  // App States - Multi-tenant (declared early for LoginView access)
   const [companies, setCompanies] = useState(() => {
     const stored = localStorage.getItem('smart_comptable_companies');
     if (!stored) return {};
     try { return JSON.parse(stored); } catch { return {}; }
   });
-  
+
   const [currentCompanyId, setCurrentCompanyId] = useState(() => {
     return localStorage.getItem('smart_comptable_current_id') || null;
   });
+
+  const handleLogin = (user, session) => {
+    setCurrentUser(user);
+    setSessionValid(true);
+    const companyId = session.companyId || 'default';
+    if (companyId !== 'default') {
+      setCurrentCompanyId(companyId);
+      localStorage.setItem('smart_comptable_current_id', companyId);
+    }
+  };
+
+  const handleLogout = () => {
+    destroySession();
+    setCurrentUser(null);
+    setSessionValid(false);
+    logAction(AUDIT_ACTIONS.LOGOUT, {});
+  };
+
+  const handleCompanySwitch = (id) => {
+    setCurrentCompanyId(id);
+    localStorage.setItem('smart_comptable_current_id', id);
+    const session = createSession(currentUser?.id, id);
+    logAction(AUDIT_ACTIONS.COMPANY_SWITCH, { to: id });
+  };
+
+  // Show LoginView when not authenticated
+  if (sessionValid === null) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
+      </div>
+    );
+  }
+
+  if (sessionValid === false || appLocked) {
+    return <LoginView onLogin={handleLogin} companyId={currentCompanyId || null} />;
+  }
+
+  // Advisor State
+  const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
+  const [advisorLoading, setAdvisorLoading] = useState(false);
+  const [advisorReport, setAdvisorReport] = useState('');
 
   const [invoices, setInvoices] = useState([]);
   const [transactions, setTransactions] = useState([]);
@@ -379,39 +470,6 @@ export default function App() {
   const [piecesComptables, setPiecesComptables] = useState(() => {
     try { return JSON.parse(localStorage.getItem('piecesComptables') || '[]'); } catch { return []; }
   });
-
-  // PIN initialization
-  useEffect(() => {
-    if (!isPinSet()) {
-      setPinMode('setup');
-    } else {
-      setPinMode('unlock');
-    }
-  }, []);
-
-  const handleLock = useCallback(() => {
-    if (lockCleanupRef.current) lockCleanupRef.current();
-    lockCleanupRef.current = null;
-    pinRef.current = '';
-    setLocked(true);
-    setPinMode('unlock');
-  }, []);
-
-  const handleUnlock = useCallback(async (pin) => {
-    const ok = await verifyPin(pin);
-    if (!ok) return false;
-    pinRef.current = pin;
-    setLocked(false);
-    setPinMode(null);
-    lockCleanupRef.current = setupInactivityTracker(() => handleLock());
-    return true;
-  }, [handleLock]);
-
-  const handleSetupPin = useCallback(async (pin) => {
-    await setPin(pin);
-    const ok = await handleUnlock(pin);
-    return ok;
-  }, [handleUnlock]);
 
   const handleGenerateSimulatedData = useCallback(() => {
     const data = generateSimulatedData();
@@ -498,15 +556,7 @@ export default function App() {
     setSearchOpen(true);
   }, [invoices, expenses]);
 
-  // Security screens
-  if (locked && pinMode === 'setup') {
-    return <PinSetupScreen onComplete={handleSetupPin} />;
-  }
-  if (locked && pinMode === 'unlock') {
-    return <LockScreen onUnlock={handleUnlock} />;
-  }
-
-  // 1. Écran de démarrage obligatoire
+  // 1. Écran de démarrage obligatoire (only if no companies exist yet)
   if (!currentCompanyId || !companies[currentCompanyId]) {
     return <Onboarding onComplete={handleCreateCompany} />;
   }
@@ -610,8 +660,13 @@ export default function App() {
               { id: 'fiscal', label: 'Déclarations fiscales', icon: Calculator, badge: 'Liasse' },
               { id: 'payroll', label: 'Paie & CNSS', icon: User },
               { id: 'audit', label: 'Audit', icon: ShieldCheck },
+              { id: 'admin', label: 'Administration', icon: ShieldCheck },
               { id: 'settings', label: 'Configuration', icon: SettingsIcon },
-            ].map(item => {
+            ].filter(item => {
+              if (!currentUser) return true;
+              if (item.id === 'admin') return can(currentUser, 'admin', 'access');
+              return filterModules(currentUser, [item.id]).length > 0;
+            }).map(item => {
               const Icon = item.icon;
               const isActive = currentTab === item.id;
               return (
@@ -646,10 +701,11 @@ export default function App() {
           <CompanySwitcher 
             companies={companies}
             currentCompanyId={currentCompanyId}
-            onCompanyChange={handleCompanyChange}
+            onCompanyChange={handleCompanySwitch}
             onCreateCompany={handleCreateCompany}
+            currentUser={currentUser}
           />
-          <button onClick={handleLock} className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-amber-400 hover:bg-slate-800/40 transition-all duration-200">
+          <button onClick={handleLogout} className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-amber-400 hover:bg-slate-800/40 transition-all duration-200">
             <Lock className="w-3.5 h-3.5" />
             Verrouiller
           </button>
@@ -798,16 +854,18 @@ export default function App() {
         <div className="flex-1 p-4 sm:p-6 lg:p-8">
           <div className="max-w-7xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-in">
             {currentTab === 'dashboard' && (
-              <DashboardView 
-                totalRevenues={totalRevenues}
-                pendingRevenues={pendingRevenues}
-                totalExpenses={totalExpenses}
-                bankBalance={bankBalance}
-                estimatedTaxes={estimatedTaxes}
-                formatCurrency={formatCurrency}
-                invoices={invoices}
-                expenses={expenses}
-              />
+              <PermissionGuard module="dashboard" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
+                <DashboardView 
+                  totalRevenues={totalRevenues}
+                  pendingRevenues={pendingRevenues}
+                  totalExpenses={totalExpenses}
+                  bankBalance={bankBalance}
+                  estimatedTaxes={estimatedTaxes}
+                  formatCurrency={formatCurrency}
+                  invoices={invoices}
+                  expenses={expenses}
+                />
+              </PermissionGuard>
             )}
             {currentTab === 'invoicing' && (
               <InvoicingView 
@@ -886,12 +944,14 @@ export default function App() {
               />
             )}
             {currentTab === 'journal' && (
-              <JournalView
-                invoices={invoices}
-                expenses={expenses}
-                transactions={transactions}
-                formatCurrency={formatCurrency}
-              />
+              <PermissionGuard module="journal" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
+                <JournalView
+                  invoices={invoices}
+                  expenses={expenses}
+                  transactions={transactions}
+                  formatCurrency={formatCurrency}
+                />
+              </PermissionGuard>
             )}
             {currentTab === 'fiscal' && (
               <FiscalDeclarationView
@@ -899,14 +959,26 @@ export default function App() {
               />
             )}
             {currentTab === 'payroll' && (
-              <PayrollView
-                companyDetails={companyDetails}
-              />
+              <PermissionGuard module="paie" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
+                <PayrollView
+                  companyDetails={companyDetails}
+                />
+              </PermissionGuard>
             )}
             {currentTab === 'audit' && (
-              <AuditView
-                companyDetails={companyDetails}
-              />
+              <PermissionGuard module="audit" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
+                <AuditView
+                  companyDetails={companyDetails}
+                />
+              </PermissionGuard>
+            )}
+            {currentTab === 'admin' && (
+              <PermissionGuard module="admin" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
+                <AdminDashboardView
+                  currentUser={currentUser}
+                  onLogout={handleLogout}
+                />
+              </PermissionGuard>
             )}
             {currentTab === 'settings' && (
               <SettingsView 
@@ -2292,7 +2364,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         corrige.rs_montant = parseFloat(formData.rsAmount) || 0;
         corrige.rs_taux = rsRate === 'other' ? (parseFloat(rsCustomRate) || 1.5) : (parseFloat(rsRate) || 1.5);
       }
-      console.log('runJournalPipeline corrige:', JSON.stringify(corrige, null, 2));
+      if (import.meta.env.DEV) console.log('runJournalPipeline corrige:', JSON.stringify(corrige, null, 2));
       const piece = journalComptable(corrige, {
         type: typeJustificatif === 'achat' ? 'achat' : 'vente',
         fournisseurNom: formData.supplier || 'Fournisseur',

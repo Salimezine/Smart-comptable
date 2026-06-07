@@ -5,6 +5,7 @@
  * Pure JS navigateur — localStorage
  */
 import { getJournalKey } from './journalKey';
+import { logAction, AUDIT_ACTIONS } from './security/auditLog';
 
 // ─────────────────────────────────────────────
 // Comptes PCG TN par catégorie
@@ -287,6 +288,7 @@ export function savePieceToJournal(piece, opts = {}) {
     journal.unshift(...entries);
     localStorage.setItem(getJournalKey(), JSON.stringify(journal));
     window.dispatchEvent(new CustomEvent('journal:updated'));
+    logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: `Pièce ${piece.id} sauvegardée (${piece.lignes.length} lignes)` });
   } catch {
     /* silencieux */
   }
@@ -346,6 +348,7 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
 
     localStorage.setItem(getJournalKey(), JSON.stringify(entries));
     window.dispatchEvent(new CustomEvent('journal:updated'));
+    logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: `Écriture simple ${numeroPiece} sauvegardée` });
   } catch {
     /* silencieux */
   }

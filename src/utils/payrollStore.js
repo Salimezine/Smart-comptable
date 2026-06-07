@@ -1,6 +1,7 @@
 /**
  * payrollStore.js — Persistance paie per-company
  */
+import { logAction, AUDIT_ACTIONS } from './security/auditLog';
 
 function getCompanyId() {
   try {
@@ -55,6 +56,7 @@ export function saveBulletin(bulletin) {
     const filtered = all.filter(b => !(b.mois === bulletin.mois && b.annee === bulletin.annee && b.employeId === bulletin.employeId));
     filtered.push(bulletin);
     localStorage.setItem(allKey, JSON.stringify(filtered));
+    logAction(AUDIT_ACTIONS.PAIE_SAVE, { employeId: bulletin.employeId, nom: bulletin.nom, mois: bulletin.mois, annee: bulletin.annee, brut: bulletin.brut });
     return bulletin;
   } catch { return null; }
 }

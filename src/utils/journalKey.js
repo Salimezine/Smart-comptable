@@ -1,3 +1,5 @@
+import { logAction, AUDIT_ACTIONS } from './security/auditLog';
+
 const OLD_KEY = 'smart_journal';
 
 export function getJournalKey() {
@@ -12,6 +14,7 @@ export function getJournalKey() {
           const existing = localStorage.getItem(key);
           if (!existing) {
             localStorage.setItem(key, old);
+            logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: 'Migration des données du journal global vers clé société', oldKey: OLD_KEY, newKey: key });
           }
         }
       } catch { /* ignore */ }

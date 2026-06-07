@@ -51,6 +51,7 @@ export const runJournalAudit = ({ companyDetails } = {}) => {
   const bankEntries = journal.filter(e => e.compte && e.compte.startsWith('532'));
   const bankDebitTotal = bankEntries.reduce((s, e) => s + (e.debit || 0), 0);
   const bankCreditTotal = bankEntries.reduce((s, e) => s + (e.credit || 0), 0);
+  const cashAndBank = bankDebitTotal - bankCreditTotal;
 
   const lockedCount = journal.filter(e => e.locked === true).length;
   const pieceIds = journal.map(e => e.numeroPiece).filter(Boolean);
@@ -440,11 +441,191 @@ export const runJournalAudit = ({ companyDetails } = {}) => {
   else if (auditScore >= 60) recommendations.push('Niveau de conformité acceptable. Quelques points d\'attention à corriger.');
   else recommendations.push('Plusieurs non-conformités détectées. Consultez un expert-comptable agréé OECT.');
 
+  // ── Optimisations fiscales & réduction de charges ──
+  const optimizations = [];
+
+  // Analyse des charges par compte
+  const chargeAccounts = {};
+  for (const e of journal) {
+    const c = (e.compte || '').split(' ')[0];
+    if (c.startsWith('6')) {
+      chargeAccounts[c] = (chargeAccounts[c] || 0) + (e.debit || 0);
+    }
+  }
+
+  const totalChargesClass6 = Object.values(chargeAccounts).reduce((s, v) => s + v, 0);
+
+  // Top charges
+  const sortedCharges = Object.entries(chargeAccounts).sort((a, b) => b[1] - a[1]);
+  const topThreeCharges = sortedCharges.slice(0, 3);
+
+  if (totalChargesClass6 > 0) {
+    // Réduction des charges générales
+    const fraisGest = chargeAccounts['611000'] || 0;
+    if (fraisGest > totalChargesClass6 * 0.3) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Frais généraux élevés',
+        detail: `Les frais d'entretien et réparations (611000) représentent ${fmtPct(fraisGest / totalChargesClass6)} des charges totales. Négociez avec les prestataires ou regroupez les achats pour réduire les coûts.`,
+        gain: `Économie potentielle : ${fmt(fraisGest * 0.15)}–${fmt(fraisGest * 0.3)}`,
+      });
+    }
+
+    const honoraires = chargeAccounts['622200'] || 0;
+    if (honoraires > 5000) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Honoraires et conseils élevés',
+        detail: `Honoraires (622200) de ${fmt(honoraires)}. Envisagez des abonnements annuels ou des forfaits pour réduire les coûts de conseil juridique/comptable.`,
+        gain: `Économie possible : ${fmt(honoraires * 0.1)}–${fmt(honoraires * 0.2)}`,
+      });
+    }
+
+    const telecom = chargeAccounts['626000'] || 0;
+    if (telecom > 3000) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Frais de télécommunications',
+        detail: `Télécommunications (626000) de ${fmt(telecom)}. Comparez les offres opérateurs ou optez pour des forfaits professionnels groupés.`,
+        gain: `Économie possible : ${fmt(telecom * 0.2)}–${fmt(telecom * 0.35)}`,
+      });
+    }
+
+    const transport = chargeAccounts['624000'] || 0;
+    if (transport > 5000) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Frais de transport élevés',
+        detail: `Transport (624000) de ${fmt(transport)}. Optimisez les tournées, privilégiez le covoiturage professionnel ou les véhicules électriques (avantage fiscal).`,
+        gain: `Économie possible : ${fmt(transport * 0.15)}–${fmt(transport * 0.25)}`,
+      });
+    }
+
+    const loyer = chargeAccounts['613000'] || 0;
+    if (loyer > totalChargesClass6 * 0.2) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Loyers élevés',
+        detail: `Loyers (613000) de ${fmt(loyer)} soit ${fmtPct(loyer / totalChargesClass6)} des charges. Envisagez le télétravail partiel ou la renégociation du bail.`,
+        gain: `Économie possible : ${fmt(loyer * 0.1)}–${fmt(loyer * 0.2)}`,
+      });
+    }
+
+    // Optimisation TVA — déduction
+    if (tvaDeductible < tvaCollected * 0.5 && tvaCollected > 100) {
+      optimizations.push({
+        type: 'fiscal',
+        icon: '💰',
+        title: 'Optimisation TVA déductible',
+        detail: `Votre TVA déductible (${fmt(tvaDeductible)}) est faible par rapport à la TVA collectée (${fmt(tvaCollected)}). Assurez-vous de bien déclarer toutes vos factures d'achats pour réduire la TVA due.`,
+        gain: `Gain potentiel : ${fmt(tvaCollected - tvaDeductible - Math.max(0, tvaCollected * 0.5))}`,
+      });
+    }
+
+    // Avantages fiscaux Tunisie
+    optimizations.push({
+      type: 'fiscal',
+      icon: '⭐',
+      title: 'FODEC — Prime d\'investissement',
+      detail: `Le Fonds de Développement de la Compétitivité (FODEC) offre des primes d'investissement jusqu'à 30% pour les projets de modernisation, mise à niveau, R&D et innovation. Éligible PME tunisiennes.`,
+      gain: 'Prime jusqu\'à 30% du montant investi (plafond 500 000 DT)',
+    });
+
+    optimizations.push({
+      type: 'fiscal',
+      icon: '⭐',
+      title: 'Amortissement dégressif — Investissements productifs',
+      detail: `Les biens d'équipement (matériel, machines, outillage) peuvent bénéficier de l'amortissement dégressif au lieu du linéaire, ce qui permet de constater une charge plus élevée les premières années et réduire l'IS immédiat.`,
+      gain: 'Réduction d\'IS jusqu\'à 35% la 1ʳᵉ année selon le bien',
+    });
+
+    optimizations.push({
+      type: 'fiscal',
+      icon: '⭐',
+      title: 'Exonération IS — Entreprises exportatrices',
+      detail: `Les entreprises totalement exportatrices bénéficient d'une exonération totale de l'IS pendant 10 ans, suivie d'un taux réduit à 50% du taux en vigueur. Si vous exportez partiellement, l'exonération est proratisée.`,
+      gain: 'Exonération totale 10 ans, puis 50% du taux normal',
+    });
+
+    optimizations.push({
+      type: 'fiscal',
+      icon: '⭐',
+      title: 'Crédit d\'impôt Recherche & Développement',
+      detail: `Les dépenses de R&D (salaires chercheurs, équipements labo, brevets) ouvrent droit à un crédit d'impôt de 50% du montant des dépenses, imputable sur l'IS dû. Plafond annuel : 500 000 DT.`,
+      gain: '50% des dépenses R&D en crédit d\'impôt (plafond 500 000 DT)',
+    });
+
+    if (payrollBrut > 0) {
+      optimizations.push({
+        type: 'fiscal',
+        icon: '⭐',
+        title: 'Formation professionnelle — Déduction fiscale',
+        detail: `Les frais de formation du personnel (inscriptions, stages, certification) sont déductibles à 200% du montant engagé (Loi de Finances). Investir dans la formation réduit l'IS tout en améliorant les compétences.`,
+        gain: 'Déduction à 200% du montant de la formation',
+      });
+    }
+
+    // Optimisation masse salariale
+    if (payrollBrut > totalChargesClass6 * 0.4) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Masse salariale prédominante',
+        detail: `Les salaires (6411) représentent ${fmtPct(payrollBrut / totalChargesClass6)} des charges. Envisagez le recours à des stagiaires, l'alternance ou la sous-traitance pour les tâches non stratégiques.`,
+        gain: `Économie possible : ${fmt(payrollBrut * 0.1)}–${fmt(payrollBrut * 0.2)} en externalisant`,
+      });
+    }
+
+    // Frais financiers
+    const fraisFinanciers = chargeAccounts['660000'] || chargeAccounts['661000'] || chargeAccounts['662000'] || 0;
+    if (fraisFinanciers > 3000) {
+      optimizations.push({
+        type: 'reduction',
+        icon: '📉',
+        title: 'Frais financiers importants',
+        detail: `Frais financiers (66xxx) de ${fmt(fraisFinanciers)}. Renégociez vos lignes de crédit ou regroupez vos dettes pour réduire les intérêts bancaires.`,
+        gain: `Économie possible : ${fmt(fraisFinanciers * 0.15)}–${fmt(fraisFinanciers * 0.3)}`,
+      });
+    }
+  }
+
+  // Optimisation structure bilancielle
+  if (currentLiabilities > equity * 2 && equity > 0) {
+    optimizations.push({
+      type: 'structure',
+      icon: '📊',
+      title: 'Renforcer les capitaux propres',
+      detail: `Les dettes CT (${fmt(currentLiabilities)}) sont ${(currentLiabilities / equity).toFixed(1)}× les capitaux propres (${fmt(equity)}). Envisagez une augmentation de capital ou l'intégration de comptes courants d'associés pour assainir la structure financière.`,
+      gain: 'Amélioration du ratio d\'endettement et accès au crédit facilité',
+    });
+  }
+
+  if (cashAndBank > totalChargesClass6 * 3 && totalChargesClass6 > 0) {
+    // Could invest excess cash
+  }
+
+  // Recommandations d'investissement
+  if (netResult > 50000 && (capital < 10000 || reserveLegale === 0)) {
+    optimizations.push({
+      type: 'investissement',
+      icon: '📈',
+      title: 'Réinvestir les bénéfices',
+      detail: `Résultat net de ${fmt(netResult)}. Envisagez d'investir dans des équipements productifs (amortissables sur 5-10 ans) pour réduire l'IS tout en développant l'outil de travail.`,
+      gain: `IS économisé sur investissement : ${fmt(netResult * 0.15)} pour ${fmt(netResult)} réinvesti`,
+    });
+  }
+
   return {
     score: auditScore,
     summary: { total: checks.length, passed, warned, failed },
     checks,
     recommendations,
+    optimizations,
     stats: {
       entriesCount,
       lockedCount,
@@ -458,6 +639,8 @@ export const runJournalAudit = ({ companyDetails } = {}) => {
       payrollBrut,
       totalDebit,
       totalCredit,
+      cashAndBank,
+      totalCharges: totalChargesClass6,
     },
     companyName: companyDetails?.name || 'Société',
     date: new Date().toISOString().split('T')[0]

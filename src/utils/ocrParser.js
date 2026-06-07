@@ -699,6 +699,11 @@ export function genererAlertes(data, text = '') {
     alertes.push({ code: 'IMAGE_FAIBLE_QUALITE', message: `Confiance OCR ${data.confiance}% — image de faible qualité` });
   }
 
+  if (data.montant_ht == null && data.montant_tva != null)
+    alertes.push({ code: 'RECAP_HT_MANQUANT', message: 'Montant HT manquant dans le récapitulatif' });
+  if (data.montant_tva == null && data.montant_ht != null)
+    alertes.push({ code: 'RECAP_TVA_MANQUANT', message: 'Montant TVA manquant dans le récapitulatif' });
+
   return alertes;
 }
 
