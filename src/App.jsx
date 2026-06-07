@@ -84,7 +84,6 @@ import FinancialReportView from './FinancialReportView';
 import FiscalDeclarationView from './FiscalDeclarationView';
 import PayrollView from './PayrollView';
 import AuditView from './AuditView';
-import LoginView from './views/LoginView';
 import AdminDashboardView from './views/AdminDashboardView';
 import CompanySwitcher from './CompanySwitcher';
 import LoginPage from './pages/LoginPage';
@@ -92,8 +91,6 @@ import RegisterPage from './pages/RegisterPage';
 import InvitePage from './pages/InvitePage';
 import PlanBadge from './components/PlanBadge';
 import AuthGuard from './components/AuthGuard';
-import { isLocked, lockApp, unlockApp, startInactivityTimer, stopInactivityTimer, resetInactivityTimer, getConfig } from './utils/security/pinManager';
-import { createSession, destroySession } from './utils/security/sessionManager';
 import PermissionGuard from './components/PermissionGuard';
 import { getUsers, getUserById, hasUsers, getActiveUsers, getUserByEmail, createUser, updateUser, createSociete, addMembreToSociete, getUserSociete, useInvitation } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
@@ -572,11 +569,13 @@ export default function App() {
   const handleAddInvoice = (newInv) => {
     learnFromInvoice(newInv);
     setInvoices([newInv, ...invoices]);
+    trackUsage(currentUser?.id, 'create_invoice');
   };
 
   const handleAddExpense = (newExp) => {
     learnFromExpense(newExp);
     setExpenses([newExp, ...expenses]);
+    trackUsage(currentUser?.id, 'add_expense');
   };
 
   const handleAddPieceComptable = (piece) => {
@@ -594,6 +593,7 @@ export default function App() {
     try {
       const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
       setAdvisorReport(result);
+      trackUsage(currentUser?.id, 'run_audit');
     } catch (err) {
       setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
     } finally {
@@ -1333,6 +1333,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
     setDueDate('');
     setItems([{ id: Date.now(), description: 'Prestation de développement logiciel', quantity: 1, unitPrice: 1200.000, vatRate: 19 }]);
     setShowCreateForm(false);
+    trackUsage(currentUser?.id, 'create_invoice');
   };
 
   const handleGenerateAI = async () => {
@@ -1454,6 +1455,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
 
     // Save document
     doc.save(`${invoice.invoiceNumber}_${invoice.clientName.replace(/\s+/g, '_')}.pdf`);
+    trackUsage(currentUser?.id, 'export_pdf');
   };
 
   const handleGenerateTEIF = async (invoice) => {
@@ -2311,6 +2313,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       }
       setOcrProgress(100);
       setMode('result');
+      trackUsage(currentUser?.id, 'scan_ocr');
 
     } catch (err) {
       setOcrError(`Erreur: ${err.message}`);
@@ -4081,6 +4084,7 @@ function WorkflowView({
       const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
       setAuditReport(result);
       setActiveStep(4);
+      trackUsage(currentUser?.id, 'run_audit');
     } catch (e) {
       console.error('AUDIT ERROR:', e);
       setAuditReport("❌ Erreur d'audit : " + e.message);
