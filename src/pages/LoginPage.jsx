@@ -90,6 +90,18 @@ export default function LoginPage({ onLogin, onNavigateRegister, onNavigateInvit
               <ArrowRight className="w-3 h-3" /> Rejoindre avec un code d'invitation
             </button>
           </div>
+
+          <div className="text-center pt-4">
+            <button type="button" onClick={() => {
+              if (window.confirm('Supprimer tous les comptes et réinitialiser l\'application ? Cette action est irréversible.')) {
+                const keys = Object.keys(localStorage).filter(k => k.startsWith('sc_') || k.startsWith('smart_'));
+                keys.forEach(k => localStorage.removeItem(k));
+                window.location.reload();
+              }
+            }} className="text-[10px] text-red-500/40 hover:text-red-400 transition-colors">
+              Réinitialiser l'application
+            </button>
+          </div>
         </form>
       </div>
     </div>
