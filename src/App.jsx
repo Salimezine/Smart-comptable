@@ -87,13 +87,20 @@ import AuditView from './AuditView';
 import LoginView from './views/LoginView';
 import AdminDashboardView from './views/AdminDashboardView';
 import CompanySwitcher from './CompanySwitcher';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import InvitePage from './pages/InvitePage';
+import PlanBadge from './components/PlanBadge';
+import AuthGuard from './components/AuthGuard';
 import { isLocked, lockApp, unlockApp, startInactivityTimer, stopInactivityTimer, resetInactivityTimer, getConfig } from './utils/security/pinManager';
-import { validateSession, createSession, destroySession, getCurrentUser, getCurrentCompany } from './utils/security/sessionManager';
+import { createSession, destroySession } from './utils/security/sessionManager';
 import PermissionGuard from './components/PermissionGuard';
-import { getUsers, getUserById, hasUsers } from './utils/auth/userStore';
+import { getUsers, getUserById, hasUsers, getActiveUsers, getUserByEmail, createUser, updateUser, createSociete, addMembreToSociete, getUserSociete, useInvitation } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
 import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
 import { isBackupOverdue } from './utils/security/backupManager';
+import { useAuth } from './hooks/useAuth';
+import { trackUsage } from './utils/auth/usageTracker';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
 import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
@@ -348,10 +355,9 @@ function AuditReportRenderer({ report }) {
 }
 
 export default function App() {
-  // Security State — session-based (replaces old PIN)
-  const [sessionValid, setSessionValid] = useState(null); // null = loading, true = valid, false = show login
-  const [currentUser, setCurrentUser] = useState(null);
-  const [appLocked, setAppLocked] = useState(false);
+  // Auth State
+  const { currentUser, currentSociete, initializing, login, logout, can, isAdmin } = useAuth();
+  const [authPage, setAuthPage] = useState('login'); // login | register | invite
 
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
@@ -363,54 +369,7 @@ export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchRef = useRef(null);
 
-  // Session validation on startup
-  useEffect(() => {
-    const init = async () => {
-      const { valid, userId, companyId } = validateSession();
-      if (valid && userId) {
-        const user = getUserById(userId);
-        if (user) {
-          setCurrentUser(user);
-          setSessionValid(true);
-          if (companyId && companyId !== 'default') {
-            setCurrentCompanyId(companyId);
-            localStorage.setItem('smart_comptable_current_id', companyId);
-          }
-          if (isLocked()) {
-            unlockApp();
-          }
-          return;
-        }
-      }
-      setSessionValid(false);
-    };
-    init();
-  }, []);
-
-  // Inactivity timeout
-  useEffect(() => {
-    if (!sessionValid) return;
-    const cfg = getConfig();
-    const handler = () => resetInactivityTimer(() => {
-      setAppLocked(true);
-      lockApp();
-      logAction(AUDIT_ACTIONS.APP_LOCKED, {});
-    });
-    window.addEventListener('mousemove', handler);
-    window.addEventListener('keydown', handler);
-    startInactivityTimer(() => {
-      setAppLocked(true);
-      lockApp();
-      logAction(AUDIT_ACTIONS.APP_LOCKED, {});
-    });
-    return () => {
-      window.removeEventListener('mousemove', handler);
-      window.removeEventListener('keydown', handler);
-      stopInactivityTimer();
-    };
-  }, [sessionValid]);
-
-  // App States - Multi-tenant (declared early for LoginView access)
+  // App States - Multi-tenant
   const [companies, setCompanies] = useState(() => {
     const stored = localStorage.getItem('smart_comptable_companies');
     if (!stored) return {};
@@ -421,28 +380,45 @@ export default function App() {
     return localStorage.getItem('smart_comptable_current_id') || null;
   });
 
-  const handleLogin = (user, session) => {
-    setCurrentUser(user);
-    setSessionValid(true);
-    const companyId = session.companyId || 'default';
-    if (companyId !== 'default') {
-      setCurrentCompanyId(companyId);
-      localStorage.setItem('smart_comptable_current_id', companyId);
-    }
-  };
-
   const handleLogout = () => {
-    destroySession();
-    setCurrentUser(null);
-    setSessionValid(false);
-    logAction(AUDIT_ACTIONS.LOGOUT, {});
+    logout();
   };
 
   const handleCompanySwitch = (id) => {
     setCurrentCompanyId(id);
     localStorage.setItem('smart_comptable_current_id', id);
-    const session = createSession(currentUser?.id, id);
     logAction(AUDIT_ACTIONS.COMPANY_SWITCH, { to: id });
+  };
+
+  // Auth page routing
+  const handleLoginSubmit = async (email, password, remember) => {
+    const user = await login(email, password, remember);
+    setCurrentCompanyId(user?.societeId || localStorage.getItem('smart_comptable_current_id'));
+  };
+
+  const handleRegister = async (data) => {
+    const user = await createUser({
+      nom: data.nom, email: data.email, password: data.password,
+      role: 'admin', plan: data.plan, societeId: null
+    });
+    if (!user) throw new Error('Cet email est déjà utilisé');
+    const soc = createSociete({ nom: data.societeNom, matriculeFiscal: data.matriculeFiscal, ownerId: user.id, plan: data.plan });
+    updateUser(user.id, { societeId: soc.id });
+    await login(data.email, data.password, true);
+    setCurrentCompanyId(soc.id);
+  };
+
+  const handleJoinWithInvite = async (data) => {
+    const inv = useInvitation(data.code);
+    if (!inv) throw new Error('Code d\'invitation invalide');
+    const user = await createUser({
+      nom: data.nom, email: data.email, password: data.password,
+      role: inv.role, plan: 'free', societeId: inv.societeId, inviteCode: data.code
+    });
+    if (!user) throw new Error('Cet email est déjà utilisé');
+    addMembreToSociete(inv.societeId, user.id);
+    await login(data.email, data.password, true);
+    setCurrentCompanyId(inv.societeId);
   };
 
   // Advisor State
@@ -467,7 +443,7 @@ export default function App() {
 
   // Load specific company data when selected
   useEffect(() => {
-    if (sessionValid !== true) return;
+    if (!currentUser) return;
     const loadData = async () => {
       if (currentCompanyId && companies[currentCompanyId]) {
         const data = companies[currentCompanyId];
@@ -480,15 +456,14 @@ export default function App() {
       }
     };
     loadData();
-  }, [currentCompanyId, sessionValid]);
+  }, [currentCompanyId, currentUser]);
 
   // Persist local state back to the companies catalogue
   useEffect(() => {
-    if (sessionValid !== true) return;
+    if (!currentUser) return;
     const saveData = async () => {
       if (!currentCompanyId) return;
 
-      // Store company data
       const safeDetails = { ...companyDetails };
 
       setCompanies(prev => {
@@ -508,7 +483,7 @@ export default function App() {
       });
     };
     saveData();
-  }, [invoices, transactions, expenses, companyDetails, currentCompanyId, sessionValid]);
+  }, [invoices, transactions, expenses, companyDetails, currentCompanyId, currentUser]);
 
   const handleSearch = useCallback((query) => {
     setSearchQuery(query);
@@ -518,8 +493,8 @@ export default function App() {
     setSearchOpen(true);
   }, [invoices, expenses]);
 
-  // Show LoginView when not authenticated
-  if (sessionValid === null) {
+  // Auth routing
+  if (initializing) {
     return (
       <div className="min-h-screen bg-slate-950 flex items-center justify-center">
         <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
@@ -527,8 +502,14 @@ export default function App() {
     );
   }
 
-  if (sessionValid === false || appLocked) {
-    return <LoginView onLogin={handleLogin} companyId={currentCompanyId || null} />;
+  if (!currentUser) {
+    const hasExistingUsers = getActiveUsers().length > 0;
+    if (!hasExistingUsers && authPage === 'login') {
+      return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
+    }
+    if (authPage === 'register') return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
+    if (authPage === 'invite') return <InvitePage onJoin={handleJoinWithInvite} onBack={() => setAuthPage('login')} />;
+    return <LoginPage onLogin={handleLoginSubmit} onNavigateRegister={() => setAuthPage('register')} onNavigateInvite={() => setAuthPage('invite')} />;
   }
 
   const handleCreateCompany = (details) => {
@@ -666,8 +647,10 @@ export default function App() {
               { id: 'settings', label: 'Configuration', icon: SettingsIcon },
             ].filter(item => {
               if (!currentUser) return true;
-              if (item.id === 'admin') return can(currentUser, 'admin', 'access');
-              return filterModules(currentUser, [item.id]).length > 0;
+              if (item.id === 'admin') return can(currentUser, 'manage_users');
+              if (item.id === 'payroll') return can(currentUser, 'view_all');
+              if (item.id === 'audit') return can(currentUser, 'run_audit');
+              return true;
             }).map(item => {
               const Icon = item.icon;
               const isActive = currentTab === item.id;
@@ -716,10 +699,8 @@ export default function App() {
               <User className="w-5 h-5 text-slate-300" />
             </div>
             <div className="overflow-hidden">
-              <p className="text-xs font-semibold text-slate-200 truncate">{companyDetails.name}</p>
-              <span className="text-[10px] text-accent-400 flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3" /> Plan Pro IA Active
-              </span>
+              <p className="text-xs font-semibold text-slate-200 truncate">{companyDetails.name || currentSociete?.nom || 'Ma société'}</p>
+              <PlanBadge user={currentUser} />
             </div>
           </div>
         </div>

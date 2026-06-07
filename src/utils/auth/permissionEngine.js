@@ -1,79 +1,123 @@
-import { getCurrentUser } from '../security/sessionManager';
-import { getUserById } from './userStore';
+export const ROLES = ['admin', 'comptable', 'lecteur'];
+export const ROLE_PERMISSIONS = PERMISSIONS;
 
-export const ROLES = ['admin', 'comptable', 'readonly'];
-
-export const ROLE_PERMISSIONS = {
+export const PERMISSIONS = {
   admin: {
-    dashboard: { view: true },
-    journal: { view: true, edit: true, delete: true },
-    paie: { view: true, edit: true, validate: true },
-    bilan: { view: true, export: true },
-    factures: { view: true, edit: true, delete: true },
-    audit: { view: true, export: true },
-    admin: { view: true, edit: true },
-    companies: { view: true, create: true, edit: true, delete: true },
-    backup: { export: true, import: true },
+    label: "Administrateur",
+    color: "violet",
+    can: [
+      "view_all",
+      "create_invoice",
+      "edit_invoice",
+      "delete_invoice",
+      "create_expense",
+      "edit_expense",
+      "delete_expense",
+      "scan_ocr",
+      "view_journal",
+      "create_journal_entry",
+      "view_bilan",
+      "export_pdf",
+      "export_excel",
+      "run_audit",
+      "manage_users",
+      "manage_societe",
+      "invite_users",
+      "view_config",
+      "switch_societe",
+    ]
   },
   comptable: {
-    dashboard: { view: true },
-    journal: { view: true, edit: true, delete: false },
-    paie: { view: true, edit: true, validate: false },
-    bilan: { view: true, export: true },
-    factures: { view: true, edit: true, delete: false },
-    audit: { view: false },
-    admin: { view: false },
-    companies: { view: true, create: false },
-    backup: { export: true, import: false },
+    label: "Comptable",
+    color: "blue",
+    can: [
+      "view_all",
+      "create_invoice",
+      "edit_invoice",
+      "create_expense",
+      "edit_expense",
+      "scan_ocr",
+      "view_journal",
+      "create_journal_entry",
+      "view_bilan",
+      "export_pdf",
+      "export_excel",
+      "run_audit",
+    ]
   },
-  readonly: {
-    dashboard: { view: true },
-    journal: { view: true, edit: false },
-    paie: { view: true, edit: false },
-    bilan: { view: true, export: false },
-    factures: { view: true, edit: false },
-    audit: { view: false },
-    admin: { view: false },
-    companies: { view: true, create: false },
-    backup: { export: false, import: false },
-  },
+  lecteur: {
+    label: "Lecteur",
+    color: "gray",
+    can: [
+      "view_all",
+      "view_journal",
+      "view_bilan",
+      "export_pdf",
+    ]
+  }
 };
 
-export function getUserPermissions(user) {
-  if (!user) return {};
-  const defaults = ROLE_PERMISSIONS[user.role] || ROLE_PERMISSIONS.readonly;
-  const override = user.permissions || {};
-  const merged = {};
-  for (const [module, perms] of Object.entries(defaults)) {
-    merged[module] = { ...perms, ...(override[module] || {}) };
-  }
-  return merged;
-}
+const PERMISSION_LABELS = {
+  view_all: "Voir tout",
+  create_invoice: "Créer factures",
+  edit_invoice: "Modifier factures",
+  delete_invoice: "Supprimer factures",
+  create_expense: "Créer dépenses",
+  edit_expense: "Modifier dépenses",
+  delete_expense: "Supprimer dépenses",
+  scan_ocr: "Scanner reçus",
+  view_journal: "Voir journal",
+  create_journal_entry: "Saisie manuelle",
+  view_bilan: "Bilan & résultat",
+  export_pdf: "Export PDF",
+  export_excel: "Export Excel",
+  run_audit: "Lancer audit",
+  manage_users: "Gérer utilisateurs",
+  manage_societe: "Modifier société",
+  invite_users: "Inviter membres",
+  view_config: "Configuration",
+  switch_societe: "Changer société",
+};
 
-export function can(user, module, action = 'view') {
-  if (!user) return false;
-  const perms = getUserPermissions(user);
-  return perms[module]?.[action] === true;
+export function can(user, permission) {
+  if (!user || !user.role) return false;
+  const rolePerms = PERMISSIONS[user.role];
+  if (!rolePerms) return false;
+  return rolePerms.can.includes(permission);
 }
 
 export function filterModules(user, allModules) {
   if (!user) return [];
-  return allModules.filter(m => can(user, m.id, 'view'));
+  return allModules.filter(m => {
+    const permMap = {
+      'dashboard': 'view_all',
+      'invoicing': 'create_invoice',
+      'expenses': 'create_expense',
+      'journal': 'view_journal',
+      'financial': 'view_bilan',
+      'audit': 'run_audit',
+      'ocr': 'scan_ocr',
+      'manual': 'create_journal_entry',
+      'admin': 'manage_users',
+      'settings': 'view_config',
+      'payroll': 'view_all',
+      'bank': 'view_all',
+      'stock': 'view_all',
+      'suppliers': 'view_all',
+      'fiscal': 'view_all',
+      'workflow': 'view_all',
+    };
+    const perm = permMap[m.id] || 'view_all';
+    return can(user, perm);
+  });
 }
 
-export function usePermission(module) {
-  // Hook-friendly version — call from component
-  const userId = getCurrentUser();
-  if (!userId) return { canView: false, canEdit: false, canDelete: false };
-  try {
-    const user = getUserById(userId);
-    if (!user) return { canView: false, canEdit: false, canDelete: false };
-    return {
-      canView: can(user, module, 'view'),
-      canEdit: can(user, module, 'edit'),
-      canDelete: can(user, module, 'delete'),
-    };
-  } catch {
-    return { canView: true, canEdit: true, canDelete: true };
-  }
+export function getUserPermissions(user) {
+  if (!user) return [];
+  const rolePerms = PERMISSIONS[user.role];
+  return rolePerms ? [...rolePerms.can] : [];
+}
+
+export function getPermissionLabel(perm) {
+  return PERMISSION_LABELS[perm] || perm;
 }
