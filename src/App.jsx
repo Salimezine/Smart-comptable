@@ -445,19 +445,6 @@ export default function App() {
     logAction(AUDIT_ACTIONS.COMPANY_SWITCH, { to: id });
   };
 
-  // Show LoginView when not authenticated
-  if (sessionValid === null) {
-    return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-        <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
-      </div>
-    );
-  }
-
-  if (sessionValid === false || appLocked) {
-    return <LoginView onLogin={handleLogin} companyId={currentCompanyId || null} />;
-  }
-
   // Advisor State
   const [advisorModalOpen, setAdvisorModalOpen] = useState(false);
   const [advisorLoading, setAdvisorLoading] = useState(false);
@@ -521,6 +508,27 @@ export default function App() {
     saveData();
   }, [invoices, transactions, expenses, companyDetails, currentCompanyId]);
 
+  const handleSearch = useCallback((query) => {
+    setSearchQuery(query);
+    if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
+    const results = searchEntities(invoices, expenses, query);
+    setSearchResults(results);
+    setSearchOpen(true);
+  }, [invoices, expenses]);
+
+  // Show LoginView when not authenticated
+  if (sessionValid === null) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <RefreshCw className="w-8 h-8 text-brand-400 animate-spin" />
+      </div>
+    );
+  }
+
+  if (sessionValid === false || appLocked) {
+    return <LoginView onLogin={handleLogin} companyId={currentCompanyId || null} />;
+  }
+
   const handleCreateCompany = (details) => {
     const id = `company_${Date.now()}`;
     const safeDetails = { ...details };
@@ -547,14 +555,6 @@ export default function App() {
     setCurrentCompanyId(id);
     localStorage.setItem('smart_comptable_current_id', id);
   };
-
-  const handleSearch = useCallback((query) => {
-    setSearchQuery(query);
-    if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
-    const results = searchEntities(invoices, expenses, query);
-    setSearchResults(results);
-    setSearchOpen(true);
-  }, [invoices, expenses]);
 
   // 1. Écran de démarrage obligatoire (only if no companies exist yet)
   if (!currentCompanyId || !companies[currentCompanyId]) {
