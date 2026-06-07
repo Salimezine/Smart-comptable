@@ -87,7 +87,7 @@ import InvitePage from './pages/InvitePage';
 import PlanBadge from './components/PlanBadge';
 import AuthGuard from './components/AuthGuard';
 import PermissionGuard from './components/PermissionGuard';
-import { getUsers, getUserById, hasUsers, getActiveUsers, getUserByEmail, createUser, updateUser, createSociete, addMembreToSociete, getUserSociete, useInvitation } from './utils/auth/userStore';
+import { getUsers, getUserById, hasUsers, getActiveUsers, getUserByEmail, createUser, updateUser, createSociete, addMembreToSociete, getUserSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
 import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
 import { isBackupOverdue } from './utils/security/backupManager';
@@ -385,7 +385,9 @@ export default function App() {
   // Auth page routing
   const handleLoginSubmit = async (email, password, remember) => {
     const user = await login(email, password, remember);
-    setCurrentCompanyId(user?.societeId || localStorage.getItem('smart_comptable_current_id'));
+    const companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
+    setCurrentCompanyId(companyId);
+    if (companyId) localStorage.setItem('smart_comptable_current_id', companyId);
   };
 
   const handleRegister = async (data) => {
@@ -396,8 +398,10 @@ export default function App() {
     if (!user) throw new Error('Cet email est déjà utilisé');
     const soc = createSociete({ nom: data.societeNom, matriculeFiscal: data.matriculeFiscal, ownerId: user.id, plan: data.plan });
     updateUser(user.id, { societeId: soc.id });
+    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: [], expenses: [], transactions: [], companyDetails: { name: soc.nom } } }));
     await login(data.email, data.password, true);
     setCurrentCompanyId(soc.id);
+    localStorage.setItem('smart_comptable_current_id', soc.id);
   };
 
   const handleJoinWithInvite = async (data) => {
@@ -409,8 +413,11 @@ export default function App() {
     });
     if (!user) throw new Error('Cet email est déjà utilisé');
     addMembreToSociete(inv.societeId, user.id);
+    const soc = getSocieteById(inv.societeId);
+    setCompanies(prev => soc ? { ...prev, [soc.id]: prev[soc.id] || { invoices: [], expenses: [], transactions: [], companyDetails: { name: soc.nom } } } : prev);
     await login(data.email, data.password, true);
     setCurrentCompanyId(inv.societeId);
+    localStorage.setItem('smart_comptable_current_id', inv.societeId);
   };
 
   // Advisor State
@@ -524,8 +531,9 @@ export default function App() {
     localStorage.setItem('smart_comptable_current_id', id);
   };
 
-  // 1. Écran de démarrage obligatoire (only if no companies exist yet)
-  if (!currentCompanyId || !companies[currentCompanyId]) {
+  // 1. Écran Onboarding seulement si aucun utilisateur auth (first launch via auth-free flow)
+  const hasNoCompanies = Object.keys(companies).length === 0;
+  if (!currentUser && hasNoCompanies) {
     return <Onboarding onComplete={handleCreateCompany} />;
   }
 
