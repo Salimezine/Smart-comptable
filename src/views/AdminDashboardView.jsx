@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Users, Key, Clock, Download, Upload, FileText, AlertTriangle, CheckCircle, X, Search, Lock, Unlock, Trash2, Plus, RefreshCw } from 'lucide-react';
-import { getUsers, createUser, updateUser, deleteUser, getAllUsers } from '../utils/auth/userStore';
-import { ROLE_PERMISSIONS, ROLES } from '../utils/auth/permissionEngine';
+import { Users, Download, Upload, FileText, AlertTriangle, CheckCircle, X, Search, Lock, Unlock, Trash2, Plus, RefreshCw, Copy, Check } from 'lucide-react';
+import { getAllUsers, updateUser, createInvitation } from '../utils/auth/userStore';
+import { ROLES } from '../utils/auth/permissionEngine';
+import { getPlan } from '../utils/auth/plansManager';
 import { getAuditLog, exportAuditCSV, getAllAuditKeys } from '../utils/security/auditLog';
-import { getConfig, setConfig, lockApp, isLocked } from '../utils/security/pinManager';
+import { getConfig, setConfig, lockApp } from '../utils/security/pinManager';
 import { exportBackup, importBackup, getLastBackupDate, isBackupOverdue, setLastBackupDate } from '../utils/security/backupManager';
-import { logAction, AUDIT_ACTIONS } from '../utils/security/auditLog';
+import { logAction } from '../utils/security/auditLog';
 
 const fmtDate = (d) => d ? new Date(d).toLocaleDateString('fr-TN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '—';
 
@@ -14,9 +15,10 @@ export default function AdminDashboardView({ currentUser }) {
   const [users, setUsersState] = useState([]);
   const [auditLog, setAuditLogs] = useState([]);
   const [msg, setMsg] = useState({ type: '', text: '' });
-  const [showUserForm, setShowUserForm] = useState(false);
-  const [userForm, setUserForm] = useState({ nom: '', prenom: '', email: '', role: 'comptable', pin: '', companies: [] });
-  const [editingUserId, setEditingUserId] = useState(null);
+  const [showInviteForm, setShowInviteForm] = useState(false);
+  const [inviteForm, setInviteForm] = useState({ email: '', role: 'comptable' });
+  const [inviteResult, setInviteResult] = useState(null);
+  const [copied, setCopied] = useState(false);
   const [searchLog, setSearchLog] = useState('');
   const [importFile, setImportFile] = useState(null);
   const [importPwd, setImportPwd] = useState('');
@@ -44,36 +46,30 @@ export default function AdminDashboardView({ currentUser }) {
     setAuditLogs(all);
   };
 
-  const handleCreateUser = async () => {
-    if (!userForm.nom || !userForm.prenom) { setMsg({ type: 'error', text: 'Nom et prénom requis' }); return; }
-    const { hashPIN } = await import('../utils/security/pinManager');
-    const pin_hash = userForm.pin ? await hashPIN(userForm.pin) : '';
-    const data = { ...userForm, pin: pin_hash };
-    if (editingUserId) {
-      updateUser(editingUserId, data);
-      setMsg({ type: 'success', text: 'Utilisateur modifié' });
-    } else {
-      const u = createUser(data);
-      if (!u) { setMsg({ type: 'error', text: 'Email déjà utilisé' }); return; }
-      setMsg({ type: 'success', text: 'Utilisateur créé' });
-    }
-    setShowUserForm(false);
-    setUserForm({ nom: '', prenom: '', email: '', role: 'comptable', pin: '', companies: [] });
-    setEditingUserId(null);
-    loadUsers();
+  const handleInvite = () => {
+    if (!inviteForm.email.trim() || !inviteForm.email.includes('@')) { setMsg({ type: 'error', text: 'Email invalide' }); return; }
+    const societe = currentUser?.societeId;
+    if (!societe) { setMsg({ type: 'error', text: 'Aucune société associée' }); return; }
+    const inv = createInvitation({ email: inviteForm.email, role: inviteForm.role, societeId: societe, createdBy: currentUser.id });
+    setInviteResult(inv);
+    setMsg({ type: 'success', text: `Code d'invitation généré : ${inv.code}` });
+    logAction('invite_sent', { email: inviteForm.email, role: inviteForm.role, code: inv.code });
   };
 
-  const handleEditUser = (u) => {
-    setUserForm({ nom: u.nom, prenom: u.prenom, email: u.email, role: u.role, pin: '', companies: u.companies || [] });
-    setEditingUserId(u.id);
-    setShowUserForm(true);
+  const handleChangeRole = (userId, newRole) => {
+    updateUser(userId, { role: newRole });
+    setMsg({ type: 'success', text: 'Rôle mis à jour' });
+    loadUsers();
+    logAction('user_role_changed', { userId, newRole });
   };
 
-  const handleDeleteUser = (id) => {
-    if (!window.confirm('Désactiver cet utilisateur ?')) return;
-    deleteUser(id);
-    setMsg({ type: 'success', text: 'Utilisateur désactivé' });
+  const handleToggleActive = (user) => {
+    const action = user.actif ? 'Désactiver' : 'Réactiver';
+    if (!window.confirm(`${action} cet utilisateur ?`)) return;
+    updateUser(user.id, { actif: !user.actif });
+    setMsg({ type: 'success', text: `Utilisateur ${user.actif ? 'désactivé' : 'réactivé'}` });
     loadUsers();
+    logAction('user_toggled', { userId: user.id, actif: !user.actif });
   };
 
   const handleExport = async () => {
@@ -82,6 +78,7 @@ export default function AdminDashboardView({ currentUser }) {
       await exportBackup(exportPwd);
       setLastBackupDate();
       setMsg({ type: 'success', text: 'Backup exporté' });
+      logAction('backup_export', {});
     } catch (e) { setMsg({ type: 'error', text: e.message }); }
     setExporting(false);
   };
@@ -105,6 +102,7 @@ export default function AdminDashboardView({ currentUser }) {
     }
     setLastBackupDate();
     setMsg({ type: 'success', text: 'Données restaurées avec succès' });
+    logAction('backup_restore', { keys: Object.keys(importPreview.data).length });
     setImportPreview(null);
     setImportFile(null);
     loadAudit();
@@ -160,78 +158,81 @@ export default function AdminDashboardView({ currentUser }) {
       {tab === 'users' && (
         <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <h4 className="text-xs font-bold text-slate-300">Gestion des utilisateurs</h4>
-            <button onClick={() => { setShowUserForm(true); setEditingUserId(null); setUserForm({ nom: '', prenom: '', email: '', role: 'comptable', pin: '', companies: [] }); }}
+            <h4 className="text-xs font-bold text-slate-300">Gestion des utilisateurs ({users.filter(u => u.actif).length} actifs)</h4>
+            <button onClick={() => { setShowInviteForm(true); setInviteResult(null); setInviteForm({ email: '', role: 'comptable' }); }}
               className="flex items-center gap-1 px-3 py-1.5 bg-brand-500/20 hover:bg-brand-500/30 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30 transition-all">
-              <Plus className="w-3 h-3" /> Ajouter
+              <Plus className="w-3 h-3" /> Inviter
             </button>
           </div>
-          {showUserForm && (
+          {showInviteForm && (
             <div className="glass-card p-4 rounded-xl border border-slate-700 space-y-3">
-              <div className="grid grid-cols-2 gap-3">
-                <input value={userForm.prenom} onChange={e => setUserForm(p => ({ ...p, prenom: e.target.value }))}
-                  placeholder="Prénom" className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
-                <input value={userForm.nom} onChange={e => setUserForm(p => ({ ...p, nom: e.target.value }))}
-                  placeholder="Nom" className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
+              <div className="flex items-center justify-between">
+                <h5 className="text-xs font-bold text-slate-300">Inviter un membre</h5>
+                <button onClick={() => { setShowInviteForm(false); setInviteResult(null); }} className="text-slate-500 hover:text-slate-300"><X className="w-3.5 h-3.5" /></button>
               </div>
-              <input value={userForm.email} onChange={e => setUserForm(p => ({ ...p, email: e.target.value }))}
-                placeholder="Email" className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
-              <div className="grid grid-cols-2 gap-3">
-                <select value={userForm.role} onChange={e => setUserForm(p => ({ ...p, role: e.target.value }))}
-                  className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500">
-                  {ROLES.map(r => <option key={r} value={r}>{r}</option>)}
-                </select>
-                <input value={userForm.pin} onChange={e => setUserForm(p => ({ ...p, pin: e.target.value }))}
-                  type="password" placeholder="PIN (4-6 chiffres)" maxLength={6}
-                  className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
-              </div>
-              <div className="flex gap-2">
-                <button onClick={handleCreateUser}
-                  className="px-4 py-2 bg-brand-500/20 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30 transition-all">
-                  {editingUserId ? 'Modifier' : 'Créer'}
-                </button>
-                <button onClick={() => setShowUserForm(false)}
-                  className="px-4 py-2 text-xs text-slate-400 hover:text-slate-200">Annuler</button>
-              </div>
+              <input value={inviteForm.email} onChange={e => setInviteForm(p => ({ ...p, email: e.target.value }))}
+                placeholder="Email du membre" className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
+              <select value={inviteForm.role} onChange={e => setInviteForm(p => ({ ...p, role: e.target.value }))}
+                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500">
+                {ROLES.map(r => <option key={r} value={r}>{r}</option>)}
+              </select>
+              <button onClick={handleInvite}
+                className="px-4 py-2 bg-brand-500/20 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30 hover:bg-brand-500/30 transition-all">
+                Générer le code
+              </button>
+              {inviteResult && (
+                <div className="p-3 rounded-xl bg-brand-500/10 border border-brand-500/30">
+                  <p className="text-[10px] text-slate-400 mb-1">Code d'invitation (7 jours):</p>
+                  <div className="flex items-center gap-2">
+                    <code className="text-sm font-bold text-brand-400 tracking-widest">{inviteResult.code}</code>
+                    <button onClick={() => { navigator.clipboard.writeText(inviteResult.code); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
+                      className="p-1 hover:bg-slate-700 rounded-lg text-slate-400 hover:text-slate-200">
+                      {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5" />}
+                    </button>
+                  </div>
+                  <p className="text-[10px] text-slate-500 mt-1">Rôle: {inviteResult.role} · Valable jusqu'au {inviteResult.expiresAt}</p>
+                </div>
+              )}
             </div>
           )}
           <div className="space-y-1.5">
-            {users.map(u => (
-              <div key={u.id} className={`flex items-center justify-between p-3 rounded-xl border ${u.active ? 'bg-slate-800/30 border-slate-700/40' : 'bg-slate-800/10 border-slate-700/20 opacity-50'}`}>
+            {users.map(u => {
+              const plan = getPlan(u.plan);
+              const PLAN_COLORS = { gray: 'bg-slate-600', blue: 'bg-blue-600', violet: 'bg-violet-600', gold: 'bg-amber-500' };
+              const ROLE_COLORS = { admin: 'text-violet-400', comptable: 'text-blue-400', lecteur: 'text-slate-400' };
+              return (
+              <div key={u.id} className={`flex items-center justify-between p-3 rounded-xl border ${u.actif ? 'bg-slate-800/30 border-slate-700/40' : 'bg-slate-800/10 border-slate-700/20 opacity-50'}`}>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center text-xs font-bold text-brand-400">
-                    {(u.prenom?.[0] || '') + (u.nom?.[0] || '')}
+                    {(u.nom?.[0] || '?')}
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-slate-200">{u.prenom} {u.nom} {!u.active && <span className="text-red-400">(inactif)</span>}</p>
-                    <p className="text-[10px] text-slate-400">
-                      <span className="capitalize">{u.role}</span>
-                      {u.last_login && <> · Dernière connexion: {fmtDate(u.last_login)}</>}
+                    <p className="text-xs font-bold text-slate-200">
+                      {u.nom || u.email}
+                      {!u.actif && <span className="text-red-400 ml-1">(inactif)</span>}
                     </p>
+                    <div className="flex items-center gap-2 text-[10px] text-slate-500">
+                      <span className={ROLE_COLORS[u.role] || 'text-slate-400'}>{u.role}</span>
+                      <span className="text-slate-600">·</span>
+                      <span className={`text-[10px] ${PLAN_COLORS[plan.color] || 'bg-slate-600'} text-white px-1.5 py-0.5 rounded-md`}>{plan.label}</span>
+                      {u.lastLogin && <><span className="text-slate-600">·</span><span>Dernière: {fmtDate(u.lastLogin)}</span></>}
+                    </div>
                   </div>
                 </div>
-                <div className="flex gap-1">
-                  {u.active && (
-                    <button onClick={() => handleEditUser(u)}
-                      className="p-1.5 rounded-lg hover:bg-slate-700 text-slate-400 hover:text-slate-200">
-                      <Key className="w-3.5 h-3.5" />
-                    </button>
+                <div className="flex items-center gap-1.5">
+                  {u.actif && (
+                    <select value={u.role} onChange={e => handleChangeRole(u.id, e.target.value)}
+                      className="bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-[10px] text-slate-200 focus:outline-none focus:border-brand-500">
+                      {ROLES.map(r => <option key={r} value={r}>{r}</option>)}
+                    </select>
                   )}
-                  {u.active && (
-                    <button onClick={() => handleDeleteUser(u.id)}
-                      className="p-1.5 rounded-lg hover:bg-red-500/10 text-slate-400 hover:text-red-400">
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                  {!u.active && (
-                    <button onClick={() => { updateUser(u.id, { active: true }); loadUsers(); }}
-                      className="p-1.5 rounded-lg hover:bg-emerald-500/10 text-slate-400 hover:text-emerald-400">
-                      <RefreshCw className="w-3.5 h-3.5" />
-                    </button>
-                  )}
+                  <button onClick={() => handleToggleActive(u)}
+                    className={`p-1.5 rounded-lg transition-all ${u.actif ? 'hover:bg-red-500/10 text-slate-400 hover:text-red-400' : 'hover:bg-emerald-500/10 text-slate-400 hover:text-emerald-400'}`}>
+                    {u.actif ? <Trash2 className="w-3.5 h-3.5" /> : <RefreshCw className="w-3.5 h-3.5" />}
+                  </button>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       )}

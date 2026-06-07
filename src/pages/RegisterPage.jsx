@@ -22,7 +22,9 @@ export default function RegisterPage({ onRegister, onBack }) {
   const validateStep0 = () => {
     if (!nom.trim()) { setError('Nom requis'); return false; }
     if (!email.trim() || !email.includes('@')) { setError('Email invalide'); return false; }
-    if (password.length < 6) { setError('Mot de passe : min 6 caractères'); return false; }
+    if (password.length < 8) { setError('Mot de passe : min 8 caractères'); return false; }
+    if (!/[A-Z]/.test(password)) { setError('Mot de passe : doit contenir une majuscule'); return false; }
+    if (!/\d/.test(password)) { setError('Mot de passe : doit contenir un chiffre'); return false; }
     if (password !== confirm) { setError('Les mots de passe ne correspondent pas'); return false; }
     setError('');
     return true;
@@ -71,7 +73,7 @@ export default function RegisterPage({ onRegister, onBack }) {
             </div>
             <div className="space-y-1">
               <label className="text-xs font-medium text-slate-400">Mot de passe</label>
-              <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Min 6 caractères" className="w-full bg-slate-900/60 border border-slate-700 focus:border-brand-500 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none placeholder:text-slate-600" />
+              <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Min 8 car. + majuscule + chiffre" className="w-full bg-slate-900/60 border border-slate-700 focus:border-brand-500 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none placeholder:text-slate-600" />
             </div>
             <div className="space-y-1">
               <label className="text-xs font-medium text-slate-400">Confirmer mot de passe</label>
