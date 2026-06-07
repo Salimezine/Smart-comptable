@@ -50,11 +50,7 @@ const pdfWorkerSrc = window.location.pathname.startsWith('/Smart-comptable/')
   ? '/Smart-comptable/pdf.worker.min.js'
   : '/pdf.worker.min.js';
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerSrc;
-import { 
-  INITIAL_INVOICES, 
-  INITIAL_TRANSACTIONS, 
-  INITIAL_EXPENSES
-} from './mockData';
+
 import { 
   calculateTotalRevenues, 
   calculatePendingRevenues, 
@@ -63,7 +59,6 @@ import {
   calculateInvoiceTotals, 
   formatCurrencyHelper,
   computeMonthlyChartData,
-  generateSimulatedData,
   rapprochementBancaire 
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
@@ -430,13 +425,6 @@ export default function App() {
   const [piecesComptables, setPiecesComptables] = useState(() => {
     try { return JSON.parse(localStorage.getItem('piecesComptables') || '[]'); } catch { return []; }
   });
-
-  const handleGenerateSimulatedData = useCallback(() => {
-    const data = generateSimulatedData();
-    setInvoices(data.invoices);
-    setExpenses(data.expenses);
-    setTransactions(data.transactions);
-  }, []);
 
   // Load specific company data when selected
   useEffect(() => {
@@ -807,15 +795,7 @@ export default function App() {
                 <span className="hidden sm:inline">Audit</span>
               </button>
             )}
-            {(currentTab === 'dashboard' || currentTab === 'financial') && (
-              <button 
-                onClick={handleGenerateSimulatedData} 
-                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-amber-400 border border-amber-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
-              >
-                <Sparkles className="w-3.5 h-3.5 shrink-0" />
-                <span className="hidden sm:inline">Simuler</span>
-              </button>
-            )}
+
             <button 
               onClick={() => setCurrentTab('ocr')} 
               className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
