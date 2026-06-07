@@ -467,6 +467,7 @@ export default function App() {
 
   // Load specific company data when selected
   useEffect(() => {
+    if (sessionValid !== true) return;
     const loadData = async () => {
       if (currentCompanyId && companies[currentCompanyId]) {
         const data = companies[currentCompanyId];
@@ -479,10 +480,11 @@ export default function App() {
       }
     };
     loadData();
-  }, [currentCompanyId]); // Run only when ID changes
+  }, [currentCompanyId, sessionValid]);
 
   // Persist local state back to the companies catalogue
   useEffect(() => {
+    if (sessionValid !== true) return;
     const saveData = async () => {
       if (!currentCompanyId) return;
 
@@ -506,7 +508,7 @@ export default function App() {
       });
     };
     saveData();
-  }, [invoices, transactions, expenses, companyDetails, currentCompanyId]);
+  }, [invoices, transactions, expenses, companyDetails, currentCompanyId, sessionValid]);
 
   const handleSearch = useCallback((query) => {
     setSearchQuery(query);
