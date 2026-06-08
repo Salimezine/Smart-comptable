@@ -6,7 +6,7 @@ import { migrateJournal } from './utils/pieceComptable';
 import { getJournalKey } from './utils/journalKey';
 import { PCG_COMPLET } from './utils/pcgComplet';
 
-export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [] }) {
+export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [], currentCompanyId }) {
   const [journal, setJournal] = useState([]);
   const [filter, setFilter] = useState('all');
   const [showBalance, setShowBalance] = useState(false);
@@ -127,11 +127,12 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   };
 
   useEffect(() => {
+    setJournal([]);
     loadJournal();
     const handler = () => loadJournal();
     window.addEventListener('journal:updated', handler);
     return () => window.removeEventListener('journal:updated', handler);
-  }, []);
+  }, [currentCompanyId]);
 
   const fallbackEntries = useMemo(() => {
     return [];

@@ -755,11 +755,18 @@ export function createPieceComptable(invoiceData, ttnResponse) {
 // 7. UPDATE STOCK
 // ══════════════════════════════════════════════════
 
-const STOCK_LOG_KEY = 'sc_stock_mouvements';
+function getStockKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `sc_stock_mouvements_${id}` : 'sc_stock_mouvements';
+  } catch {
+    return 'sc_stock_mouvements';
+  }
+}
 
 function getStockMouvements() {
   try {
-    return JSON.parse(localStorage.getItem(STOCK_LOG_KEY)) || [];
+    return JSON.parse(localStorage.getItem(getStockKey())) || [];
   } catch {
     return [];
   }
@@ -767,7 +774,7 @@ function getStockMouvements() {
 
 function saveStockMouvements(mvmts) {
   try {
-    localStorage.setItem(STOCK_LOG_KEY, JSON.stringify(mvmts));
+    localStorage.setItem(getStockKey(), JSON.stringify(mvmts));
   } catch (e) {
     console.warn('[TEIF] Stock: localStorage saturé', e);
   }
@@ -928,5 +935,5 @@ export function getStockSummary() {
 // EXPORTS
 // ══════════════════════════════════════════════════
 
-export { TEIF_VERSION, TVA_RATES, CATEGORIE_TO_COMPTE, CATEGORIE_LABELS, STOCK_LOG_KEY };
+export { TEIF_VERSION, TVA_RATES, CATEGORIE_TO_COMPTE, CATEGORIE_LABELS };
 export { getStockMouvements };

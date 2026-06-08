@@ -7,6 +7,7 @@ import { getAuditLog, exportAuditCSV, getAllAuditKeys } from '../utils/security/
 import { getConfig, setConfig, lockApp } from '../utils/security/pinManager';
 import { exportBackup, importBackup, getLastBackupDate, isBackupOverdue, setLastBackupDate } from '../utils/security/backupManager';
 import { logAction } from '../utils/security/auditLog';
+import { migrateLocalToSupabase, isMigrated } from '../utils/migrationTool';
 
 const fmtDate = (d) => d ? new Date(d).toLocaleDateString('fr-TN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '—';
 
@@ -26,6 +27,8 @@ export default function AdminDashboardView({ currentUser }) {
   const [importPreview, setImportPreview] = useState(null);
   const [importing, setImporting] = useState(false);
   const [exporting, setExporting] = useState(false);
+  const [migrateStatus, setMigrateStatus] = useState(null);
+  const [migrateResult, setMigrateResult] = useState(null);
 
   const config = getConfig();
 
@@ -130,6 +133,7 @@ export default function AdminDashboardView({ currentUser }) {
     { id: 'security', label: 'Sécurité', icon: Lock },
     { id: 'audit', label: 'Audit Log', icon: FileText },
     { id: 'backup', label: 'Backup', icon: Download },
+    { id: 'cloud', label: 'Cloud', icon: Upload },
   ];
 
   return (
@@ -357,6 +361,64 @@ export default function AdminDashboardView({ currentUser }) {
                 </button>
               </div>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* CLOUD */}
+      {tab === 'cloud' && (
+        <div className="space-y-4">
+          <div className="glass-card p-4 rounded-xl border border-slate-700 space-y-3">
+            <h4 className="text-xs font-bold text-slate-300">Synchronisation Cloud Supabase</h4>
+            <p className="text-[10px] text-slate-400">
+              Migrez vos données locales vers Supabase pour un accès multi-appareil.
+              Les données restent disponibles en local (offline) et se synchronisent automatiquement.
+            </p>
+            {(() => {
+              const companyId = currentUser?.societeId;
+              if (!companyId) return <p className="text-[10px] text-amber-400">Aucune société sélectionnée</p>;
+              const migrated = isMigrated(companyId);
+              return (
+                <div className="space-y-3">
+                  {migrated ? (
+                    <div className="flex items-center gap-2 p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+                      <CheckCircle className="w-4 h-4 text-emerald-400" />
+                      <span className="text-xs text-emerald-400">Données migrées vers Supabase</span>
+                    </div>
+                  ) : (
+                    <button onClick={async () => {
+                      setMigrateStatus('loading');
+                      const result = await migrateLocalToSupabase(companyId);
+                      setMigrateResult(result);
+                      setMigrateStatus(result.errors.length === 0 ? 'success' : 'error');
+                      if (result.errors.length === 0) {
+                        logAction('migrate_cloud', { details: `Migration Supabase: ${result.journal} écritures, ${result.employees} employés` });
+                      }
+                    }} disabled={migrateStatus === 'loading'}
+                      className="flex items-center gap-2 px-4 py-2 bg-brand-500/20 hover:bg-brand-500/30 text-brand-400 text-xs font-bold rounded-xl border border-brand-500/30 transition-all disabled:opacity-50">
+                      {migrateStatus === 'loading' ? (
+                        <><RefreshCw className="w-3.5 h-3.5 animate-spin" /> Migration en cours...</>
+                      ) : (
+                        <><Upload className="w-3.5 h-3.5" /> Migrer vers le cloud</>
+                      )}
+                    </button>
+                  )}
+                  {migrateStatus === 'success' && (
+                    <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 space-y-1">
+                      <p className="text-xs font-bold text-emerald-400">Migration réussie</p>
+                      {migrateResult?.journal > 0 && <p className="text-[10px] text-slate-300">{migrateResult.journal} écritures journal migrées</p>}
+                      {migrateResult?.employees > 0 && <p className="text-[10px] text-slate-300">{migrateResult.employees} employés migrés</p>}
+                    </div>
+                  )}
+                  {migrateStatus === 'error' && (
+                    <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20">
+                      <p className="text-xs font-bold text-red-400">Erreurs</p>
+                      {migrateResult?.errors.map((err, i) => <p key={i} className="text-[10px] text-red-300">{err}</p>)}
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
           </div>
         </div>
       )}

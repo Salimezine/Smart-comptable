@@ -3,12 +3,22 @@ Write-Host "=== Déploiement Smart Comptable ===" -ForegroundColor Cyan
 
 # 1. Build
 Write-Host "`n[1/3] Build production..." -ForegroundColor Yellow
+
+# Inject Supabase vars from environment (set in GitHub Secrets or local env)
+if ($env:VITE_SUPABASE_URL) { $env:VITE_SUPABASE_URL = $env:VITE_SUPABASE_URL }
+if ($env:VITE_SUPABASE_ANON_KEY) { $env:VITE_SUPABASE_ANON_KEY = $env:VITE_SUPABASE_ANON_KEY }
+
 npm run build
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Build échoué ― abandon" -ForegroundColor Red
     exit 1
 }
 Write-Host "Build OK" -ForegroundColor Green
+
+# Copier les pages : landing → index.html, app → app.html, mentions légales
+Copy-Item -LiteralPath "dist\index.html" -Destination "dist\app.html" -Force
+Copy-Item -LiteralPath "landing.html" -Destination "dist\index.html" -Force
+Copy-Item -LiteralPath "mentions-legales.html" -Destination "dist\mentions-legales.html" -Force
 
 # 2. Tests
 Write-Host "`n[2/3] Tests..." -ForegroundColor Yellow

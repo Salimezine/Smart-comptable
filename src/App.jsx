@@ -24,7 +24,6 @@ import {
   Layers,
   ArrowRight,
   ShieldCheck,
-  AlertTriangle,
    Lock,
    KeyRound,
    Filter,
@@ -63,12 +62,10 @@ import {
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
- import { correctOCRText, detectFournisseur, detectMF, detectNumeroFacture, detectTotalTTC, detectTimbre, parseFactureTunisienne, detectCategorie, detectTauxTVA, detectModeReglement, detectRetenueSource, detectTotalHT, detectMontantTVA, detectFODEC, detectRSPrestation, detectCategoriesSecondaires, genererAlertes, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
-import { runFullAudit, generateAuditMarkdown } from './auditEngine';
-import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats, predictCategory, predictVatRate } from './learningEngine';
+ import { parseFactureTunisienne, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
+import { runFullAudit } from './auditEngine';
+import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
-import ReactMarkdown from 'react-markdown';
-import rehypeSanitize from 'rehype-sanitize';
 
 import Onboarding from './Onboarding';
 import FournisseursView from './FournisseursView';
@@ -85,9 +82,10 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import InvitePage from './pages/InvitePage';
 import PlanBadge from './components/PlanBadge';
-import AuthGuard from './components/AuthGuard';
 import PermissionGuard from './components/PermissionGuard';
-import { getUsers, getUserById, hasUsers, getActiveUsers, getUserByEmail, createUser, updateUser, createSociete, addMembreToSociete, getUserSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
+import OnboardingWizard from './components/OnboardingWizard';
+import LoginView from './views/LoginView';
+import { getActiveUsers, createUser, updateUser, createSociete, addMembreToSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
 import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
 import { isBackupOverdue } from './utils/security/backupManager';
@@ -95,10 +93,14 @@ import { useAuth } from './hooks/useAuth';
 import { trackUsage } from './utils/auth/usageTracker';
 import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
 import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
+import { getJournalKey } from './utils/journalKey';
 import { storeDocument } from './utils/docStore';
 import { generateTEIFXML, validateTEIF as validateTEIFv2, downloadTEIFXML } from './utils/teifGenerator';
 import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
+import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
+import { onAuthChange, getSession } from './utils/authSupabase';
+import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 function normaliserMontant(str) {
   if (!str) return null;
@@ -348,7 +350,7 @@ function AuditReportRenderer({ report }) {
 
 export default function App() {
   // Auth State
-  const { currentUser, currentSociete, initializing, login, logout, can, isAdmin } = useAuth();
+  const { currentUser, currentSociete, initializing, login, pinLogin, logout, can, isAdmin } = useAuth();
   const [authPage, setAuthPage] = useState('login'); // login | register | invite
 
   // Navigation State
@@ -371,6 +373,7 @@ export default function App() {
   const [currentCompanyId, setCurrentCompanyId] = useState(() => {
     return localStorage.getItem('smart_comptable_current_id') || null;
   });
+  const activeCompanyRef = useRef(currentCompanyId);
 
   const handleLogout = () => {
     logout();
@@ -380,6 +383,8 @@ export default function App() {
     setCurrentCompanyId(id);
     localStorage.setItem('smart_comptable_current_id', id);
     logAction(AUDIT_ACTIONS.COMPANY_SWITCH, { to: id });
+    setAdvisorModalOpen(false);
+    setAdvisorReport('');
   };
 
   // Auth page routing
@@ -400,6 +405,7 @@ export default function App() {
     updateUser(user.id, { societeId: soc.id });
     setCompanies(prev => ({ ...prev, [soc.id]: { invoices: [], expenses: [], transactions: [], companyDetails: { name: soc.nom } } }));
     await login(data.email, data.password, true);
+    localStorage.removeItem('smart_journal');
     setCurrentCompanyId(soc.id);
     localStorage.setItem('smart_comptable_current_id', soc.id);
   };
@@ -429,8 +435,13 @@ export default function App() {
   const [transactions, setTransactions] = useState([]);
   const [expenses, setExpenses] = useState([]);
   const [companyDetails, setCompanyDetails] = useState({});
+  const [showOnboarding, setShowOnboarding] = useState(false);
   const [piecesComptables, setPiecesComptables] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('piecesComptables') || '[]'); } catch { return []; }
+    try {
+      const id = localStorage.getItem('smart_comptable_current_id');
+      const key = id ? `piecesComptables_${id}` : 'piecesComptables';
+      return JSON.parse(localStorage.getItem(key) || '[]');
+    } catch { return []; }
   });
 
   // Load specific company data when selected
@@ -445,6 +456,14 @@ export default function App() {
 
         const details = { ...(data.companyDetails || {}) };
         setCompanyDetails(details);
+
+        // Mark this company as the active one for saveData guard
+        activeCompanyRef.current = currentCompanyId;
+
+        // Auto-show onboarding if company has no name
+        if (!details.name || details.name.trim() === '') {
+          setShowOnboarding(true);
+        }
       }
     };
     loadData();
@@ -453,9 +472,13 @@ export default function App() {
   // Persist local state back to the companies catalogue
   useEffect(() => {
     if (!currentUser) return;
-    const saveData = async () => {
-      if (!currentCompanyId) return;
+    if (!currentCompanyId) return;
 
+    // Guard: don't save stale data when switching companies
+    // Only save if loadData has confirmed this company is active
+    if (currentCompanyId !== activeCompanyRef.current) return;
+
+    const saveData = async () => {
       const safeDetails = { ...companyDetails };
 
       setCompanies(prev => {
@@ -477,6 +500,50 @@ export default function App() {
     saveData();
   }, [invoices, transactions, expenses, companyDetails, currentCompanyId, currentUser]);
 
+  // Supabase init : session check + network listener + realtime
+  useEffect(() => {
+    initNetworkListener();
+
+    if (isSupabaseEnabled()) {
+      getSession().then(session => {
+        if (session) {
+          flushOfflineQueue();
+        }
+      }).catch(() => {});
+
+      const unsub = onAuthChange((event) => {
+        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+          window.location.reload();
+        }
+      });
+      return () => { unsub(); };
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isSupabaseEnabled() || !currentCompanyId) return;
+    const channel = supabase
+      .channel('journal-changes')
+      .on('postgres_changes', {
+        event: 'INSERT',
+        schema: 'public',
+        table: 'journal_entries',
+        filter: `company_id=eq.${currentCompanyId}`,
+      }, (payload) => {
+        const key = getJournalKey();
+        const existing = JSON.parse(localStorage.getItem(key) || '[]');
+        const alreadyExists = existing.some(e => e.id === payload.new.id);
+        if (!alreadyExists) {
+          existing.push(payload.new);
+          localStorage.setItem(key, JSON.stringify(existing));
+          window.dispatchEvent(new CustomEvent('journal:updated'));
+        }
+      })
+      .subscribe();
+
+    return () => supabase.removeChannel(channel);
+  }, [currentCompanyId]);
+
   const handleSearch = useCallback((query) => {
     setSearchQuery(query);
     if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
@@ -494,10 +561,14 @@ export default function App() {
     );
   }
 
+  const handleOldPinLogin = (user) => {
+    try { pinLogin(user); } catch (e) { console.error(e); }
+  };
+
   if (!currentUser) {
-    const hasExistingUsers = getActiveUsers().length > 0;
-    if (!hasExistingUsers && authPage === 'login') {
-      return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
+    const existingUsers = getActiveUsers();
+    if (existingUsers.length > 0) {
+      return <LoginView onLogin={handleOldPinLogin} companyId={currentCompanyId} />;
     }
     if (authPage === 'register') return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
     if (authPage === 'invite') return <InvitePage onJoin={handleJoinWithInvite} onBack={() => setAuthPage('login')} />;
@@ -507,6 +578,9 @@ export default function App() {
   const handleCreateCompany = (details) => {
     const id = `company_${Date.now()}`;
     const safeDetails = { ...details };
+    
+    // Nettoyer l'ancienne clé globale pour éviter la migration de données dans la nouvelle société
+    localStorage.removeItem('smart_journal');
     
     const initialData = {
       companyDetails: safeDetails,
@@ -529,6 +603,17 @@ export default function App() {
   const handleCompanyChange = (id) => {
     setCurrentCompanyId(id);
     localStorage.setItem('smart_comptable_current_id', id);
+    setAdvisorModalOpen(false);
+    setAdvisorReport('');
+  };
+
+  const handleOnboardingNavigate = (tab) => {
+    setShowOnboarding(false);
+    setCurrentTab(tab);
+  };
+
+  const handleOnboardingComplete = () => {
+    setShowOnboarding(false);
   };
 
   // 1. Écran Onboarding seulement si aucun utilisateur auth (first launch via auth-free flow)
@@ -546,7 +631,8 @@ export default function App() {
 
   const stockTotal = (() => {
     try {
-      const entries = JSON.parse(localStorage.getItem('STOCK_LOG_KEY') || '[]');
+      const stockKey = currentCompanyId ? `STOCK_LOG_KEY_${currentCompanyId}` : 'STOCK_LOG_KEY';
+      const entries = JSON.parse(localStorage.getItem(stockKey) || '[]');
       const map = {};
       entries.forEach(e => {
         if (!map[e.designation]) map[e.designation] = { qte: 0, total: 0 };
@@ -577,7 +663,9 @@ export default function App() {
   const handleAddPieceComptable = (piece) => {
     setPiecesComptables(prev => {
       const updated = [piece, ...prev];
-      localStorage.setItem('piecesComptables', JSON.stringify(updated));
+      const id = localStorage.getItem('smart_comptable_current_id');
+      const key = id ? `piecesComptables_${id}` : 'piecesComptables';
+      localStorage.setItem(key, JSON.stringify(updated));
       return updated;
     });
   };
@@ -618,7 +706,7 @@ export default function App() {
               <h1 className="font-extrabold text-xl tracking-tight bg-gradient-to-r from-indigo-200 via-indigo-400 to-indigo-100 bg-clip-text text-transparent">
                 Smart <span className="text-brand-400">Comptable</span>
               </h1>
-              <p className="text-[10px] uppercase tracking-widest text-slate-400 font-medium">Smart SaaS Ledger</p>
+              <p className="text-[10px] uppercase tracking-widest text-slate-400 font-medium">comptabilité tunisienne</p>
             </div>
           </div>
 
@@ -797,7 +885,7 @@ export default function App() {
             {currentTab === 'dashboard' && (
               <button 
                 onClick={handleRequestAudit} 
-                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-700 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
               >
                 <Sparkles className="w-3.5 h-3.5 shrink-0" />
                 <span className="hidden sm:inline">Audit</span>
@@ -806,7 +894,7 @@ export default function App() {
 
             <button 
               onClick={() => setCurrentTab('ocr')} 
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-750 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-700 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
               <span className="hidden sm:inline">Scan</span>
@@ -851,6 +939,7 @@ export default function App() {
               <FournisseursView
                 expenses={expenses}
                 formatCurrency={formatCurrency}
+                currentCompanyId={currentCompanyId}
               />
             )}
             {currentTab === 'expenses' && (
@@ -861,7 +950,7 @@ export default function App() {
               />
             )}
             {currentTab === 'stock' && (
-              <StockView formatCurrency={formatCurrency} />
+              <StockView formatCurrency={formatCurrency} currentCompanyId={currentCompanyId} />
             )}
             {currentTab === 'ocr' && (
               <OcrView 
@@ -921,6 +1010,7 @@ export default function App() {
                   expenses={expenses}
                   transactions={transactions}
                   formatCurrency={formatCurrency}
+                  currentCompanyId={currentCompanyId}
                 />
               </PermissionGuard>
             )}
@@ -961,6 +1051,15 @@ export default function App() {
           </div>
         </div>
       </main>
+
+      {showOnboarding && (
+        <OnboardingWizard
+          companyDetails={companyDetails}
+          setCompanyDetails={setCompanyDetails}
+          onComplete={handleOnboardingComplete}
+          onNavigate={handleOnboardingNavigate}
+        />
+      )}
 
       {/* AI Advisor Modal */}
       {advisorModalOpen && (
@@ -1020,8 +1119,13 @@ function DashboardView({
   // Évolution de la Trésorerie calculée à partir des données réelles
   const chartData = computeMonthlyChartData(invoices, expenses);
 
+  const getTeifKey = () => {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `teifStatusMap_${id}` : 'teifStatusMap';
+  };
+
   const [dashTeifMap] = React.useState(() => {
-    try { return JSON.parse(localStorage.getItem('teifStatusMap') || '{}'); } catch { return {}; }
+    try { return JSON.parse(localStorage.getItem(getTeifKey()) || '{}'); } catch { return {}; }
   });
 
   // Calcul du taux de taxes
@@ -1157,6 +1261,13 @@ function DashboardView({
         {/* Recents factures */}
         <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
           <h3 className="font-bold text-slate-100">Facturations Récentes</h3>
+          {invoices.length === 0 ? (
+            <div className="flex flex-col items-center justify-center py-8 text-center">
+              <FileText className="w-10 h-10 text-slate-700 mb-3" />
+              <p className="text-sm font-semibold text-slate-500">Aucune facture</p>
+              <p className="text-[11px] text-slate-600 mt-1">Créez votre première facture depuis l'onglet Factures</p>
+            </div>
+          ) : (
           <div className="space-y-3">
             {invoices.slice(0, 4).map((inv, idx) => (
               <div key={idx} className="flex justify-between items-center p-3.5 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 transition-colors">
@@ -1180,11 +1291,19 @@ function DashboardView({
               </div>
             ))}
           </div>
+          )}
         </div>
 
         {/* Recents dépenses */}
         <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
           <h3 className="font-bold text-slate-100">Dépenses Enregistrées par l'IA</h3>
+          {expenses.length === 0 ? (
+            <div className="flex flex-col items-center justify-center py-8 text-center">
+              <Scan className="w-10 h-10 text-slate-700 mb-3" />
+              <p className="text-sm font-semibold text-slate-500">Aucune dépense</p>
+              <p className="text-[11px] text-slate-600 mt-1">Scannez un reçu ou saisissez une dépense depuis l'onglet Scan</p>
+            </div>
+          ) : (
           <div className="space-y-3">
             {expenses.slice(0, 4).map((exp, idx) => (
               <div key={idx} className="flex justify-between items-center p-3.5 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 transition-colors">
@@ -1208,6 +1327,7 @@ function DashboardView({
               </div>
             ))}
           </div>
+          )}
         </div>
       </div>
     </div>
@@ -1218,6 +1338,11 @@ function DashboardView({
    COMPONENT: INVOICING VIEW (LIST & CREATE FACTURE)
    ========================================================================== */
 function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, onAddPieceComptable }) {
+  const getTeifKey = () => {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `teifStatusMap_${id}` : 'teifStatusMap';
+  };
+
   const [showCreateForm, setShowCreateForm] = useState(false);
   const [clientName, setClientName] = useState('');
   const [clientEmail, setClientEmail] = useState('');
@@ -1233,7 +1358,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
   const [filterDateTo, setFilterDateTo] = useState('');
   const [selectedClient, setSelectedClient] = useState(null);
   const [teifStatusMap, setTeifStatusMap] = React.useState(() => {
-    try { return JSON.parse(localStorage.getItem('teifStatusMap') || '{}'); } catch { return {}; }
+    try { return JSON.parse(localStorage.getItem(getTeifKey()) || '{}'); } catch { return {}; }
   });
   const [teifModal, setTeifModal] = React.useState(null);
   const [teifXmlContent, setTeifXmlContent] = React.useState('');
@@ -1242,7 +1367,11 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
   const [batchProgress, setBatchProgress] = React.useState({ current: 0, total: 0 });
   const [teifErrorModal, setTeifErrorModal] = React.useState(null);
 
-  React.useEffect(() => { localStorage.setItem('teifStatusMap', JSON.stringify(teifStatusMap)); }, [teifStatusMap]);
+  React.useEffect(() => { localStorage.setItem(getTeifKey(), JSON.stringify(teifStatusMap)); }, [teifStatusMap]);
+
+  React.useEffect(() => {
+    try { setTeifStatusMap(JSON.parse(localStorage.getItem(getTeifKey()) || '{}')); } catch { setTeifStatusMap({}); }
+  }, [companyDetails]);
 
   // Articles de la facture
   const [items, setItems] = useState([
@@ -1548,7 +1677,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
           <div className="flex gap-2">
             <button
               onClick={() => setAiModalOpen(true)}
-              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 text-brand-400 border border-brand-500/30 rounded-xl hover:bg-slate-750 transition-all"
+              className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-slate-800 text-brand-400 border border-brand-500/30 rounded-xl hover:bg-slate-700 transition-all"
             >
               <Sparkles className="w-3.5 h-3.5" /> Générer par IA
             </button>
@@ -3615,6 +3744,7 @@ function LockScreen({ onUnlock }) {
   );
 }
 
+
 function PinSetupScreen({ onComplete }) {
   const [pin, setPin] = useState('');
   const [confirm, setConfirm] = useState('');
@@ -3718,15 +3848,19 @@ function PinSetupScreen({ onComplete }) {
 /* ==========================================================================
    COMPONENT: STOCK VIEW
    ========================================================================== */
-function StockView({ formatCurrency }) {
+function StockView({ formatCurrency, currentCompanyId }) {
+  const stockKey = currentCompanyId ? `STOCK_LOG_KEY_${currentCompanyId}` : 'STOCK_LOG_KEY';
   const [stockEntries, setStockEntries] = React.useState(() => {
-    try { return JSON.parse(localStorage.getItem('STOCK_LOG_KEY') || '[]'); } catch { return []; }
+    try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; }
   });
+
+  React.useEffect(() => { setStockEntries(() => { try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; } }); }, [stockKey]);
+
+  React.useEffect(() => { localStorage.setItem(stockKey, JSON.stringify(stockEntries)); }, [stockEntries, stockKey]);
+
   const [showForm, setShowForm] = React.useState(false);
   const [form, setForm] = React.useState({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
   const [search, setSearch] = React.useState('');
-
-  React.useEffect(() => { localStorage.setItem('STOCK_LOG_KEY', JSON.stringify(stockEntries)); }, [stockEntries]);
 
   const handleAdd = () => {
     if (!form.designation || !form.quantite || !form.prixUnitaire) return;
@@ -4321,7 +4455,7 @@ function WorkflowView({
                       setPayrollBase(Number(e.target.value));
                       setCnssValidated(false);
                     }}
-                    className="w-full accent-brand-500"
+                    className="w-full accent-indigo-500"
                   />
                   <div className="flex justify-between text-[9px] text-slate-500 mt-1 font-semibold">
                     <span>1 500 DT</span>
@@ -4442,7 +4576,7 @@ function WorkflowView({
                   <span className="text-xs text-indigo-400 font-semibold">Génération de l'audit expert en cours...</span>
                 </div>
                ) : auditReport ? (
-                <div className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800 text-xs overflow-y-auto max-h-[300px] custom-markdown">
+                <div className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800 text-xs overflow-y-auto max-h-[300px] ">
                   <AuditReportRenderer report={auditReport} />
                 </div>
               ) : (

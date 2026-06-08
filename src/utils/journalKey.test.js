@@ -57,17 +57,16 @@ describe('getJournalKey', () => {
     expect(localStorage.getItem('smart_journal_7')).toBe(existingData);
   });
 
-  it('should preserve old data after migration', async () => {
+  it('should remove old global key after migration to prevent re-copy into new companies', async () => {
     localStorage.setItem('smart_journal', JSON.stringify([{ test: true }]));
     localStorage.setItem('smart_comptable_current_id', '5');
 
     const { getJournalKey } = await import('./journalKey');
     getJournalKey();
 
-    // Old key should still exist
+    // Old global key should be removed after migration
     const old = localStorage.getItem('smart_journal');
-    expect(old).toBeDefined();
-    expect(JSON.parse(old)[0].test).toBe(true);
+    expect(old).toBeNull();
   });
 
   it('should fallback to smart_journal when localStorage is unavailable', async () => {

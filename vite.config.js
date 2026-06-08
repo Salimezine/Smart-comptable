@@ -24,7 +24,7 @@ export default defineConfig({
       },
       workbox: {
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,svg}'],
+        globPatterns: ['**/*.{js,css,svg}'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         globIgnores: ['**/tesseract/**'],
       },

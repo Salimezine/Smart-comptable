@@ -51,6 +51,11 @@ export default function AuditView({ companyDetails }) {
   }, [companyDetails]);
 
   useEffect(() => {
+    setAuditResult(null);
+    setError('');
+  }, [companyDetails]);
+
+  useEffect(() => {
     const handler = () => {
       if (auditResult) runAudit();
     };

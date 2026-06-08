@@ -7,7 +7,7 @@ export function getJournalKey() {
     const id = localStorage.getItem('smart_comptable_current_id');
     if (id) {
       const key = `smart_journal_${id}`;
-      // Migrate old global data to this company's key on first access
+      // Migrate old global data ONCE, then remove the global key
       try {
         const old = localStorage.getItem(OLD_KEY);
         if (old) {
@@ -16,6 +16,8 @@ export function getJournalKey() {
             localStorage.setItem(key, old);
             logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: 'Migration des données du journal global vers clé société', oldKey: OLD_KEY, newKey: key });
           }
+          // Remove global key so it isn't re-copied into every new company
+          localStorage.removeItem(OLD_KEY);
         }
       } catch { /* ignore */ }
       return key;

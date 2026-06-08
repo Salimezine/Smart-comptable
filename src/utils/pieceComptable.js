@@ -6,6 +6,7 @@
  */
 import { getJournalKey } from './journalKey';
 import { logAction, AUDIT_ACTIONS } from './security/auditLog';
+import { syncToCloud } from './syncManager';
 
 // ─────────────────────────────────────────────
 // Comptes PCG TN par catégorie
@@ -60,12 +61,20 @@ export const LIBELLES_COMPTES = {
 // ─────────────────────────────────────────────
 // Sous-comptes tiers (fournisseurs / clients)
 // ─────────────────────────────────────────────
-const TIERS_KEY = 'smart_comptes_tiers';
+function getTiersKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `smart_comptes_tiers_${id}` : 'smart_comptes_tiers';
+  } catch {
+    return 'smart_comptes_tiers';
+  }
+}
 
 function getCompteTiers(nom, prefixe) {
   try {
     if (!nom) return `${prefixe}001`;
-    const raw = localStorage.getItem(TIERS_KEY);
+    const tiersKey = getTiersKey();
+    const raw = localStorage.getItem(tiersKey);
     const tiers = raw ? JSON.parse(raw) : {};
     const key = nom.trim().toLowerCase();
 
@@ -78,7 +87,7 @@ function getCompteTiers(nom, prefixe) {
     }, 0);
     const next = String(maxNum + 1).padStart(3, '0');
     tiers[key] = `${prefixe}${next}`;
-    localStorage.setItem(TIERS_KEY, JSON.stringify(tiers));
+    localStorage.setItem(tiersKey, JSON.stringify(tiers));
     return tiers[key];
   } catch {
     return `${prefixe}001`;
@@ -325,14 +334,18 @@ export function migrateJournal() {
 
 export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, credit, journal = 'OD', piece_justificative, fournisseur, categorie }) {
   try {
+    const journalKey = getJournalKey();
+    const companyId = localStorage.getItem('smart_comptable_current_id');
+
     let entries = [];
     try {
-      const raw = localStorage.getItem(getJournalKey());
+      const raw = localStorage.getItem(journalKey);
       if (raw) entries = JSON.parse(raw);
     } catch { /* ignorer */ }
     if (!Array.isArray(entries)) entries = [];
 
-    entries.unshift({
+    const entry = {
+      id: crypto.randomUUID(),
       date: date || new Date().toISOString().slice(0, 10),
       numeroPiece: numeroPiece || `OD-${Date.now()}`,
       piece_justificative: piece_justificative || numeroPiece || null,
@@ -344,11 +357,17 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
       credit: credit != null ? parseFloat(credit) || 0 : null,
       journal: journal || 'OD',
       ttnId: null,
-    });
+    };
 
-    localStorage.setItem(getJournalKey(), JSON.stringify(entries));
+    entries.unshift(entry);
+    localStorage.setItem(journalKey, JSON.stringify(entries));
     window.dispatchEvent(new CustomEvent('journal:updated'));
     logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: `Écriture simple ${numeroPiece} sauvegardée` });
+
+    // Sync cloud (non-bloquant)
+    if (companyId) {
+      syncToCloud('journal_entries', { ...entry, company_id: companyId }, 'insert').catch(console.warn);
+    }
   } catch {
     /* silencieux */
   }

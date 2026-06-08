@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Lock, AlertTriangle, Key, User, Fingerprint, Clock } from 'lucide-react';
-import { hashPIN, verifyPIN, recordFailedAttempt, getFailedAttempts, clearFailedAttempts, isLockedOut, getLockoutRemaining, lockApp, unlockApp, setConfig, getConfig } from '../utils/security/pinManager';
-import { hasUsers, getUsers, createUser, authenticateUser, getFirstUser } from '../utils/auth/userStore';
+import { Shield, Lock, AlertTriangle, Key, User, Fingerprint, Clock, Mail, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { hashPIN, verifyPIN, recordFailedAttempt, clearFailedAttempts, isLockedOut, getLockoutRemaining, lockApp, unlockApp, setConfig } from '../utils/security/pinManager';
+import { hasUsers, getUsers, createUser, getUserByEmail, updateUser } from '../utils/auth/userStore';
 import { createSession } from '../utils/security/sessionManager';
 import { logAction, AUDIT_ACTIONS } from '../utils/security/auditLog';
 
+const RESET_CODE_KEY = 'sc_reset_code';
+
 export default function LoginView({ onLogin, companyId }) {
-  const [mode, setMode] = useState('loading'); // loading | setup | select | pin | locked
+  const [mode, setMode] = useState('loading');
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
   const [users, setUsers] = useState([]);
   const [selectedUserId, setSelectedUserId] = useState(null);
   const [lockoutRemaining, setLockoutRemaining] = useState(0);
   const [setupData, setSetupData] = useState({ nom: '', prenom: '', email: '' });
+  const [forgotEmail, setForgotEmail] = useState('');
+  const [forgotUser, setForgotUser] = useState(null);
+  const [resetCode, setResetCode] = useState('');
+  const [generatedCode, setGeneratedCode] = useState('');
+  const [newPin, setNewPin] = useState('');
+  const [step, setStep] = useState('email');
 
   useEffect(() => {
     const u = hasUsers();
@@ -66,7 +74,6 @@ export default function LoginView({ onLogin, companyId }) {
   const handleSubmitPin = async () => {
     if (pin.length < 4) { setError('Minimum 4 chiffres'); return; }
     if (mode === 'setup') {
-      if (pin.length < 4) { setError('Minimum 4 chiffres'); return; }
       const h = await hashPIN(pin);
       const user = createUser({
         nom: setupData.nom || 'Admin',
@@ -106,34 +113,69 @@ export default function LoginView({ onLogin, companyId }) {
     onLogin(user, session);
   };
 
-  const renderKeypad = () => (
-    <div className="grid grid-cols-3 gap-2 w-48 mx-auto">
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(d => (
-        <button key={d} onClick={() => handleDigit(String(d))}
-          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all active:scale-95">
-          {d}
-        </button>
-      ))}
-      <button onClick={() => setPin('')}
-        className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-red-400 text-[10px] font-bold transition-all">
-        Effacer
-      </button>
-      <button onClick={() => handleDigit('0')}
-        className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all">
-        0
-      </button>
-      <button onClick={handleDelete}
-        className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-amber-400 text-[10px] font-bold transition-all">
-        ⌫
-      </button>
-    </div>
-  );
+  const handleSendResetCode = () => {
+    if (!forgotEmail) { setError('Veuillez entrer votre email'); return; }
+    const user = getUserByEmail(forgotEmail);
+    if (!user) { setError('Aucun compte trouvé avec cet email'); return; }
+    setForgotUser(user);
+    const code = Math.floor(100000 + Math.random() * 900000).toString();
+    setGeneratedCode(code);
+    localStorage.setItem(RESET_CODE_KEY, JSON.stringify({ code, userId: user.id, expires: Date.now() + 10 * 60 * 1000 }));
+    setStep('code');
+    setError('');
+    window.location.href = `mailto:${user.email}?subject=Code%20de%20r%C3%A9initialisation%20PIN%20-%20Smart%20Comptable&body=Bonjour%2C%0D%0A%0D%0AVoici%20votre%20code%20de%20v%C3%A9rification%20%3A%20${code}%0D%0A%0D%0ACe%20code%20est%20valable%2010%20minutes.%0D%0A%0D%0ASmart%20Comptable`;
+  };
 
-  const renderPinDots = () => (
-    <div className="flex gap-2 justify-center mb-4">
-      {[0, 1, 2, 3, 4, 5].map(i => (
-        <div key={i} className={`w-3 h-3 rounded-full transition-all ${i < pin.length ? 'bg-brand-400' : 'bg-slate-600'}`} />
-      ))}
+  const handleVerifyCode = () => {
+    const stored = localStorage.getItem(RESET_CODE_KEY);
+    if (!stored) { setError('Code expiré. Recommencez.'); return; }
+    const data = JSON.parse(stored);
+    if (data.expires < Date.now()) { setError('Code expiré. Recommencez.'); return; }
+    if (resetCode !== data.code) { setError('Code incorrect'); return; }
+    setStep('newpin');
+    setError('');
+    setNewPin('');
+  };
+
+  const handleSetNewPin = async () => {
+    if (newPin.length < 4) { setError('Minimum 4 chiffres'); return; }
+    const h = await hashPIN(newPin);
+    updateUser(forgotUser.id, { pin_hash: h });
+    localStorage.removeItem(RESET_CODE_KEY);
+    setSelectedUserId(forgotUser.id);
+    setMode('pin');
+    setPin('');
+    setError('');
+    alert('Nouveau PIN enregistré avec succès.');
+  };
+
+  const renderKeypad = (value, setValue, maxLen = 6) => (
+    <div className="space-y-4">
+      <div className="flex gap-2 justify-center mb-4">
+        {Array.from({ length: maxLen }, (_, i) => (
+          <div key={i} className={`w-3 h-3 rounded-full transition-all ${i < value.length ? 'bg-brand-400' : 'bg-slate-600'}`} />
+        ))}
+      </div>
+      <div className="grid grid-cols-3 gap-2 w-48 mx-auto">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(d => (
+          <button key={d} onClick={() => { if (value.length < maxLen) { setValue(value + String(d)); setError(''); } }}
+            className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all active:scale-95">
+            {d}
+          </button>
+        ))}
+        <button onClick={() => setValue('')}
+          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-red-400 text-[10px] font-bold transition-all">
+          Effacer
+        </button>
+        <button onClick={() => { if (value.length < maxLen) { setValue(value + '0'); setError(''); } }}
+          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all">
+          0
+        </button>
+        <button onClick={() => setValue(v => v.slice(0, -1))}
+          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-amber-400 text-[10px] font-bold transition-all">
+          ⌫
+        </button>
+      </div>
     </div>
   );
 
@@ -181,8 +223,7 @@ export default function LoginView({ onLogin, companyId }) {
               placeholder="Email (optionnel)"
               className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
             <p className="text-[10px] text-slate-400 text-center">Choisissez un code PIN (4-6 chiffres)</p>
-            {renderPinDots()}
-            {renderKeypad()}
+            {renderKeypad(pin, setPin)}
             <button onClick={handleSubmitPin} disabled={pin.length < 4}
               className="w-full py-2.5 bg-gradient-brand text-white text-xs font-bold rounded-xl transition-all disabled:opacity-50">
               Créer & Connexion
@@ -220,8 +261,7 @@ export default function LoginView({ onLogin, companyId }) {
               </p>
               <p className="text-[10px] text-slate-400">Entrez votre code PIN</p>
             </div>
-            {renderPinDots()}
-            {renderKeypad()}
+            {renderKeypad(pin, setPin)}
             <button onClick={handleSubmitPin} disabled={pin.length < 4}
               className="w-full py-2.5 bg-gradient-brand text-white text-xs font-bold rounded-xl transition-all disabled:opacity-50">
               <Fingerprint className="w-3.5 h-3.5 inline mr-1" /> Déverrouiller
@@ -231,6 +271,70 @@ export default function LoginView({ onLogin, companyId }) {
               className="w-full text-[10px] text-slate-400 hover:text-slate-200">
               Changer d'utilisateur
             </button>
+            <div className="pt-2 text-center">
+              <button onClick={() => { setMode('forgot'); setStep('email'); setForgotEmail(''); setError(''); }}
+                className="w-full text-[10px] text-slate-500 hover:text-brand-400 transition-colors">
+                PIN oublié ?
+              </button>
+            </div>
+          </div>
+        )}
+
+        {mode === 'forgot' && (
+          <div className="space-y-4">
+            <button onClick={() => { setMode('pin'); setError(''); }}
+              className="flex items-center gap-1 text-[10px] text-slate-400 hover:text-slate-200">
+              <ArrowLeft className="w-3 h-3" /> Retour
+            </button>
+
+            {step === 'email' && (
+              <>
+                <p className="text-xs text-slate-300 font-bold text-center">Réinitialisation du PIN</p>
+                <p className="text-[10px] text-slate-400 text-center">
+                  Un code de vérification sera envoyé par email.
+                </p>
+                <input type="email" value={forgotEmail}
+                  onChange={e => { setForgotEmail(e.target.value); setError(''); }}
+                  placeholder="expert@comptable.tn"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500" />
+                {error && <p className="text-[10px] text-red-400 text-center">{error}</p>}
+                <button onClick={handleSendResetCode}
+                  className="w-full py-2.5 bg-gradient-brand text-white text-xs font-bold rounded-xl transition-all">
+                  <Mail className="w-3.5 h-3.5 inline mr-1" /> Envoyer le code
+                </button>
+              </>
+            )}
+
+            {step === 'code' && (
+              <>
+                <p className="text-xs text-slate-300 font-bold text-center">Code de vérification</p>
+                <p className="text-[10px] text-slate-400 text-center">
+                  Un email a été ouvert avec votre code. Entrez-le ci-dessous.
+                </p>
+                <div className="pt-4">{renderKeypad(resetCode, setResetCode, 6)}</div>
+                {error && <p className="text-[10px] text-red-400 text-center">{error}</p>}
+                <button onClick={handleVerifyCode} disabled={resetCode.length < 6}
+                  className="w-full py-2.5 bg-gradient-brand text-white text-xs font-bold rounded-xl transition-all disabled:opacity-50">
+                  <CheckCircle2 className="w-3.5 h-3.5 inline mr-1" /> Vérifier
+                </button>
+                <button onClick={() => { setStep('email'); setResetCode(''); setError(''); }}
+                  className="w-full text-[10px] text-slate-400 hover:text-slate-200">
+                  Renvoyer un code
+                </button>
+              </>
+            )}
+
+            {step === 'newpin' && (
+              <>
+                <p className="text-xs text-slate-300 font-bold text-center">Nouveau code PIN</p>
+                <div className="pt-4">{renderKeypad(newPin, setNewPin)}</div>
+                {error && <p className="text-[10px] text-red-400 text-center">{error}</p>}
+                <button onClick={handleSetNewPin} disabled={newPin.length < 4}
+                  className="w-full py-2.5 bg-gradient-brand text-white text-xs font-bold rounded-xl transition-all disabled:opacity-50">
+                  <CheckCircle2 className="w-3.5 h-3.5 inline mr-1" /> Enregistrer
+                </button>
+              </>
+            )}
           </div>
         )}
       </div>

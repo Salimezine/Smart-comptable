@@ -67,6 +67,12 @@ export default function PayrollView({ companyDetails }) {
   useEffect(() => { refreshEmployes(); }, [refreshEmployes]);
 
   useEffect(() => {
+    refreshEmployes();
+    setBulletins(getBulletins(mois, annee));
+    setCurrentBulletin(null);
+  }, [companyDetails]);
+
+  useEffect(() => {
     if (tab === 'bulletins' || tab === 'declarations' || tab === 'historique') {
       setBulletins(getBulletins(mois, annee));
     }

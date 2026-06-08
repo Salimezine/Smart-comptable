@@ -18,7 +18,16 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run build
+      - name: Build with Supabase
+        run: |
+          export VITE_SUPABASE_URL="${{ secrets.VITE_SUPABASE_URL }}"
+          export VITE_SUPABASE_ANON_KEY="${{ secrets.VITE_SUPABASE_ANON_KEY }}"
+          npm run build
+      - name: Copy static pages
+        run: |
+          cp dist/index.html dist/app.html
+          cp landing.html dist/index.html
+          cp mentions-legales.html dist/mentions-legales.html
       - name: Debug build output
         run: |
           echo "GITHUB_SHA=$GITHUB_SHA"

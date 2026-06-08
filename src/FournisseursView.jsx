@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Search, Plus, Trash2, Building, Phone, FileText } from 'lucide-react';
 
-export default function FournisseursView({ expenses, formatCurrency }) {
+export default function FournisseursView({ expenses, formatCurrency, currentCompanyId }) {
   const [search, setSearch] = useState('');
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({ name: '', mf: '', phone: '', address: '' });
+  const suppliersKey = currentCompanyId ? `sc_manual_suppliers_${currentCompanyId}` : 'sc_manual_suppliers';
 
   const [manualSuppliers, setManualSuppliers] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('sc_manual_suppliers') || '[]'); } catch { return []; }
+    try { return JSON.parse(localStorage.getItem(suppliersKey) || '[]'); } catch { return []; }
   });
 
   const saveManual = (list) => {
     setManualSuppliers(list);
-    localStorage.setItem('sc_manual_suppliers', JSON.stringify(list));
+    localStorage.setItem(suppliersKey, JSON.stringify(list));
   };
 
   const supplierMap = {};

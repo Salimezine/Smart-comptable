@@ -6,6 +6,7 @@
 import { jsPDF } from 'jspdf';
 import { autoTable } from 'jspdf-autotable';
 import { logAction, AUDIT_ACTIONS } from './security/auditLog';
+import { getJournalKey } from './journalKey';
 
 export const TAUX = {
   cnss_sal: 0.0968,
@@ -251,16 +252,7 @@ export function genererPaiementPaie(bulletins, type, mois, annee) {
 
 export function saveJournalPiece(piece) {
   try {
-    const key = (() => {
-      try {
-        const id = localStorage.getItem('smart_comptable_current_id');
-        if (id) {
-          const existing = localStorage.getItem(`smart_journal_${id}`);
-          return `smart_journal_${id}`;
-        }
-      } catch {}
-      return 'smart_journal';
-    })();
+    const key = getJournalKey();
     let journal = [];
     try {
       const raw = localStorage.getItem(key);

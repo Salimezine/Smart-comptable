@@ -54,9 +54,11 @@ export async function createUser(data) {
   if (existing) return null;
   const user = {
     id: generateId('usr'),
-    email: data.email,
-    passwordHash: await sha256(data.password),
+    email: data.email || '',
+    passwordHash: data.password ? await sha256(data.password) : undefined,
+    pin_hash: data.pin || undefined,
     nom: data.nom,
+    prenom: data.prenom || '',
     role: data.role || 'comptable',
     plan: data.plan || 'free',
     societeId: data.societeId || null,

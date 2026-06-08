@@ -64,6 +64,15 @@ export function useAuth() {
     return user;
   }, []);
 
+  const pinLogin = useCallback((user) => {
+    if (!user || !user.actif) throw new Error('Utilisateur invalide');
+    saveSession(user.id, true);
+    setCurrentUser(user);
+    setCurrentSociete(getUserSociete(user.id));
+    logAction(AUDIT_ACTIONS.LOGIN, { userId: user.id, method: 'pin' });
+    return user;
+  }, []);
+
   const logout = useCallback(() => {
     if (currentUser) {
       logAction(AUDIT_ACTIONS.LOGOUT, { userId: currentUser.id });
@@ -100,6 +109,7 @@ export function useAuth() {
     currentSociete,
     initializing,
     login,
+    pinLogin,
     logout,
     can,
     checkLimit,

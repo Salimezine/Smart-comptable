@@ -5,8 +5,23 @@
  * Compatible avec les entrées existantes de StockView
  */
 
-const STOCK_KEY = 'smart_stock';
-const MOVEMENTS_KEY = 'smart_stock_mouvements';
+function getStockKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `smart_stock_${id}` : 'smart_stock';
+  } catch {
+    return 'smart_stock';
+  }
+}
+
+function getMovementsKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `smart_stock_mouvements_${id}` : 'smart_stock_mouvements';
+  } catch {
+    return 'smart_stock_mouvements';
+  }
+}
 
 function normalize(str) {
   if (!str) return '';
@@ -22,7 +37,7 @@ function normalize(str) {
 
 function findArticle(designation) {
   try {
-    const raw = localStorage.getItem(STOCK_KEY);
+    const raw = localStorage.getItem(getStockKey());
     const stock = raw ? JSON.parse(raw) : [];
     if (!Array.isArray(stock)) return null;
 
@@ -42,7 +57,7 @@ function findArticle(designation) {
 
 function saveStock(stock) {
   try {
-    localStorage.setItem(STOCK_KEY, JSON.stringify(stock));
+    localStorage.setItem(getStockKey(), JSON.stringify(stock));
   } catch {
     /* silencieux */
   }
@@ -62,7 +77,7 @@ export function updateStockFromInvoice(invoice) {
 
     let stock = [];
     try {
-      const raw = localStorage.getItem(STOCK_KEY);
+      const raw = localStorage.getItem(getStockKey());
       if (raw) stock = JSON.parse(raw);
     } catch {
       stock = [];
@@ -71,7 +86,7 @@ export function updateStockFromInvoice(invoice) {
 
     let mouvements = [];
     try {
-      const raw = localStorage.getItem(MOVEMENTS_KEY);
+      const raw = localStorage.getItem(getMovementsKey());
       if (raw) mouvements = JSON.parse(raw);
     } catch {
       mouvements = [];
@@ -116,7 +131,7 @@ export function updateStockFromInvoice(invoice) {
 
     saveStock(stock);
     try {
-      localStorage.setItem(MOVEMENTS_KEY, JSON.stringify(mouvements));
+      localStorage.setItem(getMovementsKey(), JSON.stringify(mouvements));
     } catch {
       /* silencieux */
     }
@@ -132,7 +147,7 @@ export function updateStockFromInvoice(invoice) {
 // ─────────────────────────────────────────────
 export function getStockSummary() {
   try {
-    const raw = localStorage.getItem(STOCK_KEY);
+    const raw = localStorage.getItem(getStockKey());
     const stock = raw ? JSON.parse(raw) : [];
     if (!Array.isArray(stock)) return [];
     return stock

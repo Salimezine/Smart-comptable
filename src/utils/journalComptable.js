@@ -1,5 +1,6 @@
 import { getJournalKey } from './journalKey';
 import { logAction, AUDIT_ACTIONS } from './security/auditLog';
+import { syncToCloud } from './syncManager';
 
 export const CATEGORIE_TO_COMPTE = {
   'Télécoms & Internet': '626000',
@@ -34,12 +35,20 @@ export const LIBELLES_COMPTES = {
   '70XXXX': 'Ventes de produits',
 };
 
-const TIERS_KEY = 'smart_comptes_tiers';
+function getTiersKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `smart_comptes_tiers_${id}` : 'smart_comptes_tiers';
+  } catch {
+    return 'smart_comptes_tiers';
+  }
+}
 
 function getCompteTiers(nom, prefixe) {
   try {
     if (!nom) return `${prefixe}001`;
-    const raw = localStorage.getItem(TIERS_KEY);
+    const tiersKey = getTiersKey();
+    const raw = localStorage.getItem(tiersKey);
     const tiers = raw ? JSON.parse(raw) : {};
     const key = nom.trim().toLowerCase();
     if (tiers[key]) return tiers[key];
@@ -50,7 +59,7 @@ function getCompteTiers(nom, prefixe) {
     }, 0);
     const next = String(maxNum + 1).padStart(3, '0');
     tiers[key] = `${prefixe}${next}`;
-    localStorage.setItem(TIERS_KEY, JSON.stringify(tiers));
+    localStorage.setItem(tiersKey, JSON.stringify(tiers));
     return tiers[key];
   } catch {
     return `${prefixe}001`;
@@ -263,14 +272,18 @@ export function journalComptable(corrige, options = {}) {
 export function saveJournalPiece(piece, opts = {}) {
   try {
     if (!piece || !piece.validated) return false;
+    const journalKey = getJournalKey();
+    const companyId = localStorage.getItem('smart_comptable_current_id');
+
     let journal = [];
     try {
-      const raw = localStorage.getItem(getJournalKey());
+      const raw = localStorage.getItem(journalKey);
       if (raw) journal = JSON.parse(raw);
     } catch { /* ignorer */ }
     if (!Array.isArray(journal)) journal = [];
 
     const entries = piece.lignes.map(l => ({
+      id: crypto.randomUUID(),
       date: piece.date,
       numeroPiece: piece.id,
       piece_justificative: piece.piece_justificative || piece.id,
@@ -286,9 +299,19 @@ export function saveJournalPiece(piece, opts = {}) {
     }));
 
     journal.unshift(...entries);
-    localStorage.setItem(getJournalKey(), JSON.stringify(journal));
+    localStorage.setItem(journalKey, JSON.stringify(journal));
     window.dispatchEvent(new CustomEvent('journal:updated'));
     logAction(AUDIT_ACTIONS.JOURNAL_SAVE, { details: `Pièce ${piece.id} sauvegardée (${piece.lignes.length} lignes)` });
+
+    // Sync cloud (non-bloquant)
+    if (companyId) {
+      const rows = entries.map(e => ({
+        ...e,
+        company_id: companyId,
+      }));
+      syncToCloud('journal_entries', rows, 'insert').catch(console.warn);
+    }
+
     return true;
   } catch {
     return false;

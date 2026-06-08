@@ -1,4 +1,11 @@
-const KB_KEY = 'sc_learning_kb';
+function getKbKey() {
+  try {
+    const id = localStorage.getItem('smart_comptable_current_id');
+    return id ? `sc_learning_kb_${id}` : 'sc_learning_kb';
+  } catch {
+    return 'sc_learning_kb';
+  }
+}
 const SCE_COMPTES = {
   'Achats de marchandises': '6011', 'Achats de matières premières': '6011',
   'Fournitures de Bureau': '6031', 'Fournitures d\'entretien': '6032',
@@ -14,14 +21,14 @@ const SCE_COMPTES = {
 
 const loadKB = () => {
   try {
-    const raw = localStorage.getItem(KB_KEY);
+    const raw = localStorage.getItem(getKbKey());
     if (raw) return JSON.parse(raw);
   } catch { }
   return { suppliers: {}, itemPatterns: {}, vatBySupplier: {}, catBySupplier: {} };
 };
 
 const saveKB = (kb) => {
-  localStorage.setItem(KB_KEY, JSON.stringify(kb));
+  localStorage.setItem(getKbKey(), JSON.stringify(kb));
 };
 
 const extractKeywords = (text) => {

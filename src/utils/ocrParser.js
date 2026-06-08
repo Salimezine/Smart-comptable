@@ -1175,17 +1175,18 @@ export function generateInvoiceNumber(existingInvoices = []) {
 // ─────────────────────────────────────────────
 // 9. saveOrUpdateFournisseur — persistance LRU
 // ─────────────────────────────────────────────
-const FOURNISSEURS_KEY = 'smart_fournisseurs';
-
 export function saveOrUpdateFournisseur(name, data = {}) {
   try {
     if (!name || typeof name !== 'string') return;
     const trimmed = name.trim();
     if (!trimmed || BLACKLIST_FOURNISSEUR.some(r => r.test(trimmed))) return;
 
+    const companyId = localStorage.getItem('smart_comptable_current_id');
+    const key = companyId ? `smart_fournisseurs_${companyId}` : 'smart_fournisseurs';
+
     let fournisseurs = [];
     try {
-      const raw = localStorage.getItem(FOURNISSEURS_KEY);
+      const raw = localStorage.getItem(key);
       if (raw) fournisseurs = JSON.parse(raw);
     } catch {
       fournisseurs = [];
@@ -1222,7 +1223,7 @@ export function saveOrUpdateFournisseur(name, data = {}) {
       });
     }
 
-    localStorage.setItem(FOURNISSEURS_KEY, JSON.stringify(fournisseurs));
+    localStorage.setItem(key, JSON.stringify(fournisseurs));
   } catch {
     /* silencieux */
   }
