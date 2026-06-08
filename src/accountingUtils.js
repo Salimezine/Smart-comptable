@@ -148,6 +148,25 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const PR = Math.max(pendingRevenue / 1000, 0);
   const BB = Math.max(bankBalance / 1000, 0);
 
+  const hasData = totalRevenue > 0 || totalExpenses > 0 || bankBalance !== 0 || stockTotalDT > 0 || Object.keys(customData).length > 0 || incomeStatement;
+  if (!hasData) {
+    const zero = () => 0;
+    return {
+      assets: {
+        nonCurrent: { intangible: 0, intangibleDetail: { devCosts: 0, patents: 0, goodwill: 0 }, tangible: 0, tangibleDetail: { land: 0, buildings: 0, equipment: 0, transport: 0, officeEquip: 0 }, financial: 0, total: 0 },
+        current: { stocks: 0, stockDetail: { merchandise: 0, rawMaterials: 0 }, receivables: 0, personnelRec: 0, taxRec: 0, otherRec: 0, cashAndBank: 0, cashRegister: 0, total: 0 },
+        total: 0
+      },
+      liabilities: {
+        nonCurrent: { bankLoans: 0, provisions: 0, total: 0 },
+        current: { accountsPayable: 0, personnelPayable: 0, taxPayable: 0, vatPayable: 0, otherPayables: 0, bankOverdraft: 0, total: 0 },
+        total: 0
+      },
+      equity: { socialCapital: 0, legalReserve: 0, otherReserves: 0, retainedEarnings: 0, total: 0 },
+      totalLiabilitiesAndEquity: 0
+    };
+  }
+
   /* --- User-editable values --- */
   const intangibleAssets    = Math.round((customData.immobilisationsIncorporelles ?? Math.min(R * 0.08, 15)) * 1000) / 1000;
   const tangibleAssets      = Math.round((customData.immobilisationsCorporelles ?? Math.min(R * 0.25, 50)) * 1000) / 1000;
