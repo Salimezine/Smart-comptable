@@ -66,6 +66,7 @@ import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
 import { runFullAudit } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
+import { getDemoData } from './utils/demoData';
 
 import Onboarding from './Onboarding';
 import FournisseursView from './FournisseursView';
@@ -670,6 +671,24 @@ export default function App() {
     });
   };
 
+  const handleLoadDemoData = () => {
+    const data = getDemoData();
+    setInvoices(data.invoices);
+    setExpenses(data.expenses);
+    setTransactions(data.transactions);
+    for (const e of data.journalEntries) {
+      saveJournalPiece(e);
+    }
+    setPiecesComptables(prev => [...prev, ...data.journalEntries.map(e => ({ id: e.id, entries: [e], locked: false }))]);
+    const id = localStorage.getItem('smart_comptable_current_id');
+    if (id) {
+      const key = `journal_entries_${id}`;
+      const existing = JSON.parse(localStorage.getItem(key) || '[]');
+      localStorage.setItem(key, JSON.stringify([...data.journalEntries, ...existing]));
+    }
+    setRefreshKey(k => k + 1);
+  };
+
   const handleRequestAudit = () => {
     setAdvisorModalOpen(true);
     setAdvisorLoading(true);
@@ -923,6 +942,7 @@ export default function App() {
                   formatCurrency={formatCurrency}
                   invoices={invoices}
                   expenses={expenses}
+                  onLoadDemoData={handleLoadDemoData}
                 />
               </PermissionGuard>
             )}
@@ -1114,7 +1134,8 @@ function DashboardView({
   estimatedTaxes, 
   formatCurrency,
   invoices,
-  expenses
+  expenses,
+  onLoadDemoData
 }) {
   // Évolution de la Trésorerie calculée à partir des données réelles
   const chartData = computeMonthlyChartData(invoices, expenses);
@@ -1133,6 +1154,15 @@ function DashboardView({
 
   return (
     <div className="space-y-6">
+      {invoices.length === 0 && expenses.length === 0 && (
+        <div className="p-6 rounded-2xl border border-dashed border-indigo-500/30 bg-indigo-500/5 text-center">
+          <p className="text-sm font-bold text-slate-200 mb-1">Aucune donnée dans cette société</p>
+          <p className="text-xs text-slate-400 mb-4">Chargez des données de démonstration pour tester toutes les fonctionnalités.</p>
+          <button onClick={onLoadDemoData} className="px-5 py-2 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-xs font-bold rounded-xl border border-indigo-500/30 transition-all">
+            Charger des données de démonstration
+          </button>
+        </div>
+      )}
       {/* 5 Cards Métriques */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
         {[
