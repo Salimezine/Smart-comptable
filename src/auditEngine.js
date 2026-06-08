@@ -722,6 +722,19 @@ export const runFullAudit = ({ invoices, expenses, transactions, companyDetails 
   const totalRevenue = invoices.reduce((s, inv) => s + (parseFloat(inv.totalAmount) || 0), 0);
   const totalExpenses = expenses.reduce((s, exp) => s + (parseFloat(exp.totalAmount) || 0), 0);
   const netProfit = totalRevenue - totalExpenses;
+
+  if (totalRevenue === 0 && totalExpenses === 0 && (!transactions || transactions.length === 0)) {
+    return {
+      score: 0,
+      summary: { total: 0, passed: 0, warned: 0, failed: 0 },
+      checks: [],
+      recommendations: ['Ajoutez des factures et dépenses pour générer un audit complet.'],
+      optimizations: [],
+      stats: { entriesCount: 0, lockedCount: 0, unbalancedCount: 0, duplicatePieces: 0, tvaCollected: 0, tvaDeductible: 0, tvaDue: 0, rsSolde: 0, isProvision: 0, payrollBrut: 0, totalDebit: 0, totalCredit: 0, cashAndBank: 0, totalCharges: 0 },
+      companyName: companyDetails?.name || 'Nouvelle société',
+      date: new Date().toISOString().split('T')[0]
+    };
+  }
   const paidRevenue = invoices.filter(i => i.status === 'PAID').reduce((s, i) => s + (parseFloat(i.totalAmount) || 0), 0);
   const pendingRevenue = invoices.filter(i => i.status === 'PENDING').reduce((s, i) => s + (parseFloat(i.totalAmount) || 0), 0);
   const bankBalance = paidRevenue - totalExpenses;
