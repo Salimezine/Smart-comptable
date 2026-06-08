@@ -16,7 +16,7 @@ function Input({ icon: Icon, ...props }) {
 
 const RESET_CODE_KEY = 'sc_reset_code_pwd';
 
-export default function LoginPage({ onLogin, onNavigateRegister, onNavigateInvite }) {
+export default function LoginPage({ onLogin, onNavigateRegister, onNavigateInvite, onDemo }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -197,6 +197,11 @@ export default function LoginPage({ onLogin, onNavigateRegister, onNavigateInvit
                 </button>
                 <button type="button" onClick={onNavigateInvite} className="w-full flex items-center justify-center gap-2 py-2 text-xs text-slate-500 hover:text-brand-400 transition-colors">
                   <ArrowRight className="w-3 h-3" /> Rejoindre avec un code d'invitation
+                </button>
+              </div>
+              <div className="pt-2 border-t border-slate-800">
+                <button type="button" onClick={onDemo} className="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-xl border border-emerald-500/20 transition-all">
+                  <Sparkles className="w-3.5 h-3.5" /> Mode démo — Exploration libre
                 </button>
               </div>
             </>

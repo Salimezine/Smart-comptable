@@ -389,6 +389,20 @@ export default function App() {
   };
 
   // Auth page routing
+  const handleDemoLogin = () => {
+    const demoUser = createUser({ nom: 'Démo', prenom: 'Utilisateur', email: 'demo@demo.tn', password: 'demo123', role: 'admin', plan: 'pro' });
+    if (!demoUser) return;
+    const soc = createSociete({ nom: 'Société Démo', matriculeFiscal: 'MF0000000000', ownerId: demoUser.id, plan: 'pro' });
+    updateUser(demoUser.id, { societeId: soc.id });
+    const data = getDemoData();
+    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: data.invoices, expenses: data.expenses, transactions: data.transactions, companyDetails: { name: 'Société Démo' } } }));
+    const journalKey = `journal_entries_${soc.id}`;
+    localStorage.setItem(journalKey, JSON.stringify(data.journalEntries));
+    login('demo@demo.tn', 'demo123', false);
+    setCurrentCompanyId(soc.id);
+    localStorage.setItem('smart_comptable_current_id', soc.id);
+  };
+
   const handleLoginSubmit = async (email, password, remember) => {
     const user = await login(email, password, remember);
     const companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
@@ -573,7 +587,7 @@ export default function App() {
     }
     if (authPage === 'register') return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
     if (authPage === 'invite') return <InvitePage onJoin={handleJoinWithInvite} onBack={() => setAuthPage('login')} />;
-    return <LoginPage onLogin={handleLoginSubmit} onNavigateRegister={() => setAuthPage('register')} onNavigateInvite={() => setAuthPage('invite')} />;
+    return <LoginPage onLogin={handleLoginSubmit} onNavigateRegister={() => setAuthPage('register')} onNavigateInvite={() => setAuthPage('invite')} onDemo={handleDemoLogin} />;
   }
 
   const handleCreateCompany = (details) => {
