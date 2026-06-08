@@ -26,6 +26,18 @@ function loadJournal() {
 // ─────────────────────────────────────────────
 export const runJournalAudit = ({ companyDetails } = {}) => {
   const journal = loadJournal();
+  if (journal.length === 0) {
+    return {
+      score: 0,
+      summary: { total: 0, passed: 0, warned: 0, failed: 0 },
+      checks: [],
+      recommendations: ['Ajoutez des écritures comptables pour générer un audit.'],
+      optimizations: [],
+      stats: { entriesCount: 0, lockedCount: 0, unbalancedCount: 0, duplicatePieces: 0, tvaCollected: 0, tvaDeductible: 0, tvaDue: 0, rsSolde: 0, isProvision: 0, payrollBrut: 0, totalDebit: 0, totalCredit: 0, cashAndBank: 0, totalCharges: 0 },
+      companyName: companyDetails?.name || 'Nouvelle société',
+      date: new Date().toISOString().split('T')[0]
+    };
+  }
   const checks = [];
 
   // Compute aggregates from journal
