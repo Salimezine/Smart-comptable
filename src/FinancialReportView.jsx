@@ -174,11 +174,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const journalData = generateFromJournal();
   const useJournal = journalData !== null;
 
-  let bilan, resultat;
+  let bilan, resultat, ratios;
 
   if (useJournal) {
     bilan = journalData.bilan;
     resultat = journalData.resultat;
+    ratios = journalData.ratios;
   } else {
     const is = generateIncomeStatement(invoices, expenses);
     const bs = generateBalanceSheet(invoices, expenses, transactions, {}, is, stockTotal);
@@ -220,6 +221,19 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       passifNC: bs.liabilities.nonCurrent.total,
       passifC: bs.liabilities.current.total,
       totalPassif: bs.totalLiabilitiesAndEquity,
+    };
+    const ac = bilan.actifC, pc = bilan.passifC, cp = bilan.capPropres, pnc = bilan.passifNC, anc = bilan.actifNC, tp = bilan.totalPassif;
+    const stocks = bilan.stocks || 0;
+    const emprunts = bilan.emprunts || 0;
+    const cc = bilan.concoursBancaires || 0;
+    const apnc = bilan.autresPassifsNC || 0;
+    ratios = {
+      liquiditeGenerale: pc > 0 ? Math.round((ac / pc) * 100) / 100 : 0,
+      liquiditeReduite: pc > 0 ? Math.round(((ac - stocks) / pc) * 100) / 100 : 0,
+      autonomieFinanciere: tp > 0 ? Math.round((cp / tp) * 10000) / 100 : 0,
+      endettementNet: cp > 0 ? Math.round(((emprunts + cc + apnc) / cp) * 100) / 100 : 0,
+      couvertureEmploisStables: anc > 0 ? Math.round(((cp + pnc) / anc) * 100) / 100 : 0,
+      margeNette: 0, roe: 0, roa: 0, margeExploitation: 0,
     };
     const fallbackVentes = is.productSales + is.serviceRevenue;
     const fallbackAchats = is.purchaseGoods + is.purchaseRaw;
@@ -562,8 +576,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-xs text-slate-300">Liquidité générale</span>
                     <span className="text-[10px] text-slate-500 ml-2">(Actif C / Passif C)</span>
                   </div>
-                  <span className={`text-xs font-bold ${(journalData?.ratios?.liquiditeGenerale || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {journalData?.ratios?.liquiditeGenerale?.toFixed(2) || '0.00'}
+                  <span className={`text-xs font-bold ${(ratios?.liquiditeGenerale || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                    {ratios?.liquiditeGenerale?.toFixed(2) || '0.00'}
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -571,8 +585,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-xs text-slate-300">Liquidité réduite</span>
                     <span className="text-[10px] text-slate-500 ml-2">(Actif C − Stocks / Passif C)</span>
                   </div>
-                  <span className={`text-xs font-bold ${(journalData?.ratios?.liquiditeReduite || 0) >= 0.5 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {journalData?.ratios?.liquiditeReduite?.toFixed(2) || '0.00'}
+                  <span className={`text-xs font-bold ${(ratios?.liquiditeReduite || 0) >= 0.5 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                    {ratios?.liquiditeReduite?.toFixed(2) || '0.00'}
                   </span>
                 </div>
               </div>
@@ -586,8 +600,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-xs text-slate-300">Autonomie financière</span>
                     <span className="text-[10px] text-slate-500 ml-2">(CP / Total Passif)</span>
                   </div>
-                  <span className={`text-xs font-bold ${(journalData?.ratios?.autonomieFinanciere || 0) >= 30 ? 'text-emerald-400' : 'text-amber-400'}`}>
-                    {journalData?.ratios?.autonomieFinanciere?.toFixed(1) || '0.0'}%
+                  <span className={`text-xs font-bold ${(ratios?.autonomieFinanciere || 0) >= 30 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                    {ratios?.autonomieFinanciere?.toFixed(1) || '0.0'}%
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -595,8 +609,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-xs text-slate-300">Endettement net</span>
                     <span className="text-[10px] text-slate-500 ml-2">(Dettes fin. / CP)</span>
                   </div>
-                  <span className={`text-xs font-bold ${(journalData?.ratios?.endettementNet || 0) < 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {journalData?.ratios?.endettementNet?.toFixed(2) || '0.00'}
+                  <span className={`text-xs font-bold ${(ratios?.endettementNet || 0) < 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                    {ratios?.endettementNet?.toFixed(2) || '0.00'}
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -604,8 +618,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-xs text-slate-300">Couverture emplois stables</span>
                     <span className="text-[10px] text-slate-500 ml-2">(CP + Passif NC / Actif NC)</span>
                   </div>
-                  <span className={`text-xs font-bold ${(journalData?.ratios?.couvertureEmploisStables || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {journalData?.ratios?.couvertureEmploisStables?.toFixed(2) || '0.00'}
+                  <span className={`text-xs font-bold ${(ratios?.couvertureEmploisStables || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                    {ratios?.couvertureEmploisStables?.toFixed(2) || '0.00'}
                   </span>
                 </div>
               </div>
@@ -620,7 +634,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-[10px] text-slate-500 ml-2">(Résultat net / Ventes)</span>
                   </div>
                   <span className="text-xs font-bold text-slate-300">
-                    {journalData?.ratios?.margeNette?.toFixed(1) || '0.0'}%
+                    {ratios?.margeNette?.toFixed(1) || '0.0'}%
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -629,7 +643,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-[10px] text-slate-500 ml-2">(Résultat expl. / Ventes)</span>
                   </div>
                   <span className="text-xs font-bold text-slate-300">
-                    {journalData?.ratios?.margeExploitation?.toFixed(1) || '0.0'}%
+                    {ratios?.margeExploitation?.toFixed(1) || '0.0'}%
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -638,7 +652,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-[10px] text-slate-500 ml-2">(Résultat net / CP)</span>
                   </div>
                   <span className="text-xs font-bold text-slate-300">
-                    {journalData?.ratios?.roe?.toFixed(1) || '0.0'}%
+                    {ratios?.roe?.toFixed(1) || '0.0'}%
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
@@ -647,7 +661,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                     <span className="text-[10px] text-slate-500 ml-2">(Résultat net / Actif total)</span>
                   </div>
                   <span className="text-xs font-bold text-slate-300">
-                    {journalData?.ratios?.roa?.toFixed(1) || '0.0'}%
+                    {ratios?.roa?.toFixed(1) || '0.0'}%
                   </span>
                 </div>
               </div>
