@@ -354,6 +354,17 @@ export default function App() {
   const { currentUser, currentSociete, initializing, login, pinLogin, logout, can, isAdmin } = useAuth();
   const [authPage, setAuthPage] = useState('login'); // login | register | invite
 
+  // Auto-demo from URL ?demo=1
+  const demoTriggered = React.useRef(false);
+  React.useEffect(() => {
+    if (demoTriggered.current) return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('demo') === '1' && !currentUser) {
+      demoTriggered.current = true;
+      handleDemoLogin();
+    }
+  }, [currentUser]);
+
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
   const [sidebarOpen, setSidebarOpen] = useState(false);
