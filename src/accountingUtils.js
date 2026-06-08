@@ -148,7 +148,7 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const PR = Math.max(pendingRevenue / 1000, 0);
   const BB = Math.max(bankBalance / 1000, 0);
 
-  const hasData = totalRevenue > 0 || totalExpenses > 0 || bankBalance !== 0 || stockTotalDT > 0 || Object.keys(customData).length > 0 || incomeStatement;
+  const hasData = totalRevenue > 0 || totalExpenses > 0 || bankBalance !== 0 || stockTotalDT > 0 || Object.keys(customData).length > 0 || (incomeStatement && incomeStatement.netProfit !== 0);
   if (!hasData) {
     const zero = () => 0;
     return {
