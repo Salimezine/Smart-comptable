@@ -43,12 +43,12 @@ import {
   Bar,
   Legend
 } from 'recharts';
-import { jsPDF } from 'jspdf';
-import * as pdfjsLib from 'pdfjs-dist';
+// jsPDF & pdfjs loaded lazily — only imported when needed by child components
 const pdfWorkerSrc = window.location.pathname.startsWith('/Smart-comptable/')
   ? '/Smart-comptable/pdf.worker.min.js'
   : '/pdf.worker.min.js';
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerSrc;
+// Make pdfWorkerSrc available globally so child components can use it
+window.__PDF_WORKER_SRC__ = pdfWorkerSrc;
 
 import { 
   calculateTotalRevenues, 
@@ -68,16 +68,14 @@ import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats } 
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
 import { getDemoData } from './utils/demoData';
 
+import ToastProvider, { useToast } from './components/Toast';
+import ConfirmProvider, { useConfirm } from './components/ConfirmModal';
+import NotificationCenter from './components/NotificationCenter';
+import FAB from './components/FAB';
+import Confetti from './components/Confetti';
+
+// Eagerly loaded (needed on first render / login screen)
 import Onboarding from './Onboarding';
-import FournisseursView from './FournisseursView';
-import JournalView from './JournalView';
-import ManualEntryView from './ManualEntryView';
-import ExpenseListView from './ExpenseListView';
-import FinancialReportView from './FinancialReportView';
-import FiscalDeclarationView from './FiscalDeclarationView';
-import PayrollView from './PayrollView';
-import AuditView from './AuditView';
-import AdminDashboardView from './views/AdminDashboardView';
 import CompanySwitcher from './CompanySwitcher';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -86,6 +84,17 @@ import PlanBadge from './components/PlanBadge';
 import PermissionGuard from './components/PermissionGuard';
 import OnboardingWizard from './components/OnboardingWizard';
 import LoginView from './views/LoginView';
+
+// Lazy-loaded views — only fetched when user navigates to the tab
+const FournisseursView      = React.lazy(() => import('./FournisseursView'));
+const JournalView           = React.lazy(() => import('./JournalView'));
+const ManualEntryView       = React.lazy(() => import('./ManualEntryView'));
+const ExpenseListView       = React.lazy(() => import('./ExpenseListView'));
+const FinancialReportView   = React.lazy(() => import('./FinancialReportView'));
+const FiscalDeclarationView = React.lazy(() => import('./FiscalDeclarationView'));
+const PayrollView           = React.lazy(() => import('./PayrollView'));
+const AuditView             = React.lazy(() => import('./AuditView'));
+const AdminDashboardView    = React.lazy(() => import('./views/AdminDashboardView'));
 import { getActiveUsers, createUser, updateUser, createSociete, addMembreToSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
 import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
@@ -349,7 +358,11 @@ function AuditReportRenderer({ report }) {
   );
 }
 
-export default function App() {
+function AppContent() {
+  const toast = useToast();
+  const confirm = useConfirm();
+  const [confettiActive, setConfettiActive] = useState(false);
+
   // Auth State
   const { currentUser, currentSociete, initializing, login, pinLogin, logout, can, isAdmin } = useAuth();
   const [authPage, setAuthPage] = useState('login'); // login | register | invite
@@ -374,6 +387,33 @@ export default function App() {
   const [searchResults, setSearchResults] = useState({ invoices: [], expenses: [] });
   const [searchOpen, setSearchOpen] = useState(false);
   const searchRef = useRef(null);
+
+  // Keyboard Shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Ctrl+N
+      if ((e.ctrlKey || e.metaKey) && e.key === 'n') {
+        e.preventDefault();
+        setCurrentTab('invoicing');
+        toast.info("Navigation : Factures de Ventes (Ctrl+N)");
+      }
+      // Ctrl+K
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen(true);
+        setTimeout(() => {
+          if (searchRef.current) searchRef.current.focus();
+        }, 50);
+      }
+      // Escape
+      if (e.key === 'Escape') {
+        setSearchOpen(false);
+        if (searchRef.current) searchRef.current.blur();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [toast]);
 
   // App States - Multi-tenant
   const [companies, setCompanies] = useState(() => {
@@ -678,12 +718,14 @@ export default function App() {
     learnFromInvoice(newInv);
     setInvoices([newInv, ...invoices]);
     trackUsage(currentUser?.id, 'create_invoice');
+    toast.success(`Facture client ${newInv.invoiceNumber} enregistrée.`);
   };
 
   const handleAddExpense = (newExp) => {
     learnFromExpense(newExp);
     setExpenses([newExp, ...expenses]);
     trackUsage(currentUser?.id, 'add_expense');
+    toast.success(`Dépense fournisseur ${newExp.supplier || ''} enregistrée.`);
   };
 
   const handleAddPieceComptable = (piece) => {
@@ -694,6 +736,7 @@ export default function App() {
       localStorage.setItem(key, JSON.stringify(updated));
       return updated;
     });
+    toast.info(`Nouvelle pièce comptable ${piece.id} générée.`);
   };
 
   const handleLoadDemoData = () => {
@@ -712,6 +755,8 @@ export default function App() {
       localStorage.setItem(key, JSON.stringify([...data.journalEntries, ...existing]));
     }
     setRefreshKey(k => k + 1);
+    toast.success("Données de démonstration chargées avec succès !");
+    setConfettiActive(true);
   };
 
   const handleRequestAudit = () => {
@@ -722,8 +767,15 @@ export default function App() {
       const result = runFullAudit({ invoices, expenses, transactions, companyDetails });
       setAdvisorReport(result);
       trackUsage(currentUser?.id, 'run_audit');
+      if (result && result.score >= 80) {
+        toast.success(`Audit réussi avec un score excellent de ${result.score}/100 !`);
+        setConfettiActive(true);
+      } else if (result) {
+        toast.warning(`Audit complété. Score : ${result.score}/100.`);
+      }
     } catch (err) {
       setAdvisorReport("❌ Erreur lors de l'audit : " + err.message);
+      toast.error("Échec de l'audit.");
     } finally {
       setAdvisorLoading(false);
     }
@@ -829,6 +881,20 @@ export default function App() {
             <div className="overflow-hidden">
               <p className="text-xs font-semibold text-slate-200 truncate">{companyDetails.name || currentSociete?.nom || 'Ma société'}</p>
               <PlanBadge user={currentUser} />
+              {currentUser?.role && (
+                <span className={`inline-flex items-center gap-1 mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                  currentUser.role === 'admin' ? 'bg-violet-600/20 text-violet-300 border border-violet-600/30' :
+                  currentUser.role === 'comptable' ? 'bg-blue-600/20 text-blue-300 border border-blue-600/30' :
+                  'bg-slate-600/20 text-slate-300 border border-slate-600/30'
+                }`}>
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    currentUser.role === 'admin' ? 'bg-violet-400' :
+                    currentUser.role === 'comptable' ? 'bg-blue-400' :
+                    'bg-slate-400'
+                  }`} />
+                  {currentUser.role === 'admin' ? 'Administrateur' : currentUser.role === 'comptable' ? 'Comptable' : 'Lecteur'}
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -925,6 +991,24 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+            {/* Role Badge */}
+            {currentUser?.role && (
+              <span className={`hidden sm:inline-flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded-full border ${
+                currentUser.role === 'admin' ? 'bg-violet-600/15 text-violet-300 border-violet-600/25' :
+                currentUser.role === 'comptable' ? 'bg-blue-600/15 text-blue-300 border-blue-600/25' :
+                'bg-slate-600/15 text-slate-300 border-slate-600/25'
+              }`}>
+                <span className={`w-1.5 h-1.5 rounded-full ${
+                  currentUser.role === 'admin' ? 'bg-violet-400' :
+                  currentUser.role === 'comptable' ? 'bg-blue-400' :
+                  'bg-slate-400'
+                }`} />
+                {currentUser.role === 'admin' ? 'Administrateur' : currentUser.role === 'comptable' ? 'Comptable' : 'Lecteur'}
+              </span>
+            )}
+            {/* Notification Center */}
+            <NotificationCenter invoices={invoices} expenses={expenses} onNavigate={setCurrentTab} />
+
             {/* Quick Actions */}
             {currentTab === 'dashboard' && (
               <button 
@@ -955,7 +1039,18 @@ export default function App() {
 
         {/* Tab Switcher Body */}
         <div className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="max-w-7xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-in">
+          <React.Suspense fallback={
+            <div className="max-w-7xl mx-auto space-y-6 mt-4">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="glass-card rounded-2xl border border-slate-800 p-6 animate-pulse">
+                  <div className="h-4 bg-slate-700/50 rounded w-1/3 mb-4" />
+                  <div className="h-3 bg-slate-700/30 rounded w-2/3 mb-2" />
+                  <div className="h-3 bg-slate-700/30 rounded w-1/2" />
+                </div>
+              ))}
+            </div>
+          }>
+          <div key={currentTab} className="max-w-7xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 animate-slide-in-up">
             {currentTab === 'dashboard' && (
               <PermissionGuard module="dashboard" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
                 <DashboardView 
@@ -1019,6 +1114,7 @@ export default function App() {
                 currentTab={currentTab}
                 setCurrentTab={setCurrentTab}
                 companyDetails={companyDetails}
+                currentUser={currentUser}
               />
             )}
             {currentTab === 'bank' && (
@@ -1093,6 +1189,7 @@ export default function App() {
               />
             )}
           </div>
+          </React.Suspense>
         </div>
       </main>
 
@@ -1522,7 +1619,8 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
   };
 
   // Télécharger Facture en PDF
-  const handleDownloadPDF = (invoice) => {
+  const handleDownloadPDF = async (invoice) => {
+    const { jsPDF } = await import('jspdf');
     const doc = new jsPDF();
     
     // Header Style
@@ -1994,13 +2092,20 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
                       <td className="py-4 px-6 text-right">
                         <div className="flex justify-end gap-1.5">
                           {inv.status !== 'PAID' && (
-                            <button onClick={() => setInvoices(invoices.map(x => x.id === inv.id ? {...x, status: 'PAID'} : x))}
+                            <button onClick={() => {
+                              setInvoices(invoices.map(x => x.id === inv.id ? {...x, status: 'PAID'} : x));
+                              toast.success(`Facture ${inv.invoiceNumber} payée.`);
+                              setConfettiActive(true);
+                            }}
                               className="p-2 bg-slate-800 hover:bg-accent-500/20 text-accent-400 rounded-xl border border-slate-700/50" title="Marquer payée">
                               <CheckCheck className="w-3.5 h-3.5" />
                             </button>
                           )}
                           {inv.status === 'PAID' && (
-                            <button onClick={() => setInvoices(invoices.map(x => x.id === inv.id ? {...x, status: 'SENT'} : x))}
+                            <button onClick={() => {
+                              setInvoices(invoices.map(x => x.id === inv.id ? {...x, status: 'SENT'} : x));
+                              toast.info(`Facture ${inv.invoiceNumber} marquée envoyée.`);
+                            }}
                               className="p-2 bg-slate-800 hover:bg-warning-500/20 text-warning-400 rounded-xl border border-slate-700/50" title="Marquer envoyée">
                               <Send className="w-3.5 h-3.5" />
                             </button>
@@ -2009,7 +2114,20 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
                             className="p-2 bg-slate-800 hover:bg-slate-700 text-indigo-400 rounded-xl border border-slate-700/50" title="PDF">
                             <Download className="w-3.5 h-3.5" />
                           </button>
-                          <button onClick={() => { if (window.confirm(`Supprimer la facture ${inv.invoiceNumber} ?`)) { setInvoices(invoices.filter(x => x.id !== inv.id)); setTeifStatusMap(prev => { const n = {...prev}; delete n[inv.id]; return n; }); } }}
+                          <button onClick={async () => {
+                            const ok = await confirm({
+                              title: 'Supprimer la facture',
+                              message: `Voulez-vous vraiment supprimer la facture ${inv.invoiceNumber} ? cette action est définitive.`,
+                              confirmLabel: 'Supprimer',
+                              cancelLabel: 'Annuler',
+                              type: 'danger'
+                            });
+                            if (ok) {
+                              setInvoices(invoices.filter(x => x.id !== inv.id));
+                              setTeifStatusMap(prev => { const n = {...prev}; delete n[inv.id]; return n; });
+                              toast.success(`Facture ${inv.invoiceNumber} supprimée.`);
+                            }
+                          }}
                             className="p-2 bg-slate-800 hover:bg-danger-500/20 text-danger-400 rounded-xl border border-slate-700/50" title="Supprimer">
                             <Trash2 className="w-3.5 h-3.5" />
                           </button>
@@ -2404,6 +2522,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         setOcrStatus('Conversion PDF en image...');
 
         const arrayBuffer = await file.arrayBuffer();
+        const pdfjsLib = await import('pdfjs-dist');
+        pdfjsLib.GlobalWorkerOptions.workerSrc = window.__PDF_WORKER_SRC__ || '/pdf.worker.min.js';
         const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
         const page = await pdfDoc.getPage(1);
 
@@ -4220,7 +4340,8 @@ function WorkflowView({
   invoices, 
   formatCurrency, 
   companyDetails, 
-  setCurrentTab
+  setCurrentTab,
+  currentUser
 }) {
   const [activeStep, setActiveStep] = useState(0);
   const [payrollBase, setPayrollBase] = useState(4800);
@@ -4229,6 +4350,7 @@ function WorkflowView({
   const [generatingAudit, setGeneratingAudit] = useState(false);
   const [auditReport, setAuditReport] = useState('');
   const [monthClosed, setMonthClosed] = useState(false);
+  const [confettiActive, setConfettiActive] = useState(false);
 
   // calculations
   const unreconciledCount = transactions.filter(t => t.status === 'UNRECONCILED').length;
@@ -4651,7 +4773,7 @@ function WorkflowView({
                 <div className="flex gap-4">
                   {auditReport && (
                     <button
-                      onClick={() => setMonthClosed(true)}
+                      onClick={() => { setMonthClosed(true); setConfettiActive(true); }}
                       className="w-full py-3 bg-gradient-brand text-white font-black rounded-xl text-xs shadow-glow hover:scale-[1.01] transition-all flex items-center justify-center gap-2"
                     >
                       <ShieldCheck className="w-4 h-4" /> VERROUILLER & CLÔTURER LE MOIS
@@ -4664,7 +4786,21 @@ function WorkflowView({
 
         </div>
       </div>
+      
+      {/* Global Interactive Utilities */}
+      <FAB onNavigate={setCurrentTab} />
+      <Confetti active={confettiActive} onDone={() => setConfettiActive(false)} />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <ToastProvider>
+      <ConfirmProvider>
+        <AppContent />
+      </ConfirmProvider>
+    </ToastProvider>
   );
 }
 
