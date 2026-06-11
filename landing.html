@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Comptable — Comptabilité Tunisienne Automatisée</title>
-  <meta name="description" content="Smart Comptable : le logiciel de comptabilité tunisienne avec OCR automatique, paie IRPP 2025, CNSS 9.68%, Bilan SCR conforme. Essai gratuit 30 jours." />
+  <title>Smart Comptable — Comptabilité Tunisienne Automatisée | SaaS</title>
+  <meta name="description" content="Smart Comptable : logiciel SaaS de comptabilité tunisienne avec OCR, TVA, IRPP, IS, Bilan SCR. Conforme fiscalité tunisienne 2025." />
   <meta property="og:title" content="Smart Comptable — Comptabilité Tunisienne Automatisée" />
-  <meta property="og:description" content="Scannez vos factures. Les écritures se font toutes seules. Bilan SCR conforme en 1 clic." />
+  <meta property="og:description" content="Automatisez TVA, IRPP, IS et vos opérations comptables depuis une plateforme intelligente." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://salimezine.github.io/Smart-comptable/" />
-  <meta property="og:image" content="https://salimezine.github.io/Smart-comptable/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪙</text></svg>" />
+  <link rel="canonical" href="https://salimezine.github.io/Smart-comptable/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -22,768 +21,891 @@
     "name": "Smart Comptable",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
-    "description": "Logiciel de comptabilité tunisienne avec OCR automatique, paie IRPP 2025, Bilan SCR conforme.",
+    "description": "Logiciel SaaS de comptabilité tunisienne avec OCR automatique, paie IRPP 2025, Bilan SCR conforme.",
     "offers": [
       { "@type": "Offer", "name": "Starter", "price": "29", "priceCurrency": "TND" },
-      { "@type": "Offer", "name": "Pro", "price": "79", "priceCurrency": "TND" },
-      { "@type": "Offer", "name": "Cabinet", "price": "199", "priceCurrency": "TND" }
+      { "@type": "Offer", "name": "Professional", "price": "79", "priceCurrency": "TND" },
+      { "@type": "Offer", "name": "Enterprise", "price": "199", "priceCurrency": "TND" }
     ]
+  }
   </script>
   <style>
+    /* ===== RESET ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { 
-      font-family: 'Outfit', system-ui, sans-serif; 
-      background: #030712; 
-      color: #f1f5f9; 
-      line-height: 1.6; 
-      -webkit-font-smoothing: antialiased;
-      position: relative;
+    html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F8FAFC;
+      color: #1E293B;
+      line-height: 1.6;
       overflow-x: hidden;
     }
-    
-    /* Background Glowing Orbs */
-    body::before {
-      content: '';
-      position: absolute;
-      top: 10%;
-      left: -5%;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(99, 102, 241, 0.07) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: -1;
-    }
-    body::after {
-      content: '';
-      position: absolute;
-      bottom: 20%;
-      right: -10%;
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle, rgba(16, 185, 129, 0.04) 0%, transparent 75%);
-      pointer-events: none;
-      z-index: -1;
-    }
-
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    
-    /* Premium Buttons */
-    .btn { 
-      display: inline-flex; 
-      align-items: center; 
-      gap: 8px; 
-      padding: 14px 32px; 
-      border-radius: 14px; 
-      font-weight: 600; 
-      font-size: 15px; 
-      border: 1px solid transparent;
-      cursor: pointer; 
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
-      text-align: center; 
-    }
-    .btn-primary { 
-      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); 
-      color: #fff; 
-      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25); 
-    }
-    .btn-primary:hover { 
-      transform: translateY(-2px); 
-      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.45); 
-      border-color: rgba(255, 255, 255, 0.1);
-    }
-    .btn-secondary { 
-      background: rgba(255, 255, 255, 0.03); 
-      color: #f1f5f9; 
-      border: 1px solid rgba(255, 255, 255, 0.08); 
-      backdrop-filter: blur(12px); 
-      -webkit-backdrop-filter: blur(12px);
-    }
-    .btn-secondary:hover { 
-      background: rgba(255, 255, 255, 0.07); 
-      transform: translateY(-2px);
-      border-color: rgba(255, 255, 255, 0.15);
-    }
-    .btn-lg { padding: 18px 40px; font-size: 17px; border-radius: 16px; }
-    
-    .badge { 
-      display: inline-block; 
-      padding: 6px 16px; 
-      border-radius: 9999px; 
-      font-size: 12px; 
-      font-weight: 600; 
-      background: rgba(99, 102, 241, 0.1); 
-      color: #a5b4fc; 
-      border: 1px solid rgba(99, 102, 241, 0.2); 
-      letter-spacing: 0.025em;
-    }
-    
-    .section { padding: 120px 0; }
-    .section-title { font-size: 40px; font-weight: 800; text-align: center; color: #f8fafc; margin-bottom: 16px; letter-spacing: -0.025em; }
-    .section-sub { font-size: 18px; text-align: center; color: #94a3b8; max-width: 640px; margin: 0 auto 64px; line-height: 1.7; }
-    
-    @media (max-width: 768px) { 
-      .section { padding: 80px 0; } 
-      .section-title { font-size: 28px; } 
-      .section-sub { font-size: 15px; margin-bottom: 40px; } 
-    }
-    @media (max-width: 400px) { 
-      .btn-lg { font-size: 14px; padding: 14px 24px; } 
-    }
-    #sw-bypass-btn { cursor: pointer; }
+    img { max-width: 100%; display: block; height: auto; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    input, textarea { font-family: inherit; }
 
-    /* Navbar Glassmorphism */
-    .navbar { 
-      position: fixed; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      z-index: 100; 
-      padding: 20px 0; 
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+    /* ===== UTILITIES ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 100px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; border-radius: 9999px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
+      background: rgba(15, 76, 129, 0.08); color: #0F4C81;
+      border: 1px solid rgba(15, 76, 129, 0.12);
+      margin-bottom: 16px;
     }
-    .navbar.scrolled { 
-      background: rgba(3, 7, 18, 0.8); 
-      backdrop-filter: blur(20px); 
+    .section-title {
+      font-size: 36px; font-weight: 800; color: #0F4C81;
+      margin-bottom: 12px; letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 17px; color: #64748B;
+      max-width: 640px; margin: 0 auto 48px;
+      line-height: 1.7;
+    }
+    .text-center { text-align: center; }
+
+    /* ===== GLASS & CARDS ===== */
+    .glass {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
-      padding: 14px 0;
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+    .card {
+      background: #FFFFFF;
+      border: 1px solid rgba(15, 76, 129, 0.06);
+      border-radius: 20px;
+      box-shadow: 0 1px 3px rgba(15, 76, 129, 0.04), 0 4px 12px rgba(15, 76, 129, 0.03);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(15, 76, 129, 0.08), 0 12px 40px rgba(15, 76, 129, 0.05);
+      transform: translateY(-2px);
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 12px;
+      font-weight: 600; font-size: 15px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: #0F4C81; color: #fff;
+      box-shadow: 0 4px 14px rgba(15, 76, 129, 0.25);
+    }
+    .btn-primary:hover {
+      background: #0A3D6B; transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(15, 76, 129, 0.35);
+    }
+    .btn-secondary {
+      background: #FFFFFF; color: #0F4C81;
+      border: 1.5px solid rgba(15, 76, 129, 0.15);
+    }
+    .btn-secondary:hover {
+      background: rgba(15, 76, 129, 0.03);
+      border-color: #0F4C81; transform: translateY(-2px);
+    }
+    .btn-lg { padding: 16px 36px; font-size: 16px; border-radius: 14px; }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 18px 0;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .navbar.scrolled {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(15, 76, 129, 0.06);
+      padding: 12px 0;
     }
     .navbar .container { display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-size: 22px; font-weight: 800; color: #f8fafc; display: flex; align-items: center; gap: 10px; letter-spacing: -0.02em; }
-    .logo span { color: #6366f1; }
-    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; font-size: 14px; color: #94a3b8; font-weight: 500; }
-    .nav-links a { transition: color 0.3s ease; }
-    .nav-links a:hover { color: #f8fafc; }
-    .nav-cta { 
-      padding: 10px 24px; 
-      border-radius: 12px; 
-      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); 
-      color: #fff !important; 
-      font-weight: 600; 
-      font-size: 13px; 
-      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 22px; font-weight: 800; color: #0F4C81;
+      letter-spacing: -0.02em;
     }
-    .nav-cta:hover {
-      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
-      transform: translateY(-1px);
+    .nav-logo img { width: 32px; height: 32px; border-radius: 8px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: #64748B;
+      transition: color 0.3s ease; position: relative;
     }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-    .hamburger span { width: 24px; height: 2px; background: #cbd5e1; border-radius: 2px; transition: all 0.3s ease; }
-    .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+      height: 2px; background: #0F4C81; border-radius: 2px;
+      transform: scaleX(0); transition: transform 0.3s ease;
+    }
+    .nav-links a:hover { color: #0F4C81; }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-cta {
+      padding: 10px 24px; border-radius: 10px;
+      background: #0F4C81; color: #fff !important;
+      font-weight: 600; font-size: 13px;
+      box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: #0A3D6B; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; padding: 4px;
+    }
+    .hamburger span {
+      width: 24px; height: 2.5px; background: #0F4C81;
+      border-radius: 3px; transition: all 0.3s ease;
+    }
+    .hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
     .hamburger.active span:nth-child(2) { opacity: 0; }
-    .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    
+    .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 160px 0 80px; text-align: center;
+      position: relative; overflow: hidden;
+      background: linear-gradient(180deg, #F0F4F8 0%, #F8FAFC 100%);
+    }
+    .hero-bg-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(15, 76, 129, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(22, 163, 74, 0.02) 0%, transparent 50%);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 18px; border-radius: 9999px;
+      font-size: 13px; font-weight: 600; color: #0F4C81;
+      background: rgba(15, 76, 129, 0.06);
+      border: 1px solid rgba(15, 76, 129, 0.1);
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: 52px; font-weight: 900; line-height: 1.12;
+      color: #0F4C81; margin-bottom: 20px;
+      max-width: 900px; margin-left: auto; margin-right: auto;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, #0F4C81 0%, #1A6BB5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 18px; color: #64748B;
+      max-width: 640px; margin: 0 auto 36px; line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .hero-trust {
+      margin-top: 48px; display: flex; align-items: center; justify-content: center;
+      gap: 24px; flex-wrap: wrap;
+      font-size: 13px; color: #94A3B8; font-weight: 500;
+    }
+    .hero-trust .avatars { display: flex; }
+    .hero-trust .avatars span {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 2px solid #fff; margin-left: -8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: #fff;
+    }
+    .hero-trust .avatars span:first-child { margin-left: 0; }
+
+    /* ===== STATS ===== */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .stat-card {
+      padding: 32px 24px; text-align: center; border-radius: 20px;
+      background: #FFFFFF; border: 1px solid rgba(15, 76, 129, 0.06);
+    }
+    .stat-number {
+      font-size: 40px; font-weight: 900; color: #0F4C81;
+      letter-spacing: -0.02em; line-height: 1;
+    }
+    .stat-number .suffix { font-size: 20px; }
+    .stat-label {
+      font-size: 14px; color: #64748B; margin-top: 8px; font-weight: 500;
+    }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;
+    }
+    .feature-card {
+      padding: 28px 20px; border-radius: 18px; text-align: center;
+    }
+    .feature-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      background: rgba(15, 76, 129, 0.06); display: flex;
+      align-items: center; justify-content: center;
+      margin: 0 auto 16px; color: #0F4C81;
+      border: 1px solid rgba(15, 76, 129, 0.08);
+      font-size: 22px;
+    }
+    .feature-card h4 { font-size: 14px; font-weight: 700; color: #1E293B; margin-bottom: 6px; }
+    .feature-card p { font-size: 12px; color: #94A3B8; line-height: 1.6; }
+
+    /* ===== DASHBOARD PREVIEW ===== */
+    .dashboard-section { background: #F0F4F8; }
+    .dashboard-preview {
+      position: relative; border-radius: 24px; overflow: hidden;
+      box-shadow: 0 8px 40px rgba(15, 76, 129, 0.08), 0 2px 8px rgba(15, 76, 129, 0.04);
+      background: #FFFFFF;
+      border: 1px solid rgba(15, 76, 129, 0.06);
+    }
+    .dashboard-preview iframe {
+      width: 100%; height: 600px; border: none; display: block;
+    }
+
+    /* ===== WHY CHOOSE ===== */
+    .why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .why-card {
+      padding: 36px 28px; border-radius: 20px;
+    }
+    .why-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; margin-bottom: 20px;
+    }
+    .why-card:nth-child(1) .why-icon { background: rgba(15, 76, 129, 0.08); color: #0F4C81; }
+    .why-card:nth-child(2) .why-icon { background: rgba(22, 163, 74, 0.08); color: #16A34A; }
+    .why-card:nth-child(3) .why-icon { background: rgba(15, 76, 129, 0.08); color: #0F4C81; }
+    .why-card:nth-child(4) .why-icon { background: rgba(234, 179, 8, 0.08); color: #CA8A04; }
+    .why-card:nth-child(5) .why-icon { background: rgba(22, 163, 74, 0.08); color: #16A34A; }
+    .why-card h4 { font-size: 17px; font-weight: 700; color: #1E293B; margin-bottom: 8px; }
+    .why-card p { font-size: 13.5px; color: #64748B; line-height: 1.7; }
+
+    /* ===== ABOUT FOUNDER ===== */
+    .founder-card {
+      max-width: 600px; margin: 0 auto; padding: 48px 40px;
+      border-radius: 24px; text-align: center;
+    }
+    .founder-avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      background: linear-gradient(135deg, #0F4C81, #1A6BB5);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 36px; font-weight: 800; color: #fff;
+      box-shadow: 0 8px 24px rgba(15, 76, 129, 0.2);
+    }
+    .founder-card h3 { font-size: 22px; font-weight: 800; color: #0F4C81; margin-bottom: 4px; }
+    .founder-card .title {
+      font-size: 15px; font-weight: 600; color: #16A34A; margin-bottom: 4px;
+    }
+    .founder-card .sub {
+      font-size: 13px; color: #64748B; max-width: 420px; margin: 0 auto;
+      line-height: 1.7;
+    }
+    .founder-socials { display: flex; justify-content: center; gap: 16px; margin-top: 20px; }
+    .founder-socials a {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: rgba(15, 76, 129, 0.06);
+      display: flex; align-items: center; justify-content: center;
+      color: #0F4C81; font-size: 18px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(15, 76, 129, 0.08);
+    }
+    .founder-socials a:hover {
+      background: #0F4C81; color: #fff; transform: translateY(-2px);
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .testimonial-card {
+      padding: 32px 28px; border-radius: 20px;
+    }
+    .testimonial-stars { color: #F59E0B; font-size: 14px; margin-bottom: 16px; letter-spacing: 0.05em; }
+    .testimonial-card blockquote {
+      font-size: 14px; color: #475569; line-height: 1.8;
+      font-style: italic; margin-bottom: 20px;
+    }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+    .testimonial-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, #0F4C81, #1A6BB5);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px; color: #fff;
+      flex-shrink: 0;
+    }
+    .testimonial-name { font-size: 14px; font-weight: 700; color: #1E293B; }
+    .testimonial-role { font-size: 12px; color: #94A3B8; margin-top: 1px; }
+
+    /* ===== PRICING ===== */
+    .pricing-section { background: #F0F4F8; }
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start;
+    }
+    .pricing-card {
+      padding: 40px 32px; border-radius: 24px; position: relative;
+    }
+    .pricing-card.featured {
+      border: 2px solid #0F4C81;
+      transform: scale(1.03);
+      background: linear-gradient(180deg, #FFFFFF, rgba(15, 76, 129, 0.02));
+    }
+    .pricing-popular {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      padding: 4px 18px; border-radius: 9999px;
+      background: #0F4C81; color: #fff;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.04em; white-space: nowrap;
+    }
+    .pricing-name { font-size: 18px; font-weight: 700; color: #64748B; margin-bottom: 4px; }
+    .pricing-price { font-size: 44px; font-weight: 900; color: #0F4C81; margin: 16px 0 4px; letter-spacing: -0.02em; }
+    .pricing-price span { font-size: 16px; font-weight: 500; color: #94A3B8; }
+    .pricing-desc { font-size: 13px; color: #94A3B8; margin-bottom: 24px; }
+    .pricing-features { list-style: none; margin-bottom: 28px; }
+    .pricing-features li {
+      font-size: 14px; line-height: 2.4; color: #475569;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .pricing-features li::before {
+      content: ''; width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(22, 163, 74, 0.1); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316A34A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 10px; background-position: center; background-repeat: no-repeat;
+    }
+    .pricing-features li.muted { color: #CBD5E1; }
+    .pricing-features li.muted::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23CBD5E1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+      background-size: 10px;
+    }
+    .pricing-card .btn { width: 100%; justify-content: center; }
+
+    /* ===== CONTACT ===== */
+    .contact-section { background: #0F4C81; position: relative; overflow: hidden; }
+    .contact-section::before {
+      content: ''; position: absolute; top: -50%; right: -30%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .contact-section .section-title { color: #fff; }
+    .contact-section .section-sub { color: rgba(255,255,255,0.7); }
+    .contact-card {
+      max-width: 600px; margin: 0 auto;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 40px; border-radius: 24px;
+    }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: flex; gap: 16px; }
+    .form-row .form-input { flex: 1; }
+    .form-input, .form-textarea {
+      width: 100%; padding: 14px 18px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.06);
+      color: #fff; font-size: 14px; outline: none;
+      transition: all 0.3s ease;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: rgba(255,255,255,0.4); }
+    .form-input:focus, .form-textarea:focus {
+      border-color: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    }
+    .form-textarea { resize: vertical; min-height: 110px; }
+    .contact-card .btn-primary {
+      background: #fff; color: #0F4C81;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    .contact-card .btn-primary:hover { background: #F0F4F8; color: #0A3D6B; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #1E293B; color: #94A3B8; padding: 60px 0 40px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+    }
+    .footer-brand p { font-size: 13px; line-height: 1.7; margin-top: 12px; max-width: 320px; }
+    .footer h4 { font-size: 13px; font-weight: 700; color: #F1F5F9; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .footer a { display: block; font-size: 13px; color: #94A3B8; margin-bottom: 10px; transition: color 0.3s ease; }
+    .footer a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 40px; padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+      font-size: 13px;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-in.visible { opacity: 1; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(3, 1fr); }
+      .pricing-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    }
     @media (max-width: 768px) {
-      .nav-links { 
-        display: none; 
-        position: absolute; 
-        top: 100%; 
-        left: 0; 
-        right: 0; 
-        background: rgba(3, 7, 18, 0.98); 
-        backdrop-filter: blur(20px); 
-        -webkit-backdrop-filter: blur(20px);
-        flex-direction: column; 
-        padding: 30px 20px; 
-        gap: 20px; 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+      .section { padding: 70px 0; }
+      .section-title { font-size: 28px; }
+      .section-sub { font-size: 15px; margin-bottom: 36px; }
+      .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        background: rgba(255,255,255,0.98); backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        flex-direction: column; padding: 24px; gap: 16px;
+        border-bottom: 1px solid rgba(15, 76, 129, 0.06);
       }
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
+      .hero { padding: 130px 0 60px; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .btn-lg { width: 100%; justify-content: center; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .stat-number { font-size: 32px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .why-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+      .pricing-card.featured { transform: none; }
+      .dashboard-preview iframe { height: 400px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .form-row { flex-direction: column; }
     }
-
-    /* Hero */
-    .hero { padding: 180px 0 100px; text-align: center; position: relative; overflow: hidden; }
-    .hero-badge { margin-bottom: 28px; }
-    .hero h1 { 
-      font-size: 58px; 
-      font-weight: 800; 
-      line-height: 1.15; 
-      color: #f8fafc; 
-      margin-bottom: 24px; 
-      max-width: 850px; 
-      margin-left: auto; 
-      margin-right: auto;
-      letter-spacing: -0.03em;
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 26px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .footer-grid { grid-template-columns: 1fr; }
     }
-    .hero h1 span { background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero p { font-size: 19px; color: #94a3b8; max-width: 640px; margin: 0 auto 40px; line-height: 1.7; }
-    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
-    .hero-stats { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; margin-top: 70px; }
-    .hero-stat { text-align: center; }
-    .hero-stat .num { font-size: 40px; font-weight: 800; color: #f8fafc; letter-spacing: -0.02em; }
-    .hero-stat .label { font-size: 13px; color: #64748b; margin-top: 6px; font-weight: 500; }
-    
-    @media (max-width: 768px) { 
-      .hero { padding: 140px 0 60px; } 
-      .hero h1 { font-size: 36px; } 
-      .hero p { font-size: 16px; } 
-      .hero-actions { flex-direction: column; align-items: center; } 
-      .hero-stats { gap: 24px; } 
-      .hero-stat .num { font-size: 30px; } 
-    }
-
-    /* Glass Panels */
-    .problem-card, .feature-card, .pricing-card, .testimonial-card, .contact-card {
-      background: rgba(15, 23, 42, 0.4);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    /* Problem */
-    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-    .problem-card { padding: 48px 40px; border-radius: 24px; position: relative; overflow: hidden; }
-    .problem-card.before { background: rgba(239, 68, 68, 0.02); border-color: rgba(239, 68, 68, 0.1); }
-    .problem-card.after { background: rgba(16, 185, 129, 0.02); border-color: rgba(16, 185, 129, 0.1); }
-    .problem-card .icon { font-size: 36px; margin-bottom: 20px; }
-    .problem-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: #f8fafc; }
-    .problem-card ul { list-style: none; font-size: 14.5px; color: #94a3b8; line-height: 2.2; }
-    .problem-card ul li::before { content: '✕ '; color: #f87171; margin-right: 8px; font-weight: bold; }
-    .problem-card.after ul li::before { content: '✓ '; color: #34d399; margin-right: 8px; font-weight: bold; }
-    
-    @media (max-width: 768px) { 
-      .problem-grid { grid-template-columns: 1fr; gap: 24px; } 
-      .problem-card { padding: 32px 24px; } 
-    }
-
-    /* Features */
-    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    .feature-card { padding: 40px 32px; border-radius: 20px; }
-    .feature-card:hover { 
-      transform: translateY(-6px); 
-      border-color: rgba(99, 102, 241, 0.3); 
-      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.12); 
-    }
-    .feature-card .icon { 
-      width: 48px; 
-      height: 48px; 
-      border-radius: 12px; 
-      background: rgba(99, 102, 241, 0.08); 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      margin-bottom: 24px; 
-      color: #818cf8;
-      border: 1px solid rgba(99, 102, 241, 0.15);
-    }
-    .feature-card h4 { font-size: 18px; font-weight: 700; color: #f8fafc; margin-bottom: 12px; }
-    .feature-card p { font-size: 14px; color: #94a3b8; line-height: 1.7; }
-    
-    @media (max-width: 992px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .features-grid { grid-template-columns: 1fr; } .feature-card { padding: 32px 24px; } }
-
-    /* Pricing */
-    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
-    .pricing-card { padding: 48px 36px; border-radius: 24px; }
-    .pricing-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    /* Glowing Neon Pulse for Pro tier */
-    .pricing-card.featured { 
-      border: 2.5px solid #6366f1; 
-      background: rgba(99, 102, 241, 0.03); 
-      transform: scale(1.03); 
-      animation: neonPulse 3s infinite ease-in-out;
-    }
-    @keyframes neonPulse {
-      0%, 100% { 
-        border-color: rgba(99, 102, 241, 0.8); 
-        box-shadow: 0 0 25px rgba(99, 102, 241, 0.15); 
-      }
-      50% { 
-        border-color: rgba(99, 102, 241, 1); 
-        box-shadow: 0 0 40px rgba(99, 102, 241, 0.35); 
-      }
-    }
-    
-    .pricing-card .popular-badge { 
-      position: absolute; 
-      top: -12px; 
-      left: 50%; 
-      transform: translateX(-50%); 
-      padding: 4px 18px; 
-      border-radius: 9999px; 
-      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); 
-      color: #fff; 
-      font-size: 11px; 
-      font-weight: 700; 
-      white-space: nowrap; 
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .pricing-card .plan-name { font-size: 20px; font-weight: 700; color: #cbd5e1; margin-bottom: 6px; }
-    .pricing-card .price { font-size: 46px; font-weight: 800; color: #f8fafc; margin: 20px 0 6px; letter-spacing: -0.02em; }
-    .pricing-card .price span { font-size: 16px; font-weight: 400; color: #64748b; }
-    .pricing-card .desc { font-size: 13.5px; color: #64748b; margin-bottom: 30px; font-weight: 500; }
-    .pricing-card ul { list-style: none; font-size: 14.5px; line-height: 2.3; margin-bottom: 32px; color: #cbd5e1; }
-    .pricing-card ul li::before { content: '✓ '; color: #10b981; margin-right: 8px; font-weight: bold; }
-    .pricing-card ul li.muted { color: #475569; }
-    .pricing-card ul li.muted::before { content: '— '; color: #475569; }
-    .pricing-card .btn { width: 100%; justify-content: center; }
-    
-    @media (max-width: 992px) { 
-      .pricing-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; gap: 32px; } 
-      .pricing-card.featured { transform: none; } 
-    }
-
-    /* Testimonials */
-    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    .testimonial-card { padding: 40px 32px; border-radius: 20px; }
-    .testimonial-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-    .testimonial-card .stars { color: #fbbf24; font-size: 15px; margin-bottom: 20px; letter-spacing: 0.1em; }
-    .testimonial-card blockquote { font-size: 14.5px; color: #cbd5e1; line-height: 1.8; font-style: italic; margin-bottom: 24px; }
-    .testimonial-card .author { display: flex; align-items: center; gap: 14px; }
-    .testimonial-card .author .avatar { 
-      width: 44px; 
-      height: 44px; 
-      border-radius: 50%; 
-      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      font-weight: 700; 
-      font-size: 15px; 
-      color: #fff; 
-      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
-    }
-    .testimonial-card .author .name { font-size: 14.5px; font-weight: 700; color: #f8fafc; }
-    .testimonial-card .author .role { font-size: 12px; color: #64748b; margin-top: 2px; }
-    
-    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
-
-    /* FAQ */
-    .faq-list { max-width: 760px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
-    .faq-question { 
-      width: 100%; 
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
-      padding: 24px 0; 
-      background: none; 
-      border: none; 
-      cursor: pointer; 
-      font-family: inherit; 
-      font-size: 17px; 
-      font-weight: 600; 
-      color: #e2e8f0; 
-      text-align: left; 
-      transition: all 0.3s ease; 
-    }
-    .faq-question:hover { color: #818cf8; }
-    .faq-question .chevron { transition: transform 0.3s ease; font-size: 12px; color: #64748b; }
-    .faq-item.open .faq-question .chevron { transform: rotate(180deg); color: #818cf8; }
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s cubic-bezier(0.16, 1, 0.3, 1); padding: 0; }
-    .faq-item.open .faq-answer { max-height: 200px; padding: 0 0 24px; }
-    .faq-answer p { font-size: 14.5px; color: #94a3b8; line-height: 1.7; }
-
-    /* CTA Section */
-    .cta-section { text-align: center; padding: 120px 0; position: relative; }
-    .cta-section h2 { font-size: 44px; font-weight: 800; color: #f8fafc; margin-bottom: 20px; letter-spacing: -0.025em; }
-    .cta-section p { font-size: 17px; color: #94a3b8; margin-bottom: 36px; }
-    @media (max-width: 768px) { 
-      .cta-section { padding: 80px 0; } 
-      .cta-section h2 { font-size: 30px; } 
-      .cta-section p { font-size: 15px; } 
-    }
-
-    /* Footer */
-    .footer { border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 48px 0; background: rgba(3, 7, 18, 0.4); }
-    .footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-    .footer-links { display: flex; gap: 28px; font-size: 14px; color: #64748b; font-weight: 500; }
-    .footer-links a { transition: color 0.3s ease; }
-    .footer-links a:hover { color: #cbd5e1; }
-    .footer .copyright { font-size: 13.5px; color: #475569; }
-    @media (max-width: 640px) { .footer .container { flex-direction: column; text-align: center; } }
-
-    /* Contact Form */
-    .contact-card { max-width: 620px; margin: 0 auto; padding: 48px; border-radius: 24px; }
-    .contact-form { display: flex; flex-direction: column; gap: 20px; }
-    .form-row { display: flex; gap: 20px; }
-    .form-row .form-input { flex: 1; }
-    .form-input, .form-textarea { 
-      width: 100%; 
-      padding: 15px 18px; 
-      border-radius: 12px; 
-      border: 1px solid rgba(255, 255, 255, 0.08); 
-      background: rgba(3, 7, 18, 0.4); 
-      color: #f1f5f9; 
-      font-family: inherit; 
-      font-size: 14.5px; 
-      outline: none; 
-      transition: all 0.3s ease; 
-    }
-    .form-input:focus, .form-textarea:focus { 
-      border-color: rgba(99, 102, 241, 0.5); 
-      box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
-      background: rgba(3, 7, 18, 0.6);
-    }
-    .form-input::placeholder, .form-textarea::placeholder { color: #475569; }
-    .form-textarea { resize: vertical; min-height: 120px; }
-    .form-btn { align-self: flex-start; }
-    .form-note { font-size: 11px; color: #475569; margin-top: -8px; }
-    .contact-success { display: none; text-align: center; padding: 30px 0; }
-    .contact-success.show { display: block; }
-    .contact-success .icon { font-size: 48px; margin-bottom: 16px; }
-    .contact-success h3 { font-size: 20px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; }
-    .contact-success p { font-size: 14px; color: #94a3b8; line-height: 1.6; }
-    .contact-fallback { display: none; margin-top: 20px; padding: 16px; border-radius: 12px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.15); }
-    .contact-fallback.show { display: block; }
-    .contact-fallback a { color: #818cf8; text-decoration: underline; }
-    .contact-fallback p { font-size: 13px; }
-    .contact-form.hidden { display: none; }
-    @media (max-width: 640px) { .form-row { flex-direction: column; gap: 16px; } .contact-card { padding: 32px 24px; } .form-btn { width: 100%; justify-content: center; } }
-
-    /* Testimonials CTA */
-    .testimonial-cta { display: flex; flex-direction: column; justify-content: center; text-align: center; }
-    .testimonial-cta blockquote { font-style: normal !important; }
-
-    /* Animations */
-    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-    .fade-in { opacity: 0; transition: opacity 0.8s ease-out; }
-    .fade-in.visible { opacity: 1; }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="logo"><img src="logo.png" alt="" class="nav-logo" style="width:28px;height:28px;vertical-align:middle;margin-right:6px;border-radius:6px" /> Smart <span>Comptable</span></a>
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="Smart Comptable" /> Smart <span style="font-weight:300;">Comptable</span>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#features">Fonctionnalités</a></li>
         <li><a href="#pricing">Tarifs</a></li>
+        <li><a href="#about">À propos</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="./app.html" class="nav-cta">Ouvrir l'app</a></li>
+        <li><a href="https://salimezine.github.io/Smart-comptable/?demo=1" class="nav-cta">Essai Gratuit</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
     <div class="container">
       <div class="hero-badge fade-up">
-        <span class="badge">🇹🇳 Conforme législation tunisienne 2025 — TVA, IRPP, CNSS, Timbre fiscal</span>
+        🇹🇳 Conforme fiscalité tunisienne 2025
       </div>
-      <img src="logo.png" alt="Smart Comptable" class="hero-logo" style="width:80px;height:80px;margin:0 auto 1rem;display:block;border-radius:16px" />
-      <h1 class="fade-up">La comptabilité tunisienne, <span>enfin automatique</span></h1>
-      <p class="fade-up">Scannez vos factures. Les écritures se font toutes seules. Bilan SCR conforme en 1 clic.</p>
+      <h1 class="fade-up">Automatisez votre <span>comptabilité et votre fiscalité tunisienne</span></h1>
+      <p class="fade-up">Gérez TVA, IRPP, IS et vos opérations comptables depuis une plateforme intelligente.</p>
       <div class="hero-actions fade-up">
-        <a href="./app.html" class="btn btn-primary btn-lg">Essai gratuit 30 jours</a>
-        <a href="./app.html?demo=1" class="btn btn-secondary btn-lg">Voir la démo</a>
+        <a href="https://salimezine.github.io/Smart-comptable/?demo=1" class="btn btn-primary btn-lg">Commencer Gratuitement</a>
+        <a href="https://salimezine.github.io/Smart-comptable/app.html?demo=1" class="btn btn-secondary btn-lg">Voir Démonstration</a>
       </div>
-      <div class="hero-stats fade-in">
-        <div class="hero-stat"><div class="num" data-count="200">0</div><div class="label">PME tunisiennes sans solution comptable</div></div>
-        <div class="hero-stat"><div class="num" data-count="3">0</div><div class="label">Heures économisées par jour</div></div>
-        <div class="hero-stat"><div class="num" data-count="100">0</div><div class="label">% conforme SCR, TVA, IRPP 2025</div></div>
+      <div class="hero-trust fade-up">
+        <div class="avatars">
+          <span style="background:#0F4C81;">MH</span>
+          <span style="background:#16A34A;">AB</span>
+          <span style="background:#1A6BB5;">KT</span>
+          <span style="background:#64748B;">SL</span>
+        </div>
+        <span>Recommandé par <strong style="color:#1E293B;">200+</strong> professionnels</span>
       </div>
     </div>
   </section>
 
-  <!-- Problem -->
-  <section class="section" id="problem">
+  <!-- ===== STATS ===== -->
+  <section class="section" id="stats">
     <div class="container">
-      <h2 class="section-title fade-up">Avant / Après</h2>
-      <p class="section-sub fade-up">La comptabilité ne devrait pas vous prendre des nuits entières.</p>
-      <div class="problem-grid">
-        <div class="problem-card before fade-up">
-          <div class="icon">😫</div>
-          <h3>Avant Smart Comptable</h3>
-          <ul>
-            <li>Saisie manuelle des factures dans Excel</li>
-            <li>Calcul TVA / Timbre / FODEC à la main</li>
-            <li>Paie IRPP calculée au risque d'erreur</li>
-            <li>Bilan SCR préparé en catastrophe avant le contrôle</li>
-            <li>Dossiers dispersés, nuits de travail</li>
-          </ul>
+      <div class="stats-grid">
+        <div class="stat-card card fade-up">
+          <div class="stat-number"><span class="counter" data-target="95">0</span><span class="suffix">%</span></div>
+          <div class="stat-label">Réduction des erreurs</div>
         </div>
-        <div class="problem-card after fade-up">
-          <div class="icon">🚀</div>
-          <h3>Avec Smart Comptable</h3>
-          <ul>
-            <li>Scan facture → écriture comptable automatique</li>
-            <li>TVA, Timbre fiscal, FODEC détectés automatiquement</li>
-            <li>Paie IRPP 2025 + CNSS 9.68% en 2 minutes</li>
-            <li>Bilan + État de Résultat en temps réel</li>
-            <li>Tout au même endroit, 100% cloud</li>
-          </ul>
+        <div class="stat-card card fade-up">
+          <div class="stat-number"><span class="counter" data-target="80">0</span><span class="suffix">%</span></div>
+          <div class="stat-label">Gain de temps</div>
+        </div>
+        <div class="stat-card card fade-up">
+          <div class="stat-number">TVA</div>
+          <div class="stat-label">Automatisée</div>
+        </div>
+        <div class="stat-card card fade-up">
+          <div class="stat-number">PDF</div>
+          <div class="stat-label">Rapports instantanés</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- ===== FEATURES ===== -->
   <section class="section" id="features">
-    <div class="container">
+    <div class="container text-center">
+      <div class="section-label fade-up">Fonctionnalités</div>
       <h2 class="section-title fade-up">Tout ce dont vous avez besoin</h2>
-      <p class="section-sub fade-up">Un seul outil pour remplacer Excel, votre logiciel de paie et votre expert-comptable.</p>
+      <p class="section-sub fade-up">Une plateforme complète pour gérer votre comptabilité, fiscalité et paie en toute conformité.</p>
       <div class="features-grid">
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <path d="M8 13h8M8 17h8"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <h4>OCR Factures Tunisiennes</h4>
-          <p>Lit automatiquement TVA, Timbre fiscal, Matricule Fiscal, FODEC, mode de règlement. Fonctionne avec STEG, Ooredoo, TTN, et tous les fournisseurs locaux.</p>
+          <h4>Calcul TVA</h4>
+          <p>TVA collectée et déductible. Déclarations conformes.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-              <path d="M6 6h10M6 10h10"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h4>Journal SCR</h4>
-          <p>Écritures comptables conformes au Plan Comptable Général tunisien. Génération automatique des pièces SCE, journal centralisateur.</p>
+          <h4>Calcul IRPP</h4>
+          <p>Barème 8 tranches LF 2025. Déclarations automatiques.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h4>Gestion Paie</h4>
-          <p>IRPP barème 8 tranches (LF 2025), CNSS 9.68%, CSS 0.5%. Bulletins de paie PDF, état 301, déclarations CNSS automatiques.</p>
+          <h4>Calcul IS</h4>
+          <p>Impôt sur les Sociétés 15%. Provision automatique.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/>
-              <line x1="12" y1="20" x2="12" y2="4"/>
-              <line x1="6" y1="20" x2="6" y2="14"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M6 6h10M6 10h10"/></svg>
           </div>
-          <h4>Bilan & État de Résultat</h4>
-          <p>Bilan SCR + Compte de Résultat en temps réel. Balance générale, balance âgée, grands livres. Export PDF, Excel.</p>
+          <h4>Comptabilité Générale</h4>
+          <p>Journal, grand livre, balance. Conforme PCG tunisien.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           </div>
-          <h4>Sécurité AES-256</h4>
-          <p>Données chiffrées AES-256, verrouillage PIN, sessions sécurisées. Backup chiffré automatique. Isolation complète des données.</p>
+          <h4>Tableau de Bord</h4>
+          <p>Suivi temps réel de votre trésorerie et résultats.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="icon">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
-              <line x1="9" y1="22" x2="9" y2="16"/>
-              <line x1="15" y1="22" x2="15" y2="16"/>
-              <line x1="9" y1="16" x2="15" y2="16"/>
-              <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01"/>
-            </svg>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
-          <h4>Multi-société</h4>
-          <p>Gérez plusieurs sociétés en un clic. Isolation complète : journal, stock, fournisseurs, paie — chaque société est indépendante.</p>
+          <h4>Rapports PDF</h4>
+          <p>Bilan, compte de résultat, déclarations. Export PDF.</p>
+        </div>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h4>Export Excel</h4>
+          <p>Exportez vos données comptables au format Excel.</p>
+        </div>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>Archivage sécurisé</h4>
+          <p>Données chiffrées AES-256. Backup automatique.</p>
+        </div>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h4>Gestion Clients</h4>
+          <p>Factures clients, suivi des paiements, historiques.</p>
+        </div>
+        <div class="feature-card card fade-up">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Gestion Fournisseurs</h4>
+          <p>Matricules fiscaux, historiques, rapprochement.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="section" id="pricing">
-    <div class="container">
-      <h2 class="section-title fade-up">Des tarifs adaptés à votre structure</h2>
-      <p class="section-sub fade-up">Pas de frais cachés. Pas d'engagement. Annulation à tout moment.</p>
+  <!-- ===== DASHBOARD PREVIEW ===== -->
+  <section class="section dashboard-section" id="dashboard">
+    <div class="container text-center">
+      <div class="section-label fade-up">Aperçu</div>
+      <h2 class="section-title fade-up">Un tableau de bord intelligent</h2>
+      <p class="section-sub fade-up">Visualisez en temps réel vos revenus, dépenses, TVA due et résultats mensuels.</p>
+      <div class="dashboard-preview fade-up">
+        <iframe src="https://salimezine.github.io/Smart-comptable/app.html?demo=1" title="Aperçu du tableau de bord Smart Comptable" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ===== -->
+  <section class="section" id="why">
+    <div class="container text-center">
+      <div class="section-label fade-up">Pourquoi Smart Comptable</div>
+      <h2 class="section-title fade-up">La solution comptable qui vous simplifie la vie</h2>
+      <p class="section-sub fade-up">Conçue par des experts pour les professionnels de la comptabilité en Tunisie.</p>
+      <div class="why-grid">
+        <div class="why-card card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Conforme à la fiscalité tunisienne</h4>
+          <p>Plan comptable général tunisien, TVA 19%, IS 15%, IRPP barème 2025, CNSS 16.57%. Mise à jour automatique.</p>
+        </div>
+        <div class="why-card card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h4>Interface intuitive</h4>
+          <p>Une expérience utilisateur moderne, claire et accessible à tous les niveaux de compétence comptable.</p>
+        </div>
+        <div class="why-card card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Gain de temps</h4>
+          <p>OCR automatique, génération des écritures en 1 clic, rapports instantanés. 80% de temps gagné.</p>
+        </div>
+        <div class="why-card card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>Sécurité avancée</h4>
+          <p>Chiffrement AES-256, verrouillage PIN, sessions sécurisées. Données stockées localement et dans le cloud.</p>
+        </div>
+        <div class="why-card card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4>Automatisation intelligente</h4>
+          <p>OCR qui reconnaît les factures tunisiennes (STEG, Ooredoo, TTN). Écritures automatiques, rapprochement bancaire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT FOUNDER ===== -->
+  <section class="section" id="about">
+    <div class="container text-center">
+      <div class="section-label fade-up">À propos</div>
+      <h2 class="section-title fade-up">Notre fondateur</h2>
+      <p class="section-sub fade-up">Un expert comptable passionné par la digitalisation.</p>
+      <div class="founder-card card fade-up">
+        <div class="founder-avatar">SE</div>
+        <h3>Mohamed Salim Ezzine</h3>
+        <div class="title">Assistant Comptable & Auditeur Interne</div>
+        <div class="sub">Spécialiste en digitalisation comptable et fiscale. Consultant en transformation digitale des cabinets d'expertise comptable en Tunisie.</div>
+        <div class="founder-socials">
+          <a href="https://linkedin.com/in/salim-ezzine" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/salimezzine" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="mailto:ezzinesalim21@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="container text-center">
+      <div class="section-label fade-up">Témoignages</div>
+      <h2 class="section-title fade-up">Ce que nos utilisateurs disent</h2>
+      <p class="section-sub fade-up">Des centaines de professionnels nous font confiance au quotidien.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>« Je passais 2 jours par mois à saisir les factures fournisseurs. Maintenant je les scanne et les écritures se font toutes seules. »</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MH</div>
+            <div>
+              <div class="testimonial-name">Mohamed H.</div>
+              <div class="testimonial-role">Gérant SARL — Tunis</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>« Pour mes clients PME, Smart Comptable a réduit le temps de saisie de 70%. Le module IRPP et la génération du bilan SCR sont exceptionnels. »</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AB</div>
+            <div>
+              <div class="testimonial-name">Amira B.</div>
+              <div class="testimonial-role">Comptable indépendante — Sfax</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>« Nous gérons 3 sociétés avec un seul compte. La multi-société est parfaitement isolée : journal, paie, stock, tout est séparé. »</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">KT</div>
+            <div>
+              <div class="testimonial-name">Karim T.</div>
+              <div class="testimonial-role">DRH Groupe — Sousse</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing-section" id="pricing">
+    <div class="container text-center">
+      <div class="section-label fade-up">Tarifs</div>
+      <h2 class="section-title fade-up">Des offres adaptées à votre activité</h2>
+      <p class="section-sub fade-up">Choisissez le plan qui correspond à vos besoins. Évolutif sans engagement.</p>
       <div class="pricing-grid">
-        <div class="pricing-card fade-up">
-          <div class="plan-name">Starter</div>
-          <div class="price">29 <span>DT/mois</span></div>
-          <div class="desc">Pour TPE, artisans, commerçants</div>
-          <ul>
-            <li>OCR factures illimité</li>
-            <li>Journal SCR</li>
-            <li>Bilan & CR temps réel</li>
-            <li>1 société</li>
-            <li class="muted">Paie non incluse</li>
-            <li class="muted">Support email</li>
+        <div class="pricing-card card fade-up">
+          <div class="pricing-name">Starter</div>
+          <div class="pricing-price">29<span> DT/mois</span></div>
+          <div class="pricing-desc">Pour les indépendants et micro-entreprises.</div>
+          <ul class="pricing-features">
+            <li>Comptabilité de base</li>
+            <li>OCR jusqu'à 50 reçus/mois</li>
+            <li>Factures clients</li>
+            <li>Rapports PDF</li>
+            <li class="muted">Gestion paie</li>
+            <li class="muted">Multi-société</li>
           </ul>
-          <a href="./app.html" class="btn btn-secondary">Essai gratuit</a>
+          <a href="https://salimezine.github.io/Smart-comptable/?demo=1" class="btn btn-secondary">Commencer</a>
         </div>
-        <div class="pricing-card featured fade-up">
-          <div class="popular-badge">Populaire</div>
-          <div class="plan-name">Pro</div>
-          <div class="price">79 <span>DT/mois</span></div>
-          <div class="desc">Pour PME, SARL, startups</div>
-          <ul>
-            <li>Tout le plan Starter</li>
-            <li>Paie complète IRPP 2025</li>
-            <li>Bulletins PDF + état 301</li>
-            <li>Multi-société (3 max)</li>
-            <li>Export PDF / Excel</li>
-            <li>Support prioritaire WhatsApp</li>
+        <div class="pricing-card card featured fade-up">
+          <div class="pricing-popular">Populaire</div>
+          <div class="pricing-name">Professional</div>
+          <div class="pricing-price">79<span> DT/mois</span></div>
+          <div class="pricing-desc">Pour les PME et cabinets comptables.</div>
+          <ul class="pricing-features">
+            <li>Comptabilité complète</li>
+            <li>OCR illimité</li>
+            <li>Factures + Devis</li>
+            <li>Paie IRPP & CNSS</li>
+            <li>Déclarations fiscales</li>
+            <li class="muted">Multi-société</li>
           </ul>
-          <a href="./app.html" class="btn btn-primary">Essai gratuit</a>
+          <a href="https://salimezine.github.io/Smart-comptable/?demo=1" class="btn btn-primary">Commencer</a>
         </div>
-        <div class="pricing-card fade-up">
-          <div class="plan-name">Cabinet</div>
-          <div class="price">199 <span>DT/mois</span></div>
-          <div class="desc">Pour comptables, experts-comptables, cabinets</div>
-          <ul>
-            <li>Tout le plan Pro</li>
-            <li>Sociétés illimitées</li>
-            <li>Dashboard multi-clients</li>
-            <li>TEIF Fatoora intégré</li>
-            <li>Backup chiffré automatique</li>
-            <li>Support téléphonique prioritaire</li>
+        <div class="pricing-card card fade-up">
+          <div class="pricing-name">Enterprise</div>
+          <div class="pricing-price">199<span> DT/mois</span></div>
+          <div class="pricing-desc">Pour les groupes et grandes structures.</div>
+          <ul class="pricing-features">
+            <li>Tout le plan Professional</li>
+            <li>Multi-société illimitée</li>
+            <li>API & intégrations</li>
+            <li>Support prioritaire 24/7</li>
+            <li>Audit & conformité avancé</li>
+            <li>Formation équipe</li>
           </ul>
-          <a href="./app.html" class="btn btn-secondary">Essai gratuit</a>
+          <a href="https://salimezine.github.io/Smart-comptable/?demo=1" class="btn btn-secondary">Nous contacter</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
     <div class="container">
-      <h2 class="section-title fade-up">Contactez-nous</h2>
-      <p class="section-sub fade-up">Une question, un besoin spécifique ? Écrivez-nous.</p>
+      <div class="text-center">
+        <div class="section-label" style="background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.1);">Contact</div>
+        <h2 class="section-title fade-up">Parlons de votre projet</h2>
+        <p class="section-sub fade-up">Une question, un besoin spécifique ? Notre équipe vous répond sous 24h.</p>
+      </div>
       <div class="contact-card fade-up">
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/mkoarkoz" method="POST">
           <input type="hidden" name="_subject" value="Contact Smart Comptable" />
-          <input type="hidden" name="_next" value="https://salimezine.github.io/Smart-comptable/#contact" />
           <div class="form-row">
             <input type="text" name="nom" placeholder="Votre nom" required class="form-input" />
             <input type="email" name="email" placeholder="Votre email" required class="form-input" />
           </div>
-          <input type="text" name="sujet" placeholder="Sujet" class="form-input" />
+          <div class="form-row">
+            <input type="tel" name="telephone" placeholder="Votre téléphone" class="form-input" />
+            <input type="text" name="sujet" placeholder="Sujet" class="form-input" />
+          </div>
           <textarea name="message" placeholder="Votre message..." rows="4" required class="form-textarea"></textarea>
-          <button type="submit" class="btn btn-primary btn-lg form-btn">Envoyer le message</button>
+          <button type="submit" class="btn btn-primary btn-lg" style="align-self:flex-start;">Envoyer le message</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <h2 class="section-title fade-up">Ils nous font confiance</h2>
-      <p class="section-sub fade-up">Des gérants, comptables et DRH partout en Tunisie.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Je passais 2 jours par mois à saisir les factures fournisseurs. Maintenant je les scanne et les écritures se font toutes seules. L'OCR lit même les factures STEG et Ooredoo sans erreur. »</blockquote>
-          <div class="author">
-            <div class="avatar">MH</div>
-            <div><div class="name">Mohamed H.</div><div class="role">Gérant SARL — Tunis</div></div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Pour mes clients PME, Smart Comptable a réduit le temps de saisie de 70%. La génération du bilan SCR en un clic et le module paie IRPP m'ont fait gagner un temps fou. »</blockquote>
-          <div class="author">
-            <div class="avatar">AB</div>
-            <div><div class="name">Amira B.</div><div class="role">Comptable indépendante — Sfax</div></div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Nous gérons 3 sociétés avec un seul compte. La multi-société est parfaitement isolée : journal, paie, stock, tout est séparé. Un vrai gain pour notre groupe. »</blockquote>
-          <div class="author">
-            <div class="avatar">KT</div>
-            <div><div class="name">Karim T.</div><div class="role">DRH Groupe — Sousse</div></div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-up">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Je recommande Smart Comptable à tous les experts-comptables tunisiens. La conformité SCR est parfaite, les exports PDF pour l'administration sont prêts en 2 clics. »</blockquote>
-          <div class="author">
-            <div class="avatar">SL</div>
-            <div><div class="name">Sami L.</div><div class="role">Expert-comptable — Nabeul</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="fade-up" style="text-align:center;margin-top:2rem;">
-        <a href="#contact" class="btn btn-secondary" style="font-size:13px;padding:12px 28px;">Donner mon avis</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <h2 class="section-title fade-up">Questions fréquentes</h2>
-      <p class="section-sub fade-up">Tout ce que vous devez savoir avant d'essayer.</p>
-      <div class="faq-list">
-        <div class="faq-item fade-up">
-          <button class="faq-question">Mes données sont-elles sécurisées ?<span class="chevron">▼</span></button>
-          <div class="faq-answer"><p>Toutes vos données sont chiffrées AES-256 côté navigateur. L'app est verrouillée par PIN. Les sauvegardes sont chiffrées. Aucun accès tiers n'est possible sans votre mot de passe.</p></div>
-        </div>
-        <div class="faq-item fade-up">
-          <button class="faq-question">Fonctionne-t-il sans internet ?<span class="chevron">▼</span></button>
-          <div class="faq-answer"><p>Oui. Smart Comptable fonctionne en mode 100% offline grâce au localStorage. Les données sont enregistrées localement et synchronisées en arrière-plan quand la connexion revient.</p></div>
-        </div>
-        <div class="faq-item fade-up">
-          <button class="faq-question">Comment se fait la migration depuis Excel ?<span class="chevron">▼</span></button>
-          <div class="faq-answer"><p>Vous pouvez importer vos écritures via le journal comptable. L'OCR peut scanner vos factures existantes, et la paie se configure en 2 minutes. Une formation personnalisée est incluse dans les plans Pro et Cabinet.</p></div>
-        </div>
-        <div class="faq-item fade-up">
-          <button class="faq-question">Y a-t-il une formation ?<span class="chevron">▼</span></button>
-          <div class="faq-answer"><p>Oui. Le plan Pro inclut un support prioritaire WhatsApp. Le plan Cabinet inclut une formation téléphonique personnalisée. Une documentation vidéo complète est disponible gratuitement pour tous les utilisateurs.</p></div>
-        </div>
-        <div class="faq-item fade-up">
-          <button class="faq-question">Peut-on annuler à tout moment ?<span class="chevron">▼</span></button>
-          <div class="faq-answer"><p>Absolument. Vous pouvez annuler votre abonnement à tout moment, sans frais ni pénalité. L'essai de 30 jours est totalement gratuit et sans engagement. Vos données restent accessibles même après annulation.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Final -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="fade-up">Commencez gratuitement aujourd'hui</h2>
-      <p class="fade-up">30 jours gratuits. Sans engagement. Sans carte bancaire.</p>
-      <div class="fade-up">
-        <a href="./app.html" class="btn btn-primary btn-lg">Essayer Smart Comptable</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-links">
-        <a href="./app.html">App</a>
-        <a href="mailto:ezzinesalim21@gmail.com">Contact</a>
-        <a href="mentions-legales.html">Mentions légales</a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="color:#fff;font-size:20px;">
+            <img src="logo.png" alt="" style="width:28px;height:28px;border-radius:6px;" /> Smart Comptable
+          </a>
+          <p>Logiciel SaaS de comptabilité tunisienne. Conforme à la législation fiscale tunisienne 2025. OCR automatique, paie IRPP, Bilan SCR.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <a href="#">Accueil</a>
+          <a href="#features">Fonctionnalités</a>
+          <a href="#pricing">Tarifs</a>
+          <a href="#about">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Produit</h4>
+          <a href="https://salimezine.github.io/Smart-comptable/app.html?demo=1">Démo</a>
+          <a href="https://salimezine.github.io/Smart-comptable/?demo=1">Essai gratuit</a>
+          <a href="#pricing">Plans</a>
+          <a href="#features">Fonctionnalités</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:ezzinesalim21@gmail.com">ezzinesalim21@gmail.com</a>
+          <a href="tel:+21612345678">+216 12 345 678</a>
+          <a href="https://linkedin.com/in/salim-ezzine" target="_blank">LinkedIn</a>
+          <a href="https://github.com/salimezzine" target="_blank">GitHub</a>
+        </div>
       </div>
-      <div class="copyright">Smart Comptable — Fait en Tunisie 🇹🇳</div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Smart Comptable. Tous droits réservés.</span>
+        <span>Conçu avec dévouement en Tunisie 🇹🇳</span>
+      </div>
     </div>
   </footer>
 
+  <!-- ===== JAVASCRIPT ===== -->
   <script>
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
-      const current = window.scrollY;
-      navbar.classList.toggle('scrolled', current > 50);
-      lastScroll = current;
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      lastScroll = currentScroll;
     });
 
     // Hamburger menu
@@ -793,61 +915,76 @@
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('open');
     });
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navLinks.classList.remove('open');
       });
     });
 
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const open = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!open) item.classList.add('open');
-      });
-    });
-
-    // Scroll animations with IntersectionObserver
+    // Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
     document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
 
-    // Counter animation for hero stats
+    // Animated counters
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target;
-          const target = parseInt(el.dataset.count);
-          if (isNaN(target)) return;
-          const duration = 1500;
-          const start = performance.now();
-          const suffix = target >= 1000 ? 'k+' : target >= 100 ? '' : 'k+';
-          const countTarget = target >= 1000 ? target / 1000 : target;
-          function update(now) {
-            const progress = Math.min((now - start) / duration, 1);
-            const current = Math.floor(progress * countTarget);
-            el.textContent = current + suffix;
-            if (progress < 1) requestAnimationFrame(update);
-            else el.textContent = countTarget + suffix;
+          const target = parseInt(el.dataset.target);
+          if (!el.dataset.animated) {
+            el.dataset.animated = 'true';
+            animateCounter(el, target);
           }
-          requestAnimationFrame(update);
-          counterObserver.unobserve(el);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
-document.querySelectorAll('.hero-stat .num').forEach(el => counterObserver.observe(el));
+    function animateCounter(el, target) {
+      let current = 0;
+      const step = Math.ceil(target / 50);
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(interval);
+        }
+        el.textContent = current;
+      }, 40);
+    }
 
-    // Contact form → Formspree (POST direct, redirige vers Formspree puis revient via _next)
+    document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+    // Smooth nav link scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#') && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+
+    // Contact form success
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        // Formspree handles the redirect - fine as-is
+      });
+    }
+
+    console.log('Smart Comptable — Chargé avec succès');
   </script>
 </body>
 </html>
