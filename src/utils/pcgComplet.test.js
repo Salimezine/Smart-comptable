@@ -2,12 +2,12 @@ import { describe, it, expect } from 'vitest';
 import { PCG_COMPLET } from './pcgComplet';
 
 describe('PCG_COMPLET', () => {
-  it('should be an object with 599 entries', () => {
+  it('should be an object with 657 entries', () => {
     const keys = Object.keys(PCG_COMPLET);
-    expect(keys.length).toBe(599);
+    expect(keys.length).toBe(657);
   });
 
-  it('should cover all PCG classes 1-7', () => {
+  it('should cover all PCG classes 1-8', () => {
     const classes = new Set();
     Object.keys(PCG_COMPLET).forEach(code => {
       if (code.length >= 1) classes.add(code[0]);
@@ -19,6 +19,7 @@ describe('PCG_COMPLET', () => {
     expect(classes.has('5')).toBe(true);
     expect(classes.has('6')).toBe(true);
     expect(classes.has('7')).toBe(true);
+    expect(classes.has('8')).toBe(true);
   });
 
   it('should have French labels for all entries', () => {
@@ -72,6 +73,17 @@ describe('PCG_COMPLET', () => {
     expect(PCG_COMPLET['74']).toBe("Subventions d'exploitation et d'équilibre");
     expect(PCG_COMPLET['77']).toBe('Gains extraordinaires');
     expect(PCG_COMPLET['78']).toBe('Reprises sur amortissements et provisions');
+
+    // Classes 8 — Comptes spéciaux
+    expect(PCG_COMPLET['80']).toBe('Engagements donnés');
+    expect(PCG_COMPLET['81']).toBe('Engagements reçus');
+    expect(PCG_COMPLET['83']).toBe('Stocks hors exploitation');
+    expect(PCG_COMPLET['84']).toBe('Comptes de fusion');
+    expect(PCG_COMPLET['85']).toBe('Comptes de consolidation');
+    expect(PCG_COMPLET['86']).toBe('Comptes spéciaux divers');
+    expect(PCG_COMPLET['87']).toBe('Comptes de gestion spéciale');
+    expect(PCG_COMPLET['88']).toBe('Résultats spéciaux');
+    expect(PCG_COMPLET['89']).toBe('Comptes de bilan spéciaux');
   });
 
   it('should have more sub-accounts than summary accounts', () => {

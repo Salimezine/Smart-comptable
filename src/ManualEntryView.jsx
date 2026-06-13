@@ -4,6 +4,7 @@ import { saveSimpleEntry } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
 import { getJournalKey } from './utils/journalKey';
 import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
+import AccountSelect from './components/AccountSelect';
 
 const PCG_LIBELLES = {
   '401000': 'Achat fournisseur',
@@ -66,8 +67,7 @@ export default function ManualEntryView({ formatCurrency }) {
   const [libelleSuggestions, setLibelleSuggestions] = useState([]);
   const [docFile, setDocFile] = useState(null);
   const [docName, setDocName] = useState('');
-  const [showPlan, setShowPlan] = useState(false);
-  const [planSearch, setPlanSearch] = useState('');
+
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -196,10 +196,6 @@ export default function ManualEntryView({ formatCurrency }) {
             <div className="flex items-center justify-between">
               <span className="text-[10px] text-slate-500 font-bold uppercase">Lignes d'écriture</span>
               <div className="flex items-center gap-2">
-                <button type="button" onClick={() => setShowPlan(true)}
-                  className="flex items-center gap-1 text-[10px] text-slate-400 hover:text-brand-300">
-                  Plan comptable
-                </button>
                 <button type="button" onClick={addLine}
                   className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
                   <Plus className="w-3 h-3" /> Ajouter une ligne
@@ -220,10 +216,10 @@ export default function ManualEntryView({ formatCurrency }) {
                 <tbody className="divide-y divide-slate-800/50 text-xs">
                   {lines.map((l, i) => (
                     <tr key={i}>
-                      <td className="py-1.5 pr-2">
-                        <input type="text" value={l.compte} onChange={e => updateLine(i, 'compte', e.target.value)}
-                          placeholder="ex: 401000 — Fournisseurs" list="comptes-list"
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-brand-500 font-mono" />
+                      <td className="py-1.5 pr-2 min-w-[180px]">
+                        <AccountSelect value={l.compte}
+                          onChange={(code, lib) => updateLine(i, 'compte', code)}
+                          placeholder="ex: 401000" />
                       </td>
                       <td className="py-1.5 px-2">
                         <input type="text" value={l.libelle} onChange={e => updateLine(i, 'libelle', e.target.value)}
@@ -256,11 +252,7 @@ export default function ManualEntryView({ formatCurrency }) {
                 </tbody>
               </table>
             </div>
-            <datalist id="comptes-list">
-              {Object.entries(PCG_COMPTES).map(([code, label]) => (
-                <option key={code} value={code}>{code} — {label}</option>
-              ))}
-            </datalist>
+
           </div>
 
           {/* Pièce justificative */}
@@ -316,40 +308,7 @@ export default function ManualEntryView({ formatCurrency }) {
         )}
       </div>
 
-      {showPlan && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => { setShowPlan(false); setPlanSearch(''); }}>
-          <div className="relative w-full max-w-2xl max-h-[80vh] rounded-xl bg-slate-800 border border-slate-700/60 shadow-2xl flex flex-col" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center justify-between p-4 border-b border-slate-700">
-              <h3 className="text-sm font-bold text-slate-200">Plan Comptable</h3>
-              <button onClick={() => { setShowPlan(false); setPlanSearch(''); }} className="text-slate-400 hover:text-slate-200 text-lg">✕</button>
-            </div>
-            <div className="p-4 border-b border-slate-700">
-              <input type="text" value={planSearch} onChange={e => setPlanSearch(e.target.value)}
-                placeholder="Rechercher un compte (code ou libellé)..."
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-brand-500" />
-            </div>
-            <div className="overflow-y-auto p-4 space-y-0.5 flex-1">
-              {Object.entries(PCG_COMPTES)
-                .filter(([code, label]) => !planSearch || code.includes(planSearch) || label.toLowerCase().includes(planSearch.toLowerCase()))
-                .map(([code, label]) => (
-                  <div key={code} className="flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-slate-700/50 cursor-pointer text-xs"
-                    onClick={() => {
-                      setLines(prev => {
-                        const last = prev.length - 1;
-                        const lib = findLibelle(code);
-                        return prev.map((l, idx) => idx === last ? { ...l, compte: code, libelle: lib || label } : l);
-                      });
-                      setShowPlan(false);
-                      setPlanSearch('');
-                    }}>
-                    <span className="font-mono text-slate-400">{code}</span>
-                    <span className="text-slate-200">{label}</span>
-                  </div>
-                ))}
-            </div>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { getDocument } from './utils/docStore';
 import { migrateJournal } from './utils/pieceComptable';
 import { getJournalKey } from './utils/journalKey';
 import { PCG_COMPLET } from './utils/pcgComplet';
+import AccountSelect from './components/AccountSelect';
 
 export default function JournalView({ formatCurrency, invoices = [], expenses = [], transactions = [], currentCompanyId }) {
   const [journal, setJournal] = useState([]);
@@ -20,7 +21,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
   const [detailPiece, setDetailPiece] = useState(null);
   const [editingPiece, setEditingPiece] = useState(null);
   const [editData, setEditData] = useState(null);
-  const [compteSuggest, setCompteSuggest] = useState({});
+
 
   const cleanLibelle = (compte, libelle) => {
     if (!libelle || !compte) return libelle || '';
@@ -37,12 +38,6 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
     if (exact) return exact;
     const prefix = Object.keys(PCG_COMPLET).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
     return prefix ? PCG_COMPLET[prefix] : '';
-  };
-
-  const getSuggestions = (value) => {
-    if (!value || value.length < 1) return [];
-    const q = value.toLowerCase();
-    return Object.entries(PCG_COMPLET).filter(([k, v]) => k.includes(q) || v.toLowerCase().includes(q)).slice(0, 10);
   };
 
   const saveEditPiece = () => {
@@ -85,9 +80,6 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
       });
       return { ...prev, lines };
     });
-    if (field === 'compte') {
-      setCompteSuggest(prev => ({ ...prev, [i]: getSuggestions(value) }));
-    }
   };
 
   const updateEditFirst = (field, value) => {
@@ -604,20 +596,11 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                 <tbody className="divide-y divide-slate-800/50">
                   {editData.lines.map((l, i) => (
                     <tr key={i}>
-                      <td className="py-1.5 pr-2 relative">
-                        <input type="text" value={l.compte || ''} onChange={e => updateEditLine(i, 'compte', e.target.value)} onFocus={e => updateEditLine(i, 'compte', l.compte || '')} disabled={lockedEdit}
-                          className={inputClass(lockedEdit)} />
-                        {!lockedEdit && compteSuggest[i]?.length > 0 && (
-                          <div className="absolute z-10 top-full left-0 right-0 mt-0.5 bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-h-36 overflow-y-auto">
-                            {compteSuggest[i].map(([code, lib]) => (
-                              <button key={code} type="button" onClick={() => { updateEditLine(i, 'compte', code); setCompteSuggest(prev => ({ ...prev, [i]: [] })); }}
-                                className="w-full text-left px-2 py-1.5 text-[11px] text-slate-300 hover:bg-brand-600/30 font-mono flex justify-between">
-                                <span>{code}</span>
-                                <span className="text-slate-500 ml-2 truncate">{lib}</span>
-                              </button>
-                            ))}
-                          </div>
-                        )}
+                      <td className="py-1.5 pr-2 min-w-[180px]">
+                        <AccountSelect value={l.compte || ''}
+                          onChange={(code) => updateEditLine(i, 'compte', code)}
+                          disabled={lockedEdit}
+                          className={lockedEdit ? 'opacity-60 pointer-events-none' : ''} />
                       </td>
                       <td className="py-1.5 pr-2">
                         <input type="text" value={l.libelle || ''} onChange={e => updateEditLine(i, 'libelle', e.target.value)} disabled={lockedEdit}
