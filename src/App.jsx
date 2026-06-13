@@ -125,7 +125,7 @@ import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
 import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
-import { signUp, getProfile, createCompany as createCompanySupabase } from './utils/supabaseService';
+import { signUp, getProfile, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 function normaliserMontant(str) {
@@ -609,21 +609,34 @@ function AppContent() {
   useEffect(() => {
     if (!currentUser) return;
     const loadData = async () => {
-      if (currentCompanyId && companies[currentCompanyId]) {
-        const data = companies[currentCompanyId];
-        setInvoices(data.invoices || []);
-        setTransactions(data.transactions || []);
-        setExpenses(data.expenses || []);
-
-        const details = { ...(data.companyDetails || {}) };
+      if (!currentCompanyId) return;
+      // Try Supabase first
+      if (isSupabaseEnabled()) {
+        const [invoicesData, transactionsData, expensesData] = await Promise.all([
+          fetchSupabaseData('invoices', currentCompanyId),
+          fetchSupabaseData('transactions', currentCompanyId),
+          fetchSupabaseData('expenses', currentCompanyId),
+        ]);
+        if (invoicesData.length || transactionsData.length || expensesData.length) {
+          setInvoices(invoicesData);
+          setTransactions(transactionsData);
+          setExpenses(expensesData);
+          setCompanyDetails(prev => ({ ...prev, name: '' }));
+          activeCompanyRef.current = currentCompanyId;
+          return;
+        }
+      }
+      // Fallback: localStorage
+      const stored = companies[currentCompanyId];
+      if (stored) {
+        setInvoices(stored.invoices || []);
+        setTransactions(stored.transactions || []);
+        setExpenses(stored.expenses || []);
+        const details = { ...(stored.companyDetails || {}) };
         setCompanyDetails(details);
-
-        // Mark this company as the active one for saveData guard
         activeCompanyRef.current = currentCompanyId;
-
-        // Auto-show onboarding only for brand-new empty companies (once)
         if (!details.onboardingDone && (!details.name || details.name.trim() === '')) {
-          const hasData = (data.invoices && data.invoices.length > 0) || (data.expenses && data.expenses.length > 0);
+          const hasData = (stored.invoices?.length > 0) || (stored.expenses?.length > 0);
           if (!hasData) setShowOnboarding(true);
         }
       }
@@ -631,18 +644,27 @@ function AppContent() {
     loadData();
   }, [currentCompanyId, currentUser]);
 
-  // Persist local state back to the companies catalogue
+  // Persist local state back to the companies catalogue + sync to Supabase
   useEffect(() => {
     if (!currentUser) return;
     if (!currentCompanyId) return;
 
     // Guard: don't save stale data when switching companies
-    // Only save if loadData has confirmed this company is active
     if (currentCompanyId !== activeCompanyRef.current) return;
 
     const saveData = async () => {
       const safeDetails = { ...companyDetails };
 
+      // Sync to Supabase when available (batched upsert)
+      if (isSupabaseEnabled() && navigator.onLine) {
+        try {
+          if (invoices.length > 0) await upsertSupabaseData('invoices', currentCompanyId, invoices);
+          if (transactions.length > 0) await upsertSupabaseData('transactions', currentCompanyId, transactions);
+          if (expenses.length > 0) await upsertSupabaseData('expenses', currentCompanyId, expenses);
+        } catch (e) { /* offline — will retry later */ }
+      }
+
+      // Always save locally
       setCompanies(prev => {
         const currentData = prev[currentCompanyId] || {};
         const updated = {
@@ -684,20 +706,42 @@ function AppContent() {
 
   useEffect(() => {
     if (!isSupabaseEnabled() || !currentCompanyId) return;
+
+    // Load journal entries from Supabase on mount
+    fetchSupabaseData('journal_entries', currentCompanyId, 'date', true).then(entries => {
+      if (entries.length > 0) {
+        const key = getJournalKey();
+        localStorage.setItem(key, JSON.stringify(entries));
+        window.dispatchEvent(new CustomEvent('journal:updated'));
+      }
+    });
+
+    // Real-time subscription for new entries
     const channel = supabase
       .channel('journal-changes')
       .on('postgres_changes', {
-        event: 'INSERT',
+        event: '*',
         schema: 'public',
         table: 'journal_entries',
         filter: `company_id=eq.${currentCompanyId}`,
       }, (payload) => {
         const key = getJournalKey();
         const existing = JSON.parse(localStorage.getItem(key) || '[]');
-        const alreadyExists = existing.some(e => e.id === payload.new.id);
-        if (!alreadyExists) {
-          existing.push(payload.new);
+        if (payload.eventType === 'INSERT') {
+          const alreadyExists = existing.some(e => e.id === payload.new.id);
+          if (!alreadyExists) {
+            existing.push(payload.new);
+            localStorage.setItem(key, JSON.stringify(existing));
+            window.dispatchEvent(new CustomEvent('journal:updated'));
+          }
+        } else if (payload.eventType === 'UPDATE') {
+          const idx = existing.findIndex(e => e.id === payload.new.id);
+          if (idx >= 0) existing[idx] = payload.new;
           localStorage.setItem(key, JSON.stringify(existing));
+          window.dispatchEvent(new CustomEvent('journal:updated'));
+        } else if (payload.eventType === 'DELETE') {
+          const filtered = existing.filter(e => e.id !== payload.old.id);
+          localStorage.setItem(key, JSON.stringify(filtered));
           window.dispatchEvent(new CustomEvent('journal:updated'));
         }
       })
@@ -729,12 +773,26 @@ function AppContent() {
     return <LoginPage onLogin={handleLoginSubmit} onNavigateRegister={() => setAuthPage('register')} onNavigateInvite={() => setAuthPage('invite')} onDemo={handleDemoLogin} />;
   }
 
-  const handleCreateCompany = (details) => {
-    const id = `company_${Date.now()}`;
+  const handleCreateCompany = async (details) => {
+    let id = `company_${Date.now()}`;
     const safeDetails = { ...details };
     
     // Nettoyer l'ancienne clé globale pour éviter la migration de données dans la nouvelle société
     localStorage.removeItem('smart_journal');
+    
+    // Créer dans Supabase si disponible
+    if (isSupabaseEnabled() && currentUser) {
+      try {
+        const supabaseCompany = await createCompanySupabase({
+          name: details.name || 'Ma Société',
+          matricule_fiscal: details.vatNumber || '',
+          adresse: details.address || '',
+          owner_id: currentUser.id,
+          plan: currentUser.plan || 'free'
+        });
+        if (supabaseCompany) id = supabaseCompany.id;
+      } catch (e) { /* fallback to local */ }
+    }
     
     const initialData = {
       companyDetails: safeDetails,

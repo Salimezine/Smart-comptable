@@ -1,7 +1,57 @@
 import React, { useState, useEffect } from 'react';
-import { Building, Sparkles, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Building, Sparkles, AlertCircle, CheckCircle2, Cloud, Upload } from 'lucide-react';
 import { getLearningStats } from '../learningEngine';
 import { setTTNMode, getTTNMode } from '../teif';
+import { isSupabaseEnabled, migrateLocalToSupabase } from '../utils/supabaseService';
+
+function CloudSyncSection({ companyId }) {
+  const [migrating, setMigrating] = useState(false);
+  const [migrated, setMigrated] = useState(false);
+  const [result, setResult] = useState(null);
+
+  const handleMigrate = async () => {
+    setMigrating(true);
+    setResult(null);
+    const res = await migrateLocalToSupabase(companyId);
+    setResult(res);
+    setMigrating(false);
+    if (res.success) setMigrated(true);
+  };
+
+  return (
+    <div className="p-4 rounded-xl bg-brand-500/10 border border-brand-500/30 mb-4">
+      <div className="flex items-center gap-2 text-brand-400 mb-3">
+        <Cloud className="w-4 h-4" />
+        <h4 className="text-xs font-extrabold uppercase tracking-wider">Synchronisation Cloud Supabase</h4>
+      </div>
+      <p className="text-[10px] text-slate-400 mb-3">
+        Sauvegardez et synchronisez vos données locales vers le cloud pour y accéder depuis plusieurs appareils.
+      </p>
+      {result && (
+        <div className={`p-3 rounded-xl text-xs mb-3 ${result.success ? 'bg-accent-500/10 text-accent-400 border border-accent-500/25' : 'bg-red-500/10 text-red-400 border border-red-500/25'}`}>
+          {result.success
+            ? '✅ Données synchronisées avec succès !'
+            : `❌ Erreur: ${result.results?.filter(r => r.error).map(r => `${r.table}: ${r.error}`).join(', ') || 'Échec de synchronisation'}`}
+        </div>
+      )}
+      {migrated ? (
+        <div className="flex items-center gap-2 text-accent-400 text-xs">
+          <CheckCircle2 className="w-4 h-4" /> Synchronisé
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={handleMigrate}
+          disabled={migrating}
+          className="flex items-center gap-2 px-4 py-2 bg-brand-500 hover:bg-brand-600 disabled:opacity-50 text-white text-xs font-bold rounded-xl transition-all"
+        >
+          <Upload className="w-3.5 h-3.5" />
+          {migrating ? 'Synchronisation...' : 'Synchroniser mes données vers le cloud'}
+        </button>
+      )}
+    </div>
+  );
+}
 
 export default function SettingsView({ companyDetails, setCompanyDetails }) {
   const [success, setSuccess] = useState(false);
@@ -145,6 +195,11 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
           />
         </div>
       </div>
+
+      {/* ── Supabase Cloud Sync ── */}
+      {isSupabaseEnabled() && (
+        <CloudSyncSection companyId={localStorage.getItem('smart_comptable_current_id')} />
+      )}
 
       <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
         <h4 className="text-xs font-bold text-slate-300 mb-3"> Configuration TEIF (Facture Électronique)</h4>
