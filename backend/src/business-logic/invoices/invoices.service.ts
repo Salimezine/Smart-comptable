@@ -310,9 +310,20 @@ async function markWebhookFailed(id: string, error: string) {
 async function ensureCompanyAccess(userId: string, companyId: string) {
   const company = await db
     .selectFrom("companies")
-    .select("id")
-    .where("id", "=", companyId)
-    .where("user_id", "=", userId)
+    .select("companies.id")
+    .where("companies.id", "=", companyId)
+    .where((eb) =>
+      eb("companies.user_id", "=", userId).or(
+        "companies.id",
+        "in",
+        db
+          .selectFrom("company_members")
+          .select("company_id")
+          .where("company_id", "=", companyId)
+          .where("user_id", "=", userId)
+          .where("is_active", "=", true),
+      ),
+    )
     .executeTakeFirst();
 
   if (!company) {

@@ -21,7 +21,17 @@ export async function listCompanies(userId: string) {
   return db
     .selectFrom("companies")
     .selectAll()
-    .where("user_id", "=", userId)
+    .where((eb) =>
+      eb("user_id", "=", userId).or(
+        "id",
+        "in",
+        db
+          .selectFrom("company_members")
+          .select("company_id")
+          .where("user_id", "=", userId)
+          .where("is_active", "=", true),
+      ),
+    )
     .orderBy("created_at", "desc")
     .execute();
 }
@@ -31,7 +41,18 @@ export async function getCompany(userId: string, companyId: string) {
     .selectFrom("companies")
     .selectAll()
     .where("id", "=", companyId)
-    .where("user_id", "=", userId)
+    .where((eb) =>
+      eb("user_id", "=", userId).or(
+        "id",
+        "in",
+        db
+          .selectFrom("company_members")
+          .select("company_id")
+          .where("company_id", "=", companyId)
+          .where("user_id", "=", userId)
+          .where("is_active", "=", true),
+      ),
+    )
     .executeTakeFirst();
 
   if (!company) {
@@ -58,7 +79,7 @@ export async function updateCompany(
   companyId: string,
   input: z.infer<typeof UpdateCompanySchema>,
 ) {
-  const existing = await getCompany(userId, companyId);
+  await ensureOwner(userId, companyId);
 
   const updated = await db
     .updateTable("companies")
@@ -71,11 +92,23 @@ export async function updateCompany(
 }
 
 export async function deleteCompany(userId: string, companyId: string) {
-  await getCompany(userId, companyId);
+  await ensureOwner(userId, companyId);
 
   await db
     .deleteFrom("companies")
     .where("id", "=", companyId)
-    .where("user_id", "=", userId)
     .execute();
+}
+
+async function ensureOwner(userId: string, companyId: string) {
+  const company = await db
+    .selectFrom("companies")
+    .select("id")
+    .where("id", "=", companyId)
+    .where("user_id", "=", userId)
+    .executeTakeFirst();
+
+  if (!company) {
+    throw new AppError(403, "FORBIDDEN", "Only the company owner can perform this action");
+  }
 }

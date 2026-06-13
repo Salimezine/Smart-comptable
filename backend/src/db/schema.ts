@@ -24,6 +24,30 @@ export interface Company {
   updated_at: Generated<Date>;
 }
 
+export interface CompanyMember {
+  id: Generated<string>;
+  company_id: string;
+  user_id: string;
+  role: Generated<"admin" | "accountant" | "viewer">;
+  is_active: Generated<boolean>;
+  created_at: Generated<Date>;
+  updated_at: Generated<Date>;
+}
+
+export interface Invite {
+  id: Generated<string>;
+  company_id: string;
+  invited_by_user_id: string;
+  email: string;
+  role: Generated<"admin" | "accountant" | "viewer">;
+  token: string;
+  status: Generated<"PENDING" | "ACCEPTED" | "EXPIRED" | "CANCELLED">;
+  expires_at: Date;
+  accepted_at: Date | null;
+  created_at: Generated<Date>;
+  updated_at: Generated<Date>;
+}
+
 export interface Invoice {
   id: Generated<string>;
   company_id: string;
@@ -69,6 +93,8 @@ export interface WebhookEvent {
 export interface DB {
   users: User;
   companies: Company;
+  company_members: CompanyMember;
+  invites: Invite;
   invoices: Invoice;
   audit_logs: AuditLog;
   webhook_events: WebhookEvent;
