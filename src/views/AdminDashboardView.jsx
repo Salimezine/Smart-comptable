@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, Download, Upload, FileText, AlertTriangle, CheckCircle, X, Search, Lock, Unlock, Trash2, Plus, RefreshCw, Copy, Check } from 'lucide-react';
+import { Users, Download, Upload, FileText, AlertTriangle, CheckCircle, X, Search, Lock, Unlock, Trash2, Plus, RefreshCw, Copy, Check, Mail } from 'lucide-react';
 import { getAllUsers, updateUser, createInvitation } from '../utils/auth/userStore';
 import { ROLES } from '../utils/auth/permissionEngine';
 import { getPlan } from '../utils/auth/plansManager';
@@ -8,14 +8,17 @@ import { getConfig, setConfig, lockApp } from '../utils/security/pinManager';
 import { exportBackup, importBackup, getLastBackupDate, isBackupOverdue, setLastBackupDate } from '../utils/security/backupManager';
 import { logAction } from '../utils/security/auditLog';
 import { migrateLocalToSupabase, isMigrated } from '../utils/migrationTool';
+import { useToast } from '../components/Toast';
+import { useConfirm } from '../components/ConfirmModal';
 
 const fmtDate = (d) => d ? new Date(d).toLocaleDateString('fr-TN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '—';
 
 export default function AdminDashboardView({ currentUser }) {
+  const toast = useToast();
+  const confirm = useConfirm();
   const [tab, setTab] = useState('users');
   const [users, setUsersState] = useState([]);
   const [auditLog, setAuditLogs] = useState([]);
-  const [msg, setMsg] = useState({ type: '', text: '' });
   const [showInviteForm, setShowInviteForm] = useState(false);
   const [inviteForm, setInviteForm] = useState({ email: '', role: 'comptable' });
   const [inviteResult, setInviteResult] = useState(null);
@@ -49,28 +52,60 @@ export default function AdminDashboardView({ currentUser }) {
     setAuditLogs(all);
   };
 
-  const handleInvite = () => {
+  const handleInvite = async () => {
     if (!inviteForm.email.trim() || !inviteForm.email.includes('@')) { setMsg({ type: 'error', text: 'Email invalide' }); return; }
     const societe = currentUser?.societeId;
     if (!societe) { setMsg({ type: 'error', text: 'Aucune société associée' }); return; }
     const inv = createInvitation({ email: inviteForm.email, role: inviteForm.role, societeId: societe, createdBy: currentUser.id });
     setInviteResult(inv);
-    setMsg({ type: 'success', text: `Code d'invitation généré : ${inv.code}` });
     logAction('invite_sent', { email: inviteForm.email, role: inviteForm.role, code: inv.code });
+    try {
+      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: 'Smart-Comptable',
+          template_id: 'template_7k7ebdv',
+          user_id: 'NhgDOZdl-hiwqNXX9',
+          template_params: {
+            to_email: inviteForm.email,
+            to_name: '',
+            otp: inv.code,
+            code: inv.code,
+            otp_code: inv.code,
+            message: `Vous avez ete invite a rejoindre Smart Comptable.\n\nVotre code d'invitation : ${inv.code}\n\nRole : ${inviteForm.role}\nLien : https://salimezine.github.io/Smart-comptable/app.html\n\nCe code expire le ${inv.expiresAt}.`,
+          },
+        }),
+      });
+      if (!res.ok) {
+        toast.success(`Code généré : ${inv.code} (email non envoyé)`);
+      } else {
+        toast.success(`Code envoyé par email à ${inviteForm.email}`);
+      }
+    } catch {
+      toast.success(`Code d'invitation : ${inv.code}`);
+    }
   };
 
   const handleChangeRole = (userId, newRole) => {
     updateUser(userId, { role: newRole });
-    setMsg({ type: 'success', text: 'Rôle mis à jour' });
+    toast.success('Rôle mis à jour');
     loadUsers();
     logAction('user_role_changed', { userId, newRole });
   };
 
-  const handleToggleActive = (user) => {
+  const handleToggleActive = async (user) => {
     const action = user.actif ? 'Désactiver' : 'Réactiver';
-    if (!window.confirm(`${action} cet utilisateur ?`)) return;
+    const ok = await confirm({
+      title: `${action} l'utilisateur`,
+      message: `Voulez-vous vraiment ${action.toLowerCase()} cet utilisateur ?`,
+      confirmLabel: action,
+      cancelLabel: 'Annuler',
+      type: user.actif ? 'danger' : 'info'
+    });
+    if (!ok) return;
     updateUser(user.id, { actif: !user.actif });
-    setMsg({ type: 'success', text: `Utilisateur ${user.actif ? 'désactivé' : 'réactivé'}` });
+    toast.success(`Utilisateur ${user.actif ? 'désactivé' : 'réactivé'}`);
     loadUsers();
     logAction('user_toggled', { userId: user.id, actif: !user.actif });
   };
@@ -80,31 +115,38 @@ export default function AdminDashboardView({ currentUser }) {
     try {
       await exportBackup(exportPwd);
       setLastBackupDate();
-      setMsg({ type: 'success', text: 'Backup exporté' });
+      toast.success('Backup exporté');
       logAction('backup_export', {});
-    } catch (e) { setMsg({ type: 'error', text: e.message }); }
+    } catch (e) { toast.error(e.message); }
     setExporting(false);
   };
 
   const handleImport = async () => {
-    if (!importFile) { setMsg({ type: 'error', text: 'Sélectionnez un fichier' }); return; }
+    if (!importFile) { toast.error('Sélectionnez un fichier'); return; }
     setImporting(true);
     try {
       const backup = await importBackup(importFile, importPwd);
       setImportPreview(backup);
-      setMsg({ type: 'success', text: `Backup chargé : ${Object.keys(backup.data).length} entrées` });
-    } catch (e) { setMsg({ type: 'error', text: e.message }); }
+      toast.success(`Backup chargé : ${Object.keys(backup.data).length} entrées`);
+    } catch (e) { toast.error(e.message); }
     setImporting(false);
   };
 
-  const handleRestore = () => {
+  const handleRestore = async () => {
     if (!importPreview) return;
-    if (!window.confirm('Remplacer toutes les données existantes par celles du backup ? Cette action est irréversible.')) return;
+    const ok = await confirm({
+      title: 'Restaurer le backup',
+      message: 'Voulez-vous vraiment remplacer toutes les données existantes par celles du backup ? Cette action est irréversible.',
+      confirmLabel: 'Restaurer',
+      cancelLabel: 'Annuler',
+      type: 'danger'
+    });
+    if (!ok) return;
     for (const [key, value] of Object.entries(importPreview.data)) {
       localStorage.setItem(key, value);
     }
     setLastBackupDate();
-    setMsg({ type: 'success', text: 'Données restaurées avec succès' });
+    toast.success('Données restaurées avec succès');
     logAction('backup_restore', { keys: Object.keys(importPreview.data).length });
     setImportPreview(null);
     setImportFile(null);
@@ -149,14 +191,6 @@ export default function AdminDashboardView({ currentUser }) {
           );
         })}
       </div>
-
-      {msg.text && (
-        <div className={`flex items-center gap-2 p-3 rounded-xl text-xs ${msg.type === 'success' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'}`}>
-          {msg.type === 'success' ? <CheckCircle className="w-3.5 h-3.5" /> : <AlertTriangle className="w-3.5 h-3.5" />}
-          {msg.text}
-          <button onClick={() => setMsg({ type: '', text: '' })} className="ml-auto"><X className="w-3 h-3" /></button>
-        </div>
-      )}
 
       {/* USERS */}
       {tab === 'users' && (

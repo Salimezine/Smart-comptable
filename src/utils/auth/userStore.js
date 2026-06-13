@@ -158,12 +158,14 @@ export function createInvitation(data) {
   return inv;
 }
 
-export function useInvitation(code) {
+export function useInvitation(code, markUsed = true) {
   const store = getRaw();
   const idx = store.invitations.findIndex(i => i.code === code);
   if (idx === -1) return null;
-  store.invitations[idx].used = true;
-  save(store);
+  if (markUsed) {
+    store.invitations[idx].used = true;
+    save(store);
+  }
   return store.invitations[idx];
 }
 

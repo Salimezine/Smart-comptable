@@ -563,15 +563,15 @@ const TTN_CONFIG = {
   },
 };
 
-let ttnMode = 'dev';
+const TTN_MODE_KEY = 'smart_ttn_mode';
 
 export function setTTNMode(mode) {
   if (!['dev', 'prod'].includes(mode)) throw new Error('Mode TTN: dev ou prod');
-  ttnMode = mode;
+  localStorage.setItem(TTN_MODE_KEY, mode);
 }
 
 export function getTTNMode() {
-  return ttnMode;
+  return localStorage.getItem(TTN_MODE_KEY) || 'dev';
 }
 
 export function sendToTTN(signedXml, credentials = {}) {

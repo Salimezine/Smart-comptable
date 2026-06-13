@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel } from './excelExport';
-import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info } from 'lucide-react';
+import { useToast } from './components/Toast';
 
 const fmt = (v) => {
   if (v == null || isNaN(v)) return '0,000 MDT';
@@ -26,15 +27,26 @@ function Line({ label, value, indent = 0, color, bold, total, detailKey, onDetai
   const hasDetail = detailKey && onDetail;
   return (
     <div onClick={() => hasDetail && onDetail(detailKey)}
-      className={`flex justify-between py-1 ${total ? 'bg-indigo-500/5 rounded-lg px-2 -mx-2' : ''} ${bold ? '' : 'text-slate-400'} ${hasDetail ? 'cursor-pointer hover:bg-slate-800/30 rounded-lg px-1 -mx-1 transition-colors' : ''}`}>
-      <span className={`text-xs flex items-center gap-1 ${total ? 'font-bold text-brand-300' : bold ? 'font-semibold text-slate-300' : ''}`}
+      className={`flex justify-between py-1.5 items-center ${total ? 'bg-indigo-950/20 border-y border-indigo-500/20 rounded-lg px-3 -mx-2 shadow-[0_2px_10px_rgba(99,102,241,0.05)]' : ''} ${bold ? 'font-semibold text-slate-200' : 'text-slate-400'} ${hasDetail ? 'cursor-pointer hover:bg-slate-800/50 rounded-lg px-2 -mx-2 transition-all duration-200 group' : ''}`}>
+      <span className={`text-xs flex items-center gap-1.5 ${total ? 'font-extrabold text-brand-300' : bold ? 'font-semibold text-slate-200' : ''}`}
         style={{ paddingLeft: indent * 12 }}>
         {label}
-        {hasDetail && <Search className="w-3 h-3 text-slate-500" />}
+        {hasDetail && <Search className="w-3 h-3 text-slate-500 group-hover:text-brand-400 transition-colors" />}
       </span>
-      <span className={`text-xs font-semibold ${color || (total ? 'text-brand-400' : 'text-slate-300')}`}>
+      <span className={`text-xs font-semibold ${color || (total ? 'text-brand-300' : 'text-slate-200')}`}>
         {fmt(value)}
       </span>
+    </div>
+  );
+}
+
+function DetailRow({ items }) {
+  if (!items || items.length === 0) return null;
+  return (
+    <div className="flex flex-wrap gap-x-3 gap-y-0.5 pl-5 pb-1 text-[10px] text-slate-500 border-b border-slate-800/10">
+      {items.map((item, i) => (
+        <span key={i}>{item.label}: <span className="text-slate-400 font-mono">{item.pct != null ? item.pct + '%' : fmt(item.value)}</span>{i < items.length - 1 ? ' |' : ''}</span>
+      ))}
     </div>
   );
 }
@@ -107,6 +119,7 @@ function DetailModal({ detail, label, journal, onClose }) {
 }
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency, stockTotal = 0 }) {
+  const toast = useToast();
   const [period, setPeriod] = useState('N');
   const [refreshKey, setRefreshKey] = useState(0);
   const [selectedDetail, setSelectedDetail] = useState(null);
@@ -156,11 +169,23 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     provisionsClientsDeduction: 'Provisions dépréciation clients',
     tresorerieBrute: 'Trésorerie (brute)',
     provisionsTresorerieDeduction: 'Provisions dépréciation trésorerie',
+    reprises: 'Reprises',
+    variationClients: 'Variation clients',
+    variationFournisseurs: 'Variation fournisseurs',
+    variationEtat: "Variation état",
+    variationPersonnel: 'Variation personnel',
+    variationStocks: 'Variation stocks',
+    acquisitionsImmobilisations: 'Acquisitions immobilisations',
+    cessionsImmobilisations: 'Cessions immobilisations',
+    apportsCapital: 'Apports en capital',
+    empruntsNouveaux: 'Emprunts nouveaux',
+    remboursementsEmprunts: 'Remboursements emprunts',
+    tresorerieFinale: 'Trésorerie finale',
   };
 
   const handleDetail = (key) => {
-    if (!journalData?.details?.[key]) return;
-    setSelectedDetail(key);
+    if (journalData?.details?.[key]) return setSelectedDetail(key);
+    if (nonJournalDetails[key]?.length > 0) return setSelectedDetail(key);
   };
 
   useEffect(() => {
@@ -227,12 +252,19 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     const emprunts = bilan.emprunts || 0;
     const cc = bilan.concoursBancaires || 0;
     const apnc = bilan.autresPassifsNC || 0;
+    const stockVal = bilan.stocks || 0;
+    const clientsVal = bilan.clients || 0;
+    const fournisseursVal = bilan.fournisseurs || 0;
+    const tresorerieVal = bilan.tresorerieActif || 0;
     ratios = {
       liquiditeGenerale: pc > 0 ? Math.round((ac / pc) * 100) / 100 : 0,
-      liquiditeReduite: pc > 0 ? Math.round(((ac - stocks) / pc) * 100) / 100 : 0,
+      liquiditeReduite: pc > 0 ? Math.round(((ac - stockVal) / pc) * 100) / 100 : 0,
       autonomieFinanciere: tp > 0 ? Math.round((cp / tp) * 10000) / 100 : 0,
       endettementNet: cp > 0 ? Math.round(((emprunts + cc + apnc) / cp) * 100) / 100 : 0,
       couvertureEmploisStables: anc > 0 ? Math.round(((cp + pnc) / anc) * 100) / 100 : 0,
+      bfr: stockVal + clientsVal - fournisseursVal,
+      tresorerieNette: tresorerieVal - cc,
+      poidsChargesFinancieres: (is.operatingProfit > 0 && is.financialCosts > 0) ? Math.round((is.financialCosts / is.operatingProfit) * 1000) / 1000 : 0,
       margeNette: 0, roe: 0, roa: 0, margeExploitation: 0,
     };
     const fallbackVentes = is.productSales + is.serviceRevenue;
@@ -279,6 +311,23 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
 
   const resultatNet = resultat.resultatNet ?? (resultat.resultatExploitation - resultat.chargesFinancieres);
 
+  // Compteurs pour les détails non-journal
+  const invoiceTotal = useJournal ? 0 : (invoices || []).reduce((s, inv) => s + parseFloat(inv.total || inv.montant || 0), 0);
+  const expenseTotal = useJournal ? 0 : (expenses || []).reduce((s, exp) => s + parseFloat(exp.total || exp.montant || 0), 0);
+
+  // Détails cliquables pour mode non-journal
+  const toDet = (v) => ({ code: v.id || v.numero || '—', solde: (parseFloat(v.total || v.montant || 0) / 1000) });
+  const nonJournalDetails = !useJournal ? {
+    ventes: (invoices || []).map(toDet),
+    achats: (expenses || []).map(toDet),
+    chargesExternes: (expenses || []).filter(e => (e.categorie || e.type || '').toLowerCase().includes('extern') || (e.categorie || e.type || '').toLowerCase().includes('service')).map(toDet),
+    chargesPersonnel: (expenses || []).filter(e => (e.categorie || e.type || '').toLowerCase().includes('personnel') || (e.categorie || e.type || '').toLowerCase().includes('salaire')).map(toDet),
+    clientsBrutes: (invoices || []).filter(inv => inv.status !== 'payee' && inv.status !== 'paid').map(toDet),
+    fournisseurs: (expenses || []).filter(exp => exp.status !== 'payee' && exp.status !== 'paid').map(toDet),
+    tresorerieBrute: (transactions || []).map(v => ({ code: v.label || v.description || v.date || '—', solde: parseFloat(v.amount || 0) / 1000 })),
+    stocksBrutes: stockTotal > 0 ? [{ code: 'Stock déclaré', solde: stockTotal / 1000 }] : [],
+  } : {};
+
   return (
     <div className="space-y-6 max-w-6xl mx-auto pb-12 animate-fade-in">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
@@ -303,7 +352,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <button onClick={() => {
             try {
               exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotal));
-            } catch(e) { console.error('PDF export error:', e); alert('Erreur PDF: ' + e.message); }
+              toast.success('Bilan PDF exporté avec succès.');
+            } catch(e) { console.error('PDF export error:', e); toast.error('Erreur PDF: ' + e.message); }
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileText className="w-3.5 h-3.5" /> PDF
@@ -340,18 +390,37 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </Section>
 
           <Section title="Actifs Courants">
-            <Line label="Stocks" value={bilan.stocks} detailKey={useJournal ? 'stocksBrutes' : undefined} onDetail={handleDetail} />
+            <Line label="Stocks" value={bilan.stocks} detailKey="stocksBrutes" onDetail={handleDetail} />
+            {useJournal && <DetailRow items={[
+              { label: 'Marchandises', value: bilan.stocksMarchandises || 0 },
+              { label: 'MP', value: bilan.stocksMP || 0 },
+              { label: 'PF', value: bilan.stocksPF || 0 },
+            ]} />}
+            {!useJournal && stockTotal > 0 && <DetailRow items={[
+              { label: 'Stock déclaré', value: stockTotal },
+            ]} />}
             {useJournal && bilan.provisionsStocksDeduction > 0.001 && (
               <Line label="− Provisions stocks" value={-bilan.provisionsStocksDeduction} indent={2} color="text-danger-400" detailKey="provisionsStocksDeduction" onDetail={handleDetail} />
             )}
-            <Line label="Clients et comptes rattachés" value={bilan.clients} detailKey={useJournal ? 'clientsBrutes' : undefined} onDetail={handleDetail} />
+            <Line label="Clients et comptes rattachés" value={bilan.clients} detailKey="clientsBrutes" onDetail={handleDetail} />
+            {useJournal && <DetailRow items={[
+              { label: 'Clients', value: bilan.clientsBrute || bilan.clients || 0 },
+              { label: 'Effets à recevoir', value: bilan.effetsAR || 0 },
+              { label: 'Clients douteux', value: bilan.clientsDouteux || 0 },
+            ]} />}
+            {!useJournal && invoices && invoices.length > 0 && <DetailRow items={[
+              { label: 'Total factures', value: invoiceTotal },
+            ]} />}
             {useJournal && bilan.provisionsClientsDeduction > 0.001 && (
               <Line label="− Provisions clients" value={-bilan.provisionsClientsDeduction} indent={2} color="text-danger-400" detailKey="provisionsClientsDeduction" onDetail={handleDetail} />
             )}
             <Line label="État — TVA déductible" value={bilan.etatDebit} indent={1} detailKey={useJournal ? 'etatDebit' : undefined} onDetail={handleDetail} />
             <Line label="Personnel" value={bilan.personnelDebit} indent={1} detailKey={useJournal ? 'personnelDebit' : undefined} onDetail={handleDetail} />
             <Line label="Autres débiteurs" value={bilan.autresCréances} indent={1} detailKey={useJournal ? 'autresCréances' : undefined} onDetail={handleDetail} />
-            <Line label="Trésorerie" value={bilan.tresorerieActif} detailKey={useJournal ? 'tresorerieBrute' : undefined} onDetail={handleDetail} />
+            <Line label="Trésorerie" value={bilan.tresorerieActif} detailKey="tresorerieBrute" onDetail={handleDetail} />
+            {!useJournal && <DetailRow items={[
+              { label: 'Solde bancaire', value: bilan.tresorerieActif || 0 },
+            ]} />}
             {useJournal && bilan.provisionsTresorerieDeduction > 0.001 && (
               <Line label="− Provisions trésorerie" value={-bilan.provisionsTresorerieDeduction} indent={2} color="text-danger-400" detailKey="provisionsTresorerieDeduction" onDetail={handleDetail} />
             )}
@@ -379,6 +448,13 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
 
             <Section title="Passifs Courants">
               <Line label="Fournisseurs et comptes rattachés" value={bilan.fournisseurs} detailKey={useJournal ? 'fournisseurs' : undefined} onDetail={handleDetail} />
+              {useJournal && <DetailRow items={[
+                { label: 'Fournisseurs', value: bilan.fournisseursBrute || 0 },
+                { label: 'Effets à payer', value: bilan.effetsAP || 0 },
+              ]} />}
+              {!useJournal && expenses && expenses.length > 0 && <DetailRow items={[
+                { label: 'Total dépenses', value: expenseTotal },
+              ]} />}
               <Line label="État — TVA due" value={bilan.etatCredit} detailKey={useJournal ? 'etatCredit' : undefined} onDetail={handleDetail} />
               <Line label="Personnel" value={bilan.personnelCredit} detailKey={useJournal ? 'personnelCredit' : undefined} onDetail={handleDetail} />
               <Line label="Autres dettes" value={bilan.autresDettes} indent={1} detailKey={useJournal ? 'autresDettes' : undefined} onDetail={handleDetail} />
@@ -388,6 +464,18 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
 
             <Line label="TOTAL PASSIFS & CAPITAUX PROPRES" value={bilan.totalPassif} total />
           </div>
+
+          {(bilan.totalActif > 0) && (
+            <div className="mt-3 pt-3 border-t border-slate-800/50">
+              <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Structure du bilan</h4>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-slate-500">
+                <span>Actif NC: <span className="text-slate-400">{Math.round((bilan.actifNC / bilan.totalActif) * 100)}%</span></span>
+                <span>Actif C: <span className="text-slate-400">{Math.round((bilan.actifC / bilan.totalActif) * 100)}%</span></span>
+                <span>CP: <span className="text-slate-400">{Math.round((bilan.capPropres / bilan.totalPassif) * 100)}%</span></span>
+                <span>Dettes: <span className="text-slate-400">{Math.round(((bilan.passifNC + bilan.passifC) / bilan.totalPassif) * 100)}%</span></span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* ÉTAT DE RÉSULTAT */}
@@ -400,7 +488,16 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </div>
 
           <Section title="Produits d'Exploitation">
-            <Line label="Ventes de marchandises / Prestations" value={resultat.ventes} indent={1} color="text-accent-400" detailKey={useJournal ? 'ventes' : undefined} onDetail={handleDetail} />
+            <Line label="Ventes de marchandises / Prestations" value={resultat.ventes} indent={1} color="text-accent-400" detailKey="ventes" onDetail={handleDetail} />
+            {!useJournal && <DetailRow items={[
+              { label: 'Marchandises', value: resultat.ventesMarchandises || 0 },
+              { label: 'Prestations', value: resultat.ventesPrestations || 0 },
+            ]} />}
+            {useJournal && <DetailRow items={[
+              { label: 'Ventes marchandises', value: resultat.ventesMarchandises || 0 },
+              { label: 'Prestations', value: resultat.ventesPrestations || 0 },
+              { label: 'Autres prod.', value: resultat.productionStockee || 0 },
+            ]} />}
             <Line label="Production stockée" value={resultat.productionStockee} indent={1} detailKey={useJournal ? 'productionStockee' : undefined} onDetail={handleDetail} />
             <Line label="Production immobilisée" value={resultat.productionImmobilisee} indent={1} detailKey={useJournal ? 'productionImmobilisee' : undefined} onDetail={handleDetail} />
             <Line label="Subventions d'exploitation" value={resultat.subventionsExploitation} indent={1} detailKey={useJournal ? 'subventionsExploitation' : undefined} onDetail={handleDetail} />
@@ -409,10 +506,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </Section>
 
           <Section title="Charges d'Exploitation">
-            <Line label="Achats" value={resultat.achats} indent={1} color="text-danger-400" detailKey={useJournal ? 'achats' : undefined} onDetail={handleDetail} />
-            <Line label="Charges externes" value={resultat.chargesExternes} indent={1} color="text-danger-400" detailKey={useJournal ? 'chargesExternes' : undefined} onDetail={handleDetail} />
-            <Line label="Charges de personnel" value={resultat.chargesPersonnel} indent={1} color="text-danger-400" detailKey={useJournal ? 'chargesPersonnel' : undefined} onDetail={handleDetail} />
-            <Line label="Impôts et taxes" value={resultat.impotsTaxes} indent={1} detailKey={useJournal ? 'impotsTaxes' : undefined} onDetail={handleDetail} />
+            <Line label="Achats" value={resultat.achats} indent={1} color="text-danger-400" detailKey="achats" onDetail={handleDetail} />
+            {!useJournal && <DetailRow items={[
+              { label: 'Achats marchandises', value: resultat.achatsMarchandises || 0 },
+              { label: 'Achats MP', value: resultat.achatsMP || 0 },
+            ]} />}
+            <Line label="Charges externes" value={resultat.chargesExternes} indent={1} color="text-danger-400" detailKey="chargesExternes" onDetail={handleDetail} />
+            <Line label="Charges de personnel" value={resultat.chargesPersonnel} indent={1} color="text-danger-400" detailKey="chargesPersonnel" onDetail={handleDetail} />
+            {resultat.impotsTaxes > 0 && <Line label="Impôts et taxes" value={resultat.impotsTaxes} indent={1} detailKey={useJournal ? 'impotsTaxes' : undefined} onDetail={handleDetail} />}
             <Line label="Dotations aux amortissements" value={resultat.dotations} indent={1} detailKey={useJournal ? 'dotations' : undefined} onDetail={handleDetail} />
             <Line label="Autres charges" value={resultat.autresCharges} indent={1} detailKey={useJournal ? 'autresCharges' : undefined} onDetail={handleDetail} />
             <Line label="Total Charges d'exploitation" value={resultat.totalChargesExploitation} total />
@@ -434,7 +535,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <Line label="Résultat exceptionnel" value={resultat.resultatExceptionnel} indent={1} bold />
           </Section>
 
-          <Line label="Impôt sur les sociétés (15%)" value={0} color="text-danger-400" />
+          {resultatNet > 0 && <Line label="Impôt sur les sociétés (15%)" value={-(resultatNet * 0.15)} indent={1} color="text-danger-400" />}
 
           <div className="mt-3 p-3 bg-gradient-brand rounded-xl shadow-glow">
             <div className="flex justify-between items-center">
@@ -463,35 +564,35 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         </div>
 
         <Section title="Flux d'exploitation">
-          <Line label="Résultat net de l'exercice" value={journalData?.fluxTresorerie?.margeBruteAutofinancement || 0} indent={1} />
-          <Line label="+ Dotations" value={journalData?.fluxTresorerie?.dotations || 0} indent={1} color="text-accent-400" />
-          <Line label="− Reprises" value={-(journalData?.fluxTresorerie?.reprises || 0)} indent={1} color="text-danger-400" />
+          <Line label="Résultat net de l'exercice" value={journalData?.fluxTresorerie?.resultatNet || 0} indent={1} detailKey="resultatNet" onDetail={handleDetail} />
+          <Line label="+ Dotations" value={journalData?.fluxTresorerie?.dotations || 0} indent={1} color="text-accent-400" detailKey="dotations" onDetail={handleDetail} />
+          <Line label="− Reprises" value={-(journalData?.fluxTresorerie?.reprises || 0)} indent={1} color="text-danger-400" detailKey="reprises" onDetail={handleDetail} />
           <Line label="= MBA" value={journalData?.fluxTresorerie?.margeBruteAutofinancement || 0} indent={1} bold />
-          <Line label="Variation clients" value={journalData?.fluxTresorerie?.variationClients || 0} indent={1} />
-          <Line label="Variation fournisseurs" value={journalData?.fluxTresorerie?.variationFournisseurs || 0} indent={1} />
-          <Line label="Variation état" value={journalData?.fluxTresorerie?.variationEtat || 0} indent={1} />
-          <Line label="Variation personnel" value={journalData?.fluxTresorerie?.variationPersonnel || 0} indent={1} />
-          <Line label="Variation stocks" value={journalData?.fluxTresorerie?.variationStocks || 0} indent={1} />
+          <Line label="Variation clients" value={journalData?.fluxTresorerie?.variationClients || 0} indent={1} detailKey="variationClients" onDetail={handleDetail} />
+          <Line label="Variation fournisseurs" value={journalData?.fluxTresorerie?.variationFournisseurs || 0} indent={1} detailKey="variationFournisseurs" onDetail={handleDetail} />
+          <Line label="Variation état" value={journalData?.fluxTresorerie?.variationEtat || 0} indent={1} detailKey="variationEtat" onDetail={handleDetail} />
+          <Line label="Variation personnel" value={journalData?.fluxTresorerie?.variationPersonnel || 0} indent={1} detailKey="variationPersonnel" onDetail={handleDetail} />
+          <Line label="Variation stocks" value={journalData?.fluxTresorerie?.variationStocks || 0} indent={1} detailKey="variationStocks" onDetail={handleDetail} />
           <Line label="Total flux d'exploitation" value={journalData?.fluxTresorerie?.fluxExploitation || 0} total />
         </Section>
 
         <Section title="Flux d'investissement">
-          <Line label="Acquisitions immobilisations" value={journalData?.fluxTresorerie?.acquisitionsImmobilisations || 0} indent={1} color="text-danger-400" />
-          <Line label="Cessions immobilisations" value={journalData?.fluxTresorerie?.cessionsImmobilisations || 0} indent={1} color="text-accent-400" />
+          <Line label="Acquisitions immobilisations" value={journalData?.fluxTresorerie?.acquisitionsImmobilisations || 0} indent={1} color="text-danger-400" detailKey="acquisitionsImmobilisations" onDetail={handleDetail} />
+          <Line label="Cessions immobilisations" value={journalData?.fluxTresorerie?.cessionsImmobilisations || 0} indent={1} color="text-accent-400" detailKey="cessionsImmobilisations" onDetail={handleDetail} />
           <Line label="Total flux d'investissement" value={journalData?.fluxTresorerie?.fluxInvestissement || 0} total />
         </Section>
 
         <Section title="Flux de financement">
-          <Line label="Apports en capital" value={journalData?.fluxTresorerie?.apportsCapital || 0} indent={1} color="text-accent-400" />
-          <Line label="Emprunts nouveaux" value={journalData?.fluxTresorerie?.empruntsNouveaux || 0} indent={1} color="text-accent-400" />
-          <Line label="Remboursements emprunts" value={journalData?.fluxTresorerie?.remboursementsEmprunts || 0} indent={1} color="text-danger-400" />
+          <Line label="Apports en capital" value={journalData?.fluxTresorerie?.apportsCapital || 0} indent={1} color="text-accent-400" detailKey="apportsCapital" onDetail={handleDetail} />
+          <Line label="Emprunts nouveaux" value={journalData?.fluxTresorerie?.empruntsNouveaux || 0} indent={1} color="text-accent-400" detailKey="empruntsNouveaux" onDetail={handleDetail} />
+          <Line label="Remboursements emprunts" value={journalData?.fluxTresorerie?.remboursementsEmprunts || 0} indent={1} color="text-danger-400" detailKey="remboursementsEmprunts" onDetail={handleDetail} />
           <Line label="Total flux de financement" value={journalData?.fluxTresorerie?.fluxFinancement || 0} total />
         </Section>
 
         <div className="border-t border-slate-800 pt-3 mt-2">
           <Line label="Variation de trésorerie" value={journalData?.fluxTresorerie?.variationTresorerie || 0} total />
           <Line label="Trésorerie initiale" value={journalData?.fluxTresorerie?.tresorerieInitiale || 0} indent={1} />
-          <Line label="Trésorerie finale" value={journalData?.fluxTresorerie?.tresorerieFinale || 0} indent={1} />
+          <Line label="Trésorerie finale" value={journalData?.fluxTresorerie?.tresorerieFinale || 0} indent={1} detailKey="tresorerieFinale" onDetail={handleDetail} />
         </div>
       </div>
       )}
@@ -508,6 +609,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <Line label="Ventes de marchandises" value={resultat.ventesMarchandises || 0} indent={1} color="text-accent-400" />
             <Line label="− Coût d'achat des marchandises vendues" value={-(resultat.achatsMarchandises || 0)} indent={1} color="text-danger-400" />
             <Line label="= Marge commerciale" value={resultat.margeCommerciale || 0} total />
+            {resultat.ventesMarchandises > 0 && (
+              <div className="flex gap-3 pl-5 pb-1 text-[10px] text-slate-500">
+                <span>Taux de marge: <span className="text-slate-400 font-semibold">{Math.round((resultat.margeCommerciale / resultat.ventesMarchandises) * 100)}%</span></span>
+                <span>Poids achats: <span className="text-slate-400 font-semibold">{Math.round((resultat.achatsMarchandises / resultat.ventesMarchandises) * 100)}%</span></span>
+              </div>
+            )}
           </Section>
 
           <Section title="2. Production de l'exercice">
@@ -523,6 +630,11 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <Line label="− Achats de MP & autres" value={-((resultat.achatsMP || 0) + (resultat.autresAchatsSIG || 0))} indent={1} color="text-danger-400" />
             <Line label="− Consommations externes" value={-(resultat.chargesExternes || 0)} indent={1} color="text-danger-400" />
             <Line label="= Valeur Ajoutée" value={resultat.valeurAjoutee || 0} total />
+            {(resultat.productionExercice + resultat.margeCommerciale) > 0 && (
+              <div className="flex gap-3 pl-5 pb-1 text-[10px] text-slate-500">
+                <span>Taux de VA: <span className="text-slate-400 font-semibold">{Math.round((resultat.valeurAjoutee / (resultat.productionExercice + resultat.margeCommerciale)) * 100)}%</span></span>
+              </div>
+            )}
           </Section>
 
           <Section title="4. Excédent Brut d'Exploitation (EBE)">
@@ -530,6 +642,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <Line label="− Impôts et taxes" value={-(resultat.impotsTaxes || 0)} indent={1} color="text-danger-400" />
             <Line label="− Charges de personnel" value={-(resultat.chargesPersonnel || 0)} indent={1} color="text-danger-400" />
             <Line label="= EBE" value={resultat.ebe || 0} total />
+            {resultat.valeurAjoutee > 0 && (
+              <div className="flex gap-3 pl-5 pb-1 text-[10px] text-slate-500">
+                <span>Poids personnel: <span className="text-slate-400 font-semibold">{Math.round((resultat.chargesPersonnel / resultat.valeurAjoutee) * 100)}%</span></span>
+                <span>Taux d'EBE: <span className="text-slate-400 font-semibold">{Math.round((resultat.ebe / resultat.valeurAjoutee) * 100)}%</span></span>
+              </div>
+            )}
           </Section>
 
           <Section title="5. Résultat d'Exploitation">
@@ -558,6 +676,17 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               <span className="font-extrabold text-white text-base">{fmt(resultat.sigResultatNet || resultatNet)}</span>
             </div>
           </div>
+
+          {(resultat.productionExercice > 0 || resultat.margeCommerciale > 0) && (
+            <div className="mt-3 pt-3 border-t border-slate-800/50">
+              <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Analyse SIG</h4>
+              <div className="flex flex-wrap gap-x-3 gap-y-1 text-[10px] text-slate-500">
+                {resultat.valeurAjoutee > 0 && <span>VA/Production: <span className="text-slate-400">{Math.round((resultat.valeurAjoutee / (resultat.productionExercice + resultat.margeCommerciale)) * 100)}%</span></span>}
+                {resultat.ebe > 0 && <span>EBE/VA: <span className="text-slate-400">{Math.round((resultat.ebe / Math.abs(resultat.valeurAjoutee)) * 100)}%</span></span>}
+                <span>Poids frais généraux: <span className="text-slate-400">{resultat.totalProduitsExploitation > 0 ? Math.round(((resultat.chargesExternes + resultat.chargesPersonnel) / resultat.totalProduitsExploitation) * 100) : 0}%</span></span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* RATIOS FINANCIERS */}
@@ -571,23 +700,35 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <div>
               <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Liquidité</h4>
               <div className="space-y-2">
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Liquidité générale</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Actif C / Passif C)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Liquidité générale</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Actif C / Passif C)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.liquiditeGenerale || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.liquiditeGenerale?.toFixed(2) || '0.00'}
+                    </span>
                   </div>
-                  <span className={`text-xs font-bold ${(ratios?.liquiditeGenerale || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {ratios?.liquiditeGenerale?.toFixed(2) || '0.00'}
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Actif C: {fmt(bilan?.actifC)}</span>
+                    <span className="text-[10px] text-slate-500">Passif C: {fmt(bilan?.passifC)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Liquidité réduite</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Actif C − Stocks / Passif C)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Liquidité réduite</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Actif C − Stocks / Passif C)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.liquiditeReduite || 0) >= 0.5 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.liquiditeReduite?.toFixed(2) || '0.00'}
+                    </span>
                   </div>
-                  <span className={`text-xs font-bold ${(ratios?.liquiditeReduite || 0) >= 0.5 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {ratios?.liquiditeReduite?.toFixed(2) || '0.00'}
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Stocks: {fmt(bilan?.stocks)}</span>
+                    <span className="text-[10px] text-slate-500">{fmt((bilan?.actifC || 0) - (bilan?.stocks || 0))} / {fmt(bilan?.passifC)}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -595,92 +736,112 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <div>
               <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Structure financière</h4>
               <div className="space-y-2">
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Autonomie financière</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(CP / Total Passif)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Autonomie financière</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(CP / Total Passif)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.autonomieFinanciere || 0) >= 30 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                      {ratios?.autonomieFinanciere?.toFixed(1) || '0.0'}%
+                    </span>
                   </div>
-                  <span className={`text-xs font-bold ${(ratios?.autonomieFinanciere || 0) >= 30 ? 'text-emerald-400' : 'text-amber-400'}`}>
-                    {ratios?.autonomieFinanciere?.toFixed(1) || '0.0'}%
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">CP: {fmt(bilan?.capPropres)}</span>
+                    <span className="text-[10px] text-slate-500">Total: {fmt(bilan?.totalPassif)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Endettement net</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Dettes fin. / CP)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Endettement net</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Dettes fin. / CP)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.endettementNet || 0) < 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.endettementNet?.toFixed(2) || '0.00'}
+                    </span>
                   </div>
-                  <span className={`text-xs font-bold ${(ratios?.endettementNet || 0) < 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {ratios?.endettementNet?.toFixed(2) || '0.00'}
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Emprunts: {fmt(bilan?.emprunts)}</span>
+                    <span className="text-[10px] text-slate-500">CP: {fmt(bilan?.capPropres)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Couverture emplois stables</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(CP + Passif NC / Actif NC)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Couverture emplois stables</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(CP + Passif NC / Actif NC)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.couvertureEmploisStables || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.couvertureEmploisStables?.toFixed(2) || '0.00'}
+                    </span>
                   </div>
-                  <span className={`text-xs font-bold ${(ratios?.couvertureEmploisStables || 0) >= 1 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                    {ratios?.couvertureEmploisStables?.toFixed(2) || '0.00'}
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">CP+PNC: {fmt((bilan?.capPropres || 0) + (bilan?.passifNC || 0))}</span>
+                    <span className="text-[10px] text-slate-500">Actif NC: {fmt(bilan?.actifNC)}</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Rentabilité</h4>
+              <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Trésorerie & Équilibre</h4>
               <div className="space-y-2">
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Marge nette</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Résultat net / Ventes)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Besoin en Fonds de Roulement (BFR)</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Stocks + Clients − Fournisseurs)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.bfr || 0) <= (bilan?.actifC || 0) * 0.5 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                      {ratios?.bfr != null ? fmt(ratios.bfr) : '0,000 MDT'}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold text-slate-300">
-                    {ratios?.margeNette?.toFixed(1) || '0.0'}%
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Stocks+Clients: {fmt((bilan?.stocks || 0) + (bilan?.clients || 0))}</span>
+                    <span className="text-[10px] text-slate-500">Fournisseurs: {fmt(bilan?.fournisseurs)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">Marge d'exploitation</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Résultat expl. / Ventes)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Trésorerie nette</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Trésorerie − Concours bancaires)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.tresorerieNette || 0) >= 0 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.tresorerieNette != null ? fmt(ratios.tresorerieNette) : '0,000 MDT'}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold text-slate-300">
-                    {ratios?.margeExploitation?.toFixed(1) || '0.0'}%
-                  </span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Trésorerie: {fmt(bilan?.tresorerieActif)}</span>
+                    <span className="text-[10px] text-slate-500">CB: {fmt(bilan?.concoursBancaires)}</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">ROE</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Résultat net / CP)</span>
+                <div>
+                  <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-t-lg">
+                    <div>
+                      <span className="text-xs text-slate-300">Poids des charges financières</span>
+                      <span className="text-[10px] text-slate-500 ml-2">(Charges fin. / EBE)</span>
+                    </div>
+                    <span className={`text-xs font-bold ${(ratios?.poidsChargesFinancieres || 0) < 0.3 ? 'text-emerald-400' : 'text-danger-400'}`}>
+                      {ratios?.poidsChargesFinancieres != null ? (ratios.poidsChargesFinancieres * 100).toFixed(1) + '%' : '0.0%'}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold text-slate-300">
-                    {ratios?.roe?.toFixed(1) || '0.0'}%
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-1.5 px-2 bg-slate-800/30 rounded-lg">
-                  <div>
-                    <span className="text-xs text-slate-300">ROA</span>
-                    <span className="text-[10px] text-slate-500 ml-2">(Résultat net / Actif total)</span>
+                  <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
+                    <span className="text-[10px] text-slate-500">Charges fin.: {fmt(resultat?.chargesFinancieres)}</span>
+                    <span className="text-[10px] text-slate-500">EBE: {fmt(resultat?.ebe)}</span>
                   </div>
-                  <span className="text-xs font-bold text-slate-300">
-                    {ratios?.roa?.toFixed(1) || '0.0'}%
-                  </span>
                 </div>
               </div>
             </div>
-          </div>
 
-          {!useJournal && (
-            <div className="mt-4 p-3 bg-slate-800/50 rounded-xl">
-              <p className="text-[11px] text-slate-400 text-center">
-                Les ratios précis sont disponibles avec des écritures comptables dans le journal.
-              </p>
-            </div>
-          )}
+        </div>
         </div>
       </div>
 
       {selectedDetail && (
         <DetailModal
-          detail={journalData?.details?.[selectedDetail]}
+          detail={journalData?.details?.[selectedDetail] || nonJournalDetails[selectedDetail] || []}
           label={detailLabels[selectedDetail] || selectedDetail}
           journal={journalData?.journal || []}
           onClose={() => setSelectedDetail(null)}

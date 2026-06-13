@@ -2,24 +2,38 @@
 <html lang="fr" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪙</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Smart Comptable — Logiciel de comptabilité tunisienne automatisée. Facturation TEIF, TVA, IRPP, IS, paie CNSS, OCR, audit et business intelligence." />
+    <meta name="keywords" content="comptabilité tunisienne, facturation TEIF, TVA Tunisie, IRPP, IS, paie CNSS, OCR factures, audit comptable" />
+    <meta name="author" content="Mohamed Salim Ezzine" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       script-src 'self' 'unsafe-eval' 'unsafe-inline' blob:;
       worker-src 'self' blob:;
-      connect-src 'self' blob: data: https://tessdata.projectnaptha.com https://*.supabase.co wss://*.supabase.co;
+      connect-src 'self' blob: data: https://tessdata.projectnaptha.com https://*.supabase.co wss://*.supabase.co https://api.emailjs.com;
       img-src 'self' blob: data:;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
       base-uri 'self';
       form-action 'self'
     " />
-    <title>Smart Comptable — Comptabilité Automatisée & Facturation</title>
-    <!-- Google Fonts: Outfit & Inter -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Smart Comptable — Comptabilité Tunisienne Automatisée" />
+    <meta property="og:description" content="Logiciel de comptabilité intelligent : facturation TEIF, TVA, IRPP, IS, paie, OCR, audit. Conçu pour la Tunisie." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://salimezine.github.io/Smart-comptable/" />
+    <meta property="og:image" content="https://salimezine.github.io/Smart-comptable/logo.png" />
+    <meta property="og:locale" content="fr_TN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Smart Comptable — Comptabilité Tunisienne Automatisée" />
+    <meta name="twitter:description" content="Logiciel de comptabilité intelligent pour la Tunisie : facturation TEIF, TVA, IRPP, IS, paie, OCR, audit." />
+    <title>Smart Comptable — Comptabilité Tunisienne Automatisée</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>

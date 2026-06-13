@@ -6,8 +6,11 @@ import { createSession } from '../utils/security/sessionManager';
 import { logAction, AUDIT_ACTIONS } from '../utils/security/auditLog';
 
 const RESET_CODE_KEY = 'sc_reset_code';
+const EMAILJS_SERVICE_ID = 'Smart-Comptable';
+const EMAILJS_TEMPLATE_ID = 'template_7k7ebdv';
+const EMAILJS_PUBLIC_KEY = 'NhgDOZdl-hiwqNXX9';
 
-export default function LoginView({ onLogin, companyId }) {
+export default function LoginView({ onLogin, companyId, onBack }) {
   const [mode, setMode] = useState('loading');
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
@@ -113,7 +116,7 @@ export default function LoginView({ onLogin, companyId }) {
     onLogin(user, session);
   };
 
-  const handleSendResetCode = () => {
+  const handleSendResetCode = async () => {
     if (!forgotEmail) { setError('Veuillez entrer votre email'); return; }
     const user = getUserByEmail(forgotEmail);
     if (!user) { setError('Aucun compte trouvé avec cet email'); return; }
@@ -121,9 +124,34 @@ export default function LoginView({ onLogin, companyId }) {
     const code = Math.floor(100000 + Math.random() * 900000).toString();
     setGeneratedCode(code);
     localStorage.setItem(RESET_CODE_KEY, JSON.stringify({ code, userId: user.id, expires: Date.now() + 10 * 60 * 1000 }));
-    setStep('code');
-    setError('');
-    window.location.href = `mailto:${user.email}?subject=Code%20de%20r%C3%A9initialisation%20PIN%20-%20Smart%20Comptable&body=Bonjour%2C%0D%0A%0D%0AVoici%20votre%20code%20de%20v%C3%A9rification%20%3A%20${code}%0D%0A%0D%0ACe%20code%20est%20valable%2010%20minutes.%0D%0A%0D%0ASmart%20Comptable`;
+    try {
+      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: EMAILJS_SERVICE_ID,
+          template_id: EMAILJS_TEMPLATE_ID,
+          user_id: EMAILJS_PUBLIC_KEY,
+          template_params: {
+            to_email: user.email,
+            to_name: user.prenom || 'Utilisateur',
+            otp: code,
+            code: code,
+            otp_code: code,
+            message: `Votre code de verification PIN : ${code}`,
+          },
+        }),
+      });
+      if (!res.ok) {
+        const text = await res.text();
+        setError(`EmailJS ${res.status}: ${text}`);
+        return;
+      }
+      setStep('code');
+      setError('');
+    } catch (err) {
+      setError(`Erreur: ${err.message}`);
+    }
   };
 
   const handleVerifyCode = () => {
@@ -142,37 +170,37 @@ export default function LoginView({ onLogin, companyId }) {
     const h = await hashPIN(newPin);
     updateUser(forgotUser.id, { pin_hash: h });
     localStorage.removeItem(RESET_CODE_KEY);
-    setSelectedUserId(forgotUser.id);
-    setMode('pin');
-    setPin('');
-    setError('');
-    alert('Nouveau PIN enregistré avec succès.');
+    unlockApp();
+    clearFailedAttempts();
+    const session = createSession(forgotUser.id, companyId || 'default');
+    logAction(AUDIT_ACTIONS.LOGIN, { userId: forgotUser.id, nom: `${forgotUser.prenom} ${forgotUser.nom}`, pinReset: true });
+    onLogin(forgotUser, session);
   };
 
   const renderKeypad = (value, setValue, maxLen = 6) => (
-    <div className="space-y-4">
-      <div className="flex gap-2 justify-center mb-4">
+    <div className="space-y-5">
+      <div className="flex gap-2.5 justify-center mb-4">
         {Array.from({ length: maxLen }, (_, i) => (
-          <div key={i} className={`w-3 h-3 rounded-full transition-all ${i < value.length ? 'bg-brand-400' : 'bg-slate-600'}`} />
+          <div key={i} className={`w-3 h-3 rounded-full transition-all duration-300 ${i < value.length ? 'bg-indigo-400 shadow-glow scale-125' : 'bg-slate-700 scale-100'}`} />
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-2 w-48 mx-auto">
+      <div className="grid grid-cols-3 gap-3.5 w-56 mx-auto">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(d => (
-          <button key={d} onClick={() => { if (value.length < maxLen) { setValue(value + String(d)); setError(''); } }}
-            className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all active:scale-95">
+          <button key={d} type="button" onClick={() => { if (value.length < maxLen) { setValue(value + String(d)); setError(''); } }}
+            className="w-16 h-16 rounded-full bg-slate-900/40 hover:bg-brand-500/10 border border-slate-800 hover:border-brand-500/30 text-white text-xl font-bold transition-all duration-200 active:scale-90 shadow-inner-glow flex items-center justify-center">
             {d}
           </button>
         ))}
-        <button onClick={() => setValue('')}
-          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-red-400 text-[10px] font-bold transition-all">
+        <button type="button" onClick={() => setValue('')}
+          className="w-16 h-16 rounded-full bg-slate-900/20 hover:bg-danger-500/10 border border-slate-800/50 hover:border-danger-500/30 text-danger-400 text-xs font-semibold transition-all duration-200 active:scale-90 flex items-center justify-center">
           Effacer
         </button>
-        <button onClick={() => { if (value.length < maxLen) { setValue(value + '0'); setError(''); } }}
-          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white text-lg font-bold transition-all">
+        <button type="button" onClick={() => { if (value.length < maxLen) { setValue(value + '0'); setError(''); } }}
+          className="w-16 h-16 rounded-full bg-slate-900/40 hover:bg-brand-500/10 border border-slate-800 hover:border-brand-500/30 text-white text-xl font-bold transition-all duration-200 active:scale-90 shadow-inner-glow flex items-center justify-center">
           0
         </button>
-        <button onClick={() => setValue(v => v.slice(0, -1))}
-          className="w-14 h-14 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-amber-400 text-[10px] font-bold transition-all">
+        <button type="button" onClick={() => setValue(v => v.slice(0, -1))}
+          className="w-16 h-16 rounded-full bg-slate-900/20 hover:bg-warning-500/10 border border-slate-800/50 hover:border-warning-500/30 text-warning-400 text-lg transition-all duration-200 active:scale-90 flex items-center justify-center">
           ⌫
         </button>
       </div>
@@ -200,14 +228,24 @@ export default function LoginView({ onLogin, companyId }) {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4">
-      <div className="glass-card p-8 rounded-3xl border border-slate-700 max-w-sm w-full space-y-6">
+    <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Background ambient glows */}
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-500/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="glass-panel shadow-2xl p-8 rounded-3xl border border-white/5 max-w-sm w-full space-y-6 relative z-10 animate-fade-in">
+        {onBack && (
+          <button onClick={onBack}
+            className="absolute top-4 left-4 text-[10px] text-slate-400 hover:text-slate-200 flex items-center gap-1">
+            <ArrowLeft className="w-3 h-3" /> Email
+          </button>
+        )}
         <div className="text-center space-y-2">
-          <div className="w-16 h-16 rounded-2xl bg-brand-500/20 flex items-center justify-center mx-auto border border-brand-500/30">
-            <Shield className="w-8 h-8 text-brand-400" />
+          <div className="w-16 h-16 rounded-2xl bg-brand-500/20 flex items-center justify-center mx-auto border border-brand-500/30 shadow-glow">
+            <Shield className="w-8 h-8 text-brand-400 animate-pulse-soft" />
           </div>
-          <h1 className="text-xl font-black text-white">Smart Comptable</h1>
-          <p className="text-[10px] text-slate-400">Comptabilité tunisienne sécurisée</p>
+          <h1 className="text-xl font-black text-white tracking-tight bg-gradient-to-r from-indigo-200 via-indigo-400 to-indigo-100 bg-clip-text text-transparent">Smart Comptable</h1>
+          <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">Comptabilité tunisienne sécurisée</p>
         </div>
 
         {mode === 'setup' && (

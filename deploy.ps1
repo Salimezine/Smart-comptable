@@ -4,7 +4,6 @@ Write-Host "=== Déploiement Smart Comptable ===" -ForegroundColor Cyan
 # 1. Build
 Write-Host "`n[1/3] Build production..." -ForegroundColor Yellow
 
-# Inject Supabase vars from environment (set in GitHub Secrets or local env)
 if ($env:VITE_SUPABASE_URL) { $env:VITE_SUPABASE_URL = $env:VITE_SUPABASE_URL }
 if ($env:VITE_SUPABASE_ANON_KEY) { $env:VITE_SUPABASE_ANON_KEY = $env:VITE_SUPABASE_ANON_KEY }
 
@@ -19,6 +18,24 @@ Write-Host "Build OK" -ForegroundColor Green
 Copy-Item -LiteralPath "dist\index.html" -Destination "dist\app.html" -Force
 Copy-Item -LiteralPath "landing.html" -Destination "dist\index.html" -Force
 Copy-Item -LiteralPath "mentions-legales.html" -Destination "dist\mentions-legales.html" -Force
+
+# Patcher le Service Worker pour ajouter les HTML au precache et corriger le handler
+Write-Host "`nPatching SW precache..." -ForegroundColor Yellow
+node -e "
+const fs = require('fs');
+let sw = fs.readFileSync('dist/sw.js', 'utf8');
+// 1. Fix handler to point to app.html
+sw = sw.replace(/createHandlerBoundToURL\(\"index\.html\"\)/g, 'createHandlerBoundToURL(\"app.html\")');
+// 2. Add HTML files to precache manifest (before closing ] of the array)
+sw = sw.replace(/\}\]\,\{\}\)\,s\.cleanupOutdatedCaches/g,
+  '},{url:\"app.html\",revision:null},{url:\"index.html\",revision:null},{url:\"mentions-legales.html\",revision:null}],{}),s.cleanupOutdatedCaches');
+fs.writeFileSync('dist/sw.js', sw, 'utf8');
+console.log('SW patched successfully');
+"
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "SW Patch échoué" -ForegroundColor Red
+    exit 1
+}
 
 # 2. Tests
 Write-Host "`n[2/3] Tests..." -ForegroundColor Yellow

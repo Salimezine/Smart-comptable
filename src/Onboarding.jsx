@@ -33,6 +33,29 @@ export default function Onboarding({ onComplete }) {
             Pour commencer, veuillez configurer votre profil d'entreprise. 
             Les données seront enregistrées localement et vous partirez avec des compteurs à zéro.
           </p>
+
+          {/* Completion Progress Bar */}
+          {(() => {
+            const requiredFields = [newCompany.name, newCompany.email, newCompany.vatNumber];
+            const filledCount = requiredFields.filter(val => val && val.trim() !== '').length;
+            const pct = Math.round((filledCount / requiredFields.length) * 100);
+            return (
+              <div className="mt-6 max-w-sm mx-auto space-y-2">
+                <div className="flex justify-between items-center text-xs">
+                  <span className="font-bold text-slate-500 uppercase tracking-widest">Configuration Profil</span>
+                  <span className={`font-black ${pct === 100 ? 'text-emerald-400' : 'text-indigo-400'}`}>{pct}%</span>
+                </div>
+                <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden border border-slate-800">
+                  <div 
+                    className={`h-full rounded-full transition-all duration-300 ${
+                      pct === 100 ? 'bg-gradient-to-r from-emerald-500 to-teal-400 shadow-[0_0_8px_rgba(16,185,129,0.3)]' : 'bg-gradient-to-r from-indigo-500 to-violet-500 shadow-[0_0_8px_rgba(99,102,241,0.3)]'
+                    }`}
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              </div>
+            );
+          })()}
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">

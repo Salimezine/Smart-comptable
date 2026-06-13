@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { calculerBulletin, genererEcrituresPaie, genererPaiementPaie, saveJournalPiece, exportBulletinPDF, exportDeclarationCNSS, exportEtat301, TAUX } from './utils/payrollEngine';
 import { saveEmploye, getEmployes, deleteEmploye, saveBulletin, getBulletins, getAllBulletins } from './utils/payrollStore';
 import { Plus, Save, Download, FileText, User, Users, Trash2, Calculator, AlertTriangle, CheckCircle, ChevronDown, ChevronRight, Calendar, X, Search, DollarSign } from 'lucide-react';
+import { useToast } from './components/Toast';
+import { useConfirm } from './components/ConfirmModal';
 
 const moisNom = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
 
@@ -49,6 +51,8 @@ function FiscalLine({ label, value, color, bold, total, indent }) {
 const EMPTY_EMPLOYE = { nom: '', prenom: '', cin: '', matricule: '', poste: '', salaireBase: '', regimeHoraire: 40, chefFamille: false, conjointCharge: false, nbEnfants: 0 };
 
 export default function PayrollView({ companyDetails }) {
+  const toast = useToast();
+  const confirm = useConfirm();
   const [tab, setTab] = useState('employes');
   const [employes, setEmployes] = useState([]);
   const [bulletins, setBulletins] = useState([]);
@@ -58,7 +62,6 @@ export default function PayrollView({ companyDetails }) {
   const [employeForm, setEmployeForm] = useState(EMPTY_EMPLOYE);
   const [editingId, setEditingId] = useState(null);
   const [showForm, setShowForm] = useState(false);
-  const [msg, setMsg] = useState(null);
   const [selectedEmployeId, setSelectedEmployeId] = useState('all');
   const [search, setSearch] = useState('');
 
@@ -80,12 +83,12 @@ export default function PayrollView({ companyDetails }) {
 
   const handleSaveEmploye = () => {
     if (!employeForm.nom || !employeForm.salaireBase) {
-      setMsg({ type: 'error', text: 'Nom et salaire de base requis.' });
+      toast.error('Nom et salaire de base requis.');
       return;
     }
     const saved = saveEmploye({ ...employeForm, id: editingId });
     if (saved) {
-      setMsg({ type: 'success', text: `Employé ${saved.prenom} ${saved.nom} enregistré.` });
+      toast.success(`Employé ${saved.prenom} ${saved.nom} enregistré.`);
       setShowForm(false);
       setEditingId(null);
       setEmployeForm(EMPTY_EMPLOYE);
@@ -99,16 +102,24 @@ export default function PayrollView({ companyDetails }) {
     setShowForm(true);
   };
 
-  const handleDeleteEmploye = (id) => {
+  const handleDeleteEmploye = async (id) => {
+    const ok = await confirm({
+      title: 'Supprimer l\'employé',
+      message: 'Voulez-vous vraiment supprimer cet employé ? Toutes ses données associées seront perdues.',
+      confirmLabel: 'Supprimer',
+      cancelLabel: 'Annuler',
+      type: 'danger'
+    });
+    if (!ok) return;
     deleteEmploye(id);
     refreshEmployes();
-    setMsg({ type: 'info', text: 'Employé supprimé.' });
+    toast.info('Employé supprimé.');
   };
 
   const handleCalculer = () => {
     const selected = selectedEmployeId === 'all' ? employes : employes.filter(e => e.id === selectedEmployeId);
     if (!selected.length) {
-      setMsg({ type: 'error', text: 'Aucun employé sélectionné.' });
+      toast.error('Aucun employé sélectionné.');
       return;
     }
     const params = { mois, annee, heuresSup: 0, primes: 0, avances: 0 };
@@ -117,38 +128,45 @@ export default function PayrollView({ companyDetails }) {
     // Save all bulletins
     results.forEach(b => saveBulletin(b));
     setBulletins(getBulletins(mois, annee));
-    setMsg({ type: 'success', text: `${results.length} bulletin(s) calculé(s) et enregistré(s).` });
+    toast.success(`${results.length} bulletin(s) calculé(s) et enregistré(s).`);
   };
 
   const handleGenererEcriture = () => {
     const bs = getBulletins(mois, annee);
-    if (!bs.length) { setMsg({ type: 'error', text: 'Aucun bulletin pour cette période.' }); return; }
+    if (!bs.length) { toast.error('Aucun bulletin pour cette période.'); return; }
     const piece = genererEcrituresPaie(bs, mois, annee);
     const ok = saveJournalPiece(piece);
-    if (ok) setMsg({ type: 'success', text: `Écriture ${piece.id} enregistrée dans le journal (OD).` });
-    else setMsg({ type: 'error', text: 'Erreur lors de l\'enregistrement.' });
+    if (ok) toast.success(`Écriture ${piece.id} enregistrée dans le journal (OD).`);
+    else toast.error('Erreur lors de l\'enregistrement.');
   };
 
-  const handlePaiement = (type) => {
+  const handlePaiement = async (type) => {
     const bs = getBulletins(mois, annee);
-    if (!bs.length) { setMsg({ type: 'error', text: 'Aucun bulletin pour cette période.' }); return; }
+    if (!bs.length) { toast.error('Aucun bulletin pour cette période.'); return; }
     const labels = { net: 'Virement salaires', cnss: 'Paiement CNSS', irpp: 'Paiement IRPP' };
-    if (!window.confirm(`Confirmer ${labels[type]} ${moisNom[mois-1]} ${annee} ?`)) return;
+    const okConfirm = await confirm({
+      title: labels[type],
+      message: `Confirmer le règlement de type "${labels[type]}" pour ${moisNom[mois-1]} ${annee} ?`,
+      confirmLabel: 'Confirmer',
+      cancelLabel: 'Annuler',
+      type: 'info'
+    });
+    if (!okConfirm) return;
     const piece = genererPaiementPaie(bs, type, mois, annee);
     const ok = saveJournalPiece(piece);
-    if (ok) setMsg({ type: 'success', text: `${labels[type]} ${piece.id} enregistré dans le journal (BQ).` });
-    else setMsg({ type: 'error', text: 'Erreur lors de l\'enregistrement.' });
+    if (ok) toast.success(`${labels[type]} ${piece.id} enregistré dans le journal (BQ).`);
+    else toast.error('Erreur lors de l\'enregistrement.');
   };
 
   const handleExportBulletin = async () => {
-    if (!currentBulletin) { setMsg({ type: 'error', text: 'Calculez d\'abord un bulletin.' }); return; }
+    if (!currentBulletin) { toast.error('Calculez d\'abord un bulletin.'); return; }
     const doc = await exportBulletinPDF(currentBulletin, companyDetails || {});
     doc.save(`Bulletin_${currentBulletin.nom}_${mois}_${annee}.pdf`);
   };
 
   const handleExportDMS = async () => {
     const bs = getBulletins(mois, annee);
-    if (!bs.length) { setMsg({ type: 'error', text: 'Aucun bulletin.' }); return; }
+    if (!bs.length) { toast.error('Aucun bulletin.'); return; }
     const doc = await exportDeclarationCNSS(bs, mois, annee, companyDetails || {});
     doc.save(`DMS_${annee}_${String(mois).padStart(2,'0')}.pdf`);
   };
@@ -162,7 +180,7 @@ export default function PayrollView({ companyDetails }) {
       byMois[b.mois].push(b);
     }
     const months = Object.values(byMois);
-    if (!months.length) { setMsg({ type: 'error', text: 'Aucun bulletin pour cette année.' }); return; }
+    if (!months.length) { toast.error('Aucun bulletin pour cette année.'); return; }
     const doc = await exportEtat301(months, annee, companyDetails || {});
     doc.save(`Etat301_${annee}.pdf`);
   };
@@ -497,17 +515,7 @@ export default function PayrollView({ companyDetails }) {
         <Tab label="Historique" active={tab === 'historique'} onClick={() => setTab('historique')} />
       </div>
 
-      {msg && (
-        <div className={`px-4 py-3 rounded-xl text-xs font-bold flex items-center gap-2 ${
-          msg.type === 'success' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
-          msg.type === 'error' ? 'bg-red-500/20 text-red-400 border border-red-500/30' :
-          'bg-blue-500/20 text-blue-400 border border-blue-500/30'
-        }`}>
-          {msg.type === 'success' ? <CheckCircle className="w-4 h-4" /> : <AlertTriangle className="w-4 h-4" />}
-          <span className="flex-1">{msg.text}</span>
-          <button onClick={() => setMsg(null)}><X className="w-3.5 h-3.5 opacity-60 hover:opacity-100" /></button>
-        </div>
-      )}
+
 
       {tab === 'employes' && renderEmployes()}
       {tab === 'bulletins' && renderBulletins()}

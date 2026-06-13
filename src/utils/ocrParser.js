@@ -943,15 +943,100 @@ export function detectDate(text) {
 }
 
 // ─────────────────────────────────────────────
+// Document classifier — determine document type before parsing
+// ─────────────────────────────────────────────
+const BORDEREAU_KEYWORDS = [
+  'bulletin de versement', 'bordereau de versement', 'bordereau',
+  'ccp', 'compte courant postal', 'chèque postal',
+  'code guichet', 'clé rib', 'rib', 'iban',
+  'versement', 'crédit de compte',
+  'agence\\s*:\\s*\\d+', 'guichet\\s*:\\s*\\d+',
+  'numéro de compte', 'n° de compte',
+  'timbre', 'taxe',
+  'crédit',
+];
+
+const NON_FACTURE_KEYWORDS = [
+  'bulletin de paie', 'fiche de paie', 'bulletin de salaire',
+  'devis', 'devis n°', 'devis numéro',
+  'bon de commande', 'bon de livraison', 'bon de réception',
+  'reçu', 'reçu n°',
+  'extrait de compte', 'relevé de compte',
+  'carte d\'identité', 'carte nationale',
+  'passeport',
+];
+
+export function classifierDocument(text) {
+  if (!text || typeof text !== 'string') return { type: 'autre', confiance: 0 };
+  const lower = text.toLowerCase().trim();
+
+  // Check for bordereau/versement keywords first (before invoice detection)
+  let bordereauScore = 0;
+  for (const kw of BORDEREAU_KEYWORDS) {
+    try {
+      const re = new RegExp('\\b' + kw.replace(/\\/g, '\\') + '\\b', 'i');
+      if (re.test(lower)) bordereauScore += 15;
+    } catch {
+      if (lower.includes(kw)) bordereauScore += 10;
+    }
+  }
+  // Stronger signal: presence of RIB/account number patterns without invoice structure
+  const hasRIB = /\b(?:rib|iban)\s*[:\s]*[a-z0-9]{10,}/i.test(lower);
+  const hasVersement = /\b(?:versement|crédit)\s+(?:de|d'un|d'|en)\s*(?:compte|votre)/i.test(lower);
+  const hasCCP = /\bccp\s*(?:n°|numéro|:)?\s*\d{4,}/i.test(lower);
+  if (hasRIB) bordereauScore += 10;
+  if (hasVersement) bordereauScore += 15;
+  if (hasCCP) bordereauScore += 20;
+
+  // Check for non-facture keywords
+  const isNonFacture = NON_FACTURE_KEYWORDS.some(kw => lower.includes(kw));
+
+  // Check for invoice indicators
+  const hasTVA = /(?:tva\s*(?:19|13|7|6|12|20)\s*%|taux\s*tva|montant\s*tva|tva\s*[0-9.,]+\s*[dt])/i.test(lower);
+  const hasMatricule = /(?:matricule\s*fiscal|mf\s*[:\s]|n°\s*mf|n°fiscal)/i.test(lower);
+  const hasSousTotal = /(?:sous[- ]?total\s*ht|net\s*ht|total\s*ht\s*[:\s])/i.test(lower);
+  const hasTotalTTC = /(?:total\s*ttc|net\s*à\s*payer|ttc\s*[:\s])/i.test(lower);
+  const hasFacture = /\b(?:facture|f[ée]f|note\s*d'honoraires|note\s*des\s*honoraires)\b/i.test(lower);
+  const hasClient = /(?:client|facturé\s*à|destinataire)/i.test(lower);
+  const hasFournisseur = /(?:fournisseur|prestataire|vendeur|entreprise)/i.test(lower);
+
+  const invoiceScore = [hasTVA, hasMatricule, hasSousTotal, hasTotalTTC, hasFacture].filter(Boolean).length * 20
+    + (hasClient || hasFournisseur ? 10 : 0);
+
+  // Classification decision
+  if (isNonFacture) {
+    return { type: 'autre', confiance: 80, raison: 'mot_clé_non_facture' };
+  }
+  // If bordereau score is high AND invoice score is low → bordereau
+  if (bordereauScore >= 30 && invoiceScore < 30) {
+    return { type: 'bordereau_versement', confiance: Math.min(100, bordereauScore), raison: 'mots_clés_bordereau' };
+  }
+  // If invoice indicators present → facture
+  if (invoiceScore >= 30 || (hasFacture && (hasMatricule || hasTVA))) {
+    // Sub-classify: vente vs achat
+    const isVente = hasClient && !hasFournisseur;
+    return { type: isVente ? 'facture_vente' : 'facture_achat', confiance: Math.min(100, invoiceScore + (bordereauScore > 0 ? 10 : 0)), raison: null };
+  }
+  // If mixed (bordereau + some invoice keywords) — STEG bill with both sections
+  if (bordereauScore > 0 && invoiceScore > 0) {
+    return { type: invoiceScore >= bordereauScore ? 'facture_achat' : 'bordereau_versement', confiance: Math.min(100, Math.max(invoiceScore, bordereauScore)), raison: 'mixte' };
+  }
+  // Fallback
+  return { type: 'autre', confiance: Math.max(bordereauScore, 5), raison: 'indeterminé' };
+}
+
+// ─────────────────────────────────────────────
 // 21. parseFactureTunisienne — pipeline complet (format JSON spec)
 // ─────────────────────────────────────────────
-export function parseFactureTunisienne(rawText) {
+export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
   try {
     if (!rawText || rawText.trim().length < 10) return null;
 
     // Étape 0: détection PDF
     if (detectPDF(rawText)) {
       return {
+        type_document: 'autre',
+        alerte: 'pdf_detecte',
         erreur: 'PDF_DETECTE',
         formulaire: null,
         verification: {
@@ -966,7 +1051,30 @@ export function parseFactureTunisienne(rawText) {
       };
     }
 
-    // Étape 1: correction OCR avec trace
+    // Étape 0b: classification du document
+    const classification = classifierDocument(rawText);
+    const docType = classification.type;
+
+    // Étape 1a: si ce n'est pas une facture — retour minimal
+    if (docType === 'bordereau_versement' || docType === 'autre') {
+      return {
+        type_document: docType,
+        alerte: 'document_non_facture',
+        message: 'Ce document ne semble pas être une facture. Vérifiez les champs avant d\'enregistrer.',
+        formulaire: null,
+        verification: {
+          calculs_coherents: false,
+          mf_present: false,
+          source_valeurs: 'classifieur',
+          alertes: [{ code: docType === 'bordereau_versement' ? 'BORDEREAU_DETECTE' : 'AUTRE_DOCUMENT', message: classification.raison || 'Document non facture' }],
+          corrections_ocr: [],
+        },
+        confiance_ocr: 0,
+        champs_a_confirmer: ['fournisseur_nom', 'fournisseur_mf', 'numero_justificatif', 'date_facture', 'montant_ht', 'montant_ttc'],
+      };
+    }
+
+    // Étape 1b: correction OCR avec trace (uniquement pour factures)
     const { text, corrections: correctionsOCR } = corrigerOCRAvecTrace(rawText);
 
     // Étape 2: détection brute
@@ -1089,8 +1197,20 @@ export function parseFactureTunisienne(rawText) {
     };
     const verif = verifierCoherence(coherenceData);
 
-    // Étape 5: alertes
+    // Étape 6: champs à confirmer
+    const champsAConfirmer = [];
+    if (!fournisseur) champsAConfirmer.push('fournisseur_nom');
+    if (!mf) champsAConfirmer.push('fournisseur_mf');
+    if (!numero) champsAConfirmer.push('numero_justificatif');
+    if (!date) champsAConfirmer.push('date_facture');
+    if (!totalHT) champsAConfirmer.push('montant_ht');
+    if (!totalTTC) champsAConfirmer.push('montant_ttc');
+
+    // Determine final confidence and alertes
     const confiance = Math.min(100, Math.round(([fournisseur, mf, numero, date, totalHT, totalTTC, totalTVA, timbre].filter(Boolean).length / 8) * 100));
+    const alerte = tesseractConfiance > 0 && tesseractConfiance < 45 && confiance < 50
+      ? 'faible_confiance'
+      : null;
     const alertes = genererAlertes({
       ...coherenceData,
       date,
@@ -1103,16 +1223,9 @@ export function parseFactureTunisienne(rawText) {
       confiance,
     }, text);
 
-    // Étape 6: champs à confirmer
-    const champsAConfirmer = [];
-    if (!fournisseur) champsAConfirmer.push('fournisseur_nom');
-    if (!mf) champsAConfirmer.push('fournisseur_mf');
-    if (!numero) champsAConfirmer.push('numero_justificatif');
-    if (!date) champsAConfirmer.push('date_facture');
-    if (!totalHT) champsAConfirmer.push('montant_ht');
-    if (!totalTTC) champsAConfirmer.push('montant_ttc');
-
     return {
+      type_document: docType,
+      alerte,
       formulaire: {
         type: typeFacture,
         client: detectClient(text),
@@ -1140,7 +1253,7 @@ export function parseFactureTunisienne(rawText) {
         calculs_coherents: verif.calculs_coherents,
         mf_present: !!mf,
         source_valeurs: source_valeurs,
-        alertes: verif.alertes.concat(alertes.map(a => a.message)),
+        alertes: verif.alertes.concat(alertes.map(a => a.message)).concat(alerte ? ['⚠️ Certains champs n\'ont pas été reconnus automatiquement'] : []),
         corrections_ocr: correctionsOCR,
       },
       confiance_ocr: confiance,

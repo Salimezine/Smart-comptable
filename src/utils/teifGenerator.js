@@ -31,7 +31,33 @@ function readConfig() {
     const c1 = JSON.parse(localStorage.getItem('smart_config') || '{}');
     const c2 = JSON.parse(localStorage.getItem('smart_entreprise') || '{}');
     const c3 = JSON.parse(localStorage.getItem('entreprise') || '{}');
-    return { ...c3, ...c2, ...c1 };
+
+    // Read from the actual company data store (Smart Comptable v2+)
+    const currentId = localStorage.getItem('smart_comptable_current_id');
+    let c4 = {};
+    if (currentId) {
+      try {
+        const all = JSON.parse(localStorage.getItem('smart_comptable_companies') || '{}');
+        const company = all[currentId];
+        if (company?.companyDetails) {
+          const d = company.companyDetails;
+          c4 = {
+            matriculeFiscal: d.vatNumber || d.matriculeFiscal || '',
+            mf: d.vatNumber || d.matriculeFiscal || '',
+            raisonSociale: d.name || d.companyName || '',
+            nom: d.name || d.companyName || '',
+            name: d.name || d.companyName || '',
+            adresse: d.address || '',
+            address: d.address || '',
+            rne: d.rne || '',
+            RNE: d.rne || '',
+            ttnCategoryCode: d.ttnCategoryCode || '43211000',
+          };
+        }
+      } catch {}
+    }
+
+    return { ...c3, ...c2, ...c1, ...c4 };
   } catch {
     return {};
   }

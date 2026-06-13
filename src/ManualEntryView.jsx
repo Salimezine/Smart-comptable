@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Save, BookOpen, Paperclip } from 'lucide-react';
+import { Plus, Trash2, Save, BookOpen, Paperclip, AlertCircle } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
 import { getJournalKey } from './utils/journalKey';
@@ -68,6 +68,7 @@ export default function ManualEntryView({ formatCurrency }) {
   const [docName, setDocName] = useState('');
   const [showPlan, setShowPlan] = useState(false);
   const [planSearch, setPlanSearch] = useState('');
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     try {
@@ -120,16 +121,24 @@ export default function ManualEntryView({ formatCurrency }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    lines.forEach(l => {
-      const compte = l.compte.trim();
-      const libelle = l.libelle.trim();
-      if (!compte && !libelle) return;
+    const errs = {};
+    const validLines = lines.filter(l => l.compte.trim() && (parseFloat(l.debit) || parseFloat(l.credit)));
+    if (validLines.length === 0) {
+      errs.empty = 'Ajoutez au moins une ligne avec un compte et un montant.';
+    }
+    if (!equilibre && validLines.length > 0) {
+      errs.balance = 'Le montant total des débits doit être égal au total des crédits.';
+    }
+    setErrors(errs);
+    if (Object.keys(errs).length > 0) return;
+
+    validLines.forEach(l => {
       saveSimpleEntry({
         date,
         numeroPiece,
         piece_justificative: docName || numeroPiece,
-        compte: compte || 'OD',
-        libelle: libelle || `Pièce ${numeroPiece}`,
+        compte: l.compte.trim(),
+        libelle: l.libelle.trim() || `Pièce ${numeroPiece}`,
         debit: parseFloat(l.debit) || 0,
         credit: parseFloat(l.credit) || 0,
         journal,
@@ -293,6 +302,16 @@ export default function ManualEntryView({ formatCurrency }) {
         {saved && (
           <div className="text-[11px] text-accent-400 font-medium animate-fade-in">
             ✓ Écriture(s) enregistrée(s) avec succès dans le journal {journal}.
+          </div>
+        )}
+        {errors.empty && (
+          <div className="text-[11px] text-danger-400 font-medium animate-fade-in flex items-center gap-1">
+            <AlertCircle className="w-3 h-3" /> {errors.empty}
+          </div>
+        )}
+        {errors.balance && (
+          <div className="text-[11px] text-danger-400 font-medium animate-fade-in flex items-center gap-1">
+            <AlertCircle className="w-3 h-3" /> {errors.balance}
           </div>
         )}
       </div>

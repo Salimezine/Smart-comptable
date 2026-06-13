@@ -46,13 +46,14 @@ export const calculateBankBalance = (initialBalance = 32800, transactions = []) 
 };
 
 /**
- * Estime le montant de la provision fiscale (Impôt sur les Sociétés en Tunisie = 15% standard)
+ * Estime le montant de la provision fiscale (Impôt sur les Sociétés en Tunisie = 25% standard, 15% pour petites entreprises)
  * @param {number} totalRevenues - Total des revenus encaissés
+ * @param {number} totalExpenses - Total des charges
  * @returns {number}
  */
-export const calculateEstimatedTaxes = (totalRevenues = 0) => {
-  if (totalRevenues < 0) return 0;
-  return totalRevenues * 0.15; // Taux IS standard en Tunisie (15%)
+export const calculateEstimatedTaxes = (totalRevenues = 0, totalExpenses = 0) => {
+  const profit = Math.max(0, totalRevenues - totalExpenses);
+  return profit * 0.25; // Taux IS standard en Tunisie (25%)
 };
 
 /**
@@ -211,12 +212,10 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   const taxPayable        = estimatedTax;
   const vatPayable        = Math.round(R * 0.06 * 1000) / 1000;
   const otherPayables     = Math.round(Math.max(E * 0.05, 0.200) * 1000) / 1000;
-  const bankOverdraft     = 0;  /* avec l'équilibre actif/passif automatique, le découvert est nul */
-  const currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
-
-  const totalLiabilities  = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
-  const totalPassif       = Math.round((equity + totalLiabilities) * 1000) / 1000;
-  /* totalPassif = totalLiabilitiesAndEquity (coffre fort du bilan) */
+  let bankOverdraft     = 0;
+  let currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
+  let totalLiabilities  = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
+  let totalPassif       = Math.round((equity + totalLiabilities) * 1000) / 1000;
 
   /* --- STEP 2 : Somme de l'Actif hors Banque --- */
   const nonCurrentAssets  = Math.round((intangibleAssets + tangibleAssets + financialAssets) * 1000) / 1000;
@@ -226,11 +225,15 @@ export const generateBalanceSheet = (invoices = [], expenses = [], transactions 
   /* --- STEP 3 : Banque = TOTAL PASSIF − Σ(autres Actifs) --- */
   let cashAndBank = Math.round((totalPassif - sommeActifSaufBanque) * 1000) / 1000;
   if (cashAndBank < 0) {
-    /* Sécurité: si la banque serait négative, on la met à 0 et on ajuste le passif */
+    /* Si trésorerie négative, on la transfère en découvert bancaire (passif courant) */
+    bankOverdraft = Math.abs(cashAndBank);
     cashAndBank = 0;
+    currentLiabilities = Math.round((accountsPayable + personnelPayable + taxPayable + vatPayable + otherPayables + bankOverdraft) * 1000) / 1000;
+    totalLiabilities = Math.round((currentLiabilities + nonCurrentLiabilities) * 1000) / 1000;
+    totalPassif = Math.round((equity + totalLiabilities) * 1000) / 1000;
   }
 
-  /* --- STEP 4 : Totaux Actif (automatiquement = totalPassif) --- */
+  /* --- STEP 4 : Totaux Actif (toujours = totalPassif) --- */
   const currentAssets = Math.round((autresActifsCourants + cashAndBank) * 1000) / 1000;
   const totalAssets   = Math.round((nonCurrentAssets + currentAssets) * 1000) / 1000;
 
@@ -571,15 +574,15 @@ export function generateFromJournal() {
   const tresorerieActif   = tresorerieBrute - provisionsTresorerieDeduction;
   const concoursBancaires = Math.max(-cl('52'), 0) / 1000;
 
-  // Capitaux propres (SCT class 1)
-  const capitalSocial        = Math.max(cl('10'), 0) / 1000;  // 10 = capital
-  const reserves             = Math.max(cl('11'), 0) / 1000;  // 11 = primes et réserves
-  const resultatsReportes    = Math.max(cl('12'), 0) / 1000;  // 12 = report à nouveau
-  const resultatExercice     = cl('13') / 1000;               // 13 = résultat (débit = perte, crédit = bénéfice, peut être négatif)
-  const autresCapitauxPropres = Math.max(cl('14'), 0) / 1000; // 14 = subventions, réserves réglementées
-  const emprunts             = Math.max(cl('16') + cl('17'), 0) / 1000;
-  const provisions           = Math.max(cl('15'), 0) / 1000;
-  const autresPassifsNC      = Math.max(cl('18'), 0) / 1000;  // 18 = autres passifs non courants
+  // Capitaux propres (SCT class 1) — credit-normal accounts: use -cl() to get positive values
+  const capitalSocial        = Math.max(-cl('10'), 0) / 1000;  // 10 = capital
+  const reserves             = Math.max(-cl('11'), 0) / 1000;  // 11 = primes et réserves
+  const resultatsReportes    = Math.max(-cl('12'), 0) / 1000;  // 12 = report à nouveau
+  const resultatExercice     = Math.max(-cl('13'), 0) / 1000;  // 13 = résultat (crédit = profit)
+  const autresCapitauxPropres = Math.max(-cl('14'), 0) / 1000; // 14 = subventions, réserves réglementées
+  const emprunts             = Math.max(-cl('16') - cl('17'), 0) / 1000;  // 16,17 = dettes financières (crédit)
+  const provisions           = Math.max(-cl('15'), 0) / 1000;  // 15 = provisions (crédit)
+  const autresPassifsNC      = Math.max(-cl('18'), 0) / 1000;  // 18 = autres passifs non courants
 
   const ancBrut = fraisPreliminairesBrutes + immobilisationsIncorporellesBrutes + immobilisationsCorporellesBrutes + immobilisationsFinancieresBrutes;
   const actifNC  = ancBrut - amortissementsDeduction - provisionsActifNCDeduction;
@@ -587,14 +590,16 @@ export function generateFromJournal() {
   const actifC   = stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif;
   const totalActif = actifNC + actifC;
 
-  const capPropres   = capitalSocial + reserves + resultatsReportes + Math.max(resultatExercice, 0) + autresCapitauxPropres;
+  // If account 13 has no closing entries, compute resultat from income/expense accounts
+  const charges  = Object.keys(balances).filter(k => k.startsWith('6')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
+  const produits = Object.keys(balances).filter(k => k.startsWith('7')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
+  const netComputed = produits - charges;
+  const finalResultat = resultatExercice > 0.001 ? resultatExercice : Math.max(netComputed, 0);
+
+  const capPropres   = capitalSocial + reserves + resultatsReportes + finalResultat + autresCapitauxPropres;
   const passifNC     = emprunts + provisions + autresPassifsNC;
   const passifC      = fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires;
   const totalPassif  = capPropres + passifNC + passifC;
-
-  // RÉSULTAT
-  const charges  = Object.keys(balances).filter(k => k.startsWith('6')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
-  const produits = Object.keys(balances).filter(k => k.startsWith('7')).reduce((s, k) => s + balances[k].credit, 0) / 1000;
 
   const achats = Object.keys(balances).filter(k => k.startsWith('60')).reduce((s, k) => s + balances[k].debit, 0) / 1000;
   // Sous-comptes achats pour SIG
@@ -629,7 +634,7 @@ export function generateFromJournal() {
   const resultatExploitation = totalProduitsExploitation - totalChargesExploitation;
   const resultatFinancier = produitsFinanciers - chargesFinancieres;
   const resultatExceptionnel = produitsExceptionnels - chargesExceptionnelles;
-  const resultatNet = produits - charges;
+  const resultatNet = finalResultat;
 
   // SIG computation
   const margeCommerciale = ventesMarchandises - achatsMarchandises;
@@ -670,12 +675,12 @@ export function generateFromJournal() {
       etatDebit, personnelDebit, autresCréances,
       tresorerieActif, tresorerieBrute, provisionsTresorerieDeduction,
       capPropres, passifNC, passifC, totalPassif,
-      capitalSocial, reserves, resultatsReportes, resultatExercice, autresCapitauxPropres,
+      capitalSocial, reserves, resultatsReportes, resultatExercice: finalResultat, autresCapitauxPropres,
       emprunts, provisions, autresPassifsNC,
       fournisseurs, etatCredit, personnelCredit, autresDettes, concoursBancaires,
     },
     resultat: {
-      produits, charges, resultatNet,
+      produits, charges, resultatNet: finalResultat,
       ventes, ventesMarchandises, ventesPrestations,
       productionStockee, productionImmobilisee, subventionsExploitation,
       autresProduits, produitsFinanciers, produitsExceptionnels, reprises,
@@ -691,6 +696,9 @@ export function generateFromJournal() {
     ratios: {
       liquiditeGenerale, liquiditeReduite, autonomieFinanciere, endettementNet,
       margeNette, roe, roa, couvertureEmploisStables, margeExploitation,
+      bfr: (stocks || 0) + (clients || 0) - (fournisseurs || 0),
+      tresorerieNette: (tresorerieActif || 0) - (concoursBancaires || 0),
+      poidsChargesFinancieres: (ebe && ebe > 0) ? Math.round((chargesFinancieres / ebe) * 1000) / 1000 : 0,
     },
     fluxTresorerie,
     details: {
@@ -735,6 +743,18 @@ export function generateFromJournal() {
       chargesFinancieres: soldeDetails(k => k.startsWith('66') && !k.startsWith('6654')),
       chargesExceptionnelles: soldeDetails(k => k.startsWith('67')),
       dotations: soldeDetails(k => k.startsWith('68')),
+      reprises: soldeDetails(k => k.startsWith('78')),
+      variationClients: soldeDetails(k => k.startsWith('41')),
+      variationFournisseurs: soldeDetails(k => k.startsWith('40')),
+      variationEtat: soldeDetails(k => k.startsWith('43')),
+      variationPersonnel: soldeDetails(k => k.startsWith('42')),
+      variationStocks: soldeDetails(k => (k.startsWith('3') && !k.startsWith('39'))),
+      acquisitionsImmobilisations: soldeDetails(k => (k.startsWith('20') || k.startsWith('21') || k.startsWith('22') || k.startsWith('23') || k.startsWith('24') || k.startsWith('25') || k.startsWith('26') || k.startsWith('27'))),
+      cessionsImmobilisations: soldeDetails(k => (k.startsWith('20') || k.startsWith('21') || k.startsWith('22') || k.startsWith('23') || k.startsWith('24') || k.startsWith('25') || k.startsWith('26') || k.startsWith('27'))),
+      apportsCapital: soldeDetails(k => k.startsWith('10')),
+      empruntsNouveaux: soldeDetails(k => k.startsWith('16') || k.startsWith('17')),
+      remboursementsEmprunts: soldeDetails(k => k.startsWith('16') || k.startsWith('17')),
+      tresorerieFinale: soldeDetails(k => k.startsWith('5') && !k.startsWith('52') && !k.startsWith('59')),
     },
     journal,
   };
@@ -785,6 +805,7 @@ export function generateCashFlowStatement(bilan, resultat, journalBalances) {
   const tresorerieInitiale = tresorerieFinale - variationTresorerie;
 
   return {
+    resultatNet,
     fluxExploitation,
     margeBruteAutofinancement,
     dotations,

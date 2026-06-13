@@ -33,9 +33,7 @@ export const PERMISSIONS = {
     can: [
       "view_all",
       "create_invoice",
-      "edit_invoice",
       "create_expense",
-      "edit_expense",
       "scan_ocr",
       "view_journal",
       "create_journal_entry",
