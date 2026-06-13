@@ -384,29 +384,22 @@
     .module-card .module-tag.info { background: rgba(15,76,129,0.1); color: #0F4C81; }
 
     /* ===== DEMO SECTION ===== */
-    .demo-video-placeholder {
-      width: 100%; max-width: 720px; margin: 0 auto;
-      aspect-ratio: 16/9; border-radius: 20px;
-      background: linear-gradient(135deg, rgba(15,76,129,0.04), rgba(22,163,74,0.04));
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      position: relative; overflow: hidden;
+    .demo-video-wrapper {
+      max-width: 720px; margin: 0 auto; position: relative;
     }
-    .demo-video-placeholder .play-btn {
-      width: 72px; height: 72px; border-radius: 50%;
-      background: var(--primary); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 8px 32px rgba(15,76,129,0.3);
-      transition: all var(--transition); cursor: pointer;
+    .demo-video {
+      width: 100%; border-radius: 20px;
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      background: #0f172a; display: block;
     }
-    .demo-video-placeholder .play-btn:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(15,76,129,0.4); }
-    .demo-video-placeholder .demo-label {
+    .demo-video-badge {
       position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
       font-size: 13px; font-weight: 600; color: var(--text-secondary);
       background: var(--glass-bg); backdrop-filter: blur(12px);
       padding: 8px 20px; border-radius: 100px;
       border: 1px solid var(--glass-border);
-      white-space: nowrap;
+      white-space: nowrap; pointer-events: none;
     }
     .demo-screenshots { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; max-width: 720px; margin: 32px auto 0; }
     .demo-thumb {
@@ -1128,11 +1121,11 @@
       <div class="section-label fade-up">Démonstration</div>
       <h2 class="section-title fade-up">Voyez Smart Comptable en action</h2>
       <p class="section-sub fade-up">Découvrez comment notre plateforme simplifie votre comptabilité au quotidien.</p>
-      <div class="demo-video-placeholder fade-up">
-        <div class="play-btn">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        </div>
-        <span class="demo-label">▶ Vidéo 60 secondes</span>
+      <div class="demo-video-wrapper fade-up">
+        <video class="demo-video" controls poster="ss2.png" preload="metadata">
+          <source src="/demo-smart-comptable.mp4" type="video/mp4" />
+        </video>
+        <div class="demo-video-badge">▶ Vidéo 60 secondes</div>
       </div>
       <div class="demo-screenshots fade-up">
         <div class="demo-thumb">
