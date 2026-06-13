@@ -1,0 +1,192 @@
+import React, { useState, useEffect } from 'react';
+import { Building, Sparkles, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { getLearningStats } from '../learningEngine';
+import { setTTNMode, getTTNMode } from '../teif';
+
+export default function SettingsView({ companyDetails, setCompanyDetails }) {
+  const [success, setSuccess] = useState(false);
+  const [stats, setStats] = useState(getLearningStats());
+
+  useEffect(() => { setStats(getLearningStats()); }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSuccess(true);
+    setTimeout(() => setSuccess(false), 2500);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl border border-slate-800 max-w-2xl mx-auto space-y-6">
+      <div className="flex justify-between items-center border-b border-slate-800 pb-4">
+        <div>
+          <h3 className="font-extrabold text-slate-100 flex items-center gap-2">
+            <Building className="w-5 h-5 text-indigo-400" /> Profil de l'entreprise
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">Configurez les mentions légales apparaissant sur vos factures et les QR codes.</p>
+        </div>
+      </div>
+
+      {success && (
+        <div className="p-3 bg-accent-500/10 border border-accent-500/25 rounded-xl text-xs font-bold text-accent-400 flex items-center gap-2 animate-fade-in">
+          <CheckCircle2 className="w-4 h-4" /> Paramètres enregistrés avec succès !
+        </div>
+      )}
+
+      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30 space-y-3">
+        <div className="flex items-center gap-2 text-brand-400">
+          <Sparkles className="w-4 h-4" />
+          <h4 className="text-xs font-extrabold uppercase tracking-wider">Moteur IA Local — Apprentissage Actif</h4>
+        </div>
+        <div className="grid grid-cols-3 gap-3 text-center">
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{stats.supplierCount}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Fournisseurs mémorisés</p>
+          </div>
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{stats.patternsCount}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Patterns appris</p>
+          </div>
+          <div className="bg-slate-950/60 rounded-xl p-3">
+            <p className="text-xl font-black text-white">{Object.keys(stats.categories).length}</p>
+            <p className="text-[9px] text-slate-400 font-bold uppercase">Catégories SCE</p>
+          </div>
+        </div>
+        {stats.knownSuppliers.length > 0 && (
+          <div>
+            <p className="text-[10px] text-slate-500 font-bold mb-1.5 uppercase tracking-wider">Fournisseurs Appris</p>
+            <div className="max-h-32 overflow-y-auto space-y-1">
+              {stats.knownSuppliers.map((s, i) => (
+                <div key={i} className="flex items-center justify-between px-3 py-1.5 bg-slate-950/40 rounded-lg">
+                  <div className="min-w-0">
+                    <span className="text-xs font-semibold text-slate-200 truncate block">{s.name}</span>
+                    <span className="text-[9px] text-slate-500">{s.count} entrée{s.count > 1 ? 's' : ''}{s.mf ? ' — MF: ' + s.mf : ''}</span>
+                  </div>
+                  <span className="text-[10px] text-slate-400 shrink-0 ml-2">{s.total.toFixed(0)} DT</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        <p className="text-[9px] text-slate-500 mt-1"><AlertCircle className="w-3 h-3 inline-block mr-1" />L'IA apprend de chaque facture et dépense que vous saisissez. Plus vous l'utilisez, plus les suggestions sont précises.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Raison sociale</label>
+          <input 
+            type="text" 
+            required 
+            value={companyDetails.name}
+            onChange={(e) => setCompanyDetails({...companyDetails, name: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">E-mail légal</label>
+          <input 
+            type="email" 
+            required 
+            value={companyDetails.email}
+            onChange={(e) => setCompanyDetails({...companyDetails, email: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <div className="md:col-span-2">
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Adresse physique</label>
+          <input 
+            type="text" 
+            required 
+            value={companyDetails.address}
+            onChange={(e) => setCompanyDetails({...companyDetails, address: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Matricule Fiscal (MF)</label>
+          <input 
+            type="text" 
+            required 
+            value={companyDetails.vatNumber}
+            onChange={(e) => setCompanyDetails({...companyDetails, vatNumber: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Devise de l'exercice</label>
+          <select 
+            value={companyDetails.currency}
+            onChange={(e) => setCompanyDetails({...companyDetails, currency: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          >
+            <option value="TND">Dinar Tunisien (DT)</option>
+            <option value="EUR">Euro (€)</option>
+            <option value="USD">Dollar Américain ($)</option>
+            <option value="MAD">Dirham Marocain (MAD)</option>
+          </select>
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">RIB Bancaire (Compte courant)</label>
+          <input 
+            type="text" 
+            required 
+            value={companyDetails.iban}
+            onChange={(e) => setCompanyDetails({...companyDetails, iban: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Code Swift de la Banque</label>
+          <input 
+            type="text" 
+            required 
+            value={companyDetails.bic}
+            onChange={(e) => setCompanyDetails({...companyDetails, bic: e.target.value})}
+            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
+          />
+        </div>
+      </div>
+
+      <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+        <h4 className="text-xs font-bold text-slate-300 mb-3"> Configuration TEIF (Facture Électronique)</h4>
+        <div className="space-y-3">
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">RNE (Registre National des Entreprises)</label>
+            <input value={companyDetails?.rne || ''} onChange={e => setCompanyDetails(p => ({...p, rne: e.target.value}))} placeholder="Numéro RNE" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
+          </div>
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">Adresse</label>
+            <input value={companyDetails?.address || ''} onChange={e => setCompanyDetails(p => ({...p, address: e.target.value}))} placeholder="Adresse complète" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
+          </div>
+          <div>
+            <label className="block text-[10px] font-medium text-slate-400 mb-1">Code Catégorie (TTN)</label>
+            <select value={companyDetails?.ttnCategoryCode || '43211000'} onChange={e => setCompanyDetails(p => ({...p, ttnCategoryCode: e.target.value}))} className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 focus:outline-none focus:border-indigo-500/50">
+              <option value="43211000">43211000 - Services informatiques</option>
+              <option value="47111000">47111000 - Commerce de gros</option>
+              <option value="47191000">47191000 - Commerce de détail</option>
+              <option value="69101000">69101000 - Services comptables</option>
+              <option value="70221000">70221000 - Conseil en gestion</option>
+              <option value="62011000">62011000 - Développement logiciel</option>
+              <option value="86101000">86101000 - Services de santé</option>
+            </select>
+          </div>
+          <div className="flex items-center gap-3">
+            <label className="text-[10px] font-medium text-slate-400">Mode TTN:</label>
+            <button type="button" onClick={() => setTTNMode(getTTNMode() === 'dev' ? 'prod' : 'dev')} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${getTTNMode() === 'dev' ? 'bg-amber-600/80 text-amber-200' : 'bg-emerald-600/80 text-emerald-200'}`}>
+              {getTTNMode() === 'dev' ? '🧪 Développement (mock)' : '🚀 Production (SFTP)'}
+            </button>
+          </div>
+          <p className="text-[10px] text-slate-500">En mode <strong>Développement</strong>, les TEIF sont simulées localement. En mode <strong>Production</strong>, elles sont transmises via SFTP.</p>
+        </div>
+      </div>
+
+      <div className="pt-4">
+        <button 
+          type="submit" 
+          className="w-full py-2.5 bg-gradient-brand text-white font-bold rounded-xl text-xs shadow-glow hover:opacity-90 transition-all"
+        >
+          Sauvegarder les modifications
+        </button>
+      </div>
+    </form>
+  );
+}
