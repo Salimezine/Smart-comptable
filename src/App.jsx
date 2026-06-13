@@ -24,12 +24,14 @@ import {
   Layers,
   ArrowRight,
   ShieldCheck,
-   Lock,
-   KeyRound,
-   Filter,
-   Send,
-   Package,
-   BookOpen
+  Lock,
+  KeyRound,
+  Filter,
+  Send,
+  Package,
+  BookOpen,
+  Bell,
+  Users
 } from 'lucide-react';
 import { 
   AreaChart, 
@@ -61,10 +63,11 @@ import {
   rapprochementBancaire 
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
-import scanFacture, { CATEGORIES_SCE, FOURNISSEURS_TN } from './tesseractOcr';
+import scanFacture, { CATEGORIES_SCE } from './tesseractOcr';
+import { FOURNISSEURS_LOOKUP } from './utils/ocrParser';
  import { parseFactureTunisienne, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
 import { runFullAudit } from './auditEngine';
-import { learnFromExpense, learnFromInvoice, searchEntities, getLearningStats } from './learningEngine';
+import { learnFromExpense, learnFromInvoice, searchEntities } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
 import { getDemoData } from './utils/demoData';
 
@@ -83,7 +86,7 @@ import InvitePage from './pages/InvitePage';
 import PlanBadge from './components/PlanBadge';
 import PermissionGuard from './components/PermissionGuard';
 import OnboardingWizard from './components/OnboardingWizard';
-import LoginView from './views/LoginView';
+
 
 // Lazy-loaded views — only fetched when user navigates to the tab
 const FournisseursView      = React.lazy(() => import('./FournisseursView'));
@@ -95,6 +98,18 @@ const FiscalDeclarationView = React.lazy(() => import('./FiscalDeclarationView')
 const PayrollView           = React.lazy(() => import('./PayrollView'));
 const AuditView             = React.lazy(() => import('./AuditView'));
 const AdminDashboardView    = React.lazy(() => import('./views/AdminDashboardView'));
+// Premium SaaS Modules
+const AITaxAssistantView    = React.lazy(() => import('./views/AITaxAssistantView'));
+const SmartTVAView          = React.lazy(() => import('./views/SmartTVAView'));
+const SmartIRPPView         = React.lazy(() => import('./views/SmartIRPPView'));
+const SmartISView           = React.lazy(() => import('./views/SmartISView'));
+const BusinessIntelligenceView = React.lazy(() => import('./views/BusinessIntelligenceView'));
+const FiscalAlertCenterView = React.lazy(() => import('./views/FiscalAlertCenterView'));
+const AccountingCRMView     = React.lazy(() => import('./views/AccountingCRMView'));
+const ExpertAccountantPortalView = React.lazy(() => import('./views/ExpertAccountantPortalView'));
+const DigitalSafeView       = React.lazy(() => import('./views/DigitalSafeView'));
+const TeifDeclarationView   = React.lazy(() => import('./views/TeifDeclarationView'));
+const SettingsView          = React.lazy(() => import('./views/SettingsView'));
 import { getActiveUsers, createUser, updateUser, createSociete, addMembreToSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
 import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
@@ -364,19 +379,30 @@ function AppContent() {
   const [confettiActive, setConfettiActive] = useState(false);
 
   // Auth State
-  const { currentUser, currentSociete, initializing, login, pinLogin, logout, can, isAdmin } = useAuth();
-  const [authPage, setAuthPage] = useState('login'); // login | register | invite
-
-  // Auto-demo from URL ?demo=1
-  const demoTriggered = React.useRef(false);
-  React.useEffect(() => {
-    if (demoTriggered.current) return;
+  const { currentUser, currentSociete, initializing, login, logout, can, isAdmin } = useAuth();
+  const [authPage, setAuthPage] = useState(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get('demo') === '1' && !currentUser) {
-      demoTriggered.current = true;
+    if (params.get('register') === '1') return 'register';
+    if (params.get('demo') === '1') return 'demo';
+    if (params.get('login') === '1') {
+      // Force login page: clear any stale session first
+      const clearKeys = ['sc_auth_session', 'sc_auth_session_pwd'];
+      clearKeys.forEach(k => { localStorage.removeItem(k); sessionStorage.removeItem(k); });
+    }
+    return 'login';
+  }); // login | register | invite | demo
+
+  // Auto-trigger demo if ?demo=1
+  useEffect(() => {
+    if (authPage === 'demo') {
+      // Clear any stale session first
+      const clearKeys = ['sc_auth_session', 'sc_auth_session_pwd'];
+      clearKeys.forEach(k => { localStorage.removeItem(k); sessionStorage.removeItem(k); });
       handleDemoLogin();
     }
-  }, [currentUser]);
+  }, []);
+
+  // Demo is now triggered only from the "Mode démo" button on the login page
 
   // Navigation State
   const [currentTab, setCurrentTab] = useState('dashboard');
@@ -429,6 +455,8 @@ function AppContent() {
 
   const handleLogout = () => {
     logout();
+    setCompanies({});
+    setCurrentCompanyId(null);
   };
 
   const handleCompanySwitch = (id) => {
@@ -440,16 +468,51 @@ function AppContent() {
   };
 
   // Auth page routing
-  const handleDemoLogin = () => {
-    const demoUser = createUser({ nom: 'Démo', prenom: 'Utilisateur', email: 'demo@demo.tn', password: 'demo123', role: 'admin', plan: 'pro' });
-    if (!demoUser) return;
+  const handleDemoLogin = async () => {
+    const existingUsers = JSON.parse(localStorage.getItem('sc_users') || '{"users":[]}');
+    const existingDemo = existingUsers.users?.find(u => u.email === 'demo@demo.tn') || null;
+    // If demo user exists and already has a société, just log in
+    if (existingDemo && existingDemo.societeId) {
+      const companiesData = JSON.parse(localStorage.getItem('smart_comptable_companies') || '{}');
+      if (companiesData[existingDemo.societeId]) {
+        await login('demo@demo.tn', 'demo123', false);
+        setCurrentCompanyId(existingDemo.societeId);
+        localStorage.setItem('smart_comptable_current_id', existingDemo.societeId);
+        return;
+      }
+    }
+    // Cleanup: remove all "Démo" companies from React state AND localStorage
+    const cleaned = Object.fromEntries(
+      Object.entries(companies).filter(([, d]) => !d?.companyDetails?.name?.includes('Démo'))
+    );
+    setCompanies(cleaned);
+    localStorage.setItem('smart_comptable_companies', JSON.stringify(cleaned));
+    // Also clean any demo sociétés from userStore
+    const store = JSON.parse(localStorage.getItem('sc_users') || '{"users":[],"societes":[]}');
+    const demoIds = store.societes.filter(s => s.name && s.name.includes('Démo')).map(s => s.id);
+    if (demoIds.length > 0) {
+      const oldOwners = store.societes.filter(s => demoIds.includes(s.id)).map(s => s.ownerId);
+      store.societes = store.societes.filter(s => !demoIds.includes(s.id));
+      if (existingDemo && oldOwners.includes(existingDemo.id)) {
+        existingDemo.societeId = null;
+        const uIdx = store.users.findIndex(u => u.id === existingDemo.id);
+        if (uIdx >= 0) store.users[uIdx].societeId = null;
+      }
+      localStorage.setItem('sc_users', JSON.stringify(store));
+    }
+    // Create or reuse demo user
+    const demoUser = existingDemo || await createUser({ nom: 'Démo', prenom: 'Utilisateur', email: 'demo@demo.tn', password: 'demo123', role: 'admin', plan: 'pro' });
+    if (!demoUser) { toast.error('Erreur création utilisateur démo'); return; }
+    // Create new demo société
     const soc = createSociete({ nom: 'Société Démo', matriculeFiscal: 'MF0000000000', ownerId: demoUser.id, plan: 'pro' });
     updateUser(demoUser.id, { societeId: soc.id });
     const data = getDemoData();
-    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: data.invoices, expenses: data.expenses, transactions: data.transactions, companyDetails: { name: 'Société Démo' } } }));
+    const newEntry = { [soc.id]: { invoices: data.invoices, expenses: data.expenses, transactions: data.transactions, companyDetails: { name: 'Société Démo' } } };
+    setCompanies(prev => ({ ...prev, ...newEntry }));
+    localStorage.setItem('smart_comptable_companies', JSON.stringify({ ...cleaned, ...newEntry }));
     const journalKey = `journal_entries_${soc.id}`;
     localStorage.setItem(journalKey, JSON.stringify(data.journalEntries));
-    login('demo@demo.tn', 'demo123', false);
+    await login('demo@demo.tn', 'demo123', false);
     setCurrentCompanyId(soc.id);
     localStorage.setItem('smart_comptable_current_id', soc.id);
   };
@@ -469,7 +532,31 @@ function AppContent() {
     if (!user) throw new Error('Cet email est déjà utilisé');
     const soc = createSociete({ nom: data.societeNom, matriculeFiscal: data.matriculeFiscal, ownerId: user.id, plan: data.plan });
     updateUser(user.id, { societeId: soc.id });
-    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: [], expenses: [], transactions: [], companyDetails: { name: soc.nom } } }));
+    const now = new Date();
+    const demoInvoices = [
+      { id: 'inv_1', numero: 'F-2025-001', client: 'Client SARL ABC', totalAmount: 4500, vatAmount: 855, issueDate: new Date(now.getFullYear(), now.getMonth() - 1, 15).toISOString(), status: 'PAID', category: 'services' },
+      { id: 'inv_2', numero: 'F-2025-002', client: 'Client XYZ SARL', totalAmount: 3200, vatAmount: 608, issueDate: new Date(now.getFullYear(), now.getMonth() - 1, 22).toISOString(), status: 'SENT', category: 'prestations' },
+      { id: 'inv_3', numero: 'F-2025-003', client: 'Fournisseur STEG', totalAmount: 1850, vatAmount: 351.5, issueDate: new Date(now.getFullYear(), now.getMonth(), 5).toISOString(), status: 'DRAFT', category: 'services' },
+      { id: 'inv_4', numero: 'F-2025-004', client: 'Groupe Tunisie', totalAmount: 7200, vatAmount: 1368, issueDate: new Date(now.getFullYear(), now.getMonth(), 10).toISOString(), status: 'SENT', category: 'consulting' },
+    ];
+    const demoExpenses = [
+      { id: 'exp_1', label: 'Électricité STEG', totalAmount: 890, date: new Date(now.getFullYear(), now.getMonth() - 1, 10).toISOString(), category: 'utilities', supplier: 'STEG' },
+      { id: 'exp_2', label: 'Abonnement Internet', totalAmount: 240, date: new Date(now.getFullYear(), now.getMonth() - 1, 5).toISOString(), category: 'telecom', supplier: 'TT' },
+      { id: 'exp_3', label: 'Fournitures bureau', totalAmount: 560, date: new Date(now.getFullYear(), now.getMonth(), 2).toISOString(), category: 'supplies', supplier: 'Bureau Plus' },
+      { id: 'exp_4', label: 'Maintenance serveur', totalAmount: 1200, date: new Date(now.getFullYear(), now.getMonth(), 8).toISOString(), category: 'it', supplier: 'Cloud TN' },
+    ];
+    const demoTransactions = [
+      { id: 'txn_1', label: 'Virement client ABC', amount: 4500, date: new Date(now.getFullYear(), now.getMonth() - 1, 20).toISOString(), type: 'income' },
+      { id: 'txn_2', label: 'Paiement STEG', amount: -890, date: new Date(now.getFullYear(), now.getMonth() - 1, 15).toISOString(), type: 'expense' },
+      { id: 'txn_3', label: 'Virement client Groupe', amount: 7200, date: new Date(now.getFullYear(), now.getMonth(), 12).toISOString(), type: 'income' },
+    ];
+    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: demoInvoices, expenses: demoExpenses, transactions: demoTransactions, companyDetails: { name: soc.nom } } }));
+    setInvoices(demoInvoices);
+    setExpenses(demoExpenses);
+    setTransactions(demoTransactions);
+    setCompanyDetails({ name: soc.nom });
+    // Skip onboarding for registered users
+    setShowOnboarding(false);
     await login(data.email, data.password, true);
     localStorage.removeItem('smart_journal');
     setCurrentCompanyId(soc.id);
@@ -526,9 +613,10 @@ function AppContent() {
         // Mark this company as the active one for saveData guard
         activeCompanyRef.current = currentCompanyId;
 
-        // Auto-show onboarding if company has no name
-        if (!details.name || details.name.trim() === '') {
-          setShowOnboarding(true);
+        // Auto-show onboarding only for brand-new empty companies (once)
+        if (!details.onboardingDone && (!details.name || details.name.trim() === '')) {
+          const hasData = (data.invoices && data.invoices.length > 0) || (data.expenses && data.expenses.length > 0);
+          if (!hasData) setShowOnboarding(true);
         }
       }
     };
@@ -627,15 +715,7 @@ function AppContent() {
     );
   }
 
-  const handleOldPinLogin = (user) => {
-    try { pinLogin(user); } catch (e) { console.error(e); }
-  };
-
   if (!currentUser) {
-    const existingUsers = getActiveUsers();
-    if (existingUsers.length > 0) {
-      return <LoginView onLogin={handleOldPinLogin} companyId={currentCompanyId} />;
-    }
     if (authPage === 'register') return <RegisterPage onRegister={handleRegister} onBack={() => setAuthPage('login')} />;
     if (authPage === 'invite') return <InvitePage onJoin={handleJoinWithInvite} onBack={() => setAuthPage('login')} />;
     return <LoginPage onLogin={handleLoginSubmit} onNavigateRegister={() => setAuthPage('register')} onNavigateInvite={() => setAuthPage('invite')} onDemo={handleDemoLogin} />;
@@ -680,11 +760,11 @@ function AppContent() {
 
   const handleOnboardingComplete = () => {
     setShowOnboarding(false);
+    setCompanyDetails(prev => ({ ...prev, onboardingDone: true }));
   };
 
   // 1. Écran Onboarding seulement si aucun utilisateur auth (first launch via auth-free flow)
-  const hasNoCompanies = Object.keys(companies).length === 0;
-  if (!currentUser && hasNoCompanies) {
+  if (currentUser && Object.keys(companies).length === 0) {
     return <Onboarding onComplete={handleCreateCompany} />;
   }
 
@@ -740,6 +820,11 @@ function AppContent() {
   };
 
   const handleLoadDemoData = () => {
+    const journalKey = getJournalKey();
+    if (JSON.parse(localStorage.getItem(journalKey) || '[]').length > 0) {
+      toast.info("Les données de démonstration sont déjà chargées.");
+      return;
+    }
     const data = getDemoData();
     setInvoices(data.invoices);
     setExpenses(data.expenses);
@@ -747,14 +832,7 @@ function AppContent() {
     for (const e of data.journalEntries) {
       saveJournalPiece(e);
     }
-    setPiecesComptables(prev => [...prev, ...data.journalEntries.map(e => ({ id: e.id, entries: [e], locked: false }))]);
-    const id = localStorage.getItem('smart_comptable_current_id');
-    if (id) {
-      const key = `journal_entries_${id}`;
-      const existing = JSON.parse(localStorage.getItem(key) || '[]');
-      localStorage.setItem(key, JSON.stringify([...data.journalEntries, ...existing]));
-    }
-    setRefreshKey(k => k + 1);
+    setPiecesComptables(data.journalEntries.map(e => ({ id: e.id, entries: [e], locked: false })));
     toast.success("Données de démonstration chargées avec succès !");
     setConfettiActive(true);
   };
@@ -789,7 +867,7 @@ function AppContent() {
       )}
 
       {/* Sidebar - off-canvas on mobile */}
-      <aside className={`w-72 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-40 transition-transform duration-300 ease-in-out lg:translate-x-0 overflow-y-auto ${
+      <aside className={`w-64 glass-panel border-r border-slate-800 flex flex-col justify-between shrink-0 z-40 transition-transform duration-300 ease-in-out lg:translate-x-0 overflow-y-auto ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       } fixed lg:static inset-y-0 left-0`}>
         <div>
@@ -807,44 +885,62 @@ function AppContent() {
           </div>
 
           {/* Nav list */}
-          <nav className="px-4 py-2 space-y-1.5">
+          <nav className="px-4 py-2 space-y-1">
             {[
+              // ═══ Principaux ═══
               { id: 'dashboard', label: 'Tableau de bord', icon: LayoutDashboard },
               { id: 'workflow', label: 'Flux de Clôture', icon: Layers, badge: 'Workflow' },
               { id: 'invoicing', label: 'Factures Client', icon: FileText },
               { id: 'suppliers', label: 'Fournisseurs', icon: Package },
               { id: 'expenses', label: 'Dépenses', icon: TrendingDown },
-              { id: 'stock', label: 'Stock', icon: Package },
-              { id: 'manual', label: 'Saisie Manuelle', icon: BookOpen },
-              { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
+              null, // separator
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
-              { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
-              { id: 'journal', label: 'Journal Comptable', icon: BookOpen },
-              { id: 'fiscal', label: 'Déclarations fiscales', icon: Calculator, badge: 'Liasse' },
+              { id: 'fiscal', label: 'Déclarations', icon: Calculator, badge: 'Liasse' },
+              { id: 'teif', label: 'TEIF & Télédéclaration', icon: FileText, badge: 'XML' },
               { id: 'payroll', label: 'Paie & CNSS', icon: User },
               { id: 'audit', label: 'Audit', icon: ShieldCheck },
-              { id: 'admin', label: 'Administration', icon: ShieldCheck },
+              { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
+              null, // separator
+              { id: 'manual', label: 'Saisie Manuelle', icon: BookOpen },
+              { id: 'journal', label: 'Journal Comptable', icon: BookOpen },
+              { id: 'stock', label: 'Stock', icon: Package },
+              { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
+              null, // separator
+              // ═══ Premium ═══
+              { id: 'ai_tax', label: 'Assistant Fiscal IA', icon: Sparkles, badge: 'IA' },
+              { id: 'bi', label: 'Business Intelligence', icon: TrendingUp, badge: 'BI' },
+              { id: 'smart_tva', label: 'TVA Intelligente', icon: Calculator },
+              { id: 'smart_irpp', label: 'IRPP Intelligent', icon: TrendingUp },
+              { id: 'smart_is', label: 'IS Intelligent', icon: Building },
+              { id: 'alerts', label: 'Alertes Fiscales', icon: Bell },
+              { id: 'crm', label: 'CRM Comptable', icon: Users },
+              { id: 'portal', label: 'Portail Expert', icon: Building, badge: 'Pro' },
+              { id: 'safe', label: 'Coffre-Fort', icon: ShieldCheck },
+              null,
               { id: 'settings', label: 'Configuration', icon: SettingsIcon },
+              { id: 'admin', label: 'Administration', icon: ShieldCheck },
             ].filter(item => {
+              if (!item) return true;
               if (!currentUser) return true;
-              if (item.id === 'admin') return can(currentUser, 'manage_users');
-              if (item.id === 'payroll') return can(currentUser, 'view_all');
-              if (item.id === 'audit') return can(currentUser, 'run_audit');
+              if (item.id === 'admin') return can('manage_users');
+              if (item.id === 'payroll') return can('view_all');
+              if (item.id === 'audit') return can('run_audit');
               return true;
-            }).map(item => {
+            }).map((item, idx) => {
+              if (!item) return <div key={`sep-${idx}`} className="my-2 border-t border-slate-800/40" />;
               const Icon = item.icon;
               const isActive = currentTab === item.id;
               return (
                 <button
                   key={item.id}
                   onClick={() => { setCurrentTab(item.id); setSidebarOpen(false); }}
-                  className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-300 font-medium text-sm ${
+                  className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all duration-300 font-medium text-sm ${
                     isActive 
                       ? 'bg-gradient-brand text-white shadow-glow' 
                       : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/40'
                   }`}
                 >
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2.5">
                     <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-slate-400'}`} />
                     <span>{item.label}</span>
                   </div>
@@ -901,48 +997,71 @@ function AppContent() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col min-w-0 overflow-y-auto relative bg-surface-900">
+      <main className="flex-1 flex flex-col min-w-0 max-w-full overflow-x-hidden bg-surface-900">
         {/* Header */}
-        <header className="h-16 lg:h-20 border-b border-slate-800/50 flex items-center justify-between px-4 sm:px-6 lg:px-8 bg-slate-950/20 backdrop-blur-md sticky top-0 z-10">
-          <div className="flex items-center gap-3 min-w-0">
+        <header className="h-14 lg:h-16 border-b border-slate-800/50 flex items-center justify-between px-3 sm:px-6 lg:px-8 bg-slate-950/30 backdrop-blur-md sticky top-0 z-10">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             {/* Hamburger */}
-            <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 -ml-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
+            <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-1.5 -ml-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
             </button>
+            {currentTab !== 'dashboard' && (
+              <button onClick={() => setCurrentTab('dashboard')} className="lg:hidden p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+              </button>
+            )}
             <div className="min-w-0">
-              <h2 className="text-base lg:text-xl font-bold tracking-tight text-white capitalize truncate">
-                {currentTab === 'dashboard' && 'Vue d\'ensemble financière'}
+              <h2 className="text-sm lg:text-lg font-bold tracking-tight text-white truncate">
+                {currentTab === 'dashboard' && 'Tableau de bord'}
                 {currentTab === 'workflow' && 'Flux de Clôture'}
                 {currentTab === 'invoicing' && 'Factures de Ventes'}
-                {currentTab === 'suppliers' && 'Gestion des Fournisseurs'}
-                {currentTab === 'expenses' && 'Toutes les Dépenses'}
-                {currentTab === 'stock' && 'Gestion des Stocks'}
-                {currentTab === 'manual' && 'Saisie manuelle d\'écritures comptables'}
-                {currentTab === 'ocr' && 'Numérisation & OCR'}
+                {currentTab === 'suppliers' && 'Fournisseurs'}
+                {currentTab === 'expenses' && 'Dépenses'}
+                {currentTab === 'stock' && 'Stocks'}
+                {currentTab === 'manual' && 'Saisie manuelle'}
+                {currentTab === 'ocr' && 'Scan Reçus (IA)'}
                 {currentTab === 'bank' && 'Rapprochement Bancaire'}
-                {currentTab === 'financial' && 'Bilan & Rapport Financier SCE'}
-                {currentTab === 'journal' && 'Journal Comptable — Saisie des écritures'}
-                {currentTab === 'fiscal' && 'Déclarations fiscales (Liasse)'}
-                {currentTab === 'payroll' && 'Gestion de la Paie'}
-                {currentTab === 'audit' && 'Audit Comptable & Conformité'}
-                {currentTab === 'settings' && 'Configuration & Entreprise'}
+                {currentTab === 'financial' && 'Bilan & Résultat'}
+                {currentTab === 'journal' && 'Journal Comptable'}
+                {currentTab === 'fiscal' && 'Déclarations fiscales'}
+                {currentTab === 'payroll' && 'Paie & CNSS'}
+                {currentTab === 'audit' && 'Audit & Conformité'}
+                {currentTab === 'settings' && 'Configuration'}
+                {currentTab === 'ai_tax' && 'Assistant Fiscal IA'}
+                {currentTab === 'smart_tva' && 'TVA Intelligente'}
+                {currentTab === 'smart_irpp' && 'IRPP Intelligent'}
+                {currentTab === 'smart_is' && 'IS Intelligent'}
+                {currentTab === 'bi' && 'Business Intelligence'}
+                {currentTab === 'alerts' && 'Centre d\'Alertes'}
+                {currentTab === 'crm' && 'CRM Comptable'}
+                {currentTab === 'portal' && 'Portail Expert'}
+                {currentTab === 'safe' && 'Coffre-Fort Numérique'}
               </h2>
-              <p className="text-[10px] lg:text-xs text-slate-400 hidden sm:block truncate">
-              {currentTab === 'dashboard' && 'Suivez la santé de votre trésorerie et vos estimations fiscales en temps réel.'}
-              {currentTab === 'invoicing' && 'Créez, gérez et exportez vos factures clients aux normes.'}
-              {currentTab === 'suppliers' && 'Gérez vos fournisseurs, consultez les historiques d\'achats et les matricules fiscaux.'}
-              {currentTab === 'expenses' && 'Consultez, filtrez et gérez l\'ensemble de vos dépenses enregistrées.'}
-              {currentTab === 'stock' && 'Inventaire, entrées/sorties et valorisation des stocks.'}
-              {currentTab === 'manual' && 'Ajoutez des écritures comptables manuelles (OD, Achats, Ventes) directement dans le journal.'}
-              {currentTab === 'ocr' && 'Tesseract.js lit vos factures directement dans le navigateur — zéro API, zéro clé, 100% privé'}
-              {currentTab === 'bank' && 'Associez vos relevés bancaires simulés à vos factures de ventes ou d\'achats.'}
-              {currentTab === 'financial' && 'Consultez le bilan SCE, le compte de résultat et les ratios financiers.'}
-              {currentTab === 'journal' && 'Consultez et filtrez les écritures comptables par journal (Achats, Ventes, Banque, Caisse, OD).'}
-              {currentTab === 'fiscal' && 'TVA, IS et Retenue à la source — échéances et calculs.'}
-              {currentTab === 'payroll' && 'Salaires, CNSS, IRPP et déclarations sociales — conforme LF 2025.'}
-              {currentTab === 'audit' && 'Analyse complète du journal comptable : TVA, IS, RS, paie, ratios, conformité PCG.'}
-              {currentTab === 'workflow' && 'Suivez pas à pas la déclaration de vos charges sociales, impôts IS et validez le mois.'}
-              {currentTab === 'settings' && 'Renseignez les données légales de votre société pour les QR Codes et factures.'}
+              <p className="text-[10px] text-slate-500 hidden sm:block truncate">
+              {currentTab === 'dashboard' && 'Santé financière et indicateurs clés.'}
+              {currentTab === 'invoicing' && 'Factures clients aux normes tunisiennes.'}
+              {currentTab === 'suppliers' && 'Gestion et historique des fournisseurs.'}
+              {currentTab === 'expenses' && 'Toutes vos dépenses enregistrées.'}
+              {currentTab === 'stock' && 'Inventaire et valorisation des stocks.'}
+              {currentTab === 'manual' && 'Écritures comptables manuelles.'}
+              {currentTab === 'ocr' && 'Reconnaissance automatique de factures.'}
+              {currentTab === 'bank' && 'Rapprochement des relevés bancaires.'}
+              {currentTab === 'financial' && 'Bilan SCE, compte de résultat, ratios.'}
+              {currentTab === 'journal' && 'Saisie et filtrage des écritures.'}
+              {currentTab === 'fiscal' && 'TVA, IS, RS — échéances et calculs.'}
+              {currentTab === 'payroll' && 'Salaires, CNSS, IRPP – conforme LF 2025.'}
+              {currentTab === 'audit' && 'Analyse complète du journal comptable.'}
+              {currentTab === 'workflow' && 'Déclarations sociales et validation mensuelle.'}
+              {currentTab === 'settings' && 'Données légales et configuration société.'}
+              {currentTab === 'ai_tax' && 'Assistant fiscal propulsé par IA.'}
+              {currentTab === 'smart_tva' && 'Collecte, déduction et déclarations TVA.'}
+              {currentTab === 'smart_irpp' && 'Simulation Impôt sur le Revenu 2025.'}
+              {currentTab === 'smart_is' && 'Simulation Impôt sur les Sociétés.'}
+              {currentTab === 'bi' && 'KPI, prévisions et analyses avancées.'}
+              {currentTab === 'alerts' && 'Échéances fiscales et sociales.'}
+              {currentTab === 'crm' && 'Clients, fournisseurs et historique.'}
+              {currentTab === 'portal' && 'Supervision multi-dossiers clients.'}
+              {currentTab === 'safe' && 'Archivage sécurisé de documents.'}
             </p>
           </div>
             {/* Search */}
@@ -990,7 +1109,17 @@ function AppContent() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+          <div className="flex items-center gap-1 sm:gap-3 shrink-0">
+            {/* Back to Dashboard (when not on dashboard) */}
+            {currentTab !== 'dashboard' && (
+              <button
+                onClick={() => setCurrentTab('dashboard')}
+                className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 text-[10px] font-bold text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 rounded-lg transition-all"
+              >
+                <LayoutDashboard className="w-3 h-3" />
+                <span>Accueil</span>
+              </button>
+            )}
             {/* Role Badge */}
             {currentUser?.role && (
               <span className={`hidden sm:inline-flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded-full border ${
@@ -1013,25 +1142,18 @@ function AppContent() {
             {currentTab === 'dashboard' && (
               <button 
                 onClick={handleRequestAudit} 
-                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-700 text-brand-400 border border-brand-500/30 rounded-xl transition-all duration-300 shadow-inner-glow"
+                className="btn btn-sm btn-ghost hidden sm:flex"
               >
-                <Sparkles className="w-3.5 h-3.5 shrink-0" />
-                <span className="hidden sm:inline">Audit</span>
+                <Sparkles className="w-3 h-3" />
+                Audit
               </button>
             )}
 
             <button 
-              onClick={() => setCurrentTab('ocr')} 
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-slate-800 hover:bg-slate-700 text-indigo-400 border border-indigo-500/20 rounded-xl transition-all duration-300 shadow-inner-glow"
-            >
-              <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span className="hidden sm:inline">Scan</span>
-            </button>
-            <button 
               onClick={() => setCurrentTab('invoicing')} 
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-[10px] sm:text-xs font-bold bg-gradient-brand hover:opacity-90 text-white rounded-xl transition-all duration-300 shadow-glow"
+              className="btn btn-sm btn-primary"
             >
-              <Plus className="w-3.5 h-3.5 shrink-0" />
+              <Plus className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Facture</span>
             </button>
           </div>
@@ -1040,14 +1162,10 @@ function AppContent() {
         {/* Tab Switcher Body */}
         <div className="flex-1 p-4 sm:p-6 lg:p-8">
           <React.Suspense fallback={
-            <div className="max-w-7xl mx-auto space-y-6 mt-4">
-              {[...Array(3)].map((_, i) => (
-                <div key={i} className="glass-card rounded-2xl border border-slate-800 p-6 animate-pulse">
-                  <div className="h-4 bg-slate-700/50 rounded w-1/3 mb-4" />
-                  <div className="h-3 bg-slate-700/30 rounded w-2/3 mb-2" />
-                  <div className="h-3 bg-slate-700/30 rounded w-1/2" />
-                </div>
-              ))}
+            <div className="max-w-7xl mx-auto space-y-4 mt-4">
+              <div className="card-base p-6"><div className="skeleton skeleton-text w-1/3" /><div className="skeleton skeleton-text w-2/3 mt-3" /></div>
+              <div className="card-base p-6"><div className="skeleton skeleton-chart" /></div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div className="card-base p-6"><div className="skeleton skeleton-text w-1/2" /><div className="skeleton skeleton-text w-full mt-3" /></div><div className="card-base p-6"><div className="skeleton skeleton-text w-1/2" /><div className="skeleton skeleton-text w-full mt-3" /></div><div className="card-base p-6"><div className="skeleton skeleton-text w-1/2" /><div className="skeleton skeleton-text w-full mt-3" /></div></div>
             </div>
           }>
           <div key={currentTab} className="max-w-7xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8 animate-slide-in-up">
@@ -1154,6 +1272,12 @@ function AppContent() {
                 />
               </PermissionGuard>
             )}
+            {currentTab === 'teif' && (
+              <TeifDeclarationView
+                invoices={invoices}
+                companyDetails={companyDetails}
+              />
+            )}
             {currentTab === 'fiscal' && (
               <FiscalDeclarationView
                 companyDetails={companyDetails}
@@ -1185,8 +1309,55 @@ function AppContent() {
               <SettingsView 
                 companyDetails={companyDetails}
                 setCompanyDetails={setCompanyDetails}
-                onSetTTNMode={setTTNMode}
               />
+            )}
+            {currentTab === 'ai_tax' && (
+              <AITaxAssistantView />
+            )}
+            {currentTab === 'smart_tva' && (
+              <SmartTVAView
+                invoices={invoices}
+                expenses={expenses}
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'smart_irpp' && (
+              <SmartIRPPView
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'smart_is' && (
+              <SmartISView
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'bi' && (
+              <BusinessIntelligenceView
+                invoices={invoices}
+                expenses={expenses}
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'alerts' && (
+              <FiscalAlertCenterView />
+            )}
+            {currentTab === 'crm' && (
+              <AccountingCRMView
+                invoices={invoices}
+                expenses={expenses}
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'portal' && (
+              <ExpertAccountantPortalView
+                companies={companies}
+                currentCompanyId={currentCompanyId}
+                onCompanyChange={handleCompanySwitch}
+                formatCurrency={formatCurrency}
+              />
+            )}
+            {currentTab === 'safe' && (
+              <DigitalSafeView />
             )}
           </div>
           </React.Suspense>
@@ -1583,6 +1754,40 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
     saveSimpleEntry({ date: newInvoice.issueDate, numeroPiece: invoiceNum, compte: '411 Clients', libelle: `Vente ${invoiceNum} - ${clientName}`, debit: totalAmount, credit: 0, journal: 'VNT' });
     saveSimpleEntry({ date: newInvoice.issueDate, numeroPiece: invoiceNum, compte: '70XXXX Ventes', libelle: `HT ${invoiceNum}`, debit: 0, credit: subtotal, journal: 'VNT' });
     if (vatAmount > 0.001) saveSimpleEntry({ date: newInvoice.issueDate, numeroPiece: invoiceNum, compte: '43671 TVA collectée', libelle: `TVA ${invoiceNum}`, debit: 0, credit: vatAmount, journal: 'VNT' });
+
+    // Auto-generate TEIF asynchronously
+    setTimeout(() => {
+      try {
+        const teifInvoice = {
+          id: invoiceNum,
+          dateEmission: newInvoice.issueDate,
+          type: '380',
+          timbre: 0,
+          fournisseur: {
+            matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '',
+            nom: companyDetails.companyName || companyDetails.name || '',
+            adresse: companyDetails.address || '',
+            rne: companyDetails.rne || '',
+          },
+          client: {
+            matriculeFiscal: clientVat || '',
+            nom: clientName || 'Client',
+            adresse: '',
+          },
+          lignes: newInvoice.items.map(i => ({
+            designation: i.description || 'Prestation',
+            quantite: i.quantity || 1,
+            prixUnitaireHT: parseFloat(i.unitPrice || 0),
+            tauxTVA: parseFloat(i.vatRate || 19),
+            fodec: 0,
+          })),
+        };
+        const gen = generateTEIFXML(teifInvoice);
+        if (!gen.error) {
+          setTeifStatusMap(prev => ({ ...prev, [newInvoice.id]: 'generated' }));
+        }
+      } catch (e) { console.warn('TEIF auto-generation skipped:', e.message); }
+    }, 100);
 
     // Reset state & hide form
     setClientName('');
@@ -2565,6 +2770,13 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
       const rawText = result?.rawText || '';
       console.log("result.formulaire keys:", Object.keys(result.formulaire || {}), "values:", result.formulaire);
+      // Handle non-facture documents (bordereau, autre)
+      if (result?.alerte === 'document_non_facture') {
+        setOcrRawText(rawText);
+        setPurchaseError(result.message || 'Ce document ne semble pas être une facture. Vérifiez les champs avant d\'enregistrer.');
+        setMode('choice');
+        return;
+      }
       // Appliquer corrigerFacture sur le texte OCR brut
       const resultScan = result?.rawText ? corrigerFacture(result.formulaire || {}, result.rawText) : null;
       if (resultScan) {
@@ -2594,6 +2806,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       }
       setOcrProgress(100);
       setMode('result');
+      if (result?.faible_confiance || result?.alerte === 'faible_confiance') {
+        setPurchaseError('⚠️ Certains champs n\'ont pas été reconnus automatiquement — vérifiez et corrigez les données ci-dessous.');
+      }
       trackUsage(currentUser?.id, 'scan_ocr');
 
     } catch (err) {
@@ -2783,7 +2998,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     const fournisseurInput = formData.supplier || '';
     const lowerInput = fournisseurInput.toLowerCase();
     const suggestions = fournisseurInput.length >= 2
-      ? Object.entries(FOURNISSEURS_TN)
+      ? Object.entries(FOURNISSEURS_LOOKUP)
           .filter(([key]) => key.includes(lowerInput) || lowerInput.includes(key))
           .slice(0, 6)
       : [];
@@ -3894,7 +4109,7 @@ function LockScreen({ onUnlock }) {
           ) : (
             <div className="space-y-2 pt-1">
               <p className="text-[10px] text-red-400/80">Réinitialiser effacera toutes les données.</p>
-              <button type="button" onClick={() => { resetAll(); localStorage.clear(); window.location.reload(); }} className="text-[10px] px-4 py-2 bg-red-500/20 text-red-400 border border-red-500/30 rounded-xl hover:bg-red-500/30 transition-all">
+              <button type="button" onClick={() => { localStorage.clear(); window.location.reload(); }} className="text-[10px] px-4 py-2 bg-red-500/20 text-red-400 border border-red-500/30 rounded-xl hover:bg-red-500/30 transition-all">
                 Confirmer la réinitialisation
               </button>
               <button type="button" onClick={() => setShowReset(false)} className="text-[10px] text-slate-500 ml-2 hover:text-slate-300">
@@ -4136,198 +4351,6 @@ function StockView({ formatCurrency, currentCompanyId }) {
         ))}
       </div>
     </div>
-  );
-}
-
-/* ==========================================================================
-   COMPONENT: SETTINGS VIEW (CONFIGURATION COMPAGNIE)
-   ========================================================================== */
-function SettingsView({ companyDetails, setCompanyDetails, onSetTTNMode }) {
-  const [success, setSuccess] = useState(false);
-  const [stats, setStats] = useState(getLearningStats());
-
-  useEffect(() => { setStats(getLearningStats()); }, []);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSuccess(true);
-    setTimeout(() => setSuccess(false), 2500);
-  };
-
-  return (
-    <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl border border-slate-800 max-w-2xl mx-auto space-y-6">
-      <div className="flex justify-between items-center border-b border-slate-800 pb-4">
-        <div>
-          <h3 className="font-extrabold text-slate-100 flex items-center gap-2">
-            <Building className="w-5 h-5 text-indigo-400" /> Profil de l'entreprise
-          </h3>
-          <p className="text-xs text-slate-400 mt-1">Configurez les mentions légales apparaissant sur vos factures et les QR codes.</p>
-        </div>
-      </div>
-
-      {success && (
-        <div className="p-3 bg-accent-500/10 border border-accent-500/25 rounded-xl text-xs font-bold text-accent-400 flex items-center gap-2 animate-fade-in">
-          <CheckCircle2 className="w-4 h-4" /> Paramètres enregistrés avec succès !
-        </div>
-      )}
-
-      {/* Statistiques du Moteur d'Apprentissage */}
-      <div className="bg-slate-900/50 p-5 rounded-2xl border border-brand-500/30 space-y-3">
-        <div className="flex items-center gap-2 text-brand-400">
-          <Sparkles className="w-4 h-4" />
-          <h4 className="text-xs font-extrabold uppercase tracking-wider">Moteur IA Local — Apprentissage Actif</h4>
-        </div>
-        <div className="grid grid-cols-3 gap-3 text-center">
-          <div className="bg-slate-950/60 rounded-xl p-3">
-            <p className="text-xl font-black text-white">{stats.supplierCount}</p>
-            <p className="text-[9px] text-slate-400 font-bold uppercase">Fournisseurs mémorisés</p>
-          </div>
-          <div className="bg-slate-950/60 rounded-xl p-3">
-            <p className="text-xl font-black text-white">{stats.patternsCount}</p>
-            <p className="text-[9px] text-slate-400 font-bold uppercase">Patterns appris</p>
-          </div>
-          <div className="bg-slate-950/60 rounded-xl p-3">
-            <p className="text-xl font-black text-white">{Object.keys(stats.categories).length}</p>
-            <p className="text-[9px] text-slate-400 font-bold uppercase">Catégories SCE</p>
-          </div>
-        </div>
-        {stats.knownSuppliers.length > 0 && (
-          <div>
-            <p className="text-[10px] text-slate-500 font-bold mb-1.5 uppercase tracking-wider">Fournisseurs Appris</p>
-            <div className="max-h-32 overflow-y-auto space-y-1">
-              {stats.knownSuppliers.map((s, i) => (
-                <div key={i} className="flex items-center justify-between px-3 py-1.5 bg-slate-950/40 rounded-lg">
-                  <div className="min-w-0">
-                    <span className="text-xs font-semibold text-slate-200 truncate block">{s.name}</span>
-                    <span className="text-[9px] text-slate-500">{s.count} entrée{s.count > 1 ? 's' : ''}{s.mf ? ' — MF: ' + s.mf : ''}</span>
-                  </div>
-                  <span className="text-[10px] text-slate-400 shrink-0 ml-2">{s.total.toFixed(0)} DT</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-        <p className="text-[9px] text-slate-500 mt-1"><AlertCircle className="w-3 h-3 inline-block mr-1" />L'IA apprend de chaque facture et dépense que vous saisissez. Plus vous l'utilisez, plus les suggestions sont précises.</p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Raison sociale</label>
-          <input 
-            type="text" 
-            required 
-            value={companyDetails.name}
-            onChange={(e) => setCompanyDetails({...companyDetails, name: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">E-mail légal</label>
-          <input 
-            type="email" 
-            required 
-            value={companyDetails.email}
-            onChange={(e) => setCompanyDetails({...companyDetails, email: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-        <div className="md:col-span-2">
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Adresse physique</label>
-          <input 
-            type="text" 
-            required 
-            value={companyDetails.address}
-            onChange={(e) => setCompanyDetails({...companyDetails, address: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Matricule Fiscal (MF)</label>
-          <input 
-            type="text" 
-            required 
-            value={companyDetails.vatNumber}
-            onChange={(e) => setCompanyDetails({...companyDetails, vatNumber: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Devise de l'exercice</label>
-          <select 
-            value={companyDetails.currency}
-            onChange={(e) => setCompanyDetails({...companyDetails, currency: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          >
-            <option value="TND">Dinar Tunisien (DT)</option>
-            <option value="EUR">Euro (€)</option>
-            <option value="USD">Dollar Américain ($)</option>
-            <option value="MAD">Dirham Marocain (MAD)</option>
-          </select>
-        </div>
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">RIB Bancaire (Compte courant)</label>
-          <input 
-            type="text" 
-            required 
-            value={companyDetails.iban}
-            onChange={(e) => setCompanyDetails({...companyDetails, iban: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-        <div>
-          <label className="block text-[10px] text-slate-500 font-bold mb-1.5 uppercase">Code Swift de la Banque</label>
-          <input 
-            type="text" 
-            required 
-            value={companyDetails.bic}
-            onChange={(e) => setCompanyDetails({...companyDetails, bic: e.target.value})}
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2 text-slate-100 text-xs focus:outline-none focus:border-brand-500"
-          />
-        </div>
-      </div>
-
-      <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
-        <h4 className="text-xs font-bold text-slate-300 mb-3">📨 Configuration TEIF (Facture Électronique)</h4>
-        <div className="space-y-3">
-          <div>
-            <label className="block text-[10px] font-medium text-slate-400 mb-1">RNE (Registre National des Entreprises)</label>
-            <input value={companyDetails?.rne || ''} onChange={e => setCompanyDetails(p => ({...p, rne: e.target.value}))} placeholder="Numéro RNE" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
-          </div>
-          <div>
-            <label className="block text-[10px] font-medium text-slate-400 mb-1">Adresse</label>
-            <input value={companyDetails?.address || ''} onChange={e => setCompanyDetails(p => ({...p, address: e.target.value}))} placeholder="Adresse complète" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50"/>
-          </div>
-          <div>
-            <label className="block text-[10px] font-medium text-slate-400 mb-1">Code Catégorie (TTN)</label>
-            <select value={companyDetails?.ttnCategoryCode || '43211000'} onChange={e => setCompanyDetails(p => ({...p, ttnCategoryCode: e.target.value}))} className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 focus:outline-none focus:border-indigo-500/50">
-              <option value="43211000">43211000 - Services informatiques</option>
-              <option value="47111000">47111000 - Commerce de gros</option>
-              <option value="47191000">47191000 - Commerce de détail</option>
-              <option value="69101000">69101000 - Services comptables</option>
-              <option value="70221000">70221000 - Conseil en gestion</option>
-              <option value="62011000">62011000 - Développement logiciel</option>
-              <option value="86101000">86101000 - Services de santé</option>
-            </select>
-          </div>
-          <div className="flex items-center gap-3">
-            <label className="text-[10px] font-medium text-slate-400">Mode TTN:</label>
-            <button onClick={() => onSetTTNMode && onSetTTNMode(getTTNMode() === 'dev' ? 'prod' : 'dev')} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${getTTNMode() === 'dev' ? 'bg-amber-600/80 text-amber-200' : 'bg-emerald-600/80 text-emerald-200'}`}>
-              {getTTNMode() === 'dev' ? '🧪 Développement (mock)' : '🚀 Production (SFTP)'}
-            </button>
-          </div>
-          <p className="text-[10px] text-slate-500">En mode <strong>Développement</strong>, les TEIF sont simulées localement. En mode <strong>Production</strong>, elles sont transmises via SFTP.</p>
-        </div>
-      </div>
-
-      <div className="pt-4">
-        <button 
-          type="submit" 
-          className="w-full py-2.5 bg-gradient-brand text-white font-bold rounded-xl text-xs shadow-glow hover:opacity-90 transition-all"
-        >
-          Sauvegarder les modifications
-        </button>
-      </div>
-    </form>
   );
 }
 
