@@ -125,6 +125,7 @@ import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
 import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
+import { signUp, getProfile, createCompany as createCompanySupabase } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 function normaliserMontant(str) {
@@ -525,13 +526,20 @@ function AppContent() {
   };
 
   const handleRegister = async (data) => {
-    const user = await createUser({
-      nom: data.nom, email: data.email, password: data.password,
-      role: 'admin', plan: data.plan, societeId: null
-    });
-    if (!user) throw new Error('Cet email est déjà utilisé');
-    const soc = createSociete({ nom: data.societeNom, matriculeFiscal: data.matriculeFiscal, ownerId: user.id, plan: data.plan });
-    updateUser(user.id, { societeId: soc.id });
+    let user;
+    if (isSupabaseEnabled()) {
+      const { data: authData, error } = await signUp(data.email, data.password, { nom: data.nom, prenom: data.prenom || '' });
+      if (error) throw new Error(error.message || 'Erreur inscription Supabase');
+      if (!authData?.user) throw new Error('Erreur création compte');
+      const profile = await getProfile(authData.user.id);
+      if (!profile) throw new Error('Erreur création profil');
+      user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
+    } else {
+      user = await createUser({ nom: data.nom, email: data.email, password: data.password, role: 'admin', plan: data.plan, societeId: null });
+      if (!user) throw new Error('Cet email est déjà utilisé');
+    }
+    const soc = await createCompanySupabase({ name: data.societeNom, matricule_fiscal: data.matriculeFiscal, owner_id: user.id, plan: data.plan });
+    if (!soc) throw new Error('Erreur création société');
     const now = new Date();
     const demoInvoices = [
       { id: 'inv_1', numero: 'F-2025-001', client: 'Client SARL ABC', totalAmount: 4500, vatAmount: 855, issueDate: new Date(now.getFullYear(), now.getMonth() - 1, 15).toISOString(), status: 'PAID', category: 'services' },
@@ -550,17 +558,17 @@ function AppContent() {
       { id: 'txn_2', label: 'Paiement STEG', amount: -890, date: new Date(now.getFullYear(), now.getMonth() - 1, 15).toISOString(), type: 'expense' },
       { id: 'txn_3', label: 'Virement client Groupe', amount: 7200, date: new Date(now.getFullYear(), now.getMonth(), 12).toISOString(), type: 'income' },
     ];
-    setCompanies(prev => ({ ...prev, [soc.id]: { invoices: demoInvoices, expenses: demoExpenses, transactions: demoTransactions, companyDetails: { name: soc.nom } } }));
+    const socId = soc.id;
+    setCompanies(prev => ({ ...prev, [socId]: { invoices: demoInvoices, expenses: demoExpenses, transactions: demoTransactions, companyDetails: { name: soc.name } } }));
     setInvoices(demoInvoices);
     setExpenses(demoExpenses);
     setTransactions(demoTransactions);
-    setCompanyDetails({ name: soc.nom });
-    // Skip onboarding for registered users
+    setCompanyDetails({ name: soc.name });
     setShowOnboarding(false);
     await login(data.email, data.password, true);
     localStorage.removeItem('smart_journal');
-    setCurrentCompanyId(soc.id);
-    localStorage.setItem('smart_comptable_current_id', soc.id);
+    setCurrentCompanyId(socId);
+    localStorage.setItem('smart_comptable_current_id', socId);
   };
 
   const handleJoinWithInvite = async (data) => {

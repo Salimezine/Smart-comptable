@@ -4,6 +4,8 @@ import { PERMISSIONS, can as canDo } from '../utils/auth/permissionEngine';
 import { getPlan, checkLimit } from '../utils/auth/plansManager';
 import { getUsageThisMonth } from '../utils/auth/usageTracker';
 import { logAction, AUDIT_ACTIONS } from '../utils/security/auditLog';
+import { supabase, isSupabaseEnabled } from '../utils/supabaseClient';
+import { getProfile, getUserCompanies } from '../utils/supabaseService';
 
 const SESSION_KEY = 'sc_auth_session';
 
@@ -22,10 +24,7 @@ function getStoredSession() {
 }
 
 function saveSession(userId, remember) {
-  const session = {
-    userId,
-    expires: Date.now() + (remember ? 7 : 1) * 24 * 60 * 60 * 1000
-  };
+  const session = { userId, expires: Date.now() + (remember ? 7 : 1) * 24 * 60 * 60 * 1000 };
   const storage = remember ? localStorage : sessionStorage;
   storage.setItem(SESSION_KEY, JSON.stringify(session));
 }
@@ -41,20 +40,58 @@ export function useAuth() {
   const [initializing, setInitializing] = useState(true);
 
   useEffect(() => {
-    const session = getStoredSession();
-    if (session) {
-      const user = getUserById(session.userId);
-      if (user && user.actif) {
-        setCurrentUser(user);
-        setCurrentSociete(getUserSociete(user.id));
-      } else {
-        clearSession();
+    let cancelled = false;
+    (async () => {
+      // Try Supabase session first
+      if (isSupabaseEnabled()) {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session?.user) {
+          const profile = await getProfile(session.user.id);
+          if (profile) {
+            const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
+            const companies = await getUserCompanies(profile.id);
+            if (!cancelled) {
+              setCurrentUser(user);
+              if (companies.length > 0) setCurrentSociete(companies[0]);
+              setInitializing(false);
+              return;
+            }
+          }
+        }
       }
-    }
-    setInitializing(false);
+      // Fallback to local session
+      const session = getStoredSession();
+      if (session) {
+        const user = getUserById(session.userId);
+        if (user && user.actif) {
+          setCurrentUser(user);
+          setCurrentSociete(getUserSociete(user.id));
+        } else {
+          clearSession();
+        }
+      }
+      if (!cancelled) setInitializing(false);
+    })();
+    return () => { cancelled = true; };
   }, []);
 
   const login = useCallback(async (email, password, remember = false) => {
+    // Try Supabase first
+    if (isSupabaseEnabled()) {
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (!error && data?.user) {
+        const profile = await getProfile(data.user.id);
+        if (profile) {
+          const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
+          const companies = await getUserCompanies(profile.id);
+          setCurrentUser(user);
+          if (companies.length > 0) setCurrentSociete(companies[0]);
+          logAction(AUDIT_ACTIONS.LOGIN, { userId: user.id, email, method: 'supabase' });
+          return user;
+        }
+      }
+    }
+    // Fallback to local auth
     const user = await authUser(email, password);
     if (!user) throw new Error('Email ou mot de passe incorrect');
     saveSession(user.id, remember);
@@ -73,18 +110,16 @@ export function useAuth() {
     return user;
   }, []);
 
-  const logout = useCallback(() => {
-    if (currentUser) {
-      logAction(AUDIT_ACTIONS.LOGOUT, { userId: currentUser.id });
-    }
+  const logout = useCallback(async () => {
+    if (currentUser) logAction(AUDIT_ACTIONS.LOGOUT, { userId: currentUser.id });
+    // Try Supabase signout
+    if (isSupabaseEnabled()) await supabase.auth.signOut();
     clearSession();
     setCurrentUser(null);
     setCurrentSociete(null);
   }, [currentUser]);
 
-  const can = useCallback((permission) => {
-    return canDo(currentUser, permission);
-  }, [currentUser]);
+  const can = useCallback((permission) => canDo(currentUser, permission), [currentUser]);
 
   const refreshUser = useCallback(() => {
     if (!currentUser) return;
@@ -95,11 +130,9 @@ export function useAuth() {
     }
   }, [currentUser]);
 
-  const checkLimit = useCallback((limitKey) => {
+  const checkLimitFn = useCallback((limitKey) => {
     if (!currentUser) return { allowed: false, reason: 'Non connecté' };
-    const planId = currentUser.plan || 'free';
-    const usage = getUsageThisMonth(currentUser.id, limitKey);
-    return checkLimit(planId, limitKey, usage);
+    return checkLimit(currentUser.plan || 'free', limitKey, getUsageThisMonth(currentUser.id, limitKey));
   }, [currentUser]);
 
   const isAdmin = currentUser?.role === 'admin';
@@ -112,7 +145,7 @@ export function useAuth() {
     pinLogin,
     logout,
     can,
-    checkLimit,
+    checkLimit: checkLimitFn,
     isAdmin,
     refreshUser,
     getPlan: () => currentUser ? getPlan(currentUser.plan) : null,
