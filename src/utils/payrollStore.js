@@ -2,6 +2,7 @@
  * payrollStore.js — Persistance paie per-company
  */
 import { logAction, AUDIT_ACTIONS } from './security/auditLog';
+import { supabase, isSupabaseEnabled } from './supabaseClient';
 
 function getCompanyId() {
   try {
@@ -15,6 +16,15 @@ function key(type) {
   return `smart_${type}_${getCompanyId()}`;
 }
 
+function syncEmployeesToSupabase(companyId) {
+  if (!isSupabaseEnabled() || !navigator.onLine || !companyId) return;
+  const employes = getEmployes();
+  supabase.from('employees').upsert(
+    employes.map(e => ({ ...e, company_id: companyId })),
+    { onConflict: 'id' }
+  ).catch(() => {});
+}
+
 export function saveEmploye(employe) {
   try {
     const employes = getEmployes();
@@ -25,6 +35,7 @@ export function saveEmploye(employe) {
     if (idx >= 0) employes[idx] = employe;
     else employes.push(employe);
     localStorage.setItem(key('employes'), JSON.stringify(employes));
+    syncEmployeesToSupabase(localStorage.getItem('smart_comptable_current_id'));
     return employe;
   } catch { return null; }
 }
@@ -40,6 +51,7 @@ export function deleteEmploye(id) {
   try {
     const employes = getEmployes().filter(e => e.id !== id);
     localStorage.setItem(key('employes'), JSON.stringify(employes));
+    syncEmployeesToSupabase(localStorage.getItem('smart_comptable_current_id'));
     return true;
   } catch { return false; }
 }
@@ -52,11 +64,15 @@ export function saveBulletin(bulletin) {
     else bulletins.push(bulletin);
     const allKey = key('bulletins');
     const all = getAllBulletins();
-    // Remove old entries for this month/employee then re-add
     const filtered = all.filter(b => !(b.mois === bulletin.mois && b.annee === bulletin.annee && b.employeId === bulletin.employeId));
     filtered.push(bulletin);
     localStorage.setItem(allKey, JSON.stringify(filtered));
     logAction(AUDIT_ACTIONS.PAIE_SAVE, { employeId: bulletin.employeId, nom: bulletin.nom, mois: bulletin.mois, annee: bulletin.annee, brut: bulletin.brut });
+    // Sync to Supabase
+    if (isSupabaseEnabled() && navigator.onLine) {
+      const companyId = localStorage.getItem('smart_comptable_current_id');
+      if (companyId) supabase.from('payroll_slips').upsert({ ...bulletin, company_id: companyId }, { onConflict: 'id' }).catch(() => {});
+    }
     return bulletin;
   } catch { return null; }
 }

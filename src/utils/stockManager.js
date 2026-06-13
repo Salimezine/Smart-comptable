@@ -1,9 +1,10 @@
 /**
  * stockManager.js — Mise à jour automatique du stock
  *
- * Pure JS navigateur — localStorage
+ * Pure JS navigateur — localStorage + Supabase sync
  * Compatible avec les entrées existantes de StockView
  */
+import { supabase, isSupabaseEnabled } from './supabaseClient';
 
 function getStockKey() {
   try {
@@ -55,9 +56,28 @@ function findArticle(designation) {
   }
 }
 
-function saveStock(stock) {
+async function syncStockToSupabase(companyId, stock, mouvements) {
+  if (!isSupabaseEnabled() || !navigator.onLine || !companyId) return;
   try {
+    const { error: sErr } = await supabase.from('stock').upsert(
+      stock.map(a => ({ ...a, company_id: companyId })),
+      { onConflict: 'id' }
+    );
+    if (sErr) console.warn('stock sync err', sErr);
+    const { error: mErr } = await supabase.from('stock_mouvements').upsert(
+      mouvements.map(m => ({ ...m, company_id: companyId })),
+      { onConflict: 'id' }
+    );
+    if (mErr) console.warn('stock mouvements sync err', mErr);
+  } catch (e) { /* offline */ }
+}
+
+function saveStock(stock, mouvements) {
+  try {
+    const companyId = localStorage.getItem('smart_comptable_current_id');
     localStorage.setItem(getStockKey(), JSON.stringify(stock));
+    if (mouvements) localStorage.setItem(getMovementsKey(), JSON.stringify(mouvements));
+    syncStockToSupabase(companyId, stock, mouvements || []);
   } catch {
     /* silencieux */
   }
@@ -129,12 +149,7 @@ export function updateStockFromInvoice(invoice) {
       });
     }
 
-    saveStock(stock);
-    try {
-      localStorage.setItem(getMovementsKey(), JSON.stringify(mouvements));
-    } catch {
-      /* silencieux */
-    }
+    saveStock(stock, mouvements);
 
     window.dispatchEvent(new CustomEvent('stock:updated'));
   } catch {

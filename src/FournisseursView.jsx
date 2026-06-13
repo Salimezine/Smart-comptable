@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Plus, Building2, Phone, MapPin, FileText, TrendingDown, X, Users, Sparkles } from 'lucide-react';
 import { useToast } from './components/Toast';
+import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 
 function SupplierAvatar({ name, size = 'md' }) {
   const initials = (name || '?').slice(0, 2).toUpperCase();
@@ -35,6 +36,13 @@ export default function FournisseursView({ expenses, formatCurrency, currentComp
   const saveManual = (list) => {
     setManualSuppliers(list);
     localStorage.setItem(suppliersKey, JSON.stringify(list));
+    // Sync to Supabase
+    if (isSupabaseEnabled() && navigator.onLine && currentCompanyId) {
+      supabase.from('suppliers').upsert(
+        list.map(s => ({ ...s, company_id: currentCompanyId })),
+        { onConflict: 'id' }
+      ).catch(() => {});
+    }
   };
 
   // Build supplier map
