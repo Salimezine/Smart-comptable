@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
-    <script>(()=>{if('serviceWorker'in navigator){navigator.serviceWorker.register('/cleanup-sw.js').then(()=>{setTimeout(()=>{navigator.serviceWorker.getRegistrations().then(r=>r.forEach(r=>r.unregister()))},1000)});caches.keys().then(k=>Promise.all(k.map(k=>caches.delete(k)))).catch(()=>{});}})()</script>
+    <script>(()=>{if('serviceWorker'in navigator){const b=document.querySelector('base')?.href||self.location.pathname.replace(/\/[^/]*$/,'/');navigator.serviceWorker.register(b+'sw.js').then(()=>{setTimeout(()=>{navigator.serviceWorker.getRegistrations().then(r=>r.forEach(r=>r.unregister()))},1000)});caches.keys().then(k=>Promise.all(k.map(k=>caches.delete(k)))).catch(()=>{});}})()</script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
