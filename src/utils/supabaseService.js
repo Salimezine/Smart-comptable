@@ -122,15 +122,16 @@ export async function fetchData(table, companyId, orderBy = 'created_at', ascend
 }
 
 export async function upsertData(table, companyId, records) {
+  const withIds = records.map(r => ensureUUID({ ...r, company_id: companyId }));
   if (!isSupabaseEnabled() || !navigator.onLine) {
     const existing = lsRead(table, companyId) || [];
-    const merged = mergeRecords(existing, records);
+    const merged = mergeRecords(existing, withIds);
     lsWrite(table, companyId, merged);
     return merged;
   }
   const { data, error } = await supabase
     .from(table)
-    .upsert(records.map(r => ({ ...r, company_id: companyId })))
+    .upsert(withIds)
     .select();
   if (error) throw error;
   const existing = lsRead(table, companyId) || [];
@@ -140,14 +141,12 @@ export async function upsertData(table, companyId, records) {
 }
 
 export async function insertData(table, companyId, record) {
-  const enriched = { ...record, company_id: companyId };
+  const enriched = ensureUUID({ ...record, company_id: companyId });
   if (!isSupabaseEnabled() || !navigator.onLine) {
     const existing = lsRead(table, companyId) || [];
-    const id = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}_${Math.random().toString(36).slice(2)}`;
-    const entry = { ...enriched, id };
-    existing.push(entry);
+    existing.push(enriched);
     lsWrite(table, companyId, existing);
-    return entry;
+    return enriched;
   }
   const { data, error } = await supabase.from(table).insert(enriched).select().single();
   if (error) throw error;
@@ -191,6 +190,17 @@ export async function deleteData(table, companyId, id) {
 // ==============================
 // HELPERS
 // ==============================
+function isUUID(str) {
+  return typeof str === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(str);
+}
+
+function ensureUUID(record) {
+  if (!record.id || !isUUID(record.id)) {
+    return { ...record, id: crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}_${Math.random().toString(36).slice(2)}` };
+  }
+  return record;
+}
+
 function mergeRecords(existing, incoming) {
   const map = new Map();
   for (const r of existing) map.set(r.id, r);
