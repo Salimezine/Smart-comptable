@@ -524,13 +524,25 @@ function AppContent() {
   const handleLoginSubmit = async (email, password, remember) => {
     const user = await login(email, password, remember);
     let companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
-    // If logged in via Supabase but no company exists, auto-create one
+    if (companyId && isUUID(companyId)) {
+      // Sync Supabase company into local companies state if missing
+      setCompanies(prev => {
+        if (prev[companyId]) return prev;
+        const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: {} } };
+        localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+        return updated;
+      });
+    }
     if (!companyId && isSupabaseEnabled() && navigator.onLine && user?.id) {
       try {
         const soc = await createCompanySupabase({ name: 'Ma Société', owner_id: user.id, plan: 'free' });
         if (soc) {
           companyId = soc.id;
-          localStorage.setItem('smart_comptable_current_id', companyId);
+          setCompanies(prev => {
+            const updated = { ...prev, [soc.id]: { ...soc, invoices: [], expenses: [], transactions: [], companyDetails: {} } };
+            localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+            return updated;
+          });
         }
       } catch (e) { /* will be handled below */ }
     }
