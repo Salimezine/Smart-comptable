@@ -838,6 +838,28 @@ function AppContent() {
     return () => supabase.removeChannel(channel);
   }, [currentCompanyId]);
 
+  // Realtime subscriptions for invoices, expenses, transactions (cross-device sync)
+  useEffect(() => {
+    if (!isSupabaseEnabled() || !currentCompanyId) return;
+    const reload = async () => {
+      const [inv, exp, tx] = await Promise.all([
+        fetchSupabaseData('invoices', currentCompanyId),
+        fetchSupabaseData('expenses', currentCompanyId),
+        fetchSupabaseData('transactions', currentCompanyId),
+      ]);
+      if (inv.length) setInvoices(inv);
+      if (exp.length) setExpenses(exp);
+      if (tx.length) setTransactions(tx);
+    };
+    const channel = supabase
+      .channel('data-changes')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'invoices', filter: `company_id=eq.${currentCompanyId}` }, reload)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'expenses', filter: `company_id=eq.${currentCompanyId}` }, reload)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'transactions', filter: `company_id=eq.${currentCompanyId}` }, reload)
+      .subscribe();
+    return () => supabase.removeChannel(channel);
+  }, [currentCompanyId]);
+
   const handleSearch = useCallback((query) => {
     setSearchQuery(query);
     if (query.length < 2) { setSearchResults({ invoices: [], expenses: [] }); return; }
