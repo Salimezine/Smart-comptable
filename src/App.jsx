@@ -730,11 +730,7 @@ function AppContent() {
         }
       }).catch(() => {});
 
-      const unsub = onAuthChange((event) => {
-        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
-          window.location.reload();
-        }
-      });
+      const unsub = onAuthChange(() => {});
       return () => { unsub(); };
     }
   }, []);
