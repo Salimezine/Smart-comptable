@@ -773,7 +773,7 @@ function AppContent() {
           if (invoices.length > 0) await upsertSupabaseData('invoices', currentCompanyId, invoices);
           if (transactions.length > 0) await upsertSupabaseData('transactions', currentCompanyId, transactions);
           if (expenses.length > 0) await upsertSupabaseData('expenses', currentCompanyId, expenses);
-        } catch (e) { /* offline — will retry later */ }
+        } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
 
       console.log('[Save] saving locally — invoices:', invoices?.length, 'expenses:', expenses?.length, 'transactions:', transactions?.length);
