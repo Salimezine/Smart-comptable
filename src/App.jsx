@@ -125,7 +125,7 @@ import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
 import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
-import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
+import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData, jsToDb } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -561,7 +561,7 @@ function AppContent() {
         const newKey = (table) => table + '_' + companyId;
         for (const { key, table, data } of oldKeys) {
           if (data.length === 0) continue;
-          const enriched = data.map(r => ({ ...r, company_id: companyId }));
+          const enriched = data.map(r => jsToDb({ ...r, company_id: companyId }, table));
           await supabase.from(table).upsert(enriched, { onConflict: 'id' });
           const existing = JSON.parse(localStorage.getItem(newKey(table)) || '[]');
           localStorage.setItem(newKey(table), JSON.stringify([...existing, ...enriched]));

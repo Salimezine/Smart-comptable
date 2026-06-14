@@ -115,64 +115,70 @@ export async function fetchData(table, companyId, orderBy = 'created_at', ascend
     .eq('company_id', companyId)
     .order(orderBy, { ascending });
   if (data) {
-    lsWrite(table, companyId, data);
-    return data;
+    const mapped = data.map(r => dbToJs(r, table));
+    lsWrite(table, companyId, mapped);
+    return mapped;
   }
   return lsRead(table, companyId) || [];
 }
 
 export async function upsertData(table, companyId, records) {
+  const mapped = records.map(r => jsToDb({ ...r, company_id: companyId }, table));
   if (!isSupabaseEnabled() || !navigator.onLine) {
     const existing = lsRead(table, companyId) || [];
-    const merged = mergeRecords(existing, records);
+    const merged = mergeRecords(existing, mapped);
     lsWrite(table, companyId, merged);
     return merged;
   }
   const { data, error } = await supabase
     .from(table)
-    .upsert(records.map(r => ({ ...r, company_id: companyId })))
+    .upsert(mapped)
     .select();
   if (error) throw error;
   const existing = lsRead(table, companyId) || [];
-  const merged = mergeRecords(existing, data || []);
+  const merged = mergeRecords(existing, data ? data.map(r => dbToJs(r, table)) : []);
   lsWrite(table, companyId, merged);
   return merged;
 }
 
 export async function insertData(table, companyId, record) {
   const enriched = { ...record, company_id: companyId };
+  const dbRecord = jsToDb(enriched, table);
   if (!isSupabaseEnabled() || !navigator.onLine) {
     const existing = lsRead(table, companyId) || [];
     const id = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}_${Math.random().toString(36).slice(2)}`;
-    const entry = { ...enriched, id };
+    const entry = { ...dbRecord, id };
     existing.push(entry);
     lsWrite(table, companyId, existing);
     return entry;
   }
-  const { data, error } = await supabase.from(table).insert(enriched).select().single();
+  const { data, error } = await supabase.from(table).insert(dbRecord).select().single();
   if (error) throw error;
+  const result = dbToJs(data, table);
   const existing = lsRead(table, companyId) || [];
-  existing.push(data);
+  existing.push(result);
   lsWrite(table, companyId, existing);
-  return data;
+  return result;
 }
 
 export async function updateData(table, companyId, id, updates) {
+  const dbUpdates = jsToDb(updates, table);
   if (!isSupabaseEnabled() || !navigator.onLine) {
     const existing = lsRead(table, companyId) || [];
     const idx = existing.findIndex(r => r.id === id);
-    if (idx >= 0) existing[idx] = { ...existing[idx], ...updates };
+    if (idx >= 0) existing[idx] = { ...existing[idx], ...dbUpdates };
     lsWrite(table, companyId, existing);
     return existing[idx] || null;
   }
-  const { data, error } = await supabase.from(table).update(updates).eq('id', id).select().single();
+  const { data, error } = await supabase.from(table).update(dbUpdates).eq('id', id).select().single();
   if (error) throw error;
+  const result = dbToJs(data, table);
   const existing = lsRead(table, companyId) || [];
   const idx = existing.findIndex(r => r.id === id);
-  if (idx >= 0) existing[idx] = data;
-  else existing.push(data);
+  if (idx >= 0) existing[idx] = result;
+  else existing.push(result);
   lsWrite(table, companyId, existing);
-  return data;
+  return result;
 }
 
 export async function deleteData(table, companyId, id) {
@@ -186,6 +192,74 @@ export async function deleteData(table, companyId, id) {
   const existing = lsRead(table, companyId) || [];
   lsWrite(table, companyId, existing.filter(r => r.id !== id));
   return true;
+}
+
+// ==============================
+// FIELD MAPPING (camelCase JS ↔ snake_case DB)
+// ==============================
+const FIELD_MAP = {
+  journal_entries: {
+    numeroPiece: 'numero_piece',
+    ttnId: null, // remove — doesn't exist in schema
+  },
+  expenses: {
+    matriculeFiscal: 'matricule_fiscal',
+    totalAmount: 'total_amount',
+    vatAmount: 'vat_rate',
+    subtotal: null,
+    fodec: null,
+    stampDuty: null,
+    rsAmount: null,
+    invoiceNumber: null,
+    status: null,
+  },
+  invoices: {
+    invoiceNumber: 'invoice_number',
+    clientName: 'client_name',
+    clientEmail: 'client_email',
+    clientVat: 'client_vat',
+    clientAddress: 'client_address',
+    issueDate: 'issue_date',
+    dueDate: 'due_date',
+    vatAmount: 'vat_amount',
+    totalAmount: 'total_amount',
+  },
+  transactions: {},
+  employees: {},
+  payroll_slips: {},
+};
+
+const REVERSE_MAP = {};
+for (const [table, map] of Object.entries(FIELD_MAP)) {
+  REVERSE_MAP[table] = {};
+  for (const [js, db] of Object.entries(map)) {
+    if (db) REVERSE_MAP[table][db] = js;
+  }
+}
+
+export function jsToDb(record, table) {
+  if (!record || typeof record !== 'object') return record;
+  const map = FIELD_MAP[table];
+  if (!map) return record;
+  const out = {};
+  for (const [key, val] of Object.entries(record)) {
+    if (map[key] === null) continue; // drop unknown keys
+    if (map[key]) { out[map[key]] = val; }
+    else { out[key] = val; }
+  }
+  return out;
+}
+
+function dbToJs(record, table) {
+  if (!record || typeof record !== 'object') return record;
+  const map = REVERSE_MAP[table];
+  if (!map) return record;
+  const out = {};
+  for (const [key, val] of Object.entries(record)) {
+    if (map[key]) { out[map[key]] = val; }
+    else { out[key] = val; }
+  }
+  return out;
 }
 
 // ==============================
@@ -223,7 +297,7 @@ export async function migrateLocalToSupabase(companyId) {
   for (const table of tables) {
     const local = lsRead(table, companyId);
     if (!local || local.length === 0) continue;
-    const enriched = local.map(r => ({ ...r, company_id: companyId }));
+    const enriched = local.map(r => jsToDb({ ...r, company_id: companyId }, table));
     const { error } = await supabase.from(table).upsert(enriched, { onConflict: 'id' });
     results.push({ table, count: enriched.length, error: error?.message || null });
   }

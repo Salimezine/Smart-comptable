@@ -1,4 +1,5 @@
 import { supabase, isSupabaseEnabled } from './supabaseClient';
+import { jsToDb } from './supabaseService';
 
 const OFFLINE_QUEUE_KEY = 'smart_offline_queue';
 
@@ -26,13 +27,13 @@ export async function syncToCloud(table, data, operation = 'insert') {
   try {
     let result;
     if (operation === 'insert') {
-      result = await supabase.from(table).insert(data);
+      result = await supabase.from(table).insert(jsToDb(data, table));
     } else if (operation === 'update') {
-      result = await supabase.from(table).update(data.payload).eq('id', data.id);
+      result = await supabase.from(table).update(jsToDb(data.payload, table)).eq('id', data.id);
     } else if (operation === 'delete') {
       result = await supabase.from(table).delete().eq('id', data.id);
     } else if (operation === 'upsert') {
-      result = await supabase.from(table).upsert(data);
+      result = await supabase.from(table).upsert(jsToDb(data, table));
     }
     if (result.error) throw result.error;
     return { success: true };
