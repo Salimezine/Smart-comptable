@@ -253,7 +253,6 @@ function parseTexteFacture(text) {
 }
 
 function AuditReportRenderer({ report }) {
-  console.log('REPORT TYPE:', typeof report, report);
   if (!report) return null;
   if (typeof report === 'string') return <p className="text-red-400">{report}</p>;
 
@@ -2951,7 +2950,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       reader.readAsDataURL(imageData instanceof File ? imageData : new File([imageData], 'scan.png', { type: 'image/png' }));
 
       const rawText = result?.rawText || '';
-      console.log("result.formulaire keys:", Object.keys(result.formulaire || {}), "values:", result.formulaire);
       // Handle non-facture documents (bordereau, autre)
       if (result?.alerte === 'document_non_facture') {
         setOcrRawText(rawText);
@@ -3126,7 +3124,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
-      console.log("parsed.formulaire keys:", Object.keys(parsed.formulaire || {}), "values:", parsed.formulaire);
       // Auto-set typeJustificatif from OCR detection
       const detectedType = parsed.formulaire?.type === 'vente' ? 'vente' : (parsed.formulaire?.type === 'achat' ? 'achat' : null);
       if (detectedType) setTypeJustificatif(detectedType);

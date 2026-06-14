@@ -132,8 +132,6 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   const displayJournal = journal.length > 0 ? journal : fallbackEntries;
 
-  console.log('ENTRY SAMPLE:', displayJournal[0]);
-
   const filtered = displayJournal.filter(e => {
     if (filter !== 'all' && e.journal !== filter) return false;
     if (searchText) {
