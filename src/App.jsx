@@ -523,7 +523,17 @@ function AppContent() {
 
   const handleLoginSubmit = async (email, password, remember) => {
     const user = await login(email, password, remember);
-    const companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
+    let companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
+    // If logged in via Supabase but no company exists, auto-create one
+    if (!companyId && isSupabaseEnabled() && navigator.onLine && user?.id) {
+      try {
+        const soc = await createCompanySupabase({ name: 'Ma Société', owner_id: user.id, plan: 'free' });
+        if (soc) {
+          companyId = soc.id;
+          localStorage.setItem('smart_comptable_current_id', companyId);
+        }
+      } catch (e) { /* will be handled below */ }
+    }
     setCurrentCompanyId(companyId);
     if (companyId) localStorage.setItem('smart_comptable_current_id', companyId);
   };
