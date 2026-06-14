@@ -6,6 +6,21 @@
 -- 0. Extensions
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
+-- Nettoyage complet (sécurisé — IF EXISTS)
+DROP TABLE IF EXISTS public.transactions CASCADE;
+DROP TABLE IF EXISTS public.expenses CASCADE;
+DROP TABLE IF EXISTS public.payroll_slips CASCADE;
+DROP TABLE IF EXISTS public.invoices CASCADE;
+DROP TABLE IF EXISTS public.employees CASCADE;
+DROP TABLE IF EXISTS public.journal_entries CASCADE;
+DROP TABLE IF EXISTS public.company_members CASCADE;
+DROP TABLE IF EXISTS public.companies CASCADE;
+DROP TABLE IF EXISTS public.profiles CASCADE;
+DROP FUNCTION IF EXISTS public.user_is_member(UUID);
+DROP FUNCTION IF EXISTS public.user_is_member(TEXT);
+DROP FUNCTION IF EXISTS public.handle_new_user();
+DROP FUNCTION IF EXISTS public.update_updated_at();
+
 -- =============================================
 -- PROFILES (lié à auth.users de Supabase)
 -- =============================================
@@ -264,7 +279,8 @@ CREATE POLICY "company_members_delete_admin" ON public.company_members
   );
 
 -- Données métier: filtrées par company_id, l'utilisateur doit être membre
-CREATE OR REPLACE FUNCTION public.user_is_member(company_id UUID)
+DROP FUNCTION IF EXISTS public.user_is_member(UUID);
+CREATE FUNCTION public.user_is_member(company_id UUID)
 RETURNS BOOLEAN LANGUAGE sql SECURITY DEFINER AS $$
   SELECT EXISTS (SELECT 1 FROM public.company_members WHERE company_id = $1 AND user_id = auth.uid());
 $$;
@@ -356,3 +372,13 @@ CREATE TRIGGER trg_employees_updated_at BEFORE UPDATE ON public.employees
 
 CREATE TRIGGER trg_invoices_updated_at BEFORE UPDATE ON public.invoices
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- =============================================
+-- REALTIME (sync en direct)
+-- =============================================
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.journal_entries;
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.employees;
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.invoices;
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.payroll_slips;
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.expenses;
+ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.transactions;
