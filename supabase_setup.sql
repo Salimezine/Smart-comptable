@@ -251,15 +251,11 @@ CREATE POLICY "companies_owner_delete" ON public.companies
 -- Company members: un membre voit les autres membres
 DROP POLICY IF EXISTS "company_members_select" ON public.company_members;
 CREATE POLICY "company_members_select" ON public.company_members
-  FOR SELECT USING (
-    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid())
-  );
+  FOR SELECT USING (public.user_is_member(company_id));
 
 DROP POLICY IF EXISTS "company_members_admin" ON public.company_members;
 CREATE POLICY "company_members_admin" ON public.company_members
-  FOR SELECT USING (
-    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid())
-  );
+  FOR SELECT USING (public.user_is_member(company_id));
 
 DROP POLICY IF EXISTS "company_members_insert_owner" ON public.company_members;
 CREATE POLICY "company_members_insert_owner" ON public.company_members
@@ -268,21 +264,24 @@ CREATE POLICY "company_members_insert_owner" ON public.company_members
     AND EXISTS (SELECT 1 FROM public.companies WHERE id = company_id AND owner_id = auth.uid())
   );
 
-DROP POLICY IF EXISTS "company_members_update_delete_admin" ON public.company_members;
-CREATE POLICY "company_members_update_delete_admin" ON public.company_members
-  FOR UPDATE USING (
-    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid() AND cm2.role = 'admin')
-  );
+DROP POLICY IF EXISTS "company_members_update_admin" ON public.company_members;
+CREATE POLICY "company_members_update_admin" ON public.company_members
+  FOR UPDATE USING (public.user_is_admin(company_id));
+DROP POLICY IF EXISTS "company_members_delete_admin" ON public.company_members;
 CREATE POLICY "company_members_delete_admin" ON public.company_members
-  FOR DELETE USING (
-    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid() AND cm2.role = 'admin')
-  );
+  FOR DELETE USING (public.user_is_admin(company_id));
 
 -- Données métier: filtrées par company_id, l'utilisateur doit être membre
 DROP FUNCTION IF EXISTS public.user_is_member(UUID);
 CREATE FUNCTION public.user_is_member(company_id UUID)
 RETURNS BOOLEAN LANGUAGE sql SECURITY DEFINER AS $$
   SELECT EXISTS (SELECT 1 FROM public.company_members WHERE company_id = $1 AND user_id = auth.uid());
+$$;
+
+DROP FUNCTION IF EXISTS public.user_is_admin(UUID);
+CREATE FUNCTION public.user_is_admin(company_id UUID)
+RETURNS BOOLEAN LANGUAGE sql SECURITY DEFINER AS $$
+  SELECT EXISTS (SELECT 1 FROM public.company_members WHERE company_id = $1 AND user_id = auth.uid() AND role = 'admin');
 $$;
 
 -- Journal entries
