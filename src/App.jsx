@@ -125,7 +125,7 @@ import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
 import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
-import { signUp, getProfile, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
+import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -731,6 +731,27 @@ function AppContent() {
     saveData();
   }, [invoices, transactions, expenses, companyDetails, currentCompanyId, currentUser]);
 
+  // Sync remote companies when user is authenticated but local state is empty
+  useEffect(() => {
+    if (!currentUser || Object.keys(companies).length > 0 || !isSupabaseEnabled()) return;
+    getUserCompanies(currentUser.id).then(remote => {
+      if (remote.length > 0) {
+        setCompanies(prev => {
+          const updated = { ...prev };
+          for (const c of remote) {
+            if (!updated[c.id]) updated[c.id] = { ...c, invoices: [], expenses: [], transactions: [], companyDetails: {} };
+          }
+          localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+          return updated;
+        });
+        if (!currentCompanyId) {
+          setCurrentCompanyId(remote[0].id);
+          localStorage.setItem('smart_comptable_current_id', remote[0].id);
+        }
+      }
+    }).catch(() => {});
+  }, [currentUser]);
+
   // Supabase init : session check + network listener + realtime
   useEffect(() => {
     initNetworkListener();
@@ -872,8 +893,8 @@ function AppContent() {
     setCompanyDetails(prev => ({ ...prev, onboardingDone: true }));
   };
 
-  // 1. Écran Onboarding seulement si aucun utilisateur auth (first launch via auth-free flow)
-  if (currentUser && Object.keys(companies).length === 0) {
+  // 1. Écran Onboarding seulement en mode local (pas après connexion Supabase)
+  if (currentUser && Object.keys(companies).length === 0 && !isSupabaseEnabled()) {
     return <Onboarding onComplete={handleCreateCompany} />;
   }
 
