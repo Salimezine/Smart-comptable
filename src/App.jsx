@@ -544,7 +544,14 @@ function AppContent() {
       const { data: authData, error } = await signUp(data.email, data.password, { nom: data.nom, prenom: data.prenom || '' });
       if (error) throw new Error(error.message || 'Erreur inscription Supabase');
       if (!authData?.user) throw new Error('Erreur création compte');
-      const profile = await getProfile(authData.user.id);
+      let profile = await getProfile(authData.user.id);
+      if (!profile) {
+        const { data: newProfile } = await supabase.from('profiles').insert({
+          id: authData.user.id, email: authData.user.email,
+          nom: data.nom, prenom: data.prenom || '',
+        }).select().single();
+        profile = newProfile;
+      }
       if (!profile) throw new Error('Erreur création profil');
       user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
     } else {
