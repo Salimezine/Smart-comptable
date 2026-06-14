@@ -528,7 +528,7 @@ function AppContent() {
       // Sync Supabase company into local companies state if missing
       setCompanies(prev => {
         if (prev[companyId]) return prev;
-        const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: {} } };
+        const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } } };
         localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
         return updated;
       });
@@ -539,7 +539,7 @@ function AppContent() {
         if (soc) {
           companyId = soc.id;
           setCompanies(prev => {
-            const updated = { ...prev, [soc.id]: { ...soc, invoices: [], expenses: [], transactions: [], companyDetails: {} } };
+            const updated = { ...prev, [soc.id]: { ...soc, invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } } };
             localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
             return updated;
           });
@@ -739,7 +739,7 @@ function AppContent() {
         setCompanies(prev => {
           const updated = { ...prev };
           for (const c of remote) {
-            if (!updated[c.id]) updated[c.id] = { ...c, invoices: [], expenses: [], transactions: [], companyDetails: {} };
+            if (!updated[c.id]) updated[c.id] = { ...c, invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } };
           }
           localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
           return updated;
