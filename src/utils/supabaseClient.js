@@ -1,5 +1,12 @@
 import { createClient } from '@supabase/supabase-js';
 
+// Nettoyer les vieux Service Workers qui causent des bugs de cache
+if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    for (const reg of regs) reg.unregister();
+  });
+}
+
 const RAW_URL = import.meta.env.VITE_SUPABASE_URL;
 const RAW_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
