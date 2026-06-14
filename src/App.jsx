@@ -565,6 +565,14 @@ function AppContent() {
     setTransactions(demoTransactions);
     setCompanyDetails({ name: soc.name });
     setShowOnboarding(false);
+    // Sync demo data to Supabase immediately so it's available cross-device
+    if (isSupabaseEnabled() && navigator.onLine) {
+      try {
+        await upsertSupabaseData('invoices', socId, demoInvoices);
+        await upsertSupabaseData('expenses', socId, demoExpenses);
+        await upsertSupabaseData('transactions', socId, demoTransactions);
+      } catch (e) { /* will retry via saveData effect */ }
+    }
     await login(data.email, data.password, true);
     localStorage.removeItem('smart_journal');
     setCurrentCompanyId(socId);

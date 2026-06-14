@@ -82,10 +82,11 @@ export function useAuth() {
       if (!error && data?.user) {
         const profile = await getProfile(data.user.id);
         if (profile) {
-          const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
           const companies = await getUserCompanies(profile.id);
+          const firstCompany = companies.length > 0 ? companies[0] : null;
+          const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: firstCompany?.id || null };
           setCurrentUser(user);
-          if (companies.length > 0) setCurrentSociete(companies[0]);
+          if (firstCompany) setCurrentSociete(firstCompany);
           logAction(AUDIT_ACTIONS.LOGIN, { userId: user.id, email, method: 'supabase' });
           return user;
         }
