@@ -128,6 +128,9 @@ import { onAuthChange, getSession } from './utils/authSupabase';
 import { signUp, getProfile, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+function isUUID(v) { return typeof v === 'string' && UUID_RE.test(v); }
+
 function normaliserMontant(str) {
   if (!str) return null;
   let s = str.toString()
@@ -623,8 +626,8 @@ function AppContent() {
     if (!currentUser) return;
     const loadData = async () => {
       if (!currentCompanyId) return;
-      // Try Supabase first
-      if (isSupabaseEnabled()) {
+      // Try Supabase first (only if company_id is a valid UUID)
+      if (isSupabaseEnabled() && isUUID(currentCompanyId)) {
         const [invoicesData, transactionsData, expensesData] = await Promise.all([
           fetchSupabaseData('invoices', currentCompanyId),
           fetchSupabaseData('transactions', currentCompanyId),
@@ -668,8 +671,8 @@ function AppContent() {
     const saveData = async () => {
       const safeDetails = { ...companyDetails };
 
-      // Sync to Supabase when available (batched upsert)
-      if (isSupabaseEnabled() && navigator.onLine) {
+      // Sync to Supabase when available (only if company_id is a valid UUID)
+      if (isSupabaseEnabled() && navigator.onLine && isUUID(currentCompanyId)) {
         try {
           if (invoices.length > 0) await upsertSupabaseData('invoices', currentCompanyId, invoices);
           if (transactions.length > 0) await upsertSupabaseData('transactions', currentCompanyId, transactions);
