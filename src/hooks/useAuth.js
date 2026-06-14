@@ -118,42 +118,62 @@ export function useAuth() {
     // Fallback to local auth
     const localUser = await authUser(email, password);
     if (!localUser) throw new Error('Email ou mot de passe incorrect');
-    // Auto-create Supabase account if local login succeeds (migration transparente)
+    // Try to establish Supabase session from local credentials
+    let supabaseUserId = null;
     if (isSupabaseEnabled()) {
       try {
-        const { data: signUpData, error: signUpErr } = await supabase.auth.signUp({ email, password, options: { data: { nom: localUser.nom || '', prenom: localUser.prenom || '' } } });
-        if (!signUpErr && signUpData?.user) {
-          // SignUp succeeded — user is new or was unconfirmed
-          if (signUpData?.session) {
-            await supabase.auth.setSession(signUpData.session);
+        // First try signIn (might work if previous signUp updated the password)
+        const { data: siData, error: siErr } = await supabase.auth.signInWithPassword({ email, password });
+        if (!siErr && siData?.user) {
+          supabaseUserId = siData.user.id;
+        } else {
+          // Try signUp (creates new user or updates unconfirmed user's password)
+          const { data: suData, error: suErr } = await supabase.auth.signUp({
+            email, password,
+            options: { data: { nom: localUser.nom || '', prenom: localUser.prenom || '' } }
+          });
+          if (!suErr && suData?.user) {
+            supabaseUserId = suData.user.id;
+            // If signUp returned a session, store it
+            if (suData.session) {
+              await supabase.auth.setSession(suData.session);
+            }
+          } else if (suErr?.message?.includes('already registered')) {
+            // User exists confirmed — try signIn one more time (password might match now)
+            const { data: siData2 } = await supabase.auth.signInWithPassword({ email, password });
+            if (siData2?.user) supabaseUserId = siData2.user.id;
           }
-          // Create profile in Supabase if missing
-          let profile = await getProfile(signUpData.user.id);
-          if (!profile) {
-            try {
-              const { data: p } = await supabase.from('profiles').insert({
-                id: signUpData.user.id, email,
-                nom: localUser.nom || email.split('@')[0] || '',
-                prenom: localUser.prenom || '',
-              }).select().single();
-              profile = p;
-            } catch (e2) { /* profile creation race — ok */ }
-          }
-          if (profile) {
-            const companies = await getUserCompanies(profile.id);
-            const firstCompany = companies.length > 0 ? companies[0] : null;
-            const sbUser = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: firstCompany?.id || null };
-            setCurrentUser(sbUser);
-            if (firstCompany) setCurrentSociete(firstCompany);
-            logAction(AUDIT_ACTIONS.LOGIN, { userId: sbUser.id, email, method: 'supabase_auto' });
-            return sbUser;
-          }
-        } else if (signUpErr?.message?.includes('already registered')) {
-          // User exists in Supabase but password doesn't match — try reset
-          try { await supabase.auth.resetPasswordForEmail(email); } catch (e2) { /* non bloquant */ }
         }
-      } catch (e) { /* non bloquant */ }
+        // Create Supabase profile if we have a Supabase user
+        if (supabaseUserId) {
+          const existingProfile = await getProfile(supabaseUserId);
+          if (!existingProfile) {
+            try {
+              await supabase.from('profiles').insert({
+                id: supabaseUserId, email,
+                nom: localUser.nom || '', prenom: localUser.prenom || '',
+              }).select().single();
+            } catch (e) { /* non bloquant */ }
+          }
+        }
+      } catch (e) { /* local only — pas de Supabase */ }
     }
+    if (supabaseUserId) {
+      // Return user with Supabase UUID so caller can create company etc.
+      const merged = {
+        id: supabaseUserId, email,
+        nom: localUser.nom, prenom: localUser.prenom,
+        role: localUser.role, plan: localUser.plan,
+        actif: true, societeId: null,
+        _localId: localUser.id, _localSocieteId: localUser.societeId,
+      };
+      saveSession(merged.id, remember);
+      setCurrentUser(merged);
+      setCurrentSociete(null);
+      logAction(AUDIT_ACTIONS.LOGIN, { userId: merged.id, email, method: 'local_upgraded' });
+      return merged;
+    }
+    // Pure local fallback — no Supabase session
     saveSession(localUser.id, remember);
     setCurrentUser(localUser);
     setCurrentSociete(getUserSociete(localUser.id));
