@@ -839,6 +839,12 @@ function AppContent() {
   }, [currentCompanyId]);
 
   // Realtime subscriptions for invoices, expenses, transactions (cross-device sync)
+  const invRef = useRef(invoices);
+  const expRef = useRef(expenses);
+  const txRef = useRef(transactions);
+  useEffect(() => { invRef.current = invoices; }, [invoices]);
+  useEffect(() => { expRef.current = expenses; }, [expenses]);
+  useEffect(() => { txRef.current = transactions; }, [transactions]);
   useEffect(() => {
     if (!isSupabaseEnabled() || !currentCompanyId) return;
     const reload = async () => {
@@ -847,9 +853,9 @@ function AppContent() {
         fetchSupabaseData('expenses', currentCompanyId),
         fetchSupabaseData('transactions', currentCompanyId),
       ]);
-      if (inv.length) setInvoices(inv);
-      if (exp.length) setExpenses(exp);
-      if (tx.length) setTransactions(tx);
+      if (JSON.stringify(inv) !== JSON.stringify(invRef.current)) setInvoices(inv);
+      if (JSON.stringify(exp) !== JSON.stringify(expRef.current)) setExpenses(exp);
+      if (JSON.stringify(tx) !== JSON.stringify(txRef.current)) setTransactions(tx);
     };
     const channel = supabase
       .channel('data-changes')
