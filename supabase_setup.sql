@@ -226,7 +226,7 @@ ALTER TABLE public.transactions ENABLE ROW LEVEL SECURITY;
 -- Profiles: chacun voit et modifie son propre profil
 DROP POLICY IF EXISTS "profiles_self" ON public.profiles;
 CREATE POLICY "profiles_self" ON public.profiles
-  FOR ALL USING (auth.uid() = id);
+  FOR ALL USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
 
 -- Companies: un membre voit les sociétés dont il est membre
 DROP POLICY IF EXISTS "companies_member_select" ON public.companies;

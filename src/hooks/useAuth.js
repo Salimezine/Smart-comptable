@@ -87,12 +87,14 @@ export function useAuth() {
       if (!error && data?.user) {
         let profile = await getProfile(data.user.id);
         if (!profile) {
-          const { data: newProfile } = await supabase.from('profiles').insert({
-            id: data.user.id, email: data.user.email,
-            nom: data.user.user_metadata?.nom || data.user.email?.split('@')[0] || '',
-            prenom: data.user.user_metadata?.prenom || '',
-          }).select().single();
-          profile = newProfile;
+          try {
+            const { data: newProfile } = await supabase.from('profiles').insert({
+              id: data.user.id, email: data.user.email,
+              nom: data.user.user_metadata?.nom || data.user.email?.split('@')[0] || '',
+              prenom: data.user.user_metadata?.prenom || '',
+            }).select().single();
+            profile = newProfile;
+          } catch (e) { /* RLS may block, handled below */ }
         }
         if (profile) {
           const companies = await getUserCompanies(profile.id);
