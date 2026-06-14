@@ -248,14 +248,14 @@ DROP POLICY IF EXISTS "companies_owner_delete" ON public.companies;
 CREATE POLICY "companies_owner_delete" ON public.companies
   FOR DELETE USING (owner_id = auth.uid());
 
--- Company members: un membre voit les autres membres
+-- Company members: un membre voit ses propres entrées (direct column check, pas de récursion)
 DROP POLICY IF EXISTS "company_members_select" ON public.company_members;
 CREATE POLICY "company_members_select" ON public.company_members
-  FOR SELECT USING (public.user_is_member(company_id));
+  FOR SELECT USING (user_id = auth.uid());
 
 DROP POLICY IF EXISTS "company_members_admin" ON public.company_members;
 CREATE POLICY "company_members_admin" ON public.company_members
-  FOR SELECT USING (public.user_is_member(company_id));
+  FOR SELECT USING (user_id = auth.uid());
 
 DROP POLICY IF EXISTS "company_members_insert_owner" ON public.company_members;
 CREATE POLICY "company_members_insert_owner" ON public.company_members
@@ -266,53 +266,35 @@ CREATE POLICY "company_members_insert_owner" ON public.company_members
 
 DROP POLICY IF EXISTS "company_members_update_admin" ON public.company_members;
 CREATE POLICY "company_members_update_admin" ON public.company_members
-  FOR UPDATE USING (public.user_is_admin(company_id));
+  FOR UPDATE USING (user_id = auth.uid() AND role = 'admin');
 DROP POLICY IF EXISTS "company_members_delete_admin" ON public.company_members;
 CREATE POLICY "company_members_delete_admin" ON public.company_members
-  FOR DELETE USING (public.user_is_admin(company_id));
+  FOR DELETE USING (user_id = auth.uid() AND role = 'admin');
 
--- Données métier: filtrées par company_id, l'utilisateur doit être membre
-DROP FUNCTION IF EXISTS public.user_is_member(UUID);
-CREATE FUNCTION public.user_is_member(company_id UUID)
-RETURNS BOOLEAN LANGUAGE sql SECURITY DEFINER AS $$
-  SELECT EXISTS (SELECT 1 FROM public.company_members WHERE company_id = $1 AND user_id = auth.uid());
-$$;
-
-DROP FUNCTION IF EXISTS public.user_is_admin(UUID);
-CREATE FUNCTION public.user_is_admin(company_id UUID)
-RETURNS BOOLEAN LANGUAGE sql SECURITY DEFINER AS $$
-  SELECT EXISTS (SELECT 1 FROM public.company_members WHERE company_id = $1 AND user_id = auth.uid() AND role = 'admin');
-$$;
-
--- Journal entries
+-- Données métier: sous-requête sur company_members (sans récursion car RLS directe sur user_id)
 DROP POLICY IF EXISTS "journal_entries_member" ON public.journal_entries;
 CREATE POLICY "journal_entries_member" ON public.journal_entries
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = journal_entries.company_id AND user_id = auth.uid()));
 
--- Employees
 DROP POLICY IF EXISTS "employees_member" ON public.employees;
 CREATE POLICY "employees_member" ON public.employees
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = employees.company_id AND user_id = auth.uid()));
 
--- Invoices
 DROP POLICY IF EXISTS "invoices_member" ON public.invoices;
 CREATE POLICY "invoices_member" ON public.invoices
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = invoices.company_id AND user_id = auth.uid()));
 
--- Payroll slips
 DROP POLICY IF EXISTS "payroll_slips_member" ON public.payroll_slips;
 CREATE POLICY "payroll_slips_member" ON public.payroll_slips
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = payroll_slips.company_id AND user_id = auth.uid()));
 
--- Expenses
 DROP POLICY IF EXISTS "expenses_member" ON public.expenses;
 CREATE POLICY "expenses_member" ON public.expenses
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = expenses.company_id AND user_id = auth.uid()));
 
--- Transactions
 DROP POLICY IF EXISTS "transactions_member" ON public.transactions;
 CREATE POLICY "transactions_member" ON public.transactions
-  FOR ALL USING (public.user_is_member(company_id));
+  FOR ALL USING (EXISTS (SELECT 1 FROM public.company_members WHERE company_id = transactions.company_id AND user_id = auth.uid()));
 
 -- =============================================
 -- GRANTS
