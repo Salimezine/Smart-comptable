@@ -525,7 +525,6 @@ function AppContent() {
     const user = await login(email, password, remember);
     let companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
     if (companyId && isUUID(companyId)) {
-      // Sync Supabase company into local companies state if missing
       setCompanies(prev => {
         if (prev[companyId]) return prev;
         const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } } };
@@ -545,6 +544,31 @@ function AppContent() {
           });
         }
       } catch (e) { /* will be handled below */ }
+    }
+    // Auto-migrate old local data (non-UUID company IDs) to the new Supabase company
+    if (companyId && isSupabaseEnabled() && navigator.onLine) {
+      try {
+        const tables = ['invoices', 'expenses', 'transactions', 'journal_entries'];
+        const oldKeys = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          for (const table of tables) {
+            const prefix = table + '_';
+            if (key && key.startsWith(prefix) && !isUUID(key.slice(prefix.length))) {
+              oldKeys.push({ key, table, data: JSON.parse(localStorage.getItem(key) || '[]') });
+            }
+          }
+        }
+        const newKey = (table) => table + '_' + companyId;
+        for (const { key, table, data } of oldKeys) {
+          if (data.length === 0) continue;
+          const enriched = data.map(r => ({ ...r, company_id: companyId }));
+          await supabase.from(table).upsert(enriched, { onConflict: 'id' });
+          const existing = JSON.parse(localStorage.getItem(newKey(table)) || '[]');
+          localStorage.setItem(newKey(table), JSON.stringify([...existing, ...enriched]));
+          localStorage.removeItem(key);
+        }
+      } catch (e) { /* migration non bloquante */ }
     }
     setCurrentCompanyId(companyId);
     if (companyId) localStorage.setItem('smart_comptable_current_id', companyId);
