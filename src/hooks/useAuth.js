@@ -42,39 +42,47 @@ export function useAuth() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      // Try Supabase session first
-      if (isSupabaseEnabled()) {
-        const { data: { session } } = await supabase.auth.getSession();
-        if (session?.user) {
-          const profile = await getProfile(session.user.id) || (await supabase.from('profiles').insert({
-            id: session.user.id, email: session.user.email,
-            nom: session.user.user_metadata?.nom || session.user.email?.split('@')[0] || '',
-            prenom: session.user.user_metadata?.prenom || '',
-          }).select().single()).data;
-          if (profile) {
-            const companies = await getUserCompanies(profile.id);
-            const firstCompany = companies.length > 0 ? companies[0] : null;
-            const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: firstCompany?.id || null };
-            if (!cancelled) {
-              setCurrentUser(user);
-              if (firstCompany) setCurrentSociete(firstCompany);
-              setInitializing(false);
-              return;
+      try {
+        // Try Supabase session first
+        if (isSupabaseEnabled()) {
+          const { data: { session } } = await supabase.auth.getSession();
+          if (session?.user) {
+            let profile = await getProfile(session.user.id);
+            if (!profile) {
+              try {
+                const { data: newProfile } = await supabase.from('profiles').insert({
+                  id: session.user.id, email: session.user.email,
+                  nom: session.user.user_metadata?.nom || session.user.email?.split('@')[0] || '',
+                  prenom: session.user.user_metadata?.prenom || '',
+                }).select().single();
+                profile = newProfile;
+              } catch (e) { /* RLS may block */ }
+            }
+            if (profile) {
+              const companies = await getUserCompanies(profile.id);
+              const firstCompany = companies.length > 0 ? companies[0] : null;
+              const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: firstCompany?.id || null };
+              if (!cancelled) {
+                setCurrentUser(user);
+                if (firstCompany) setCurrentSociete(firstCompany);
+                setInitializing(false);
+                return;
+              }
             }
           }
         }
-      }
-      // Fallback to local session
-      const session = getStoredSession();
-      if (session) {
-        const user = getUserById(session.userId);
-        if (user && user.actif) {
-          setCurrentUser(user);
-          setCurrentSociete(getUserSociete(user.id));
-        } else {
-          clearSession();
+        // Fallback to local session
+        const session = getStoredSession();
+        if (session) {
+          const user = getUserById(session.userId);
+          if (user && user.actif) {
+            setCurrentUser(user);
+            setCurrentSociete(getUserSociete(user.id));
+          } else {
+            clearSession();
+          }
         }
-      }
+      } catch (e) { /* ignore init errors */ }
       if (!cancelled) setInitializing(false);
     })();
     return () => { cancelled = true; };
