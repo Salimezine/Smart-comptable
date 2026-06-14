@@ -376,9 +376,15 @@ CREATE TRIGGER trg_invoices_updated_at BEFORE UPDATE ON public.invoices
 -- =============================================
 -- REALTIME (sync en direct)
 -- =============================================
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.journal_entries;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.employees;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.invoices;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.payroll_slips;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.expenses;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.transactions;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.journal_entries;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.journal_entries;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.employees;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.employees;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.invoices;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.invoices;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.payroll_slips;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.payroll_slips;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.expenses;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.expenses;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.transactions;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.transactions;

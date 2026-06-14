@@ -46,13 +46,18 @@ export function useAuth() {
       if (isSupabaseEnabled()) {
         const { data: { session } } = await supabase.auth.getSession();
         if (session?.user) {
-          const profile = await getProfile(session.user.id);
+          const profile = await getProfile(session.user.id) || (await supabase.from('profiles').insert({
+            id: session.user.id, email: session.user.email,
+            nom: session.user.user_metadata?.nom || session.user.email?.split('@')[0] || '',
+            prenom: session.user.user_metadata?.prenom || '',
+          }).select().single()).data;
           if (profile) {
-            const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: null };
             const companies = await getUserCompanies(profile.id);
+            const firstCompany = companies.length > 0 ? companies[0] : null;
+            const user = { id: profile.id, email: profile.email, nom: profile.nom, prenom: profile.prenom, role: profile.role, plan: profile.plan, actif: true, societeId: firstCompany?.id || null };
             if (!cancelled) {
               setCurrentUser(user);
-              if (companies.length > 0) setCurrentSociete(companies[0]);
+              if (firstCompany) setCurrentSociete(firstCompany);
               setInitializing(false);
               return;
             }
@@ -80,7 +85,15 @@ export function useAuth() {
     if (isSupabaseEnabled()) {
       const { data, error } = await supabase.auth.signInWithPassword({ email, password });
       if (!error && data?.user) {
-        const profile = await getProfile(data.user.id);
+        let profile = await getProfile(data.user.id);
+        if (!profile) {
+          const { data: newProfile } = await supabase.from('profiles').insert({
+            id: data.user.id, email: data.user.email,
+            nom: data.user.user_metadata?.nom || data.user.email?.split('@')[0] || '',
+            prenom: data.user.user_metadata?.prenom || '',
+          }).select().single();
+          profile = newProfile;
+        }
         if (profile) {
           const companies = await getUserCompanies(profile.id);
           const firstCompany = companies.length > 0 ? companies[0] : null;
