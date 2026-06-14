@@ -89,7 +89,7 @@ export function useAuth() {
   }, []);
 
   const login = useCallback(async (email, password, remember = false) => {
-    // Try Supabase first
+    // Try Supabase signIn first
     if (isSupabaseEnabled()) {
       const { data, error } = await supabase.auth.signInWithPassword({ email, password });
       if (!error && data?.user) {
@@ -115,70 +115,52 @@ export function useAuth() {
         }
       }
     }
-    // Fallback to local auth
-    const localUser = await authUser(email, password);
-    if (!localUser) throw new Error('Email ou mot de passe incorrect');
-    // Try to establish Supabase session from local credentials
+    // Try to get Supabase user via signUp (covers: user deleted, new device, no local data)
     let supabaseUserId = null;
+    let supabaseSession = null;
     if (isSupabaseEnabled()) {
       try {
-        // First try signIn (might work if previous signUp updated the password)
-        const { data: siData, error: siErr } = await supabase.auth.signInWithPassword({ email, password });
-        if (!siErr && siData?.user) {
-          supabaseUserId = siData.user.id;
-        } else {
-          // Try signUp (creates new user or updates unconfirmed user's password)
-          const { data: suData, error: suErr } = await supabase.auth.signUp({
-            email, password,
-            options: { data: { nom: localUser.nom || '', prenom: localUser.prenom || '' } }
-          });
-          if (!suErr && suData?.user) {
-            supabaseUserId = suData.user.id;
-            // If signUp returned a session, store it
-            if (suData.session) {
-              await supabase.auth.setSession(suData.session);
-            }
-          } else if (suErr?.message?.includes('already registered')) {
-            // User exists confirmed — try signIn one more time (password might match now)
-            const { data: siData2 } = await supabase.auth.signInWithPassword({ email, password });
-            if (siData2?.user) supabaseUserId = siData2.user.id;
+        // signUp creates a new user (email free after delete) or returns session if auto-confirm
+        const { data: suData, error: suErr } = await supabase.auth.signUp({
+          email, password,
+          options: { data: { nom: email.split('@')[0] || '', prenom: '' } }
+        });
+        if (!suErr && suData?.user) {
+          supabaseUserId = suData.user.id;
+          supabaseSession = suData.session || null;
+          if (supabaseSession) {
+            await supabase.auth.setSession(supabaseSession).catch(() => {});
           }
         }
-        // Create Supabase profile if we have a Supabase user
-        if (supabaseUserId) {
-          const existingProfile = await getProfile(supabaseUserId);
-          if (!existingProfile) {
-            try {
-              await supabase.from('profiles').insert({
-                id: supabaseUserId, email,
-                nom: localUser.nom || '', prenom: localUser.prenom || '',
-              }).select().single();
-            } catch (e) { /* non bloquant */ }
-          }
-        }
-      } catch (e) { /* local only — pas de Supabase */ }
+      } catch (e) { /* signUp failed */ }
     }
     if (supabaseUserId) {
-      // Return user with Supabase UUID so caller can create company etc.
-      const merged = {
-        id: supabaseUserId, email,
-        nom: localUser.nom, prenom: localUser.prenom,
-        role: localUser.role, plan: localUser.plan,
-        actif: true, societeId: null,
-        _localId: localUser.id, _localSocieteId: localUser.societeId,
-      };
+      // Create profile if the trigger didn't
+      const existingProfile = await getProfile(supabaseUserId).catch(() => null);
+      if (!existingProfile) {
+        try {
+          await supabase.from('profiles').insert({
+            id: supabaseUserId, email, nom: email.split('@')[0] || '', prenom: '',
+          }).select().single();
+        } catch (e) { /* non bloquant */ }
+      }
+      const merged = { id: supabaseUserId, email, nom: email.split('@')[0] || '', prenom: '', role: 'admin', plan: 'free', actif: true, societeId: null, _localSocieteId: null };
       saveSession(merged.id, remember);
       setCurrentUser(merged);
       setCurrentSociete(null);
-      logAction(AUDIT_ACTIONS.LOGIN, { userId: merged.id, email, method: 'local_upgraded' });
+      logAction(AUDIT_ACTIONS.LOGIN, { userId: merged.id, email, method: 'supabase_signup' });
       return merged;
     }
-    // Pure local fallback — no Supabase session
-    saveSession(localUser.id, remember);
-    setCurrentUser(localUser);
-    setCurrentSociete(getUserSociete(localUser.id));
-    logAction(AUDIT_ACTIONS.LOGIN, { userId: localUser.id, email });
-    return localUser;
+    // Last resort: local auth (only works if user data exists in localStorage)
+    const localUser = await authUser(email, password);
+    if (localUser) {
+      saveSession(localUser.id, remember);
+      setCurrentUser(localUser);
+      setCurrentSociete(getUserSociete(localUser.id));
+      logAction(AUDIT_ACTIONS.LOGIN, { userId: localUser.id, email });
+      return localUser;
+    }
+    throw new Error('Email ou mot de passe incorrect');
   }, []);
 
   const pinLogin = useCallback((user) => {
