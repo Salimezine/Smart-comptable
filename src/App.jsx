@@ -523,13 +523,17 @@ function AppContent() {
   const handleLoginSubmit = async (email, password, remember) => {
     const user = await login(email, password, remember);
     let companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
-    // Check if we have Supabase access and need a UUID company
     const hasSupabase = isSupabaseEnabled() && navigator.onLine && user?.id && isUUID(user.id);
-    const oldSocId = user?._localSocieteId || null;
-    // If companyId is non-UUID and we have Supabase, create a UUID company
+    // Create Supabase company if needed
     if (hasSupabase && (!companyId || !isUUID(companyId))) {
       try {
-        const soc = await createCompanySupabase({ name: 'Ma Société', owner_id: user.id, plan: user.plan || 'free' });
+        // Try to preserve old company name from localStorage
+        let oldName = 'Ma Société';
+        try {
+          const raw = localStorage.getItem('smart_comptable_companies');
+          if (raw) { const c = Object.values(JSON.parse(raw))[0]; if (c?.name) oldName = c.name; }
+        } catch {}
+        const soc = await createCompanySupabase({ name: oldName, owner_id: user.id, plan: user.plan || 'free' });
         if (soc) {
           companyId = soc.id;
           setCompanies(prev => {
@@ -537,59 +541,40 @@ function AppContent() {
             localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
             return updated;
           });
-          // Migrate old local data from previous non-UUID company
-          if (oldSocId) {
-            const tables = ['invoices', 'expenses', 'transactions', 'journal_entries'];
-            for (const table of tables) {
-              const oldKey = `${table}_${oldSocId}`;
-              const raw = localStorage.getItem(oldKey);
-              if (raw) {
-                try {
-                  const data = JSON.parse(raw);
-                  if (data.length > 0) {
-                    const enriched = data.map(r => ({ ...r, id: crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}_${Math.random().toString(36).slice(2)}`, company_id: soc.id }));
-                    await supabase.from(table).upsert(enriched, { onConflict: 'id' });
-                    localStorage.setItem(`${table}_${soc.id}`, JSON.stringify(enriched));
-                    localStorage.removeItem(oldKey);
-                  }
-                } catch (e) { /* skip one table */ }
-              }
-            }
-            // Migrate smart_journal key
-            const oldJournalKey = `smart_journal_${oldSocId}`;
-            const jRaw = localStorage.getItem(oldJournalKey);
-            if (jRaw) {
-              try {
-                const jData = JSON.parse(jRaw);
-                if (Array.isArray(jData) && jData.length > 0) {
-                  const enriched = jData.map(r => ({ ...r, company_id: soc.id }));
-                  await supabase.from('journal_entries').upsert(enriched, { onConflict: 'id' });
-                  localStorage.setItem(`smart_journal_${soc.id}`, JSON.stringify(enriched));
-                  localStorage.removeItem(oldJournalKey);
-                }
-              } catch (e) { /* skip */ }
-            }
-          }
-          // Also migrate any orphan non-UUID keys
-          const orphanTables = ['invoices', 'expenses', 'transactions', 'journal_entries'];
-          for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            for (const table of orphanTables) {
-              const prefix = table + '_';
-              if (key && key.startsWith(prefix) && !isUUID(key.slice(prefix.length))) {
-                try {
-                  const data = JSON.parse(localStorage.getItem(key) || '[]');
-                  if (data.length > 0) {
-                    const enriched = data.map(r => ({ ...r, company_id: soc.id }));
-                    await supabase.from(table).upsert(enriched, { onConflict: 'id' });
-                  }
-                } catch (e) { /* skip */ }
-                localStorage.removeItem(key);
-              }
-            }
-          }
         }
       } catch (e) { console.warn('[Login] Échec création société Supabase:', e); }
+    }
+    // Always migrate old localStorage data to the new UUID company
+    if (hasSupabase && companyId && isUUID(companyId)) {
+      // Collect all old data keys (non-UUID suffixes)
+      const oldEntries = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (!key) continue;
+        for (const table of ['invoices', 'expenses', 'transactions', 'journal_entries']) {
+          const prefix = table + '_';
+          if (key.startsWith(prefix) && !isUUID(key.slice(prefix.length))) {
+            try { oldEntries.push({ key, table, data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
+          }
+        }
+        // smart_journal_{nonUUID}
+        if (key.startsWith('smart_journal_') && !isUUID(key.slice(14))) {
+          try { oldEntries.push({ key, table: 'journal_entries', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
+        }
+      }
+      for (const { key, table, data } of oldEntries) {
+        if (!Array.isArray(data) || data.length === 0) continue;
+        try {
+          const enriched = data.map(r => ({ ...r, id: crypto.randomUUID?.() || `${Date.now()}_${Math.random().toString(36).slice(2)}`, company_id: companyId }));
+          const { error } = await supabase.from(table).upsert(enriched, { onConflict: 'id' });
+          if (!error) {
+            // Save to new localStorage key and remove old
+            const newKey = key.startsWith('smart_journal_') ? `smart_journal_${companyId}` : `${table}_${companyId}`;
+            localStorage.setItem(newKey, JSON.stringify(enriched));
+            localStorage.removeItem(key);
+          }
+        } catch (e) { /* skip failed migration */ }
+      }
     }
     if (companyId && isUUID(companyId)) {
       setCompanies(prev => {
