@@ -559,6 +559,11 @@ function AppContent() {
       { id: 'txn_3', label: 'Virement client Groupe', amount: 7200, date: new Date(now.getFullYear(), now.getMonth(), 12).toISOString(), type: 'income' },
     ];
     const socId = soc.id;
+    // Strip non-UUID ids for Supabase compatibility
+    const cleanForCloud = (items) => items.map(({ id, ...rest }) => rest);
+    const cloudInvoices = cleanForCloud(demoInvoices);
+    const cloudExpenses = cleanForCloud(demoExpenses);
+    const cloudTransactions = cleanForCloud(demoTransactions);
     setCompanies(prev => ({ ...prev, [socId]: { invoices: demoInvoices, expenses: demoExpenses, transactions: demoTransactions, companyDetails: { name: soc.name } } }));
     setInvoices(demoInvoices);
     setExpenses(demoExpenses);
@@ -568,9 +573,9 @@ function AppContent() {
     // Sync demo data to Supabase immediately so it's available cross-device
     if (isSupabaseEnabled() && navigator.onLine) {
       try {
-        await upsertSupabaseData('invoices', socId, demoInvoices);
-        await upsertSupabaseData('expenses', socId, demoExpenses);
-        await upsertSupabaseData('transactions', socId, demoTransactions);
+        await upsertSupabaseData('invoices', socId, cloudInvoices);
+        await upsertSupabaseData('expenses', socId, cloudExpenses);
+        await upsertSupabaseData('transactions', socId, cloudTransactions);
       } catch (e) { /* will retry via saveData effect */ }
     }
     await login(data.email, data.password, true);

@@ -242,7 +242,24 @@ CREATE POLICY "company_members_select" ON public.company_members
 
 DROP POLICY IF EXISTS "company_members_admin" ON public.company_members;
 CREATE POLICY "company_members_admin" ON public.company_members
-  FOR ALL USING (
+  FOR SELECT USING (
+    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid())
+  );
+
+DROP POLICY IF EXISTS "company_members_insert_owner" ON public.company_members;
+CREATE POLICY "company_members_insert_owner" ON public.company_members
+  FOR INSERT WITH CHECK (
+    user_id = auth.uid()
+    AND EXISTS (SELECT 1 FROM public.companies WHERE id = company_id AND owner_id = auth.uid())
+  );
+
+DROP POLICY IF EXISTS "company_members_update_delete_admin" ON public.company_members;
+CREATE POLICY "company_members_update_delete_admin" ON public.company_members
+  FOR UPDATE USING (
+    EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid() AND cm2.role = 'admin')
+  );
+CREATE POLICY "company_members_delete_admin" ON public.company_members
+  FOR DELETE USING (
     EXISTS (SELECT 1 FROM public.company_members cm2 WHERE cm2.company_id = company_id AND cm2.user_id = auth.uid() AND cm2.role = 'admin')
   );
 
