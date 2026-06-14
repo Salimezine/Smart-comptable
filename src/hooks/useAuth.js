@@ -118,6 +118,15 @@ export function useAuth() {
     // Fallback to local auth
     const user = await authUser(email, password);
     if (!user) throw new Error('Email ou mot de passe incorrect');
+    // Auto-create Supabase account if local login succeeds (migration transparente)
+    if (isSupabaseEnabled()) {
+      try {
+        const { error: signUpErr } = await supabase.auth.signUp({ email, password, options: { data: { nom: user.nom || '', prenom: user.prenom || '' } } });
+        if (signUpErr && !signUpErr.message.includes('already registered')) {
+          console.warn('[Auth] Auto signUp failed:', signUpErr.message);
+        }
+      } catch (e) { /* non bloquant */ }
+    }
     saveSession(user.id, remember);
     setCurrentUser(user);
     setCurrentSociete(getUserSociete(user.id));
