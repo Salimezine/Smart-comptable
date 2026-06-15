@@ -253,15 +253,59 @@ export function subscribeTable(table, companyId, onEvent) {
 // ==============================
 export async function migrateLocalToSupabase(companyId) {
   if (!isSupabaseEnabled()) return { success: false, reason: 'Supabase non configuré' };
-  const tables = ['journal_entries', 'invoices', 'expenses', 'transactions', 'employees', 'payroll_slips'];
+  if (!(await hasSession())) return { success: false, reason: 'Aucune session Supabase active — connectez-vous d\'abord' };
   const results = [];
-  for (const table of tables) {
+  // Tables with standard key format: {table}_{companyId}
+  const stdTables = ['journal_entries', 'invoices', 'expenses', 'transactions'];
+  for (const table of stdTables) {
     const local = lsRead(table, companyId);
     if (!local || local.length === 0) continue;
     const enriched = local.map(r => ({ ...r, company_id: companyId }));
     const { error } = await supabase.from(table).upsert(enriched, { onConflict: 'id' });
     results.push({ table, count: enriched.length, error: error?.message || null });
   }
+  // Employees: stored in smart_employes_{companyId}
+  try {
+    const empRaw = localStorage.getItem(`smart_employes_${companyId}`);
+    if (empRaw) {
+      const local = JSON.parse(empRaw);
+      if (local.length > 0) {
+        const enriched = local.map(r => ({
+          id: r.id, company_id: companyId, nom: r.nom, prenom: r.prenom,
+          cin: r.cin, matricule: r.matricule, poste: r.poste,
+          salaire_base: parseFloat(r.salaireBase) || 0,
+          nb_enfants: parseInt(r.nbEnfants) || 0,
+          regime: r.regimeHoraire === 48 ? '48h' : '40h',
+          situation_famille: r.chefFamille ? 'chef_famille' : r.conjointCharge ? 'marie' : 'celibataire',
+        }));
+        const { error } = await supabase.from('employees').upsert(enriched, { onConflict: 'id' });
+        results.push({ table: 'employees', count: enriched.length, error: error?.message || null });
+      }
+    }
+  } catch {}
+  // Payroll slips: stored in smart_bulletins_{companyId}
+  try {
+    const payRaw = localStorage.getItem(`smart_bulletins_${companyId}`);
+    if (payRaw) {
+      const local = JSON.parse(payRaw);
+      if (local.length > 0) {
+        const enriched = local.map(r => ({
+          id: r.id || crypto.randomUUID(), company_id: companyId,
+          employee_id: r.employeId, nom: r.nom, prenom: r.prenom,
+          mois: r.mois, annee: r.annee,
+          salaire_base: parseFloat(r.salaireBase) || 0,
+          brut: parseFloat(r.brut) || 0,
+          cnss_sal: parseFloat(r.cnssSal) || 0,
+          cnss_pat: parseFloat(r.cnssPat) || 0,
+          irpp: parseFloat(r.irppAnnuel) || 0,
+          net_a_payer: parseFloat(r.netAPayer) || 0,
+          cout_employeur: parseFloat(r.coutEmployeur) || 0,
+        }));
+        const { error } = await supabase.from('payroll_slips').upsert(enriched, { onConflict: 'id' });
+        results.push({ table: 'payroll_slips', count: enriched.length, error: error?.message || null });
+      }
+    }
+  } catch {}
   if (results.every(r => !r.error)) {
     localStorage.setItem(`smart_migrated_${companyId}`, 'true');
     return { success: true, results };
