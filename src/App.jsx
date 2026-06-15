@@ -733,13 +733,19 @@ function AppContent() {
           fetchSupabaseData('expenses', currentCompanyId),
           fetchCompanySettings(currentCompanyId),
         ]);
-        // Also fetch employees and payroll_slips into localStorage for PayrollView
+        // Also fetch secondary data into localStorage for sub-components
         Promise.all([
           fetchSupabaseData('employees', currentCompanyId),
           fetchSupabaseData('payroll_slips', currentCompanyId),
-        ]).then(([empData, payData]) => {
+          fetchSupabaseData('stock', currentCompanyId),
+          fetchSupabaseData('stock_mouvements', currentCompanyId),
+          fetchSupabaseData('pieces_comptables', currentCompanyId),
+        ]).then(([empData, payData, stockData, movData, piecesData]) => {
           if (empData.length) localStorage.setItem(`smart_employes_${currentCompanyId}`, JSON.stringify(empData));
           if (payData.length) localStorage.setItem(`smart_bulletins_${currentCompanyId}`, JSON.stringify(payData));
+          if (stockData.length) localStorage.setItem(`smart_stock_${currentCompanyId}`, JSON.stringify(stockData));
+          if (movData.length) localStorage.setItem(`STOCK_LOG_KEY_${currentCompanyId}`, JSON.stringify(movData));
+          if (piecesData.length) localStorage.setItem(`piecesComptables_${currentCompanyId}`, JSON.stringify(piecesData));
         }).catch(() => {});
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
@@ -797,6 +803,7 @@ function AppContent() {
           await upsertSupabaseData('invoices', currentCompanyId, invoices);
           await upsertSupabaseData('transactions', currentCompanyId, transactions);
           await upsertSupabaseData('expenses', currentCompanyId, expenses);
+          await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
           await saveCompanySettings(currentCompanyId, safeDetails);
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
@@ -818,7 +825,7 @@ function AppContent() {
       });
     };
     saveData();
-  }, [invoices, transactions, expenses, companyDetails, currentCompanyId, currentUser]);
+  }, [invoices, transactions, expenses, piecesComptables, companyDetails, currentCompanyId, currentUser]);
 
   // Sync remote companies when user is authenticated but local state is empty
   useEffect(() => {
@@ -4483,6 +4490,12 @@ function StockView({ formatCurrency, currentCompanyId }) {
   React.useEffect(() => { setStockEntries(() => { try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; } }); }, [stockKey]);
 
   React.useEffect(() => { localStorage.setItem(stockKey, JSON.stringify(stockEntries)); }, [stockEntries, stockKey]);
+  // Sync stock entries to Supabase
+  React.useEffect(() => {
+    if (isSupabaseEnabled() && navigator.onLine && currentCompanyId && isUUID(currentCompanyId) && stockEntries.length) {
+      upsertSupabaseData('stock_mouvements', currentCompanyId, stockEntries).catch(() => {});
+    }
+  }, [stockEntries, currentCompanyId]);
 
   const [showForm, setShowForm] = React.useState(false);
   const [form, setForm] = React.useState({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
