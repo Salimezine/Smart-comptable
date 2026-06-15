@@ -8,11 +8,14 @@ const root = resolve(__dirname, '..');
 const dest = resolve(root, 'public', 'tesseract');
 if (!existsSync(dest)) mkdirSync(dest, { recursive: true });
 
+const variants = ['', '-lstm', '-simd', '-simd-lstm', '-relaxedsimd', '-relaxedsimd-lstm'];
 const files = [
   ['node_modules/tesseract.js/dist/worker.min.js', 'tesseract/worker.min.js'],
-  ['node_modules/tesseract.js-core/tesseract-core.wasm.js', 'tesseract/tesseract-core.wasm.js'],
-  ['node_modules/tesseract.js-core/tesseract-core.wasm', 'tesseract/tesseract-core.wasm'],
   ['node_modules/pdfjs-dist/build/pdf.worker.min.js', 'pdf.worker.min.js'],
+  ...variants.flatMap(v => [
+    [`node_modules/tesseract.js-core/tesseract-core${v}.wasm.js`, `tesseract/tesseract-core${v}.wasm.js`],
+    [`node_modules/tesseract.js-core/tesseract-core${v}.wasm`, `tesseract/tesseract-core${v}.wasm`],
+  ]),
 ];
 
 for (const [src, name] of files) {
