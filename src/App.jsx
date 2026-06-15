@@ -557,10 +557,11 @@ function AppContent() {
         if (soc) {
           companyId = soc.id;
           setCompanies(prev => {
-            const updated = { ...prev, [soc.id]: { ...soc, invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } } };
+            const updated = { ...prev, [soc.id]: { ...soc, invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true, name: soc.name } } };
             localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
             return updated;
           });
+          setCompanyDetails({ name: soc.name });
         }
       } catch (e) { console.warn('[Login] Échec création société Supabase:', e); }
     }
@@ -602,7 +603,7 @@ function AppContent() {
     if (companyId && isUUID(companyId)) {
       setCompanies(prev => {
         if (prev[companyId]) return prev;
-        const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true } } };
+        const updated = { ...prev, [companyId]: { id: companyId, name: 'Ma Société', invoices: [], expenses: [], transactions: [], companyDetails: { onboardingDone: true, name: 'Ma Société' } } };
         localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
         return updated;
       });
@@ -730,7 +731,7 @@ function AppContent() {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
           setExpenses(expensesData);
-          setCompanyDetails(prev => ({ ...prev, name: '' }));
+          setCompanyDetails(prev => ({ ...prev, name: prev.name || companies[currentCompanyId]?.name || '' }));
           activeCompanyRef.current = currentCompanyId;
           return;
         }
