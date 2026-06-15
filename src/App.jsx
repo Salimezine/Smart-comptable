@@ -710,6 +710,16 @@ function AppContent() {
     } catch { return []; }
   });
 
+  // Sync currentUser.societeId to currentCompanyId when not already set (first visit, new device)
+  useEffect(() => {
+    if (!currentUser) return;
+    if (currentCompanyId) return;
+    if (currentUser.societeId && isUUID(currentUser.societeId)) {
+      setCurrentCompanyId(currentUser.societeId);
+      localStorage.setItem('smart_comptable_current_id', currentUser.societeId);
+    }
+  }, [currentUser, currentCompanyId]);
+
   // Load specific company data when selected
   useEffect(() => {
     if (!currentUser) return;
@@ -726,7 +736,14 @@ function AppContent() {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
           setExpenses(expensesData);
-          setCompanyDetails(prev => ({ ...prev, name: prev.name || companies[currentCompanyId]?.name || '' }));
+          // Populate companies so companyDetails.name resolves on subsequent renders
+          setCompanies(prev => {
+            if (prev[currentCompanyId]) return prev;
+            const updated = { ...prev, [currentCompanyId]: { id: currentCompanyId, invoices: invoicesData, expenses: expensesData, transactions: transactionsData, companyDetails: { name: currentUser?.email?.split('@')[0] || 'Ma Société' } } };
+            localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+            return updated;
+          });
+          setCompanyDetails(prev => ({ ...prev, name: prev.name || companies[currentCompanyId]?.companyDetails?.name || currentUser?.email?.split('@')[0] || 'Ma Société' }));
           activeCompanyRef.current = currentCompanyId;
           return;
         }
