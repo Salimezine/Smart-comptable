@@ -125,7 +125,7 @@ import { sendToTTN, handleTTNResponse } from './utils/ttnWorkflow';
 import { updateStockFromInvoice } from './utils/stockManager';
 import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
-import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData } from './utils/supabaseService';
+import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData, fetchCompanySettings, saveCompanySettings } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -727,23 +727,27 @@ function AppContent() {
       if (!currentCompanyId) return;
       // Try Supabase first (only if company_id is a valid UUID)
       if (isSupabaseEnabled() && isUUID(currentCompanyId)) {
-        const [invoicesData, transactionsData, expensesData] = await Promise.all([
+        const [invoicesData, transactionsData, expensesData, companySettings] = await Promise.all([
           fetchSupabaseData('invoices', currentCompanyId),
           fetchSupabaseData('transactions', currentCompanyId),
           fetchSupabaseData('expenses', currentCompanyId),
+          fetchCompanySettings(currentCompanyId),
         ]);
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
           setExpenses(expensesData);
-          // Populate companies so companyDetails.name resolves on subsequent renders
+          // Restore ALL company details from Supabase settings + localStorage fallback
+          const localDetails = companies[currentCompanyId]?.companyDetails || {};
+          const mergedSettings = { ...localDetails, ...(companySettings || {}) };
+          setCompanyDetails(prev => ({ ...prev, ...mergedSettings }));
+          // Populate companies for subsequent renders
           setCompanies(prev => {
             if (prev[currentCompanyId]) return prev;
-            const updated = { ...prev, [currentCompanyId]: { id: currentCompanyId, invoices: invoicesData, expenses: expensesData, transactions: transactionsData, companyDetails: { name: currentUser?.email?.split('@')[0] || 'Ma Société' } } };
+            const updated = { ...prev, [currentCompanyId]: { id: currentCompanyId, invoices: invoicesData, expenses: expensesData, transactions: transactionsData, companyDetails: mergedSettings } };
             localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
             return updated;
           });
-          setCompanyDetails(prev => ({ ...prev, name: prev.name || companies[currentCompanyId]?.companyDetails?.name || currentUser?.email?.split('@')[0] || 'Ma Société' }));
           activeCompanyRef.current = currentCompanyId;
           return;
         }
@@ -785,6 +789,7 @@ function AppContent() {
           await upsertSupabaseData('invoices', currentCompanyId, invoices);
           await upsertSupabaseData('transactions', currentCompanyId, transactions);
           await upsertSupabaseData('expenses', currentCompanyId, expenses);
+          await saveCompanySettings(currentCompanyId, safeDetails);
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
       // Always save locally

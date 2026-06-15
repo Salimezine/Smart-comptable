@@ -82,6 +82,17 @@ export async function updateCompany(id, values) {
   return data;
 }
 
+export async function fetchCompanySettings(companyId) {
+  if (!isSupabaseEnabled() || !navigator.onLine) return null;
+  const { data } = await supabase.from('companies').select('settings').eq('id', companyId).single();
+  return data?.settings || null;
+}
+
+export async function saveCompanySettings(companyId, settings) {
+  if (!isSupabaseEnabled() || !navigator.onLine) return;
+  await supabase.from('companies').update({ settings }).eq('id', companyId);
+}
+
 // ==============================
 // DATA LAYER — with localStorage fallback
 // ==============================
