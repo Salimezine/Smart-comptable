@@ -1,6 +1,17 @@
 import { supabase, isSupabaseEnabled } from './supabaseClient';
 export { isSupabaseEnabled };
 
+// Offline queue (retry on reconnect)
+const OFFLINE_QUEUE_KEY = 'smart_offline_queue';
+function getOfflineQueue() {
+  return JSON.parse(localStorage.getItem(OFFLINE_QUEUE_KEY) || '[]');
+}
+function addToOfflineQueue(op) {
+  const q = getOfflineQueue();
+  q.push({ ...op, queued_at: new Date().toISOString() });
+  localStorage.setItem(OFFLINE_QUEUE_KEY, JSON.stringify(q));
+}
+
 // ==============================
 // AUTH
 // ==============================
@@ -152,13 +163,17 @@ export async function upsertData(table, companyId, records) {
     const existing = lsRead(table, companyId) || [];
     const merged = mergeRecords(existing, withIds);
     lsWrite(table, companyId, merged);
+    addToOfflineQueue({ table, data: withIds, operation: 'upsert' });
     return merged;
   }
   const { data, error } = await supabase
     .from(table)
     .upsert(withIds)
     .select();
-  if (error) throw error;
+  if (error) {
+    addToOfflineQueue({ table, data: withIds, operation: 'upsert' });
+    throw error;
+  }
   const existing = lsRead(table, companyId) || [];
   const merged = mergeRecords(existing, data || []);
   lsWrite(table, companyId, merged);

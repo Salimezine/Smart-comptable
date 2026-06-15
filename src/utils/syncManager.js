@@ -45,6 +45,10 @@ export async function syncToCloud(table, data, operation = 'insert') {
 
 export async function flushOfflineQueue() {
   if (!isSupabaseEnabled() || !navigator.onLine) return;
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+  } catch { return; }
   const queue = getOfflineQueue();
   if (queue.length === 0) return;
 
