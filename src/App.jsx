@@ -733,6 +733,14 @@ function AppContent() {
           fetchSupabaseData('expenses', currentCompanyId),
           fetchCompanySettings(currentCompanyId),
         ]);
+        // Also fetch employees and payroll_slips into localStorage for PayrollView
+        Promise.all([
+          fetchSupabaseData('employees', currentCompanyId),
+          fetchSupabaseData('payroll_slips', currentCompanyId),
+        ]).then(([empData, payData]) => {
+          if (empData.length) localStorage.setItem(`smart_employes_${currentCompanyId}`, JSON.stringify(empData));
+          if (payData.length) localStorage.setItem(`smart_bulletins_${currentCompanyId}`, JSON.stringify(payData));
+        }).catch(() => {});
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
