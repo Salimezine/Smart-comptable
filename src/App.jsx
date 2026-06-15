@@ -127,6 +127,7 @@ import { supabase, isSupabaseEnabled } from './utils/supabaseClient';
 import { onAuthChange, getSession } from './utils/authSupabase';
 import { signUp, getProfile, getUserCompanies, createCompany as createCompanySupabase, fetchData as fetchSupabaseData, insertData as insertSupabaseData, updateData as updateSupabaseData, deleteData as deleteSupabaseData, upsertData as upsertSupabaseData, fetchCompanySettings, saveCompanySettings } from './utils/supabaseService';
 import { initNetworkListener, flushOfflineQueue } from './utils/syncManager';
+import { employeeToDB, bulletinToDB } from './utils/payrollStore';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 function isUUID(v) { return typeof v === 'string' && UUID_RE.test(v); }
@@ -541,6 +542,12 @@ function AppContent() {
       if (key.startsWith('smart_journal_') && !isUUID(key.slice(14))) {
         try { oldFlatKeys.push({ key, table: 'journal_entries', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
       }
+      if (key.startsWith('smart_employes_') && !isUUID(key.slice(14))) {
+        try { oldFlatKeys.push({ key, table: 'employees', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
+      }
+      if (key.startsWith('smart_bulletins_') && !isUUID(key.slice(15))) {
+        try { oldFlatKeys.push({ key, table: 'payroll_slips', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
+      }
     }
     // Create Supabase company if needed
     if (hasSupabase && (!companyId || !isUUID(companyId))) {
@@ -585,12 +592,26 @@ function AppContent() {
       // 2. Migrate data from flat keys like invoices_{nonUUID}
       for (const { key, table, data } of oldFlatKeys) {
         if (!Array.isArray(data) || data.length === 0) continue;
-        const enriched = data.map(r => ({ ...r, id: crypto.randomUUID?.() || `${Date.now()}_${Math.random().toString(36).slice(2)}`, company_id: companyId }));
+        let enriched;
+        let updatedData;
+        let newKey;
+        if (table === 'employees') {
+          updatedData = data.map(r => { const newId = r.id && isUUID(r.id) ? r.id : crypto.randomUUID(); return { ...r, id: newId }; });
+          enriched = updatedData.map(r => employeeToDB(r, companyId));
+          newKey = `smart_employes_${companyId}`;
+        } else if (table === 'payroll_slips') {
+          updatedData = data.map(r => { const newId = r.id && isUUID(r.id) ? r.id : crypto.randomUUID(); return { ...r, id: newId }; });
+          enriched = updatedData.map(r => bulletinToDB(r, companyId));
+          newKey = `smart_bulletins_${companyId}`;
+        } else {
+          enriched = data.map(r => ({ ...r, id: crypto.randomUUID?.() || `${Date.now()}_${Math.random().toString(36).slice(2)}`, company_id: companyId }));
+          updatedData = null;
+          newKey = key.startsWith('smart_journal_') ? `smart_journal_${companyId}` : `${table}_${companyId}`;
+        }
         const { error } = await supabase.from(table).upsert(enriched, { onConflict: 'id' });
         if (!error) {
           migrated[table] += enriched.length;
-          const newKey = key.startsWith('smart_journal_') ? `smart_journal_${companyId}` : `${table}_${companyId}`;
-          localStorage.setItem(newKey, JSON.stringify(enriched));
+          localStorage.setItem(newKey, JSON.stringify(updatedData || enriched));
           localStorage.removeItem(key);
         }
       }
@@ -826,6 +847,19 @@ function AppContent() {
           await upsertSupabaseData('expenses', currentCompanyId, expenses);
           await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
           await saveCompanySettings(currentCompanyId, safeDetails);
+          // Sync employees & payroll_slips from localStorage
+          try {
+            const localEmp = JSON.parse(localStorage.getItem(`smart_employes_${currentCompanyId}`) || '[]');
+            if (localEmp.length) {
+              const synced = localEmp.map(e => employeeToDB(e, currentCompanyId));
+              await supabase.from('employees').upsert(synced, { onConflict: 'id' });
+            }
+            const localPay = JSON.parse(localStorage.getItem(`smart_bulletins_${currentCompanyId}`) || '[]');
+            if (localPay.length) {
+              const synced = localPay.map(b => bulletinToDB(b, currentCompanyId));
+              await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
+            }
+          } catch (ee) { console.warn('[Save] Employee sync:', ee); }
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
       // Always save locally

@@ -16,7 +16,7 @@ function key(type) {
   return `smart_${type}_${getCompanyId()}`;
 }
 
-function employeeToDB(e, companyId) {
+export function employeeToDB(e, companyId) {
   return {
     id: e.id,
     company_id: companyId,
@@ -32,7 +32,7 @@ function employeeToDB(e, companyId) {
   };
 }
 
-function dbToEmployee(e) {
+export function dbToEmployee(e) {
   return {
     id: e.id,
     nom: e.nom,
@@ -45,6 +45,25 @@ function dbToEmployee(e) {
     chefFamille: e.situation_famille === 'chef_famille',
     conjointCharge: e.situation_famille === 'marie',
     nbEnfants: e.nb_enfants ?? 0,
+  };
+}
+
+export function bulletinToDB(b, companyId) {
+  return {
+    id: b.id || crypto.randomUUID(),
+    company_id: companyId,
+    employee_id: b.employeId,
+    nom: b.nom,
+    prenom: b.prenom,
+    mois: b.mois,
+    annee: b.annee,
+    salaire_base: parseFloat(b.salaireBase) || 0,
+    brut: parseFloat(b.brut) || 0,
+    cnss_sal: parseFloat(b.cnssSal) || 0,
+    cnss_pat: parseFloat(b.cnssPat) || 0,
+    irpp: parseFloat(b.irppAnnuel) || 0,
+    net_a_payer: parseFloat(b.netAPayer) || 0,
+    cout_employeur: parseFloat(b.coutEmployeur) || 0,
   };
 }
 
@@ -68,7 +87,7 @@ function syncEmployeesToSupabase(companyId) {
     localStorage.setItem(key('employes'), JSON.stringify(fixed));
   }
   const synced = fixed.map(e => employeeToDB(e, companyId));
-  supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(() => {});
+  supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(e => console.warn('[EmployeeSync]', e));
 }
 
 function isUUID(str) {
@@ -129,23 +148,8 @@ export function saveBulletin(bulletin) {
     if (isSupabaseEnabled() && navigator.onLine) {
       const companyId = localStorage.getItem('smart_comptable_current_id');
       if (companyId) {
-        const dbRecord = {
-          id: bulletin.id || crypto.randomUUID(),
-          company_id: companyId,
-          employee_id: bulletin.employeId,
-          nom: bulletin.nom,
-          prenom: bulletin.prenom,
-          mois: bulletin.mois,
-          annee: bulletin.annee,
-          salaire_base: parseFloat(bulletin.salaireBase) || 0,
-          brut: parseFloat(bulletin.brut) || 0,
-          cnss_sal: parseFloat(bulletin.cnssSal) || 0,
-          cnss_pat: parseFloat(bulletin.cnssPat) || 0,
-          irpp: parseFloat(bulletin.irppAnnuel) || 0,
-          net_a_payer: parseFloat(bulletin.netAPayer) || 0,
-          cout_employeur: parseFloat(bulletin.coutEmployeur) || 0,
-        };
-        supabase.from('payroll_slips').upsert(dbRecord, { onConflict: 'id' }).catch(() => {});
+        const dbRecord = bulletinToDB(bulletin, companyId);
+        supabase.from('payroll_slips').upsert([dbRecord], { onConflict: 'id' }).catch(e => console.warn('[PayrollSync]', e));
       }
     }
     return bulletin;
