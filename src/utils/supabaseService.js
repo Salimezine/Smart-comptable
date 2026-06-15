@@ -84,6 +84,7 @@ export async function updateCompany(id, values) {
 
 export async function fetchCompanySettings(companyId) {
   if (!isSupabaseEnabled() || !navigator.onLine) return null;
+  if (!(await hasSession())) return null;
   const { data } = await supabase.from('companies').select('settings').eq('id', companyId).single();
   return data?.settings || null;
 }
@@ -116,10 +117,16 @@ function filterByCompany(query, companyId) {
 }
 
 // Generic fetch: Supabase first, localStorage fallback
+async function hasSession() {
+  try { const { data: { session } } = await supabase.auth.getSession(); return !!session; }
+  catch { return false; }
+}
+
 export async function fetchData(table, companyId, orderBy = 'created_at', ascending = false) {
   if (!isSupabaseEnabled() || !navigator.onLine) {
     return lsRead(table, companyId) || [];
   }
+  if (!(await hasSession())) return lsRead(table, companyId) || [];
   const { data } = await supabase
     .from(table)
     .select('*')
@@ -141,6 +148,12 @@ export async function upsertData(table, companyId, records) {
     return merged;
   }
   if (withIds.length === 0) return [];
+  if (!(await hasSession())) {
+    const existing = lsRead(table, companyId) || [];
+    const merged = mergeRecords(existing, withIds);
+    lsWrite(table, companyId, merged);
+    return merged;
+  }
   const { data, error } = await supabase
     .from(table)
     .upsert(withIds)
