@@ -60,7 +60,6 @@ export async function flushOfflineQueue() {
 
 export function initNetworkListener() {
   window.addEventListener('online', () => {
-    console.log('[Sync] Connexion rétablie — flush offline queue');
     flushOfflineQueue();
   });
 }

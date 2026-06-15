@@ -525,7 +525,6 @@ function AppContent() {
     let companyId = user?.societeId || localStorage.getItem('smart_comptable_current_id');
     const hasSupabase = isSupabaseEnabled() && navigator.onLine && user?.id && isUUID(user.id);
     // BEFORE overwriting anything, capture old data from localStorage
-    console.log('[Login] user:', !!user, 'hasSupabase:', hasSupabase);
     const oldRaw = localStorage.getItem('smart_comptable_companies');
     let oldCompaniesData = null;
     try { oldCompaniesData = oldRaw ? JSON.parse(oldRaw) : null; } catch {}
@@ -543,8 +542,6 @@ function AppContent() {
         try { oldFlatKeys.push({ key, table: 'journal_entries', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
       }
     }
-    console.log('[Migration] oldCompaniesData keys:', oldCompaniesData ? Object.keys(oldCompaniesData) : 'none');
-    console.log('[Migration] oldFlatKeys:', oldFlatKeys.map(k => `${k.key} (${k.data.length} items)`));
     // Create Supabase company if needed
     if (hasSupabase && (!companyId || !isUUID(companyId))) {
       try {
@@ -598,7 +595,6 @@ function AppContent() {
         }
       }
       const total = Object.values(migrated).reduce((a, b) => a + b, 0);
-      console.log('[Migration] result:', total > 0 ? `OK (${total})` : 'NO DATA', migrated);
     }
     if (companyId && isUUID(companyId)) {
       setCompanies(prev => {
@@ -726,7 +722,6 @@ function AppContent() {
           fetchSupabaseData('transactions', currentCompanyId),
           fetchSupabaseData('expenses', currentCompanyId),
         ]);
-        console.log('[DataLoad] Supabase: invoices:', invoicesData.length, 'transactions:', transactionsData.length, 'expenses:', expensesData.length);
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
@@ -761,7 +756,6 @@ function AppContent() {
 
     // Guard: don't save stale data when switching companies
     if (currentCompanyId !== activeCompanyRef.current) {
-      console.log('[Save] SKIP — activeCompanyRef mismatch', { current: currentCompanyId, ref: activeCompanyRef.current });
       return;
     }
 
@@ -776,8 +770,6 @@ function AppContent() {
           await upsertSupabaseData('expenses', currentCompanyId, expenses);
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
-
-      console.log('[Save] saving locally — invoices:', invoices?.length, 'expenses:', expenses?.length, 'transactions:', transactions?.length);
       // Always save locally
       setCompanies(prev => {
         const currentData = prev[currentCompanyId] || {};
@@ -1429,6 +1421,7 @@ function AppContent() {
                 expenses={expenses}
                 setExpenses={setExpenses}
                 formatCurrency={formatCurrency}
+                currentCompanyId={currentCompanyId}
               />
             )}
             {currentTab === 'stock' && (
@@ -2554,6 +2547,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
                             });
                             if (ok) {
                               setInvoices(invoices.filter(x => x.id !== inv.id));
+                              deleteSupabaseData('invoices', currentCompanyId, inv.id).catch(() => {});
                               setTeifStatusMap(prev => { const n = {...prev}; delete n[inv.id]; return n; });
                               toast.success(`Facture ${inv.invoiceNumber} supprimée.`);
                             }

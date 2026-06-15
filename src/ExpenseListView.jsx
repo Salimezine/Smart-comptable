@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Filter, Trash2, TrendingDown, Search, X, BarChart3, Calendar, Tag, AlertCircle } from 'lucide-react';
 import { useConfirm } from './components/ConfirmModal';
 import { useToast } from './components/Toast';
+import { deleteData as deleteSupabaseData, isSupabaseEnabled } from './utils/supabaseService';
 
 const CATEGORY_COLORS = {
   frais_telecommunication: 'bg-blue-500/15 text-blue-400 border-blue-500/20',
@@ -35,7 +36,7 @@ function SupplierAvatar({ name }) {
   );
 }
 
-export default function ExpenseListView({ expenses, setExpenses, formatCurrency }) {
+export default function ExpenseListView({ expenses, setExpenses, formatCurrency, currentCompanyId }) {
   const confirm = useConfirm();
   const { success, error: toastError } = useToast();
   const [filterCategory, setFilterCategory] = useState('all');
@@ -66,6 +67,7 @@ export default function ExpenseListView({ expenses, setExpenses, formatCurrency 
     });
     if (!ok) return;
     setExpenses(expenses.filter(x => x.id !== exp.id));
+    if (currentCompanyId) deleteSupabaseData('expenses', currentCompanyId, exp.id).catch(() => {});
     success(`Dépense "${exp.supplier}" supprimée.`);
   };
 
