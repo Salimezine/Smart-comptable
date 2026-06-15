@@ -18,18 +18,35 @@ function key(type) {
 
 function syncEmployeesToSupabase(companyId) {
   if (!isSupabaseEnabled() || !navigator.onLine || !companyId) return;
-  const employes = getEmployes();
-  supabase.from('employees').upsert(
-    employes.map(e => ({ ...e, company_id: companyId })),
-    { onConflict: 'id' }
-  ).catch(() => {});
+  let employes = getEmployes();
+  let changed = false;
+  const synced = employes.map(e => {
+    const ensured = ensureUUID(e);
+    if (ensured.id !== e.id) changed = true;
+    return { ...ensured, company_id: companyId };
+  });
+  if (changed) {
+    localStorage.setItem(key('employes'), JSON.stringify(synced.map(e => ({ ...e, company_id: undefined }))));
+  }
+  supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(() => {});
+}
+
+function isUUID(str) {
+  return typeof str === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(str);
+}
+
+function ensureUUID(record) {
+  if (!record.id || !isUUID(record.id)) {
+    return { ...record, id: crypto.randomUUID() };
+  }
+  return record;
 }
 
 export function saveEmploye(employe) {
   try {
     const employes = getEmployes();
     if (!employe.id) {
-      employe.id = 'EMP-' + String(Date.now()).slice(-6) + String(Math.random()).slice(2, 6);
+      employe.id = crypto.randomUUID();
     }
     const idx = employes.findIndex(e => e.id === employe.id);
     if (idx >= 0) employes[idx] = employe;
@@ -71,7 +88,7 @@ export function saveBulletin(bulletin) {
     // Sync to Supabase
     if (isSupabaseEnabled() && navigator.onLine) {
       const companyId = localStorage.getItem('smart_comptable_current_id');
-      if (companyId) supabase.from('payroll_slips').upsert({ ...bulletin, company_id: companyId }, { onConflict: 'id' }).catch(() => {});
+      if (companyId) supabase.from('payroll_slips').upsert(ensureUUID({ ...bulletin, company_id: companyId }), { onConflict: 'id' }).catch(() => {});
     }
     return bulletin;
   } catch { return null; }
