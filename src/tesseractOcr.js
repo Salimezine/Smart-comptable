@@ -209,9 +209,13 @@ async function preprocessImage(file) {
     });
     URL.revokeObjectURL(url);
 
+    let { width, height } = img;
+    if (width < 50 || height < 50) {
+      throw new Error('Image trop petite (' + width + '×' + height + ') — impossible à lire');
+    }
+
     // Resize if too large
     const maxDim = 2400;
-    let { width, height } = img;
     if (width > maxDim || height > maxDim) {
       if (width > height) { height = Math.round(height * maxDim / width); width = maxDim; }
       else { width = Math.round(width * maxDim / height); height = maxDim; }
@@ -219,7 +223,7 @@ async function preprocessImage(file) {
 
     canvas = document.createElement('canvas');
     canvas.width = width; canvas.height = height;
-    ctx = canvas.getContext('2d');
+    ctx = canvas.getContext('2d', { willReadFrequently: true });
 
     // Step 1: Draw original
     ctx.drawImage(img, 0, 0, width, height);
@@ -274,6 +278,7 @@ async function doOcr(input, onProgress, isPdfPage = false) {
   worker = await Tesseract.createWorker('fra', 1, {
     workerPath: basePath + 'worker.min.js',
     corePath: basePath,
+    langPath: 'https://tessdata.projectnaptha.com/4.0.0',
   }).catch(err => {
     throw new Error('Échec création worker OCR: ' + (err.message || err));
   });
