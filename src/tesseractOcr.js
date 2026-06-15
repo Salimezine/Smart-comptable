@@ -274,7 +274,6 @@ async function doOcr(input, onProgress, isPdfPage = false) {
   worker = await Tesseract.createWorker('fra', 1, {
     workerPath: basePath + 'worker.min.js',
     corePath: basePath + 'tesseract-core.wasm.js',
-    langPath: 'https://tessdata.projectnaptha.com/4.0.0',
   }).catch(err => {
     throw new Error('Échec création worker OCR: ' + (err.message || err));
   });
