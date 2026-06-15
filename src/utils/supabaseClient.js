@@ -27,3 +27,24 @@ export const supabase = (SUPABASE_URL && SUPABASE_KEY)
   : null;
 
 export const isSupabaseEnabled = () => supabase !== null;
+
+export let supabaseSessionActive = false;
+
+export async function checkSupabaseSession() {
+  if (!supabase) { supabaseSessionActive = false; return false; }
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    supabaseSessionActive = !!session?.access_token;
+    return supabaseSessionActive;
+  } catch {
+    supabaseSessionActive = false;
+    return false;
+  }
+}
+
+// Listen for auth state changes
+if (supabase) {
+  supabase.auth.onAuthStateChange((event, session) => {
+    supabaseSessionActive = !!session?.access_token;
+  });
+}

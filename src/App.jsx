@@ -542,10 +542,12 @@ function AppContent() {
       if (key.startsWith('smart_journal_') && !isUUID(key.slice(14))) {
         try { oldFlatKeys.push({ key, table: 'journal_entries', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
       }
-      if (key.startsWith('smart_employes_') && !isUUID(key.slice(14))) {
+      const empSuffix = key.startsWith('smart_employes_') ? key.slice(14) : null;
+      if (empSuffix && (!isUUID(empSuffix) || empSuffix !== companyId)) {
         try { oldFlatKeys.push({ key, table: 'employees', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
       }
-      if (key.startsWith('smart_bulletins_') && !isUUID(key.slice(15))) {
+      const bulSuffix = key.startsWith('smart_bulletins_') ? key.slice(15) : null;
+      if (bulSuffix && (!isUUID(bulSuffix) || bulSuffix !== companyId)) {
         try { oldFlatKeys.push({ key, table: 'payroll_slips', data: JSON.parse(localStorage.getItem(key) || '[]') }); } catch {}
       }
     }
@@ -839,27 +841,30 @@ function AppContent() {
     const saveData = async () => {
       const safeDetails = { ...companyDetails };
 
-      // Sync to Supabase when available (only if company_id is a valid UUID)
+      // Sync to Supabase when available (only if company_id is a valid UUID and session active)
       if (isSupabaseEnabled() && navigator.onLine && isUUID(currentCompanyId)) {
         try {
-          await upsertSupabaseData('invoices', currentCompanyId, invoices);
-          await upsertSupabaseData('transactions', currentCompanyId, transactions);
-          await upsertSupabaseData('expenses', currentCompanyId, expenses);
-          await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
-          await saveCompanySettings(currentCompanyId, safeDetails);
-          // Sync employees & payroll_slips from localStorage
-          try {
-            const localEmp = JSON.parse(localStorage.getItem(`smart_employes_${currentCompanyId}`) || '[]');
-            if (localEmp.length) {
-              const synced = localEmp.map(e => employeeToDB(e, currentCompanyId));
-              await supabase.from('employees').upsert(synced, { onConflict: 'id' });
-            }
-            const localPay = JSON.parse(localStorage.getItem(`smart_bulletins_${currentCompanyId}`) || '[]');
-            if (localPay.length) {
-              const synced = localPay.map(b => bulletinToDB(b, currentCompanyId));
-              await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
-            }
-          } catch (ee) { console.warn('[Save] Employee sync:', ee); }
+          const { data: { session } } = await supabase.auth.getSession();
+          if (!session) { /* skip if no session */ }
+          else {
+            await upsertSupabaseData('invoices', currentCompanyId, invoices);
+            await upsertSupabaseData('transactions', currentCompanyId, transactions);
+            await upsertSupabaseData('expenses', currentCompanyId, expenses);
+            await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
+            await saveCompanySettings(currentCompanyId, safeDetails);
+            try {
+              const localEmp = JSON.parse(localStorage.getItem(`smart_employes_${currentCompanyId}`) || '[]');
+              if (localEmp.length) {
+                const synced = localEmp.map(e => employeeToDB(e, currentCompanyId));
+                await supabase.from('employees').upsert(synced, { onConflict: 'id' });
+              }
+              const localPay = JSON.parse(localStorage.getItem(`smart_bulletins_${currentCompanyId}`) || '[]');
+              if (localPay.length) {
+                const synced = localPay.map(b => bulletinToDB(b, currentCompanyId));
+                await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
+              }
+            } catch (ee) { console.warn('[Save] Employee sync:', ee); }
+          }
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
       // Always save locally

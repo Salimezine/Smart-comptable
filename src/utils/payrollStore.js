@@ -79,15 +79,23 @@ function fixEmployeeIds(employes) {
   return { fixed, changed };
 }
 
+async function hasSession() {
+  try { const { data: { session } } = await supabase.auth.getSession(); return !!session; }
+  catch { return false; }
+}
+
 function syncEmployeesToSupabase(companyId) {
   if (!isSupabaseEnabled() || !navigator.onLine || !companyId) return;
-  let employes = getEmployes();
-  const { fixed, changed } = fixEmployeeIds(employes);
-  if (changed) {
-    localStorage.setItem(key('employes'), JSON.stringify(fixed));
-  }
-  const synced = fixed.map(e => employeeToDB(e, companyId));
-  supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(e => console.warn('[EmployeeSync]', e));
+  hasSession().then(ok => {
+    if (!ok) return;
+    let employes = getEmployes();
+    const { fixed, changed } = fixEmployeeIds(employes);
+    if (changed) {
+      localStorage.setItem(key('employes'), JSON.stringify(fixed));
+    }
+    const synced = fixed.map(e => employeeToDB(e, companyId));
+    supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(e => console.warn('[EmployeeSync]', e));
+  }).catch(() => {});
 }
 
 function isUUID(str) {
@@ -148,8 +156,11 @@ export function saveBulletin(bulletin) {
     if (isSupabaseEnabled() && navigator.onLine) {
       const companyId = localStorage.getItem('smart_comptable_current_id');
       if (companyId) {
-        const dbRecord = bulletinToDB(bulletin, companyId);
-        supabase.from('payroll_slips').upsert([dbRecord], { onConflict: 'id' }).catch(e => console.warn('[PayrollSync]', e));
+        hasSession().then(ok => {
+          if (!ok) return;
+          const dbRecord = bulletinToDB(bulletin, companyId);
+          supabase.from('payroll_slips').upsert([dbRecord], { onConflict: 'id' }).catch(e => console.warn('[PayrollSync]', e));
+        }).catch(() => {});
       }
     }
     return bulletin;
