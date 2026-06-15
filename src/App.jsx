@@ -771,9 +771,9 @@ function AppContent() {
       // Sync to Supabase when available (only if company_id is a valid UUID)
       if (isSupabaseEnabled() && navigator.onLine && isUUID(currentCompanyId)) {
         try {
-          if (invoices.length > 0) await upsertSupabaseData('invoices', currentCompanyId, invoices);
-          if (transactions.length > 0) await upsertSupabaseData('transactions', currentCompanyId, transactions);
-          if (expenses.length > 0) await upsertSupabaseData('expenses', currentCompanyId, expenses);
+          await upsertSupabaseData('invoices', currentCompanyId, invoices);
+          await upsertSupabaseData('transactions', currentCompanyId, transactions);
+          await upsertSupabaseData('expenses', currentCompanyId, expenses);
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
 

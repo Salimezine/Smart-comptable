@@ -129,6 +129,20 @@ export async function upsertData(table, companyId, records) {
     lsWrite(table, companyId, merged);
     return merged;
   }
+  // Get all existing Supabase IDs for this company (to detect deletions)
+  const { data: existingAll } = await supabase.from(table).select('id').eq('company_id', companyId);
+  const existingIds = new Set((existingAll || []).map(r => r.id));
+  const localIds = new Set(withIds.map(r => r.id));
+  // Remove records deleted locally
+  const toDelete = [...existingIds].filter(id => !localIds.has(id));
+  if (toDelete.length > 0) {
+    await supabase.from(table).delete().in('id', toDelete);
+  }
+  // Upsert current records
+  if (withIds.length === 0) {
+    lsWrite(table, companyId, []);
+    return [];
+  }
   const { data, error } = await supabase
     .from(table)
     .upsert(withIds)
