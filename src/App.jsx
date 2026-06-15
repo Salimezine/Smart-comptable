@@ -741,8 +741,29 @@ function AppContent() {
           fetchSupabaseData('stock_mouvements', currentCompanyId),
           fetchSupabaseData('pieces_comptables', currentCompanyId),
         ]).then(([empData, payData, stockData, movData, piecesData]) => {
-          if (empData.length) localStorage.setItem(`smart_employes_${currentCompanyId}`, JSON.stringify(empData));
-          if (payData.length) localStorage.setItem(`smart_bulletins_${currentCompanyId}`, JSON.stringify(payData));
+          if (empData.length) {
+            const mapped = empData.map(e => ({
+              id: e.id, nom: e.nom, prenom: e.prenom, cin: e.cin,
+              matricule: e.matricule, poste: e.poste,
+              salaireBase: e.salaire_base ?? 0,
+              regimeHoraire: e.regime === '48h' ? 48 : 40,
+              chefFamille: e.situation_famille === 'chef_famille',
+              conjointCharge: e.situation_famille === 'marie',
+              nbEnfants: e.nb_enfants ?? 0,
+            }));
+            localStorage.setItem(`smart_employes_${currentCompanyId}`, JSON.stringify(mapped));
+          }
+          if (payData.length) {
+            const mapped = payData.map(b => ({
+              id: b.id, employeId: b.employee_id, nom: b.nom, prenom: b.prenom,
+              mois: b.mois, annee: b.annee,
+              salaireBase: b.salaire_base, brut: b.brut,
+              cnssSal: b.cnss_sal, cnssPat: b.cnss_pat,
+              irppAnnuel: b.irpp, netAPayer: b.net_a_payer,
+              coutEmployeur: b.cout_employeur,
+            }));
+            localStorage.setItem(`smart_bulletins_${currentCompanyId}`, JSON.stringify(mapped));
+          }
           if (stockData.length) localStorage.setItem(`smart_stock_${currentCompanyId}`, JSON.stringify(stockData));
           if (movData.length) localStorage.setItem(`STOCK_LOG_KEY_${currentCompanyId}`, JSON.stringify(movData));
           if (piecesData.length) localStorage.setItem(`piecesComptables_${currentCompanyId}`, JSON.stringify(piecesData));

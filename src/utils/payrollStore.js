@@ -16,18 +16,58 @@ function key(type) {
   return `smart_${type}_${getCompanyId()}`;
 }
 
+function employeeToDB(e, companyId) {
+  return {
+    id: e.id,
+    company_id: companyId,
+    nom: e.nom,
+    prenom: e.prenom,
+    cin: e.cin,
+    matricule: e.matricule,
+    poste: e.poste,
+    salaire_base: parseFloat(e.salaireBase) || 0,
+    nb_enfants: parseInt(e.nbEnfants) || 0,
+    regime: e.regimeHoraire === 48 ? '48h' : '40h',
+    situation_famille: e.chefFamille ? 'chef_famille' : e.conjointCharge ? 'marie' : 'celibataire',
+  };
+}
+
+function dbToEmployee(e) {
+  return {
+    id: e.id,
+    nom: e.nom,
+    prenom: e.prenom,
+    cin: e.cin,
+    matricule: e.matricule,
+    poste: e.poste,
+    salaireBase: e.salaire_base ?? 0,
+    regimeHoraire: e.regime === '48h' ? 48 : 40,
+    chefFamille: e.situation_famille === 'chef_famille',
+    conjointCharge: e.situation_famille === 'marie',
+    nbEnfants: e.nb_enfants ?? 0,
+  };
+}
+
+function fixEmployeeIds(employes) {
+  let changed = false;
+  const fixed = employes.map(e => {
+    if (!e.id || !isUUID(e.id)) {
+      changed = true;
+      return { ...e, id: crypto.randomUUID() };
+    }
+    return e;
+  });
+  return { fixed, changed };
+}
+
 function syncEmployeesToSupabase(companyId) {
   if (!isSupabaseEnabled() || !navigator.onLine || !companyId) return;
   let employes = getEmployes();
-  let changed = false;
-  const synced = employes.map(e => {
-    const ensured = ensureUUID(e);
-    if (ensured.id !== e.id) changed = true;
-    return { ...ensured, company_id: companyId };
-  });
+  const { fixed, changed } = fixEmployeeIds(employes);
   if (changed) {
-    localStorage.setItem(key('employes'), JSON.stringify(synced.map(e => ({ ...e, company_id: undefined }))));
+    localStorage.setItem(key('employes'), JSON.stringify(fixed));
   }
+  const synced = fixed.map(e => employeeToDB(e, companyId));
   supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(() => {});
 }
 
@@ -88,7 +128,25 @@ export function saveBulletin(bulletin) {
     // Sync to Supabase
     if (isSupabaseEnabled() && navigator.onLine) {
       const companyId = localStorage.getItem('smart_comptable_current_id');
-      if (companyId) supabase.from('payroll_slips').upsert(ensureUUID({ ...bulletin, company_id: companyId }), { onConflict: 'id' }).catch(() => {});
+      if (companyId) {
+        const dbRecord = {
+          id: bulletin.id || crypto.randomUUID(),
+          company_id: companyId,
+          employee_id: bulletin.employeId,
+          nom: bulletin.nom,
+          prenom: bulletin.prenom,
+          mois: bulletin.mois,
+          annee: bulletin.annee,
+          salaire_base: parseFloat(bulletin.salaireBase) || 0,
+          brut: parseFloat(bulletin.brut) || 0,
+          cnss_sal: parseFloat(bulletin.cnssSal) || 0,
+          cnss_pat: parseFloat(bulletin.cnssPat) || 0,
+          irpp: parseFloat(bulletin.irppAnnuel) || 0,
+          net_a_payer: parseFloat(bulletin.netAPayer) || 0,
+          cout_employeur: parseFloat(bulletin.coutEmployeur) || 0,
+        };
+        supabase.from('payroll_slips').upsert(dbRecord, { onConflict: 'id' }).catch(() => {});
+      }
     }
     return bulletin;
   } catch { return null; }
