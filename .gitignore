@@ -30,3 +30,7 @@ public/tesseract/
 
 # pdf.js worker (auto-copied via postinstall)
 public/pdf.worker.min.js
+
+# Test files
+test_*.mjs
+test_*.js
