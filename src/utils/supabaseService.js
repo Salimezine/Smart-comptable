@@ -256,7 +256,7 @@ export async function migrateLocalToSupabase(companyId) {
   if (!(await hasSession())) return { success: false, reason: 'Aucune session Supabase active — connectez-vous d\'abord' };
   const results = [];
   // Tables with standard key format: {table}_{companyId}
-  const stdTables = ['journal_entries', 'invoices', 'expenses', 'transactions'];
+  const stdTables = ['journal_entries', 'invoices', 'expenses', 'transactions', 'stock', 'stock_mouvements', 'pieces_comptables'];
   for (const table of stdTables) {
     const local = lsRead(table, companyId);
     if (!local || local.length === 0) continue;
