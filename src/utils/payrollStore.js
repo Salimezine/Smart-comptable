@@ -142,10 +142,9 @@ export function deleteEmploye(id) {
 
 export function saveBulletin(bulletin) {
   try {
-    const bulletins = getBulletins(bulletin.mois, bulletin.annee);
-    const idx = bulletins.findIndex(b => b.employeId === bulletin.employeId && b.mois === bulletin.mois && b.annee === bulletin.annee);
-    if (idx >= 0) bulletins[idx] = bulletin;
-    else bulletins.push(bulletin);
+    if (!bulletin.id) {
+      bulletin.id = `${bulletin.employeId}_${bulletin.annee}_${String(bulletin.mois).padStart(2, '0')}`;
+    }
     const allKey = key('bulletins');
     const all = getAllBulletins();
     const filtered = all.filter(b => !(b.mois === bulletin.mois && b.annee === bulletin.annee && b.employeId === bulletin.employeId));

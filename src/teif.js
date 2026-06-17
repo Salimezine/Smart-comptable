@@ -575,6 +575,7 @@ export function getTTNMode() {
 }
 
 export function sendToTTN(signedXml, credentials = {}) {
+  const ttnMode = getTTNMode();
   return new Promise((resolve, reject) => {
     if (!signedXml || typeof signedXml !== 'string' || signedXml.length < 100) {
       reject(new Error('XML signé invalide ou trop court'));

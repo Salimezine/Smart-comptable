@@ -1,8 +1,13 @@
 /**
- * teifGenerator.js — Génération XML TEIF v1.8.8
+ * teifGenerator.js — Génération XML TEIF v1.0 (UBL 2.1)
  *
- * Conforme au standard TTN El Fatoora (Tunisie)
+ * Conforme au standard TTN El Fatoora (Tunisie — LF 2026)
  * Pure JS navigateur — zéro dépendance externe
+ *
+ * Exporte:
+ *   generateTEIFXML(invoice) → { xml, qr, totalTTC, internalId, error? }
+ *   validateTEIF(xmlString)   → { valid, errors }
+ *   downloadTEIFXML(xml, id)  → déclenche téléchargement navigateur
  */
 
 function esc(str) {
@@ -75,7 +80,7 @@ function resolveFournisseur(invoice) {
 }
 
 function taxExemptionCode(taux) {
-  const t = parseFloat(taux) || 19;
+  const t0 = parseFloat(taux); const t = (t0 === 0) ? 0 : (t0 || 19);
   if (t === 0) return 'E';
   return 'S';
 }
@@ -105,18 +110,16 @@ export function generateTEIFXML(invoice) {
     const baseHT = lignes.reduce((s, l) => s + (parseFloat(l.quantite) || 0) * (parseFloat(l.prixUnitaireHT) || 0), 0);
 
     const tvaGroups = {};
+    let fodecTotal = 0;
     lignes.forEach(l => {
-      const taux = parseFloat(l.tauxTVA) || 19;
+      const r = parseFloat(l.tauxTVA); const taux = (r === 0) ? 0 : (r || 19);
       const ht = (parseFloat(l.quantite) || 0) * (parseFloat(l.prixUnitaireHT) || 0);
       const mtva = ht * taux / 100;
       if (!tvaGroups[taux]) tvaGroups[taux] = 0;
       tvaGroups[taux] += mtva;
+      if (l.fodec) fodecTotal += ht * 0.01;
     });
     const totalTVA = Object.values(tvaGroups).reduce((s, v) => s + v, 0);
-
-    const fodecTotal = lignes
-      .filter(l => l.fodec)
-      .reduce((s, l) => s + (parseFloat(l.quantite) || 0) * (parseFloat(l.prixUnitaireHT) || 0) * 0.01, 0);
 
     const timbre = parseFloat(invoice.timbre) || 0;
     const totalTTC = baseHT + totalTVA + fodecTotal + timbre;
@@ -130,7 +133,7 @@ export function generateTEIFXML(invoice) {
     const qr = qrData(mfFournisseur, invId, dateEmission, totalTTC);
 
     function tvaBlock() {
-      return Object.entries(tvaGroups)
+      const subs = Object.entries(tvaGroups)
         .filter(([, v]) => v > 0.001)
         .map(([taux, mt]) => {
           const code = taxExemptionCode(taux);
@@ -148,6 +151,20 @@ export function generateTEIFXML(invoice) {
         </cac:TaxCategory>
       </cac:TaxSubtotal>`;
         }).join('');
+      const fodec = fodecTotal > 0.001 ? `
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="TND">${fmt3(baseHT)}</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="TND">${fmt3(fodecTotal)}</cbc:TaxAmount>
+        <cbc:Percent>1.000</cbc:Percent>
+        <cac:TaxCategory>
+          <cbc:ID>FODEC</cbc:ID>
+          <cbc:Percent>1.000</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>FODEC</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>` : '';
+      return subs + fodec;
     }
 
     function linesBlock() {
@@ -167,7 +184,7 @@ export function generateTEIFXML(invoice) {
         <cbc:InvoicedQuantity unitCode="C62">${fmt3(qte)}</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="TND">${fmt3(ttotal)}</cbc:LineExtensionAmount>
         <cac:TaxTotal>
-          <cbc:TaxAmount currencyID="TND">${fmt3(ttotal * (parseFloat(l.tauxTVA) || 19) / 100)}</cbc:TaxAmount>
+          <cbc:TaxAmount currencyID="TND">${fmt3(function(){const rr=parseFloat(l.tauxTVA);const t=(rr===0)?0:(rr||19);return ttotal*t/100;}())}</cbc:TaxAmount>
         </cac:TaxTotal>
         <cac:Price>
           <cbc:PriceAmount currencyID="TND">${fmt3(pu)}</cbc:PriceAmount>
@@ -217,15 +234,20 @@ export function generateTEIFXML(invoice) {
     <cbc:Note>${esc(invoice.note)}</cbc:Note>
   </cac:InvoiceLine>` : '';
 
+    const taxTotalAmount = totalTVA + fodecTotal;
+
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
          xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+         xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+         xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-  <cbc:CustomizationID>TEIF-1.8.8</cbc:CustomizationID>
+  <cbc:CustomizationID>UBL-2.1-TEIF-1.0</cbc:CustomizationID>
   <cbc:ID>${esc(invId)}</cbc:ID>
   <cbc:IssueDate>${dateEmission}</cbc:IssueDate>
+  <cbc:IssueTime>${new Date().toISOString().slice(11, 19)}</cbc:IssueTime>
   <cbc:InvoiceTypeCode>${esc(type)}</cbc:InvoiceTypeCode>
   <cbc:DocumentCurrencyCode>TND</cbc:DocumentCurrencyCode>
 
@@ -244,14 +266,14 @@ export function generateTEIFXML(invoice) {
   ${linesBlock()}
 
   <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="TND">${fmt3(totalTVA)}</cbc:TaxAmount>
+    <cbc:TaxAmount currencyID="TND">${fmt3(taxTotalAmount)}</cbc:TaxAmount>
     ${tvaBlock()}
   </cac:TaxTotal>
 
   <cac:LegalMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="TND">${fmt3(baseHT)}</cbc:LineExtensionAmount>
     <cbc:TaxExclusiveAmount currencyID="TND">${fmt3(baseHT)}</cbc:TaxExclusiveAmount>
-    <cbc:TaxInclusiveAmount currencyID="TND">${fmt3(baseHT + totalTVA)}</cbc:TaxInclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="TND">${fmt3(baseHT + taxTotalAmount)}</cbc:TaxInclusiveAmount>
     <cbc:AllowanceTotalAmount currencyID="TND">0.000</cbc:AllowanceTotalAmount>
     <cbc:ChargeTotalAmount currencyID="TND">${fmt3(timbre)}</cbc:ChargeTotalAmount>
     <cbc:PrepaidAmount currencyID="TND">0.000</cbc:PrepaidAmount>
@@ -295,6 +317,12 @@ export function validateTEIF(xmlString) {
       errors.push('MF fournisseur manquant → Allez dans Configuration > Matricule Fiscal (MF) et saisissez votre MF (ex: 1234567/X/A/000)');
     } else if (!/^\d{6,7}\/[A-Z]/.test(mf)) {
       errors.push(`MF fournisseur "${mf}" invalide — format attendu: 1234567/X/A/000 (7 chiffres + barre + lettre + barre + lettre + barre + 3 chiffres)`);
+    }
+
+    const clientMfMatch = xmlString.match(/<cbc:ID schemeID="MF_CLIENT">([^<]+)<\/cbc:ID>/);
+    const clientMf = clientMfMatch ? clientMfMatch[1].trim() : '';
+    if (clientMf && !/^\d{6,7}\/[A-Z]/.test(clientMf)) {
+      errors.push(`MF client "${clientMf}" invalide — format attendu: 1234567/X/A/000`);
     }
 
     const ttcMatch = xmlString.match(/<cbc:PayableAmount[^>]*>([^<]+)<\/cbc:PayableAmount>/);

@@ -1,0 +1,7 @@
+name = "smart-comptable-teif-api"
+main = "src/index.js"
+compatibility_date = "2025-04-01"
+
+[vars]
+SUPABASE_URL = "https://xkpkmqlcxtlcdkmccbhs.supabase.co"
+JWT_SECRET = "wEyYAN1iWx7e0FtmpVCh9cBRrbUJjfld6Q428XkG"

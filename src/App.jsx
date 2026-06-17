@@ -66,6 +66,7 @@ import { generateInvoiceLocal } from './invoiceService';
 import scanFacture, { CATEGORIES_SCE } from './tesseractOcr';
 import { FOURNISSEURS_LOOKUP } from './utils/ocrParser';
  import { parseFactureTunisienne, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
+import { applyLearnedPatterns, recordCorrection, getLearningSummary, syncLearningToSupabase, loadLearningFromSupabase } from './utils/ocrLearning';
 import { runFullAudit } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
@@ -109,6 +110,7 @@ const AccountingCRMView     = React.lazy(() => import('./views/AccountingCRMView
 const ExpertAccountantPortalView = React.lazy(() => import('./views/ExpertAccountantPortalView'));
 const DigitalSafeView       = React.lazy(() => import('./views/DigitalSafeView'));
 const TeifDeclarationView   = React.lazy(() => import('./views/TeifDeclarationView'));
+const PlanComptableView     = React.lazy(() => import('./views/PlanComptableView'));
 const SettingsView          = React.lazy(() => import('./views/SettingsView'));
 import { getActiveUsers, createUser, updateUser, createSociete, addMembreToSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
 import { can, filterModules } from './utils/auth/permissionEngine';
@@ -777,7 +779,13 @@ function AppContent() {
             localStorage.setItem(`smart_employes_${currentCompanyId}`, JSON.stringify(mapped));
           }
           if (payData.length) {
-            const mapped = payData.map(b => ({
+            const seen = new Set();
+            const deduped = [];
+            for (const b of payData) {
+              const key = `${b.employee_id}_${b.annee}_${String(b.mois).padStart(2, '0')}`;
+              if (!seen.has(key)) { seen.add(key); deduped.push(b); }
+            }
+            const mapped = deduped.map(b => ({
               id: b.id, employeId: b.employee_id, nom: b.nom, prenom: b.prenom,
               mois: b.mois, annee: b.annee,
               salaireBase: b.salaire_base, brut: b.brut,
@@ -790,6 +798,7 @@ function AppContent() {
           if (stockData.length) localStorage.setItem(`smart_stock_${currentCompanyId}`, JSON.stringify(stockData));
           if (movData.length) localStorage.setItem(`STOCK_LOG_KEY_${currentCompanyId}`, JSON.stringify(movData));
           if (piecesData.length) localStorage.setItem(`piecesComptables_${currentCompanyId}`, JSON.stringify(piecesData));
+          loadLearningFromSupabase().catch(() => {});
         }).catch(() => {});
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
@@ -864,6 +873,7 @@ function AppContent() {
                 await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
               }
             } catch (ee) { console.warn('[Save] Employee sync:', ee); }
+            try { await syncLearningToSupabase(); } catch (ee) { console.warn('[Save] OCR learning sync:', ee); }
           }
         } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
       }
@@ -1217,6 +1227,7 @@ function AppContent() {
               null, // separator
               { id: 'manual', label: 'Saisie Manuelle', icon: BookOpen },
               { id: 'journal', label: 'Journal Comptable', icon: BookOpen },
+              { id: 'plan_comptable', label: 'Plan Comptable', icon: BookOpen },
               { id: 'stock', label: 'Stock', icon: Package },
               { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
               null, // separator
@@ -1337,6 +1348,7 @@ function AppContent() {
                 {currentTab === 'bank' && 'Rapprochement Bancaire'}
                 {currentTab === 'financial' && 'Bilan & Résultat'}
                 {currentTab === 'journal' && 'Journal Comptable'}
+                {currentTab === 'plan_comptable' && 'Plan Comptable'}
                 {currentTab === 'fiscal' && 'Déclarations fiscales'}
                 {currentTab === 'payroll' && 'Paie & CNSS'}
                 {currentTab === 'audit' && 'Audit & Conformité'}
@@ -1362,6 +1374,7 @@ function AppContent() {
               {currentTab === 'bank' && 'Rapprochement des relevés bancaires.'}
               {currentTab === 'financial' && 'Bilan SCE, compte de résultat, ratios.'}
               {currentTab === 'journal' && 'Saisie et filtrage des écritures.'}
+              {currentTab === 'plan_comptable' && 'PCG Tunisien — Classes 1 à 8.'}
               {currentTab === 'fiscal' && 'TVA, IS, RS — échéances et calculs.'}
               {currentTab === 'payroll' && 'Salaires, CNSS, IRPP – conforme LF 2025.'}
               {currentTab === 'audit' && 'Analyse complète du journal comptable.'}
@@ -1576,6 +1589,9 @@ function AppContent() {
                 formatCurrency={formatCurrency}
               />
             )}
+            {currentTab === 'plan_comptable' && (
+              <PlanComptableView />
+            )}
             {currentTab === 'journal' && (
               <PermissionGuard module="journal" fallback={<div className="text-slate-400 text-center py-20">Accès refusé</div>}>
                 <JournalView
@@ -1591,6 +1607,7 @@ function AppContent() {
               <TeifDeclarationView
                 invoices={invoices}
                 companyDetails={companyDetails}
+                onAddPieceComptable={handleAddPieceComptable}
               />
             )}
             {currentTab === 'fiscal' && (
@@ -1634,6 +1651,7 @@ function AppContent() {
                 invoices={invoices}
                 expenses={expenses}
                 formatCurrency={formatCurrency}
+                companyDetails={companyDetails}
               />
             )}
             {currentTab === 'smart_irpp' && (
@@ -1644,6 +1662,8 @@ function AppContent() {
             {currentTab === 'smart_is' && (
               <SmartISView
                 formatCurrency={formatCurrency}
+                companyDetails={companyDetails}
+                currentCompanyId={currentCompanyId}
               />
             )}
             {currentTab === 'bi' && (
@@ -2093,7 +2113,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
             designation: i.description || 'Prestation',
             quantite: i.quantity || 1,
             prixUnitaireHT: parseFloat(i.unitPrice || 0),
-            tauxTVA: parseFloat(i.vatRate || 19),
+            tauxTVA: (()=>{const r=parseFloat(i.vatRate);return r===0?0:r||19})(),
             fodec: 0,
           })),
         };
@@ -2266,7 +2286,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
           designation: item.description || item.designation || 'Prestation',
           quantite: item.quantity || 1,
           prixUnitaireHT: parseFloat(item.unitPrice || item.prixUnitaireHT || invoice.subtotal) || 0,
-          tauxTVA: parseFloat(item.vatRate || item.tauxTVA || 19),
+          tauxTVA: (()=>{const r=parseFloat(item.vatRate ?? item.tauxTVA);return r===0?0:r||19})(),
           fodec: parseFloat(item.fodec || 0),
         })),
       };
@@ -2846,6 +2866,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     clientAddress: '',
   };
   const [formData, setFormData] = useState(BLANK_FORM);
+  const stampDutyEdited = useRef(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [showRsField, setShowRsField] = useState(false);
   const [rsRate, setRsRate] = useState('1.5');
@@ -2880,7 +2901,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       matriculeFiscal: data.matriculeFiscal || '',
       date: data.date || new Date().toISOString().split('T')[0],
       subtotal: String(data.subtotal || ''),
-      vatRate: String(data.vatRate || '19'),
+      vatRate: (data.vatRate === 0 || data.vatRate === '0') ? '0' : String(data.vatRate || '19'),
       fodec: String(data.fodec || '0.000'),
       vatAmount: String(data.vatAmount || ''),
       stampDuty: String(data.stampDuty || '1.000'),
@@ -2907,7 +2928,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     const total = parseFloat(val) || 0;
     const stamp = getStampDutyForTotal(total);
     const fodecVal = parseFloat(formData.fodec) || 0;
-    const vatRate = parseFloat(formData.vatRate) || 19;
+    const r0 = parseFloat(formData.vatRate); const vatRate = (r0 === 0) ? 0 : (r0 || 19);
 
     const baseTva = (total - stamp) / (1 + vatRate / 100);
     const sub = baseTva - fodecVal;
@@ -2916,7 +2937,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setFormData(f => ({
       ...f,
       totalAmount: val,
-      stampDuty: total > 0 ? stamp.toFixed(3) : '1.000',
+      ...(stampDutyEdited.current ? {} : { stampDuty: total > 0 ? stamp.toFixed(3) : '1.000' }),
       subtotal: (f.subtotal && total > 0) ? f.subtotal : (total > 0 ? (Math.round(sub * 1000) / 1000).toFixed(3) : ''),
       vatAmount: (f.vatAmount && total > 0) ? f.vatAmount : (total > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
     }));
@@ -2926,7 +2947,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const handleSubtotalChange = (val) => {
     const sub = parseFloat(val) || 0;
     const fodecVal = parseFloat(formData.fodec) || 0;
-    const vatRate = parseFloat(formData.vatRate) || 19;
+    const r0 = parseFloat(formData.vatRate); const vatRate = (r0 === 0) ? 0 : (r0 || 19);
     const baseTva = sub + fodecVal;
     const vat = baseTva * (vatRate / 100);
     const amountBeforeStamp = baseTva + vat;
@@ -2936,7 +2957,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setFormData(f => ({
       ...f,
       subtotal: val,
-      stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
+      ...(stampDutyEdited.current ? {} : { stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000' }),
       vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
       totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : ''),
     }));
@@ -2946,7 +2967,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const handleFodecChange = (val) => {
     const fodecVal = parseFloat(val) || 0;
     const sub = parseFloat(formData.subtotal) || 0;
-    const vatRate = parseFloat(formData.vatRate) || 19;
+    const r0 = parseFloat(formData.vatRate); const vatRate = (r0 === 0) ? 0 : (r0 || 19);
     const baseTva = sub + fodecVal;
     const vat = baseTva * (vatRate / 100);
     const amountBeforeStamp = baseTva + vat;
@@ -2956,7 +2977,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     setFormData(f => ({
       ...f,
       fodec: val,
-      stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000',
+      ...(stampDutyEdited.current ? {} : { stampDuty: sub > 0 ? stamp.toFixed(3) : '1.000' }),
       vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat * 1000) / 1000).toFixed(3) : ''),
       totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round(total * 1000) / 1000).toFixed(3) : ''),
     }));
@@ -2984,7 +3005,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       matriculeFiscal: type === 'vente' ? '' : (f.fournisseur_mf || f.matricule_fiscal || ''),
       date: f.date_facture ? f.date_facture.split('/').reverse().join('-') : (f.date || new Date().toISOString().split('T')[0]),
       subtotal: fmt(f.montant_ht),
-      vatRate: String(f.taux_tva || '19'),
+      vatRate: (f.taux_tva === 0 || f.taux_tva === '0') ? '0' : String(f.taux_tva || '19'),
       fodec: fmt(f.fodec),
       vatAmount: fmt(f.montant_tva),
       stampDuty: fmt(f.timbre_fiscal),
@@ -3001,7 +3022,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       matriculeFiscal: c.matricule_fiscal || '',
       date: c.date ? c.date.split('/').reverse().join('-') : new Date().toISOString().split('T')[0],
       subtotal: fmt(c.sous_total_ht),
-      vatRate: (c.taux_tva || '19').replace('%', ''),
+      vatRate: (c.taux_tva === 0 || c.taux_tva === '0%') ? '0' : (c.taux_tva || '19').replace('%', ''),
       fodec: fmt(c.fodec),
       vatAmount: fmt(c.montant_tva),
       stampDuty: fmt(c.timbre),
@@ -3027,48 +3048,132 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   };
 
   const handleFileScan = async (file) => {
-    setOcrProgress(0);
-    setOcrError('');
-    setOcrStatus('');
-    setPurchaseError('');
-    setIsAiScan(true);
-    setMode('scanning');
-
+    console.log('[handleFileScan] called with', file?.name, file?.type, file?.size);
     try {
+      setOcrProgress(0);
+      setOcrError('');
+      setOcrStatus('');
+      setPurchaseError('');
+      setIsAiScan(true);
+      setMode('scanning');
+
       let imageData = file;
       const isPdfFile = file?.type === 'application/pdf' || /\.pdf$/i.test(file?.name || '');
+      let directParsed = null;
 
       if (isPdfFile) {
         setOcrProgress(10);
-        setOcrStatus('Conversion PDF en image...');
+        setOcrStatus('Extraction texte PDF...');
 
+        console.log('[PDF] reading file...');
         const arrayBuffer = await file.arrayBuffer();
+        console.log('[PDF] file read OK, size:', arrayBuffer.byteLength);
+
+        console.log('[PDF] importing pdfjs-dist...');
         const pdfjsLib = await import('pdfjs-dist');
+        console.log('[PDF] pdfjs-dist imported, workerSrc:', window.__PDF_WORKER_SRC__);
+
         pdfjsLib.GlobalWorkerOptions.workerSrc = window.__PDF_WORKER_SRC__ || '/pdf.worker.min.js';
-        const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        console.log('[PDF] loading document...');
+        const pdfDoc = await Promise.race([
+          pdfjsLib.getDocument({ data: arrayBuffer }).promise,
+          new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout 15s — échec chargement PDF')), 15000))
+        ]);
+        console.log('[PDF] document loaded, pages:', pdfDoc.numPages);
+        console.log('[PDF] getting page 1...');
         const page = await pdfDoc.getPage(1);
+        console.log('[PDF] page OK, viewport:', page.getViewport({ scale: 1 }).width, 'x', page.getViewport({ scale: 1 }).height);
 
-        const viewport = page.getViewport({ scale: 2.5 });
-        const canvas = document.createElement('canvas');
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
+        // Extract text by position to preserve line breaks
+        console.log('[PDF] extracting text content...');
+        const textContent = await page.getTextContent();
+        console.log('[PDF] text items count:', textContent.items.length);
+        let lastY = -1;
+        let directText = '';
+        for (const item of textContent.items) {
+          const y = Math.round(item.transform[5]);
+          if (lastY >= 0 && y < lastY - 2) {
+            directText += '\n';
+          } else if (lastY >= 0 && y === lastY) {
+            directText += ' ';
+          } else if (lastY >= 0) {
+            directText += '\n';
+          }
+          directText += item.str;
+          lastY = y;
+        }
+        directText = directText.trim();
+        console.log('[PDF] extracted text length:', directText.length);
+        console.log('[PDF] first 200 chars:', directText.slice(0, 200));
 
-        await page.render({
-          canvasContext: canvas.getContext('2d'),
-          viewport
-        }).promise;
+        if (directText.length >= 10) {
+          setOcrProgress(50);
+          setOcrStatus('Texte extrait du PDF ✓');
+          console.log('[PDF] text OK, calling parseFactureTunisienne...');
+          const parseStart = performance.now();
+          const pRaw = parseFactureTunisienne(directText, 100);
+          const p = applyLearnedPatterns(directText, pRaw);
+          console.log('[PDF] parseFactureTunisienne done in', Math.round(performance.now() - parseStart), 'ms, result:', p ? (p.erreur || 'OK') : 'null');
+          if (p && !p.erreur) {
+            directParsed = p;
+            directParsed.rawText = directText;
+          } else {
+            // Text extracted but not parseable → show raw text in choice mode
+            directParsed = { rawText: directText, formulaire: {}, champs_manquants: ['all'], alerte: 'non_parse', confiance_ocr: 0 };
+          }
 
-        const blob = await new Promise((res, rej) => {
-          canvas.toBlob(b => { b ? res(b) : rej(new Error('Échec conversion PNG')); }, 'image/png');
-        });
-        imageData = new File([blob], 'page1.png', { type: 'image/png' });
-        setOcrProgress(25);
+          // Render page to image so we have a preview
+          console.log('[PDF] STEP1: rendering page to canvas...');
+          const vp = page.getViewport({ scale: 2.5 });
+          console.log('[PDF] viewport:', vp.width, 'x', vp.height);
+          const cv = document.createElement('canvas');
+          cv.width = vp.width; cv.height = vp.height;
+          const renderStart = performance.now();
+          await page.render({ canvasContext: cv.getContext('2d'), viewport: vp }).promise;
+          console.log('[PDF] STEP2: page rendered in', Math.round(performance.now() - renderStart), 'ms');
+          console.log('[PDF] STEP3: converting canvas to blob...');
+          const bl = await new Promise((resolve, reject) => {
+            const t0 = performance.now();
+            cv.toBlob(b => {
+              console.log('[PDF] toBlob cb after', Math.round(performance.now() - t0), 'ms, blob:', b ? (b.size + 'B') : 'null');
+              if (b) resolve(b); else reject(new Error('toBlob null — canvas tainted?'));
+            }, 'image/png');
+          });
+          console.log('[PDF] STEP4: creating File from blob...');
+          imageData = new File([bl], 'page1.png', { type: 'image/png' });
+          console.log('[PDF] STEP5: imageData File size:', imageData.size);
+          setOcrProgress(65);
+        }
+
+        if (!directParsed) {
+          setOcrStatus('Conversion PDF en image...');
+          const viewport = page.getViewport({ scale: 2.5 });
+          const canvas = document.createElement('canvas');
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+
+          await page.render({
+            canvasContext: canvas.getContext('2d'),
+            viewport
+          }).promise;
+
+          const blob = await new Promise((res, rej) => {
+            canvas.toBlob(b => { b ? res(b) : rej(new Error('Échec conversion PNG')); }, 'image/png');
+          });
+          imageData = new File([blob], 'page1.png', { type: 'image/png' });
+          setOcrProgress(25);
+        }
       }
 
-      const result = await scanFacture(imageData, (pct, status) => {
+      const rawResult = directParsed || await scanFacture(imageData, (pct, status) => {
         setOcrProgress(25 + Math.round(pct * 0.75));
         if (status) setOcrStatus(status);
       });
+      const result = rawResult?.rawText ? applyLearnedPatterns(rawResult.rawText, rawResult) : rawResult;
+      window.__ocrLastResult = result;
+      console.log('[PDF] result obtained, type:', result?.alerte || 'OK', 'hasFormulaire:', !!result?.formulaire, 'rawTextLen:', result?.rawText?.length || 0);
+      console.log('[OCR RAW TEXT]', result?.rawText);
+      console.log('[PARSED FORM FULL]', JSON.stringify(result?.formulaire, null, 2));
 
       if (result?.error) {
         setOcrError(result.error);
@@ -3091,6 +3196,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         setPurchaseError(result.message || 'Ce document ne semble pas être une facture. Vérifiez les champs avant d\'enregistrer.');
         setMode('choice');
         return;
+      }
+      if (result?.alerte === 'non_parse') {
+        setPurchaseError('Texte extrait du PDF mais non parsé automatiquement — remplissez les champs manuellement.');
       }
       // Appliquer corrigerFacture sur le texte OCR brut
       const resultScan = result?.rawText ? corrigerFacture(result.formulaire || {}, result.rawText) : null;
@@ -3119,14 +3227,16 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       } else if (detectedType === 'vente') {
         setFormData(f => ({...f, matriculeFiscal: ''}));
       }
+      console.log('[PDF] setting mode to result, directParsed:', !!directParsed, 'alerte:', result?.alerte);
       setOcrProgress(100);
       setMode('result');
       if (result?.faible_confiance || result?.alerte === 'faible_confiance') {
         setPurchaseError('⚠️ Certains champs n\'ont pas été reconnus automatiquement — vérifiez et corrigez les données ci-dessous.');
       }
-      trackUsage(currentUser?.id, 'scan_ocr');
+      try { trackUsage(currentUser?.id, 'scan_ocr'); } catch (e) { console.warn('[PDF] trackUsage skipped:', e.message); }
 
     } catch (err) {
+      console.error('[PDF] CATCH error:', err.message, err.stack);
       setOcrError(`Erreur: ${err.message}`);
       setIsAiScan(false);
     }
@@ -3224,7 +3334,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         timbre: inv.stampDuty || 0,
         fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
         client: { matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || companyDetails.name || '' },
-        lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
+        lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: (()=>{const r=parseFloat(inv.vatRate);return r===0?0:r||19})() }],
       };
       const gen = generateTEIFXML(teifInvoice);
       if (!gen.error) {
@@ -3249,7 +3359,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
     try {
       const rawText = purchaseInput;
-      const parsed = parseFactureTunisienne(rawText);
+      const parsedRaw = parseFactureTunisienne(rawText);
+      const parsed = applyLearnedPatterns(rawText, parsedRaw);
 
       if (!parsed || parsed.erreur) {
         setPurchaseError(parsed?.erreur === 'PDF_DETECTE'
@@ -3297,7 +3408,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
    // Formulaire partagé (saisie manuelle + résultat scan)
   const renderEntryForm = (isManual) => {
     const sub = parseFloat(formData.subtotal) || 0;
-    const rate = parseFloat(formData.vatRate) || 19;
+    const r0 = parseFloat(formData.vatRate); const rate = (r0 === 0) ? 0 : (r0 || 19);
     const fodecVal = parseFloat(formData.fodec) || 0;
     const stamp = parseFloat(formData.stampDuty) || 1;
     const rsVal = parseFloat(formData.rsAmount) || 0;
@@ -3344,6 +3455,18 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       e.preventDefault();
       if (requiredMissing.length > 0) return;
 
+      // Vérification TVA avant validation
+      const ht = parseFloat(formData.subtotal) || 0;
+      const tvaSaisie = parseFloat(formData.vatAmount) || 0;
+      const r0 = parseFloat(formData.vatRate); const taux = (r0 === 0) ? 0 : (r0 || 19);
+      if (ht > 0 && tvaSaisie > 0) {
+        const tvaCalculee = parseFloat((ht * taux / 100).toFixed(3));
+        if (Math.abs(tvaCalculee - tvaSaisie) > 0.010) {
+          setOcrError(`⚠️ TVA incohérente: ${tvaSaisie} DT saisie ≠ ${tvaCalculee} DT calculée (${ht} × ${taux}%)`);
+          return;
+        }
+      }
+
       let ttnCreatedEntry = false;
       if (isAchat) {
         const inv = {
@@ -3375,7 +3498,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             timbre: inv.stampDuty || 0,
             fournisseur: { matriculeFiscal: inv.matriculeFiscal || '', nom: inv.supplier || '' },
             client: { matriculeFiscal: companyDetails.vatNumber || companyDetails.matriculeFiscal || '', nom: companyDetails.companyName || companyDetails.name || '' },
-            lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: parseFloat(inv.vatRate) || 19 }],
+        lignes: [{ designation: inv.category || 'Charge', quantite: 1, prixUnitaireHT: inv.subtotal || 0, tauxTVA: (()=>{const r=parseFloat(inv.vatRate);return r===0?0:r||19})() }],
           };
           const gen = generateTEIFXML(teifInvoice);
           if (!gen.error) {
@@ -3400,7 +3523,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           vatAmount: parseFloat(formData.vatAmount) || 0,
           totalAmount: parseFloat(formData.totalAmount) || 0,
           status: "SENT",
-          items: [{ id: Date.now(), description: formData.category || 'Prestation', quantity: 1, unitPrice: parseFloat(formData.subtotal) || 0, vatRate: parseFloat(formData.vatRate) || 19 }]
+          items: [{ id: Date.now(), description: formData.category || 'Prestation', quantity: 1, unitPrice: parseFloat(formData.subtotal) || 0, vatRate: (()=>{const r=parseFloat(formData.vatRate);return r===0?0:r||19})() }]
         };
         if (typeof setInvoices === 'function') {
           setInvoices(prev => [newInvoice, ...prev]);
@@ -3410,6 +3533,13 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       // TTN a déjà créé l'écriture → ne pas dupliquer
       if (!ttnCreatedEntry) {
         runJournalPipeline(true);
+      }
+
+      if (ocrRawText) {
+        recordCorrection(ocrRawText, formData.supplier, 'fournisseur_nom', formData.supplier);
+        if (formData.stampDuty) recordCorrection(ocrRawText, formData.supplier, 'timbre_fiscal', formData.stampDuty);
+        if (formData.vatRate) recordCorrection(ocrRawText, formData.supplier, 'taux_tva', formData.vatRate);
+        if (formData.category) recordCorrection(ocrRawText, formData.supplier, 'categorie', formData.category);
       }
 
       setMode('success');
@@ -3462,6 +3592,35 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         <div className="p-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-[10px] text-emerald-400 flex items-center gap-2">
           <CheckCircle2 className="w-3.5 h-3.5 shrink-0" /> {journalMessage}
         </div>
+      )}
+
+      {/* TVA récupérable + contrôles */}
+      {!isManual && ocrRawText && (
+        (() => {
+          try {
+            const parsed = JSON.parse(JSON.stringify(window.__ocrLastResult || {}));
+            const tvaRecup = parsed?.formulaire?.tva_recuperable;
+            const verif = parsed?.verification;
+            const tvaMismatch = verif?.tva_mismatch;
+            return (
+              <div className="space-y-1.5">
+                {tvaRecup && (
+                  <div className={`p-2 rounded-lg text-[10px] font-semibold flex items-center gap-2 ${tvaRecup.recuperable ? 'bg-emerald-500/10 border border-emerald-500/30 text-emerald-400' : 'bg-amber-500/10 border border-amber-500/30 text-amber-400'}`}>
+                    {tvaRecup.recuperable ? <CheckCircle2 className="w-3 h-3" /> : <AlertTriangle className="w-3 h-3" />}
+                    TVA {tvaRecup.recuperable ? 'récupérable' : 'non récupérable'} — {tvaRecup.raison}
+                    {tvaRecup.taux_recuperation < 1 && <span className="ml-1 opacity-70">({Math.round(tvaRecup.taux_recuperation * 100)}%)</span>}
+                  </div>
+                )}
+                {tvaMismatch && (
+                  <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/30 text-[10px] text-red-400 font-semibold flex items-center gap-2">
+                    <AlertTriangle className="w-3 h-3" />
+                    ⚠️ TVA détectée ≠ TVA calculée — vérifiez le taux et les montants avant validation
+                  </div>
+                )}
+              </div>
+            );
+          } catch { return null; }
+        })()
       )}
 
       {/* Type de justificatif — sélection manuelle */}
@@ -3594,21 +3753,22 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux TVA</label>
             <select value={formData.vatRate}
               onChange={(e) => {
-                const r = parseFloat(e.target.value) || 19;
+                const r = parseFloat(e.target.value); const effectiveRate = (r === 0) ? 0 : (r || 19);
                 const fodecVal = parseFloat(formData.fodec) || 0;
                 const baseTva = sub + fodecVal;
-                const vat = baseTva * (r / 100);
+                const vat = baseTva * (effectiveRate / 100);
                 const newStamp = getStampDutyForAmount(baseTva + vat);
                 setFormData(f => ({...f, vatRate: e.target.value,
-                  vatAmount: (f.vatAmount && sub > 0) ? f.vatAmount : (sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : ''),
-                  stampDuty: sub > 0 ? newStamp.toFixed(3) : '1.000',
-                  totalAmount: (f.totalAmount && sub > 0) ? f.totalAmount : (sub > 0 ? (Math.round((sub+fodecVal+vat+newStamp)*1000)/1000).toFixed(3) : '')
+                  vatAmount: sub > 0 ? (Math.round(vat*1000)/1000).toFixed(3) : '',
+                  ...(stampDutyEdited.current ? {} : { stampDuty: sub > 0 ? newStamp.toFixed(3) : '1.000' }),
+                  totalAmount: sub > 0 ? (Math.round((sub+fodecVal+vat+newStamp)*1000)/1000).toFixed(3) : ''
                 }));
               }}
               className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-slate-100 text-sm focus:outline-none"
             >
               <option value="19">19%</option>
               <option value="13">13%</option>
+              <option value="12">12%</option>
               <option value="7">7%</option>
               <option value="0">0%</option>
             </select>
@@ -3617,8 +3777,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase" title="Loi de finances 2023 : 1 DT forfaitaire">
               Timbre Fiscal ⓘ
             </label>
-            <input type="number" step="0.001" min="0" readOnly value={formData.stampDuty}
-              className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-brand-300 text-sm cursor-not-allowed opacity-75"
+            <input type="number" step="0.001" min="0" value={formData.stampDuty}
+              onChange={(e) => setFormData(f => ({...f, stampDuty: e.target.value}))}
+              className="w-full bg-slate-950 border border-slate-700 focus:border-brand-500 rounded-xl px-3 py-2 text-brand-300 text-sm focus:outline-none"
             />
           </div>
           <div>
@@ -3817,6 +3978,12 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           Tesseract.js
         </span>
       </div>
+
+      {ocrError && (
+        <div className="p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl text-xs text-danger-400 flex items-center gap-2">
+          <AlertCircle className="w-4 h-4 shrink-0" /> {ocrError}
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 

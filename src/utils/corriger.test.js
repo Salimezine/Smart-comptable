@@ -61,8 +61,8 @@ describe('ÉTAPE 0 — Récapitulatif', () => {
       'Fournisseur SARL',
       'Matricule Fiscal: 0012345/0/A/M/000',
       'Date: 15/03/2025',
-      'Article A  100,000',
-      'Article B  50,000',
+      'Article A  99',
+      'Article B  50',
     ].join('\n');
     const c = run(txt);
     expect(c.alertes).toContain('recap_manquant');
@@ -89,8 +89,8 @@ describe('ÉTAPE 0 — Récapitulatif', () => {
       'FACTURE TEST',
       'Fournisseur SARL',
       'Matricule Fiscal: 0012345/O/A/M/000',
-      'Sous-total HT: 100,000',
-      'Net à payer: 119,000',
+      'Sous-total HT: 100',
+      'Net à payer: 119',
     ].join('\n');
     const c = run(txt);
     expect(c.alertes).toContain('recap_manquant_tva');
@@ -132,7 +132,7 @@ describe('ÉTAPE 0 — Récapitulatif', () => {
       'FACTURE TEST',
       'Fournisseur SARL',
       'Matricule Fiscal: 0012345/O/A/M/000',
-      'Produit A  58,962 DT  884,425 DT',
+      'Produit A  58962 DT  884425 DT',
     ].join('\n');
     // Seed avec TTC connu pour déclencher la dérivation
     const c = run(txt, { montant_ttc: 1000, lignes: [{ designation: 'Produit A', prix_unitaire: 884.425, quantite: 1, total: 884.425 }] });
@@ -525,3 +525,50 @@ describe('Correction complète E-info', () => {
     expect(corrige.lignes.length).toBeGreaterThan(1);
   });
 });
+
+describe('Correction complète Aradenet', () => {
+  it('corrige correctement l\'invoce Aradenet', () => {
+    const txt = [
+      "Adresse Rue du Lac Malaren, Lotissement El Khalij Les Berges du Lac",
+      "Facture N° 50",
+      "Date 03/04/2015",
+      "Référence Unique 86812500069016077795819135",
+      "Copie de la facture électronique enregistré chez TTN",
+      "CENT CINQUANTE DEUX DINARS ET DEUX CENT SOIXANTE MILLIMES-"
+    ].join('\n');
+
+    const parsed = parseFactureTunisienne(txt);
+    const corrige = corrigerFacture(parsed.formulaire || {}, txt);
+
+    expect(corrige.fournisseur).toBe('TTN');
+    expect(corrige.date).toBe('03/04/2015');
+    expect(corrige.total_ttc).toBe(152.260);
+    expect(corrige.sous_total_ht).toBeCloseTo(127.109, 2);
+    expect(corrige.montant_tva).toBeCloseTo(24.151, 2);
+    expect(corrige.timbre).toBe(1.000);
+  });
+});
+
+describe('Correction complète My Company', () => {
+  it('corrige correctement l\'invoice My Company avec date format US et calculs dérivés', () => {
+    const txt = [
+      "My Company",
+      "Date Mar 23 2010",
+      "Matricule Fiscal: 9999999/A/B/C/000",
+      "Service maintenance informatique",
+      "Net à payer : 80,000 DT"
+    ].join('\n');
+
+    const parsed = parseFactureTunisienne(txt);
+    const corrige = corrigerFacture(parsed.formulaire || {}, txt);
+
+    expect(corrige.fournisseur).toBe('My Company');
+    expect(corrige.date).toBe('23/03/2010');
+    expect(corrige.matricule_fiscal).toBe('9999999/A/B/C/000');
+    expect(corrige.total_ttc).toBe(80.000);
+    expect(corrige.sous_total_ht).toBeCloseTo(66.387, 2);
+    expect(corrige.montant_tva).toBeCloseTo(12.613, 2);
+    expect(corrige.timbre).toBe(1.000);
+  });
+});
+

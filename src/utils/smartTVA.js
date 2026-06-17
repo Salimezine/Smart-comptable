@@ -5,12 +5,12 @@ export function calculateTVASummary(invoices = [], expenses = []) {
   const deductibleByRate = { 19: 0, 13: 0, 7: 0, 0: 0 };
 
   invoices.forEach(inv => {
-    const rate = inv.vatRate || 19;
+    const rate = (inv.vatRate === 0) ? 0 : (inv.vatRate || 19);
     collectedByRate[rate] = (collectedByRate[rate] || 0) + (inv.vatAmount || 0);
   });
 
   expenses.forEach(exp => {
-    const rate = exp.vatRate || 19;
+    const rate = (exp.vatRate === 0) ? 0 : (exp.vatRate || 19);
     deductibleByRate[rate] = (deductibleByRate[rate] || 0) + (exp.vatAmount || 0);
   });
 

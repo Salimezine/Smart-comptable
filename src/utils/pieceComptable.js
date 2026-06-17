@@ -118,7 +118,7 @@ export function createPieceComptable(invoice, ttnId) {
 
     const tvaGroups = {};
     lignes.forEach(l => {
-      const taux = parseFloat(l.tauxTVA) || 19;
+      const r0 = parseFloat(l.tauxTVA); const taux = (r0 === 0) ? 0 : (r0 || 19);
       const ht = (parseFloat(l.quantite) || 0) * (parseFloat(l.prixUnitaireHT) || 0);
       const mtva = ht * taux / 100;
       if (!tvaGroups[taux]) tvaGroups[taux] = 0;

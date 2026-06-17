@@ -1,17 +1,15 @@
 const IRPP_BAREME_2026 = [
-  { min: 0, max: 5000, taux: 0, deduction: 0 },
-  { min: 5000, max: 10000, taux: 15, deduction: 0 },
-  { min: 10000, max: 20000, taux: 25, deduction: 0 },
-  { min: 20000, max: 30000, taux: 30, deduction: 0 },
-  { min: 30000, max: 40000, taux: 33, deduction: 0 },
-  { min: 40000, max: 50000, taux: 36, deduction: 0 },
-  { min: 50000, max: 70000, taux: 38, deduction: 0 },
-  { min: 70000, max: Infinity, taux: 40, deduction: 0 },
+  { min: 0, max: 5000, taux: 0 },
+  { min: 5000, max: 20000, taux: 26 },
+  { min: 20000, max: 30000, taux: 28 },
+  { min: 30000, max: 50000, taux: 32 },
+  { min: 50000, max: Infinity, taux: 35 },
 ];
+
+const MINIMUM_IMPOT = 45;
 
 export function calculateIRPP(revenuImposable) {
   let impot = 0;
-  let previousMax = 0;
 
   for (const tranche of IRPP_BAREME_2026) {
     if (revenuImposable > tranche.min) {
@@ -20,6 +18,8 @@ export function calculateIRPP(revenuImposable) {
     }
     if (revenuImposable <= tranche.max) break;
   }
+
+  if (impot > 0 && impot < MINIMUM_IMPOT) impot = MINIMUM_IMPOT;
 
   return {
     revenuImposable,

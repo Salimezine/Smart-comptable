@@ -1,100 +1,251 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { FileText, CheckCircle2, XCircle, Clock, RefreshCw, Send, AlertTriangle, Server } from 'lucide-react';
+import { FileText, CheckCircle2, XCircle, Clock, RefreshCw, Send, AlertTriangle, Download, Upload, ExternalLink } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import KpiCard from '../components/KpiCard';
-import { getTTNMode } from '../teif';
-import * as api from '../utils/api';
+import { generateTEIFXML, validateTEIF, downloadTEIFXML } from '../utils/teifGenerator';
+import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission } from '../utils/ttnWorkflow';
+import { getTTNMode, setTTNMode } from '../teif';
+import * as api from '../utils/teifSupabaseService';
 
-const STATUS_LABELS = {
-  NONE: 'Non soumise',
-  PENDING: 'En cours...',
-  SIGNED: 'Signée',
-  ACCEPTED: 'Acceptée',
-  REJECTED: 'Rejetée',
-  FAILED: 'Échec',
-  TTN_PENDING: 'En attente TTN',
+const TTN_STATUS_KEY = 'smart_ttn_local_status';
+
+const STATUS_DEFS = {
+  none:        { label: 'Non généré',     color: 'bg-slate-800 text-slate-400',                    icon: Clock,         order: 0 },
+  generated:   { label: 'XML généré',     color: 'bg-blue-500/15 text-blue-400 border-blue-500/30', icon: FileText,      order: 1 },
+  transmitted: { label: 'Transmis portail', color: 'bg-amber-500/15 text-amber-400 border-amber-500/30', icon: Upload, order: 2 },
+  accepted:    { label: 'Accepté TTN',    color: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30', icon: CheckCircle2, order: 3 },
+  rejected:    { label: 'Rejeté',         color: 'bg-red-500/15 text-red-400 border-red-500/30',    icon: XCircle,      order: -1 },
 };
 
-const STATUS_COLORS = {
-  NONE: { bg: 'bg-slate-800', text: 'text-slate-400' },
-  PENDING: { bg: 'bg-amber-500/15 text-amber-400 border-amber-500/30', text: 'text-amber-400' },
-  SIGNED: { bg: 'bg-blue-500/15 text-blue-400 border-blue-500/30', text: 'text-blue-400' },
-  ACCEPTED: { bg: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30', text: 'text-emerald-400' },
-  REJECTED: { bg: 'bg-red-500/15 text-red-400 border-red-500/30', text: 'text-red-400' },
-  FAILED: { bg: 'bg-red-500/15 text-red-400 border-red-500/30', text: 'text-red-400' },
-  TTN_PENDING: { bg: 'bg-purple-500/15 text-purple-400 border-purple-500/30', text: 'text-purple-400' },
-};
+function loadLocalStatuses() {
+  try {
+    return JSON.parse(localStorage.getItem(TTN_STATUS_KEY) || '{}');
+  } catch { return {}; }
+}
 
-const STATUS_ICONS = {
-  NONE: Clock,
-  PENDING: Clock,
-  SIGNED: FileText,
-  ACCEPTED: CheckCircle2,
-  REJECTED: XCircle,
-  FAILED: XCircle,
-  TTN_PENDING: Clock,
-};
+function saveLocalStatuses(map) {
+  localStorage.setItem(TTN_STATUS_KEY, JSON.stringify(map));
+}
 
-export default function TeifDeclarationView({ invoices: localInvoices, companyDetails }) {
-  const [teifMap, setTeifMap] = useState({});
+export default function TeifDeclarationView({ invoices: localInvoices, companyDetails, onAddPieceComptable }) {
+  const [localMap, setLocalMap] = useState(loadLocalStatuses);
+  const [backendMap, setBackendMap] = useState({});
   const [generatingId, setGeneratingId] = useState(null);
   const [batchRunning, setBatchRunning] = useState(false);
   const [batchProgress, setBatchProgress] = useState({ current: 0, total: 0 });
-  const [errorModal, setErrorModal] = useState(null);
+  const [modal, setModal] = useState(null);
   const [syncing, setSyncing] = useState(false);
-  const [connected, setConnected] = useState(!!api.getApiToken());
+  const [connected, setConnected] = useState(false);
+  const [ttnMode, setTtnModeState] = useState(getTTNMode());
 
   const currentId = localStorage.getItem('smart_comptable_current_id');
 
   useEffect(() => {
-    if (!currentId || !api.getApiToken()) return;
-    setSyncing(true);
-    api.getCompanies()
-      .then(companies => {
-        const company = companies.find(c => c.id === currentId);
-        if (!company) return;
-        return api.getInvoices(currentId)
-          .then(backendInvoices => {
-            const map = {};
-            for (const inv of backendInvoices) {
-              if (inv.teif_status && inv.teif_status !== 'NONE') {
-                map[inv.invoice_number] = {
-                  status: inv.teif_status,
-                  documentId: inv.middleware_document_id,
-                  hasXml: !!inv.teif_xml,
-                };
+    setLocalMap(loadLocalStatuses());
+  }, []);
+
+  useEffect(() => {
+    api.ensureToken().then(token => {
+      if (!currentId || !token) return;
+      setSyncing(true);
+      api.getCompanies()
+        .then(companies => {
+          const company = companies.find(c => c.id === currentId);
+          if (!company) return;
+          return api.getInvoices(currentId)
+            .then(backendInvoices => {
+              const map = {};
+              for (const inv of backendInvoices) {
+                if (inv.teif_status && inv.teif_status !== 'NONE') {
+                  map[inv.invoice_number] = {
+                    status: inv.teif_status,
+                    documentId: inv.middleware_document_id,
+                    hasXml: !!inv.teif_xml,
+                  };
+                }
               }
-            }
-            setTeifMap(map);
-            setConnected(true);
-          });
-      })
-      .catch(() => { setConnected(false); })
-      .finally(() => setSyncing(false));
+              setBackendMap(map);
+              setConnected(true);
+            });
+        })
+        .catch(() => { setConnected(false); })
+        .finally(() => setSyncing(false));
+    });
   }, [currentId]);
 
-  const handleSubmitToTEIF = useCallback(async (inv) => {
-    setGeneratingId(inv.id);
+  const invoices = localInvoices.filter(inv => inv.status !== 'cancelled');
+
+  function getStatus(inv) {
+    const key = inv.invoice_number || inv.invoiceNumber || inv.id;
+    const local = localMap[key];
+    const backend = backendMap[key];
+    if (local?.status === 'accepted') return local;
+    if (local?.status === 'rejected') return local;
+    if (local?.status === 'transmitted') return local;
+    if (local?.status === 'generated') return local;
+    if (backend?.status === 'ACCEPTED') return { status: 'accepted', documentId: backend.documentId, hasXml: backend.hasXml, source: 'backend' };
+    if (backend?.status === 'REJECTED') return { status: 'rejected', documentId: backend.documentId, source: 'backend' };
+    if (backend?.status) return { status: backend.status.toLowerCase(), documentId: backend.documentId, source: 'backend' };
+    return null;
+  }
+
+  function setStatus(inv, status, extra = {}) {
+    const key = inv.invoice_number || inv.invoiceNumber || inv.id;
+    const updated = { ...localMap, [key]: { status, timestamp: new Date().toISOString(), ...extra } };
+    setLocalMap(updated);
+    saveLocalStatuses(updated);
+  }
+
+  const statusCounts = {
+    all: invoices.length,
+    pending: invoices.filter(inv => !getStatus(inv)).length,
+    generated: invoices.filter(inv => getStatus(inv)?.status === 'generated').length,
+    transmitted: invoices.filter(inv => getStatus(inv)?.status === 'transmitted').length,
+    accepted: invoices.filter(inv => getStatus(inv)?.status === 'accepted').length,
+    failed: invoices.filter(inv => getStatus(inv)?.status === 'rejected').length,
+  };
+  const pendingCount = invoices.filter(inv => !getStatus(inv) || getStatus(inv)?.status === 'rejected').length;
+
+  const handleGenerateTEIF = useCallback(async (invoice) => {
+    setGeneratingId(invoice.id);
     try {
-      if (!api.getApiToken()) {
-        setErrorModal({ title: 'Backend non connecté', errors: ['Connectez-vous au backend Smart Comptable pour soumettre les factures à la TEIF.'] });
+      const teifInvoice = {
+        id: invoice.invoiceNumber || invoice.invoice_number || invoice.id,
+        dateEmission: invoice.issueDate || invoice.issue_date || invoice.date || new Date().toISOString().slice(0, 10),
+        type: '380',
+        timbre: parseFloat(invoice.stampDuty || invoice.timbre || 0),
+        fournisseur: {
+          matriculeFiscal: companyDetails?.vatNumber || companyDetails?.matriculeFiscal || '',
+          nom: companyDetails?.companyName || companyDetails?.name || '',
+          adresse: companyDetails?.address || '',
+          rne: companyDetails?.rne || '',
+        },
+        client: {
+          matriculeFiscal: invoice.clientVat || invoice.vatNumber || '',
+          nom: invoice.clientName || invoice.client_name || invoice.client || 'Client',
+          adresse: invoice.clientAddress || invoice.address || '',
+        },
+        lignes: (invoice.items || []).length > 0
+          ? invoice.items.map(item => ({
+              designation: item.description || item.designation || 'Prestation',
+              quantite: item.quantity || 1,
+              prixUnitaireHT: parseFloat(item.unitPrice || item.prixUnitaireHT || 0),
+              tauxTVA: (()=>{const r=parseFloat(item.vatRate ?? item.tauxTVA);return r===0?0:r||19})(),
+              fodec: parseFloat(item.fodec || 0),
+            }))
+          : [{
+              designation: invoice.category || 'Prestation',
+              quantite: 1,
+              prixUnitaireHT: parseFloat(invoice.subtotal || invoice.montantHT || 0),
+              tauxTVA: (()=>{const r=parseFloat(invoice.vatRate);return r===0?0:r||19})(),
+              fodec: 0,
+            }],
+      };
+
+      const gen = generateTEIFXML(teifInvoice);
+      if (gen.error) throw new Error(gen.error);
+
+      const valid = validateTEIF(gen.xml);
+      if (!valid.valid) {
+        setModal({ title: 'Erreur de validation TEIF', errors: valid.errors, type: 'error' });
         return;
       }
-      const companies = await api.getCompanies();
-      const company = companies.find(c => c.id === currentId);
-      if (!company) throw new Error('Société introuvable');
-      const result = await api.submitInvoice(inv.id, company.tax_id);
-      setTeifMap(prev => ({
-        ...prev,
-        [inv.invoice_number || inv.id]: { status: 'PENDING', documentId: result.documentId },
-      }));
+
+      const response = await sendToTTN(gen.xml, {
+        ttnMode,
+        invoiceId: teifInvoice.id,
+      });
+
+      if (response.status === 'accepted') {
+        const handled = await handleTTNResponse(teifInvoice, response);
+        if (handled.success) {
+          setStatus(invoice, 'accepted', { ttnId: handled.ttnId, pieceId: handled.pieceId });
+          onAddPieceComptable && onAddPieceComptable({
+            id: handled.pieceId,
+            ttnId: handled.ttnId,
+            date: teifInvoice.dateEmission,
+            journal: 'VNT',
+            reference: teifInvoice.id,
+            total: gen.totalTTC,
+          });
+          setModal({ title: 'Facture acceptée TTN ✓', message: `ID TTN: ${handled.ttnId}`, type: 'success' });
+        } else {
+          setStatus(invoice, 'rejected');
+          setModal({ title: 'Rejet TTN', errors: handled.errors || ['Rejeté'], type: 'error' });
+        }
+      } else if (response.status === 'manual') {
+        setStatus(invoice, 'generated', { xml: gen.xml });
+        setModal({
+          title: 'XML TEIF généré ✓',
+          message: response.message,
+          instructions: response.instructions || [],
+          portalUrl: response.portalUrl,
+          xml: gen.xml,
+          invoiceId: teifInvoice.id,
+          invoice,
+          type: 'manual',
+        });
+      } else if (response.status === 'rejected') {
+        setStatus(invoice, 'rejected');
+        setModal({ title: 'Échec TTN', errors: (response.errors || []).map(e => e.message || e), type: 'error' });
+      }
     } catch (err) {
-      setTeifMap(prev => ({ ...prev, [inv.invoice_number || inv.id]: { status: 'FAILED' } }));
-      setErrorModal({ title: 'Erreur soumission TEIF', errors: [err.message] });
+      setStatus(invoice, 'rejected');
+      setModal({ title: 'Erreur TEIF', errors: [err.message], type: 'error' });
     } finally {
       setGeneratingId(null);
     }
-  }, [currentId]);
+  }, [companyDetails, ttnMode, onAddPieceComptable]);
+
+  const handleConfirmTransmission = async (invoice) => {
+    try {
+      const entry = getStatus(invoice);
+      const ttnId = `TTN-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+      const result = await confirmTTNTransmission(
+        {
+          id: invoice.invoiceNumber || invoice.invoice_number || invoice.id,
+          dateEmission: invoice.issueDate || invoice.issue_date || invoice.date,
+          type: '380',
+          fournisseur: {
+            matriculeFiscal: companyDetails?.vatNumber || companyDetails?.matriculeFiscal || '',
+            nom: companyDetails?.companyName || companyDetails?.name || '',
+          },
+          client: {
+            matriculeFiscal: invoice.clientVat || '',
+            nom: invoice.clientName || 'Client',
+          },
+          lignes: [{ designation: 'Prestation', quantite: 1, prixUnitaireHT: parseFloat(invoice.subtotal || 0), tauxTVA: 19 }],
+        },
+        ttnId,
+      );
+      if (result.success) {
+        setStatus(invoice, 'accepted', { ttnId: result.ttnId, pieceId: result.pieceId });
+        onAddPieceComptable && onAddPieceComptable({
+          id: result.pieceId, ttnId: result.ttnId,
+          date: invoice.issueDate || invoice.date,
+          journal: 'VNT', reference: invoice.invoiceNumber || invoice.id,
+          total: invoice.totalAmount || invoice.montantTTC || 0,
+        });
+        setModal({ title: 'Transmission confirmée ✓', message: `ID TTN: ${result.ttnId}`, type: 'success' });
+      } else {
+        setModal({ title: 'Erreur', errors: result.errors, type: 'error' });
+      }
+    } catch (err) {
+      setModal({ title: 'Erreur', errors: [err.message], type: 'error' });
+    }
+  };
+
+  const handleBatchGenerate = async () => {
+    const pending = invoices.filter(inv => !getStatus(inv) || getStatus(inv)?.status === 'rejected');
+    if (pending.length === 0) return;
+    setBatchRunning(true);
+    for (let i = 0; i < pending.length; i++) {
+      setBatchProgress({ current: i + 1, total: pending.length });
+      await handleGenerateTEIF(pending[i]);
+    }
+    setBatchRunning(false);
+    setBatchProgress({ current: 0, total: 0 });
+  };
 
   const handleSync = useCallback(async () => {
     if (!api.getApiToken()) return;
@@ -111,56 +262,96 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           };
         }
       }
-      setTeifMap(map);
+      setBackendMap(map);
     } catch { /* ignore */ }
     setSyncing(false);
   }, [currentId]);
 
-  const invoices = localInvoices.filter(inv => inv.status !== 'cancelled');
-
-  const statusCounts = {
-    all: invoices.length,
-    pending: invoices.filter(inv => !teifMap[inv.invoice_number || inv.id]).length,
-    signed: invoices.filter(inv => teifMap[inv.invoice_number || inv.id]?.status === 'SIGNED').length,
-    accepted: invoices.filter(inv => teifMap[inv.invoice_number || inv.id]?.status === 'ACCEPTED').length,
-    failed: invoices.filter(inv => teifMap[inv.invoice_number || inv.id]?.status === 'FAILED' || teifMap[inv.invoice_number || inv.id]?.status === 'REJECTED').length,
-    ttnPending: invoices.filter(inv => teifMap[inv.invoice_number || inv.id]?.status === 'TTN_PENDING').length,
-  };
-  const pendingCount = invoices.filter(inv => !teifMap[inv.invoice_number || inv.id] || teifMap[inv.invoice_number || inv.id]?.status === 'FAILED').length;
-
-  const handleBatchSubmit = async () => {
-    const pending = invoices.filter(inv => !teifMap[inv.invoice_number || inv.id] || teifMap[inv.invoice_number || inv.id]?.status === 'FAILED');
-    if (pending.length === 0) return;
-    setBatchRunning(true);
-    for (let i = 0; i < pending.length; i++) {
-      setBatchProgress({ current: i + 1, total: pending.length });
-      await handleSubmitToTEIF(pending[i]);
-    }
-    setBatchRunning(false);
-    setBatchProgress({ current: 0, total: 0 });
-  };
-
   function StatusBadge({ entry }) {
-    const status = entry?.status;
-    if (!status || status === 'NONE') return <span className="text-[10px] text-slate-500">En attente</span>;
-    const style = STATUS_COLORS[status] || STATUS_COLORS.NONE;
-    const Icon = STATUS_ICONS[status] || Clock;
-    const label = STATUS_LABELS[status] || status;
+    if (!entry) return <span className="text-[10px] text-slate-500">En attente</span>;
+    const def = STATUS_DEFS[entry.status];
+    if (!def) return <span className="text-[10px] text-slate-500">{entry.status}</span>;
+    const Icon = def.icon;
     return (
-      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold border ${style.bg}`}>
-        <Icon className="w-2.5 h-2.5" /> {label}
-        {entry?.hasXml && status === 'SIGNED' && <span className="ml-0.5 text-[8px] opacity-60">✓XML</span>}
+      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold border ${def.color}`}>
+        <Icon className="w-2.5 h-2.5" /> {def.label}
+        {entry.source === 'backend' && <span className="ml-0.5 text-[8px] opacity-50">☁</span>}
       </span>
     );
   }
+
+  function renderModal() {
+    if (!modal) return null;
+    return (
+      <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setModal(null)}>
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 max-w-lg w-full space-y-4" onClick={e => e.stopPropagation()}>
+          <div className="flex items-center gap-3">
+            {modal.type === 'error' ? <AlertTriangle className="w-6 h-6 text-red-400" />
+              : modal.type === 'success' ? <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+              : <FileText className="w-6 h-6 text-blue-400" />}
+            <h3 className="font-bold text-slate-100">{modal.title}</h3>
+          </div>
+
+          {modal.message && <p className="text-xs text-slate-400">{modal.message}</p>}
+
+          {modal.errors && (
+            <ul className="space-y-1">
+              {(modal.errors || []).map((err, i) => (
+                <li key={i} className="text-xs text-red-300/80">• {err.message || err}</li>
+              ))}
+            </ul>
+          )}
+
+          {modal.instructions && (
+            <div className="bg-slate-800/50 rounded-xl p-3 space-y-1">
+              {modal.instructions.map((inst, i) => (
+                <p key={i} className="text-xs text-slate-300">{inst}</p>
+              ))}
+            </div>
+          )}
+
+          <div className="flex flex-wrap gap-2">
+            {modal.type === 'manual' && modal.xml && (
+              <button onClick={() => { downloadTEIFXML(modal.xml, modal.invoiceId); setModal(null); }}
+                className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-colors">
+                <Download className="w-3.5 h-3.5" /> Télécharger XML TEIF
+              </button>
+            )}
+            {modal.type === 'manual' && modal.portalUrl && (
+              <a href={modal.portalUrl} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold rounded-xl transition-colors">
+                <ExternalLink className="w-3.5 h-3.5" /> Ouvrir le portail El Fatoora
+              </a>
+            )}
+            {modal.type === 'manual' && modal.invoice && (
+              <button onClick={() => { handleConfirmTransmission(modal.invoice); setModal(null); }}
+                className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
+                <CheckCircle2 className="w-3.5 h-3.5" /> Confirmer transmission
+              </button>
+            )}
+            <button onClick={() => setModal(null)}
+              className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold rounded-xl transition-colors">
+              Fermer
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const needsTransmissionConfirm = invoices.filter(inv => getStatus(inv)?.status === 'generated').length;
+  const needsBackendSync = connected && invoices.filter(inv => {
+    const e = getStatus(inv);
+    return !e || e.source !== 'backend';
+  }).length > 0;
 
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <SectionHeader
           icon={FileText}
-          title="TEIF & Télédéclaration"
-          subtitle="Soumission des factures à la TEIF via le backend Smart Comptable"
+          title="TEIF & Télédéclaration TTN"
+          subtitle="Génération XML TEIF, soumission portail El Fatoora et suivi des statuts"
         />
         <div className="flex items-center gap-2">
           <button onClick={handleSync} disabled={syncing}
@@ -168,39 +359,66 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
             <RefreshCw className={`w-3 h-3 ${syncing ? 'animate-spin' : ''}`} /> SYNC
           </button>
           <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[10px] font-bold ${connected ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' : 'bg-slate-800 border-slate-700 text-slate-500'}`}>
-            <Server className="w-3 h-3" />
-            {connected ? 'API Connectée' : 'API Déconnectée'}
+            {connected ? 'Backend ☁' : 'Local'}
           </div>
+          <select value={ttnMode} onChange={e => { setTTNMode(e.target.value); setTtnModeState(e.target.value); }}
+            className="bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-[10px] font-bold text-slate-300">
+            <option value="dev">Mode Sandbox</option>
+            <option value="production">Mode Production</option>
+          </select>
         </div>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
-        <KpiCard title="Total" value={statusCounts.all} icon={FileText} />
+        <KpiCard title="Total factures" value={statusCounts.all} icon={FileText} />
         <KpiCard title="En attente" value={statusCounts.pending} icon={Clock} color="amber" />
-        <KpiCard title="Signées" value={statusCounts.signed} icon={FileText} color="blue" />
-        <KpiCard title="Acceptées TTN" value={statusCounts.accepted} icon={CheckCircle2} color="emerald" />
-        <KpiCard title="TTN en cours" value={statusCounts.ttnPending} icon={Send} color="purple" />
-        {statusCounts.failed > 0 && <KpiCard title="Échec" value={statusCounts.failed} icon={XCircle} color="red" />}
+        <KpiCard title="XML généré" value={statusCounts.generated} icon={FileText} color="blue" />
+        <KpiCard title="Transmis portail" value={statusCounts.transmitted} icon={Upload} color="amber" />
+        <KpiCard title="Acceptés TTN" value={statusCounts.accepted} icon={CheckCircle2} color="emerald" />
+        {statusCounts.failed > 0 && <KpiCard title="Rejetés" value={statusCounts.failed} icon={XCircle} color="red" />}
       </div>
 
       <div className="flex items-center justify-between gap-4 px-4 py-2.5 bg-slate-900/30 border border-slate-800/40 rounded-xl">
         <div className="flex items-center gap-3 text-[10px] text-slate-500">
-          <span>Mode: <span className="text-slate-300">{getTTNMode() === 'prod' ? 'Production' : 'Sandbox'}</span></span>
+          <span>Mode: <span className="text-slate-300">{ttnMode === 'production' ? 'Production (XML + Portail)' : 'Sandbox (Simulation)'}</span></span>
           <span className="h-4 w-px bg-slate-700/50" />
-          <span>Backend: <span className={connected ? 'text-emerald-400' : 'text-red-400'}>{connected ? 'Connecté' : 'Non connecté'}</span></span>
-          <span className="h-4 w-px bg-slate-700/50" />
-          <span>Synchronisation: <span className="text-slate-300">{syncing ? '...' : `${Object.keys(teifMap).length} statuts`}</span></span>
+          <span>Suivi local: <span className="text-slate-300">{Object.keys(localMap).length} factures</span></span>
+          {connected && <><span className="h-4 w-px bg-slate-700/50" /><span>Backend: <span className="text-slate-300">{Object.keys(backendMap).length} statuts</span></span></>}
+        </div>
+        <div className="flex gap-2">
+          {needsTransmissionConfirm > 0 && (
+            <span className="text-[10px] text-amber-400 font-semibold">{needsTransmissionConfirm} à confirmer</span>
+          )}
         </div>
       </div>
 
-      {connected && pendingCount > 0 && (
-        <div className="flex justify-end">
-          <button onClick={handleBatchSubmit} disabled={batchRunning}
+      {(pendingCount > 0 || needsTransmissionConfirm > 0) && (
+        <div className="flex justify-end gap-2">
+          {needsTransmissionConfirm > 0 && (
+            <button onClick={() => {
+              const first = invoices.find(inv => getStatus(inv)?.status === 'generated');
+              if (first) {
+                const entry = getStatus(first);
+                setModal({
+                  title: 'Confirmer transmission',
+                  message: `Marquer "${first.invoiceNumber || first.invoice_number || first.id}" comme transmis au portail TTN ?`,
+                  instructions: ['Assurez-vous d\'avoir soumis le XML sur https://www.efatoora.tn avant de confirmer.'],
+                  type: 'manual',
+                  invoice: first,
+                  portalUrl: 'https://www.efatoora.tn',
+                });
+              }
+            }}
+              className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold rounded-xl transition-colors">
+              <Upload className="w-3.5 h-3.5" /> Confirmer transmission ({needsTransmissionConfirm})
+            </button>
+          )}
+          <button onClick={handleBatchGenerate} disabled={batchRunning}
             className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-bold rounded-xl transition-colors">
             {batchRunning ? (
               <><RefreshCw className="w-3.5 h-3.5 animate-spin" /> {batchProgress.current}/{batchProgress.total}...</>
             ) : (
-              <><Send className="w-3.5 h-3.5" /> Soumettre à la TEIF ({pendingCount})</>
+              <><Send className="w-3.5 h-3.5" /> Générer TEIF ({pendingCount})</>
             )}
           </button>
         </div>
@@ -223,8 +441,8 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
                 <tr><td colSpan={5} className="text-center py-8 text-slate-500">Aucune facture à déclarer</td></tr>
               )}
               {invoices.map(inv => {
-                const key = inv.invoice_number || inv.id;
-                const entry = teifMap[key];
+                const entry = getStatus(inv);
+                const key = inv.invoice_number || inv.invoiceNumber || inv.id;
                 return (
                   <tr key={inv.id} className="hover:bg-slate-800/20 transition-colors">
                     <td className="px-4 py-3">
@@ -238,17 +456,35 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
                     <td className="px-4 py-3 text-center"><StatusBadge entry={entry} /></td>
                     <td className="px-4 py-3 text-right">
                       <div className="flex items-center justify-end gap-1">
-                        {(!entry || entry.status === 'FAILED' || entry.status === 'NONE') && connected && (
-                          <button onClick={() => handleSubmitToTEIF(inv)} disabled={generatingId === inv.id}
+                        {(!entry || entry.status === 'rejected') && (
+                          <button onClick={() => handleGenerateTEIF(inv)} disabled={generatingId === inv.id}
                             className="px-2.5 py-1.5 rounded-lg bg-indigo-600/80 hover:bg-indigo-500 disabled:opacity-40 text-white text-[10px] font-semibold transition-colors">
                             {generatingId === inv.id ? '...' : 'TEIF'}
                           </button>
                         )}
-                        {entry?.status === 'ACCEPTED' && (
-                          <span className="px-2 py-1.5 text-[10px] text-emerald-400 font-semibold">Transmis ✓</span>
+                        {entry?.status === 'generated' && (
+                          <>
+                            <button onClick={() => handleGenerateTEIF(inv)}
+                              className="px-2 py-1.5 rounded-lg bg-blue-600/80 hover:bg-blue-500 text-white text-[10px] font-semibold transition-colors">
+                              Régénérer
+                            </button>
+                            <button onClick={() => handleConfirmTransmission(inv)}
+                              className="px-2 py-1.5 rounded-lg bg-amber-600/80 hover:bg-amber-500 text-white text-[10px] font-semibold transition-colors">
+                              Confirmer
+                            </button>
+                          </>
                         )}
-                        {entry?.status === 'FAILED' && !connected && (
-                          <span className="px-2 py-1.5 text-[10px] text-red-400 font-semibold">Échec local</span>
+                        {entry?.status === 'transmitted' && (
+                          <button onClick={() => handleConfirmTransmission(inv)}
+                            className="px-2 py-1.5 rounded-lg bg-emerald-600/80 hover:bg-emerald-500 text-white text-[10px] font-semibold transition-colors">
+                            Accepter
+                          </button>
+                        )}
+                        {entry?.status === 'accepted' && (
+                          <span className="px-2 py-1.5 text-[10px] text-emerald-400 font-semibold">✓ Transmis</span>
+                        )}
+                        {entry?.status === 'rejected' && (
+                          <span className="px-2 py-1.5 text-[10px] text-red-400 font-semibold">Rejeté</span>
                         )}
                       </div>
                     </td>
@@ -260,22 +496,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         </div>
       </div>
 
-      {errorModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setErrorModal(null)}>
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 max-w-md w-full space-y-4" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center gap-3">
-              <AlertTriangle className="w-6 h-6 text-red-400" />
-              <h3 className="font-bold text-slate-100">{errorModal.title}</h3>
-            </div>
-            <ul className="space-y-1">
-              {(errorModal.errors || []).map((err, i) => (
-                <li key={i} className="text-xs text-red-300/80">• {err.message || err}</li>
-              ))}
-            </ul>
-            <button onClick={() => setErrorModal(null)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold rounded-xl transition-colors">Fermer</button>
-          </div>
-        </div>
-      )}
+      {renderModal()}
     </div>
   );
 }

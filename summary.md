@@ -1,68 +1,58 @@
 ## Goal
-Build a secure, mobile-responsive Tunisian accounting app with a fully local AI learning engine, offline financial export (PDF/Excel), comprehensive audit system, and SCE-compliant Bilan & État de Résultat.
+- Smart Comptable with cloud sync (Supabase), offline fallback, local Tesseract.js OCR, full Tunisian accounting suite – deployable to GitHub Pages without a separate backend server.
 
 ## Constraints & Preferences
-- **Zero Gemini / n8n** — all AI uses the local learning engine + audit engine only; no API keys, no `analyzeDashboardWithGemini`.
-- Fully offline; no external dependencies.
-- AI learns from each invoice/expense (supplier memory, category/VAT prediction).
-- Search across invoices and expenses from header.
-- Security: PIN lock, encrypted localStorage, CSP, XSS sanitization.
-- Mobile responsive: hamburger menu, off-canvas sidebar, scrollable tables.
-- Tunisian compliance: TVA, timbre fiscal, retenue à la source, SCE plan comptable, IS 15%, CNSS 16.57%.
-- Excel export must use `exceljs` (full formatting, sheet protection), not `xlsx`.
-- Bilan must follow SCE Tunisie format with user-editable immobilisations, capital, loans, stocks.
-- Audit system must be fully local (no Gemini), with score, pass/warn/fail checks, and recommendations.
+- French UI labels throughout
+- Must keep offline/localStorage fallback when Supabase unavailable
+- Deploy via `npm run build` → copy `dist/index.html` → `dist/app.html` + landing → `npx gh-pages -d dist`
+- Tesseract.js v7 core files served locally from `/tesseract/`; language data from CDN (`tessdata.projectnaptha.com`)
+- No separate backend server – everything through Supabase
+- Supabase Management API (`api.supabase.com/v1/projects/{ref}/database/query`) for SQL execution
+- IRPP barème LF 2026: 5 tranches (0%, 26%, 28%, 32%, 35%), CSS supprimée, minimum d'imposition 45 DT/an
+- User rejected Gemini API integration; wants pure open-source OCR (Tesseract + OpenCV-style preprocessing)
+- **All raw invoice types must parse correctly** – user prioritizes multi-line table layout fix (labels and values on separate lines in PDF text extraction)
 
 ## Progress
 ### Done
-- **Local audit engine** (`src/auditEngine.js`): 15 compliance checks (TVA collectée/déduite, timbre fiscal, retenue source, MF fournisseurs, IS provision, CNSS, rapprochement bancaire, ratios liquidité/endettement/marge, anomalies, équilibre bilan, taux TVA, factures échues, couverture SCE). Weighted score /100, markdown report generation, recommendations.
-- **`analyzeDashboardWithGemini` completely removed** from App.jsx imports and usage — `handleRequestAudit` and `handleGenerateAudit` now call `runFullAudit` from audit engine.
-- **Bilan (SCE complet)** expanded in `generateBalanceSheet`: Actifs Non Courants (frais développement, brevets, fonds commercial, terrains, constructions, installations, transport, bureau, financières), Actifs Courants (stocks marchandises/MP, clients, personnel, État, autres débiteurs, banque, caisse), Capitaux Propres (capital, réserves légales/autres, résultat net), Passifs Non Courants (emprunts, provisions), Passifs Courants (fournisseurs, personnel, IS, TVA, autres dettes, concours bancaires).
-- **État de Résultat (SCE complet)** expanded in `generateIncomeStatement`: Produits (ventes marchandises, prestations services, autres), Charges (achats marchandises/MP, charges externes, personnel, amortissements, autres), Résultat financier (produits/charges financières), Résultat ordinaire avant IS, Résultat net.
-- **`generateBalanceSheet`** accepts 5th param `incomeStatement` (optional). All callers (`getFinancialExportData`, `FinancialReportView`, `calculateFinancialRatios`) pass the income statement to keep `retainedEarnings` = `netProfit` and `taxPayable` = `tax`.
-- **9 financial ratios** in `calculateFinancialRatios`: liquidité générale, liquidité réduite, Dettes/CP, ROE, ROA, marge nette, marge brute, autonomie financière, couverture intérêts.
-- **PDF export** (`src/pdfExport.js`): Bilan en tableau 2 colonnes (Actif gauche / Passif droit) avec `trow()` helper, sections indentées, État de Résultat en page 2. Totaux affichés sur une ligne unique (fond bleu, trait épais). Separators (`sep()`) supprimés avant les totaux.
-- **Intermediate sub-totals removed**: Total Actifs Non Courants, Total Actifs Courants, Total Capitaux Propres, Total Passifs Non Courants, Total Passifs Courants supprimés. Seuls TOTAL ACTIFS et TOTAL PASSIFS & CP restent.
-- **Excel export** (`src/excelExport.js`) restructured: helpers `L()/LR()/T()/TR()/S()/SR()` pour aligner synchrone Actif/Passif, sections épurées, plus de sous-totaux intermédiaires.
-- **`FinancialReportView.jsx`**: sections repliables, champs éditables persistés (localStorage `sc_bilan_custom_data`), vue complète SCE avec tous les postes. Bouton ✏️ toggle édition.
-- **Balancing step** added: si totalAssets ≠ totalLiabilitiesAndEquity, ajuste Caisse (`cashRegister`) pour équilibrer strictement. `cashRegister`/`cashAndBank` changés en `let` pour permettre la réaffectation.
-- **MDT conversion complete**: `generateIncomeStatement` divise `totalRevenue`/`totalExpenses` par 1000. `formatCurrencyHelper` accepte `'MDT'`. `FinancialReportView.jsx` affiche `MDT`. PDF/Excel titres `(en MDT)`.
-- **`generateSimulatedData`** in `accountingUtils.js`: génère 12 factures, 24 dépenses, 24 transactions fictives qui matchent les proportions de l'État de Résultat.
-- **Build passes** — `npm run build` succeeds.
+- **TTN invoice OCR fully fixed** – all 5 corrections verified working in UI (Taux=12%, HT=135.500, TVA=16.260, TTC=152.260, Timbre=0.500)
+  - **Fix A**: `corrigerFacture()` – added `detectTotalHT(text)` fallback for `recap.ht` → prevents garbage line-sum override (was HT=2.553)
+  - **Fix B**: `corrigerFacture()` – replaced timbre extraction with `detectTimbre(text)` → handles "Dr de Timbre 0500" → 0.500 (was 500.000)
+  - **Fix C**: `corrigerFacture()` – guard on `taux_tva` override: only override if `tauxUniques.size > 1` (mixed) or no existing rate; prevents garbage lines (tva=19) from overwriting formulaire rate 12%
+  - **Fix D**: `App.jsx` – added `<option value="12">12%</option>` to Taux TVA dropdown (was missing)
+  - **Fix E**: `parseMontantLettres()` – now parses **millimes** portion ("ET DEUX CENT SOIXANTE MILLIMES" → 260/1000 = 0.260)
+- **WebP preprocessing fix** – `preprocessImage()` now tries browser decoding first; if decode succeeds → runs full preprocessing; if fails (VP8X WhatsApp WebP) → returns raw file for Tesseract/Leptonica
+- **Quality thresholds relaxed** – `tesseractOcr.js` line 518: changed from `words<3 || alpha<2 || digits<2` to `words<2 || alpha<1 || digits<1`; line 529: `letterRatio<0.15` (was 0.30)
+- **Fallback OCR pipeline** – `scanFacture()` now retries OCR on the original raw file if the preprocessed image returns 0 text
+- **`isCleanDocument()`** – new histogram-based detection in `tesseractOcr.js` that skips `removeShadows()`, `localContrastEnhancement()`, and `denoise()` for clean high-contrast scans (light>60% + dark>1% + midtones<20%)
+- **`facture-exemple-1.png` diagnosed** – Node.js OCR test confirmed it IS a readable E-INFO invoice (712 chars, 59% conf); the browser preprocessing pipeline was destroying the text; `isCleanDocument()` now fixes this
+- **Value analysis fallback `analyseValeursFacture()`** – new function in `ocrParser.js` that infers HT, TTC, TVA, timbre, FODEC from numerical relationships when label-based regex patterns fail (works for table-layout PDFs)
+- **`analyseValeursFacture()` handles FODEC** – when TVA is calculated on HT+FODEC (as with STEG), the analysis tests both with and without FODEC, scoring by total match to TTC
+- **Value analysis integrated** – called from `corrigerFacture()` after recap extraction, filling in any missing values before the existing HT/TVA fallback
+- **Multi-line patterns removed from `extraireRecapitulatif()`** – were unreliable (matched wrong DT values); replaced by the mathematical value analysis which is order-independent
+- **Sample PDFs analyzed** – extracted text from STEG, STE Bonjour invoices; confirmed table-layout parsing gap resolved by value analysis
+- **Build passes** – `npm run build` succeeds
 
-### In Progress
-- (none)
-
-### Blocked
-- (none)
-
-## Key Decisions
-- Removed `analyzeDashboardWithGemini` entirely — audit engine replaces it with 15 fully local checks; `geminiService.js` still exports the function but it is no longer imported anywhere.
-- Replaced fragile Excel `SUM()` formulas with direct computed values for reliability; formulas were causing broken references due to dynamic row layout.
-- PDF Bilan redesigned as side-by-side columns (Actif left / Passif right) using a custom `trow()` helper, with État de Résultat on page 2 — matches standard Tunisian financial statement presentation.
-- **Totals as single lines**: removed `sep()` lines before totals and removed intermediate sub-totals so only the final TOTAL appears as one distinct line per column.
-- **Linked Bilan / Résultat**: `retainedEarnings` now reads `incomeStatement.netProfit` and `taxPayable` reads `incomeStatement.tax` instead of independent calculation.
-- **Balancing**: Caisse is the adjustment variable; any mismatch between Actif and Passif+CP is absorbed by cashRegister.
-- **MDT conversion**: all internal values divided by 1000; constants scaled (5000→5 MDT, 200→0.200 MDT, 50→0.050 MDT).
+## Current Parser Architecture
+1. **Label-based patterns** (`extraireRecapitulatif()`): regex matches labels like "Total HT :" followed by `[\d\s,.]+` – works for most invoices where labels and values are on same/adjacent lines
+2. **Value analysis** (`analyseValeursFacture()`): fallback when labels don't match – uses mathematical relationships (TTC ≈ HT + TVA + timbre) to infer values from all numbers in the text; handles both TVA-on-HT and TVA-on-HT+FODEC
+3. **CorrigerFacture corrections**: post-processing corrections for specific invoice formats (TTN, etc.)
 
 ## Next Steps
-1. Test PDF download works end-to-end with MDT values.
-2. Verify Excel export opens cleanly in Excel/LibreOffice without formula errors.
-3. Confirm audit engine scores match expected weights and recommendations are relevant.
-4. The large main chunk (~2167 kB) could be split later with dynamic imports.
+1. **Test `facture-exemple-1.png`** – build is done; scan it in the app to verify `isCleanDocument()` fix works
+2. Test the sample PDFs in the app – scan each PDF to verify value analysis works correctly
+3. If results are still wrong – tune `analyseValeursFacture()` heuristics or add more label patterns
+4. Fix encoding issue for `facture_prestation_rs.pdf` and `facture_ooredoo_telecom.pdf` (pdfminer.six encoding error with accents)
+5. Handle the remaining invoice types from the audit list (thermal tickets, fuel receipts, telecom, bank slips)
 
 ## Critical Context
-- Production build succeeds; main chunk ~2167 kB (could code-split later).
-- `generateBalanceSheet` signature: `(invoices, expenses, transactions, customData={}, incomeStatement=null)` — 5th param new.
-- `canApplySavingsCalculation`? No — user refused.
-- `analyzeDashboardWithGemini` is still defined in `geminiService.js` but no longer imported anywhere — dead code, safe to remove.
-- Audit engine (`auditEngine.js`) depends on `learningEngine` (for `detectAnomaly`, `getLearningStats`) and `accountingUtils` (for `generateBalanceSheet`, ratios) — all local.
-- PDF generates both Bilan and État de Résultat in a single file when calling `exportBalanceSheetPDF`; `exportIncomeStatementPDF` still exists separately for backward compatibility.
-- Workflow: `.github/workflows/deploy.yml` — builds on Ubuntu, deploys via `actions/upload-pages-artifact@v3`.
+- **`facture-exemple-1.png`** (C:\Users\ezzin\Downloads) – E-INFO invoice; should now parse correctly with `isCleanDocument()` skipping aggressive preprocessing
+- **Sample PDFs**: `facture_ste_bonjour_produits.pdf` (STE Bonjour, table layout, HT=884.425, TVA 13%, TTC=1000.000, timbre=0.600), `facture_steg_electricite.pdf` (STEG, FODEC 1%, TVA 13%, TTC=205.416), `facture_prestation_rs.pdf` + `facture_ooredoo_telecom.pdf` (encoding error)
+- **Value analysis** mathematically verifies: for STE Bonjour remainder TTC-Ht=115.575 splits into TVA=114.975 (13%) + timbre=0.600 (score 0); for STEG remainder splits into TVA=23.632 (13% on HT+FODEC) + FODEC=1.800 (score 0)
+- **Github Pages**: `https://salimezine.github.io/Smart-comptable/`
+- **Supabase**: `xkpkmqlcxtlcdkmccbhs` (URL `https://xkpkmqlcxtlcdkmccbhs.supabase.co`)
 
 ## Relevant Files
-- `src/accountingUtils.js`: `generateBalanceSheet` (MDT conversion, balancing step, 5th incomeStatement param), `generateIncomeStatement` (MDT), `calculateFinancialRatios` (9 ratios), `formatCurrencyHelper` (MDT), `generateSimulatedData`.
-- `src/pdfExport.js`: Bilan 2-col side-by-side via `trow()` (page 1), État de Résultat (page 2). Totals as single lines with blue background. MDT labels.
-- `src/excelExport.js`: 4 sheets, direct values, `L/LR/T/TR/S/SR` helpers for aligned Actif/Passif, no intermediate sub-totals. MDT titles.
-- `src/FinancialReportView.jsx`: Collapsible SCE sections, editable fields, localStorage persistence. `fmt()` displays "MDT".
-- `src/auditEngine.js`: 15 local checks, uses `generateBalanceSheet` & `calculateFinancialRatios` from accountingUtils.
+- **`src/tesseractOcr.js`**: `preprocessImage()` – WebP browser decode with fallback; `isCleanDocument()` – histogram-based clean doc detection; `scanFacture()` – OCR fallback to raw file
+- **`src/utils/ocrParser.js`**: `analyseValeursFacture()` – mathematical value analysis (new rewrite handles FODEC); `extraireRecapitulatif()` – simplified (no multi-line patterns); `corrigerFacture()` – value analysis integrated as fallback before existing HT/TVA fallback
+- **`C:\Users\ezzin\Downloads\facture-exemple-1.png`**: E-INFO invoice, to be tested after build
+- **`C:\Users\ezzin\Downloads\facture_ste_bonjour_produits.pdf`**, **`facture_steg_electricite.pdf`**, **`facture_prestation_rs.pdf`**, **`facture_ooredoo_telecom.pdf`**: Sample PDFs

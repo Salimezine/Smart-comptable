@@ -1,6 +1,6 @@
 /**
- * payrollEngine.js — Paie Tunisienne LF 2025
- * Calculs CNSS, IRPP, CSS, bulletins, PDF exports
+ * payrollEngine.js — Paie Tunisienne LF 2026
+ * Calculs CNSS, IRPP, CSS (supprimée 2026+), bulletins, PDF exports
  */
 
 import { jsPDF } from 'jspdf';
@@ -17,31 +17,36 @@ export const TAUX = {
   css_seuil: 5000,
 };
 
-export const BAREME_IRPP_2025 = [
+export const BAREME_IRPP_2026 = [
   { min: 0,      max: 5000,  taux: 0.00 },
-  { min: 5000,   max: 10000, taux: 0.15 },
-  { min: 10000,  max: 20000, taux: 0.25 },
-  { min: 20000,  max: 30000, taux: 0.30 },
-  { min: 30000,  max: 40000, taux: 0.33 },
-  { min: 40000,  max: 50000, taux: 0.36 },
-  { min: 50000,  max: 70000, taux: 0.38 },
-  { min: 70000,  max: Infinity, taux: 0.40 },
+  { min: 5000,   max: 20000, taux: 0.26 },
+  { min: 20000,  max: 30000, taux: 0.28 },
+  { min: 30000,  max: 50000, taux: 0.32 },
+  { min: 50000,  max: Infinity, taux: 0.35 },
 ];
+
+const MINIMUM_IMPOT = 45;
 
 function cssTaux(annee) {
   return annee >= 2026 ? 0 : TAUX.css_taux;
 }
 
-export function calculerIRPP(revenuImposableAnnuel, annee = 2025) {
+function getBareme(annee) {
+  return annee >= 2026 ? BAREME_IRPP_2026 : BAREME_IRPP_2026;
+}
+
+export function calculerIRPP(revenuImposableAnnuel, annee = 2026) {
   if (revenuImposableAnnuel <= 0) return { irpp_annuel: 0, css_annuelle: 0, total_annuel: 0, rs_mensuelle: 0 };
+  const bareme = getBareme(annee);
   let irpp = 0;
   let reste = revenuImposableAnnuel;
-  for (const tr of BAREME_IRPP_2025) {
+  for (const tr of bareme) {
     if (reste <= 0) break;
     const tranche = Math.min(reste, tr.max - tr.min);
     if (tranche > 0) irpp += tranche * tr.taux;
     reste -= tranche;
   }
+  if (irpp > 0 && irpp < MINIMUM_IMPOT) irpp = MINIMUM_IMPOT;
   const css = revenuImposableAnnuel > TAUX.css_seuil ? revenuImposableAnnuel * cssTaux(annee) : 0;
   const total = irpp + css;
   return {
@@ -91,7 +96,10 @@ export function calculerBulletin(employe, params) {
   // Provision CP mensuelle
   const provisionCP = parseFloat((brut / 12).toFixed(3));
 
+  const bulletinId = `${employe.id}_${annee}_${String(mois).padStart(2, '0')}`;
+
   return {
+    id: bulletinId,
     employeId: employe.id,
     nom: employe.nom,
     prenom: employe.prenom,

@@ -4,10 +4,16 @@
  * Mode dev: simulation locale
  * Mode prod: téléchargement XML + redirection portail
  * Pure JS navigateur — zéro dépendance
+ *
+ * Exporte:
+ *   sendToTTN(xml, cfg)     → { status, ttnId?, errors?, message? }
+ *   handleTTNResponse(inv, r) → { success, pieceId?, ttnId?, errors? }
+ *   confirmTTNTransmission(inv, xml, cfg) → workflow complet combiné
  */
 
 import { createPieceComptable, savePieceToJournal } from './pieceComptable.js';
 import { updateStockFromInvoice } from './stockManager.js';
+import { downloadTEIFXML } from './teifGenerator.js';
 
 // ─────────────────────────────────────────────
 // Codes erreur TTN → messages FR
@@ -31,7 +37,7 @@ export async function sendToTTN(xmlString, config = {}) {
   try {
     const mode = config.ttnMode || 'dev';
 
-    if (mode !== 'production') {
+    if (mode === 'dev' || mode === 'sandbox') {
       // Mode développement — simulation
       await new Promise(r => setTimeout(r, 1500));
 
@@ -53,18 +59,38 @@ export async function sendToTTN(xmlString, config = {}) {
         status: 'accepted',
         ttnId: `TTN-${year}-${r6}`,
         timestamp: new Date().toISOString(),
+        _simulated: true,
       };
     }
 
-    // Mode production
+    // Mode production — téléchargement XML + portail
     return {
       status: 'manual',
-      message: 'Transmission SFTP TTN requiert un backend Node.js sécurisé. Téléchargez le XML et soumettez-le via le portail El Fatoora.',
-      portalUrl: 'https://efatoora.tn',
+      message: 'Téléchargez le fichier XML TEIF et soumettez-le sur le portail El Fatoora.',
+      xml: xmlString,
+      invoiceId: config.invoiceId || 'facture',
+      portalUrl: 'https://www.efatoora.tn',
+      instructions: [
+        '1. Cliquez sur "Télécharger XML" pour sauvegarder le fichier',
+        '2. Accédez au portail El Fatoora: https://www.efatoora.tn',
+        '3. Connectez-vous avec votre certificat TUNTRUST',
+        '4. Importez le fichier XML dans la section "Déposer une facture"',
+        '5. Le portail vérifiera la signature et transmettra à TTN',
+        '6. Revenez ici et cliquez sur "Confirmer transmission" après soumission',
+      ],
       timestamp: new Date().toISOString(),
     };
   } catch (e) {
     return { status: 'error', errors: [e.message], timestamp: new Date().toISOString() };
+  }
+}
+
+// ─────────────────────────────────────────────
+// 1b. téléchargement XML après sendToTTN
+// ─────────────────────────────────────────────
+export function downloadTTNXml(response) {
+  if (response?.xml) {
+    downloadTEIFXML(response.xml, response.invoiceId);
   }
 }
 
@@ -130,12 +156,43 @@ export async function handleTTNResponse(invoice, ttnResponse) {
     if (status === 'manual') {
       return {
         success: null,
+        status: 'manual',
         message: ttnResponse.message,
         portalUrl: ttnResponse.portalUrl,
+        instructions: ttnResponse.instructions,
+        xml: ttnResponse.xml,
       };
     }
 
     return { success: false, errors: ['Statut TTN inconnu'] };
+  } catch (e) {
+    return { success: false, errors: [e.message] };
+  }
+}
+
+// ─────────────────────────────────────────────
+// 3. confirmTTNTransmission — marque manuellement
+//    une facture comme transmise → écriture comptable
+// ─────────────────────────────────────────────
+export async function confirmTTNTransmission(invoice, ttnIdOverride) {
+  try {
+    if (!invoice) return { success: false, errors: ['Facture requise'] };
+
+    const ttnId = ttnIdOverride || `TTN-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+
+    const piece = await createPieceComptable(invoice, ttnId);
+    await savePieceToJournal(piece, { locked: true });
+    await updateStockFromInvoice(invoice);
+
+    invoice.statut = 'validee_teif';
+    invoice.ttnId = ttnId;
+    invoice.ttnTimestamp = new Date().toISOString();
+
+    window.dispatchEvent(new CustomEvent('teif:accepted', {
+      detail: { invoiceId: invoice.id, ttnId, pieceId: piece.id },
+    }));
+
+    return { success: true, pieceId: piece.id, ttnId };
   } catch (e) {
     return { success: false, errors: [e.message] };
   }
