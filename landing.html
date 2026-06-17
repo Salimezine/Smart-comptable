@@ -15,10 +15,7 @@
   <meta name="twitter:description" content="Automatisez TVA, IRPP, IS, paie et bilan SCR. Conforme fiscalité tunisienne 2025." />
   <link rel="canonical" href="https://salimezine.github.io/Smart-comptable/" />
   <link rel="icon" type="image/png" href="https://salimezine.github.io/Smart-comptable/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -103,7 +100,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-tap-highlight-color: transparent; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Roboto, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -114,9 +111,95 @@
     a:hover { color: var(--primary-dark); }
     img { max-width: 100%; height: auto; }
 
-    /* ===== BOOTSTRAP OVERRIDES ===== */
-    .container { max-width: 1200px; }
-    .row { --bs-gutter-x: 1.5rem; }
+    /* ===== CUSTOM GRID & UTILITIES ===== */
+    .container { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px; }
+    .row { display: flex; flex-wrap: wrap; }
+    .col-6 { width: 50%; }
+    .col-12 { width: 100%; }
+    .col-sm-6 { width: 100%; }
+    .col-lg-2 { width: 100%; }
+    .col-lg-3 { width: 100%; }
+    .col-lg-4 { width: 100%; }
+    .col-lg-5 { width: 100%; }
+    .col-lg-7 { width: 100%; }
+    .col-lg-8 { width: 100%; }
+    .col-md-3 { width: 100%; }
+    .col-md-4 { width: 100%; }
+    .col-md-4 { width: 100%; }
+    .col-xl { flex: 1 0 0%; }
+    @media (min-width: 576px) {
+      .col-sm-6 { width: 50%; }
+    }
+    @media (min-width: 768px) {
+      .col-md-3 { width: 25%; }
+      .col-md-4 { width: 33.333%; }
+    }
+    @media (min-width: 992px) {
+      .col-lg-2 { width: 16.666%; }
+      .col-lg-3 { width: 25%; }
+      .col-lg-4 { width: 33.333%; }
+      .col-lg-5 { width: 41.666%; }
+      .col-lg-7 { width: 58.333%; }
+      .col-lg-8 { width: 66.666%; }
+      .offset-lg-1 { margin-left: 8.333%; }
+    }
+    .d-flex { display: flex; }
+    .d-inline-flex { display: inline-flex; }
+    .flex-column { flex-direction: column; }
+    .flex-wrap { flex-wrap: wrap; }
+    .align-items-center { align-items: center; }
+    .align-items-lg-center { align-items: center; }
+    .justify-content-center { justify-content: center; }
+    .justify-content-between { justify-content: space-between; }
+    .gap-1 { gap: 4px; }
+    .gap-2 { gap: 8px; }
+    .gap-3 { gap: 16px; }
+    .gap-4 { gap: 24px; }
+    .text-center { text-align: center; }
+    .text-start { text-align: left; }
+    .fw-semibold { font-weight: 600; }
+    .fw-bold { font-weight: 700; }
+    .fw-black { font-weight: 900; }
+    .small { font-size: 0.875em; }
+    .text-muted { color: var(--text-muted); }
+    .text-primary { color: var(--primary); }
+    .text-success { color: var(--secondary); }
+    .text-danger { color: #DC2626; }
+    .text-warning { color: #D97706; }
+    .text-white-50 { color: rgba(255,255,255,0.5); }
+    .mb-0 { margin-bottom: 0; }
+    .mb-1 { margin-bottom: 4px; }
+    .mb-2 { margin-bottom: 8px; }
+    .mb-3 { margin-bottom: 16px; }
+    .mb-4 { margin-bottom: 24px; }
+    .mb-5 { margin-bottom: 48px; }
+    .mt-1 { margin-top: 4px; }
+    .mt-4 { margin-top: 24px; }
+    .me-2 { margin-right: 8px; }
+    .ms-auto { margin-left: auto; }
+    .ms-lg-3 { margin-left: 0; }
+    @media (min-width: 992px) { .ms-lg-3 { margin-left: 16px; } }
+    .p-2 { padding: 8px; }
+    .p-4 { padding: 24px; }
+    .px-3 { padding-left: 16px; padding-right: 16px; }
+    .py-2 { padding-top: 8px; padding-bottom: 8px; }
+    .h-100 { height: 100%; }
+    .border-0 { border: none; }
+    .position-relative { position: relative; }
+    .navbar-collapse { display: none; flex-basis: 100%; }
+    .navbar-collapse.show { display: block; }
+    @media (min-width: 992px) {
+      .navbar-collapse { display: flex; flex-basis: auto; }
+    }
+    .badge { display: inline-block; padding: 4px 12px; font-size: 0.75em; font-weight: 600; border-radius: 100px; }
+    .today-badge { background: rgba(15, 76, 129, 0.08); padding: 6px 16px; }
+    .form-control { display: block; width: 100%; padding: 14px 18px; font-size: 14px; font-family: inherit; border-radius: 12px; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--input-text); transition: all var(--transition); }
+    .form-control::placeholder { color: var(--text-muted); }
+    .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--input-focus); }
+    .g-3 { margin-left: -8px; margin-right: -8px; }
+    .g-3 > * { padding-left: 8px; padding-right: 8px; }
+    .g-4 { margin-left: -12px; margin-right: -12px; }
+    .g-4 > * { padding-left: 12px; padding-right: 12px; }
     section { padding: 120px 0; }
     .section-label {
       display: inline-flex; align-items: center; gap: 8px;
@@ -679,11 +762,11 @@
           <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
-        <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+        <button class="navbar-toggler border-0 p-2" type="button" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
-      <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
           <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
           <li class="nav-item"><a class="nav-link" href="#pricing">Tarifs</a></li>
@@ -971,7 +1054,7 @@
           <div class="card-solid p-4 h-100 fade-up">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h5 class="fw-bold mb-0">Transactions Récentes</h5>
-              <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">Aujourd'hui</span>
+              <span class="badge text-primary today-badge">Aujourd'hui</span>
             </div>
             <div class="d-flex flex-column gap-3" id="recentTransactions">
               <div class="d-flex justify-content-between align-items-center">
@@ -1343,7 +1426,6 @@
   </footer>
 
   <!-- ===== JAVASCRIPT ===== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Unregister any stale service worker so navigation to app.html isn't intercepted by old cache
     if ('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(r => r.forEach(reg => reg.unregister()));
@@ -1370,6 +1452,22 @@
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
+
+    // Navbar toggle (vanilla, replaces Bootstrap collapse)
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        navToggle.setAttribute('aria-expanded', navMenu.classList.contains('show'));
+      });
+      document.addEventListener('click', (e) => {
+        if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+          navMenu.classList.remove('show');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
 
     // Theme toggle
     const themeToggle = document.getElementById('themeToggle');
