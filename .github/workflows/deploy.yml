@@ -8,8 +8,22 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,8 +31,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
-      - name: Build with Supabase
+          cache: npm
+      - run: npm ci
+      - name: Build
         run: |
           export VITE_SUPABASE_URL="${{ secrets.VITE_SUPABASE_URL }}"
           export VITE_SUPABASE_ANON_KEY="${{ secrets.VITE_SUPABASE_ANON_KEY }}"
@@ -28,16 +43,6 @@ jobs:
           cp dist/index.html dist/app.html
           cp landing.html dist/index.html
           cp mentions-legales.html dist/mentions-legales.html
-      - name: Debug build output
-        run: |
-          echo "GITHUB_SHA=$GITHUB_SHA"
-          echo "HEAD: $(git rev-parse HEAD)"
-          echo "Branch: $(git rev-parse --abbrev-ref HEAD)"
-          echo "github.sha=${{ github.sha }}"
-          echo "Event: ${{ github.event_name }}"
-          echo "src files:"; ls -la src/*.jsx src/*.js src/*.css 2>/dev/null || true
-          echo "vite config:"; cat vite.config.js
-          echo "dist files:"; ls -la dist/assets/
       - name: Deploy to gh-pages branch
         run: |
           mkdir -p $HOME/deploy

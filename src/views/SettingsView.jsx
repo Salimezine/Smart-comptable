@@ -56,11 +56,15 @@ function CloudSyncSection({ companyId }) {
 export default function SettingsView({ companyDetails, setCompanyDetails }) {
   const [success, setSuccess] = useState(false);
   const [stats, setStats] = useState(getLearningStats());
+  const [ttnMode, setTtnMode] = useState(() => getTTNMode());
 
   useEffect(() => { setStats(getLearningStats()); }, []);
 
+  useEffect(() => { setTtnMode(getTTNMode()); }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setTTNMode(ttnMode);
     setSuccess(true);
     setTimeout(() => setSuccess(false), 2500);
   };
@@ -226,11 +230,35 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
           </div>
           <div className="flex items-center gap-3">
             <label className="text-[10px] font-medium text-slate-400">Mode TTN:</label>
-            <button type="button" onClick={() => setTTNMode(getTTNMode() === 'dev' ? 'prod' : 'dev')} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${getTTNMode() === 'dev' ? 'bg-amber-600/80 text-amber-200' : 'bg-emerald-600/80 text-emerald-200'}`}>
-              {getTTNMode() === 'dev' ? '🧪 Développement (mock)' : '🚀 Production (SFTP)'}
+            <button type="button" onClick={() => {
+              const modes = ['dev', 'prod', 'middleware'];
+              const idx = modes.indexOf(ttnMode);
+              const next = modes[(idx + 1) % modes.length];
+              setTtnMode(next);
+            }} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${ttnMode === 'dev' ? 'bg-amber-600/80 text-amber-200' : ttnMode === 'prod' ? 'bg-emerald-600/80 text-emerald-200' : 'bg-blue-600/80 text-blue-200'}`}>
+              {ttnMode === 'dev' ? '🧪 Développement (mock)' : ttnMode === 'prod' ? '🚀 Production (SFTP)' : '🔌 Middleware (API REST)'}
             </button>
           </div>
-          <p className="text-[10px] text-slate-500">En mode <strong>Développement</strong>, les TEIF sont simulées localement. En mode <strong>Production</strong>, elles sont transmises via SFTP.</p>
+          <p className="text-[10px] text-slate-500">En mode <strong>Middleware</strong>, les factures sont transmises via l'API REST d'el-fatoora-middleware.</p>
+
+          {ttnMode === 'middleware' && (
+            <div className="space-y-3 mt-3 p-3 rounded-xl bg-slate-900/60 border border-blue-500/20">
+              <p className="text-[10px] font-bold text-blue-400 uppercase tracking-wider">Configuration Middleware & NGSign</p>
+              <div>
+                <label className="block text-[10px] font-medium text-slate-400 mb-1">URL du middleware</label>
+                <input value={companyDetails?.middlewareUrl || ''} onChange={e => setCompanyDetails(p => ({...p, middlewareUrl: e.target.value}))} placeholder="https://elfatoora-middleware-app-production.up.railway.app" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50"/>
+              </div>
+              <div>
+                <label className="block text-[10px] font-medium text-slate-400 mb-1">Token API</label>
+                <input type="password" value={companyDetails?.middlewareToken || ''} onChange={e => setCompanyDetails(p => ({...p, middlewareToken: e.target.value}))} placeholder="Bearer token" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50"/>
+              </div>
+              <div>
+                <label className="block text-[10px] font-medium text-slate-400 mb-1">Email signataire NGSign</label>
+                <input type="email" value={companyDetails?.ngsignSignerEmail || ''} onChange={e => setCompanyDetails(p => ({...p, ngsignSignerEmail: e.target.value}))} placeholder="signataire@entreprise.tn" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50"/>
+              </div>
+              <p className="text-[10px] text-blue-300/70">L'email du signataire est requis pour la signature NGSign. Le token API NGSign est configurable côté middleware via la route <code className="text-blue-300">/v1/clients</code>.</p>
+            </div>
+          )}
         </div>
       </div>
 

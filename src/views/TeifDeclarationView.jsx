@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { FileText, CheckCircle2, XCircle, Clock, RefreshCw, Send, AlertTriangle, Download, Upload, ExternalLink } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import KpiCard from '../components/KpiCard';
 import { generateTEIFXML, validateTEIF, downloadTEIFXML } from '../utils/teifGenerator';
-import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission } from '../utils/ttnWorkflow';
+import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission, sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus } from '../utils/ttnWorkflow';
 import { getTTNMode, setTTNMode } from '../teif';
 import * as api from '../utils/teifSupabaseService';
 
 const TTN_STATUS_KEY = 'smart_ttn_local_status';
 
 const STATUS_DEFS = {
-  none:        { label: 'Non généré',     color: 'bg-slate-800 text-slate-400',                    icon: Clock,         order: 0 },
-  generated:   { label: 'XML généré',     color: 'bg-blue-500/15 text-blue-400 border-blue-500/30', icon: FileText,      order: 1 },
-  transmitted: { label: 'Transmis portail', color: 'bg-amber-500/15 text-amber-400 border-amber-500/30', icon: Upload, order: 2 },
-  accepted:    { label: 'Accepté TTN',    color: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30', icon: CheckCircle2, order: 3 },
-  rejected:    { label: 'Rejeté',         color: 'bg-red-500/15 text-red-400 border-red-500/30',    icon: XCircle,      order: -1 },
+  none:        { label: 'Non généré',       color: 'bg-slate-800 text-slate-400',                    icon: Clock,         order: 0 },
+  generated:   { label: 'XML généré',       color: 'bg-blue-500/15 text-blue-400 border-blue-500/30', icon: FileText,      order: 1 },
+  transmitted: { label: 'En attente signature', color: 'bg-amber-500/15 text-amber-400 border-amber-500/30', icon: Upload, order: 2 },
+  accepted:    { label: 'Accepté TTN',      color: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30', icon: CheckCircle2, order: 3 },
+  rejected:    { label: 'Rejeté',           color: 'bg-red-500/15 text-red-400 border-red-500/30',    icon: XCircle,      order: -1 },
 };
 
 function loadLocalStatuses() {
@@ -37,8 +37,63 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
   const [syncing, setSyncing] = useState(false);
   const [connected, setConnected] = useState(false);
   const [ttnMode, setTtnModeState] = useState(getTTNMode());
+  const [pollingInvoice, setPollingInvoice] = useState(null);
+  const pollRef = useRef(null);
 
   const currentId = localStorage.getItem('smart_comptable_current_id');
+
+  // Détecter le callback NGSign (redirection après signature)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const callback = params.get('teif_callback');
+    if (callback) {
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  }, []);
+
+  // Auto-polling après signature
+  useEffect(() => {
+    if (pollingInvoice) {
+      const entries = Object.entries(localMap);
+      const transmitted = entries.filter(([_, v]) => v.status === 'transmitted');
+      if (transmitted.length > 0) {
+        pollRef.current = setInterval(async () => {
+          for (const [invNum, data] of transmitted) {
+            const inv = invoices.find(i => (i.invoice_number || i.invoiceNumber || i.id) === invNum);
+            if (!inv) continue;
+            const status = await pollMiddlewareStatus(invNum, {
+              middlewareUrl: companyDetails?.middlewareUrl || data.middlewareUrl || '',
+              middlewareToken: companyDetails?.middlewareToken || '',
+            });
+            if (status?.status === 'accepted') {
+              clearInterval(pollRef.current);
+              pollRef.current = null;
+              setPollingInvoice(null);
+              const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+              setStatus(inv, 'accepted', { ttnId, documentNumber: invNum });
+              onAddPieceComptable && onAddPieceComptable({
+                id: `piece-${Date.now()}`, ttnId,
+                date: inv.issueDate || inv.date,
+                journal: 'VNT', reference: invNum,
+                total: inv.totalAmount || inv.montantTTC || 0,
+              });
+              setModal({ title: 'Signature + TTN accepté ✓', message: `Document ${invNum} signé et transmis automatiquement.`, type: 'success' });
+              return;
+            }
+            if (status?.status === 'rejected') {
+              clearInterval(pollRef.current);
+              pollRef.current = null;
+              setPollingInvoice(null);
+              setStatus(inv, 'rejected');
+              setModal({ title: 'Document rejeté', errors: ['Rejeté par le middleware ou TTN'], type: 'error' });
+              return;
+            }
+          }
+        }, 8000);
+      }
+    }
+    return () => { if (pollRef.current) clearInterval(pollRef.current); };
+  }, [pollingInvoice]);
 
   useEffect(() => {
     setLocalMap(loadLocalStatuses());
@@ -112,6 +167,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
       const teifInvoice = {
         id: invoice.invoiceNumber || invoice.invoice_number || invoice.id,
         dateEmission: invoice.issueDate || invoice.issue_date || invoice.date || new Date().toISOString().slice(0, 10),
+        dueDate: invoice.dueDate || '',
         type: '380',
         timbre: parseFloat(invoice.stampDuty || invoice.timbre || 0),
         fournisseur: {
@@ -142,6 +198,58 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
             }],
       };
 
+      if (ttnMode === 'middleware') {
+        // Middleware flow: send invoice JSON to middleware API
+        const doc = mapInvoiceToMiddlewareDoc(teifInvoice, companyDetails);
+        const middlewareConfig = {
+          middlewareUrl: companyDetails?.middlewareUrl || '',
+          middlewareToken: companyDetails?.middlewareToken || '',
+        };
+        const response = await sendToMiddleware(doc, middlewareConfig);
+
+        if (response.status === 'pending' && response.signatureUrl) {
+          // Open signature URL for the user to sign via NGSign
+          window.open(response.signatureUrl, '_blank');
+          // Set status to transmitted while waiting for signature
+          setStatus(invoice, 'transmitted', {
+            signatureUUID: response.signatureUUID,
+            middlewareUrl: companyDetails?.middlewareUrl || '',
+            documentNumber: doc.header.documentNumber,
+          });
+          // Auto-poll every 8s until accepted/rejected
+          setPollingInvoice(Date.now());
+          setModal({
+            title: 'Document envoyé au middleware ✓',
+            message: response.message || 'Le document a été envoyé pour signature. Veuillez signer dans le nouvel onglet.',
+            instructions: [
+              '1. Un onglet s\'est ouvert pour la signature via NGSign',
+              '2. Après signature, revenez ici et cliquez sur "Vérifier le statut"',
+              '3. Le middleware soumettra automatiquement à TTN après signature',
+            ],
+            type: 'mwPending',
+            signatureUrl: response.signatureUrl,
+            documentNumber: doc.header.documentNumber,
+            invoice,
+          });
+        } else if (response.status === 'pending' && !response.signatureUrl) {
+          // Signature not needed (dev mode middleware) — accept directly
+          const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+          setStatus(invoice, 'accepted', { ttnId });
+          onAddPieceComptable && onAddPieceComptable({
+            id: `piece-${Date.now()}`, ttnId,
+            date: teifInvoice.dateEmission,
+            journal: 'VNT', reference: teifInvoice.id,
+            total: doc.totals.totalTTC.amount,
+          });
+          setModal({ title: 'Facture acceptée ✓', message: `Document ${doc.header.documentNumber} traité par le middleware.`, type: 'success' });
+        } else {
+          setStatus(invoice, 'rejected');
+          setModal({ title: 'Échec middleware', errors: response.errors || ['Erreur'], type: 'error' });
+        }
+        return;
+      }
+
+      // Standard flow (dev/prod): generate XML then send to TTN
       const gen = generateTEIFXML(teifInvoice);
       if (gen.error) throw new Error(gen.error);
 
@@ -247,6 +355,41 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
     setBatchProgress({ current: 0, total: 0 });
   };
 
+  const handleCheckStatus = useCallback(async (invoice) => {
+    const entry = getStatus(invoice);
+    const documentNumber = entry?.documentNumber || invoice.invoiceNumber || invoice.invoice_number || invoice.id;
+    const middlewareUrl = companyDetails?.middlewareUrl || entry?.middlewareUrl || '';
+    const middlewareToken = companyDetails?.middlewareToken || '';
+
+    if (!middlewareUrl) {
+      setModal({ title: 'Middleware non configuré', errors: ['Configurez l\'URL du middleware dans Configuration'], type: 'error' });
+      return;
+    }
+
+    const status = await pollMiddlewareStatus(documentNumber, { middlewareUrl, middlewareToken });
+    if (!status) {
+      setModal({ title: 'Statut non disponible', message: 'Le middleware n\'a pas encore de statut pour ce document.', type: 'error' });
+      return;
+    }
+
+    if (status.status === 'accepted') {
+      const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+      setStatus(invoice, 'accepted', { ttnId, documentNumber });
+      onAddPieceComptable && onAddPieceComptable({
+        id: `piece-${Date.now()}`, ttnId,
+        date: invoice.issueDate || invoice.date,
+        journal: 'VNT', reference: documentNumber,
+        total: invoice.totalAmount || invoice.montantTTC || 0,
+      });
+      setModal({ title: 'Facture acceptée ✓', message: `Document ${documentNumber} accepté par TTN via le middleware.`, type: 'success' });
+    } else if (status.status === 'rejected') {
+      setStatus(invoice, 'rejected');
+      setModal({ title: 'Document rejeté', errors: ['Rejeté par le middleware ou TTN'], type: 'error' });
+    } else {
+      setModal({ title: 'En attente', message: `Statut actuel: ${status.rawStatus || status.status}`, type: 'info' });
+    }
+  }, [companyDetails, onAddPieceComptable]);
+
   const handleSync = useCallback(async () => {
     if (!api.getApiToken()) return;
     setSyncing(true);
@@ -263,7 +406,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         }
       }
       setBackendMap(map);
-    } catch { /* ignore */ }
+    } catch { /* sync purement informatif, pas critique */ }
     setSyncing(false);
   }, [currentId]);
 
@@ -288,6 +431,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           <div className="flex items-center gap-3">
             {modal.type === 'error' ? <AlertTriangle className="w-6 h-6 text-red-400" />
               : modal.type === 'success' ? <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+              : modal.type === 'info' ? <Clock className="w-6 h-6 text-blue-400" />
               : <FileText className="w-6 h-6 text-blue-400" />}
             <h3 className="font-bold text-slate-100">{modal.title}</h3>
           </div>
@@ -329,6 +473,18 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
                 <CheckCircle2 className="w-3.5 h-3.5" /> Confirmer transmission
               </button>
             )}
+            {modal.type === 'mwPending' && modal.signatureUrl && (
+              <a href={modal.signatureUrl} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-colors">
+                <ExternalLink className="w-3.5 h-3.5" /> Ouvrir la page de signature
+              </a>
+            )}
+            {modal.type === 'mwPending' && modal.invoice && (
+              <button onClick={() => { handleCheckStatus(modal.invoice); setModal(null); }}
+                className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
+                <RefreshCw className="w-3.5 h-3.5" /> Vérifier le statut
+              </button>
+            )}
             <button onClick={() => setModal(null)}
               className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold rounded-xl transition-colors">
               Fermer
@@ -340,6 +496,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
   }
 
   const needsTransmissionConfirm = invoices.filter(inv => getStatus(inv)?.status === 'generated').length;
+  const needsMiddlewareCheck = ttnMode === 'middleware' && invoices.filter(inv => getStatus(inv)?.status === 'transmitted').length;
   const needsBackendSync = connected && invoices.filter(inv => {
     const e = getStatus(inv);
     return !e || e.source !== 'backend';
@@ -365,6 +522,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
             className="bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-[10px] font-bold text-slate-300">
             <option value="dev">Mode Sandbox</option>
             <option value="production">Mode Production</option>
+            <option value="middleware">Mode Middleware</option>
           </select>
         </div>
       </div>
@@ -380,14 +538,19 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
 
       <div className="flex items-center justify-between gap-4 px-4 py-2.5 bg-slate-900/30 border border-slate-800/40 rounded-xl">
         <div className="flex items-center gap-3 text-[10px] text-slate-500">
-          <span>Mode: <span className="text-slate-300">{ttnMode === 'production' ? 'Production (XML + Portail)' : 'Sandbox (Simulation)'}</span></span>
+          <span>Mode: <span className="text-slate-300">{ttnMode === 'production' ? 'Production (XML + Portail)' : ttnMode === 'middleware' ? 'Middleware (API REST)' : 'Sandbox (Simulation)'}</span></span>
           <span className="h-4 w-px bg-slate-700/50" />
           <span>Suivi local: <span className="text-slate-300">{Object.keys(localMap).length} factures</span></span>
           {connected && <><span className="h-4 w-px bg-slate-700/50" /><span>Backend: <span className="text-slate-300">{Object.keys(backendMap).length} statuts</span></span></>}
+          {ttnMode === 'middleware' && companyDetails?.middlewareUrl && <><span className="h-4 w-px bg-slate-700/50" /><span>Middleware: <span className="text-slate-300">✓</span></span></>}
+          {pollingInvoice && <><span className="h-4 w-px bg-slate-700/50" /><span className="text-blue-400 animate-pulse">⏳ Vérification auto...</span></>}
         </div>
         <div className="flex gap-2">
           {needsTransmissionConfirm > 0 && (
             <span className="text-[10px] text-amber-400 font-semibold">{needsTransmissionConfirm} à confirmer</span>
+          )}
+          {needsMiddlewareCheck > 0 && (
+            <span className="text-[10px] text-blue-400 font-semibold">{needsMiddlewareCheck} en attente signature</span>
           )}
         </div>
       </div>
@@ -475,10 +638,19 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
                           </>
                         )}
                         {entry?.status === 'transmitted' && (
-                          <button onClick={() => handleConfirmTransmission(inv)}
-                            className="px-2 py-1.5 rounded-lg bg-emerald-600/80 hover:bg-emerald-500 text-white text-[10px] font-semibold transition-colors">
-                            Accepter
-                          </button>
+                          <>
+                            {ttnMode === 'middleware' ? (
+                              <button onClick={() => handleCheckStatus(inv)}
+                                className="px-2 py-1.5 rounded-lg bg-blue-600/80 hover:bg-blue-500 text-white text-[10px] font-semibold transition-colors">
+                                Vérifier
+                              </button>
+                            ) : (
+                              <button onClick={() => handleConfirmTransmission(inv)}
+                                className="px-2 py-1.5 rounded-lg bg-emerald-600/80 hover:bg-emerald-500 text-white text-[10px] font-semibold transition-colors">
+                                Accepter
+                              </button>
+                            )}
+                          </>
                         )}
                         {entry?.status === 'accepted' && (
                           <span className="px-2 py-1.5 text-[10px] text-emerald-400 font-semibold">✓ Transmis</span>

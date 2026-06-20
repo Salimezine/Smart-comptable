@@ -3,17 +3,22 @@
  *
  * Mode dev: simulation locale
  * Mode prod: téléchargement XML + redirection portail
+ * Mode middleware: API REST vers el-fatoora-middleware (signature NGSign + soumission TTN)
  * Pure JS navigateur — zéro dépendance
  *
  * Exporte:
  *   sendToTTN(xml, cfg)     → { status, ttnId?, errors?, message? }
  *   handleTTNResponse(inv, r) → { success, pieceId?, ttnId?, errors? }
  *   confirmTTNTransmission(inv, xml, cfg) → workflow complet combiné
+ *   sendToMiddleware      → re-exported from middlewareMapper
+ *   mapInvoiceToMiddlewareDoc → re-exported from middlewareMapper
+ *   pollMiddlewareStatus  → re-exported from middlewareMapper
  */
 
 import { createPieceComptable, savePieceToJournal } from './pieceComptable.js';
 import { updateStockFromInvoice } from './stockManager.js';
 import { downloadTEIFXML } from './teifGenerator.js';
+export { sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus } from './middlewareMapper.js';
 
 // ─────────────────────────────────────────────
 // Codes erreur TTN → messages FR
