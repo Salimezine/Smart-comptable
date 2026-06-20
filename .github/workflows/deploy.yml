@@ -13,12 +13,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run test
+      - run: npx vitest run --exclude='elfatoora-middleware/**'
 
   deploy:
     needs: test
@@ -28,6 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           clean: true
+          submodules: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "vitest run --exclude='elfatoora-middleware/**'",
     "postinstall": "node scripts/copy-tesseract.js",
     "deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
   },
