@@ -3,7 +3,7 @@ import { corrigerFacture, parseFactureTunisienne } from './ocrParser.js';
 import { correctOCRText, corrigerOCRAvecTrace, FOURNISSEURS_LOOKUP } from './ocrParser.js';
 
 describe('Debug test 4 v2', () => {
-  it('taux unique debug', () => {
+  it('taux unique debug', async () => {
     const txt = [
       'FACTURE TEST',
       'E-INFO',

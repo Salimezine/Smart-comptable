@@ -78,6 +78,7 @@ function saveStock(stock, mouvements) {
     localStorage.setItem(getStockKey(), JSON.stringify(stock));
     if (mouvements) localStorage.setItem(getMovementsKey(), JSON.stringify(mouvements));
     syncStockToSupabase(companyId, stock, mouvements || []);
+    window.__bumpSyncVersion?.();
   } catch {
     /* silencieux */
   }
@@ -118,7 +119,13 @@ export function updateStockFromInvoice(invoice) {
       const quantite = parseFloat(ligne.quantite) || 1;
       const prixUnitaire = parseFloat(ligne.prixUnitaireHT) || 0;
 
-      const existing = findArticle(designation);
+      // Search in-memory stock array (not localStorage) to avoid stale references
+      const nd = normalize(designation);
+      const prefix = nd.slice(0, Math.min(8, nd.length));
+      const existing = stock.find(a => {
+        const na = normalize(a.designation);
+        return na.includes(prefix) || prefix.includes(na);
+      }) || null;
 
       if (existing) {
         existing.quantite = (existing.quantite || 0) + delta * quantite;

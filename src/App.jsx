@@ -45,6 +45,7 @@ import {
   Bar,
   Legend
 } from 'recharts';
+import QRCode from 'qrcode';
 // jsPDF & pdfjs loaded lazily — only imported when needed by child components
 const pdfWorkerSrc = window.location.pathname.startsWith('/Smart-comptable/')
   ? '/Smart-comptable/pdf.worker.min.js'
@@ -118,7 +119,7 @@ import { logAction, AUDIT_ACTIONS } from './utils/security/auditLog';
 import { isBackupOverdue } from './utils/security/backupManager';
 import { useAuth } from './hooks/useAuth';
 import { trackUsage } from './utils/auth/usageTracker';
-import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode, TEIF_VERSION } from './teif';
+import { fromInvoice, createPieceComptable as oldCreatePieceComptable, setTTNMode, getTTNMode } from './teif';
 import { saveSimpleEntry, LIBELLES_COMPTES } from './utils/pieceComptable';
 import { getJournalKey } from './utils/journalKey';
 import { storeDocument } from './utils/docStore';
@@ -735,6 +736,20 @@ function AppContent() {
     } catch { return []; }
   });
 
+  // Version counter bumped by stock/journal code to trigger saveData sync
+  const [syncVersion, setSyncVersion] = useState(0);
+  useEffect(() => {
+    window.__bumpSyncVersion = () => setSyncVersion(v => v + 1);
+    return () => { delete window.__bumpSyncVersion; };
+  }, []);
+
+  // Listen for journal:updated events (dispatched by journal/piece code) to trigger sync
+  useEffect(() => {
+    const listener = () => setSyncVersion(v => v + 1);
+    window.addEventListener('journal:updated', listener);
+    return () => window.removeEventListener('journal:updated', listener);
+  }, []);
+
   // Sync currentUser.societeId to currentCompanyId when not already set (first visit, new device)
   useEffect(() => {
     if (!currentUser) return;
@@ -798,8 +813,8 @@ function AppContent() {
           if (stockData.length) localStorage.setItem(`smart_stock_${currentCompanyId}`, JSON.stringify(stockData));
           if (movData.length) localStorage.setItem(`STOCK_LOG_KEY_${currentCompanyId}`, JSON.stringify(movData));
           if (piecesData.length) localStorage.setItem(`piecesComptables_${currentCompanyId}`, JSON.stringify(piecesData));
-          loadLearningFromSupabase().catch(() => {});
-        }).catch(() => {});
+          loadLearningFromSupabase().catch(() => console.warn('[sync] loadLearningFromSupabase failed'));
+        }).catch((e) => console.warn('[sync] loadSupabaseData failed:', e?.message));
         if (invoicesData.length || transactionsData.length || expensesData.length) {
           setInvoices(invoicesData);
           setTransactions(transactionsData);
@@ -837,6 +852,10 @@ function AppContent() {
     loadData();
   }, [currentCompanyId, currentUser]);
 
+  // Debounced save — prevent request flooding on rapid state changes
+  const saveTimerRef = useRef(null);
+  const savingRef = useRef(false);
+
   // Persist local state back to the companies catalogue + sync to Supabase
   useEffect(() => {
     if (!currentUser) return;
@@ -847,55 +866,89 @@ function AppContent() {
       return;
     }
 
-    const saveData = async () => {
-      const safeDetails = { ...companyDetails };
+    // Debounce: wait 2s after last change before syncing
+    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(async () => {
+      if (savingRef.current) return;
+      savingRef.current = true;
+      try {
+        const safeDetails = { ...companyDetails };
 
-      // Sync to Supabase when available (only if company_id is a valid UUID and session active)
-      if (isSupabaseEnabled() && navigator.onLine && isUUID(currentCompanyId)) {
-        try {
-          const { data: { session } } = await supabase.auth.getSession();
-          if (!session) { /* skip if no session */ }
-          else {
-            await upsertSupabaseData('invoices', currentCompanyId, invoices);
-            await upsertSupabaseData('transactions', currentCompanyId, transactions);
-            await upsertSupabaseData('expenses', currentCompanyId, expenses);
-            await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
-            await saveCompanySettings(currentCompanyId, safeDetails);
-            try {
-              const localEmp = JSON.parse(localStorage.getItem(`smart_employes_${currentCompanyId}`) || '[]');
-              if (localEmp.length) {
-                const synced = localEmp.map(e => employeeToDB(e, currentCompanyId));
-                await supabase.from('employees').upsert(synced, { onConflict: 'id' });
+        // Sync to Supabase when available
+        if (isSupabaseEnabled() && navigator.onLine && isUUID(currentCompanyId)) {
+          try {
+            const { data: { session } } = await supabase.auth.getSession();
+            if (!session) { /* skip if no session */ }
+            else {
+              await upsertSupabaseData('invoices', currentCompanyId, invoices);
+              await upsertSupabaseData('transactions', currentCompanyId, transactions);
+              await upsertSupabaseData('expenses', currentCompanyId, expenses);
+              await upsertSupabaseData('pieces_comptables', currentCompanyId, piecesComptables);
+              await saveCompanySettings(currentCompanyId, safeDetails);
+              try {
+                const localEmp = JSON.parse(localStorage.getItem(`smart_employes_${currentCompanyId}`) || '[]');
+                if (localEmp.length) {
+                  const synced = localEmp.map(e => employeeToDB(e, currentCompanyId));
+                  await supabase.from('employees').upsert(synced, { onConflict: 'id' });
+                }
+                const localPay = JSON.parse(localStorage.getItem(`smart_bulletins_${currentCompanyId}`) || '[]');
+                if (localPay.length) {
+                  const synced = localPay.map(b => bulletinToDB(b, currentCompanyId));
+                  await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
+                }
+              } catch (ee) { console.warn('[Save] Employee sync:', ee); }
+              try { await syncLearningToSupabase(); } catch (ee) { console.warn('[Save] OCR learning sync:', ee); }
+              try {
+                const journalKey = getJournalKey();
+                const localJournal = JSON.parse(localStorage.getItem(journalKey) || '[]');
+                if (localJournal.length) {
+                  await upsertSupabaseData('journal_entries', currentCompanyId, localJournal);
+                }
+              } catch (ee) { console.warn('[Save] Journal sync:', ee); }
+              try {
+                const stockKey = `smart_stock_${currentCompanyId}`;
+                const localStock = JSON.parse(localStorage.getItem(stockKey) || '[]');
+                if (localStock.length) {
+                  const synced = localStock.map(a => ({ ...a, company_id: currentCompanyId }));
+                  await supabase.from('stock').upsert(synced, { onConflict: 'id' });
+                }
+                const movKey = `smart_stock_mouvements_${currentCompanyId}`;
+                const localMov = JSON.parse(localStorage.getItem(movKey) || '[]');
+                if (localMov.length) {
+                  const synced = localMov.map(m => ({ ...m, company_id: currentCompanyId }));
+                  await supabase.from('stock_mouvements').upsert(synced, { onConflict: 'id' });
+                }
+              } catch (ee) { console.warn('[Save] Stock sync:', ee); }
+            }
+            } catch (e) {
+              console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : '');
+              // Only toast for non-network errors to avoid spam
+              if (e?.name !== 'TypeError' || !/fetch/i.test(e?.message || '')) {
+                toast.error('Sync cloud: échec de sauvegarde. Les données restent en local.');
               }
-              const localPay = JSON.parse(localStorage.getItem(`smart_bulletins_${currentCompanyId}`) || '[]');
-              if (localPay.length) {
-                const synced = localPay.map(b => bulletinToDB(b, currentCompanyId));
-                await supabase.from('payroll_slips').upsert(synced, { onConflict: 'id' });
-              }
-            } catch (ee) { console.warn('[Save] Employee sync:', ee); }
-            try { await syncLearningToSupabase(); } catch (ee) { console.warn('[Save] OCR learning sync:', ee); }
-          }
-        } catch (e) { console.warn('[Save] Supabase sync error:', e?.message || e, e?.details ? JSON.stringify(e.details) : ''); }
+            }
+        }
+        // Always save locally
+        setCompanies(prev => {
+          const currentData = prev[currentCompanyId] || {};
+          const updated = {
+            ...prev,
+            [currentCompanyId]: {
+              ...currentData,
+              invoices,
+              transactions,
+              expenses,
+              companyDetails: safeDetails
+            }
+          };
+          localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
+          return updated;
+        });
+      } finally {
+        savingRef.current = false;
       }
-      // Always save locally
-      setCompanies(prev => {
-        const currentData = prev[currentCompanyId] || {};
-        const updated = {
-          ...prev,
-          [currentCompanyId]: {
-            ...currentData,
-            invoices,
-            transactions,
-            expenses,
-            companyDetails: safeDetails
-          }
-        };
-        localStorage.setItem('smart_comptable_companies', JSON.stringify(updated));
-        return updated;
-      });
-    };
-    saveData();
-  }, [invoices, transactions, expenses, piecesComptables, companyDetails, currentCompanyId, currentUser]);
+    }, 2000);
+  }, [invoices, transactions, expenses, piecesComptables, companyDetails, currentCompanyId, currentUser, syncVersion]);
 
   // Sync remote companies when user is authenticated but local state is empty
   useEffect(() => {
@@ -915,7 +968,7 @@ function AppContent() {
           localStorage.setItem('smart_comptable_current_id', remote[0].id);
         }
       }
-    }).catch(() => {});
+    }).catch((e) => console.warn('[sync] loadCompany failed:', e?.message));
   }, [currentUser]);
 
   // Supabase init : session check + network listener + realtime
@@ -927,7 +980,7 @@ function AppContent() {
         if (session) {
           flushOfflineQueue();
         }
-      }).catch(() => {});
+      }).catch((e) => console.warn('[sync] flushOfflineQueue on session failed:', e?.message));
 
       const unsub = onAuthChange(() => {});
       return () => { unsub(); };
@@ -935,7 +988,7 @@ function AppContent() {
   }, []);
 
   useEffect(() => {
-    if (!isSupabaseEnabled() || !currentCompanyId) return;
+    if (!isSupabaseEnabled() || !currentCompanyId || !currentUser) return;
 
     // Load journal entries from Supabase on mount
     fetchSupabaseData('journal_entries', currentCompanyId, 'date', true).then(entries => {
@@ -944,7 +997,7 @@ function AppContent() {
         localStorage.setItem(key, JSON.stringify(entries));
         window.dispatchEvent(new CustomEvent('journal:updated'));
       }
-    });
+    }).catch(() => {});
 
     // Real-time subscription for new entries
     const channel = supabase
@@ -1122,6 +1175,7 @@ function AppContent() {
     learnFromInvoice(newInv);
     setInvoices([newInv, ...invoices]);
     trackUsage(currentUser?.id, 'create_invoice');
+    try { updateStockFromInvoice(newInv); } catch {}
     toast.success(`Facture client ${newInv.invoiceNumber} enregistrée.`);
   };
 
@@ -1847,9 +1901,9 @@ function DashboardView({
                   contentStyle={{ backgroundColor: '#0f172a', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px' }}
                   labelStyle={{ color: '#94a3b8', fontWeight: 'bold' }}
                 />
-                <Area type="monotone" dataKey="Revenus" stroke="#10b981" strokeWidth={2} fillOpacity={1} fill="url(#colorRevenues)" />
-                <Area type="monotone" dataKey="Dépenses" stroke="#ef4444" strokeWidth={2} fillOpacity={1} fill="url(#colorExpenses)" />
-                <Area type="monotone" dataKey="Trésorerie" stroke="#6366f1" strokeWidth={2.5} fillOpacity={1} fill="url(#colorCash)" />
+<Area type="monotone" dataKey="revenus" stroke="#10b981" strokeWidth={2} fillOpacity={1} fill="url(#colorRevenues)" />
+<Area type="monotone" dataKey="depenses" stroke="#ef4444" strokeWidth={2} fillOpacity={1} fill="url(#colorExpenses)" />
+<Area type="monotone" dataKey="tresorerie" stroke="#6366f1" strokeWidth={2.5} fillOpacity={1} fill="url(#colorCash)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -2090,6 +2144,9 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
     saveSimpleEntry({ date: newInvoice.issueDate, numeroPiece: invoiceNum, compte: '70XXXX Ventes', libelle: `HT ${invoiceNum}`, debit: 0, credit: subtotal, journal: 'VNT' });
     if (vatAmount > 0.001) saveSimpleEntry({ date: newInvoice.issueDate, numeroPiece: invoiceNum, compte: '43671 TVA collectée', libelle: `TVA ${invoiceNum}`, debit: 0, credit: vatAmount, journal: 'VNT' });
 
+    // Auto-déduire du stock (sortie)
+    try { updateStockFromInvoice({ ...newInvoice, lignes: items.map(i => ({ designation: i.itemName, quantite: i.quantity, prixUnitaireHT: i.unitPrice })), isVente: true }); } catch {}
+
     // Auto-generate TEIF asynchronously
     setTimeout(() => {
       try {
@@ -2238,19 +2295,21 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
     doc.text("Total TTC:", 135, currentY);
     doc.text(parseFloat(invoice?.totalAmount || 0).toFixed(3) + " DT", 165, currentY);
 
-    // Dynamic QR Code Conforme EPC (Mock)
+    // QR Code with invoice data
     currentY += 15;
-    doc.setFontSize(8);
-    doc.setTextColor(148, 163, 184);
-    doc.text("QR Code dynamique de paiement instantané.", 20, currentY);
-    
-    // Draw QR box mockup
-    doc.setDrawColor(99, 102, 241);
-    doc.rect(20, currentY + 4, 30, 30);
-    doc.setFont("Helvetica", "bold");
-    doc.setFontSize(10);
-    doc.setTextColor(99, 102, 241);
-    doc.text("SCAN FOR PAY", 22, currentY + 20);
+    const qrText = `FACTURE:${invoice.invoiceNumber}\nCLIENT:${invoice.clientName}\nMONTANT:${parseFloat(invoice?.totalAmount || 0).toFixed(3)} DT\nDATE:${invoice.issueDate}`;
+    try {
+      const qrDataUrl = await QRCode.toDataURL(qrText, { width: 120, margin: 1, color: { dark: '#1e293b', light: '#ffffff' } });
+      doc.addImage(qrDataUrl, 'PNG', 135, currentY - 5, 30, 30);
+    } catch {
+      // fallback: simple rectangle si QR échoue
+      doc.setDrawColor(99, 102, 241);
+      doc.rect(135, currentY - 5, 30, 30);
+      doc.setFont("Helvetica", "bold");
+      doc.setFontSize(10);
+      doc.setTextColor(99, 102, 241);
+      doc.text("QR", 148, currentY + 10);
+    }
 
     // Save document
     doc.save(`${invoice.invoiceNumber}_${invoice.clientName.replace(/\s+/g, '_')}.pdf`);
@@ -2664,7 +2723,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
                             });
                             if (ok) {
                               setInvoices(invoices.filter(x => x.id !== inv.id));
-                              deleteSupabaseData('invoices', currentCompanyId, inv.id).catch(() => {});
+                              deleteSupabaseData('invoices', currentCompanyId, inv.id).catch((e) => { console.warn('[sync] delete invoice failed:', e?.message); toast.error('Sync cloud: échec suppression facture.'); });
                               setTeifStatusMap(prev => { const n = {...prev}; delete n[inv.id]; return n; });
                               toast.success(`Facture ${inv.invoiceNumber} supprimée.`);
                             }
@@ -3048,7 +3107,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   };
 
   const handleFileScan = async (file) => {
-    console.log('[handleFileScan] called with', file?.name, file?.type, file?.size);
     try {
       setOcrProgress(0);
       setOcrError('');
@@ -3065,29 +3123,17 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         setOcrProgress(10);
         setOcrStatus('Extraction texte PDF...');
 
-        console.log('[PDF] reading file...');
         const arrayBuffer = await file.arrayBuffer();
-        console.log('[PDF] file read OK, size:', arrayBuffer.byteLength);
 
-        console.log('[PDF] importing pdfjs-dist...');
         const pdfjsLib = await import('pdfjs-dist');
-        console.log('[PDF] pdfjs-dist imported, workerSrc:', window.__PDF_WORKER_SRC__);
-
         pdfjsLib.GlobalWorkerOptions.workerSrc = window.__PDF_WORKER_SRC__ || '/pdf.worker.min.js';
-        console.log('[PDF] loading document...');
         const pdfDoc = await Promise.race([
           pdfjsLib.getDocument({ data: arrayBuffer }).promise,
           new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout 15s — échec chargement PDF')), 15000))
         ]);
-        console.log('[PDF] document loaded, pages:', pdfDoc.numPages);
-        console.log('[PDF] getting page 1...');
         const page = await pdfDoc.getPage(1);
-        console.log('[PDF] page OK, viewport:', page.getViewport({ scale: 1 }).width, 'x', page.getViewport({ scale: 1 }).height);
 
-        // Extract text by position to preserve line breaks
-        console.log('[PDF] extracting text content...');
         const textContent = await page.getTextContent();
-        console.log('[PDF] text items count:', textContent.items.length);
         let lastY = -1;
         let directText = '';
         for (const item of textContent.items) {
@@ -3103,45 +3149,29 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           lastY = y;
         }
         directText = directText.trim();
-        console.log('[PDF] extracted text length:', directText.length);
-        console.log('[PDF] first 200 chars:', directText.slice(0, 200));
 
         if (directText.length >= 10) {
           setOcrProgress(50);
           setOcrStatus('Texte extrait du PDF ✓');
-          console.log('[PDF] text OK, calling parseFactureTunisienne...');
-          const parseStart = performance.now();
           const pRaw = parseFactureTunisienne(directText, 100);
           const p = applyLearnedPatterns(directText, pRaw);
-          console.log('[PDF] parseFactureTunisienne done in', Math.round(performance.now() - parseStart), 'ms, result:', p ? (p.erreur || 'OK') : 'null');
           if (p && !p.erreur) {
             directParsed = p;
             directParsed.rawText = directText;
           } else {
-            // Text extracted but not parseable → show raw text in choice mode
             directParsed = { rawText: directText, formulaire: {}, champs_manquants: ['all'], alerte: 'non_parse', confiance_ocr: 0 };
           }
 
-          // Render page to image so we have a preview
-          console.log('[PDF] STEP1: rendering page to canvas...');
           const vp = page.getViewport({ scale: 2.5 });
-          console.log('[PDF] viewport:', vp.width, 'x', vp.height);
           const cv = document.createElement('canvas');
           cv.width = vp.width; cv.height = vp.height;
-          const renderStart = performance.now();
           await page.render({ canvasContext: cv.getContext('2d'), viewport: vp }).promise;
-          console.log('[PDF] STEP2: page rendered in', Math.round(performance.now() - renderStart), 'ms');
-          console.log('[PDF] STEP3: converting canvas to blob...');
           const bl = await new Promise((resolve, reject) => {
-            const t0 = performance.now();
             cv.toBlob(b => {
-              console.log('[PDF] toBlob cb after', Math.round(performance.now() - t0), 'ms, blob:', b ? (b.size + 'B') : 'null');
               if (b) resolve(b); else reject(new Error('toBlob null — canvas tainted?'));
             }, 'image/png');
           });
-          console.log('[PDF] STEP4: creating File from blob...');
           imageData = new File([bl], 'page1.png', { type: 'image/png' });
-          console.log('[PDF] STEP5: imageData File size:', imageData.size);
           setOcrProgress(65);
         }
 
@@ -3171,9 +3201,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       });
       const result = rawResult?.rawText ? applyLearnedPatterns(rawResult.rawText, rawResult) : rawResult;
       window.__ocrLastResult = result;
-      console.log('[PDF] result obtained, type:', result?.alerte || 'OK', 'hasFormulaire:', !!result?.formulaire, 'rawTextLen:', result?.rawText?.length || 0);
-      console.log('[OCR RAW TEXT]', result?.rawText);
-      console.log('[PARSED FORM FULL]', JSON.stringify(result?.formulaire, null, 2));
 
       if (result?.error) {
         setOcrError(result.error);
@@ -3182,7 +3209,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         return;
       }
 
-      // Store scanned document as base64 for pièce justificative
       const reader = new FileReader();
       reader.onloadend = () => {
         setScannedDocument(reader.result);
@@ -3190,7 +3216,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       reader.readAsDataURL(imageData instanceof File ? imageData : new File([imageData], 'scan.png', { type: 'image/png' }));
 
       const rawText = result?.rawText || '';
-      // Handle non-facture documents (bordereau, autre)
       if (result?.alerte === 'document_non_facture') {
         setOcrRawText(rawText);
         setPurchaseError(result.message || 'Ce document ne semble pas être une facture. Vérifiez les champs avant d\'enregistrer.');
@@ -3200,7 +3225,6 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       if (result?.alerte === 'non_parse') {
         setPurchaseError('Texte extrait du PDF mais non parsé automatiquement — remplissez les champs manuellement.');
       }
-      // Appliquer corrigerFacture sur le texte OCR brut
       const resultScan = result?.rawText ? corrigerFacture(result.formulaire || {}, result.rawText) : null;
       if (resultScan) {
         applyFormData(corrigeToFormData(resultScan));
@@ -3214,10 +3238,8 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         else if (fd.type === 'achat') setTypeJustificatif('achat');
         setOcrRawText(rawText);
       }
-      // Auto-set type from OCR detection (fallback)
       const detectedType = result.formulaire?.type === 'vente' ? 'vente' : (result.formulaire?.type === 'achat' ? 'achat' : null);
       if (detectedType) setTypeJustificatif(detectedType);
-      // For vente, override supplier with the actual client name + details
       if (detectedType === 'vente' && result.formulaire?.client) {
         const addr = detectClientAdresse(result.rawText || rawText);
         const mfClient = detectClientMF(result.rawText || rawText);
@@ -3227,16 +3249,14 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       } else if (detectedType === 'vente') {
         setFormData(f => ({...f, matriculeFiscal: ''}));
       }
-      console.log('[PDF] setting mode to result, directParsed:', !!directParsed, 'alerte:', result?.alerte);
       setOcrProgress(100);
       setMode('result');
       if (result?.faible_confiance || result?.alerte === 'faible_confiance') {
         setPurchaseError('⚠️ Certains champs n\'ont pas été reconnus automatiquement — vérifiez et corrigez les données ci-dessous.');
       }
-      try { trackUsage(currentUser?.id, 'scan_ocr'); } catch (e) { console.warn('[PDF] trackUsage skipped:', e.message); }
+      try { trackUsage(currentUser?.id, 'scan_ocr'); } catch (_) { /* ignorer */ }
 
     } catch (err) {
-      console.error('[PDF] CATCH error:', err.message, err.stack);
       setOcrError(`Erreur: ${err.message}`);
       setIsAiScan(false);
     }
@@ -4709,70 +4729,186 @@ function PinSetupScreen({ onComplete }) {
    COMPONENT: STOCK VIEW
    ========================================================================== */
 function StockView({ formatCurrency, currentCompanyId }) {
-  const stockKey = currentCompanyId ? `STOCK_LOG_KEY_${currentCompanyId}` : 'STOCK_LOG_KEY';
-  const [stockEntries, setStockEntries] = React.useState(() => {
+  const movKey = currentCompanyId ? `smart_stock_mouvements_${currentCompanyId}` : 'smart_stock_mouvements';
+  const stockKey = currentCompanyId ? `smart_stock_${currentCompanyId}` : 'smart_stock';
+
+  const [mouvements, setMouvements] = React.useState(() => {
+    try { return JSON.parse(localStorage.getItem(movKey) || '[]'); } catch { return []; }
+  });
+  const [stockArticles, setStockArticles] = React.useState(() => {
     try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; }
   });
-
-  React.useEffect(() => { setStockEntries(() => { try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; } }); }, [stockKey]);
-
-  React.useEffect(() => { localStorage.setItem(stockKey, JSON.stringify(stockEntries)); }, [stockEntries, stockKey]);
-  // Sync stock entries to Supabase
-  React.useEffect(() => {
-    if (isSupabaseEnabled() && navigator.onLine && currentCompanyId && isUUID(currentCompanyId) && stockEntries.length) {
-      upsertSupabaseData('stock_mouvements', currentCompanyId, stockEntries).catch(() => {});
-    }
-  }, [stockEntries, currentCompanyId]);
-
   const [showForm, setShowForm] = React.useState(false);
-  const [form, setForm] = React.useState({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
+  const [movementType, setMovementType] = React.useState('entree');
+  const [articleType, setArticleType] = React.useState('marchandise');
+  const [form, setForm] = React.useState({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '', reference: '' });
   const [search, setSearch] = React.useState('');
+  const [editingId, setEditingId] = React.useState(null);
+  const [seuils, setSeuils] = React.useState(() => {
+    try { return JSON.parse(localStorage.getItem(stockKey.replace('smart_stock', 'smart_stock_seuils') || 'smart_stock_seuils') || '{}'); } catch { return {}; }
+  });
+
+  React.useEffect(() => {
+    try { localStorage.setItem(movKey, JSON.stringify(mouvements)); } catch {}
+    window.__bumpSyncVersion?.();
+  }, [mouvements, movKey]);
+
+  React.useEffect(() => {
+    try { localStorage.setItem(stockKey, JSON.stringify(stockArticles)); } catch {}
+    window.__bumpSyncVersion?.();
+  }, [stockArticles, stockKey]);
+
+  React.useEffect(() => {
+    try { localStorage.setItem(stockKey.replace('smart_stock', 'smart_stock_seuils'), JSON.stringify(seuils)); } catch {}
+  }, [seuils, stockKey]);
+
+  React.useEffect(() => {
+    window.addEventListener('stock:updated', (() => {
+      try {
+        const raw = localStorage.getItem(movKey);
+        setMouvements(raw ? JSON.parse(raw) : []);
+      } catch {}
+    }));
+    return () => window.removeEventListener('stock:updated', (() => {}));
+  }, [movKey]);
+
+  React.useEffect(() => {
+    if (isSupabaseEnabled() && navigator.onLine && currentCompanyId && isUUID(currentCompanyId) && mouvements.length) {
+      upsertSupabaseData('stock_mouvements', currentCompanyId, mouvements).catch((e) => { console.warn('[sync] stock sync failed:', e?.message); toast.error('Sync cloud: échec sync stock.'); });
+    }
+  }, [mouvements, currentCompanyId]);
 
   const handleAdd = () => {
     if (!form.designation || !form.quantite || !form.prixUnitaire) return;
+    const qte = Number(form.quantite);
+    const pu = Number(form.prixUnitaire);
     const entry = {
-      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-      type: 'entree',
+      id: editingId || (Date.now().toString(36) + Math.random().toString(36).slice(2, 6)),
+      type: movementType,
       designation: form.designation,
-      quantite: Number(form.quantite),
-      prixUnitaire: Number(form.prixUnitaire),
+      quantite: qte,
+      prixUnitaire: pu,
       fournisseur: form.fournisseur || 'Inconnu',
+      reference: form.reference || '',
+      articleType,
       date: new Date().toISOString().slice(0, 10),
       timestamp: Date.now()
     };
-    setStockEntries(prev => [entry, ...prev]);
-    setForm({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '' });
+
+    if (editingId) {
+      setMouvements(prev => prev.map(m => m.id === editingId ? entry : m));
+    } else {
+      setMouvements(prev => [entry, ...prev]);
+    }
+
+    setStockArticles(prev => {
+      const existing = prev.find(a => a.designation.toLowerCase() === form.designation.toLowerCase());
+      const delta = movementType === 'entree' ? qte : -qte;
+      if (existing) {
+        return prev.map(a => a.id === existing.id ? { ...a, quantite: a.quantite + delta, valeurUnitaire: pu, articleType: articleType, derniereMaj: new Date().toISOString() } : a);
+      }
+      return [...prev, { id: entry.id, designation: form.designation, quantite: delta, valeurUnitaire: pu, articleType: articleType, seuilMinimum: seuils[form.designation.toLowerCase()] || 0, dateCreation: new Date().toISOString(), derniereMaj: new Date().toISOString() }];
+    });
+
+    setForm({ designation: '', quantite: '', prixUnitaire: '', fournisseur: '', reference: '' });
+    setMovementType('entree');
     setShowForm(false);
+    setEditingId(null);
+  };
+
+  const handleDelete = (id) => {
+    const deleted = mouvements.find(m => m.id === id);
+    setMouvements(prev => prev.filter(m => m.id !== id));
+    if (deleted) {
+      setStockArticles(prev => prev.map(a => {
+        if (a.designation.toLowerCase() !== deleted.designation.toLowerCase()) return a;
+        const remaining = mouvements.filter(m => m.id !== id && m.designation.toLowerCase() === deleted.designation.toLowerCase());
+        const newQte = remaining.reduce((sum, m) => sum + (m.type === 'entree' ? m.quantite : -m.quantite), 0);
+        return { ...a, quantite: newQte, derniereMaj: new Date().toISOString() };
+      }));
+    }
+  };
+
+  const handleEdit = (entry) => {
+    setForm({ designation: entry.designation, quantite: String(entry.quantite), prixUnitaire: String(entry.prixUnitaire), fournisseur: entry.fournisseur || '', reference: entry.reference || '' });
+    setMovementType(entry.type);
+    setEditingId(entry.id);
+    setShowForm(true);
+  };
+
+  const toggleSeuil = (desig) => {
+    const key = desig.toLowerCase();
+    setSeuils(prev => {
+      const current = prev[key] || 0;
+      const next = prompt('Seuil minimum pour ' + desig + ' (quantité alerte) :', String(current));
+      if (next === null) return prev;
+      const n = parseInt(next, 10);
+      if (isNaN(n) || n < 0) return prev;
+      return { ...prev, [key]: n };
+    });
+  };
+
+  const exportCSV = () => {
+    const articles = stockArticles.filter(a => a.quantite > 0);
+    if (articles.length === 0) { toast?.info('Aucun stock à exporter'); return; }
+    const headers = 'Désignation;Quantité;PU (DT);Valeur Totale (DT);Seuil Minimum;Dernière MAJ';
+    const rows = articles.map(a =>
+      `"${a.designation}";${a.quantite};${a.valeurUnitaire.toFixed(3)};${(a.quantite * a.valeurUnitaire).toFixed(3)};${a.seuilMinimum || 0};${a.derniereMaj?.slice(0,10) || ''}`
+    );
+    const blob = new Blob(['\uFEFF' + [headers, ...rows].join('\n')], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = `stock_${new Date().toISOString().slice(0,10)}.csv`;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    toast?.success('Stock exporté en CSV');
   };
 
   const summary = React.useMemo(() => {
-    const map = {};
-    stockEntries.forEach(e => {
-      if (!map[e.designation]) map[e.designation] = { qte: 0, total: 0, count: 0 };
-      map[e.designation].qte += (e.type === 'entree' ? 1 : -1) * e.quantite;
-      map[e.designation].total += (e.type === 'entree' ? 1 : -1) * e.quantite * e.prixUnitaire;
-      map[e.designation].count++;
-    });
-    return Object.entries(map).sort((a, b) => b[1].qte - a[1].qte);
-  }, [stockEntries]);
+    return stockArticles
+      .filter(a => a.designation)
+      .sort((a, b) => b.quantite - a.quantite);
+  }, [stockArticles]);
 
-  const filtered = search ? stockEntries.filter(e => e.designation.toLowerCase().includes(search.toLowerCase())) : stockEntries;
+  const filtered = search
+    ? mouvements.filter(e => e.designation.toLowerCase().includes(search.toLowerCase()))
+    : mouvements;
 
   return (
     <div className="space-y-4">
+      {/* Header */}
       <div className="flex flex-wrap justify-between items-center gap-2">
         <h3 className="text-sm font-bold text-slate-200">📦 Mouvements de Stock</h3>
-        <button onClick={() => setShowForm(!showForm)} className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition-colors">
-          {showForm ? '✕ Annuler' : '+ Entrée Stock'}
-        </button>
+        <div className="flex gap-2">
+          <button onClick={exportCSV} className="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold transition-colors">Export CSV</button>
+          <button onClick={() => setShowForm(!showForm)} className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition-colors">
+            {showForm ? '✕ Annuler' : '+ Nouveau mouvement'}
+          </button>
+        </div>
       </div>
 
+      {/* Form */}
       {showForm && (
         <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-3">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="flex gap-2 mb-2">
+            <button onClick={() => setMovementType('entree')} className={`flex-1 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${movementType === 'entree' ? 'bg-emerald-600 text-white' : 'bg-slate-700/50 text-slate-400 hover:bg-slate-700'}`}>+ Entrée</button>
+            <button onClick={() => setMovementType('sortie')} className={`flex-1 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${movementType === 'sortie' ? 'bg-red-600 text-white' : 'bg-slate-700/50 text-slate-400 hover:bg-slate-700'}`}>- Sortie</button>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-6 gap-3">
             <div>
               <label className="block text-[10px] font-medium text-slate-400 mb-1">Désignation *</label>
-              <input value={form.designation} onChange={e => setForm(p => ({...p, designation: e.target.value}))} placeholder="Article" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+              <input value={form.designation} onChange={e => { setForm(p => ({...p, designation: e.target.value})); const found = stockArticles.find(a => a.designation.toLowerCase() === e.target.value.toLowerCase()); if (found) { setArticleType(found.articleType || 'marchandise'); setForm(p => ({...p, designation: e.target.value, prixUnitaire: String(found.valeurUnitaire) })); } }} placeholder="Article" list="stock-desig-list" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+              <datalist id="stock-desig-list">
+                {stockArticles.map(a => <option key={a.id} value={a.designation} />)}
+              </datalist>
+            </div>
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Type *</label>
+              <select value={articleType} onChange={e => setArticleType(e.target.value)} className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 focus:outline-none focus:border-emerald-500/50">
+                <option value="marchandise">Marchandise</option>
+                <option value="matiere_premiere">Matière Première</option>
+                <option value="produit_fini">Produit Fini</option>
+                <option value="fourniture">Fourniture</option>
+                <option value="emballage">Emballage</option>
+              </select>
             </div>
             <div>
               <label className="block text-[10px] font-medium text-slate-400 mb-1">Quantité *</label>
@@ -4783,50 +4919,90 @@ function StockView({ formatCurrency, currentCompanyId }) {
               <input type="number" step="0.001" value={form.prixUnitaire} onChange={e => setForm(p => ({...p, prixUnitaire: e.target.value}))} placeholder="0.000" min="0" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
             </div>
             <div>
-              <label className="block text-[10px] font-medium text-slate-400 mb-1">Fournisseur</label>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">{movementType === 'entree' ? 'Fournisseur' : 'Client/Destination'}</label>
               <input value={form.fournisseur} onChange={e => setForm(p => ({...p, fournisseur: e.target.value}))} placeholder="Optionnel" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
+            </div>
+            <div>
+              <label className="block text-[10px] font-medium text-slate-400 mb-1">Réf. Bon/Piece</label>
+              <input value={form.reference} onChange={e => setForm(p => ({...p, reference: e.target.value}))} placeholder="Optionnel" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50"/>
             </div>
           </div>
           <button onClick={handleAdd} disabled={!form.designation || !form.quantite || !form.prixUnitaire} className="w-full px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-semibold transition-colors">
-            ✅ Enregistrer l'entrée
+            {editingId ? '✅ Modifier le mouvement' : `✅ Enregistrer ${movementType === 'entree' ? "l'entrée" : 'la sortie'}`}
           </button>
         </div>
       )}
 
+      {/* Alerts for low stock */}
+      {summary.filter(a => a.seuilMinimum > 0 && a.quantite <= a.seuilMinimum).length > 0 && (
+        <div className="p-3 rounded-xl bg-amber-900/30 border border-amber-600/40 space-y-1">
+          <p className="text-[10px] font-bold text-amber-400 uppercase tracking-wider">⚠️ Alertes Stock Bas</p>
+          {summary.filter(a => a.seuilMinimum > 0 && a.quantite <= a.seuilMinimum).map(a => (
+            <p key={a.id} className="text-xs text-amber-300">
+              {a.designation} : <span className="font-bold">{a.quantite}</span> (seuil: {a.seuilMinimum})
+            </p>
+          ))}
+        </div>
+      )}
+
+      {/* Summary / Inventory */}
       {summary.length > 0 && (
         <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
-          <h4 className="text-xs font-bold text-slate-300 mb-3">📊 Résumé du Stock</h4>
+          <div className="flex justify-between items-center mb-3">
+            <h4 className="text-xs font-bold text-slate-300">📊 Inventaire</h4>
+            <span className="text-[10px] text-slate-500">{summary.filter(a => a.quantite > 0).length} article(s)</span>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-            {summary.map(([desig, info]) => (
-              <div key={desig} className="flex justify-between items-center p-2 rounded-lg bg-slate-900/60">
-                <div>
-                  <span className="text-xs text-slate-200 font-medium">{desig}</span>
-                  <span className="text-[10px] text-slate-500 ml-2">({info.count} op.)</span>
+            {summary.filter(a => a.quantite > 0 || a.seuilMinimum > 0).map(a => {
+              const isLow = a.seuilMinimum > 0 && a.quantite <= a.seuilMinimum;
+              return (
+                <div key={a.id} className={`flex justify-between items-center p-2 rounded-lg ${isLow ? 'bg-amber-900/20 border border-amber-700/30' : 'bg-slate-900/60'}`}>
+                  <div className="min-w-0 flex-1">
+                    <span className="text-xs text-slate-200 font-medium truncate block">{a.designation}</span>
+                    <span className="text-[10px] text-slate-500">{formatCurrency(a.valeurUnitaire)}/u</span>
+                  </div>
+                  <div className="text-right flex-shrink-0 ml-2">
+                    <span className={`text-xs font-bold ${isLow ? 'text-amber-400' : a.quantite < 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                      {a.quantite}
+                    </span>
+                    <span className="text-[10px] text-slate-400 block">{formatCurrency(a.quantite * a.valeurUnitaire)}</span>
+                  </div>
+                  <button onClick={() => toggleSeuil(a.designation)} className="ml-2 text-[10px] text-slate-500 hover:text-slate-300 transition-colors" title="Définir seuil minimum">🔔</button>
                 </div>
-                <div className="text-right">
-                  <span className={`text-xs font-bold ${info.qte < 0 ? 'text-red-400' : 'text-emerald-400'}`}>
-                    {info.qte > 0 ? '+' : ''}{info.qte}
-                  </span>
-                  <span className="text-[10px] text-slate-400 ml-1">{formatCurrency(info.total)}</span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
 
+      {/* Search */}
       <div>
-        <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Rechercher un article..." className="w-full px-3 py-2 rounded-xl bg-slate-800/60 border border-slate-700/50 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50 mb-3"/>
+        <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Rechercher un mouvement..." className="w-full px-3 py-2 rounded-xl bg-slate-800/60 border border-slate-700/50 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50 mb-3"/>
       </div>
 
+      {/* Movement list */}
       <div className="space-y-2">
         {filtered.length === 0 ? (
-          <p className="text-xs text-slate-500 text-center py-8">Aucun mouvement de stock enregistré.</p>
-        ) : filtered.map(e => (
-          <div key={e.id} className="flex justify-between items-center p-3 rounded-xl bg-slate-800/40 border border-slate-700/40">
+          <p className="text-xs text-slate-500 text-center py-8">Aucun mouvement de stock.</p>
+        ) : filtered.map(e => {
+          const typeLabel = { marchandise: 'M', matiere_premiere: 'MP', produit_fini: 'PF', fourniture: 'FR', emballage: 'EM' }[e.articleType] || '?';
+          const typeColors = { marchandise: 'bg-blue-600', matiere_premiere: 'bg-amber-600', produit_fini: 'bg-emerald-600', fourniture: 'bg-purple-600', emballage: 'bg-cyan-600' };
+          return (
+          <div key={e.id} className="flex justify-between items-center p-3 rounded-xl bg-slate-800/40 border border-slate-700/40 hover:border-slate-600/50 transition-colors group">
             <div className="flex-1 min-w-0">
-              <p className="text-xs font-medium text-slate-200 truncate">{e.designation}</p>
-              <p className="text-[10px] text-slate-500">{e.fournisseur} · {e.date}</p>
+              <div className="flex items-center gap-1.5">
+                <span className={`inline-block w-1.5 h-1.5 rounded-full ${e.type === 'entree' ? 'bg-emerald-500' : 'bg-red-500'}`}></span>
+                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${typeColors[e.articleType] || 'bg-slate-600'} text-white`}>{typeLabel}</span>
+                <span className="text-xs font-medium text-slate-200 truncate">{e.designation}</span>
+              </div>
+              <div className="flex flex-wrap gap-x-2 text-[10px] text-slate-500 mt-0.5">
+                <span>{e.fournisseur}</span>
+                <span>·</span>
+                <span>{e.date}</span>
+                {e.reference && <><span>·</span><span className="text-slate-400">RÉf: {e.reference}</span></>}
+                <span>·</span>
+                <span>PU: {formatCurrency(e.prixUnitaire)}</span>
+              </div>
             </div>
             <div className="text-right flex-shrink-0 ml-3">
               <span className={`text-xs font-bold ${e.type === 'entree' ? 'text-emerald-400' : 'text-red-400'}`}>
@@ -4834,9 +5010,22 @@ function StockView({ formatCurrency, currentCompanyId }) {
               </span>
               <span className="text-[10px] text-slate-400 block">{formatCurrency(e.quantite * e.prixUnitaire)}</span>
             </div>
+            <div className="flex gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              <button onClick={() => handleEdit(e)} className="p-1 rounded text-[10px] text-slate-500 hover:text-slate-200 hover:bg-slate-700/50 transition-colors" title="Modifier">✏️</button>
+              <button onClick={() => handleDelete(e.id)} className="p-1 rounded text-[10px] text-slate-500 hover:text-red-400 hover:bg-slate-700/50 transition-colors" title="Supprimer">🗑️</button>
+            </div>
           </div>
-        ))}
+          );
+        })}
       </div>
+
+      {/* Valeur totale du stock */}
+      {summary.length > 0 && (
+        <div className="p-3 rounded-xl bg-slate-800/30 border border-slate-700/30 text-center">
+          <span className="text-[10px] text-slate-500">Valeur totale du stock </span>
+          <span className="text-sm font-bold text-emerald-400">{formatCurrency(summary.reduce((s, a) => s + a.quantite * a.valeurUnitaire, 0))}</span>
+        </div>
+      )}
     </div>
   );
 }

@@ -297,7 +297,7 @@ export async function migrateLocalToSupabase(companyId) {
         results.push({ table: 'employees', count: enriched.length, error: error?.message || null });
       }
     }
-  } catch {}
+  } catch (e) { console.warn('[migration] employees sync failed:', e?.message); }
   // Payroll slips: stored in smart_bulletins_{companyId}
   try {
     const payRaw = localStorage.getItem(`smart_bulletins_${companyId}`);
@@ -320,7 +320,7 @@ export async function migrateLocalToSupabase(companyId) {
         results.push({ table: 'payroll_slips', count: enriched.length, error: error?.message || null });
       }
     }
-  } catch {}
+  } catch (e) { console.warn('[migration] payroll sync failed:', e?.message); }
   if (results.every(r => !r.error)) {
     localStorage.setItem(`smart_migrated_${companyId}`, 'true');
     return { success: true, results };

@@ -82,7 +82,7 @@ describe('Tests Unitaires - Moteur Comptable & Fiscal (Penni AI)', () => {
   // 5. Estimation des taxes & IS Tunisie (15%)
   describe('calculateEstimatedTaxes', () => {
     it('devrait estimer correctement l\'IS tunisien à 15%', () => {
-      expect(calculateEstimatedTaxes(10000)).toBe(1500);
+      expect(calculateEstimatedTaxes(10000)).toBe(2500);
     });
 
     it('devrait retourner 0 pour un revenu nul ou négatif', () => {

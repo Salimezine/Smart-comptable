@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { corrigerFacture, parseFactureTunisienne } from './src/utils/ocrParser.js';
+import { corrigerFacture, parseFactureTunisienne } from './ocrParser.js';
 
 // ─── Helper ───
 function run(texte, parsedSeed) {

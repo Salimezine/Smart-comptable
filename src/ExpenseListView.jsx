@@ -67,7 +67,7 @@ export default function ExpenseListView({ expenses, setExpenses, formatCurrency,
     });
     if (!ok) return;
     setExpenses(expenses.filter(x => x.id !== exp.id));
-    if (currentCompanyId) deleteSupabaseData('expenses', currentCompanyId, exp.id).catch(() => {});
+    if (currentCompanyId) deleteSupabaseData('expenses', currentCompanyId, exp.id).catch((e) => console.warn('[sync] delete expense failed:', e?.message));
     success(`Dépense "${exp.supplier}" supprimée.`);
   };
 

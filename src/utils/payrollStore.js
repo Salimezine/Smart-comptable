@@ -95,7 +95,7 @@ function syncEmployeesToSupabase(companyId) {
     }
     const synced = fixed.map(e => employeeToDB(e, companyId));
     supabase.from('employees').upsert(synced, { onConflict: 'id' }).catch(e => console.warn('[EmployeeSync]', e));
-  }).catch(() => {});
+  }).catch(e => console.warn('[EmployeeSync] outer catch:', e?.message));
 }
 
 function isUUID(str) {
@@ -159,7 +159,7 @@ export function saveBulletin(bulletin) {
           if (!ok) return;
           const dbRecord = bulletinToDB(bulletin, companyId);
           supabase.from('payroll_slips').upsert([dbRecord], { onConflict: 'id' }).catch(e => console.warn('[PayrollSync]', e));
-        }).catch(() => {});
+        }).catch(e => console.warn('[PayrollSync] session check failed:', e?.message));
       }
     }
     return bulletin;

@@ -19,4 +19,4 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx vitest run --exclude='elfatoora-middleware/**'
+      - run: npm run test

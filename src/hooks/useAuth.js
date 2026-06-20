@@ -129,7 +129,7 @@ export function useAuth() {
           supabaseUserId = suData.user.id;
           supabaseSession = suData.session || null;
           if (supabaseSession) {
-            await supabase.auth.setSession(supabaseSession).catch(() => {});
+            await supabase.auth.setSession(supabaseSession).catch((e) => console.warn('[auth] setSession failed:', e?.message));
           }
         }
       } catch (e) { /* signUp failed */ }

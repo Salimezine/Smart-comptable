@@ -5,3 +5,7 @@ compatibility_date = "2025-04-01"
 [vars]
 SUPABASE_URL = "https://xkpkmqlcxtlcdkmccbhs.supabase.co"
 JWT_SECRET = "wEyYAN1iWx7e0FtmpVCh9cBRrbUJjfld6Q428XkG"
+API_KEY = "smart-comptable-teif-2026"
+
+# SECRETS (set with `wrangler secret put <NAME>`):
+# SUPABASE_SERVICE_KEY = "<supabase_service_role_key>"

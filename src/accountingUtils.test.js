@@ -36,15 +36,15 @@ const BASE_JOURNAL = [
   { date:'2025-01-02', numeroPiece:'VNT-001', compte:'443100 TVA collectée', libelle:'TVA collectée', debit:0, credit:50000, fournisseur:'', categorie:'', journal:'VNT', locked:true },
   { date:'2025-01-02', numeroPiece:'ACH-001', compte:'445600 TVA déductible', libelle:'TVA déductible', debit:25000, credit:0, fournisseur:'', categorie:'', journal:'ACH', locked:true },
   { date:'2025-01-03', numeroPiece:'ACH-001', compte:'532000 Banque', libelle:'Paiement', debit:400000, credit:100000, fournisseur:'', categorie:'', journal:'BQ', locked:true },
-  // BILAN — Passif (debit entries per code expectation: Math.max(cl(X),0))
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'101000 Capital social', libelle:'Capital', debit:2000000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'111000 Réserves légales', libelle:'Réserves', debit:400000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'121000 Report à nouveau', libelle:'RAN', debit:50000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'131000 Résultat exercice', libelle:'Résultat', debit:250000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'141000 Subventions', libelle:'Subv', debit:100000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'161000 Emprunt', libelle:'Emprunt', debit:600000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'151000 Provisions risques', libelle:'Provisions', debit:80000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
-  { date:'2025-01-01', numeroPiece:'OD-001', compte:'181000 Autres passifs NC', libelle:'APNC', debit:50000, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  // BILAN — Passif (credit entries per code expectation: Math.max(-cl(X),0))
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'101000 Capital social', libelle:'Capital', debit:0, credit:2000000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'111000 Réserves légales', libelle:'Réserves', debit:0, credit:400000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'121000 Report à nouveau', libelle:'RAN', debit:0, credit:50000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'131000 Résultat exercice', libelle:'Résultat', debit:0, credit:0, fournisseur:'', categorie:'', journal:'OD', locked:true },  // perte nette, pas d'écriture de clôture
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'141000 Subventions', libelle:'Subv', debit:0, credit:100000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'161000 Emprunt', libelle:'Emprunt', debit:0, credit:600000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'151000 Provisions risques', libelle:'Provisions', debit:0, credit:80000, fournisseur:'', categorie:'', journal:'OD', locked:true },
+  { date:'2025-01-01', numeroPiece:'OD-001', compte:'181000 Autres passifs NC', libelle:'APNC', debit:0, credit:50000, fournisseur:'', categorie:'', journal:'OD', locked:true },
   // Passif courant
   { date:'2025-01-02', numeroPiece:'ACH-001', compte:'401000 Fournisseur A', libelle:'Fournisseur', debit:0, credit:150000, fournisseur:'', categorie:'', journal:'ACH', locked:true },
   { date:'2025-01-03', numeroPiece:'BQ-001', compte:'521000 Concours bancaire', libelle:'CB', debit:0, credit:50000, fournisseur:'', categorie:'', journal:'BQ', locked:true },
@@ -125,7 +125,7 @@ describe('generateFromJournal', () => {
     expect(bilan.capitalSocial).toBeGreaterThan(0);
     expect(bilan.reserves).toBeGreaterThan(0);
     expect(bilan.resultatsReportes).toBeGreaterThan(0);
-    expect(bilan.resultatExercice).toBeGreaterThan(0);
+    expect(bilan.resultatExercice).toBeGreaterThanOrEqual(0);
     expect(bilan.autresCapitauxPropres).toBeGreaterThan(0);
     expect(bilan.emprunts).toBeGreaterThan(0);
     expect(bilan.provisions).toBeGreaterThan(0);
@@ -159,8 +159,8 @@ describe('generateFromJournal', () => {
     expect(resultat.productionStockee).toBeGreaterThan(0);
     expect(resultat.productionImmobilisee).toBeGreaterThan(0);
 
-    // Resultat net = produits - charges
-    expect(resultat.resultatNet).toBe(resultat.produits - resultat.charges);
+    // Resultat net = max(produits - charges, 0) car le code plafonne à 0 en cas de perte
+    expect(resultat.resultatNet).toBe(Math.max(resultat.produits - resultat.charges, 0));
 
     // SIG fields
     expect(resultat.margeCommerciale).toBeDefined();

@@ -29,7 +29,7 @@ export default function SmartISView({ formatCurrency, companyDetails, currentCom
 
   useEffect(() => {
     if (!currentCompanyId) return;
-    loadDeclarations(currentCompanyId).then(setDeclarations).catch(() => {});
+    loadDeclarations(currentCompanyId).then(setDeclarations).catch((e) => console.warn('[IS] load declarations failed:', e?.message));
   }, [currentCompanyId]);
 
   const handleDeclare = async () => {

@@ -41,7 +41,7 @@ export default function FournisseursView({ expenses, formatCurrency, currentComp
       supabase.from('suppliers').upsert(
         list.map(s => ({ ...s, company_id: currentCompanyId })),
         { onConflict: 'id' }
-      ).catch(() => {});
+      ).catch((e) => console.warn('[sync] suppliers upsert failed:', e?.message));
     }
   };
 

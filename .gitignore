@@ -37,3 +37,10 @@ test_*.js
 
 # Submodule: elfatoora-middleware (separate repo)
 elfatoora-middleware/
+
+# Secrets
+*supabase_key.txt
+*.key.txt
+
+# Wrangler build artifacts
+worker/.wrangler/

@@ -27,7 +27,7 @@ export default function SmartTVAView({ invoices = [], expenses = [], formatCurre
   useEffect(() => {
     if (currentId && isSupabaseEnabled()) {
       setLoadingDecl(true);
-      loadDeclarations(currentId).then(setSavedDeclarations).catch(() => {}).finally(() => setLoadingDecl(false));
+      loadDeclarations(currentId).then(setSavedDeclarations).catch((e) => console.warn('[TVA] load declarations failed:', e?.message)).finally(() => setLoadingDecl(false));
     }
   }, [currentId]);
 

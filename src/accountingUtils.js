@@ -1004,31 +1004,30 @@ function getMonthKey(dateStr) {
 export const computeMonthlyChartData = (invoices = [], expenses = []) => {
   const monthly = {};
 
+  for (let i = 0; i < 12; i++) monthly[i] = { revenus: 0, depenses: 0 };
+
   for (const inv of invoices) {
     const m = getMonthKey(inv.issueDate || inv.date);
     if (m === null) continue;
-    if (!monthly[m]) monthly[m] = { revenus: 0, depenses: 0 };
-    monthly[m].revenus += parseFloat(inv.totalAmount) || 0;
+    if (inv.status === 'PAID') monthly[m].revenus += parseFloat(inv.totalAmount) || 0;
   }
 
   for (const exp of expenses) {
     const m = getMonthKey(exp.date);
     if (m === null) continue;
-    if (!monthly[m]) monthly[m] = { revenus: 0, depenses: 0 };
     monthly[m].depenses += parseFloat(exp.totalAmount) || 0;
   }
 
-  const sortedMonths = Object.keys(monthly).map(Number).sort((a, b) => a - b);
   let tresorerie = 0;
   const result = [];
 
-  for (const m of sortedMonths) {
+  for (let m = 0; m < 12; m++) {
     tresorerie += monthly[m].revenus - monthly[m].depenses;
     result.push({
       name: MONTHS[m],
-      Revenus: Math.round(monthly[m].revenus * 1000) / 1000,
-      Dépenses: Math.round(monthly[m].depenses * 1000) / 1000,
-      Trésorerie: Math.round(tresorerie * 1000) / 1000
+      revenus: Math.round(monthly[m].revenus * 1000) / 1000,
+      depenses: Math.round(monthly[m].depenses * 1000) / 1000,
+      tresorerie: Math.round(tresorerie * 1000) / 1000
     });
   }
 

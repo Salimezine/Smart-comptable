@@ -28,7 +28,11 @@ const { mockSupabase, mockIsSupabaseEnabled } = vi.hoisted(() => {
     order: vi.fn(),
   };
   return {
-    mockSupabase: { from: vi.fn(() => builder), builder },
+    mockSupabase: {
+      from: vi.fn(() => builder),
+      auth: { getSession: vi.fn().mockResolvedValue({ data: { session: { user: { id: 'test' } } } }) },
+      builder,
+    },
     mockIsSupabaseEnabled: vi.fn(() => true),
   };
 });

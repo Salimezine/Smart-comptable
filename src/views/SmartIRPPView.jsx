@@ -28,8 +28,8 @@ export default function SmartIRPPView({ formatCurrency }) {
 
   useEffect(() => {
     if (currentId && isSupabaseEnabled()) {
-      loadDeclarations(currentId, 'irpp_annuelle').then(setIrppDeclarations).catch(() => {});
-      loadDeclarations(currentId, 'cnss_mensuelle').then(setCnssDeclarations).catch(() => {});
+      loadDeclarations(currentId, 'irpp_annuelle').then(setIrppDeclarations).catch((e) => console.warn('[IRPP] load irpp failed:', e?.message));
+      loadDeclarations(currentId, 'cnss_mensuelle').then(setCnssDeclarations).catch((e) => console.warn('[IRPP] load cnss failed:', e?.message));
     }
   }, [currentId]);
 

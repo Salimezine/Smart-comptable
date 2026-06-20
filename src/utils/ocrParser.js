@@ -1014,7 +1014,7 @@ export function normaliserMontant(str) {
 // ─────────────────────────────────────────────
 // 20b. detectLignes — extraire lignes de facture E-INFO
 // ─────────────────────────────────────────────
-function detectLignes(text) {
+export function detectLignes(text) {
   const lignes = [];
   const sauts = text.split('\n');
   const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode)/i;

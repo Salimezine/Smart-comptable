@@ -110,6 +110,20 @@
     a { color: var(--primary); text-decoration: none; }
     a:hover { color: var(--primary-dark); }
     img { max-width: 100%; height: auto; }
+    h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5rem; font-weight: 700; line-height: 1.2; color: var(--text); }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+    h5 { font-size: 1.25rem; }
+    h6 { font-size: 1rem; }
+    p { margin-top: 0; margin-bottom: 1rem; }
+    ul, ol { margin-top: 0; margin-bottom: 1rem; padding-left: 2rem; }
+    ul ul, ol ul { margin-bottom: 0; }
+    button { cursor: pointer; font-family: inherit; }
+    small { font-size: 0.875em; }
+    strong { font-weight: 700; }
+    address { font-style: normal; line-height: inherit; }
 
     /* ===== CUSTOM GRID & UTILITIES ===== */
     .container { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px; }
@@ -125,8 +139,7 @@
     .col-lg-8 { width: 100%; }
     .col-md-3 { width: 100%; }
     .col-md-4 { width: 100%; }
-    .col-md-4 { width: 100%; }
-    .col-xl { flex: 1 0 0%; }
+    @media (min-width: 1200px) { .col-xl { flex: 1 0 0%; } }
     @media (min-width: 576px) {
       .col-sm-6 { width: 50%; }
     }
@@ -186,20 +199,28 @@
     .h-100 { height: 100%; }
     .border-0 { border: none; }
     .position-relative { position: relative; }
+    .navbar-nav { display: flex; flex-direction: column; list-style: none; padding-left: 0; margin-bottom: 0; }
+    .nav-item { }
     .navbar-collapse { display: none; flex-basis: 100%; }
     .navbar-collapse.show { display: block; }
     @media (min-width: 992px) {
-      .navbar-collapse { display: flex; flex-basis: auto; }
+      .navbar-collapse { display: flex !important; flex-basis: auto; align-items: center; }
+      .navbar-nav { flex-direction: row; }
     }
     .badge { display: inline-block; padding: 4px 12px; font-size: 0.75em; font-weight: 600; border-radius: 100px; }
     .today-badge { background: rgba(15, 76, 129, 0.08); padding: 6px 16px; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .fs-3 { font-size: 1.75rem; }
+    .btn-link { background: none; border: none; padding: 0; color: var(--primary); text-decoration: underline; }
+    .btn-link:hover { color: var(--primary-dark); }
+    .btn-sm { padding: 8px 16px; font-size: 13px; }
     .form-control { display: block; width: 100%; padding: 14px 18px; font-size: 14px; font-family: inherit; border-radius: 12px; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--input-text); transition: all var(--transition); }
     .form-control::placeholder { color: var(--text-muted); }
     .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--input-focus); }
-    .g-3 { margin-left: -8px; margin-right: -8px; }
-    .g-3 > * { padding-left: 8px; padding-right: 8px; }
-    .g-4 { margin-left: -12px; margin-right: -12px; }
-    .g-4 > * { padding-left: 12px; padding-right: 12px; }
+    .g-3 { margin: -8px; }
+    .g-3 > * { padding: 8px; }
+    .g-4 { margin: -12px; }
+    .g-4 > * { padding: 12px; }
     section { padding: 120px 0; }
     .section-label {
       display: inline-flex; align-items: center; gap: 8px;
@@ -236,12 +257,14 @@
     }
     .navbar-brand { font-weight: 800; font-size: 22px; color: var(--primary); letter-spacing: -0.02em; display: flex; align-items: center; gap: 10px; padding-top: 0; padding-bottom: 0; }
     .navbar-brand img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
-    .nav-link { font-size: 14px; font-weight: 500; color: var(--text-secondary) !important; padding: 8px 16px !important; border-radius: 8px; transition: all var(--transition); }
+    .nav-link { font-size: 14px; font-weight: 500; color: var(--text-secondary) !important; padding: 8px 16px !important; border-radius: 8px; transition: all var(--transition); white-space: nowrap; }
     .nav-link:hover, .nav-link.active { color: var(--primary) !important; background: rgba(15, 76, 129, 0.04); }
     .navbar .btn-primary { padding: 10px 24px; font-size: 13px; border-radius: 10px; }
-    .navbar-toggler { display: flex; align-items: center; justify-content: center; color: var(--text-secondary); }
-    .navbar-toggler:focus { box-shadow: none; }
+    .navbar-toggler { display: flex; align-items: center; justify-content: center; color: var(--text-secondary); background: none; border: none; padding: 8px; cursor: pointer; }
+    .navbar-toggler:focus { outline: none; }
     .navbar-toggler:hover { color: var(--primary); }
+    @media (min-width: 992px) { .navbar-toggler { display: none; } }
+    .navbar-site .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
 
     /* ===== DARK MODE TOGGLE ===== */
     .theme-toggle {
@@ -638,6 +661,7 @@
       box-shadow: 0 0 20px rgba(255,255,255,0.05); color: #fff;
     }
     .contact-card textarea.form-control { min-height: 110px; resize: vertical; }
+    .contact-card .row.g-3 > * { margin-bottom: 0; }
     .contact-card .btn-primary {
       background: #fff !important; color: var(--primary) !important;
       border-color: #fff !important; box-shadow: 0 4px 14px rgba(0,0,0,0.1);
@@ -702,10 +726,19 @@
       .demo-thumb { min-width: 80px; height: 80px; font-size: 10px; }
       .pricing-card.featured { transform: none; }
       .navbar-collapse { background: var(--navbar-bg); backdrop-filter: blur(24px); border-radius: 16px; padding: 16px; margin-top: 12px; border: 1px solid var(--border); }
+      .navbar-collapse .navbar-nav { margin-left: 0 !important; gap: 2px; }
+      .navbar-collapse .nav-link { padding: 12px 16px !important; font-size: 15px; }
+      .navbar-collapse .btn { width: 100%; justify-content: center; margin: 6px 0 !important; }
+      .navbar-collapse .navbar-nav + .btn { margin-top: 16px !important; padding-top: 16px !important; border-top: 1px solid var(--border); }
     }
     @media (max-width: 767.98px) {
       .hero-actions { flex-direction: column; }
       .hero-actions .btn { width: 100%; justify-content: center; }
+      @media (max-width: 375px) {
+        .hero-actions .btn { font-size: 13px; padding: 8px 16px; white-space: normal; }
+        .hero h1 { font-size: 24px; }
+        .hero p { font-size: 13px; }
+      }
       .hero { padding: 100px 0 50px; }
       .hero-badge { font-size: 11px; padding: 6px 14px; }
       .module-row { flex-direction: column; }
@@ -801,10 +834,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
               Déjà un compte ? Se connecter
             </a>
-          </div>
-        </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -1414,8 +1446,8 @@
           <h5>Contact</h5>
           <a href="mailto:ezzinesalim21@gmail.com">ezzinesalim21@gmail.com</a>
           <a href="tel:+21612345678">+216 12 345 678</a>
-          <a href="https://www.linkedin.com/in/salim-ezzine" target="_blank">LinkedIn</a>
-          <a href="https://github.com/salimezzine" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/salim-ezzine" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/salimezzine" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -1463,6 +1495,12 @@
       });
       document.addEventListener('click', (e) => {
         if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+          navMenu.classList.remove('show');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 992) {
           navMenu.classList.remove('show');
           navToggle.setAttribute('aria-expanded', 'false');
         }
