@@ -31,7 +31,8 @@ import {
   Package,
   BookOpen,
   Bell,
-  Users
+  Users,
+  Activity
 } from 'lucide-react';
 import { 
   AreaChart, 
@@ -111,6 +112,7 @@ const AccountingCRMView     = React.lazy(() => import('./views/AccountingCRMView
 const ExpertAccountantPortalView = React.lazy(() => import('./views/ExpertAccountantPortalView'));
 const DigitalSafeView       = React.lazy(() => import('./views/DigitalSafeView'));
 const TeifDeclarationView   = React.lazy(() => import('./views/TeifDeclarationView'));
+const SubmissionAuditView   = React.lazy(() => import('./views/SubmissionAuditView'));
 const PlanComptableView     = React.lazy(() => import('./views/PlanComptableView'));
 const SettingsView          = React.lazy(() => import('./views/SettingsView'));
 import { getActiveUsers, createUser, updateUser, createSociete, addMembreToSociete, useInvitation, getSocieteById } from './utils/auth/userStore';
@@ -1275,6 +1277,7 @@ function AppContent() {
               { id: 'bank', label: 'Rapprochement', icon: ArrowLeftRight, badge: transactions.filter(t => t.status === 'UNRECONCILED').length || null },
               { id: 'fiscal', label: 'Déclarations', icon: Calculator, badge: 'Liasse' },
               { id: 'teif', label: 'TEIF & Télédéclaration', icon: FileText, badge: 'XML' },
+              { id: 'submission_audit', label: 'Audit Soumissions', icon: Activity },
               { id: 'payroll', label: 'Paie & CNSS', icon: User },
               { id: 'audit', label: 'Audit', icon: ShieldCheck },
               { id: 'financial', label: 'Bilan & Résultat', icon: CheckCheck },
@@ -1405,6 +1408,8 @@ function AppContent() {
                 {currentTab === 'plan_comptable' && 'Plan Comptable'}
                 {currentTab === 'fiscal' && 'Déclarations fiscales'}
                 {currentTab === 'payroll' && 'Paie & CNSS'}
+                {currentTab === 'teif' && 'TEIF & Télédéclaration TTN'}
+                {currentTab === 'submission_audit' && 'Audit des Soumissions'}
                 {currentTab === 'audit' && 'Audit & Conformité'}
                 {currentTab === 'settings' && 'Configuration'}
                 {currentTab === 'ai_tax' && 'Assistant Fiscal IA'}
@@ -1431,6 +1436,8 @@ function AppContent() {
               {currentTab === 'plan_comptable' && 'PCG Tunisien — Classes 1 à 8.'}
               {currentTab === 'fiscal' && 'TVA, IS, RS — échéances et calculs.'}
               {currentTab === 'payroll' && 'Salaires, CNSS, IRPP – conforme LF 2025.'}
+              {currentTab === 'teif' && 'Génération XML TEIF et soumission TTN.'}
+              {currentTab === 'submission_audit' && 'Historique des envois middleware et TTN.'}
               {currentTab === 'audit' && 'Analyse complète du journal comptable.'}
               {currentTab === 'workflow' && 'Déclarations sociales et validation mensuelle.'}
               {currentTab === 'settings' && 'Données légales et configuration société.'}
@@ -1663,6 +1670,9 @@ function AppContent() {
                 companyDetails={companyDetails}
                 onAddPieceComptable={handleAddPieceComptable}
               />
+            )}
+            {currentTab === 'submission_audit' && (
+              <SubmissionAuditView companyDetails={companyDetails} />
             )}
             {currentTab === 'fiscal' && (
               <FiscalDeclarationView

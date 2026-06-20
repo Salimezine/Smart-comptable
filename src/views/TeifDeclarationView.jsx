@@ -6,6 +6,7 @@ import { generateTEIFXML, validateTEIF, downloadTEIFXML } from '../utils/teifGen
 import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission, sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus } from '../utils/ttnWorkflow';
 import { getTTNMode, setTTNMode } from '../teif';
 import * as api from '../utils/teifSupabaseService';
+import { logSubmission } from '../utils/submissionAudit';
 
 const TTN_STATUS_KEY = 'smart_ttn_local_status';
 
@@ -41,6 +42,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
   const pollRef = useRef(null);
 
   const currentId = localStorage.getItem('smart_comptable_current_id');
+  const companyId = currentId || '';
 
   // Détecter le callback NGSign (redirection après signature)
   useEffect(() => {
@@ -71,6 +73,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
               setPollingInvoice(null);
               const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
               setStatus(inv, 'accepted', { ttnId, documentNumber: invNum });
+              logSubmission({ invoiceNumber: invNum, action: 'poll', status: 'accepted', mode: 'middleware', details: `Signé et transmis TTN (ID: ${ttnId})`, companyId });
               onAddPieceComptable && onAddPieceComptable({
                 id: `piece-${Date.now()}`, ttnId,
                 date: inv.issueDate || inv.date,
@@ -85,6 +88,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
               pollRef.current = null;
               setPollingInvoice(null);
               setStatus(inv, 'rejected');
+              logSubmission({ invoiceNumber: invNum, action: 'poll', status: 'rejected', mode: 'middleware', details: 'Rejeté par le middleware ou TTN', companyId });
               setModal({ title: 'Document rejeté', errors: ['Rejeté par le middleware ou TTN'], type: 'error' });
               return;
             }
@@ -216,6 +220,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
             middlewareUrl: companyDetails?.middlewareUrl || '',
             documentNumber: doc.header.documentNumber,
           });
+          logSubmission({ invoiceNumber: doc.header.documentNumber, action: 'send', status: 'pending', mode: 'middleware', details: 'Envoyé pour signature NGSign', companyId });
           // Auto-poll every 8s until accepted/rejected
           setPollingInvoice(Date.now());
           setModal({
@@ -235,6 +240,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           // Signature not needed (dev mode middleware) — accept directly
           const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
           setStatus(invoice, 'accepted', { ttnId });
+          logSubmission({ invoiceNumber: doc.header.documentNumber, action: 'accept', status: 'accepted', mode: 'middleware', details: 'Accepté sans signature (mode simulé)', companyId });
           onAddPieceComptable && onAddPieceComptable({
             id: `piece-${Date.now()}`, ttnId,
             date: teifInvoice.dateEmission,
@@ -244,6 +250,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           setModal({ title: 'Facture acceptée ✓', message: `Document ${doc.header.documentNumber} traité par le middleware.`, type: 'success' });
         } else {
           setStatus(invoice, 'rejected');
+          logSubmission({ invoiceNumber: doc.header.documentNumber, action: 'error', status: 'rejected', mode: 'middleware', details: (response.errors || ['Erreur']).join('; '), companyId });
           setModal({ title: 'Échec middleware', errors: response.errors || ['Erreur'], type: 'error' });
         }
         return;
@@ -268,6 +275,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         const handled = await handleTTNResponse(teifInvoice, response);
         if (handled.success) {
           setStatus(invoice, 'accepted', { ttnId: handled.ttnId, pieceId: handled.pieceId });
+          logSubmission({ invoiceNumber: teifInvoice.id, action: 'accept', status: 'accepted', mode: ttnMode, details: `TTN ID: ${handled.ttnId}`, companyId });
           onAddPieceComptable && onAddPieceComptable({
             id: handled.pieceId,
             ttnId: handled.ttnId,
@@ -279,10 +287,12 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           setModal({ title: 'Facture acceptée TTN ✓', message: `ID TTN: ${handled.ttnId}`, type: 'success' });
         } else {
           setStatus(invoice, 'rejected');
+          logSubmission({ invoiceNumber: teifInvoice.id, action: 'reject', status: 'rejected', mode: ttnMode, details: (handled.errors || ['Rejeté']).join('; '), companyId });
           setModal({ title: 'Rejet TTN', errors: handled.errors || ['Rejeté'], type: 'error' });
         }
       } else if (response.status === 'manual') {
         setStatus(invoice, 'generated', { xml: gen.xml });
+        logSubmission({ invoiceNumber: teifInvoice.id, action: 'generate', status: 'generated', mode: ttnMode, details: 'XML TEIF généré — transmission manuelle requise', companyId });
         setModal({
           title: 'XML TEIF généré ✓',
           message: response.message,
@@ -295,10 +305,12 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         });
       } else if (response.status === 'rejected') {
         setStatus(invoice, 'rejected');
+        logSubmission({ invoiceNumber: teifInvoice.id, action: 'reject', status: 'rejected', mode: ttnMode, details: (response.errors || []).map(e => e.message || e).join('; '), companyId });
         setModal({ title: 'Échec TTN', errors: (response.errors || []).map(e => e.message || e), type: 'error' });
       }
     } catch (err) {
       setStatus(invoice, 'rejected');
+      logSubmission({ invoiceNumber: teifInvoice.id, action: 'error', status: 'error', mode: ttnMode, details: err.message, companyId });
       setModal({ title: 'Erreur TEIF', errors: [err.message], type: 'error' });
     } finally {
       setGeneratingId(null);
@@ -328,6 +340,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
       );
       if (result.success) {
         setStatus(invoice, 'accepted', { ttnId: result.ttnId, pieceId: result.pieceId });
+        logSubmission({ invoiceNumber: invoice.invoiceNumber || invoice.invoice_number || invoice.id, action: 'confirm', status: 'accepted', mode: ttnMode, details: `Transmission manuelle confirmée — TTN ID: ${result.ttnId}`, companyId });
         onAddPieceComptable && onAddPieceComptable({
           id: result.pieceId, ttnId: result.ttnId,
           date: invoice.issueDate || invoice.date,
@@ -336,6 +349,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         });
         setModal({ title: 'Transmission confirmée ✓', message: `ID TTN: ${result.ttnId}`, type: 'success' });
       } else {
+        logSubmission({ invoiceNumber: invoice.invoiceNumber || invoice.invoice_number || invoice.id, action: 'confirm', status: 'error', mode: ttnMode, details: (result.errors || []).join('; '), companyId });
         setModal({ title: 'Erreur', errors: result.errors, type: 'error' });
       }
     } catch (err) {
@@ -375,6 +389,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
     if (status.status === 'accepted') {
       const ttnId = `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
       setStatus(invoice, 'accepted', { ttnId, documentNumber });
+      logSubmission({ invoiceNumber: documentNumber, action: 'accept', status: 'accepted', mode: 'middleware', details: 'Accepté via vérification manuelle', companyId });
       onAddPieceComptable && onAddPieceComptable({
         id: `piece-${Date.now()}`, ttnId,
         date: invoice.issueDate || invoice.date,
@@ -384,6 +399,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
       setModal({ title: 'Facture acceptée ✓', message: `Document ${documentNumber} accepté par TTN via le middleware.`, type: 'success' });
     } else if (status.status === 'rejected') {
       setStatus(invoice, 'rejected');
+      logSubmission({ invoiceNumber: documentNumber, action: 'reject', status: 'rejected', mode: 'middleware', details: 'Rejeté via vérification manuelle', companyId });
       setModal({ title: 'Document rejeté', errors: ['Rejeté par le middleware ou TTN'], type: 'error' });
     } else {
       setModal({ title: 'En attente', message: `Statut actuel: ${status.rawStatus || status.status}`, type: 'info' });
