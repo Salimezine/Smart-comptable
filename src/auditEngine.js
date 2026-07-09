@@ -1,6 +1,7 @@
 import { getJournalKey } from './utils/journalKey';
 import { generateFromJournal, generateBalanceSheet, generateIncomeStatement, calculateFinancialRatios } from './accountingUtils';
 import { detectAnomaly, getLearningStats } from './learningEngine';
+import { loadFiscalData } from './utils/fiscalDataService';
 
 const fmt = (val) => {
   if (val == null || isNaN(val)) return '0,000 DT';
@@ -10,6 +11,18 @@ const fmt = (val) => {
 const fmtPct = (v) => (v * 100).toFixed(1) + '%';
 
 const tvaRates = [19, 13, 7, 0];
+
+export async function initAuditRates() {
+  try {
+    const data = await loadFiscalData('_fallback');
+    if (!data || !data.taux) return;
+    const t = data.taux;
+    if (t.tva_19) {
+      const r = parseFloat(t.tva_19.taux);
+      if (r) tvaRates[0] = r;
+    }
+  } catch (_) {}
+}
 
 function loadJournal() {
   try {

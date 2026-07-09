@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { initKnowledgeBase, getScrapedSources } from './utils/taxKnowledge';
+import { initFiscalRates } from './utils/taxAssistant';
+import { initAuditRates } from './auditEngine';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -418,8 +420,12 @@ function AppContent() {
     }
   }, []);
 
-  // Initialize scraped knowledge base on mount
-  useEffect(() => { initKnowledgeBase(); }, []);
+  // Initialize scraped data and fiscal rates on mount
+  useEffect(() => {
+    initKnowledgeBase();
+    initFiscalRates();
+    initAuditRates();
+  }, []);
 
   // Demo is now triggered only from the "Mode démo" button on the login page
 

@@ -1,5 +1,6 @@
 import { calculateIRPP } from './smartIRPP.js';
 import { calculateIS } from './smartIS.js';
+import { loadFiscalData } from './fiscalDataService';
 
 const FISCAL = {
 
@@ -149,6 +150,14 @@ const FISCAL = {
     entreprisesNouvelles: 'Exonérées minimum 3 ans si pas de CA pendant réalisation',
   },
 };
+
+export async function initFiscalRates() {
+  try {
+    const data = await loadFiscalData('_fallback');
+    if (!data || !data.taux) return;
+    FISCAL._scraped = data;
+  } catch (_) {}
+}
 
 function detectLangue(texte) {
   const arabe = /[\u0600-\u06FF]/;
