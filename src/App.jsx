@@ -423,6 +423,20 @@ function AppContent() {
     }
   }, []);
 
+  // Force clean old service worker caches on mount
+  useEffect(() => {
+    if ('caches' in window) {
+      caches.keys().then(keys => {
+        keys.forEach(key => { if (key.startsWith('workbox')) caches.delete(key); });
+      });
+    }
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(reg => reg.unregister());
+      });
+    }
+  }, []);
+
   // Initialize scraped data and fiscal rates on mount
   useEffect(() => {
     initKnowledgeBase();
