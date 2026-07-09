@@ -118,10 +118,18 @@ function CountdownWidget({ nextEcheance }) {
 function DataScrapedView() {
   const [sources, setSources] = useState([]);
   const [openIdx, setOpenIdx] = useState(null);
+  const [lastScraped, setLastScraped] = useState(null);
 
   useEffect(() => {
     getScrapedSources().then ? getScrapedSources().then(setSources) : setSources(getScrapedSources());
+    loadFiscalData().then(d => {
+      if (d?.crawled_at) setLastScraped(d.crawled_at);
+    });
   }, []);
+
+  const daysSinceScrape = lastScraped
+    ? Math.floor((Date.now() - new Date(lastScraped).getTime()) / 86400000)
+    : null;
 
   if (!sources.length) {
     return (
@@ -135,9 +143,27 @@ function DataScrapedView() {
     );
   }
 
+  const freshnessColor = daysSinceScrape === null ? 'bg-slate-600' :
+    daysSinceScrape === 0 ? 'bg-emerald-500' :
+    daysSinceScrape <= 3 ? 'bg-emerald-400' :
+    daysSinceScrape <= 7 ? 'bg-amber-500' : 'bg-rose-500';
+
+  const freshnessLabel = daysSinceScrape === null ? 'Inconnue' :
+    daysSinceScrape === 0 ? 'Aujourd\'hui' :
+    daysSinceScrape === 1 ? 'Hier' :
+    `Il y a ${daysSinceScrape} jours`;
+
   return (
     <div className="space-y-2">
-      <p className="text-[10px] text-slate-500 mb-3">Sources disponibles ({sources.length}):</p>
+      <div className="flex items-center justify-between mb-3">
+        <p className="text-[10px] text-slate-500">Sources disponibles ({sources.length})</p>
+        {lastScraped && (
+          <span className="flex items-center gap-1.5 text-[9px] font-semibold text-slate-400">
+            <span className={`w-1.5 h-1.5 rounded-full ${freshnessColor} shadow-[0_0_4px_rgba(0,0,0,0.3)]`} />
+            {freshnessLabel}
+          </span>
+        )}
+      </div>
       {sources.map((src, i) => (
         <div key={i} className="bg-slate-950/40 border border-slate-800/80 rounded-2xl overflow-hidden">
           <button
