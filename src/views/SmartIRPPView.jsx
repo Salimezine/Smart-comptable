@@ -84,7 +84,10 @@ export default function SmartIRPPView({ formatCurrency }) {
   };
 
   const handleGenerateCNSS = async () => {
-    if (!currentId || !isSupabaseEnabled()) return;
+    if (!currentId || !isSupabaseEnabled()) {
+      alert('Supabase n\'est pas disponible. La déclaration ne peut pas être sauvegardée en ligne.');
+      return;
+    }
     const mois = new Date().getMonth();
     const annee = new Date().getFullYear();
     const periode = `${annee}-${String(mois).padStart(2, '0')}`;
@@ -152,7 +155,7 @@ export default function SmartIRPPView({ formatCurrency }) {
                       className="w-32 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white text-right focus:outline-none focus:border-brand-500" />
                   </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 text-center">
                     <p className="text-[10px] text-slate-400 uppercase">Impôt brut</p>
                     <p className="text-xl font-extrabold text-brand-400 mt-1">{fmt(irpp.impotBrut)}</p>

@@ -129,7 +129,7 @@ export default function SmartISView({ formatCurrency, companyDetails, currentCom
               </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 text-center">
                 <p className="text-[10px] text-slate-400 uppercase tracking-wider">IS à payer</p>
                 <p className="text-xl font-extrabold text-brand-400 mt-1">{fmt(is.impotBrut)}</p>

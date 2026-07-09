@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Smart Compta" />
+    <link rel="apple-touch-icon" href="/Smart-comptable/logo.png" />
     <meta name="description" content="Smart Comptable — Logiciel de comptabilité tunisienne automatisée. Facturation TEIF, TVA, IRPP, IS, paie CNSS, OCR, audit et business intelligence." />
     <meta name="keywords" content="comptabilité tunisienne, facturation TEIF, TVA Tunisie, IRPP, IS, paie CNSS, OCR factures, audit comptable" />
     <meta name="author" content="Mohamed Salim Ezzine" />
@@ -36,7 +40,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
-    <script>(()=>{if('serviceWorker'in navigator){const b=document.querySelector('base')?.href||self.location.pathname.replace(/\/[^/]*$/,'/');navigator.serviceWorker.register(b+'sw.js').then(()=>{setTimeout(()=>{navigator.serviceWorker.getRegistrations().then(r=>r.forEach(r=>r.unregister()))},1000)});caches.keys().then(k=>Promise.all(k.map(k=>caches.delete(k)))).catch(()=>{});}})()</script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

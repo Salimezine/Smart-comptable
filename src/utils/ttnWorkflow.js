@@ -18,7 +18,18 @@
 import { createPieceComptable, savePieceToJournal } from './pieceComptable.js';
 import { updateStockFromInvoice } from './stockManager.js';
 import { downloadTEIFXML } from './teifGenerator.js';
-export { sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus } from './middlewareMapper.js';
+export { sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus, checkMiddlewareTTNHealth } from './middlewareMapper.js';
+
+// ─────────────────────────────────────────────
+// Auto mode — health check → middleware or dev
+// ─────────────────────────────────────────────
+export async function resolveAutoMode(config = {}) {
+  const health = await checkMiddlewareTTNHealth(config);
+  if (health.reachable) {
+    return { resolved: 'middleware', reason: 'TTN joignable via middleware', health };
+  }
+  return { resolved: 'dev', reason: health.reason || 'TTN indisponible — bascule mode développement', health };
+}
 
 // ─────────────────────────────────────────────
 // Codes erreur TTN → messages FR

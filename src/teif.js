@@ -59,7 +59,7 @@ const CATEGORIE_LABELS = {
 const TTN_MODE_KEY = 'smart_ttn_mode';
 
 export function setTTNMode(mode) {
-  if (!['dev', 'prod', 'middleware'].includes(mode)) throw new Error('Mode TTN: dev, prod ou middleware');
+  if (!['dev', 'prod', 'middleware', 'auto'].includes(mode)) throw new Error('Mode TTN: dev, prod, middleware ou auto');
   localStorage.setItem(TTN_MODE_KEY, mode);
 }
 

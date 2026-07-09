@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { PCG_COMPLET } from './pcgComplet';
 
 describe('PCG_COMPLET', () => {
-  it('should be an object with 657 entries', () => {
+  it('should be an object with 663 entries', () => {
     const keys = Object.keys(PCG_COMPLET);
-    expect(keys.length).toBe(657);
+    expect(keys.length).toBe(663);
   });
 
   it('should cover all PCG classes 1-8', () => {
@@ -56,7 +56,7 @@ describe('PCG_COMPLET', () => {
     expect(PCG_COMPLET['53']).toBe('Banques, établissements financiers et assimilés');
 
     // Classes 6 — Charges
-    expect(PCG_COMPLET['60']).toBe('Achats');
+    expect(PCG_COMPLET['60']).toBe('Achats (sauf 603)');
     expect(PCG_COMPLET['61']).toBe('Services extérieurs');
     expect(PCG_COMPLET['62']).toBe('Autres services extérieurs');
     expect(PCG_COMPLET['63']).toBe('Charges diverses ordinaires');

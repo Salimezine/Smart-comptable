@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { initKnowledgeBase, getScrapedSources } from './utils/taxKnowledge';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -65,13 +66,17 @@ import {
   rapprochementBancaire 
 } from './accountingUtils';
 import { generateInvoiceLocal } from './invoiceService';
-import scanFacture, { CATEGORIES_SCE } from './tesseractOcr';
+import scanFacture, { CATEGORIES_SCE, cancelScan } from './tesseractOcr';
 import { FOURNISSEURS_LOOKUP } from './utils/ocrParser';
  import { parseFactureTunisienne, generateInvoiceNumber, saveOrUpdateFournisseur, corrigerFacture, detectClientAdresse, detectClientMF } from './utils/ocrParser';
 import { applyLearnedPatterns, recordCorrection, getLearningSummary, syncLearningToSupabase, loadLearningFromSupabase } from './utils/ocrLearning';
 import { runFullAudit } from './auditEngine';
 import { learnFromExpense, learnFromInvoice, searchEntities } from './learningEngine';
 import { journalComptable, saveJournalPiece } from './utils/journalComptable';
+import { findTierByNom, getDefaultAccounts, addTierAuto, findTierByCode } from './utils/tiersCodes';
+import JournalPreview from './components/JournalPreview';
+import TiersManager from './components/TiersManager';
+import AccountSelect, { findLibelle } from './components/AccountSelect';
 import { getDemoData } from './utils/demoData';
 
 import ToastProvider, { useToast } from './components/Toast';
@@ -303,7 +308,7 @@ function AuditReportRenderer({ report }) {
       </div>
 
       {/* Résumé — cartes stats */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {[
           { label: 'Conformes', count: summary?.passed || 0, cls: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' },
           { label: 'Avertissements', count: summary?.warned || 0, cls: 'text-amber-400 bg-amber-500/10 border-amber-500/20' },
@@ -384,6 +389,8 @@ function AuditReportRenderer({ report }) {
 
 function AppContent() {
   const toast = useToast();
+  const toastRef = useRef(toast);
+  toastRef.current = toast;
   const confirm = useConfirm();
   const [confettiActive, setConfettiActive] = useState(false);
 
@@ -411,6 +418,9 @@ function AppContent() {
     }
   }, []);
 
+  // Initialize scraped knowledge base on mount
+  useEffect(() => { initKnowledgeBase(); }, []);
+
   // Demo is now triggered only from the "Mode démo" button on the login page
 
   // Navigation State
@@ -423,32 +433,231 @@ function AppContent() {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchRef = useRef(null);
 
+  // Shortcuts help modal — DOM-based with search
+  const modalElRef = useRef(null);
+  const SHORTCUTS_DATA = [
+    { section: 'Navigation', items: [
+      { label: 'Tableau de bord', keys: ['Ctrl', 'Shift', '1'] },
+      { label: 'Saisie manuelle', keys: ['Ctrl', 'Shift', '2'] },
+      { label: 'Scan reçus', keys: ['Ctrl', 'Shift', '3'] },
+      { label: 'Journal', keys: ['Ctrl', 'Shift', '4'] },
+      { label: 'Factures', keys: ['Ctrl', 'Shift', '5'] },
+      { label: 'Fournisseurs', keys: ['Ctrl', 'Shift', '6'] },
+      { label: 'Rapprochement', keys: ['Ctrl', 'Shift', '7'] },
+      { label: 'Déclarations', keys: ['Ctrl', 'Shift', '8'] },
+      { label: 'Paie', keys: ['Ctrl', 'Shift', '9'] },
+      { label: 'Configuration', keys: ['Ctrl', 'Shift', '0'] },
+    ]},
+    { section: 'Saisie (inspiré Sage)', items: [
+      { label: 'Valider / Enregistrer', keys: ['Ctrl', 'Enter'] },
+      { label: 'Ajouter une ligne', keys: ['Ctrl', 'Shift', 'L'] },
+      { label: 'Insérer ligne', keys: ['Ctrl', 'Ins'] },
+      { label: 'Supprimer ligne', keys: ['Ctrl', 'Suppr'] },
+      { label: 'Nouvelle facture', keys: ['Ctrl', 'N'] },
+      { label: 'Recherche fiche', keys: ['F2'] },
+      { label: 'Aide contextuelle', keys: ['F1'] },
+    ]},
+    { section: 'Modaux & Recherche', items: [
+      { label: 'Recherche rapide', keys: ['Ctrl', 'K'] },
+      { label: 'Rechercher (alt.)', keys: ['Ctrl', 'F'] },
+      { label: 'Aide raccourcis', keys: ['?'] },
+      { label: 'Aide raccourcis (alt.)', keys: ['Ctrl', '/'] },
+      { label: 'Fermer modaux', keys: ['Esc'] },
+    ]},
+  ];
+  const openShortcutsModal = () => {
+    if (modalElRef.current) return;
+    const overlay = document.createElement('div');
+    overlay.id = 'shortcuts-debug';
+    overlay.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
+    overlay.onclick = () => closeShortcutsModal();
+    const renderKbd = (keys) => keys.map(k => `<kbd class="font-mono text-[11px] bg-slate-800 px-1.5 py-0.5 rounded text-brand-400 border border-slate-700/50">${k}</kbd>`).join(' <span class="text-slate-600">+</span> ');
+    const renderShortcuts = (filter) => {
+      const q = (filter || '').toLowerCase();
+      return SHORTCUTS_DATA.map(group => {
+        const filtered = group.items.filter(it => !q || it.label.toLowerCase().includes(q) || it.keys.some(k => k.toLowerCase().includes(q)));
+        if (!filtered.length && q) return '';
+        return `
+          <div class="mb-4">
+            <h4 class="text-[10px] uppercase tracking-widest text-brand-500 font-semibold mb-2">${group.section}</h4>
+            <div class="space-y-1.5">
+              ${filtered.map(it => `
+                <div class="flex items-center justify-between py-0.5">
+                  <span class="text-slate-300 text-[13px]">${it.label}</span>
+                  <span class="flex items-center gap-0.5">${renderKbd(it.keys)}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>`;
+      }).join('');
+    };
+    overlay.innerHTML = `
+      <div class="bg-slate-900 rounded-2xl border border-slate-700/50 w-full max-w-lg mx-auto shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-slate-800">
+          <h3 class="text-sm font-bold text-brand-400 tracking-wide">⌨ Raccourcis Clavier</h3>
+          <button onclick="document.getElementById('shortcuts-debug').remove(); window.__closeShortcutsModal && window.__closeShortcutsModal();" class="text-[11px] text-slate-500 hover:text-slate-300 transition-colors px-2 py-1 rounded-lg hover:bg-slate-800">✕ Fermer</button>
+        </div>
+        <div class="px-5 pt-3">
+          <input id="shortcuts-search" type="text" placeholder="🔍 Rechercher un raccourci..." class="w-full bg-slate-800/80 border border-slate-700/50 rounded-xl px-3 py-2 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/20 transition-all" oninput="window.__renderShortcuts(this.value)">
+        </div>
+        <div id="shortcuts-list" class="p-5 max-h-[55vh] overflow-y-auto text-[13px]">
+          ${renderShortcuts('')}
+        </div>
+        <div class="px-5 py-3 border-t border-slate-800 flex justify-between items-center">
+          <span class="text-[10px] text-slate-600">Appuie sur <kbd class="font-mono text-[10px] bg-slate-800 px-1 rounded text-slate-400">?</kbd> ou <kbd class="font-mono text-[10px] bg-slate-800 px-1 rounded text-slate-400">Esc</kbd> pour fermer</span>
+          <span id="shortcuts-count" class="text-[10px] text-slate-600"></span>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    modalElRef.current = overlay;
+    window.__closeShortcutsModal = () => { closeShortcutsModal(); };
+    window.__renderShortcuts = (filter) => {
+      const el = document.getElementById('shortcuts-list');
+      if (!el) return;
+      const q = (filter || '').toLowerCase();
+      let total = 0;
+      el.innerHTML = SHORTCUTS_DATA.map(group => {
+        const filtered = group.items.filter(it => !q || it.label.toLowerCase().includes(q) || it.keys.some(k => k.toLowerCase().includes(q)));
+        if (!filtered.length && q) return '';
+        total += filtered.length;
+        return `
+          <div class="mb-4">
+            <h4 class="text-[10px] uppercase tracking-widest text-brand-500 font-semibold mb-2">${group.section}</h4>
+            <div class="space-y-1.5">
+              ${filtered.map(it => `
+                <div class="flex items-center justify-between py-0.5">
+                  <span class="text-slate-300 text-[13px]">${it.label}</span>
+                  <span class="flex items-center gap-0.5">${renderKbd(it.keys)}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>`;
+      }).join('');
+      const count = document.getElementById('shortcuts-count');
+      if (count && q) count.textContent = total + ' résultat' + (total > 1 ? 's' : '');
+      else if (count) count.textContent = '';
+    };
+  };
+  const closeShortcutsModal = () => {
+    if (modalElRef.current) {
+      modalElRef.current.remove();
+      modalElRef.current = null;
+    }
+  };
+  const toggleShortcutsModal = () => {
+    if (modalElRef.current) closeShortcutsModal();
+    else openShortcutsModal();
+  };
+
+  // Use ref to always access latest versions of modal/close functions
+  const toggleRef = useRef(toggleShortcutsModal);
+  toggleRef.current = toggleShortcutsModal;
+  const closeRef = useRef(closeShortcutsModal);
+  closeRef.current = closeShortcutsModal;
   // Keyboard Shortcuts
   useEffect(() => {
+    const t = toastRef.current;
     const handleKeyDown = (e) => {
-      // Ctrl+N
+      // F1 → help (shortcuts modal)
+      if (e.key === 'F1') {
+        e.preventDefault();
+        toggleRef.current();
+        document.title = '⌨ F1 → Aide';
+        return;
+      }
+      // ? or Ctrl+/ → toggle shortcuts modal
+      if (e.key === '?' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        toggleRef.current();
+        document.title = '⌨ ? → Aide';
+        return;
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === '/') {
+        e.preventDefault();
+        toggleRef.current();
+        document.title = '⌨ Ctrl+/ → Aide';
+        return;
+      }
+      // Ctrl+N → Invoicing
       if ((e.ctrlKey || e.metaKey) && e.key === 'n') {
         e.preventDefault();
         setCurrentTab('invoicing');
-        toast.info("Navigation : Factures de Ventes (Ctrl+N)");
+        t.info("Navigation : Factures de Ventes (Ctrl+N)");
+        document.title = '⌨ Ctrl+N → Factures';
+        return;
       }
-      // Ctrl+K
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      // Ctrl+K or Ctrl+F → Search
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'f')) {
         e.preventDefault();
         setSearchOpen(true);
-        setTimeout(() => {
-          if (searchRef.current) searchRef.current.focus();
-        }, 50);
+        setTimeout(() => { if (searchRef.current) searchRef.current.focus(); }, 50);
+        document.title = '⌨ ' + (e.key === 'k' ? 'Ctrl+K' : 'Ctrl+F') + ' → Recherche';
+        return;
       }
-      // Escape
+      // F2 → Recherche fiche
+      if (e.key === 'F2') {
+        e.preventDefault();
+        t.info("Recherche fiche (F2)");
+        document.title = '⌨ F2 → Recherche fiche';
+        return;
+      }
+      // Ctrl+Ins → Insérer ligne
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Insert') {
+        e.preventDefault();
+        t.info("Insérer ligne (Ctrl+Ins) — disponible dans Saisie Manuelle");
+        document.title = '⌨ Ctrl+Ins → Insérer ligne';
+        return;
+      }
+      // Ctrl+Suppr → Supprimer ligne
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Delete') {
+        e.preventDefault();
+        t.info("Supprimer ligne (Ctrl+Suppr) — disponible dans Saisie Manuelle");
+        document.title = '⌨ Ctrl+Suppr → Supprimer ligne';
+        return;
+      }
+      // Ctrl+Shift+L → Ajouter ligne (Saisie manuelle)
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.code === 'KeyL') {
+        e.preventDefault();
+        t.info("Ajouter ligne (Ctrl+Shift+L) — disponible dans Saisie Manuelle");
+        document.title = '⌨ Ctrl+Shift+L → Ajouter ligne';
+        return;
+      }
+      // Escape → close modals / search
       if (e.key === 'Escape') {
         setSearchOpen(false);
+        closeRef.current();
         if (searchRef.current) searchRef.current.blur();
+        document.title = '⌨ Esc → Fermer';
+        return;
+      }
+      // Ctrl+Shift+[number] → quick tab navigation
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && !e.altKey) {
+        const tabMap = {
+          'Digit1': 'dashboard', 'Numpad1': 'dashboard',
+          'Digit2': 'manual', 'Numpad2': 'manual',
+          'Digit3': 'ocr', 'Numpad3': 'ocr',
+          'Digit4': 'journal', 'Numpad4': 'journal',
+          'Digit5': 'invoicing', 'Numpad5': 'invoicing',
+          'Digit6': 'suppliers', 'Numpad6': 'suppliers',
+          'Digit7': 'bank', 'Numpad7': 'bank',
+          'Digit8': 'fiscal', 'Numpad8': 'fiscal',
+          'Digit9': 'payroll', 'Numpad9': 'payroll',
+          'Digit0': 'settings', 'Numpad0': 'settings',
+        };
+        const tab = tabMap[e.code];
+        if (tab) {
+          e.preventDefault();
+          const digit = e.code.replace('Digit', '').replace('Numpad', '');
+          const labels = { dashboard: 'Tableau de bord', manual: 'Saisie Manuelle', ocr: 'Scan Reçus', journal: 'Journal', invoicing: 'Factures', suppliers: 'Fournisseurs', bank: 'Rapprochement', fiscal: 'Déclarations', payroll: 'Paie', settings: 'Configuration' };
+          setCurrentTab(tab);
+          t.info(`Ctrl+Shift+${digit} → ${labels[tab] || tab}`);
+          document.title = `⌨ Ctrl+Shift+${digit} → ${labels[tab] || tab}`;
+        }
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [toast]);
+  }, []);
 
   // App States - Multi-tenant
   const [companies, setCompanies] = useState(() => {
@@ -1289,7 +1498,7 @@ function AppContent() {
               { id: 'ocr', label: 'Scan Reçus (IA)', icon: Scan, badge: 'New' },
               null, // separator
               // ═══ Premium ═══
-              { id: 'ai_tax', label: 'Assistant Fiscal IA', icon: Sparkles, badge: 'IA' },
+              { id: 'ai_tax', label: 'Portail Déclarations', icon: Sparkles, badge: 'PDF' },
               { id: 'bi', label: 'Business Intelligence', icon: TrendingUp, badge: 'BI' },
               { id: 'smart_tva', label: 'TVA Intelligente', icon: Calculator },
               { id: 'smart_irpp', label: 'IRPP Intelligent', icon: TrendingUp },
@@ -1348,6 +1557,16 @@ function AppContent() {
             onCreateCompany={handleCreateCompany}
             currentUser={currentUser}
           />
+          <a href="https://salimezine.github.io/Smart-comptable/" target="_blank" rel="noopener noreferrer"
+            className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-brand-400 hover:bg-slate-800/40 transition-all duration-200">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            <span>Site public</span>
+          </a>
+          <button onClick={() => openShortcutsModal()}
+            className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-brand-400 hover:bg-slate-800/40 transition-all duration-200">
+            <kbd className="text-[9px] font-mono bg-slate-800 px-1.5 py-0.5 rounded text-slate-500">?</kbd>
+            <span>Raccourcis clavier</span>
+          </button>
           <button onClick={handleLogout} className="w-full mt-2 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-amber-400 hover:bg-slate-800/40 transition-all duration-200">
             <Lock className="w-3.5 h-3.5" />
             Verrouiller
@@ -1379,17 +1598,19 @@ function AppContent() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col min-w-0 max-w-full overflow-x-hidden bg-surface-900">
+      <main className="flex-1 flex flex-col min-w-0 max-w-full bg-surface-900 overflow-y-auto">
         {/* Header */}
         <header className="h-14 lg:h-16 border-b border-slate-800/50 flex items-center justify-between px-3 sm:px-6 lg:px-8 bg-slate-950/30 backdrop-blur-md sticky top-0 z-10">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             {/* Hamburger */}
-            <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-1.5 -ml-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
+            <button onClick={() => setSidebarOpen(true)} className="lg:hidden flex items-center gap-1 p-1.5 -ml-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+              <span className="text-[10px] font-medium text-slate-500">Menu</span>
             </button>
             {currentTab !== 'dashboard' && (
-              <button onClick={() => setCurrentTab('dashboard')} className="lg:hidden p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800/40 transition-colors">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+              <button onClick={() => setCurrentTab('dashboard')} className="lg:hidden flex items-center gap-1 px-2 py-1.5 text-[11px] text-brand-400 hover:text-brand-300 rounded-lg hover:bg-slate-800/40 transition-colors font-medium">
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                <span>Accueil</span>
               </button>
             )}
             <div className="min-w-0">
@@ -1412,7 +1633,7 @@ function AppContent() {
                 {currentTab === 'submission_audit' && 'Audit des Soumissions'}
                 {currentTab === 'audit' && 'Audit & Conformité'}
                 {currentTab === 'settings' && 'Configuration'}
-                {currentTab === 'ai_tax' && 'Assistant Fiscal IA'}
+                {currentTab === 'ai_tax' && 'Portail Déclarations'}
                 {currentTab === 'smart_tva' && 'TVA Intelligente'}
                 {currentTab === 'smart_irpp' && 'IRPP Intelligent'}
                 {currentTab === 'smart_is' && 'IS Intelligent'}
@@ -1441,7 +1662,7 @@ function AppContent() {
               {currentTab === 'audit' && 'Analyse complète du journal comptable.'}
               {currentTab === 'workflow' && 'Déclarations sociales et validation mensuelle.'}
               {currentTab === 'settings' && 'Données légales et configuration société.'}
-              {currentTab === 'ai_tax' && 'Assistant fiscal propulsé par IA.'}
+              {currentTab === 'ai_tax' && 'Formulaires officiels jibaya.tn — remplissage guidé pas à pas.'}
               {currentTab === 'smart_tva' && 'Collecte, déduction et déclarations TVA.'}
               {currentTab === 'smart_irpp' && 'Simulation Impôt sur le Revenu 2025.'}
               {currentTab === 'smart_is' && 'Simulation Impôt sur les Sociétés.'}
@@ -2041,12 +2262,13 @@ function DashboardView({
           )}
         </div>
       </div>
+
     </div>
   );
 }
 
 /* ==========================================================================
-   COMPONENT: INVOICING VIEW (LIST & CREATE FACTURE)
+   COMPONENT: INVOICING VIEW (FACTURATION)
    ========================================================================== */
 function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, onAddPieceComptable }) {
   const getTeifKey = () => {
@@ -2784,7 +3006,7 @@ function InvoicingView({ invoices, setInvoices, formatCurrency, companyDetails, 
               <div className="font-bold text-slate-300 mb-1">Lignes d'écriture:</div>
               {pieceComptableView.lignes?.map((l, i) => (
                 <div key={i} className={`p-2 rounded-lg ${i === 0 ? 'bg-red-900/20' : 'bg-emerald-900/20'}`}>
-                  <div className="flex justify-between"><span className="text-slate-400">{l.compte}</span><span className="text-slate-200">{l.libelle}</span></div>
+                  <div className="flex justify-between items-center"><span className="text-slate-400" title={findLibelle(l.compte)}>{l.compte}{findLibelle(l.compte) ? <span className="ml-1.5 text-[8px] text-slate-600 italic">{findLibelle(l.compte)}</span> : ''}</span><span className="text-slate-200">{l.libelle}</span></div>
                   <div className="flex justify-between text-[10px]"><span className="text-slate-500">Débit:</span><span className="text-slate-300">{formatCurrency(l.debit)}</span></div>
                   <div className="flex justify-between text-[10px]"><span className="text-slate-500">Crédit:</span><span className="text-slate-300">{formatCurrency(l.credit)}</span></div>
                 </div>
@@ -2933,6 +3155,9 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     rsAmount: '',
     clientEmail: '',
     clientAddress: '',
+    compteCharge: '',
+    compteTiers: '',
+    compteTva: '',
   };
   const [formData, setFormData] = useState(BLANK_FORM);
   const stampDutyEdited = useRef(false);
@@ -2949,6 +3174,10 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
   const [typeJustificatif, setTypeJustificatif] = useState('achat');
   const [clientEmail, setClientEmail] = useState('');
   const [clientAddress, setClientAddress] = useState('');
+  const [pendingPiece, setPendingPiece] = useState(null);
+  const [ocrConfidence, setOcrConfidence] = useState(0);
+  const [showTiersManager, setShowTiersManager] = useState(false);
+  const [isDragOver, setIsDragOver] = useState(false);
 
   const CATEGORIES = [
     'Télécoms & Internet', 'Énergie & Utilités', 'Fournitures de Bureau',
@@ -3118,6 +3347,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
   const handleFileScan = async (file) => {
     try {
+      if (file && file.size > 10 * 1024 * 1024) {
+        setOcrError('Fichier trop volumineux — limite 10 Mo');
+        setMode('choice');
+        return;
+      }
       setOcrProgress(0);
       setOcrError('');
       setOcrStatus('');
@@ -3211,6 +3445,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       });
       const result = rawResult?.rawText ? applyLearnedPatterns(rawResult.rawText, rawResult) : rawResult;
       window.__ocrLastResult = result;
+      setOcrConfidence(result?.confiance_ocr || 0);
 
       if (result?.error) {
         setOcrError(result.error);
@@ -3328,8 +3563,106 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
     }
   };
 
+  const generatePreviewPiece = () => {
+    if (!formData.supplier) return null;
+    try {
+      const raw = ocrRawText || '';
+      const useCorriger = raw.trim().length > 10;
+      let corrige = useCorriger ? corrigerFacture({}, raw) : {
+        fournisseur: formData.supplier,
+        matricule_fiscal: formData.matriculeFiscal,
+        date: formData.date ? formData.date.split('-').reverse().join('/') : '',
+        numero_justificatif: formData.invoiceNumber,
+        categorie: formData.category,
+        taux_tva: formData.vatRate + '%',
+        sous_total_ht: parseFloat(formData.subtotal) || 0,
+        montant_tva: parseFloat(formData.vatAmount) || 0,
+        timbre: parseFloat(formData.stampDuty) || 0,
+        fodec: parseFloat(formData.fodec) || 0,
+        total_ttc: parseFloat(formData.totalAmount) || 0,
+        retenue_source: !!formData.rsAmount,
+        alertes: [],
+        notes: [],
+        lignes: [],
+      };
+      if (parseFloat(formData.rsAmount) > 0) {
+        corrige.retenue_source = true;
+        corrige.rs_montant = parseFloat(formData.rsAmount) || 0;
+        corrige.rs_taux = rsRate === 'other' ? (parseFloat(rsCustomRate) || 1.5) : (parseFloat(rsRate) || 1.5);
+      }
+      const defaults = getDefaultAccounts(formData.supplier);
+      if (defaults) {
+        Object.assign(corrige, defaults);
+      }
+      const piece = journalComptable(corrige, {
+        type: typeJustificatif === 'achat' ? 'achat' : 'vente',
+        fournisseurNom: formData.supplier || 'Fournisseur',
+        datePiece: formData.date,
+      });
+      const tier = findTierByNom(formData.supplier);
+      if (piece) {
+        piece._ocrConfidence = ocrConfidence || (ocrRawText ? 85 : 100);
+        piece._tier = tier ? { code: tier.code, nom: tier.nom } : null;
+        if (formData.compteCharge || formData.compteTiers || formData.compteTva) {
+          piece.lignes = piece.lignes.map(l => {
+            const updated = { ...l };
+            if (formData.compteCharge && l.compte && l.compte.startsWith('6') && l.debit && l.debit > 0) {
+              updated.compte = formData.compteCharge;
+              updated.libelle = formData.compteCharge;
+            }
+            if (formData.compteTiers && l.compte && (l.compte.startsWith('401') || l.compte.startsWith('411')) && l.credit && l.credit > 0) {
+              updated.compte = formData.compteTiers;
+              updated.libelle = formData.compteTiers;
+            }
+            if (formData.compteTva && l.compte && l.compte.startsWith('436')) {
+              updated.compte = formData.compteTva;
+              updated.libelle = formData.compteTva;
+            }
+            return updated;
+          });
+        }
+      }
+      return piece;
+    } catch (err) {
+      setPurchaseError('⚠️ Erreur génération écriture: ' + err.message);
+      return null;
+    }
+  };
+
+  const acceptPiece = (piece) => {
+    const saved = saveJournalPiece(piece, { locked: false });
+    if (saved) {
+      if (scannedDocument) storeDocument(piece.id, scannedDocument);
+      if (scannedDocument && piece.piece_justificative && piece.piece_justificative !== piece.id) {
+        storeDocument(piece.piece_justificative, scannedDocument);
+      }
+      setPendingPiece(null);
+      setPurchaseError('');
+      setJournalMessage(`Écriture ${piece.id} enregistrée dans le journal ${piece.journal}`);
+      setFormData(BLANK_FORM);
+      setOcrRawText('');
+      setShowRsField(false);
+      setRsRate('1.5');
+      setRsCustomRate('');
+      setMfValid(null);
+      setClientEmail('');
+      setClientAddress('');
+      setScannedDocument(null);
+      setMode('success');
+      setActiveSample(null);
+    }
+  };
+
   const handleGenererEcriture = () => {
-    runJournalPipeline(false);
+    const piece = generatePreviewPiece();
+    if (piece) {
+      if (piece.validated) {
+        setPendingPiece(piece);
+        setMode('preview');
+      } else {
+        setPurchaseError('⚠️ ' + (piece.error || 'Erreur génération écriture'));
+      }
+    }
   };
 
   // Enregistrer la dépense
@@ -3492,8 +3825,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       if (ht > 0 && tvaSaisie > 0) {
         const tvaCalculee = parseFloat((ht * taux / 100).toFixed(3));
         if (Math.abs(tvaCalculee - tvaSaisie) > 0.010) {
-          setOcrError(`⚠️ TVA incohérente: ${tvaSaisie} DT saisie ≠ ${tvaCalculee} DT calculée (${ht} × ${taux}%)`);
-          return;
+          setPurchaseError(`⚠️ TVA incohérente: ${tvaSaisie} DT saisie ≠ ${tvaCalculee} DT calculée (${ht} × ${taux}%)`);
         }
       }
 
@@ -3560,11 +3892,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         }
       }
 
-      // TTN a déjà créé l'écriture → ne pas dupliquer
-      if (!ttnCreatedEntry) {
-        runJournalPipeline(true);
-      }
-
+      // Enregistrer les corrections OCR
       if (ocrRawText) {
         recordCorrection(ocrRawText, formData.supplier, 'fournisseur_nom', formData.supplier);
         if (formData.stampDuty) recordCorrection(ocrRawText, formData.supplier, 'timbre_fiscal', formData.stampDuty);
@@ -3572,9 +3900,24 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         if (formData.category) recordCorrection(ocrRawText, formData.supplier, 'categorie', formData.category);
       }
 
-      setMode('success');
-      resetForm();
-      setActiveSample(null);
+      // TTN a déjà créé l'écriture → pas de preview
+      if (ttnCreatedEntry) {
+        setMode('success');
+        resetForm();
+        setActiveSample(null);
+        return;
+      }
+
+      // Générer la preview de l'écriture comptable
+      const piece = generatePreviewPiece();
+      if (piece) {
+        if (piece.validated) {
+          setPendingPiece(piece);
+          setMode('preview');
+        } else {
+          setPurchaseError('⚠️ ' + (piece.error || 'Erreur génération écriture'));
+        }
+      }
     };
 
     return (
@@ -3778,7 +4121,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
       {/* Section Montants */}
       <div className={`p-4 rounded-xl border space-y-3 ${isAchat ? 'bg-slate-900/60 border-slate-700/60' : 'bg-emerald-900/20 border-emerald-700/40'}`}>
         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Détail des Montants (DT)</p>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           <div>
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux TVA</label>
             <select value={formData.vatRate}
@@ -3820,7 +4163,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
             />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {isAchat && (
           <div>
             <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">FODEC (1%) (DT)</label>
@@ -3867,7 +4210,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           </label>
         </div>
         {showRsField && (
-          <div className="grid grid-cols-3 gap-3 animate-fade-in">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 animate-fade-in">
             <div>
               <label className="block text-[10px] text-slate-500 font-bold mb-1 uppercase">Taux RS</label>
               <select value={rsRate} onChange={(e) => {
@@ -3958,6 +4301,29 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         </div>
       )}
 
+      {/* Section Comptes — visible toujours dans le formulaire */}
+      {(formData.compteCharge || formData.compteTiers || formData.compteTva || pendingPiece) && (
+        <div className="p-4 rounded-xl border border-slate-700/50 bg-slate-900/40 space-y-3">
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-1.5">
+            <BookOpen className="w-3 h-3" /> Comptes SCE — laissez vide pour auto
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[10px]">
+            <div>
+              <label className="block text-slate-500 font-bold mb-1">Compte de charge</label>
+              <AccountSelect value={formData.compteCharge} onChange={v => setFormData(f => ({...f, compteCharge: v}))} />
+            </div>
+            <div>
+              <label className="block text-slate-500 font-bold mb-1">Compte tiers</label>
+              <AccountSelect value={formData.compteTiers} onChange={v => setFormData(f => ({...f, compteTiers: v}))} />
+            </div>
+            <div>
+              <label className="block text-slate-500 font-bold mb-1">Compte TVA</label>
+              <AccountSelect value={formData.compteTva} onChange={v => setFormData(f => ({...f, compteTva: v}))} />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Validation errors */}
       {requiredMissing.length > 0 && (
         <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
@@ -4035,21 +4401,37 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           </button>
 
           {/* Scanner un fichier */}
-          <label className="w-full flex items-center gap-4 p-4 border-2 border-dashed border-slate-700 hover:border-indigo-500/60 rounded-2xl transition-all group cursor-pointer relative">
-            <input type="file" accept="image/jpeg,image/png,image/webp,application/pdf"
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              onChange={(e) => e.target.files[0] && handleFileScan(e.target.files[0])}
-            />
-            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-              <Upload className="w-5 h-5 text-indigo-400" />
+          <div className={`relative border-2 border-dashed rounded-2xl transition-all group ${isDragOver ? 'border-indigo-400 bg-indigo-500/10' : 'border-slate-700 hover:border-indigo-500/60'}`}
+            onDragOver={(e) => { e.preventDefault(); setIsDragOver(true); }}
+            onDragLeave={(e) => { e.preventDefault(); setIsDragOver(false); }}
+            onDrop={(e) => { e.preventDefault(); setIsDragOver(false); const f = e.dataTransfer.files[0]; if (f) handleFileScan(f); }}
+          >
+            <label className="flex items-center gap-4 p-4 cursor-pointer">
+              <input type="file" accept="image/jpeg,image/png,image/webp,application/pdf" capture="environment"
+                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                onChange={(e) => { if (e.target.files[0]) { handleFileScan(e.target.files[0]); e.target.value = ''; } }}
+              />
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <Upload className="w-5 h-5 text-indigo-400" />
+              </div>
+              <div className="text-left">
+                <p className="text-sm font-bold text-slate-100">
+                  {isDragOver ? 'Déposez le fichier' : 'Scanner un fichier'}
+                </p>
+                <p className="text-[10px] text-slate-400 mt-0.5">Glisser-déposer ou cliquer — JPG, PNG, PDF — max 10 Mo</p>
+              </div>
+            </label>
+          </div>
+
+          {/* Aperçu du document scanné */}
+          {scannedDocument && (mode === 'result' || mode === 'manual') && (
+            <div className="space-y-1.5">
+              <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Aperçu du document</p>
+              <div className="relative rounded-xl overflow-hidden border border-slate-700/50 max-h-48">
+                <img src={scannedDocument} alt="Document scanné" className="w-full h-full object-contain bg-slate-950" />
+              </div>
             </div>
-            <div className="text-left">
-              <p className="text-sm font-bold text-slate-100">
-                Scanner un fichier
-              </p>
-              <p className="text-[10px] text-slate-400 mt-0.5">JPG, PNG, PDF — max 10 Mo — OCR Local Tesseract</p>
-            </div>
-          </label>
+          )}
 
           {/* Texte brut */}
           <button
@@ -4087,6 +4469,18 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
               ))}
             </div>
           </div>
+
+          {/* Accès rapide Codes Tiers */}
+          <button onClick={() => setShowTiersManager(true)}
+            className="w-full flex items-center gap-3 p-3 border border-slate-700/50 hover:border-slate-600 rounded-xl transition-all text-xs text-left mt-3">
+            <div className="w-8 h-8 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+              <span className="text-brand-400 font-bold text-[11px]">⚙</span>
+            </div>
+            <div>
+              <p className="text-xs font-bold text-slate-200">Gérer les Codes Tiers</p>
+              <p className="text-[9px] text-slate-500">Fournisseurs, clients, banques — comptes par défaut</p>
+            </div>
+          </button>
         </div>
 
         {/* Panel droit */}
@@ -4102,16 +4496,16 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
               </div>
               <div className="text-center space-y-1">
                 <h4 className="text-sm font-bold text-slate-200">
-                  Analyse OCR Tesseract...
+                  Analyse OCR...
                 </h4>
                 <p className="text-[11px] text-indigo-400">
                   {ocrStatus || (ocrProgress > 0
                     ? `Traitement — ${ocrProgress}%`
-                    : 'Initialisation du moteur OCR...')}
+                    : 'Initialisation...')}
                 </p>
               </div>
               {ocrProgress > 0 && (
-                <div className="w-64 bg-slate-800 rounded-full h-2 overflow-hidden border border-slate-700">
+                <div className="w-56 sm:w-64 bg-slate-800 rounded-full h-2 overflow-hidden border border-slate-700">
                   <div
                     className="h-full bg-gradient-to-r from-brand-500 to-indigo-500 rounded-full transition-all duration-300 ease-out"
                     style={{ width: `${ocrProgress}%` }}
@@ -4121,6 +4515,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
               {ocrError && (
                 <p className="text-[10px] text-warning-400 text-center max-w-xs">{ocrError}</p>
               )}
+              <button onClick={() => { cancelScan(); setMode('choice'); }}
+                className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-400 text-xs font-bold rounded-xl border border-slate-700 transition-all"
+              >
+                Annuler
+              </button>
             </div>
           ) : mode === 'success' ? (
             <div className="flex-1 flex flex-col items-center justify-center space-y-3 py-12 text-center animate-fade-in">
@@ -4139,6 +4538,43 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
                   Retour
                 </button>
               </div>
+            </div>
+          ) : mode === 'preview' && pendingPiece ? (
+            <div className="flex-1 flex flex-col space-y-4 overflow-y-auto p-1 animate-fade-in">
+              <div className="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h4 className="text-sm font-extrabold flex items-center gap-1.5 text-emerald-400">
+                  <CheckCircle2 className="w-4 h-4" /> Confirmation Écriture Comptable
+                </h4>
+                <button type="button" onClick={() => setMode('result')}
+                  className="text-[10px] text-slate-500 hover:text-slate-300 underline">✕ Retour</button>
+              </div>
+              <JournalPreview
+                piece={pendingPiece}
+                onAccept={() => acceptPiece(pendingPiece)}
+                onModify={() => {
+                  const lignes = pendingPiece?.lignes || [];
+                  const charge = lignes.find(l => l.debit && l.debit > 0 && l.compte && l.compte.startsWith('6'));
+                  const tiers = lignes.find(l => l.credit && l.credit > 0 && l.compte && (l.compte.startsWith('401') || l.compte.startsWith('411')));
+                  const tva = lignes.find(l => l.compte && l.compte.startsWith('436'));
+                  setFormData(f => ({
+                    ...f,
+                    compteCharge: (charge?.compte || f.compteCharge || ''),
+                    compteTiers: (tiers?.compte || f.compteTiers || ''),
+                    compteTva: (tva?.compte || f.compteTva || ''),
+                  }));
+                  setMode('result');
+                }}
+                onCancel={() => { setPendingPiece(null); setMode('choice'); }}
+                onMemorize={pendingPiece && !pendingPiece._tier ? () => {
+                  const nom = pendingPiece.fournisseur || 'Fournisseur';
+                  const type = typeJustificatif === 'vente' ? 'client' : 'fournisseur';
+                  const ok = addTierAuto(nom, type, { mf: formData.matriculeFiscal });
+                  if (ok) {
+                    const newTier = findTierByNom(nom);
+                    setPendingPiece({ ...pendingPiece, _tier: newTier ? { code: newTier.code, nom: newTier.nom } : { code: '✓', nom } });
+                  }
+                } : null}
+              />
             </div>
           ) : mode === 'manual' ? (
             renderEntryForm(true)
@@ -4206,6 +4642,16 @@ Règlement : Virement à 60 jours'
           )}
         </div>
       </div>
+
+      {showTiersManager && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-surface-900 border border-slate-800 rounded-3xl w-full max-w-lg max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+            <div className="p-6 overflow-y-auto flex-1">
+              <TiersManager onClose={() => setShowTiersManager(false)} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -5499,6 +5945,9 @@ function WorkflowView({
       {/* Global Interactive Utilities */}
       <FAB onNavigate={setCurrentTab} />
       <Confetti active={confettiActive} onDone={() => setConfettiActive(false)} />
+
+      {/* Shortcuts Modal — DOM portal (bypasses React state issues) */}
+
     </div>
   );
 }

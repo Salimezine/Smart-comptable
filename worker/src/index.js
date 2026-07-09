@@ -1,4 +1,5 @@
 import { generateTEIFXML as sharedGenerateTEIFXML, fmt3, esc, makeId } from '../../shared/teif-generator.js';
+import { initSigner, signTeifXml, submitToTtn, submitToRelay } from './xades.js';
 
 function addCORS(res) {
   if (res && res.headers) {
@@ -209,13 +210,92 @@ async function apiCreateDocument(request, env) {
     }, env);
   }
 
+  // Signature XAdES-BES automatique si le certificat est configuré
+  let signedXml = gen.xml;
+  let signatureUUID = null;
+
+  if (env.TUNTRUST_PFX && env.TUNTRUST_PFX_PASSWORD) {
+    try {
+      const signer = await initSigner(env.TUNTRUST_PFX, env.TUNTRUST_PFX_PASSWORD);
+      signedXml = await signTeifXml(gen.xml, signer);
+      signatureUUID = `xades-${documentId}-${Date.now().toString(36)}`;
+    } catch (err) {
+      return addCORS(json({
+        message: 'Erreur signature XAdES-BES: ' + err.message,
+        documentId, documentNumber,
+        status: 'rejected',
+        signatureUUID: null,
+        signatureUrl: null,
+      }));
+    }
+  }
+
+  // Sauvegarder le XML signé
+  if (invId && signedXml !== gen.xml) {
+    await supabaseFetch(`/rest/v1/invoices?id=eq.${invId}`, {
+      method: 'PATCH',
+      body: JSON.stringify({
+        teif_xml: signedXml,
+        teif_status: 'SIGNED',
+        updated_at: new Date().toISOString(),
+      }),
+      headers: { Prefer: 'return=minimal' },
+    }, env);
+  }
+
+  // Soumission TTN automatique
+  let ttnResult = null;
+  if (signedXml !== gen.xml) {
+    if (env.TTN_RELAY_URL) {
+      ttnResult = await submitToRelay(signedXml, env.TTN_RELAY_URL, env.TTN_RELAY_TOKEN || '');
+    } else if (env.TTN_SOAP_URL) {
+      ttnResult = await submitToTtn(signedXml, {
+        soapUrl: env.TTN_SOAP_URL,
+        username: env.TTN_USERNAME || '',
+        password: env.TTN_PASSWORD || '',
+      });
+    }
+  }
+
+  if (ttnResult) {
+    const finalStatus = ttnResult.status === 'accepted' ? 'ACCEPTED' : 'REJECTED';
+    if (invId) {
+      await supabaseFetch(`/rest/v1/invoices?id=eq.${invId}`, {
+        method: 'PATCH',
+        body: JSON.stringify({
+          teif_status: finalStatus,
+          teif_xml: signedXml,
+          ttn_id: ttnResult.ttnId || null,
+          updated_at: new Date().toISOString(),
+        }),
+        headers: { Prefer: 'return=minimal' },
+      }, env);
+    }
+    return addCORS(json({
+      message: ttnResult.status === 'accepted'
+        ? `Document signé et transmis à TTN (ID: ${ttnResult.ttnId || documentNumber})`
+        : 'Échec transmission TTN',
+      signatureUUID,
+      signatureUrl: null,
+      documentId,
+      documentNumber,
+      status: finalStatus,
+      ttnId: ttnResult.ttnId || null,
+      errors: ttnResult.errors || null,
+    }));
+  }
+
+  // Pas de soumission TTN — retourner le statut selon si signé ou pas
+  const hasSig = !!signatureUUID;
   return addCORS(json({
-    message: 'TEIF XML généré et enregistré.',
-    signatureUUID: `sim-${documentId}`,
+    message: hasSig
+      ? 'XML TEIF signé — en attente de transmission TTN'
+      : 'TEIF XML généré et enregistré.',
+    signatureUUID,
     signatureUrl: null,
     documentId,
     documentNumber,
-    status: 'PENDING',
+    status: hasSig ? 'SIGNED' : 'PENDING',
   }));
 }
 

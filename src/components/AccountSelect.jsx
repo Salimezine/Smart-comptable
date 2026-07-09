@@ -6,10 +6,12 @@ const ACCOUNTS = Object.entries(PCG_COMPLET).map(([code, label]) => ({ code, lab
 
 function findLibelle(code) {
   if (PCG_COMPLET[code]) return PCG_COMPLET[code];
-  const match = Object.keys(PCG_COMPLET)
-    .filter(k => code.startsWith(k))
-    .sort((a, b) => b.length - a.length);
-  return match.length > 0 ? PCG_COMPLET[match[0]] : '';
+  const keys = Object.keys(PCG_COMPLET);
+  const byPrefix = keys.filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length);
+  if (byPrefix.length > 0) return PCG_COMPLET[byPrefix[0]];
+  const bySuffix = keys.filter(k => k.startsWith(code)).sort((a, b) => a.length - b.length);
+  if (bySuffix.length > 0) return PCG_COMPLET[bySuffix[0]];
+  return '';
 }
 
 export default function AccountSelect({ value, onChange, placeholder = 'ex: 401000', inputRef, className = '', disabled = false }) {
@@ -57,9 +59,14 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
     if (onChange) onChange(code, findLibelle(code));
   }
 
+  function commitQuery() {
+    if (query && query.trim()) selectAccount(query.trim());
+  }
+
   function handleKeyDown(e) {
+    if (e.key === 'Tab') { commitQuery(); return; }
     if (!showSuggestions || suggestions.length === 0) {
-      if (e.key === 'Enter') setShowModal(true);
+      if (e.key === 'Enter') { commitQuery(); return; }
       return;
     }
     if (e.key === 'ArrowDown') {
@@ -90,6 +97,7 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
             value={query}
             onChange={e => handleInput(e.target.value)}
             onFocus={() => query.length >= 1 && suggestions.length > 0 && setShowSuggestions(true)}
+            onBlur={() => setTimeout(commitQuery, 150)}
             onKeyDown={handleKeyDown}
             placeholder={placeholder}
             disabled={disabled}

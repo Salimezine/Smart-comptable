@@ -1,0 +1,113 @@
+
+=== Page 0 ===
+  Found 16 y-levels with fillable dots:
+    y~663: {'x=180': '669-657', 'x=147': '669-657', 'x=114': '669-657', 'amount': '669-657'}
+    y~650: {'base': '656-644', 'x=230': '656-644', 'x=202': '656-644', 'amount': '656-644'}
+    y~637: {'x=364': '643-631', 'x=314': '643-631', 'base': '643-631'}
+    y~620: {'x=335': '626-614', 'x=311': '626-614', 'base': '626-614'}
+    y~442: {'base': '448-435', 'amount': '448-435'}
+    y~415: {'base': '421-409', 'amount': '421-409'}
+    y~387: {'base': '393-381', 'amount': '393-381'}
+    y~334: {'base': '340-328', 'amount': '340-328'}
+    y~319: {'base': '325-313', 'amount': '325-313'}
+    y~288: {'base': '294-282', 'amount': '294-282'}
+    y~273: {'base': '279-267', 'amount': '279-267'}
+    y~257: {'base': '263-251', 'amount': '263-251'}
+    y~229: {'base': '236-223', 'amount': '236-223'}
+    y~202: {'base': '208-196', 'amount': '208-196'}
+    y~174: {'base': '180-168', 'amount': '180-168'}
+    y~146: {'base': '152-140', 'amount': '152-140'}
+
+=== Page 1 ===
+  Found 20 y-levels with fillable dots:
+    y~772: {'base': '778-766', 'amount': '778-766'}
+    y~702: {'base': '708-696', 'amount': '708-696'}
+    y~685: {'base': '692-679', 'amount': '692-679'}
+    y~651: {'base': '657-645', 'amount': '657-645'}
+    y~634: {'base': '640-628', 'amount': '640-628'}
+    y~599: {'base': '605-593', 'amount': '605-593'}
+    y~575: {'base': '581-569', 'amount': '581-569'}
+    y~516: {'base': '522-510', 'amount': '522-510'}
+    y~499: {'base': '505-493', 'amount': '505-493'}
+    y~465: {'base': '471-458', 'amount': '471-458'}
+    y~448: {'base': '454-442', 'amount': '454-442'}
+    y~425: {'base': '431-418', 'amount': '431-418'}
+    y~395: {'base': '401-389', 'amount': '401-389'}
+    y~341: {'base': '348-335', 'amount': '348-335'}
+    y~307: {'base': '313-301', 'amount': '313-301'}
+    y~284: {'base': '290-278', 'amount': '290-278'}
+    y~220: {'base': '226-214', 'amount': '226-214'}
+    y~206: {'base': '212-200', 'amount': '212-200'}
+    y~193: {'base': '199-187', 'amount': '199-187'}
+    y~179: {'base': '186-173', 'amount': '186-173'}
+
+=== Page 2 ===
+  Found 15 y-levels with fillable dots:
+    y~757: {'base': '763-751', 'amount': '763-751'}
+    y~712: {'base': '718-706', 'amount': '718-706'}
+    y~665: {'base': '671-659', 'amount': '671-659'}
+    y~586: {'base': '592-580', 'amount': '592-580'}
+    y~560: {'base': '566-554', 'amount': '566-554'}
+    y~521: {'base': '527-515', 'amount': '527-515'}
+    y~477: {'base': '483-471', 'amount': '483-471'}
+    y~407: {'base': '413-401', 'amount': '413-401'}
+    y~388: {'base': '394-382', 'amount': '394-382'}
+    y~348: {'base': '354-342', 'amount': '354-342'}
+    y~328: {'base': '334-322', 'amount': '334-322'}
+    y~302: {'base': '309-296', 'amount': '309-296'}
+    y~245: {'base': '251-239', 'amount': '251-239'}
+    y~226: {'base': '232-220', 'amount': '232-220'}
+    y~120: {'base': '124-116'}
+
+=== Page 3 ===
+  Found 15 y-levels with fillable dots:
+    y~774: {'amount': '780-767'}
+    y~746: {'base': '752-740', 'amount': '752-740'}
+    y~711: {'base': '717-705', 'amount': '717-705'}
+    y~669: {'base': '675-663', 'amount': '675-663'}
+    y~640: {'amount': '646-634'}
+    y~521: {'base': '527-515', 'x=119': '527-515'}
+    y~505: {'base': '511-499', 'x=133': '511-499', 'x=119': '511-499'}
+    y~489: {'amount': '495-483'}
+    y~473: {'amount': '479-467'}
+    y~457: {'amount': '463-451'}
+    y~441: {'amount': '447-435'}
+    y~426: {'amount': '432-419'}
+    y~409: {'x=119': '415-403'}
+    y~394: {'base': '400-387', 'x=171': '400-387'}
+    y~216: {'x=389': '222-210', 'amount': '222-210'}
+
+
+=== COMPARISON ===
+  Line   1: page=0 y=436 -> nearest amount dots y~435.4453430175781 (delta=0.554656982421875) OK
+  Line   2: page=0 y=409 -> nearest amount dots y~408.68536376953125 (delta=0.31463623046875) OK
+  Line   3: page=0 y=381 -> nearest amount dots y~380.8253479003906 (delta=0.174652099609375) OK
+  Line   4: page=0 y=328 -> nearest amount dots y~327.785400390625 (delta=0.214599609375) OK
+  Line  4b: page=0 y=313 -> nearest amount dots y~313.14532470703125 (delta=0.14532470703125) OK
+  Line   5: page=1 y=679 -> nearest amount dots y~679.3153686523438 (delta=0.31536865234375) OK
+  Line   6: page=1 y=661 -> nearest amount dots y~644.8753662109375 (delta=16.1246337890625) MISMATCH
+  Line   7: page=1 y=644 -> nearest amount dots y~644.8753662109375 (delta=0.8753662109375) OK
+  Line   8: page=1 y=628 -> nearest amount dots y~628.1953735351562 (delta=0.19537353515625) OK
+  Line   9: page=1 y=610 -> nearest amount dots y~592.7953491210938 (delta=17.20465087890625) MISMATCH
+  Line  10: page=1 y=593 -> nearest amount dots y~592.7953491210938 (delta=0.20465087890625) OK
+  Line  11: page=1 y=569 -> nearest amount dots y~569.00537109375 (delta=0.00537109375) OK
+  Line  12: page=1 y=544 -> nearest amount dots y~569.00537109375 (delta=25.00537109375) MISMATCH
+  Line  13: page=1 y=526 -> nearest amount dots y~509.6053466796875 (delta=16.3946533203125) MISMATCH
+  Line  14: page=1 y=509 -> nearest amount dots y~509.6053466796875 (delta=0.6053466796875) OK
+  Line  15: page=1 y=493 -> nearest amount dots y~492.92535400390625 (delta=0.07464599609375) OK
+  Line  16: page=1 y=475 -> nearest amount dots y~458.4853515625 (delta=16.5146484375) MISMATCH
+  Line  17: page=1 y=458 -> nearest amount dots y~458.4853515625 (delta=0.4853515625) OK
+  Line  18: page=1 y=442 -> nearest amount dots y~441.80535888671875 (delta=0.19464111328125) OK
+  Line  19: page=1 y=418 -> nearest amount dots y~418.4053649902344 (delta=0.405364990234375) OK
+  Line  20: page=1 y=388 -> nearest amount dots y~388.50537109375 (delta=0.50537109375) OK
+  Line  21: page=2 y=658 -> nearest amount dots y~658.6753540039062 (delta=0.67535400390625) OK
+  Line  22: page=2 y=610 -> nearest amount dots y~579.5953369140625 (delta=30.4046630859375) MISMATCH
+  Line  23: page=2 y=579 -> nearest amount dots y~579.5953369140625 (delta=0.5953369140625) OK
+  Line  24: page=2 y=554 -> nearest amount dots y~553.765380859375 (delta=0.234619140625) OK
+  Line  25: page=2 y=515 -> nearest amount dots y~515.245361328125 (delta=0.245361328125) OK
+  Line  26: page=2 y=470 -> nearest amount dots y~470.8453674316406 (delta=0.845367431640625) OK
+  Line  27: page=2 y=432 -> nearest amount dots y~401.00537109375 (delta=30.99462890625) MISMATCH
+  Line  28: page=2 y=401 -> nearest amount dots y~401.00537109375 (delta=0.00537109375) OK
+  Line  29: page=2 y=381 -> nearest amount dots y~381.54534912109375 (delta=0.54534912109375) OK
+  Line  30: page=2 y=361 -> nearest amount dots y~341.8253479003906 (delta=19.174652099609375) MISMATCH
+  Line  31: page=3 y=544 -> nearest amount dots y~482.6053466796875 (delta=61.3946533203125) MISMATCH

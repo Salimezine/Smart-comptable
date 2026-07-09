@@ -76,7 +76,7 @@ export default function FournisseursView({ expenses, formatCurrency, currentComp
     <div className="space-y-5 animate-fade-in">
 
       {/* ── Stats ── */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[
           { label: 'Fournisseurs', value: allSuppliers.length, color: 'text-indigo-400', bg: 'bg-indigo-500/8 border-indigo-500/20', icon: Users },
           { label: 'Total Achats', value: formatCurrency(totalAchats), color: 'text-red-400', bg: 'bg-red-500/8 border-red-500/20', icon: TrendingDown },

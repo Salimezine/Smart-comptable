@@ -1,0 +1,13 @@
+{
+  "name": "ttn-sftp-relay",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ssh2-sftp-client": "^11.0.0"
+  }
+}

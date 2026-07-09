@@ -95,7 +95,7 @@ export async function sendToMiddleware(document, config = {}) {
 
   const url = apiUrl.replace(/\/+$/, '') + '/v1/documents';
 
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  const baseUrl = typeof window !== 'undefined' ? window.location.href.replace(/\?.*$/, '') : '';
 
   try {
     const response = await fetch(url, {
@@ -107,8 +107,8 @@ export async function sendToMiddleware(document, config = {}) {
       },
       body: JSON.stringify({
         data: [{ invoice: document, pdf: '' }],
-        successUrl: `${baseUrl}/?teif_callback=success`,
-        failureUrl: `${baseUrl}/?teif_callback=failure`,
+        successUrl: `${baseUrl}?teif_callback=success`,
+        failureUrl: `${baseUrl}?teif_callback=failure`,
       }),
     });
 
@@ -119,16 +119,45 @@ export async function sendToMiddleware(document, config = {}) {
       return { status: 'rejected', errors: [msg], httpStatus: response.status };
     }
 
+    const mappedStatus = body.status === 'ACCEPTED' ? 'accepted' : (body.status === 'REJECTED' || body.status === 'SIGNING_FAILED' ? 'rejected' : 'pending');
     return {
-      status: 'pending',
+      status: mappedStatus,
       message: body.message || 'Document envoyé au middleware pour signature',
       signatureUUID: body.signatureUUID || null,
       signatureUrl: body.signatureUrl || null,
       documentNumber: document.header.documentNumber,
+      ttnId: body.ttnId || null,
       timestamp: new Date().toISOString(),
     };
   } catch (err) {
     return { status: 'error', errors: [err.message || 'Erreur réseau — middleware injoignable'] };
+  }
+}
+
+export async function checkMiddlewareTTNHealth(config = {}) {
+  const apiUrl = config.middlewareUrl || '';
+  const apiToken = config.middlewareToken || '';
+  if (!apiUrl) return { reachable: false, reason: 'Middleware URL not configured' };
+
+  const url = apiUrl.replace(/\/+$/, '') + '/health/ttn';
+  try {
+    const res = await fetch(url, {
+      headers: {
+        'X-API-Key': apiToken || '',
+        'Authorization': apiToken ? `Bearer ${apiToken}` : '',
+      },
+    });
+    if (!res.ok) return { reachable: false, reason: `HTTP ${res.status}` };
+    const data = await res.json();
+    const soapReachable = data?.soap?.status === 'reachable';
+    return {
+      reachable: soapReachable,
+      soap: data?.soap,
+      sftp: data?.sftp,
+      ttnHandlingMode: data?.ttn_handling_mode,
+    };
+  } catch {
+    return { reachable: false, reason: 'Middleware unreachable' };
   }
 }
 

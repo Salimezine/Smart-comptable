@@ -91,7 +91,7 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
           <Sparkles className="w-4 h-4" />
           <h4 className="text-xs font-extrabold uppercase tracking-wider">Moteur IA Local — Apprentissage Actif</h4>
         </div>
-        <div className="grid grid-cols-3 gap-3 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
           <div className="bg-slate-950/60 rounded-xl p-3">
             <p className="text-xl font-black text-white">{stats.supplierCount}</p>
             <p className="text-[9px] text-slate-400 font-bold uppercase">Fournisseurs mémorisés</p>
@@ -231,19 +231,19 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
           <div className="flex items-center gap-3">
             <label className="text-[10px] font-medium text-slate-400">Mode TTN:</label>
             <button type="button" onClick={() => {
-              const modes = ['dev', 'prod', 'middleware'];
+              const modes = ['dev', 'prod', 'middleware', 'auto'];
               const idx = modes.indexOf(ttnMode);
               const next = modes[(idx + 1) % modes.length];
               setTtnMode(next);
-            }} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${ttnMode === 'dev' ? 'bg-amber-600/80 text-amber-200' : ttnMode === 'prod' ? 'bg-emerald-600/80 text-emerald-200' : 'bg-blue-600/80 text-blue-200'}`}>
-              {ttnMode === 'dev' ? '🧪 Développement (mock)' : ttnMode === 'prod' ? '🚀 Production (SFTP)' : '🔌 Middleware (API REST)'}
+            }} className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${ttnMode === 'auto' ? 'bg-indigo-600/80 text-indigo-200' : ttnMode === 'dev' ? 'bg-amber-600/80 text-amber-200' : ttnMode === 'prod' ? 'bg-emerald-600/80 text-emerald-200' : 'bg-blue-600/80 text-blue-200'}`}>
+              {ttnMode === 'auto' ? '🤖 Auto (détection)' : ttnMode === 'dev' ? '🧪 Développement (mock)' : ttnMode === 'prod' ? '🚀 Production (SFTP)' : '🔌 Middleware (API REST)'}
             </button>
           </div>
-          <p className="text-[10px] text-slate-500">En mode <strong>Middleware</strong>, les factures sont transmises via l'API REST d'el-fatoora-middleware.</p>
+          <p className="text-[10px] text-slate-500">En mode <strong>Auto</strong>, le système teste automatiquement la connexion TTN via le middleware ; si TTN est joignable, la soumission se fait via l'API, sinon en mode développement simulé.</p>
 
-          {ttnMode === 'middleware' && (
+          {(ttnMode === 'middleware' || ttnMode === 'auto') && (
             <div className="space-y-3 mt-3 p-3 rounded-xl bg-slate-900/60 border border-blue-500/20">
-              <p className="text-[10px] font-bold text-blue-400 uppercase tracking-wider">Configuration Middleware & NGSign</p>
+              <p className="text-[10px] font-bold text-blue-400 uppercase tracking-wider">Configuration Middleware & NGSign {ttnMode === 'auto' ? '(requis pour le mode Auto)' : ''}</p>
               <div>
                 <label className="block text-[10px] font-medium text-slate-400 mb-1">URL du middleware</label>
                 <input value={companyDetails?.middlewareUrl || ''} onChange={e => setCompanyDetails(p => ({...p, middlewareUrl: e.target.value}))} placeholder="https://elfatoora-middleware-app-production.up.railway.app" className="w-full px-2.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50"/>

@@ -80,7 +80,7 @@ export default function ExpertAccountantPortalView({ companies = {}, currentComp
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-3 mt-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
                   <div className="p-2.5 rounded-lg bg-slate-800/30 border border-slate-700/50 text-center">
                     <p className="text-[10px] text-slate-400">Solde</p>
                     <p className={`text-xs font-bold ${(companyRevenue - companyExpenses) >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>{fmt(companyRevenue - companyExpenses)}</p>

@@ -41,7 +41,10 @@ export default function SmartTVAView({ invoices = [], expenses = [], formatCurre
   }));
 
   const handleGenerate = async (decl) => {
-    if (!currentId || !isSupabaseEnabled()) return;
+    if (!currentId || !isSupabaseEnabled()) {
+      alert('Supabase n\'est pas disponible. La déclaration ne peut pas être sauvegardée en ligne.');
+      return;
+    }
     setSubmitting(decl.month);
     try {
       const saved = await saveDeclaration(currentId, {

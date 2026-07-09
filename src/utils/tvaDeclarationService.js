@@ -9,7 +9,9 @@ export function computeTVAFromJournal() {
   const monthly = {};
 
   jb.forEach(entry => {
+    if (!entry.date) return;
     const d = new Date(entry.date);
+    if (isNaN(d.getTime())) return;
     const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
     if (!monthly[key]) monthly[key] = { collected: 0, deductible: 0, baseHT: 0, baseDeductible: 0, entries: 0 };
 

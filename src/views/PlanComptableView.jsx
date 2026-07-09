@@ -130,7 +130,7 @@ export default function PlanComptableView() {
         subtitle="PCG complet (loi 96-112) — Classes 1 à 8"
       />
 
-      <div className="grid grid-cols-4 md:grid-cols-8 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2">
         {CLASSES.map(c => (
           <button
             key={c.num}

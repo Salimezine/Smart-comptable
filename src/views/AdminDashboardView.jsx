@@ -53,9 +53,9 @@ export default function AdminDashboardView({ currentUser }) {
   };
 
   const handleInvite = async () => {
-    if (!inviteForm.email.trim() || !inviteForm.email.includes('@')) { setMsg({ type: 'error', text: 'Email invalide' }); return; }
+    if (!inviteForm.email.trim() || !inviteForm.email.includes('@')) { toast.error('Email invalide'); return; }
     const societe = currentUser?.societeId;
-    if (!societe) { setMsg({ type: 'error', text: 'Aucune société associée' }); return; }
+    if (!societe) { toast.error('Aucune société associée'); return; }
     const inv = createInvitation({ email: inviteForm.email, role: inviteForm.role, societeId: societe, createdBy: currentUser.id });
     setInviteResult(inv);
     logAction('invite_sent', { email: inviteForm.email, role: inviteForm.role, code: inv.code });
@@ -282,7 +282,7 @@ export default function AdminDashboardView({ currentUser }) {
             <h4 className="text-xs font-bold text-slate-300">Configuration de sécurité</h4>
             <div>
               <label className="text-[10px] text-slate-400 font-bold uppercase block mb-1">Timeout inactivité</label>
-              <select value={config.timeout_ms} onChange={e => { setConfig({ timeout_ms: parseInt(e.target.value) }); setMsg({ type: 'success', text: 'Configuration mise à jour' }); }}
+              <select value={config.timeout_ms} onChange={e => { setConfig({ timeout_ms: parseInt(e.target.value) }); toast.success('Configuration mise à jour'); }}
                 className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500">
                 <option value={5 * 60 * 1000}>5 minutes</option>
                 <option value={10 * 60 * 1000}>10 minutes</option>
@@ -291,7 +291,7 @@ export default function AdminDashboardView({ currentUser }) {
               </select>
             </div>
             <div className="flex gap-2">
-              <button onClick={() => { lockApp(); setMsg({ type: 'success', text: 'Application verrouillée' }); }}
+              <button onClick={() => { lockApp(); toast.success('Application verrouillée'); }}
                 className="flex items-center gap-1 px-3 py-2 bg-amber-500/20 text-amber-400 text-xs font-bold rounded-xl border border-amber-500/30 hover:bg-amber-500/30 transition-all">
                 <Lock className="w-3.5 h-3.5" /> Verrouiller maintenant
               </button>

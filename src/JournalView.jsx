@@ -362,8 +362,13 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                                 </button>
                               ) : ''}
                             </td>
-                            <td className="py-4 px-6 font-mono text-slate-300">{l.compte}</td>
-                            <td className="py-4 px-6 text-slate-200">{cleanLibelle(l.compte, l.libelle)}</td>
+                             <td className="py-4 px-6 font-mono text-slate-300" title={findLibelle(l.compte)}>
+                               {l.compte}
+                               {findLibelle(l.compte) && (
+                                 <span className="ml-2 text-[9px] text-slate-500 italic hidden lg:inline">{findLibelle(l.compte)}</span>
+                               )}
+                             </td>
+                             <td className="py-4 px-6 text-slate-200">{cleanLibelle(l.compte, l.libelle)}</td>
                             <td className="py-4 px-6 text-right text-danger-400 font-semibold">
                               {l.debit && l.debit !== 0
                                 ? Number(l.debit).toFixed(3) + ' DT'
@@ -511,7 +516,9 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                 <tbody className="divide-y divide-slate-800/50">
                   {lines.map((l, i) => (
                     <tr key={i} className="hover:bg-slate-800/20 transition-colors">
-                      <td className="py-2 pr-4 font-mono text-slate-300">{l.compte}</td>
+                      <td className="py-2 pr-4 font-mono text-slate-300" title={findLibelle(l.compte)}>{l.compte}
+                        {findLibelle(l.compte) && <span className="ml-1.5 text-[8px] text-slate-500 italic">{findLibelle(l.compte)}</span>}
+                      </td>
                       <td className="py-2 pr-4 text-slate-200">{cleanLibelle(l.compte, l.libelle)}</td>
                       <td className="py-2 pr-4 text-right text-danger-400">{l.debit ? Number(l.debit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
                       <td className="py-2 pr-4 text-right text-accent-400">{l.credit ? Number(l.credit).toFixed(3) + ' DT' : <span className="text-slate-600">&mdash;</span>}</td>
@@ -564,7 +571,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   ⚠ Écriture équilibrée — les champs sont verrouillés. Pour modifier, videz d'abord un débit ou crédit.
                 </div>
               )}
-              <div className="grid grid-cols-3 gap-3 text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                 <div>
                   <label className="text-[10px] text-slate-500 block mb-1">Date</label>
                   <input type="date" value={first.date || ''} onChange={e => updateEditFirst('date', e.target.value)} disabled={lockedEdit}
@@ -581,6 +588,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                     className={inputClassNorm(lockedEdit)} />
                 </div>
               </div>
+              <div className="overflow-x-auto -mx-2 px-2">
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
                   <tr className="text-[10px] uppercase text-slate-500 border-b border-slate-800">
@@ -641,6 +649,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                   </tr>
                 </tfoot>
               </table>
+              </div>
             </div>
           </div>
         );

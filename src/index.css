@@ -451,7 +451,6 @@
   scrollbar-width: thin;
 }
 
-/* Prevent horizontal overflow on mobile */
 #root {
   max-width: 100vw;
   overflow-x: hidden;

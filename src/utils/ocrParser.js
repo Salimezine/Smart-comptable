@@ -72,6 +72,30 @@ export const FOURNISSEURS_LOOKUP = {
   'attijari':           { nom: 'Attijari', categorie: 'Frais bancaires', tva: 19, rs: 10 },
   'bna':                { nom: 'BNA', categorie: 'Frais bancaires', tva: 19, rs: 10 },
   'bh bank':            { nom: 'BH Bank', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  // Additional Tunisian suppliers
+  'amen bank':          { nom: 'Amen Bank', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'amen':               { nom: 'Amen Bank', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'stb':                { nom: 'STB', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'ubci':               { nom: 'UBCI', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'banque zitouna':     { nom: 'Banque Zitouna', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'zitouna':            { nom: 'Banque Zitouna', categorie: 'Frais bancaires', tva: 19, rs: 10 },
+  'amen petrol':        { nom: 'Amen Petrol', categorie: 'Carburant', tva: 19, rs: false },
+  'shell':              { nom: 'Shell', categorie: 'Carburant', tva: 19, rs: false },
+  'steg eclair':        { nom: 'STEG Éclairage', categorie: 'Électricité & eau', tva: 13, rs: false, timbre: 0 },
+  'poulina':            { nom: 'Poulina', categorie: 'Fournitures bureau', tva: 19, rs: false },
+  'naftal':             { nom: 'Naftal', categorie: 'Carburant', tva: 19, rs: false },
+  'tunisair':           { nom: 'Tunisair', categorie: 'Transport', tva: 0, rs: false },
+  'la poste':           { nom: 'La Poste Tunisienne', categorie: 'Frais postaux', tva: 0, rs: false },
+  'poste tunisienne':   { nom: 'La Poste Tunisienne', categorie: 'Frais postaux', tva: 0, rs: false },
+  'sotetel':            { nom: 'SOTETEL', categorie: 'Prestation services', tva: 19, rs: true },
+  'one tech':           { nom: 'One Tech', categorie: 'Matériel informatique', tva: 19, rs: false },
+  'sagemcom':           { nom: 'Sagemcom', categorie: 'Matériel informatique', tva: 19, rs: false },
+  'cellcom':            { nom: 'Cellcom', categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'vermego':            { nom: 'Vermego', categorie: 'Prestation services', tva: 19, rs: true },
+  'sofia':              { nom: 'Sofia', categorie: 'Prestation services', tva: 19, rs: true },
+  'artec':              { nom: 'Artec', categorie: 'Prestation services', tva: 19, rs: true },
+  'megacom':            { nom: 'Megacom', categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'tunisiana':          { nom: 'Orange', categorie: 'Télécoms & Internet', tva: 19, rs: false },
 };
 
 // ─────────────────────────────────────────────
@@ -114,6 +138,11 @@ export function correctOCRText(text) {
     // Confusions fréquentes
     t = t.replace(/(\d)o(\d)/g, '$10$2');
 
+    // Arabic-Indic → Western digits (٠١٢٣٤٥٦٧٨٩ → 0123456789)
+    t = t.replace(/[\u0660\u0661\u0662\u0663\u0664\u0665\u0666\u0667\u0668\u0669]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d).toString());
+    // Arabic-Indic Eastern (used in some regions)
+    t = t.replace(/[\u06F0\u06F1\u06F2\u06F3\u06F4\u06F5\u06F6\u06F7\u06F8\u06F9]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d).toString());
+
     // TVA "1%" → "7%" si contexte matériel informatique
     if (/\b(e-info|e info|einfo|ednfo|informatique|ordinateur|imprimante)\b/i.test(t)) {
       t = t.replace(/\b1\s*%/g, '7%');
@@ -129,6 +158,14 @@ export function correctOCRText(text) {
       bipst: 'BIAT', biat: 'BIAT', 'bh bank': 'BH Bank', attijari: 'Attijari', bna: 'BNA',
       amen: 'Amen Bank', 'amen bonk': 'Amen Bank', zity: 'Zitouna',
       post: 'La Poste', 'Ia poste': 'La Poste',
+      'Ia poste tunisienne': 'La Poste Tunisienne', 'poste tunisienne': 'La Poste Tunisienne',
+      'arnen': 'Amen', 'arnen bank': 'Amen Bank', 'amen bonk': 'Amen Bank',
+      'poullna': 'Poulina', 'paulina': 'Poulina',
+      'tunisiens': 'Tunisair', 'tunissir': 'Tunisair',
+      'nattal': 'Naftal', 'naftel': 'Naftal',
+      'one tech tunisie': 'One Tech', 'one tech': 'One Tech',
+      'sotetel tunisie': 'SOTETEL',
+      'shell tunisie': 'Shell', 'shel': 'Shell',
     };
     let lower = t.toLowerCase();
     for (const [wrong, right] of Object.entries(corrections)) {
@@ -190,18 +227,47 @@ export function detectMF(text) {
   try {
     if (!text || typeof text !== 'string') return null;
 
-    // Accepte 0 (OCR error O→0) comme lettre + capture complet X/X/X/X/XXX
+    // Normaliser les séparateurs OCR bruités avant la recherche
+    let norm = text;
+    // Pipe, l, 1 → / (séparateurs de MF)
+    norm = norm.replace(/(\d{6,7}[A-Z0-9]?)[|lI1](\d{1,3}[A-Z0-9]?)[|lI1]/g, '$1/$2/');
+    // Espaces entre parties du MF (ex: "1234567 X A M 000")
+    norm = norm.replace(/(\d{6,7})\s+([A-Z0-9])\s+([A-Z0-9])\s+([A-Z0-9])\s+(\d{3})\b/g, '$1/$2/$3/$4/$5');
+    norm = norm.replace(/(\d{6,7})\s+([A-Z0-9])\s+([A-Z0-9])\s+([A-Z0-9])\s+/g, '$1/$2/$3/$4/');
+    norm = norm.replace(/(\d{0,3})\s+(\d{3,4})([A-Z0-9]?)\s*\/\s*([A-Z0-9])(?:\s*\/\s*|\s+)([A-Z0-9])/g, '$1$2$3/$4/$5');
+
+    // Arabic label: الرقم الجبائي (matricule fiscal)
+    const arabicPattern = /(?:الرقم\s+الجبائي|الرقم\s+الجاباي|رقم\s+المتصرّف|رقم\s+المتصرف|المتصرّف|المتصرف|بطاقة\s+تعريف)\s*[:﹕|]*\s*(\d{6,7}[A-Z0-9]?)\s*[\/\\|lI1\s]\s*([A-Z0-9])\s*[\/\\|lI1\s]\s*([A-Z0-9])(?:\s*[\/\\|lI1\s]\s*([A-Z0-9])\s*[\/\\|lI1\s]\s*(\d{3}))?/i;
+
+    // Body pattern: accepts 0 for O in letter positions
     const mfBody = '\\d{6,7}[A-Z0-9]?\\/[A-Z0-9](?:\\/[A-Z0-9](?:\\/[A-Z0-9]\\/\\d{3})?)?';
     const patterns = [
       new RegExp('M\\s+F\\s*:?\\s*(' + mfBody + ')', 'i'),
       new RegExp('M\\.?F\\.?\\s*:?\\s*(' + mfBody + ')', 'i'),
       new RegExp('matricule\\s*fiscal\\s*:?\\s*(' + mfBody + ')', 'i'),
+      new RegExp('(?:n°\\s*fiscal|num[ée]ro\\s*fiscal)\\s*:?\\s*(' + mfBody + ')', 'i'),
       new RegExp('^\\s*(' + mfBody + ')\\s*$', 'm'),
+      // MF alone on line with possible trailing characters
+      new RegExp('(?:^|\\n)\\s*(' + mfBody + ')\\s*[\\s\\n]', 'm'),
     ];
     const validateMf = /^\d{6,7}[A-Z0-9]?\//;
 
+    // Essayer d'abord le pattern arabe
+    const arabicMatch = norm.match(arabicPattern);
+    if (arabicMatch) {
+      let parts = [arabicMatch[1], arabicMatch[2], arabicMatch[3]];
+      if (arabicMatch[4] && arabicMatch[5]) {
+        parts.push(arabicMatch[4], arabicMatch[5]);
+      }
+      parts = parts.map((p, i) => {
+        if (i === 1 || i === 3) return p.replace(/0/g, 'O');
+        return p;
+      });
+      return parts.join('/');
+    }
+
     for (const pattern of patterns) {
-      const match = text.match(pattern);
+      const match = norm.match(pattern);
       if (match) {
         let val = match[1].trim();
         if (validateMf.test(val)) {
@@ -214,6 +280,21 @@ export function detectMF(text) {
         }
       }
     }
+
+    // Fallback: chercher un pattern {7+ chiffres}/{lettre}/{lettre}/{lettre}/{3 chiffres}
+    // même sans label (pour textes OCR bruités comme TTN)
+    const fallbackMf = norm.match(/(?:\b|^|(?<=\s))(\d{6,7})[\/\\|lI1\s]*([A-Z0-9])[\/\\|lI1\s]*([A-Z0-9])(?:[\/\\|lI1\s]*([A-Z0-9])[\/\\|lI1\s]*(\d{3}))?(?:\b|$|(?=\s))/);
+    if (fallbackMf) {
+      let parts = [fallbackMf[1], fallbackMf[2], fallbackMf[3]];
+      if (fallbackMf[4] && fallbackMf[5]) parts.push(fallbackMf[4], fallbackMf[5]);
+      parts = parts.map((p, i) => {
+        if (i === 1 || i === 3) return p.replace(/0/g, 'O');
+        return p;
+      });
+      const result = parts.join('/');
+      if (/^\d{6,7}\/[A-Z0-9]\/[A-Z0-9]/.test(result)) return result;
+    }
+
     return null;
   } catch {
     return null;
@@ -344,9 +425,12 @@ export function detectTotalTTC(text) {
       /Sous[- ]total\s*TTC\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /Montant\s*TTC\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /T\.?T\.?C\.?\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
-      // "Total TTC" en arabe ou français
-      /(?:الإجمالي|المجموع\s+الكلي)\s*[:﹕|]*\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      // "Total TTC" en arabe
+      /(?:الإجمالي|المجموع\s+الكلي|الجملة|المبلغ\s+الإجمالي|مجموع|مجموع\s+الفاتورة)\s*[:﹕|]*\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      // Bilingual: Arabic then French total (often with LTR mark)
+      /(?:الإجمالي|المجموع|total\s+g[eé]n[eé]ral)\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /Total\s*général\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /Totale?\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})\s*(?:DT|TND|د.ت|دينار)/i,
       // "Net à payer" (TTC - RS)
       /Net\s*[àa]\s*payer\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /Montant\s*[àa]\s*payer\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
@@ -401,6 +485,9 @@ export function detectTotalHT(text) {
       /base\s*h\.?t\.?\s*[:\|]?\s*([\d\s]{1,12}[.,]\d{2,3})/i,
       /net\s*h\.?t\.?\s*[:\|]?\s*([\d\s]{1,12}[.,]\d{2,3})/i,
       /montant\s*h\.?t\.?\s*[:\|]?\s*([\d\s]{1,12}[.,]\d{2,3})/i,
+      // Arabic: الخاضع للأداء = base HT, أساس = base
+      /(?:الخاضع\s+للأداء|الأساس|الأساس\s+الخاضع|قاعدة)\s*[:﹕|]*\s*([\d\s]{1,12}[.,]\d{2,3})/i,
+      /sous[- ]?total\s*[:﹕|]?\s*([\d\s]{1,12}[.,]\d{2,3})/i,
       // "To TVA {montant}" → base HT (OCR "To TVA 135500")
       /to\s+tva\s*[:﹕|]?\s*(\d{4,8})/i,
       // En dernier recours: "HT" seul
@@ -484,6 +571,13 @@ export function detectTauxTVA(text) {
 
     const tvaMatches = [...text.matchAll(/\b(0|7|12|13|19)\s*%/g)];
     const tvaFound = tvaMatches.map(m => parseInt(m[1]));
+
+    // Arabic TVA rate detection: نسبة الأداء X%
+    const arabicTva = text.match(/(?:نسبة\s+الأداء|نسبة|الأداء)\s*[:﹕|]*\s*(0|7|12|13|19)\s*(?:%|٪)/i);
+    if (arabicTva) {
+      const t = parseInt(arabicTva[1]);
+      if ([0, 7, 12, 13, 19].includes(t)) return t;
+    }
 
     if (tvaFound.length === 0) {
       // Chercher "Taux" suivi du nombre (TTN: "Taux 12.0")
@@ -653,6 +747,9 @@ export function detectMontantTVA(text) {
       /(?:total|montant)\s+tva\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /t(?:\s*\.\s*)?v(?:\s*\.\s*)?a(?:\s*\.\s*)?\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
       /TVA\s*(7|13|19)\s*%\s*[:﹕|]?\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      // Arabic: الأداء على القيمة المضافة = TVA,  قيمة الأداء = tax amount
+      /(?:الأداء\s+على\s+القيمة\s+المضافة|قيمة\s+الأداء|الأداء|آداء)\s*[:﹕|]*\s*([\d\s]{1,8}[.,]\d{2,3})/i,
+      /(?:tva|t\.v\.a)\s*(?:\d{1,2}\s*%)?[\s\S]{0,30}?(\d{1,3}(?:[.,]\d{3})?)\s*(?:dt|tnd|د.ت|دينار)/i,
     ];
     for (const pat of patterns) {
       const m = text.match(pat);
@@ -1017,12 +1114,20 @@ export function normaliserMontant(str) {
 export function detectLignes(text) {
   const lignes = [];
   const sauts = text.split('\n');
-  const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode)/i;
+  const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode|sous-total|sous.total)/i;
+  // Common Tunisian invoice line terms to ignore (column headers, etc.)
+  const colonneHeader = /^(?:d[ée]signation|article|produit|r[ée]f[ée]rence|quantit[ée]|pu|prix|total|tva\s*%)/i;
 
   // E-INFO format large: catégories, types, désignation, qte, prix unitaire ht, tva%, total ttc
   const LIGNE_EINFO = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s+(\d+[.,]\d{3})\s+(\d+[.,]\d{3})\s+(?:DT\s*)?$/;
   // E-INFO tableau réel: [Désignation TVA[|] PrixHT[|] TotalTTC]
   const LIGNE_EINFO3 = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s*(?:\|\s*)?([\d,]+)\s*(?:\|\s*)?([\d,]+)\s*\]?\s*(?:\|\s*)?$/;
+  // Format: description qty @ price = total (Tunisian common format with @)
+  const LIGNE_AT = /^(.{3,60}?)\s+(\d+)\s*@\s*(\d+[.,]\d{3})\s*=\s*(\d+[.,]\d{3})\s*(?:DT|TND)?$/i;
+  // Format: description qty x price = total
+  const LIGNE_X = /^(.{3,60}?)\s+(\d+)\s*[xX]\s*(\d+[.,]\d{3})\s*[:=]?\s*(\d+[.,]\d{3})\s*(?:DT|TND)?$/i;
+  // Format: TAB-separated: designation \t qty \t pu \t total (OCR table output)
+  const LIGNE_TSV = /^(.{3,60}?)\t+(\d{1,6})\t+(\d+[.,]\d{3})\t+(\d+[.,]\d{3})/i;
 
   for (const line of sauts) {
     const l = line.trim();
@@ -1060,6 +1165,57 @@ export function detectLignes(text) {
           if (total > 0 && prix > total) { total = total / 1000; }
           if (tva === 0 && Math.abs(total - prix) > 0.010) { prix = total; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
+          continue;
+        }
+      }
+    }
+
+    // Format: description qty @ price = total
+    LIGNE_AT.lastIndex = 0;
+    const emAt = LIGNE_AT.exec(l);
+    if (emAt) {
+      const des = emAt[1].trim();
+      if (!bruitLigne.test(des) && !colonneHeader.test(des) && des.length >= 3) {
+        let qte = parseInt(emAt[2]);
+        let pu = normaliserMontant(emAt[3]);
+        let total = normaliserMontant(emAt[4]);
+        if (pu !== null && total !== null && pu > 0 && total > 0) {
+          if (pu > total * 100) { pu = pu / 1000; }
+          lignes.push({ designation: des, prix_unitaire: pu, quantite: qte || 1, total: total });
+          continue;
+        }
+      }
+    }
+
+    // Format: description qty x price = total
+    LIGNE_X.lastIndex = 0;
+    const emX = LIGNE_X.exec(l);
+    if (emX) {
+      const des = emX[1].trim();
+      if (!bruitLigne.test(des) && !colonneHeader.test(des) && des.length >= 3) {
+        let qte = parseInt(emX[2]);
+        let pu = normaliserMontant(emX[3]);
+        let total = normaliserMontant(emX[4]);
+        if (pu !== null && total !== null && pu > 0 && total > 0) {
+          if (pu > total * 100) { pu = pu / 1000; }
+          lignes.push({ designation: des, prix_unitaire: pu, quantite: qte || 1, total: total });
+          continue;
+        }
+      }
+    }
+
+    // Format: TAB-separated
+    LIGNE_TSV.lastIndex = 0;
+    const emTsv = LIGNE_TSV.exec(l);
+    if (emTsv) {
+      const des = emTsv[1].trim();
+      if (!bruitLigne.test(des) && !colonneHeader.test(des) && des.length >= 3) {
+        let qte = parseInt(emTsv[2]);
+        let pu = normaliserMontant(emTsv[3]);
+        let total = normaliserMontant(emTsv[4]);
+        if (pu !== null && total !== null && pu > 0 && total > 0) {
+          if (pu > total * 100) { pu = pu / 1000; }
+          lignes.push({ designation: des, prix_unitaire: pu, quantite: qte || 1, total: total });
           continue;
         }
       }
@@ -1144,6 +1300,12 @@ const MONTHS = {
 export function detectDate(text) {
   try {
     if (!text || typeof text !== 'string') return null;
+    // Arabic: date label before date
+    const arabicDate = text.match(/(?:تاريخ|التاريخ)\s*[:﹕|]*\s*(\d{1,2})[\/\-\.](\d{1,2})[\/\-\.](\d{4})/i);
+    if (arabicDate) {
+      return `${arabicDate[3]}-${arabicDate[2].padStart(2, '0')}-${arabicDate[1].padStart(2, '0')}`;
+    }
+
     const p1 = /(\d{1,2})[\/\-\.](\d{1,2})[\/\-\.](\d{4})/g;
     const p2 = /(\d{4})[\/\-\.](\d{1,2})[\/\-\.](\d{1,2})/g;
     const p3 = /(\d{1,2})\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+(\d{4})/gi;
@@ -1187,7 +1349,7 @@ export function detectDate(text) {
       const before = text.slice(Math.max(0, d.pos - 40), d.pos).toLowerCase();
 
       // Mots-clés favorisant la date de facture
-      if (/\b(?:date|le|facture|invoice|émise)\b/i.test(before)) {
+      if (/\b(?:date|le|facture|invoice|émise|تاريخ|فاتورة|إصدار|الفاتورة)\b/i.test(before)) {
         score += 50;
       }
       // Mots-clés pénalisants (période de consommation, etc.)
@@ -1285,9 +1447,9 @@ export function classifierDocument(text) {
   const hasMatricule = /(?:matricule\s*fiscal|mf\s*[:\s]|n°\s*mf|n°fiscal)/i.test(lower);
   const hasSousTotal = /(?:sous[- ]?total\s*ht|net\s*ht|total\s*ht\s*[:\s])/i.test(lower);
   const hasTotalTTC = /(?:total\s*ttc|net\s*à\s*payer|ttc\s*[:\s])/i.test(lower);
-  const hasFacture = /\b(?:facture|f[ée]f|note\s*d'honoraires|note\s*des\s*honoraires)\b/i.test(lower);
-  const hasClient = /(?:client|facturé\s*à|destinataire)/i.test(lower);
-  const hasFournisseur = /(?:fournisseur|prestataire|vendeur|entreprise)/i.test(lower);
+  const hasFacture = /\b(?:facture|f[ée]f|note\s*d'honoraires|note\s*des\s*honoraires|فاتورة|الفاتورة)\b/i.test(lower);
+  const hasClient = /(?:client|facturé\s*à|destinataire|العميل|المشتري|المورد)/i.test(lower);
+  const hasFournisseur = /(?:fournisseur|prestataire|vendeur|entreprise|المورد|الشركة|البائع)/i.test(lower);
 
   const invoiceScore = [hasTVA, hasMatricule, hasSousTotal, hasTotalTTC, hasFacture].filter(Boolean).length * 20
     + (hasClient || hasFournisseur ? 10 : 0);
@@ -1817,12 +1979,15 @@ function extraireRecapitulatif(text, opts = {}) {
       /total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i,
       /sous[- ]?total\s*ht\s*[:﹕]?\s*([\d\s,.]+)/i,
       /total\s*hors\s*taxe\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /(?:الخاضع\s+للأداء|الأساس)\s*[:﹕|]*\s*([\d\s,.]+)/i,
+      /(?:total|trou)\s*htva\s*[:﹕|]?\s*([\d\s,.]+)/i,
     ]),
     tva: extraireDernier(text, [
       /total\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
       /montant\s*tva\s*[:﹕]?\s*([\d\s,.]+)/i,
       /tva\s*\(\d+\s*%\)\s*[:﹕]?\s*([\d\s,.]+)/i,
       /tva\s*\d{1,2}\s*%\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /(?:الأداء\s+على\s+القيمة\s+المضافة|قيمة\s+الأداء)\s*[:﹕|]*\s*([\d\s,.]+)/i,
     ]),
     timbre: null,
     fodec: extraireDernier(text, [
@@ -1835,6 +2000,7 @@ function extraireRecapitulatif(text, opts = {}) {
       /ttc\s*[:﹕]?\s*([\d\s,.]+)/i,
       /total\s*[:﹕]?\s*([\d\s,.]+)\s*(?:dt|dinars)/i,
       /montant\s*t\.?\s*t\.?\s*c\.?\s*[:﹕]?\s*([\d\s,.]+)/i,
+      /(?:المجموع|الإجمالي|الجملة|المبلغ\s+الإجمالي)\s*[:﹕|]*\s*([\d\s,.]+)/i,
       /cent\s+[a-zæàâäéèêëîïôöùûü]+\s+dinars\s*(?:et\s+[a-zæàâäéèêëîïôöùûü]+\s+centimes?)?[^0-9]*?(\d{4,6})/i,
     ]),
   };
@@ -2166,7 +2332,7 @@ export function corrigerFacture(parsed, texteOCR) {
     );
 
     // Extraire TOUS les MF avec leur position ligne
-    const mfRegex = /\b(\d{7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
+    const mfRegex = /\b(\d{6,7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
     const mfTrouves = [];
     lignesTexte.forEach((ligne, idx) => {
       let m;
@@ -2203,7 +2369,7 @@ export function corrigerFacture(parsed, texteOCR) {
     }
 
     // Validation MF
-    const MF_FULL = /^\d{7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3}$/;
+    const MF_FULL = /^\d{6,7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3}$/;
     if (!out.matricule_fiscal || !MF_FULL.test(out.matricule_fiscal)) {
       out.alertes.push('mf_manquant');
     }

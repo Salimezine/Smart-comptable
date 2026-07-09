@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Save, BookOpen, Paperclip, AlertCircle } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Plus, Trash2, Save, BookOpen, Paperclip, AlertCircle, Search } from 'lucide-react';
 import { saveSimpleEntry } from './utils/pieceComptable';
 import { storeDocument } from './utils/docStore';
 import { getJournalKey } from './utils/journalKey';
 import { PCG_COMPLET as PCG_COMPTES } from './utils/pcgComplet';
 import AccountSelect from './components/AccountSelect';
+import TiersManager from './components/TiersManager';
 
 const PCG_LIBELLES = {
   '401000': 'Achat fournisseur',
@@ -58,7 +59,38 @@ const LIBELLES_FIXES = [
 
 const EMPTY_LINE = { compte: '', libelle: '', debit: '', credit: '' };
 
+const JOURNAL_TEMPLATES = {
+  OD: [
+    { compte: '', side: 'debit' },
+    { compte: '', side: 'credit' },
+  ],
+  ACH: [
+    { compte: '601000', side: 'debit' },
+    { compte: '401000', side: 'credit' },
+  ],
+  VNT: [
+    { compte: '411000', side: 'debit' },
+    { compte: '700000', side: 'credit' },
+  ],
+  BQ: [
+    { compte: '512000', side: 'debit' },
+  ],
+  CAI: [
+    { compte: '530000', side: 'debit' },
+  ],
+  AN: [
+    { compte: '101000', side: 'credit' },
+    { compte: '201000', side: 'debit' },
+  ],
+  INV: [
+    { compte: '310000', side: 'debit' },
+    { compte: '603000', side: 'credit' },
+  ],
+};
+
+
 export default function ManualEntryView({ formatCurrency }) {
+  const [showTiersManager, setShowTiersManager] = useState(false);
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
   const [numeroPiece, setNumeroPiece] = useState(`OD-${Date.now()}`);
   const [journal, setJournal] = useState('OD');
@@ -69,6 +101,60 @@ export default function ManualEntryView({ formatCurrency }) {
   const [docName, setDocName] = useState('');
 
   const [errors, setErrors] = useState({});
+  const compteRefs = useRef([]);
+  const addLineRef = useRef(null);
+  const prevJournalRef = useRef(journal);
+
+  // Appliquer le template de comptes à chaque changement de journal
+  useEffect(() => {
+    if (prevJournalRef.current === journal) return;
+    prevJournalRef.current = journal;
+    const tpl = JOURNAL_TEMPLATES[journal];
+    if (!tpl || !tpl.some(t => t.compte)) {
+      setLines([{ ...EMPTY_LINE }]);
+      return;
+    }
+    setLines(tpl.map(t => ({ compte: t.compte, libelle: findLibelle(t.compte), debit: t.side === 'debit' ? '' : '', credit: t.side === 'credit' ? '' : '' })));
+    setTimeout(() => { if (compteRefs.current[0]?.current) compteRefs.current[0].current.focus(); }, 50);
+  }, [journal]);
+
+  const addLine = () => {
+    setLines(prev => [...prev, { ...EMPTY_LINE }]);
+    setTimeout(() => {
+      const idx = compteRefs.current.length - 1;
+      if (compteRefs.current[idx]?.current) compteRefs.current[idx].current.focus();
+    }, 50);
+  };
+
+  useEffect(() => { addLineRef.current = addLine; }, [addLine]);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('manual-entry-form')?.requestSubmit();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.code === 'KeyL' && e.shiftKey) {
+        e.preventDefault();
+        addLineRef.current?.();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Insert') {
+        e.preventDefault();
+        addLineRef.current?.();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Delete') {
+        e.preventDefault();
+        setLines(prev => prev.length > 1 ? prev.slice(0, -1) : prev);
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
+  // Auto-focus first line compte on mount
+  useEffect(() => {
+    if (compteRefs.current[0]?.current) compteRefs.current[0].current.focus();
+  }, []);
 
   useEffect(() => {
     try {
@@ -87,8 +173,6 @@ export default function ManualEntryView({ formatCurrency }) {
     }
   }, []);
 
-  const addLine = () => setLines([...lines, { ...EMPTY_LINE }]);
-
   const removeLine = (i) => {
     if (lines.length <= 1) return;
     setLines(lines.filter((_, idx) => idx !== i));
@@ -98,8 +182,11 @@ export default function ManualEntryView({ formatCurrency }) {
     if (!code) return '';
     const exact = PCG_LIBELLES[code] || PCG_COMPTES[code];
     if (exact) return exact;
-    const prefix = Object.keys(PCG_COMPTES).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
-    if (prefix) return PCG_COMPTES[prefix];
+    const keys = Object.keys(PCG_COMPTES);
+    const byPrefix = keys.filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length);
+    if (byPrefix.length > 0) return PCG_COMPTES[byPrefix[0]];
+    const bySuffix = keys.filter(k => k.startsWith(code)).sort((a, b) => a.length - b.length);
+    if (bySuffix.length > 0) return PCG_COMPTES[bySuffix[0]];
     return '';
   };
 
@@ -118,6 +205,23 @@ export default function ManualEntryView({ formatCurrency }) {
   const totalDebit = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
   const totalCredit = lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
   const equilibre = Math.abs(totalDebit - totalCredit) < 0.01;
+  const diff = totalDebit - totalCredit;
+
+  const autoBalance = () => {
+    if (equilibre || !diff) return;
+    const amount = Math.abs(diff).toFixed(3);
+    if (diff > 0) {
+      // plus de débit → ajouter une ligne au crédit
+      setLines(prev => [...prev, { compte: '', libelle: '', debit: '', credit: amount }]);
+    } else {
+      // plus de crédit → ajouter une ligne au débit
+      setLines(prev => [...prev, { compte: '', libelle: '', debit: amount, credit: '' }]);
+    }
+    setTimeout(() => {
+      const idx = compteRefs.current.length - 1;
+      if (compteRefs.current[idx]?.current) compteRefs.current[idx].current.focus();
+    }, 50);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -159,11 +263,17 @@ export default function ManualEntryView({ formatCurrency }) {
     <div className="space-y-4">
       {/* En-tête */}
       <div className="glass-card rounded-2xl border border-slate-800 p-6 shadow-card space-y-4">
-        <div className="flex items-center gap-3 mb-2">
-          <BookOpen className="w-5 h-5 text-brand-400" />
-          <h3 className="text-sm font-bold text-slate-200">Nouvelle écriture manuelle</h3>
+        <div className="flex items-center justify-between gap-3 mb-2">
+          <div className="flex items-center gap-3">
+            <BookOpen className="w-5 h-5 text-brand-400" />
+            <h3 className="text-sm font-bold text-slate-200">Nouvelle écriture manuelle</h3>
+          </div>
+          <button onClick={() => setShowTiersManager(true)}
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-[10px] text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-colors">
+            <Search className="w-3 h-3" /> Codes Tiers / PCG
+          </button>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form id="manual-entry-form" onSubmit={handleSubmit} className="space-y-4">
           {/* Infos générales */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
@@ -200,6 +310,7 @@ export default function ManualEntryView({ formatCurrency }) {
                   className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300">
                   <Plus className="w-3 h-3" /> Ajouter une ligne
                 </button>
+                <span className="text-[9px] text-slate-600 hidden sm:inline">Ctrl+Shift+L</span>
               </div>
             </div>
             <div className="overflow-x-auto">
@@ -214,16 +325,18 @@ export default function ManualEntryView({ formatCurrency }) {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800/50 text-xs">
-                  {lines.map((l, i) => (
+                  {lines.map((l, i) => {
+                    if (!compteRefs.current[i]) compteRefs.current[i] = React.createRef();
+                    return (
                     <tr key={i}>
                       <td className="py-1.5 pr-2 min-w-[180px]">
-                        <AccountSelect value={l.compte}
+                        <AccountSelect value={l.compte} inputRef={compteRefs.current[i]}
                           onChange={(code, lib) => updateLine(i, 'compte', code)}
                           placeholder="ex: 401000" />
                       </td>
                       <td className="py-1.5 px-2">
                         <input type="text" value={l.libelle} onChange={e => updateLine(i, 'libelle', e.target.value)}
-                          placeholder="Libellé de l'écriture" list={`libelles-list-${i}`}
+                          placeholder="Libellé" list={`libelles-list-${i}`}
                           className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-brand-500" />
                         <datalist id={`libelles-list-${i}`}>
                           {libelleSuggestions.map((s, si) => (
@@ -239,6 +352,7 @@ export default function ManualEntryView({ formatCurrency }) {
                       <td className="py-1.5 px-2">
                         <input type="number" step="0.001" value={l.credit} onChange={e => updateLine(i, 'credit', e.target.value)}
                           placeholder="0.000"
+                          onKeyDown={e => { if ((e.key === 'Tab' || e.key === 'Enter') && i === lines.length - 1) { e.preventDefault(); addLine(); } }}
                           className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1.5 text-xs text-right text-slate-300 focus:outline-none focus:border-brand-500 font-mono" />
                       </td>
                       <td className="py-1.5 pl-2">
@@ -248,7 +362,8 @@ export default function ManualEntryView({ formatCurrency }) {
                         </button>
                       </td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -278,16 +393,22 @@ export default function ManualEntryView({ formatCurrency }) {
 
           {/* Totaux et soumission */}
           <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/50">
-            <div className="flex gap-4 text-xs">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
               <span>Total Débit: <strong className="text-danger-400">{formatCurrency(totalDebit)}</strong></span>
               <span>Total Crédit: <strong className="text-accent-400">{formatCurrency(totalCredit)}</strong></span>
               <span className={equilibre ? 'text-accent-400' : 'text-danger-400'}>
                 {equilibre ? '✓ Équilibré' : '✗ Déséquilibré'}
               </span>
+              {!equilibre && totalDebit + totalCredit > 0 && (
+                <button type="button" onClick={autoBalance}
+                  className="text-[10px] px-2 py-0.5 rounded-md bg-slate-800 border border-slate-700 text-slate-300 hover:text-brand-300 hover:border-brand-500/30 transition-colors">
+                  + Auto-balancer ({formatCurrency(Math.abs(diff))} en {diff > 0 ? 'Crédit' : 'Débit'})
+                </button>
+              )}
             </div>
             <button type="submit"
               className="flex items-center gap-1.5 px-4 py-2 bg-brand-500 hover:bg-brand-400 text-white text-xs font-bold rounded-xl transition-colors shadow-glow">
-              <Save className="w-3.5 h-3.5" /> Enregistrer l'écriture
+              <Save className="w-3.5 h-3.5" /> Enregistrer <span className="text-[9px] text-white/50 hidden sm:inline ml-1">Ctrl+Enter</span>
             </button>
           </div>
         </form>
@@ -308,6 +429,13 @@ export default function ManualEntryView({ formatCurrency }) {
         )}
       </div>
 
+      {showTiersManager && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="w-full max-w-lg bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl p-5 max-h-[80vh] overflow-y-auto">
+            <TiersManager onClose={() => setShowTiersManager(false)} />
+          </div>
+        </div>
+      )}
 
     </div>
   );

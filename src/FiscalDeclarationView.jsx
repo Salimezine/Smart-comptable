@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { generateFromJournal } from './accountingUtils';
 import { getJournalKey } from './utils/journalKey';
 import { generateProvisionIS } from './utils/pieceComptable';
-import { FileText, Calendar, AlertTriangle, Info, ChevronDown, ChevronRight, CheckCircle2, XCircle, Plus, Clock, Sparkles } from 'lucide-react';
+import { generateFilledPdf, downloadPdf } from './utils/pdfFiller';
+import { autoFillFromJournal } from './utils/autoFillService';
+import { computeTVAFromJournal } from './utils/tvaDeclarationService';
+import { FileText, Calendar, AlertTriangle, Info, ChevronDown, ChevronRight, CheckCircle2, XCircle, Plus, Clock, Sparkles, Download, Database, ExternalLink } from 'lucide-react';
+import { getScrapedSources } from './utils/taxKnowledge';
+import { loadFiscalData } from './utils/fiscalDataService';
 import { useToast } from './components/Toast';
 import { useConfirm } from './components/ConfirmModal';
 import Confetti from './components/Confetti';
@@ -110,6 +115,52 @@ function CountdownWidget({ nextEcheance }) {
   );
 }
 
+function DataScrapedView() {
+  const [sources, setSources] = useState([]);
+  const [openIdx, setOpenIdx] = useState(null);
+
+  useEffect(() => {
+    getScrapedSources().then ? getScrapedSources().then(setSources) : setSources(getScrapedSources());
+  }, []);
+
+  if (!sources.length) {
+    return (
+      <div className="p-6 bg-slate-950/35 border border-slate-800 rounded-2xl text-center">
+        <Database className="w-5 h-5 text-slate-600 mx-auto mb-2" />
+        <p className="text-[11px] text-slate-400">Les données fiscales seront automatiquement chargées après le prochain scrap automatique (lundi prochain).</p>
+        <p className="text-[10px] text-slate-500 mt-2">
+          <span className="inline-flex items-center gap-1"><Clock className="w-3 h-3" /> Prochain scrap: automatique chaque lundi via GitHub Actions</span>
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-2">
+      <p className="text-[10px] text-slate-500 mb-3">Sources disponibles ({sources.length}):</p>
+      {sources.map((src, i) => (
+        <div key={i} className="bg-slate-950/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+          <button
+            onClick={() => setOpenIdx(openIdx === i ? null : i)}
+            className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-slate-800/20 transition-colors"
+          >
+            <span className="text-xs font-bold text-slate-300 flex items-center gap-2">
+              <ExternalLink className="w-3 h-3 text-emerald-400" />
+              {src.source}
+            </span>
+            {openIdx === i ? <ChevronDown className="w-3.5 h-3.5 text-slate-500" /> : <ChevronRight className="w-3.5 h-3.5 text-slate-500" />}
+          </button>
+          {openIdx === i && (
+            <div className="px-4 pb-4 text-[10px] text-slate-400 leading-relaxed whitespace-pre-wrap max-h-48 overflow-y-auto border-t border-slate-800/40 pt-3">
+              {src.preview}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function FiscalDeclarationView({ companyDetails }) {
   const toast = useToast();
   const confirm = useConfirm();
@@ -205,6 +256,66 @@ export default function FiscalDeclarationView({ companyDetails }) {
     setConfettiActive(true);
   };
 
+  const [scrapedRates, setScrapedRates] = useState(null);
+  useEffect(() => {
+    loadFiscalData('impots').then(data => {
+      if (data && data.taux) setScrapedRates(data.taux);
+    });
+  }, []);
+
+  const [pdfLoading, setPdfLoading] = useState(false);
+  const [selectedPeriod, setSelectedPeriod] = useState(() => new Date().toISOString().slice(0, 7));
+
+  // Build period list from journal TVA months + current month
+  const availablePeriods = useMemo(() => {
+    const months = (computeTVAFromJournal() || []).filter(m => m.month && !m.month.includes('NaN'));
+    const set = new Set(months.map(m => m.month));
+    set.add(new Date().toISOString().slice(0, 7));
+    return [...set].sort();
+  }, [refreshKey]);
+
+  useEffect(() => {
+    if (availablePeriods.length > 0 && !availablePeriods.includes(selectedPeriod)) {
+      setSelectedPeriod(availablePeriods[availablePeriods.length - 1]);
+    }
+  }, [availablePeriods]);
+
+  async function handleDownloadDeclaration() {
+    setPdfLoading(true);
+    try {
+      const periode = selectedPeriod;
+
+      const sections = autoFillFromJournal(periode);
+      const hasData = sections !== null;
+
+      const nom = companyDetails?.name || companyDetails?.raison_sociale || '';
+      const mf = companyDetails?.matricule_fiscal || '';
+      const adresse = companyDetails?.adresse || '';
+
+      const guidedState = {
+        formulaire: 'mensuelle',
+        data: {
+          nom,
+          matriculeFiscal: mf,
+          adresse,
+          periode,
+          sections: sections || {},
+        },
+      };
+
+      const pdfBytes = await generateFilledPdf(guidedState, 'fr');
+      downloadPdf(pdfBytes, `declaration_mensuelle_${periode}_${nom.replace(/\s+/g, '_')}.pdf`);
+      if (hasData) {
+        toast.success('Déclaration PDF générée avec succès !');
+      } else {
+        toast.info('Aucune écriture avec comptes fiscaux trouvée pour cette période. Le PDF contient uniquement les informations de la société.');
+      }
+    } catch (err) {
+      toast.error('Erreur génération PDF: ' + err.message);
+    }
+    setPdfLoading(false);
+  }
+
   const getStatus = (dateStr) => {
     const d = new Date(dateStr);
     const timeDiff = d - now;
@@ -240,10 +351,27 @@ export default function FiscalDeclarationView({ companyDetails }) {
             <p className="text-xs text-slate-400 max-w-xl">
               Calcul et suivi automatique de la TVA, de l'impôt sur les sociétés (IS) et des retenues à la source (RS) en conformité avec la réglementation tunisienne.
             </p>
+            {useJournal && (
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                <select
+                  value={selectedPeriod}
+                  onChange={e => setSelectedPeriod(e.target.value)}
+                  className="px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs font-bold text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                >
+                  {availablePeriods.map(p => (
+                    <option key={p} value={p}>{p}</option>
+                  ))}
+                </select>
+                <button onClick={handleDownloadDeclaration} disabled={pdfLoading}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold shadow-lg hover:shadow-emerald-500/25 transition-all disabled:opacity-50">
+                  <Download className="w-3.5 h-3.5" /> {pdfLoading ? 'Génération...' : 'Télécharger Déclaration PDF'}
+                </button>
+              </div>
+            )}
           </div>
           
           {/* Quick stats totals */}
-          <div className="grid grid-cols-2 gap-4 shrink-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="p-3 bg-slate-950/40 border border-slate-800/80 rounded-2xl min-w-[120px]">
               <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">TVA Due</span>
               <p className="text-sm font-black text-amber-400 mt-0.5">{useJournal ? `${fmt(tvaDue)}` : '0,000'} DT</p>
@@ -326,9 +454,9 @@ export default function FiscalDeclarationView({ companyDetails }) {
 
           <div className="mt-5 p-3.5 bg-slate-950/40 border border-slate-800/60 rounded-2xl flex gap-2.5 items-start">
             <Info className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
-            <p className="text-[10px] text-slate-500 leading-normal">
-              La déclaration mensuelle doit être déposée au plus tard le <strong className="text-slate-400">20 de chaque mois</strong>. Les taux standards en vigueur en Tunisie sont de 7%, 13%, et 19%.
-            </p>
+              <p className="text-[10px] text-slate-500 leading-normal">
+                La déclaration mensuelle doit être déposée au plus tard le <strong className="text-slate-400">{scrapedRates?.echeances?.[0] || '20 de chaque mois'}</strong>. Les taux standards en vigueur en Tunisie sont de {scrapedRates?.tva_7?.taux || '7%'}, {scrapedRates?.tva_13?.taux || '13%'}, et {scrapedRates?.tva_19?.taux || '19%'}.
+              </p>
           </div>
         </div>
 
@@ -407,7 +535,7 @@ export default function FiscalDeclarationView({ companyDetails }) {
             <div className="p-3.5 bg-slate-950/40 border border-slate-800/60 rounded-2xl flex gap-2.5 items-start">
               <Info className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
               <p className="text-[10px] text-slate-500 leading-normal">
-                Taux de droit commun de <strong className="text-slate-400">25%</strong> (10% agriculture, 15% industrie/export, 20% commerce/services, 35% secteurs réglementés, 40% banques/assurances). Les acomptes provisionnels (30% de l'impôt de l'exercice précédent chacun) se payent au 6ème, 9ème, et 12ème mois de l'exercice.
+                Taux de droit commun de <strong className="text-slate-400">{scrapedRates?.is_25?.taux || '25%'}</strong> (10% agriculture, 15% industrie/export, 20% commerce/services, 35% secteurs réglementés, 40% banques/assurances). Les acomptes provisionnels (30% de l'impôt de l'exercice précédent chacun) se payent au 6ème, 9ème, et 12ème mois de l'exercice.
               </p>
             </div>
           </div>
@@ -462,6 +590,25 @@ export default function FiscalDeclarationView({ companyDetails }) {
             </div>
           </div>
         )}
+      </div>
+
+      {/* SCRAPED DATA SECTION */}
+      <div className="glass-card p-6 rounded-3xl border border-slate-800/80 bg-slate-900/10 shadow-lg backdrop-blur-md">
+        <div className="flex items-center justify-between mb-5 border-b border-slate-800/60 pb-4">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400">
+              <Database className="w-4 h-4" />
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-slate-200">Données Fiscales Automatiques</h3>
+              <p className="text-[10px] text-slate-500">Scrappées du portail impots.finances.gov.tn</p>
+            </div>
+          </div>
+          <span className="text-[9px] font-bold px-2 py-0.5 bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+            AUTO
+          </span>
+        </div>
+        <DataScrapedView />
       </div>
 
       {!useJournal && (

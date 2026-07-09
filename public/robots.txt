@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://salimezine.github.io/Smart-comptable/sitemap.xml

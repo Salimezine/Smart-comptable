@@ -27,6 +27,19 @@ const CATEGORIES_SCE = {
 
 let _worker = null;
 let _workerBusy = false;
+let _cancelRequested = false;
+
+export function cancelScan() {
+  _cancelRequested = true;
+}
+
+function checkCancel() {
+  if (_cancelRequested) {
+    _cancelRequested = false;
+    _workerBusy = false;
+    throw new Error('Scan annulé');
+  }
+}
 
 function getBasePath() {
   return window.location.pathname.startsWith('/Smart-comptable/')
@@ -517,9 +530,11 @@ async function doOcr(input, onProgress, isPdfPage = false) {
   const TIMEOUT_MS = 240000;
   let worker;
 
+  checkCancel();
   onProgress?.(12, 'Initialisation OCR...');
   worker = await getWorker(onProgress);
 
+  checkCancel();
   onProgress?.(20, 'Reconnaissance en cours...');
   const result = await Promise.race([
     worker.recognize(input).catch(err => { throw new Error('Reconnaissance échouée: ' + (err.message || err)); }),
@@ -665,13 +680,20 @@ async function scanFacture(file, onProgress) {
   let preprocessed = file;
   let usedFallback = false;
   try {
+    checkCancel();
     onProgress?.(2, 'Prétraitement image...');
     preprocessed = await preprocessImage(file, onProgress);
   } catch (err) {
+    if (_cancelRequested) {
+      _cancelRequested = false;
+      _workerBusy = false;
+      return { error: 'Scan annulé', champs_manquants: ['all'], annule: true };
+    }
     // Preprocessing échoué → on continue avec l'original
     preprocessed = file;
   }
 
+  checkCancel();
   onProgress?.(10, 'Lancement OCR...');
   let result = await doOcr(preprocessed, onProgress, false).catch(() => null);
 

@@ -15,6 +15,12 @@
   <meta name="twitter:description" content="Automatisez TVA, IRPP, IS, paie et bilan SCR. Conforme fiscalité tunisienne 2025." />
   <link rel="canonical" href="https://salimezine.github.io/Smart-comptable/" />
   <link rel="icon" type="image/png" href="https://salimezine.github.io/Smart-comptable/logo.png" />
+  <link rel="manifest" href="/Smart-comptable/manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Smart Compta" />
+  <link rel="apple-touch-icon" href="/Smart-comptable/logo.png" />
+  <script>if('serviceWorker'in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/Smart-comptable/sw.js',{scope:'/Smart-comptable/'})})}</script>
   
   <script type="application/ld+json">
   {
@@ -1459,8 +1465,6 @@
 
   <!-- ===== JAVASCRIPT ===== -->
   <script>
-    // Unregister any stale service worker so navigation to app.html isn't intercepted by old cache
-    if ('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(r => r.forEach(reg => reg.unregister()));
     // Prevent browser scroll restoration (also fires on BFCache restore)
     window.addEventListener('pageshow', (e) => {
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';

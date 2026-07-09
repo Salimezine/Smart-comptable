@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Bell, X, AlertTriangle, FileText, Shield, Database, Check, Clock } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Bell, X, AlertTriangle, FileText, Shield, Database, Check } from 'lucide-react';
 import { isBackupOverdue, getLastBackupDate } from '../utils/security/backupManager';
 
 function getNotifications({ invoices = [], expenses = [] }) {
@@ -82,14 +82,53 @@ const TYPE_STYLES = {
   success: { dot: 'bg-emerald-400', bg: 'bg-emerald-500/8 border-emerald-500/20', icon: 'text-emerald-400 bg-emerald-500/15' },
 };
 
+function timeAgo(iso) {
+  const diff = Date.now() - new Date(iso).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return "à l'instant";
+  if (mins < 60) return `il y a ${mins} min`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `il y a ${hrs}h`;
+  const days = Math.floor(hrs / 24);
+  if (days < 7) return `il y a ${days}j`;
+  return `il y a ${Math.floor(days / 7)} sem`;
+}
+
+const DISMISS_EXPIRY = 24 * 3600000; // 24h
+
+function isDismissedValid(entry) {
+  if (typeof entry === 'string') return Date.now() - 0 < DISMISS_EXPIRY; // old format: expired immediately
+  return Date.now() - entry.at < DISMISS_EXPIRY;
+}
+
 export default function NotificationCenter({ invoices = [], expenses = [], onNavigate }) {
   const [open, setOpen] = useState(false);
   const [dismissed, setDismissed] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('sc_dismissed_notifs') || '[]'); } catch { return []; }
+    try {
+      const raw = JSON.parse(localStorage.getItem('sc_dismissed_notifs') || '[]');
+      return raw.filter(isDismissedValid);
+    } catch { return []; }
   });
+  const [tick, setTick] = useState(0);
   const ref = useRef(null);
 
-  const notifications = getNotifications({ invoices, expenses }).filter(n => !dismissed.includes(n.id));
+  // Auto-refresh notifications every 30s
+  useEffect(() => {
+    const id = setInterval(() => setTick(t => t + 1), 30000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Clean expired dismissals on mount
+  useEffect(() => {
+    const raw = JSON.parse(localStorage.getItem('sc_dismissed_notifs') || '[]');
+    const valid = raw.filter(isDismissedValid);
+    if (valid.length !== raw.length) {
+      localStorage.setItem('sc_dismissed_notifs', JSON.stringify(valid));
+      setDismissed(valid);
+    }
+  }, []);
+
+  const notifications = getNotifications({ invoices, expenses }).filter(n => !dismissed.some(d => (d.id || d) === n.id));
   const count = notifications.length;
 
   // Close on outside click
@@ -101,13 +140,14 @@ export default function NotificationCenter({ invoices = [], expenses = [], onNav
   }, [open]);
 
   const dismiss = (id) => {
-    const next = [...dismissed, id];
+    const next = [...dismissed, { id, at: Date.now() }];
     setDismissed(next);
     localStorage.setItem('sc_dismissed_notifs', JSON.stringify(next));
   };
 
   const dismissAll = () => {
-    const next = [...dismissed, ...notifications.map(n => n.id)];
+    const now = Date.now();
+    const next = [...dismissed, ...notifications.map(n => ({ id: n.id, at: now }))];
     setDismissed(next);
     localStorage.setItem('sc_dismissed_notifs', JSON.stringify(next));
     setOpen(false);
@@ -139,7 +179,7 @@ export default function NotificationCenter({ invoices = [], expenses = [], onNav
       {/* Panel */}
       {open && (
         <div
-          className="absolute top-full right-0 mt-2 w-80 rounded-2xl border border-slate-800/60 overflow-hidden z-50"
+          className="fixed sm:absolute top-14 sm:top-full left-2 right-2 sm:left-auto sm:right-0 mt-0 sm:mt-2 sm:w-80 rounded-2xl border border-slate-800/60 overflow-hidden z-50"
           style={{
             background: 'rgba(8, 12, 28, 0.95)',
             backdropFilter: 'blur(20px)',
@@ -158,11 +198,16 @@ export default function NotificationCenter({ invoices = [], expenses = [], onNav
                 </span>
               )}
             </div>
-            {count > 0 && (
-              <button onClick={dismissAll} className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors flex items-center gap-1">
-                <Check className="w-3 h-3" /> Tout lire
+            <div className="flex items-center gap-2">
+              {count > 0 && (
+                <button onClick={dismissAll} className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors flex items-center gap-1">
+                  <Check className="w-3 h-3" /> Tout lire
+                </button>
+              )}
+              <button onClick={() => setOpen(false)} className="p-1 rounded-md text-slate-500 hover:text-slate-300 hover:bg-slate-800/50 transition-colors" title="Fermer">
+                <X className="w-3.5 h-3.5" />
               </button>
-            )}
+            </div>
           </div>
 
           {/* Notifications list */}
@@ -192,12 +237,13 @@ export default function NotificationCenter({ invoices = [], expenses = [], onNav
                         <p className="text-xs font-bold text-slate-200 leading-tight">{notif.title}</p>
                         <button
                           onClick={() => dismiss(notif.id)}
-                          className="shrink-0 opacity-0 group-hover:opacity-100 w-4 h-4 flex items-center justify-center text-slate-600 hover:text-slate-400 transition-all"
+                          className="shrink-0 opacity-40 hover:opacity-100 w-4 h-4 flex items-center justify-center text-slate-400 hover:text-white transition-all"
                         >
                           <X className="w-3 h-3" />
                         </button>
                       </div>
                       <p className="text-[10px] text-slate-500 mt-0.5 leading-relaxed">{notif.message}</p>
+                      <p className="text-[8px] text-slate-700 mt-0.5">{timeAgo(notif.timestamp)}</p>
                       {notif.action && (
                         <button
                           onClick={() => handleAction(notif.action)}

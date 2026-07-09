@@ -3,7 +3,7 @@ import { FileText, CheckCircle2, XCircle, Clock, RefreshCw, Send, AlertTriangle,
 import SectionHeader from '../components/SectionHeader';
 import KpiCard from '../components/KpiCard';
 import { generateTEIFXML, validateTEIF, downloadTEIFXML } from '../utils/teifGenerator';
-import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission, sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus } from '../utils/ttnWorkflow';
+import { sendToTTN, handleTTNResponse, downloadTTNXml, confirmTTNTransmission, sendToMiddleware, mapInvoiceToMiddlewareDoc, pollMiddlewareStatus, resolveAutoMode } from '../utils/ttnWorkflow';
 import { getTTNMode, setTTNMode } from '../teif';
 import * as api from '../utils/teifSupabaseService';
 import { logSubmission } from '../utils/submissionAudit';
@@ -50,6 +50,12 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
     const callback = params.get('teif_callback');
     if (callback) {
       window.history.replaceState({}, '', window.location.pathname);
+      // Auto-vérifier le statut des factures en attente
+      const entries = Object.entries(localMap);
+      const pending = entries.filter(([_, v]) => v.status === 'transmitted');
+      if (pending.length > 0) {
+        setPollingInvoice(Date.now());
+      }
     }
   }, []);
 
@@ -202,7 +208,18 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
             }],
       };
 
-      if (ttnMode === 'middleware') {
+      let effectiveMode = ttnMode;
+      if (ttnMode === 'auto') {
+        const middlewareConfig = {
+          middlewareUrl: companyDetails?.middlewareUrl || '',
+          middlewareToken: companyDetails?.middlewareToken || '',
+        };
+        const { resolved, reason } = await resolveAutoMode(middlewareConfig);
+        effectiveMode = resolved;
+        logSubmission({ invoiceNumber: teifInvoice.id, action: 'auto_resolve', status: resolved, mode: 'auto', details: reason, companyId });
+      }
+
+      if (effectiveMode === 'middleware') {
         // Middleware flow: send invoice JSON to middleware API
         const doc = mapInvoiceToMiddlewareDoc(teifInvoice, companyDetails);
         const middlewareConfig = {
@@ -211,9 +228,19 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
         };
         const response = await sendToMiddleware(doc, middlewareConfig);
 
-        if (response.status === 'pending' && response.signatureUrl) {
-          // Open signature URL for the user to sign via NGSign
-          window.open(response.signatureUrl, '_blank');
+        if (response.status === 'accepted') {
+          // Automatic flow — worker signed + submitted to TTN directly
+          const ttnId = response.ttnId || `MW-${new Date().getFullYear()}-${Date.now().toString(36).toUpperCase()}`;
+          setStatus(invoice, 'accepted', { ttnId });
+          logSubmission({ invoiceNumber: doc.header.documentNumber, action: 'accept', status: 'accepted', mode: 'middleware', details: `Signé et transmis TTN (ID: ${ttnId})`, companyId });
+          onAddPieceComptable && onAddPieceComptable({
+            id: `piece-${Date.now()}`, ttnId,
+            date: teifInvoice.dateEmission,
+            journal: 'VNT', reference: teifInvoice.id,
+            total: doc.totals.totalTTC.amount,
+          });
+          setModal({ title: 'Facture signée et transmise TTN ✓', message: `Document ${doc.header.documentNumber} signé et accepté (ID: ${ttnId}).`, type: 'success' });
+        } else if (response.status === 'pending' && response.signatureUrl) {
           // Set status to transmitted while waiting for signature
           setStatus(invoice, 'transmitted', {
             signatureUUID: response.signatureUUID,
@@ -225,11 +252,11 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           setPollingInvoice(Date.now());
           setModal({
             title: 'Document envoyé au middleware ✓',
-            message: response.message || 'Le document a été envoyé pour signature. Veuillez signer dans le nouvel onglet.',
+            message: response.message || 'Le document a été envoyé pour signature. Cliquez sur le bouton ci-dessous pour signer.',
             instructions: [
-              '1. Un onglet s\'est ouvert pour la signature via NGSign',
-              '2. Après signature, revenez ici et cliquez sur "Vérifier le statut"',
-              '3. Le middleware soumettra automatiquement à TTN après signature',
+              '1. Cliquez sur "Ouvrir la page de signature" pour signer via NGSign',
+              '2. Après signature, le statut sera vérifié automatiquement',
+              '3. Le middleware soumettra à TTN après signature',
             ],
             type: 'mwPending',
             signatureUrl: response.signatureUrl,
@@ -267,7 +294,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
       }
 
       const response = await sendToTTN(gen.xml, {
-        ttnMode,
+        ttnMode: effectiveMode,
         invoiceId: teifInvoice.id,
       });
 
@@ -287,12 +314,12 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           setModal({ title: 'Facture acceptée TTN ✓', message: `ID TTN: ${handled.ttnId}`, type: 'success' });
         } else {
           setStatus(invoice, 'rejected');
-          logSubmission({ invoiceNumber: teifInvoice.id, action: 'reject', status: 'rejected', mode: ttnMode, details: (handled.errors || ['Rejeté']).join('; '), companyId });
+          logSubmission({ invoiceNumber: teifInvoice.id, action: 'reject', status: 'rejected', mode: effectiveMode, details: (handled.errors || ['Rejeté']).join('; '), companyId });
           setModal({ title: 'Rejet TTN', errors: handled.errors || ['Rejeté'], type: 'error' });
         }
       } else if (response.status === 'manual') {
         setStatus(invoice, 'generated', { xml: gen.xml });
-        logSubmission({ invoiceNumber: teifInvoice.id, action: 'generate', status: 'generated', mode: ttnMode, details: 'XML TEIF généré — transmission manuelle requise', companyId });
+        logSubmission({ invoiceNumber: teifInvoice.id, action: 'generate', status: 'generated', mode: effectiveMode, details: 'XML TEIF généré — transmission manuelle requise', companyId });
         setModal({
           title: 'XML TEIF généré ✓',
           message: response.message,
@@ -536,6 +563,7 @@ export default function TeifDeclarationView({ invoices: localInvoices, companyDe
           </div>
           <select value={ttnMode} onChange={e => { setTTNMode(e.target.value); setTtnModeState(e.target.value); }}
             className="bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-[10px] font-bold text-slate-300">
+            <option value="auto">Mode Auto</option>
             <option value="dev">Mode Sandbox</option>
             <option value="production">Mode Production</option>
             <option value="middleware">Mode Middleware</option>

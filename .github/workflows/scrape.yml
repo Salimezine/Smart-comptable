@@ -1,0 +1,67 @@
+name: Auto Scrape Fiscal Data
+
+on:
+  schedule:
+    # Run every Monday at 6:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    # Allow manual trigger with custom URL
+    inputs:
+      source:
+        description: 'Source to scrape (all, impots, axiane, custom)'
+        default: 'all'
+        required: false
+      custom_url:
+        description: 'Custom URL (only if source=custom)'
+        required: false
+      custom_label:
+        description: 'Label for custom URL'
+        required: false
+      deep_features:
+        description: 'Deep crawl feature pages'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install crawl4ai
+        run: |
+          pip install crawl4ai
+          python -m playwright install chromium
+
+      - name: Scrape all sources
+        if: ${{ github.event.inputs.source == '' || github.event.inputs.source == 'all' }}
+        run: python scripts/fiscal_scraper.py --source all
+
+      - name: Scrape specific source
+        if: ${{ github.event.inputs.source != '' && github.event.inputs.source != 'all' && github.event.inputs.source != 'custom' }}
+        run: python scripts/fiscal_scraper.py --source ${{ github.event.inputs.source }}
+
+      - name: Scrape custom URL
+        if: ${{ github.event.inputs.source == 'custom' }}
+        run: python scripts/fiscal_scraper.py --url "${{ github.event.inputs.custom_url }}" --label "${{ github.event.inputs.custom_label }}"
+
+      - name: Deep crawl features
+        if: ${{ github.event.inputs.deep_features == 'true' }}
+        run: python scripts/fiscal_scraper.py --features
+
+      - name: Commit scraped data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git diff --staged --quiet || git commit -m "scrape: auto-update fiscal data [skip ci]"
+          git push

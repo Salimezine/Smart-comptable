@@ -9,3 +9,10 @@ API_KEY = "smart-comptable-teif-2026"
 
 # SECRETS (set with `wrangler secret put <NAME>`):
 # SUPABASE_SERVICE_KEY = "<supabase_service_role_key>"
+# TUNTRUST_PFX = "<base64 of your TunTrust .p12/.pfx file>"
+# TUNTRUST_PFX_PASSWORD = "<pfx password>"
+# TTN_SOAP_URL = "https://sites.impots.finances.gov.tn/efattura/WSFatturaServices.svc"
+# TTN_USERNAME = "<ttn_username>"     # matricule fiscal (optionnel)
+# TTN_PASSWORD = "<ttn_password>"     # mot de passe portail (optionnel)
+# TTN_RELAY_URL = "https://your-vps-ip:3000/api/ttn-submit"   # VPS relay HTTP
+# TTN_RELAY_TOKEN = "<auth_token>"                             # si AUTH_TOKEN configuré dans le relay

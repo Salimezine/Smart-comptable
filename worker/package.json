@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "smart-comptable-teif-api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "node-forge": "^1.3.1"
+  }
+}

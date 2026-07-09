@@ -105,7 +105,7 @@ export default function AccountingCRMView({ invoices = [], expenses = [], format
                   </div>
                   <button onClick={() => setSelectedEntity(null)} className="text-xs text-brand-400 hover:text-brand-300 font-semibold">Retour</button>
                 </div>
-                <div className="grid grid-cols-3 gap-4 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                   <div className="p-3 rounded-xl bg-slate-800/40 border border-slate-700/50 text-center">
                     <p className="text-[10px] text-slate-400">Total facturé</p>
                     <p className="text-lg font-extrabold text-emerald-400">{fmt(selectedEntity.totalInvoiced)}</p>

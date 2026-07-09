@@ -279,14 +279,14 @@ export function validateTEIF(xmlString) {
     const mf = mfMatch ? mfMatch[1].trim() : '';
     if (!mf) {
       errors.push('MF fournisseur manquant → Allez dans Configuration > Matricule Fiscal (MF) et saisissez votre MF (ex: 1234567/X/A/000)');
-    } else if (!/^\d{6,7}\/[A-Z]/.test(mf)) {
-      errors.push(`MF fournisseur "${mf}" invalide — format attendu: 1234567/X/A/000 (7 chiffres + barre + lettre + barre + lettre + barre + 3 chiffres)`);
+    } else if (!/^\d{6,7}\/[A-Z](\/[A-Z]){0,2}\/\d{3}$/.test(mf)) {
+      errors.push(`MF fournisseur "${mf}" invalide — format attendu: 1234567/X/A/000 ou 1234567/X/A/M/000 (7 chiffres + barres + 1-3 lettres + barre + 3 chiffres)`);
     }
 
     const clientMfMatch = xmlString.match(/<cbc:ID schemeID="MF_CLIENT">([^<]+)<\/cbc:ID>/);
     const clientMf = clientMfMatch ? clientMfMatch[1].trim() : '';
-    if (clientMf && !/^\d{6,7}\/[A-Z]/.test(clientMf)) {
-      errors.push(`MF client "${clientMf}" invalide — format attendu: 1234567/X/A/000`);
+    if (clientMf && !/^\d{6,7}\/[A-Z](\/[A-Z]){0,2}\/\d{3}$/.test(clientMf)) {
+      errors.push(`MF client "${clientMf}" invalide — format attendu: 1234567/X/A/000 ou 1234567/X/A/M/000`);
     }
 
     const ttcMatch = xmlString.match(/<cbc:PayableAmount[^>]*>([^<]+)<\/cbc:PayableAmount>/);
