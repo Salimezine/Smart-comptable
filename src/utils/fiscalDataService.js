@@ -29,7 +29,7 @@ export async function loadFiscalData(source = 'impots') {
 
 async function loadFallbackFiscalData() {
   try {
-    const resp = await fetch(DATA_BASE + '_fallback_fiscal.json');
+    const resp = await fetch(DATA_BASE + 'fallback_fiscal.json');
     if (!resp.ok) return null;
     cachedFiscalData = await resp.json();
     lastLoad = Date.now();

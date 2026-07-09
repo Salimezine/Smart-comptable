@@ -426,10 +426,10 @@ def generate_fallback_fiscal():
             'La TFP (1% salaires) et FOPROLOS (1% employeur) sont dus mensuellement par tout employeur.',
         ],
     }
-    path = os.path.join(OUTPUT_DIR, '_fallback_fiscal.json')
+    path = os.path.join(OUTPUT_DIR, 'fallback_fiscal.json')
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"  📋 Fallback fiscal data → _fallback_fiscal.json")
+    print(f"  📋 Fallback fiscal data → fallback_fiscal.json")
     return data
 
 
