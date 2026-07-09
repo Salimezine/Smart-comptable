@@ -25,11 +25,19 @@ SOURCES = {
         'url': 'https://www.impots.finances.gov.tn',
         'label': 'Portail Fiscal Tunisien',
     },
+    'wikipedia_fiscalite': {
+        'url': 'https://fr.wikipedia.org/wiki/Fiscalit%C3%A9_en_Tunisie',
+        'label': 'Wikipedia - Fiscalité Tunisienne',
+    },
+    'wikipedia_tva': {
+        'url': 'https://fr.wikipedia.org/wiki/Taxe_sur_la_valeur_ajout%C3%A9e_en_Tunisie',
+        'label': 'Wikipedia - TVA Tunisie',
+    },
     'axiane': {
         'url': 'https://www.axiane.tn',
         'label': 'Axiane Tunisie',
     },
-    # Add more competitors here
+    # Add more sources here
 }
 
 
@@ -253,6 +261,95 @@ async def crawl_competitor_features(url, label, output_key):
         return data
 
 
+def scrape_wikipedia_fallback(output_key, url, label):
+    """Fallback scraper using requests+BeautifulSoup for Wikipedia pages."""
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+        headers = {'User-Agent': 'SmartComptable/1.0 (fiscal data collector)'}
+        resp = requests.get(url, headers=headers, timeout=20)
+        if resp.status_code != 200:
+            print(f"  ⚠️ {label}: HTTP {resp.status_code}")
+            return False
+
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        # Remove unwanted elements
+        for el in soup(['script', 'style', 'nav', 'footer', 'header']):
+            el.decompose()
+
+        content = soup.find('div', {'id': 'mw-content-text'}) or soup.find('div', {'class': 'mw-content-ltr'}) or soup
+        text = content.get_text(separator='\n', strip=True)
+
+        # Save markdown
+        md_path = os.path.join(OUTPUT_DIR, f'{output_key}.md')
+        with open(md_path, 'w', encoding='utf-8') as f:
+            f.write(text)
+        print(f"  ✅ {label}: {len(text)} chars → {output_key}.md")
+
+        # Extract fiscal data
+        fiscal = extract_fiscal_data(text, output_key)
+        fiscal_path = os.path.join(OUTPUT_DIR, f'{output_key}_fiscal.json')
+        with open(fiscal_path, 'w', encoding='utf-8') as f:
+            json.dump(fiscal, f, ensure_ascii=False, indent=2)
+        print(f"  📊 Fiscal data extracted → {output_key}_fiscal.json")
+
+        # Save meta
+        meta = {
+            'title': soup.title.string if soup.title else label,
+            'description': '',
+            'url': url,
+            'crawled_at': date.today().isoformat(),
+            'markdown_length': len(text),
+            'method': 'requests+bs4',
+        }
+        meta_path = os.path.join(OUTPUT_DIR, f'{output_key}_meta.json')
+        with open(meta_path, 'w', encoding='utf-8') as f:
+            json.dump(meta, f, ensure_ascii=False, indent=2)
+        print(f"  📄 Meta saved → {output_key}_meta.json")
+        return True
+    except Exception as e:
+        print(f"  ⚠️ Wikipedia fallback failed: {e}")
+        return False
+
+
+def generate_fallback_fiscal():
+    """Generate default fiscal data so the app always has something."""
+    data = {
+        'generated_at': date.today().isoformat(),
+        'taux': {
+            'tva_19': {'taux': '19%', 'label': 'TVA taux normal', 'type': 'tva'},
+            'tva_7': {'taux': '7%', 'label': 'TVA taux réduit (transport, agriculture, santé)', 'type': 'tva'},
+            'tva_13': {'taux': '13%', 'label': 'TVA hôtellerie, restauration, tourisme', 'type': 'tva'},
+            'is_25': {'taux': '25%', 'label': 'IS taux commun', 'type': 'is'},
+            'is_15': {'taux': '15%', 'label': 'IS industrie/export', 'type': 'is'},
+            'is_10': {'taux': '10%', 'label': 'IS agriculture', 'type': 'is'},
+            'irpp': {'taux': '0-40%', 'label': 'Barème IRPP (tranches 0%, 15%, 25%, 30%, 33%, 36%, 38%, 40%)', 'type': 'irpp'},
+            'rs': {'taux': '1.5% à 15%', 'label': 'Retenues à la source (honoraires, loyers, prestations)', 'type': 'rs'},
+            'tfp': {'taux': '1% salaires + 1% employeur', 'label': 'Taxe Formation Professionnelle + FOPROLOS', 'type': 'tfp'},
+            'tcl': {'taux': '10% TVA due', 'label': 'Taxe Collectivités Locales', 'type': 'tcl'},
+            'cnss': {'taux': '13.57% salarial + 16.57% patronal', 'label': 'Cotisations CNSS', 'type': 'cnss'},
+        },
+        'echeances': [
+            {'type': 'tva', 'defaut': '15 du mois suivant'},
+            {'type': 'is', 'defaut': '25 juin/septembre/décembre (acomptes), 31 mars (solde)'},
+            {'type': 'rs', 'defaut': '15 du mois suivant'},
+            {'type': 'cnss', 'defaut': '15 du mois suivant'},
+        ],
+        'informations': [
+            'La TVA en Tunisie est de 19% (taux normal), 7% (réduit) et 13% (hôtellerie). La déclaration est mensuelle ou trimestrielle.',
+            'L\'Impôt sur les Sociétés (IS) est de 25% pour le taux commun, 15% pour l\'industrie/export, 10% pour l\'agriculture.',
+            'L\'IRPP est calculé par tranches: 0% jusqu\'à 5000 DT, puis 15%, 25%, 30%, 33%, 36%, 38%, 40% au-delà de 70000 DT.',
+            'Les retenues à la source (RS) varient de 1.5% à 15% selon le type de prestation.',
+            'La TFP (1% salaires) et FOPROLOS (1% employeur) sont dus mensuellement par tout employeur.',
+        ],
+    }
+    path = os.path.join(OUTPUT_DIR, '_fallback_fiscal.json')
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  📋 Fallback fiscal data → _fallback_fiscal.json")
+    return data
+
+
 async def main():
     parser = argparse.ArgumentParser(description='Smart Comptable Fiscal Scraper')
     parser.add_argument('--source', choices=list(SOURCES.keys()) + ['all'],
@@ -287,7 +384,14 @@ async def main():
         if args.features:
             await crawl_competitor_features(info['url'], info['label'], key)
         else:
-            await crawl_url(info['url'], info['label'], key)
+            result = await crawl_url(info['url'], info['label'], key)
+            # If crawl4ai returned too little data (likely blocked), try Wikipedia fallback
+            if (result is None or len(result.markdown.strip()) < 100) and 'wikipedia' in info['url']:
+                print(f"  ↳ crawl4ai returned {len(result.markdown.strip()) if result else 0} chars, trying requests+BS4 fallback...")
+                scrape_wikipedia_fallback(key, info['url'], info['label'])
+
+    # Always generate fallback fiscal data (ensures app always has baseline rates)
+    generate_fallback_fiscal()
 
     # Generate a combined index
     index = {

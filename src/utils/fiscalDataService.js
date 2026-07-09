@@ -13,9 +13,26 @@ export async function loadFiscalData(source = 'impots') {
   if (cachedFiscalData && now - lastLoad < CACHE_TTL) return cachedFiscalData;
   try {
     const resp = await fetch(DATA_BASE + source + '_fiscal.json');
+    if (!resp.ok) return await loadFallbackFiscalData();
+    const data = await resp.json();
+    // If empty (scraped site blocked), fall back to default
+    if (!data.taux || Object.keys(data.taux).length === 0) {
+      return await loadFallbackFiscalData();
+    }
+    cachedFiscalData = data;
+    lastLoad = now;
+    return cachedFiscalData;
+  } catch {
+    return await loadFallbackFiscalData();
+  }
+}
+
+async function loadFallbackFiscalData() {
+  try {
+    const resp = await fetch(DATA_BASE + '_fallback_fiscal.json');
     if (!resp.ok) return null;
     cachedFiscalData = await resp.json();
-    lastLoad = now;
+    lastLoad = Date.now();
     return cachedFiscalData;
   } catch {
     return null;
