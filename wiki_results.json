@@ -1,0 +1,106 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "sroffset": 10,
+    "continue": "-||"
+  },
+  "query": {
+    "searchinfo": {
+      "totalhits": 86,
+      "suggestion": "tva tunisie impact",
+      "suggestionsnippet": "tva tunisie <em>impact</em>"
+    },
+    "search": [
+      {
+        "ns": 0,
+        "title": "Taxe sur la valeur ajoutée",
+        "pageid": 26607,
+        "size": 52840,
+        "wordcount": 5538,
+        "snippet": "direction générale des <span class=\"searchmatch\">Impôts</span>. Dans son ouvrage de référence La <span class=\"searchmatch\">TVA</span>, clef de la productivité, il présente la <span class=\"searchmatch\">TVA</span> comme un <span class=\"searchmatch\">impôt</span> moderne sur la valeur ajoutée",
+        "timestamp": "2026-06-24T15:59:37Z"
+      },
+      {
+        "ns": 0,
+        "title": "Histoire de l'impôt en France",
+        "pageid": 3444203,
+        "size": 238916,
+        "wordcount": 30669,
+        "snippet": "l&#039;État, grâce à une assiette de plus en plus large, symbolisée par la <span class=\"searchmatch\">TVA</span>, <span class=\"searchmatch\">impôt</span> pensé en France et adopté depuis par de nombreux pays en raison de son",
+        "timestamp": "2026-05-03T02:40:15Z"
+      },
+      {
+        "ns": 0,
+        "title": "Liste des pays par taux d'imposition",
+        "pageid": 14497469,
+        "size": 91938,
+        "wordcount": 3939,
+        "snippet": "principaux types <span class=\"searchmatch\">d&#039;impôts</span> : <span class=\"searchmatch\">impôt</span> sur les sociétés, <span class=\"searchmatch\">impôt</span> sur le revenu des particuliers et les principaux <span class=\"searchmatch\">impôts</span> sur la consommation, notamment la <span class=\"searchmatch\">TVA</span>, la TPS",
+        "timestamp": "2026-06-29T10:43:08Z"
+      },
+      {
+        "ns": 0,
+        "title": "Fiscalité du Burkina Faso",
+        "pageid": 9300062,
+        "size": 37680,
+        "wordcount": 4682,
+        "snippet": "les principaux <span class=\"searchmatch\">impôts</span> et taxes du Burkina Faso. La Taxe sur la valeur ajoutée est un <span class=\"searchmatch\">impôt</span> indirect sur la consommation ou encore un <span class=\"searchmatch\">impôt</span> sur la dépense",
+        "timestamp": "2026-05-07T11:23:08Z"
+      },
+      {
+        "ns": 0,
+        "title": "Fonds de commerce",
+        "pageid": 679528,
+        "size": 16082,
+        "wordcount": 2205,
+        "snippet": "notion juridique existant dans certains pays comme la France, l&#039;Algérie, la <span class=\"searchmatch\">Tunisie</span>, le Maroc, la Belgique, le Luxembourg et le Québec. Il est défini comme",
+        "timestamp": "2026-06-05T19:18:50Z"
+      },
+      {
+        "ns": 0,
+        "title": "Mediapart",
+        "pageid": 3102495,
+        "size": 95201,
+        "wordcount": 9021,
+        "snippet": "« transparence » de Mediapart dans le paiement de sa <span class=\"searchmatch\">TVA</span> et estime dès lors que la volonté d’éluder <span class=\"searchmatch\">l’impôt</span> n’est pas établie. En conséquence, il annule la",
+        "timestamp": "2026-07-03T12:59:33Z"
+      },
+      {
+        "ns": 0,
+        "title": "Relations entre la France et Monaco",
+        "pageid": 7230918,
+        "size": 9249,
+        "wordcount": 871,
+        "snippet": "sont membres d&#039;une union douanière et de l&#039;espace Schengen. Au regard de la <span class=\"searchmatch\">TVA</span>, la France et Monaco constituent un ensemble fiscal depuis les accords du",
+        "timestamp": "2026-04-03T18:12:23Z"
+      },
+      {
+        "ns": 0,
+        "title": "Économie du Maroc",
+        "pageid": 145665,
+        "size": 139361,
+        "wordcount": 14230,
+        "snippet": "ajoutée (<span class=\"searchmatch\">TVA</span>) est la première recette du budget de l&#039;État marocain, devant <span class=\"searchmatch\">l’impôt</span> sur les sociétés (IS) et <span class=\"searchmatch\">l’impôt</span> sur le revenu (IR) <span class=\"searchmatch\">L&#039;impôt</span> sur les",
+        "timestamp": "2026-06-10T10:51:19Z"
+      },
+      {
+        "ns": 0,
+        "title": "Société nationale maritime Corse-Méditerranée",
+        "pageid": 123869,
+        "size": 128179,
+        "wordcount": 12825,
+        "snippet": "la <span class=\"searchmatch\">Tunisie</span> et toute la Méditerranée orientale. Il s’agit, d’une part, de régulariser le fonctionnement des conférences sur l’Algérie et la <span class=\"searchmatch\">Tunisie</span>, perturbé",
+        "timestamp": "2026-06-03T09:59:15Z"
+      },
+      {
+        "ns": 0,
+        "title": "Transit international routier",
+        "pageid": 1774339,
+        "size": 16632,
+        "wordcount": 1820,
+        "snippet": "droits de douane et la <span class=\"searchmatch\">TVA</span> exigible à l&#039;importation (en France, l&#039;article 291 du code général des <span class=\"searchmatch\">impôts</span> impose la perception de la <span class=\"searchmatch\">TVA</span> lors de l&#039;importation)",
+        "timestamp": "2025-06-19T08:32:13Z"
+      }
+    ]
+  }
+}

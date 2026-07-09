@@ -35,7 +35,10 @@ import {
   BookOpen,
   Bell,
   Users,
-  Activity
+  Activity,
+  MessageCircle,
+  Command,
+  X
 } from 'lucide-react';
 import { 
   AreaChart, 
@@ -439,6 +442,58 @@ function AppContent() {
   const [searchOpen, setSearchOpen] = useState(false);
   const searchRef = useRef(null);
 
+  // Command Palette
+  const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+  const [commandQuery, setCommandQuery] = useState('');
+  const [commandIdx, setCommandIdx] = useState(0);
+  const commandInputRef = useRef(null);
+  const COMMANDS = [
+    { id: 'dashboard', label: 'Tableau de bord', icon: 'LayoutDashboard', category: 'Navigation' },
+    { id: 'invoicing', label: 'Factures Client', icon: 'FileText', category: 'Navigation' },
+    { id: 'suppliers', label: 'Fournisseurs', icon: 'Package', category: 'Navigation' },
+    { id: 'expenses', label: 'Dépenses', icon: 'TrendingDown', category: 'Navigation' },
+    { id: 'bank', label: 'Rapprochement Bancaire', icon: 'ArrowLeftRight', category: 'Navigation' },
+    { id: 'fiscal', label: 'Déclarations fiscales', icon: 'Calculator', category: 'Navigation' },
+    { id: 'teif', label: 'TEIF & Télédéclaration', icon: 'FileText', category: 'Navigation' },
+    { id: 'payroll', label: 'Paie & CNSS', icon: 'User', category: 'Navigation' },
+    { id: 'audit', label: 'Audit & Conformité', icon: 'ShieldCheck', category: 'Navigation' },
+    { id: 'financial', label: 'Bilan & Résultat', icon: 'CheckCheck', category: 'Navigation' },
+    { id: 'manual', label: 'Saisie Manuelle', icon: 'BookOpen', category: 'Navigation' },
+    { id: 'journal', label: 'Journal Comptable', icon: 'BookOpen', category: 'Navigation' },
+    { id: 'ocr', label: 'Scan Reçus (IA)', icon: 'Scan', category: 'Navigation' },
+    { id: 'ai_tax', label: 'Portail Déclarations', icon: 'FileText', category: 'Navigation' },
+    { id: 'smart_tva', label: 'TVA Intelligente', icon: 'Calculator', category: 'Navigation' },
+    { id: 'smart_irpp', label: 'IRPP Intelligent', icon: 'TrendingUp', category: 'Navigation' },
+    { id: 'smart_is', label: 'IS Intelligent', icon: 'Building', category: 'Navigation' },
+    { id: 'bi', label: 'Business Intelligence', icon: 'TrendingUp', category: 'Navigation' },
+    { id: 'alerts', label: 'Centre d\'Alertes', icon: 'Bell', category: 'Navigation' },
+    { id: 'crm', label: 'CRM Comptable', icon: 'Users', category: 'Navigation' },
+    { id: 'portal', label: 'Portail Expert', icon: 'Building', category: 'Navigation' },
+    { id: 'settings', label: 'Configuration', icon: 'SettingsIcon', category: 'Navigation' },
+  ];
+
+  const openCommandPalette = () => {
+    setCommandQuery('');
+    setCommandIdx(0);
+    setCommandPaletteOpen(true);
+    setTimeout(() => { if (commandInputRef.current) commandInputRef.current.focus(); }, 50);
+  };
+
+  const closeCommandPalette = () => {
+    setCommandPaletteOpen(false);
+    setCommandQuery('');
+  };
+
+  const filteredCommands = useMemo(() => {
+    const q = commandQuery.toLowerCase().trim();
+    if (!q) return COMMANDS;
+    return COMMANDS.filter(cmd =>
+      cmd.label.toLowerCase().includes(q) ||
+      cmd.id.toLowerCase().includes(q) ||
+      cmd.category.toLowerCase().includes(q)
+    );
+  }, [commandQuery]);
+
   // Shortcuts help modal — DOM-based with search
   const modalElRef = useRef(null);
   const SHORTCUTS_DATA = [
@@ -592,12 +647,19 @@ function AppContent() {
         document.title = '⌨ Ctrl+N → Factures';
         return;
       }
-      // Ctrl+K or Ctrl+F → Search
-      if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'f')) {
+      // Ctrl+K → Command Palette
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        openCommandPalette();
+        document.title = '⌨ Ctrl+K → Commandes';
+        return;
+      }
+      // Ctrl+F → Search
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
         e.preventDefault();
         setSearchOpen(true);
         setTimeout(() => { if (searchRef.current) searchRef.current.focus(); }, 50);
-        document.title = '⌨ ' + (e.key === 'k' ? 'Ctrl+K' : 'Ctrl+F') + ' → Recherche';
+        document.title = '⌨ Ctrl+F → Recherche';
         return;
       }
       // F2 → Recherche fiche
@@ -1455,7 +1517,7 @@ function AppContent() {
   };
 
   return (
-    <div className="flex h-screen bg-surface-900 text-slate-100 font-sans overflow-hidden relative">
+    <div className="flex h-screen bg-surface-800 text-slate-100 font-sans overflow-hidden relative">
       {/* Mobile overlay */}
       {sidebarOpen && (
         <div className="fixed inset-0 bg-black/50 z-30 lg:hidden" onClick={() => setSidebarOpen(false)} />
@@ -2071,30 +2133,33 @@ function DashboardView({
 
   return (
     <div className="space-y-6">
-      {/* 5 Cards Métriques */}
+      {/* 5 Cards Métriques — Bento Style */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
         {[
-          { title: 'Revenus Encaissés', value: totalRevenues, color: 'text-accent-400', icon: TrendingUp, bg: 'bg-accent-500/10 border-accent-500/20' },
-          { title: 'Dépenses Totales', value: totalExpenses, color: 'text-danger-400', icon: TrendingDown, bg: 'bg-danger-500/10 border-danger-500/20' },
-          { title: 'Factures en Attente', value: pendingRevenues, color: 'text-warning-400', icon: FileText, bg: 'bg-warning-500/10 border-warning-500/20' },
-          { title: 'Solde Trésorerie', value: bankBalance, color: 'text-brand-400', icon: DollarSign, bg: 'bg-brand-500/10 border-brand-500/20' },
-          { title: 'TEIF Acceptées', value: invoices.filter(inv => dashTeifMap[inv.id] === 'accepted').length, color: 'text-indigo-400', icon: Send, bg: 'bg-indigo-500/10 border-indigo-500/20', suffix: true },
+          { title: 'Revenus Encaissés', value: totalRevenues, color: 'text-accent-400', icon: TrendingUp, bg: 'bg-accent-500/10 border-accent-500/20', gradient: 'from-accent-500/5 to-transparent' },
+          { title: 'Dépenses Totales', value: totalExpenses, color: 'text-danger-400', icon: TrendingDown, bg: 'bg-danger-500/10 border-danger-500/20', gradient: 'from-danger-500/5 to-transparent' },
+          { title: 'Factures en Attente', value: pendingRevenues, color: 'text-warning-400', icon: FileText, bg: 'bg-warning-500/10 border-warning-500/20', gradient: 'from-warning-500/5 to-transparent' },
+          { title: 'Solde Trésorerie', value: bankBalance, color: 'text-brand-400', icon: DollarSign, bg: 'bg-brand-500/10 border-brand-500/20', gradient: 'from-brand-500/5 to-transparent' },
+          { title: 'TEIF Acceptées', value: invoices.filter(inv => dashTeifMap[inv.id] === 'accepted').length, color: 'text-indigo-400', icon: Send, bg: 'bg-indigo-500/10 border-indigo-500/20', gradient: 'from-indigo-500/5 to-transparent', suffix: true },
         ].map((card, i) => {
           const Icon = card.icon;
           return (
-            <div key={i} className={`glass-card p-6 rounded-2xl border ${card.bg} relative overflow-hidden group shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1`}>
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider">{card.title}</p>
-                  <h3 className={`text-2xl font-extrabold mt-2 tracking-tight ${card.color}`}>
-                    {card.suffix ? card.value : formatCurrency(card.value)}
-                  </h3>
-                </div>
-                <div className={`p-2.5 rounded-xl ${card.bg} border border-slate-700/50`}>
-                  <Icon className="w-5 h-5 text-slate-300 group-hover:scale-110 transition-transform duration-300" />
+            <div key={i} className={`glass-card p-5 rounded-2xl border ${card.bg} relative overflow-hidden group transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg card-hover-glow`}
+              style={{ animationDelay: `${i * 80}ms` }}>
+              <div className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className="relative z-10">
+                <div className="flex justify-between items-start">
+                  <div className="space-y-1.5">
+                    <p className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">{card.title}</p>
+                    <h3 className={`text-xl lg:text-2xl font-extrabold tracking-tight ${card.color}`}>
+                      {card.suffix ? card.value : formatCurrency(card.value)}
+                    </h3>
+                  </div>
+                  <div className={`p-2.5 rounded-xl ${card.bg} border border-slate-700/50 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className="w-4.5 h-4.5 text-slate-300" />
+                  </div>
                 </div>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-slate-800 to-slate-700/30" />
             </div>
           );
         })}
@@ -2103,15 +2168,13 @@ function DashboardView({
       {/* Graphiques et Estimations d'Impôts */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Graphique de Trésorerie principal */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-2 space-y-4">
+        <div className="glass-card p-6 rounded-2xl border border-slate-800 lg:col-span-2 space-y-4 transition-all duration-300 hover:border-slate-700/60">
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-base font-bold text-slate-100">Évolution de la Trésorerie</h3>
               <p className="text-xs text-slate-400">Revenus nets vs Dépenses cumulées sur l'année</p>
             </div>
-            <div className="flex gap-2">
-              <span className="text-xs font-semibold px-2 py-1 bg-brand-500/10 text-brand-400 rounded-md border border-brand-500/20">Semestriel</span>
-            </div>
+            <span className="text-[10px] font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-400 rounded-md border border-brand-500/20">Semestriel</span>
           </div>
 
           <div className="w-full">
@@ -2146,8 +2209,8 @@ function DashboardView({
           </div>
         </div>
 
-        {/* Jauge des Impôts / RCharges Sociales */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        {/* Jauge des Impôts / Charges Sociales */}
+        <div className="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between transition-all duration-300 hover:border-slate-700/60">
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-warning-400">
               <Calculator className="w-5 h-5" />
@@ -2157,7 +2220,6 @@ function DashboardView({
           </div>
 
           <div className="my-6 flex flex-col items-center justify-center relative">
-            {/* SVG Arc Progress Circle */}
             <div className="relative w-44 h-44 flex items-center justify-center">
               <svg className="w-full h-full transform -rotate-90">
                 <circle cx="88" cy="88" r="70" stroke="#1e293b" strokeWidth="12" fill="transparent" />
@@ -2194,80 +2256,91 @@ function DashboardView({
         </div>
       </div>
 
-      {/* Recents list */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Recents factures */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-          <h3 className="font-bold text-slate-100">Facturations Récentes</h3>
-          {invoices.length === 0 ? (
-            <div className="flex flex-col items-center justify-center py-8 text-center">
-              <FileText className="w-10 h-10 text-slate-700 mb-3" />
-              <p className="text-sm font-semibold text-slate-500">Aucune facture</p>
-              <p className="text-[11px] text-slate-600 mt-1">Créez votre première facture depuis l'onglet Factures</p>
-            </div>
-          ) : (
-          <div className="space-y-3">
-            {invoices.slice(0, 4).map((inv, idx) => (
-              <div key={idx} className="flex justify-between items-center p-3.5 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 transition-colors">
-                <div>
-                  <h4 className="text-sm font-bold text-white">{inv.clientName}</h4>
-                  <p className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
-                    <span>{inv.invoiceNumber}</span>
-                    <span className="w-1 h-1 rounded-full bg-slate-600" />
-                    <span>Créée le {inv.issueDate}</span>
-                  </p>
-                </div>
-                <div className="text-right">
-                  <span className="text-sm font-extrabold text-slate-100 block">{formatCurrency(inv.totalAmount)}</span>
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full inline-block mt-1 ${
-                    inv.status === 'PAID' ? 'bg-accent-500/10 text-accent-400' :
-                    inv.status === 'SENT' ? 'bg-warning-500/10 text-warning-400' : 'bg-danger-500/10 text-danger-400'
-                  }`}>
-                    {inv.status === 'PAID' ? 'Payée' : inv.status === 'SENT' ? 'Envoyée' : 'Retard'}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-          )}
-        </div>
+      {/* Recent lists */}
 
-        {/* Recents dépenses */}
-        <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-          <h3 className="font-bold text-slate-100">Dépenses Enregistrées par l'IA</h3>
-          {expenses.length === 0 ? (
-            <div className="flex flex-col items-center justify-center py-8 text-center">
-              <Scan className="w-10 h-10 text-slate-700 mb-3" />
-              <p className="text-sm font-semibold text-slate-500">Aucune dépense</p>
-              <p className="text-[11px] text-slate-600 mt-1">Scannez un reçu ou saisissez une dépense depuis l'onglet Scan</p>
-            </div>
-          ) : (
-          <div className="space-y-3">
-            {expenses.slice(0, 4).map((exp, idx) => (
-              <div key={idx} className="flex justify-between items-center p-3.5 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center">
-                    <Sparkles className="w-4 h-4 text-indigo-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-white">{exp.supplier}</h4>
-                    <p className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
-                      <span className="text-indigo-400 font-semibold">{exp.category}</span>
-                      <span className="w-1 h-1 rounded-full bg-slate-600" />
-                      <span>{exp.date}</span>
-                    </p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <span className="text-sm font-extrabold text-danger-400 block">-{formatCurrency(exp.totalAmount)}</span>
-                  <span className="text-[10px] text-slate-400 font-medium mt-1 inline-block">Validée</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          )}
-        </div>
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+  {/* Recent invoices */}
+  <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 transition-all duration-300 hover:border-slate-700/60">
+    <div className="flex items-center justify-between">
+      <h3 className="font-bold text-sm text-slate-100">Facturations Récentes</h3>
+      {invoices.length > 0 && (
+        <span className="text-[10px] text-slate-500 font-medium">{invoices.length} total</span>
+      )}
+    </div>
+    {invoices.length === 0 ? (
+      <div className="flex flex-col items-center justify-center py-8 text-center">
+        <FileText className="w-10 h-10 text-slate-700 mb-3" />
+        <p className="text-sm font-semibold text-slate-500">Aucune facture</p>
+        <p className="text-[11px] text-slate-600 mt-1">Créez votre première facture depuis l'onglet Factures</p>
       </div>
+    ) : (
+    <div className="space-y-2">
+      {invoices.slice(0, 4).map((inv, idx) => (
+        <div key={idx} className="row-hover flex justify-between items-center p-3 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 hover:border-slate-700/50 cursor-default">
+          <div>
+            <h4 className="text-sm font-bold text-white">{inv.clientName}</h4>
+            <p className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
+              <span>{inv.invoiceNumber}</span>
+              <span className="w-1 h-1 rounded-full bg-slate-600" />
+              <span>Créée le {inv.issueDate}</span>
+            </p>
+          </div>
+          <div className="text-right">
+            <span className="text-sm font-extrabold text-slate-100 block">{formatCurrency(inv.totalAmount)}</span>
+            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full inline-block mt-1 ${
+              inv.status === 'PAID' ? 'bg-accent-500/10 text-accent-400' :
+              inv.status === 'SENT' ? 'bg-warning-500/10 text-warning-400' : 'bg-danger-500/10 text-danger-400'
+            }`}>
+              {inv.status === 'PAID' ? 'Payée' : inv.status === 'SENT' ? 'Envoyée' : 'Retard'}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+    )}
+  </div>
+
+  {/* Recent expenses */}
+  <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 transition-all duration-300 hover:border-slate-700/60">
+    <div className="flex items-center justify-between">
+      <h3 className="font-bold text-sm text-slate-100">Dépenses Enregistrées par l'IA</h3>
+      {expenses.length > 0 && (
+        <span className="text-[10px] text-slate-500 font-medium">{expenses.length} total</span>
+      )}
+    </div>
+    {expenses.length === 0 ? (
+      <div className="flex flex-col items-center justify-center py-8 text-center">
+        <Scan className="w-10 h-10 text-slate-700 mb-3" />
+        <p className="text-sm font-semibold text-slate-500">Aucune dépense</p>
+        <p className="text-[11px] text-slate-600 mt-1">Scannez un reçu ou saisissez une dépense depuis l'onglet Scan</p>
+      </div>
+    ) : (
+    <div className="space-y-2">
+      {expenses.slice(0, 4).map((exp, idx) => (
+        <div key={idx} className="row-hover flex justify-between items-center p-3 bg-slate-900/30 hover:bg-slate-800/25 rounded-xl border border-slate-800/50 hover:border-slate-700/50 cursor-default">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Sparkles className="w-4 h-4 text-indigo-400" />
+            </div>
+            <div>
+              <h4 className="text-sm font-bold text-white">{exp.supplier}</h4>
+              <p className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
+                <span className="text-indigo-400 font-semibold">{exp.category}</span>
+                <span className="w-1 h-1 rounded-full bg-slate-600" />
+                <span>{exp.date}</span>
+              </p>
+            </div>
+          </div>
+          <div className="text-right">
+            <span className="text-sm font-extrabold text-danger-400 block">-{formatCurrency(exp.totalAmount)}</span>
+            <span className="text-[10px] text-slate-400 font-medium mt-1 inline-block">Validée</span>
+          </div>
+        </div>
+      ))}
+    </div>
+    )}
+  </div>
+</div>
 
     </div>
   );
@@ -5952,7 +6025,92 @@ function WorkflowView({
       <FAB onNavigate={setCurrentTab} />
       <Confetti active={confettiActive} onDone={() => setConfettiActive(false)} />
 
-      {/* Shortcuts Modal — DOM portal (bypasses React state issues) */}
+      {/* Floating AI Assistant Button */}
+      <button
+        onClick={() => setCurrentTab('ai_tax')}
+        className="fixed bottom-6 right-20 z-40 w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 active:scale-90 hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
+        title="Assistant IA"
+      >
+        <MessageCircle className="w-5 h-5" />
+      </button>
+
+      {/* Command Palette Modal */}
+      {commandPaletteOpen && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-start justify-center pt-[15vh]" onClick={closeCommandPalette}>
+          <div
+            className="w-full max-w-lg bg-slate-900 border border-slate-700/50 rounded-2xl shadow-2xl overflow-hidden animate-scale-in"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center gap-3 px-5 py-4 border-b border-slate-800">
+              <Command className="w-4 h-4 text-brand-400" />
+              <input
+                ref={commandInputRef}
+                type="text"
+                placeholder="Chercher une page, une action..."
+                value={commandQuery}
+                onChange={e => { setCommandQuery(e.target.value); setCommandIdx(0); }}
+                onKeyDown={e => {
+                  if (e.key === 'Escape') { closeCommandPalette(); return; }
+                  if (e.key === 'ArrowDown') { e.preventDefault(); setCommandIdx(i => Math.min(i + 1, filteredCommands.length - 1)); return; }
+                  if (e.key === 'ArrowUp') { e.preventDefault(); setCommandIdx(i => Math.max(i - 1, 0)); return; }
+                  if (e.key === 'Enter' && filteredCommands[commandIdx]) {
+                    setCurrentTab(filteredCommands[commandIdx].id);
+                    closeCommandPalette();
+                  }
+                }}
+                className="flex-1 bg-transparent text-sm text-slate-200 placeholder-slate-500 focus:outline-none"
+                autoFocus
+              />
+              <kbd className="text-[10px] font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded">Esc</kbd>
+            </div>
+            <div className="max-h-80 overflow-y-auto p-2 space-y-0.5">
+              {filteredCommands.length === 0 ? (
+                <p className="text-xs text-slate-500 text-center py-8">Aucun résultat</p>
+              ) : (
+                filteredCommands.map((cmd, i) => (
+                  <button
+                    key={cmd.id}
+                    onClick={() => { setCurrentTab(cmd.id); closeCommandPalette(); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
+                      i === commandIdx
+                        ? 'bg-brand-500/15 text-brand-300 border border-brand-500/20'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                    }`}
+                  >
+                    <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${
+                      i === commandIdx ? 'bg-brand-500/20 text-brand-300' : 'bg-slate-800 text-slate-500'
+                    }`}>
+                      {cmd.icon === 'LayoutDashboard' && <LayoutDashboard className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'FileText' && <FileText className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Package' && <Package className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'TrendingDown' && <TrendingDown className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'ArrowLeftRight' && <ArrowLeftRight className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Calculator' && <Calculator className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'User' && <User className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'ShieldCheck' && <ShieldCheck className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'CheckCheck' && <CheckCheck className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'BookOpen' && <BookOpen className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Scan' && <Scan className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'TrendingUp' && <TrendingUp className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Building' && <Building className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Bell' && <Bell className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Users' && <Users className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'SettingsIcon' && <SettingsIcon className="w-3.5 h-3.5" />}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold truncate">{cmd.label}</p>
+                      <p className="text-[10px] text-slate-500">{cmd.category}</p>
+                    </div>
+                    {i === commandIdx && (
+                      <kbd className="text-[10px] font-mono text-brand-400 bg-brand-500/10 px-1.5 py-0.5 rounded">↵</kbd>
+                    )}
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );
