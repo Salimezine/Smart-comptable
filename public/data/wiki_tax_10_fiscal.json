@@ -1,0 +1,16 @@
+{
+  "source": "wiki_tax_10",
+  "crawled_at": "2026-07-09",
+  "taux": {
+    "rs": {
+      "taux": "50%",
+      "label": "Retenues à la source",
+      "type": "rs"
+    }
+  },
+  "echeances": [],
+  "lois": [],
+  "informations": [
+    "named the system ‘electronic invoicing of taxes’. However, the key principle is the same as it is defined as ‘electronic invoices that are not only valid for all tax purposes but that are also received in their entirety by the tax authority’."
+  ]
+}

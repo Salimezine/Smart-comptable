@@ -104,6 +104,78 @@ async def crawl_url(url, label, output_key):
         return result
 
 
+def search_wikipedia_tax_pages():
+    """Search Wikipedia for Tunisian tax-related pages using the API."""
+    import requests
+    queries = [
+        'Tunisia tax', 'Tunisie fiscalité', 'Tunisia VAT',
+        'Tunisia corporate tax', 'Tunisie impôt',
+        'Taxation in Tunisia', 'Fiscalité tunisienne',
+    ]
+    found = []
+    seen = set()
+    headers = {'User-Agent': 'SmartComptable/1.0'}
+    for q in queries:
+        try:
+            r = requests.get(
+                'https://en.wikipedia.org/w/api.php',
+                params={'action': 'query', 'list': 'search', 'srsearch': q, 'format': 'json', 'srlimit': 5},
+                headers=headers, timeout=10
+            )
+            if r.status_code != 200: continue
+            for p in r.json().get('query', {}).get('search', []):
+                title = p['title']
+                if title not in seen and 'disambiguation' not in title.lower():
+                    seen.add(title)
+                    found.append({'title': title, 'pageid': p['pageid']})
+        except: pass
+    return found
+
+
+def deep_scrape_markdown(url, max_pages=5, base_domain=None):
+    """Use requests+BS4 to scrape a page and relevant sub-pages."""
+    import requests
+    from bs4 import BeautifulSoup
+    import urllib.parse
+
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+    if not base_domain:
+        base_domain = urllib.parse.urlparse(url).netloc
+
+    try:
+        resp = requests.get(url, headers=headers, timeout=15)
+        if resp.status_code != 200: return ''
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        for el in soup(['script', 'style', 'nav', 'footer']): el.decompose()
+        main_text = soup.get_text(separator='\n', strip=True)
+
+        # Find relevant links on the page
+        links = []
+        for a in soup.find_all('a', href=True):
+            href = a['href']
+            text = (a.get_text() or '').lower()
+            full = href if href.startswith('http') else f'https://{base_domain}/{href.lstrip("/")}'
+            if base_domain in full and any(kw in text for kw in
+                ['tva', 'impôt', 'taxe', 'fiscal', 'déclaration', 'taux',
+                 'impot', 'tax', 'vat', 'finance', 'loi', 'décret',
+                 'cotisation', 'cnss', 'irpp', 'is', 'tfp', 'tcl']):
+                links.append(full)
+
+        all_text = main_text
+        for link in links[:max_pages]:
+            try:
+                sub = requests.get(link, headers=headers, timeout=10)
+                if sub.status_code == 200:
+                    sub_soup = BeautifulSoup(sub.text, 'html.parser')
+                    for el in sub_soup(['script', 'style', 'nav', 'footer']): el.decompose()
+                    sub_text = sub_soup.get_text(separator='\n', strip=True)
+                    all_text += '\n\n---\n\n' + sub_text[:10000]
+            except: pass
+
+        return all_text
+    except: return ''
+
+
 def extract_fiscal_data(markdown, source_key):
     """Extract structured tax rates, deadlines, and rules from scraped markdown."""
     import re
@@ -272,8 +344,6 @@ async def crawl_competitor_features(url, label, output_key):
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"  📦 Features saved → {output_key}_features.json")
         return data
-
-
 def scrape_wikipedia_fallback(output_key, url, label):
     """Fallback scraper using requests+BeautifulSoup for Wikipedia pages."""
     try:
@@ -374,6 +444,10 @@ async def main():
                         help='Label for custom URL')
     parser.add_argument('--list', action='store_true',
                         help='List available sources')
+    parser.add_argument('--wiki', action='store_true',
+                        help='Search Wikipedia for Tunisian tax pages and scrape them')
+    parser.add_argument('--deep', action='store_true',
+                        help='Deep-crawl: follow relevant links from each page')
     args = parser.parse_args()
 
     if args.list:
@@ -382,10 +456,46 @@ async def main():
             print(f"  {k}: {v['url']} ({v['label']})")
         return
 
+    # Wikipedia tax page search mode
+    if args.wiki:
+        print("\n🔍 Searching Wikipedia for Tunisian tax pages...")
+        pages = search_wikipedia_tax_pages()
+        print(f"  Found {len(pages)} relevant pages")
+        for i, p in enumerate(pages[:10]):
+            url = f"https://en.wikipedia.org/wiki/{p['title'].replace(' ', '_')}"
+            print(f"\n  [{i+1}] Scraping: {p['title']}")
+            key = f"wiki_tax_{i+1}"
+            text = deep_scrape_markdown(url, max_pages=3)
+            if len(text.strip()) > 500:
+                md_path = os.path.join(OUTPUT_DIR, f'{key}.md')
+                with open(md_path, 'w', encoding='utf-8') as f:
+                    f.write(text)
+                print(f"  ✅ {len(text)} chars → {key}.md")
+                fiscal = extract_fiscal_data(text, key)
+                f_path = os.path.join(OUTPUT_DIR, f'{key}_fiscal.json')
+                with open(f_path, 'w', encoding='utf-8') as f:
+                    json.dump(fiscal, f, ensure_ascii=False, indent=2)
+                print(f"  📊 Fiscal data extracted → {key}_fiscal.json")
+            else:
+                print(f"  ⚠️ Only {len(text)} chars, skipped")
+        print("  Wiki search done.")
+        return
+
     if args.url:
         print(f"\n🔍 Crawling custom URL: {args.url}")
         if args.features:
             await crawl_competitor_features(args.url, args.label, args.label)
+        elif args.deep:
+            text = deep_scrape_markdown(args.url)
+            if text:
+                md_path = os.path.join(OUTPUT_DIR, f'{args.label}.md')
+                with open(md_path, 'w', encoding='utf-8') as f:
+                    f.write(text)
+                print(f"  ✅ {len(text)} chars → {args.label}.md")
+                fiscal = extract_fiscal_data(text, args.label)
+                f_path = os.path.join(OUTPUT_DIR, f'{args.label}_fiscal.json')
+                with open(f_path, 'w', encoding='utf-8') as f:
+                    json.dump(fiscal, f, ensure_ascii=False, indent=2)
         else:
             await crawl_url(args.url, args.label, args.label)
         return
@@ -396,6 +506,18 @@ async def main():
         print(f"\n🔍 Crawling {key} → {info['url']}")
         if args.features:
             await crawl_competitor_features(info['url'], info['label'], key)
+        elif args.deep:
+            print(f"  ↳ Deep-crawl mode (following relevant links)")
+            text = deep_scrape_markdown(info['url'])
+            if text:
+                md_path = os.path.join(OUTPUT_DIR, f'{key}.md')
+                with open(md_path, 'w', encoding='utf-8') as f:
+                    f.write(text)
+                print(f"  ✅ {len(text)} chars → {key}.md")
+                fiscal = extract_fiscal_data(text, key)
+                f_path = os.path.join(OUTPUT_DIR, f'{key}_fiscal.json')
+                with open(f_path, 'w', encoding='utf-8') as f:
+                    json.dump(fiscal, f, ensure_ascii=False, indent=2)
         else:
             result = await crawl_url(info['url'], info['label'], key)
             # If crawl4ai returned too little data (likely blocked), try requests+BS4 fallback

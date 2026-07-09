@@ -5,10 +5,9 @@ on:
     # Run every Monday at 6:00 UTC
     - cron: '0 6 * * 1'
   workflow_dispatch:
-    # Allow manual trigger with custom URL
     inputs:
       source:
-        description: 'Source to scrape (all, impots, axiane, custom)'
+        description: 'Source (all, impots, jibaya, finances, axiane, custom)'
         default: 'all'
         required: false
       custom_url:
@@ -17,8 +16,12 @@ on:
       custom_label:
         description: 'Label for custom URL'
         required: false
-      deep_features:
-        description: 'Deep crawl feature pages'
+      deep:
+        description: 'Deep-crawl (follow links)'
+        type: boolean
+        default: false
+      wiki:
+        description: 'Search+scrape Wikipedia tax pages'
         type: boolean
         default: false
 
@@ -28,7 +31,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -37,26 +40,32 @@ jobs:
           python-version: '3.12'
           cache: pip
 
-      - name: Install crawl4ai
+      - name: Install dependencies
         run: |
-          pip install crawl4ai
+          pip install crawl4ai requests beautifulsoup4
           python -m playwright install chromium
 
+      - name: Weekly full scrape (all sources + deep)
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          python scripts/fiscal_scraper.py --source all
+          python scripts/fiscal_scraper.py --wiki
+
       - name: Scrape all sources
-        if: ${{ github.event.inputs.source == '' || github.event.inputs.source == 'all' }}
-        run: python scripts/fiscal_scraper.py --source all
+        if: ${{ github.event_name == 'workflow_dispatch' && (github.event.inputs.source == '' || github.event.inputs.source == 'all') }}
+        run: python scripts/fiscal_scraper.py --source all ${{ github.event.inputs.deep == 'true' && '--deep' || '' }}
 
       - name: Scrape specific source
         if: ${{ github.event.inputs.source != '' && github.event.inputs.source != 'all' && github.event.inputs.source != 'custom' }}
-        run: python scripts/fiscal_scraper.py --source ${{ github.event.inputs.source }}
+        run: python scripts/fiscal_scraper.py --source ${{ github.event.inputs.source }} ${{ github.event.inputs.deep == 'true' && '--deep' || '' }}
 
       - name: Scrape custom URL
         if: ${{ github.event.inputs.source == 'custom' }}
-        run: python scripts/fiscal_scraper.py --url "${{ github.event.inputs.custom_url }}" --label "${{ github.event.inputs.custom_label }}"
+        run: python scripts/fiscal_scraper.py --url "${{ github.event.inputs.custom_url }}" --label "${{ github.event.inputs.custom_label }}" ${{ github.event.inputs.deep == 'true' && '--deep' || '' }}
 
-      - name: Deep crawl features
-        if: ${{ github.event.inputs.deep_features == 'true' }}
-        run: python scripts/fiscal_scraper.py --features
+      - name: Wikipedia tax search
+        if: ${{ github.event.inputs.wiki == 'true' }}
+        run: python scripts/fiscal_scraper.py --wiki
 
       - name: Commit scraped data
         run: |
