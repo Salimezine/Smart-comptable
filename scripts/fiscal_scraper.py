@@ -25,13 +25,25 @@ SOURCES = {
         'url': 'https://www.impots.finances.gov.tn',
         'label': 'Portail Fiscal Tunisien',
     },
-    'wikipedia_fiscalite': {
-        'url': 'https://fr.wikipedia.org/wiki/Fiscalit%C3%A9_en_Tunisie',
-        'label': 'Wikipedia - Fiscalité Tunisienne',
+    'finances': {
+        'url': 'https://www.finances.gov.tn',
+        'label': 'Ministère des Finances Tunisie',
     },
-    'wikipedia_tva': {
-        'url': 'https://fr.wikipedia.org/wiki/Taxe_sur_la_valeur_ajout%C3%A9e_en_Tunisie',
-        'label': 'Wikipedia - TVA Tunisie',
+    'jibaya': {
+        'url': 'https://www.jibaya.tn',
+        'label': 'Portail Jibaya Tunisie',
+    },
+    'wikipedia_tunisie': {
+        'url': 'https://fr.wikipedia.org/wiki/Tunisie',
+        'label': 'Wikipedia Tunisie',
+    },
+    'wikipedia_tunisia_economy': {
+        'url': 'https://en.wikipedia.org/wiki/Economy_of_Tunisia',
+        'label': 'Wikipedia Economy of Tunisia',
+    },
+    'wikipedia_tunisia': {
+        'url': 'https://en.wikipedia.org/wiki/Tunisia',
+        'label': 'Wikipedia Tunisia',
     },
     'axiane': {
         'url': 'https://www.axiane.tn',
@@ -44,10 +56,11 @@ SOURCES = {
 async def crawl_url(url, label, output_key):
     """Crawl a single URL and save markdown + structured data."""
     config = CrawlerRunConfig(
-        cache_mode=CacheMode.ENABLED,
+        cache_mode=CacheMode.DISABLED,
         page_timeout=30000,
         remove_overlay_elements=True,
         verbose=True,
+        user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/134.0.0.0 Safari/537.36',
     )
     async with AsyncWebCrawler() as crawler:
         result = await crawler.arun(url, config=config)
@@ -385,9 +398,9 @@ async def main():
             await crawl_competitor_features(info['url'], info['label'], key)
         else:
             result = await crawl_url(info['url'], info['label'], key)
-            # If crawl4ai returned too little data (likely blocked), try Wikipedia fallback
-            if (result is None or len(result.markdown.strip()) < 100) and 'wikipedia' in info['url']:
-                print(f"  ↳ crawl4ai returned {len(result.markdown.strip()) if result else 0} chars, trying requests+BS4 fallback...")
+            # If crawl4ai returned too little data (likely blocked), try requests+BS4 fallback
+            if result is None or len((result.markdown or '').strip()) < 200:
+                print(f"  ↳ crawl4ai returned {len((result.markdown or '').strip()) if result else 0} chars, trying requests+BS4 fallback...")
                 scrape_wikipedia_fallback(key, info['url'], info['label'])
 
     # Always generate fallback fiscal data (ensures app always has baseline rates)

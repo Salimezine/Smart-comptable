@@ -1,0 +1,45 @@
+{
+  "source": "wikipedia_tunisie",
+  "crawled_at": "2026-07-09",
+  "taux": {
+    "rs": {
+      "taux": "5 %, 8,84 %, 30 %, 33 %, 65,3 %",
+      "label": "Retenues à la source",
+      "type": "rs"
+    },
+    "tfp": {
+      "taux": "1% salaires + 1% employeur",
+      "label": "Taxe Formation Professionnelle + FOPROLOS",
+      "type": "tfp"
+    },
+    "tcl": {
+      "taux": "10% TVA due",
+      "label": "Taxe Collectivités Locales",
+      "type": "tcl"
+    }
+  },
+  "echeances": [
+    {
+      "type": "tva",
+      "defaut": "20 du mois suivant",
+      "source": "Vous lisez un « article de qualité » labellisé en 2006. République tunisienne (ar) الجمهورية التونسية Écouter ⓘ Drapeau de la Tunisie Armoiries de la Tunisie Devise en arabe : حرية، نظام، عدالة ( Ḥoṛiya, Niẓam, 'Adāla , « Liberté, Ordre, Justice ») Hymne en arabe : حماة الحمى ( Humat Al-Hima , « Défenseurs de la patrie ») Fête nationale 20 mars · Événement commémoré Indépendance vis-à-vis de la France (1956) Administration Forme de l'État République présidentielle et bicamérale Président de la R"
+    }
+  ],
+  "lois": [
+    {
+      "article": "8",
+      "extrait": "Vous lisez un « article de qualité » labellisé en 2006. République tunisienne (ar) الجمهورية التونسية Écouter ⓘ Drapeau de la Tunisie Armoiries de la Tunisie Devise en arabe : حرية، نظام، عدالة ( Ḥoṛiya, Niẓam, 'Adāla , « Liberté, Ordre, Justice ») Hymne en arabe : حماة الحمى ( Humat Al-Hima , « Déf"
+    },
+    {
+      "article": "80",
+      "extrait": "Vous lisez un « article de qualité » labellisé en 2006. République tunisienne (ar) الجمهورية التونسية Écouter ⓘ Drapeau de la Tunisie Armoiries de la Tunisie Devise en arabe : حرية، نظام، عدالة ( Ḥoṛiya, Niẓam, 'Adāla , « Liberté, Ordre, Justice ») Hymne en arabe : حماة الحمى ( Humat Al-Hima , « Déf"
+    }
+  ],
+  "informations": [
+    ", selon laquelle le président du Conseil régional élabore le projet de budget du gouvernorat et le présente au conseil pour décision. Il est chargé de son exécution et veille à la perception des impôts et taxes revenant à la collectivité publique conformément à la législation en vigueur",
+    ". Malgré la résistance des Berbères, les Byzantins rétablissent l'esclavage et instituent de lourds impôts",
+    "chargé du contrôle du territoire et de la collecte des impôts. Ce dernier ne tarde pas à devenir le personnage essentiel de la",
+    "de dollars en 2016. Le FMI n'accorde toutefois ces prêts qu'en contrepartie d'un plan de réformes libérales, telles que l'augmentation de certains impôts, la réduction de la",
+    ", la Tunisie se lance dans le moins-disant social pour maintenir ses positions, en pratiquant un régime d'incitations fiscales dont des investisseurs ont su tirer profit en accroissant la précarité de leurs salariés. Le tourisme entame également une course au rabais, au détriment de la qualité. Sous la présidence de"
+  ]
+}
