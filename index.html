@@ -41,6 +41,10 @@
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
+    <script>
+    // Force-clean stale service workers before app loads
+    (async()=>{try{if('caches'in window){for(let k of await caches.keys()){if(k.includes('workbox')||k.includes('smart'))await caches.delete(k)}}if('serviceWorker'in navigator){for(let r of await navigator.serviceWorker.getRegistrations())await r.unregister()}}catch(e){console.warn('SW cleanup:',e)}})();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
