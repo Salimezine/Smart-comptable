@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Smart Compta" />
@@ -41,10 +42,6 @@
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
-    <script>
-    // Force-clean stale service workers before app loads
-    (async()=>{try{if('caches'in window){for(let k of await caches.keys()){if(k.includes('workbox')||k.includes('smart'))await caches.delete(k)}}if('serviceWorker'in navigator){for(let r of await navigator.serviceWorker.getRegistrations())await r.unregister()}}catch(e){console.warn('SW cleanup:',e)}})();
-    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

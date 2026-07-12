@@ -309,7 +309,7 @@ export function saveJournalPiece(piece, opts = {}) {
         ...e,
         company_id: companyId,
       }));
-      syncToCloud('journal_entries', rows, 'insert').catch(console.warn);
+      syncToCloud('journal_entries', rows, 'upsert').catch(console.warn);
     }
 
     return true;

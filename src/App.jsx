@@ -2113,6 +2113,96 @@ function AppContent() {
           </div>
         </div>
       )}
+
+      {/* Global Interactive Utilities */}
+      <FAB onNavigate={setCurrentTab} />
+
+      {/* Floating AI Assistant Button */}
+      <button
+        onClick={() => setCurrentTab('ai_tax')}
+        className="fixed bottom-6 right-20 z-40 w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 active:scale-90 hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
+        title="Assistant IA"
+      >
+        <MessageCircle className="w-5 h-5" />
+      </button>
+
+      {/* Command Palette Modal */}
+      {commandPaletteOpen && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-start justify-center pt-[15vh]" onClick={closeCommandPalette}>
+          <div
+            className="w-full max-w-lg bg-slate-900 border border-slate-700/50 rounded-2xl shadow-2xl overflow-hidden animate-scale-in"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center gap-3 px-5 py-4 border-b border-slate-800">
+              <Command className="w-4 h-4 text-brand-400" />
+              <input
+                ref={commandInputRef}
+                type="text"
+                placeholder="Chercher une page, une action..."
+                value={commandQuery}
+                onChange={e => { setCommandQuery(e.target.value); setCommandIdx(0); }}
+                onKeyDown={e => {
+                  if (e.key === 'Escape') { closeCommandPalette(); return; }
+                  if (e.key === 'ArrowDown') { e.preventDefault(); setCommandIdx(i => Math.min(i + 1, filteredCommands.length - 1)); return; }
+                  if (e.key === 'ArrowUp') { e.preventDefault(); setCommandIdx(i => Math.max(i - 1, 0)); return; }
+                  if (e.key === 'Enter' && filteredCommands[commandIdx]) {
+                    setCurrentTab(filteredCommands[commandIdx].id);
+                    closeCommandPalette();
+                  }
+                }}
+                className="flex-1 bg-transparent text-sm text-slate-200 placeholder-slate-500 focus:outline-none"
+                autoFocus
+              />
+              <kbd className="text-[10px] font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded">Esc</kbd>
+            </div>
+            <div className="max-h-80 overflow-y-auto p-2 space-y-0.5">
+              {filteredCommands.length === 0 ? (
+                <p className="text-xs text-slate-500 text-center py-8">Aucun résultat</p>
+              ) : (
+                filteredCommands.map((cmd, i) => (
+                  <button
+                    key={cmd.id}
+                    onClick={() => { setCurrentTab(cmd.id); closeCommandPalette(); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
+                      i === commandIdx
+                        ? 'bg-brand-500/15 text-brand-300 border border-brand-500/20'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                    }`}
+                  >
+                    <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${
+                      i === commandIdx ? 'bg-brand-500/20 text-brand-300' : 'bg-slate-800 text-slate-500'
+                    }`}>
+                      {cmd.icon === 'LayoutDashboard' && <LayoutDashboard className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'FileText' && <FileText className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Package' && <Package className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'TrendingDown' && <TrendingDown className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'ArrowLeftRight' && <ArrowLeftRight className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Calculator' && <Calculator className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'User' && <User className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'ShieldCheck' && <ShieldCheck className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'CheckCheck' && <CheckCheck className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'BookOpen' && <BookOpen className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Scan' && <Scan className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'TrendingUp' && <TrendingUp className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Building' && <Building className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Bell' && <Bell className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'Users' && <Users className="w-3.5 h-3.5" />}
+                      {cmd.icon === 'SettingsIcon' && <SettingsIcon className="w-3.5 h-3.5" />}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold truncate">{cmd.label}</p>
+                      <p className="text-[10px] text-slate-500">{cmd.category}</p>
+                    </div>
+                    {i === commandIdx && (
+                      <kbd className="text-[10px] font-mono text-brand-400 bg-brand-500/10 px-1.5 py-0.5 rounded">↵</kbd>
+                    )}
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -6035,96 +6125,7 @@ function WorkflowView({
         </div>
       </div>
       
-      {/* Global Interactive Utilities */}
-      <FAB onNavigate={setCurrentTab} />
       <Confetti active={confettiActive} onDone={() => setConfettiActive(false)} />
-
-      {/* Floating AI Assistant Button */}
-      <button
-        onClick={() => setCurrentTab('ai_tax')}
-        className="fixed bottom-6 right-20 z-40 w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 active:scale-90 hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
-        title="Assistant IA"
-      >
-        <MessageCircle className="w-5 h-5" />
-      </button>
-
-      {/* Command Palette Modal */}
-      {commandPaletteOpen && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-start justify-center pt-[15vh]" onClick={closeCommandPalette}>
-          <div
-            className="w-full max-w-lg bg-slate-900 border border-slate-700/50 rounded-2xl shadow-2xl overflow-hidden animate-scale-in"
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="flex items-center gap-3 px-5 py-4 border-b border-slate-800">
-              <Command className="w-4 h-4 text-brand-400" />
-              <input
-                ref={commandInputRef}
-                type="text"
-                placeholder="Chercher une page, une action..."
-                value={commandQuery}
-                onChange={e => { setCommandQuery(e.target.value); setCommandIdx(0); }}
-                onKeyDown={e => {
-                  if (e.key === 'Escape') { closeCommandPalette(); return; }
-                  if (e.key === 'ArrowDown') { e.preventDefault(); setCommandIdx(i => Math.min(i + 1, filteredCommands.length - 1)); return; }
-                  if (e.key === 'ArrowUp') { e.preventDefault(); setCommandIdx(i => Math.max(i - 1, 0)); return; }
-                  if (e.key === 'Enter' && filteredCommands[commandIdx]) {
-                    setCurrentTab(filteredCommands[commandIdx].id);
-                    closeCommandPalette();
-                  }
-                }}
-                className="flex-1 bg-transparent text-sm text-slate-200 placeholder-slate-500 focus:outline-none"
-                autoFocus
-              />
-              <kbd className="text-[10px] font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded">Esc</kbd>
-            </div>
-            <div className="max-h-80 overflow-y-auto p-2 space-y-0.5">
-              {filteredCommands.length === 0 ? (
-                <p className="text-xs text-slate-500 text-center py-8">Aucun résultat</p>
-              ) : (
-                filteredCommands.map((cmd, i) => (
-                  <button
-                    key={cmd.id}
-                    onClick={() => { setCurrentTab(cmd.id); closeCommandPalette(); }}
-                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
-                      i === commandIdx
-                        ? 'bg-brand-500/15 text-brand-300 border border-brand-500/20'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
-                    }`}
-                  >
-                    <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${
-                      i === commandIdx ? 'bg-brand-500/20 text-brand-300' : 'bg-slate-800 text-slate-500'
-                    }`}>
-                      {cmd.icon === 'LayoutDashboard' && <LayoutDashboard className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'FileText' && <FileText className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Package' && <Package className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'TrendingDown' && <TrendingDown className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'ArrowLeftRight' && <ArrowLeftRight className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Calculator' && <Calculator className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'User' && <User className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'ShieldCheck' && <ShieldCheck className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'CheckCheck' && <CheckCheck className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'BookOpen' && <BookOpen className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Scan' && <Scan className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'TrendingUp' && <TrendingUp className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Building' && <Building className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Bell' && <Bell className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'Users' && <Users className="w-3.5 h-3.5" />}
-                      {cmd.icon === 'SettingsIcon' && <SettingsIcon className="w-3.5 h-3.5" />}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-semibold truncate">{cmd.label}</p>
-                      <p className="text-[10px] text-slate-500">{cmd.category}</p>
-                    </div>
-                    {i === commandIdx && (
-                      <kbd className="text-[10px] font-mono text-brand-400 bg-brand-500/10 px-1.5 py-0.5 rounded">↵</kbd>
-                    )}
-                  </button>
-                ))
-              )}
-            </div>
-          </div>
-        </div>
-      )}
 
     </div>
   );

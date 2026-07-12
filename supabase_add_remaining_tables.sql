@@ -66,6 +66,15 @@ GRANT ALL ON public.stock_mouvements TO authenticated;
 GRANT ALL ON public.pieces_comptables TO authenticated;
 
 -- Realtime
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.stock;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.stock_mouvements;
-ALTER PUBLICATION supabase_realtime ADD TABLE IF NOT EXISTS public.pieces_comptables;
+DO $$ BEGIN
+  ALTER PUBLICATION supabase_realtime ADD TABLE public.stock;
+EXCEPTION WHEN duplicate_table THEN NULL;
+END $$;
+DO $$ BEGIN
+  ALTER PUBLICATION supabase_realtime ADD TABLE public.stock_mouvements;
+EXCEPTION WHEN duplicate_table THEN NULL;
+END $$;
+DO $$ BEGIN
+  ALTER PUBLICATION supabase_realtime ADD TABLE public.pieces_comptables;
+EXCEPTION WHEN duplicate_table THEN NULL;
+END $$;

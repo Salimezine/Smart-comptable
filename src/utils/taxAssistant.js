@@ -153,7 +153,7 @@ const FISCAL = {
 
 export async function initFiscalRates() {
   try {
-    const data = await loadFiscalData('_fallback');
+    const data = await loadFiscalData('fallback');
     if (!data || !data.taux) return;
     FISCAL._scraped = data;
   } catch (_) {}

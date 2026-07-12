@@ -23,7 +23,7 @@ Copy-Item -LiteralPath "mentions-legales.html" -Destination "dist\mentions-legal
 Write-Host "`nPatching SW precache..." -ForegroundColor Yellow
 $sw = Get-Content -LiteralPath 'dist/sw.js' -Raw
 $sw = $sw -replace 'createHandlerBoundToURL\("index\.html"\)', 'createHandlerBoundToURL("app.html")'
-$sw = $sw -replace '\}\]\,\{\}\)\,s\.cleanupOutdatedCaches', '},{url:"app.html",revision:null},{url:"index.html",revision:null},{url:"mentions-legales.html",revision:null}],{}),s.cleanupOutdatedCaches'
+$sw = $sw -replace '\}\]\,\{\}\)\,s\.cleanupOutdatedCaches', '},{url:"app.html",revision:null},{url:"mentions-legales.html",revision:null}],{}),s.cleanupOutdatedCaches'
 Set-Content -LiteralPath 'dist/sw.js' -Value $sw -NoNewline
 Write-Host "SW patched successfully" -ForegroundColor Green
 

@@ -366,7 +366,7 @@ export function saveSimpleEntry({ date, numeroPiece, compte, libelle, debit, cre
 
     // Sync cloud (non-bloquant)
     if (companyId) {
-      syncToCloud('journal_entries', { ...entry, company_id: companyId }, 'insert').catch(console.warn);
+      syncToCloud('journal_entries', { ...entry, company_id: companyId }, 'upsert').catch(console.warn);
     }
   } catch {
     /* silencieux */

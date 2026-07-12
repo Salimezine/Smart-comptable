@@ -1,5 +1,6 @@
 import { supabase, isSupabaseEnabled } from './supabaseClient';
 
+const CONFLICT_KEY = { journal_entries: 'id', stock: 'id', stock_mouvements: 'id', invoices: 'id', clients: 'id', fournisseurs: 'id' };
 const OFFLINE_QUEUE_KEY = 'smart_offline_queue';
 
 function getOfflineQueue() {
@@ -20,7 +21,7 @@ function clearOfflineQueue() {
   localStorage.removeItem(OFFLINE_QUEUE_KEY);
 }
 
-export async function syncToCloud(table, data, operation = 'insert') {
+export async function syncToCloud(table, data, operation = 'insert', skipQueue = false) {
   if (!isSupabaseEnabled()) return { success: false, reason: 'disabled' };
 
   try {
@@ -32,13 +33,13 @@ export async function syncToCloud(table, data, operation = 'insert') {
     } else if (operation === 'delete') {
       result = await supabase.from(table).delete().eq('id', data.id);
     } else if (operation === 'upsert') {
-      result = await supabase.from(table).upsert(data);
+      result = await supabase.from(table).upsert(data, { onConflict: CONFLICT_KEY[table] ?? 'id' });
     }
     if (result.error) throw result.error;
     return { success: true };
   } catch (err) {
     console.warn(`[Sync] ${table} ${operation} failed — queued:`, err.message);
-    addToOfflineQueue({ table, data, operation });
+    if (!skipQueue) addToOfflineQueue({ table, data, operation });
     return { success: false, reason: err.message };
   }
 }
@@ -52,14 +53,14 @@ export async function flushOfflineQueue() {
   const queue = getOfflineQueue();
   if (queue.length === 0) return;
 
+  clearOfflineQueue();
   const failed = [];
   for (const op of queue) {
-    const { success } = await syncToCloud(op.table, op.data, op.operation);
+    const upgradedOp = CONFLICT_KEY[op.table] && op.operation === 'insert' ? 'upsert' : op.operation;
+    const { success } = await syncToCloud(op.table, op.data, upgradedOp, true);
     if (!success) failed.push(op);
   }
-  failed.length === 0
-    ? clearOfflineQueue()
-    : setOfflineQueue(failed);
+  if (failed.length > 0) setOfflineQueue(failed);
 }
 
 export function initNetworkListener() {

@@ -14,7 +14,7 @@ const tvaRates = [19, 13, 7, 0];
 
 export async function initAuditRates() {
   try {
-    const data = await loadFiscalData('_fallback');
+    const data = await loadFiscalData('fallback');
     if (!data || !data.taux) return;
     const t = data.taux;
     if (t.tva_19) {

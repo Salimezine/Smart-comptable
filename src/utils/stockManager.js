@@ -66,7 +66,7 @@ async function syncStockToSupabase(companyId, stock, mouvements) {
     if (sErr) console.warn('stock sync err', sErr);
     const { error: mErr } = await supabase.from('stock_mouvements').upsert(
       mouvements.map(m => ({ ...m, company_id: companyId })),
-      { onConflict: 'id' }
+      { onConflict: 'id', ignoreDuplicates: false }
     );
     if (mErr) console.warn('stock mouvements sync err', mErr);
   } catch (e) { /* offline */ }
@@ -132,9 +132,8 @@ export function updateStockFromInvoice(invoice) {
         existing.valeurUnitaire = prixUnitaire;
         existing.derniereMaj = new Date().toISOString();
       } else if (!isSortie) {
-        // Créer article automatiquement pour les achats
         const newArticle = {
-          id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+          id: crypto.randomUUID?.() ?? Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
           designation,
           quantite: quantite,
           valeurUnitaire: prixUnitaire,
@@ -145,12 +144,13 @@ export function updateStockFromInvoice(invoice) {
       }
 
       mouvements.unshift({
-        id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        id: crypto.randomUUID?.() ?? Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
         date: invoice.dateEmission || new Date().toISOString().slice(0, 10),
         reference: invoice.id,
         designation,
         delta: delta * quantite,
-        prixUnitaire,
+        prix_unitaire: prixUnitaire,
+        quantite: quantite,
         type: isSortie ? 'sortie' : 'entree',
         timestamp: Date.now(),
       });
