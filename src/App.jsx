@@ -5422,7 +5422,7 @@ function StockView({ formatCurrency, currentCompanyId }) {
     const qte = Number(form.quantite);
     const pu = Number(form.prixUnitaire);
     const entry = {
-      id: editingId || (Date.now().toString(36) + Math.random().toString(36).slice(2, 6)),
+      id: editingId || crypto.randomUUID(),
       type: movementType,
       designation: form.designation,
       quantite: qte,
