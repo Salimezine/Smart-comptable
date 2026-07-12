@@ -42,6 +42,16 @@
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        let _refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (_refreshing) return;
+          _refreshing = true;
+          window.location.reload();
+        });
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
