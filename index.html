@@ -42,6 +42,26 @@
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
+    <script>
+      // Force SW cache cleanup before app loads — prevents stale SW serving old bundle
+      (async function() {
+        if (!('serviceWorker' in navigator)) return;
+        try {
+          const reg = await navigator.serviceWorker.getRegistration('/Smart-comptable/');
+          if (reg) {
+            await reg.unregister();
+            if ('caches' in window) {
+              const keys = await caches.keys();
+              await Promise.all(keys.filter(k => k.startsWith('workbox')).map(k => caches.delete(k)));
+            }
+            // reload to get fresh page (SW no longer intercepts)
+            if (window.location.pathname.includes('/Smart-comptable')) {
+              window.location.reload();
+            }
+          }
+        } catch(e) { console.warn('[SW] cleanup error:', e); }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
