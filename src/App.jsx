@@ -1453,7 +1453,7 @@ function AppContent() {
       entries.forEach(e => {
         if (!map[e.designation]) map[e.designation] = { qte: 0, total: 0 };
         map[e.designation].qte += (e.type === 'entree' ? 1 : -1) * e.quantite;
-        map[e.designation].total += (e.type === 'entree' ? 1 : -1) * e.quantite * e.prixUnitaire;
+        map[e.designation].total += (e.type === 'entree' ? 1 : -1) * e.quantite * (e.prix_unitaire ?? e.prixUnitaire ?? 0);
       });
       return Object.values(map).reduce((sum, v) => sum + Math.max(v.total, 0), 0);
     } catch { return 0; }
@@ -5372,7 +5372,7 @@ function StockView({ formatCurrency, currentCompanyId }) {
   const stockKey = currentCompanyId ? `smart_stock_${currentCompanyId}` : 'smart_stock';
 
   const [mouvements, setMouvements] = React.useState(() => {
-    try { return JSON.parse(localStorage.getItem(movKey) || '[]'); } catch { return []; }
+    try { return JSON.parse(localStorage.getItem(movKey) || '[]').map(m => { const { prixUnitaire, ...rest } = m; return { ...rest, prix_unitaire: rest.prix_unitaire ?? prixUnitaire ?? 0 }; }); } catch { return []; }
   });
   const [stockArticles, setStockArticles] = React.useState(() => {
     try { return JSON.parse(localStorage.getItem(stockKey) || '[]'); } catch { return []; }
@@ -5405,7 +5405,7 @@ function StockView({ formatCurrency, currentCompanyId }) {
     window.addEventListener('stock:updated', (() => {
       try {
         const raw = localStorage.getItem(movKey);
-        setMouvements(raw ? JSON.parse(raw) : []);
+        setMouvements(raw ? JSON.parse(raw).map(m => { const { prixUnitaire, ...rest } = m; return { ...rest, prix_unitaire: rest.prix_unitaire ?? prixUnitaire ?? 0 }; }) : []);
       } catch {}
     }));
     return () => window.removeEventListener('stock:updated', (() => {}));
@@ -5426,7 +5426,7 @@ function StockView({ formatCurrency, currentCompanyId }) {
       type: movementType,
       designation: form.designation,
       quantite: qte,
-      prixUnitaire: pu,
+      prix_unitaire: pu,
       fournisseur: form.fournisseur || 'Inconnu',
       reference: form.reference || '',
       articleType,
@@ -5469,7 +5469,7 @@ function StockView({ formatCurrency, currentCompanyId }) {
   };
 
   const handleEdit = (entry) => {
-    setForm({ designation: entry.designation, quantite: String(entry.quantite), prixUnitaire: String(entry.prixUnitaire), fournisseur: entry.fournisseur || '', reference: entry.reference || '' });
+    setForm({ designation: entry.designation, quantite: String(entry.quantite), prixUnitaire: String(entry.prix_unitaire ?? entry.prixUnitaire ?? ''), fournisseur: entry.fournisseur || '', reference: entry.reference || '' });
     setMovementType(entry.type);
     setEditingId(entry.id);
     setShowForm(true);
@@ -5640,14 +5640,14 @@ function StockView({ formatCurrency, currentCompanyId }) {
                 <span>{e.date}</span>
                 {e.reference && <><span>·</span><span className="text-slate-400">RÉf: {e.reference}</span></>}
                 <span>·</span>
-                <span>PU: {formatCurrency(e.prixUnitaire)}</span>
+                <span>PU: {formatCurrency(e.prix_unitaire ?? e.prixUnitaire)}</span>
               </div>
             </div>
             <div className="text-right flex-shrink-0 ml-3">
               <span className={`text-xs font-bold ${e.type === 'entree' ? 'text-emerald-400' : 'text-red-400'}`}>
                 {e.type === 'entree' ? '+' : '-'}{e.quantite}
               </span>
-              <span className="text-[10px] text-slate-400 block">{formatCurrency(e.quantite * e.prixUnitaire)}</span>
+              <span className="text-[10px] text-slate-400 block">{formatCurrency(e.quantite * (e.prix_unitaire ?? e.prixUnitaire))}</span>
             </div>
             <div className="flex gap-1 ml-2 opacity-0 group-hover:opacity-100 transition-opacity">
               <button onClick={() => handleEdit(e)} className="p-1 rounded text-[10px] text-slate-500 hover:text-slate-200 hover:bg-slate-700/50 transition-colors" title="Modifier">✏️</button>
