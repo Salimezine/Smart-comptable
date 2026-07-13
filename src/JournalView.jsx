@@ -33,12 +33,14 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
     return s;
   };
 
+  const pcgKeys = React.useMemo(() => Object.keys(PCG_COMPLET), []);
+
   const findLibelle = (code) => {
     if (!code) return '';
     const c = String(code).trim().split(/\s/)[0];
     const exact = PCG_COMPLET[c];
     if (exact) return exact;
-    const prefix = Object.keys(PCG_COMPLET).filter(k => c.startsWith(k)).sort((a, b) => b.length - a.length)[0];
+    const prefix = pcgKeys.filter(k => c.startsWith(k)).sort((a, b) => b.length - a.length)[0];
     return prefix ? PCG_COMPLET[prefix] : '';
   };
 
