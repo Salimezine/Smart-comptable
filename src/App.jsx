@@ -1208,7 +1208,7 @@ function AppContent() {
                 const movKey = `smart_stock_mouvements_${currentCompanyId}`;
                 const localMov = JSON.parse(localStorage.getItem(movKey) || '[]');
                 if (localMov.length) {
-                  const synced = localMov.map(m => ({ ...m, company_id: currentCompanyId }));
+                  const synced = localMov.map(m => { const { prixUnitaire, ...rest } = m; return { ...rest, company_id: currentCompanyId }; });
                   await supabase.from('stock_mouvements').upsert(synced, { onConflict: 'id' });
                 }
               } catch (ee) { console.warn('[Save] Stock sync:', ee); }
@@ -5413,7 +5413,8 @@ function StockView({ formatCurrency, currentCompanyId }) {
 
   React.useEffect(() => {
     if (isSupabaseEnabled() && navigator.onLine && currentCompanyId && isUUID(currentCompanyId) && mouvements.length) {
-      upsertSupabaseData('stock_mouvements', currentCompanyId, mouvements).catch((e) => { console.warn('[sync] stock sync failed:', e?.message); toast.error('Sync cloud: échec sync stock.'); });
+      const clean = mouvements.map(m => { const { prixUnitaire, ...rest } = m; return rest; });
+      upsertSupabaseData('stock_mouvements', currentCompanyId, clean).catch((e) => { console.warn('[sync] stock sync failed:', e?.message); toast.error('Sync cloud: échec sync stock.'); });
     }
   }, [mouvements, currentCompanyId]);
 
@@ -6131,13 +6132,34 @@ function WorkflowView({
   );
 }
 
+class ErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = { error: null }; }
+  static getDerivedStateFromError(error) { return { error }; }
+  componentDidCatch(error, info) {
+    console.error('[ErrorBoundary]', error?.message, error?.stack);
+  }
+  render() {
+    if (this.state.error) {
+      return <div className="flex items-center justify-center h-screen bg-surface-900 text-slate-400 p-8 text-center">
+        <div><h2 className="text-lg font-bold text-danger-400 mb-2">Erreur inattendue</h2>
+        <p className="text-sm text-slate-500 mb-4">{this.state.error?.message}</p>
+        <button onClick={() => { this.setState({ error: null }); window.location.reload(); }}
+          className="px-4 py-2 bg-brand-500 text-white rounded-xl text-sm">Recharger</button></div>
+      </div>;
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   return (
-    <ToastProvider>
-      <ConfirmProvider>
-        <AppContent />
-      </ConfirmProvider>
-    </ToastProvider>
+    <ErrorBoundary>
+      <ToastProvider>
+        <ConfirmProvider>
+          <AppContent />
+        </ConfirmProvider>
+      </ToastProvider>
+    </ErrorBoundary>
   );
 }
 

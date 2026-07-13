@@ -24,12 +24,13 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
 
   const cleanLibelle = (compte, libelle) => {
-    if (!libelle || !compte) return libelle || '';
-    const code = compte.toString().trim();
-    if (libelle.startsWith(code)) {
-      return libelle.slice(code.length).replace(/^[—–\-:\s]{1,3}/, '').trim();
+    if (!libelle || !compte) return String(libelle || '');
+    const s = String(libelle);
+    const code = String(compte).trim();
+    if (s.startsWith(code)) {
+      return s.slice(code.length).replace(/^[—–\-:\s]{1,3}/, '').trim();
     }
-    return libelle;
+    return s;
   };
 
   const findLibelle = (code) => {
