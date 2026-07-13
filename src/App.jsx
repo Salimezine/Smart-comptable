@@ -1531,7 +1531,7 @@ function AppContent() {
   };
 
   return (
-    <div className="flex h-screen bg-surface-800 text-slate-100 font-sans overflow-hidden relative">
+    <div className="flex h-dvh bg-surface-800 text-slate-100 font-sans overflow-hidden relative">
       {/* Mobile overlay */}
       {sidebarOpen && (
         <div className="fixed inset-0 bg-black/50 z-30 lg:hidden" onClick={() => setSidebarOpen(false)} />
