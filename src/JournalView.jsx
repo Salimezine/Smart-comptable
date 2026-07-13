@@ -34,9 +34,10 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
 
   const findLibelle = (code) => {
     if (!code) return '';
-    const exact = PCG_COMPLET[code];
+    const c = String(code).trim().split(/\s/)[0];
+    const exact = PCG_COMPLET[c];
     if (exact) return exact;
-    const prefix = Object.keys(PCG_COMPLET).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
+    const prefix = Object.keys(PCG_COMPLET).filter(k => c.startsWith(k)).sort((a, b) => b.length - a.length)[0];
     return prefix ? PCG_COMPLET[prefix] : '';
   };
 
@@ -453,7 +454,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
       )}
 
       {detailPiece && !editingPiece && (() => {
-        const lines = displayJournal.filter(e => e.numeroPiece === detailPiece);
+        const lines = displayJournal.filter(e => (e.numeroPiece || 'N/A') === detailPiece);
         if (lines.length === 0) return null;
         const totalDeb = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
         const totalCred = lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);

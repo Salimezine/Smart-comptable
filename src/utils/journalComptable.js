@@ -289,7 +289,7 @@ export function saveJournalPiece(piece, opts = {}) {
       piece_justificative: piece.piece_justificative || piece.id,
       fournisseur: piece.fournisseur || '',
       categorie: piece.categorie || '',
-      compte: l.libelleCompte,
+      compte: l.compte || l.libelleCompte?.split(' ')[0] || '',
       libelle: l.libelle,
       debit: l.debit || null,
       credit: l.credit || null,
