@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   base: '/Smart-comptable/',
@@ -9,36 +8,6 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ['logo.png', 'icons.svg', 'favicon.svg'],
-      manifest: {
-        name: 'Smart Comptable — Comptabilité Tunisienne',
-        short_name: 'Smart Compta',
-        description: 'Comptabilité tunisienne automatisée : facturation TEIF, TVA, IRPP, IS, paie, OCR',
-        theme_color: '#0f172a',
-        background_color: '#0f172a',
-        display: 'standalone',
-        orientation: 'any',
-        lang: 'fr',
-        start_url: '/Smart-comptable/app.html',
-        scope: '/Smart-comptable/',
-        icons: [
-          { src: '/Smart-comptable/logo.png', sizes: '192x192', type: 'image/png' },
-          { src: '/Smart-comptable/logo.png', sizes: '512x512', type: 'image/png' },
-        ],
-      },
-      workbox: {
-        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-        globIgnores: ['**/tesseract/**', 'landing.html', 'mentions-legales.html', 'app.html'],
-        cleanupOutdatedCaches: true,
-        skipWaiting: true,
-        clientsClaim: true,
-        navigateFallback: '/Smart-comptable/app.html',
-        navigateFallbackDenylist: [/^\/Smart-comptable\/(?!app)/],
-      },
-    }),
   ],
   build: {
     chunkSizeWarningLimit: 600,

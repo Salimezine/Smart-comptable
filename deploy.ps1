@@ -19,15 +19,10 @@ Copy-Item -LiteralPath "dist\index.html" -Destination "dist\app.html" -Force
 Copy-Item -LiteralPath "landing.html" -Destination "dist\index.html" -Force
 Copy-Item -LiteralPath "mentions-legales.html" -Destination "dist\mentions-legales.html" -Force
 
-# Patcher le Service Worker pour ajouter les HTML au precache et corriger le handler
-Write-Host "`nPatching SW precache..." -ForegroundColor Yellow
-$sw = Get-Content -LiteralPath 'dist/sw.js' -Raw
-$sw = $sw -replace 'createHandlerBoundToURL\("index\.html"\)', 'createHandlerBoundToURL("app.html")'
-$sw = $sw -replace '\}\]\,\{\}\)\,s\.cleanupOutdatedCaches', '},{url:"app.html",revision:null},{url:"mentions-legales.html",revision:null}],{}),s.cleanupOutdatedCaches'
-# Secure clientsClaim — catch InvalidStateError
-$sw = $sw -replace 's\.clientsClaim\(\)', 'self.addEventListener("activate",()=>{self.clients.claim().catch(()=>{})})'
-Set-Content -LiteralPath 'dist/sw.js' -Value $sw -NoNewline
-Write-Host "SW patched successfully" -ForegroundColor Green
+# Supprimer les artefacts SW (PWA désactivé — causes de boucle de refresh)
+Remove-Item -LiteralPath "dist\sw.js" -Force -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath "dist\workbox-*.js" -Force -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath "dist\registerSW.js" -Force -ErrorAction SilentlyContinue
 
 # 2. Tests
 Write-Host "`n[2/3] Tests..." -ForegroundColor Yellow
