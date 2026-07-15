@@ -43,9 +43,9 @@ export function balancesToReports(accounts) {
   // Stocks
   const stockBalance = s('3');
   const provStockBalance = s('39');
-  const stocksBrutVal = ok(stockBalance);
-  const provisionsStocksVal = ok(provStockBalance < 0 ? -provStockBalance : 0);
-  const stocks = ok(stockBalance + (provStockBalance < 0 ? provStockBalance : 0));
+  const stocksBrutVal = ok(stockBalance - Math.min(0, provStockBalance));
+  const provisionsStocksVal = ok(Math.max(0, -provStockBalance));
+  const stocks = ok(stockBalance);
 
   // Clients
   const cl = s('41'); const provCl = s('491');
@@ -59,9 +59,9 @@ export function balancesToReports(accounts) {
   const personnelDebit = ok(Math.max(0, s('425')));
   const personnelCredit = ok(Math.max(0, -(s('421') + s('428'))));
 
-  // Autres actifs courants: 409, remaining 44, 46, 47, 48 debit balances
+  // Autres actifs courants: 409, other 44, 46, 47 debit, 48 debit (charges constatées d'avance)
   const autresCréances = ok(
-    Math.max(0, s('409')) + Math.max(0, s('44')) + Math.max(0, s('46')) + Math.max(0, s('47')) + Math.max(0, s('48'))
+    Math.max(0, s('409')) + Math.max(0, s('44')) + Math.max(0, s('46')) + Math.max(0, s('47')) + debit('48')
   );
 
   // Trésorerie
@@ -75,21 +75,12 @@ export function balancesToReports(accounts) {
   const provisionsDettes = ok(s('15') < 0 ? -s('15') : 0);
   const fournisseurs = ok(Math.max(0, credit('40') - debit('409')));
   const autresDettes = ok(
-    Math.max(0, -(s('409'))) + Math.max(0, -(s('44'))) + Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + Math.max(0, -(s('48'))) + Math.max(0, -(s('49')))
+    Math.max(0, -(s('409'))) + Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + credit('48') + Math.max(0, -(s('49')))
   );
   const concoursBancaires = ok(s('52') < 0 ? -s('52') : 0);
 
-  const capPropres = ok(capital + reserves + resultatsReportes + subventionsInvestissement);
-  const passifNC = ok(emprunts + provisionsDettes);
-  const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires);
-  const totalPassif = ok(capPropres + passifNC + passifC);
-
-  if (Math.abs(totalActif - totalPassif) > 0.01) {
-    anomalies.push(`Bilan non équilibré : Actif=${totalActif} ≠ Passif=${totalPassif} (écart=${(totalActif - totalPassif).toFixed(3)})`);
-  }
-
-  // État de résultat
-  const ventes = credit('70');
+  // État de résultat (must precede capPropres which includes resultatExercice)
+  const ventes = credit('70') - debit('709');
   const productionStockee = credit('71');
   const productionImmobilisee = credit('72');
   const subventionsExploitation = credit('74');
@@ -97,13 +88,14 @@ export function balancesToReports(accounts) {
   const reprises = credit('78');
   const produitsExploitation = ventes + productionStockee + productionImmobilisee + subventionsExploitation + autresProduitsExploitation + reprises;
 
-  const achatsConsommes = debit('60');
+  const achatsConsommes = debit('60') - credit('603');
   const chargesExternes = debit('61');
-  const chargesPersonnel = debit('62');
+  const autresServicesExterieurs = debit('62');
+  const chargesDePersonnel = debit('64') + debit('62');
   const impotsTaxes = debit('63');
   const autresChargesExploitation = debit('65');
   const dotations = debit('68');
-  const chargesExploitation = achatsConsommes + chargesExternes + chargesPersonnel + impotsTaxes + autresChargesExploitation + dotations;
+  const chargesExploitation = achatsConsommes + chargesExternes + chargesDePersonnel + impotsTaxes + autresChargesExploitation + dotations;
 
   const resultatExploitation = ok(produitsExploitation - chargesExploitation);
   const produitsFinanciers = credit('76');
@@ -117,6 +109,15 @@ export function balancesToReports(accounts) {
   const resultatNet = ok(resultatAvantImpot + resultatExceptionnel - impot);
   const resultatExercice = resultatNet;
 
+  const capPropres = ok(capital + reserves + resultatsReportes + subventionsInvestissement + resultatExercice);
+  const passifNC = ok(emprunts + provisionsDettes);
+  const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires);
+  const totalPassif = ok(capPropres + passifNC + passifC);
+
+  if (Math.abs(totalActif - totalPassif) > 0.01) {
+    anomalies.push(`Bilan non équilibré : Actif=${totalActif} ≠ Passif=${totalPassif} (écart=${(totalActif - totalPassif).toFixed(3)})`);
+  }
+
   // SIG
   const vMarch = credit('70') - credit('706');
   const prestations = credit('706');
@@ -124,8 +125,8 @@ export function balancesToReports(accounts) {
   const vStockMarch = s('36');
   const margeCommerciale = ok(vMarch - aMarch + vStockMarch);
   const productionExercice = ok(prestations + productionStockee + productionImmobilisee);
-  const valeurAjoutee = ok(margeCommerciale + productionExercice - achatsConsommes - chargesExternes);
-  const ebe = ok(valeurAjoutee + subventionsExploitation - chargesPersonnel - impotsTaxes);
+  const valeurAjoutee = ok(margeCommerciale + productionExercice - achatsConsommes - chargesExternes - autresServicesExterieurs);
+  const ebe = ok(valeurAjoutee + subventionsExploitation - chargesDePersonnel - impotsTaxes);
   const sigResultatExploitation = ok(ebe + reprises - dotations + autresProduitsExploitation - autresChargesExploitation);
   const sigRcai = ok(sigResultatExploitation + resultatFinancier);
   const sigResultatNet = ok(sigRcai + resultatExceptionnel - impot);
@@ -197,7 +198,7 @@ export function balancesToReports(accounts) {
       achatsMP: ok(debit('602')),
       autresAchatsSIG: ok(debit('60') - debit('601') - debit('602')),
       chargesExternes: ok(chargesExternes),
-      chargesPersonnel: ok(chargesPersonnel),
+      chargesPersonnel: ok(chargesDePersonnel),
       impotsTaxes: ok(impotsTaxes),
       autresChargesExploitation: ok(autresChargesExploitation),
       autresCharges: ok(autresChargesExploitation),
