@@ -55,7 +55,7 @@ export function balancesToReports(accounts) {
 
   // État, social, personnel, autres
   const etatDebit = ok(Math.max(0, s('43')) + Math.max(0, s('445661') + s('445662') + s('445668')) + Math.max(0, s('446')));
-  const etatCredit = ok(Math.max(0, -(s('43'))) + Math.max(0, -(s('444') + s('445671') + s('447') + s('448')))));
+  const etatCredit = ok(Math.max(0, -(s('43'))) + Math.max(0, -(s('444') + s('445671') + s('447') + s('448'))));
   const personnelDebit = ok(Math.max(0, s('425')));
   const personnelCredit = ok(Math.max(0, -(s('421') + s('428'))));
 
