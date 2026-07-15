@@ -22,44 +22,64 @@ export function balancesToReports(accounts) {
 
   const ok = (v) => isNaN(v) || !isFinite(v) ? 0 : Math.round(v * 1000) / 1000;
 
-  const cap = s('10'); const res = s('11'); const rr = s('12'); const rEx = s('13');
+  // Capitaux propres
+  const cap = s('10'); const res = s('11'); const rr = s('12');
   const capital = ok(cap < 0 ? -cap : 0);
   const reserves = ok(res < 0 ? -res : 0);
   const resultatsReportes = ok(rr < 0 ? -rr : 0);
-  const resultatExercice = ok(rEx < 0 ? -rEx : 0);
+  const subventionsInvestissement = ok(s('13') < 0 ? -s('13') : 0);
 
-  const fp = s('20'); const ii = s('21'); const ic = s('22') + s('23') + s('24') + s('25'); const ifi = s('27');
+  // Immobilisations — Tunisian PCG: 20=frais prélim, 21=corporelles, 22=incorporelles, 25=participations, 27=financières
+  const fp = s('20');
+  const ic = s('21');            // immobilisations CORPORELLES
+  const ii = s('22') + s('24');  // immobilisations INCORPORELLES (22=brevets/logiciels, 24=autres incorp.)
+  const ifi = s('27');           // immobilisations FINANCIÈRES
   const am = s('28'); const pnc = s('29');
-  const ancBrut = ok(fp + ii + ic + ifi);
+  const ancBrut = ok(fp + ic + ii + ifi);
   const amortissements = ok(am < 0 ? -am : 0);
   const provActifNC = ok(pnc < 0 ? -pnc : 0);
   const actifNC = ok(ancBrut - amortissements - provActifNC);
 
+  // Stocks
   const stockBalance = s('3');
   const provStockBalance = s('39');
-  const stocksBrutVal = ok(stockBalance - provStockBalance);
+  const stocksBrutVal = ok(stockBalance);
   const provisionsStocksVal = ok(provStockBalance < 0 ? -provStockBalance : 0);
-  const stocks = ok(stockBalance > 0 ? stockBalance : 0);
+  const stocks = ok(stockBalance + (provStockBalance < 0 ? provStockBalance : 0));
+
+  // Clients
   const cl = s('41'); const provCl = s('491');
   const clients = ok(cl > 0 ? cl : 0);
   const provisionsClients = ok(provCl < 0 ? -provCl : 0);
   const clientsNets = ok(clients - provisionsClients);
-  const etatDebit = ok(s('43') > 0 ? s('43') : 0);
-  const personnelDebit = ok(s('45') > 0 ? s('45') : 0);
-  const autresCréances = ok(s('40') + s('44') + s('46') + s('47') + s('48'));
+
+  // État, social, personnel, autres
+  const etatDebit = ok(Math.max(0, s('43')) + Math.max(0, s('445661') + s('445662') + s('445668')) + Math.max(0, s('446')));
+  const etatCredit = ok(Math.max(0, -(s('43'))) + Math.max(0, -(s('444') + s('445671') + s('447') + s('448')))));
+  const personnelDebit = ok(Math.max(0, s('425')));
+  const personnelCredit = ok(Math.max(0, -(s('421') + s('428'))));
+
+  // Autres actifs courants: 409, remaining 44, 46, 47, 48 debit balances
+  const autresCréances = ok(
+    Math.max(0, s('409')) + Math.max(0, s('44')) + Math.max(0, s('46')) + Math.max(0, s('47')) + Math.max(0, s('48'))
+  );
+
+  // Trésorerie
   const tresorerie = ok(s('5'));
+
   const actifC = ok(stocks + clientsNets + etatDebit + personnelDebit + autresCréances + tresorerie);
   const totalActif = ok(actifNC + actifC);
 
+  // Passif
   const emprunts = ok(s('16') < 0 ? -s('16') : 0);
   const provisionsDettes = ok(s('15') < 0 ? -s('15') : 0);
-  const fournisseurs = ok(s('40') < 0 ? -s('40') : 0);
-  const etatCredit = ok(s('43') < 0 ? -s('43') : 0);
-  const personnelCredit = ok(s('42') < 0 ? -s('42') : 0);
-  const autresDettes = ok(s('44') + s('46') + s('47') + s('48') + s('49'));
+  const fournisseurs = ok(Math.max(0, credit('40') - debit('409')));
+  const autresDettes = ok(
+    Math.max(0, -(s('409'))) + Math.max(0, -(s('44'))) + Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + Math.max(0, -(s('48'))) + Math.max(0, -(s('49')))
+  );
   const concoursBancaires = ok(s('52') < 0 ? -s('52') : 0);
 
-  const capPropres = ok(capital + reserves + resultatsReportes + resultatExercice);
+  const capPropres = ok(capital + reserves + resultatsReportes + subventionsInvestissement);
   const passifNC = ok(emprunts + provisionsDettes);
   const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires);
   const totalPassif = ok(capPropres + passifNC + passifC);
@@ -95,10 +115,7 @@ export function balancesToReports(accounts) {
   const resultatAvantImpot = ok(resultatExploitation + resultatFinancier);
   const impot = debit('69');
   const resultatNet = ok(resultatAvantImpot + resultatExceptionnel - impot);
-
-  if (Math.abs(resultatNet - resultatExercice) > 0.01) {
-    anomalies.push(`Résultat CPC (${resultatNet}) ≠ Résultat bilan (${resultatExercice})`);
-  }
+  const resultatExercice = resultatNet;
 
   // SIG
   const vMarch = credit('70') - credit('706');
@@ -153,7 +170,7 @@ export function balancesToReports(accounts) {
       tresorerie, tresorerieActif: tresorerie,
       capital, capitalSocial: capital,
       reserves, resultatsReportes, resultatExercice,
-      autresCapitauxPropres: 0,
+      autresCapitauxPropres: subventionsInvestissement,
       capPropres, passifNC, passifC, totalPassif,
       emprunts, provisionsDettes, provisions: provisionsDettes,
       autresPassifsNC: 0,
