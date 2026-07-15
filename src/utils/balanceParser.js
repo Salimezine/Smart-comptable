@@ -384,7 +384,7 @@ export async function parsePDFFile(file) {
       for (let i = 1; i < parts.length; i++) {
         const p = parts[i].trim();
         const n = cleanNum(p);
-        if (!isNaN(n) && isFinite(n) && p.replace(/[\s,.]/g, '').length === String(Math.abs(Math.round(n))).length) {
+        if (!isNaN(n) && isFinite(n) && /[.,]/.test(p)) {
           numInfos.push({ val: n, x: i < clusterX.length ? clusterX[i] : 0 });
         } else {
           labelParts.push(p);
