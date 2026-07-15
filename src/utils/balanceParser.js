@@ -50,11 +50,39 @@ function cleanNum(val) {
   return parseFloat(s);
 }
 
-function detectColumnIndex(headers, keywords) {
-  const h = headers.map((h, i) => ({ h: String(h).toLowerCase().trim(), i }));
+function detectColumnIndex(headers, keywords, data) {
+  const h = headers.map((h, i) => ({ h: String(h).toLowerCase().trim().replace(/[^a-z0-9éèêëàâäùûüôöîïç]/g, ''), i }));
+  const raw = headers.map((h, i) => ({ h: String(h).toLowerCase().trim(), i }));
   for (const kw of keywords) {
-    const match = h.find(x => x.h.includes(kw) || x.h === kw);
+    const kwClean = kw.replace(/[^a-z0-9éèêëàâäùûüôöîïç]/g, '');
+    const match = h.find(x => x.h.includes(kwClean) || x.h === kwClean);
     if (match) return match.i;
+    const rawMatch = raw.find(x => x.h.includes(kw) || x.h === kw);
+    if (rawMatch) return rawMatch.i;
+  }
+  if (data && data.length > 0) {
+    const numericCols = [];
+    for (let col = 0; col < headers.length; col++) {
+      const sample = data.slice(0, 20).map(r => r[col]).filter(v => v != null && v !== '');
+      const numCount = sample.filter(v => !isNaN(parseFloat(String(v).replace(',', '.'))) && isFinite(Number(String(v).replace(',', '.')))).length;
+      if (numCount > sample.length * 0.4 && numCount >= 3) {
+        numericCols.push(col);
+      }
+    }
+    const compteCols = [];
+    for (const col of numericCols) {
+      const sample = data.slice(0, 30).map(r => String(r[col]).trim());
+      const codeLike = sample.filter(v => /^\d{3,8}$/.test(v)).length;
+      if (codeLike >= 5) compteCols.push(col);
+    }
+    if (compteCols.length === 1) return compteCols[0];
+    if (compteCols.length > 1) {
+      return compteCols.reduce((a, b) => {
+        const aLen = data.slice(0, 30).filter(r => /^\d{3,8}$/.test(String(r[a]).trim())).length;
+        const bLen = data.slice(0, 30).filter(r => /^\d{3,8}$/.test(String(r[b]).trim())).length;
+        return aLen >= bLen ? a : b;
+      });
+    }
   }
   return -1;
 }
@@ -87,15 +115,45 @@ function normalizeCompte(val) {
   return s.replace(/[^0-9]/g, '');
 }
 
+function findAmountColumns(headers, data) {
+  const results = {};
+  const h = headers.map((h, i) => ({ h: String(h).toLowerCase().trim().replace(/[^a-z0-9éèêëàâäùûüôöîïç]/g, ''), i }));
+  const numericCols = [];
+  for (let col = 0; col < headers.length; col++) {
+    const sample = data.slice(0, 30).map(r => r[col]).filter(v => v != null && v !== '');
+    const numCount = sample.filter(v => !isNaN(parseFloat(String(v).replace(',', '.'))) && isFinite(Number(String(v).replace(',', '.')))).length;
+    if (numCount > sample.length * 0.4 && numCount >= 3) numericCols.push(col);
+  }
+  const debitCredit = numericCols.filter(c => {
+    const vals = data.slice(0, 50).map(r => parseFloat(String(r[c]).replace(',', '.')) || 0);
+    const hasPositive = vals.some(v => v > 0);
+    const hasNegative = vals.some(v => v < 0);
+    return hasPositive && hasNegative;
+  });
+  if (debitCredit.length === 1) {
+    results.debit = debitCredit[0];
+    results.credit = debitCredit[0];
+  } else if (debitCredit.length >= 2) {
+    results.debit = debitCredit[0];
+    results.credit = debitCredit[1];
+  }
+  return results;
+}
+
 function extractAccountsFromRows(headers, data, type) {
-  const colCompte = detectColumnIndex(headers, ['compte','numéro','n°','numéro de compte','code compte','comptes','code']);
-  const colLibelle = detectColumnIndex(headers, ['intitulé','libellé','désignation','lib','nom','label','name']);
-  const colDebit = detectColumnIndex(headers, ['débit','debit','total débit','cumul débit','mouvement débiteur','montant débit']);
-  const colCredit = detectColumnIndex(headers, ['crédit','credit','total crédit','cumul crédit','mouvement créditeur','montant crédit']);
-  const colSoldeDeb = detectColumnIndex(headers, ['solde débiteur','solde debiteur','solde débiteur']);
-  const colSoldeCred = detectColumnIndex(headers, ['solde créditeur','solde crediteur','solde créditeur']);
-  const colSolde = detectColumnIndex(headers, ['solde','soldes','solde net']);
-  const colMontant = detectColumnIndex(headers, ['montant','total','valeur']);
+  let colCompte = detectColumnIndex(headers, ['compte','numéro','n°','numéro de compte','code compte','comptes','code','numero compte','compte numero','n compte'], data);
+  let colLibelle = detectColumnIndex(headers, ['intitulé','libellé','désignation','lib','nom','label','name','designation'], data);
+  let colDebit = detectColumnIndex(headers, ['débit','debit','total débit','cumul débit','mouvement débiteur','montant débit','solde debiteur','mvt debit','mouvement debit'], data);
+  let colCredit = detectColumnIndex(headers, ['crédit','credit','total crédit','cumul crédit','mouvement créditeur','montant crédit','solde crediteur','mvt credit','mouvement credit'], data);
+  let colSoldeDeb = detectColumnIndex(headers, ['solde débiteur','solde debiteur'], data);
+  let colSoldeCred = detectColumnIndex(headers, ['solde créditeur','solde crediteur'], data);
+  let colSolde = detectColumnIndex(headers, ['solde','soldes','solde net','montant','total','valeur','net'], data);
+  let colMontant = detectColumnIndex(headers, ['montant','total','valeur'], data);
+
+  if (colCompte < 0) colCompte = 0;
+  const amtCols = findAmountColumns(headers, data);
+  if (colDebit < 0 && amtCols.debit != null) colDebit = amtCols.debit;
+  if (colCredit < 0 && amtCols.credit != null) colCredit = amtCols.credit;
 
   const accounts = [];
   for (const row of data) {
@@ -126,7 +184,31 @@ function extractAccountsFromRows(headers, data, type) {
       }
     }
 
-    accounts.push({ compte, libelle, debitTotal: debit || 0, creditTotal: credit || 0, soldeDebiteur: (debit > credit ? debit - credit : 0), soldeCrediteur: (credit > debit ? credit - debit : 0) });
+    if (debit !== 0 || credit !== 0) {
+      accounts.push({ compte, libelle, debitTotal: debit || 0, creditTotal: credit || 0, soldeDebiteur: (debit > credit ? debit - credit : 0), soldeCrediteur: (credit > debit ? credit - debit : 0) });
+    }
+  }
+
+  if (accounts.length === 0 && data.length > 0) {
+    const numCols = [];
+    for (let col = 0; col < headers.length; col++) {
+      const sample = data.slice(0, 40).map(r => r[col]).filter(v => v != null && v !== '');
+      const nums = sample.filter(v => !isNaN(cleanNum(v)) && isFinite(cleanNum(v)));
+      if (nums.length >= 5) numCols.push(col);
+    }
+    const acctCol = numCols.find(c => {
+      return data.slice(0, 40).filter(r => /^\d{3,8}$/.test(String(r[c]).trim())).length >= 5;
+    });
+    if (acctCol != null) {
+      const amtCol = numCols.find(c => c !== acctCol);
+      for (const row of data) {
+        const compte = normalizeCompte(row[acctCol]);
+        if (!compte || compte.length < 2) continue;
+        if (isNaN(parseInt(compte, 10))) continue;
+        const val = amtCol != null ? (cleanNum(row[amtCol]) || 0) : 0;
+        accounts.push({ compte, libelle: '', debitTotal: val > 0 ? val : 0, creditTotal: val < 0 ? -val : 0, soldeDebiteur: val > 0 ? val : 0, soldeCrediteur: val < 0 ? -val : 0 });
+      }
+    }
   }
 
   return accounts;
