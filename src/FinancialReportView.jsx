@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
-import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
-import { exportToExcel } from './excelExport';
+import { generateBalanceSheet, generateIncomeStatement, generateFromJournal } from './accountingUtils';
 import { exportReportsPDF, exportReportsExcel } from './utils/reportExport';
 import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
@@ -398,6 +396,42 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     };
   }
 
+  // Build sig + fluxTresorerie for all modes
+  if (!sig) {
+    const r = resultat;
+    const marge = r.margeCommerciale ?? (r.ventesMarchandises - (r.achatsMarchandises || 0));
+    const prod = r.productionExercice ?? r.ventes + (r.productionStockee || 0);
+    const va = r.valeurAjoutee ?? marge + prod - (r.achatsConsommes || 0) - (r.chargesExternes || 0);
+    const ebe = r.ebe ?? va + (r.subventionsExploitation || 0) - (r.chargesPersonnel || 0) - (r.impotsTaxes || 0);
+    const sigExpl = ebe + (r.reprises || 0) - (r.dotations || 0);
+    const rcai = r.rcai ?? sigExpl + (r.resultatFinancier || 0);
+    sig = {
+      margeCommerciale: marge,
+      productionExercice: prod,
+      valeurAjoutee: va,
+      ebe,
+      sigResultatExploitation: sigExpl,
+      sigRcai: rcai,
+      sigResultatNet: r.sigResultatNet ?? rcai - (r.impot || 0),
+    };
+  }
+  if (!fluxTresorerie) {
+    const rn = resultat.resultatNet ?? 0;
+    const dot = resultat.dotations ?? 0;
+    const rep = resultat.reprises ?? 0;
+    const mba = rn + dot - rep;
+    fluxTresorerie = {
+      resultatNet: rn,
+      dotations: dot,
+      reprises: rep,
+      margeBruteAutofinancement: mba,
+      fluxExploitation: mba,
+      fluxInvestissement: 0,
+      fluxFinancement: 0,
+      variationTresorerie: mba,
+    };
+  }
+
   const resultatNet = resultat.resultatNet ?? (resultat.resultatExploitation - resultat.chargesFinancieres);
 
   // Compteurs pour les détails non-journal
@@ -452,24 +486,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </select>
           <button onClick={() => {
             try {
-              if (hasImported) {
-                exportReportsPDF({ bilan, resultat, sig, ratios, fluxTresorerie, controle });
-                toast.success('Rapport PDF exporté avec succès.');
-              } else {
-                exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotal));
-                toast.success('Bilan PDF exporté avec succès.');
-              }
+              exportReportsPDF({ bilan, resultat, sig, ratios, fluxTresorerie, controle });
+              toast.success('Rapport PDF exporté avec succès.');
             } catch(e) { console.error('PDF export error:', e); toast.error('Erreur PDF: ' + e.message); }
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileText className="w-3.5 h-3.5" /> PDF
           </button>
           <button onClick={() => {
-            if (hasImported) {
-              exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle }).catch(console.error);
-            } else {
-              exportToExcel(invoices, expenses, transactions, companyDetails, {}, stockTotal).catch(console.error);
-            }
+            exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle }).catch(console.error);
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
