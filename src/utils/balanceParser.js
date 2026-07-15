@@ -214,6 +214,21 @@ function extractAccountsFromRows(headers, data, type) {
   return accounts;
 }
 
+function findHeaderRow(rows) {
+  const allHeaders = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','actif','passif','rubriques','montant','total',
+    'actifs non courants','capitaux propres','classe','soldes','lib','nom','code','num'];
+  let bestRow = 0;
+  let bestScore = 0;
+  for (let i = 0; i < Math.min(rows.length, 15); i++) {
+    const rowText = rows[i].map(v => String(v?.value ?? v ?? '').toLowerCase().trim()).join(' ');
+    const score = allHeaders.filter(h => rowText.includes(h)).length;
+    if (score > bestScore) { bestScore = score; bestRow = i; }
+    const hasCode = rows[i].some(v => /^\d{3,8}$/.test(String(v?.value ?? v ?? '').trim()));
+    if (hasCode && score >= 2) { bestRow = i; break; }
+  }
+  return bestRow;
+}
+
 export async function parseExcelFile(file) {
   const buffer = await file.arrayBuffer();
   const wb = new ExcelJS.Workbook();
@@ -230,8 +245,9 @@ export async function parseExcelFile(file) {
 
   if (rows.length < 2) throw new Error('Le fichier Excel est vide.');
 
-  const headers = rows[0].map(h => h?.value ?? h ?? '');
-  const data = rows.slice(1).filter(r => r.some(c => c != null && c !== ''));
+  const hdrIdx = findHeaderRow(rows);
+  const headers = rows[hdrIdx].map(h => h?.value ?? h ?? '');
+  const data = rows.slice(hdrIdx + 1).filter(r => r.some(c => c != null && c !== ''));
   const type = detectType([headers, ...data]);
   const exercice = detectExercice(rows);
   const accounts = extractAccountsFromRows(headers, data, type);
