@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel } from './excelExport';
-import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { PCG_COMPLET } from './utils/pcgComplet';
+import { parseBalanceFile } from './utils/balanceParser';
+import { balancesToReports } from './utils/balanceToReports';
 import { useToast } from './components/Toast';
 
 const fmt = (v) => {
@@ -127,6 +129,11 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [selectedDetail, setSelectedDetail] = useState(null);
   const [reportTab, setReportTab] = useState('financiers');
   const [balanceSearch, setBalanceSearch] = useState('');
+  const [showImportModal, setShowImportModal] = useState(false);
+  const [importing, setImporting] = useState(false);
+  const [importError, setImportError] = useState(null);
+  const [importedData, setImportedData] = useState(null);
+  const [dataSource, setDataSource] = useState('journal');
 
   const detailLabels = {
     immobilisationsIncorporelles: 'Immobilisations incorporelles',
@@ -187,6 +194,22 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     tresorerieFinale: 'Trésorerie finale',
   };
 
+  const handleImport = async (file) => {
+    setImporting(true);
+    setImportError(null);
+    try {
+      const parsed = await parseBalanceFile(file);
+      const reports = balancesToReports(parsed.accounts);
+      setImportedData({ ...parsed, ...reports });
+      toast.success(`${parsed.accounts.length} comptes extraits de ${parsed.filename}`);
+    } catch (e) {
+      setImportError(e.message);
+      toast.error('Erreur d\'import: ' + e.message);
+    } finally {
+      setImporting(false);
+    }
+  };
+
   const handleDetail = (key) => {
     if (journalData?.details?.[key]) return setSelectedDetail(key);
     if (nonJournalDetails[key]?.length > 0) return setSelectedDetail(key);
@@ -204,10 +227,22 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const useJournal = journalData !== null;
 
   const balanceGenerale = React.useMemo(() => {
+    if (importedData && dataSource === 'import' && importedData.accounts?.length) {
+      const balances = {};
+      for (const a of importedData.accounts) {
+        const compte = a.compte.replace(/\s.*$/, '').trim();
+        if (!compte) continue;
+        if (!balances[compte]) balances[compte] = { compte, debitTotal: 0, creditTotal: 0, solde: 0 };
+        balances[compte].debitTotal += a.debitTotal || 0;
+        balances[compte].creditTotal += a.creditTotal || 0;
+        balances[compte].solde = balances[compte].debitTotal - balances[compte].creditTotal;
+      }
+      return buildBalanceGenerale(balances);
+    }
     if (!useJournal || !journalData?.journal?.length) return [];
     const balances = computeBalances(journalData.journal);
     return buildBalanceGenerale(balances);
-  }, [journalData, refreshKey]);
+  }, [journalData, refreshKey, importedData, dataSource]);
 
   const filteredBalance = React.useMemo(() => {
     if (!balanceSearch) return balanceGenerale;
@@ -224,8 +259,13 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const totalSoldeCred = filteredBalance.reduce((s, b) => s + b.soldeCrediteur, 0);
 
   let bilan, resultat, ratios;
+  let hasImported = importedData && dataSource === 'import';
 
-  if (useJournal) {
+  if (hasImported) {
+    bilan = importedData.bilan;
+    resultat = importedData.resultat;
+    ratios = importedData.ratios;
+  } else if (useJournal) {
     bilan = journalData.bilan;
     resultat = journalData.resultat;
     ratios = journalData.ratios;
@@ -367,8 +407,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </button>
           </div>
           <p className="text-xs text-slate-400 hidden md:block">
-            {useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
+            {hasImported ? `Importé: ${importedData.filename}` : useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
           </p>
+          {hasImported && (
+            <button onClick={() => { setImportedData(null); setDataSource('journal'); }}
+              className="text-[10px] text-brand-400 hover:text-brand-300 underline underline-offset-2">
+              Revenir au journal
+            </button>
+          )}
         </div>
         <div className="flex items-center gap-3 flex-wrap">
           <label className="text-xs text-slate-400 font-bold uppercase flex items-center gap-1">
@@ -391,6 +437,10 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <button onClick={() => { exportToExcel(invoices, expenses, transactions, companyDetails, {}, stockTotal).catch(console.error); }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
+          </button>
+          <button onClick={() => setShowImportModal(true)}
+            className="flex items-center gap-1 px-3 py-1.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition-colors">
+            <Upload className="w-3.5 h-3.5" /> Importer
           </button>
         </div>
       </div>
@@ -882,9 +932,9 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </span>
         </div>
 
-        {!useJournal ? (
+        {!useJournal && !(importedData && dataSource === 'import') ? (
           <p className="text-xs text-slate-500 py-8 text-center">
-            La Balance Générale nécessite un journal comptable. Veuillez saisir des écritures dans le journal.
+            La Balance Générale nécessite un journal comptable ou des données importées.
           </p>
         ) : (
           <>
@@ -939,6 +989,134 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </div>
           </>
         )}
+      </div>
+      )}
+
+      {showImportModal && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setShowImportModal(false)}>
+        <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl w-full max-w-xl max-h-[80vh] flex flex-col" onClick={e => e.stopPropagation()}>
+          <div className="flex items-center justify-between p-4 border-b border-slate-800">
+            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+              <Upload className="w-4 h-4 text-brand-400" />
+              Importer Balance / Bilan
+            </h3>
+            <button onClick={() => setShowImportModal(false)} className="p-1 hover:bg-slate-800 rounded-lg transition-colors">
+              <X className="w-4 h-4 text-slate-400" />
+            </button>
+          </div>
+
+          <div className="p-4 space-y-4 overflow-y-auto flex-1">
+            {!importedData ? (
+              <>
+                <div className="text-xs text-slate-400 space-y-2">
+                  <p>Importez un fichier <strong>Excel (.xlsx)</strong>, <strong>CSV (.csv)</strong> ou <strong>PDF (.pdf)</strong> contenant :</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>Une <strong>Balance</strong> (comptes avec soldes débit/crédit)</li>
+                    <li>Un <strong>Bilan</strong> déjà structuré (Actif/Passif)</li>
+                  </ul>
+                  <p>Les données seront utilisées pour générer tous les états financiers SCE.</p>
+                </div>
+
+                <div className={`relative border-2 border-dashed rounded-2xl p-8 text-center transition-all ${importing ? 'border-brand-500 bg-brand-500/5' : 'border-slate-600 hover:border-brand-500 bg-slate-800/30'}`}
+                  onDragOver={e => e.preventDefault()}
+                  onDrop={async e => {
+                    e.preventDefault();
+                    const f = e.dataTransfer.files[0];
+                    if (f) await handleImport(f);
+                  }}>
+                  <input type="file" accept=".xlsx,.csv,.pdf" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                    onChange={async e => { const f = e.target.files?.[0]; if (f) { await handleImport(f); e.target.value = ''; } }} />
+                  {importing ? (
+                    <p className="text-sm text-brand-400 font-semibold">Analyse du fichier en cours...</p>
+                  ) : (
+                    <>
+                      <Upload className="w-8 h-8 text-slate-500 mx-auto mb-2" />
+                      <p className="text-sm text-slate-300 font-semibold">Cliquez ou glissez-déposez</p>
+                      <p className="text-xs text-slate-500 mt-1">Excel, CSV ou PDF</p>
+                    </>
+                  )}
+                </div>
+
+                {importError && (
+                  <div className="flex items-start gap-2 p-3 bg-danger-500/10 border border-danger-500/30 rounded-xl">
+                    <AlertCircle className="w-4 h-4 text-danger-400 mt-0.5 shrink-0" />
+                    <p className="text-xs text-danger-300">{importError}</p>
+                  </div>
+                )}
+
+                {importedData && (
+                  <div className="flex items-center justify-between p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl">
+                    <div>
+                      <p className="text-xs text-emerald-300 font-semibold">{importedData.filename}</p>
+                      <p className="text-[10px] text-slate-400">{importedData.accounts.length} comptes extraits · Exercice {importedData.exercice}</p>
+                    </div>
+                    <span className={`text-[10px] font-bold px-2 py-1 rounded-full ${importedData.type === 'balance' ? 'bg-indigo-500/10 text-indigo-400' : 'bg-amber-500/10 text-amber-400'}`}>
+                      {importedData.type === 'balance' ? 'BALANCE' : 'BILAN'}
+                    </span>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-3 bg-slate-800/40 rounded-xl">
+                  <div>
+                    <p className="text-xs text-slate-200 font-semibold">{importedData.filename}</p>
+                    <p className="text-[10px] text-slate-400">{importedData.accounts.length} comptes · Exercice {importedData.exercice}</p>
+                  </div>
+                  <button onClick={() => setImportedData(null)}
+                    className="text-[10px] text-danger-400 hover:text-danger-300 underline underline-offset-2">
+                    Changer
+                  </button>
+                </div>
+
+                <div className="max-h-48 overflow-y-auto border border-slate-700 rounded-xl">
+                  <table className="w-full text-[10px]">
+                    <thead className="bg-slate-800/50 sticky top-0">
+                      <tr className="text-slate-400 font-bold uppercase tracking-wider">
+                        <th className="text-left py-1.5 px-2">Compte</th>
+                        <th className="text-left py-1.5 px-2">Libellé</th>
+                        <th className="text-right py-1.5 px-2">Débit</th>
+                        <th className="text-right py-1.5 px-2">Crédit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {importedData.accounts.slice(0, 50).map(a => (
+                        <tr key={a.compte} className="border-t border-slate-800/30">
+                          <td className="py-1 px-2 font-mono text-slate-300">{a.compte}</td>
+                          <td className="py-1 px-2 text-slate-400 truncate max-w-[150px]">{a.libelle || PCG_COMPLET[a.compte] || '—'}</td>
+                          <td className="py-1 px-2 text-right font-mono text-slate-300">{a.debitTotal?.toFixed(3) || '—'}</td>
+                          <td className="py-1 px-2 text-right font-mono text-slate-300">{a.creditTotal?.toFixed(3) || '—'}</td>
+                        </tr>
+                      ))}
+                      {importedData.accounts.length > 50 && (
+                        <tr><td colSpan={4} className="text-center py-2 text-slate-500">... et {importedData.accounts.length - 50} comptes supplémentaires</td></tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="p-4 border-t border-slate-800 flex justify-end gap-2">
+            <button onClick={() => { setShowImportModal(false); if (!importedData) setImportedData(null); }}
+              className="px-4 py-2 text-xs font-bold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-xl transition-colors">
+              Annuler
+            </button>
+            {importedData && (
+              <button onClick={() => {
+                const reports = balancesToReports(importedData.accounts);
+                setImportedData({ ...importedData, ...reports });
+                setDataSource('import');
+                setShowImportModal(false);
+                toast.success(`Données importées: ${importedData.filename} (${importedData.accounts.length} comptes)`);
+              }}
+                className="px-4 py-2 text-xs font-bold text-white bg-brand-600 hover:bg-brand-500 rounded-xl transition-colors flex items-center gap-1">
+                <CheckCheck className="w-3.5 h-3.5" /> Générer les états financiers
+              </button>
+            )}
+          </div>
+        </div>
       </div>
       )}
 
