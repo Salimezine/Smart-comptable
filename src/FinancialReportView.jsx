@@ -554,14 +554,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               <tr className="text-slate-400 font-bold uppercase tracking-wider">
                 <th className="text-left py-2 px-3 w-[80px]">Compte</th>
                 <th className="text-left py-2 px-3">Libellé</th>
-                {importedData?.type === 'bilan' ? (
-                  <th className="text-right py-2 px-3 w-[130px]">Montant</th>
-                ) : (
-                  <>
                     <th className="text-right py-2 px-3 w-[130px]">Débit</th>
-                    <th className="text-right py-2 px-3 w-[130px]">Crédit</th>
-                  </>
-                )}
+                  <th className="text-right py-2 px-3 w-[130px]">Crédit</th>
               </tr>
             </thead>
             <tbody>
@@ -569,42 +563,24 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                 <tr key={a.compte + '-' + i} className="border-t border-slate-800/30 hover:bg-slate-800/20">
                   <td className="py-1.5 px-3 font-mono text-slate-300">{a.compte}</td>
                   <td className="py-1.5 px-3 text-slate-400 truncate max-w-[200px]">{a.libelle || '—'}</td>
-                  {importedData?.type === 'bilan' ? (
-                    <td className="py-1.5 px-3">
-                      <input type="number" step="0.001"
-                        value={a.debitTotal || a.creditTotal}
-                        onChange={e => {
-                          const v = parseFloat(e.target.value) || 0;
-                          setEditingAccounts(prev => prev.map((x, j) => j === i ? {
-                            ...x,
-                            debitTotal: /^[235]/.test(a.compte) ? v : 0,
-                            creditTotal: /^[14]/.test(a.compte) ? v : 0,
-                          } : x));
-                        }}
-                        className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
-                    </td>
-                  ) : (
-                    <>
-                      <td className="py-1.5 px-3">
-                        <input type="number" step="0.001"
-                          value={a.debitTotal}
-                          onChange={e => {
-                            const v = parseFloat(e.target.value) || 0;
-                            setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, debitTotal: v } : x));
-                          }}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
-                      </td>
-                      <td className="py-1.5 px-3">
-                        <input type="number" step="0.001"
-                          value={a.creditTotal}
-                          onChange={e => {
-                            const v = parseFloat(e.target.value) || 0;
-                            setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, creditTotal: v } : x));
-                          }}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
-                      </td>
-                    </>
-                  )}
+                  <td className="py-1.5 px-3">
+                    <input type="number" step="0.001"
+                      value={a.debitTotal}
+                      onChange={e => {
+                        const v = parseFloat(e.target.value) || 0;
+                        setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, debitTotal: v } : x));
+                      }}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
+                  <td className="py-1.5 px-3">
+                    <input type="number" step="0.001"
+                      value={a.creditTotal}
+                      onChange={e => {
+                        const v = parseFloat(e.target.value) || 0;
+                        setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, creditTotal: v } : x));
+                      }}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
                 </tr>
               ))}
             </tbody>
