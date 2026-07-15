@@ -201,11 +201,9 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       const reports = balancesToReports(parsed.accounts);
       setImportedData({ ...parsed, ...reports });
       setDataSource('import');
-      toast.success(`${parsed.accounts.length} comptes extraits de ${parsed.filename} — États financiers générés.`);
     } catch (e) {
       console.error('Import error:', e);
       setImportError(e.message);
-      toast.error('Erreur d\'import: ' + e.message);
     } finally {
       setImporting(false);
     }
@@ -439,15 +437,9 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>
-          <span className="relative inline-flex">
-            <span className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-white text-xs font-bold ${importing ? 'bg-purple-600/50 opacity-50' : 'bg-purple-600 hover:bg-purple-500'}`}>
-              <Upload className="w-3.5 h-3.5" />
-              {importing ? 'Analyse...' : 'Importer'}
-            </span>
-            {!importing && <input type="file" accept=".xlsx,.csv,.pdf"
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              onChange={async e => { const f = e.target.files?.[0]; if (f) { e.target.value = ''; await handleImport(f); } }} />}
-          </span>
+          <input type="file" accept=".xlsx,.csv,.pdf" id="simpleImportInput"
+            className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[140px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500 cursor-pointer"
+            onChange={async e => { const f = e.target.files?.[0]; if (f) { try { e.target.value = ''; await handleImport(f); } catch(err) { console.error(err); } } }} />
         </div>
       </div>
 
