@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel } from './excelExport';
-import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw } from 'lucide-react';
+import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
+import { PCG_COMPLET } from './utils/pcgComplet';
 import { useToast } from './components/Toast';
 
 const fmt = (v) => {
@@ -123,6 +125,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [period, setPeriod] = useState('N');
   const [refreshKey, setRefreshKey] = useState(0);
   const [selectedDetail, setSelectedDetail] = useState(null);
+  const [reportTab, setReportTab] = useState('financiers');
+  const [balanceSearch, setBalanceSearch] = useState('');
 
   const detailLabels = {
     immobilisationsIncorporelles: 'Immobilisations incorporelles',
@@ -198,6 +202,26 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const _ = refreshKey; // force re-render when journal changes
   const journalData = generateFromJournal();
   const useJournal = journalData !== null;
+
+  const balanceGenerale = React.useMemo(() => {
+    if (!useJournal || !journalData?.journal?.length) return [];
+    const balances = computeBalances(journalData.journal);
+    return buildBalanceGenerale(balances);
+  }, [journalData, refreshKey]);
+
+  const filteredBalance = React.useMemo(() => {
+    if (!balanceSearch) return balanceGenerale;
+    const q = balanceSearch.toLowerCase();
+    return balanceGenerale.filter(b =>
+      b.compte.includes(q) ||
+      (PCG_COMPLET[b.compte] || '').toLowerCase().includes(q)
+    );
+  }, [balanceGenerale, balanceSearch]);
+
+  const totalDebit = filteredBalance.reduce((s, b) => s + b.debitTotal, 0);
+  const totalCredit = filteredBalance.reduce((s, b) => s + b.creditTotal, 0);
+  const totalSoldeDeb = filteredBalance.reduce((s, b) => s + b.soldeDebiteur, 0);
+  const totalSoldeCred = filteredBalance.reduce((s, b) => s + b.soldeCrediteur, 0);
 
   let bilan, resultat, ratios;
 
@@ -331,12 +355,18 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   return (
     <div className="space-y-6 max-w-6xl mx-auto pb-12 animate-fade-in">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
-        <div>
-          <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <CheckCheck className="w-5 h-5 text-brand-400" />
-            États Financiers (SCE)
-          </h2>
-          <p className="text-xs text-slate-400 mt-1">
+        <div className="flex items-center gap-4">
+          <div className="flex bg-slate-950/60 rounded-xl p-1 border border-slate-700/50">
+            <button onClick={() => setReportTab('financiers')}
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${reportTab === 'financiers' ? 'bg-brand-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}>
+              <CheckCheck className="w-3.5 h-3.5 inline mr-1" />États Financiers
+            </button>
+            <button onClick={() => setReportTab('balance')}
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${reportTab === 'balance' ? 'bg-brand-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}>
+              <RotateCcw className="w-3.5 h-3.5 inline mr-1" />Balance Générale
+            </button>
+          </div>
+          <p className="text-xs text-slate-400 hidden md:block">
             {useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
           </p>
         </div>
@@ -365,6 +395,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         </div>
       </div>
 
+      {reportTab === 'financiers' && (
+      <>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* BILAN */}
         <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
@@ -838,6 +870,77 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         </div>
         </div>
       </div>
+      </>
+      )}
+
+      {reportTab === 'balance' && (
+      <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
+        <div className="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+          <h3 className="text-base font-bold text-slate-100">Balance Générale</h3>
+          <span className="text-[10px] font-bold px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded-full">
+            TOUS COMPTES
+          </span>
+        </div>
+
+        {!useJournal ? (
+          <p className="text-xs text-slate-500 py-8 text-center">
+            La Balance Générale nécessite un journal comptable. Veuillez saisir des écritures dans le journal.
+          </p>
+        ) : (
+          <>
+            <div className="mb-4">
+              <input type="text" value={balanceSearch} onChange={e => setBalanceSearch(e.target.value)}
+                placeholder="Rechercher par compte ou libellé..."
+                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-brand-500 placeholder-slate-500" />
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="border-b border-slate-700 text-slate-400 font-bold uppercase tracking-wider">
+                    <th className="text-left py-2 px-2">Compte</th>
+                    <th className="text-left py-2 px-2">Libellé</th>
+                    <th className="text-right py-2 px-2">Total Débit</th>
+                    <th className="text-right py-2 px-2">Total Crédit</th>
+                    <th className="text-right py-2 px-2">Solde Débiteur</th>
+                    <th className="text-right py-2 px-2">Solde Créditeur</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredBalance.length === 0 && (
+                    <tr><td colSpan={6} className="text-center py-8 text-slate-500">Aucun compte trouvé</td></tr>
+                  )}
+                  {filteredBalance.map(b => (
+                    <tr key={b.compte} className="border-b border-slate-800/30 hover:bg-slate-800/20 transition-colors">
+                      <td className="py-1.5 px-2 font-mono text-slate-300">{b.compte}</td>
+                      <td className="py-1.5 px-2 text-slate-400 max-w-[200px] truncate">{PCG_COMPLET[b.compte] || '—'}</td>
+                      <td className="py-1.5 px-2 text-right font-mono text-slate-300">{b.debitTotal.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                      <td className="py-1.5 px-2 text-right font-mono text-slate-300">{b.creditTotal.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                      <td className={`py-1.5 px-2 text-right font-mono ${b.soldeDebiteur > 0 ? 'text-brand-400' : 'text-slate-600'}`}>{b.soldeDebiteur > 0 ? b.soldeDebiteur.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) : '—'}</td>
+                      <td className={`py-1.5 px-2 text-right font-mono ${b.soldeCrediteur > 0 ? 'text-danger-400' : 'text-slate-600'}`}>{b.soldeCrediteur > 0 ? b.soldeCrediteur.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) : '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+                <tfoot>
+                  <tr className="border-t-2 border-slate-600 bg-slate-800/30 font-bold text-slate-200">
+                    <td colSpan={2} className="py-2 px-2 text-xs">TOTAUX</td>
+                    <td className="py-2 px-2 text-right font-mono">{totalDebit.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                    <td className="py-2 px-2 text-right font-mono">{totalCredit.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                    <td className="py-2 px-2 text-right font-mono text-brand-400">{totalSoldeDeb.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                    <td className="py-2 px-2 text-right font-mono text-danger-400">{totalSoldeCred.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
+                  </tr>
+                  <tr className="text-[10px] text-slate-500">
+                    <td colSpan={6} className="py-1 px-2 text-right">
+                      {balanceGenerale.length} compte{balanceGenerale.length > 1 ? 's' : ''} · Différence: {Math.abs(totalDebit - totalCredit).toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </>
+        )}
+      </div>
+      )}
 
       {selectedDetail && (
         <DetailModal
