@@ -318,14 +318,13 @@ export async function parsePDFFile(file) {
     if (score >= 2) { hdrIdx = i; break; }
   }
 
-  // Step 3: Detect if it's a balance or bilan by content
+  // Step 3: Detect format
   const joined = rows.slice(0, 20).join(' ').toLowerCase();
-  const isBilan = BILAN_HEADERS.filter(h => joined.includes(h)).length >= 2;
-  const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rows.some(r => /^\d{4,8}\s/.test(r));
+  const isBilan = BILAN_HEADERS.filter(h => joined.includes(h)).length >= 2 || joined.includes('actifs non courants');
+  const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rows.some(r => /^\s*\d{4,8}\s/.test(r));
 
   if (isBilan && !isBalance) {
-    // Bilan format: extract key-value pairs
-    const accounts = parseBilanFromText(rows);
+    const accounts = parseBilanPDFLines(rows);
     if (accounts.length > 0) {
       return { type: 'bilan', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
     }
@@ -336,14 +335,11 @@ export async function parsePDFFile(file) {
   const dataLines = dataRows.filter(r => /^\s*\d{3,8}\s/.test(r));
 
   if (dataLines.length > 0) {
-    // Parse each line as: compte, libelle, debit, credit (or single amount)
     const accounts = dataLines.map(line => {
       const parts = line.trim().split(/\s{2,}| {2,}|\t/);
       if (parts.length < 2) return null;
       const compte = normalizeCompte(parts[0]);
       if (!compte || compte.length < 2) return null;
-
-      // Find numeric values in the parts (skip compte and libelle)
       const numParts = [];
       const labelParts = [];
       for (let i = 1; i < parts.length; i++) {
@@ -355,48 +351,112 @@ export async function parsePDFFile(file) {
           labelParts.push(p);
         }
       }
-
       const libelle = labelParts.join(' ').trim();
       let debit = 0, credit = 0;
-
       if (numParts.length === 1) {
-        // Single balance figure
         const val = numParts[0];
         debit = val > 0 ? val : 0;
         credit = val < 0 ? -val : 0;
       } else if (numParts.length >= 2) {
-        // Two figures: debit and credit
         debit = numParts[0];
         credit = numParts[1];
       }
-
       if (debit === 0 && credit === 0) return null;
       return { compte, libelle, debitTotal: debit, creditTotal: credit, soldeDebiteur: debit > credit ? debit - credit : 0, soldeCrediteur: credit > debit ? credit - debit : 0 };
     }).filter(Boolean);
-
     if (accounts.length > 0) {
-      const exercice = detectExercice(rows.map(r => [r]));
-      return { type: 'balance', filename: file.name, exercice, accounts, rawData: { headers: [], rows } };
+      return { type: 'balance', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
     }
   }
 
-  // Step 5: Fallback — use old CSV-from-text approach
+  // Step 5: Fallback
   const lines = rows.join('\n');
   return parseCSVFromText(lines, file.name);
 }
 
-function parseBilanFromText(rows) {
+function parseBilanPDFLines(rows) {
+  // Tunisian SCE bilan format mapping to PCG accounts
+  const LINE_RULES = [
+    { re: /immobilisations\s+incorporelles?\s*\(?brutes?\)?/i, debit: '220000' },
+    { re: /immobilisations\s+incorporelles?\s*\(?nettes?\)?/i, skip: true },
+    { re: /moins\s*:?\s*amortissements?\s+(des\s+)?immo/i, credit: '280000' },
+    { re: /immobilisations\s+corporelles?\s*\(?brutes?\)?/i, debit: '210000' },
+    { re: /immobilisations\s+corporelles?\s*\(?nettes?\)?/i, skip: true },
+    { re: /immobilisations\s+financi[eè]res/i, debit: '270000' },
+    { re: /total\s+des\s+actifs?\s+non\s+courants/i, skip: true },
+    { re: /stocks?\s*\(?bruts?\)?/i, debit: '300000' },
+    { re: /stocks?\s*\(?nets?\)?/i, skip: true },
+    { re: /moins\s*:?\s*provisions?\s+.*?d[eé]pr[eé]ciation/i, credit: '390000' },
+    { re: /clients?\s*\(?bruts?\)?/i, debit: '410000' },
+    { re: /clients?\s*\(?nets?\)?/i, skip: true },
+    { re: /moins\s*:?\s*provisions?\s+.*?clients/i, credit: '491000' },
+    { re: /autres\s+actifs?\s+courants/i, debit: '440000' },
+    { re: /liquidit[eé]s?\s+et\s+[ée]quivalents?\s+de\s+liquidit[eé]s?\b/i, debit: '510000' },
+    { re: /total\s+des\s+actifs?\s+courants/i, skip: true },
+    { re: /total\s+des\s+actifs?\s*$/i, skip: true },
+    { re: /capital\s+social/i, credit: '101000' },
+    { re: /r[eé]serves?\b/i, credit: '106000' },
+    { re: /autres\s+capitaux\s+propres/i, credit: '130000' },
+    { re: /r[eé]sultats?\s+report[eé]s/i, credit: '120000' },
+    { re: /r[eé]sultat\s+de\s+l['eé]xercice/i, credit: '130000' },
+    { re: /total\s+des\s+capitaux\s+propres/i, skip: true },
+    { re: /emprunts?/i, credit: '160000' },
+    { re: /provisions?\s*$/i, credit: '151000' },
+    { re: /total\s+des\s+passifs?\s+non\s+courants/i, skip: true },
+    { re: /fournisseurs?\s+et\s+comptes?\s+rattach[eé]s/i, credit: '401000' },
+    { re: /autres\s+passifs?\s+courants/i, credit: '440000' },
+    { re: /concours?\s+bancaires?\b/i, credit: '520000' },
+    { re: /total\s+des\s+passifs?\s+courants/i, skip: true },
+    { re: /total\s+des\s+(capitaux\s+propres\s+et\s+des\s+)?passifs?/i, skip: true },
+  ];
+
   const accounts = [];
   for (const line of rows) {
-    const m = line.match(/^(\d{3,8})\s+(.+?)\s+([\d\s,.]+)$/);
-    if (!m) continue;
-    const compte = normalizeCompte(m[1]);
-    if (!compte) continue;
-    const val = cleanNum(m[3]);
-    if (isNaN(val)) continue;
-    accounts.push({ compte, libelle: m[2].trim(), debitTotal: val > 0 ? val : 0, creditTotal: val < 0 ? -val : 0, soldeDebiteur: val > 0 ? val : 0, soldeCrediteur: val < 0 ? -val : 0 });
+    const lower = line.toLowerCase();
+    // Skip section headers (all caps or "ACTIFS", "PASSIFS", "CAPITAUX")
+    if (/^(actifs|capitaux|passifs)\s/.test(lower) && !/\d/.test(line)) continue;
+    // Try to extract: label (possibly with note number) + numeric value(s)
+    // Strip leading note numbers like "3 | " or "| 3"
+    let cleaned = line.replace(/^\s*\d+\s*\|?\s*/, '').trim();
+    // The format is: Label | Note | ValN | ValN-1 or Label | ValN | ValN-1
+    const parts = cleaned.split(/\s*\|{2,}\s*|\s{3,}|\t/).filter(Boolean);
+    if (parts.length < 2) continue;
+    const label = parts[0].trim();
+    // Find last numeric values (skip intermediate notes like "3")
+    const nums = [];
+    for (let i = parts.length - 1; i >= 1; i--) {
+      const val = cleanNum(parts[i]);
+      if (!isNaN(val) && isFinite(val)) nums.unshift(val);
+      if (nums.length >= 2) break;
+    }
+    if (nums.length === 0) continue;
+    // Use last year's value (N)
+    const value = nums[nums.length >= 2 ? nums.length - 2 : 0];
+    if (value === 0) continue;
+
+    // Match against rules
+    for (const rule of LINE_RULES) {
+      if (rule.re.test(lower)) {
+        if (rule.skip) break;
+        const isDebit = rule.debit != null;
+        const compte = rule.debit || rule.credit;
+        accounts.push({
+          compte,
+          libelle: label,
+          debitTotal: isDebit ? Math.abs(value) : 0,
+          creditTotal: isDebit ? 0 : Math.abs(value),
+          soldeDebiteur: isDebit ? Math.abs(value) : 0,
+          soldeCrediteur: isDebit ? 0 : Math.abs(value),
+        });
+        break;
+      }
+    }
   }
-  return accounts;
+
+  // If we got at least actif + passif items, return them
+  const hasActif = accounts.some(a => a.compte.startsWith('2') || a.compte.startsWith('3') || a.compte.startsWith('4') && a.debitTotal > 0 || a.compte.startsWith('5'));
+  const hasPassif = accounts.some(a => a.compte.startsWith('1') || a.compte.startsWith('4') && a.creditTotal > 0);
+  return (hasActif && hasPassif) ? accounts : [];
 }
 
 function parseCSVFromText(text, filename) {
