@@ -44,10 +44,13 @@ function cleanNum(val) {
   if (val == null || val === '') return NaN;
   if (typeof val === 'number') return val;
   let s = String(val).trim();
+  const negative = /^\(.*\)$/.test(s);
   s = s.replace(/\s/g, '');
+  s = s.replace(/[()]/g, '');
   s = s.replace(',', '.');
   s = s.replace(/[^0-9.\-]/g, '');
-  return parseFloat(s);
+  const num = parseFloat(s);
+  return negative && !isNaN(num) ? -num : num;
 }
 
 function detectColumnIndex(headers, keywords, data) {
@@ -381,7 +384,7 @@ function parseBilanPDFLines(rows) {
   const LINE_RULES = [
     { re: /immobilisations\s+incorporelles?\s*\(?brutes?\)?/i, debit: '220000' },
     { re: /immobilisations\s+incorporelles?\s*\(?nettes?\)?/i, skip: true },
-    { re: /moins\s*:?\s*amortissements?\s+(des\s+)?immo/i, credit: '280000' },
+    { re: /moins\s*:?\s*amortissements?/i, credit: '280000' },
     { re: /immobilisations\s+corporelles?\s*\(?brutes?\)?/i, debit: '210000' },
     { re: /immobilisations\s+corporelles?\s*\(?nettes?\)?/i, skip: true },
     { re: /immobilisations\s+financi[eè]res/i, debit: '270000' },
@@ -403,7 +406,7 @@ function parseBilanPDFLines(rows) {
     { re: /r[eé]sultat\s+de\s+l['eé]xercice/i, credit: '130000' },
     { re: /total\s+des\s+capitaux\s+propres/i, skip: true },
     { re: /emprunts?/i, credit: '160000' },
-    { re: /provisions?\s*$/i, credit: '151000' },
+    { re: /^provisions?\s/i, credit: '151000' },
     { re: /total\s+des\s+passifs?\s+non\s+courants/i, skip: true },
     { re: /fournisseurs?\s+et\s+comptes?\s+rattach[eé]s/i, credit: '401000' },
     { re: /autres\s+passifs?\s+courants/i, credit: '440000' },
