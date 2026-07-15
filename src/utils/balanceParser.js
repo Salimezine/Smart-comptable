@@ -281,18 +281,126 @@ export async function parseCSVFile(file) {
   return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
 }
 
+function pdfItemsToRows(items, yTolerance = 3) {
+  const rows = [];
+  let currentRow = [];
+  let lastY = null;
+  const sorted = [...items].sort((a, b) => {
+    const yDiff = b.transform[5] - a.transform[5];
+    if (Math.abs(yDiff) > yTolerance) return yDiff > 0 ? -1 : 1;
+    return a.transform[4] - b.transform[4];
+  });
+  for (const item of sorted) {
+    const y = item.transform[5];
+    if (lastY != null && Math.abs(y - lastY) > yTolerance) {
+      currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
+      rows.push(currentRow.map(i => i.str));
+      currentRow = [];
+    }
+    currentRow.push(item);
+    lastY = y;
+  }
+  if (currentRow.length) {
+    currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
+    rows.push(currentRow.map(i => i.str));
+  }
+  return rows;
+}
+
+function detectColumns(rows, sampleCount = 15) {
+  const xPositions = [];
+  for (let ri = 1; ri < Math.min(rows.length, sampleCount + 1); ri++) {
+    let rowX = 0;
+    for (const item of rows[ri]) {
+      xPositions.push({ text: item.str, x: item.transform[4], row: ri });
+    }
+  }
+  const clusters = [];
+  const sortedX = [...new Set(xPositions.map(p => Math.round(p.x / 10) * 10))].sort((a, b) => a - b);
+  for (const cx of sortedX) {
+    const group = xPositions.filter(p => Math.abs(Math.round(p.x / 10) * 10 - cx) < 5);
+    if (group.length >= 3) clusters.push(cx);
+  }
+  return clusters;
+}
+
+function extractTableFromPDF(tc) {
+  const items = tc.items;
+  const xClusters = detectColumns(items, 15);
+  const yTolerance = 3;
+  const rows = [];
+  let currentRow = [];
+  let lastY = null;
+  const sorted = [...items].sort((a, b) => {
+    const yDiff = b.transform[5] - a.transform[5];
+    if (Math.abs(yDiff) > yTolerance) return yDiff > 0 ? -1 : 1;
+    return a.transform[4] - b.transform[4];
+  });
+  for (const item of sorted) {
+    const y = item.transform[5];
+    if (lastY != null && Math.abs(y - lastY) > yTolerance) {
+      currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
+      rows.push(currentRow);
+      currentRow = [];
+    }
+    currentRow.push(item);
+    lastY = y;
+  }
+  if (currentRow.length) {
+    currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
+    rows.push(currentRow);
+  }
+  if (rows.length < 3) return null;
+  const headerIdx = findPdfHeaderRow(rows);
+  if (headerIdx < 0) return null;
+  const headers = rows[headerIdx].map(i => i.str);
+  const dataRows = rows.slice(headerIdx + 1).filter(r => r.some(i => /^\d/.test(i.str)));
+  const data = dataRows.map(r => {
+    const cells = [];
+    let lastX = -1;
+    for (const item of r) {
+      if (lastX >= 0 && item.transform[4] - lastX > 15) cells.push('');
+      cells.push(item.str);
+      lastX = item.transform[4];
+    }
+    return cells;
+  });
+  return { headers, data };
+}
+
+function findPdfHeaderRow(rows) {
+  const keywords = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','montant','classe'];
+  let best = -1, bestScore = 0;
+  for (let i = 0; i < Math.min(rows.length, 12); i++) {
+    const text = rows[i].map(it => it.str.toLowerCase()).join(' ');
+    const score = keywords.filter(k => text.includes(k)).length;
+    if (score > bestScore) { bestScore = score; best = i; }
+  }
+  return bestScore >= 2 ? best : -1;
+}
+
 export async function parsePDFFile(file) {
   const arrayBuffer = await file.arrayBuffer();
   const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
+  const page = await pdf.getPage(1);
+  const tc = await page.getTextContent();
+  const table = extractTableFromPDF(tc);
+  if (table) {
+    const { headers, data } = findHeaderRowInData(table.headers, table.data);
+    const type = detectType([headers, ...data]);
+    const exercice = detectExercice([headers, ...data]);
+    const accounts = extractAccountsFromRows(headers, data, type);
+    if (accounts.length > 0) return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
+  }
+  // Fallback: raw text extraction
   let allText = '';
   for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
-    const tc = await page.getTextContent();
+    const p = await pdf.getPage(i);
+    const t = await p.getTextContent();
     let lastY = -1;
-    for (const item of tc.items) {
+    for (const item of t.items) {
       const y = Math.round(item.transform[5]);
       if (lastY >= 0 && y < lastY - 2) allText += '\n';
-      else if (lastY >= 0 && y === lastY) allText += ' ';
       else if (lastY >= 0) allText += '\n';
       allText += item.str;
       lastY = y;
@@ -300,7 +408,7 @@ export async function parsePDFFile(file) {
     allText += '\n';
   }
   allText = allText.trim();
-  if (allText.length < 20) throw new Error('Le PDF ne contient pas assez de texte exploitable. Vérifiez qu\'il s\'agit d\'un PDF textuel (pas une image scannée).');
+  if (allText.length < 20) throw new Error('Le PDF ne contient pas assez de texte exploitable.');
   return parseCSVFromText(allText, file.name);
 }
 
