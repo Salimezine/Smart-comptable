@@ -295,12 +295,17 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   } else {
     const is = generateIncomeStatement(invoices, expenses);
     const bs = generateBalanceSheet(invoices, expenses, transactions, {}, is, stockTotal);
+    const ancBrutVal = bs.assets.nonCurrent.intangible + bs.assets.nonCurrent.tangible + bs.assets.nonCurrent.financial;
+    const amortVal = bs.assets.nonCurrent.accumulatedDepreciation || 0;
     bilan = {
       fraisPreliminaires: 0,
       immobilisationsIncorporelles: bs.assets.nonCurrent.intangible,
       immobilisationsCorporelles: bs.assets.nonCurrent.tangible,
       immobilisationsFinancieres: bs.assets.nonCurrent.financial,
-      amortissementsDeduction: 0,
+      ancBrut: ancBrutVal,
+      amortissements: amortVal,
+      amortissementsDeduction: amortVal,
+      provisionsActifNC: 0,
       provisionsActifNCDeduction: 0,
       stocks: bs.assets.current.stocks,
       stocksBrutes: bs.assets.current.stocks,
@@ -311,15 +316,19 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       etatDebit: bs.assets.current.taxRec,
       personnelDebit: bs.assets.current.personnelRec,
       autresCréances: bs.assets.current.otherRec,
+      tresorerie: bs.assets.current.cashAndBank,
       tresorerieActif: bs.assets.current.cashAndBank,
       tresorerieBrute: bs.assets.current.cashAndBank,
       provisionsTresorerieDeduction: 0,
+      capital: bs.equity.socialCapital,
       capitalSocial: bs.equity.socialCapital,
       reserves: bs.equity.legalReserve + bs.equity.otherReserves,
       resultatsReportes: 0,
+      resultatExercice: is.netProfit || 0,
       autresCapitauxPropres: 0,
       emprunts: bs.liabilities.nonCurrent.bankLoans,
       provisions: bs.liabilities.nonCurrent.provisions,
+      provisionsDettes: bs.liabilities.nonCurrent.provisions,
       autresPassifsNC: 0,
       fournisseurs: bs.liabilities.current.accountsPayable,
       etatCredit: bs.liabilities.current.vatPayable,
@@ -368,6 +377,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       produitsExceptionnels: 0,
       reprises: 0,
       achats: fallbackAchats,
+      achatsConsommes: fallbackAchats,
       achatsMarchandises: is.purchaseGoods,
       achatsMP: is.purchaseRaw,
       autresAchatsSIG: 0,
@@ -379,10 +389,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       chargesExceptionnelles: 0,
       dotations: is.depreciation,
       produits: is.revenue,
+      produitsExploitation: is.revenue,
       charges: is.operatingExpenses + is.financialCosts,
+      chargesExploitation: is.operatingExpenses,
       resultatExploitation: is.operatingProfit,
       resultatFinancier: -is.financialCosts,
       resultatExceptionnel: 0,
+      resultatAvantImpot: is.operatingProfit - is.financialCosts,
+      impot: 0,
+      impotIS: 0,
       resultatNet: is.netProfit,
       totalProduitsExploitation: is.revenue,
       totalChargesExploitation: is.operatingExpenses,
@@ -429,6 +444,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       fluxInvestissement: 0,
       fluxFinancement: 0,
       variationTresorerie: mba,
+      tresorerieFinale: bilan.tresorerie ?? bilan.tresorerieActif ?? 0,
     };
   }
 

@@ -1,6 +1,16 @@
 import { jsPDF } from 'jspdf';
 import ExcelJS from 'exceljs';
 
+const getVal = (obj, ...keys) => {
+  for (const k of keys) {
+    const v = obj[k];
+    if (v != null) return v;
+  }
+  return 0;
+};
+
+const z = (v) => v ?? 0;
+
 const fmt = (v) => {
   if (v == null || isNaN(v)) return '0,000';
   return v.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
@@ -55,6 +65,10 @@ function drawTable(doc, x, y, colWidths, rows, opts = {}) {
   return cy;
 }
 
+function bGet(b, field) {
+  return getVal(b, field, field + 'Deduction', field.replace('ActifNC', 'ActifNCDeduction'));
+}
+
 export function exportReportsPDF(reports) {
   const { bilan, resultat, sig, ratios, fluxTresorerie } = reports;
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
@@ -78,6 +92,12 @@ export function exportReportsPDF(reports) {
     y += 5;
   };
 
+  const $b = (k, ...fallbacks) => getVal(bilan, k, ...fallbacks);
+  const $r = (k, ...fallbacks) => getVal(resultat, k, ...fallbacks);
+  const $sig = (k, ...fallbacks) => getVal(sig, k, ...fallbacks);
+  const $fl = (k, ...fallbacks) => getVal(fluxTresorerie, k, ...fallbacks);
+  const $ra = (k, ...fallbacks) => getVal(ratios, k, ...fallbacks);
+
   // ── BILAN ──
   doc.addPage();
   y = 15;
@@ -85,35 +105,36 @@ export function exportReportsPDF(reports) {
 
   const bCols = [50, 30, 30, 30, 30];
   section('ACTIF');
+  const amortProv = $b('amortissements', 'amortissementsDeduction') + $b('provisionsActifNC', 'provisionsActifNCDeduction', 'provActifNC');
   y = drawTable(doc, lm, y, bCols, [
     ['', 'Brut', 'Amort/Prov', 'Net', ''],
-    ['Actifs non courants', fmt(bilan.ancBrut), fmt(bilan.amortissements + bilan.provisionsActifNC), fmt(bilan.actifNC), ''],
-    ['  Immobilisations incorporelles', fmt(bilan.immobilisationsIncorporelles), '', '', ''],
-    ['  Immobilisations corporelles', fmt(bilan.immobilisationsCorporelles), '', '', ''],
-    ['  Immobilisations financières', fmt(bilan.immobilisationsFinancieres), '', '', ''],
-    ['Actifs courants', '', '', fmt(bilan.actifC), ''],
-    ['  Stocks', fmt(bilan.stocks), '', '', ''],
-    ['  Clients', fmt(bilan.clients), '', '', ''],
-    ['  Autres actifs courants', fmt(bilan.etatDebit + bilan.personnelDebit + bilan.autresCréances), '', '', ''],
-    ['  Trésorerie', fmt(bilan.tresorerie), '', '', ''],
-    ['= TOTAL ACTIF', '', '', fmt(bilan.totalActif), ''],
+    ['Actifs non courants', fmt($b('ancBrut')), fmt(amortProv), fmt($b('actifNC')), ''],
+    ['  Immobilisations incorporelles', fmt($b('immobilisationsIncorporelles')), '', '', ''],
+    ['  Immobilisations corporelles', fmt($b('immobilisationsCorporelles')), '', '', ''],
+    ['  Immobilisations financières', fmt($b('immobilisationsFinancieres')), '', '', ''],
+    ['Actifs courants', '', '', fmt($b('actifC')), ''],
+    ['  Stocks', fmt($b('stocks')), '', '', ''],
+    ['  Clients', fmt($b('clients')), '', '', ''],
+    ['  Autres actifs courants', fmt(z($b('etatDebit')) + z($b('personnelDebit')) + z($b('autresCr\u00e9ances', 'autresCr\u00e9ances', 'autresCréances'))), '', '', ''],
+    ['  Trésorerie', fmt($b('tresorerie', 'tresorerieActif')), '', '', ''],
+    ['= TOTAL ACTIF', '', '', fmt($b('totalActif')), ''],
   ], { headerColor: '#0f4c81' });
 
   y += 5;
   section('PASSIF');
   y = drawTable(doc, lm, y, [80, 40, 40], [
     ['', '', ''],
-    ['Capitaux propres', '', fmt(bilan.capPropres)],
-    ['  Capital social', fmt(bilan.capital), ''],
-    ['  Réserves', fmt(bilan.reserves), ''],
-    ['  Résultat de l\'exercice', fmt(bilan.resultatExercice), ''],
-    ['Passifs non courants', '', fmt(bilan.passifNC)],
-    ['  Emprunts', fmt(bilan.emprunts), ''],
-    ['  Provisions', fmt(bilan.provisionsDettes), ''],
-    ['Passifs courants', '', fmt(bilan.passifC)],
-    ['  Fournisseurs', fmt(bilan.fournisseurs), ''],
-    ['  Autres passifs courants', fmt(bilan.etatCredit + bilan.personnelCredit + bilan.autresDettes + bilan.concoursBancaires), ''],
-    ['= TOTAL PASSIFS & CP', '', fmt(bilan.totalPassif)],
+    ['Capitaux propres', '', fmt($b('capPropres'))],
+    ['  Capital social', fmt($b('capital', 'capitalSocial')), ''],
+    ['  Réserves', fmt($b('reserves')), ''],
+    ['  Résultat de l\'exercice', fmt($b('resultatExercice')), ''],
+    ['Passifs non courants', '', fmt($b('passifNC'))],
+    ['  Emprunts', fmt($b('emprunts')), ''],
+    ['  Provisions', fmt($b('provisionsDettes', 'provisions')), ''],
+    ['Passifs courants', '', fmt($b('passifC'))],
+    ['  Fournisseurs', fmt($b('fournisseurs')), ''],
+    ['  Autres passifs courants', fmt(z($b('etatCredit')) + z($b('personnelCredit')) + z($b('autresDettes')) + z($b('concoursBancaires'))), ''],
+    ['= TOTAL PASSIFS & CP', '', fmt($b('totalPassif'))],
   ], { headerColor: '#0f4c81' });
 
   // ── ÉTAT DE RÉSULTAT ──
@@ -122,23 +143,23 @@ export function exportReportsPDF(reports) {
   title('ÉTAT DE RÉSULTAT (SCE - Méthode par nature)');
   y = drawTable(doc, lm, y, [100, 50], [
     ['', 'Montant'],
-    ['Produits d\'exploitation', fmt(resultat.produitsExploitation)],
-    ['  Ventes', fmt(resultat.ventes)],
-    ['  Production stockée', fmt(resultat.productionStockee)],
-    ['  Subventions d\'exploitation', fmt(resultat.subventionsExploitation)],
-    ['  Reprises', fmt(resultat.reprises)],
-    ['Charges d\'exploitation', fmt(resultat.chargesExploitation)],
-    ['  Achats consommés', fmt(resultat.achatsConsommes)],
-    ['  Charges externes', fmt(resultat.chargesExternes)],
-    ['  Charges de personnel', fmt(resultat.chargesPersonnel)],
-    ['  Dotations aux amortissements', fmt(resultat.dotations)],
-    ['= RÉSULTAT D\'EXPLOITATION', fmt(resultat.resultatExploitation)],
-    ['Produits financiers', fmt(resultat.produitsFinanciers)],
-    ['Charges financières', fmt(resultat.chargesFinancieres)],
-    ['= RÉSULTAT FINANCIER', fmt(resultat.resultatFinancier)],
-    ['= RÉSULTAT AVANT IMPÔT', fmt(resultat.resultatAvantImpot)],
-    ['Impôt sur les bénéfices', fmt(resultat.impot)],
-    ['= RÉSULTAT NET', fmt(resultat.resultatNet)],
+    ['Produits d\'exploitation', fmt($r('produitsExploitation', 'totalProduitsExploitation', 'produits'))],
+    ['  Ventes', fmt($r('ventes'))],
+    ['  Production stockée', fmt($r('productionStockee'))],
+    ['  Subventions d\'exploitation', fmt($r('subventionsExploitation'))],
+    ['  Reprises', fmt($r('reprises'))],
+    ['Charges d\'exploitation', fmt($r('chargesExploitation', 'totalChargesExploitation', 'charges'))],
+    ['  Achats consommés', fmt($r('achatsConsommes', 'achats'))],
+    ['  Charges externes', fmt($r('chargesExternes'))],
+    ['  Charges de personnel', fmt($r('chargesPersonnel'))],
+    ['  Dotations aux amortissements', fmt($r('dotations'))],
+    ['= RÉSULTAT D\'EXPLOITATION', fmt($r('resultatExploitation'))],
+    ['Produits financiers', fmt($r('produitsFinanciers'))],
+    ['Charges financières', fmt($r('chargesFinancieres'))],
+    ['= RÉSULTAT FINANCIER', fmt($r('resultatFinancier'))],
+    ['= RÉSULTAT AVANT IMPÔT', fmt($r('resultatAvantImpot', 'rcai'))],
+    ['Impôt sur les bénéfices', fmt($r('impot', 'impotIS', 'impotsTaxes'))],
+    ['= RÉSULTAT NET', fmt($r('resultatNet'))],
   ], { headerColor: '#0f4c81' });
 
   // ── SIG ──
@@ -147,22 +168,22 @@ export function exportReportsPDF(reports) {
   title('SOLDES INTERMÉDIAIRES DE GESTION (SIG)');
   y = drawTable(doc, lm, y, [100, 50], [
     ['', 'Montant'],
-    ['Marge commerciale', fmt(sig.margeCommerciale)],
-    ['+ Production de l\'exercice', fmt(sig.productionExercice)],
-    ['- Achats consommés', fmt(resultat.achatsConsommes)],
-    ['- Charges externes', fmt(resultat.chargesExternes)],
-    ['= VALEUR AJOUTÉE', fmt(sig.valeurAjoutee)],
-    ['+ Subventions d\'exploitation', fmt(resultat.subventionsExploitation)],
-    ['- Charges de personnel', fmt(resultat.chargesPersonnel)],
-    ['- Impôts et taxes', fmt(resultat.impotsTaxes)],
-    ['= EBE', fmt(sig.ebe)],
-    ['+ Reprises', fmt(resultat.reprises)],
-    ['- Dotations', fmt(resultat.dotations)],
-    ['= RÉSULTAT D\'EXPLOITATION (SIG)', fmt(sig.sigResultatExploitation)],
-    ['+ Résultat financier', fmt(resultat.resultatFinancier)],
-    ['= RCAI', fmt(sig.sigRcai)],
-    ['- Impôt', fmt(resultat.impot)],
-    ['= RÉSULTAT NET (SIG)', fmt(sig.sigResultatNet)],
+    ['Marge commerciale', fmt($sig('margeCommerciale'))],
+    ['+ Production de l\'exercice', fmt($sig('productionExercice'))],
+    ['- Achats consommés', fmt($r('achatsConsommes', 'achats'))],
+    ['- Charges externes', fmt($r('chargesExternes'))],
+    ['= VALEUR AJOUTÉE', fmt($sig('valeurAjoutee'))],
+    ['+ Subventions d\'exploitation', fmt($r('subventionsExploitation'))],
+    ['- Charges de personnel', fmt($r('chargesPersonnel'))],
+    ['- Impôts et taxes', fmt($r('impotsTaxes'))],
+    ['= EBE', fmt($sig('ebe'))],
+    ['+ Reprises', fmt($r('reprises'))],
+    ['- Dotations', fmt($r('dotations'))],
+    ['= RÉSULTAT D\'EXPLOITATION (SIG)', fmt($sig('sigResultatExploitation'))],
+    ['+ Résultat financier', fmt($r('resultatFinancier'))],
+    ['= RCAI', fmt($sig('sigRcai'))],
+    ['- Impôt', fmt($r('impot', 'impotIS', 'impotsTaxes'))],
+    ['= RÉSULTAT NET (SIG)', fmt($sig('sigResultatNet'))],
   ], { headerColor: '#0f4c81' });
 
   // ── FLUX DE TRÉSORERIE ──
@@ -171,32 +192,33 @@ export function exportReportsPDF(reports) {
   title('ÉTAT DES FLUX DE TRÉSORERIE');
   y = drawTable(doc, lm, y, [100, 50], [
     ['', 'Montant'],
-    ['Résultat net', fmt(fluxTresorerie.resultatNet)],
-    ['+ Dotations', fmt(fluxTresorerie.dotations)],
-    ['- Reprises', fmt(fluxTresorerie.reprises)],
-    ['= MBA', fmt(fluxTresorerie.margeBruteAutofinancement)],
-    ['Flux de trésorerie d\'exploitation', fmt(fluxTresorerie.fluxExploitation)],
-    ['Flux de trésorerie d\'investissement', fmt(fluxTresorerie.fluxInvestissement)],
-    ['Flux de trésorerie de financement', fmt(fluxTresorerie.fluxFinancement)],
-    ['= VARIATION DE TRÉSORERIE', fmt(fluxTresorerie.variationTresorerie)],
-    ['Trésorerie finale', fmt(fluxTresorerie.tresorerieFinale || 0)],
+    ['Résultat net', fmt($fl('resultatNet'))],
+    ['+ Dotations', fmt($fl('dotations'))],
+    ['- Reprises', fmt($fl('reprises'))],
+    ['= MBA', fmt($fl('margeBruteAutofinancement'))],
+    ['Flux de trésorerie d\'exploitation', fmt($fl('fluxExploitation'))],
+    ['Flux de trésorerie d\'investissement', fmt($fl('fluxInvestissement'))],
+    ['Flux de trésorerie de financement', fmt($fl('fluxFinancement'))],
+    ['= VARIATION DE TRÉSORERIE', fmt($fl('variationTresorerie'))],
+    ['Trésorerie finale', fmt($fl('tresorerieFinale', 'tresorerie'))],
   ], { headerColor: '#0f4c81' });
 
   // ── RATIOS ──
   y += 5;
   title('RATIOS FINANCIERS');
+  const lg = $ra('liquiditeGenerale');
   y = drawTable(doc, lm, y, [90, 40, 40], [
     ['Ratio', 'Valeur', 'Interprétation'],
-    ['Liquidité générale', fmt(ratios.liquiditeGenerale), ratios.liquiditeGenerale >= 1 ? 'Satisfaisant' : 'Faible'],
-    ['Liquidité réduite', fmt(ratios.liquiditeReduite), ''],
-    ['Autonomie financière', (ratios.autonomieFinanciere * 100).toFixed(1) + '%', ratios.autonomieFinanciere >= 0.2 ? 'Bonne' : 'Fragile'],
-    ['Endettement net', fmt(ratios.endettementNet), ''],
-    ['Rentabilité économique', (ratios.rentabiliteEconomique * 100).toFixed(2) + '%', ''],
-    ['Rentabilité financière', (ratios.rentabiliteFinanciere * 100).toFixed(2) + '%', ''],
-    ['Marge nette', (ratios.margeNette * 100).toFixed(2) + '%', ''],
-    ['Rotation stocks (jours)', fmt(ratios.rotationStocksJours), ''],
-    ['Délai clients (jours)', fmt(ratios.delaiClientsJours), ''],
-    ['Délai fournisseurs (jours)', fmt(ratios.delaiFournisseursJours), ''],
+    ['Liquidité générale', fmt(lg), lg >= 1 ? 'Satisfaisant' : 'Faible'],
+    ['Liquidité réduite', fmt($ra('liquiditeReduite')), ''],
+    ['Autonomie financière', ($ra('autonomieFinanciere') * 100).toFixed(1) + '%', $ra('autonomieFinanciere') >= 0.2 ? 'Bonne' : 'Fragile'],
+    ['Endettement net', fmt($ra('endettementNet')), ''],
+    ['Rentabilité économique', ($ra('rentabiliteEconomique', 'roe') * 100).toFixed(2) + '%', ''],
+    ['Rentabilité financière', ($ra('rentabiliteFinanciere', 'roe_', 'roa') * 100).toFixed(2) + '%', ''],
+    ['Marge nette', ($ra('margeNette') * 100).toFixed(2) + '%', ''],
+    ['Rotation stocks (jours)', fmt($ra('rotationStocksJours')), ''],
+    ['Délai clients (jours)', fmt($ra('delaiClientsJours')), ''],
+    ['Délai fournisseurs (jours)', fmt($ra('delaiFournisseursJours')), ''],
   ], { headerColor: '#0f4c81' });
 
   doc.save('rapport-financier-sce.pdf');
@@ -207,65 +229,70 @@ export async function exportReportsExcel(reports) {
   const wb = new ExcelJS.Workbook();
   const numFmt = '#,##0.000';
 
-  const addSheet = (name, headers, rows, colWidths, opts = {}) => {
+  const addSheet = (name, headers, rows, colWidths) => {
     const ws = wb.addWorksheet(name);
     const hRow = ws.addRow(headers);
     hRow.font = { bold: true, color: { argb: 'FFFFFFFF' }, size: 10 };
     hRow.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0F4C81' } };
     if (colWidths) colWidths.forEach((w, i) => { ws.getColumn(i + 1).width = w; });
     rows.forEach((r, ri) => {
-      const row = ws.addRow(r);
+      const row = ws.addRow(r.map((v, ci) => {
+        if (ci > 0 && typeof v === 'string' && v.startsWith('=')) return r[ci];
+        return v;
+      }));
       const isTotal = String(r[0] || '').startsWith('=') || String(r[0] || '').startsWith('Total');
-      if (isTotal) { row.font = { bold: true }; }
+      if (isTotal) row.font = { bold: true };
       r.forEach((v, ci) => {
-        const cell = row.getCell(ci + 1);
-        if (typeof v === 'number') cell.numFmt = numFmt;
+        if (typeof v === 'number') row.getCell(ci + 1).numFmt = numFmt;
       });
     });
     return ws;
   };
 
+  const $b = (k, ...fb) => getVal(bilan, k, ...fb);
+  const $r = (k, ...fb) => getVal(resultat, k, ...fb);
+
   // Bilan
   addSheet('Bilan', ['', 'Brut', 'Amort/Prov', 'Net'], [
-    ['Actifs non courants', bilan.ancBrut, bilan.amortissements + bilan.provisionsActifNC, bilan.actifNC],
-    ['  Frais préliminaires', bilan.fraisPreliminaires, '', ''],
-    ['  Immobilisations incorporelles', bilan.immobilisationsIncorporelles, '', ''],
-    ['  Immobilisations corporelles', bilan.immobilisationsCorporelles, '', ''],
-    ['  Immobilisations financières', bilan.immobilisationsFinancieres, '', ''],
-    ['Actifs courants', '', '', bilan.actifC],
-    ['  Stocks', '', '', bilan.stocks],
-    ['  Clients', '', '', bilan.clients],
-    ['  Trésorerie', '', '', bilan.tresorerie],
-    ['= TOTAL ACTIF', '', '', bilan.totalActif],
+    ['Actifs non courants', $b('ancBrut'), $b('amortissements', 'amortissementsDeduction') + $b('provisionsActifNC', 'provisionsActifNCDeduction', 'provActifNC'), $b('actifNC')],
+    ['  Frais préliminaires', $b('fraisPreliminaires'), '', ''],
+    ['  Immobilisations incorporelles', $b('immobilisationsIncorporelles'), '', ''],
+    ['  Immobilisations corporelles', $b('immobilisationsCorporelles'), '', ''],
+    ['  Immobilisations financières', $b('immobilisationsFinancieres'), '', ''],
+    ['Actifs courants', '', '', $b('actifC')],
+    ['  Stocks', '', '', $b('stocks')],
+    ['  Clients', '', '', $b('clients')],
+    ['  Trésorerie', '', '', $b('tresorerie', 'tresorerieActif')],
+    ['= TOTAL ACTIF', '', '', $b('totalActif')],
     [],
-    ['Capitaux propres', '', bilan.capPropres],
-    ['  Capital', '', bilan.capital],
-    ['  Réserves', '', bilan.reserves],
-    ['  Résultat', '', bilan.resultatExercice],
-    ['Passifs non courants', '', bilan.passifNC],
-    ['  Emprunts', '', bilan.emprunts],
-    ['Passifs courants', '', bilan.passifC],
-    ['  Fournisseurs', '', bilan.fournisseurs],
-    ['  Concours bancaires', '', bilan.concoursBancaires],
-    ['= TOTAL PASSIFS & CP', '', bilan.totalPassif],
+    ['Capitaux propres', '', $b('capPropres')],
+    ['  Capital', '', $b('capital', 'capitalSocial')],
+    ['  Réserves', '', $b('reserves')],
+    ['  Résultat', '', $b('resultatExercice')],
+    ['Passifs non courants', '', $b('passifNC')],
+    ['  Emprunts', '', $b('emprunts')],
+    ['Passifs courants', '', $b('passifC')],
+    ['  Fournisseurs', '', $b('fournisseurs')],
+    ['  Concours bancaires', '', $b('concoursBancaires')],
+    ['= TOTAL PASSIFS & CP', '', $b('totalPassif')],
   ], [35, 20, 20, 20]);
 
   // État de résultat
   addSheet('État de résultat', ['', 'Montant'], [
-    ['Produits d\'exploitation', resultat.produitsExploitation],
-    ['  Ventes', resultat.ventes],
-    ['  Production stockée', resultat.productionStockee],
-    ['  Subventions', resultat.subventionsExploitation],
-    ['Charges d\'exploitation', resultat.chargesExploitation],
-    ['  Achats', resultat.achatsConsommes],
-    ['  Charges externes', resultat.chargesExternes],
-    ['  Personnel', resultat.chargesPersonnel],
-    ['  Dotations', resultat.dotations],
-    ['= RÉSULTAT D\'EXPLOITATION', resultat.resultatExploitation],
-    ['Résultat financier', resultat.resultatFinancier],
-    ['= RÉSULTAT AVANT IMPÔT', resultat.resultatAvantImpot],
-    ['Impôt', resultat.impot],
-    ['= RÉSULTAT NET', resultat.resultatNet],
+    ['Produits d\'exploitation', $r('produitsExploitation', 'totalProduitsExploitation', 'produits')],
+    ['  Ventes', $r('ventes')],
+    ['  Production stockée', $r('productionStockee')],
+    ['  Subventions', $r('subventionsExploitation')],
+    ['Charges d\'exploitation', $r('chargesExploitation', 'totalChargesExploitation', 'charges')],
+    ['  Achats', $r('achatsConsommes', 'achats')],
+    ['  Charges externes', $r('chargesExternes')],
+    ['  Personnel', $r('chargesPersonnel')],
+    ['  Dotations', $r('dotations')],
+    ['= RÉSULTAT D\'EXPLOITATION', $r('resultatExploitation')],
+    ['Résultat financier', $r('resultatFinancier')],
+    ['= RÉSULTAT AVANT IMPÔT', $r('resultatAvantImpot', 'rcai')],
+    ['Impôt', $r('impot', 'impotIS', 'impotsTaxes')],
+    ['= RÉSULTAT NET', $r('resultatNet')],
   ], [45, 20]);
 
   // SIG
@@ -295,12 +322,12 @@ export async function exportReportsExcel(reports) {
   addSheet('Ratios', ['Ratio', 'Valeur', 'Interprétation'], [
     ['Liquidité générale', ratios.liquiditeGenerale, ratios.liquiditeGenerale >= 1 ? 'OK' : 'Faible'],
     ['Autonomie financière', (ratios.autonomieFinanciere * 100).toFixed(1) + '%', ratios.autonomieFinanciere >= 0.2 ? 'Bonne' : 'Fragile'],
-    ['Rentabilité économique', (ratios.rentabiliteEconomique * 100).toFixed(2) + '%', ''],
-    ['Rentabilité financière', (ratios.rentabiliteFinanciere * 100).toFixed(2) + '%', ''],
+    ['Rentabilité économique', ((getVal(ratios, 'rentabiliteEconomique', 'roe')) * 100).toFixed(2) + '%', ''],
+    ['Rentabilité financière', ((getVal(ratios, 'rentabiliteFinanciere', 'roe', 'roa')) * 100).toFixed(2) + '%', ''],
     ['Marge nette', (ratios.margeNette * 100).toFixed(2) + '%', ''],
-    ['Rotation stocks (j)', Math.round(ratios.rotationStocksJours || 0) + '', ''],
-    ['Délai clients (j)', Math.round(ratios.delaiClientsJours || 0) + '', ''],
-    ['Délai fournisseurs (j)', Math.round(ratios.delaiFournisseursJours || 0) + '', ''],
+    ['Rotation stocks (j)', Math.round(getVal(ratios, 'rotationStocksJours') || 0) + '', ''],
+    ['Délai clients (j)', Math.round(getVal(ratios, 'delaiClientsJours') || 0) + '', ''],
+    ['Délai fournisseurs (j)', Math.round(getVal(ratios, 'delaiFournisseursJours') || 0) + '', ''],
   ], [30, 20, 20]);
 
   // Balance
