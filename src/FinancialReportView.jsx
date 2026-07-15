@@ -130,6 +130,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [importing, setImporting] = useState(false);
   const [importError, setImportError] = useState(null);
   const [importedData, setImportedData] = useState(null);
+  const [editingAccounts, setEditingAccounts] = useState(null);
   const [dataSource, setDataSource] = useState('journal');
 
   const detailLabels = {
@@ -196,20 +197,11 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     setImportError(null);
     try {
       const { parseBalanceFile } = await import('./utils/balanceParser');
-      const { balancesToReports } = await import('./utils/balanceToReports');
       const parsed = await parseBalanceFile(file);
       if (!parsed.accounts?.length) throw new Error('Aucun compte extrait du fichier');
-      if (parsed.accounts.length > 0) {
-        const first = parsed.accounts[0];
-        console.log('Sample account:', first);
-      }
-      const reports = balancesToReports(parsed.accounts);
-      if (reports.anomalies?.length > 0) {
-        console.warn('Anomalies:', reports.anomalies);
-      }
-      setImportedData({ ...parsed, ...reports });
-      setDataSource('import');
-      toast.success(`${parsed.accounts.length} comptes importés (${parsed.filename})`);
+      setEditingAccounts(parsed.accounts.map(a => ({ ...a })));
+      setImportedData({ filename: parsed.filename, exercice: parsed.exercice, type: parsed.type, accounts: parsed.accounts });
+      toast.success(`${parsed.accounts.length} comptes extraits de ${parsed.filename} — Vérifiez et modifiez si besoin`);
     } catch (e) {
       console.error('Import error:', e);
       setImportError(e.message);
@@ -218,6 +210,26 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       setImporting(false);
     }
   };
+
+  const confirmImport = async () => {
+    if (!editingAccounts) return;
+    setImporting(true);
+    try {
+      const { balancesToReports } = await import('./utils/balanceToReports');
+      const reports = balancesToReports(editingAccounts);
+      setImportedData(prev => ({ ...prev, accounts: editingAccounts, ...reports }));
+      setEditingAccounts(null);
+      setDataSource('import');
+      toast.success(`États financiers générés (${editingAccounts.length} comptes)`);
+    } catch (e) {
+      console.error('Generation error:', e);
+      toast.error('Erreur de calcul: ' + e.message);
+    } finally {
+      setImporting(false);
+    }
+  };
+
+  const cancelEdit = () => { setEditingAccounts(null); setImportedData(null); };
 
   const handleDetail = (key) => {
     if (journalData?.details?.[key]) return setSelectedDetail(key);
@@ -416,7 +428,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </button>
           </div>
           <p className="text-xs text-slate-400 hidden md:block">
-            {hasImported ? `Importé: ${importedData.filename}` : useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
+            {editingAccounts ? `Modification: ${importedData?.filename || ''}` : hasImported ? `Importé: ${importedData.filename}` : useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
           </p>
           {hasImported && (
             <button onClick={() => { setImportedData(null); setDataSource('journal'); }}
@@ -453,7 +465,66 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         </div>
       </div>
 
-      {reportTab === 'financiers' && (
+      {editingAccounts && (
+      <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
+        <div className="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+          <div>
+            <h3 className="text-sm font-bold text-slate-100">{importedData?.filename || 'Comptes importés'}</h3>
+            <p className="text-[10px] text-slate-400">Exercice {importedData?.exercice || 'N'} · {editingAccounts.length} comptes · Modifiez les valeurs puis cliquez Générer</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <button onClick={cancelEdit}
+              className="text-[10px] px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors">
+              Annuler
+            </button>
+            <button onClick={confirmImport} disabled={importing}
+              className="text-[10px] px-4 py-1.5 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold transition-colors disabled:opacity-50">
+              {importing ? 'Calcul...' : 'Générer les états financiers'}
+            </button>
+          </div>
+        </div>
+        <div className="max-h-96 overflow-y-auto border border-slate-700 rounded-xl">
+          <table className="w-full text-[11px]">
+            <thead className="bg-slate-800/50 sticky top-0">
+              <tr className="text-slate-400 font-bold uppercase tracking-wider">
+                <th className="text-left py-2 px-3 w-[80px]">Compte</th>
+                <th className="text-left py-2 px-3">Libellé</th>
+                <th className="text-right py-2 px-3 w-[130px]">Débit</th>
+                <th className="text-right py-2 px-3 w-[130px]">Crédit</th>
+              </tr>
+            </thead>
+            <tbody>
+              {editingAccounts.map((a, i) => (
+                <tr key={a.compte + '-' + i} className="border-t border-slate-800/30 hover:bg-slate-800/20">
+                  <td className="py-1.5 px-3 font-mono text-slate-300">{a.compte}</td>
+                  <td className="py-1.5 px-3 text-slate-400 truncate max-w-[200px]">{a.libelle || '—'}</td>
+                  <td className="py-1.5 px-3">
+                    <input type="number" step="0.001"
+                      value={a.debitTotal}
+                      onChange={e => {
+                        const v = parseFloat(e.target.value) || 0;
+                        setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, debitTotal: v } : x));
+                      }}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
+                  <td className="py-1.5 px-3">
+                    <input type="number" step="0.001"
+                      value={a.creditTotal}
+                      onChange={e => {
+                        const v = parseFloat(e.target.value) || 0;
+                        setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, creditTotal: v } : x));
+                      }}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      )}
+
+      {!editingAccounts && reportTab === 'financiers' && (
       <>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* BILAN */}
@@ -931,7 +1002,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       </>
       )}
 
-      {reportTab === 'balance' && (
+      {!editingAccounts && reportTab === 'balance' && (
       <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
         <div className="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
           <h3 className="text-base font-bold text-slate-100">Balance Générale</h3>
