@@ -432,8 +432,8 @@ function parseBilanPDFLines(rows) {
       if (nums.length >= 2) break;
     }
     if (nums.length === 0) continue;
-    // Use last year's value (N)
-    const value = nums[nums.length >= 2 ? nums.length - 2 : 0];
+    const value = nums[nums.length >= 2 ? nums.length - 2 : 0]; // N
+    const valuePrev = nums.length >= 2 ? nums[nums.length - 1] : 0; // N-1
     if (value === 0) continue;
 
     // Match against rules
@@ -447,6 +447,8 @@ function parseBilanPDFLines(rows) {
           libelle: label,
           debitTotal: isDebit ? Math.abs(value) : 0,
           creditTotal: isDebit ? 0 : Math.abs(value),
+          debitTotalPrev: isDebit ? Math.abs(valuePrev) : 0,
+          creditTotalPrev: isDebit ? 0 : Math.abs(valuePrev),
           soldeDebiteur: isDebit ? Math.abs(value) : 0,
           soldeCrediteur: isDebit ? 0 : Math.abs(value),
         });
