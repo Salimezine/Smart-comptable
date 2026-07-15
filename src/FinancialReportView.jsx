@@ -121,7 +121,7 @@ function DetailModal({ detail, label, journal, onClose }) {
 
 export default function FinancialReportView({ companyDetails, invoices, expenses, transactions, formatCurrency, stockTotal = 0 }) {
   const toast = useToast();
-  const [period, setPeriod] = useState('N');
+  const [period, setPeriod] = useState('');
   const [refreshKey, setRefreshKey] = useState(0);
   const [selectedDetail, setSelectedDetail] = useState(null);
   const [reportTab, setReportTab] = useState('financiers');
@@ -131,6 +131,10 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [importedData, setImportedData] = useState(null);
   const [editingAccounts, setEditingAccounts] = useState(null);
   const [dataSource, setDataSource] = useState('journal');
+  const currentYear = new Date().getFullYear();
+  const exerciceYear = importedData?.exercice ? parseInt(importedData.exercice, 10) : currentYear;
+  const displayYear = period || String(exerciceYear);
+  const prevYear = String(exerciceYear - 1);
 
   const detailLabels = {
     immobilisationsIncorporelles: 'Immobilisations incorporelles',
@@ -496,10 +500,10 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <label className="text-xs text-slate-400 font-bold uppercase flex items-center gap-1">
             <Calendar className="w-4 h-4" /> Exercice
           </label>
-          <select value={period} onChange={(e) => setPeriod(e.target.value)}
+          <select value={displayYear} onChange={(e) => setPeriod(e.target.value)}
             className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-1.5 text-sm text-slate-100 focus:outline-none focus:border-brand-500">
-            <option value="N">N</option>
-            <option value="N-1">N-1</option>
+            <option value={String(exerciceYear)}>{exerciceYear}</option>
+            <option value={prevYear}>{prevYear}</option>
           </select>
           <button onClick={() => {
             try {
