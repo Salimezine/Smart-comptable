@@ -255,10 +255,26 @@ export async function parseExcelFile(file) {
   return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
 }
 
+function findHeaderRowInData(headers, data) {
+  const allH = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','actif','passif','rubriques','montant','total',
+    'actifs non courants','capitaux propres','classe','soldes','lib','nom','code','num'];
+  let bestH = headers;
+  let bestI = -1;
+  let bestScore = 0;
+  const candidates = [headers, ...data.slice(0, 10)];
+  for (let i = 0; i < candidates.length; i++) {
+    const rowText = candidates[i].map(v => String(v).toLowerCase().trim()).join(' ');
+    const score = allH.filter(h => rowText.includes(h)).length;
+    if (score > bestScore && score >= 2) { bestScore = score; bestI = i; bestH = candidates[i]; }
+  }
+  return { headers: bestH, data: bestI < 0 ? data : data.slice(bestI) };
+}
+
 export async function parseCSVFile(file) {
   const text = await file.text();
   const textClean = text.charCodeAt(0) === 0xFEFF ? text.slice(1) : text;
-  const { headers, data } = parseCSV(textClean);
+  const parsed = parseCSV(textClean);
+  const { headers, data } = findHeaderRowInData(parsed.headers, parsed.data);
   const type = detectType([headers, ...data]);
   const exercice = detectExercice([headers, ...data]);
   const accounts = extractAccountsFromRows(headers, data, type);
@@ -294,7 +310,8 @@ function parseCSVFromText(text, filename) {
   const isTabular = lines.every(l => /\t| {2,}|;/.test(l));
   if (isTabular) {
     const delimiter = guessDelimiter(lines[0]);
-    const { headers, data } = parseCSV(lines.join('\n'));
+    const parsed = parseCSV(lines.join('\n'));
+    const { headers, data } = findHeaderRowInData(parsed.headers, parsed.data);
     const type = detectType([headers, ...data]);
     const exercice = detectExercice([headers, ...data]);
     const accounts = extractAccountsFromRows(headers, data, type);
