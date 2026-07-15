@@ -285,22 +285,12 @@ export async function parsePDFFile(file) {
   const arrayBuffer = await file.arrayBuffer();
   const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
 
-  // Step 1: Extract all text — group by Y, cluster by X, produce tab-separated rows
+  // Step 1: Extract text grouped by Y (3px tolerance) — join all items on same Y with space
   const rows = [];
-  const pageColumns = []; // { debitMidX, creditMidX } per page for single-value classification
   for (let p = 1; p <= pdf.numPages; p++) {
     const page = await pdf.getPage(p);
     const tc = await page.getTextContent();
     const items = tc.items;
-    // Detect column midpoints from header row
-    let debitMidX = 435, creditMidX = 525; // defaults
-    for (let i = 0; i < items.length - 1; i++) {
-      const s = items[i].str.trim().toLowerCase();
-      if (s === 'débit' || s === 'debit') debitMidX = items[i].transform[4] + (items[i].width || 20) / 2;
-      if (s === 'crédit' || s === 'credit') creditMidX = items[i].transform[4] + (items[i].width || 20) / 2;
-    }
-    pageColumns.push({ debitMidX, creditMidX });
-    // Group by Y
     const lineMap = {};
     const yTolerance = 3;
     for (const item of items) {
@@ -311,81 +301,52 @@ export async function parsePDFFile(file) {
     const keys = Object.keys(lineMap).map(Number).sort((a, b) => b - a);
     for (const y of keys) {
       const lineItems = lineMap[y].sort((a, b) => a.transform[4] - b.transform[4]);
-      // Filter out filler space items, then cluster by X-gap
-      const realItems = lineItems.filter(item => item.str.trim().length > 0);
-      const clusters = []; // each: { text, x }
-      let cur = [];
-      let curX = 0;
-      let prevRight = -9999;
-      for (const item of realItems) {
-        const x = item.transform[4];
-        const right = x + (item.width || 0);
-        if (cur.length > 0 && x - prevRight > 30) {
-          clusters.push({ text: cur.map(i => i.str).join(' '), x: curX });
-          cur = [];
-        }
-        if (cur.length === 0) curX = x;
-        cur.push(item);
-        prevRight = right;
-      }
-      if (cur.length > 0) clusters.push({ text: cur.map(i => i.str).join(' '), x: curX });
-      // Join clusters with tab
-      const text = clusters.map(c => c.text).join('\t').trim();
-      if (text) rows.push({ text, clusters, col: pageColumns[p - 1] });
+      // Keep ALL items (incl. spaces) — space fillers create 2+ space gaps between columns
+      const text = lineItems.map(i => i.str).join(' ').trim();
+      if (text) rows.push(text);
     }
   }
-  // Convert rows to plain strings, keep column metadata for X-based classification
-  const rowTexts = rows.map(r => r.text);
-  const rowMeta  = rows.map(r => ({ clusters: r.clusters, col: r.col }));
 
-  if (rowTexts.length < 3) throw new Error('Le PDF ne contient pas assez de texte exploitable.');
+  if (rows.length < 3) throw new Error('Le PDF ne contient pas assez de texte exploitable.');
 
   // Step 2: Find header row
   const allH = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','montant','classe','rubriques'];
   let hdrIdx = -1;
-  for (let i = 0; i < Math.min(rowTexts.length, 12); i++) {
-    const txt = rowTexts[i].toLowerCase();
+  for (let i = 0; i < Math.min(rows.length, 12); i++) {
+    const txt = rows[i].toLowerCase();
     const score = allH.filter(k => txt.includes(k)).length;
     if (score >= 2) { hdrIdx = i; break; }
   }
 
   // Step 3: Detect format
-  const joined = rowTexts.slice(0, 20).join(' ').toLowerCase();
+  const joined = rows.slice(0, 20).join(' ').toLowerCase();
   const isBilan = BILAN_HEADERS.filter(h => joined.includes(h)).length >= 2 || joined.includes('actifs non courants');
-  const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rowTexts.some(r => /^\s*\d{4,8}\s/.test(r));
+  const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rows.some(r => /^\s*\d{4,8}\s/.test(r));
 
   if (isBilan && !isBalance) {
-    const accounts = parseBilanPDFLines(rowTexts);
+    const accounts = parseBilanPDFLines(rows);
     if (accounts.length > 0) {
-      return { type: 'bilan', filename: file.name, exercice: detectExercice(rowTexts.map(r => [r])), accounts, rawData: { headers: [], rows: rowTexts } };
+      return { type: 'bilan', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
     }
   }
 
-  // Step 4: Structured extraction with X-coordinate-based single-value classification
-  const dataRows = hdrIdx >= 0 ? rowTexts.slice(hdrIdx + 1) : rowTexts;
-  const dataMeta = hdrIdx >= 0 ? rowMeta.slice(hdrIdx + 1)  : rowMeta;
-  const dataLineIndices = [];
-  for (let i = 0; i < dataRows.length; i++) {
-    if (/^\s*\d{3,8}[\s\t]/.test(dataRows[i])) dataLineIndices.push(i);
-  }
+  // Step 4: Split lines by 2+ spaces, detect amounts via decimal separator, classify using column index
+  const dataRows = hdrIdx >= 0 ? rows.slice(hdrIdx + 1) : rows;
+  const dataLines = dataRows.filter(r => /^\s*\d{3,8}\s/.test(r));
 
-  if (dataLineIndices.length > 0) {
-    const accounts = dataLineIndices.map(idx => {
-      const line = dataRows[idx];
-      const meta = dataMeta[idx];
-      const clusterTexts = meta.clusters.map(c => c.text);
-      const clusterX = meta.clusters.map(c => c.x);
-      const parts = line.trim().split('\t');
+  if (dataLines.length > 0) {
+    const accounts = dataLines.map(line => {
+      const parts = line.trim().split(/\s{2,}| {2,}|\t/);
       if (parts.length < 2) return null;
       const compte = normalizeCompte(parts[0]);
       if (!compte || compte.length < 2) return null;
-      const numInfos = []; // { val, x }
+      const numInfos = []; // { val, idx }
       const labelParts = [];
       for (let i = 1; i < parts.length; i++) {
         const p = parts[i].trim();
         const n = cleanNum(p);
         if (!isNaN(n) && isFinite(n) && /[.,]/.test(p)) {
-          numInfos.push({ val: n, x: i < clusterX.length ? clusterX[i] : 0 });
+          numInfos.push({ val: n, idx: i });
         } else {
           labelParts.push(p);
         }
@@ -393,25 +354,25 @@ export async function parsePDFFile(file) {
       const libelle = labelParts.join(' ').trim();
       let debit = 0, credit = 0;
       if (numInfos.length === 1) {
-        const { val, x } = numInfos[0];
-        const midpoint = (meta.col.debitMidX + meta.col.creditMidX) / 2;
-        if (x >= midpoint) { credit = Math.abs(val); }
+        const { val, idx } = numInfos[0];
+        // In a balance-trial PDF the order is always: compte, label, debit, credit
+        // If the single value is at index 3+ it is the credit column
+        if (idx >= 3) { credit = Math.abs(val); }
         else { debit = Math.abs(val); }
       } else if (numInfos.length >= 2) {
-        const sorted = [...numInfos].sort((a, b) => a.x - b.x);
-        debit = sorted[0].val;
-        credit = sorted[1].val;
+        debit = numInfos[0].val;
+        credit = numInfos[1].val;
       }
       if (debit === 0 && credit === 0) return null;
       return { compte, libelle, debitTotal: debit, creditTotal: credit, soldeDebiteur: debit > credit ? debit - credit : 0, soldeCrediteur: credit > debit ? credit - debit : 0 };
     }).filter(Boolean);
     if (accounts.length > 0) {
-      return { type: 'balance', filename: file.name, exercice: detectExercice(rowTexts.map(r => [r])), accounts, rawData: { headers: [], rows: rowTexts } };
+      return { type: 'balance', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
     }
   }
 
-  // Step 5: Fallback
-  const lines = rowTexts.join('\n');
+  // Step 5: Fallback — treat tab/space-delimited text as CSV
+  const lines = rows.join('\n');
   return parseCSVFromText(lines, file.name);
 }
 
