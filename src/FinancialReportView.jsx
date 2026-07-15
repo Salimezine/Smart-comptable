@@ -198,12 +198,22 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       const { parseBalanceFile } = await import('./utils/balanceParser');
       const { balancesToReports } = await import('./utils/balanceToReports');
       const parsed = await parseBalanceFile(file);
+      if (!parsed.accounts?.length) throw new Error('Aucun compte extrait du fichier');
+      if (parsed.accounts.length > 0) {
+        const first = parsed.accounts[0];
+        console.log('Sample account:', first);
+      }
       const reports = balancesToReports(parsed.accounts);
+      if (reports.anomalies?.length > 0) {
+        console.warn('Anomalies:', reports.anomalies);
+      }
       setImportedData({ ...parsed, ...reports });
       setDataSource('import');
+      toast.success(`${parsed.accounts.length} comptes importés (${parsed.filename})`);
     } catch (e) {
       console.error('Import error:', e);
       setImportError(e.message);
+      toast.error("Erreur d'import: " + e.message);
     } finally {
       setImporting(false);
     }
