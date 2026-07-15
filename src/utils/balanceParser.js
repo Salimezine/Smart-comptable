@@ -281,132 +281,122 @@ export async function parseCSVFile(file) {
   return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
 }
 
-function pdfItemsToRows(items, yTolerance = 3) {
-  const rows = [];
-  let currentRow = [];
-  let lastY = null;
-  const sorted = [...items].sort((a, b) => {
-    const yDiff = b.transform[5] - a.transform[5];
-    if (Math.abs(yDiff) > yTolerance) return yDiff > 0 ? -1 : 1;
-    return a.transform[4] - b.transform[4];
-  });
-  for (const item of sorted) {
-    const y = item.transform[5];
-    if (lastY != null && Math.abs(y - lastY) > yTolerance) {
-      currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
-      rows.push(currentRow.map(i => i.str));
-      currentRow = [];
-    }
-    currentRow.push(item);
-    lastY = y;
-  }
-  if (currentRow.length) {
-    currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
-    rows.push(currentRow.map(i => i.str));
-  }
-  return rows;
-}
-
-function detectColumns(items, sampleCount = 15) {
-  const xPositions = [];
-  for (const item of items.slice(0, sampleCount * 5)) {
-    xPositions.push({ text: item.str, x: item.transform[4] });
-  }
-  const sortedX = [...new Set(xPositions.map(p => Math.round(p.x / 8) * 8))].sort((a, b) => a - b);
-  const clusters = [];
-  for (const cx of sortedX) {
-    const group = xPositions.filter(p => Math.abs(Math.round(p.x / 8) * 8 - cx) < 4);
-    if (group.length >= 3) clusters.push(cx);
-  }
-  return clusters;
-}
-
-function extractTableFromPDF(tc) {
-  const items = tc.items;
-  const xClusters = detectColumns(items, 15);
-  const yTolerance = 3;
-  const rows = [];
-  let currentRow = [];
-  let lastY = null;
-  const sorted = [...items].sort((a, b) => {
-    const yDiff = b.transform[5] - a.transform[5];
-    if (Math.abs(yDiff) > yTolerance) return yDiff > 0 ? -1 : 1;
-    return a.transform[4] - b.transform[4];
-  });
-  for (const item of sorted) {
-    const y = item.transform[5];
-    if (lastY != null && Math.abs(y - lastY) > yTolerance) {
-      currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
-      rows.push(currentRow);
-      currentRow = [];
-    }
-    currentRow.push(item);
-    lastY = y;
-  }
-  if (currentRow.length) {
-    currentRow.sort((a, b) => a.transform[4] - b.transform[4]);
-    rows.push(currentRow);
-  }
-  if (rows.length < 3) return null;
-  const headerIdx = findPdfHeaderRow(rows);
-  if (headerIdx < 0) return null;
-  const headers = rows[headerIdx].map(i => i.str);
-  const dataRows = rows.slice(headerIdx + 1).filter(r => r.some(i => /^\d/.test(i.str)));
-  const data = dataRows.map(r => {
-    const cells = [];
-    let lastX = -1;
-    for (const item of r) {
-      if (lastX >= 0 && item.transform[4] - lastX > 15) cells.push('');
-      cells.push(item.str);
-      lastX = item.transform[4];
-    }
-    return cells;
-  });
-  return { headers, data };
-}
-
-function findPdfHeaderRow(rows) {
-  const keywords = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','montant','classe'];
-  let best = -1, bestScore = 0;
-  for (let i = 0; i < Math.min(rows.length, 12); i++) {
-    const text = rows[i].map(it => it.str.toLowerCase()).join(' ');
-    const score = keywords.filter(k => text.includes(k)).length;
-    if (score > bestScore) { bestScore = score; best = i; }
-  }
-  return bestScore >= 2 ? best : -1;
-}
-
 export async function parsePDFFile(file) {
   const arrayBuffer = await file.arrayBuffer();
   const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
-  const page = await pdf.getPage(1);
-  const tc = await page.getTextContent();
-  const table = extractTableFromPDF(tc);
-  if (table) {
-    const { headers, data } = findHeaderRowInData(table.headers, table.data);
-    const type = detectType([headers, ...data]);
-    const exercice = detectExercice([headers, ...data]);
-    const accounts = extractAccountsFromRows(headers, data, type);
-    if (accounts.length > 0) return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
-  }
-  // Fallback: raw text extraction
-  let allText = '';
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const p = await pdf.getPage(i);
-    const t = await p.getTextContent();
-    let lastY = -1;
-    for (const item of t.items) {
-      const y = Math.round(item.transform[5]);
-      if (lastY >= 0 && y < lastY - 2) allText += '\n';
-      else if (lastY >= 0) allText += '\n';
-      allText += item.str;
-      lastY = y;
+
+  // Step 1: Extract all text with Y-position grouping
+  const rows = [];
+  for (let p = 1; p <= pdf.numPages; p++) {
+    const page = await pdf.getPage(p);
+    const tc = await page.getTextContent();
+    const items = tc.items;
+    // Group by Y (within 3px tolerance)
+    const lineMap = {};
+    const yTolerance = 3;
+    for (const item of items) {
+      const y = Math.round(item.transform[5] / yTolerance) * yTolerance;
+      if (!lineMap[y]) lineMap[y] = [];
+      lineMap[y].push(item);
     }
-    allText += '\n';
+    const keys = Object.keys(lineMap).map(Number).sort((a, b) => b - a);
+    for (const y of keys) {
+      const lineItems = lineMap[y].sort((a, b) => a.transform[4] - b.transform[4]);
+      const text = lineItems.map(i => i.str).join(' ').trim();
+      if (text) rows.push(text);
+    }
   }
-  allText = allText.trim();
-  if (allText.length < 20) throw new Error('Le PDF ne contient pas assez de texte exploitable.');
-  return parseCSVFromText(allText, file.name);
+
+  if (rows.length < 3) throw new Error('Le PDF ne contient pas assez de texte exploitable.');
+
+  // Step 2: Find header row
+  const allH = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','montant','classe','rubriques'];
+  let hdrIdx = -1;
+  for (let i = 0; i < Math.min(rows.length, 12); i++) {
+    const txt = rows[i].toLowerCase();
+    const score = allH.filter(k => txt.includes(k)).length;
+    if (score >= 2) { hdrIdx = i; break; }
+  }
+
+  // Step 3: Detect if it's a balance or bilan by content
+  const joined = rows.slice(0, 20).join(' ').toLowerCase();
+  const isBilan = BILAN_HEADERS.filter(h => joined.includes(h)).length >= 2;
+  const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rows.some(r => /^\d{4,8}\s/.test(r));
+
+  if (isBilan && !isBalance) {
+    // Bilan format: extract key-value pairs
+    const accounts = parseBilanFromText(rows);
+    if (accounts.length > 0) {
+      return { type: 'bilan', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
+    }
+  }
+
+  // Step 4: Try structured extraction — find lines with account numbers
+  const dataRows = hdrIdx >= 0 ? rows.slice(hdrIdx + 1) : rows;
+  const dataLines = dataRows.filter(r => /^\s*\d{3,8}\s/.test(r));
+
+  if (dataLines.length > 0) {
+    // Parse each line as: compte, libelle, debit, credit (or single amount)
+    const accounts = dataLines.map(line => {
+      const parts = line.trim().split(/\s{2,}| {2,}|\t/);
+      if (parts.length < 2) return null;
+      const compte = normalizeCompte(parts[0]);
+      if (!compte || compte.length < 2) return null;
+
+      // Find numeric values in the parts (skip compte and libelle)
+      const numParts = [];
+      const labelParts = [];
+      for (let i = 1; i < parts.length; i++) {
+        const p = parts[i].trim();
+        const n = cleanNum(p);
+        if (!isNaN(n) && isFinite(n) && p.replace(/[\s,.]/g, '').length === String(Math.abs(Math.round(n))).length) {
+          numParts.push(n);
+        } else {
+          labelParts.push(p);
+        }
+      }
+
+      const libelle = labelParts.join(' ').trim();
+      let debit = 0, credit = 0;
+
+      if (numParts.length === 1) {
+        // Single balance figure
+        const val = numParts[0];
+        debit = val > 0 ? val : 0;
+        credit = val < 0 ? -val : 0;
+      } else if (numParts.length >= 2) {
+        // Two figures: debit and credit
+        debit = numParts[0];
+        credit = numParts[1];
+      }
+
+      if (debit === 0 && credit === 0) return null;
+      return { compte, libelle, debitTotal: debit, creditTotal: credit, soldeDebiteur: debit > credit ? debit - credit : 0, soldeCrediteur: credit > debit ? credit - debit : 0 };
+    }).filter(Boolean);
+
+    if (accounts.length > 0) {
+      const exercice = detectExercice(rows.map(r => [r]));
+      return { type: 'balance', filename: file.name, exercice, accounts, rawData: { headers: [], rows } };
+    }
+  }
+
+  // Step 5: Fallback — use old CSV-from-text approach
+  const lines = rows.join('\n');
+  return parseCSVFromText(lines, file.name);
+}
+
+function parseBilanFromText(rows) {
+  const accounts = [];
+  for (const line of rows) {
+    const m = line.match(/^(\d{3,8})\s+(.+?)\s+([\d\s,.]+)$/);
+    if (!m) continue;
+    const compte = normalizeCompte(m[1]);
+    if (!compte) continue;
+    const val = cleanNum(m[3]);
+    if (isNaN(val)) continue;
+    accounts.push({ compte, libelle: m[2].trim(), debitTotal: val > 0 ? val : 0, creditTotal: val < 0 ? -val : 0, soldeDebiteur: val > 0 ? val : 0, soldeCrediteur: val < 0 ? -val : 0 });
+  }
+  return accounts;
 }
 
 function parseCSVFromText(text, filename) {
