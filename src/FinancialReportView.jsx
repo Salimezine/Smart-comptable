@@ -191,12 +191,13 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     tresorerieFinale: 'Trésorerie finale',
   };
 
-  const handleImport = async (file) => {
+  const handleImport = async (file, forceType) => {
     setImporting(true);
     setImportError(null);
     try {
       const { parseBalanceFile } = await import('./utils/balanceParser');
-      const parsed = await parseBalanceFile(file);
+      const opts = forceType ? { forceType } : {};
+      const parsed = await parseBalanceFile(file, opts);
       if (!parsed.accounts?.length) throw new Error('Aucun compte extrait du fichier');
       setEditingAccounts(parsed.accounts.map(a => ({ ...a })));
       setImportedData({ filename: parsed.filename, exercice: parsed.exercice, type: parsed.type, accounts: parsed.accounts });
@@ -518,6 +519,10 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <input type="file" accept=".xlsx,.csv,.pdf" id="simpleImportInput"
             className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[140px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500 cursor-pointer"
             onChange={async e => { const f = e.target.files?.[0]; if (f) { try { e.target.value = ''; await handleImport(f); } catch(err) { console.error(err); } } }} />
+          <input type="file" accept=".xlsx,.csv,.pdf" id="bilanImportInput"
+            className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[130px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-amber-600 file:text-white hover:file:bg-amber-500 cursor-pointer"
+            title="Importer un bilan"
+            onChange={async e => { const f = e.target.files?.[0]; if (f) { try { e.target.value = ''; await handleImport(f, 'bilan'); } catch(err) { console.error(err); } } }} />
         </div>
       </div>
 

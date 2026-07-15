@@ -281,7 +281,7 @@ export async function parseCSVFile(file) {
   return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
 }
 
-export async function parsePDFFile(file) {
+export async function parsePDFFile(file, opts = {}) {
   const arrayBuffer = await file.arrayBuffer();
   const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
 
@@ -323,7 +323,7 @@ export async function parsePDFFile(file) {
   const isBilan = BILAN_HEADERS.filter(h => joined.includes(h)).length >= 2 || joined.includes('actifs non courants');
   const isBalance = BALANCE_HEADERS.filter(h => joined.includes(h)).length >= 3 || rows.some(r => /^\s*\d{4,8}\s/.test(r));
 
-  if (isBilan && !isBalance) {
+  if (opts.forceType === 'bilan' || (isBilan && !isBalance)) {
     const accounts = parseBilanPDFLines(rows);
     if (accounts.length > 0) {
       return { type: 'bilan', filename: file.name, exercice: detectExercice(rows.map(r => [r])), accounts, rawData: { headers: [], rows } };
@@ -493,12 +493,12 @@ function parseCSVFromText(text, filename) {
   return { type, filename, exercice, accounts, rawData: { headers, rows: data } };
 }
 
-export async function parseBalanceFile(file) {
+export async function parseBalanceFile(file, opts = {}) {
   const isExcel = /\.xlsx?$/i.test(file.name);
   const isCSV = /\.csv$/i.test(file.name);
   const isPDF = /\.pdf$/i.test(file.name);
   if (isExcel) return parseExcelFile(file);
   if (isCSV) return parseCSVFile(file);
-  if (isPDF) return parsePDFFile(file);
+  if (isPDF) return parsePDFFile(file, opts);
   throw new Error('Format non supporté. Utilisez Excel (.xlsx), CSV (.csv) ou PDF (.pdf).');
 }
