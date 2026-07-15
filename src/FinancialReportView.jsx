@@ -439,12 +439,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>
-          <button onClick={() => document.getElementById('balanceFileInput')?.click()}
-            className="flex items-center gap-1 px-3 py-1.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition-colors">
-            <Upload className="w-3.5 h-3.5" /> Importer
-          </button>
-          <input id="balanceFileInput" type="file" accept=".xlsx,.csv,.pdf" className="hidden"
-            onChange={async e => { const f = e.target.files?.[0]; if (f) { e.target.value = ''; await handleImport(f); } }} />
+          <label className={`flex items-center gap-1 px-3 py-1.5 rounded-xl transition-colors text-white text-xs font-bold cursor-pointer ${importing ? 'bg-purple-600/50 opacity-50' : 'bg-purple-600 hover:bg-purple-500'}`}>
+            <Upload className="w-3.5 h-3.5" />
+            {importing ? 'Analyse...' : 'Importer'}
+            <input type="file" accept=".xlsx,.csv,.pdf" className="hidden" disabled={importing}
+              onChange={async e => { const f = e.target.files?.[0]; if (f) { e.target.value = ''; await handleImport(f); } }} />
+          </label>
         </div>
       </div>
 
