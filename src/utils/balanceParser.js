@@ -307,18 +307,15 @@ function pdfItemsToRows(items, yTolerance = 3) {
   return rows;
 }
 
-function detectColumns(rows, sampleCount = 15) {
+function detectColumns(items, sampleCount = 15) {
   const xPositions = [];
-  for (let ri = 1; ri < Math.min(rows.length, sampleCount + 1); ri++) {
-    let rowX = 0;
-    for (const item of rows[ri]) {
-      xPositions.push({ text: item.str, x: item.transform[4], row: ri });
-    }
+  for (const item of items.slice(0, sampleCount * 5)) {
+    xPositions.push({ text: item.str, x: item.transform[4] });
   }
+  const sortedX = [...new Set(xPositions.map(p => Math.round(p.x / 8) * 8))].sort((a, b) => a - b);
   const clusters = [];
-  const sortedX = [...new Set(xPositions.map(p => Math.round(p.x / 10) * 10))].sort((a, b) => a - b);
   for (const cx of sortedX) {
-    const group = xPositions.filter(p => Math.abs(Math.round(p.x / 10) * 10 - cx) < 5);
+    const group = xPositions.filter(p => Math.abs(Math.round(p.x / 8) * 8 - cx) < 4);
     if (group.length >= 3) clusters.push(cx);
   }
   return clusters;
