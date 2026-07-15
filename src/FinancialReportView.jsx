@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, getFinancialExportData, generateFromJournal } from './accountingUtils';
 import { exportBalanceSheetPDF, exportIncomeStatementPDF } from './pdfExport';
 import { exportToExcel } from './excelExport';
+import { exportReportsPDF, exportReportsExcel } from './utils/reportExport';
 import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { PCG_COMPLET } from './utils/pcgComplet';
@@ -279,13 +280,16 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const totalSoldeDeb = filteredBalance.reduce((s, b) => s + b.soldeDebiteur, 0);
   const totalSoldeCred = filteredBalance.reduce((s, b) => s + b.soldeCrediteur, 0);
 
-  let bilan, resultat, ratios;
+  let bilan, resultat, ratios, sig, fluxTresorerie, controle;
   let hasImported = importedData && dataSource === 'import';
 
   if (hasImported) {
     bilan = importedData.bilan;
     resultat = importedData.resultat;
     ratios = importedData.ratios;
+    sig = importedData.sig;
+    fluxTresorerie = importedData.fluxTresorerie;
+    controle = importedData.controle;
   } else if (useJournal) {
     bilan = journalData.bilan;
     resultat = journalData.resultat;
@@ -448,14 +452,25 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </select>
           <button onClick={() => {
             try {
-              exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotal));
-              toast.success('Bilan PDF exporté avec succès.');
+              if (hasImported) {
+                exportReportsPDF({ bilan, resultat, sig, ratios, fluxTresorerie, controle });
+                toast.success('Rapport PDF exporté avec succès.');
+              } else {
+                exportBalanceSheetPDF(getFinancialExportData(invoices, expenses, transactions, companyDetails, {}, stockTotal));
+                toast.success('Bilan PDF exporté avec succès.');
+              }
             } catch(e) { console.error('PDF export error:', e); toast.error('Erreur PDF: ' + e.message); }
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileText className="w-3.5 h-3.5" /> PDF
           </button>
-          <button onClick={() => { exportToExcel(invoices, expenses, transactions, companyDetails, {}, stockTotal).catch(console.error); }}
+          <button onClick={() => {
+            if (hasImported) {
+              exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle }).catch(console.error);
+            } else {
+              exportToExcel(invoices, expenses, transactions, companyDetails, {}, stockTotal).catch(console.error);
+            }
+          }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>
