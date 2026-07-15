@@ -439,12 +439,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>
-          <label className={`relative flex items-center gap-1 px-3 py-1.5 rounded-xl transition-colors text-white text-xs font-bold cursor-pointer ${importing ? 'bg-purple-600/50 opacity-50 pointer-events-none' : 'bg-purple-600 hover:bg-purple-500'}`}>
-            <Upload className="w-3.5 h-3.5" />
-            {importing ? 'Analyse...' : 'Importer'}
-            {!importing && <input type="file" accept=".xlsx,.csv,.pdf" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+          <span className="relative inline-flex">
+            <span className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-white text-xs font-bold ${importing ? 'bg-purple-600/50 opacity-50' : 'bg-purple-600 hover:bg-purple-500'}`}>
+              <Upload className="w-3.5 h-3.5" />
+              {importing ? 'Analyse...' : 'Importer'}
+            </span>
+            {!importing && <input type="file" accept=".xlsx,.csv,.pdf"
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
               onChange={async e => { const f = e.target.files?.[0]; if (f) { e.target.value = ''; await handleImport(f); } }} />}
-          </label>
+          </span>
         </div>
       </div>
 
