@@ -5,8 +5,6 @@ import { exportToExcel } from './excelExport';
 import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { PCG_COMPLET } from './utils/pcgComplet';
-import { parseBalanceFile } from './utils/balanceParser';
-import { balancesToReports } from './utils/balanceToReports';
 import { useToast } from './components/Toast';
 
 const fmt = (v) => {
@@ -198,11 +196,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     setImporting(true);
     setImportError(null);
     try {
+      const { parseBalanceFile } = await import('./utils/balanceParser');
+      const { balancesToReports } = await import('./utils/balanceToReports');
       const parsed = await parseBalanceFile(file);
       const reports = balancesToReports(parsed.accounts);
       setImportedData({ ...parsed, ...reports });
       toast.success(`${parsed.accounts.length} comptes extraits de ${parsed.filename}`);
     } catch (e) {
+      console.error('Import error:', e);
       setImportError(e.message);
       toast.error('Erreur d\'import: ' + e.message);
     } finally {

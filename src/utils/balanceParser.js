@@ -1,7 +1,11 @@
 import * as pdfjs from 'pdfjs-dist';
 import ExcelJS from 'exceljs';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
+try {
+  pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
+} catch (e) {
+  console.warn('PDF worker init:', e.message);
+}
 
 const MONTHS_FR = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
 const EXERCICE_RE = new RegExp('(?:exercice|période|année|du\\s*\\d{2}\\/\\d{2}\\/)?\\s*(\\d{4})\\s*(?:du|au|\\/)?.{0,20}?(\\d{4})?', 'i');
