@@ -20,75 +20,77 @@ export function balancesToReports(accounts) {
   const debit = (p) => Object.keys(balances).filter(k => k.startsWith(p)).reduce((s, k) => s + (balances[k].debit || 0), 0);
   const credit = (p) => Object.keys(balances).filter(k => k.startsWith(p)).reduce((s, k) => s + (balances[k].credit || 0), 0);
 
+  // Individual-account helpers: each account classified by its net sign
+  const debitNet = (p) => Object.keys(balances).filter(k => k.startsWith(p))
+    .reduce((s, k) => s + Math.max(0, (balances[k].debit || 0) - (balances[k].credit || 0)), 0);
+  const creditNet = (p) => Object.keys(balances).filter(k => k.startsWith(p))
+    .reduce((s, k) => s + Math.max(0, (balances[k].credit || 0) - (balances[k].debit || 0)), 0);
+
   const ok = (v) => isNaN(v) || !isFinite(v) ? 0 : Math.round(v * 1000) / 1000;
 
-  // ===== CAPITAUX PROPRES =====
-  const capital = ok(Math.max(0, -s('101')));
-  const reserves = ok(Math.max(0, -s('11')));
-  const resultatsReportes = ok(Math.max(0, -s('12')));
-  const subventionsInvestissement = ok(Math.max(0, -s('13')));
-  const ecartsReevaluation = ok(Math.max(0, -s('145')));
-  const autresCapitauxPropres = ok(subventionsInvestissement + ecartsReevaluation);
-
-  // ===== IMMOBILISATIONS (Tunisian PCG: 20=frais prélim, 21=incorp, 22=corp, 24=corp, 25/26/27=financières) =====
-  const fp = s('20');
-  const ic = s('21');            // Incorporelles (brevets, logiciels)
-  const ii = s('22') + s('23') + s('24');  // Corporelles (terrains, constructions, équipements)
-  const ifi = s('25') + s('26') + s('27'); // Financières (participations, prêts)
-  const am = s('28');
-  const amCorp = s('281');
-  const amInc = s('282');
-  const pncProv = s('29');
-
-  const ancBrut = ok(fp + ic + ii + ifi);
-  const amortissements = ok(Math.max(0, -am));
-  const amortissementsCorp = ok(Math.max(0, -amCorp));
-  const amortissementsInc = ok(Math.max(0, -amInc));
-  const provActifNC = ok(Math.max(0, -pncProv));
+  // ===== ACTIF NON COURANTS =====
+  const fp = debitNet('20');
+  const incorp = debitNet('21');
+  const corp = debitNet('22') + debitNet('23') + debitNet('24');
+  const fin = debitNet('25') + debitNet('26') + debitNet('27');
+  const ancBrut = ok(fp + incorp + corp + fin);
+  const amort = creditNet('28');
+  const amortCorp = creditNet('281');
+  const amortInc = creditNet('282');
+  const provANC = creditNet('29');
+  const amortissements = ok(amort);
+  const amortissementsCorp = ok(amortCorp);
+  const amortissementsInc = ok(amortInc);
+  const provActifNC = ok(provANC);
   const actifNC = ok(ancBrut - amortissements - provActifNC);
 
-  // ===== STOCKS =====
-  const stockBrut = s('3');
-  const provStock = s('39');
-  const stocksBrutes = ok(Math.max(0, s('3') - s('39')));
-  const provisionsStocks = ok(Math.max(0, -s('39')));
-  const stocks = ok(Math.max(0, s('3')));
+  // ===== ACTIF COURANTS =====
+  const stocksBrutes = debitNet('3');
+  const provStocks = creditNet('39');
+  const provisionsStocks = ok(provStocks);
+  const stocks = ok(stocksBrutes - provStocks);
 
-  // ===== CLIENTS =====
-  const clBrut = s('41');
-  const provCl = s('491');
-  const clientsBrutes = ok(Math.max(0, clBrut));
-  const provisionsClients = ok(Math.max(0, -provCl));
-  const clients = ok(clientsBrutes - provisionsClients);
+  const clBrut = debitNet('41');
+  const provCl = creditNet('491');
+  const clientsBrutes = ok(clBrut);
+  const provisionsClients = ok(provCl);
+  const clients = ok(clBrut - provCl);
 
-  // ===== ÉTAT, PERSONNEL, AUTRES =====
-  const etatDebit = ok(Math.max(0, s('43')) + Math.max(0, s('445661') + s('445662') + s('445668')) + Math.max(0, s('446')));
-  const etatCredit = ok(Math.max(0, -(s('43'))) + Math.max(0, -(s('444') + s('445671') + s('447') + s('448'))));
-  const personnelDebit = ok(Math.max(0, s('425')));
-  const personnelCredit = ok(Math.max(0, -(s('421') + s('428'))));
+  const etatDebit = debitNet('43');
+  const etatCredit = creditNet('43');
+  const personnelDebit = debitNet('421') + debitNet('425');
+  const personnelCredit = creditNet('421') + creditNet('425') + creditNet('428') + creditNet('453') + creditNet('454');
 
   const autresCréances = ok(
-    Math.max(0, s('409')) + Math.max(0, s('44')) + Math.max(0, s('46')) + Math.max(0, s('47')) + debit('48')
+    debitNet('403') + debitNet('409') + debitNet('44') + debitNet('453') + debitNet('46') + debitNet('47') + debitNet('48')
   );
 
-  const tresorerie = ok(s('5'));
-  const tresorerieActif = Math.max(0, tresorerie);
+  const tresorerieActif = debitNet('5');
+  const concoursBancaires = creditNet('52');
 
   const actifC = ok(stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif);
   const totalActif = ok(actifNC + actifC);
 
-  // ===== PASSIF =====
-  const emprunts = ok(Math.max(0, -s('16')));
-  const provisionsRisques = ok(Math.max(0, -s('151')));
-  const provisionsDettes = ok(Math.max(0, -s('15')));
-  const provisions = provisionsDettes;
-  const autresPassifsNC = ok(Math.max(0, -s('17') + -s('18')));
+  // ===== CAPITAUX PROPRES =====
+  const capital = creditNet('101');
+  const reserves = creditNet('11');
+  const resultatsReportes = creditNet('12');
+  const subventionsInvestissement = creditNet('13');
+  const ecartsReevaluation = creditNet('145');
+  const autresCapitauxPropres = ok(subventionsInvestissement + ecartsReevaluation);
 
-  const fournisseurs = ok(Math.max(0, -s('40')));
+  // ===== PASSIFS =====
+  const emprunts = creditNet('16') + creditNet('505');
+  const provisionsRisques = creditNet('151');
+  const provisionsDettes = creditNet('15');
+  const provisions = provisionsDettes;
+  const autresPassifsNC = creditNet('17') + creditNet('18');
+
+  const fournisseurs = creditNet('401');
   const autresDettes = ok(
-    Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + credit('48')
+    creditNet('41') + creditNet('44') + creditNet('46') + creditNet('47') + creditNet('48')
   );
-  const concoursBancaires = ok(Math.max(0, -s('52')));
+  const concoursBancaires = creditNet('52') + creditNet('54');
 
   // ===== COMPTE DE RÉSULTAT =====
   const totalVentes = ok(credit('70') - debit('709'));
@@ -200,8 +202,8 @@ export function balancesToReports(accounts) {
       amortissementsDeduction: amortissements,
       provisionsActifNCDeduction: provActifNC,
       fraisPreliminaires: ok(fp),
-      immobilisationsIncorporelles: ok(ii),
-      immobilisationsCorporelles: ok(ic),
+      immobilisationsIncorporelles: ok(incorp),
+      immobilisationsCorporelles: ok(corp),
       immobilisationsFinancieres: ok(ifi),
       stocks, stocksBrutes, provisionsStocks,
       provisionsStocksDeduction: provisionsStocks,
@@ -224,8 +226,8 @@ export function balancesToReports(accounts) {
         totalBrut: ancBrut,
         lignes: [
           { categorie: 'Frais préliminaires', debut: 0, augmentation: 0, diminution: 0, fin: ok(fp), _key: 'fp' },
-          { categorie: 'Incorporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(ii), _key: 'inc' },
-          { categorie: 'Corporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(ic), _key: 'corp' },
+          { categorie: 'Incorporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(incorp), _key: 'inc' },
+          { categorie: 'Corporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(corp), _key: 'corp' },
           { categorie: 'Financières', debut: 0, augmentation: 0, diminution: 0, fin: ok(ifi), _key: 'fin' },
         ],
       },
