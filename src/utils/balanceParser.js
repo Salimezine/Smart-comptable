@@ -1,5 +1,6 @@
 import * as pdfjs from 'pdfjs-dist';
 import ExcelJS from 'exceljs';
+import * as XLSX from 'xlsx';
 
 try {
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
@@ -58,10 +59,11 @@ function detectColumnIndex(headers, keywords, data) {
   const raw = headers.map((h, i) => ({ h: String(h).toLowerCase().trim(), i }));
   for (const kw of keywords) {
     const kwClean = kw.replace(/[^a-z0-9éèêëàâäùûüôöîïç]/g, '');
-    const match = h.find(x => x.h.includes(kwClean) || x.h === kwClean);
-    if (match) return match.i;
-    const rawMatch = raw.find(x => x.h.includes(kw) || x.h === kw);
-    if (rawMatch) return rawMatch.i;
+    // Prefer LAST match (rightmost column = current year for two-year balances)
+    const matches = h.filter(x => x.h.includes(kwClean) || x.h === kwClean);
+    if (matches.length) return matches[matches.length - 1].i;
+    const rawMatches = raw.filter(x => x.h.includes(kw) || x.h === kw);
+    if (rawMatches.length) return rawMatches[rawMatches.length - 1].i;
   }
   if (data && data.length > 0) {
     const numericCols = [];
@@ -127,18 +129,24 @@ function findAmountColumns(headers, data) {
     const numCount = sample.filter(v => !isNaN(parseFloat(String(v).replace(',', '.'))) && isFinite(Number(String(v).replace(',', '.')))).length;
     if (numCount > sample.length * 0.4 && numCount >= 3) numericCols.push(col);
   }
+  // Look for debit-credit column pairs (columns where values can be both +/-)
   const debitCredit = numericCols.filter(c => {
     const vals = data.slice(0, 50).map(r => parseFloat(String(r[c]).replace(',', '.')) || 0);
     const hasPositive = vals.some(v => v > 0);
     const hasNegative = vals.some(v => v < 0);
     return hasPositive && hasNegative;
   });
+  // Check for Débit/Crédit keyword matches and use LAST (rightmost) match
+  const debitKw = h.filter(x => x.h.includes('débit') || x.h === 'débit');
+  const creditKw = h.filter(x => x.h.includes('crédit') || x.h === 'crédit');
+  if (debitKw.length) results.debitCandidates = debitKw.map(x => x.i);
+  if (creditKw.length) results.creditCandidates = creditKw.map(x => x.i);
   if (debitCredit.length === 1) {
     results.debit = debitCredit[0];
     results.credit = debitCredit[0];
   } else if (debitCredit.length >= 2) {
-    results.debit = debitCredit[0];
-    results.credit = debitCredit[1];
+    results.debit = debitCredit[debitCredit.length - 2];
+    results.credit = debitCredit[debitCredit.length - 1];
   }
   return results;
 }
@@ -158,6 +166,8 @@ function extractAccountsFromRows(headers, data, type) {
   if (colDebit < 0 && amtCols.debit != null) colDebit = amtCols.debit;
   if (colCredit < 0 && amtCols.credit != null) colCredit = amtCols.credit;
 
+  console.log('🔍 Columns — Compte:', colCompte, 'Libellé:', colLibelle, 'Débit:', colDebit, 'Crédit:', colCredit, 'Solde:', colSolde, 'Montant:', colMontant);
+
   const accounts = [];
   for (const row of data) {
     if (row.length < 2) continue;
@@ -168,8 +178,20 @@ function extractAccountsFromRows(headers, data, type) {
 
     const libelle = colLibelle >= 0 ? String(row[colLibelle] || '').trim() : '';
 
-    let debit = colDebit >= 0 ? cleanNum(row[colDebit]) : NaN;
-    let credit = colCredit >= 0 ? cleanNum(row[colCredit]) : NaN;
+    let debit, credit;
+    // Same-column debit/credit = signed montant (positive = debit, negative = credit)
+    if (colDebit >= 0 && colDebit === colCredit) {
+      const val = cleanNum(row[colDebit]);
+      if (!isNaN(val)) {
+        debit = val > 0 ? val : 0;
+        credit = val < 0 ? -val : 0;
+      } else {
+        debit = 0; credit = 0;
+      }
+    } else {
+      debit = colDebit >= 0 ? cleanNum(row[colDebit]) : NaN;
+      credit = colCredit >= 0 ? cleanNum(row[colCredit]) : NaN;
+    }
     const soldeDeb = colSoldeDeb >= 0 ? cleanNum(row[colSoldeDeb]) : NaN;
     const soldeCred = colSoldeCred >= 0 ? cleanNum(row[colSoldeCred]) : NaN;
     const solde = colSolde >= 0 ? cleanNum(row[colSolde]) : NaN;
@@ -220,7 +242,7 @@ function extractAccountsFromRows(headers, data, type) {
 function findHeaderRow(rows) {
   const allHeaders = ['compte','numéro','n°','intitulé','libellé','débit','crédit','solde','actif','passif','rubriques','montant','total',
     'actifs non courants','capitaux propres','classe','soldes','lib','nom','code','num'];
-  let bestRow = 0;
+  let bestRow = -1;
   let bestScore = 0;
   for (let i = 0; i < Math.min(rows.length, 15); i++) {
     const rowText = rows[i].map(v => String(v?.value ?? v ?? '').toLowerCase().trim()).join(' ');
@@ -229,31 +251,77 @@ function findHeaderRow(rows) {
     const hasCode = rows[i].some(v => /^\d{3,8}$/.test(String(v?.value ?? v ?? '').trim()));
     if (hasCode && score >= 2) { bestRow = i; break; }
   }
-  return bestRow;
+  return bestScore > 0 ? bestRow : -1;
 }
 
 export async function parseExcelFile(file) {
   const buffer = await file.arrayBuffer();
-  const wb = new ExcelJS.Workbook();
-  await wb.xlsx.load(buffer);
-  const ws = wb.worksheets[0];
-  if (!ws) throw new Error('Le fichier Excel ne contient aucune feuille de calcul.');
+  let rows;
 
-  const rows = [];
-  ws.eachRow({ includeEmpty: false }, (row) => {
-    const values = [];
-    row.eachCell({ includeEmpty: true }, (cell) => { values.push(cell.value); });
-    rows.push(values);
-  });
+  try {
+    // SheetJS reads both .xls and .xlsx
+    const wb = XLSX.read(buffer, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    if (!ws) throw new Error('Le fichier Excel ne contient aucune feuille de calcul.');
+    const raw = XLSX.utils.sheet_to_json(ws, { header: 1 });
+    rows = raw.map(r => r.map(v => v instanceof Date ? v.toISOString().split('T')[0] : v));
+  } catch (e) {
+    // Fallback: ExcelJS for .xlsx if SheetJS fails
+    try {
+      const wb = new ExcelJS.Workbook();
+      await wb.xlsx.load(buffer);
+      const ws = wb.worksheets[0];
+      if (!ws) throw new Error('Le fichier Excel ne contient aucune feuille de calcul.');
+      rows = [];
+      ws.eachRow({ includeEmpty: false }, (row) => {
+        const values = [];
+        row.eachCell({ includeEmpty: true }, (cell) => { values.push(cell.value); });
+        rows.push(values);
+      });
+    } catch (e2) {
+      throw new Error('Impossible de lire le fichier Excel. Vérifiez qu\'il est au format .xls ou .xlsx valide.');
+    }
+  }
 
   if (rows.length < 2) throw new Error('Le fichier Excel est vide.');
 
   const hdrIdx = findHeaderRow(rows);
-  const headers = rows[hdrIdx].map(h => h?.value ?? h ?? '');
-  const data = rows.slice(hdrIdx + 1).filter(r => r.some(c => c != null && c !== ''));
+  let headers, data;
+  if (hdrIdx < 0) {
+    // No header row detected — inject synthetic headers based on column types
+    const firstRow = rows[0] || [];
+    const colCount = firstRow.length;
+    const firstColIsCompte = colCount >= 1 && /^\d{3,}$/.test(String(firstRow[0] ?? '').trim());
+    const secondColIsString = colCount >= 2 && typeof firstRow[1] === 'string' && String(firstRow[1]).trim().length > 0;
+    const thirdColIsNum = colCount >= 3 && firstRow[2] != null && !isNaN(parseFloat(firstRow[2]));
+    if (colCount === 3 && firstColIsCompte && secondColIsString && thirdColIsNum) {
+      // 3-column format: [compte, libellé, montant signé]
+      headers = ['compte', 'libellé', 'montant'];
+      data = rows;
+    } else if (colCount >= 5 && firstColIsCompte && secondColIsString) {
+      // 6-column Sage format: [compte, libellé, cumulDébit, cumulCrédit, soldeDébiteur, soldeCréditeur]
+      headers = ['compte', 'libellé', 'debit', 'credit', 'soldeDeb', 'soldeCred'];
+      data = rows;
+    } else {
+      headers = rows[0].map(h => h?.value ?? h ?? '');
+      data = rows.slice(1).filter(r => r.some(c => c != null && c !== ''));
+    }
+  } else {
+    headers = rows[hdrIdx].map(h => h?.value ?? h ?? '');
+    data = rows.slice(hdrIdx + 1).filter(r => r.some(c => c != null && c !== ''));
+  }
   const type = detectType([headers, ...data]);
   const exercice = detectExercice(rows);
+
+  console.log('📋 Raw rows (first 5):', rows.slice(0, 5));
+  console.log('📋 Headers index:', hdrIdx, '→', headers);
+  console.log('📊 Data rows:', data.length);
+  console.log('🔢 Type:', type);
+  console.log('📅 Exercice:', exercice);
+
   const accounts = extractAccountsFromRows(headers, data, type);
+
+  console.log('✅ Accounts found:', accounts.length);
 
   return { type, filename: file.name, exercice, accounts, rawData: { headers, rows: data } };
 }
@@ -505,5 +573,5 @@ export async function parseBalanceFile(file, opts = {}) {
   if (isExcel) return parseExcelFile(file);
   if (isCSV) return parseCSVFile(file);
   if (isPDF) return parsePDFFile(file, opts);
-  throw new Error('Format non supporté. Utilisez Excel (.xlsx), CSV (.csv) ou PDF (.pdf).');
+  throw new Error('Format non supporté. Utilisez Excel (.xls/.xlsx), CSV (.csv) ou PDF (.pdf).');
 }

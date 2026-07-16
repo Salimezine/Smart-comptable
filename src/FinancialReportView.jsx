@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, generateFromJournal } from './accountingUtils';
 import { exportReportsPDF, exportReportsExcel } from './utils/reportExport';
-import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle } from 'lucide-react';
+import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle, Table } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { PCG_COMPLET } from './utils/pcgComplet';
 import { useToast } from './components/Toast';
@@ -24,7 +24,7 @@ function Section({ title, children, defaultOpen = true }) {
   );
 }
 
-function Line({ label, value, indent = 0, color, bold, total, detailKey, onDetail }) {
+function Line({ label, value, indent = 0, color, bold, total, detailKey, onDetail, prevValue }) {
   const hasDetail = detailKey && onDetail;
   return (
     <div onClick={() => hasDetail && onDetail(detailKey)}
@@ -34,8 +34,9 @@ function Line({ label, value, indent = 0, color, bold, total, detailKey, onDetai
         {label}
         {hasDetail && <Search className="w-3 h-3 text-slate-500 group-hover:text-brand-400 transition-colors" />}
       </span>
-      <span className={`text-xs font-semibold ${color || (total ? 'text-brand-300' : 'text-slate-200')}`}>
-        {fmt(value)}
+      <span className={`text-xs font-semibold flex items-center gap-2 ${color || (total ? 'text-brand-300' : 'text-slate-200')}`}>
+        {prevValue != null && <span className="text-slate-500 font-normal">{fmt(prevValue)}</span>}
+        <span>{fmt(value)}</span>
       </span>
     </div>
   );
@@ -125,6 +126,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [refreshKey, setRefreshKey] = useState(0);
   const [selectedDetail, setSelectedDetail] = useState(null);
   const [reportTab, setReportTab] = useState('financiers');
+  const [tableauxData, setTableauxData] = useState(() => ({
+    immobilisations: [],
+    amortissements: [],
+    provisions: [],
+    variationCP: [],
+  }));
+  const [notes, setNotes] = useState('');
+  const [accountingPolicies, setAccountingPolicies] = useState('');
   const [balanceSearch, setBalanceSearch] = useState('');
   const [importing, setImporting] = useState(false);
   const [importError, setImportError] = useState(null);
@@ -203,9 +212,26 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       const opts = forceType ? { forceType } : {};
       const parsed = await parseBalanceFile(file, opts);
       if (!parsed.accounts?.length) throw new Error('Aucun compte extrait du fichier');
-      setEditingAccounts(parsed.accounts.map(a => ({ ...a })));
-      setImportedData({ filename: parsed.filename, exercice: parsed.exercice, type: parsed.type, accounts: parsed.accounts });
-      toast.success(`${parsed.accounts.length} comptes extraits de ${parsed.filename} — Vérifiez et modifiez si besoin`);
+      // Aggregate duplicate accounts (same compte = sum debit/credit)
+      const accountMap = new Map();
+      for (const a of parsed.accounts) {
+        const key = a.compte;
+        if (accountMap.has(key)) {
+          const existing = accountMap.get(key);
+          existing.debitTotal += a.debitTotal || 0;
+          existing.creditTotal += a.creditTotal || 0;
+        } else {
+          accountMap.set(key, { ...a });
+        }
+      }
+      const aggregated = [...accountMap.values()].map(a => ({
+        ...a,
+        soldeDebiteur: Math.max(0, (a.debitTotal || 0) - (a.creditTotal || 0)),
+        soldeCrediteur: Math.max(0, (a.creditTotal || 0) - (a.debitTotal || 0)),
+      }));
+      setEditingAccounts(aggregated.map(a => ({ ...a })));
+      setImportedData({ filename: parsed.filename, exercice: parsed.exercice, type: parsed.type, accounts: aggregated });
+      toast.success(`${aggregated.length} comptes extraits de ${parsed.filename} (${parsed.accounts.length} lignes agrégées) — Vérifiez et modifiez si besoin`);
     } catch (e) {
       console.error('Import error:', e);
       setImportError(e.message);
@@ -228,6 +254,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       }));
       const reportsN_1 = balancesToReports(prevAccounts);
       setImportedData(prev => ({ ...prev, accounts: editingAccounts, ...reportsN, reportsN_1, reportsN }));
+      setTableauxData({
+        immobilisations: (reportsN.bilan.donneesImmobilisations.lignes || []).map(l => ({ ...l })),
+        amortissements: (reportsN.bilan.donneesAmortissements.lignes || []).map(l => ({ ...l })),
+        provisions: (reportsN.bilan.donneesProvisions.lignes || []).map(l => ({ ...l })),
+        variationCP: (reportsN.bilan.variationCapitauxPropres.lignes || []).map(l => ({ ...l })),
+      });
       setEditingAccounts(null);
       setDataSource('import');
       toast.success(`États financiers générés (${editingAccounts.length} comptes)`);
@@ -263,7 +295,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       for (const a of importedData.accounts) {
         const compte = a.compte.replace(/\s.*$/, '').trim();
         if (!compte) continue;
-        if (!balances[compte]) balances[compte] = { compte, debitTotal: 0, creditTotal: 0, solde: 0 };
+        if (!balances[compte]) balances[compte] = { compte, libelle: a.libelle || '', debitTotal: 0, creditTotal: 0, solde: 0 };
         balances[compte].debitTotal += a.debitTotal || 0;
         balances[compte].creditTotal += a.creditTotal || 0;
         balances[compte].solde = balances[compte].debitTotal - balances[compte].creditTotal;
@@ -289,7 +321,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const totalSoldeDeb = filteredBalance.reduce((s, b) => s + b.soldeDebiteur, 0);
   const totalSoldeCred = filteredBalance.reduce((s, b) => s + b.soldeCrediteur, 0);
 
-  let bilan, resultat, ratios, sig, fluxTresorerie, controle;
+  let bilan, resultat, ratios, sig, fluxTresorerie, controle, bilanPrev;
   let hasImported = importedData && dataSource === 'import';
 
   if (hasImported) {
@@ -301,6 +333,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     sig = r.sig;
     fluxTresorerie = r.fluxTresorerie;
     controle = r.controle;
+    bilanPrev = importedData?.reportsN_1?.bilan;
   } else if (useJournal) {
     bilan = journalData.bilan;
     resultat = journalData.resultat;
@@ -395,6 +428,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       achatsMP: is.purchaseRaw,
       autresAchatsSIG: 0,
       chargesExternes: is.otherPurchases,
+      autresServicesExterieurs: 0,
       chargesPersonnel: is.personnelCosts,
       impotsTaxes: 0,
       autresCharges: is.otherOpCharges,
@@ -429,13 +463,19 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     const r = resultat;
     const marge = r.margeCommerciale ?? (r.ventesMarchandises - (r.achatsMarchandises || 0));
     const prod = r.productionExercice ?? r.ventes + (r.productionStockee || 0);
-    const va = r.valeurAjoutee ?? marge + prod - (r.achatsConsommes || 0) - (r.chargesExternes || 0);
+    const achCM = (r.achatsConsommes || 0) - (r.achatsMarchandises || 0);
+    const ce = r.chargesExternes || 0;
+    const ase = r.autresServicesExterieurs || 0;
+    const va = r.valeurAjoutee ?? marge + prod - achCM - ce - ase;
     const ebe = r.ebe ?? va + (r.subventionsExploitation || 0) - (r.chargesPersonnel || 0) - (r.impotsTaxes || 0);
     const sigExpl = ebe + (r.reprises || 0) - (r.dotations || 0);
     const rcai = r.rcai ?? sigExpl + (r.resultatFinancier || 0);
     sig = {
       margeCommerciale: marge,
       productionExercice: prod,
+      achatsConsHorsMarch: achCM,
+      chargesExternes: ce,
+      autresServicesExterieurs: ase,
       valeurAjoutee: va,
       ebe,
       sigResultatExploitation: sigExpl,
@@ -448,20 +488,61 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     const dot = resultat.dotations ?? 0;
     const rep = resultat.reprises ?? 0;
     const mba = rn + dot - rep;
+    const tresorerieFinale = bilan.tresorerie ?? bilan.tresorerieActif ?? 0;
     fluxTresorerie = {
       resultatNet: rn,
       dotations: dot,
       reprises: rep,
       margeBruteAutofinancement: mba,
+      variationClients: 0,
+      variationFournisseurs: 0,
+      variationEtat: 0,
+      variationPersonnel: 0,
+      variationStocks: 0,
       fluxExploitation: mba,
+      acquisitionsImmobilisations: 0,
+      cessionsImmobilisations: 0,
       fluxInvestissement: 0,
+      apportsCapital: 0,
+      empruntsNouveaux: 0,
+      remboursementsEmprunts: 0,
       fluxFinancement: 0,
       variationTresorerie: mba,
-      tresorerieFinale: bilan.tresorerie ?? bilan.tresorerieActif ?? 0,
+      tresorerieInitiale: tresorerieFinale - mba,
+      tresorerieFinale,
     };
   }
 
   const resultatNet = resultat.resultatNet ?? (resultat.resultatExploitation - resultat.chargesFinancieres);
+
+  // Build effective tableaux data (user edits take precedence, else defaults from bilan)
+  const buildDefaultTableaux = (b) => ({
+    immobilisations: [
+      { categorie: 'Frais préliminaires', debut: 0, augmentation: 0, diminution: 0, fin: (b?.fraisPreliminaires ?? b?.donneesImmobilisations?.fraisPreliminaires) || 0, _key: 'fp' },
+      { categorie: 'Incorporelles', debut: 0, augmentation: 0, diminution: 0, fin: (b?.immobilisationsIncorporelles ?? b?.donneesImmobilisations?.incorporelles) || 0, _key: 'inc' },
+      { categorie: 'Corporelles', debut: 0, augmentation: 0, diminution: 0, fin: (b?.immobilisationsCorporelles ?? b?.donneesImmobilisations?.corporelles) || 0, _key: 'corp' },
+      { categorie: 'Financières', debut: 0, augmentation: 0, diminution: 0, fin: (b?.immobilisationsFinancieres ?? b?.donneesImmobilisations?.financieres) || 0, _key: 'fin' },
+    ],
+    amortissements: [
+      { categorie: 'Frais préliminaires', debut: 0, augmentation: 0, diminution: 0, fin: 0, _key: 'fp' },
+      { categorie: 'Incorporelles', debut: 0, augmentation: b?.dotationsAmortInc || 0, diminution: 0, fin: b?.amortissementsInc || 0, _key: 'inc' },
+      { categorie: 'Corporelles', debut: 0, augmentation: b?.dotationsAmortCorp || 0, diminution: 0, fin: b?.amortissementsCorp || 0, _key: 'corp' },
+    ],
+    provisions: [
+      { categorie: 'Immobilisations', debut: 0, augmentation: 0, diminution: 0, fin: b?.provisionsActifNC || 0, _key: 'anc' },
+      { categorie: 'Stocks', debut: 0, augmentation: 0, diminution: 0, fin: b?.provisionsStocks || 0, _key: 'stk' },
+      { categorie: 'Clients', debut: 0, augmentation: 0, diminution: 0, fin: b?.provisionsClients || 0, _key: 'clt' },
+    ],
+    variationCP: [
+      { rubrique: 'Capital', debut: 0, augmentation: 0, diminution: 0, fin: b?.capital || 0, _key: 'cap' },
+      { rubrique: 'Réserves', debut: 0, augmentation: 0, diminution: 0, fin: b?.reserves || 0, _key: 'res' },
+      { rubrique: 'Résultats reportés', debut: 0, augmentation: 0, diminution: 0, fin: b?.resultatsReportes || 0, _key: 'rr' },
+      { rubrique: 'Subventions d\'investissement', debut: 0, augmentation: 0, diminution: 0, fin: b?.subventionsInvestissement || 0, _key: 'subv' },
+      { rubrique: 'Écarts de réévaluation', debut: 0, augmentation: 0, diminution: 0, fin: b?.ecartsReevaluation || 0, _key: 'ecr' },
+      { rubrique: 'Résultat de l\'exercice', debut: 0, augmentation: 0, diminution: 0, fin: b?.resultatExercice || 0, _key: 'resex' },
+    ],
+  });
+  const effectiveTableaux = tableauxData.immobilisations.length ? tableauxData : buildDefaultTableaux(bilan);
 
   // Compteurs pour les détails non-journal
   const invoiceTotal = useJournal ? 0 : (invoices || []).reduce((s, inv) => s + parseFloat(inv.total || inv.montant || 0), 0);
@@ -493,6 +574,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${reportTab === 'balance' ? 'bg-brand-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}>
               <RotateCcw className="w-3.5 h-3.5 inline mr-1" />Balance Générale
             </button>
+            <button onClick={() => setReportTab('tableaux')}
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${reportTab === 'tableaux' ? 'bg-brand-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}>
+              <Table className="w-3.5 h-3.5 inline mr-1" />Tableaux
+            </button>
+            <button onClick={() => setReportTab('notes')}
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${reportTab === 'notes' ? 'bg-brand-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}>
+              <FileText className="w-3.5 h-3.5 inline mr-1" />Notes
+            </button>
           </div>
           <p className="text-xs text-slate-400 hidden md:block">
             {editingAccounts ? `Modification: ${importedData?.filename || ''}` : hasImported ? `Importé: ${importedData.filename}` : useJournal ? 'Données issues du journal comptable.' : 'Estimé basé sur les factures et dépenses.'}
@@ -515,7 +604,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </select>
           <button onClick={() => {
             try {
-              exportReportsPDF({ bilan, resultat, sig, ratios, fluxTresorerie, controle });
+              const bilanPrev = hasImported && importedData?.reportsN_1?.bilan ? importedData.reportsN_1.bilan : undefined;
+              exportReportsPDF({ bilan, resultat, sig, ratios, fluxTresorerie, controle, company: companyDetails, balanceGenerale: filteredBalance, tableauxData: effectiveTableaux, notes, accountingPolicies, bilanPrev });
               toast.success('Rapport PDF exporté avec succès.');
             } catch(e) { console.error('PDF export error:', e); toast.error('Erreur PDF: ' + e.message); }
           }}
@@ -523,15 +613,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <FileText className="w-3.5 h-3.5" /> PDF
           </button>
           <button onClick={() => {
-            exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle }).catch(console.error);
+            exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle, company: companyDetails, balanceGenerale: filteredBalance, tableauxData: effectiveTableaux, notes, accountingPolicies }).catch(console.error);
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
           </button>
-          <input type="file" accept=".xlsx,.csv,.pdf" id="simpleImportInput"
+          <input type="file" accept=".xls,.xlsx,.csv,.pdf" id="simpleImportInput"
             className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[140px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500 cursor-pointer"
             onChange={async e => { const f = e.target.files?.[0]; if (f) { try { e.target.value = ''; await handleImport(f); } catch(err) { console.error(err); } } }} />
-          <input type="file" accept=".xlsx,.csv,.pdf" id="bilanImportInput"
+          <input type="file" accept=".xls,.xlsx,.csv,.pdf" id="bilanImportInput"
             className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[130px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-amber-600 file:text-white hover:file:bg-amber-500 cursor-pointer"
             title="Importer un bilan"
             onChange={async e => { const f = e.target.files?.[0]; if (f) { try { e.target.value = ''; await handleImport(f, 'bilan'); } catch(err) { console.error(err); } } }} />
@@ -578,8 +668,18 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <tbody>
               {editingAccounts.map((a, i) => (
                 <tr key={a.compte + '-' + i} className="border-t border-slate-800/30 hover:bg-slate-800/20">
-                  <td className="py-1.5 px-3 font-mono text-slate-300">{a.compte}</td>
-                  <td className="py-1.5 px-3 text-slate-400 truncate max-w-[200px]">{a.libelle || '—'}</td>
+                  <td className="py-1.5 px-3">
+                    <input type="text"
+                      value={a.compte}
+                      onChange={e => setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, compte: e.target.value } : x))}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-left text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
+                  <td className="py-1.5 px-3">
+                    <input type="text"
+                      value={a.libelle || ''}
+                      onChange={e => setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, libelle: e.target.value } : x))}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-left text-slate-400 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
                   {importedData?.type === 'bilan' ? (
                     <>
                       <td className="py-1.5 px-3">
@@ -589,8 +689,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                             const v = parseFloat(e.target.value) || 0;
                             setEditingAccounts(prev => prev.map((x, j) => j === i ? {
                               ...x,
-                              debitTotal: /^[235]/.test(a.compte) ? v : 0,
-                              creditTotal: /^[14]/.test(a.compte) ? v : 0,
+                              debitTotal: x.debitTotal ? v : 0,
+                              creditTotal: x.creditTotal ? v : 0,
                             } : x));
                           }}
                           className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
@@ -602,8 +702,8 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                             const v = parseFloat(e.target.value) || 0;
                             setEditingAccounts(prev => prev.map((x, j) => j === i ? {
                               ...x,
-                              debitTotalPrev: /^[235]/.test(a.compte) ? v : 0,
-                              creditTotalPrev: /^[14]/.test(a.compte) ? v : 0,
+                              debitTotalPrev: x.debitTotalPrev ? v : 0,
+                              creditTotalPrev: x.creditTotalPrev ? v : 0,
                             } : x));
                           }}
                           className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
@@ -636,6 +736,12 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </tbody>
           </table>
         </div>
+        <div className="mt-3 flex justify-center">
+          <button onClick={() => setEditingAccounts(prev => [...prev, { compte: '', libelle: '', debitTotal: 0, creditTotal: 0 }])}
+            className="text-[11px] px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors flex items-center gap-1">
+            + Nouveau compte
+          </button>
+        </div>
       </div>
       )}
 
@@ -652,21 +758,21 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           </div>
 
           <Section title="Actifs Non Courants">
-            <Line label="Frais préliminaires" value={bilan.fraisPreliminaires} indent={1} detailKey={useJournal ? 'fraisPreliminaires' : undefined} onDetail={handleDetail} />
-            <Line label="Immobilisations incorporelles" value={bilan.immobilisationsIncorporelles} indent={1} detailKey={useJournal ? 'immobilisationsIncorporelles' : undefined} onDetail={handleDetail} />
-            <Line label="Immobilisations corporelles" value={bilan.immobilisationsCorporelles} indent={1} detailKey={useJournal ? 'immobilisationsCorporelles' : undefined} onDetail={handleDetail} />
-            <Line label="Immobilisations financières" value={bilan.immobilisationsFinancieres} indent={1} detailKey={useJournal ? 'immobilisationsFinancieres' : undefined} onDetail={handleDetail} />
+            <Line label="Frais préliminaires" value={bilan.fraisPreliminaires} prevValue={bilanPrev?.fraisPreliminaires} indent={1} detailKey={useJournal ? 'fraisPreliminaires' : undefined} onDetail={handleDetail} />
+            <Line label="Immobilisations incorporelles" value={bilan.immobilisationsIncorporelles} prevValue={bilanPrev?.immobilisationsIncorporelles} indent={1} detailKey={useJournal ? 'immobilisationsIncorporelles' : undefined} onDetail={handleDetail} />
+            <Line label="Immobilisations corporelles" value={bilan.immobilisationsCorporelles} prevValue={bilanPrev?.immobilisationsCorporelles} indent={1} detailKey={useJournal ? 'immobilisationsCorporelles' : undefined} onDetail={handleDetail} />
+            <Line label="Immobilisations financières" value={bilan.immobilisationsFinancieres} prevValue={bilanPrev?.immobilisationsFinancieres} indent={1} detailKey={useJournal ? 'immobilisationsFinancieres' : undefined} onDetail={handleDetail} />
             {useJournal && bilan.amortissementsDeduction > 0.001 && (
-              <Line label="− Amortissements cumulés" value={-bilan.amortissementsDeduction} indent={1} color="text-danger-400" detailKey="amortissementsDeduction" onDetail={handleDetail} />
+              <Line label="− Amortissements cumulés" value={-bilan.amortissementsDeduction} prevValue={bilanPrev ? -bilanPrev.amortissementsDeduction : undefined} indent={1} color="text-danger-400" detailKey="amortissementsDeduction" onDetail={handleDetail} />
             )}
             {useJournal && bilan.provisionsActifNCDeduction > 0.001 && (
-              <Line label="− Provisions dépréciation" value={-bilan.provisionsActifNCDeduction} indent={1} color="text-danger-400" detailKey="provisionsActifNCDeduction" onDetail={handleDetail} />
+              <Line label="− Provisions dépréciation" value={-bilan.provisionsActifNCDeduction} prevValue={bilanPrev ? -bilanPrev.provisionsActifNCDeduction : undefined} indent={1} color="text-danger-400" detailKey="provisionsActifNCDeduction" onDetail={handleDetail} />
             )}
-            <Line label="Total Actifs Non Courants" value={bilan.actifNC} total />
+            <Line label="Total Actifs Non Courants" value={bilan.actifNC} prevValue={bilanPrev?.actifNC} total />
           </Section>
 
           <Section title="Actifs Courants">
-            <Line label="Stocks" value={bilan.stocks} detailKey="stocksBrutes" onDetail={handleDetail} />
+            <Line label="Stocks" value={bilan.stocks} prevValue={bilanPrev?.stocks} detailKey="stocksBrutes" onDetail={handleDetail} />
             {useJournal && <DetailRow items={[
               { label: 'Marchandises', value: bilan.stocksMarchandises || 0 },
               { label: 'MP', value: bilan.stocksMP || 0 },
@@ -676,9 +782,9 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               { label: 'Stock déclaré', value: stockTotal },
             ]} />}
             {useJournal && bilan.provisionsStocksDeduction > 0.001 && (
-              <Line label="− Provisions stocks" value={-bilan.provisionsStocksDeduction} indent={2} color="text-danger-400" detailKey="provisionsStocksDeduction" onDetail={handleDetail} />
+              <Line label="− Provisions stocks" value={-bilan.provisionsStocksDeduction} prevValue={bilanPrev ? -bilanPrev.provisionsStocksDeduction : undefined} indent={2} color="text-danger-400" detailKey="provisionsStocksDeduction" onDetail={handleDetail} />
             )}
-            <Line label="Clients et comptes rattachés" value={bilan.clients} detailKey="clientsBrutes" onDetail={handleDetail} />
+            <Line label="Clients et comptes rattachés" value={bilan.clients} prevValue={bilanPrev?.clients} detailKey="clientsBrutes" onDetail={handleDetail} />
             {useJournal && <DetailRow items={[
               { label: 'Clients', value: bilan.clientsBrute || bilan.clients || 0 },
               { label: 'Effets à recevoir', value: bilan.effetsAR || 0 },
@@ -688,42 +794,43 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               { label: 'Total factures', value: invoiceTotal },
             ]} />}
             {useJournal && bilan.provisionsClientsDeduction > 0.001 && (
-              <Line label="− Provisions clients" value={-bilan.provisionsClientsDeduction} indent={2} color="text-danger-400" detailKey="provisionsClientsDeduction" onDetail={handleDetail} />
+              <Line label="− Provisions clients" value={-bilan.provisionsClientsDeduction} prevValue={bilanPrev ? -bilanPrev.provisionsClientsDeduction : undefined} indent={2} color="text-danger-400" detailKey="provisionsClientsDeduction" onDetail={handleDetail} />
             )}
-            <Line label="État — TVA déductible" value={bilan.etatDebit} indent={1} detailKey={useJournal ? 'etatDebit' : undefined} onDetail={handleDetail} />
-            <Line label="Personnel" value={bilan.personnelDebit} indent={1} detailKey={useJournal ? 'personnelDebit' : undefined} onDetail={handleDetail} />
-            <Line label="Autres débiteurs" value={bilan.autresCréances} indent={1} detailKey={useJournal ? 'autresCréances' : undefined} onDetail={handleDetail} />
-            <Line label="Trésorerie" value={bilan.tresorerieActif} detailKey="tresorerieBrute" onDetail={handleDetail} />
+            <Line label="État — TVA déductible" value={bilan.etatDebit} prevValue={bilanPrev?.etatDebit} indent={1} detailKey={useJournal ? 'etatDebit' : undefined} onDetail={handleDetail} />
+            <Line label="Personnel" value={bilan.personnelDebit} prevValue={bilanPrev?.personnelDebit} indent={1} detailKey={useJournal ? 'personnelDebit' : undefined} onDetail={handleDetail} />
+            <Line label="Autres débiteurs" value={bilan.autresCréances} prevValue={bilanPrev?.autresCréances} indent={1} detailKey={useJournal ? 'autresCréances' : undefined} onDetail={handleDetail} />
+            <Line label="Trésorerie" value={bilan.tresorerieActif} prevValue={bilanPrev?.tresorerieActif} detailKey="tresorerieBrute" onDetail={handleDetail} />
             {!useJournal && <DetailRow items={[
               { label: 'Solde bancaire', value: bilan.tresorerieActif || 0 },
             ]} />}
             {useJournal && bilan.provisionsTresorerieDeduction > 0.001 && (
-              <Line label="− Provisions trésorerie" value={-bilan.provisionsTresorerieDeduction} indent={2} color="text-danger-400" detailKey="provisionsTresorerieDeduction" onDetail={handleDetail} />
+              <Line label="− Provisions trésorerie" value={-bilan.provisionsTresorerieDeduction} prevValue={bilanPrev ? -bilanPrev.provisionsTresorerieDeduction : undefined} indent={2} color="text-danger-400" detailKey="provisionsTresorerieDeduction" onDetail={handleDetail} />
             )}
-            <Line label="Total Actifs Courants" value={bilan.actifC} total />
+            <Line label="Total Actifs Courants" value={bilan.actifC} prevValue={bilanPrev?.actifC} total />
           </Section>
 
-          <Line label="TOTAL ACTIFS" value={bilan.totalActif} total />
+          <Line label="TOTAL ACTIFS" value={bilan.totalActif} prevValue={bilanPrev?.totalActif} total />
 
           <div className="mt-4 border-t border-slate-800 pt-4">
+            {bilanPrev && <div className="text-[9px] text-slate-500 mb-2 text-right">N-1 (gris) / N (blanc)</div>}
             <Section title="Capitaux Propres">
-              <Line label="Capital social" value={bilan.capitalSocial} detailKey={useJournal ? 'capitalSocial' : undefined} onDetail={handleDetail} />
-              <Line label="Réserves" value={bilan.reserves} indent={1} detailKey={useJournal ? 'reserves' : undefined} onDetail={handleDetail} />
-              <Line label="Résultats reportés" value={bilan.resultatsReportes} indent={1} detailKey={useJournal ? 'resultatsReportes' : undefined} onDetail={handleDetail} />
-              <Line label="Autres capitaux propres" value={bilan.autresCapitauxPropres} indent={1} detailKey={useJournal ? 'autresCapitauxPropres' : undefined} onDetail={handleDetail} />
-              <Line label="Résultat net de l'exercice" value={resultatNet} />
-              <Line label="Total Capitaux Propres" value={bilan.capPropres} total />
+              <Line label="Capital social" value={bilan.capitalSocial} prevValue={bilanPrev?.capitalSocial} detailKey={useJournal ? 'capitalSocial' : undefined} onDetail={handleDetail} />
+              <Line label="Réserves" value={bilan.reserves} prevValue={bilanPrev?.reserves} indent={1} detailKey={useJournal ? 'reserves' : undefined} onDetail={handleDetail} />
+              <Line label="Résultats reportés" value={bilan.resultatsReportes} prevValue={bilanPrev?.resultatsReportes} indent={1} detailKey={useJournal ? 'resultatsReportes' : undefined} onDetail={handleDetail} />
+              <Line label="Autres capitaux propres" value={bilan.autresCapitauxPropres} prevValue={bilanPrev?.autresCapitauxPropres} indent={1} detailKey={useJournal ? 'autresCapitauxPropres' : undefined} onDetail={handleDetail} />
+              <Line label="Résultat net de l'exercice" value={resultatNet} prevValue={bilanPrev?.resultatExercice} />
+              <Line label="Total Capitaux Propres" value={bilan.capPropres} prevValue={bilanPrev?.capPropres} total />
             </Section>
 
             <Section title="Passifs Non Courants">
-              <Line label="Emprunts bancaires" value={bilan.emprunts} detailKey={useJournal ? 'emprunts' : undefined} onDetail={handleDetail} />
-              <Line label="Provisions" value={bilan.provisions} indent={1} detailKey={useJournal ? 'provisions' : undefined} onDetail={handleDetail} />
-              <Line label="Autres passifs non courants" value={bilan.autresPassifsNC} indent={1} detailKey={useJournal ? 'autresPassifsNC' : undefined} onDetail={handleDetail} />
-              <Line label="Total Passifs Non Courants" value={bilan.passifNC} total />
+              <Line label="Emprunts bancaires" value={bilan.emprunts} prevValue={bilanPrev?.emprunts} detailKey={useJournal ? 'emprunts' : undefined} onDetail={handleDetail} />
+              <Line label="Provisions" value={bilan.provisions} prevValue={bilanPrev?.provisions} indent={1} detailKey={useJournal ? 'provisions' : undefined} onDetail={handleDetail} />
+              <Line label="Autres passifs non courants" value={bilan.autresPassifsNC} prevValue={bilanPrev?.autresPassifsNC} indent={1} detailKey={useJournal ? 'autresPassifsNC' : undefined} onDetail={handleDetail} />
+              <Line label="Total Passifs Non Courants" value={bilan.passifNC} prevValue={bilanPrev?.passifNC} total />
             </Section>
 
             <Section title="Passifs Courants">
-              <Line label="Fournisseurs et comptes rattachés" value={bilan.fournisseurs} detailKey={useJournal ? 'fournisseurs' : undefined} onDetail={handleDetail} />
+              <Line label="Fournisseurs et comptes rattachés" value={bilan.fournisseurs} prevValue={bilanPrev?.fournisseurs} detailKey={useJournal ? 'fournisseurs' : undefined} onDetail={handleDetail} />
               {useJournal && <DetailRow items={[
                 { label: 'Fournisseurs', value: bilan.fournisseursBrute || 0 },
                 { label: 'Effets à payer', value: bilan.effetsAP || 0 },
@@ -731,14 +838,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               {!useJournal && expenses && expenses.length > 0 && <DetailRow items={[
                 { label: 'Total dépenses', value: expenseTotal },
               ]} />}
-              <Line label="État — TVA due" value={bilan.etatCredit} detailKey={useJournal ? 'etatCredit' : undefined} onDetail={handleDetail} />
-              <Line label="Personnel" value={bilan.personnelCredit} detailKey={useJournal ? 'personnelCredit' : undefined} onDetail={handleDetail} />
-              <Line label="Autres dettes" value={bilan.autresDettes} indent={1} detailKey={useJournal ? 'autresDettes' : undefined} onDetail={handleDetail} />
-              <Line label="Concours bancaires" value={bilan.concoursBancaires} indent={1} detailKey={useJournal ? 'concoursBancaires' : undefined} onDetail={handleDetail} />
-              <Line label="Total Passifs Courants" value={bilan.passifC} total />
+              <Line label="État — TVA due" value={bilan.etatCredit} prevValue={bilanPrev?.etatCredit} detailKey={useJournal ? 'etatCredit' : undefined} onDetail={handleDetail} />
+              <Line label="Personnel" value={bilan.personnelCredit} prevValue={bilanPrev?.personnelCredit} detailKey={useJournal ? 'personnelCredit' : undefined} onDetail={handleDetail} />
+              <Line label="Autres dettes" value={bilan.autresDettes} prevValue={bilanPrev?.autresDettes} indent={1} detailKey={useJournal ? 'autresDettes' : undefined} onDetail={handleDetail} />
+              <Line label="Concours bancaires" value={bilan.concoursBancaires} prevValue={bilanPrev?.concoursBancaires} indent={1} detailKey={useJournal ? 'concoursBancaires' : undefined} onDetail={handleDetail} />
+              <Line label="Total Passifs Courants" value={bilan.passifC} prevValue={bilanPrev?.passifC} total />
             </Section>
 
-            <Line label="TOTAL PASSIFS & CAPITAUX PROPRES" value={bilan.totalPassif} total />
+            <Line label="TOTAL PASSIFS & CAPITAUX PROPRES" value={bilan.totalPassif} prevValue={bilanPrev?.totalPassif} total />
           </div>
 
           {(bilan.totalActif > 0) && (
@@ -811,7 +918,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <Line label="Résultat exceptionnel" value={resultat.resultatExceptionnel} indent={1} bold />
           </Section>
 
-          {resultatNet > 0 && <Line label="Impôt sur les sociétés (15%)" value={-(resultatNet * 0.15)} indent={1} color="text-danger-400" />}
+          {resultatNet > 0 && <Line label="Impôt sur les sociétés" value={-(resultat.impotIS || resultatNet * 0.15)} indent={1} color="text-danger-400" />}
 
           <div className="mt-3 p-3 bg-gradient-brand rounded-xl shadow-glow">
             <div className="flex justify-between items-center">
@@ -832,7 +939,6 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       </div>
 
       {/* ÉTAT DES FLUX DE TRÉSORERIE */}
-      {useJournal && (
       <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
         <div className="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
           <h3 className="text-base font-bold text-slate-100">État des flux de trésorerie</h3>
@@ -840,38 +946,37 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         </div>
 
         <Section title="Flux d'exploitation">
-          <Line label="Résultat net de l'exercice" value={journalData?.fluxTresorerie?.resultatNet || 0} indent={1} detailKey="resultatNet" onDetail={handleDetail} />
-          <Line label="+ Dotations" value={journalData?.fluxTresorerie?.dotations || 0} indent={1} color="text-accent-400" detailKey="dotations" onDetail={handleDetail} />
-          <Line label="− Reprises" value={-(journalData?.fluxTresorerie?.reprises || 0)} indent={1} color="text-danger-400" detailKey="reprises" onDetail={handleDetail} />
-          <Line label="= MBA" value={journalData?.fluxTresorerie?.margeBruteAutofinancement || 0} indent={1} bold />
-          <Line label="Variation clients" value={journalData?.fluxTresorerie?.variationClients || 0} indent={1} detailKey="variationClients" onDetail={handleDetail} />
-          <Line label="Variation fournisseurs" value={journalData?.fluxTresorerie?.variationFournisseurs || 0} indent={1} detailKey="variationFournisseurs" onDetail={handleDetail} />
-          <Line label="Variation état" value={journalData?.fluxTresorerie?.variationEtat || 0} indent={1} detailKey="variationEtat" onDetail={handleDetail} />
-          <Line label="Variation personnel" value={journalData?.fluxTresorerie?.variationPersonnel || 0} indent={1} detailKey="variationPersonnel" onDetail={handleDetail} />
-          <Line label="Variation stocks" value={journalData?.fluxTresorerie?.variationStocks || 0} indent={1} detailKey="variationStocks" onDetail={handleDetail} />
-          <Line label="Total flux d'exploitation" value={journalData?.fluxTresorerie?.fluxExploitation || 0} total />
+          <Line label="Résultat net de l'exercice" value={fluxTresorerie?.resultatNet || 0} indent={1} detailKey="resultatNet" onDetail={handleDetail} />
+          <Line label="+ Dotations" value={fluxTresorerie?.dotations || 0} indent={1} color="text-accent-400" detailKey="dotations" onDetail={handleDetail} />
+          <Line label="− Reprises" value={-(fluxTresorerie?.reprises || 0)} indent={1} color="text-danger-400" detailKey="reprises" onDetail={handleDetail} />
+          <Line label="= MBA" value={fluxTresorerie?.margeBruteAutofinancement || 0} indent={1} bold />
+          <Line label="Variation clients" value={fluxTresorerie?.variationClients || 0} indent={1} detailKey="variationClients" onDetail={handleDetail} />
+          <Line label="Variation fournisseurs" value={fluxTresorerie?.variationFournisseurs || 0} indent={1} detailKey="variationFournisseurs" onDetail={handleDetail} />
+          <Line label="Variation état" value={fluxTresorerie?.variationEtat || 0} indent={1} detailKey="variationEtat" onDetail={handleDetail} />
+          <Line label="Variation personnel" value={fluxTresorerie?.variationPersonnel || 0} indent={1} detailKey="variationPersonnel" onDetail={handleDetail} />
+          <Line label="Variation stocks" value={fluxTresorerie?.variationStocks || 0} indent={1} detailKey="variationStocks" onDetail={handleDetail} />
+          <Line label="Total flux d'exploitation" value={fluxTresorerie?.fluxExploitation || 0} total />
         </Section>
 
         <Section title="Flux d'investissement">
-          <Line label="Acquisitions immobilisations" value={journalData?.fluxTresorerie?.acquisitionsImmobilisations || 0} indent={1} color="text-danger-400" detailKey="acquisitionsImmobilisations" onDetail={handleDetail} />
-          <Line label="Cessions immobilisations" value={journalData?.fluxTresorerie?.cessionsImmobilisations || 0} indent={1} color="text-accent-400" detailKey="cessionsImmobilisations" onDetail={handleDetail} />
-          <Line label="Total flux d'investissement" value={journalData?.fluxTresorerie?.fluxInvestissement || 0} total />
+          <Line label="Acquisitions immobilisations" value={fluxTresorerie?.acquisitionsImmobilisations || 0} indent={1} color="text-danger-400" detailKey="acquisitionsImmobilisations" onDetail={handleDetail} />
+          <Line label="Cessions immobilisations" value={fluxTresorerie?.cessionsImmobilisations || 0} indent={1} color="text-accent-400" detailKey="cessionsImmobilisations" onDetail={handleDetail} />
+          <Line label="Total flux d'investissement" value={fluxTresorerie?.fluxInvestissement || 0} total />
         </Section>
 
         <Section title="Flux de financement">
-          <Line label="Apports en capital" value={journalData?.fluxTresorerie?.apportsCapital || 0} indent={1} color="text-accent-400" detailKey="apportsCapital" onDetail={handleDetail} />
-          <Line label="Emprunts nouveaux" value={journalData?.fluxTresorerie?.empruntsNouveaux || 0} indent={1} color="text-accent-400" detailKey="empruntsNouveaux" onDetail={handleDetail} />
-          <Line label="Remboursements emprunts" value={journalData?.fluxTresorerie?.remboursementsEmprunts || 0} indent={1} color="text-danger-400" detailKey="remboursementsEmprunts" onDetail={handleDetail} />
-          <Line label="Total flux de financement" value={journalData?.fluxTresorerie?.fluxFinancement || 0} total />
+          <Line label="Apports en capital" value={fluxTresorerie?.apportsCapital || 0} indent={1} color="text-accent-400" detailKey="apportsCapital" onDetail={handleDetail} />
+          <Line label="Emprunts nouveaux" value={fluxTresorerie?.empruntsNouveaux || 0} indent={1} color="text-accent-400" detailKey="empruntsNouveaux" onDetail={handleDetail} />
+          <Line label="Remboursements emprunts" value={fluxTresorerie?.remboursementsEmprunts || 0} indent={1} color="text-danger-400" detailKey="remboursementsEmprunts" onDetail={handleDetail} />
+          <Line label="Total flux de financement" value={fluxTresorerie?.fluxFinancement || 0} total />
         </Section>
 
         <div className="border-t border-slate-800 pt-3 mt-2">
-          <Line label="Variation de trésorerie" value={journalData?.fluxTresorerie?.variationTresorerie || 0} total />
-          <Line label="Trésorerie initiale" value={journalData?.fluxTresorerie?.tresorerieInitiale || 0} indent={1} />
-          <Line label="Trésorerie finale" value={journalData?.fluxTresorerie?.tresorerieFinale || 0} indent={1} detailKey="tresorerieFinale" onDetail={handleDetail} />
+          <Line label="Variation de trésorerie" value={fluxTresorerie?.variationTresorerie || 0} total />
+          <Line label="Trésorerie initiale" value={fluxTresorerie?.tresorerieInitiale || 0} indent={1} />
+          <Line label="Trésorerie finale" value={fluxTresorerie?.tresorerieFinale || 0} indent={1} detailKey="tresorerieFinale" onDetail={handleDetail} />
         </div>
       </div>
-      )}
 
       {/* SOLDES INTERMÉDIAIRES DE GESTION (SIG) */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -1157,7 +1262,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                   {filteredBalance.map(b => (
                     <tr key={b.compte} className="border-b border-slate-800/30 hover:bg-slate-800/20 transition-colors">
                       <td className="py-1.5 px-2 font-mono text-slate-300">{b.compte}</td>
-                      <td className="py-1.5 px-2 text-slate-400 max-w-[200px] truncate">{PCG_COMPLET[b.compte] || '—'}</td>
+                      <td className="py-1.5 px-2 text-slate-400 max-w-[200px] truncate">{b.libelle || PCG_COMPLET[b.compte] || '—'}</td>
                       <td className="py-1.5 px-2 text-right font-mono text-slate-300">{b.debitTotal.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
                       <td className="py-1.5 px-2 text-right font-mono text-slate-300">{b.creditTotal.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</td>
                       <td className={`py-1.5 px-2 text-right font-mono ${b.soldeDebiteur > 0 ? 'text-brand-400' : 'text-slate-600'}`}>{b.soldeDebiteur > 0 ? b.soldeDebiteur.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) : '—'}</td>
@@ -1183,6 +1288,176 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </div>
           </>
         )}
+      </div>
+      )}
+
+      {!editingAccounts && reportTab === 'tableaux' && (
+      <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
+        <div className="mb-4 border-b border-slate-800 pb-3">
+          <h3 className="text-base font-bold text-slate-100">Tableaux annexes</h3>
+          <p className="text-[10px] text-slate-400 mt-1">Modifiez les valeurs directement dans les tableaux ci-dessous.</p>
+        </div>
+
+        {/* Tableau des immobilisations */}
+        <h4 className="text-sm font-bold text-slate-200 mb-2 mt-4">1. Immobilisations</h4>
+        <div className="overflow-x-auto text-[11px] mb-6">
+          <table className="w-full">
+            <thead><tr className="text-slate-400 font-bold uppercase tracking-wider border-b border-slate-700">
+              <th className="text-left py-2 px-2">Catégorie</th>
+              <th className="text-right py-2 px-2 w-[120px]">VB Début</th>
+              <th className="text-right py-2 px-2 w-[120px]">Acquisitions</th>
+              <th className="text-right py-2 px-2 w-[120px]">Cessions</th>
+              <th className="text-right py-2 px-2 w-[120px]">VB Fin</th>
+            </tr></thead>
+            <tbody>
+              {effectiveTableaux.immobilisations.map((l, i) => (
+                <tr key={l._key || i} className="border-b border-slate-800/30">
+                  <td className="py-1 px-2 text-slate-300">{l.categorie}</td>
+                  {['debut', 'augmentation', 'diminution', 'fin'].map(f => (
+                    <td key={f} className="py-1 px-2">
+                      <input type="number" step="0.001" value={l[f]}
+                        onChange={e => {
+                          const v = parseFloat(e.target.value) || 0;
+                          setTableauxData(prev => ({
+                            ...prev,
+                            immobilisations: (prev.immobilisations.length ? prev.immobilisations : effectiveTableaux.immobilisations).map((x, j) => j === i ? { ...x, [f]: v } : x),
+                          }));
+                        }}
+                        className="w-full bg-slate-950 border border-slate-700 rounded px-1.5 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Tableau des amortissements */}
+        <h4 className="text-sm font-bold text-slate-200 mb-2 mt-6">2. Amortissements</h4>
+        <div className="overflow-x-auto text-[11px] mb-6">
+          <table className="w-full">
+            <thead><tr className="text-slate-400 font-bold uppercase tracking-wider border-b border-slate-700">
+              <th className="text-left py-2 px-2">Catégorie</th>
+              <th className="text-right py-2 px-2 w-[120px]">Amort. Début</th>
+              <th className="text-right py-2 px-2 w-[120px]">Dotations</th>
+              <th className="text-right py-2 px-2 w-[120px]">Reprises</th>
+              <th className="text-right py-2 px-2 w-[120px]">Amort. Fin</th>
+            </tr></thead>
+            <tbody>
+              {effectiveTableaux.amortissements.map((l, i) => (
+                <tr key={l._key || i} className="border-b border-slate-800/30">
+                  <td className="py-1 px-2 text-slate-300">{l.categorie}</td>
+                  {['debut', 'augmentation', 'diminution', 'fin'].map(f => (
+                    <td key={f} className="py-1 px-2">
+                      <input type="number" step="0.001" value={l[f]}
+                        onChange={e => {
+                          const v = parseFloat(e.target.value) || 0;
+                          setTableauxData(prev => ({
+                            ...prev,
+                            amortissements: (prev.amortissements.length ? prev.amortissements : effectiveTableaux.amortissements).map((x, j) => j === i ? { ...x, [f]: v } : x),
+                          }));
+                        }}
+                        className="w-full bg-slate-950 border border-slate-700 rounded px-1.5 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Tableau des provisions */}
+        <h4 className="text-sm font-bold text-slate-200 mb-2 mt-6">3. Provisions</h4>
+        <div className="overflow-x-auto text-[11px] mb-6">
+          <table className="w-full">
+            <thead><tr className="text-slate-400 font-bold uppercase tracking-wider border-b border-slate-700">
+              <th className="text-left py-2 px-2">Catégorie</th>
+              <th className="text-right py-2 px-2 w-[120px]">Prov. Début</th>
+              <th className="text-right py-2 px-2 w-[120px]">Dotations</th>
+              <th className="text-right py-2 px-2 w-[120px]">Reprises</th>
+              <th className="text-right py-2 px-2 w-[120px]">Prov. Fin</th>
+            </tr></thead>
+            <tbody>
+              {effectiveTableaux.provisions.map((l, i) => (
+                <tr key={l._key || i} className="border-b border-slate-800/30">
+                  <td className="py-1 px-2 text-slate-300">{l.categorie}</td>
+                  {['debut', 'augmentation', 'diminution', 'fin'].map(f => (
+                    <td key={f} className="py-1 px-2">
+                      <input type="number" step="0.001" value={l[f]}
+                        onChange={e => {
+                          const v = parseFloat(e.target.value) || 0;
+                          setTableauxData(prev => ({
+                            ...prev,
+                            provisions: (prev.provisions.length ? prev.provisions : effectiveTableaux.provisions).map((x, j) => j === i ? { ...x, [f]: v } : x),
+                          }));
+                        }}
+                        className="w-full bg-slate-950 border border-slate-700 rounded px-1.5 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Variation des capitaux propres */}
+        <h4 className="text-sm font-bold text-slate-200 mb-2 mt-6">4. Variation des capitaux propres</h4>
+        <div className="overflow-x-auto text-[11px] mb-6">
+          <table className="w-full">
+            <thead><tr className="text-slate-400 font-bold uppercase tracking-wider border-b border-slate-700">
+              <th className="text-left py-2 px-2">Rubrique</th>
+              <th className="text-right py-2 px-2 w-[120px]">Solde N-1</th>
+              <th className="text-right py-2 px-2 w-[120px]">Augmentations</th>
+              <th className="text-right py-2 px-2 w-[120px]">Diminutions</th>
+              <th className="text-right py-2 px-2 w-[120px]">Solde N</th>
+            </tr></thead>
+            <tbody>
+              {effectiveTableaux.variationCP.map((l, i) => (
+                <tr key={l._key || i} className="border-b border-slate-800/30">
+                  <td className="py-1 px-2 text-slate-300">{l.rubrique}</td>
+                  {['debut', 'augmentation', 'diminution', 'fin'].map(f => (
+                    <td key={f} className="py-1 px-2">
+                      <input type="number" step="0.001" value={l[f]}
+                        onChange={e => {
+                          const v = parseFloat(e.target.value) || 0;
+                          setTableauxData(prev => ({
+                            ...prev,
+                            variationCP: (prev.variationCP.length ? prev.variationCP : effectiveTableaux.variationCP).map((x, j) => j === i ? { ...x, [f]: v } : x),
+                          }));
+                        }}
+                        className="w-full bg-slate-950 border border-slate-700 rounded px-1.5 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      )}
+
+      {!editingAccounts && reportTab === 'notes' && (
+      <div className="glass-card p-5 rounded-2xl border border-slate-800 shadow-card">
+        <div className="mb-4 border-b border-slate-800 pb-3">
+          <h3 className="text-base font-bold text-slate-100">Notes aux états financiers</h3>
+          <p className="text-[10px] text-slate-400 mt-1">Saisissez les notes explicatives et les principes comptables.</p>
+        </div>
+
+        <div className="mb-6">
+          <h4 className="text-sm font-bold text-slate-200 mb-2">Notes explicatives</h4>
+          <textarea value={notes} onChange={e => setNotes(e.target.value)}
+            rows={8}
+            className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-brand-500 placeholder-slate-500 font-mono"
+            placeholder="Saisissez ici les notes aux états financiers (méthodes de calcul, hypothèses retenues, faits marquants, etc.)..." />
+        </div>
+
+        <div className="mb-4">
+          <h4 className="text-sm font-bold text-slate-200 mb-2">Principes et méthodes comptables</h4>
+          <textarea value={accountingPolicies} onChange={e => setAccountingPolicies(e.target.value)}
+            rows={8}
+            className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-brand-500 placeholder-slate-500 font-mono"
+            placeholder="Saisissez ici les principes comptables appliqués (mode d'évaluation, méthode d'amortissement, règles de provisionnement, etc.)..." />
+        </div>
       </div>
       )}
 

@@ -22,95 +22,124 @@ export function balancesToReports(accounts) {
 
   const ok = (v) => isNaN(v) || !isFinite(v) ? 0 : Math.round(v * 1000) / 1000;
 
-  // Capitaux propres
-  const cap = s('10'); const res = s('11'); const rr = s('12');
-  const capital = ok(cap < 0 ? -cap : 0);
-  const reserves = ok(res < 0 ? -res : 0);
-  const resultatsReportes = ok(rr < 0 ? -rr : 0);
-  const subventionsInvestissement = ok(s('13') < 0 ? -s('13') : 0);
+  // ===== CAPITAUX PROPRES =====
+  const capital = ok(Math.max(0, -s('101')));
+  const reserves = ok(Math.max(0, -s('11')));
+  const resultatsReportes = ok(Math.max(0, -s('12')));
+  const subventionsInvestissement = ok(Math.max(0, -s('13')));
+  const ecartsReevaluation = ok(Math.max(0, -s('145')));
+  const autresCapitauxPropres = ok(subventionsInvestissement + ecartsReevaluation);
 
-  // Immobilisations — Tunisian PCG: 20=frais prélim, 21=corporelles, 22=incorporelles, 25=participations, 27=financières
+  // ===== IMMOBILISATIONS (Tunisian PCG: 20=frais prélim, 21=incorp, 22=corp, 24=corp, 25/26/27=financières) =====
   const fp = s('20');
-  const ic = s('21');            // immobilisations CORPORELLES
-  const ii = s('22') + s('24');  // immobilisations INCORPORELLES (22=brevets/logiciels, 24=autres incorp.)
-  const ifi = s('27');           // immobilisations FINANCIÈRES
-  const am = s('28'); const pnc = s('29');
+  const ic = s('21');            // Incorporelles (brevets, logiciels)
+  const ii = s('22') + s('23') + s('24');  // Corporelles (terrains, constructions, équipements)
+  const ifi = s('25') + s('26') + s('27'); // Financières (participations, prêts)
+  const am = s('28');
+  const amCorp = s('281');
+  const amInc = s('282');
+  const pncProv = s('29');
+
   const ancBrut = ok(fp + ic + ii + ifi);
-  const amortissements = ok(am < 0 ? -am : 0);
-  const provActifNC = ok(pnc < 0 ? -pnc : 0);
+  const amortissements = ok(Math.max(0, -am));
+  const amortissementsCorp = ok(Math.max(0, -amCorp));
+  const amortissementsInc = ok(Math.max(0, -amInc));
+  const provActifNC = ok(Math.max(0, -pncProv));
   const actifNC = ok(ancBrut - amortissements - provActifNC);
 
-  // Stocks
-  const stockBalance = s('3');
-  const provStockBalance = s('39');
-  const stocksBrutVal = ok(stockBalance - Math.min(0, provStockBalance));
-  const provisionsStocksVal = ok(Math.max(0, -provStockBalance));
-  const stocks = ok(stockBalance);
+  // ===== STOCKS =====
+  const stockBrut = s('3');
+  const provStock = s('39');
+  const stocksBrutes = ok(Math.max(0, s('3') - s('39')));
+  const provisionsStocks = ok(Math.max(0, -s('39')));
+  const stocks = ok(Math.max(0, s('3')));
 
-  // Clients
-  const cl = s('41'); const provCl = s('491');
-  const clients = ok(cl > 0 ? cl : 0);
-  const provisionsClients = ok(provCl < 0 ? -provCl : 0);
-  const clientsNets = ok(clients - provisionsClients);
+  // ===== CLIENTS =====
+  const clBrut = s('41');
+  const provCl = s('491');
+  const clientsBrutes = ok(Math.max(0, clBrut));
+  const provisionsClients = ok(Math.max(0, -provCl));
+  const clients = ok(clientsBrutes - provisionsClients);
 
-  // État, social, personnel, autres
+  // ===== ÉTAT, PERSONNEL, AUTRES =====
   const etatDebit = ok(Math.max(0, s('43')) + Math.max(0, s('445661') + s('445662') + s('445668')) + Math.max(0, s('446')));
   const etatCredit = ok(Math.max(0, -(s('43'))) + Math.max(0, -(s('444') + s('445671') + s('447') + s('448'))));
   const personnelDebit = ok(Math.max(0, s('425')));
   const personnelCredit = ok(Math.max(0, -(s('421') + s('428'))));
 
-  // Autres actifs courants: 409, other 44, 46, 47 debit, 48 debit (charges constatées d'avance)
   const autresCréances = ok(
     Math.max(0, s('409')) + Math.max(0, s('44')) + Math.max(0, s('46')) + Math.max(0, s('47')) + debit('48')
   );
 
-  // Trésorerie
   const tresorerie = ok(s('5'));
+  const tresorerieActif = Math.max(0, tresorerie);
 
-  const actifC = ok(stocks + clientsNets + etatDebit + personnelDebit + autresCréances + tresorerie);
+  const actifC = ok(stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif);
   const totalActif = ok(actifNC + actifC);
 
-  // Passif
-  const emprunts = ok(s('16') < 0 ? -s('16') : 0);
-  const provisionsDettes = ok(s('15') < 0 ? -s('15') : 0);
-  const fournisseurs = ok(Math.max(0, credit('40') - debit('409')));
+  // ===== PASSIF =====
+  const emprunts = ok(Math.max(0, -s('16')));
+  const provisionsRisques = ok(Math.max(0, -s('151')));
+  const provisionsDettes = ok(Math.max(0, -s('15')));
+  const provisions = provisionsDettes;
+  const autresPassifsNC = ok(Math.max(0, -s('17') + -s('18')));
+
+  const fournisseurs = ok(Math.max(0, -s('40')));
   const autresDettes = ok(
-    Math.max(0, -(s('409'))) + Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + credit('48') + Math.max(0, -(s('49')))
+    Math.max(0, -(s('46'))) + Math.max(0, -(s('47'))) + credit('48')
   );
-  const concoursBancaires = ok(s('52') < 0 ? -s('52') : 0);
+  const concoursBancaires = ok(Math.max(0, -s('52')));
 
-  // État de résultat (must precede capPropres which includes resultatExercice)
-  const ventes = credit('70') - debit('709');
-  const productionStockee = credit('71');
-  const productionImmobilisee = credit('72');
-  const subventionsExploitation = credit('74');
-  const autresProduitsExploitation = credit('75');
-  const reprises = credit('78');
-  const produitsExploitation = ventes + productionStockee + productionImmobilisee + subventionsExploitation + autresProduitsExploitation + reprises;
+  // ===== COMPTE DE RÉSULTAT =====
+  const totalVentes = ok(credit('70') - debit('709'));
+  const ventesMarchandises = ok(credit('707') - debit('7097'));
+  const prestationsServices = ok(credit('705') - debit('7095') + credit('704') - debit('7094'));
+  const autresVentes = ok(totalVentes - ventesMarchandises - prestationsServices);
 
-  const achatsConsommes = debit('60') - credit('603');
+  const productionStockee = ok(credit('71'));
+  const productionImmobilisee = ok(credit('72'));
+  const subventionsExploitation = ok(credit('74'));
+  const autresProduitsExploitation = ok(credit('75'));
+  const reprises = ok(credit('781') + credit('786'));
+
+  const produitsExploitation = ok(totalVentes + productionStockee + productionImmobilisee + subventionsExploitation + autresProduitsExploitation + reprises);
+
+  const achatsBrut = debit('60') - debit('603');
+  const variationStocks = credit('603') - debit('603');
+  const varStockMarchandises = credit('6037') - debit('6037');
+  const achatsConsommes = ok(achatsBrut - variationStocks);
+  const achatsMarchandises = debit('601');
+
   const chargesExternes = debit('61');
   const autresServicesExterieurs = debit('62');
-  const chargesDePersonnel = debit('64') + debit('62');
   const impotsTaxes = debit('63');
-  const autresChargesExploitation = debit('65');
+  const chargesDePersonnel = debit('64');
+  const autresChargesOrdinaires = debit('65');
   const dotations = debit('68');
-  const chargesExploitation = achatsConsommes + chargesExternes + chargesDePersonnel + impotsTaxes + autresChargesExploitation + dotations;
+  const dotationsAmortCorp = debit('6811');
+  const dotationsAmortInc = debit('6812');
+
+  const chargesExploitation = ok(achatsConsommes + chargesExternes + autresServicesExterieurs + chargesDePersonnel + impotsTaxes + autresChargesOrdinaires + dotations);
 
   const resultatExploitation = ok(produitsExploitation - chargesExploitation);
-  const produitsFinanciers = credit('76');
+
+  const produitsFinanciers = ok(credit('76'));
   const chargesFinancieres = debit('66');
   const resultatFinancier = ok(produitsFinanciers - chargesFinancieres);
-  const produitsExceptionnels = credit('77');
+
+  const produitsExceptionnels = ok(credit('77') + credit('787'));
   const chargesExceptionnelles = debit('67');
   const resultatExceptionnel = ok(produitsExceptionnels - chargesExceptionnelles);
-  const resultatAvantImpot = ok(resultatExploitation + resultatFinancier);
+
   const impot = debit('69');
-  const resultatNet = ok(resultatAvantImpot + resultatExceptionnel - impot);
+
+  const resultatAvantImpot = ok(resultatExploitation + resultatFinancier + resultatExceptionnel);
+  const resultatNet = ok(resultatAvantImpot - impot);
   const resultatExercice = resultatNet;
 
-  const capPropres = ok(capital + reserves + resultatsReportes + subventionsInvestissement + resultatExercice);
-  const passifNC = ok(emprunts + provisionsDettes);
+  // ===== CAPITAUX PROPRES (final) =====
+  const capPropres = ok(capital + reserves + resultatsReportes + autresCapitauxPropres + resultatExercice);
+  const passifNC = ok(emprunts + provisionsDettes + autresPassifsNC);
   const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires);
   const totalPassif = ok(capPropres + passifNC + passifC);
 
@@ -118,128 +147,203 @@ export function balancesToReports(accounts) {
     anomalies.push(`Bilan non équilibré : Actif=${totalActif} ≠ Passif=${totalPassif} (écart=${(totalActif - totalPassif).toFixed(3)})`);
   }
 
-  // SIG
-  const vMarch = credit('70') - credit('706');
-  const prestations = credit('706');
-  const aMarch = debit('601');
-  const vStockMarch = s('36');
-  const margeCommerciale = ok(vMarch - aMarch + vStockMarch);
-  const productionExercice = ok(prestations + productionStockee + productionImmobilisee);
-  const valeurAjoutee = ok(margeCommerciale + productionExercice - achatsConsommes - chargesExternes - autresServicesExterieurs);
-  const ebe = ok(valeurAjoutee + subventionsExploitation - chargesDePersonnel - impotsTaxes);
-  const sigResultatExploitation = ok(ebe + reprises - dotations + autresProduitsExploitation - autresChargesExploitation);
+  // ===== SIG =====
+  const varStockMarch = credit('6037') - debit('6037');
+  const margeCommerciale = ok(ventesMarchandises - achatsMarchandises + varStockMarch);
+  const productionExercice = ok(prestationsServices + autresVentes + productionStockee + productionImmobilisee);
+  const achatsConsHorsMarch = ok(achatsConsommes - achatsMarchandises + varStockMarch);
+  const valeurAjoutee = ok(margeCommerciale + productionExercice - achatsConsHorsMarch - chargesExternes - autresServicesExterieurs);
+  const ebe = ok(valeurAjoutee + subventionsExploitation + autresProduitsExploitation - chargesDePersonnel - impotsTaxes - autresChargesOrdinaires);
+  const sigResultatExploitation = ok(ebe + reprises - dotations);
   const sigRcai = ok(sigResultatExploitation + resultatFinancier);
   const sigResultatNet = ok(sigRcai + resultatExceptionnel - impot);
 
-  // Flux trésorerie
+  // ===== FLUX DE TRÉSORERIE =====
   const mba = ok(resultatNet + dotations - reprises);
-  const fluxExploitation = ok(mba);
+  const bfrClients = 0;
+  const bfrFournisseurs = 0;
+  const bfrEtat = 0;
+  const bfrPersonnel = 0;
+  const bfrStocks = 0;
+  const fluxExploitation = ok(mba + bfrClients + bfrFournisseurs + bfrEtat + bfrPersonnel + bfrStocks);
+  const acquisitionsImmobilisations = 0;
+  const cessionsImmobilisations = 0;
   const fluxInvestissement = 0;
+  const apportsCapital = 0;
+  const empruntsNouveaux = 0;
+  const remboursementsEmprunts = 0;
   const fluxFinancement = 0;
   const variationTresorerie = ok(fluxExploitation + fluxInvestissement + fluxFinancement);
+  const tresorerieInitiale = ok(tresorerieActif - variationTresorerie);
 
-  // Ratios
+  // ===== RATIOS =====
   const lr = (n, d) => d > 0 ? ok(n / d) : 0;
-  const lg = lr(actifC, passifC);
-  const lr2 = lr(actifC - stocks, passifC);
-  const li = lr(tresorerie, passifC);
-  const af = lr(capPropres, totalPassif);
-  const en = lr(passifNC + passifC, capPropres);
-  const re2 = lr(resultatExploitation, totalActif);
-  const rf = lr(resultatNet, capPropres);
-  const mn = lr(resultatNet, produitsExploitation);
-  const rs = achatsConsommes > 0 ? ok((stocks / achatsConsommes) * 360) : 0;
-  const dc = ventes > 0 ? ok((clients / ventes) * 360) : 0;
-  const df = achatsConsommes > 0 ? ok((fournisseurs / achatsConsommes) * 360) : 0;
+  const liquiditeGenerale = lr(actifC, passifC);
+  const liquiditeReduite = lr(actifC - stocks, passifC);
+  const liquiditeImmediate = lr(tresorerieActif, passifC);
+  const autonomieFinanciere = lr(capPropres, totalPassif);
+  const endettementNet = lr(emprunts + concoursBancaires + autresPassifsNC, capPropres || 1);
+  const rentabiliteEconomique = lr(resultatExploitation, totalActif);
+  const rentabiliteFinanciere = lr(resultatNet, capPropres || 1);
+  const margeNette = lr(resultatNet, totalVentes || 1);
+  const poidsChargesFinancieres = lr(chargesFinancieres, resultatExploitation || 1);
+  const rotationStocksJours = achatsConsommes > 0 ? ok((stocks / achatsConsommes) * 360) : 0;
+  const delaiClientsJours = totalVentes > 0 ? ok((clientsBrutes / totalVentes) * 360) : 0;
+  const delaiFournisseursJours = achatsConsommes > 0 ? ok((fournisseurs / achatsConsommes) * 360) : 0;
 
   return {
     bilan: {
       actifNC, actifC, totalActif,
-      ancBrut, amortissements, provActifNC,
+      ancBrut, amortissements, amortissementsCorp, amortissementsInc, provActifNC,
+      dotationsAmortCorp: ok(dotationsAmortCorp),
+      dotationsAmortInc: ok(dotationsAmortInc),
       amortissementsDeduction: amortissements,
       provisionsActifNCDeduction: provActifNC,
-      provisionsStocksDeduction: provisionsStocksVal,
-      provisionsClientsDeduction: provisionsClients,
-      provisionsTresorerieDeduction: 0,
       fraisPreliminaires: ok(fp),
       immobilisationsIncorporelles: ok(ii),
       immobilisationsCorporelles: ok(ic),
       immobilisationsFinancieres: ok(ifi),
-      stocks, stocksBrutes: stocksBrutVal, provisionsStocks: provisionsStocksVal,
-      clients, provisionsClients, clientsNets,
+      stocks, stocksBrutes, provisionsStocks,
+      provisionsStocksDeduction: provisionsStocks,
+      clients, clientsBrutes, provisionsClients,
+      provisionsClientsDeduction: provisionsClients,
+      clientsNets: clients,
       etatDebit, personnelDebit, autresCréances,
-      tresorerie, tresorerieActif: tresorerie,
+      tresorerie: tresorerieActif, tresorerieActif,
+      tresorerieBrute: tresorerieActif,
+      provisionsTresorerieDeduction: 0,
       capital, capitalSocial: capital,
       reserves, resultatsReportes, resultatExercice,
-      autresCapitauxPropres: subventionsInvestissement,
+      autresCapitauxPropres,
       capPropres, passifNC, passifC, totalPassif,
-      emprunts, provisionsDettes, provisions: provisionsDettes,
-      autresPassifsNC: 0,
+      emprunts, provisionsDettes, provisions,
+      autresPassifsNC,
       fournisseurs, etatCredit, personnelCredit, autresDettes, concoursBancaires,
+
+      donneesImmobilisations: {
+        totalBrut: ancBrut,
+        lignes: [
+          { categorie: 'Frais préliminaires', debut: 0, augmentation: 0, diminution: 0, fin: ok(fp), _key: 'fp' },
+          { categorie: 'Incorporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(ii), _key: 'inc' },
+          { categorie: 'Corporelles', debut: 0, augmentation: 0, diminution: 0, fin: ok(ic), _key: 'corp' },
+          { categorie: 'Financières', debut: 0, augmentation: 0, diminution: 0, fin: ok(ifi), _key: 'fin' },
+        ],
+      },
+      donneesAmortissements: {
+        total: amortissements,
+        dotationExercice: ok(dotations),
+        dotationsAmortCorp: ok(dotationsAmortCorp),
+        dotationsAmortInc: ok(dotationsAmortInc),
+        lignes: [
+          { categorie: 'Frais préliminaires', debut: 0, augmentation: 0, diminution: 0, fin: 0, _key: 'fp' },
+          { categorie: 'Incorporelles', debut: 0, augmentation: ok(dotationsAmortInc), diminution: 0, fin: ok(amortissementsInc), _key: 'inc' },
+          { categorie: 'Corporelles', debut: 0, augmentation: ok(dotationsAmortCorp), diminution: 0, fin: ok(amortissementsCorp), _key: 'corp' },
+        ],
+      },
+      donneesProvisions: {
+        actifNC: provActifNC,
+        stocks: provisionsStocks,
+        clients: provisionsClients,
+        risques: provisionsRisques,
+        lignes: [
+          { categorie: 'Immobilisations', debut: 0, augmentation: 0, diminution: 0, fin: ok(provActifNC), _key: 'anc' },
+          { categorie: 'Stocks', debut: 0, augmentation: 0, diminution: 0, fin: ok(provisionsStocks), _key: 'stk' },
+          { categorie: 'Clients', debut: 0, augmentation: 0, diminution: 0, fin: ok(provisionsClients), _key: 'clt' },
+          { categorie: 'Risques et charges', debut: 0, augmentation: 0, diminution: 0, fin: ok(provisionsRisques), _key: 'rq' },
+        ],
+      },
+      variationCapitauxPropres: {
+        lignes: [
+          { rubrique: 'Capital', debut: 0, augmentation: 0, diminution: 0, fin: ok(capital), _key: 'cap' },
+          { rubrique: 'Réserves', debut: 0, augmentation: 0, diminution: 0, fin: ok(reserves), _key: 'res' },
+          { rubrique: 'Résultats reportés', debut: 0, augmentation: 0, diminution: 0, fin: ok(resultatsReportes), _key: 'rr' },
+          { rubrique: 'Subventions d\'investissement', debut: 0, augmentation: 0, diminution: 0, fin: ok(subventionsInvestissement), _key: 'subv' },
+          { rubrique: 'Écarts de réévaluation', debut: 0, augmentation: 0, diminution: 0, fin: ok(ecartsReevaluation), _key: 'ecr' },
+          { rubrique: 'Résultat de l\'exercice', debut: 0, augmentation: 0, diminution: 0, fin: ok(resultatExercice), _key: 'resex' },
+        ],
+      },
     },
     resultat: {
-      produitsExploitation: ok(produitsExploitation),
-      totalProduitsExploitation: ok(produitsExploitation),
-      chargesExploitation: ok(chargesExploitation),
-      totalChargesExploitation: ok(chargesExploitation),
+      produitsExploitation,
+      totalProduitsExploitation: produitsExploitation,
+      chargesExploitation,
+      totalChargesExploitation: chargesExploitation,
       resultatExploitation,
-      ventes: ok(ventes),
-      ventesMarchandises: ok(ventes - prestations),
-      ventesPrestations: ok(prestations),
-      productionStockee: ok(productionStockee),
-      productionImmobilisee: ok(productionImmobilisee),
-      subventionsExploitation: ok(subventionsExploitation),
-      autresProduitsExploitation: ok(autresProduitsExploitation),
-      autresProduits: ok(autresProduitsExploitation),
-      reprises: ok(reprises),
-      achats: ok(achatsConsommes),
-      achatsConsommes: ok(achatsConsommes),
-      achatsMarchandises: ok(debit('601')),
-      achatsMP: ok(debit('602')),
-      autresAchatsSIG: ok(debit('60') - debit('601') - debit('602')),
-      chargesExternes: ok(chargesExternes),
-      chargesPersonnel: ok(chargesDePersonnel),
-      impotsTaxes: ok(impotsTaxes),
-      autresChargesExploitation: ok(autresChargesExploitation),
-      autresCharges: ok(autresChargesExploitation),
-      dotations: ok(dotations),
-      produitsFinanciers: ok(produitsFinanciers),
-      chargesFinancieres: ok(chargesFinancieres),
+      ventes: totalVentes,
+      ventesMarchandises,
+      ventesPrestations: prestationsServices,
+      productionStockee,
+      productionImmobilisee,
+      subventionsExploitation,
+      autresProduitsExploitation,
+      autresProduits: autresProduitsExploitation,
+      reprises,
+      achats: achatsConsommes,
+      achatsConsommes,
+      achatsMarchandises,
+      achatsMP: debit('602'),
+      autresAchatsSIG: ok(achatsConsommes - achatsMarchandises + varStockMarchandises - debit('602')),
+      chargesExternes,
+      chargesPersonnel: chargesDePersonnel,
+      impotsTaxes,
+      autresChargesExploitation: autresChargesOrdinaires,
+      autresCharges: autresChargesOrdinaires,
+      autresServicesExterieurs,
+      dotations,
+      dotationsAmortCorp: ok(dotationsAmortCorp),
+      dotationsAmortInc: ok(dotationsAmortInc),
+      produitsFinanciers,
+      chargesFinancieres,
       resultatFinancier,
-      produitsExceptionnels: ok(produitsExceptionnels),
-      chargesExceptionnelles: ok(chargesExceptionnelles),
+      produitsExceptionnels,
+      chargesExceptionnelles,
       resultatExceptionnel,
       resultatAvantImpot,
-      impot: ok(impot),
-      impotIS: ok(impot),
+      impot, impotIS: impot,
       resultatNet,
       margeCommerciale,
       productionExercice,
-      valeurAjoutee,
-      ebe,
+      valeurAjoutee, ebe,
       rcai: sigRcai,
       sigResultatNet,
     },
     sig: {
-      margeCommerciale, productionExercice, valeurAjoutee,
-      ebe, sigResultatExploitation, sigRcai, sigResultatNet,
+      margeCommerciale, productionExercice,
+      achatsConsHorsMarch,
+      chargesExternes, autresServicesExterieurs,
+      valeurAjoutee, ebe,
+      sigResultatExploitation, sigRcai, sigResultatNet,
     },
     fluxTresorerie: {
-      resultatNet, dotations: ok(dotations), reprises: ok(reprises),
+      resultatNet,
+      dotations: ok(dotations),
+      reprises: ok(reprises),
       margeBruteAutofinancement: mba,
-      fluxExploitation, fluxInvestissement, fluxFinancement,
+      variationClients: bfrClients,
+      variationFournisseurs: bfrFournisseurs,
+      variationEtat: bfrEtat,
+      variationPersonnel: bfrPersonnel,
+      variationStocks: bfrStocks,
+      fluxExploitation,
+      acquisitionsImmobilisations,
+      cessionsImmobilisations,
+      fluxInvestissement,
+      apportsCapital,
+      empruntsNouveaux,
+      remboursementsEmprunts,
+      fluxFinancement,
       variationTresorerie,
-      tresorerieInitiale: 0, tresorerieFinale: tresorerie,
-      acquisitionsImmobilisations: 0, cessionsImmobilisations: 0,
-      apportsCapital: 0, empruntsNouveaux: 0, remboursementsEmprunts: 0,
+      tresorerieInitiale,
+      tresorerieFinale: tresorerieActif,
     },
     ratios: {
-      liquiditeGenerale: lg, liquiditeReduite: lr2, liquiditeImmediate: li,
-      autonomieFinanciere: af, endettementNet: en,
-      rentabiliteEconomique: re2, rentabiliteFinanciere: rf, margeNette: mn,
-      rotationStocksJours: rs, delaiClientsJours: dc, delaiFournisseursJours: df,
-      bfr: ok(stocks + clients - fournisseurs),
-      tresorerieNette: ok(tresorerie - concoursBancaires),
+      liquiditeGenerale, liquiditeReduite, liquiditeImmediate,
+      autonomieFinanciere, endettementNet,
+      rentabiliteEconomique, rentabiliteFinanciere, margeNette,
+      poidsChargesFinancieres,
+      rotationStocksJours, delaiClientsJours, delaiFournisseursJours,
+      bfr: ok(stocks + clientsBrutes - fournisseurs),
+      tresorerieNette: ok(tresorerieActif - concoursBancaires),
     },
     controle: {
       equilibree: Math.abs(totalDebit - totalCredit) < 0.001,

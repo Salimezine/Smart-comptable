@@ -155,6 +155,7 @@ export function buildBalanceGenerale(balances) {
   return Object.values(balances)
     .map(b => ({
       compte: b.compte,
+      libelle: b.libelle || '',
       debitTotal: parseFloat(b.debitTotal.toFixed(3)),
       creditTotal: parseFloat(b.creditTotal.toFixed(3)),
       soldeDebiteur: b.solde > 0.001 ? parseFloat(b.solde.toFixed(3)) : 0,
