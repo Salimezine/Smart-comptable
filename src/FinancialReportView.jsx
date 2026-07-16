@@ -160,6 +160,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     autresDettes: 'Autres dettes',
     tresorerieActif: 'Trésorerie',
     concoursBancaires: 'Concours bancaires',
+    empruntsCourants: 'Emprunts courants',
     capitalSocial: 'Capital social',
     reserves: 'Réserves',
     emprunts: 'Emprunts bancaires',
@@ -381,6 +382,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       personnelCredit: bs.liabilities.current.personnelPayable,
       autresDettes: bs.liabilities.current.otherPayables,
       concoursBancaires: bs.liabilities.current.bankOverdraft,
+      empruntsCourants: 0,
       actifNC: bs.assets.nonCurrent.total,
       actifC: bs.assets.current.total,
       totalActif: bs.assets.total,
@@ -392,6 +394,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     const ac = bilan.actifC, pc = bilan.passifC, cp = bilan.capPropres, pnc = bilan.passifNC, anc = bilan.actifNC, tp = bilan.totalPassif;
     const stocks = bilan.stocks || 0;
     const emprunts = bilan.emprunts || 0;
+    const ec = bilan.empruntsCourants || 0;
     const cc = bilan.concoursBancaires || 0;
     const apnc = bilan.autresPassifsNC || 0;
     const stockVal = bilan.stocks || 0;
@@ -402,7 +405,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
       liquiditeGenerale: pc > 0 ? Math.round((ac / pc) * 100) / 100 : 0,
       liquiditeReduite: pc > 0 ? Math.round(((ac - stockVal) / pc) * 100) / 100 : 0,
       autonomieFinanciere: tp > 0 ? Math.round((cp / tp) * 10000) / 100 : 0,
-      endettementNet: cp > 0 ? Math.round(((emprunts + cc + apnc) / cp) * 100) / 100 : 0,
+      endettementNet: cp > 0 ? Math.round(((emprunts + ec + cc + apnc) / cp) * 100) / 100 : 0,
       couvertureEmploisStables: anc > 0 ? Math.round(((cp + pnc) / anc) * 100) / 100 : 0,
       bfr: stockVal + clientsVal - fournisseursVal,
       tresorerieNette: tresorerieVal - cc,
@@ -842,6 +845,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               <Line label="Personnel" value={bilan.personnelCredit} prevValue={bilanPrev?.personnelCredit} detailKey={useJournal ? 'personnelCredit' : undefined} onDetail={handleDetail} />
               <Line label="Autres dettes" value={bilan.autresDettes} prevValue={bilanPrev?.autresDettes} indent={1} detailKey={useJournal ? 'autresDettes' : undefined} onDetail={handleDetail} />
               <Line label="Concours bancaires" value={bilan.concoursBancaires} prevValue={bilanPrev?.concoursBancaires} indent={1} detailKey={useJournal ? 'concoursBancaires' : undefined} onDetail={handleDetail} />
+              <Line label="Emprunts courants" value={bilan.empruntsCourants} prevValue={bilanPrev?.empruntsCourants} indent={1} detailKey={useJournal ? 'empruntsCourants' : undefined} onDetail={handleDetail} />
               <Line label="Total Passifs Courants" value={bilan.passifC} prevValue={bilanPrev?.passifC} total />
             </Section>
 

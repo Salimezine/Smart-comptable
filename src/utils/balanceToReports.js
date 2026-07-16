@@ -59,14 +59,13 @@ export function balancesToReports(accounts) {
   const etatDebit = debitNet('43');
   const etatCredit = creditNet('43');
   const personnelDebit = debitNet('421') + debitNet('425');
-  const personnelCredit = creditNet('421') + creditNet('425') + creditNet('428') + creditNet('453') + creditNet('454');
+  const personnelCredit = creditNet('421') + creditNet('425') + creditNet('428');
 
   const autresCréances = ok(
     debitNet('403') + debitNet('409') + debitNet('44') + debitNet('453') + debitNet('46') + debitNet('47') + debitNet('48')
   );
 
-  const tresorerieActif = debitNet('5');
-  const concoursBancaires = creditNet('52');
+  const tresorerieActif = debitNet('51') + debitNet('52') + debitNet('53') + debitNet('54') + debitNet('55');
 
   const actifC = ok(stocks + clients + etatDebit + personnelDebit + autresCréances + tresorerieActif);
   const totalActif = ok(actifNC + actifC);
@@ -75,12 +74,13 @@ export function balancesToReports(accounts) {
   const capital = creditNet('101');
   const reserves = creditNet('11');
   const resultatsReportes = creditNet('12');
-  const subventionsInvestissement = creditNet('13');
+  const subventionsInvestissement = ok(Math.max(0, -s('13')));
   const ecartsReevaluation = creditNet('145');
   const autresCapitauxPropres = ok(subventionsInvestissement + ecartsReevaluation);
 
   // ===== PASSIFS =====
-  const emprunts = creditNet('16') + creditNet('505');
+  const emprunts = creditNet('16');
+  const empruntsCourants = creditNet('505');
   const provisionsRisques = creditNet('151');
   const provisionsDettes = creditNet('15');
   const provisions = provisionsDettes;
@@ -88,9 +88,9 @@ export function balancesToReports(accounts) {
 
   const fournisseurs = creditNet('401');
   const autresDettes = ok(
-    creditNet('41') + creditNet('44') + creditNet('46') + creditNet('47') + creditNet('48')
+    creditNet('41') + creditNet('44') + creditNet('46') + creditNet('47') + creditNet('48') + creditNet('453') + creditNet('454')
   );
-  const concoursBancaires = creditNet('52') + creditNet('54');
+  const concoursBancaires = creditNet('506') + creditNet('54');
 
   // ===== COMPTE DE RÉSULTAT =====
   const totalVentes = ok(credit('70') - debit('709'));
@@ -142,7 +142,7 @@ export function balancesToReports(accounts) {
   // ===== CAPITAUX PROPRES (final) =====
   const capPropres = ok(capital + reserves + resultatsReportes + autresCapitauxPropres + resultatExercice);
   const passifNC = ok(emprunts + provisionsDettes + autresPassifsNC);
-  const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires);
+  const passifC = ok(fournisseurs + etatCredit + personnelCredit + autresDettes + concoursBancaires + empruntsCourants);
   const totalPassif = ok(capPropres + passifNC + passifC);
 
   if (Math.abs(totalActif - totalPassif) > 0.01) {
@@ -184,7 +184,7 @@ export function balancesToReports(accounts) {
   const liquiditeReduite = lr(actifC - stocks, passifC);
   const liquiditeImmediate = lr(tresorerieActif, passifC);
   const autonomieFinanciere = lr(capPropres, totalPassif);
-  const endettementNet = lr(emprunts + concoursBancaires + autresPassifsNC, capPropres || 1);
+  const endettementNet = lr(emprunts + empruntsCourants + concoursBancaires + autresPassifsNC, capPropres || 1);
   const rentabiliteEconomique = lr(resultatExploitation, totalActif);
   const rentabiliteFinanciere = lr(resultatNet, capPropres || 1);
   const margeNette = lr(resultatNet, totalVentes || 1);
@@ -218,7 +218,7 @@ export function balancesToReports(accounts) {
       reserves, resultatsReportes, resultatExercice,
       autresCapitauxPropres,
       capPropres, passifNC, passifC, totalPassif,
-      emprunts, provisionsDettes, provisions,
+      emprunts, empruntsCourants, provisionsDettes, provisions,
       autresPassifsNC,
       fournisseurs, etatCredit, personnelCredit, autresDettes, concoursBancaires,
 

@@ -276,6 +276,7 @@ export function exportReportsPDF(reports) {
     { label: 'Personnel', val: fmtMdt($b('personnelCredit')), valN_1: bilanPrev ? fmtMdt($bp('personnelCredit')) : null, indent: 3 },
     { label: 'Autres dettes', val: fmtMdt($b('autresDettes')), valN_1: bilanPrev ? fmtMdt($bp('autresDettes')) : null, indent: 3 },
     { label: 'Concours bancaires', val: fmtMdt($b('concoursBancaires')), valN_1: bilanPrev ? fmtMdt($bp('concoursBancaires')) : null, indent: 3 },
+    { label: 'Emprunts courants', val: fmtMdt($b('empruntsCourants')), valN_1: bilanPrev ? fmtMdt($bp('empruntsCourants')) : null, indent: 3 },
   ]);
 
   // Aligned totals
@@ -701,6 +702,7 @@ export async function exportReportsExcel(reports) {
     ['Personnel', toMdt($b('personnelCredit')), hasPrev ? toMdt($bp('personnelCredit')) : null].filter(v => v !== null),
     ['Autres dettes', toMdt($b('autresDettes')), hasPrev ? toMdt($bp('autresDettes')) : null].filter(v => v !== null),
     ['Concours bancaires', toMdt($b('concoursBancaires')), hasPrev ? toMdt($bp('concoursBancaires')) : null].filter(v => v !== null),
+    ['Emprunts courants', toMdt($b('empruntsCourants')), hasPrev ? toMdt($bp('empruntsCourants')) : null].filter(v => v !== null),
     ['= TOTAL PASSIFS & CP', toMdt($b('totalPassif')), hasPrev ? toMdt($bp('totalPassif')) : null].filter(v => v !== null),
   ];
 
