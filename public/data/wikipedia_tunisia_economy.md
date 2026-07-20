@@ -38,7 +38,7 @@ in French
 Click [show] for important translation instructions.
 Consider
 adding a topic
-to this template: there are already 1,296 articles in the
+to this template: there are already 1,316 articles in the
 main category
 , and specifying
 |
@@ -456,7 +456,7 @@ The year 2015 was marked by terrorist attacks in Tunisia which are likely to aff
 ]
 Historical trend
 [
-edit
+edit source
 ]
 GDP per capita soared by more than 380% in the seventies (1970–1980: USD 280–1,369). But this proved unsustainable and it collapsed to a cumulative 10% growth in the turbulent eighties (1980–1990: USD 1,369–1,507), rising again to almost 50% cumulative growth in the nineties (1990–2000: USD 1,507–2,245), signifying the impact of successful diversification.
 [
@@ -856,7 +856,7 @@ n/a
 71.3%
 External trade and investment
 [
-edit
+edit source
 ]
 Tunisian exports in 2006
 In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for
@@ -908,7 +908,7 @@ Tunisia's exports to Libya, exceeding 18% growth between 2020 and 2024.
 ]
 Loan guarantee
 [
-edit
+edit source
 ]
 Source:
 [
@@ -945,7 +945,7 @@ Enda Tamweel has made over 3 million microloans to over 900,000 people in the 30
 ]
 Energy
 [
-edit
+edit source
 ]
 Main article:
 Energy in Tunisia
@@ -955,7 +955,7 @@ Tunisia's natural resources are modest when compared to those of its neighbors: 
 ]
 Electricity
 [
-edit
+edit source
 ]
 Production:
 16.13 Billion kWh (2011)
@@ -977,7 +977,7 @@ Imports:
 19 million kWh (2010)
 Economic structure
 [
-edit
+edit source
 ]
 In 2017, the breakdown by economic sector is as follows:
 Economy sector
@@ -993,7 +993,7 @@ Services
 %
 Agriculture
 [
-edit
+edit source
 ]
 Agriculture - products:
 olives
@@ -1069,7 +1069,7 @@ sugar beet
 ]
 See also
 [
-edit
+edit source
 ]
 Economy of Africa
 List of companies based in Tunisia
@@ -1079,7 +1079,7 @@ Africa
 Western Asia
 References
 [
-edit
+edit source
 ]
 ↑
 "World Economic Outlook Database, April 2019"
@@ -1456,7 +1456,7 @@ energypedia.info
 Tunisia production in 2018, by FAO
 External links
 [
-edit
+edit source
 ]
 Historic Growth Trend of Tunisia's Economy, 1962 – 2007
 Economy of Tunisia
@@ -1685,5 +1685,5 @@ Category
 WikiProject
 Commons
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1363294524
+https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1365003816
 "

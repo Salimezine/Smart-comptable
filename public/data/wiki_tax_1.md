@@ -1842,3 +1842,1657 @@ Search
 French protectorate of Tunisia
 38 languages
 Add topic
+
+---
+
+History of Tunisia under French rule - Wikipedia
+Jump to content
+Search
+Search
+History of Tunisia under French rule
+3 languages
+العربية
+Hausa
+Հայերեն
+Edit links
+From Wikipedia, the free encyclopedia
+This article is about the social history of Tunisia under the French. For the French administration, see
+French protectorate of Tunisia
+.
+Part of
+a series
+on the
+History of
+Tunisia
+Prehistoric
+Prehistory
+Ancient
+Carthage
+12th C.
+–
+146 BC
+1st Roman
+(
+Province
+)
+146 BC
+–
+435
+Vandal
+435
+–
+534
+2nd Roman (Byzantine)
+/
+Byzantine North Africa
+534
+–
+698
+Prefecture
+534
+–
+590
+Exarchate
+590
+–
+698
+Early Islamic
+Umayyad
+698
+–
+750
+Abbasid
+750
+–
+800
+Aghlabid
+800
+–
+909
+Fatimid
+909
+–
+973
+Medieval
+Zirid
+973
+–
+1148
+Norman
+1148
+–
+1160
+Almohad
+1160
+–
+1229
+Hafsid
+1229
+–
+1574
+Early modern
+Ottoman
+1574
+–
+1705
+Husainid
+1705
+–
+1881
+Modern
+French rule
+1881
+–
+1956
+Kingdom of Tunisia
+1956
+–
+1957
+Bourguiba rule
+1957
+–
+1987
+Ben Ali coup
+1987
+Ben Ali rule
+1987
+–
+2011
+Tunisian revolution
+2010
+–
+2011
+Political crisis
+2013
+–
+2014
+COVID-19 pandemic
+2020
+Saied self-coup
+2021
+Africa
+portal
+•
+History
+portal
+v
+t
+e
+The
+history of Tunisia under French rule
+began in 1881 with the establishment of the
+French protectorate
+and ended in 1956 with
+Tunisian independence
+. The
+French
+presence in
+Tunisia
+came five decades after their
+conquest
+and
+occupation of neighboring Algeria
+. Both of these lands had been associated with the
+Ottoman Empire
+for three centuries, yet each had long since attained political
+autonomy
+. Before the French arrived, the Bey of Tunisia had begun a process of modern reforms, but financial difficulties mounted, resulting in debt. A commission of European creditors then took over the finances. After the
+French conquest of Tunisia
+the French government assumed Tunisia's international obligations. Major developments and improvements were undertaken by the French in several areas, including
+transport
+and
+infrastructure
+,
+industry
+, the
+financial system
+,
+public health
+,
+administration
+, and
+education
+. Although these developments were welcome, nonetheless French businesses and citizens were clearly being favored over Tunisians. Their ancient national sense was early expressed in speech and in print; and then political organization occurred. The independence movement was already active before World War I, and continued to gain strength against mixed French opposition. Its ultimate aim was achieved in 1956.
+[
+1
+]
+[
+2
+]
+Beylical reform, debt
+[
+edit
+]
+Flag of the Bey of Tunis
+As the 19th century began, the
+Husaynid
+dynasty
+Bey
+remained
+hereditary
+rulers of the country. Since the early 18th century Tunisia had effectively been
+autonomous
+, although still 'officially' an
+Ottoman
+province. Commerce and
+trade
+with Europe increased dramatically following the
+Napoleonic Wars
+. Western merchants especially Italians arrived to establish businesses in the major cities.
+Italian
+farmers, tradesmen, and laborers also immigrated to Tunisia. Foreign influence grew with the rapid surge in contacts with Europe.
+[
+3
+]
+During the rule of
+Ahmad Bey
+(r.1837-1855) extensive modern reforms were initiated. Later, in 1861 Tunisia promulgated the first constitution in the Arab world. Yet the Tunisian drive toward modernizing the state and the economy met resistance. Reformers became frustrated by comfort-seeking insiders, political disorganization, regional discontent, and rural poverty. An 1864 revolt in the
+Sahil
+region was brutally put down. Later, after ineffective measures had failed, the leading reformer
+Khair al-Din
+(Khaïreddine) became chief minister 1873–1877, but he too eventually met defeat by wily conservative politicians.
+[
+4
+]
+European banks advanced funds to the Beylical government for modernizing projects, such as civil improvements, the military, public works, and development projects, but also they included money for the personal use of the Bey. The loans were frequently negotiated at unfavorable rates and terms. Repayment of the foreign debt eventually grew increasingly difficult to manage. In 1869, Tunisia declared itself
+bankrupt
+. A
+Commission Financière Internationale
+(International Financial Commission) was thereafter formed, whose representatives were led by
+France
+;
+Italy
+and
+Britain
+were also representatives. The commission took control over the Tunisian economy.
+[
+5
+]
+[
+6
+]
+[
+7
+]
+French regime
+[
+edit
+]
+Main article:
+French protectorate of Tunisia
+Establishment
+[
+edit
+]
+Initially, Italy was the European country most interested in incorporating Tunisia into its
+sphere of influence
+. Italy's strong motivation derived from the substantial number of expatriate citizens already resident there, with corresponding business investment, due to its close geography. Yet in the emerging national conscience of the newly unified (1861)
+Italian state
+, the establishment of a directly ruled colony did not then attract high-priority interest for the political agenda.
+[
+8
+]
+French possessions
+, 1920s, with the then protectorate in Tunisia
+France, whose possession of Algeria bordered Tunisia, and Britain, then possessing the tiny island of Malta lying off its coast, were also interested. Britain wanted to avoid a single power controlling both sides of the
+Strait of Sicily
+. During 1871–1878, France and Britain had been co-operating to foreclose Italian political influence. Yet more often these two countries were keen rivals. "For most of their tenure [both began in 1855], Richard Wood and
+Léon Roches
+, the consuls respectively of Britain and France, competed fiercely with each other to gain an economic or political edge in Tunisia."
+[
+9
+]
+The
+Congress of Berlin
+, held in 1878, convened to discuss the
+Ottoman Empire
+, the "sick man" of Europe, following its decisive
+defeat by Russia
+, with a focus on its remaining
+Balkan
+possessions. At the Congress, an informal understanding among the British, Germans, and French was reached,  assenting to France incorporating Tunisia, although the negotiations around this understanding were kept secret from the Italians at the time. The French Foreign Minister,
+William Waddington
+, discussed the matter extensively with Britain's
+Lord Salisbury
+, and
+Otto von Bismarck
+, while originally opposed, came to view Tunisia as an ideal distraction of the French away from continental Europe by the time of the Congress.
+[
+10
+]
+Italy was promised
+Tarabulus
+in what became Libya.
+[
+11
+]
+Britain
+supported French influence in Tunisia in exchange for its own protectorate over
+Cyprus
+(recently 'purchased' from the Ottomans),
+[
+12
+]
+and French cooperation regarding a
+nationalist revolt in Egypt
+.
+[
+13
+]
+[
+14
+]
+In the meantime, however, an Italian company apparently bought the
+Tunis-Goletta-Marsa
+rail line; yet French strategy worked to circumvent this and other issues created by the sizeable colony of
+Tunisian Italians
+. Direct attempts by the French to negotiate their entry into Tunisia with the Bey failed. France waited, searching to find reasons to justify the timing of a pre-emptive strike, now actively contemplated. Italians called the strike the
+Schiaffo di Tunisi
+.
+[
+15
+]
+Signing the
+Treaty of Bardo
+1881
+In northwest Tunisia the
+Khroumir
+tribe episodically launched raids into the surrounding countryside. In Spring of 1881 they raided across the border into French
+Algeria
+. France responded by invading Tunisia, sending in an army of about 36,000. Their advance to Tunis was rapidly executed. The Bey was soon compelled to come to terms with the French conquest of the country, in the first of a series of
+treaties
+. The documents provided that the Bey continue as head of state, but with the French given effective control over a great deal of Tunisian governance, in the form of the
+Protectorat français en Tunisie
+.
+[
+16
+]
+[
+17
+]
+With her own substantial interests in Tunisia, Italy protested but would not risk a confrontation with France. Hence Tunisia officially became a French
+protectorate
+on May 12, 1881, when the ruling
+Sadik Bey
+(1859–1882) signed at his palace the
+Treaty of Bardo
+(Al Qasr as Sa'id). Later in 1883 his younger brother and successor
+'Ali Bey
+signed the
+Conventions of La Marsa
+. Resistance by autonomous local forces in the south, encouraged by the Ottomans in
+Tarabulus
+, continued for half a year longer, with instability remaining for several years.
+[
+18
+]
+[
+19
+]
+[
+20
+]
+[
+21
+]
+Paul Cambon
+, the first Resident-Minister (after 1885 called the
+Resident-General
+) of the French Protectorate, arrived in early 1882. According to agreement he assumed the office of the Bey's foreign minister, while the general commanding French troops became the minister of war. Soon another Frenchman became director-general of finance.
+[
+22
+]
+Sadiq Bey died within a few months. Cambon wanted to demonstrate the complete disestablishment of Ottoman claims to suzerainty in Tunisia. The Ottomans beforehand agreed to acquiesce. Accordingly, Cambon designed and orchestrated the accession ceremony of 'Ali Bey (1882–1902). Cambon personally accompanying him from his La Marsa residence to the Bardo Palace where Cambon invested him as the new Bey in the name of France.
+[
+17
+]
+The French progressively assumed more of the important administrative positions. By 1884 they directed or supervised the Tunisian administration of government bureaus dealing with
+finance
+,
+post
+,
+education
+,
+telegraph
+,
+public works
+and
+agriculture
+. After deciding to guarantee the Tunisian state
+debt
+(chiefly to European investors), the Protectorate then abolished the international finance commission. French settlements in the country were being actively encouraged; the number of French colonists grew from 10,000 in 1891 to 46,000 in 1911, and then to a total of 144,000 in 1945.
+[
+23
+]
+[
+24
+]
+[
+25
+]
+Economic advance
+[
+edit
+]
+Modern Tunisia
+The
+transportation
+system was developed by the construction of
+railroads
+and highways, as well as sea ports. Already by 1884 the
+Compagnie du Bône-Guelma
+had built a rail line running from
+Tunis
+west 1,600
+km to Algiers, passing through the fertile
+Medje
+
+---
+
+La Marseillaise - Wikipedia
+Jump to content
+Search
+Search
+La Marseillaise
+101 languages
+Afrikaans
+Alemannisch
+العربية
+مصرى
+Asturianu
+Aymar aru
+Azərbaycanca
+Basa Bali
+Boarisch
+Беларуская
+Български
+বাংলা
+Brezhoneg
+Bosanski
+Català
+کوردی
+Čeština
+Чӑвашла
+Cymraeg
+Dansk
+Deutsch
+Dolnoserbski
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Français
+Galego
+עברית
+Hrvatski
+Hornjoserbsce
+Magyar
+Հայերեն
+Interlingua
+Bahasa Indonesia
+Íslenska
+Italiano
+日本語
+Jawa
+ქართული
+Қазақша
+한국어
+Къарачай-малкъар
+Ripoarisch
+Кыргызча
+Latina
+Lëtzebuergesch
+Лезги
+Lingua Franca Nova
+Lombard
+ລາວ
+Lietuvių
+Latviešu
+Македонски
+മലയാളം
+Монгол
+Кырык мары
+Bahasa Melayu
+မြန်မာဘာသာ
+Napulitano
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+ਪੰਜਾਬੀ
+Pälzisch
+Polski
+Português
+Rumantsch
+Română
+Русский
+Scots
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Soomaaliga
+Српски / srpski
+Svenska
+Ślůnski
+தமிழ்
+Tetun
+Тоҷикӣ
+ไทย
+Tagalog
+Türkçe
+Татарча / tatarça
+Українська
+Oʻzbekcha / ўзбекча
+Vèneto
+Tiếng Việt
+Volapük
+Walon
+吴语
+Yorùbá
+閩南語 / Bân-lâm-gí
+粵語
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+National anthem of France
+For other uses, see
+La Marseillaise (disambiguation)
+.
+"National anthem of New Caledonia" redirects here. For the officially-recognized anthem of New Caledonia, see
+Soyons unis, devenons frères
+.
+La Marseillaise
+English:
+The Song of Marseille
+The Marseillais volunteers departing
+, sculpted on the
+Arc de Triomphe
+National anthem of France
+Also known as
+«
+Chant de Guerre pour l'Armée du Rhin
+»
+(English:
+"War Song for the Army of the Rhine")
+Lyrics
+Claude Joseph Rouget de Lisle
+, 1792
+Music
+Claude Joseph Rouget de Lisle, 1792
+Adopted
+14 July 1795
+Readopted
+1879
+Relinquished
+1799
+Audio sample
+Instrumental rendition in
+A♭ major
+file
+help
+"
+La Marseillaise
+"
+[
+a
+]
+is the
+national anthem
+of
+France
+. It was written in 1792 by
+Claude Joseph Rouget de Lisle
+in
+Strasbourg
+after the
+First French Republic
+declared war against
+Austria
+, and was originally titled "
+Chant de Guerre pour l'Armée du Rhin
+" ("War Song for the
+Army of the Rhine
+").
+[
+b
+]
+The French
+National Convention
+adopted it as the
+First Republic
+'s anthem in 1795. The song acquired its nickname after being sung in
+Paris
+by
+Fédérés
+(volunteers) from
+Marseille
+marching to the capital. Its evocative melody and lyrics have led to its widespread use as a song of revolution and its incorporation into many pieces of classical and popular music.
+In 2013, the Italian violinist
+Guido Rimonda
+pointed out
+[
+1
+]
+that the
+incipit
+of
+Giovanni Battista Viotti
+'s "Tema e variazioni in Do maggiore"
+[
+2
+]
+strongly resembles the anthem.
+[
+3
+]
+[
+4
+]
+This incipit was first thought to have been published before "La Marseillaise", but that appears to be a misconception, as Viotti published several variations on "La Marseillaise" in 1795
+[
+5
+]
+and wrote as a note "I have never composed the quartets below" (
+Je n'ai jamais composé les quatuors ci dessous
+).
+[
+6
+]
+[
+7
+]
+[
+8
+]
+History
+[
+edit
+]
+Rouget de Lisle
+, composer of "La Marseillaise", sings the song for the first time at the home of Dietrich, Mayor of Strasbourg (1849 painting by
+Isidore Pils
+,
+Musée historique de Strasbourg
+).
+As the
+French Revolution
+continued, Europe's monarchies became concerned that revolutionary fervour would spread to their countries. The
+War of the First Coalition
+was an effort to stop the revolution, or at least restrict it to France. Initially, the French army did not distinguish itself, and Coalition armies invaded France. On 25 April 1792, Baron
+Philippe Friedrich Dietrich
+, the mayor of Strasbourg and
+Worshipful Master
+of the local
+Masonic lodge
+, asked his
+Freemason
+guest Rouget de Lisle to compose a song "that will rally our soldiers from all over to defend their homeland that is under threat".
+[
+9
+]
+[
+10
+]
+That evening, Rouget de Lisle wrote "
+Chant de guerre pour l'Armée du Rhin
+"
+[
+11
+]
+("War Song for the
+Army of the Rhine
+"), and dedicated the song to
+Marshal
+Nicolas Luckner
+, a
+Bavarian
+freemason in French service from
+Cham
+.
+[
+12
+]
+A plaque on the building on
+Place Broglie
+where De Dietrich's house once stood commemorates the event.
+[
+13
+]
+De Dietrich was executed the next year during the
+Reign of Terror
+.
+[
+14
+]
+The melody soon became the rallying call to the French Revolution and was adopted as "La Marseillaise" after the melody was first sung on the streets by volunteers (
+fédérés
+) from Marseille by the end of May. The
+fédérés
+entered Paris on 30 July 1792 after a young volunteer from
+Montpellier
+,
+François Mireur
+, had sung it at a patriotic gathering in Marseille, and the troops adopted it as the National Guard of Marseille's marching song.
+[
+11
+]
+The song quickly became a form of
+musical propaganda
+, spreading revolutionary ideals and uniting citizens through its patriotic lyrics and stirring melody. A newly qualified medical doctor, Mireur later became a general under
+Napoleon
+and died in
+Egypt
+at age 28.
+[
+15
+]
+[
+16
+]
+The song's lyrics reflect the invasion of France by foreign armies (from
+Prussia
+and Austria) that was under way when it was written. Strasbourg itself was attacked just a few days later. The invading forces were repulsed from France after their defeat in the
+Battle of Valmy
+. As the vast majority of
+Alsatians
+did not speak French
+, a German version ("Auf, Brüder, auf dem Tag entgegen") was published in October 1792 in
+Colmar
+.
+[
+17
+]
+Belgian singer
+Jean Noté
+singing "La Marseillaise" in 1907
+The Convention
+accepted it as the French national anthem in a decree passed on 14 July 1795, making it France's first anthem.
+[
+18
+]
+It lost this status under
+Napoleon I
+, and the song was banned outright by
+Louis XVIII
+and
+Charles X
+, being reinstated only briefly after the July Revolution of 1830.
+[
+19
+]
+During Napoleon I's reign,
+Veillons au salut de l'Empire
+was the regime's unofficial anthem, and under
+Napoleon III
+, it was "
+Partant pour la Syrie
+", but the government reinstated "La Marseillaise" in an attempt to motivate the French people during the
+Franco-Prussian War
+. During the 19th and early 20th centuries,
+La Marseillaise
+was recognised as the anthem of the international revolutionary movement; as such, it was adopted by the
+Paris Commune
+in 1871, albeit with new lyrics under the title "
+La Marseillaise de la Commune
+". It was reinstated as France's national anthem in 1879 and has remained so since.
+[
+19
+]
+The refrain is reminiscent of its time: simple lyrics in revolutionary songs allowed the general uneducated population to participate in the singing.
+[
+citation needed
+]
+Music
+[
+edit
+]
+Several musical antecedents have been cited for the melody:
+Tema e variazioni in Do maggiore
+, a work by the Italian violinist
+Giovanni Battista Viotti
+;
+[
+20
+]
+[
+21
+]
+the 1781 dating of the manuscript has been questioned,
+[
+22
+]
+but it seems to have been published after "La Marseillaise", in 1795.
+[
+23
+]
+[
+7
+]
+Mozart's
+Allegro maestoso
+from the
+Piano Concerto No. 25
+(composed in 1786).
+[
+24
+]
+The
+oratorio
+Esther
+by Jean Baptiste Lucien Grison (composed in 1787).
+[
+25
+]
+[
+26
+]
+Other attributions (the
+credo
+of the fourth
+Mass
+by Holtzmann of Mursberg)
+[
+27
+]
+have been refuted.
+[
+28
+]
+Lyrics
+[
+edit
+]
+Generally only the first verse is sung.
+French original
+[
+c
+]
+IPA transcription
+[
+d
+]
+English translation
+Allons enfants de la Patrie,
+Le jour de gloire est arrivé
+!
+Contre nous de la tyrannie
+𝄆
+L'étendard sanglant est levé,
+𝄇
+Entendez-vous dans les campagnes
+Mugir ces féroces soldats
+?
+Ils viennent jusque dans vos bras
+Égorger vos fils, vos compagnes
+!
+Refrain
+:
+𝄆
+Aux armes, citoyens,
+Formez vos bataillons,
+[
+e
+]
+Marchons, marchons
+!
+[
+f
+]
+Qu'un sang impur
+Abreuve nos sillons
+!
+𝄇
+Que veut cette horde d'esclaves,
+De traîtres, de rois conjurés
+?
+Pour qui ces ignobles entraves,
+𝄆
+Ces fers dès longtemps préparés
+?
+𝄇
+Français, pour nous, ah
+! quel outrage
+Quels transports il doit exciter!
+C'est nous qu'on ose méditer
+De rendre à l'antique esclavage
+!
+Refrain
+Quoi
+! des cohortes étrangères
+Feraient la loi dans nos foyers
+!
+Quoi
+! Ces phalanges mercenaires
+𝄆
+Terrasseraient nos fiers guerriers!
+𝄇
+Grand Dieu
+! Par des mains enchaînées
+Nos fronts sous le joug se ploieraient
+De vils despotes deviendraient
+Les maîtres de nos destinées
+!
+Refrain
+Tremblez, tyrans et vous perfides
+L'opprobre de tous les partis,
+Tremblez
+! vos projets parricides
+𝄆
+Vont enfin recevoir leurs prix
+!
+𝄇
+Tout est soldat pour vous combattre,
+S'ils tombent, nos jeunes héros,
+La terre en produit de nouveaux,
+Contre vous tout prêts à se battre
+!
+Refrain
+Français, en guerriers magnanimes,
+Portez ou retenez vos coups
+!
+Épargnez ces tristes victimes,
+𝄆
+À regret s'armant contre nous.
+𝄇
+Mais ces despotes sanguinaires,
+Mais ces complices de Bouillé,
+Tous ces tigres qui, sans pitié,
+Déchirent le sein de leur mère
+!
+Refrain
+Amour sacré de la Patrie,
+Conduis, soutiens nos bras vengeurs
+Liberté, Liberté chérie,
+𝄆
+Combats avec tes défenseurs
+!
+𝄇
+Sous nos drapeaux que la victoire
+Accoure à tes mâles accents,
+Que tes ennemis expirants
+Voient ton triomphe et notre gloire
+!
+Refrain
+Couplet des enfants
+:
+[
+g
+]
+Nous entrerons dans la carrière
+Quand nos aînés n'y seront plus,
+Nous y trouverons leur poussière
+𝄆
+Et la trace de leurs vertus
+𝄇
+Bien moins jaloux de leur survivre
+Que de partager leur cercueil,
+Nous aurons le sublime orgueil
+De les venger ou de les suivre.
+Refrain
+[a.lõ.z‿ɑ̃.fɑ̃ də la pa.tʁi.ə
+|
+]
+[lə ʒuʁ də glwaʁ ɛ.t‿a.ʁi.ve ‖]
+[kõ.tʁə nu də la ti.ʁa.ni.ə
+|
+]
+𝄆 [le.tɑ̃.daʁ sɑ̃.glɑ̃.t‿ɛ lə.ve ‖] 𝄇
+[ɑ̃.tɑ̃.de vu dɑ̃ le kɑ̃.pa.ɲə
+|
+]
+[my.ʒiʁ se fe.ʁɔ.sə sɔl.da ‖]
+[il vjɛ.nə ʒys.kə dɑ̃ vo bʁɑ
+|
+]
+[e.gɔʁ.ʒe vo fis vo kõ.pa.ɲə ‖]
+[ʁə.fʁɛ̃]:
+𝄆 [o.z‿aʁ.mə si.twa.jɛ̃
+|
+]
+[fɔʁ.me vo ba.ta.jõ
+|
+]
+[maʁ.ʃõ
+|
+maʁ.ʃõ ‖]
+[kœ̃ sɑ̃ ɛ̃.pyʁ
+|
+]
+[a.bʁœ.və no si.jõ ‖] 𝄇
+[kə vø sɛ.tə ɔʁ.də dɛs.kla.və
+|
+]
+[də tʁɛ.tʁə də ʁwa kõ.ʒy.ʁe ‖]
+[puʁ ki se.z‿i.ɲɔ.blə.z‿ɑ̃.tʁa.və
+|
+]
+𝄆 [se fεʁ de lõg.tɑ̃ pʁe.pa.ʁe ‖] 𝄇
+[fʁɑ̃.sɛ puʁ nu a kɛl u.tʁa.ʒə
+|
+]
+[kɛl tʁɑ̃s.pɔʁ.z‿il dwa.t‿ɛk.si.te ‖]
+[sɛ nu kõ.n‿o.zə me.di.te
+|
+]
+[də ʁɑ̃.dʁ‿a lɑ̃.tik ɛs.kla.va.ʒə ‖]
+[ʁə.fʁɛ̃]
+[kwa de ko.ɔʁ.tə.
+
+---
+
+Tunis - Wikipedia
+Jump to content
+Search
+Search
+Tunis
+157 languages
+Acèh
+Адыгабзэ
+Afrikaans
+Alemannisch
+አማርኛ
+Aragonés
+Ænglisc
+العربية
+ܐܪܡܝܐ
+الدارجة
+مصرى
+Asturianu
+Kotava
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Basa Bali
+Беларуская (тарашкевіца)
+Беларуская
+Български
+বাংলা
+བོད་ཡིག
+Brezhoneg
+Bosanski
+Català
+閩東語 / Mìng-dĕ̤ng-ngṳ̄
+Нохчийн
+Cebuano
+کوردی
+Čeština
+Чӑвашла
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+Estremeñu
+فارسی
+Suomi
+Français
+Arpetan
+Nordfriisk
+Frysk
+Gaeilge
+Gàidhlig
+Galego
+Hausa
+客家語 / Hak-kâ-ngî
+עברית
+हिन्दी
+Fiji Hindi
+Hrvatski
+Hornjoserbsce
+Kreyòl ayisyen
+Magyar
+Հայերեն
+Interlingua
+Bahasa Indonesia
+Interlingue
+Ido
+Íslenska
+Italiano
+日本語
+Jawa
+ქართული
+Taqbaylit
+Kabɩyɛ
+Kongo
+Kumoring
+Қазақша
+Yerwa Kanuri
+한국어
+Kurdî
+Latina
+Lëtzebuergesch
+Ligure
+Lombard
+Lietuvių
+Latviešu
+Мокшень
+Malagasy
+Minangkabau
+Македонски
+മലയാളം
+Монгол
+मराठी
+Кырык мары
+Bahasa Melayu
+Malti
+Эрзянь
+مازِرونی
+नेपाली
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+Ирон
+ਪੰਜਾਬੀ
+Papiamentu
+Picard
+Polski
+Piemontèis
+پنجابی
+پښتو
+Português
+Pinayuanan
+Runa Simi
+Română
+Русский
+Саха тыла
+Sardu
+Sicilianu
+Scots
+سنڌي
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Anarâškielâ
+ChiShona
+Soomaaliga
+Shqip
+Српски / srpski
+Svenska
+Kiswahili
+Ślůnski
+தமிழ்
+Тоҷикӣ
+ไทย
+Tagalog
+Tolışi
+Türkçe
+Татарча / tatarça
+Twi
+Удмурт
+ئۇيغۇرچە / Uyghurche
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+Vèneto
+Vepsän kel’
+Tiếng Việt
+Volapük
+Walon
+Winaray
+Wolof
+吴语
+მარგალური
+ייִדיש
+Yorùbá
+閩南語 / Bân-lâm-gí
+粵語
+中文
+IsiZulu
+Edit links
+Coordinates
+:
+36°48′23″N
+10°10′54″E
+﻿
+/
+﻿
+36.80639°N 10.18167°E
+﻿
+/
+36.80639; 10.18167
+From Wikipedia, the free encyclopedia
+Capital and largest city of Tunisia
+For other uses, see
+Tunis (disambiguation)
+.
+Capital city in Tunis Governorate, Tunisia
+Tunis
+تونس
+Capital city
+Medina Quarter
+Al-Zaytuna Mosque
+Dar Othman
+Baths of Antoninus
+Acropolium
+Bardo National Museum
+Avenue Habib Bourguiba
+Flag
+Coat of arms
+Tunis
+Location in
+Tunisia
+and
+Africa
+Show map of Tunisia
+Tunis
+Tunis (Mediterranean)
+Show map of Mediterranean
+Tunis
+Tunis (Africa)
+Show map of Africa
+Coordinates:
+36°48′23″N
+10°10′54″E
+﻿
+/
+﻿
+36.80639°N 10.18167°E
+﻿
+/
+36.80639; 10.18167
+Country
+Tunisia
+Governorate
+Tunis Governorate
+Delegation(s)
+El Bab Bhar, Bab Souika, Cité El Khadra, Djebel Jelloud, El Kabaria, El Menzah, El Omrane, El Omrane Superieur, El Ouardia, Ettahrir, Ezzouhour, Hraïria, Medina, Séjoumi, Sidi El Bechir
+Established
+698 AD
+Government
+•
+Mayor
+Imed Boukhris
+(
+Independent
+)
+Area
+[
+1
+]
+[
+citation needed
+]
+•
+Capital city
+212
+km
+2
+(82
+sq
+mi)
+•
+Metro
+2,668
+km
+2
+(1,030
+sq
+mi)
+Highest
+elevation
+41
+m (135
+ft)
+Lowest
+elevation
+4
+m (13
+ft)
+Population
+(2024-01-01)
+[
+1
+]
+•
+Capital city
+693,210
+•
+Rank
+1st
+•
+Density
+5,794/km
+2
+(15,010/sq
+mi)
+•
+Urban
+1,110,000
+•
+Metro
+2,885,040
+Demonym(s)
+Arabic
+:
+تونسي
+Tounsi
+French
+:
+Tunisois
+GDP (PPP, constant 2015 values)
+•
+Year
+2024
+•
+Total (Urban)
+$14.1
+billion
+[
+2
+]
+•
+Per capita
+$12,500
+Time zone
+UTC+01:00
+(
+Central European Time
+)
+•
+Summer (
+DST
+)
+(Not Observed)
+Postal code
+1xxx, 2xxx
+Calling code
+71
+ISO 3166 code
+TN-11
+,
+TN-12
+,
+TN-13
+and
+TN-14
+geoTLD
+.tn
+Website
+Official website
+Tunis
+(
+Arabic
+:
+تونس
+,
+Tūnis
+ⓘ
+) is the
+capital
+and largest city of
+Tunisia
+. The greater metropolitan area of Tunis, often referred to as "
+Grand Tunis
+", has about 2,700,000 inhabitants.
+As of 2020
+[
+update
+]
+, it is the third-largest city in the
+Maghreb
+region (after
+Casablanca
+and
+Algiers
+) and the
+fifteenth-largest
+in the
+Arab world
+.
+Situated on the
+Gulf of Tunis
+, behind the
+Lake of Tunis
+and the port of
+La Goulette
+(Ḥalq il-Wād), the city extends along the coastal plain and the hills that surround it. At its core lies the
+Medina
+, a
+World Heritage Site
+. East of the Medina, through the Sea Gate (also known as the
+Bab el Bhar
+and the
+Porte de France
+), begins the modern part of the city called "Ville Nouvelle", traversed by the grand
+Avenue Habib Bourguiba
+(often referred to by media and travel guides as "the Tunisian
+Champs-Élysées
+"), where the colonial-era buildings provide a clear contrast to smaller, older structures. Further east by the sea lie the suburbs of
+Carthage
+,
+La Marsa
+, and
+Sidi Bou Said
+.
+As the capital of the country, Tunis is the focus of Tunisian political and administrative life and also the center of the country's commercial and cultural activities.
+Etymology
+[
+edit
+]
+Tunis
+is the transcription of the
+Arabic
+name
+تونس
+which can be pronounced as "Tūnus", "Tūnas", or "Tūnis". All three variations were mentioned by the 12th-century
+Arab
+geographer
+Yaqut al-Hamawi
+in his
+Mu'jam al-Bûldan
+(
+Dictionary of Countries
+).
+Different explanations exist for the origin of the name
+Tunis
+. Some scholars relate it to the Carthaginian goddess
+Tanith
+('Tanit or Tanut), as many ancient cities were named after patron deities.
+[
+3
+]
+[
+4
+]
+Some scholars claim that it originated from
+Tynes
+, which was mentioned by
+Diodorus Siculus
+and
+Polybius
+in the course of descriptions of a location resembling present-day Al-Kasbah, Tunis's old Berber village.
+[
+5
+]
+[
+6
+]
+Another possibility is that it was derived from the
+Berber
+verbal root
+ens
+which means "to lie down" or "to pass the night".
+[
+7
+]
+[
+8
+]
+The term
+Tunis
+can possibly mean "camp at night", "camp", or "stop", or may have referred to as "the last stop before Carthage" by people who were journeying to Carthage by land. There are also some mentions in ancient Roman sources of such names of nearby towns as
+Thinisa in Numidia
+(now
+El Kala
+),
+Thunusuda
+(now
+Sidi-Meskin
+),
+Thinissut
+(now Bir Bouregba),
+Thunisa
+(now
+Ras Jebel
+) and
+Cartennae
+(now
+Ténès
+). As all of these Berber villages were situated on Roman roads, they undoubtedly served as rest-stations or stops.
+[
+9
+]
+History
+[
+edit
+]
+For a chronological guide, see
+Timeline of Tunis
+.
+Carthage and early settlements
+[
+edit
+]
+Main articles:
+Carthage
+,
+Ancient Carthage
+, and
+History of Carthage
+Ruins of the Roman
+Baths of Antoninus
+in Carthage.
+The historical study of Carthage is difficult. Because its culture and records were destroyed by the Romans at the end of the
+Third Punic War
+, very few Carthaginian
+primary historical sources
+survive. While there are a few ancient translations of
+Punic
+texts into Greek and
+Latin
+, as well as
+inscriptions on monuments and buildings discovered in Northwest Africa
+,
+[
+10
+]
+the main sources are
+Greek
+and
+Roman
+historians, including
+Livy
+,
+Polybius
+,
+Appian
+,
+Cornelius Nepos
+,
+Silius Italicus
+,
+Plutarch
+,
+Dio Cassius
+, and
+Herodotus
+. These writers belonged to peoples in competition, and often in conflict, with Carthage.
+[
+11
+]
+Greek cities contended with Carthage over
+Sicily
+,
+[
+12
+]
+and the
+Romans
+fought three wars
+against Carthage
+.
+[
+13
+]
+Not surprisingly, their accounts of Carthage are extremely hostile; while there were a few Greek authors who took a favourable view, these works have been lost.
+[
+11
+]
+The area was originally a Berber settlement.
+[
+14
+]
+The existence of settlements in and around the area of Tunis is attested by sources dating from the 4th century BC.
+[
+15
+]
+Situated on a hill, its location served as an excellent point from which the comings and goings of naval and caravan traffic to and from Carthage could be observed. It was one of the first towns in the region to fall under Carthaginian control, and in the centuries that followed the settlement was mentioned in the military histories associated with
+Carthage
+. Thus, during Agathocles' expedition, which landed at
+Cape Bon
+in 310 BC, the town changed hands on various occasions.
+[
+citation needed
+]
+During the
+Mercenary War
+, it is possible that the town served as a center for the native population of the area,
+[
+15
+]
+and that its population was mainly composed of peasants, fishermen, and craftsmen. Compared to the ancient ruins of Carthage, the town's ancient ruins are not as large. According to
+Strabo
+, it was destroyed by the Romans in 146 BC during the
+Third Punic War
+. Both the town and Carthage were destroyed; the former, however, was rebuilt first
+[
+16
+]
+under the rule of
+Augustus
+and became an important town under Roman control and the center of a booming agricultural industry. The township is mentioned as
+Thuni
+in the
+Tabula Peutingeriana
+.
+[
+16
+]
+In the system of Roman roads for the
+Roman province of Africa
+, the town had the title of
+mutatio
+("way station, resting place").
+[
+16
+]
+The borough, increasingly Romanized, was also eventually Christianized and became the seat of a
+bishop
+. However, it remained modestly sized compared to Carthage during this time.
+[
+17
+]
+Foundation and early Islamic period
+[
+edit
+]
+Courtyard of
+Zaytuna Mosque
+, founded in the late 7th century by the Umayyad dynasty
+In the late 7th century, the Arab Muslims conquered the region, and in 698 a commune and a mosque were established at the outskirts of the ancient ruins, founded by
+Hassan ibn al-Nu'man
+, which would become the city of Tunis and the
+Zaytuna Mosque
+.
+[
+18
+]
+The
+Medina of Tunis
+, the oldest section of the city, dates from this period, during which the region was conquered by the
+Umayyad Caliphate
+. The city had the natural advantage of coastal access, via the
+Mediterranean
+, to the major ports of southern Europe. Early on, Tunis played a military role; the Umayyads recognized the strategic importance of its proximity to the
+Strait of Sicily
+, with a dockyard built upon the founding of the city by order of Caliph
+Abd al-Malik
+. From the beginning of the 8th century, Tunis was the
+administrative center
+of the area: it became the Umayyad, and later the
+Abbasids
+'
+naval
+base in the western
+Mediterranean Sea
+, and took on considerable military importance.
+[
+17
+]
+Under the
+Aghlabids
+, the city gained significance and benefited from economic improvements and became one of the most important in the caliphate,
+[
+17
+]
+and was briefly the national capital from the end of the reign of
+Ibrahim II
+, from 902 until 909,
+[
+19
+]
+when control over
+Ifriqiya
+was handed to the newly founded
+Fatimid Caliphate
+.
+Local opposition to the authorities began to intensify in September

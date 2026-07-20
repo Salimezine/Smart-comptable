@@ -1,3703 +1,1146 @@
-History of the Jews in Tunisia - Wikipedia
+Economy of Tunisia - Wikipedia
 Jump to content
 Search
 Search
-History of the Jews in Tunisia
-11 languages
+Economy of Tunisia
+23 languages
 العربية
-Čeština
+Asturianu
+Беларуская
+Català
+کوردی
 Deutsch
-Suomi
+Español
+فارسی
 Français
+Galego
 עברית
+Հայերեն
 Bahasa Indonesia
+Ido
 Italiano
-Ladino
+한국어
+Lietuvių
+Bahasa Melayu
+Occitan
 Português
+Русский
 Türkçe
+Українська
 Edit links
 From Wikipedia, the free encyclopedia
-Ethnic group
-Tunisian Jews
-יהדות תוניסיה
-‎
-Jews of Tunis,
-c.
-1900
-Total population
-50,000–300,000
-Regions with significant populations
-Israel,
-Tunisia
-, United States, Canada, France
-Languages
-Hebrew
-,
-Arabic
-,
-Judeo-Tunisian Arabic
-, English, French,
-Berber
-Religion
-Judaism
-Related ethnic groups
-Jews,
-Maghrebi Jews
-,
-Mizrahi Jews
-The location of
-Tunisia
-in Africa
-Part of
-a series
-on
-Jews
+This article has multiple issues.
+Please help
+improve it
+or discuss these issues on the
+talk page
+.
+(
+Learn how and when to remove these messages
+)
+This article needs to be
+updated
+.
+Please help update this article to reflect recent events or newly available information.
+(
+July 2022
+)
+This article
+has an unclear
+citation style
+.
+The references used may be made clearer with a different or consistent style of
+citation
 and
-Judaism
-Etymology
-Who is a Jew?
-Jewish studies
-Religion
-God in Judaism
+footnoting
+.
 (
-names
+July 2022
 )
-Principles of faith
-Mitzvot
 (
-613
+Learn how and when to remove this message
 )
-Halakha
-Shabbat
-Holidays
-Prayer
-Tzedakah
-Land
-of Israel
-Brit
-Bar
-and bat mitzvah
-Marriage
-Bereavement
-Baal teshuva
-Philosophy
-Ethics
-Kabbalah
-Messiah
-Claimants
-Customs
-Rites
-Synagogue
-Rabbi
-Texts
-Tanakh
-Torah
-Nevi'im
-Ketuvim
-Talmud
-Mishnah
-Gemara
-Rabbinic
-Midrash
-Tosefta
-Targum
-Beit Yosef
-Mishneh Torah
-Tur
-Shulchan Aruch
-Zohar
-History
-General
-Timeline
-Land of Israel
-Name "Judea"
-Historical population
-History of Israel
-Modern historiography
-Leaders
-Antisemitism
-Anti-Judaism
-Persecution
-Ancient Israel and Judah
-Twelve Tribes of Israel
-Israelites
-Kingdom
-of Judah
-Kingdom of Israel
-Jerusalem
+You can help
+expand this article with text translated from
+the corresponding article
+in French
+.
+(April 2026)
+Click [show] for important translation instructions.
+Consider
+adding a topic
+to this template: there are already 1,316 articles in the
+main category
+, and specifying
+|
+topic
+=
+will aid in categorization.
+Do not translate text that appears unreliable or low-quality. If possible, verify the text with references provided in the foreign-language article.
+You
+must
+provide
+copyright attribution
+in the
+edit summary
+accompanying your translation by providing an
+interlanguage link
+to the source of your translation. A model attribution edit summary is
+Content in this edit is translated from the existing French Wikipedia article at [[:Fr:Économie de la Tunisie]]; see its history for attribution.
+You may also add the template
+{{Translated|Fr|Économie de la Tunisie}}
+to the
+talk page
+.
+For more guidance, see
+Wikipedia:Translation
+.
 (
-in
-Judaism
-timeline
+Learn how and when to remove this message
 )
-Temple
-in Jerusalem
-(
-First
-Second
-)
-Assyrian captivity
-Babylonian captivity
-Second Temple period
-Yehud
-Maccabean Revolt
-Hasmonean dynasty
-Sanhedrin
-Schisms
-(
-Pharisees
-,
-Sadducees
-,
-Essenes
-,
-Zealots
-,
-Sicarii
-)
-Second Temple Judaism
-(
-Hellenistic Judaism
-)
-Jewish–Roman wars
-Great Revolt
-Provisional government
-Diaspora Revolt
-Bar Kokhba Revolt
-Rabbinic period
-and Middle Ages
-Rabbinic Judaism
-History of the Jews in the Byzantine Empire
-Christianity
-and Judaism
-(
-Jews and Christmas
-)
-Hinduism
-and Judaism
-Islamic–Jewish
-relations
-Middle Ages
-Golden Age
-Expulsion from Spain
-Modern era
-Haskalah
-Sabbateans
-Hasidism
-Jewish atheism
-Emancipation
-Old Yishuv
-Zionism
-Soviet Union
-The Holocaust
-State of Israel
-History
-Arab–Israeli
-conflict
-Communities
-Ashkenazim
-Galician
-Litvak
-Mizrahim
-Sephardim
-Teimanim (Yemenite Jews)
-Beta Israel
-Gruzinim (Georgian Jews)
-Juhurim (Mountain Jews)
-Bukharim
-Italkim
-Romanyotim
-Cochinim
-Bene Israel
-Berber
-Crimean Karaites
-Krymchaks
-Kaifeng Jews
-Related groups
-Bnei Anusim
-Lemba
-Igbo Jews
-Samaritans
-Crypto-Jews
-Anusim
-Dönmeh
-Marranos
-Neofiti
-Xueta
-Mosaic Arabs
-Subbotniks
-Noahides
-Population
-Judaism by country
-Lists of Jews
-Diaspora
-Historical population by country
-Population by city
-Genetic studies
-Peoplehood
-Israel
-and
-Palestine
-Old Yishuv
-New Yishuv
-Israeli Jews
-Palestinian Jews
-Africa
-Algeria
-Angola
-Botswana
-Cameroon
-Cape Verde
-Benin
-Democratic Republic of the Congo
-Djibouti
-Egypt
-Ethiopia
-Beta Israel
-Eritrea
-Eswatini
-Gabon
-Gambia
-Ghana
-Guinea
-Guinea-Bissau
-Ivory Coast
-Kenya
-Libya
-Madagascar
-Malawi
-Mali
-Mauritius
-Morocco
-Mozambique
-Namibia
-Nigeria
-Igbo
-Republic of the Congo
-São Tomé and Príncipe
-Sierra Leone
-Somalia
-South Africa
-Sudan
-Tanzania
+Economy of
 Tunisia
-Uganda
-Abayudaya
-West Africa
-Zambia
-Zimbabwe
-Asia
-Afghanistan
-Armenia
-Azerbaijan
-Bahrain
-Cambodia
-China
-Georgia
-Hong Kong
-India
-Indonesia
-Iran
-Iraq
-Israel
-Japan
-Jordan
-Kazakhstan
-Kurdistan
-Kuwait
-Kyrgyzstan
-Lebanon
-Malaysia
-Mongolia
-Myanmar
-Nepal
-Oman
-Pakistan
-Philippines
-Qatar
-Saudi Arabia
-South Korea
-Singapore
-Sri Lanka
-Syria
-Tajikistan
-Taiwan
-Thailand
-Turkey
-United Arab Emirates
-Uzbekistan
-Vietnam
-Yemen
-Europe
-Albania
-Austria
-Belarus
-Belgium
-Bosnia and Herzegovina
-Bulgaria
-Croatia
-Cyprus
-Czechia
-Denmark
-Estonia
-Finland
-France
-Germany
-Greece
-Romaniote
-Hungary
-Iceland
-Ireland
-Italy
-Italkim
-Latvia
-Liechtenstein
-Lithuania
-Luxembourg
-Moldova
-Montenegro
-Netherlands
-North Macedonia
-Norway
-Poland
-Portugal
-Romania
-Russia
-Soviet Union
-Serbia
-Slovakia
-Slovenia
-Spain
-Sephardic
-Sweden
-Switzerland
-Ukraine
-United Kingdom
-England
-Scotland
-Wales
-Northern America
-Canada
-Greenland
-United States
-Latin America and Caribbean
-Argentina
-Bolivia
-Brazil
-Chile
-Colombia
-Costa Rica
-Cuba
-Dominican Republic
-Ecuador
-El
-Salvador
-Guatemala
-Guyana
-Haiti
-Honduras
-Jamaica
-Mexico
-Nicaragua
-Panama
-Paraguay
-Peru
-Puerto Rico
-Suriname
-Uruguay
-Venezuela
-Oceania
-Australia
-Fiji
-Guam
-New
-Zealand
-Palau
-Denominations
-Orthodox
-Modern
-Haredi
-Hasidic
-Reform
-Conservative
-Karaite
-Reconstructionist
-Renewal
-Science
-Haymanot
-Humanistic
-Culture
-Customs
-Minyan
-Wedding
-Clothing
-Niddah
-Pidyon haben
-Kashrut
-Shidduch
-Zeved habat
-Conversion
-to Judaism
-Aliyah
-Hiloni
-Music
-Religious
-Secular
-Art
-Ancient
-Yiddish theatre
-Dance
-Humour
-Cuisine
-American
-Ashkenazi
-Bukharan
-Ethiopian
-Israeli
-Israelite
-Mizrahi
-Sephardic
-Literature
-Israeli
-Yiddish
-Judeo-Tat
-American
-Surnames
-Ashkenazi
-Mizrahi
-Sephardic
-Languages
-Hebrew
-Biblical
-Mishnaic
-Medieval
-Modern
-Bukharian
-Ghardaïa Sign
-Jewish Koine Greek
-Judeo-Arabic
-Judeo-Aramaic
-Judeo-Berber
-Judeo-Gascon
-Judaeo-Georgian
-Judaeo-Iranian
-Judeo-Italian
-Judeo-Malayalam
-Judaeo-Spanish
-Judeo-Tat
-Knaanic
-Shassi
-Yeshivish
-Yevanic
-Yiddish
-Zarphatic
-Politics
-Jewish political movements
-Autonomism
-Bundism
-Feminism
-Leftism
-Secularism
-Territorialism
-World Agudath Israel
-Zionism
-General
-Green
-Labor
-Kahanism
-Maximalism
-Neo-Zionism
-Religious
-Revisionist
-Post-Zionism
-Category
-Portal
-v
-t
-e
-The
-history of the Jews in Tunisia
-dates back nearly two thousand years to the
-Punic era
-. The Jewish community of
-Tunisia
-grew following successive waves of immigration and proselytism
+Amen Bank, one of the biggest banks in the country
+Currency
+Tunisian dinar
+(TND,
+د.ت
+)
+Fiscal year
+Calendar year
+Trade organisations
+African Union
+,
+AfCFTA
+(signed),
+WTO
+,
+COMESA
+,
+CEN-SAD
+,
+AMU
+Country group
+Developing/Emerging
 [
 1
 ]
-before its development was hampered by the imposition of anti-Jewish measures in the
-Byzantine Empire
-in late antiquity. After the
-Muslim conquest of Tunisia
-, Tunisian Jews experienced periods of relative freedom or cultural apogee
+Lower-middle income economy
 [
 2
 ]
-which were followed by periods of more marked discrimination and persecution.
+Statistics
+Population
+12,386,642 (2025)
 [
 3
 ]
-Under Muslim rule, Jews were granted legal status as
-dhimmi
-, which legally assured protections of life, property, and freedom of religion, but imposed an increased
-tax burden
-on them. The community developed
-its own dialect of Arabic
-, but the use of Judeo-Tunisian Arabic has declined due to the community's relocation from Tunisia.
+GDP
+$60.43 billion (nominal est, 2026)
 [
 4
 ]
-The arrival of Jews expelled from the
-Iberian Peninsula
-, often through
-Livorno
-, greatly influenced the community's composition, inter-group relations, and customs.
-The economic, social and cultural position of the community was significantly compromised during the
-Second World War
-due to the occupation of the
-French protectorate of Tunisia
-by the
-Axis powers
-.
+$193.55 billion (
+PPP
+, 2026)
+[
+4
+]
+GDP rank
+89st (nominal, 2026)
+84st (PPP, 2026)
+GDP growth
+2.5%
+(2025)
+2.1%
+(2026e)
+1.6%
+(2027f)
+[
+4
+]
+GDP per capita
+$4,826 (nominal, est, 2026)
+[
+4
+]
+$15,456 (PPP, 2026)
+[
+4
+]
+GDP per capita
+rank
+123st (nominal, 2026)
+112st (PPP, 2026)
+GDP by sector
+agriculture
+:
+10.05%
+industry
+:
+21.69%
+services
+:
+68.26%
+(2020)
 [
 5
 ]
-The
-Israeli Declaration of Independence
-in 1948 and the ensuing
-1948 Arab–Israeli War
-provoked a widespread
-antisemitic
-backlash in the
-Arab world
-, to which was added nationalist agitation, the nationalization of enterprises, the
-Arabization
-of education and the Arabization of part of the administration.   Prior to Tunisian independence in 1956, the Jewish population was estimated at 105,000 individuals.
-[
-6
-]
-These Jews lived mainly in Tunis, with communities also present on the island of
-Djerba
-.
-Jews left Tunisia en masse
-in subsequent years due notably to the
-Bizerte crisis
-in 1961 and the
-Six-Day War
-in 1967.
-[
-7
-]
-The population had declined to 1500 by 2017.
-[
-8
-]
-The
-Jewish diaspora
-of Tunisia is divided between Israel and France, where it has preserved its community identity through its traditions, mostly dependent on
-Sephardic law and customs
-, but retaining its own specific characteristics.
-[
-9
-]
-Djerbian Judaism in particular is considered to be more faithful to tradition because it remained outside the sphere of influence of the modernist currents.
-[
-10
-]
-The Tunisian Jews who have
-relocated to Israel
-have
-switched
-to using Hebrew as their
-home language
-.
+Inflation
+(
+CPI
+)
+6.53% (2022 est.)
 [
 4
 ]
-Tunisian Jews living in France
-typically use French as their first language, while the few still left in Tunisia tend to use either French or Judeo-Tunisian Arabic in their everyday lives.
+[
+6
+]
+Population below national
+poverty line
+15.2% (2015)
+[
+7
+]
+17.5% on less than $5.50/day (2015)
+[
+8
+]
+Gini coefficient
+32.8
+medium
+(2015)
+[
+9
+]
+Human Development Index
+0.746
+high
+(2023)
+[
+10
+]
+(
+105th
+)
+0.595
+medium
+IHDI
+(2023)
 [
 11
 ]
-Historiography
-[
-edit
-]
-Further information:
-History of the Jews in Carthage
-and
-History of the Jews in Kairouan
-The history of the Jews of Tunisia (until the establishment of the French protectorate) was first studied by
-David Cazès
-in 1888 in his
-Essay on the History of the Israelites of Tunisia
-,
-André Chouraqui
-(1952), and later by Haim Zeev Hirschberg (1965),
+Labour force
+4,246,885 (2024)
 [
 12
 ]
-in the more general context of North African Judaism.
+36% employment rate (2024)
 [
 13
 ]
-The research on the subject was then enriched by Robert Attal and Yitzhak Avrahami. In addition, various institutions, including the
-Israel Folktale Archives in University of Haifa
-, the
-Hebrew University of Jerusalem
-, and the
-Ben Zvi Institute
-, have collected material evidence (traditional clothing, embroidery, lace, jewelry, etc.), traditions (folk tales, liturgical songs, etc.), and manuscripts as well as Judeo-Arabic books and newspapers.
+Labour force by occupation
+agriculture
+: 14.8%
+industry
+: 33.2%
+services
+: 51.7%
+(2014 est.)
+[
+5
+]
+Unemployment
+16.2% (2024)
 [
 14
 ]
-Paul Sebag is the first to provide in his 1991 book
-History of the Jews of Tunisia: from origins to our days
-a first development entirely devoted to the history of this community.
+Youth unemployment
+38.1% (2025)
 [
 15
 ]
+Average net salary
+$360 monthly (2023)
 [
 16
 ]
-In Tunisia, following the thesis of Abdelkrim Allagui, a group under the direction of Habib Kazdaghli and Abdelhamid Largueche brought the subject into the field of national academic research. Founded in Paris on June 3, 1997, the Society of Jewish History of Tunisia contributes to the research on the Jews of Tunisia and transmits their history through conferences, symposia and exhibitions.
-[
-citation needed
-]
-According to
-Michel Abitbol
-, the study of Judaism in Tunisia has grown rapidly during the progressive dissolution of the Jewish community in the context of decolonization and the evolution of the Arab-Israeli conflict while Habib Kazdaghli believes that the departure of the Jewish community is the cause of the low number of studies which are relevant to the topic.
+Main industries
+petroleum
+,
+mining
+(particularly
+phosphate
+,
+iron ore
+),
+tourism
+,
+textile
+,
+footwear
+,
+agriculture
+,
+beverages
+,
+olive oil
+External
+Exports
+$23.3 billion USD (2024)
 [
 17
 ]
-Kazdaghli, however, points out that the publication of them has increased since the 1990s, due to their authors' attachment to this community, and the belief that the Jews originated in one or another community (Ariana, Bizerte, etc.) or the belief that they originated in multiple Tunisian communities. As for the fate of the Jewish community during the period of the German occupation of Tunisia (1942–1943), it remains relatively unknown, and during the Symposium on the Jewish Community of Tunisia which was held at
-Manouba University
-in February 1998 (the first of its kind on this research theme), it was not mentioned.
+Export goods
+clothing, semi-finished goods and textiles, agricultural products, mechanical goods, phosphates and chemicals, hydrocarbons, electrical equipment
+Main export partners
+EU
+70.17%
+France
+23.2%
+Italy
+16.6%
+Germany
+13.4%
+Spain
+4.75%
+Poland
+1.76%
+United States
+4.69%
+Libya
+3.38%
+United Kingdom
+2.79%
+Algeria
+2.34%
+China
+1.80% (2024)
+[
+17
+]
+Imports
+$26.4 billion USD (2024)
 [
 18
 ]
-However, the work of memory of the community exists, with the testimonies of Robert Borgel and Paul Ghez, the novels
-The Statue of Salt
-by
-Albert Memmi
-and
-Villa Jasmin
-by
-Serge Moati
-, as well as the works of some historians.
+Import goods
+textiles, machinery and equipment, hydrocarbons, chemicals, foodstuffs
+Main import partners
+EU
+47.87%
+France
+12.6%
+Italy
+12.3%
+Germany
+7.77%
+Spain
+3.93%
+Greece
+1.66%
+China
+11.4%
+Algeria
+7.39%
+Russia
+6.65%
+Turkey
+4.59%
+United States
+2.38% (2024)
 [
 18
 ]
-Antiquity
+FDI
+stock
+$37.95 billion (31 December 2017 est.)
 [
-edit
+5
 ]
-Hypothetical origins
+Abroad: $285 million (31 December 2017 est.)
 [
-edit
+5
 ]
-Presently, the earliest verifiable record of the presence in Jews in Tunisia is from the second century. However, there are other, mostly speculative, ideas about when Jews first arrived in the land which is presently known as Tunisia:
-Date palm
-,
-Byzantine mosaic
-from the
-Roman synagogue of Naro
-in
-Hammam Lif
-, 6th century CE,
-Brooklyn Museum
-(New York).
-View of Jerusalem and the Temple of Solomon by
-Hartmann Schedel
-Some historians, such as David Cazès,
-Nahum Slouschz
-, and
-Alfred Louis Delattre
-, suggest, based on the biblical description of close maritime trade relations between
-Hiram I
-(ruler of the Phoenician city of
-Tyre
-) and
-Solomon
-(king of Israel), that Israelites may have been among the founders of Phoenician trading posts, including
-Carthage
-in
-814 BCE
-.
+Current account
+−$2.690 billion (2019)
+Gross
+external debt
+$30.19 billion (31 December 2017 est.)
+[
+5
+]
+Public finance
+Government debt
+70.3% of GDP (2017 est.)
+[
+5
+]
+Foreign reserves
+$8.5 billion (23 December 2023 est.)
+[
+5
+]
+Budget balance
+−5.8% (of GDP) (2017 est.)
+[
+5
+]
+Revenue
+10.957 billion (2022 est.)
+[
+5
+]
+Spending
+12.523 billion (2022 est.)
+[
+5
+]
+Credit rating
+Standard & Poor's
+:
 [
 19
 ]
-Josephus
-claims that the arrival of the first Jews in North Africa dates back to the 4th century BCE, during the reign of the
-Ptolemaic kings
-of
-Egypt
-, who recruited Jewish
-mercenaries
-from
-Alexandria
-in an attempt to reinforce Greek garrisons in
-Cyprus
-and
-Cyrenaica
-. These mercenaries formed the first North African communities, later strengthened by exiles from
-Judea
-following the
-destruction of the Second Temple
-in
-70 CE
-.
 [
 20
 ]
-According to one of the founding legends of the Jewish community of Djerba, transcribed for the first time in 1849, the
-Kohens
-(members of the Jewish priestly class) settled in present-day Tunisia after the destruction of the
-Solomon's Temple
-by the Emperor
-Nebuchadnezzar II
-in 586 BC.
+BBB (Domestic)
+BBB- (Foreign)
+BBB (T&C Assessment)
+Outlook: Negative
+Moody's
+:
+[
+20
+]
+Baa3
+Outlook: Negative
+Fitch
+:
+[
+20
+]
+BBB
+Outlook: Negative
+All values, unless otherwise stated, are in
+US dollars
+.
+Tunisia
+is considered a
+developing economy
+, classified as a Lower-middle Income country by the World Bank in 2023.
 [
 21
 ]
-They carried away a vestige of the destroyed Temple, believed to be a door, preserved it in the
-El Ghriba synagogue
-in Djerba, and turned it into a place of
-pilgrimage
-and veneration to the present day.
+In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but
+backsliding
+and increasing terrorist attacks made it lose this status in 2015.
 [
 22
 ]
-It is probable that these Israelites would have assimilated into the Punic population and offered sacrifices to its divinities, like
-Baal
-and
-Tanit
-.  Thereafter, Jews from
-Alexandria
-or
-Cyrene
-could have settled in Carthage following the
-Hellenization
-of the eastern part of the
-Mediterranean Basin
-. The cultural context allowed them to practice Judaism more in keeping with ancestral traditions.  Small Jewish communities existed in the later days of Punic domination over North Africa, without it being possible to say whether they developed or disappeared later.
-Jews had, in any case, settled in the new
-Roman province of Africa
-, and enjoyed the favors of
-Julius Caesar
-. The latter, in recognition of the support of
-King Antipater
-in his struggle against
-Pompey
-, recognized Judaism and the status of
-religio licita
-, and, according to Josephus, granted the Jews a privileged status under the
-Roman Empire
+Liberalisation
+efforts started in 1986 after three decades of
+dirigisme
+and state control of the economy. From the 1st of January 2008 onwards, the country opened up to international trade with the adoption of the
+free trade agreement
+with the
+European Union
+in 1995, a process which increased in scale after the 2011
+Arab Spring
+and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.
+Tunisia's economic growth has depended on
+oil
+,
+phosphates
+,
+agri-food products
+,
+car parts manufacturing
+, and
+tourism
 .
+Compared to other countries in the
+Maghreb
+region (
+Algeria
+and
+Morocco
+), Tunisia placed second in GDP per capita and total development until 2022, but now places third.
 [
 23
 ]
-These Jews were joined by Jewish pilgrims, expelled from Rome for proselytizing, 20 by a number of defeated in the
-First Jewish–Roman War
-, deported and
-resold as slaves
-in North Africa, and also by Jews fleeing the repression of revolts in
-Cyrenaica
-and
-Judea
-under the reigns of the emperors
-Domitian
-,
-Trajan
-, and
-Hadrian
-. According to Josephus, the Romans deported 30,000 Jews to Carthage from Judea after the First Jewish-Roman War.
+In the 2007
+World Economic Forum
+meeting on
+Africa
+(13th to 15th June 2007), Tunisia was recognised as the most
+competitive
+economy in Africa, and the 29th out of 128 at the global level (from 30th in 2006).
 [
 24
 ]
-It is very likely that these Jews founded communities on the territory of present-day Tunisia.
-[
-citation needed
-]
-A traditional account of the history of the descendants of the first Jewish settlers states that their ancestors settled in that part of North Africa long before the destruction of the
-First Temple
-in the 6th century BCE. After the fall of the
-Second Temple
-, many exiled Jews settled in Tunis and engaged in agriculture, cattle-raising, and trade. They were divided into clans which were governed by their respective heads (
-mokdem
-), and they had to pay the
-Romans
-a
-capitation tax
-of 2
-shekels
-. Under the dominion of the Romans and (after 429) of the fairly tolerant
-Vandals
-, the Jews of Tunis increased and prospered to such a degree that
-early African church
-councils deemed it necessary to enact restrictive laws against them.
-Al-Qayrawani
-wrote that at the time of the conquest of
-Hippo Zaritus
-(present-day Bizerte) by
-Hasan ibn al-Nu'man
-in 698, the governor of that district was a Jew.
-[
-citation needed
-]
-When Tunis came under the dominion of the
-Arabs
-, or of the Arabian
-caliphate
-of
-Baghdad
-, another influx of Arabic-speaking Jews from the
-Levant
-into Tunis took place.
-[
-citation needed
-]
-Genetic studies of Jews in Tunisia
-[
-edit
-]
-Main article:
-Genetic studies on Jews
-Numerous studies have been conducted on the genetics of Jews in general, on North African Jews in particular, and specifically on Jews of Tunisian origin.
+The year 2015 was marked by terrorist attacks in Tunisia which are likely to affect economic growth, especially in tourism, one of the main sectors.
 [
 25
 ]
+Historical trend
+[
+edit source
+]
+GDP per capita soared by more than 380% in the seventies (1970–1980: USD 280–1,369). But this proved unsustainable and it collapsed to a cumulative 10% growth in the turbulent eighties (1980–1990: USD 1,369–1,507), rising again to almost 50% cumulative growth in the nineties (1990–2000: USD 1,507–2,245), signifying the impact of successful diversification.
 [
 26
 ]
+Olive grove in
+Sfax
+, Tunisia
+Growing
+foreign debt
+and the
+foreign exchange
+crisis in the mid-1980s led the government to launch a
+structural adjustment
+program to liberalize prices, reduce
+tariffs
+, and reorient Tunisia toward a
+market economy
+in 1986. Tunisia's economic reform program was lauded as a model by
+international financial institutions
+. The government liberalized prices, reduced tariffs, lowered debt-service-to-exports and debt-to-
+GDP
+ratios, and extended the average maturity of its $10 billion foreign debt. Structural adjustment brought additional lending from the
+World Bank
+and other Western creditors. In 1990, Tunisia acceded to the
+General Agreement on Tariffs and Trade
+(GATT) and is a member of the
+World Trade Organization
+(WTO).
+In 1996 Tunisia entered into an "Association Agreement" with the
+European Union
+(EU) which removed tariffs and other
+trade barriers
+on most goods by 2008. In conjunction with the Association Agreement, the EU is assisting the Tunisian government's
+Mise A Niveau
+(upgrading) program to enhance the productivity of Tunisian businesses and prepare for competition in the global marketplace.
+The government totally or partially privatized around 160
+state-owned enterprises
+after the
+privatization
+program was launched in 1987. Although the program is supported by the GATT, the government had to move carefully to avoid mass firings.
+Unemployment
+continued to plague Tunisia's economy and was aggravated by a rapidly growing workforce. An estimated 55% of the population is under the age of 25. Officially, 15.2% of the Tunisian workforce is unemployed.
+In 2011, after the
+Arab Spring
+, the economy slumped but then recovered with 2.81% GDP growth in 2014. However, unemployment is still one of the major issues with 15.2% of the labor force unemployed as of the first quarter of 2014. Tunisia's political transition gained new momentum in early 2014, with the resolution of a political deadlock, the adoption of a new Constitution and the appointment of a new government. The
+national dialogue platform
+, brokered by key civil society organizations, played a crucial role in gathering all major political parties. This consensus will allow for further reform in the economy and public sector.
+In 2015, the
+Bardo National Museum attack
+led to the collapse of the third largest sector of Tunisia's economy;
 [
 27
 ]
-They conclude that "the closest genetic neighbors to most Jewish groups were the
-Palestinians
-,
-Bedouins
-, and
-Druze
-in addition to the Southern Europeans".
-[
-25
-]
-And that
-:
-The findings support the historical record of Middle Eastern Jews settling in North Africa during classical antiquity, converting non-Jews to Judaism and marrying local populations, thereby forming distinct populations that stayed largely intact for more than two millennia. [...] Two major subgroups within this overall population were identified – Moroccan/Algerian Jews and Djerban (Tunisian)/Libyan Jews. 
-The two subgroups varied in their degree of European mixture, with Moroccan/Algerian Jews tending to be more related to Europeans, which most likely resulted from the expulsion of Sephardi Jews from Spain during the Inquisition starting in 1492.
+tourism
+. Tunisian tourist workers in Tunis have said that "tourism is dead, it is completely dead", expressing the severe drop in tourism after the attack.
 [
 28
 ]
-Furthermore, "The Tunisian Jews exhibited two apparent clusters—one with proximity to Libyan and Djerban Jews and the other proximal to the Moroccan and Algerian Jews."
-[
-26
-]
-Under Roman rule
-[
-edit
-]
-Tertullian who fought against the expansion of Judaism
-The first documents attesting to the presence of Jews in Tunisia date from the second century.
-Tertullian
-describes Jewish communities alongside which Pagan Jews of Punic, Roman and Berber origin and, initially, Christians; The success of Jewish proselytism led the pagan authorities to take legal measures, while Tertullian wrote a pamphlet against Judaism at the same time. On the other hand, the
-Talmud
-mention the existence of several Carthaginian rabbis. In addition, Alfred Louis Delattre demonstrates towards the end of the nineteenth century that the
-Gammarth
-necropolis
-, made up of 200 rock chambers, each containing up to 17 complex tombs (kokhim), contains Jewish symbols and funerary inscriptions in
-Hebrew
-,
-Latin
-and
-Greek
-.
+The number of
+ragpickers
+in Tunisia is increasing due to the continuing high level of unemployment, the loss of purchasing power of the most disadvantaged families, and the explosion of plastic waste due to new consumption habits. Ragpickers do not benefit from
+social protection
+, granted to professions with a legal status and may be subject to the exploitation of the
+Recycling
+industry.
 [
 29
 ]
-"Sinagoga"
-,
-Roman mosaic
-,
-Bardo Museum
-, Tunisia.
-The Jewish community of
-Carthage
-was very pious, adhering strictly to traditions, eating
-kosher
-, and consuming
-matzah
-during
-Passover
-. They observed
-Yom Kippur
-, gathering outdoors to await the end of the
-fast
-. The community celebrated
-Shabbat
-with festive meals prepared on Friday evening, lighting a lamp, and holding
-public Torah readings
-at the synagogue. They also practiced frequent
-ritual ablutions
-. A distinctive feature of Jewish women in Carthage was covering their heads.
+In January 2023, Marouane Abassi, governor of the Central Bank of Tunisia, warned that without an agreement with the IMF, his country would not be able to withstand the surge in prices and would not be able to maintain its growth rates.
 [
 30
 ]
-Tertullian further maintains that Jewish worship was
-protected by Roman law
-. While a tax served as a reminder of Roman authority in the region, he suggests that the community was granted a certain level of autonomy for daily affairs: alongside the
-archisynagogue
-, the spiritual leader, there was the Archon, a kind of council of elders. For reasons likely both political—Jews were Roman citizens—and
-proselytizing
-among local populations,
-Latin
-was the predominant language in inscriptions, while
-Hebrew
-appeared only in a few phrases, such as greetings (e.g.,
-Shalom
-).
-[
-30
-]
-"Judaism, in Carthage as elsewhere, exerted a great influence on local populations: crowds gathered for the Saturday sermon, and pagans and Christians sometimes observed the Shabbat and other festivals and conversions were widespread".
-[
-30
-]
-Despite some
-controversies
-, rivalries, or mockery between Jews and Christians, it appears that Christians (or
-Judeo-Christians
-) were accepted in the
-Jewish cemetery
-of
-Gammarth
-, a
-necropolis
-discovered in the late 19th century.
+The following table shows the main economic indicators in 1980–2017. Inflation under 5% is in green.
 [
 31
 ]
+Year
+GDP
+(in Bil. US$ PPP)
+GDP per capita
+(in US$ PPP)
+GDP
+(in bil. US$ nominal)
+GDP growth
+(real)
+Inflation rate
+(in Percent)
+Unemployment
+(in Percent)
+Government debt
+(in
+% of GDP)
+1980
+13.6
+2,127
+9.6
+7.4%
+10.1%
+n/a
+n/a
+1981
+15.8
+2,387
+9.2
+5.5%
+8.9%
+n/a
+n/a
+1982
+16.6
+2,463
+8.9
+−0.5%
+13.7%
+n/a
+n/a
+1983
+18.0
+2,618
+9.2
+4.7%
+9.0%
+n/a
+n/a
+1984
+19.7
+2,833
+9.1
+5.7%
+8.6%
+n/a
+n/a
+1985
+21.5
+2,991
+9.2
+5.7%
+7.6%
+n/a
+n/a
+1986
+21.6
+2,894
+9.9
+−1.5%
+6.2%
+n/a
+n/a
+1987
+23.7
+3,101
+10.7
+6.7%
+8.2%
+n/a
+n/a
+1988
+24.5
+3,158
+11.1
+0.1%
+7.2%
+n/a
+n/a
+1989
+26.1
+3,306
+11.1
+2.6%
+7.7%
+n/a
+n/a
+1990
+29.0
+3,560
+14.1
+7.1%
+6.5%
+16.2%
+n/a
+1991
+31.2
+3,756
+14.9
+4.1%
+7.7%
+16.2%
+66.4%
+1992
+34.5
+4,065
+17.8
+8.0%
+5.5%
+16.2%
+65.2%
+1993
+36.2
+4,224
+16.7
+2.5%
+4.0%
+16.3%
+66.9%
+1994
+38.3
+4,362
+17.9
+3.6%
+5.4%
+16.3%
+67.0%
+1995
+40.2
+4,484
+20.6
+2.7%
+6.2%
+16.2%
+68.8%
+1996
+43.7
+4,808
+22.3
+6.9%
+3.7%
+16.1%
+70.1%
+1997
+47.0
+5,100
+21.8
+5.7%
+3.6%
+15.9%
+69.9%
+1998
+49.9
+5,342
+22.9
+5.0%
+3.1%
+16.1%
+61.0%
+1999
+53.7
+5,676
+24.1
+6.0%
+2.8%
+16.0%
+65.0%
+2000
+57.3
+5,993
+22.5
+4.3%
+2.8%
+15.7%
+65.9%
+2001
+61.4
+6,362
+23.1
+4.9%
+1.9%
+15.1%
+54.7%
+2002
+63.4
+6,503
+24.3
+1.7%
+1.9%
+15.3%
+54.2%
+2003
+68.2
+6,931
+28.8
+5.5%
+2.1%
+14.5%
+55.1%
+2004
+74.3
+7,476
+32.7
+6.0%
+2.5%
+14.2%
+54.1%
+2005
+79.7
+7,947
+33.9
+4.0%
+2.4%
+12.8%
+52.4%
+2006
+86.8
+8,570
+36.1
+5.7%
+3.2%
+12.5%
+47.8%
+2007
+94.7
+9,260
+40.8
+6.3%
+3.0%
+12.4%
+44.8%
+2008
+100.8
+9,763
+47.0
+4.5%
+4.3%
+12.4%
+42.0%
+2009
+104.8
+10,036
+45.6
+3.1%
+3.7%
+13.3%
+40.5%
+2010
+108.8
+10,315
+46.2
+2.6%
+3.3%
+13.0%
+39.2%
+2011
+108.9
+10,204
+48.1
+−1.9%
+3.5%
+18.9%
+43.1%
+2012
+115.2
+10,694
+47.3
+3.9%
+5.1%
+16.7%
+47.7%
+2013
+120.0
+11,020
+48.7
+2.4%
+5.8%
+15.3%
+46.8%
+2014
+124.9
+11,355
+50.3
+2.3%
+4.9%
+15.3%
+51.6%
+2015
+127.6
+11,487
+45.8
+1.1%
+4.9%
+15.4%
+54.8%
+2016
+130.5
+11,448
+44.4
+1.0%
+3.7%
+15.5%
+61.2%
+2017
+135.4
+11,755
+42.2
+1.9%
+5.3%
+15.3%
+71.3%
+External trade and investment
 [
-30
+edit source
 ]
-The decoration of necropolises and magical tablets, which combine pagan
-abjurations
-with sacred Jewish formulas, illustrate the
-syncretism
-of the time. The success of Jewish proselytism thus prompted the pagan Roman authorities to take legal measures.
-[
-1
-]
-The ruins of an ancient synagogue dating back to the 3rd–5th century CE was discovered by the French captain Ernest De Prudhomme in his
-Hammam-Lif
-residence in 1883 called in
-Latin
-as
-sancta synagoga naronitana
-("holy synagogue of Naro") and motifs common across Roman Africa, attests to the affluence of its Israelite members and the quality of their interactions with other populations.
+Tunisian exports in 2006
+In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for
+balance-of-payments
+support. In January 2003
+Standard & Poor's
+affirmed its investment grade credit ratings for Tunisia. The
+World Economic Forum
+2002-03 ranked Tunisia 34th in the Global Competitiveness Index Ratings (two places behind
+South Africa
+, the continent's leader). In April 2002, Tunisia's first
+US dollar
+-denominated
+sovereign bond
+issue since 1997 raised $458 million, with maturity in 2012.
+The
+Bourse de Tunis
+is under the control of the state-run Financial Market Council and lists over 50 companies. The government offers substantial tax incentives to encourage companies to join the exchange, and expansion is occurring.
+The Tunisian government adopted a unified investment code in 1993 to attract foreign capital. More than 1,600 export-oriented
+joint venture
+firms operate in Tunisia to take advantage of relatively low labor costs and preferential access to nearby European markets. Economic links are closest with European countries, which dominate Tunisia's trade. Tunisia's
+currency
+, the dinar, is not traded outside Tunisia. However, partial convertibility exists for bona fide commercial and investment transaction. Certain restrictions still limit operations carried out by Tunisian residents.
+The stock
+market capitalisation
+of listed companies in Tunisia was valued at $5.3 Billion in 2007, 15% of 2007 GDP, by the
+World Bank
+.
 [
 32
 ]
+For 2007, foreign direct investment totaled TN Dinar 2 billion in 2007, or 5.18% of the total volume of investment in the country. This figure is up 35.7% from 2006 and includes 271 new foreign enterprises and the expansion of 222 others already based in the country.
+The economic growth rate seen for 2007, at 6.3% is the highest achieved in a decade.
+On 29 and 30 November, Tunisia held an investment conference with country chiefs from all around the world with pledges that have reached $30 billion to finance new public projects.
 [
 33
 ]
-Another synagogue, dating to the 5th century, was discovered in Clipea (modern-day
-Kélibia
-).
+As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Monetary Fund on a rescue package.
 [
 34
 ]
-Other Jewish communities are attested by epigraphic or literary references to Utique, Chemtou, Hadrumète or Thusuros (present
-Tozeur
-).
+In 2025, Tunisia severed ties with the IMF.
 [
 35
 ]
-As elsewhere in the
-Roman Empire
-, the Jews of
-Roman Africa
-were
-romanized
-after hundreds of years of subjection and would have adopted Latinized names, worn
-togas
-, and spoken Latin.
+Tunisia's exports to Libya, exceeding 18% growth between 2020 and 2024.
 [
 36
 ]
-According to
-St. Augustine
-, only their morals, modeled by Jewish religious precepts (
-circumcision
-, kashrut, observance of Shabbat,
-modesty of dress
-),
+Loan guarantee
+[
+edit source
+]
+Source:
 [
 37
 ]
-[
-36
-]
-distinguished them from the rest of the population. Some devoted themselves to translation for Christian clients and to the study of the Law; many rabbis were originally from Carthage.
+On 20 April 2012, U.S. Treasury Secretary
 [
 38
 ]
-Others worked in agriculture, livestock and trade.
-Their situation was modified by the
-Edict of Milan
-(313), which legalized Christianity.
+and Tunisian Finance Minister
+Houcine Dimassi
+signed a declaration of intent
 [
 39
 ]
-Jews were gradually excluded from most public functions and proselytism was severely punished.
-[
-39
-]
-The construction of new synagogues was prohibited towards the end of the fourth century, and by the fifth century even the upkeep of existing ones was subject by law to the approval of the imperial administration.
+to move forward on a U.S. loan guarantee for Tunisia. The U.S. Government would provide this loan guarantee to enable the Tunisian government to access significant market financing at affordable rates and favorable maturities with the backing of a U.S. guarantee of principal and interest (up to 100 percent).
+The support would consist of the U.S. guarantee of Tunisian government-issued debt (or of bank loans made to the Government of Tunisia).  This guarantee will significantly reduce the Tunisian government's borrowing costs at a time when market access has become more expensive for many emerging market countries.  In the weeks ahead, both governments intend to make progress on a loan guarantee agreement that would allow Tunisia to move forward with a debt issuance.
+The ceremony took place at the World Bank immediately following the meeting of Finance Ministers of the
+Deauville Partnership with Arab Countries in Transition
+.
+Microfinance institutions, such as Enda Tamweel, exist to assist those who are unable to access the regular banking system. This comprises those living in rural or impoverished regions where the informal sector thrives, accounting for 34% of Tunisia's GDP.
 [
 40
 ]
 [
 41
 ]
-Access to civil service positions was also restricted, and it was prohibited to disinherit Jewish children who
-converted to Christianity
-, circumcise them, or even own
-Christian slaves
-.
-[
-20
-]
-However, various councils held by the
-Church of Carthage
-, in advising Christians not to follow certain practices of their Jewish neighbors, serve as testimony as to their ongoing influence.
+Enda Tamweel has made over 3 million microloans to over 900,000 people in the 30 years since its inception, infusing more than €1.6 billion into the local economy.
 [
 40
 ]
-From Vandal peace to Byzantine repression
 [
-edit
+41
 ]
-The arrival of the
-Vandals
-at the beginning of the 5th century marked a period of respite for the Jews, since the
-Arianism
-of the new rulers of Roman Africa was closer to Jewish
-monotheism
-than the Catholicism of the
-Church Fathers
-. Jews likely prospered economically and supported the
-Vandal kings
-against the armies of Emperor
-Justinian
-, who sought to reconquer North Africa.
-Justinian
-, a
-Nicene Christian
-emperor of the
-Byzantine Empire
-, launched severe repression against the Jews in the 6th century.
-Justinian's victory in 535 began the period of the
-Exarchate of Carthage
-,
+Energy
 [
-42
-]
-which favored
-Nicene Christianity
-and persecuted Jews,
-Arians
-,
-Donatists
-, and
-pagans
-. Jews were once again stigmatized and excluded from public office. Jewish synagogues and pagan temples were converted into churches, their worship banned, and their gatherings prohibited.
-[
-43
-]
-The administration strictly enforced the
-Theodosian Code
-against them, leading to
-forced conversions
-.
-[
-43
-]
-Although Emperor
-Maurice
-attempted to repeal these measures, his successors reinstated them, culminating in an imperial
-edict
-mandating
-baptism
-.
-[
-43
-]
-Some Jews reportedly fled cities under
-Eastern Roman
-control to settle in mountain regions or
-oases
-at the edge of the desert.
-[
-43
-]
-There, with the support of
-Berber
-tribes,
-[
-42
-]
-they resisted Roman rule, converting many Berbers to Judaism through proselytism.
-[
-44
-]
-However, it is possible that the Judaization of the Berbers occurred four centuries earlier, following the arrival of Jews fleeing the repression of the revolt in
-Cyrenaica
-.
-[
-44
-]
-This transition may have happened gradually through a
-syncretism
-of Jewish and pagan practices, including the worship of
-Tanit
-, which persisted after the fall of Carthage.
-[
-45
-]
-This supports the legend of the Judeo-Berber queen of the
-Aurès Mountains
-,
-Kahina
-, who resisted the Islamization of the Maghreb.
-[
-20
-]
-Regardless of the hypothesis, the 14th-century historian
-Ibn Khaldun
-confirmed their existence on the eve of the
-Muslim conquest of the Maghreb
-[
-44
-]
-based on 11th-century Arab chronicles.
-[
-46
-]
-However, this version is heavily contested: Haïm Zeev Hirschberg notes that Ibn Khaldun wrote his work centuries after the events, and
-Mohamed Talbi
-points out that the French translation is not entirely accurate, as it fails to convey Ibn Khaldun's sense of possibility.
-[
-42
-]
-Gabriel Camps
-also asserts that the Djerawa and Nefzaouas mentioned
-[
-47
-]
-were Christians allied with the Eastern Romans before the advent of
-Islam
-.
-[
-48
-]
-[
-page
-needed
-]
-Regardless, while the hypothesis of mass tribal
-conversion
-to Judaism seems fragile, individual conversions appear more likely.
-[
-42
-]
-Middle Ages
-[
-edit
-]
-New status of Jews under Islam
-[
-edit
+edit source
 ]
 Main article:
-History of the Jews under Muslim rule
-With the Arab conquest and the arrival of Islam in Tunisia in the eighth century, the "
-People of the Book
-" (including Jews and Christians) were given a choice between conversion to Islam (which some Jewish Berbers have done)
-[
-49
-]
-and legal status as
-dhimmi
-.
+Energy in Tunisia
+Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).
 [
 42
 ]
-The dhimmi is a term for non-Muslims, originally Jews and Christians as People of the Book, who live in an Islamic state and refers to the state's obligation to protect the lives of these communities as well as their freedom of religion and right to administer their own laws in certain regards (i.e. the Jewish halakhic courts), in return for the payment of the
-jizya
-, the poll tax.
+Electricity
 [
-50
+edit source
 ]
-As well as several obligation and restrictions as refraining from building new places of worship. In addition,
-dhimmis
-were forbidden to engage in
-proselytism
-and could not marry Muslim women, although the reverse was permitted if the Jewish or Christian wife converted to Islam. Finally,
-dhimmi
-individuals were required to treat Muslims and Islam with respect and humility. Any violation of this pact could result in expulsion or even death.
+Production:
+16.13 Billion kWh (2011)
 [
-50
+43
 ]
+Production by source:
+fossil fuel:
+96.8% (2010)
+hydro:
+1.7% (2010)
+other:
+1.5% (2010)
+Consumption:
+13.29 billion kWh (2010)
+Exports:
+None (2010)
+Imports:
+19 million kWh (2010)
+Economic structure
 [
-51
+edit source
 ]
-Cultural heyday of Tunisian Jews (9th to 11th centuries)
+In 2017, the breakdown by economic sector is as follows:
+Economy sector
+contribution to GDP
+Agriculture
+10,1
+%
+Industry
+26,2
+%
+Services
+63,8
+%
+Agriculture
 [
-edit
+edit source
 ]
-Main article:
-History of the Jews in Kairouan
-Letter from Houshiel ben Elhanan reproduced in the
-Jewish Quarterly Review
-(1899)
-The living conditions of the Jews in Tunisia were relatively favorable during the reign of the
-Aghlabids
-and then
-Fatimid dynasties
-.
-[
-52
-]
-Of the three principal Jewish communities that came into prominence by the 10th century,
-Ifriqiya
-(modern-day Tunisia) was the first to flourish, beginning with the establishment of the
-Shi'ite
-caliphate of the Fatimids in 909. The Fatimids, in general, were more tolerant towards dhimmi subjects than interpretations in orthodox Sunni Islam.
-[
-52
-]
-Jews were employed in the civil service, sumptuary laws for non-Muslims were repealed, and the discriminatory tariffs were not imposed.
-Jews worked in the service of the dynasty, as treasurers, doctors, or tax collectors but their situation remained precarious.
-Kairouan
-(Qayrawan), now the capital of the Aghlabids, was the seat of the most important community in the territory, attracting migrants from
-Umayyad
-Spain, Italy, and the
-Abbasid Empire
-. This community would become one of the major poles of Judaism between the ninth and eleventh centuries, both economically, culturally and intellectually, ensuring, through correspondence with the
-Talmudic academies in Babylonia
-.
-[
-52
-]
-The Kairouan community became an important intermediary between communities in
-Spain
-and the
-Geonim
-of the Babylonian academies.
-[
-21
-]
-Many major figures of Judaism are associated with the city. Among them is
-Isaac Israeli ben Solomon
-, a private doctor of the Aghlabide Ziadet Allah III and then of the Fatimids
-Abdullah al-Mahdi Billah
-and
-Al-Qa'im bi-Amr Allah
-and author of various medical
-treatises
-in Arabic which would enrich the medieval medicine through their translation by
-Constantine the African
-, adapting the teachings of the Alexandrian school to the Jewish dogma.
-[
-53
-]
-Israeli's works in Arabic were studied in their Hebrew and Latin translations in both medieval and Renaissance Europe.
-[
-52
-]
-Dunash ibn Tamim
-, his disciple, was the author (or final editor) wrote, along other works, a philosophical commentary on the
-Sefer Yetzirah
-, where he developed conceptions close to his master's thought.
-[
-54
-]
-Another disciple, Ishaq ibn Imran is considered the founder of the philosophical and medical school of
-Ifriqiya
-.
-Jacob ben Nissim
-ibn Shahin, rector of the Center of Studies at the end of the tenth century, is the official representative of the Talmudic academies of Babylonia, acting as intermediaries between them and his own community. Jacob ibn Shahin was succeeded by his son,
-Nissim ben Jacob
-, considered the greatest of the Qayrawan sages. Another academy was founded by
-Chushiel ben Elchanan
-, originally from
-Bari
-, developed the simultaneous study of the Talmud of Babylon and the
-Jerusalem Talmud
-.
-[
-52
-]
-His son and disciple
-Chananel ben Chushiel
-was one of the major commentators of the Talmud in the Middle Ages.
-[
-55
-]
-After his death, his work was continued by another disciple of his father whom
-Ignác Goldziher
-calls Jewish mutazilite: Nissim ben Jacob,
-[
-56
-]
-the only one among the sages of Kairouan to bear the title of
-Gaon
+Agriculture - products:
+olives
 ,
-[
-55
-]
-also wrote an important commentary on the Talmud and the Hibbour Yafe Mehayeshoua, which is perhaps the first tales collection in Jewish literature.
-[
-57
-]
-On the political level, the community emancipated itself from the
-exile
-of
-Baghdad
-at the beginning of the eleventh century and acquired its first secular chief.
-[
-58
-]
-Each community was placed under the authority of a council of notables headed by a chief (
-naggid
-) who, through the faithful, disposes of the resources necessary for the proper functioning of the various institutions: worship, schools, a tribunal headed by the rabbi-judge (
-dayan
-), etc.
-[
-59
-]
-The maggid of Kairouan undoubtedly had the ascendancy over those of the communities of smaller size.
-The Jews participate greatly in the exchanges with
-Al-Andalus
+grain
 ,
-Egypt
-, and the broader Middle East.
-[
-60
-]
-Grouped in separate quarters (although many Jews settled in the Muslim districts of Kairouan during the Fatimid period),
-[
-61
-]
-they had house of prayer, schools and a court.
-The port cities of
-Mahdia
+tomatoes
 ,
-Sousse
+citrus fruit
 ,
-Sfax
-and
-Gabès
-saw a steady influx of Jewish immigrants from the
-Levant
-to the end of the eleventh century,
-[
-58
-]
-and their communities participated in these economic and intellectual exchanges.
-[
-62
-]
-Monopolizing the goldsmiths' and jewelers' crafts, they also worked in the textile industry, as tailors, tanners and shoemakers,
-[
-63
-]
-while the smallest rural communities practiced agriculture (saffron,
-henna
-, vine, etc.) or breeding of nomadic animals.
-[
-64
-]
-Nevertheless, the attitude of Islamic authorities regarding ghiyār (differentiation of non-Muslims from Muslims) begun to harden and in the late ninth century the Aghlabid ruler but also Maliki qadi of Kairuoan issued decrees that ordered dhimmis to wear a
-white patch
-on the shoulder of their garment.
-[
-65
-]
-[
-66
-]
-The patch for Jews had the image of an ape, an image based on Quranic interpretation that became standard in anti-dhimmi propaganda and was polemic when referring to Jews. It is not clear how long these humiliating decrees remained in force, but it is clear that the purpose of the patch was not merely ghiyār, but also dhull (humiliation) in keeping with the Quranic injunction (Sura 9:29) that non-Muslims should be humbled.
-[
-65
-]
-The departure of the Fatimids to Egypt in 972 led their
-Zirid
-vassals to seize power and eventually break their bonds of political and religious submission in the middle of the eleventh century.
-[
-67
-]
-The
-Banu Hilal
-and the
-Banu Sulaym
-, were sent in retaliation against Tunisia by the Fatimids, took Kairouan in 1057 and plundered it.
-[
-68
-]
-Combined with the triumph of
-Sunnism
-and the end of the Babylonian
-gaonate
-, these events marked the end of the Kairouan community and reversed the migratory flow of the Jewish populations towards the
-Levant
+sugar beets
 ,
-[
-67
-]
-with the elites having already accompanied the Fatimid court in
-Cairo
-.
-[
-69
-]
-Jews migrated to the coastal cities of Gabes, Sfax, Mahdia, Sousse and Tunis, but also to
-Béjaïa
+dates
 ,
-Tlemcen
-and
-Beni Hammad Fort
+almonds
 .
-[
-69
-]
-Persecution and decline under Almohad rule (12th–13th centuries)
-[
-edit
-]
-The conquest of Tunisia by the
-Almohad Caliphate
-in the 1150s proved disastrous to the Jews of Tunis. The city itself was captured in 1159 after refusing to surrender.
-[
-70
-]
-The rise of the
-Almohad Caliphate
-shook both the Jewish communities of Tunisia and the Muslims attached to the cult of the saints, declared by the new sovereigns as
-heretics
+In 2018, Tunisia produced:
+1.5 million tons of
+wheat
+;
+1.3 million tons of
+tomato
+(16th largest producer in the world);
+825 thousand tons of
+olives
+(7th largest producer in the world);
+700 thousand tons of
+barley
+;
+548 thousand tons of
+watermelon
+;
+450 thousand tons of
+onion
+;
+426 thousand tons of
+pepper
+;
+423 thousand tons of
+potato
+;
+241 thousand tons of
+date
+(10th largest producer in the world);
+217 thousand tons of
+carrots
+;
+146 thousand tons of
+grape
+;
+144 thousand tons of
+orange
+;
+118 thousand tons of
+peach
+;
+114 thousand tons of
+apple
+;
+104 thousand tons of
+grapefruit
+;
+102 thousand tons of
+melon
 .
-[
-71
-]
-Jews were forced to
-apostasy
-, flight, or death by Caliph
-Abd al-Mu'min
-.
-[
-3
-]
-Abd al-Mu'min's harsh treatment of the residents of Tunis asked as a deterrent to the rulers of other provincial towns. In addition to forcing Christians and Jews to convert or die, half the property of all Muslims in Tunis was confiscated by the Almohad treasury.
-[
-72
-]
-Many massacres took place, despite many formal conversions by the pronunciation of the
-Shahada
-.
-[
-71
-]
-Indeed,
-many Jews, while outwardly professing Islam, remained faithful to their religion
-, which they observed in secret, as advocated by
-Rabbi Moses ben Maimon
-.
-[
-73
-]
-Jewish practices disappeared from the Maghreb from 1165 to 1230.
-[
-citation needed
-]
-Still they were saddened by the sincere adherence of some to Islam, fears of persecution and the relativization of any religious affiliation.
-[
-71
-]
-This Islamization of the morals and doctrines of the Jews of Tunisia, meant they as 'dhimmis' (after the disappearance of Christianity in the Maghreb around 1150) isolated from their other coreligionists, and was strongly criticized by the
-Maimonides
-.
-[
-74
-]
-The first Almohad, 'Abd al-Mu'min, claimed that
-Muhammad
-had permitted the Jews free exercise of their religion for only five hundred years, and had declared that if, after that period, the
-messiah
-had not come, they were to be forced to embrace Islam. Accordingly, Jews as well as Christians were compelled either to embrace Islam or to leave the country. 'Abd al-Mu'min's successors pursued the same course, and their severe measures resulted either in emigration or in forcible conversions. Soon becoming suspicious of the sincerity of the new converts, the Almohadis compelled them to wear a
-special garb, with a yellow cloth for a head-covering
-.
-[
-75
-]
-Throughout this, Jewish communities in Tunisia maintained connections throughout and beyond the Maghreb, particularly those in the Italian peninsula. Both a
-genizah
-fragment from the 1220s and two letters in 1227 to the mayor of
-Pisa
-attest to the presence of commercial relations between the Jewish communities in Tunis and Pisa.
-[
-76
-]
-In 1267, a man named Moses of Tunis served as an Arabic interpreter to Genoese traders living in the city.
-[
-77
-]
-These connections persisted for many years; surviving records include a treaty between
-Florence
-and Tunis translated by a Jew named Abraham in 1421, translated from Arabic to Italian. Other Jewish diplomats, translators, and court functionaries travelled between Tunis and city-states and kingdoms including
-Aragon
-,
-Majorca
-, and
-Barcelona
-into the 15th century.
-[
-78
-]
-Under the Hafsids, Spanish and Ottomans (1236–1603)
-[
-edit
-]
-Under the
-Hafsid dynasty
-, which was established in 1236 as a breakaway from the
-Almohad dynasty
-,
-[
-79
-]
-the condition of the Jews improved. Jews could again practice their religion and thus reconstituted the communities that existed before the Almohad period.
-[
-80
-]
-Systematic persecution, social exclusion and hindrance to worship disappeared,
-[
-81
-]
-but the
-dhimma
-was strict, especially in matters of dress. The Hafsids followed late Almohad practice and forced the Jews, who were the only non-Muslim religionists left, to wear yellow turban and garments and caliph Muhammad I al-Mustansir renewed these regulations in 1250. The yellow patch Tunisian Jews wore from this time until the nineteenth century became so emblematic that they became commonly referred to as
-shikliyyun
-.
-[
-75
-]
-Besides
-Kairouan
-, there were at that time important communities in
-Mehdia
-,
-Kalaa
-, the island of
-Djerba
-, and the city of Tunis. Considered at first as foreigners, the Jews were not permitted to settle in the interior of Tunis, but had to live in a building called a
-funduq
-. Subsequently, however, a wealthy and humane
-Muslim
-,
-Sidi Mahrez
-, who in 1159 had rendered great services to the Almohad caliph
-Abd al-Mu'min
-, obtained for them the right to settle in a special quarter of the city. This quarter, called the "
-Hara
-," constituted until 1857 the
-ghetto
-of Tunis; it was closed at night. In 1270, in consequence of the defeat of
-Louis IX of France
-, who had undertaken a crusade against Tunis, the cities of
-Kairouan
-and Ḥammat were declared holy; and the Jews were required either to leave them or to convert to Islam. From that year until the conquest of Tunis by France (1857), Jews and Christians were forbidden to pass a night in either of these cities; and only by special permission of the governor were they allowed to enter them during the day.
-Although the difficulty of the economic context leads to a surge of
-probabilism
-, the triumph of
-Maliki
-Sunnism
-with little tolerance towards the "people of the book" meant material and spiritual misery.
-[
-82
-]
-The massive settlement of Jewish-Spanish scholars fleeing from the
-Castile
-in 1391 and again in 1492 was mainly carried out in
-Algeria
-and
-Morocco
-, and the Tunisian Jews, abandoned by this phenomenon, were led to consult Algerian scholars such as
-Simeon ben Zemah Duran
-.
-[
-83
-]
-In 1360, a treaty was declared between
-Abu Ishaq Ibrahim II
-and
-Peter IV of Aragon
-; the treaty included repeated mentions of both Christian and Jewish subjects, as well as guarantees of safety on roads and protection against bandits.
-[
-84
-]
-Another article of the treaty started that no Tunisian Jew or Muslim was to be arrested in Aragon after the treaty had been concluded and, if any such prisoners were found, they were to be released.
-[
-84
-]
-Possibly in response to the increasing Jewish participation in trade, the population of the Jewish community in Tunisia increased in the 14th century. According to a letter addressed to
-Simeon ben Zemah Duran
-, the influx of new settlers into Tunis had overwhelmed the capacity of the old synagogue in the
-funduq
-.
-[
-85
-]
-The
-pogroms of 1391
-drove still move Jewish refugees from
-Catalonia
-and
-Mallorca
-to Tunisia (and Algeria), further increasing the population.
-[
-86
-]
-In the fifteenth century, each community was autonomous – recognized by power from the moment it counts at least ten major men – and has its own institutions; Their communal affairs were directed by a chief (zaken ha-yehudim) nominated by the government, and assisted by a council of notables (gdolei ha-qahal) made up of the most educated and wealthy family heads.
-[
-87
-]
-The chief's functions consisted in the administration of
-justice
-among the Jews and collection of Jewish taxes.
-Three kinds of taxes were imposed on Tunisian Jews:
-a communal tax, to which every member contributed according to his means;
-a personal or capitation tax (the
-jizya
-);
-a general tax, which was levied upon the Muslims also.
-In addition to these, every Jewish tradesman and industrialist had to pay an annual tax to the
-guild
-. After the 13th century, taxes were collected by a
-qaid
-, who also served as an intermediary between the government and the Jews. His authority within the Jewish community was supreme. The members of the council of elders, as well as the rabbis, were nominated at his recommendation, and no rabbinical decision was valid unless approved by him.
-Jewish communities of Tunis under the Ottoman Empire
-During the
-conquest of Tunis
-by the Spaniards in 1535, many Jews were made prisoners and sold as slaves in several Christian countries. After the victory of the Ottomans over the Spaniards in 1574, Tunisia became a province (pashalik) of the Ottoman Empire under
-Koca Sinan Pasha
-.
-[
-88
-]
-During the Spanish occupation of the Tunisian coasts (1535–74) the Jewish communities of
-Bizerte
-,
-Susa
-,
-Sfax
-, and other seaports suffered greatly at the hands of the conquerors; while under the subsequent
-Turkish
-rule the Jews of Tunis enjoyed a fair amount of security. They were free to practice their religion and administer their own affairs. Nevertheless, they were subject to the caprices of princes and outbursts of fanaticism. Petty officials were allowed to impose upon them the most difficult drudgery without compensation. They were obliged to wear a special costume, consisting of a blue frock without collar or ordinary sleeves (loose linen sleeves being substituted), wide
-linen
-drawers, black slippers, and a small black skull-cap; stockings might be worn in winter only. They might ride only on asses or mules, and were not permitted to use a saddle.
-Beginning of the Modern Era
-[
-edit
-]
-From the 16th century Tunisia and more particularly Tunis had an influx of
-Sephardi Jewish
-families, who initially
-settled in Livorno
-(
-Tuscany
-, Italy), and who later moved to work in other trading centers. These new settlers, called
-granas
-in
-Arabic
-or
-gorneyim
-(
-Hebrew:
-גורנים
-) in Hebrew after the name of the city in both languages, were wealthier than the Jewish natives called
-tuansa
-.
-[
-21
-]
-They spoke and wrote in Italian but gradually adopted the local
-Arabic
-while introducing their traditional
-liturgy
-to their new host country. According to a 1710 agreement, the Grana were considered Italian citizens; only the Tuansa were subject to the dhimmi restrictions.
-[
-21
-]
-Under the Muradids and Husainids (1603–1857)
-[
-edit
-]
-From the beginning of the 18th century the political status of the Jews in Tunis improved. This was due to the increasing influence of the political agents of the European powers, who, while seeking to ameliorate the condition of the Christian residents, had to plead also the cause of the Jews, whom Muslim legislation classed with Christians.
-Haim Joseph David Azulai
-, who visited Tunis in 1772, praised this development. In 1819, the United States
-consul
-in Tunis,
-Mordecai Manuel Noah
-, gave the following account of the situation of the Tunisian Jews:
-With all the apparent oppression, the Jews are the leading men; they are in Barbary the principal mechanics, they are at the head of the custom-house, they farm the revenues; the exportation of various articles, and the monopoly of various merchandise, are secured to them by purchase, they control the mint and regulate the coinage of money, they keep the bey's jewels and valuable articles, and are his treasurers, secretaries, and interpreters; the little known of arts, science, and medicine is confined to the Jews. If a Jew commits a crime, if the punishment affects his life, these people, so national, always purchase his pardon; the disgrace of one affects the whole community; they are ever in the presence of the bey, every minister has two or three Jewish agents, and when they unite to attain an object, it cannot be prevented. These people, then, whatever may be said of their oppression, possess a very controlling influence, their friendship is worthy of being preserved by public functionaries, and their opposition is to be dreaded.
-[
-89
-]
-Granas and Tuansa
-[
-edit
-]
-From the early 17th century,
-Marrano
-families who had re-embraced Judaism after settling in Livorno at the end of the 15th century left
-Tuscany
-to settle in Tunisia as part of the establishment of trade relations.
-[
-90
-]
-These new arrivals, called
-Granas
-in
-Arabic
-and
-Gorneyim
-(
-גורנים
-) in
-Hebrew
-, were wealthier and fewer in number than their
-indigenous coreligionists
-, known as
-Twansa
-.
-[
-91
-]
-[
-92
-]
-They spoke and wrote
-Tuscan
-, and sometimes still Spanish, forming a highly influential economic and cultural elite within the broader Italian community.
-[
-93
-]
-[
-91
-]
-Their surnames reflect their Spanish or Portuguese origins.
-[
-93
-]
-Tunisian Jewish woman in ceremonial attire (1908).
-Quickly introduced to the Beylic Court, they performed executive functions of court – collectors of taxes, treasurers and intermediaries without authority over
-[
-94
-]
-– and noble professions in medicine, finance or diplomacy. Even if they settled in the same neighborhoods, they had virtually no connection with the Tuansa, to which Jews from the rest of the
-Mediterranean Basin
-have assimilated. The Tuansa spoke the Judeo-Tunisian dialect, and occupied a modest social position. This is why, contrary to what was happening elsewhere in the Maghreb, these new populations were hardly accepted,
-[
-95
-]
-which gradually leads to the division of the Jewish community into two groups.
-In this context, the Jews played a major role in the economic life of the country, in commerce and crafts, but also in trading and banking. Despite the tariffs being higher than those paid by Muslim or Christian traders (10% vs. 3%), the Granas managed to control and prosper trade with Livorno.
-[
-96
-]
-Their trading houses also engaged in
-credit
-banking activities
-[
-96
-]
-and participated in the purchase of Christian slaves captured by
-privateers
-and resold.
-[
-97
-]
-The Tuansa saw themselves conceding the monopoly of the leather trade by the
-Muradid
-and then
-Husainid
-beys
-. Jews who were traveling as Tunisians worked in the retail trade in the
-souks of Tunis
-, thus shipping imported products from Europe under the leadership of a Muslim amine, or in the Jewish quarter.
-In 1710, a century of friction between the two groups led to a coup de force of the Livornese community, with a tacit agreement of the authorities.
-[
-95
-]
-By creating its own community institutions, it creates a schism with the indigenous population.
-[
-95
-]
-Each of them had their council of notables, their
-grand rabbi
-, their
-rabbinical court
-, synagogues, schools, butcher's shop and a separate cemetery.
-[
-98
-]
-This state of affairs was endorsed by a
-takkanah
-(rabbinic decree) signed in July 1741 between the great rabbis Abraham Taïeb and
-Isaac Lumbroso
-.
-[
-98
-]
-This agreement was renewed in 1784 before being annulled in 1899.
-[
-99
-]
-This takkanah sets, among other rules, the fact that every Israelite from a Muslim country was attached to the Tuansa, while every Israelite from a Christian country was from the Granas.
-[
-95
-]
-Moreover, the Granas – a richer community, although only 8% of the total population – then accounted for one third of the payment of the
-jizya
-against two-thirds for the Tuansa.
-[
-98
-]
-[
-95
-]
-This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.
-[
-100
-]
-The socio-cultural and economic differences between these two communities have increased in the nineteenth century.
-[
-91
-]
-The Granas, due to their European origins and higher standard of living, but also to their economic, family and cultural ties with Livorno,
-[
-100
-]
-found it difficult to cope with their indigenous coreligionists, the Tuansa, who were considered less "civilized". The Granas were an important contributions whereas they represented only a minority of the Jews of Tunisia.
-[
-98
-]
-On the other hand, indigenous elites didn't wish to give up their power to newcomers, unlike their Maghreb neighbors, probably due to the later arrival of the Granas in Tunisia.
-[
-101
-]
-The Granas also differed geographically from the Tuansa, settling in the European district of Tunis, thus avoiding the
-Hara
-, and more culturally approach the Europeans than their co-religionists.
-[
-102
-]
-However, the two groups keep the same rites and uses with only a few variants and, outside Tunis, the same community institutions continue to serve all the faithful. Moreover, all the Jews remain under the authority of a single qaid
-[
-103
-]
-chosen from the Tuansa, presumably to avoid interference with foreigners.
-[
-104
-]
-Harassment and discrimination
-[
-edit
-]
-During the seventeenth and eighteenth centuries, Jews were still subjected to harassing and discriminatory measures, particularly on the part of the judicial system which was arbitrary in their regard, with the exception of the more tolerant
-Hanafi
-courts.
-[
-105
-]
-Jews were still subjected to the collective payment of the jizya – the annual amount of which varied according to the year, from 10,332
-piastres
-in 1756 to 4,572 piastres in 1806 – and had to pay additional taxes (ghrâma) whenever the sovereign's treasury was in difficulty, as the Muslims sometimes did.
-[
-105
-]
-Moreover, they were periodically obliged to carry out public works and were subjected to forced labor which affected mainly the poorest of the communities. Regarding dress code, the
-chechia
-that served as their headdress had to be black and wrapped in a dark turban, unlike the Muslims who wore a red chechia surrounded by a white turban.
-[
-21
-]
-The Granas, dressed in European fashion, wore wigs and round hats like Christian merchants.
-El Ghriba Synagogue in Djerba.
-At the beginning of the eighteenth century, the political status of the Jews improved somewhat thanks to the growing influence of the political agents of the European powers who, seeking to improve the living conditions of the Christian residents, also pleaded the Jews. But if the wealthy Jews – who held positions in administration or trade – succeeded in being respected, especially through the protection of influential Muslim personalities,
-[
-106
-]
-poor Jews were often victims of bullying and even murder, and the authorities didn't seem to intervene.
-[
-107
-]
-An observer declared that the Jews were recognized "not only in their black costume, but also in the imprint of a curse they carry on their foreheads".
-[
-107
-]
-However, despite this difficult climate, Jews were not subjected to outbreaks of religious
-fanaticism
-or racism leading to
-massacres
-. Although
-looting
-accompanied by violence was occasionally reported, it always occurred in the context of unrest affecting the broader population, such as in June 1752 and September 1756 in Tunis.
-[
-108
-]
-Furthermore, there were no instances of mass expulsions,
-[
-109
-]
-and Jews enjoyed an almost complete
-freedom of religion
-— often involving their Muslim neighbors in their celebrations
-[
-106
-]
-[
-110
-]
-— in contrast to the practices in Europe at the time.
-At the end of the eighteenth century,
-Hammouda Pasha
-denied Jews the right to acquire and possess real estate properties, while the learning of literal Arabic and the use of the
-Arabic alphabet
-was also prohibited during this period. Finally, the behavior of the Muslim population towards the communities varied from the will to rigorous application of the dhimma by the
-Ulama
-to the absence of hostility of the rural population, marginalized urban fringes but assured of impunity.
-Internal split and development
-[
-edit
-]
-Leaders
-[
-edit
-]
-Communities were structured under the authority of a leader of the "Jewish nation" with the title of hasar ve ha-tafsar, a prestigious and powerful post containing both the
-qaid
-charge of the Jews (qdyd el yihud) and that of Receiver General of Finance under the authority of the Treasurer of the Kingdom (khaznadar).
-[
-111
-]
-He was an intermediary between the bey and his community and therefore enjoyed entry to the court. He had a very important bureaucratic power over those co-religionaries in whom he apportioned the payment of the jizya
-[
-112
-]
-– of which they were collectively liable – according to the resources of each household. It also refers to those who performed the duties imposed by the authorities.
-[
-109
-]
-Tunis Jewish Hospital
-(1912).
-A state farmer, surrounded by some of the most fortunate and educated notables, also collected taxes such as the tithes, the tax on kosher meat and the offerings of the faithful.
-[
-109
-]
-These allow him to pay for his services, those of his deputies and the rabbis-judges
-[
-112
-]
-and finance the synagogues, the schools linked to them, the
-ritual abattoir
-, the
-cemetery
-, the relief fund for the needy and the sick and the
-rabbinical court
-, which were only in large cities
-[
-100
-]
-under the presidency of the Grand Rabbi.
-[
-109
-]
-Administrator of the affairs of the community designated the local secular or religious leaders – with the written approval of the Tunisian authorities – and gives them broad orientations.
-[
-112
-]
-From the reign of
-Abu l-Hasan Ali I
-(1735–1756), he also served as treasurer of the Bey
-[
-104
-]
-and many of the key posts in the administration of finance – collection of taxes and customs duties, scheduling of expenditure, handling of cash, keeping books of account or paying the salaries of the
-Janissaries
-– were occupied by Jewish agents.
-[
-113
-]
-Religious authorities
-[
-edit
-]
-Jewish tomb in the royal mausoleum of the
-Tourbet el Bey
-Despite the split between the groups, the figure of the Grand Rabbi had considerable authority among his followers. By virtue of his function as president of the rabbinical court, he watches over
-Jewish law
-, relying on the
-Shulchan Aruch
-, the standard legislative code, and the
-Talmud
-. The rabbinic jurisdictions deal with personal status matters, but also with civil and commercial cases when only Jews were concerned, whether the faults were religious or secular.
-[
-103
-]
-In small towns, the
-dayan
-was responsible for rendering justice, with the rabbinical court serving as a chamber of appeal.
-[
-100
-]
-One of the most rigorous penalties that the latter could pronounce was the
-herem
-, the Jewish version of
-excommunication
-, made public in the synagogue.
-[
-103
-]
-However, some questioned the authority of the religious leaders: a Jewish broker, working for a French
-trading house
-and condemned to beating in May 1827 for invoking the name of God,
-[
-114
-]
-appealed the decision to the consul of France. Following the protest of the latter to the bey, it was decided that the rabbinical court would no longer pronounce sentence for religious offense to a Jew placed under French protection.
-[
-114
-]
-Renewal of ideas
-[
-edit
-]
-On the intellectual level, the growing exchanges between Jews from Tunisia and Livorno facilitated the circulation of printed works in Tuscany and their widespread distribution in Tunisia and the rest of the Maghreb.
-[
-115
-]
-This led to an important revival of the Tunisian Hebrew studies at the beginning of the eighteenth century, embodied in particular by the rabbis Semah Sarfati, Abraham Ha-Cohen, Abraham Benmoussa, Abraham Taïeb and Joseph Cohen-Tanugi.
-[
-116
-]
-Among the works of the
-Chumash
-, the
-Talmud
-, or the
-Kabbalah
-of note include:
-Toafot Re'em (1761–1762) and Meira Dakhiya (1792) by
-Mordecai Baruch Carvalho
-, commentary on the work of
-Elijah Mizrachi
-and a collection of
-glosses
-on various Talmudic treatises;
-Zera Itshak (1768) by
-Isaac Lumbroso
-, an important Talmudic commentary;
-Hoq Nathan (1776) by Nathan Borgel, an important Talmudic commentary;
-Migdanot Nathan (1778–1785) by Élie Borgel, series of commentaries on Talmudic treatises;
-Yeter ha-Baz (1787) by
-Nehorai Jarmon
-, new on the Talmud and the
-Mishneh Torah
-of Moses Maimonides
-[
-117
-]
-[
-118
-]
-Erekh ha-Shoulhan (1791–1891) by Isaac Taïeb, a book dealing with the laws and commenting on the
-Shulchan Aruch
-[
-119
-]
-Mishha di-Ributa (1805) by Messaoud-Raphael El-Fassi, an important commentary by Choulhan Aroukh, accompanied by works by his sons Haym and Solomon;
-Mishkenot ha-Roim (1860) and Hayyim va-Chesed (1873) by Ouziel El-Haik, a collection of 1,499
-responses
-on the most diverse subjects and a collection of homilies and funeral eulogies pronounced from 1767 to 1810.
-With the exception of Isaac Lumbroso's Zera Itshak, all the works were printed in Livorno, Tunis, which didn't have a well-known printing press, the only attempt to make one was in 1768 was considered a failure because of the lack of knowledge on the subject. Rabbi
-Chaim Yosef David Azulai
-, who visited Tunis in 1773–74, noted that the city had some 300 young talmudists and considered that the rabbis he met "had very extensive knowledge".
-[
-120
-]
-Jewish-Arabic texts also celebrate legendary figures such as the poet Rabbi Fraji Chaouat, famous for his extensive Hebrew
-diwan
-, and Rabbi Yossef El Maarabi.
-[
-121
-]
-A long poem also recounts the epidemic of
-plague
-that struck the country in the 17th century.
-[
-122
-]
-Aborted reforms of the nineteenth century
-[
-edit
-]
-Overview
-[
-edit
-]
-In the mid-19th century, Tunisian Jews had few literate individuals in
-Arabic
-, and only a small number could read and write in
-Hebrew
-. Moreover, they generally adhered strictly to religious precepts due to their exclusively religious education.
-[
-123
-]
-They had little knowledge of Arab-Muslim literature, unlike Jews in other Muslim countries.
-[
-124
-]
-Nevertheless, interactions between Tunis and Europe contributed to a certain desire for emancipation and freedom in their assigned dress. Mahmoud Bey then decided in January 1823 to require all Jews living in Tunisia to wear a
-skullcap
-.
-[
-125
-]
-A Jew from
-Gibraltar
-who refused the decree was beaten.
-[
-126
-]
-His protest to his consul triggered a strong reaction from the United Kingdom.
-[
-125
-]
-This situation benefited the Granas, who secured the replacement of the
-chechia
-with a white skullcap (
-kbîbes
-) and a specific
-sefseri
-for their women, as a way to distinguish themselves from the Twansa, who were still required to wear black skullcaps.
-[
-127
-]
-[
-125
-]
-However, this concession contradicted a relatively strict policy adopted by the authorities during the early decades of the century, as reported by the bey's physician, Louis Franck, and the United States consul
-Mordecai Manuel Noah
-.
-[
-127
-]
-Entrance to the
-souk El Grana
-(
-El-Krana
-), where some men are dressed in European style, in the
-medina of Tunis
-(early 20th century).
-In socio-economic terms, the Jewish population was highly heterogeneous. In the country's ports, European Jewish merchants, along with Christians, controlled foreign trade and dominated more than half of the commercial houses operating in the country.
-[
-128
-]
-Alongside this affluent class of merchants and bankers, primarily Livornese, was a middle class of traders and artisans.
-[
-129
-]
-These Jews played a significant role in retail trade, particularly in the capital, where they were heavily concentrated in two
-souks
-of the
-medina
-: one specializing in colonial goods, hardware, and items imported from Paris, and another specializing in draperies and silk fabrics from England and France.
-[
-130
-]
-Many were also engaged in Tunisian handicrafts, such as working gold and silver, over which they held a monopoly, as well as tailoring and shoemaking.
-[
-130
-]
-They also served as
-lenders
-to farmers and artisans.
-[
-129
-]
-In rural areas such as
-Nabeul
-,
-Gabès
-, and Djerba, Jews worked in vine cultivation,
-date palm
-farming, fruit tree cultivation, and livestock farming.
-[
-129
-]
-There was also a poor class of Jews who lived off small trades and could not survive without the
-charity organized by their community
-.
-[
-129
-]
-European influences
-[
-edit
-]
-The inclusion of Jews in the
-French Declaration of the Rights of Man and of the Citizen
-on September 27, 1791, and the Napoleonic decrees of 1808, fostered a certain sympathy for France among the Jews of Tunisia, who were all subjects of the bey,
-[
-131
-]
-For instance, the Spanish
-chargé d'affaires
-reported in 1809 that "the Jews are the most fervent supporters of Napoleon."
-[
-131
-]
-It was even reported that some Jews, including Granas following the example of their co-religionists in Italy, wore a
-tricolor cockade
-, an act harshly repressed by
-Hammouda Pasha
-, who refused any attempt by France to place its Jewish subjects originating from
-Tuscany
-, newly conquered by
-Napoleon I
-, under French protection.
-[
-131
-]
-Napoleon had liberated the Jewish ghettos in Italy and simultaneously abolished discrimination against
-Jews in Italy
-, often similar to those in Tunisia.
-In this context, article 2 of the treaty signed on July 10, 1822, with the
-Grand Duchy of Tuscany
-set the duration of the Granas’ stay in Tunisia to two years; beyond this period, they fell under the sovereignty of the bey and were considered equal to the Twansa.
-[
-132
-]
-Reforms
-[
-edit
-]
-At the same time, as Tunisia gradually opened to external influences but also faced European pressures, the sovereign
-Ahmed I Bey
-initiated a policy of reforms.
-[
-133
-]
-Under an act amending the 1822 Tunisian-Tuscan treaty, signed on November 2, 1846, the Granas who settled in Tunisia after the treaty, or those who would arrive later, were granted the right to retain their
-Tuscan
-nationality without any time limitation, unlike the Granas who had arrived before 1822.
-[
-134
-]
-This provision encouraged many Granas of Italian origin to emigrate to Tunisia, where they formed a foreign minority—90 individuals in 1848, reinforced by a few French and British Jews—under the protection of the
-Tuscan consul
-and settled in the free district of Tunis, unlike the older Granas who lived in the
-Hara
-. Those who arrived after the
-unification of Italy
-also benefited from this provision.
-[
-135
-]
-[
-136
-]
-From then on, political action was seen as a means to end the exceptional status affecting Jews, representing "a true rupture in the mental universe of Jewish communities, a rupture that broke the old world of submission to the order of things."
-[
-137
-]
-In 1853, the caid of the Tunisian Jewish community,
-Nessim Samama
-, secured the abolition of the
-forced labor
-obligations that had previously burdened his co-religionists.
-[
-138
-]
-Residual discrimination
-[
-edit
-]
-Despite everything, Jews remained subject to the payment of the
-jizya
-and exceptional taxes demanded by the bey as needed, and they also faced discrimination.
-[
-139
-]
-In terms of clothing, they were required to wear a black
-chechia
-instead of a red one, a black or dark blue turban instead of a white one, and black shoes instead of brightly colored ones.
-[
-140
-]
-They were not allowed to live outside the neighborhoods assigned to them and could not own real estate.
-[
-140
-]
-Finally, when they were victims of harassment or violence, they did not always receive reparations for the harm suffered.
-[
-140
-]
-Sfez affair
-[
-edit
-]
-However, the relationship between Jews and Muslims changed radically from the mid-century due to the intrusion of European colonial powers in Tunisia, particularly France. These powers relied on the presence of Jews to promote their economic and commercial interests, as their situation—often marked by unfair treatment in Tunisian courts—served as a pretext for exerting pressure on the bey.
-[
-141
-]
-The Sfez affair in 1857 illustrates this new context and provided an opportunity for France and the United Kingdom to intervene in the name of defending human rights and fighting
-absolutism
-and
-fanaticism
-to advance their interests.
-[
-142
-]
-Batou Sfez was a Jewish
-coachman
-serving the
-caïd
-of his community, Nessim Samama.
-[
-140
-]
-Following a traffic incident and an altercation with a Muslim, he was accused of insulting
-Islam
-, with witnesses later confirming the scene before a notary.
-[
-140
-]
-Charged and found guilty under
-Maliki
-law despite his protests, he was sentenced by the
-Sharia
-court to
-death
-for
-blasphemy
-and
-decapitation
-, and was executed by sword on June 24.
-[
-140
-]
-The ruler
-Mohammed Bey
-sought through this act to appease resentment stemming from the execution of a Muslim accused of killing a Jew and to demonstrate that his justice system treated all subjects fairly.
-[
-143
-]
-Nevertheless, the severity of the sentence caused great consternation within the Jewish community and among the French and British
-consuls
-,
-Léon Roches
-and Richard Wood. They used the incident to pressure the ruler into adopting liberal reforms similar to those enacted in the
-Ottoman Empire
-in 1839.
-[
-144
-]
-Moreover, the historian Ibn Abi Dhiaf referred to Tunisian Jews as "brothers in the homeland" (
-Ikhwanoun fil watan
-), although he criticized some for excessively seeking the protection of foreign consuls.
-[
-17
-]
-Mohammed Bey (1855–1881) – Failure of the Fundamental Pact
-[
-edit
-]
-A portrait of Mohammed Bey
-The arrival of a French
-squadron
-in the roadstead of Tunis forced the bey to proclaim the
-Fundamental Pact
-on September 10, 1857,
-[
-142
-]
-[
-145
-]
-with the support of Ibn Abi Dhiaf.
-[
-133
-]
-[
-146
-]
-He seemed to represent the most favorable attitude towards Jews among the reformers, while others were more skeptical.
-[
-147
-]
-The text radically changed the status of non-Muslims:
-[
-141
-]
-Tunisian Jews, previously considered second-class subjects, escaped the secular status of
-dhimma
-.
-[
-148
-]
-[
-149
-]
-Article 1 guaranteed "complete security" for persons and their property; Article 4 stated that "Jewish subjects will not be coerced into changing their religion and will not be prevented from practicing their faith"; Article 6 specified that "when the criminal court rules on the penalty incurred by a Jewish subject, Jewish
-assessors
-will also be appointed to the said court";
-[
-150
-]
-and Article 8 stated that all Tunisians, regardless of faith, now enjoyed the same rights and duties. Free access to property ownership and public office was also guaranteed to all.
-[
-151
-]
-The
-beylical
-decree of September 15, 1858, authorized Jews to wear a red
-chechia
-like Muslims and explicitly granted them the right to acquire real estate outside designated quarters.
-[
-149
-]
-Additionally, it appears that the
-jizya
-ceased to be collected with the introduction of the mejba, which applied to all the bey's subjects, and that customs duties were now based on the origin or destination of goods rather than the merchant's religion.
-[
-152
-]
-Jewish girls wearing a
-qufiya
-in Tunis (1887).
-Sadok Bey
-, successor to Mohammed Bey, replaced the text with an organic law, equivalent to a full-fledged constitution, on April 21, 1861, and supplemented it on February 25, 1862, with a civil and criminal code.
-[
-142
-]
-However, rising public expenditures due to new institutions and public works led to an increase in the mejba tax, sparking a revolt in April 1864, exacerbated by
-embezzlement
-and worsening economic conditions. During these events, Jews—accused of benefiting from these reforms—were physically attacked, their property targeted, and synagogues vandalized in Sousse, Gabès, Nabeul, Sfax, and Djerba.
-[
-153
-]
-These disturbances lasted several years, with further outbreaks of violence in Tunis in 1869, where 17 Jews were killed without their murderers being brought to justice.
-Bennot Smadja, "Jewish guide" of Tunis (May 1889).
-Although the constitution was suspended shortly after the revolt—ultimately suppressed—the previous reforms remained in effect, and Jews who suffered losses were compensated by the government.
-[
-154
-]
-Nevertheless, Tunisian courts continued to show particular severity towards Jews, leading Jewish notables to seek the protection of consuls.
-[
-148
-]
-Crimes against Jews also went unpunished.
-[
-155
-]
-The country became a battleground for European influence, with some Jewish notables receiving protection patents that allowed them to retain Tunisian nationality while placing themselves under the jurisdiction of consular courts. The European powers that favored these protections could thereby justify their interventions in the country's internal affairs.
-[
-156
-]
-Hamsa
-displayed in Djerba.
-By the late 19th century, both Granas and Twansa spoke
-Judeo-Tunisian Arabic
-, a
-Judeo-Arabic
-dialect
-transcribed in
-Hebrew script
-but similar to that spoken by Muslims, except for a few pronunciation variations, a reduced emphasis on certain emphatic consonants, and rare Hebrew borrowings strictly in a religious context.
-[
-157
-]
-At the same time, despite growing criticism of the traditional education system, Talmudic studies still produced notable rabbis such as Judah Lévy, Joseph Borgel, Joshua Bessis, Abraham Cohen, and Abraham Hagège.
-[
-158
-]
-In terms of clothing, both groups had adopted Muslim dress with slight variations (men were required to wear dark-colored turbans, and women wore a pointed headdress called
-qufiya
-)
-[
-159
-]
-even recently arrived Granas and wealthy Twansa wore European-style clothing.
-[
-160
-]
-Religious observance remained strong: Saturday was a rest day,
-religious holidays
-were celebrated with varying levels of festivity, and
-pilgrimages
-were made to
-Jerusalem
-. However, superstitions persisted—such as the protective power of the
-Hamsa
-against the
-evil eye
-or the fear of
-djinns
-—shared with Muslims.
-[
-161
-]
-Cultural changes
-[
-edit
-]
-In 1878, shortly before the establishment of French control, the first
-Alliance Israélite Universelle
-school opened in Tunisia.
-[
-21
-]
-The school offered instruction in French; while it included Jewish religious and cultural material as part of the curriculum, it marked a turning point for the community as children began to receive a secular education.
-[
-21
-]
-French Protectorate (1881–1956)
-[
-edit
-]
-Main article:
-French protectorate of Tunisia
-On the eve of French colonisation of Tunisia, the Jewish population was approximately 25,000, most of which was concentrated in Tunis.
-[
-21
-]
-Mourners
-in the
-Borgel Jewish Cemetery
-, Tunis, c. 1900.
-Jewish
-Money changer
-in Tunisia
-A group of Tunisian Jews
-The Jews of Tunisia felt much safer under the
-French protectorate
-.
-[
-citation needed
-]
-Contact with the French colonizers of Tunisia and the official presence of the French facilitated the assimilation of the Jews of Tunisia to
-French culture
-and their
-emancipation
-. Relying on the French revolutionary promise of
-Liberté, égalité, fraternité
-, the Jews hoped for a better life and were very receptive to the new French influences, despite their Christian European source. For the generation born under the protectorate, the French language replaced
-Judeo-Arabic
-as the mother tongue of the Jews of French Tunisia.
-[
-162
-]
-Additionally, more Jewish children began attending state schools throughout the country, which slowly lead to the diffusion of French culture and lifestyle within the Jewish community.
-[
-163
-]
-Political status
-[
-edit
-]
-Initially, the newly arrived Jews did not suffer significantly from
-antisemitism
-. Nevertheless, the newspaper
-La Tunisie française
-frequently published attacks.
-[
-164
-]
-From March 26 to 29, 1898, a fight between Jews and Arabs escalated into riots during which Jews were assaulted, their homes looted, and their shops ransacked, without police intervention (a form of "
-pogrom
-"). Despite convictions being handed down, the responsibility for the unrest was never clearly established.
-[
-165
-]
-The tense context of the
-Dreyfus affair
-further added to fears of violence, though its resolution helped strengthen the Jews' attachment to France and encouraged them to make demands.
-[
-166
-]
-While the French presence led to the continued
-francization
-of the Jewish community, the desired rapprochement sought by its elites was not without challenges.
-[
-167
-]
-Extending French jurisdiction to Tunisian Jews, along with the abolition of the
-rabbinical court
-and the possibility of individual
-naturalization
-, became key priorities for the modernist intelligentsia who had attended French universities.
-[
-168
-]
-These priorities were first articulated by Mardochée Smaja in 1905 and later championed in the weekly newspaper
-La Justice
-founded in 1907.
-[
-169
-]
-Although representatives of the French community in Tunisia supported these ideas, the protectorate administration, the French government under the
-French Third Republic
-, and conservative rabbinical authorities, backed by the most popular factions of the Jewish community, opposed them. Modernist Muslims also criticized these reforms, seeing them as undermining sovereignty and creating inequality among citizens of the same state.
-[
-170
-]
-Proposals to reform naturalization requirements faced hostility from authorities seeking to encourage French settlement and protect relations with the government and Muslim population.
-[
-171
-]
-Community institution reforms were also rejected, as authorities feared they might come under the control of the Granas, who were sympathetic to Italy.
-[
-167
-]
-Though the colonial authorities sought support within the community to strengthen their authority, this secular and liberal elite was quickly excluded from influential positions.
-Facing Italian ambitions over Tunisia and the desire to increase the number of French settlers, a relaxation of naturalization conditions for Tunisian subjects was finally decided on October 3, 1910.
-[
-172
-]
-Although the process remained selective and individual, it opened the possibility for Jews to become French citizens. Tunisian subjects over 21 who demonstrated fluency in French were eligible for naturalization if they met one of the following conditions: voluntary service in the
-French Armed Forces
-, earning a diploma, prize, or medal in higher education, marriage to a Frenchwoman with children, rendering important services to French interests in Tunisia for over ten years, or rendering exceptional services to France.
-[
-173
-]
-These strict conditions kept the number of naturalizations low (93 between 1911 and 1914), respecting the opinions of both French and Muslim populations in Tunisia; however, they fell short of Jewish community expectations.
-[
-174
-]
-Community organizational reforms were also implemented: the position of caid was abolished, and the Relief and Welfare Fund of Tunis was entrusted to an administrative committee appointed by ministerial decree; all cities with significant communities were given similar structures.
-[
-175
-]
-After an intermediate period, the protectorate administration recognized only one chief rabbi from the Twansa community, whose authority was extended across the country, bringing initial unity to the country's community institutions.
-[
-176
-]
-Socio-economic integration
-[
-edit
-]
-Due to its intermediate socio-cultural position, the francized native Jewish elite identified with republican and secular values, rejecting the existing Arab and Muslim order.
-[
-177
-]
-This position allowed for both the social and cultural advancement of the community and the preservation of a strong identity through partnerships with other communities and guarantees provided by France.
-[
-177
-]
-The ideology of the republican school also inspired great enthusiasm within the community.
-[
-177
-]
-The universalist culture it transmitted offered an escape from national questions while providing a path out of domination through socio-professional advancement after centuries of relative stagnation, leading to the acquisition of a more valued social status.
-[
-177
-]
-However this attitude was not universally shared among Tunisian Jews. In October 1900, a group "belonging to two traditions, the Portuguese and the Tunisian", sent a letter to
-Zadoc Kahn
-, the chief rabbi of France and honorary president of the Alliance Israélite Universelle, voicing their anger at the Alliance itself, at the education and values it promoted, and at its attempts to displace and usurp their own traditions with French ones.
-[
-178
-]
-The authors wrote, "Do not forget that the Jews of Tunisia are not merely Jews, which in itself separates them from the French, but they are also Eastern Jews, Arab Jews, and as such so dramatically different from the French".
-[
-178
-]
-Tunisian Jewish couple (early 20th century).
-The relative opening of society, with the emergence of independent social spaces such as schools, cafés, theaters, and sports clubs, contributed to the emancipation of individuals from their groups and religion
-[
-179
-]
-and the decline of traditional Judeo-Arab culture,
-[
-180
-]
-which nevertheless persisted in rural communities. While new synagogues were built in all cities, a notable decline in religious practice was observed, even if it remained the domain of a minority
-[
-181
-]
-among the wealthy and educated. This phenomenon was associated with a reduction in knowledge of
-Hebrew
-due to its absence from public school curriculums,
-[
-182
-]
-where a majority of children of both genders were enrolled, although
-Talmud Torah
-schools continued to operate in major cities.
-[
-183
-]
-Jewish family in Tunis listening to music on a Saturday evening.
-By the end of the century, families with sufficient financial resources sent their children to secondary or even higher education.
-[
-184
-]
-At the same time, the community prospered by taking advantage of the colonial economy.
-[
-185
-]
-While Jews continued to practice traditional trades in commerce, trading, and craftsmanship, young people graduating from schools and training centers were increasingly employed in workshops, shops, and offices.
-[
-186
-]
-They also joined the network of bank and insurance branches established by French companies, ventured into new professions, participated in the creation of early industries, or started agricultural enterprises.
-[
-187
-]
-The proportion of employees increased significantly as young people fluent in French had sufficient mastery of the
-Arabic dialect
-to act as intermediaries between their French employers and Tunisian clients.
-[
-186
-]
-The next generation was encouraged to go beyond primary education and enter liberal professions, such as medicine, pharmacy, or law, often after studying in France or Italy.
-[
-188
-]
-[
-189
-]
-Westernized Jewish families abandoned their traditional dwellings (
-oukalas
-) in the
-Hara of Tunis
-to settle in individual apartments on its outskirts or, for the wealthiest, in the new neighborhoods of Tunis.
-[
-190
-]
-These economic transformations led to a restructuring of Jewish society: a commercial, industrial, and even agricultural
-bourgeoisie
-; a liberal class (lawyers, doctors, pharmacists, and architects); a middle class (traders, artisans, employees, and civil servants); a still-small working class; and a mass of unqualified laborers, the sick, and the disabled with modest means, who survived only through community support and were often concentrated in the Hara.
-[
-191
-]
-Cultural integration
-[
-edit
-]
-Makhlouf Nadjar
-[
-he
-]
-(1888–1963), writer, journalist, and theater director from Sousse.
-Schooling played a significant role in the
-acculturation
-of new generations. As a result, French became a maternal language alongside Arabic, sometimes even replacing it, enabling individuals’ emancipation and
-social mobility
-.
-[
-192
-]
-[
-193
-]
-At the same time, European first names replaced Hebrew or Arabic ones,
-[
-194
-]
-European clothing was adopted, weekly work rhythms were embraced,
-[
-124
-]
-and superstitious beliefs and practices shared with Muslims were abandoned.
-[
-195
-]
-Women also emancipated themselves through changes in clothing, although at a slower pace than men and with intergenerational and intrafamilial gaps.
-[
-190
-]
-Many Tunisian Jews became eligible for French citizenship under the
-Morinaud laws
-of 1923.
-[
-196
-]
-Simultaneously, marital and paternal authority was moderated by the development of female education, the growing influence of modernist values, and the higher education levels of new generations.
-[
-190
-]
-Additionally, the age of marriage increased,
-consanguineous marriages
-became rarer, intermarriages between Twansa and Granas became more frequent, and
-nuclear families
-became more distinct from
-extended families
-.
-[
-180
-]
-First page of
-The Count of Monte Cristo
-in seven volumes, translated into Judeo-Arabic by the
-ceramist
-and journalist
-Jacob Chemla
-(1889).
-With the dissemination of Hebrew printing in Tunis, a few years after the establishment of the protectorate, a new era of significant intellectual and social activity began, encompassing poetry,
-prose
-essays, and journalism.
-[
-197
-]
-Many individuals found their vocation as poets,
-songwriters
-, storytellers, essayists, or journalists. Over 25
-periodicals
-in Judeo-Tunisian Arabic
-[
-198
-]
-emerged, although this phenomenon faded quickly after
-World War I
-.
-[
-199
-]
-[
-200
-]
-Religious works, Arabic literature, folklore, translations of European literature, and original creations were published.
-[
-198
-]
-Habiba Msika
-.
-Other writings, often long ballads or rhymed narratives, described events within the community, whether social, cultural, or domestic, but especially the evolving customs and behaviors of a modernizing community.
-[
-199
-]
-Distributed as leaflets or small booklets, these texts were sometimes written in loosely transcribed
-Latin characters
-and were always based on popular tunes.
-[
-199
-]
-Quickly, traditional local poetic genres emerged.
-[
-199
-]
-[
-201
-]
-In a
-bibliography
-compiled between 1904 and 1907 by
-Eusèbe Vassel
-,
-[
-202
-]
-he cataloged poetic works by prolific pioneers like
-Simah Levy
-.
-[
-203
-]
-Vassel also cited
-Haï Vita Sitruk
-and
-Malzouma on the Disappointments of This World,
-written by an anonymous author.
-[
-203
-]
-Hundreds of popular poems, initially composed in Tunis and later in other communities like
-Djerba
-and
-Sousse
-, told Jewish traditions in a novel way that some traditionalist authors considered "threatening".
-[
-203
-]
-These creations also allowed, for the first time in printed form, the dissemination of lyrical or romantic texts, influenced by both local production and
-Arab-Muslim works
-from Egypt, which were very popular in Tunisia at the time.
-[
-200
-]
-During this period, Jewish artists like
-Leïla Sfez
-,
-Habiba Msika
-, and Cheikh El Afrit gained widespread fame and contributed to the revival of
-Tunisian music
-.
-[
-204
-]
-[
-205
-]
-A cultural shift also occurred with the emergence of Jewish painters such as
-Moses Levy
-, Maurice Bismouth, David Junès, and Jules Lellouche.
-[
-205
-]
-[
-additional citation(s) needed
-]
-Albert Samama-Chikli directed the first short film in the history of
-Tunisian cinema
-,
-Zohra
-, in 1922.
-[
-citation needed
-]
-World War II
-[
-edit
-]
-Following the
-armistice of 22 June 1940
-, the French Protectorate of Tunisia became part of
-Vichy France
-, the new French state ruled by collaborationist Marshal
-Philippe Pétain
-during France's occupation by
-Nazi Germany
-in
-World War II
-.
-[
-206
-]
-Under the rule of Pétain's collaborationist regime, the Jews of Vichy France and Vichy Tunisia were subjected to the two
-antisemitic
-Statut des Juifs
-(Jewish Statutes of October 3, 1940, and June 2, 1941), like the Jews in mainland France.
-[
-196
-]
-Thus, discriminatory legislation defined the Jews, restricted them in the public service, in educational institutions and journalism, and in liberal professions (numerus clausus), counted them (Jewish census), and forced them to register their property to be subsequently
-aryanized
-. Consequently, Jews found themselves in their prior inferior status of "natives" and were impoverished. In August 1941,
-Xavier Vallat
-, head of the Office for Jewish Affairs (
-Commissariat Général aux Questions Juives
-), came from
-Metropolitan France
-to check the matter of the
-Jewish question
-.
-[
-196
-]
-According to an article on the
-United States Holocaust Memorial Museum
-(USHMM) website, "The history of the
-Holocaust
-in France's three North African territories (the three departments, 91, 92, and 93, in French Algeria, the two French protectorates of Morocco and Tunisia) is intrinsically tied to France's fate during this period."
-[
-207
-]
-Holocaust scholar
-Martin Gilbert
-specified that the persecution of the Jews of
-French North Africa
-was an integral part of the Holocaust in France.
-"The German government was unable to implement in Tunisia the 'Final Solution' that it had already decided to apply to the Jewish question. Nazi Germany could not organize the extermination of the Jewish population on-site without risking revealing to the world what it intended to conceal for as long as possible. Nor could it consider transporting the Jews of Tunisia to the extermination camps established in Eastern Europe, as this would have required using ships and planes that were needed for more pressing military needs."
-[
-208
-]
-The Jews of Vichy-French North Africa were relatively fortunate because their distance from
-Nazi concentration camps
-in
-Central
-and Eastern Europe permitted them to avoid the fate of their coreligionists in Metropolitan France. Immediately after the
-Allied
-landings in Vichy-Algeria and Vichy-Morocco, the Germans occupied Vichy Tunisia. On November 23, 1942, the Germans arrested Moises Burgel, the president of the Tunis Jewish community, and several other prominent Jews. The Jews of Vichy Tunisia were spared the mass deportations and mass murder that happened in Europe.
-Tunisian Jews tear off the
-yellow badge
-from their clothes, encouraged by the Allied soldiers who liberated their village from Vichy French rule
-Part of
-a series
-on
-Jewish exodus from the Muslim world
-Background
-History of the Jews under Muslim rule
-Sephardi
-Mizrahi
-Yemeni
-Zionism
-Arab–Israeli conflict
-1948 war
-Suez Crisis
-Six-Day War
-Antisemitism in the Arab world
-Farhud
-Aleppo
-Aden
-Oujda and Jerada
-Tripolitania
-Cairo
-Baghdad
-Tripoli
-Exodus by country
-Morocco
-Cadima
-Operation Mural
-Operation Yachin
-Pisces
-Affair
-Yemen
-Iraq
-Egypt
-Lebanon
-Iran
-Tunisia
-Hurum air disaster
-Remembrance
-Awareness day
-JIMENA
-JJAC
-WOJAC
-The Forgotten Refugees
-Related topics
-Expulsions and exoduses of Jews
-Aliyah
-Historical Jewish population
-Islamic–Jewish relations
-v
-t
-e
-When the Nazis invaded Vichy Tunisia, the country was home to some 100,000 Jews.
-[
-209
-]
-According to
-Yad Vashem
-, the Nazis imposed antisemitic policies including forcing Jews to wear the
-yellow badge
-, fines, and confiscation of property. More than 5,000 Jews were sent to forced
-labor camps
-, where 265 are known to have been murdered.
-[
-210
-]
-[
-211
-]
-An additional 160 Jews of Tunisia living in France were sent to
-extermination camps
-in continental Europe.
-Khaled Abdul-Wahab
-, a Muslim Arab of Vichy Tunisia, "the Arab Schindler," was the first Arab nominated for the Israeli
-Righteous Among the Nations
-award.
-[
-212
-]
-Post-War period
-[
-edit
-]
-Between the end of World War II and the independence of Tunisia in March 1956, there was deep debate in the Tunisian Jewish community over Zionism.
-[
-213
-]
-Anti-Jewish attacks in
-Hafsia
-in 1952 and conflict surrounding the independence struggle resulted in the first wave of emigration.
-[
-214
-]
-Continued emigration
-[
-edit
-]
-Jewish woman and children at the entrance of a synagogue in Djerba (1950).
-In June 1950, the AIU services recorded a Jewish population of 5,500 people in Sousse, 500 in Moknine, 300 in Mahdia, 150 in Kairouan, 70 in Monastir, and 60 in
-Enfidaville
-.
-[
-215
-]
-After the emigration of their main leaders to Israel in 1952, they were dismantled but reconstituted in 1955 by the
-Mossad
-and its armed branch, known as
-Misgeret
-.
-[
-216
-]
-Shlomo Havillio, chief commander of
-Misgeret
-in Paris between 1955 and 1960 and responsible for operations in the Maghreb, later admitted that "the initial fears about possible reactions from Tunisian nationalists against Jews were much more imaginary than real [...] The only concern could come from the presence of revolutionaries in Tunisian society after independence."
-[
-216
-]
-In this context, the leaders of the
-Neo Destour
-, while not supporting Zionism, stated they would not prevent Jews from leaving Tunisia for Israel.
-[
-217
-]
-For instance,
-Habib Bourguiba
-declared in August 1954:
-The Neo-Destourians are entirely opposed to antisemitism and discrimination against Tunisian Jews. They stand for full equality of rights [...] The Tunisian government and the Neo-Destourians will do everything to ensure the well-being of Jews, but if some Jews prefer to emigrate to Israel for one reason or another, we will not make any difficulties for them.
-[
-218
-]
-Upon its legalization in Tunisia, the
-Jewish Agency
-opened a special office in
-Tunis
-and later branches in other cities.
-[
-216
-]
-These offices, run by Israeli representatives and local Jewish activists, organized the emigration of a significant portion of the Jewish populations from cities such as Sousse, Sfax, and Tunis, as well as southern regions like
-Ben Gardane
-,
-Médenine
-,
-Gafsa
-,
-Gabès
-, and
-Djerba
-.
-[
-216
-]
-This phenomenon primarily affected the more traditionalist and poorer communities with little to lose.
-[
-219
-]
-In total, over 25,000 individuals emigrated between 1948 and 1955.
-[
-219
-]
-Consequently, the Jewish population declined by 18.6% over ten years, with decreases of 7.7% in the Tunis region, 33.5% in the North, 26.9% in the center, 38.9% in the South, and 44.4% in the extreme South.
-[
-220
-]
-While the less assimilated, working-class groups primarily emigrated to Israel, the intellectual elite split between France and Israel.
-[
-221
-]
-The cultured and now French-speaking Livornese community saw few members ultimately settle in Italy.
-[
-221
-]
-Independence of Tunisia
-[
-edit
-]
-In post-independence Tunisia, the economic and political situation led to the departure of most Jews who had chosen to remain in the country after independence.
-[
-214
-]
-Most lawyers, affected by the Arabization of the judicial system, decided to settle in France, where their clientele relocates, as did doctors and dental surgeons.
-[
-222
-]
-Public officials were excluded from certain ministries, such as Foreign Affairs, National Defense, and State Security, and did not always benefit from promotions based on seniority and competence.
-[
-223
-]
-Furthermore, the administration systematically favored companies owned by Muslim Tunisians, while businesses owned by Jewish Tunisians were subjected to stricter tax audits and heavier taxation.
-[
-223
-]
-The socialist turn in the government's economic policy ultimately stifles most of these businesses, which had disappeared by the early 1970s.
-[
-224
-]
-In this context, the
-Bizerte crisis
-, which occurred in the summer of 1961, raised fears of reprisals and a violent outbreak of
-antisemitism
-following rumors that Jews had assisted French troops.
-[
-citation needed
-]
-This led to the departure of 4500 people from the country in 1962.
-[
-225
-]
-[
-226
-]
-It was followed by an even larger wave of emigration,
-[
-227
-]
-including the singer
-Acher Mizrahi
-during the
-Six-Day War
-. Thousands of demonstrators filled the streets of Tunis on June 5, 1967, destroying Jewish-owned shops and setting fire to places of worship, including the
-Grand Synagogue of Tunis
-, where books and
-Torah scrolls
-were burned. However, there were no reports of violence against individuals.
-[
-225
-]
-Despite President Bourguiba's condemnation of the events, apologies to Tunisia's chief rabbi Mordekhai Meiss Cohen,
-[
-citation needed
-]
-and promises the same evening to uphold the rights and safety of the community,
-[
-225
-]
-[
-227
-]
-an additional 7000 Jews emigrated to France and
-2,362
-to Israel.
-[
-216
-]
-In general, the Jewish population that remains, about 12,000 people (including
-10,000
-of Tunisian nationality), three-quarters of whom are concentrated in the Tunis region at the beginning of the 1970s,
-[
-228
-]
-consists of bourgeois families with substantial wealth justifying their presence in Tunisia, members of the middle class convinced they can continue practicing their profession under similar conditions, members of the intelligentsia wanting to contribute to the country's development, and individuals unable to find better opportunities abroad due to a lack of resources.
-[
-227
-]
-[
-229
-]
-In 1971, the assassination of a rabbi in the heart of the capital triggered a new wave of emigration.
-[
-81
-]
-The
-Yom Kippur War
-in October 1973, the
-Operation Peace for Galilee
-on June 6, 1982, the establishment of the
-Palestine Liberation Organization
-(PLO) headquarters in
-Hammam Chott
-, and its
-bombing
-by the
-Israeli Air Force
-on October 1, 1985, further spurred additional waves of emigration.
-[
-227
-]
-Several incidents also occurred, such as during
-Yom Kippur
-in 1982, when Jews were targeted in
-Zarzis
-,
-Ben Gardane
-, and
-Djerba
-.
-[
-230
-]
-In October 1983, the
-Zarzis Synagogue
-was ravaged by a fire attributed by the Jewish community to extremist groups.
-[
-230
-]
-In 1985, a soldier guarding the Ghriba synagogue in Djerba opened fire on worshippers, killing five people, including four Jews.
-[
-231
-]
-According to Frédéric Lasserre and Aline Lechaume, the shooter was a policeman on duty outside a synagogue on the island who, officially described as acting "in a fit of madness," killed two worshippers and injured six.
-[
-227
-]
-Another incident occurred toward the end of President Bourguiba's tenure: the
-Club Med
-in
-Korba
-was vandalized after an operator had vacationers sing the
-Israeli national anthem
-.
-[
-227
-]
-Following these incidents, the government implemented measures to protect the Jewish community.
-[
-232
-]
-[
-233
-]
-Following independence, a mixed picture emerged.
-[
-214
-]
-Arab Spring (post-2011)
-[
-edit
-]
-Lag Ba'Omer
-procession returning to the
-El Ghriba synagogue
-in Er-Riadh (Hara Sghira), Djerba 2007
-After the
-Tunisian revolution
-,
-Ennahda
-became the leading political force in the country, elected as the largest party in the transitional government. The party's leader,
-Rached Ghannouchi
-, sent a delegation to the Jews in
-Djerba
-, assuring them that they have nothing to worry about in a democratic Tunisia, where the Islamists would play a larger role. He even sent gifts to the Jewish nursing homes in Tunis.
-[
-234
-]
-In November 2012, the community asked for the army's protection when a policeman was arrested after plotting to kidnap a young Jew for a ransom.
-[
-235
-]
-In 2011, the Israeli cabinet announced that it had allocated funding to help Tunisian Jews move to Israel due to growing manifestations of antisemitism and the difficult economic situation.
-[
-236
-]
-In January 2014, the Ennahda-led government voluntarily stepped aside and a transitional government, appointed to rule during the drafting of the
-new constitution
-until democratic elections would be held later in the year, took office. The new secular constitution for the first time explicitly protected not only freedom of religion, but freedom of conscience (freedom to become atheist, leave or change religions), and explicitly protected minorities such as Jews from official or unofficial discrimination. The new Tunisian constitution is the first of its kind in the Maghreb and the Arab world in embracing both Arabism and liberal
-secularism
-, and is seen as a model for other countries to adopt. The democratically elected constitutional committee, dominated by
-Ennahda
-, also rejected terms which would have forbidden relations with Israel.
-In 2026, pilgrimage and religious activity in the
-El Ghriba Synagogue
-in
-Djerba
-were officially reinstated and maintained under heightened security measures.
-[
-237
-]
-[
-238
-]
-[
-239
-]
-Attendance remained low with an estimated 200 International visitors, shadowed by the 2023
-attack
-that killed two worshipers.
-[
-240
-]
-[
-241
-]
-Education and culture
-[
-edit
-]
-The Jewish community in Tunis operates three primary schools, two secondary schools, and a
-yeshiva
-. The Jewish community in Djerba operates one kindergarten, two primary schools, two secondary schools, and a yeshiva. There is also a Jewish primary school and
-synagogue
-in the coastal city of
-Zarzis
-.  The Jewish community also has two homes for the aged. Tunisia's first Jewish museum opened in 2012.
-[
-242
-]
-In 2015, Tunis' last kosher restaurant closed due to security concerns.
-[
-243
-]
-Synagogues
-[
-edit
-]
-For a more comprehensive list, see
-List of synagogues in Tunisia
-.
-Grand Synagogue of Tunis
-Zarzis Synagogue
-The most famous synagogue in Tunisia is the
-El Ghriba Synagogue
-in the village of
-Hara Sghira
-on Djerba. The current building was constructed in late 19th or early 20th century, but the site is believed to have had a synagogue on it for the past 1,900 years.
-[
-244
-]
-Tunisian Jews have for centuries made an annual pilgrimage to the synagogue on
-Lag Ba'Omer
-. On April 11, 2002, a truck full of explosives
-was detonated
-close to the synagogue, killing 21 people (of whom 14 were German tourists and 2 Frenchmen), and wounding over 30.
-Al Qaeda
-claimed responsibility.
-Hayyim Madar
-was the
-chief rabbi
-until his death on December 3, 2004. Memorial services were held at the Beit Mordekhai Synagogue in
-La Goulette
-, Tunis, and the El Ghriba synagogue on the island of Djerba.
-[
-245
-]
-[
-246
-]
-[
-247
-]
-In May 2023, a Tunisian police officer
-killed four in a shooting
-near El Ghriba synagogue on Djerba, also the site of 2002's Ghriba synagogue bombing. An attacker fired a gun into a crowd visiting the house of worship during an annual pilgrimage event.
-[
-248
-]
-In October 2023, during pro-Palestine protests riots sparked by blame on Israel for the
-Al-Ahli Arab Hospital bombing
-, hundreds of rioters hammered away the building's walls, set fire and planted Palestinian flags at the site of a historic synagogue in Tunisia,
-El Hamma Synagogue
-, with videos showing people attacking it without police intervention.
-[
-249
-]
-[
-250
-]
-[
-251
-]
-Films and documentaries
-[
-edit
-]
-The Bible's Witness: The Jews of Djerba
-(1978) by Alain Cohen and Georges Nizan. French television. Documentary on the 2,500 year old community in Djerba and their culture and traditions.
-[
-252
-]
-[
-253
-]
-My Country Left Me
-(1995) by Karin Albou. Three generations of French Jews from Tunisia reflect on the pain of both exile and assimilation into France.
-[
-254
-]
-Journey from Tunisia
-(2017) by Jonathan Maimon. Jewish memories of Tunisia from those born in Gabès, including life under the Nazi occupation in 1943.
-[
-255
+In addition to smaller productions of other agricultural products, like
+almond
+(66 thousand tons) and
+sugar beet
+(76 thousand tons).
+[
+44
 ]
 See also
 [
-edit
+edit source
 ]
-Arab Jews
-Maghrebi Jews
-Mizrahi Jews
-History of the Jews in Djerba
-Antisemitism by country#Tunisia
-Antisemitism in the Arab world#Tunisia
-Antisemitism in Islam
-History of the Jews under Muslim rule
-Islamic–Jewish relations
-Jewish exodus from the Muslim world
-Jews outside Europe under Nazi occupation
-Or Torah Synagogue
-in Acre, Israel
-Israeli people of Tunisian descent
+Economy of Africa
+List of companies based in Tunisia
+United Nations Economic Commission for:
+Africa
+&
+Western Asia
 References
 [
-edit
+edit source
 ]
-1
-2
-Sebag 1991
-, p.
-25
-.
 ↑
-Sebag 1991
-, p.
-54
+"World Economic Outlook Database, April 2019"
 .
-1
-2
-Sebag 1991
-, pp.
-64–65
+IMF.org
 .
-1
-2
-Bassiouney, R. (2009).
-Arabic sociolinguistics
-. Edinburgh University Press, pp. 104.
-↑
-Silver Ochayon, Sheryl (October 2011).
-"The Jews of Algeria, Morocco and Tunisia"
-.
-yadvashem.org
-. Yad Vashem, the World Holocaust Remembrance Center
+International Monetary Fund
 . Retrieved
-November 17,
-2023
-.
-↑
-"Israel's advent altered outlook for Middle East Jews"
-.
-Reuters
-. May 5, 2008. Archived from
-the original
-on December 22, 2015
-. Retrieved
-November 30,
-2013
-.
-↑
-"1967 War – impact on Jews in Arab countries"
-.
-sixdaywar.co.uk
-. Archived from
-the original
-on May 19, 2007
-. Retrieved
-November 21,
+29 September
 2019
 .
 ↑
-Knipp, Kersten (November 1, 2018).
-"Tunisia's Jews: Determined to stay"
+"World Bank Country and Lending Groups"
 .
-dw.com
+datahelpdesk.worldbank.org
 .
-↑
-"Tunisia"
-.
-eurojewcong.org
-. Archived from
-the original
-on March 30, 2017
+World Bank
 . Retrieved
-May 4,
-2017
-.
-↑
-Sebag 1991
-, p.
-192
-.
-↑
-"Arabic, Judeo-Tunisian"
-.
-Ethnologue.com
-. Retrieved
-November 21,
+29 September
 2019
 .
 ↑
-"Hirschberg, H. Z. 1903–1976 (Haim Zeev)
-[
-WorldCat Identities
-]
-"
+"Population, total - Tunisia"
 .
-↑
-Sebag, Paul (1991).
-Histoire des Juifs de Tunisie
-: des origines à nos jours
-(in French). Paris: Editions L'Harmattan. p.
-5.
-ISBN
-9782296240360
+data.worldbank.org
 .
-↑
-"Page in Ladino in a Jewish daily newspaper in Tunis"
-. Archived from
-the original
-on November 17, 2018
+World Bank
 . Retrieved
-May 4,
-2017
-.
-↑
-"Sebag, Paul
-[
-WorldCat Identities
-]
-"
-.
-↑
-Speech by Claude Nataf, president of the Society for the History of the Jews of Tunisia, reproduced in
-Sonia Fellous Ed. (2003).
-Juifs et musulmans de Tunisie: Fraternité et déchirements
-(in French). Paris: Somogy. p.
-27.
-ISBN
-978-2-85056-632-5
-.
-.
-1
-2
-Habib Kazdaghli.
-"Contributions and Role of Communities in the History of Modern and Contemporary Tunisia"
-.
-barthes.ens.fr
-(in French)
-. Retrieved
-December 26,
-2024
-.
-1
-2
-"Memories of World War II in Tunisia"
-(PDF)
-.
-profburp.info
-(in French)
-. Retrieved
-December 26,
-2024
-.
-↑
-Sebag 1991
-, pp.
-8–9
-.
-1
-2
-3
-Allagui 2016
-, pp.
-11–12
+3 October
+2019
 .
 1
 2
@@ -3705,220 +1148,11 @@ Allagui 2016
 4
 5
 6
-7
-8
-Simon, Reeva S.; Laskier, Michael M.; Reguer, Sara (2003).
-The Jews of the Middle East and North Africa in Modern Times
-. Columbia University Press. pp.
-445–
-447.
-ISBN
-978-0-231-10797-6
+"World Economic Outlook Database, October 2025"
 .
-↑
-Wilensky, David A.M. (May 24, 2023).
-"FIRST PERSON: Tragedy can't overshadow joy of our Tunisian Jewish pilgrimage"
-.
-J
-. Archived from
-the original
-on May 21, 2024
+IMF.org
 . Retrieved
-December 26,
-2024
-.
-↑
-Rajak, Tessa (2001).
-The Jewish dialogue with Greece and Rome: studies in cultural and social interaction
-. Arbeiten zur Geschichte des antiken Judentums und des Urchristentums. Leiden; Boston: Brill. pp.
-306, 317.
-ISBN
-978-90-04-11285-8
-.
-↑
-Kasher, Aryeh (1987).
-"The nature of Jewish migration in the Mediterranean countries in the Hellenistic-Roman era"
-.
-Mediterranean Historical Review
-.
-2
-(1):
-46–
-75.
-doi
-:
-10.1080/09518968708569518
-.
-ISSN
-0951-8967
-.
-1
-2
-Kopelman NM, Stone L, Wang C, Gefel D, Feldman MW, Hillel J, Rosenberg NA (December 2009).
-"Genomic microsatellites identify shared Jewish ancestry intermediate between Middle Eastern and European populations"
-.
-BMC Genetics
-.
-10
-80.
-doi
-:
-10.1186/1471-2156-10-80
-.
-PMC
-2797531
-.
-PMID
-19995433
-.
-1
-2
-Ostrer H, Skorecki K (February 2013).
-"The population genetics of the Jewish people"
-.
-Human Genetics
-.
-132
-(2):
-119–
-131.
-doi
-:
-10.1007/s00439-012-1235-6
-.
-PMC
-3427049
-.
-PMID
-22359220
-.
-↑
-Campbell CL, Palamara PF, Dubrovsky M, Botigué LR, Fellous M, Atzmon G, Oddoux C, Pearlman A, Haber M, Ostrer H (August 2012).
-"North African Jewish and non-Jewish populations form distinctive, orthogonal clusters"
-.
-Proceedings of the National Academy of Sciences of the United States of America
-.
-109
-(34):
-13865–
-13870.
-Bibcode
-:
-2012PNAS..10913865C
-.
-doi
-:
-10.1073/pnas.1204840109
-.
-PMC
-3543766
-.
-PMID
-22869736
-.
-↑
-"Study completes genetic map of N. African Jews"
-.
-The Jerusalem Post
-. Retrieved
-December 8,
-2024
-.
-↑
-Samama, Thierry (2020),
-Sources for the Genealogy of Tunisian Jews
-(PDF)
-1
-2
-3
-4
-"Quelques aspects de la communauté juive de Carthage au II
-e
-s. d'après Tertullien".
-Vivre l'Antiquité
-. Scripta Receptoria (in French). Bordeaux: Ausonius. 2016. pp.
-317–
-319.
-doi
-:
-10.4000/books.ausonius.10970
-.
-ISBN
-978-2-35613-159-1
-.
-↑
-"The Borgel Cemetery: A Place of Memory..."
-leborgel.com
-(in French)
-. Retrieved
-December 8,
-2024
-.
-.
-↑
-Sebag 1991
-, p.
-28
-.
-↑
-Hirschberg 1974
-, p.
-50.
-↑
-Mounir Fantar (2009).
-"Sur la découverte d'un espace cultuel juif à Clipea (Tunisie)"
-.
-CRAI
-(in French).
-153
-(3):
-1083–
-1101.
-doi
-:
-10.3406/crai.2009.92582
-. Retrieved
-August 21,
-2022
-.
-.
-↑
-Sebag 1991
-, pp.
-28–29
-1
-2
-Sebag 1991
-, p.
-30
-↑
-Sebag 1991
-, p.
-26
-.
-↑
-Sebag 1991
-, p.
-31
-.
-1
-2
-Sebag 1991
-, p.
-32
-.
-1
-2
-Sebag 1991
-, p.
-33
-↑
-"Imperatori Theodosiani Codex"
-.
-The Latin Library
-(in Latin). 16.8.25–27
-. Retrieved
-May 8,
+18 October
 2025
 .
 1
@@ -3926,1901 +1160,346 @@ May 8,
 3
 4
 5
-Taïeb 2000
-, p.
-25
-1
-2
-3
-4
-Sebag 1991
-, p.
-34
-1
-2
-3
-Sebag 1991
-, p.
-35
-.
-↑
-Sebag 1991
-, p.
-36
-.
-↑
-Balta, Paul
-; Dana, Catherine; Dhoquois-Cohen, Régine (2003).
-The Jews' Mediterranean: Exoduses and Settlements
-. Paris:
-Éditions L'Harmattan
-. p.
-77.
-ISBN
-978-2-7475-5375-9
-.
-.
-↑
-Ibn Khaldun
-(1978).
-History of the Berbers and Muslim Dynasties in North Africa
-. Vol.
-I. Translated by
-William Mac Guckin de Slane
-. Paris: Paul Geuthner. pp.
-208–
-209.
-ISBN
-978-2-7053-0047-0
-.
-.
-↑
-Gabriel Camps
-(1980).
-The Berbers: At the Margins of History
-. Paris: Édition des Hespérides.
-ISBN
-978-2-85588-006-8
-.
-.
-↑
-Sebag 1991
-, p.
-45
-.
-1
-2
-Taïeb 2000
-, p.
-26
-.
-↑
-Sebag 1991
-, pp.
-49–50
-1
-2
-3
-4
-5
-Stillman, Norman (April 20, 2012). "The Jews in the Medieval Arabic-Speaking World". In Levenson, Alan T. (ed.).
-The Wiley-Blackwell History of Jews and Judaism
-(1
-ed.). Wiley. p.
-217.
-doi
-:
-10.1002/9781118232897
-.
-ISBN
-978-1-4051-9637-6
-.
-↑
-Sebag 1991
-, pp.
-52–53
-.
-↑
-Sebag 1991
-, p.
-53
-.
-1
-2
-Fenton 2003
-, p.
-59
-.
-↑
-Jalloul 2003
-, p.
-110
-.
-↑
-Sebag 1991
-, pp.
-54–56
-1
-2
-Taïeb 2000
-, p.
-27
-.
-↑
-Sebag 1991
-, p.
-51
-.
-↑
-Sebag 1991
-, p.
-46
-↑
-Kchir 2003
-, p.
-82
-.
-↑
-Sebag 1991
-, pp.
-46–47
-.
-↑
-Sebag 1991
-, p.
-48
-.
-↑
-Sebag 1991
-, p.
-49
-.
-1
-2
-Stillman, Norman (June 8, 2022).
-Arab Dress, A Short History: From the Dawn of Islam to Modern Times
-. BRILL. pp.
-104–
-105, 109.
-ISBN
-978-90-04-49162-5
-. Retrieved
-October 3,
-2024
-.
-↑
-Simonsohn, Šelomō (1997).
-The Jews in Sicily: 383-1300
-. BRILL. p.
-xxiv.
-ISBN
-978-90-04-10977-3
-. Retrieved
-October 3,
-2024
-.
-1
-2
-Taïeb 2000
-, p.
-28
-.
-↑
-Sebag 1991
-, p.
-57
-.
-1
-2
-Jalloul 2003
-, p.
-104
-.
-↑
-Hirschberg 1974
-, p.
-120.
-1
-2
-3
-Taïeb 2000
-, p.
-29
-.
-↑
-Hirschberg 1974
-, p.
-133.
-↑
-Sebag 1991
-, p.
-66
-.
-↑
-Sebag 1991
-, p.
-73
-.
-1
-2
-Stillman, Norman (June 8, 2022).
-Arab Dress, A Short History: From the Dawn of Islam to Modern Times
-. BRILL. pp.
-109,
-113–
-114.
-ISBN
-978-90-04-49162-5
-. Retrieved
-October 3,
-2024
-.
-↑
-Hirschberg 1974
-, p.
-373.
-↑
-Hirschberg 1974
-, p.
-374.
-↑
-Hirschberg 1974
-, p.
-377.
-↑
-Taïeb 2000
-, p.
-30
-.
-↑
-Sebag 1991
-, p.
-69
-.
-1
-2
-Robert Attal; Claude Sitbon (1986).
-De Carthage à Jérusalem
-: La communauté juive de Tunis
-(in French). Tel Aviv:
-Beth Hatefutsoth
-.
-.
-↑
-Taïeb 2000
-, p.
-31
-.
-↑
-Sebag 1991
-, pp.
-73–74
-.
-1
-2
-Hirschberg 1974
-, p.
-381.
-↑
-Hirschberg 1974
-, p.
-382.
-↑
-Hirschberg 1974
-, p.
-385.
-↑
-Sebag 1991
-, pp.
-72–73
-.
-↑
-Hirschberg 1974
-, p.
-445.
-↑
-Noah, Mordecai Manuel
-(1819).
-Travels in Europe and Africa
-. New York. p.
-308.
-↑
-Sebag 1991
-, pp.
-80–81
-1
-2
-3
-Hagège
-&
-Zarca 2001
-, p.
-12
-↑
-Sebag, Paul (1989).
-Tunis au 17ème siècle
-: une cité barbaresque au temps de la course
-(in French). Paris:
-L'Harmattan
-. p.
-56.
-ISBN
-978-2-7384-0449-7
-.
-1
-2
-Paul Sebag,
-Tunis in the 17th century
-, p. 54.
-↑
-Taïeb 2000
-, p.
-44.
-1
-2
-3
-4
-5
-Taïeb 2000
-, p.
-40
-.
-1
-2
-Les Juifs de Livourne en Tunisie
-: une minorité européenne en terre d'islam
-. Presses Universitaires de Rennes. June 17, 2022.
-ISBN
-978-2-7535-8737-3
-. Retrieved
-December 22,
-2024
-.
-↑
-Sebag 1991
-, p.
-84-86.
-1
-2
-3
-4
-Sebag 1991
-, p.
-96
-.
-↑
-Claude Hagège, «
-Le multilinguisme dans la sphère judéo-tunisienne
-»,
-p.
-304
-.
-1
-2
-3
-4
-Taïeb 2000
-, p.
-41
-.
-↑
-Taïeb 2000
-, pp.
-40–41
-.
-↑
-Lasserre
-&
-Lechaume 2003
-, pp.
-124–125
-.
-1
-2
-3
-Sebag 1991
-, p.
-97
-.
-1
-2
-Taïeb 2000
-, p.
-44
-1
-2
-Taïeb 2000
-, p.
-36
-.
-1
-2
-Taïeb 2000
-, p.
-39
-1
-2
-Sebag 1991
-, p.
-94
-↑
-Sebag 1991
-, pp.
-94–95
-.
-1
-2
-3
-4
-Sebag 1991
-, p.
-95
-↑
-Jews and Muslims violated what
-Claude Cahen
-calls "the program of persecution, harassment, and exclusion of the rigorists", according to
-Kchir 2003
-, p.
-83
-.
-↑
-Sebag 1991
-, pp.
-88–89
-.
-1
-2
-3
-Taïeb 2000
-, p.
-42
-.
-↑
-Sebag 1991
-, p.
-88
-.
-1
-2
-Sebag 1991
-, p.
-98
-.
-↑
-Sebag 1991
-, p.
-99
-.
-↑
-Sebag 1991
-, p.
-100
-.
-↑
-Hirschberg, Haïm Zeev (1981). "From the Ottoman conquests to the present time".
-A History of the Jews in North Africa
-. Vol.
-II. Leiden: E.J. Brill. p.
-130.
-ISBN
-978-90-04-06295-5
-.
-.
-↑
-This article
-incorporates text from a publication now in the
-public domain
-:
-Deutsch, Gotthard; Seligsohn, Max (1901–1906).
-"Nehorai Garmon"
-. In
-Singer, Isidore
-; et
-al. (eds.).
-The Jewish Encyclopedia
-. New York: Funk & Wagnalls.
-.
-↑
-Sebag 1991
-, pp.
-100–101
-.
-↑
-Sebag 1991
-, p.
-101
-.
-↑
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, pp.
-37–38
-.
-↑
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, p.
-37
-.
-↑
-Hagège
-&
-Zarca 2001
-, pp.
-19–20
-.
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-20
-1
-2
-3
-Sebag 1991
-, p.
-90
-.
-↑
-Taïeb 2000
-, p.
-45
-.
-1
-2
-Taïeb 2000
-, p.
-46
-.
-↑
-Sebag 1991
-, p.
-114
-.
-1
-2
-3
-4
-Sebag 1991
-, p.
-116
-.
-1
-2
-Sebag 1991
-, p.
-115
-.
-1
-2
-3
-Sebag 1991
-, pp.
-102–103
-.
-↑
-Sebag 1991
-, pp.
-103–104
-.
-1
-2
-Taïeb 2000
-, p.
-49
-.
-↑
-Sebag 1991
-, pp.
-110–111
-.
-↑
-Sebag 1991
-, pp.
-111–112
-.
-↑
-Hagège
-&
-Zarca 2001
-, p.
-12.
-↑
-Jacques Taïeb, "Réalité et perception de la condition juive en Tunisie (1705–1857): un modèle maghrébin?",
-p.
-129
-.
-↑
-Allali, Jean-Pierre (2003). "Les Juifs de Tunisie
-: saga millénaire". In Rahmani, Moïse (ed.).
-L'exode oublié
-: Juifs des pays arabes
-(in French). Le Mont-Pèlerin: Raphaël.
-ISBN
-978-2-8778-1070-8
-.
-↑
-Sebag 1991
-, pp.
-116–117
-.
-1
-2
-3
-4
-5
 6
-Sebag 1991
-, p.
-117
-.
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-13
-.
-1
-2
-3
-Sebag 1991
-, p.
-118
-.
-↑
-Ridha Ben Rejeb, "La question juive et les réformes constitutionnelles en Tunisie",
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-, p. 133.
-↑
-Sebag 1991
-, pp.
-117–118
-.
-↑
-Khadhar, Hedia (1989).
-"La Révolution française, le pacte fondamental et la première Constitution tunisienne de 1861"
-.
-Revue du monde musulman et de la Méditerranée
-(in French).
-52
-(1): 133.
-doi
-:
-10.3406/remmm.1989.2294
-. Retrieved
-November 19,
-2017
-.
-↑
-Ibn Abi Dhiaf, cited by
-Tsur, Yaron (2003). "Réformistes musulmans et juifs en Tunisie à la veille de l'occupation française". In
-Sonia Fellous
-(ed.).
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-(in French). Paris: Somogy. p.
-161.
-ISBN
-978-2-85056-632-5
-.
-, who believed that Sharia required full equality for Jews, necessitating the abolition of discrimination against them.
-↑
-Tsur 2003
-, p.
-162
-.
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-14
-.
-1
-2
-Sebag 1991
-, p.
-119
-.
-↑
-Rabbinical courts were henceforth limited to personal status matters only.
-↑
-Sebag 1991
-, pp.
-118–119
-.
-↑
-Sebag 1991
-, pp.
-119–120
-.
-↑
-Sebag 1991
-, p.
-120
-.
-↑
-Sebag 1991
-, p.
-121
-.
-↑
-Sebag 1991
-, pp.
-128–129
-.
-↑
-Sebag 1991
-, p.
-129
-.
-↑
-Sebag 1991
-, pp.
-121–122
-.
-↑
-Sebag 1991
-, pp.
-126–127
-.
-↑
-Collectif 1989
-, p.
-28c
-.
-↑
-Sebag 1991
-, p.
-123
-.
-↑
-Sebag 1991
-, pp.
-123–124
-.
-↑
-Shaked, Edith.
-"On the State of Being (Jewish) between "Orient" and "Occident"
-"
-(PDF)
-. University of Arizona. Archived from
-the original
-(PDF)
-on May 17, 2017
-. Retrieved
-October 14,
-2012
-.
-↑
-Attal, Robert; Sitbon, Claude.
-"The Jewish Community of Tunis"
-. The Museum of the Jewish People at Beit Hatfutsot.
-↑
-Sebag 1991
-, p.
-149
-.
-↑
-Sebag 1991
-, p.
-150
-.
-↑
-Sebag 1991
-, pp.
-151–152
-.
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-16
-.
-↑
-Hagège
-&
-Zarca 2001
-, p.
-18
-.
-↑
-Sebag 1991
-, p.
-153
-.
-↑
-Sebag 1991
-, pp.
-157–158
-.
-↑
-Hagège
-&
-Zarca 2001
-, p.
-17
-.
-↑
-Lionel Lévy (1999).
-The Portuguese Jewish Nation
-. Paris:
-L'Harmattan
-. p.
-124.
-ISBN
-978-2-296-38637-2
-.
-.
-↑
-Sebag 1991
-, pp.
-161–162
-.
-↑
-Sebag 1991
-, pp.
-162–163
-.
-↑
-Sebag 1991
-, pp.
-166–167
-.
-↑
-Sebag 1991
-, pp.
-167–168
-.
-1
-2
-3
-4
-Hagège
-&
-Zarca 2001
-, p.
-10
-"The universalist culture, associated with the Protectorate, was all the more suited to the [Jews] as it allowed them to avoid the national question while providing an escape from [Muslim] domination."
-1
-2
-Cohen, Richard I. (2023).
-"Jews in Tunisia Confront the Alliance Israélite Universelle"
-.
-Jewish Quarterly Review
-.
-113
-(1):
-36–
-40.
-doi
-:
-10.1353/jqr.2023.0008
-.
-ISSN
-1553-0604
-.
-↑
-Lucette Valensi, "The Political Culture of the Jews of the Maghreb between the 19th and 20th Centuries,"
-Jews and Muslims of Tunisia: Fraternity and Tensions
-,
-p.
-235
-.
-1
-2
-Sebag 1991
-, p.
-146
-↑
-Sebag 1991
-, p.
-147
-.
-↑
-Sebag 1991
-, p.
-199
-↑
-Sebag 1991
-, p.
-192
-.
-↑
-Hagège
-&
-Zarca 2001
-, pp.
-21–22
-↑
-Sebag 1991
-, pp.
-260–261
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-21
-↑
-Sebag 1991
-, pp.
-138–139
-↑
-Hagège
-&
-Zarca 2001
-, p.
-22
-.
-↑
-Sebag 1991
-, p.
-139
-1
-2
-3
-Hagège
-&
-Zarca 2001
-, p.
-25
-↑
-Sebag 1991
-, pp.
-261–262
-↑
-Yves Lacoste and Camille Lacoste-Dujardin (1991).
-The State of the Maghreb
-. Paris: La Découverte. p.
-146.
-ISBN
-978-9973-700-57-5
-.
-↑
-Sebag 1991
-, p.
-143
-↑
-Sebag 1991
-, p.
-144
-↑
-Sebag 1991
-, pp.
-146–147
-1
-2
-3
-Laskier, Michael M. (1991).
-"Between Vichy Antisemitism and German Harassment: The Jews of North Africa during the Early 1940s"
-.
-Modern Judaism
-.
-11
-(3):
-343–
-369.
-doi
-:
-10.1093/mj/11.3.343
-.
-ISSN
-0276-1114
-.
-JSTOR
-1396112
-.
-↑
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, pp.
-39–40
-.
-1
-2
-Sebag 1991
-, p.
-148
-.
-1
-2
-3
-4
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, p.
-40
-.
-1
-2
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, p.
-42
-↑
-Rigid canonical rules and the challenges of classical Arabic meter presented obstacles for Jewish authors composing poems in Arabic, according to Claude Hagège, "Multilingualism in the Judeo-Tunisian Sphere,"
-p.
-301
-↑
-Eusèbe Vassel (1904–1907).
-The Popular Literature of Tunisian Israelites with an Ethnographic and Archaeological Essay on Their Superstitions
-(in French). Paris: Ernest Leroux. p.
-276.
-1
-2
-3
-Balta, Dana
-&
-Dhoquois-Cohen 2003
-, p.
-41
-.
-↑
-Judith Roumani (2008). "Jews in Tunisia".
-Encyclopedia of the Jewish Diaspora: Origins, Experiences, and Culture
-. Santa Barbara: ABC-CLIO. p.
-512.
-ISBN
-978-1851098736
-.
-1
-2
-Sebag 1991
-, p.
-195
-↑
-C., C. M. (1942).
-"French North Africa since June 1940: Main Political Developments"
-.
-Bulletin of International News
-.
-19
-(25):
-1125–
-1131.
-ISSN
-2044-3986
-.
-JSTOR
-25643350
-.
-↑
-"Vichy Discrimination against Jews in Vichy North Africa"
-. Ushmm.org
-. Retrieved
-October 4,
-2012
-.
-↑
-Sebag 1991
-, p.
-244
-.
-↑
-Tessler, Mark (2020).
-Religious minorities in non-secular Middle Eastern and North African States
-. Minorities in West Asia and North Africa. [Cham], Switzerland: Palgrave Macmillan. p.
-39.
-ISBN
-978-3-030-19842-8
-.
-↑
-"Remembering the Holocaust in Tunisia | The Washington Institute"
-.
-www.washingtoninstitute.org
-. Retrieved
-December 26,
-2024
-.
-↑
-"The Holocaust in Tunisia – Musée de l'Holocauste Montréal"
-.
-Musée de l'Holocauste Montréal
-. Archived from
-the original
-on December 9, 2024
-. Retrieved
-December 26,
-2024
-.
-↑
-Borschel-Dan, Amanda (April 15, 2015).
-"Why hasn't Yad Vashem honored more Arabs for saving Jews?"
-.
-The Times of Israel
-. Retrieved
-August 15,
-2020
-.
-↑
-Land, Joy (Spring 2009).
-"Emerging Identities in Colonial Tunisia: "Alliancist" and Zionist Representations in Tunis"
-.
-CELAAN
-.
 7
-(
-1–
-2):
-37–
-50.
-ISSN
-1547-1942
+8
+9
+10
+"The World Factbook"
+.
+CIA.gov
+.
+Central Intelligence Agency
 . Retrieved
-August 8,
-2020
-.
-1
-2
-3
-Fischbach, Michael (2008).
-Jewish Property Claims Against Arab Countries
-. Columbia University Press. pp.
-90–
-91.
-ISBN
-978-0-231-13538-2
+12 May
+2019
 .
 ↑
-"Archives des écoles de l'Alliance israélite en Tunisie 1876–1970"
+"Tunisia - inflation rate 1986-2022"
 .
-cahjp.nli.org.il
-(in French)
+↑
+"Poverty headcount ratio at national poverty lines (% of population) - Tunisia"
+.
+data.worldbank.org
+. World Bank
 . Retrieved
-December 15,
-2018
-.
-1
-2
-3
-4
-5
-Kéfi, Ridha (August 29, 2005).
-"L'émigration des juifs tunisiens vers Israël (1948–1967)"
-.
-Jeune Afrique
-(in French).
-ISSN
-1950-1285
-. Retrieved
-November 19,
-2017
-.
-↑
-Sebag 1991
-, p.
-286
-.
-↑
-Saadoun 2003
-, p.
-226.
-1
-2
-Sebag 1991
-, p.
-274
-.
-↑
-The population recorded in Tunis was artificially increased by an influx of people from provincial areas awaiting departure, replacing Tunisians who had already left, according to
-Sebag 1991
-, p.
-279
-.
-1
-2
-Hagège
-&
-Zarca 2001
-, p.
-28
-.
-↑
-Levy, André.
-Histoire des Juifs de Tunisie: des origines à nos jours
-. L'Harmattan, 2003, p. 326.
-1
-2
-Levy, André.
-Histoire des Juifs de Tunisie: des origines à nos jours
-. L'Harmattan, 2003, p. 327.
-↑
-Levy, André.
-Histoire des Juifs de Tunisie: des origines à nos jours
-. L'Harmattan, 2003, p. 328.
-1
-2
-3
-Sebag 1991
-, p.
-297
-.
-↑
-Colette Zytnicki, "Managing the Rupture: Jewish Social Institutions in France Facing the Migration of Tunisian Jews (1950–1970)",
-Jews and Muslims of Tunisia: Fraternity and Ruptures
-, p. 337.
-1
-2
-3
-4
-5
-6
-Lasserre, Frédéric; Lechaume, Aline, eds. (2003).
-Le territoire pensé
-: géographie des représentations territoriales
-(in French). Québec: Presses de l'Université du Québec. p.
-125.
-ISBN
-978-2-7605-1224-5
-.
-↑
-Sebag 1991
-, p.
-300
-.
-↑
-Sebag 1991
-, p.
-288
-.
-1
-2
-Lois Gottesman (1985). "Jews in the Middle East".
-American Jewish Year Book
-(pdf)
-. New York: American Jewish Committee. p.
-308.
-↑
-"Policeman shoots into Jewish quarter"
-.
-United Press International
-. October 8, 1985
-. Retrieved
-May 23,
-2026
-.
-↑
-Country Reports on Human Rights Practices for 1982
-. Washington: U.S. Department of State. 1983. pp.
-1290–
-1291.
-↑
-Country Reports on Human Rights Practices for 1985
-. Washington: U.S. Department of State. 1986. p.
-1321.
-↑
-"Islamist victory casts shadow over Tunisian Jews"
-.
-Ynetnews
-. Retrieved
-October 4,
-2012
-.
-↑
-"Tunisie
-: la communauté juive réclame sa protection par l'armée"
-.
-Le Point
-. Retrieved
-April 30,
-2013
-.
-↑
-"Tunisia decries Israeli call for Jews to emigrate"
-.
-Charleston Gazette-Mail
-. March 31, 2011
-. Retrieved
-July 7,
-2024
-.
-↑
-Nasraoui, Khaled; Mbarek, Ghaya Ben (May 6, 2026).
-"Foreign visitors return to Jewish pilgrimage in Tunisia under tight security"
-.
-AP News
-. Retrieved
-May 6,
-2026
-.
-↑
-Presse, La (April 14, 2026).
-"Djerba
-: le pèlerinage de la Ghriba de retour"
-.
-La Presse de Tunisie
-(in French)
-. Retrieved
-May 6,
-2026
-.
-↑
-"Tunisia revives historic Jewish pilgrimage"
-.
-Libyan Express
-. April 19, 2026
-. Retrieved
-May 6,
-2026
-.
-↑
-Bouazza, Bouazza Ben (May 11, 2023).
-"Deadly Tunisian synagogue attack was premeditated and targeted temple, interior minister says"
-.
-AP News
-. Retrieved
-May 6,
-2026
-.
-↑
-Vilches Arguello, Ailin (May 5, 2025).
-"North Africa Signals New Openings for Jews as Morocco Weighs Citizenship Reform, Tunisia Sees Pilgrimage Return"
-.
-Algemeiner.com
-. Retrieved
-May 6,
-2026
-.
-↑
-Lavie, Dan (January 1, 2012).
-"Tunisia's first Jewish museum opens its doors"
-.
-Israel Hayom
-. Retrieved
-October 7,
-2016
-.
-↑
-Inskeep, Steve (November 4, 2015).
-"Amid Security Threats, Tunis' Only Kosher Restaurant Shutters"
-.
-NPR
-. Retrieved
-February 29,
+20 March
 2020
 .
 ↑
-Oster, Marcy (May 14, 2017).
-"Tunisia to seek World Heritage status for Djerba island, site of Jewish pilgrimage"
+"Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population) - Tunisia"
 .
-Jewish Telegraphic Agency
+data.worldbank.org
+. World Bank
 . Retrieved
-May 10,
-2023
+20 March
+2020
 .
 ↑
-"Death of the Grand Rabbi of Tunisia"
-. Alfassa.com. Archived from the original on February 25, 2012
+"GINI index (World Bank estimate)"
+.
+data.worldbank.org
+.
+World Bank
 . Retrieved
-October 4,
-2012
+12 May
+2019
 .
 ↑
-"Chief Rabbi of Djerba Dies in a Jerusalem Hospital – Latest News Briefs"
-. Arutz Sheva. December 3, 2004
+"Human Development Index (HDI)"
+(PDF)
+.
+hdr.undp.org
+.
+HDRO (Human Development Report Office)
+United Nations Development Programme
 . Retrieved
-October 4,
-2012
+8 May
+2025
 .
 ↑
-"Condolences Extended to Family of Head Tunisian Rabbi"
-. Magharebia.com. December 5, 2004
+"Inequality-adjusted Human Development Index (IHDI)"
+.
+hdr.undp.org
+.
+HDRO (Human Development Report Office)
+United Nations Development Programme
 . Retrieved
-October 4,
-2012
+8 May
+2025
 .
 ↑
-"Tunisia police officer kills four in shooting near Africa's oldest synagogue"
+"Labor force, total - Tunisia"
+.
+World Bank
+. Retrieved
+18 January
+2026
+.
+↑
+"Employment to population ratio, 15+, total (%) (modeled ILO estimate) - Tunisia"
+.
+World Bank
+. Retrieved
+18 January
+2026
+.
+↑
+"Unemployment, total (% of total labor force) (modeled ILO estimate) - Tunisia"
+.
+World Bank
+. Retrieved
+18 January
+2026
+.
+↑
+"Unemployment, youth total (% of total labor force ages 15-24)"
+.
+World Bank Open Data
+. 2026
+. Retrieved
+15 June
+2026
+.
+↑
+"Rankings by Country of Average Monthly Net Salary (After Tax) (Salaries And Financing)"
+.
+www.numbeo.com
+.
+1
+2
+"Export partners of Tunisia"
+. The Observatory of Economic Complexity
+. Retrieved
+4 February
+2026
+.
+1
+2
+"Import partners of Tunisia"
+. The Observatory of Economic Complexity
+. Retrieved
+4 February
+2026
+.
+↑
+"Sovereigns rating list"
+. Standard & Poor's
+. Retrieved
+26 May
+2011
+.
+1
+2
+3
+Rogers, Simon; Sedghi, Ami (15 April 2011).
+"How Fitch, Moody's and S&P rate each country's credit rating"
 .
 The Guardian
+. Retrieved
+28 May
+2011
+.
+↑
+"World Bank country classifications by income level for 2024-2025"
+.
+World Bank Blogs
+. Retrieved
+9 July
+2026
+.
+↑
+"Economic and political overview in Tunisia"
+.
+international.groupecreditagricole.com
+. Retrieved
+9 July
+2026
+.
+↑
+"World Bank Open Data"
+.
+World Bank Open Data
+. Retrieved
+9 July
+2026
+.
+↑
+"Annual Report 2007-2008"
+.
+World Economic Forum
+. Archived from
+the original
+on 14 April 2026
+. Retrieved
+9 July
+2026
+.
+↑
+"Tunisia Economy, Politics and GDP Growth Summary - The Economist Intelligence Unit"
+.
+country.eiu.com
+.
+↑
+"Tunisia: GDP per capita"
+.
+Index Mundi
+. Retrieved
+2 July
+2012
+.
+↑
+"CIA World Factbook"
+.
+cia.gov
+. CIA. Archived from
+the original
+on 10 January 2021
+. Retrieved
+16 July
+2015
+.
+↑
+"Tunisia's tourism grappling with job losses"
+.
+BBC World
+. 15 July 2015
+. Retrieved
+16 July
+2015
+.
+↑
+"A Tunis, les chiffonniers sortent de l'ombre"
+.
+Le Monde
+. 28 May 2019
+. Retrieved
+11 April
+2022
+.
+↑
+"Le gouverneur de la Banque centrale de Tunisie s'inquiète pour 2023"
+.
+Jeune Afrique
+. 5 January 2025
+. Retrieved
+12 October
+2025
+.
+↑
+"Report for Selected Countries and Subjects"
+.
+www.imf.org
+. Retrieved
+7 October
+2018
+.
+↑
+"Data - Finance"
+. Archived from
+the original
+on 5 December 2006
+. Retrieved
+2009-12-31
+.
+↑
+"Hoping to preserve democracy, Tunisia woos foreign investors"
+. Archived from
+the original
+on 30 November 2016.
+↑
+Amara, Tarek (23 December 2022).
+"Tunisia seeks to cut fiscal deficit to 5.5% in 2023, led by economic reforms"
 .
 Reuters
-. May 9, 2023
 . Retrieved
-May 10,
-2023
+28 December
+2022
 .
 ↑
-Lapin, Andrew (October 19, 2023).
-"Historic synagogue in Tunisia heavily damaged in rioting tied to Israel-Hamas war"
+"Defiant in Debt: Breaking Free from Global Purse in Tunisia - Daily Euro Times"
 .
-Times of Israel
+dailyeurotimes.com
+. 4 March 2025
 . Retrieved
-October 20,
-2023
+5 March
+2025
 .
 ↑
-Lapin, Andrew (October 18, 2023).
-"Historic synagogue in Tunisia heavily damaged in rioting tied to Israel-Gaza war"
+"Tunisia reports marked growth in exports to Libya"
 .
-Jewish Telegraphic Agency
+Libyan Express
+. 24 April 2025
 . Retrieved
-October 23,
-2023
+24 April
+2025
 .
 ↑
-"Tunisian community in jeopardy after torching of rabbi's shrine – Point of No Return"
-.
-www.jewishrefugees.org.uk
-. October 25, 2023
+"Treasury Secretary Geithner and Tunisian Finance Minister Dimassi Sign Declaration to Work Toward U.S. Loan Guarantee for Tunisia"
+. U.S. Department of the Treasury
 . Retrieved
-December 26,
-2024
+13 June
+2012
 .
 ↑
-"The Jews of Djerba: A Pilgrimage to Ghriba"
-.
-jfi.org
+Timothy Geithner
+↑
+"FAQs: U.S. Loan Guarantee for Tunisia"
+(PDF)
+. U.S. Department of the Treasury.
+Archived
+(PDF)
+from the original on 27 July 2014
 . Retrieved
-May 16,
-2024
+13 September
+2012
+.
+1
+2
+"A helping hand for young entrepreneurs in Tunisia"
+.
+European Investment Bank
+. Retrieved
+15 July
+2021
+.
+1
+2
+"EBRD, Enda Tamweel and Attijari Bank supporting microfinance in Tunisia"
+.
+www.ebrd.com
+. Retrieved
+15 July
+2021
 .
 ↑
-Les témoins de la Bible
-: les Juifs de Djerba | WorldCat.org
+"Tunisia Energy Situation - energypedia"
 .
-OCLC
-42975943
+energypedia.info
+. Retrieved
+14 October
+2021
 .
 ↑
-"My Country Left Me"
-.
-jfi.org
-. Retrieved
-May 16,
-2024
+"Nation Master"
 .
 ↑
-Journey from Tunisia
-. Retrieved
-May 16,
-2024
-–
-via nysephardifilmfestival.org.
-Bibliography
+Tunisia production in 2018, by FAO
+External links
 [
-edit
+edit source
 ]
-Jews of Tunisia
-[
-edit
-]
-Allagui, Abdelkirm (2016).
-Juifs et musulmans en Tunisie: Des origines à nos jours
-(in French). Paris: Taillandier.
-ISBN
-979-10-210-2079-5
-.
-Jean-Pierre Allali (2003).
-Juifs de Tunisie
-(in French). Courbevoie: Soline. p.
-160.
-ISBN
-978-2-87677-472-8
-.
-Jean-Pierre Allali (2014).
-Les Juifs de Tunisie sous la botte allemande: Chronique d'un drame méconnu
-(in French). Paris: Glyphe. p.
-330.
-ISBN
-978-2-35815-119-1
-.
-Robert Attal
-[in French]
-; Claude Sitbon (1979).
-Regards sur les Juifs de Tunisie
-(in French). Paris:
-Albin Michel
-. p.
-315.
-ISBN
-978-2-226-00789-6
-.
-Colette Bismuth-Jarrassé; Dominique Jarrassé (2010).
-Synagogues de Tunisie: Monuments d'une histoire et d'une identité
-(in French). Le Kremlin-Bicêtre: Esthétiques du divers. p.
-320.
-ISBN
-978-2-9533041-2-1
-.
-David Cazès
-[in French]
-(1887).
-Essai sur l'histoire des Israélites de Tunisie: Depuis les temps les plus reculés jusqu'à l'établissement du protectorat de la France en Tunisie
-(in French). Paris: Armand Durlacher. p.
-211.
-David Cazès
-[in French]
-(1893).
-Notes bibliographiques sur la littérature juive-tunisienne
-(in French). Tunis: Imprimerie internationale. p.
-370.
-David Cohen
-[in French]
-(1995).
-Le parler arabe des Juifs de Tunis: Textes et documents linguistiques et ethnographiques
-(in French). Paris/La Haye: Mouton & Co. p.
-177.
-ISBN
-978-2-7132-0313-8
-.
-Denis Cohen-Tannoudji (2007).
-Entre Orient et Occident: Juifs et musulmans en Tunisie
-(in French). Paris:
-Éditions de l'éclat
-. p.
-379.
-ISBN
-978-2-84162-144-6
-.
-Georges Cohen (1993).
-De l'Ariana à Galata: Itinéraire d'un Juif de Tunisie
-(in French). Vincennes: Racines. p.
-187.
-ISBN
-978-2-9507375-0-2
-.
-Sonia Fellous
-[in French]
-(2003).
-Juifs et musulmans de Tunisie: Fraternité et déchirements
-(in French). Paris: Somogy. p.
-493.
-ISBN
-978-2-85056-632-5
-.
-Fenton, Paul B. (2003). "Un monument de la pensée juive en terre tunisienne
-: le commentaire kairouanais sur le Livre de la Création". In Sonia Fellous (ed.).
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-(in French). Paris: Somogy.
-ISBN
-978-2-85056-632-5
-.
-Jacob André Guez (2001).
-Au camp de Bizerte: Journal d'un Juif tunisien interné sous l'occupation allemande, 1942-1943
-(in French). Paris:
-L'Harmattan
-. p.
-151.
-ISBN
-978-2-296-16515-1
-.
-Kchir, Khaled (2003). "Entre Sarîa et pratiques
-: juifs et musulmans en Ifrîqiyya à travers la littérature juridique". In Sonia Fellous (ed.).
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-(in French). Paris: Somogy.
-ISBN
-978-2-85056-632-5
-.
-Charles Haddad de Paz (1977).
-Juifs et Arabes au pays de Bourguiba
-(in French). Aix-en-Provence: Imprimerie Paul Roubaud. p.
-287.
-Hagège, Claude; Zarca, Bernard (2001).
-"Les Juifs et la France en Tunisie. Les bénéfices d'une relation triangulaire"
-.
-Le Mouvement social
-(197):
-9–
-28.
-doi
+Historic Growth Trend of Tunisia's Economy, 1962 – 2007
+Economy of Tunisia
+extracted from the CIA factbook public data
+Portals
 :
-10.2307/3780159
-.
-JSTOR
-3780159
-.
-Hirschberg, Haim Ze'ev (1974).
-A History of the Jews in North Africa
-. Vol.
-1. Brill.
-ISBN
-9004038205
-.
-Jalloul, Néji (2003). "Les Juifs de Kairouan au Moyen Âge". In Sonia Fellous (ed.).
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-(in French). Paris: Somogy.
-ISBN
-978-2-85056-632-5
-.
-Albert-Armand Maarek (2010).
-Les Juifs de Tunisie entre 1857 et 1958: Histoire d'une émancipation
-(in French). Paris: Glyphe. p.
-290.
-ISBN
-978-2-35815-033-0
-.
-Serge Moati
-[in French]
-(2003).
-Villa Jasmin
-(in French). Paris:
-Fayard
-. p.
-396.
-ISBN
-978-2-253-10851-1
-.
-Claire Rubinstein-Cohen (2011).
-Portrait de la communauté juive de Sousse, Tunisie: De l'orientalité à l'occidentalisation, un siècle d'histoire (1857-1957)
-(in French). Paris:
-Édilivre
-. p.
-444.
-ISBN
-978-2-812-13818-8
-.
-Saadoun, Haïm (2003). "L'influence du sionisme sur les relations judéo-musulmanes en Tunisie". In Sonia Fellous (ed.).
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-(in French). Paris: Somogy.
-ISBN
-978-2-85056-632-5
-.
-Paul Sebag
-[in French]
-(1991).
-Histoire des Juifs de Tunisie: Des origines à nos jours
-(in French). Paris:
-L'Harmattan
-. p.
-335.
-ISBN
-978-2-296-24036-0
-.
-Paul Sebag
-[in French]
-;
-Robert Attal
-[in French]
-(1959).
-La hara de Tunis: L'évolution d'un ghetto nord-africain
-(in French). Paris:
-Presses universitaires de France
-. p.
-92.
-Patrick Simon
-[in French]
-; Claude Tapia (1998).
-Le Belleville des Juifs tunisiens
-(in French). Paris:
-Autrement
-. p.
-189.
-ISBN
-978-2-86260-781-8
-.
-Hmida Toukabri (2002).
-Les Juifs dans la Tunisie médiévale, 909-1057: D'après les documents de la Geniza du Caire
-(in French). Paris: Romillat. p.
-143.
-ISBN
-978-2-87894-076-3
-.
-Lucette Valensi
-[in French]
-;
-Abraham Udovitch
-[in French]
-(1991).
-Juifs en terre d'islam: Les communautés de Djerba
-(in French). Paris: Archives contemporaines.
-Nava Sarah Yardéni (2010).
-Les Tunisraéliens: L'intégration des Juifs de Tunisie en Israël
-(in French). Jérusalem: Elkana. p.
-346.
-ISBN
-978-965-7417-07-2
-.
-Bernard Zarca (2005).
-Une enfance juive tunisoise
-(in French). Paris:
-L'Harmattan
-. p.
-288.
-ISBN
-978-2-7475-8406-7
-.
-Collectif (1989).
-Les Juifs en Tunisie: Images et textes
-(in French). Paris: Éditions du Scribe. p.
-263.
-ISBN
-978-2-86765-011-6
-.
-Jews of the Maghreb
-[
-edit
-]
-Michel Abitbol
-[in French]
-(2012).
-Les Juifs d'Afrique du Nord sous Vichy
-(in French). Paris:
-CNRS éditions
-. p.
-385.
-ISBN
-978-2-271-07541-3
-.
-André Chouraqui
-[in French]
-(1998).
-Histoire des Juifs en Afrique du Nord, Volume I: En exil au Maghreb
-(in French). Paris:
-Éditions du Rocher
-. p.
-293.
-ISBN
-978-2-268-03105-7
-.
-André Chouraqui
-[in French]
-(1998).
-Histoire des Juifs en Afrique du Nord, Volume II: Retour en Orient
-(in French). Paris:
-Éditions du Rocher
-. p.
-340.
-ISBN
-978-2-268-03106-4
-.
-Mark R. Cohen (2008).
-Sous le croissant et sous la croix: Les Juifs au Moyen Âge
-(in French). Translated by Jean-Pierre Ricard. Paris: Éditions du Seuil. p.
-464.
-ISBN
-978-2-02-081579-6
-.
-Fenton, Paul B.; Littman, David G. (2010).
-L'Exil au Maghreb: La condition juive sous l'islam, 1148-1912
-(in French). Paris: Sorbonne Université Presses.
-ISBN
-978-2-84050-725-3
-.
-Paul Monceaux
-[in French]
-(1902).
-"Les colonies juives dans l'Afrique romaine"
-.
-Revue des études juives
-(in French).
-44
-(87):
-1–
-28.
-doi
-:
-10.3406/rjuiv.1902.4541
-.
-ISSN
-0484-8616
-.
-Effy Tselikas; Lina Hayoun (2004).
-Les lycées français du soleil: Creusets cosmopolites de la Tunisie, de l'Algérie et du Maroc
-(in French). Paris:
-Autrement
-. p.
-272.
-ISBN
-978-2-7467-0435-0
-.
-Taïeb, Jacques (2000).
-Sociétés juives du Maghreb moderne (1500–1900)
-(in French). Paris: Maisonneuve et Larose. p.
-223.
-ISBN
-978-2-7068-1467-9
-.
-Taïeb, Jacques (1994).
-Être juif au Maghreb à la veille de la colonisation
-(in French). Paris:
-Albin Michel
-. p.
-144.
-ISBN
-978-2-226-06802-6
-.
-Shmuel Trigano
-[in French]
-(2006).
-Le Monde sépharade, Volume I: Histoire
-(in French). Paris: Éditions du Seuil. p.
-1008.
-ISBN
-978-2-02-086992-8
-.
-Shmuel Trigano
-[in French]
-(2006).
-Le Monde sépharade, Volume II: Civilisation
-(in French). Paris: Éditions du Seuil. p.
-816.
-ISBN
-978-2-02-086993-5
-.
-Colette Zytnicki
-[in French]
-(2011).
-Les Juifs du Maghreb: Naissance d'une historiographie coloniale
-(in French). Paris:
-Sorbonne Université Presses
-. p.
-391.
-ISBN
-978-2-84050-782-6
-.
-Further reading
-[
-edit
-]
-Tobi, Tsivia (2016). Yosef Tobi (ed.).
-From bride to mother-in-law: The world of Jewish women in southern Tunisia and its reflection in popular literature
-(in Hebrew). Jerusalem:
-Ben-Zvi Institute
-.
-ISBN
-9789652351906
-.
-OCLC
-951011735
-.
-Tobi, Tsivia (2020).
-Ornaments of Tarshish: The Attire and the Jewelry of the Jewish Women in Tunisia
-(in Hebrew). Jerusalem: Misgav Yerushalayim, The Hebrew University.
-OCLC
-1142832305
-.
-Koskas, Sonia (2015) [2007].
-Contes des Juifs de Tunisie
-. Aux origines du monde (in French). Vol.
-13. Primento.
-ISBN
-9782373800203
-.
+Africa
+Business and economics
 v
 t
 e
-Demographics of Tunisia
-Religions
-Islam
-Christianity
-Orthodox
-Catholic Church
-Protestantism
-Judaism
-Ethnic groups
-Arabs
-Arab-Berber
-Bedouin
-Berbers
-Copts
-French
-Italians
-Doms)
-Turks
-v
-t
-e
-History of the Jews in Africa
+Economy of Africa
 Sovereign states
 Algeria
 Angola
@@ -5900,137 +1579,1280 @@ Ascension Island
 /
 Tristan da Cunha
 (United Kingdom)
+Western Sahara
 v
 t
 e
-Sephardi Jewish
-topics
-Origins
-Sepharad
-Roman Empire
-Golden Age
-Expulsion from Spain
-Alhambra Decree
-Expulsion from Portugal
-Conversos
-Degredados
-Lançados
-Marranos
-Megorashim
-Maghrebi Jews
-New Christian
-Dispersion
-Eastern Mediterranean
-Albanian
-Bosnian
-Bulgarian
-Croatian
-Ragusan
-Splicani
-Egyptian
-Alexandrian
-Greek
-Rhodian
-Thessalonian
-Hungarian
-Macedonian
-Monastir
-Ottoman
-Palestinian
-Romanian
-Serbian
-Syrian
-Turkish
-Istanbulite
-Symirniote
-North Africa
-Algerian
-Gibraltarian
-Libyan
-Moroccan
-Tetuani
-Tunisian
-Western Europe and overseas
-American
-Dutch
-Aruba
-Curaçao
-Suriname
-New Amsterdam
-English
-French
-Hamburger
-Indian
-Paradesi Jews
-Italian
-Livornese
-Crypto-Sephardim
-Amazonian
-Belmonte Jews
-Xuetas
-Modern history
-History of the Jews under Muslim rule
-Antisemitism in the Arab world
-Antisemitism in Islam
-Jewish exodus from Arab and Muslim countries
-Languages
-Judeo-Berber
-Sephardi Hebrew
-Judeo-Arabic
-Judaeo-Portuguese
-Judaeo-Spanish
-Haketia
-Tetuani Ladino
-Judeo-Gascon
-Bagitto
-Religion and culture
-Cuisine
-Music
-Rite and customs
-Sephardi chief rabbi
-Haredim
+Tunisia
+articles
+History
+Early history
+Capsian culture
+Ancient Carthage
+Punic Wars
+First War
+Second War
+Third War
+Byzantine Empire
+Medieval history
+Muslim conquest
+Fatimid Caliphate
+Hafsids
+Regency of Tunis
+Muradid
+Husaynids
+French protectorate
+National movement
+Naturalization issue
+Protests of 9 April
+Tunisian campaign
+Independence declaration
+Kingdom of Tunisia
+Republic declaration
+1987 coup d'état
+Tunisian revolution
+2013–14 political crisis
+2018 Tunisian protests
+COVID-19 pandemic
+2021 Tunisian protests
+25 July 2021 self-coup
+Geography
+Administrative divisions
+Governorates
+Cities
+Subdivisions
+Regions
+North East
+North West
+Sahel
+Central West
+South East
+Djerid
+Wildlife
+Ecoregions
+World Heritage Sites
+Museums
+Demographics
+Tunisians
+Tunisian diaspora
+Climate
 Politics
-Black Panthers
-Shas
-Sephardim and Oriental Communities
-Major communal organizations
-American Sephardi Federation
-Sephardi Community Council
+President of the Republic
+List
+Prime Minister
+List
+Cabinet
+Constitution
+Fundamental Pact
+1861
+1959
+2014
+2022
+Foreign relations
+Armed Forces
+Army
+Air Force
+Navy
+Parliament
+National Council of Regions and Districts
+Assembly of the Representatives of the People
+Political parties
+Elections
+Independent High Authority for Elections
+Economy
+Bourse de Tunis
+Central Bank of Tunisia
+Tunisian dinar
+Banking in Tunisia
+Agriculture
+Energy
+Natural resources
+Water supply and sanitation
+Tourism
+Industry
+Telecommunications
+Transport
+Roads
+Rail transport
+Traditional crafts
+Major projects
+Society
+Education
+Baccalaureate
+Higher education
+Languages
+Tunisian Arabic
+Media
+Television
+Radio stations
+Internet
+Newspapers
+Censorship
+Human rights
+Abortion
+LGBT
+Women
+Polygamy
+Religion
+Islam
+Christianity
+Judaism
+Health
+Public holidays
+Culture
+Arts
+Cinema
+Music
+Literature
+Sport
+Football
+Cuisine
+National symbols
+Flag
+National anthem
+Coat of arms
+Motto
+Category
+WikiProject
+Commons
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=History_of_the_Jews_in_Tunisia&oldid=1359547918
+https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1365003816
 "
 Categories
 :
-Jewish Tunisian history
-History of the Jews in Africa
-Sephardi Jews topics
+African Union member economies
+Economy of Tunisia
+Economy of the Arab League
+World Trade Organization member economies
 Hidden categories:
 Articles with short description
 Short description is different from Wikidata
-Use mdy dates from May 2026
-"Related ethnic groups" needing confirmation
-Articles using infobox ethnic group with image parameters
-Pages using sidebar with the child parameter
-All articles with unsourced statements
-Articles with unsourced statements from December 2024
-CS1 French-language sources (fr)
-Articles containing Latin-language text
-CS1 Latin-language sources (la)
-Wikipedia articles needing page number citations from January 2025
-Articles with unsourced statements from February 2025
-Articles containing Hebrew-language text
-Wikipedia articles incorporating a citation from the 1906 Jewish Encyclopedia
-Wikipedia articles incorporating a citation from the 1906 Jewish Encyclopedia without a Wikisource reference
-Wikipedia articles incorporating text from the 1906 Jewish Encyclopedia
-Articles with unsourced statements from April 2024
-All articles needing additional references
-Articles needing additional references from December 2024
-Articles with unsourced statements from January 2025
-CS1: unfit URL
-CS1 interwiki-linked names
-CS1 Hebrew-language sources (he)
+Wikipedia articles in need of updating from July 2022
+All Wikipedia articles in need of updating
+Wikipedia references cleanup from July 2022
+All articles needing references cleanup
+Articles covered by WikiProject Wikify from July 2022
+All articles covered by WikiProject Wikify
+Articles needing translation from French Wikipedia
+Articles with multiple maintenance issues
+Use dmy dates from April 2026
+Articles containing Tunisian Arabic-language text
 Search
 Search
-History of the Jews in Tunisia
-11 languages
+Economy of Tunisia
+23 languages
 Add topic
+
+---
+
+Help:Maintenance template removal - Wikipedia
+Jump to content
+Search
+Search
+Help
+:
+Maintenance template removal
+27 languages
+Afrikaans
+العربية
+বাংলা
+کوردی
+Dansk
+Eesti
+فارسی
+Français
+ગુજરાતી
+Հայերեն
+Bahasa Indonesia
+नेपाली
+ਪੰਜਾਬੀ
+Português
+Русский
+سنڌي
+සිංහල
+Simple English
+Shqip
+Српски / srpski
+తెలుగు
+ไทย
+Türkçe
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+How-to-guide on addressing and removing maintenance templates
+Further information:
+Wikipedia:Responsible tagging
+and
+Wikipedia:Tag bombing
+This help page is a
+how-to guide
+.
+It explains concepts or processes used by the Wikipedia community. It is not one of
+Wikipedia's policies or guidelines
+and may reflect varying levels of
+consensus
+.
+Shortcuts
+WP:MTR
+WP:MTR
+H:MTR
+H:MTR
+This page in a nutshell:
+If you come across a maintenance template, you can help Wikipedia! If you understand the problem flagged by the template and have reasonably fixed it, you can remove the template manually; it will
+not
+be removed automatically.
+Legitimate Wikipedia editors will never offer to remove maintenance templates in exchange for money. See the
+paid editing scam warning
+.
+Many Wikipedia pages display
+maintenance templates
+that identify problems. You may have arrived at this help page after clicking a link on a maintenance template saying "
+Learn how and when to remove this message
+".
+Maintenance templates are added and removed by volunteers. This help page explains the process for examining and removing such templates.
+Overview
+Maintenance templates
+(or "tags") are not removed automatically. Even if you fix the issue(s) described in a maintenance template, the tag will remain in the article until you or someone else
+manually removes it
+. The mechanics of removal are usually as simple as clicking "Edit" at the top of the page or in the section you fixed, removing the code that produces the display of the template, leaving an
+edit summary
+, and saving the page.
+It is
+not
+okay to remove maintenance templates until the issue flagged by the template is remedied first—that is, until the maintenance tag is no longer valid—unless it truly did not belong in the first place. Maintenance templates are
+not
+to be used to express your personal opinion.
+Wikipedia works because of the efforts of volunteers just like you, making
+bold edits
+to help build this encyclopedia. Fixing problems and then removing maintenance templates when you are done is important in that effort.
+Addressing the flagged problem
+Shortcuts
+WP:TEMPREMOVE
+WP:TEMPREMOVE
+H:TEMPREMOVE
+H:TEMPREMOVE
+We don't know which maintenance tag brought you to this page, and thus what specific problem needs attention. However, every maintenance template contains links to help pages, policies, guidelines, or other relevant pages that provide information on the problem the template was placed to flag. You will also find guidance on some of the more common templates
+below
+.
+Many common templates address problems with article citations and references, or the
+lack
+thereof — this is because reliable sourcing is the lifeblood of Wikipedia articles and at the core of all of Wikipedia's content policies and guidelines, such as
+notability
+,
+verifiability
+,
+neutral point of view
+, and
+no original research
+. But a host of other issues may also be flagged with maintenance templates, including
+tone
+and
+style of writing
+,
+structure and formatting
+,
+lack of links
+to or
+from other articles
+, compliance with Wikipedia's
+manual of style
+, and absence or content of a
+lead section
+.
+Please make sure the issue has been resolved before removing the template. That does require some effort on your part—to understand both the problem and how to solve it.
+An example
+If the issue flagged by the maintenance template is that the article contains no references, a
+citation needed
+template might be used
+{{
+Unreferenced
+}}
+–  typically placed by the code you would see when wikitext (source) editing:
+{{Unreferenced|date=July 2026}}
+.
+It is important to understand that what you see when
+reading
+an article, and what you see when
+editing
+it, are different unless you're in Visual editing mode. Thus, the above code, only seen when doing source editing, results in the
+display
+of the '
+called
+' template below:
+Example:
+This article
+does not
+cite
+any
+sources
+.
+Please help
+improve this article
+by
+adding citations to reliable sources
+. Unsourced material may be challenged and
+removed
+.
+Find sources:
+"Maintenance template removal"
+–
+news
+·
+newspapers
+·
+books
+·
+scholar
+·
+JSTOR
+(
+July 2026
+)
+(
+Learn how and when to remove this message
+)
+This template contains several
+links
+, indicated by the words and phrases in blue. Three of these links are to pages that, when explored, provide context and resources for you to understand
+why
+the template was placed on the page, and
+how
+to address the issue of the article being
+unreferenced
+:
+"cite", which links to the content guideline
+Wikipedia:Citing sources
+;
+"sources", which links to the policy
+Wikipedia:Verifiability
+; and
+"adding citations to reliable sources", which links to a help page providing a
+how-to guide to the basics of citing references
+.
+Whatever maintenance tag brought you to this help page should likewise contain relevant explanatory links addressed to whatever
+its issue is
+. Read these explanatory and contextual pages to learn about the problem and what it is you need to do to take care of it. Again, some of the more common maintenance templates seen are addressed in the
+specific template guidance section below
+.
+When to remove
+Shortcut
+WP:WTRMT
+WP:WTRMT
+Maintenance templates are not meant to be in articles permanently. Any user without a
+conflict of interest
+may remove a maintenance template in any of the following circumstances:
+When the issue has been adequately addressed;
+Upon determining that the issue has been resolved (perhaps by someone else);
+If it reasonably appears that the template did not belong when placed or was added in error. Consider first discussing the matter with the original placer of the template (unless this user is no longer active on Wikipedia). In any case, if the issue appears contentious, seek
+consensus
+on the
+talk page
+;
+When an article talk  page discussion has not been initiated (for templates requesting it);
+When there is consensus on the talk page (or elsewhere) as to how to address the flagged issue, and you are reasonably implementing those changes. (It is good practice to note the location of the consensus in the
+edit summary
+accompanying your removal, ideally with a
+link
+to the location);
+When it can reasonably be concluded that the template is no longer relevant, such as a
+{{
+Current
+}}
+template appearing in an article that no longer documents a current event;
+If the maintenance template is of a type that requires support but is not fully supported. For example, neutrality-related templates such as
+{{
+COI
+}}
+(associated with the
+conflict of interest guideline
+) or
+{{
+POV
+}}
+(associated with the
+neutral point of view policy
+) strongly recommend that the tagging editor initiate a discussion (generally on the article's talk page) to support the placement of the tag. If the tagging editor failed to do so, or the discussion is dormant, and there is no other support for the template, it can be removed. A
+{{
+notability
+}}
+tag may be removed and may not be re-added if an article has passed an
+Wikipedia:Articles for deletion
+review.
+You may remove a template when according to your best judgment the lack of edits and/or talk page discussion should be interpreted as the issue not worth fixing (as a form of "
+silent consensus
+"). Please note there is currently no consensus for
+general
+age-related removal of maintenance templates – that is, removing a template purely or chiefly because it is old is
+not
+considered a sufficient argument. An exception is that removing POV-related templates whose discussions have gone dormant is encouraged, as addressed in the bullet point immediately above.
+Lastly, there are times when a person attempting to address a maintenance template that flags some fundamental matter may find that the issue
+cannot
+actually be addressed. For example, if an article is flagged as lacking citations to
+reliable
+,
+secondary
+sources, written by
+third-parties
+to the topic, and a user seeing the maintenance templates discovers that such sources appear
+not to exist
+, that usually means the article should be
+deleted
+. In such cases, it is not so much that the template does not belong and should be removed, but rather that flagging the page for maintenance will never address the more critical issue that the page itself does not belong on Wikipedia at all.
+When not to remove
+Shortcuts
+WP:WNTRMT
+WP:WNTRMT
+WP:MAINTENANCEDISAGREEMENT
+WP:MAINTENANCEDISAGREEMENT
+You should not remove maintenance templates if any of the following apply:
+You do not understand the issues raised by the template;
+The issue has not yet been resolved;
+There is ongoing activity or discussion related to the template issue;
+The problem that the maintenance template flags is plainly and unambiguously required for a proper article under
+Wikipedia's policies and guidelines
+;
+You have been paid to edit the article or have some other
+conflict of interest
+(some exceptions apply: see individual template documentation).
+Removal
+Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
+Click on "edit" or "edit source" at the top of the page or
+section
+where the template is.
+Delete the template:
+If you are editing using VisualEditor
+: Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
+If you are editing wikitext ("source" editing)
+: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example above:
+{{Name of template|
+
+---
+
+Help:Maintenance template removal - Wikipedia
+Jump to content
+Search
+Search
+Help
+:
+Maintenance template removal
+27 languages
+Afrikaans
+العربية
+বাংলা
+کوردی
+Dansk
+Eesti
+فارسی
+Français
+ગુજરાતી
+Հայերեն
+Bahasa Indonesia
+नेपाली
+ਪੰਜਾਬੀ
+Português
+Русский
+سنڌي
+සිංහල
+Simple English
+Shqip
+Српски / srpski
+తెలుగు
+ไทย
+Türkçe
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+How-to-guide on addressing and removing maintenance templates
+Further information:
+Wikipedia:Responsible tagging
+and
+Wikipedia:Tag bombing
+This help page is a
+how-to guide
+.
+It explains concepts or processes used by the Wikipedia community. It is not one of
+Wikipedia's policies or guidelines
+and may reflect varying levels of
+consensus
+.
+Shortcuts
+WP:MTR
+WP:MTR
+H:MTR
+H:MTR
+This page in a nutshell:
+If you come across a maintenance template, you can help Wikipedia! If you understand the problem flagged by the template and have reasonably fixed it, you can remove the template manually; it will
+not
+be removed automatically.
+Legitimate Wikipedia editors will never offer to remove maintenance templates in exchange for money. See the
+paid editing scam warning
+.
+Many Wikipedia pages display
+maintenance templates
+that identify problems. You may have arrived at this help page after clicking a link on a maintenance template saying "
+Learn how and when to remove this message
+".
+Maintenance templates are added and removed by volunteers. This help page explains the process for examining and removing such templates.
+Overview
+Maintenance templates
+(or "tags") are not removed automatically. Even if you fix the issue(s) described in a maintenance template, the tag will remain in the article until you or someone else
+manually removes it
+. The mechanics of removal are usually as simple as clicking "Edit" at the top of the page or in the section you fixed, removing the code that produces the display of the template, leaving an
+edit summary
+, and saving the page.
+It is
+not
+okay to remove maintenance templates until the issue flagged by the template is remedied first—that is, until the maintenance tag is no longer valid—unless it truly did not belong in the first place. Maintenance templates are
+not
+to be used to express your personal opinion.
+Wikipedia works because of the efforts of volunteers just like you, making
+bold edits
+to help build this encyclopedia. Fixing problems and then removing maintenance templates when you are done is important in that effort.
+Addressing the flagged problem
+Shortcuts
+WP:TEMPREMOVE
+WP:TEMPREMOVE
+H:TEMPREMOVE
+H:TEMPREMOVE
+We don't know which maintenance tag brought you to this page, and thus what specific problem needs attention. However, every maintenance template contains links to help pages, policies, guidelines, or other relevant pages that provide information on the problem the template was placed to flag. You will also find guidance on some of the more common templates
+below
+.
+Many common templates address problems with article citations and references, or the
+lack
+thereof — this is because reliable sourcing is the lifeblood of Wikipedia articles and at the core of all of Wikipedia's content policies and guidelines, such as
+notability
+,
+verifiability
+,
+neutral point of view
+, and
+no original research
+. But a host of other issues may also be flagged with maintenance templates, including
+tone
+and
+style of writing
+,
+structure and formatting
+,
+lack of links
+to or
+from other articles
+, compliance with Wikipedia's
+manual of style
+, and absence or content of a
+lead section
+.
+Please make sure the issue has been resolved before removing the template. That does require some effort on your part—to understand both the problem and how to solve it.
+An example
+If the issue flagged by the maintenance template is that the article contains no references, a
+citation needed
+template might be used
+{{
+Unreferenced
+}}
+–  typically placed by the code you would see when wikitext (source) editing:
+{{Unreferenced|date=July 2026}}
+.
+It is important to understand that what you see when
+reading
+an article, and what you see when
+editing
+it, are different unless you're in Visual editing mode. Thus, the above code, only seen when doing source editing, results in the
+display
+of the '
+called
+' template below:
+Example:
+This article
+does not
+cite
+any
+sources
+.
+Please help
+improve this article
+by
+adding citations to reliable sources
+. Unsourced material may be challenged and
+removed
+.
+Find sources:
+"Maintenance template removal"
+–
+news
+·
+newspapers
+·
+books
+·
+scholar
+·
+JSTOR
+(
+July 2026
+)
+(
+Learn how and when to remove this message
+)
+This template contains several
+links
+, indicated by the words and phrases in blue. Three of these links are to pages that, when explored, provide context and resources for you to understand
+why
+the template was placed on the page, and
+how
+to address the issue of the article being
+unreferenced
+:
+"cite", which links to the content guideline
+Wikipedia:Citing sources
+;
+"sources", which links to the policy
+Wikipedia:Verifiability
+; and
+"adding citations to reliable sources", which links to a help page providing a
+how-to guide to the basics of citing references
+.
+Whatever maintenance tag brought you to this help page should likewise contain relevant explanatory links addressed to whatever
+its issue is
+. Read these explanatory and contextual pages to learn about the problem and what it is you need to do to take care of it. Again, some of the more common maintenance templates seen are addressed in the
+specific template guidance section below
+.
+When to remove
+Shortcut
+WP:WTRMT
+WP:WTRMT
+Maintenance templates are not meant to be in articles permanently. Any user without a
+conflict of interest
+may remove a maintenance template in any of the following circumstances:
+When the issue has been adequately addressed;
+Upon determining that the issue has been resolved (perhaps by someone else);
+If it reasonably appears that the template did not belong when placed or was added in error. Consider first discussing the matter with the original placer of the template (unless this user is no longer active on Wikipedia). In any case, if the issue appears contentious, seek
+consensus
+on the
+talk page
+;
+When an article talk  page discussion has not been initiated (for templates requesting it);
+When there is consensus on the talk page (or elsewhere) as to how to address the flagged issue, and you are reasonably implementing those changes. (It is good practice to note the location of the consensus in the
+edit summary
+accompanying your removal, ideally with a
+link
+to the location);
+When it can reasonably be concluded that the template is no longer relevant, such as a
+{{
+Current
+}}
+template appearing in an article that no longer documents a current event;
+If the maintenance template is of a type that requires support but is not fully supported. For example, neutrality-related templates such as
+{{
+COI
+}}
+(associated with the
+conflict of interest guideline
+) or
+{{
+POV
+}}
+(associated with the
+neutral point of view policy
+) strongly recommend that the tagging editor initiate a discussion (generally on the article's talk page) to support the placement of the tag. If the tagging editor failed to do so, or the discussion is dormant, and there is no other support for the template, it can be removed. A
+{{
+notability
+}}
+tag may be removed and may not be re-added if an article has passed an
+Wikipedia:Articles for deletion
+review.
+You may remove a template when according to your best judgment the lack of edits and/or talk page discussion should be interpreted as the issue not worth fixing (as a form of "
+silent consensus
+"). Please note there is currently no consensus for
+general
+age-related removal of maintenance templates – that is, removing a template purely or chiefly because it is old is
+not
+considered a sufficient argument. An exception is that removing POV-related templates whose discussions have gone dormant is encouraged, as addressed in the bullet point immediately above.
+Lastly, there are times when a person attempting to address a maintenance template that flags some fundamental matter may find that the issue
+cannot
+actually be addressed. For example, if an article is flagged as lacking citations to
+reliable
+,
+secondary
+sources, written by
+third-parties
+to the topic, and a user seeing the maintenance templates discovers that such sources appear
+not to exist
+, that usually means the article should be
+deleted
+. In such cases, it is not so much that the template does not belong and should be removed, but rather that flagging the page for maintenance will never address the more critical issue that the page itself does not belong on Wikipedia at all.
+When not to remove
+Shortcuts
+WP:WNTRMT
+WP:WNTRMT
+WP:MAINTENANCEDISAGREEMENT
+WP:MAINTENANCEDISAGREEMENT
+You should not remove maintenance templates if any of the following apply:
+You do not understand the issues raised by the template;
+The issue has not yet been resolved;
+There is ongoing activity or discussion related to the template issue;
+The problem that the maintenance template flags is plainly and unambiguously required for a proper article under
+Wikipedia's policies and guidelines
+;
+You have been paid to edit the article or have some other
+conflict of interest
+(some exceptions apply: see individual template documentation).
+Removal
+Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
+Click on "edit" or "edit source" at the top of the page or
+section
+where the template is.
+Delete the template:
+If you are editing using VisualEditor
+: Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
+If you are editing wikitext ("source" editing)
+: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example above:
+{{Name of template|
+
+---
+
+Tunisian dinar - Wikipedia
+Jump to content
+Search
+Search
+Tunisian dinar
+46 languages
+العربية
+مصرى
+Беларуская (тарашкевіца)
+Беларуская
+Български
+বিষ্ণুপ্রিয়া মণিপুরী
+Català
+Čeština
+Cymraeg
+Dagbanli
+Deutsch
+Esperanto
+Español
+Eesti
+فارسی
+Suomi
+Français
+Hausa
+עברית
+Hrvatski
+Magyar
+Հայերեն
+Bahasa Indonesia
+Igbo
+Italiano
+日本語
+한국어
+Lietuvių
+मराठी
+Bahasa Melayu
+Nederlands
+Norsk bokmål
+Polski
+Português
+Русский
+Саха тыла
+Slovenščina
+Српски / srpski
+Svenska
+Тоҷикӣ
+Türkçe
+Українська
+მარგალური
+Yorùbá
+閩南語 / Bân-lâm-gí
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+Currency of Tunisia
+Tunisian dinar
+دينار تونسي
+(
+Arabic
+)
+50 Tunisian dinars (2022)
+ISO 4217
+Code
+TND (numeric:
+788
+)
+Subunit
+0.001
+Unit
+Symbol
+د.ت
+‎
+(Tunisian Arabic) or
+DT
+(Latin)
+Denominations
+Subunit
+1
+⁄
+1000
+milim or millime
+Banknotes
+Freq. used
+5, 10, 20, 50 dinars
+Coins
+Freq. used
+50, 100, 200 millimes
+1
+⁄
+2
+, 1, 2, 5 dinars
+Rarely used
+5, 10, 20 millimes
+Demographics
+User(s)
+Tunisia
+Issuance
+Central bank
+Central Bank of Tunisia
+Website
+www
+.bct
+.gov
+.tn
+Valuation
+Inflation
+4.9% (
+Nov. 2020
+)
+Source
+"L'Institut National de la Statistique. Inflation (glissement Annuel)"
+.
+www.ins.tn
+(in French)
+. Retrieved
+2020-12-14
+.
+The
+dinar
+(
+Arabic
+:
+دينار
+,
+ISO 4217
+code: TND) is the national currency of
+Tunisia
+. It is subdivided into 1000 milim or millimes (
+ملّيم
+), colloquially called "Franc". The abbreviation
+DT
+is often used in Tunisia, although writing "dinar" after the amount is also acceptable (TND is less colloquial, and tends to be used more in financial circles); the abbreviation
+TD
+is also mentioned in a few places, but is less frequently used, given the common use of the French language in Tunisia, and the French derivation of
+DT
+(i.e.,
+dinar tunisien
+). It can also stand for "Dinaar Tounsi".
+Etymology
+[
+edit
+]
+The name "dinar" is derived from the Roman
+denarius
+, used in the
+Africa province
+, the ancient territory of
+Carthage
+, Tunisia.
+[
+1
+]
+History
+[
+edit
+]
+The dinar was introduced in 1960, having been established as a unit of account in 1958. It replaced the
+franc
+at a rate of 1,000
+F = 1 dinar. The dinar did not follow the
+devaluation
+of the
+French franc in 1958
+, thus the exchange rate peg was abandoned. Instead a peg to the
+United States dollar
+of 1 dinar =
+US$2.38
+was established which was maintained until 1964, when the dinar devalued to 1 dinar =
+$1.90
+. This second rate was held until the
+dollar was devalued in 1971
+.
+Tunisia had a historically low inflation. The dinar was less volatile in 2000–2010 than the currencies of its oil-importing neighbors, Egypt and Morocco. Inflation was 4.9% in fiscal year 2007–08 and 3.5% in fiscal year 2008–09.
+[
+citation needed
+]
+However, the value of the currency has been falling since then, and between 2008 and 2018, the dinar depreciated by about 55% against the U.S. dollar, from
+$0.76
+to
+$0.34
+, and about 46% against the
+euro
+, from
+€0.55
+to
+€0.30
+.
+Coins
+[
+edit
+]
+In 1960, aluminium 1, 2 and 5 millime and brass 10, 20, 50 and 100 millime coins were introduced. The 1 and 2 millimes were last issued in 1990 and 1983 respectively, and are no longer legal tender. In 1968, nickel
+1
+⁄
+2
+dinar coins were introduced, replaced by smaller, cupro-nickel pieces in 1976, when cupro-nickel 1 dinar coins were also introduced. Bimetallic 5 dinar coins were introduced in 2002.
+Coins
+in circulation are
+[
+2
+]
+(link included current and historic coins and banknotes)
+5 millimes
+10 millimes
+20 millimes
+50 millimes
+100 millimes
+200 millimes
+1
+⁄
+2
+dinar
+1 dinar
+2 dinars
+5 dinars
+On 26 December 2013, two new tridecagonal coins were introduced: 200 millimes (copper-zinc, 29
+mm diameter, 1.80
+mm thickness, 9.4 gr. weight) and 2 dinar (copper-nickel, 29.4
+mm diameter, 1.90
+mm thickness, 11.2 gr. weight).
+[
+3
+]
+Coins in circulation
+Image
+Value
+5 millimes
+10 millimes
+20 millimes
+50 millimes
+100 millimes
+200 millimes
+1
+⁄
+2
+dinar (500 millimes)
+1 dinar (1000 millimes)
+2 dinars (2000 millimes)
+5 dinars (5000 millimes)
+Banknotes
+[
+edit
+]
+On 3 November 1958, banknotes were introduced by the
+Central Bank of Tunisia
+in denominations of
+1
+⁄
+2
+, 1 and 5 dinars.
+[
+4
+]
+The designs of these denominations were changed with a series of notes dated 1-6-1965, but issued on 3 March 1966. A 10-dinar note dated 1-6-1969 was issued on 2 January 1970. The last
+1
+⁄
+2
+-dinar notes were dated 1973-10-15 whilst the last 1-dinar notes were dated 1980-10-15. 20-dinar notes dated 1980-10-15 were introduced on 26 December 1984. 30-dinar notes were issued between 1997 and 2011. 50-dinar notes dated 2008 were issued on 25 July 2009.
+[
+5
+]
+On 8 November 2005, an updated version of the frequently used 10-dinar note was issued.
+After the fall of the Ben Ali regime in Tunisia on 14 January 2011, a new set of banknotes was issued progressively to replace the banknotes bearing motifs of the Ben Ali regime; on 31 December 2019, those notes issued prior to 2011 were completely demonetized.
+[
+6
+]
+Previous issues had ceased to be used for several years beforehand but were still exchangeable at the Central Bank until that date.
+A second redesigned series was issued from 2017, beginning with a redesigned 20-dinar note issued in 2017 and a redesigned 10-dinar note in 2020. As of 2020, the 20 and 50 dinar notes issued 2011 and the 5 and 10 dinar notes issued 2013 were in use as well as the new series. At that time, 50 dinar notes were withdrawn from circulation when sent to the Central Bank in the course of their circulation while a new design hadn't been confirmed yet.
+[
+7
+]
+In 2022, new banknotes of 5 and 50 dinars were introduced.
+[
+8
+]
+[
+9
+]
+Demonetized banknotes (1992–2008 Series)
+Image
+Value
+Main color
+Description
+Obverse
+Reverse
+Obverse
+Reverse
+5 dinars
+Green
+Hannibal
+, Port Punique (Carthage)
+Motif commemorating the overthrow of
+Habib Bourguiba
+on
+7 November 1987
+10 dinars
+Blue
+Ibn Khaldoun
+10 dinars
+Elissa (
+Dido
+) Instituted after the United Nations IT conference in Tunis 2006.
+Sbeitla temple
+, satellite dish
+20 dinars
+Purple
+Kheireddine Et-Tounsi
+Motif commemorating the overthrow of
+Habib Bourguiba
+on
+7 November 1987
+30 dinars
+Green, orange
+Aboul-Qacem Echebbi
+Tunisian farm with goats and ”TRENTE DINARS” written above
+50 dinars
+Green and purple
+Ibn Rachik
+, the City of Culture building
+Rades bridge over ship canal to Tunis,
+Enfidha-Hammamet International Airport
+(formerly
+Zine el-Abidine ben Ali Airport
+; renamed after President el-Abidine left the country in 2011)
+2011–2013 Series
+Image
+Value
+Main color
+Description
+Obverse
+Reverse
+Obverse
+Reverse
+5 dinars
+Lime Green
+City of Carthage; Carthaginian general, Hannibal wearing a helmet
+Carthaginian ships
+10 dinars
+Blue and Yellow
+Aboul-Qacem Echebbi
+Arches of Medesa Bacchia school in
+Tunis
+20 dinars
+Red, blue, and yellow
+Kheireddine Et-Tounsi
+, Ksar Ouled Soltane fortified granary in Tataouine district
+L’École Sadiki (Sadiki College) building in Tunis
+50 dinars
+Green, blue, and orange
+Ibn Rachik
+, Musée de la Monnaie (Currency Museum) building in Tunis
+Place Gouvernement la Kasbah, central square in Tunis
+Current banknotes (2017–2022 series)
+Image
+Value
+Size
+Main Color
+Description
+Year of Introduction
+Obverse
+Reverse
+Obverse
+Reverse
+5 dinars
+143 × 70
+mm
+Green
+Slaheddine el Amami
+Roman aqueducts in
+Zaghouan
+2022
+10 dinars
+148 × 73
+mm
+Blue
+Tewhida Ben Sheikh
+Berber pottery and jewelry
+2020
+20 dinars
+153 × 76
+mm
+Red
+Farhat Hached
+Amphitheater of
+El Djem
+2017
+50 dinars
+158 × 79
+mm
+Brown
+Hedi Nouira
+Building of the Central Bank of Tunisia
+2022
+Popular nomenclature
+[
+edit
+]
+Tunisians sometimes informally do not use the main unit (dinar) when mentioning the prices of goods, instead they use the sub-unit (milim). Accordingly, one dinar and a half is often referred to as
+khomstach en miya
+(literally fifteen hundred). This applies to all prices below 2 dinars. 50 dinar is often referred to as
+khamsin alf
+(fifty thousand). This convention is used even for higher prices, for example 70,000 dinars would be called
+sab'in maliun
+(seventy million). "Francs" is also still heard from time to time, 1,000 of them colloquially representing a single dinar.
+In addition to that, Tunisians tend to use the word "frank" instead of millime. For example, 100 millimes (0.1 dinars) is referred to as "miyat frank" (literally 100 franks). The word Frank originated from the French colonial era.
+Currency restrictions
+[
+edit
+]
+It is a criminal offense in
+Tunisia
+to import or export dinars, as it is a closed currency.
+[
+10
+]
+Every year, each citizen can convert into foreign currency up to 6,000 Tunisian dinars before departure from the country. Therefore, prices at
+duty-free shops
+are in convertible currencies such as
+euros
+,
+US dollars
+and
+British pounds
+. There are many converting
+ATMs
+in the country for tourists.
+[
+11
+]
+Current TND exchange rates
+From
+Google Finance
+:
+AUD
+CAD
+CHF
+CNY
+EUR
+GBP
+HKD
+JPY
+USD
+From
+Yahoo! Finance
+:
+AUD
+CAD
+CHF
+CNY
+EUR
+GBP
+HKD
+JPY
+USD
+From
+XE.com
+:
+AUD
+CAD
+CHF
+CNY
+EUR
+GBP
+HKD
+JPY
+USD
+From OANDA:
+AUD
+CAD
+CHF
+CNY
+EUR
+GBP
+HKD
+JPY
+USD
+See also
+[
+edit
+]
+Africa portal
+Money portal
+Numismatics portal
+Economy of Tunisia
+Carthaginian coinage
+Denarius
+Tunisian rial
+or piastre
+Tunisian franc
+Algerian dinar
+Libyan dinar
+References
+[
+edit
+]
+↑
+"Roman silver coins: denarius"
+.
+www.valocchi.it
+. Retrieved
+18 April
+2026
+.
+↑
+"Currency Museum of the Central Bank"
+.
+Central Bank of Tunisia
+. December 12, 2004. Archived from
+the original
+on December 12, 2004.
+↑
+"
+Tunisie: Deux nouvelles pièces de monnaie en circulation
+",
+Al Huffington Post
+Maghreb
+, 26 december 2013
+↑
+Linzmayer, Owen (2013). "Tunisia".
+The Banknote Book
+. San Francisco, CA: www.BanknoteNews.com.
+↑
+Tunisia
+BanknoteNews.com. Accessed on 2009-09-28.
+↑
+"Tunisia - Demonetized banknotes"
+. 20 December 2019.
+↑
+"Tunisie
+: La BCT étudie le retrait des billets de 50 dinars"
+.
+↑
+"Tunisia new 5-dinar note (B537a) confirmed introduced on 28.04.2022 – BanknoteNews"
+. 3 May 2022.
+↑
+"Tunisia new 50-dinar note (B540a) confirmed introduced on 28.04.2022 – BanknoteNews"
+. 3 May 2022.
+↑
+"Tunisia Tra

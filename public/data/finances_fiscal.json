@@ -1,35 +1,28 @@
 {
   "source": "finances",
-  "crawled_at": "2026-07-09",
+  "crawled_at": "2026-07-20",
   "taux": {
     "rs": {
-      "taux": "7.1%, 1.5 %, 5%",
+      "taux": "7.1%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
-  "echeances": [
-    {
-      "type": "tva",
-      "defaut": "20 du mois suivant",
-      "source": "Portail du Ministère des Finances pour la république Tunisienne Aller au contenu principal Fr Ar facebook Adresses Utiles Structures Externes ... E-Services Télédéclaration, Télé-Amende,... Documentation Fiscale Notes Communes, Textes Fiscaux,.. Recherche Résultats Provisoires de l'Exécution de Budget de l'Etat à fin  Décembre 2025 En savoir plus Loi des finances pour l'année 2026(Ar) En savoir plus Actualités & Evénements 26 Février 2026 La ministre des Finances reçoit l’ambassadeur des… 17 أكت"
-    }
-  ],
+  "echeances": [],
   "lois": [
     {
       "article": "2",
-      "extrait": "Portail du Ministère des Finances pour la république Tunisienne Aller au contenu principal Fr Ar facebook Adresses Utiles Structures Externes ... E-Services Télédéclaration, Télé-Amende,... Documentation Fiscale Notes Communes, Textes Fiscaux,.. Recherche Résultats Provisoires de l'Exécution de Budg"
+      "extrait": "Portail du Ministère des Finances pour la république Tunisienne Aller au contenu principal Actualités & Evénements 26 Février 2026 La ministre des Finances reçoit l’ambassadeur des… 17 أكتوبر 2025 Consultation publique portant sur le projet de la… 30 Avril 2025 Consultation publique portant sur le p"
     },
     {
       "article": "26",
-      "extrait": "Portail du Ministère des Finances pour la république Tunisienne Aller au contenu principal Fr Ar facebook Adresses Utiles Structures Externes ... E-Services Télédéclaration, Télé-Amende,... Documentation Fiscale Notes Communes, Textes Fiscaux,.. Recherche Résultats Provisoires de l'Exécution de Budg"
+      "extrait": "Portail du Ministère des Finances pour la république Tunisienne Aller au contenu principal Actualités & Evénements 26 Février 2026 La ministre des Finances reçoit l’ambassadeur des… 17 أكتوبر 2025 Consultation publique portant sur le projet de la… 30 Avril 2025 Consultation publique portant sur le p"
     }
   ],
   "informations": [
     "Est-ce qu’une personne physique soumise à l’impôt sur le revenu selon le régime forfaitaire dans la catégorie des « bénéfices industriels et commerciaux » est soumise à la TFP?",
-    "Si l’employeur refuse l’application de l’article 26 de la loi de finances complémentaire pour l’année 2015, est ce que le salarié peut bénéficier de la déduction des intérêts de la base de l’impôt annuel lors du dépôt de sa déclaration?",
-    "Est-ce qu’une personne physique soumise à l’impôt sur le revenu selon le régime forfaitaire dans la catégorie des « bénéfices industriels et commerciaux » est soumise à la TFP?",
     "Les personnes physiques soumises à l'impôt sur le revenu selon le régime forfaitaire d'imposition ne sont pas soumises à la TFP.",
-    "Si l’employeur refuse l’application de l’article 26 de la loi de finances complémentaire pour l’année 2015, est ce que le salarié peut bénéficier de la déduction des intérêts de la base de l’impôt annuel lors du dépôt de sa déclaration?"
+    "Si l’employeur refuse l’application de l’article 26 de la loi de finances complémentaire pour l’année 2015, est ce que le salarié peut bénéficier de la déduction des intérêts de la base de l’impôt annuel lors du dépôt de sa déclaration?",
+    "La déduction aura lieu du revenu global lors du dépôt de la déclaration annuelle de l'impôt dû."
   ]
 }

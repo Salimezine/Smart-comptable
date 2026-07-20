@@ -1,25 +1,18 @@
 {
   "source": "wiki_tax_2",
-  "crawled_at": "2026-07-09",
+  "crawled_at": "2026-07-20",
   "taux": {
     "rs": {
-      "taux": "10%, 8%, 18.6%, 7.7%",
+      "taux": "2.5%, 70.17%, 47.87%, 380%, 55%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
   "echeances": [],
-  "lois": [
-    {
-      "article": "2",
-      "extrait": "History of the Jews in Tunisia - Wikipedia Jump to content Search Search History of the Jews in Tunisia 11 languages العربية Čeština Deutsch Suomi Français עברית Bahasa Indonesia Italiano Ladino Português Türkçe Edit links From Wikipedia, the free encyclopedia Ethnic group Tunisian Jews יהדות תוניסי"
-    }
-  ],
+  "lois": [],
   "informations": [
-    "Quickly introduced to the Beylic Court, they performed executive functions of court – collectors of taxes, treasurers and intermediaries without authority over",
-    "This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.",
-    "in 1756 to 4,572 piastres in 1806 – and had to pay additional taxes (ghrâma) whenever the sovereign's treasury was in difficulty, as the Muslims sometimes did.",
-    "A state farmer, surrounded by some of the most fortunate and educated notables, also collected taxes such as the tithes, the tax on kosher meat and the offerings of the faithful.",
-    "and many of the key posts in the administration of finance – collection of taxes and customs duties, scheduling of expenditure, handling of cash, keeping books of account or paying the salaries of the"
+    "and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.",
+    "As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Moneta",
+    "Tunisia had a historically low inflation. The dinar was less volatile in 2000–2010 than the currencies of its oil-importing neighbors, Egypt and Morocco. Inflation was 4.9% in fiscal year 2007–08 and 3.5% in fiscal year 2008–09."
   ]
 }

@@ -3781,6 +3781,9 @@ Toussaint, Eric (13 June 2016).
 "Debt: how France appropriated Tunisia"
 .
 CADTM
+. Archived from
+the original
+on 9 September 2025
 . Retrieved
 23 September
 2025
@@ -6728,5 +6731,5 @@ Yale LUX
 /
 34; 9
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1361067152
+https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1364551029
 "

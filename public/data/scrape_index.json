@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09",
+  "generated_at": "2026-07-20",
   "sources": {
     "impots": {
       "url": "https://www.impots.finances.gov.tn",
@@ -30,5 +30,5 @@
       "label": "Axiane Tunisie"
     }
   },
-  "output_dir": "C:\\Users\\ezzin\\Downloads\\comptable\\scripts\\..\\public\\data"
+  "output_dir": "/home/runner/work/Smart-comptable/Smart-comptable/scripts/../public/data"
 }

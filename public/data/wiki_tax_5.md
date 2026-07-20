@@ -1,1159 +1,4246 @@
-Economy of Tunisia - Wikipedia
+List of countries by tax rates - Wikipedia
 Jump to content
 Search
 Search
-Economy of Tunisia
-23 languages
-العربية
-Asturianu
-Беларуская
-Català
-کوردی
-Deutsch
-Español
-فارسی
+List of countries by tax rates
+8 languages
 Français
-Galego
-עברית
-Հայերեն
-Bahasa Indonesia
-Ido
-Italiano
 한국어
-Lietuvių
-Bahasa Melayu
-Occitan
-Português
-Русский
-Türkçe
-Українська
+Монгол
+Nederlands
+پنجابی
+Română
+اردو
+中文
 Edit links
 From Wikipedia, the free encyclopedia
-This article has multiple issues.
-Please help
-improve it
-or discuss these issues on the
-talk page
-.
-(
-Learn how and when to remove these messages
-)
-This article needs to be
-updated
-.
-Please help update this article to reflect recent events or newly available information.
-(
-July 2022
-)
-This article
-has an unclear
-citation style
-.
-The references used may be made clearer with a different or consistent style of
-citation
+Taxation by country
+Afghanistan
+Albania
+Algeria
+Andorra
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belgium
+Bermuda
+Bhutan
+Bosnia and Herzegovina
+Brazil
+British Virgin Islands
+Bulgaria
+Canada
+Chile
+China
+Colombia
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Estonia
+Ethiopia
+Faroe Islands
+Finland
+France
+Germany
+Georgia
+Gibraltar
+Ghana
+Greece
+Greenland
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Kazakhstan
+Kyrgyzstan
+Latvia
+Liechtenstein
+Lithuania
+Luxembourg
+Malaysia
+Malta
+Montenegro
+Morocco
+Namibia
+Nauru
+Netherlands
+New Zealand
+North Korea
+Norway
+Pakistan
+Palestine
+Panama
+Peru
+Philippines
+Poland
+Portugal
+Puerto Rico
+Russia
+Serbia
+Singapore
+Slovakia
+South Africa
+Spain
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+Turkey
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Zambia
+European Union
+List of countries by tax rates
+Tax revenue as
+% of GDP
+v
+t
+e
+Map of the world showing national-level
+sales tax / VAT rates as of October 2019
+Comparing
+tax rates
+across countries is difficult and somewhat subjective, as
+tax laws
+in most countries are extremely complex and the
+tax burden
+falls differently on different groups in each country and sub-national unit. The list focuses on the main types of taxes:
+corporate tax
+(excluding dividend taxes),
+individual income tax
+,
+capital gains tax
+,
+wealth tax
+(excluding property tax),
+property tax
+,
+inheritance tax
 and
-footnoting
-.
-(
-July 2022
-)
-(
-Learn how and when to remove this message
-)
-You can help
-expand this article with text translated from
-the corresponding article
-in French
-.
-(April 2026)
-Click [show] for important translation instructions.
-Consider
-adding a topic
-to this template: there are already 1,296 articles in the
-main category
-, and specifying
-|
-topic
-=
-will aid in categorization.
-Do not translate text that appears unreliable or low-quality. If possible, verify the text with references provided in the foreign-language article.
-You
-must
-provide
-copyright attribution
-in the
-edit summary
-accompanying your translation by providing an
-interlanguage link
-to the source of your translation. A model attribution edit summary is
-Content in this edit is translated from the existing French Wikipedia article at [[:Fr:Économie de la Tunisie]]; see its history for attribution.
-You may also add the template
-{{Translated|Fr|Économie de la Tunisie}}
-to the
-talk page
-.
-For more guidance, see
-Wikipedia:Translation
-.
-(
-Learn how and when to remove this message
-)
-Economy of
-Tunisia
-Amen Bank, one of the biggest banks in the country
-Currency
-Tunisian dinar
-(TND,
-د.ت
-)
-Fiscal year
-Calendar year
-Trade organisations
-African Union
-,
-AfCFTA
-(signed),
-WTO
-,
-COMESA
-,
-CEN-SAD
-,
-AMU
-Country group
-Developing/Emerging
+sales tax
+(incl.
+VAT and GST
+).
+Personal income tax includes all applicable taxes, including all unvested social security contributions. Vested social security contributions are not included, as they contribute to personal wealth and will be repaid upon retirement or emigration, either as a lump sum or as a pension. Only social security contributions without a ceiling can be included in the highest marginal tax rate, as only those are effectively a tax for general distribution among the population.
+The table is not exhaustive in representing the true tax burden to either the corporation or the individual in the listed country. The tax rates displayed are marginal and do not account for deductions, exemptions, or rebates. The effective rate is usually lower than the marginal rate. The tax rates given for
+federations
+(such as the USA and Canada) are averages and vary by state or province. Territories with different rates from their respective nations are in italics.
+Tax rates by countries and territories
+[
+edit
+]
+Tax jurisdiction
+Corporate
+Individual income
+Capital gains
 [
 1
 ]
-Lower-middle income economy
+Wealth
+Property
+Inheritance
+/
+Estate
+VAT or GST
+or
+Sales
+Further reading
+Lowest
+Highest
+Afghanistan
+20%
 [
 2
 ]
-Statistics
-Population
-12,386,642 (2025)
+0%
 [
 3
 ]
-GDP
-$60.43 billion (nominal est, 2026)
+20%
+[
+3
+]
+0%
+(however, in Taliban run areas pre-Taliban rule, small fees were illegally added to groceries)
 [
 4
 ]
-$193.55 billion (
-PPP
-, 2026)
-[
-4
-]
-GDP rank
-89st (nominal, 2026)
-84st (PPP, 2026)
-GDP growth
-2.5%
-(2025)
-2.1%
-(2026e)
-1.6%
-(2027f)
-[
-4
-]
-GDP per capita
-$4,826 (nominal, est, 2026)
-[
-4
-]
-$15,456 (PPP, 2026)
-[
-4
-]
-GDP per capita
-rank
-123st (nominal, 2026)
-112st (PPP, 2026)
-GDP by sector
-agriculture
-:
-10.05%
-industry
-:
-21.69%
-services
-:
-68.26%
-(2020)
 [
 5
 ]
-Inflation
-(
-CPI
-)
-6.53% (2022 est.)
-[
-4
-]
+Taxation in Afghanistan
+Albania
+15%
 [
 6
 ]
-Population below national
-poverty line
-15.2% (2015)
+0%
 [
 7
 ]
-17.5% on less than $5.50/day (2015)
+23%
+[
+7
+]
+15%
+20%
+(standard)
+6%
+(tourism services)
 [
 8
 ]
-Gini coefficient
-32.8
-medium
-(2015)
+Taxation in Albania
+Algeria
+19–26%
 [
 9
 ]
-Human Development Index
-0.746
-high
-(2023)
+0%
 [
 10
 ]
-(
-105th
-)
-0.595
-medium
-IHDI
-(2023)
+35%
+[
+10
+]
+15%
+(resident)
+20%
+(non-resident)
+19%
+(standard)
 [
 11
 ]
-Labour force
-4,246,885 (2024)
+9%
+(basic items)
+[
+11
+]
+Taxation in Algeria
+American Samoa
+34%
+[
+6
+]
+4%
 [
 12
 ]
-36% employment rate (2024)
 [
 13
 ]
-Labour force by occupation
-agriculture
-: 14.8%
-industry
-: 33.2%
-services
-: 51.7%
-(2014 est.)
+6%
 [
-5
+13
 ]
-Unemployment
-16.2% (2024)
+0%
+0%
 [
 14
 ]
-Youth unemployment
-38.1% (2025)
+[
+13
+]
+Taxation in American Samoa
+Andorra
+10%
 [
 15
 ]
-Average net salary
-$360 monthly (2023)
+0%
 [
 16
 ]
-Main industries
-petroleum
-,
-mining
-(particularly
-phosphate
-,
-iron ore
-),
-tourism
-,
-textile
-,
-footwear
-,
-agriculture
-,
-beverages
-,
-olive oil
-External
-Exports
-$23.3 billion USD (2024)
+10%
+[
+16
+]
+4.5%
+(standard)
+9.5%
+(banking services)
+2.5%, 1% or 0%
+(reduced rates)
 [
 17
 ]
-Export goods
-clothing, semi-finished goods and textiles, agricultural products, mechanical goods, phosphates and chemicals, hydrocarbons, electrical equipment
-Main export partners
-EU
-70.17%
-France
-23.2%
-Italy
-16.6%
-Germany
-13.4%
-Spain
-4.75%
-Poland
-1.76%
-United States
-4.69%
-Libya
-3.38%
-United Kingdom
-2.79%
-Algeria
-2.34%
-China
-1.80% (2024)
-[
-17
-]
-Imports
-$26.4 billion USD (2024)
+Taxation in Andorra
+Angola
+30%
 [
 18
 ]
-Import goods
-textiles, machinery and equipment, hydrocarbons, chemicals, foodstuffs
-Main import partners
-EU
-47.87%
-France
-12.6%
-Italy
-12.3%
-Germany
-7.77%
-Spain
-3.93%
-Greece
-1.66%
-China
-11.4%
-Algeria
-7.39%
-Russia
-6.65%
-Turkey
-4.59%
-United States
-2.38% (2024)
+0%
 [
 18
 ]
-FDI
-stock
-$37.95 billion (31 December 2017 est.)
+17%
 [
-5
+18
 ]
-Abroad: $285 million (31 December 2017 est.)
-[
-5
-]
-Current account
-−$2.690 billion (2019)
-Gross
-external debt
-$30.19 billion (31 December 2017 est.)
-[
-5
-]
-Public finance
-Government debt
-70.3% of GDP (2017 est.)
-[
-5
-]
-Foreign reserves
-$8.5 billion (23 December 2023 est.)
-[
-5
-]
-Budget balance
-−5.8% (of GDP) (2017 est.)
-[
-5
-]
-Revenue
-10.957 billion (2022 est.)
-[
-5
-]
-Spending
-12.523 billion (2022 est.)
-[
-5
-]
-Credit rating
-Standard & Poor's
-:
+10%
+14%
 [
 19
 ]
+Taxation in Angola
+Anguilla
+0%
 [
 20
 ]
-BBB (Domestic)
-BBB- (Foreign)
-BBB (T&C Assessment)
-Outlook: Negative
-Moody's
-:
+0%
 [
 20
 ]
-Baa3
-Outlook: Negative
-Fitch
-:
+0%
 [
 20
 ]
-BBB
-Outlook: Negative
-All values, unless otherwise stated, are in
-US dollars
-.
-Tunisia
-is considered a
-developing economy
-, classified as a Lower-middle Income country by the World Bank in 2023.
+Taxation in Anguilla
+Antigua and Barbuda
+25%
 [
 21
 ]
-In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but
-backsliding
-and increasing terrorist attacks made it lose this status in 2015.
+0%
 [
 22
 ]
-Liberalisation
-efforts started in 1986 after three decades of
-dirigisme
-and state control of the economy. From the 1st of January 2008 onwards, the country opened up to international trade with the adoption of the
-free trade agreement
-with the
-European Union
-in 1995, a process which increased in scale after the 2011
-Arab Spring
-and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.
-Tunisia's economic growth has depended on
-oil
-,
-phosphates
-,
-agri-food products
-,
-car parts manufacturing
-, and
-tourism
-.
-Compared to other countries in the
-Maghreb
-region (
-Algeria
-and
-Morocco
-), Tunisia placed second in GDP per capita and total development until 2022, but now places third.
+15%
 [
 23
 ]
-In the 2007
-World Economic Forum
-meeting on
-Africa
-(13th to 15th June 2007), Tunisia was recognised as the most
-competitive
-economy in Africa, and the 29th out of 128 at the global level (from 30th in 2006).
+Taxation in Antigua and Barbuda
+Argentina
+35%
+(residents)
+15%
+(non-residents)
 [
 24
 ]
-The year 2015 was marked by terrorist attacks in Tunisia which are likely to affect economic growth, especially in tourism, one of the main sectors.
+9%
+[
+24
+]
+35%
+[
+24
+]
+15%
+21%
+[
+24
+]
+Taxation in Argentina
+Armenia
+18%
 [
 25
 ]
-Historical trend
+22%
 [
-edit
+25
 ]
-GDP per capita soared by more than 380% in the seventies (1970–1980: USD 280–1,369). But this proved unsustainable and it collapsed to a cumulative 10% growth in the turbulent eighties (1980–1990: USD 1,369–1,507), rising again to almost 50% cumulative growth in the nineties (1990–2000: USD 1,507–2,245), signifying the impact of successful diversification.
+22%
+[
+25
+]
+10–20%
+20%
+[
+25
+]
+Taxation in Armenia
+Aruba
+25%
 [
 26
 ]
-Olive grove in
-Sfax
-, Tunisia
-Growing
-foreign debt
-and the
-foreign exchange
-crisis in the mid-1980s led the government to launch a
-structural adjustment
-program to liberalize prices, reduce
-tariffs
-, and reorient Tunisia toward a
-market economy
-in 1986. Tunisia's economic reform program was lauded as a model by
-international financial institutions
-. The government liberalized prices, reduced tariffs, lowered debt-service-to-exports and debt-to-
-GDP
-ratios, and extended the average maturity of its $10 billion foreign debt. Structural adjustment brought additional lending from the
-World Bank
-and other Western creditors. In 1990, Tunisia acceded to the
-General Agreement on Tariffs and Trade
-(GATT) and is a member of the
-World Trade Organization
-(WTO).
-In 1996 Tunisia entered into an "Association Agreement" with the
-European Union
-(EU) which removed tariffs and other
-trade barriers
-on most goods by 2008. In conjunction with the Association Agreement, the EU is assisting the Tunisian government's
-Mise A Niveau
-(upgrading) program to enhance the productivity of Tunisian businesses and prepare for competition in the global marketplace.
-The government totally or partially privatized around 160
-state-owned enterprises
-after the
-privatization
-program was launched in 1987. Although the program is supported by the GATT, the government had to move carefully to avoid mass firings.
-Unemployment
-continued to plague Tunisia's economy and was aggravated by a rapidly growing workforce. An estimated 55% of the population is under the age of 25. Officially, 15.2% of the Tunisian workforce is unemployed.
-In 2011, after the
-Arab Spring
-, the economy slumped but then recovered with 2.81% GDP growth in 2014. However, unemployment is still one of the major issues with 15.2% of the labor force unemployed as of the first quarter of 2014. Tunisia's political transition gained new momentum in early 2014, with the resolution of a political deadlock, the adoption of a new Constitution and the appointment of a new government. The
-national dialogue platform
-, brokered by key civil society organizations, played a crucial role in gathering all major political parties. This consensus will allow for further reform in the economy and public sector.
-In 2015, the
-Bardo National Museum attack
-led to the collapse of the third largest sector of Tunisia's economy;
+7%
+[
+26
+]
+58.95%
+[
+26
+]
+1.5%
+(turnover tax)
+[
+26
+]
+Taxation in Aruba
+Australia
+30%
+(standard)
+25%
+(base entity)
 [
 27
 ]
-tourism
-. Tunisian tourist workers in Tunis have said that "tourism is dead, it is completely dead", expressing the severe drop in tourism after the attack.
+[
+Note 1
+]
+0%
+[
+27
+]
+45%
 [
 28
 ]
-The number of
-ragpickers
-in Tunisia is increasing due to the continuing high level of unemployment, the loss of purchasing power of the most disadvantaged families, and the explosion of plastic waste due to new consumption habits. Ragpickers do not benefit from
-social protection
-, granted to professions with a legal status and may be subject to the exploitation of the
-Recycling
-industry.
+[
+Note 2
+]
+0–45%
+No
 [
 29
 ]
-In January 2023, Marouane Abassi, governor of the Central Bank of Tunisia, warned that without an agreement with the IMF, his country would not be able to withstand the surge in prices and would not be able to maintain its growth rates.
+0%
+10%
+(standard)
+0%
+(essential items)
+[
+27
+]
+Taxation in Australia
+Austria
+23%
 [
 30
 ]
-The following table shows the main economic indicators in 1980–2017. Inflation under 5% is in green.
+0%
 [
 31
 ]
-Year
-GDP
-(in Bil. US$ PPP)
-GDP per capita
-(in US$ PPP)
-GDP
-(in bil. US$ nominal)
-GDP growth
-(real)
-Inflation rate
-(in Percent)
-Unemployment
-(in Percent)
-Government debt
-(in
-% of GDP)
-1980
-13.6
-2,127
-9.6
-7.4%
-10.1%
-n/a
-n/a
-1981
-15.8
-2,387
-9.2
-5.5%
-8.9%
-n/a
-n/a
-1982
-16.6
-2,463
-8.9
-−0.5%
-13.7%
-n/a
-n/a
-1983
-18.0
-2,618
-9.2
-4.7%
-9.0%
-n/a
-n/a
-1984
-19.7
-2,833
-9.1
-5.7%
-8.6%
-n/a
-n/a
-1985
-21.5
-2,991
-9.2
-5.7%
-7.6%
-n/a
-n/a
-1986
-21.6
-2,894
-9.9
-−1.5%
-6.2%
-n/a
-n/a
-1987
-23.7
-3,101
-10.7
-6.7%
-8.2%
-n/a
-n/a
-1988
-24.5
-3,158
-11.1
-0.1%
-7.2%
-n/a
-n/a
-1989
-26.1
-3,306
-11.1
-2.6%
-7.7%
-n/a
-n/a
-1990
-29.0
-3,560
-14.1
-7.1%
-6.5%
-16.2%
-n/a
-1991
-31.2
-3,756
-14.9
-4.1%
-7.7%
-16.2%
-66.4%
-1992
-34.5
-4,065
-17.8
-8.0%
-5.5%
-16.2%
-65.2%
-1993
-36.2
-4,224
-16.7
-2.5%
-4.0%
-16.3%
-66.9%
-1994
-38.3
-4,362
-17.9
-3.6%
-5.4%
-16.3%
-67.0%
-1995
-40.2
-4,484
-20.6
-2.7%
-6.2%
-16.2%
-68.8%
-1996
-43.7
-4,808
-22.3
-6.9%
-3.7%
-16.1%
-70.1%
-1997
-47.0
-5,100
-21.8
-5.7%
-3.6%
-15.9%
-69.9%
-1998
-49.9
-5,342
-22.9
-5.0%
-3.1%
-16.1%
-61.0%
-1999
-53.7
-5,676
-24.1
-6.0%
-2.8%
-16.0%
-65.0%
-2000
-57.3
-5,993
-22.5
-4.3%
-2.8%
-15.7%
-65.9%
-2001
-61.4
-6,362
-23.1
-4.9%
-1.9%
-15.1%
-54.7%
-2002
-63.4
-6,503
-24.3
-1.7%
-1.9%
-15.3%
-54.2%
-2003
-68.2
-6,931
-28.8
-5.5%
-2.1%
-14.5%
-55.1%
-2004
-74.3
-7,476
-32.7
-6.0%
-2.5%
-14.2%
-54.1%
-2005
-79.7
-7,947
-33.9
-4.0%
-2.4%
-12.8%
-52.4%
-2006
-86.8
-8,570
-36.1
-5.7%
-3.2%
-12.5%
-47.8%
-2007
-94.7
-9,260
-40.8
-6.3%
-3.0%
-12.4%
-44.8%
-2008
-100.8
-9,763
-47.0
-4.5%
-4.3%
-12.4%
-42.0%
-2009
-104.8
-10,036
-45.6
-3.1%
-3.7%
-13.3%
-40.5%
-2010
-108.8
-10,315
-46.2
-2.6%
-3.3%
-13.0%
-39.2%
-2011
-108.9
-10,204
-48.1
-−1.9%
-3.5%
-18.9%
-43.1%
-2012
-115.2
-10,694
-47.3
-3.9%
-5.1%
-16.7%
-47.7%
-2013
-120.0
-11,020
-48.7
-2.4%
-5.8%
-15.3%
-46.8%
-2014
-124.9
-11,355
-50.3
-2.3%
-4.9%
-15.3%
-51.6%
-2015
-127.6
-11,487
-45.8
-1.1%
-4.9%
-15.4%
-54.8%
-2016
-130.5
-11,448
-44.4
-1.0%
-3.7%
-15.5%
-61.2%
-2017
-135.4
-11,755
-42.2
-1.9%
-5.3%
-15.3%
-71.3%
-External trade and investment
+55%
 [
-edit
+31
 ]
-Tunisian exports in 2006
-In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for
-balance-of-payments
-support. In January 2003
-Standard & Poor's
-affirmed its investment grade credit ratings for Tunisia. The
-World Economic Forum
-2002-03 ranked Tunisia 34th in the Global Competitiveness Index Ratings (two places behind
-South Africa
-, the continent's leader). In April 2002, Tunisia's first
-US dollar
--denominated
-sovereign bond
-issue since 1997 raised $458 million, with maturity in 2012.
-The
-Bourse de Tunis
-is under the control of the state-run Financial Market Council and lists over 50 companies. The government offers substantial tax incentives to encourage companies to join the exchange, and expansion is occurring.
-The Tunisian government adopted a unified investment code in 1993 to attract foreign capital. More than 1,600 export-oriented
-joint venture
-firms operate in Tunisia to take advantage of relatively low labor costs and preferential access to nearby European markets. Economic links are closest with European countries, which dominate Tunisia's trade. Tunisia's
-currency
-, the dinar, is not traded outside Tunisia. However, partial convertibility exists for bona fide commercial and investment transaction. Certain restrictions still limit operations carried out by Tunisian residents.
-The stock
-market capitalisation
-of listed companies in Tunisia was valued at $5.3 Billion in 2007, 15% of 2007 GDP, by the
-World Bank
-.
+27.5%
 [
 32
 ]
-For 2007, foreign direct investment totaled TN Dinar 2 billion in 2007, or 5.18% of the total volume of investment in the country. This figure is up 35.7% from 2006 and includes 271 new foreign enterprises and the expansion of 222 others already based in the country.
-The economic growth rate seen for 2007, at 6.3% is the highest achieved in a decade.
-On 29 and 30 November, Tunisia held an investment conference with country chiefs from all around the world with pledges that have reached $30 billion to finance new public projects.
+No
+[
+29
+]
+No, but stamp duty for inherited real estate.
+20%
+(standard)
+13%
+(tourism services)
+10%
+(basic items)
 [
 33
 ]
-As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Monetary Fund on a rescue package.
+Taxation in Austria
+Azerbaijan
+20%
 [
 34
 ]
-In 2025, Tunisia severed ties with the IMF.
+14%
+[
+34
+]
+25%
+[
+34
+]
 [
 35
 ]
-Tunisia's exports to Libya, exceeding 18% growth between 2020 and 2024.
+18%
+[
+34
+]
+Taxation in Azerbaijan
+Azores
+13.6%
+(
+SMEs
+, up to a taxable profit of €15,000)
 [
 36
 ]
-Loan guarantee
-[
-edit
-]
-Source:
+16.8%
+(general)
+0%
+(for monthly salaries up to €654 + social security charges)
 [
 37
 ]
-On 20 April 2012, U.S. Treasury Secretary
+36.2%
+(for monthly salaries above €25,200 + social security charges)
 [
 38
 ]
-and Tunisian Finance Minister
-Houcine Dimassi
-signed a declaration of intent
+4%
+(reduced)
+9%
+(intermediate)
+16%
+(standard)
 [
 39
 ]
-to move forward on a U.S. loan guarantee for Tunisia. The U.S. Government would provide this loan guarantee to enable the Tunisian government to access significant market financing at affordable rates and favorable maturities with the backing of a U.S. guarantee of principal and interest (up to 100 percent).
-The support would consist of the U.S. guarantee of Tunisian government-issued debt (or of bank loans made to the Government of Tunisia).  This guarantee will significantly reduce the Tunisian government's borrowing costs at a time when market access has become more expensive for many emerging market countries.  In the weeks ahead, both governments intend to make progress on a loan guarantee agreement that would allow Tunisia to move forward with a debt issuance.
-The ceremony took place at the World Bank immediately following the meeting of Finance Ministers of the
-Deauville Partnership with Arab Countries in Transition
-.
-Microfinance institutions, such as Enda Tamweel, exist to assist those who are unable to access the regular banking system. This comprises those living in rural or impoverished regions where the informal sector thrives, accounting for 34% of Tunisia's GDP.
+Taxation in Portugal
+Bahamas
 [
 40
 ]
+0%
 [
 41
 ]
-Enda Tamweel has made over 3 million microloans to over 900,000 people in the 30 years since its inception, infusing more than €1.6 billion into the local economy.
-[
-40
-]
-[
-41
-]
-Energy
-[
-edit
-]
-Main article:
-Energy in Tunisia
-Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).
+0%
+8.8%
+(social security tax)
+12%
+(standard)
 [
 42
 ]
-Electricity
-[
-edit
-]
-Production:
-16.13 Billion kWh (2011)
+Taxation in the Bahamas
+Bahrain
+0%
 [
 43
 ]
-Production by source:
-fossil fuel:
-96.8% (2010)
-hydro:
-1.7% (2010)
-other:
-1.5% (2010)
-Consumption:
-13.29 billion kWh (2010)
-Exports:
-None (2010)
-Imports:
-19 million kWh (2010)
-Economic structure
-[
-edit
-]
-In 2017, the breakdown by economic sector is as follows:
-Economy sector
-contribution to GDP
-Agriculture
-10,1
-%
-Industry
-26,2
-%
-Services
-63,8
-%
-Agriculture
-[
-edit
-]
-Agriculture - products:
-olives
-,
-grain
-,
-tomatoes
-,
-citrus fruit
-,
-sugar beets
-,
-dates
-,
-almonds
-.
-In 2018, Tunisia produced:
-1.5 million tons of
-wheat
-;
-1.3 million tons of
-tomato
-(16th largest producer in the world);
-825 thousand tons of
-olives
-(7th largest producer in the world);
-700 thousand tons of
-barley
-;
-548 thousand tons of
-watermelon
-;
-450 thousand tons of
-onion
-;
-426 thousand tons of
-pepper
-;
-423 thousand tons of
-potato
-;
-241 thousand tons of
-date
-(10th largest producer in the world);
-217 thousand tons of
-carrots
-;
-146 thousand tons of
-grape
-;
-144 thousand tons of
-orange
-;
-118 thousand tons of
-peach
-;
-114 thousand tons of
-apple
-;
-104 thousand tons of
-grapefruit
-;
-102 thousand tons of
-melon
-.
-In addition to smaller productions of other agricultural products, like
-almond
-(66 thousand tons) and
-sugar beet
-(76 thousand tons).
+0%
+10%
+(standard rate)
+0%
+(essential goods)
+Taxation in Bahrain
+Bangladesh
 [
 44
 ]
+32.5%
+[
+45
+]
+0%
+25%
+15%
+Taxation in Bangladesh
+Barbados
+[
+citation needed
+]
+5.5%
+(under
+BBD$
+1 million)
+3.0%
+(BBD$1–20 million)
+2.5%
+(BBD$20–30 million)
+1.0%
+(over BBD$30 million)
+[
+46
+]
+25%
+38%
+17.5%
+(standard)
+7.5%
+(hotel services)
+Taxation in Barbados
+Belarus
+[
+47
+]
+20%
+43.37%
+(12% + 1% mandatory insurance + 35% social security)
+20%
+(standard)
+10%
+(reduced)
+Taxation in Belarus
+Belgium
+[
+44
+]
+25%
+[
+48
+]
+55%
+(single/secluded)
+50%
+(legally married)
+60.45%
+(
+13.07%
+(mandatory social security tax)
+,
+50%
+(federal)
+,
+[
+49
+]
+3–9%
+(municipal)
+[
+50
+]
+)
+10%
+No
+[
+29
+]
+80%
+[
+51
+]
+21%
+(standard)
+12%
+(restaurants)
+6%
+(essential and selected goods)
+Taxation in Belgium
+Belize
+25%
+(general)
+[
+52
+]
+1.75%
+(small businesses with income below BZ$ 300.000)
+19%
+(tourism related companies - incl. hotels and restaurants)
+37.5%
+(banks and other financial institutions)
+25%
+[
+53
+]
+0%
+(except in some specific cases)
+No
+12.5%
+Taxation in Belize
+Benin
+[
+citation needed
+]
+35%
+10%
+35%
+18%
+Taxation in Benin
+Bermuda
+0%
+[
+54
+]
+0%
+0%
+Taxation in Bermuda
+Bhutan
+26%
+0%
+25%
+[
+55
+]
+—
+N/a
+Taxation in Bhutan
+Bolivia
+29%
+0%
+25%
+13%
+Taxation in Bolivia
+Bosnia and Herzegovina
+10%
+[
+56
+]
+10%
+17%
+[
+56
+]
+Taxation in Bosnia and Herzegovina
+Botswana
+22%
+0%
+25%
+25%
+14%
+Taxation in Botswana
+Brazil
+[
+44
+]
+40%
+(highest rate for financial institutions, insurance and capitalisation companies)
+24–34%
+(general)
+15%
+(+10% in profits exceeding BR$ 20.000
+[
+57
+]
++ 9% Social Contribution Tax or 15% for financial institutions, insurance and capitalisation companies
+[
+58
+]
+)
+0%
+[
+59
+]
+27.5%
+[
+60
+]
+22.5%
+8%
+[
+61
+]
+20–30.7%
+[
+62
+]
+Taxation in Brazil
+Brunei
+1%
+(sole proprietorships and partnerships)
+18.5%
+(all other businesses)
+[
+63
+]
+0%
+0%
+[
+63
+]
+—
+N/a
+[
+64
+]
+Taxation in Brunei
+Bulgaria
+10%
+(+5% on distribution of profit)
+10%
+10%
+20%
+(9% on hotel and camping accommodation)
+Taxation in Bulgaria
+Burkina Faso
+27.5%
+0%
+25%
+18%
+Taxation in Burkina Faso
+Burundi
+[
+65
+]
+35%
+0%
+35%
+18%
+Taxation in Burundi
+Cambodia
+20%
+0%
+20%
+10%
+Taxation in Cambodia
+Cameroon
+[
+47
+]
+31.5%
+10%
+35%
+19.25%
+Taxation in Cameroon
+Canada
+26.5–31%
+(higher)
+9–13%
+(lower)
+[
+66
+]
+19%
+(15% federal + 4% in
+Nunavut
+)
+[
+67
+]
+27.53%
+(12.53% federal + 15% in
+Quebec
+)
+[
+68
+]
+[
+69
+]
+[
+70
+]
+58.50%
+(33% federal + 25.5% in
+Quebec
+)
+44.5%
+(33% federal + 11.5% in
+Nunavut
+)
+[
+67
+]
+[
+70
+]
+27%
+No
+[
+29
+]
+No, however the deceased is considered to have sold all of their capital property for Fair Market Value immediately prior to death. Gains are added to income of the deceased on their final return.
+[
+71
+]
+5%
+(5% federal tax in
+Alberta
+)
+to 15%
+(5% federal tax + 10% provincial tax in
+New Brunswick
+)
+[
+72
+]
+Taxation in Canada
+Cape Verde
+25%
+16.5%
+27.5%
+15%
+Taxation in Cape Verde
+Cayman Islands
+0%
+[
+73
+]
+0%
+[
+73
+]
+0%
+[
+73
+]
+[
+74
+]
+[
+Note 3
+]
+Taxation in the Cayman Islands
+Central African Republic
+30%
+[
+75
+]
+—
+N/a
+50%
+[
+75
+]
+19%
+Taxation in the Central African Republic
+Chad
+20%
+—
+N/a
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Chad
+Chile
+[
+76
+]
+25–27%
+[
+77
+]
+0%
+(for monthly taxable incomes under US$950)
+40%
+(for monthly taxable incomes over US$190,000)
+[
+78
+]
+10%
+No
+[
+29
+]
+25%
+19%
+Taxation in Chile
+China
+[
+44
+]
+25%
+(standard)
+[
+79
+]
+15%
+(concession rate for high-tech companies)
+[
+80
+]
+0%
+45%
+[
+81
+]
+[
+82
+]
+20%
+0% -
+The Chinese government owns all lands in China and the government does not tax homeowners.
+[
+83
+]
+0%
+[
+84
+]
+13%
+(standard)
+[
+64
+]
+9%
+(energy, books, transportation, etc.)
+6%
+(other services)
+0%
+(goods and services for export)
+Taxation in China
+Colombia
+[
+47
+]
+35%
+[
+85
+]
+0%
+[
+86
+]
+35%
+(non-labor income)
+39%
+(labor income)
+[
+86
+]
+10%
+(standard)
+20%
+(lotteries, gaming, or similar activities)
+[
+87
+]
+Yes
+[
+29
+]
+19%
+(standard)
+5% or 0%
+(reduced rates)
+Taxation in Colombia
+Comoros
+35%
+—
+N/a
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in the Comoros
+Cook Islands
+20–30%
+18.5%
+30%
+0%
+[
+88
+]
+15%
+Taxation in the Cook Islands
+DR Congo
+35%
+0%
+40%
+5–20%
+Taxation in the Democratic Republic of the Congo
+Congo
+30%
+[
+89
+]
+—
+N/a
+—
+N/a
+18.9%
+[
+90
+]
+Taxation in the Republic of the Congo
+Costa Rica
+30%
+0%
+25%
+No
+[
+29
+]
+13%
+(standard)
+4%
+(private healthcare and plane tickets)
+2%
+(medicines and private education)
+1%
+(essential foods and agriculture)
+[
+91
+]
+Taxation in Costa Rica
+Croatia
+[
+47
+]
+18%
+(over 3 million
+kn
+)
+12%
+(under 3 million kn)
+12%
+40%
+10%
+5%
+25%
+(standard)
+[
+92
+]
+13%
+(certain essential groceries)
+Taxation in Croatia
+Cuba
+[
+93
+]
+30%
+15%
+50%
+2.5–20%
+Taxation in Cuba
+Curaçao
+22%
+9.75%
+46.5%
+6%, 7% or 9%
+Taxation in Curaçao
+Cyprus
+[
+44
+]
+15%
+0%
+35%
+20%
+19%
+(standard)
+5% or 0%
+(reduced rates)
+Taxation in Cyprus
+Czech Republic
+[
+94
+]
+[
+95
+]
+21%
+[
+96
+]
+20.1%
+(15% deductible tax + 45% healthcare and social security if an employee, 22.5% if self-employed)
+[
+97
+]
+45.7%
+(peaks for employee gross annual income of $90,000 or more)
+39%
+(for gross annual income of $450,000 or more)
+[
+citation needed
+]
+15%
+No
+[
+29
+]
+21%
+(standard)
+[
+98
+]
+12%
+(reduced)
+Taxation in the Czech Republic
+Denmark
+[
+99
+]
+22–25%
+(depending on business)
+39.86%
+(34.63% for unemployed; first
+DKK
+46,000 / US$7,245 / €6,172 per year is deductible)
+[
+100
+]
+[
+101
+]
+52.07%
+[
+102
+]
+42%
+No
+[
+29
+]
+15%
+25%
+Taxation in Denmark
+Djibouti
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Djibouti
+Dominica
+25%
+[
+103
+]
+0%
+35%
+15%
+Taxation in Dominica
+Dominican Republic
+27%
+0%
+25%
+27%
+[
+104
+]
+18%
+Taxation in the Dominican Republic
+Timor-Leste
+10%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in East Timor
+Ecuador
+25%
+[
+105
+]
+0%
+35%
+35%
+35%
+[
+106
+]
+12%
+(standard)
+15%
+(luxury goods)
+0%
+(exports)
+Taxation in Ecuador
+Egypt
+[
+107
+]
+22.5%
+(on taxable corporate profits)
+(+ 5% on distribution of profit)
+0%
+27.5%
+14%
+(standard)
+10%
+(professional services)
+0%
+(exports)
+Taxation in Egypt
+El Salvador
+30%
+0%
+30%
+13%
+Taxation in El Salvador
+Equatorial Guinea
+35%
+0%
+35%
+15%
+Taxation in Equatorial Guinea
+Eritrea
+34%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Eritrea
+Estonia
+[
+108
+]
+0%
+(20% on distribution or 14% on distribution below the 3 previous years average)
+6.9%
+(for minimum wage full-time work in 2024; excluding social security taxes paid by the employer)
+23.6%
+(for employees earning over €25,200 per year in 2024: includes 20% flat income tax + 2% mandatory pension contribution + 1.6% unemployment insurance paid by employee); excluding social security taxes paid by the employer and taxes on dividends
+20%
+No
+[
+29
+]
+0%
+24%
+(standard)
+9%
+(reduced)
+Taxation in Estonia
+Eswatini (Swaziland)
+27.5%
+0%
+[
+109
+]
+33%
+[
+109
+]
+15%
+Taxation in Eswatini
+Ethiopia
+30%
+[
+110
+]
+0%
+35%
+—
+N/a
+Taxation in Ethiopia
+Falkland Islands
+26%
+0%
+26%
+15%
+0%
+Taxation in the Falkland Islands
+Faroe Islands
+18%
+20%
+0%
+[
+111
+]
+Taxation in the Faroe Islands
+Federated States of Micronesia
+21%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Micronesia
+Fiji
+20%
+[
+112
+]
+0%
+20%
+9%
+Taxation in Fiji
+Finland
+20%
+[
+113
+]
+18%
+(from 2027)
+[
+114
+]
+8.4%
+(social security tax)
+[
+115
+]
+53.61%
+(in
+Halsua
+for the members of the
+Orthodox Church of Finland
+: 31.25% national tax rate + 23.5% municipal tax + 9.9% social security tax + 2.1% church tax)
+[
+116
+]
+34%
+No
+[
+29
+]
+33%
+[
+117
+]
+25.5%
+(standard)
+14%
+(food and fodder)
+10%
+(medicines and public transport)
+Taxation in Finland
+France
+25%
+0%
+55.34%
+(45%
+IR
++ 4%
+CEHR
++ 9.2%
+CSG
++ 0.5%
+CRDS
++ 0.4% Old-age insurance + 6%
+PER
+)
+[
+118
+]
+[
+119
+]
+[
+120
+]
+31,4%
+(+4% for high earners)
+Yes
+[
+29
+]
+0-60%
+[
+121
+]
+20%
+(standard)
+10%
+(restaurants, transportation and tourism services)
+5.5%
+(utilities)
+2.1%
+(press)
+Taxation in France
+French Polynesia
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in French Polynesia
+Gabon
+35%
+5%
+35%
+18%
+Taxation in Gabon
+Gambia
+31%
+0%
+30%
+—
+N/a
+Taxation in the Gambia
+Germany
+30%
+(15% corporate tax (+ 5.5% solidarity surcharge) + 7% to 17% trade tax)
+[
+122
+]
+19.6%
+(social security contributions)
+0%
+(earning under €11,604 per year)
+45%
+(+ 39.2% social security contributions up to €90,600 per year, half paid by employer (14.6% health + 18.6% pension + 3.4% care + 2.6% unemployment))
+25%
+Inactive
+[
+29
+]
+Yes
+50%
+[
+123
+]
+19%
+(standard)
+7%
+(reduced)
+Taxation in Germany
+Georgia
+[
+124
+]
+0%
+(15% on distribution of profit)
+20%
+(5% on dividend, interest and royalty)
+0%
+[
+125
+]
+18%
+Taxation in Georgia
+Ghana
+25%
+25%
+—
+N/a
+3%
+Taxation in Ghana
+Gibraltar
+10%
+17%
+40%
+0%
+Taxation in Gibraltar
+Greece
+22%
+9%
+(zero tax for annual income under €8633,33)
+44%
+15%
+No
+[
+29
+]
+20%
+24%
+(standard)
+13%
+(food, health and tourism services)
+6%
+(theater tickets, books and medicine)
+VAT is reduced by 30% for the islands of
+Leros
+,
+Lesvos
+,
+Kos
+,
+Samos
+,
+Chios
+(i.e., 17%, 9%, 4%).
+Taxation in Greece
+Greenland
+25%
+44%
+0%
+0%
+Taxation in Greenland
+Grenada
+28%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Grenada
+Guatemala
+[
+47
+]
+25%
+5%
+7%
+12%
+Taxation in Guatemala
+Guernsey
+0%
+[
+126
+]
+0%
+(earning under £658.67 per month)
+[
+127
+]
+20%
+(+ 6.6–11.3% Social Security)
+[
+127
+]
+Document duty charged on real estate transfers from estates.
+0%
+[
+128
+]
+Taxation in Guernsey
+Guinea
+35%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Guinea
+Guinea-Bissau
+35%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Guinea-Bissau
+Guyana
+30%
+25%
+(chargeable income under $3,120,000 GYD)
+[
+129
+]
+35%
+(chargeable income over $3,120,000 GYD)
+[
+129
+]
+14%
+(standard)
+0%
+(reduced)
+Taxation in Guyana
+Haiti
+30%
+[
+130
+]
+0%
+30%
+[
+131
+]
+10%
+[
+130
+]
+Taxation in Haiti
+Honduras
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Honduras
+Hong Kong
+[
+132
+]
+16.5%
+(over
+HK$
+2 million)
+8.25%
+(under HK$2 million)
+0%
+15%
+0%
+0%
+Taxation in Hong Kong
+Hungary
+9%
+15%
+(+ 18.5% social security + 13% social contribution tax)
+15%
+No
+[
+29
+]
+18%
+[
+133
+]
+27%
+(standard)
+18%
+(reduced)
+5%
+(certain foods, internet service, restaurant services, medicines and books)
+Taxation in Hungary
+Iceland
+[
+47
+]
+20%
+31.48%
+(On income up to 446.136 ISK)
+[
+134
+]
+46.28%
+22%
+No
+[
+29
+]
+10%
+24%
+(standard)
+11%
+(reduced)
+Taxation in Iceland
+India
+15–22%
+(excludes surcharge & cess)
+[
+135
+]
+0%
+(₹ 0 - 400,000 + 12% of basic salary for epf or social security)
+39%
+(including Surcharge & Health and Education Cess for Income greater than Rs.20,000,000)
+12.5%
+(LTCG)
+20%
+(STCG)
+0%
+40%
+(Luxury and Sin Goods rate)
+18%
+(standard)
+5%, 0%
+(Essential Goods & Services rate)
+(varies by commodity; see
+GST rates in India
+)
+[
+136
+]
+[
+137
+]
+Taxation in India
+Indonesia
+22%
+5%
+35%
+11%
+Taxation in Indonesia
+Iran
+25%
+0%
+35%
+0–9%
+Taxation in Iran
+Iraq
+15%
+[
+138
+]
+3%
+[
+139
+]
+15%
+300%
+(Alcohol and tobacco)
+15%
+(Cars and travel)
+20%
+(Mobile recharge cards and internet)
+10%
+(Deluxe and first class restaurants and hotels)
+[
+140
+]
+Taxation in Iraq
+Ireland
+12.5%
+20%
+(first €1,650 per year is deductible)
+52.1%
+(40% + 12.1% social insurance contributions on incomes above €44,000)
+33%
+No
+[
+29
+]
+33%
+[
+141
+]
+23%
+(goods)
+9–13.5%
+(services)
+0%
+(certain items of food)
+Taxation in Ireland
+Isle of Man
+0%
+0% (First 17000 GBP is tax free)
+21%
+20%
+(standard rate)
+5%
+(home renovations)
+Taxation in the Isle of Man
+Israel
+23%
+[
+142
+]
+0%
+(for monthly income under 6,330₪)
+50%
+25%
+No
+[
+29
+]
+0%
+18%
+(standard)
+0%
+(fruits and vegetables)
+Taxation in Israel
+Italy
+27.9%
+(24% + 3.9% on tax-adjusted EBITDA)
+23%
+(first €8,500 per year is deductible); + municipal and local taxes (0-3%)
+43%
+(+ municipal and local taxes (0-3%))
+26%
+No
+[
+29
+]
+4%
+22%
+(standard)
+10%
+(reduced rate on certain products e.g. food)
+4%
+(on products of first necessity)
+Taxation in Italy
+Ivory Coast
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in the Ivory Coast
+Jamaica
+33.3%
+(standard)
+25%
+(reduced rate for small companies)
+0% (on income up to J$1,774,554)
+30%
+(on income over J$6,000,000)
+20%
+(services)
+16.5%
+(goods)
+Taxation in Jamaica
+Japan
+[
+143
+]
+29.74%
+[
+144
+]
+15.105%
+(10% local + 5.105% national)
+50.5%
+(45% national + 10% local)
+20.315%
+No
+[
+29
+]
+55%
+[
+145
+]
+10%
+(standard)
+8%
+(groceries and takeout food and subscription newspaper)
+Taxation in Japan
+Jersey
+[
+44
+]
+0%
+0%
+20%
+[
+146
+]
+Stamp duty on probate starting at £50, rising progressively.
+5%
+[
+147
+]
+Taxation in Jersey
+Jordan
+[
+47
+]
+20%
+0%
+25%
+[
+148
+]
+16%
+Taxation in Jordan
+Kazakhstan
+[
+47
+]
+20%
+[
+122
+]
+[
+2
+]
+10%
+10%
+(residents)
+15%
+(non-residents)
+13%
+Taxation in Kazakhstan
+Kenya
+30%
+[
+122
+]
+10%
+35%
+16%
+(standard)
+12%
+(electricity and fuel)
+0%
+(food)
+Taxation in Kenya
+Kiribati
+35%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Kiribati
+Kosovo
+[
+149
+]
+10%
+0%
+10%
+0%
+Taxation in Kosovo
+Kuwait
+7.5–16%
+(Rate of 15% typically applies except for regions under Saudi control where it's 7.5% tax, plus add a possible 1% tax for Zakat)
+[
+150
+]
+0%
+0%
+0%
+Taxation in Kuwait
+North Korea
+[
+151
+]
+25%
+0%
+20%
+10%
+[
+152
+]
+Taxation in North Korea
+Kyrgyzstan
+10%
+[
+153
+]
+10%
+12%
+(standard)
+1–5%
+Taxation in Kyrgyzstan
+Laos
+35%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Laos
+Latvia
+0%
+(20% on distribution of profit)
+[
+154
+]
+20%
+[
+155
+]
+31.4%
+20%
+[
+156
+]
+No
+[
+29
+]
+21%
+(standard)
+12%
+(Medical products, domestic public transport)
+5%
+(Fresh fruits and vegetables, books, newspapers)
+[
+157
+]
+Taxation in Latvia
+Lebanon
+[
+47
+]
+17%
+2%
+25%
+11%
+Taxation in Lebanon
+Lesotho
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Lesotho
+Liberia
+25%
+[
+158
+]
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Liberia
+Libya
+24.5%
+(20% + 4% Jehad tax + 0.5% corporate income tax to pay for stamp duties)
+[
+159
+]
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Libya
+Liechtenstein
+[
+160
+]
+[
+161
+]
+12.5%
+3%
+[
+162
+]
+22.4%
+[
+163
+]
+0%
+(share sales)
+24%
+(real estate)
+8.1%
+(standard)
+3.8%
+(lodging services)
+2.5%
+(reduced)
+[
+164
+]
+Taxation in Liechtenstein
+Lithuania
+[
+citation needed
+]
+15%
+[
+165
+]
+31.2%
+42.77%
+15%
+No
+[
+29
+]
+21%
+(standard)
+9%
+(publications, accommodation services etc.)
+5%
+(medicine, newspapers and magazines etc.)
+0%
+(certain goods and services)
+Taxation in Lithuania
+Luxembourg
+28.69%
+(17% income tax + 1.19% unemployment fund contribution + 6.0–10.5% municipal trade tax
+[
+166
+]
+8%
+44.2%
+(42%
+[
+167
+]
++ 3.78% unemployment fund surcharge)
+[
+168
+]
+No
+[
+169
+]
+0%
+17%
+(standard)
+3%
+(reduced)
+Taxation in Luxembourg
+Macau
+[
+44
+]
+12%
+0%
+12%
+[
+170
+]
+0%
+[
+171
+]
+Taxation in Macau
+Madagascar
+20%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Madagascar
+Madeira
+5%
+(licensed companies in the
+International Business Centre of Madeira
+).
+13%
+(
+SMEs
+, applicable up to a taxable profit of €15000)
+20%
+(general)
+0%
+(for monthly salaries up to €659) + social security charges
+[
+38
+]
+45.1%
+(for monthly salaries above €25,275 + social security charges)
+[
+38
+]
+5%
+(reduced)
+12%
+(intermediate)
+22%
+(standard)
+[
+172
+]
+Taxation in Madeira
+Malawi
+30%
+0%
+35%
+[
+173
+]
+—
+N/a
+Taxation in Malawi
+Malaysia
+[
+44
+]
+18–24%
+0%
+30%
+[
+174
+]
+(+ 11% for
+EPF
+[
+175
+]
++ 0.5% for
+SOCSO
+[
+176
+]
+)
+2-10%
+[
+177
+]
+10%
+(standard rate for goods)
+7%
+(services)
+5%
+(reduced rate for goods)
+[
+178
+]
+Taxation in Malaysia
+Maldives
+[
+179
+]
+8–15%
+[
+180
+]
+0%
+0%
+(expatriates)
+15%
+(nationals)
+6%
+[
+181
+]
+Taxation in the Maldives
+Mali
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Mali
+Malta
+35%
+(unless eligible for 30% rebate)
+0%
+35%
+0%
+0%
+18%
+(7% and 5% for certain goods and services)
+Taxation in Malta
+Marshall Islands
+0.8–3%
+0%
+12%
+[
+182
+]
+2–4%
+[
+citation needed
+]
+Taxation in the Marshall Islands
+Mauritania
+25%
+—
+N/a
+—
+N/a
+0%
+—
+N/a
+Taxation in Mauritania
+Mauritius
+15%
+0%
+15%
+15%
+Taxation in Mauritius
+Mexico
+[
+44
+]
+30%
+[
+183
+]
+1.92%
+35%
+(+ reduction of deductions (topes))
+No
+[
+29
+]
+0%
+16%
+Taxation in Mexico
+Moldova
+[
+44
+]
+12%
+12%
+[
+184
+]
+12%
+(+ 24% for social security)
+20%
+(standard)
+10%
+(
+HoReCa
+)
+Taxation in Moldova
+Monaco
+0%
+(25% for companies generating more than 25% of their turnover outside Monaco)
+[
+185
+]
+0%
+[
+186
+]
+20%
+(standard)
+10%
+(reduced)
+5.5%
+(basic products)
+[
+187
+]
+Taxation in Monaco
+Mongolia
+10%
+10%
+10%
+Taxation in Mongolia
+Montenegro
+9%
+[
+188
+]
+[
+189
+]
+9%
+(first €720)
+[
+189
+]
+12.65%
+(11% national tax + 15% municipality surtax on income tax)
+[
+189
+]
+15%
+(entrepreneurs on their worldwide income)
+[
+190
+]
+21%
+[
+191
+]
+7%
+(essential goods - basic foodstufs, water, pharmaceuticals, books, tourism services, etc.)
+0%
+(postal services, education, social security services, healthcare, insurance, etc.)
+Taxation in Montenegro
+Montserrat
+20%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Montserrat
+Morocco
+10–31%
+[
+122
+]
+[
+192
+]
+0%
+38%
+[
+192
+]
+20%
+(standard)
+14%, 10%, 7%
+(reduced rates)
+[
+193
+]
+Taxation in Morocco
+Mozambique
+32%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Mozambique
+Myanmar
+22%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Myanmar
+Namibia
+32%
+[
+194
+]
+0%
+[
+194
+]
+37%
+[
+194
+]
+15%
+[
+194
+]
+Taxation in Namibia
+Nauru
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Nauru
+Nepal
+30%
+(higher rate for financial companies)
+25%
+(standard)
+20%
+(reduced rate for manufacturing companies)
+(+ 5% on profit distribution + 10% mandatory bonus to employees)
+0%
+(+ 1% social security tax)
+36%
+(Including 20% additional tax)
+[
+195
+]
+13%
+(standard)
+[
+196
+]
+288%
+(for imported vehicles)
+[
+197
+]
+Taxation in Nepal
+Netherlands
+25%
+(over €245,000)
+15%
+[
+198
+]
+(under €245,000)
+0%
+(first €8,700 per year is tax free)
+49.5%
+[
+199
+]
+36%
+No
+[
+29
+]
+40%, 36%, 20%
+(total value > €154.179)
+20%, 18%, 10%
+(total value < €154.179)
+[
+200
+]
+[
+Note 4
+]
+21%
+(standard)
+9%
+(essential and selected goods)
+Taxation in the Netherlands
+New Zealand
+28%
+10.5%
+[
+201
+]
+39%
+[
+202
+]
+No
+[
+29
+]
+0%
+15%
+Taxation in New Zealand
+New Caledonia
+[
+203
+]
+30%
+0%
+40%
+(residents)
+25%
+(non-residents)
+[
+204
+]
+—
+N/a
+Taxation in New Caledonia
+Nicaragua
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Nicaragua
+Niger
+30%
+[
+205
+]
+—
+N/a
+—
+N/a
+7%
+[
+205
+]
+Taxation in Niger
+Nigeria
+30%
+7%
+24%
+7.5%
+Taxation in Nigeria
+Niue
+0%
+—
+N/a
+—
+N/a
+12.5%
+Taxation in Niue
+Norfolk Island
+0%
+—
+N/a
+—
+N/a
+0%
+[
+206
+]
+—
+N/a
+Taxation in Norfolk Island
+North Macedonia
+[
+44
+]
+10%
+10%
+18%
+18%
+(standard)
+5%
+(reduced)
+Taxation in North Macedonia
+Norway
+[
+207
+]
+22%
+[
+208
+]
+0%
+(for yearly income under 100,000 NOK)
+[
+209
+]
+47.4%
+[
+210
+]
+37.84%
+[
+211
+]
+Yes
+[
+29
+]
+0%
+[
+212
+]
+25%
+(standard rate)
+15%
+(food and drink)
+12%
+(transportation, cinema and hotel services)
+[
+213
+]
+Taxation in Norway
+Oman
+15%
+[
+214
+]
+[
+215
+]
+0%
+5%
+Taxation in Oman
+Pakistan
+1.25%
+(minimum)
+[
+216
+]
+20%
+(small)
+[
+217
+]
+29%
+(corporate)
+[
+218
+]
+0%
+(under Rs 600,000 per annum)
+45%
+(over Rs 5.6 Million per annum)
+15%
+Exempt
+[
+219
+]
+0%
+18%
+(+3% for non-registered goods)
+15%
+(services)
+0%
+(basic food items)
+Taxation in Pakistan
+Palau
+12%
+—
+N/a
+—
+N/a
+0%
+[
+220
+]
+—
+N/a
+Taxation in Palau
+Palestine
+15%
+5%
+15%
+14.5%
+Taxation in Palestine
+Panama
+25%
+0%
+27%
+7%
+(standard)
+15%
+(tobacco)
+10%
+(alcohol and hotels)
+5%
+(essential goods)
+Taxation in Panama
+Papua New Guinea
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Papua New Guinea
+Paraguay
+10%
+8%
+10%
+No
+10%
+Taxation in Paraguay
+Peru
+[
+47
+]
+30%
+0%
+30%
+16%
+(standard)
++
+2%
+(municipal promotional tax)
++
+0–118%
+(
+impuesto selectivo al consumo
+: liquor, cigarettes, etc.)
+Taxation in Peru
+Philippines
+30%
+0%
+35%
+5-10%
+[
+221
+]
+6%
+[
+222
+]
+12%
+(standard)
+0%
+(reduced)
+Taxation in the Philippines
+Pitcairn Islands
+0%
+0%
+[
+223
+]
+0%
+Taxation in the Pitcairn Islands
+Poland
+[
+224
+]
+19%
+(9% for small taxpayer, those with revenue in a given tax year not exceeding the equivalent of €1.2 million and that have "small taxpayer" status)
+[
+224
+]
+9%
+(under 30.000 złotych per year, 0% income tax
+[
+225
+]
+,
+9% Health Insurance(non-deductible)
+[
+226
+]
+)
+41% or 45%
+(32% + 9% health insurance + 4% solidarity tax above 1.000.000 złotych per year)
+[
+227
+]
+23.9% or 27.9%
+(self employed: not deduction first 30.000 złotych, 19% + 4.9% health insurance +4% solidarity tax above 1 million złotych)
+19%
+No
+[
+29
+]
+7%
+23%
+(standard)
+8% or 5%
+(reduced rates)
+Taxation in Poland
+Portugal
+20%
+(in mainland)
+13%
+56.03%
+(48% income tax + 5% solidarity rate + 11% social security)
+28%
+No
+[
+29
+]
+0%
+23%
+(standard)
+13%
+(intermediate)
+6%
+(reduced)
+Taxation in Portugal
+Puerto Rico
+20%
+[
+228
+]
+0%
+(16% proposed)
+33.34%
+11.5%
+Taxation in Puerto Rico
+Qatar
+[
+44
+]
+10%
+0%
+0%
+Taxation in Qatar
+Romania
+16%
+(or 1% revenue for micro-entities with at least one employee, or 3% for micro-enterprises with no employees)
+[
+229
+]
+35%
+(25% social security (CAS) + 10% health insurance (CASS) + 0% income tax for people with disabilities. 0% income tax for IT workers earning less than 10000 RON).
+[
+229
+]
+45%
+(25% social security (CAS) + 10% health insurance (CASS) + 10% income tax after CAS and CASS)
+Self employed (PFA):
+(25% CAS if earning more than 12 minimum wages in a year + 10% CASS, taxable sum capped at 12 minimum wages per year, e.g. you pay a maximum of 2280 RON as CASS contribution in 2018 if you earn over
+RON
+22,800 for the whole year + 10% income tax)
+[
+229
+]
+10%
+19%
+(standard)
+9%
+(food, medicines, books, newspapers and hotel services)
+5%
+(reduced)
+[
+47
+]
+Taxation in Romania
+Russia
+[
+44
+]
+20%
+[
+2
+]
+13%
+22%
+(earning over 50 million roubles a year)
+[
+230
+]
+35%
+(non-residents)
+0%
+[
+231
+]
+22%
+(standard)
+[
+232
+]
+10%
+(books, certain items of food and children goods)
+0%
+(house or flat)
+Taxation in Russia
+Rwanda
+30%
+0%
+30%
+18%
+Taxation in Rwanda
+Saint Kitts and Nevis
+33%
+[
+233
+]
+0%
+—
+N/a
+Taxation in Saint Kitts and Nevis
+Saint Barthélemy
+0%
+0%
+0%
+0%
+Taxation in Saint Barthélémy
+Saint Lucia
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Saint Lucia
+Saint Martin
+20%
+(10% for small taxpayer, those with revenue in a given tax year not exceeding the equivalent of €40,000)
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Saint Martin
+Saint Pierre and Miquelon
+33.3%
+(15% for small taxpayer, those with revenue in a given tax year not exceeding the equivalent of €600,000)
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Saint Vincent and the Grenadines
+Samoa
+27%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Samoa
+San Marino
+17%
+9%
+35%
+0%
+(standard)
+17%
+(imported goods)
+Taxation in San Marino
+São Tomé and Príncipe
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in São Tomé and Príncipe
+Sark
+0%
+[
+234
+]
+0%
+0%
+0%
+There are taxes on property and personal capital, maximum at £6,500.
+Document duty charged on real estate transfers from estates performed by a Guernsey Advocate.
+0%
+Taxation in Sark
+Saudi Arabia
+[
+235
+]
+2.5%
+(fully Saudi national owned businesses)
+2.5–15%
+(taxed at Zakat rate 2.5% for the Saudi percentage of ownership, 15% for all other ownership)
+0%
+15%
+(standard)
+5%
+(real estate transactions rate)
+Taxation in Saudi Arabia
+Senegal
+[
+47
+]
+25%
+0%
+50%
+20%
+Taxation in Senegal
+Serbia
+[
+236
+]
+15%
+[
+237
+]
+10%
+25%
+(additional contributions for state health, pension and unemployment funds)
+[
+238
+]
+15%
+0%
+20%
+(standard)
+[
+239
+]
+[
+240
+]
+10% or 0%
+(reduced rates)
+Taxation in Serbia
+Seychelles
+33%
+[
+6
+]
+15%
+15%
+Taxation in the Seychelles
+Sierra Leone
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Sierra Leone
+Singapore
+17%
+[
+241
+]
+0%
+22%
+(+20% tax on pension)
+0%
+[
+242
+]
+9%
+Taxation in Singapore
+Sint Maarten
+34.5%
+12.50%
+47.50%
+5%
+Taxation in Sint Maarten
+Slovakia
+21%
+(over €100,000)
+15%
+(under €100,000)
+21%
+25%
+[
+243
+]
+25%
+No
+[
+29
+]
+0%
+23%
+(standard)
+[
+244
+]
+19%
+(electricity, non-basic foodstuffs, selected catering services)
+5%
+(basic foodstuffs, books, medicines, accommodation services)
+Taxation in Slovakia
+Slovenia
+[
+44
+]
+19%
+16%
+50%
+27.5%
+No
+[
+29
+]
+0%
+22%
+(standard)
+9.5%
+(food, building and renovation, transport, tickets, media)
+5%
+(books, newspaper)
+Taxation in Slovenia
+Solomon Islands
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in the Solomon Islands
+Somalia
+30%
+[
+245
+]
+0%
+18%
+0%
+Taxation in Somalia
+South Africa
+28%
+[
+246
+]
+0%
+(below threshold)
+45%
+18%
+25%
+[
+247
+]
+15%
+[
+248
+]
+Taxation in South Africa
+South Korea
+[
+47
+]
+24.2%
+[
+122
+]
+7.8%
+(6% + 1.8%
+[
+249
+]
+)
+53.4%
+(42%
+[
+250
+]
++ 11.4%
+[
+249
+]
+)
+No
+[
+29
+]
+50%
+[
+251
+]
+10%
+Taxation in South Korea
+South Sudan
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in South Sudan
+Spain
+[
+44
+]
+25%
+(mainland)
+4%
+(
+Canary Islands
+)
+0%
+(first €5,550 per year is tax free)
+52.3%
+47%
+(State tax)
+3.75%
+(Regional tax in Valencia)
+6.45%
+(Social security, worker contribution)
+26%
+(residents)
+19%
+(non-residents)
+Yes
+[
+29
+]
+34%
+21%
+(standard)
+10% or 4%
+(reduced rates)
+Taxation in Spain
+Sri Lanka
+[
+44
+]
+15–30%
+[
+122
+]
+0%
+36%
+(if annual income is more than
+LKR
+3 million)
+10%
+[
+252
+]
+12%
+(standard)
+8% or 0%
+(reduced rates)
+Taxation in Sri Lanka
+Sudan
+5%
+(special exempt companies)
+15%
+(most other companies)
+[
+253
+]
+Taxation in Sudan
+Suriname
+36%
+[
+254
+]
+8%
+(first SRD2,646 per year is deductible)
+38%
+[
+255
+]
+—
+N/a
+Taxation in Suriname
+Svalbard
+16%
+[
+256
+]
+[
+257
+]
+8%
+[
+258
+]
+22%
+[
+258
+]
+0%
+[
+259
+]
+0%
+0%
+[
+260
+]
+Taxation in Norway
+Sweden
+20.6%
+[
+261
+]
+[
+262
+]
+7.1%
+[
+263
+]
+(first 25,100 SEK per year is deductible)
+[
+261
+]
+48% to 54%
+[
+263
+]
+(depending on municipality)
+[
+264
+]
+30%
+[
+261
+]
+No
+[
+29
+]
+0%
+25%
+(standard)
+12% or 6%
+(reduced rates)
+[
+265
+]
+Taxation in Sweden
+Switzerland
+[
+47
+]
+17.92%
+[
+122
+]
+0%
+62.855%
+10.6%
+(mandatory social security contributions)
+[
+266
+]
+11.5%
+(federal)
+[
+267
+]
+28.025%
+(cantonal, Geneva)
+[
+268
+]
+9.69%
+(communal, Avully and Chancy, both canton of Geneva)
+[
+268
+]
+3.04%
+(church tax, roman catholic and protestant in Geneva)
+[
+268
+]
+Yes
+[
+29
+]
+0%
+[
+269
+]
+8.1%
+(standard)
+3.8% or 2.5%
+(reduced rates)
+Taxation in Switzerland
+Syria
+[
+44
+]
+22%
+5%
+15%
+—
+N/a
+Taxation in Syria
+Taiwan
+[
+44
+]
+20%
+[
+270
+]
+5%
+40%
+20%
+[
+271
+]
+5%
+[
+272
+]
+Taxation in Taiwan
+Tajikistan
+[
+273
+]
+13%
+(residents)
+25%
+(non-residents)
+5%
+13%
+(residents)
+25%
+(non-residents)
+18%
+Taxation in Tajikistan
+Tanzania
+30%
+15%
+30%
+14%
+Taxation in Tanzania
+Thailand
+20%
+0%
+35%
+7%
+Taxation in Thailand
+Togo
+27%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Togo
+Tokelau
+0%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Tokelau
+Tonga
+25%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Tonga
+Trinidad and Tobago
+30%
+0%
+(personal allowance of $90,000 per year)
+25%
+(annual chargeable income less than $1 million)
+, 30%
+(annual chargeable income over $1 million)
+[
+274
+]
+n/a
+n/a
+12.5% (VAT)
+Taxation in Trinidad & Tobago
+Tunisia
+[
+47
+]
+30%
+0%
+35%
+18%
+(standard)
+12% or 6%
+(reduced rates)
+Taxation in Tunisia
+Turkey
+[
+44
+]
+25%
+15%
+40%
+No
+[
+29
+]
+1–30%
+[
+275
+]
+20%
+(standard)
+10%
+(clothing)
+1%
+(certain food items)
+[
+64
+]
+Taxation in Turkey
+Turkmenistan
+8%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Turkmenistan
+Turks and Caicos Islands
+0%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in the Turks and Caicos Islands
+Tuvalu
+30%
+—
+N/a
+—
+N/a
+—
+N/a
+Taxation in Tuvalu
+Uganda
+30%
+[
+276
+]
+—
+N/a
+—
+N/a
+18%
+[
+277
+]
+Taxation in Uganda
+Ukraine
+18%
+[
+278
+]
+0%
+[
+279
+]
+18%
+(common rate)
+20%
+(some activities)
+22%
+(social security)
+[
+280
+]
+18%
+2%
+(non-refundable turnover tax during martial law)
+Taxation in Ukraine
+United Arab Emirates
+0%
+(free zone companies,
+[
+281
+]
+as well as mainland companies with less than 375,000 AED a year in profit,
+[
+282
+]
+may need to fill out a tax return)
+9%
+(for mainland companies with a net profit over AED 375,000 annually, taxation paid to other countries credited towards UAE taxation, tax return required)
+[
+282
+]
+0%
+[
+283
+]
+0%
+[
+284
+]
+5%
+[
+283
+]
+Taxation in the United Arab Emirates
+United Kingdom
+[
+285
+]
+19–25%
+[
+286
+]
+0%
+(up to £12,570)
+[
+287
+]
+47%
+(45% + 2% employee National Insurance, Scotland is even 48%+2%)
+[
+288
+]
+24%
+[
+289
+]
+No
+[
+29
+]
+40%
+[
+290
+]
+20%
+(standard)
+5%
+(home energy and renovations)
+0%
+(life necessities, public transport, children's clothing, books and periodicals)
+[
+291
+]
+Taxation in the United Kingdom
+United States
+21%
+(federal)
+up to 21%
+(with credit of tax paid towards other countries)
+10%
+(federal)
++
+0–3.07%
+(state)
++
+0–3.8398%
+(local)
+(federal standard deduction of 15750 USD for single taxpayers)
+50.3%
+California
+(37%
+(federal)
+[
+292
+]
++ 13.3%
+(state)
+)
+37%
+Nine states with no state income tax
+[
+293
+]
+(37% + 0%)
+20%
+No
+[
+29
+]
+0–3.64%
+[
+294
+]
+18–40%
+(federal with offset against individual State Estate and Inheritance Taxes)
+[
+295
+]
+0–11.5%
+Taxation in the United States
+Uruguay
+[
+47
+]
+25%
+0%
+36%
+[
+296
+]
+22%
+(standard)
+11%
+(lowest)
+0%
+(extent)
+Taxation in Uruguay
+Uzbekistan
+[
+47
+]
+12%
+(standard)
+20%
+(banks and mobile communication operators)
+12%
+0–15%
+Taxation in Uzbekistan
+Vanuatu
+0%
+0%
+0%
+15%
+Taxation in Vanuatu
+Venezuela
+[
+47
+]
+34%
+0%
+34%
+16%
+(standard)
+8%
+(reduced)
+Taxation in Venezuela
+Vietnam
+[
+44
+]
+20%
+5%
+35%
+[
+297
+]
+10%
+[
+298
+]
+10%
+Taxation in Vietnam
+British Virgin Islands
+0%
+[
+299
+]
+0%
+—
+N/a
+Taxation in the British Virgin Islands
+U.S. Virgin Islands
+21–38.50%
+[
+300
+]
+Taxation in the United States Virgin Islands
+Wallis and Futuna
+0%
+0%
+0%
+0%
+Taxation in Wallis and Futuna
+Yemen
+20%
+[
+301
+]
+10%
+15%
+2%
+Taxation in Yemen
+Zambia
+30%
+[
+302
+]
+10%
+30%
+16%
+Taxation in Zambia
+Zimbabwe
+25%
+0%
+45%
+15%
+(standard)
+0%
+(on selected items)
+Taxation in Zimbabwe
 See also
 [
 edit
 ]
-Economy of Africa
-List of companies based in Tunisia
-United Nations Economic Commission for:
-Africa
-&
-Western Asia
+Corporate haven
+List of countries by social welfare spending
+List of countries by tax revenue
+Tax Freedom Day
+Tax haven
+Tax rates in Europe
+VAT rates around the world
+Welfare state
+Notes
+[
+edit
+]
+↑
+Businesses with annual turnover above A$2 million pay 30%, all other business pay the lower 26% rate.
+↑
+Excludes 2%
+Medicare levy
+.Excludes 1.5% Medicare Levy Surcharge Previously 50.5%, which included an additional 2% 'deficit levy' which expired in June 2017.
+↑
+While there is no sales tax or GST, the Cayman Islands impose various import duties on goods imported to the island nation.
+↑
+Rates are for other inheritors, grandchildren & further descendants, and partners & children respectively.
 References
 [
 edit
 ]
 ↑
-"World Economic Outlook Database, April 2019"
+"Capital gains tax (CGT) rates"
 .
-IMF.org
+1
+2
+3
+Robertson, Andrew (26 April 2017).
+"Big business has a solution for the budget deficit: Give us $12b"
 .
-International Monetary Fund
+ABC News
+.
+Archived
+from the original on 4 May 2017
 . Retrieved
-29 September
-2019
+4 May
+2017
+.
+1
+2
+"Afghanistan – Income Tax"
+.
+KPMG
+. 14 June 2016. Archived from
+the original
+on 4 May 2017
+. Retrieved
+4 May
+2017
 .
 ↑
-"World Bank Country and Lending Groups"
+Mackenzie, James (9 January 2017).
+"Afghan businesses feel squeeze from government tax drive"
 .
-datahelpdesk.worldbank.org
+Reuters
 .
-World Bank
+Archived
+from the original on 4 May 2017
 . Retrieved
-29 September
-2019
+4 May
+2017
 .
 ↑
-"Population, total - Tunisia"
+"Taliban tax collectors help tighten insurgents' grip in Afghanistan"
 .
-data.worldbank.org
+Reuters
+. 6 November 2018.
+1
+2
+3
+"Corporate Tax Rates around the World, 2020 - Key Findings"
+(PDF)
 .
-World Bank
+Archived
+(PDF)
+from the original on 2021-07-19
 . Retrieved
-3 October
-2019
+2021-07-19
+.
+1
+2
+"Albania – Taxes on personal income"
+.
+PWC
+. 1 December 2016.
+Archived
+from the original on 28 May 2017
+. Retrieved
+4 May
+2017
+.
+↑
+"Albania cuts tourism tax to 6 pct"
+.
+Xinhua News
+. 7 April 2017.
+Archived
+from the original on 7 April 2017
+. Retrieved
+4 May
+2017
+.
+↑
+"Algeria Corporate Taxes on Income"
+.
+PWC
+.
+Archived
+from the original on 29 September 2017
+. Retrieved
+4 May
+2017
+.
+1
+2
+"Algeria Tax Guide 2013"
+(PDF)
+.
+PKF
+.
+Archived
+(PDF)
+from the original on 18 September 2017
+. Retrieved
+4 May
+2017
+.
+1
+2
+"Algeria Other Taxes"
+.
+PWC
+. 13 December 2016.
+Archived
+from the original on 29 September 2017
+. Retrieved
+4 May
+2017
+.
+↑
+"Treasurer tells Fono wage tax should be repealed"
+.
+Samoa News
+. 26 March 2014.
+Archived
+from the original on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+1
+2
+3
+"American Samoa Investment Guide 2014"
+(PDF)
+.
+Office of the Governor
+.
+Archived
+(PDF)
+from the original on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+↑
+"5% sales tax proposed for American Samoa"
+.
+Radio New Zealand
+. 26 May 2015.
+Archived
+from the original on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+↑
+Tremlett, Giles (2011-12-27).
+"Andorra gets a taste of taxation"
+.
+The Guardian
+. London.
+Archived
+from the original on 2012-11-20
+. Retrieved
+2012-11-24
+.
+1
+2
+"Andorra Tax Rates"
+. July 2018.
+Archived
+from the original on 18 March 2020
+. Retrieved
+7 February
+2020
+.
+↑
+"International Tax Andorra Highlights 2017"
+(PDF)
+.
+Deloitte
+. Archived from
+the original
+(PDF)
+on 4 May 2017
+. Retrieved
+4 May
+2017
+.
+1
+2
+3
+"Angola Tax Guide 2016/17"
+(PDF)
+.
+PKF
+. June 2016.
+Archived
+(PDF)
+from the original on 4 May 2017
+. Retrieved
+4 May
+2017
+.
+↑
+"Angola Indirect Tax Changes for 2021"
+.
+www.ey.com
+. Retrieved
+2021-12-02
+.
+1
+2
+3
+"International Tax Anguilla Highlights 2017"
+(PDF)
+.
+Deloitte
+. Archived from
+the original
+(PDF)
+on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+↑
+"Corporate Tax Rates Table - KPMG Global"
+.
+KPMG
+. 2020-11-11.
+Archived
+from the original on 2021-04-28
+. Retrieved
+2021-05-06
+.
+↑
+"Individual Income Tax Rates Table - KPMG Global"
+.
+KPMG
+. 2020-11-11.
+Archived
+from the original on 2021-05-01
+. Retrieved
+2021-05-06
+.
+↑
+"Antigua - Indirect Tax Guide - KPMG Global"
+.
+KPMG
+. 2020-10-28.
+Archived
+from the original on 2021-05-06
+. Retrieved
+2021-05-06
 .
 1
 2
 3
 4
-5
-6
-"World Economic Outlook Database, October 2025"
+"Taxation and Investment in Argentina 2016"
+(PDF)
 .
-IMF.org
+Deloitte
+.
+Archived
+(PDF)
+from the original on 4 May 2017
 . Retrieved
-18 October
-2025
+4 May
+2017
+.
+1
+2
+3
+4
+"International Tax Armenia Highlights 2021"
+(PDF)
+.
+Deloitte
+.
+Archived
+(PDF)
+from the original on 2021-05-12
+. Retrieved
+2021-01-01
+.
+1
+2
+3
+4
+"International Tax Aruba Highlights 2017"
+(PDF)
+.
+Deloitte
+. Archived from
+the original
+(PDF)
+on 4 May 2017
+. Retrieved
+5 May
+2017
+.
+1
+2
+3
+"Changes to company tax rates"
+.
+Australian Tax Office
+.
+Archived
+from the original on 2021-05-11
+. Retrieved
+2021-05-11
+.
+↑
+Guest, Ross (3 June 2016).
+"Explainer: what is the temporary deficit levy and why was it introduced?"
+.
+The Conversation
+.
+Archived
+from the original on 4 May 2017
+. Retrieved
+5 May
+2017
 .
 1
 2
@@ -1165,580 +4252,3858 @@ IMF.org
 8
 9
 10
-"The World Factbook"
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+"Global Revenue Statistics Database"
 .
-CIA.gov
+↑
+"Körperschaftsteuer"
 .
-Central Intelligence Agency
+www.oesterreich.gv.at
+(in German)
 . Retrieved
-12 May
-2019
-.
-↑
-"Tunisia - inflation rate 1986-2022"
-.
-↑
-"Poverty headcount ratio at national poverty lines (% of population) - Tunisia"
-.
-data.worldbank.org
-. World Bank
-. Retrieved
-20 March
-2020
-.
-↑
-"Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population) - Tunisia"
-.
-data.worldbank.org
-. World Bank
-. Retrieved
-20 March
-2020
-.
-↑
-"GINI index (World Bank estimate)"
-.
-data.worldbank.org
-.
-World Bank
-. Retrieved
-12 May
-2019
-.
-↑
-"Human Development Index (HDI)"
-(PDF)
-.
-hdr.undp.org
-.
-HDRO (Human Development Report Office)
-United Nations Development Programme
-. Retrieved
-8 May
-2025
-.
-↑
-"Inequality-adjusted Human Development Index (IHDI)"
-.
-hdr.undp.org
-.
-HDRO (Human Development Report Office)
-United Nations Development Programme
-. Retrieved
-8 May
-2025
-.
-↑
-"Labor force, total - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Employment to population ratio, 15+, total (%) (modeled ILO estimate) - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Unemployment, total (% of total labor force) (modeled ILO estimate) - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Unemployment, youth total (% of total labor force ages 15-24)"
-.
-World Bank Open Data
-. 2026
-. Retrieved
-15 June
-2026
-.
-↑
-"Rankings by Country of Average Monthly Net Salary (After Tax) (Salaries And Financing)"
-.
-www.numbeo.com
+2025-08-14
 .
 1
 2
-"Export partners of Tunisia"
-. The Observatory of Economic Complexity
+"Steuertarif"
 . Retrieved
-4 February
-2026
-.
-1
-2
-"Import partners of Tunisia"
-. The Observatory of Economic Complexity
-. Retrieved
-4 February
-2026
+14 Aug
+2025
 .
 ↑
-"Sovereigns rating list"
-. Standard & Poor's
+"Kapitalertragsteuer (KESt)"
+.
+www.oesterreich.gv.at
+(in German)
 . Retrieved
-26 May
-2011
+2025-08-14
+.
+↑
+"Mehrwertsteuersatz"
+.
+www.oesterreich.gv.at
+(in German)
+. Retrieved
+2025-08-14
 .
 1
 2
 3
-Rogers, Simon; Sedghi, Ami (15 April 2011).
-"How Fitch, Moody's and S&P rate each country's credit rating"
+4
+"International Tax Azerbaijan Highlights 2017"
+(PDF)
 .
-The Guardian
+Deloitte
+.
+Archived
+(PDF)
+from the original on 5 May 2017
 . Retrieved
-28 May
-2011
+5 May
+2017
 .
 ↑
-"World Bank country classifications by income level for 2024-2025"
+Caspian Legal Center, Law and Tax Services (2024-10-22).
+"Taxation of capital gains in Azerbaijan"
 .
-World Bank Blogs
+Caspian Legal Center
 . Retrieved
-9 July
-2026
+2024-10-23
 .
 ↑
-"Economic and political overview in Tunisia"
+"Diferencial Fiscal Competitivo"
 .
-international.groupecreditagricole.com
+www.investinazores.com
+.
+Archived
+from the original on 2020-02-05
 . Retrieved
-9 July
-2026
+2020-02-05
 .
 ↑
-"World Bank Open Data"
+Governo Regional dos Açores (2019).
+"Despacho n.º 1056/2019"
 .
-World Bank Open Data
+Diário da República
+.
+Archived
+from the original on February 5, 2020
 . Retrieved
-9 July
-2026
+February 5,
+2020
+.
+1
+2
+3
+Governo Regional da Madeira (2020).
+"Despachon.º 44/2020"
+(PDF)
+.
+Jornal Oficial da Região Autónoma da Madeira
+.
+Archived
+(PDF)
+from the original on 2020-09-22
+. Retrieved
+February 5,
+2020
 .
 ↑
-"Annual Report 2007-2008"
+"Taxa normal de IVA nos Açores passa de 18 para 16 por cento a partir de 1 de julho"
 .
-World Economic Forum
+portal.azores.gov.pt
+(in European Portuguese)
+. Retrieved
+2022-09-27
+.
+↑
+"Bahamas capital gains tax rates, and property income tax"
+. Globalpropertyguide.com.
+Archived
+from the original on 2013-01-30
+. Retrieved
+2013-02-04
+.
+↑
+"
+"Taxation and Investment Guides: Bahamas Highlights 2013" Deloitte & Touche"
+(PDF)
 . Archived from
 the original
-on 14 April 2026
-. Retrieved
-9 July
-2026
-.
+(PDF)
+on October 2, 2013.
 ↑
-"Tunisia Economy, Politics and GDP Growth Summary - The Economist Intelligence Unit"
-.
-country.eiu.com
-.
+BUDGET: VAT to rise from 7.5 percent to 12 percent
+, Bahamas Tribune,
+archived
+from the original on 2018-07-02
+, retrieved
+2018-06-30
 ↑
-"Tunisia: GDP per capita"
-.
-Index Mundi
-. Retrieved
-2 July
-2012
-.
-↑
-"CIA World Factbook"
-.
-cia.gov
-. CIA. Archived from
+"
+"Taxation and Investment Guides: Bahrain Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
 the original
-on 10 January 2021
+(PDF)
+on October 2, 2013.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+"Revision, skat og rådgivning
+|
+KPMG
+|
+DK"
+. Kpmg.dk. Archived from
+the original
+(PDF)
+on 2018-12-26
 . Retrieved
-16 July
+2013-02-04
+.
+↑
+"Budget FY22: Big tax cut for businesses"
+.
+Dhaka Tribune
+. 2021-06-03.
+Archived
+from the original on 2021-07-24
+. Retrieved
+2021-07-24
+.
+↑
+"A brave new world - Barbados' revised corporate tax regime"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2019-07-09
+. Retrieved
+2019-07-09
+.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+"FITA"
+. FITA. Archived from
+the original
+on 2018-12-26
+. Retrieved
+2013-02-04
+.
+↑
+"De vennootschapsbelasting vanaf 2018"
+.
+Archived
+from the original on 2018-07-22
+. Retrieved
+2018-07-22
+.
+↑
+"Belastingschijven"
+.
+Archived
+from the original on 2018-07-22
+. Retrieved
+2018-07-22
+.
+↑
+"GEMEENTEBELASTING"
+. 16 October 2015.
+Archived
+from the original on 2021-09-01
+. Retrieved
+2021-09-23
+.
+↑
+"Progressive inheritance tax rates in Belgium"
+.
+expatica.com
+.
+↑
+"Corporate Income Tax Rules in Belize: A Comprehensive Guide"
+. November 9, 2024.
+↑
+"File Income Tax – Belize Tax Services"
+. Retrieved
+2025-04-01
+.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+: 173.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+"Ministry of Finance
+|
+Royal Government of Bhutan"
+. Mof.gov.bt. Archived from
+the original
+on 2011-07-06
+. Retrieved
+2013-02-04
+.
+1
+2
+"Investment opportunities in Bosnia and Herzegovina"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2011-07-06
+. Retrieved
+2009-03-05
+.
+↑
+"IRPJ (Imposto sobre a renda das pessoas jurídicas)"
+.
+Receita Federal
+(in Brazilian Portuguese)
+. Retrieved
+2022-05-03
+.
+↑
+"Contribuição Social sobre o Lucro Líquido CSLL"
+.
+Receita Federal
+(in Brazilian Portuguese)
+. Retrieved
+2022-05-03
+.
+↑
+"IRPF (Imposto sobre a renda das pessoas físicas)"
+.
+Receita Federal
+.
+Archived
+from the original on 2016-06-02
+. Retrieved
+2016-06-05
+.
+↑
+"Tabela do Imposto de Renda 2023: veja faixas, alíquotas e como calcular"
+.
+economia.uol.com.br
+(in Brazilian Portuguese)
+. Retrieved
+2023-04-01
+.
+↑
+"Inheritance tax and inheritance law in Brazil"
+.
+GlobalPropertyGuide.com
+. 20 August 2021.
+↑
+"Com reforma tributária, imposto sobre consumo deve variar de 20% a 30%, diz IFI"
+.
+Senado Federal do Brasil
+. August 18, 2023
+. Retrieved
+June 9,
+2024
+.
+1
+2
+"Ministry of Finance and Economy - faqs-corporate-tax"
+.
+1
+2
+3
+"关于深化增值税改革有关政策的公告"
+.
+国家税务总局
+. 2019-03-20.
+Archived
+from the original on 2021-01-08
+. Retrieved
+2020-09-02
+.
+↑
+Gaziano, Todd F.
+"Index of Economic Freedom"
+. Heritage.org. Archived from the original on 2008-12-16
+. Retrieved
+2013-02-04
+.
+↑
+Agency, Canada Revenue (27 November 2019).
+"Corporation tax rates – Canada.ca"
+.
+www.cra-arc.gc.ca
+.
+Archived
+from the original on 17 July 2017
+. Retrieved
+7 August
+2015
+.
+1
+2
+Canadian income tax rates for individuals - current and previous years
+Archived
+2020-06-03 at the
+Wayback Machine
+, Canada Revenue Agency.
+↑
+Income tax rates
+Archived
+2020-05-11 at the
+Wayback Machine
+, Revenu Québec.
+↑
+Line 44000 - Refundable Quebec abatement
+Archived
+2020-06-03 at the
+Wayback Machine
+, Canada Revenue Agency.
+1
+2
+Quebec, combined federal and provincial personal income tax rates - 2020
+Archived
+2020-06-03 at the
+Wayback Machine
+, Ernst & Young.
+↑
+"Canada Inheritance Tax Laws & Information"
+. 2016-08-30.
+↑
+"International Tax Canada Highlights 2017"
+(PDF)
+.
+Deloitte
+. Archived from
+the original
+(PDF)
+on 27 May 2017
+. Retrieved
+27 May
+2017
+.
+1
+2
+3
+"International Tax Cayman Islands Highlights 2017"
+(PDF)
+.
+Deloitte
+. Archived from
+the original
+(PDF)
+on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+↑
+Duncan, Charles (23 June 2016).
+"18-month budget: Gov't revenue tops $1.2B"
+.
+Cayman Compass
+.
+Archived
+from the original on 30 May 2017
+. Retrieved
+30 May
+2017
+.
+1
+2
+"Financial Freedom in Central African Republic"
+. FinancialFreedomIndex.com. Archived from
+the original
+on 2015-06-22
+. Retrieved
+2015-05-22
+.
+↑
+"Servicio de Impuestos Internos"
+(in Spanish). Sii.cl.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2013-02-04
+.
+- For corporate tax: rate of 20% introduced by Law 20630 (27 September 2012), in force from 1 January 2013.
+↑
+"Preguntas Frecuentes"
+.
+www.sii.cl
+.
+Archived
+from the original on 2015-10-24
+. Retrieved
+2015-11-02
+.
+↑
+"Sii | Servicio de Impuestos Internos"
+.
+www.sii.cl
+(in Spanish).
+Archived
+from the original on 2018-09-16
+. Retrieved
+2018-09-16
+.
+↑
+Taxation in China
+↑
+"
+"大众创业 万众创新"税收优惠政策指引"
+.
+www.chinatax.gov.cn
+.
+Archived
+from the original on 2021-06-05
+. Retrieved
+2020-09-02
+.
+↑
+Zhao, Wenpei.
+"2015最新个人所得税税率表及计算方法【图】"
+.
+中国河南网
+. Archived from
+the original
+on July 10, 2015
+. Retrieved
+2016-08-27
+.
+↑
+KPMG.
+"China – Income Tax"
+.
+KPMG
+.
+Archived
+from the original on 2016-08-28
+. Retrieved
+2016-08-27
+.
+↑
+Bradsher, Keith (10 May 2023).
+"Why China Doesn't Have a Property Tax"
+.
+New York Times
+.
+↑
+"Talk of Inheritance Tax Sparks Debate in China"
+.
+wsj.com
+. 3 October 2013.
+↑
+"Estatuto Tributario de los Impuestos Administrados por la Dirección General de Impuestos Nacionales", ARTÍCULO 240 – TARIFA GENERAL PARA PERSONAS JURÍDICAS
+Archived
+2017-12-02 at the
+Wayback Machine
+Retrieved 2021/01/25
+1
+2
+"Estatuto Tributario de los Impuestos Administrados por la Dirección General de Impuestos Nacionales", ARTICULO 241. TARIFA PARA LAS PERSONAS NATURALES RESIDENTES Y ASIGNACIONES Y DONACIONES MODALES
+Archived
+2017-12-02 at the
+Wayback Machine
+Retrieved 2017/12/01
+↑
+Colombia Individual - Other taxes
+↑
+"Why Invest in the Cook Islands – is it that good – really?"
+. destination-cook-islands.com.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+.
+342
+.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+: 346.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+"Finance Ministry Rates"
+.
+Archived
+from the original on 2019-12-18
+. Retrieved
+2019-12-04
+.
+↑
+"beograd.com – Strana nije nađena"
+. Emg.rs. 2011-02-14. Archived from
+the original
+on 2012-03-02
+. Retrieved
+2013-02-04
+.
+↑
+"Ley 113 Gaceta de Cuba"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2013-07-17
+. Retrieved
+2014-03-15
+.
+↑
+"Tax System – EURAXESS Czech Republic"
+.
+Euraxess
+. Archived from
+the original
+on September 5, 2015
+. Retrieved
+August 25,
 2015
 .
 ↑
-"Tunisia's tourism grappling with job losses"
+"Czech Republic Highlights 2015"
+(PDF)
 .
-BBC World
-. 15 July 2015
+Deloitte
+. Archived from
+the original
+(PDF)
+on September 9, 2015
 . Retrieved
-16 July
+August 25,
 2015
 .
 ↑
-"A Tunis, les chiffonniers sortent de l'ombre"
+"Pwc Czech Republic Corporate - Taxes on corporate income"
+. pwc.
+Archived
+(PDF)
+from the original on 13 October 2016.
+↑
+"Zálohy na pojistné na důchodové pojištění - Česká správa sociálního zabezpečení"
 .
-Le Monde
-. 28 May 2019
+www.cssz.cz
+.
+Archived
+from the original on 2018-10-04
 . Retrieved
-11 April
-2022
+2018-10-03
 .
 ↑
-"Le gouverneur de la Banque centrale de Tunisie s'inquiète pour 2023"
-.
-Jeune Afrique
-. 5 January 2025
+"VAT LiveInternational VAT and GST rates
+|
+VAT Live"
+. VAT Live.
+Archived
+from the original on 2013-08-31
 . Retrieved
-12 October
+2013-03-24
+.
+↑
+"SKAT: Income tax rates"
+. Skat.dk. Archived from
+the original
+on 2013-02-20
+. Retrieved
+2013-02-04
+.
+↑
+"Gældende skattesatser"
+.
+skat.dk
+.
+Archived
+from the original on 2021-10-08
+. Retrieved
+2021-09-22
+.
+↑
+"Kommuneskatteprocenter og grundskyldspromiller - Top 20 - 2018 - Skatteministeriet"
+.
+www.skm.dk
+.
+Archived
+from the original on 2018-06-21
+. Retrieved
+2018-07-06
+.
+↑
+"C.C.5.2.15.2 Skatteloft"
+. 2024-05-19
+. Retrieved
+2024-05-19
+.
+↑
+"Inland Revenue Division - Dominica"
+.
+Inland Revenue Division - Dominica
+.
+Archived
+from the original on 2019-10-06
+. Retrieved
+2019-06-10
+.
+↑
+"Impuesto sobre la Renta"
+.
+dgii.gov.do
+. Retrieved
+2024-04-10
+.
+↑
+"Declaración Impuesto a la Renta 2018 - Servicio de Rentas Internas del Ecuador"
+.
+Archived
+from the original on 2019-04-21
+. Retrieved
+2019-04-19
+.
+↑
+"Estate and Inheritance Taxes around the World"
+.
+TaxFoundation.com
+. 17 March 2015.
+↑
+"Income Tax law in Egypt"
+. Incometax.gov.eg.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2013-02-04
+.
+↑
+"Estonian tax rates"
+.
+Estonian Tax and Customs Board
+. Republic of Estonia
+. Retrieved
+2024-06-02
+.
+1
+2
+"Rates and Thresholds"
+.
+ers.org.sz
+. Eswatini Revenue Service
+. Retrieved
+2025-04-05
+.
+↑
+"Tax rates in Ethiopia PWE report"
+.
+↑
+eTax, Nordisk.
+"Faroe Islands"
+.
+↑
+"Fiji tax & customs incentives 2016"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-10-31
+. Retrieved
+2018-01-26
+.
+↑
+"Finland Ministry of Finance"
+. Archived from
+the original
+on 2013-06-19
+. Retrieved
+2014-02-07
+.
+↑
+"Orpon hallitus: Riihipäätökset vahvistavat Suomen kilpailukykyä ja turvallisuutta"
+. 23 April 2025
+. Retrieved
+2025-04-23
+.
+↑
+"Verohallinto > Työnantajan ja työntekijän eläke- ja vakuutusmaksuprosentit 2014"
+. Archived from
+the original
+on 2014-07-14
+. Retrieved
+2014-07-17
+.
+↑
+"Luettelo kuntien ja seurakuntien tuloveroprosenteista vuonna 2020"
+[
+List of municipal and parish income tax rates in 2020
+]
+(PDF)
+(in Finnish).
+Archived
+(PDF)
+from the original on 2020-01-26
+. Retrieved
+2020-11-19
+.
+↑
+"Perintöverolaskuri"
+.
+vero.fi
+(in Finnish)
+. Retrieved
+2025-08-06
+.
+↑
+"French Tax Services"
+.
+BDO
+. 1 January 2025
+. Retrieved
+10 May
 2025
 .
 ↑
-"Report for Selected Countries and Subjects"
+Payroll, Global (29 November 2024).
+"Payroll taxes in France: An employer's guide"
 .
-www.imf.org
+Blog
 . Retrieved
-7 October
+10 May
+2025
+.
+↑
+"Payroll + Tax in France: Everything You Should Know"
+.
+Velocity Global
+. 30 November 2023
+. Retrieved
+10 May
+2025
+.
+↑
+"What are the fees to be paid on an estate depending on the relationship with the deceased?"
+. French government.
+1
+2
+3
+4
+5
+6
+7
+"Tax rates tool test page"
+.
+KPMG
+. 10 November 2017.
+Archived
+from the original on 28 February 2016
+. Retrieved
+3 March
+2016
+.
+↑
+"§19 ErbStG Steuersätze"
+.
+gesetze-im-Internet.de
+.
+↑
+"Taxation"
+.
+Invest in Georgia
+.
+Archived
+from the original on 2021-09-22
+. Retrieved
+2021-09-22
+.
+↑
+"Inheritance and gift tax rates"
+.
+taxsummaries.pwc.com
+. Retrieved
+2024-05-16
+.
+↑
+"2017 Worldwide Corporate Tax Guide"
+.
+www.ey.com
+.
+Archived
+from the original on 2019-02-02
+. Retrieved
+2022-02-22
+.
+1
+2
+"Guernsey, Channel Islands - Individual - Significant developments"
+.
+↑
+"Guernsey, Channel Islands - Corporate - Other taxes"
+.
+taxsummaries.pwc.com
+. Retrieved
+2021-09-22
+.
+1
+2
+"REVISED PERSONAL ALLOWANCE AND DEDUCTIONS FOR INCOME TAX 2025"
+. Gra.gov.gy.
+Archived
+from the original on 2025-09-20
+. Retrieved
+2025-11-18
+.
+1
+2
+"Haiti - Presentation taxation"
+.
+Archived
+from the original on 2018-11-25
+. Retrieved
+2018-11-25
+.
+↑
+"Travel lane county - Annual report FY2023"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2018-08-29
+. Retrieved
+2018-11-25
+.
+↑
+"2008–09 Budget – Tax Concessions"
+. Ird.gov.hk. Archived from
+the original
+on 2013-03-14
+. Retrieved
+2013-02-04
+.
+↑
+"Hungary - Individual - Other taxes"
+.
+taxsummaries.pwc.com
+. Retrieved
+2024-05-16
+.
+↑
+"Skattþrep í staðgreiðslu 2024
+|
+Skatturinn.is"
+.
+Archived
+from the original on 2019-11-09
+. Retrieved
+2024-10-20
+.
+↑
+"Corporate tax rates slashed to 22% for domestic companies and 15% for new domestic manufacturing companies and other fiscal reliefs"
+.
+www.pib.gov.in
+.
+Archived
+from the original on 2019-09-20
+. Retrieved
+2019-09-20
+.
+↑
+"GST for GOODS"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-07-08.
+↑
+"GST for Service"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-07-08.
+↑
+"Iraq - Taxes on corporate income"
+. 29 May 2019.
+Archived
+from the original on 13 October 2019
+. Retrieved
+13 October
+2019
+.
+↑
+"Iraq - Taxes on personal income"
+. 29 May 2019.
+Archived
+from the original on 13 October 2019
+. Retrieved
+13 October
+2019
+.
+↑
+"Iraq - Other taxes impacting individuals"
+. 29 May 2019.
+Archived
+from the original on 13 October 2019
+. Retrieved
+13 October
+2019
+.
+↑
+"Revenue.ie - Gift & Inheritance Tax"
+. Retrieved
+12 June
+2024
+.
+↑
+"International Tax - Israel Highlights 2019"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2019-08-09
+. Retrieved
+2019-08-09
+.
+↑
+Temple-, Patrick (March 2012).
+"US displacing Japan as No 1 for highest corp taxes"
+.
+Reuters
+.
+Archived
+from the original on 2016-01-09
+. Retrieved
+2013-05-17
+.
+↑
+"Japan to cut corporate tax rate to 29.74 percent in two stages: sources"
+.
+Reuters
+. December 2015.
+Archived
+from the original on 2020-08-07
+. Retrieved
+2016-07-28
+.
+↑
+"Taxing inheritances is falling out of favour"
+.
+Economist.com
+.
+↑
+"Taxation in Jersey"
+.
+www.gov.je
+.
+Archived
+from the original on 2017-04-07
+. Retrieved
+2017-04-07
+.
+↑
+"Taxation in Jersey"
+.
+www.gov.je
+.
+Archived
+from the original on 2015-06-25
+. Retrieved
+2015-06-19
+.
+↑
+"New Income Tax Law approved"
+.
+en.royanews.tv
+.
+Archived
+from the original on 2020-08-06
+. Retrieved
+2020-04-02
+.
+↑
+"General Information on Taxes in Kosovo"
+.
+Archived
+from the original on 18 December 2019
+. Retrieved
+20 December
+2019
+.
+↑
+"Kuwait - Corporate - Taxes on corporate income"
+.
+↑
+North Korea: Investment & Business Guide
+. Int'l Business Publications. 1 May 2002.
+ISBN
+9780739740972
+.
+Archived
+from the original on 14 May 2016
+. Retrieved
+13 December
+2015
+–
+via Google Books.
+↑
+"Corporate - Other taxes"
+.
+↑
+Fakerdinova, Albina.
+"International Tax Kyrgyzstan Highlights 2020"
+(PDF)
+. Deloitte.
+Archived
+(PDF)
+from the original on 19 October 2020
+. Retrieved
+19 October
+2020
+.
+↑
+"Company Taxes Guide"
+.
+www.company-taxes.info
+.
+Archived
+from the original on 2018-07-21
+. Retrieved
+2018-01-04
+.
+↑
+"Income tax"
+.
+Your Europe – Citizens
+.
+Archived
+from the original on 2017-08-12
+. Retrieved
+2017-08-10
+.
+↑
+"Latvia tax system - taxation of Latvian companies and individuals: VAT, income tax and capital gains. Tax treaties of latvia"
+.
+↑
+State Revenue Service of Latvia, VAT, 3 January 2021
+↑
+"Payroll and Tax in Liberia"
+.
+Shield GEO
+. May 11, 2017.
+Archived
+from the original on May 28, 2019
+. Retrieved
+April 24,
+2019
+.
+↑
+"Doing Business 2018 - Reforming to Create Jobs"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2018-09-22.
+↑
+"Liechtenstein capital gains tax rates, and property income tax"
+. Globalpropertyguide.com. 2012-11-20.
+Archived
+from the original on 2013-01-30
+. Retrieved
+2013-02-04
+.
+↑
+"Liechtenstein Economy: Population, GDP, Inflation, Business, Trade, FDI, Corruption"
+. Heritage.org. Archived from the original on 2013-02-16
+. Retrieved
+2013-02-04
+.
+↑
+"Lohnsteuer – Liechtenstein Wirtschaft"
+.
+www.liechtenstein-business.li
+. Archived from
+the original
+on 2018-03-30
+. Retrieved
+2018-03-29
+.
+↑
+"Personal income tax (PIT) rates"
+.
+↑
+"Liechtenstein VAT 2024"
+.
+Archived
+(PDF)
+from the original on 2017-04-12
+. Retrieved
+2017-04-11
+.
+↑
+"
+"Taxation and Investment Guides: Lithuania Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on October 2, 2013.
+↑
+[
+dead link
+]
+↑
+"Administration des contributions directes du Grand-Duché de Luxembourg
+: Tarif applicable aux personnes physiques (impôt sur le revenu)"
+. Administration des Contributions Directes.
+Archived
+from the original on 2013-03-28
+. Retrieved
+2013-03-27
+.
+↑
+"Paramètres sociaux – CCSS"
+. Centre commun de la sécurité sociale.
+Archived
+from the original on 2013-04-02
+. Retrieved
+2013-03-27
+.
+(50% maladie, 100% dépendance, 50% pension)
+↑
+"Global Revenue Statistics Database"
+.
+</refpension)
+↑
+人才發展委員會 – Tax
+↑
+"Macau SAR - Corporate - Other taxes"
+.
+taxsummaries.pwc.com
+.
+↑
+"Taxas de IVA | Guia Fiscal 2019"
+.
+www.deloitte-guiafiscal.com
+.
+Archived
+from the original on 2020-02-05
+. Retrieved
+2020-02-05
+.
+↑
+Malawi Individual - Taxes on personal income
+, 21 April 2023, PwC
+↑
+"Tax Rate
+|
+Lembaga Hasil Dalam Negeri Malaysia"
+. 11 November 2022.
+Archived
+from the original on 12 December 2022
+. Retrieved
+12 December
+2022
+.
+↑
+"KWSP – Home – KWSP"
+.
+www.kwsp.gov.my
+(in Malay). Archived from
+the original
+on 2013-05-19
+. Retrieved
+2017-09-06
+.
+↑
+"Contributions"
+.
+Archived
+from the original on 12 December 2022
+. Retrieved
+12 December
+2022
+.
+↑
+"BDO Corporate Tax News - Malaysia"
+.
+www.bdo.global
+. 2024-01-26
+. Retrieved
+2025-11-30
+.
+↑
+"Appointment of date of coming into operation"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2018-09-01
+. Retrieved
+2018-09-01
+.
+↑
+"Maldives Inland Revenue Authority"
+. MIRA.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2013-02-04
+.
+↑
+"Unofficial Translation of business profit tax act"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2012-04-25
+. Retrieved
+2011-10-03
+.
+↑
+"Unofficial Translation of goods and services tax act"
+(PDF)
+.
+Archived
+(PDF)
+from the original on 2011-09-29
+. Retrieved
+2011-10-03
+.
+↑
+"Lowtax – Global Tax & Business Portal – Personal Taxation – Income Tax"
+.
+www.lowtax.net
+.
+Archived
+from the original on 2015-06-26
+. Retrieved
+2015-06-25
+.
+↑
+"
+"Taxation and Investment Guides: Mexico Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on October 2, 2013.
+↑
+"Единая ставка подоходного налога с физических лиц / Editorial / Monitorul fiscal FISC.md"
+.
+monitorul.fisc.md
+.
+Archived
+from the original on 2018-10-02
+. Retrieved
+2018-10-01
+.
+↑
+"Corporate income tax / Taxes on profits / Other taxes and duties / Tax / Public Services for Businesses- Monaco"
+.
+en.service-public-entreprises.gouv.mc
+.
+Archived
+from the original on 2020-08-13
+. Retrieved
+2020-01-14
+.
+↑
+"Monaco capital gains tax rates, and property income tax"
+. Globalpropertyguide.com.
+Archived
+from the original on 2013-01-30
+. Retrieved
+2013-02-04
+.
+↑
+"Accounting Obligations and Tax"
+.
+↑
+"Montenegro Corporate Tax Law"
+.
+Archived
+from the original on 2015-01-02
+. Retrieved
+2015-01-02
+.
+1
+2
+3
+"Montenegro Tax Guide"
+.
+Montenegro Guides
+. January 20, 2019.
+Archived
+from the original on February 2, 2019
+. Retrieved
+February 2,
+2019
+.
+↑
+"Montenegro - Individual - Taxes on personal income"
+.
+↑
+"Montenegro - Income Tax"
+.
+KPMG
+. 26 February 2018. Archived from
+the original
+on 12 June 2018
+. Retrieved
+22 April
+2018
+.
+1
+2
+Exportations (AMDIE), Agence Marocaine de Développement des Investissements et des.
+"Doing Business with Morocco - Investissement & Export
+|
+Morocco Now"
+.
+Morocco Now by AMDIE
+.
+Archived
+from the original on 2021-09-22
+. Retrieved
+2021-09-22
+.
+↑
+"Morocco Corporate - Other taxes"
+.
+PWC
+. 26 February 2018.
+Archived
+from the original on 27 April 2019
+. Retrieved
+10 February
+2019
+.
+1
+2
+3
+4
+"Namibia Tax Reference and Rate Card 2017"
+(PDF)
+.
+PriceWaterhouseCoopers Namibia
+. PWC Namibia.
+Archived
+(PDF)
+from the original on 2017-03-29
+. Retrieved
+2018-05-08
+.
+↑
+"Nepal Federal Budget FY 2076-77: Income Tax Slabs, Rates and Concessions"
+.
+Nepalisansar
+. 13 Nov 2019.
+Archived
+from the original on 25 July 2019
+. Retrieved
+13 November
+2019
+.
+↑
+"कान्तिपुर - नेपालको राष्ट्रिय दैनिक, Online News and articles from Kantipur Daily"
+.
+ekantipur.com
+. Archived from
+the original
+on July 12, 2007.
+↑
+Loecken, Benjamin J. (2018-02-10).
+"Nepal's Extravagant 288% Import Tax"
+.
+Grassroots News International
+.
+Archived
+from the original on 2019-06-23
+. Retrieved
+2019-06-23
+.
+↑
+"Tarieven voor de vennootschapsbelasting"
+.
+www.belastingdienst.nl
+.
+Archived
+from the original on 2021-07-09
+. Retrieved
+2021-07-07
+.
+↑
+"Netherlands - Individual - Taxes on personal income"
+.
+taxsummaries.pwc.com
+. Retrieved
+2022-08-21
+.
+↑
+"Netherlands - Inheritance Tax Rates (Dutch)"
+.
+↑
+"Income tax rates for individuals (Find out about)"
+. Archived from
+the original
+on 2014-04-17
+. Retrieved
+2014-04-20
+.
+↑
+"Tax rates for individuals"
+.
+www.ird.govt.nz
+.
+Archived
+from the original on 2021-09-22
+. Retrieved
+2021-09-22
+.
+↑
+"Doing Business in New Caledonia: Corporate Taxation"
+.
+PriceWaterhouseCoopers International Ltd
+. 2011.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2011-11-17
+.
+↑
+"Doing Business in New Caledonia: Personal Taxation"
+.
+PriceWaterhouseCoopers International Ltd
+. 2011.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2011-11-17
+.
+1
+2
+"Presentation of Niger: Taxation"
+.
+Société Générale
+. Archived from
+the original
+on 2021-03-01
+. Retrieved
+1 March
+2021
+.
+↑
+Tim Staermose (20 June 2013).
+"A hidden paradise with no income tax or property tax…"
+. Sovereign Man.
+↑
+"Main features of the Government's tax programme for 2011"
+.
+Ministry of Finance
+. 5 October 2010. Archived from
+the original
+on 26 December 2018
+. Retrieved
+3 December
+2010
+.
+↑
+Finansdepartementet (2023-12-20).
+"Skattesatser 2024"
+.
+Regjeringen.no
+(in Norwegian Bokmål)
+. Retrieved
+2025-01-29
+.
+↑
+"Exemption card – order and split between employers"
+.
+The Norwegian Tax Administration
+. Retrieved
+2025-01-29
+.
+↑
+"Maximum effective marginal tax rates"
+.
+The Norwegian Tax Administration
+. Retrieved
+2025-01-29
+.
+↑
+"Gains, losses or dividends on shares"
+.
+The Norwegian Tax Administration
+. Retrieved
+2025-01-29
+.
+↑
+"Inheritance tax is abolished"
+.
+↑
+"Slik fungerer merverdiavgiften"
+.
+Skatteetaten
+(in Norwegian)
+. Retrieved
+2025-01-29
+.
+↑
+"
+"Taxation and Investment Guides: Oman Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-09-05
+. Retrieved
+2017-09-04
+.
+↑
+"International Tax Oman Highlights 2017"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-09-05.
+↑
+"Minimum tax on turnover"
+. PWC
+. Retrieved
+2025-02-22
+.
+↑
+"Corporate - Tax credits and incentives"
+.
+PWC
+. Retrieved
+2025-02-24
+.
+↑
+"ITO 2001, See Division III in Part I of the First Schedule"
+.
+www.fbr.gov.pk
+.
+Archived
+from the original on 2019-02-27
+. Retrieved
+2019-02-27
+.
+↑
+"Income Tax Ordinance 2001"
+.
+↑
+"Palau"
+.
+U.S. Department of State
+.
+↑
+"Capital Gains Tax"
+.
+ntrc.gov.ph
+. Retrieved
+2025-11-30
+.
+↑
+"Estate Tax in the Philippines - Bureau of Internal Revenue"
+.
+bir.gov.ph
+.
+↑
+"Frequently Asked Questions"
+. Pitcairn Island Immigration.
+Archived
+from the original on 18 May 2020
+. Retrieved
+23 November
+2020
+.
+1
+2
+"Poland -Income Tax - KPMG Global"
+.
+KPMG
+.
+Archived
+from the original on August 9, 2020
+. Retrieved
+March 14,
+2020
+.
+↑
+Wilczek, Maria (2022-01-03).
+"Landmark tax reform comes into force in Poland"
+.
+Notes From Poland
+.
+Archived
+from the original on 2022-01-11
+. Retrieved
+2022-01-11
+.
+↑
+"Polish Deal | 9% of the health insurance contribution due on the management board fees"
+.
+PwC Studio - Prawo i Podatki
+.
+Archived
+from the original on 2022-01-11
+. Retrieved
+2022-01-11
+.
+↑
+"Danina solidarnościowa - kogo obowiązuje i jak ją obliczyć?"
+.
+Poradnik Przedsiębiorcy
+(in Polish).
+Archived
+from the original on 2022-01-11
+. Retrieved
+2022-01-11
+.
+↑
+"
+"Corporate Tax Rates 2012" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on October 2, 2013.
+1
+2
+3
+"Revoluţia fiscală
+|
+Guvernul a adoptat ordonanţa de urgenţă care modifică esenţial Codul Fiscal/ Mesajul lui Tudose: S-au inflamat nişte multinaţionale/ Sindicatele sesizează Avocatul Poporului"
+.
+Mediafax.ro
+. 7 November 2017.
+Archived
+from the original on 2021-09-22
+. Retrieved
+2021-09-22
+.
+↑
+"In Russia, the progression of personal income tax with five rates has come into force (in Russian)"
+.
+RBK
+(in Russian). 1 January 2025.
+↑
+"Inheritance and estate taxes in Russia"
+.
+expatica.com
+.
+↑
+"Putin Signs Law Raising Russia's Value-Added Tax to 22%"
+.
+The Moscow Times
+. 28 November 2025
+. Retrieved
+14 February
+2026
+.
+↑
+"Corporate Tax Rates Table - KPMG Global"
+.
+KPMG
+. 2020-11-11.
+Archived
+from the original on 2021-04-28
+. Retrieved
+2021-05-07
+.
+↑
+"Meet the Locals and learn about life on the Island of Sark – Sark Island Tourism"
+. 31 August 2011.
+Archived
+from the original on 14 June 2015
+. Retrieved
+12 June
+2015
+.
+↑
+International Tax and Business Guides – Economic Data – Statistics – Tax – EIU – The Economist – Foreign Investment – Deloitte Touche Tohmatsu
+[
+dead link
+]
+↑
+"Врсте пореских обвезника"
+[
+Types of taxpayers
+]
+(PDF)
+(in Serbian). Archived from
+the original
+(PDF)
+on 2013-03-19
+. Retrieved
+2013-02-04
+.
+↑
+Corporate tax law (Serbian)
++ 10% on withdrawal
+↑
+"Закон о порезу на доходак грађана"
+.
+Пореска управа
+.
+[
+permanent dead link
+]
+↑
+"Zakon O Porezu Na Dodatu Vrednost (Zakon O Pdv)"
+. Paragraf.rs.
+Archived
+from the original on 2021-11-30
+. Retrieved
+2022-02-22
+.
+↑
+"Zakon o izmenama zakona o porezu na dodatu vrednost"
+[
+Law on Amendments to the Law on Value Added Tax
+]
+(PDF)
+(in Tibetan).
+Archived
+(PDF)
+from the original on 2021-07-02
+. Retrieved
+2020-12-07
+.
+↑
+"Tax rates & tax exemption schemes"
+. Inland Revenue Authority of Singapore.
+Archived
+from the original on 2015-06-24
+. Retrieved
+2014-08-05
+.
+↑
+"Inheritance tax and inheritance law in Singapore"
+.
+GlobalPropertyGuide.com
+. 25 February 2020.
+↑
+"Slovakia – Proposed increases to corporate, individual income tax rates"
+.
+Archived
+from the original on 2013-06-28
+. Retrieved
+2013-03-25
+.
+↑
+"Zmeny v zákone o DPH od 1.1.2025"
+.
+Grant Thornton Slovakia
+. 2024-12-12
+. Retrieved
+2025-04-22
+.
+↑
+"Tax Regime"
+.
+↑
+"South Africa budget"
+. Archived from
+the original
+on 2018-12-26
+. Retrieved
+2013-02-04
+.
+↑
+"Estate duty"
+.
+sars.gov.za
+. 4 February 2021.
+↑
+"South Africans to pay higher VAT for first time in two decades"
+.
+Fin24
+.
+Archived
+from the original on 2018-02-21
+. Retrieved
+2018-02-21
+.
+1
+2
+"
+"Tax law enforcement system korea (nts.go.kr)" section 3"
+.
+Archived
+from the original on 2022-02-22
+. Retrieved
+2022-02-22
+.
+↑
+이세원 (4 December 2017).
+"여야, 소득세법 개정안은 '그대로'…최고세율 42％로 상향"
+.
+연합뉴스
+.
+Archived
+from the original on 4 December 2017
+. Retrieved
+5 December
+2017
+.
+↑
+"Investors must beware of high Korean inheritance tax"
+.
+AsiaTimes.com
+. 24 March 2020.
+↑
+Palliyaguru, Dinithi (2024-07-24).
+"Capital Gains Tax in Sri Lanka: How to Calculate, Pay and More"
+.
+Sri Lanka
+. Retrieved
+2025-11-30
+.
+↑
+"Sudan — Orbitax Corporate Tax Rates"
+.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+: 1527.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+"loonbelasting"
+.
+Archived
+from the original on 2019-10-10
+. Retrieved
+2019-10-10
+.
+↑
+"Norway has no tax agreements with any country in the world, nor does it exchange financial account information... well partly true"
+.
+www.linkedin.com
+. Linkedin
+. Retrieved
+4 April
+2024
+.
+↑
+"Registering a company in Svalbard"
+.
+ybcase.com
+. YB Case
+. Retrieved
+4 April
+2024
+.
+1
+2
+"Tax rates on Svalbard"
+.
+www.skatteetaten.no
+. The Norwegian Tax Administration
+. Retrieved
+4 April
+2024
+.
+↑
+"Iceland - Svalbard — Orbitax Withholding Tax Rates"
+.
+orbitax.com
+. Orbitax
+. Retrieved
+4 April
+2024
+.
+↑
+"Spitsbergen: a tax oasis?"
+.
+www.spitsbergen-svalbard.com
+. Rolf Stange. 15 February 2011
+. Retrieved
+4 April
+2024
+.
+1
+2
+3
+"Belopp och procent – inkomstår 2026"
+[
+Amounts and percentages – income year 2026
+]
+.
+Skatteverket
+(in Swedish). 2026
+. Retrieved
+2026-02-16
+.
+{{
+cite web
+}}
+:  CS1 maint: url-status (
+link
+)
+↑
+"Bolagsskatt - Internationellt"
+. ekonomifakta.se. 2019-04-12.
+Archived
+from the original on 2019-03-21
+. Retrieved
+2019-04-29
+.
+1
+2
+"Skattetabeller"
+[
+Tax tables
+]
+.
+Skatteverket
+(in Swedish). 2026
+. Retrieved
+2026-02-16
+.
+{{
+cite web
+}}
+:  CS1 maint: url-status (
+link
+)
+↑
+"Högsta och lägsta kommunalskatten 2026"
+[
+Highest and lowest municipal tax 2026
+]
+.
+SCB
+(in Swedish). 2026
+. Retrieved
+2026-02-16
+.
+{{
+cite web
+}}
+:  CS1 maint: url-status (
+link
+)
+↑
+"VAT rates Sweden – Skatteverket"
+. Skatteverket.se. 2010-01-23.
+Archived
+from the original on 2012-07-11
+. Retrieved
+2013-02-04
+.
+↑
+"AHV/IV"
+.
+Archived
+from the original on 2021-09-08
+. Retrieved
+2021-10-05
+.
+↑
+"Tarife Direkte Bundessteuer"
+.
+Archived
+from the original on 2021-10-05
+. Retrieved
+2021-10-05
+.
+1
+2
+3
+"Federal Tax Administration"
+.
+Archived
+from the original on 2021-10-20
+. Retrieved
+2021-10-05
+.
+↑
+"Inheritance tax"
+.
+ch.ch – Offizielle Informationen der Schweizer Behörden
+. Retrieved
+2024-05-16
+.
+↑
+Pevzner, Alex (2010-05-28).
+"Taiwan Cuts Corporate Income Tax To 17%"
+. Online.wsj.com.
+Archived
+from the original on 2015-10-15
+. Retrieved
+2013-02-04
+.
+↑
+"Estate and gift tax rates increased"
+.
+taxathand.com
+.
+↑
+"營業稅試算"
+.
+財政部稅務入口網
+(in Chinese).
+Archived
+from the original on 21 August 2016
+. Retrieved
+8 July
+2016
+.
+↑
+"Tax and Investment Guide_TJ_2016"
+(PDF)
+. deloitte.tj.
+Archived
+(PDF)
+from the original on 2019-05-28
+. Retrieved
+2019-04-14
+.
+↑
+"Trinidad and Tobago - Individual - Taxes on personal income"
+.
+↑
+"Turkey - Individual - Other taxes"
+.
+taxsummaries.pwc.com
+. Retrieved
+2024-05-16
+.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+: 1629.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+EYGM Limited (April 2018).
+"2018 Worldwide Corporate Tax Guide"
+(PDF)
+.
+EY Worldwide Corporate Tax Guide
+: 1633.
+Archived
+(PDF)
+from the original on 2018-06-21
+. Retrieved
+2018-06-21
+.
+↑
+"Corporate tax in Ukraine"
+. 21 December 2019.
+Archived
+from the original on 6 August 2020
+. Retrieved
+21 December
+2019
+.
+↑
+"Corporate tax in Ukraine"
+. 21 December 2019.
+Archived
+from the original on 6 August 2020
+. Retrieved
+21 December
+2019
+.
+"Individual income tax in Ukraine"
+. 21 December 2019.
+Archived
+from the original on 2 June 2017
+. Retrieved
+16 January
 2018
 .
 ↑
-"Data - Finance"
-. Archived from
-the original
-on 5 December 2006
-. Retrieved
-2009-12-31
-.
-↑
-"Hoping to preserve democracy, Tunisia woos foreign investors"
-. Archived from
-the original
-on 30 November 2016.
-↑
-Amara, Tarek (23 December 2022).
-"Tunisia seeks to cut fiscal deficit to 5.5% in 2023, led by economic reforms"
-.
-Reuters
-. Retrieved
-28 December
-2022
-.
-↑
-"Defiant in Debt: Breaking Free from Global Purse in Tunisia - Daily Euro Times"
-.
-dailyeurotimes.com
-. 4 March 2025
-. Retrieved
-5 March
-2025
-.
-↑
-"Tunisia reports marked growth in exports to Libya"
-.
-Libyan Express
-. 24 April 2025
-. Retrieved
-24 April
-2025
-.
-↑
-"Treasury Secretary Geithner and Tunisian Finance Minister Dimassi Sign Declaration to Work Toward U.S. Loan Guarantee for Tunisia"
-. U.S. Department of the Treasury
-. Retrieved
-13 June
-2012
-.
-↑
-Timothy Geithner
-↑
-"FAQs: U.S. Loan Guarantee for Tunisia"
-(PDF)
-. U.S. Department of the Treasury.
+"Individual income tax in Ukraine"
+. 21 December 2019.
 Archived
+from the original on 2 June 2017
+. Retrieved
+16 January
+2018
+.
+"Corporate tax in Ukraine"
+. 21 December 2019.
+Archived
+from the original on 6 August 2020
+. Retrieved
+21 December
+2019
+.
+↑
+"UAE corporate tax: Free zone based businesses with mainland operations to come under tax regime
+|
+Markets"
+. Gulf News. 2022-01-31. Archived from
+the original
+on 31 January 2022
+. Retrieved
+2022-02-22
+.
+1
+2
+"UAE to introduce 9% corporate tax on business profits from June 1, 2023
+|
+Markets"
+. Gulf News. 2022-01-31. Archived from
+the original
+on 31 January 2022
+. Retrieved
+2022-02-22
+.
+1
+2
+"UAE Ministry of Finance"
+.
+↑
+"United Arab Emirates - Individual - Other taxes"
+.
+↑
+"HM Revenue & Customs Budget 2008 Press Notice PN02"
 (PDF)
-from the original on 27 July 2014
+. Hmrc.gov.uk. 2011-06-28. Archived from
+the original
+(PDF)
+on 2018-12-26
 . Retrieved
-13 September
-2012
-.
-1
-2
-"A helping hand for young entrepreneurs in Tunisia"
-.
-European Investment Bank
-. Retrieved
-15 July
-2021
-.
-1
-2
-"EBRD, Enda Tamweel and Attijari Bank supporting microfinance in Tunisia"
-.
-www.ebrd.com
-. Retrieved
-15 July
-2021
+2013-02-04
 .
 ↑
-"Tunisia Energy Situation - energypedia"
+"Corporation Tax rates and reliefs"
 .
-energypedia.info
+GOV.UK
 . Retrieved
-14 October
-2021
+2024-04-19
 .
 ↑
-"Nation Master"
+"Income Tax rates and Personal Allowances"
+.
+Income Tax rates and Personal Allowances
+. GOV.UK.
+Archived
+from the original on 2021-12-23
+. Retrieved
+2021-05-26
 .
 ↑
-Tunisia production in 2018, by FAO
-External links
-[
-edit
-]
-Historic Growth Trend of Tunisia's Economy, 1962 – 2007
-Economy of Tunisia
-extracted from the CIA factbook public data
-Portals
-:
-Africa
-Business and economics
-v
-t
-e
-Economy of Africa
-Sovereign states
-Algeria
-Angola
-Benin
-Botswana
-Burkina Faso
-Burundi
-Cameroon
-Cape Verde
-Central African Republic
-Chad
-Comoros
-Democratic Republic of the Congo
-Republic of the Congo
-Djibouti
-Egypt
-Equatorial Guinea
-Eritrea
-Eswatini
-Ethiopia
-Gabon
-The Gambia
-Ghana
-Guinea
-Guinea-Bissau
-Ivory Coast
-Kenya
-Lesotho
-Liberia
-Libya
-Madagascar
-Malawi
-Mali
-Mauritania
-Mauritius
-Morocco
-Mozambique
-Namibia
-Niger
-Nigeria
-Rwanda
-São Tomé and Príncipe
-Senegal
-Seychelles
-Sierra Leone
-Somalia
-South Africa
-South Sudan
-Sudan
-Tanzania
-Togo
-Tunisia
-Uganda
-Zambia
-Zimbabwe
-States with limited
-recognition
-Sahrawi Arab Democratic Republic
-Somaliland
-Dependencies and
-other territories
-Canary Islands
-/
-Ceuta
-/
-Melilla
-(Spain)
-Madeira
-(Portugal)
-Mayotte
-/
-Réunion
-(France)
-Saint Helena
-/
-Ascension Island
-/
-Tristan da Cunha
-(United Kingdom)
-Western Sahara
-v
-t
-e
-Tunisia
-articles
-History
-Early history
-Capsian culture
-Ancient Carthage
-Punic Wars
-First War
-Second War
-Third War
-Byzantine Empire
-Medieval history
-Muslim conquest
-Fatimid Caliphate
-Hafsids
-Regency of Tunis
-Muradid
-Husaynids
-French protectorate
-National movement
-Naturalization issue
-Protests of 9 April
-Tunisian campaign
-Independence declaration
-Kingdom of Tunisia
-Republic declaration
-1987 coup d'état
-Tunisian revolution
-2013–14 political crisis
-2018 Tunisian protests
-COVID-19 pandemic
-2021 Tunisian protests
-25 July 2021 self-coup
-Geography
-Administrative divisions
-Governorates
-Cities
-Subdivisions
-Regions
-North East
-North West
-Sahel
-Central West
-South East
-Djerid
-Wildlife
-Ecoregions
-World Heritage Sites
-Museums
-Demographics
-Tunisians
-Tunisian diaspora
-Climate
-Politics
-President of the Republic
-List
-Prime Minister
-List
-Cabinet
-Constitution
-Fundamental Pact
-1861
-1959
-2014
+"Income Tax rates and Personal Allowances – Income over £100,000"
+.
+GOV.UK
+. Retrieved
+4 January
+2025
+.
+↑
+"Capital Gains Tax: what you pay it on, rates and allowances"
+.
+GOV.UK
+. Retrieved
+2023-04-20
+.
+↑
+"Gov.uk - Inheritance Tax"
+. Gov.uk
+. Retrieved
+2024-06-12
+.
+↑
+"Directgov – Value Added Tax"
+. Direct.gov.uk. 2013-01-09.
+Archived
+from the original on 2018-12-26
+. Retrieved
+2013-02-04
+.
+↑
+Bankrate.com.
+"2017-2018 Tax Brackets | Bankrate.com"
+.
+Bankrate
+.
+Archived
+from the original on 2018-07-17
+. Retrieved
+2018-07-16
+.
+Alt URL
+↑
+Bruckner, Caroline (22 July 2024).
+"How do 9 states get by with no income tax? A tax expert explains the trade-offs they choose"
+.
+The Conversation
+.
+↑
+"Property Taxes by State and County, 2025"
+. Tax Foundation. 2025-03-04
+. Retrieved
+2025-03-30
+.
+↑
+"IRS information about federal estate taxes"
+. Retrieved
+12 June
+2024
+.
+↑
+"IRPF: sepa cuáles son las nuevas franjas a partir de enero de 2024"
+.
+El Observador
+. January 17, 2024
+. Retrieved
+June 19,
+2024
+.
+↑
+"Department of Planning & Investment _ DPI"
+. Dpi.hochiminhcity.gov.vn. Archived from
+the original
+on 2010-08-28
+. Retrieved
+2013-02-04
+.
+↑
+"Inheritance and Gift Taxes in Vietnam"
+(PDF)
+.
+IMF.org
+.
+↑
+"
+"Taxation and Investment Guides: BVI Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on October 2, 2013.
+↑
+"U.S. Virgin Islands: An Offshore Tax Planning Jurisdiction"
+.
+↑
+"
+"Taxation and Investment Guides: Yemen Highlights 2013" Deloitte & Touche"
+(PDF)
+. Archived from
+the original
+(PDF)
+on October 2, 2013.
+↑
+"Zambian National Budget Highlights 2022"
+.
+deloitte.com/za/en/
+. 17 April 2022
+. Retrieved
+17 April
 2022
-Foreign relations
-Armed Forces
-Army
-Air Force
-Navy
-Parliament
-National Council of Regions and Districts
-Assembly of the Representatives of the People
-Political parties
-Elections
-Independent High Authority for Elections
-Economy
-Bourse de Tunis
-Central Bank of Tunisia
-Tunisian dinar
-Banking in Tunisia
-Agriculture
-Energy
-Natural resources
-Water supply and sanitation
-Tourism
-Industry
-Telecommunications
-Transport
-Roads
-Rail transport
-Traditional crafts
-Major projects
-Society
-Education
-Baccalaureate
-Higher education
-Languages
-Tunisian Arabic
-Media
-Television
-Radio stations
-Internet
-Newspapers
-Censorship
-Human rights
-Abortion
-LGBT
-Women
-Polygamy
-Religion
-Islam
-Christianity
-Judaism
+.
+v
+t
+e
+Lists of countries
+by
+financial
+rankings
+Trade
+Account balance
+Exports
+by product and services
+merchandise
+per capita
+Imports
+Balance of trade
+service exports and imports
+Trade-to-GDP ratio
+Tariff rate
+Leading trade partners
+Investment
+FDI received
+FDI abroad
+Funds
+Forex reserves
+Gold reserves
+Sovereign wealth funds
+Pension funds
+Creditor nations
+Debtor nations
+Budget and debt
+Government budget
+PPP
+% of GDP
+per capita
+Credit rating
+External debt
+Government debt
+future
+Household debt
+Corporate debt
+Income and taxes
+Wage
+average
+Disposable
+minimum
+Wage growth
+GNI per capita growth
+Tax rates
+Inheritance tax
+Tax revenue
+Currency
+Central bank interest rate
+Commercial bank prime lending rate
+Inflation rate
+Consumer price index
+Other
+Financial Development Index
+Average annual labor hours
+Corporate governance
+Development aid
+Ease of doing business
+Gross national savings
+Price level
+Employment
+/
+Unemployment
+Financial assets
+Labour productivity
+Wealth
+Lists of countries by GDP rankings
+List of international rankings
+Lists by country
+v
+t
+e
+Lists of countries
+by
+public policy
+topics
+General
+Government transparency
+World Governance Index
+Worldwide Governance Indicators
+Economic
+Central bank interest rates
+Government budget per capita
+Public sector size
+Sovereign wealth funds
+Tariff rate
+Tax rates
+Inheritance tax
+Tax revenue to GDP ratio
 Health
-Public holidays
-Culture
-Arts
-Cinema
-Music
-Literature
-Sport
-Football
-Cuisine
-National symbols
-Flag
-National anthem
-Coat of arms
-Motto
-Category
-WikiProject
-Commons
+Health expenditure by country by type of financing
+Universal health care
+Social
+Guaranteed minimum income
+Social welfare spending
+Education
+Education spending as percentage of government spending
+List of international rankings
+Lists by country
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1363294524
+https://en.wikipedia.org/w/index.php?title=List_of_countries_by_tax_rates&oldid=1360260761
 "
 Categories
 :
-African Union member economies
-Economy of Tunisia
-Economy of the Arab League
-World Trade Organization member economies
+Taxation by country
+Lists of countries by economic indicator
+Taxation-related lists
 Hidden categories:
 Articles with short description
 Short description is different from Wikidata
-Wikipedia articles in need of updating from July 2022
-All Wikipedia articles in need of updating
-Wikipedia references cleanup from July 2022
-All articles needing references cleanup
-Articles covered by WikiProject Wikify from July 2022
-All articles covered by WikiProject Wikify
-Articles needing translation from French Wikipedia
-Articles with multiple maintenance issues
-Use dmy dates from April 2026
-Articles containing Tunisian Arabic-language text
+CS1 German-language sources (de)
+CS1 European Portuguese-language sources (pt-pt)
+All articles with unsourced statements
+Articles with unsourced statements from December 2019
+Articles with unsourced statements from September 2009
+CS1 Brazilian Portuguese-language sources (pt-br)
+CS1: unfit URL
+Webarchive template wayback links
+CS1 Spanish-language sources (es)
+Articles with unsourced statements from August 2024
+CS1 Finnish-language sources (fi)
+Articles with unsourced statements from September 2010
+All articles with dead external links
+Articles with dead external links from February 2022
+CS1 Malay-language sources (ms)
+Articles with unsourced statements from November 2025
+CS1 Norwegian Bokmål-language sources (nb)
+CS1 Norwegian-language sources (no)
+CS1 Polish-language sources (pl)
+CS1 Russian-language sources (ru)
+Articles with dead external links from February 2013
+CS1 Serbian-language sources (sr)
+Articles with dead external links from October 2023
+Articles with permanently dead external links
+CS1 Tibetan-language sources (bo)
+CS1 maint: url-status
+CS1 Swedish-language sources (sv)
+CS1 Chinese-language sources (zh)
 Search
 Search
-Economy of Tunisia
-23 languages
+List of countries by tax rates
+8 languages
 Add topic
+
+---
+
+Category:Taxation by country - Wikipedia
+Jump to content
+Search
+Search
+Category
+:
+Taxation by country
+37 languages
+العربية
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Беларуская (тарашкевіца)
+Беларуская
+বাংলা
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+فارسی
+Français
+Հայերեն
+Bahasa Indonesia
+日本語
+한국어
+Lietuvių
+Македонски
+Монгол
+Bahasa Melayu
+Polski
+Português
+Русский
+සිංහල
+Svenska
+தமிழ்
+ไทย
+Tagalog
+Türkçe
+Українська
+اردو
+Tiếng Việt
+中文
+Edit links
+Help
+From Wikipedia, the free encyclopedia
+Wikimedia Commons has media related to
+Taxation by country
+.
+This is a
+container category
+. Due to its scope, it should contain
+only
+subcategories
+.
+Subcategories
+This category has the following 61 subcategories, out of 61 total.
+Taxation by former country
+(5 C)
+Revenue stamps by country
+(2 C, 76 P)
+A
+Taxation in Albania
+(2 P)
+Taxation in Armenia
+(1 C, 5 P)
+Taxation in Australia
+(8 C, 44 P)
+Taxation in Azerbaijan
+(1 C, 1 P)
+B
+Taxation in Bangladesh
+(4 P)
+Taxation in Belarus
+(2 P)
+Taxation in Brazil
+(9 P)
+C
+Taxation in Canada
+(10 C, 48 P)
+Taxation in China
+(3 C, 11 P)
+Taxation in Colombia
+(3 P)
+Taxation in the Czech Republic
+(3 P)
+D
+Taxation in Denmark
+(1 C, 3 P)
+F
+Taxation in Finland
+(2 P)
+Taxation in France
+(2 C, 36 P)
+G
+Taxation in Germany
+(19 P)
+Taxation in Greece
+(6 P)
+H
+Taxation in Hungary
+(3 P)
+I
+Taxation in India
+(8 C, 30 P)
+Taxation in Indonesia
+(1 C, 4 P)
+Taxation in the Republic of Ireland
+(20 P)
+Taxation in Israel
+(1 C, 3 P)
+Taxation in Italy
+(1 C, 6 P)
+J
+Taxation in Jamaica
+(1 P)
+Taxation in Japan
+(1 C, 7 P)
+K
+Taxation in Kazakhstan
+(2 P)
+Taxation in Kenya
+(2 P)
+Taxation in Kyrgyzstan
+(2 P)
+L
+Taxation in Liechtenstein
+(1 P)
+Taxation in Lithuania
+(1 C, 4 P)
+M
+Taxation in Malaysia
+(1 C, 7 P)
+N
+Taxation in Nepal
+(4 P)
+Taxation in the Netherlands
+(1 C, 4 P)
+Taxation in New Zealand
+(21 P)
+Taxation in Norway
+(2 P)
+P
+Taxation in Pakistan
+(1 C, 10 P)
+Taxation in Palestine
+(5 P)
+Taxation in Peru
+(2 P)
+Taxation in the Philippines
+(5 P)
+Taxation in Poland
+(4 P)
+Taxation in Portugal
+(1 C, 5 P)
+R
+Taxation in Romania
+(1 P)
+Taxation in Russia
+(2 C, 14 P)
+Taxation in Rwanda
+(1 P)
+S
+Taxation in Singapore
+(4 P)
+Taxation in South Africa
+(1 C, 10 P)
+Taxation in South Korea
+(2 P)
+Taxation in Spain
+(12 P)
+Taxation in Sri Lanka
+(5 P)
+Taxation in Sweden
+(10 P)
+Taxation in Switzerland
+(1 C, 7 P)
+T
+Taxation in Taiwan
+(2 P)
+Taxation in Tanzania
+(2 P)
+Taxation in Turkey
+(5 P)
+U
+Taxation in Uganda
+(2 P)
+Taxation in Ukraine
+(2 P)
+Taxation in the United Arab Emirates
+(2 C, 1 P)
+Taxation in the United Kingdom
+(21 C, 123 P)
+Taxation in the United States
+(20 C, 258 P)
+V
+Taxation in Venezuela
+(1 P)
+Pages in category "Taxation by country"
+The following 41 pages are in this category, out of  41 total.
+This list may not reflect recent changes
+.
+List of countries by tax rates
+*
+Income tax in European countries
+List of countries by tax revenue
+Tax rates in Europe
+A
+Taxation in Afghanistan
+Taxation in Albania
+Taxation in Algeria
+Taxation in Andorra
+Taxation in Argentina
+Taxation in Armenia
+Taxation in Austria
+Taxation in Azerbaijan
+B
+Taxation in the Bahamas
+Taxation in Belgium
+Taxation in Bermuda
+Taxation in Bhutan
+Taxation in Bosnia and Herzegovina
+Taxation in the British Virgin Islands
+Taxation in Bulgaria
+C
+Taxation in Croatia
+Taxation in Cyprus
+D
+Taxation in Denmark
+E
+Taxation in Estonia
+Taxation in Ethiopia
+F
+Taxation in the Faroe Islands
+Taxation in Finland
+G
+Taxation in Georgia (country)
+I
+Taxation in Iran
+Taxation in the Republic of Ireland
+J
+Taxation in Jersey
+K
+Taxation in Kazakhstan
+L
+Taxation in Latvia
+M
+Taxation in Malta
+Taxation in Morocco
+N
+Taxation in North Korea
+P
+Taxation in Portugal
+S
+Taxation in Serbia
+Taxation in Slovakia
+T
+Taxation in Iceland
+U
+Taxation in Ukraine
+Taxation in Uruguay
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Category:Taxation_by_country&oldid=1210302637
+"
+Categories
+:
+Tax
+Government by country
+Economies by country
+Law by issue and country
+Government finances by country
+Hidden categories:
+Commons category link is on Wikidata
+Container categories
+Search
+Search
+Category
+:
+Taxation by country
+37 languages
+Add topic
+
+---
+
+Taxation in Afghanistan - Wikipedia
+Jump to content
+Search
+Search
+Taxation in Afghanistan
+Add languages
+Add links
+From Wikipedia, the free encyclopedia
+This article needs to be
+updated
+.
+Please help update this article to reflect recent events or newly available information.
+(
+August 2022
+)
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+Taxation in
+Afghanistan
+includes corporate taxes and income taxes.
+Corporate taxes
+[
+edit
+]
+All companies, no matter what kind of legal form the company is, are required to pay a corporate tax at the rate of 20 percent. It can be found in the 4th article of the Afghan Income Tax law.
+[
+1
+]
+Value-added tax (VAT)
+[
+edit
+]
+In 2014, the parliament of
+Afghanistan
+worked closely with the
+International Monetary Fund
+to raise the domestic revenues and therefore added a value-added tax (VAT) of 10 percent.
+[
+2
+]
+[
+3
+]
+Although, the existing law does not include all goods and services (hotels are affected for example), the government is planning to broaden this tax. VAT affects both domestic business people and their trade partners. The domestic taxpayer is obliged to pay the VAT on the taxable supply and the importer is obliged to pay the VAT on the taxable imports.
+[
+4
+]
+[
+5
+]
+[
+6
+]
+Business receipt tax (BRT)
+[
+edit
+]
+Afghanistan has many different tax rates of business receipt tax on their goods and services. The size of the business receipt tax depends on which kind of company and how large the company is. Lowest BRT has travel agents, culture, smaller restaurants and commodities with a tax rate of 4 percent. The larger restaurants, hotels and club halls have to pay 5 percent in business receipt tax. That tax rate was increased during 2015, from 2 percent to 4 percent, when the government wanted to increase the state revenues to finance the increased need for aid and foreign arms.
+[
+7
+]
+Income taxes
+[
+edit
+]
+Individuals are subject to tax at progressive rates, calculated monthly.
+[
+1
+]
+Income slab per month (
+AFN
+)
+Applicable Rate
+[
+1
+]
+0 - 5,000
+0%
+5001-12,500
+2%
+12,501-100,000
+10% + AFN 150
+100,001 and above
+20% + AFN 8,900
+Tax administration
+[
+edit
+]
+Tax assessment is handled by the Taxpayers Services Directorate, while taxes are paid directly to
+Da Afghanistan Bank
+.
+[
+8
+]
+The development of the fiscal situation in Afghanistan during 21st century
+[
+edit
+]
+Since the beginning of the 21st century, governmental revenues have aggregately increased. One of the reasons for this improvement is a more efficient tax system. However, revenues have been less than what they planned for due to situations such as
+tax evasion
+and the large drug market, tightening constraints on the budget. In 2015, the government made some improvements of both the tax administration and the customs and that made the revenues increase during 2015.
+[
+9
+]
+Customs and fees
+[
+edit
+]
+This section is empty.
+You can help by
+adding to it
+.
+(
+August 2025
+)
+The national budget and its allocation of 2018
+[
+edit
+]
+The national budget for 2018 consists of AFN 327 billion and represents a 17 percent decrease from that of the previous year (2017: AFN 429 billion). The
+Cabinet of Ministers
+and
+Mesherano Jirga
+voted for the budget in the end of November 2017, and the expected tax revenues for Afghanistan was by then AFN 157 billion. There is not a clear reason why the budget has decreased that much, but possible explanations have been that the earlier budget was false or that the government found a way to use the development budget money more efficiently.
+The government spends the most money on is security, accounting for 41 percent of the national budget. 13 percent goes to education, 11 percent to infrastructure, 9 percent to agriculture and rural development, 7 percent to governance, 7 percent to social security, 5 percent to contingency codes, 4 percent to health and 2 percent to economic governance.
+[
+10
+]
+References
+[
+edit
+]
+1
+2
+3
+"Afghanistan Tax Guide 2016/17"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2017-11-18
+. Retrieved
+2018-05-01
+.
+↑
+"Value-Added Tax (VAT) - Implementation Plan"
+(PDF)
+.
+documents1.worldbank.org
+. Government of the Islamic Republic of Afghanistan - Ministry of Finance.
+↑
+"Press Release: IMF's Middle East Regional Technical Assistance Center Concludes Study Tour on VAT Implementation for the Afghanistan Revenue Department"
+.
+IMF
+.
+↑
+"Income Tax Law 2009"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2019-01-30.
+↑
+"International VAT and GST rates 2021 - Avalara"
+.
+VATlive
+.
+↑
+"Table of Contents of the Value Added Tax Law ("VAT")"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 2018-05-01
+. Retrieved
+2018-05-01
+.
+↑
+Mackenzie, James (January 10, 2017).
+"Afghan businesses feel squeeze from government tax drive"
+.
+Reuters
+–
+via www.reuters.com.
+↑
+Zucchino, David (9 March 2025).
+"He Was Once a Covert Taliban Operative. Now He's the Friendly Taxman"
+.
+The New York Times
+. Retrieved
+10 March
+2025
+.
+↑
+"Afghanistan development update"
+(PDF)
+.
+documents.worldbank.org
+.
+↑
+"We promote , integrity, accountability, and inclusion, inspiring communities through community-based monitoring to improve services and foster social trust"
+(PDF)
+.
+iwaweb.org
+.
+v
+t
+e
+Afghanistan
+articles
+History
+Pre-Islamic period
+Indus Valley civilisation
+Maurya Empire
+Greater Khorasan
+Yabghus of Tokharistan
+Turk Shahis
+Hindu Shahis
+Islamic conquest
+Mongol invasion
+Hotak dynasty
+Siege of Kandahar
+Durrani Empire
+Third Battle of Panipat
+Dost Mohammad Khan
+Emirate of Afghanistan
+Battle of Jamrud
+Afghan–Sikh Wars
+First Anglo-Afghan War
+Second Anglo-Afghan War
+Third Anglo-Afghan War
+Kingdom of Afghanistan
+Reforms of Amānullāh Khān and civil war
+Saqqawists
+Emirate
+Daoud's Republic
+Democratic Republic
+Soviet war
+since 1992
+Islamic State
+First Islamic Emirate
+2001 invasion
+War (2001–2021)
+Islamic Republic
+Aftermath of the war (2001–2021)
+Second Islamic Emirate
+Taliban
+By topic
+Timeline
+Arabs in Afghanistan
+European influence
+"
+Graveyard of empires
+"
+Wars in Afghanistan
+Geography
+Administrative divisions
+Borders
+Climate change
+Earthquakes
+Environmental issues
+Extreme points
+Volcanoes
+Wildlife
+Demographics
+Ethnic groups in Afghanistan
+Arabs
+Baloch
+Farsiwan
+Gurjar
+Hazaras
+Kho
+Nuristanis
+Pashtuns
+Qizilbash
+Taji
+
+---
+
+Taxation in the British Virgin Islands - Wikipedia
+Jump to content
+Search
+Search
+Taxation in the British Virgin Islands
+1 language
+日本語
+Edit links
+From Wikipedia, the free encyclopedia
+This article
+may incorporate text from a
+large language model
+, which is
+prohibited in Wikipedia articles
+.
+It may include
+hallucinated
+information,
+copyright violations
+, claims not
+verified
+in cited sources,
+original research
+, or
+fictitious references
+. Any such material should be
+removed
+.
+(
+December 2025
+)
+(
+Learn how and when to remove this message
+)
+The British Virgin Islands.
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+Taxation in the British Virgin Islands
+is relatively simple by comparative standards; photocopies of all of the tax laws of the
+British Virgin Islands
+(BVI) would together amount to about 200 pages of paper.
+[
+1
+]
+Among the items in the British Virgin Islands that are
+not
+subject to taxation:
+no
+capital gains tax
+,
+no
+gift tax
+,
+no
+sales tax
+or
+value added tax
+,
+no
+profit tax
+,
+no
+inheritance tax
+or
+estate duty
+, and
+no
+wealth tax
+There is technically still
+income tax
+assessed in the British Virgin Islands for companies and individuals, but the rate of taxation has been set at zero.
+[
+2
+]
+That means that individuals are not obliged to filling obligations on their income tax. However, individuals are subject to a
+payroll deduction
+made of up to 8% for employees with additional 2% up to 6% of employer's gross salary paid by employers depending on the category the individuals fall into. There are two categories of employers: "Class 1" and "Class 2" The payroll tax applies to all remunerations/salaries over US$10,000 per annum.
+[
+3
+]
+The currency of British Virgin island is US dollar (USD) which makes it easier to interact with the
+United States Virgin Islands
+and creates stability and ability to benefit from their reach and reputation they have while still being one of
+British Overseas Territories
+. Furthermore, no foreign exchange controls are present. As far as individual taxation is concerned, there are typically certain penalties for not complying with the law. Regarding corporations, there is a system that can be applied to impose penalties in the case of not complying exists. However, both for individuals as well as corporations an official formal ruling or a formal system for tax purposes does not exist.
+The absence of most major forms of taxation in the Territory has led to the country being included on most recognised lists of
+tax havens
+,
+[
+4
+]
+although the jurisdiction prefers to style itself as a modern
+offshore financial centre
+. The government of British Virgin Islands does not impose any tax on offshore accounts and on top of that, the British Virgin Islands protect the financial security of its clients, account holders. One aspect that the BVI customers can benefit from is the lack of foreign exchange control, resulting in much easier transfers, it also encourages investment and trade while maintaining a protected financial environment and financial privacy.
+[
+5
+]
+There are a number of forms of taxation and revenue collection in the British Virgin Islands, but the majority of the Government's revenues are obtained directly from annual licence fees for
+offshore companies
+incorporated in the jurisdiction.
+Payroll tax
+[
+edit
+]
+In 2005 the British Virgin Islands introduced a
+payroll tax
+in relation to employment and "deemed employment"
+[
+6
+]
+within the British Virgin Islands.
+[
+7
+]
+The legislation was brought in at the same time as income tax in the Territory was reduced to zero.  The numbers were not in fact a perfect balance, and the Government (deliberately) reduced the amount of tax revenue it received by moving to the payroll tax system. This tax applies to all employee earnings, including wages, salaries, bonuses, commissions, and other benefits. It also encompassed those in "deemed employment," broadening the tax's reach to include non-traditional employment relationships such as certain contractors and consultants.
+The payroll tax featured varying rates depending on the category of the employer and the total earnings paid, establishing different thresholds for small and large employers and for self-employed individuals. This differentiated approach helped to distribute the tax burden more equitably across various business sizes and types.
+By reducing personal income taxes to zero while implementing the payroll tax, the government aimed to shift the tax burden from individuals to businesses, fostering a more business-friendly environment and stimulating economic growth. However, this shift was designed to balance out the lost revenue from income taxes partially. Instead, it was a strategic decision by the government to accept a reduction in tax revenue as a trade-off for potentially higher economic activity and to maintain the Territory's appeal as a low-tax jurisdiction. This adjustment in tax policy was integral to the British Virgin Islands' broader financial strategy.
+The tax is paid at a graduated rate depending upon the size of the employer.  The current rates (as at June 2007) are 10% for small employers
+[
+8
+]
+and 14% for larger employers.  8% of the total remuneration is deduction from the employee, the remainder of the liability is met by the employer.  The first US$10,000 of remuneration are free from payroll tax.
+Stamp duty
+[
+edit
+]
+Certain limited transactions in the British Virgin Islands are still subject to
+stamp duty
+.
+[
+9
+]
+The main application of the stamp duty legislation relates to transfers of
+real estate
+, or transfers of
+shares
+in companies which own real estate.  The rate of stamp duty on such transactions varies according to the status of the transferee; if the transferee is a
+Belonger
+, then stamp duty on land transfers is assessed at 4%; if the transferee is a Non-Belonger, it is assessed at 12%.
+The whole concept of belonging is quite complicated in the British Virgin Islands jurisdiction, but generally, the term refers to either people of the BVI origin or individuals who have been for any reason granted long-term residence. It should not be mistaken for
+citizenship
+and similarly, being a Belonger does not grant 

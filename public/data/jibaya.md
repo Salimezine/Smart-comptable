@@ -34,8 +34,7 @@ Menu
   * [CONTACT](https://jibaya.tn/contact/)
 
 
-[ FR ](https://jibaya.tn/ "French")
-[ FR ](https://jibaya.tn/ "French") [ AR ](https://jibaya.tn/ar/ "Arabic")
+[ FR ](https://jibaya.tn/ "FR")
 [ ![logojibaya-removebg-preview](https://jibaya.tn/wp-content/uploads/2023/03/logojibaya-removebg-preview.png) ](https://jibaya.tn)
   * [ADMINISTRATION FISCALE](https://jibaya.tn/)
     * [Direction Générale des Impôts](https://jibaya.tn/dgi/)
@@ -69,8 +68,7 @@ Menu
   * [CONTACT](https://jibaya.tn/contact/)
 
 
-[ FR ](https://jibaya.tn/ "French")
-[ FR ](https://jibaya.tn/ "French") [ AR ](https://jibaya.tn/ar/ "Arabic")
+[ FR ](https://jibaya.tn/ "FR")
 ## Communiqué pour les entreprises agissant dans le secteur de la santé
 [ En savoir plus ](https://jibaya.tn/blog/communique/)
 ## Avis concernant le dépôt de la déclaration de l'employeur via la plateforme "TEJ"
@@ -84,7 +82,6 @@ Menu
 [ En savoir plus ](https://jibaya.tn/blog/fiscalite-10-10-saison-8-un-nouveau-depart-pour-renforcer-la-culture-fiscale-chez-les-jeunes/)
 ## Communiqué pour les entreprises agissant dans le secteur de la santé
 [ En savoir plus ](https://jibaya.tn/blog/communique/)
-## Nouveau !
 ## Avis concernant le dépôt de la déclaration de l'employeur via la plateforme "TEJ"
 [ En savoir plus ](https://jibaya.tn/blog/avis-la-dgi-informe/)
 ## Bienvenue dans le portail de l'administration fiscale tunisienne

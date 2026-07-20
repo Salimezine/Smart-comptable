@@ -210,7 +210,7 @@ Airport improvement
 Landing
 Solidarity
 Capital gains
-Expatriation
+Exit
 Consumption
 Departure
 Hotel
@@ -244,6 +244,7 @@ Hidden
 Hypothecated
 Income
 Inheritance (estate)
+Internet tax
 Land value
 Luxury
 Mining
@@ -4648,11 +4649,11 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1360949363
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1364244206
 "
 Categories
 :
-Value added taxes
+Value-added taxes
 Tax terms
 Hidden categories:
 Pages using sidebar with the child parameter
@@ -4696,4 +4697,1610 @@ Search
 Search
 Value-added tax
 81 languages
+Add topic
+
+---
+
+Tax - Wikipedia
+Jump to content
+Search
+Search
+Tax
+144 languages
+Acèh
+Afrikaans
+Alemannisch
+አማርኛ
+Aragonés
+العربية
+ܐܪܡܝܐ
+مصرى
+অসমীয়া
+Asturianu
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Basa Bali
+Žemaitėška
+Беларуская (тарашкевіца)
+Беларуская
+Betawi
+Български
+বাংলা
+Brezhoneg
+Bosanski
+Batak Mandailing
+Буряад
+Català
+Нохчийн
+کوردی
+Qırımtatarca
+Čeština
+Чӑвашла
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Fɔ̀ngbè
+Français
+Frysk
+Gaeilge
+Kriyòl gwiyannen
+Galego
+Gungbe
+Hausa
+עברית
+हिन्दी
+Fiji Hindi
+Hrvatski
+Kreyòl ayisyen
+Magyar
+Հայերեն
+Interlingua
+Jaku Iban
+Bahasa Indonesia
+Ilokano
+Ido
+Íslenska
+Italiano
+日本語
+Patois
+Jawa
+ქართული
+Qaraqalpaqsha
+Қазақша
+ಕನ್ನಡ
+Yerwa Kanuri
+한국어
+Къарачай-малкъар
+Kurdî
+Kernowek
+Кыргызча
+Latina
+Lëtzebuergesch
+Limburgs
+Ladin
+ລາວ
+Lietuvių
+Latviešu
+Madhurâ
+Malagasy
+Minangkabau
+Македонски
+മലയാളം
+Монгол
+मराठी
+Bahasa Melayu
+မြန်မာဘာသာ
+Plattdüütsch
+नेपाली
+नेपाल भाषा
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+Ирон
+ਪੰਜਾਬੀ
+Polski
+Piemontèis
+پنجابی
+پښتو
+Português
+Runa Simi
+Română
+Русский
+Русиньскый
+Саха тыла
+ᱥᱟᱱᱛᱟᱲᱤ
+سنڌي
+Srpskohrvatski / српскохрватски
+සිංහල
+Simple English
+Slovenčina
+Slovenščina
+ChiShona
+Soomaaliga
+Shqip
+Српски / srpski
+Sunda
+Svenska
+Kiswahili
+தமிழ்
+తెలుగు
+Тоҷикӣ
+ไทย
+Tagalog
+Türkçe
+Татарча / tatarça
+Тыва дыл
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+Tiếng Việt
+Winaray
+吴语
+ייִדיש
+文言
+閩南語 / Bân-lâm-gí
+粵語
+中文
+IsiZulu
+Edit links
+From Wikipedia, the free encyclopedia
+Compulsory contribution to state revenue
+For other uses, see
+Tax (disambiguation)
+.
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+A
+tax
+is a mandatory financial charge or levy imposed on an individual or
+legal entity
+by a
+governmental
+organization to support
+government spending
+and
+public expenditures
+collectively or to
+regulate
+economic activity through measures designed to mitigate negative
+externalities
+.
+[
+1
+]
+Tax compliance
+refers to policy actions and individual behavior aimed at ensuring that taxpayers are paying the right amount of tax at the right time and securing the correct tax allowances and tax relief.
+[
+2
+]
+In economic terms (
+circular flow of income
+), taxation transfers wealth from households or businesses to the government. This affects
+economic growth
+and
+welfare
+, which can be increased (known as
+fiscal multiplier
+) or decreased (known as
+excess burden of taxation
+).
+Certain countries (usually small in size or population, which results in a smaller infrastructure and social expenditure) function as
+tax havens
+by imposing minimal taxes on the personal income of individuals and corporate income. These tax havens attract capital from abroad (particularly from larger economies) while resulting in loss of tax revenues within other non-haven countries (through
+base erosion and profit shifting
+).
+History
+[
+edit
+]
+Egyptian
+peasants
+seized for
+non-payment of taxes
+. (
+Pyramid Age
+)
+The first known system of taxation was in
+Ancient Egypt
+around 3000–2800 BC, in the
+First Dynasty
+of the
+Old Kingdom of Egypt
+.
+[
+3
+]
+The earliest and most widespread forms of taxation were the
+corvée
+and the
+tithe
+: The corvée was
+forced labor
+provided to the state by peasants too poor to pay other forms of taxation (
+labor
+in
+ancient Egyptian
+is a synonym for taxes).
+[
+4
+]
+Records from the time document that the Pharaoh would conduct a biennial tour of the kingdom, collecting tithes from the people.
+[
+5
+]
+The
+Rosetta Stone
+, whose decipherment led to the contemporary understanding of hieroglyphics, was itself a decree issued by
+Ptolemy V
+that contained tax concessions.
+[
+6
+]
+[
+better
+source
+needed
+]
+[
+7
+]
+[
+non-primary source needed
+]
+Early examples of taxation are also seen in the
+Bible
+,
+[
+8
+]
+[
+non-primary source needed
+]
+ancient
+Vedic texts
+,
+[
+9
+]
+[
+better
+source
+needed
+]
+[
+page
+needed
+]
+the
+Bronze-age
+Hittite Empire
+,
+[
+10
+]
+and the
+Persian Empire
+.
+[
+11
+]
+[
+12
+]
+Roman and civil law
+[
+edit
+]
+In the
+Roman Republic
+,
+taxes were collected
+from individuals at the rate of between 1% and 3% of the assessed value of their total property. However, since it was extremely difficult to facilitate the collection of the tax, the government auctioned it every year. The winning tax farmers (called
+publicani
+) paid the tax revenue to the government in advance and then kept the taxes collected from individuals. The
+publicani
+paid the tax revenue in coins, but collected the taxes using other
+exchange media
+, thus relieving the government of the work to carry out the currency conversion themselves. The revenue payment essentially worked as a loan to the government, which paid interest on it. Although this scheme was a profitable enterprise for the government as well as the
+publicani
+, it was later replaced by a direct tax system by the emperor
+Augustus
+; after which, each province was obliged to pay 1% tax on wealth and a flat rate on each adult. This brought about regular census and shifted the tax system more towards taxing an individual's income rather than wealth.
+[
+13
+]
+Islamic law
+[
+edit
+]
+Islamic rulers imposed
+Zakat
+(a tax on Muslims) and
+Jizya
+(a
+poll tax
+on conquered non-Muslims).
+[
+citation needed
+]
+Modern history
+[
+edit
+]
+Numerous records of government tax collection in Europe since at least the 17th century are still available today. But taxation levels are hard to compare to the size and flow of the economy since
+production
+numbers are not as readily available.
+[
+14
+]
+Taxation as a percentage of production of final goods may have reached 15–20% during the 17th century in places such as
+France
+, the
+Netherlands
+, and
+Scandinavia
+.
+[
+citation needed
+]
+During the war-filled years of the eighteenth and early nineteenth century, tax rates in Europe increased dramatically as war became more expensive and governments became more centralized and adept at gathering taxes. This increase was greatest in England.
+[
+15
+]
+Effective tax rates
+were higher in Britain than France in the years before the
+French Revolution
+, but they were mostly placed on international trade. In France, taxes were lower but the burden was mainly on landowners, individuals, and internal trade and thus created far more resentment.
+[
+16
+]
+Obsolete forms
+[
+edit
+]
+Obsolete forms of taxation include:
+[
+citation needed
+]
+In
+
+---
+
+Fiscal policy - Wikipedia
+Jump to content
+Search
+Search
+Fiscal policy
+63 languages
+العربية
+Azərbaycanca
+Беларуская
+Български
+বাংলা
+Bosanski
+Català
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Føroyskt
+Français
+עברית
+हिन्दी
+Magyar
+Հայերեն
+Bahasa Indonesia
+Italiano
+日本語
+Қазақша
+ភាសាខ្មែរ
+한국어
+Кыргызча
+ລາວ
+Lietuvių
+Latviešu
+Македонски
+नेपाली
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+Polski
+پښتو
+Português
+Română
+Русский
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Svenska
+தமிழ்
+ไทย
+Türkçe
+Татарча / tatarça
+Українська
+Oʻzbekcha / ўзбекча
+Vèneto
+Tiếng Việt
+Winaray
+吴语
+粵語
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+Use of government revenue collection and expenditure to influence a country's economy
+This article is part of
+a series
+on
+Public finance
+Policies
+Agricultural
+Economic
+Energy
+Industrial
+Investment
+Social
+Trade
+Fiscal
+Monetary
+Policy mix
+Fiscal policy
+Budget
+policy
+Debt
+internal
+Deficit
+/
+surplus
+Finance ministry
+Fiscal gap
+Fiscal transparency
+Fiscal union
+Revenue
+Spending
+deficit
+Redistribution
+Tax
+Monetary policy
+Bank reserves
+requirements
+Discount window
+Gold reserves
+Interest rate
+Monetary authority
+central bank
+currency board
+Monetary base
+Monetary (currency) union
+Money supply
+Trade policy
+Balance of trade
+Free trade
+Gains from trade
+Non-tariff barrier
+Protectionism
+Tariff
+Trade bloc
+Trade creation
+Trade diversion
+Trade
+/
+commerce ministry
+Revenue
+Spending
+Non-tax revenue
+Tax revenue
+Discretionary spending
+Mandatory spending
+Optimum
+Balanced budget
+amendment
+Economic growth
+Fiscal illusion
+Price stability
+Wagner's law
+Reform
+Fiscal adjustment
+Monetary reform
+Economics
+portal
+Politics
+portal
+v
+t
+e
+Part of
+a series
+on
+Macroeconomics
+Basic concepts
+Output and measurement
+Growth
+Business cycle
+Financial crisis
+Recession
+National accounts
+SNA
+GDP
+GNI
+NNI
+Output gap
+Unemployment
+Money and prices
+Exchange rate
+Inflation
+Cost-push
+Deflation
+Demand-pull
+Disinflation
+Price level
+Shrinkflation
+Stagflation
+Interest rate
+Liquidity trap
+Money
+Creation
+Demand
+Liquidity preference
+Endogenous
+Supply
+Dynamics and theory
+Aggregate demand
+Effective demand
+Aggregate supply
+Balance of payments
+Expectations
+Adaptive
+Rational
+Government debt
+Investment
+Saving
+Microfoundations
+Nominal rigidity
+Shocks
+Demand
+Supply
+Policies
+Fiscal
+Austerity
+Government spending
+Welfare spending
+Stimulus
+Tax policy
+Monetary
+Central bank
+Inflation targeting
+Open market operation
+Quantitative easing
+Commercial
+Capital control
+Free trade
+Protectionism
+Tariff
+Models
+Accelerator
+AD–AS
+Arrow–Debreu
+Endogenous growth
+General equilibrium
+DSGE
+Harrod–Domar
+IS–LM
+Keynesian cross
+Matching
+Multiplier
+Mundell–Fleming
+NAIRU
+Overlapping generations
+Overshooting
+Phillips curve
+Quantity theory of money
+Ramsey–Cass–Koopmans
+Solow–Swan
+Taylor rule
+Schools
+Mainstream
+Keynesian
+New
+Monetarism
+New classical
+RBC
+New neoclassical synthesis
+Saltwater and freshwater
+Stockholm
+Heterodox
+Austrian
+Chartalism
+MMT
+Disequilibrium
+Ecological
+Market monetarism
+Marxian
+Post-Keynesian
+Circuitism
+Structuralist
+Supply-side
+People
+Barro
+Bernanke
+Blanchard
+Diamond
+Domar
+Fisher
+Frisch
+Friedman
+Hansen
+Harrod
+Hayek
+Hicks
+Kaldor
+Kalecki
+Keynes
+Klein
+Krugman
+Kuznets
+Kydland
+Lerner
+Lucas
+Malthus
+Mankiw
+Marx
+Minsky
+Mitchell
+Modigliani
+Mundell
+Myrdal
+Nordhaus
+Okun
+Phelps
+Prescott
+Quesnay
+Ramsey
+Ricardo
+Robinson
+Samuelson
+Sargent
+Smith
+Solow
+Stiglitz
+Stone
+Taylor
+Tinbergen
+Tobin
+Walras
+Wicksell
+Related fields
+Development economics
+Econometrics
+Economic statistics
+Evolutionary economics
+International economics
+Monetary economics
+Public finance
+See also
+Economics
+Applied
+Macroeconomic model
+Mathematical economics
+Microeconomics
+Political economy
+Publications in macroeconomics
+Economics
+portal
+Business
+portal
+v
+t
+e
+In
+economics
+and
+political science
+,
+fiscal policy
+is the use of
+government revenue
+collection (
+taxes
+or
+tax cuts
+) and
+expenditure
+to influence a country's economy. The use of government revenue expenditures to influence
+macroeconomic
+variables developed in reaction to the
+Great Depression
+of the 1930s, when the previous
+laissez-faire
+approach to economic management became unworkable. Fiscal policy is based on the theories of the British economist
+John Maynard Keynes
+, whose
+Keynesian economics
+theorised that government changes in the levels of taxation and government spending influence
+aggregate demand
+and the level of economic activity. Fiscal and
+monetary policy
+are the key strategies used by a country's government and
+central bank
+to advance its economic objectives. The combination of these policies enables these authorities to target
+inflation
+and to increase
+employment
+. In modern economies, inflation is conventionally considered "healthy" in the range of 2%–3%. Additionally, it is designed to try to keep
+GDP
+growth at 2%–3% and the unemployment rate near the
+natural unemployment rate
+of 4%–5%.
+[
+1
+]
+This implies that fiscal policy is used to stabilise the economy over the course of the
+business cycle
+.
+[
+2
+]
+[
+3
+]
+Changes in the level and composition of taxation and government spending can affect macroeconomic variables, including:
+aggregate demand
+and the level of economic activity
+saving
+and
+investment
+income distribution
+allocation of resources
+.
+Fiscal policy can be distinguished from
+monetary policy
+, in that fiscal policy deals with taxation and government spending and is often administered by a government department
+[
+4
+]
+;
+[
+5
+]
+[
+6
+]
+while monetary policy deals with the
+money supply
+,
+interest rates
+and is often administered by a country's
+central bank
+. Both fiscal and monetary policies influence a country's economic performance
+[
+7
+]
+.
+[
+5
+]
+[
+8
+]
+Monetary/fiscal debate
+[
+edit
+]
+Main article:
+Monetary/fiscal debate
+Since the 1970s, it became clear that monetary policy performance has some benefits over fiscal policy due to the fact that it reduces political influence, as it is set by the central bank (to have an expanding economy before the general election, politicians might cut the interest rates). Additionally, fiscal policy can potentially have more supply-side effects on the economy: to reduce inflation, the measures of increasing taxes and lowering spending would not be preferred, so the government might be reluctant to use these. Monetary policy is generally quicker to implement as interest rates can be set every month, while the decision to increase government spending might take time to figure out which area the money should be spent on.
+[
+9
+]
+The recession of the 2000s decade shows that monetary policy also has certain limitations. A
+liquidity trap
+occurs when interest rate cuts are insufficient as a demand booster as banks do not want to lend and the consumers are reluctant to increase spending due to negative expectations for the economy. Government spending is responsible for creating the demand in the economy and can provide a kick-start to get the economy out of the recession. When a deep recession takes place, it is not sufficient to rely just on monetary policy to restore the
+economic equilibrium.
+[
+9
+]
+Each side of these two policies has its differences, therefore, combining aspects of both policies to deal with economic problems has become a solution that is now used by the US. These policies have limited effects; however, fiscal policy seems to have a greater effect over the long-run period, while monetary policy tends to have a short-run success.
+[
+10
+]
+In 2000, a survey of 298 members of the
+American Economic Association
+(AEA) found that while 84 percent generally agreed with the statement "Fiscal policy has a
+significant stimulative impact
+on a less than
+fully employed
+economy", 71 percent also generally agreed with the statement "
+Management
+of the
+business cycle
+should be left to the
+Federal Reserve
+;
+activist fiscal policy
+should be avoided."
+[
+11
+]
+In 2011, a follow-up survey of 568 AEA members found that the previous consensus about the latter proposition had dissolved and was by then roughly evenly disputed.
+[
+12
+]
+Stances
+[
+edit
+]
+See also:
+Procyclical and countercyclical variables §
+Economic policy making
+Depending on the state of the economy, fiscal policy may reach for different objectives: its focus can be to restrict economic growth by mediating inflation or, in turn, increase economic growth by decreasing
+taxes
+, encouraging spending on different projects that act as stimuli to
+economic growth
+and enabling borrowing and spending.
+The three stances of fiscal policy are the following:
+[
+13
+]
+Neutral fiscal policy
+is usually undertaken when an economy is in neither a
+recession
+nor an
+expansion
+. The amount of government
+deficit spending
+(the excess not financed by tax
+revenue
+) is roughly the same as it has been on average over time, so no changes to it are occurring that would have an effect on the level of
+economic activity
+.
+Expansionary fiscal policy
+is used by the government when trying to balance the contraction phase in the
+business cycle
+. It involves government spending exceeding tax revenue by more than it has tended to, and is usually undertaken during recessions. Examples of expansionary fiscal policy measures include increased government spending on
+public works
+(e.g., building schools) and providing the residents of the economy with tax cuts to increase their purchasing power (in order to fix a decrease in the demand).
+Contractionary fiscal policy
+, on the other hand, is a measure to increase tax rates and decrease government spending. It occurs when government deficit spending is lower than usual. This has the potential to slow economic growth if inflation, which was caused by a significant increase in aggregate demand and the supply of money, is excessive. By reducing the economy's amount of aggregate income, the available amount for consumers to spend is also reduced. So, contractionary fiscal policy measures are employed when unsustainable growth takes place, leading to inflation, high prices of investment,
+recession
+and
+unemployment
+above the "healthy" 
+
+---
+
+Property tax equalization - Wikipedia
+Jump to content
+Search
+Search
+Property tax equalization
+2 languages
+Azərbaycanca
+Português
+Edit links
+From Wikipedia, the free encyclopedia
+Process used in calculation of property taxes
+This article is about equalization of assessed values for property taxes. For equalization of workers' taxes between countries, see
+Tax equalization
+.
+This article
+needs attention from an expert in taxation
+. The specific problem is:
+It will be difficult to explain this subject, its history, and methods in lay terms without some skill.
+WikiProject Taxation
+may be able to help recruit an expert.
+(
+December 2019
+)
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+Equalization is a step in
+property taxation
+to bring a uniformity to
+tax assessment
+levels across different geographical areas or classes of properties.  Equalization is usually in the form of a uniform percentage of increase or decrease to each area or class of property.
+[
+1
+]
+Attempts at explicit equalization in tax assessments date back at least as early as 1799.
+[
+2
+]
+See also
+[
+edit
+]
+Fair market value
+References
+[
+edit
+]
+↑
+"Publication 136: Property Assessment and Equalization"
+(PDF)
+. Springfield, Illinois:
+Illinois Department of Revenue
+. May 2019. p.
+4
+. Retrieved
+2019-12-29
+.
+↑
+"Equalization"
+. Trenton, New Jersey: New Jersey State League of Municipalities
+. Retrieved
+2019-12-29
+.
+This
+tax
+-related article is a
+stub
+. You can help Wikipedia by
+adding missing information
+.
+v
+t
+e
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Property_tax_equalization&oldid=1249296646
+"
+Categories
+:
+Evaluation methods
+Property taxes
+Tax law
+Tax stubs
+Hidden categories:
+Articles with short description
+Short description is different from Wikidata
+Articles needing expert attention from December 2019
+All articles needing expert attention
+Taxation articles needing expert attention
+Pages using sidebar with the child parameter
+All stub articles
+Search
+Search
+Property tax equalization
+2 languages
 Add topic

@@ -495,8 +495,7 @@ Lamine Bey
 e
 et dernier
 bey
-régnant de la dynastie des
-Husseinites
+régnant de la dynastie des Husseinites
 [
 12
 ]
@@ -1541,7 +1540,9 @@ de trois ans
 [
 64
 ]
-. À l'issue de la troisième guerre punique, Rome s'installe sur les décombres de la ville
+. À l'issue de la
+troisième guerre punique
+, Rome s'installe sur les décombres de la ville
 [
 62
 ]
@@ -2044,7 +2045,9 @@ et lui donne le droit de transmettre ses fonctions par voie héréditaire
 ]
 . Al-Aghlab établit la dynastie des
 Aghlabides
-, qui règne durant un siècle sur le Maghreb central et oriental. Le territoire bénéficie d'une indépendance formelle tout en reconnaissant la souveraineté abbasside
+, qui règne durant un siècle sur le
+Maghreb central
+et oriental. Le territoire bénéficie d'une indépendance formelle tout en reconnaissant la souveraineté abbasside
 [
 93
 ]
@@ -2087,7 +2090,9 @@ Afrique subsaharienne
 Abu Yazid
 , de la grande tribu des
 Ifrenides
-, organise sans succès une grande révolte berbère pour chasser les Fatimides. Le troisième calife,
+, organise sans succès une
+grande révolte berbère
+pour chasser les Fatimides. Le troisième calife,
 Ismâ`îl al-Mansûr
 , transfère alors la capitale à Kairouan et s'empare de la Sicile
 [
@@ -2838,9 +2843,7 @@ Afrique du Nord
 [
 138
 ]
-. Cependant
-Bourguiba
-ne désire pas cautionner les
+. Cependant Bourguiba ne désire pas cautionner les
 régimes fascistes
 et lance le
 8 août 1942
@@ -4521,9 +4524,7 @@ Ahmed Ben Salah
 ]
 . L'expérience coopérative dure jusqu'en
 septembre 1969
-lorsque
-Bourguiba
-suspend Ben Salah de ses fonctions à la suite de la parution d'un rapport confidentiel de la
+lorsque Bourguiba suspend Ben Salah de ses fonctions à la suite de la parution d'un rapport confidentiel de la
 Banque mondiale
 sur le déficit des entreprises publiques
 [
@@ -5239,7 +5240,7 @@ berbérophones
 285
 ]
 .
-La quasi-totalité de la population tunisienne est de confession
+La quasi-totalité de la population tunisienne est de
 confession musulmane
 , majoritairement
 sunnite
@@ -5542,9 +5543,7 @@ minorités
 religieuses connaissent néanmoins deux discriminations
 : le
 président de la République tunisienne
-ne peut être d'une autre confession que celle musulmane et, s'il n'existe aucune interdiction légale du
-prosélytisme
-, la loi criminalise les
+ne peut être d'une autre confession que celle musulmane et, s'il n'existe aucune interdiction légale du prosélytisme, la loi criminalise les
 conversions forcées
 [
 294
@@ -6697,15 +6696,11 @@ devient en 1988 le premier club tunisien à avoir remporté un trophée continen
 coupe d'Afrique des vainqueurs de coupe
 . Le
 Club africain
-est le premier club tunisien à avoir remporté la
-coupe d'Afrique des clubs champions
-en
+est le premier club tunisien à avoir remporté la coupe d'Afrique des clubs champions en
 1992
 . L'
 Étoile sportive du Sahel
-est le premier club tunisien à remporter la
-Ligue des champions de la CAF
-dans sa nouvelle édition le
+est le premier club tunisien à remporter la Ligue des champions de la CAF dans sa nouvelle édition le
 9 novembre 2007
 . Le
 Club sportif sfaxien
@@ -6720,15 +6715,7 @@ et donnant lieu à un show (
 dakhla
 en
 tunisien
-) de la part des supporters des deux équipes. Il existe d'autres classiques entre les quatre grandes équipes, l'
-Espérance sportive de Tunis
-, l'
-Étoile sportive du Sahel
-, le
-Club sportif sfaxien
-et le
-Club africain
-.
+) de la part des supporters des deux équipes. Il existe d'autres classiques entre les quatre grandes équipes, l'Espérance sportive de Tunis, l'Étoile sportive du Sahel, le Club sportif sfaxien et le Club africain.
 L'année sportive tunisienne est rythmée par les compétitions que sont les championnats (
 football
 ,
@@ -13559,5 +13546,5 @@ La version du 6 décembre 2006 de cet article a été reconnue comme «
 article de qualité
 », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
 Ce document provient de «
-https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=237552654
+https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=237807007
 ».
