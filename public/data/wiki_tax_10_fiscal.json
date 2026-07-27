@@ -1,7 +1,13 @@
 {
   "source": "wiki_tax_10",
-  "crawled_at": "2026-07-20",
-  "taux": {},
+  "crawled_at": "2026-07-27",
+  "taux": {
+    "rs": {
+      "taux": "98%, 1%, 99%",
+      "label": "Retenues à la source",
+      "type": "rs"
+    }
+  },
   "echeances": [],
   "lois": [],
   "informations": []

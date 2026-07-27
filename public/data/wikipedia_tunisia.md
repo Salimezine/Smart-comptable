@@ -410,7 +410,7 @@ Banu Hilal
 and
 Banu Sulaym
 tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely
-Arabized
+Arabised
 .
 [
 27
@@ -3161,6 +3161,17 @@ pronounced
 [
 tuː.nɪs
 ]
+ⓘ
+;
+French
+:
+Tunisie
+,
+pronounced
+[
+ty.ni.zi
+]
+ⓘ
 ↑
 Arabic
 :
@@ -3171,6 +3182,12 @@ al-Jumhūrīya at-Tūnisīya
 French
 :
 République tunisienne
+,
+pronounced
+[
+ʁe.py.blik
+ty.ni.zjɛn
+]
 . The native Arabic official name translates more closely to "Tunisian Republic", as does the commonly used French translation, but the English translation "Republic of Tunisia" is used in English even by the Tunisian government for official purposes (e.g., the designation used by the Tunisian embassy in Washington, D.C.)
 ↑
 Lebanon
@@ -3415,7 +3432,7 @@ Freedom House
 ↑
 (in French)
 "Pourquoi l'Italie de Matteo Renzi se tourne vers la Tunisie avant l'Europe"
-. JOL Journalism Online Press (28 February 2014).
+(Why Matteo Renzi's Italy is turning to Tunisia before Europe). JOL Journalism Online Press (28 February 2014).
 Archived
 10 August 2018 at the
 Wayback Machine
@@ -6731,5 +6748,5 @@ Yale LUX
 /
 34; 9
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1364551029
+https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1365231591
 "

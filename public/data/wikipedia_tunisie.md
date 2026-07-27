@@ -7026,7 +7026,7 @@ majles.marsad.tn
 (version du
 23 mars 2019
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -7426,7 +7426,7 @@ agriportail.tn
 (version du
 4 juin 2013
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -7482,7 +7482,7 @@ Agence de protection et d'aménagement du littoral
 p.
 2
 (archivé sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -7648,7 +7648,7 @@ Institut national de la statistique
 (version du
 24 septembre 2015
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -7784,7 +7784,7 @@ Institut national du patrimoine
 (version du
 14 juin 2020
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -7888,7 +7888,7 @@ Encarta
 (version du
 16 février 2009
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -8820,7 +8820,7 @@ histoiredelafrique.fr
 (version du
 5 mai 2016
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -9268,7 +9268,7 @@ mars-avril 2006
 (version du
 13 février 2009
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -9666,7 +9666,7 @@ Encarta
 (version du
 28 mars 2008
 sur
-Internet Archive
+archive.org
 )
 :
 «
@@ -10686,7 +10686,7 @@ inss.org.il
 (version du
 20 novembre 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -10718,7 +10718,7 @@ majles.marsad.tn
 (version du
 23 mars 2019
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -10744,7 +10744,7 @@ majles.marsad.tn
 (version du
 23 mars 2019
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -10786,7 +10786,7 @@ investintunisia.tn
 (version du
 15 juin 2011
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -10993,7 +10993,7 @@ privatisation.gov.tn
 (version du
 8 janvier 2007
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -11023,7 +11023,7 @@ tn.undp.org
 (version du
 6 juin 2007
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11129,7 +11129,7 @@ onagri.nat.tn
 (version du
 10 juillet 2007
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11180,7 +11180,7 @@ investir-en-tunisie.net
 (version du
 4 janvier 2009
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -11196,7 +11196,7 @@ laposte-export-solutions.com
 er
 juin 2007
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11247,7 +11247,7 @@ Société nationale des chemins de fer tunisiens
 (version du
 31 janvier 2018
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11273,7 +11273,7 @@ medibtikar.eu
 (version du
 19 janvier 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11564,7 +11564,7 @@ HuffPost Maghreb
 (version du
 13 septembre 2014
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11619,7 +11619,7 @@ Encarta
 (version du
 9 février 2009
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11643,7 +11643,7 @@ magharebia.com
 (version du
 26 novembre 2010
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11689,7 +11689,7 @@ tlfq.ulaval.ca
 (version du
 7 juin 2011
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -11863,7 +11863,7 @@ planipolis.iiep.unesco.org
 (version du
 28 avril 2014
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -11880,7 +11880,7 @@ ac-nancy-metz.fr
 (version du
 6 mars 2012
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12038,7 +12038,7 @@ saisonstunisiennes.com
 (version du
 22 juin 2007
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12063,7 +12063,7 @@ saisonstunisiennes.com
 (version du
 19 mai 2008
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -12076,7 +12076,7 @@ saisonstunisiennes.com
 (version du
 15 juillet 2011
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -12091,7 +12091,7 @@ guides.tangka.com
 (version du
 25 janvier 2011
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12103,7 +12103,7 @@ culture.tn
 (version du
 23 août 2009
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12115,7 +12115,7 @@ Encarta
 (version du
 8 avril 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12143,7 +12143,7 @@ artisanat.nat.tn
 (version du
 30 mars 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12202,7 +12202,7 @@ artisanat.nat.tn
 (version du
 16 février 2008
 sur
-Internet Archive
+archive.org
 )
 .
 1
@@ -12215,7 +12215,7 @@ artisanat.nat.tn
 (version du
 30 mars 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12534,7 +12534,7 @@ sport.tn
 (version du
 27 juin 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12597,7 +12597,7 @@ sporting-heroes.net
 (version du
 26 janvier 2008
 sur
-Internet Archive
+archive.org
 )
 .
 ↑
@@ -12769,6 +12769,10 @@ Ressources relatives à la géographie
 :
 Marine Gazetteer
 Mindat.org
+Ressources relatives aux beaux-arts
+:
+Biblissima
+Grove Art Online
 Ressource relative au spectacle
 :
 Archives suisses des arts de la scène
@@ -12781,9 +12785,6 @@ Medical Subject Headings
 Ressource relative à la bande dessinée
 :
 Comic Vine
-Ressource relative aux beaux-arts
-:
-Grove Art Online
 Ressource relative à l'audiovisuel
 :
 France 24

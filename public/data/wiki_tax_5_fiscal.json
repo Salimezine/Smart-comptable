@@ -1,25 +1,14 @@
 {
   "source": "wiki_tax_5",
-  "crawled_at": "2026-07-20",
+  "crawled_at": "2026-07-27",
   "taux": {
     "rs": {
-      "taux": "20%, 18.5%, 0%, 52.07%, 6.9%",
+      "taux": "98%, 1%, 99%",
       "label": "Retenues à la source",
       "type": "rs"
-    },
-    "cnss": {
-      "taux": "13.57% salarial + 16.57% patronal",
-      "label": "Cotisations CNSS",
-      "type": "cnss"
     }
   },
   "echeances": [],
   "lois": [],
-  "informations": [
-    "falls differently on different groups in each country and sub-national unit. The list focuses on the main types of taxes:",
-    "Personal income tax includes all applicable taxes, including all unvested social security contributions. Vested social security contributions are not included, as they contribute to personal wealth and will be repaid upon retirement or emigration, either as a lump sum or as a pension. Only social security contributions without a ceiling can be included in the highest marginal tax rate, as only those are effectively a tax for general distribution among the population.",
-    "(for minimum wage full-time work in 2024; excluding social security taxes paid by the employer)",
-    "(for employees earning over €25,200 per year in 2024: includes 20% flat income tax + 2% mandatory pension contribution + 1.6% unemployment insurance paid by employee); excluding social security taxes paid by the employer and taxes on dividends",
-    "(taxed at Zakat rate 2.5% for the Saudi percentage of ownership, 15% for all other ownership)"
-  ]
+  "informations": []
 }

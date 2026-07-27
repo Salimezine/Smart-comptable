@@ -2691,3 +2691,1348 @@ Search
 Prix Bordin
 3 languages
 Add topic
+
+---
+
+Institut Français - Wikipedia
+Jump to content
+Search
+Search
+Institut Français
+19 languages
+Afrikaans
+Azərbaycanca
+Čeština
+Cymraeg
+Deutsch
+Esperanto
+Français
+עברית
+Հայերեն
+Արեւմտահայերէն
+Bahasa Indonesia
+Italiano
+ქართული
+한국어
+Português
+Русский
+Српски / srpski
+Türkçe
+Українська
+Edit links
+From Wikipedia, the free encyclopedia
+French cultural international public agency
+For other uses, see
+Institut Français (disambiguation)
+.
+Not to be confused with
+Institut de France
+.
+Institut français
+Founded
+1907
+;
+119
+years ago
+(
+1907
+)
+Type
+Cultural institution
+,
+EPIC
+Region served
+Worldwide
+Product
+French
+cultural
+and
+language
+education
+Key people
+Eva Nguyễn Bình
+(2021-present)
+Website
+http://www.institutfrancais.com
+French filmmaker
+Stéphane Brizé
+(second from the right) in Buenos Aires in 2019, at an event supported by Institut français d'Argentine
+The
+Institut Français
+(
+French pronunciation:
+[
+ɛ̃stity
+fʁɑ̃sɛ
+]
+; French capitalization,
+Institut français
+; "French institute") is a French
+public industrial and commercial organization
+(EPIC). Started in 1907 by the
+Ministry of Foreign Affairs
+for promoting French,
+francophone
+as well as local cultures around the world, in 2011 it replaced the
+CulturesFrance
+project as the umbrella for all French cultural outreach projects,
+[
+1
+]
+with an expanded scope of work and increased resources (Decree No. 2010-1695 of 30 December 2010,
+[
+2
+]
+in response to the law relating to the external scope of the State adopted on 12 July 2010
+[
+3
+]
+).
+Chaired by interim by its general director Erol Ok, who is assisted by Clément Bodeur-Cremieux, Secretary General,
+[
+4
+]
+the French Institute works closely with the French cultural network abroad consisting of more than 150 branches and nearly 1000 branches of the
+Alliance française
+around the world. The process of incorporating the cultural networks of a dozen diplomatic missions has been conducted from January 2011 to 2014 as an experiment: Cambodia, Chile, Denmark, United Arab Emirates (UAE), Georgia, Ghana, India, Kuwait, UK, Senegal, Serbia, Singapore and Syria (suspended due to the political situation in Syria).
+The government has entrusted the Institut Français with promoting
+French culture
+abroad through artistic exchanges: performing arts, visual arts, architecture, the worldwide diffusion of French books, film, technology and ideas. Accordingly, the institute has developed a new scientific program for the dissemination of culture.
+The Institut Français welcomes foreign cultural missions through the organization of "seasons" or festivals and cooperation with the countries of the south, including ensuring the management of the funds of "Fonds Sud Cinema" in partnership with the
+National Center of Cinematography and the moving image
+.
+It also provides training for newly formed missions and professionalization of staff of the international French cultural network.
+History of French cultural institutes and centers
+[
+edit
+]
+The first French institute, the
+Institut français de Florence
+, was established in 1907 in
+Florence
+by Julien Luchaire, with the help of the Faculty of Arts of Grenoble, followed by others would play an important role in the creation of deep cultural ties between France and other country.
+Historically the
+French
+institutions established in the first half of the 20th century were committed to academic institutions, while the French cultural centres, usually created later in the second half of the 20th century or the beginning of the 21st century, were created by the French government. This difference does not exist anymore and cultural centers are now adopting the name of Institut Français.
+Some institutions have a bi-national status, governed by a bilateral agreement between the governments, particularly in Guinea (Conakry),
+Guinea Bissau
+( Bissau),
+Mozambique
+( Maputo),
+Namibia
+( Windhoek) and
+Niger
+(
+Jean Rouch
+Franco-Nigerien Cultural Centre of Niamey).
+The 143 French institutions and French cultural centers are institutions located outside France under the
+Ministry of Foreign Affairs
+and charged with promoting intellectual and cultural audiovisual cooperation between professionals, to present the French,
+Francophone
+as well as local traditional and contemporary art for all audiences (to begin with, with the young audience), to promote French higher education to foreign students and teachers and offer a complete range of courses and international
+examinations
+for the French language.
+They usually have, in the embassies of France which they depend on, a financially (but not legally) autonomous status. This also gives its director the status of authorising and being accountable for the budget devoted to the establishment (which is a grant from the Ministry of Foreign Affairs and from its own resources) and a reserve fund not limited to the year, which enables the creation of multi-year programs.
+They are funded fully or partially by their own revenues raised by teaching French as official language or as a foreign language (depending on the countries) and sponsorship (for those with a genuine ambition in terms of cultural engineering).
+Institut Français - Estonia
+Moreover, the French research institutes abroad (IFRE) depend jointly on the
+Ministry of Foreign Affairs
+and the
+CNRS
+.
+Today, French institutions and French cultural centers (RTCs) are essential levers for the development of cooperation between network professionals culture and education as well as for the promotion of cultural and linguistic diversity.
+Institut français - Madrid
+Institut français - Barcelona
+Institut français du Japon – Kansai
+Institut français - Stuttgart
+Institut français de Hongrie - Budapest
+Institut Français de Serbie - Belgrade
+Some international French institutes
+[
+edit
+]
+Cultural institutes
+[
+edit
+]
+In Europe
+[
+edit
+]
+Institut français in
+Bucharest
+,
+Romania
+Institut français d'Allemagne
+Institut français d’Ankara
+Institut français d'Athènes
+Institut français de Barcelone
+Institut français de Belgrade
+Institut français de Bilbao
+Institut français de Bratislava
+Institut français de Bucarest
+Institut français de Budapest
+Institut français du Danemark
+Institut français d'Écosse
+(
+Edinburgh
+)
+Institut français de Finlande
+Institut français de Florence
+Institut français d’Istanbul
+Institut français d'Italie
+Institut français de Lettonie
+Institut français du Royaume-Uni
+(
+London
+)
+Institut français de Madrid
+Institut français de Naples
+Institut français de Milan
+Institut français de Norvège
+Institut français de Novi Sad
+Institut français de Nis
+Institut français de Palerme
+Institut français de Pologne
+:
+Kraków
+and
+Warsaw
+Institut français du Portugal
+Institut français de Prague
+Institut français - Centre Saint-Louis
+(
+Rome
+)
+Institut français de Roumanie
+(
+Bucharest
+)
+Institut français de Saint-Pétersbourg
+Institut français de Saragosse
+Institut français de Sarajevo
+Institut français de Sofia
+Institut français de Slovénie
+Institut français de Stockholm
+Institut français de Stuttgart
+Institut français d'Estonie
+(
+Tallinn
+)
+Institut français des Pays-Bas
+Institut français de Grèce
+(
+Thessaloniki
+)
+Institut français de Thessalonique
+Institut français d'Ukraine
+(
+Kyiv
+)
+Institut français de Valence
+Institut français de Vienne
+Institut français de Zagreb
+Outside Europe
+[
+edit
+]
+Africa
+Instituts français en Algérie
+(
+Algeria
+) at
+Algiers
+,
+Oran
+,
+Constantine
+,
+Annaba
+and
+Tlemcen
+Instituts français au Maroc
+(
+Morocco
+) at
+Agadir
+,
+Casablanca
+,
+Fez
+,
+Marrakesh
+,
+Meknes
+,
+Oujda
+,
+Rabat
+,
+Salé
+and
+Tangier
+Institut français en Mauritanie
+(
+Mauritania
+) at
+Nouakchott
+Institut français à Maurice
+(
+Mauritius
+) at
+Beau Bassin-Rose Hill
+Institut français Léopold Sédar Senghor
+(
+Senegal
+) at
+Dakar
+Institut français au Bénin
+at
+Cotonou
+Institut français en Côte d'Ivoire
+at
+Abidjan
+Institut français au Gabon
+at
+Libreville
+Institut français au Ghana
+at
+Accra
+Institut français au Soudan
+at
+Khartoum
+Institut français au Togo
+at
+Lomé
+Institut français en Libye
+at
+Tripoli
+and
+Benghazi
+Institut français en Tunisie
+at
+Tunis
+Institut français en Égypte
+at
+Alexandria
+,
+Cairo
+, and
+Heliopolis
+Institut français au Cap-Vert
+Institut français en République démocratique du Congo
+at
+Kinshasa
+Institut français au Congo
+at
+Brazzaville
+Institut français en Guinée équatoriale
+Institut français du Nigeria
+America
+Institut franco-chilien
+-
+Instituto chileno-francés
+at
+Providencia, Chile
+Institut français d'Amérique latine
+at
+Mexico
+Institut français au Canada
+Institut français aux États-Unis
+/
+French Institute Alliance Francaise
+Institut français en Haïti
+at
+Port-au-Prince
+Asia
+Institut français de Singapour
+at
+Singapore
+Institut français au Cambodge
+(
+Cambodia
+) at
+Battambang
+,
+Phnom Penh
+and
+Siem Reap
+Institut français en Chine
+(
+China
+) at
+Beijing
+Institut français en Birmanie
+(
+Myanmar
+) at
+Rangoon
+Institut français en Inde
+(
+India
+) at
+New Delhi
+antenna at
+Pondichéry
+Institut Français d'Indonésie
+(
+Indonesia
+) at
+Jakarta
+,
+Bandung
+,
+Surabaya
+, and
+Jogjakarta
+Institut français de Tel-Aviv
+(
+Israel
+) at
+Tel Aviv
+Institut français de Jérusalem - Romain Gary
+,
+Jérusalem
+Institut franco-japonais
+(
+Japan
+)
+Institut franco-japonais de Tokyo et Yokohama
+Institut franco-japonais du Kansai
+at
+Kyoto
+Institut franco-japonais du Kyushu
+at
+Fukuoka
+Mission culturelle française au Liban
+(
+Lebanon
+) at
+Beirut
+,
+Tripoli
+,
+Sidon
+,
+Deir al-Qamar
+,
+Zahlé
+,
+Jounieh
+,
+Nabatieh
+,
+Tyre
+and
+Baalbek
+Institut français en Irak
+at
+Baghdad
+and
+Erbil
+Institut français aux Émirats arabes unis
+at
+Abu Dhabi
+Institut français en Corée du Sud
+at
+Seoul
+Institut français au Vietnam
+at
+L'Espace
+,
+Hoàn Kiếm
+,
+Hanoi
+at
+Hà Đông
+, Hanoi
+at
+Huế
+at
+Da Nang
+at
+Ho Chi Minh City
+Research institutes IFRE
+[
+edit
+]
+Centre de recherche français à Jérusalem
+(CRFJ) – Israel
+Centre français de recherche en sciences sociales
+(CEFRES) – Prague
+Institut de recherche sur le Maghreb contemporain
+(IRMC) – Tunis
+Institut de recherche sur l'Asie du Sud-Est contemporaine
+(IRASEC) – Bangkok
+Institut français d'archéologie orientale
+(IFAO) – Le 
+
+---
+
+Académie Française - Wikipedia
+Jump to content
+Search
+Search
+Académie Française
+73 languages
+Afrikaans
+Alemannisch
+العربية
+مصرى
+অসমীয়া
+Asturianu
+Azərbaycanca
+Беларуская (тарашкевіца)
+Беларуская
+Български
+বাংলা
+Brezhoneg
+Català
+کوردی
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Français
+Arpetan
+Gaeilge
+Galego
+עברית
+हिन्दी
+Hrvatski
+Magyar
+Հայերեն
+Bahasa Indonesia
+Italiano
+日本語
+Jawa
+ქართული
+한국어
+Latina
+Lëtzebuergesch
+Lingua Franca Nova
+Latviešu
+Bahasa Melayu
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Ирон
+Polski
+Piemontèis
+پنجابی
+Português
+Română
+Русский
+Scots
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Svenska
+தமிழ்
+ไทย
+Türkçe
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+Tiếng Việt
+吴语
+粵語
+中文
+Edit links
+Coordinates
+:
+48°51′26″N
+2°20′13″E
+﻿
+/
+﻿
+48.8573°N 2.337°E
+﻿
+/
+48.8573; 2.337
+From Wikipedia, the free encyclopedia
+Regulatory body of the French language
+"French Academy" redirects here. For other uses, see
+French Academy (disambiguation)
+.
+Académie française
+Institut de France
+building
+Formation
+22
+February 1635
+;
+391 years ago
+(
+1635-02-22
+)
+Founder
+Cardinal Richelieu
+Headquarters
+Paris
+, France
+Coordinates
+48°51′26″N
+2°20′13″E
+﻿
+/
+﻿
+48.8573°N 2.337°E
+﻿
+/
+48.8573; 2.337
+Members
+40 members known as
+les immortels
+("the immortals")
+Perpetual Secretary
+Amin Maalouf
+(since 28 September 2023)
+Website
+academie-francaise
+.fr
+The
+Académie Française
+[
+a
+]
+(
+French pronunciation:
+[
+akademi
+fʁɑ̃sɛːz
+]
+), also known as the
+French Academy
+, is the principal
+French
+council for matters pertaining to the
+French language
+. The
+Académie
+was officially established in 1635 by
+Cardinal Richelieu
+, the chief minister to King
+Louis XIII
+.
+[
+1
+]
+Abolished in 1793 during the
+French Revolution
+, it was restored as a division of the
+Institut de France
+in 1803 by
+Napoleon Bonaparte
+.
+[
+1
+]
+It is the oldest of the five
+académies
+of the institute. The body has the duty of acting as an official authority on the language; it is tasked with publishing an official dictionary of the language.
+The
+Académie
+comprises forty members, known as
+les immortels
+("the immortals").
+[
+2
+]
+New members are
+elected by the members of the
+Académie
+itself
+. Academicians normally hold office for life, but they may resign or be dismissed for misconduct.
+Philippe Pétain
+, named
+Marshal of France
+after the
+Battle of Verdun
+of
+World War I
+, was elected to the
+Académie
+in 1931 and, after his governorship of
+Vichy France
+in
+World War II
+, was forced to resign his seat in 1945.
+[
+3
+]
+History
+[
+edit
+]
+Cardinal Richelieu
+, responsible for the establishment of the
+Académie
+The
+Académie
+had its origins in an informal literary group deriving from the
+salons
+held at the
+Hôtel de Rambouillet
+during the late 1620s and early 1630s. The group began meeting at
+Valentin Conrart
+'s house, seeking informality. There were then nine members.
+Cardinal Richelieu
+, the chief minister of France, made himself protector of the group, and in anticipation of the formal creation of the academy, new members were appointed in 1634. On 22 February 1635, at Richelieu's urging, King Louis XIII granted
+letters patent
+formally establishing the council; according to the letters patent registered at the
+Parlement de Paris
+on 10 July 1637,
+[
+1
+]
+the
+Académie Française
+was "to labor with all the care and diligence possible, to give exact rules to our language, to render it capable of treating the arts and sciences". The
+Académie Française
+has remained responsible for the regulation of French grammar, spelling, and literature.
+Richelieu's model, the first academy devoted to eliminating the "impurities" of a language, was the
+Accademia della Crusca
+, founded in Florence in 1582, which formalized the already dominant position of the
+Tuscan dialect
+of Florence as the model for
+Italian
+; the Florentine academy had published its
+Vocabolario
+in 1612.
+[
+4
+]
+During the
+French Revolution
+, the
+National Convention
+suppressed all royal academies, including the
+Académie Française
+. In 1792, the election of new members to replace those who died was prohibited; in 1793, the academies were themselves abolished. They were all replaced in 1795 by a single body called the
+Institut de France
+.
+Napoleon Bonaparte
+, as
+First Consul
+, decided to restore the former academies, but only as "classes" or divisions of the
+Institut de France
+. The second class of the Institut was responsible for the French language, and corresponded to the former
+Académie Française
+. When
+Louis XVIII
+came to the throne in 1816, each class regained the title of "
+Académie
+"; accordingly, the second class of the Institut became the
+Académie Française
+. Since 1816, the existence of the
+Académie Française
+has been uninterrupted.
+[
+citation needed
+]
+The
+President of France
+is the "protector" or patron of the
+Académie
+. Cardinal Richelieu originally adopted this role; upon his death in 1642,
+Pierre Séguier
+, the
+Chancellor of France
+, succeeded him.
+Louis XIV
+adopted the function when Séguier died in 1672; since then, the French head of state has always served as the
+Académie
+'s protector. From 1672 to 1805, the official meetings of the
+Académie
+were in the
+Louvre
+; since 1805, the
+Académie Française
+has met in the
+Collège des Quatre-Nations
+(now known as the Palais de l'Institut). The remaining academies of the
+Institut de France
+also meet in the Palais de l'Institut.
+Membership
+[
+edit
+]
+The
+Académie Française
+has forty seats, each of which is assigned a separate number. Candidates make their applications for a specific seat, not to the
+Académie
+in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, it is not uncommon that potential candidates refuse to apply for particular seats because they dislike the predecessors.
+[
+citation needed
+]
+Members are known as "
+les immortels
+" ("the Immortals") in reference to the
+Académie
+'s
+motto
+,
+À l'immortalité
+("To Immortality"), which is inscribed on the official seal of the charter granted by Cardinal Richelieu.
+[
+2
+]
+One of the
+immortels
+is chosen by their colleagues to be the
+Académie
+'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but holds the ability to resign; they may thereafter be styled as "Honorary Perpetual Secretary", with three post-
+World War II
+Perpetual Secretaries having previously resigned due to old age. The Perpetual Secretary acts as a chairperson and chief representative of the
+Académie
+. The two other officers, a Director and a Chancellor, are elected for three-month terms. The most senior member, by date of election, is the Dean of the
+Académie
+.
+New members are elected by the
+Académie
+itself; the original members were appointed. When a seat becomes vacant, a person may apply to the Secretary if they wish to become a candidate. Alternatively, existing members may nominate other candidates. A candidate is elected by a majority of votes from voting members. A
+quorum
+is twenty members. If no candidate receives an absolute majority, another election must be performed at a later date. The election is valid only if the protector of the
+Académie
+, the President of France, grants their approval. The President's approbation is only a formality.
+[
+b
+]
+Raymond Poincaré
+was one of the five French heads of state who became members of the
+Académie Française
+. He is depicted wearing the
+habit vert
+, or green habit, of the
+Académie
+.
+The new member is then installed at a meeting of the
+Académie
+. The new member must deliver a speech to the
+Académie
+, which includes a
+eulogy
+for the member being replaced. This is followed by a speech made by one of the members. Eight days thereafter, a public reception is held, during which the new member makes a speech thanking their colleagues for their election. On one occasion, one newly installed member,
+Georges de Porto-Riche
+, was not accorded a reception, as the eulogy he made of his predecessor was considered unsatisfactory, and he refused to rewrite it.
+Georges Clemenceau
+refused to be received, as he feared being received by his enemy,
+Raymond Poincaré
+.
+Members remain in the Académie for life. The council may dismiss an academician for grave misconduct. The first dismissal occurred in 1638, when
+Auger de Moléon de Granier
+was expelled for theft. The most recent dismissals occurred at the end of
+World War II
+:
+Philippe Pétain
+,
+Abel Bonnard
+,
+Abel Hermant
+, and
+Charles Maurras
+were all excluded for their association with the
+Vichy regime
+. In total, 20 members have been expelled from the
+Académie
+.
+There have been a total of 742
+immortels
+,
+[
+2
+]
+of whom eleven have been women;
+Marguerite Yourcenar
+was the first woman to be elected, in 1980, but there have been 25 unsuccessful female candidacies, dating from 1874. Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
+Académie
+has included numerous politicians, lawyers, scientists, historians, philosophers, and senior
+Roman Catholic
+clergymen. Five French heads of state have been members –
+Adolphe Thiers
+,
+Raymond Poincaré
+,
+Paul Deschanel
+,
+Philippe Pétain
+, and
+Valéry Giscard d'Estaing
+– and one foreign head of state, the poet
+Léopold Sédar Senghor
+of
+Senegal
+, who was also the first African elected, in 1983.
+[
+5
+]
+Other famous members include
+Voltaire
+;
+Montesquieu
+;
+Victor Hugo
+;
+Alexandre Dumas, fils
+;
+Émile Littré
+;
+Louis Pasteur
+;
+Louis de Broglie
+; and
+Henri Poincaré
+.
+Many notable French writers have not become members of the
+Académie Française
+. In 1855, the writer
+Arsène Houssaye
+devised the expression "forty-first seat" for deserving individuals who were never elected to the
+Académie
+, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca
+
+---
+
+Académie Française - Wikipedia
+Jump to content
+Search
+Search
+Académie Française
+73 languages
+Afrikaans
+Alemannisch
+العربية
+مصرى
+অসমীয়া
+Asturianu
+Azərbaycanca
+Беларуская (тарашкевіца)
+Беларуская
+Български
+বাংলা
+Brezhoneg
+Català
+کوردی
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Français
+Arpetan
+Gaeilge
+Galego
+עברית
+हिन्दी
+Hrvatski
+Magyar
+Հայերեն
+Bahasa Indonesia
+Italiano
+日本語
+Jawa
+ქართული
+한국어
+Latina
+Lëtzebuergesch
+Lingua Franca Nova
+Latviešu
+Bahasa Melayu
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Ирон
+Polski
+Piemontèis
+پنجابی
+Português
+Română
+Русский
+Scots
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Svenska
+தமிழ்
+ไทย
+Türkçe
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+Tiếng Việt
+吴语
+粵語
+中文
+Edit links
+Coordinates
+:
+48°51′26″N
+2°20′13″E
+﻿
+/
+﻿
+48.8573°N 2.337°E
+﻿
+/
+48.8573; 2.337
+From Wikipedia, the free encyclopedia
+Regulatory body of the French language
+"French Academy" redirects here. For other uses, see
+French Academy (disambiguation)
+.
+Académie française
+Institut de France
+building
+Formation
+22
+February 1635
+;
+391 years ago
+(
+1635-02-22
+)
+Founder
+Cardinal Richelieu
+Headquarters
+Paris
+, France
+Coordinates
+48°51′26″N
+2°20′13″E
+﻿
+/
+﻿
+48.8573°N 2.337°E
+﻿
+/
+48.8573; 2.337
+Members
+40 members known as
+les immortels
+("the immortals")
+Perpetual Secretary
+Amin Maalouf
+(since 28 September 2023)
+Website
+academie-francaise
+.fr
+The
+Académie Française
+[
+a
+]
+(
+French pronunciation:
+[
+akademi
+fʁɑ̃sɛːz
+]
+), also known as the
+French Academy
+, is the principal
+French
+council for matters pertaining to the
+French language
+. The
+Académie
+was officially established in 1635 by
+Cardinal Richelieu
+, the chief minister to King
+Louis XIII
+.
+[
+1
+]
+Abolished in 1793 during the
+French Revolution
+, it was restored as a division of the
+Institut de France
+in 1803 by
+Napoleon Bonaparte
+.
+[
+1
+]
+It is the oldest of the five
+académies
+of the institute. The body has the duty of acting as an official authority on the language; it is tasked with publishing an official dictionary of the language.
+The
+Académie
+comprises forty members, known as
+les immortels
+("the immortals").
+[
+2
+]
+New members are
+elected by the members of the
+Académie
+itself
+. Academicians normally hold office for life, but they may resign or be dismissed for misconduct.
+Philippe Pétain
+, named
+Marshal of France
+after the
+Battle of Verdun
+of
+World War I
+, was elected to the
+Académie
+in 1931 and, after his governorship of
+Vichy France
+in
+World War II
+, was forced to resign his seat in 1945.
+[
+3
+]
+History
+[
+edit
+]
+Cardinal Richelieu
+, responsible for the establishment of the
+Académie
+The
+Académie
+had its origins in an informal literary group deriving from the
+salons
+held at the
+Hôtel de Rambouillet
+during the late 1620s and early 1630s. The group began meeting at
+Valentin Conrart
+'s house, seeking informality. There were then nine members.
+Cardinal Richelieu
+, the chief minister of France, made himself protector of the group, and in anticipation of the formal creation of the academy, new members were appointed in 1634. On 22 February 1635, at Richelieu's urging, King Louis XIII granted
+letters patent
+formally establishing the council; according to the letters patent registered at the
+Parlement de Paris
+on 10 July 1637,
+[
+1
+]
+the
+Académie Française
+was "to labor with all the care and diligence possible, to give exact rules to our language, to render it capable of treating the arts and sciences". The
+Académie Française
+has remained responsible for the regulation of French grammar, spelling, and literature.
+Richelieu's model, the first academy devoted to eliminating the "impurities" of a language, was the
+Accademia della Crusca
+, founded in Florence in 1582, which formalized the already dominant position of the
+Tuscan dialect
+of Florence as the model for
+Italian
+; the Florentine academy had published its
+Vocabolario
+in 1612.
+[
+4
+]
+During the
+French Revolution
+, the
+National Convention
+suppressed all royal academies, including the
+Académie Française
+. In 1792, the election of new members to replace those who died was prohibited; in 1793, the academies were themselves abolished. They were all replaced in 1795 by a single body called the
+Institut de France
+.
+Napoleon Bonaparte
+, as
+First Consul
+, decided to restore the former academies, but only as "classes" or divisions of the
+Institut de France
+. The second class of the Institut was responsible for the French language, and corresponded to the former
+Académie Française
+. When
+Louis XVIII
+came to the throne in 1816, each class regained the title of "
+Académie
+"; accordingly, the second class of the Institut became the
+Académie Française
+. Since 1816, the existence of the
+Académie Française
+has been uninterrupted.
+[
+citation needed
+]
+The
+President of France
+is the "protector" or patron of the
+Académie
+. Cardinal Richelieu originally adopted this role; upon his death in 1642,
+Pierre Séguier
+, the
+Chancellor of France
+, succeeded him.
+Louis XIV
+adopted the function when Séguier died in 1672; since then, the French head of state has always served as the
+Académie
+'s protector. From 1672 to 1805, the official meetings of the
+Académie
+were in the
+Louvre
+; since 1805, the
+Académie Française
+has met in the
+Collège des Quatre-Nations
+(now known as the Palais de l'Institut). The remaining academies of the
+Institut de France
+also meet in the Palais de l'Institut.
+Membership
+[
+edit
+]
+The
+Académie Française
+has forty seats, each of which is assigned a separate number. Candidates make their applications for a specific seat, not to the
+Académie
+in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, it is not uncommon that potential candidates refuse to apply for particular seats because they dislike the predecessors.
+[
+citation needed
+]
+Members are known as "
+les immortels
+" ("the Immortals") in reference to the
+Académie
+'s
+motto
+,
+À l'immortalité
+("To Immortality"), which is inscribed on the official seal of the charter granted by Cardinal Richelieu.
+[
+2
+]
+One of the
+immortels
+is chosen by their colleagues to be the
+Académie
+'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but holds the ability to resign; they may thereafter be styled as "Honorary Perpetual Secretary", with three post-
+World War II
+Perpetual Secretaries having previously resigned due to old age. The Perpetual Secretary acts as a chairperson and chief representative of the
+Académie
+. The two other officers, a Director and a Chancellor, are elected for three-month terms. The most senior member, by date of election, is the Dean of the
+Académie
+.
+New members are elected by the
+Académie
+itself; the original members were appointed. When a seat becomes vacant, a person may apply to the Secretary if they wish to become a candidate. Alternatively, existing members may nominate other candidates. A candidate is elected by a majority of votes from voting members. A
+quorum
+is twenty members. If no candidate receives an absolute majority, another election must be performed at a later date. The election is valid only if the protector of the
+Académie
+, the President of France, grants their approval. The President's approbation is only a formality.
+[
+b
+]
+Raymond Poincaré
+was one of the five French heads of state who became members of the
+Académie Française
+. He is depicted wearing the
+habit vert
+, or green habit, of the
+Académie
+.
+The new member is then installed at a meeting of the
+Académie
+. The new member must deliver a speech to the
+Académie
+, which includes a
+eulogy
+for the member being replaced. This is followed by a speech made by one of the members. Eight days thereafter, a public reception is held, during which the new member makes a speech thanking their colleagues for their election. On one occasion, one newly installed member,
+Georges de Porto-Riche
+, was not accorded a reception, as the eulogy he made of his predecessor was considered unsatisfactory, and he refused to rewrite it.
+Georges Clemenceau
+refused to be received, as he feared being received by his enemy,
+Raymond Poincaré
+.
+Members remain in the Académie for life. The council may dismiss an academician for grave misconduct. The first dismissal occurred in 1638, when
+Auger de Moléon de Granier
+was expelled for theft. The most recent dismissals occurred at the end of
+World War II
+:
+Philippe Pétain
+,
+Abel Bonnard
+,
+Abel Hermant
+, and
+Charles Maurras
+were all excluded for their association with the
+Vichy regime
+. In total, 20 members have been expelled from the
+Académie
+.
+There have been a total of 742
+immortels
+,
+[
+2
+]
+of whom eleven have been women;
+Marguerite Yourcenar
+was the first woman to be elected, in 1980, but there have been 25 unsuccessful female candidacies, dating from 1874. Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
+Académie
+has included numerous politicians, lawyers, scientists, historians, philosophers, and senior
+Roman Catholic
+clergymen. Five French heads of state have been members –
+Adolphe Thiers
+,
+Raymond Poincaré
+,
+Paul Deschanel
+,
+Philippe Pétain
+, and
+Valéry Giscard d'Estaing
+– and one foreign head of state, the poet
+Léopold Sédar Senghor
+of
+Senegal
+, who was also the first African elected, in 1983.
+[
+5
+]
+Other famous members include
+Voltaire
+;
+Montesquieu
+;
+Victor Hugo
+;
+Alexandre Dumas, fils
+;
+Émile Littré
+;
+Louis Pasteur
+;
+Louis de Broglie
+; and
+Henri Poincaré
+.
+Many notable French writers have not become members of the
+Académie Française
+. In 1855, the writer
+Arsène Houssaye
+devised the expression "forty-first seat" for deserving individuals who were never elected to the
+Académie
+, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca

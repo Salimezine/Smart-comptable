@@ -1,3158 +1,4161 @@
-Rani Khedira - Wikipedia
+Dido - Wikipedia
 Jump to content
 Search
 Search
-Rani Khedira
-31 languages
+Dido
+51 languages
+Afrikaans
 العربية
 مصرى
-বাংলা
+Asturianu
+Български
+Brezhoneg
+Català
 Čeština
+Dansk
 Deutsch
+Ελληνικά
+Esperanto
 Español
-Eesti
+Euskara
 فارسی
 Suomi
 Français
+Frysk
+Galego
 עברית
+Hrvatski
 Magyar
 Հայերեն
 Bahasa Indonesia
-Íslenska
 Italiano
 日本語
+ქართული
 한국어
-Latviešu
-Malagasy
+Latina
+Lietuvių
+Македонски
 Bahasa Melayu
 Nederlands
 Norsk bokmål
+Occitan
 Polski
+Português
+Română
 Русский
-Slovenčina
+Sicilianu
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenščina
+Српски / srpski
+Svenska
+Kiswahili
 Türkçe
 Українська
-اردو
 Tiếng Việt
+閩南語 / Bân-lâm-gí
 中文
 Edit links
 From Wikipedia, the free encyclopedia
-Footballer (born 1994)
-Rani Khedira
-Khedira with
-Union Berlin
-in 2023
-Personal information
-Date of birth
-(
-1994-01-27
+Legendary founder and first queen of Carthage
+This article is about the legendary figure. For other uses, see
+Dido (singer)
+and
+Dido (disambiguation)
+.
+Dido
+Queen of
+Carthage
+Dido and
+Aeneas
+, from a Roman fresco,
+Pompeian Third Style
+(10 BC
+–
+45 AD),
+Pompeii
+, Italy
+Abode
+Tyre
+,
+Carthage
+Genealogy
+Born
+Tyre
+(modern-day
+Lebanon
 )
-27 January 1994
-(age
-32)
-Place of birth
-Stuttgart
-, Germany
-Height
-1.89
-m (6
-ft 2
-in)
+Died
+Carthage (modern-day
+Tunisia
+)
+Parents
+Belus
+or
+Mattan I
+(father)
+Siblings
+Anna
+Consorts
+Acerbas
+,
+Aeneas
+In
+Greek
+and
+Roman
+mythology,
+Dido
+(
+/
+ˈ
+d
+aɪ
+d
+oʊ
+/
+DY
+-doh
+;
+Classical Latin:
+[
+ˈdiːdoː
+]
+;
+Ancient Greek
+:
+Διδώ
+[
+diːdɔ̌ː
+]
+), also known as
+Elissa
+(
+/
+ɪ
+ˈ
+l
+ɪ
+s
+ə
+/
+il-
+ISS
+-ə
+;
+Greek:
+Ἔλισσα
+),
 [
 1
 ]
-Position
-Defensive midfielder
-Team information
-Current team
-Union Berlin
-Number
-8
-Youth career
-TV Oeffingen
-2005–2012
-VfB Stuttgart
-Senior career*
-Years
-Team
-Apps
-(
-Gls
-)
-2012–2014
-VfB Stuttgart II
-56
-(1)
-2014
-VfB Stuttgart
-9
-(0)
-2014–2017
-RB Leipzig
-51
-(0)
-2015–2016
-RB Leipzig II
-3
-(2)
-2017–2021
-Augsburg
-119
-(6)
-2021–
-Union Berlin
-149
-(8)
-International career
-‡
-2009
-Germany U15
-2
-(0)
-2009
-Germany U16
-3
-(0)
-2011
-Germany U17
-6
-(0)
-2012–2013
-Germany U19
-2
-(1)
-2026–
-Tunisia
-6
-(0)
-* Club domestic league appearances and goals
-as of 22:28, 10 May 2026 (UTC)
-‡ National team caps and goals as of 21:45, 26 June 2026 (UTC)
-Rani Khedira
-(
-Arabic
-:
-راني خضيرة
-; born 27 January 1994) is a professional
-footballer
-who plays as a
-defensive midfielder
-for
-Bundesliga
-club
-Union Berlin
-. Born in Germany, he plays for the
-Tunisia national team
+was the legendary founder and first queen of the
+Phoenician
+city-state of
+Carthage
 .
-Club career
+In most accounts, she was originally the joint ruler of
+Tyre
+who fled tyranny to found her own city in northwest Africa, now modern-day
+Tunisia
+. As she is only known from ancient Greek and Roman sources, all of which were written well after Carthage's founding, her historicity remains uncertain.
+This article contains
+special characters
+.
+Without proper
+rendering support
+, you may see
+question marks, boxes, or other symbols
+.
+Details about Dido's character, life, and role in the founding of Carthage are best known from
+Virgil
+'s
+epic
+poem, the
+Aeneid
+,
+published around 19
+BC. The poem tells the legendary story of the
+Trojan
+hero
+Aeneas
+. In the poem, Dido is described as a clever and enterprising woman who founded Carthage after fleeing her tyrannical brother. The city prospers under her leadership until Aeneas arrives and the pair fall in love through
+Juno
+and
+Venus'
+divine intervention. When Aeneas eventually has to leave Carthage, the love-sick Dido commits suicide upon a
+pyre
+.
+Dido has been an enduring figure in Western culture, literature, and art from the early
+Renaissance
+into the 21st century.
+Name
 [
 edit
 ]
-VfB Stuttgart
-[
-edit
-]
-Khedira with
-VfB Stuttgart II
-in 2012
-Khedira started his youth career at TV Oeffingen before moving to
-VfB Stuttgart
-in 2005, a year before his older brother,
-Sami
-, joined.
+Many names in the legend of Dido are of
+Punic
+origin, which suggests that the first Greek authors who mention this story have taken up Phoenician accounts. One suggestion is that
+Dido
+is an epithet from the same
+Semitic root
+as
+David
+, which means "Beloved".
 [
 2
 ]
+Others state Didô means "the wanderer".
 [
 3
 ]
-After progressing the ranks of Stuttgart Academy, he began to play for the U16 side by 2009.
 [
 4
 ]
-He signed a contract with the club, keeping him until 2013.
+According to Marie-Pierre Noël, "Elishat/Elisha" is a name repeatedly attested on
+Punic
+votives. It is composed of:
+the Punic reflex of
+*ʾil-
+"god", which can mean the remote Phoenician creator god
+El
+, or it can be names of
+God
+in Judaism,
+and
+"‐issa", which could be either "
+ʾiš
+" (
+𐤀𐤎
+), meaning "fire", or another word for "woman".
 [
 5
 ]
-On 28 January 2012, Khedira had his debut for
-VfB Stuttgart II
-in the
-3. Liga
-against
-FC Rot-Weiß Erfurt
-.
+Other works state that it is the feminine form of El.
 [
 6
 ]
-During his time at VfB Stuttgart's reserves, he scored once for the side, in a 4–0 win over
-Wacker Burghausen
-on 8 September 2013.
+In Greek it appears as
+Theiossô
+, which translates Élissa:
+el
+becoming
+theos
+.
+[
+3
+]
+Early accounts
+[
+edit
+]
+Dido
+, 1781 oil painting by
+Henry Fuseli
+The oldest references to Dido's character can be traced to the
+lost writings
+of
+Sicilian
+historian
+Timaeus
+of
+Tauromenium
+(c.
+356–260 BC). In his
+Histories
+, Timaeus claims that Dido founded Carthage in 814
+BC, around the same time as the founding of
+Rome
+.
 [
 7
 ]
-On 23 October 2012, Khedira was promoted to the first team of VfB Stuttgart.
 [
 8
 ]
-He extended his contract with the club on 28 January 2013 until June 2015.
+Appian
+, in the beginning of his
+Punic Wars
+, claims that Carthage was founded by Zorus and Carchedon. However,
+Zorus
+looks like an alternative transliteration of the city name
+Tyre,
+while
+Carchedon
+is just the Greek form of
+Carthage
+. Timaeus named Carchedon's wife as Elissa, the sister of King
+Pygmalion of Tyre
+. Archaeological evidence of settlement on the site of Carthage before the last quarter of the 8th century BC has yet to be found. 
+That the city is named
+𐤒𐤓𐤕 𐤇𐤃𐤔𐤕
+‎
+(
+Qart-hadasht
+, or "New City") at least indicates it was a colony.
+Trogus and Justin
+[
+edit
+]
+The only surviving full account of Dido's story before
+Virgil
+'s treatment is that of Virgil's contemporary,
+Gnaeus Pompeius Trogus
+, in his
+Philippic Histories
+, which was reworked into an
+epitome
+by
+Junianus Justinus
+(Justin) in the 3rd century AD.
+Justin, quoting or paraphrasing Trogus, writes that the king of
+Tyre
+made his beautiful daughter Dido (Elissa) and son Pygmalion his joint heirs. However, upon the king's death, the people took Pygmalion alone as their ruler, even though he was still a child. Dido married her uncle
+Acerbas
+, who, as priest of
+Heracles
+(
+Melqart
+), was second in power to the king. There were rumors that Acerbas had secretly buried a large store of gold, and Pygmalion had Acerbas murdered in hopes of claiming it for himself. Dido was enraged, and eventually planned to trick her brother and flee Tyre.
 [
 9
 ]
-However throughout the 2012–13 season, Khedira never made his first team appearances, as he appeared for most of the season as an unused substitute.
+:
+Lines 1-9
+Dido pretended to want to move into Pygmalion's home; her brother agreed, as he believed Dido would bring Acerbas' stores of gold with her when she moved. He sent a number of attendants to help her. She filled bags with sand, and, pretending they were gold, had the attendants cast them into the sea, pretending that they were an offering to her late husband's
+shade
+. Dido then persuaded the attendants to join her in flight to another land rather than face Pygmalion's anger when he discovered what had supposedly become of Acerbas' wealth. Some sympathetic senators also joined her.
+[
+9
+]
+:
+Lines 10-16
+A horse's head is a frequent motif on
+Carthaginian coinage
+, sometimes with a female profile on the
+obverse
+usually identified as the goddess
+Tanit
+, whose iconography may have influenced Virgil's imagery of Juno and Dido
 [
 10
 ]
-On 1 September 2013, Khedira made his
-Bundesliga
-debut for VfB Stuttgart in a 6–2 home victory against
-1899 Hoffenheim
-.
+(
+shekel
+, c. 153–146 BC
+)
+The group first arrived at
+Cyprus
+. There, Dido ordered her party to seize eighty women working as prostitutes on the shore, so that her men would have wives and eventually be able to populate her future city.
 [
 11
 ]
-On 7 December 2013, when he made his first start for Stuttgart, in a 4–2 win over
-Hannover 96
-.
+:
+Lines 1-6
+Eventually Dido and her followers arrived on the coast of
+North Africa
+. There, she bargained with the locals for a small piece of land to act as a refuge until she could continue her journeying: only as much land as could be encompassed by an
+oxhide
+. They agreed. Dido then cut the oxhide into fine strips so that she had enough to encircle an entire nearby hill, which was afterwards named
+Byrsa
+("hide").
+[
+11
+]
+:
+Lines 7-10
+Dido and her party established a settlement on the hill. Locals began to join the group, and both they and envoys from the nearby
+Phoenician
+city of
+Utica
+urged the building of a city. While digging the foundation, an ox's head was found, indicating that the city that would be wealthy but subjected to the rule of others if built at that site. In response to this portent, another area of the hill was dug instead, where a horse's head was found, indicating that the city would be powerful and warlike. Carthage was thus founded, and the center of the city was the
+citadel
+on Byrsa.
 [
 12
 ]
-From 29 January 2014 and 2 March 2014, he had a handful of starting his first team places.
+[
+11
+]
+:
+Lines 11-18
+After some time, Carthage grew to be powerful and prosperous. However,
+Iarbas
+, king of the Maxitani (or Mauritani), demanded Dido's hand in marriage so that they could combine their kingdoms; if she denied him, he would launch war against Carthage.
 [
 13
 ]
-Although he lost his first team place later on, Khedira went on to make nine appearances for the club.
-RB Leipzig
-[
-edit
-]
-Khedira with
-RB Leipzig
-in 2016
-For the
-2014–15 season
-, Khedira moved to
-RB Leipzig
-, signing a three-year contract, keeping him until 2017.
+However, she preferred to stay faithful to her first husband. She created a ceremonial funeral
+pyre
+and sacrificed many victims under the pretense that she was honoring and appeasing her husband's spirit before marrying Iarbas. However, Dido instead ascended the pyre, announcing that "she would go to her husband as they had desired her," and killed herself with a sword. After her suicide, Dido was deified and worshipped as a goddess as long as Carthage endured. In this account, the founding of Carthage occurred 72 years before the foundation of Rome.
 [
 14
 ]
-The move was reported to be undisclosed.
 [
 15
 ]
-RB Leipzig had been keen on signing him since September 2013.
+Virgil's
+Aeneid
+[
+edit
+]
+Dido seated on a throne attended by handmaiden, looking at the personification of Africa wearing an elephant hide. Aeneas' ship features in the background. Fresco in
+Pompeii
+Dido flees Tyre
+[
+edit
+]
+Virgil names Belus as Dido's father;
 [
 16
 ]
-Khedira made his RB Leipzig debut in the opening game of the season, playing the whole game, in a 0–0 draw against
-VfR Aalen
+this figure is occasionally referred to as
+Belus II
+by later commentators to distinguish him from
+Belus
+, son of
+Poseidon
+, and a figure in earlier
+Greek mythology
 .
+Classicist
+T. T. Duke suggests that this is a
+hypocoristicon
+of the historical father of Pygmalion and Dido,
+Mattan I
+, also known as
+MTN-BʿL
+(
+Matan-Baʿal
+, 'Gift of the Lord').
 [
 17
 ]
-After making his RB Leipzig debut, he quickly established himself in the first team and played a key role for the club in his first season.
+The
+Aeneid
+'s narrative closely follows that of
+Trogus
+and
+Justin
+. However, while Trogus names the character Elissa, Virgil uses
+Dido
+as nominative, but uses
+Elissa
+(Eliza) in
+oblique cases
+. Virgil's Dido was a princess of
+Tyre
+who married
+Sychaeus
+(Acerbas), a wealthy priest of
+Hercules
+, while her father was still alive. Sychaeus had a large store of hidden wealth, and Dido's brother
+Pygmalion
+murdered the priest so he could claim this wealth for himself. Sychaeus appeared to Dido in a dream, revealed her brother's actions and the true location of his wealth, and urged her to flee Tyre. She obeyed, and left the city with those who hated or feared Pygmalion.
 [
 18
 ]
-He also became a regular start player from the beginning of the season until he was suspended for one match against
-SV Sandhausen
-on 30 November 2014 having picked up five yellow cards this season.
+Aeneas arrives at Carthage
+[
+edit
+]
+Dido
+, attributed to
+Christophe Cochet
+, formerly at the
+Marly
+and currently at the
+Louvre
+Aeneas
+, a
+Trojan
+prince who fled Troy after it fell to the Greeks, eventually landed on Carthage's shores after many years of wandering.
+[
+16
+]
+Dido welcomed him warmly, having heard word about his exploits, and arranged a feast. However,
+Venus
+, Aeneas' mother, sensed that Dido and Carthage were under
+Juno
+'s control. Unbeknownst to Aeneas, Venus tasked her other son, Cupid, with infiltrating the party in the guise of Aeneas's son Ascanius. Dido embraces the disguised Cupid, who plants in her heart a powerful, all encompassing love and desire for Aeneas.
 [
 19
 ]
-However, in a 1–0 loss against
-FSV Frankfurt
-on 15 February 2015, he suffered a leg injury in the 69th minute and was substituted as a result.
+However, she was conflicted, as she had sworn never to remarry after her first husband was killed.
 [
 20
 ]
-The injury kept him out of action for several weeks.
+Juno became aware of Venus' actions, and proposed that they marry the couple and join the pair's kingdoms. By the goddess' design, the pair consummated their relationship in a cave.
 [
 21
 ]
-On 17 May 2015, he returned to the first team from injury, in a 2–1 loss against
-Ingolstadt
-.
+However, while Dido called Aeneas her husband, Aeneas claimed they were never officially married.
+When news of their relationship reached
+Iarbas
+, a son of
+Jupiter
+whose marriage offer Dido scorned, he angrily prayed to his father. Jupiter then dispatched
+Mercury
+to remind Aeneas of his journey and the city he was destined to found. Aeneas agreed and prepared to leave. When an enraged Dido confronted him and asked him to stay, he refused, as he could not deviate from his divinely ordained fate.
 [
 22
 ]
-In his first season at the club, Khedira went on to make 24 appearances in all competitions.
-In his second season at RB Leipzig, Khedira found himself in a competition for his position and this resulted in him sitting on the substitutes bench at the start of the season.
+Dido's suicide
+[
+edit
+]
+Dido was enraged by this betrayal, and could no longer bear to live.
 [
 23
 ]
-Later in the season, he was plagued by injuries.
+She had her sister
+Anna
+build a
+pyre
+under the pretense of burning all that reminded her of Aeneas, including weapons and clothes that he had left behind, and the couch she called their bridal bed. When Dido saw Aeneas' fleet leaving, she cursed him and proclaimed endless hate between Carthage and the descendants of
+Troy
+, foreshadowing the
+Punic Wars
+. Dido then ascended the pyre, laid again on the couch, and stabbed herself with Aeneas' sword.
 [
 24
 ]
+Anna rushed in and embraced her dying sister, and Juno sent
+Iris
+to release Dido's spirit from her body.
 [
 25
 ]
-Nevertheless, he went on to make 16 appearances in all competitions, as RB Leipzig were promoted to the
-Bundesliga
-.
-Ahead of the 2016–17 season, Khedira's first team opportunities continued to be limited and remained on the substitute bench following new competitions and by November, he had not made his first appearance of the season.
+From their ships, Aeneas and his crew saw the glow of the burning funeral pyre, and could only guess at what had happened.
 [
 26
 ]
-On 25 November 2016, he made his first appearance of the 2016–17 season, coming on as a second-half substitute, in a 4–1 win over
-Freiburg
-.
+At least two scholars have argued that the inclusion of the pyre as part of Dido's suicide— otherwise unattested in prior epics and tragedies— alludes to the self-immolation that took the life of Carthage's last queen, or the wife of its general
+Hasdrubal the Boetharch
+, in 146
+BC.
 [
 27
 ]
-He went on to make ten appearances for the club this season. However, it was announced that Khedira was released by the club.
+After death
+[
+edit
+]
+During his journey in the
+underworld
+, Aeneas met Dido's
+shade
+, soaked in blood. Aeneas cried and begged her to forgive him, but she averted her eyes and stayed silent before turning to walk into a grove where her former husband Sychaeus waited.
 [
 28
 ]
-He had previously been advised by his brother not to leave the club.
+Later Roman tradition
+[
+edit
+]
+Ovid
+[
+edit
+]
+Death of Dido
+, 1631 painting by
+Guercino
+In
+Ovid's
+Heroides
+,
+Epistle
+7 is Dido's address to Aeneas just before she ascends the pyre and commits suicide. The narrative aligns with Virgil's, and focuses on Dido's grief and anger at being left behind by her lover.
 [
 29
 ]
-FC Augsburg
-[
-edit
-]
-With his RB Leipzig contract expiring at the end of the 2016–17 season, Khedira joined fellow Bundesliga club
-FC Augsburg
-on 7 June 2017, signing a four-year contract.
+In the
+Fasti
+, Ovid narrates the life of
+Anna Perenna
+, a Roman goddess he identifies as Dido and Pygmalion's sister. After Dido's death, she is eventually shipwrecked onto the coasts of
+Latium
+, home to Aeneas' settlement of
+Lavinium
+. However, Aeneas' wife Lavinia became jealous. She planned to murder Anna, but Dido's unkempt, blood-soaked ghost appeared before her sister's bed as she slept, begging her to flee. Anna obeyed and was swept away by the
+river god
+Numicus
+and transformed into a river
+nymph
+.
 [
 30
 ]
-Union Berlin
+Silius Italicus
 [
 edit
 ]
-In April 2021, Khedira was announced to join
-Union Berlin
-starting from the 2021–22 season.
+Dido's figure influences the plot of
+Silius Italicus
+’s poem
+Punica
+, a retelling of the events of the
+Second Punic War
+which draws from the mythological roots of the conflict. In Book 1, Silius recounts Dido's founding of Carthage, ascribing the city's enmity with Rome to the conquering aspirations of its patron goddess
+Juno
+. In a temple on the site of Dido's suicide, a young
+Hannibal
+learns about this history from his father
+Hamilcar
+. Hannibal then swears his famous oath that he will oppose Rome in war to "Elissa [Dido], by your shade." In this book, Silius also traces the ancestry of the Barcid family to a younger brother of Dido.
 [
 31
 ]
-On 19 March 2023, he scored his first goal at the club in a 2–0 win over
-Eintracht Frankfurt
-.
+In Book 8, the spirit of Dido's sister Anna is sent to Hannibal by Juno. Anna tells not only of Dido's suicide and a ghostly visit from her sister, but her own wanderings from
+Cyrene
+to Italy, where she is ultimately deified as a river. Anna’s tale, as well as her prophecy of Hannibal’s future triumph in the
+Battle of Cannae
+, rouses the Carthaginian general to battle.
 [
 32
 ]
-On the final matchday of the 2022–23 season, he scored the only goal in a 1–0 victory over
-Werder Bremen
-, to secure the fourth place for his club in the league and qualification to the next season's
-Champions League
-.
-[
-33
-]
-International career
+Historicity and dating
 [
 edit
 ]
-After being featured for
-Germany U15
-and
-Germany U16
-, Khedira was featured for
-Germany U17
-and played for Germany at the
-2011 FIFA U-17 World Cup
-, where he played five times in the tournament.
+The oxhide story which explains the name of the hill is most likely of Greek origin since
+Byrsa
+means "oxhide" in Greek, not in
+Punic
+. The name of the hill in Punic was probably just a derivation from
+Semitic
+brt
+"fortified place". But that does not prevent other details in the story from being Carthaginian, albeit still not necessarily historical.
+Michael Grant
+in
+Roman Myths
+(1973) claims that "Dido-Elissa was originally a goddess", and that she was converted from a goddess into a mortal (if still legendary) queen sometime in the later fifth century BC by a Greek writer.
+Others conjecture that Dido was indeed historical, as described in the following accounts. It is unknown who first combined the story of Dido with the tradition that connected Aeneas either with Rome or with earlier settlements from which Rome traced its origin. A fragment of an epic poem by
+Gnaeus Naevius
+who died at Utica in 201
+BC includes a passage which might or might not be part of a conversation between Aeneas and Dido.
+Servius
+in his commentary (4.682; 5.4) cites
+Varro
+(1st century BC) for a version in which Dido's sister Anna killed herself for love of Aeneas.
+Aeneid, Book IV, Death of Dido. From the
+Vergilius Vaticanus
+(Vatican Library, Cod. Vat. lat. 3225)
+Evidence for the historicity of Dido (which is a question independent of whether or not she ever met Aeneas) can be associated with evidence for the historicity of others in her family, such as her brother Pygmalion and their grandfather Balazeros. Both of these kings are mentioned, as well as Dido, in the list of Tyrian kings given in
+Menander of Ephesus
+'s list of the kings of Tyre, as preserved in
+Josephus
+'s
+Against Apion
+, i.18. Josephus ends his quotation of Menander with the sentence "Now, in the seventh year of his [Pygmalion's] reign, his sister fled away from him and built the city of Carthage in Libya."
+The
+Nora Stone
+, found on Sardinia, has been interpreted by
+Frank Moore Cross
+as naming pmy[y]tn or p‘mytn, which is rendered in the Greek tradition as Pygmalion, as the king of the general who was using the stone to record his victory over the local populace.
+[
+33
+]
+On paleographic grounds, the stone is dated to the 9th century BC. (Cross's translation, with a longer discussion of the Nora stone, is found in the Pygmalion article). If Cross's interpretation is correct, this presents inscriptional evidence substantiating the existence of a 9th-century-BC king of Tyre named (in Greek) Pygmalion.
+Several scholars have identified Baa‘li-maanzer, the king of Tyre who gave tribute to
+Shalmaneser III
+in 841
+BC, with
+𐤁𐤏𐤋𐤏𐤑𐤅𐤓
+‎
+Ba‘al-'azor
+(Phoenician form of the name) or
+Baal-Eser/Balazeros
+(Greek form of the name), Dido's grandfather.
 [
 34
 ]
-The following year, Khedira was called up
-Germany U19
-and immediately made an impact when he scored on his debut, in a 3–0 win over France U19 on 14 November 2012.
 [
 35
 ]
-He made another Germany U19 appearance on 25 March 2013, in a 2–0 win over Ukraine U19.
 [
 36
 ]
-Three years on, Khedira earned a call-up by
-Germany U21
-in November 2014.
 [
 37
 ]
-Through his father, he is also eligible to play for
-Tunisia
-, but he initially rejected call-ups to the team from the Tunisian FA.
+This lends credibility to the account in Josephus/Menander that names the kings of Tyre from
+Abibaal
+and
+Hiram I
+down to the time of Pygmalion and Dido.
+Another possible reference to Balazeros is found in the
+Aeneid
+. It was a common ancient practice of using the
+hypocoristicon
+or shortened form of the name that included only the divine element, so that the "Belus" that Virgil names as the father of Dido in the
+Aeneid
+may be a reference to her grandfather, Baal-Eser II/Balazeros.
+[
+citation needed
+]
+Classicist
+T. T. Duke suggests that instead it is a hypocoristicon of
+Mattan I
+, who was also known as
+MTN-BʿL
+(
+Matan-Baʿal
+, 'Gift of the Lord').
+[
+17
+]
+Even more important than the inscriptional and literary references supporting the historicity of Pygmalion and Dido are chronological considerations that give something of a mathematical demonstration of the veracity of the major feature of the Pygmalion/Dido saga, namely the flight of Dido from Tyre in Pygmalion's seventh year, and her eventual founding of the city of Carthage. Classical authors give two dates for the founding of Carthage. The first is that of
+Pompeius Trogus
+, mentioned above, that says this took place 72 years before the foundation of Rome. At least as early as the 1st century BC, and then later, the date most commonly used by Roman writers for the founding of Rome was 753
+BC.
 [
 38
 ]
-In January 2026, Tunisia head coach
-Sabri Lamouchi
-and his assistant
-Michael Hefele
-travelled to Germany to renew discussions with Khedira regarding a potential switch of international allegiance ahead of the
-2026 FIFA World Cup
-.
+This would place Dido's flight in 753 + 72 = 825 BC. Another tradition, that of the Greek historian
+Timaeus
+(
+c.
+345
+–260 BC), gives 814
+BC for the founding of Carthage. Traditionally most modern scholars have preferred the 814 date. However, the publication of the Shalmaneser text mentioning tribute from Baal-Eser II of Tyre in 841
+BC caused a re-examination of this question, since the best texts of Menander/Josephus only allow 22 years from the accession of Baal-Eser/Balazeros until the seventh year of Pygmalion, and measuring back from 814
+BC would not allow any overlap of Balazeros with the 841 tribute to Shalmaneser. With the 825 date for the seventh year of Pygmalion, however, Balazeros's last year would coincide with 841
+BC, the year of the tribute. Additional evidence in favor of the 825 date is found in the statement of Menander, repeated by Josephus as corroborated from Tyrian court records (
+Against Apion
+i.17,18), that Dido's flight (or the founding of Carthage) occurred 143 years and eight months after
+Hiram
+of Tyre sent assistance to
+Solomon
+for the building of the Temple. Using the 825 date, this Tyrian record would then date the start of Temple construction in 969 or 968
+BC, in agreement with the statement in 1 Kings 6:1 that Temple construction began in Solomon's fourth regnal year. Solomon's fourth year can be calculated as starting in the fall of 968 BC when using the widely accepted date of 931/930 BC for the division of the kingdom after the death of Solomon. These chronological considerations therefore definitely favor the 825 date over the 814 date for Dido's departure from Tyre. More than that, the agreement of this date with the timing of the tribute to Shalmaneser and the year when construction of the First Temple began provide evidence for the essential historicity of at least the existence of Pygmalion and Dido as well as their rift in 825
+BC that eventually led to the founding of Carthage.
+According to J. M. Peñuela, the difference in the two dates for the foundation of Carthage has an explanation if we understand that Dido fled Tyre in 825
+BC, but eleven years elapsed before she was given permission by the original inhabitants to build a city on the mainland, years marked by conflict in which the Tyrians first built a small city on an island in the harbor.
 [
 39
 ]
-In February 2026, it was reported that he had agreed in principle to join the Tunisian national team, with negotiations described as progressing positively.
+Additional information about Dido's activities after leaving Tyre are found in the Pygmalion article, along with a summary of later scholars who have accepted Peñuela's thesis.
+If chronological considerations thus help to establish the basic historicity of Dido, they also serve to refute the idea that she could have had any liaison with
+Aeneas
+. Aeneas fought in the
+Trojan War
+, which is conventionally dated anywhere from the 14th to the 12th centuries BC, far too early for Aeneas to have been alive in the time of Dido. Even with the date of 864
+BC that historical revisionist
+David Rohl
+gives for the end of the Trojan War,
 [
 40
 ]
-In March 2026, Khedira's request to switch international allegiance to Tunisia was approved by
-FIFA
-.
+Aeneas would have been about 77 years old when Dido fled Tyre in 825
+BC and 88 when she began to build Carthage in 814 (following Peñuela's reconstruction), hardly consistent with the romantic intrigues between Dido and Aeneas imagined by
+Virgil
+in the
+Aeneid
+. According to
+Velleius Paterculus
+,
+Cádiz
+and
+Utica
+(roughly meaning "Old Town" opposed to Carthage meaning "New Town") were founded more than 80 years after the Trojan War
 [
 41
 ]
-Personal life
-[
-edit
-]
-Khedira was born in
-Stuttgart
-to a German mother and a Tunisian father.
+and before Carthage which he claimed was founded 65 years before Rome (753 + 65 = 818 BC).
 [
 42
 ]
-He is the younger brother of retired
-Germany
-international
-Sami Khedira
-.
+Continuing tradition
+[
+edit
+]
+Tunisian dinar
+banknote issued in 2005, with a portrait of Elissa
+Numerous early Italian works refer to Dido, e.g., the misogynous
+Proverbia super natura feminarum
+, 101-108 (
+Proverbs on the Nature of Women
+) (ca. 1152) and
+L’Intelligenza
+(1360-1380), where Dido is seen crying because Aeneas has left by sea. On seeing the departing sails billow in the air, she stabs herself in the stomach (stanzas 70-73).
 [
 43
 ]
-He also has an older brother, Denny.
-[
-2
-]
-Khedira revealed that his father and older brother, Sami, influenced him to play football.
-[
-2
-]
-On his preferred position, he said:
-"The
-Six
-is my primary position, but I've played as a
-centre-back
-, too, or have moved half a position forward when we're two-a-side, I think I can adapt anywhere."
-[
-3
-]
-In response to being Sami's younger brother, Rani Khedira made it clear that he was not like his brother and that he wanted to go his own way.
+In the
+Divine Comedy
+, Dante puts the shade of Dido (though not naming her) in the second circle of Hell (V, 61-62), where she is condemned among the lustful to be hurled for eternity in a fierce infernal storm ("la bufera infernal" [V, 31]). Virgil points to her saying, "L'altra è colei che s'ancise amorosa, / e ruppe fede al cener di Sicheo" ("The next is she who killed herself for love, / And broke faith with the ashes of Sichaeus" [Longfellow translation, 1867]).
+Contrary to Dante’s view of Dido as lustful,
+Petrarch
+and
+Boccaccio
+, influenced by St. Jerome’s
+Against Jovinianus
+, portray Dido as a faithful wife to Sychaeus.
 [
 44
 ]
-Khedira also revealed that he has a qualification as a sports and fitness salesman.
+Petrarch refers to Dido both in his
+Trionfi
+, specifically in the "Triumph of Chastity," where she is an exemplary widow, as well as in one of the
+Letters of Old Age
+(
+Seniles
+, IV, 5). She also appears in his epic poem
+Africa
+(IV, 4-6).
 [
 45
 ]
-Career statistics
-[
-edit
-]
-Club
-[
-edit
-]
-As of match played 10 May 2026
+Boccaccio refers to her at least eight times, most notably in chapter 42 of
+On Famous Women
+(1361-1362), the first collection of biographies in Western literature devoted exclusively to women.
 [
 46
 ]
-Appearances and goals by club, season and competition
-Club
-Season
-League
-DFB-Pokal
-Europe
-Total
-Division
-Apps
-Goals
-Apps
-Goals
-Apps
-Goals
-Apps
-Goals
-VfB Stuttgart II
-2011–12
-3. Liga
-12
-0
-—
-—
-12
-0
-2012–13
-3. Liga
-32
-0
-—
-—
-32
-0
-2013–14
-3. Liga
-12
-1
-—
-—
-12
-1
-Total
-56
-1
-—
-—
-56
-1
-VfB Stuttgart
-2013–14
-Bundesliga
-9
-0
-0
-0
-—
-9
-0
-RB Leipzig
-2014–15
-2. Bundesliga
-22
-0
-2
-0
-—
-24
-0
-2015–16
-2. Bundesliga
-19
-0
-1
-0
-—
-20
-0
-2016–17
-Bundesliga
-10
-0
-0
-0
-—
-10
-0
-Total
-51
-0
-3
-0
-—
-54
-0
-RB Leipzig II
-2014–15
-NOFV-Oberliga Süd
-1
-0
-—
-—
-1
-0
-2015–16
-Regionalliga Nordost
-2
-2
-—
-—
-2
-2
-Total
-3
-2
-—
-—
-3
-2
-FC Augsburg
-2017–18
-Bundesliga
-30
-1
-1
-0
-—
-31
-1
-2018–19
-Bundesliga
-30
-4
-4
-0
-—
-34
-4
-2019–20
-Bundesliga
-32
-0
-1
-0
-—
-33
-0
-2020–21
-Bundesliga
-27
-1
-2
-0
-—
-29
-1
-Total
-119
-6
-8
-0
-—
-127
-6
-Union Berlin
-2021–22
-Bundesliga
-32
-0
-5
-0
-8
-[
-a
-]
-0
-45
-0
-2022–23
-Bundesliga
-33
-2
-3
-0
-10
-[
-b
-]
-0
-46
-2
-2023–24
-Bundesliga
-20
-0
-1
-0
-4
-[
-c
-]
-0
-25
-0
-2024–25
-Bundesliga
-32
-1
-2
-0
-—
-34
-1
-2025–26
-Bundesliga
-32
-5
-2
-1
-—
-34
-6
-Total
-149
-8
-13
-1
-22
-0
-184
-9
-Career total
-377
-17
-24
-1
-22
-0
-423
-18
-↑
-Appearances in
-UEFA Europa Conference League
-↑
-Appearances in
-UEFA Europa League
-↑
-Appearances in
-UEFA Champions League
-International
-[
-edit
-]
-As of match played 25 June 2026
+Dido appears in five of his Italian works (
+Ninfale d’Ameto
+,
+Elegia di Madonna Fiammetta
+,
+Filocolo
+,
+Amorosa visione
+, and
+Teseida
+(VI, 45) and three times in Latin. In addition to
+On Famous Women
+, Dido’s story is narrated in his mythological treatise,
+On the Genealogy of the Gods
+, and in
+On the Fates of Famous Men
+.
 [
 47
 ]
-Appearances and goals by national team and year
-National team
-Year
-Apps
-Goals
-Tunisia
-2026
-6
-0
-Total
-6
-0
-Honours
+In Renaissance Italy, Dido’s story appears most notably in three tragedies:
+Alessandro Pazzi de' Medici,
+Dido in Cartagine
+(1524)
+Giambattista Giraldi Cinthio,
+Didone
+(1543)
+Lodovico Dolce,
+Didone
+(1547) with the latter play being the most successful.
 [
-edit
+48
 ]
-Germany U-17
-FIFA U-17 World Cup
-third place:
-2011
-References
+In France,
+Christine de Pizan
+narrates the story of Dido in
+Le Livre de la cité des dames
+(1405) (Book II, Chapter LV).
+Hélisenne de Crenne
+(pseudonym of Marguerite Briet) evokes Dido in her sentimental novel
+Les Angoisses douleurs qui doit faire d'amour
+(1538).
+And
+Étienne Jodelle
+wrote a tragedy, apparently never staged, titled
+Didon se sacrifiant
+(
+Dido Sacrificing Herself
+) (1558). In the 17th century,
+Alexandre Hardy
+used the same title for one of his plays.
+[
+49
+]
+Dido's legend inspired the Renaissance drama
+Dido, Queen of Carthage
+by
+Christopher Marlowe
+.
+[
+50
+]
+Geoffrey Chaucer
+tells Dido’s story in his
+The Legend of Good Women
+(III:
+The Legend of Dido
+), presenting her as an example of virtue.
+William Shakespeare
+refers to Dido twelve times in his plays: four times in
+The Tempest
+, albeit all in one dialogue, twice in
+Titus Andronicus
+, and also in
+Henry VI Part 2
+,
+Antony and Cleopatra
+,
+Hamlet
+,
+Romeo and Juliet
+,
+A Midsummer Night's Dream
+and, most famously, in
+The Merchant of Venice
+, in Lorenzo's and Jessica's mutual wooing:
+In such a night
+Stood Dido with a willow in her hand
+Upon the wild sea banks and waft her love
+To come again to Carthage.
+[
+51
+]
+Lea Desandre
+performs the "
+Dido's Lament
+" aria from
+Purcell
+'s
+Dido and Aeneas
+with
+Les Arts Florissants
+in 2020
+The story of Dido and Aeneas remained popular throughout the post-Renaissance era and was the basis for many operas, with the libretto by
+Metastasio
+,
+Didone abbandonata
+, proving especially popular with composers throughout the eighteenth century and beyond:
+1641:
+La Didone
+by
+Francesco Cavalli
+1656:
+La Didone
+by Andrea Mattioli
+1689:
+Dido and Aeneas
+by
+Henry Purcell
+1693:
+Didon
+by
+Henry Desmarets
+1707:
+Dido, Königin von Carthago
+by
+Christoph Graupner
+1724:
+Didone abbandonata
+by
+Domenico Sarro
+1726:
+Didone abbandonata
+by
+Leonardo Vinci
+1740:
+Didone abbandonata
+by
+Baldassare Galuppi
+1742:
+Didone abbandonata
+by
+Johann Adolph Hasse
+1747:
+Didone abbandonata
+by
+Niccolò Jommelli
+1762:
+Didone abbandonata
+by
+Giuseppe Sarti
+1770:
+Didone abbandonata
+by
+Niccolò Piccinni
+1783:
+Didon
+by Niccolò Piccinni
+1823:
+Didone abbandonata
+by
+Saverio Mercadante
+1860:
+Les Troyens
+by
+Hector Berlioz
+2007:
+Aeneas and Dido
+by
+James Rolfe (composer)
+Also from the 17th century is a
+ballad
+inspired by the relationship between Dido and Aeneas. The ballad, often printed on a
+broadside
+, is called "
+The Wandering Prince of Troy
+", and it alters the end of the relationship between the two lovers, rethinking Dido's final sentiment for Aeneas and rewriting Aeneas's visit to the underworld as Dido's choice to haunt him.
+[
+52
+]
+The Meeting of Dido and Aeneas
+by
+Nathaniel Dance-Holland
+, 1766
+In 1794 Germany,
+Charlotte von Stein
+wrote her own drama named
+Dido
+, with an autobiographical element—as von Stein had been forsaken by her own lover, the famous
+Goethe
+, in a manner which she found reminiscent of
+Aeneas
+.
+In Spain, Dido continues to be a source of inspiration for novelists in this century, in particular María García Esperón,
+Dido Para Eneas
+(Mexico, Ediciones El Naranjo, 2014) and Irene Vallejo,
+El silbido del arquero
+(Zaragoza: Editorial Contraseña, 2015).
+[
+53
+]
+Will Adams' 2014
+thriller
+The City of the Lost
+[
+54
+]
+assumes that Dido fled only as far as
+Cyprus
+and founded a city on the site of modern
+Famagusta
+, that she died there and that Carthage was founded later, when Dido's followers fled further west after a vengeful expedition arrived from Tyre. In this interpretation, the two flights - from Tyre to Cyprus and from Cyprus to Carthage - were combined in later historical memory and all attributed to Dido. In Adams' account, the startling discovery of Dido's hideout and her well-preserved body happens accidentally during an attempted
+Coup D'etat
+by
+Turkish Army
+officers based in Cyprus.
+In another modern interpretation, Dido appears in
+Sid Meier
+'s strategy games
+Civilization II
+and
+Civilization V
+, as the leader of the Carthaginian civilization, although she appears alongside Hannibal in the former. In Civilization V, she speaks Phoenician, with a modern Israeli accent. In 2019, Dido was made the leader of
+Phoenicia
+in
+Civilization VI: Gathering Storm
+, with Tyre as its capital and Carthage as an available name for subsequent cities.
+In honor of Dido, the asteroid
+209 Dido
+, discovered in 1879, was named after her. Another dedication of Queen Dido is the
+Mount Dido
+in
+Antarctica
+.
+[
+55
+]
+Remembrance of the story of the bull's hide and the foundation of Carthage is preserved in mathematics in connection with the
+Isoperimetric problem
+of enclosing the maximum area within a fixed boundary, which is sometimes called Dido's Problem in modern
+calculus of variations
+.
+[
+56
+]
+(Similarly, the
+Isoperimetric theorem
+is sometimes called Dido's Theorem.
+[
+citation needed
+]
+) It is sometimes stated in such discussion that Dido caused her thong to be placed as a half circle touching the sea coast at each end (which would add greatly to the area) but the sources mention the thong only and say nothing about the sea.
+Carthage was the
+Roman Republic
+'s greatest rival and enemy, and Virgil's Dido in part symbolises this. Even though no Rome existed in her day, Virgil's Dido curses the future progeny of the Trojans. In
+Italy during the Fascist administration
+of the 1920s to 1940s, she was regarded as a rival and sometimes negative figure, perhaps not only as a symbol of Rome's nemesis, but because she represented together at least three other unpleasant qualities: her reputation for promiscuity, her
+"Semitic race"
+, and for being a symbol of Rome's erstwhile rival Carthage. As an example, when the streets of new quarters in Rome were named after the characters of Virgil's
+Aeneid
+, only the name
+Dido
+did not appear.
+[
+citation needed
+]
+Tunisian currency
+depicting Dido (Elissa) was issued in 2006.
+[
+57
+]
+Notes
 [
 edit
 ]
 ↑
-"Rani Khedira"
-. 1. FC Union Berlin
-. Retrieved
-4 August
-2022
+"Elissa – Dido Legend of Carthage"
 .
-[
-permanent dead link
-]
+www.phoenician.org
+. Retrieved
+14 April
+2017
+.
+↑
+Barton,
+Semitic and Hamitic Origins
+(1934) at 305.
+1
+2
+Noël 2014
+, p.
+5
+↑
+María Eugenia Aubet
+,
+Tiro and the Phoenician colonies of the West
+, 2nd edition, Bellaterra, 1994, p. 217
+↑
+Noël 2014
+, p.
+3
+↑
+Smith,
+Carthage and the Carthaginians
+(1878, 1902) at 13.
+↑
+Haegemans, Karen (2000).
+"Elissa, the First Queen of Carthage, Through Timaeus' Eyes"
+.
+Ancient Society
+.
+30
+:
+277–
+291.
+doi
+:
+10.2143/AS.30.0.565564
+.
+ISSN
+0066-1619
+.
+JSTOR
+44079812
+.
+↑
+Odgers, Merle M. (1925).
+"Some Appearances of the Dido Story"
+.
+The Classical Weekly
+.
+18
+(19):
+145–
+148.
+doi
+:
+10.2307/4388672
+.
+ISSN
+1940-641X
+.
+JSTOR
+4388672
+.
+1
+2
+Junianus Justinus
+,
+Epitome of Pompeius Trogus'
+"
+Philippic Histories"
+,
+18.4
+↑
+Fratantuono, Lee M.; Smith, R. Alden (2022).
+Virgil, Aeneid 4: Text, Translation, Commentary
+. Mnemosyne Supplements. Monographs on Greek and Latin Language and Literature. Brill. pp.
+162, 214, 561.
+ISBN
+9789004521445
+.
 1
 2
 3
+Junianus Justinus
+,
+Epitome of Pompeius Trogus'
 "
-"Mein Verein"
-"
-(in German). VfB Stuttgart. 12 December 2013.
-Archived
-from the original on 26 June 2017
+Philippic Histories"
+,
+18.5
+↑
+Justin; Yardley, John C.; Hoyos, B. Dexter (2024).
+Epitome of Pompeius Trogus
+. Loeb classical library. Cambridge, Mass. London: Harvard University Press.
+ISBN
+978-0-674-99760-8
+.
+↑
+de Gruyter, Walter (February 1981).
+Aufstieg und Niedergang der römischen Welt: Geschichte und Kultur Roms im Spiegel der Neueren Forschung
+. De Gruyter.
+ISBN
+9783110082883
+.
+↑
+"Dido | Classical mythology"
+.
+Encyclopedia Britannica
 . Retrieved
-26 June
+4 August
 2017
 .
+↑
+Junianus Justinus
+,
+Epitome of Pompeius Trogus'
+"
+Philippic Histories"
+,
+18.6
 1
 2
-"
-"Wir sind nicht zufrieden"
-"
-(in German). VfB Stuttgart. 16 December 2013.
-Archived
-from the original on 26 June 2017
+Virgil
+,
+Aeneid
+,
+1.613
+1
+2
+Duke, T. T. (1969).
+"Review: The World of the Phoenicians"
+.
+The Classical Journal
+.
+65
+(3). The Classical Association of the Middle West and South: 135.
+ISSN
+0009-8353
+.
+JSTOR
+3296263
 . Retrieved
-26 June
+25 May
+2022
+.
+↑
+Virgil
+,
+Aeneid
+,
+1.335
+↑
+Virgil
+,
+Aeneid
+,
+1.657
+↑
+Virgil
+,
+Aeneid
+,
+4.1
+↑
+Virgil
+,
+Aeneid
+,
+4.160
+↑
+Virgil
+,
+Aeneid
+,
+4.362
+↑
+Virgil
+,
+Aeneid
+,
+4.474
+↑
+Virgil
+,
+Aeneid
+,
+4.630
+and
+4.659
+↑
+Virgil
+,
+Aeneid
+,
+4.693
+↑
+Virgil
+,
+Aeneid
+,
+5.1
+↑
+Edgeworth 1976
+.
+↑
+Virgil
+,
+Aeneid
+,
+6.426
+↑
+Ovid
+,
+Heroides
+,
+7
+↑
+Ovid
+,
+Fasti
+,
+Idus 15th
+↑
+"Italicus, Silius (c. 28–c. 103) - Punica (The Second Carthaginian War): Book I"
+.
+www.poetryintranslation.com
+. Retrieved
+14 April
+2025
+.
+↑
+"Italicus, Silius (c. 28–c. 103) - Punica (The Second Carthaginian War): Book VIII"
+.
+www.poetryintranslation.com
+. Retrieved
+14 April
+2025
+.
+↑
+Cross, Frank Moore (1972). "An Interpretation of the Nora Stone".
+Bulletin of the American Schools of Oriental Research
+.
+208
+(208):
+13–
+19.
+doi
+:
+10.2307/1356374
+.
+JSTOR
+1356374
+.
+S2CID
+163533512
+.
+↑
+Liver, J. (1953). "The Chronology of Tyre at the Beginning of the First Millennium B.C.".
+Israel Exploration Journal
+.
+3
+(2):
+113–
+120.
+JSTOR
+27924517
+.
+↑
+Peñuela, Joaquín M. (1953). "La Inscripción Asiria IM 55644 y la Cronología de los Reyes de Tiro"
+[
+The Assyrian Inscription IM 55644 and the Chronology of the Kings of Tire
+]
+.
+Sefarad
+(in Spanish).
+13
+(2):
+217–
+237.
+ProQuest
+1300698169
+.
+↑
+Cross 1972
+, p. 17, n. 11
+↑
+Barnes, William Hamilton (1991). "The Tyrian King List: An External Synchronism from Phoenicia".
+Studies in the Chronology of the Divided Monarchy of Israel
+. pp.
+29–
+55.
+doi
+:
+10.1163/9789004369573_003
+.
+ISBN
+978-1-55540-527-4
+.
+↑
+Jack Finegan,
+Handbook of Biblical Chronology
+(rev. ed.: Peabody, MA: Hendrickson, 1998) 99.
+↑
+Peñuela, Joaquín M. (1954). "La inscripción asiria Im 55644 y la cronología de los reyes de Tiro. Conclusión"
+[
+The Assyrian inscription Im 55644 and the chronology of the kings of Tyre. Conclusion
+]
+.
+Sefarad
+(in Spanish).
+14
+(1):
+3–
+42.
+ProQuest
+1300698990
+.
+↑
+David Rohl,
+The Lords of Avaris
+(London: Century, 2007) 474.
+↑
+Velleius Paterculus
+,
+History of Rome I,II
+↑
+Velleius Paterculus
+,
+History of Rome I,VI
+↑
+Renato Ricco, "Sulle tracce di Didone." Dissertation: Università degli Studi Di Salerno, 2008.
+Dissertation
+↑
+C. Kallendorf, "Boccaccio’s Dido and the Rhetorical Criticism of Virgil’s
+Aeneid
+," in
+Studies in Philology
+, 82, no. 4, 1985, 401-415.
+↑
+James Simpson, "Subjects of triumph and literary history: Dido and Petrarch in Petrarch's
+Trionfi
+and
+Africa
+,"
+Journal of Medieval and Early Modern Studies
+, vol. 35, no. 3, 2005, pp. 489-508.
+↑
+Available in English from Harvard University Press | ISBN 9780674003477 | Publication date: 04/26/2001 as Giovanni Boccaccio,
+Famous Women
+, edited and translated by Virginia Brown.
+↑
+See Zsófia Babics, "La Figura di Didone nelle Opere Latine del Boccaccio,"
+Acta Antiqua Academiae Scientiarum Hungaricae
+, 50, no. 4, 2010. For
+De Mulieribus Claris
+, see Elsa Filosa,
+Tre Studi sul De mulieribus claris
+. Milan: Edizioni Universitarie LED, 2012, p. 101.
+↑
+Ronnie H. Terpening, "From Imitation to Emulation: The Fate of Infelix Dido in Cinquecento Tragedy" in
+Il Veltro, Rivista della civiltà italiana
+, 40, nos. 3-4, 1996, 316-20.
+↑
+René Martin,
+Énée et Didon
+: naissance, fonctionnement et survie d’un mythe
+, Paris: Centre national de la recherche scientifique, 1990.
+↑
+"Dido, Queen of Carthage | play by Marlowe and Nashe"
+.
+Encyclopedia Britannica
+. Retrieved
+4 August
 2017
 .
 ↑
-"Sami KhediraIn BILD erklärt sein Vater den Nationalspieler"
-(in German). Bild.de. 11 September 2009
-. Retrieved
-26 June
-2017
-.
+The Merchant of Venice
+, Act 5, Scene 1
 ↑
-"Khedira-Bruder Rani spielt in StuttgartDie Super-Talente der Bundesliga"
-(in German). Bild.de. 28 January 2012
-. Retrieved
-26 June
-2017
-.
+English Broadside Ballad Archive
+, ballad facsimile and full text
 ↑
-"Reichwein macht es doppelt"
-(in German).
-Kicker
-. 28 January 2012
-. Retrieved
-26 June
-2017
-.
+For earlier works in Spanish, see Maria Rosa Lida de Malkeil,
+Dido en la literatura española. Su retrato y defensa
+, Tamesis Books, 1974.
 ↑
-"VfB Stuttgart II besiegt Burghausen mit 4:0"
-(in German). Bild.de. 8 September 2013
-. Retrieved
-26 June
-2017
-.
+Will Adams,
+The City of the Lost
+,
+HarperCollins
+, London, 2014, ISBN 978-0-00-742427-6
 ↑
-"Rani Khedira rückt auf"
+"Dido, Mount"
 .
-VfB Stuttgart
-(in German). 23 October 2012. Archived from
-the original
-on 26 December 2016
+Geographic Names Information System
+.
+United States Geological Survey
+,
+United States Department of the Interior
 . Retrieved
-23 October
+19 January
 2012
 .
 ↑
-"Khedira extends deal until 2015"
+Wiegert, Jennifer.
+"The Sagacity of Circles: A History of the Isoperimetric Problem - The Isoperimetric Problem in Literature | Mathematical Association of America"
 .
-vfb.de
-.
-VfB Stuttgart
-. 28 January 2013. Archived from
-the original
-on 3 March 2016
+old.maa.org
 . Retrieved
-28 January
-2013
+10 March
+2025
 .
 ↑
-"Kommt Rani Khedira für Gentner nach?"
-(in German).
-Kicker
-. 21 November 2012
-. Retrieved
-26 June
-2017
+Masri, Safwan M. (2017).
+"Carthage"
 .
-↑
-"Ibisevic macht das halbe Dutzend voll"
-(in German).
-Kicker
-. 1 September 2013
-. Retrieved
-26 June
-2017
+Tunisia: An Arab Anomaly
+. Columbia University Press. pp.
+93–
+107.
+doi
+:
+10.7312/masr17950
 .
-↑
-"Ibisevic macht das halbe Dutzend voll"
-(in German).
-Kicker
-. 7 December 2013
-. Retrieved
-26 June
-2017
+ISBN
+978-0-231-54502-0
 .
-↑
-"Schneider testet Bubi YalcinSechser-Sensation beim VfB"
-(in German). Bild.de. 20 February 2014
-. Retrieved
-26 June
-2017
+JSTOR
+10.7312/masr17950.13
 .
-↑
-"RB holt Khedira - und will auch Boyd"
-(in German).
-Kicker
-. 26 June 2014
-. Retrieved
-26 June
-2017
+Selected bibliography
+[
+edit
+]
+H. Akbar Khan,
+"Doctissima Dido": Etymology, Hospitality and the Construction of a Civilized Identity
+, 2002.
+Elmer Bagby Atwood
+,
+Two Alterations of Virgil in Chaucer's Dido
+, 1938.
+S. Conte,
+Dido sine veste
+, 2005.
+R. S. Conway
+,
+The Place of Dido in History
+, 1920.
+F. Della Corte,
+La Iuno-Astarte virgiliana
+, 1983.
+G. De Sanctis,
+Storia dei Romani
+, 1916.
+Edgeworth, R. J. (1976). "The Death of Dido".
+The Classical Journal
 .
-↑
-"Rani Khedira leaves VfB"
+72
+(2):
+129–
+133.
+JSTOR
+3297083
 .
-vfb.de
+M. Fantar,
+Carthage, la prestigieuse cité d'Elissa
+, 1970.
+L. Foucher,
+Les Phéniciens à Carthage ou la geste d'Elissa
+, 1978.
+Michael Grant,
+Roman Myths
+, 1973.
+M. Gras/P. Rouillard/J. Teixidor,
+L'univers phénicien
+, 1995.
+H.D. Gray,
+Did Shakespeare write a tragedy of Dido?
+, 1920.
+G. Herm,
+Die Phönizier
+, 1974.
+T. Kailuweit,
+Dido – Didon – Didone. Eine kommentierte Bibliographie zum Dido-Mythos in Literatur und Musik
+, 2005.
+R.C. Ketterer,
+The perils of Dido: sorcery and melodrama in Vergil's Aeneid IV and Purcell's Dido and Aeneas
+, 1992.
+R.H. Klausen,
+Aeneas und die Penaten
+, 1839.
+G. Kowalski,
+De Didone graeca et latina
+, 1929.
+A. La Penna, Didone, in Enciclopedia Virgiliana, II, 1985, 48–57
+F.N. Lees,
+Dido Queen of Carthage and The Tempest
+, 1964.
+J.-Y. Maleuvre,
+Contre-Enquête sur la mort de Didon
+, 2003.
+J.-Y. Maleuvre,
+La mort de Virgile d’après Horace et Ovide
+, 1993;
+L. Mangiacapre,
+Didone non è morta
+, 1990.
+P.E. McLane,
+The Death of a Queen: Spencer's Dido as Elizabeth
+, 1954.
+O. Meltzer,
+Geschichte der Karthager
+, 1879.
+A. Michel,
+Virgile et la politique impériale: un courtisan ou un philosophe?
+, 1971.
+R.C. Monti,
+The Dido Episode and the Aeneid: Roman Social and Political Values in the Epic
+, 1981.
+S. Moscati,
+Chi furono i Fenici. Identità storica e culturale di un popolo protagonista dell'antico mondo mediterraneo
+, 1992.
+R. Neuse,
+Book VI as Conclusion to The Faerie Queene
+, 1968.
+Noël, Marie-Pierre (2014).
+Élissa, la Didon grecque, dans la mythologie et dans l'histoire
+[
+Elissa, the Greek Dido, in mythology and history
+]
+. Journée d'étude ”Les figures de Didon
+: de l'épopée antique au théâtre de la Renaissance”, lab. IRCL, Université Paul-Valéry Montpellier 3, Montpellier, 10 janvier 2014 (in French). IRCL.
+Nolfo, Fabio (2015). "
+'Epigr. Bob.' 45 Sp. (= Ps. Auson. 2 pp. 420 s. Peip.): la palinodia di Didone negli 'Epigrammata Bobiensia' e la sua rappresentazione iconica".
+Sileno
+(in Italian).
+41
+(
+1–
+2):
+277–
+304.
+hdl
+:
+2268/264046
 .
-VfB Stuttgart
-. 17 June 2014.
-Archived
-from the original on 3 March 2016
-. Retrieved
-17 June
-2014
+OCLC
+1121601459
 .
-↑
-"Wann gibt es den ersten Gomez aus Leipzig?"
-(in German). Bild.de. 13 September 2013
-. Retrieved
-26 June
-2017
+Nolfo, Fabio (2018). "Su alcuni aspetti del movimento elegiaco di un epigramma tardoantico
+: la Dido Bobiensis"
+[
+On some aspects of the 'elegiac movement' of a late antique epigram: the 'Dido Bobiensis'
+]
 .
-↑
-"Leipzigs Pressing bringt keinen Erfolg"
-(in German).
-Kicker
-. 2 August 2014
-. Retrieved
-26 June
-2017
+Vichiana
+(in Italian).
+55
+(2):
+71–
+90.
+doi
+:
+10.19272/201812802005
 .
-↑
-"In Leipzig spielt Khedira eine Rolle"
-(in German).
-Kicker
-. 4 February 2015
-. Retrieved
-26 June
-2017
+hdl
+:
+2268/264045
 .
-↑
-"Zorniger: "Sandhausen ist eine Macht"
-"
-(in German).
-Kicker
-. 28 November 2014
-. Retrieved
-26 June
-2017
-.
-↑
-"Roshi nutzt Coltortis Blackout"
-(in German).
-Kicker
-. 15 February 2015
-. Retrieved
-26 June
-2017
-.
-↑
-"Erneute Pause für Leipzigs Khedira"
-(in German).
-Kicker
-. 27 February 2015
-. Retrieved
-26 June
-2017
-.
-↑
-"Lex erlöst die Schanzer - Ingolstadt steigt auf"
-(in German).
-Kicker
-. 17 May 2015
-. Retrieved
-26 June
-2017
-.
-↑
-"Leipzigs Khedira soll ein Spezialist werden"
-(in German).
-Kicker
-. 7 January 2016
-. Retrieved
-26 June
-2017
-.
-↑
-"Rangnick fordert Balleroberungen - Khedira fällt aus"
-(in German).
-Kicker
-. 2 October 2015
-. Retrieved
-26 June
-2017
-.
-↑
-"Weinzierl in Leipzig aus dem Rennen - Khedira verletzt"
-(in German).
-Kicker
-. 2 April 2016
-. Retrieved
-26 June
-2017
-.
-↑
-"Leipzig-KhediraDer traurigste Stammplatz der Liga"
-(in German). Bild.de. 2 November 2016. Archived from
-the original
-on 6 November 2016
-. Retrieved
-27 June
-2017
-.
-↑
-"Keitas Knaller gibt gleich die Richtung vor"
-(in German).
-Kicker
-. 25 November 2016
-. Retrieved
-27 June
-2017
-.
-↑
-"Compper verlängert - Khedira sagt Adieu"
-(in German).
-Kicker
-. 21 May 2017
-. Retrieved
-27 June
-2017
-.
-↑
-"FußballSami Khedira riet Bruder Rani von Leipzig-Weggang ab"
-(in German). Bild.de. 1 March 2017
-. Retrieved
-27 June
-2017
-.
-↑
-"Augsburg angelt sich Rani Khedira"
-(in German).
-Kicker
-. 7 June 2017
-. Retrieved
-26 June
-2017
-.
-↑
-"Rani Khedira wechselt vom FC Augsburg zu Union Berlin"
-(in German). rbb24.de. 26 April 2021. Archived from
-the original
-on 1 June 2023
-. Retrieved
-27 May
-2023
-.
-↑
-"Union schlägt Frankfurt mit 2:0"
-(in German). Union Berlin. 19 March 2023. Archived from
-the original
-on 1 March 2024
-. Retrieved
-27 May
-2023
-.
-↑
-"Khedira schießt Union in die Champions League"
-(in German). Sportschau. 27 May 2023. Archived from
-the original
-on 27 May 2023.
-↑
-"Freund benennt seinen WM-Kader"
-(in German).
-Kicker
-. 3 June 2011
-. Retrieved
-26 June
-2017
-.
-↑
-"U 19 lässt Frankreich abblitzen"
-(in German).
-Kicker
-. 14 November 2012
-. Retrieved
-27 June
-2017
-.
-↑
-"Testspielsieg für DFB-U19"
-(in German). VfB Stuttgart. 14 November 2012.
-Archived
-from the original on 27 June 2017
-. Retrieved
-27 June
-2017
-.
-↑
-"Khediras Deutschland-Debüt platzt"
-(in German).
-Kicker
-. 12 November 2014
-. Retrieved
-26 June
-2017
-.
-↑
-"Khedira: "Gab nie den Gedanken, für Tunesien zu spielen"
-"
-(in German). Fussball Transfers. 10 February 2015
-. Retrieved
-26 June
-2017
-.
-↑
-"Im neuen Jahr noch ohne Sieg – eine trügerische Situation für Union Berlin"
-(in German). Kicker. February 2026
-. Retrieved
-4 February
-2026
-.
-↑
-"Tunesien wirbt erneut um Union-Star Khedira"
-(in German). Bild. January 2026
-. Retrieved
-4 February
-2026
-.
-↑
-"FIFA Change of Association Platform"
-.
-knowledge.fifa.com
-. 4 March 2026
-. Retrieved
-4 March
-2026
-.
-↑
-"Deutsche Talente und ihre Alternativen"
-(in German). Kurier. Archived from
-the original
-on 19 June 2009.
-↑
-"Stuttgart: Auf den Spuren des großen Bruders Khedira und der VfB: Rani eifert Sami nach"
-.
-Kicker Online
-.
-↑
-"Neben SamiRani träumt von der Khedira-Doppelsechs"
-(in German). Bild.de. 11 December 2013
-. Retrieved
-26 June
-2017
-.
-↑
-"Der kleine Khedira erobert die Bundesliga"
-(in German). Bild.de. 27 September 2013
-. Retrieved
-27 June
-2017
-.
-↑
-"Rani Khedira"
-.
-WorldFootball.net
-. Retrieved
-23 September
-2020
-.
-↑
-Rani Khedira
-at National-Football-Teams.com
+Adam Parry
+,
+The Two Voices of Virgil's Aeneid
+, 1963.
+G.K. Paster,
+Montaigne, Dido and The Tempest: "How Came That Widow In?
+, 1984.
+B. Schmitz,
+Ovide, In Ibin: un oiseau impérial
+, 2004;
+E. Stampini,
+Alcune osservazioni sulla leggenda di Enea e Didone nella letteratura romana
+, 1893;
+A. Ziosi, Didone regina di Cartagine di Christopher Marlowe. Metamorfosi virgiliane nel Cinquecento, 2015;
+A. Ziosi, Didone. La tragedia dell'abbandono. Variazioni sul mito (Virgilio, Ovidio, Boccaccio, Marlowe, Metastasio, Ungaretti, Brodskij), 2017.
+Primary sources
+[
+edit
+]
+Virgil,
+Aeneid i.338–368
+Justinus,
+Epitome Historiarum philippicarum Pompei Trogi xviii.4.1–6, 8
 External links
 [
 edit
 ]
 Wikimedia Commons has media related to
-Rani Khedira
+Dido
 .
-Rani Khedira
-at
-DFB
-(also available
-in German
-)
-Rani Khedira
-–
-FIFA
-competition record (archived)
-Rani Khedira
-–
-UEFA
-competition record (
-archive
-)
-v
-t
-e
-1. FC Union Berlin
-–
-current squad
-1
-Rønnow
-4
-Van
-Den
-Bosch
-5
-Friedrich
-6
-Kemlein
-7
-Burke
-8
-Khedira
-9
-Burcu
-10
-Ansah
-11
-Jeong W.Y.
-13
-Schäfer
-14
-Querfeld
-15
-Rothe
-18
-Juranović
-19
-Haberer
-21
-Skarke
-23
-Ilić
-24
-Skov
-25
-Klaus
-27
-Ljubičić
-28
-Trimmel
+Wikisource
+has the text of the
+1911
+Encyclopædia Britannica
+article "
+Dido
+".
+Selected English texts
 (
-c
+Alternate links found in Wikipedia entries for the respective authors.
 )
-30
-Bohdanov
-31
-Raab
-32
-Gray
-34
-Nsoki
-38
-Friedrich
-39
-Köhn
-41
-Ogbemudia
-44
-Blaszczak
-49
-Güther
-Manager:
-Lustrinelli
+Forum Romanum: Justin 18.3f
+(Contains
+Justin
+(18.3–6) relating the early story of Elissa in full.)
+Translation of Virgil's works including the
+Aeneid
+by
+A. S. Kline
+Ovid's imagined letter from Dido to Aeneas, trans. Miceal F. Vaughan
+(See also
+Ovid
+.)
+Appian,
+The Punic Wars
+, chapter 1
+(See also
+Appian
+.)
+Dido, Queen of Carthage
+Archived
+1 September 1999 at the
+Wayback Machine
+, original text, modernization, and discussion of
+Chaucer
+'s
+Legend of Dido
+The Tragedy of Dido, Queen of Carthage
+, by Christopher Marlowe (and Thomas Nashe?)
+. (See also
+Christopher Marlowe
+.)
+Commentary
+Greek Mythology Link: Dido
+Queen Dido: Didone Liberata
+(Mostly about a new four-act play by Salvatore Conte; it contains also a confutation of the well-known suicide into a subjective vision of Aeneas and his "comites" – 4.664, followed by Dido's catabasis)
+Warburg Institute Iconographic Database (about 900 images related to the Aeneid – Dido appears in Books I and IV)
 v
 t
 e
-Tunisia squad
+Notable Carthaginians
+Adherbal (admiral)
+Adherbal (governor)
+Barcids
+Hamilcar Barca
+Hannibal Barca
+Hasdrubal Barca
+Hasdrubal the Fair
+Mago Barca
+Carthalo
+Dido
+Hamilcar (Drepanum)
+Hannibal Gisco
+Hannibal Monomachus
+Hannibal the Rhodian
+Hanno the Elder
+Hanno the Great
+Hanno the Navigator
+Hanno, son of Bomilcar
+Hasdrubal Gisco
+Hasdrubal the Boetharch
+Hasdrubal (quartermaster)
+Himilco
+Himilco (commander of Lilybaeum)
+Himilco (fl. 3rd century BC)
+Mago (agricultural writer)
+Magonids
+Maharbal
+Phameas
+Sophonisba
+Ancient Carthage
+v
+t
+e
+"Dido and Aeneas" from
+Virgil
+'s
+Aeneid
+Characters
+Dido
+Aeneas
+Operas
+Didone
+(1641, Cavalli)
+Dido and Aeneas
+(1688, Purcell)
+discography
+"
+Dido's Lament
+"
+Didon
+(1693, Desmarets)
+Didone abbandonata
+(1724, Metastasio)
+Didone abbandonata
+(1724, Sarro)
+Didone abbandonata
+(1724, Albinoni)
+Didone abbandonata
+(1762, Sarti)
+Didon
+(1783, Piccinni)
+Dido, Queen of Carthage
+(1792, Storace)
+Les Troyens
+(1863, Berlioz)
+Plays
+Dido, Queen of Carthage
+(c. 1593)
+Poetry
+Roman d'Enéas
+(1160)
+Eneas romance
+(c. 1170
 –
-2026 FIFA World Cup
-1
-Chamakh
+1188)
+Music
+Simple Man
+Art
+Dido building Carthage
+Dido and Aeneas
+Related
+Low Ham Roman Villa
+Amelia
+v
+t
+e
+Virgil
+'s
+Aeneid
+(19 BC)
+Characters
+Deities
+Alecto
+Crinisus
+Cupid
+Hecate
+Hymen
+Juno
+Jupiter
+Mars
+Mercury
+Saturn
+Tiberinus
+Venus
+Trojans
+Achates
+Aeneads
+Aeneas
+Aeolus
+Aletes
+Anchises
+Andromache
+Antiphates
+Ascanius
+Caieta
+Capys
+Cassandra
+Clonius
+Corynaeus
+Creusa
+Dardanus
+Dares Phrygius
+Deiphobus
+Elymus
+Entellus
+Euryalus
+Gyas
+Helenus
+Hippocoon
+Ilioneus
+Laocoön
+Mimas
+Misenus
+Mnestheus
+Nisus
+Ornytus
+Palinurus
+Pandarus
+Panthous
+Paris
+Polites
+Priam
+Ripheus
+Sergestus
+Theano
+Thymoetes
+Ucalegon
+Phoenicians
+Acerbas
+Anna Perenna
+Belus
+Dido
+Mattan I
+Pygmalion of Tyre
+Others
+Acestes
+Achaemenides
+Actor
+Ajax the Lesser
+Amata
+Androgeus
+Automedon
+Aventinus
+Butes
+Camilla
+Catillus
+Clytius
+Cydon
+Cydonians
+Diomedes
+Erulus
+Evander of Pallene
+Halaesus
+Iarbas
+Juturna
+Latinus
+Lausus
+Lavinia
+Macar
+Messapus
+Metabus
+Mezentius
+Neoptolemus
+Pallas
+Picus
+Rutuli
+Salius
+Sinon
+Turnus
+Ufens
+Umbro
+Venulus
+Film and TV
+The Avenger
+(1962)
+Eneide
+(1971–1972)
+Eneyida
+(1991)
+Literature
+Historia Brittonum
+(
+c.
+828
+history of Britain)
+Roman d'Enéas
+(1160 poem)
+Eneas romance
+(c. 1170–1188)
+Dido, Queen of Carthage
+(c. 1593 play)
+Virgile travesti
+(1648)
+Amelia
+(1751 novel)
+The Dunciad
+(1729 poem)
+Eneida
+(1798 mock epic)
+Lavinia
+(2008 novel)
+Opera
+Didone
+(1641 Cavalli)
+Achille et Polyxène
+(1687 Lully/Collasse)
+Dido and Aeneas
+(1688 Purcell)
+Didon
+(1693 Desmarets)
+Didone abbandonata
+(1724 libretto Metastasio)
+Didone abbandonata
+(1724 Sarro)
+Didone abbandonata
+(1724 Albinoni)
+Didone abbandonata
+(1726 Vinci)
+Didone abbandonata
+(1762 Sarti)
+Didon
+(1783 Piccinni)
+Dido, Queen of Carthage
+(1792 Storace)
+Les Troyens
+(1858 Berlioz)
+Manuscripts
+Book of Ballymote
+Papyrus Oxyrhynchus 31
+Vergilius Augusteus
+Vergilius Romanus
+Vergilius Vaticanus
+Phrases
+Ad astra
+Annuit cœptis
+Experto crede
+Fortune favours the bold
+Lacrimae rerum
+Mind over matter
+Obscuris vera involvens
+Quos ego
+Timeo Danaos et dona ferentes
+Art
+Laocoön and His Sons
+(25 BC)
+Aeneas, Anchises, and Ascanius
+(1619)
+The Dream of Aeneas
+(1660–1665)
+Ascanius Shooting the Stag of Sylvia
+(1689)
+The Death of Dido
+(1781)
+Dido Building Carthage
+(1815)
+The Golden Bough
+(1834)
+Mercury Sent to Admonish Aeneas
+(1850)
+Music
+"
+And Then There Was Silence
+"
+Gates of Fire
+Study
+Aposiopesis
+Dactylic hexameter
+Hysteron proteron
+Sortes Vergilianae
+Related
+Brutus of Troy
+Eneados
+Golden Bough
+Parallels between Virgil's
+Aeneid
+and Homer's
+Iliad
+and
+Odyssey
+Political commentary of the
+Aeneid
+Sulpicius Apollinaris
+Servius
+Trojan Horse
+Harvard School
+Authority control databases
+International
+VIAF
 2
-Abdi
-3
-Talbi
-4
-Rekik
-5
-Arous
-6
-Bronn
-7
-Achouri
-8
-Saad
-9
-Mastouri
-10
-Mejbri
-11
-Gharbi
-12
-Ben Ouanes
-13
-Khedira
-14
-Ayari
-15
-Belhadj Mahmoud
-16
-Dahmen
-17
-Skhiri
-(
-c
-)
-18
-Elloumi
-19
-Chaouat
-20
-Valery
-21
-Ben Hamida
-22
-Ben Hessen
-23
-Neffati
-24
-Chikhaoui
-25
-Ben Slimane
-26
-Tounekti
-Coach:
-Lamouchi
-/
-Renard
-a
-a
-Lamouchi was sacked after the first match and replaced by Renard.
+GND
+WorldCat
+National
+United States
+Czech Republic
+Poland
+Israel
+Artists
+FID
+People
+DDB
+Other
+IdRef
+Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Rani_Khedira&oldid=1364835011
+https://en.wikipedia.org/w/index.php?title=Dido&oldid=1365371748
 "
 Categories
 :
-1994 births
-Living people
-Footballers from Stuttgart
-Tunisian men's footballers
-Tunisia men's international footballers
-German men's footballers
-Germany men's youth international footballers
-Tunisian people of German descent
-German people of Tunisian descent
-Men's association football midfielders
-Bundesliga players
-2. Bundesliga players
-3. Liga players
-Regionalliga players
-Oberliga (football) players
-VfB Stuttgart II players
-VfB Stuttgart players
-RB Leipzig players
-FC Augsburg players
-1. FC Union Berlin players
-21st-century German sportsmen
-Sportspeople of Tunisian descent
-21st-century Tunisian sportsmen
-Sportspeople of German descent
-2026 FIFA World Cup players
+9th-century BC queens regnant
+Africa in Roman mythology
+Ancient African women
+Ancient Greeks in Africa
+Carthaginian mythology
+Carthaginian women
+Characters in Book VI of the Aeneid
+Deified women
+Legendary Greek people
+Legendary monarchs
+Monarchs of Carthage
+Mythological founders of populated places
+Phoenician characters in the Aeneid
+Tunisian women
+Queens regnant in Africa
+Cultural depictions of Dido
 Hidden categories:
 Articles with short description
-Short description is different from Wikidata
-Use dmy dates from September 2020
-All articles with dead external links
-Articles with dead external links from August 2025
-Articles with permanently dead external links
-Articles containing Arabic-language text
-CS1 German-language sources (de)
-Commons category link from Wikidata
-DFB template using numeric ID
-Pages using national squad without sport or team link
+Short description matches Wikidata
+Use dmy dates from February 2021
+Pages with Classical Latin IPA
+Articles containing Ancient Greek (to 1453)-language text
+Pages with Ancient Greek (to 1453) IPA
+CS1 Spanish-language sources (es)
+All articles with unsourced statements
+Articles with unsourced statements from May 2022
+Articles with unsourced statements from March 2025
+Articles containing Latin-language text
+CS1 French-language sources (fr)
+CS1 Italian-language sources (it)
+Commons category link is on Wikidata
+Webarchive template wayback links
+Articles containing French-language text
+Articles containing Italian-language text
+Articles containing video clips
 Search
 Search
-Rani Khedira
-31 languages
+Dido
+51 languages
 Add topic
 
 ---
 
-Tunisia national football team - Wikipedia
+Dido (disambiguation) - Wikipedia
 Jump to content
 Search
 Search
-Tunisia national football team
-77 languages
-Afrikaans
-አማርኛ
+Dido (disambiguation)
+35 languages
 العربية
-الدارجة
-مصرى
-Asturianu
-Azərbaycanca
-تۆرکجه
-Basa Bali
-Беларуская (тарашкевіца)
-Беларуская
-Български
-বাংলা
+Brezhoneg
 Bosanski
 Català
-کوردی
+Cebuano
 Čeština
-Cymraeg
 Dansk
 Deutsch
-Ελληνικά
 Esperanto
 Español
-Eesti
 Euskara
 فارسی
 Suomi
 Français
-Galego
+Frysk
 עברית
-Hrvatski
 Magyar
-Հայերեն
 Bahasa Indonesia
-Íslenska
 Italiano
 日本語
-Jawa
-ქართული
-Қазақша
 한국어
-Кыргызча
 Latina
-Limburgs
-Lietuvių
 Latviešu
-मराठी
-Bahasa Melayu
-Malti
-Napulitano
-नेपाली
 Nederlands
 Norsk bokmål
 Polski
 Português
-Română
 Русский
 Scots
 Simple English
 Slovenčina
 Slovenščina
-Shqip
-Српски / srpski
-Svenska
-தமிழ்
-ไทย
 Türkçe
-Татарча / tatarça
-Українська
-اردو
-Oʻzbekcha / ўзбекча
 Tiếng Việt
-吴语
-მარგალური
-閩南語 / Bân-lâm-gí
-粵語
 中文
 Edit links
 From Wikipedia, the free encyclopedia
-Men's association football team
-This article is about the men's team. For the women's team, see
-Tunisia women's national football team
-.
-Tunisia
-Nickname(s)
-نسور قرطاج
-(Eagles of
-Carthage
-)
-المنتخب
-(The Selection)
-Association
-Tunisian Football Federation
-(TFF)
-Confederation
-CAF
-(Africa)
-Sub-confederation
-UNAF
-(North Africa)
-Head coach
-Mouin Chaâbani
-Captain
-Ellyes Skhiri
-Most
-caps
-Radhi Jaïdi
-(105)
-Top scorer
-Issam Jemâa
-(
-36
-)
-Home stadium
-Hammadi Agrebi Stadium
-FIFA code
-TUN
+Look up
+dido
+or
+Dido
+in Wiktionary, the free dictionary.
+Dido
+was founder and first queen of Carthage.
+Dido
+or
+DIDO
+may also refer to:
+Arts
 [
-1
+edit
 ]
-First
-colours
-Second
-colours
-Third
-colours
-FIFA ranking
-Current
-45
-1 (11 June 2026)
+Dido, Queen of Carthage
+(play)
+, a play by Christopher Marlowe
+Dido and Aeneas
+, an opera by Henry Purcell
+Dido, Queen of Carthage
+(opera)
+, an opera by Stephen Storace
+Dido
+(Fuseli)
+, a painting by Henry Fuseli
+"Dido", a song on
+Café del Mar Aria
+Fido Dido
+, a cartoon character
+People
 [
-2
+edit
 ]
-Highest
-14 (April – May 2018)
-Lowest
-65 (July 2010)
-First international
-Tunisia
-4–2
-Libya
-(
-Tunis
-, Tunisia; 2 June 1957)
-Biggest win
-Tunisia
-8–1
-Taiwan
-(
-Rome
-, Italy; 18 August 1960)
-Tunisia
-7–0
-Togo
-(Tunis, Tunisia; 7 January 2000)
-Tunisia
-7–0
-Malawi
-(Tunis, Tunisia; 26 March 2005)
-Tunisia
-8–1
-Djibouti
-(Tunis, Tunisia; 12 June 2015)
-Biggest defeat
-Hungary
-10–1
-Tunisia
-(
-Budapest
-, Hungary; 24 July 1960)
-World Cup
-Appearances
-7 (
-first in
-1978
-)
-Best result
-Group stage (
-1978
-,
-1998
-,
-2002
-,
-2006
-,
-2018
-,
-2022
-,
-2026
-)
-Africa Cup of Nations
-Appearances
-22 (
-first in
-1962
-)
-Best result
-Champions
-(
-2004
-)
-African Nations Championship
-Appearances
-2 (
-first in
-2011
-)
-Best result
-Champions
-(
-2011
-)
-Arab Cup
-Appearances
-4 (
-first in
-1963
-)
-Best result
-Champions
-(
-1963
-)
-Confederations Cup
-Appearances
-1 (
-first in
-2005
-)
-Best result
-Group stage (
-2005
-)
-Medal record
-Men's
-Football
-Africa Cup of Nations
-2004 Tunisia
-Team
-1965 Tunisia
-Team
-1996 South Africa
-Team
-1962 Ethiopia
-Team
-African Nations Championship
-2011 Sudan
-Team
-African Games
-1991 Cairo
-Team
-2007 Algiers
-Team
-Arab Cup
-1963 Lebanon
-Team
-2021 Qatar
-Team
-Palestine Cup of Nations
-1973 Libya
-Team
-Arab Games
-1957 Lebanon
-Team
-Mediterranean Games
-2001 Tunis
-Team
-1971 Izmir
-Team
-1975 Alger
-Team
-2013 Mersin
-Team
-Website
-ftf
-.org
-.tn
-(in French)
+Dido (singer)
+, a British singer-songwriter
+Dido Ali
+, Kenyan politician
+Dido Elizabeth Belle
+, daughter of John Lindsay
+Dido Fontana
+, an Italian photographer
+Dido (footballer)
+, a Brazilian footballer
+Dido Harding
+, Baroness Harding of Winscombe
+Dido Miles
+, an English actress
+E.K.M. Dido
+, a South African writer
+Transport
+[
+edit
+]
+HMS
+Dido
+, the name of seven British Royal Navy vessels
+Dido (train)
+a train, typically for railway staff, provided on a
+D
+ay
+i
+n,
+d
+ay
+o
+ut basis
+Other
+[
+edit
+]
 The
-Tunisia national football team
-represents
-Tunisia
-in men's international
-association football
-competitions, and is controlled by the
-Tunisian Football Federation
-(TFF). The team competes under the
-Confederation of African Football
-(CAF) on the continental level, and is affiliated with
-FIFA
-for global competitions. Additionally, the team is a member of the
-Union of North African Football
-(UNAF) and the
-Union of Arab Football Associations
-(UAFA). The team is colloquially known as
-Eagles of
-Carthage
-by fans and the media, with the
-bald eagle
-serving as its symbol.
-[
-3
-]
-Their home kit is primarily white and their away kit is red, which is a reference to the
-national flag
-of the country. The team has qualified for the
-FIFA World Cup
-seven times and the
-Africa Cup of Nations
-22 times, and has appeared in four editions of
-Summer Olympics
-and participated once in the
-FIFA Confederation Cup
-. Since 2001, Tunisia's home stadium is the
-Hammadi Agrebi Stadium
-in
-Radès
-, Tunis.
-Tunisia's first match after independence was against
-Libya
-, which they won 4–2. The team qualified for the FIFA World Cup for the first time in
-1978
-as the only representative of the continent, and became the first African and Arab team to win a World Cup match by beating
-Mexico
-3–1
-in the first game. Tunisia holds the most consecutive appearances in the Africa Cup of Nations, with 17, qualifying for every tournament between
-1994
-and
-2025
-. By winning the
-2004 African Cup of Nations
-, they qualified for the
-2005 FIFA Confederations Cup
-and was eliminated in the group stage. The team qualified twice for the
-African Nations Championship
-, winning the title in their first appearance in
-2011
-, while also competing in the
-FIFA Arab Cup
-three times, winning the title in the inaugural edition in
-1963
-and finishing second in
-2021
-.
-Radhi Jaïdi
-, with 105 international matches, holds the record for the number of matches played for Tunisia while
-Issam Jemâa
-, with
-36 goals
-, is their all-time highest scorer. Their highest-ever
-FIFA Men's World Ranking
-was 14th in April and May 2018, while their lowest rank was 65th in July 2010.
-[
-4
-]
-On 13 October 2025, Tunisia became the first team in history to qualify for the World Cup without conceding a goal, during the
-2026 World Cup qualifying
-campaign.
-[
-citation needed
-]
-History
+Tsez people
+, or Dido, are an indigenous people of the North Caucasus
+The
+Tsez language
+, or Dido, the language of the Tsez people
+DIDO (nuclear reactor)
+, a nuclear reactor at the Atomic Energy Research Establishment
+DIDO (software)
+, software for solving optimal control problems
+209 Dido
+, a very large main-belt asteroid
+DIDO (network)
+, "distributed input distributed output" wireless network technology
+Dido, Texas
+, a ghost town in Tarrant County, Texas
+Dido's problem
+, the isoperimetric problem in mathematics
+See also
 [
 edit
 ]
-Main article:
-History of the Tunisia national football team
-1928–1956: French protectorate of Tunisia and beginning
-[
-edit
-]
-The Tunisian football team in 1939.
-Before independence, an unofficial team was formed in 1928, comprising the best Tunisian players from the
-Tunisian League
-. The team's first match was on 11 March 1928, against the
-France national football B team
-; Tunisia lost 8–2.
-[
-5
-]
-Their next friendlies, against the same team on 23 March 1930 and 26 March 1933, also resulted in heavy defeats: 0–5 and 1–6 respectively.
-Tunisia had to wait until 1932 for their first match win: a 1–0 victory over
-French Algeria
+All pages with titles containing
+dido
+Topics referred to by the same term
+This
+disambiguation
+page lists  articles associated with the title
+Dido
 .
-[
-6
-]
-Most of the matches that Tunisia played in the 30s and 40s were against French teams, whether it was French Algeria, the
-French military team
-or the France B team, in addition to a match against the
-France national team
-in 1941. Most of these matches were played at the
-Stade Vélodrome
-in
-Tunis
-.
-1956–1962: Post independence, First international participation
-[
-edit
-]
-Tunisia gained
-independence
-from France on 20 March 1956. The
-Tunisian Football Federation
-was founded on 29 March 1957 and the Tunisian team played a match with Austrian club
-FC Admira Wacker Mödling
-on 30 December of the same year, winning 4–1. Tunisia became affiliated with
-FIFA
-and the
-Confederation of African Football
-in 1960. The independent Tunisia played their first match against
-Algeria
-on 1 June 1957, in the midst of the
-Algerian War
-, in which Tunisia lost 2–1. They played their first official match at the
-1957 Arab Games
-where they won against
-Libya
-4–3 after scoring the first Tunisian goal in an official competition by
-Farzit
-[
-fr
-]
-. They won against
-Iraq
-4–2 and
-Lebanon
-4–2 before losing in the final against
-Syria
-3–1. In 1960, Yugoslavian
-Milan Kristić
-became the first foreign manager. The national team qualified for the
-1960 Summer Olympics
-, their first international event after beating
-Malta
-,
-Morocco
-and
-Sudan
-. In the Olympic Games, the team suffered three defeats: against
-Poland
-6–1,
-Argentina
-2–1, and
-Denmark
-3–1.
-Frane Matošić
-was appointed as the second Yugoslav coach of Tunisia after Kristić led Tunisia to qualify for the Olympics.
-1962–1978: Golden generation, First World Cup participation
-[
-edit
-]
-Tunisia at the
-1978 FIFA World Cup qualification
-against Egypt.
-In 1962, Tunisia entered the
-African Cup of Nations qualifiers
-for the first time. The team qualified for the tournament after beating
-Morocco
-and
-Nigeria
-, and went on to finish third after beating
-Uganda
-in the third-place match. The team won the
-1963 Arab Cup
-, after winning against Syria,
-Jordan
-, Lebanon, and
-Kuwait
-. Tunisia also qualified for the
-1963 Africa Cup of Nations
-, and
-CAF
-decided that Tunisia would host the
-1965 AFCON
-, making the final after beating
-Ethiopia
-4–0 in the opening match in
-Stade Chedly Zouiten
-,
-[
-7
-]
-losing 3–2 to
-Ghana
-in extra-time of the final.
-[
-8
-]
-Despite this early success, Tunisia did not enter the Cup of Nations again until 1976, and did not qualify until 1978. In 1973, the team entered the
-Palestine Cup of Nations
-and won in dominant fashion, winning all six of their matches overcoming Syria,
-Egypt
-,
-Palestine
-,
-Yemen
-and Iraq, scoring 19 goals. In February 1975, after a short stint with Hungarian manager
-André Nagy
-,
-Abdelmajid Chetali
-was hired. Tunisia qualified for their
-FIFA World Cup
-debut in
-1978
-. Tunisia defeated Mexico 3–1,
-[
-9
-]
-but were defeated by
-Poland
-1–0,
-[
-10
-]
-and drew scoreless against defending champion
-West Germany
-.
-1978–1994: Decline and Missing six editions of the AFCON
-[
-edit
-]
-After their inaugural World Cup, Tunisia experienced a decline. Between 1980 and 1992, the team managed to qualify for only two tournaments: the
-1982 African Cup of Nations
-, and the
-1988 Summer Olympics
-. In both, they were knocked out in the first round. They, however, reached the last round of the
-1986 World Cup qualifiers
-by beating Nigeria before being defeated by
-Algeria
-. Former
-Cameroon
-manager
-Jean Vincent
-was hired but the team was unable to qualify for the
-1988 African Cup
-in Morocco after a defeat against Algeria.
-The team experienced poor results in the
-African Games
-with defeats against Cameroon,
-Madagascar
-and
-Kenya
-.
-Taoufik Ben Othman
-, assistant manager in 1978,
-[
-11
-]
-improved Tunisia's results, as they qualified for the Olympic Games after surpassing
-Morocco
-and
-Egypt
-in the qualifiers. However, he was removed days before the start of the competition after poor results in the
-1988 Arab Cup
-and failure to win in their matches against
-Saudi Arabia
-,
-[
-12
-]
-Lebanon,
-[
-13
-]
-Egypt
-[
-14
-]
-and Iraq,
-[
-15
-]
-as well as friendlies against
-Malta
-,
-Finland
-and East Germany. Polish manager
-Antoni Piechniczek
-was temporarily appointed and supervised the team in the first round of 1990 World Cup qualifiers and also in the finals of the Olympic Games; in the latter, Tunisia tied
-China
-0–0
-[
-16
-]
-and
-Sweden
-2–2
-[
-17
-]
-and lost 
+If an
+internal link
+incorrectly led you here, you may wish to change the link to point directly to the intended article.
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Dido_(disambiguation)&oldid=1333362483
+"
+Categories
+:
+Disambiguation pages
+Disambiguation pages with given-name-holder lists
+Hidden categories:
+Short description is different from Wikidata
+All article disambiguation pages
+All disambiguation pages
+Search
+Search
+Dido (disambiguation)
+35 languages
+Add topic
 
 ---
 
-Tunisia national football team - Wikipedia
+Tunisia - Wikipedia
 Jump to content
 Search
 Search
-Tunisia national football team
-77 languages
+Tunisia
+270 languages
+Аԥсшәа
+Acèh
+Адыгабзэ
 Afrikaans
+Alemannisch
 አማርኛ
+Pangcah
+Aragonés
+Ænglisc
+Obolo
+अंगिका
 العربية
+ܐܪܡܝܐ
 الدارجة
 مصرى
+অসমীয়া
 Asturianu
+Kotava
 Azərbaycanca
 تۆرکجه
+Башҡортса
 Basa Bali
+Boarisch
+Žemaitėška
+Bikol Central
 Беларуская (тарашкевіца)
 Беларуская
+Betawi
 Български
+भोजपुरी
+Bislama
+Banjar
+Bamanankan
 বাংলা
+བོད་ཡིག
+বিষ্ণুপ্রিয়া মণিপুরী
+Brezhoneg
 Bosanski
+Basa Ugi
+Буряад
 Català
+Chavacano de Zamboanga
+閩東語 / Mìng-dĕ̤ng-ngṳ̄
+Нохчийн
+Cebuano
 کوردی
+Corsu
+Qırımtatarca
 Čeština
+Kaszëbsczi
+Чӑвашла
 Cymraeg
 Dansk
+Dagbanli
 Deutsch
+Zazaki
+Dolnoserbski
+डोटेली
+ދިވެހިބަސް
+ཇོང་ཁ
+Eʋegbe
 Ελληνικά
+Emiliàn e rumagnòl
 Esperanto
 Español
 Eesti
 Euskara
+Estremeñu
 فارسی
+Fulfulde
 Suomi
+Võro
+Føroyskt
+Fɔ̀ngbè
 Français
+Arpetan
+Nordfriisk
+Frysk
+Gaeilge
+Gagauz
+Kriyòl gwiyannen
+Gàidhlig
 Galego
+گیلکی
+Avañe'ẽ
+गोंयची कोंकणी / Gõychi Konknni
+Bahasa Hulontalo
+Ghanaian Pidgin
+ગુજરાતી
+Gaelg
+Hausa
+客家語 / Hak-kâ-ngî
+Hawaiʻi
 עברית
+हिन्दी
+Fiji Hindi
 Hrvatski
+Hornjoserbsce
+Kreyòl ayisyen
 Magyar
 Հայերեն
+Արեւմտահայերէն
+Interlingua
+Jaku Iban
 Bahasa Indonesia
+Interlingue
+Igbo
+Ilokano
+Ido
 Íslenska
 Italiano
 日本語
+Patois
+La .lojban.
 Jawa
 ქართული
+Qaraqalpaqsha
+Taqbaylit
+Jju
+Kabɩyɛ
+Tyap
+Kongo
+Kumoring
+Gĩkũyũ
 Қазақша
+ភាសាខ្មែរ
+ಕನ್ನಡ
+Yerwa Kanuri
 한국어
+Къарачай-малкъар
+کٲشُر
+Kurdî
+Kernowek
 Кыргызча
 Latina
+Ladino
+Lëtzebuergesch
+Лезги
+Lingua Franca Nova
+Luganda
 Limburgs
+Ligure
+Ladin
+Lombard
+Lingála
+ລາວ
 Lietuvių
 Latviešu
+Madhurâ
+Мокшень
+Malagasy
+Олык марий
+Māori
+Minangkabau
+Македонски
+മലയാളം
+Монгол
+ꯃꯤꯇꯩ ꯂꯣꯟ
 मराठी
+Кырык мары
 Bahasa Melayu
 Malti
-Napulitano
+Mirandés
+မြန်မာဘာသာ
+Эрзянь
+مازِرونی
+Nedersaksies
+Plattdüütsch
 नेपाली
+नेपाल भाषा
 Nederlands
+Norsk nynorsk
 Norsk bokmål
+Novial
+Sesotho sa Leboa
+Nupe
+Diné bizaad
+Occitan
+Livvinkarjala
+Oromoo
+ଓଡ଼ିଆ
+Ирон
+ਪੰਜਾਬੀ
+Kapampangan
+Papiamentu
+Picard
 Polski
+Piemontèis
+پنجابی
+Ποντιακά
+پښتو
 Português
+Runa Simi
+Rumantsch
 Română
 Русский
+Русиньскый
+Ikinyarwanda
+संस्कृतम्
+Саха тыла
+Sardu
+Sicilianu
 Scots
+سنڌي
+Davvisámegiella
+Sängö
+Srpskohrvatski / српскохрватски
+Taclḥit
+တႆး
+සිංහල
 Simple English
 Slovenčina
 Slovenščina
+Gagana Samoa
+Anarâškielâ
+ChiShona
+Soomaaliga
 Shqip
 Српски / srpski
+SiSwati
+Sesotho
+Seeltersk
+Sunda
 Svenska
+Kiswahili
+ꠍꠤꠟꠐꠤ
+Ślůnski
+Sakizaya
 தமிழ்
+Tayal
+తెలుగు
+Тоҷикӣ
 ไทย
+ትግርኛ
+Türkmençe
+Tagalog
+Tolışi
+Setswana
+Toki pona
 Türkçe
+Seediq
+Xitsonga
 Татарча / tatarça
+ChiTumbuka
+Twi
+Удмурт
+ئۇيغۇرچە / Uyghurche
 Українська
 اردو
 Oʻzbekcha / ўзбекча
+Vèneto
+Vepsän kel’
 Tiếng Việt
+West-Vlams
+Volapük
+Walon
+Winaray
+Wolof
 吴语
 მარგალური
+ייִדיש
+Yorùbá
+Vahcuengh
+Zeêuws
+ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ
+文言
 閩南語 / Bân-lâm-gí
 粵語
 中文
+IsiZulu
 Edit links
+Coordinates
+:
+34°N
+9°E
+﻿
+/
+﻿
+34°N 9°E
+﻿
+/
+34; 9
 From Wikipedia, the free encyclopedia
-Men's association football team
-This article is about the men's team. For the women's team, see
-Tunisia women's national football team
+Country in North Africa
+This article is about the country. For the board game, see
+Tunisia (board game)
 .
-Tunisia
-Nickname(s)
-نسور قرطاج
-(Eagles of
-Carthage
-)
-المنتخب
-(The Selection)
-Association
-Tunisian Football Federation
-(TFF)
-Confederation
-CAF
-(Africa)
-Sub-confederation
-UNAF
-(North Africa)
-Head coach
-Mouin Chaâbani
-Captain
-Ellyes Skhiri
-Most
-caps
-Radhi Jaïdi
-(105)
-Top scorer
-Issam Jemâa
+Republic of Tunisia
+الجمهورية التونسية
 (
-36
+Arabic
 )
-Home stadium
-Hammadi Agrebi Stadium
-FIFA code
-TUN
+al-Jumhūriyyah at-Tūnisiyyah
+Flag
+Coat of arms
+Motto:
+حرية، نظام، عدالة
+"
+Ḥurrīyah, Niẓām, 'Adālah
+"
+"
+Freedom, Order, Justice
+"
+Anthem:
+حماة الحمى
+"
+Humat al-Hima
+"
+(English:
+"Defenders of the Homeland"
+)
+Show globe
+Show map of Tunisia
+Capital
+and largest city
+Tunis
+36°49′N
+10°11′E
+﻿
+/
+﻿
+36.817°N 10.183°E
+﻿
+/
+36.817; 10.183
+Official
+languages
+Arabic
 [
 1
 ]
-First
-colours
-Second
-colours
-Third
-colours
-FIFA ranking
-Current
-45
-1 (11 June 2026)
+Local vernacular
+Tunisian Arabic
 [
 2
 ]
-Highest
-14 (April – May 2018)
-Lowest
-65 (July 2010)
-First international
-Tunisia
-4–2
-Libya
-(
-Tunis
-, Tunisia; 2 June 1957)
-Biggest win
-Tunisia
-8–1
-Taiwan
-(
-Rome
-, Italy; 18 August 1960)
-Tunisia
-7–0
-Togo
-(Tunis, Tunisia; 7 January 2000)
-Tunisia
-7–0
-Malawi
-(Tunis, Tunisia; 26 March 2005)
-Tunisia
-8–1
-Djibouti
-(Tunis, Tunisia; 12 June 2015)
-Biggest defeat
-Hungary
-10–1
-Tunisia
-(
-Budapest
-, Hungary; 24 July 1960)
-World Cup
-Appearances
-7 (
-first in
-1978
-)
-Best result
-Group stage (
-1978
-,
-1998
-,
-2002
-,
-2006
-,
-2018
-,
-2022
-,
-2026
-)
-Africa Cup of Nations
-Appearances
-22 (
-first in
-1962
-)
-Best result
-Champions
-(
-2004
-)
-African Nations Championship
-Appearances
-2 (
-first in
-2011
-)
-Best result
-Champions
-(
-2011
-)
-Arab Cup
-Appearances
-4 (
-first in
-1963
-)
-Best result
-Champions
-(
-1963
-)
-Confederations Cup
-Appearances
-1 (
-first in
-2005
-)
-Best result
-Group stage (
-2005
-)
-Medal record
-Men's
-Football
-Africa Cup of Nations
-2004 Tunisia
-Team
-1965 Tunisia
-Team
-1996 South Africa
-Team
-1962 Ethiopia
-Team
-African Nations Championship
-2011 Sudan
-Team
-African Games
-1991 Cairo
-Team
-2007 Algiers
-Team
-Arab Cup
-1963 Lebanon
-Team
-2021 Qatar
-Team
-Palestine Cup of Nations
-1973 Libya
-Team
-Arab Games
-1957 Lebanon
-Team
-Mediterranean Games
-2001 Tunis
-Team
-1971 Izmir
-Team
-1975 Alger
-Team
-2013 Mersin
-Team
-Website
-ftf
-.org
-.tn
-(in French)
-The
-Tunisia national football team
-represents
-Tunisia
-in men's international
-association football
-competitions, and is controlled by the
-Tunisian Football Federation
-(TFF). The team competes under the
-Confederation of African Football
-(CAF) on the continental level, and is affiliated with
-FIFA
-for global competitions. Additionally, the team is a member of the
-Union of North African Football
-(UNAF) and the
-Union of Arab Football Associations
-(UAFA). The team is colloquially known as
-Eagles of
-Carthage
-by fans and the media, with the
-bald eagle
-serving as its symbol.
+Minority Dialects
+:
+Jerba Berber
+(Chelha)
+Matmata Berber
+Judeo-Tunisian Arabic
+(UNESCO CR)
 [
 3
 ]
-Their home kit is primarily white and their away kit is red, which is a reference to the
-national flag
-of the country. The team has qualified for the
-FIFA World Cup
-seven times and the
-Africa Cup of Nations
-22 times, and has appeared in four editions of
-Summer Olympics
-and participated once in the
-FIFA Confederation Cup
-. Since 2001, Tunisia's home stadium is the
-Hammadi Agrebi Stadium
-in
-Radès
-, Tunis.
-Tunisia's first match after independence was against
-Libya
-, which they won 4–2. The team qualified for the FIFA World Cup for the first time in
-1978
-as the only representative of the continent, and became the first African and Arab team to win a World Cup match by beating
-Mexico
-3–1
-in the first game. Tunisia holds the most consecutive appearances in the Africa Cup of Nations, with 17, qualifying for every tournament between
-1994
-and
-2025
-. By winning the
-2004 African Cup of Nations
-, they qualified for the
-2005 FIFA Confederations Cup
-and was eliminated in the group stage. The team qualified twice for the
-African Nations Championship
-, winning the title in their first appearance in
-2011
-, while also competing in the
-FIFA Arab Cup
-three times, winning the title in the inaugural edition in
-1963
-and finishing second in
-2021
-.
-Radhi Jaïdi
-, with 105 international matches, holds the record for the number of matches played for Tunisia while
-Issam Jemâa
-, with
-36 goals
-, is their all-time highest scorer. Their highest-ever
-FIFA Men's World Ranking
-was 14th in April and May 2018, while their lowest rank was 65th in July 2010.
 [
 4
 ]
-On 13 October 2025, Tunisia became the first team in history to qualify for the World Cup without conceding a goal, during the
-2026 World Cup qualifying
-campaign.
-[
-citation needed
-]
-History
-[
-edit
-]
-Main article:
-History of the Tunisia national football team
-1928–1956: French protectorate of Tunisia and beginning
-[
-edit
-]
-The Tunisian football team in 1939.
-Before independence, an unofficial team was formed in 1928, comprising the best Tunisian players from the
-Tunisian League
-. The team's first match was on 11 March 1928, against the
-France national football B team
-; Tunisia lost 8–2.
 [
 5
 ]
-Their next friendlies, against the same team on 23 March 1930 and 26 March 1933, also resulted in heavy defeats: 0–5 and 1–6 respectively.
-Tunisia had to wait until 1932 for their first match win: a 1–0 victory over
-French Algeria
-.
 [
 6
 ]
-Most of the matches that Tunisia played in the 30s and 40s were against French teams, whether it was French Algeria, the
-French military team
-or the France B team, in addition to a match against the
-France national team
-in 1941. Most of these matches were played at the
-Stade Vélodrome
-in
-Tunis
-.
-1956–1962: Post independence, First international participation
-[
-edit
-]
-Tunisia gained
-independence
-from France on 20 March 1956. The
-Tunisian Football Federation
-was founded on 29 March 1957 and the Tunisian team played a match with Austrian club
-FC Admira Wacker Mödling
-on 30 December of the same year, winning 4–1. Tunisia became affiliated with
-FIFA
-and the
-Confederation of African Football
-in 1960. The independent Tunisia played their first match against
-Algeria
-on 1 June 1957, in the midst of the
-Algerian War
-, in which Tunisia lost 2–1. They played their first official match at the
-1957 Arab Games
-where they won against
-Libya
-4–3 after scoring the first Tunisian goal in an official competition by
-Farzit
-[
-fr
-]
-. They won against
-Iraq
-4–2 and
-Lebanon
-4–2 before losing in the final against
-Syria
-3–1. In 1960, Yugoslavian
-Milan Kristić
-became the first foreign manager. The national team qualified for the
-1960 Summer Olympics
-, their first international event after beating
-Malta
-,
-Morocco
-and
-Sudan
-. In the Olympic Games, the team suffered three defeats: against
-Poland
-6–1,
-Argentina
-2–1, and
-Denmark
-3–1.
-Frane Matošić
-was appointed as the second Yugoslav coach of Tunisia after Kristić led Tunisia to qualify for the Olympics.
-1962–1978: Golden generation, First World Cup participation
-[
-edit
-]
-Tunisia at the
-1978 FIFA World Cup qualification
-against Egypt.
-In 1962, Tunisia entered the
-African Cup of Nations qualifiers
-for the first time. The team qualified for the tournament after beating
-Morocco
-and
-Nigeria
-, and went on to finish third after beating
-Uganda
-in the third-place match. The team won the
-1963 Arab Cup
-, after winning against Syria,
-Jordan
-, Lebanon, and
-Kuwait
-. Tunisia also qualified for the
-1963 Africa Cup of Nations
-, and
-CAF
-decided that Tunisia would host the
-1965 AFCON
-, making the final after beating
-Ethiopia
-4–0 in the opening match in
-Stade Chedly Zouiten
-,
 [
 7
 ]
-losing 3–2 to
-Ghana
-in extra-time of the final.
 [
 8
 ]
-Despite this early success, Tunisia did not enter the Cup of Nations again until 1976, and did not qualify until 1978. In 1973, the team entered the
-Palestine Cup of Nations
-and won in dominant fashion, winning all six of their matches overcoming Syria,
-Egypt
-,
-Palestine
-,
-Yemen
-and Iraq, scoring 19 goals. In February 1975, after a short stint with Hungarian manager
-André Nagy
-,
-Abdelmajid Chetali
-was hired. Tunisia qualified for their
-FIFA World Cup
-debut in
-1978
-. Tunisia defeated Mexico 3–1,
 [
 9
 ]
-but were defeated by
-Poland
-1–0,
 [
 10
 ]
-and drew scoreless against defending champion
-West Germany
-.
-1978–1994: Decline and Missing six editions of the AFCON
-[
-edit
-]
-After their inaugural World Cup, Tunisia experienced a decline. Between 1980 and 1992, the team managed to qualify for only two tournaments: the
-1982 African Cup of Nations
-, and the
-1988 Summer Olympics
-. In both, they were knocked out in the first round. They, however, reached the last round of the
-1986 World Cup qualifiers
-by beating Nigeria before being defeated by
-Algeria
-. Former
-Cameroon
-manager
-Jean Vincent
-was hired but the team was unable to qualify for the
-1988 African Cup
-in Morocco after a defeat against Algeria.
-The team experienced poor results in the
-African Games
-with defeats against Cameroon,
-Madagascar
-and
-Kenya
-.
-Taoufik Ben Othman
-, assistant manager in 1978,
 [
 11
 ]
-improved Tunisia's results, as they qualified for the Olympic Games after surpassing
-Morocco
+Foreign languages
+French
 and
-Egypt
-in the qualifiers. However, he was removed days before the start of the competition after poor results in the
-1988 Arab Cup
-and failure to win in their matches against
-Saudi Arabia
-,
+English
 [
-12
+a
 ]
-Lebanon,
-[
-13
-]
-Egypt
+Ethnic
+groups
+(2021)
 [
 14
 ]
-and Iraq,
+98%
+Arabs
+[
+14
+]
+1%
+Berbers
 [
 15
 ]
-as well as friendlies against
-Malta
-,
-Finland
-and East Germany. Polish manager
-Antoni Piechniczek
-was temporarily appointed and supervised the team in the first round of 1990 World Cup qualifiers and also in the finals of the Olympic Games; in the latter, Tunisia tied
-China
-0–0
 [
 16
 ]
-and
-Sweden
-2–2
+1%
+Jews
+and others
 [
 17
 ]
-and lost 
+Religion
+[
+14
+]
+99%
+Sunni Islam
+1%
+others
+(incl.
+Christians
+,
+Judaism
+,
+Shia Islam
+, and
+Baha’i
+)
+[
+18
+]
+[
+19
+]
+Demonym
+Tunisian
+Government
+Unitary
+presidential republic
+•
+President
+Kais Saied
+•
+Prime Minister
+Sara Zaafarani
+Legislature
+Parliament
+•
+Upper house
+National Council of Regions and Districts
+•
+Lower house
+Assembly of the Representatives of the People
+Establishment
+•
+Aghlabid Emirate
+800
+•
+Hafsid Sultanate
+1229
+•
+Beylik of Tunis
+15 July 1705
+•
+French protectorate
+12 May 1881
+•
+Independence
+and
+Kingdom
+20 March 1956
+•
+Republic declaration
+25 July 1957
+Area
+•
+Total
+163,610
+km
+2
+(63,170
+sq
+mi)
+(
+91st
+)
+•
+Water
+(%)
+5.04
+Population
+•
+2024
+census
+11,972,169
+[
+20
+]
+•
+Density
+79/km
+2
+(204.6/sq
+mi)
+(
+134th
+)
+GDP
+(
+PPP
+)
+2025
+estimate
+•
+Total
+$183.73 billion
+[
+21
+]
+(
+84th
+)
+•
+Per capita
+$14,780
+[
+21
+]
+(
+111th
+)
+GDP
+(nominal)
+2025
+estimate
+•
+Total
+$56.290 billion
+[
+21
+]
+(
+90th
+)
+•
+Per capita
+$4,530
+[
+21
+]
+(
+121st
+)
+Gini
+(2021)
+33.7
+[
+22
+]
+medium inequality
+HDI
+(2023)
+0.746
+[
+23
+]
+high
+(
+105th
+)
+Currency
+Tunisian dinar
+(
+TND
+)
+Time zone
+UTC
++1
+(
+CET
+)
+Date format
+dd/mm/yyyy
+Calling code
++216
+ISO 3166 code
+TN
+Internet TLD
+.tn
+.تونس
+[
+24
+]
+Tunisia
+,
+[
+b
+]
+officially the
+Republic of Tunisia
+,
+[
+c
+]
+[
+26
+]
+is a country in the
+Maghreb
+region of
+North Africa
+. It is bordered by
+Algeria
+to the west and southwest,
+Libya
+to the southeast, and the
+Mediterranean Sea
+to the north and east. Tunisia also shares maritime borders with
+Italy
+through the islands of
+Sicily
+and
+Sardinia
+to the north and
+Malta
+to the east. It features the archaeological sites of
+Carthage
+dating back to the 9th century BC, as well as the Great Mosque of
+Kairouan
+. Known for its ancient architecture,
+souks
+, and blue coasts, it covers
+163,610
+km
+2
+(63,170
+sq
+mi)
+, and has a population of 12.1 million. It contains the eastern end of the
+Atlas Mountains
+and the northern reaches of the
+Sahara
+desert; much of its remaining territory is
+arable land
+. Its
+1,300
+km (810
+mi)
+of coastline includes the African conjunction of the western and eastern parts of the
+Mediterranean Basin
+. Tunisia is home to Africa's northernmost point,
+Cape Angela
+. Located on the northeastern coast,
+Tunis
+is the capital of the country, which is itself named after Tunis. The official language of Tunisia is
+Arabic
+. The vast majority of Tunisia's population is
+Arab
+and
+Muslim
+. Vernacular
+Tunisian Arabic
+is the most spoken language, and
+French
+serves as an administrative and educational language in some contexts, but has no official status.
+Beginning in early antiquity, Tunisia was inhabited by the indigenous
+Berbers
+. The
+Phoenicians
+, a
+Semitic people
+, began to arrive in the 12th century BC,
+settling on the coast and establishing several settlements
+, of which
+Carthage
+emerged as the most powerful by the 7th century BC. The descendants of the Phoenician settlers came to be known as the
+Punic people
+.
+Ancient Carthage
+was a major
+mercantile
+empire and a military rival to the
+Roman Republic
+until 146 BC when it was
+defeated
+by the Romans who occupied Tunisia for most of the next 800 years. The Romans introduced
+Christianity
+and left architectural legacies like the
+Amphitheatre of El Jem
+. In the 7th century AD,
+Arab Muslims conquered
+Tunisia and
+settled with their tribes and families
+, bringing
+Islam
+and
+Arab culture
+. A later large-scale
+Arab migration
+of
+Banu Hilal
+and
+Banu Sulaym
+tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely
+Arabised
+.
+[
+27
+]
+Then, in 1546, the
+Ottoman Empire
+established control, holding sway until 1881, when the
+French conquered Tunisia
+. In 1956,
+Tunisia gained independence
+as the Tunisian Republic. Today,
+Tunisia's culture
+and identity are rooted in this centuries-long intersection of different cultures and ethnicities.
+In 2011, the
+Tunisian Revolution
+, which was triggered by dissatisfaction with the lack of freedom and
+democracy
+under the 24-year rule of President
+Zine El Abidine Ben Ali
+, overthrew his regime and catalyzed the broader
+Arab Spring
+movement across the region. Free multiparty parliamentary
+elections
+were held shortly thereafter; the country again voted for parliament on 26 October 2014,
+[
+28
+]
+and for president on 23 November 2014.
+[
+29
+]
+From 2014 to 2020, it was considered the only democratic state in the
+Arab world
+, according to
+The Economist Democracy Index
+.
+[
+30
+]
+[
+d
+]
+After
+democratic backsliding
+under President
+Kais Saied
+, Tunisia was rated a
+hybrid regime
+in 2022
+[
+31
+]
+and as of 2025 it no longer has free and fair elections according to
+Freedom House
+.
+[
+32
+]
+It is one of the few countries in Africa ranking high on the
+Human Development Index
+, with one of the
+highest per capita incomes
+on the continent, ranking 129th in
+GDP per capita
+income.
+Tunisia is well integrated into the international community. It is a member of the
+United Nations
+,
+Organisation internationale de la Francophonie
+, the
+Arab League
+, the
+Organisation of Islamic Cooperation
+, the
+African Union
+, the
+Common Market for Eastern and Southern Africa
+, the
+Non-Aligned Movement
+, the
+International Criminal Court
+, the
+Group of 77
+, among others. It maintains close economic and political relations with some European countries, particularly with
+France
+and
+Italy
+,
+[
+33
+]
+[
+34
+]
+due to their geographical proximity. Tunisia also has an
+association agreement
+with the
+European Union
+and has attained the status of a
+major non-NATO ally
+of the
+United States
+.
+Etymology
+See also:
+Tunis §
+Etymology
+The word
+Tunisia
+is derived from
+Tunis
+, a central urban hub and the capital of modern-day Tunisia. The present form of the name, with its
+Latinate
+suffix
+-ia
+, evolved from
+French
+Tunisie
+,
+[
+35
+]
+[
+36
+]
+in turn generally associated with the
+Berber
+root
+ⵜⵏⵙ
+, transcribed
+tns
+, which means "to lay down" or "encampment".
+[
+37
+]
+It is sometimes also associated with the
+Carthage goddess
+Tanith
+(or Tunit),
+[
+35
+]
+[
+38
+]
+and the ancient city of Tynes.
+[
+39
+]
+[
+40
+]
+The French derivative
+Tunisie
+was adopted in some European languages with slight modifications, introducing a distinctive name to designate the country. Other languages have left the name untouched, such as the
+Russian
+Туни́с
+(
+Tunís
+) and
+Spanish
+Túnez
+. In this case, the same name is used for both country and city, as with the
+Arabic
+تونس
+, and only by context can one tell the difference.
+[
+35
+]
+In English, Tunisia before independence was also often called simply "Tuni
 
 ---
 
-Tunisia national football team - Wikipedia
+Help:Pronunciation respelling key - Wikipedia
 Jump to content
 Search
 Search
-Tunisia national football team
-77 languages
-Afrikaans
-አማርኛ
-العربية
-الدارجة
-مصرى
-Asturianu
-Azərbaycanca
-تۆرکجه
-Basa Bali
-Беларуская (тарашкевіца)
-Беларуская
-Български
-বাংলা
-Bosanski
-Català
-کوردی
-Čeština
-Cymraeg
-Dansk
-Deutsch
-Ελληνικά
-Esperanto
+Help
+:
+Pronunciation respelling key
+13 languages
+অসমীয়া
+भोजपुरी
 Español
-Eesti
-Euskara
-فارسی
-Suomi
-Français
-Galego
-עברית
-Hrvatski
-Magyar
-Հայերեն
-Bahasa Indonesia
-Íslenska
-Italiano
-日本語
 Jawa
-ქართული
-Қазақша
-한국어
-Кыргызча
-Latina
-Limburgs
-Lietuvių
-Latviešu
-मराठी
-Bahasa Melayu
-Malti
-Napulitano
-नेपाली
-Nederlands
-Norsk bokmål
-Polski
+ଓଡ଼ିଆ
 Português
-Română
-Русский
 Scots
+සිංහල
 Simple English
-Slovenčina
-Slovenščina
-Shqip
-Српски / srpski
-Svenska
-தமிழ்
-ไทย
+Тоҷикӣ
 Türkçe
-Татарча / tatarça
-Українська
 اردو
-Oʻzbekcha / ўзбекча
-Tiếng Việt
-吴语
-მარგალური
-閩南語 / Bân-lâm-gí
-粵語
 中文
 Edit links
 From Wikipedia, the free encyclopedia
-Men's association football team
-This article is about the men's team. For the women's team, see
-Tunisia women's national football team
+Wikipedia information page
+Wikipedia information page
+This is an
+information page
 .
-Tunisia
-Nickname(s)
-نسور قرطاج
-(Eagles of
-Carthage
-)
-المنتخب
-(The Selection)
-Association
-Tunisian Football Federation
-(TFF)
-Confederation
-CAF
-(Africa)
-Sub-confederation
-UNAF
-(North Africa)
-Head coach
-Mouin Chaâbani
-Captain
-Ellyes Skhiri
-Most
-caps
-Radhi Jaïdi
-(105)
-Top scorer
-Issam Jemâa
-(
-36
-)
-Home stadium
-Hammadi Agrebi Stadium
-FIFA code
-TUN
+It is not a
+Wikipedia policy or guideline
+; rather, its purpose is to explain certain aspects of Wikipedia's norms or practices. It may reflect varying levels of
+consensus
+.
+Shortcuts
+H:RESPELL
+H:RESPELL
+H:PRK
+H:PRK
+This page contains
+phonetic transcriptions
+in the
+International Phonetic Alphabet
+(IPA)
+. For an introductory guide on IPA symbols, see
+Help:IPA
+. For the distinction between
+[ ]
+,
+/ /
+and ⟨
+⟩, see
+IPA § Brackets and transcription delimiters
+.
+The following pronunciation respelling key is used in some Wikipedia articles to
+respell the pronunciations of English words
+. It does not use special symbols or diacritics apart from the
+schwa
+(ə), which is used for the first sound in the word "about". See documentation for
+{{
+Respell
+}}
+for examples and instructions on using the template.
+Key
+Both the IPA and respelling for English on Wikipedia are designed to record all distinctive sounds found in major varieties of English. That is, we record differences found in some varieties but not in others, such as those between "father" and "farther", "wine" and "whine", and "cot" and "caught". This does not mean these differences are, or must be, always distinguished; if you speak a dialect that does not distinguish "father" and "farther", for example, simply ignore the difference between
+FAH
+-dhər
+and
+FAR
+-dhər
+.
+For a more thorough discussion of the sounds and dialectal variation, see
+Help:IPA/English
+.
+Vowels
+Rspl.
+Example(s)
+IPA
+a
 [
 1
 ]
-First
-colours
-Second
-colours
-Third
-colours
-FIFA ranking
-Current
-45
-1 (11 June 2026)
+b
+a
+t
+/æ/
+ah
+f
+a
+ther
+/ɑː/
+air
+b
+ear
+, M
+ar
+y
+/ɛər/
+ar
+f
+ar
+ther
+/ɑːr/
+arr
+m
+arr
+y
+/ær/
+aw
+b
+ough
+t
+/ɔː/
+ay
+b
+ai
+t
+/eɪ/
+e
+[
+1
+]
+b
+e
+t
+/ɛ/
+eh
 [
 2
 ]
-Highest
-14 (April – May 2018)
-Lowest
-65 (July 2010)
-First international
-Tunisia
-4–2
-Libya
-(
-Tunis
-, Tunisia; 2 June 1957)
-Biggest win
-Tunisia
-8–1
-Taiwan
-(
-Rome
-, Italy; 18 August 1960)
-Tunisia
-7–0
-Togo
-(Tunis, Tunisia; 7 January 2000)
-Tunisia
-7–0
-Malawi
-(Tunis, Tunisia; 26 March 2005)
-Tunisia
-8–1
-Djibouti
-(Tunis, Tunisia; 12 June 2015)
-Biggest defeat
-Hungary
-10–1
-Tunisia
-(
-Budapest
-, Hungary; 24 July 1960)
-World Cup
-Appearances
-7 (
-first in
-1978
-)
-Best result
-Group stage (
-1978
-,
-1998
-,
-2002
-,
-2006
-,
-2018
-,
-2022
-,
-2026
-)
-Africa Cup of Nations
-Appearances
-22 (
-first in
-1962
-)
-Best result
-Champions
-(
-2004
-)
-African Nations Championship
-Appearances
-2 (
-first in
-2011
-)
-Best result
-Champions
-(
-2011
-)
-Arab Cup
-Appearances
-4 (
-first in
-1963
-)
-Best result
-Champions
-(
-1963
-)
-Confederations Cup
-Appearances
-1 (
-first in
-2005
-)
-Best result
-Group stage (
-2005
-)
-Medal record
-Men's
-Football
-Africa Cup of Nations
-2004 Tunisia
-Team
-1965 Tunisia
-Team
-1996 South Africa
-Team
-1962 Ethiopia
-Team
-African Nations Championship
-2011 Sudan
-Team
-African Games
-1991 Cairo
-Team
-2007 Algiers
-Team
-Arab Cup
-1963 Lebanon
-Team
-2021 Qatar
-Team
-Palestine Cup of Nations
-1973 Libya
-Team
-Arab Games
-1957 Lebanon
-Team
-Mediterranean Games
-2001 Tunis
-Team
-1971 Izmir
-Team
-1975 Alger
-Team
-2013 Mersin
-Team
-Website
-ftf
-.org
-.tn
-(in French)
-The
-Tunisia national football team
-represents
-Tunisia
-in men's international
-association football
-competitions, and is controlled by the
-Tunisian Football Federation
-(TFF). The team competes under the
-Confederation of African Football
-(CAF) on the continental level, and is affiliated with
-FIFA
-for global competitions. Additionally, the team is a member of the
-Union of North African Football
-(UNAF) and the
-Union of Arab Football Associations
-(UAFA). The team is colloquially known as
-Eagles of
-Carthage
-by fans and the media, with the
-bald eagle
-serving as its symbol.
+pr
+e
+stige
+ee
+b
+ea
+t
+/iː/
+happ
+y
+, ser
+i
+ous
+/i/
+eer
+b
+eer
+, n
+ear
+er
+/ɪər/
+err
+m
+err
+y
+/ɛr/
+ew
 [
 3
 ]
-Their home kit is primarily white and their away kit is red, which is a reference to the
-national flag
-of the country. The team has qualified for the
-FIFA World Cup
-seven times and the
-Africa Cup of Nations
-22 times, and has appeared in four editions of
-Summer Olympics
-and participated once in the
-FIFA Confederation Cup
-. Since 2001, Tunisia's home stadium is the
-Hammadi Agrebi Stadium
-in
-Radès
-, Tunis.
-Tunisia's first match after independence was against
-Libya
-, which they won 4–2. The team qualified for the FIFA World Cup for the first time in
-1978
-as the only representative of the continent, and became the first African and Arab team to win a World Cup match by beating
-Mexico
-3–1
-in the first game. Tunisia holds the most consecutive appearances in the Africa Cup of Nations, with 17, qualifying for every tournament between
-1994
-and
-2025
-. By winning the
-2004 African Cup of Nations
-, they qualified for the
-2005 FIFA Confederations Cup
-and was eliminated in the group stage. The team qualified twice for the
-African Nations Championship
-, winning the title in their first appearance in
-2011
-, while also competing in the
-FIFA Arab Cup
-three times, winning the title in the inaugural edition in
-1963
-and finishing second in
-2021
-.
-Radhi Jaïdi
-, with 105 international matches, holds the record for the number of matches played for Tunisia while
-Issam Jemâa
-, with
-36 goals
-, is their all-time highest scorer. Their highest-ever
-FIFA Men's World Ranking
-was 14th in April and May 2018, while their lowest rank was 65th in July 2010.
+c
+u
+te, b
+eau
+ty, d
+ew
+/juː/
+int
+u
+ition, Lith
+u
+ania
+/ju/
+eye
 [
 4
 ]
-On 13 October 2025, Tunisia became the first team in history to qualify for the World Cup without conceding a goal, during the
-2026 World Cup qualifying
-campaign.
+i
+tem, y
+i
+kes
+/aɪ/
+y
 [
-citation needed
+4
 ]
-History
+b
+i
+te, b
+i
+de, sk
+y
+i
 [
-edit
+1
 ]
-Main article:
-History of the Tunisia national football team
-1928–1956: French protectorate of Tunisia and beginning
-[
-edit
-]
-The Tunisian football team in 1939.
-Before independence, an unofficial team was formed in 1928, comprising the best Tunisian players from the
-Tunisian League
-. The team's first match was on 11 March 1928, against the
-France national football B team
-; Tunisia lost 8–2.
+b
+i
+t
+/ɪ/
+ih
 [
 5
 ]
-Their next friendlies, against the same team on 23 March 1930 and 26 March 1933, also resulted in heavy defeats: 0–5 and 1–6 respectively.
-Tunisia had to wait until 1932 for their first match win: a 1–0 victory over
-French Algeria
-.
+h
+i
+storic
+ire
+h
+ire
+/aɪər/
+irr
+m
+irr
+or
+/ɪr/
+o
+[
+1
+]
+b
+o
+t
+/ɒ/
+oh
+b
+oa
+t
+/oʊ/
+oir
+c
+oir
+/ɔɪər/
+oo
+b
+oo
+t, y
+ou
+/uː/
+infl
+u
+ence, fr
+u
+ition
+/u/
+oor
+p
+oor
+, t
+our
+ist
+/ʊər/
+or
+h
+or
+se, h
+oar
+se, p
+our
+, f
+or
+um
+/ɔːr/
+orr
+m
+or
+al
+/ɒr/
+our
+fl
+our
+/aʊər/
+ow
+b
+ou
+t, v
+ow
+/aʊ/
+oy
+ch
+oi
+ce, b
+oy
+/ɔɪ/
+u
+[
+1
+]
+b
+u
+t
+/ʌ/
+uh
 [
 6
 ]
-Most of the matches that Tunisia played in the 30s and 40s were against French teams, whether it was French Algeria, the
-French military team
-or the France B team, in addition to a match against the
-France national team
-in 1941. Most of these matches were played at the
-Stade Vélodrome
-in
-Tunis
-.
-1956–1962: Post independence, First international participation
-[
-edit
-]
-Tunisia gained
-independence
-from France on 20 March 1956. The
-Tunisian Football Federation
-was founded on 29 March 1957 and the Tunisian team played a match with Austrian club
-FC Admira Wacker Mödling
-on 30 December of the same year, winning 4–1. Tunisia became affiliated with
-FIFA
-and the
-Confederation of African Football
-in 1960. The independent Tunisia played their first match against
-Algeria
-on 1 June 1957, in the midst of the
-Algerian War
-, in which Tunisia lost 2–1. They played their first official match at the
-1957 Arab Games
-where they won against
-Libya
-4–3 after scoring the first Tunisian goal in an official competition by
-Farzit
-[
 fr
-]
-. They won against
-Iraq
-4–2 and
-Lebanon
-4–2 before losing in the final against
-Syria
-3–1. In 1960, Yugoslavian
-Milan Kristić
-became the first foreign manager. The national team qualified for the
-1960 Summer Olympics
-, their first international event after beating
-Malta
-,
-Morocco
-and
-Sudan
-. In the Olympic Games, the team suffered three defeats: against
-Poland
-6–1,
-Argentina
-2–1, and
-Denmark
-3–1.
-Frane Matošić
-was appointed as the second Yugoslav coach of Tunisia after Kristić led Tunisia to qualify for the Olympics.
-1962–1978: Golden generation, First World Cup participation
+u
+stration
+ur
+b
+ir
+d, f
+urr
+y
+/ɜːr/
+ure
 [
-edit
+3
 ]
-Tunisia at the
-1978 FIFA World Cup qualification
-against Egypt.
-In 1962, Tunisia entered the
-African Cup of Nations qualifiers
-for the first time. The team qualified for the tournament after beating
-Morocco
-and
-Nigeria
-, and went on to finish third after beating
-Uganda
-in the third-place match. The team won the
-1963 Arab Cup
-, after winning against Syria,
-Jordan
-, Lebanon, and
-Kuwait
-. Tunisia also qualified for the
-1963 Africa Cup of Nations
-, and
-CAF
-decided that Tunisia would host the
-1965 AFCON
-, making the final after beating
-Ethiopia
-4–0 in the opening match in
-Stade Chedly Zouiten
-,
+c
+ure
+, n
+eur
+al
+/jʊər/
+urr
+h
+urr
+y
+/ʌr/
+uu
+[
+1
+]
+b
+oo
+k
+/ʊ/
+uurr
+c
+our
+ier
+/ʊr/
+ə
+a
+bout, comm
+a
+/ə/
+ər
+lett
+er
+/ər/
+Consonants
+Rspl.
+Example(s)
+IPA
+b
+b
+uy
+/b/
+ch
 [
 7
 ]
-losing 3–2 to
-Ghana
-in extra-time of the final.
+ch
+urch, na
+t
+ure
+/tʃ/
+tch
+[
+7
+]
+chur
+ch
+, na
+t
+ural
+d
+d
+ye, la
+dd
+er
+/d/
+dh
+th
+y,
+th
+is
+/ð/
+f
+f
+ight
+/f/
+g
+g
+o
+/ɡ/
+gh
 [
 8
 ]
-Despite this early success, Tunisia did not enter the Cup of Nations again until 1976, and did not qualify until 1978. In 1973, the team entered the
-Palestine Cup of Nations
-and won in dominant fashion, winning all six of their matches overcoming Syria,
-Egypt
+g
+uess,
+g
+uitar
+h
+h
+igh
+/h/
+j
+j
+ive
+/dʒ/
+k
+k
+ite, s
+k
+y, lo
+ck
+/k/
+kh
+lo
+ch
 ,
-Palestine
-,
-Yemen
-and Iraq, scoring 19 goals. In February 1975, after a short stint with Hungarian manager
-André Nagy
-,
-Abdelmajid Chetali
-was hired. Tunisia qualified for their
-FIFA World Cup
-debut in
-1978
-. Tunisia defeated Mexico 3–1,
+Ch
+anukah
+/x/
+l
+l
+ie, s
+l
+y
+/l/
+m
+m
+y
+/m/
+n
+n
+igh
+/n/
+ng
+ri
+ng
+, si
+ng
+er
+/ŋ/
+nk
 [
 9
 ]
-but were defeated by
-Poland
-1–0,
+si
+nk
+/ŋk/
+p
+p
+ie, s
+p
+y
+/p/
+r
+r
+ye, t
+r
+y
+/r/
+s
+s
+igh
+/s/
+ss
 [
 10
 ]
-and drew scoreless against defending champion
-West Germany
-.
-1978–1994: Decline and Missing six editions of the AFCON
-[
-edit
-]
-After their inaugural World Cup, Tunisia experienced a decline. Between 1980 and 1992, the team managed to qualify for only two tournaments: the
-1982 African Cup of Nations
-, and the
-1988 Summer Olympics
-. In both, they were knocked out in the first round. They, however, reached the last round of the
-1986 World Cup qualifiers
-by beating Nigeria before being defeated by
-Algeria
-. Former
-Cameroon
-manager
-Jean Vincent
-was hired but the team was unable to qualify for the
-1988 African Cup
-in Morocco after a defeat against Algeria.
-The team experienced poor results in the
-African Games
-with defeats against Cameroon,
-Madagascar
-and
-Kenya
-.
-Taoufik Ben Othman
-, assistant manager in 1978,
-[
-11
-]
-improved Tunisia's results, as they qualified for the Olympic Games after surpassing
-Morocco
-and
-Egypt
-in the qualifiers. However, he was removed days before the start of the competition after poor results in the
-1988 Arab Cup
-and failure to win in their matches against
-Saudi Arabia
+i
+c
+e, ten
+s
+e
+sh
+sh
+y
+/ʃ/
+t
+t
+ie, s
+t
+y, la
+tt
+er
+/t/
+th
+th
+igh
+/θ/
+v
+v
+ine
+/v/
+w
+w
+ine
+/w/
+wh
+wh
+ine
+/hw/
+y
+y
+ou
+/j/
+z
+z
+oo
+/z/
+zh
+plea
+s
+ure
+/ʒ/
+Syllables and stress
+Respelled
+syllables
+are visually separated by hyphens ("-"), and the
+stress
+on a syllable is indicated by capital letters.
+For example, the word "pronunciation" (
+/
+p
+r
+ə
+ˌ
+n
+ʌ
+n
+s
+i
+ˈ
+eɪ
+ʃ
+ən
+/
+) is respelled
+prə-
+NUN
+-see-
+AY
+-shən
+. In this example, the primary and secondary stress are not distinguished because the difference is automatic.
+In both IPA and respelling, a word should not have secondary stress following primary stress (contrary to some, particularly North American, sources).
+When to use and when not to
+Shortcut
+WP:RESPELLNOT
+WP:RESPELLNOT
+As designated in
+Wikipedia:Manual of Style/Pronunciation
+, the standard set of symbols used to show the pronunciation of English words on Wikipedia is the
+International Phonetic Alphabet
+(IPA). The IPA has significant advantages over this respelling system, as it can be used to accurately represent pronunciations from any language in the world, and (being an international standard) is often more familiar to those outside North America and non-native speakers of English. On the other hand, the IPA (being designed to represent sounds from any language in the world) is not as intuitive for those chiefly familiar with English orthography, for whom this respelling system is likely to be easier for English words and names. So, while the IPA is the required form of representing pronunciation, respelling remains optional. It should not be used for representing non-English words or an approximation thereof.
+Sometimes another means of indicating a pronunciation is more desirable than this respelling system, such as when a name is intended to be a homonym of an existing English word or phrase, or in case of an
+initialism
+or a name composed of numbers or symbols. When citing a homonym, it should not be enclosed in the
+{{
+respell
+}}
+template. In such cases, an IPA notation is usually nevertheless needed, but not necessarily so; see
+Wikipedia:Manual of Style/Pronunciation § Other transcription systems
+for further discussion.
+Respelling should also be avoided when a respelled syllable would be the same as an existing word that is pronounced differently. For example, "Maui"
+/
+ˈ
+m
+aʊ
+i
+/
+respelled as
+MOW
+-ee
+, "metonymy"
+/
+m
+ɛ
+ˈ
+t
+ɒ
+n
+ɪ
+m
+i
+/
+as
+meh-
+TON
+-im-ee
+, and "cobalt"
+/
+ˈ
+k
+oʊ
+b
+ɒ
+l
+t
+/
+as
+KOH
+-bolt
+are susceptible to being misinterpreted as
+/
+ˈ
+m
+oʊ
+i
+/
 ,
-[
-12
-]
-Lebanon,
-[
-13
-]
-Egypt
-[
-14
-]
-and Iraq,
-[
-15
-]
-as well as friendlies against
-Malta
+/
+m
+ɛ
+ˈ
+t
+ʌ
+n
+ɪ
+m
+i
+/
+, and
+/
+ˈ
+k
+oʊ
+b
+oʊ
+l
+t
+/
+, because of the words "mow", "ton", and "bolt", so only IPA should be provided for such words.
+Particularly, respelling
+/aʊ/
+could prove problematic as there are a variety of monosyllabic words spelled with "ow" and pronounced with
+/oʊ/
+:
+blow
 ,
-Finland
-and East Germany. Polish manager
-Antoni Piechniczek
-was temporarily appointed and supervised the team in the first round of 1990 World Cup qualifiers and also in the finals of the Olympic Games; in the latter, Tunisia tied
-China
-0–0
-[
-16
-]
+blown
+,
+bow
+,
+bowl
+,
+flow
+,
+flown
+,
+glow
+,
+grow
+,
+grown
+,
+growth
+,
+low
+,
+mow
+,
+mown
+,
+own
+,
+row
+,
+show
+,
+slow
+,
+snow
+,
+sow
+,
+sown
+,
+stow
+,
+strow
+,
+throw
+,
+tow
+, and
+trow
+. There is no universal solution to this problem ("ou" also varies as in
+loud
+,
+soup
+,
+soul
+, and
+touch
+), so respelling a word including
+/aʊ/
+may be best avoided altogether; however, sometimes the benefit of respelling may outweigh the disadvantage, especially for longer words, so exercise discretion.
+See also
+Help:IPA/Conventions for English
+Help:IPA/English
+{{
+Respell
+}}
+: the template and instructions for adding pronunciation respelling
+Pronunciation respelling for English
+Wikipedia:Manual of Style/Pronunciation
+Notes
+^
+a
+b
+c
+d
+e
+f
+g
+/æ,
+ɛ,
+ɪ,
+ɒ,
+ʌ,
+ʊ/
+(
+a, e(h), i(h), o, u(h), uu
+) are
+checked vowels
+, meaning never occurring at the end of a word or before a vowel. When a checked vowel is followed by a consonant and a stressed vowel, which is rare nonetheless, it is acceptable in some cases to attribute the following consonant to the same syllable as the checked vowel, as in
+bal-
+AY
+, even though in IPA it is customary to attribute it to the following syllable, as in
+/
+b
+æ
+ˈ
+l
+eɪ
+/
+. However, when the following consonant is a voiceless plosive (
+/p,
+t,
+k/
+) pronounced with
+aspiration
+(a slight delay in the voicing of the following vowel), it must be attributed to the same syllable as the following vowel, as in
+ta-
+TOO
+, because
+tat-
+OO
+may result in a different pronunciation than intended (compare "whatever"
+whot-
+EV
+-ər, whut-
+, wherein
+/t/
+is not aspirated and may be
+glottalized
+or
+flapped
+). Similarly, when a vowel is followed by
+/s/
+, one or more consonants, and a stressed vowel, the syllabification must be retained, as in
+fruh-
+STRAY
+-shən
+, because
+frus-
+TRAY
+-shən
+may result in a different pronunciation than intended.
+^
+a
+b
+/ɛ/
+in syllable-final positions may be respelled
+eh
+instead of
+e
+when otherwise it may be misinterpreted as another sound such as
+/i(ː)/
+or
+/eɪ/
+.
+^
+a
+b
+c
+ew
 and
-Sweden
-2–2
-[
-17
-]
-and lost 
+ure
+are for when
+/ju(ː)/
+or
+/jʊər/
+takes place right after a consonant within the same syllable. When
+/ju(ː)/
+or
+/jʊər/
+begins a syllable (e.g. "youth", "Europe", "value"), use
+yoo(r)
+, unless it is subject to
+yod-dropping
+or
+yod-coalescence
+: "Lithuania"
+LITH
+-ew-
+AY
+-nee-ə
+.
+^
+a
+b
+c
+/aɪ/
+is respelled
+eye
+when it begins a syllable or is preceded by
+/j/
+and otherwise
+y
+. When
+y
+is placed between consonants within the same syllable, place an
+e
+at the end of the syllable as necessary: "tight"
+TYTE
+.
+^
+a
+b
+/ɪ/
+in syllable-final positions may be respelled
+ih
+instead of
+i
+when otherwise it may be misinterpreted as another sound such as
+/aɪ/
+.
+^
+a
+b
+/ʌ/
+in syllable-final positions is respelled
+uh
+instead of
+u
+to better distinguish it from
+/u(ː),
+ʊ/
+.
+^
+a
+b
+c
+/tʃ/
+after a vowel in the same syllable is respelled
+tch
+instead of
+ch
+to better distinguish it from
+/k,
+x/
+.
+^
+a
+b
+/ɡ/
+may be respelled
+gh
+instead of
+g
+when otherwise it may be misinterpreted as
+/dʒ/
+.
+^
+a
+b
+/ŋk/
+is respelled
+nk
+rather than
+ngk
+, since the assimilation is mandatory, except beyond a syllable boundary: "tinker"
+TING
+-kər
+.
+^
+a
+b
+/s/
+may be respelled
+ss
+instead of
+s
+when otherwise it may be misinterpreted as
+/z/
+: "ice"
+EYESS
+, "tense"
+TENSS
+(compare
+eyes
+,
+tens
+).
+v
+t
+e
+International Phonetic Alphabet
+keys
+Abkhaz
+Acehnese
+Adyghe
+Afrikaans
+Albanian
+Altai
+Amharic
+Arabic
+Modern Standard
+Egyptian
+Hejazi
+Lebanese
+Tunisian
+Armenian
+Assamese
+Asturian
+Australian languages
+Aymara
+Azerbaijani
+Bashkir
+Basque
+Belarusian
+Bengali
+Berber
+Bislama
+Bosnian
+Breton
+Bulgarian
+Burmese
+Catalan
+Standard
+Insular
+Chamorro
+Chinese
+Mandarin
+Cantonese
+Hokkien
+Jin
+Wu
+Xiang
+Corsican
+Croatian
+Czech
+Danish
+Dari
+Dutch
+Dzongkha
+English
+Old English
+Emilian-Romagnol
+Esperanto
+Estonian
+Extremaduran
+Fijian
+Finnish
+Franco-Provençal
+French
+Galician
+Georgian
+German
+Standard
+Alemannic
+Colognian
+Greek
+Greenlandic
+Gujarati
+Haitian Creole
+Hawaiian
+Hebrew
+Hindi
+Hmong
+Hungarian
+Icelandic
+Igbo
+Indonesian
+Inuktitut
+Inupiaq
+Irish
+Isan
+Italian
+Central
+Japanese
+Kannada
+Kazakh
+Khmer
+Korean
+Kurdish
+Kyrgyz
+Lakota
+Lao
+Latin
+Latvian
+Laz
+Ligurian
+Lith

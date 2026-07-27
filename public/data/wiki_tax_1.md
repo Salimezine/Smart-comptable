@@ -2602,10 +2602,6 @@ La Marseillaise de la Commune
 [
 19
 ]
-The refrain is reminiscent of its time: simple lyrics in revolutionary songs allowed the general uneducated population to participate in the singing.
-[
-citation needed
-]
 Music
 [
 edit
@@ -2840,7 +2836,18 @@ maʁ.ʃõ ‖]
 ]
 [də ʁɑ̃.dʁ‿a lɑ̃.tik ɛs.kla.va.ʒə ‖]
 [ʁə.fʁɛ̃]
-[kwa de ko.ɔʁ.tə.
+[kwa de ko.ɔʁ.tə.z‿e.tʁɑ̃.ʒɛ.ʁə
+|
+]
+[fə.ʁe la lwa dɑ̃ no fwa.je ‖]
+[kwa se fa.lɑ̃.ʒə mɛʁ.sə.nɛ.ʁə
+|
+]
+𝄆 [tɛ.ʁa.sə.ʁe no fje gɛ.ʁje ‖] 𝄇
+[gʁɑ̃ djø paʁ de mɛ̃.z‿ɑ̃.ʃɛ.ne.ə
+|
+]
+[no fʁõ su lə
 
 ---
 
