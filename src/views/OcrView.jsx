@@ -17,7 +17,7 @@ import { generateTEIFXML } from '../utils/teifGenerator';
 import { sendToTTN, handleTTNResponse } from '../utils/ttnWorkflow';
 import { getTTNMode } from '../teif';
 import { trackUsage } from '../utils/auth/usageTracker';
-import { aiEnhanceFacture, hasChromeAI, hasOpenRouterKey, getOpenRouterKey, setOpenRouterKey, describeAIEngine, getChromeAIStatus, ensureChromeAIModel, aiVerifEcriture } from '../utils/aiOcr';
+import { aiEnhanceFacture, hasChromeAI, hasOpenRouterKey, hasServerAI, getOpenRouterKey, setOpenRouterKey, describeAIEngine, getChromeAIStatus, ensureChromeAIModel, aiVerifEcriture } from '../utils/aiOcr';
 import { productsStore } from '../utils/erpStore';
 import { enregistrerDocument } from '../utils/saveIntegration';
 import OpenRouterGuide from '../components/OpenRouterGuide';
@@ -1657,7 +1657,11 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
           </p>
         </div>
         <div className="flex items-center gap-2 shrink-0">
-          {!orKeySet && (
+          {hasServerAI() ? (
+            <span className="text-[10px] font-bold text-accent-400 border border-accent-500/30 px-2 py-1 rounded-lg bg-accent-500/10 whitespace-nowrap flex items-center gap-1.5">
+              <Sparkles className="w-3 h-3" /> IA auto
+            </span>
+          ) : !orKeySet && (
             <button type="button" onClick={() => setShowOrKeyModal(true)}
               className="text-[10px] font-bold text-amber-400 border border-amber-500/40 px-2 py-1 rounded-lg bg-amber-500/10 whitespace-nowrap hover:bg-amber-500/20 transition-colors flex items-center gap-1.5">
               <Sparkles className="w-3 h-3" /> Clé OpenRouter

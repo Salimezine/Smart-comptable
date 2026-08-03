@@ -15,6 +15,13 @@ export function hasOpenRouterKey() {
   return !!getOpenRouterKey();
 }
 
+// IA automatique côté serveur (clé OpenRouter sur le worker) — aucun utilisateur ne doit entrer de clé
+export function hasServerAI() {
+  try {
+    return typeof localStorage !== 'undefined' && !!localStorage.getItem('smart_api_token');
+  } catch { return false; }
+}
+
 let genAI = null;
 let geminiModel = null;
 
@@ -150,18 +157,23 @@ export async function aiEnhanceFacture(ocrText, currentFormulaire, options = {})
   if (!ocrText || ocrText.trim().length < 20) return null;
   const prompt = `Texte OCR brut de la facture :\n"""\n${ocrText.slice(0, 6000)}\n"""`;
 
-  // 1. OpenRouter (modèles gratuits, si clé configurée)
+  // 1. OpenRouter automatique via le worker (clé serveur) — sans clé locale
+  const server = await askOpenRouterServer(prompt);
+  const serverJson = server && server.text ? extractJson(server.text) : null;
+  if (serverJson) return mergeAI(currentFormulaire || {}, serverJson);
+
+  // 2. OpenRouter clé locale (fallback)
   if (hasOpenRouterKey()) {
     const orResult = await askOpenRouter(prompt, options.imageDataUrl);
     if (orResult?.json) return mergeAI(currentFormulaire || {}, orResult.json);
     if (orResult?.error && orResult.kind !== 'rate') throw new Error(orResult.error);
   }
 
-  // 2. IA Chrome on-device (gratuit, sans clé, sans réseau)
+  // 3. IA Chrome on-device (gratuit, sans clé, sans réseau)
   const chromeResult = await askChromeAI(prompt);
   if (chromeResult?.json) return mergeAI(currentFormulaire || {}, chromeResult.json);
 
-  // 3. Gemini cloud (si une clé est configurée — optionnel)
+  // 4. Gemini cloud (si une clé est configurée — optionnel)
   const geminiResult = await askGemini(prompt, options.imageDataUrl);
   const gjson = geminiResult ? extractJson(geminiResult) : null;
   if (gjson) return mergeAI(currentFormulaire || {}, gjson);
