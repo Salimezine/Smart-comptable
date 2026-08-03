@@ -296,6 +296,63 @@ async function apiImport(request, env) {
 }
 
 // -----------------------------------------------------------------------
+// Assistant IA (OpenRouter) — clé côté serveur pour un fonctionnement auto
+// -----------------------------------------------------------------------
+async function apiAiChat(request, env) {
+  const user = await requireAuth(request, env);
+  if (!user) return json({ message: 'Non autorisé' }, 401);
+  const apiKey = env.OPENROUTER_API_KEY;
+  if (!apiKey) return json({ message: 'Clé OpenRouter non configurée sur le serveur' }, 503);
+  const body = await request.json().catch(() => ({}));
+  const { prompt, history = [], companyDetails = null } = body;
+  if (!prompt || !String(prompt).trim()) return json({ message: 'prompt requis' }, 400);
+
+  const system = companyDetails
+    ? `You are a Tunisian tax expert assistant. Answer questions about Tunisian fiscal law, taxes, declarations, deadlines and audits. Use real company data below. Cite amounts and give a score when asked.\n\n=== CONTEXTE AUDIT DE L'ENTREPRISE (données réelles) ===\n${JSON.stringify(companyDetails).slice(0, 4000)}\n\nUse these real figures. Respond in the same language as the query (French or Arabic). Be concise and practical.`
+    : 'You are a Tunisian tax expert assistant. Answer questions about Tunisian fiscal law, taxes, declarations, deadlines and penalties. Use year 2026. Respond in the same language as the query (French or Arabic). Be concise and practical.';
+
+  const messages = [
+    { role: 'system', content: system },
+    ...(history || []).map(h => ({ role: h.role === 'assistant' ? 'assistant' : 'user', content: String(h.content || '') })),
+    { role: 'user', content: String(prompt) },
+  ];
+
+  const models = [
+    'google/gemma-4-26b-a4b-it:free',
+    'openai/gpt-oss-20b:free',
+    'deepseek/deepseek-chat-v3-0324',
+    'deepseek/deepseek-v3.2',
+  ];
+
+  for (const model of models) {
+    try {
+      const resp = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({ model, messages, temperature: 0.3, max_tokens: 900 }),
+      });
+      if (!resp.ok) {
+        const t = await resp.text().catch(() => '');
+        if (resp.status === 429) return json({ error: 'Quota OpenRouter épuisé (429). Patientez ou le serveur doit ajouter un solde.', kind: 'rate' }, 502);
+        if (resp.status === 401) return json({ error: 'Clé OpenRouter serveur invalide', kind: 'auth' }, 502);
+        if (resp.status === 404 && model !== models[models.length - 1]) continue;
+        return json({ error: `Erreur IA (${resp.status}): ${t.slice(0, 140)}` }, 502);
+      }
+      const data = await resp.json();
+      const text = data?.choices?.[0]?.message?.content;
+      if (text && text.trim()) return json({ text: text.trim() });
+    } catch (err) {
+      if (model !== models[models.length - 1]) continue;
+      return json({ error: `Erreur réseau IA: ${err?.message || err}` }, 502);
+    }
+  }
+  return json({ error: 'IA indisponible' }, 502);
+}
+
+// -----------------------------------------------------------------------
 // Invoices (TEIF) — now backed by D1
 // -----------------------------------------------------------------------
 async function apiCompanyInvoices(request, env, ctx) {
@@ -510,6 +567,9 @@ export default {
 
       // Import batch (migration)
       if (path === '/api/import' && request.method === 'POST') return await apiImport(request, env);
+
+      // Assistant IA (OpenRouter serveur)
+      if (path === '/api/ai/chat' && request.method === 'POST') return await apiAiChat(request, env);
 
       // Generic CRUD /api/data/:table
       const matchData = path.match(/^\/api\/data\/([a-z_]+)$/);

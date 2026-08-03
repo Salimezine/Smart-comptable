@@ -75,13 +75,11 @@ export async function askAI(query, history, companyDetails) {
   const gemini = await askGemini(q, history, companyDetails);
   if (gemini) return gemini;
 
-  // Secours OpenRouter (modèles gratuits) si aucune clé Gemini
+  // Secours OpenRouter (auto via worker, ou clé locale sinon)
   try {
     const { hasOpenRouterKey, askOpenRouterChat } = await import('./aiOcr');
-    if (hasOpenRouterKey()) {
-      const or = await askOpenRouterChat(q, history, companyDetails);
-      if (or && or.text) return or.text;
-    }
+    const or = await askOpenRouterChat(q, history, companyDetails);
+    if (or && or.text) return or.text;
   } catch { /* silencieux */ }
 
   return '';

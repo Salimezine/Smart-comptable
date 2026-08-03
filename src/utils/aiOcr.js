@@ -236,12 +236,40 @@ Cite les références officielles (Code des Impôts Directs, Code de la TVA, Cod
 Réponds dans la langue de la question (français ou arabe). Réponses concises.`;
 
 /**
- * askOpenRouterChat — réponse textuelle libre via OpenRouter (pour le chatbot).
+ * IA automatique via le worker Cloudflare (clé OpenRouter côté serveur).
+ * Retourne { text } ou null si non disponible.
+ */
+async function askOpenRouterServer(prompt, history = [], companyDetails = null) {
+  try {
+    const token = localStorage.getItem('smart_api_token') || '';
+    if (!token) return null;
+    const API_URL = (import.meta.env.VITE_API_URL || 'https://smart-comptable-teif-api.ezzinesalim21.workers.dev/api').replace(/\/$/, '');
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 90000);
+    const resp = await fetch(`${API_URL}/ai/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ prompt, history, companyDetails }),
+      signal: controller.signal,
+    });
+    clearTimeout(timer);
+    if (!resp.ok) return null;
+    const data = await resp.json();
+    return (data && data.text) ? { text: data.text } : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Chat OpenRouter : essaye d'abord le worker auto, sinon la clé locale.
  * Retourne { text } ou { error }.
  */
 export async function askOpenRouterChat(prompt, history = [], companyDetails = null) {
+  const auto = await askOpenRouterServer(prompt, history, companyDetails);
+  if (auto && auto.text) return auto;
   const apiKey = getOpenRouterKey();
-  if (!apiKey) return { error: 'Aucune clé OpenRouter configurée' };
+  if (!apiKey) return auto || { error: 'Aucune clé OpenRouter configurée' };
   const models = [
     'google/gemma-4-26b-a4b-it:free',
     'openai/gpt-oss-20b:free',
