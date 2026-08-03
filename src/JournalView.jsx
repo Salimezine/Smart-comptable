@@ -77,8 +77,10 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
         if (idx !== i) return l;
         const updated = { ...l, [field]: value };
         if (field === 'compte' && value) {
-          const lib = findLibelle(value);
-          if (lib) updated.libelle = lib;
+          const nouveauLib = findLibelle(value);
+          if (nouveauLib && (!l.libelle || l.libelle === findLibelle(l.compte))) {
+            updated.libelle = nouveauLib;
+          }
         }
         return updated;
       });
@@ -356,15 +358,21 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                       const journal = lines[0].journal || '';
                       lines.forEach((l, li) => {
                         rows.push(
-                          <tr key={idx++} className={`hover:bg-slate-800/10 transition-colors ${li === 0 ? 'border-t border-slate-700/50' : ''}`}>
-                            <td className="py-4 px-6 text-slate-400 font-mono">{li === 0 ? date : ''}</td>
-                            <td className="py-4 px-6 font-bold text-slate-300">
-                              {li === 0 ? (
-                                <button onClick={() => setDetailPiece(piece)}
-                                  className="hover:text-indigo-400 transition-colors cursor-pointer underline decoration-dotted underline-offset-2">
-                                  {piece}
-                                </button>
-                              ) : ''}
+                          <tr key={idx++} onClick={() => startEdit(piece, lines)} className={`cursor-pointer hover:bg-indigo-900/10 transition-colors ${li === 0 ? 'border-t border-slate-700/50' : ''}`}>
+                             <td className="py-4 px-6 text-slate-400 font-mono">{li === 0 ? date : ''}</td>
+                             <td className="py-4 px-6 font-bold text-slate-300">
+                               {li === 0 ? (
+                                 (() => {
+                                   const docKey2 = docImages[piece] ? piece : (lines[0].piece_justificative && docImages[lines[0].piece_justificative] ? lines[0].piece_justificative : null);
+                                   const docData2 = docKey2 ? docImages[docKey2] : null;
+                                   return (
+                                     <button onClick={e => { e.stopPropagation(); docData2 ? setPreviewDoc(docData2) : setDetailPiece(piece); }}
+                                       className="hover:text-indigo-400 transition-colors cursor-pointer underline decoration-dotted underline-offset-2 inline-flex items-center gap-1.5">
+                                       {docData2 && <Eye className="w-3 h-3" />}{piece}
+                                     </button>
+                                   );
+                                 })()
+                               ) : ''}
                             </td>
                              <td className="py-4 px-6 font-mono text-slate-300" title={findLibelle(l.compte)}>
                                {l.compte}
@@ -396,7 +404,7 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                                   const docKey = docImages[piece] ? piece : (lines[0].piece_justificative && docImages[lines[0].piece_justificative] ? lines[0].piece_justificative : null);
                                   const docData = docKey ? docImages[docKey] : null;
                                   return docData ? (
-                                    <button onClick={() => setPreviewDoc(docData)}
+                                    <button onClick={e => { e.stopPropagation(); setPreviewDoc(docData); }}
                                       className="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
                                       title="Voir la pièce justificative">
                                       <Eye className="w-3.5 h-3.5" />
@@ -506,7 +514,11 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                       </div>
                     </button>
                   </div>
-                ) : null;
+                ) : (
+                  <div className="text-center py-4 text-[10px] text-slate-500 border border-dashed border-slate-700 rounded-xl">
+                    Aucune pièce justificative attachée
+                  </div>
+                );
               })()}
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
@@ -564,11 +576,42 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                     className={`flex items-center gap-1 px-3 py-1.5 text-[10px] font-bold rounded-xl transition-colors ${balanced ? 'bg-accent-500 hover:bg-accent-400 text-white' : 'bg-slate-800 text-slate-600 cursor-not-allowed'}`}>
                     <Save className="w-3 h-3" /> Sauvegarder
                   </button>
+                  <button onClick={async () => {
+                    const ok = window.confirm(`Supprimer définitivement la pièce ${editingPiece} ?\n${editData.lines.length} ligne(s) seront effacées.`);
+                    if (ok) {
+                      try {
+                        const raw = localStorage.getItem(getJournalKey());
+                        let entries = raw ? JSON.parse(raw) : [];
+                        if (!Array.isArray(entries)) entries = [];
+                        const filtered = entries.filter(e => e.numeroPiece !== editingPiece);
+                        localStorage.setItem(getJournalKey(), JSON.stringify(filtered));
+                        window.dispatchEvent(new CustomEvent('journal:updated'));
+                        setEditingPiece(null);
+                        setEditData(null);
+                      } catch (e) {
+                        console.error('Delete failed:', e);
+                      }
+                    }
+                  }}
+                    className="flex items-center gap-1 px-3 py-1.5 text-[10px] font-bold rounded-xl bg-danger-500/20 text-danger-400 hover:bg-danger-500/30 transition-colors"
+                    title="Supprimer toute la pièce">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                    Supprimer
+                  </button>
                   <button onClick={() => { setEditingPiece(null); setEditData(null); }}
                     className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:bg-slate-700 hover:text-white transition-colors">
                     <XCircle className="w-3 h-3" />
                   </button>
                 </div>
+              </div>
+              <div className="flex items-center gap-2 text-[10px] mb-2">
+                <span className="text-slate-500">Solde:</span>
+                <span className={`font-bold font-mono ${balanced ? 'text-accent-400' : 'text-danger-400'}`}>
+                  {balanced ? '✓ Équilibré' : `✗ ${(totalDeb - totalCred).toFixed(3)} DT d'écart`}
+                </span>
+                {!lockedEdit && (
+                  <span className="text-slate-500 italic ml-2">Champs déverrouillés — vous pouvez modifier</span>
+                )}
               </div>
               {lockedEdit && (
                 <div className="text-[11px] text-slate-500 bg-slate-800/50 rounded-xl px-3 py-2">
@@ -611,6 +654,9 @@ export default function JournalView({ formatCurrency, invoices = [], expenses = 
                           onChange={(code) => updateEditLine(i, 'compte', code)}
                           disabled={lockedEdit}
                           className={lockedEdit ? 'opacity-60 pointer-events-none' : ''} />
+                        {l.compte && findLibelle(l.compte) && (
+                          <div className="text-[9px] text-slate-500 mt-0.5 truncate max-w-[180px]">{findLibelle(l.compte)}</div>
+                        )}
                       </td>
                       <td className="py-1.5 pr-2">
                         <input type="text" value={l.libelle || ''} onChange={e => updateEditLine(i, 'libelle', e.target.value)} disabled={lockedEdit}

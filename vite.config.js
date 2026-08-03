@@ -34,10 +34,6 @@ export default defineConfig({
           if (id.includes('node_modules/pdfjs-dist')) {
             return 'pdfjs';
           }
-          // Supabase
-          if (id.includes('node_modules/@supabase')) {
-            return 'supabase';
-          }
           // html2canvas
           if (id.includes('node_modules/html2canvas')) {
             return 'html2canvas';

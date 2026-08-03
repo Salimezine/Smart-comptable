@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { runJournalAudit, generateAuditMarkdown } from './auditEngine';
-import { ShieldCheck, AlertTriangle, CheckCircle, XCircle, Download, RefreshCw, FileText, Sparkles, BarChart3, ListChecks, Info, Play, TrendingUp } from 'lucide-react';
+import { askAI } from './utils/auditAI';
+import { ShieldCheck, AlertTriangle, CheckCircle, XCircle, Download, RefreshCw, FileText, Sparkles, BarChart3, ListChecks, Info, Play, TrendingUp, BrainCircuit, MessageSquare } from 'lucide-react';
 import { jsPDF } from 'jspdf';
 
 const fmt = (v) => {
@@ -35,10 +36,13 @@ export default function AuditView({ companyDetails }) {
   const [auditResult, setAuditResult] = useState(null);
   const [running, setRunning] = useState(false);
   const [error, setError] = useState('');
+  const [aiAnalyzing, setAiAnalyzing] = useState(false);
+  const [aiAnalysis, setAiAnalysis] = useState('');
 
   const runAudit = useCallback(() => {
     setRunning(true);
     setError('');
+    setAiAnalysis('');
     try {
       const result = runJournalAudit({ companyDetails });
       setAuditResult(result);
@@ -49,6 +53,21 @@ export default function AuditView({ companyDetails }) {
       setRunning(false);
     }
   }, [companyDetails]);
+
+  const analyzeWithAI = async () => {
+    if (!auditResult || aiAnalyzing) return;
+    setAiAnalyzing(true);
+    setAiAnalysis('');
+    try {
+      const q = 'Donne-moi une analyse claire de mon audit : le score, les points les plus critiques à corriger en priorité, ce qui va bien, et 3 actions concrètes à faire ce mois-ci pour améliorer la conformité. Sois concret avec les montants réels.';
+      const answer = await askAI(q, [], companyDetails);
+      setAiAnalysis(answer || 'Pas de réponse IA (configurez une clé dans le chat → "Clés IA").');
+    } catch {
+      setAiAnalysis('Erreur lors de l\'analyse IA.');
+    } finally {
+      setAiAnalyzing(false);
+    }
+  };
 
   useEffect(() => {
     setAuditResult(null);
@@ -146,6 +165,13 @@ export default function AuditView({ companyDetails }) {
             <button onClick={exportPDF}
               className="flex items-center gap-2 px-3 py-1.5 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 text-xs font-bold rounded-xl border border-indigo-500/30 transition-all">
               <Download className="w-3.5 h-3.5" /> PDF
+            </button>
+          )}
+          {auditResult && (
+            <button onClick={analyzeWithAI} disabled={aiAnalyzing}
+              className="flex items-center gap-2 px-3 py-1.5 bg-violet-500/20 hover:bg-violet-500/30 text-violet-300 text-xs font-bold rounded-xl border border-violet-500/30 transition-all disabled:opacity-50">
+              {aiAnalyzing ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <BrainCircuit className="w-3.5 h-3.5" />}
+              Analyse IA
             </button>
           )}
           <button onClick={runAudit} disabled={running}
@@ -335,6 +361,22 @@ export default function AuditView({ companyDetails }) {
               );
             })}
           </div>
+
+          {/* Analyse IA */}
+          {(aiAnalysis || aiAnalyzing) && (
+            <div className="glass-card p-4 rounded-xl border border-violet-500/30 bg-violet-500/5">
+              <h4 className="text-xs font-bold text-violet-300 flex items-center gap-2 mb-2">
+                <BrainCircuit className="w-3.5 h-3.5" /> Analyse IA de l'audit
+              </h4>
+              {aiAnalyzing ? (
+                <div className="flex items-center gap-2 text-[11px] text-slate-400 py-3">
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin text-violet-400" /> Analyse en cours...
+                </div>
+              ) : (
+                <div className="text-[11px] text-slate-300 leading-relaxed whitespace-pre-wrap">{aiAnalysis}</div>
+              )}
+            </div>
+          )}
 
           {/* Optimisations fiscales & réduction de charges */}
           {auditResult.optimizations?.length > 0 && (

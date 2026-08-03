@@ -82,7 +82,7 @@ export function useAuth() {
             clearSession();
           }
         }
-      } catch (e) { /* ignore init errors */ }
+      } catch (e) { console.error('[auth] init supabase session failed:', e?.message); }
       if (!cancelled) setInitializing(false);
     })();
     return () => { cancelled = true; };

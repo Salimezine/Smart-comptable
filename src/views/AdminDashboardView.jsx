@@ -73,7 +73,7 @@ export default function AdminDashboardView({ currentUser }) {
             otp: inv.code,
             code: inv.code,
             otp_code: inv.code,
-            message: `Vous avez ete invite a rejoindre Smart Comptable.\n\nVotre code d'invitation : ${inv.code}\n\nRole : ${inviteForm.role}\nLien : https://salimezine.github.io/Smart-comptable/app.html\n\nCe code expire le ${inv.expiresAt}.`,
+            message: `Vous avez ete invite a rejoindre Smart Comptable.\n\nVotre code d'invitation : ${inv.code}\n\nRole : ${inviteForm.role}\nLien : ${window.location.origin}${window.location.pathname.replace(/\/+$/, '')}/\n\nCe code expire le ${inv.expiresAt}.`,
           },
         }),
       });

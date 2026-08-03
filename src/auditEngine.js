@@ -35,8 +35,42 @@ function loadJournal() {
 }
 
 // ─────────────────────────────────────────────
-//  Journal-based audit
+//  Context audit pour l'assistant IA
 // ─────────────────────────────────────────────
+export function buildAuditContext(companyDetails) {
+  try {
+    const audit = runJournalAudit({ companyDetails });
+    if (!audit || audit.summary.total === 0) {
+      return 'Aucune écriture comptable enregistrée pour cette société. Conseil : enregistrez vos factures et dépenses pour générer un audit.';
+    }
+    const s = audit.stats || {};
+    const grade = audit.score >= 80 ? 'excellent' : audit.score >= 60 ? 'acceptable' : 'critique';
+    const lignes = [
+      `Audit de l'entreprise : score ${audit.score}/100 (${grade}).`,
+      `Écritures : ${s.entriesCount} (${s.lockedCount} verrouillées). Débit total ${(s.totalDebit || 0).toFixed(3)} DT, Crédit total ${(s.totalCredit || 0).toFixed(3)} DT.`,
+      `TVA collectée (43671) : ${(s.tvaCollected || 0).toFixed(3)} DT ; TVA déductible (43666) : ${(s.tvaDeductible || 0).toFixed(3)} DT ; TVA due : ${(s.tvaDue || 0).toFixed(3)} DT.`,
+      `Retenue à la source (43674) : solde ${(s.rsSolde || 0).toFixed(3)} DT.`,
+      `Provision IS (631000) : ${(s.isProvision || 0).toFixed(3)} DT.`,
+      `Masse salariale (6411) : ${(s.payrollBrut || 0).toFixed(3)} DT.`,
+      `Pièces non équilibrées : ${s.unbalancedCount}. N° pièce en double : ${s.duplicatePieces}.`,
+    ];
+    const fails = audit.checks.filter(c => c.status === 'fail').slice(0, 5);
+    if (fails.length > 0) {
+      lignes.push('Points non conformes : ' + fails.map(c => `${c.label} (${c.detail})`).join(' · '));
+    }
+    const warns = audit.checks.filter(c => c.status === 'warn').slice(0, 3);
+    if (warns.length > 0) {
+      lignes.push('Avertissements : ' + warns.map(c => c.label).join(' · '));
+    }
+    if (audit.recommendations && audit.recommendations.length > 0) {
+      lignes.push('Recommandations : ' + audit.recommendations.slice(0, 4).join(' · '));
+    }
+    return lignes.join('\n');
+  } catch {
+    return 'Impossible de charger l\'audit de l\'entreprise.';
+  }
+}
+
 export const runJournalAudit = ({ companyDetails } = {}) => {
   const journal = loadJournal();
   if (journal.length === 0) {

@@ -1,7 +1,8 @@
 import { jsPDF } from 'jspdf';
 import ExcelJS from 'exceljs';
+import { buildBilanDetaille } from './bilanDetaille';
 
-const CURR = 'MDT';
+const CURR = 'DT';
 
 const getVal = (obj, ...keys) => {
   for (const k of keys) {
@@ -631,9 +632,10 @@ export async function exportReportsExcel(reports) {
   const $fl = (k, ...fb) => getVal(fluxTresorerie, k, ...fb);
   const $ra = (k, ...fb) => getVal(ratios, k, ...fb);
 
-  const hasPrev = !!bilanPrev;
+  // Colonnes N et N-1 TOUJOURS présentes (N-1 vide si aucune donnée comparative)
+  const hasPrev = true;
   const yearN = reports?.company?.year || 'N';
-  const yearN_1 = bilanPrev ? (Number(yearN) - 1) : '';
+  const yearN_1 = reports?.company?.prevYear || (Number(yearN) - 1) || 'N-1';
 
   const addSheet = (name, headers, rows, colWidths) => {
     const ws = wb.addWorksheet(name);
@@ -661,6 +663,7 @@ export async function exportReportsExcel(reports) {
   };
 
   // ══════════ BILAN (2 sections: Actif + Passif) ══════════
+  const sumProv = (arr) => (arr || []).reduce((s, x) => s + (x.montant || 0), 0);
   const bilanHeaders = hasPrev ? ['Rubrique', `N (${yearN}) MDT`, `N-1 (${yearN_1}) MDT`] : ['Rubrique', 'Montant (MDT)'];
   const bCw = hasPrev ? [40, 18, 18] : [40, 18];
 
@@ -670,11 +673,22 @@ export async function exportReportsExcel(reports) {
     ['Immobilisations incorporelles', toMdt($b('immobilisationsIncorporelles')), hasPrev ? toMdt($bp('immobilisationsIncorporelles')) : null].filter(v => v !== null),
     ['Immobilisations corporelles', toMdt($b('immobilisationsCorporelles')), hasPrev ? toMdt($bp('immobilisationsCorporelles')) : null].filter(v => v !== null),
     ['Immobilisations financières', toMdt($b('immobilisationsFinancieres')), hasPrev ? toMdt($bp('immobilisationsFinancieres')) : null].filter(v => v !== null),
+    ...(() => { try { const det = buildBilanDetaille(balanceGenerale || [], bilan); const detP = (bilanPrev ? buildBilanDetaille(balanceGenerale || [], bilanPrev) : null); const pv = det.actifNC?.provANC || []; const pvN = -toMdt(sumProv(pv)); const pvN_1 = hasPrev ? -toMdt(detP ? sumProv(detP.actifNC?.provANC || []) : 0) : null; const rows = [['Moins: Provisions', pvN, ...(hasPrev ? [pvN_1] : [])]]; pv.forEach(l => { const lab = (l.code ? String(l.code).trim() + ' − ' : '') + (l.label || '').replace(/^\s*[−-]\s*/, ''); const n1 = detP ? (detP.actifNC?.provANC || []).find(x => x.code === l.code)?.montant : 0; rows.push(['  ' + lab, -toMdt(l.montant), ...(hasPrev ? [-toMdt(n1)] : [])]); }); return rows; } catch(e){ return []; } })(),
   ];
   if (getVal(bilan, 'amortissements', 'amortissementsDeduction') !== 0) {
     const amortN = -toMdt(getVal(bilan, 'amortissements', 'amortissementsDeduction'));
-    const amortN_1 = hasPrev ? -toMdt(getVal(bilanPrev, 'amortissements', 'amortissementsDeduction')) : null;
+    const amortN_1 = hasPrev ? -toMdt($bp('amortissements', 'amortissementsDeduction')) : null;
     bilanActifRows.push(['Moins: Amortissements', amortN, ...(hasPrev ? [amortN_1] : [])]);
+    // Détail par compte (28xxx) — comme l'EF de référence
+    try {
+      const det = buildBilanDetaille(balanceGenerale || [], bilan);
+      const detP = (bilanPrev ? buildBilanDetaille(balanceGenerale || [], bilanPrev) : null);
+      (det.actifNC.amort || []).forEach(l => {
+        const lab = (l.code ? String(l.code).trim() + ' − ' : '') + (l.label || '').replace(/^\s*[−-]\s*/, '');
+        const n1 = detP ? (detP.actifNC.amort || []).find(x => x.code === l.code)?.montant : 0;
+        bilanActifRows.push(['  ' + lab, -toMdt(l.montant), ...(hasPrev ? [-toMdt(n1)] : [])]);
+      });
+    } catch (e) { /* ignore detail */ }
   }
   bilanActifRows.push(
     ['ACTIFS COURANTS'],
@@ -696,6 +710,7 @@ export async function exportReportsExcel(reports) {
     ['PASSIFS NON COURANTS'],
     ['Emprunts', toMdt($b('emprunts')), hasPrev ? toMdt($bp('emprunts')) : null].filter(v => v !== null),
     ['Provisions', toMdt($b('provisionsDettes', 'provisions')), hasPrev ? toMdt($bp('provisionsDettes', 'provisions')) : null].filter(v => v !== null),
+    ...(() => { try { const det = buildBilanDetaille(balanceGenerale || [], bilan); const detP = (bilanPrev ? buildBilanDetaille(balanceGenerale || [], bilanPrev) : null); const p = det.provisionsNC || []; return p.map(l => { const lab = (l.code ? String(l.code).trim() + ' − ' : '') + (l.label || '').replace(/^\s*[−-]\s*/, ''); const n1 = detP ? (detP.provisionsNC || []).find(x => x.code === l.code)?.montant : 0; return ['  ' + lab, toMdt(l.montant), ...(hasPrev ? [toMdt(n1)] : [])]; }); } catch(e){ return []; } })(),
     ['PASSIFS COURANTS'],
     ['Fournisseurs et comptes rattachés', toMdt($b('fournisseurs')), hasPrev ? toMdt($bp('fournisseurs')) : null].filter(v => v !== null),
     ['État — TVA due', toMdt($b('etatCredit')), hasPrev ? toMdt($bp('etatCredit')) : null].filter(v => v !== null),
@@ -850,4 +865,189 @@ export async function exportReportsExcel(reports) {
   a.download = `EtatsFinanciers_SCE_${companyName.replace(/\s+/g, '_')}_${year}.xlsx`;
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// Export du BILAN SCE (par poste, format EF IDENTIQUE : code | vide | vide | libellé | montant N | montant N-1)
+// Reproduit la structure exacte d'un fichier EF (sans page de garde) :
+//   ACTIF : A1..A15 + totaux (Total actifs immobilisés, TOTAL ACTIFS NON COURANTS, TOTAL ACTIFS COURANTS, TOTAL DES ACTIFS)
+//   PASSIF : P1..P9 + totaux (Total CP avant résultat, TOTAL CAPITAUX PROPRES, Total passifs, TOTAL DES PASSIFS, TOTAL GÉNÉRAL)
+// accountsN / accountsN1 : [{ compte, libelle, debitTotal, creditTotal }] ; bilanN / bilanN1 : objets bilan du moteur.
+export async function exportSCEBilan({ accountsN, accountsN1, bilanN, bilanN1, meta = {} }) {
+  const XLSX = await import('xlsx');
+  const detN = (accountsN && accountsN.length) ? buildBilanDetaille(accountsN, bilanN) : null;
+  const detN1 = (accountsN1 && accountsN1.length) ? buildBilanDetaille(accountsN1, bilanN1) : null;
+  // La colonne N-1 est TOUJOURS présente dans l'export (vide si aucune donnée N-1).
+  const hasN1 = true;
+  const dataN1 = !!detN1;
+  const C = (v) => (v == null ? '' : Math.round(v));
+  const r0 = (a) => Math.round((a?.montant) || 0);
+
+  // Calcule montant N et N-1 d'une liste de lignes (détail), alignées par label
+  const vals = (listN, listN1) => {
+    const n = (listN || []).reduce((s, l) => s + r0(l), 0);
+    const n1 = dataN1 ? (listN1 || []).reduce((s, l) => s + r0(l), 0) : '';
+    return { n, n1, dN: C(n), dN1: dataN1 ? C(n1) : '' };
+  };
+  // Ligne détail (sans code) avec montants N/N-1 alignés par label
+  const det = (label, listN, listN1) => {
+    const codeLab = (l) => (l.code ? String(l.code).trim() + ' − ' : '') + (l.label || '').replace(/^\s*[−-]\s*/, '');
+    const map1 = {}; (listN1 || []).forEach(l => { map1[codeLab(l).trim()] = r0(l); });
+    const out = [];
+    (listN || []).forEach(l => { out.push(['', '', '', '  ' + codeLab(l), r0(l), dataN1 ? (map1[codeLab(l).trim()] != null ? map1[codeLab(l).trim()] : 0) : '']); });
+    return out;
+  };
+  const line = (code, label, n, n1) => [code || '', '', '', label, n, hasN1 ? n1 : ''];
+  const tot = (label, n, n1) => ['', '', label, '', n, hasN1 ? n1 : ''];
+
+  // ===== ACTIF =====
+  const actifRows = [];
+  if (detN) {
+    const immoIn = vals(detN.actifNC.incorp, detN1?.actifNC.incorp);
+    const immoAm = vals(detN.actifNC.amort, detN1?.actifNC.amort);
+    const immoCo = vals(detN.actifNC.corp, detN1?.actifNC.corp);
+    const immoFi = vals(detN.actifNC.fin, detN1?.actifNC.fin);
+    const immoPr = vals(detN.actifNC.provANC, detN1?.actifNC.provANC);
+    const immoO = vals(detN.actifNC.autresANC, detN1?.actifNC.autresANC);
+    const totalImmo = { n: immoIn.n + immoCo.n + immoFi.n + immoO.n + immoAm.n + immoPr.n, n1: dataN1 ? immoIn.n1 + immoCo.n1 + immoFi.n1 + immoO.n1 + immoAm.n1 + immoPr.n1 : '' };
+    actifRows.push(line('A1', 'Immobilisations incorporelles', immoIn.dN, immoIn.dN1));
+    actifRows.push(...det('', detN.actifNC.incorp, detN1?.actifNC.incorp));
+    actifRows.push(line('A2', 'Moins : amortissements', immoAm.dN, immoAm.dN1));
+    actifRows.push(...det('', detN.actifNC.amort, detN1?.actifNC.amort));
+    actifRows.push(line('A3', 'Immobilisations corporelles', immoCo.dN, immoCo.dN1));
+    actifRows.push(...det('', detN.actifNC.corp, detN1?.actifNC.corp));
+    actifRows.push(line('A5', 'Immobilisations financières', immoFi.dN, immoFi.dN1));
+    actifRows.push(...det('', detN.actifNC.fin, detN1?.actifNC.fin));
+    actifRows.push(line('A6', 'Moins : provisions', immoPr.dN, immoPr.dN1));
+    actifRows.push(...det('', detN.actifNC.provANC, detN1?.actifNC.provANC));
+    actifRows.push(tot('Total des actifs immobilisés', C(totalImmo.n), dataN1 ? C(totalImmo.n1) : ''));
+    const totalANC = { n: detN.actifNC.total, n1: dataN1 ? detN1.actifNC.total : '' };
+    actifRows.push(tot('TOTAL DES ACTIFS NON COURANTS', C(totalANC.n), dataN1 ? C(totalANC.n1) : ''));
+
+    const stk = vals(detN.stocks, detN1?.stocks);
+    const tie = vals(detN.tiersActif, detN1?.tiersActif);
+    const oac = vals(detN.autresActifsC, detN1?.autresActifsC);
+    const pla = vals([...(detN.placements || []), ...(detN.liquidites || [])], detN1 ? [...(detN1.placements || []), ...(detN1.liquidites || [])] : []);
+    const totalAC = { n: stk.n + tie.n + oac.n + pla.n, n1: dataN1 ? stk.n1 + tie.n1 + oac.n1 + pla.n1 : '' };
+    actifRows.push(line('A8', 'Stocks', stk.dN, stk.dN1));
+    actifRows.push(...det('', detN.stocks, detN1?.stocks));
+    actifRows.push(line('A10', 'Clients et comptes rattachés', tie.dN, tie.dN1));
+    actifRows.push(...det('', detN.tiersActif, detN1?.tiersActif));
+    actifRows.push(line('A12', 'Autres actifs courants', oac.dN, oac.dN1));
+    actifRows.push(...det('', detN.autresActifsC, detN1?.autresActifsC));
+    actifRows.push(line('A15', 'Liquidités et équivalents de liquidités', pla.dN, pla.dN1));
+    actifRows.push(...det('', [...(detN.placements || []), ...(detN.liquidites || [])], detN1 ? [...(detN1.placements || []), ...(detN1.liquidites || [])] : []));
+    actifRows.push(tot('TOTAL DES ACTIFS COURANTS', C(totalAC.n), dataN1 ? C(totalAC.n1) : ''));
+    const totalActif = { n: totalANC.n + totalAC.n, n1: dataN1 ? totalANC.n1 + totalAC.n1 : '' };
+    actifRows.push(tot('TOTAL DES ACTIFS', C(totalActif.n), dataN1 ? C(totalActif.n1) : ''));
+  }
+
+  // ===== PASSIF =====
+  const passifRows = [];
+  if (detN) {
+    const cap = (detN.cp.find(l => /capital/i.test(l.label || '')) || {});
+    const res = (detN.cp.find(l => /réserv/i.test(l.label || '')) || {});
+    const rep = (detN.cp.find(l => /report/i.test(l.label || '')) || {});
+    const rn = (detN.cp.find(l => /résultat net/i.test(l.label || '')) || {});
+    const cp1 = detN1?.cp || [];
+    const cap1 = (cp1.find(l => /capital/i.test(l.label || '')) || {});
+    const res1 = (cp1.find(l => /réserv/i.test(l.label || '')) || {});
+    const rep1 = (cp1.find(l => /report/i.test(l.label || '')) || {});
+    const rn1 = (cp1.find(l => /résultat net/i.test(l.label || '')) || {});
+    const cpAvant = { n: r0(cap) + r0(res) + r0(rep), n1: dataN1 ? r0(cap1) + r0(res1) + r0(rep1) : '' };
+    passifRows.push(line('P1', 'Capital social', r0(cap), dataN1 ? r0(cap1) : ''));
+    passifRows.push(line('P2', 'Réserves', r0(res), dataN1 ? r0(res1) : ''));
+    passifRows.push(line('P3', 'Résultats reportés', r0(rep), dataN1 ? r0(rep1) : ''));
+    passifRows.push(tot('Total capitaux propres avant résultat', C(cpAvant.n), dataN1 ? C(cpAvant.n1) : ''));
+    passifRows.push(line('', 'Résultat de l\'exercice', r0(rn), dataN1 ? r0(rn1) : ''));
+    const totalCP = { n: cpAvant.n + r0(rn), n1: dataN1 ? cpAvant.n1 + r0(rn1) : '' };
+    passifRows.push(tot('TOTAL DES CAPITAUX PROPRES', C(totalCP.n), dataN1 ? C(totalCP.n1) : ''));
+
+    const emp = vals(detN.emprunts, detN1?.emprunts);
+    const apf = vals(detN.autresPassifsFinNC, detN1?.autresPassifsFinNC);
+    const pro = vals(detN.provisionsNC, detN1?.provisionsNC);
+    const totalPNC = { n: emp.n + apf.n + pro.n, n1: dataN1 ? emp.n1 + apf.n1 + pro.n1 : '' };
+    passifRows.push(line('P4', 'Emprunts', emp.dN, emp.dN1));
+    passifRows.push(...det('', detN.emprunts, detN1?.emprunts));
+    passifRows.push(line('P5', 'Autres passifs financiers', apf.dN, apf.dN1));
+    passifRows.push(...det('', detN.autresPassifsFinNC, detN1?.autresPassifsFinNC));
+    passifRows.push(line('P6', 'Provisions', pro.dN, pro.dN1));
+    passifRows.push(...det('', detN.provisionsNC, detN1?.provisionsNC));
+    passifRows.push(tot('Total passifs non courants', C(totalPNC.n), dataN1 ? C(totalPNC.n1) : ''));
+
+    const fou = vals(detN.fournisseurs, detN1?.fournisseurs);
+    const oacP = vals(detN.autresPassifsC, detN1?.autresPassifsC);
+    const con = vals(detN.concours, detN1?.concours);
+    const totalPC = { n: fou.n + oacP.n + con.n, n1: dataN1 ? fou.n1 + oacP.n1 + con.n1 : '' };
+    passifRows.push(line('P7', 'Fournisseurs et comptes rattachés', fou.dN, fou.dN1));
+    passifRows.push(...det('', detN.fournisseurs, detN1?.fournisseurs));
+    passifRows.push(line('P8', 'Autres passifs courants', oacP.dN, oacP.dN1));
+    passifRows.push(...det('', detN.autresPassifsC, detN1?.autresPassifsC));
+    passifRows.push(line('P9', 'Concours bancaires et autres passifs financiers', con.dN, con.dN1));
+    passifRows.push(...det('', detN.concours, detN1?.concours));
+    passifRows.push(tot('Total passifs courants', C(totalPC.n), dataN1 ? C(totalPC.n1) : ''));
+
+    const totalPassif = { n: totalCP.n + totalPNC.n + totalPC.n, n1: dataN1 ? totalCP.n1 + totalPNC.n1 + totalPC.n1 : '' };
+    passifRows.push(tot('TOTAL DES PASSIFS', C(totalPassif.n), dataN1 ? C(totalPassif.n1) : ''));
+    passifRows.push(tot('TOTAL DES CAPITAUX PROPRES ET PASSIFS', C(totalPassif.n), dataN1 ? C(totalPassif.n1) : ''));
+  }
+
+  const head = ['', '', '', 'BILAN SCE', 'N (' + (meta.yearN || 'N') + ')', hasN1 ? 'N-1 (' + (meta.yearN1 || 'N-1') + ')' : ''];
+  const toWs = (rows, title) => {
+    const out = [head, ['', '', '', title, '', ''], ...rows];
+    const ws = XLSX.utils.aoa_to_sheet(out);
+    ws['!cols'] = [{ wch: 6 }, { wch: 3 }, { wch: 3 }, { wch: 55 }, { wch: 18 }, { wch: 18 }];
+    return ws;
+  };
+  const wb = XLSX.utils.book_new();
+  // ACTIF/PASSIF en PREMIER (contiennent les colonnes N et N-1) pour être visibles à l'ouverture.
+  XLSX.utils.book_append_sheet(wb, toWs(actifRows, 'ACTIF — N et N-1'), 'ACTIF');
+  XLSX.utils.book_append_sheet(wb, toWs(passifRows, 'PASSIF — N et N-1'), 'PASSIF');
+  if (accountsN && accountsN.length) {
+    const balN = accountsN.map(a => [String(a.compte || '').replace(/\s.*$/, '').trim(), a.libelle || '', Math.round(a.debitTotal || 0), Math.round(a.creditTotal || 0)]);
+    const tD = balN.reduce((s, r) => s + r[2], 0), tC = balN.reduce((s, r) => s + r[3], 0);
+    balN.push(['', 'TOTAL', tD, tC]);
+    const wsN = XLSX.utils.aoa_to_sheet([['N° COMPTE', 'LIBELLE', 'DEBIT', 'CREDIT'], ...balN]);
+    wsN['!cols'] = [{ wch: 14 }, { wch: 40 }, { wch: 16 }, { wch: 16 }];
+    XLSX.utils.book_append_sheet(wb, wsN, 'BALANCE N');
+  }
+  if (accountsN1 && accountsN1.length) {
+    const balN1 = accountsN1.map(a => [String(a.compte || '').replace(/\s.*$/, '').trim(), a.libelle || '', Math.round(a.debitTotal || 0), Math.round(a.creditTotal || 0)]);
+    const tD = balN1.reduce((s, r) => s + r[2], 0), tC = balN1.reduce((s, r) => s + r[3], 0);
+    balN1.push(['', 'TOTAL', tD, tC]);
+    const wsN1 = XLSX.utils.aoa_to_sheet([['N° COMPTE', 'LIBELLE', 'DEBIT', 'CREDIT'], ...balN1]);
+    wsN1['!cols'] = [{ wch: 14 }, { wch: 40 }, { wch: 16 }, { wch: 16 }];
+    XLSX.utils.book_append_sheet(wb, wsN1, 'BALANCE N-1');
+  }
+  const fname = (meta.filename || 'Bilan_SCE').replace(/\s+/g, '_');
+  XLSX.writeFile(wb, `${fname}.xlsx`);
+}
+
+// Export des balances Fisher N et N-1 (saisie ou importée) vers un fichier Excel.
+// Chaque balance : [{ compte, libelle, debitTotal, creditTotal }]
+export async function exportN1Balance(accountsN, accountsN1, opts = {}) {
+  const XLSX = await import('xlsx');
+  const buildRows = (accounts, label) => {
+    if (!accounts || !accounts.length) return [{ 'N° COMPTE': '', 'LIBELLÉ': `Aucune donnée ${label}`, 'DÉBIT': 0, 'CRÉDIT': 0, 'SOLDE': 0 }];
+    const rows = accounts.map(a => ({
+      'N° COMPTE': String(a.compte || '').replace(/\s.*$/, '').trim(),
+      'LIBELLÉ': a.libelle || '',
+      'DÉBIT': Math.round((a.debitTotal || 0)),
+      'CRÉDIT': Math.round((a.creditTotal || 0)),
+      'SOLDE': Math.round((a.debitTotal || 0) - (a.creditTotal || 0)),
+    }));
+    const td = rows.reduce((s, r) => s + r['DÉBIT'], 0);
+    const tc = rows.reduce((s, r) => s + r['CRÉDIT'], 0);
+    rows.push({ 'N° COMPTE': '', 'LIBELLÉ': 'TOTAL', 'DÉBIT': td, 'CRÉDIT': tc, 'SOLDE': td - tc });
+    return rows;
+  };
+  const makeWs = (rows, name) => {
+    const ws = XLSX.utils.json_to_sheet(rows, { header: ['N° COMPTE', 'LIBELLÉ', 'DÉBIT', 'CRÉDIT', 'SOLDE'] });
+    ws['!cols'] = [{ wch: 14 }, { wch: 40 }, { wch: 16 }, { wch: 16 }, { wch: 16 }];
+    return ws;
+  };
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, makeWs(buildRows(accountsN, 'N'), 'Balance N'), 'Balance N');
+  XLSX.utils.book_append_sheet(wb, makeWs(buildRows(accountsN1, 'N-1'), 'Balance N-1'), 'Balance N-1');
+  const year = opts.year || new Date().getFullYear();
+  XLSX.writeFile(wb, `Balance_N_et_N-1_${year}.xlsx`);
 }

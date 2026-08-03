@@ -38,7 +38,7 @@ export const generateInvoiceLocal = async (userPrompt, companyDetails, lastInvoi
   const stampDuty = 1.000;
   const totalAmount = Math.round((subtotal + vatAmount + stampDuty) * 1000) / 1000;
   const isService = /prestation|service|consulting|conseil|honoraire/.test(text);
-  const retenueSource = isService ? Math.round(subtotal * 0.015 * 1000) / 1000 : 0;
+  const retenueSource = isService ? Math.round(subtotal * 0.01 * 1000) / 1000 : 0;
 
   return {
     clientName,

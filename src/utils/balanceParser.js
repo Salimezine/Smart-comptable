@@ -9,7 +9,9 @@ try {
 }
 
 const MONTHS_FR = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-const EXERCICE_RE = new RegExp('(?:exercice|période|année|du\\s*\\d{2}\\/\\d{2}\\/)?\\s*(\\d{4})\\s*(?:du|au|\\/)?.{0,20}?(\\d{4})?', 'i');
+const EXERCICE_RE = /(?<![0-9.])\b(19\d{2}|20\d{2})\b(?![0-9.])/;
+const EXERCICE_CONTEXT_RE = /(exercice|p[eé]riode|ann[eé]e|au\s*31|cl[oô]ture|exercice\s*(?:clos|arr[eê]t[eé])|situation\s*au|balance\s*au|bilan\s*au|arr[eê]t[eé]e?\s*au)/i;
+const EXERCICE_DATE_RE = /\b(31|30|28|29)[-\/](12|11|10|09|06|03)[-\/](19\d{2}|20\d{2})\b/;
 
 const BALANCE_HEADERS = ['compte','numéro','n°','num','comptes','code','intitulé','libellé','désignation','lib','débit','crédit','debit','credit','solde débiteur','solde crediteur','solde','soldes','total débit','total crédit','cumul débit','cumul crédit'];
 const BILAN_HEADERS = ['actif','passif','capitaux','emplois','ressources','immobilisations','stocks','créances','trésorerie','dettes','provisions','résultat'];
@@ -104,20 +106,43 @@ function detectType(rows) {
 }
 
 function detectExercice(rows) {
+  const found = [];
   for (const r of rows) {
     for (const c of r) {
       const s = String(c);
-      const m = s.match(EXERCICE_RE);
-      if (m) return m[1];
+      // 1) Recherche prioritaire : date explicite "31/12/2025" ou mot-clé "exercice 2025"
+      const d = s.match(EXERCICE_DATE_RE);
+      if (d) { found.push({ y: d[3], score: 3 }); continue; }
+      if (EXERCICE_CONTEXT_RE.test(s)) {
+        const m = s.match(EXERCICE_RE);
+        if (m) { found.push({ y: m[1], score: 2 }); continue; }
+      }
+      // 2) Sinon : toute année standalone (token borné, hors montants).
+      // On exclut les cellules qui ne contiennent QUE des chiffres/montants
+      // (ex: "2000" = capital, "199957" = montant) pour ne pas confondre avec l'exercice.
+      if (typeof c !== 'number' && !/^[\d\s.,-]+$/.test(s.trim())) {
+        const m = s.match(EXERCICE_RE);
+        if (m) found.push({ y: m[1], score: 1 });
+      }
     }
   }
+  if (!found.length) return new Date().getFullYear().toString();
+  // On privilégie les correspondances les mieux contextualisées
+  found.sort((a, b) => b.score - a.score);
+  const best = found[0];
+  const y = parseInt(best.y, 10);
+  if (y >= 1900 && y <= 2099) return best.y;
   return new Date().getFullYear().toString();
 }
 
 function normalizeCompte(val) {
   if (val == null || val === '') return '';
   const s = String(val).trim().replace(/\s.*$/, '').trim();
-  return s.replace(/[^0-9]/g, '');
+  const digits = s.replace(/[^0-9]/g, '');
+  // Le plan comptable SCE utilise des comptes à 6 chiffres maximum.
+  // Certaines balances collent une colonne vide (ex: "41910000" = compte "4191" + rub "0000").
+  // On tronque à 6 chiffres pour éviter les comptes aberrants.
+  return digits.length > 6 ? digits.slice(0, 6) : digits;
 }
 
 function findAmountColumns(headers, data) {
@@ -147,6 +172,12 @@ function findAmountColumns(headers, data) {
   } else if (debitCredit.length >= 2) {
     results.debit = debitCredit[debitCredit.length - 2];
     results.credit = debitCredit[debitCredit.length - 1];
+  } else {
+    // Columns Débit/Crédit SÉPARÉES (valeurs toujours positives) : on utilise les
+    // mots-clés présents dans les en-têtes (ex: balance Sage avec "DÉBIT"/"CRÉDIT"
+    // sur deux colonnes distinctes). On prend la colonne la plus à droite de chaque type.
+    if (debitKw.length) results.debit = debitKw[debitKw.length - 1].i;
+    if (creditKw.length) results.credit = creditKw[creditKw.length - 1].i;
   }
   return results;
 }
@@ -156,15 +187,23 @@ function extractAccountsFromRows(headers, data, type) {
   let colLibelle = detectColumnIndex(headers, ['intitulé','libellé','désignation','lib','nom','label','name','designation'], data);
   let colDebit = detectColumnIndex(headers, ['débit','debit','total débit','cumul débit','mouvement débiteur','montant débit','solde debiteur','mvt debit','mouvement debit'], data);
   let colCredit = detectColumnIndex(headers, ['crédit','credit','total crédit','cumul crédit','mouvement créditeur','montant crédit','solde crediteur','mvt credit','mouvement credit'], data);
-  let colSoldeDeb = detectColumnIndex(headers, ['solde débiteur','solde debiteur'], data);
-  let colSoldeCred = detectColumnIndex(headers, ['solde créditeur','solde crediteur'], data);
+  let colSoldeDeb = detectColumnIndex(headers, ['solde débiteur','solde debiteur','sd'], data);
+  let colSoldeCred = detectColumnIndex(headers, ['solde créditeur','solde crediteur','sc'], data);
   let colSolde = detectColumnIndex(headers, ['solde','soldes','solde net','montant','total','valeur','net'], data);
   let colMontant = detectColumnIndex(headers, ['montant','total','valeur'], data);
 
   if (colCompte < 0) colCompte = 0;
-  const amtCols = findAmountColumns(headers, data);
-  if (colDebit < 0 && amtCols.debit != null) colDebit = amtCols.debit;
-  if (colCredit < 0 && amtCols.credit != null) colCredit = amtCols.credit;
+  // Sécurité : dans les exports Sage, le compte est TOUJOURS en première colonne (index 0).
+  // Si la colonne détectée ne contient pas majoritairement de codes comptables alors que
+  // la colonne 0 en contient, on force colCompte = 0 (corrige les fichiers à cellules vides
+  // où la détection de headers est perturbée).
+  const isCodeCol = (idx) => {
+    if (idx < 0 || idx >= (headers?.length || 0)) return false;
+    const sample = data.slice(0, 30).map(r => normalizeCompte(r[idx]));
+    const codeCount = sample.filter(c => c.length >= 3 && c.length <= 8 && /^\d+$/.test(c)).length;
+    return codeCount >= Math.min(5, sample.length * 0.4);
+  };
+  if (!isCodeCol(colCompte) && isCodeCol(0)) colCompte = 0;
 
   console.log('🔍 Columns — Compte:', colCompte, 'Libellé:', colLibelle, 'Débit:', colDebit, 'Crédit:', colCredit, 'Solde:', colSolde, 'Montant:', colMontant);
 
@@ -247,9 +286,10 @@ function findHeaderRow(rows) {
   for (let i = 0; i < Math.min(rows.length, 15); i++) {
     const rowText = rows[i].map(v => String(v?.value ?? v ?? '').toLowerCase().trim()).join(' ');
     const score = allHeaders.filter(h => rowText.includes(h)).length;
-    if (score > bestScore) { bestScore = score; bestRow = i; }
     const hasCode = rows[i].some(v => /^\d{3,8}$/.test(String(v?.value ?? v ?? '').trim()));
-    if (hasCode && score >= 2) { bestRow = i; break; }
+    // Une ligne contenant un code comptable est une DONNÉE, jamais un en-tête.
+    if (!hasCode && score > bestScore) { bestScore = score; bestRow = i; }
+    if (!hasCode && score >= 2) { bestRow = i; break; }
   }
   return bestScore > 0 ? bestRow : -1;
 }
@@ -261,10 +301,43 @@ export async function parseExcelFile(file) {
   try {
     // SheetJS reads both .xls and .xlsx
     const wb = XLSX.read(buffer, { type: 'array' });
-    const ws = wb.Sheets[wb.SheetNames[0]];
-    if (!ws) throw new Error('Le fichier Excel ne contient aucune feuille de calcul.');
-    const raw = XLSX.utils.sheet_to_json(ws, { header: 1 });
-    rows = raw.map(r => r.map(v => v instanceof Date ? v.toISOString().split('T')[0] : v));
+    if (!wb.SheetNames.length) throw new Error('Le fichier Excel ne contient aucune feuille de calcul.');
+    // Choix de la feuille : on privilégie une feuille de BALANCE (comptes + SD/SC ou débit/crédit),
+    // en ignorant les pages de garde / bilan (ACTIF/PASSIF/RT...) qui ne sont pas des balances.
+    const BALANCE_SHEET_RE = /(balance|bilan\s*au|situation|sage|compte|journal)/i;
+    const SKIP_SHEET_RE = /(page\s*de\s*garde|couverture|actif|passif|rt\b|flux|sig|resultat|amort|provision|tcd)/i;
+    const isBalanceSheet = (name, rws) => {
+      const text = (rws || []).slice(0, 12).map(r => (r || []).map(c => String(c ?? '').toLowerCase()).join(' ')).join(' ');
+      const hasCompte = /(compte|n°|num|code)/.test(text);
+      const hasAmount = /(sd\b|sc\b|solde|débit|debit|crédit|credit|déb|créd)/.test(text);
+      return hasCompte && hasAmount;
+    };
+    let chosen = null, chosenName = null;
+    for (const name of wb.SheetNames) {
+      const ws = wb.Sheets[name];
+      if (!ws) continue;
+      const rws = XLSX.utils.sheet_to_json(ws, { header: 1 }).map(r => r.map(v => v instanceof Date ? v.toISOString().split('T')[0] : v));
+      if (rws.length < 2) continue;
+      if (SKIP_SHEET_RE.test(name)) continue;
+      if (BALANCE_SHEET_RE.test(name) || isBalanceSheet(name, rws)) { chosen = rws; chosenName = name; break; }
+    }
+    if (!chosen) {
+      // Fallback : première feuille contenant des codes comptables
+      for (const name of wb.SheetNames) {
+        const ws = wb.Sheets[name];
+        if (!ws) continue;
+        const rws = XLSX.utils.sheet_to_json(ws, { header: 1 }).map(r => r.map(v => v instanceof Date ? v.toISOString().split('T')[0] : v));
+        const hasCodes = (rws || []).slice(0, 40).some(r => (r || []).some(c => /^\d{3,8}$/.test(String(c ?? '').trim())));
+        if (hasCodes) { chosen = rws; chosenName = name; break; }
+      }
+    }
+    if (!chosen) {
+      const ws = wb.Sheets[wb.SheetNames[0]];
+      chosen = XLSX.utils.sheet_to_json(ws, { header: 1 }).map(r => r.map(v => v instanceof Date ? v.toISOString().split('T')[0] : v));
+      chosenName = wb.SheetNames[0];
+    }
+    rows = chosen;
+    console.log('📑 Feuille sélectionnée:', chosenName);
   } catch (e) {
     // Fallback: ExcelJS for .xlsx if SheetJS fails
     try {

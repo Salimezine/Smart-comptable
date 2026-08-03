@@ -1,6 +1,7 @@
 import { PCG_COMPLET } from './pcgComplet';
 
 const TIERS_KEY = 'smart_tiers_codes';
+const CUSTOM_PCG_KEY = 'smart_custom_pcg';
 
 function getCompanyId() {
   try {
@@ -12,6 +13,50 @@ function getCompanyId() {
 
 function storageKey() {
   return `${TIERS_KEY}_${getCompanyId()}`;
+}
+
+function customPcgKey() {
+  return `${CUSTOM_PCG_KEY}_${getCompanyId()}`;
+}
+
+export function loadCustomAccounts() {
+  try {
+    return JSON.parse(localStorage.getItem(customPcgKey()) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+export function saveCustomAccounts(list) {
+  localStorage.setItem(customPcgKey(), JSON.stringify(list));
+}
+
+export function addCustomAccount(account) {
+  const list = loadCustomAccounts();
+  if (!account.code || !account.label) return false;
+  if (PCG_COMPLET[account.code]) return false;
+  if (list.find(a => a.code === account.code)) return false;
+  list.push({ code: account.code, label: account.label });
+  saveCustomAccounts(list);
+  return true;
+}
+
+export function updateCustomAccount(code, updates) {
+  const list = loadCustomAccounts();
+  const idx = list.findIndex(a => a.code === code);
+  if (idx === -1) return false;
+  list[idx] = { ...list[idx], ...updates };
+  saveCustomAccounts(list);
+  return true;
+}
+
+export function removeCustomAccount(code) {
+  const list = loadCustomAccounts();
+  const idx = list.findIndex(a => a.code === code);
+  if (idx === -1) return false;
+  list.splice(idx, 1);
+  saveCustomAccounts(list);
+  return true;
 }
 
 export function loadTiers() {
@@ -40,9 +85,10 @@ export function addTier(tier) {
     timbre: tier.timbre != null ? tier.timbre : 1,
     rs_applicable: tier.rs_applicable || false,
     comptes_defaut: {
-      charge: tier.comptes_defaut?.charge || '',
-      tiers: tier.comptes_defaut?.tiers || '',
-      tva: tier.comptes_defaut?.tva || '43666',
+      charge: '',
+      tiers: '',
+      tva: '43666',
+      ...tier.comptes_defaut,
     },
     actif: true,
   });

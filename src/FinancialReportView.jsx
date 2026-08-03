@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { generateBalanceSheet, generateIncomeStatement, generateFromJournal } from './accountingUtils';
-import { exportReportsPDF, exportReportsExcel } from './utils/reportExport';
+import { exportReportsPDF, exportReportsExcel, exportN1Balance, exportSCEBilan } from './utils/reportExport';
 import { CheckCheck, TrendingUp, TrendingDown, Calendar, FileText, FileSpreadsheet, Edit, ChevronDown, ChevronRight, X, Search, ExternalLink, Info, RotateCcw, Upload, Download, AlertCircle, Table } from 'lucide-react';
 import { computeBalances, buildBalanceGenerale } from './utils/pcgTn';
 import { PCG_COMPLET } from './utils/pcgComplet';
 import { useToast } from './components/Toast';
+import { loadRules, addRule, removeRule, clearRules, getClassLabel } from './utils/learningStore';
+import { buildBilanDetaille } from './utils/bilanDetaille';
 
 const fmt = (v) => {
-  if (v == null || isNaN(v)) return '0,000 MDT';
-  return v.toLocaleString('fr-TN', { minimumFractionDigits: 3, maximumFractionDigits: 3 }) + ' MDT';
+  if (v == null || isNaN(v)) return '0 DT';
+  return v.toLocaleString('fr-TN', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' DT';
 };
 
 function Section({ title, children, defaultOpen = true }) {
@@ -140,6 +142,10 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   const [importedData, setImportedData] = useState(null);
   const [editingAccounts, setEditingAccounts] = useState(null);
   const [dataSource, setDataSource] = useState('journal');
+  const [learnedRules, setLearnedRules] = useState(() => loadRules());
+  const [showRules, setShowRules] = useState(false);
+  const [reclassTargets, setReclassTargets] = useState({}); // compte -> prefixe cible en édition
+  const [detailMode, setDetailMode] = useState(false); // vue bilan détaillé (par classe)
   const currentYear = new Date().getFullYear();
   const exerciceYear = importedData?.exercice ? parseInt(importedData.exercice, 10) : currentYear;
   const displayYear = period || String(exerciceYear);
@@ -230,7 +236,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         soldeDebiteur: Math.max(0, (a.debitTotal || 0) - (a.creditTotal || 0)),
         soldeCrediteur: Math.max(0, (a.creditTotal || 0) - (a.debitTotal || 0)),
       }));
-      setEditingAccounts(aggregated.map(a => ({ ...a })));
+      // Applique les règles d'apprentissage mémorisées (reclassement auto des comptes corrigés)
+      const { applyRules } = await import('./utils/learningStore');
+      const learned = applyRules(aggregated, 'global');
+      const nReclassed = learned.filter(a => a.reclassed).length;
+      setEditingAccounts(learned.map(a => ({ ...a })));
+      if (nReclassed > 0) {
+        toast.info(`${nReclassed} compte(s) reclassé(s) automatiquement selon les règles apprises`);
+      }
       setImportedData({ filename: parsed.filename, exercice: parsed.exercice, type: parsed.type, accounts: aggregated });
       toast.success(`${aggregated.length} comptes extraits de ${parsed.filename} (${parsed.accounts.length} lignes agrégées) — Vérifiez et modifiez si besoin`);
     } catch (e) {
@@ -254,13 +267,15 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
         creditTotal: a.creditTotalPrev || 0,
       }));
       const reportsN_1 = balancesToReports(prevAccounts);
-      setImportedData(prev => ({ ...prev, accounts: editingAccounts, ...reportsN, reportsN_1, reportsN }));
+      setImportedData(prev => ({ ...prev, accounts: editingAccounts, ...reportsN, reportsN_1, reportsN, live: true }));
       setTableauxData({
         immobilisations: (reportsN.bilan.donneesImmobilisations.lignes || []).map(l => ({ ...l })),
         amortissements: (reportsN.bilan.donneesAmortissements.lignes || []).map(l => ({ ...l })),
         provisions: (reportsN.bilan.donneesProvisions.lignes || []).map(l => ({ ...l })),
         variationCP: (reportsN.bilan.variationCapitauxPropres.lignes || []).map(l => ({ ...l })),
       });
+      // On quitte le mode édition : le bilan finalisé s'affiche (sinon l'utilisateur a
+      // l'impression que "Générer" ne fait rien car l'édition reste à l'écran).
       setEditingAccounts(null);
       setDataSource('import');
       toast.success(`États financiers générés (${editingAccounts.length} comptes)`);
@@ -273,6 +288,86 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
   };
 
   const cancelEdit = () => { setEditingAccounts(null); setImportedData(null); };
+
+  // Import d'un fichier N-1 (exercice précédent) séparé, pour comparatif Bilans/N-1.
+  const [importingN1, setImportingN1] = useState(false);
+  // Saisie manuelle du N-1 : grille de comptes éditables (pas d'import de fichier).
+  const [showManualN1, setShowManualN1] = useState(false);
+  const [manualN1Rows, setManualN1Rows] = useState([]);
+  const [manualN1Name, setManualN1Name] = useState('Saisie manuelle N-1');
+
+  const handleManualN1Apply = async () => {
+    const rows = manualN1Rows.filter(r => r.compte && (r.debit || r.credit));
+    if (!rows.length) { toast.error('Ajoutez au moins un compte N-1'); return; }
+    setImportingN1(true);
+    try {
+      const { balancesToReports } = await import('./utils/balanceToReports');
+      const { applyRules } = await import('./utils/learningStore');
+      const accounts = applyRules(rows.map(r => ({ ...r })), 'global');
+      const repN1 = balancesToReports(accounts);
+      setImportedData(prev => ({ ...prev, reportsN_1: repN1, accountsN1: accounts, filenameN1: manualN1Name || 'Saisie manuelle N-1' }));
+      setPeriod(prevYear);
+      setShowManualN1(false);
+      toast.success(`N-1 saisi manuellement (${rows.length} comptes) — comparatif activé`);
+    } catch (e) {
+      console.error('Manual N-1 error:', e);
+      toast.error('Erreur N-1: ' + e.message);
+    } finally {
+      setImportingN1(false);
+    }
+  };
+
+  const handleImportN1 = async (file) => {
+    if (!file) return;
+    setImportingN1(true);
+    try {
+      const { parseBalanceFile } = await import('./utils/balanceParser');
+      const { balancesToReports } = await import('./utils/balanceToReports');
+      const { applyRules } = await import('./utils/learningStore');
+      const parsed = await parseBalanceFile(file);
+      // Agréger doublons
+      const m = new Map();
+      for (const a of parsed.accounts) {
+        if (m.has(a.compte)) { const e = m.get(a.compte); e.debitTotal += a.debitTotal||0; e.creditTotal += a.creditTotal||0; }
+        else m.set(a.compte, { ...a });
+      }
+      const accounts = applyRules([...m.values()].map(a => ({ ...a })), 'global');
+      const repN1 = balancesToReports(accounts);
+      setImportedData(prev => ({ ...prev, reportsN_1: repN1, accountsN1: accounts, filenameN1: parsed.filename }));
+      setPeriod(prevYear);
+      toast.success(`Exercice N-1 (${parsed.exercice || prevYear}) importé depuis ${parsed.filename}`);
+    } catch (e) {
+      console.error('N-1 import error:', e);
+      toast.error("Erreur import N-1: " + e.message);
+    } finally {
+      setImportingN1(false);
+    }
+  };
+
+  // Recalcul RÉACTIF : à chaque modification de editingAccounts, on recalcule
+  // balancesToReports en temps réel (sans attendre le clic "Générer").
+  const [liveReports, setLiveReports] = useState(null);
+  useEffect(() => {
+    if (!editingAccounts || editingAccounts.length === 0) { setLiveReports(null); return; }
+    let cancelled = false;
+    (async () => {
+      try {
+        const { balancesToReports } = await import('./utils/balanceToReports');
+        if (cancelled) return;
+        const rep = balancesToReports(editingAccounts);
+        const prev = editingAccounts.map(a => ({
+          ...a,
+          debitTotal: a.debitTotalPrev || 0,
+          creditTotal: a.creditTotalPrev || 0,
+        }));
+        const repPrev = balancesToReports(prev);
+        if (!cancelled) setLiveReports({ ...rep, reportsN_1: repPrev });
+      } catch (e) {
+        if (!cancelled) setLiveReports(null);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [editingAccounts]);
 
   const handleDetail = (key) => {
     if (journalData?.details?.[key]) return setSelectedDetail(key);
@@ -317,24 +412,47 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
     );
   }, [balanceGenerale, balanceSearch]);
 
+  // Bilan détaillé (par classe SCE) pour la vue "Détaillé"
+  const bilanDetaille = React.useMemo(() => {
+    const src = editingAccounts && editingAccounts.length ? editingAccounts : (importedData?.accounts || []);
+    if (!src.length) return null;
+    const rpt = editingAccounts && liveReports ? liveReports : (importedData || {});
+    return buildBilanDetaille(src, rpt?.bilan);
+  }, [editingAccounts, importedData, liveReports]);
+
   const totalDebit = filteredBalance.reduce((s, b) => s + b.debitTotal, 0);
   const totalCredit = filteredBalance.reduce((s, b) => s + b.creditTotal, 0);
   const totalSoldeDeb = filteredBalance.reduce((s, b) => s + b.soldeDebiteur, 0);
   const totalSoldeCred = filteredBalance.reduce((s, b) => s + b.soldeCrediteur, 0);
 
-  let bilan, resultat, ratios, sig, fluxTresorerie, controle, bilanPrev;
+  let bilan, resultat, ratios, sig, fluxTresorerie, controle, bilanPrev, resultatFiscal;
   let hasImported = importedData && dataSource === 'import';
 
-  if (hasImported) {
+  if (editingAccounts && liveReports) {
+    // Mode ÉDITION RÉACTIVE : on affiche le bilan recalculé en temps réel.
+    const useN_1 = period && period !== String(exerciceYear) && liveReports.reportsN_1;
+    const r = useN_1 ? liveReports.reportsN_1 : liveReports;
+    bilan = r.bilan;
+    resultat = r.resultat;
+    resultatFiscal = r.resultatFiscal;
+    ratios = r.ratios;
+    sig = r.sig;
+    fluxTresorerie = r.fluxTresorerie;
+    controle = r.controle;
+    bilanPrev = liveReports?.reportsN_1?.bilan;
+  } else if (hasImported) {
     const useN_1 = period && period !== String(exerciceYear) && importedData.reportsN_1;
     const r = useN_1 ? importedData.reportsN_1 : importedData;
     bilan = r.bilan;
     resultat = r.resultat;
+    resultatFiscal = r.resultatFiscal;
     ratios = r.ratios;
     sig = r.sig;
     fluxTresorerie = r.fluxTresorerie;
     controle = r.controle;
     bilanPrev = importedData?.reportsN_1?.bilan;
+    // En mode "N-1" (useN_1), le comparatif gris doit montrer le N (exercice courant).
+    if (useN_1) bilanPrev = importedData?.bilan;
   } else if (useJournal) {
     bilan = journalData.bilan;
     resultat = journalData.resultat;
@@ -603,8 +721,65 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
           <select value={displayYear} onChange={(e) => setPeriod(e.target.value)}
             className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-1.5 text-sm text-slate-100 focus:outline-none focus:border-brand-500">
             <option value={String(exerciceYear)}>{exerciceYear}</option>
-            <option value={prevYear}>{prevYear}</option>
+            <option value={prevYear}>{prevYear} (N-1)</option>
           </select>
+          {hasImported && (
+            <>
+              <input
+                type="file"
+                accept=".xls,.xlsx,.csv,.pdf"
+                onChange={(e) => { const f = e.target.files?.[0]; if (f) handleImportN1(f); e.target.value = ''; }}
+                className="hidden"
+                id="n1-file-input"
+              />
+              <button onClick={() => document.getElementById('n1-file-input')?.click()}
+                disabled={importingN1}
+                className="text-[10px] px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors disabled:opacity-50 flex items-center gap-1">
+                <Calendar size={12} /> {importingN1 ? 'Import N-1...' : importedData?.filenameN1 ? `N-1 ✓ ${importedData.filenameN1}` : 'Importer N-1'}
+              </button>
+              <button onClick={() => setShowManualN1(s => !s)}
+                className={`text-[10px] px-3 py-1.5 rounded-lg font-bold transition-colors ${showManualN1 ? 'bg-brand-600 text-white' : 'bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center gap-1'}`}>
+                <Edit size={12} /> {showManualN1 ? '✓ Saisir N-1' : 'Saisir N-1'}
+              </button>
+              {(importedData?.accountsN1?.length || manualN1Rows.some(r => r.compte)) && (
+                <button onClick={() => {
+                  const srcN1 = importedData?.accountsN1 || manualN1Rows.filter(r => r.compte);
+                  const srcN = importedData?.accounts || [];
+                  if (!srcN.length && !srcN1.length) { toast.error('Aucune donnée à exporter'); return; }
+                  exportN1Balance(srcN, srcN1, { year: currentYear })
+                    .then(() => toast.success('Balances N et N-1 exportées (Excel)'))
+                    .catch(e => toast.error('Erreur export: ' + e.message));
+                }}
+                  className="text-[10px] px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-bold transition-colors flex items-center gap-1">
+                  <Download size={12} /> Export N-1
+                </button>
+              )}
+              {importedData?.accounts?.length > 0 && (
+                <button onClick={async () => {
+                  const srcN = importedData.accounts || [];
+                  const srcN1 = importedData.accountsN1 || [];
+                  if (!srcN.length) { toast.error('Aucune balance N à exporter'); return; }
+                  try {
+                    const { balancesToReports } = await import('./utils/balanceToReports');
+                    // (Re)calcule le bilan si non encore généré (sinon buildBilanDetaille tombe à vide)
+                    const bilanN = importedData?.bilan || balancesToReports(srcN).bilan;
+                    const bilanN1 = importedData?.reportsN_1?.bilan || (srcN1.length ? balancesToReports(srcN1).bilan : undefined);
+                    await exportSCEBilan({
+                      accountsN: srcN,
+                      accountsN1: srcN1,
+                      bilanN,
+                      bilanN1,
+                      meta: { yearN: currentYear, yearN1: prevYear, filename: 'Bilan_SCE_' + (companyName || 'SCE') },
+                    });
+                    toast.success('Bilan SCE (N' + (srcN1.length ? ' + N-1' : '') + ') exporté (Excel)');
+                  } catch (e) { toast.error('Erreur export bilan: ' + e.message); }
+                }}
+                  className="text-[10px] px-3 py-1.5 bg-purple-600 hover:bg-purple-500 text-white rounded-lg font-bold transition-colors flex items-center gap-1">
+                  <Download size={12} /> Bilan SCE
+                </button>
+              )}
+            </>
+          )}
           <button onClick={() => {
             try {
               const bilanPrev = hasImported && importedData?.reportsN_1?.bilan ? importedData.reportsN_1.bilan : undefined;
@@ -615,8 +790,14 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             className="flex items-center gap-1 px-3 py-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileText className="w-3.5 h-3.5" /> PDF
           </button>
-          <button onClick={() => {
-            exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle, company: companyDetails, balanceGenerale: filteredBalance, tableauxData: effectiveTableaux, notes, accountingPolicies }).catch(console.error);
+          <button onClick={async () => {
+            try {
+              const { balancesToReports } = await import('./utils/balanceToReports');
+              // Bilan N-1 pour comparatif N/N-1 (diman présenté si des données N-1 existent)
+              const bilanPrev = (importedData?.reportsN_1?.bilan)
+                || (importedData?.accountsN1?.length ? balancesToReports(importedData.accountsN1).bilan : undefined);
+              exportReportsExcel({ bilan, resultat, sig, ratios, fluxTresorerie, controle, resultatFiscal, company: companyDetails, balanceGenerale: filteredBalance, tableauxData: effectiveTableaux, notes, accountingPolicies, bilanPrev }).catch(console.error);
+            } catch (e) { toast.error('Erreur export Excel: ' + e.message); }
           }}
             className="flex items-center gap-1 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors">
             <FileSpreadsheet className="w-3.5 h-3.5" /> Excel
@@ -643,18 +824,48 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
               className="text-[10px] px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors">
               Annuler
             </button>
-            <button onClick={confirmImport} disabled={importing}
-              className="text-[10px] px-4 py-1.5 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold transition-colors disabled:opacity-50">
-              {importing ? 'Calcul...' : 'Générer les états financiers'}
-            </button>
-          </div>
-        </div>
+             <button onClick={confirmImport} disabled={importing}
+               className="text-[10px] px-4 py-1.5 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold transition-colors disabled:opacity-50">
+               {importing ? 'Calcul...' : 'Générer les états financiers'}
+             </button>
+             <button onClick={() => setShowRules(s => !s)}
+               className="text-[10px] px-3 py-1.5 bg-indigo-600/80 hover:bg-indigo-500 text-white rounded-lg font-bold transition-colors flex items-center gap-1">
+               <RotateCcw size={12} /> Règles ({learnedRules.length})
+             </button>
+           </div>
+         </div>
+         {showRules && (
+           <div className="mb-3 p-3 bg-slate-900/60 rounded-xl border border-indigo-500/30">
+             <div className="flex items-center justify-between mb-2">
+               <p className="text-[11px] font-bold text-indigo-300">Règles d'apprentissage (réappliquées automatiquement aux prochains imports)</p>
+               {learnedRules.length > 0 && (
+                 <button onClick={() => { clearRules(); setLearnedRules([]); toast.success('Règles effacées'); }}
+                   className="text-[10px] px-2 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg">Tout effacer</button>
+               )}
+             </div>
+             {learnedRules.length === 0 ? (
+               <p className="text-[10px] text-slate-500">Aucune règle. Utilisez « Mémoriser » sur une ligne ci-dessous pour que le système reclasse automatiquement ce compte à l'avenir.</p>
+             ) : (
+               <ul className="space-y-1">
+                 {learnedRules.map(r => (
+                   <li key={r.fromPrefix + r.scope} className="flex items-center justify-between text-[10px] bg-slate-800/50 rounded-lg px-2 py-1">
+                     <span className="text-slate-300">Compte <b className="font-mono text-slate-100">{r.fromPrefix}…</b> → classe <b className="text-indigo-300">{r.toPrefix[0]}</b> ({getClassLabel(r.toPrefix)}) {r.note ? `· ${r.note}` : ''}</span>
+                     <button onClick={() => { removeRule(r.fromPrefix, r.scope); setLearnedRules(loadRules()); }}
+                       className="text-rose-400 hover:text-rose-300 ml-2">✕</button>
+                   </li>
+                 ))}
+               </ul>
+             )}
+           </div>
+         )}
         <div className="max-h-96 overflow-y-auto border border-slate-700 rounded-xl">
           <table className="w-full text-[11px]">
             <thead className="bg-slate-800/50 sticky top-0">
               <tr className="text-slate-400 font-bold uppercase tracking-wider">
                 <th className="text-left py-2 px-3 w-[80px]">Compte</th>
                 <th className="text-left py-2 px-3">Libellé</th>
+                <th className="text-center py-2 px-2 w-[120px]">Classe cible</th>
+                <th className="text-center py-2 px-2 w-[60px]">Mém.</th>
                 {importedData?.type === 'bilan' ? (
                   <>
                     <th className="text-right py-2 px-3 w-[130px]">Montant N</th>
@@ -682,6 +893,28 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                       value={a.libelle || ''}
                       onChange={e => setEditingAccounts(prev => prev.map((x, j) => j === i ? { ...x, libelle: e.target.value } : x))}
                       className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-left text-slate-400 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                  </td>
+                  <td className="py-1.5 px-2">
+                    <select
+                      value={reclassTargets[a.compte] || a.compte[0] || ''}
+                      onChange={e => setReclassTargets(prev => ({ ...prev, [a.compte]: e.target.value }))}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-lg px-1 py-1 text-center text-slate-200 font-mono text-[10px] focus:outline-none focus:border-indigo-500">
+                      {['1','2','3','4','5','6','7'].map(c => (
+                        <option key={c} value={c}>{c} · {getClassLabel(c).split(' ')[0]}</option>
+                      ))}
+                    </select>
+                  </td>
+                  <td className="py-1.5 px-2 text-center">
+                    <button
+                      onClick={() => {
+                        const prefix = String(a.compte || '').slice(0, 3);
+                        const target = reclassTargets[a.compte] || a.compte[0];
+                        if (!prefix) { toast.error('Compte vide'); return; }
+                        setLearnedRules(addRule({ fromPrefix: prefix, toPrefix: target, note: a.libelle || '' }));
+                        toast.success(`Règle mémorisée : ${prefix}… → classe ${target}`);
+                      }}
+                      title="Mémoriser ce reclassement pour les prochains imports"
+                      className="text-[10px] px-1.5 py-1 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-bold transition-colors">💾</button>
                   </td>
                   {importedData?.type === 'bilan' ? (
                     <>
@@ -739,13 +972,107 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             </tbody>
           </table>
         </div>
-        <div className="mt-3 flex justify-center">
+        <div className="mt-3 flex items-center justify-center gap-4">
           <button onClick={() => setEditingAccounts(prev => [...prev, { compte: '', libelle: '', debitTotal: 0, creditTotal: 0 }])}
             className="text-[11px] px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors flex items-center gap-1">
             + Nouveau compte
           </button>
+          {liveReports && (
+            <span className={`text-[11px] px-3 py-1.5 rounded-lg font-bold ${
+              Math.abs((liveReports.bilan?.totalActif||0) - (liveReports.bilan?.totalPassif||0)) < 0.5
+                ? 'bg-emerald-500/15 text-emerald-400'
+                : 'bg-amber-500/15 text-amber-400'
+            }`}>
+              Actif {Math.round(liveReports.bilan?.totalActif||0).toLocaleString('fr-TN')} DT ·
+              Passif {Math.round(liveReports.bilan?.totalPassif||0).toLocaleString('fr-TN')} DT ·
+              {Math.abs((liveReports.bilan?.totalActif||0) - (liveReports.bilan?.totalPassif||0)) < 0.5 ? ' ÉQUILIBRÉ ✓' : ' NON ÉQUILIBRÉ ⚠'}
+            </span>
+          )}
         </div>
       </div>
+      )}
+
+      {hasImported && showManualN1 && (
+        <div className="glass-card p-5 rounded-2xl border border-brand-500/30 shadow-card">
+          <div className="flex items-center justify-between mb-3 border-b border-slate-800 pb-3">
+            <div>
+              <h3 className="text-sm font-bold text-slate-100">Saisie manuelle de l'exercice N-1</h3>
+              <p className="text-[10px] text-slate-400">Saisissez la balance Fisher de l'année précédente (compte / libellé / débit / crédit). Vous pouvez aussi importer un fichier pour pré-remplir, puis ajuster.</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <input
+                type="file"
+                accept=".xls,.xlsx,.csv,.pdf"
+                onChange={async (e) => {
+                  const f = e.target.files?.[0]; if (!f) return;
+                  try {
+                    const { parseBalanceFile } = await import('./utils/balanceParser');
+                    const parsed = await parseBalanceFile(f);
+                    const rows = parsed.accounts.map(a => ({ compte: a.compte, libelle: a.libelle || '', debit: a.debitTotal || 0, credit: a.creditTotal || 0 }));
+                    setManualN1Rows(rows.length ? rows : [{ compte: '', libelle: '', debit: 0, credit: 0 }]);
+                    setManualN1Name(parsed.filename + ' (N-1)');
+                    toast.success(`${rows.length} lignes pré-remplies depuis ${parsed.filename}`);
+                  } catch (err) { toast.error('Erreur: ' + err.message); }
+                  e.target.value = '';
+                }}
+                className="text-[10px] text-slate-200 bg-slate-800 border border-slate-700 rounded-lg px-2 py-1 max-w-[140px] file:mr-2 file:py-0.5 file:px-2 file:rounded-md file:border-0 file:text-[10px] file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500 cursor-pointer"
+              />
+              <button onClick={handleManualN1Apply} disabled={importingN1}
+                className="text-[10px] px-4 py-1.5 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold transition-colors disabled:opacity-50">
+                {importingN1 ? 'Calcul...' : 'Valider N-1'}
+              </button>
+            </div>
+          </div>
+          <div className="max-h-96 overflow-y-auto border border-slate-700 rounded-xl">
+            <table className="w-full text-[11px]">
+              <thead className="bg-slate-800/50 sticky top-0">
+                <tr className="text-slate-400 font-bold uppercase tracking-wider">
+                  <th className="text-left py-2 px-3 w-[90px]">Compte</th>
+                  <th className="text-left py-2 px-3">Libellé</th>
+                  <th className="text-right py-2 px-3 w-[130px]">Débit N-1</th>
+                  <th className="text-right py-2 px-3 w-[130px]">Crédit N-1</th>
+                  <th className="w-[40px]" />
+                </tr>
+              </thead>
+              <tbody>
+                {manualN1Rows.map((r, i) => (
+                  <tr key={i} className="border-t border-slate-800/30 hover:bg-slate-800/20">
+                    <td className="py-1.5 px-3">
+                      <input type="text" value={r.compte}
+                        onChange={e => setManualN1Rows(prev => prev.map((x, j) => j === i ? { ...x, compte: e.target.value } : x))}
+                        className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-left text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                    <td className="py-1.5 px-3">
+                      <input type="text" value={r.libelle}
+                        onChange={e => setManualN1Rows(prev => prev.map((x, j) => j === i ? { ...x, libelle: e.target.value } : x))}
+                        className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-left text-slate-400 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                    <td className="py-1.5 px-3">
+                      <input type="number" step="0.001" value={r.debit}
+                        onChange={e => setManualN1Rows(prev => prev.map((x, j) => j === i ? { ...x, debit: parseFloat(e.target.value) || 0 } : x))}
+                        className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                    <td className="py-1.5 px-3">
+                      <input type="number" step="0.001" value={r.credit}
+                        onChange={e => setManualN1Rows(prev => prev.map((x, j) => j === i ? { ...x, credit: parseFloat(e.target.value) || 0 } : x))}
+                        className="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1 text-right text-slate-200 font-mono text-[11px] focus:outline-none focus:border-brand-500" />
+                    </td>
+                    <td className="py-1.5 px-2 text-center">
+                      <button onClick={() => setManualN1Rows(prev => prev.filter((_, j) => j !== i))}
+                        className="text-rose-400 hover:text-rose-300 text-[12px]">✕</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-3 flex items-center justify-center">
+            <button onClick={() => setManualN1Rows(prev => [...prev, { compte: '', libelle: '', debit: 0, credit: 0 }])}
+              className="text-[11px] px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-bold transition-colors flex items-center gap-1">
+              + Nouveau compte
+            </button>
+          </div>
+        </div>
       )}
 
       {!editingAccounts && reportTab === 'financiers' && (
@@ -757,18 +1084,37 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
             <h3 className="text-base font-bold text-slate-100">Bilan (SCE)</h3>
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-bold px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">ACTIF / PASSIF</span>
+              <button onClick={() => setDetailMode(d => !d)}
+                className={`text-[10px] px-3 py-1 rounded-lg font-bold transition-colors ${detailMode ? 'bg-brand-600 text-white' : 'bg-slate-800 hover:bg-slate-700 text-slate-300'}`}>
+                {detailMode ? '✓ Détaillé' : 'Synthétique'}
+              </button>
+              {hasImported && !editingAccounts && importedData?.accounts && (
+                <button onClick={() => {
+                  setEditingAccounts(importedData.accounts.map(a => ({ ...a })));
+                  setShowRules(false);
+                }}
+                  className="text-[10px] px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg font-bold transition-colors flex items-center gap-1">
+                  <Edit size={12} /> Modifier les comptes
+                </button>
+              )}
             </div>
           </div>
+
+          {period && period !== String(exerciceYear) && !importedData?.reportsN_1 && (
+            <div className="mb-3 p-2 bg-amber-500/10 border border-amber-500/30 rounded-lg text-[10px] text-amber-300">
+              Aucun exercice N-1 importé. Cliquez sur « Importer N-1 » (à côté du sélecteur d'exercice) pour charger la balance de l'année précédente et afficher le comparatif.
+            </div>
+          )}
 
           <Section title="Actifs Non Courants">
             <Line label="Frais préliminaires" value={bilan.fraisPreliminaires} prevValue={bilanPrev?.fraisPreliminaires} indent={1} detailKey={useJournal ? 'fraisPreliminaires' : undefined} onDetail={handleDetail} />
             <Line label="Immobilisations incorporelles" value={bilan.immobilisationsIncorporelles} prevValue={bilanPrev?.immobilisationsIncorporelles} indent={1} detailKey={useJournal ? 'immobilisationsIncorporelles' : undefined} onDetail={handleDetail} />
             <Line label="Immobilisations corporelles" value={bilan.immobilisationsCorporelles} prevValue={bilanPrev?.immobilisationsCorporelles} indent={1} detailKey={useJournal ? 'immobilisationsCorporelles' : undefined} onDetail={handleDetail} />
             <Line label="Immobilisations financières" value={bilan.immobilisationsFinancieres} prevValue={bilanPrev?.immobilisationsFinancieres} indent={1} detailKey={useJournal ? 'immobilisationsFinancieres' : undefined} onDetail={handleDetail} />
-            {useJournal && bilan.amortissementsDeduction > 0.001 && (
+            {bilan.amortissementsDeduction > 0.001 && (
               <Line label="− Amortissements cumulés" value={-bilan.amortissementsDeduction} prevValue={bilanPrev ? -bilanPrev.amortissementsDeduction : undefined} indent={1} color="text-danger-400" detailKey="amortissementsDeduction" onDetail={handleDetail} />
             )}
-            {useJournal && bilan.provisionsActifNCDeduction > 0.001 && (
+            {bilan.provisionsActifNCDeduction > 0.001 && (
               <Line label="− Provisions dépréciation" value={-bilan.provisionsActifNCDeduction} prevValue={bilanPrev ? -bilanPrev.provisionsActifNCDeduction : undefined} indent={1} color="text-danger-400" detailKey="provisionsActifNCDeduction" onDetail={handleDetail} />
             )}
             <Line label="Total Actifs Non Courants" value={bilan.actifNC} prevValue={bilanPrev?.actifNC} total />
@@ -851,6 +1197,57 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
 
             <Line label="TOTAL PASSIFS & CAPITAUX PROPRES" value={bilan.totalPassif} prevValue={bilanPrev?.totalPassif} total />
           </div>
+
+          {detailMode && bilanDetaille && (
+            <div className="mt-4 pt-3 border-t border-slate-800/50 space-y-3">
+              <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Bilan détaillé — modèle de référence PCGA</h4>
+              {(() => {
+                const fmtD = (v) => (v == null || isNaN(v)) ? '0' : Math.round(v).toLocaleString('fr-TN') + ' DT';
+                const Block = ({ title, lines, total }) => (
+                  <div>
+                    <div className="text-[10px] font-bold text-brand-300 mb-0.5 uppercase tracking-wider">{title}</div>
+                    {lines.map((it, i) => (
+                      <div key={i} className="flex justify-between text-[10px] py-0.5 px-2 odd:bg-slate-900/30">
+                        <span className="text-slate-400">{it.prefixe} · {it.label}</span>
+                        <span className={it.montant < 0 ? 'text-rose-400' : 'text-slate-200'}>{fmtD(it.montant)}</span>
+                      </div>
+                    ))}
+                    {total != null && (
+                      <div className="flex justify-between text-[10px] py-0.5 px-2 font-bold text-slate-200 border-t border-slate-800/40 mt-0.5">
+                        <span>Total</span><span>{fmtD(total)}</span>
+                      </div>
+                    )}
+                  </div>
+                );
+                const ai = [
+                  ...bilanDetaille.actifNC.incorp,
+                  ...bilanDetaille.actifNC.corp,
+                  ...bilanDetaille.actifNC.fin,
+                  ...bilanDetaille.actifNC.amort,
+                  ...bilanDetaille.actifNC.provANC,
+                ];
+                return (
+                  <>
+                    <Block title="Actifs non courants — Actifs immobilisés" lines={ai} total={bilanDetaille.actifNC.total} />
+                    <Block title="Autres actifs non courants" lines={bilanDetaille.actifNC.autresANC} />
+                    <Block title="Stocks (moins provisions)" lines={bilanDetaille.stocks} />
+                    <Block title="Clients et comptes rattachés (actif)" lines={bilanDetaille.tiersActif} />
+                    <Block title="Autres actifs courants" lines={bilanDetaille.autresActifsC} />
+                    <Block title="Placements et autres actifs financiers" lines={bilanDetaille.placements} />
+                    <Block title="Liquidités" lines={bilanDetaille.liquidites} />
+                    <Block title="Capitaux propres" lines={bilanDetaille.cp} />
+                    <Block title="Emprunts" lines={bilanDetaille.emprunts} />
+                    <Block title="Autres passifs financiers non courants" lines={bilanDetaille.autresPassifsFinNC} />
+                    <Block title="Provisions (passif)" lines={bilanDetaille.provisionsNC} />
+                    <Block title="Fournisseurs et comptes rattachés (passif)" lines={bilanDetaille.fournisseurs} />
+                    <Block title="Autres passifs courants" lines={bilanDetaille.autresPassifsC} />
+                    <Block title="Concours bancaires et autres passifs financiers courants" lines={bilanDetaille.concours} />
+                  </>
+                );
+              })()}
+            </div>
+          )}
+
 
           {(bilan.totalActif > 0) && (
             <div className="mt-3 pt-3 border-t border-slate-800/50">
@@ -1179,7 +1576,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                       <span className="text-[10px] text-slate-500 ml-2">(Stocks + Clients − Fournisseurs)</span>
                     </div>
                     <span className={`text-xs font-bold ${(ratios?.bfr || 0) <= (bilan?.actifC || 0) * 0.5 ? 'text-emerald-400' : 'text-amber-400'}`}>
-                      {ratios?.bfr != null ? fmt(ratios.bfr) : '0,000 MDT'}
+                      {ratios?.bfr != null ? fmt(ratios.bfr) : '0 DT'}
                     </span>
                   </div>
                   <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">
@@ -1194,7 +1591,7 @@ export default function FinancialReportView({ companyDetails, invoices, expenses
                       <span className="text-[10px] text-slate-500 ml-2">(Trésorerie − Concours bancaires)</span>
                     </div>
                     <span className={`text-xs font-bold ${(ratios?.tresorerieNette || 0) >= 0 ? 'text-emerald-400' : 'text-danger-400'}`}>
-                      {ratios?.tresorerieNette != null ? fmt(ratios.tresorerieNette) : '0,000 MDT'}
+                      {ratios?.tresorerieNette != null ? fmt(ratios.tresorerieNette) : '0 DT'}
                     </span>
                   </div>
                   <div className="flex justify-between px-2 py-1 bg-slate-800/10 rounded-b-lg border-t border-slate-800/30">

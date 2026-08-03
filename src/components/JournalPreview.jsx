@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { CheckCircle2, AlertCircle, BookOpen, UserPlus, Pencil } from 'lucide-react';
+import { CheckCircle2, AlertCircle, BookOpen, UserPlus, Trash2, Plus } from 'lucide-react';
 import { PCG_COMPLET } from '../utils/pcgComplet';
+import { loadTiers } from '../utils/tiersCodes';
+import AccountSelect from './AccountSelect';
 
 function findLibelle(code) {
   if (!code) return '';
@@ -8,6 +10,19 @@ function findLibelle(code) {
   if (exact) return exact;
   const prefix = Object.keys(PCG_COMPLET).filter(k => code.startsWith(k)).sort((a, b) => b.length - a.length)[0];
   return prefix ? PCG_COMPLET[prefix] : '';
+}
+
+function getCustomLabels(tierCode) {
+  const map = {};
+  if (!tierCode) return map;
+  const tiers = loadTiers();
+  const t = tiers.find(x => x.code === tierCode || x.nom === tierCode);
+  if (!t?.comptes_defaut) return map;
+  const cd = t.comptes_defaut;
+  if (cd.charge && cd.charge_label) map[cd.charge] = cd.charge_label;
+  if (cd.tiers && cd.tiers_label) map[cd.tiers] = cd.tiers_label;
+  if (cd.tva && cd.tva_label) map[cd.tva] = cd.tva_label;
+  return map;
 }
 
 function ConfidenceBadge({ label, value }) {
@@ -25,8 +40,6 @@ function ConfidenceBadge({ label, value }) {
 
 export default function JournalPreview({ piece, onAccept, onModify, onCancel, onMemorize }) {
   const [lignes, setLignes] = useState(piece?.lignes?.map(l => ({ ...l })) || []);
-  const [editingIdx, setEditingIdx] = useState(-1);
-  const [editForm, setEditForm] = useState(null);
 
   const totalDebit = lignes.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
   const totalCredit = lignes.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
@@ -34,31 +47,54 @@ export default function JournalPreview({ piece, onAccept, onModify, onCancel, on
   const tier = piece?._tier;
   const ocrConf = piece?._ocrConfidence || 100;
   const acctConf = tier ? Math.min(100, ocrConf + 5) : ocrConf;
+  const customLabels = getCustomLabels(tier?.code);
 
-  const startEdit = (i) => {
-    setEditingIdx(i);
-    setEditForm({ ...lignes[i] });
+  const updateLine = (i, fields) => {
+    setLignes(prev => prev.map((line, idx) => idx === i ? { ...line, ...fields } : line));
   };
 
-  const cancelEdit = () => {
-    setEditingIdx(-1);
-    setEditForm(null);
+  const removeLine = (i) => {
+    if (lignes.length <= 1) return;
+    setLignes(prev => prev.filter((_, idx) => idx !== i));
   };
 
-  const saveEdit = () => {
-    if (!editForm) return;
-    const updated = lignes.map((l, i) => i === editingIdx ? { ...editForm } : l);
-    setLignes(updated);
-    setEditingIdx(-1);
-    setEditForm(null);
+  const addLine = () => {
+    setLignes(prev => [...prev, { compte: '', libelle: '', debit: null, credit: null }]);
   };
 
-  const updateEditField = (field, value) => {
-    setEditForm(f => ({ ...f, [field]: value }));
+  const handleCompteChange = (i, l, code) => {
+    const nouveauLib = customLabels[code] || findLibelle(code);
+    const ancienLib = l.compte ? (customLabels[l.compte] || findLibelle(l.compte)) : '';
+    const newLibelle = (nouveauLib && (!l.libelle || l.libelle === ancienLib)) ? nouveauLib : l.libelle;
+    setLignes(prev => balanceLines(prev.map((line, idx) => idx === i ? { ...line, compte: code, libelle: newLibelle } : line)));
+  };
+
+  const balanceLines = (lines) => {
+    const debit = lines.reduce((s, l) => s + (parseFloat(l.debit) || 0), 0);
+    const credit = lines.reduce((s, l) => s + (parseFloat(l.credit) || 0), 0);
+    const diff = parseFloat((debit - credit).toFixed(3));
+    if (Math.abs(diff) < 0.001) return lines;
+    const prefix = piece.journal === 'VNT' ? '411' : '401';
+    const idx = lines.findIndex(l => l.compte?.startsWith(prefix));
+    if (idx >= 0) {
+      return lines.map((l, j) => {
+        if (j !== idx) return l;
+        if (diff > 0) return { ...l, credit: (parseFloat(l.credit) || 0) + diff };
+        return { ...l, debit: (parseFloat(l.debit) || 0) - diff };
+      });
+    }
+    const ligne = diff > 0
+      ? { compte: prefix + '001', libelle: `Ajustement ${piece.fournisseur || ''}`, debit: null, credit: diff }
+      : { compte: prefix + '001', libelle: `Ajustement ${piece.fournisseur || ''}`, debit: -diff, credit: null };
+    return [...lines, ligne];
+  };
+
+  const autoBalance = () => {
+    setLignes(prev => balanceLines(prev));
   };
 
   const handleAccept = () => {
-    onAccept({ ...piece, lignes });
+    onAccept({ ...piece, lignes, validated: true });
   };
 
   return (
@@ -116,65 +152,64 @@ export default function JournalPreview({ piece, onAccept, onModify, onCancel, on
         </div>
       </div>
 
+      {piece.taux_tva_details && piece.taux_tva_details.length > 0 && (
+        <div className="p-2.5 bg-amber-500/5 border border-amber-500/25 rounded-xl">
+          <div className="flex items-center gap-1.5 text-[10px] font-bold text-amber-400 mb-1">
+            <AlertCircle className="w-3 h-3" /> TVA Mixte — détail par taux
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+            {piece.taux_tva_details.map((d, i) => (
+              <div key={i} className="p-1.5 bg-slate-900 rounded-lg border border-slate-800">
+                <span className="text-[9px] text-slate-500">TVA {d.taux}%</span>
+                <p className="text-[11px] text-slate-200 font-bold mt-0.5">
+                  Base {parseFloat(d.base_ht || 0).toFixed(3)} DT
+                </p>
+                <p className="text-[11px] text-amber-300 font-mono">{parseFloat(d.montant_tva || 0).toFixed(3)} DT</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="overflow-x-auto">
         <table className="w-full text-[10px]">
           <thead>
             <tr className="border-b border-slate-800">
               <th className="text-left text-slate-500 font-medium pb-2 pr-2">Compte</th>
               <th className="text-left text-slate-500 font-medium pb-2 pr-2">Libellé</th>
-              <th className="text-right text-slate-500 font-medium pb-2 pr-2">Débit</th>
-              <th className="text-right text-slate-500 font-medium pb-2">Crédit</th>
-              <th className="w-6"></th>
+              <th className="text-right text-slate-500 font-medium pb-2 pr-2 w-24">Débit</th>
+              <th className="text-right text-slate-500 font-medium pb-2 pr-2 w-24">Crédit</th>
+              <th className="w-8"></th>
             </tr>
           </thead>
           <tbody>
             {lignes.map((l, i) => (
-              editingIdx === i ? (
-                <tr key={l.id || i} className="border-b border-brand-500/30 bg-brand-500/5">
-                  <td className="py-1 pr-1">
-                    <input value={editForm?.compte || ''} onChange={e => updateEditField('compte', e.target.value)}
-                      className="w-full bg-slate-800 rounded px-1.5 py-1 text-[10px] font-mono text-brand-300 border border-brand-500/50" />
-                  </td>
-                  <td className="py-1 pr-1">
-                    <input value={editForm?.libelle || ''} onChange={e => updateEditField('libelle', e.target.value)}
-                      className="w-full bg-slate-800 rounded px-1.5 py-1 text-[10px] text-slate-300 border border-brand-500/50" />
-                  </td>
-                  <td className="py-1 pr-1">
-                    <input type="number" step="0.001" value={editForm?.debit || ''} onChange={e => updateEditField('debit', parseFloat(e.target.value) || 0)}
-                      className="w-full bg-slate-800 rounded px-1.5 py-1 text-[10px] font-mono text-emerald-400 border border-brand-500/50 text-right" />
-                  </td>
-                  <td className="py-1 pr-1">
-                    <input type="number" step="0.001" value={editForm?.credit || ''} onChange={e => updateEditField('credit', parseFloat(e.target.value) || 0)}
-                      className="w-full bg-slate-800 rounded px-1.5 py-1 text-[10px] font-mono text-amber-400 border border-brand-500/50 text-right" />
-                  </td>
-                  <td className="py-1">
-                    <div className="flex gap-1">
-                      <button onClick={saveEdit} className="text-[9px] text-emerald-400 hover:text-emerald-300 px-1">✓</button>
-                      <button onClick={cancelEdit} className="text-[9px] text-slate-500 hover:text-slate-300 px-1">✕</button>
-                    </div>
-                  </td>
-                </tr>
-              ) : (
-                <tr key={l.id || i} className={`border-b border-slate-800/50 ${i % 2 === 0 ? 'bg-slate-900/30' : ''} hover:bg-brand-500/5 cursor-pointer`} onClick={() => startEdit(i)}>
-                  <td className="py-1.5 pr-2">
-                    <span className="font-mono text-brand-300" title={findLibelle(l.compte)}>{l.compte}
-                      {findLibelle(l.compte) && <span className="ml-1.5 text-[8px] text-slate-500 italic">{findLibelle(l.compte)}</span>}
-                    </span>
-                  </td>
-                  <td className="py-1.5 pr-2 text-slate-300">
-                    {l.libelle && l.libelle !== l.compte ? cleanLibelle(l.compte, l.libelle) : findLibelle(l.compte)}
-                  </td>
-                  <td className="py-1.5 pr-2 text-right font-mono text-emerald-400">
-                    {l.debit ? l.debit.toFixed(3) : ''}
-                  </td>
-                  <td className="py-1.5 text-right font-mono text-amber-400">
-                    {l.credit ? l.credit.toFixed(3) : ''}
-                  </td>
-                  <td className="py-1.5 text-center">
-                    <Pencil className="w-3 h-3 text-slate-600" />
-                  </td>
-                </tr>
-              )
+              <tr key={l.id || i} className={`border-b border-slate-800/50 ${i % 2 === 0 ? 'bg-slate-900/30' : ''}`}>
+                <td className="py-1.5 pr-2 min-w-[180px]">
+                  <AccountSelect value={l.compte || ''} onChange={code => handleCompteChange(i, l, code)} />
+                  {(customLabels[l.compte] || findLibelle(l.compte)) && (
+                    <div className="text-[8px] text-slate-500 mt-0.5 truncate max-w-[200px]">{customLabels[l.compte] || findLibelle(l.compte)}</div>
+                  )}
+                </td>
+                <td className="py-1.5 pr-2 min-w-[160px]">
+                  <input type="text" value={l.libelle || ''} onChange={e => updateLine(i, { libelle: e.target.value })}
+                    className="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-brand-500" />
+                </td>
+                <td className="py-1.5 pr-2">
+                  <input type="number" step="0.001" value={l.debit ?? ''} onChange={e => updateLine(i, { debit: e.target.value === '' ? null : parseFloat(e.target.value) })}
+                    className="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1.5 text-xs text-emerald-400 font-mono text-right focus:outline-none focus:border-brand-500" />
+                </td>
+                <td className="py-1.5 pr-2">
+                  <input type="number" step="0.001" value={l.credit ?? ''} onChange={e => updateLine(i, { credit: e.target.value === '' ? null : parseFloat(e.target.value) })}
+                    className="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1.5 text-xs text-amber-400 font-mono text-right focus:outline-none focus:border-brand-500" />
+                </td>
+                <td className="py-1.5 text-center">
+                  <button onClick={() => removeLine(i)} disabled={lignes.length <= 1}
+                    className="text-slate-600 hover:text-danger-400 disabled:opacity-30 transition-colors" title="Supprimer la ligne">
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
+                </td>
+              </tr>
             ))}
           </tbody>
           <tfoot>
@@ -182,23 +217,37 @@ export default function JournalPreview({ piece, onAccept, onModify, onCancel, on
               <td className="pt-2 pr-2 text-slate-400">Total</td>
               <td className="pt-2 pr-2"></td>
               <td className="pt-2 pr-2 text-right font-mono text-emerald-300">{totalDebit.toFixed(3)}</td>
-              <td className="pt-2 text-right font-mono text-amber-300">{totalCredit.toFixed(3)}</td>
+              <td className="pt-2 pr-2 text-right font-mono text-amber-300">{totalCredit.toFixed(3)}</td>
               <td></td>
+            </tr>
+            <tr>
+              <td colSpan={5} className="pt-2">
+                <button onClick={addLine}
+                  className="flex items-center gap-1 text-[10px] text-brand-400 hover:text-brand-300 transition-colors font-semibold">
+                  <Plus className="w-3 h-3" /> Ajouter une ligne
+                </button>
+              </td>
             </tr>
           </tfoot>
         </table>
       </div>
 
       {!balanced && (
-        <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
-          <AlertCircle className="w-3.5 h-3.5 shrink-0" />
-          Déséquilibre : {totalDebit.toFixed(3)} ≠ {totalCredit.toFixed(3)}
+        <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl">
+          <div className="flex items-center gap-2 text-[10px] text-danger-400">
+            <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+            <span className="flex-1">{piece.error || `Déséquilibre : ${totalDebit.toFixed(3)} ≠ ${totalCredit.toFixed(3)}`}</span>
+            <button onClick={autoBalance}
+              className="px-3 py-1.5 bg-danger-500/20 hover:bg-danger-500/30 text-danger-300 text-[10px] font-bold rounded-lg transition-colors whitespace-nowrap">
+              Équilibrer auto
+            </button>
+          </div>
         </div>
       )}
-
-      {piece.error && (
-        <div className="p-2.5 bg-danger-500/10 border border-danger-500/30 rounded-xl text-[10px] text-danger-400 flex items-center gap-2">
-          <AlertCircle className="w-3.5 h-3.5 shrink-0" /> {piece.error}
+      {balanced && (
+        <div className="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex items-center gap-2 text-[10px] text-emerald-400">
+          <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
+          <span className="flex-1">Écriture équilibrée — vous pouvez enregistrer.</span>
         </div>
       )}
 
@@ -223,13 +272,4 @@ export default function JournalPreview({ piece, onAccept, onModify, onCancel, on
       </div>
     </div>
   );
-}
-
-function cleanLibelle(compte, libelle) {
-  if (!libelle || !compte) return libelle || '';
-  const code = compte.toString().trim();
-  if (libelle.startsWith(code)) {
-    return libelle.slice(code.length).replace(/^[—–\-:\s]{1,3}/, '').trim();
-  }
-  return libelle;
 }

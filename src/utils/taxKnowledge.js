@@ -426,6 +426,9 @@ export function smartAnswer(query) {
 
 export function getSuggestedQueries() {
   return [
+    'Analyse mon audit comptable',
+    'Quels sont les points critiques de ma comptabilité ?',
+    'Donne-moi 3 actions pour améliorer ma conformité',
     'Taux TVA Tunisie',
     'Barème IRPP 2025',
     'Taux IS 2025',

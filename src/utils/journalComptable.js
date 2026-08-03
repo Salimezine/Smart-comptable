@@ -159,7 +159,7 @@ export function journalComptable(corrige, options = {}) {
     if (rs && ttc > 0) {
       const rsMontant = corrige.rs_montant > 0
         ? corrige.rs_montant
-        : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3));
+        : parseFloat((ttc * (corrige.rs_taux || 1) / 100).toFixed(3));
       ecritures.push({
         compte: compteFournisseur,
         libelleCompte: `${compteFournisseur.slice(0, 3)} ${LIBELLES_COMPTES[compteFournisseur.slice(0, 3)] || 'Tiers'}`,
@@ -179,7 +179,7 @@ export function journalComptable(corrige, options = {}) {
     // VENTE
     const compteClient = getCompteTiers(fournisseurNom, '411');
     const clientMontant = rs && ttc > 0
-      ? ttc - (corrige.rs_montant > 0 ? corrige.rs_montant : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3)))
+      ? ttc - (corrige.rs_montant > 0 ? corrige.rs_montant : parseFloat((ttc * (corrige.rs_taux || 1) / 100).toFixed(3)))
       : ttc;
     ecritures.push({
       compte: compteClient,
@@ -192,7 +192,7 @@ export function journalComptable(corrige, options = {}) {
     if (rs && ttc > 0) {
       const rsMontant = corrige.rs_montant > 0
         ? corrige.rs_montant
-        : parseFloat((ttc * (corrige.rs_taux || 1.5) / 100).toFixed(3));
+        : parseFloat((ttc * (corrige.rs_taux || 1) / 100).toFixed(3));
       if (rsMontant > 0) {
         ecritures.push({
           compte: '43674',
@@ -233,10 +233,44 @@ export function journalComptable(corrige, options = {}) {
   const debitTotal = ecritures.reduce((s, l) => s + l.debit, 0);
   const creditTotal = ecritures.reduce((s, l) => s + l.credit, 0);
 
+  const lignes = ecritures.map(e => ({
+    ...e,
+    debit: parseFloat(e.debit.toFixed(3)),
+    credit: parseFloat(e.credit.toFixed(3)),
+  }));
+  const totalDebitF = parseFloat(debitTotal.toFixed(3));
+  const totalCreditF = parseFloat(creditTotal.toFixed(3));
+
+  const taux_tva_details = Array.isArray(corrige.taux_tva_details) && corrige.taux_tva_details.length > 0
+    ? corrige.taux_tva_details
+    : [];
+
   if (Math.abs(debitTotal - creditTotal) > 0.010) {
     return {
       id: numeroPiece,
-      error: `Pièce déséquilibrée: Débit=${debitTotal.toFixed(3)} Crédit=${creditTotal.toFixed(3)}`,
+      date: datePiece,
+      journal: type === 'achat' ? 'ACH' : 'VNT',
+      reference: numeroPiece,
+      piece_justificative: corrige.numero_justificatif || '',
+      ttnId: '',
+      libelle: `${numeroPiece} — ${fournisseurNom}`,
+      fournisseur: fournisseurNom,
+      matricule_fiscal: mf,
+      categorie: cat,
+      sous_total_ht: ht,
+      montant_tva: tva,
+      timbre,
+      fodec,
+      total_ttc: ttc,
+      retenue_source: rs,
+      taux_tva: corrige.taux_tva || '',
+      taux_tva_details,
+      remise: corrige.remise || 0,
+      remise_pourcent: corrige.remise_pourcent || 0,
+      lignes,
+      totalDebit: totalDebitF,
+      totalCredit: totalCreditF,
+      error: `Pièce déséquilibrée: Débit=${totalDebitF.toFixed(3)} Crédit=${totalCreditF.toFixed(3)}`,
       validated: false,
     };
   }
@@ -258,13 +292,13 @@ export function journalComptable(corrige, options = {}) {
     fodec,
     total_ttc: ttc,
     retenue_source: rs,
-    lignes: ecritures.map(e => ({
-      ...e,
-      debit: parseFloat(e.debit.toFixed(3)),
-      credit: parseFloat(e.credit.toFixed(3)),
-    })),
-    totalDebit: parseFloat(debitTotal.toFixed(3)),
-    totalCredit: parseFloat(creditTotal.toFixed(3)),
+    taux_tva: corrige.taux_tva || '',
+    taux_tva_details,
+    remise: corrige.remise || 0,
+    remise_pourcent: corrige.remise_pourcent || 0,
+    lignes,
+    totalDebit: totalDebitF,
+    totalCredit: totalCreditF,
     validated: true,
   };
 }

@@ -19,6 +19,8 @@ import {
   corrigerOCRAvecTrace,
   normaliserMontant,
   detectDate,
+  detectRemise,
+  corrigerFacture,
   parseFactureTunisienne,
   generateInvoiceNumber,
 } from './ocrParser';
@@ -279,5 +281,74 @@ Total TTC: 601.000
 
   it('retourne null pour texte < 30 caractères', () => {
     expect(parseFactureTunisienne('abc')).toBeNull();
+  });
+});
+
+describe('detectRemise', () => {
+  it('détecte une remise en pourcentage', () => {
+    const text = `STE BONJOUR
+Total HT: 1 000.000
+Remise 10%
+TVA 19%: 171.000
+Timbre fiscal: 1.000
+Total TTC: 1 172.000
+`;
+    expect(detectRemise(text)).toEqual({ pourcent: 10 });
+  });
+
+  it('détecte une remise en montant DT', () => {
+    const text = `Total HT: 1 000.000
+Remise : 50.000 DT
+Total TTC: 1 132.000
+`;
+    const r = detectRemise(text);
+    expect(r.montant).toBeCloseTo(50, 3);
+  });
+
+  it('retourne null sans remise', () => {
+    expect(detectRemise('Total HT: 100.000\nTVA: 19.000\n')).toBeNull();
+  });
+
+  it('retourne null pour entrée non-string', () => {
+    expect(detectRemise(null)).toBeNull();
+    expect(detectRemise(undefined)).toBeNull();
+  });
+
+  it('détecte une remise avec points de remplissage OCR', () => {
+    const r = detectRemise('Remise .............. 100.000');
+    expect(r.montant).toBeCloseTo(100, 3);
+  });
+
+  it('détecte une remise accentuée Rémise', () => {
+    expect(detectRemise('Rémise 10%')).toEqual({ pourcent: 10 });
+  });
+
+  it('détecte une remise en arabe خصم', () => {
+    expect(detectRemise('خصم 10%')).toEqual({ pourcent: 10 });
+    const r = detectRemise('خصم : 100.000');
+    expect(r.montant).toBeCloseTo(100, 3);
+  });
+
+  it('préfère le pourcentage sur "Remise X% = montant"', () => {
+    expect(detectRemise('Remise 10% = 100.000')).toEqual({ pourcent: 10 });
+  });
+});
+
+describe('corrigerFacture — remise', () => {
+  it('soustrait une remise en pourcentage du sous-total HT', () => {
+    const text = `STE BONJOUR
+MF: 1234567X/A/M/000
+Facture N° 2024-001
+Date: 15/03/2024
+Total HT: 1 000.000
+Remise 10%
+TVA 19%: 171.000
+Timbre fiscal: 1.000
+Total TTC: 1 072.000
+`;
+    const result = corrigerFacture({}, text);
+    expect(result.remise).toBeCloseTo(100, 3);
+    expect(result.remise_pourcent).toBe(10);
+    expect(result.sous_total_ht).toBeCloseTo(900, 3);
   });
 });

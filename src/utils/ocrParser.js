@@ -21,6 +21,59 @@ export const BLACKLIST_FOURNISSEUR = [
 // ─────────────────────────────────────────────
 // 1b. FOURNISSEURS_LOOKUP — table de référence avec métadonnées
 // ─────────────────────────────────────────────
+// Mapping catégorie → compte de charge par défaut (Plan Comptable Tunisien)
+export const CATEGORIE_COMPTE_MAP = {
+  'Télécoms & Internet': '6248',
+  'Électricité & eau': '6042',
+  'Fournitures bureau': '6024',
+  'Carburant': '6043',
+  'Matériel informatique': '6022',
+  'Prestation services': '6133',
+  'Frais bancaires': '6311',
+  'Transport': '6251',
+  'Assurance': '6151',
+  'Bâtiment & Construction': '6125',
+  'Pharmacie & Santé': '6025',
+  'Alimentaire & Agro': '6021',
+  'Transport & Logistique': '6251',
+  'Immobilier': '6120',
+  'Communication & Marketing': '6132',
+  'Hôtellerie & Restauration': '6142',
+  'Sécurité & Nettoyage': '6134',
+  'Restauration & Traiteur': '6142',
+  'Électricité & Maintenance': '6122',
+  'Papeterie & Fournitures': '6024',
+  'Formation & Éducation': '6131',
+  'Location Véhicules': '6253',
+  'Frais postaux': '6262',
+};
+
+// Trouve le compte de charge par défaut pour un fournisseur
+export function getCompteChargeForSupplier(supplierName) {
+  if (!supplierName) return '';
+  const lower = supplierName.toLowerCase();
+  for (const [key, info] of Object.entries(FOURNISSEURS_LOOKUP)) {
+    if (key === lower || info.nom?.toLowerCase() === lower || lower.includes(key)) {
+      if (info.compte_charge) return info.compte_charge;
+      return CATEGORIE_COMPTE_MAP[info.categorie] || '';
+    }
+  }
+  return '';
+}
+
+// Trouve le compte de tiers par défaut (401/411) pour un fournisseur
+export function getCompteTiersForSupplier(supplierName, type) {
+  if (!supplierName) return '';
+  const lower = supplierName.toLowerCase();
+  for (const [key, info] of Object.entries(FOURNISSEURS_LOOKUP)) {
+    if (key === lower || info.nom?.toLowerCase() === lower || lower.includes(key)) {
+      if (info.compte_tiers) return info.compte_tiers;
+      return type === 'vente' ? '411001' : '401000';
+    }
+  }
+  return '';
+}
+
 export const FOURNISSEURS_LOOKUP = {
   // Télécoms
   'ooredoo':            { nom: 'Ooredoo', categorie: 'Télécoms & Internet', tva: 19, rs: false },
@@ -96,6 +149,108 @@ export const FOURNISSEURS_LOOKUP = {
   'artec':              { nom: 'Artec', categorie: 'Prestation services', tva: 19, rs: true },
   'megacom':            { nom: 'Megacom', categorie: 'Télécoms & Internet', tva: 19, rs: false },
   'tunisiana':          { nom: 'Orange', categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  'tunisa na':          { nom: 'Orange', categorie: 'Télécoms & Internet', tva: 19, rs: false },
+  // Bâtiment & construction
+  'sotulub':            { nom: 'SOTULUB', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'sotulub tunisie':    { nom: 'SOTULUB', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'sotec':              { nom: 'SOTEC', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'sotec tunisie':      { nom: 'SOTEC', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'land builders':      { nom: 'Land Builders', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'bati groupe':        { nom: 'Bati Groupe', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'sotraco':            { nom: 'SOTRACO', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  'sotraco tunisie':    { nom: 'SOTRACO', categorie: 'Bâtiment & Construction', tva: 19, rs: false },
+  // Pharmacie & santé
+  'siphat':             { nom: 'SIPHAT', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'siphat tunisie':     { nom: 'SIPHAT', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'saiph':              { nom: 'SAIPH', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'fournier':           { nom: 'Fournier', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'fournier tunisie':   { nom: 'Fournier', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'ame pharmacie':      { nom: 'AME Pharmacie', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'pharmacie centrale': { nom: 'Pharmacie Centrale', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'medis':              { nom: 'Medis', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  'medis tunisie':      { nom: 'Medis', categorie: 'Pharmacie & Santé', tva: 19, rs: false },
+  // Alimentaire & agro
+  'societe des boissons':  { nom: 'SDB', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'sdb tunisie':           { nom: 'SDB', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'délice':             { nom: 'Délice Danone', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'delice':             { nom: 'Délice Danone', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'delice danone':      { nom: 'Délice Danone', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'vitalait':           { nom: 'Vitalait', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'landor':             { nom: 'Landor', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'landor tunisie':     { nom: 'Landor', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'lesieur':            { nom: 'Lesieur', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'lesieur tunisie':    { nom: 'Lesieur', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'sotex':              { nom: 'SOTEX', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'chipsa':             { nom: 'Chipsa', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'sadia':              { nom: 'Sadia', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  'sadia tunisie':      { nom: 'Sadia', categorie: 'Alimentaire & Agro', tva: 19, rs: false },
+  // Transport & logistique
+  'sotral':             { nom: 'SOTRAL', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'stta':               { nom: 'STTA', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'tunisian cargo':     { nom: 'Tunisian Cargo', categorie: 'Transport & Logistique', tva: 0, rs: false },
+  'dhl tunisie':        { nom: 'DHL Tunisie', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'tnt express':        { nom: 'TNT Express', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'ups tunisie':        { nom: 'UPS Tunisie', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'chronopost':         { nom: 'Chronopost', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  'aramex':             { nom: 'Aramex', categorie: 'Transport & Logistique', tva: 19, rs: false },
+  // Immobilier
+  'societe immobiliere tunisie': { nom: 'SIT', categorie: 'Immobilier', tva: 19, rs: false },
+  'primo immobilier':   { nom: 'Primo Immobilier', categorie: 'Immobilier', tva: 19, rs: false },
+  'mz immobilier':      { nom: 'MZ Immobilier', categorie: 'Immobilier', tva: 19, rs: false },
+  // Agences & conseil
+  'publicis':           { nom: 'Publicis Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'publicis tunisie':   { nom: 'Publicis Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'mccann':             { nom: 'McCann Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'mccann tunisie':     { nom: 'McCann Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'fp7':                { nom: 'FP7 Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'fp7 tunisie':        { nom: 'FP7 Tunisie', categorie: 'Communication & Marketing', tva: 19, rs: true },
+  'editions chaabane':  { nom: 'Éditions Chaabane', categorie: 'Communication & Marketing', tva: 19, rs: false },
+  // Hôtellerie & restauration
+  'hasdrubal':          { nom: 'Hasdrubal Hotels', categorie: 'Hôtellerie & Restauration', tva: 19, rs: false },
+  'movenpick':          { nom: 'Mövenpick Tunisie', categorie: 'Hôtellerie & Restauration', tva: 19, rs: false },
+  'mövenpick':          { nom: 'Mövenpick Tunisie', categorie: 'Hôtellerie & Restauration', tva: 19, rs: false },
+  'golden tulip':       { nom: 'Golden Tulip Tunisie', categorie: 'Hôtellerie & Restauration', tva: 19, rs: false },
+  'la badira':          { nom: 'La Badira', categorie: 'Hôtellerie & Restauration', tva: 19, rs: false },
+  // Sécurité & nettoyage
+  'groupe 3s':          { nom: 'Groupe 3S', categorie: 'Sécurité & Nettoyage', tva: 19, rs: true },
+  '3s securite':        { nom: '3S Sécurité', categorie: 'Sécurité & Nettoyage', tva: 19, rs: true },
+  'sonas':              { nom: 'SONAS', categorie: 'Sécurité & Nettoyage', tva: 19, rs: true },
+  'sonas tunisie':      { nom: 'SONAS', categorie: 'Sécurité & Nettoyage', tva: 19, rs: true },
+  'ste de securite':    { nom: 'STE Sécurité', categorie: 'Sécurité & Nettoyage', tva: 19, rs: true },
+  // Prestations services génériques
+  'sofiac':             { nom: 'Sofiac', categorie: 'Prestation services', tva: 19, rs: true },
+  'tuniconseil':        { nom: 'Tuniconseil', categorie: 'Prestation services', tva: 19, rs: true },
+  'abc conseil':        { nom: 'ABC Conseil', categorie: 'Prestation services', tva: 19, rs: true },
+  'groupe conseil':     { nom: 'Groupe Conseil', categorie: 'Prestation services', tva: 19, rs: true },
+  'expert comptable':   { nom: 'Expert Comptable', categorie: 'Prestation services', tva: 19, rs: true },
+  'fiduciaire':         { nom: 'Fiduciaire', categorie: 'Prestation services', tva: 19, rs: true },
+  'cabinet fiduciaire': { nom: 'Cabinet Fiduciaire', categorie: 'Prestation services', tva: 19, rs: true },
+  'avocat':             { nom: 'Cabinet Avocat', categorie: 'Prestation services', tva: 19, rs: true },
+  'notaire':            { nom: 'Cabinet Notaire', categorie: 'Prestation services', tva: 19, rs: true },
+  // Restauration & traiteur
+  'ste traiteur':       { nom: 'STE Traiteur', categorie: 'Restauration & Traiteur', tva: 19, rs: false },
+  'traiteur tunisie':   { nom: 'Traiteur Tunisie', categorie: 'Restauration & Traiteur', tva: 19, rs: false },
+  'restaurant':         { nom: 'Restaurant', categorie: 'Restauration & Traiteur', tva: 19, rs: false },
+  // Électricité & maintenance
+  'schneider':          { nom: 'Schneider Tunisie', categorie: 'Électricité & Maintenance', tva: 19, rs: false },
+  'schneider electric': { nom: 'Schneider Tunisie', categorie: 'Électricité & Maintenance', tva: 19, rs: false },
+  'electro mag':        { nom: 'Electro Mag', categorie: 'Électricité & Maintenance', tva: 19, rs: false },
+  'tunisie electricite':{ nom: 'Tunisie Électricité', categorie: 'Électricité & Maintenance', tva: 19, rs: false },
+  // Papeterie & fournitures
+  'buroplus':           { nom: 'Buroplus', categorie: 'Papeterie & Fournitures', tva: 19, rs: false },
+  'bureau plus':        { nom: 'Buroplus', categorie: 'Papeterie & Fournitures', tva: 19, rs: false },
+  'paper plus':         { nom: 'Paper Plus', categorie: 'Papeterie & Fournitures', tva: 19, rs: false },
+  'fournitures plus':   { nom: 'Fournitures Plus', categorie: 'Papeterie & Fournitures', tva: 19, rs: false },
+  // Formation & éducation
+  'centre formation':   { nom: 'Centre Formation', categorie: 'Formation & Éducation', tva: 19, rs: true },
+  'institut formation': { nom: 'Institut Formation', categorie: 'Formation & Éducation', tva: 19, rs: true },
+  'formateur':          { nom: 'Formateur', categorie: 'Formation & Éducation', tva: 19, rs: true },
+  // Location véhicules
+  'europcar':           { nom: 'Europcar Tunisie', categorie: 'Location Véhicules', tva: 19, rs: false },
+  'hertz':              { nom: 'Hertz Tunisie', categorie: 'Location Véhicules', tva: 19, rs: false },
+  'avis':               { nom: 'Avis Tunisie', categorie: 'Location Véhicules', tva: 19, rs: false },
+  'budget':             { nom: 'Budget Tunisie', categorie: 'Location Véhicules', tva: 19, rs: false },
+  'sixt':               { nom: 'Sixt Tunisie', categorie: 'Location Véhicules', tva: 19, rs: false },
 };
 
 // ─────────────────────────────────────────────
@@ -144,28 +299,87 @@ export function correctOCRText(text) {
     t = t.replace(/[\u06F0\u06F1\u06F2\u06F3\u06F4\u06F5\u06F6\u06F7\u06F8\u06F9]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d).toString());
 
     // TVA "1%" → "7%" si contexte matériel informatique
-    if (/\b(e-info|e info|einfo|ednfo|informatique|ordinateur|imprimante)\b/i.test(t)) {
+    if (/\b(e-info|e info|einfo|ednfo|informatique|ordinateur|imprimante|cartouche|toner)\b/i.test(t)) {
       t = t.replace(/\b1\s*%/g, '7%');
     }
+
+    // Corriger millésime facture — "2026" lisible comme "2o26" ou "Zo26"
+    t = t.replace(/\b(2[Oo0])(2[0-9])\b/g, '20$2');
+    t = t.replace(/\b([Zo])(2[0-9]{3})\b/g, '20$2');
+
+    // Corriger "O" en 0 dans les contextes de dates
+    t = t.replace(/\b(2[Oo]26)\b/g, '2026');
+    t = t.replace(/\b(2[Oo]25)\b/g, '2025');
+    t = t.replace(/\b(2[Oo]24)\b/g, '2024');
+
+    // Corriger timbre fiscal fréquent "1,0o0" ou "1,0OO" → "1,000"
+    t = t.replace(/(\d)[,.]?(?:0[Oo]0|0O0|000)\s*(?:DT|TND|د.ت)/gi, '$1,000 DT');
+    t = t.replace(/\b(\d)[.,]([Oo]00)\b/g, '$1,000');
+    t = t.replace(/\b(\d),?(?:[Oo]{2}0)\b/g, '$1,000');
+
+    // Supprimer zéros parasites dans les montants — "1,0OO" ou "10O0"
+    t = t.replace(/(\d)[Oo](\d{2,3})\b/g, '$1$2');
+
+    // Corriger "TTC 1 43O" → "TTC 1 430"
+    t = t.replace(/(\d{1,3}\s+\d{3})[Oo]/g, '$1');
+
+    // Correction ESPACES dans les montants (ex: "1 200.000" → "1200.000")
+    // NB: uniquement espaces/tabulations (pas de saut de ligne) pour ne pas fusionner des lignes distinctes
+    t = t.replace(/(\d)[ \t]{1,2}(\d{3}[.,])/g, '$1$2');
+    t = t.replace(/(\d)[ \t]{1,2}(\d{3}[ \t]+\d{3})/g, '$1$2');
+
+    // Éliminer « dont TVA » ou « dont TTC » parasites
+    t = t.replace(/\bdont\s+(?:TVA|TTC|HT)\b/gi, '');
+
+    // Corriger séparateur décimal européen vs français
+    t = t.replace(/(\d)[.](\d{3})[.](\d{3})/g, '$1$2.$3');
+
+    // Correction classique "TVA" mal lu
+    t = t.replace(/\bTVA\s*[:﹕| ]+\s*(\d{1,3})\s*%/gi, 'TVA $1%');
+    t = t.replace(/\bIV A\b/gi, 'TVA');
+    t = t.replace(/\bTV A\b/gi, 'TVA');
+    t = t.replace(/\bTYA\b/gi, 'TVA');
+    t = t.replace(/\bT VA\b/gi, 'TVA');
+
+    // Timbre Fiscal mal lu
+    t = t.replace(/Tinbre\s+Fiscal/gi, 'Timbre Fiscal');
+    t = t.replace(/Timbre\s+Fiseal/gi, 'Timbre Fiscal');
+    t = t.replace(/Timbre\s+[Ff]isc/gi, 'Timbre Fiscal');
+
+    // TVA non récupérable mal lu
+    t = t.replace(/TVA\s+non\s+recuperable/gi, 'TVA non récupérable');
+
+    // Correction matricule fiscal — lettres mal reconnues
+    t = t.replace(/\b(\d{6,7})\s*\/\s*([A-ZÀ-Ü])\s*\/\s*([A-ZÀ-Ü])\b/g, '$1/$2/$3');
 
     const corrections = {
       ednfo: 'E-info', 'ednf o': 'E-info', 'e dnfo': 'E-info', 'e-dnfo': 'E-info',
       steg: 'STEG', sonede: 'SONEDE',
       '0oredoo': 'Ooredoo', ooredoo: 'Ooredoo', ooredo: 'Ooredoo',
-      'tunisie tel': 'Tunisie Telecom',
-      monopri: 'Monoprix', monoprix: 'Monoprix',
+      'tunisie tel': 'Tunisie Telecom', 'tunisie teleom': 'Tunisie Telecom',
+      monopri: 'Monoprix', monoprix: 'Monoprix', 'm0noprix': 'Monoprix',
       sndp: 'SNDP', carrefour: 'Carrefour',
       bipst: 'BIAT', biat: 'BIAT', 'bh bank': 'BH Bank', attijari: 'Attijari', bna: 'BNA',
       amen: 'Amen Bank', 'amen bonk': 'Amen Bank', zity: 'Zitouna',
       post: 'La Poste', 'Ia poste': 'La Poste',
       'Ia poste tunisienne': 'La Poste Tunisienne', 'poste tunisienne': 'La Poste Tunisienne',
       'arnen': 'Amen', 'arnen bank': 'Amen Bank', 'amen bonk': 'Amen Bank',
-      'poullna': 'Poulina', 'paulina': 'Poulina',
-      'tunisiens': 'Tunisair', 'tunissir': 'Tunisair',
-      'nattal': 'Naftal', 'naftel': 'Naftal',
+      'poullna': 'Poulina', 'paulina': 'Poulina', 'p0ulina': 'Poulina',
+      'tunisiens': 'Tunisair', 'tunissir': 'Tunisair', 'tunlsair': 'Tunisair',
+      'nattal': 'Naftal', 'naftel': 'Naftal', 'naftal': 'Naftal',
       'one tech tunisie': 'One Tech', 'one tech': 'One Tech',
-      'sotetel tunisie': 'SOTETEL',
+      'sotetel tunisie': 'SOTETEL', 's0tetel': 'SOTETEL',
       'shell tunisie': 'Shell', 'shel': 'Shell',
+      'viver': 'Viver', 'vlvo': 'Vivo',
+      'ge0rent': 'Géant', 'ge0nt': 'Géant',
+      'megac0m': 'Megacom', 'megacom': 'Megacom',
+      's0fiac': 'Sofiac', 's0tulub': 'SOTULUB',
+      '0oredoo tunisie': 'Ooredoo', '0range': 'Orange',
+      'topnet tunisie': 'Topnet', 'hexabyte': 'Hexabyte',
+      'glob0lnet': 'Globalnet', 'globai': 'Globalnet',
+      's0nede': 'SONEDE', 's0ned': 'SONEDE',
+      't0tal': 'Total', 'totol': 'Total', 'tatal': 'Total',
+      'p0ulina': 'Poulina', 'chipsa': 'Chipsa',
     };
     let lower = t.toLowerCase();
     for (const [wrong, right] of Object.entries(corrections)) {
@@ -240,12 +454,14 @@ export function detectMF(text) {
     const arabicPattern = /(?:الرقم\s+الجبائي|الرقم\s+الجاباي|رقم\s+المتصرّف|رقم\s+المتصرف|المتصرّف|المتصرف|بطاقة\s+تعريف)\s*[:﹕|]*\s*(\d{6,7}[A-Z0-9]?)\s*[\/\\|lI1\s]\s*([A-Z0-9])\s*[\/\\|lI1\s]\s*([A-Z0-9])(?:\s*[\/\\|lI1\s]\s*([A-Z0-9])\s*[\/\\|lI1\s]\s*(\d{3}))?/i;
 
     // Body pattern: accepts 0 for O in letter positions
-    const mfBody = '\\d{6,7}[A-Z0-9]?\\/[A-Z0-9](?:\\/[A-Z0-9](?:\\/[A-Z0-9]\\/\\d{3})?)?';
+    // Accepte 3, 4 ou 5 segments (1234567/A/000, 1234567/A/M/000, 1234567/X/A/M/000)
+    const mfBody = '(?:\\d{6,7}[A-Z0-9]?\\/[A-Z0-9](?:\\/[A-Z0-9])?(?:\\/[A-Z0-9])?\\/\\d{3}|\\d{6,7}[A-Z0-9]?\\/[A-Z0-9](?:\\/[A-Z0-9])?(?:\\/[A-Z0-9])?)';
     const patterns = [
-      new RegExp('M\\s+F\\s*:?\\s*(' + mfBody + ')', 'i'),
-      new RegExp('M\\.?F\\.?\\s*:?\\s*(' + mfBody + ')', 'i'),
+      // Labels explicites d'abord (matricule fiscal du fournisseur en en-tête)
       new RegExp('matricule\\s*fiscal\\s*:?\\s*(' + mfBody + ')', 'i'),
       new RegExp('(?:n°\\s*fiscal|num[ée]ro\\s*fiscal)\\s*:?\\s*(' + mfBody + ')', 'i'),
+      new RegExp('M\\s+F\\s*:?\\s*(' + mfBody + ')', 'i'),
+      new RegExp('M\\.?F\\.?\\s*:?\\s*(' + mfBody + ')', 'i'),
       new RegExp('^\\s*(' + mfBody + ')\\s*$', 'm'),
       // MF alone on line with possible trailing characters
       new RegExp('(?:^|\\n)\\s*(' + mfBody + ')\\s*[\\s\\n]', 'm'),
@@ -273,22 +489,30 @@ export function detectMF(text) {
         if (validateMf.test(val)) {
           const p = val.split('/');
           if (p.length >= 3) {
-            p[1] = p[1].replace(/0/g, 'O');
-            if (p.length >= 4) p[3] = p[3].replace(/0/g, 'O');
+            const lastIsDigits = /^\d{3}$/.test(p[p.length - 1]);
+            for (let i = 1; i < p.length; i++) {
+              // Ne convertir 0→O que sur les positions lettres, pas sur le suffixe numérique final
+              if (i === p.length - 1 && lastIsDigits) continue;
+              p[i] = p[i].replace(/0/g, 'O');
+            }
           }
           return p.join('/');
         }
       }
     }
 
-    // Fallback: chercher un pattern {7+ chiffres}/{lettre}/{lettre}/{lettre}/{3 chiffres}
+    // Fallback: chercher un pattern {6-7 chiffres}/{lettre}[/{lettre}[/{lettre}]][/{3 chiffres}]
     // même sans label (pour textes OCR bruités comme TTN)
-    const fallbackMf = norm.match(/(?:\b|^|(?<=\s))(\d{6,7})[\/\\|lI1\s]*([A-Z0-9])[\/\\|lI1\s]*([A-Z0-9])(?:[\/\\|lI1\s]*([A-Z0-9])[\/\\|lI1\s]*(\d{3}))?(?:\b|$|(?=\s))/);
+    const fallbackMf = norm.match(/(?:\b|^|(?<=\s))(\d{6,7})[\/\\|lI1\s]*([A-Z0-9])(?:(?:[\/\\|lI1\s]*([A-Z0-9]))?(?:[\/\\|lI1\s]*([A-Z0-9]))?[\/\\|lI1\s]*(\d{3})|(?:[\/\\|lI1\s]*([A-Z0-9]))?(?:[\/\\|lI1\s]*([A-Z0-9]))?)(?:\b|$|(?=\s))/);
     if (fallbackMf) {
-      let parts = [fallbackMf[1], fallbackMf[2], fallbackMf[3]];
-      if (fallbackMf[4] && fallbackMf[5]) parts.push(fallbackMf[4], fallbackMf[5]);
+      let parts = [fallbackMf[1], fallbackMf[2]];
+      const rest = [fallbackMf[3], fallbackMf[4], fallbackMf[5], fallbackMf[6], fallbackMf[7]].filter(v => v != null);
+      parts = parts.concat(rest);
+      if (parts.length < 3) return null;
+      const lastIsDigits = /^\d{3}$/.test(parts[parts.length - 1]);
       parts = parts.map((p, i) => {
-        if (i === 1 || i === 3) return p.replace(/0/g, 'O');
+        // Ne convertir 0→O que sur les positions lettres, pas sur le suffixe numérique final
+        if (i > 0 && !(i === parts.length - 1 && lastIsDigits)) return p.replace(/0/g, 'O');
         return p;
       });
       const result = parts.join('/');
@@ -386,8 +610,9 @@ export function detectClientMF(text) {
     if (idx === -1) return '';
     // Find the first MF line AFTER the client block marker
     const mfTrouves = [];
+    const mfRegex = /(?:\bMF\s*[:﹕]\s*|M\.F\.\s*[:﹕]\s*|Matricule\s*Fiscal\s*[:﹕]\s*)?(\d{6,7}\/[A-Z0-9](?:\/[A-Z0-9])?(?:\/[A-Z0-9])?(?:\/\d{3})?)/i;
     for (let i = idx + 1; i < lignes.length; i++) {
-      const m = lignes[i].match(/(?:\bMF\s*[:﹕]\s*|M\.F\.\s*[:﹕]\s*|Matricule\s*Fiscal\s*[:﹕]\s*)?(\d{6,7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3})/i);
+      const m = lignes[i].match(mfRegex);
       if (m) { mfTrouves.push({ mf: m[1], ligne: i }); }
     }
     if (mfTrouves.length > 0) return mfTrouves[0].mf;
@@ -446,10 +671,20 @@ export function detectTotalTTC(text) {
     }
 
     // Dernier recours: grand nombre seul (6-7 chiffres = millimes)
-    const bigNum = norm.match(/\b(\d{6,7})\b(?!\s*%)(?!.*\b(?:MF|N°|tel|fax)\b)/);
+    // Nombre ne doit PAS être à côté de MF, téléphone, fax, N°, référence, page
+    const bigNum = norm.match(/\b(\d{6,7})\b(?!\s*%)(?!\s*(?:DT|TND|د.ت))(?!.*\b(?:MF|M\.F\.|N°|n°|tel|fax|Tél|tél|page|Page|p\.|ref|Réf)\b)/);
     if (bigNum) {
       const n = parseInt(bigNum[1]);
+      const context = norm.slice(Math.max(0, bigNum.index - 40), bigNum.index + 50);
+      // Additional guards: no date-like pattern, no phone, not part of address
       if (!isNaN(n) && n > 100000 && n < 9999999) {
+        // Exclude if this looks like a phone number (starts with 2, 5, 7, 9, 4 and is 7 digits)
+        const str = n.toString();
+        if (/^[2579]/.test(str) && str.length >= 7) return null;
+        // Exclude if number appears near keywords that suggest non-TTC context
+        if (/facture\s*n/i.test(context)) return null;
+        if (/client|fournisseur|vendeur/i.test(context) && n > 999999) return null;
+        // Check if number is suspiciously close to another detected total
         const guess = n / 1000;
         if (guess > 0) return Math.round(guess * 1000) / 1000;
       }
@@ -516,43 +751,53 @@ export function detectTimbre(text, fournisseur = '') {
     const fLower = fournisseur.toLowerCase();
     if (/steg|sonede/i.test(fLower)) return 0;
 
-    // Format TTN: "Dr de Timbre 0500" ou "Droit de timbre 0500" → 0.500 DT
-    const mTtn = text.match(/(?:(?:dr|droit)\s*de\s*)?timbre\s*(?:fiscal)?\s*[:﹕|]?\s*0(\d{3})/i);
+    // Prio 1: "Timbre Fiscal 0,600" ou "Timbre 0.600" — format décimal standard
+    const mStandard = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d+[.,]\d{2,3})\s*(?:DT|TND|د.ت)?/i);
+    if (mStandard) {
+      const raw = mStandard[1].replace(',', '.').replace(/\s/g, '');
+      const val = parseFloat(raw);
+      if (!isNaN(val) && val > 0 && val < 10) return val;
+    }
+
+    // Prio 2: "Timbre Fiscal 0,600" avec OCR flou — "Timbre 0,6OO" ou "Tinbre 0.6OO"
+    const mOcr = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d+[.,]\d*)[Oo]/i);
+    if (mOcr) {
+      const raw = mOcr[1].replace(',', '.').replace(/\s/g, '');
+      const val = parseFloat(raw);
+      if (!isNaN(val) && val > 0 && val < 10) return val;
+    }
+
+    // Prio 3: Format TTN: "Dr de Timbre 0500" ou "Droit de timbre 0500" → 0.500 DT
+    const mTtn = text.match(/(?:(?:dr|droit|droit de|d[re]+)\s*de\s*)?timbre\s*(?:fiscal)?\s*[:﹕|]?\s*0(\d{3})/i);
     if (mTtn) {
       const val = '0.' + mTtn[1];
       const n = parseFloat(val);
       if (!isNaN(n) && n > 0 && n < 2) return n;
     }
 
-    // Chercher "Timbre Fiscal X,XXX" avec décimale exacte
-    const m = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d{1,2})[.,](\d{3})/i);
-    if (m) {
-      const val = parseFloat(m[1] + '.' + m[2]);
-      if (!isNaN(val)) return val;
-    }
-    // Fallback: valeur seule après "timbre"
-    const m2 = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d{1,3}(?:[.,]\d+)?)/i);
-    if (m2) {
-      const raw = m2[1].replace(',', '.');
-      let val = parseFloat(raw);
-      if (!isNaN(val)) {
-        if (val >= 5 && val <= 1000) {
-          const near = text.slice(Math.max(0, text.indexOf('timbre') - 5), text.indexOf('timbre') + 50);
-          if (/0\s*[.,]\s*500/.test(near) || /500\s*(?:dt|dinar)/i.test(near)) {
-            return 0.500;
-          }
-        }
-        return val;
-      }
+    // Prio 4: "Timbre Fiscal 0500" (sans séparateur décimal, 4 chiffres)
+    const m4 = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*0?(\d{4})\b/i);
+    if (m4) {
+      const raw = m4[1]; // e.g. "0600" → 0.600
+      const normalized = raw.length >= 4 ? raw.slice(0, 1) + '.' + raw.slice(1) : '0.' + raw;
+      const val = parseFloat(normalized);
+      if (!isNaN(val) && val > 0 && val < 10) return val;
     }
 
-    // Fallback: "0500" seul après "timbre" (sans séparateur décimal)
-    const m3 = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*0?(\d{3,4})\b/i);
-    if (m3) {
-      const raw = m3[1];
-      if (raw.length === 3) {
-        const val = parseFloat('0.' + raw);
-        if (!isNaN(val) && val > 0 && val < 10) return val;
+    // Prio 5: "Timbre Fiscal 1" — entier seul
+    const mInt = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d{1,2})\b(?!\s*(?:%|ans|mois|jour|fois|fois\s|heure))/i);
+    if (mInt) {
+      const val = parseFloat(mInt[1]);
+      if (!isNaN(val) && val > 0 && val <= 5) return val; // timbre est 0.5, 0.6, 1, 1.5, 2 max
+    }
+
+    // Prio 6: "Timbre Fiscal X" avec X > 5 (probablement millimes 500, 600 → 0.500, 0.600)
+    const m5 = text.match(/timbre\s*(?:fiscal)?\s*[:﹕|]?\s*(\d{3,4})\b/i);
+    if (m5) {
+      const raw = m5[1];
+      const rawVal = parseInt(raw);
+      if (!isNaN(rawVal) && rawVal >= 100 && rawVal <= 2000) {
+        return rawVal / 1000;
       }
     }
 
@@ -780,6 +1025,36 @@ export function detectFODEC(text) {
 }
 
 // ─────────────────────────────────────────────
+// 13b. detectRemise — remise commerciale (% ou montant)
+// Retourne { pourcent: X } et/ou { montant: Y } selon ce qui est lisible.
+// ─────────────────────────────────────────────
+export function detectRemise(text) {
+  try {
+    if (!text || typeof text !== 'string') return null;
+    const result = {};
+    const remiseLabel = /(?:r[ée]mise|rabais|escompte|خصم|حسم)/i;
+    const espace = '[\s.:|\\-]*';
+    // "Remise 10%" / "Remise : 10%" / "Remise de 10%" / "خصم 10%"
+    const mPct = text.match(new RegExp(remiseLabel.source + '\\s*(?:de\\s+)?[:\\uFE55\\|:]?\\s*(\\d{1,3}(?:[.,]\\d{1,2})?)\\s*%', 'i'));
+    if (mPct) {
+      const pct = parseFloat(mPct[1].replace(',', '.'));
+      if (!isNaN(pct) && pct > 0 && pct <= 100) result.pourcent = pct;
+    }
+    // "Remise ........ 100.000 DT" / "Remise : 50.000" / "خصم : 100.000"
+    const mAmt = text.match(new RegExp(remiseLabel.source + '\\s*[:\\uFE55\\|:]?\\s*[\\.]{2,}\\s*(\\d{1,6}(?:[ \\t.,]\\d{3})?)\\s*(?:DT|TND|د\\.ت)?', 'i'));
+    const mAmt2 = text.match(new RegExp(remiseLabel.source + '\\s*[:\\uFE55\\|:]?\\s*-?\\s*(\\d{1,6}(?:[ \\t.,]\\d{3})?)\\s*(?:DT|TND|د\\.ت)?', 'i'));
+    if (!result.pourcent) {
+      const m = mAmt || mAmt2;
+      if (m) {
+        const val = normaliserMontant(m[1]);
+        if (val !== null && val > 0) result.montant = val;
+      }
+    }
+    return Object.keys(result).length > 0 ? result : null;
+  } catch { return null; }
+}
+
+// ─────────────────────────────────────────────
 // 14. detectRetenueSource — montant RS
 // ─────────────────────────────────────────────
 export function detectRetenueSource(text) {
@@ -787,8 +1062,10 @@ export function detectRetenueSource(text) {
     if (!text || typeof text !== 'string') return 0;
     const norm = text.replace(/(\d)\s+(\d{3})/g, '$1$2');
     const patterns = [
-      /(?:retenue\s+[àa]\s+la\s+source|r\.?s\.?)\s*[:﹕|]?\s*-?\s*([\d,\.\s]+)/i,
-      /retenue\s*(?:\d+[.,]?\d*\s*%)?\s*[:﹕|]?\s*-?\s*([\d,\.\s]+)/i,
+      /(?:retenue\s+[àa]\s+la\s+source|r\.?s\.?)\s*[:﹕|]?\s*-?\s*([\d,\.][\d,\.\s]*)(?!\s*%)/i,
+      /retenue\s*(?:\d+[.,]?\d*\s*%)?\s*[:﹕|]?\s*-?\s*([\d,\.][\d,\.\s]*)(?!\s*%)/i,
+      // Retenue en fin de ligne : "Retenue à la source ......... 25.000"
+      /(?:retenue\s+[àa]\s+la\s+source|retenue\s+source|r\.s\.?)\s*[.\s]{2,}\s*([\d,]{1,4}[.,]\d{3})\b/i,
     ];
     for (const pat of patterns) {
       const m = norm.match(pat);
@@ -827,14 +1104,26 @@ export function detectRSPrestation(text, fournisseur = '') {
     ];
 
     if (prestationFournisseurs.some(p => f.includes(p))) {
-      return { applicable: true, taux: 1.5, raison: 'Prestation bancaire' };
+      return { applicable: true, taux: 1, raison: 'Prestation bancaire' };
+    }
+
+    // Case à cocher "Retenue à la source applicable" ou pourcentage explicite
+    const mTaux = t.match(/(?:retenue\s+[àa]\s+la\s+source|retenue\s+source|retenue\s+de\s+la\s+source|r\.s\.?)\s*(?:applicable)?\s*(?:[:﹕]\s*)?(\d{1,2}(?:[.,]\d+)?)\s*%/i);
+    if (mTaux) {
+      const taux = parseFloat(mTaux[1].replace(',', '.'));
+      if (taux > 0) {
+        return { applicable: true, taux, raison: `Retenue à la source ${taux}%` };
+      }
+    }
+    if (/retenue\s+(?:[àa]\s+la\s+|de\s+la\s+)?source\s*applicable|retenue\s+sur\s+la\s+source|r\.?s\.?\s*applicable/i.test(t)) {
+      return { applicable: true, taux: 1, raison: 'Case Retenue à la source applicable cochée' };
     }
 
     const prestationCount = prestationKeywords.filter(k => t.includes(k)).length;
     const achatCount = achatKeywords.filter(k => t.includes(k)).length;
 
     if (prestationCount > achatCount && prestationCount >= 1) {
-      return { applicable: true, taux: 1.5, raison: 'Prestation de services détectée' };
+      return { applicable: true, taux: 1, raison: 'Prestation de services détectée' };
     }
 
     return { applicable: false, taux: 0, raison: '' };
@@ -858,10 +1147,13 @@ export function verifierCoherence(data) {
   const rs = data.retenue_source ?? 0;
 
   if (ht != null && tva != null && ttc != null) {
-    const expectedTva = parseFloat((ht * taux / 100).toFixed(3));
-    if (Math.abs(expectedTva - tva) > TOLERANCE) {
-      alertes.push(`TVA calculée (${expectedTva}) ≠ TVA lue (${tva})`);
-      calculsOk = false;
+    const estMixte = taux === 'Mixte' || taux === 'mixte';
+    if (!estMixte && taux != null && !isNaN(parseFloat(taux))) {
+      const expectedTva = parseFloat((ht * parseFloat(taux) / 100).toFixed(3));
+      if (Math.abs(expectedTva - tva) > TOLERANCE) {
+        alertes.push(`TVA calculée (${expectedTva}) ≠ TVA lue (${tva})`);
+        calculsOk = false;
+      }
     }
 
     const expectedTTC = parseFloat((ht + tva + timbre + fodec).toFixed(3));
@@ -882,7 +1174,7 @@ export function verifierCoherence(data) {
   }
 
   if (rs > 0 && ht != null) {
-    const expectedRs = parseFloat((ht * (data.taux_rs || 1.5) / 100).toFixed(3));
+    const expectedRs = parseFloat((ht * (data.taux_rs || 1) / 100).toFixed(3));
     if (Math.abs(expectedRs - rs) > TOLERANCE) {
       alertes.push(`RS calculée (${expectedRs}) ≠ RS lue (${rs})`);
     }
@@ -1114,10 +1406,12 @@ export function normaliserMontant(str) {
 export function detectLignes(text) {
   const lignes = [];
   const sauts = text.split('\n');
-  const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode|sous-total|sous.total)/i;
+  const bruitLigne = /^(?:désignation|total|net|timbre|fodec|retenue|arrêtée|la présente|tva|base|règlement|mode|sous-total|sous.total|remise|r[ée]mise|rabais|escompte|خصم|حسم)/i;
   // Common Tunisian invoice line terms to ignore (column headers, etc.)
   const colonneHeader = /^(?:d[ée]signation|article|produit|r[ée]f[ée]rence|quantit[ée]|pu|prix|total|tva\s*%)/i;
 
+  // E-INFO format TVA mixte: désignation, qte, prix unitaire ht, total ht, taux tva%
+  const LIGNE_EINFO_TVA = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s+(\d+[.,]\d{3})\s+(\d+[.,]\d{3})\s+(19|13|12|7|0)\s*(?:%|DT|TND)?\s*\]?\s*$/i;
   // E-INFO format large: catégories, types, désignation, qte, prix unitaire ht, tva%, total ttc
   const LIGNE_EINFO = /^\[?\s*(.{3,60}?)\s+(\d{1,2})\s+(\d+[.,]\d{3})\s+(\d+[.,]\d{3})\s+(?:DT\s*)?$/;
   // E-INFO tableau réel: [Désignation TVA[|] PrixHT[|] TotalTTC]
@@ -1147,6 +1441,25 @@ export function detectLignes(text) {
           // TVA 0% mais total ≠ prix → OCR a mal lu le prix, corriger
           if (tva === 0 && Math.abs(total - prix) > 0.010) { prix = total; }
           lignes.push({ designation: des, prix_unitaire: prix, quantite: 1, total: total, tva: tva });
+          continue;
+        }
+      }
+    }
+
+    LIGNE_EINFO_TVA.lastIndex = 0;
+    const emTva = LIGNE_EINFO_TVA.exec(l);
+    if (emTva) {
+      const des = emTva[1].trim();
+      if (!bruitLigne.test(des) && des.length >= 3) {
+        const tva = parseInt(emTva[5]);
+        const qte = parseInt(emTva[2]);
+        let prix = normaliserMontant(emTva[3]);
+        let total = normaliserMontant(emTva[4]);
+        if (prix !== null && total !== null) {
+          if (prix > total * 100) { prix = prix / 1000; }
+          if (total > 0 && prix > total) { total = total / 1000; }
+          if (tva === 0 && Math.abs(total - prix) > 0.010) { prix = total; }
+          lignes.push({ designation: des, prix_unitaire: prix, quantite: qte || 1, total: total, tva: tva });
           continue;
         }
       }
@@ -1582,27 +1895,32 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
     // Détection lignes + calcul TVA par ligne (taux mixtes)
     const lignes = detectLignes(text);
     if (lignes.length > 0) {
-      // Somme brute de toutes les lignes détectées
-      const sumHT = lignes.reduce((s, l) => s + (l.prix_unitaire || 0), 0);
+      // Somme brute de toutes les lignes détectées (total ligne = qty × PU)
+      const lineHT = (l) => l.total || (l.prix_unitaire || 0) * (l.quantite || 1);
+      const sumHT = lignes.reduce((s, l) => s + lineHT(l), 0);
       const sumTotals = lignes.reduce((s, l) => s + (l.total || 0), 0);
-      // TVA calculée ligne par ligne : Σ(prix × taux / 100)
+      // TVA calculée ligne par ligne : Σ(total ligne × taux / 100)
       const sumTVACalc = lignes.reduce((s, l) => {
-        if (l.tva !== undefined) return s + (l.prix_unitaire || 0) * l.tva / 100;
+        if (l.tva !== undefined) return s + lineHT(l) * l.tva / 100;
         return s;
       }, 0);
       // N'écraser les valeurs du récapitulatif que si la somme des lignes est cohérente
       // (tolérance 20% pour les arrondis et variations OCR)
       const TOLERANCE_LIGNES = 0.20;
+      // Si le récapitulatif imprimé est déjà cohérent (HT+TVA+timbre+fodec ≈ TTC),
+      // le préférer à la somme des lignes (qui peut être incomplète après correction OCR)
+      const recapCoherent = totalHT > 0 && totalTVA > 0 && totalTTC > 0
+        && Math.abs((totalHT + totalTVA + (timbre ?? 1.000) + (fodec || 0)) - totalTTC) < 0.050;
       const htRecapOk = totalHT != null && totalHT > 0;
       const htLinesOk = sumHT > 0;
-      if (htLinesOk && (!htRecapOk || Math.abs(sumHT - totalHT) / totalHT < TOLERANCE_LIGNES)) {
+      if (!recapCoherent && htLinesOk && (!htRecapOk || Math.abs(sumHT - totalHT) / totalHT < TOLERANCE_LIGNES)) {
         totalHT = parseFloat(sumHT.toFixed(3));
       }
-      if (sumTVACalc > 0 && (!totalTVA || Math.abs(sumTVACalc - totalTVA) / (totalTVA || 1) < TOLERANCE_LIGNES)) {
+      if (!recapCoherent && sumTVACalc > 0 && (!totalTVA || Math.abs(sumTVACalc - totalTVA) / (totalTVA || 1) < TOLERANCE_LIGNES)) {
         totalTVA = parseFloat(sumTVACalc.toFixed(3));
       }
       const totalTTCFromLines = parseFloat((sumTotals + (timbre ?? 1.000)).toFixed(3));
-      if (totalTTCFromLines > 0 && (!totalTTC || Math.abs(totalTTCFromLines - totalTTC) / (totalTTC || 1) < TOLERANCE_LIGNES)) {
+      if (!recapCoherent && totalTTCFromLines > 0 && (!totalTTC || Math.abs(totalTTCFromLines - totalTTC) / (totalTTC || 1) < TOLERANCE_LIGNES)) {
         totalTTC = totalTTCFromLines;
       }
 
@@ -1611,13 +1929,16 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
       const linesCoherent = htLinesOk && htRecapOk && Math.abs(sumHT - totalHT) / totalHT < TOLERANCE_LIGNES;
       if (linesCoherent) {
         const saneLines = lignes.filter(l => {
-          if (l.tva === 0) return Math.abs(l.total - l.prix_unitaire) < 0.010;
-          const expected = l.prix_unitaire * (1 + l.tva / 100);
-          return Math.abs(l.total - expected) < 0.010;
+          if (l.tva === undefined) return true;
+          const lineHTv = l.total || (l.prix_unitaire || 0) * (l.quantite || 1);
+          const unitQty = (l.prix_unitaire || 0) * (l.quantite || 1);
+          return Math.abs(lineHTv - unitQty) < 0.010;
         });
         if (saneLines.length > 0) {
           const comptage = {};
-          for (const l of saneLines) { comptage[l.tva] = (comptage[l.tva] || 0) + 1; }
+          for (const l of saneLines) {
+            if (l.tva !== undefined) comptage[l.tva] = (comptage[l.tva] || 0) + 1;
+          }
           const best = Object.entries(comptage).sort((a, b) => b[1] - a[1])[0];
           if (best) { tauxTVA = parseInt(best[0]); }
         }
@@ -1632,14 +1953,21 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
         const t = l.tva;
         if (t !== undefined) {
           if (!byRate[t]) byRate[t] = { base: 0, tva: 0 };
-          byRate[t].base += l.prix_unitaire || 0;
-          byRate[t].tva += (l.total || 0) - (l.prix_unitaire || 0);
+          const lineBase = (l.total || l.prix_unitaire * (l.quantite || 1) || 0);
+          const lineTVA = t > 0 ? parseFloat((lineBase * t / 100).toFixed(3)) : 0;
+          byRate[t].base += lineBase;
+          byRate[t].tva += lineTVA;
         }
       }
       for (const [taux, d] of Object.entries(byRate)) {
         taux_tva_details.push({ taux: parseInt(taux), base_ht: parseFloat(d.base.toFixed(3)), montant_tva: parseFloat(d.tva.toFixed(3)) });
       }
     }
+    // TVA mixte = plusieurs taux distincts sur les lignes (ou mention explicite)
+    const mixteDetails = taux_tva_details.length > 1;
+    const mixteTexte = /\b(?:mixte|mixte 0|0\s*\/\s*19|19\s*\/\s*0|plusieurs taux)\b/i.test(text);
+    const estTvaMixte = mixteDetails || mixteTexte;
+    const tauxTVACalc = (typeof tauxTVA === 'number') ? tauxTVA : (parseInt(tauxTVA) || 19);
 
     // Track source_valeurs: recap_imprime / somme_lignes / calcul_derive
     let source_valeurs;
@@ -1651,7 +1979,7 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
 
     // Dériver HT et TVA si manquants
     if ((totalHT == null || totalHT <= 0 || totalTVA == null || totalTVA <= 0) && totalTTC > 0) {
-      const tvaRate = (tauxTVA === 0) ? 0 : (tauxTVA || 19);
+      const tvaRate = (tauxTVACalc === 0) ? 0 : (tauxTVACalc || 19);
       const timbreVal = timbre ?? 1.000;
       const fodecVal = fodec || 0;
       if (totalHT == null || totalHT <= 0) {
@@ -1671,7 +1999,7 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
     const timbre_num     = timbre ?? 1.000;
     const fodec_num      = fodec || 0;
     const rsExplicite    = retenueSource || 0;
-    const rsCalcule      = rsInfo.applicable ? parseFloat((rs_base * (rsInfo.taux || 1.5) / 100).toFixed(3)) : 0;
+    const rsCalcule      = rsInfo.applicable ? parseFloat((rs_base * (rsInfo.taux || 1) / 100).toFixed(3)) : 0;
     const rs_num         = rsExplicite || rsCalcule;
 
     // Si TTC détecté est absurde mais HT+TVA+timbre sont valides, calculer TTC
@@ -1690,7 +2018,7 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
       montant_ht: montantHT_num || null,
       montant_tva: totalTVA || null,
       montant_ttc: ttcCompute || null,
-      taux_tva: tauxTVA,
+      taux_tva: estTvaMixte ? 'Mixte' : tauxTVA,
       timbre_fiscal: timbre_num,
       fodec: fodec_num,
       retenue_source: rs_num,
@@ -1745,8 +2073,9 @@ export function parseFactureTunisienne(rawText, tesseractConfiance = 0) {
         numero_justificatif: numero || '',
         categorie_principale: categorieFinale,
         categories_secondaires: categoriesSec,
-        taux_tva: tauxTVA,
+        taux_tva: estTvaMixte ? 'Mixte' : tauxTVA,
         taux_tva_details: taux_tva_details,
+        remise: detectRemise(text),
         montant_ht: montantHT_num,
         montant_tva: totalTVA || 0,
         montant_ttc: ttcCompute,
@@ -2090,7 +2419,7 @@ function analyseValeursFacture(text) {
 function extraireMFFournisseur(text) {
   const lignes = text.split('\n').filter(Boolean);
   const idxClient = lignes.findIndex(l => /factur[eé]\s*[àa]|client\s*:|adresse\s*client|adresse de livraison/i.test(l));
-  const mfRegex = /\b(\d{6,7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
+  const mfRegex = /\b(\d{6,7}\/[A-Z0-9](?:\/[A-Z0-9])?(?:\/[A-Z0-9])?(?:\/\d{3})?)\b/g;
   const mfTrouves = [];
   lignes.forEach((ligne, idx) => {
     let m;
@@ -2103,8 +2432,11 @@ function extraireMFFournisseur(text) {
   // Normaliser 0→O dans les positions lettres
   const parts = mfFour.valeur.split('/');
   if (parts.length >= 3) {
-    parts[1] = parts[1].replace(/0/g, 'O');
-    if (parts.length >= 4) parts[3] = parts[3].replace(/0/g, 'O');
+    const lastIsDigits = /^\d{3}$/.test(parts[parts.length - 1]);
+    for (let i = 1; i < parts.length; i++) {
+      if (i === parts.length - 1 && lastIsDigits) continue;
+      parts[i] = parts[i].replace(/0/g, 'O');
+    }
     return parts.join('/');
   }
   return mfFour.valeur;
@@ -2177,8 +2509,10 @@ export function corrigerFacture(parsed, texteOCR) {
     alertes: [],
     notes: [],
     lignes: parsed.lignes || [],
+    taux_tva_details: [],
+    remise: null,
+    remise_pourcent: null,
   };
-
   try {
     const rawText = texteOCR;
     if (!rawText || rawText.trim().length < 10) {
@@ -2253,12 +2587,37 @@ export function corrigerFacture(parsed, texteOCR) {
     if (recap.timbre !== null) out.timbre = recap.timbre;
     if (recap.fodec !== null) out.fodec = recap.fodec;
 
-    // Validation recap: TTC ≈ HT + TVA + Timbre + FODEC
+    // ═══════════════════════════════════════════
+    // ÉTAPE 0.5 — Remise commerciale (détecter + soustraire)
+    // ═══════════════════════════════════════════
+    const remise = detectRemise(text);
+    if (remise) {
+      out.remise_pourcent = remise.pourcent || null;
+      let montantRemise = remise.montant != null ? remise.montant : null;
+      if (montantRemise == null && remise.pourcent != null && out.sous_total_ht > 0) {
+        montantRemise = Math.round(out.sous_total_ht * remise.pourcent / 100 * 1000) / 1000;
+      }
+      if (montantRemise != null && montantRemise > 0) {
+        const avant = out.sous_total_ht;
+        const apres = Math.max(0, Math.round((avant - montantRemise) * 1000) / 1000);
+        const dejaNet = out.total_ttc > 0 && avant > 0
+          && Math.abs(out.total_ttc - (avant + (out.montant_tva || 0) + (out.timbre || 0) + (out.fodec || 0))) < 0.050;
+        out.remise = montantRemise;
+        if (!dejaNet) {
+          out.sous_total_ht = apres;
+          out.notes.push('Remise détectée (' + (remise.pourcent ? remise.pourcent + '%' : montantRemise.toFixed(3) + ' DT') + ') appliquée : HT net ' + apres.toFixed(3));
+        } else {
+          out.notes.push('Remise détectée : ' + montantRemise.toFixed(3) + ' DT (déjà déduite du total HT)');
+        }
+      }
+    }
+
+    // Validation recap: TTC ≈ HT(net) + TVA + Timbre + FODEC
     if (recap.ht !== null && recap.tva !== null && recap.ttc !== null) {
-      const attendu = recap.ht + (recap.tva || 0) + (recap.timbre || 1.000) + (recap.fodec || 0);
+      const attendu = out.sous_total_ht + (out.montant_tva || 0) + (out.timbre || 1.000) + (out.fodec || 0);
       if (Math.abs(recap.ttc - attendu) > 0.010) {
         out.alertes.push('ecart_recap');
-        out.notes.push('Récapitulatif : HT=' + recap.ht.toFixed(3) + ' + TVA=' + (recap.tva||0).toFixed(3) + ' + Timbre=' + (recap.timbre||1).toFixed(3) + ' + FODEC=' + (recap.fodec||0).toFixed(3) + ' = ' + attendu.toFixed(3) + ' ≠ TTC=' + recap.ttc.toFixed(3));
+        out.notes.push('Récapitulatif : HT=' + out.sous_total_ht.toFixed(3) + ' + TVA=' + (out.montant_tva||0).toFixed(3) + ' + Timbre=' + (out.timbre||1).toFixed(3) + ' + FODEC=' + (out.fodec||0).toFixed(3) + ' = ' + attendu.toFixed(3) + ' ≠ TTC=' + recap.ttc.toFixed(3));
       }
     }
 
@@ -2332,7 +2691,7 @@ export function corrigerFacture(parsed, texteOCR) {
     );
 
     // Extraire TOUS les MF avec leur position ligne
-    const mfRegex = /\b(\d{6,7}\/[A-Z0-9]\/[A-Z0-9](?:\/[A-Z0-9]\/\d{3})?)\b/g;
+    const mfRegex = /\b(\d{6,7}\/[A-Z0-9](?:\/[A-Z0-9])?(?:\/[A-Z0-9])?(?:\/\d{3})?)\b/g;
     const mfTrouves = [];
     lignesTexte.forEach((ligne, idx) => {
       let m;
@@ -2348,11 +2707,13 @@ export function corrigerFacture(parsed, texteOCR) {
 
     if (mfFournisseur) {
       // Normaliser OCR : 0→O dans les positions lettres (ex: 0012345/0/A/M/000 → 0012345/O/A/M/000)
-      // Normaliser OCR : 0→O dans les positions lettres (ex: 0012345/0/A/M/000 → 0012345/O/A/M/000)
       const mfParts = mfFournisseur.valeur.split('/');
       if (mfParts.length >= 3) {
-        mfParts[1] = mfParts[1].replace(/0/g, 'O');
-        if (mfParts.length >= 4) mfParts[3] = mfParts[3].replace(/0/g, 'O');
+        const lastIsDigits = /^\d{3}$/.test(mfParts[mfParts.length - 1]);
+        for (let i = 1; i < mfParts.length; i++) {
+          if (i === mfParts.length - 1 && lastIsDigits) continue;
+          mfParts[i] = mfParts[i].replace(/0/g, 'O');
+        }
         out.matricule_fiscal = mfParts.join('/');
       } else {
         out.matricule_fiscal = mfFournisseur.valeur;
@@ -2368,8 +2729,8 @@ export function corrigerFacture(parsed, texteOCR) {
       out.fournisseur = detectFournisseur(text);
     }
 
-    // Validation MF
-    const MF_FULL = /^\d{6,7}\/[A-Z0-9]\/[A-Z0-9]\/[A-Z0-9]\/\d{3}$/;
+    // Validation MF : accepte 3, 4 ou 5 segments (1234567/A/000, 1234567/A/M/000, 1234567/X/A/M/000)
+    const MF_FULL = /^\d{6,7}\/[A-Z0-9](?:\/[A-Z0-9])?(?:\/[A-Z0-9])?\/\d{3}$/;
     if (!out.matricule_fiscal || !MF_FULL.test(out.matricule_fiscal)) {
       out.alertes.push('mf_manquant');
     }
@@ -2405,6 +2766,21 @@ export function corrigerFacture(parsed, texteOCR) {
       out.taux_tva = 'Mixte';
       out.notes.push('Taux TVA : ' + [...tauxUniques].join('% / ') + '%');
       out.alertes.push('tva_mixte_verifier');
+      // Détail par taux à partir des lignes détectées
+      const byRate = {};
+      for (const l of lignes) {
+        if (l.tva === undefined) continue;
+        const t = l.tva;
+        if (!byRate[t]) byRate[t] = { base: 0, tva: 0 };
+        const lineBase = (l.total || l.prix_unitaire * (l.quantite || 1) || 0);
+        byRate[t].base += lineBase;
+        byRate[t].tva += t > 0 ? parseFloat((lineBase * t / 100).toFixed(3)) : 0;
+      }
+      out.taux_tva_details = Object.entries(byRate).map(([taux, d]) => ({
+        taux: parseInt(taux),
+        base_ht: parseFloat(d.base.toFixed(3)),
+        montant_tva: parseFloat(d.tva.toFixed(3)),
+      }));
     } else if (tauxUniques.size === 1) {
       out.taux_tva = [...tauxUniques][0] + '%';
     } else {
@@ -2500,12 +2876,13 @@ export function corrigerFacture(parsed, texteOCR) {
         out.alertes.push('ecart_lignes_recap');
       }
     }
-    if (recap.tva !== null && recap.ht !== null) {
-      const tvaCalculee = lignes.reduce((s, l) => {
-        if (l.tva !== undefined) return s + (l.prix_unitaire || 0) * l.tva / 100;
-        return s;
+    const lignesAvecTva = lignes.filter(l => l.tva !== undefined);
+    if (recap.tva !== null && recap.ht !== null && lignesAvecTva.length > 0) {
+      const baseTva = out.sous_total_ht || recap.ht;
+      const tvaCalculee = lignesAvecTva.reduce((s, l) => {
+        return s + (l.total || l.prix_unitaire * (l.quantite || 1) || 0) * l.tva / 100;
       }, 0);
-      if (Math.abs(tvaCalculee - recap.tva) > 0.010) {
+      if (baseTva > 0 && Math.abs(tvaCalculee - recap.tva) > 0.010) {
         out.alertes.push('ecart_tva');
       }
     }
@@ -2513,10 +2890,10 @@ export function corrigerFacture(parsed, texteOCR) {
     const rs = detectRSPrestation(text, out.fournisseur);
     if (rs.applicable) {
       out.retenue_source = true;
-      out.rs_taux = rs.taux || 1.5;
+      out.rs_taux = rs.taux || 1;
       if (!out.rs_montant) {
         const montantTTC = out.total_ttc || 0;
-        out.rs_montant = parseFloat((montantTTC * (rs.taux || 1.5) / 100).toFixed(3));
+        out.rs_montant = parseFloat((montantTTC * (rs.taux || 1) / 100).toFixed(3));
       }
     }
 

@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { smartAnswer, getSuggestedQueries, initKnowledgeBase } from './taxKnowledge';
+import { buildAuditContext } from '../auditEngine';
 
 initKnowledgeBase();
 
@@ -23,6 +24,8 @@ export function clearApiKey() {
 
 const FISCAL_CONTEXT = `You are a Tunisian tax expert assistant. Answer questions about Tunisian fiscal law, tax rates, declarations (déclaration mensuelle TVA, IS, IRPP, retenue à la source, employeur), deadlines, penalties, and procedures. Use the current year 2026. Be precise, cite official references (Code des Impôts Directs, Code de la TVA, Code de l'IRPP et de l'IS), and give practical examples when helpful. Respond in the same language as the query (French or Arabic). Keep answers concise and practical.`;
 
+const AUDIT_CONTEXT = (companyDetails) => `\n\n=== CONTEXTE AUDIT DE L'ENTREPRISE (données réelles, à utiliser pour toute question d'audit, de conformité ou d'analyse de la comptabilité) ===\n${buildAuditContext(companyDetails)}\n\nUtilisez ces données réelles de l'entreprise pour répondre aux questions d'audit. Citez les montants réels. Si l'utilisateur demande un score, donnez-le avec le détail des points non conformes et les recommandations.`;
+
 let genAI = null;
 let model = null;
 
@@ -41,7 +44,7 @@ function getModel() {
   return model;
 }
 
-async function askGemini(query, history) {
+async function askGemini(query, history, companyDetails) {
   const m = getModel();
   if (!m) return null;
   try {
@@ -49,7 +52,8 @@ async function askGemini(query, history) {
       role: h.role === 'assistant' ? 'model' : 'user',
       parts: [{ text: h.content }]
     }));
-    contents.push({ role: 'user', parts: [{ text: `${FISCAL_CONTEXT}\n\nQuestion: ${query}` }] });
+    const context = companyDetails ? `${FISCAL_CONTEXT}${AUDIT_CONTEXT(companyDetails)}\n\nQuestion: ${query}` : `${FISCAL_CONTEXT}\n\nQuestion: ${query}`;
+    contents.push({ role: 'user', parts: [{ text: context }] });
     const result = await m.generateContent({
       contents,
       generationConfig: { temperature: 0.3, maxOutputTokens: 800 },
@@ -61,15 +65,24 @@ async function askGemini(query, history) {
   }
 }
 
-export async function askAI(query, history) {
+export async function askAI(query, history, companyDetails) {
   const q = query.trim();
   if (!q) return '';
 
   const knowledge = smartAnswer(q);
   if (knowledge.found) return knowledge.message;
 
-  const gemini = await askGemini(q, history);
+  const gemini = await askGemini(q, history, companyDetails);
   if (gemini) return gemini;
+
+  // Secours OpenRouter (modèles gratuits) si aucune clé Gemini
+  try {
+    const { hasOpenRouterKey, askOpenRouterChat } = await import('./aiOcr');
+    if (hasOpenRouterKey()) {
+      const or = await askOpenRouterChat(q, history, companyDetails);
+      if (or && or.text) return or.text;
+    }
+  } catch { /* silencieux */ }
 
   return '';
 }

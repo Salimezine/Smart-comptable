@@ -1,8 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, BookOpen } from 'lucide-react';
 import { PCG_COMPLET } from '../utils/pcgComplet';
+import { loadCustomAccounts } from '../utils/tiersCodes';
 
 const ACCOUNTS = Object.entries(PCG_COMPLET).map(([code, label]) => ({ code, label }));
+const CUSTOM_ACCOUNTS = loadCustomAccounts().map(a => ({ code: a.code, label: a.label }));
+const ALL_ACCOUNTS = [...CUSTOM_ACCOUNTS.filter(a => !PCG_COMPLET[a.code]), ...ACCOUNTS];
 
 function findLibelle(code) {
   if (PCG_COMPLET[code]) return PCG_COMPLET[code];
@@ -43,7 +46,7 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
     setQuery(val);
     if (val.length < 1) { setSuggestions([]); setShowSuggestions(false); return; }
     const lower = val.toLowerCase();
-    const filtered = ACCOUNTS
+    const filtered = ALL_ACCOUNTS
       .filter(a => a.code.includes(val) || a.label.toLowerCase().includes(lower))
       .slice(0, 15);
     setSuggestions(filtered);
@@ -84,8 +87,8 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
   }
 
   const modalResults = modalSearch
-    ? ACCOUNTS.filter(a => a.code.includes(modalSearch) || a.label.toLowerCase().includes(modalSearch.toLowerCase()))
-    : ACCOUNTS;
+    ? ALL_ACCOUNTS.filter(a => a.code.includes(modalSearch) || a.label.toLowerCase().includes(modalSearch.toLowerCase()))
+    : ALL_ACCOUNTS;
 
   return (
     <div className={`relative ${className}`} ref={wrapperRef}>
@@ -97,7 +100,7 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
             value={query}
             onChange={e => handleInput(e.target.value)}
             onFocus={() => query.length >= 1 && suggestions.length > 0 && setShowSuggestions(true)}
-            onBlur={() => setTimeout(commitQuery, 150)}
+            onBlur={commitQuery}
             onKeyDown={handleKeyDown}
             placeholder={placeholder}
             disabled={disabled}
@@ -108,6 +111,7 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
               {suggestions.map((a, i) => (
                 <div key={a.code}
                   className={`flex items-center justify-between px-2 py-1.5 text-xs cursor-pointer transition-colors ${i === highlightIdx ? 'bg-brand-500/20 text-brand-300' : 'text-slate-300 hover:bg-slate-700/50'}`}
+                  onMouseDown={e => e.preventDefault()}
                   onClick={() => selectAccount(a.code)}
                   onMouseEnter={() => setHighlightIdx(i)}>
                   <span className="font-mono text-slate-400">{a.code}</span>
@@ -141,6 +145,7 @@ export default function AccountSelect({ value, onChange, placeholder = 'ex: 4010
             <div className="overflow-y-auto p-4 space-y-0.5 flex-1">
               {modalResults.map(({ code, label }) => (
                 <div key={code} className="flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-slate-700/50 cursor-pointer text-xs"
+                  onMouseDown={e => e.preventDefault()}
                   onClick={() => selectAccount(code)}>
                   <span className="font-mono text-slate-400">{code}</span>
                   <span className="text-slate-200">{label}</span>

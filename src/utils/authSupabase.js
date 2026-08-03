@@ -1,36 +1,36 @@
-import { supabase, isSupabaseEnabled } from './supabaseClient';
+// ==========================================================================
+//  authSupabase → cloudClient (Cloudflare Workers + D1)
+// ==========================================================================
+import {
+  isSupabaseEnabled,
+  signUp as signUpCloud,
+  signIn as signInCloud,
+  signOut as signOutCloud,
+  getSession as getSessionCloud,
+  getCurrentUser as getCurrentUserCloud,
+  onAuthChange as onAuthChangeCloud,
+} from './cloudClient';
 
 export async function signUp(email, password) {
-  if (!isSupabaseEnabled()) return { error: 'Supabase non configuré' };
-  const { data, error } = await supabase.auth.signUp({ email, password });
-  return { data, error };
+  return signUpCloud(email, password);
 }
 
 export async function signIn(email, password) {
-  if (!isSupabaseEnabled()) return { error: 'Supabase non configuré' };
-  const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-  return { data, error };
+  return signInCloud(email, password);
 }
 
 export async function signOut() {
-  if (!isSupabaseEnabled()) return;
-  await supabase.auth.signOut();
+  await signOutCloud();
 }
 
 export async function getSession() {
-  if (!isSupabaseEnabled()) return null;
-  const { data } = await supabase.auth.getSession();
-  return data?.session ?? null;
+  return getSessionCloud();
 }
 
 export async function getCurrentUser() {
-  if (!isSupabaseEnabled()) return null;
-  const { data } = await supabase.auth.getUser();
-  return data?.user ?? null;
+  return getCurrentUserCloud();
 }
 
 export function onAuthChange(callback) {
-  if (!isSupabaseEnabled()) return () => {};
-  const { data: { subscription } } = supabase.auth.onAuthStateChange(callback);
-  return () => subscription.unsubscribe();
+  return onAuthChangeCloud(callback);
 }

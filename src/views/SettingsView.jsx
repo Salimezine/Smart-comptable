@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Building, Sparkles, AlertCircle, CheckCircle2, Cloud, Upload } from 'lucide-react';
+import { Building, Sparkles, AlertCircle, CheckCircle2, Cloud, Upload, KeyRound } from 'lucide-react';
 import { getLearningStats } from '../learningEngine';
 import { setTTNMode, getTTNMode } from '../teif';
 import { isSupabaseEnabled, migrateLocalToSupabase } from '../utils/supabaseService';
+import { getOpenRouterKey, setOpenRouterKey, hasOpenRouterKey } from '../utils/aiOcr';
+import OpenRouterGuide from '../components/OpenRouterGuide';
 
 function CloudSyncSection({ companyId }) {
   const [migrating, setMigrating] = useState(false);
@@ -57,6 +59,8 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
   const [success, setSuccess] = useState(false);
   const [stats, setStats] = useState(getLearningStats());
   const [ttnMode, setTtnMode] = useState(() => getTTNMode());
+  const [orKey, setOrKey] = useState(() => getOpenRouterKey());
+  const [orSaved, setOrSaved] = useState(false);
 
   useEffect(() => { setStats(getLearningStats()); }, []);
 
@@ -204,6 +208,45 @@ export default function SettingsView({ companyDetails, setCompanyDetails }) {
       {isSupabaseEnabled() && (
         <CloudSyncSection companyId={localStorage.getItem('smart_comptable_current_id')} />
       )}
+
+      {/* ── Clé IA OpenRouter ── */}
+      <div className="p-4 rounded-xl bg-slate-800/40 border border-indigo-500/20">
+        <div className="flex items-center gap-2 text-indigo-400 mb-2">
+          <KeyRound className="w-4 h-4" />
+          <h4 className="text-xs font-extrabold uppercase tracking-wider">Clé IA OpenRouter (gratuite)</h4>
+          {hasOpenRouterKey() && (
+            <span className="ml-auto px-2 py-0.5 rounded-full bg-accent-500/15 border border-accent-500/30 text-[9px] font-bold text-accent-400">✓ Configurée</span>
+          )}
+        </div>
+        <p className="text-[10px] text-slate-400 mb-3">
+          Utilisée pour l'assistant IA (chat), l'OCR et l'analyse IA de l'audit. Stockée uniquement sur votre appareil.
+        </p>
+        <div className="flex gap-2">
+          <input
+            type="password"
+            value={orKey}
+            onChange={(e) => setOrKey(e.target.value)}
+            placeholder="sk-or-..."
+            className="flex-1 bg-slate-900 border border-slate-700 focus:border-indigo-500 rounded-xl px-3.5 py-2.5 text-slate-100 text-xs focus:outline-none font-mono"
+          />
+          <button
+            type="button"
+            onClick={() => { setOpenRouterKey(orKey.trim()); setOrSaved(true); setTimeout(() => setOrSaved(false), 2000); }}
+            disabled={!orKey.trim()}
+            className="px-4 py-2.5 bg-indigo-600/80 hover:bg-indigo-500 disabled:opacity-30 text-white text-xs font-bold rounded-xl transition-all"
+          >
+            Enregistrer
+          </button>
+        </div>
+        {orSaved && (
+          <p className="mt-2 text-[10px] font-bold text-accent-400 flex items-center gap-1">
+            <CheckCircle2 className="w-3 h-3" /> Clé OpenRouter enregistrée !
+          </p>
+        )}
+        <div className="mt-3">
+          <OpenRouterGuide />
+        </div>
+      </div>
 
       <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
         <h4 className="text-xs font-bold text-slate-300 mb-3"> Configuration TEIF (Facture Électronique)</h4>
