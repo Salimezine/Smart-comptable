@@ -113,11 +113,6 @@ En vertu de l’article 70 de la loi des finances...
 [→](https://jibaya.tn/blog/communique/)
 Load More
 [VOIR TOUS LES ARTICLES ->](https://jibaya.tn/actualites/)
-[ ](http://www.registre.finances.gov.tn/)
-[ ](http://www.gbo.tn/)
-[ ](https://www.douane.gov.tn/)
-[ ](https://www.registre-entreprises.tn/rne-public/#/)
-[ ](https://www.autoentrepreneur.tn/public/home)
 [ ](http://www.cimf.tn/)
 [ ](http://www.finances.gov.tn/fr)
 [ ](http://www.registre.finances.gov.tn/)
@@ -125,11 +120,6 @@ Load More
 [ ](https://www.douane.gov.tn/)
 [ ](https://www.registre-entreprises.tn/rne-public/#/)
 [ ](https://www.autoentrepreneur.tn/public/home)
-[ ](http://www.cimf.tn/)
-[ ](http://www.finances.gov.tn/fr)
-[ ](http://www.registre.finances.gov.tn/)
-[ ](http://www.gbo.tn/)
-[ ](https://www.douane.gov.tn/)
 ![](https://jibaya.tn/wp-content/uploads/2023/03/logo-jibaya-white-01.png)
 ## Accès rapide
   * [ Actualités et communiqués ](https://jibaya.tn/actualites/)

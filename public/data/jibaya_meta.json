@@ -2,8 +2,8 @@
   "title": "JIBAYA - JIBAYA",
   "description": "Bienvenue dans le portail de l'administration fiscale tunisienne Choisissez l'espace qui vous convient Espace particulier Bienvenue dans votre espace particulier ! En quelques clics : trouvez facilement les informations fiscales que vous cherchez, téléchargez les imprimés dont vous avez besoin et effectuez d’autres démarches administratives en ligne. Explorez cet espace et découvrez comment nous pouvons simplifier",
   "url": "https://www.jibaya.tn",
-  "crawled_at": "2026-07-20",
-  "markdown_length": 9928,
+  "crawled_at": "2026-08-03",
+  "markdown_length": 9568,
   "links_found": 44,
   "links": {
     "internal": [
@@ -29,13 +29,13 @@
       "https://jibaya.tn/blog/depot-sur-support-magnetique/"
     ],
     "external": [
+      "http://www.cimf.tn/",
+      "http://www.finances.gov.tn/fr",
       "http://www.registre.finances.gov.tn/",
       "http://www.gbo.tn/",
       "https://www.douane.gov.tn/",
       "https://www.registre-entreprises.tn/rne-public/",
-      "https://www.autoentrepreneur.tn/public/home",
-      "http://www.cimf.tn/",
-      "http://www.finances.gov.tn/fr"
+      "https://www.autoentrepreneur.tn/public/home"
     ]
   }
 }

@@ -1,20 +1,25 @@
 {
   "source": "wiki_tax_3",
-  "crawled_at": "2026-07-27",
+  "crawled_at": "2026-08-03",
   "taux": {
     "rs": {
-      "taux": "50%, 10%, 10%, 25%, 4%",
+      "taux": "10%, 8%, 18.6%, 7.7%, 98%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
   "echeances": [],
-  "lois": [],
+  "lois": [
+    {
+      "article": "2",
+      "extrait": "History of the Jews in Tunisia - Wikipedia Jump to content Search Search History of the Jews in Tunisia 11 languages العربية Čeština Deutsch Suomi Français עברית Bahasa Indonesia Italiano Ladino Português Türkçe Edit links From Wikipedia, the free encyclopedia Ethnic group Tunisian Jews יהדות תוניסי"
+    }
+  ],
   "informations": [
-    "Using accounts, the tax is calculated as a percentage of the difference between sales and purchases from taxed accounts.",
-    "The taxes paid by both the manufacturer and the retailer to the government are 10% of the",
-    "Because of the difficulty of exempting intermediate transactions in a sales tax, VAT has been gaining favor over traditional sales taxes.",
-    "However, it is uncommon for sales taxes to be collected at every stage, as it is only levied as a final tax on the consumer, not the reseller.",
-    "The assertion that this \"border adjustment\" would be compatible with the rules of the WTO is controversial; it was alleged that the proposed tax would favour domestically produced goods as they would be taxed less than imports, to a degree varying across sectors. For example, the wage component of the cost of domestically produced goods would not be taxed."
+    "Quickly introduced to the Beylic Court, they performed executive functions of court – collectors of taxes, treasurers and intermediaries without authority over",
+    "This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.",
+    "in 1756 to 4,572 piastres in 1806 – and had to pay additional taxes (ghrâma) whenever the sovereign's treasury was in difficulty, as the Muslims sometimes did.",
+    "A state farmer, surrounded by some of the most fortunate and educated notables, also collected taxes such as the tithes, the tax on kosher meat and the offerings of the faithful.",
+    "and many of the key posts in the administration of finance – collection of taxes and customs duties, scheduling of expenditure, handling of cash, keeping books of account or paying the salaries of the"
   ]
 }

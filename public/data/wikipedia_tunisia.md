@@ -2434,7 +2434,6 @@ were 2% of the population.
 [
 228
 ]
-.
 French
 also plays a major role in Tunisian society, despite having no official status. It is widely used in education (e.g., as the language of instruction in the sciences in secondary school), the press, and business. In 2022, there were 6,321,000 French-speakers in Tunisia, or about 52% of the population.
 [
@@ -6748,5 +6747,5 @@ Yale LUX
 /
 34; 9
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1365231591
+https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1367254263
 "

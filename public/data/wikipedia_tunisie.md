@@ -3202,7 +3202,9 @@ Lors de la
 guerre des Six Jours
 , en
 juin 1967
-, des milliers de manifestants détruisent les magasins juifs et incendient la
+, des
+milliers d'émeutiers
+détruisent les magasins juifs et incendient la
 Grande synagogue de Tunis
 et ses
 livres sacrés
@@ -13547,5 +13549,5 @@ La version du 6 décembre 2006 de cet article a été reconnue comme «
 article de qualité
 », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
 Ce document provient de «
-https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=237807007
+https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238314047
 ».

@@ -1,9 +1,9 @@
 {
   "source": "wiki_tax_5",
-  "crawled_at": "2026-07-27",
+  "crawled_at": "2026-08-03",
   "taux": {
     "rs": {
-      "taux": "98%, 1%, 99%",
+      "taux": "50%, 90%, 25%, 15%, 89%",
       "label": "Retenues à la source",
       "type": "rs"
     }
