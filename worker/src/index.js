@@ -196,6 +196,30 @@ async function apiCreateCompany(request, env) {
   return json({ id, name: body.name, owner_id: user.userId });
 }
 
+// Import d'une société + membership avec des id stables (migration Supabase → D1)
+async function apiImportCompanies(request, env) {
+  const user = await requireAuth(request, env);
+  if (!user) return json({ message: 'Non autorisé' }, 401);
+  const body = await request.json();
+  const ts = nowIso();
+  const results = [];
+  for (const c of Array.isArray(body) ? body : (body.companies || [])) {
+    if (!c.id) continue;
+    await env.DB.prepare(
+      `INSERT INTO companies (id, owner_id, name, matricule_fiscal, adresse, plan, settings, created_at, updated_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(id) DO UPDATE SET name=excluded.name, matricule_fiscal=excluded.matricule_fiscal, adresse=excluded.adresse, plan=excluded.plan`
+    ).bind(c.id, c.owner_id || user.userId, c.name || 'Ma Société', c.matricule_fiscal || '', c.adresse || '', c.plan || 'free', c.settings ? JSON.stringify(c.settings) : null, ts, ts).run();
+    // Donner accès à l'utilisateur courant (et au owner si fourni)
+    await env.DB.prepare(
+      `INSERT INTO company_members (company_id, user_id, role, is_active)
+       VALUES (?, ?, 'admin', 1) ON CONFLICT(company_id, user_id) DO NOTHING`
+    ).bind(c.id, user.userId).run();
+    results.push({ id: c.id, name: c.name || 'Ma Société' });
+  }
+  return json(results);
+}
+
 // -----------------------------------------------------------------------
 // Generic CRUD over D1
 // -----------------------------------------------------------------------
@@ -482,6 +506,7 @@ export default {
       // Companies
       if (path === '/api/companies' && request.method === 'GET') return await apiCompanies(request, env);
       if (path === '/api/companies' && request.method === 'POST') return await apiCreateCompany(request, env);
+      if (path === '/api/companies/import' && request.method === 'POST') return await apiImportCompanies(request, env);
 
       // Import batch (migration)
       if (path === '/api/import' && request.method === 'POST') return await apiImport(request, env);

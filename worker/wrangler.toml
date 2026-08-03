@@ -12,10 +12,6 @@ database_id = "204848dc-3160-4eae-9f59-e96bf94c6f99"
 API_KEY = "smart-comptable-teif-2026"
 # JWT secret utilisé pour signer les tokens d'auth (à remplacer par un secret)
 JWT_SECRET = "sxcJ5lRjB0NeuWQfzVhZOKig64IpbtkUyw72XoEa3dvrYTC1"
-# Ancienne config Supabase — utilisée UNIQUEMENT pour la migration des données
-# (supabaseFetch des données existantes). À supprimer après la migration.
-SUPABASE_URL = ""
-SUPABASE_SERVICE_KEY = ""
 
 # SECRETS (set with `wrangler secret put <NAME>`):
 # TUNTRUST_PFX = "<base64 of your TunTrust .p12/.pfx file>"
