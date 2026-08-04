@@ -1,0 +1,16 @@
+{
+  "source": "wiki_tax_2",
+  "crawled_at": "2026-08-03",
+  "taux": {
+    "rs": {
+      "taux": "3%, 98%, 1%, 99%",
+      "label": "Retenues à la source",
+      "type": "rs"
+    }
+  },
+  "echeances": [],
+  "lois": [],
+  "informations": [
+    "by Western fleets. Lastly, Tunisians had little control on foreign trade as old 16th century agreements with European powers limited custom taxes to 3%. As a result, its small industry was devastated by imports, especially in the area of"
+  ]
+}

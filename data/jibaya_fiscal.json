@@ -1,0 +1,29 @@
+{
+  "source": "jibaya",
+  "crawled_at": "2026-08-03",
+  "taux": {
+    "tfp": {
+      "taux": "1% salaires + 1% employeur",
+      "label": "Taxe Formation Professionnelle + FOPROLOS",
+      "type": "tfp"
+    }
+  },
+  "echeances": [],
+  "lois": [
+    {
+      "article": "7",
+      "extrait": "[JIBAYA](https://jibaya.tn \"JIBAYA\") [ ![logojibaya](https://jibaya.tn/wp-content/uploads/2023/03/logojibaya.png) ](https://jibaya.tn) [ ](https://jibaya.tn/) Menu   * [ADMINISTRATION FISCALE](https://jibaya.tn/)     * [Direction Générale des Impôts](https://jibaya.tn/dgi/)     * [Direction Générale"
+    },
+    {
+      "article": "70",
+      "extrait": "[JIBAYA](https://jibaya.tn \"JIBAYA\") [ ![logojibaya](https://jibaya.tn/wp-content/uploads/2023/03/logojibaya.png) ](https://jibaya.tn) [ ](https://jibaya.tn/) Menu   * [ADMINISTRATION FISCALE](https://jibaya.tn/)     * [Direction Générale des Impôts](https://jibaya.tn/dgi/)     * [Direction Générale"
+    }
+  ],
+  "informations": [
+    "* [Direction Générale des Etudes et de la Législation Fiscales](https://jibaya.tn/dgelf/)",
+    "* [La télé-déclaration Fiscale](https://jibaya.tn/blog/la-tele-declaration-fiscale/)",
+    "* [La Télé-liquidation Fiscale](https://jibaya.tn/blog/la-tele-liquidation-fiscale/)",
+    "* [Plateforme de transfert et échange des données fiscales : TEJ](https://jibaya.tn/blog/plateforme-de-transfert-et-echange-des-donnees-fiscales-tej/)",
+    "* [Caisses enregistreuses fiscales](https://jibaya.tn/blog/nacef-le-systeme-national-de-caisses-enregistreuses-fiscales-2/)"
+  ]
+}

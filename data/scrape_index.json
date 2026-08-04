@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-08-03",
+  "sources": {
+    "impots": {
+      "url": "https://www.impots.finances.gov.tn",
+      "label": "Portail Fiscal Tunisien"
+    },
+    "finances": {
+      "url": "https://www.finances.gov.tn",
+      "label": "Ministère des Finances Tunisie"
+    },
+    "jibaya": {
+      "url": "https://www.jibaya.tn",
+      "label": "Portail Jibaya Tunisie"
+    },
+    "wikipedia_tunisie": {
+      "url": "https://fr.wikipedia.org/wiki/Tunisie",
+      "label": "Wikipedia Tunisie"
+    },
+    "wikipedia_tunisia_economy": {
+      "url": "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
+      "label": "Wikipedia Economy of Tunisia"
+    },
+    "wikipedia_tunisia": {
+      "url": "https://en.wikipedia.org/wiki/Tunisia",
+      "label": "Wikipedia Tunisia"
+    },
+    "axiane": {
+      "url": "https://www.axiane.tn",
+      "label": "Axiane Tunisie"
+    }
+  },
+  "output_dir": "/home/runner/work/Smart-comptable/Smart-comptable/scripts/../public/data"
+}

@@ -1,0 +1,1 @@
+var e=`/Smart-comptable/data/`;async function t(){try{let e=await fetch(`/Smart-comptable/data/scrape_index.json`);return e.ok?await e.json():null}catch{return null}}async function n(t){try{let n=await fetch(e+t+`.md`);return n.ok?await n.text():null}catch{return null}}export{t as loadScrapedIndex,n as loadScrapedMarkdown};
