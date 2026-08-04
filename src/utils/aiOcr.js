@@ -15,10 +15,11 @@ export function hasOpenRouterKey() {
   return !!getOpenRouterKey();
 }
 
-// IA automatique côté serveur (clé OpenRouter sur le worker) — aucun utilisateur ne doit entrer de clé
+// IA automatique côté serveur (clé OpenRouter sur le worker) — aucun utilisateur ne doit entrer de clé.
+// L'endpoint /api/ai/chat est public (limité par IP) : disponible sans login, sans token.
 export function hasServerAI() {
   try {
-    return typeof localStorage !== 'undefined' && !!localStorage.getItem('smart_api_token');
+    return typeof navigator !== 'undefined' && navigator.onLine !== false;
   } catch { return false; }
 }
 
@@ -253,14 +254,15 @@ Réponds dans la langue de la question (français ou arabe). Réponses concises.
  */
 async function askOpenRouterServer(prompt, history = [], companyDetails = null) {
   try {
-    const token = localStorage.getItem('smart_api_token') || '';
-    if (!token) return null;
     const API_URL = (import.meta.env.VITE_API_URL || 'https://smart-comptable-teif-api.ezzinesalim21.workers.dev/api').replace(/\/$/, '');
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 90000);
+    const headers = { 'Content-Type': 'application/json' };
+    const token = localStorage.getItem('smart_api_token') || '';
+    if (token) headers['Authorization'] = `Bearer ${token}`;
     const resp = await fetch(`${API_URL}/ai/chat`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      headers,
       body: JSON.stringify({ prompt, history, companyDetails }),
       signal: controller.signal,
     });

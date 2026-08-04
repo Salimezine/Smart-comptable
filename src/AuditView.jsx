@@ -61,7 +61,7 @@ export default function AuditView({ companyDetails }) {
     try {
       const q = 'Donne-moi une analyse claire de mon audit : le score, les points les plus critiques à corriger en priorité, ce qui va bien, et 3 actions concrètes à faire ce mois-ci pour améliorer la conformité. Sois concret avec les montants réels.';
       const answer = await askAI(q, [], companyDetails);
-      setAiAnalysis(answer || 'Pas de réponse IA (configurez une clé dans le chat → "Clés IA").');
+      setAiAnalysis(answer || 'Pas de réponse IA pour le moment. Vérifiez votre connexion et réessayez.');
     } catch {
       setAiAnalysis('Erreur lors de l\'analyse IA.');
     } finally {

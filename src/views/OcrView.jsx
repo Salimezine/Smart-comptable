@@ -353,7 +353,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
         setAiEnhanced(true);
         return enhanced;
       }
-      if (!hasChromeAI() && !hasOpenRouterKey()) {
+      if (!hasChromeAI() && !hasOpenRouterKey() && !hasServerAI()) {
         setPurchaseError('⚠️ IA indisponible : aucune clé détectée et l\'IA de votre navigateur (Chrome) est absente. Ajoutez une clé OpenRouter gratuite pour la correction automatique.');
       }
       return null;
@@ -835,7 +835,7 @@ function OcrView({ expenses, invoices = [], onAddExpense, formatCurrency, compan
 
   const verifEcritureAvecIA = async (piece) => {
     if (!piece || !ocrRawText) return;
-    if (!(hasOpenRouterKey() || hasChromeAI())) return;
+    if (!(hasOpenRouterKey() || hasChromeAI() || hasServerAI())) return;
     setOcrStatus('Vérification IA de l\'écriture...');
     try {
       const lignes = await aiVerifEcriture(piece, ocrRawText, scannedDocument || undefined);
