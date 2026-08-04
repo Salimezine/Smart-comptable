@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, Send, Trash2, Bot, User, KeyRound } from 'lucide-react';
 import { askAI, getApiKey, hasApiKey, setApiKey, clearApiKey, getSuggestedQueries } from '../utils/auditAI';
-import { hasOpenRouterKey, getOpenRouterKey, setOpenRouterKey, askOpenRouterChat } from '../utils/aiOcr';
+import { hasOpenRouterKey, getOpenRouterKey, setOpenRouterKey, askOpenRouterChat, hasServerAI } from '../utils/aiOcr';
 import OpenRouterGuide from '../components/OpenRouterGuide';
 
 const WELCOME = [
@@ -28,6 +28,7 @@ export default function ChatView({ currentCompanyId, currentUser, companyDetails
 
   const engineLabel = () => {
     const parts = [];
+    if (hasServerAI()) parts.push('IA automatique');
     if (hasApiKey()) parts.push('Gemini');
     if (hasOpenRouterKey()) parts.push('OpenRouter');
     if (parts.length === 0) return 'Connaissance locale';
@@ -46,14 +47,14 @@ export default function ChatView({ currentCompanyId, currentUser, companyDetails
     try {
       answer = await askAI(query, history.map(m => ({ role: m.role, content: m.content })), companyDetails);
     } catch (_) { /* silencieux */ }
-    // 2. Secours OpenRouter si aucun résultat
-    if (!answer && hasOpenRouterKey()) {
+    // 2. Secours IA automatique (worker serveur, sans clé) si aucun résultat
+    if (!answer) {
       try {
         const or = await askOpenRouterChat(query, history.map(m => ({ role: m.role, content: m.content })), companyDetails);
         if (or && or.text) answer = or.text;
       } catch (_) { /* silencieux */ }
     }
-    const resp = answer || 'Je n\'ai pas trouvé de réponse pour cette question. Vérifiez vos clés IA (bouton "Clés IA") ou reformulez votre question.';
+    const resp = answer || 'Je n\'ai pas trouvé de réponse pour cette question. Vérifiez votre connexion et réessayez, ou reformulez votre question.';
     setMessages(prev => [...prev, { role: 'assistant', content: resp }]);
     setLoading(false);
     setInput('');

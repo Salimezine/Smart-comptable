@@ -296,11 +296,35 @@ async function apiImport(request, env) {
 }
 
 // -----------------------------------------------------------------------
-// Assistant IA (OpenRouter) — clé côté serveur pour un fonctionnement auto
+// Assistant IA (OpenRouter) — clé côté serveur, accès public (sans login)
+// pour un fonctionnement "IA automatique sans clé" sur tout le site.
+// Limité par IP pour protéger la clé OpenRouter.
 // -----------------------------------------------------------------------
+const aiRateMap = new Map();
+
+function aiRateLimit(ip, perWindow = 20, windowMs = 60000) {
+  if (!ip) return true;
+  const now = Date.now();
+  const entry = aiRateMap.get(ip);
+  if (!entry || entry.windowStart + windowMs < now) {
+    aiRateMap.set(ip, { windowStart: now, count: 1 });
+    return true;
+  }
+  entry.count++;
+  if (entry.count > perWindow) {
+    if (aiRateMap.size > 5000) aiRateMap.clear();
+    return false;
+  }
+  return true;
+}
+
 async function apiAiChat(request, env) {
-  const user = await requireAuth(request, env);
-  if (!user) return json({ message: 'Non autorisé' }, 401);
+  const ip = request.headers.get('CF-Connecting-IP')
+    || request.headers.get('x-forwarded-for')?.split(',')[0]
+    || 'unknown';
+  if (!aiRateLimit(ip)) {
+    return json({ error: 'Trop de requêtes — réessayez dans une minute', kind: 'rate' }, 429);
+  }
   const apiKey = env.OPENROUTER_API_KEY;
   if (!apiKey) return json({ message: 'Clé OpenRouter non configurée sur le serveur' }, 503);
   const body = await request.json().catch(() => ({}));
