@@ -6,13 +6,15 @@ Respecte EXACTEMENT cette structure (champs null si non trouvés, pas d'inventio
 {
   "fournisseur_nom": "nom de la société ou null",
   "fournisseur_mf": "matricule fiscal format 1234567/X/A/M/000 ou null",
+  "client": "nom du client (DESTINATAIRE) si la facture est une VENTE (émise par l utilisateur), sinon null",
   "date_facture": "DD/MM/YYYY ou null",
   "numero_facture": "numéro de facture ou null",
   "montant_ht": nombre,
   "remise": nombre ou 0 (remise commerciale déduite du total HT, sinon 0),
   "remise_pourcent": nombre ou 0 (taux de la remise en %, ex: 10 pour 10%),
-  "taux_tva": nombre (0, 7, 12, 13 ou 19),
-  "montant_tva": nombre,
+  "taux_tva": nombre (0, 7, 12, 13 ou 19) — taux unique si la facture n a qu un seul taux, sinon le taux dominant,
+  "taux_tva_details": [ { "taux": nombre (0, 7, 12, 13 ou 19), "base_ht": nombre, "montant_tva": nombre } ] — UNE entrée par taux distinct présent sur la facture, la somme des base_ht ≈ montant_ht ; [] si un seul taux ou taux illisible,
+  "montant_tva": nombre (somme de la TVA de tous les taux),
   "timbre_fiscal": nombre (0 ou 1.000 ou 1.500 ou 2.000),
   "fodec": nombre,
   "montant_ttc": nombre,
@@ -34,12 +36,14 @@ Respecte EXACTEMENT cette structure (champs null si non trouvés, pas d'inventio
 Règles de vérification :
 - Les montants sont en dinars tunisiens (DT), arrondis à 3 décimales.
 - Vérifie la cohérence : montant_ttc ≈ montant_ht + montant_tva + timbre_fiscal + fodec.
+- TVA MULTI-TAUX : si la facture affiche plusieurs taux (ex : 19% sur 900 et 7% sur 200), remplis taux_tva_details avec un objet par taux ({taux, base_ht}) et mets dans chaque ligne de "lignes" son propre taux_tva. Vérifie montant_tva ≈ Σ (base_ht × taux) et somme des base_ht ≈ montant_ht. Si un seul taux, laisse taux_tva_details = [].
 - REMISE : si la facture mentionne une remise (Remise, Rémise, Rabais, Escompte, خصم, "remise 10%", "remise X%", "remise : Y DT", une ligne pointillée "Remise ...... Y"), mets remise = montant en DT déduit (ex: 50 ou 100.000) et remise_pourcent = taux en % si visible (ex: 10). Sinon remise = 0.
 - montant_ht = le NET après remise (si "Total HT 1 000" et "Remise 10%", montant_ht = 900 et remise = 100). Ne le mets JAMAIS dans une ligne d'article.
 - Si le texte est brouillé, choisis la valeur la plus probable, sinon null.
 - Ne déduis JAMAIS le timbre fiscal : utilise uniquement la valeur visible sur la facture.
 - Le fournisseur_nom est TOUJOURS l'émetteur de la facture : la société dont le nom et le matricule fiscal figurent en en-tête (en haut) de la facture.
 - Le champ "Client :" désigne le DESTINATAIRE de la facture, pas le fournisseur. Ne mets JAMAIS le destinataire dans fournisseur_nom.
+- "client" : à remplir UNIQUEMENT pour type "vente" (nom du client destinataire). Pour "achat", mets client = null.
 - type : par défaut "achat" (facture reçue). Ne passe "vente" que si le document est manifestement émis par l'utilisateur (son propre en-tête).`;function p(){let e=typeof window<`u`?window:null,t=typeof self<`u`?self:null;return e?.LanguageModel?e.LanguageModel:e?.ai?.languageModel?e.ai.languageModel:e?.model?.LanguageModel?e.model.LanguageModel:e?.ai?.LanguageModel?e.ai.LanguageModel:t&&`LanguageModel`in t?t.LanguageModel:null}function m(){return!!p()}async function h(){let e=p();if(!e)return`absent`;try{return await e.availability()||`inconnu`}catch{return`inconnu`}}async function g(){let e=p();if(!e)return`absent`;try{let t=await e.availability();if(t===`available`||t===`downloading`)return t;if(t===`unavailable`)return`unavailable`;if(t===`downloadable`)try{return(await e.create({systemPrompt:``,temperature:.1})).destroy?.(),`available`}catch{return`downloadable`}return t||`inconnu`}catch{return`inconnu`}}function _(){let e=[];return s()&&e.push(`IA auto (OpenRouter)`),o()&&e.push(`IA OpenRouter (modèles gratuits)`),m()&&e.push(`IA Chrome locale (Gemini Nano)`),n()&&e.push(`Gemini cloud`),e.length===0?`aucune IA configurée`:e.join(` → `)}async function v(e,t,n={}){if(!e||e.trim().length<20)return null;let r=`Texte OCR brut de la facture :\n"""\n${e.slice(0,6e3)}\n"""`,i=await x(r),a=i&&i.text?d(i.text):null;if(a)return T(t||{},a);if(o()){let e=await y(r,n.imageDataUrl);if(e?.json)return T(t||{},e.json);if(e?.error&&e.kind!==`rate`)throw Error(e.error)}let s=await C(r);if(s?.json)return T(t||{},s.json);let c=await w(r,n.imageDataUrl),l=c?d(c):null;if(l)return T(t||{},l);if(s?.error)throw Error(s.error);return null}async function y(e,t){let n=i();if(!n)return null;let r=[`google/gemma-4-26b-a4b-it:free`,`openai/gpt-oss-20b:free`,`google/gemma-4-31b-it:free`,`nvidia/nemotron-3-nano-30b-a3b:free`,`deepseek/deepseek-chat-v3-0324`,`deepseek/deepseek-v3.2`],a=t?[{type:`text`,text:e},{type:`image_url`,image_url:{url:t}}]:e;for(let e of r)try{let t=new AbortController,i=setTimeout(()=>t.abort(),6e4),o=await fetch(`https://openrouter.ai/api/v1/chat/completions`,{method:`POST`,headers:{"Content-Type":`application/json`,Authorization:`Bearer ${n}`},body:JSON.stringify({model:e,messages:[{role:`system`,content:f},{role:`user`,content:a}],temperature:.1,response_format:{type:`json_object`}}),signal:t.signal});if(clearTimeout(i),!o.ok){let t=await o.text().catch(()=>``);if(o.status===429)return{error:`IA OpenRouter: quota gratuit épuisé (429)`,kind:`rate`};if(o.status===401)return{error:`Clé OpenRouter invalide — vérifiez-la dans les paramètres`,kind:`auth`};if(o.status===404&&e!==r[r.length-1])continue;return{error:`Erreur IA (${o.status}): ${t.slice(0,120)}`}}let s=(await o.json())?.choices?.[0]?.message?.content,c=d(s);return c?{json:c}:{error:`Réponse IA non exploitable`}}catch(t){if(t?.name===`AbortError`)return{error:`Délai dépassé (60s) — réessayez`};if(e!==r[r.length-1])continue;return{error:`Erreur réseau IA: ${t?.message||t}`}}return{error:`IA indisponible`}}var b=`Tu es l'assistant comptable et fiscal tunisien de Smart Comptable.
 Réponds de manière précise et pratique sur : fiscalité tunisienne (TVA, IS, IRPP, retenue à la source, déclarations), comptabilité SCE, plan comptable, échéances, pénalités.
 Cite les références officielles (Code des Impôts Directs, Code de la TVA, Code de l'IRPP et de l'IS) quand c'est utile.
