@@ -46,6 +46,7 @@
         var API = 'https://smart-comptable-teif-api.ezzinesalim21.workers.dev/api';
         var statusEl = document.getElementById('gate-status');
         function status(msg) { if (statusEl) statusEl.textContent = msg; }
+        function resetTurnstile() { if (window.turnstile && document.getElementById('gate')) window.turnstile.reset(); }
         function boot() {
           var gate = document.getElementById('gate');
           if (gate) gate.remove();
@@ -77,16 +78,16 @@
               boot();
             } else {
               status('Vérification échouée. Veuillez réessayer.');
-              if (window.turnstile) window.turnstile.reset();
+              resetTurnstile();
             }
           }).catch(function () {
             status('Impossible de contacter le serveur de vérification.');
-            if (window.turnstile) window.turnstile.reset();
+            resetTurnstile();
           });
         };
         window.__onGateExpired = function () {
           status('');
-          if (window.turnstile) window.turnstile.reset();
+          resetTurnstile();
         };
       })();
     </script>
