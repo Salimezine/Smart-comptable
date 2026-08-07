@@ -43,15 +43,15 @@ if(ordLines.length>0){
 let totH=0,totT=0;for(let o of ordLines){totH+=o.montant_ht;totT+=o.montant_tva}
 let totC=totH+totT,num=piece.numeroPiece||piece.numero||``,date=piece.date||new Date().toISOString().slice(0,10);
 if(ven){
-let id=orderId(company,piece,`V`);
-salesOrders.upsert(company,{id,numero:num,date,type:`facture`,client_id:cliR?.id||``,client_nom:cliR?.nom||tierName(cli)||``,statut:`facture`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
+let id=orderId(company,piece,`V`),ex=salesOrders.getById(company,id);
+if(!ex||ex.source===`journal`){salesOrders.upsert(company,{id,numero:num,date,type:`facture`,client_id:cliR?.id||``,client_nom:cliR?.nom||tierName(cli)||``,statut:`facture`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
 for(let o of ordLines)salesOrderLines.upsert(company,{id:lineId(company,id,o.product_id),order_id:id,product_id:o.product_id,designation:o.designation,quantite:o.quantite,prix_unitaire_ht:o.prix_unitaire_ht,taux_tva:o.taux_tva,remise_pourcent:0,quantite_livree:0,montant_ht:o.montant_ht,montant_tva:o.montant_tva,montant_ttc:o.montant_ttc,source:`journal`});
-out.vente=id}
+out.vente=id}}
 if(ach){
-let id=orderId(company,piece,`A`);
-purchaseOrders.upsert(company,{id,numero:num,date,type:`achat`,supplier_id:supR?.id||``,supplier_nom:supR?.nom||tierName(sup)||``,statut:`confirme`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
+let id=orderId(company,piece,`A`),ex=purchaseOrders.getById(company,id);
+if(!ex||ex.source===`journal`){purchaseOrders.upsert(company,{id,numero:num,date,type:`achat`,supplier_id:supR?.id||``,supplier_nom:supR?.nom||tierName(sup)||``,statut:`confirme`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
 for(let o of ordLines)purchaseOrderLines.upsert(company,{id:lineId(company,id,o.product_id),order_id:id,product_id:o.product_id,designation:o.designation,quantite:o.quantite,prix_unitaire_ht:o.prix_unitaire_ht,taux_tva:o.taux_tva,remise_pourcent:0,quantite_recue:o.quantite,montant_ht:o.montant_ht,montant_tva:o.montant_tva,montant_ttc:o.montant_ttc,source:`journal`});
-out.achat=id}}}
+out.achat=id}}}}
 return out}
 function recomputeSoldes(company){let journal=readJournal(),supMap={},cliMap={};for(let l of journal){let c=String(l.compte||``);if(/^(40|401|421)/.test(c)){let n=tierName(l);if(n){let k=norm(n);supMap[k]=(supMap[k]||0)+((parseFloat(l.credit)||0)-(parseFloat(l.debit)||0))}}if(/^(41|411|412)/.test(c)){let n=tierName(l);if(n){let k=norm(n);cliMap[k]=(cliMap[k]||0)+((parseFloat(l.debit)||0)-(parseFloat(l.credit)||0))}}}for(let t of suppliers.getAll(company)){if(t.source===`journal`){let k=norm(t.nom);suppliers.upsert(company,{...t,solde:mt(supMap[k]||0)})}}for(let t of clients.getAll(company)){if(t.source===`journal`){let k=norm(t.nom);clients.upsert(company,{...t,solde:mt(cliMap[k]||0)})}}}
 function reconcile(){
