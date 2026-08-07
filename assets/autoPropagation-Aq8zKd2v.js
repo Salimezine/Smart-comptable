@@ -14,6 +14,7 @@ function lineId(company,orderId,productId){return`ol_${hh(`${company}|${orderId}
 function prodId(company,name){return`pr_${hh(`${company}|${name}`)}`}
 function ensureTier(company,line,store,kind){let n=tierName(line);if(!n)return null;let t=store.getAll(company).find(e=>norm(e.nom)===norm(n));if(!t)t=store.upsert(company,{nom:n,code:store.generateCode(company,kind),actif:!0,source:`journal`});return t}
 function derivePiece(company,piece){
+let masques={};try{let a=JSON.parse(localStorage.getItem(`sc_products_masques`)||`[]`);for(let x of a)masques[x]=1}catch(z){}
 let lines=pieceLines(piece),out={products:[],movements:[],vente:null,achat:null};
 let sup=lines.find(l=>/^(40|401|421)/.test(String(l.compte||``))),cli=lines.find(l=>/^(41|411|412)/.test(String(l.compte||``)));
 let supR=sup?ensureTier(company,sup,suppliers,`F`):null,cliR=cli?ensureTier(company,cli,clients,`C`):null;
@@ -28,9 +29,11 @@ let p=productForLine(company,l);
 let amount=type===`entree`?(parseFloat(l.debit)||0):(parseFloat(l.credit)||0);
 if(!p&&type===`entree`){
 let name=norm(l.designation||l.libelle||`Article`)||`Article`;
+let pid=prodId(company,name);
+if(!masques[pid]){
 let ref=(l.designation||l.libelle||``).trim().slice(0,30);
-p=products.upsert(company,{id:prodId(company,name),designation:name,reference:ref,prix_achat_ht:amount,prix_vente_ht:amount,taux_tva:tva,stock_actuel:0,stock_mini:0,code:products.generateCode(company,`P`),actif:!0,source:`journal`});
-out.products.push(p.id)}
+p=products.upsert(company,{id:pid,designation:name,reference:ref,prix_achat_ht:amount,prix_vente_ht:amount,taux_tva:tva,stock_actuel:0,stock_mini:0,code:products.generateCode(company,`P`),actif:!0,source:`journal`});
+out.products.push(p.id)}}
 if(p){
 let q=qtyFor(company,l,amount,type);
 if(q>0){
@@ -42,12 +45,12 @@ ordLines.push({designation:mv.designation,product_id:p.id,quantite:q,taux_tva:tv
 if(ordLines.length>0){
 let totH=0,totT=0;for(let o of ordLines){totH+=o.montant_ht;totT+=o.montant_tva}
 let totC=totH+totT,num=piece.numeroPiece||piece.numero||``,date=piece.date||new Date().toISOString().slice(0,10);
-if(ven){
+if(ven&&ordLines.length>0){
 let id=orderId(company,piece,`V`),ex=salesOrders.getById(company,id);
 if(!ex||ex.source===`journal`){salesOrders.upsert(company,{id,numero:num,date,type:`facture`,client_id:cliR?.id||``,client_nom:cliR?.nom||tierName(cli)||``,statut:`facture`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
 for(let o of ordLines)salesOrderLines.upsert(company,{id:lineId(company,id,o.product_id),order_id:id,product_id:o.product_id,designation:o.designation,quantite:o.quantite,prix_unitaire_ht:o.prix_unitaire_ht,taux_tva:o.taux_tva,remise_pourcent:0,quantite_livree:0,montant_ht:o.montant_ht,montant_tva:o.montant_tva,montant_ttc:o.montant_ttc,source:`journal`});
 out.vente=id}}
-if(ach){
+if(ach&&ordLines.length>0){
 let id=orderId(company,piece,`A`),ex=purchaseOrders.getById(company,id);
 if(!ex||ex.source===`journal`){purchaseOrders.upsert(company,{id,numero:num,date,type:`achat`,supplier_id:supR?.id||``,supplier_nom:supR?.nom||tierName(sup)||``,statut:`confirme`,total_ht:totH,total_tva:totT,total_ttc:totC,notes:`Journal`,source:`journal`});
 for(let o of ordLines)purchaseOrderLines.upsert(company,{id:lineId(company,id,o.product_id),order_id:id,product_id:o.product_id,designation:o.designation,quantite:o.quantite,prix_unitaire_ht:o.prix_unitaire_ht,taux_tva:o.taux_tva,remise_pourcent:0,quantite_recue:o.quantite,montant_ht:o.montant_ht,montant_tva:o.montant_tva,montant_ttc:o.montant_ttc,source:`journal`});
