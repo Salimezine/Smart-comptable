@@ -48,6 +48,7 @@
         function status(msg) { if (statusEl) statusEl.textContent = msg; }
         function resetTurnstile() { if (window.turnstile && document.getElementById('gate')) window.turnstile.reset(); }
         function boot() {
+          if (window.turnstile && window.turnstile.remove) window.turnstile.remove();
           var gate = document.getElementById('gate');
           if (gate) gate.remove();
           var urls = [
