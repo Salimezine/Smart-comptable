@@ -16,12 +16,13 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' 'unsafe-eval' 'unsafe-inline' blob:;
+      script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://challenges.cloudflare.com;
       worker-src 'self' blob:;
-      connect-src 'self' blob: data: https://tessdata.projectnaptha.com https://*.workers.dev https://api.emailjs.com https://openrouter.ai;
+      connect-src 'self' blob: data: https://tessdata.projectnaptha.com https://*.workers.dev https://api.emailjs.com https://openrouter.ai https://challenges.cloudflare.com;
       img-src 'self' blob: data:;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
+      frame-src https://challenges.cloudflare.com;
       base-uri 'self';
       form-action 'self'
     " />
@@ -39,8 +40,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Smart-comptable/assets/index-D3mtHE5P.js"></script>
-    <script type="module" crossorigin src="/Smart-comptable/assets/autoPropagation-Aq8zKd2v.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+      (function () {
+        var API = 'https://smart-comptable-teif-api.ezzinesalim21.workers.dev/api';
+        var statusEl = document.getElementById('gate-status');
+        function status(msg) { if (statusEl) statusEl.textContent = msg; }
+        function boot() {
+          var gate = document.getElementById('gate');
+          if (gate) gate.remove();
+          var urls = [
+            '/Smart-comptable/assets/index-D3mtHE5P.js',
+            '/Smart-comptable/assets/autoPropagation-Aq8zKd2v.js'
+          ];
+          urls.forEach(function (u) {
+            var s = document.createElement('script');
+            s.type = 'module';
+            s.crossOrigin = 'anonymous';
+            s.src = u;
+            document.head.appendChild(s);
+          });
+        }
+        window.__onGateToken = function (token) {
+          status('Vérification en cours…');
+          fetch(API + '/turnstile/verify', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token: token })
+          }).then(function (r) {
+            return r.json().catch(function () { return { success: false }; }).then(function (d) {
+              return { ok: r.ok, d: d };
+            });
+          }).then(function (res) {
+            if (res.ok && res.d && res.d.success) {
+              status('');
+              boot();
+            } else {
+              status('Vérification échouée. Veuillez réessayer.');
+              if (window.turnstile) window.turnstile.reset();
+            }
+          }).catch(function () {
+            status('Impossible de contacter le serveur de vérification.');
+            if (window.turnstile) window.turnstile.reset();
+          });
+        };
+        window.__onGateExpired = function () {
+          status('');
+          if (window.turnstile) window.turnstile.reset();
+        };
+      })();
+    </script>
     <link rel="modulepreload" crossorigin href="/Smart-comptable/assets/rolldown-runtime-CMxvf4Kt.js">
     <link rel="modulepreload" crossorigin href="/Smart-comptable/assets/pdf-libs-Cmh9ONZS.js">
     <link rel="modulepreload" crossorigin href="/Smart-comptable/assets/vendor-CxmOB6UG.js">
@@ -58,6 +107,22 @@
   </head>
   <body class="bg-surface-900 text-slate-100 font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
+    <div id="gate">
+      <div class="gate-card">
+        <div class="gate-logo">Smart Comptable</div>
+        <div class="gate-sub">Vérification de sécurité</div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAEJF8JK0ARCof7zZ" data-action="enter" data-callback="__onGateToken" data-expired-callback="__onGateExpired" data-error-callback="__onGateExpired"></div>
+        <div id="gate-status" class="gate-status"></div>
+        <noscript><div class="gate-status">JavaScript requis pour accéder à l'application.</div></noscript>
+      </div>
+    </div>
+    <style>
+      #gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#e2e8f0;font-family:'Inter',system-ui,sans-serif;padding:24px}
+      .gate-card{text-align:center;max-width:360px}
+      .gate-logo{font-size:22px;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+      .gate-sub{font-size:13px;color:#94a3b8;margin-bottom:22px}
+      .gate-status{font-size:12px;color:#94a3b8;margin-top:14px;min-height:16px}
+    </style>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(r => r.forEach(r => r.unregister()));
