@@ -35,6 +35,7 @@ Respecte EXACTEMENT cette structure (champs null si non trouvés, pas d'inventio
 
 Règles de vérification :
 - Les montants sont en dinars tunisiens (DT), arrondis à 3 décimales.
+- FORMAT DES NOMBRES TUNISIENS (CRITIQUE) : l'apostrophe des milliers est un ESPACE, et la virgule est le séparateur décimal. Ex : "41 267,358" = 41.267,358 DT = 41267.358 ; "7 838,080" = 7838.080 ; "49 106,438" = 49106.438 ; "23 030,434" = 23030.434. Si un espace ou un point sépare des groupes de 3 chiffres, c'est un séparateur de milliers (ex : "41.245" = 41245). Convertit TOUJOURS ces montants en nombre décimal DT (ex : 41267.358), JAMAIS 41.267. Applique ce format à tous les montants, y compris les lignes d'articles.
 - Vérifie la cohérence : montant_ttc ≈ montant_ht + montant_tva + timbre_fiscal + fodec.
 - TVA MULTI-TAUX : si la facture affiche plusieurs taux (ex : 19% sur 900 et 7% sur 200), remplis taux_tva_details avec un objet par taux ({taux, base_ht}) et mets dans chaque ligne de "lignes" son propre taux_tva. Vérifie montant_tva ≈ Σ (base_ht × taux) et somme des base_ht ≈ montant_ht. Si un seul taux, laisse taux_tva_details = [].
 - REMISE : si la facture mentionne une remise (Remise, Rémise, Rabais, Escompte, خصم, "remise 10%", "remise X%", "remise : Y DT", une ligne pointillée "Remise ...... Y"), mets remise = montant en DT déduit (ex: 50 ou 100.000) et remise_pourcent = taux en % si visible (ex: 10). Sinon remise = 0.
