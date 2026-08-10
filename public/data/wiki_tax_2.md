@@ -115,11 +115,11 @@ independence of Tunisia
 on 20 March 1956.
 Context
 [
-edit
+edit source
 ]
 Early contacts
 [
-edit
+edit source
 ]
 Tunisia
 had been a province of the
@@ -168,7 +168,7 @@ textiles
 ]
 Colonial competition
 [
-edit
+edit source
 ]
 Following the
 Franco-Prussian War
@@ -216,7 +216,7 @@ bands gave a pretext for the military intervention.
 ]
 Occupation
 [
-edit
+edit source
 ]
 Capture of Sfax
 by French troops (top), and the
@@ -298,7 +298,7 @@ Kairouan
 ]
 Consequences
 [
-edit
+edit source
 ]
 Great Britain and
 Germany
@@ -338,14 +338,14 @@ citation needed
 ]
 See also
 [
-edit
+edit source
 ]
 History of French-era Tunisia
 French conquest of Algeria
 French conquest of Morocco
 Notes
 [
-edit
+edit source
 ]
 1
 2
@@ -404,7 +404,7 @@ Randier 2006
 395.
 Bibliography
 [
-edit
+edit source
 ]
 Aldrich, Robert (15 Sep 1996),
 Greater France: a history of French overseas expansion
@@ -419,7 +419,7 @@ ISBN
 .
 External links
 [
-edit
+edit source
 ]
 Media related to
 French conquest of Tunisia

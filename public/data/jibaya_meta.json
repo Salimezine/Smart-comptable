@@ -1,41 +1,8 @@
 {
   "title": "JIBAYA - JIBAYA",
-  "description": "Bienvenue dans le portail de l'administration fiscale tunisienne Choisissez l'espace qui vous convient Espace particulier Bienvenue dans votre espace particulier ! En quelques clics : trouvez facilement les informations fiscales que vous cherchez, téléchargez les imprimés dont vous avez besoin et effectuez d’autres démarches administratives en ligne. Explorez cet espace et découvrez comment nous pouvons simplifier",
+  "description": "",
   "url": "https://www.jibaya.tn",
-  "crawled_at": "2026-08-03",
-  "markdown_length": 9568,
-  "links_found": 44,
-  "links": {
-    "internal": [
-      "https://jibaya.tn",
-      "https://jibaya.tn/",
-      "https://jibaya.tn/dgi/",
-      "https://jibaya.tn/dgelf/",
-      "https://jibaya.tn/dgcpr/",
-      "https://jibaya.tn/documentation/",
-      "https://jibaya.tn/formulaires-a-telecharger/",
-      "https://jibaya.tn/depliants/",
-      "https://jibaya.tn/videotheque/",
-      "https://jibaya.tn/phototheque/",
-      "https://jibaya.tn/revue-de-presse/",
-      "https://jibaya.tn/publications/",
-      "https://jibaya.tn/agenda/",
-      "https://jibaya.tn/services-en-ligne/",
-      "https://jibaya.tn/blog/la-tele-declaration-fiscale/",
-      "https://jibaya.tn/blog/la-tele-liquidation-fiscale/",
-      "https://jibaya.tn/blog/fatca-tunisie/",
-      "https://jibaya.tn/blog/consultation-des-infractions-routieres-du-radar-fixe/",
-      "https://jibaya.tn/blog/e-situation-fiscale/",
-      "https://jibaya.tn/blog/depot-sur-support-magnetique/"
-    ],
-    "external": [
-      "http://www.cimf.tn/",
-      "http://www.finances.gov.tn/fr",
-      "http://www.registre.finances.gov.tn/",
-      "http://www.gbo.tn/",
-      "https://www.douane.gov.tn/",
-      "https://www.registre-entreprises.tn/rne-public/",
-      "https://www.autoentrepreneur.tn/public/home"
-    ]
-  }
+  "crawled_at": "2026-08-10",
+  "markdown_length": 1856,
+  "method": "requests+bs4"
 }

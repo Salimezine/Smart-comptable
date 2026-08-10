@@ -516,7 +516,10 @@ v
 t
 e
 The
-history of the Jews in Tunisia
+history of the
+Jews
+in
+Tunisia
 dates back nearly two thousand years to the
 Punic era
 . The Jewish community of
@@ -3523,6 +3526,20 @@ See also
 [
 edit
 ]
+History of the Jews in Africa
+Regions:
+[
+edit
+]
+History of the Jews in Central Africa
+History of the Jews in East Africa
+History of the Jews in North Africa
+History of the Jews in Southern Africa
+History of the Jews in West Africa
+Topics:
+[
+edit
+]
 Arab Jews
 Maghrebi Jews
 Mizrahi Jews
@@ -5999,7 +6016,7 @@ Major communal organizations
 American Sephardi Federation
 Sephardi Community Council
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=History_of_the_Jews_in_Tunisia&oldid=1367304424
+https://en.wikipedia.org/w/index.php?title=History_of_the_Jews_in_Tunisia&oldid=1368559839
 "
 Categories
 :

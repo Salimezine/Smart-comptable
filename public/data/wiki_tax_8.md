@@ -2804,7 +2804,7 @@ National Center of Cinematography and the moving image
 It also provides training for newly formed missions and professionalization of staff of the international French cultural network.
 History of French cultural institutes and centers
 [
-edit source
+edit
 ]
 The first French institute, the
 Institut français de Florence
@@ -2849,15 +2849,15 @@ Institut français de Hongrie - Budapest
 Institut Français de Serbie - Belgrade
 Some international French institutes
 [
-edit source
+edit
 ]
 Cultural institutes
 [
-edit source
+edit
 ]
 In Europe
 [
-edit source
+edit
 ]
 Institut français in
 Bucharest
@@ -2934,7 +2934,7 @@ Institut français de Vienne
 Institut français de Zagreb
 Outside Europe
 [
-edit source
+edit
 ]
 Africa
 Instituts français en Algérie
@@ -3154,7 +3154,7 @@ at
 Ho Chi Minh City
 Research institutes IFRE
 [
-edit source
+edit
 ]
 Centre de recherche français à Jérusalem
 (CRFJ) – Israel
@@ -3164,7 +3164,8 @@ Institut de recherche sur le Maghreb contemporain
 (IRMC) – Tunis
 Institut de recherche sur l'Asie du Sud-Est contemporaine
 (IRASEC) – Bangkok
-Institut fra
+Institut français d'archéologie orientale
+(IFAO) – Le 
 
 ---
 
