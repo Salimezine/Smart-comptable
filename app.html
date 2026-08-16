@@ -45,15 +45,9 @@
       (function () {
         var API = 'https://smart-comptable-teif-api.ezzinesalim21.workers.dev/api';
         var statusEl = document.getElementById('gate-status');
-        var booted = false;
-        var verifying = false;
-        var bootTimer = null;
         function status(msg) { if (statusEl) statusEl.textContent = msg; }
         function resetTurnstile() { if (window.turnstile && document.getElementById('gate')) window.turnstile.reset(); }
         function boot() {
-          if (booted) return;
-          booted = true;
-          if (bootTimer) clearTimeout(bootTimer);
           if (window.turnstile && window.turnstile.remove) window.turnstile.remove();
           var gate = document.getElementById('gate');
           if (gate) gate.remove();
@@ -70,7 +64,6 @@
           });
         }
         window.__onGateToken = function (token) {
-          verifying = true;
           status('Vérification en cours…');
           fetch(API + '/turnstile/verify', {
             method: 'POST',
@@ -94,16 +87,9 @@
           });
         };
         window.__onGateExpired = function () {
-          verifying = false;
           status('');
           resetTurnstile();
         };
-        bootTimer = setTimeout(function () {
-          if (!booted && !verifying) {
-            status("Vérification indisponible, chargement de l'application…");
-            boot();
-          }
-        }, 20000);
       })();
     </script>
     <link rel="modulepreload" crossorigin href="/Smart-comptable/assets/rolldown-runtime-CMxvf4Kt.js">
