@@ -1,17 +1,14 @@
 {
   "source": "wiki_tax_10",
-  "crawled_at": "2026-08-10",
+  "crawled_at": "2026-08-17",
   "taux": {
     "rs": {
-      "taux": "50%, 50%, 10%, 71.9%, 73.7%",
+      "taux": "98%, 1%, 99%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
   "echeances": [],
   "lois": [],
-  "informations": [
-    "named the system ‘electronic invoicing of taxes’. However, the key principle is the same as it is defined as ‘electronic invoices that are not only valid for all tax purposes but that are also received in their entirety by the tax authority’.",
-    "Using accounts, the tax is calculated as a percentage of the difference between sales and purchases from taxed accounts."
-  ]
+  "informations": []
 }

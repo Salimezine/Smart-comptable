@@ -945,7 +945,6 @@ sq
 mi)
 250,769
 Funchal
-Funchal
 Canary Islands
 7,493
 km
@@ -3930,7 +3929,9 @@ The Austrian areas of
 Kleinwalsertal
 and
 Jungholz
-formerly enjoyed a special legal status. The two areas have road access only to Germany, and not directly to other parts of Austria. They were in
+formerly enjoyed a special legal status. The two areas have road access only to Germany and none directly to other parts of Austria. They were
+de facto
+in a
 customs
 and
 currency union
@@ -3940,7 +3941,10 @@ and there were no border controls between Kleinwalsertal and Jungholz, respectiv
 Schengen Agreement
 for Austria (1997) and the introduction of the
 euro
-(2002) caused Kleinwalsertal and Jungholz to lose their remaining legal privileges. It is now legally treated in the same manner as the rest of Austria.
+(2002) caused Kleinwalsertal and Jungholz to lose their remaining legal privileges now being legally treated in the same manner as the rest of Austria.
+[
+citation needed
+]
 Saar
 (
 merged with the Federal Republic of Germany
@@ -5429,7 +5433,7 @@ Portals
 European Union
 Europe
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Special_territories_of_members_of_the_European_Economic_Area&oldid=1367659019
+https://en.wikipedia.org/w/index.php?title=Special_territories_of_members_of_the_European_Economic_Area&oldid=1369229820
 "
 Categories
 :
@@ -5452,6 +5456,7 @@ CS1 Danish-language sources (da)
 Pages using gadget WikiMiniAtlas
 Articles with unsourced statements from February 2026
 CS1 maint: multiple names: authors list
+Articles with unsourced statements from August 2026
 Wikipedia articles needing clarification from September 2009
 Pages displaying short descriptions of redirect targets via Module:Annotated link
 Search
@@ -5683,7 +5688,8 @@ density
 2
 (1,545/sq
 mi)
-Time zone
+Time
+zone
 UTC+04:00
 INSEE
 /Postal code
@@ -6228,7 +6234,7 @@ latest accepted revision
 ,
 reviewed
 on
-10 August 2026
+15 August 2026
 .
 Romance language
 "Castilian language" redirects here. For the specific variety of the language, see
@@ -6240,7 +6246,6 @@ Spanish
 Castilian
 español
 castellano
-Poster demanding a 35-hour work week at a health center in Spanish language
 Pronunciation
 [
 espaˈɲol
@@ -6680,7 +6685,11 @@ Glosas Emilianenses
 [
 21
 ]
-Like the ot
+Like the other
+Romance languages
+, the Spanish language evolved from
+Vulgar Latin
+, whi
 
 ---
 

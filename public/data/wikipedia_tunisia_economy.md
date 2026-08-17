@@ -38,7 +38,7 @@ in French
 Click [show] for important translation instructions.
 Consider
 adding a topic
-to this template: there are already 1,251 articles in the
+to this template: there are already 1,257 articles in the
 main category
 , and specifying
 |

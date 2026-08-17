@@ -1,6 +1,6 @@
 {
   "source": "jibaya",
-  "crawled_at": "2026-08-10",
+  "crawled_at": "2026-08-17",
   "taux": {
     "tfp": {
       "taux": "1% salaires + 1% employeur",
@@ -9,21 +9,12 @@
     }
   },
   "echeances": [],
-  "lois": [
-    {
-      "article": "7",
-      "extrait": "JIBAYA - JIBAYA Nouveau ! Avis concernant le dépôt de la déclaration de l'employeur via la plateforme \"TEJ\" En savoir plus Notes communes N° 9,10 et 11 de 2026 En savoir plus Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produ"
-    },
-    {
-      "article": "70",
-      "extrait": "JIBAYA - JIBAYA Nouveau ! Avis concernant le dépôt de la déclaration de l'employeur via la plateforme \"TEJ\" En savoir plus Notes communes N° 9,10 et 11 de 2026 En savoir plus Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produ"
-    }
-  ],
+  "lois": [],
   "informations": [
-    "Avis concernant le dépôt de la déclaration de l'employeur via la plateforme \"TEJ\"",
-    "Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produits fabriqués localement avec leurs similaires importés.",
-    "\"Fiscalité 10/10 \" Saison 8 : Un nouveau départ pour renforcer la culture fiscale chez les jeunes",
-    "Bienvenue dans votre espace particulier ! En quelques clics : trouvez facilement les informations fiscales que vous cherchez, téléchargez les imprimés dont vous avez besoin et effectuez d’autres démarches administratives en ligne. Explorez cet espace et découvrez comment nous pouvons simplifier l’accomplissement de votre devoir fiscal.  A vous de gérer vos obligations fiscales et de bénéficier de notre accompagnement.",
-    "Bienvenue dans votre espace professionnel ! Déclarez vos revenus, gérez vos obligations fiscales, bénéficiez des services de téléliquidation et consultez une documentation fiscale assez riche. Nous sommes là pour vous offrir une assistance personnalisée et vous accompagner vers le succès. Explorez cet espace et découvrez comment nous pouvons vous aider à optimiser vos activités professionnelles."
+    "* [Direction Générale des Etudes et de la Législation Fiscales](https://jibaya.tn/dgelf/)",
+    "* [La télé-déclaration Fiscale](https://jibaya.tn/blog/la-tele-declaration-fiscale/)",
+    "* [La Télé-liquidation Fiscale](https://jibaya.tn/blog/la-tele-liquidation-fiscale/)",
+    "* [Plateforme de transfert et échange des données fiscales : TEJ](https://jibaya.tn/blog/plateforme-de-transfert-et-echange-des-donnees-fiscales-tej/)",
+    "* [Caisses enregistreuses fiscales](https://jibaya.tn/blog/nacef-le-systeme-national-de-caisses-enregistreuses-fiscales-2/)"
   ]
 }

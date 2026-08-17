@@ -503,7 +503,7 @@ Wikipedia pages.
 Most people who see this message have done nothing wrong.
 Some kinds of blocks restrict editing from specific service providers or telecom companies in response to recent abuse or vandalism, and can sometimes affect other users who are unrelated to that abuse. Review the information below for assistance if you do not believe that you have done anything wrong.
 The IP address or range
-52.190.0.0/16
+20.106.0.0/16
 has been
 blocked
 by
@@ -570,7 +570,7 @@ Unblocking
 an IP or IP range with this template
 is highly discouraged
 without at least contacting the blocking administrator.
-This block will expire on 05:35, 30 September 2026. Your current IP address is 52.190.183.80.
+This block will expire on 05:44, 30 September 2026. Your current IP address is 20.106.22.181.
 Even when blocked, you will
 usually
 still be able to edit your
@@ -597,17 +597,17 @@ Most people who see this message have done nothing wrong.
 Some kinds of blocks restrict editing from specific service providers or telecom companies in response to recent abuse or vandalism, and can sometimes affect other users who are unrelated to that abuse. Review the information below for assistance if you do not believe that you have done anything wrong.
 This block affects editing on all Wikimedia wikis.
 The IP address or range
-52.190.0.0/16
+20.106.0.0/16
 has been globally
 blocked
 by
-‪Jon Kolbert‬
+‪AntiCompositeNumber‬
 for the following reason(s):
 Open proxy/Webhost
 : See the
 help page
 if you are affected
-This block will expire on 18:41, 12 November 2028. Your current IP address is 52.190.183.80.
+This block will expire on 15:04, 30 August 2026. Your current IP address is 20.106.22.181.
 Even while globally blocked, you will
 usually
 still be able to edit pages on
@@ -657,7 +657,7 @@ Zaouche was noted for the emphasis he placed on economic issues – agriculture,
 
 From its first session, Zaouche demanded the suppression of the mejba ([[poll tax]]), which accounted for a sixth of the government's income and was used to pay a number of officials. including [[caïd]]s, khalifas and [[Sheikh|cheikh]]s.<ref name="Brown"/> Tunisia's declining agriculture made the mejba ever more unbearable to the people, and had triggered a number of uprisings, including the major [[Mejba Revolt]] of 1864–65. His proposals for replacement sources of public income included reductions in taxes on labour and increases in taxes on (colonial) capital as well as on mining and extractive industries.<ref name="conference">Interventions personnelles des 11 et 19 novembre 1907 à la Conférence consultative.</ref> These proposals were vigorously opposed by the French colonials who dominated the Conference.
 
-In 1910, a loan was proposed to fund the extension of the railway network, which was to be repaid by additional taxes on the Tunisian population. Zaouche used this as an opportunity to renew his attacks on French capital, arguing that the infrastructure paid for by ordinary Tunisians would bring them little benefit.<ref>Rapports sur l'emprunt de la ligne de chemin de fer publiés par la Conférence consultative en 1910</ref> If a loan was to be taken out, he argued, part of
+In 1910, a loan was proposed to fund the extension of the railway network, which was to be repaid by additional taxes on the Tunisian population. Zaouche used this as an opportunity to renew his attacks on French capital, arguing that the infrastructure paid for by ordinary Tunisians would bring them little benefit.<ref>Rapports sur l'emprunt de la ligne de chemin de fer publiés par la Conférence consultative en 1910</ref> If a loan was to be taken out, he argued, p
 
 ---
 
