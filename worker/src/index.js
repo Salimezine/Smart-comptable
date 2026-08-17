@@ -121,14 +121,26 @@ async function dbUpsert(env, table, record, companyId) {
   return { ...record, id, company_id: companyId, updated_at: ts };
 }
 
-async function dbDelete(env, table, id) {
-  await env.DB.prepare(`DELETE FROM ${table} WHERE id = ?`).bind(id).run();
+async function dbDelete(env, table, id, companyId) {
+  if (companyId) {
+    await env.DB.prepare(`DELETE FROM ${table} WHERE id = ? AND company_id = ?`).bind(id, companyId).run();
+  } else {
+    await env.DB.prepare(`DELETE FROM ${table} WHERE id = ?`).bind(id).run();
+  }
 }
 
 async function dbGet(env, table, id) {
   const row = await env.DB.prepare(`SELECT id, company_id, data FROM ${table} WHERE id = ?`).bind(id).first();
   if (!row) return null;
   return { ...JSON.parse(row.data), id: row.id, company_id: row.company_id };
+}
+
+async function isMember(user, companyId, env) {
+  if (!user || !companyId) return false;
+  const row = await env.DB.prepare(
+    'SELECT 1 AS ok FROM company_members WHERE company_id = ? AND user_id = ? AND is_active = 1'
+  ).bind(companyId, user.userId).first();
+  return !!row;
 }
 
 // -----------------------------------------------------------------------
@@ -138,7 +150,8 @@ async function apiRegister(request, env) {
   const body = await request.json();
   const { email, password, nom, prenom } = body;
   if (!email || !password) return json({ message: 'Email et mot de passe requis' }, 400);
-  const existing = await env.DB.prepare('SELECT id FROM profiles WHERE email = ?').bind(email).first();
+  const normalized = String(email).trim().toLowerCase();
+  const existing = await env.DB.prepare('SELECT id FROM profiles WHERE email = ?').bind(normalized).first();
   if (existing) return json({ message: 'Cet email est déjà utilisé' }, 409);
   const id = crypto.randomUUID();
   const keyBytes = new TextEncoder().encode(password + ':' + env.JWT_SECRET);
@@ -148,19 +161,21 @@ async function apiRegister(request, env) {
   await env.DB.prepare(
     `INSERT INTO profiles (id, email, password_hash, nom, prenom, role, plan, actif, created_at, updated_at)
      VALUES (?, ?, ?, ?, ?, 'comptable', 'free', 1, ?, ?)`
-  ).bind(id, email, password_hash, nom || '', prenom || '', ts, ts).run();
-  const token = await signJWT(env, { userId: id, email, role: 'comptable' });
-  return json({ token, user: { id, email, name: nom || email, role: 'comptable' } });
+  ).bind(id, normalized, password_hash, nom || '', prenom || '', ts, ts).run();
+  const token = await signJWT(env, { userId: id, email: normalized, role: 'comptable' });
+  return json({ token, user: { id, email: normalized, name: nom || email, role: 'comptable' } });
 }
 
 async function apiLogin(request, env) {
   const { email, password } = await request.json();
-  const row = await env.DB.prepare('SELECT * FROM profiles WHERE email = ?').bind(email).first();
+  const normalized = String(email || '').trim().toLowerCase();
+  const row = await env.DB.prepare('SELECT * FROM profiles WHERE email = ?').bind(normalized).first();
   if (!row) return json({ message: 'Utilisateur non trouvé' }, 401);
   const keyBytes = new TextEncoder().encode(password + ':' + env.JWT_SECRET);
   const digest = await crypto.subtle.digest('SHA-256', keyBytes);
   const hash = b64url(new Uint8Array(digest));
   if (hash !== row.password_hash) return json({ message: 'Mot de passe incorrect' }, 401);
+  if (row.actif !== 1) return json({ message: 'Compte désactivé' }, 403);
   const token = await signJWT(env, { userId: row.id, email: row.email, role: row.role || 'comptable' });
   return json({ token, user: { id: row.id, email: row.email, name: row.nom || row.email, role: row.role || 'comptable', plan: row.plan || 'free' } });
 }
@@ -232,6 +247,7 @@ async function apiDataList(request, env, ctx) {
   const companyId = url.searchParams.get('company_id');
   const since = url.searchParams.get('since');
   if (!companyId) return json({ message: 'company_id requis' }, 400);
+  if (!(await isMember(user, companyId, env))) return json({ message: 'Non autorisé' }, 403);
   const data = await dbList(env, table, companyId, since || null);
   return json(data);
 }
@@ -245,6 +261,7 @@ async function apiDataUpsert(request, env, ctx) {
   const companyId = body.company_id;
   const records = Array.isArray(body) ? body : (body.records || [body]);
   if (!companyId) return json({ message: 'company_id requis' }, 400);
+  if (!(await isMember(user, companyId, env))) return json({ message: 'Non autorisé' }, 403);
   const saved = [];
   for (const r of records) {
     saved.push(await dbUpsert(env, table, { ...r, company_id: companyId }, companyId));
@@ -258,7 +275,10 @@ async function apiDataDelete(request, env, ctx) {
   const table = ctx.params.table;
   if (!isAllowedTable(table)) return json({ message: 'Table inconnue' }, 404);
   const id = ctx.params.id;
-  await dbDelete(env, table, id);
+  const existing = await dbGet(env, table, id);
+  if (!existing) return json({ message: 'Enregistrement non trouvé' }, 404);
+  if (!(await isMember(user, existing.company_id, env))) return json({ message: 'Non autorisé' }, 403);
+  await dbDelete(env, table, id, existing.company_id);
   return json({ ok: true, id });
 }
 
@@ -271,6 +291,7 @@ async function apiDataPatch(request, env, ctx) {
   const updates = await request.json();
   const existing = await dbGet(env, table, id);
   if (!existing) return json({ message: 'Enregistrement non trouvé' }, 404);
+  if (!(await isMember(user, existing.company_id, env))) return json({ message: 'Non autorisé' }, 403);
   const merged = await dbUpsert(env, table, { ...existing, ...updates, id }, existing.company_id);
   return json(merged);
 }
@@ -285,6 +306,7 @@ async function apiImport(request, env) {
   // body = { company_id, tables: { tableName: [records...] } }
   const companyId = body.company_id;
   if (!companyId) return json({ message: 'company_id requis' }, 400);
+  if (!(await isMember(user, companyId, env))) return json({ message: 'Non autorisé' }, 403);
   const results = {};
   for (const [table, records] of Object.entries(body.tables || {})) {
     if (!isAllowedTable(table) || !Array.isArray(records)) continue;
@@ -382,6 +404,7 @@ async function apiAiChat(request, env) {
 async function apiCompanyInvoices(request, env, ctx) {
   const user = await requireAuth(request, env);
   if (!user) return json({ message: 'Non autorisé' }, 401);
+  if (!(await isMember(user, ctx.params.companyId, env))) return json({ message: 'Non autorisé' }, 403);
   const invoices = await dbList(env, 'invoices', ctx.params.companyId, null);
   return json(invoices.map(inv => ({
     id: inv.id, company_id: inv.company_id, invoice_number: inv.invoiceNumber || inv.invoice_number || '',
@@ -406,6 +429,7 @@ async function apiSubmitInvoice(request, env, ctx) {
   const invoiceId = ctx.params.id;
   const inv = await dbGet(env, 'invoices', invoiceId);
   if (!inv) return json({ message: 'Facture non trouvée' }, 404);
+  if (!(await isMember(user, inv.company_id, env))) return json({ message: 'Non autorisé' }, 403);
   const documentId = `TEIF-${inv.invoiceNumber || invoiceId}-${Date.now().toString(36)}`;
   const teifXml = `<?xml version="1.0"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"><cbc:ID>${inv.invoiceNumber || ''}</cbc:ID><cbc:IssueDate>${inv.issueDate || ''}</cbc:IssueDate></Invoice>`;
   await dbUpsert(env, 'invoices', { ...inv, teif_status: 'PENDING', teif_xml: teifXml, middleware_document_id: documentId }, inv.company_id);
@@ -417,6 +441,7 @@ async function apiSyncTeifStatus(request, env, ctx) {
   if (!user) return json({ message: 'Non autorisé' }, 401);
   const inv = await dbGet(env, 'invoices', ctx.params.id);
   if (!inv) return json({ message: 'Facture non trouvée' }, 404);
+  if (!(await isMember(user, inv.company_id, env))) return json({ message: 'Non autorisé' }, 403);
   return json({ status: inv.teif_status || 'NONE', documentId: inv.middleware_document_id || null });
 }
 
