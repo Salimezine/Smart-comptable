@@ -69,21 +69,16 @@ Menu
 
 
 [ FR ](https://jibaya.tn/ "FR")
-## Communiqué pour les entreprises agissant dans le secteur de la santé
-[ En savoir plus ](https://jibaya.tn/blog/communique/)
 ## Avis concernant le dépôt de la déclaration de l'employeur via la plateforme "TEJ"
 [ En savoir plus ](https://jibaya.tn/blog/avis-la-dgi-informe/)
 ## Notes communes N° 9,10 et 11 de 2026
 [ En savoir plus ](https://jibaya.tn/ar/docs/note-commune-n01-2026/)
 ## Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produits fabriqués localement avec leurs similaires importés.
 [ En savoir plus ](https://jibaya.tn/docs/note-commune-n05-commentaire-des-dispositions-de-larticle-60-de-la-loi-n-2025-17-du-12-decembre-2025-portant-loi-de-finances-pour-lannee-2026-relatives-a-lalign/)
-## Nouveau !
 ## "Fiscalité 10/10 " Saison 8 : Un nouveau départ pour renforcer la culture fiscale chez les jeunes
 [ En savoir plus ](https://jibaya.tn/blog/fiscalite-10-10-saison-8-un-nouveau-depart-pour-renforcer-la-culture-fiscale-chez-les-jeunes/)
 ## Communiqué pour les entreprises agissant dans le secteur de la santé
 [ En savoir plus ](https://jibaya.tn/blog/communique/)
-## Avis concernant le dépôt de la déclaration de l'employeur via la plateforme "TEJ"
-[ En savoir plus ](https://jibaya.tn/blog/avis-la-dgi-informe/)
 ## Bienvenue dans le portail de l'administration fiscale tunisienne
 ## Choisissez l'espace qui vous convient
 ## Espace particulier
@@ -96,6 +91,11 @@ Bienvenue dans votre espace professionnel ! Déclarez vos revenus, gérez vos ob
 ![](https://jibaya.tn/wp-content/uploads/2023/12/7-1.png)
 ![](https://jibaya.tn/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-23-at-11.14.39-AM.jpeg)
 ## Actualités et communiqués 
+[](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/)
+## [Plateforme DEXEL: votre matricule fiscal plus rapide, plus facile et plus sûre](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/ "Plateforme DEXEL: votre matricule fiscal plus rapide, plus facile et plus sûre")
+12/08/2026
+Désormais, les particuliers et les professionnels peuvent effectuer toutes les...
+[→](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/)
 [](https://jibaya.tn/blog/avis-la-dgi-informe/)
 ## [Avis concernant le dépôt de la déclaration de l’employeur via la plateforme “TEJ”](https://jibaya.tn/blog/avis-la-dgi-informe/ "Avis concernant le dépôt de la déclaration de l’employeur via la plateforme “TEJ”")
 01/04/2026
@@ -106,11 +106,6 @@ Dans le cadre de la poursuite de ses efforts de...
 16/02/2026
 La huitième édition de « Fiscalité 10/10 » destinée aux...
 [→](https://jibaya.tn/blog/fiscalite-10-10-saison-8-un-nouveau-depart-pour-renforcer-la-culture-fiscale-chez-les-jeunes/)
-[](https://jibaya.tn/blog/communique/)
-## [Communiqué pour les entreprises agissant dans le secteur de la santé](https://jibaya.tn/blog/communique/ "Communiqué pour les entreprises agissant dans le secteur de la santé")
-12/01/2026
-En vertu de l’article 70 de la loi des finances...
-[→](https://jibaya.tn/blog/communique/)
 Load More
 [VOIR TOUS LES ARTICLES ->](https://jibaya.tn/actualites/)
 [ ](http://www.cimf.tn/)

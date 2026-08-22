@@ -2704,28 +2704,13 @@ where the students focus on entering university level or join the workforce afte
 [
 259
 ]
-Health
-Main article:
-Health in Tunisia
-In 2010, spending on healthcare accounted for 3.37% of the country's GDP. In 2009, there were 12.02 physicians and 33.12 nurses per 10,000 inhabitants.
-[
-261
-]
-The life expectancy at birth was 75.73 years in 2016, or 73.72 years for males and 77.78 years for females.
-[
-262
-]
-Infant mortality in 2016 was 11.7 per 1,000.
-[
-263
-]
 Culture
 Main article:
 Culture of Tunisia
 Municipal Theatre
 The culture of Tunisia is mixed due to its long established history of outside influence from people – such as Phoenicians, Romans, Vandals, Byzantines, Arabs, Siculo-Normans, Turks, Italians, Maltese and the French – who all left their mark on the country.
 [
-264
+261
 ]
 Painting
 The birth of Tunisian contemporary painting is strongly linked to the School of Tunis, established by a group of artists from Tunisia united by the desire to incorporate native themes and rejecting the influence of Orientalist colonial painting. It was founded in 1949 and brings together French and Tunisian Muslims, Christians and Jews. Pierre Boucherle was its main instigator, along with
@@ -2736,13 +2721,13 @@ Abdelaziz Gorgi
 Hedi Turki
 .
 [
-265
+262
 ]
 After independence in 1956, the art movement in Tunisia was propelled by the dynamics of nation building and by artists serving the state. A Ministry of Culture was established, under the leadership of ministers such as
 Habib Boularès
 who oversaw art and education and power.
 [
-265
+262
 ]
 Artists gained international recognition such as
 Hatem El Mekki
@@ -2752,19 +2737,19 @@ and influenced a generation of new young painters. Sadok Gmech draws his inspira
 Nja Mahdaoui
 calligraphy with its mystical dimension.
 [
-265
+262
 ]
 There are currently fifty art galleries housing exhibitions of Tunisian and international artists.
 [
-266
+263
 ]
 These galleries include Gallery Yahia in Tunis and Carthage Essaadi gallery.
 [
-266
+263
 ]
 A new exposition opened in an old monarchal palace in Bardo dubbed the "awakening of a nation". The exposition boasts documents and artifacts from the Tunisian reformist monarchial rule in mid-19th century.
 [
-267
+264
 ]
 Literature
 Main article:
@@ -2773,17 +2758,17 @@ Abdelwahab Meddeb
 , a Tunisian French-language poet and novelist
 Tunisian literature exists in two forms: Arabic and French. Arabic literature dates back to the 7th century with the arrival of Arab civilization in the region. It is more important in both volume and value than French literature, which was introduced during the French protectorate from 1881.
 [
-268
+265
 ]
 Among the literary figures include
 Ali Douagi
 , who has produced more than 150 radio stories, over 500 poems and folk songs and nearly 15 plays,
 [
-269
+266
 ]
 Khraief Bashir, an Arabic novelist who published many notable books in the 1930s and which caused a scandal because the dialogues were written in Tunisian dialect,
 [
-269
+266
 ]
 and others such as Moncef Ghachem,
 Mohamed Salah Ben Mrad
@@ -2797,7 +2782,7 @@ As for literature in French, it is characterized by its critical approach. Contr
 Albert Memmi
 , who predicted that Tunisian literature was sentenced to die young,
 [
-270
+267
 ]
 a high number of Tunisian writers are abroad including
 Abdelwahab Meddeb
@@ -2805,24 +2790,24 @@ Abdelwahab Meddeb
 Mustapha Tlili
 , Hele Beji, or Mellah Fawzi. Themes of wandering, exile, heartbreak, disconnection, memory, and representation are often focuses of Tunisian literature.
 [
-271
+268
 ]
 [
-272
+269
 ]
 The
 national bibliography
 lists 1249 non-school books published in 2002 in Tunisia, with 885 titles in Arabic.
 [
-273
+270
 ]
 In 2006 this figure had increased to 1,500 and 1,700 in 2007.
 [
-274
+271
 ]
 Nearly a third of the books are published for children.
 [
-275
+272
 ]
 Music
 Main article:
@@ -2834,7 +2819,7 @@ was founded, well known thanks to artists from the Jewish community. The foundin
 Radio Tunis
 in 1938 allowed musicians a greater opportunity to disseminate their works, with the station employing a policy of promoting Tunisian musicians exclusively.
 [
-276
+273
 ]
 Notable Tunisian musicians include
 Saber Rebaï
@@ -2866,7 +2851,7 @@ The
 Carthage Film Festival
 is held in October and November of every other year, alternating with the Carthage Theatre Festival. It was created in 1966
 [
-277
+274
 ]
 by the Tunisian Minister of Culture to showcase films from the
 Maghreb
@@ -2907,7 +2892,7 @@ times: the appellation Awussu is a possible deformation of
 Oceanus
 .
 [
-278
+275
 ]
 Omek Tannou
 is an ancient Tunisian
@@ -2951,24 +2936,24 @@ Hannibal TV
 Nessma TV
 .
 [
-279
+276
 ]
 [
-280
+277
 ]
 In 2007, some 245 newspapers and magazines (compared to only 91 in 1987) are 90% owned by private groups and independents.
 [
-281
+278
 ]
 The Tunisian political parties have the right to publish their own newspapers, but those of the opposition parties have very limited editions (like Al Mawkif or Mouwatinoun). Before the recent democratic transition, although freedom of the press was formally guaranteed by the constitution, almost all newspapers have in practice followed the government line report. Critical approach to the activities of the president, government and the Constitutional Democratic Rally Party (then in power) were suppressed. In essence, the media was dominated by state authorities through the
 Agence Tunis Afrique Presse
 . This has changed since, as the media censorship by the authorities have been largely abolished, and self-censorship has significantly decreased.
 [
-282
+279
 ]
 Nonetheless, the current regulatory framework and social and political culture mean that the future of press and media freedom is still unclear.
 [
-282
+279
 ]
 In September 2022 Tunisian president Kais Saied signed
 Decree Law 54
@@ -2978,7 +2963,7 @@ false information and rumours
 dinar
 for anyone found to be spreading such information. This is doubled if the offending statement is made about a state official.
 [
-283
+280
 ]
 Sports
 Main article:
@@ -2995,10 +2980,10 @@ Tunisia national football team
 ACN
 ) as hosts.
 [
-284
+281
 ]
 [
-285
+282
 ]
 They also represented Africa in the
 2005 FIFA Cup of Confederations
@@ -3034,20 +3019,20 @@ Wissem Hmam
 2005 Handball Championship in Tunis
 , Wissem Hmam was ranked as the top scorer of the tournament. The Tunisian national handball team won the African Cup ten times, being the team dominating this competition. The Tunisians won the 2018 African Cup in Gabon by defeating Egypt.
 [
-286
+283
 ]
 Tunisia's national basketball team
 has emerged as a top side in Africa. The team won the
 2011 Afrobasket
 and hosted Africa's top basketball event in 1965, 1987 and 2015. Tunisia was one of the continent's pioneers in basketball as it established one of Africa's first competitive leagues.
 [
-287
+284
 ]
 [
-288
+285
 ]
 [
-289
+286
 ]
 In
 boxing
@@ -3055,7 +3040,7 @@ boxing
 Victor "Young" Perez
 was world champion in the flyweight weight class in 1931 and 1932.
 [
-290
+287
 ]
 In the
 2008 Summer Olympics
@@ -3063,7 +3048,7 @@ In the
 Oussama Mellouli
 won a gold medal in 1500 meter freestyle.
 [
-291
+288
 ]
 In the
 2012 Summer Olympics
@@ -5494,31 +5479,6 @@ www.tunisiaeducation.info
 2021
 .
 ↑
-"Health"
-. SESRIC. Archived from the original on 30 May 2013
-. Retrieved
-26 January
-2013
-.
-↑
-"Life expectancy at birth, total (years) | Data"
-. World Bank
-. Retrieved
-25 August
-2018
-.
-↑
-"Mortality rate, infant (per 1,000 live births) | Data"
-.
-World Bank
-. Archived from
-the original
-on 26 August 2018
-. Retrieved
-25 August
-2018
-.
-↑
 Encyclopédie 360
 , éd. Rombaldi / Paris Match, 1970, vol. 12, p. 161–2
 1
@@ -6747,5 +6707,5 @@ Yale LUX
 /
 34; 9
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1367254263
+https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457
 "

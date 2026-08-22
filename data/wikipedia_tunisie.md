@@ -517,7 +517,8 @@ bourguibisme
 »
 tout en libéralisant l'
 économie
-mais exerce une présidence autoritaire et policière, caractérisée par l'importance de la corruption
+mais exerce une présidence autoritaire et policière, caractérisée par l'importance de la
+corruption
 [
 13
 ]
@@ -3497,7 +3498,9 @@ Trabelsi
 clan quasi-
 mafieux
 »
-, sont directement mis en cause dans des affaires de corruption, de détournement ou de vol, fléaux qui ont particulièrement pris de l'ampleur sous sa présidence
+, sont directement mis en cause dans des affaires de
+corruption
+, de détournement ou de vol, fléaux qui ont particulièrement pris de l'ampleur sous sa présidence
 [
 178
 ]
@@ -4023,7 +4026,8 @@ e
 rang
 sur
 182 pays
-pris en compte dans son classement selon l'indice de perception de la corruption
+pris en compte dans son classement selon l'
+indice de perception de la corruption
 [
 220
 ]
@@ -4426,7 +4430,9 @@ paru en 2014, une grande partie des réglementations adoptées par le gouverneme
 Zine el-Abidine Ben Ali
 visait à favoriser un cercle d'entrepreneurs proche du pouvoir. Après la chute de son régime, une commission d'enquête est mise en place et dresse une liste de
 114 personnes
-, dont Ben Ali, ses apparentés et ses gendres, ayant bénéficié de cette corruption institutionnalisée. Les biens saisis comprennent quelque
+, dont Ben Ali, ses apparentés et ses gendres, ayant bénéficié de cette
+corruption
+institutionnalisée. Les biens saisis comprennent quelque
 550 propriétés
 ,
 48 bateaux
@@ -13549,5 +13555,5 @@ La version du 6 décembre 2006 de cet article a été reconnue comme «
 article de qualité
 », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
 Ce document provient de «
-https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238314047
+https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238622482
 ».

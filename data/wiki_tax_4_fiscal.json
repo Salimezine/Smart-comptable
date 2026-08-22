@@ -1,14 +1,20 @@
 {
   "source": "wiki_tax_4",
-  "crawled_at": "2026-08-03",
+  "crawled_at": "2026-08-17",
   "taux": {
     "rs": {
-      "taux": "98%, 1%, 99%",
+      "taux": "50%, 10%, 10%, 25%, 4%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
   "echeances": [],
   "lois": [],
-  "informations": []
+  "informations": [
+    "Using accounts, the tax is calculated as a percentage of the difference between sales and purchases from taxed accounts.",
+    "The taxes paid by both the manufacturer and the retailer to the government are 10% of the",
+    "Because of the difficulty of exempting intermediate transactions in a sales tax, VAT has been gaining favor over traditional sales taxes.",
+    "However, it is uncommon for sales taxes to be collected at every stage, as it is only levied as a final tax on the consumer, not the reseller.",
+    "The assertion that this \"border adjustment\" would be compatible with the rules of the WTO is controversial; it was alleged that the proposed tax would favour domestically produced goods as they would be taxed less than imports, to a degree varying across sectors. For example, the wage component of the cost of domestically produced goods would not be taxed."
+  ]
 }

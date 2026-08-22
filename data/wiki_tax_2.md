@@ -1367,7 +1367,8 @@ billion
 •
 Per capita
 $12,500
-Time zone
+Time
+zone
 UTC+01:00
 (
 Central European Time

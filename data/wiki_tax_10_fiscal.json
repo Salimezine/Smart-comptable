@@ -1,31 +1,14 @@
 {
   "source": "wiki_tax_10",
-  "crawled_at": "2026-08-03",
+  "crawled_at": "2026-08-17",
   "taux": {
     "rs": {
-      "taux": "3%, 20%, 75%",
+      "taux": "98%, 1%, 99%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
-  "echeances": [
-    {
-      "type": "tva",
-      "defaut": "20 du mois suivant",
-      "source": "Special territories of members of the European Economic Area - Wikipedia Jump to content Search Search Special territories of members of the European Economic Area 33 languages العربية Asturianu Български Català Dansk Deutsch Ελληνικά Esperanto Español Euskara Suomi Français Galego עברית Hrvatski Magyar Italiano 日本語 한국어 Lietuvių Norsk bokmål Polski Português Română Русский Simple English Slovenščina Српски / srpski Svenska Türkçe Українська Tiếng Việt 中文 Edit links From Wikipedia, the free encyc"
-    }
-  ],
-  "lois": [
-    {
-      "article": "1",
-      "extrait": "Special territories of members of the European Economic Area - Wikipedia Jump to content Search Search Special territories of members of the European Economic Area 33 languages العربية Asturianu Български Català Dansk Deutsch Ελληνικά Esperanto Español Euskara Suomi Français Galego עברית Hrvatski Ma"
-    },
-    {
-      "article": "10",
-      "extrait": "Special territories of members of the European Economic Area - Wikipedia Jump to content Search Search Special territories of members of the European Economic Area 33 languages العربية Asturianu Български Català Dansk Deutsch Ελληνικά Esperanto Español Euskara Suomi Français Galego עברית Hrvatski Ma"
-    }
-  ],
-  "informations": [
-    "\"Information for Businesses/01 Customs and fiscal territories/index.jsp The customs and fiscal territories of the European Community\""
-  ]
+  "echeances": [],
+  "lois": [],
+  "informations": []
 }
