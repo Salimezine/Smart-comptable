@@ -69,6 +69,8 @@ Menu
 
 
 [ FR ](https://jibaya.tn/ "FR")
+## Plateforme DEXEL: votre matricule fiscal plus rapide, plus facile et plus sûre
+[ En savoir plus ](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/)
 ## Avis concernant le dépôt de la déclaration de l'employeur via la plateforme "TEJ"
 [ En savoir plus ](https://jibaya.tn/blog/avis-la-dgi-informe/)
 ## Notes communes N° 9,10 et 11 de 2026
@@ -77,8 +79,6 @@ Menu
 [ En savoir plus ](https://jibaya.tn/docs/note-commune-n05-commentaire-des-dispositions-de-larticle-60-de-la-loi-n-2025-17-du-12-decembre-2025-portant-loi-de-finances-pour-lannee-2026-relatives-a-lalign/)
 ## "Fiscalité 10/10 " Saison 8 : Un nouveau départ pour renforcer la culture fiscale chez les jeunes
 [ En savoir plus ](https://jibaya.tn/blog/fiscalite-10-10-saison-8-un-nouveau-depart-pour-renforcer-la-culture-fiscale-chez-les-jeunes/)
-## Communiqué pour les entreprises agissant dans le secteur de la santé
-[ En savoir plus ](https://jibaya.tn/blog/communique/)
 ## Bienvenue dans le portail de l'administration fiscale tunisienne
 ## Choisissez l'espace qui vous convient
 ## Espace particulier

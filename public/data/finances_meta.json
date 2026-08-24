@@ -2,7 +2,7 @@
   "title": "Portail du Ministère des Finances pour la république Tunisienne",
   "description": "",
   "url": "https://www.finances.gov.tn",
-  "crawled_at": "2026-08-17",
+  "crawled_at": "2026-08-24",
   "markdown_length": 5564,
   "method": "requests+bs4"
 }

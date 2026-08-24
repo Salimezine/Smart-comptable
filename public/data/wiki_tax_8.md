@@ -3373,7 +3373,7 @@ World War II
 ]
 History
 [
-edit
+edit source
 ]
 Cardinal Richelieu
 , responsible for the establishment of the
@@ -3466,7 +3466,7 @@ Institut de France
 also meet in the Palais de l'Institut.
 Membership
 [
-edit
+edit source
 ]
 The
 Académie Française
@@ -3600,7 +3600,7 @@ Académie Française
 Arsène Houssaye
 devised the expression "forty-first seat" for deserving individuals who were never elected to the
 Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca
+, either because their candidacies were rejected, because they were never candidates, or because they died before ap
 
 ---
 
@@ -3808,7 +3808,7 @@ World War II
 ]
 History
 [
-edit
+edit source
 ]
 Cardinal Richelieu
 , responsible for the establishment of the
@@ -3901,7 +3901,7 @@ Institut de France
 also meet in the Palais de l'Institut.
 Membership
 [
-edit
+edit source
 ]
 The
 Académie Française
@@ -4035,4 +4035,4 @@ Académie Française
 Arsène Houssaye
 devised the expression "forty-first seat" for deserving individuals who were never elected to the
 Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca
+, either because their candidacies were rejected, because they were never candidates, or because they died before ap

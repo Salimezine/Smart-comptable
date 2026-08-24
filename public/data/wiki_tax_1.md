@@ -1090,11 +1090,11 @@ Perkins 1986, p. 87.
 ↑
 Arfaoui Khémais,
 Les élections politiques en Tunisie de 1881 à 1956
-, éd. L’Harmattan, Paris, 2011, pp.20–21
+, éd. L'Harmattan, Paris, 2011, pp.20–21
 ↑
 Rodd Balek,
 La Tunisie après la guerre
-, éd. Publication du Comité de l’Afrique française, Paris, 1920–1921, p.373
+, éd. Publication du Comité de l'Afrique française, Paris, 1920–1921, p.373
 ↑
 Arfaoui Khémais,
 op. cit
@@ -1805,7 +1805,7 @@ Yale LUX
 /
 36.8333; 10.1500
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1361195446
+https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1370246514
 "
 Categories
 :

@@ -13555,5 +13555,5 @@ La version du 6 décembre 2006 de cet article a été reconnue comme «
 article de qualité
 », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
 Ce document provient de «
-https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238622482
+https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238779197
 ».

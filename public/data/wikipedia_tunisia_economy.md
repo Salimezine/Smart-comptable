@@ -38,7 +38,7 @@ in French
 Click [show] for important translation instructions.
 Consider
 adding a topic
-to this template: there are already 1,257 articles in the
+to this template: there are already 1,283 articles in the
 main category
 , and specifying
 |
@@ -159,10 +159,7 @@ Inflation
 (
 CPI
 )
-6.53% (2022 est.)
-[
-4
-]
+5.2% (2025)
 [
 6
 ]
@@ -462,9 +459,6 @@ GDP per capita soared by more than 380% in the seventies (1970–1980: USD 280�
 [
 26
 ]
-Olive grove in
-Sfax
-, Tunisia
 Growing
 foreign debt
 and the
@@ -859,6 +853,7 @@ External trade and investment
 edit
 ]
 Tunisian exports in 2006
+Tunisia product exports (2019)
 In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for
 balance-of-payments
 support. In January 2003
@@ -997,6 +992,9 @@ Agriculture
 [
 edit
 ]
+Olive grove in
+Sfax
+, Tunisia
 Agriculture - products:
 olives
 ,
@@ -1118,7 +1116,6 @@ World Bank
 3
 4
 5
-6
 "World Economic Outlook Database, October 2025"
 .
 IMF.org
@@ -1146,7 +1143,11 @@ Central Intelligence Agency
 2019
 .
 ↑
-"Tunisia - inflation rate 1986-2022"
+"Tunisia Data"
+. World Bank
+. Retrieved
+21 August
+2026
 .
 ↑
 "Poverty headcount ratio at national poverty lines (% of population) - Tunisia"
@@ -1687,5 +1688,5 @@ Category
 WikiProject
 Commons
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1366017107
+https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1370468393
 "
