@@ -1,9 +1,9 @@
 {
   "source": "wikipedia_tunisia_economy",
-  "crawled_at": "2026-08-24",
+  "crawled_at": "2026-08-31",
   "taux": {
     "rs": {
-      "taux": "2.5%, 70.17%, 47.87%, 380%, 55%",
+      "taux": "8%, 3%, 3%, 2.5%, 2.1%",
       "label": "Retenues à la source",
       "type": "rs"
     }
@@ -11,7 +11,9 @@
   "echeances": [],
   "lois": [],
   "informations": [
-    "and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.",
-    "As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Moneta"
+    "| [Fiscal year](https://en.wikipedia.org/wiki/Fiscal_year \"Fiscal year\")  | [Calendar year](https://en.wikipedia.org/wiki/Calendar_year \"Calendar year\")  |",
+    "[Tunisia](https://en.wikipedia.org/wiki/Tunisia \"Tunisia\") is considered a [developing economy](https://en.wikipedia.org/wiki/Developing_country \"Developing country\"), classified as a Lower-middle Income country by the World Bank in 2023.[[21]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-21) In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but [backsliding](https://en.wikipedia.org/wiki/Democratic_backsliding \"Democratic backslidi",
+    "As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Moneta",
+    "34. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-34 \"Jump up\") Amara, Tarek (23 December 2022). [\"Tunisia seeks to cut fiscal deficit to 5.5% in 2023, led by economic reforms\"](https://www.reuters.com/world/africa/tunisia-expects-economic-growth-18-2023-economy-ministry-2022-12-23/). _Reuters_. Retrieved 28 December 2022."
   ]
 }

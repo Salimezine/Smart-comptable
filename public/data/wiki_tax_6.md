@@ -1,872 +1,1603 @@
-Abdeljelil Zaouche - Wikipedia
+Makhzen (Tunisia) - Wikipedia
 Jump to content
 Search
 Search
-Abdeljelil Zaouche
+Makhzen (Tunisia)
 2 languages
 العربية
 Français
 Edit links
 From Wikipedia, the free encyclopedia
-Tunisian politician (1873–1947)
-This article includes a list of
-general references
-but lacks sufficient corresponding
-inline citations
-.
-Please help
-improve this article
-by
-introducing
-more precise citations.
-(
-May 2018
-)
-(
-Learn how and when to remove this message
-)
-Abdeljelil Zaouche
-عبد الجليل الزّاوش
-Born
-(
-1873-12-15
-)
-15 December 1873
-La Marsa
+Politico-administrative body of the Beylik of Tunis
+In
+Tunisia
 ,
+makhzen
+was the term used to designate the political and administrative establishment of the
 Beylik of Tunis
-Died
-3 January 1947
-(1947-01-03)
-(aged
-73)
-Tunis
-,
-French protectorate of Tunisia
-Occupation
-Politician
-Abdeljelil Zaouche
-(
-Arabic
-:
-عبد الجليل الزّاوش
-; 15 December 1873 – 3 January 1947) was a Tunisian politician, reformer, and campaigner in the
-Tunisian independence
-movement.
-Youth
-[
-edit
-]
-Zaouche was born into a wealthy bourgeois family which had arrived in Tunis from
-Andalucia
-via
-Algeria
-in the eighteenth century. His father,
-Tahar
-, and his uncle,
-Hassan
-, occupied high-ranking positions under
-Ali Bey
-. They were, respectively, General of the royal guard and Brigadier-General in charge of tax-raising. He was born in his family's mansion in La Marsa to an Italian mother.
+before the proclamation of the republic in 1957. The makhzen consisted of families of Turkish origin, or Turkish-speaking
+mamluks
+of European origin, intermarried with indigenous Tunisian families who were great merchants or landowners.
 [
 1
 ]
-His secondary education was at the
-Collège Saint-Charles
-in Tunis and then the
-lycée Louis-le-Grand
-in
-Paris
-where he took his
-baccalauréat
-. In 1894, he matriculated at the law faculty in Paris while also studying at the
-Institut des sciences politiques
-and the
-Collège de France
-. Strongly influenced by
-Jean Jaurès
-, he was also a pupil of
-Émile Durkheim
-,
-Émile Boutroux
-,
-Henri Poincaré
-,
-Antoine Aulard
-and
-Ernest Lavisse
-.
+This network of families dominated the high offices of state, the leadership of the army and the positions of rank and power in the regions outside the capital.
 [
 2
 ]
-He graduated in law and returned to Tunis in 1900, where he involved himself in public affairs.
-In 1901, together with the Ramella brothers, he founded a flour mill, and in 1903, he hosted a visit by
-Muhammad Abduh
+They were also closely connected with the senior
+ulema
 .
 [
 3
 ]
-In 1903, he set up the first scientific press in the Arab world,
-Al Matbâa Al Ilmiya
-.
+These were known as “makhzen families”.
 [
 4
 ]
-Economic reform and political campaigns
-[
-edit
-]
-Letter from Mustafa Kamil Pasha to Zaouche (1906)
-Zaouche was noted for the emphasis he placed on economic issues – agriculture, manufactures and trade. He devoted much of his work to advancing professional qualifications, management standards, creativity and competitiveness. In 1908, Zaouche took part in the first mixed session of the
-Tunisian Consultative Conference
-and chose to be a rapporteur and member of the Finance Commission of the Tunisian section of this body.
-From its first session, Zaouche demanded the suppression of the mejba (
-poll tax
-), which accounted for a sixth of the government's income and was used to pay a number of officials. including
-caïds
-, khalifas and
-cheikhs
-.
 [
 3
 ]
-Tunisia's declining agriculture made the mejba ever more unbearable to the people, and had triggered a number of uprisings, including the major
-Mejba Revolt
-of 1864–65. His proposals for replacement sources of public income included reductions in taxes on labour and increases in taxes on (colonial) capital as well as on mining and extractive industries.
 [
 5
 ]
-These proposals were vigorously opposed by the French colonials who dominated the Conference.
-In 1910, a loan was proposed to fund the extension of the railway network, which was to be repaid by additional taxes on the Tunisian population. Zaouche used this as an opportunity to renew his attacks on French capital, arguing that the infrastructure paid for by ordinary Tunisians would bring them little benefit.
 [
 6
 ]
-If a loan was to be taken out, he argued, part of it should directly benefit Tunisians by being invested in schools and basic training.
+Outside of the capital and the major towns, the term 'makhzen' designated not the leading families close to the regime, but those of the interior tribes which had a trusted relationship with the ruling family.
 [
 7
 ]
-Zaouche also served as a member of the Higher Government Council (Conseil Supérieur du Gouvernement) (1911–1912) as well as on various bodies such as the Commission for the Revival of Indigenous Arts, and the Mixed (i.e. Franco-Tunisian) Commission for the Collège Sadiki. At the same time, Zaouche spoke out about issues in public administration and argued for republican principles. He sought to preserve the integrity and distinctiveness of Tunisian institutions by emphasising the importance of appointing individuals of competence, probity and independence. He was a co-founder of the
-Collège Sadiki
-alumni association and of the Cercle tunisien (an intellectual club interested in current affairs which sought to articulate the defence of Tunisian interests), and President of the
-Khaldounia
-.
-[
-3
-]
-He was also a shareholder and board member of a number of newspapers, including
-La Dépêche tunisienne
-,
-Le Progrès
-,
-La Poste tunisienne
-,
-L'Autonome
-and, in Paris, of
-Le Temps
-.
-[
-4
-]
-Zaouche also edited a number of articles for the socialist daily
-Le Libéral
-. He was one of the founders of the nationalist
-Young Tunisian
-movement, and had links with the
-Young Turks
-, with reforming
-Egyptian nationalists
-such as
-Muhammad Abduh
-and
-Mustafa Kamil Pasha
-, as well as with supporters of
-panarabism
-like
-Pierre Loti
-and
-Charles Géniaux
-. For the five years that
-Le Tunisien
-was published, he campaigned alongside
-Ali Bach Hamba
-— whose first cousin Chérifa he married — and other Young Tunisians, producing a steady stream of articles highly critical of the
-French Protectorate of Tunisia
-.
-Educational reform
-[
-edit
-]
-Béchir Sfar
-, Zaouche et
-Mohamed Lasram
-at the Khaldounia (1908)
-School for Tunisian girls in 1914
-For Abdeljelil Zaouche, education was the key to reviving economic growth and social stability. It was the only means of ensuring that positions in the civil service would be opened to Tunisians (from which they were excluded at the time) and a necessary prelude to building a competent and independent judiciary. Zaouche summarised his position by citing
-Danton
-: "After bread, education is the first need of the people." Tunisians, he argued, needed a basic education in the Arabic language, "to preserve his place in his own country." He also advocated reformed kouttab schools and mixed Franco-Arab institutions.
 [
 8
 ]
-He also argued for access for Tunisians to modern education institutions both in Tunisia and in France.  He published a number of brochures, including "Native Education" (
-L'enseignement des indigènes
-) (1900) and "The Franco-Arab School" in which he argued for education for both sexes and all classes. The education of women was a theme to which he frequently returned in his speaking and writing,
+Together the great families and the loyal tribes made up the country's 'establishment'.
+Origin of the term
+[
+edit
+]
+Originally the term 'makhzen' denoted specifically the escort attached to the ruler or to his deputy while they were outside the capital, particularly on "mahalla" tours gathering taxes. On these tours substantial sums of money were collected and stored (
+Arabic
+:
+مخزن‎
+(makhzen) means "storehouse"). Under
+Hussein Bey
+the term also came to include tribes who provided contingents of men to escort the mahalla column who received privileges in return.
+The composition of this escort evolved over time depending on changes in administration and military organisation, even after the term “makhzen” had taken on a much wider meaning than this original use. In 1864 the makhzen corps accompanying the
+mahalla of General Zarrouk
+consisted of a household force responsible for lighting the lamps in the camp and guarding prisoners and horses as well as the treasure itself, while the Zouaouas and the tribal contingents were assigned to other units.
+[
+2
+]
+Makhzen families
+[
+edit
+]
+Among the families of the Tunisian makhzen were:
+[
+3
+]
+[
+1
+]
 [
 9
 ]
-and which was also taken up by other Young Tunisian spokesmen such as
-Sadok Zmerli
-and
-Khairallah Ben Mustapha
-.
+Agha
+[
+1
+]
+Al-Ghammad
+Bach Hamba
+[
+1
+]
+Bach Mamelouk
+[
+1
+]
+Bayram
+, frequently occupied the post of
+Hanafi
+mufti
+[
+1
+]
+Bel-Hadj
+[
+1
+]
+Ben Ammar
 [
 10
 ]
-He was a member of the Commission on the Modernisation of Teaching at the
-University of Ez-Zitouna
-after the student strike of 1910, as well as on the mixed (Franco-Tunisian) Commission for the Reform of
-Sadiki College
-. He denounced the discrimination faced by Tunisian students who wished to study at the Lycée Carnot de Tunis, which was the only institution giving access to modern university studies.
-Reform of agriculture and manufacture
+Ben Ayed
+, originally from
+Djerba
 [
-edit
+1
 ]
-After the destruction of the First World War and the fall in French agricultural production, the French colonists stepped up the expropriation of land in Tunisia, soon controlling 4m hectares or 20% of the cultivable land. Zaouche, a member of the Commission for Property Law, worked to safeguard Tunisian landholdings and modernise farming methods. He also advocated measures to make credit more easily available to small farmers and to build up a resilient social infrastructure of cooperatives. Provident societies could be established following a 1907 decree, but their formalities and restrictions meant that funding for farmers was both limited and slow. In 1913, he spoke in favour of the creation of the Tunisian Chamber of Agriculture to represent the interests of small farmers and retailers to the government.
-The
-French protectorate of Tunisia
-allowed tariff-free imports for French goods, which often undercut local manufacturers. Foreign industries set up in Tunisia, and local craftsmen and manufacturers could not complete. The general economic decline this created was greatly resented by Zaouche. He argued forcefully for education and training to allow local businesses to reskill, and for access to credit on modest terms to allow them to retool and explore new markets. He also spoke in favour of tariff protection for local markets and export incentives for Tunisian manufacturers to export into French Algeria. He argued for comprehensive legislation to protect workers, providing for equality in access to positions, salaries and taxation; for the creation of professional bodies and the establishment of a self-regulating industrial and commercial sector. He foresaw new cooperatives, new municipal institutions and new, modern technical education as the keys to future success. He was instrumental in getting the small shopkeepers (Djerbiens) to form a cooperative to buy goods in bulk at a discount.
-[
-9
-]
-He also created the Es-Saadia cooperative, with more than 800
-balgha
--makers in Tunis and more than 100 in
-Kairouan
-, purchasing raw materials and supporting training and the well-being of its members.
 [
 11
 ]
-The success of the Es-Saadia cooperative encouraged the
-grocers
-and
-ironmongers
-to for a Commercial Union that he led himself. Parallel social organisations emerged in other sectors, including Le Progrès (woolen cloth) in 1910,  Ikbal (foodstuffs) in 1911, Les Sociétés tunisiennes in 1912, Itidal (glassware) in 1913, l'Aide mutuelle (grains et spices) in 1914 and La Renaissance économique (farming equipment) in 1920.
-The Jellaz Affair
+Bliloua
+Caïd Essebsi
+,
 [
-edit
+10
 ]
-Main article:
-Jellaz Affair
-Abdeljelil Zaouche during the Jellaz trial
-The
-Jellaz Affair
-was a controversy which broke out in 1911 over a proposal by the City Council of Tunis to register the land. Zaouche, a member of the Council, raised the alarm at one of its sessions, warning of a huge public backlash.  The Council withdrew the proposal, and Zaouche went to the cemetery in person to try and prevent violence, but such was the anger and tension that several days of riots across the city, in which several people lost their lives.
-Victor de Carnières
-, leader of the French colonists and owner of the newspaper
-Colon français
-, used the edition of 26 November 1911 to accuse Zaouche of being the main instigator of the disturbances.
 [
 12
 ]
-On 30 November, Zaouche replied in his own newspaper,
-Le Tunisien
-, accusing Carnières of defamation.  After unsuccessful attempts to have these accusations dealt with by other administrative or judicial means, Zaouche brought a case against him. Carnières' defence was that he was relying on rumours he had picked up from Tunisians.  The presiding judge described Zaouche as 'a man of good', and the Attorney General described his actions as worthy only of praise. Nevertheless, the court simply dismissed the case on the grounds that anything damaging Carnières had said about Zaouche was only of secondary importance, and that his primary aim had been to defend French interests. The court also ruled that Zaouche should pay the costs of the action, which tended to support the view among colonists that the accusations were well-founded. Exonerated by the court, Carnières continued his attacks on Zaouche and the Young Tunisians in his newspaper. Zaouche pursued the matter at the Court of Appeal in
-Algiers
-, where Carnières' standing in the settler community in Tunis counted for less. The Algiers court found in Zaouche's favour and awarded him costs with interest against Carnières, taking into account his bad faith and his intention to defame.  However, the court also decided, 'considering the circumstances', not to announce its decision in the Tunis newspapers, which meant that it went largely unnoticed.
+from whom came President
+Beji Caid Essebsi
+Djellouli
+, a family from
+Sfax
+that provided Tunisia with 20 governors, 4 ministers and 2 prime ministers
 [
 13
 ]
 [
+9
+]
+Ghazali
+Kahia
+[
+1
+]
+Khodja
+Lasram
+, originally from
+Yemen
+, settled in
+Kairouan
+[
 3
 ]
-High office
 [
-edit
+1
 ]
-Zaouche in ministerial uniform
-From April 1917, Zaouche served for 17 years as
-caïd
-of
-Sousse
-,
+Marwan
+Mrabet
+Nouira
 [
 14
 ]
+from whom came the prime minister
+Hedi Nouira
+.
+Rassaa
+Sahab Tabaa
 [
-3
+1
 ]
-but did not abandon the cause of the national movement. He published many reports on education and agriculture, and created special support funds for the farmers of the
-Sahel
-and encouraged the planting of olive trees.
-On 18 May 1934, he became Mayor of Tunis, and on 7 October 1935,
-Minister of the Pen
+Siala, originally merchants from Sfax
+[
+11
+]
+Zarrouk
+These makhzen families represented a stabilisation of central power in the sixteenth and seventeenth centuries relative to the political systems of previous eras; they replaced the old tribal elites whose support had previously been essential to maintaining power. During the Ottoman period the Tunisian state proceeded to consolidate itself without seeking any significant foundation either in ideological legitimation or in representing the interests of the community of the governed. This new state formation freed itself from the need for tribal support by maintaining a central army and governing through a makhzen establishment.
+[
+15
+]
+:
+210
+The Tunisian state came to rely upon Mediterranean trade to supplement its inadequate internal resources. Although this benefited the existing makhzens and allowed them to remain in power without any need for active local support, Mediterranean trade encouraged trade monopolies, permitting European powers and their merchants to become directly involved in the politics.
+[
+15
+]
+:
+211
+These families constituted an elite exercising economic oligarchy close to the central power of the Bey, reinforced by political and familial distinctions of rank. Most of the high functionaries of the 18th century Tunisian state owed their wealth to their official positions, rather than inheriting it. One notorious example was Qacim Ben Soultana, self-made man, who took advantage of his official position to amass a colossal fortune by devoting himself to foreign trade and arming privateers as well as by exploiting his urban and agricultural properties. Indeed, dominant positions in the export trade were often held by Turkish or Mamluk officials such as Slimane Belhadj, the second largest exporter of wheat, oil and poppy or Hammouda Lasram, Agha of Zouaoua and Head of Customs was the largest exporter of poppy. However these fortunes, no matter how large they grew, remained insecure and at the mercy of the Bey.  Ben Soultana, for example, was ruined by an arbitrary decision of the Bey in July 1730.
+[
+2
+]
+Decline of the makhzen families under the French protectorate
+[
+edit
+]
+The state which the makhzen families served was unable to mount any effective military resistance to the French invasion in 1881, and the establishment of the French protectorate removed power and influence from court positions - indeed some high offices of state were completely abolished. French rule deprived the makhzen families of their positions and led to a much higher rate of marriage with daughters of wealthy merchants in Tunis. This saw the emergence of families referred to as “beldi”. Typically they lived in fine houses in the
+medina of Tunis
 .
 [
-4
+1
 ]
-From April 1936 until the confrontation with the
-French Resident General Esteva
-in December 1942, he was Minister of Justice. He resigned from this position in protest, together with all the other ministers in the cabinet of
-Hédi Lakhoua
-at the request of the Bey.
+The rise of the nationalist movement in Tunisia in the 20th century posed new challenges to the makhzen families. They were widely regarded as 'compromised' by their proximity to the colonial regime and their lack, in general, of any involvement in resistance against it.
 [
-3
+16
 ]
-Founder of the co-operative movement, reformer, lawyer, editor, journalist, businessman and minister, Zaouche was also one of the most outspoken Young Tunisians when it came to criticising traditional religion. He was somewhat isolated from the Sadikian group among the Young Tunisians because he spent his time in mainstream French institutions. His old opponent, the colonist leader Victor de Carnières hailed him as “Young Tunisian, hothouse plant, two centuries ahead of his co-religionists.”
+An important crisis point was in 1952, when
+Lamine Bey
+refused to accept as Prime Minister
+Slaheddine Baccouche
+, from a makhzen family, whom the French Resident
+fr:Jean de Hauteclocque
+was trying to force on him. Instead, he convened forty representatives of the Tunisian people and listened to their case for reform. Eventually however the Bey gave way to the wishes of the French, and this marked the end of any support for him from the nationalist movement led by the
+Neo-Destour
+party.
+[
+16
+]
+When France granted Tunisia internal autonomy in 1954, a government was formed under
+Tahar Ben Ammar
+(from a makhzen family) and it included several French representatives as well as four Destourians and members of makhzen families such as
+Aziz Djellouli
+and
+fr:Naceur Ben Saïd
+.
+[
+16
+]
+After the return of
+Habib Bourguiba
+to Tunisia in 1955 the balance of power began to shift decisively against the Makhzen families. In September four ministers were dismissed -
+fr:Mustapha Kaak
+, Slaheddine Baccouche, Abdelkader Belkhodja and Hédi Raïs. In November the Neo-Destour Interior
+Mongi Slim
+dismissed the caïds of Souassi,
+Tozeur
+, Neffat, Aradh and the kahias of
+Nabeul
+,
+Thala
+and
+Ksour Essef
+. These changes were early indications of the more drastic changes that were to come after Tunisia gained complete independence in 1956.
+[
+16
+]
+Makhzen families after independence
+[
+edit
+]
+A law of June 21, 1956 reorganized regional administration in Tunisia and abolished in a single move many of the lower-level positions that had traditionally been filled by the makhzen families, and removed their serving postholders.  The posts abolished included those of Sheikh el-Medina (Mayor of Tunis) and 37 regional caïds, 49 kahias and 77 khalifas. In each case the positions abolished were replaced with new posts, filled by Neo-Destour loyalists.
+[
+16
+]
+In 1957 Tunisia became a republic; the Lamine Bey was imprisoned and his family was dispossessed of their properties. A new law of August 17, 1957 provided for the confiscation of “ill-gotten goods” and this was soon deployed against the makhzen families. The property of sixteen notables was confiscated, including former ministers such as
+Mohamed Salah Mzali
+as well as former caïds and members of the Grand Council. A law of November 19, 1957 established a new procedure for dealing with individuals guilty of "l'indignité nationale" ("national unworthiness"). It applied to all those who before the date of
+Tunisian independence
+, members of the Grand Council, ministers, security officials, members of information and press services, or those who participated in the organization of artistic and economic events, policies and other activities that favoured colonization ... or of having published articles, brochures or books or lectured in favour of colonization. This measure inaugurated a full-scale nationalist “cleansing” of all those employed by the old regime.
+[
+16
+]
+The particular targets of these laws and campaigns were the ministers who had served in the cabinets of Salaheddine Baccouche (1952–1954) and Mohamed Salah Mzali (1954) because the new republican government believed that they had actively thwarted the national independence movement. Arraigned before the High Court, these ministers were sentenced to prison, designated nationally unworthy and has their property confiscated. Mohamed Salah Mzali was sentenced to ten years in prison, confiscation of his property and national unworthiness for life. His ministers were sentenced to three years in prison and national unworthiness. The members of the two former cabinets, gathered in the same room at the central prison, joined the son of the deposed bey, the former director of
+Sadiki College
+and a few professors from the
+University of Ez-Zitouna
+.
+[
+16
+]
+Bled makhzen
+[
+edit
+]
+Before the French Protectorate, the term “bled makhzen” (“lands of the makhzen”) meant those parts of the country which were effectively under the direct control of the Bey. This included the capital, the coastal cities and the main towns of the interior. The remainder of the country was known as “
+bled es-siba
+” (“lands of anarchy”).
+[
+17
+]
+The distinction between the two varied over time as the central government exercised its authority in different ways, and individual villages and tribes had differing relationships with it.
+[
+2
+]
+[
+18
+]
+[
+19
+]
+Other terms used were “bled et-Trouk” (land of the Turks) and “bled el-Arab” (“lands of the Arabs”).
+[
+20
+]
+Makhzen tribes
+[
+edit
+]
+The “makhzen tribes” were those loyal groups that originally provided troops to accompany the mahalla and supported the government in other ways, receiving privileges in return.
+[
+7
+]
+[
+21
+]
+[
+22
+]
+The Arab tribes of Tunisia were linked to each other through pledges of mutual assistance known as 'soffs'.  By the nineteenth century there were two soffs, the Soff Hassina (Cheddad) organised around a traditional claim to have supported Hussein Bey during the rebellion of his nephew
+Ali Pasha
+, and the Soff Bachia who had supported Ali (though in fact this division may well have been much older). The Hussainid beys thereafter supported the Soff Hassina against its rivals and raised militia forces from them to maintain order in the southern regions. This provided the government in Tunis with a cheap and flexible means of controlling expanses of territory it would not otherwise have been able to garrison. Prominent among the makhzen tribes were the Drid; the Hammama who often took part in government expeditions to Central Tunisia; the Ouerghamma, the Neffat and the Jlass.
+[
+23
+]
+The French invasion upset the relationships between the makhzen tribes and the centre. From June to October 1881 the tribes buried their differences and opposed the French, but after the fall of
+Sfax
+in July and
+Kairouan
+in October, French columns moved south to threaten their arable lands and pastures. From this time on, the Soff Hassina closely linked with the ruling dynasty retreated before the columns and maintained a hostile attitude towards the invaders. The Soff Bachia fairly quickly came to terms with the French and thereafter took part in raids on Soff Hassina tribes alongside French forces.
+[
+23
+]
+Once the
+French protectorate of Tunisia
+was established, the French authorities found it useful to try to manage the south, and in particular, the border with
+Ottoman Tripolitania
+by using tribal auxiliaries, and they entered into negotiations with various tribes in an attempt to build a new makhzen network.
+[
+24
+]
+:
+4
+Initially the focus of this strategy was the Beni Zid but after this proved unsuccessful negotiations were eventually concluded with the Ouderna, Haouia, and the Touazine in October 1884. Each agreed to maintain an agreed number of armed horsemen in return for tax exemptions. Their main duties were to deter and repel cross-border raids from Tripolitania.
+[
+25
+]
+:
+69
+[
+24
+]
+:
+12
+However following an attack by these forces on Turkish soldiers across the border, the French decided to completely restructure the makhzen auxiliary forces as a single professional body completely separated from any tribal loyalty, and this was effected by 1888. The tribes' tax privileges were maintained for a while, but their special relationship with the protectorate authorities was effectively at an end.
+[
+23
+]
+[
+25
+]
+:
+73
+Under the French Protectorate, the decree of March 23, 1889 divided the southern territories of the Regency into Makhzen lands and lands where military recruitment would take place. The population of the Makhzen lands was exempted from recruiting and instead provided the protectorate government with permanent makhzen forces. Later, at the request of the French Resident's Military Authority, they could also be called on to provide a "non-permanent makhzen" or "non-permanent goum". The Ksourians of Matmata, sedentary and often still Berber-speaking, were attached to the non-Makhzen territory and were called up to serve in the Tunisian army. However, after fulfilling their military obligations, these men could also serve in the permanent Makhzen or engage in the goums. The non-permanent makhzen forces were first organised by a decree of September 23, 1914 and fell into disuse at the end of the
+First World War
+in 1919. All able-bodied men aged 20 to 40 from the Ouerghemma and
+Nefzaoua
+were included.
+[
+26
+]
+See also
+[
+edit
+]
+Makhzen (Algeria)
+Makhzen (Morocco)
 References
 [
 edit
 ]
-↑
-Daniel Goldstein,
-Libération ou annexion. Aux chemins croisés de l’histoire tunisienne, 1914–1922
-, éd. Maison tunisienne de l’édition, Tunis, 1978,
-p.
-18
-↑
-Sadok Zmerli,
-Figures tunisiennes. Les successeurs
-, éd. Maison tunisienne de l'édition, Tunis, 1967,
-p.
-207
 1
 2
 3
 4
 5
 6
-Brown, Stuart (1976).
-The Young Tunisians
-(PhD). McGill University
+7
+8
+9
+10
+11
+12
+Ghorbal, Samy (18 June 2007).
+"Que reste-t-il des grandes familles
+?"
+. Jeune Afrique
 . Retrieved
-23 April
-2018
+24 April
+2021
 .
 1
 2
 3
-"ZAOUCHE Abdeljelil"
+4
+Chater, Khalifa (1994).
+"Introduction à l'étude de l'establishment tunisien
+: l'Etat Makhzen Husseinite et ses mutations"
+(PDF)
 .
-CTHS.fr
-. CTHS-La France savante
-. Retrieved
-13 May
-2018
+Cahiers de la Méditerranée
 .
-↑
-Interventions personnelles des 11 et 19 novembre 1907 à la Conférence consultative.
-↑
-Rapports sur l'emprunt de la ligne de chemin de fer publiés par la Conférence consultative en 1910
-↑
-Rapport sur l'économie et l'apprentissage publié par la Conférence consultative en 1910
-↑
-Abdeljelil Zaouche,
-L'enseignement arabe en Tunisie
-, tome XX, éd. Société d'éditions maritimes et coloniales, Paris, 1932
-1
-2
-Propos d'Abdeljelil Zaouche tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908
-↑
-Propos de Khairallah Ben Mustapha tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908
-↑
-Propos tenus dans la
-Revue du monde musulman
-en 1907
-↑
-Mary Dewhurst Lewis, Divided Rule: Sovereignty and Empire in French Tunisia, 1881–1938, Univ of California Press 2013 p.108
-↑
-'Colons français et Jeunes-Tunisiens (1882–1912)' p.148
-accessed 29/12/2016
-↑
-Sraieb, Noureddine (1971).
-"Note sur les Dirigeants Politiqies et Syndicalistes Tunisiens de 1920 à 1934"
-.
-Revue des Mondes Musulmans et de la Méditerranée
-.
-9
-: 96.
+49
+(1):
+1–
+18.
 doi
 :
-10.3406/remmm.1971.1102
+10.3406/camed.1994.1123
 . Retrieved
-23 April
-2018
+24 April
+2021
 .
-Bibliography
 [
-edit
+permanent dead link
 ]
-Biographies
-[
-edit
-]
-Tawfik Ayadi,
-Mouvement réformiste et mouvements populaires à Tunis
-, éd. Université de Tunis, Tunis, 1986
-Djilani Ben Haj Yahya et Mohamed Marzouki,
-La bataille du Djellaz
-, éd. Société tunisienne de diffusion, Tunis, 1974
-Nazli Hafsia,
-Les premiers modernistes tunisiens. Abdeljelil Zaouche. 1873–1947
-, éd. MIM, Tunis, 2007
+1
+2
+3
+4
+Jerad, Mehdi (18 December 2014).
+Les alliances matrimoniales chez les " familles du Makhzen " dans la régence de Tunis à l'époque moderne
+. Maghreb et sciences sociales. Institut de recherche sur le Maghreb contemporain. pp.
+251–
+261.
 ISBN
-978-9973-736-01-7
-Charles-André Julien
-,
-Colons français et Jeunes Tunisiens
-, éd. Julliard, Paris, 1972
-Sadok Zmerli
-,
-Figures tunisiennes. Les successeurs
-, éd. Maison tunisienne de l'édition, Tunis, 1967,
-p.
-205–231
-Works
-[
-edit
-]
-L'enseignement des indigènes
-, éd. Société anonyme de l'imprimerie rapide, Tunis, 1900
-Les Israélites et la justice tunisienne
-, éd. Société anonyme de l'imprimerie rapide, Tunis, 1906 (with
-Hassen Guellaty
-and
-Ali Bach Hamba
+9782821850514
+. Retrieved
+24 April
+2021
+.
+{{
+cite book
+}}
+:
+|
+website=
+ignored (
+help
 )
-«
-Les aspirations des musulmans de Tunis
-»,
-La Revue indigène
-, Paris, 1907
-La condition des métayers indigènes en Tunisie. Moyens d'améliorer cette condition
-, éd. Congrès de l'Afrique du nord, Paris, 1908
-Les métiers des villes et les salaires en Tunisie
-, éd. Congrès de l'Afrique du nord, Paris, 1908
-L'enseignement arabe en Tunisie
-, tome XX, éd. Société d'éditions maritimes et coloniales, Paris, 1932
-La question des terres et l'agriculture indigène
-, éd. Société anonyme de l'imprimerie rapide, Tunis, 1919
-Fiscalité et impôts de la medjba. Représentativité des indigènes
-, éd. Conférence consultative tunisienne, Tunis, 1909
-Authority control databases
-International
-ISNI
-VIAF
-GND
-WorldCat
-National
-United States
-France
-BnF data
-Netherlands
-Other
-Yale LUX
+↑
+"La composition du gouvernement tunisien est bien accueillie dans la Régence"
+. Le Monde. 10 August 1954
+. Retrieved
+24 April
+2021
+.
+↑
+Karoui, Hind (2015).
+"Une scénologie ambiantale pour saisir le sensible
+: les demeures des dignitaires de la Régence de Tunis (1704-1815)"
+.
+Revue d'histoire
+.
+22
+.
+doi
+:
+10.5169/seals-650786
+. Retrieved
+24 April
+2021
+.
+↑
+Sophie Ferchiou; Institut de recherches et d'études sur le monde arabe et musulman (1992).
+Hasab wa nasab: parenté, alliance et patrimoine en Tunisie
+. Editions du Centre national de la recherche scientifique. pp.
+110, 127.
+ISBN
+978-2-222-04653-0
+. Retrieved
+3 May
+2021
+.
+1
+2
+Binous, Jamila; Baklouti, Naceur; Ben Tanfous, Aziza; Bouteraa, Kadri; Rammah, Mourad; Zouari, Ali (2015-06-08).
+Ifriqiya: Treize Siècles d'Art et d'Architecture en Tunisie
+. Museum With No Frontiers, MWNF (Museum Ohne Grenzen). p.
+28.
+ISBN
+978-3-902782-41-0
+. Retrieved
+3 May
+2021
+.
+↑
+Mohamed-Hédi Cherif (1984).
+Pouvoir et société dans la Tunisie de Hʼusayn bin ʻAli: 1705-1740
+. Université de Tunis. pp.
+229–
+231
+. Retrieved
+3 May
+2021
+.
+1
+2
+Ben Achour, Mohamed el Aziz.
+"Mahmoud Djellouli (1750-1839): Un homme de pouvoir au temps des pachas beys de Tunis"
+.
+leaders.com.tn
+. Leaders.com
+. Retrieved
+24 April
+2021
+.
+1
+2
+Mohamed El Aziz Ben Achour,
+Catégories de la société tunisoise dans la deuxième moitié du XIXe siècle
+, éd. Institut national d'archéologie et d'art, Tunis, 1989
+(in French)
+1
+2
+Boubaker, Sadok (2003).
+"Trade and Personal Wealth Accumulation in Tunis from the Seventeenth to the Early Nineteenth Centuries"
+.
+Revue d'histoire moderne et contemporaine
+.
+50
+(4)
+. Retrieved
+24 April
+2021
+.
+↑
+Kéfi, Ridha (15 March 2005).
+"Béji Caïd Essebsi"
+.
+Jeune Afrique
+(in French)
+. Retrieved
+25 July
+2019
+.
+↑
+Maalej, Abdelkader.
+"A propos du patrimoine Djelloulien"
+.
+leaders.com.tn
+. Leaders.com
+. Retrieved
+24 April
+2021
+.
+↑
+Dalenda Larguèche (1993).
+Watan al Munastir: fiscalité et société, 1676-1856
+. Université de Tunis I, Faculté des lettres de la Manouba. p.
+83.
+ISBN
+978-9973-900-54-8
+. Retrieved
+24 April
+2021
+.
+1
+2
+Hermassi, Elbaki (1973).
+"Political Traditions of the Maghrib"
+.
+Daedalus
+.
+102
+(1):
+207–
+224.
+JSTOR
+20024116
+. Retrieved
+28 July
+2021
+.
+1
+2
+3
+4
+5
+6
+7
+Chater, Khalifa (2004).
+"Changements politiques et exclusion lors de la décolonisation
+: le cas du Makhzen en Tunisie (1954-1959)"
+.
+Cahiers de la Méditerranée
+.
+69
+(69):
+63–
+74.
+doi
+:
+10.4000/cdlm.751
+. Retrieved
+29 July
+2021
+.
+↑
+Elizabeth Aristie Vasile (1995).
+The Greening of Tunis: Ghettoization and the Prosaics of Piety
+. University of California, Berkeley. pp.
+31–
+33
+. Retrieved
+3 May
+2021
+.
+↑
+McQuarrie, Gavin (1995).
+"2.4 Social Relations and the Relationship with the State"
+(PDF)
+.
+European influence and tribal society in Tunisia during the nineteenth century: the origins and impact of the trade in esparto grass 1870-1940
+(PhD). University of Durham
+. Retrieved
+3 May
+2021
+.
+↑
+Ghilès, Francis (8 April 2021).
+"En Tunisie, la périphérie prend une revanche historique"
+.
+Kapitalis
+. Kapitalis.com
+. Retrieved
+3 May
+2021
+.
+↑
+Clement Henry Moore (1965).
+Tunisia Since Independence: The Dynamics of One-party Government
+. University of California Press. p.
+14. GGKEY:JH3FQZCS8F8
+. Retrieved
+3 May
+2021
+.
+↑
+Mohamed-Hédi Cherif (1984).
+Pouvoir et société dans la Tunisie de Hʼusayn bin ʻAli: 1705-1740
+. Université de Tunis. pp.
+229–
+231
+. Retrieved
+3 May
+2021
+.
+↑
+"Armées et métiers d'armes en Tunisie à l'époque moderne (1574-1815)"
+. Republique Tunisienne, Ministere de la Defense Nationale
+. Retrieved
+29 July
+2021
+.
+1
+2
+3
+Fozzard, Adrian (1987).
+"Appendix IX: Divide and rule: relations between the tribes"
+.
+Tribesmen and the colonial encounter: Southern Tunisia during the French protectorate 1882 to 1940
+(PhD). Durham University
+. Retrieved
+4 May
+2021
+.
+1
+2
+Abdelkebir, Abderrahman (2003).
+LES MUTATIONS SOCIO-SPATIALES; CULTURELLES ' ET ASPECTS ANTHROPOLOGIQUES EN MILIEU ARIDE: CAS DE LA JEFFARA TUNISO.LYBIENNE 1837-1956
+(PDF)
+(PhD). Université de Lorraine.
+1
+2
+Letaief, Adel (1987).
+LA RÉACTION DES AUTOCHTONES DANS LE CENTRE ET LE SUD TUNISIEN CONTRE L'OCCUPATION FRANÇAISE ENTRE 1881 & 1888
+: MOUVEMENT DE RÉSISTANCE OU RÉBELLION PRIMITIVE
+(Thesis)
+. Retrieved
+29 July
+2021
+.
+↑
+"Les Formations sahariennes et supplétives des Territoires du Sud Tunisien – 1883-1956"
+.
+La Sabretache
+. 28 April 2014
+. Retrieved
+29 July
+2021
+.
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Abdeljelil_Zaouche&oldid=1346398673
+https://en.wikipedia.org/w/index.php?title=Makhzen_(Tunisia)&oldid=1322678183
 "
 Categories
 :
+18th century in Tunisia
+19th century in Tunisia
+Deep politics
+Economic history of Tunisia
+Feudalism
+Military history of Tunisia
+Oligarchy
 Political history of Tunisia
+Social class in Africa
 Social history of Tunisia
-1873 births
-1947 deaths
+Tunisian Arabic words and phrases
 Hidden categories:
 Articles with short description
 Short description is different from Wikidata
-Articles lacking in-text citations from May 2018
-All articles lacking in-text citations
-Use dmy dates from July 2022
-Articles with hCards
+All articles with dead external links
+Articles with dead external links from August 2025
+Articles with permanently dead external links
+CS1 errors: periodical ignored
 Articles containing Arabic-language text
+Articles with French-language sources (fr)
+CS1 French-language sources (fr)
 Search
 Search
-Abdeljelil Zaouche
+Makhzen (Tunisia)
 2 languages
 Add topic
 
 ---
 
-Editing Abdeljelil Zaouche - Wikipedia
+Tunisia - Wikipedia
 Jump to content
 Search
 Search
-Editing
-Abdeljelil Zaouche
-Add languages
-Page notice
-You are not logged in.
-Once you make an edit, a
-temporary account
-, furnished only with a very basic level of privacy, will be assigned to you automatically and will expire within 90 days. If you
-log in
-or
-create an account
-, your edits will instead be attributed to a username, and you will be able to receive notifications about your edits for as long as you wish, among
-other benefits
-.
-Content that
-violates any copyrights
-will be deleted. Encyclopedic content must be
-verifiable
-through
-citations to reliable sources
-.
-Anti-spam check.
-Do
-not
-fill this in!
-{{Short description|Tunisian politician (1873–1947)}}
-{{More footnotes|date=May 2018}}
-{{Use dmy dates|date=July 2022}}
-{{Infobox person
-| name          = Abdeljelil Zaouche
-| native_name   = {{Nobold|عبد الجليل الزّاوش}}
-| image         = abdeljelil zaouche 2.jpg
-| alt           = 
-| caption       =
-| birth_name    = 
-| birth_date    = {{Birth date|1873|12|15|df=y}}
-| birth_place   = [[La Marsa]], [[Beylik of Tunis]]
-| death_date    = {{Death date and age|1947|1|3|1873|12|15|df=y}}
-| death_place   = [[Tunis]], [[French protectorate of Tunisia]]
-| other_names   = 
-| occupation    = Politician 
-| years_active  = 
-| known_for     = 
-| notable_works = 
-}}
-
-'''Abdeljelil Zaouche''' ({{Langx|ar|عبد الجليل الزّاوش}}; 15 December 1873 – 3 January 1947) was a Tunisian politician, reformer, and campaigner in the [[Tunisian independence]] movement.
-
-== Youth ==
-Zaouche was born into a wealthy bourgeois family which had arrived in Tunis from [[Andalucia]] via [[Algeria]] in the eighteenth century. His father, [[Tahar Zaouche (général)|Tahar]], and his uncle, [[Hassan Zaouche|Hassan]], occupied high-ranking positions under [[Ali III ibn al-Husayn|Ali Bey]]. They were, respectively, General of the royal guard and Brigadier-General in charge of tax-raising. He was born in his family's mansion in La Marsa to an Italian mother.<ref>Daniel Goldstein, ''Libération ou annexion. Aux chemins croisés de l’histoire tunisienne, 1914–1922'', éd. Maison tunisienne de l’édition, Tunis, 1978, {{p.|18}}</ref>
-
-His secondary education was at the [[Lycée Carnot de Tunis|Collège Saint-Charles]] in Tunis and then the [[lycée Louis-le-Grand]] in [[Paris]] where he took his [[baccalauréat]]. In 1894, he matriculated at the law faculty in Paris while also studying at the [[Institut d'études politiques de Paris|Institut des sciences politiques]] and the [[Collège de France]]. Strongly influenced by [[Jean Jaurès]], he was also a pupil of [[Émile Durkheim]], [[Émile Boutroux]], [[Henri Poincaré]], [[Antoine Aulard]] and [[Ernest Lavisse]].<ref>Sadok Zmerli, ''Figures tunisiennes. Les successeurs'', éd. Maison tunisienne de l'édition, Tunis, 1967, {{p.|207}}</ref> He graduated in law and returned to Tunis in 1900, where he involved himself in public affairs.
-
-In 1901, together with the Ramella brothers, he founded a flour mill, and in 1903, he hosted a visit by [[Muhammad Abduh]].<ref name="Brown">{{cite thesis |last=Brown |first=Stuart |date=1976 |title=The Young Tunisians |type=PhD |publisher=McGill University |url=http://digitool.library.mcgill.ca/webclient/StreamGate?folder_id=0&dvs=1524513737737~872 |access-date=23 April 2018}}</ref> In 1903, he set up the first scientific press in the Arab world, ''Al Matbâa Al Ilmiya''.<ref name="CTHS">{{cite web|title=ZAOUCHE Abdeljelil|url=http://cths.fr/an/savant.php?id=104313|website=CTHS.fr|publisher=CTHS-La France savante|access-date=13 May 2018}}</ref>
-
-== Economic reform and political campaigns==
-[[Image:From mustapha kemal to zaouche.jpg|thumb|Letter from Mustafa Kamil Pasha to Zaouche (1906)]]
-Zaouche was noted for the emphasis he placed on economic issues – agriculture, manufactures and trade. He devoted much of his work to advancing professional qualifications, management standards, creativity and competitiveness. In 1908, Zaouche took part in the first mixed session of the [[Tunisian Consultative Conference]] and chose to be a rapporteur and member of the Finance Commission of the Tunisian section of this body.
-
-From its first session, Zaouche demanded the suppression of the mejba ([[poll tax]]), which accounted for a sixth of the government's income and was used to pay a number of officials. including [[caïd]]s, khalifas and [[Sheikh|cheikh]]s.<ref name="Brown"/> Tunisia's declining agriculture made the mejba ever more unbearable to the people, and had triggered a number of uprisings, including the major [[Mejba Revolt]] of 1864–65. His proposals for replacement sources of public income included reductions in taxes on labour and increases in taxes on (colonial) capital as well as on mining and extractive industries.<ref name="conference">Interventions personnelles des 11 et 19 novembre 1907 à la Conférence consultative.</ref> These proposals were vigorously opposed by the French colonials who dominated the Conference.
-
-In 1910, a loan was proposed to fund the extension of the railway network, which was to be repaid by additional taxes on the Tunisian population. Zaouche used this as an opportunity to renew his attacks on French capital, arguing that the infrastructure paid for by ordinary Tunisians would bring them little benefit.<ref>Rapports sur l'emprunt de la ligne de chemin de fer publiés par la Conférence consultative en 1910</ref> If a loan was to be taken out, he argued, part of it should directly benefit Tunisians by being invested in schools and basic training.<ref>Rapport sur l'économie et l'apprentissage publié par la Conférence consultative en 1910</ref>
-
-Zaouche also served as a member of the Higher Government Council (Conseil Supérieur du Gouvernement) (1911–1912) as well as on various bodies such as the Commission for the Revival of Indigenous Arts, and the Mixed (i.e. Franco-Tunisian) Commission for the Collège Sadiki. At the same time, Zaouche spoke out about issues in public administration and argued for republican principles. He sought to preserve the integrity and distinctiveness of Tunisian institutions by emphasising the importance of appointing individuals of competence, probity and independence. He was a co-founder of the [[Collège Sadiki]] alumni association and of the Cercle tunisien (an intellectual club interested in current affairs which sought to articulate the defence of Tunisian interests), and President of the [[Khaldounia]].<ref name="Brown"/>
-
-He was also a shareholder and board member of a number of newspapers, including ''[[La Dépêche tunisienne]]'', ''Le Progrès'', ''La Poste tunisienne'', ''L'Autonome'' and, in Paris, of '' Le Temps''.<ref name="CTHS" /> Zaouche also edited a number of articles for the socialist daily ''Le Libéral''. He was one of the founders of the nationalist [[Young Tunisians|Young Tunisian]] movement, and had links with the [[Young Turks]], with reforming [[Egyptian nationalism|Egyptian nationalist]]s such as [[Muhammad Abduh]] and [[Mustafa Kamil Pasha]], as well as with supporters of [[panarabism]] like [[Pierre Loti]] and [[Charles Géniaux]]. For the five years that ''[[Le Tunisien]]'' was published, he campaigned alongside [[Ali Bach Hamba]] — whose first cousin Chérifa he married — and other Young Tunisians, producing a steady stream of articles highly critical of the [[French Protectorate of Tunisia]].
-
-== Educational reform ==
-
-[[Image:Khaldounia zaouche lasram et sfar.jpg|thumb|[[Béchir Sfar]], Zaouche et [[Mohamed Lasram]] at the Khaldounia (1908)]]
-[[Image:Ecole filles indigenes 1914.jpg|thumb|School for Tunisian girls in 1914]]
-For Abdeljelil Zaouche, education was the key to reviving economic growth and social stability. It was the only means of ensuring that positions in the civil service would be opened to Tunisians (from which they were excluded at the time) and a necessary prelude to building a competent and independent judiciary. Zaouche summarised his position by citing [[Georges Jacques Danton|Danton]]: "After bread, education is the first need of the people." Tunisians, he argued, needed a basic education in the Arabic language, "to preserve his place in his own country." He also advocated reformed kouttab schools and mixed Franco-Arab institutions.<ref name="colo">Abdeljelil Zaouche, ''L'enseignement arabe en Tunisie'', tome XX, éd. Société d'éditions maritimes et coloniales, Paris, 1932</ref> He also argued for access for Tunisians to modern education institutions both in Tunisia and in France.  He published a number of brochures, including "Native Education" (''L'enseignement des indigènes'') (1900) and "The Franco-Arab School" in which he argued for education for both sexes and all classes. The education of women was a theme to which he frequently returned in his speaking and writing,<ref name="congres">Propos d'Abdeljelil Zaouche tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref> and which was also taken up by other Young Tunisian spokesmen such as [[Sadok Zmerli]] and [[Khairallah Ben Mustapha]].<ref>Propos de Khairallah Ben Mustapha tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref>
-
-He was a member of the Commission on the Modernisation of Teaching at the [[University of Ez-Zitouna]] after the student strike of 1910, as well as on the mixed (Franco-Tunisian) Commission for the Reform of [[Sadiki College]]. He denounced the discrimination faced by Tunisian students who wished to study at the Lycée Carnot de Tunis, which was the only institution giving access to modern university studies.
-
-== Reform of agriculture and manufacture ==
-After the destruction of the First World War and the fall in French agricultural production, the French colonists stepped up the expropriation of land in Tunisia, soon controlling 4m hectares or 20% of the cultivable land. Zaouche, a member of the Commission for Property Law, worked to safeguard Tunisian landholdings and modernise farming methods. He also advocat
-
----
-
-Help:Maintenance template removal - Wikipedia
-Jump to content
-Search
-Search
-Help
-:
-Maintenance template removal
-27 languages
+Tunisia
+270 languages
+Аԥсшәа
+Acèh
+Адыгабзэ
 Afrikaans
+Alemannisch
+አማርኛ
+Pangcah
+Aragonés
+Ænglisc
+Obolo
+अंगिका
 العربية
+ܐܪܡܝܐ
+الدارجة
+مصرى
+অসমীয়া
+Asturianu
+Kotava
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Basa Bali
+Boarisch
+Žemaitėška
+Bikol Central
+Беларуская (тарашкевіца)
+Беларуская
+Betawi
+Български
+भोजपुरी
+Bislama
+Banjar
+Bamanankan
 বাংলা
+བོད་ཡིག
+বিষ্ণুপ্রিয়া মণিপুরী
+Brezhoneg
+Bosanski
+Basa Ugi
+Буряад
+Català
+Chavacano de Zamboanga
+閩東語 / Mìng-dĕ̤ng-ngṳ̄
+Нохчийн
+Cebuano
 کوردی
+Corsu
+Qırımtatarca
+Čeština
+Kaszëbsczi
+Чӑвашла
+Cymraeg
 Dansk
+Dagbanli
+Deutsch
+Zazaki
+Dolnoserbski
+डोटेली
+ދިވެހިބަސް
+ཇོང་ཁ
+Eʋegbe
+Ελληνικά
+Emiliàn e rumagnòl
+Esperanto
+Español
 Eesti
+Euskara
+Estremeñu
 فارسی
+Fulfulde
+Suomi
+Võro
+Føroyskt
+Fɔ̀ngbè
 Français
+Arpetan
+Nordfriisk
+Frysk
+Gaeilge
+Gagauz
+Kriyòl gwiyannen
+Gàidhlig
+Galego
+گیلکی
+Avañe'ẽ
+गोंयची कोंकणी / Gõychi Konknni
+Bahasa Hulontalo
+Ghanaian Pidgin
 ગુજરાતી
+Gaelg
+Hausa
+客家語 / Hak-kâ-ngî
+Hawaiʻi
+עברית
+हिन्दी
+Fiji Hindi
+Hrvatski
+Hornjoserbsce
+Kreyòl ayisyen
+Magyar
 Հայերեն
+Արեւմտահայերէն
+Interlingua
+Jaku Iban
 Bahasa Indonesia
+Interlingue
+Igbo
+Ilokano
+Ido
+Íslenska
+Italiano
+日本語
+Patois
+La .lojban.
+Jawa
+ქართული
+Qaraqalpaqsha
+Taqbaylit
+Jju
+Kabɩyɛ
+Tyap
+Kongo
+Kumoring
+Gĩkũyũ
+Қазақша
+ភាសាខ្មែរ
+ಕನ್ನಡ
+Yerwa Kanuri
+한국어
+Къарачай-малкъар
+کٲشُر
+Kurdî
+Kernowek
+Кыргызча
+Latina
+Ladino
+Lëtzebuergesch
+Лезги
+Lingua Franca Nova
+Luganda
+Limburgs
+Ligure
+Ladin
+Lombard
+Lingála
+ລາວ
+Lietuvių
+Latviešu
+Madhurâ
+Мокшень
+Malagasy
+Олык марий
+Māori
+Minangkabau
+Македонски
+മലയാളം
+Монгол
+ꯃꯤꯇꯩ ꯂꯣꯟ
+मराठी
+Кырык мары
+Bahasa Melayu
+Malti
+Mirandés
+မြန်မာဘာသာ
+Эрзянь
+مازِرونی
+Nedersaksies
+Plattdüütsch
 नेपाली
+नेपाल भाषा
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Novial
+Sesotho sa Leboa
+Nupe
+Diné bizaad
+Occitan
+Livvinkarjala
+Oromoo
+ଓଡ଼ିଆ
+Ирон
 ਪੰਜਾਬੀ
+Kapampangan
+Papiamentu
+Picard
+Polski
+Piemontèis
+پنجابی
+Ποντιακά
+پښتو
 Português
+Runa Simi
+Rumantsch
+Română
 Русский
+Русиньскый
+Ikinyarwanda
+संस्कृतम्
+Саха тыла
+Sardu
+Sicilianu
+Scots
 سنڌي
+Davvisámegiella
+Sängö
+Srpskohrvatski / српскохрватски
+Taclḥit
+တႆး
 සිංහල
 Simple English
+Slovenčina
+Slovenščina
+Gagana Samoa
+Anarâškielâ
+ChiShona
+Soomaaliga
 Shqip
 Српски / srpski
+SiSwati
+Sesotho
+Seeltersk
+Sunda
+Svenska
+Kiswahili
+ꠍꠤꠟꠐꠤ
+Ślůnski
+Sakizaya
+தமிழ்
+Tayal
 తెలుగు
+Тоҷикӣ
 ไทย
+ትግርኛ
+Türkmençe
+Tagalog
+Tolışi
+Setswana
+Toki pona
 Türkçe
+Seediq
+Xitsonga
+Татарча / tatarça
+ChiTumbuka
+Twi
+Удмурт
+ئۇيغۇرچە / Uyghurche
 Українська
 اردو
 Oʻzbekcha / ўзбекча
+Vèneto
+Vepsän kel’
+Tiếng Việt
+West-Vlams
+Volapük
+Walon
+Winaray
+Wolof
+吴语
+მარგალური
+ייִדיש
+Yorùbá
+Vahcuengh
+Zeêuws
+ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ
+文言
+閩南語 / Bân-lâm-gí
+粵語
 中文
+IsiZulu
 Edit links
-From Wikipedia, the free encyclopedia
-How-to-guide on addressing and removing maintenance templates
-Further information:
-Wikipedia:Responsible tagging
-and
-Wikipedia:Tag bombing
-This help page is a
-how-to guide
-.
-It explains concepts or processes used by the Wikipedia community. It is not one of
-Wikipedia's policies or guidelines
-and may reflect varying levels of
-consensus
-.
-Shortcuts
-WP:MTR
-WP:MTR
-H:MTR
-H:MTR
-This page in a nutshell:
-If you come across a maintenance template, you can help Wikipedia! If you understand the problem flagged by the template and have reasonably fixed it, you can remove the template manually; it will
-not
-be removed automatically.
-Legitimate Wikipedia editors will never offer to remove maintenance templates in exchange for money. See the
-paid editing scam warning
-.
-Many Wikipedia pages display
-maintenance templates
-that identify problems. You may have arrived at this help page after clicking a link on a maintenance template saying "
-Learn how and when to remove this message
-".
-Maintenance templates are added and removed by volunteers. This help page explains the process for examining and removing such templates.
-Overview
-Maintenance templates
-(or "tags") are not removed automatically. Even if you fix the issue(s) described in a maintenance template, the tag will remain in the article until you or someone else
-manually removes it
-. The mechanics of removal are usually as simple as clicking "Edit" at the top of the page or in the section you fixed, removing the code that produces the display of the template, leaving an
-edit summary
-, and saving the page.
-You should
-not
-remove maintenance templates until the issue flagged by the template is remedied first—that is, until the maintenance tag is no longer valid—unless it truly did not belong in the first place. Maintenance templates are
-not
-to be used to express your personal opinion.
-Wikipedia works because of the efforts of volunteers just like you, making
-bold edits
-to help build this encyclopedia. Fixing problems and then removing maintenance templates when you are done is important in that effort.
-Addressing the flagged problem
-Shortcuts
-WP:TEMPREMOVE
-WP:TEMPREMOVE
-H:TEMPREMOVE
-H:TEMPREMOVE
-We don't know which maintenance tag brought you to this page, and thus what specific problem needs attention. However, every maintenance template contains links to help pages, policies, guidelines, or other relevant pages that provide information on the problem the template was placed to flag. You will also find guidance on some of the more common templates
-below
-.
-Many common templates address problems with article citations and references, or the
-lack
-thereof — this is because reliable sourcing is the lifeblood of Wikipedia articles and at the core of all of Wikipedia's content policies and guidelines, such as
-notability
-,
-verifiability
-,
-neutral point of view
-, and
-no original research
-. But a host of other issues may also be flagged with maintenance templates, including
-tone
-and
-style of writing
-,
-structure and formatting
-,
-lack of links
-to or
-from other articles
-, compliance with Wikipedia's
-manual of style
-, and absence or content of a
-lead section
-.
-Please make sure the issue has been resolved before removing the template. That does require some effort on your part—to understand both the problem and how to solve it.
-An example
-If the issue flagged by the maintenance template is that the article contains no references, a
-citation needed
-template might be used
-{
-{
-Unreferenced
-}
-}
-–  typically placed by the code you would see when wikitext (source) editing:
-{{Unreferenced|date=
-August
-2026
-}}
-.
-It is important to understand that what you see when
-reading
-an article, and what you see when
-editing
-it, are different unless you're in Visual editing mode. Thus, the above code, only seen when doing source editing, results in the
-display
-of the '
-called
-' template below:
-Example:
-This article
-does not
-cite
-any
-sources
-.
-Please help
-improve this article
-by
-adding citations to reliable sources
-. Unsourced material may be challenged and
-removed
-.
-Find sources:
-"Maintenance template removal"
-–
-news
-·
-newspapers
-·
-books
-·
-scholar
-·
-JSTOR
-(
-August 2026
-)
-(
-Learn how and when to remove this message
-)
-This template contains several
-links
-, indicated by the words and phrases in blue. Three of these links are to pages that, when explored, provide context and resources for you to understand
-why
-the template was placed on the page, and
-how
-to address the issue of the article being
-unreferenced
+Coordinates
 :
-"cite", which links to the content guideline
-Wikipedia:Citing sources
-;
-"sources", which links to the policy
-Wikipedia:Verifiability
-; and
-"adding citations to reliable sources", which links to a help page providing a
-how-to guide to the basics of citing references
+34°N
+9°E
+﻿
+/
+﻿
+34°N 9°E
+﻿
+/
+34; 9
+From Wikipedia, the free encyclopedia
+Country in North Africa
+This article is about the country. For the board game, see
+Tunisia (board game)
 .
-Whatever maintenance tag brought you to this help page should likewise contain relevant explanatory links addressed to whatever
-its issue is
-. Read these explanatory and contextual pages to learn about the problem and what it is you need to do to take care of it. Again, some of the more common maintenance templates seen are addressed in the
-specific template guidance section below
-.
-When to remove
-Shortcut
-WP:WTRMT
-WP:WTRMT
-Maintenance templates are not meant to be in articles permanently. Any user without a
-conflict of interest
-may remove a maintenance template in any of the following circumstances:
-When the issue has been adequately addressed;
-Upon determining that the issue has been resolved (perhaps by someone else);
-If it reasonably appears that the template did not belong when placed or was added in error. Consider first discussing the matter with the original placer of the template (unless this user is no longer active on Wikipedia). In any case, if the issue appears contentious, seek
-consensus
-on the
-talk page
-;
-When an article talk  page discussion has not been initiated (for templates requesting it);
-When there is consensus on the talk page (or elsewhere) as to how to address the flagged issue, and you are reasonably implementing those changes. (It is good practice to note the location of the consensus in the
-edit summary
-accompanying your removal, ideally with a
-link
-to the location);
-When it can reasonably be concluded that the template is no longer relevant, such as a
-{
-{
-Current
-}
-}
-template appearing in an article that no longer documents a current event;
-If the maintenance template is of a type that requires support but is not fully supported. For example, neutrality-related templates such as
-{
-{
-COI
-}
-}
-(associated with the
-conflict of interest guideline
-) or
-{
-{
-POV
-}
-}
-(associated with the
-neutral point of view policy
-) strongly recommend that the tagging editor initiate a discussion (generally on the article's talk page) to support the placement of the tag. If the tagging editor failed to do so, or the discussion is dormant, and there is no other support for the template, it can be removed. A
-{
-{
-notability
-}
-}
-tag may be removed and may not be re-added if an article has passed an
-Wikipedia:Articles for deletion
-review.
-You may remove a template when according to your best judgment the lack of edits and/or talk page discussion should be interpreted as the issue not worth fixing (as a form of "
-silent consensus
-"). Please note there is currently no consensus for
-general
-age-related removal of maintenance templates
-–
-that is, removing a template purely or chiefly because it is old is
-not
-considered a sufficient argument. An exception is that removing POV-related templates whose discussions have gone dormant is encouraged, as addressed in the bullet point immediately above.
-Lastly, there are times when a person attempting to address a maintenance template that flags some fundamental matter may find that the issue
-cannot
-actually be addressed. For example, if an article is flagged as lacking citations to
-reliable
+Republic of Tunisia
+الجمهورية التونسية
+(
+Arabic
+)
+al-Jumhūriyyah at-Tūnisiyyah
+Flag
+Coat of arms
+Motto:
+حرية، نظام، عدالة
+"
+Ḥurrīyah, Niẓām, 'Adālah
+"
+"
+Freedom, Order, Justice
+"
+Anthem:
+حماة الحمى
+"
+Humat al-Hima
+"
+(English:
+"Defenders of the Homeland"
+)
+Show globe
+Show map of Tunisia
+Capital
+and largest city
+Tunis
+36°49′N
+10°11′E
+﻿
+/
+﻿
+36.817°N 10.183°E
+﻿
+/
+36.817; 10.183
+Official
+languages
+Arabic
+[
+1
+]
+Local vernacular
+Tunisian Arabic
+[
+2
+]
+Minority Dialects
+:
+Jerba Berber
+(Chelha)
+Matmata Berber
+Judeo-Tunisian Arabic
+(UNESCO CR)
+[
+3
+]
+[
+4
+]
+[
+5
+]
+[
+6
+]
+[
+7
+]
+[
+8
+]
+[
+9
+]
+[
+10
+]
+[
+11
+]
+Foreign languages
+French
+and
+English
+[
+a
+]
+Ethnic
+groups
+(2021)
+[
+14
+]
+98%
+Arabs
+[
+14
+]
+1%
+Berbers
+[
+15
+]
+[
+16
+]
+1%
+Jews
+and others
+[
+17
+]
+Religion
+[
+14
+]
+99%
+Sunni Islam
+1%
+others
+(incl.
+Christians
 ,
-secondary
-sources, written by
-third-parties
-to the topic, and a user seeing the maintenance templates discovers that such sources appear
-not to exist
-, that usually means the article should be
-deleted
-. In such cases, it is not so much that the template does not belong and should be removed, but rather that flagging the page for maintenance will never address the more critical issue that the page itself does not belong on Wikipedia at all.
-When not to remove
-Shortcuts
-WP:WNTRMT
-WP:WNTRMT
-WP:MAINTENANCEDISAGREEMENT
-WP:MAINTENANCEDISAGREEMENT
-You should not remove maintenance templates if any of the following apply:
-You do not understand the issues raised by the template;
-The issue has not yet been resolved;
-There is ongoing activity or discussion related to the template issue;
-The problem that the maintenance template flags is plainly and unambiguously required for a proper article under
-Wikipedia's policies and guidelines
-;
-You have been paid to edit the article or have some other
-conflict of interest
-(some exceptions apply: see individual template documentation).
-Removal
-Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
-Click on "edit" or "edit source" at the top of the page or
-section
-where the template is.
-Delete the template:
-If you are editing using VisualEditor
-: Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
-If you are editing wikitext ("source" editing)
-: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example above:
-{{Name
+Judaism
+,
+Shia Islam
+, and
+Baha’i
+)
+[
+18
+]
+[
+19
+]
+Demonym
+Tunisian
+Government
+Unitary
+presidential republic
+•
+President
+Kais Saied
+•
+Prime Minister
+Sara Zaafarani
+Legislature
+Parliament
+•
+Upper house
+National Council of Regions and Districts
+•
+Lower house
+Assembly of the Representatives of the People
+Establishment
+•
+Aghlabid Emirate
+800
+•
+Hafsid Sultanate
+1229
+•
+Beylik of Tunis
+15 July 1705
+•
+French protectorate
+12 May 1881
+•
+Independence
+and
+Kingdom
+20 March 1956
+•
+Republic declaration
+25 July 1957
+Area
+•
+Total
+163,610
+km
+2
+(63,170
+sq
+mi)
+(
+91st
+)
+•
+Water
+(%)
+5.04
+Population
+•
+2024
+census
+11,972,169
+[
+20
+]
+•
+Density
+79/km
+2
+(204.6/sq
+mi)
+(
+134th
+)
+GDP
+(
+PPP
+)
+2025
+estimate
+•
+Total
+$183.73 billion
+[
+21
+]
+(
+84th
+)
+•
+Per capita
+$14,780
+[
+21
+]
+(
+111th
+)
+GDP
+(nominal)
+2025
+estimate
+•
+Total
+$56.290 billion
+[
+21
+]
+(
+90th
+)
+•
+Per capita
+$4,530
+[
+21
+]
+(
+121st
+)
+Gini
+(2021)
+33.7
+[
+22
+]
+medium inequality
+HDI
+(2023)
+0.746
+[
+23
+]
+high
+(
+105th
+)
+Currency
+Tunisian dinar
+(
+TND
+)
+Time zone
+UTC
++1
+(
+CET
+)
+Date format
+dd/mm/yyyy
+Calling code
++216
+ISO 3166 code
+TN
+Internet TLD
+.tn
+.تونس
+[
+24
+]
+Tunisia
+,
+[
+b
+]
+officially the
+Republic of Tunisia
+,
+[
+c
+]
+[
+26
+]
+is a country in the
+Maghreb
+region of
+North Africa
+. It is bordered by
+Algeria
+to the west and southwest,
+Libya
+to the southeast, and the
+Mediterranean Sea
+to the north and east. Tunisia also shares maritime borders with
+Italy
+through the islands of
+Sicily
+and
+Sardinia
+to the north and
+Malta
+to the east. It features the archaeological sites of
+Carthage
+dating back to the 9th century BC, as well as the Great Mosque of
+Kairouan
+. Known for its ancient architecture,
+souks
+, and blue coasts, it covers
+163,610
+km
+2
+(63,170
+sq
+mi)
+, and has a population of 12.1 million. It contains the eastern end of the
+Atlas Mountains
+and the northern reaches of the
+Sahara
+desert; much of its remaining territory is
+arable land
+. Its
+1,300
+km (810
+mi)
+of coastline includes the African conjunction of the western and eastern parts of the
+Mediterranean Basin
+. Tunisia is home to Africa's northernmost point,
+Cape Angela
+. Located on the northeastern coast,
+Tunis
+is the capital of the country, which is itself named after Tunis. The official language of Tunisia is
+Arabic
+. The vast majority of Tunisia's population is
+Arab
+and
+Muslim
+. Vernacular
+Tunisian Arabic
+is the most spoken language, and
+French
+serves as an administrative and educational language in some contexts, but has no official status.
+Beginning in early antiquity, Tunisia was inhabited by the indigenous
+Berbers
+. The
+Phoenicians
+, a
+Semitic people
+, began to arrive in the 12th century BC,
+settling on the coast and establishing several settlements
+, of which
+Carthage
+emerged as the most powerful by the 7th century BC. The descendants of the Phoenician settlers came to be known as the
+Punic people
+.
+Ancient Carthage
+was a major
+mercantile
+empire and a military rival to the
+Roman Republic
+until 146 BC when it was
+defeated
+by the Romans who occupied Tunisia for most of the next 800 years. The Romans introduced
+Christianity
+and left architectural legacies like the
+Amphitheatre of El Jem
+. In the 7th century AD,
+Arab Muslims conquered
+Tunisia and
+settled with their tribes and families
+, bringing
+Islam
+and
+Arab culture
+. A later large-scale
+Arab migration
+of
+Banu Hilal
+and
+Banu Sulaym
+tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely
+Arabised
+.
+[
+27
+]
+Then, in 1546, the
+Ottoman Empire
+established control, holding sway until 1881, when the
+French conquered Tunisia
+. In 1956,
+Tunisia gained independence
+as the Tunisian Republic. Today,
+Tunisia's culture
+and identity are rooted in this centuries-long intersection of different cultures and ethnicities.
+In 2011, the
+Tunisian Revolution
+, which was triggered by dissatisfaction with the lack of freedom and
+democracy
+under the 24-year rule of President
+Zine El Abidine Ben Ali
+, overthrew his regime and catalyzed the broader
+Arab Spring
+movement across the region. Free multiparty parliamentary
+elections
+were held shortly thereafter; the country again voted for parliament on 26 October 2014,
+[
+28
+]
+and for president on 23 November 2014.
+[
+29
+]
+From 2014 to 2020, it was considered the only democratic state in the
+Arab world
+, according to
+The Economist Democracy Index
+.
+[
+30
+]
+[
+d
+]
+After
+democratic backsliding
+under President
+Kais Saied
+, Tunisia was rated a
+hybrid regime
+in 2022
+[
+31
+]
+and as of 2025 it no longer has free and fair elections according to
+Freedom House
+.
+[
+32
+]
+It is one of the few countries in Africa ranking high on the
+Human Development Index
+, with one of the
+highest per capita incomes
+on the continent, ranking 129th in
+GDP per capita
+income.
+Tunisia is well integrated into the international community. It is a member of the
+United Nations
+,
+Organisation internationale de la Francophonie
+, the
+Arab League
+, the
+Organisation of Islamic Cooperation
+, the
+African Union
+, the
+Common Market for Eastern and Southern Africa
+, the
+Non-Aligned Movement
+, the
+International Criminal Court
+, the
+Group of 77
+, among others. It maintains close economic and political relations with some European countries, particularly with
+France
+and
+Italy
+,
+[
+33
+]
+[
+34
+]
+due to their geographical proximity. Tunisia also has an
+association agreement
+with the
+European Union
+and has attained the status of a
+major non-NATO ally
+of the
+United States
+.
+Etymology
+See also:
+Tunis §
+Etymology
+The word
+Tunisia
+is derived from
+Tunis
+, a central urban hub and the capital of modern-day Tunisia. The present form of the name, with its
+Latinate
+suffix
+-ia
+, evolved from
+French
+Tunisie
+,
+[
+35
+]
+[
+36
+]
+in turn generally associated with the
+Berber
+root
+ⵜⵏⵙ
+, transcribed
+tns
+, which means "to lay down" or "encampment".
+[
+37
+]
+It is sometimes also associated with the
+Carthage goddess
+Tanith
+(or Tunit),
+[
+35
+]
+[
+38
+]
+and the ancient city of Tynes.
+[
+39
+]
+[
+40
+]
+The French derivative
+Tunisie
+was adopted in some European languages with slight modifications, introducing a distinctive name to designate the country. Other languages have left the name untouched, such as the
+Russian
+Туни́с
+(
+Tunís
+) and
+Spanish
+Túnez
+. In this case, the same name is used for both country and city, as with the
+Arabic
+تونس
+, and only by context can one tell the difference.
+[
+35
+]
+In English, Tunisia before independence was also often called simply "Tuni
 
 ---
 
@@ -1389,3 +2120,423 @@ edit
 ]
 The Tunisian parliament was called the
 Supreme 
+
+---
+
+Medina of Tunis - Wikipedia
+Jump to content
+Search
+Search
+Medina of Tunis
+21 languages
+العربية
+Català
+Deutsch
+Español
+Euskara
+فارسی
+Français
+Galego
+Hausa
+Italiano
+မြန်မာဘာသာ
+Nederlands
+Norsk bokmål
+Português
+Slovenščina
+Svenska
+Türkçe
+اردو
+Tiếng Việt
+中文
+IsiZulu
+Edit links
+Coordinates
+:
+36°49′N
+10°10′E
+﻿
+/
+﻿
+36.817°N 10.167°E
+﻿
+/
+36.817; 10.167
+From Wikipedia, the free encyclopedia
+Old city of Tunis, Tunisia
+This article
+needs
+more citations
+.
+Please help
+improve this article
+by
+adding citations to reliable sources
+. Unsourced material may be challenged and
+removed
+.
+Find sources:
+"Medina of Tunis"
+–
+news
+·
+newspapers
+·
+books
+·
+scholar
+·
+JSTOR
+(
+May 2017
+)
+(
+Learn how and when to remove this message
+)
+Medina of Tunis
+UNESCO World Heritage Site
+Roofs of the Medina
+Location within Tunisia
+Location
+Tunis
+,
+Tunisia
+Criteria
+Cultural:
+(ii), (iii), (v)
+Reference
+36
+Inscription
+1979 (3rd
+Session
+)
+Extensions
+2010
+Area
+296.41
+ha (732.4 acres)
+Buffer
+zone
+190.19
+ha (470.0 acres)
+Coordinates
+36°49′N
+10°10′E
+﻿
+/
+﻿
+36.817°N 10.167°E
+﻿
+/
+36.817; 10.167
+The
+Medina of Tunis
+is the
+medina quarter
+of
+Tunis
+, the capital of
+Tunisia
+. It has been a
+UNESCO World Heritage Site
+since 1979.
+[
+1
+]
+The Medina contains some 700 monuments, including
+palaces
+,
+mosques
+,
+mausoleums
+,
+madrasas
+and fountains dating from various periods.
+[
+2
+]
+History
+[
+edit
+]
+Founded in 698 around the original core of the
+Zitouna Mosque
+, the Medina of Tunis developed throughout the Middle Ages.
+[
+3
+]
+The main axis was between the mosque and the centre of government to the west in the
+kasbah
+. To the east this same main road extended to the
+Bab el Bhar
+. Expansions to the north and south divided the main Medina into two suburbs north (
+Bab Souika
+) and south (
+Bab El Jazira
+).
+[
+4
+]
+Before the
+Almohad Caliphate
+, other cities such as
+Mahdia
+and
+Kairouan
+had served as capitals.  Under Almohad rule, Tunis became the capital of
+Ifriqiya
+,
+[
+5
+]
+and under the
+Hafsid period
+it developed into a religious, intellectual and economic center.
+[
+6
+]
+It was during the Hafsid period that the Medina as we now know it took on its essential form.
+[
+7
+]
+It gradually acquired a number of buildings and monuments combining the styles of
+Ifriqiya
+,
+Andalusian
+and Oriental influences, but also borrowing some of the columns and capitals of
+Roman
+and
+Byzantine
+monuments.
+Social and urban structure
+[
+edit
+]
+Street network of the Tunis medina
+With an area of
+270 hectares (670 acres)
+[
+8
+]
+(plus
+29 hectares (72 acres)
+for the district of the kasbah) and nearly 110,000 inhabitants, the Medina has one-tenth of the population of Tunis and a sixth of the urbanized area of the agglomeration.
+The complex organization of the urban fabric fueled an entire colonial literature of the dangerous Medina, anarchic and chaotic, and the territory of ambush. However, since the 1930s, with the arrival of the first ethnologists, studies have revealed that the articulation of the Medina areas is not random, and houses are built according to clear sociocultural norms, codified according to complex types of
+human relationships
+. Many publications have detailed the development of the Medina model and system of prioritization of public and private spaces, residential and commercial, sacred and profane.
+The urban layout of the Medina of Tunis has the distinction of not obeying geometrical layouts or formal compositions such as
+gridlines
+. Nevertheless the north-south and east-west axes are comparable to a Roman
+cardo
+and
+decumanus
+(Sidi Ben Arous, Jemaa Zitouna and Pasha Streets) that intersect at the court of
+Zitouna mosque
+, house of prayer and studies. The thoroughfares include the main streets; secondary streets and finally, small cul-de-sacs.  Sometimes entire private spots are reserved for women. The built environment is generally characterized by the juxtaposition of large plots (600 m
+2
+) and joint ownership.
+The concept of public space is ambiguous in the Medina where the streets are considered as the extension of houses and subject to social tags.  The notion of individual ownership is low and displays in the souks often spill out onto the highway. This idea is reinforced by the area of a shop (about 3 m
+2
+) and bedroom (10 m
+2
+).
+Evening at Ramdhane Bey Square
+Ramdhane Bey Square
+El Halfaouine street
+Bir lahjar Street
+In the case of domestic architecture, the more a building is set back from the shops, the more it is valued. The concept of withdrawal and privacy is paramount. The late introduction of a sewer system means that much waste water still flows through the streets of the Medina. The largest houses and noble places are generally located in the district with the highest elevation, the
+Kasbah
+quarter. The roof terraces of the Medina are also an important place for social life, as illustrated by the film
+Halfaouine
+by
+Férid Boughedir
+.
+Nowadays, every district retains its culture and rivalries can be strong. Thus, the northern suburb supports the football club
+Espérance Sportive de Tunis
+while the southern side is the district of the rival
+Club Africain
+. The Medina has also witnessed a social segmentation: the districts of
+Tourbet el Bey
+and the
+kasbah
+are wealthier, with a population of judges and politicians, Pasha street is the military and the bourgeoisie (merchants and notables), and smaller communities such as
+Hafisa
+where the Jewish population have traditionally lived.
+[
+clarification needed
+]
+Architecture
+[
+edit
+]
+See also:
+Architecture of Tunisia
+Facade of the mausoleum of Hammouda Pasha, part of his
+mosque
+Door in the medina
+The
+Muradid dynasty
+were great builders in the Medina.
+Hammouda Pasha
+(1631–1666) was responsible for the construction of many
+souks
+in the Medina, as well as many palaces, including the
+Dar Hammouda Pacha
+and the predecessor of the modern
+Dar El Bey
+. In 1655, he had Ottoman architects build the
+Hammouda Pacha Mosque
+in the Turkish style, with an elegant octagonal minaret, below which he constructed his family mausoleum.
+[
+9
+]
+His son
+Murad II Bey
+(1666–1675) built the
+Mouradia Madrasah
+, dedicated to the
+Maliki
+school of Islamic law.
+[
+10
+]
+Murad's son Mohamed Bey El Mouradi (1686–1696) built several monuments in Tunis including the (
+Sidi Mahrez Mosque
+), modelled on the mosques of
+Istanbul
+with a great central dome.
+The
+Husainid
+ruler
+Ali II ibn Hussein
+(1759–1782) had the
+Tourbet el Bey
+constructed in the south of the Medina as a mausoleum for his family,
+[
+11
+]
+[
+12
+]
+It is the largest funerary monument in Tunis.
+[
+13
+]
+In the time of
+Muhammad III as-Sadiq
+(1859–1882) the walls of the Medina were in such bad repair that in some places they threatened to collapse. In 1865 he began demolishing them, along with a number of the Medina's historic gates:
+Bab Cartagena
+,
+Bab Souika
+,
+Bab Bnet
+and
+Bab El Jazira
+.
+Domestic architecture
+[
+edit
+]
+Dar Lasram
+Dar Al Jaziri
+Dar Bach Hamba
+Dar Ben Ayed
+Close-up on a traditional door of the Medina
+Vestibule of
+Dar Othman
+Landmarks
+[
+edit
+]
+City gates
+[
+edit
+]
+v
+t
+e
+City gates of Tunis
+Bab Alioua
+Bab Bnet
+Bab Cartagena
+Bab El Allouj
+Bab el Bhar
+Bab El Fellah
+Bab El Gorjani
+Bab El Jazira
+Bab el Khadra
+Bab Jedid
+Bab Laassal
+Bab Lakouas
+Bab Menara
+Bab Saadoun
+Bab Sidi Abdallah Cherif
+Bab Sidi Abdessalem
+Bab Sidi Kacem
+Bab Souika
+Part of
+Medina of Tunis
+WikiProject Tunisia
+Out of the original four gates, two are still standing, namely the
+Bab el Bhar
+in the east and the
+Bab Sidi Kacem
+as part of the Kasbah Fortress in the south-west. The other two, located at the northern entrances, were named
+Bab Sidi Abdallah Cherif
+and
+Bab El Allouj
+.
+Bab el Bhar
+Bab Sidi Kacem
+Bab El Allouj
+Madrasas
+[
+edit
+]
+See also:
+Madrasas of Tunis
+Since the
+Hafsid
+era,
+madrasas
+had emerged in the medina of Tunis which appeared in Arab Orient style. It was established to serve
+Almohads
+by raising workers for public services. The Hafsid
+sultans
+took care of the establishment of madrasas, and the princesses participated in this effort as well as the initiatives of the scholars and the
+imams
+in this field, and several madrasas emerged as a link to the patrons. The establishment of schools continued after the annexation of Tunisia by the
+Ottoman Empire
+, but the purpose of these madrasas had changed over time. Since 17th century when the Ottomans arrived, they employed these madrasas to spread their
+Hanafi
+maddhab
+. However in the 20th century, the role of these madrasas are mostly confined to accommodation of the students studying in
+Ez-Zitouna University
+.
+Mosques
+[
+edit
+]
+See also:
+List of mosques in Tunis
+Minaret of mosque Hammouda-Pacha
+The Medina contains most of the great mosques of the capital, which were all built before the French protectorate.
+The main
+Zitouna Mosque
+was built in 732 in the heart of the Medina and then rebuilt in 864. It was also for a long time an important place of culture and knowledge, acting as home to the Zitouna University until the independence of Tunisia. It still hosts ceremonies marking the main dates of the Muslim calendar that are regularly attended by the President of the Republic.
+The
+Kasbah Mosque
+built between 1231 and 1235, was the second mosque to be built in the Medina, intended for the rulers themselves, who lived in the nearby Kasbah. It is distinguished especially by the dome in stalactites preceding the mihrab and by its minaret that recalls that of the Koutoubia of Marrakech and is the highest in the Medina.
+The
+Ksar Mosque
+of the Hanafi rite, located opposite the Dar Hussein (Bab Menara), was built in the 12th century under the
+Khurasanid dynasty
+.
+[
+14
+]
+The
+Youssef Dey Mosque
+functioned first as an oratory before becoming a mosque in 1631, and is the first mosque of the
+Ottoman-Turkish
+period. The Hammouda-Pacha mosque, built in 1655, was the second mosque of the Hanefite rite built in Tunis while the Sidi Mahrez mosque is the largest mosque of this type in the country. Built from 1692 to 1697, it is Ottoman-inspired and recalls some Istanbul mosques such as the Blue Mosque (erected between 1609 and

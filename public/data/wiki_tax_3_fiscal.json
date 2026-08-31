@@ -1,25 +1,14 @@
 {
   "source": "wiki_tax_3",
-  "crawled_at": "2026-08-24",
+  "crawled_at": "2026-08-31",
   "taux": {
     "rs": {
-      "taux": "10%, 8%, 18.6%, 7.7%, 98%",
+      "taux": "98%, 1%, 99%",
       "label": "Retenues à la source",
       "type": "rs"
     }
   },
   "echeances": [],
-  "lois": [
-    {
-      "article": "2",
-      "extrait": "History of the Jews in Tunisia - Wikipedia Jump to content Search Search History of the Jews in Tunisia 11 languages العربية Čeština Deutsch Suomi Français עברית Bahasa Indonesia Italiano Ladino Português Türkçe Edit links From Wikipedia, the free encyclopedia Ethnic group Tunisian Jews יהדות תוניסי"
-    }
-  ],
-  "informations": [
-    "Quickly introduced to the Beylic Court, they performed executive functions of court – collectors of taxes, treasurers and intermediaries without authority over",
-    "This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.",
-    "in 1756 to 4,572 piastres in 1806 – and had to pay additional taxes (ghrâma) whenever the sovereign's treasury was in difficulty, as the Muslims sometimes did.",
-    "A state farmer, surrounded by some of the most fortunate and educated notables, also collected taxes such as the tithes, the tax on kosher meat and the offerings of the faithful.",
-    "and many of the key posts in the administration of finance – collection of taxes and customs duties, scheduling of expenditure, handling of cash, keeping books of account or paying the salaries of the"
-  ]
+  "lois": [],
+  "informations": []
 }

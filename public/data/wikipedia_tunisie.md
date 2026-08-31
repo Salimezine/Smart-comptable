@@ -1,13559 +1,2179 @@
-Vous lisez un «
-article de qualité
-» labellisé en 2006.
-République tunisienne
-(ar)
-الجمهورية التونسية
-Écouter
-ⓘ
-Drapeau de la Tunisie
-Armoiries de la Tunisie
-Devise
-en
-arabe
-:
-حرية، نظام، عدالة
-(
-Ḥoṛiya, Niẓam, 'Adāla
-, «
-Liberté, Ordre, Justice
-»)
-Hymne
-en
-arabe
-:
-حماة الحمى
-(
-Humat Al-Hima
-, «
-Défenseurs de la patrie
-»)
-Fête nationale
-20 mars
-· Événement commémoré
-Indépendance
-vis-à-vis de la
-France
-(1956)
-Administration
-Forme de l'État
-République
-présidentielle
-et
-bicamérale
-Président de la République
-Kaïs Saïed
-Chef du gouvernement
-Sarra Zaafrani
-Parlement
-Parlement
-Chambre haute
-Chambre basse
-Conseil national des régions et des districts
-Assemblée des représentants du peuple
-Langues officielles
-Arabe
-[
-1
-]
-Capitale
-Tunis
-36° 49′ N, 10° 11′ E
-Géographie
-Première municipalité
-Tunis
-Superficie totale
-163 610
-km
-2
-(
-classé
-92
-e
-)
-Superficie en eau
-5
-%
-Fuseau horaire
-UTC
-+1
-Histoire
-Entité précédente
-Royaume de Tunisie
-Capsien
-8000 av. J.-C.
--
-4000 av. J.-C.
-Civilisation carthaginoise
-814 av. J.-C.
-–
-146 av. J.-C.
-Empire romain
-146 av. J.-C.
-–
-439
-Royaume vandale
-439
-–
-534
-Empire byzantin
-534
-–
-698
-Califat omeyyade
-698
-–
-750
-Émirat aghlabide
-800
-–
-909
-Califat fatimide
-909
-–
-969
-Émirat ziride
-972
-–
-1148
-Sultanat hafside
-1207
-–
-1574
-Tunisie ottomane
-1574
-–
-1705
-Beylicat de Tunis
-1705
-–
-1881
-Protectorat français
-1881
-–
-1956
-Indépendance
-France
-20 mars 1956
-République
-25 juillet 1957
-Révolution
-14 janvier 2011
-Constitution de 2014
-10 février 2014
-Constitution de 2022
-16 août 2022
-Démographie
-Gentilé
-Tunisien, Tunisienne
-Population totale
-(2024
-[
-2
-]
-)
-11 972 169
-hab.
-(
-classé
-78
-e
-)
-Densité
-73
-hab.
-/km
-2
-Économie
-PIB nominal
-(
-2023
-)
-48,541 milliards de
-$
-+ 8,84
-%
-[
-3
-]
-PIB
-(PPA)
-(
-2023
-)
-169,976 milliards de
-$
-+ 3,63
-%
-[
-3
-]
-PIB nominal
-par hab.
-(
-2023
-)
-3 967,481
-$
-+ 7,90
-%
-[
-3
-]
-PIB
-(PPA)
-par hab.
-(
-2023
-)
-13 892,913
-$
-+ 2,74
-%
-[
-3
-]
-Taux de chômage
-(
-2023
-)
-16,40
-%
-+ 7,89
-%
-[
-3
-]
-Dette publique brute
-(
-2024
-)
-Nominale
-:
-137,293 milliards de
-DT
-+ 10,34
-%
-Relative
-:
-83,132
-% du
-PIB
-+ 0,74
-%
-[
-3
-]
-Monnaie
-Dinar tunisien
-(
-TND
-)
-Développement
-IDH
-(
-2021
-)
-0,746
-[
-4
-]
-(élevé ;
-105
-e
-)
-IDHI
-(
-2023
-)
-0,595
-[
-4
-]
-(
-105
-e
-)
-Coefficient de Gini
-(
-2015
-)
-32,8
-%
-[
-5
-]
-Indice d'inégalité de genre
-(
-2021
-)
-0,238
-[
-4
-]
-(
-62
-e
-)
-Indice de performance
-environnementale
-(
-2024
-)
-45,3
-[
-6
-]
-(
-91
-e
-)
-Divers
-Code ISO 3166-1
-TUN, TN
-Domaine Internet
-.tn
-تونس
-. (dès
-2011
-)
-[
-7
-]
-Indicatif téléphonique
-+216
-Organisations internationales
-ONU
-[
-8
-]
-,
-Union africaine
-,
-UMA
-,
-Ligue arabe
-,
-Organisation de la coopération islamique
-,
-Organisation internationale de la francophonie
-,
-Communauté des États sahélo-sahariens
-,
-Union pour la Méditerranée
-,
-ZLECAF
-,
-COMESA
-,
-Mouvement des non-alignés
-,
-Groupe des 77
-,
-BAD
-,
-Cour pénale internationale
-modifier
-La
-Tunisie
-(en
-arabe
-:
-تونس
-,
-tūnis
-Écouter
-ⓘ
-?
-,
-[ˈtuːnɪs]
-)
-, en forme longue la
-République tunisienne
-(en
-arabe
-:
-الجمهورية التونسية
-,
-al-jumhūriyya at-tūnisiyya
-Écouter
-ⓘ
-?
-)
-[
-9
-]
-est un
-État
-arabophone
-et
-musulman
-d'
-Afrique du Nord
-, souverain
-depuis 1956
-, dont le
-territoire
-, en plein centre du
-bassin méditerranéen
-, au carrefour de l'
-Afrique
-, de l'
-Europe
-et du
-Moyen-Orient
-, témoigne d'une
-histoire
-plurimillénaire et pluricivilisationnelle.
-Bordé au nord et à l'est par la
-mer Méditerranée
-(
-1 566
-km
-de côtes), à l'ouest par l'
-Algérie
-avec
-965
-km
-de
-frontière commune
-et au sud-est par la
-Libye
-avec
-459
-km
-de
-frontière
-, sa capitale
-Tunis
-est située dans le Nord-Est du pays, au fond du
-golfe du même nom
-. Plus de 30
-% de la
-superficie
-du territoire est occupée par le désert du
-Sahara
-, le reste étant constitué de régions montagneuses et de plaines fertiles.
-Le territoire de l'actuelle Tunisie est le foyer de la culture
-capsienne
-, une culture
-mésolithique
-qui a duré de
-10 000
-à
-6 000
-avant notre ère et à qui la ville de
-Gafsa
-a donné son nom. Il est aussi le berceau de la
-civilisation carthaginoise
-qui atteint son apogée au
-III
-e
-siècle
-av. J.-C.
-, avant de devenir une province importante de l'
-Empire romain
-et de passer pendant quelques décennies sous
-domination vandale
-, avant d'intégrer l'
-Empire byzantin
-. Dirigé par une succession de dynasties
-arabo-musulmanes
-au sein de l'
-Ifriqiya
-(
-إفريقية
-), suite à la
-conquête musulmane du Maghreb
-, dont la plus longue est celle des
-Aghlabides
-, puis devenu
-régence
-ottomane
-, avec notamment l'émergence de la dynastie locale des
-Husseinites
-, il passe sous
-protectorat français
-le
-12 mai 1881
-avec la signature du
-traité du Bardo
-. À l'indépendance, le
-20 mars 1956
-, la Tunisie devient d'abord une
-monarchie constitutionnelle
-ayant pour souverain
-Lamine Bey
-[
-10
-]
-,
-[
-11
-]
-, 19
-e
-et dernier
-bey
-régnant de la dynastie des Husseinites
-[
-12
-]
-. Mais, le
-25 juillet 1957
-, la
-république
-est proclamée et le leader indépendantiste
-Habib Bourguiba
-devient le premier
-président de la République tunisienne
-. Il modernise le pays qu'il dirige pendant trente ans.
-En 1987, il est déposé par le
-Premier ministre
-Zine el-Abidine Ben Ali
-, qui poursuit les principaux objectifs du
-«
-bourguibisme
-»
-tout en libéralisant l'
-économie
-mais exerce une présidence autoritaire et policière, caractérisée par l'importance de la
-corruption
-[
-13
-]
-,
-[
-14
-]
-. Ben Ali est chassé le
-14 janvier 2011
-par une
-révolution populaire
-et se réfugie en
-Arabie saoudite
-, à
-Djeddah
-[
-15
-]
-,
-[
-16
-]
-sous le coup, avec son épouse
-Leïla Ben Ali
-, d'un
-mandat d'arrêt international
-.
-Intégrée aux principales instances de la communauté internationale telles que l'
-ONU
-ou la
-Cour pénale internationale
-, la Tunisie fait également partie de l'
-Union du Maghreb arabe
-, de la
-Ligue arabe
-, de la
-Grande zone arabe de libre-échange
-, du
-Marché commun de l'Afrique orientale et australe
-, de l'
-Organisation de la coopération islamique
-, de l'
-Union pour la Méditerranée
-, de l'
-Union africaine
-, de l'
-Organisation internationale de la francophonie
-, du
-Groupe des 77
-, de la
-Communauté des États sahélo-sahariens
-et du
-mouvement des non-alignés
-. La Tunisie a également conclu un
-accord d'association
-avec l'
-Union européenne
-et obtenu le statut d'
-allié majeur non-membre de l'OTAN
-.
-Durant la période 2020-2021, le pays est un membre non permanent du
-Conseil de sécurité des Nations unies
-[
-17
-]
-pour la quatrième fois depuis son adhésion à l'ONU
-[
-18
-]
-.
-Toponymie
-Le nom actuel de la
-«
-Tunisie
-»
-, en
+Menu principal
+déplacer vers la barre latérale masquer
+Navigation 
+  * [Page d’accueil](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal "Accueil général \[alt-z\]")
+  * [Portails thématiques](https://fr.wikipedia.org/wiki/Portail:Accueil "Regroupements d'articles par thématiques")
+  * [Article au hasard](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard "Affiche un article au hasard \[alt-x\]")
+  * [Contact](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact "Qui contacter")
+
+
+Contribuer 
+  * [Débuter sur Wikipédia](https://fr.wikipedia.org/wiki/Aide:D%C3%A9buter "Guide pour apprendre à contribuer à Wikipédia")
+  * [Aide](https://fr.wikipedia.org/wiki/Aide:Accueil "Accès à l’aide")
+  * [Communauté](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_de_la_communaut%C3%A9 "À propos du projet, ce que vous pouvez faire, où trouver les informations")
+  * [Pages spéciales](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Pages_sp%C3%A9ciales "Outils pour contribuer à Wikipédia \[alt-q\]")
+  * [Modifications récentes](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes "Liste des modifications récentes sur le wiki \[alt-r\]")
+
+
+[ ![](https://fr.wikipedia.org/static/images/icons/wikipedia.png) ![Wikipédia](https://fr.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg) ![l'encyclopédie libre](https://fr.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-fr.svg) ](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal)
+[ ](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Recherche "Rechercher sur Wikipédia \[alt-f\]")
+Rechercher
+Apparence
+déplacer vers la barre latérale masquer
+Taille du texte
+  * Petite
+Standard
+Grande
+
+Cette page utilise toujours une petite taille de police
+Largeur
+  * Standard
+Large
+
+Le contenu est aussi large que possible pour la fenêtre de votre navigateur.
+Couleur (bêta)
+  * Automatique
+Clair
+Sombre
+
+Cette page est toujours en mode clair.
+  * [Faire un don](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=fr.wikipedia.org&uselang=fr)
+  * [Créer un compte](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Cr%C3%A9er_un_compte&returnto=Tunisie "Nous vous encourageons à créer un compte utilisateur et vous connecter ; ce n’est cependant pas obligatoire.")
+  * [Se connecter](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Connexion&returnto=Tunisie "Nous vous encourageons à vous connecter ; ce n’est cependant pas obligatoire. \[alt-o\]")
+
+
+  * [ Faire un don](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=fr.wikipedia.org&uselang=fr)
+  * [ Créer un compte](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Cr%C3%A9er_un_compte&returnto=Tunisie "Nous vous encourageons à créer un compte utilisateur et vous connecter ; ce n’est cependant pas obligatoire.")
+  * [ Se connecter](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Connexion&returnto=Tunisie "Nous vous encourageons à vous connecter ; ce n’est cependant pas obligatoire. \[alt-o\]")
+
+
+## Sommaire
+déplacer vers la barre latérale masquer
+  * [ Début ](https://fr.wikipedia.org/wiki/Tunisie)
+  * [ 1 Toponymie ](https://fr.wikipedia.org/wiki/Tunisie#Toponymie)
+  * [ 2 Géographie ](https://fr.wikipedia.org/wiki/Tunisie#G%C3%A9ographie) Afficher / masquer la sous-section Géographie
+    * [ 2.1 Topographie ](https://fr.wikipedia.org/wiki/Tunisie#Topographie)
+    * [ 2.2 Climat ](https://fr.wikipedia.org/wiki/Tunisie#Climat)
+    * [ 2.3 Environnement ](https://fr.wikipedia.org/wiki/Tunisie#Environnement)
+    * [ 2.4 Géographie humaine ](https://fr.wikipedia.org/wiki/Tunisie#G%C3%A9ographie_humaine)
+    * [ 2.5 Géographie administrative ](https://fr.wikipedia.org/wiki/Tunisie#G%C3%A9ographie_administrative)
+  * [ 3 Histoire ](https://fr.wikipedia.org/wiki/Tunisie#Histoire) Afficher / masquer la sous-section Histoire
+    * [ 3.1 Préhistoire et protohistoire ](https://fr.wikipedia.org/wiki/Tunisie#Pr%C3%A9histoire_et_protohistoire)
+    * [ 3.2 Antiquité ](https://fr.wikipedia.org/wiki/Tunisie#Antiquit%C3%A9)
+      * [ 3.2.1 De la Carthage punique à la Carthage romaine ](https://fr.wikipedia.org/wiki/Tunisie#De_la_Carthage_punique_%C3%A0_la_Carthage_romaine)
+      * [ 3.2.2 Christianisation ](https://fr.wikipedia.org/wiki/Tunisie#Christianisation)
+    * [ 3.3 Moyen Âge ](https://fr.wikipedia.org/wiki/Tunisie#Moyen_%C3%82ge)
+      * [ 3.3.1 Période byzantine ](https://fr.wikipedia.org/wiki/Tunisie#P%C3%A9riode_byzantine)
+      * [ 3.3.2 Ifriqiya dans le Moyen Âge arabo-musulman ](https://fr.wikipedia.org/wiki/Tunisie#Ifriqiya_dans_le_Moyen_%C3%82ge_arabo-musulman)
+    * [ 3.4 Tunisie ottomane ](https://fr.wikipedia.org/wiki/Tunisie#Tunisie_ottomane)
+      * [ 3.4.1 Temps modernes ](https://fr.wikipedia.org/wiki/Tunisie#Temps_modernes)
+      * [ 3.4.2 Influence architecturale ](https://fr.wikipedia.org/wiki/Tunisie#Influence_architecturale)
+    * [ 3.5 Époque contemporaine ](https://fr.wikipedia.org/wiki/Tunisie#%C3%89poque_contemporaine)
+      * [ 3.5.1 Protectorat français et lutte nationaliste ](https://fr.wikipedia.org/wiki/Tunisie#Protectorat_fran%C3%A7ais_et_lutte_nationaliste)
+      * [ 3.5.2 Tunisie indépendante ](https://fr.wikipedia.org/wiki/Tunisie#Tunisie_ind%C3%A9pendante)
+      * [ 3.5.3 Tunisie post-révolution ](https://fr.wikipedia.org/wiki/Tunisie#Tunisie_post-r%C3%A9volution)
+  * [ 4 Politique ](https://fr.wikipedia.org/wiki/Tunisie#Politique) Afficher / masquer la sous-section Politique
+    * [ 4.1 Politique intérieure ](https://fr.wikipedia.org/wiki/Tunisie#Politique_int%C3%A9rieure)
+    * [ 4.2 Politique extérieure ](https://fr.wikipedia.org/wiki/Tunisie#Politique_ext%C3%A9rieure)
+    * [ 4.3 Défense ](https://fr.wikipedia.org/wiki/Tunisie#D%C3%A9fense)
+  * [ 5 Justice ](https://fr.wikipedia.org/wiki/Tunisie#Justice)
+  * [ 6 Économie ](https://fr.wikipedia.org/wiki/Tunisie#%C3%89conomie) Afficher / masquer la sous-section Économie
+    * [ 6.1 Historique ](https://fr.wikipedia.org/wiki/Tunisie#Historique)
+    * [ 6.2 Agriculture ](https://fr.wikipedia.org/wiki/Tunisie#Agriculture)
+    * [ 6.3 Industrie ](https://fr.wikipedia.org/wiki/Tunisie#Industrie)
+    * [ 6.4 Services ](https://fr.wikipedia.org/wiki/Tunisie#Services)
+    * [ 6.5 Infrastructures ](https://fr.wikipedia.org/wiki/Tunisie#Infrastructures)
+    * [ 6.6 Énergie ](https://fr.wikipedia.org/wiki/Tunisie#%C3%89nergie)
+  * [ 7 Démographie ](https://fr.wikipedia.org/wiki/Tunisie#D%C3%A9mographie)
+  * [ 8 Culture ](https://fr.wikipedia.org/wiki/Tunisie#Culture) Afficher / masquer la sous-section Culture
+    * [ 8.1 Religion ](https://fr.wikipedia.org/wiki/Tunisie#Religion)
+    * [ 8.2 Langues ](https://fr.wikipedia.org/wiki/Tunisie#Langues)
+    * [ 8.3 Médias ](https://fr.wikipedia.org/wiki/Tunisie#M%C3%A9dias)
+    * [ 8.4 Éducation ](https://fr.wikipedia.org/wiki/Tunisie#%C3%89ducation)
+    * [ 8.5 Santé ](https://fr.wikipedia.org/wiki/Tunisie#Sant%C3%A9)
+    * [ 8.6 Arts ](https://fr.wikipedia.org/wiki/Tunisie#Arts)
+    * [ 8.7 Traditions ](https://fr.wikipedia.org/wiki/Tunisie#Traditions)
+    * [ 8.8 Festivals ](https://fr.wikipedia.org/wiki/Tunisie#Festivals)
+    * [ 8.9 Gastronomie ](https://fr.wikipedia.org/wiki/Tunisie#Gastronomie)
+    * [ 8.10 Sport ](https://fr.wikipedia.org/wiki/Tunisie#Sport)
+  * [ 9 Fêtes et jours fériés ](https://fr.wikipedia.org/wiki/Tunisie#F%C3%AAtes_et_jours_f%C3%A9ri%C3%A9s)
+  * [ 10 Notes et références ](https://fr.wikipedia.org/wiki/Tunisie#Notes_et_r%C3%A9f%C3%A9rences) Afficher / masquer la sous-section Notes et références
+    * [ 10.1 Notes ](https://fr.wikipedia.org/wiki/Tunisie#Notes)
+    * [ 10.2 Références ](https://fr.wikipedia.org/wiki/Tunisie#R%C3%A9f%C3%A9rences)
+  * [ 11 Liens externes ](https://fr.wikipedia.org/wiki/Tunisie#Liens_externes)
+
+
+# Tunisie
+270 langues
+  * [Аԥсшәа](https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – abkhaze")
+  * [Acèh](https://ace.wikipedia.org/wiki/Tunisia "Tunisia – aceh")
+  * [Адыгабзэ](https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – adyguéen")
+  * [Afrikaans](https://af.wikipedia.org/wiki/Tunisi%C3%AB "Tunisië – afrikaans")
+  * [Alemannisch](https://als.wikipedia.org/wiki/Tunesien "Tunesien – alémanique")
+  * [አማርኛ](https://am.wikipedia.org/wiki/%E1%89%B1%E1%8A%92%E1%8B%9A%E1%8B%AB "ቱኒዚያ – amharique")
+  * [Pangcah](https://ami.wikipedia.org/wiki/Tunisia "Tunisia – Amis")
+  * [Aragonés](https://an.wikipedia.org/wiki/Tunicia "Tunicia – aragonais")
+  * [Ænglisc](https://ang.wikipedia.org/wiki/Tunisland "Tunisland – ancien anglais")
+  * [Obolo](https://ann.wikipedia.org/wiki/Tunisia "Tunisia – obolo")
+  * [अंगिका](https://anp.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A5%80%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्यूनीशिया – angika")
+  * [العربية](https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – arabe")
+  * [ܐܪܡܝܐ](https://arc.wikipedia.org/wiki/%DC%AC%DC%98%DC%A2%DC%A3_\(%DC%90%DC%AC%DC%AA%DC%90\) "ܬܘܢܣ \(ܐܬܪܐ\) – araméen")
+  * [الدارجة](https://ary.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – arabe marocain")
+  * [مصرى](https://arz.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – arabe égyptien")
+  * [অসমীয়া](https://as.wikipedia.org/wiki/%E0%A6%A4%E0%A7%81%E0%A6%A8%E0%A6%BF%E0%A6%9B%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তুনিছিয়া – assamais")
+  * [Asturianu](https://ast.wikipedia.org/wiki/Tunicia "Tunicia – asturien")
+  * [Kotava](https://avk.wikipedia.org/wiki/Tunusa "Tunusa – kotava")
+  * [Azərbaycanca](https://az.wikipedia.org/wiki/Tunis "Tunis – azerbaïdjanais")
+  * [تۆرکجه](https://azb.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%DB%8C%D8%B3 "تونیس – South Azerbaijani")
+  * [Башҡортса](https://ba.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – bachkir")
+  * [Basa Bali](https://ban.wikipedia.org/wiki/Tunisia "Tunisia – balinais")
+  * [Boarisch](https://bar.wikipedia.org/wiki/Tunesien "Tunesien – bavarois")
+  * [Žemaitėška](https://bat-smg.wikipedia.org/wiki/Ton%C4%97sos "Tonėsos – samogitien")
+  * [Bikol Central](https://bcl.wikipedia.org/wiki/Tunisya "Tunisya – Central Bikol")
+  * [Беларуская (тарашкевіца)](https://be-tarask.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – Belarusian \(Taraškievica orthography\)")
+  * [Беларуская](https://be.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – biélorusse")
+  * [Betawi](https://bew.wikipedia.org/wiki/Tunis "Tunis – betawi")
+  * [Български](https://bg.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – bulgare")
+  * [भोजपुरी](https://bh.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A5%80%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्यूनीशिया – Bhojpuri")
+  * [Bislama](https://bi.wikipedia.org/wiki/Tunisia "Tunisia – bichelamar")
+  * [Banjar](https://bjn.wikipedia.org/wiki/Tunisia "Tunisia – banjar")
+  * [Bamanankan](https://bm.wikipedia.org/wiki/Tunizi "Tunizi – bambara")
+  * [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BF%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তিউনিসিয়া – bengali")
+  * [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%8F%E0%BD%B4%E0%BC%8B%E0%BD%93%E0%BD%B2%E0%BC%8B%E0%BD%A4%E0%BD%B2%E0%BC%8B%E0%BD%A1%E0%BC%8D "ཏུ་ནི་ཤི་ཡ། – tibétain")
+  * [বিষ্ণুপ্রিয়া মণিপুরী](https://bpy.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BF%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তিউনিসিয়া – bishnupriya")
+  * [Brezhoneg](https://br.wikipedia.org/wiki/Tunizia "Tunizia – breton")
+  * [Bosanski](https://bs.wikipedia.org/wiki/Tunis "Tunis – bosniaque")
+  * [Basa Ugi](https://bug.wikipedia.org/wiki/%E1%A8%88%E1%A8%9A%E1%A8%95%E1%A8%98%E1%A8%8A%E1%A8%99%E1%A8%94 "ᨈᨚᨕᨘᨊᨙᨔ – bugi")
+  * [Буряад](https://bxr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Russia Buriat")
+  * [Català](https://ca.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – catalan")
+  * [Chavacano de Zamboanga](https://cbk-zam.wikipedia.org/wiki/T%C3%BAnez "Túnez – Chavacano")
+  * [閩東語 / Mìng-dĕ̤ng-ngṳ̄](https://cdo.wikipedia.org/wiki/Tunisia "Tunisia – Mindong")
+  * [Нохчийн](https://ce.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – tchétchène")
+  * [Cebuano](https://ceb.wikipedia.org/wiki/Tunisia "Tunisia – cebuano")
+  * [کوردی](https://ckb.wikipedia.org/wiki/%D8%AA%D9%88%D9%88%D9%86%D8%B3 "توونس – sorani")
+  * [Corsu](https://co.wikipedia.org/wiki/Tunisia "Tunisia – corse")
+  * [Qırımtatarca](https://crh.wikipedia.org/wiki/Tunis "Tunis – tatar de Crimée")
+  * [Čeština](https://cs.wikipedia.org/wiki/Tunisko "Tunisko – tchèque")
+  * [Kaszëbsczi](https://csb.wikipedia.org/wiki/Tunezj%C3%B4 "Tunezjô – kachoube")
+  * [Чӑвашла](https://cv.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – tchouvache")
+  * [Cymraeg](https://cy.wikipedia.org/wiki/Tiwnisia "Tiwnisia – gallois")
+  * [Dansk](https://da.wikipedia.org/wiki/Tunesien "Tunesien – danois")
+  * [Dagbanli](https://dag.wikipedia.org/wiki/Tunisia "Tunisia – Dagbani")
+  * [Deutsch](https://de.wikipedia.org/wiki/Tunesien "Tunesien – allemand")
+  * [Zazaki](https://diq.wikipedia.org/wiki/Tun%C4%B1s "Tunıs – Dimli")
+  * [Dolnoserbski](https://dsb.wikipedia.org/wiki/Tuneziska "Tuneziska – bas-sorabe")
+  * [डोटेली](https://dty.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – Doteli")
+  * [ދިވެހިބަސް](https://dv.wikipedia.org/wiki/%DE%8C%DE%AB%DE%82%DE%A8%DE%90%DE%B0 "ތޫނިސް – maldivien")
+  * [ཇོང་ཁ](https://dz.wikipedia.org/wiki/%E0%BD%8A%E0%BD%B4%E0%BC%8B%E0%BD%93%E0%BD%B2%E0%BC%8B%E0%BD%A6%E0%BD%B2%E0%BC%8D "ཊུ་ནི་སི། – dzongkha")
+  * [Eʋegbe](https://ee.wikipedia.org/wiki/Tunisia "Tunisia – éwé")
+  * [Ελληνικά](https://el.wikipedia.org/wiki/%CE%A4%CF%85%CE%BD%CE%B7%CF%83%CE%AF%CE%B1 "Τυνησία – grec")
+  * [Emiliàn e rumagnòl](https://eml.wikipedia.org/wiki/T%C3%BCni%E1%B9%A1ia "Tüniṡia – Emiliano-Romagnolo")
+  * [English](https://en.wikipedia.org/wiki/Tunisia "Tunisia – anglais")
+  * [Esperanto](https://eo.wikipedia.org/wiki/Tunizio "Tunizio – espéranto")
+  * [Español](https://es.wikipedia.org/wiki/T%C3%BAnez "Túnez – espagnol")
+  * [Eesti](https://et.wikipedia.org/wiki/Tuneesia "Tuneesia – estonien")
+  * [Euskara](https://eu.wikipedia.org/wiki/Tunisia "Tunisia – basque")
+  * [Estremeñu](https://ext.wikipedia.org/wiki/T%C3%BAnis "Túnis – estrémègne")
+  * [فارسی](https://fa.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – persan")
+  * [Fulfulde](https://ff.wikipedia.org/wiki/Tuniisi "Tuniisi – peul")
+  * [Suomi](https://fi.wikipedia.org/wiki/Tunisia "Tunisia – finnois")
+  * [Võro](https://fiu-vro.wikipedia.org/wiki/Tuneesi%C3%A4 "Tuneesiä – võro")
+  * [Føroyskt](https://fo.wikipedia.org/wiki/Tunesia "Tunesia – féroïen")
+  * [Fɔ̀ngbè](https://fon.wikipedia.org/wiki/Tunisiet%C3%B2 "Tunisietò – fon")
+  * [Arpetan](https://frp.wikipedia.org/wiki/Tunisia "Tunisia – francoprovençal")
+  * [Nordfriisk](https://frr.wikipedia.org/wiki/Tuneesien "Tuneesien – frison septentrional")
+  * [Frysk](https://fy.wikipedia.org/wiki/Tuneezje "Tuneezje – frison occidental")
+  * [Gaeilge](https://ga.wikipedia.org/wiki/An_T%C3%BAin%C3%A9is "An Túinéis – irlandais")
+  * [Gagauz](https://gag.wikipedia.org/wiki/Tunis "Tunis – gagaouze")
+  * [Kriyòl gwiyannen](https://gcr.wikipedia.org/wiki/Tinizi "Tinizi – créole guyanais")
+  * [Gàidhlig](https://gd.wikipedia.org/wiki/Tuinisia "Tuinisia – gaélique écossais")
+  * [Galego](https://gl.wikipedia.org/wiki/Tunisia "Tunisia – galicien")
+  * [گیلکی](https://glk.wikipedia.org/wiki/%D8%AA%DB%8A%D9%86%D8%B3 "تۊنس – gilaki")
+  * [Avañe'ẽ](https://gn.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – guarani")
+  * [गोंयची कोंकणी / Gõychi Konknni](https://gom.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिशिया – Goan Konkani")
+  * [Bahasa Hulontalo](https://gor.wikipedia.org/wiki/Tunisia "Tunisia – gorontalo")
+  * [Ghanaian Pidgin](https://gpe.wikipedia.org/wiki/Tunisia "Tunisia – Ghanaian Pidgin")
+  * [ગુજરાતી](https://gu.wikipedia.org/wiki/%E0%AA%9F%E0%AB%8D%E0%AA%AF%E0%AB%81%E0%AA%A8%E0%AA%BF%E0%AA%B6%E0%AA%BF%E0%AA%AF%E0%AA%BE "ટ્યુનિશિયા – goudjarati")
+  * [Gaelg](https://gv.wikipedia.org/wiki/Yn_Tooneesh "Yn Tooneesh – mannois")
+  * [Hausa](https://ha.wikipedia.org/wiki/Tunisiya "Tunisiya – haoussa")
+  * [客家語 / Hak-kâ-ngî](https://hak.wikipedia.org/wiki/Tunisia "Tunisia – hakka")
+  * [Hawaiʻi](https://haw.wikipedia.org/wiki/Tunisia "Tunisia – hawaïen")
+  * [עברית](https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%A0%D7%99%D7%A1%D7%99%D7%94 "תוניסיה – hébreu")
+  * [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%A4%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%80%E0%A4%AF%E0%A4%BE "तूनिसीया – hindi")
+  * [Fiji Hindi](https://hif.wikipedia.org/wiki/Tunisia "Tunisia – hindi fidjien")
+  * [Hrvatski](https://hr.wikipedia.org/wiki/Tunis "Tunis – croate")
+  * [Hornjoserbsce](https://hsb.wikipedia.org/wiki/Tuneziska "Tuneziska – haut-sorabe")
+  * [Kreyòl ayisyen](https://ht.wikipedia.org/wiki/Tinizi "Tinizi – créole haïtien")
+  * [Magyar](https://hu.wikipedia.org/wiki/Tun%C3%A9zia "Tunézia – hongrois")
+  * [Հայերեն](https://hy.wikipedia.org/wiki/%D4%B9%D5%B8%D6%82%D5%B6%D5%AB%D5%BD "Թունիս – arménien")
+  * [Արեւմտահայերէն](https://hyw.wikipedia.org/wiki/%D4%B9%D5%B8%D6%82%D5%B6%D5%B8%D6%82%D5%A6 "Թունուզ – arménien occidental")
+  * [Interlingua](https://ia.wikipedia.org/wiki/Tunisia "Tunisia – interlingua")
+  * [Jaku Iban](https://iba.wikipedia.org/wiki/Tunisia "Tunisia – iban")
+  * [Bahasa Indonesia](https://id.wikipedia.org/wiki/Tunisia "Tunisia – indonésien")
+  * [Interlingue](https://ie.wikipedia.org/wiki/Tunisia "Tunisia – interlingue")
+  * [Igbo](https://ig.wikipedia.org/wiki/Tunisia "Tunisia – igbo")
+  * [Ilokano](https://ilo.wikipedia.org/wiki/Tunisia "Tunisia – ilocano")
+  * [Ido](https://io.wikipedia.org/wiki/Tunizia "Tunizia – ido")
+  * [Íslenska](https://is.wikipedia.org/wiki/T%C3%BAnis "Túnis – islandais")
+  * [Italiano](https://it.wikipedia.org/wiki/Tunisia "Tunisia – italien")
+  * [日本語](https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A5%E3%83%8B%E3%82%B8%E3%82%A2 "チュニジア – japonais")
+  * [Patois](https://jam.wikipedia.org/wiki/Tunisia "Tunisia – créole jamaïcain")
+  * [La .lojban.](https://jbo.wikipedia.org/wiki/tunis "tunis – lojban")
+  * [Jawa](https://jv.wikipedia.org/wiki/Tunis_\(nagara\) "Tunis \(nagara\) – javanais")
+  * [ქართული](https://ka.wikipedia.org/wiki/%E1%83%A2%E1%83%A3%E1%83%9C%E1%83%98%E1%83%A1%E1%83%98 "ტუნისი – géorgien")
+  * [Qaraqalpaqsha](https://kaa.wikipedia.org/wiki/Tunis "Tunis – karakalpak")
+  * [Taqbaylit](https://kab.wikipedia.org/wiki/Tunes "Tunes – kabyle")
+  * [Jju](https://kaj.wikipedia.org/wiki/Tunisiya "Tunisiya – jju")
+  * [Kabɩyɛ](https://kbp.wikipedia.org/wiki/Tuniizii "Tuniizii – Kabiye")
+  * [Tyap](https://kcg.wikipedia.org/wiki/Tuni%CC%B1siya "Tuni̱siya – tyap")
+  * [Kongo](https://kg.wikipedia.org/wiki/Tunisia "Tunisia – kikongo")
+  * [Kumoring](https://kge.wikipedia.org/wiki/Tunisia "Tunisia – Komering")
+  * [Gĩkũyũ](https://ki.wikipedia.org/wiki/Tunisia "Tunisia – kikuyu")
+  * [Қазақша](https://kk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – kazakh")
+  * [ភាសាខ្មែរ](https://km.wikipedia.org/wiki/%E1%9E%91%E1%9E%BB%E1%9E%99%E1%9E%93%E1%9E%B8%E1%9E%9F%E1%9F%8A%E1%9E%B8 "ទុយនីស៊ី – khmer")
+  * [ಕನ್ನಡ](https://kn.wikipedia.org/wiki/%E0%B2%9F%E0%B3%81%E0%B2%A8%E0%B3%80%E0%B2%B6%E0%B2%BF%E0%B2%AF "ಟುನೀಶಿಯ – kannada")
+  * [Yerwa Kanuri](https://knc.wikipedia.org/wiki/Tunisia "Tunisia – Central Kanuri")
+  * [한국어](https://ko.wikipedia.org/wiki/%ED%8A%80%EB%8B%88%EC%A7%80 "튀니지 – coréen")
+  * [Къарачай-малкъар](https://krc.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – karatchaï balkar")
+  * [کٲشُر](https://ks.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – cachemiri")
+  * [Kurdî](https://ku.wikipedia.org/wiki/T%C3%BBnis "Tûnis – kurde")
+  * [Kernowek](https://kw.wikipedia.org/wiki/Tunisi "Tunisi – cornique")
+  * [Кыргызча](https://ky.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – kirghize")
+  * [Latina](https://la.wikipedia.org/wiki/Tunesia "Tunesia – latin")
+  * [Ladino](https://lad.wikipedia.org/wiki/Tunesia "Tunesia – ladino")
+  * [Lëtzebuergesch](https://lb.wikipedia.org/wiki/Tunesien "Tunesien – luxembourgeois")
+  * [Лезги](https://lez.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – lezghien")
+  * [Lingua Franca Nova](https://lfn.wikipedia.org/wiki/Tunis "Tunis – lingua franca nova")
+  * [Luganda](https://lg.wikipedia.org/wiki/Tunisia "Tunisia – ganda")
+  * [Limburgs](https://li.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – limbourgeois")
+  * [Ligure](https://lij.wikipedia.org/wiki/Tunixia "Tunixia – ligure")
+  * [Ladin](https://lld.wikipedia.org/wiki/Tunisia "Tunisia – Ladin")
+  * [Lombard](https://lmo.wikipedia.org/wiki/T%C3%BCnisia "Tünisia – lombard")
+  * [Lingála](https://ln.wikipedia.org/wiki/Tunisia "Tunisia – lingala")
+  * [ລາວ](https://lo.wikipedia.org/wiki/%E0%BA%9B%E0%BA%B0%E0%BB%80%E0%BA%97%E0%BA%94%E0%BA%95%E0%BA%B9%E0%BA%99%E0%BA%B4%E0%BB%80%E0%BA%8A%E0%BA%8D "ປະເທດຕູນິເຊຍ – lao")
+  * [Lietuvių](https://lt.wikipedia.org/wiki/Tunisas "Tunisas – lituanien")
+  * [Latviešu](https://lv.wikipedia.org/wiki/Tunisija "Tunisija – letton")
+  * [Madhurâ](https://mad.wikipedia.org/wiki/Tunisia "Tunisia – madurais")
+  * [Мокшень](https://mdf.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81%D0%B8%D1%8F "Тунисия – mokcha")
+  * [Malagasy](https://mg.wikipedia.org/wiki/Tonizia "Tonizia – malgache")
+  * [Олык марий](https://mhr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Eastern Mari")
+  * [Māori](https://mi.wikipedia.org/wiki/T%C5%ABnihia "Tūnihia – maori")
+  * [Minangkabau](https://min.wikipedia.org/wiki/Tunisia "Tunisia – minangkabau")
+  * [Македонски](https://mk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – macédonien")
+  * [മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%9F%E0%B5%81%E0%B4%A3%E0%B5%80%E0%B4%B7%E0%B5%8D%E0%B4%AF "ടുണീഷ്യ – malayalam")
+  * [Монгол](https://mn.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – mongol")
+  * [ꯃꯤꯇꯩ ꯂꯣꯟ](https://mni.wikipedia.org/wiki/%EA%AF%87%EA%AF%A8%EA%AF%85%EA%AF%A4%EA%AF%81%EA%AF%A4%EA%AF%8C%EA%AF%A5 "ꯇꯨꯅꯤꯁꯤꯌꯥ – manipuri")
+  * [मराठी](https://mr.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – marathi")
+  * [Кырык мары](https://mrj.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – mari occidental")
+  * [Bahasa Melayu](https://ms.wikipedia.org/wiki/Tunisia "Tunisia – malais")
+  * [Malti](https://mt.wikipedia.org/wiki/Tune%C5%BCija "Tuneżija – maltais")
+  * [Mirandés](https://mwl.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – mirandais")
+  * [မြန်မာဘာသာ](https://my.wikipedia.org/wiki/%E1%80%90%E1%80%B0%E1%80%94%E1%80%AE%E1%80%B8%E1%80%9B%E1%80%BE%E1%80%AC%E1%80%B8%E1%80%94%E1%80%AD%E1%80%AF%E1%80%84%E1%80%BA%E1%80%84%E1%80%B6 "တူနီးရှားနိုင်ငံ – birman")
+  * [Эрзянь](https://myv.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – erzya")
+  * [مازِرونی](https://mzn.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – mazandérani")
+  * [Nedersaksies](https://nds-nl.wikipedia.org/wiki/Tunesie "Tunesie – bas-saxon néerlandais")
+  * [Plattdüütsch](https://nds.wikipedia.org/wiki/Tunesien "Tunesien – bas-allemand")
+  * [नेपाली](https://ne.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – népalais")
+  * [नेपाल भाषा](https://new.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – newari")
+  * [Nederlands](https://nl.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – néerlandais")
+  * [Norsk nynorsk](https://nn.wikipedia.org/wiki/Tunisia "Tunisia – norvégien nynorsk")
+  * [Norsk bokmål](https://no.wikipedia.org/wiki/Tunisia "Tunisia – norvégien bokmål")
+  * [Novial](https://nov.wikipedia.org/wiki/Tunisia "Tunisia – novial")
+  * [Sesotho sa Leboa](https://nso.wikipedia.org/wiki/Tunisia "Tunisia – sotho du Nord")
+  * [Nupe](https://nup.wikipedia.org/wiki/Tunusia "Tunusia – Nupe")
+  * [Diné bizaad](https://nv.wikipedia.org/wiki/Gh%C4%85%CC%81%C4%85%CC%81%CA%BCask%CA%BCidii_Bi%C5%82ikahii_Bik%C3%A9yah_Y%C3%A1zh%C3%AD "Ghą́ą́ʼaskʼidii Biłikahii Bikéyah Yázhí – navajo")
+  * [Occitan](https://oc.wikipedia.org/wiki/Tunisia "Tunisia – occitan")
+  * [Livvinkarjala](https://olo.wikipedia.org/wiki/Tunisu "Tunisu – Livvi-Karelian")
+  * [Oromoo](https://om.wikipedia.org/wiki/Tuniisiyaa "Tuniisiyaa – oromo")
+  * [ଓଡ଼ିଆ](https://or.wikipedia.org/wiki/%E0%AC%9F%E0%AD%8D%E0%AD%9F%E0%AD%81%E0%AC%A8%E0%AC%BF%E0%AC%B8%E0%AC%BF%E0%AC%86 "ଟ୍ୟୁନିସିଆ – odia")
+  * [Ирон](https://os.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – ossète")
+  * [ਪੰਜਾਬੀ](https://pa.wikipedia.org/wiki/%E0%A8%9F%E0%A9%81%E0%A8%A8%E0%A9%80%E0%A8%B8%E0%A8%BC%E0%A9%80%E0%A8%86 "ਟੁਨੀਸ਼ੀਆ – pendjabi")
+  * [Kapampangan](https://pam.wikipedia.org/wiki/T%C3%BAnes "Túnes – pampangan")
+  * [Papiamentu](https://pap.wikipedia.org/wiki/Tunesia "Tunesia – papiamento")
+  * [Picard](https://pcd.wikipedia.org/wiki/Tunisie "Tunisie – picard")
+  * [Polski](https://pl.wikipedia.org/wiki/Tunezja "Tunezja – polonais")
+  * [Piemontèis](https://pms.wikipedia.org/wiki/Tunis%C3%ACa "Tunisìa – piémontais")
+  * [پنجابی](https://pnb.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Western Punjabi")
+  * [Ποντιακά](https://pnt.wikipedia.org/wiki/%CE%A4%CF%85%CE%BD%CE%B7%CF%83%CE%AF%CE%B1%CE%BD "Τυνησίαν – pontique")
+  * [پښتو](https://ps.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – pachto")
+  * [Português](https://pt.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – portugais")
+  * [Runa Simi](https://qu.wikipedia.org/wiki/Tunisya "Tunisya – quechua")
+  * [Rumantsch](https://rm.wikipedia.org/wiki/Tunesia "Tunesia – romanche")
+  * [Română](https://ro.wikipedia.org/wiki/Tunisia "Tunisia – roumain")
+  * [Русский](https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – russe")
+  * [Русиньскый](https://rue.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – ruthène")
+  * [Ikinyarwanda](https://rw.wikipedia.org/wiki/Tunisiya "Tunisiya – kinyarwanda")
+  * [संस्कृतम्](https://sa.wikipedia.org/wiki/%E0%A4%9F%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "टुनिशिया – sanskrit")
+  * [Саха тыла](https://sah.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – iakoute")
+  * [Sardu](https://sc.wikipedia.org/wiki/Tunisia "Tunisia – sarde")
+  * [Sicilianu](https://scn.wikipedia.org/wiki/Tunis%C3%ACa "Tunisìa – sicilien")
+  * [Scots](https://sco.wikipedia.org/wiki/Tunisie "Tunisie – écossais")
+  * [سنڌي](https://sd.wikipedia.org/wiki/%D8%AA%D9%8A%D9%88%D9%86%D8%B3 "تيونس – sindhi")
+  * [Davvisámegiella](https://se.wikipedia.org/wiki/Tunisia "Tunisia – same du Nord")
+  * [Sängö](https://sg.wikipedia.org/wiki/Tuniz%C3%AFi "Tunizïi – sango")
+  * [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Tunis "Tunis – serbo-croate")
+  * [Taclḥit](https://shi.wikipedia.org/wiki/Tuns "Tuns – chleuh")
+  * [တႆး](https://shn.wikipedia.org/wiki/%E1%80%99%E1%80%AD%E1%80%B0%E1%80%84%E1%80%BA%E1%80%B8%E1%80%90%E1%80%B0%E1%82%87%E1%81%BC%E1%80%AE%E1%80%B8%E1%80%9E%E1%80%BB%E1%82%83%E1%80%B8 "မိူင်းတူႇၼီးသျႃး – shan")
+  * [සිංහල](https://si.wikipedia.org/wiki/%E0%B6%A7%E0%B7%92%E0%B6%BA%E0%B7%94%E0%B6%B1%E0%B7%93%E0%B7%83%E0%B7%92%E0%B6%BA%E0%B7%8F%E0%B7%80 "ටියුනීසියාව – cingalais")
+  * [Simple English](https://simple.wikipedia.org/wiki/Tunisia "Tunisia – Simple English")
+  * [Slovenčina](https://sk.wikipedia.org/wiki/Tunisko "Tunisko – slovaque")
+  * [Slovenščina](https://sl.wikipedia.org/wiki/Tunizija "Tunizija – slovène")
+  * [Gagana Samoa](https://sm.wikipedia.org/wiki/Tunisia "Tunisia – samoan")
+  * [Anarâškielâ](https://smn.wikipedia.org/wiki/Tunisia "Tunisia – same d’Inari")
+  * [ChiShona](https://sn.wikipedia.org/wiki/Tunisia "Tunisia – shona")
+  * [Soomaaliga](https://so.wikipedia.org/wiki/Tunisiya "Tunisiya – somali")
+  * [Shqip](https://sq.wikipedia.org/wiki/Tunizia "Tunizia – albanais")
+  * [Српски / srpski](https://sr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – serbe")
+  * [SiSwati](https://ss.wikipedia.org/wiki/IThunisiya "IThunisiya – swati")
+  * [Sesotho](https://st.wikipedia.org/wiki/Tunisia "Tunisia – sotho du Sud")
+  * [Seeltersk](https://stq.wikipedia.org/wiki/Tunesien "Tunesien – saterlandais")
+  * [Sunda](https://su.wikipedia.org/wiki/Tunisia "Tunisia – soundanais")
+  * [Svenska](https://sv.wikipedia.org/wiki/Tunisien "Tunisien – suédois")
+  * [Kiswahili](https://sw.wikipedia.org/wiki/Tunisia "Tunisia – swahili")
+  * [ꠍꠤꠟꠐꠤ](https://syl.wikipedia.org/wiki/%EA%A0%94%EA%A0%A4%EA%A0%83%EA%A0%98%EA%A0%A4%EA%A0%A1%EA%A0%A4%EA%A0%80 "ꠔꠤꠃꠘꠤꠡꠤꠀ – Sylheti")
+  * [Ślůnski](https://szl.wikipedia.org/wiki/T%C5%AFnezyjo "Tůnezyjo – silésien")
+  * [Sakizaya](https://szy.wikipedia.org/wiki/Tunisia "Tunisia – Sakizaya")
+  * [தமிழ்](https://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AF%82%E0%AE%A9%E0%AE%BF%E0%AE%9A%E0%AE%BF%E0%AE%AF%E0%AE%BE "தூனிசியா – tamoul")
+  * [Tayal](https://tay.wikipedia.org/wiki/Tunisia "Tunisia – Atayal")
+  * [తెలుగు](https://te.wikipedia.org/wiki/%E0%B0%9F%E0%B1%8D%E0%B0%AF%E0%B1%81%E0%B0%A8%E0%B1%80%E0%B0%B7%E0%B0%BF%E0%B0%AF%E0%B0%BE "ట్యునీషియా – télougou")
+  * [Тоҷикӣ](https://tg.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – tadjik")
+  * [ไทย](https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%95%E0%B8%B9%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2 "ประเทศตูนิเซีย – thaï")
+  * [ትግርኛ](https://ti.wikipedia.org/wiki/%E1%89%B1%E1%8A%92%E1%8B%9D%E1%8B%AB "ቱኒዝያ – tigrigna")
+  * [Türkmençe](https://tk.wikipedia.org/wiki/Tunis "Tunis – turkmène")
+  * [Tagalog](https://tl.wikipedia.org/wiki/Tunisia "Tunisia – tagalog")
+  * [Tolışi](https://tly.wikipedia.org/wiki/Tunis "Tunis – talysh")
+  * [Setswana](https://tn.wikipedia.org/wiki/Tunisia "Tunisia – tswana")
+  * [Toki pona](https://tok.wikipedia.org/wiki/ma_Tuni "ma Tuni – toki pona")
+  * [Türkçe](https://tr.wikipedia.org/wiki/Tunus "Tunus – turc")
+  * [Seediq](https://trv.wikipedia.org/wiki/Tunisia "Tunisia – taroko")
+  * [Xitsonga](https://ts.wikipedia.org/wiki/Tunisia "Tunisia – tsonga")
+  * [Татарча / tatarça](https://tt.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – tatar")
+  * [ChiTumbuka](https://tum.wikipedia.org/wiki/Tunisia "Tunisia – tumbuka")
+  * [Twi](https://tw.wikipedia.org/wiki/Tunisia "Tunisia – twi")
+  * [Удмурт](https://udm.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81_\(%D0%BA%D1%83%D0%BD\) "Тунис \(кун\) – oudmourte")
+  * [ئۇيغۇرچە / Uyghurche](https://ug.wikipedia.org/wiki/%D8%AA%DB%87%D9%86%D9%89%D8%B3 "تۇنىس – ouïghour")
+  * [Українська](https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – ukrainien")
+  * [اردو](https://ur.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – ourdou")
+  * [Oʻzbekcha / ўзбекча](https://uz.wikipedia.org/wiki/Tunis "Tunis – ouzbek")
+  * [Vèneto](https://vec.wikipedia.org/wiki/Tuniz%C3%ACa "Tunizìa – vénitien")
+  * [Vepsän kel’](https://vep.wikipedia.org/wiki/Tunis "Tunis – vepse")
+  * [Tiếng Việt](https://vi.wikipedia.org/wiki/Tunisia "Tunisia – vietnamien")
+  * [West-Vlams](https://vls.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – flamand occidental")
+  * [Volapük](https://vo.wikipedia.org/wiki/T%C3%BCnis%C3%A4n "Tünisän – volapük")
+  * [Walon](https://wa.wikipedia.org/wiki/Tunizeye "Tunizeye – wallon")
+  * [Winaray](https://war.wikipedia.org/wiki/Tunisia "Tunisia – waray")
+  * [Wolof](https://wo.wikipedia.org/wiki/Tiniisi "Tiniisi – wolof")
+  * [吴语](https://wuu.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E6%96%AF "突尼斯 – wu")
+  * [მარგალური](https://xmf.wikipedia.org/wiki/%E1%83%A2%E1%83%A3%E1%83%9C%E1%83%98%E1%83%A1%E1%83%98 "ტუნისი – mingrélien")
+  * [ייִדיש](https://yi.wikipedia.org/wiki/%D7%98%D7%95%D7%A0%D7%99%D7%A1%D7%99%D7%A2 "טוניסיע – yiddish")
+  * [Yorùbá](https://yo.wikipedia.org/wiki/Tunisia "Tunisia – yoruba")
+  * [Vahcuengh](https://za.wikipedia.org/wiki/Tunisia "Tunisia – zhuang")
+  * [Zeêuws](https://zea.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – zélandais")
+  * [ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ](https://zgh.wikipedia.org/wiki/%E2%B5%9C%E2%B5%93%E2%B5%8F%E2%B5%99 "ⵜⵓⵏⵙ – amazighe standard marocain")
+  * [文言](https://zh-classical.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E6%96%AF "突尼斯 – chinois littéraire")
+  * [閩南語 / Bân-lâm-gí](https://zh-min-nan.wikipedia.org/wiki/Tunisia "Tunisia – minnan")
+  * [粵語](https://zh-yue.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E8%A5%BF%E4%BA%9E "突尼西亞 – cantonais")
+  * [中文](https://zh.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E8%A5%BF%E4%BA%9E "突尼西亞 – chinois")
+  * [IsiZulu](https://zu.wikipedia.org/wiki/IThuniziya "IThuniziya – zoulou")
+
+
+[Modifier les liens](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Modifier les liens interlangues")
+  * [Article](https://fr.wikipedia.org/wiki/Tunisie "Voir le contenu de la page \[alt-c\]")
+  * [Discussion](https://fr.wikipedia.org/wiki/Discussion:Tunisie "Discussion au sujet de cette page de contenu \[alt-t\]")
+
+
 français
-, est dérivé du nom de la capitale,
-Tunis
-, suivi du
-suffixe
-latin
--ie
-[
-19
-]
-. Si le dérivé est adopté dans plusieurs autres langues pour différencier le pays de la ville de Tunis, il n'y a pas une telle adoption dans certaines langues, comme en
-arabe
-(
-تونس
-ou
-Tunis
-), en
-russe
-(
-Туни́с
-) et en
-espagnol
-(
-Túnez
-)
-[
-20
-]
-. Dans ces cas, seul le contexte permet de déterminer si l'on parle de la ville ou du pays.
-La partie nord du territoire de l'actuelle Tunisie est appelé
-Africa
-par les Romains après la
-conquête de Carthage
-, avant de désigner le
-continent
-à partir des
-XVI
-e
-et
-XVII
-e
-siècles
-[
-21
-]
-. La forme arabe
-Ifriqiya
-désigne ensuite la partie orientale du Maghreb médiéval
-[
-22
-]
-,
-[
-23
-]
-. La Tunisie est aussi désignée sous le nom de
-Maghreb Al Adna
-par les géographes arabes
-[
-24
-]
-.
-Géographie
-Article détaillé
-:
-Géographie de la Tunisie
-.
-La Tunisie, le plus petit des États du
-Maghreb
-, se situe au
-nord
-du
-continent africain
-. Il est séparé de l'
-Europe
-par une distance de
-140
-km
-au niveau du
-canal de Sicile
-. Le
-cap Angela
-, situé dans le
-gouvernorat de Bizerte
-, constitue le point le plus septentrional de l'Afrique continentale.
-Disposant d'une
-superficie
-de
-163 610
-km
-2
-[
-N 1
-]
-, le pays est limité à l'ouest par l'
-Algérie
-avec
-965
-km
-de
-frontière commune
-, au sud - sud-est par la
-Libye
-avec
-459
-km
-de
-frontière
-et au nord et à l'est par la
-mer Méditerranée
-avec
-1 566
-km
-de côtes (
-2 290
-km
-si l'on prend en compte les linéaires des îles, îlots, archipels et les linéaires artificiels)
-[
-25
-]
-.
-Le
-désert
-du
-Sahara
-occupe une superficie comprise entre 33
-% et 40
-% du territoire selon qu'on le définisse d'après son
-aridité
-ou selon des caractéristiques paysagères. La superficie des terres à vocation agricole est estimée à dix millions d'
-hectares
-, réparties en cinq millions de terres labourables, quatre millions de
-parcours naturels
-et un million de forêts et garrigues
-[
-26
-]
-.
-Topographie
-Topographie de la Tunisie.
-Silhouette du djebel Ressas dominant la plaine de Mornag.
-La Tunisie possède un
-relief
-contrasté avec une partie septentrionale et occidentale montagneuse, la
-dorsale tunisienne
-, située dans l'extension du massif montagneux de l'
-Atlas
-; elle est coupée par la
-plaine
-de la
-Medjerda
-, le seul
-cours d'eau
-du pays qui soit alimenté de façon continue.
-Le point culminant du territoire est le
-djebel Chambi
-culminant à
-1 544
-m
-[
-27
-]
-. À l'est, une plaine s'étend entre
-Hammamet
-et
-Ben Gardane
-, via le
-Sahel tunisien
-et la
-Djeffara
-.
-La partie méridionale du pays, principalement désertique, est marquée par une succession de
-chotts
-— notamment le
-Chott el-Gharsa
-, le
-Chott el-Jérid
-et le
-Chott el-Fejaj
-— ainsi que par les
-dunes
-du
-Grand Erg oriental
-[
-28
-]
-.
-Le
-littoral
-s'étend sur environ
-1 566
-km
-[
-29
-]
-dont environ
-575
-km
-de
-plages
-sablonneuses
-[
-30
-]
-. Il comprend des
-tombolos
-et des
-lagunes
-[
-31
-]
-. Une soixantaine d'îles jalonnent la côte, parmi lesquelles l'archipel des
-Kerkennah
-et l'île de
-Djerba
-[
-28
-]
-.
-Climat
-Paysage du
-Nord-Ouest tunisien
-.
-Paysage du Sud tunisien.
-Le
-climat
-de la Tunisie se divise en sept zones bioclimatiques. La différence entre le Nord et le reste du pays est liée à la
-dorsale tunisienne
-, qui sépare les zones soumises à un
-climat méditerranéen
-de celles caractérisées par un
-climat désertique
-. Entre ces deux ensembles, on trouve une zone à
-climat semi-aride
-présentant des caractéristiques intermédiaires
-[
-32
-]
-.
-En raison de sa situation géographique, le climat tunisien est influencé par des
-vents
-chauds et secs provenant du désert. Parmi eux, le
-sirocco
-peut souffler pendant de longues périodes et contribuer à une hausse des températures ainsi qu'à un assèchement de l'atmosphère
-[
-33
-]
-.
-Le pays bénéficie également d'un taux d'ensoleillement important dépassant
-3 000 heures
-par an et qui atteint des sommets dans le Sud désertique, aux abords des frontières algérienne et libyenne
-[
-34
-]
-,
-[
-35
-]
-.
-Les
-températures
-et les
-précipitations
-en Tunisie présentent un gradient marqué du nord vers le sud. Les régions du nord reçoivent des précipitations plus abondantes (500 à
-1 500
-mm
-par an), tandis que les régions centrales (150 à
-400
-mm
-) et méridionales (moins de
-178
-mm
-)) sont plus sèches. Dans le sud, les températures estivales peuvent atteindre des niveaux très élevés, dépassant parfois
-50
-°C
-dans les zones désertiques
-[
-33
-]
-.
-Environnement
-Articles connexes
-:
-Environnement en Tunisie
-,
-Flore de Tunisie
-,
-Faune de Tunisie
-,
-Liste des écorégions de Tunisie
-et
-Liste des sites Ramsar en Tunisie
-.
-Figuier de Barbarie
-.
-La
-flore
-varie beaucoup en fonction des régions
-: celle des régions côtières est semblable à celle de l'Europe méridionale et comprend
-prairies
-,
-garrigue
-,
-maquis
-et forêts de
-chênes-lièges
-. Plus au sud, la végétation est de
-type steppique
-avec une dominance de l'
-alfa
-. Dans les régions arides de l'extrême sud, les
-oasis
-sont plantées de
-palmiers-dattiers
-.
-Quinze aires naturelles ont été érigées en
-parcs nationaux
-[
-36
-]
-. Le
-parc national de l'Ichkeul
-, qui s'étend sur
-12 600
-hectares
-, est inscrit sur la liste du
-patrimoine mondial
-de l'
-Unesco
-[
-37
-]
-. Il existe également seize réserves naturelles qui ont pour but d'être un habitat pour des espèces ayant une valeur écologique, économique et en tant qu'
-écosystèmes
-vulnérables.
-Caméléon commun
-.
-Selon une étude du programme méditerranéen du
-WWF
-, la région côtière du
-Nord-Ouest
-figure parmi les treize sites de la Méditerranée qui se distinguent par leur richesse naturelle, leur
-biodiversité
-et leurs
-espèces
-végétales et animales uniques.
-Dans ce contexte, la Tunisie est le pays méditerranéen le plus touché par le
-changement climatique
-, lequel favorise les pénuries d'eau et l'
-érosion
-des côtes
-[
-38
-]
-. Depuis plusieurs années, l'
-agriculture
-est exposée à des
-sécheresses
-récurrentes qui participent à l'
-exode rural
-. En outre,
-«
-pour compenser la raréfaction des pluies, les agriculteurs utilisent toujours plus d'
-engrais
-et de
-pesticides
-»
-, souligne la chercheuse Samia Mouheli. Ainsi, selon la
-FAO
-, le pays est passé de cinq kilos d'engrais chimiques utilisés à l'hectare au début des
-années 1960
-à près de
-25
-kg
-au milieu des
-années 1990
-. Les pollutions industrielles, favorisées par un manque de régulation étatique, constituent également un frein au
-développement durable
-dans le pays
-[
-39
-]
-.
-La Tunisie est dans une situation de
-stress hydrique
-selon les critères de l'
-ONU
-(moins de
-500
-m
-3
-d'eau par habitant et par an). La
-Medjerda
-, le grand fleuve tunisien, est menacé par la
-pollution
-; sa qualité n'a cessé de baisser et, selon l'étude du
-ministère de l'Environnement
-réalisée en 2018,
-«
-60 000 tonnes de polluants
-»
-finissent chaque année dans le fleuve
-[
-40
-]
-.
-Géographie humaine
-Article connexe
-:
-Urbanisation de la Tunisie
-.
-Village près de
-Sejnane
-.
-Banlieue nord de Tunis.
-L'espace tunisien apparaît inégalement peuplé et développé sur le plan
-socioéconomique
-selon un
-gradient
-intérieur-littoral (ouest-est)
-: les treize
-gouvernorats
-côtiers totalisent ainsi 65,3
-% de la population totale avec une forte densité de population (
-140 habitants
-par km
-2
-contre 65,6 pour l'ensemble du pays
-[
-41
-]
-).
-La Tunisie est urbanisée à environ 69
-% en 2018
-[
-42
-]
-, et connaît un taux d'urbanisation annuelle de 3,6
-%. Le réseau urbain se situe sur la bande littorale orientale, entre les régions de
-Bizerte
-et
-Gabès
-en passant par
-Tunis
-, le
-cap Bon
-, le
-Sahel
-et
-Sfax
-(centre-est du pays), qui dispose des plus grandes infrastructures économiques et concentre plus de 80
-% de la population urbaine. Au terme du
-recensement
-de 2014
-[
-2
-]
-, les principales
-municipalités
-sont
-:
-Principales municipalités de Tunisie
-N
-o
-Nom
-Gouvernorat
-Pop. (2014)
-N
-o
-Nom
-Gouvernorat
-Pop. (2014)
-1
-Tunis
-Tunis
-1 056 247
-11
-El Mourouj
-Ben Arous
-104 538
-2
-Sfax
-Sfax
-272 801
-12
-Gafsa
-Gafsa
-95 242
-3
-Sousse
-Sousse
-221 530
-13
-Raoued
-Ariana
-94 961
-4
-Ettadhamen-Mnihla
-Ariana
-142 953
-14
-Monastir
-Monastir
-93 306
-5
-Kairouan
-Kairouan
-139 070
-15
-La Marsa
-Tunis
-92 987
-6
-Bizerte
-Bizerte
-136 917
-16
-Ben Arous
-Ben Arous
-88 322
-7
-Gabès
-Gabès
-130 914
-17
-Kasserine
-Kasserine
-83 534
-8
-La Soukra
-Ariana
-129 693
-18
-Douar Hicher
-La Manouba
-82 532
-9
-Sidi Hassine
-Tunis
-109 690
-19
-Houmt Souk
-Médenine
-75 904
-10
-Mohamedia
-Ben Arous
-106 167
-20
-Le Kram
-Tunis
-74 132
-Source
-:
-Institut national de la statistique
-Géographie administrative
-La Tunisie est divisée en 24
-gouvernorats
-qui portent le nom de leurs
-chefs-lieux
-:
-Gouvernorats de Tunisie.
-1.
-Gouvernorat de l'Ariana
-2.
-Gouvernorat de Béja
-3.
-Gouvernorat de Ben Arous
-4.
-Gouvernorat de Bizerte
-5.
-Gouvernorat de Gabès
-6.
-Gouvernorat de Gafsa
-7.
-Gouvernorat de Jendouba
-8.
-Gouvernorat de Kairouan
-9.
-Gouvernorat de Kasserine
-10.
-Gouvernorat de Kébili
-11.
-Gouvernorat du Kef
-12.
-Gouvernorat de Mahdia
-13.
-Gouvernorat de la Manouba
-14.
-Gouvernorat de Médenine
-15.
-Gouvernorat de Monastir
-16.
-Gouvernorat de Nabeul
-17.
-Gouvernorat de Sfax
-18.
-Gouvernorat de Sidi Bouzid
-19.
-Gouvernorat de Siliana
-20.
-Gouvernorat de Sousse
-21.
-Gouvernorat de Tataouine
-22.
-Gouvernorat de Tozeur
-23.
-Gouvernorat de Tunis
-24.
-Gouvernorat de Zaghouan
-Palais de la municipalité de Nabeul.
-À leur tête se trouvent des
-gouverneurs
-, nommés par le président de la République, qui sont les
-«
-dépositaires
-»
-de l'autorité de l'État. Trois institutions les aident à accomplir leurs missions
-: le
-Conseil local de développement
-, le Conseil rural et le Comité de quartier.
-Aux côtés des gouverneurs se trouvent les Conseils régionaux qui sont chargés d'examiner
-«
-toutes les questions intéressant le gouvernorat dans les domaines économiques, sociaux et culturels
-»
-[
-43
-]
-. Ils sont régis par la loi organique
-n
-o
-89-11
-du
-4 février 1989
-, selon laquelle le président du Conseil régional élabore le projet de budget du gouvernorat et le présente au conseil pour décision. Il est chargé de son exécution et veille à la perception des impôts et taxes revenant à la collectivité publique conformément à la législation en vigueur
-[
-44
-]
-.
-Les gouvernorats sont subdivisés en
-264 circonscriptions
-administratives
-: les
-délégations
-. Depuis un décret du 26 mai 2016, l'entièreté du territoire est également subdivisé en 350
-municipalités
-[
-45
-]
-. La plus petite division administrative est le secteur ou
-imada
-, dont le nombre se monte à
-2 073
-[
-46
-]
-.
-Histoire
-Article détaillé
-:
-Histoire de la Tunisie
-.
-Au travers des millénaires, le territoire de l'actuelle Tunisie a successivement été sous l'influence des cultures
-ibéromaurusienne
-,
-capsienne
-,
-libyque
-,
-carthaginoise
-,
-romaine
-,
-byzantine
-,
-vandale
-,
-omeyyade
-,
-muhallabide
-,
-aghlabide
-,
-fatimide
-,
-ziride
-,
-hilalienne
-,
-khourassanide
-,
-siculo-normande
-,
-almohade
-,
-hafside
-,
-ottomane
-,
-husseinite
-et
-française
-.
-Ces circonstances, ainsi que la position de la Tunisie à l'intersection entre le
-Bassin méditerranéen
-, l'
-Europe
-, le
-Moyen-Orient
-et l'
-Afrique
-, ont influencé la
-culture
-du pays.
-Préhistoire et protohistoire
-Article détaillé
-:
-Préhistoire de la Tunisie
-.
-Les premières traces de présence humaine en Tunisie datent du
-Paléolithique
-. C'est à vingt kilomètres à l'est de
-Gafsa
-, dans l'oasis d'
-El Guettar
-, que se rassemble une petite population
-nomade
-de chasseurs-cueilleurs
-moustériens
-[
-47
-]
-. Michel Gruet, l'archéologue qui découvre le site, relève qu'ils consomment des
-dattes
-dont il retrouve le
-pollen
-aux alentours de la source
-[
-48
-]
-asséchée
-[
-49
-]
-.
-Mégalithes près de Makthar.
-Squelette capsien en position repliée.
-À une culture
-ibéromaurusienne
-, répartie sur le littoral
-[
-50
-]
-et relativement minime en Tunisie
-[
-51
-]
-, succède la période du
-Capsien
-, nom créé par
-Jacques de Morgan
-et issu du
-latin
-Capsa
-, qui a lui-même donné le nom de l'actuelle
-Gafsa
-[
-52
-]
-. Morgan définit le Capsien comme étant une culture allant du
-Paléolithique supérieur
-au
-Néolithique
-, couvrant ainsi une période qui s'étend du
-VIII
-e
-au
-V
-e
-millénaires
-av. J.-C.
-[
-53
-]
-. D'un point de vue ethnologique et archéologique, le Capsien prend une importance plus grande puisque des
-ossements
-et des traces d'activité humaine remontant à plus de
-15 000 ans
-sont découverts dans la région. Outre la fabrication d'outils en
-pierre
-et en silex, les Capsiens produisaient, à partir d'ossements, divers outils dont des aiguilles pour coudre des vêtements à partir de peaux d'animaux.
-Au
-Néolithique
-(
-4500
-à
-2500 av. J.-C.
-environ), arrivé tardivement dans cette région, la présence humaine est conditionnée par la formation du
-désert saharien
-, qui acquiert son climat actuel. De même, c'est à cette époque que le peuplement de la Tunisie s'enrichit par l'apport des
-Berbères
-[
-54
-]
-, issus semble-t-il de la migration vers le nord de populations libyques
-[
-55
-]
-(ancien terme
-grec
-désignant les populations africaines en général
-[
-56
-]
-). Le Néolithique voit également le contact s'établir entre les
-Phéniciens
-de
-Tyr
-, les futurs
-Carthaginois
-qui fondent la
-civilisation punique
-, et les peuples autochtones de l'actuelle Tunisie, dont les Berbères sont désormais devenus la composante essentielle.
-On observe le passage de la
-Préhistoire
-à l'
-Histoire
-principalement dans l'apport des populations phéniciennes, même si le mode de vie néolithique continue un temps à exister aux côtés de celui des nouveaux arrivants. Cet apport est nuancé, notamment à Carthage (centre de la civilisation punique en
-Occident
-), par la coexistence de différentes populations minoritaires mais dynamiques comme les Berbères, les Grecs, les Italiens ou les
-Ibères
-d'Espagne. Les nombreux mariages mixtes contribuent à l'établissement de la civilisation punique
-[
-57
-]
-.
-Antiquité
-De la Carthage punique à la Carthage romaine
-Article détaillé
-:
-Histoire de Carthage
-.
-Articles connexes
-:
-Civilisation carthaginoise
-et
-Afrique romaine
-.
-Capitole de Dougga.
-Buste du général carthaginois
-Hannibal Barca
-.
-Ruines du
-site archéologique de Carthage
-.
-Mosaïque
-découverte à
-Sousse
-représentant
-Virgile
-tenant L'
-Énéide
-et entouré de deux
-muses
-[
-N 2
-]
-, Musée du Bardo.
-Arc de Dioclétien dédié aux empereurs de la première
-tétrarchie
-et situé sur le
-site archéologique de Sbeïtla
-.
-Ruines de la
-basilique de Damous El Karita
-à Carthage.
-L'entrée de la Tunisie dans l'histoire se fait par l'expansion d'une cité issue d'une colonisation
-proche-orientale
-[
-58
-]
-. La Tunisie accueille progressivement une série de
-comptoirs
-phéniciens
-comme bien d'autres régions méditerranéennes. Le premier comptoir selon la tradition est celui d'
-Utique
-[
-59
-]
-, qui date de 1101 av. J.-C
-[
-60
-]
-. En
-814 av. J.-C.
-, des colons phéniciens venus de
-Tyr
-[
-61
-]
-fondent la ville de
-Carthage
-[
-62
-]
-. D'après la légende, c'est la reine Élyssa (
-Didon
-pour les Romains), sœur du roi de Tyr
-Pygmalion
-, qui est à l'origine de la cité
-[
-63
-]
-. Ouverte sur la mer, Carthage est également ouverte structurellement sur l'extérieur. Un siècle et demi après la fondation de la ville, les Carthaginois ou Puniques étendent leur emprise sur le bassin occidental de la
-mer Méditerranée
-.
-Cette présence prend diverses formes, y compris celle de la
-colonisation
-[
-62
-]
-, mais reste d'abord commerciale (comptoirs de commerce, signature de traités
-,
-etc.
-)
-[
-64
-]
-. La mutation vers un empire plus terrestre se heurte aux Grecs de Sicile puis à la puissance montante de
-Rome
-[
-62
-]
-et de ses alliés massaliotes,
-campaniens
-ou italiotes. Le cœur carthaginois qu'est la Tunisie, à la veille des
-guerres puniques
-, possède une capacité de production agricole supérieure à celle de Rome et de ses alliés réunis, et son exploitation fait l'admiration des Romains. La lutte entre Rome et Carthage prend de l'ampleur avec l'essor des deux cités
-: ce sont les trois guerres puniques, qui faillirent voir la prise de Rome mais se conclurent par la destruction de Carthage, en
-146 av. J.-C.
-, après un
-siège
-de trois ans
-[
-64
-]
-. À l'issue de la
-troisième guerre punique
-, Rome s'installe sur les décombres de la ville
-[
-62
-]
-. La fin des guerres puniques marque l'établissement de la
-province romaine d'Afrique
-dont
-Utique
-devient la première capitale, même si le site de Carthage s'impose à nouveau par ses avantages et redevient capitale en
-14
-[
-62
-]
-,
-[
-65
-]
-.
-En
-44 av. J.-C.
-,
-Jules César
-décide d'y fonder une
-colonie romaine
-, la
-Colonia Julia Carthago
-[
-66
-]
-, mais il faudra attendre quelques décennies pour qu'
-Auguste
-lance les travaux de la cité. La région connaît alors une période de prospérité où l'Afrique devient pour Rome un fournisseur essentiel de productions agricoles
-[
-55
-]
-, comme le
-blé
-et l'
-huile d'olive
-, grâce aux plantations d'
-oliviers
-chères aux Carthaginois
-[
-62
-]
-. La province se couvre d'un réseau dense de cités romanisées dont les vestiges encore visibles à l'heure actuelle demeurent impressionnants
-: il suffit de mentionner les sites de
-Dougga
-(antique
-Thugga
-),
-Sbeïtla
-(
-Sufetula
-),
-Bulla Regia
-,
-El Jem
-(
-Thysdrus
-) ou
-Thuburbo Majus
-. Partie intégrante de la
-République
-puis de l'
-Empire
-avec la
-Numidie
-[
-62
-]
-, la Tunisie devient pendant six siècles le siège d'une civilisation romano-africaine d'une exceptionnelle richesse, fidèle à sa vocation de
-«
-carrefour du monde antique
-»
-. La Tunisie est alors le creuset de l'art de la
-mosaïque
-, qui s'y distingue par son originalité et ses innovations.
-Concurrents des dieux romains, des dieux indigènes apparaissent sur des frises d'époque impériale, et le culte de certaines divinités,
-Saturne
-et
-Caelestis
-, s'inscrit dans la continuité du culte voué par les Puniques à
-Ba'al Hammon
-et à
-Tanit
-, sa
-parèdre
-[
-67
-]
-. Le
-«
-carrefour du monde antique
-»
-voit aussi l'installation précoce de
-communautés juives
-[
-66
-]
-et, dans le sillage de celles-ci, des premières communautés chrétiennes. L'apogée du
-II
-e
-et du début du
-III
-e
-siècle
-ne va toutefois pas sans heurts
-[
-62
-]
-, la province connaissant quelques crises au
-III
-e
-siècle
-av. J.-C.
-: elle est frappée par la répression de la révolte de
-Gordien
-I
-er
-en 238
-[
-68
-]
-; elle subit de même les affrontements entre usurpateurs au début du
-IV
-e
-siècle
-.
-La province est l'une des moins touchées par les difficultés que connaît l'Empire romain entre 235 et le début du
-IV
-e
-siècle
-. Avec la
-Tétrarchie
-, la province recouvre une prospérité que révèlent les vestiges archéologiques, provenant tant de constructions publiques que d'habitations privées. Cette époque est aussi le premier siècle du christianisme officiel, devenu religion licite en 313 et religion personnelle de l'empereur
-Constantin
-[
-62
-]
-.
-Christianisation
-Dans un espace ouvert sur l'extérieur comme l'est alors la
-province d'Afrique
-, le
-christianisme
-se développe de façon précoce
-[
-69
-]
-grâce aux colons, commerçants et soldats, et la région devient l'un des foyers essentiels de la diffusion de la nouvelle foi, même si les affrontements religieux y sont violents avec les
-païens
-. Dès le
-II
-e
-siècle
-, la province applique aussi les sanctions impériales, les premiers
-martyrs
-étant attestés dès le
-17 juillet 180
-: ceux qui refusent de se rallier au culte officiel peuvent être torturés, relégués sur des îles, décapités, livrés aux bêtes féroces, brûlés voire crucifiés.
-À la fin du
-II
-e
-siècle
-, la nouvelle religion se développe, avec l'apparition de communautés structurées notamment à Carthage. Les écrits de
-Tertullien
-témoignent de l'ancienneté et du dynamisme du christianisme africain
-[
-70
-]
-. Au cours du
-III
-e
-siècle
-, l'
-Église d'Afrique
-se structure autour d'un réseau dense d'
-évêchés
-urbains. Sous l'épiscopat de
-Cyprien de Carthage
-(vers 249-258), l'institution ecclésiale affirme son autorité disciplinaire et développe une importante activité caritative, ce qui renforce son rôle social dans les cités africaines
-[
-71
-]
-. La forte urbanisation de l'Afrique romaine, caractérisée par un réseau dense de cités en Proconsulaire et en Numidie, favorise la diffusion des idées religieuses et l'implantation rapide des communautés chrétiennes
-[
-72
-]
-. Un tournant majeur intervient avec l'
-Édit de Thessalonique
-promulgué le
-27 février 380
-par l'empereur
-Théodose
-I
-er
-, qui fait du
-christianisme nicéen
-la religion officielle de l'Empire romain. Cette mesure renforce considérablement la position institutionnelle de l'Église, même si la disparition des autres cultes est progressive et s'étend sur plusieurs décennies. Au
-V
-e
-siècle
-, sous l'action dynamique d'
-Augustin d'Hippone
-(évêque d'Hippone de 395 à 430) et de nombreux
-évêques
-africains, le christianisme s'enracine profondément dans la société. Les élites foncières et l'
-aristocratie
-urbaine se rallient progressivement à la nouvelle religion, qui intègre alors les différentes couches sociales
-[
-73
-]
-. Aux
-IV
-e
-et
-V
-e
-siècles
-, l'Afrique romaine devient ainsi l'un des principaux centres du christianisme latin occidental, tant par sa production théologique que par la vitalité de ses institutions ecclésiales
-[
-74
-]
-.
-Cyprien de Carthage
-, évêque de Carthage.
-Cette expansion rencontre toutefois des obstacles, en particulier lors du
-schisme
-donatiste
-[
-62
-]
-qui est condamné de façon définitive au
-concile de Carthage
-. Ce dernier accuse les schismatiques d'avoir coupé les liens entre l'Église africaine et les Églises orientales originelles. En dépit de cette lutte religieuse, la conjoncture économique, sociale et culturelle est relativement favorable au moment du triomphe du christianisme
-[
-75
-]
-, comme en témoignent les nombreux vestiges, notamment de
-basiliques
-à Carthage et de nombreuses églises aménagées dans d'anciens temples païens (comme à Sbeïtla) ou même certaines églises rurales. Le
-19 octobre 439
-, après s'être rendus maîtres d'
-Hippone
-[
-76
-]
-, les
-Vandales
-et les
-Alains
-de
-Genséric
-entrent dans Carthage, où ils installent leur
-royaume
-pour près d'un siècle
-[
-77
-]
-. Les Vandales sont adeptes de l'
-arianisme
-[
-78
-]
-, déclarée
-hérésie
-au
-concile de Nicée
-, ce qui ne facilite pas les relations entre eux et les notables locaux majoritairement
-chalcédoniens
-. Or les Vandales exigent de la population une totale allégeance à leur pouvoir et à leur foi. En conséquence, ceux qui tentent de s'opposer aux Vandales ou à l'arianisme sont persécutés
-: de nombreux hommes d'Église sont martyrisés, emprisonnés ou exilés
-[
-79
-]
-dans des camps au sud de
-Gafsa
-. Dans le domaine économique, les Vandales appliquent à l'Église la politique de confiscation dont doivent pâtir les grands propriétaires. Cependant, la
-culture latine
-reste largement préservée
-[
-80
-]
-et le christianisme prospère tant qu'il ne s'oppose pas au souverain en place.
-Baptistère
-de l'église de Vitalis située sur le
-site archéologique de Sbeïtla
-.
-Genséric
-, roi des
-Vandales
-de Carthage, s'emparant de la
-menorah
-lors du
-sac de Rome
-(455).
-Moyen Âge
-Période byzantine
-Dans ce contexte, le territoire, enserré par des principautés berbères, est attaqué par les tribus de
-nomades
-chameliers
-: la défaite, en
-décembre 533
-à la
-bataille de Tricaméron
-[
-81
-]
-, confirme l'anéantissement de la puissance militaire vandale. Carthage est prise facilement par les
-Byzantins
-dirigés par le
-général
-Bélisaire
-[
-55
-]
-, envoyé par
-Justinien
-[
-82
-]
-, le roi vandale
-Gélimer
-se rendant en 534
-[
-82
-]
-. Malgré la résistance des Berbères, les Byzantins rétablissent l'esclavage et instituent de lourds impôts
-[
-83
-]
-. Par ailleurs, l'administration romaine est restaurée. L'
-Église d'Afrique
-est mise au pas et Justinien fait alors de Carthage le siège de son
-diocèse
-d'Afrique. À la fin du
-VI
-e
-siècle
-, la région est placée sous l'autorité d'un
-exarque
-cumulant les pouvoirs civil et militaire, et disposant d'une large autonomie vis-à-vis de l'empereur. Prétendant imposer le christianisme d'État, les Byzantins pourchassent le paganisme, le judaïsme et les hérésies chrétiennes
-[
-83
-]
-. Pourtant, à la suite de la crise
-monothéliste
-, les empereurs byzantins, opposés à l'Église locale, se détournent de la cité. Or, avec une Afrique byzantine entraînée dans le marasme, un état d'esprit insurrectionnel secoue des
-confédérations
-de tribus sédentarisées et constituées en principautés. Ces tribus berbères sont d'autant plus hostiles à l'Empire byzantin qu'elles ont conscience de leur propre force. Avant même sa prise par les
-Arabes
-en 698
-[
-84
-]
-, la capitale et, dans une certaine mesure, la province d'Afrique se sont vidées de leurs habitants byzantins. Dès le début du
-VII
-e
-siècle
-, l'archéologie témoigne en effet d'un repli, ceci étant particulièrement évident à Carthage
-[
-85
-]
-.
-Ifriqiya dans le Moyen Âge arabo-musulman
-Article détaillé
-:
-Tunisie à l'époque médiévale
-.
-Ribat de Monastir
-.
-La première expédition arabe sur la Tunisie est lancée en 650
-[
-86
-]
-, à l'époque du
-calife
-Othmân ibn Affân
-. Commandée par
-Abd Allâh ibn Saad
-, l'armée arabe écrase l'armée byzantine du
-patrice
-Grégoire près de
-Sbeïtla
-. En 666, une deuxième offensive menée par Mu'awiya ibn Hudayj à l'époque du calife omeyyade
-Muʿawiya
-I
-er
-se termine par la prise de plusieurs villes dont
-Sousse
-et
-Bizerte
-[
-86
-]
-. L'île de
-Djerba
-est prise en 667
-[
-86
-]
-. La troisième expédition, menée en 670 par
-Oqba Ibn Nafi al-Fihri
-, est décisive
-: ce dernier fonde la ville de
-Kairouan
-au cours de la même année
-[
-83
-]
-et cette ville devient la base des expéditions contre le Nord et l'Ouest du Maghreb
-[
-55
-]
-. L'invasion complète manque d'échouer avec la mort d'Ibn Nafi en 683
-[
-87
-]
-, à la suite d'une embuscade tendue par le chef berbère
-Koceïla
-au sud de l'
-Aurès
-[
-88
-]
-. Après la mort d'Ibn Nafi, les Arabes évacuent Kairouan, où s'installe Koceila qui devient le maître de l'Ifriqiya
-: les Byzantins ne sont plus, selon les historiens arabes, que ses simples auxiliaires
-[
-88
-]
-. Envoyé en 693 avec une puissante armée arabe, le général
-ghassanide
-Hassan Ibn Numan
-réussit à vaincre l'exarque et à prendre Carthage
-[
-89
-]
-en 695. Seuls résistent certains Berbères dirigés par la
-Kahena
-[
-89
-]
-.
-Les Byzantins, profitant de leur supériorité navale, débarquent une armée qui s'empare de Carthage en 696 pendant que la Kahena remporte une bataille contre les Arabes en 697
-[
-89
-]
-. Ces derniers, au prix d'un nouvel effort, finissent cependant par reprendre définitivement Carthage en 698 et par vaincre et tuer la Kahena
-[
-87
-]
-. Contrairement aux
-Phéniciens
-, les Arabes ne se contentent pas d'occuper la côte et entreprennent de conquérir l'intérieur du pays. Après avoir résisté, les Berbères se convertissent à la religion de leurs vainqueurs
-[
-87
-]
-, principalement à travers leur recrutement dans les rangs de l'armée victorieuse. Des centres de formation religieuse s'organisent alors, comme à Kairouan, au sein des nouveaux
-ribats
-. On ne saurait toutefois estimer l'ampleur de ce mouvement d'adhésion à l'islam. D'ailleurs, refusant l'assimilation, nombreux sont ceux qui rejettent la religion dominante et adhèrent au
-kharidjisme
-, courant religieux musulman né en Orient et proclamant notamment l'égalité de tous les musulmans sans distinction de race ni de classe
-[
-90
-]
-. La région reste une province omeyyade jusqu'en 750, quand la lutte entre
-Omeyyades
-et
-Abbassides
-voit ces derniers l'emporter
-[
-90
-]
-. De 767 à 776, les kharidjites berbères sous le commandement d'
-Abou Qurra
-s'emparent de tout le territoire, mais ils se retirent finalement dans le royaume de
-Tlemcen
-, après avoir tué Omar ibn Hafs, surnommé Hezarmerd, dirigeant de la Tunisie à cette époque
-[
-91
-]
-.
-Grande mosquée de Kairouan
-, plus ancien lieu de culte musulman du Maghreb, est le principal monument religieux de la Tunisie.
-En 800, le
-calife
-abbasside
-Hâroun ar-Rachîd
-délègue son pouvoir en
-Ifriqiya
-à l'
-émir
-Ibrahim ibn al-Aghlab
-[
-92
-]
-et lui donne le droit de transmettre ses fonctions par voie héréditaire
-[
-93
-]
-. Al-Aghlab établit la dynastie des
-Aghlabides
-, qui règne durant un siècle sur le
-Maghreb central
-et oriental. Le territoire bénéficie d'une indépendance formelle tout en reconnaissant la souveraineté abbasside
-[
-93
-]
-. La Tunisie devient un foyer culturel important avec le rayonnement de Kairouan et de sa
-grande mosquée
-, un centre intellectuel de haute renommée
-[
-94
-]
-. À la fin du règne de Ziadet Allah
-I
-er
-(817-838),
-Tunis
-devient la capitale de l'émirat jusqu'en 909
-[
-95
-]
-. Appuyée par les tribus
-Kutama
-qui forment une armée fanatisée, l'action du
-prosélyte
-ismaélien
-Abu Abd Allah ach-Chi'i
-entraîne la disparition de l'émirat en une quinzaine d'années (893-909). En
-décembre 909
-,
-Ubayd Allah al-Mahdi
-se proclame calife et fonde la dynastie des
-Fatimides
-, qui déclare usurpateurs les califes
-omeyyades
-et
-abbassides
-ralliés au
-sunnisme
-. L'État fatimide s'impose progressivement sur toute l'Afrique du Nord en contrôlant les routes caravanières et le commerce avec l'
-Afrique subsaharienne
-. En 945,
-Abu Yazid
-, de la grande tribu des
-Ifrenides
-, organise sans succès une
-grande révolte berbère
-pour chasser les Fatimides. Le troisième calife,
-Ismâ`îl al-Mansûr
-, transfère alors la capitale à Kairouan et s'empare de la Sicile
-[
-84
-]
-en 948. Lorsque la dynastie fatimide déplace sa base vers l'est en 972, trois ans après la conquête finale de la région, et sans abandonner pour autant sa suzeraineté sur l'Ifriqiya, le calife
-Al-Muʿizz li-Dīn Allāh
-confie à
-Bologhine ibn Ziri
-— fondateur de la dynastie des
-Zirides
-— le soin de gouverner la province en son nom. Les Zirides prennent peu à peu leur indépendance vis-à-vis du calife fatimide
-[
-84
-]
-, ce qui culmine lors de la rupture avec ce suzerain devenu lointain et inaugure l'ère de l'émancipation berbère.
-Minaret
-de la
-mosquée Zitouna
-de style almohade.
-L'envoi depuis l'Égypte des tribus arabes
-nomades
-vers l'Ifriqiya constitue, dans la tradition historiographique, une réplique des Fatimides à la rupture des Zirides avec le califat du Caire en 1048
-[
-96
-]
-. Les
-Hilaliens
-, suivis des
-Banu Sulaym
-, auraient compté environ
-50 000 guerriers
-et
-200 000
-Bédouins
-[
-96
-]
-. Avant leur départ, des actes d'investiture assimilables à de véritables titres de propriété leur auraient été accordés au nom du calife fatimide
-[
-96
-]
-. Après leur victoire près de Gabès (
-bataille de Haydarân
-),
-Kairouan
-résiste durant cinq ans avant d'être prise et saccagée en [
-novembre 1057
-[
-96
-]
-,
-[
-97
-]
-. Le souverain ziride se replie alors sur
-Mahdia
-, tandis que les tribus nomades se répandent vers l'ouest, en direction de l'Algérie
-; la vallée de la
-Medjerda
-demeura alors l'un des rares axes encore fréquentés par les marchands
-[
-96
-]
-. Après l'échec d'une tentative de réimplantation en Sicile, reprise par les
-Normands
-, la dynastie ziride s'efforce pendant près de
-90 ans
-de reconquérir une partie de son territoire, organisant notamment des expéditions afin de compenser ses pertes économiques
-[
-96
-]
-.
-À partir du premier tiers du
-XII
-e
-siècle
-, la Tunisie est régulièrement attaquée par les Normands de Sicile et du Sud de l'Italie, basés dans le
-royaume normano-sicilien
-, qui finissent par conquérir l'ensemble du littoral tunisien et y fonde le
-Royaume d'Afrique
-. Celui-ci est une extension de la frontière
-siculo-normande
-dans l'ancienne
-province romaine d'Afrique
-(alors appelée
-Ifriqiya
-), qui correspond à la Tunisie actuelle ainsi qu'à une partie de l'
-Algérie
-et de la
-Libye
-. Les sources primaires ayant trait au royaume sont en
-arabe
-[
-98
-]
-alors que les sources
-latines
-(chrétiennes) sont plus rares. Selon Hubert Houben, étant donné qu'
-«
-Afrique
-»
-n'a jamais été officiellement ajouté aux titres royaux des rois de Sicile
-«
-on ne devrait pas parler d'un ‘Royaume Norman d'Afrique' à proprement parler
-»
-[
-99
-]
-. L'
-«
-Afrique normande
-»
-est plutôt une constellation de villes gouvernées par les Normands sur la côte ifriqiyenne
-[
-100
-]
-.
-Carte de l'Afrique normande en 1154.
-La conquête sicilienne de l'Ifriqiya commence sous le règne de
-Roger II de Sicile
-en 1146-1148. Le règne sicilien consiste en des
-garnisons
-militaires dans les principales villes, des exactions sur les populations musulmanes, la protection des chrétiens et le monnayage de pièces de monnaie. L'aristocratie locale est largement gardée en place et des princes musulmans se chargent des affaires civiles sous surveillance normande. Les relations économiques entre la Sicile et l'Ifriqiya, qui étaient déjà fortes avant la conquête, sont renforcées, tandis que les échanges entre l'Ifriqiya et le Nord de l'Italie sont étendus. Sous le règne de
-Guillaume
-I
-er
-de Sicile
-, le Royaume d'Afrique tombe aux mains des
-Almohades
-(1158-1160). Son héritage le plus durable est le réalignement des puissances méditerranéennes provoqué par sa disparition et la paix siculo-almohade finalisée en 1180. L'ensemble du territoire de l'Ifriqiya finit par être occupé par l'armée du sultan almohade
-Abd al-Mumin
-lors de son expédition depuis le nord du
-Maroc
-en 1159
-[
-101
-]
-. L'économie devient florissante
-[
-102
-]
-et des relations commerciales s'établissent avec les principales villes du pourtour méditerranéen (
-Pise
-,
-Gênes
-,
-Marseille
-,
-Venise
-et certaines villes d'
-Espagne
-).
-L'essor touche également le domaine culturel
-[
-102
-]
-avec les œuvres du grand historien et père de la sociologie
-Ibn Khaldoun
-; le siècle almohade est considéré comme l'
-«
-âge d'or
-»
-du Maghreb
-[
-102
-]
-. De grandes villes se développent et les plus belles mosquées sont érigées à cette époque
-[
-103
-]
-. Les Almohades confient la Tunisie à
-Abû Muhammad `Abd al-Wâhid ben Abî Hafs
-mais son fils
-Abû Zakariyâ Yahyâ
-se sépare d'eux en
-1228
-et fonde la nouvelle dynastie berbère
-[
-65
-]
-des
-Hafsides
-[
-104
-]
-. Elle acquiert son indépendance dès
-1236
-[
-105
-]
-et dirige la Tunisie jusqu'en 1574
-[
-92
-]
-, ce qui en fait la première dynastie tunisienne par sa durée
-[
-106
-]
-. Elle établit la capitale du pays à Tunis
-[
-92
-]
-, et la ville se développe grâce au commerce avec les Vénitiens, les Génois, les
-Aragonais
-et les Siciliens
-[
-84
-]
-.
-Tunisie ottomane
-Article détaillé
-:
-Régence de Tunis
-.
-Carte maritime
-ottomane
-du
-XVI
-e
-siècle
-représentant la côte sud-est de la Tunisie dont Djerba.
-Nouvelle armée beylicale vers 1840.
-Proclamation du
-Pacte fondamental
-en 1857, précurseur de la
-Constitution de 1861
-.
-Les Hafsides de Tunis s'essoufflent et perdent peu à peu, après la
-bataille de Kairouan
-en 1348, le contrôle de leurs territoires au profit des
-Mérinides
-d'
-Abu Inan Faris
-[
-105
-]
-, alors que, frappée de plein fouet par la
-peste
-[
-107
-]
-de 1384, l'Ifriqiya continue de subir une désertification démographique amorcée par les invasions hilaliennes. C'est alors que commencent à arriver les
-Maures
-musulmans et
-juifs
-andalous
-[
-84
-]
-fuyant la déchéance du
-royaume de Grenade
-en 1492 et occasionnant des problèmes d'assimilation.
-Temps modernes
-En une dizaine d'années, les souverains espagnols
-Ferdinand d'Aragon
-et
-Isabelle de Castille
-prennent les cités de
-Mers el-Kébir
-,
-Oran
-,
-Bougie
-,
-Tripoli
-et l'îlot situé en face d'
-Alger
-. Pour s'en libérer, les autorités de la cité sollicitent l'aide de deux corsaires renommés, d'origine grecque
-: les frères
-Arudj
-et
-Khayr ad-Din Barberousse
-[
-108
-]
-.
-La Tunisie offrant un environnement favorable, les frères Barberousse s'y illustrent
-: Arudj reçoit en effet du souverain hafside aux abois l'autorisation d'utiliser le port de
-La Goulette
-puis l'île de
-Djerba
-comme base. Après la mort d'Arudj, son frère Khayr ad-Din se place dans la
-vassalité
-du sultan de Constantinople. Nommé grand
-amiral
-de l'Empire ottoman, il s'empare de Tunis en 1534 mais doit se retirer après la
-prise de la ville
-par l'armada que
-Charles Quint
-mène en 1535
-[
-84
-]
-,
-. En 1560,
-Dragut
-parvient à Djerba et, en 1574, Tunis est reprise par les Ottomans
-[
-92
-]
-, qui font de la Tunisie une province de leur empire
-[
-78
-]
-en 1575. Pourtant, malgré leurs victoires, les Ottomans ne s'implantent guère en Tunisie.
-Première page du Pacte fondamental de 1857.
-Au cours du
-XVII
-e
-siècle
-, leur rôle ne cesse de décroître au profit des dirigeants locaux qui s'émancipent progressivement de la tutelle du sultan de Constantinople
-[
-109
-]
-alors que seuls
-4 000
-janissaires
-sont en poste à Tunis. Au bout de quelques années d'administration turque, plus précisément en 1590
-[
-65
-]
-, ces
-janissaires
-s'insurgent, plaçant à la tête de l'État un
-dey
-et, sous ses ordres, un
-bey
-[
-110
-]
-chargé du contrôle du territoire et de la collecte des impôts. Ce dernier ne tarde pas à devenir le personnage essentiel de la
-régence
-[
-92
-]
-aux côtés du
-pacha
-, qui reste confiné dans le rôle honorifique de représentant du
-sultan ottoman
-, au point qu'une dynastie beylicale finit par être fondée par
-Mourad Bey
-en 1613
-[
-111
-]
-.
-Le
-15 juillet 1705
-,
-Hussein
-I
-er
-Bey
-fonde la dynastie des
-Husseinites
-[
-106
-]
-,
-[
-112
-]
-. Le
-13 mai 1752
-, Ali Metzan prend les armes contre son père, le vieux dey qu'il oblige à lui confier la direction de l'État
-[
-113
-]
-. Des troubles éclatent dans la population et des scènes de
-pillages
-et de violences du
-quartier juif de Tunis
-ont lieu
-[
-114
-]
-.
-Quoique toujours officiellement province de l'Empire ottoman, la Tunisie acquiert une grande autonomie au
-XIX
-e
-siècle
-[
-92
-]
-, notamment avec
-Ahmed
-I
-er
-Bey
-, régnant de 1837 à 1855, qui enclenche un processus de modernisation
-[
-115
-]
-.
-Sous la pression franco-anglaise consécutive à l'
-affaire Sfez
-de 1857, des réformes ottomanes des
-Tanzimat
-interviennent sous la plume de
-Mohammed Bey
-qui promulgue le
-Pacte fondamental
-(
-Ahd El Aman
-) ou Pacte de sécurité le
-10 septembre 1857
-, document qui s'inscrit dans l'héritage des idéaux de la
-Révolution française
-de
-1789
-[
-116
-]
-,
-[
-117
-]
-.
-À cette époque, le pays vit de profondes réformes, comme l'
-abolition de l'esclavage
-et faisant suite au Pacte fondamental, l'adoption en 1861 d'une véritable
-Constitution
-, remise en 1860 par
-Sadok Bey
-à l'
-empereur
-Napoléon III
-[
-117
-]
-,
-[
-115
-]
-,
-[
-118
-]
-, et manque même de devenir une
-république
-indépendante. Ces bouleversements s'inscrivent dans un contexte économique instable, et les musulmans s'en prennent physiquement à leurs voisins juifs accusés de profiter des réformes, à leurs biens et aux synagogues, jusqu'en
-1869
-où plusieurs sont tués
-[
-119
-]
-.
-Influence architecturale
-Intérieur de la mosquée Sidi Mahrez.
-Il est difficile de mesurer l'importance des influences turques qui demeurent en Tunisie. Quelques monuments affichent leur filiation ottomane à l'instar de la
-mosquée Sidi Mahrez
-à Tunis, édifiée entre 1692 et 1697
-[
-120
-]
-. Dans un autre domaine, l'art des
-tapis
-, qui existait pour certains avant l'arrivée des Ottomans, voit les productions de Kairouan présenter au
-XVIII
-e
-siècle
-des motifs purement
-anatoliens
-.
-L'influence italienne dans l'architecture tunisienne est soulignée et met en regard l'histoire des
-communautés italiennes
-et le patrimoine bâti de la région
-[
-121
-]
-. Une étude historique sur les palais et demeures tunisoises des
-XVIII
-e
-siècle
-et
-XIX
-e
-siècle
-siècles mentionne notamment des éléments d'inspiration italienne dans certains détails architecturaux
-[
-122
-]
-.
-Époque contemporaine
-Protectorat français et lutte nationaliste
-Article détaillé
-:
-Protectorat français de Tunisie
-.
-Article connexe
-:
-Mouvement national tunisien
-.
-Le pays connaît toutefois peu à peu de graves difficultés financières
-[
-115
-]
-, en raison de la politique ruineuse des
-beys
-, de la hausse des impôts
-[
-106
-]
-et d'interférences étrangères dans l'économie. Tous ces facteurs contraignent le gouvernement à déclarer la banqueroute en 1869 et à créer une commission financière internationale anglo-franco-italienne
-[
-123
-]
-. La régence apparaît vite comme un enjeu stratégique de première importance du fait de la situation géographique du pays, à la charnière des bassins occidental et oriental de la Méditerranée. La Tunisie fait donc l'objet des convoitises rivales de la France et de l'Italie. Les
-consuls
-français et italien tentent de profiter des difficultés financières du bey, la France comptant sur la neutralité de l'Angleterre (peu désireuse de voir l'Italie prendre le contrôle de la route du
-canal de Suez
-) et bénéficiant des calculs de
-Bismarck
-, qui souhaite la détourner de la question de l'
-Alsace-Lorraine
-.
-Signature du traité du Bardo au
-palais de Ksar Saïd
-le 12 mai 1881.
-Les combats entre tribus algériennes et tribus
-khroumirs
-en territoire algérien fournissent un prétexte à
-Jules Ferry
-pour souligner la nécessité de s'emparer de la Tunisie. En
-avril 1881
-, les troupes françaises y pénètrent sans résistance majeure et parviennent aux
-abords de Tunis
-[
-115
-]
-en trois semaines, sans combattre
-[
-124
-]
-. Le
-12 mai 1881
-, le
-protectorat
-est officialisé lorsque
-Sadok Bey
-, menacé d'être destitué et remplacé par son frère Taïeb Bey
-[
-125
-]
-,
-[
-126
-]
-, signe le
-traité du Bardo
-[
-127
-]
-au
-palais de Ksar Saïd
-[
-128
-]
-. Ceci n'empêche pas les troupes françaises de faire face, quelques mois plus tard, à des révoltes rapidement étouffées dans les régions de
-Kairouan
-et
-Sfax
-. Le régime du protectorat est renforcé par les
-conventions de La Marsa
-du
-8 juin 1883
-qui accordent à la France le droit d'intervenir dans les affaires internes de la Tunisie
-[
-129
-]
-,
-[
-130
-]
-. La France représente dès lors la Tunisie sur la scène internationale, et ne tarde pas à abuser de ses droits et prérogatives de protecteur pour exploiter le pays comme une
-colonie
-, en contraignant le bey à abandonner la quasi-totalité de ses pouvoirs au
-résident général
-[
-131
-]
-. Néanmoins, des progrès économiques ont lieu, notamment via les banques et les compagnies
-[
-129
-]
-, ainsi que le développement de nombreuses infrastructures (routes, ports, chemins de fer, barrages, écoles
-,
-etc.
-).
-Procès de l'
-affaire du Djellaz
-en 1911.
-La colonisation permet l'expansion des cultures de céréales et de la production d'
-huile d'olive
-ainsi que l'exploitation des mines de
-phosphates
-[
-123
-]
-par la
-Compagnie des phosphates et des chemins de fer de Gafsa
-, ainsi que de
-fer
-par la
-Société du Djebel Djerissa
-,
-première entreprise tunisienne et quinzième française
-[
-132
-]
-. Un important port militaire est aménagé à
-Bizerte
-. De plus, les Français établissent un système bilingue arabe et français qui permet à l'élite tunisienne de se former dans les deux langues
-[
-133
-]
-. La lutte contre l'occupation française commence dès le début du
-XX
-e
-siècle
-avec le mouvement réformiste et intellectuel des
-Jeunes Tunisiens
-fondé en 1907
-[
-134
-]
-par
-Béchir Sfar
-,
-Ali Bach Hamba
-et
-Abdeljelil Zaouche
-. Ce courant nationaliste se manifeste par l'
-affaire du Djellaz
-en 1911 et le
-boycott des tramways tunisois
-en 1912
-[
-131
-]
-. De 1914 à 1921, le pays vit en état d'urgence et la presse anticolonialiste est interdite
-[
-55
-]
-. Malgré tout, le mouvement national ne cesse pas d'exister
-[
-131
-]
-. Dès la fin de la
-Première Guerre mondiale
-, une nouvelle génération organisée autour d'
-Abdelaziz Thâalbi
-prépare la naissance du parti du
-Destour
-[
-131
-]
-.
-Entré en conflit avec le régime du protectorat
-[
-135
-]
-, le parti expose, dès la proclamation officielle de sa création le
-4 juin 1920
-[
-130
-]
-, un programme en huit points. Après avoir fustigé le régime du protectorat dans des journaux comme
-La Voix du Tunisien
-et
-L'Étendard tunisien
-[
-136
-]
-, l'avocat
-Habib Bourguiba
-fonde en 1932, avec
-Tahar Sfar
-,
-Mahmoud El Materi
-et
-Bahri Guiga
-, le journal
-L'Action tunisienne
-[
-137
-]
-, qui, outre l'indépendance, prône la
-laïcité
-[
-138
-]
-. Cette position originale conduit le
-2 mars 1934
-[
-130
-]
-, lors du
-congrès de Ksar Hellal
-[
-135
-]
-, à la scission du parti en deux branches, l'une islamisante qui conserve le nom
-Destour
-, et l'autre moderniste et laïque, le
-Néo-Destour
-[
-123
-]
-, une formation politique moderne, structurée sur les modèles des partis socialistes et communistes européens, et déterminée à conquérir le pouvoir pour transformer la société
-[
-137
-]
-.
-Après l'échec des négociations engagées par le
-gouvernement Blum
-, des incidents sanglants éclatent en 1937
-[
-123
-]
-et les
-émeutes d'avril 1938
-sont sévèrement réprimées
-[
-138
-]
-. Cette répression conduit à la clandestinité du Néo-Destour, qui incite les nouveaux dirigeants à ne pas exclure l'éventualité d'une lutte plus active
-[
-139
-]
-,
-[
-140
-]
-. En 1942, le
-régime de Vichy
-livre
-Bourguiba
-à l'
-Italie
-, à la demande de
-Benito Mussolini
-, qui espère l'utiliser pour affaiblir la
-Résistance française
-en
-Afrique du Nord
-[
-138
-]
-. Cependant Bourguiba ne désire pas cautionner les
-régimes fascistes
-et lance le
-8 août 1942
-un appel pour le soutien aux
-troupes alliées
-[
-138
-]
-. Pendant ce temps, la Tunisie est le théâtre d'importantes opérations militaires
-[
-134
-]
-connues sous le nom de
-campagne de Tunisie
-[
-123
-]
-Après plusieurs mois de combats et une contre-offensive blindée allemande dans la région de
-Kasserine
-et
-Sidi Bouzid
-au début de l'année 1943, les troupes du
-Troisième Reich
-sont contraintes de capituler le
-11 mai
-dans le
-cap Bon
-, quatre jours après l'arrivée des forces alliées à
-Tunis
-[
-141
-]
-. Après la
-Seconde Guerre mondiale
-, les dirigeants nationalistes inscrivent la résistance armée dans la stratégie de libération nationale
-[
-140
-]
-. Des pourparlers sont menés après la guerre avec le gouvernement français
-[
-139
-]
-, si bien que
-Robert Schuman
-évoque en 1950 la possibilité de l'indépendance de la Tunisie en plusieurs étapes
-[
-130
-]
-. Mais le
-gouvernement français
-met fin aux négociations avec le
-gouvernement tunisien
-par la
-note du 15 décembre 1951
-affirmant le
-«
-caractère définitif du lien qui unit la France à la Tunisie
-»
-[
-142
-]
-.
-Habib Bourguiba à Bizerte en 1952.
-Ruines à la suite d'une attaque sur
-Tazarka
-.
-Bourguiba demande à Chenik de porter le différend franco-tunisien devant l'
-ONU
-afin d'internationaliser le problème
-[
-143
-]
-. La requête est signée le
-11 janvier 1952
-[
-144
-]
-et, le
-13
-,
-Salah Ben Youssef
-et Hamadi Badra quittent Tunis pour Paris, où ils comptent enregistrer la plainte
-[
-145
-]
-. Cependant, le
-17
-, le gouvernement français déclare qu'elle ne peut être examinée par le
-Conseil de sécurité
-puisque
-«
-la note est signée par des Tunisiens qui n'ont pas le droit de le faire sans l'accord du Bey, seul dépositaire de la souveraineté tunisienne. La France a la charge des Affaires étrangères de la Tunisie
-; ce document aurait dû être remis au Résident qui est seul habilité à le transmettre
-»
-.
-Avec l'arrivée du nouveau résident général,
-Jean de Hauteclocque
-, le
-13 janvier 1952
-, et l'arrestation, le
-18
-, de
-150 destouriens
-dont Bourguiba, débutent la révolte armée
-[
-123
-]
-, la répression militaire française
-[
-130
-]
-et un durcissement des positions de chaque camp
-[
-146
-]
-. Le
-26 mars
-, devant le refus catégorique de Lamine Bey de congédier le gouvernement qui avait porté cette plainte à l'ONU, de Hauteclocque fait arrêter Chenik, El Materi,
-Mohamed Salah Mzali
-et
-Mohamed Ben Salem
-, placés en résidence forcée à
-Kébili
-dans le Sud du pays
-[
-147
-]
-pendant que Bourguiba est transféré à
-Remada
-[
-148
-]
-; c'est le
-coup de force du 26 mars
-.
-Le 5 décembre a lieu l'assassinat du syndicaliste
-Farhat Hached
-par l'organisation colonialiste extrémiste de la
-Main rouge
-[
-149
-]
-,
-[
-150
-]
-, qui déclenche grèves et manifestations, puis leur répression et des émeutes, grèves, tentatives de sabotage et jets de bombes artisanales
-[
-140
-]
-.
-Le développement de la répression, accompagnée de l'apparition du
-contre-terrorisme
-, incite les nationalistes à prendre plus spécifiquement pour cibles les colons, les fermes, les entreprises françaises et les structures gouvernementales
-[
-140
-]
-. C'est pourquoi les années 1953 et 1954 sont marquées par la multiplication des attaques contre le système colonial.
-En réponse, près de
-70 000 soldats
-français sont mobilisés pour arrêter les guérillas des groupes tunisiens dans les campagnes
-[
-151
-]
-. Cette situation difficile est apaisée par la reconnaissance de l'autonomie interne de la Tunisie, concédée par
-Pierre Mendès France
-dans son
-discours de Carthage
-le
-31 juillet 1954
-[
-130
-]
-,
-[
-152
-]
-. C'est finalement le
-3 juin 1955
-[
-151
-]
-que les conventions franco-tunisiennes sont signées entre le
-Premier ministre tunisien
-Tahar Ben Ammar
-et son homologue français
-Edgar Faure
-[
-150
-]
-. En dépit de l'opposition de
-Salah Ben Youssef
-, qui est exclu du parti
-[
-78
-]
-, les conventions sont approuvées par le congrès du Néo-Destour tenu à
-Sfax
-le
-15 novembre
-de la même année
-[
-146
-]
-. Après de nouvelles négociations, la France finit par reconnaître
-«
-solennellement l'indépendance de la Tunisie
-»
-[
-146
-]
-le
-20 mars 1956
-, tout en conservant la base militaire de
-Bizerte
-.
-Tunisie indépendante
-Article détaillé
-:
-Histoire de la Tunisie depuis 1956
-.
-Photo officielle de Habib Bourguiba.
-Le
-25 mars 1956
-[
-106
-]
-, l'
-Assemblée constituante
-est élue
-: le
-Néo-Destour
-en remporte tous les sièges et
-Bourguiba
-est porté à sa tête le 8 avril
-[
-55
-]
-,
-[
-134
-]
-de la même année. Le
-11 avril 1956
-, il devient le Premier ministre de
-Lamine Bey
-[
-150
-]
-. Le
-Code du statut personnel
-, à tendance progressiste, est proclamé le 13 août
-[
-153
-]
-.
-Finalement, le
-25 juillet 1957
-, la monarchie est abolie
-; la Tunisie devient une
-république
-[
-154
-]
-dont Bourguiba est élu président
-[
-155
-]
-le
-8 novembre 1959
-[
-156
-]
-.
-Le
-8 février 1958
-, en pleine
-guerre d'Algérie
-, des avions de l'
-armée française
-franchissent la
-frontière algéro-tunisienne
-et
-bombardent
-le village tunisien de
-Sakiet Sidi Youssef
-[
-55
-]
-. En 1961, dans un contexte d'achèvement prévisible de la guerre, la Tunisie revendique la rétrocession de la base de Bizerte
-[
-130
-]
-.
-Bourguiba entouré de ses ministres.
-Bourguiba et
-John Fitzgerald Kennedy
-en mai 1961.
-Ben Ali et
-George W. Bush
-le 18 février 2004.
-La
-crise
-qui suit fait près d'un millier de morts, essentiellement tunisiens
-[
-130
-]
-, et, devant la crainte d'une flambée de violence contre leur communauté, pousse
-4 500 Juifs
-à quitter le pays en 1962
-[
-157
-]
-,
-[
-158
-]
-.
-Politiquement, la France finit, le
-15 octobre 1963
-, par rétrocéder la base à l'État tunisien
-[
-155
-]
-. Avec l'assassinat de
-Salah Ben Youssef
-, principal opposant de Bourguiba depuis 1955
-[
-155
-]
-, à
-Francfort
-et l'interdiction du
-Parti communiste
-(PCT) le
-8 janvier 1963
-, la République tunisienne devient un régime de
-parti unique
-dirigé par le
-Néo-Destour
-[
-155
-]
-. En
-mars 1963
-,
-Ahmed Ben Salah
-entame une politique
-«
-socialiste
-»
-d'étatisation pratiquement totale de l'
-économie
-.
-Lors de la
-guerre des Six Jours
-, en
-juin 1967
-, des
-milliers d'émeutiers
-détruisent les magasins juifs et incendient la
-Grande synagogue de Tunis
-et ses
-livres sacrés
-[
-159
-]
-,
-[
-157
-]
-, ce qui pousse près de
-10 000 Juifs
-tunisiens à quitter le pays
-[
-160
-]
-,
-[
-161
-]
-.
-Des émeutes contre la collectivisation des terres dans le
-Sahel tunisien
-le
-26 janvier 1969
-poussent au limogeage de Ben Salah le
-8 septembre
-avec la fin de l'expérience socialiste
-[
-155
-]
-. Le taux de croissance annuel du PIB passe cependant de 3,6
-% pour les années 1950 à 5,7
-% pour les
-années 1960
-, et la croissance par tête à 2,9
-% contre 1,2
-% pour les années 1950
-[
-162
-]
-. Avec une économie affaiblie par cet épisode et un
-panarabisme
-défendu par
-Mouammar Kadhafi
-, un projet politique qui unifierait la Tunisie et la
-République arabe libyenne
-sous le nom de
-République arabe islamique
-est lancé en 1974 mais échoue très rapidement en raison des tensions tant nationales qu'internationales.
-Après la condamnation à une lourde peine de prison de Ben Salah, rendu responsable de l'échec de la politique des
-coopératives
-, viennent l'épuration de l'aile libérale du PSD animée par
-Ahmed Mestiri
-puis la proclamation de Bourguiba comme président à vie en 1975
-[
-55
-]
-. C'est dans ces conditions, marquées par un léger desserrement de l'étau du PSD sous le gouvernement d'
-Hédi Nouira
-, que l'
-Union générale tunisienne du travail
-(UGTT) gagne en autonomie tandis que naît en 1976 la
-Ligue tunisienne des droits de l'homme
-, première organisation nationale des droits de l'homme en Afrique et dans le monde arabe
-[
-163
-]
-,
-[
-164
-]
-. Le coup de force du
-«
-Jeudi noir
-»
-contre l'UGTT en
-janvier 1978
-puis l'
-attaque
-contre la ville minière de
-Gafsa
-, en
-janvier 1980
-, ne suffisent pas à museler la société civile émergente.
-Dès le début des années 1980, le pays traverse une crise politique et sociale
-[
-165
-]
-où se conjuguent le développement du
-clientélisme
-et de la
-corruption
-, la paralysie de l'État devant la dégradation de la santé de Bourguiba, les luttes de succession et le durcissement du régime. En 1981, la restauration partielle du pluralisme politique, avec la levée de l'interdiction frappant le Parti communiste, suscite des espoirs qui seront déçus par la falsification des résultats aux élections législatives de novembre. Par la suite, la répression sanglante des
-«
-émeutes du pain
-»
-de décembre 1983
-[
-165
-]
-, la nouvelle déstabilisation de l'UGTT et l'arrestation de son dirigeant
-Habib Achour
-contribuent à accélérer la chute du président vieillissant
-[
-137
-]
-. La situation favorise la montée de l'
-islamisme
-[
-150
-]
-et le long règne de Bourguiba s'achève dans une lutte contre cette mouvance politique, lutte menée par
-Zine el-Abidine Ben Ali
-, nommé ministre de l'Intérieur puis Premier ministre en
-octobre 1987
-[
-155
-]
-.
-Durant ces années 1980, plusieurs incidents visent la communauté juive ou ses synagogues comme durant le
-Yom Kippour
-1982 dans plusieurs villes du pays
-[
-166
-]
-, en
-octobre 1983
-à
-Zarzis
-[
-166
-]
-, en
-octobre 1985
-à la
-Ghriba
-dans le sillage de l'
-opération
-Jambe de bois
-[
-160
-]
-,
-[
-167
-]
-, qui font prendre des mesures au gouvernement pour assurer sa protection
-[
-168
-]
-,
-[
-169
-]
-.
-Le
-7 novembre 1987
-, Ben Ali dépose le président pour
-sénilité
-, un
-coup d'État médical
-accueilli favorablement par une large fraction du monde politique
-[
-165
-]
-. Élu le
-2 avril 1989
-avec 99,27
-% des voix
-[
-170
-]
-, le nouveau président réussit à relancer l'économie alors que, sur le plan de la sécurité, le régime s'enorgueillit d'avoir épargné au pays les convulsions islamistes qui ensanglantent l'Algérie voisine, grâce à la neutralisation du parti
-Ennahdha
-au prix de l'arrestation de dizaines de milliers de militants et de multiples procès au début des années 1990
-[
-137
-]
-. Les opposants laïcs signent quant à eux le Pacte national en 1988, plate-forme destinée à la démocratisation du régime. Pourtant, l'
-opposition
-et de nombreuses
-ONG
-de défense des
-droits de l'homme
-accusent peu à peu le régime d'attenter aux libertés publiques
-[
-123
-]
-en étendant la répression au-delà du mouvement islamiste. En 1994, le président Ben Ali est réélu avec 99,91
-% des voix
-[
-171
-]
-,
-[
-172
-]
-.
-L'année suivante, un accord de libre-échange est signé avec l'
-Union européenne
-[
-130
-]
-. Les
-élections
-du
-24 novembre 1999
-, bien qu'elles soient les premières présidentielles à être pluralistes avec trois candidats, voient le président Ben Ali réélu avec un score comparable aux scrutins précédents
-[
-170
-]
-,
-[
-172
-]
-. La réforme de la
-Constitution
-approuvée par le
-référendum du
-26 mai 2002
-accroît encore les pouvoirs du président, repousse l'âge limite des candidats, supprime la limite des trois mandats réintroduite en 1988 et permet au président de briguer de nouveaux mandats au-delà de l'échéance de 2004 tout en bénéficiant d'une immunité judiciaire à vie
-[
-137
-]
-.
-Le
-11 avril 2002
-, un attentat au camion piégé vise à nouveau la
-synagogue de la Ghriba
-et provoque la mort de
-19 personnes
-dont quatorze touristes
-allemands
-. Durant le premier semestre 2008, de
-graves troubles
-secouent la région minière de
-Gafsa
-durement frappée par le
-chômage
-et la
-pauvreté
-[
-173
-]
-. Le
-25 octobre 2009
-, le président Ben Ali est réélu pour un cinquième mandat consécutif avec 89,62
-% des voix, passant pour la première fois sous la barre des 90
-%. La campagne est marquée par une visibilité accrue de son épouse
-Leïla
-[
-174
-]
-. L'un des gendres du couple,
-Mohamed Sakhr El Materi
-, est élu député à cette occasion
-[
-175
-]
-.
-Tunisie post-révolution
-Article connexe
-:
-Révolution tunisienne
-.
-Le
-17 décembre 2010
-, un climat insurrectionnel éclate à la suite de l'immolation d'un jeune vendeur de fruits et légumes ambulant,
-Mohamed Bouazizi
-, dans la région de
-Sidi Bouzid
-; celle-ci devient le théâtre d'émeutes et d'affrontements meurtriers entre habitants et forces de l'ordre
-[
-176
-]
-. C'est le début du mouvement que l'on va appeler
-Printemps arabe
-.
-Manifestation du 14 janvier 2011 à Tunis.
-Ces événements, qui s'étendent ensuite à d'autres régions du pays, s'inscrivent dans un contexte où le taux de chômage des jeunes diplômés est particulièrement élevé alors que le poids démographique relatif des jeunes générations d'actifs atteint son maximum historique
-[
-177
-]
-. Les causes sont également politiques
-: le président Ben Ali et sa famille, notamment celle de sa seconde épouse Leïla, les
-Trabelsi
-, qualifiés selon les observateurs de
-«
-clan quasi-
-mafieux
-»
-, sont directement mis en cause dans des affaires de
-corruption
-, de détournement ou de vol, fléaux qui ont particulièrement pris de l'ampleur sous sa présidence
-[
-178
-]
-. Le
-13 janvier 2011
-, Ben Ali annonce la prise de mesures extraordinaires lors d'une intervention télévisée dont l'entrée en vigueur de l'
-état d'urgence
-[
-179
-]
-: la promesse d'une pleine
-liberté de la presse
-et d'
-expression
-politique ainsi que son refus de se représenter aux élections prévues en 2014. Cependant, cette allocution ne contribue pas à calmer la colère de la population, contraignant le président à céder finalement le pouvoir à son Premier ministre
-Mohamed Ghannouchi
-le lendemain et à quitter le pays le soir même
-[
-180
-]
-. Conformément à la
-Constitution de 1959
-, le président de la
-Chambre des députés
-,
-Fouad Mebazaa
-, est finalement proclamé président par intérim par le
-Conseil constitutionnel
-le
-15 janvier
-.
-Sit-in
-à la kasbah de Tunis le 28 janvier 2011.
-Il est chargé d'organiser des élections présidentielles dans les soixante jours
-[
-181
-]
-. Le
-17 janvier
-, un
-«
-gouvernement d'union nationale
-»
-de
-24 membres
-incluant des opposants au régime déchu (dont trois chefs de l'opposition légale) est constitué
-[
-182
-]
-. Le jour même, la libération de tous les prisonniers d'opinion, la levée de l'interdiction d'activité de la
-Ligue tunisienne des droits de l'homme
-,
-«
-la liberté totale de l'information
-»
-ainsi que la légalisation de tous les partis politiques et associations qui le demanderaient, est annoncée
-[
-183
-]
-. Cependant, la présence de membres du
-Rassemblement constitutionnel démocratique
-(RCD) à des postes clés provoque de nouveau, en moins de
-24 heures
-, la colère de la population et la démission de plusieurs ministres d'opposition, fragilisant d'autant plus ce gouvernement
-[
-184
-]
-. Le départ ou la radiation du RCD de plusieurs personnalités éminentes
-[
-185
-]
-n'ont aucun effet sur la suspicion que l'opinion publique entretient à l'égard de l'ancien parti présidentiel, dont plusieurs manifestants réclament la dissolution
-[
-186
-]
-. Cependant, le
-20 janvier
-, les ministres encore affiliés à cette formation annoncent l'avoir quitté eux aussi
-[
-187
-]
-. Face à la pression de la rue exigeant leur départ, un remaniement ministériel a lieu le
-27
-, écartant définitivement (hormis Mohamed Ghannouchi) les anciens membres du RCD de toutes responsabilités gouvernementales. Le
-6 février
-, le ministre de l'Intérieur
-Farhat Rajhi
-gèle les activités du RCD en attendant sa dissolution juridique, tandis que le Parlement confère au président par intérim des pouvoirs supplémentaires, comme celui de dissoudre le Parlement.
-Ghannouchi est cependant contraint de démissionner à son tour le
-27 février
-à la suite de plusieurs jours de manifestations marquées par des violences
-; il est remplacé le jour même par l'ancien ministre de Bourguiba,
-Béji Caïd Essebsi
-[
-188
-]
-,
-[
-189
-]
-.
-Le
-15 septembre 2012
-, de violentes émeutes éclatent à Tunis à la suite de la diffusion du film
-L'Innocence des musulmans
-. Alors que les forces de l'ordre restent passives, certains groupes salafistes prennent d'assaut l'ambassade des États-Unis et l'incendient, détruisant plusieurs véhicules et bâtiments. Mis sous pression par les États-Unis, le gouvernement décide de réagir et envoie l'
-armée
-et la garde présidentielle pour repousser les manifestants. Les affrontements font deux morts et plusieurs blessés
-[
-190
-]
-. Dans les mois qui suivent, l'armée et la
-garde nationale
-prennent la relève pour combattre les groupuscules salafistes et djihadistes qui sont actifs sur le territoire. L'état d'urgence est prolongé de trois mois en
-novembre 2012
-[
-191
-]
-, pour n'être finalement levé qu'en
-mars 2014
-.
-Après les
-élections législatives du 26 octobre 2014
-, qui voit le parti
-Nidaa Tounes
-arriver en tête, l'
-Assemblée des représentants du peuple
-remplace l'Assemblée constituante. Le premier tour de l'
-élection présidentielle
-a lieu le
-23 novembre
-et voit s'affronter 27 candidats dont deux, en la personne de
-Béji Caïd Essebsi
-(Nidaa Tounes) avec 39,46
-% des voix et
-Moncef Marzouki
-avec 33,43
-% des voix
-[
-192
-]
-, sont qualifiés pour le second tour organisé le
-21 décembre
-et qui permet à Caïd Essebsi de remporter le scrutin avec 55,68
-% des voix contre 44,32
-% des voix pour Marzouki
-[
-193
-]
-et de devenir ainsi le premier président issu d'une élection démocratique et transparente. Le
-quartet du dialogue national
-, association de quatre organisations s'étant donné pour but d'organiser des négociations entre les
-partis politiques
-pour assurer la
-transition
-vers un régime démocratique permanent, obtient le
-prix Nobel de la paix
-2015
-[
-194
-]
-. Ce prix est le premier
-Nobel
-attribué à un ressortissant ou organisation de la Tunisie
-[
-194
-]
-après son indépendance
-[
-195
-]
-.
-Ban Ki-moon
-,
-secrétaire général des Nations unies
-, exprime sa joie et félicite le quartet tout en affirmant que ce prix est dédié à tous les Tunisiens qui ont commencé le
-Printemps arabe
-[
-196
-]
-.
-François Hollande
-,
-président de la République française
-, affirme dans un communiqué que le prix prouve le succès de la transition démocratique en Tunisie, que ce pays est sur la bonne voie et qu'il est le seul parmi les pays du Printemps arabe à réussir son évolution transitoire vers la démocratie
-[
-197
-]
-.
-En 2017 et 2018, le pays est touché par des vagues de contestation de la jeunesse tunisienne qui manifeste dans plusieurs villes du pays. En effet, à partir du début du mois, à Tunis,
-Gabès
-,
-Thala
-,
-Jilma
-,
-Kasserine
-,
-Sidi Bouzid
-, ou encore
-Gafsa
-, des Tunisiens expriment leur ras le bol face à la cherté de la vie, l'
-inflation
-(6,4
-% en 2017
-[
-198
-]
-) et un chômage omniprésent (15
-% de la population active et 30
-% des jeunes diplômés de l'enseignement supérieur
-[
-199
-]
-). Cette vague de contestation contre une politique d'austérité économique serait organisée par le
-Front populaire
-[
-200
-]
-,
-[
-201
-]
-. Les heurts avec les policiers et forces de l'ordre font une victime et plusieurs blessés, et des centaines de manifestants sont arrêtés
-[
-202
-]
-. L'Observatoire social tunisien recense
-5 000 mouvements
-de protestation en 2015, plus de
-11 000
-en 2017 et
-4 500
-pour les quatre premiers mois de 2018
-[
-203
-]
-.
-Depuis 2011, les gouvernements successifs ont fait appel au
-Fonds monétaire international
-(FMI) pour tenter de redresser la situation économique du pays. Un prêt de
-1,74 milliard
-de
-dollars
-est accordé en
-juin 2013
-, puis un second de
-2,9 milliards
-de dollars en 2016. Le FMI n'accorde toutefois ces prêts qu'en contrepartie d'un plan de réformes libérales, telles que l'augmentation de certains impôts, la réduction de la
-masse salariale
-dans la
-fonction publique
-, la réduction des
-subventions
-sur les prix des
-carburants
-, ou encore de la modification du système de retraite. En
-avril 2016
-, le gouvernement accepte le principe de l'indépendance de la
-banque centrale
-, donnant la priorité au contrôle de l'
-inflation
-sur le soutien au développement économique. Depuis le printemps 2017, elle laisse filer le
-dinar
-, dont la valeur face à l'
-euro
-baisse de près de moitié. Face au poids de la dette, l'État doit consacrer plus de 20
-% de son budget à rembourser ses créanciers, ce qui neutralise ses capacités d'investissement
-[
-203
-]
-.
-Le président
-Béji Caïd Essebsi
-meurt le
-25 juillet 2019
-, à
-92 ans
-. Fin 2019, un double scrutin,
-législatif
-le 6 octobre, et
-présidentiel
-, avec un premier tour en
-septembre
-et le second tour le
-13 octobre
-, se déroule sans heurts, montrant une certaine maturité de la démocratie électorale en Tunisie. Les élections législatives aboutissent cependant à une assemblée fragmentée entre diverses formations
-[
-204
-]
-. L'élection présidentielle propulse à la tête de l'État un nouveau venu dans le monde politique, un juriste et universitaire spécialiste du
-droit constitutionnel
-, âgé de
-61 ans
-,
-Kaïs Saïed
-, élu avec une confortable avance face, au second tour, à l'homme d'affaires
-Nabil Karoui
-. Kaïs Saïed propose durant sa campagne une vision associant un certain conservatisme moral et religieux, un
-souverainisme
-, et un mode de fonctionnement démocratique à rebours de l'organisation centralisée
-bourguibienne
-[
-205
-]
-. Le
-25 juillet 2021
-, invoquant l'article 80 de la
-Constitution
-, il limoge le
-gouvernement Mechichi
-avec effet immédiat, annonce la suspension de l'assemblée, la formation d'un nouveau gouvernement et sa décision de gouverner par décrets et de présider le parquet, provoquant ainsi une
-crise politique
-[
-206
-]
-. Le
-22 septembre
-, il confirme par décret le prolongement des décisions ainsi que la dissolution de l'
-Instance provisoire chargée du contrôle de la constitutionnalité des projets de loi
-[
-207
-]
-, et s'octroie le droit de gouverner par décret, récupérant
-de facto
-le pouvoir législatif
-[
-208
-]
-,
-[
-209
-]
-. Le
-13 décembre
-, il annonce la tenue d'un
-référendum constitutionnel
-[
-210
-]
-qui se solde par la large approbation en
-juillet 2022
-d'une nouvelle
-Constitution
-mettant notamment en place un
-régime présidentiel
-, malgré un taux de participation d'un peu plus de 30
-% des inscrits
-[
-211
-]
-.
-Politique
-Article détaillé
-:
-Politique en Tunisie
-.
-Politique intérieure
-Gouvernement Bahi Ladgham à la suite du remaniement du 12 juin 1970.
-Séance de l'Assemblée des représentants du peuple.
-Trois ans après l'indépendance, suite aux travaux de l
-Assemblée constituante
-, la
-Constitution de la République tunisienne
-est promulguée le
-1
-er
-juin 1959
-[
-212
-]
-. Elle fait l'objet de plusieurs révisions ultérieures, notamment en 1988 et 2002
-[
-213
-]
-. La révision de 2002 qui supprime la limitation du nombre de mandats présidentiels et relève la limite d'âge à 75 ans tout en garantissant au président son
-immunité
-intervient à la suite d'un
-référendum constitutionnel
-[
-214
-]
-.
-Le manque de transparence politique, la faible
-liberté d'expression
-et la
-censure
-, notamment de la
-presse
-et de nombreux
-sites web
-, ont longtemps fait qu'une situation politique précise de la Tunisie a été difficile à déterminer. De nombreuses
-ONG
-internationales ont toutefois pointé du doigt les atteintes aux
-droits de l'homme
-, notamment en ce qui concerne les atteintes à la liberté d'expression, les prisonniers politiques et d'opinion, l'instrumentalisation de la justice par le
-pouvoir exécutif
-, la
-torture
-et la situation dans les
-prisons
-, ainsi que le harcèlement de toute
-dissidence politique
-. De leur côté, les autorités de l'époque ont fait valoir que leurs efforts en matière de droits de l'homme ont été officiellement reconnus par des instances internationales comme le
-Conseil des droits de l'homme des Nations unies
-dont les membres ont souligné, avec quelques réserves pour certains, les progrès accomplis par le pays en la matière
-[
-215
-]
-.
-La Tunisie ne connaît que deux
-présidents de la République
-en cinq décennies
-: Bourguiba (1957-1987) puis
-Zine el-Abidine Ben Ali
-(1987-2011)
-[
-216
-]
-. Au niveau des
-partis
-, le
-Néo-Destour
-puis le
-Parti socialiste destourien
-et le
-Rassemblement constitutionnel démocratique
-dominent la vie politique après l'indépendance
-[
-217
-]
-, dont deux décennies (1963-1981) en tant que parti unique
-[
-218
-]
-.
-Kaïs Saïed
-, président de la République depuis le 23 octobre 2019.
-La
-révolution
-du
-14 janvier 2011
-et la chute du régime Ben Ali changent la donne. Le Rassemblement constitutionnel démocratique est dissous et la scène politique compte rapidement une centaine de partis politiques.
-Fouad Mebazaa
-assure à titre intérimaire la présidence de la République du
-15 janvier
-au
-13 décembre 2011
-, avant d'être remplacé par
-Moncef Marzouki
-à partir du
-13 décembre
-. Mohamed Ghannouchi, ayant assuré l'intérim du pouvoir durant
-24 heures
-après la fuite de Ben Ali, est placé à la tête du gouvernement de transition avant d'être remplacé par
-Béji Caïd Essebsi
-. La Chambre des députés et la Chambre des conseillers sont dissoutes et leurs pouvoirs assumés de fait par la
-Haute instance pour la réalisation des objectifs de la révolution
-puis, à la suite de l'
-élection du 23 octobre 2011
-, premier scrutin pluraliste et transparent organisé par l'
-Instance supérieure indépendante pour les élections
-au détriment du
-ministère de l'Intérieur
-, par l'
-Assemblée constituante
-. La Constitution est suspendue et remplacée par le
-décret-loi du 23 mars 2011
-puis la
-loi constituante du 16 décembre 2011
-.
-Hamadi Jebali
-forme alors un gouvernement de
-coalition
-dominé par
-Ennahdha
-, reconduit par
-Ali Larayedh
-à partir du
-13 mars 2013
-.
-En 2014, une
-nouvelle Constitution
-est votée par l'Assemblée constituante qui établit un régime semi-présidentiel où le président de la République conserve des pouvoirs en matière de politique étrangère, de défense et de sécurité intérieure
-[
-219
-]
-. Il est élu tous les cinq ans au
-suffrage universel
-et ne peut prétendre qu'à deux mandats présidentiels. Responsable de l'action gouvernementale, le chef du gouvernement est le candidat du parti ou de la coalition qui obtient la majorité de siège à l'
-Assemblée des représentants du peuple
-. Il est nommé par le président de la République et définit la politique générale de l'État. Le pouvoir législatif, monocaméral, est exercé par l'assemblée composée de
-217 députés
-.
-Mehdi Jomaa
-forme un gouvernement de technocrates le
-29 janvier 2014
-après l'adoption de la nouvelle Constitution. Après les
-élections législatives du 26 octobre 2014
-, qui voit
-Nidaa Tounes
-arrivé en tête, l'
-élection présidentielle
-, organisée en deux tours, voit Béji Caïd Essebsi, leader de Nidaa Tounes, être élu avec 55,68
-% des voix contre 44,32
-% des voix pour Marzouki
-[
-193
-]
-.
-Habib Essid
-forme dans la foulée un nouveau
-gouvernement
-, remplacé à l'été 2016 par
-celui
-de
-Youssef Chahed
-.
-Transparency International
-place en 2025 la Tunisie au
-39
-e
-rang
-sur
-182 pays
-pris en compte dans son classement selon l'
-indice de perception de la corruption
-[
-220
-]
-.
-Le
-29 septembre 2021
-,
-Najla Bouden
-est nommée chef du gouvernement
-; c'est la première fois de l'histoire du pays qu'une femme est nommée à ce poste
-[
-221
-]
-.
-L'année 2023 voit des arrestations d'opposants politiques
-[
-222
-]
-,
-[
-223
-]
-,
-[
-224
-]
-.
-Politique extérieure
-Article détaillé
-:
-Politique étrangère de la Tunisie
-.
-Le premier président,
-Habib Bourguiba
-, choisit le
-non-alignement
-durant la
-guerre froide
-tout en ayant des relations étroites avec l'Europe et les États-Unis. Son successeur,
-Zine el-Abidine Ben Ali
-, maintient la tradition tunisienne de bonnes relations avec l'Occident tout en jouant un rôle actif dans les instances régionales arabes et africaines
-: le pays accueille, en
-mai 2004
-, la
-16
-e
-session
-ordinaire du sommet de la
-Ligue arabe
-(dont la Tunisie est membre depuis 1958) au cours de laquelle est adoptée la Charte arabe des droits de l'homme
-[
-225
-]
-et envoie régulièrement de l'
-aide humanitaire
-aux
-Palestiniens
-et aux États en crise. Le pays est également un membre fondateur de l'
-OUA
-, dont elle assure la présidence en 1994-1995, avant de participer à la fondation de l'
-Union africaine
-en
-juillet 2002
-.
-La Tunisie a également soutenu le développement de l'
-Union du Maghreb arabe
-qui inclut l'
-Algérie
-, le
-Maroc
-, la
-Mauritanie
-et la
-Libye
-. Toutefois, ses progrès restent limités en raison de tensions entre l'Algérie et le Maroc à propos du
-Sahara occidental
-. En
-février 2001
-, la Tunisie adhère à la
-Communauté des États sahélo-sahariens
-et accueille le siège de la
-Banque africaine de développement
-en 2003. Le pays est depuis longtemps une voix modératrice sur la question du
-Proche-Orient
-: Bourguiba est ainsi le premier dirigeant arabe à appeler à la reconnaissance d'
-Israël
-par les pays arabes dans un discours prononcé à
-Jéricho
-le
-3 mars 1965
-[
-226
-]
-.
-Habib Bourguiba aux côtés de
-Gamal Abdel Nasser
-et
-Ahmed Ben Bella
-en 1963.
-La Tunisie accueille le siège de la Ligue arabe de 1979 à 1990
-[
-227
-]
-, après la suspension de l'Égypte consécutive à la signature du
-traité de paix israélo-égyptien
-et jusqu'au rétablissement du siège au Caire. De 1982 à 1993, elle héberge également le quartier général de l'
-Organisation de libération de la Palestine
-(OLP)
-[
-227
-]
-, installé à Tunis après l'expulsion de l'organisation du Liban à la suite de l'
-invasion israélienne
-. Cette présence est notamment marquée par le
-bombardement du siège de l'OLP à Hammam Chott
-par l'aviation israélienne le
-1
-er
-octobre 1985
-[
-228
-]
-. Dans le cadre du
-processus de paix israélo-palestinien
-, la Tunisie accueille en
-septembre 1993
-une
-délégation officielle israélienne
-, constituant une première dans un pays du Maghreb
-[
-229
-]
-. Des sections d'intérêts sont ensuite ouvertes en
-avril 1996
-, avant la suspension des relations à la suite du déclenchement de la
-seconde intifada
-en 2000
-[
-227
-]
-.
-Accueil du Premier ministre
-Hédi Nouira
-par le président
-Jimmy Carter
-en 1978.
-John Kerry
-,
-Béji Caïd Essebsi
-et
-Mohsen Marzouk
-, le
-20 mai 2015
-.
-Coincée entre l'Algérie et la Libye, la Tunisie a toujours cherché à maintenir de bonnes relations avec ses voisins malgré des tensions occasionnelles
-[
-227
-]
-. La Tunisie et l'Algérie résolvent un long litige frontalier en 1993 et coopèrent dans la construction du
-gazoduc
-transméditerranéen menant vers l'
-Italie
-. La Tunisie signe par ailleurs un accord avec l'Algérie en 2002 pour démarquer la frontière maritime entre les deux pays
-[
-227
-]
-.
-Vis-à-vis de son autre voisin, les relations sont plus difficiles à partir de l'annulation par la Tunisie d'un accord visant à la formation d'une
-union tuniso-libyenne
-en 1974. Les relations diplomatiques sont rompues entre 1976 et 1977 puis se détériorent à nouveau en 1980 lorsque des rebelles appuyés par la Libye tentent de prendre la ville de
-Gafsa
-[
-165
-]
-. En 1982, la
-Cour internationale de justice
-tranche le différend relatif à la partition du
-plateau continental
-frontalier (riche en
-pétrole
-) en faveur de la Libye
-[
-230
-]
-. L'expulsion par la Libye de nombreux travailleurs tunisiens en 1985 et les menaces militaires américaines conduisent la Tunisie à restreindre leurs relations qui sont à nouveau normalisées dès 1987. Tout en soutenant les sanctions de l'
-ONU
-imposées à la Libye, à la suite de
-bombardements
-aériens américains, la Tunisie prend soin de maintenir de bonnes relations avec son voisin. Elle soutient ainsi la levée de ces sanctions en 2003, la Libye redevenant ainsi l'un de ses partenaires commerciaux majeurs. Néanmoins, les deux pays ont encore un contentieux maritime sur leur frontière commune.
-La Tunisie revendique également sa dimension méditerranéenne. Elle participe ainsi au Forum méditerranéen, dont elle organise l'édition 2005, et devient le premier pays du
-bassin méditerranéen
-à signer, le
-17 juillet 1995
-, un accord d'association avec l'
-Union européenne
-dans le but de renforcer son ancrage à l'Europe
-[
-231
-]
-.
-L'action politique de la Tunisie dépasse les frontières régionales. Le président Ben Ali propose ainsi la création d'un Fonds de solidarité mondial
-[
-232
-]
-. Le
-20 décembre 2002
-, l'Assemblée générale adopte sans vote la résolution 57/265 par laquelle elle décide de créer ce fonds et d'en préciser les modalités de fonctionnement
-[
-233
-]
-.
-Défense
-Article détaillé
-:
-Forces armées tunisiennes
-.
-La défense extérieure de la Tunisie est exercée par l'armée. Fondée le
-30 juin 1956
-, elle compte un personnel régulier de
-35 500 personnes
-dont
-27 000
-dans l'Armée de terre
-[
-234
-]
-. Elle participe surtout à des activités civiles de développement et de lutte contre les
-catastrophes naturelles
-et à des opérations militaires de
-maintien de la paix
-sous couvert des
-Nations unies
-[
-235
-]
-.
-Justice
-Article détaillé
-:
-Droit tunisien
-.
-Le droit tunisien reste largement inspiré par le
-droit français
-, tant dans son contenu que dans ses grandes divisions (public et privé) et ses structures.
-La Constitution garantit les principes fondamentaux suivants
-:
-l'indépendance de la justice (
-art.
-117
-de la
-Constitution de 2022
-)
-;
-le droit à un procès équitable et à la défense (
-art.
-124
-de la Constitution)
-l'égalité des citoyens et citoyennes devant la loi et la garantie des libertés et droits individuels et collectifs
-[
-236
-]
-.
-Sous les régimes de
-Habib Bourguiba
-et
-Zine el-Abidine Ben Ali
-, la justice tunisienne demeure influencée par le pouvoir exécutif. Ainsi, en tant que chef du Conseil supérieur de la magistrature, le président nomme par décret les
-magistrats
-, les révoque ou les transfère sur proposition dudit conseil. Certains principes fondamentaux du droit, comme le principe de la
-présomption d'innocence
-(
-art.
-12
-de la
-Constitution de 1959
-)
-[
-237
-]
-et la non-rétroactivité de la loi (
-art.
-13
-de la Constitution de 1959)
-[
-237
-]
-, sont garantis, tout comme l'inviolabilité de domicile, la liberté de mouvement et les libertés d'opinion, d'expression, de publication, de réunion et d'association, mais ces droits peuvent être toutefois limités par des dispositions légales ou la sécurité d'État (
-art.
-8-10
-)
-[
-237
-]
-. Le système juridictionnel est alors précisé par la loi portant sur l'organisation judiciaire de 1967, les règles de compétence (attribution, compétence territoriale et compétence d'exception) étant établies dans d'autres textes dont le Code de procédure pénale du
-24 juillet 1968
-.
-Palais de justice de Tunis
-.
-Le système judiciaire est composé de trois grands ensembles
-[
-238
-]
-:
-les juridictions judiciaires composées de la Cour de cassation, de tribunaux de second degré et de tribunaux de première instance
-;
-les juridictions administratives composées du
-Tribunal administratif
-, de tribunaux administratifs d'appel et de tribunaux administratifs de première instance.
-les juridictions financières composées de la
-Cour des comptes
-avec ses différentes instances.
-Les tribunaux militaires sont compétents en matière de crimes militaires
-[
-238
-]
-. Quant au Conseil supérieur de la magistrature, il se compose pour deux tiers de magistrats en majorité élus et qui élisent un président parmi leurs membres
-[
-238
-]
-. Une Cour constitutionnelle contrôle sur demande la constitutionnalité des lois, des traités internationaux et du règlement intérieur de l'
-Assemblée des représentants du peuple
-[
-238
-]
-.
-En
-février 2011
-, le nombre de condamnés à mort est de 130 dont quatre femmes
-[
-239
-]
-. La dernière exécution d'une sentence de
-peine de mort
-remonte à
-octobre 1991
-[
-239
-]
-. Le
-24 juillet 2015
-, le parlement adopte une loi rétablissant la peine de mort contre des actes terroristes
-[
-240
-]
-.
-Économie
-Article détaillé
-:
-Économie de la Tunisie
-.
-Évolution du PIB par habitant de 1950 à 2018.
-En 2010, le
-produit intérieur brut
-(PIB) de la Tunisie atteint
-57,17 milliards
-de
-dinars
-(
-39,58 milliards
-de
-dollars
-) soit une hausse de 7
-% par rapport à 2009
-[
-241
-]
-. En 1960, celui-ci ne se montait qu'à
-847 millions
-de dollars, passant à
-1,581 milliard
-en 1970,
-8,634 milliards
-en 1980,
-12,875 milliards
-en 1990 et
-21,254 milliards
-en 1999
-[
-242
-]
-. Quant à la
-population active
-, elle atteint
-3,769 millions
-de personnes en 2010 mais la population active occupée totalise
-3,277 millions
-de personnes
-[
-243
-]
-, dont près de 30
-% de femmes, ce qui représente tout de même plus du double du niveau de 1980
-[
-244
-]
-.
-D'après un rapport de la
-Banque mondiale
-paru en 2014, une grande partie des réglementations adoptées par le gouvernement sous la présidence de
-Zine el-Abidine Ben Ali
-visait à favoriser un cercle d'entrepreneurs proche du pouvoir. Après la chute de son régime, une commission d'enquête est mise en place et dresse une liste de
-114 personnes
-, dont Ben Ali, ses apparentés et ses gendres, ayant bénéficié de cette
-corruption
-institutionnalisée. Les biens saisis comprennent quelque
-550 propriétés
-,
-48 bateaux
-et yachts,
-40 portefeuilles
-d'actions et d'obligations,
-367 comptes
-en banques et environ
-400 entreprises
-. Les experts de la commission évaluent à
-13 milliards
-de dollars la valeur de l'ensemble, soit plus d'un quart du PIB de la Tunisie en 2011
-[
-245
-]
-.
-Après la
-révolution de 2011
-qui renverse Ben Ali, le maintien de
-politiques d'austérité
-(gel du recrutement dans la fonction publique, baisse des subventions) et de
-réformes structurelles
-libérales
-(privatisations, indépendance de la banque centrale, ouverture du marché…), bien que modérées, réduisent le pouvoir de régulation sociale de l'État, favorisant l'augmentation des inégalités. Ainsi, les 10
-% de Tunisiens les plus riches détiennent 40
-% du revenu national. Le système fiscal est particulièrement pointé du doigt
-: souvent décrit comme très inégalitaire, il taxe surtout les bas revenus, l'
-évasion fiscale
-étant très importante
-[
-246
-]
-.
-Les
-attentats islamistes
-qui ont touché le
-tourisme
-, qui représente près de 7
-% du PIB durant les années 2010, portent un coup à l'économie tunisienne. Avec une croissance économique quasi nulle, le pays est proche de la récession et connaît une dérive de sa dette, qui passe de 66,9
-% du PIB en 2017 à 79,3
-% en 2023
-[
-247
-]
-. La plupart des prêts auprès des institutions financières internationales servent à rembourser la dette (plus de 80
-% d'entre eux entre 2011 et 2016)
-[
-246
-]
-.
-En 2025, la Tunisie est classée en
-76
-e
-position
-pour l'
-indice mondial de l'innovation
-[
-248
-]
-.
-Historique
-Habib Bourguiba en compagnie d'Ahmed Ben Salah, secrétaire général de l'UGTT.
-À la proclamation de l'indépendance en 1956, le pays ne dispose pas des atouts de ses voisins maghrébins
-: terres agricoles moins productives, infrastructure portuaire moins développée, marché intérieur étriqué, épargne faible et écornée par l'émigration des populations d'origine européenne
-[
-249
-]
-et relations avec les milieux d'affaires français réduits, chômage élevé et équipement industriel embryonnaire
-[
-250
-]
-. La priorité établie par le nouveau
-président
-Habib Bourguiba
-est alors de libérer l'économie nationale du contrôle français qui avait favorisé l'
-agriculture
-et l'extraction minérale, mais avait, en grande partie, négligé l'
-industrie
-[
-251
-]
-,
-[
-252
-]
-, la Tunisie étant alors le pays le moins industrialisé du Maghreb
-[
-253
-]
-. Dans ce contexte, l'importance croissante de l'
-Union générale tunisienne du travail
-(UGTT) dans les choix économiques par l'action de son secrétaire général,
-Ahmed Ben Salah
-, mène le pays vers l'adoption de mesures collectivistes dans l'économie
-[
-251
-]
-. L'expérience coopérative dure jusqu'en
-septembre 1969
-lorsque Bourguiba suspend Ben Salah de ses fonctions à la suite de la parution d'un rapport confidentiel de la
-Banque mondiale
-sur le déficit des entreprises publiques
-[
-254
-]
-et aux pressions de l'aile pragmatique du parti. Avec l'arrivée d'
-Hédi Nouira
-, pragmatique gouverneur de la
-Banque centrale
-hostile au collectivisme
-[
-255
-]
-, au ministère de l'Économie puis au
-Premier ministère
-, la Tunisie se réoriente vers l'
-économie de marché
-et la
-propriété privée
-[
-251
-]
-. Durant la décennie des
-années 1970
-, la Tunisie connaît une expansion du secteur privé et un développement rapide de l'emploi manufacturier. Cette timide ouverture permet la création de nouveaux emplois et, par conséquent, le développement d'une meilleure mobilité sociale de la jeunesse nouvellement instruite et la croissance d'une
-classe moyenne
-[
-256
-]
-.
-Billet de 20 dinars tunisiens (1983).
-En 1986, la Tunisie connaît sa première année de croissance négative depuis son indépendance. Les agitations sociales augmentent de façon dramatique pendant cette période et l'UGTT, qui critique ouvertement la politique économique adoptée par le gouvernement, organise des
-grèves
-et des manifestations contre l'augmentation du
-chômage
-et la politique salariale
-[
-251
-]
-,
-[
-252
-]
-. Le gouvernement se met alors d'accord avec le
-Fonds monétaire international
-sur la mise en place d'un programme de reprise économique sur
-18 mois
-. L'objectif principal du plan est d'accroître l'efficacité et de promouvoir les mécanismes du marché. En même temps, il est conçu pour surmonter les conséquences sociales et politiques de ses mesures. Les dépenses publiques sont concentrées aux secteurs de la santé, de l'éducation, du logement et des services. Le gouvernement ne lance cependant pas de véritables programmes avant 1987.
-Siège de la
-Banque centrale de Tunisie
-.
-La privatisation se traduit dans un premier temps par la vente de
-petites et moyennes entreprises
-avec un bon historique bancaire à des acheteurs tunisiens présélectionnés. Depuis le lancement du nouveau programme de privatisation en 1987, le gouvernement a totalement ou partiellement privatisé
-203 entreprises
-, dont de grands établissements publics tel
-Tunisie Télécom
-, pour une recette globale de
-5 557 millions
-de dinars
-[
-257
-]
-. De plus, la non préparation de plusieurs secteurs à l'ouverture a conduit au maintien d'un niveau de chômage élevé et variant selon les sources de 13
-% à 20
-%
-[
-258
-]
-. Pourtant, le chômage ne touche pas que les populations les plus vulnérables
-: le taux de chômage des diplômés de l'enseignement supérieur est ainsi en augmentation depuis plusieurs années. Alors qu'il était de 4
-% en 1997 et de 0,7
-% en 1984
-[
-259
-]
-, il atteint 20
-% contre une moyenne nationale de 14
-%, voire près de 60
-% dans certaines filières selon une enquête de la
-Banque mondiale
-[
-260
-]
-. En 1959, le pays prend ses premiers contacts avec la
-Communauté économique européenne
-. En
-juillet 1966
-, le président Bourguiba effectue une tournée en Europe et aboutit au lancement de négociations qui conduisent à la signature d'un premier accord commercial le
-28 juillet 1969
-à Tunis
-[
-261
-]
-.
-À partir des années 1970, positionnée sur des secteurs où sa compétitivité s'est érodée, tels que le
-textile
-, la Tunisie se lance dans le moins-disant social pour maintenir ses positions, en pratiquant un régime d'incitations fiscales dont des investisseurs ont su tirer profit en accroissant la précarité de leurs salariés. Le tourisme entame également une course au rabais, au détriment de la qualité. Sous la présidence de
-Zine el-Abidine Ben Ali
-, les banques publiques ont pour consigne de ne pas exiger le remboursement de leurs
-créances
-afin de maintenir à flot ce secteur et de préserver les intérêts des clans proches du pouvoir, propriétaires des hôtels. La libéralisation de l'économie est engagée dans les années 1980. souvent en faveur des réseaux proches du gouvernement
-:
-«
-Les privatisations ont été un lieu unique de prédation des
-«
-clans
-»
-, mais aussi de distribution d'avantages et de rentes pour la bourgeoisie traditionnelle
-»
-, souligne le
-Réseau euro-méditerranéen des droits de l'homme
-en 2011
-[
-203
-]
-,
-[
-262
-]
-.
-Un accord d'association est finalement signé avec l'
-Union européenne
-le
-17 juillet 1995
-et entre en vigueur le
-1
-er
-mars 1998
-pour engendrer dès 1996 le démantèlement progressif des barrières douanières jusqu'au
-1
-er
-janvier 2008
-[
-263
-]
-.
-Agriculture
-Article détaillé
-:
-Agriculture en Tunisie
-.
-Champ d'oliviers dans la région du
-cap Bon
-.
-Depuis l'indépendance de la Tunisie, l'agriculture a enregistré des taux de croissance importants et a permis au pays d'atteindre un niveau de
-sécurité alimentaire
-suffisant. En dépit du développement des autres secteurs de l'économie nationale, l'agriculture conserve une importance sociale et économique
-: elle assure environ 12,3
-% du
-PIB
-et emploie 16,3
-% de la main-d'œuvre en 2006. Les principales productions agricoles sont les
-céréales
-(
-blé
-et
-orge
-), les
-olives
-(
-2
-e
-producteur
-[
-264
-]
-et
-3
-e
-exportateur mondial d'
-huile d'olive
-depuis 2007
-[
-265
-]
-), les
-dattes
-, les
-agrumes
-et les produits de la mer.
-Si la gestion de l'agriculture appartient encore à des établissements publics, tels l'Office des céréales ou l'Office national de l'huile
-[
-266
-]
-, le secteur agricole est de plus en plus pris en charge par des groupes privés souvent présents dans l'
-industrie agroalimentaire
-tel le groupe
-Poulina
-, le premier groupe privé du pays.
-Industrie
-Article détaillé
-:
-Industrie en Tunisie
-.
-En matière industrielle, la Tunisie est le premier exportateur d'
-Afrique
-en valeur absolue
-: elle est ainsi passée devant l'
-Afrique du Sud
-en 1999
-[
-267
-]
-. Les secteurs du
-textile
-et de l'
-agroalimentaire
-représentent 50
-% de la production et 60
-% de l'emploi de l'industrie manufacturière. Mais, après avoir cru à un rythme annuel de 2,1
-% (entre 2000 et 2005), l'industrie tunisienne fait face à la concurrence étrangère. Toutefois, les exportations de produits
-mécaniques
-et électriques se sont multipliées par cinq entre 1995 et 2005
-[
-258
-]
-. Quatrième fournisseur de l'Union européenne en produits textiles, elle était jusqu'en 2002 le premier fournisseur de la France avant d'être surclassée par la Chine en 2003.
-Services
-Café Sidi Chabâane de
-Sidi Bou Saïd
-.
-Dans le secteur des
-services
-, le développement du
-tourisme
-remonte aux années 1960 grâce à l'action conjuguée de l'État et de groupes privés. Le secteur touristique représente 6,5
-% du
-PIB
-et fournit
-340 000 emplois
-dont
-85 000 emplois
-directs, soit 11,5
-% de la
-population active
-occupée avec une forte part d'emploi saisonnier. Outre le tourisme balnéaire majoritaire, le tourisme saharien (
-Douz
-et
-Tozeur
-attirant chaque année plus de
-250 000 touristes
-durant toute l'année) est en fort développement. Le
-tourisme vert
-, la
-thalassothérapie
-et le
-tourisme médical
-apparaissent et croissent très rapidement
-: le gouvernement manifeste en
-janvier 2024
-le souhait de promouvoir l'investissement dans le
-tourisme durable
-[
-268
-]
-, alors bénéficiant d'un
-regain de popularité chez les visiteurs
-.
-Dès le début du millénaire, le
-WWF
-exhorte les professionnels du tourisme réunis à
-Berlin
-à développer dans les pays de la Méditerranée un
-tourisme durable
-, en estimant qu'au cours des vingt prochaines années, un groupe de pays méditerranéens comme le
-Maroc
-, la Tunisie, la
-Grèce
-, la
-Turquie
-et la
-Croatie
-subiraient une montée du tourisme étranger, totalisant environ 350 millions de visiteurs par an
-[
-269
-]
-. Il appelle alors l'industrie du tourisme à adopter et encourager des pratiques plus responsables afin de renverser la vapeur en défendant des programmes de développement écologiques
-[
-269
-]
-.
-Le secteur du commerce et de la distribution, qui emploie plus de
-500 000 personnes
-et participe à 10,7
-% du PIB national, se divise en deux catégories
-[
-270
-]
-. Ainsi, le secteur se caractérise encore par la prédominance du commerce traditionnel avec 88
-% (2006) du
-chiffre d'affaires
-, l'essentiel des transactions commerciales étant réalisé par de petits commerçants. La distribution moderne, qui compte pour 12
-% du chiffre d'affaires global et regroupe des enseignes nationales et internationales, n'est apparue que lorsque le marché s'est libéralisé en 1999
-[
-271
-]
-.
-Infrastructures
-Articles détaillés
-:
-Transports en Tunisie
-,
-Télécommunications en Tunisie
-et
-Eau potable et assainissement en Tunisie
-.
-Vue aérienne du port de
-Radès
-.
-Terminal de l'
-aéroport de Tunis
-.
-Terminal de l'
-aéroport d'Enfidha
-.
-En matière de transport, la Tunisie compte sept ports de commerce (
-Radès
-,
-Sfax
-,
-Bizerte
-,
-Gabès
-,
-Sousse
-,
-Zarzis
-et
-La Goulette
-) tandis qu'un port en eaux profondes va être réalisé à
-Enfida
-. Placés sous la gestion de l'Office de la marine marchande et des ports, ils assurent à eux seuls 96
-% du commerce extérieur tunisien
-[
-271
-]
-. Avec ses
-550 000 passagers
-et ses
-415 000
-croisiéristes
-enregistrés en 2004, le port de La Goulette est l'une des destinations les plus appréciées dans l'ouest du
-bassin méditerranéen
-[
-271
-]
-. La
-Compagnie tunisienne de navigation
-, société publique, est le principal
-armateur
-du pays et assure des lignes régulières reliant les deux rives de la
-mer Méditerranée
-(vers
-Marseille
-,
-Gênes
-,
-Livourne
-et
-Barcelone
-).
-La Tunisie dispose de plusieurs aéroports civils, dont neuf aéroports internationaux gérés par l'
-Office de l'aviation civile et des aéroports
-:
-Tunis
-,
-Monastir
-,
-Djerba
-,
-Enfidha
-,
-Sfax
-,
-Tozeur
-,
-Tabarka
-,
-Gafsa
-et
-Gabès-Matmata
-[
-272
-]
-. Tunis est le principal aéroport du pays avec une capacité de 7 millions de passagers en 2024
-[
-273
-]
-.
-Le
-transport ferroviaire
-assure plus du tiers des déplacements nationaux à travers un réseau national de
-2 167
-km
-de
-voies ferrées
-[
-274
-]
-. Le réseau est exploité par la
-Société nationale des chemins de fer tunisiens
-(SNCFT) ainsi que par la
-Société des transports de Tunis
-spécialisée dans le transport urbain dans la région de
-Tunis
-.
-Le réseau routier s'étend pour sa part sur
-19 300
-km
-dont
-12 655
-km
-de
-routes goudronnées
-ainsi que de trois
-autoroutes
-reliant Tunis à
-Sfax
-au sud,
-Bizerte
-au nord et Oued Zarga à l'ouest. Au sein de ce réseau, la |vitesse est limitée à
-50
-km/h
-en agglomération (relevée à
-70
-km/h
-sur les voies urbaines à séparateur central),
-90
-km/h
-sur route hors agglomération et
-110
-km/h
-sur autoroute
-[
-275
-]
-. Le secteur du transport routier domine les transports terrestres de voyageurs et de marchandises. Il est néanmoins contrôlé par les sociétés étrangères à cause du petit nombre d'entreprises tunisiennes.
-Les infrastructures de
-télécommunications
-sont largement développées
-[
-276
-]
-: le réseau téléphonique compte
-1 863 140 abonnements fixes
-[
-277
-]
-et
-16 400 000 abonnements mobiles
-[
-278
-]
-en 2023
-; 72
-% de la population utilise
-Internet
-[
-279
-]
-. L'opérateur public,
-Tunisie Télécom
-, domine le marché de la
-téléphonie fixe
-avec 69,5
-% des abonnements en
-décembre 2024
-contre 16,8
-% pour
-Ooredoo
-et 13,7
-% pour
-Orange Tunisie
-[
-280
-]
-alors que Ooredoo domine le marché de la
-téléphonie mobile
-avec 42,8
-% des abonnements contre 30,4
-% pour Tunisie Télécom et 26,6
-% pour Orange Tunisie
-[
-281
-]
-.
-L'
-Agence tunisienne d'Internet
-gère le réseau Web sur le plan national qui compte douze
-fournisseurs d'accès
-(sept publics et cinq privés). Par ailleurs, 281
-publinets
-(accès publics à Internet) sont répartis sur l'ensemble du territoire
-[
-276
-]
-.
-Énergie
-Article détaillé
-:
-Énergie en Tunisie
-.
-Les
-ressources naturelles
-de la Tunisie sont modestes si on les compare à celles de ses voisines
-: l'Algérie et la Libye. Le secteur de l'industrie est le premier consommateur d'énergie, avec une part de 36
-% de la consommation globale, suivi par le secteur du transport avec 30
-% de la consommation totale
-[
-282
-]
-.
-Train de phosphates près de
-Métlaoui
-.
-Le phosphate est extrait par la
-Compagnie des phosphates de Gafsa
-dans plusieurs gisements situés dans le centre du pays et en particulier dans la région de
-Gafsa
-. 15
-% du phosphate produit sont vendus à l'état brut et 85
-% sont transformés par le
-Groupe chimique tunisien
-[
-283
-]
-. En 1999, la Tunisie était le cinquième producteur mondial de phosphate avec 5,5
-% du total mondial
-[
-284
-]
-.
-Selon les estimations, la Tunisie possède des réserves prouvées de
-pétrole brut
-estimées à
-425 millions
-de
-barils
-en
-janvier 2015
-[
-285
-]
-. La majorité est située dans le
-golfe de Gabès
-et le bassin de Ghadamès dans le sud du pays. Le pays produit près de
-55 000 barils
-de pétrole brut par jour en 2015
-[
-285
-]
-, dont la majorité provient de seulement six concessions (Adam, Ashtart, Didon, El Borma, Miskar et Oued Zar) ne parvient pas à couvrir la demande locale, qui se monte à
-86 000 barils
-par jour en 2013
-[
-285
-]
-. Le secteur est dominé par une société publique, l'
-Entreprise tunisienne d'activités pétrolières
-dont la mission est de gérer les activités d'exploration et de production de pétrole mais aussi de
-gaz naturel
-pour le compte du gouvernement.
-Puits Fella-1 du champ gazier de Nawara.
-Face aux limites de sa production pétrolière, le pays se tourne de plus en plus vers le gaz naturel pour couvrir sa demande en énergie. Le pays dispose de réserves prouvées de
-65,13 milliards
-de pieds cubes en 2014
-[
-285
-]
-dont deux-tiers sont offshore. En 2013, le pays produit
-1,879 milliard
-de pieds cubes tout en consommant
-4,079 milliards
-de pieds cubes durant la même année
-[
-285
-]
-. 60
-% de la production provient des gisements exploités par
-British Gas
-, le plus important investisseur énergétique en Tunisie, à Miskar et Hasdrubal
-[
-286
-]
-. Les entreprises tunisiennes constituent 19
-% du marché de l'exploration et de la production du pays. L'ETAP gère les réserves nationales et agit en tant que partenaire principal dans presque toutes les activités d'exploration et de production car elle détient 51
-% de toutes les concessions. Mais ce sont les entreprises américaines qui dominent avec 38
-% du marché, suivi par les entreprises européennes avec 19
-%, canadiennes avec 12
-% et
-asiatiques
-avec 10
-%.
-La grande majorité de l'électricité du pays, gérée par la
-Société tunisienne de l'électricité et du gaz
-, est produite à base d'
-énergies fossiles
-(95,9
-% de la capacité totale), le résidu étant produit à partir d'
-énergie hydroélectrique
-et
-éolienne
-. Le pays dispose en 2012 d'une capacité totale de
-16,9 milliards
-de
-kWh
-alors que la consommation atteint
-13,31 milliards
-de kWh
-[
-285
-]
-. Dans le même temps, le gouvernement cherche à développer les
-énergies renouvelables
-[
-287
-]
-.
-Entre
-juillet 2024
-et
-juin 2025
-, la Tunisie importe de
-Chine
-655
-MW
-de
-panneaux solaires
-, se classant sixième en Afrique selon un rapport d'Ember sur l'essor de l'
-énergie solaire
-[
-288
-]
-.
-Démographie
-Articles détaillés
-:
-Tunisiens
-,
-Démographie de la Tunisie
-et
-Diaspora tunisienne
-.
-La
-démographie
-de la Tunisie se caractérise par l'homogénéité de la population en matière de composantes culturelles ou religieuses. Ainsi, sur un fond
-carthaginois
-[
-289
-]
-et bien que le pays ait été influencé par diverses cultures et civilisations au cours de son histoire, telles que les Romains avec la
-province d'Afrique
-et les Byzantins avec l'
-exarchat de Carthage
-, ce sont les
-Arabes
-qui marquent le plus l'identité tunisienne
-: l'écrasante majorité des Tunisiens sont
-arabophones
-et
-musulmans
-[
-290
-]
-.
-Les premiers Arabes orientaux, venus à partir du
-VII
-e
-siècle
-avec les
-conquêtes musulmanes
-, contribuent à l'
-islamisation
-de la majeure partie de l'
-Ifriqiya
-. À cette occasion se créent quelques villes nouvelles comme
-Kairouan
-et
-Mahdia
-. C'est à partir du
-XI
-e
-siècle
-, avec l'arrivée des
-tribus
-Banu Hilal
-et
-Banu Sulaym
-, que l'
-arabisation
-linguistique et culturelle devient déterminante
-[
-291
-]
-. Beaucoup de musulmans et de juifs arabophones arrivent également d'
-Andalousie
-à la fin du
-XV
-e
-siècle
-.
-Certains groupes, descendants des Berbérophones présents dans le pays avant la fondation de
-Carthage
-, ont cependant su conserver leur langue et leurs coutumes, souvent en raison de leur enclavement géographique
-[
-292
-]
-. Toutefois, les
-berbérophones
-, qui représentent un important pourcentage au Maroc, en Algérie et en Libye, restent peu nombreux en Tunisie
-[
-285
-]
-.
-La quasi-totalité de la population tunisienne est de
-confession musulmane
-, majoritairement
-sunnite
-de rite
-rite malikite
-[
-285
-]
-La
-Constitution de 2014
-dispose par ailleurs que
-«
-la Tunisie est un État libre, indépendant et souverain
-; sa religion est l'islam
-»
-[
-293
-]
-. La
-communauté juive tunisienne
-, présente depuis plus de deux millénaires mais qui a fortement diminué au cours du
-XX
-e
-siècle
-, est estimée à environ un millier de personnes, vivant surtout à
-Djerba
-,
-Zarzis
-et Tunis
-[
-294
-]
-. Il existe également une minorité chrétienne, composée en grande partie d'étrangers résidant en Tunisie
-[
-294
-]
-. Quant aux groupes
-nomades
-autrefois présents sur le territoire tunisien, ils se sont largement sédentarisés au cours du
-XX
-e
-siècle
-[
-295
-]
-.
-La Tunisie a dépassé le cap des dix millions d'habitants en 2005, ce qui correspond à un triplement de sa population depuis 1956 (
-3 448 000 habitants
-) et à un doublement depuis le début des années 1970. Néanmoins, la
-croissance démographique
-ralentit, le pays accélérant sa
-transition démographique
-dans les années 1990. Ainsi la Tunisie possède la population la plus âgée d'Afrique
-[
-296
-]
-. En 2012, l'
-indice de fécondité
-est estimé à
-2,2 enfants
-par femme.
-La Tunisie est aussi un pays qui connaît un taux important d'
-émigration
-: le nombre de Tunisiens résidant à l'étranger est évalué en 2012 à
-1 223 213 personnes
-, dont 84,5
-% résident en
-Europe
-[
-297
-]
-. La Tunisie est par ailleurs l'un des principaux points de départ des migrants préparant la traversée de la Méditerranée pour rejoindre l'Europe. Selon le
-ministre de l'Intérieur
-, près de
-23 000 migrants
-irréguliers sont présents dans le pays en 2024
-[
-298
-]
-.
-Répartition de la population entre 1966 et 2014
-[
-299
-]
-Année
-Population (en millions)
-Homme (%)
-Femme (%)
-0-4 ans
-(%)
-5-14 ans
-(%)
-15-59 ans
-(%)
-60 ans
-et plus (%)
-Milieu communal (%)
-Milieu non communal (%)
-1966
-4,533
-51
-49
-18,6
-27,9
-48
-5,5
-40,1
-59,9
-1975
-5,588
-50,8
-49,2
-16
-27,8
-50,4
-5,8
-47,5
-52,5
-1984
-6,966
-50,9
-49,1
-14,6
-25,1
-53,6
-6,7
-52,8
-47,2
-1994
-8,785
-50,6
-49,4
-11
-23,8
-56,9
-8,3
-61
-39
-2004
-9,911
-50,1
-49,9
-8,1
-18,6
-64
-9,3
-64,9
-35,1
-2014
-10,983
-49,8
-50,2
-9,2
-15,1
-64,3
-11,4
-67,7
-32,3
-Culture
-Article détaillé
-:
-Culture de la Tunisie
-.
-La culture de la Tunisie se diversifie par un héritage
-historique
-multimillénaire et une
-position géographique
-en plein centre du
-bassin méditerranéen
-, berceau des
-civilisations
-les plus prestigieuses et des principales
-religions
-monothéistes
-. La Tunisie a en effet été un carrefour de civilisations et sa culture reflète les traces des cultures
-libyque
-,
-punique
-,
-latine
-,
-arabe
-,
-musulmane
-,
-ottomane
-, et
-européenne
-, ainsi que l'influence des dynasties successives qui ont régné sur le pays.
-Religion
-Article détaillé
-:
-Religion en Tunisie
-.
-Prière nocturne à la
-grande mosquée de Kairouan
-.
-Khamsas
-au
-musée du patrimoine traditionnel de Djerba
-.
-L'
-islam
-est la religion principale et officielle de la Tunisie
-[
-294
-]
-. La grande majorité des
-musulmans
-tunisiens sont
-sunnites
-de
-rite
-malikite
-, le reste étant
-hanafite
-[
-300
-]
-ou
-ibadites
-[
-301
-]
-. Les Tunisiens conservent paradoxalement quelques croyances comme le
-mauvais œil
-. Par ailleurs, le
-soufisme
-tient une grande place dans le pays qui est parsemé de constructions blanches que sont les
-zaouïas
-. Ce sont les tombeaux de
-saints
-qui sont censés posséder un privilège dans l'
-au-delà
-qui leur permet d'être un lien entre l'homme et
-Dieu
-. De nos jours, certains Tunisiens continuent à les fréquenter et à leur demander des faveurs.
-Les fêtes religieuses musulmanes (
-Aïd al-Adha
-,
-Aïd el-Fitr
-,
-Mouled
-,
-etc.
-) sont considérées comme des
-jours fériés
-mais le vendredi n'est pas chômé.
-Intérieur de la synagogue de la Ghriba (Djerba).
-Le
-christianisme
-et le
-judaïsme
-sont devenus très minoritaires en Tunisie mais le pays se caractérise par sa tolérance et son ouverture aux autres cultures qui ont fait son identité, notamment sur l'île de
-Djerba
-[
-302
-]
-,
-[
-303
-]
-. La
-synagogue de la Ghriba
-est l'une des plus anciennes
-synagogues
-au monde et la plus ancienne utilisée sans interruption. Beaucoup de
-Juifs d'origine tunisienne
-la considèrent comme un lieu de
-pèlerinage
-. Chaque année, des célébrations sont organisées à raison de son ancienneté et la légende selon laquelle elle aurait été construite en utilisant des pierres du
-temple de Salomon
-[
-304
-]
-.
-La
-Constitution de 2022
-, tout comme
-celle de 1959
-, prévoit l'exercice libre de la foi tant qu'elle ne porte pas atteinte à l'ordre public
-[
-294
-]
-. Les gouvernements des présidents
-Bourguiba
-et
-Ben Ali
-respectent généralement ce droit mais ne permettent pas l'établissement de partis politiques basés sur la
-religion
-, interdisent le
-prosélytisme
-non-musulman, la
-polygamie
-[
-305
-]
-. Les
-minorités
-religieuses connaissent néanmoins deux discriminations
-: le
-président de la République tunisienne
-ne peut être d'une autre confession que celle musulmane et, s'il n'existe aucune interdiction légale du prosélytisme, la loi criminalise les
-conversions forcées
-[
-294
-]
-.
-La
-Constitution de 2014
-exige de l'État qu'il garantisse la liberté de croyance et de conscience et le libre exercice du culte, protège le
-sacré
-, garantisse la neutralité des
-lieux de culte
-, diffuse les valeurs de modération et de tolérance, proscrive l'accusation d'
-apostasie
-et s'oppose à l'
-incitation à la haine
-et à la violence
-[
-1
-]
-.
-Langues
-Article détaillé
-:
-Langues en Tunisie
-.
-Signalisation routière en arabe et français.
-La Tunisie est l'État du
-Maghreb
-le plus homogène sur le plan linguistique
-[
-306
-]
-, la quasi-totalité de la population parlant l'
-arabe tunisien
-en tant que
-langue maternelle
-et
-vernaculaire
-, et comprenant l'
-arabe littéral
-, qui est la
-langue officielle
-du pays
-[
-1
-]
-. L'arabe tunisien est considéré comme un
-dialecte
-dérivé de l'
-arabe classique
-— ou plus exactement un ensemble de dialectes
-[
-307
-]
-— pour lesquels il n'existe aucun organisme officiel de normalisation
-[
-308
-]
-et qui est surtout parlé dans le cadre d'un dialogue quotidien au sein de la famille. Selon des études linguistiques, il serait proche du
-maltais
-[
-309
-]
-, qui n'est toutefois pas considéré comme un dialecte arabe pour des raisons sociolinguistiques. Le
-berbère
-est parlé par une minorité berbérophone, surtout dans le Sud du pays.
-Durant le
-protectorat français de Tunisie
-, le
-français
-s'impose à travers les institutions nationales, particulièrement l'éducation, qui deviennent un fort vecteur de diffusion. À partir de l'indépendance, le pays s'arabise peu à peu, même si l'administration, la justice et l'enseignement restent longtemps bilingues
-[
-310
-]
-. Le pays est membre de l'
-Organisation internationale de la francophonie
-depuis 1970
-[
-311
-]
-. De plus, les gouvernorats de Béja, Gafsa, Médenine, Monastir, Sfax, Sousse et Tunis sont membres de l'Association internationale des régions francophones
-[
-312
-]
-.
-Les années 1990 marquent un tournant avec l'arabisation des cours de sciences jusqu'à la fin du collège, avec toutes les difficultés occasionnées par ce type de processus, afin de faciliter l'accès aux études supérieures et ce dans un contexte de réhabilitation du référent arabo-islamique dans l'espace public
-[
-310
-]
-. En
-octobre 1999
-, les établissements commerciaux se voient contraints d'accorder deux fois plus de place aux caractères arabes qu'aux caractères latins
-[
-310
-]
-. Dans le même temps, l'administration se voit contrainte de communiquer exclusivement en arabe mais seuls les ministères de la
-Défense
-et de la
-Justice
-et le
-Parlement
-sont totalement arabisés
-[
-306
-]
-. Dans ce contexte, l'usage du français semble régresser malgré le nombre accru de diplômés du système d'enseignement, ce qui conduit au fait qu'une bonne pratique du français demeure un marqueur social important
-[
-310
-]
-. Puisqu'elle reste largement pratiquée dans les milieux d'affaires, l'univers médical et le monde culturel, on peut même considérer qu'elle s'est embourgeoisée
-[
-310
-]
-.
-D'après les dernières estimations fournies par le gouvernement tunisien à l'Organisation internationale de la francophonie, le nombre de personnes ayant une certaine maîtrise du français est chiffré à
-6,36 millions
-de personnes, soit 63,6
-% de la population
-[
-313
-]
-.
-Médias
-Siège de l'
-Établissement de la télévision tunisienne
-.
-Le
-paysage audiovisuel
-tunisien se compose de deux chaînes de télévision publiques (
-Télévision tunisienne 1
-et
-Télévision tunisienne 2
-) ainsi que de chaînes de télévision privées nées du processus d'ouverture au secteur privé initié en 2003 et dont le nombre est renforcé après la
-révolution de 2011
-:
-Zitouna TV
-, Al Mutawasit TV,
-Al Janoubiya TV
-,
-Al Qalam TV
-,
-Hannibal TV
-,
-El Hiwar El Tounsi
-,
-Nessma
-,
-Tunisna TV
-,
-Attessia TV
-ou encore
-TWT
-.
-Siège de la
-radio tunisienne
-à Tunis.
-Le
-paysage radiophonique
-tunisien comprend des stations publiques nationales et régionales ainsi que des stations privées. La radio publique est administrée par l'
-Établissement de la radio tunisienne
-, qui exploite notamment les chaînes nationales que sont
-Radio Tunis
-,
-RTCI
-,
-Radio Jeunes
-et
-Radio Tunisie Culture
-, ainsi que les stations régionales de
-Radio Gafsa
-,
-Radio Le Kef
-,
-Radio Monastir
-,
-Radio Sfax
-et
-Radio Tataouine
-[
-314
-]
-. Parallèlement, plusieurs radios privées sont autorisées avec la libéralisation du secteur audiovisuel, parmi lesquelles
-Express FM
-,
-IFM
-,
-Mosaïque FM
-,
-Jawhara FM
-,
-KnOOz FM
-,
-Ulysse FM
-,
-Diwan FM
-,
-Cap FM
-ou encore
-Oasis FM
-[
-315
-]
-.
-La
-presse écrite
-connaît, sous les régimes autoritaires des présidents
-Habib Bourguiba
-puis
-Zine el-Abidine Ben Ali
-, des périodes de libéralisation puis de
-censure
-. La révolution constitue un tournant, avec l'autorisation donnée à près de 200 nouveaux journaux et revues de paraître
-[
-316
-]
-. Les
-partis politiques
-ont le droit de publier leurs propres journaux mais ceux des
-partis d'opposition
-n'ont longtemps eu qu'un tirage très limité.
-Éducation
-Article détaillé
-:
-Système éducatif en Tunisie
-.
-École primaire à Hergla.
-Taux d'alphabétisation des adultes (1985-2015) selon l'
-Institut de statistique de l'Unesco
-.
-Université de Sousse.
-L'éducation préscolaire non obligatoire, qui s'adresse aux enfants de trois à six ans
-[
-317
-]
-, est dispensée dans les jardins d'enfants
-[
-318
-]
-.
-L'enseignement de base est obligatoire et gratuit, de six à seize ans, et se répartit sur deux cycles
-: le premier cycle, d'une durée de six ans, est dispensé à l'école primaire alors que le deuxième cycle, d'une durée de trois ans, se déroule au collège
-[
-317
-]
-,
-[
-319
-]
-.
-Ce parcours est sanctionné par le diplôme de fin d'études de l'enseignement de base permettant aux diplômés d'accéder à l'enseignement secondaire (toujours gratuit) dispensé au lycée durant quatre ans à partir de la réforme de 1995
-[
-318
-]
-. Il comprend un tronc commun d'une année (trois jusqu'en 1991) au terme duquel les élèves sont orientés vers un deuxième cycle de trois ans comprenant sept filières (lettres, mathématiques, sciences expérimentales, sciences techniques, sciences de l'informatique, économie-gestion et sport) et sanctionné par le
-baccalauréat
-permettant l'accès à l'
-enseignement supérieur
-[
-318
-]
-. Celui-ci compte notamment
-179 établissements
-rattachés aux treize universités — dont cinq à Tunis, une à
-Sousse
-, une à
-Sfax
-, une à
-Kairouan
-, une à
-Gabès
-, une à
-Gafsa
-, une à
-Monastir
-et une à
-Jendouba
-— mais aussi 24
-instituts supérieurs des études technologiques
-(ISET).
-La
-formation professionnelle
-est assurée par un ensemble d'opérateurs publics parmi lesquels figure l'Agence tunisienne de la formation professionnelle qui assure une tutelle pédagogique de l'ensemble des opérateurs publics et privés
-[
-318
-]
-. Les diplômes délivrés après une formation initiale sont de trois niveaux
-: le certificat d'aptitude professionnelle (CAP) qui sanctionne un cycle de formation d'une durée minimale d'une année après l'enseignement de base, le brevet de technicien professionnel (BTP) qui sanctionne un cycle de formation d'une durée minimale d'une année après la fin du premier cycle de l'enseignement secondaire ou après l'obtention du CAP et le brevet de technicien supérieur qui sanctionne un cycle de formation d'une durée minimale de deux années après le baccalauréat ou après l'obtention du BTP
-[
-318
-]
-.
-Alors que 21
-% du budget national est consacré en 2008 à l'éducation nationale, le nombre d'élèves inscrits dans les niveaux primaire et secondaire se monte à
-2,1 millions
-en 2008 contre
-2,4 millions
-en 2000 et
-1,7 million
-en 1987
-;
-370 000 étudiants
-sont inscrits dans le même temps dans l'enseignement supérieur
-[
-320
-]
-, soit 27
-% de la classe d'âge concernée
-[
-55
-]
-. En 2005, le taux d'
-alphabétisation
-est de 76,2
-% et le taux de scolarisation des enfants de 12 à
-17 ans
-, égal pour les garçons et les filles, est de 66
-%
-[
-55
-]
-.
-En 2015, le
-ministère de l'Éducation
-décide d'intégrer une solution numérique pour les élèves qui a pour but de perfectionner la qualité de l'apprentissage
-[
-321
-]
-.
-Santé
-Article connexe
-:
-Santé en Tunisie
-.
-En 2013, les dépenses de santé représentent 7,1
-% du
-PIB
-du pays
-[
-285
-]
-. En 2010, on compte
-1,22 médecins
-pour
-1 000 habitants
-[
-285
-]
-.
-L'
-espérance de vie
-à la naissance est de
-75,9 ans
-en 2015, soit respectivement
-73,8 ans
-pour les hommes et
-78,1 ans
-pour les femmes
-[
-285
-]
-. La
-mortalité infantile
-est de
-22,35 morts
-pour
-1 000 naissances
-en 2015
-[
-285
-]
-.
-En 2020, en raison de la
-pandémie de Covid-19
-, l'inquiétude s'étend au corps médical
-[
-322
-]
-. En 2021, la Tunisie franchit le seuil des
-10 000 décès
-, le deuxième en Afrique avec un taux de mortalité élevé
-[
-323
-]
-.
-Arts
-Nejib Belkadhi lors de la cérémonie des
-Tunisia Web Awards
-en 2015.
-Le
-cinéma tunisien
-s'affirme à partir des années 1960 avec la recherche d'une représentation authentique de la société tunisienne, avec par exemple
-Mokhtar
-(1968) de
-Sadok Ben Aïcha
-[
-324
-]
-. Les années 1970 sont caractérisées par une réflexion critique sur l'
-histoire nationale
-et les rapports de pouvoir, avec des œuvres comme
-Au pays du Tararanni
-(1973),
-Sejnane
-(1974) d'
-Abdellatif Ben Ammar
-et
-Fatma 75
-(1975) de
-Salma Baccar
-(première fiction réalisée par une cinéaste tunisienne)
-[
-324
-]
-. Dans les années 1980, le cinéma tunisien est marqué par un élargissement thématique et stylistique, avec
-Les Baliseurs du désert
-et
-Le Collier perdu de la colombe
-de
-Nacer Khémir
-ou
-L'Homme de cendres
-(1986) de
-Nouri Bouzid
-[
-324
-]
-. Les années 1990 voient émerger des œuvres plus introspectives comme
-Les Silences du palais
-(1994) de
-Moufida Tlatli
-[
-324
-]
-, récompensée de la
-Caméra d'or
-à
-Cannes
-[
-325
-]
-. Au début des années 2000, des films comme
-Satin rouge
-(2002) de
-Raja Amari
-interrogent les normes sociales contemporaines
-[
-324
-]
-. Après la
-révolution de 2011
-, le cinéma tunisien se distingue par une diversité formelle accrue, avec
-Le Challat de Tunis
-(2013) de
-Kaouther Ben Hania
-et
-Tlamess
-(2019) d'
-Ala Eddine Slim
-[
-324
-]
-, et un regain de visibilité mondiale
-:
-Hedi, un vent de liberté
-(2016) de
-Mohamed Ben Attia
-remporte notamment l'
-Ours d'argent du meilleur acteur
-à la
-Berlinale
-[
-326
-]
-alors que
-L'Homme qui a vendu sa peau
-(2020) de Ben Hania est le premier film tunisien nommé à l'
-Oscar du meilleur film international
-[
-327
-]
-. La dynamique se poursuit avec
-Les Filles d'Olfa
-(2023), sélectionné en compétition officielle à
-Cannes
-[
-328
-]
-puis nommé à l'
-Oscar du meilleur film documentaire
-[
-329
-]
-.
-Orchestre de La Rachidia au Théâtre municipal de Tunis.
-Fel ghorba fenani
-par Saliha (1914-1958).
-La
-musique tunisienne
-est, quant à elle, relativement diversifiée. Principalement influencée par les cultures arabo-andalouse, arabe et occidentale, elle est le résultat d'un métissage culturel. Son courant musical classique et le plus réputé est le
-malouf
-. Toutefois, les chants traditionnels continuent de rencontrer un certain succès. Côté instruments, les régions urbaines et rurales se différencient quelque peu. En milieu urbain, ce sont les
-instruments à cordes
-(
-rebec
-,
-oud
-et
-qanûn
-) et les
-percussions
-(
-darbouka
-) qui dominent alors que, en milieu rural, le chant bédouin, en plus des percussions, est accompagné d'
-instruments à vent
-comme le
-mezoued
-et la
-gasba
-. Parmi les grands chanteurs et chanteuses tunisiens, on peut citer
-Saliha
-,
-Khemaïs Tarnane
-,
-Ali Riahi
-,
-Hédi Jouini
-,
-Latifa Arfaoui
-,
-Mohamed Jamoussi
-,
-Cheikh El Afrit
-,
-Lotfi Bouchnak
-ou encore
-Dhekra Mohamed
-. Chez les musiciens, on peut également citer
-Salah El Mahdi
-,
-Ridha Kalaï
-,
-Ali Sriti
-,
-Anouar Brahem
-,
-Jasser Haj Youssef
-ou encore
-Youssef Slama
-. Dans le même temps, une majorité de la population est attirée par des musiques d'origine arabe (
-égyptienne
-,
-libanaise
-ou encore
-syrienne
-). La musique occidentale actuelle remporte également un succès important avec l'émergence de nombreux groupes et de festivals de
-rock
-, de
-hip-hop
-, de
-reggae
-et de
-jazz
-.
-Le théâtre tunisien s'est surtout développé entre la fin du
-XIX
-e
-et le début du
-XX
-e
-siècle
-durant le
-protectorat français
-[
-330
-]
-. Fondé à cette époque, le
-Théâtre municipal de Tunis
-[
-330
-]
-a accueilli en plus d'un siècle d'existence de grands noms de la scène tunisienne et internationale
-[
-330
-]
-. Le
-7 novembre 1962
-,
-Habib Bourguiba
-consacre son discours au théâtre qu'il considère comme
-«
-un puissant moyen de diffusion de la culture ainsi qu'un moyen d'éducation populaire des plus efficaces
-»
-[
-331
-]
-. Toutefois, le théâtre tunisien n'a jamais connu un réel développement. En 1970, sous l'impulsion de l'acteur
-Aly Ben Ayed
-,
-Caligula
-d'
-Albert Camus
-est traduit en
-arabe
-et les œuvres
-Mourad III
-ou
-Le Temps du Bouraq
-de
-Habib Boularès
-maintiennent le ton de la violence sanglante. Même si, de plus en plus, les spectacles dits de boulevard sont restreints au profit d'un genre de spectacle plus sophistiqué
-[
-332
-]
-,
-Moncef Souissi
-et
-Ezzedine Madani
-ont créé un théâtre d'expression populaire et moqueur en
-tunisien
-. Le courant dit du Nouveau Théâtre de Tunis a également repris le fil de la dérision. Nommé en 1988 à la tête du
-Théâtre national tunisien
-(TNT),
-Mohamed Driss
-lui offre une nouvelle salle,
-Quatrième art
-, en 1996
-[
-333
-]
-et l'ouvre aux spectacles de
-ballet
-, de
-cirque
-et de
-chant
-[
-333
-]
-. Quant à
-El Teatro
-, le premier théâtre privé de Tunisie
-[
-334
-]
-, il offre des représentations théâtrales, des spectacles de danse, des concerts de jazz, des galas de musique arabe, des expositions d'art et des récitals de
-poésie
-[
-334
-]
-.
-Portrait du peintre
-Yahia Turki
-.
-La naissance d'une
-peinture tunisienne
-contemporaine est fortement liée à l'
-École de Tunis
-mise en place par un groupe d'artistes de Tunisie unis par la volonté d'incorporer des thèmes proprement tunisiens et rejetant l'influence orientaliste de la peinture coloniale. Après la
-peinture expressionniste
-d'Amara Debbache,
-Jellal Ben Abdallah
-et
-Aly Ben Salem
-se font reconnaître, l'un pour ses miniatures de style byzantin, l'autre pour son rattachement à l'
-impressionnisme
-[
-335
-]
-. La vie quotidienne devient par ailleurs l'inspiration de
-Zoubeir Turki
-et d'
-Abdelaziz Gorgi
-. L'
-abstraction
-saisit également l'imagination des peintres comme
-Edgard Naccache
-, Nello Lévy et
-Hédi Turki
-. Après l'indépendance en 1956, le mouvement pictural tunisien entre dans une dynamique d'édification nationale, des artistes se mettant au service de l'État. Des artistes ont ainsi pu accéder à une reconnaissance internationale tels que
-Hatem El Mekki
-, peintre abstrait, dont la facture rappelle celle d'
-Alberto Giacometti
-[
-335
-]
-. La jeune peinture emboîte davantage le pas à ce qui se passe ailleurs dans le monde
-[
-335
-]
-:
-Sadok Gmech
-puise son inspiration dans le patrimoine national alors que Moncef Ben Amor se tourne vers le fantastique. Dans un autre registre,
-Youssef Rekik
-réutilise la technique de la peinture sur verre et
-Nja Mahdaoui
-retrouve la calligraphie dans sa dimension mystique
-[
-335
-]
-.
-Enfin, la
-littérature tunisienne
-existe sous deux formes
-: en langue
-arabe
-et en langue
-française
-. La littérature arabophone remonte au
-VII
-e
-siècle
-avec l'arrivée de la civilisation arabe dans la région. Elle est plus importante en volume comme en valeur que la littérature en langue française qui suit l'implantation du
-protectorat
-en 1881. Malgré la longue histoire de la littérature tunisienne, la production nationale reste pourtant maigre
-: la bibliographie nationale a recensé
-1 249
-livres
-non scolaires publiés en 2002 dont
-885 titres
-en arabe
-[
-336
-]
-. Parmi les grands auteurs tunisiens, on peut citer
-Abou el Kacem Chebbi
-,
-Moncef Ghachem
-et
-Mahmoud Messadi
-.
-Traditions
-Femme en train de peindre une céramique.
-Potier dans son atelier à Guellala.
-La Tunisie est réputée pour ses nombreux
-produits artisanaux
-dont les diverses régions du pays font leur spécificité.
-La
-poterie
-tunisienne est principalement issue de
-Guellala
-[
-337
-]
-, ville se situant dans le sud de l'île de
-Djerba
-, dont les habitants sont à majorité berbères et dont la profession principale est le travail de l'argile
-[
-338
-]
-. D'autres centres potiers sur le
-littoral
-tunisien existent, notamment à
-Tunis
-,
-Nabeul
-,
-Moknine
-,
-etc.
-Mais si la poterie poreuse s'identifie à Guellala, celle émaillée (jaune, verte ou brune) est la marque de fabrique de Nabeul
-[
-339
-]
-.
-Tisserande de tapis traditionnel à Kairouan.
-La
-ferronnerie
-décore les
-portes
-cloutées
-, un ornement original probablement ramené en Ifriqiya par les
-Andalous
-chassés d'Espagne
-[
-340
-]
-. Le
-gouvernorat de Kairouan
-constitue quant à lui le premier pôle en matière de fabrication de
-tapis
-et de
-margoum
-[
-341
-]
-. La Tunisie possède enfin une riche tradition de
-mosaïques
-remontant à l'
-Afrique romaine
-[
-342
-]
-.
-Le costume traditionnel est la tenue par excellence des
-mariages
-et autres cérémonies
-[
-343
-]
-. Au niveau national, c'est la
-jebba
-qui s'est imposée comme habit traditionnel
-[
-343
-]
-. Les
-babouches
-masculines sont en général de la couleur naturelle du
-cuir
-[
-344
-]
-, celles des femmes étant dans leur majorité brodées de fils de
-soie
-, de
-coton
-, d'
-or
-et d'
-argent
-avec des motifs floraux ou des croissants
-[
-344
-]
-. Dans des régions du Nord et du Sud, les femmes portent traditionnellement la melia ou le
-houli
-[
-345
-]
-.
-Importé par les
-Andalous
-au
-XVI
-e
-siècle
-, le
-jasmin
-(
-Jasminum grandiflorum
-[
-N 3
-]
-) est devenu la fleur emblématique de la Tunisie. Dès la tombée de la nuit, les vendeurs confectionnent de
-petits bouquets
-et les vendent aux passants dans la rue ou aux automobilistes arrêtés aux carrefours. Par ailleurs, le jasmin fait l'objet d'un langage spécifique. Ainsi, un homme qui en porte à l'oreille gauche indique qu'il est
-célibataire
-. De plus, offrir du jasmin blanc est une preuve d'
-amour
-alors qu'offrir du
-jasmin d'hiver
-, sans odeur, est signe d'insolence
-[
-346
-]
-.
-Festivals
-Festival international d'Hammamet.
+  * [Lire](https://fr.wikipedia.org/wiki/Tunisie)
+  * [Voir le texte source](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=edit "Cette page est protégée.
+Vous pouvez toutefois en visualiser la source. \[alt-e\]")
+  * [Voir l’historique](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=history "Historique des versions de cette page \[alt-h\]")
+
+
+Outils
+déplacer vers la barre latérale masquer
+Actions 
+  * [ Lire](https://fr.wikipedia.org/wiki/Tunisie)
+  * [ Voir le texte source](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=edit "Cette page est protégée.
+Vous pouvez toutefois en visualiser la source. \[alt-e\]")
+  * [ Voir l’historique](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=history "Historique des versions de cette page \[alt-h\]")
+
+
+Général 
+  * [Pages liées](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Pages_li%C3%A9es/Tunisie "Liste des pages liées qui pointent sur celle-ci \[alt-j\]")
+  * [Suivi des pages liées](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Suivi_des_liens/Tunisie "Liste des modifications récentes des pages appelées par celle-ci \[alt-k\]")
+  * [Téléverser un fichier](https://fr.wikipedia.org/wiki/Aide:Importer_un_fichier "Téléverser des fichiers \[alt-u\]")
+  * [Lien permanent](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239035599 "Adresse permanente de cette version de cette page")
+  * [Informations sur la page](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=info "Davantage d’informations sur cette page")
+  * [Citer cette page](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Citer&page=Tunisie&id=239035599&wpFormIdentifier=titleform "Informations sur la manière de citer cette page")
+  * [Obtenir l'URL raccourcie](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:UrlShortener&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FTunisie)
+  * [Utiliser l'ancien analyseur](https://fr.wikipedia.org/w/index.php?title=Tunisie&useparsoid=0)
+  * [Tout développer](https://fr.wikipedia.org/wiki/Tunisie "Développer tous les éléments réductibles de la page actuelle")
+  * [Modifier les liens interlangues](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Modifier les liens interlangues")
+
+
+Imprimer / exporter 
+  * [Créer un livre](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Livre&bookcmd=book_creator&referer=Tunisie)
+  * [Télécharger comme PDF](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:DownloadAsPdf&page=Tunisie&action=show-download-screen)
+  * [Version imprimable](https://fr.wikipedia.org/w/index.php?title=Tunisie&printable=yes "Version imprimable de cette page \[alt-p\]")
+
+
+Dans d’autres projets 
+  * [Wikimedia Commons](https://commons.wikimedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3_/_Tunest_/_Tunisie)
+  * [Wikinews](https://fr.wikinews.org/wiki/Cat%C3%A9gorie:Tunisie)
+  * [Wikiquote](https://fr.wikiquote.org/wiki/Tunisie)
+  * [Wikivoyage](https://fr.wikivoyage.org/wiki/Tunisie)
+  * [Élément Wikidata](https://www.wikidata.org/wiki/Special:EntityPage/Q948 "Lien vers l’élément dans le dépôt de données connecté \[alt-g\]")
+
+
+[34, 9](https://fr.wikipedia.org/wiki/Tunisie#/maplink/0)
+Un article de Wikipédia, l'encyclopédie libre.
+[![Wikipédia:Articles de qualité](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Article_de_qualit%C3%A9.svg/20px-Article_de_qualit%C3%A9.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Articles_de_qualit%C3%A9 "Wikipédia:Articles de qualité")
+Vous lisez un «[article de qualité](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Articles_de_qualit%C3%A9 "Wikipédia:Articles de qualité")» labellisé en 2006.
+République tunisienne
+(ar)الجمهورية التونسية[Écouter](https://upload.wikimedia.org/wikipedia/commons/transcoded/4/45/Tounesjmr.wav/Tounesjmr.wav.mp3 "Lecture audio")[ⓘ](https://fr.wikipedia.org/wiki/Fichier:Tounesjmr.wav "Fichier:Tounesjmr.wav")  
+|  [![Drapeau](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/langfr-120px-Flag_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg?lang=fr?uselang=fr)  
+[Drapeau de la Tunisie](https://fr.wikipedia.org/wiki/Drapeau_de_la_Tunisie "Drapeau de la Tunisie")  |  [![Blason](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Coat_of_arms_of_Tunisia.svg/langfr-120px-Coat_of_arms_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Tunisia.svg?lang=fr?uselang=fr)  
+[Armoiries de la Tunisie](https://fr.wikipedia.org/wiki/Armoiries_de_la_Tunisie "Armoiries de la Tunisie")  |  
+| --- | --- |  
+| [Devise](https://fr.wikipedia.org/wiki/Liste_des_devises_nationales "Liste des devises nationales")  |  en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe"):[حرية، نظام، عدالة](https://fr.wikipedia.org/wiki/Devise_de_la_Tunisie "Devise de la Tunisie")(_Ḥoṛiya, Niẓam, 'Adāla_ , «Liberté, Ordre, Justice»)  |  
+| --- | --- |  
+| [Hymne](https://fr.wikipedia.org/wiki/Hymne_national "Hymne national")  |  en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe"):حماة الحمى(_[Humat Al-Hima](https://fr.wikipedia.org/wiki/Humat_Al-Hima "Humat Al-Hima")_ , «Défenseurs de la patrie»)  
+[](https://fr.wikipedia.org/wiki/Fichier:Humat_al-Hima.ogg)  |  
+| [Fête nationale](https://fr.wikipedia.org/wiki/F%C3%AAte_nationale "Fête nationale")  |  20 mars  |  
+| · Événement commémoré  |  [Indépendance](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie_depuis_1956#Instauration_de_la_r%C3%A9publique "Histoire de la Tunisie depuis 1956") vis-à-vis de la [France](https://fr.wikipedia.org/wiki/France "France") (1956)  |  
+[![Description de l'image Tunisia \(orthographic projection\).svg.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Tunisia_%28orthographic_projection%29.svg/langfr-250px-Tunisia_%28orthographic_projection%29.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisia_\(orthographic_projection\).svg?lang=fr?uselang=fr)
+[![Description de l'image Tunisie carte.png.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tunisie_carte.png/250px-Tunisie_carte.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisie_carte.png?uselang=fr)  
+Administration  
+| Forme de l'État  |  [République](https://fr.wikipedia.org/wiki/R%C3%A9publique "République") [présidentielle](https://fr.wikipedia.org/wiki/R%C3%A9gime_pr%C3%A9sidentiel#Origines_et_d%C3%A9finition "Régime présidentiel") et [bicamérale](https://fr.wikipedia.org/wiki/Bicam%C3%A9risme "Bicamérisme")  |  
+| --- | --- |  
+| [Président de la République](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_tunisienne "Président de la République tunisienne")  |  [Kaïs Saïed](https://fr.wikipedia.org/wiki/Ka%C3%AFs_Sa%C3%AFed "Kaïs Saïed")  |  
+| [Chef du gouvernement](https://fr.wikipedia.org/wiki/Chef_du_gouvernement_tunisien "Chef du gouvernement tunisien")  |  [Sarra Zaafrani](https://fr.wikipedia.org/wiki/Sarra_Zaafrani "Sarra Zaafrani")  |  
+| [Parlement](https://fr.wikipedia.org/wiki/Parlement "Parlement")  |  [Parlement](https://fr.wikipedia.org/wiki/Parlement_de_la_Tunisie "Parlement de la Tunisie")  |  
+|  [Chambre haute](https://fr.wikipedia.org/wiki/Chambre_haute "Chambre haute")  
+[Chambre basse](https://fr.wikipedia.org/wiki/Chambre_basse "Chambre basse")  |  [Conseil national des régions et des districts](https://fr.wikipedia.org/wiki/Conseil_national_des_r%C3%A9gions_et_des_districts "Conseil national des régions et des districts")  
+[Assemblée des représentants du peuple](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_\(Tunisie\) "Assemblée des représentants du peuple \(Tunisie\)")  |  
+| [Langues officielles](https://fr.wikipedia.org/wiki/Langue_officielle "Langue officielle")  |  [Arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe")[[1]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-const-lang-1)  |  
+| [Capitale](https://fr.wikipedia.org/wiki/Liste_des_capitales_du_monde "Liste des capitales du monde")  |  [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis")[36° 49′ N, 10° 11′ E](https://fr.wikipedia.org/wiki/Tunisie#/maplink/1)  |  
+Géographie  
+| [Première municipalité](https://fr.wikipedia.org/wiki/Liste_des_municipalit%C3%A9s_de_Tunisie "Liste des municipalités de Tunisie")  |  [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis")  |  
+| --- | --- |  
+| Superficie totale  |  163 610 [km2](https://fr.wikipedia.org/wiki/Kilom%C3%A8tre_carr%C3%A9 "Kilomètre carré")  
+([classé 92e](https://fr.wikipedia.org/wiki/Liste_des_pays_et_territoires_par_superficie "Liste des pays et territoires par superficie"))  |  
+| Superficie en eau  |  5%  |  
+| [Fuseau horaire](https://fr.wikipedia.org/wiki/Fuseau_horaire "Fuseau horaire")  |  [UTC](https://fr.wikipedia.org/wiki/Temps_universel_coordonn%C3%A9 "Temps universel coordonné") [+1](https://fr.wikipedia.org/wiki/UTC+01:00 "UTC+01:00")  |  
+Histoire  
+| Entité précédente  | 
+  * [![Tunisie](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/20px-Flag_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg?uselang=fr "Tunisie") [Royaume de Tunisie](https://fr.wikipedia.org/wiki/Royaume_de_Tunisie "Royaume de Tunisie")
+
+ |  
+| --- | --- |  
+| [Capsien](https://fr.wikipedia.org/wiki/Capsien "Capsien")  |  [8000 av. J.-C.](https://fr.wikipedia.org/wiki/VIIIe_mill%C3%A9naire_av._J.-C. "VIIIe millénaire av. J.-C.") - [4000 av. J.-C.](https://fr.wikipedia.org/wiki/IVe_mill%C3%A9naire_av._J.-C. "IVe millénaire av. J.-C.")  |  
+| [Civilisation carthaginoise](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise")  |  [814 av. J.-C.](https://fr.wikipedia.org/wiki/Ann%C3%A9es_810_av._J.-C. "Années 810 av. J.-C.") – [146 av. J.-C.](https://fr.wikipedia.org/wiki/146_av._J.-C. "146 av. J.-C.")  |  
+| [Empire romain](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique")  |  [146 av. J.-C.](https://fr.wikipedia.org/wiki/140_av._J.-C. "140 av. J.-C.") – [439](https://fr.wikipedia.org/wiki/439 "439")  |  
+| [Royaume vandale](https://fr.wikipedia.org/wiki/Royaume_vandale "Royaume vandale")  |  [439](https://fr.wikipedia.org/wiki/439 "439") – [534](https://fr.wikipedia.org/wiki/534 "534")  |  
+| [Empire byzantin](https://fr.wikipedia.org/wiki/Pr%C3%A9fecture_du_pr%C3%A9toire_d'Afrique "Préfecture du prétoire d'Afrique")  |  [534](https://fr.wikipedia.org/wiki/534 "534") – [698](https://fr.wikipedia.org/wiki/698 "698")  |  
+| [Califat omeyyade](https://fr.wikipedia.org/wiki/Fihrides "Fihrides")  |  [698](https://fr.wikipedia.org/wiki/698 "698") – [750](https://fr.wikipedia.org/wiki/750 "750")  |  
+| [Émirat aghlabide](https://fr.wikipedia.org/wiki/Aghlabides "Aghlabides")  |  [800](https://fr.wikipedia.org/wiki/800 "800") – [909](https://fr.wikipedia.org/wiki/909 "909")  |  
+| [Califat fatimide](https://fr.wikipedia.org/wiki/Califat_fatimide "Califat fatimide")  |  [909](https://fr.wikipedia.org/wiki/909 "909") – [969](https://fr.wikipedia.org/wiki/969 "969")  |  
+| [Émirat ziride](https://fr.wikipedia.org/wiki/Zirides "Zirides")  |  [972](https://fr.wikipedia.org/wiki/972 "972") – [1148](https://fr.wikipedia.org/wiki/1148 "1148")  |  
+| [Sultanat hafside](https://fr.wikipedia.org/wiki/Sultanat_hafside_de_Tunis "Sultanat hafside de Tunis")  |  [1207](https://fr.wikipedia.org/wiki/1207 "1207") – [1574](https://fr.wikipedia.org/wiki/1574 "1574")  |  
+| [Tunisie ottomane](https://fr.wikipedia.org/wiki/Tunisie_ottomane "Tunisie ottomane")  |  [1574](https://fr.wikipedia.org/wiki/1574 "1574") – [1705](https://fr.wikipedia.org/wiki/1705 "1705")  |  
+| [Beylicat de Tunis](https://fr.wikipedia.org/wiki/Beylicat_de_Tunis "Beylicat de Tunis")  |  [1705](https://fr.wikipedia.org/wiki/1705 "1705") – [1881](https://fr.wikipedia.org/wiki/1881 "1881")  |  
+| [Protectorat français](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie")  |  [1881](https://fr.wikipedia.org/wiki/1881 "1881") – [1956](https://fr.wikipedia.org/wiki/1956 "1956")  |  
+| [Indépendance](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie_depuis_1956 "Histoire de la Tunisie depuis 1956")  |  [![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_France_%281974%E2%80%932020%29.svg/20px-Flag_of_France_%281974%E2%80%932020%29.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_France_\(lighter_variant\).svg?uselang=fr "Drapeau : France") [France](https://fr.wikipedia.org/wiki/Quatri%C3%A8me_R%C3%A9publique_\(France\) "Quatrième République \(France\)")  
+20 mars 1956  |  
+| République  |  25 juillet 1957  |  
+| [Révolution](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne")  |  14 janvier 2011  |  
+| [Constitution de 2014](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2014 "Constitution tunisienne de 2014")  |  10 février 2014  |  
+| [Constitution de 2022](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2022 "Constitution tunisienne de 2022")  |  16 août 2022  |  
+Démographie  
+| [Gentilé](https://fr.wikipedia.org/wiki/Gentil%C3%A9 "Gentilé")  |  [Tunisien, Tunisienne](https://fr.wikipedia.org/wiki/Tunisiens "Tunisiens")  |  
+| --- | --- |  
+|  [Population totale](https://fr.wikipedia.org/wiki/Liste_des_pays_par_population "Liste des pays par population") (2024[[2]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ins-2))  |  11 972 169 hab.  
+([classé 78e](https://fr.wikipedia.org/wiki/Liste_des_pays_par_population "Liste des pays par population"))  |  
+| [Densité](https://fr.wikipedia.org/wiki/Densit%C3%A9_de_population "Densité de population")  |  73 hab./km2  |  
+Économie  
+|  [PIB nominal](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 48,541 milliards de [$](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain")  
++ 8,84%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+| --- | --- |  
+|  [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") [(PPA)](https://fr.wikipedia.org/wiki/Parit%C3%A9_de_pouvoir_d'achat "Parité de pouvoir d'achat") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 169,976 milliards de [$](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain")  
++ 3,63%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+|  [PIB nominal](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") [par hab.](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut_par_habitant "Produit intérieur brut par habitant") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 3 967,481 [$](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain")  
++ 7,90%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+|  [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") [(PPA)](https://fr.wikipedia.org/wiki/Parit%C3%A9_de_pouvoir_d'achat "Parité de pouvoir d'achat") [par hab.](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut_par_habitant "Produit intérieur brut par habitant") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 13 892,913 [$](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain")  
++ 2,74%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+|  [Taux de chômage](https://fr.wikipedia.org/wiki/Taux_de_ch%C3%B4mage "Taux de chômage") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 16,40%  
++ 7,89%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+|  [Dette publique brute](https://fr.wikipedia.org/wiki/Dette_publique "Dette publique") ([2024](https://fr.wikipedia.org/wiki/2024 "2024"))  |  **Nominale:**  
+![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 137,293 milliards de [DT](https://fr.wikipedia.org/wiki/Dinar_tunisien "Dinar tunisien")  
++ 10,34%  
+**Relative:**  
+![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 83,132% du [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut")  
++ 0,74%[[3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-FMI2-3)  |  
+| [Monnaie](https://fr.wikipedia.org/wiki/Monnaie "Monnaie")  |  [Dinar tunisien](https://fr.wikipedia.org/wiki/Dinar_tunisien "Dinar tunisien") ([`TND`](https://fr.wikipedia.org/wiki/ISO_4217 "ISO 4217"))  |  
+Développement  
+|  [IDH](https://fr.wikipedia.org/wiki/Indice_de_d%C3%A9veloppement_humain "Indice de développement humain") ([2021](https://fr.wikipedia.org/wiki/2021 "2021"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 0,746[[4]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-hdr2025-4) (élevé ; [105e](https://fr.wikipedia.org/wiki/Liste_des_pays_par_IDH "Liste des pays par IDH"))  |  
+| --- | --- |  
+|  [IDHI](https://fr.wikipedia.org/wiki/Liste_des_pays_par_IDH_ajust%C3%A9_selon_les_in%C3%A9galit%C3%A9s "Liste des pays par IDH ajusté selon les inégalités") ([2023](https://fr.wikipedia.org/wiki/2023 "2023"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 0,595[[4]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-hdr2025-4) ([105e](https://fr.wikipedia.org/wiki/Liste_des_pays_par_IDH_ajust%C3%A9_selon_les_in%C3%A9galit%C3%A9s "Liste des pays par IDH ajusté selon les inégalités"))  |  
+|  [Coefficient de Gini](https://fr.wikipedia.org/wiki/Liste_des_pays_par_%C3%A9galit%C3%A9_de_revenus "Liste des pays par égalité de revenus") ([2015](https://fr.wikipedia.org/wiki/2015 "2015"))  |  ![en diminution](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 32,8%[[5]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-Gini_BM-5)  |  
+|  [Indice d'inégalité de genre](https://fr.wikipedia.org/wiki/Indice_d'in%C3%A9galit%C3%A9_de_genre "Indice d'inégalité de genre") ([2021](https://fr.wikipedia.org/wiki/2021 "2021"))  |  ![en diminution](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 0,238[[4]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-hdr2025-4) ([62e](https://fr.wikipedia.org/wiki/Indice_d'in%C3%A9galit%C3%A9_de_genre "Indice d'inégalité de genre"))  |  
+|  [Indice de performance environnementale](https://fr.wikipedia.org/wiki/Indice_de_performance_environnementale "Indice de performance environnementale") ([2024](https://fr.wikipedia.org/wiki/2024 "2024"))  |  ![en augmentation](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 45,3[[6]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-IPE2024-6) ([91e](https://fr.wikipedia.org/wiki/Indice_de_performance_environnementale "Indice de performance environnementale"))  |  
+Divers  
+| [Code ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1 "ISO 3166-1")  |  `TUN, TN`  |  
+| --- | --- |  
+| [Domaine Internet](https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau "Domaine de premier niveau")  |  [.tn](https://fr.wikipedia.org/wiki/.tn ".tn")  
+تونس. (dès [2011](https://fr.wikipedia.org/wiki/2011 "2011"))[[7]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-7)  |  
+| [Indicatif téléphonique](https://fr.wikipedia.org/wiki/Liste_des_indicatifs_t%C3%A9l%C3%A9phoniques_internationaux "Liste des indicatifs téléphoniques internationaux")  |  +216  |  
+| [Organisations internationales](https://fr.wikipedia.org/wiki/Organisation_internationale "Organisation internationale")  |  [ONU](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies")[[8]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-8), [Union africaine](https://fr.wikipedia.org/wiki/Union_africaine "Union africaine"), [UMA](https://fr.wikipedia.org/wiki/Union_du_Maghreb_arabe "Union du Maghreb arabe"), [Ligue arabe](https://fr.wikipedia.org/wiki/Ligue_arabe "Ligue arabe"), [Organisation de la coopération islamique](https://fr.wikipedia.org/wiki/Organisation_de_la_coop%C3%A9ration_islamique "Organisation de la coopération islamique"), [Organisation internationale de la francophonie](https://fr.wikipedia.org/wiki/Organisation_internationale_de_la_francophonie "Organisation internationale de la francophonie"), [Communauté des États sahélo-sahariens](https://fr.wikipedia.org/wiki/Communaut%C3%A9_des_%C3%89tats_sah%C3%A9lo-sahariens "Communauté des États sahélo-sahariens"), [Union pour la Méditerranée](https://fr.wikipedia.org/wiki/Union_pour_la_M%C3%A9diterran%C3%A9e "Union pour la Méditerranée"), [ZLECAF](https://fr.wikipedia.org/wiki/Zone_de_libre-%C3%A9change_continentale_africaine "Zone de libre-échange continentale africaine"), [COMESA](https://fr.wikipedia.org/wiki/March%C3%A9_commun_de_l'Afrique_orientale_et_australe "Marché commun de l'Afrique orientale et australe"), [Mouvement des non-alignés](https://fr.wikipedia.org/wiki/Mouvement_des_non-align%C3%A9s "Mouvement des non-alignés"), [Groupe des 77](https://fr.wikipedia.org/wiki/Groupe_des_77 "Groupe des 77"), [BAD](https://fr.wikipedia.org/wiki/Banque_africaine_de_d%C3%A9veloppement "Banque africaine de développement"), [Cour pénale internationale](https://fr.wikipedia.org/wiki/Cour_p%C3%A9nale_internationale "Cour pénale internationale")  |  
+[modifier](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=edit) [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/20px-Info_Simple.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Infobox_Pays "Consultez la documentation du modèle")
+La **Tunisie** (en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe"): تونس, _tūnis[ Écouter](https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Tounes_bel_tounsi.wav/Tounes_bel_tounsi.wav.mp3 "Lecture audio")[ⓘ](https://fr.wikipedia.org/wiki/Fichier:Tounes_bel_tounsi.wav "Fichier:Tounes bel tounsi.wav")_[?](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Unicode/Test/arabe "Wikipédia:Unicode/Test/arabe"), [[ˈtuːnɪs]](https://fr.wikipedia.org/wiki/Aide:Alphabet_phon%C3%A9tique_international "Aide:Alphabet phonétique international")), en forme longue la **République tunisienne** (en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe"): الجمهورية التونسية, _al-jumhūriyya at-tūnisiyya[ Écouter](https://upload.wikimedia.org/wikipedia/commons/transcoded/4/45/Tounesjmr.wav/Tounesjmr.wav.mp3 "Lecture audio")[ⓘ](https://fr.wikipedia.org/wiki/Fichier:Tounesjmr.wav "Fichier:Tounesjmr.wav")_[?](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Unicode/Test/arabe "Wikipédia:Unicode/Test/arabe"))[[9]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-CNIG-9) est un [État](https://fr.wikipedia.org/wiki/%C3%89tat "État") [arabophone](https://fr.wikipedia.org/wiki/Arabe "Arabe") et [musulman](https://fr.wikipedia.org/wiki/Civilisation_islamique "Civilisation islamique") d'[Afrique du Nord](https://fr.wikipedia.org/wiki/Afrique_du_Nord "Afrique du Nord"), souverain [depuis 1956](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie_depuis_1956 "Histoire de la Tunisie depuis 1956"), dont le [territoire](https://fr.wikipedia.org/wiki/Territoire "Territoire"), en plein centre du [bassin méditerranéen](https://fr.wikipedia.org/wiki/Bassin_m%C3%A9diterran%C3%A9en "Bassin méditerranéen"), au carrefour de l'[Afrique](https://fr.wikipedia.org/wiki/Afrique "Afrique"), de l'[Europe](https://fr.wikipedia.org/wiki/Europe "Europe") et du [Moyen-Orient](https://fr.wikipedia.org/wiki/Moyen-Orient "Moyen-Orient"), témoigne d'une [histoire](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie "Histoire de la Tunisie") plurimillénaire et pluricivilisationnelle.
+Bordé au nord et à l'est par la [mer Méditerranée](https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e "Mer Méditerranée") (1 566 km de côtes), à l'ouest par l'[Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie") avec 965 km de [frontière commune](https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_l'Alg%C3%A9rie_et_la_Tunisie "Frontière entre l'Algérie et la Tunisie") et au sud-est par la [Libye](https://fr.wikipedia.org/wiki/Libye "Libye") avec 459 km de [frontière](https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_la_Libye_et_la_Tunisie "Frontière entre la Libye et la Tunisie"), sa capitale [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis") est située dans le Nord-Est du pays, au fond du [golfe du même nom](https://fr.wikipedia.org/wiki/Golfe_de_Tunis "Golfe de Tunis"). Plus de 30% de la [superficie](https://fr.wikipedia.org/wiki/Aire_\(g%C3%A9om%C3%A9trie\) "Aire \(géométrie\)") du territoire est occupée par le désert du [Sahara](https://fr.wikipedia.org/wiki/Sahara "Sahara"), le reste étant constitué de régions montagneuses et de plaines fertiles.
+Le territoire de l'actuelle Tunisie est le foyer de la culture [capsienne](https://fr.wikipedia.org/wiki/Capsien "Capsien"), une culture [mésolithique](https://fr.wikipedia.org/wiki/M%C3%A9solithique "Mésolithique") qui a duré de [10 000](https://fr.wikipedia.org/wiki/Xe_mill%C3%A9naire_av._J.-C. "Xe millénaire av. J.-C.") à [6 000](https://fr.wikipedia.org/wiki/VIe_mill%C3%A9naire_av._J.-C. "VIe millénaire av. J.-C.") avant notre ère et à qui la ville de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa") a donné son nom. Il est aussi le berceau de la [civilisation carthaginoise](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise") qui atteint son apogée au [IIIesiècleav. J.-C.](https://fr.wikipedia.org/wiki/IIIe_si%C3%A8cle_av._J.-C. "IIIe siècle av. J.-C."), avant de devenir une province importante de l'[Empire romain](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique") et de passer pendant quelques décennies sous [domination vandale](https://fr.wikipedia.org/wiki/Royaume_vandale "Royaume vandale"), avant d'intégrer l'[Empire byzantin](https://fr.wikipedia.org/wiki/Exarchat_de_Carthage "Exarchat de Carthage"). Dirigé par une succession de dynasties [arabo-musulmanes](https://fr.wikipedia.org/wiki/Monde_arabo-musulman "Monde arabo-musulman") au sein de l'[Ifriqiya](https://fr.wikipedia.org/wiki/Ifriqiya "Ifriqiya") (إفريقية), suite à la [conquête musulmane du Maghreb](https://fr.wikipedia.org/wiki/Conqu%C3%AAte_musulmane_du_Maghreb "Conquête musulmane du Maghreb"), dont la plus longue est celle des [Aghlabides](https://fr.wikipedia.org/wiki/Aghlabides "Aghlabides"), puis devenu [régence](https://fr.wikipedia.org/wiki/R%C3%A9gence_de_Tunis "Régence de Tunis") [ottomane](https://fr.wikipedia.org/wiki/Empire_ottoman "Empire ottoman"), avec notamment l'émergence de la dynastie locale des [Husseinites](https://fr.wikipedia.org/wiki/Husseinites "Husseinites"), il passe sous [protectorat français](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie") le 12 mai 1881 avec la signature du [traité du Bardo](https://fr.wikipedia.org/wiki/Trait%C3%A9_du_Bardo "Traité du Bardo"). À l'indépendance, le 20 mars 1956, la Tunisie devient d'abord une [monarchie constitutionnelle](https://fr.wikipedia.org/wiki/Monarchie_constitutionnelle "Monarchie constitutionnelle") ayant pour souverain [Lamine Bey](https://fr.wikipedia.org/wiki/Lamine_Bey "Lamine Bey")[[10]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10),[[11]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-11), 19e et dernier [bey](https://fr.wikipedia.org/wiki/Bey_de_Tunis "Bey de Tunis") régnant de la dynastie des Husseinites[[12]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-12). Mais, le 25 juillet 1957, la [république](https://fr.wikipedia.org/wiki/R%C3%A9publique "République") est proclamée et le leader indépendantiste [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") devient le premier [président de la République tunisienne](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_tunisienne "Président de la République tunisienne"). Il modernise le pays qu'il dirige pendant trente ans.
+En 1987, il est déposé par le [Premier ministre](https://fr.wikipedia.org/wiki/Chef_du_gouvernement_tunisien "Chef du gouvernement tunisien") [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), qui poursuit les principaux objectifs du «[bourguibisme](https://fr.wikipedia.org/wiki/Bourguibisme "Bourguibisme")» tout en libéralisant l'[économie](https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Tunisie "Économie de la Tunisie") mais exerce une présidence autoritaire et policière, caractérisée par l'importance de la [corruption](https://fr.wikipedia.org/wiki/Corruption_en_Tunisie "Corruption en Tunisie")[[13]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-13),[[14]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-14). Ben Ali est chassé le 14 janvier 2011 par une [révolution populaire](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne") et se réfugie en [Arabie saoudite](https://fr.wikipedia.org/wiki/Arabie_saoudite "Arabie saoudite"), à [Djeddah](https://fr.wikipedia.org/wiki/Djeddah "Djeddah")[[15]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-15),[[16]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-16) sous le coup, avec son épouse [Leïla Ben Ali](https://fr.wikipedia.org/wiki/Le%C3%AFla_Ben_Ali "Leïla Ben Ali"), d'un [mandat d'arrêt international](https://fr.wikipedia.org/wiki/Notice_rouge "Notice rouge").
+Intégrée aux principales instances de la communauté internationale telles que l'[ONU](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") ou la [Cour pénale internationale](https://fr.wikipedia.org/wiki/Cour_p%C3%A9nale_internationale "Cour pénale internationale"), la Tunisie fait également partie de l'[Union du Maghreb arabe](https://fr.wikipedia.org/wiki/Union_du_Maghreb_arabe "Union du Maghreb arabe"), de la [Ligue arabe](https://fr.wikipedia.org/wiki/Ligue_arabe "Ligue arabe"), de la [Grande zone arabe de libre-échange](https://fr.wikipedia.org/wiki/Grande_zone_arabe_de_libre-%C3%A9change "Grande zone arabe de libre-échange"), du [Marché commun de l'Afrique orientale et australe](https://fr.wikipedia.org/wiki/March%C3%A9_commun_de_l'Afrique_orientale_et_australe "Marché commun de l'Afrique orientale et australe"), de l'[Organisation de la coopération islamique](https://fr.wikipedia.org/wiki/Organisation_de_la_coop%C3%A9ration_islamique "Organisation de la coopération islamique"), de l'[Union pour la Méditerranée](https://fr.wikipedia.org/wiki/Union_pour_la_M%C3%A9diterran%C3%A9e "Union pour la Méditerranée"), de l'[Union africaine](https://fr.wikipedia.org/wiki/Union_africaine "Union africaine"), de l'[Organisation internationale de la francophonie](https://fr.wikipedia.org/wiki/Organisation_internationale_de_la_francophonie "Organisation internationale de la francophonie"), du [Groupe des 77](https://fr.wikipedia.org/wiki/Groupe_des_77 "Groupe des 77"), de la [Communauté des États sahélo-sahariens](https://fr.wikipedia.org/wiki/Communaut%C3%A9_des_%C3%89tats_sah%C3%A9lo-sahariens "Communauté des États sahélo-sahariens") et du [mouvement des non-alignés](https://fr.wikipedia.org/wiki/Mouvement_des_non-align%C3%A9s "Mouvement des non-alignés"). La Tunisie a également conclu un [accord d'association](https://fr.wikipedia.org/wiki/Accord_d'association "Accord d'association") avec l'[Union européenne](https://fr.wikipedia.org/wiki/Union_europ%C3%A9enne "Union européenne") et obtenu le statut d'[allié majeur non-membre de l'OTAN](https://fr.wikipedia.org/wiki/Alli%C3%A9_majeur_non-membre_de_l'OTAN "Allié majeur non-membre de l'OTAN").
+Durant la période 2020-2021, le pays est un membre non permanent du [Conseil de sécurité des Nations unies](https://fr.wikipedia.org/wiki/Conseil_de_s%C3%A9curit%C3%A9_des_Nations_unies "Conseil de sécurité des Nations unies")[[17]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-17) pour la quatrième fois depuis son adhésion à l'ONU[[18]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-18).
+## Toponymie
+Le nom actuel de la «Tunisie», en [français](https://fr.wikipedia.org/wiki/Fran%C3%A7ais "Français"), est dérivé du nom de la capitale, [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis"), suivi du [suffixe](https://fr.wikipedia.org/wiki/Affixe "Affixe") [latin](https://fr.wikipedia.org/wiki/Latin "Latin") -ie[[19]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-adrian-19). Si le dérivé est adopté dans plusieurs autres langues pour différencier le pays de la ville de Tunis, il n'y a pas une telle adoption dans certaines langues, comme en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe") (تونس ou _Tunis_), en [russe](https://fr.wikipedia.org/wiki/Russe "Russe") (_Туни́с_) et en [espagnol](https://fr.wikipedia.org/wiki/Espagnol "Espagnol") (_Túnez_)[[20]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-20). Dans ces cas, seul le contexte permet de déterminer si l'on parle de la ville ou du pays.
+La partie nord du territoire de l'actuelle Tunisie est appelé _[Africa](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique")_ par les Romains après la [conquête de Carthage](https://fr.wikipedia.org/wiki/Bataille_de_Carthage_\(149_av._J.-C.\) "Bataille de Carthage \(149 av. J.-C.\)"), avant de désigner le [continent](https://fr.wikipedia.org/wiki/Afrique "Afrique") à partir des XVIeetXVIIesiècles[[21]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-21). La forme arabe [Ifriqiya](https://fr.wikipedia.org/wiki/Ifriqiya "Ifriqiya") désigne ensuite la partie orientale du Maghreb médiéval[[22]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-22),[[23]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-23). La Tunisie est aussi désignée sous le nom de _[Maghreb Al Adna](https://fr.wikipedia.org/wiki/Maghreb_Al_Adna "Maghreb Al Adna")_ par les géographes arabes[[24]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-24).
+## Géographie
+Article détaillé: [Géographie de la Tunisie](https://fr.wikipedia.org/wiki/G%C3%A9ographie_de_la_Tunisie "Géographie de la Tunisie").
+La Tunisie, le plus petit des États du [Maghreb](https://fr.wikipedia.org/wiki/Maghreb "Maghreb"), se situe au [nord](https://fr.wikipedia.org/wiki/Afrique_du_Nord "Afrique du Nord") du [continent africain](https://fr.wikipedia.org/wiki/Afrique "Afrique"). Il est séparé de l'[Europe](https://fr.wikipedia.org/wiki/Europe "Europe") par une distance de 140 km au niveau du [canal de Sicile](https://fr.wikipedia.org/wiki/Canal_de_Sicile "Canal de Sicile"). Le [cap Angela](https://fr.wikipedia.org/wiki/Cap_Angela "Cap Angela"), situé dans le [gouvernorat de Bizerte](https://fr.wikipedia.org/wiki/Gouvernorat_de_Bizerte "Gouvernorat de Bizerte"), constitue le point le plus septentrional de l'Afrique continentale.
+Disposant d'une [superficie](https://fr.wikipedia.org/wiki/Aire_\(g%C3%A9om%C3%A9trie\) "Aire \(géométrie\)") de 163 610 km2[[N 1]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-25), le pays est limité à l'ouest par l'[Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie") avec 965 km de [frontière commune](https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_l'Alg%C3%A9rie_et_la_Tunisie "Frontière entre l'Algérie et la Tunisie"), au sud - sud-est par la [Libye](https://fr.wikipedia.org/wiki/Libye "Libye") avec 459 km de [frontière](https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_la_Libye_et_la_Tunisie "Frontière entre la Libye et la Tunisie") et au nord et à l'est par la [mer Méditerranée](https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e "Mer Méditerranée") avec 1 566 km de côtes (2 290 km si l'on prend en compte les linéaires des îles, îlots, archipels et les linéaires artificiels)[[25]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-26).
+Le [désert](https://fr.wikipedia.org/wiki/D%C3%A9sert "Désert") du [Sahara](https://fr.wikipedia.org/wiki/Sahara "Sahara") occupe une superficie comprise entre 33% et 40% du territoire selon qu'on le définisse d'après son [aridité](https://fr.wikipedia.org/wiki/Aridit%C3%A9 "Aridité") ou selon des caractéristiques paysagères. La superficie des terres à vocation agricole est estimée à dix millions d'[hectares](https://fr.wikipedia.org/wiki/Hectare "Hectare"), réparties en cinq millions de terres labourables, quatre millions de [parcours naturels](https://fr.wikipedia.org/wiki/Parcours_\(pastoralisme\) "Parcours \(pastoralisme\)") et un million de forêts et garrigues[[26]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-27).
+### Topographie
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tunisia_Topography.png/250px-Tunisia_Topography.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisia_Topography.png?uselang=fr)Topographie de la Tunisie. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Jebel_Rassas%2C_Ben_Arous%2C_Tunisia.jpg/250px-Jebel_Rassas%2C_Ben_Arous%2C_Tunisia.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Jebel_Rassas,_Ben_Arous,_Tunisia.jpg?uselang=fr)Silhouette du djebel Ressas dominant la plaine de Mornag.
+La Tunisie possède un [relief](https://fr.wikipedia.org/wiki/Relief_\(g%C3%A9omorphologie\) "Relief \(géomorphologie\)") contrasté avec une partie septentrionale et occidentale montagneuse, la [dorsale tunisienne](https://fr.wikipedia.org/wiki/Dorsale_tunisienne "Dorsale tunisienne"), située dans l'extension du massif montagneux de l'[Atlas](https://fr.wikipedia.org/wiki/Atlas_\(massif\) "Atlas \(massif\)"); elle est coupée par la [plaine](https://fr.wikipedia.org/wiki/Plaine "Plaine") de la [Medjerda](https://fr.wikipedia.org/wiki/Medjerda "Medjerda"), le seul [cours d'eau](https://fr.wikipedia.org/wiki/Cours_d'eau "Cours d'eau") du pays qui soit alimenté de façon continue.
+Le point culminant du territoire est le [djebel Chambi](https://fr.wikipedia.org/wiki/Djebel_Chambi "Djebel Chambi") culminant à 1 544 m[[27]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-28). À l'est, une plaine s'étend entre [Hammamet](https://fr.wikipedia.org/wiki/Hammamet "Hammamet") et [Ben Gardane](https://fr.wikipedia.org/wiki/Ben_Gardane "Ben Gardane"), via le [Sahel tunisien](https://fr.wikipedia.org/wiki/Sahel_tunisien "Sahel tunisien") et la [Djeffara](https://fr.wikipedia.org/wiki/Djeffara "Djeffara").
+La partie méridionale du pays, principalement désertique, est marquée par une succession de [chotts](https://fr.wikipedia.org/wiki/Chott "Chott") — notamment le [Chott el-Gharsa](https://fr.wikipedia.org/wiki/Chott_el-Gharsa "Chott el-Gharsa"), le [Chott el-Jérid](https://fr.wikipedia.org/wiki/Chott_el-J%C3%A9rid "Chott el-Jérid") et le [Chott el-Fejaj](https://fr.wikipedia.org/wiki/Chott_el-Fejaj "Chott el-Fejaj") — ainsi que par les [dunes](https://fr.wikipedia.org/wiki/Dune "Dune") du [Grand Erg oriental](https://fr.wikipedia.org/wiki/Grand_Erg_oriental "Grand Erg oriental")[[28]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-cbd-29).
+Le [littoral](https://fr.wikipedia.org/wiki/Littoral "Littoral") s'étend sur environ 1 566 km[[29]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-30) dont environ 575 km de [plages](https://fr.wikipedia.org/wiki/Liste_des_plages_de_Tunisie "Liste des plages de Tunisie") [sablonneuses](https://fr.wikipedia.org/wiki/Sable "Sable")[[30]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-31). Il comprend des [tombolos](https://fr.wikipedia.org/wiki/Tombolo "Tombolo") et des [lagunes](https://fr.wikipedia.org/wiki/Lagune "Lagune")[[31]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-32). Une soixantaine d'îles jalonnent la côte, parmi lesquelles l'archipel des [Kerkennah](https://fr.wikipedia.org/wiki/Kerkennah "Kerkennah") et l'île de [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba")[[28]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-cbd-29).
+### Climat
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Pont_Cinqui%C3%A8me_de_B%C3%A9ja_-_Mai_2014_%283%29.JPG/250px-Pont_Cinqui%C3%A8me_de_B%C3%A9ja_-_Mai_2014_%283%29.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Pont_Cinqui%C3%A8me_de_B%C3%A9ja_-_Mai_2014_\(3\).JPG?uselang=fr)Paysage du [Nord-Ouest tunisien](https://fr.wikipedia.org/wiki/Nord-Ouest_tunisien "Nord-Ouest tunisien"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/SaharaTunisien.JPG/250px-SaharaTunisien.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:SaharaTunisien.JPG?uselang=fr)Paysage du Sud tunisien.
+Le [climat](https://fr.wikipedia.org/wiki/Climat "Climat") de la Tunisie se divise en sept zones bioclimatiques. La différence entre le Nord et le reste du pays est liée à la [dorsale tunisienne](https://fr.wikipedia.org/wiki/Dorsale_tunisienne "Dorsale tunisienne"), qui sépare les zones soumises à un [climat méditerranéen](https://fr.wikipedia.org/wiki/Climat_m%C3%A9diterran%C3%A9en "Climat méditerranéen") de celles caractérisées par un [climat désertique](https://fr.wikipedia.org/wiki/Climat_d%C3%A9sertique "Climat désertique"). Entre ces deux ensembles, on trouve une zone à [climat semi-aride](https://fr.wikipedia.org/wiki/Climat_semi-aride "Climat semi-aride") présentant des caractéristiques intermédiaires[[32]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-33).
+En raison de sa situation géographique, le climat tunisien est influencé par des [vents](https://fr.wikipedia.org/wiki/Vent "Vent") chauds et secs provenant du désert. Parmi eux, le [sirocco](https://fr.wikipedia.org/wiki/Sirocco "Sirocco") peut souffler pendant de longues périodes et contribuer à une hausse des températures ainsi qu'à un assèchement de l'atmosphère[[33]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-docs1-34).
+Le pays bénéficie également d'un taux d'ensoleillement important dépassant 3 000 heures par an et qui atteint des sommets dans le Sud désertique, aux abords des frontières algérienne et libyenne[[34]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-35),[[35]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-36).
+Les [températures](https://fr.wikipedia.org/wiki/Temp%C3%A9rature "Température") et les [précipitations](https://fr.wikipedia.org/wiki/Pr%C3%A9cipitations "Précipitations") en Tunisie présentent un gradient marqué du nord vers le sud. Les régions du nord reçoivent des précipitations plus abondantes (500 à 1 500 mm par an), tandis que les régions centrales (150 à 400 mm) et méridionales (moins de 178 mm)) sont plus sèches. Dans le sud, les températures estivales peuvent atteindre des niveaux très élevés, dépassant parfois 50°C dans les zones désertiques[[33]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-docs1-34).
+### Environnement
+Articles connexes: [Environnement en Tunisie](https://fr.wikipedia.org/wiki/Environnement_en_Tunisie "Environnement en Tunisie"), [Flore de Tunisie](https://fr.wikipedia.org/wiki/Flore_de_Tunisie "Flore de Tunisie"), [Faune de Tunisie](https://fr.wikipedia.org/wiki/Faune_de_Tunisie "Faune de Tunisie"), [Liste des écorégions de Tunisie](https://fr.wikipedia.org/wiki/Liste_des_%C3%A9cor%C3%A9gions_de_Tunisie "Liste des écorégions de Tunisie") et [Liste des sites Ramsar en Tunisie](https://fr.wikipedia.org/wiki/Liste_des_sites_Ramsar_en_Tunisie "Liste des sites Ramsar en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Hindi1.JPG/250px-Hindi1.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Hindi1.JPG?uselang=fr)[Figuier de Barbarie](https://fr.wikipedia.org/wiki/Figuier_de_Barbarie "Figuier de Barbarie").
+La [flore](https://fr.wikipedia.org/wiki/Flore "Flore") varie beaucoup en fonction des régions: celle des régions côtières est semblable à celle de l'Europe méridionale et comprend [prairies](https://fr.wikipedia.org/wiki/Prairie_\(agriculture\) "Prairie \(agriculture\)"), [garrigue](https://fr.wikipedia.org/wiki/Garrigue "Garrigue"), [maquis](https://fr.wikipedia.org/wiki/Maquis_\(botanique\) "Maquis \(botanique\)") et forêts de [chênes-lièges](https://fr.wikipedia.org/wiki/Ch%C3%AAne-li%C3%A8ge "Chêne-liège"). Plus au sud, la végétation est de [type steppique](https://fr.wikipedia.org/wiki/Steppe "Steppe") avec une dominance de l'[alfa](https://fr.wikipedia.org/wiki/Alfa "Alfa"). Dans les régions arides de l'extrême sud, les [oasis](https://fr.wikipedia.org/wiki/Oasis "Oasis") sont plantées de [palmiers-dattiers](https://fr.wikipedia.org/wiki/Phoenix_dactylifera "Phoenix dactylifera").
+Quinze aires naturelles ont été érigées en [parcs nationaux](https://fr.wikipedia.org/wiki/Parcs_nationaux_de_Tunisie "Parcs nationaux de Tunisie")[[36]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-37). Le [parc national de l'Ichkeul](https://fr.wikipedia.org/wiki/Parc_national_de_l'Ichkeul "Parc national de l'Ichkeul"), qui s'étend sur 12 600[hectares](https://fr.wikipedia.org/wiki/Hectare "Hectare"), est inscrit sur la liste du [patrimoine mondial](https://fr.wikipedia.org/wiki/Patrimoine_mondial "Patrimoine mondial") de l'[Unesco](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'%C3%A9ducation,_la_science_et_la_culture "Organisation des Nations unies pour l'éducation, la science et la culture")[[37]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-38). Il existe également seize réserves naturelles qui ont pour but d'être un habitat pour des espèces ayant une valeur écologique, économique et en tant qu'[écosystèmes](https://fr.wikipedia.org/wiki/%C3%89cosyst%C3%A8me "Écosystème") vulnérables.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cameleon_Tunisie.jpg/250px-Cameleon_Tunisie.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Cameleon_Tunisie.jpg?uselang=fr)[Caméléon commun](https://fr.wikipedia.org/wiki/Cam%C3%A9l%C3%A9on_commun "Caméléon commun").
+Selon une étude du programme méditerranéen du [WWF](https://fr.wikipedia.org/wiki/WWF "WWF"), la région côtière du [Nord-Ouest](https://fr.wikipedia.org/wiki/Nord-Ouest_tunisien "Nord-Ouest tunisien") figure parmi les treize sites de la Méditerranée qui se distinguent par leur richesse naturelle, leur [biodiversité](https://fr.wikipedia.org/wiki/Biodiversit%C3%A9 "Biodiversité") et leurs [espèces](https://fr.wikipedia.org/wiki/Esp%C3%A8ce "Espèce") végétales et animales uniques.
+Dans ce contexte, la Tunisie est le pays méditerranéen le plus touché par le [changement climatique](https://fr.wikipedia.org/wiki/Changement_climatique "Changement climatique"), lequel favorise les pénuries d'eau et l'[érosion](https://fr.wikipedia.org/wiki/%C3%89rosion "Érosion") des côtes[[38]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-39). Depuis plusieurs années, l'[agriculture](https://fr.wikipedia.org/wiki/Agriculture_en_Tunisie "Agriculture en Tunisie") est exposée à des [sécheresses](https://fr.wikipedia.org/wiki/S%C3%A9cheresse "Sécheresse") récurrentes qui participent à l'[exode rural](https://fr.wikipedia.org/wiki/Exode_rural "Exode rural"). En outre, «pour compenser la raréfaction des pluies, les agriculteurs utilisent toujours plus d'[engrais](https://fr.wikipedia.org/wiki/Engrais "Engrais") et de [pesticides](https://fr.wikipedia.org/wiki/Pesticide "Pesticide")», souligne la chercheuse Samia Mouheli. Ainsi, selon la [FAO](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'alimentation_et_l'agriculture "Organisation des Nations unies pour l'alimentation et l'agriculture"), le pays est passé de cinq kilos d'engrais chimiques utilisés à l'hectare au début des [années 1960](https://fr.wikipedia.org/wiki/Ann%C3%A9es_1960 "Années 1960") à près de 25 kg au milieu des [années 1990](https://fr.wikipedia.org/wiki/Ann%C3%A9es_1990 "Années 1990"). Les pollutions industrielles, favorisées par un manque de régulation étatique, constituent également un frein au [développement durable](https://fr.wikipedia.org/wiki/D%C3%A9veloppement_durable "Développement durable") dans le pays[[39]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-40).
+La Tunisie est dans une situation de [stress hydrique](https://fr.wikipedia.org/wiki/Stress_hydrique_\(%C3%A9cologie\) "Stress hydrique \(écologie\)") selon les critères de l'[ONU](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") (moins de 500 m3 d'eau par habitant et par an). La [Medjerda](https://fr.wikipedia.org/wiki/Medjerda "Medjerda"), le grand fleuve tunisien, est menacé par la [pollution](https://fr.wikipedia.org/wiki/Pollution "Pollution"); sa qualité n'a cessé de baisser et, selon l'étude du [ministère de l'Environnement](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'Environnement_\(Tunisie\) "Ministère de l'Environnement \(Tunisie\)") réalisée en 2018, «60 000 tonnes de polluants» finissent chaque année dans le fleuve[[40]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-41).
+### Géographie humaine
+Article connexe: [Urbanisation de la Tunisie](https://fr.wikipedia.org/wiki/Urbanisation_de_la_Tunisie "Urbanisation de la Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Eddahra.jpg/250px-Eddahra.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Eddahra.jpg?uselang=fr)Village près de [Sejnane](https://fr.wikipedia.org/wiki/Sejnane "Sejnane"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/PanoramiqueTunis2010.jpg/250px-PanoramiqueTunis2010.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:PanoramiqueTunis2010.jpg?uselang=fr)Banlieue nord de Tunis.
+L'espace tunisien apparaît inégalement peuplé et développé sur le plan [socioéconomique](https://fr.wikipedia.org/wiki/Socio%C3%A9conomie "Socioéconomie") selon un [gradient](https://fr.wikipedia.org/wiki/Gradient "Gradient") intérieur-littoral (ouest-est): les treize [gouvernorats](https://fr.wikipedia.org/wiki/Gouvernorat_\(Tunisie\) "Gouvernorat \(Tunisie\)") côtiers totalisent ainsi 65,3% de la population totale avec une forte densité de population (140 habitants par km2 contre 65,6 pour l'ensemble du pays[[41]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-popgeneral-42)).
+La Tunisie est urbanisée à environ 69% en 2018[[42]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-43), et connaît un taux d'urbanisation annuelle de 3,6%. Le réseau urbain se situe sur la bande littorale orientale, entre les régions de [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte") et [Gabès](https://fr.wikipedia.org/wiki/Gab%C3%A8s "Gabès") en passant par [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis"), le [cap Bon](https://fr.wikipedia.org/wiki/Cap_Bon "Cap Bon"), le [Sahel](https://fr.wikipedia.org/wiki/Sahel_tunisien "Sahel tunisien") et [Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax") (centre-est du pays), qui dispose des plus grandes infrastructures économiques et concentre plus de 80% de la population urbaine. Au terme du [recensement](https://fr.wikipedia.org/wiki/Recensement_de_la_population "Recensement de la population") de 2014[[2]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ins-2), les principales [municipalités](https://fr.wikipedia.org/wiki/Liste_des_municipalit%C3%A9s_de_Tunisie "Liste des municipalités de Tunisie") sont:  
+Principales municipalités de Tunisie  
+| No  | Nom  | [Gouvernorat](https://fr.wikipedia.org/wiki/Gouvernorat_\(Tunisie\) "Gouvernorat \(Tunisie\)")  | Pop. (2014)  | No  | Nom  | [Gouvernorat](https://fr.wikipedia.org/wiki/Gouvernorat_\(Tunisie\) "Gouvernorat \(Tunisie\)")  | Pop. (2014)  |  
+| --- | --- | --- | --- | --- | --- | --- | --- |  
+| 1  | **[Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis")**  | [Tunis](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tunis "Gouvernorat de Tunis")  | 1 056 247  | 11  | **[El Mourouj](https://fr.wikipedia.org/wiki/El_Mourouj "El Mourouj")**  | [Ben Arous](https://fr.wikipedia.org/wiki/Gouvernorat_de_Ben_Arous "Gouvernorat de Ben Arous")  | 104 538  |  
+| 2  | **[Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax")**  | [Sfax](https://fr.wikipedia.org/wiki/Gouvernorat_de_Sfax "Gouvernorat de Sfax")  | 272 801  | 12  | **[Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa")**  | [Gafsa](https://fr.wikipedia.org/wiki/Gouvernorat_de_Gafsa "Gouvernorat de Gafsa")  | 95 242  |  
+| 3  | **[Sousse](https://fr.wikipedia.org/wiki/Sousse "Sousse")**  | [Sousse](https://fr.wikipedia.org/wiki/Gouvernorat_de_Sousse "Gouvernorat de Sousse")  | 221 530  | 13  | **[Raoued](https://fr.wikipedia.org/wiki/Raoued "Raoued")**  | [Ariana](https://fr.wikipedia.org/wiki/Gouvernorat_de_l'Ariana "Gouvernorat de l'Ariana")  | 94 961  |  
+| 4  | **[Ettadhamen-Mnihla](https://fr.wikipedia.org/wiki/Ettadhamen-Mnihla "Ettadhamen-Mnihla")**  | [Ariana](https://fr.wikipedia.org/wiki/Gouvernorat_de_l'Ariana "Gouvernorat de l'Ariana")  | 142 953  | 14  | **[Monastir](https://fr.wikipedia.org/wiki/Monastir "Monastir")**  | [Monastir](https://fr.wikipedia.org/wiki/Gouvernorat_de_Monastir "Gouvernorat de Monastir")  | 93 306  |  
+| 5  | **[Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan")**  | [Kairouan](https://fr.wikipedia.org/wiki/Gouvernorat_de_Kairouan "Gouvernorat de Kairouan")  | 139 070  | 15  | **[La Marsa](https://fr.wikipedia.org/wiki/La_Marsa "La Marsa")**  | [Tunis](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tunis "Gouvernorat de Tunis")  | 92 987  |  
+| 6  | **[Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte")**  | [Bizerte](https://fr.wikipedia.org/wiki/Gouvernorat_de_Bizerte "Gouvernorat de Bizerte")  | 136 917  | 16  | **[Ben Arous](https://fr.wikipedia.org/wiki/Ben_Arous "Ben Arous")**  | [Ben Arous](https://fr.wikipedia.org/wiki/Gouvernorat_de_Ben_Arous "Gouvernorat de Ben Arous")  | 88 322  |  
+| 7  | **[Gabès](https://fr.wikipedia.org/wiki/Gab%C3%A8s "Gabès")**  | [Gabès](https://fr.wikipedia.org/wiki/Gouvernorat_de_Gab%C3%A8s "Gouvernorat de Gabès")  | 130 914  | 17  | **[Kasserine](https://fr.wikipedia.org/wiki/Kasserine "Kasserine")**  | [Kasserine](https://fr.wikipedia.org/wiki/Gouvernorat_de_Kasserine "Gouvernorat de Kasserine")  | 83 534  |  
+| 8  | **[La Soukra](https://fr.wikipedia.org/wiki/La_Soukra "La Soukra")**  | [Ariana](https://fr.wikipedia.org/wiki/Gouvernorat_de_l'Ariana "Gouvernorat de l'Ariana")  | 129 693  | 18  | **[Douar Hicher](https://fr.wikipedia.org/wiki/Douar_Hicher "Douar Hicher")**  | [La Manouba](https://fr.wikipedia.org/wiki/Gouvernorat_de_la_Manouba "Gouvernorat de la Manouba")  | 82 532  |  
+| 9  | **[Sidi Hassine](https://fr.wikipedia.org/wiki/Sidi_Hassine "Sidi Hassine")**  | [Tunis](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tunis "Gouvernorat de Tunis")  | 109 690  | 19  | **[Houmt Souk](https://fr.wikipedia.org/wiki/Houmt_Souk "Houmt Souk")**  | [Médenine](https://fr.wikipedia.org/wiki/Gouvernorat_de_M%C3%A9denine "Gouvernorat de Médenine")  | 75 904  |  
+| 10  | **[Mohamedia](https://fr.wikipedia.org/wiki/Mohamedia "Mohamedia")**  | [Ben Arous](https://fr.wikipedia.org/wiki/Gouvernorat_de_Ben_Arous "Gouvernorat de Ben Arous")  | 106 167  | 20  | **[Le Kram](https://fr.wikipedia.org/wiki/Le_Kram "Le Kram")**  | [Tunis](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tunis "Gouvernorat de Tunis")  | 74 132  |  
+| Source: [Institut national de la statistique](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_\(Tunisie\) "Institut national de la statistique \(Tunisie\)")  |  
+### Géographie administrative
+La Tunisie est divisée en 24 [gouvernorats](https://fr.wikipedia.org/wiki/Gouvernorat_\(Tunisie\) "Gouvernorat \(Tunisie\)") qui portent le nom de leurs [chefs-lieux](https://fr.wikipedia.org/wiki/Chef-lieu "Chef-lieu"):
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Governorates_of_Tunisia.svg/250px-Governorates_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Governorates_of_Tunisia.svg?uselang=fr)Gouvernorats de Tunisie.
+  * 1. [Gouvernorat de l'Ariana](https://fr.wikipedia.org/wiki/Gouvernorat_de_l'Ariana "Gouvernorat de l'Ariana")
+  * 2. [Gouvernorat de Béja](https://fr.wikipedia.org/wiki/Gouvernorat_de_B%C3%A9ja "Gouvernorat de Béja")
+  * 3. [Gouvernorat de Ben Arous](https://fr.wikipedia.org/wiki/Gouvernorat_de_Ben_Arous "Gouvernorat de Ben Arous")
+  * 4. [Gouvernorat de Bizerte](https://fr.wikipedia.org/wiki/Gouvernorat_de_Bizerte "Gouvernorat de Bizerte")
+  * 5. [Gouvernorat de Gabès](https://fr.wikipedia.org/wiki/Gouvernorat_de_Gab%C3%A8s "Gouvernorat de Gabès")
+  * 6. [Gouvernorat de Gafsa](https://fr.wikipedia.org/wiki/Gouvernorat_de_Gafsa "Gouvernorat de Gafsa")
+  * 7. [Gouvernorat de Jendouba](https://fr.wikipedia.org/wiki/Gouvernorat_de_Jendouba "Gouvernorat de Jendouba")
+  * 8. [Gouvernorat de Kairouan](https://fr.wikipedia.org/wiki/Gouvernorat_de_Kairouan "Gouvernorat de Kairouan")
+  * 9. [Gouvernorat de Kasserine](https://fr.wikipedia.org/wiki/Gouvernorat_de_Kasserine "Gouvernorat de Kasserine")
+  * 10. [Gouvernorat de Kébili](https://fr.wikipedia.org/wiki/Gouvernorat_de_K%C3%A9bili "Gouvernorat de Kébili")
+  * 11. [Gouvernorat du Kef](https://fr.wikipedia.org/wiki/Gouvernorat_du_Kef "Gouvernorat du Kef")
+  * 12. [Gouvernorat de Mahdia](https://fr.wikipedia.org/wiki/Gouvernorat_de_Mahdia "Gouvernorat de Mahdia")
+  * 13. [Gouvernorat de la Manouba](https://fr.wikipedia.org/wiki/Gouvernorat_de_la_Manouba "Gouvernorat de la Manouba")
+  * 14. [Gouvernorat de Médenine](https://fr.wikipedia.org/wiki/Gouvernorat_de_M%C3%A9denine "Gouvernorat de Médenine")
+  * 15. [Gouvernorat de Monastir](https://fr.wikipedia.org/wiki/Gouvernorat_de_Monastir "Gouvernorat de Monastir")
+  * 16. [Gouvernorat de Nabeul](https://fr.wikipedia.org/wiki/Gouvernorat_de_Nabeul "Gouvernorat de Nabeul")
+  * 17. [Gouvernorat de Sfax](https://fr.wikipedia.org/wiki/Gouvernorat_de_Sfax "Gouvernorat de Sfax")
+  * 18. [Gouvernorat de Sidi Bouzid](https://fr.wikipedia.org/wiki/Gouvernorat_de_Sidi_Bouzid "Gouvernorat de Sidi Bouzid")
+  * 19. [Gouvernorat de Siliana](https://fr.wikipedia.org/wiki/Gouvernorat_de_Siliana "Gouvernorat de Siliana")
+  * 20. [Gouvernorat de Sousse](https://fr.wikipedia.org/wiki/Gouvernorat_de_Sousse "Gouvernorat de Sousse")
+  * 21. [Gouvernorat de Tataouine](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tataouine "Gouvernorat de Tataouine")
+  * 22. [Gouvernorat de Tozeur](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tozeur "Gouvernorat de Tozeur")
+  * 23. [Gouvernorat de Tunis](https://fr.wikipedia.org/wiki/Gouvernorat_de_Tunis "Gouvernorat de Tunis")
+  * 24. [Gouvernorat de Zaghouan](https://fr.wikipedia.org/wiki/Gouvernorat_de_Zaghouan "Gouvernorat de Zaghouan")
+
+
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hotel_de_ville_Nabeul.JPG/250px-Hotel_de_ville_Nabeul.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Hotel_de_ville_Nabeul.JPG?uselang=fr)Palais de la municipalité de Nabeul.
+À leur tête se trouvent des [gouverneurs](https://fr.wikipedia.org/wiki/Liste_des_dirigeants_des_gouvernorats_tunisiens "Liste des dirigeants des gouvernorats tunisiens"), nommés par le président de la République, qui sont les «dépositaires» de l'autorité de l'État. Trois institutions les aident à accomplir leurs missions: le [Conseil local de développement](https://fr.wikipedia.org/wiki/Conseil_local_de_d%C3%A9veloppement_\(Tunisie\) "Conseil local de développement \(Tunisie\)"), le Conseil rural et le Comité de quartier.
+Aux côtés des gouverneurs se trouvent les Conseils régionaux qui sont chargés d'examiner «toutes les questions intéressant le gouvernorat dans les domaines économiques, sociaux et culturels»[[43]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-44). Ils sont régis par la loi organique no89-11 du 4 février 1989, selon laquelle le président du Conseil régional élabore le projet de budget du gouvernorat et le présente au conseil pour décision. Il est chargé de son exécution et veille à la perception des impôts et taxes revenant à la collectivité publique conformément à la législation en vigueur[[44]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-45).
+Les gouvernorats sont subdivisés en 264 circonscriptions administratives: les [délégations](https://fr.wikipedia.org/wiki/D%C3%A9l%C3%A9gation_\(Tunisie\) "Délégation \(Tunisie\)"). Depuis un décret du 26 mai 2016, l'entièreté du territoire est également subdivisé en 350 [municipalités](https://fr.wikipedia.org/wiki/Liste_des_municipalit%C3%A9s_de_Tunisie "Liste des municipalités de Tunisie")[[45]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-46). La plus petite division administrative est le secteur ou [imada](https://fr.wikipedia.org/wiki/Imada "Imada"), dont le nombre se monte à 2 073[[46]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-47).
+## Histoire
+Article détaillé: [Histoire de la Tunisie](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie "Histoire de la Tunisie").
+Au travers des millénaires, le territoire de l'actuelle Tunisie a successivement été sous l'influence des cultures [ibéromaurusienne](https://fr.wikipedia.org/wiki/Ib%C3%A9romaurusien "Ibéromaurusien"), [capsienne](https://fr.wikipedia.org/wiki/Capsien "Capsien"), [libyque](https://fr.wikipedia.org/wiki/Libyens_anciens "Libyens anciens"), [carthaginoise](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise"), [romaine](https://fr.wikipedia.org/wiki/Afrique_romaine "Afrique romaine"), [byzantine](https://fr.wikipedia.org/wiki/Exarchat_de_Carthage "Exarchat de Carthage"), [vandale](https://fr.wikipedia.org/wiki/Royaume_vandale "Royaume vandale"), [omeyyade](https://fr.wikipedia.org/wiki/Omeyyades "Omeyyades"), [muhallabide](https://fr.wikipedia.org/wiki/Muhallabides "Muhallabides"), [aghlabide](https://fr.wikipedia.org/wiki/Aghlabides "Aghlabides"), [fatimide](https://fr.wikipedia.org/wiki/Califat_fatimide "Califat fatimide"), [ziride](https://fr.wikipedia.org/wiki/Zirides "Zirides"), [hilalienne](https://fr.wikipedia.org/wiki/Hilaliens "Hilaliens"), [khourassanide](https://fr.wikipedia.org/wiki/Khourassanides "Khourassanides"), [siculo-normande](https://fr.wikipedia.org/wiki/Royaume_d'Afrique "Royaume d'Afrique"), [almohade](https://fr.wikipedia.org/wiki/Almohades "Almohades"), [hafside](https://fr.wikipedia.org/wiki/Sultanat_hafside_de_Tunis "Sultanat hafside de Tunis"), [ottomane](https://fr.wikipedia.org/wiki/R%C3%A9gence_de_Tunis "Régence de Tunis"), [husseinite](https://fr.wikipedia.org/wiki/Husseinites "Husseinites") et [française](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie").
+Ces circonstances, ainsi que la position de la Tunisie à l'intersection entre le [Bassin méditerranéen](https://fr.wikipedia.org/wiki/Bassin_m%C3%A9diterran%C3%A9en "Bassin méditerranéen"), l'[Europe](https://fr.wikipedia.org/wiki/Europe "Europe"), le [Moyen-Orient](https://fr.wikipedia.org/wiki/Moyen-Orient "Moyen-Orient") et l'[Afrique](https://fr.wikipedia.org/wiki/Afrique "Afrique"), ont influencé la [culture](https://fr.wikipedia.org/wiki/Culture_de_la_Tunisie "Culture de la Tunisie") du pays.
+### Préhistoire et protohistoire
+Article détaillé: [Préhistoire de la Tunisie](https://fr.wikipedia.org/wiki/Pr%C3%A9histoire_de_la_Tunisie "Préhistoire de la Tunisie").
+Les premières traces de présence humaine en Tunisie datent du [Paléolithique](https://fr.wikipedia.org/wiki/Pal%C3%A9olithique "Paléolithique"). C'est à vingt kilomètres à l'est de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa"), dans l'oasis d'[El Guettar](https://fr.wikipedia.org/wiki/El_Guettar_\(Tunisie\) "El Guettar \(Tunisie\)"), que se rassemble une petite population [nomade](https://fr.wikipedia.org/wiki/Nomadisme "Nomadisme") de chasseurs-cueilleurs [moustériens](https://fr.wikipedia.org/wiki/Moust%C3%A9rien "Moustérien")[[47]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-mk_p110-48). Michel Gruet, l'archéologue qui découvre le site, relève qu'ils consomment des [dattes](https://fr.wikipedia.org/wiki/Datte "Datte") dont il retrouve le [pollen](https://fr.wikipedia.org/wiki/Pollen "Pollen") aux alentours de la source[[48]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-49) asséchée[[49]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-50).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Makthar_m%C3%A9galithes.jpg/250px-Makthar_m%C3%A9galithes.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Makthar_m%C3%A9galithes.jpg?uselang=fr)Mégalithes près de Makthar. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Capsien_burial_%28Tunisia%29.png/250px-Capsien_burial_%28Tunisia%29.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Capsien_burial_\(Tunisia\).png?uselang=fr)Squelette capsien en position repliée.
+À une culture [ibéromaurusienne](https://fr.wikipedia.org/wiki/Ib%C3%A9romaurusien "Ibéromaurusien"), répartie sur le littoral[[50]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-51) et relativement minime en Tunisie[[51]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-52), succède la période du [Capsien](https://fr.wikipedia.org/wiki/Capsien "Capsien"), nom créé par [Jacques de Morgan](https://fr.wikipedia.org/wiki/Jacques_de_Morgan "Jacques de Morgan") et issu du [latin](https://fr.wikipedia.org/wiki/Latin "Latin") _Capsa_ , qui a lui-même donné le nom de l'actuelle [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa")[[52]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-53). Morgan définit le Capsien comme étant une culture allant du [Paléolithique supérieur](https://fr.wikipedia.org/wiki/Pal%C3%A9olithique_sup%C3%A9rieur "Paléolithique supérieur") au [Néolithique](https://fr.wikipedia.org/wiki/N%C3%A9olithique "Néolithique"), couvrant ainsi une période qui s'étend du [VIIIe](https://fr.wikipedia.org/wiki/VIIIe_mill%C3%A9naire_av._J.-C. "VIIIe millénaire av. J.-C.")au[Ve](https://fr.wikipedia.org/wiki/Ve_mill%C3%A9naire_av._J.-C. "Ve millénaire av. J.-C.")millénaires av. J.-C.[[53]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-54). D'un point de vue ethnologique et archéologique, le Capsien prend une importance plus grande puisque des [ossements](https://fr.wikipedia.org/wiki/Squelette_humain "Squelette humain") et des traces d'activité humaine remontant à plus de 15 000 ans sont découverts dans la région. Outre la fabrication d'outils en [pierre](https://fr.wikipedia.org/wiki/Roche "Roche") et en silex, les Capsiens produisaient, à partir d'ossements, divers outils dont des aiguilles pour coudre des vêtements à partir de peaux d'animaux.
+Au [Néolithique](https://fr.wikipedia.org/wiki/N%C3%A9olithique "Néolithique") ([4500](https://fr.wikipedia.org/wiki/Ve_mill%C3%A9naire_av._J.-C. "Ve millénaire av. J.-C.") à [2500 av. J.-C.](https://fr.wikipedia.org/wiki/XXVe_si%C3%A8cle_av._J.-C. "XXVe siècle av. J.-C.") environ), arrivé tardivement dans cette région, la présence humaine est conditionnée par la formation du [désert saharien](https://fr.wikipedia.org/wiki/Sahara "Sahara"), qui acquiert son climat actuel. De même, c'est à cette époque que le peuplement de la Tunisie s'enrichit par l'apport des [Berbères](https://fr.wikipedia.org/wiki/Berb%C3%A8res "Berbères")[[54]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-55), issus semble-t-il de la migration vers le nord de populations libyques[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56) (ancien terme [grec](https://fr.wikipedia.org/wiki/Grec_ancien "Grec ancien") désignant les populations africaines en général[[56]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-57)). Le Néolithique voit également le contact s'établir entre les [Phéniciens](https://fr.wikipedia.org/wiki/Ph%C3%A9niciens "Phéniciens") de [Tyr](https://fr.wikipedia.org/wiki/Tyr "Tyr"), les futurs [Carthaginois](https://fr.wikipedia.org/wiki/Carthage "Carthage") qui fondent la [civilisation punique](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise"), et les peuples autochtones de l'actuelle Tunisie, dont les Berbères sont désormais devenus la composante essentielle.
+On observe le passage de la [Préhistoire](https://fr.wikipedia.org/wiki/Pr%C3%A9histoire "Préhistoire") à l'[Histoire](https://fr.wikipedia.org/wiki/Histoire "Histoire") principalement dans l'apport des populations phéniciennes, même si le mode de vie néolithique continue un temps à exister aux côtés de celui des nouveaux arrivants. Cet apport est nuancé, notamment à Carthage (centre de la civilisation punique en [Occident](https://fr.wikipedia.org/wiki/Occident "Occident")), par la coexistence de différentes populations minoritaires mais dynamiques comme les Berbères, les Grecs, les Italiens ou les [Ibères](https://fr.wikipedia.org/wiki/Ib%C3%A8res "Ibères") d'Espagne. Les nombreux mariages mixtes contribuent à l'établissement de la civilisation punique[[57]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-58).
+### Antiquité
+#### De la Carthage punique à la Carthage romaine
+Article détaillé: [Histoire de Carthage](https://fr.wikipedia.org/wiki/Histoire_de_Carthage "Histoire de Carthage").
+Articles connexes: [Civilisation carthaginoise](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise") et [Afrique romaine](https://fr.wikipedia.org/wiki/Afrique_romaine "Afrique romaine").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Dougga_Capitol.jpg/250px-Dougga_Capitol.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Dougga_Capitol.jpg?uselang=fr)Capitole de Dougga. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mommsen_p265.jpg/250px-Mommsen_p265.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Mommsen_p265.jpg?uselang=fr)Buste du général carthaginois [Hannibal Barca](https://fr.wikipedia.org/wiki/Hannibal_Barca "Hannibal Barca"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Archaeological_Site_of_Carthage-130238.jpg/250px-Archaeological_Site_of_Carthage-130238.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Archaeological_Site_of_Carthage-130238.jpg?uselang=fr)Ruines du [site archéologique de Carthage](https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Carthage "Site archéologique de Carthage"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Virgil_Mosaic_Bardo_Museum_Tunis.jpg/250px-Virgil_Mosaic_Bardo_Museum_Tunis.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Virgil_Mosaic_Bardo_Museum_Tunis.jpg?uselang=fr)[Mosaïque](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_de_Virgile "Mosaïque de Virgile") découverte à [Sousse](https://fr.wikipedia.org/wiki/Sousse "Sousse") représentant [Virgile](https://fr.wikipedia.org/wiki/Virgile "Virgile") tenant L'_[Énéide](https://fr.wikipedia.org/wiki/%C3%89n%C3%A9ide "Énéide")_ et entouré de deux [muses](https://fr.wikipedia.org/wiki/Muses "Muses")[[N 2]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-59), Musée du Bardo. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Sbeitla_10.jpg/250px-Sbeitla_10.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Sbeitla_10.jpg?uselang=fr)Arc de Dioclétien dédié aux empereurs de la première [tétrarchie](https://fr.wikipedia.org/wiki/T%C3%A9trarchie "Tétrarchie") et situé sur le [site archéologique de Sbeïtla](https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Sbe%C3%AFtla "Site archéologique de Sbeïtla"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Damous_el_Karita_vue_ouest_%28Carthage%29.JPG/250px-Damous_el_Karita_vue_ouest_%28Carthage%29.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Damous_el_Karita_vue_ouest_\(Carthage\).JPG?uselang=fr)Ruines de la [basilique de Damous El Karita](https://fr.wikipedia.org/wiki/Basilique_de_Damous_El_Karita "Basilique de Damous El Karita") à Carthage.
+L'entrée de la Tunisie dans l'histoire se fait par l'expansion d'une cité issue d'une colonisation [proche-orientale](https://fr.wikipedia.org/wiki/Proche-Orient "Proche-Orient")[[58]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin118-60). La Tunisie accueille progressivement une série de [comptoirs](https://fr.wikipedia.org/wiki/Comptoir "Comptoir") [phéniciens](https://fr.wikipedia.org/wiki/Ph%C3%A9niciens "Phéniciens") comme bien d'autres régions méditerranéennes. Le premier comptoir selon la tradition est celui d'[Utique](https://fr.wikipedia.org/wiki/Utique "Utique")[[59]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-61), qui date de 1101 av. J.-C[[60]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-62). En [814 av. J.-C.](https://fr.wikipedia.org/wiki/Ann%C3%A9es_810_av._J.-C. "Années 810 av. J.-C."), des colons phéniciens venus de [Tyr](https://fr.wikipedia.org/wiki/Tyr "Tyr")[[61]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-63) fondent la ville de [Carthage](https://fr.wikipedia.org/wiki/Carthage "Carthage")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64). D'après la légende, c'est la reine Élyssa ([Didon](https://fr.wikipedia.org/wiki/Didon "Didon") pour les Romains), sœur du roi de Tyr [Pygmalion](https://fr.wikipedia.org/wiki/Pygmalion_\(Tyr\) "Pygmalion \(Tyr\)"), qui est à l'origine de la cité[[63]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-65). Ouverte sur la mer, Carthage est également ouverte structurellement sur l'extérieur. Un siècle et demi après la fondation de la ville, les Carthaginois ou Puniques étendent leur emprise sur le bassin occidental de la [mer Méditerranée](https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e "Mer Méditerranée").
+Cette présence prend diverses formes, y compris celle de la [colonisation](https://fr.wikipedia.org/wiki/Colonisation "Colonisation")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64), mais reste d'abord commerciale (comptoirs de commerce, signature de traités,etc.)[[64]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-simon13-66). La mutation vers un empire plus terrestre se heurte aux Grecs de Sicile puis à la puissance montante de [Rome](https://fr.wikipedia.org/wiki/Rome_antique "Rome antique")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64) et de ses alliés massaliotes, [campaniens](https://fr.wikipedia.org/wiki/Campanie "Campanie") ou italiotes. Le cœur carthaginois qu'est la Tunisie, à la veille des [guerres puniques](https://fr.wikipedia.org/wiki/Guerres_puniques "Guerres puniques"), possède une capacité de production agricole supérieure à celle de Rome et de ses alliés réunis, et son exploitation fait l'admiration des Romains. La lutte entre Rome et Carthage prend de l'ampleur avec l'essor des deux cités: ce sont les trois guerres puniques, qui faillirent voir la prise de Rome mais se conclurent par la destruction de Carthage, en [146 av. J.-C.](https://fr.wikipedia.org/wiki/146_av._J.-C. "146 av. J.-C."), après un [siège](https://fr.wikipedia.org/wiki/Bataille_de_Carthage_\(149_av._J.-C.\) "Bataille de Carthage \(149 av. J.-C.\)") de trois ans[[64]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-simon13-66). À l'issue de la [troisième guerre punique](https://fr.wikipedia.org/wiki/Troisi%C3%A8me_guerre_punique "Troisième guerre punique"), Rome s'installe sur les décombres de la ville[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64). La fin des guerres puniques marque l'établissement de la [province romaine d'Afrique](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique") dont [Utique](https://fr.wikipedia.org/wiki/Utique "Utique") devient la première capitale, même si le site de Carthage s'impose à nouveau par ses avantages et redevient capitale en [14](https://fr.wikipedia.org/wiki/14 "14")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64),[[65]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-march238-67).
+En [44 av. J.-C.](https://fr.wikipedia.org/wiki/44_av._J.-C. "44 av. J.-C."), [Jules César](https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar "Jules César") décide d'y fonder une [colonie romaine](https://fr.wikipedia.org/wiki/Colonie_romaine "Colonie romaine"), la _Colonia Julia Carthago_[[66]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-arnauld58-68), mais il faudra attendre quelques décennies pour qu'[Auguste](https://fr.wikipedia.org/wiki/Auguste "Auguste") lance les travaux de la cité. La région connaît alors une période de prospérité où l'Afrique devient pour Rome un fournisseur essentiel de productions agricoles[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56), comme le [blé](https://fr.wikipedia.org/wiki/Bl%C3%A9 "Blé") et l'[huile d'olive](https://fr.wikipedia.org/wiki/Huile_d'olive "Huile d'olive"), grâce aux plantations d'[oliviers](https://fr.wikipedia.org/wiki/Olivier "Olivier") chères aux Carthaginois[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64). La province se couvre d'un réseau dense de cités romanisées dont les vestiges encore visibles à l'heure actuelle demeurent impressionnants: il suffit de mentionner les sites de [Dougga](https://fr.wikipedia.org/wiki/Dougga "Dougga") (antique _Thugga_), [Sbeïtla](https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Sbe%C3%AFtla "Site archéologique de Sbeïtla") (_Sufetula_), [Bulla Regia](https://fr.wikipedia.org/wiki/Bulla_Regia "Bulla Regia"), [El Jem](https://fr.wikipedia.org/wiki/El_Jem "El Jem") (_Thysdrus_) ou [Thuburbo Majus](https://fr.wikipedia.org/wiki/Thuburbo_Majus "Thuburbo Majus"). Partie intégrante de la [République](https://fr.wikipedia.org/wiki/R%C3%A9publique_romaine "République romaine") puis de l'[Empire](https://fr.wikipedia.org/wiki/Empire_romain "Empire romain") avec la [Numidie](https://fr.wikipedia.org/wiki/Royaume_de_Numidie "Royaume de Numidie")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64), la Tunisie devient pendant six siècles le siège d'une civilisation romano-africaine d'une exceptionnelle richesse, fidèle à sa vocation de «carrefour du monde antique». La Tunisie est alors le creuset de l'art de la [mosaïque](https://fr.wikipedia.org/wiki/Mosa%C3%AFque "Mosaïque"), qui s'y distingue par son originalité et ses innovations.
+Concurrents des dieux romains, des dieux indigènes apparaissent sur des frises d'époque impériale, et le culte de certaines divinités, [Saturne](https://fr.wikipedia.org/wiki/Saturne_\(mythologie\) "Saturne \(mythologie\)") et [Caelestis](https://fr.wikipedia.org/wiki/Junon "Junon"), s'inscrit dans la continuité du culte voué par les Puniques à [Ba'al Hammon](https://fr.wikipedia.org/wiki/Ba'al_Hammon "Ba'al Hammon") et à [Tanit](https://fr.wikipedia.org/wiki/Tanit "Tanit"), sa [parèdre](https://fr.wikipedia.org/wiki/Par%C3%A8dre "Parèdre")[[67]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-69). Le «carrefour du monde antique» voit aussi l'installation précoce de [communautés juives](https://fr.wikipedia.org/wiki/Histoire_des_Juifs_en_Tunisie "Histoire des Juifs en Tunisie")[[66]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-arnauld58-68) et, dans le sillage de celles-ci, des premières communautés chrétiennes. L'apogée du IIeet du début du IIIesiècle ne va toutefois pas sans heurts[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64), la province connaissant quelques crises au [IIIesiècleav. J.-C.](https://fr.wikipedia.org/wiki/IIIe_si%C3%A8cle_av._J.-C. "IIIe siècle av. J.-C."): elle est frappée par la répression de la révolte de [Gordien Ier](https://fr.wikipedia.org/wiki/Gordien_Ier "Gordien Ier") en 238[[68]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-70); elle subit de même les affrontements entre usurpateurs au début du IVesiècle.
+La province est l'une des moins touchées par les difficultés que connaît l'Empire romain entre 235 et le début du IVesiècle. Avec la [Tétrarchie](https://fr.wikipedia.org/wiki/T%C3%A9trarchie "Tétrarchie"), la province recouvre une prospérité que révèlent les vestiges archéologiques, provenant tant de constructions publiques que d'habitations privées. Cette époque est aussi le premier siècle du christianisme officiel, devenu religion licite en 313 et religion personnelle de l'empereur [Constantin](https://fr.wikipedia.org/wiki/Constantin_Ier_\(empereur_romain\) "Constantin Ier \(empereur romain\)")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64).
+#### Christianisation
+Dans un espace ouvert sur l'extérieur comme l'est alors la [province d'Afrique](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique"), le [christianisme](https://fr.wikipedia.org/wiki/Christianisme "Christianisme") se développe de façon précoce[[69]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-71) grâce aux colons, commerçants et soldats, et la région devient l'un des foyers essentiels de la diffusion de la nouvelle foi, même si les affrontements religieux y sont violents avec les [païens](https://fr.wikipedia.org/wiki/Paganisme "Paganisme"). Dès le IIesiècle, la province applique aussi les sanctions impériales, les premiers [martyrs](https://fr.wikipedia.org/wiki/Martyr "Martyr") étant attestés dès le 17 juillet 180: ceux qui refusent de se rallier au culte officiel peuvent être torturés, relégués sur des îles, décapités, livrés aux bêtes féroces, brûlés voire crucifiés.
+À la fin du IIesiècle, la nouvelle religion se développe, avec l'apparition de communautés structurées notamment à Carthage. Les écrits de [Tertullien](https://fr.wikipedia.org/wiki/Tertullien "Tertullien") témoignent de l'ancienneté et du dynamisme du christianisme africain[[70]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-72). Au cours du IIIesiècle, l'[Église d'Afrique](https://fr.wikipedia.org/wiki/%C3%89glise_de_Carthage "Église de Carthage") se structure autour d'un réseau dense d'[évêchés](https://fr.wikipedia.org/wiki/%C3%89v%C3%AAch%C3%A9 "Évêché") urbains. Sous l'épiscopat de [Cyprien de Carthage](https://fr.wikipedia.org/wiki/Cyprien_de_Carthage "Cyprien de Carthage") (vers 249-258), l'institution ecclésiale affirme son autorité disciplinaire et développe une importante activité caritative, ce qui renforce son rôle social dans les cités africaines[[71]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-73). La forte urbanisation de l'Afrique romaine, caractérisée par un réseau dense de cités en Proconsulaire et en Numidie, favorise la diffusion des idées religieuses et l'implantation rapide des communautés chrétiennes[[72]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-74). Un tournant majeur intervient avec l'[Édit de Thessalonique](https://fr.wikipedia.org/wiki/%C3%89dit_de_Thessalonique "Édit de Thessalonique") promulgué le 27 février 380 par l'empereur [Théodose Ier](https://fr.wikipedia.org/wiki/Th%C3%A9odose_Ier "Théodose Ier"), qui fait du [christianisme nicéen](https://fr.wikipedia.org/wiki/Christianisme_nic%C3%A9en "Christianisme nicéen") la religion officielle de l'Empire romain. Cette mesure renforce considérablement la position institutionnelle de l'Église, même si la disparition des autres cultes est progressive et s'étend sur plusieurs décennies. Au Vesiècle, sous l'action dynamique d'[Augustin d'Hippone](https://fr.wikipedia.org/wiki/Augustin_d'Hippone "Augustin d'Hippone") (évêque d'Hippone de 395 à 430) et de nombreux [évêques](https://fr.wikipedia.org/wiki/%C3%89v%C3%AAque "Évêque") africains, le christianisme s'enracine profondément dans la société. Les élites foncières et l'[aristocratie](https://fr.wikipedia.org/wiki/Aristocratie "Aristocratie") urbaine se rallient progressivement à la nouvelle religion, qui intègre alors les différentes couches sociales[[73]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-75). Aux IVeetVesiècles, l'Afrique romaine devient ainsi l'un des principaux centres du christianisme latin occidental, tant par sa production théologique que par la vitalité de ses institutions ecclésiales[[74]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-76).
+[![](https://upload.wikimedia.org/wikipedia/commons/c/ce/Stcyprian.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled)](https://commons.wikimedia.org/wiki/File:Stcyprian.jpg?uselang=fr)[Cyprien de Carthage](https://fr.wikipedia.org/wiki/Cyprien_de_Carthage "Cyprien de Carthage"), évêque de Carthage.
+Cette expansion rencontre toutefois des obstacles, en particulier lors du [schisme](https://fr.wikipedia.org/wiki/Schisme "Schisme") [donatiste](https://fr.wikipedia.org/wiki/Donatisme "Donatisme")[[62]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin38-64) qui est condamné de façon définitive au [concile de Carthage](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Carthage "Conférence de Carthage"). Ce dernier accuse les schismatiques d'avoir coupé les liens entre l'Église africaine et les Églises orientales originelles. En dépit de cette lutte religieuse, la conjoncture économique, sociale et culturelle est relativement favorable au moment du triomphe du christianisme[[75]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-77), comme en témoignent les nombreux vestiges, notamment de [basiliques](https://fr.wikipedia.org/wiki/Basilique_\(christianisme\) "Basilique \(christianisme\)") à Carthage et de nombreuses églises aménagées dans d'anciens temples païens (comme à Sbeïtla) ou même certaines églises rurales. Le 19 octobre 439, après s'être rendus maîtres d'[Hippone](https://fr.wikipedia.org/wiki/Hippone "Hippone")[[76]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-78), les [Vandales](https://fr.wikipedia.org/wiki/Vandales "Vandales") et les [Alains](https://fr.wikipedia.org/wiki/Alains "Alains") de [Genséric](https://fr.wikipedia.org/wiki/Gens%C3%A9ric "Genséric") entrent dans Carthage, où ils installent leur [royaume](https://fr.wikipedia.org/wiki/Royaume_vandale "Royaume vandale") pour près d'un siècle[[77]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-79). Les Vandales sont adeptes de l'[arianisme](https://fr.wikipedia.org/wiki/Arianisme "Arianisme")[[78]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encyclo360-80), déclarée [hérésie](https://fr.wikipedia.org/wiki/H%C3%A9r%C3%A9sie "Hérésie") au [concile de Nicée](https://fr.wikipedia.org/wiki/Premier_concile_de_Nic%C3%A9e "Premier concile de Nicée"), ce qui ne facilite pas les relations entre eux et les notables locaux majoritairement [chalcédoniens](https://fr.wikipedia.org/wiki/Chalc%C3%A9donisme "Chalcédonisme"). Or les Vandales exigent de la population une totale allégeance à leur pouvoir et à leur foi. En conséquence, ceux qui tentent de s'opposer aux Vandales ou à l'arianisme sont persécutés: de nombreux hommes d'Église sont martyrisés, emprisonnés ou exilés[[79]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-81) dans des camps au sud de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa"). Dans le domaine économique, les Vandales appliquent à l'Église la politique de confiscation dont doivent pâtir les grands propriétaires. Cependant, la [culture latine](https://fr.wikipedia.org/wiki/Culture_latine "Culture latine") reste largement préservée[[80]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-82) et le christianisme prospère tant qu'il ne s'oppose pas au souverain en place.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Sbeitla_08.jpg/250px-Sbeitla_08.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Sbeitla_08.jpg?uselang=fr)[Baptistère](https://fr.wikipedia.org/wiki/Baptist%C3%A8re "Baptistère") de l'église de Vitalis située sur le [site archéologique de Sbeïtla](https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Sbe%C3%AFtla "Site archéologique de Sbeïtla"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sac-rome-en-455-genseric-ou-geiseric-25896984.jpg.webp/250px-Sac-rome-en-455-genseric-ou-geiseric-25896984.jpg.webp.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Sac-rome-en-455-genseric-ou-geiseric-25896984.jpg.webp?uselang=fr)[Genséric](https://fr.wikipedia.org/wiki/Gens%C3%A9ric "Genséric"), roi des [Vandales](https://fr.wikipedia.org/wiki/Vandales "Vandales") de Carthage, s'emparant de la [menorah](https://fr.wikipedia.org/wiki/Menorah "Menorah") lors du [sac de Rome](https://fr.wikipedia.org/wiki/Sac_de_Rome_\(455\) "Sac de Rome \(455\)") (455).
+### Moyen Âge
+#### Période byzantine
+Dans ce contexte, le territoire, enserré par des principautés berbères, est attaqué par les tribus de [nomades](https://fr.wikipedia.org/wiki/Nomadisme "Nomadisme") chameliers: la défaite, en décembre 533 à la [bataille de Tricaméron](https://fr.wikipedia.org/wiki/Bataille_de_Tricam%C3%A9ron "Bataille de Tricaméron")[[81]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-83), confirme l'anéantissement de la puissance militaire vandale. Carthage est prise facilement par les [Byzantins](https://fr.wikipedia.org/wiki/Empire_byzantin "Empire byzantin") dirigés par le [général](https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ral "Général") [Bélisaire](https://fr.wikipedia.org/wiki/B%C3%A9lisaire "Bélisaire")[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56), envoyé par [Justinien](https://fr.wikipedia.org/wiki/Justinien_Ier "Justinien Ier")[[82]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-yousif75-84), le roi vandale [Gélimer](https://fr.wikipedia.org/wiki/G%C3%A9limer "Gélimer") se rendant en 534[[82]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-yousif75-84). Malgré la résistance des Berbères, les Byzantins rétablissent l'esclavage et instituent de lourds impôts[[83]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin42-85). Par ailleurs, l'administration romaine est restaurée. L'[Église d'Afrique](https://fr.wikipedia.org/wiki/%C3%89glise_de_Carthage "Église de Carthage") est mise au pas et Justinien fait alors de Carthage le siège de son [diocèse](https://fr.wikipedia.org/wiki/Dioc%C3%A8se "Diocèse") d'Afrique. À la fin du VIesiècle, la région est placée sous l'autorité d'un [exarque](https://fr.wikipedia.org/wiki/Exarchat_de_Carthage "Exarchat de Carthage") cumulant les pouvoirs civil et militaire, et disposant d'une large autonomie vis-à-vis de l'empereur. Prétendant imposer le christianisme d'État, les Byzantins pourchassent le paganisme, le judaïsme et les hérésies chrétiennes[[83]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin42-85). Pourtant, à la suite de la crise [monothéliste](https://fr.wikipedia.org/wiki/Monoth%C3%A9lisme "Monothélisme"), les empereurs byzantins, opposés à l'Église locale, se détournent de la cité. Or, avec une Afrique byzantine entraînée dans le marasme, un état d'esprit insurrectionnel secoue des [confédérations](https://fr.wikipedia.org/wiki/Conf%C3%A9d%C3%A9ration_\(organisation_politique\) "Confédération \(organisation politique\)") de tribus sédentarisées et constituées en principautés. Ces tribus berbères sont d'autant plus hostiles à l'Empire byzantin qu'elles ont conscience de leur propre force. Avant même sa prise par les [Arabes](https://fr.wikipedia.org/wiki/Arabes "Arabes") en 698[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86), la capitale et, dans une certaine mesure, la province d'Afrique se sont vidées de leurs habitants byzantins. Dès le début du VIIesiècle, l'archéologie témoigne en effet d'un repli, ceci étant particulièrement évident à Carthage[[85]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-87).
+#### Ifriqiya dans le Moyen Âge arabo-musulman
+Article détaillé: [Tunisie à l'époque médiévale](https://fr.wikipedia.org/wiki/Tunisie_%C3%A0_l'%C3%A9poque_m%C3%A9di%C3%A9vale "Tunisie à l'époque médiévale").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/TUNISIE_MONASTIR_RIBAT_04.jpg/250px-TUNISIE_MONASTIR_RIBAT_04.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:TUNISIE_MONASTIR_RIBAT_04.jpg?uselang=fr)[Ribat de Monastir](https://fr.wikipedia.org/wiki/Ribat_de_Monastir "Ribat de Monastir").
+La première expédition arabe sur la Tunisie est lancée en 650[[86]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-thaalbi-88), à l'époque du [calife](https://fr.wikipedia.org/wiki/Calife "Calife") [Othmân ibn Affân](https://fr.wikipedia.org/wiki/Othm%C3%A2n_ibn_Aff%C3%A2n "Othmân ibn Affân"). Commandée par [Abd Allâh ibn Saad](https://fr.wikipedia.org/wiki/Abd_All%C3%A2h_ibn_Saad_ibn_Sarh "Abd Allâh ibn Saad ibn Sarh"), l'armée arabe écrase l'armée byzantine du [patrice](https://fr.wikipedia.org/wiki/Patrice_\(titre\) "Patrice \(titre\)") Grégoire près de [Sbeïtla](https://fr.wikipedia.org/wiki/Sbe%C3%AFtla "Sbeïtla"). En 666, une deuxième offensive menée par Mu'awiya ibn Hudayj à l'époque du calife omeyyade [Muʿawiya Ier](https://fr.wikipedia.org/wiki/Mu%CA%BFawiya_Ier "Muʿawiya Ier") se termine par la prise de plusieurs villes dont [Sousse](https://fr.wikipedia.org/wiki/Sousse "Sousse") et [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte")[[86]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-thaalbi-88). L'île de [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba") est prise en 667[[86]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-thaalbi-88). La troisième expédition, menée en 670 par [Oqba Ibn Nafi al-Fihri](https://fr.wikipedia.org/wiki/Oqba_Ibn_Nafi_al-Fihri "Oqba Ibn Nafi al-Fihri"), est décisive: ce dernier fonde la ville de [Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan") au cours de la même année[[83]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin42-85) et cette ville devient la base des expéditions contre le Nord et l'Ouest du Maghreb[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56). L'invasion complète manque d'échouer avec la mort d'Ibn Nafi en 683[[87]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout11-89), à la suite d'une embuscade tendue par le chef berbère [Koceïla](https://fr.wikipedia.org/wiki/Koce%C3%AFla "Koceïla") au sud de l'[Aurès](https://fr.wikipedia.org/wiki/Aur%C3%A8s "Aurès")[[88]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-hslim-90). Après la mort d'Ibn Nafi, les Arabes évacuent Kairouan, où s'installe Koceila qui devient le maître de l'Ifriqiya: les Byzantins ne sont plus, selon les historiens arabes, que ses simples auxiliaires[[88]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-hslim-90). Envoyé en 693 avec une puissante armée arabe, le général [ghassanide](https://fr.wikipedia.org/wiki/Ghassanides "Ghassanides") [Hassan Ibn Numan](https://fr.wikipedia.org/wiki/Hassan_Ibn_Numan "Hassan Ibn Numan") réussit à vaincre l'exarque et à prendre Carthage[[89]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-yousif358-91) en 695. Seuls résistent certains Berbères dirigés par la [Kahena](https://fr.wikipedia.org/wiki/Dihya "Dihya")[[89]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-yousif358-91).
+Les Byzantins, profitant de leur supériorité navale, débarquent une armée qui s'empare de Carthage en 696 pendant que la Kahena remporte une bataille contre les Arabes en 697[[89]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-yousif358-91). Ces derniers, au prix d'un nouvel effort, finissent cependant par reprendre définitivement Carthage en 698 et par vaincre et tuer la Kahena[[87]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout11-89). Contrairement aux [Phéniciens](https://fr.wikipedia.org/wiki/Ph%C3%A9niciens "Phéniciens"), les Arabes ne se contentent pas d'occuper la côte et entreprennent de conquérir l'intérieur du pays. Après avoir résisté, les Berbères se convertissent à la religion de leurs vainqueurs[[87]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout11-89), principalement à travers leur recrutement dans les rangs de l'armée victorieuse. Des centres de formation religieuse s'organisent alors, comme à Kairouan, au sein des nouveaux [ribats](https://fr.wikipedia.org/wiki/Ribat "Ribat"). On ne saurait toutefois estimer l'ampleur de ce mouvement d'adhésion à l'islam. D'ailleurs, refusant l'assimilation, nombreux sont ceux qui rejettent la religion dominante et adhèrent au [kharidjisme](https://fr.wikipedia.org/wiki/Kharidjisme "Kharidjisme"), courant religieux musulman né en Orient et proclamant notamment l'égalité de tous les musulmans sans distinction de race ni de classe[[90]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacdujardin43-92). La région reste une province omeyyade jusqu'en 750, quand la lutte entre [Omeyyades](https://fr.wikipedia.org/wiki/Omeyyades "Omeyyades") et [Abbassides](https://fr.wikipedia.org/wiki/Abbassides "Abbassides") voit ces derniers l'emporter[[90]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacdujardin43-92). De 767 à 776, les kharidjites berbères sous le commandement d'[Abou Qurra](https://fr.wikipedia.org/wiki/Abou_Qurra "Abou Qurra") s'emparent de tout le territoire, mais ils se retirent finalement dans le royaume de [Tlemcen](https://fr.wikipedia.org/wiki/Tlemcen "Tlemcen"), après avoir tué Omar ibn Hafs, surnommé Hezarmerd, dirigeant de la Tunisie à cette époque[[91]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-93).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Grande_Mosqu%C3%A9e_de_Kairouan%2C_vue_d%27ensemble.jpg/250px-Grande_Mosqu%C3%A9e_de_Kairouan%2C_vue_d%27ensemble.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Kairouan,_vue_d'ensemble.jpg?uselang=fr)[Grande mosquée de Kairouan](https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Kairouan "Grande mosquée de Kairouan"), plus ancien lieu de culte musulman du Maghreb, est le principal monument religieux de la Tunisie.
+En 800, le [calife](https://fr.wikipedia.org/wiki/Calife "Calife") abbasside [Hâroun ar-Rachîd](https://fr.wikipedia.org/wiki/H%C3%A2roun_ar-Rach%C3%AEd "Hâroun ar-Rachîd") délègue son pouvoir en [Ifriqiya](https://fr.wikipedia.org/wiki/Ifriqiya "Ifriqiya") à l'[émir](https://fr.wikipedia.org/wiki/%C3%89mir "Émir") [Ibrahim ibn al-Aghlab](https://fr.wikipedia.org/wiki/Ibrahim_ibn_al-Aghlab "Ibrahim ibn al-Aghlab")[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94) et lui donne le droit de transmettre ses fonctions par voie héréditaire[[93]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-thiry166-95). Al-Aghlab établit la dynastie des [Aghlabides](https://fr.wikipedia.org/wiki/Aghlabides "Aghlabides"), qui règne durant un siècle sur le [Maghreb central](https://fr.wikipedia.org/wiki/Maghreb_central "Maghreb central") et oriental. Le territoire bénéficie d'une indépendance formelle tout en reconnaissant la souveraineté abbasside[[93]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-thiry166-95). La Tunisie devient un foyer culturel important avec le rayonnement de Kairouan et de sa [grande mosquée](https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Kairouan "Grande mosquée de Kairouan"), un centre intellectuel de haute renommée[[94]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-96). À la fin du règne de Ziadet Allah Ier (817-838), [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis") devient la capitale de l'émirat jusqu'en 909[[95]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-97). Appuyée par les tribus [Kutama](https://fr.wikipedia.org/wiki/Ketamas "Ketamas") qui forment une armée fanatisée, l'action du [prosélyte](https://fr.wikipedia.org/wiki/Pros%C3%A9lytisme "Prosélytisme") [ismaélien](https://fr.wikipedia.org/wiki/Isma%C3%A9lisme "Ismaélisme") [Abu Abd Allah ach-Chi'i](https://fr.wikipedia.org/wiki/Abu_Abd_Allah_ach-Chi'i "Abu Abd Allah ach-Chi'i") entraîne la disparition de l'émirat en une quinzaine d'années (893-909). En décembre 909, [Ubayd Allah al-Mahdi](https://fr.wikipedia.org/wiki/Ubayd_Allah_al-Mahdi "Ubayd Allah al-Mahdi") se proclame calife et fonde la dynastie des [Fatimides](https://fr.wikipedia.org/wiki/Califat_fatimide "Califat fatimide"), qui déclare usurpateurs les califes [omeyyades](https://fr.wikipedia.org/wiki/Omeyyades "Omeyyades") et [abbassides](https://fr.wikipedia.org/wiki/Abbassides "Abbassides") ralliés au [sunnisme](https://fr.wikipedia.org/wiki/Sunnisme "Sunnisme"). L'État fatimide s'impose progressivement sur toute l'Afrique du Nord en contrôlant les routes caravanières et le commerce avec l'[Afrique subsaharienne](https://fr.wikipedia.org/wiki/Afrique_subsaharienne "Afrique subsaharienne"). En 945, [Abu Yazid](https://fr.wikipedia.org/wiki/Abu_Yazid "Abu Yazid"), de la grande tribu des [Ifrenides](https://fr.wikipedia.org/wiki/Ifrenides "Ifrenides"), organise sans succès une [grande révolte berbère](https://fr.wikipedia.org/wiki/Grande_r%C3%A9volte_berb%C3%A8re "Grande révolte berbère") pour chasser les Fatimides. Le troisième calife, [Ismâ`îl al-Mansûr](https://fr.wikipedia.org/wiki/Al-Mansur_\(Fatimide\) "Al-Mansur \(Fatimide\)"), transfère alors la capitale à Kairouan et s'empare de la Sicile[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86) en 948. Lorsque la dynastie fatimide déplace sa base vers l'est en 972, trois ans après la conquête finale de la région, et sans abandonner pour autant sa suzeraineté sur l'Ifriqiya, le calife [Al-Muʿizz li-Dīn Allāh](https://fr.wikipedia.org/wiki/Al-Mu%CA%BFizz_li-D%C4%ABn_All%C4%81h "Al-Muʿizz li-Dīn Allāh") confie à [Bologhine ibn Ziri](https://fr.wikipedia.org/wiki/Bologhine_ibn_Ziri "Bologhine ibn Ziri") — fondateur de la dynastie des [Zirides](https://fr.wikipedia.org/wiki/Zirides "Zirides") — le soin de gouverner la province en son nom. Les Zirides prennent peu à peu leur indépendance vis-à-vis du calife fatimide[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86), ce qui culmine lors de la rupture avec ce suzerain devenu lointain et inaugure l'ère de l'émancipation berbère.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mosqu%C3%A9e_Zitouna_Kassus.jpg/250px-Mosqu%C3%A9e_Zitouna_Kassus.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Zitouna_Kassus.jpg?uselang=fr)[Minaret](https://fr.wikipedia.org/wiki/Minaret "Minaret") de la [mosquée Zitouna](https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Zitouna "Mosquée Zitouna") de style almohade.
+L'envoi depuis l'Égypte des tribus arabes [nomades](https://fr.wikipedia.org/wiki/Nomadisme "Nomadisme") vers l'Ifriqiya constitue, dans la tradition historiographique, une réplique des Fatimides à la rupture des Zirides avec le califat du Caire en 1048[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98). Les [Hilaliens](https://fr.wikipedia.org/wiki/Hilaliens "Hilaliens"), suivis des [Banu Sulaym](https://fr.wikipedia.org/wiki/Banu_Sulaym "Banu Sulaym"), auraient compté environ 50 000 guerriers et 200 000 [Bédouins](https://fr.wikipedia.org/wiki/B%C3%A9douins "Bédouins")[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98). Avant leur départ, des actes d'investiture assimilables à de véritables titres de propriété leur auraient été accordés au nom du calife fatimide[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98). Après leur victoire près de Gabès ([bataille de Haydarân](https://fr.wikipedia.org/wiki/Bataille_de_Haydar%C3%A2n "Bataille de Haydarân")), [Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan") résiste durant cinq ans avant d'être prise et saccagée en [novembre 1057[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98),[[97]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-99). Le souverain ziride se replie alors sur [Mahdia](https://fr.wikipedia.org/wiki/Mahdia "Mahdia"), tandis que les tribus nomades se répandent vers l'ouest, en direction de l'Algérie; la vallée de la [Medjerda](https://fr.wikipedia.org/wiki/Medjerda "Medjerda") demeura alors l'un des rares axes encore fréquentés par les marchands[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98). Après l'échec d'une tentative de réimplantation en Sicile, reprise par les [Normands](https://fr.wikipedia.org/wiki/Normands "Normands"), la dynastie ziride s'efforce pendant près de 90 ans de reconquérir une partie de son territoire, organisant notamment des expéditions afin de compenser ses pertes économiques[[96]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-decret-98).
+À partir du premier tiers du XIIesiècle, la Tunisie est régulièrement attaquée par les Normands de Sicile et du Sud de l'Italie, basés dans le [royaume normano-sicilien](https://fr.wikipedia.org/wiki/Royaume_de_Sicile "Royaume de Sicile"), qui finissent par conquérir l'ensemble du littoral tunisien et y fonde le [Royaume d'Afrique](https://fr.wikipedia.org/wiki/Royaume_d'Afrique "Royaume d'Afrique"). Celui-ci est une extension de la frontière [siculo-normande](https://fr.wikipedia.org/wiki/Baronnage_italo-normand "Baronnage italo-normand") dans l'ancienne [province romaine d'Afrique](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique") (alors appelée _[Ifriqiya](https://fr.wikipedia.org/wiki/Ifriqiya "Ifriqiya")_), qui correspond à la Tunisie actuelle ainsi qu'à une partie de l'[Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie") et de la [Libye](https://fr.wikipedia.org/wiki/Libye "Libye"). Les sources primaires ayant trait au royaume sont en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe")[[98]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-100) alors que les sources [latines](https://fr.wikipedia.org/wiki/Latin "Latin") (chrétiennes) sont plus rares. Selon Hubert Houben, étant donné qu'«Afrique» n'a jamais été officiellement ajouté aux titres royaux des rois de Sicile «on ne devrait pas parler d'un ‘Royaume Norman d'Afrique' à proprement parler»[[99]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-101). L'«Afrique normande» est plutôt une constellation de villes gouvernées par les Normands sur la côte ifriqiyenne[[100]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-102).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Royaume_de_Sicile_en_1154.svg/250px-Royaume_de_Sicile_en_1154.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Royaume_de_Sicile_en_1154.svg?uselang=fr)Carte de l'Afrique normande en 1154.
+La conquête sicilienne de l'Ifriqiya commence sous le règne de [Roger II de Sicile](https://fr.wikipedia.org/wiki/Roger_II_\(roi_de_Sicile\) "Roger II \(roi de Sicile\)") en 1146-1148. Le règne sicilien consiste en des [garnisons](https://fr.wikipedia.org/wiki/Garnison "Garnison") militaires dans les principales villes, des exactions sur les populations musulmanes, la protection des chrétiens et le monnayage de pièces de monnaie. L'aristocratie locale est largement gardée en place et des princes musulmans se chargent des affaires civiles sous surveillance normande. Les relations économiques entre la Sicile et l'Ifriqiya, qui étaient déjà fortes avant la conquête, sont renforcées, tandis que les échanges entre l'Ifriqiya et le Nord de l'Italie sont étendus. Sous le règne de [Guillaume Ier de Sicile](https://fr.wikipedia.org/wiki/Guillaume_Ier_\(roi_de_Sicile\) "Guillaume Ier \(roi de Sicile\)"), le Royaume d'Afrique tombe aux mains des [Almohades](https://fr.wikipedia.org/wiki/Almohades "Almohades") (1158-1160). Son héritage le plus durable est le réalignement des puissances méditerranéennes provoqué par sa disparition et la paix siculo-almohade finalisée en 1180. L'ensemble du territoire de l'Ifriqiya finit par être occupé par l'armée du sultan almohade [Abd al-Mumin](https://fr.wikipedia.org/wiki/Abd_al-Mumin_\(calife\) "Abd al-Mumin \(calife\)") lors de son expédition depuis le nord du [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc") en 1159[[101]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-103). L'économie devient florissante[[102]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacdujardin44-104) et des relations commerciales s'établissent avec les principales villes du pourtour méditerranéen ([Pise](https://fr.wikipedia.org/wiki/Pise "Pise"), [Gênes](https://fr.wikipedia.org/wiki/G%C3%AAnes "Gênes"), [Marseille](https://fr.wikipedia.org/wiki/Marseille "Marseille"), [Venise](https://fr.wikipedia.org/wiki/Venise "Venise") et certaines villes d'[Espagne](https://fr.wikipedia.org/wiki/Espagne "Espagne")).
+L'essor touche également le domaine culturel[[102]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacdujardin44-104) avec les œuvres du grand historien et père de la sociologie [Ibn Khaldoun](https://fr.wikipedia.org/wiki/Ibn_Khaldoun "Ibn Khaldoun"); le siècle almohade est considéré comme l'«âge d'or» du Maghreb[[102]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacdujardin44-104). De grandes villes se développent et les plus belles mosquées sont érigées à cette époque[[103]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-105). Les Almohades confient la Tunisie à [Abû Muhammad `Abd al-Wâhid ben Abî Hafs](https://fr.wikipedia.org/wiki/Ab%C3%BB_Muhammad_`Abd_al-W%C3%A2hid_ben_Ab%C3%AE_Hafs "Abû Muhammad `Abd al-Wâhid ben Abî Hafs") mais son fils [Abû Zakariyâ Yahyâ](https://fr.wikipedia.org/wiki/Ab%C3%BB_Zakariy%C3%A2_Yahy%C3%A2_\(Tunisie\)?action=edit&redlink=1 "Abû Zakariyâ Yahyâ \(Tunisie\) \(page inexistante\)") se sépare d'eux en [1228](https://fr.wikipedia.org/wiki/1228 "1228") et fonde la nouvelle dynastie berbère[[65]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-march238-67) des [Hafsides](https://fr.wikipedia.org/wiki/Sultanat_hafside_de_Tunis "Sultanat hafside de Tunis")[[104]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-106). Elle acquiert son indépendance dès [1236](https://fr.wikipedia.org/wiki/1236 "1236")[[105]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-bonte115-107) et dirige la Tunisie jusqu'en 1574[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94), ce qui en fait la première dynastie tunisienne par sa durée[[106]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-borsbey-108). Elle établit la capitale du pays à Tunis[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94), et la ville se développe grâce au commerce avec les Vénitiens, les Génois, les [Aragonais](https://fr.wikipedia.org/wiki/Royaume_d'Aragon "Royaume d'Aragon") et les Siciliens[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86).
+### Tunisie ottomane
+Article détaillé: [Régence de Tunis](https://fr.wikipedia.org/wiki/R%C3%A9gence_de_Tunis "Régence de Tunis").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Gulf_and_Island_of_Djerba_by_Piri_Reis.jpg/250px-Gulf_and_Island_of_Djerba_by_Piri_Reis.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Gulf_and_Island_of_Djerba_by_Piri_Reis.jpg?uselang=fr)Carte maritime [ottomane](https://fr.wikipedia.org/wiki/Empire_ottoman "Empire ottoman") du XVIesiècle représentant la côte sud-est de la Tunisie dont Djerba. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Infanterie_tunisienne_1850.JPG/250px-Infanterie_tunisienne_1850.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Infanterie_tunisienne_1850.JPG?uselang=fr)Nouvelle armée beylicale vers 1840. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ceremony_of_declaration_of_Amen_1857.jpg/250px-Ceremony_of_declaration_of_Amen_1857.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Ceremony_of_declaration_of_Amen_1857.jpg?uselang=fr)Proclamation du [Pacte fondamental](https://fr.wikipedia.org/wiki/Pacte_fondamental_de_1857 "Pacte fondamental de 1857") en 1857, précurseur de la [Constitution de 1861](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1861 "Constitution tunisienne de 1861").
+Les Hafsides de Tunis s'essoufflent et perdent peu à peu, après la [bataille de Kairouan](https://fr.wikipedia.org/wiki/Bataille_de_Kairouan "Bataille de Kairouan") en 1348, le contrôle de leurs territoires au profit des [Mérinides](https://fr.wikipedia.org/wiki/Sultanat_m%C3%A9rinide "Sultanat mérinide") d'[Abu Inan Faris](https://fr.wikipedia.org/wiki/Abu_Inan_Faris "Abu Inan Faris")[[105]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-bonte115-107), alors que, frappée de plein fouet par la [peste](https://fr.wikipedia.org/wiki/Peste "Peste")[[107]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-109) de 1384, l'Ifriqiya continue de subir une désertification démographique amorcée par les invasions hilaliennes. C'est alors que commencent à arriver les [Maures](https://fr.wikipedia.org/wiki/Maures "Maures") musulmans et [juifs](https://fr.wikipedia.org/wiki/Histoire_des_Juifs_en_Tunisie "Histoire des Juifs en Tunisie") [andalous](https://fr.wikipedia.org/wiki/Al-Andalus "Al-Andalus")[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86) fuyant la déchéance du [royaume de Grenade](https://fr.wikipedia.org/wiki/Royaume_de_Grenade "Royaume de Grenade") en 1492 et occasionnant des problèmes d'assimilation. 
+#### Temps modernes
+En une dizaine d'années, les souverains espagnols [Ferdinand d'Aragon](https://fr.wikipedia.org/wiki/Ferdinand_le_Catholique "Ferdinand le Catholique") et [Isabelle de Castille](https://fr.wikipedia.org/wiki/Isabelle_la_Catholique "Isabelle la Catholique") prennent les cités de [Mers el-Kébir](https://fr.wikipedia.org/wiki/Mers_el-K%C3%A9bir "Mers el-Kébir"), [Oran](https://fr.wikipedia.org/wiki/Oran "Oran"), [Bougie](https://fr.wikipedia.org/wiki/B%C3%A9ja%C3%AFa "Béjaïa"), [Tripoli](https://fr.wikipedia.org/wiki/Tripoli_\(Libye\) "Tripoli \(Libye\)") et l'îlot situé en face d'[Alger](https://fr.wikipedia.org/wiki/Alger "Alger"). Pour s'en libérer, les autorités de la cité sollicitent l'aide de deux corsaires renommés, d'origine grecque: les frères [Arudj](https://fr.wikipedia.org/wiki/Arudj_Barberousse "Arudj Barberousse") et [Khayr ad-Din Barberousse](https://fr.wikipedia.org/wiki/Khayr_ad-Din_Barberousse "Khayr ad-Din Barberousse")[[108]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-110).
+La Tunisie offrant un environnement favorable, les frères Barberousse s'y illustrent: Arudj reçoit en effet du souverain hafside aux abois l'autorisation d'utiliser le port de [La Goulette](https://fr.wikipedia.org/wiki/La_Goulette "La Goulette") puis l'île de [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba") comme base. Après la mort d'Arudj, son frère Khayr ad-Din se place dans la [vassalité](https://fr.wikipedia.org/wiki/F%C3%A9odalit%C3%A9 "Féodalité") du sultan de Constantinople. Nommé grand [amiral](https://fr.wikipedia.org/wiki/Amiral "Amiral") de l'Empire ottoman, il s'empare de Tunis en 1534 mais doit se retirer après la [prise de la ville](https://fr.wikipedia.org/wiki/Conqu%C3%AAte_de_Tunis_\(1535\) "Conquête de Tunis \(1535\)") par l'armada que [Charles Quint](https://fr.wikipedia.org/wiki/Charles_Quint "Charles Quint") mène en 1535[[84]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade707-86),. En 1560, [Dragut](https://fr.wikipedia.org/wiki/Dragut "Dragut") parvient à Djerba et, en 1574, Tunis est reprise par les Ottomans[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94), qui font de la Tunisie une province de leur empire[[78]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encyclo360-80) en 1575. Pourtant, malgré leurs victoires, les Ottomans ne s'implantent guère en Tunisie.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Amen_1857_-_First_page.jpg/250px-Amen_1857_-_First_page.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Amen_1857_-_First_page.jpg?uselang=fr)Première page du Pacte fondamental de 1857.
+Au cours du XVIIesiècle, leur rôle ne cesse de décroître au profit des dirigeants locaux qui s'émancipent progressivement de la tutelle du sultan de Constantinople[[109]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-111) alors que seuls 4 000 [janissaires](https://fr.wikipedia.org/wiki/Janissaire "Janissaire") sont en poste à Tunis. Au bout de quelques années d'administration turque, plus précisément en 1590[[65]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-march238-67), ces [janissaires](https://fr.wikipedia.org/wiki/Janissaire "Janissaire") s'insurgent, plaçant à la tête de l'État un [dey](https://fr.wikipedia.org/wiki/Dey_de_Tunis "Dey de Tunis") et, sous ses ordres, un [bey](https://fr.wikipedia.org/wiki/Bey_\(titre\) "Bey \(titre\)")[[110]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-112) chargé du contrôle du territoire et de la collecte des impôts. Ce dernier ne tarde pas à devenir le personnage essentiel de la [régence](https://fr.wikipedia.org/wiki/R%C3%A9gence_de_Tunis "Régence de Tunis")[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94) aux côtés du [pacha](https://fr.wikipedia.org/wiki/Pacha_\(titre\) "Pacha \(titre\)"), qui reste confiné dans le rôle honorifique de représentant du [sultan ottoman](https://fr.wikipedia.org/wiki/Dynastie_ottomane "Dynastie ottomane"), au point qu'une dynastie beylicale finit par être fondée par [Mourad Bey](https://fr.wikipedia.org/wiki/Mourad_Bey_\(Tunisie\) "Mourad Bey \(Tunisie\)") en 1613[[111]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-113).
+Le 15 juillet 1705, [Hussein Ier Bey](https://fr.wikipedia.org/wiki/Hussein_Ier_Bey "Hussein Ier Bey") fonde la dynastie des [Husseinites](https://fr.wikipedia.org/wiki/Husseinites "Husseinites")[[106]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-borsbey-108),[[112]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-114). Le 13 mai 1752, Ali Metzan prend les armes contre son père, le vieux dey qu'il oblige à lui confier la direction de l'État[[113]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-115). Des troubles éclatent dans la population et des scènes de [pillages](https://fr.wikipedia.org/wiki/Pillage "Pillage") et de violences du [quartier juif de Tunis](https://fr.wikipedia.org/wiki/Hara_\(Tunis\) "Hara \(Tunis\)") ont lieu[[114]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-116).
+Quoique toujours officiellement province de l'Empire ottoman, la Tunisie acquiert une grande autonomie au XIXesiècle[[92]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout12-94), notamment avec [Ahmed Ier Bey](https://fr.wikipedia.org/wiki/Ahmed_Ier_Bey "Ahmed Ier Bey"), régnant de 1837 à 1855, qui enclenche un processus de modernisation[[115]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin54-117).
+Sous la pression franco-anglaise consécutive à l'[affaire Sfez](https://fr.wikipedia.org/wiki/Histoire_des_Juifs_en_Tunisie#Affaire_Sfez "Histoire des Juifs en Tunisie") de 1857, des réformes ottomanes des [Tanzimat](https://fr.wikipedia.org/wiki/Tanzimat "Tanzimat") interviennent sous la plume de [Mohammed Bey](https://fr.wikipedia.org/wiki/Mohammed_Bey "Mohammed Bey") qui promulgue le [Pacte fondamental](https://fr.wikipedia.org/wiki/Pacte_fondamental_de_1857 "Pacte fondamental de 1857") (_Ahd El Aman_) ou Pacte de sécurité le 10 septembre 1857, document qui s'inscrit dans l'héritage des idéaux de la [Révolution française](https://fr.wikipedia.org/wiki/R%C3%A9volution_fran%C3%A7aise "Révolution française") de [1789](https://fr.wikipedia.org/wiki/1789 "1789")[[116]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-sebag118-118),[[117]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:1-119).
+À cette époque, le pays vit de profondes réformes, comme l'[abolition de l'esclavage](https://fr.wikipedia.org/wiki/Esclavage_en_Tunisie "Esclavage en Tunisie") et faisant suite au Pacte fondamental, l'adoption en 1861 d'une véritable [Constitution](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1861 "Constitution tunisienne de 1861"), remise en 1860 par [Sadok Bey](https://fr.wikipedia.org/wiki/Sadok_Bey "Sadok Bey") à l'[empereur](https://fr.wikipedia.org/wiki/Liste_des_monarques_de_France "Liste des monarques de France") [Napoléon III](https://fr.wikipedia.org/wiki/Napol%C3%A9on_III "Napoléon III")[[117]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:1-119),[[115]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin54-117),[[118]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-120), et manque même de devenir une [république](https://fr.wikipedia.org/wiki/R%C3%A9publique "République") indépendante. Ces bouleversements s'inscrivent dans un contexte économique instable, et les musulmans s'en prennent physiquement à leurs voisins juifs accusés de profiter des réformes, à leurs biens et aux synagogues, jusqu'en [1869](https://fr.wikipedia.org/wiki/1869 "1869") où plusieurs sont tués[[119]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-121).
+#### Influence architecturale
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Salle_de_pri%C3%A9re_Mhamed_Bey.png/250px-Salle_de_pri%C3%A9re_Mhamed_Bey.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Salle_de_pri%C3%A9re_Mhamed_Bey.png?uselang=fr)Intérieur de la mosquée Sidi Mahrez.
+Il est difficile de mesurer l'importance des influences turques qui demeurent en Tunisie. Quelques monuments affichent leur filiation ottomane à l'instar de la [mosquée Sidi Mahrez](https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Sidi_Mahrez "Mosquée Sidi Mahrez") à Tunis, édifiée entre 1692 et 1697[[120]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-122). Dans un autre domaine, l'art des [tapis](https://fr.wikipedia.org/wiki/Tapis "Tapis"), qui existait pour certains avant l'arrivée des Ottomans, voit les productions de Kairouan présenter au XVIIIesiècle des motifs purement [anatoliens](https://fr.wikipedia.org/wiki/Anatolie "Anatolie").
+L'influence italienne dans l'architecture tunisienne est soulignée et met en regard l'histoire des [communautés italiennes](https://fr.wikipedia.org/wiki/Italo-Tunisiens "Italo-Tunisiens") et le patrimoine bâti de la région[[121]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-123). Une étude historique sur les palais et demeures tunisoises des XVIIIesiècle et XIXesiècle siècles mentionne notamment des éléments d'inspiration italienne dans certains détails architecturaux[[122]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-124).
+### Époque contemporaine
+#### Protectorat français et lutte nationaliste
+Article détaillé: [Protectorat français de Tunisie](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie").
+Article connexe: [Mouvement national tunisien](https://fr.wikipedia.org/wiki/Mouvement_national_tunisien "Mouvement national tunisien").
+Le pays connaît toutefois peu à peu de graves difficultés financières[[115]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin54-117), en raison de la politique ruineuse des [beys](https://fr.wikipedia.org/wiki/Bey_de_Tunis "Bey de Tunis"), de la hausse des impôts[[106]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-borsbey-108) et d'interférences étrangères dans l'économie. Tous ces facteurs contraignent le gouvernement à déclarer la banqueroute en 1869 et à créer une commission financière internationale anglo-franco-italienne[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125). La régence apparaît vite comme un enjeu stratégique de première importance du fait de la situation géographique du pays, à la charnière des bassins occidental et oriental de la Méditerranée. La Tunisie fait donc l'objet des convoitises rivales de la France et de l'Italie. Les [consuls](https://fr.wikipedia.org/wiki/Consulat_\(diplomatie\) "Consulat \(diplomatie\)") français et italien tentent de profiter des difficultés financières du bey, la France comptant sur la neutralité de l'Angleterre (peu désireuse de voir l'Italie prendre le contrôle de la route du [canal de Suez](https://fr.wikipedia.org/wiki/Canal_de_Suez "Canal de Suez")) et bénéficiant des calculs de [Bismarck](https://fr.wikipedia.org/wiki/Otto_von_Bismarck "Otto von Bismarck"), qui souhaite la détourner de la question de l'[Alsace-Lorraine](https://fr.wikipedia.org/wiki/Alsace-Lorraine "Alsace-Lorraine").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Trait%C3%A9_du_Bardo.jpg/250px-Trait%C3%A9_du_Bardo.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Trait%C3%A9_du_Bardo.jpg?uselang=fr)Signature du traité du Bardo au [palais de Ksar Saïd](https://fr.wikipedia.org/wiki/Palais_de_Ksar_Sa%C3%AFd "Palais de Ksar Saïd") le 12 mai 1881.
+Les combats entre tribus algériennes et tribus [khroumirs](https://fr.wikipedia.org/wiki/Kroumirie "Kroumirie") en territoire algérien fournissent un prétexte à [Jules Ferry](https://fr.wikipedia.org/wiki/Jules_Ferry "Jules Ferry") pour souligner la nécessité de s'emparer de la Tunisie. En avril 1881, les troupes françaises y pénètrent sans résistance majeure et parviennent aux [abords de Tunis](https://fr.wikipedia.org/wiki/Conqu%C3%AAte_de_la_Tunisie_par_la_France "Conquête de la Tunisie par la France")[[115]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin54-117) en trois semaines, sans combattre[[124]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-126). Le 12 mai 1881, le [protectorat](https://fr.wikipedia.org/wiki/Protectorat "Protectorat") est officialisé lorsque [Sadok Bey](https://fr.wikipedia.org/wiki/Sadok_Bey "Sadok Bey"), menacé d'être destitué et remplacé par son frère Taïeb Bey[[125]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-127),[[126]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-128), signe le [traité du Bardo](https://fr.wikipedia.org/wiki/Trait%C3%A9_du_Bardo "Traité du Bardo")[[127]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-129) au [palais de Ksar Saïd](https://fr.wikipedia.org/wiki/Palais_de_Ksar_Sa%C3%AFd "Palais de Ksar Saïd")[[128]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-130). Ceci n'empêche pas les troupes françaises de faire face, quelques mois plus tard, à des révoltes rapidement étouffées dans les régions de [Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan") et [Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax"). Le régime du protectorat est renforcé par les [conventions de La Marsa](https://fr.wikipedia.org/wiki/Conventions_de_La_Marsa "Conventions de La Marsa") du 8 juin 1883 qui accordent à la France le droit d'intervenir dans les affaires internes de la Tunisie[[129]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin56-131),[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132). La France représente dès lors la Tunisie sur la scène internationale, et ne tarde pas à abuser de ses droits et prérogatives de protecteur pour exploiter le pays comme une [colonie](https://fr.wikipedia.org/wiki/Empire_colonial_fran%C3%A7ais "Empire colonial français"), en contraignant le bey à abandonner la quasi-totalité de ses pouvoirs au [résident général](https://fr.wikipedia.org/wiki/R%C3%A9sident_g%C3%A9n%C3%A9ral_de_France_en_Tunisie "Résident général de France en Tunisie")[[131]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred13-133). Néanmoins, des progrès économiques ont lieu, notamment via les banques et les compagnies[[129]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin56-131), ainsi que le développement de nombreuses infrastructures (routes, ports, chemins de fer, barrages, écoles,etc.).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Zaouche_affaire_djellaz.jpg/250px-Zaouche_affaire_djellaz.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Zaouche_affaire_djellaz.jpg?uselang=fr)Procès de l'[affaire du Djellaz](https://fr.wikipedia.org/wiki/Affaire_du_Djellaz "Affaire du Djellaz") en 1911.
+La colonisation permet l'expansion des cultures de céréales et de la production d'[huile d'olive](https://fr.wikipedia.org/wiki/Huile_d'olive "Huile d'olive") ainsi que l'exploitation des mines de [phosphates](https://fr.wikipedia.org/wiki/Phosphate "Phosphate")[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125) par la [Compagnie des phosphates et des chemins de fer de Gafsa](https://fr.wikipedia.org/wiki/Compagnie_des_phosphates_et_des_chemins_de_fer_de_Gafsa "Compagnie des phosphates et des chemins de fer de Gafsa"), ainsi que de [fer](https://fr.wikipedia.org/wiki/Fer "Fer") par la [Société du Djebel Djerissa](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_du_Djebel_Djerissa "Société du Djebel Djerissa"), [première entreprise tunisienne et quinzième française](https://fr.wikipedia.org/wiki/Histoire_des_bourses_de_valeurs#Alexandrie,_Bruxelles,_Sa%C3%AFgon,_Paris,_l'apog%C3%A9e_du_colonialisme_minier "Histoire des bourses de valeurs")[[132]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-134). Un important port militaire est aménagé à [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte"). De plus, les Français établissent un système bilingue arabe et français qui permet à l'élite tunisienne de se former dans les deux langues[[133]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-135). La lutte contre l'occupation française commence dès le début du XXesiècle avec le mouvement réformiste et intellectuel des [Jeunes Tunisiens](https://fr.wikipedia.org/wiki/Jeunes_Tunisiens "Jeunes Tunisiens") fondé en 1907[[134]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin57-136) par [Béchir Sfar](https://fr.wikipedia.org/wiki/B%C3%A9chir_Sfar "Béchir Sfar"), [Ali Bach Hamba](https://fr.wikipedia.org/wiki/Ali_Bach_Hamba "Ali Bach Hamba") et [Abdeljelil Zaouche](https://fr.wikipedia.org/wiki/Abdeljelil_Zaouche "Abdeljelil Zaouche"). Ce courant nationaliste se manifeste par l'[affaire du Djellaz](https://fr.wikipedia.org/wiki/Affaire_du_Djellaz "Affaire du Djellaz") en 1911 et le [boycott des tramways tunisois](https://fr.wikipedia.org/wiki/Boycott_des_tramways_tunisois "Boycott des tramways tunisois") en 1912[[131]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred13-133). De 1914 à 1921, le pays vit en état d'urgence et la presse anticolonialiste est interdite[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56). Malgré tout, le mouvement national ne cesse pas d'exister[[131]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred13-133). Dès la fin de la [Première Guerre mondiale](https://fr.wikipedia.org/wiki/Premi%C3%A8re_Guerre_mondiale "Première Guerre mondiale"), une nouvelle génération organisée autour d'[Abdelaziz Thâalbi](https://fr.wikipedia.org/wiki/Abdelaziz_Th%C3%A2albi "Abdelaziz Thâalbi") prépare la naissance du parti du [Destour](https://fr.wikipedia.org/wiki/Destour "Destour")[[131]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred13-133).
+Entré en conflit avec le régime du protectorat[[135]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred14-137), le parti expose, dès la proclamation officielle de sa création le 4 juin 1920[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132), un programme en huit points. Après avoir fustigé le régime du protectorat dans des journaux comme _La Voix du Tunisien_ et _L'Étendard tunisien_[[136]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-138), l'avocat [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") fonde en 1932, avec [Tahar Sfar](https://fr.wikipedia.org/wiki/Tahar_Sfar "Tahar Sfar"), [Mahmoud El Materi](https://fr.wikipedia.org/wiki/Mahmoud_El_Materi "Mahmoud El Materi") et [Bahri Guiga](https://fr.wikipedia.org/wiki/Bahri_Guiga "Bahri Guiga"), le journal _[L'Action tunisienne](https://fr.wikipedia.org/wiki/L'Action_tunisienne "L'Action tunisienne")_[[137]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-labidi-139), qui, outre l'indépendance, prône la [laïcité](https://fr.wikipedia.org/wiki/La%C3%AFcit%C3%A9 "Laïcité")[[138]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard165-140). Cette position originale conduit le 2 mars 1934[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132), lors du [congrès de Ksar Hellal](https://fr.wikipedia.org/wiki/Congr%C3%A8s_de_Ksar_Hellal "Congrès de Ksar Hellal")[[135]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-fred14-137), à la scission du parti en deux branches, l'une islamisante qui conserve le nom _Destour_ , et l'autre moderniste et laïque, le [Néo-Destour](https://fr.wikipedia.org/wiki/N%C3%A9o-Destour "Néo-Destour")[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125), une formation politique moderne, structurée sur les modèles des partis socialistes et communistes européens, et déterminée à conquérir le pouvoir pour transformer la société[[137]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-labidi-139).
+Après l'échec des négociations engagées par le [gouvernement Blum](https://fr.wikipedia.org/wiki/Gouvernement_Blum_I "Gouvernement Blum I"), des incidents sanglants éclatent en 1937[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125) et les [émeutes d'avril 1938](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_du_9_avril_1938 "Événements du 9 avril 1938") sont sévèrement réprimées[[138]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard165-140). Cette répression conduit à la clandestinité du Néo-Destour, qui incite les nouveaux dirigeants à ne pas exclure l'éventualité d'une lutte plus active[[139]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin60-141),[[140]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chater-142). En 1942, le [régime de Vichy](https://fr.wikipedia.org/wiki/R%C3%A9gime_de_Vichy "Régime de Vichy") livre [Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") à l'[Italie](https://fr.wikipedia.org/wiki/Royaume_d'Italie_\(1861-1946\) "Royaume d'Italie \(1861-1946\)"), à la demande de [Benito Mussolini](https://fr.wikipedia.org/wiki/Benito_Mussolini "Benito Mussolini"), qui espère l'utiliser pour affaiblir la [Résistance française](https://fr.wikipedia.org/wiki/Histoire_de_l'empire_colonial_fran%C3%A7ais_pendant_la_Seconde_Guerre_mondiale "Histoire de l'empire colonial français pendant la Seconde Guerre mondiale") en [Afrique du Nord](https://fr.wikipedia.org/wiki/Afrique_fran%C3%A7aise_du_Nord "Afrique française du Nord")[[138]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard165-140). Cependant Bourguiba ne désire pas cautionner les [régimes fascistes](https://fr.wikipedia.org/wiki/Fascisme "Fascisme") et lance le 8 août 1942 un appel pour le soutien aux [troupes alliées](https://fr.wikipedia.org/wiki/Alli%C3%A9s_de_la_Seconde_Guerre_mondiale "Alliés de la Seconde Guerre mondiale")[[138]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard165-140). Pendant ce temps, la Tunisie est le théâtre d'importantes opérations militaires[[134]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin57-136) connues sous le nom de [campagne de Tunisie](https://fr.wikipedia.org/wiki/Campagne_de_Tunisie "Campagne de Tunisie")[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125) Après plusieurs mois de combats et une contre-offensive blindée allemande dans la région de [Kasserine](https://fr.wikipedia.org/wiki/Bataille_de_Kasserine "Bataille de Kasserine") et [Sidi Bouzid](https://fr.wikipedia.org/wiki/Bataille_de_Sidi_Bouzid "Bataille de Sidi Bouzid") au début de l'année 1943, les troupes du [Troisième Reich](https://fr.wikipedia.org/wiki/Troisi%C3%A8me_Reich "Troisième Reich") sont contraintes de capituler le 11 mai dans le [cap Bon](https://fr.wikipedia.org/wiki/Cap_Bon "Cap Bon"), quatre jours après l'arrivée des forces alliées à [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis")[[141]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-143). Après la [Seconde Guerre mondiale](https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale "Seconde Guerre mondiale"), les dirigeants nationalistes inscrivent la résistance armée dans la stratégie de libération nationale[[140]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chater-142). Des pourparlers sont menés après la guerre avec le gouvernement français[[139]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin60-141), si bien que [Robert Schuman](https://fr.wikipedia.org/wiki/Robert_Schuman "Robert Schuman") évoque en 1950 la possibilité de l'indépendance de la Tunisie en plusieurs étapes[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132). Mais le [gouvernement français](https://fr.wikipedia.org/wiki/Gouvernement_Pleven_II "Gouvernement Pleven II") met fin aux négociations avec le [gouvernement tunisien](https://fr.wikipedia.org/wiki/Gouvernement_Chenik_II "Gouvernement Chenik II") par la [note du 15 décembre 1951](https://fr.wikisource.org/wiki/Note%20du%2015%20d%C3%A9cembre%201951 "s:Note du 15 décembre 1951") affirmant le «caractère définitif du lien qui unit la France à la Tunisie»[[142]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-144).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bourguiba_Bizerte.jpg/250px-Bourguiba_Bizerte.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Bourguiba_Bizerte.jpg?uselang=fr)Habib Bourguiba à Bizerte en 1952. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruines_Tazarka.jpg/250px-Ruines_Tazarka.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Ruines_Tazarka.jpg?uselang=fr)Ruines à la suite d'une attaque sur [Tazarka](https://fr.wikipedia.org/wiki/Tazarka "Tazarka").
+Bourguiba demande à Chenik de porter le différend franco-tunisien devant l'[ONU](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") afin d'internationaliser le problème[[143]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-145). La requête est signée le 11 janvier 1952[[144]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-146) et, le 13, [Salah Ben Youssef](https://fr.wikipedia.org/wiki/Salah_Ben_Youssef "Salah Ben Youssef") et Hamadi Badra quittent Tunis pour Paris, où ils comptent enregistrer la plainte[[145]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-147). Cependant, le 17, le gouvernement français déclare qu'elle ne peut être examinée par le [Conseil de sécurité](https://fr.wikipedia.org/wiki/Conseil_de_s%C3%A9curit%C3%A9_des_Nations_unies "Conseil de sécurité des Nations unies") puisque «la note est signée par des Tunisiens qui n'ont pas le droit de le faire sans l'accord du Bey, seul dépositaire de la souveraineté tunisienne. La France a la charge des Affaires étrangères de la Tunisie; ce document aurait dû être remis au Résident qui est seul habilité à le transmettre».
+Avec l'arrivée du nouveau résident général, [Jean de Hauteclocque](https://fr.wikipedia.org/wiki/Jean_de_Hauteclocque "Jean de Hauteclocque"), le 13 janvier 1952, et l'arrestation, le 18, de 150 destouriens dont Bourguiba, débutent la révolte armée[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125), la répression militaire française[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132) et un durcissement des positions de chaque camp[[146]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin61-148). Le 26 mars, devant le refus catégorique de Lamine Bey de congédier le gouvernement qui avait porté cette plainte à l'ONU, de Hauteclocque fait arrêter Chenik, El Materi, [Mohamed Salah Mzali](https://fr.wikipedia.org/wiki/Mohamed_Salah_Mzali "Mohamed Salah Mzali") et [Mohamed Ben Salem](https://fr.wikipedia.org/wiki/Mohamed_Ben_Salem_\(1915-2001\) "Mohamed Ben Salem \(1915-2001\)"), placés en résidence forcée à [Kébili](https://fr.wikipedia.org/wiki/K%C3%A9bili "Kébili") dans le Sud du pays[[147]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-149) pendant que Bourguiba est transféré à [Remada](https://fr.wikipedia.org/wiki/Remada "Remada")[[148]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-150); c'est le [coup de force du 26 mars](https://fr.wikipedia.org/wiki/Coup_de_force_du_26_mars_1952_en_Tunisie "Coup de force du 26 mars 1952 en Tunisie").
+Le 5 décembre a lieu l'assassinat du syndicaliste [Farhat Hached](https://fr.wikipedia.org/wiki/Farhat_Hached "Farhat Hached") par l'organisation colonialiste extrémiste de la [Main rouge](https://fr.wikipedia.org/wiki/La_Main_rouge_\(groupe_arm%C3%A9\) "La Main rouge \(groupe armé\)")[[149]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-151),[[150]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard166-152), qui déclenche grèves et manifestations, puis leur répression et des émeutes, grèves, tentatives de sabotage et jets de bombes artisanales[[140]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chater-142).
+Le développement de la répression, accompagnée de l'apparition du [contre-terrorisme](https://fr.wikipedia.org/wiki/Antiterrorisme "Antiterrorisme"), incite les nationalistes à prendre plus spécifiquement pour cibles les colons, les fermes, les entreprises françaises et les structures gouvernementales[[140]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chater-142). C'est pourquoi les années 1953 et 1954 sont marquées par la multiplication des attaques contre le système colonial.
+En réponse, près de 70 000 soldats français sont mobilisés pour arrêter les guérillas des groupes tunisiens dans les campagnes[[151]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-camgeihab229-153). Cette situation difficile est apaisée par la reconnaissance de l'autonomie interne de la Tunisie, concédée par [Pierre Mendès France](https://fr.wikipedia.org/wiki/Pierre_Mend%C3%A8s_France "Pierre Mendès France") dans son [discours de Carthage](https://fr.wikipedia.org/wiki/Discours_de_Carthage "Discours de Carthage") le 31 juillet 1954[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132),[[152]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-154). C'est finalement le 3 juin 1955[[151]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-camgeihab229-153) que les conventions franco-tunisiennes sont signées entre le [Premier ministre tunisien](https://fr.wikipedia.org/wiki/Chef_du_gouvernement_tunisien "Chef du gouvernement tunisien") [Tahar Ben Ammar](https://fr.wikipedia.org/wiki/Tahar_Ben_Ammar "Tahar Ben Ammar") et son homologue français [Edgar Faure](https://fr.wikipedia.org/wiki/Edgar_Faure "Edgar Faure")[[150]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard166-152). En dépit de l'opposition de [Salah Ben Youssef](https://fr.wikipedia.org/wiki/Salah_Ben_Youssef "Salah Ben Youssef"), qui est exclu du parti[[78]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encyclo360-80), les conventions sont approuvées par le congrès du Néo-Destour tenu à [Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax") le 15 novembre de la même année[[146]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin61-148). Après de nouvelles négociations, la France finit par reconnaître «solennellement l'indépendance de la Tunisie»[[146]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin61-148) le 20 mars 1956, tout en conservant la base militaire de [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte").
+#### Tunisie indépendante
+Article détaillé: [Histoire de la Tunisie depuis 1956](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie_depuis_1956 "Histoire de la Tunisie depuis 1956").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bourguiba_photo_officielle.jpg/250px-Bourguiba_photo_officielle.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Bourguiba_photo_officielle.jpg?uselang=fr)Photo officielle de Habib Bourguiba.
+Le 25 mars 1956[[106]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-borsbey-108), l'[Assemblée constituante](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_nationale_constituante_tunisienne_de_1956 "Assemblée nationale constituante tunisienne de 1956") est élue: le [Néo-Destour](https://fr.wikipedia.org/wiki/N%C3%A9o-Destour "Néo-Destour") en remporte tous les sièges et [Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") est porté à sa tête le 8 avril[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56),[[134]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin57-136) de la même année. Le 11 avril 1956, il devient le Premier ministre de [Lamine Bey](https://fr.wikipedia.org/wiki/Lamine_Bey "Lamine Bey")[[150]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard166-152). Le [Code du statut personnel](https://fr.wikipedia.org/wiki/Code_du_statut_personnel_\(Tunisie\) "Code du statut personnel \(Tunisie\)"), à tendance progressiste, est proclamé le 13 août[[153]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-155).
+Finalement, le 25 juillet 1957, la monarchie est abolie; la Tunisie devient une [république](https://fr.wikipedia.org/wiki/R%C3%A9publique "République")[[154]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-156) dont Bourguiba est élu président[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157) le 8 novembre 1959[[156]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard167-158).
+Le 8 février 1958, en pleine [guerre d'Algérie](https://fr.wikipedia.org/wiki/Guerre_d'Alg%C3%A9rie "Guerre d'Algérie"), des avions de l'[armée française](https://fr.wikipedia.org/wiki/Forces_arm%C3%A9es_fran%C3%A7aises "Forces armées françaises") franchissent la [frontière algéro-tunisienne](https://fr.wikipedia.org/wiki/Fronti%C3%A8re_entre_l'Alg%C3%A9rie_et_la_Tunisie "Frontière entre l'Algérie et la Tunisie") et [bombardent](https://fr.wikipedia.org/wiki/Bombardement_de_Sakiet_Sidi_Youssef "Bombardement de Sakiet Sidi Youssef") le village tunisien de [Sakiet Sidi Youssef](https://fr.wikipedia.org/wiki/Sakiet_Sidi_Youssef "Sakiet Sidi Youssef")[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56). En 1961, dans un contexte d'achèvement prévisible de la guerre, la Tunisie revendique la rétrocession de la base de Bizerte[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/BourguibaEntoureeSesMinistres.jpg/250px-BourguibaEntoureeSesMinistres.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:BourguibaEntoureeSesMinistres.jpg?uselang=fr)Bourguiba entouré de ses ministres. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bourguiba_kennedy.jpg/250px-Bourguiba_kennedy.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Bourguiba_kennedy.jpg?uselang=fr)Bourguiba et [John Fitzgerald Kennedy](https://fr.wikipedia.org/wiki/John_Fitzgerald_Kennedy "John Fitzgerald Kennedy") en mai 1961. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ben_Ali%2C_Bush%2C_February_18%2C_2004.jpg/250px-Ben_Ali%2C_Bush%2C_February_18%2C_2004.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Ben_Ali,_Bush,_February_18,_2004.jpg?uselang=fr)Ben Ali et [George W. Bush](https://fr.wikipedia.org/wiki/George_W._Bush "George W. Bush") le 18 février 2004.
+La [crise](https://fr.wikipedia.org/wiki/Crise_de_Bizerte "Crise de Bizerte") qui suit fait près d'un millier de morts, essentiellement tunisiens[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132), et, devant la crainte d'une flambée de violence contre leur communauté, pousse 4 500 Juifs à quitter le pays en 1962[[157]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-sebag297-159),[[158]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-160).
+Politiquement, la France finit, le 15 octobre 1963, par rétrocéder la base à l'État tunisien[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157). Avec l'assassinat de [Salah Ben Youssef](https://fr.wikipedia.org/wiki/Salah_Ben_Youssef "Salah Ben Youssef"), principal opposant de Bourguiba depuis 1955[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157), à [Francfort](https://fr.wikipedia.org/wiki/Francfort-sur-le-Main "Francfort-sur-le-Main") et l'interdiction du [Parti communiste](https://fr.wikipedia.org/wiki/Mouvement_Ettajdid "Mouvement Ettajdid") (PCT) le 8 janvier 1963, la République tunisienne devient un régime de [parti unique](https://fr.wikipedia.org/wiki/Parti_unique "Parti unique") dirigé par le [Néo-Destour](https://fr.wikipedia.org/wiki/N%C3%A9o-Destour "Néo-Destour")[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157). En mars 1963, [Ahmed Ben Salah](https://fr.wikipedia.org/wiki/Ahmed_Ben_Salah "Ahmed Ben Salah") entame une politique «socialiste» d'étatisation pratiquement totale de l'[économie](https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Tunisie "Économie de la Tunisie").
+Lors de la [guerre des Six Jours](https://fr.wikipedia.org/wiki/Guerre_des_Six_Jours "Guerre des Six Jours"), en juin 1967, des [milliers d'émeutiers](https://fr.wikipedia.org/wiki/%C3%89meutes_de_1967_en_Tunisie "Émeutes de 1967 en Tunisie") détruisent les magasins juifs et incendient la [Grande synagogue de Tunis](https://fr.wikipedia.org/wiki/Grande_synagogue_de_Tunis "Grande synagogue de Tunis") et ses [livres sacrés](https://fr.wikipedia.org/wiki/Sefer_Torah "Sefer Torah")[[159]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lasserre1252-161),[[157]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-sebag297-159), ce qui pousse près de 10 000 Juifs tunisiens à quitter le pays[[160]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-jvl-162),[[161]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-kefi2-163).
+Des émeutes contre la collectivisation des terres dans le [Sahel tunisien](https://fr.wikipedia.org/wiki/Sahel_tunisien "Sahel tunisien") le 26 janvier 1969 poussent au limogeage de Ben Salah le 8 septembre avec la fin de l'expérience socialiste[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157). Le taux de croissance annuel du PIB passe cependant de 3,6% pour les années 1950 à 5,7% pour les [années 1960](https://fr.wikipedia.org/wiki/Ann%C3%A9es_1960 "Années 1960"), et la croissance par tête à 2,9% contre 1,2% pour les années 1950[[162]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-164). Avec une économie affaiblie par cet épisode et un [panarabisme](https://fr.wikipedia.org/wiki/Panarabisme "Panarabisme") défendu par [Mouammar Kadhafi](https://fr.wikipedia.org/wiki/Mouammar_Kadhafi "Mouammar Kadhafi"), un projet politique qui unifierait la Tunisie et la [République arabe libyenne](https://fr.wikipedia.org/wiki/Jamahiriya_arabe_libyenne "Jamahiriya arabe libyenne") sous le nom de [République arabe islamique](https://fr.wikipedia.org/wiki/Projet_d'union_entre_la_Tunisie_et_la_Libye "Projet d'union entre la Tunisie et la Libye") est lancé en 1974 mais échoue très rapidement en raison des tensions tant nationales qu'internationales.
+Après la condamnation à une lourde peine de prison de Ben Salah, rendu responsable de l'échec de la politique des [coopératives](https://fr.wikipedia.org/wiki/Coop%C3%A9rative "Coopérative"), viennent l'épuration de l'aile libérale du PSD animée par [Ahmed Mestiri](https://fr.wikipedia.org/wiki/Ahmed_Mestiri "Ahmed Mestiri") puis la proclamation de Bourguiba comme président à vie en 1975[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56). C'est dans ces conditions, marquées par un léger desserrement de l'étau du PSD sous le gouvernement d'[Hédi Nouira](https://fr.wikipedia.org/wiki/H%C3%A9di_Nouira "Hédi Nouira"), que l'[Union générale tunisienne du travail](https://fr.wikipedia.org/wiki/Union_g%C3%A9n%C3%A9rale_tunisienne_du_travail "Union générale tunisienne du travail") (UGTT) gagne en autonomie tandis que naît en 1976 la [Ligue tunisienne des droits de l'homme](https://fr.wikipedia.org/wiki/Ligue_tunisienne_des_droits_de_l'homme "Ligue tunisienne des droits de l'homme"), première organisation nationale des droits de l'homme en Afrique et dans le monde arabe[[163]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-165),[[164]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-166). Le coup de force du «[Jeudi noir](https://fr.wikipedia.org/wiki/Jeudi_noir_\(1978\) "Jeudi noir \(1978\)")» contre l'UGTT en janvier 1978 puis l'[attaque](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_de_Gafsa_\(1980\) "Événements de Gafsa \(1980\)") contre la ville minière de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa"), en janvier 1980, ne suffisent pas à museler la société civile émergente.
+Dès le début des années 1980, le pays traverse une crise politique et sociale[[165]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard169-167) où se conjuguent le développement du [clientélisme](https://fr.wikipedia.org/wiki/Client%C3%A9lisme "Clientélisme") et de la [corruption](https://fr.wikipedia.org/wiki/Corruption_en_Tunisie "Corruption en Tunisie"), la paralysie de l'État devant la dégradation de la santé de Bourguiba, les luttes de succession et le durcissement du régime. En 1981, la restauration partielle du pluralisme politique, avec la levée de l'interdiction frappant le Parti communiste, suscite des espoirs qui seront déçus par la falsification des résultats aux élections législatives de novembre. Par la suite, la répression sanglante des «[émeutes du pain](https://fr.wikipedia.org/wiki/%C3%89meutes_du_pain "Émeutes du pain")» de décembre 1983[[165]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard169-167), la nouvelle déstabilisation de l'UGTT et l'arrestation de son dirigeant [Habib Achour](https://fr.wikipedia.org/wiki/Habib_Achour "Habib Achour") contribuent à accélérer la chute du président vieillissant[[137]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-labidi-139). La situation favorise la montée de l'[islamisme](https://fr.wikipedia.org/wiki/Islamisme "Islamisme")[[150]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard166-152) et le long règne de Bourguiba s'achève dans une lutte contre cette mouvance politique, lutte menée par [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), nommé ministre de l'Intérieur puis Premier ministre en octobre 1987[[155]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lacjardin74-157).
+Durant ces années 1980, plusieurs incidents visent la communauté juive ou ses synagogues comme durant le [Yom Kippour](https://fr.wikipedia.org/wiki/Yom_Kippour "Yom Kippour") 1982 dans plusieurs villes du pays[[166]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-gottesman-168), en octobre 1983 à [Zarzis](https://fr.wikipedia.org/wiki/Synagogue_de_Zarzis "Synagogue de Zarzis")[[166]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-gottesman-168), en octobre 1985 à la [Ghriba](https://fr.wikipedia.org/wiki/Synagogue_de_la_Ghriba_\(Djerba\) "Synagogue de la Ghriba \(Djerba\)") dans le sillage de l'[opération _Jambe de bois_](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Jambe_de_bois "Opération Jambe de bois")[[160]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-jvl-162),[[167]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-169), qui font prendre des mesures au gouvernement pour assurer sa protection[[168]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-170),[[169]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-171).
+Le 7 novembre 1987, Ben Ali dépose le président pour [sénilité](https://fr.wikipedia.org/wiki/D%C3%A9mence "Démence"), un [coup d'État médical](https://fr.wikipedia.org/wiki/Coup_d'%C3%89tat_de_1987_en_Tunisie "Coup d'État de 1987 en Tunisie") accueilli favorablement par une large fraction du monde politique[[165]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard169-167). Élu le 2 avril 1989 avec 99,27% des voix[[170]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-gharbi-172), le nouveau président réussit à relancer l'économie alors que, sur le plan de la sécurité, le régime s'enorgueillit d'avoir épargné au pays les convulsions islamistes qui ensanglantent l'Algérie voisine, grâce à la neutralisation du parti [Ennahdha](https://fr.wikipedia.org/wiki/Ennahdha "Ennahdha") au prix de l'arrestation de dizaines de milliers de militants et de multiples procès au début des années 1990[[137]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-labidi-139). Les opposants laïcs signent quant à eux le Pacte national en 1988, plate-forme destinée à la démocratisation du régime. Pourtant, l'[opposition](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali#Oppositions "Zine el-Abidine Ben Ali") et de nombreuses [ONG](https://fr.wikipedia.org/wiki/Organisation_non_gouvernementale "Organisation non gouvernementale") de défense des [droits de l'homme](https://fr.wikipedia.org/wiki/Droits_de_l'homme "Droits de l'homme") accusent peu à peu le régime d'attenter aux libertés publiques[[123]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-nomade708-125) en étendant la répression au-delà du mouvement islamiste. En 1994, le président Ben Ali est réélu avec 99,91% des voix[[171]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-173),[[172]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-camaugeisser241-174).
+L'année suivante, un accord de libre-échange est signé avec l'[Union européenne](https://fr.wikipedia.org/wiki/Union_europ%C3%A9enne "Union européenne")[[130]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quitout13-132). Les [élections](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_tunisienne_de_1999 "Élection présidentielle tunisienne de 1999") du 24 novembre 1999, bien qu'elles soient les premières présidentielles à être pluralistes avec trois candidats, voient le président Ben Ali réélu avec un score comparable aux scrutins précédents[[170]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-gharbi-172),[[172]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-camaugeisser241-174). La réforme de la [Constitution](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1959 "Constitution tunisienne de 1959") approuvée par le [référendum du 26 mai 2002](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_constitutionnel_tunisien_de_2002 "Référendum constitutionnel tunisien de 2002") accroît encore les pouvoirs du président, repousse l'âge limite des candidats, supprime la limite des trois mandats réintroduite en 1988 et permet au président de briguer de nouveaux mandats au-delà de l'échéance de 2004 tout en bénéficiant d'une immunité judiciaire à vie[[137]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-labidi-139).
+Le 11 avril 2002, un attentat au camion piégé vise à nouveau la [synagogue de la Ghriba](https://fr.wikipedia.org/wiki/Synagogue_de_la_Ghriba_\(Djerba\) "Synagogue de la Ghriba \(Djerba\)") et provoque la mort de 19 personnes dont quatorze touristes [allemands](https://fr.wikipedia.org/wiki/Allemagne "Allemagne"). Durant le premier semestre 2008, de [graves troubles](https://fr.wikipedia.org/wiki/Gr%C3%A8ves_de_Gafsa "Grèves de Gafsa") secouent la région minière de [Gafsa](https://fr.wikipedia.org/wiki/Gouvernorat_de_Gafsa "Gouvernorat de Gafsa") durement frappée par le [chômage](https://fr.wikipedia.org/wiki/Ch%C3%B4mage "Chômage") et la [pauvreté](https://fr.wikipedia.org/wiki/Pauvret%C3%A9 "Pauvreté")[[173]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-175). Le 25 octobre 2009, le président Ben Ali est réélu pour un cinquième mandat consécutif avec 89,62% des voix, passant pour la première fois sous la barre des 90%. La campagne est marquée par une visibilité accrue de son épouse [Leïla](https://fr.wikipedia.org/wiki/Le%C3%AFla_Ben_Ali "Leïla Ben Ali")[[174]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-176). L'un des gendres du couple, [Mohamed Sakhr El Materi](https://fr.wikipedia.org/wiki/Mohamed_Sakhr_El_Materi "Mohamed Sakhr El Materi"), est élu député à cette occasion[[175]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-business2610-177).
+#### Tunisie post-révolution
+Article connexe: [Révolution tunisienne](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne").
+Le 17 décembre 2010, un climat insurrectionnel éclate à la suite de l'immolation d'un jeune vendeur de fruits et légumes ambulant, [Mohamed Bouazizi](https://fr.wikipedia.org/wiki/Mohamed_Bouazizi "Mohamed Bouazizi"), dans la région de [Sidi Bouzid](https://fr.wikipedia.org/wiki/Sidi_Bouzid_\(Tunisie\) "Sidi Bouzid \(Tunisie\)"); celle-ci devient le théâtre d'émeutes et d'affrontements meurtriers entre habitants et forces de l'ordre[[176]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-178). C'est le début du mouvement que l'on va appeler [Printemps arabe](https://fr.wikipedia.org/wiki/Printemps_arabe "Printemps arabe").
+[](https://fr.wikipedia.org/wiki/Fichier:Moment_historique_de_la_R%C3%A9volution_Tunisienne_devant_le_Minist%C3%A8re_de_l'Int%C3%A9rieur_\(DEGAGE\)_-_Avenue_Habib_Bourguiba_-_Tunis_-_14.01.2011.ogv)Manifestation du 14 janvier 2011 à Tunis.
+Ces événements, qui s'étendent ensuite à d'autres régions du pays, s'inscrivent dans un contexte où le taux de chômage des jeunes diplômés est particulièrement élevé alors que le poids démographique relatif des jeunes générations d'actifs atteint son maximum historique[[177]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-179). Les causes sont également politiques: le président Ben Ali et sa famille, notamment celle de sa seconde épouse Leïla, les [Trabelsi](https://fr.wikipedia.org/wiki/Clan_Trabelsi "Clan Trabelsi"), qualifiés selon les observateurs de «clan quasi-[mafieux](https://fr.wikipedia.org/wiki/Mafia "Mafia")», sont directement mis en cause dans des affaires de [corruption](https://fr.wikipedia.org/wiki/Corruption_en_Tunisie "Corruption en Tunisie"), de détournement ou de vol, fléaux qui ont particulièrement pris de l'ampleur sous sa présidence[[178]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-180). Le 13 janvier 2011, Ben Ali annonce la prise de mesures extraordinaires lors d'une intervention télévisée dont l'entrée en vigueur de l'[état d'urgence](https://fr.wikipedia.org/wiki/%C3%89tat_d'urgence "État d'urgence")[[179]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-181): la promesse d'une pleine [liberté de la presse](https://fr.wikipedia.org/wiki/Libert%C3%A9_de_la_presse "Liberté de la presse") et d'[expression](https://fr.wikipedia.org/wiki/Libert%C3%A9_d'expression "Liberté d'expression") politique ainsi que son refus de se représenter aux élections prévues en 2014. Cependant, cette allocution ne contribue pas à calmer la colère de la population, contraignant le président à céder finalement le pouvoir à son Premier ministre [Mohamed Ghannouchi](https://fr.wikipedia.org/wiki/Mohamed_Ghannouchi "Mohamed Ghannouchi") le lendemain et à quitter le pays le soir même[[180]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-182). Conformément à la [Constitution de 1959](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1959 "Constitution tunisienne de 1959"), le président de la [Chambre des députés](https://fr.wikipedia.org/wiki/Chambre_des_d%C3%A9put%C3%A9s_\(Tunisie\) "Chambre des députés \(Tunisie\)"), [Fouad Mebazaa](https://fr.wikipedia.org/wiki/Fouad_Mebazaa "Fouad Mebazaa"), est finalement proclamé président par intérim par le [Conseil constitutionnel](https://fr.wikipedia.org/wiki/Conseil_constitutionnel_\(Tunisie\) "Conseil constitutionnel \(Tunisie\)") le 15 janvier.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sit-inKasba3.jpg/250px-Sit-inKasba3.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Sit-inKasba3.jpg?uselang=fr)_[Sit-in](https://fr.wikipedia.org/wiki/Sit-in "Sit-in")_ à la kasbah de Tunis le 28 janvier 2011.
+Il est chargé d'organiser des élections présidentielles dans les soixante jours[[181]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-183). Le 17 janvier, un «[gouvernement d'union nationale](https://fr.wikipedia.org/wiki/Gouvernement_Ghannouchi_II "Gouvernement Ghannouchi II")» de 24 membres incluant des opposants au régime déchu (dont trois chefs de l'opposition légale) est constitué[[182]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-184). Le jour même, la libération de tous les prisonniers d'opinion, la levée de l'interdiction d'activité de la [Ligue tunisienne des droits de l'homme](https://fr.wikipedia.org/wiki/Ligue_tunisienne_des_droits_de_l'homme "Ligue tunisienne des droits de l'homme"), «la liberté totale de l'information» ainsi que la légalisation de tous les partis politiques et associations qui le demanderaient, est annoncée[[183]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-185). Cependant, la présence de membres du [Rassemblement constitutionnel démocratique](https://fr.wikipedia.org/wiki/Rassemblement_constitutionnel_d%C3%A9mocratique "Rassemblement constitutionnel démocratique") (RCD) à des postes clés provoque de nouveau, en moins de 24 heures, la colère de la population et la démission de plusieurs ministres d'opposition, fragilisant d'autant plus ce gouvernement[[184]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-186). Le départ ou la radiation du RCD de plusieurs personnalités éminentes[[185]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-187) n'ont aucun effet sur la suspicion que l'opinion publique entretient à l'égard de l'ancien parti présidentiel, dont plusieurs manifestants réclament la dissolution[[186]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-188). Cependant, le 20 janvier, les ministres encore affiliés à cette formation annoncent l'avoir quitté eux aussi[[187]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-189). Face à la pression de la rue exigeant leur départ, un remaniement ministériel a lieu le 27, écartant définitivement (hormis Mohamed Ghannouchi) les anciens membres du RCD de toutes responsabilités gouvernementales. Le 6 février, le ministre de l'Intérieur [Farhat Rajhi](https://fr.wikipedia.org/wiki/Farhat_Rajhi "Farhat Rajhi") gèle les activités du RCD en attendant sa dissolution juridique, tandis que le Parlement confère au président par intérim des pouvoirs supplémentaires, comme celui de dissoudre le Parlement.
+Ghannouchi est cependant contraint de démissionner à son tour le 27 février à la suite de plusieurs jours de manifestations marquées par des violences; il est remplacé le jour même par l'ancien ministre de Bourguiba, [Béji Caïd Essebsi](https://fr.wikipedia.org/wiki/B%C3%A9ji_Ca%C3%AFd_Essebsi "Béji Caïd Essebsi")[[188]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-190),[[189]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-191).
+Le 15 septembre 2012, de violentes émeutes éclatent à Tunis à la suite de la diffusion du film _[L'Innocence des musulmans](https://fr.wikipedia.org/wiki/L'Innocence_des_musulmans "L'Innocence des musulmans")_. Alors que les forces de l'ordre restent passives, certains groupes salafistes prennent d'assaut l'ambassade des États-Unis et l'incendient, détruisant plusieurs véhicules et bâtiments. Mis sous pression par les États-Unis, le gouvernement décide de réagir et envoie l'[armée](https://fr.wikipedia.org/wiki/Forces_arm%C3%A9es_tunisiennes "Forces armées tunisiennes") et la garde présidentielle pour repousser les manifestants. Les affrontements font deux morts et plusieurs blessés[[190]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-192). Dans les mois qui suivent, l'armée et la [garde nationale](https://fr.wikipedia.org/wiki/Garde_nationale_\(Tunisie\) "Garde nationale \(Tunisie\)") prennent la relève pour combattre les groupuscules salafistes et djihadistes qui sont actifs sur le territoire. L'état d'urgence est prolongé de trois mois en novembre 2012[[191]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-193), pour n'être finalement levé qu'en mars 2014.
+Après les [élections législatives du 26 octobre 2014](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_tunisiennes_de_2014 "Élections législatives tunisiennes de 2014"), qui voit le parti [Nidaa Tounes](https://fr.wikipedia.org/wiki/Nidaa_Tounes "Nidaa Tounes") arriver en tête, l'[Assemblée des représentants du peuple](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_\(Tunisie\) "Assemblée des représentants du peuple \(Tunisie\)") remplace l'Assemblée constituante. Le premier tour de l'[élection présidentielle](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_tunisienne_de_2014 "Élection présidentielle tunisienne de 2014") a lieu le 23 novembre et voit s'affronter 27 candidats dont deux, en la personne de [Béji Caïd Essebsi](https://fr.wikipedia.org/wiki/B%C3%A9ji_Ca%C3%AFd_Essebsi "Béji Caïd Essebsi") (Nidaa Tounes) avec 39,46% des voix et [Moncef Marzouki](https://fr.wikipedia.org/wiki/Moncef_Marzouki "Moncef Marzouki") avec 33,43% des voix[[192]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-194), sont qualifiés pour le second tour organisé le 21 décembre et qui permet à Caïd Essebsi de remporter le scrutin avec 55,68% des voix contre 44,32% des voix pour Marzouki[[193]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-francetvinfo.fr-195) et de devenir ainsi le premier président issu d'une élection démocratique et transparente. Le [quartet du dialogue national](https://fr.wikipedia.org/wiki/Quartet_du_dialogue_national "Quartet du dialogue national"), association de quatre organisations s'étant donné pour but d'organiser des négociations entre les [partis politiques](https://fr.wikipedia.org/wiki/Partis_politiques_en_Tunisie "Partis politiques en Tunisie") pour assurer la [transition](https://fr.wikipedia.org/wiki/Transition_d%C3%A9mocratique_en_Tunisie "Transition démocratique en Tunisie") vers un régime démocratique permanent, obtient le [prix Nobel de la paix](https://fr.wikipedia.org/wiki/Prix_Nobel_de_la_paix "Prix Nobel de la paix") 2015[[194]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:0-196). Ce prix est le premier [Nobel](https://fr.wikipedia.org/wiki/Prix_Nobel "Prix Nobel") attribué à un ressortissant ou organisation de la Tunisie[[194]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:0-196) après son indépendance[[195]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-197). [Ban Ki-moon](https://fr.wikipedia.org/wiki/Ban_Ki-moon "Ban Ki-moon"), [secrétaire général des Nations unies](https://fr.wikipedia.org/wiki/Secr%C3%A9taire_g%C3%A9n%C3%A9ral_des_Nations_unies "Secrétaire général des Nations unies"), exprime sa joie et félicite le quartet tout en affirmant que ce prix est dédié à tous les Tunisiens qui ont commencé le [Printemps arabe](https://fr.wikipedia.org/wiki/Printemps_arabe "Printemps arabe")[[196]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-198). [François Hollande](https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Hollande "François Hollande"), [président de la République française](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_fran%C3%A7aise "Président de la République française"), affirme dans un communiqué que le prix prouve le succès de la transition démocratique en Tunisie, que ce pays est sur la bonne voie et qu'il est le seul parmi les pays du Printemps arabe à réussir son évolution transitoire vers la démocratie[[197]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-199).
+En 2017 et 2018, le pays est touché par des vagues de contestation de la jeunesse tunisienne qui manifeste dans plusieurs villes du pays. En effet, à partir du début du mois, à Tunis, [Gabès](https://fr.wikipedia.org/wiki/Gab%C3%A8s "Gabès"), [Thala](https://fr.wikipedia.org/wiki/Thala "Thala"), [Jilma](https://fr.wikipedia.org/wiki/Jilma "Jilma"), [Kasserine](https://fr.wikipedia.org/wiki/Kasserine "Kasserine"), [Sidi Bouzid](https://fr.wikipedia.org/wiki/Sidi_Bouzid_\(Tunisie\) "Sidi Bouzid \(Tunisie\)"), ou encore [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa"), des Tunisiens expriment leur ras le bol face à la cherté de la vie, l'[inflation](https://fr.wikipedia.org/wiki/Inflation "Inflation") (6,4% en 2017[[198]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-200)) et un chômage omniprésent (15% de la population active et 30% des jeunes diplômés de l'enseignement supérieur[[199]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-201)). Cette vague de contestation contre une politique d'austérité économique serait organisée par le [Front populaire](https://fr.wikipedia.org/wiki/Front_populaire_\(Tunisie\) "Front populaire \(Tunisie\)")[[200]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-202),[[201]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-203). Les heurts avec les policiers et forces de l'ordre font une victime et plusieurs blessés, et des centaines de manifestants sont arrêtés[[202]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-204). L'Observatoire social tunisien recense 5 000 mouvements de protestation en 2015, plus de 11 000 en 2017 et 4 500 pour les quatre premiers mois de 2018[[203]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:2-205).
+Depuis 2011, les gouvernements successifs ont fait appel au [Fonds monétaire international](https://fr.wikipedia.org/wiki/Fonds_mon%C3%A9taire_international "Fonds monétaire international") (FMI) pour tenter de redresser la situation économique du pays. Un prêt de 1,74 milliard de [dollars](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain") est accordé en juin 2013, puis un second de 2,9 milliards de dollars en 2016. Le FMI n'accorde toutefois ces prêts qu'en contrepartie d'un plan de réformes libérales, telles que l'augmentation de certains impôts, la réduction de la [masse salariale](https://fr.wikipedia.org/wiki/Masse_salariale "Masse salariale") dans la [fonction publique](https://fr.wikipedia.org/wiki/Fonction_publique "Fonction publique"), la réduction des [subventions](https://fr.wikipedia.org/wiki/Subvention "Subvention") sur les prix des [carburants](https://fr.wikipedia.org/wiki/Carburant "Carburant"), ou encore de la modification du système de retraite. En avril 2016, le gouvernement accepte le principe de l'indépendance de la [banque centrale](https://fr.wikipedia.org/wiki/Banque_centrale_de_Tunisie "Banque centrale de Tunisie"), donnant la priorité au contrôle de l'[inflation](https://fr.wikipedia.org/wiki/Inflation "Inflation") sur le soutien au développement économique. Depuis le printemps 2017, elle laisse filer le [dinar](https://fr.wikipedia.org/wiki/Dinar_tunisien "Dinar tunisien"), dont la valeur face à l'[euro](https://fr.wikipedia.org/wiki/Euro "Euro") baisse de près de moitié. Face au poids de la dette, l'État doit consacrer plus de 20% de son budget à rembourser ses créanciers, ce qui neutralise ses capacités d'investissement[[203]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:2-205).
+Le président [Béji Caïd Essebsi](https://fr.wikipedia.org/wiki/B%C3%A9ji_Ca%C3%AFd_Essebsi "Béji Caïd Essebsi") meurt le 25 juillet 2019, à 92 ans. Fin 2019, un double scrutin, [législatif](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_tunisiennes_de_2019 "Élections législatives tunisiennes de 2019") le 6 octobre, et [présidentiel](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_tunisienne_de_2019 "Élection présidentielle tunisienne de 2019"), avec un premier tour en septembre et le second tour le 13 octobre, se déroule sans heurts, montrant une certaine maturité de la démocratie électorale en Tunisie. Les élections législatives aboutissent cependant à une assemblée fragmentée entre diverses formations[[204]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-206). L'élection présidentielle propulse à la tête de l'État un nouveau venu dans le monde politique, un juriste et universitaire spécialiste du [droit constitutionnel](https://fr.wikipedia.org/wiki/Droit_constitutionnel "Droit constitutionnel"), âgé de 61 ans, [Kaïs Saïed](https://fr.wikipedia.org/wiki/Ka%C3%AFs_Sa%C3%AFed "Kaïs Saïed"), élu avec une confortable avance face, au second tour, à l'homme d'affaires [Nabil Karoui](https://fr.wikipedia.org/wiki/Nabil_Karoui "Nabil Karoui"). Kaïs Saïed propose durant sa campagne une vision associant un certain conservatisme moral et religieux, un [souverainisme](https://fr.wikipedia.org/wiki/Souverainisme "Souverainisme"), et un mode de fonctionnement démocratique à rebours de l'organisation centralisée [bourguibienne](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba")[[205]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-207). Le 25 juillet 2021, invoquant l'article 80 de la [Constitution](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2014 "Constitution tunisienne de 2014"), il limoge le [gouvernement Mechichi](https://fr.wikipedia.org/wiki/Gouvernement_Mechichi "Gouvernement Mechichi") avec effet immédiat, annonce la suspension de l'assemblée, la formation d'un nouveau gouvernement et sa décision de gouverner par décrets et de présider le parquet, provoquant ainsi une [crise politique](https://fr.wikipedia.org/wiki/Crise_politique_de_2021-2024_en_Tunisie "Crise politique de 2021-2024 en Tunisie")[[206]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-208). Le 22 septembre, il confirme par décret le prolongement des décisions ainsi que la dissolution de l'[Instance provisoire chargée du contrôle de la constitutionnalité des projets de loi](https://fr.wikipedia.org/wiki/Instance_provisoire_charg%C3%A9e_du_contr%C3%B4le_de_la_constitutionnalit%C3%A9_des_projets_de_loi "Instance provisoire chargée du contrôle de la constitutionnalité des projets de loi")[[207]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-209), et s'octroie le droit de gouverner par décret, récupérant _de facto_ le pouvoir législatif[[208]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-210),[[209]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-211). Le 13 décembre, il annonce la tenue d'un [référendum constitutionnel](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_constitutionnel_tunisien_de_2022 "Référendum constitutionnel tunisien de 2022")[[210]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-212) qui se solde par la large approbation en juillet 2022 d'une nouvelle [Constitution](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2022 "Constitution tunisienne de 2022") mettant notamment en place un [régime présidentiel](https://fr.wikipedia.org/wiki/R%C3%A9gime_pr%C3%A9sidentiel "Régime présidentiel"), malgré un taux de participation d'un peu plus de 30% des inscrits[[211]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-213).
+## Politique
+Article détaillé: [Politique en Tunisie](https://fr.wikipedia.org/wiki/Politique_en_Tunisie "Politique en Tunisie").
+### Politique intérieure
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/GouvernementTunisien1970.jpg/250px-GouvernementTunisien1970.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:GouvernementTunisien1970.jpg?uselang=fr)Gouvernement Bahi Ladgham à la suite du remaniement du 12 juin 1970. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_%D9%85%D8%AC%D9%84%D8%B3_%D9%86%D9%88%D8%A7%D8%A8_%D8%A7%D9%84%D8%B4%D8%B9%D8%A8.jpg/250px-Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_%D9%85%D8%AC%D9%84%D8%B3_%D9%86%D9%88%D8%A7%D8%A8_%D8%A7%D9%84%D8%B4%D8%B9%D8%A8.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_%D9%85%D8%AC%D9%84%D8%B3_%D9%86%D9%88%D8%A7%D8%A8_%D8%A7%D9%84%D8%B4%D8%B9%D8%A8.jpg?uselang=fr)Séance de l'Assemblée des représentants du peuple.
+Trois ans après l'indépendance, suite aux travaux de l [Assemblée constituante](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_nationale_constituante_tunisienne_de_1956 "Assemblée nationale constituante tunisienne de 1956"), la [Constitution de la République tunisienne](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1959 "Constitution tunisienne de 1959") est promulguée le 1er juin 1959[[212]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-214). Elle fait l'objet de plusieurs révisions ultérieures, notamment en 1988 et 2002[[213]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-215). La révision de 2002 qui supprime la limitation du nombre de mandats présidentiels et relève la limite d'âge à 75 ans tout en garantissant au président son [immunité](https://fr.wikipedia.org/wiki/Immunit%C3%A9_des_chefs_d'%C3%89tat "Immunité des chefs d'État") intervient à la suite d'un [référendum constitutionnel](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_constitutionnel_tunisien_de_2002 "Référendum constitutionnel tunisien de 2002")[[214]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-216).
+Le manque de transparence politique, la faible [liberté d'expression](https://fr.wikipedia.org/wiki/Libert%C3%A9_d'expression "Liberté d'expression") et la [censure](https://fr.wikipedia.org/wiki/Censure_en_Tunisie "Censure en Tunisie"), notamment de la [presse](https://fr.wikipedia.org/wiki/Presse_en_Tunisie "Presse en Tunisie") et de nombreux [sites web](https://fr.wikipedia.org/wiki/Site_web "Site web"), ont longtemps fait qu'une situation politique précise de la Tunisie a été difficile à déterminer. De nombreuses [ONG](https://fr.wikipedia.org/wiki/Organisation_non_gouvernementale "Organisation non gouvernementale") internationales ont toutefois pointé du doigt les atteintes aux [droits de l'homme](https://fr.wikipedia.org/wiki/Droits_de_l'homme "Droits de l'homme"), notamment en ce qui concerne les atteintes à la liberté d'expression, les prisonniers politiques et d'opinion, l'instrumentalisation de la justice par le [pouvoir exécutif](https://fr.wikipedia.org/wiki/Pouvoir_ex%C3%A9cutif "Pouvoir exécutif"), la [torture](https://fr.wikipedia.org/wiki/Torture "Torture") et la situation dans les [prisons](https://fr.wikipedia.org/wiki/Prison "Prison"), ainsi que le harcèlement de toute [dissidence politique](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali#Oppositions "Zine el-Abidine Ben Ali"). De leur côté, les autorités de l'époque ont fait valoir que leurs efforts en matière de droits de l'homme ont été officiellement reconnus par des instances internationales comme le [Conseil des droits de l'homme des Nations unies](https://fr.wikipedia.org/wiki/Conseil_des_droits_de_l'homme_des_Nations_unies "Conseil des droits de l'homme des Nations unies") dont les membres ont souligné, avec quelques réserves pour certains, les progrès accomplis par le pays en la matière[[215]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-217).
+La Tunisie ne connaît que deux [présidents de la République](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_tunisienne "Président de la République tunisienne") en cinq décennies: Bourguiba (1957-1987) puis [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali") (1987-2011)[[216]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-218). Au niveau des [partis](https://fr.wikipedia.org/wiki/Partis_politiques_en_Tunisie "Partis politiques en Tunisie"), le [Néo-Destour](https://fr.wikipedia.org/wiki/N%C3%A9o-Destour "Néo-Destour") puis le [Parti socialiste destourien](https://fr.wikipedia.org/wiki/Parti_socialiste_destourien_\(1964-1988\) "Parti socialiste destourien \(1964-1988\)") et le [Rassemblement constitutionnel démocratique](https://fr.wikipedia.org/wiki/Rassemblement_constitutionnel_d%C3%A9mocratique "Rassemblement constitutionnel démocratique") dominent la vie politique après l'indépendance[[217]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-219), dont deux décennies (1963-1981) en tant que parti unique[[218]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-220).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Portrait_Ka%C3%AFs_Sa%C3%AFed.jpg/250px-Portrait_Ka%C3%AFs_Sa%C3%AFed.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Portrait_Ka%C3%AFs_Sa%C3%AFed.jpg?uselang=fr)[Kaïs Saïed](https://fr.wikipedia.org/wiki/Ka%C3%AFs_Sa%C3%AFed "Kaïs Saïed"), président de la République depuis le 23 octobre 2019.
+La [révolution](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne") du 14 janvier 2011 et la chute du régime Ben Ali changent la donne. Le Rassemblement constitutionnel démocratique est dissous et la scène politique compte rapidement une centaine de partis politiques. [Fouad Mebazaa](https://fr.wikipedia.org/wiki/Fouad_Mebazaa "Fouad Mebazaa") assure à titre intérimaire la présidence de la République du 15 janvier au 13 décembre 2011, avant d'être remplacé par [Moncef Marzouki](https://fr.wikipedia.org/wiki/Moncef_Marzouki "Moncef Marzouki") à partir du 13 décembre. Mohamed Ghannouchi, ayant assuré l'intérim du pouvoir durant 24 heures après la fuite de Ben Ali, est placé à la tête du gouvernement de transition avant d'être remplacé par [Béji Caïd Essebsi](https://fr.wikipedia.org/wiki/B%C3%A9ji_Ca%C3%AFd_Essebsi "Béji Caïd Essebsi"). La Chambre des députés et la Chambre des conseillers sont dissoutes et leurs pouvoirs assumés de fait par la [Haute instance pour la réalisation des objectifs de la révolution](https://fr.wikipedia.org/wiki/Haute_instance_pour_la_r%C3%A9alisation_des_objectifs_de_la_r%C3%A9volution,_de_la_r%C3%A9forme_politique_et_de_la_transition_d%C3%A9mocratique "Haute instance pour la réalisation des objectifs de la révolution, de la réforme politique et de la transition démocratique") puis, à la suite de l'[élection du 23 octobre 2011](https://fr.wikipedia.org/wiki/%C3%89lections_constituantes_tunisiennes_de_2011 "Élections constituantes tunisiennes de 2011"), premier scrutin pluraliste et transparent organisé par l'[Instance supérieure indépendante pour les élections](https://fr.wikipedia.org/wiki/Instance_sup%C3%A9rieure_ind%C3%A9pendante_pour_les_%C3%A9lections "Instance supérieure indépendante pour les élections") au détriment du [ministère de l'Intérieur](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'Int%C3%A9rieur_\(Tunisie\) "Ministère de l'Intérieur \(Tunisie\)"), par l'[Assemblée constituante](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_nationale_constituante_tunisienne_de_2011 "Assemblée nationale constituante tunisienne de 2011"). La Constitution est suspendue et remplacée par le [décret-loi du 23 mars 2011](https://fr.wikipedia.org/wiki/D%C3%A9cret-loi_tunisien_du_23_mars_2011 "Décret-loi tunisien du 23 mars 2011") puis la [loi constituante du 16 décembre 2011](https://fr.wikipedia.org/wiki/Loi_constituante_tunisienne_de_2011 "Loi constituante tunisienne de 2011"). [Hamadi Jebali](https://fr.wikipedia.org/wiki/Hamadi_Jebali "Hamadi Jebali") forme alors un gouvernement de [coalition](https://fr.wikipedia.org/wiki/Tro%C3%AFka_\(Tunisie\) "Troïka \(Tunisie\)") dominé par [Ennahdha](https://fr.wikipedia.org/wiki/Ennahdha "Ennahdha"), reconduit par [Ali Larayedh](https://fr.wikipedia.org/wiki/Ali_Larayedh "Ali Larayedh") à partir du 13 mars 2013.
+En 2014, une [nouvelle Constitution](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2014 "Constitution tunisienne de 2014") est votée par l'Assemblée constituante qui établit un régime semi-présidentiel où le président de la République conserve des pouvoirs en matière de politique étrangère, de défense et de sécurité intérieure[[219]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-221). Il est élu tous les cinq ans au [suffrage universel](https://fr.wikipedia.org/wiki/Suffrage_universel "Suffrage universel") et ne peut prétendre qu'à deux mandats présidentiels. Responsable de l'action gouvernementale, le chef du gouvernement est le candidat du parti ou de la coalition qui obtient la majorité de siège à l'[Assemblée des représentants du peuple](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_\(Tunisie\) "Assemblée des représentants du peuple \(Tunisie\)"). Il est nommé par le président de la République et définit la politique générale de l'État. Le pouvoir législatif, monocaméral, est exercé par l'assemblée composée de 217 députés.
+[Mehdi Jomaa](https://fr.wikipedia.org/wiki/Mehdi_Jomaa "Mehdi Jomaa") forme un gouvernement de technocrates le 29 janvier 2014 après l'adoption de la nouvelle Constitution. Après les [élections législatives du 26 octobre 2014](https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_tunisiennes_de_2014 "Élections législatives tunisiennes de 2014"), qui voit [Nidaa Tounes](https://fr.wikipedia.org/wiki/Nidaa_Tounes "Nidaa Tounes") arrivé en tête, l'[élection présidentielle](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_tunisienne_de_2014 "Élection présidentielle tunisienne de 2014"), organisée en deux tours, voit Béji Caïd Essebsi, leader de Nidaa Tounes, être élu avec 55,68% des voix contre 44,32% des voix pour Marzouki[[193]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-francetvinfo.fr-195). [Habib Essid](https://fr.wikipedia.org/wiki/Habib_Essid "Habib Essid") forme dans la foulée un nouveau [gouvernement](https://fr.wikipedia.org/wiki/Gouvernement_Essid "Gouvernement Essid"), remplacé à l'été 2016 par [celui](https://fr.wikipedia.org/wiki/Gouvernement_Chahed "Gouvernement Chahed") de [Youssef Chahed](https://fr.wikipedia.org/wiki/Youssef_Chahed "Youssef Chahed").
+[Transparency International](https://fr.wikipedia.org/wiki/Transparency_International "Transparency International") place en 2025 la Tunisie au 39erang sur 182 pays pris en compte dans son classement selon l'[indice de perception de la corruption](https://fr.wikipedia.org/wiki/Indice_de_perception_de_la_corruption "Indice de perception de la corruption")[[220]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-222).
+Le 29 septembre 2021, [Najla Bouden](https://fr.wikipedia.org/wiki/Najla_Bouden "Najla Bouden") est nommée chef du gouvernement; c'est la première fois de l'histoire du pays qu'une femme est nommée à ce poste[[221]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-223).
+L'année 2023 voit des arrestations d'opposants politiques[[222]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-224),[[223]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-225),[[224]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-226).
+### Politique extérieure
+Article détaillé: [Politique étrangère de la Tunisie](https://fr.wikipedia.org/wiki/Politique_%C3%A9trang%C3%A8re_de_la_Tunisie "Politique étrangère de la Tunisie").
+Le premier président, [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba"), choisit le [non-alignement](https://fr.wikipedia.org/wiki/Mouvement_des_non-align%C3%A9s "Mouvement des non-alignés") durant la [guerre froide](https://fr.wikipedia.org/wiki/Guerre_froide "Guerre froide") tout en ayant des relations étroites avec l'Europe et les États-Unis. Son successeur, [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), maintient la tradition tunisienne de bonnes relations avec l'Occident tout en jouant un rôle actif dans les instances régionales arabes et africaines: le pays accueille, en mai 2004, la 16esession ordinaire du sommet de la [Ligue arabe](https://fr.wikipedia.org/wiki/Ligue_arabe "Ligue arabe") (dont la Tunisie est membre depuis 1958) au cours de laquelle est adoptée la Charte arabe des droits de l'homme[[225]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-227) et envoie régulièrement de l'[aide humanitaire](https://fr.wikipedia.org/wiki/Aide_humanitaire "Aide humanitaire") aux [Palestiniens](https://fr.wikipedia.org/wiki/Palestiniens "Palestiniens") et aux États en crise. Le pays est également un membre fondateur de l'[OUA](https://fr.wikipedia.org/wiki/Organisation_de_l'unit%C3%A9_africaine "Organisation de l'unité africaine"), dont elle assure la présidence en 1994-1995, avant de participer à la fondation de l'[Union africaine](https://fr.wikipedia.org/wiki/Union_africaine "Union africaine") en juillet 2002.
+La Tunisie a également soutenu le développement de l'[Union du Maghreb arabe](https://fr.wikipedia.org/wiki/Union_du_Maghreb_arabe "Union du Maghreb arabe") qui inclut l'[Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie"), le [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc"), la [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie") et la [Libye](https://fr.wikipedia.org/wiki/Libye "Libye"). Toutefois, ses progrès restent limités en raison de tensions entre l'Algérie et le Maroc à propos du [Sahara occidental](https://fr.wikipedia.org/wiki/Sahara_occidental "Sahara occidental"). En février 2001, la Tunisie adhère à la [Communauté des États sahélo-sahariens](https://fr.wikipedia.org/wiki/Communaut%C3%A9_des_%C3%89tats_sah%C3%A9lo-sahariens "Communauté des États sahélo-sahariens") et accueille le siège de la [Banque africaine de développement](https://fr.wikipedia.org/wiki/Banque_africaine_de_d%C3%A9veloppement "Banque africaine de développement") en 2003. Le pays est depuis longtemps une voix modératrice sur la question du [Proche-Orient](https://fr.wikipedia.org/wiki/Proche-Orient "Proche-Orient"): Bourguiba est ainsi le premier dirigeant arabe à appeler à la reconnaissance d'[Israël](https://fr.wikipedia.org/wiki/Isra%C3%ABl "Israël") par les pays arabes dans un discours prononcé à [Jéricho](https://fr.wikipedia.org/wiki/J%C3%A9richo "Jéricho") le 3 mars 1965[[226]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-228).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Benbella-Nasser-Bourkiba-1963.jpg/250px-Benbella-Nasser-Bourkiba-1963.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Benbella-Nasser-Bourkiba-1963.jpg?uselang=fr)Habib Bourguiba aux côtés de [Gamal Abdel Nasser](https://fr.wikipedia.org/wiki/Gamal_Abdel_Nasser "Gamal Abdel Nasser") et [Ahmed Ben Bella](https://fr.wikipedia.org/wiki/Ahmed_Ben_Bella "Ahmed Ben Bella") en 1963.
+La Tunisie accueille le siège de la Ligue arabe de 1979 à 1990[[227]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-background-229), après la suspension de l'Égypte consécutive à la signature du [traité de paix israélo-égyptien](https://fr.wikipedia.org/wiki/Trait%C3%A9_de_paix_isra%C3%A9lo-%C3%A9gyptien "Traité de paix israélo-égyptien") et jusqu'au rétablissement du siège au Caire. De 1982 à 1993, elle héberge également le quartier général de l'[Organisation de libération de la Palestine](https://fr.wikipedia.org/wiki/Organisation_de_lib%C3%A9ration_de_la_Palestine "Organisation de libération de la Palestine") (OLP)[[227]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-background-229), installé à Tunis après l'expulsion de l'organisation du Liban à la suite de l'[invasion israélienne](https://fr.wikipedia.org/wiki/Invasion_isra%C3%A9lienne_du_Liban_de_1982 "Invasion israélienne du Liban de 1982"). Cette présence est notamment marquée par le [bombardement du siège de l'OLP à Hammam Chott](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Jambe_de_bois "Opération Jambe de bois") par l'aviation israélienne le 1er octobre 1985[[228]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-230). Dans le cadre du [processus de paix israélo-palestinien](https://fr.wikipedia.org/wiki/Processus_de_paix_isra%C3%A9lo-palestinien "Processus de paix israélo-palestinien"), la Tunisie accueille en septembre 1993 une [délégation officielle israélienne](https://fr.wikipedia.org/wiki/Relations_entre_Isra%C3%ABl_et_la_Tunisie "Relations entre Israël et la Tunisie"), constituant une première dans un pays du Maghreb[[229]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-231). Des sections d'intérêts sont ensuite ouvertes en avril 1996, avant la suspension des relations à la suite du déclenchement de la [seconde intifada](https://fr.wikipedia.org/wiki/Seconde_intifada "Seconde intifada") en 2000[[227]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-background-229).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Nouira_and_Carter_1978.JPG/250px-Nouira_and_Carter_1978.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Nouira_and_Carter_1978.JPG?uselang=fr)Accueil du Premier ministre [Hédi Nouira](https://fr.wikipedia.org/wiki/H%C3%A9di_Nouira "Hédi Nouira") par le président [Jimmy Carter](https://fr.wikipedia.org/wiki/Jimmy_Carter "Jimmy Carter") en 1978. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Secretary_Kerry_Signs_MOU_With_Tunisian_Minister_for_Political_Affairs_Marzouk_%2817283596203%29.jpg/250px-Secretary_Kerry_Signs_MOU_With_Tunisian_Minister_for_Political_Affairs_Marzouk_%2817283596203%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Secretary_Kerry_Signs_MOU_With_Tunisian_Minister_for_Political_Affairs_Marzouk_\(17283596203\).jpg?uselang=fr)[John Kerry](https://fr.wikipedia.org/wiki/John_Kerry "John Kerry"), [Béji Caïd Essebsi](https://fr.wikipedia.org/wiki/B%C3%A9ji_Ca%C3%AFd_Essebsi "Béji Caïd Essebsi") et [Mohsen Marzouk](https://fr.wikipedia.org/wiki/Mohsen_Marzouk "Mohsen Marzouk"), le 20 mai 2015.
+Coincée entre l'Algérie et la Libye, la Tunisie a toujours cherché à maintenir de bonnes relations avec ses voisins malgré des tensions occasionnelles[[227]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-background-229). La Tunisie et l'Algérie résolvent un long litige frontalier en 1993 et coopèrent dans la construction du [gazoduc](https://fr.wikipedia.org/wiki/Gazoduc "Gazoduc") transméditerranéen menant vers l'[Italie](https://fr.wikipedia.org/wiki/Italie "Italie"). La Tunisie signe par ailleurs un accord avec l'Algérie en 2002 pour démarquer la frontière maritime entre les deux pays[[227]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-background-229).
+Vis-à-vis de son autre voisin, les relations sont plus difficiles à partir de l'annulation par la Tunisie d'un accord visant à la formation d'une [union tuniso-libyenne](https://fr.wikipedia.org/wiki/Projet_d'union_entre_la_Tunisie_et_la_Libye "Projet d'union entre la Tunisie et la Libye") en 1974. Les relations diplomatiques sont rompues entre 1976 et 1977 puis se détériorent à nouveau en 1980 lorsque des rebelles appuyés par la Libye tentent de prendre la ville de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa")[[165]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-chautard169-167). En 1982, la [Cour internationale de justice](https://fr.wikipedia.org/wiki/Cour_internationale_de_justice "Cour internationale de justice") tranche le différend relatif à la partition du [plateau continental](https://fr.wikipedia.org/wiki/Plateau_continental_\(droit\) "Plateau continental \(droit\)") frontalier (riche en [pétrole](https://fr.wikipedia.org/wiki/P%C3%A9trole "Pétrole")) en faveur de la Libye[[230]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-232). L'expulsion par la Libye de nombreux travailleurs tunisiens en 1985 et les menaces militaires américaines conduisent la Tunisie à restreindre leurs relations qui sont à nouveau normalisées dès 1987. Tout en soutenant les sanctions de l'[ONU](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") imposées à la Libye, à la suite de [bombardements](https://fr.wikipedia.org/wiki/Bombardement "Bombardement") aériens américains, la Tunisie prend soin de maintenir de bonnes relations avec son voisin. Elle soutient ainsi la levée de ces sanctions en 2003, la Libye redevenant ainsi l'un de ses partenaires commerciaux majeurs. Néanmoins, les deux pays ont encore un contentieux maritime sur leur frontière commune.
+La Tunisie revendique également sa dimension méditerranéenne. Elle participe ainsi au Forum méditerranéen, dont elle organise l'édition 2005, et devient le premier pays du [bassin méditerranéen](https://fr.wikipedia.org/wiki/Bassin_m%C3%A9diterran%C3%A9en "Bassin méditerranéen") à signer, le 17 juillet 1995, un accord d'association avec l'[Union européenne](https://fr.wikipedia.org/wiki/Union_europ%C3%A9enne "Union européenne") dans le but de renforcer son ancrage à l'Europe[[231]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-233).
+L'action politique de la Tunisie dépasse les frontières régionales. Le président Ben Ali propose ainsi la création d'un Fonds de solidarité mondial[[232]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-234). Le 20 décembre 2002, l'Assemblée générale adopte sans vote la résolution 57/265 par laquelle elle décide de créer ce fonds et d'en préciser les modalités de fonctionnement[[233]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-235).
+### Défense
+Article détaillé: [Forces armées tunisiennes](https://fr.wikipedia.org/wiki/Forces_arm%C3%A9es_tunisiennes "Forces armées tunisiennes").
+La défense extérieure de la Tunisie est exercée par l'armée. Fondée le 30 juin 1956, elle compte un personnel régulier de 35 500 personnes dont 27 000 dans l'Armée de terre[[234]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-236). Elle participe surtout à des activités civiles de développement et de lutte contre les [catastrophes naturelles](https://fr.wikipedia.org/wiki/Catastrophe_naturelle "Catastrophe naturelle") et à des opérations militaires de [maintien de la paix](https://fr.wikipedia.org/wiki/Maintien_de_la_paix "Maintien de la paix") sous couvert des [Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies")[[235]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-237).
+## Justice
+Article détaillé: [Droit tunisien](https://fr.wikipedia.org/wiki/Droit_tunisien "Droit tunisien").
+Le droit tunisien reste largement inspiré par le [droit français](https://fr.wikipedia.org/wiki/Droit_fran%C3%A7ais "Droit français"), tant dans son contenu que dans ses grandes divisions (public et privé) et ses structures.
+La Constitution garantit les principes fondamentaux suivants:
+  * l'indépendance de la justice (art.117 de la [Constitution de 2022](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2022 "Constitution tunisienne de 2022"));
+  * le droit à un procès équitable et à la défense (art.124 de la Constitution)
+  * l'égalité des citoyens et citoyennes devant la loi et la garantie des libertés et droits individuels et collectifs[[236]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-marsad2-238).
+
+
+Sous les régimes de [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") et [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), la justice tunisienne demeure influencée par le pouvoir exécutif. Ainsi, en tant que chef du Conseil supérieur de la magistrature, le président nomme par décret les [magistrats](https://fr.wikipedia.org/wiki/Magistrat "Magistrat"), les révoque ou les transfère sur proposition dudit conseil. Certains principes fondamentaux du droit, comme le principe de la [présomption d'innocence](https://fr.wikipedia.org/wiki/Pr%C3%A9somption_d'innocence "Présomption d'innocence") (art.12 de la [Constitution de 1959](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1959 "Constitution tunisienne de 1959"))[[237]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-constit-239) et la non-rétroactivité de la loi (art.13 de la Constitution de 1959)[[237]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-constit-239), sont garantis, tout comme l'inviolabilité de domicile, la liberté de mouvement et les libertés d'opinion, d'expression, de publication, de réunion et d'association, mais ces droits peuvent être toutefois limités par des dispositions légales ou la sécurité d'État (art.8-10)[[237]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-constit-239). Le système juridictionnel est alors précisé par la loi portant sur l'organisation judiciaire de 1967, les règles de compétence (attribution, compétence territoriale et compétence d'exception) étant établies dans d'autres textes dont le Code de procédure pénale du 24 juillet 1968.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Palais_de_Justice%2C_Tunis.JPG/250px-Palais_de_Justice%2C_Tunis.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Palais_de_Justice,_Tunis.JPG?uselang=fr)[Palais de justice de Tunis](https://fr.wikipedia.org/wiki/Palais_de_justice_\(Tunis\) "Palais de justice \(Tunis\)").
+Le système judiciaire est composé de trois grands ensembles[[238]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-marsad5-240):
+  * les juridictions judiciaires composées de la Cour de cassation, de tribunaux de second degré et de tribunaux de première instance;
+  * les juridictions administratives composées du [Tribunal administratif](https://fr.wikipedia.org/wiki/Tribunal_administratif_\(Tunisie\) "Tribunal administratif \(Tunisie\)"), de tribunaux administratifs d'appel et de tribunaux administratifs de première instance.
+  * les juridictions financières composées de la [Cour des comptes](https://fr.wikipedia.org/wiki/Cour_des_comptes_\(Tunisie\) "Cour des comptes \(Tunisie\)") avec ses différentes instances.
+
+
+Les tribunaux militaires sont compétents en matière de crimes militaires[[238]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-marsad5-240). Quant au Conseil supérieur de la magistrature, il se compose pour deux tiers de magistrats en majorité élus et qui élisent un président parmi leurs membres[[238]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-marsad5-240). Une Cour constitutionnelle contrôle sur demande la constitutionnalité des lois, des traités internationaux et du règlement intérieur de l'[Assemblée des représentants du peuple](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_des_repr%C3%A9sentants_du_peuple_\(Tunisie\) "Assemblée des représentants du peuple \(Tunisie\)")[[238]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-marsad5-240).
+En février 2011, le nombre de condamnés à mort est de 130 dont quatre femmes[[239]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-TAP-241). La dernière exécution d'une sentence de [peine de mort](https://fr.wikipedia.org/wiki/Peine_de_mort "Peine de mort") remonte à octobre 1991[[239]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-TAP-241). Le 24 juillet 2015, le parlement adopte une loi rétablissant la peine de mort contre des actes terroristes[[240]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-242).
+## Économie
+Article détaillé: [Économie de la Tunisie](https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Tunisie "Économie de la Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/GDP_per_capita_development_of_Tunisia.svg/250px-GDP_per_capita_development_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:GDP_per_capita_development_of_Tunisia.svg?uselang=fr)Évolution du PIB par habitant de 1950 à 2018.
+En 2010, le [produit intérieur brut](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") (PIB) de la Tunisie atteint 57,17 milliards de [dinars](https://fr.wikipedia.org/wiki/Dinar_tunisien "Dinar tunisien") (39,58 milliards de [dollars](https://fr.wikipedia.org/wiki/Dollar_am%C3%A9ricain "Dollar américain")) soit une hausse de 7% par rapport à 2009[[241]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-243). En 1960, celui-ci ne se montait qu'à 847 millions de dollars, passant à 1,581 milliard en 1970, 8,634 milliards en 1980, 12,875 milliards en 1990 et 21,254 milliards en 1999[[242]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-244). Quant à la [population active](https://fr.wikipedia.org/wiki/Population_active "Population active"), elle atteint 3,769 millions de personnes en 2010 mais la population active occupée totalise 3,277 millions de personnes[[243]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-245), dont près de 30% de femmes, ce qui représente tout de même plus du double du niveau de 1980[[244]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-246).
+D'après un rapport de la [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") paru en 2014, une grande partie des réglementations adoptées par le gouvernement sous la présidence de [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali") visait à favoriser un cercle d'entrepreneurs proche du pouvoir. Après la chute de son régime, une commission d'enquête est mise en place et dresse une liste de 114 personnes, dont Ben Ali, ses apparentés et ses gendres, ayant bénéficié de cette [corruption](https://fr.wikipedia.org/wiki/Corruption_en_Tunisie "Corruption en Tunisie") institutionnalisée. Les biens saisis comprennent quelque 550 propriétés, 48 bateaux et yachts, 40 portefeuilles d'actions et d'obligations, 367 comptes en banques et environ 400 entreprises. Les experts de la commission évaluent à 13 milliards de dollars la valeur de l'ensemble, soit plus d'un quart du PIB de la Tunisie en 2011[[245]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-247).
+Après la [révolution de 2011](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne") qui renverse Ben Ali, le maintien de [politiques d'austérité](https://fr.wikipedia.org/wiki/Politique_de_rigueur "Politique de rigueur") (gel du recrutement dans la fonction publique, baisse des subventions) et de [réformes structurelles](https://fr.wikipedia.org/wiki/R%C3%A9forme_structurelle "Réforme structurelle") [libérales](https://fr.wikipedia.org/wiki/Lib%C3%A9ralisme_%C3%A9conomique "Libéralisme économique") (privatisations, indépendance de la banque centrale, ouverture du marché…), bien que modérées, réduisent le pouvoir de régulation sociale de l'État, favorisant l'augmentation des inégalités. Ainsi, les 10% de Tunisiens les plus riches détiennent 40% du revenu national. Le système fiscal est particulièrement pointé du doigt: souvent décrit comme très inégalitaire, il taxe surtout les bas revenus, l'[évasion fiscale](https://fr.wikipedia.org/wiki/%C3%89vasion_fiscale "Évasion fiscale") étant très importante[[246]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:4-248).
+Les [attentats islamistes](https://fr.wikipedia.org/wiki/Terrorisme_islamiste "Terrorisme islamiste") qui ont touché le [tourisme](https://fr.wikipedia.org/wiki/Tourisme_en_Tunisie "Tourisme en Tunisie"), qui représente près de 7% du PIB durant les années 2010, portent un coup à l'économie tunisienne. Avec une croissance économique quasi nulle, le pays est proche de la récession et connaît une dérive de sa dette, qui passe de 66,9% du PIB en 2017 à 79,3% en 2023[[247]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-249). La plupart des prêts auprès des institutions financières internationales servent à rembourser la dette (plus de 80% d'entre eux entre 2011 et 2016)[[246]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:4-248).
+En 2025, la Tunisie est classée en 76eposition pour l'[indice mondial de l'innovation](https://fr.wikipedia.org/wiki/Indice_mondial_de_l'innovation "Indice mondial de l'innovation")[[248]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-250).
+### Historique
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/BourguibaBenSalah.jpg/250px-BourguibaBenSalah.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:BourguibaBenSalah.jpg?uselang=fr)Habib Bourguiba en compagnie d'Ahmed Ben Salah, secrétaire général de l'UGTT.
+À la proclamation de l'indépendance en 1956, le pays ne dispose pas des atouts de ses voisins maghrébins: terres agricoles moins productives, infrastructure portuaire moins développée, marché intérieur étriqué, épargne faible et écornée par l'émigration des populations d'origine européenne[[249]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-251) et relations avec les milieux d'affaires français réduits, chômage élevé et équipement industriel embryonnaire[[250]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-252). La priorité établie par le nouveau [président](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_tunisienne "Président de la République tunisienne") [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") est alors de libérer l'économie nationale du contrôle français qui avait favorisé l'[agriculture](https://fr.wikipedia.org/wiki/Agriculture "Agriculture") et l'extraction minérale, mais avait, en grande partie, négligé l'[industrie](https://fr.wikipedia.org/wiki/Industrie_en_Tunisie "Industrie en Tunisie")[[251]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MOR-253),[[252]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MUR-254), la Tunisie étant alors le pays le moins industrialisé du Maghreb[[253]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-wilmots94-255). Dans ce contexte, l'importance croissante de l'[Union générale tunisienne du travail](https://fr.wikipedia.org/wiki/Union_g%C3%A9n%C3%A9rale_tunisienne_du_travail "Union générale tunisienne du travail") (UGTT) dans les choix économiques par l'action de son secrétaire général, [Ahmed Ben Salah](https://fr.wikipedia.org/wiki/Ahmed_Ben_Salah "Ahmed Ben Salah"), mène le pays vers l'adoption de mesures collectivistes dans l'économie[[251]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MOR-253). L'expérience coopérative dure jusqu'en septembre 1969 lorsque Bourguiba suspend Ben Salah de ses fonctions à la suite de la parution d'un rapport confidentiel de la [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") sur le déficit des entreprises publiques[[254]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-256) et aux pressions de l'aile pragmatique du parti. Avec l'arrivée d'[Hédi Nouira](https://fr.wikipedia.org/wiki/H%C3%A9di_Nouira "Hédi Nouira"), pragmatique gouverneur de la [Banque centrale](https://fr.wikipedia.org/wiki/Banque_centrale_de_Tunisie "Banque centrale de Tunisie") hostile au collectivisme[[255]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-257), au ministère de l'Économie puis au [Premier ministère](https://fr.wikipedia.org/wiki/Pr%C3%A9sidence_du_gouvernement_\(Tunisie\) "Présidence du gouvernement \(Tunisie\)"), la Tunisie se réoriente vers l'[économie de marché](https://fr.wikipedia.org/wiki/%C3%89conomie_de_march%C3%A9 "Économie de marché") et la [propriété privée](https://fr.wikipedia.org/wiki/Propri%C3%A9t%C3%A9_priv%C3%A9e "Propriété privée")[[251]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MOR-253). Durant la décennie des [années 1970](https://fr.wikipedia.org/wiki/Ann%C3%A9es_1970 "Années 1970"), la Tunisie connaît une expansion du secteur privé et un développement rapide de l'emploi manufacturier. Cette timide ouverture permet la création de nouveaux emplois et, par conséquent, le développement d'une meilleure mobilité sociale de la jeunesse nouvellement instruite et la croissance d'une [classe moyenne](https://fr.wikipedia.org/wiki/Classe_moyenne "Classe moyenne")[[256]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MCVG-258).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/20_TND_-_1983_-_obverse.jpg/250px-20_TND_-_1983_-_obverse.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:20_TND_-_1983_-_obverse.jpg?uselang=fr)Billet de 20 dinars tunisiens (1983).
+En 1986, la Tunisie connaît sa première année de croissance négative depuis son indépendance. Les agitations sociales augmentent de façon dramatique pendant cette période et l'UGTT, qui critique ouvertement la politique économique adoptée par le gouvernement, organise des [grèves](https://fr.wikipedia.org/wiki/Gr%C3%A8ve "Grève") et des manifestations contre l'augmentation du [chômage](https://fr.wikipedia.org/wiki/Ch%C3%B4mage "Chômage") et la politique salariale[[251]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MOR-253),[[252]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MUR-254). Le gouvernement se met alors d'accord avec le [Fonds monétaire international](https://fr.wikipedia.org/wiki/Fonds_mon%C3%A9taire_international "Fonds monétaire international") sur la mise en place d'un programme de reprise économique sur 18 mois. L'objectif principal du plan est d'accroître l'efficacité et de promouvoir les mécanismes du marché. En même temps, il est conçu pour surmonter les conséquences sociales et politiques de ses mesures. Les dépenses publiques sont concentrées aux secteurs de la santé, de l'éducation, du logement et des services. Le gouvernement ne lance cependant pas de véritables programmes avant 1987.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/BCT_-_Tunis.jpg/250px-BCT_-_Tunis.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:BCT_-_Tunis.jpg?uselang=fr)Siège de la [Banque centrale de Tunisie](https://fr.wikipedia.org/wiki/Banque_centrale_de_Tunisie "Banque centrale de Tunisie").
+La privatisation se traduit dans un premier temps par la vente de [petites et moyennes entreprises](https://fr.wikipedia.org/wiki/Petite_ou_moyenne_entreprise "Petite ou moyenne entreprise") avec un bon historique bancaire à des acheteurs tunisiens présélectionnés. Depuis le lancement du nouveau programme de privatisation en 1987, le gouvernement a totalement ou partiellement privatisé 203 entreprises, dont de grands établissements publics tel [Tunisie Télécom](https://fr.wikipedia.org/wiki/Tunisie_T%C3%A9l%C3%A9com "Tunisie Télécom"), pour une recette globale de 5 557 millions de dinars[[257]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-259). De plus, la non préparation de plusieurs secteurs à l'ouverture a conduit au maintien d'un niveau de chômage élevé et variant selon les sources de 13% à 20%[[258]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-express100105-260). Pourtant, le chômage ne touche pas que les populations les plus vulnérables: le taux de chômage des diplômés de l'enseignement supérieur est ainsi en augmentation depuis plusieurs années. Alors qu'il était de 4% en 1997 et de 0,7% en 1984[[259]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-261), il atteint 20% contre une moyenne nationale de 14%, voire près de 60% dans certaines filières selon une enquête de la [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale")[[260]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-262). En 1959, le pays prend ses premiers contacts avec la [Communauté économique européenne](https://fr.wikipedia.org/wiki/Communaut%C3%A9_%C3%A9conomique_europ%C3%A9enne "Communauté économique européenne"). En juillet 1966, le président Bourguiba effectue une tournée en Europe et aboutit au lancement de négociations qui conduisent à la signature d'un premier accord commercial le 28 juillet 1969 à Tunis[[261]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-gharbi2-263).
+À partir des années 1970, positionnée sur des secteurs où sa compétitivité s'est érodée, tels que le [textile](https://fr.wikipedia.org/wiki/Textile "Textile"), la Tunisie se lance dans le moins-disant social pour maintenir ses positions, en pratiquant un régime d'incitations fiscales dont des investisseurs ont su tirer profit en accroissant la précarité de leurs salariés. Le tourisme entame également une course au rabais, au détriment de la qualité. Sous la présidence de [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), les banques publiques ont pour consigne de ne pas exiger le remboursement de leurs [créances](https://fr.wikipedia.org/wiki/Cr%C3%A9ance "Créance") afin de maintenir à flot ce secteur et de préserver les intérêts des clans proches du pouvoir, propriétaires des hôtels. La libéralisation de l'économie est engagée dans les années 1980. souvent en faveur des réseaux proches du gouvernement: «Les privatisations ont été un lieu unique de prédation des «clans», mais aussi de distribution d'avantages et de rentes pour la bourgeoisie traditionnelle», souligne le [Réseau euro-méditerranéen des droits de l'homme](https://fr.wikipedia.org/wiki/EuroMed_Droits "EuroMed Droits") en 2011[[203]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-:2-205),[[262]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-264).
+Un accord d'association est finalement signé avec l'[Union européenne](https://fr.wikipedia.org/wiki/Union_europ%C3%A9enne "Union européenne") le 17 juillet 1995 et entre en vigueur le 1er mars 1998 pour engendrer dès 1996 le démantèlement progressif des barrières douanières jusqu'au 1er janvier 2008[[263]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-barrouhi-265).
+### Agriculture
+Article détaillé: [Agriculture en Tunisie](https://fr.wikipedia.org/wiki/Agriculture_en_Tunisie "Agriculture en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Cap_Bon_olive_groves.JPG/250px-Cap_Bon_olive_groves.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Cap_Bon_olive_groves.JPG?uselang=fr)Champ d'oliviers dans la région du [cap Bon](https://fr.wikipedia.org/wiki/Cap_Bon "Cap Bon").
+Depuis l'indépendance de la Tunisie, l'agriculture a enregistré des taux de croissance importants et a permis au pays d'atteindre un niveau de [sécurité alimentaire](https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_alimentaire "Sécurité alimentaire") suffisant. En dépit du développement des autres secteurs de l'économie nationale, l'agriculture conserve une importance sociale et économique: elle assure environ 12,3% du [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") et emploie 16,3% de la main-d'œuvre en 2006. Les principales productions agricoles sont les [céréales](https://fr.wikipedia.org/wiki/C%C3%A9r%C3%A9ale "Céréale") ([blé](https://fr.wikipedia.org/wiki/Bl%C3%A9 "Blé") et [orge](https://fr.wikipedia.org/wiki/Orge_commune "Orge commune")), les [olives](https://fr.wikipedia.org/wiki/Olive "Olive") (2eproducteur[[264]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-266) et 3e exportateur mondial d'[huile d'olive](https://fr.wikipedia.org/wiki/Huile_d'olive "Huile d'olive") depuis 2007[[265]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-267)), les [dattes](https://fr.wikipedia.org/wiki/Datte "Datte"), les [agrumes](https://fr.wikipedia.org/wiki/Agrume "Agrume") et les produits de la mer.
+Si la gestion de l'agriculture appartient encore à des établissements publics, tels l'Office des céréales ou l'Office national de l'huile[[266]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-268), le secteur agricole est de plus en plus pris en charge par des groupes privés souvent présents dans l'[industrie agroalimentaire](https://fr.wikipedia.org/wiki/Industrie_agroalimentaire "Industrie agroalimentaire") tel le groupe [Poulina](https://fr.wikipedia.org/wiki/Poulina "Poulina"), le premier groupe privé du pays.
+### Industrie
+Article détaillé: [Industrie en Tunisie](https://fr.wikipedia.org/wiki/Industrie_en_Tunisie "Industrie en Tunisie").
+En matière industrielle, la Tunisie est le premier exportateur d'[Afrique](https://fr.wikipedia.org/wiki/Afrique "Afrique") en valeur absolue: elle est ainsi passée devant l'[Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud") en 1999[[267]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-269). Les secteurs du [textile](https://fr.wikipedia.org/wiki/Textile "Textile") et de l'[agroalimentaire](https://fr.wikipedia.org/wiki/Secteur_agroalimentaire "Secteur agroalimentaire") représentent 50% de la production et 60% de l'emploi de l'industrie manufacturière. Mais, après avoir cru à un rythme annuel de 2,1% (entre 2000 et 2005), l'industrie tunisienne fait face à la concurrence étrangère. Toutefois, les exportations de produits [mécaniques](https://fr.wikipedia.org/wiki/M%C3%A9canique_\(technique\) "Mécanique \(technique\)") et électriques se sont multipliées par cinq entre 1995 et 2005[[258]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-express100105-260). Quatrième fournisseur de l'Union européenne en produits textiles, elle était jusqu'en 2002 le premier fournisseur de la France avant d'être surclassée par la Chine en 2003.
+### Services
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cafe_Delices_Sidi_Bou_Said.JPG/250px-Cafe_Delices_Sidi_Bou_Said.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Cafe_Delices_Sidi_Bou_Said.JPG?uselang=fr)Café Sidi Chabâane de [Sidi Bou Saïd](https://fr.wikipedia.org/wiki/Sidi_Bou_Sa%C3%AFd "Sidi Bou Saïd").
+Dans le secteur des [services](https://fr.wikipedia.org/wiki/Service_\(%C3%A9conomie\) "Service \(économie\)"), le développement du [tourisme](https://fr.wikipedia.org/wiki/Tourisme_en_Tunisie "Tourisme en Tunisie") remonte aux années 1960 grâce à l'action conjuguée de l'État et de groupes privés. Le secteur touristique représente 6,5% du [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") et fournit 340 000 emplois dont 85 000 emplois directs, soit 11,5% de la [population active](https://fr.wikipedia.org/wiki/Population_active "Population active") occupée avec une forte part d'emploi saisonnier. Outre le tourisme balnéaire majoritaire, le tourisme saharien ([Douz](https://fr.wikipedia.org/wiki/Douz "Douz") et [Tozeur](https://fr.wikipedia.org/wiki/Tozeur "Tozeur") attirant chaque année plus de 250 000 touristes durant toute l'année) est en fort développement. Le [tourisme vert](https://fr.wikipedia.org/wiki/%C3%89cotourisme "Écotourisme"), la [thalassothérapie](https://fr.wikipedia.org/wiki/Thalassoth%C3%A9rapie "Thalassothérapie") et le [tourisme médical](https://fr.wikipedia.org/wiki/Tourisme_m%C3%A9dical "Tourisme médical") apparaissent et croissent très rapidement: le gouvernement manifeste en janvier 2024 le souhait de promouvoir l'investissement dans le [tourisme durable](https://fr.wikipedia.org/wiki/Tourisme_durable "Tourisme durable")[[268]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-270), alors bénéficiant d'un [regain de popularité chez les visiteurs](https://fr.wikipedia.org/wiki/Tourisme_durable#Impact_environnemental_et_popularit%C3%A9 "Tourisme durable").
+Dès le début du millénaire, le [WWF](https://fr.wikipedia.org/wiki/WWF "WWF") exhorte les professionnels du tourisme réunis à [Berlin](https://fr.wikipedia.org/wiki/Berlin "Berlin") à développer dans les pays de la Méditerranée un [tourisme durable](https://fr.wikipedia.org/wiki/Tourisme_durable "Tourisme durable"), en estimant qu'au cours des vingt prochaines années, un groupe de pays méditerranéens comme le [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc"), la Tunisie, la [Grèce](https://fr.wikipedia.org/wiki/Gr%C3%A8ce "Grèce"), la [Turquie](https://fr.wikipedia.org/wiki/Turquie "Turquie") et la [Croatie](https://fr.wikipedia.org/wiki/Croatie "Croatie") subiraient une montée du tourisme étranger, totalisant environ 350 millions de visiteurs par an[[269]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-AFPTD-271). Il appelle alors l'industrie du tourisme à adopter et encourager des pratiques plus responsables afin de renverser la vapeur en défendant des programmes de développement écologiques[[269]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-AFPTD-271).
+Le secteur du commerce et de la distribution, qui emploie plus de 500 000 personnes et participe à 10,7% du PIB national, se divise en deux catégories[[270]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-272). Ainsi, le secteur se caractérise encore par la prédominance du commerce traditionnel avec 88% (2006) du [chiffre d'affaires](https://fr.wikipedia.org/wiki/Chiffre_d'affaires "Chiffre d'affaires"), l'essentiel des transactions commerciales étant réalisé par de petits commerçants. La distribution moderne, qui compte pour 12% du chiffre d'affaires global et regroupe des enseignes nationales et internationales, n'est apparue que lorsque le marché s'est libéralisé en 1999[[271]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-POS-273).
+### Infrastructures
+Articles détaillés: [Transports en Tunisie](https://fr.wikipedia.org/wiki/Transports_en_Tunisie "Transports en Tunisie"), [Télécommunications en Tunisie](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9communications_en_Tunisie "Télécommunications en Tunisie") et [Eau potable et assainissement en Tunisie](https://fr.wikipedia.org/wiki/Eau_potable_et_assainissement_en_Tunisie "Eau potable et assainissement en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/PortRades_2.jpg/250px-PortRades_2.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:PortRades_2.jpg?uselang=fr)Vue aérienne du port de [Radès](https://fr.wikipedia.org/wiki/Rad%C3%A8s "Radès"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/AeroportTunisCarthage.jpg/250px-AeroportTunisCarthage.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:AeroportTunisCarthage.jpg?uselang=fr)Terminal de l'[aéroport de Tunis](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Tunis-Carthage "Aéroport international de Tunis-Carthage"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Enfidha_Hammamet_International_Airport.jpg/250px-Enfidha_Hammamet_International_Airport.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Enfidha_Hammamet_International_Airport.jpg?uselang=fr)Terminal de l'[aéroport d'Enfidha](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_d'Enfidha-Hammamet "Aéroport international d'Enfidha-Hammamet").
+En matière de transport, la Tunisie compte sept ports de commerce ([Radès](https://fr.wikipedia.org/wiki/Rad%C3%A8s "Radès"), [Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax"), [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte"), [Gabès](https://fr.wikipedia.org/wiki/Gab%C3%A8s "Gabès"), [Sousse](https://fr.wikipedia.org/wiki/Sousse "Sousse"), [Zarzis](https://fr.wikipedia.org/wiki/Zarzis "Zarzis") et [La Goulette](https://fr.wikipedia.org/wiki/La_Goulette "La Goulette")) tandis qu'un port en eaux profondes va être réalisé à [Enfida](https://fr.wikipedia.org/wiki/Enfida "Enfida"). Placés sous la gestion de l'Office de la marine marchande et des ports, ils assurent à eux seuls 96% du commerce extérieur tunisien[[271]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-POS-273). Avec ses 550 000 passagers et ses 415 000 [croisiéristes](https://fr.wikipedia.org/wiki/Navire_de_croisi%C3%A8re "Navire de croisière") enregistrés en 2004, le port de La Goulette est l'une des destinations les plus appréciées dans l'ouest du [bassin méditerranéen](https://fr.wikipedia.org/wiki/Bassin_m%C3%A9diterran%C3%A9en "Bassin méditerranéen")[[271]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-POS-273). La [Compagnie tunisienne de navigation](https://fr.wikipedia.org/wiki/Compagnie_tunisienne_de_navigation "Compagnie tunisienne de navigation"), société publique, est le principal [armateur](https://fr.wikipedia.org/wiki/Armateur "Armateur") du pays et assure des lignes régulières reliant les deux rives de la [mer Méditerranée](https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e "Mer Méditerranée") (vers [Marseille](https://fr.wikipedia.org/wiki/Marseille "Marseille"), [Gênes](https://fr.wikipedia.org/wiki/G%C3%AAnes "Gênes"), [Livourne](https://fr.wikipedia.org/wiki/Livourne "Livourne") et [Barcelone](https://fr.wikipedia.org/wiki/Barcelone "Barcelone")).
+La Tunisie dispose de plusieurs aéroports civils, dont neuf aéroports internationaux gérés par l'[Office de l'aviation civile et des aéroports](https://fr.wikipedia.org/wiki/Office_de_l'aviation_civile_et_des_a%C3%A9roports "Office de l'aviation civile et des aéroports"): [Tunis](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Tunis-Carthage "Aéroport international de Tunis-Carthage"), [Monastir](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Monastir_Habib-Bourguiba "Aéroport international de Monastir Habib-Bourguiba"), [Djerba](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Djerba-Zarzis "Aéroport international de Djerba-Zarzis"), [Enfidha](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_d'Enfidha-Hammamet "Aéroport international d'Enfidha-Hammamet"), [Sfax](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Sfax-Thyna "Aéroport international de Sfax-Thyna"), [Tozeur](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Tozeur-Nefta "Aéroport international de Tozeur-Nefta"), [Tabarka](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Tabarka-A%C3%AFn_Draham "Aéroport international de Tabarka-Aïn Draham"), [Gafsa](https://fr.wikipedia.org/wiki/A%C3%A9roport_international_de_Gafsa-Ksar "Aéroport international de Gafsa-Ksar") et [Gabès-Matmata](https://fr.wikipedia.org/wiki/A%C3%A9roport_de_Gab%C3%A8s-Matmata "Aéroport de Gabès-Matmata")[[272]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-274). Tunis est le principal aéroport du pays avec une capacité de 7 millions de passagers en 2024[[273]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-275).
+Le [transport ferroviaire](https://fr.wikipedia.org/wiki/Transport_ferroviaire_en_Tunisie "Transport ferroviaire en Tunisie") assure plus du tiers des déplacements nationaux à travers un réseau national de 2 167 km de [voies ferrées](https://fr.wikipedia.org/wiki/Voie_ferr%C3%A9e "Voie ferrée")[[274]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-276). Le réseau est exploité par la [Société nationale des chemins de fer tunisiens](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_nationale_des_chemins_de_fer_tunisiens "Société nationale des chemins de fer tunisiens") (SNCFT) ainsi que par la [Société des transports de Tunis](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_des_transports_de_Tunis "Société des transports de Tunis") spécialisée dans le transport urbain dans la région de [Tunis](https://fr.wikipedia.org/wiki/Tunis "Tunis").
+Le réseau routier s'étend pour sa part sur 19 300 km dont 12 655 km de [routes goudronnées](https://fr.wikipedia.org/wiki/Goudron "Goudron") ainsi que de trois [autoroutes](https://fr.wikipedia.org/wiki/Liste_des_autoroutes_de_la_Tunisie "Liste des autoroutes de la Tunisie") reliant Tunis à [Sfax](https://fr.wikipedia.org/wiki/Sfax "Sfax") au sud, [Bizerte](https://fr.wikipedia.org/wiki/Bizerte "Bizerte") au nord et Oued Zarga à l'ouest. Au sein de ce réseau, la |vitesse est limitée à 50km/h en agglomération (relevée à 70km/h sur les voies urbaines à séparateur central), 90km/h sur route hors agglomération et 110km/h sur autoroute[[275]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-277). Le secteur du transport routier domine les transports terrestres de voyageurs et de marchandises. Il est néanmoins contrôlé par les sociétés étrangères à cause du petit nombre d'entreprises tunisiennes.
+Les infrastructures de [télécommunications](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9communications "Télécommunications") sont largement développées[[276]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MEDI-278): le réseau téléphonique compte 1 863 140 abonnements fixes[[277]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-279) et 16 400 000 abonnements mobiles[[278]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-280) en 2023; 72% de la population utilise [Internet](https://fr.wikipedia.org/wiki/Internet "Internet")[[279]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-281). L'opérateur public, [Tunisie Télécom](https://fr.wikipedia.org/wiki/Tunisie_T%C3%A9l%C3%A9com "Tunisie Télécom"), domine le marché de la [téléphonie fixe](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phonie_fixe "Téléphonie fixe") avec 69,5% des abonnements en décembre 2024 contre 16,8% pour [Ooredoo](https://fr.wikipedia.org/wiki/Ooredoo_\(Tunisie\) "Ooredoo \(Tunisie\)") et 13,7% pour [Orange Tunisie](https://fr.wikipedia.org/wiki/Orange_Tunisie "Orange Tunisie")[[280]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-282) alors que Ooredoo domine le marché de la [téléphonie mobile](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phonie_mobile "Téléphonie mobile") avec 42,8% des abonnements contre 30,4% pour Tunisie Télécom et 26,6% pour Orange Tunisie[[281]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-283).
+L'[Agence tunisienne d'Internet](https://fr.wikipedia.org/wiki/Agence_tunisienne_d'Internet "Agence tunisienne d'Internet") gère le réseau Web sur le plan national qui compte douze [fournisseurs d'accès](https://fr.wikipedia.org/wiki/Fournisseur_d'acc%C3%A8s_%C3%A0_Internet "Fournisseur d'accès à Internet") (sept publics et cinq privés). Par ailleurs, 281 _publinets_ (accès publics à Internet) sont répartis sur l'ensemble du territoire[[276]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-MEDI-278).
+### Énergie
+Article détaillé: [Énergie en Tunisie](https://fr.wikipedia.org/wiki/%C3%89nergie_en_Tunisie "Énergie en Tunisie").
+Les [ressources naturelles](https://fr.wikipedia.org/wiki/Ressource_naturelle "Ressource naturelle") de la Tunisie sont modestes si on les compare à celles de ses voisines: l'Algérie et la Libye. Le secteur de l'industrie est le premier consommateur d'énergie, avec une part de 36% de la consommation globale, suivi par le secteur du transport avec 30% de la consommation totale[[282]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-284).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Train_loaded_with_phosphate_rock%2C_Metlaoui_Tunisia-4298B.jpg/250px-Train_loaded_with_phosphate_rock%2C_Metlaoui_Tunisia-4298B.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Train_loaded_with_phosphate_rock,_Metlaoui_Tunisia-4298B.jpg?uselang=fr)Train de phosphates près de [Métlaoui](https://fr.wikipedia.org/wiki/M%C3%A9tlaoui "Métlaoui").
+Le phosphate est extrait par la [Compagnie des phosphates de Gafsa](https://fr.wikipedia.org/wiki/Compagnie_des_phosphates_de_Gafsa "Compagnie des phosphates de Gafsa") dans plusieurs gisements situés dans le centre du pays et en particulier dans la région de [Gafsa](https://fr.wikipedia.org/wiki/Gafsa "Gafsa"). 15% du phosphate produit sont vendus à l'état brut et 85% sont transformés par le [Groupe chimique tunisien](https://fr.wikipedia.org/wiki/Groupe_chimique_tunisien "Groupe chimique tunisien")[[283]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-285). En 1999, la Tunisie était le cinquième producteur mondial de phosphate avec 5,5% du total mondial[[284]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-286).
+Selon les estimations, la Tunisie possède des réserves prouvées de [pétrole brut](https://fr.wikipedia.org/wiki/P%C3%A9trole_brut "Pétrole brut") estimées à 425 millions de [barils](https://fr.wikipedia.org/wiki/Baril "Baril") en janvier 2015[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). La majorité est située dans le [golfe de Gabès](https://fr.wikipedia.org/wiki/Golfe_de_Gab%C3%A8s "Golfe de Gabès") et le bassin de Ghadamès dans le sud du pays. Le pays produit près de 55 000 barils de pétrole brut par jour en 2015[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287), dont la majorité provient de seulement six concessions (Adam, Ashtart, Didon, El Borma, Miskar et Oued Zar) ne parvient pas à couvrir la demande locale, qui se monte à 86 000 barils par jour en 2013[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). Le secteur est dominé par une société publique, l'[Entreprise tunisienne d'activités pétrolières](https://fr.wikipedia.org/wiki/Entreprise_tunisienne_d'activit%C3%A9s_p%C3%A9troli%C3%A8res "Entreprise tunisienne d'activités pétrolières") dont la mission est de gérer les activités d'exploration et de production de pétrole mais aussi de [gaz naturel](https://fr.wikipedia.org/wiki/Gaz_naturel "Gaz naturel") pour le compte du gouvernement.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Nawara_-_Fella1_field.JPG/250px-Nawara_-_Fella1_field.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Nawara_-_Fella1_field.JPG?uselang=fr)Puits Fella-1 du champ gazier de Nawara.
+Face aux limites de sa production pétrolière, le pays se tourne de plus en plus vers le gaz naturel pour couvrir sa demande en énergie. Le pays dispose de réserves prouvées de 65,13 milliards de pieds cubes en 2014[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287) dont deux-tiers sont offshore. En 2013, le pays produit 1,879 milliard de pieds cubes tout en consommant 4,079 milliards de pieds cubes durant la même année[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). 60% de la production provient des gisements exploités par [British Gas](https://fr.wikipedia.org/wiki/British_Gas "British Gas"), le plus important investisseur énergétique en Tunisie, à Miskar et Hasdrubal[[286]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-288). Les entreprises tunisiennes constituent 19% du marché de l'exploration et de la production du pays. L'ETAP gère les réserves nationales et agit en tant que partenaire principal dans presque toutes les activités d'exploration et de production car elle détient 51% de toutes les concessions. Mais ce sont les entreprises américaines qui dominent avec 38% du marché, suivi par les entreprises européennes avec 19%, canadiennes avec 12% et [asiatiques](https://fr.wikipedia.org/wiki/Asie "Asie") avec 10%.
+La grande majorité de l'électricité du pays, gérée par la [Société tunisienne de l'électricité et du gaz](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_tunisienne_de_l'%C3%A9lectricit%C3%A9_et_du_gaz "Société tunisienne de l'électricité et du gaz"), est produite à base d'[énergies fossiles](https://fr.wikipedia.org/wiki/Combustible_fossile "Combustible fossile") (95,9% de la capacité totale), le résidu étant produit à partir d'[énergie hydroélectrique](https://fr.wikipedia.org/wiki/%C3%89nergie_hydro%C3%A9lectrique "Énergie hydroélectrique") et [éolienne](https://fr.wikipedia.org/wiki/%C3%89nergie_%C3%A9olienne "Énergie éolienne"). Le pays dispose en 2012 d'une capacité totale de 16,9 milliards de [kWh](https://fr.wikipedia.org/wiki/Kilowatt-heure "Kilowatt-heure") alors que la consommation atteint 13,31 milliards de kWh[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). Dans le même temps, le gouvernement cherche à développer les [énergies renouvelables](https://fr.wikipedia.org/wiki/%C3%89nergie_renouvelable "Énergie renouvelable")[[287]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-289).
+Entre juillet 2024 et juin 2025, la Tunisie importe de [Chine](https://fr.wikipedia.org/wiki/Chine "Chine") 655 MW de [panneaux solaires](https://fr.wikipedia.org/wiki/Capteur_solaire_photovolta%C3%AFque "Capteur solaire photovoltaïque"), se classant sixième en Afrique selon un rapport d'Ember sur l'essor de l'[énergie solaire](https://fr.wikipedia.org/wiki/%C3%89nergie_solaire "Énergie solaire")[[288]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-290).
+## Démographie
+Articles détaillés: [Tunisiens](https://fr.wikipedia.org/wiki/Tunisiens "Tunisiens"), [Démographie de la Tunisie](https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Tunisie "Démographie de la Tunisie") et [Diaspora tunisienne](https://fr.wikipedia.org/wiki/Diaspora_tunisienne "Diaspora tunisienne").
+La [démographie](https://fr.wikipedia.org/wiki/D%C3%A9mographie "Démographie") de la Tunisie se caractérise par l'homogénéité de la population en matière de composantes culturelles ou religieuses. Ainsi, sur un fond [carthaginois](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise")[[289]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-291) et bien que le pays ait été influencé par diverses cultures et civilisations au cours de son histoire, telles que les Romains avec la [province d'Afrique](https://fr.wikipedia.org/wiki/Province_d'Afrique "Province d'Afrique") et les Byzantins avec l'[exarchat de Carthage](https://fr.wikipedia.org/wiki/Exarchat_de_Carthage "Exarchat de Carthage"), ce sont les [Arabes](https://fr.wikipedia.org/wiki/Arabes "Arabes") qui marquent le plus l'identité tunisienne: l'écrasante majorité des Tunisiens sont [arabophones](https://fr.wikipedia.org/wiki/Arabe "Arabe") et [musulmans](https://fr.wikipedia.org/wiki/Islam "Islam")[[290]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-292).
+Les premiers Arabes orientaux, venus à partir du VIIesiècle avec les [conquêtes musulmanes](https://fr.wikipedia.org/wiki/Conqu%C3%AAte_musulmane_du_Maghreb "Conquête musulmane du Maghreb"), contribuent à l'[islamisation](https://fr.wikipedia.org/wiki/Islamisation "Islamisation") de la majeure partie de l'[Ifriqiya](https://fr.wikipedia.org/wiki/Ifriqiya "Ifriqiya"). À cette occasion se créent quelques villes nouvelles comme [Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan") et [Mahdia](https://fr.wikipedia.org/wiki/Mahdia "Mahdia"). C'est à partir du XIesiècle, avec l'arrivée des [tribus](https://fr.wikipedia.org/wiki/Tribu_\(ethnologie\) "Tribu \(ethnologie\)") [Banu Hilal](https://fr.wikipedia.org/wiki/Hilaliens "Hilaliens") et [Banu Sulaym](https://fr.wikipedia.org/wiki/Banu_Sulaym "Banu Sulaym"), que l'[arabisation](https://fr.wikipedia.org/wiki/Arabisation "Arabisation") linguistique et culturelle devient déterminante[[291]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-293). Beaucoup de musulmans et de juifs arabophones arrivent également d'[Andalousie](https://fr.wikipedia.org/wiki/Al-Andalus "Al-Andalus") à la fin du XVesiècle.
+Certains groupes, descendants des Berbérophones présents dans le pays avant la fondation de [Carthage](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise"), ont cependant su conserver leur langue et leurs coutumes, souvent en raison de leur enclavement géographique[[292]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-294). Toutefois, les [berbérophones](https://fr.wikipedia.org/wiki/Langues_berb%C3%A8res "Langues berbères"), qui représentent un important pourcentage au Maroc, en Algérie et en Libye, restent peu nombreux en Tunisie[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287).
+La quasi-totalité de la population tunisienne est de [confession musulmane](https://fr.wikipedia.org/wiki/Islam "Islam"), majoritairement [sunnite](https://fr.wikipedia.org/wiki/Sunnisme "Sunnisme") de rite [rite malikite](https://fr.wikipedia.org/wiki/Malikisme "Malikisme")[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287) La [Constitution de 2014](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2014 "Constitution tunisienne de 2014") dispose par ailleurs que «la Tunisie est un État libre, indépendant et souverain; sa religion est l'islam»[[293]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-295). La [communauté juive tunisienne](https://fr.wikipedia.org/wiki/Histoire_des_Juifs_en_Tunisie "Histoire des Juifs en Tunisie"), présente depuis plus de deux millénaires mais qui a fortement diminué au cours du XXesiècle, est estimée à environ un millier de personnes, vivant surtout à [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba"), [Zarzis](https://fr.wikipedia.org/wiki/Zarzis "Zarzis") et Tunis[[294]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-staterel-296). Il existe également une minorité chrétienne, composée en grande partie d'étrangers résidant en Tunisie[[294]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-staterel-296). Quant aux groupes [nomades](https://fr.wikipedia.org/wiki/Nomadisme "Nomadisme") autrefois présents sur le territoire tunisien, ils se sont largement sédentarisés au cours du XXesiècle[[295]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-297).
+La Tunisie a dépassé le cap des dix millions d'habitants en 2005, ce qui correspond à un triplement de sa population depuis 1956 (3 448 000 habitants) et à un doublement depuis le début des années 1970. Néanmoins, la [croissance démographique](https://fr.wikipedia.org/wiki/Croissance_d%C3%A9mographique "Croissance démographique") ralentit, le pays accélérant sa [transition démographique](https://fr.wikipedia.org/wiki/Transition_d%C3%A9mographique "Transition démographique") dans les années 1990. Ainsi la Tunisie possède la population la plus âgée d'Afrique[[296]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-298). En 2012, l'[indice de fécondité](https://fr.wikipedia.org/wiki/Taux_de_f%C3%A9condit%C3%A9 "Taux de fécondité") est estimé à 2,2 enfants par femme.
+La Tunisie est aussi un pays qui connaît un taux important d'[émigration](https://fr.wikipedia.org/wiki/Migration_humaine "Migration humaine"): le nombre de Tunisiens résidant à l'étranger est évalué en 2012 à 1 223 213 personnes, dont 84,5% résident en [Europe](https://fr.wikipedia.org/wiki/Europe "Europe")[[297]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-299). La Tunisie est par ailleurs l'un des principaux points de départ des migrants préparant la traversée de la Méditerranée pour rejoindre l'Europe. Selon le [ministre de l'Intérieur](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'Int%C3%A9rieur_\(Tunisie\) "Ministère de l'Intérieur \(Tunisie\)"), près de 23 000 migrants irréguliers sont présents dans le pays en 2024[[298]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-300).  
+Répartition de la population entre 1966 et 2014[[299]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-301)  
+| Année  | Population (en millions)  | Homme (%)  | Femme (%)  |  0-4 ans (%)  |  5-14 ans (%)  |  15-59 ans (%)  |  60 ans et plus (%)  | Milieu communal (%)  | Milieu non communal (%)  |  
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  
+| 1966  | 4,533  | 51  | 49  | 18,6  | 27,9  | 48  | 5,5  | 40,1  | 59,9  |  
+| 1975  | 5,588  | 50,8  | 49,2  | 16  | 27,8  | 50,4  | 5,8  | 47,5  | 52,5  |  
+| 1984  | 6,966  | 50,9  | 49,1  | 14,6  | 25,1  | 53,6  | 6,7  | 52,8  | 47,2  |  
+| 1994  | 8,785  | 50,6  | 49,4  | 11  | 23,8  | 56,9  | 8,3  | 61  | 39  |  
+| 2004  | 9,911  | 50,1  | 49,9  | 8,1  | 18,6  | 64  | 9,3  | 64,9  | 35,1  |  
+| 2014  | 10,983  | 49,8  | 50,2  | 9,2  | 15,1  | 64,3  | 11,4  | 67,7  | 32,3  |  
+## Culture
+Article détaillé: [Culture de la Tunisie](https://fr.wikipedia.org/wiki/Culture_de_la_Tunisie "Culture de la Tunisie").
+La culture de la Tunisie se diversifie par un héritage [historique](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie "Histoire de la Tunisie") multimillénaire et une [position géographique](https://fr.wikipedia.org/wiki/G%C3%A9ographie_de_la_Tunisie "Géographie de la Tunisie") en plein centre du [bassin méditerranéen](https://fr.wikipedia.org/wiki/Bassin_m%C3%A9diterran%C3%A9en "Bassin méditerranéen"), berceau des [civilisations](https://fr.wikipedia.org/wiki/Civilisation "Civilisation") les plus prestigieuses et des principales [religions](https://fr.wikipedia.org/wiki/Religion "Religion") [monothéistes](https://fr.wikipedia.org/wiki/Monoth%C3%A9isme "Monothéisme"). La Tunisie a en effet été un carrefour de civilisations et sa culture reflète les traces des cultures [libyque](https://fr.wikipedia.org/wiki/Libyens_anciens "Libyens anciens"), [punique](https://fr.wikipedia.org/wiki/Civilisation_carthaginoise "Civilisation carthaginoise"), [latine](https://fr.wikipedia.org/wiki/Culture_latine "Culture latine"), [arabe](https://fr.wikipedia.org/wiki/Arabes "Arabes"), [musulmane](https://fr.wikipedia.org/wiki/Islam "Islam"), [ottomane](https://fr.wikipedia.org/wiki/Empire_ottoman "Empire ottoman"), et [européenne](https://fr.wikipedia.org/wiki/Europe "Europe"), ainsi que l'influence des dynasties successives qui ont régné sur le pays.
+### Religion
+Article détaillé: [Religion en Tunisie](https://fr.wikipedia.org/wiki/Religion_en_Tunisie "Religion en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Fideles_a%27_la_grande_mosque%27e.JPG/250px-Fideles_a%27_la_grande_mosque%27e.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Fideles_a'_la_grande_mosque'e.JPG?uselang=fr)Prière nocturne à la [grande mosquée de Kairouan](https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Kairouan "Grande mosquée de Kairouan"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Tunisie_mus%C3%A9e_Djerba_5.jpg/250px-Tunisie_mus%C3%A9e_Djerba_5.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisie_mus%C3%A9e_Djerba_5.jpg?uselang=fr)_[Khamsas](https://fr.wikipedia.org/wiki/Khamsa_\(symbole\) "Khamsa \(symbole\)")_ au [musée du patrimoine traditionnel de Djerba](https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_patrimoine_traditionnel_de_Djerba "Musée du patrimoine traditionnel de Djerba").
+L'[islam](https://fr.wikipedia.org/wiki/Islam "Islam") est la religion principale et officielle de la Tunisie[[294]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-staterel-296). La grande majorité des [musulmans](https://fr.wikipedia.org/wiki/Musulman "Musulman") tunisiens sont [sunnites](https://fr.wikipedia.org/wiki/Sunnisme "Sunnisme") de [rite](https://fr.wikipedia.org/wiki/Madhhab "Madhhab") [malikite](https://fr.wikipedia.org/wiki/Malikisme "Malikisme"), le reste étant [hanafite](https://fr.wikipedia.org/wiki/Hanafisme "Hanafisme")[[300]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta2-302) ou [ibadites](https://fr.wikipedia.org/wiki/Ibadisme "Ibadisme")[[301]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-303). Les Tunisiens conservent paradoxalement quelques croyances comme le [mauvais œil](https://fr.wikipedia.org/wiki/Mauvais_%C5%93il "Mauvais œil"). Par ailleurs, le [soufisme](https://fr.wikipedia.org/wiki/Soufisme "Soufisme") tient une grande place dans le pays qui est parsemé de constructions blanches que sont les [zaouïas](https://fr.wikipedia.org/wiki/Zaou%C3%AFa_\(%C3%A9difice_religieux\) "Zaouïa \(édifice religieux\)"). Ce sont les tombeaux de [saints](https://fr.wikipedia.org/wiki/Saint "Saint") qui sont censés posséder un privilège dans l'[au-delà](https://fr.wikipedia.org/wiki/S%C3%A9jour_des_morts "Séjour des morts") qui leur permet d'être un lien entre l'homme et [Dieu](https://fr.wikipedia.org/wiki/Allah "Allah"). De nos jours, certains Tunisiens continuent à les fréquenter et à leur demander des faveurs.
+Les fêtes religieuses musulmanes ([Aïd al-Adha](https://fr.wikipedia.org/wiki/A%C3%AFd_al-Adha "Aïd al-Adha"), [Aïd el-Fitr](https://fr.wikipedia.org/wiki/A%C3%AFd_el-Fitr "Aïd el-Fitr"), [Mouled](https://fr.wikipedia.org/wiki/Mawlid "Mawlid"),etc.) sont considérées comme des [jours fériés](https://fr.wikipedia.org/wiki/F%C3%AAtes_et_jours_f%C3%A9ri%C3%A9s_en_Tunisie "Fêtes et jours fériés en Tunisie") mais le vendredi n'est pas chômé.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/El_Ghriba-01-sparklenose.jpg/250px-El_Ghriba-01-sparklenose.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:El_Ghriba-01-sparklenose.jpg?uselang=fr)Intérieur de la synagogue de la Ghriba (Djerba).
+Le [christianisme](https://fr.wikipedia.org/wiki/Christianisme "Christianisme") et le [judaïsme](https://fr.wikipedia.org/wiki/Juda%C3%AFsme "Judaïsme") sont devenus très minoritaires en Tunisie mais le pays se caractérise par sa tolérance et son ouverture aux autres cultures qui ont fait son identité, notamment sur l'île de [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba")[[302]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-304),[[303]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-305). La [synagogue de la Ghriba](https://fr.wikipedia.org/wiki/Synagogue_de_la_Ghriba_\(Djerba\) "Synagogue de la Ghriba \(Djerba\)") est l'une des plus anciennes [synagogues](https://fr.wikipedia.org/wiki/Synagogue "Synagogue") au monde et la plus ancienne utilisée sans interruption. Beaucoup de [Juifs d'origine tunisienne](https://fr.wikipedia.org/wiki/Histoire_des_Juifs_en_Tunisie "Histoire des Juifs en Tunisie") la considèrent comme un lieu de [pèlerinage](https://fr.wikipedia.org/wiki/P%C3%A8lerinage "Pèlerinage"). Chaque année, des célébrations sont organisées à raison de son ancienneté et la légende selon laquelle elle aurait été construite en utilisant des pierres du [temple de Salomon](https://fr.wikipedia.org/wiki/Temple_de_Salomon "Temple de Salomon")[[304]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-306).
+La [Constitution de 2022](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2022 "Constitution tunisienne de 2022"), tout comme [celle de 1959](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_1959 "Constitution tunisienne de 1959"), prévoit l'exercice libre de la foi tant qu'elle ne porte pas atteinte à l'ordre public[[294]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-staterel-296). Les gouvernements des présidents [Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") et [Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali") respectent généralement ce droit mais ne permettent pas l'établissement de partis politiques basés sur la [religion](https://fr.wikipedia.org/wiki/Religion "Religion"), interdisent le [prosélytisme](https://fr.wikipedia.org/wiki/Pros%C3%A9lytisme "Prosélytisme") non-musulman, la [polygamie](https://fr.wikipedia.org/wiki/Polygamie "Polygamie")[[305]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-307). Les [minorités](https://fr.wikipedia.org/wiki/Minorit%C3%A9 "Minorité") religieuses connaissent néanmoins deux discriminations: le [président de la République tunisienne](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_tunisienne "Président de la République tunisienne") ne peut être d'une autre confession que celle musulmane et, s'il n'existe aucune interdiction légale du prosélytisme, la loi criminalise les [conversions forcées](https://fr.wikipedia.org/wiki/Conversion_forc%C3%A9e "Conversion forcée")[[294]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-staterel-296).
+La [Constitution de 2014](https://fr.wikipedia.org/wiki/Constitution_tunisienne_de_2014 "Constitution tunisienne de 2014") exige de l'État qu'il garantisse la liberté de croyance et de conscience et le libre exercice du culte, protège le [sacré](https://fr.wikipedia.org/wiki/Sacr%C3%A9 "Sacré"), garantisse la neutralité des [lieux de culte](https://fr.wikipedia.org/wiki/Lieu_de_culte "Lieu de culte"), diffuse les valeurs de modération et de tolérance, proscrive l'accusation d'[apostasie](https://fr.wikipedia.org/wiki/Apostasie "Apostasie") et s'oppose à l'[incitation à la haine](https://fr.wikipedia.org/wiki/Incitation_%C3%A0_la_haine "Incitation à la haine") et à la violence[[1]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-const-lang-1).
+### Langues
+Article détaillé: [Langues en Tunisie](https://fr.wikipedia.org/wiki/Langues_en_Tunisie "Langues en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Douz_downtown_02.JPG/250px-Douz_downtown_02.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Douz_downtown_02.JPG?uselang=fr)Signalisation routière en arabe et français.
+La Tunisie est l'État du [Maghreb](https://fr.wikipedia.org/wiki/Maghreb "Maghreb") le plus homogène sur le plan linguistique[[306]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-Laval-308), la quasi-totalité de la population parlant l'[arabe tunisien](https://fr.wikipedia.org/wiki/Arabe_tunisien "Arabe tunisien") en tant que [langue maternelle](https://fr.wikipedia.org/wiki/Langue_maternelle "Langue maternelle") et [vernaculaire](https://fr.wikipedia.org/wiki/Langue_vernaculaire "Langue vernaculaire"), et comprenant l'[arabe littéral](https://fr.wikipedia.org/wiki/Arabe "Arabe"), qui est la [langue officielle](https://fr.wikipedia.org/wiki/Langue_officielle "Langue officielle") du pays[[1]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-const-lang-1). L'arabe tunisien est considéré comme un [dialecte](https://fr.wikipedia.org/wiki/Dialecte "Dialecte") dérivé de l'[arabe classique](https://fr.wikipedia.org/wiki/Arabe_classique "Arabe classique") — ou plus exactement un ensemble de dialectes[[307]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-309) — pour lesquels il n'existe aucun organisme officiel de normalisation[[308]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-310) et qui est surtout parlé dans le cadre d'un dialogue quotidien au sein de la famille. Selon des études linguistiques, il serait proche du [maltais](https://fr.wikipedia.org/wiki/Maltais "Maltais")[[309]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-311), qui n'est toutefois pas considéré comme un dialecte arabe pour des raisons sociolinguistiques. Le [berbère](https://fr.wikipedia.org/wiki/Chelha_tunisien "Chelha tunisien") est parlé par une minorité berbérophone, surtout dans le Sud du pays.
+Durant le [protectorat français de Tunisie](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie"), le [français](https://fr.wikipedia.org/wiki/Fran%C3%A7ais "Français") s'impose à travers les institutions nationales, particulièrement l'éducation, qui deviennent un fort vecteur de diffusion. À partir de l'indépendance, le pays s'arabise peu à peu, même si l'administration, la justice et l'enseignement restent longtemps bilingues[[310]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ghorbal27-312). Le pays est membre de l'[Organisation internationale de la francophonie](https://fr.wikipedia.org/wiki/Organisation_internationale_de_la_francophonie "Organisation internationale de la francophonie") depuis 1970[[311]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-313). De plus, les gouvernorats de Béja, Gafsa, Médenine, Monastir, Sfax, Sousse et Tunis sont membres de l'Association internationale des régions francophones[[312]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-314).
+Les années 1990 marquent un tournant avec l'arabisation des cours de sciences jusqu'à la fin du collège, avec toutes les difficultés occasionnées par ce type de processus, afin de faciliter l'accès aux études supérieures et ce dans un contexte de réhabilitation du référent arabo-islamique dans l'espace public[[310]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ghorbal27-312). En [octobre 1999](https://fr.wikipedia.org/wiki/Octobre_1999 "Octobre 1999"), les établissements commerciaux se voient contraints d'accorder deux fois plus de place aux caractères arabes qu'aux caractères latins[[310]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ghorbal27-312). Dans le même temps, l'administration se voit contrainte de communiquer exclusivement en arabe mais seuls les ministères de la [Défense](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_D%C3%A9fense_\(Tunisie\) "Ministère de la Défense \(Tunisie\)") et de la [Justice](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Justice_\(Tunisie\) "Ministère de la Justice \(Tunisie\)") et le [Parlement](https://fr.wikipedia.org/wiki/Chambre_des_d%C3%A9put%C3%A9s_\(Tunisie\) "Chambre des députés \(Tunisie\)") sont totalement arabisés[[306]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-Laval-308). Dans ce contexte, l'usage du français semble régresser malgré le nombre accru de diplômés du système d'enseignement, ce qui conduit au fait qu'une bonne pratique du français demeure un marqueur social important[[310]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ghorbal27-312). Puisqu'elle reste largement pratiquée dans les milieux d'affaires, l'univers médical et le monde culturel, on peut même considérer qu'elle s'est embourgeoisée[[310]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-ghorbal27-312).
+D'après les dernières estimations fournies par le gouvernement tunisien à l'Organisation internationale de la francophonie, le nombre de personnes ayant une certaine maîtrise du français est chiffré à 6,36 millions de personnes, soit 63,6% de la population[[313]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-315).
+### Médias
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/BatimentTelevisionTunisienneAvril2012.jpg/250px-BatimentTelevisionTunisienneAvril2012.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:BatimentTelevisionTunisienneAvril2012.jpg?uselang=fr)Siège de l'[Établissement de la télévision tunisienne](https://fr.wikipedia.org/wiki/%C3%89tablissement_de_la_t%C3%A9l%C3%A9vision_tunisienne "Établissement de la télévision tunisienne").
+Le [paysage audiovisuel](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_Tunisie "Télévision en Tunisie") tunisien se compose de deux chaînes de télévision publiques ([Télévision tunisienne 1](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_tunisienne_1 "Télévision tunisienne 1") et [Télévision tunisienne 2](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_tunisienne_2 "Télévision tunisienne 2")) ainsi que de chaînes de télévision privées nées du processus d'ouverture au secteur privé initié en 2003 et dont le nombre est renforcé après la [révolution de 2011](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne"): [Zitouna TV](https://fr.wikipedia.org/wiki/Zitouna_TV "Zitouna TV"), Al Mutawasit TV, [Al Janoubiya TV](https://fr.wikipedia.org/wiki/Al_Janoubiya_TV "Al Janoubiya TV"), [Al Qalam TV](https://fr.wikipedia.org/wiki/Al_Qalam_TV "Al Qalam TV"), [Hannibal TV](https://fr.wikipedia.org/wiki/Hannibal_TV "Hannibal TV"), [El Hiwar El Tounsi](https://fr.wikipedia.org/wiki/El_Hiwar_El_Tounsi "El Hiwar El Tounsi"), [Nessma](https://fr.wikipedia.org/wiki/Nessma_El_Jadida "Nessma El Jadida"), [Tunisna TV](https://fr.wikipedia.org/wiki/Tunisna_TV "Tunisna TV"), [Attessia TV](https://fr.wikipedia.org/wiki/Attessia_TV "Attessia TV") ou encore [TWT](https://fr.wikipedia.org/wiki/TWT "TWT").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Maison_de_la_Radio_Tunisienne_%C3%A0_Tunis.JPG/250px-Maison_de_la_Radio_Tunisienne_%C3%A0_Tunis.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Maison_de_la_Radio_Tunisienne_%C3%A0_Tunis.JPG?uselang=fr)Siège de la [radio tunisienne](https://fr.wikipedia.org/wiki/Radio_Tunis "Radio Tunis") à Tunis.
+Le [paysage radiophonique](https://fr.wikipedia.org/wiki/Liste_des_stations_de_radio_en_Tunisie "Liste des stations de radio en Tunisie") tunisien comprend des stations publiques nationales et régionales ainsi que des stations privées. La radio publique est administrée par l'[Établissement de la radio tunisienne](https://fr.wikipedia.org/wiki/%C3%89tablissement_de_la_radio_tunisienne "Établissement de la radio tunisienne"), qui exploite notamment les chaînes nationales que sont [Radio Tunis](https://fr.wikipedia.org/wiki/Radio_Tunis "Radio Tunis"), [RTCI](https://fr.wikipedia.org/wiki/Radio_Tunis_cha%C3%AEne_internationale "Radio Tunis chaîne internationale"), [Radio Jeunes](https://fr.wikipedia.org/wiki/Radio_Jeunes "Radio Jeunes") et [Radio Tunisie Culture](https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture "Radio Tunisie Culture"), ainsi que les stations régionales de [Radio Gafsa](https://fr.wikipedia.org/wiki/Radio_Gafsa "Radio Gafsa"), [Radio Le Kef](https://fr.wikipedia.org/wiki/Radio_Le_Kef "Radio Le Kef"), [Radio Monastir](https://fr.wikipedia.org/wiki/Radio_Monastir "Radio Monastir"), [Radio Sfax](https://fr.wikipedia.org/wiki/Radio_Sfax "Radio Sfax") et [Radio Tataouine](https://fr.wikipedia.org/wiki/Radio_Tataouine "Radio Tataouine")[[314]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-316). Parallèlement, plusieurs radios privées sont autorisées avec la libéralisation du secteur audiovisuel, parmi lesquelles [Express FM](https://fr.wikipedia.org/wiki/Express_FM "Express FM"), [IFM](https://fr.wikipedia.org/wiki/Radio_IFM "Radio IFM"), [Mosaïque FM](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_\(Tunisie\) "Mosaïque FM \(Tunisie\)"), [Jawhara FM](https://fr.wikipedia.org/wiki/Jawhara_FM "Jawhara FM"), [KnOOz FM](https://fr.wikipedia.org/wiki/KnOOz_FM "KnOOz FM"), [Ulysse FM](https://fr.wikipedia.org/wiki/Ulysse_FM "Ulysse FM"), [Diwan FM](https://fr.wikipedia.org/wiki/Diwan_FM "Diwan FM"), [Cap FM](https://fr.wikipedia.org/wiki/Cap_FM_\(Tunisie\) "Cap FM \(Tunisie\)") ou encore [Oasis FM](https://fr.wikipedia.org/wiki/Oasis_FM "Oasis FM")[[315]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-317).
+La [presse écrite](https://fr.wikipedia.org/wiki/Presse_en_Tunisie "Presse en Tunisie") connaît, sous les régimes autoritaires des présidents [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") puis [Zine el-Abidine Ben Ali](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali "Zine el-Abidine Ben Ali"), des périodes de libéralisation puis de [censure](https://fr.wikipedia.org/wiki/Censure_en_Tunisie "Censure en Tunisie"). La révolution constitue un tournant, avec l'autorisation donnée à près de 200 nouveaux journaux et revues de paraître[[316]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-318). Les [partis politiques](https://fr.wikipedia.org/wiki/Partis_politiques_en_Tunisie "Partis politiques en Tunisie") ont le droit de publier leurs propres journaux mais ceux des [partis d'opposition](https://fr.wikipedia.org/wiki/Zine_el-Abidine_Ben_Ali#Oppositions "Zine el-Abidine Ben Ali") n'ont longtemps eu qu'un tirage très limité.
+### Éducation
+Article détaillé: [Système éducatif en Tunisie](https://fr.wikipedia.org/wiki/Syst%C3%A8me_%C3%A9ducatif_en_Tunisie "Système éducatif en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/EcolePrimaireHerglaTunisie.JPG/250px-EcolePrimaireHerglaTunisie.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:EcolePrimaireHerglaTunisie.JPG?uselang=fr)École primaire à Hergla. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/ISU_taux_d%27alphab%C3%A9tisation_adultes_de_Tunisie_1985-2015.png/250px-ISU_taux_d%27alphab%C3%A9tisation_adultes_de_Tunisie_1985-2015.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:ISU_taux_d'alphab%C3%A9tisation_adultes_de_Tunisie_1985-2015.png?uselang=fr)Taux d'alphabétisation des adultes (1985-2015) selon l'[Institut de statistique de l'Unesco](https://fr.wikipedia.org/wiki/Institut_de_statistique_de_l'UNESCO "Institut de statistique de l'UNESCO"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tunisie_Universit%C3%A9_de_Sousse.jpg/250px-Tunisie_Universit%C3%A9_de_Sousse.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisie_Universit%C3%A9_de_Sousse.jpg?uselang=fr)Université de Sousse.
+L'éducation préscolaire non obligatoire, qui s'adresse aux enfants de trois à six ans[[317]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-loiedu-319), est dispensée dans les jardins d'enfants[[318]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-syst-320).
+L'enseignement de base est obligatoire et gratuit, de six à seize ans, et se répartit sur deux cycles: le premier cycle, d'une durée de six ans, est dispensé à l'école primaire alors que le deuxième cycle, d'une durée de trois ans, se déroule au collège[[317]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-loiedu-319),[[319]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-321).
+Ce parcours est sanctionné par le diplôme de fin d'études de l'enseignement de base permettant aux diplômés d'accéder à l'enseignement secondaire (toujours gratuit) dispensé au lycée durant quatre ans à partir de la réforme de 1995[[318]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-syst-320). Il comprend un tronc commun d'une année (trois jusqu'en 1991) au terme duquel les élèves sont orientés vers un deuxième cycle de trois ans comprenant sept filières (lettres, mathématiques, sciences expérimentales, sciences techniques, sciences de l'informatique, économie-gestion et sport) et sanctionné par le [baccalauréat](https://fr.wikipedia.org/wiki/Baccalaur%C3%A9at_en_Tunisie "Baccalauréat en Tunisie") permettant l'accès à l'[enseignement supérieur](https://fr.wikipedia.org/wiki/Enseignement_sup%C3%A9rieur_en_Tunisie "Enseignement supérieur en Tunisie")[[318]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-syst-320). Celui-ci compte notamment 179 établissements rattachés aux treize universités — dont cinq à Tunis, une à [Sousse](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Sousse "Université de Sousse"), une à [Sfax](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Sfax "Université de Sfax"), une à [Kairouan](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Kairouan "Université de Kairouan"), une à [Gabès](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Gab%C3%A8s "Université de Gabès"), une à [Gafsa](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Gafsa "Université de Gafsa"), une à [Monastir](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Monastir "Université de Monastir") et une à [Jendouba](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Jendouba "Université de Jendouba") — mais aussi 24 [instituts supérieurs des études technologiques](https://fr.wikipedia.org/wiki/Institut_sup%C3%A9rieur_des_%C3%A9tudes_technologiques "Institut supérieur des études technologiques") (ISET).
+La [formation professionnelle](https://fr.wikipedia.org/wiki/Formation_professionnelle "Formation professionnelle") est assurée par un ensemble d'opérateurs publics parmi lesquels figure l'Agence tunisienne de la formation professionnelle qui assure une tutelle pédagogique de l'ensemble des opérateurs publics et privés[[318]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-syst-320). Les diplômes délivrés après une formation initiale sont de trois niveaux: le certificat d'aptitude professionnelle (CAP) qui sanctionne un cycle de formation d'une durée minimale d'une année après l'enseignement de base, le brevet de technicien professionnel (BTP) qui sanctionne un cycle de formation d'une durée minimale d'une année après la fin du premier cycle de l'enseignement secondaire ou après l'obtention du CAP et le brevet de technicien supérieur qui sanctionne un cycle de formation d'une durée minimale de deux années après le baccalauréat ou après l'obtention du BTP[[318]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-syst-320).
+Alors que 21% du budget national est consacré en 2008 à l'éducation nationale, le nombre d'élèves inscrits dans les niveaux primaire et secondaire se monte à 2,1 millions en 2008 contre 2,4 millions en 2000 et 1,7 million en 1987; 370 000 étudiants sont inscrits dans le même temps dans l'enseignement supérieur[[320]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-322), soit 27% de la classe d'âge concernée[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56). En 2005, le taux d'[alphabétisation](https://fr.wikipedia.org/wiki/Alphab%C3%A9tisation "Alphabétisation") est de 76,2% et le taux de scolarisation des enfants de 12 à 17 ans, égal pour les garçons et les filles, est de 66%[[55]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-encarta-56).
+En 2015, le [ministère de l'Éducation](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'%C3%89ducation_\(Tunisie\) "Ministère de l'Éducation \(Tunisie\)") décide d'intégrer une solution numérique pour les élèves qui a pour but de perfectionner la qualité de l'apprentissage[[321]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-323).
+### Santé
+Article connexe: [Santé en Tunisie](https://fr.wikipedia.org/wiki/Sant%C3%A9_en_Tunisie "Santé en Tunisie").
+En 2013, les dépenses de santé représentent 7,1% du [PIB](https://fr.wikipedia.org/wiki/Produit_int%C3%A9rieur_brut "Produit intérieur brut") du pays[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). En 2010, on compte 1,22 médecins pour 1 000 habitants[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287).
+L'[espérance de vie](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_de_vie "Espérance de vie") à la naissance est de 75,9 ans en 2015, soit respectivement 73,8 ans pour les hommes et 78,1 ans pour les femmes[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287). La [mortalité infantile](https://fr.wikipedia.org/wiki/Mortalit%C3%A9_infantile "Mortalité infantile") est de 22,35 morts pour 1 000 naissances en 2015[[285]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-factbook-287).
+En 2020, en raison de la [pandémie de Covid-19](https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19_en_Tunisie "Pandémie de Covid-19 en Tunisie"), l'inquiétude s'étend au corps médical[[322]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-324). En 2021, la Tunisie franchit le seuil des 10 000 décès, le deuxième en Afrique avec un taux de mortalité élevé[[323]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-325).
+### Arts
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Nejib_Belkadhi_%2801%29%2C_Tunis%2C_13_f%C3%A9vrier_2015.jpg/250px-Nejib_Belkadhi_%2801%29%2C_Tunis%2C_13_f%C3%A9vrier_2015.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Nejib_Belkadhi_\(01\),_Tunis,_13_f%C3%A9vrier_2015.jpg?uselang=fr)Nejib Belkadhi lors de la cérémonie des _Tunisia Web Awards_ en 2015.
+Le [cinéma tunisien](https://fr.wikipedia.org/wiki/Cin%C3%A9ma_tunisien "Cinéma tunisien") s'affirme à partir des années 1960 avec la recherche d'une représentation authentique de la société tunisienne, avec par exemple _[Mokhtar](https://fr.wikipedia.org/wiki/Mokhtar_\(film\) "Mokhtar \(film\)")_ (1968) de [Sadok Ben Aïcha](https://fr.wikipedia.org/wiki/Sadok_Ben_A%C3%AFcha "Sadok Ben Aïcha")[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326). Les années 1970 sont caractérisées par une réflexion critique sur l'[histoire nationale](https://fr.wikipedia.org/wiki/Histoire_de_la_Tunisie "Histoire de la Tunisie") et les rapports de pouvoir, avec des œuvres comme _[Au pays du Tararanni](https://fr.wikipedia.org/wiki/Au_pays_du_Tararanni "Au pays du Tararanni")_ (1973), _[Sejnane](https://fr.wikipedia.org/wiki/Sejnane_\(film\) "Sejnane \(film\)")_ (1974) d'[Abdellatif Ben Ammar](https://fr.wikipedia.org/wiki/Abdellatif_Ben_Ammar "Abdellatif Ben Ammar") et _[Fatma 75](https://fr.wikipedia.org/wiki/Fatma_75 "Fatma 75")_ (1975) de [Salma Baccar](https://fr.wikipedia.org/wiki/Salma_Baccar "Salma Baccar") (première fiction réalisée par une cinéaste tunisienne)[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326). Dans les années 1980, le cinéma tunisien est marqué par un élargissement thématique et stylistique, avec _[Les Baliseurs du désert](https://fr.wikipedia.org/wiki/Les_Baliseurs_du_d%C3%A9sert "Les Baliseurs du désert")_ et _[Le Collier perdu de la colombe](https://fr.wikipedia.org/wiki/Le_Collier_perdu_de_la_colombe "Le Collier perdu de la colombe")_ de [Nacer Khémir](https://fr.wikipedia.org/wiki/Nacer_Kh%C3%A9mir "Nacer Khémir") ou _[L'Homme de cendres](https://fr.wikipedia.org/wiki/L'Homme_de_cendres_\(film\) "L'Homme de cendres \(film\)")_ (1986) de [Nouri Bouzid](https://fr.wikipedia.org/wiki/Nouri_Bouzid "Nouri Bouzid")[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326). Les années 1990 voient émerger des œuvres plus introspectives comme _[Les Silences du palais](https://fr.wikipedia.org/wiki/Les_Silences_du_palais "Les Silences du palais")_ (1994) de [Moufida Tlatli](https://fr.wikipedia.org/wiki/Moufida_Tlatli "Moufida Tlatli")[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326), récompensée de la [Caméra d'or](https://fr.wikipedia.org/wiki/Cam%C3%A9ra_d'or "Caméra d'or") à [Cannes](https://fr.wikipedia.org/wiki/Festival_de_Cannes_1994 "Festival de Cannes 1994")[[325]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-327). Au début des années 2000, des films comme _[Satin rouge](https://fr.wikipedia.org/wiki/Satin_rouge "Satin rouge")_ (2002) de [Raja Amari](https://fr.wikipedia.org/wiki/Raja_Amari "Raja Amari") interrogent les normes sociales contemporaines[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326). Après la [révolution de 2011](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne"), le cinéma tunisien se distingue par une diversité formelle accrue, avec _[Le Challat de Tunis](https://fr.wikipedia.org/wiki/Le_Challat_de_Tunis "Le Challat de Tunis")_ (2013) de [Kaouther Ben Hania](https://fr.wikipedia.org/wiki/Kaouther_Ben_Hania "Kaouther Ben Hania") et _Tlamess_ (2019) d'[Ala Eddine Slim](https://fr.wikipedia.org/wiki/Ala_Eddine_Slim "Ala Eddine Slim")[[324]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-10great-326), et un regain de visibilité mondiale: _[Hedi, un vent de liberté](https://fr.wikipedia.org/wiki/Hedi,_un_vent_de_libert%C3%A9 "Hedi, un vent de liberté")_ (2016) de [Mohamed Ben Attia](https://fr.wikipedia.org/wiki/Mohamed_Ben_Attia "Mohamed Ben Attia") remporte notamment l'[Ours d'argent du meilleur acteur](https://fr.wikipedia.org/wiki/Ours_d'argent_du_meilleur_acteur "Ours d'argent du meilleur acteur") à la [Berlinale](https://fr.wikipedia.org/wiki/Berlinale_2016 "Berlinale 2016")[[326]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-328) alors que _[L'Homme qui a vendu sa peau](https://fr.wikipedia.org/wiki/L'Homme_qui_a_vendu_sa_peau "L'Homme qui a vendu sa peau")_ (2020) de Ben Hania est le premier film tunisien nommé à l'[Oscar du meilleur film international](https://fr.wikipedia.org/wiki/Oscar_du_meilleur_film_international "Oscar du meilleur film international")[[327]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-329). La dynamique se poursuit avec _[Les Filles d'Olfa](https://fr.wikipedia.org/wiki/Les_Filles_d'Olfa "Les Filles d'Olfa")_ (2023), sélectionné en compétition officielle à [Cannes](https://fr.wikipedia.org/wiki/Festival_de_Cannes_2023 "Festival de Cannes 2023")[[328]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-330) puis nommé à l'[Oscar du meilleur film documentaire](https://fr.wikipedia.org/wiki/Oscar_du_meilleur_film_documentaire "Oscar du meilleur film documentaire")[[329]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-331).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Zied_Gharsa_et_la_Rachidia.jpg/250px-Zied_Gharsa_et_la_Rachidia.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Zied_Gharsa_et_la_Rachidia.jpg?uselang=fr)Orchestre de La Rachidia au Théâtre municipal de Tunis. [](https://fr.wikipedia.org/wiki/Fichier:Saliha_-_Mil_ghourba_fnani.ogg)_Fel ghorba fenani_ par Saliha (1914-1958).
+La [musique tunisienne](https://fr.wikipedia.org/wiki/Musique_tunisienne "Musique tunisienne") est, quant à elle, relativement diversifiée. Principalement influencée par les cultures arabo-andalouse, arabe et occidentale, elle est le résultat d'un métissage culturel. Son courant musical classique et le plus réputé est le [malouf](https://fr.wikipedia.org/wiki/Malouf_tunisien "Malouf tunisien"). Toutefois, les chants traditionnels continuent de rencontrer un certain succès. Côté instruments, les régions urbaines et rurales se différencient quelque peu. En milieu urbain, ce sont les [instruments à cordes](https://fr.wikipedia.org/wiki/Instrument_%C3%A0_cordes "Instrument à cordes") ([rebec](https://fr.wikipedia.org/wiki/Rebec_\(instrument\) "Rebec \(instrument\)"), [oud](https://fr.wikipedia.org/wiki/Oud "Oud") et [qanûn](https://fr.wikipedia.org/wiki/Qan%C3%BBn_\(instrument\) "Qanûn \(instrument\)")) et les [percussions](https://fr.wikipedia.org/wiki/Instrument_de_percussion "Instrument de percussion") ([darbouka](https://fr.wikipedia.org/wiki/Darbouka "Darbouka")) qui dominent alors que, en milieu rural, le chant bédouin, en plus des percussions, est accompagné d'[instruments à vent](https://fr.wikipedia.org/wiki/Instrument_%C3%A0_vent "Instrument à vent") comme le [mezoued](https://fr.wikipedia.org/wiki/Mezoued "Mezoued") et la [gasba](https://fr.wikipedia.org/wiki/Gasba "Gasba"). Parmi les grands chanteurs et chanteuses tunisiens, on peut citer [Saliha](https://fr.wikipedia.org/wiki/Saliha "Saliha"), [Khemaïs Tarnane](https://fr.wikipedia.org/wiki/Khema%C3%AFs_Tarnane "Khemaïs Tarnane"), [Ali Riahi](https://fr.wikipedia.org/wiki/Ali_Riahi "Ali Riahi"), [Hédi Jouini](https://fr.wikipedia.org/wiki/H%C3%A9di_Jouini "Hédi Jouini"), [Latifa Arfaoui](https://fr.wikipedia.org/wiki/Latifa_Arfaoui "Latifa Arfaoui"), [Mohamed Jamoussi](https://fr.wikipedia.org/wiki/Mohamed_Jamoussi "Mohamed Jamoussi"), [Cheikh El Afrit](https://fr.wikipedia.org/wiki/Cheikh_El_Afrit "Cheikh El Afrit"), [Lotfi Bouchnak](https://fr.wikipedia.org/wiki/Lotfi_Bouchnak "Lotfi Bouchnak") ou encore [Dhekra Mohamed](https://fr.wikipedia.org/wiki/Dhekra_Mohamed "Dhekra Mohamed"). Chez les musiciens, on peut également citer [Salah El Mahdi](https://fr.wikipedia.org/wiki/Salah_El_Mahdi "Salah El Mahdi"), [Ridha Kalaï](https://fr.wikipedia.org/wiki/Ridha_Kala%C3%AF "Ridha Kalaï"), [Ali Sriti](https://fr.wikipedia.org/wiki/Ali_Sriti "Ali Sriti"), [Anouar Brahem](https://fr.wikipedia.org/wiki/Anouar_Brahem "Anouar Brahem"), [Jasser Haj Youssef](https://fr.wikipedia.org/wiki/Jasser_Haj_Youssef "Jasser Haj Youssef") ou encore [Youssef Slama](https://fr.wikipedia.org/wiki/Youssef_Slama "Youssef Slama"). Dans le même temps, une majorité de la population est attirée par des musiques d'origine arabe ([égyptienne](https://fr.wikipedia.org/wiki/Musique_%C3%A9gyptienne "Musique égyptienne"), [libanaise](https://fr.wikipedia.org/wiki/Musique_libanaise "Musique libanaise") ou encore [syrienne](https://fr.wikipedia.org/wiki/Syrie "Syrie")). La musique occidentale actuelle remporte également un succès important avec l'émergence de nombreux groupes et de festivals de [rock](https://fr.wikipedia.org/wiki/Rock_'n'_roll "Rock 'n' roll"), de [hip-hop](https://fr.wikipedia.org/wiki/Hip-hop "Hip-hop"), de [reggae](https://fr.wikipedia.org/wiki/Reggae "Reggae") et de [jazz](https://fr.wikipedia.org/wiki/Jazz "Jazz").
+Le théâtre tunisien s'est surtout développé entre la fin du XIXe et le début du XXesiècle durant le [protectorat français](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie")[[330]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-th%C3%A9%C3%A2tre_municipal-332). Fondé à cette époque, le [Théâtre municipal de Tunis](https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_municipal_de_Tunis "Théâtre municipal de Tunis")[[330]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-th%C3%A9%C3%A2tre_municipal-332) a accueilli en plus d'un siècle d'existence de grands noms de la scène tunisienne et internationale[[330]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-th%C3%A9%C3%A2tre_municipal-332). Le 7 novembre 1962, [Habib Bourguiba](https://fr.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") consacre son discours au théâtre qu'il considère comme «un puissant moyen de diffusion de la culture ainsi qu'un moyen d'éducation populaire des plus efficaces»[[331]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-333). Toutefois, le théâtre tunisien n'a jamais connu un réel développement. En 1970, sous l'impulsion de l'acteur [Aly Ben Ayed](https://fr.wikipedia.org/wiki/Aly_Ben_Ayed "Aly Ben Ayed"), _[Caligula](https://fr.wikipedia.org/wiki/Caligula_\(Camus\) "Caligula \(Camus\)")_ d'[Albert Camus](https://fr.wikipedia.org/wiki/Albert_Camus "Albert Camus") est traduit en [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe") et les œuvres _Mourad III_ ou _Le Temps du Bouraq_ de [Habib Boularès](https://fr.wikipedia.org/wiki/Habib_Boular%C3%A8s "Habib Boularès") maintiennent le ton de la violence sanglante. Même si, de plus en plus, les spectacles dits de boulevard sont restreints au profit d'un genre de spectacle plus sophistiqué[[332]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-334), [Moncef Souissi](https://fr.wikipedia.org/wiki/Moncef_Souissi "Moncef Souissi") et [Ezzedine Madani](https://fr.wikipedia.org/wiki/Ezzedine_Madani "Ezzedine Madani") ont créé un théâtre d'expression populaire et moqueur en [tunisien](https://fr.wikipedia.org/wiki/Arabe_tunisien "Arabe tunisien"). Le courant dit du Nouveau Théâtre de Tunis a également repris le fil de la dérision. Nommé en 1988 à la tête du [Théâtre national tunisien](https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_tunisien "Théâtre national tunisien") (TNT), [Mohamed Driss](https://fr.wikipedia.org/wiki/Mohamed_Driss "Mohamed Driss") lui offre une nouvelle salle, _Quatrième art_ , en 1996[[333]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quatri%C3%A8me_art-335) et l'ouvre aux spectacles de [ballet](https://fr.wikipedia.org/wiki/Ballet "Ballet"), de [cirque](https://fr.wikipedia.org/wiki/Cirque "Cirque") et de [chant](https://fr.wikipedia.org/wiki/Chant "Chant")[[333]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-quatri%C3%A8me_art-335). Quant à [El Teatro](https://fr.wikipedia.org/wiki/El_Teatro "El Teatro"), le premier théâtre privé de Tunisie[[334]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-el_t%C3%A9atro-336), il offre des représentations théâtrales, des spectacles de danse, des concerts de jazz, des galas de musique arabe, des expositions d'art et des récitals de [poésie](https://fr.wikipedia.org/wiki/Po%C3%A9sie "Poésie")[[334]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-el_t%C3%A9atro-336).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/%D9%8A%D8%AD%D9%8A%D9%89_%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A.jpg/250px-%D9%8A%D8%AD%D9%8A%D9%89_%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:%D9%8A%D8%AD%D9%8A%D9%89_%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A.jpg?uselang=fr)Portrait du peintre [Yahia Turki](https://fr.wikipedia.org/wiki/Yahia_Turki "Yahia Turki").
+La naissance d'une [peinture tunisienne](https://fr.wikipedia.org/wiki/Peinture_tunisienne "Peinture tunisienne") contemporaine est fortement liée à l'[École de Tunis](https://fr.wikipedia.org/wiki/%C3%89cole_de_Tunis "École de Tunis") mise en place par un groupe d'artistes de Tunisie unis par la volonté d'incorporer des thèmes proprement tunisiens et rejetant l'influence orientaliste de la peinture coloniale. Après la [peinture expressionniste](https://fr.wikipedia.org/wiki/Expressionnisme "Expressionnisme") d'Amara Debbache, [Jellal Ben Abdallah](https://fr.wikipedia.org/wiki/Jellal_Ben_Abdallah "Jellal Ben Abdallah") et [Aly Ben Salem](https://fr.wikipedia.org/wiki/Aly_Ben_Salem "Aly Ben Salem") se font reconnaître, l'un pour ses miniatures de style byzantin, l'autre pour son rattachement à l'[impressionnisme](https://fr.wikipedia.org/wiki/Impressionnisme "Impressionnisme")[[335]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-tangka3-337). La vie quotidienne devient par ailleurs l'inspiration de [Zoubeir Turki](https://fr.wikipedia.org/wiki/Zoubeir_Turki "Zoubeir Turki") et d'[Abdelaziz Gorgi](https://fr.wikipedia.org/wiki/Abdelaziz_Gorgi "Abdelaziz Gorgi"). L'[abstraction](https://fr.wikipedia.org/wiki/Abstraction_\(art\) "Abstraction \(art\)") saisit également l'imagination des peintres comme [Edgard Naccache](https://fr.wikipedia.org/wiki/Edgard_Naccache "Edgard Naccache"), Nello Lévy et [Hédi Turki](https://fr.wikipedia.org/wiki/H%C3%A9di_Turki "Hédi Turki"). Après l'indépendance en 1956, le mouvement pictural tunisien entre dans une dynamique d'édification nationale, des artistes se mettant au service de l'État. Des artistes ont ainsi pu accéder à une reconnaissance internationale tels que [Hatem El Mekki](https://fr.wikipedia.org/wiki/Hatem_El_Mekki "Hatem El Mekki"), peintre abstrait, dont la facture rappelle celle d'[Alberto Giacometti](https://fr.wikipedia.org/wiki/Alberto_Giacometti "Alberto Giacometti")[[335]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-tangka3-337). La jeune peinture emboîte davantage le pas à ce qui se passe ailleurs dans le monde[[335]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-tangka3-337): [Sadok Gmech](https://fr.wikipedia.org/wiki/Sadok_Gmech "Sadok Gmech") puise son inspiration dans le patrimoine national alors que Moncef Ben Amor se tourne vers le fantastique. Dans un autre registre, [Youssef Rekik](https://fr.wikipedia.org/wiki/Youssef_Rekik "Youssef Rekik") réutilise la technique de la peinture sur verre et [Nja Mahdaoui](https://fr.wikipedia.org/wiki/Nja_Mahdaoui "Nja Mahdaoui") retrouve la calligraphie dans sa dimension mystique[[335]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-tangka3-337).
+Enfin, la [littérature tunisienne](https://fr.wikipedia.org/wiki/Litt%C3%A9rature_tunisienne "Littérature tunisienne") existe sous deux formes: en langue [arabe](https://fr.wikipedia.org/wiki/Arabe "Arabe") et en langue [française](https://fr.wikipedia.org/wiki/Fran%C3%A7ais "Français"). La littérature arabophone remonte au VIIesiècle avec l'arrivée de la civilisation arabe dans la région. Elle est plus importante en volume comme en valeur que la littérature en langue française qui suit l'implantation du [protectorat](https://fr.wikipedia.org/wiki/Protectorat_fran%C3%A7ais_de_Tunisie "Protectorat français de Tunisie") en 1881. Malgré la longue histoire de la littérature tunisienne, la production nationale reste pourtant maigre: la bibliographie nationale a recensé 1 249 livres non scolaires publiés en 2002 dont 885 titres en arabe[[336]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-litt%C3%A9rature-338). Parmi les grands auteurs tunisiens, on peut citer [Abou el Kacem Chebbi](https://fr.wikipedia.org/wiki/Abou_el_Kacem_Chebbi "Abou el Kacem Chebbi"), [Moncef Ghachem](https://fr.wikipedia.org/wiki/Moncef_Ghachem "Moncef Ghachem") et [Mahmoud Messadi](https://fr.wikipedia.org/wiki/Mahmoud_Messadi "Mahmoud Messadi").
+### Traditions
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Hand-painting_ceramics.jpg/250px-Hand-painting_ceramics.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Hand-painting_ceramics.jpg?uselang=fr)Femme en train de peindre une céramique. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Potier_dans_son_atelier.jpg/250px-Potier_dans_son_atelier.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Potier_dans_son_atelier.jpg?uselang=fr)Potier dans son atelier à Guellala.
+La Tunisie est réputée pour ses nombreux [produits artisanaux](https://fr.wikipedia.org/wiki/Artisanat_tunisien "Artisanat tunisien") dont les diverses régions du pays font leur spécificité.
+La [poterie](https://fr.wikipedia.org/wiki/Poterie "Poterie") tunisienne est principalement issue de [Guellala](https://fr.wikipedia.org/wiki/Guellala "Guellala")[[337]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-339), ville se situant dans le sud de l'île de [Djerba](https://fr.wikipedia.org/wiki/Djerba "Djerba"), dont les habitants sont à majorité berbères et dont la profession principale est le travail de l'argile[[338]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-340). D'autres centres potiers sur le [littoral](https://fr.wikipedia.org/wiki/Littoral "Littoral") tunisien existent, notamment à [Tunis](https://fr.wikipedia.org/wiki/C%C3%A9ramique_de_Qallaline "Céramique de Qallaline"), [Nabeul](https://fr.wikipedia.org/wiki/C%C3%A9ramique_de_Nabeul "Céramique de Nabeul"), [Moknine](https://fr.wikipedia.org/wiki/Moknine "Moknine"),etc. Mais si la poterie poreuse s'identifie à Guellala, celle émaillée (jaune, verte ou brune) est la marque de fabrique de Nabeul[[339]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-poterie-341).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Tisserande_Kairouan.jpg/250px-Tisserande_Kairouan.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tisserande_Kairouan.jpg?uselang=fr)Tisserande de tapis traditionnel à Kairouan.
+La [ferronnerie](https://fr.wikipedia.org/wiki/Ferronnerie "Ferronnerie") décore les [portes](https://fr.wikipedia.org/wiki/Porte_\(architecture\) "Porte \(architecture\)") [cloutées](https://fr.wikipedia.org/wiki/Clou "Clou"), un ornement original probablement ramené en Ifriqiya par les [Andalous](https://fr.wikipedia.org/wiki/Al-Andalus "Al-Andalus") chassés d'Espagne[[340]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-342). Le [gouvernorat de Kairouan](https://fr.wikipedia.org/wiki/Gouvernorat_de_Kairouan "Gouvernorat de Kairouan") constitue quant à lui le premier pôle en matière de fabrication de [tapis](https://fr.wikipedia.org/wiki/Tapis "Tapis") et de [margoum](https://fr.wikipedia.org/wiki/Margoum "Margoum")[[341]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-343). La Tunisie possède enfin une riche tradition de [mosaïques](https://fr.wikipedia.org/wiki/Mosa%C3%AFque "Mosaïque") remontant à l'[Afrique romaine](https://fr.wikipedia.org/wiki/Afrique_romaine "Afrique romaine")[[342]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-344).
+Le costume traditionnel est la tenue par excellence des [mariages](https://fr.wikipedia.org/wiki/Mariage_en_Tunisie "Mariage en Tunisie") et autres cérémonies[[343]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-costume-345). Au niveau national, c'est la [jebba](https://fr.wikipedia.org/wiki/Jebba_\(Tunisie\) "Jebba \(Tunisie\)") qui s'est imposée comme habit traditionnel[[343]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-costume-345). Les [babouches](https://fr.wikipedia.org/wiki/Babouche "Babouche") masculines sont en général de la couleur naturelle du [cuir](https://fr.wikipedia.org/wiki/Cuir "Cuir")[[344]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-cuir-346), celles des femmes étant dans leur majorité brodées de fils de [soie](https://fr.wikipedia.org/wiki/Soie "Soie"), de [coton](https://fr.wikipedia.org/wiki/Coton "Coton"), d'[or](https://fr.wikipedia.org/wiki/Or "Or") et d'[argent](https://fr.wikipedia.org/wiki/Argent "Argent") avec des motifs floraux ou des croissants[[344]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-cuir-346). Dans des régions du Nord et du Sud, les femmes portent traditionnellement la melia ou le [houli](https://fr.wikipedia.org/wiki/Houli "Houli")[[345]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-347).
+Importé par les [Andalous](https://fr.wikipedia.org/wiki/Al-Andalus "Al-Andalus") au XVIesiècle, le [jasmin](https://fr.wikipedia.org/wiki/Jasmin "Jasmin") (_[Jasminum grandiflorum](https://fr.wikipedia.org/wiki/Jasminum_grandiflorum "Jasminum grandiflorum")_[[N 3]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-348)) est devenu la fleur emblématique de la Tunisie. Dès la tombée de la nuit, les vendeurs confectionnent de [petits bouquets](https://fr.wikipedia.org/wiki/Machmoum "Machmoum") et les vendent aux passants dans la rue ou aux automobilistes arrêtés aux carrefours. Par ailleurs, le jasmin fait l'objet d'un langage spécifique. Ainsi, un homme qui en porte à l'oreille gauche indique qu'il est [célibataire](https://fr.wikipedia.org/wiki/C%C3%A9libat "Célibat"). De plus, offrir du jasmin blanc est une preuve d'[amour](https://fr.wikipedia.org/wiki/Amour "Amour") alors qu'offrir du [jasmin d'hiver](https://fr.wikipedia.org/wiki/Jasmin_d'hiver "Jasmin d'hiver"), sans odeur, est signe d'insolence[[346]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-349).
+### Festivals
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tunisie_Festival_international_Hammamet.jpg/250px-Tunisie_Festival_international_Hammamet.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Tunisie_Festival_international_Hammamet.jpg?uselang=fr)Festival international d'Hammamet.
 La Tunisie se distingue par un calendrier culturel rythmé par des festivals organisés dans plusieurs régions du pays. Ces manifestations couvrent des domaines tels que la musique, le théâtre, le cinéma et les arts du spectacle, tout en valorisant le patrimoine et les traditions locales.
-Parmi les rendez-vous emblématiques figurent le
-Festival international de Carthage
-, qui joue un rôle central dans la saison culturelle estivale, et le
-Festival international d'Hammamet
-qui occupe aussi une place importante dans le paysage culturel
-[
-347
-]
-. Le
-Festival international de Dougga
-, organisé dans le théâtre antique du
-site archéologique
-, est cité comme un exemple de dialogue entre création contemporaine et patrimoine
-[
-347
-]
-. Le
-jazz
-occupe aussi une place avec
-Jazz à Carthage
-[
-348
-]
-, Sicca Jazz au
-Kef
-[
-349
-]
-et le
-Tabarka Jazz Festival
-[
-350
-]
-.
-Au-delà de la musique et des arts de la scène, les
-Journées cinématographiques de Carthage
-, consacrées au cinéma africain et arabe. constitue l'un des plus anciens festivals de cinéma du continent et joue un rôle structurant dans la promotion du cinéma régional
-[
-351
-]
-,
-[
-352
-]
-.
-Dans le sud du pays, le
-Festival international du Sahara
-à
-Douz
-met à l'honneur les traditions sahariennes à travers spectacles folkloriques, courses de
-dromadaires
-et célébrations du patrimoine immatériel
-[
-353
-]
-.
-Gastronomie
-Article détaillé
-:
-Cuisine tunisienne
-.
-Couscous à la sardine.
-La
-cuisine
-tunisienne se caractérise par son métissage résultant des influences
-italienne
-,
-maltaise
-,
-juive séfarade
-et
-maghrébine
-, un héritage des diverses populations qui s'y sont succédé et mélangées en Tunisie, ce qui la différencie des pays voisins
-[
-354
-]
-. Bien qu'elle partage avec eux des influences
-ottomanes
-et
-andalouses
-, elle s'en distingue par un processus historique d'appropriation, de métissage et de transformation culinaire
-[
-355
-]
-.
-Elle se distingue par l'usage intensif de la
-tomate
-, du
-piment
-, de l'
-ail
-et des
-épices
-, ainsi que des sauces à base de
-concentré de tomates
-et de
-harissa
-[
-355
-]
-. Cette tradition culinaire est adaptée au climat, au terroir et aux goûts locaux
-[
-355
-]
-.
-La base de l'alimentation est la
-semoule
-et les
-pâtes
-[
-356
-]
-. Le
-couscous
-, commun au Maghreb, se décline au
-poisson
-, au
-osban
-, au
-poulpe
-, au
-fenouil
-ou encore au
-borzgane
-[
-355
-]
-. Les pâtes sont sans doute le plat le plus consommé, la Tunisie se plaçant en 2017 au deuxième rang mondial après l'
-Italie
-avec
-16
-kg
-par habitant et par an
-[
-357
-]
-. Par ailleurs, la consommation moyenne de
-pain
-est estimée à environ
-64
-kg
-par habitant et par an, le pain de base (dont les
-baguettes
-) vendu dans les boulangeries agréées étant
-subventionné
-par l'État
-[
-358
-]
-. Le traditionnel
-tabouna
-, autrefois omniprésent dans les villages, est lui devenu rare
-[
-359
-]
-.
-Assortiment de gâteaux traditionnels.
-Parmi les autres plats emblématiques figurent la
-mloukhiya
-(ragoût à base de
-corète
-considéré comme une préparation proprement tunisienne
-[
-355
-]
-), la
-chorba
-à la
-seiche
-et l'
-ojja
-[
-354
-]
-, ainsi que des préparations typiques comme le
-brik
-[
-354
-]
-, le
-lablabi
-et le
-kefteji
-[
-360
-]
-. Le
-Mouled
-est, quant à lui, l'occasion de préparer une crème pâtissière à base de grains de
-pin d'Alep
-, l'
-assidat zgougou
-[
-361
-]
-. La
-cuisine de rue
-est une composante de la vie urbaine dont les spécialités sont notamment le casse-croûte tunisien, le
-fricassé
-ou le
-mlawi
-[
-362
-]
-.
-La pâtisserie tunisienne possède également ses caractéristiques propres, avec le
-baklawa
-(plus compacte et moins sirupeux que la version ottomane), le
-kâak warka
-(associé à
-Zaghouan
-) et le
-makroud
-(associé à
-Kairouan
-)
-[
-355
-]
-. La
-zlabia
-et le
-mkharek
-sont particulièrement prisés pendant le
-ramadan
-[
-363
-]
-.
-Sport
-Article détaillé
-:
-Sport en Tunisie
-.
-Stade olympique de Radès
-.
-Finale de la
-coupe de Tunisie masculine de volley-ball
-2008.
-Le sport en Tunisie est marqué par la domination du
-football
-, tant sur le plan de la couverture médiatique que du succès populaire avec
-27 733 licenciés
-contre
-13 992
-pour le
-taekwondo
-, second sport le plus pratiqué dans le pays
-[
-364
-]
-. Toutefois, des sports comme le
-volley-ball
-ou le
-handball
-figurent également parmi les sports les plus représentés même si des sports moins connus sont plus pratiqués par les Tunisiens, notamment les arts martiaux (taekwondo,
-judo
-et
-karaté
-), l'
-athlétisme
-voire le
-tennis
-[
-364
-]
-. D'autres grands sports comme le
-cyclisme
-sont en revanche moins représentés, faute d'infrastructures, d'équipements et d'intérêt médiatique suffisants
-[
-365
-]
-.
-L'
-Espérance sportive de Tunis
-est le club de football le plus titré du
-championnat national
-, avec
-29 titres
-à son actif, et le plus titré de la
-coupe de Tunisie
-avec quinze titres à son actif
-; c'est le premier club à participer à une compétition continentale en
-1971
-: la
-coupe des clubs champions africains
-. Le
-Club athlétique bizertin
-devient en 1988 le premier club tunisien à avoir remporté un trophée continental
-: la
-coupe d'Afrique des vainqueurs de coupe
-. Le
-Club africain
-est le premier club tunisien à avoir remporté la coupe d'Afrique des clubs champions en
-1992
-. L'
-Étoile sportive du Sahel
-est le premier club tunisien à remporter la Ligue des champions de la CAF dans sa nouvelle édition le
-9 novembre 2007
-. Le
-Club sportif sfaxien
-a aussi remporté des manifestations continentales et régionales
-; il est le premier club à remporter deux fois de suite la
-coupe de la CAF
-en 2007 et 2008. Le
-derby de la capitale
-entre le Club africain et l'Espérance sportive de Tunis reste l'événement footballistique phare de l'année en rassemblant à deux reprises par saison plus de
-60 000 spectateurs
-et donnant lieu à un show (
-dakhla
-en
-tunisien
-) de la part des supporters des deux équipes. Il existe d'autres classiques entre les quatre grandes équipes, l'Espérance sportive de Tunis, l'Étoile sportive du Sahel, le Club sportif sfaxien et le Club africain.
-L'année sportive tunisienne est rythmée par les compétitions que sont les championnats (
-football
-,
-handball
-,
-volley-ball
-et
-basket-ball
-) et les coupes (
-football
-,
-handball
-,
-volley-ball
-et
-basket-ball
-). Le pays organise également des compétitions internationales, comme la première édition de la
-Coupe du monde de football des moins de 20 ans
-en
-1977
-[
-366
-]
-et les phases finales des
-coupes d'Afrique des nations de football
-en
-1965
-[
-367
-]
-,
-1994
-[
-368
-]
-et
-2004
-[
-369
-]
-, la dernière édition remportée par la
-sélection nationale
-. Le
-championnat du monde masculin de handball 2005
-et le
-championnat d'Afrique des nations masculin de handball 2020
-se déroulent aussi en Tunisie.
-Oussama Mellouli
-, champion olympique et du monde du
-1 500 mètres
-nage libre.
-En
-mai 2007
-, le pays compte
-1 673 clubs
-sportifs dont les principaux sont actifs dans le football (250) et le taekwondo (206)
-[
-364
-]
-. Viennent ensuite le karaté et ses dérivés (166), le
-handisport
-(140), le handball (85), l'athlétisme (80), le judo (66), le
-kung fu
-(60), le
-kick-boxing
-(59), le basket-ball (48), la
-pétanque
-(47), le
-tennis de table
-(45), le volley-ball (40), la
-boxe
-(37), la
-natation
-(31) et le tennis (30)
-[
-364
-]
-.
-Parmi les sportifs les plus connus,
-Mohammed Gammoudi
-s'illustre en athlétisme, ce qui lui permet de remporter quatre médailles aux
-Jeux olympiques
-, ce qui en fait le sportif tunisien le plus médaillé de l'histoire du pays
-[
-370
-]
-. La Tunisie a également vu émerger des champions dans des sports individuels tels que
-Anis Lounifi
-(champion du monde de judo)
-[
-371
-]
-,
-Oussama Mellouli
-(champion du monde et olympique de natation)
-[
-372
-]
-ou encore
-Ons Jabeur
-qui parvient à se classer deuxième joueuse mondiale par la
-WTA
-[
-373
-]
-.
-En ce qui concerne les sports collectifs, les équipes nationales ont remporté une
-coupe d'Afrique des nations de football
-, dix
-championnats d'Afrique masculin de handball
-[
-374
-]
-, dix
-championnats d'Afrique masculin de volley-ball
-[
-375
-]
-et trois
-championnats d'Afrique masculins de basket-ball
-[
-376
-]
-.
-Fêtes et jours fériés
-Article détaillé
-:
-Fêtes et jours fériés en Tunisie
-.
-Date (
-calendrier grégorien
-)
-Nom français
-Nom local
-Commémoration
-1
-er
-janvier
-Nouvel an
-رأس العام
-ou
-رأس السنة الإدارية
-ou
-رأس السنة الميلادية
-20 mars
-Fête de l'Indépendance
-عيد الإستقلال
-Avènement de l'indépendance (1956)
-9 avril
-Journée des Martyrs
-عيد الشهداء
-Répression de
-manifestations nationalistes
-par les troupes françaises (1938)
-1
-er
-mai
-Fête du Travail
-عيد الشغل
-25 juillet
-Fête de la République
-عيد الجمهورية
-Proclamation de la république (1957)
-13 août
-Fête de la Femme et de la Famille
-[
-377
-]
-عيد المرأة
-Promulgation du
-Code du statut personnel
-(1956)
-15 octobre
-Fête de l'Évacuation
-[
-378
-]
-عيد الجلاء
-Départ des dernières troupes françaises de la base de Bizerte (1963)
-17 décembre
-Fête de la Révolution
-[
-379
-]
-عيد الثورة
-Déclenchement de la
-révolution tunisienne
-(2010)
-Date (
-calendrier musulman
-)
-Nom français
-Nom local
-Commémoration
-1
-er
-mouharram
-Ras el-Am el-Hijri (Nouvel an de l'hégire)
-رأس العام الهجري
-ou
-رأس السنة الهجرية
-Nouvel an
-12
-rabiʿ al-awwal
-Mouled
-المولد النبوي
-Anniversaire de la naissance de
-Mahomet
-1
-er
-chawwal
-Aïd el-Fitr
-ou Aïd el-Saghir (Fête de la rupture du jeûne ou Petite fête)
-العيد الصغير
-ou
-عيد الفطر
-Fin du mois de
-ramadan
-[
-N 4
-]
-,
-[
-N 5
-]
-10
-dhou al-hijja
-Aïd al-Adha
-(Grande fête ou Fête du sacrifice)
-العيد الكبير
-ou
-عيد الأضحى
-Sacrifice d'
-Abraham
-[
-N 5
-]
-Notes et références
-Notes
-↑
-Les chiffres ne sont pas convergents
-: la superficie officielle donnée par l'État tunisien est de
-162 155
-km
-2
-alors que celle mentionnée est la plus fréquemment lue, notamment dans les travaux de géographie.
-↑
-Ce
-«
-Virgile écrivant l'Énéide
-»
-est découvert vers 1870 à
-Sousse
-par Gian Maria Massa [1816-1890] dans le jardin d'une maison qu'il rénovait, et a été offert au contrôleur civil de Sousse qui l'a remis au musée de Sousse, pour ensuite être transféré à Tunis.
-↑
-Le jasmin d'Arabie (
-Jasminum sambac
-), appelé
-fel
-, est aussi cultivé mais cette espèce tropicale très frileuse et très sensible au vent pousse sur la côte, à l'abri du cap Bon entre Hammamet et Tunis selon
-Marceau Gast,
-«
-Jasmin (yasmîn)
-»
-, dans
-Salem Chaker
-(
-dir.
-),
-Encyclopédie berbère
-,
-vol.
-25
-:
-Iseqqemâren – Juba
-, Aix-en-Provence,
-Édisud
-,
-2003
-(
-ISBN
-2-7449-0424-4
-,
-lire en ligne
-)
-,
-p.
-3852-3854
-.
-↑
-Au cours du mois lunaire de ramadan qui précède la fête de l'Aïd el-Fitr, les musulmans
-jeûnent
-pendant la journée et festoient durant la nuit, d'où la possibilité de perturbations des conditions normales de travail. Beaucoup de
-restaurants
-sont fermés pendant la journée, alors que fumer ou boire est susceptible de faire l'objet de restrictions. Certaines perturbations se poursuivent éventuellement pendant la fête de l'Aïd el-Fitr elle-même.
-1
-2
-Les fêtes de l'Aïd al-Fitr et de l'Aïd el-Kebir durent deux jours.
-Références
-1
-2
-3
-«
-Dispositions générales
-»
-, sur
-majles.marsad.tn
-(version du
-23 mars 2019
-sur
-archive.org
-)
-.
-1
-2
-«
-Recensement général de la population et de l'habitat 2024
-», sur
-Institut national de la statistique
-(consulté le
-19 mai 2025
-)
-.
-1
-2
-3
-4
-5
-6
-(en)
-«
-World Economic Outlook Database
-», sur
-Fonds monétaire international
-(consulté le
-10 juin 2026
-)
-.
-1
-2
-3
-Rapport sur le développement humain 2025
-: Une question de choix
-: l’humain et les possibles à l’ère de l’IA
-,
-New York
-,
-Programme des Nations unies pour le développement
-,
-mai 2025
-, 324
-p.
-(
-ISBN
-978-92-1-157609-2
-,
-lire en ligne
-)
-.
-↑
-(en)
-«
-Gini index
-», sur
-data.worldbank.org
-,
-Banque mondiale
-(consulté le
-24 avril 2023
-)
-.
-↑
-(en)
-Martin J. Wolf, John W. Emerson, Daniel C. Esty, Alex de Sherbinin, Zachary A. Wendling
-et al.
-,
-2024 Environmental Performance Index
-, New Haven, Yale Center for Environmental Law & Policy,
-2024
-, 204
-p.
-(
-lire en ligne
-)
-.
-↑
-Welid Naffati, «
+Parmi les rendez-vous emblématiques figurent le [Festival international de Carthage](https://fr.wikipedia.org/wiki/Festival_international_de_Carthage "Festival international de Carthage"), qui joue un rôle central dans la saison culturelle estivale, et le [Festival international d'Hammamet](https://fr.wikipedia.org/wiki/Festival_international_d'Hammamet "Festival international d'Hammamet") qui occupe aussi une place importante dans le paysage culturel[[347]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-festival-350). Le [Festival international de Dougga](https://fr.wikipedia.org/wiki/Festival_international_de_Dougga "Festival international de Dougga"), organisé dans le théâtre antique du [site archéologique](https://fr.wikipedia.org/wiki/Dougga "Dougga"), est cité comme un exemple de dialogue entre création contemporaine et patrimoine[[347]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-festival-350). Le [jazz](https://fr.wikipedia.org/wiki/Jazz "Jazz") occupe aussi une place avec [Jazz à Carthage](https://fr.wikipedia.org/wiki/Jazz_%C3%A0_Carthage "Jazz à Carthage")[[348]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-351), Sicca Jazz au [Kef](https://fr.wikipedia.org/wiki/Le_Kef "Le Kef")[[349]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-352) et le [Tabarka Jazz Festival](https://fr.wikipedia.org/wiki/Tabarka_Jazz_Festival "Tabarka Jazz Festival")[[350]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-353).
+Au-delà de la musique et des arts de la scène, les [Journées cinématographiques de Carthage](https://fr.wikipedia.org/wiki/Journ%C3%A9es_cin%C3%A9matographiques_de_Carthage "Journées cinématographiques de Carthage"), consacrées au cinéma africain et arabe. constitue l'un des plus anciens festivals de cinéma du continent et joue un rôle structurant dans la promotion du cinéma régional[[351]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-354),[[352]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-355).
+Dans le sud du pays, le [Festival international du Sahara](https://fr.wikipedia.org/wiki/Festival_international_du_Sahara "Festival international du Sahara") à [Douz](https://fr.wikipedia.org/wiki/Douz "Douz") met à l'honneur les traditions sahariennes à travers spectacles folkloriques, courses de [dromadaires](https://fr.wikipedia.org/wiki/Dromadaire "Dromadaire") et célébrations du patrimoine immatériel[[353]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-356).
+### Gastronomie
+Article détaillé: [Cuisine tunisienne](https://fr.wikipedia.org/wiki/Cuisine_tunisienne "Cuisine tunisienne").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Couscous_%C3%A0_la_sardine%2C_osbane%2C_Tunisie_2013.jpg/250px-Couscous_%C3%A0_la_sardine%2C_osbane%2C_Tunisie_2013.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Couscous_%C3%A0_la_sardine,_osbane,_Tunisie_2013.jpg?uselang=fr)Couscous à la sardine.
+La [cuisine](https://fr.wikipedia.org/wiki/Cuisine "Cuisine") tunisienne se caractérise par son métissage résultant des influences [italienne](https://fr.wikipedia.org/wiki/Cuisine_italienne "Cuisine italienne"), [maltaise](https://fr.wikipedia.org/wiki/Cuisine_maltaise "Cuisine maltaise"), [juive séfarade](https://fr.wikipedia.org/wiki/Cuisine_juive "Cuisine juive") et [maghrébine](https://fr.wikipedia.org/wiki/Cuisine_maghr%C3%A9bine "Cuisine maghrébine"), un héritage des diverses populations qui s'y sont succédé et mélangées en Tunisie, ce qui la différencie des pays voisins[[354]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-brion-357). Bien qu'elle partage avec eux des influences [ottomanes](https://fr.wikipedia.org/wiki/Cuisine_ottomane "Cuisine ottomane") et [andalouses](https://fr.wikipedia.org/wiki/Cuisine_andalouse "Cuisine andalouse"), elle s'en distingue par un processus historique d'appropriation, de métissage et de transformation culinaire[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358).
+Elle se distingue par l'usage intensif de la [tomate](https://fr.wikipedia.org/wiki/Tomate "Tomate"), du [piment](https://fr.wikipedia.org/wiki/Piment "Piment"), de l'[ail](https://fr.wikipedia.org/wiki/Ail_cultiv%C3%A9 "Ail cultivé") et des [épices](https://fr.wikipedia.org/wiki/%C3%89pice "Épice"), ainsi que des sauces à base de [concentré de tomates](https://fr.wikipedia.org/wiki/Concentr%C3%A9_de_tomates "Concentré de tomates") et de [harissa](https://fr.wikipedia.org/wiki/Harissa "Harissa")[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358). Cette tradition culinaire est adaptée au climat, au terroir et aux goûts locaux[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358).
+La base de l'alimentation est la [semoule](https://fr.wikipedia.org/wiki/Semoule "Semoule") et les [pâtes](https://fr.wikipedia.org/wiki/P%C3%A2tes_alimentaires "Pâtes alimentaires")[[356]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-359). Le [couscous](https://fr.wikipedia.org/wiki/Couscous "Couscous"), commun au Maghreb, se décline au [poisson](https://fr.wikipedia.org/wiki/Poisson "Poisson"), au _[osban](https://fr.wikipedia.org/wiki/Osban "Osban")_ , au [poulpe](https://fr.wikipedia.org/wiki/Pieuvre "Pieuvre"), au [fenouil](https://fr.wikipedia.org/wiki/Fenouil "Fenouil") ou encore au _[borzgane](https://fr.wikipedia.org/wiki/Borzgane "Borzgane")_[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358). Les pâtes sont sans doute le plat le plus consommé, la Tunisie se plaçant en 2017 au deuxième rang mondial après l'[Italie](https://fr.wikipedia.org/wiki/Italie "Italie") avec 16 kg par habitant et par an[[357]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-360). Par ailleurs, la consommation moyenne de [pain](https://fr.wikipedia.org/wiki/Pain "Pain") est estimée à environ 64 kg par habitant et par an, le pain de base (dont les [baguettes](https://fr.wikipedia.org/wiki/Baguette_\(pain\) "Baguette \(pain\)")) vendu dans les boulangeries agréées étant [subventionné](https://fr.wikipedia.org/wiki/Subvention "Subvention") par l'État[[358]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-361). Le traditionnel _[tabouna](https://fr.wikipedia.org/wiki/Pain_tabouna "Pain tabouna")_ , autrefois omniprésent dans les villages, est lui devenu rare[[359]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-362).
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/PatisseriesTunisiennes2009.jpg/250px-PatisseriesTunisiennes2009.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:PatisseriesTunisiennes2009.jpg?uselang=fr)Assortiment de gâteaux traditionnels.
+Parmi les autres plats emblématiques figurent la _[mloukhiya](https://fr.wikipedia.org/wiki/Mloukhiya "Mloukhiya")_ (ragoût à base de [corète](https://fr.wikipedia.org/wiki/Cor%C3%A8te_potag%C3%A8re "Corète potagère") considéré comme une préparation proprement tunisienne[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358)), la _[chorba](https://fr.wikipedia.org/wiki/Chorba "Chorba")_ à la [seiche](https://fr.wikipedia.org/wiki/Seiche_\(animal\) "Seiche \(animal\)") et l'_[ojja](https://fr.wikipedia.org/wiki/Ojja "Ojja")_[[354]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-brion-357), ainsi que des préparations typiques comme le _[brik](https://fr.wikipedia.org/wiki/Brik "Brik")_[[354]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-brion-357), le _[lablabi](https://fr.wikipedia.org/wiki/Lablabi "Lablabi")_ et le _[kefteji](https://fr.wikipedia.org/wiki/Kefteji "Kefteji")_[[360]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-363). Le [Mouled](https://fr.wikipedia.org/wiki/Mawlid "Mawlid") est, quant à lui, l'occasion de préparer une crème pâtissière à base de grains de [pin d'Alep](https://fr.wikipedia.org/wiki/Pinus_halepensis "Pinus halepensis"), l'[assidat zgougou](https://fr.wikipedia.org/wiki/Assidat_zgougou "Assidat zgougou")[[361]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-364). La [cuisine de rue](https://fr.wikipedia.org/wiki/Cuisine_de_rue "Cuisine de rue") est une composante de la vie urbaine dont les spécialités sont notamment le casse-croûte tunisien, le [fricassé](https://fr.wikipedia.org/wiki/Fricass%C3%A9 "Fricassé") ou le _[mlawi](https://fr.wikipedia.org/wiki/Msemmen "Msemmen")_[[362]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-street-365).
+La pâtisserie tunisienne possède également ses caractéristiques propres, avec le [baklawa](https://fr.wikipedia.org/wiki/Baklava "Baklava") (plus compacte et moins sirupeux que la version ottomane), le _[kâak warka](https://fr.wikipedia.org/wiki/K%C3%A2ak_warka "Kâak warka")_ (associé à [Zaghouan](https://fr.wikipedia.org/wiki/Zaghouan "Zaghouan")) et le _[makroud](https://fr.wikipedia.org/wiki/Makroud "Makroud")_ (associé à [Kairouan](https://fr.wikipedia.org/wiki/Kairouan "Kairouan"))[[355]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-lahbib-358). La _[zlabia](https://fr.wikipedia.org/wiki/Zlabia "Zlabia")_ et le _[mkharek](https://fr.wikipedia.org/wiki/Mkharek "Mkharek")_ sont particulièrement prisés pendant le [ramadan](https://fr.wikipedia.org/wiki/Ramadan "Ramadan")[[363]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-366).
+### Sport
+Article détaillé: [Sport en Tunisie](https://fr.wikipedia.org/wiki/Sport_en_Tunisie "Sport en Tunisie").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mozambique-Tunisia_match_2009.jpg/250px-Mozambique-Tunisia_match_2009.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Mozambique-Tunisia_match_2009.jpg?uselang=fr)[Stade olympique de Radès](https://fr.wikipedia.org/wiki/Stade_olympique_de_Rad%C3%A8s "Stade olympique de Radès"). [![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FinaleCoupeTunisieVolleyball2008.JPG/250px-FinaleCoupeTunisieVolleyball2008.JPG?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:FinaleCoupeTunisieVolleyball2008.JPG?uselang=fr)Finale de la [coupe de Tunisie masculine de volley-ball](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_masculine_de_volley-ball "Coupe de Tunisie masculine de volley-ball") 2008.
+Le sport en Tunisie est marqué par la domination du [football](https://fr.wikipedia.org/wiki/Football "Football"), tant sur le plan de la couverture médiatique que du succès populaire avec 27 733 licenciés contre 13 992 pour le [taekwondo](https://fr.wikipedia.org/wiki/Taekwondo "Taekwondo"), second sport le plus pratiqué dans le pays[[364]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-portail-367). Toutefois, des sports comme le [volley-ball](https://fr.wikipedia.org/wiki/Volley-ball "Volley-ball") ou le [handball](https://fr.wikipedia.org/wiki/Handball "Handball") figurent également parmi les sports les plus représentés même si des sports moins connus sont plus pratiqués par les Tunisiens, notamment les arts martiaux (taekwondo, [judo](https://fr.wikipedia.org/wiki/Judo "Judo") et [karaté](https://fr.wikipedia.org/wiki/Karat%C3%A9 "Karaté")), l'[athlétisme](https://fr.wikipedia.org/wiki/Athl%C3%A9tisme "Athlétisme") voire le [tennis](https://fr.wikipedia.org/wiki/Tennis "Tennis")[[364]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-portail-367). D'autres grands sports comme le [cyclisme](https://fr.wikipedia.org/wiki/Cyclisme "Cyclisme") sont en revanche moins représentés, faute d'infrastructures, d'équipements et d'intérêt médiatique suffisants[[365]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-368).
+L'[Espérance sportive de Tunis](https://fr.wikipedia.org/wiki/Esp%C3%A9rance_sportive_de_Tunis_\(football\) "Espérance sportive de Tunis \(football\)") est le club de football le plus titré du [championnat national](https://fr.wikipedia.org/wiki/Championnat_de_Tunisie_de_football "Championnat de Tunisie de football"), avec 29 titres à son actif, et le plus titré de la [coupe de Tunisie](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_de_football "Coupe de Tunisie de football") avec quinze titres à son actif; c'est le premier club à participer à une compétition continentale en [1971](https://fr.wikipedia.org/wiki/Coupe_des_clubs_champions_africains_1971 "Coupe des clubs champions africains 1971"): la [coupe des clubs champions africains](https://fr.wikipedia.org/wiki/Ligue_des_champions_de_la_CAF "Ligue des champions de la CAF"). Le [Club athlétique bizertin](https://fr.wikipedia.org/wiki/Club_athl%C3%A9tique_bizertin_\(football\) "Club athlétique bizertin \(football\)") devient en 1988 le premier club tunisien à avoir remporté un trophée continental: la [coupe d'Afrique des vainqueurs de coupe](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_vainqueurs_de_coupe_de_football "Coupe d'Afrique des vainqueurs de coupe de football"). Le [Club africain](https://fr.wikipedia.org/wiki/Club_africain_\(football\) "Club africain \(football\)") est le premier club tunisien à avoir remporté la coupe d'Afrique des clubs champions en [1992](https://fr.wikipedia.org/wiki/Coupe_des_clubs_champions_africains_1992 "Coupe des clubs champions africains 1992"). L'[Étoile sportive du Sahel](https://fr.wikipedia.org/wiki/%C3%89toile_sportive_du_Sahel_\(football\) "Étoile sportive du Sahel \(football\)") est le premier club tunisien à remporter la Ligue des champions de la CAF dans sa nouvelle édition le 9 novembre 2007. Le [Club sportif sfaxien](https://fr.wikipedia.org/wiki/Club_sportif_sfaxien_\(football\) "Club sportif sfaxien \(football\)") a aussi remporté des manifestations continentales et régionales; il est le premier club à remporter deux fois de suite la [coupe de la CAF](https://fr.wikipedia.org/wiki/Coupe_de_la_CAF "Coupe de la CAF") en 2007 et 2008. Le [derby de la capitale](https://fr.wikipedia.org/wiki/Derby_tunisois "Derby tunisois") entre le Club africain et l'Espérance sportive de Tunis reste l'événement footballistique phare de l'année en rassemblant à deux reprises par saison plus de 60 000 spectateurs et donnant lieu à un show (_dakhla_ en [tunisien](https://fr.wikipedia.org/wiki/Arabe_tunisien "Arabe tunisien")) de la part des supporters des deux équipes. Il existe d'autres classiques entre les quatre grandes équipes, l'Espérance sportive de Tunis, l'Étoile sportive du Sahel, le Club sportif sfaxien et le Club africain.
+L'année sportive tunisienne est rythmée par les compétitions que sont les championnats ([football](https://fr.wikipedia.org/wiki/Championnat_de_Tunisie_de_football "Championnat de Tunisie de football"), [handball](https://fr.wikipedia.org/wiki/Championnat_de_Tunisie_masculin_de_handball "Championnat de Tunisie masculin de handball"), [volley-ball](https://fr.wikipedia.org/wiki/Championnat_de_Tunisie_masculin_de_volley-ball "Championnat de Tunisie masculin de volley-ball") et [basket-ball](https://fr.wikipedia.org/wiki/Championnat_de_Tunisie_masculin_de_basket-ball "Championnat de Tunisie masculin de basket-ball")) et les coupes ([football](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_de_football "Coupe de Tunisie de football"), [handball](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_masculine_de_handball "Coupe de Tunisie masculine de handball"), [volley-ball](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_masculine_de_volley-ball "Coupe de Tunisie masculine de volley-ball") et [basket-ball](https://fr.wikipedia.org/wiki/Coupe_de_Tunisie_masculine_de_basket-ball "Coupe de Tunisie masculine de basket-ball")). Le pays organise également des compétitions internationales, comme la première édition de la [Coupe du monde de football des moins de 20 ans](https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_des_moins_de_20_ans "Coupe du monde de football des moins de 20 ans") en [1977](https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_juniors_1977 "Coupe du monde de football juniors 1977")[[366]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-369) et les phases finales des [coupes d'Afrique des nations de football](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_nations_de_football "Coupe d'Afrique des nations de football") en [1965](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_nations_de_football_1965 "Coupe d'Afrique des nations de football 1965")[[367]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-370), [1994](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_nations_de_football_1994 "Coupe d'Afrique des nations de football 1994")[[368]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-371) et [2004](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_nations_de_football_2004 "Coupe d'Afrique des nations de football 2004")[[369]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-372), la dernière édition remportée par la [sélection nationale](https://fr.wikipedia.org/wiki/%C3%89quipe_de_Tunisie_de_football "Équipe de Tunisie de football"). Le [championnat du monde masculin de handball 2005](https://fr.wikipedia.org/wiki/Championnat_du_monde_masculin_de_handball_2005 "Championnat du monde masculin de handball 2005") et le [championnat d'Afrique des nations masculin de handball 2020](https://fr.wikipedia.org/wiki/Championnat_d'Afrique_des_nations_masculin_de_handball_2020 "Championnat d'Afrique des nations masculin de handball 2020") se déroulent aussi en Tunisie.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Oussama_Mellouli_1.jpg/250px-Oussama_Mellouli_1.jpg?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Oussama_Mellouli_1.jpg?uselang=fr)[Oussama Mellouli](https://fr.wikipedia.org/wiki/Oussama_Mellouli "Oussama Mellouli"), champion olympique et du monde du 1 500 mètres nage libre.
+En mai 2007, le pays compte 1 673 clubs sportifs dont les principaux sont actifs dans le football (250) et le taekwondo (206)[[364]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-portail-367). Viennent ensuite le karaté et ses dérivés (166), le [handisport](https://fr.wikipedia.org/wiki/Handisport "Handisport") (140), le handball (85), l'athlétisme (80), le judo (66), le [kung fu](https://fr.wikipedia.org/wiki/Arts_martiaux_chinois "Arts martiaux chinois") (60), le [kick-boxing](https://fr.wikipedia.org/wiki/Kick-boxing "Kick-boxing") (59), le basket-ball (48), la [pétanque](https://fr.wikipedia.org/wiki/P%C3%A9tanque "Pétanque") (47), le [tennis de table](https://fr.wikipedia.org/wiki/Tennis_de_table "Tennis de table") (45), le volley-ball (40), la [boxe](https://fr.wikipedia.org/wiki/Boxe "Boxe") (37), la [natation](https://fr.wikipedia.org/wiki/Natation "Natation") (31) et le tennis (30)[[364]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-portail-367).
+Parmi les sportifs les plus connus, [Mohammed Gammoudi](https://fr.wikipedia.org/wiki/Mohammed_Gammoudi "Mohammed Gammoudi") s'illustre en athlétisme, ce qui lui permet de remporter quatre médailles aux [Jeux olympiques](https://fr.wikipedia.org/wiki/Tunisie_aux_Jeux_olympiques "Tunisie aux Jeux olympiques"), ce qui en fait le sportif tunisien le plus médaillé de l'histoire du pays[[370]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-373). La Tunisie a également vu émerger des champions dans des sports individuels tels que [Anis Lounifi](https://fr.wikipedia.org/wiki/Anis_Lounifi "Anis Lounifi") (champion du monde de judo)[[371]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-374), [Oussama Mellouli](https://fr.wikipedia.org/wiki/Oussama_Mellouli "Oussama Mellouli") (champion du monde et olympique de natation)[[372]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-375) ou encore [Ons Jabeur](https://fr.wikipedia.org/wiki/Ons_Jabeur "Ons Jabeur") qui parvient à se classer deuxième joueuse mondiale par la [WTA](https://fr.wikipedia.org/wiki/WTA_Awards "WTA Awards")[[373]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-376).
+En ce qui concerne les sports collectifs, les équipes nationales ont remporté une [coupe d'Afrique des nations de football](https://fr.wikipedia.org/wiki/Coupe_d'Afrique_des_nations_de_football "Coupe d'Afrique des nations de football"), dix [championnats d'Afrique masculin de handball](https://fr.wikipedia.org/wiki/Championnat_d'Afrique_des_nations_masculin_de_handball "Championnat d'Afrique des nations masculin de handball")[[374]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-377), dix [championnats d'Afrique masculin de volley-ball](https://fr.wikipedia.org/wiki/Championnat_d'Afrique_masculin_de_volley-ball "Championnat d'Afrique masculin de volley-ball")[[375]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-378) et trois [championnats d'Afrique masculins de basket-ball](https://fr.wikipedia.org/wiki/Championnat_d'Afrique_masculin_de_basket-ball "Championnat d'Afrique masculin de basket-ball")[[376]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-379).
+## Fêtes et jours fériés
+Article détaillé: [Fêtes et jours fériés en Tunisie](https://fr.wikipedia.org/wiki/F%C3%AAtes_et_jours_f%C3%A9ri%C3%A9s_en_Tunisie "Fêtes et jours fériés en Tunisie").  
+| Date ([calendrier grégorien](https://fr.wikipedia.org/wiki/Calendrier_gr%C3%A9gorien "Calendrier grégorien"))  | Nom français  | Nom local  | Commémoration  |  
+| --- | --- | --- | --- |  
+| 1er janvier  | [Nouvel an](https://fr.wikipedia.org/wiki/Jour_de_l'an "Jour de l'an")  |  رأس العام ou رأس السنة الإدارية ou رأس السنة الميلادية  |   |  
+| 20 mars  | Fête de l'Indépendance  | عيد الإستقلال  | Avènement de l'indépendance (1956)  |  
+| 9 avril  | Journée des Martyrs  | عيد الشهداء  | Répression de [manifestations nationalistes](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_du_9_avril_1938 "Événements du 9 avril 1938") par les troupes françaises (1938)  |  
+| 1er mai  | [Fête du Travail](https://fr.wikipedia.org/wiki/F%C3%AAte_du_Travail "Fête du Travail")  | عيد الشغل  |   |  
+| 25 juillet  | Fête de la République  | عيد الجمهورية  | Proclamation de la république (1957)  |  
+| 13 août  | Fête de la Femme et de la Famille[[377]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-380)  | عيد المرأة  | Promulgation du [Code du statut personnel](https://fr.wikipedia.org/wiki/Code_du_statut_personnel_\(Tunisie\) "Code du statut personnel \(Tunisie\)") (1956)  |  
+| 15 octobre  | Fête de l'Évacuation[[378]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-381)  | عيد الجلاء  | Départ des dernières troupes françaises de la base de Bizerte (1963)  |  
+| 17 décembre  | Fête de la Révolution[[379]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-382)  | عيد الثورة  | Déclenchement de la [révolution tunisienne](https://fr.wikipedia.org/wiki/R%C3%A9volution_tunisienne "Révolution tunisienne") (2010)  |  
+| Date ([calendrier musulman](https://fr.wikipedia.org/wiki/Calendrier_h%C3%A9girien "Calendrier hégirien"))  | Nom français  | Nom local  | Commémoration  |  
+|  1er [mouharram](https://fr.wikipedia.org/wiki/Mouharram "Mouharram")  |  [Ras el-Am el-Hijri](https://fr.wikipedia.org/wiki/Nouvel_an_islamique "Nouvel an islamique") (Nouvel an de l'hégire)  |  رأس العام الهجري ou رأس السنة الهجرية  | Nouvel an  |  
+| 12 [rabiʿ al-awwal](https://fr.wikipedia.org/wiki/Rabi%CA%BF_al-awwal "Rabiʿ al-awwal")  | [Mouled](https://fr.wikipedia.org/wiki/Mawlid "Mawlid")  | المولد النبوي  | Anniversaire de la naissance de [Mahomet](https://fr.wikipedia.org/wiki/Mahomet "Mahomet")  |  
+|  1er [chawwal](https://fr.wikipedia.org/wiki/Chawwal "Chawwal")  |  [Aïd el-Fitr](https://fr.wikipedia.org/wiki/A%C3%AFd_el-Fitr "Aïd el-Fitr") ou Aïd el-Saghir (Fête de la rupture du jeûne ou Petite fête)  |  العيد الصغير ou عيد الفطر  | Fin du mois de [ramadan](https://fr.wikipedia.org/wiki/Ramadan "Ramadan")[[N 4]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-383),[[N 5]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-aid-384)  |  
+| 10 [dhou al-hijja](https://fr.wikipedia.org/wiki/Dhou_al-hijja "Dhou al-hijja")  |  [Aïd al-Adha](https://fr.wikipedia.org/wiki/A%C3%AFd_al-Adha "Aïd al-Adha") (Grande fête ou Fête du sacrifice)  |  العيد الكبير ou عيد الأضحى  | Sacrifice d'[Abraham](https://fr.wikipedia.org/wiki/Abraham "Abraham")[[N 5]](https://fr.wikipedia.org/wiki/Tunisie#cite_note-aid-384)  |  
+## Notes et références
+### Notes
+  1. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-25 "Revenir plus haut") Les chiffres ne sont pas convergents: la superficie officielle donnée par l'État tunisien est de 162 155 km2 alors que celle mentionnée est la plus fréquemment lue, notamment dans les travaux de géographie.
+  2. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-59 "Revenir plus haut") Ce «Virgile écrivant l'Énéide» est découvert vers 1870 à [Sousse](https://fr.wikipedia.org/wiki/Sousse "Sousse") par Gian Maria Massa [1816-1890] dans le jardin d'une maison qu'il rénovait, et a été offert au contrôleur civil de Sousse qui l'a remis au musée de Sousse, pour ensuite être transféré à Tunis.
+  3. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-348 "Revenir plus haut") Le jasmin d'Arabie (_[Jasminum sambac](https://fr.wikipedia.org/wiki/Jasminum_sambac "Jasminum sambac")_), appelé _fel_ , est aussi cultivé mais cette espèce tropicale très frileuse et très sensible au vent pousse sur la côte, à l'abri du cap Bon entre Hammamet et Tunis selon Marceau Gast, «Jasmin (yasmîn)», dans [Salem Chaker](https://fr.wikipedia.org/wiki/Salem_Chaker "Salem Chaker") (dir.), [Encyclopédie berbère](https://fr.wikipedia.org/wiki/Encyclop%C3%A9die_berb%C3%A8re "Encyclopédie berbère"), vol.25: Iseqqemâren – Juba, Aix-en-Provence, [Édisud](https://fr.wikipedia.org/wiki/%C3%89disud "Édisud"), 2003 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[2-7449-0424-4](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/2-7449-0424-4 "Spécial:Ouvrages de référence/2-7449-0424-4"), [lire en ligne](https://journals.openedition.org/encyclopedieberbere/1480) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fjournals.openedition.org%2Fencyclopedieberbere%2F1480 "archive sur Wikiwix")]), p.3852-3854.
+  4. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-383 "Revenir plus haut") Au cours du mois lunaire de ramadan qui précède la fête de l'Aïd el-Fitr, les musulmans [jeûnent](https://fr.wikipedia.org/wiki/Je%C3%BBne "Jeûne") pendant la journée et festoient durant la nuit, d'où la possibilité de perturbations des conditions normales de travail. Beaucoup de [restaurants](https://fr.wikipedia.org/wiki/Restaurant "Restaurant") sont fermés pendant la journée, alors que fumer ou boire est susceptible de faire l'objet de restrictions. Certaines perturbations se poursuivent éventuellement pendant la fête de l'Aïd el-Fitr elle-même.
+  5. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-aid_384-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-aid_384-1) Les fêtes de l'Aïd al-Fitr et de l'Aïd el-Kebir durent deux jours.
+
+
+### Références
+  1. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-const-lang_1-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-const-lang_1-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-const-lang_1-2) «[Dispositions générales](https://web.archive.org/web/20190323135408/http://majles.marsad.tn/fr/constitution/5/chapitre/1)», sur _majles.marsad.tn_ (version du 23 mars 2019 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  2. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ins_2-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ins_2-1) «[Recensement général de la population et de l'habitat 2024](https://www.ins.tn/enquetes/recensement-general-de-la-population-et-de-lhabitat-2024) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.ins.tn%2Fenquetes%2Frecensement-general-de-la-population-et-de-lhabitat-2024 "archive sur Wikiwix")]», sur [Institut national de la statistique](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_\(Tunisie\) "Institut national de la statistique \(Tunisie\)") (consulté le 19 mai 2025).
+  3. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-FMI2_3-5) (en) «[World Economic Outlook Database](https://www.imf.org/en/Publications/WEO/weo-database/2025/April/weo-report) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.imf.org%2Fen%2FPublications%2FWEO%2Fweo-database%2F2025%2FApril%2Fweo-report "archive sur Wikiwix")]», sur [Fonds monétaire international](https://fr.wikipedia.org/wiki/Fonds_mon%C3%A9taire_international "Fonds monétaire international") (consulté le 10 juin 2026).
+  4. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-hdr2025_4-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-hdr2025_4-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-hdr2025_4-2) Rapport sur le développement humain 2025: Une question de choix: l’humain et les possibles à l’ère de l’IA, [New York](https://fr.wikipedia.org/wiki/New_York "New York"), [Programme des Nations unies pour le développement](https://fr.wikipedia.org/wiki/Programme_des_Nations_unies_pour_le_d%C3%A9veloppement "Programme des Nations unies pour le développement"), mai 2025, 324p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-92-1-157609-2](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-92-1-157609-2 "Spécial:Ouvrages de référence/978-92-1-157609-2"), [lire en ligne](https://hdr.undp.org/content/human-development-report-2025) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fhdr.undp.org%2Fcontent%2Fhuman-development-report-2025 "archive sur Wikiwix")]).
+  5. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-Gini_BM_5-0 "Revenir plus haut") (en) «[Gini index](https://data.worldbank.org/indicator/SI.POV.GINI?most_recent_value_desc=false) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdata.worldbank.org%2Findicator%2FSI.POV.GINI%3Fmost_recent_value_desc%3Dfalse "archive sur Wikiwix")]», sur data.worldbank.org, [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") (consulté le 24 avril 2023).
+  6. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-IPE2024_6-0 "Revenir plus haut") (en) Martin J. Wolf, John W. Emerson, Daniel C. Esty, Alex de Sherbinin, Zachary A. Wendling _et al._ , 2024 Environmental Performance Index, New Haven, Yale Center for Environmental Law & Policy, 2024, 204p. ([lire en ligne](https://epi.yale.edu/downloads/2024-epi-report-20250106.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fepi.yale.edu%2Fdownloads%2F2024-epi-report-20250106.pdf "archive sur Wikiwix")]).
+  7. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-7 "Revenir plus haut") Welid Naffati, «[Tunisie: feu vert à l'ATI pour gérer le .tounes](https://www.tekiano.com/2010/08/12/tunisie-feu-vert-a-l-ati-pour-gerer-le-tounes/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.tekiano.com%2F2010%2F08%2F12%2Ftunisie-feu-vert-a-l-ati-pour-gerer-le-tounes%2F "archive sur Wikiwix")]», sur tekiano.com, 12 août 2010 (consulté le 18 janvier 2019).
+  8. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-8 "Revenir plus haut") «[États membres](https://www.un.org/fr/about-us/member-states#gotoT) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.un.org%2Ffr%2Fabout-us%2Fmember-states%23gotoT "archive sur Wikiwix")]», sur [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") (consulté le 22 mars 2025).
+  9. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-CNIG_9-0 "Revenir plus haut") [Commission nationale de toponymie](https://fr.wikipedia.org/wiki/Commission_nationale_de_toponymie "Commission nationale de toponymie"), Pays, territoires et villes du monde, Paris, [Conseil national de l'information géolocalisée](https://fr.wikipedia.org/wiki/Conseil_national_de_l'information_g%C3%A9olocalis%C3%A9e "Conseil national de l'information géolocalisée"), 2021, 34p. ([présentation en ligne](https://cnig.gouv.fr/ressources-toponymie-a10578.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fcnig.gouv.fr%2Fressources-toponymie-a10578.html "archive sur Wikiwix")], [lire en ligne](https://cnig.gouv.fr/IMG/pdf/ptvm_1er-juillet-2021_ok.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fcnig.gouv.fr%2FIMG%2Fpdf%2Fptvm_1er-juillet-2021_ok.pdf "archive sur Wikiwix")]), p.33.
+  10. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10 "Revenir plus haut") Victor Silvera, «Le régime constitutionnel de la Tunisie: la Constitution du 1er juin 1959», _[Revue française de science politique](https://fr.wikipedia.org/wiki/Revue_fran%C3%A7aise_de_science_politique "Revue française de science politique")_ , vol.10, no2,‎ 1960, p.377 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0035-2950](https://portal.issn.org/resource/ISSN/0035-2950), [lire en ligne](http://www.persee.fr/web/revues/home/prescript/article/rfsp_0035-2950_1960_num_10_2_392575) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.persee.fr%2Fweb%2Frevues%2Fhome%2Fprescript%2Farticle%2Frfsp_0035-2950_1960_num_10_2_392575 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  11. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-11 "Revenir plus haut") Michel Camau et [Vincent Geisser](https://fr.wikipedia.org/wiki/Vincent_Geisser "Vincent Geisser"), Habib Bourguiba: la trace et l'héritage, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2004, 663p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2845865068](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2845865068 "Spécial:Ouvrages de référence/978-2845865068"), [lire en ligne](https://books.google.com/books?id=QrYenoGYWTgC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DQrYenoGYWTgC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.211.
+  12. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-12 "Revenir plus haut") [Marc Imbeault](https://fr.wikipedia.org/wiki/Marc_Imbeault "Marc Imbeault") et Gérard A. Montifroy, Géopolitique et pouvoirs: des pouvoirs de la géopolitique à la géopolitique des pouvoirs, Lausanne, [Éditions L'Âge d'Homme](https://fr.wikipedia.org/wiki/%C3%89ditions_L'%C3%82ge_d'Homme "Éditions L'Âge d'Homme"), 2003, 129p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2825117835](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2825117835 "Spécial:Ouvrages de référence/978-2825117835"), [lire en ligne](https://books.google.com/books?id=2Bim-SgPyGwC&pg=PA62) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D2Bim-SgPyGwC%26pg%3DPA62 "archive sur Wikiwix")]), p.62.
+  13. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-13 "Revenir plus haut") Xavier Harel, «Tunisie: l'empire économique des Trabelsi et Ben Ali menacé», _[La Tribune](https://fr.wikipedia.org/wiki/La_Tribune_\(France,_1985\) "La Tribune \(France, 1985\)")_ ,‎ 18 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1760-4869](https://portal.issn.org/resource/ISSN/1760-4869), [lire en ligne](http://www.latribune.fr/actualites/economie/international/20110118trib000593005/tunisie-l-empire-economique-des-trabelsi-et-ben-ali-menace.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.latribune.fr%2Factualites%2Feconomie%2Finternational%2F20110118trib000593005%2Ftunisie-l-empire-economique-des-trabelsi-et-ben-ali-menace.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  14. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-14 "Revenir plus haut") «[Tunisie: une étude de la Banque mondiale dévoile la manipulation de la réglementation par les anciens responsables du régime](http://www.banquemondiale.org/fr/news/press-release/2014/03/27/world-bank-manipulation-former-tunisian-officials) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.banquemondiale.org%2Ffr%2Fnews%2Fpress-release%2F2014%2F03%2F27%2Fworld-bank-manipulation-former-tunisian-officials "archive sur Wikiwix")]», sur [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale"), 27 mars 2014 (consulté le 18 janvier 2019).
+  15. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-15 "Revenir plus haut") Pierre Prier, «L'exil doré de Ben Ali en Arabie saoudite», _[Le Figaro](https://fr.wikipedia.org/wiki/Le_Figaro "Le Figaro")_ ,‎ 14 janvier 2013 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0182-5852](https://portal.issn.org/resource/ISSN/0182-5852), [lire en ligne](http://www.lefigaro.fr/international/2013/01/14/01003-20130114ARTFIG00565-l-exile-dore-de-ben-ali-en-arabie-saoudite.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.lefigaro.fr%2Finternational%2F2013%2F01%2F14%2F01003-20130114ARTFIG00565-l-exile-dore-de-ben-ali-en-arabie-saoudite.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  16. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-16 "Revenir plus haut") «[Tunisie: les Ben Ali coulent des jours paisibles en Arabie saoudite](http://www.tunisienumerique.com/tunisie-les-ben-ali-coulent-des-jours-paisibles-en-arabie-saoudite/161064) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.tunisienumerique.com%2Ftunisie-les-ben-ali-coulent-des-jours-paisibles-en-arabie-saoudite%2F161064 "archive sur Wikiwix")]», sur tunisienumerique.com, 15 janvier 2013 (consulté le 18 janvier 2019).
+  17. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-17 "Revenir plus haut") «[Membres actuels](https://www.un.org/securitycouncil/fr/content/current-members) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.un.org%2Fsecuritycouncil%2Ffr%2Fcontent%2Fcurrent-members "archive sur Wikiwix")]», sur [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") (consulté le 14 août 2022).
+  18. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-18 "Revenir plus haut") Khalil Jelassi, «Othmane Jerandi fait le bilan du mandat de la Tunisie en tant que membre non permanent du Conseil de sécurité des Nations Unies: «Nous avons réussi à défendre les causes justes»», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 8 janvier 2022 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://lapresse.tn/2022/01/08/othmane-jerandi-fait-le-bilan-du-mandat-de-la-tunisie-en-tant-que-membre-non-permanent-du-conseil-de-securite-des-nations-unies-nous-avons-reussi-a-defendre-les-causes-justes/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Flapresse.tn%2F2022%2F01%2F08%2Fothmane-jerandi-fait-le-bilan-du-mandat-de-la-tunisie-en-tant-que-membre-non-permanent-du-conseil-de-securite-des-nations-unies-nous-avons-reussi-a-defendre-les-causes-justes%2F "archive sur Wikiwix")], consulté le 27 août 2024).
+  19. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-adrian_19-0 "Revenir plus haut") (en) Adrian Room, Placenames of the World: Origins and Meanings of the Names for 6,600 Countries, Cities, Territories, Natural Features and Historic Sites, Jefferson, [McFarland & Company](https://fr.wikipedia.org/wiki/McFarland_&_Company "McFarland & Company"), 2006, 433p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0786422487](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0786422487 "Spécial:Ouvrages de référence/978-0786422487")), p.385.
+  20. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-20 "Revenir plus haut") (en) «[Standard country or area codes for statistical use (M49)](https://unstats.un.org/unsd/methodology/m49/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Funstats.un.org%2Funsd%2Fmethodology%2Fm49%2F "archive sur Wikiwix")]», sur unstats.un.org, [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") (consulté le 28 février 2026).
+  21. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-21 "Revenir plus haut") (en) «[Africa: What's in a name?](https://sahistory.org.za/article/africa-whats-name) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fsahistory.org.za%2Farticle%2Fafrica-whats-name "archive sur Wikiwix")]», sur sahistory.org.za, 20 mai 2015 (consulté le 28 février 2026).
+  22. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-22 "Revenir plus haut") «[Ifriqiya](https://www.larousse.fr/encyclopedie/autre-region/Ifriqiya/124749) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.larousse.fr%2Fencyclopedie%2Fautre-region%2FIfriqiya%2F124749 "archive sur Wikiwix")]», sur [Éditions Larousse](https://fr.wikipedia.org/wiki/%C3%89ditions_Larousse "Éditions Larousse") (consulté le 28 février 2026).
+  23. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-23 "Revenir plus haut") Ahmed Siraj, «Ifrîkiyya», dans [Gabriel Camps](https://fr.wikipedia.org/wiki/Gabriel_Camps "Gabriel Camps") (dir.), [Encyclopédie berbère](https://fr.wikipedia.org/wiki/Encyclop%C3%A9die_berb%C3%A8re "Encyclopédie berbère"), vol.24: Ida – Issamadanen, Aix-en-Provence, [Édisud](https://fr.wikipedia.org/wiki/%C3%89disud "Édisud"), 2001 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[2-7449-0207-1](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/2-7449-0207-1 "Spécial:Ouvrages de référence/2-7449-0207-1"), [lire en ligne](https://journals.openedition.org/encyclopedieberbere/1545) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fjournals.openedition.org%2Fencyclopedieberbere%2F1545 "archive sur Wikiwix")]), p.3660-3666.
+  24. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-24 "Revenir plus haut") Abdennour Benantar, Les initiatives de sécurité au Maghreb et au Sahel: le G5 Sahel mis à l'épreuve, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2019, 280p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2140121890](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2140121890 "Spécial:Ouvrages de référence/978-2140121890"), [lire en ligne](https://books.google.com/books?id=jz-ZDwAAQBAJ&newbks=0&lpg=PP1&hl=fr&pg=PA17#v=onepage&q&f=false) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Djz-ZDwAAQBAJ%26newbks%3D0%26lpg%3DPP1%26hl%3Dfr%26pg%3DPA17%23v%3Donepage%26q%26f%3Dfalse "archive sur Wikiwix")]), p.17.
+  25. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-26 "Revenir plus haut") «[Nouveaux chiffres sur le littoral tunisien](http://www.apal.nat.tn/site_web/indicateurs/nouveaux-chiffres%20_littorale-2015.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.apal.nat.tn%2Fsite_web%2Findicateurs%2Fnouveaux-chiffres%2520_littorale-2015.pdf "archive sur Wikiwix")]» [PDF], sur apal.nat.tn (consulté le 8 avril 2020).
+  26. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-27 "Revenir plus haut") «[Principaux indicateurs de l'agriculture tunisienne: les ressources en terre](https://web.archive.org/web/20130604064020/http://www.agriportail.tn/index.php?option=com_content&task=view&id=98&Itemid=62)», sur _agriportail.tn_ (version du 4 juin 2013 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  27. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-28 "Revenir plus haut") (en) R.H. Hughes et J.S. Hughes, A Directory of African Wetlands, Gland, [Union internationale pour la conservation de la nature](https://fr.wikipedia.org/wiki/Union_internationale_pour_la_conservation_de_la_nature "Union internationale pour la conservation de la nature"), 1992, 820p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2880329495](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2880329495 "Spécial:Ouvrages de référence/978-2880329495"), [lire en ligne](https://books.google.com/books?id=VLjafeXa3gMC&pg=PA75) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DVLjafeXa3gMC%26pg%3DPA75 "archive sur Wikiwix")]), p.75.
+  28. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cbd_29-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cbd_29-1) [Ministère de l'Environnement](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'Environnement_\(Tunisie\) "Ministère de l'Environnement \(Tunisie\)"), «[5e rapport national sur la biodiversité](https://www.cbd.int/doc/world/tn/tn-nr-05-fr.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.cbd.int%2Fdoc%2Fworld%2Ftn%2Ftn-nr-05-fr.pdf "archive sur Wikiwix")]» [PDF], sur [Convention sur la diversité biologique](https://fr.wikipedia.org/wiki/Convention_sur_la_diversit%C3%A9_biologique "Convention sur la diversité biologique"), juillet 2014 (consulté le 28 février 2026), p.5.
+  29. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-30 "Revenir plus haut") «[Nouveaux chiffres sur le littoral tunisien](https://web.archive.org/web/20161108100410/https://www.apal.nat.tn/site_web/indicateurs/nouveaux-chiffres%20_littorale-2015.pdf)» [PDF], sur _[Agence de protection et d'aménagement du littoral](https://fr.wikipedia.org/wiki/Agence_de_protection_et_d'am%C3%A9nagement_du_littoral "Agence de protection et d'aménagement du littoral")_ , p.2 (archivé sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  30. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-31 "Revenir plus haut") «[Projet SMAP III Tunisie](https://awsassets.panda.org/downloads/brochure_smap_iii_tunisie___june_2006___final.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fawsassets.panda.org%2Fdownloads%2Fbrochure_smap_iii_tunisie___june_2006___final.pdf "archive sur Wikiwix")]» [PDF], sur awsassets.panda.org, juin 2006 (consulté le 28 février 2026), p.2.
+  31. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-32 "Revenir plus haut") «[Tunisie: géographie physique](https://www.larousse.fr/encyclopedie/divers/Tunisie_g%C3%A9ographie_physique/186996) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.larousse.fr%2Fencyclopedie%2Fdivers%2FTunisie_g%25C3%25A9ographie_physique%2F186996 "archive sur Wikiwix")]», sur [Éditions Larousse](https://fr.wikipedia.org/wiki/%C3%89ditions_Larousse "Éditions Larousse") (consulté le 28 février 2026).
+  32. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-33 "Revenir plus haut") «[Le pays en un coup d'œil](https://www.fao.org/tunisie/notre-bureau/lesotho-at-a-glance/en/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.fao.org%2Ftunisie%2Fnotre-bureau%2Flesotho-at-a-glance%2Fen%2F "archive sur Wikiwix")]», sur [Organisation des Nations unies pour l'alimentation et l'agriculture](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'alimentation_et_l'agriculture "Organisation des Nations unies pour l'alimentation et l'agriculture") (consulté le 28 février 2026).
+  33. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-docs1_34-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-docs1_34-1) «[La Tunisie face aux changements climatiques: évaluation et actions pour accroître la résilience et le développement](https://documents1.worldbank.org/curated/en/753771468311363122/pdf/761860FRENCH0B0C00TBN0P40Tunisia0FR.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdocuments1.worldbank.org%2Fcurated%2Fen%2F753771468311363122%2Fpdf%2F761860FRENCH0B0C00TBN0P40Tunisia0FR.pdf "archive sur Wikiwix")]» [PDF], sur documents1.worldbank.org, [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") (consulté le 28 février 2026), p.29 et 43.
+  34. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-35 "Revenir plus haut") Aïcha Teyeb, Leïla Dehmani, Afifa Ben Ezzine, Chekib Kerkeni et Lanouar Kaabi, «Étude des performances d'un capteur stockeur cylindro-parabolique», _Revue des énergies renouvelables_ , vol.9, no3,‎ 2006, p.135 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1112-2242](https://portal.issn.org/resource/ISSN/1112-2242), [lire en ligne](http://www.cder.dz/download/Art9_3-3.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.cder.dz%2Fdownload%2FArt9_3-3.pdf "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  35. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-36 "Revenir plus haut") Chekib Kerkeni, K. Hamdi, Leïla Dehmani et A. Belghith, «Étude des performances thermiques à long terme d'un système solaire de chauffage de l'eau sanitaire», _6 ejournées internationales de l'énergie thermique_,‎ 19-22 avril 1993, p.345-351 ([lire en ligne](http://cat.inist.fr/?aModele=afficheN&cpsidt=4277244) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fcat.inist.fr%2F%3FaModele%3DafficheN%26cpsidt%3D4277244 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  36. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-37 "Revenir plus haut") «[La Tunisie porte le nombre de ses parcs nationaux de 8 à 15](http://www.investir-en-tunisie.net/fr/index.php/2010/04/06/la-tunisie-porte-le-nombre-de-ses-parcs-nationaux-de8a15/) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.investir-en-tunisie.net%2Ffr%2Findex.php%2F2010%2F04%2F06%2Fla-tunisie-porte-le-nombre-de-ses-parcs-nationaux-de8a15%2F "archive sur Wikiwix")]», sur investir-en-tunisie.net, 6 avril 2010 (consulté le 18 janvier 2019).
+  37. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-38 "Revenir plus haut") «[Parc national de l'Ichkeul](http://whc.unesco.org/fr/list/8) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwhc.unesco.org%2Ffr%2Flist%2F8 "archive sur Wikiwix")]», sur whc.unesco.org (consulté le 18 janvier 2019).
+  38. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-39 "Revenir plus haut") Louis Pouillon, «[Tunisie: les enjeux de la transition énergétique](https://www.arabnews.fr/node/243616/%C3%A9conomie) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.arabnews.fr%2Fnode%2F243616%2F%25C3%25A9conomie "archive sur Wikiwix")]», sur arabnews.fr, 20 mai 2022 (consulté le 22 mai 2022).
+  39. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-40 "Revenir plus haut") «[La Tunisie en première ligne du changement climatique](https://www.franceculture.fr/environnement/la-tunisie-en-premiere-ligne-du-changement-climatique) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.franceculture.fr%2Fenvironnement%2Fla-tunisie-en-premiere-ligne-du-changement-climatique "archive sur Wikiwix")]», sur [France Culture](https://fr.wikipedia.org/wiki/France_Culture "France Culture"), 8 décembre 2019 (consulté le 14 janvier 2021).
+  40. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-41 "Revenir plus haut") Matthias Raynal, «[En Tunisie, le principal fleuve est empoisonné par l'industrie](https://reporterre.net/En-Tunisie-le-principal-fleuve-est-empoisonne-par-l-industrie) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Freporterre.net%2FEn-Tunisie-le-principal-fleuve-est-empoisonne-par-l-industrie "archive sur Wikiwix")]», sur [Reporterre](https://fr.wikipedia.org/wiki/Reporterre "Reporterre"), 13 janvier 2021 (consulté le 14 janvier 2021).
+  41. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-popgeneral_42-0 "Revenir plus haut") «[Données générales sur la population](https://web.archive.org/web/20150924035230/http://www.ins.nat.tn/fr/donnee_demografiques0.php?code_theme=0201)», sur _[Institut national de la statistique](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_\(Tunisie\) "Institut national de la statistique \(Tunisie\)")_ (version du 24 septembre 2015 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  42. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-43 "Revenir plus haut") «[Taux d'urbanisation en Tunisie de 2008 à 2018](https://fr.statista.com/statistiques/990527/urbanisation-en-tunisie/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Ffr.statista.com%2Fstatistiques%2F990527%2Furbanisation-en-tunisie%2F "archive sur Wikiwix")]», sur statista.com (consulté le 28 mars 2024).
+  43. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-44 "Revenir plus haut") Houda Laroussi, Micro-crédit et lien social en Tunisie: la solidarité instituée, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2009, 312p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2811131302](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2811131302 "Spécial:Ouvrages de référence/978-2811131302"), [lire en ligne](https://books.google.fr/books?id=a6H6qWLqoQkC&pg=PA58) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3Da6H6qWLqoQkC%26pg%3DPA58 "archive sur Wikiwix")]), p.58.
+  44. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-45 "Revenir plus haut") «Loi organique n°89-11 du 4 février 1989, relative aux Conseils régionaux», _[Journal officiel de la République tunisienne](https://fr.wikipedia.org/wiki/Journal_officiel_de_la_R%C3%A9publique_tunisienne "Journal officiel de la République tunisienne")_ , no10,‎ 10 février 1989, p.218-221 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-7921](https://portal.issn.org/resource/ISSN/0330-7921), [lire en ligne](https://lake.jort.tn/journal-officiel/fr/1989/010.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Flake.jort.tn%2Fjournal-officiel%2Ffr%2F1989%2F010.pdf "archive sur Wikiwix")] [PDF]).
+  45. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-46 "Revenir plus haut") «[Le nouveau découpage territorial est publié au JORT: 85 nouvelles municipalités](https://www.leaders.com.tn/article/19851-le-nouveau-decoupage-territorial-est-publie-au-jort-85-nouvelles-municipalites) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.leaders.com.tn%2Farticle%2F19851-le-nouveau-decoupage-territorial-est-publie-au-jort-85-nouvelles-municipalites "archive sur Wikiwix")]», sur [Leaders](https://fr.wikipedia.org/wiki/Leaders_\(Tunisie\) "Leaders \(Tunisie\)"), 29 mai 2016 (consulté le 3 mars 2020).
+  46. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-47 "Revenir plus haut") (en) Lahcen Achy, «Tunisia's Economic Challenges», _The Carnegie Papers_ ,‎ décembre 2011, p.8 ([lire en ligne](http://carnegieendowment.org/files/tunisia_economy.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fcarnegieendowment.org%2Ffiles%2Ftunisia_economy.pdf "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  47. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-mk_p110_48-0 "Revenir plus haut") Ahmed Moro et [Bernard Kalaora](https://fr.wikipedia.org/wiki/Bernard_Kalaora "Bernard Kalaora") (dir.), Le désert: de l'écologie du divin au développement durable, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2006, 266p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747596770](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747596770 "Spécial:Ouvrages de référence/978-2747596770"), [lire en ligne](https://books.google.com/books?id=nDguQyPLfEYC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DnDguQyPLfEYC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.110.
+  48. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-49 "Revenir plus haut") [Michel Gruet](https://fr.wikipedia.org/wiki/Michel_Gruet "Michel Gruet"), «Le gisement d'El Guettar et sa flore», _Libyca_ ,‎ 1958, p.79-126 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0459-3030](https://portal.issn.org/resource/ISSN/0459-3030)).
+  49. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-50 "Revenir plus haut") «[Hermaïon](https://web.archive.org/web/20200614080051/http://www.inp.rnrt.tn/album/LA%20TUNISIE%20ANTIQUE/PREHISTRIQUE/slides/15.html)», sur _[Institut national du patrimoine](https://fr.wikipedia.org/wiki/Institut_national_du_patrimoine_\(Tunisie\) "Institut national du patrimoine \(Tunisie\)")_ (version du 14 juin 2020 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  50. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-51 "Revenir plus haut") [Marcel Otte](https://fr.wikipedia.org/wiki/Marcel_Otte "Marcel Otte"), Denis Vialou et Patrick Plumet, La Préhistoire, Louvain-la-Neuve, [De Boeck](https://fr.wikipedia.org/wiki/De_Boeck "De Boeck"), 2003, 369p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2804144173](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2804144173 "Spécial:Ouvrages de référence/978-2804144173")), p.176.
+  51. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-52 "Revenir plus haut") Georges Larrouy, «[La place de l'anthropobiologie dans l'étude du peuplement berbère. Affirmations, contradictions, conclusions](http://www.didac.ehu.es/antropo/7/7-1/Larrouy.htm) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.didac.ehu.es%2Fantropo%2F7%2F7-1%2FLarrouy.htm "archive sur Wikiwix")]», sur didac.ehu.es (consulté le 20 janvier 2019).
+  52. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-53 "Revenir plus haut") Magdeleine Moureau et Gérald Brace, Dictionnaire des sciences de la Terre, Paris, Technip, 2000, 1096p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2710807490](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2710807490 "Spécial:Ouvrages de référence/978-2710807490")), p.76.
+  53. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-54 "Revenir plus haut") Mohamed-Habib Daghari-Ounissi, Tunisie, habiter sa différence, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), coll.«Histoire et perspectives méditerranéennes», 2002, 212p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747521864](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747521864 "Spécial:Ouvrages de référence/978-2747521864"), [lire en ligne](https://books.google.com/books?id=3aVEpvstrn4C&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D3aVEpvstrn4C%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.32.
+  54. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-55 "Revenir plus haut") (en) Lloyd Cabot Briggs, Tribes of the Sahara, Cambridge, [Harvard University Press](https://fr.wikipedia.org/wiki/Harvard_University_Press "Harvard University Press"), 1960, 295p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0674908703](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0674908703 "Spécial:Ouvrages de référence/978-0674908703")), p.34-36.
+  55. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-5) [7](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-6) [8](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-7) [9](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-8) [10](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta_56-9) «[Tunisie](https://web.archive.org/web/20090216194646/http://fr.encarta.msn.com/encyclopedia_761568505_5/Tunisie.html)», sur _[Encarta](https://fr.wikipedia.org/wiki/Encarta "Encarta")_ (version du 16 février 2009 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  56. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-57 "Revenir plus haut") Michel Quitout, Les langues orales dans les pays méditerranéens: situation, enseignement et recherche, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2001, 178p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747507509](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747507509 "Spécial:Ouvrages de référence/978-2747507509"), [lire en ligne](https://books.google.com/books?id=swqnSfc-xKoC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DswqnSfc-xKoC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.43.
+  57. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-58 "Revenir plus haut") En particulier entre les Puniques et les populations locales selon [Hédi Dridi](https://fr.wikipedia.org/wiki/H%C3%A9di_Dridi "Hédi Dridi"), Carthage et le monde punique, Paris, [Les Belles Lettres](https://fr.wikipedia.org/wiki/Les_Belles_Lettres "Les Belles Lettres"), 2006, 288p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2251410333](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2251410333 "Spécial:Ouvrages de référence/978-2251410333")), p.28.
+  58. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin118_60-0 "Revenir plus haut") [Yves Lacoste](https://fr.wikipedia.org/wiki/Yves_Lacoste "Yves Lacoste") et [Camille Lacoste-Dujardin](https://fr.wikipedia.org/wiki/Camille_Lacoste-Dujardin "Camille Lacoste-Dujardin") (dir.), L'état du Maghreb, Paris, [La Découverte](https://fr.wikipedia.org/wiki/La_D%C3%A9couverte "La Découverte"), coll.«L'État du monde», 1991, 572p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2707120144](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2707120144 "Spécial:Ouvrages de référence/978-2707120144")), p.118.
+  59. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-61 "Revenir plus haut") [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.39.
+  60. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-62 "Revenir plus haut") Véronique Krings, La civilisation phénicienne et punique: manuel de recherche, Leyde, [Éditions Brill](https://fr.wikipedia.org/wiki/%C3%89ditions_Brill "Éditions Brill"), 1995, 923p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9004100688](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9004100688 "Spécial:Ouvrages de référence/978-9004100688"), [lire en ligne](https://books.google.com/books?id=tdPwhNHB3Z4C&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DtdPwhNHB3Z4C%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.112.
+  61. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-63 "Revenir plus haut") Attilio Gaudio, Les Îles Canaries, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 1995, 216p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2865375585](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2865375585 "Spécial:Ouvrages de référence/978-2865375585"), [lire en ligne](https://books.google.com/books?id=wxEm5znYC5kC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DwxEm5znYC5kC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.23.
+  62. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-5) [7](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-6) [8](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-7) [9](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-8) [10](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin38_64-9) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.38.
+  63. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-65 "Revenir plus haut") Anne Zali et Annie Berthier (dir.), L'aventure des écritures, Paris, [Bibliothèque nationale de France](https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France "Bibliothèque nationale de France"), 1997, 176p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2717720235](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2717720235 "Spécial:Ouvrages de référence/978-2717720235")), p.100.
+  64. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-simon13_66-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-simon13_66-1) [Jacques Simon](https://fr.wikipedia.org/wiki/Jacques_Simon_\(historien\) "Jacques Simon \(historien\)"), Algérie: le passé, l'Algérie française, la révolution (1954-1958), Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2007, 520p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2296028586](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2296028586 "Spécial:Ouvrages de référence/978-2296028586")), p.13.
+  65. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-march238_67-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-march238_67-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-march238_67-2) Philippe Lemarchand (dir.), L'Afrique et l'Europe: atlas du XXesiècle, Paris, [Éditions Complexe](https://fr.wikipedia.org/wiki/%C3%89ditions_Complexe "Éditions Complexe"), 1994, 252p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2870275184](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2870275184 "Spécial:Ouvrages de référence/978-2870275184")), p.238.
+  66. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-arnauld58_68-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-arnauld58_68-1) Dominique Arnauld, Histoire du christianisme en Afrique: les sept premiers siècles, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2001, 380p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2845861909](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2845861909 "Spécial:Ouvrages de référence/978-2845861909"), [lire en ligne](https://books.google.com/books?id=ivwNo42jmcEC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DivwNo42jmcEC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.58.
+  67. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-69 "Revenir plus haut") Voir à ce sujet le travail de [Marcel Le Glay](https://fr.wikipedia.org/wiki/Marcel_Le_Glay "Marcel Le Glay"), Saturne africain, Paris, De Boccard, 1966, 522p.
+  68. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-70 "Revenir plus haut") [Claude Lepelley](https://fr.wikipedia.org/wiki/Claude_Lepelley "Claude Lepelley"), Rome et l'intégration de l'Empire, 44 av. J.-C.-260 apr. J.-C.: approches régionales du Haut-Empire romain, t.2, Paris, [Presses universitaires de France](https://fr.wikipedia.org/wiki/Presses_universitaires_de_France "Presses universitaires de France"), 1998, 640p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2130487111](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2130487111 "Spécial:Ouvrages de référence/978-2130487111")), p.102.
+  69. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-71 "Revenir plus haut") Fethi Bejaoui, «La Carthage de saint Augustin», _[Connaissance des arts](https://fr.wikipedia.org/wiki/Connaissance_des_arts "Connaissance des arts")_ , no69 «Carthage (hors-série)»,‎ 1995, p.55 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[2102-5371](https://portal.issn.org/resource/ISSN/2102-5371)).
+  70. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-72 "Revenir plus haut") (en) J. Patout Burns, Christianity in Roman Africa: The Development of Its Practices and Beliefs, Grand Rapids, Eerdmans, 2014, 670p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-1467440370](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-1467440370 "Spécial:Ouvrages de référence/978-1467440370")).
+  71. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-73 "Revenir plus haut") (en) [W. H. C. Frend](https://fr.wikipedia.org/wiki/W._H._C._Frend?action=edit&redlink=1 "W. H. C. Frend \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/W.%20H.%20C.%20Frend "en:W. H. C. Frend")The Donatist Church: A Movement of Protest in Roman North Africa, Oxford, [Oxford University Press](https://fr.wikipedia.org/wiki/Oxford_University_Press "Oxford University Press"), 1952, 360p.
+  72. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-74 "Revenir plus haut") (en) [Brent Shaw](https://fr.wikipedia.org/wiki/Brent_Shaw?action=edit&redlink=1 "Brent Shaw \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/Brent%20Shaw "en:Brent Shaw")Sacred Violence: African Christians and Sectarian Hatred in the Age of Augustine, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 2011, 930p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521127257](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521127257 "Spécial:Ouvrages de référence/978-0521127257")).
+  73. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-75 "Revenir plus haut") [Serge Lancel](https://fr.wikipedia.org/wiki/Serge_Lancel "Serge Lancel"), Saint Augustin, Paris, [Fayard](https://fr.wikipedia.org/wiki/Librairie_Arth%C3%A8me_Fayard "Librairie Arthème Fayard"), 1999, 792p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2702831526](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2702831526 "Spécial:Ouvrages de référence/978-2702831526")).
+  74. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-76 "Revenir plus haut") (en) David Rankin, Tertullian and the Church, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 1995, 248p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521480673](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521480673 "Spécial:Ouvrages de référence/978-0521480673")).
+  75. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-77 "Revenir plus haut") [Aïcha Ben Abed](https://fr.wikipedia.org/wiki/A%C3%AFcha_Ben_Abed "Aïcha Ben Abed"), «Carthage. Capitale de l'Africa», _[Connaissance des arts](https://fr.wikipedia.org/wiki/Connaissance_des_arts "Connaissance des arts")_ , no69 «Carthage (hors-série)»,‎ 1995, p.44 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[2102-5371](https://portal.issn.org/resource/ISSN/2102-5371)).
+  76. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-78 "Revenir plus haut") Hélène Ménard, Maintenir l'ordre à Rome: IIe – IVesiècles ap. J.-C., Seyssel, Champ Vallon, 2004, 286p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2876734036](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2876734036 "Spécial:Ouvrages de référence/978-2876734036")), p.251.
+  77. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-79 "Revenir plus haut") [Moncef Ben Moussa](https://fr.wikipedia.org/wiki/Moncef_Ben_Moussa "Moncef Ben Moussa"), La production de sigillées africaines: recherches d'histoire et d'archéologie en Tunisie septentrionale et centrale, Barcelone, [Université de Barcelone](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Barcelone "Université de Barcelone"), 2007, 119p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[8447531767](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/8447531767 "Spécial:Ouvrages de référence/8447531767"), [lire en ligne](http://www.publicacions.ub.es/refs/indices/06798.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.publicacions.ub.es%2Frefs%2Findices%2F06798.pdf "archive sur Wikiwix")]), p.22.
+  78. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encyclo360_80-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encyclo360_80-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encyclo360_80-2) Encyclopédie 360, vol.12, Paris, [Éditions Rombaldi](https://fr.wikipedia.org/wiki/%C3%89ditions_Rombaldi "Éditions Rombaldi")/[Paris Match](https://fr.wikipedia.org/wiki/Paris_Match "Paris Match"), 1970, p.161.
+  79. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-81 "Revenir plus haut") [Guillaume Bernard](https://fr.wikipedia.org/wiki/Guillaume_Bernard "Guillaume Bernard"), Introduction à l'histoire du droit et des institutions, Levallois-Perret, Studyrama, 2004, 461p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2844724427](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2844724427 "Spécial:Ouvrages de référence/978-2844724427")), p.70.
+  80. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-82 "Revenir plus haut") Alban Gautier, 100 dates qui ont fait le monde: 3 000 ans de mondialisation, Paris, Studyrama, 2005, 270p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2844726575](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2844726575 "Spécial:Ouvrages de référence/978-2844726575"), [lire en ligne](https://books.google.com/books?id=XXGqlS8MIYYC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DXXGqlS8MIYYC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.105.
+  81. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-83 "Revenir plus haut") [Arnauld 2001](https://fr.wikipedia.org/wiki/Tunisie#Arnauld2001), p.274.
+  82. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-yousif75_84-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-yousif75_84-1) Ephrem-Isa Yousif, Les chroniqueurs syriaques, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2002, 468p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747527095](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747527095 "Spécial:Ouvrages de référence/978-2747527095"), [lire en ligne](https://books.google.com/books?id=FVXPhaqxr7AC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DFVXPhaqxr7AC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.75.
+  83. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin42_85-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin42_85-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin42_85-2) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.42.
+  84. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade707_86-5) Collectif, L'encyclopédie nomade 2006, Paris, [Éditions Larousse](https://fr.wikipedia.org/wiki/%C3%89ditions_Larousse "Éditions Larousse"), 2005, 1388p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2035202505](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2035202505 "Spécial:Ouvrages de référence/978-2035202505")), p.107.
+  85. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-87 "Revenir plus haut") [Liliane Ennabli](https://fr.wikipedia.org/wiki/Liliane_Ennabli "Liliane Ennabli"), «Carthage chrétienne», dans [Encyclopædia Universalis](https://fr.wikipedia.org/wiki/Encyclop%C3%A6dia_Universalis "Encyclopædia Universalis"), Paris, Encyclopædia Universalis, 2002 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2852295506](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2852295506 "Spécial:Ouvrages de référence/978-2852295506")), p.1041 et suiv..
+  86. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-thaalbi_88-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-thaalbi_88-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-thaalbi_88-2) (ar) [Abdelaziz Thâalbi](https://fr.wikipedia.org/wiki/Abdelaziz_Th%C3%A2albi "Abdelaziz Thâalbi"), Histoire de l'Afrique du Nord, Beyrouth, Maison de l'Occident islamique, 1987, p.32-42
+  87. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout11_89-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout11_89-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout11_89-2) Michel Quitout, Parlons l'arabe tunisien: langue et culture, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2002, 206p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747528863](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747528863 "Spécial:Ouvrages de référence/978-2747528863"), [lire en ligne](https://books.google.com/books?id=90LHfv4fjEwC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D90LHfv4fjEwC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.11.
+  88. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-hslim_90-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-hslim_90-1) [Hédi Slim](https://fr.wikipedia.org/wiki/H%C3%A9di_Slim "Hédi Slim"), Histoire générale de la Tunisie, t.I: L'Antiquité, Paris, [Maisonneuve et Larose](https://fr.wikipedia.org/wiki/Maisonneuve_et_Larose "Maisonneuve et Larose"), 2003, 549p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2706816956](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2706816956 "Spécial:Ouvrages de référence/978-2706816956")), p.421.
+  89. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-yousif358_91-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-yousif358_91-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-yousif358_91-2) [Yousif 2002](https://fr.wikipedia.org/wiki/Tunisie#Yousif2002), p.358.
+  90. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacdujardin43_92-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacdujardin43_92-1) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.43.
+  91. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-93 "Revenir plus haut") [Ibn Khaldoun](https://fr.wikipedia.org/wiki/Ibn_Khaldoun "Ibn Khaldoun") (trad.[William Mac Guckin de Slane](https://fr.wikipedia.org/wiki/William_Mac_Guckin_de_Slane "William Mac Guckin de Slane")), Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, Alger, Berti, 2003.
+  92. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout12_94-5) [Quitout 2002](https://fr.wikipedia.org/wiki/Tunisie#Quitout2002), p.12.
+  93. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-thiry166_95-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-thiry166_95-1) Jacques Thiry, Le Sahara libyen dans l'Afrique du nord médiévale, Louvain, [Peeters Publishers](https://fr.wikipedia.org/wiki/Peeters_Publishers "Peeters Publishers"), 1995, 604p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9068317398](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9068317398 "Spécial:Ouvrages de référence/978-9068317398"), [lire en ligne](https://books.google.com/books?id=qy4PBt7m3uAC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dqy4PBt7m3uAC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.166.
+  94. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-96 "Revenir plus haut") Rafik Saïd, La Politique culturelle en Tunisie, Paris, [Unesco](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'%C3%A9ducation,_la_science_et_la_culture "Organisation des Nations unies pour l'éducation, la science et la culture"), 1970, 56p. ([lire en ligne](http://unesdoc.unesco.org/images/0000/000011/001172fo.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Funesdoc.unesco.org%2Fimages%2F0000%2F000011%2F001172fo.pdf "archive sur Wikiwix")]), p.14.
+  95. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-97 "Revenir plus haut") [Paul Sebag](https://fr.wikipedia.org/wiki/Paul_Sebag "Paul Sebag"), Tunis: histoire d'une ville, Tunis, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 1998, 688p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2738466105](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2738466105 "Spécial:Ouvrages de référence/978-2738466105"), [lire en ligne](https://books.google.com/books?id=JeJ44F961AEC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DJeJ44F961AEC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.87.
+  96. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-decret_98-5) [François Decret](https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Decret "François Decret"), «[Les invasions hilaliennes en Ifrîqiya](https://www.clio.fr/bibliotheque/pdf/pdf_les_invasions_hilaliennes_en_ifriqiya.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.clio.fr%2Fbibliotheque%2Fpdf%2Fpdf_les_invasions_hilaliennes_en_ifriqiya.pdf "archive sur Wikiwix")]», sur clio.fr, septembre 2003 (consulté le 28 février 2026).
+  97. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-99 "Revenir plus haut") (en) Matt King, Dynasties intertwined: the Zirids of Ifriqiya and the Normans of Sicily, Ithaca, [Cornell University Press](https://fr.wikipedia.org/wiki/Cornell_University_Press "Cornell University Press"), 2023, 235p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-1501763489](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-1501763489 "Spécial:Ouvrages de référence/978-1501763489")), p.60.
+  98. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-100 "Revenir plus haut") Les sources arabes sont compillés par (it) [Michele Amari](https://fr.wikipedia.org/wiki/Michele_Amari "Michele Amari"), Biblioteca arabo-sicula, Rome/Turin, Ermanno Loesher, 1880, 570p. ([lire en ligne](https://archive.org/details/bibliotecaarabo01unkngoog) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Farchive.org%2Fdetails%2Fbibliotecaarabo01unkngoog "archive sur Wikiwix")]).
+  99. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-101 "Revenir plus haut") (en) [Hubert Houben](https://fr.wikipedia.org/wiki/Hubert_Houben_\(historien\) "Hubert Houben \(historien\)"), Roger II of Sicily: A Ruler Between East and West, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 2002, 231p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521655736](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521655736 "Spécial:Ouvrages de référence/978-0521655736"), [lire en ligne](https://books.google.com/books?id=Duwowbx1vuQC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DDuwowbx1vuQC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.83.
+  100. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-102 "Revenir plus haut") (en) Charles Dalli, «Bridging Europe and Africa: Norman Sicily's Other Kingdom», dans Bridging the Gaps: Sources, Methodology, and Approaches to Religion in History, Pise, Pisa University Press, 2008 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-8884925541](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-8884925541 "Spécial:Ouvrages de référence/978-8884925541")), p.79.
+  101. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-103 "Revenir plus haut") Claude Horrut, Ibn Khaldun, un islam des Lumières?, Paris, [Éditions Complexe](https://fr.wikipedia.org/wiki/%C3%89ditions_Complexe "Éditions Complexe"), coll.«Théorie politique», 2006, 260p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2870279984](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2870279984 "Spécial:Ouvrages de référence/978-2870279984"), [lire en ligne](https://books.google.com/books?id=lH4SkIFG6tQC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DlH4SkIFG6tQC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.208.
+  102. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacdujardin44_104-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacdujardin44_104-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacdujardin44_104-2) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.44.
+  103. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-105 "Revenir plus haut") [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.44-45.
+  104. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-106 "Revenir plus haut") (en) Collectif (trad.Noemí García Millán), Ibn Khaldun: The Mediterranean in the 14th century: rise and fall of Empires, Séville, [Fondation José Manuel Lara](https://fr.wikipedia.org/wiki/Fondation_Jos%C3%A9_Manuel_Lara?action=edit&redlink=1 "Fondation José Manuel Lara \(page inexistante\)") [(es)](https://es.wikipedia.org/wiki/Fundaci%C3%B3n%20Jos%C3%A9%20Manuel%20Lara "es:Fundación José Manuel Lara")2006, 455p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-8496556348](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-8496556348 "Spécial:Ouvrages de référence/978-8496556348"), [lire en ligne](https://books.google.fr/books?id=aoX4bsr0EEIC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3DaoX4bsr0EEIC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.86.
+  105. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-bonte115_107-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-bonte115_107-1) [Pierre Bonte](https://fr.wikipedia.org/wiki/Pierre_Bonte_\(anthropologue\) "Pierre Bonte \(anthropologue\)"), Al-Ansâb, la quête des origines: anthropologie historique de la société tribale arabe, Paris, [Maison des Sciences de l'Homme](https://fr.wikipedia.org/wiki/Maison_des_Sciences_de_l'Homme "Maison des Sciences de l'Homme"), 1991, 260p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2735104260](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2735104260 "Spécial:Ouvrages de référence/978-2735104260")), p.115.
+  106. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-borsbey_108-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-borsbey_108-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-borsbey_108-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-borsbey_108-3) Noura Borsali, «Tricentenaire de la dynastie husseinite (15 juillet 1705 - 25 juillet 1957): les beys de Tunis à l'épreuve du temps et de l'Histoire», _[Réalités](https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9s_\(magazine_tunisien\) "Réalités \(magazine tunisien\)")_ ,‎ 27 mai 2008.
+  107. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-109 "Revenir plus haut") Pierre Pinta, La Libye, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2006, 342p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2845867161](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2845867161 "Spécial:Ouvrages de référence/978-2845867161"), [lire en ligne](https://books.google.com/books?id=5Wk-pn18hw8C&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D5Wk-pn18hw8C%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.15 résume ainsi cette situation: «Ces derniers _[les Mérinides]_ firent leur entrée dans Tunis en même temps que la peste».
+  108. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-110 "Revenir plus haut") (en) William Spencer, Algiers in the Age of the Corsairs, Norman, [University of Oklahoma Press](https://fr.wikipedia.org/wiki/University_of_Oklahoma_Press "University of Oklahoma Press"), 1976, 184p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0806113340](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0806113340 "Spécial:Ouvrages de référence/978-0806113340")), p.18.
+  109. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-111 "Revenir plus haut") [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.51.
+  110. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-112 "Revenir plus haut") [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.46.
+  111. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-113 "Revenir plus haut") «[La dynastie mouradite](https://web.archive.org/web/20160505073831/http://www.histoiredelafrique.fr/la_dynastie_mouratide.html)», sur _histoiredelafrique.fr_ (version du 5 mai 2016 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  112. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-114 "Revenir plus haut") Nadia Sebaï, Mustafa Saheb Ettabaâ: un haut dignitaire beylical dans la Tunisie du XIXesiècle, Carthage, Cartaginoiseries, 2007, 94p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9973704047](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9973704047 "Spécial:Ouvrages de référence/978-9973704047"), [lire en ligne](https://books.google.fr/books?id=9laryrgGDL4C&pg=PA11&dq=hussein+bey++juillet+1705+dynastie&hl=fr&ei=tMApTqzXOouv8QO14JyADA&sa=X&oi=book_result&ct=result&resnum=2&ved=0CC8Q6AEwAQ#v=onepage&q&f=false) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3D9laryrgGDL4C%26pg%3DPA11%26dq%3Dhussein%2Bbey%2B%2Bjuillet%2B1705%2Bdynastie%26hl%3Dfr%26ei%3DtMApTqzXOouv8QO14JyADA%26sa%3DX%26oi%3Dbook_result%26ct%3Dresult%26resnum%3D2%26ved%3D0CC8Q6AEwAQ%23v%3Donepage%26q%26f%3Dfalse "archive sur Wikiwix")]), p.11.
+  113. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-115 "Revenir plus haut") «Afrique. De Tunis, le 13 May», _Gazette de Cologne_ ,‎ 30 juin 1752, p.1-2 ([lire en ligne](https://pv5.retronews.fr/journal/gazette-de-cologne/30-jun-1752/1741/3130683/1) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fpv5.retronews.fr%2Fjournal%2Fgazette-de-cologne%2F30-jun-1752%2F1741%2F3130683%2F1 "archive sur Wikiwix")], consulté le 20 novembre 2020).
+  114. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-116 "Revenir plus haut") [Paul Sebag](https://fr.wikipedia.org/wiki/Paul_Sebag "Paul Sebag"), Histoire des Juifs de Tunisie: des origines à nos jours, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 1991, 335p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2296240360](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2296240360 "Spécial:Ouvrages de référence/978-2296240360"), [lire en ligne](https://books.google.com/books?id=iDlmnPzNUOMC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DiDlmnPzNUOMC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.94-95.
+  115. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin54_117-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin54_117-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin54_117-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin54_117-3) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.54.
+  116. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-sebag118_118-0 "Revenir plus haut") [Sebag 1991](https://fr.wikipedia.org/wiki/Tunisie#Sebag1991), p.118.
+  117. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:1_119-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:1_119-1) Hedia Khadhar, «La Révolution française, le Pacte fondamental et la première Constitution tunisienne de 1861», _[Revue des mondes musulmans et de la Méditerranée](https://fr.wikipedia.org/wiki/Revue_des_mondes_musulmans_et_de_la_M%C3%A9diterran%C3%A9e "Revue des mondes musulmans et de la Méditerranée")_ , vol.52-53,‎ 1989, p.132-137 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0997-1327](https://portal.issn.org/resource/ISSN/0997-1327), [DOI](https://fr.wikipedia.org/wiki/Digital_Object_Identifier "Digital Object Identifier")[10.3406/remmm.1989.2294](https://dx.doi.org/10.3406/remmm.1989.2294), [lire en ligne](https://www.persee.fr/doc/remmm_0997-1327_1989_num_52_1_2294) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.persee.fr%2Fdoc%2Fremmm_0997-1327_1989_num_52_1_2294 "archive sur Wikiwix")], consulté le 14 février 2019).
+  118. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-120 "Revenir plus haut") «[Constitution du 26 avril 1861](https://mjp.univ-perp.fr/constit/tn1861.htm) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fmjp.univ-perp.fr%2Fconstit%2Ftn1861.htm "archive sur Wikiwix")]», sur mjp.univ-perp.fr, [Université de Perpignan](https://fr.wikipedia.org/wiki/Universit%C3%A9_Perpignan_Via_Domitia "Université Perpignan Via Domitia") (consulté le 22 mars 2025).
+  119. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-121 "Revenir plus haut") [Sebag 1991](https://fr.wikipedia.org/wiki/Tunisie#Sebag1991), p.120-129.
+  120. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-122 "Revenir plus haut") [Hédi Slim](https://fr.wikipedia.org/wiki/H%C3%A9di_Slim "Hédi Slim"), [Ammar Mahjoubi](https://fr.wikipedia.org/wiki/Ammar_Mahjoubi "Ammar Mahjoubi"), Khaled Belkhodja et [Abdelmajid Ennabli](https://fr.wikipedia.org/wiki/Abdelmajid_Ennabli "Abdelmajid Ennabli"), Histoire générale de la Tunisie, vol.III: Les temps modernes, Tunis, Sud Éditions, 2007, 495p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9973844217](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9973844217 "Spécial:Ouvrages de référence/978-9973844217")), p.153.
+  121. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-123 "Revenir plus haut") Ali Bamba, «[Tunisie: l'exposition Italianisances au Palais Ahmed Bey de La Marsa](https://fr.africanews.com/2025/10/14/tunisie-lexposition-italianisances-au-palais-ahmed-bey-de-la-marsa/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Ffr.africanews.com%2F2025%2F10%2F14%2Ftunisie-lexposition-italianisances-au-palais-ahmed-bey-de-la-marsa%2F "archive sur Wikiwix")]», sur [Africanews](https://fr.wikipedia.org/wiki/Africanews "Africanews"), 14 octobre 2025 (consulté le 28 février 2026).
+  122. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-124 "Revenir plus haut") [Jacques Revault](https://fr.wikipedia.org/wiki/Jacques_Revault "Jacques Revault"), Palais et demeures de Tunis (XVIIIe et XIXe siècles), Paris, Éditions du Centre national de la recherche scientifique, 1971, 648p. ([lire en ligne](http://www.persee.fr/doc/etaf_0768-2352_1971_mon_1_1) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.persee.fr%2Fdoc%2Fetaf_0768-2352_1971_mon_1_1 "archive sur Wikiwix")]), p.52, 54, 57-58 et 62-64.
+  123. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-5) [7](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-nomade708_125-6) [Collectif 2005](https://fr.wikipedia.org/wiki/Tunisie#Collectif2005), p.708.
+  124. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-126 "Revenir plus haut") Jean-François Martin, Histoire de la Tunisie contemporaine: de Ferry à Bourguiba, 1881-1956, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2003, 276p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747546263](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747546263 "Spécial:Ouvrages de référence/978-2747546263"), [lire en ligne](https://books.google.com/books?id=eeOf8EanADkC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DeeOf8EanADkC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.41-43.
+  125. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-127 "Revenir plus haut") Hachemi Karoui et Ali Mahjoubi, Quand le Soleil s'est levé à l'ouest: Tunisie 1881, impérialisme et résistance, Tunis, Cérès Productions, 1983, 193p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2857030102](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2857030102 "Spécial:Ouvrages de référence/978-2857030102")), p.86.
+  126. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-128 "Revenir plus haut") John P. Entelis (professeur à l'[université Fordham](https://fr.wikipedia.org/wiki/Universit%C3%A9_Fordham "Université Fordham")) prétend — sans citer ses sources — que Sadok Bey a été menacé de mort selon Michel Camau et [Vincent Geisser](https://fr.wikipedia.org/wiki/Vincent_Geisser "Vincent Geisser"), Habib Bourguiba: la trace et l'héritage, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2004, 664p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2845865068](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2845865068 "Spécial:Ouvrages de référence/978-2845865068"), [lire en ligne](https://books.google.com/books?id=QrYenoGYWTgC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DQrYenoGYWTgC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.227.
+  127. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-129 "Revenir plus haut") «[Traité du Bardo du 12 mai 1881](http://www.axl.cefan.ulaval.ca/afrique/tunisie-bardo1881.htm) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.axl.cefan.ulaval.ca%2Fafrique%2Ftunisie-bardo1881.htm "archive sur Wikiwix")]», sur axl.cefan.ulaval.ca (consulté le 18 janvier 2019).
+  128. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-130 "Revenir plus haut") Hédi Saïdi et [Janine Ponty](https://fr.wikipedia.org/wiki/Janine_Ponty "Janine Ponty"), Mémoire de l'immigration et histoire coloniale, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2007, 194p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2296024199](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2296024199 "Spécial:Ouvrages de référence/978-2296024199"), [lire en ligne](https://books.google.com/books?id=QRrS1vzsN98C&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DQRrS1vzsN98C%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.117.
+  129. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin56_131-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin56_131-1) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.56.
+  130. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-5) [7](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-6) [8](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-7) [9](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quitout13_132-8) [Quitout 2002](https://fr.wikipedia.org/wiki/Tunisie#Quitout2002), p.13.
+  131. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred13_133-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred13_133-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred13_133-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred13_133-3) Frédéric Angleviel (dir.), Chants pour l'au-delà des mers: mélanges en l'honneur du professeur Jean Martin, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2008, 528p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2296054080](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2296054080 "Spécial:Ouvrages de référence/978-2296054080"), [lire en ligne](https://books.google.com/books?id=7mYJvGpABtwC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D7mYJvGpABtwC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.13.
+  132. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-134 "Revenir plus haut") René Clozier, «Les sociétés milliardaires en France», _[L'Information géographique](https://fr.wikipedia.org/wiki/L'Information_g%C3%A9ographique "L'Information géographique")_ , vol.14, nos14-2,‎ 1950, p.69 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0020-0093](https://portal.issn.org/resource/ISSN/0020-0093), [lire en ligne](http://www.persee.fr/web/revues/home/prescript/article/ingeo_0020-0093_1950_num_14_2_5965) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.persee.fr%2Fweb%2Frevues%2Fhome%2Fprescript%2Farticle%2Fingeo_0020-0093_1950_num_14_2_5965 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  133. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-135 "Revenir plus haut") [Camau et Geisser 2004](https://fr.wikipedia.org/wiki/Tunisie#CamauGeisser2004), p.227-228.
+  134. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin57_136-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin57_136-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin57_136-2) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.57.
+  135. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred14_137-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-fred14_137-1) [Angleviel 2008](https://fr.wikipedia.org/wiki/Tunisie#Angleviel2008), p.14.
+  136. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-138 "Revenir plus haut") [Angleviel 2008](https://fr.wikipedia.org/wiki/Tunisie#Angleviel2008), p.15.
+  137. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-labidi_139-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-labidi_139-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-labidi_139-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-labidi_139-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-labidi_139-4) Kamel Labidi, «La longue descente aux enfers de la Tunisie», _[Le Monde diplomatique](https://fr.wikipedia.org/wiki/Le_Monde_diplomatique "Le Monde diplomatique")_ , no624,‎ mars 2006, p.10-11 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0026-9395](https://portal.issn.org/resource/ISSN/0026-9395), [lire en ligne](http://www.monde-diplomatique.fr/2006/03/LABIDI/13253) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.monde-diplomatique.fr%2F2006%2F03%2FLABIDI%2F13253 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  138. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard165_140-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard165_140-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard165_140-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard165_140-3) Sophie Chautard, Les dictateurs du XXesiècle, Levallois-Perret, Studyrama, 2006, 223p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2844727855](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2844727855 "Spécial:Ouvrages de référence/978-2844727855")), p.165.
+  139. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin60_141-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin60_141-1) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.60.
+  140. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chater_142-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chater_142-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chater_142-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chater_142-3) [Khalifa Chater](https://fr.wikipedia.org/wiki/Khalifa_Chater "Khalifa Chater"), «[Le rappel d'une épopée spécifique du peuple tunisien](https://web.archive.org/web/20090213234427/http://www.afkaronline.org/francais/archives/mar-avr2006/chater.html)», sur _afkaronline.org_ , mars-avril 2006 (version du 13 février 2009 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  141. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-143 "Revenir plus haut") «[Mars-mai 43: victoire alliée en Tunisie](https://www.ina.fr/video/I00009360/mars-mai-43-victoire-alliee-en-tunisie-video.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.ina.fr%2Fvideo%2FI00009360%2Fmars-mai-43-victoire-alliee-en-tunisie-video.html "archive sur Wikiwix")]», sur [Institut national de l'audiovisuel](https://fr.wikipedia.org/wiki/Institut_national_de_l'audiovisuel "Institut national de l'audiovisuel"), 1er janvier 1943 (consulté le 18 janvier 2019).
+  142. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-144 "Revenir plus haut") [Saïd Mestiri](https://fr.wikipedia.org/wiki/Sa%C3%AFd_Mestiri "Saïd Mestiri"), Le ministère Chenik à la poursuite de l'autonomie interne, Tunis, Arcs Éditions, 1991, 262p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9973740045](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9973740045 "Spécial:Ouvrages de référence/978-9973740045")), p.177.
+  143. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-145 "Revenir plus haut") [Mestiri 1991](https://fr.wikipedia.org/wiki/Tunisie#Mestiri1991), p.189.
+  144. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-146 "Revenir plus haut") [Mestiri 1991](https://fr.wikipedia.org/wiki/Tunisie#Mestiri1991), p.207.
+  145. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-147 "Revenir plus haut") [Mestiri 1991](https://fr.wikipedia.org/wiki/Tunisie#Mestiri1991), p.217.
+  146. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin61_148-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin61_148-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin61_148-2) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.61.
+  147. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-149 "Revenir plus haut") [Mestiri 1991](https://fr.wikipedia.org/wiki/Tunisie#Mestiri1991), p.248.
+  148. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-150 "Revenir plus haut") [Charles-André Julien](https://fr.wikipedia.org/wiki/Charles-Andr%C3%A9_Julien "Charles-André Julien"), Et la Tunisie devint indépendante: 1951-1957, Paris, Jeune Afrique, 1985, 215p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2852583726](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2852583726 "Spécial:Ouvrages de référence/978-2852583726")), p.63.
+  149. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-151 "Revenir plus haut") [Claude Liauzu](https://fr.wikipedia.org/wiki/Claude_Liauzu "Claude Liauzu"), L'Europe et l'Afrique méditerranéenne: de Suez (1869) à nos jours, Paris, [Éditions Complexe](https://fr.wikipedia.org/wiki/%C3%89ditions_Complexe "Éditions Complexe"), 1994, 297p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2870275146](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2870275146 "Spécial:Ouvrages de référence/978-2870275146"), [lire en ligne](https://books.google.com/books?id=uc0Q37j29EcC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Duc0Q37j29EcC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.156.
+  150. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard166_152-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard166_152-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard166_152-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard166_152-3) [Chautard 2006](https://fr.wikipedia.org/wiki/Tunisie#Chautard2006), p.166.
+  151. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-camgeihab229_153-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-camgeihab229_153-1) [Camau et Geisser 2004](https://fr.wikipedia.org/wiki/Tunisie#CamauGeisser2004), p.229.
+  152. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-154 "Revenir plus haut") «[Voyage du Président Mendès France en Tunisie](https://fresques.ina.fr/independances/fiche-media/Indepe00206/voyage-du-president-mendes-france-en-tunisie.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Ffresques.ina.fr%2Findependances%2Ffiche-media%2FIndepe00206%2Fvoyage-du-president-mendes-france-en-tunisie.html "archive sur Wikiwix")]» [vidéo], sur [Institut national de l'audiovisuel](https://fr.wikipedia.org/wiki/Institut_national_de_l'audiovisuel "Institut national de l'audiovisuel"), 5 août 1954 (consulté le 22 mars 2025).
+  153. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-155 "Revenir plus haut") «Décret du 13 août 1956 portant promulgation du Code du statut personnel», _[Journal officiel tunisien](https://fr.wikipedia.org/wiki/Journal_officiel_de_la_R%C3%A9publique_tunisienne "Journal officiel de la République tunisienne")_ , no104,‎ 28 décembre 1956, p.1742 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-7921](https://portal.issn.org/resource/ISSN/0330-7921), [lire en ligne](https://web.archive.org/web/20220213222626/https://www.pist.tn/jort/1956/1956F/Jo10456.pdf) [PDF]).
+  154. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-156 "Revenir plus haut") «[Proclamation de la république en Tunisie](http://www.ina.fr/video/AFE85007495/proclamation-de-la-republique-en-tunisie.fr.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.ina.fr%2Fvideo%2FAFE85007495%2Fproclamation-de-la-republique-en-tunisie.fr.html "archive sur Wikiwix")]», sur [Institut national de l'audiovisuel](https://fr.wikipedia.org/wiki/Institut_national_de_l'audiovisuel "Institut national de l'audiovisuel"), 31 juillet 1957 (consulté le 18 janvier 2019).
+  155. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lacjardin74_157-5) [Lacoste et Lacoste-Dujardin 1991](https://fr.wikipedia.org/wiki/Tunisie#LacosteLacoste-Dujardin1991), p.74.
+  156. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard167_158-0 "Revenir plus haut") [Chautard 2006](https://fr.wikipedia.org/wiki/Tunisie#Chautard2006), p.167.
+  157. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-sebag297_159-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-sebag297_159-1) [Sebag 1991](https://fr.wikipedia.org/wiki/Tunisie#Sebag1991), p.297.
+  158. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-160 "Revenir plus haut") [Colette Zytnicki](https://fr.wikipedia.org/wiki/Colette_Zytnicki "Colette Zytnicki"), «Gérer la rupture: les institutions sociales juives de France face aux migrations de juifs tunisiens (1950-1970)», dans Juifs et musulmans de Tunisie: fraternité et déchirements, Paris, Somogy, 2003 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2850566325](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2850566325 "Spécial:Ouvrages de référence/978-2850566325")), p.337.
+  159. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lasserre1252_161-0 "Revenir plus haut") Frédéric Lasserre et Aline Lechaume (dir.), Le territoire pensé: géographie des représentations territoriales, Québec, [Presses de l'Université du Québec](https://fr.wikipedia.org/wiki/Presses_de_l'Universit%C3%A9_du_Qu%C3%A9bec "Presses de l'Université du Québec"), 2003, 346p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2760512245](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2760512245 "Spécial:Ouvrages de référence/978-2760512245")), p.125.
+  160. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-jvl_162-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-jvl_162-1) (en) «[Jews in Islamic Countries: Tunisia](http://www.jewishvirtuallibrary.org/jsource/anti-semitism/tunisjews.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.jewishvirtuallibrary.org%2Fjsource%2Fanti-semitism%2Ftunisjews.html "archive sur Wikiwix")]», sur [Jewish Virtual Library](https://fr.wikipedia.org/wiki/Jewish_Virtual_Library "Jewish Virtual Library") (consulté le 19 novembre 2017).
+  161. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-kefi2_163-0 "Revenir plus haut") [Ridha Kéfi](https://fr.wikipedia.org/wiki/Ridha_K%C3%A9fi "Ridha Kéfi"), «L'émigration des juifs tunisiens vers Israël (1948-1967)», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 29 août 2005 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](http://www.jeuneafrique.com/61339/archives-thematique/l-migration-des-juifs-tunisiens-vers-isra-l-1948-1967/) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.jeuneafrique.com%2F61339%2Farchives-thematique%2Fl-migration-des-juifs-tunisiens-vers-isra-l-1948-1967%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  162. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-164 "Revenir plus haut") Jean-Pierre Séréni, «[Économie tunisienne. Les leçons oubliées de l'expérience Ben Salah](https://orientxxi.info/magazine/economie-tunisienne-les-lecons-oubliees-de-l-experience-ben-salah,3272) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Forientxxi.info%2Fmagazine%2Feconomie-tunisienne-les-lecons-oubliees-de-l-experience-ben-salah%2C3272 "archive sur Wikiwix")]», sur [Orient XXI](https://fr.wikipedia.org/wiki/Orient_XXI "Orient XXI"), 8 septembre 2019 (consulté le 29 septembre 2019).
+  163. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-165 "Revenir plus haut") Examens de l'OCDE des politiques de l'investissement (Tunisie), Paris, OECD Publishing, 2012, 166p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9264179431](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9264179431 "Spécial:Ouvrages de référence/978-9264179431"), [lire en ligne](https://books.google.fr/books?id=n3TT59HBmroC&pg=PA83) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3Dn3TT59HBmroC%26pg%3DPA83 "archive sur Wikiwix")]), p.83.
+  164. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-166 "Revenir plus haut") [Moncef Marzouki](https://fr.wikipedia.org/wiki/Moncef_Marzouki "Moncef Marzouki"), Dictateurs en sursis: une voie démocratique pour le monde arabe, Ivry-sur-Seine, [Éditions de l'Atelier](https://fr.wikipedia.org/wiki/%C3%89ditions_de_l'Atelier "Éditions de l'Atelier"), 2009, 191p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2708240476](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2708240476 "Spécial:Ouvrages de référence/978-2708240476"), [lire en ligne](https://books.google.fr/books?id=6mm43qOPQe8C&pg=PA21) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3D6mm43qOPQe8C%26pg%3DPA21 "archive sur Wikiwix")]), p.21.
+  165. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard169_167-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard169_167-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard169_167-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-chautard169_167-3) [Chautard 2006](https://fr.wikipedia.org/wiki/Tunisie#Chautard2006), p.169.
+  166. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-gottesman_168-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-gottesman_168-1) (en) Lois Gottesman, «Jews in the Middle East», dans American Jewish Year Book, New York, [American Jewish Committee](https://fr.wikipedia.org/wiki/American_Jewish_Committee "American Jewish Committee"), 1985 ([lire en ligne](http://www.ajcarchives.org/ajc_data/files/1985_11_israelmideast.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.ajcarchives.org%2Fajc_data%2Ffiles%2F1985_11_israelmideast.pdf "archive sur Wikiwix")]), p.308.
+  167. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-169 "Revenir plus haut") (en) «[Policeman shoots into Jewish quarter](https://www.upi.com/Archives/1985/10/08/Policeman-shoots-into-Jewish-quarter/2315497592000/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.upi.com%2FArchives%2F1985%2F10%2F08%2FPoliceman-shoots-into-Jewish-quarter%2F2315497592000%2F "archive sur Wikiwix")]», sur upi.com, 8 octobre 1985 (consulté le 2 novembre 2023).
+  168. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-170 "Revenir plus haut") (en) Country Reports on Human Rights Practices for 1982, Washington, [Département d'État des États-Unis](https://fr.wikipedia.org/wiki/D%C3%A9partement_d'%C3%89tat_des_%C3%89tats-Unis "Département d'État des États-Unis"), 1983, p.1290-1291.
+  169. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-171 "Revenir plus haut") (en) Country Reports on Human Rights Practices for 1985, Washington, [Département d'État des États-Unis](https://fr.wikipedia.org/wiki/D%C3%A9partement_d'%C3%89tat_des_%C3%89tats-Unis "Département d'État des États-Unis"), 1986, p.1321.
+  170. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-gharbi_172-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-gharbi_172-1) Samir Gharbi, «Radiographie d'une élection», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 2 novembre 1999 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285)).
+  171. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-173 "Revenir plus haut") «[Zine el-Abidine Ben Ali](https://web.archive.org/web/20080328122014/http://fr.encarta.msn.com/encyclopedia_761588595/Ben_Ali_Zine_el-Abidine.html)», sur _[Encarta](https://fr.wikipedia.org/wiki/Encarta "Encarta")_ (version du 28 mars 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")) : «avance le chiffre de 99,80%.»
+  172. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-camaugeisser241_174-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-camaugeisser241_174-1) [Camau et Geisser 2004](https://fr.wikipedia.org/wiki/Tunisie#CamauGeisser2004), p.241.
+  173. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-175 "Revenir plus haut") Myriam Catusse, Blandine Destremau et Éric Verdier, L'État face aux débordements du social au Maghreb: formation, travail et protection sociale, Paris, [Éditions Karthala](https://fr.wikipedia.org/wiki/%C3%89ditions_Karthala "Éditions Karthala"), 2010, 458p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2811103194](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2811103194 "Spécial:Ouvrages de référence/978-2811103194"), [lire en ligne](https://books.google.fr/books?id=Qmt0mVylj84C&pg=PA173&dq=2008+gafsa) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3DQmt0mVylj84C%26pg%3DPA173%26dq%3D2008%2Bgafsa "archive sur Wikiwix")]), p.173.
+  174. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-176 "Revenir plus haut") Baudouin Loos, «L'irrésistible ascension de Leila», _[Le Soir](https://fr.wikipedia.org/wiki/Le_Soir "Le Soir")_ ,‎ 26 octobre 2009 ([lire en ligne](https://www.lesoir.be/art/tunisie-l-epouse-du-president-ben-ali-a-ete-tres_t-20091026-00QJWY.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lesoir.be%2Fart%2Ftunisie-l-epouse-du-president-ben-ali-a-ete-tres_t-20091026-00QJWY.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  175. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-business2610_177-0 "Revenir plus haut") «[Tunisie - Mohamed Sakher El Materi devient député](http://www.businessnews.com.tn/tunisie-mohamed-sakher-el-materi-devient-daputa,520,19194,1) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.businessnews.com.tn%2Ftunisie-mohamed-sakher-el-materi-devient-daputa%2C520%2C19194%2C1 "archive sur Wikiwix")]», sur businessnews.com.tn, 26 octobre 2009 (consulté le 18 janvier 2019).
+  176. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-178 "Revenir plus haut") (en) Benjamin MacQueen, An Introduction to Middle East Politics: Continuity, Change, Conflict and Co-operation, New York, Sage Publications, 2013, 448p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-1446275566](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-1446275566 "Spécial:Ouvrages de référence/978-1446275566"), [lire en ligne](https://books.google.com/books?id=Doe9rItnLp8C&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DDoe9rItnLp8C%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.365.
+  177. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-179 "Revenir plus haut") [Gérard-François Dumont](https://fr.wikipedia.org/wiki/G%C3%A9rard-Fran%C3%A7ois_Dumont "Gérard-François Dumont"), «Tunisie: si Ben Ali avait appris la géopolitique des populations», _[Population et Avenir](https://fr.wikipedia.org/wiki/Population_et_Avenir "Population et Avenir")_ , no702,‎ mars-avril 2011, p.3 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0223-5706](https://portal.issn.org/resource/ISSN/0223-5706), [lire en ligne](http://halshs.archives-ouvertes.fr/docs/00/76/23/28/PDF/J306B-702_03-TUNISIE_GFD.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fhalshs.archives-ouvertes.fr%2Fdocs%2F00%2F76%2F23%2F28%2FPDF%2FJ306B-702_03-TUNISIE_GFD.pdf "archive sur Wikiwix")], consulté le 19 janvier 2019).
+  178. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-180 "Revenir plus haut") Julie Calleeuw, «[Tunisie: les Trabelsi, une «quasi-mafia»](https://www.rtbf.be/info/monde/detail_tunisie-les-trabelsi-une-quasi-mafia?id=5574433) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rtbf.be%2Finfo%2Fmonde%2Fdetail_tunisie-les-trabelsi-une-quasi-mafia%3Fid%3D5574433 "archive sur Wikiwix")]», sur [Radio-télévision belge de la Communauté française](https://fr.wikipedia.org/wiki/Radio-t%C3%A9l%C3%A9vision_belge_de_la_Communaut%C3%A9_fran%C3%A7aise "Radio-télévision belge de la Communauté française"), 14 janvier 2011 (consulté le 18 janvier 2019).
+  179. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-181 "Revenir plus haut") «Tunisie - L'état d'urgence est décrété dans l'ensemble du pays», _[Le Point](https://fr.wikipedia.org/wiki/Le_Point "Le Point")_ ,‎ 14 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0242-6005](https://portal.issn.org/resource/ISSN/0242-6005), [lire en ligne](https://www.lepoint.fr/monde/tunisie-l-etat-d-urgence-est-decrete-dans-l-ensemble-du-pays-14-01-2011-129736_24.php) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lepoint.fr%2Fmonde%2Ftunisie-l-etat-d-urgence-est-decrete-dans-l-ensemble-du-pays-14-01-2011-129736_24.php "archive sur Wikiwix")], consulté le 28 février 2026).
+  180. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-182 "Revenir plus haut") «Ben Ali en route vers Malte… avant Paris?», _[L'Express](https://fr.wikipedia.org/wiki/L'Express "L'Express")_ ,‎ 14 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0014-5270](https://portal.issn.org/resource/ISSN/0014-5270), [lire en ligne](https://www.lexpress.fr/monde/afrique/ben-ali-en-route-vers-malte-avant-paris_952646.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lexpress.fr%2Fmonde%2Fafrique%2Fben-ali-en-route-vers-malte-avant-paris_952646.html "archive sur Wikiwix")], consulté le 22 mars 2025).
+  181. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-183 "Revenir plus haut") «Après le départ de Ben Ali, la Tunisie se tourne vers l'avenir», _[Le Parisien](https://fr.wikipedia.org/wiki/Le_Parisien "Le Parisien")_ ,‎ 15 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0767-3558](https://portal.issn.org/resource/ISSN/0767-3558), [lire en ligne](http://www.leparisien.fr/crise-tunisie/apres-le-depart-de-ben-ali-la-tunisie-se-tourne-vers-l-avenir-15-01-2011-1228415.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.leparisien.fr%2Fcrise-tunisie%2Fapres-le-depart-de-ben-ali-la-tunisie-se-tourne-vers-l-avenir-15-01-2011-1228415.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  182. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-184 "Revenir plus haut") «Les 24 membres du nouveau gouvernement tunisien», _[Le Parisien](https://fr.wikipedia.org/wiki/Le_Parisien "Le Parisien")_ ,‎ 17 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0767-3558](https://portal.issn.org/resource/ISSN/0767-3558), [lire en ligne](http://www.leparisien.fr/crise-tunisie/les-24-membres-du-nouveau-gouvernement-tunisien-17-01-2011-1231505.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.leparisien.fr%2Fcrise-tunisie%2Fles-24-membres-du-nouveau-gouvernement-tunisien-17-01-2011-1231505.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  183. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-185 "Revenir plus haut") «Tunisie: le gouverneur de la banque centrale limogé», _[Le Parisien](https://fr.wikipedia.org/wiki/Le_Parisien "Le Parisien")_ ,‎ 17 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0767-3558](https://portal.issn.org/resource/ISSN/0767-3558), [lire en ligne](http://www.leparisien.fr/crise-tunisie/tunisie-le-gouverneur-de-la-banque-centrale-limoge-17-01-2011-1231005.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.leparisien.fr%2Fcrise-tunisie%2Ftunisie-le-gouverneur-de-la-banque-centrale-limoge-17-01-2011-1231005.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  184. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-186 "Revenir plus haut") «Tunisie: le gouvernement d'union nationale explose déjà», _[Le Nouvel Obs](https://fr.wikipedia.org/wiki/Le_Nouvel_Obs "Le Nouvel Obs")_ ,‎ 18 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0029-4713](https://portal.issn.org/resource/ISSN/0029-4713), [lire en ligne](http://tempsreel.nouvelobs.com/actualite/monde/20110118.OBS6452/tunisie-le-gouvernement-d-union-nationale-explose-deja.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Ftempsreel.nouvelobs.com%2Factualite%2Fmonde%2F20110118.OBS6452%2Ftunisie-le-gouvernement-d-union-nationale-explose-deja.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  185. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-187 "Revenir plus haut") «[Tunisie: le président et le PM quittent le RCD](http://www.europe1.fr/International/Tunisie-le-president-et-le-PM-quittent-le-RCD-377213/) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.europe1.fr%2FInternational%2FTunisie-le-president-et-le-PM-quittent-le-RCD-377213%2F "archive sur Wikiwix")]», sur [Europe 1](https://fr.wikipedia.org/wiki/Europe_1 "Europe 1"), 18 janvier 2011 (consulté le 18 janvier 2019).
+  186. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-188 "Revenir plus haut") «Tunisie: manifestations pour exiger la dissolution du parti de Ben Ali», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 17 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2011/01/17/tunisie-manifestations-pour-exiger-la-dissolution-du-parti-de-ben-ali_1466793_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2011%2F01%2F17%2Ftunisie-manifestations-pour-exiger-la-dissolution-du-parti-de-ben-ali_1466793_3212.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  187. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-189 "Revenir plus haut") «Tunisie: les ministres quittent le parti de Ben Ali», _[Le Parisien](https://fr.wikipedia.org/wiki/Le_Parisien "Le Parisien")_ ,‎ 20 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0767-3558](https://portal.issn.org/resource/ISSN/0767-3558), [lire en ligne](http://www.leparisien.fr/crise-tunisie/tunisie-les-ministres-quittent-le-parti-de-ben-ali-20-01-2011-1235524.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.leparisien.fr%2Fcrise-tunisie%2Ftunisie-les-ministres-quittent-le-parti-de-ben-ali-20-01-2011-1235524.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  188. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-190 "Revenir plus haut") «Le Premier ministre tunisien démissionne, remplacé par Béji Caïd Essebsi», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 27 février 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2011/02/27/le-premier-ministre-tunisien-demissionne_1485825_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2011%2F02%2F27%2Fle-premier-ministre-tunisien-demissionne_1485825_3212.html "archive sur Wikiwix")], consulté le 28 février 2026).
+  189. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-191 "Revenir plus haut") Pierre Boisselet, «Béji Caïd Essebsi remplace Mohamed Ghannouchi au poste de Premier ministre», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 28 février 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/182190/politique/b-ji-caed-essebsi-remplace-mohamed-ghannouchi-au-poste-de-premier-ministre/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F182190%2Fpolitique%2Fb-ji-caed-essebsi-remplace-mohamed-ghannouchi-au-poste-de-premier-ministre%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  190. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-192 "Revenir plus haut") «[Tunisie: deux morts dans l'attaque de l'ambassade américaine](http://www.rfi.fr/afrique/20120915-tunisie-attaque-ambassade-americaine-innocence-islam-moncef-marzouki/) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.rfi.fr%2Fafrique%2F20120915-tunisie-attaque-ambassade-americaine-innocence-islam-moncef-marzouki%2F "archive sur Wikiwix")]», sur [RFI](https://fr.wikipedia.org/wiki/Radio_France_internationale "Radio France internationale"), 15 septembre 2012 (consulté le 18 janvier 2019).
+  191. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-193 "Revenir plus haut") «Tunisie: l'état d'urgence prolongé de 3 mois après des affrontements avec des salafistes», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 1er novembre 2012 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/tunisie/article/2012/11/01/tunisie-l-etat-d-urgence-prolonge-de-3-mois-apres-des-violences-salafistes_1783938_1466522.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Ftunisie%2Farticle%2F2012%2F11%2F01%2Ftunisie-l-etat-d-urgence-prolonge-de-3-mois-apres-des-violences-salafistes_1783938_1466522.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  192. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-194 "Revenir plus haut") «Présidentielle en Tunisie: Essebsi récolte 39,46% des suffrages», _[Le Figaro](https://fr.wikipedia.org/wiki/Le_Figaro "Le Figaro")_ ,‎ 25 novembre 2014 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0182-5852](https://portal.issn.org/resource/ISSN/0182-5852), [lire en ligne](http://www.lefigaro.fr/flash-actu/2014/11/25/97001-20141125FILWWW00160-presidentielle-en-tunisie-essebsi-recolte-3946-des-suffrages.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.lefigaro.fr%2Fflash-actu%2F2014%2F11%2F25%2F97001-20141125FILWWW00160-presidentielle-en-tunisie-essebsi-recolte-3946-des-suffrages.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  193. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-francetvinfo.fr_195-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-francetvinfo.fr_195-1) «[Tunisie: le candidat laïque Béji Caïd Essebsi remporte la présidentielle avec 55,68% des voix](https://www.francetvinfo.fr/monde/tunisie/elections-en-tunisie/tunisie-le-candidat-laique-beji-caid-essebsi-remporte-la-presidentielle-avec-55-68-des-voix_779133.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.francetvinfo.fr%2Fmonde%2Ftunisie%2Felections-en-tunisie%2Ftunisie-le-candidat-laique-beji-caid-essebsi-remporte-la-presidentielle-avec-55-68-des-voix_779133.html "archive sur Wikiwix")]», sur [France Info](https://fr.wikipedia.org/wiki/France_Info_\(offre_globale\) "France Info \(offre globale\)"), 25 novembre 2014 (consulté le 18 janvier 2019).
+  194. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:0_196-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:0_196-1) (en) «[The Nobel Peace Prize 2015](http://www.nobelprize.org/nobel_prizes/peace/laureates/2015/) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.nobelprize.org%2Fnobel_prizes%2Fpeace%2Flaureates%2F2015%2F "archive sur Wikiwix")]», sur [Prix Nobel](https://fr.wikipedia.org/wiki/Prix_Nobel "Prix Nobel") (consulté le 18 janvier 2019).
+  195. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-197 "Revenir plus haut") [Charles Nicolle](https://fr.wikipedia.org/wiki/Charles_Nicolle "Charles Nicolle") reçoit le [prix Nobel de physiologie ou médecine](https://fr.wikipedia.org/wiki/Prix_Nobel_de_physiologie_ou_m%C3%A9decine "Prix Nobel de physiologie ou médecine") 1928 «pour ses travaux sur le [typhus](https://fr.wikipedia.org/wiki/Typhus "Typhus")» à la tête de l'[Institut Pasteur de Tunis](https://fr.wikipedia.org/wiki/Institut_Pasteur_de_Tunis "Institut Pasteur de Tunis").
+  196. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-198 "Revenir plus haut") «[L'ONU salue l'attribution du Prix Nobel de la paix au Quartet du dialogue national tunisien](http://www.un.org/apps/newsFr/storyF.asp?NewsID=35814#.VmiCcbyiaQs) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.un.org%2Fapps%2FnewsFr%2FstoryF.asp%3FNewsID%3D35814%23.VmiCcbyiaQs "archive sur Wikiwix")]», sur [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies") (consulté le 18 janvier 2019).
+  197. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-199 "Revenir plus haut") «[Le Prix Nobel qui vient d'être remis à la Tunisie consacre la réussite de la transition démocratique](https://www.elysee.fr/francois-hollande/2015/10/09/declaration-de-m-francois-hollande-president-de-la-republique-sur-lattribution-du-prix-nobel-de-la-paix-au-quartet-du-dialogue-national-tunisien-a-paris-le-9-octobre-2015) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.elysee.fr%2Ffrancois-hollande%2F2015%2F10%2F09%2Fdeclaration-de-m-francois-hollande-president-de-la-republique-sur-lattribution-du-prix-nobel-de-la-paix-au-quartet-du-dialogue-national-tunisien-a-paris-le-9-octobre-2015 "archive sur Wikiwix")]», sur [Président de la République française](https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_R%C3%A9publique_fran%C3%A7aise "Président de la République française") (consulté le 8 octobre 2022).
+  198. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-200 "Revenir plus haut") «[L'inflation atteint 5,7% en août 2017, le taux le plus élevé depuis 2015 (INS)](http://www.huffpostmaghreb.com/2017/09/08/inflation-ins-tunisie_n_17934654.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.huffpostmaghreb.com%2F2017%2F09%2F08%2Finflation-ins-tunisie_n_17934654.html "archive sur Wikiwix")]», sur [HuffPost Maghreb](https://fr.wikipedia.org/wiki/HuffPost_Maghreb "HuffPost Maghreb"), 8 septembre 2017 (consulté le 18 janvier 2019).
+  199. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-201 "Revenir plus haut") «[Tunisie: la dette publique grimpe à 66,9% du PIB](http://www.huffpostmaghreb.com/2017/09/07/dettes-publiques-tunisie_n_17924932.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.huffpostmaghreb.com%2F2017%2F09%2F07%2Fdettes-publiques-tunisie_n_17924932.html "archive sur Wikiwix")]», sur [HuffPost Maghreb](https://fr.wikipedia.org/wiki/HuffPost_Maghreb "HuffPost Maghreb"), 7 septembre 2017 (consulté le 18 janvier 2019).
+  200. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-202 "Revenir plus haut") «Manifestations, grèves, violences: comprendre la crise en Tunisie en quatre questions», _[Le Figaro](https://fr.wikipedia.org/wiki/Le_Figaro "Le Figaro")_ ,‎ 11 janvier 2018 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0182-5852](https://portal.issn.org/resource/ISSN/0182-5852), [lire en ligne](http://www.lefigaro.fr/international/2018/01/11/01003-20180111ARTFIG00199-manifestations-greves-violences-comprendre-la-crise-en-tunisie-en-quatre-questions.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.lefigaro.fr%2Finternational%2F2018%2F01%2F11%2F01003-20180111ARTFIG00199-manifestations-greves-violences-comprendre-la-crise-en-tunisie-en-quatre-questions.php "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  201. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-203 "Revenir plus haut") «[Tunisie: le point sur les mouvements sociaux qui grondent](https://www.francetvinfo.fr/monde/tunisie/crise-en-tunisie/tunisie-le-point-sur-les-mouvements-sociaux-qui-grondent_2555263.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.francetvinfo.fr%2Fmonde%2Ftunisie%2Fcrise-en-tunisie%2Ftunisie-le-point-sur-les-mouvements-sociaux-qui-grondent_2555263.html "archive sur Wikiwix")]», sur [France Info](https://fr.wikipedia.org/wiki/France_Info_\(offre_globale\) "France Info \(offre globale\)"), 10 janvier 2018 (consulté le 18 janvier 2019).
+  202. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-204 "Revenir plus haut") «[Nuit d'émeutes en Tunisie](https://www.francetvinfo.fr/monde/tunisie/crise-en-tunisie/nuit-demeutes-en-tunisie_2555311.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.francetvinfo.fr%2Fmonde%2Ftunisie%2Fcrise-en-tunisie%2Fnuit-demeutes-en-tunisie_2555311.html "archive sur Wikiwix")]», sur [France Info](https://fr.wikipedia.org/wiki/France_Info_\(offre_globale\) "France Info \(offre globale\)"), 10 janvier 2018 (consulté le 18 janvier 2019).
+  203. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:2_205-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:2_205-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:2_205-2) Thierry Brésillon, «Une Tunisie contre l'autre», _[Le Monde diplomatique](https://fr.wikipedia.org/wiki/Le_Monde_diplomatique "Le Monde diplomatique")_ , no776,‎ novembre 2018, p.11 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0026-9395](https://portal.issn.org/resource/ISSN/0026-9395), [lire en ligne](https://www.monde-diplomatique.fr/2018/11/BRESILLON/59254) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.monde-diplomatique.fr%2F2018%2F11%2FBRESILLON%2F59254 "archive sur Wikiwix")], consulté le 13 novembre 2019).
+  204. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-206 "Revenir plus haut") «Élections législatives en Tunisie: le parti d'inspiration islamiste Ennahda en tête mais loin de la majorité», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 10 octobre 2019 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/international/article/2019/10/10/legislatives-en-tunisie-le-parti-d-inspiration-islamiste-ennahdha-en-tete-mais-loin-de-la-majorite_6014883_3210.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Finternational%2Farticle%2F2019%2F10%2F10%2Flegislatives-en-tunisie-le-parti-d-inspiration-islamiste-ennahdha-en-tete-mais-loin-de-la-majorite_6014883_3210.html "archive sur Wikiwix")], consulté le 13 février 2020).
+  205. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-207 "Revenir plus haut") Frédéric Bobin, Mohamed Haddad et Lilia Blaise, «Élection présidentielle en Tunisie: Kaïs Saïed, ou le nouveau paradigme tunisien», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 13 octobre 2019 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2019/10/13/election-presidentielle-en-tunisie-kais-saied-ou-le-nouveau-paradigme-tunisien_6015361_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2019%2F10%2F13%2Felection-presidentielle-en-tunisie-kais-saied-ou-le-nouveau-paradigme-tunisien_6015361_3212.html "archive sur Wikiwix")], consulté le 13 février 2020).
+  206. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-208 "Revenir plus haut") «[Kais Saied prend tous les pouvoirs en main, suspend le parlement, limoge Mechichi et s'érige en chef de l'exécutif et du parquet](https://www.leaders.com.tn/article/32197-kais-saied-prend-tous-les-pouvoirs-en-main-suspend-le-parlement-limoge-mechichi-et-s-erige-en-chef-de-l-executif-et-du-parquet) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.leaders.com.tn%2Farticle%2F32197-kais-saied-prend-tous-les-pouvoirs-en-main-suspend-le-parlement-limoge-mechichi-et-s-erige-en-chef-de-l-executif-et-du-parquet "archive sur Wikiwix")]», sur [Leaders](https://fr.wikipedia.org/wiki/Leaders_\(Tunisie\) "Leaders \(Tunisie\)"), 25 juillet 2021 (consulté le 25 juillet 2021).
+  207. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-209 "Revenir plus haut") «[Le président de la République publie des dispositions exceptionnelles](https://www.mosaiquefm.net/fr/actualite-national-tunisie/962219/le-president-de-la-republique-publie-des-dispositions-exceptionnelles) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.mosaiquefm.net%2Ffr%2Factualite-national-tunisie%2F962219%2Fle-president-de-la-republique-publie-des-dispositions-exceptionnelles "archive sur Wikiwix")]», sur [Mosaïque FM](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_\(Tunisie\) "Mosaïque FM \(Tunisie\)"), 22 septembre 2021 (consulté le 22 septembre 2021).
+  208. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-210 "Revenir plus haut") «Tunisie: Kaïs Saïed renforce les pouvoirs de la présidence», _[Le Figaro](https://fr.wikipedia.org/wiki/Le_Figaro "Le Figaro")_ ,‎ 22 septembre 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0182-5852](https://portal.issn.org/resource/ISSN/0182-5852), [lire en ligne](https://www.lefigaro.fr/international/tunisie-kais-saied-renforce-les-pouvoirs-de-la-presidence-20210922) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lefigaro.fr%2Finternational%2Ftunisie-kais-saied-renforce-les-pouvoirs-de-la-presidence-20210922 "archive sur Wikiwix")], consulté le 23 septembre 2021).
+  209. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-211 "Revenir plus haut") «Kaïs Saïed, seul maître à bord en Tunisie», _[Le Temps](https://fr.wikipedia.org/wiki/Le_Temps_\(Suisse\) "Le Temps \(Suisse\)")_ ,‎ 23 septembre 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1423-3967](https://portal.issn.org/resource/ISSN/1423-3967), [lire en ligne](https://www.letemps.ch/monde/kais-saied-seul-maitre-bord-tunisie) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.letemps.ch%2Fmonde%2Fkais-saied-seul-maitre-bord-tunisie "archive sur Wikiwix")], consulté le 23 septembre 2021).
+  210. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-212 "Revenir plus haut") «En Tunisie, le président Saïed annonce un référendum constitutionnel pour l'été 2022», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 14 décembre 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2021/12/14/en-tunisie-le-president-saied-annonce-un-referendum-constitutionnel-pour-l-ete-2022_6105990_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2021%2F12%2F14%2Fen-tunisie-le-president-saied-annonce-un-referendum-constitutionnel-pour-l-ete-2022_6105990_3212.html "archive sur Wikiwix")], consulté le 31 mai 2022).
+  211. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-213 "Revenir plus haut") «[Les résultats officiels du référendum](https://www.tunisienumerique.com/tunisie-derniere-minute-video-les-resultats-officiels-du-referendum/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.tunisienumerique.com%2Ftunisie-derniere-minute-video-les-resultats-officiels-du-referendum%2F "archive sur Wikiwix")]», sur tunisienumerique.com, 26 juillet 2022 (consulté le 26 juillet 2022).
+  212. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-214 "Revenir plus haut") «Loi n°59-57 du 1er juin 1959, portant promulgation de la Constitution», _[Journal officiel de la République tunisienne](https://fr.wikipedia.org/wiki/Journal_officiel_de_la_R%C3%A9publique_tunisienne "Journal officiel de la République tunisienne")_ , no30,‎ 1er juin 1959, p.746-759 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-7921](https://portal.issn.org/resource/ISSN/0330-7921), [lire en ligne](https://lake.jort.tn/journal-officiel/fr/1959/030.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Flake.jort.tn%2Fjournal-officiel%2Ffr%2F1959%2F030.pdf "archive sur Wikiwix")] [PDF]).
+  213. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-215 "Revenir plus haut") «[Constitution tunisienne du 1er 1959 (version de 2008)](https://mjp.univ-perp.fr/constit/tn1959.htm) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fmjp.univ-perp.fr%2Fconstit%2Ftn1959.htm "archive sur Wikiwix")]», sur mjp.univ-perp.fr, [Université de Perpignan](https://fr.wikipedia.org/wiki/Universit%C3%A9_Perpignan_Via_Domitia "Université Perpignan Via Domitia") (consulté le 28 février 2026).
+  214. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-216 "Revenir plus haut") (en) Maria Cristina Paciello, «[Tunisia: Changes and Challenges of Political Transition](https://constitutionnet.org/sites/default/files/tunisia_changes_and_challenges_of_political_transition.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fconstitutionnet.org%2Fsites%2Fdefault%2Ffiles%2Ftunisia_changes_and_challenges_of_political_transition.pdf "archive sur Wikiwix")]» [PDF], sur constitutionnet.org, mai 2011 (consulté le 28 février 2026), p.2.
+  215. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-217 "Revenir plus haut") «[Rapport du Groupe de travail sur l'Examen périodique universel de la Tunisie](https://upr-info.org/sites/default/files/country-document/2023-02/a_hrc_wg.41_TN_F.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fupr-info.org%2Fsites%2Fdefault%2Ffiles%2Fcountry-document%2F2023-02%2Fa_hrc_wg.41_TN_F.pdf "archive sur Wikiwix")]» [PDF], sur [UPR Info](https://fr.wikipedia.org/wiki/UPR_Info "UPR Info") (consulté le 22 mars 2025).
+  216. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-218 "Revenir plus haut") (en) [John Esposito](https://fr.wikipedia.org/wiki/John_Esposito "John Esposito"), [Tamara Sonn](https://fr.wikipedia.org/wiki/Tamara_Sonn?action=edit&redlink=1 "Tamara Sonn \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/Tamara%20Sonn "en:Tamara Sonn")[John Obert Voll](https://fr.wikipedia.org/wiki/John_Obert_Voll?action=edit&redlink=1 "John Obert Voll \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/John%20Obert%20Voll "en:John Obert Voll")Islam and Democracy after the Arab Spring, Oxford, [Oxford University Press](https://fr.wikipedia.org/wiki/Oxford_University_Press "Oxford University Press"), 2016, 306p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0195147988](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0195147988 "Spécial:Ouvrages de référence/978-0195147988"), [lire en ligne](http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780195147988.001.0001/acprof-9780195147988) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.oxfordscholarship.com%2Fview%2F10.1093%2Facprof%3Aoso%2F9780195147988.001.0001%2Facprof-9780195147988 "archive sur Wikiwix")]), p.174–201.
+  217. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-219 "Revenir plus haut") «[Tunisie](https://perspective.usherbrooke.ca/bilan/servlet/BMHistoriquePays/TUN) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fperspective.usherbrooke.ca%2Fbilan%2Fservlet%2FBMHistoriquePays%2FTUN "archive sur Wikiwix")]», sur perspective.usherbrooke.ca (consulté le 28 février 2026).
+  218. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-220 "Revenir plus haut") (en) Harold D. Nelson, Tunisia: a country study, Washington, [American University](https://fr.wikipedia.org/wiki/American_University "American University"), coll.«[Library of Congress Country Studies](https://fr.wikipedia.org/wiki/Library_of_Congress_Country_Studies?action=edit&redlink=1 "Library of Congress Country Studies \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/Library%20of%20Congress%20Country%20Studies "en:Library of Congress Country Studies")», 1986, 90p. ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1057-5294](https://portal.issn.org/resource/ISSN/1057-5294), [lire en ligne](https://www.marines.mil/portals/1/publications/tunisia%20study_1.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.marines.mil%2Fportals%2F1%2Fpublications%2Ftunisia%2520study_1.pdf "archive sur Wikiwix")]), xvi.
+  219. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-221 "Revenir plus haut") «[Constitution du 27 janvier 2014](https://mjp.univ-perp.fr/constit/tn2014.htm) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fmjp.univ-perp.fr%2Fconstit%2Ftn2014.htm "archive sur Wikiwix")]», sur mjp.univ-perp.fr, [Université de Perpignan](https://fr.wikipedia.org/wiki/Universit%C3%A9_Perpignan_Via_Domitia "Université Perpignan Via Domitia") (consulté le 10 avril 2022).
+  220. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-222 "Revenir plus haut") (en) «[Tunisia](https://www.transparency.org/en/cpi/2025) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.transparency.org%2Fen%2Fcpi%2F2025 "archive sur Wikiwix")]», sur [Transparency International](https://fr.wikipedia.org/wiki/Transparency_International "Transparency International"), 2025 (consulté le 28 février 2026).
+  221. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-223 "Revenir plus haut") «En Tunisie, Najla Bouden nommée première ministre», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 29 septembre 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2021/09/29/tunisie-najla-bouden-nommee-premiere-ministre_6096460_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2021%2F09%2F29%2Ftunisie-najla-bouden-nommee-premiere-ministre_6096460_3212.html "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  222. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-224 "Revenir plus haut") Thomas Paillaute, «Vague d'arrestations en Tunisie, diversion ou complot?», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 3 mars 2023 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/1423346/politique/vague-darrestations-en-tunisie-diversion-ou-complot/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F1423346%2Fpolitique%2Fvague-darrestations-en-tunisie-diversion-ou-complot%2F "archive sur Wikiwix")], consulté le 24 février 2024).
+  223. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-225 "Revenir plus haut") [Mathieu Galtier](https://fr.wikipedia.org/wiki/Mathieu_Galtier "Mathieu Galtier"), «Arrestations d'opposants en Tunisie: «On a basculé dans une paranoïa d'État»», _[Libération](https://fr.wikipedia.org/wiki/Lib%C3%A9ration_\(journal\) "Libération \(journal\)")_ ,‎ 10 février 2024 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0335-1793](https://portal.issn.org/resource/ISSN/0335-1793), [lire en ligne](https://www.liberation.fr/international/afrique/arrestations-dopposants-en-tunisie-on-a-bascule-dans-une-paranoia-detat-20240210_OWYUS7YRS5DSDH6RTYLF77RMXA/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.liberation.fr%2Finternational%2Fafrique%2Farrestations-dopposants-en-tunisie-on-a-bascule-dans-une-paranoia-detat-20240210_OWYUS7YRS5DSDH6RTYLF77RMXA%2F "archive sur Wikiwix")], consulté le 24 février 2024).
+  224. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-226 "Revenir plus haut") [Mathieu Galtier](https://fr.wikipedia.org/wiki/Mathieu_Galtier "Mathieu Galtier"), «Tunisie: tensions entre le président Kaïs Saïed et les diplomates européens sur fond de répression politique», _[Libération](https://fr.wikipedia.org/wiki/Lib%C3%A9ration_\(journal\) "Libération \(journal\)")_ ,‎ 17 septembre 2023 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0335-1793](https://portal.issn.org/resource/ISSN/0335-1793), [lire en ligne](https://www.liberation.fr/international/afrique/tunisie-tensions-entre-le-president-kais-saied-et-les-diplomates-europeens-sur-fonds-de-repression-politique-20230917_UZWVRTGQSNCLXC5ZH3BA2M4YYY/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.liberation.fr%2Finternational%2Fafrique%2Ftunisie-tensions-entre-le-president-kais-saied-et-les-diplomates-europeens-sur-fonds-de-repression-politique-20230917_UZWVRTGQSNCLXC5ZH3BA2M4YYY%2F "archive sur Wikiwix")], consulté le 24 février 2024).
+  225. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-227 "Revenir plus haut") Joseph Bemba, Dictionnaire de la justice internationale, de la paix et du développement durable: principaux termes et expressions, Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2011, 454p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2296468856](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2296468856 "Spécial:Ouvrages de référence/978-2296468856"), [lire en ligne](https://books.google.fr/books?id=9YhRKcLl_LsC&pg=PA45&dq=tunisie+mai+2004+ligue+arabe) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3D9YhRKcLl_LsC%26pg%3DPA45%26dq%3Dtunisie%2Bmai%2B2004%2Bligue%2Barabe "archive sur Wikiwix")]), p.45.
+  226. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-228 "Revenir plus haut") «[Discours de Jéricho du président tunisien](http://perspective.usherbrooke.ca/bilan/servlet/BMDictionnaire?iddictionnaire=2015) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fperspective.usherbrooke.ca%2Fbilan%2Fservlet%2FBMDictionnaire%3Fiddictionnaire%3D2015 "archive sur Wikiwix")]», sur perspective.usherbrooke.ca, 3 mars 1965 (consulté le 20 janvier 2019).
+  227. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-background_229-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-background_229-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-background_229-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-background_229-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-background_229-4) (en) «[Tunisia](https://2009-2017.state.gov/outofdate/bgn/tunisia/196390.htm?safe=1) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2F2009-2017.state.gov%2Foutofdate%2Fbgn%2Ftunisia%2F196390.htm%3Fsafe%3D1 "archive sur Wikiwix")]», sur 2009-2017.state.gov, [Département d'État des États-Unis](https://fr.wikipedia.org/wiki/D%C3%A9partement_d'%C3%89tat_des_%C3%89tats-Unis "Département d'État des États-Unis"), 9 mars 2012 (consulté le 28 février 2026).
+  228. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-230 "Revenir plus haut") Frida Dahmani, «Il y a quarante ans, Israël bombardait le siège de l'OLP à Tunis», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 29 août 2005 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/1725942/politique/il-y-a-quarante-ans-israel-bombardait-le-siege-de-lolp-a-tunis/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F1725942%2Fpolitique%2Fil-y-a-quarante-ans-israel-bombardait-le-siege-de-lolp-a-tunis%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  229. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-231 "Revenir plus haut") «Tunisie: la visite d'une délégation israélienne est entourée d'une extrême discrétion», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 22 septembre 1993 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/archives/article/1993/09/22/tunisie-la-visite-d-une-delegation-israelienne-est-entouree-d-une-extreme-discretion_3938142_1819218.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Farchives%2Farticle%2F1993%2F09%2F22%2Ftunisie-la-visite-d-une-delegation-israelienne-est-entouree-d-une-extreme-discretion_3938142_1819218.html "archive sur Wikiwix")], consulté le 28 février 2026).
+  230. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-232 "Revenir plus haut") Recueil de jurisprudence internationale concernant le droit de la mer, New York, United Nations Publications, 2008, 264p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9212334325](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9212334325 "Spécial:Ouvrages de référence/978-9212334325"), [lire en ligne](https://books.google.fr/books?id=YXq9cFkpjZMC&pg=PA59&dq=1982+cour+internationale+justice+plateau+continental+tunisie+libye) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3DYXq9cFkpjZMC%26pg%3DPA59%26dq%3D1982%2Bcour%2Binternationale%2Bjustice%2Bplateau%2Bcontinental%2Btunisie%2Blibye "archive sur Wikiwix")]), p.59-64.
+  231. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-233 "Revenir plus haut") Riad Meddeb, Les entreprises multinationales dans l'industrie du textile-habillement en Tunisie: l'impact économique et social, Genève, [Organisation internationale du travail](https://fr.wikipedia.org/wiki/Organisation_internationale_du_travail "Organisation internationale du travail"), 1998, 46p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9222110926](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9222110926 "Spécial:Ouvrages de référence/978-9222110926"), [lire en ligne](https://books.google.fr/books?id=Q2MLus377gwC&pg=PA30&dq=17+juillet+1995+tunisie+union+europeenne) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.fr%2Fbooks%3Fid%3DQ2MLus377gwC%26pg%3DPA30%26dq%3D17%2Bjuillet%2B1995%2Btunisie%2Bunion%2Beuropeenne "archive sur Wikiwix")]), p.30.
+  232. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-234 "Revenir plus haut") «[21e séance plénière de la 55e session de l'Assemblée générale](https://docs.un.org/fr/A/55/PV.21) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdocs.un.org%2Ffr%2FA%2F55%2FPV.21 "archive sur Wikiwix")]», sur docs.un.org, [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies"), 18 septembre 2000 (consulté le 28 février 2026), p.17-18.
+  233. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-235 "Revenir plus haut") «[Résolution 57/265: création du Fonds de solidarité mondial](https://undocs.org/fr/A/RES/57/265) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fundocs.org%2Ffr%2FA%2FRES%2F57%2F265 "archive sur Wikiwix")]», sur docs.un.org, [Organisation des Nations unies](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies "Organisation des Nations unies"), 20 décembre 2002 (consulté le 28 février 2026).
+  234. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-236 "Revenir plus haut") (en) «[Données sur l'armée tunisienne](https://web.archive.org/web/20081120140028/http://www.inss.org.il/upload/\(FILE\)1188214437.pdf)» [PDF], sur _inss.org.il_ (version du 20 novembre 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  235. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-237 "Revenir plus haut") «Maintien de la paix: une spécialité tunisienne», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 24 juin 2007 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/211300/archives-thematique/maintien-de-la-paix-une-sp-cialit-tunisienne/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F211300%2Farchives-thematique%2Fmaintien-de-la-paix-une-sp-cialit-tunisienne%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  236. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-marsad2_238-0 "Revenir plus haut") «[Droits et libertés](https://web.archive.org/web/20190323134730/http://majles.marsad.tn/fr/constitution/4/chapitre/2)», sur _majles.marsad.tn_ (version du 23 mars 2019 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  237. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-constit_239-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-constit_239-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-constit_239-2) «[Chapitre premier - Dispositions générales](http://www.jurisitetunisie.com/tunisie/codes/constitution/const1005p.htm) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.jurisitetunisie.com%2Ftunisie%2Fcodes%2Fconstitution%2Fconst1005p.htm "archive sur Wikiwix")]», sur jurisitetunisie.com (consulté le 18 janvier 2019).
+  238. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-marsad5_240-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-marsad5_240-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-marsad5_240-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-marsad5_240-3) «[Pouvoir judiciaire](https://web.archive.org/web/20190323133620/http://majles.marsad.tn/fr/constitution/5/chapitre/5)», sur _majles.marsad.tn_ (version du 23 mars 2019 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  239. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-TAP_241-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-TAP_241-1) «[Conventions internationales et protocoles facultatifs ratifiés par la Tunisie](http://www.onu-tn.org/Actualites/38_CONVENTIONS_INTERNATIONALES_ET_PROTOCOLES_FACULTATIFS_RATIFIES_PAR_LA_TUNISIE.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.onu-tn.org%2FActualites%2F38_CONVENTIONS_INTERNATIONALES_ET_PROTOCOLES_FACULTATIFS_RATIFIES_PAR_LA_TUNISIE.html "archive sur Wikiwix")]», sur onu-tn.org, 3 février 2011 (consulté le 19 janvier 2019).
+  240. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-242 "Revenir plus haut") [AFP](https://fr.wikipedia.org/wiki/Agence_France-Presse "Agence France-Presse"), «Contre le terrorisme, la Tunisie rétablit la peine capitale», _[Libération](https://fr.wikipedia.org/wiki/Lib%C3%A9ration_\(journal\) "Libération \(journal\)")_ ,‎ 25 juillet 2015 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0335-1793](https://portal.issn.org/resource/ISSN/0335-1793), [lire en ligne](https://www.liberation.fr/planete/2015/07/25/contre-le-terrorisme-la-tunisie-retablit-la-peine-capitale_1353677/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.liberation.fr%2Fplanete%2F2015%2F07%2F25%2Fcontre-le-terrorisme-la-tunisie-retablit-la-peine-capitale_1353677%2F "archive sur Wikiwix")], consulté le 23 mars 2025).
+  241. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-243 "Revenir plus haut") «[Structure du PIB en 2010](https://web.archive.org/web/20110615102819/http://www.investintunisia.tn/site/fr/article.php?id_article=167)», sur _investintunisia.tn_ (version du 15 juin 2011 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  242. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-244 "Revenir plus haut") André Wilmots, De Bourguiba à Ben Ali: l'étonnant parcours économique de la Tunisie (1960-2000), Paris, [Éditions L'Harmattan](https://fr.wikipedia.org/wiki/%C3%89ditions_L'Harmattan "Éditions L'Harmattan"), 2003, 148p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2747548403](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2747548403 "Spécial:Ouvrages de référence/978-2747548403"), [lire en ligne](https://books.google.com/books?id=0aRUxF_zBEAC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D0aRUxF_zBEAC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.17.
+  243. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-245 "Revenir plus haut") «[Évolution de la population active selon le sexe](http://www.ins.nat.tn/fr/emploi.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.ins.nat.tn%2Ffr%2Femploi.php "archive sur Wikiwix")]», sur [Institut national de la statistique](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_\(Tunisie\) "Institut national de la statistique \(Tunisie\)") (consulté le 18 janvier 2019).
+  244. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-246 "Revenir plus haut") [Wilmots 2003](https://fr.wikipedia.org/wiki/Tunisie#Wilmots2003), p.75-76.
+  245. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-247 "Revenir plus haut") Jean-Pierre Sereni, «[Comment Ben Ali a pillé la Tunisie en toute légalité](https://orientxxi.info/magazine/comment-ben-ali-a-pille-la-tunisie-en-toute-legalite,0562) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Forientxxi.info%2Fmagazine%2Fcomment-ben-ali-a-pille-la-tunisie-en-toute-legalite%2C0562 "archive sur Wikiwix")]», sur [Orient XXI](https://fr.wikipedia.org/wiki/Orient_XXI "Orient XXI"), 9 avril 2014 (consulté le 4 septembre 2020).
+  246. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:4_248-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-:4_248-1) [Olfa Lamloum](https://fr.wikipedia.org/wiki/Olfa_Lamloum "Olfa Lamloum"), «En Tunisie, les braises persistantes de l'esprit de révolte», _[Le Monde diplomatique](https://fr.wikipedia.org/wiki/Le_Monde_diplomatique "Le Monde diplomatique")_ ,‎ janvier 2021, p.6-7 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0026-9395](https://portal.issn.org/resource/ISSN/0026-9395), [lire en ligne](https://www.monde-diplomatique.fr/2021/01/LAMLOUM/62665) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.monde-diplomatique.fr%2F2021%2F01%2FLAMLOUM%2F62665 "archive sur Wikiwix")], consulté le 16 janvier 2022).
+  247. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-249 "Revenir plus haut") Le Bilan du Monde, Paris, Le Monde, 2024 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2368041598](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2368041598 "Spécial:Ouvrages de référence/978-2368041598")), p.147.
+  248. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-250 "Revenir plus haut") «[Indice mondial de l'innovation 2025: quelles sont les économies les plus innovantes en 2025?](https://www.wipo.int/fr/web/global-innovation-index/2025/index) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.wipo.int%2Ffr%2Fweb%2Fglobal-innovation-index%2F2025%2Findex "archive sur Wikiwix")]», sur [Organisation mondiale de la propriété intellectuelle](https://fr.wikipedia.org/wiki/Organisation_mondiale_de_la_propri%C3%A9t%C3%A9_intellectuelle "Organisation mondiale de la propriété intellectuelle"), 2025 (consulté le 9 octobre 2025).
+  249. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-251 "Revenir plus haut") Maurice Wolkowitsch, «L'émigration des Français de Tunisie», _[Annales de géographie](https://fr.wikipedia.org/wiki/Annales_de_g%C3%A9ographie "Annales de géographie")_ , vol.68, no367,‎ 1959, p.253-257 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0003-4010](https://portal.issn.org/resource/ISSN/0003-4010), [lire en ligne](http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1959_num_68_367_16315) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.persee.fr%2Fweb%2Frevues%2Fhome%2Fprescript%2Farticle%2Fgeo_0003-4010_1959_num_68_367_16315 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  250. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-252 "Revenir plus haut") [Wilmots 2003](https://fr.wikipedia.org/wiki/Tunisie#Wilmots2003), p.11-12.
+  251. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MOR_253-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MOR_253-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MOR_253-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MOR_253-3) Christian Morrisson et Béchir Talbi, La croissance de l'économie tunisienne en longue période, Paris, [Organisation de coopération et de développement économiques](https://fr.wikipedia.org/wiki/Organisation_de_coop%C3%A9ration_et_de_d%C3%A9veloppement_%C3%A9conomiques "Organisation de coopération et de développement économiques"), 1996, 149p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9264249257](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9264249257 "Spécial:Ouvrages de référence/978-9264249257")).
+  252. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MUR_254-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MUR_254-1) (en) Emma Murphy, Economic and political change in Tunisia: From Bourguiba to Ben Ali, Londres, [Palgrave Macmillan](https://fr.wikipedia.org/wiki/Palgrave_Macmillan "Palgrave Macmillan"), 1999, 285p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[9780-333983584](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/9780-333983584 "Spécial:Ouvrages de référence/9780-333983584"), [lire en ligne](https://books.google.com/books?id=qMSADAAAQBAJ&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DqMSADAAAQBAJ%26printsec%3Dfrontcover "archive sur Wikiwix")]).
+  253. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-wilmots94_255-0 "Revenir plus haut") [Wilmots 2003](https://fr.wikipedia.org/wiki/Tunisie#Wilmots2003), p.94.
+  254. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-256 "Revenir plus haut") [Wilmots 2003](https://fr.wikipedia.org/wiki/Tunisie#Wilmots2003), p.103.
+  255. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-257 "Revenir plus haut") [Wilmots 2003](https://fr.wikipedia.org/wiki/Tunisie#Wilmots2003), p.53.
+  256. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MCVG_258-0 "Revenir plus haut") Michel Camau et [Vincent Geisser](https://fr.wikipedia.org/wiki/Vincent_Geisser "Vincent Geisser"), Le syndrome autoritaire: politique en Tunisie de Bourguiba à Ben Ali, Paris, [Presses de Sciences Po](https://fr.wikipedia.org/wiki/Presses_de_Sciences_Po "Presses de Sciences Po"), 2003, 365p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2724608793](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2724608793 "Spécial:Ouvrages de référence/978-2724608793")).
+  257. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-259 "Revenir plus haut") «[Bilan global des privatisations](https://web.archive.org/web/20070108191759/http://www.privatisation.gov.tn/www/fr/doc.asp?mcat=1&mrub=49&msrub=8&dev=true)», sur _privatisation.gov.tn_ (version du 8 janvier 2007 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  258. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-express100105_260-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-express100105_260-1) Chloé Hoorman, «Le grand bain de la mondialisation», _[L'Express](https://fr.wikipedia.org/wiki/L'Express "L'Express")_ ,‎ 10 janvier 2005 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0014-5270](https://portal.issn.org/resource/ISSN/0014-5270), [lire en ligne](https://www.lexpress.fr/actualite/monde/afrique/le-grand-bain-de-la-mondialisation_487399.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lexpress.fr%2Factualite%2Fmonde%2Fafrique%2Fle-grand-bain-de-la-mondialisation_487399.html "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  259. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-261 "Revenir plus haut") «[Défis de la Tunisie](https://web.archive.org/web/20070606221345/http://www.tn.undp.org/TB3.html)», sur _tn.undp.org_ (version du 6 juin 2007 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  260. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-262 "Revenir plus haut") Nadia Hachimi Alaoui, «En Tunisie, le malaise de la génération Ben Ali», _[Libération](https://fr.wikipedia.org/wiki/Lib%C3%A9ration_\(journal\) "Libération \(journal\)")_ ,‎ 28 avril 2008 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0335-1793](https://portal.issn.org/resource/ISSN/0335-1793), [lire en ligne](https://www.liberation.fr/planete/2008/04/28/le-malaise-de-la-generation-ben-ali_70593) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.liberation.fr%2Fplanete%2F2008%2F04%2F28%2Fle-malaise-de-la-generation-ben-ali_70593 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  261. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-gharbi2_263-0 "Revenir plus haut") Samir Gharbi, «Un mariage de raison», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 23 mars 2008, p.74 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285)).
+  262. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-264 "Revenir plus haut") Julien Clémençot, «Tunisie: empire familial cherche repreneurs», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 26 janvier 2011 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/32397/economie-entreprises/tunisie-empire-familial-cherche-repreneurs/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F32397%2Feconomie-entreprises%2Ftunisie-empire-familial-cherche-repreneurs%2F "archive sur Wikiwix")], consulté le 24 février 2024).
+  263. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-barrouhi_265-0 "Revenir plus haut") Abdelaziz Barrouhi, «Pour 500 millions de consommateurs de plus», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 25 mars 2008 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/77201/archives-thematique/pour-500-millions-de-consommateurs-de-plus/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F77201%2Farchives-thematique%2Fpour-500-millions-de-consommateurs-de-plus%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  264. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-266 "Revenir plus haut") «[Agroalimentaire: la Tunisie devient le 2e producteur mondial d'huile d'olive](http://www.webmanagercenter.com/actualite/economie/2015/01/15/159192/agroalimentaire-la-tunisie-devient-le-2eme-producteur-mondial-d-huile-d-olive) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.webmanagercenter.com%2Factualite%2Feconomie%2F2015%2F01%2F15%2F159192%2Fagroalimentaire-la-tunisie-devient-le-2eme-producteur-mondial-d-huile-d-olive "archive sur Wikiwix")]», sur webmanagercenter.com, 15 janvier 2015 (consulté le 18 janvier 2019).
+  265. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-267 "Revenir plus haut") «[Statistiques du secteur oléicole – Février 2025](https://www.internationaloliveoil.org/statistiques-du-secteur-oleicole-fevrier-2025/?lang=fr) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.internationaloliveoil.org%2Fstatistiques-du-secteur-oleicole-fevrier-2025%2F%3Flang%3Dfr "archive sur Wikiwix")]», sur internationaloliveoil.org (consulté le 23 mars 2025).
+  266. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-268 "Revenir plus haut") «[Établissements publics](https://web.archive.org/web/20070710205844/http://www.onagri.nat.tn/etabliss.htm)», sur _onagri.nat.tn_ (version du 10 juillet 2007 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  267. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-269 "Revenir plus haut") «[Colloque Sénat-Ubifrance sur la Tunisie - 24 juin 2004](http://www.senat.fr/international/collotunisie2004/collotunisie20047.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.senat.fr%2Finternational%2Fcollotunisie2004%2Fcollotunisie20047.html "archive sur Wikiwix")]», sur senat.fr (consulté le 18 janvier 2019).
+  268. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-270 "Revenir plus haut") «[Tunisie – Tourisme: forcing pour la promotion du tourisme durable](https://www.tunisienumerique.com/tunisie-tourisme-forcing-pour-la-promotion-du-tourisme-durable/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.tunisienumerique.com%2Ftunisie-tourisme-forcing-pour-la-promotion-du-tourisme-durable%2F "archive sur Wikiwix")]», sur tunisienumerique.com, 5 janvier 2024 (consulté le 5 janvier 2024).
+  269. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-AFPTD_271-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-AFPTD_271-1) (en) «[Destruction of the Mediterranean by mass tourism poses a challenge for industry, warns WWF](https://wwf.panda.org/wwf_news/?2194/Destruction-of-the-Mediterranean-by-mass-tourism-poses-a-challenge-for-industry-warns-WWF) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwwf.panda.org%2Fwwf_news%2F%3F2194%2FDestruction-of-the-Mediterranean-by-mass-tourism-poses-a-challenge-for-industry-warns-WWF "archive sur Wikiwix")]», sur wwf.panda.org, 1er mars 2001 (consulté le 1er janvier 2023).
+  270. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-272 "Revenir plus haut") «[Magasin Général: En attendant la privatisation…](https://web.archive.org/web/20090104181500/http://www.investir-en-tunisie.net/news/article.php?id=805)», sur _investir-en-tunisie.net_ (version du 4 janvier 2009 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  271. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-POS_273-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-POS_273-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-POS_273-2) «[Organisation des canaux de distribution](https://web.archive.org/web/20070601202114/http://www.laposte-export-solutions.com/observez.php/tunisie/organisation-des-canaux-de-distribution.html)», sur _laposte-export-solutions.com_ (version du 1er juin 2007 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  272. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-274 "Revenir plus haut") Amira Gasmi, «Prévision du trafic aérien de passagers: mise en évidence de la méthode de combinaison de prévisions», _Les Cahiers scientifiques du transport_ , no65,‎ 2014, p.97-123 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1150-8809](https://portal.issn.org/resource/ISSN/1150-8809), [lire en ligne](https://cst.episciences.org/12139/pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fcst.episciences.org%2F12139%2Fpdf "archive sur Wikiwix")] [PDF], consulté le 28 février 2026).
+  273. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-275 "Revenir plus haut") (en) «[Tunisia Plans $1 Billion Expansion of Its Main International Airport](https://www.ecofinagency.com/news-infrastructures/1411-50475-tunisia-plans-1-billion-expansion-of-its-main-international-airport) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.ecofinagency.com%2Fnews-infrastructures%2F1411-50475-tunisia-plans-1-billion-expansion-of-its-main-international-airport "archive sur Wikiwix")]», sur ecofinagency.com, 14 novembre 2025 (consulté le 28 février 2026).
+  274. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-276 "Revenir plus haut") «[Chiffres](https://web.archive.org/web/20180131000947/http://www.sncft.com.tn/fr/sncft/chiffres.html)», sur _[Société nationale des chemins de fer tunisiens](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_nationale_des_chemins_de_fer_tunisiens "Société nationale des chemins de fer tunisiens")_ (version du 31 janvier 2018 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  275. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-277 "Revenir plus haut") Imprimerie officielle de la République tunisienne, «[Code de la route et ses textes d'application](http://www.droit-afrique.com/upload/doc/tunisie/Tunisie-Code-2008-de-la-route.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.droit-afrique.com%2Fupload%2Fdoc%2Ftunisie%2FTunisie-Code-2008-de-la-route.pdf "archive sur Wikiwix")]» [PDF], sur droit-afrique.com (consulté le 13 juillet 2018).
+  276. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MEDI_278-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-MEDI_278-1) «[Télécom et Internet en Tunisie](https://web.archive.org/web/20080119162419/http://www.medibtikar.eu/spip.php?article114&pays=Tunisie)», sur _medibtikar.eu_ (version du 19 janvier 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  277. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-279 "Revenir plus haut") «[Abonnements à la téléphonie fixe - Tunisie](https://donnees.banquemondiale.org/indicateur/IT.MLT.MAIN?locations=TN) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdonnees.banquemondiale.org%2Findicateur%2FIT.MLT.MAIN%3Flocations%3DTN "archive sur Wikiwix")]», sur donnees.banquemondiale.org, [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") (consulté le 11 avril 2025).
+  278. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-280 "Revenir plus haut") «[Abonnements à la téléphonie mobile - Tunisie](https://donnees.banquemondiale.org/indicateur/IT.CEL.SETS?locations=TN) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdonnees.banquemondiale.org%2Findicateur%2FIT.CEL.SETS%3Flocations%3DTN "archive sur Wikiwix")]», sur donnees.banquemondiale.org, [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") (consulté le 11 avril 2025).
+  279. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-281 "Revenir plus haut") «[Utilisateurs d'Internet (% de la population) - Tunisie](https://donnees.banquemondiale.org/indicateur/IT.NET.USER.ZS?locations=TN) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdonnees.banquemondiale.org%2Findicateur%2FIT.NET.USER.ZS%3Flocations%3DTN "archive sur Wikiwix")]», sur donnees.banquemondiale.org, [Banque mondiale](https://fr.wikipedia.org/wiki/Banque_mondiale "Banque mondiale") (consulté le 11 avril 2025).
+  280. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-282 "Revenir plus haut") Monia Bamri, «[Tunisie Telecom, leader incontesté sur le marché de la téléphonie fixe en Tunisie](https://www.webdo.tn/fr/actualite/national/tunisie-telecom-leader-inconteste-sur-le-marche-de-la-telephonie-fixe-en-tunisie/220434) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.webdo.tn%2Ffr%2Factualite%2Fnational%2Ftunisie-telecom-leader-inconteste-sur-le-marche-de-la-telephonie-fixe-en-tunisie%2F220434 "archive sur Wikiwix")]», sur webdo.tn, 10 mars 2025 (consulté le 11 avril 2025).
+  281. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-283 "Revenir plus haut") «[Ooredoo confirme son leadership, Orange en progression, Tunisie Télécom en recul](https://www.tunisienumerique.com/ooredoo-confirme-son-leadership-orange-en-progression-tunisie-telecom-en-recul/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.tunisienumerique.com%2Fooredoo-confirme-son-leadership-orange-en-progression-tunisie-telecom-en-recul%2F "archive sur Wikiwix")]», sur tunisienumerique.com, 10 mars 2025 (consulté le 11 avril 2025).
+  282. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-284 "Revenir plus haut") Chokri Gharbi, «Tunisie: des actions ciblées pour les secteurs énergivores», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 25 août 2006 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991)).
+  283. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-285 "Revenir plus haut") Depuis 1994, la Compagnie des phosphates de Gafsa et le Groupe chimique tunisien sont gérées par le même président-directeur général et leurs directions générales commerciales ont été fusionnées.
+  284. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-286 "Revenir plus haut") «[Les gisements de phosphates dans le monde](http://www.fao.org/docrep/007/y5053f/y5053f06.htm) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.fao.org%2Fdocrep%2F007%2Fy5053f%2Fy5053f06.htm "archive sur Wikiwix")]», sur [Organisation des Nations unies pour l'alimentation et l'agriculture](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'alimentation_et_l'agriculture "Organisation des Nations unies pour l'alimentation et l'agriculture") (consulté le 18 janvier 2019).
+  285. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-5) [7](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-6) [8](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-7) [9](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-8) [10](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-9) [11](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-10) [12](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-factbook_287-11) (en) «[Tunisia](https://www.cia.gov/the-world-factbook/countries/tunisia) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.cia.gov%2Fthe-world-factbook%2Fcountries%2Ftunisia "archive sur Wikiwix")]», sur [Central Intelligence Agency](https://fr.wikipedia.org/wiki/Central_Intelligence_Agency "Central Intelligence Agency") (consulté le 18 janvier 2019).
+  286. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-288 "Revenir plus haut") Julien Clémençot, «La Tunisie met les gaz», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 27 septembre 2012 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/25803/economie/la-tunisie-met-les-gaz/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F25803%2Feconomie%2Fla-tunisie-met-les-gaz%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  287. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-289 "Revenir plus haut") Louis Pouillon, «[Tunisie: les enjeux de la transition énergétique](https://www.arabnews.fr/node/243616/%C3%A9conomie) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.arabnews.fr%2Fnode%2F243616%2F%25C3%25A9conomie "archive sur Wikiwix")]», sur arabnews.fr, 20 mai 2022 (consulté le 25 mai 2022).
+  288. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-290 "Revenir plus haut") «La Tunisie, sixième plus grand importateur africain de panneaux solaires chinois», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 1er septembre 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://lapresse.tn/2025/09/01/la-tunisie-sixieme-plus-grand-importateur-africain-de-panneaux-solaires-chinois/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Flapresse.tn%2F2025%2F09%2F01%2Fla-tunisie-sixieme-plus-grand-importateur-africain-de-panneaux-solaires-chinois%2F "archive sur Wikiwix")], consulté le 1er septembre 2025).
+  289. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-291 "Revenir plus haut") [Samir Aounallah](https://fr.wikipedia.org/wiki/Samir_Aounallah "Samir Aounallah"), L'Antiquité tunisienne: de la fondation d'Utique à la chute de Carthage, dix-huit siècles d'histoire (1101 avant J.-C. — 698 après J.-C.), Tunis, Nirvana, 2020, 384p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-9938530575](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-9938530575 "Spécial:Ouvrages de référence/978-9938530575"), [lire en ligne](https://www.academia.edu/44979695/LAntiquit%C3%A9_Tunisienne_De_la_fondation_d_Utique_%C3%A0_la_chute_de_Carthage_Dix_huit_si%C3%A8cles_d_histoire_1101_avant_J_C_698_apr%C3%A8s_J_C_) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.academia.edu%2F44979695%2FLAntiquit%25C3%25A9_Tunisienne_De_la_fondation_d_Utique_%25C3%25A0_la_chute_de_Carthage_Dix_huit_si%25C3%25A8cles_d_histoire_1101_avant_J_C_698_apr%25C3%25A8s_J_C_ "archive sur Wikiwix")]).
+  290. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-292 "Revenir plus haut") (en) «[Tunisia](https://www.britannica.com/place/Tunisia) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.britannica.com%2Fplace%2FTunisia "archive sur Wikiwix")]», sur [Encyclopædia Britannica Online](https://fr.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online "Encyclopædia Britannica Online") (consulté le 16 novembre 2022).
+  291. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-293 "Revenir plus haut") Selon [Gabriel Camps](https://fr.wikipedia.org/wiki/Gabriel_Camps "Gabriel Camps"), Les Berbères: mémoire et identité, Paris, Errance, 1995, 260p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2877721059](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2877721059 "Spécial:Ouvrages de référence/978-2877721059")), p.102, «en renforçant par leur présence la part de population nomade, les Arabes arrivés au Xesiècle ont été d'un poids insignifiant sur le plan démographique, mais déterminant sur le plan culturel et socio-économique».
+  292. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-294 "Revenir plus haut") Marc Côte, «[Les montagnes du Maghreb: un cas de déterminisme géographique?](http://cafe-geo.net/wp-content/uploads/montagnes-maghreb.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fcafe-geo.net%2Fwp-content%2Fuploads%2Fmontagnes-maghreb.pdf "archive sur Wikiwix")]» [PDF], sur cafe-geo.net, 15 novembre 2001 (consulté le 18 janvier 2019).
+  293. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-295 "Revenir plus haut") (en) «[Tunisia's Constitution of 2014](https://www.constituteproject.org/constitution/Tunisia_2014.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.constituteproject.org%2Fconstitution%2FTunisia_2014.pdf "archive sur Wikiwix")]» [PDF], sur constituteproject.org (consulté le 28 février 2026).
+  294. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-staterel_296-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-staterel_296-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-staterel_296-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-staterel_296-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-staterel_296-4) (en) «[2022 Report on International Religious Freedom: Tunisia](https://www.state.gov/reports/2022-report-on-international-religious-freedom/tunisia) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.state.gov%2Freports%2F2022-report-on-international-religious-freedom%2Ftunisia "archive sur Wikiwix")]», sur [Département d'État des États-Unis](https://fr.wikipedia.org/wiki/D%C3%A9partement_d'%C3%89tat_des_%C3%89tats-Unis "Département d'État des États-Unis") (consulté le 28 février 2026).
+  295. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-297 "Revenir plus haut") Geneviève Bédoucha, «L'État face aux razzias de ses anciens nomades: sédentarisation et détribalisation dans le Sahara tunisien», dans [Pierre Bonte](https://fr.wikipedia.org/wiki/Pierre_Bonte_\(anthropologue\) "Pierre Bonte \(anthropologue\)"), [Édouard Conte](https://fr.wikipedia.org/wiki/%C3%89douard_Conte "Édouard Conte") et Paul Dresch, Émirs et présidents: figures de la parenté et du politique dans le monde arabe, Paris, [CNRS Éditions](https://fr.wikipedia.org/wiki/CNRS_%C3%89ditions "CNRS Éditions"), 2001 ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2271058256](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2271058256 "Spécial:Ouvrages de référence/978-2271058256"), [lire en ligne](https://books.openedition.org/editionscnrs/4362) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.openedition.org%2Feditionscnrs%2F4362 "archive sur Wikiwix")]), p.247-271.
+  296. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-298 "Revenir plus haut") «[La Tunisie possède la population la plus vieille d'Afrique!](https://web.archive.org/web/20140913194849/http://www.huffpostmaghreb.com/2014/09/12/age-median-tunisie-monde_n_5805238.html)», sur _[HuffPost Maghreb](https://fr.wikipedia.org/wiki/HuffPost_Maghreb "HuffPost Maghreb")_ , 12 septembre 2014 (version du 13 septembre 2014 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  297. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-299 "Revenir plus haut") «[Répartition de la communauté tunisienne à l'étranger (2012)](http://ote.nat.tn/wp-content/uploads/2018/05/Repartition_de_la_communaute_tunisienne_a_l_etranger__2012.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fote.nat.tn%2Fwp-content%2Fuploads%2F2018%2F05%2FRepartition_de_la_communaute_tunisienne_a_l_etranger__2012.pdf "archive sur Wikiwix")]» [PDF], sur ote.nat.tn (consulté le 18 janvier 2019).
+  298. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-300 "Revenir plus haut") «Dans l'impasse en Tunisie, de plus en plus de migrants rapatriés dans leur pays d'origine», _[Le Monde](https://fr.wikipedia.org/wiki/Le_Monde "Le Monde")_ ,‎ 27 juin 2024 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0395-2037](https://portal.issn.org/resource/ISSN/0395-2037), [lire en ligne](https://www.lemonde.fr/afrique/article/2024/06/27/dans-l-impasse-en-tunisie-de-plus-en-plus-de-migrants-rapatries-dans-leur-pays-d-origine_6244764_3212.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lemonde.fr%2Fafrique%2Farticle%2F2024%2F06%2F27%2Fdans-l-impasse-en-tunisie-de-plus-en-plus-de-migrants-rapatries-dans-leur-pays-d-origine_6244764_3212.html "archive sur Wikiwix")], consulté le 30 juin 2024).
+  299. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-301 "Revenir plus haut") «[Recensement général de la population et de l'habitat 2014](http://beta.ins.tn/sites/default/files/publication/pdf/RGPH-national-cract-popul-CD%20%281%29.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fbeta.ins.tn%2Fsites%2Fdefault%2Ffiles%2Fpublication%2Fpdf%2FRGPH-national-cract-popul-CD%2520%25281%2529.pdf "archive sur Wikiwix")]» [PDF], sur beta.ins.tn (consulté le 18 janvier 2019).
+  300. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-encarta2_302-0 "Revenir plus haut") «[Tunisie](https://web.archive.org/web/20090209214212/http://fr.encarta.msn.com/encyclopedia_761568505_2/Tunisie.html)», sur _[Encarta](https://fr.wikipedia.org/wiki/Encarta "Encarta")_ (version du 9 février 2009 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  301. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-303 "Revenir plus haut") [vidéo]«[ _Ibadites de Djerba: l'autre islam tunisien_ , film de Agnès De Féo, Sasana Productions, 2015](https://www.youtube.com/watch?v=OOGEtqjyM54) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOOGEtqjyM54 "archive sur Wikiwix")]», sur [YouTube](https://fr.wikipedia.org/wiki/YouTube "YouTube").
+  302. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-304 "Revenir plus haut") Jamel Arfaoui, «[La tolérance religieuse fleurit sur l'île tunisienne de Djerba](https://web.archive.org/web/20101126092111/http://www.magharebia.com/cocoon/awi/xhtml1/fr/features/awi/reportage/2008/06/06/reportage-01)», sur _magharebia.com_ , 6 juin 2008 (version du 26 novembre 2010 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  303. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-305 "Revenir plus haut") Mourad Sellami, «[La tolérance religieuse en Tunisie](http://www.unmondelibre.org/node/304?q=node/415) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.unmondelibre.org%2Fnode%2F304%3Fq%3Dnode%2F415 "archive sur Wikiwix")]», sur unmondelibre.org, 28 avril 2008 (consulté le 18 janvier 2019).
+  304. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-306 "Revenir plus haut") [Sebag 1991](https://fr.wikipedia.org/wiki/Tunisie#Sebag1991), p.12.
+  305. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-307 "Revenir plus haut") Carmel Camilleri, «Famille et modernité en Tunisie», _[Revue tunisienne de sciences sociales](https://fr.wikipedia.org/wiki/Revue_tunisienne_de_sciences_sociales "Revue tunisienne de sciences sociales")_ , no11,‎ 1967 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0035-4333](https://portal.issn.org/resource/ISSN/0035-4333)).
+  306. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-Laval_308-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-Laval_308-1) «[Tunisie](https://web.archive.org/web/20110607145000/http://www.tlfq.ulaval.ca/AXL/AFRIQUE/tunisie.htm)», sur _tlfq.ulaval.ca_ (version du 7 juin 2011 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  307. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-309 "Revenir plus haut") [Taïeb Baccouche](https://fr.wikipedia.org/wiki/Ta%C3%AFeb_Baccouche "Taïeb Baccouche") (préf.[André Martinet](https://fr.wikipedia.org/wiki/Andr%C3%A9_Martinet "André Martinet")), Travaux de phonologie: parlers de Djemmal, Gabès, Mahdia (Tunisie) et Tréviso (Italie), Tunis, [Centre d'études et de recherches économiques et sociales](https://fr.wikipedia.org/wiki/Centre_d'%C3%A9tudes_et_de_recherches_%C3%A9conomiques_et_sociales "Centre d'études et de recherches économiques et sociales"), 1969, 157p.
+  308. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-310 "Revenir plus haut") Juliette Garmadi-Le Cloirec, «Remarques sur la syntaxe du français de Tunisie», _Langue française_ , vol.68,‎ 1977, p.86 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0023-8368](https://portal.issn.org/resource/ISSN/0023-8368), [lire en ligne](http://www.persee.fr/showPage.do?luceneQuery=%28tunisie%29+AND+%28indexable_type%3Aarticlepage%3F%29&words=tunisie&words=articlepage&urn=lfr_0023-8368_1977_num_35_1_4828) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.persee.fr%2FshowPage.do%3FluceneQuery%3D%2528tunisie%2529%2BAND%2B%2528indexable_type%253Aarticlepage%253F%2529%26words%3Dtunisie%26words%3Darticlepage%26urn%3Dlfr_0023-8368_1977_num_35_1_4828 "archive sur Wikiwix")], consulté le 18 janvier 2019).
+  309. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-311 "Revenir plus haut") (en) Albert J. Borg et Marie Azzopardi-Alexander, Maltese, New York, [Routledge](https://fr.wikipedia.org/wiki/Routledge "Routledge"), 1996, 395p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0415022439](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0415022439 "Spécial:Ouvrages de référence/978-0415022439"), [lire en ligne](https://books.google.com/books?id=tYf-fZ-izycC&printsec=frontcover) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DtYf-fZ-izycC%26printsec%3Dfrontcover "archive sur Wikiwix")]), p.XIII.
+  310. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ghorbal27_312-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ghorbal27_312-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ghorbal27_312-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ghorbal27_312-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-ghorbal27_312-4) Samy Ghorbal, «Le français a-t-il encore un avenir?», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 27 avril 2008 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/64446/societe/le-fran-ais-a-t-il-encore-un-avenir/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F64446%2Fsociete%2Fle-fran-ais-a-t-il-encore-un-avenir%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  311. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-313 "Revenir plus haut") «[Tunisie](http://www.francophonie.org/Tunisie.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.francophonie.org%2FTunisie.html "archive sur Wikiwix")]», sur francophonie.org (consulté le 18 janvier 2019).
+  312. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-314 "Revenir plus haut") «[Collectivités adhérentes et associations nationales de régions](http://www.regions-francophones.com/telechargements/collectivites-adh.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.regions-francophones.com%2Ftelechargements%2Fcollectivites-adh.pdf "archive sur Wikiwix")]» [PDF], sur regions-francophones.com (consulté le 18 janvier 2019).
+  313. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-315 "Revenir plus haut") Christian Valantin (dir.), La Francophonie dans le monde: 2006-2007, Paris, [Nathan](https://fr.wikipedia.org/wiki/Nathan_\(maison_d'%C3%A9dition\) "Nathan \(maison d'édition\)"), 2007, 320p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2098821774](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2098821774 "Spécial:Ouvrages de référence/978-2098821774"), [lire en ligne](http://www.francophonie.org/IMG/pdf/La_francophonie_dans_le_monde_2006-2007.pdf) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.francophonie.org%2FIMG%2Fpdf%2FLa_francophonie_dans_le_monde_2006-2007.pdf "archive sur Wikiwix")]), p.16.
+  314. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-316 "Revenir plus haut") (ar) «[القنوات الإذاعية العمومية](https://haica.tn/ar/%D8%A7%D9%84%D8%A5%D8%B0%D8%A7%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%85%D9%8A%D8%A9/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fhaica.tn%2Far%2F%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B0%25D8%25A7%25D8%25B9%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D8%25B9%25D9%2585%25D9%2588%25D9%2585%25D9%258A%25D8%25A9%2F "archive sur Wikiwix")]» [«Stations de radio publiques»], sur [Haute Autorité indépendante de la communication audiovisuelle](https://fr.wikipedia.org/wiki/Haute_Autorit%C3%A9_ind%C3%A9pendante_de_la_communication_audiovisuelle "Haute Autorité indépendante de la communication audiovisuelle") (consulté le 28 février 2026).
+  315. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-317 "Revenir plus haut") (ar) «[القنوات الإذاعية الخاصة](https://haica.tn/ar/%D8%A7%D9%84%D8%A5%D8%B0%D8%A7%D8%B9%D8%A7%D8%AA/%D8%A7%D9%84%D9%82%D9%86%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B0%D8%A7%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fhaica.tn%2Far%2F%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B0%25D8%25A7%25D8%25B9%25D8%25A7%25D8%25AA%2F%25D8%25A7%25D9%2584%25D9%2582%25D9%2586%25D9%2588%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B0%25D8%25A7%25D8%25B9%25D9%258A%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25AE%25D8%25A7%25D8%25B5%25D8%25A9%2F "archive sur Wikiwix")]» [«Stations de radio privées»], sur [Haute Autorité indépendante de la communication audiovisuelle](https://fr.wikipedia.org/wiki/Haute_Autorit%C3%A9_ind%C3%A9pendante_de_la_communication_audiovisuelle "Haute Autorité indépendante de la communication audiovisuelle") (consulté le 28 février 2026).
+  316. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-318 "Revenir plus haut") «[Tunisie – 111 partis autorisés et 162 autres refusés!](http://www.businessnews.com.tn/details_article.php?t=520&a=26705&temp=1&lang=) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.businessnews.com.tn%2Fdetails_article.php%3Ft%3D520%26a%3D26705%26temp%3D1%26lang%3D "archive sur Wikiwix")]», sur businessnews.com.tn, 20 septembre 2011 (consulté le 18 janvier 2019).
+  317. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-loiedu_319-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-loiedu_319-1) «[Loi d'orientation de l'éducation et de l'enseignement scolaire](https://web.archive.org/web/20140428173938/http://planipolis.iiep.unesco.org/upload/Tunisia/Tunisia%20Loi%20orientation.pdf)» [PDF], sur _planipolis.iiep.unesco.org_ (version du 28 avril 2014 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  318. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-syst_320-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-syst_320-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-syst_320-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-syst_320-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-syst_320-4) «[Accompagnement d'un élève non francophone: le système éducatif tunisien](https://web.archive.org/web/20120306064101/http://www.ac-nancy-metz.fr/casnav/primo/primo_systun.htm)», sur _ac-nancy-metz.fr_ (version du 6 mars 2012 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  319. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-321 "Revenir plus haut") C'est en 1996 qu'est prise la décision que l'élève doit effectuer au moins neuf ans d'enseignement avant de pouvoir quitter le système scolaire.
+  320. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-322 "Revenir plus haut") Samir Gharbi, «Réformes en terrain sensible», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 21 septembre 2008 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/212915/archives-thematique/r-formes-en-terrain-sensible/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F212915%2Farchives-thematique%2Fr-formes-en-terrain-sensible%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  321. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-323 "Revenir plus haut") Noah Yarrow, «[L'éducation en Tunisie: la technologie, un outil pour améliorer l'école](https://blogs.worldbank.org/fr/arabvoices/tunisia-technology-support-school-improvement) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fblogs.worldbank.org%2Ffr%2Farabvoices%2Ftunisia-technology-support-school-improvement "archive sur Wikiwix")]», sur blogs.worldbank.org, 24 octobre 2017 (consulté le 16 septembre 2021).
+  322. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-324 "Revenir plus haut") Camille Lafrance, «Coronavirus: le cri d'alarme des médecins tunisiens», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 25 septembre 2020 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/1049659/societe/coronavirus-le-cri-dalarme-des-medecins-tunisiens/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F1049659%2Fsociete%2Fcoronavirus-le-cri-dalarme-des-medecins-tunisiens%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  323. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-325 "Revenir plus haut") Nehed Jendoubi, «Tunisie: le nombre de cas de Covid-19 explose depuis le début du ramadan», _[Jeune Afrique](https://fr.wikipedia.org/wiki/Jeune_Afrique "Jeune Afrique")_ ,‎ 23 avril 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1950-1285](https://portal.issn.org/resource/ISSN/1950-1285), [lire en ligne](https://www.jeuneafrique.com/1159863/societe/tunisie-le-nombre-de-cas-de-covid-19-explose-depuis-le-debut-du-ramadan/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.jeuneafrique.com%2F1159863%2Fsociete%2Ftunisie-le-nombre-de-cas-de-covid-19-explose-depuis-le-debut-du-ramadan%2F "archive sur Wikiwix")], consulté le 1er octobre 2021).
+  324. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-10great_326-5) (en) Joseph Fahim, «[10 great Tunisian films](https://www.bfi.org.uk/lists/10-great-tunisian-films) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.bfi.org.uk%2Flists%2F10-great-tunisian-films "archive sur Wikiwix")]», sur [British Film Institute](https://fr.wikipedia.org/wiki/British_Film_Institute "British Film Institute"), 18 mai 2023 (consulté le 28 février 2026).
+  325. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-327 "Revenir plus haut") «[ _Les Silences du palais_](https://www.festival-cannes.com/en/f/les-silences-du-palais/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.festival-cannes.com%2Fen%2Ff%2Fles-silences-du-palais%2F "archive sur Wikiwix")]», sur [Festival de Cannes](https://fr.wikipedia.org/wiki/Festival_de_Cannes "Festival de Cannes") (consulté le 28 février 2026).
+  326. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-328 "Revenir plus haut") (en) «[Prizes of the International Jury 2016](https://www.berlinale.de/en/archive-selection/archive-2016/prizes-and-awards_2016.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.berlinale.de%2Fen%2Farchive-selection%2Farchive-2016%2Fprizes-and-awards_2016.html "archive sur Wikiwix")]», sur [Berlinale](https://fr.wikipedia.org/wiki/Berlinale "Berlinale") (consulté le 28 février 2026).
+  327. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-329 "Revenir plus haut") (en) Jill Serjeant, «[Tunisia makes Oscars history with 'The Man Who Sold His Skin' nomination](https://www.reuters.com/article/us-oscars-tunisia-idUSKBN2B72HV) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.reuters.com%2Farticle%2Fus-oscars-tunisia-idUSKBN2B72HV "archive sur Wikiwix")]», sur [Reuters](https://fr.wikipedia.org/wiki/Reuters "Reuters"), 15 mars 2021 (consulté le 28 février 2026).
+  328. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-330 "Revenir plus haut") (en) «[ _Four Daughters_ – Festival de Cannes 2023 Official Selection](https://www.festival-cannes.com/en/f/four-daughters/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.festival-cannes.com%2Fen%2Ff%2Ffour-daughters%2F "archive sur Wikiwix")]», sur [Festival de Cannes](https://fr.wikipedia.org/wiki/Festival_de_Cannes "Festival de Cannes") (consulté le 28 février 2026).
+  329. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-331 "Revenir plus haut") (en) Jake Coyle, «[Oscar nominations 2024: ‘Four Daughters' earns documentary nod](https://apnews.com/article/oscar-nominations-2024-documentary-four-daughters) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fapnews.com%2Farticle%2Foscar-nominations-2024-documentary-four-daughters "archive sur Wikiwix")]», sur [Associated Press](https://fr.wikipedia.org/wiki/Associated_Press "Associated Press"), 23 janvier 2024 (consulté le 28 février 2026).
+  330. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-th%C3%A9%C3%A2tre_municipal_332-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-th%C3%A9%C3%A2tre_municipal_332-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-th%C3%A9%C3%A2tre_municipal_332-2) «[Théâtre municipal de Tunis](https://web.archive.org/web/20070622073359/http://www.saisonstunisiennes.com/culture.html)», sur _saisonstunisiennes.com_ (version du 22 juin 2007 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  331. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-333 "Revenir plus haut") [Saïd 1970](https://fr.wikipedia.org/wiki/Tunisie#Sa%C3%AFd1970), p.53.
+  332. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-334 "Revenir plus haut") [Saïd 1970](https://fr.wikipedia.org/wiki/Tunisie#Sa%C3%AFd1970), p.47.
+  333. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quatri%C3%A8me_art_335-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-quatri%C3%A8me_art_335-1) «[Quatrième art](https://web.archive.org/web/20080519154110/http://www.saisonstunisiennes.com/culture_txt2.html)», sur _saisonstunisiennes.com_ (version du 19 mai 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  334. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-el_t%C3%A9atro_336-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-el_t%C3%A9atro_336-1) «[Théâtre municipal de Tunis](https://web.archive.org/web/20110715225826/http://www.saisonstunisiennes.com/culture.html)», sur _saisonstunisiennes.com_ (version du 15 juillet 2011 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  335. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-tangka3_337-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-tangka3_337-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-tangka3_337-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-tangka3_337-3) «[Art et culture : un pays pour les peintres](https://web.archive.org/web/20110125001359/http://guides.tangka.com/tunisie/Chapt8Sub1.htm)», sur _guides.tangka.com_ (version du 25 janvier 2011 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  336. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-litt%C3%A9rature_338-0 "Revenir plus haut") «[Le livre culturel](https://web.archive.org/web/20090823021316/http://www.culture.tn/culture/HTML/pagedentree/livre.htm)», sur _culture.tn_ (version du 23 août 2009 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  337. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-339 "Revenir plus haut") «[Guellala (île de Djerba)](https://web.archive.org/web/20080408172243/http://fr.encarta.msn.com/media_102686838_761568505_-1_1/Guellala_\(%C3%AEle_de_Djerba\).html)», sur _[Encarta](https://fr.wikipedia.org/wiki/Encarta "Encarta")_ (version du 8 avril 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  338. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-340 "Revenir plus haut") Tunisie, Paris, [Michelin](https://fr.wikipedia.org/wiki/Michelin "Michelin"), 2005, 352p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2067109766](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2067109766 "Spécial:Ouvrages de référence/978-2067109766")), p.293.
+  339. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-poterie_341-0 "Revenir plus haut") «[Portail national de l'artisanat tunisien](https://web.archive.org/web/20080330022713/http://www.artisanat.nat.tn/site/fr/article.php?id_article=41)», sur _artisanat.nat.tn_ (version du 30 mars 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  340. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-342 "Revenir plus haut") «[Quand les portes cloutées de Tunis racontent l'Histoire la Tunisie](https://www.leaders.com.tn/article/28225-la-tunisie-archeologique) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.leaders.com.tn%2Farticle%2F28225-la-tunisie-archeologique "archive sur Wikiwix")]», sur [Leaders](https://fr.wikipedia.org/wiki/Leaders_\(Tunisie\) "Leaders \(Tunisie\)"), 19 octobre 2019 (consulté le 28 février 2026).
+  341. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-343 "Revenir plus haut") Fatma Zaghouani, «Tapis kairouanais: la relance grâce à la dynamique touristique», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 24 janvier 2026 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2026/01/24/tapis-kairouanais-la-relance-grace-a-la-dynamique-touristique/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2026%2F01%2F24%2Ftapis-kairouanais-la-relance-grace-a-la-dynamique-touristique%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  342. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-344 "Revenir plus haut") (en) [Aïcha Ben Abed Ben Khader](https://fr.wikipedia.org/wiki/A%C3%AFcha_Ben_Abed "Aïcha Ben Abed"), Tunisian mosaics: treasures from Roman Africa, Los Angeles, [Getty Conservation Institute](https://fr.wikipedia.org/wiki/Getty_Conservation_Institute "Getty Conservation Institute"), 2006, 138p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0892368570](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0892368570 "Spécial:Ouvrages de référence/978-0892368570")).
+  343. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-costume_345-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-costume_345-1) «[Costume traditionnel](https://web.archive.org/web/20080216170742/http://www.artisanat.nat.tn/site/fr/article.php?id_article=36)», sur _artisanat.nat.tn_ (version du 16 février 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  344. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cuir_346-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cuir_346-1) «[Portail national de l'artisanat tunisien](https://web.archive.org/web/20080330022655/http://www.artisanat.nat.tn/site/fr/article.php?id_article=37)», sur _artisanat.nat.tn_ (version du 30 mars 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  345. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-347 "Revenir plus haut") Pierre-Yves Mercier, Vincent Noyoux et [Fawzia Zouari](https://fr.wikipedia.org/wiki/Fawzia_Zouari "Fawzia Zouari"), GEOGuide Tunisie, Paris, Gallimard Loisirs, 2010, 408p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2742426379](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2742426379 "Spécial:Ouvrages de référence/978-2742426379")), p.407.
+  346. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-349 "Revenir plus haut") «[Jasmin d'hiver](http://www.aujardin.info/plantes/jasmin_hiver.php) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.aujardin.info%2Fplantes%2Fjasmin_hiver.php "archive sur Wikiwix")]», sur aujardin.info (consulté le 18 janvier 2019).
+  347. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-festival_350-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-festival_350-1) «Festivals d'été en Tunisie: c'est l'heure du choix», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 13 juin 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2025/06/13/festivals-dete-en-tunisie-cest-lheure-du-choix/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2025%2F06%2F13%2Ffestivals-dete-en-tunisie-cest-lheure-du-choix%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  348. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-351 "Revenir plus haut") «Retour aux sources et décloisonnement des espaces», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 8 février 2019 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.turess.com/fr/lapresse/159328) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.turess.com%2Ffr%2Flapresse%2F159328 "archive sur Wikiwix")], consulté le 28 février 2026).
+  349. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-352 "Revenir plus haut") Asma Drissi, «Sicca Jazz 2026: le jazz comme boussole, Le Kef comme territoire», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 2 février 2026 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2026/02/02/sicca-jazz-2026-le-jazz-comme-boussole-le-kef-comme-territoire/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2026%2F02%2F02%2Fsicca-jazz-2026-le-jazz-comme-boussole-le-kef-comme-territoire%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  350. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-353 "Revenir plus haut") «[Programme du Tabarka Jazz Festival (20 au 24 août 2019)](https://kapitalis.com/tunisie/2019/07/22/programme-du-tabarka-jazz-festival-20-au-24-aout-2019/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fkapitalis.com%2Ftunisie%2F2019%2F07%2F22%2Fprogramme-du-tabarka-jazz-festival-20-au-24-aout-2019%2F "archive sur Wikiwix")]», sur [Kapitalis](https://fr.wikipedia.org/wiki/Kapitalis "Kapitalis"), 22 juillet 2019 (consulté le 28 février 2026).
+  351. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-354 "Revenir plus haut") Meysem Marrouki, «JCC 2025: retour aux sources», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 5 décembre 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2025/12/05/jcc-2025-retour-aux-sources/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2025%2F12%2F05%2Fjcc-2025-retour-aux-sources%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  352. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-355 "Revenir plus haut") Rihab Boukhayatia, «[Les JCC ont-elles définitivement perdu leur aura?](https://nawaat.org/2025/12/25/les-jcc-ont-elles-definitivement-perdu-leur-aura/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fnawaat.org%2F2025%2F12%2F25%2Fles-jcc-ont-elles-definitivement-perdu-leur-aura%2F "archive sur Wikiwix")]», sur [Nawaat](https://fr.wikipedia.org/wiki/Nawaat "Nawaat"), 25 décembre 2025 (consulté le 28 février 2026).
+  353. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-356 "Revenir plus haut") Hafedh Trabelsi, «Douz – 57e édition du festival international du Sahara: quand la tradition devient le moteur d'une région», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 24 décembre 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2025/12/24/douz-57e-edition-du-festival-international-du-sahara-quand-la-tradition-devient-le-moteur-dune-region/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2025%2F12%2F24%2Fdouz-57e-edition-du-festival-international-du-sahara-quand-la-tradition-devient-le-moteur-dune-region%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  354. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-brion_357-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-brion_357-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-brion_357-2) Christel Brion, «Les 1 001 délices de Tunis», _[Le Nouvel Obs](https://fr.wikipedia.org/wiki/Le_Nouvel_Obs "Le Nouvel Obs")_ ,‎ 15 novembre 2020 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0029-4713](https://portal.issn.org/resource/ISSN/0029-4713), [lire en ligne](https://www.nouvelobs.com/food/20201115.OBS36107/les-1-001-delices-de-tunis.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.nouvelobs.com%2Ffood%2F20201115.OBS36107%2Fles-1-001-delices-de-tunis.html "archive sur Wikiwix")], consulté le 28 février 2026).
+  355. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-3) [5](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-4) [6](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-lahbib_358-5) Hella Lahbib, «Tunisie: entre influences et identité - La cuisine tunisienne, un art de la transformation», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 30 juin 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://fr.allafrica.com/stories/202507010117.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Ffr.allafrica.com%2Fstories%2F202507010117.html "archive sur Wikiwix")], consulté le 28 février 2026).
+  356. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-359 "Revenir plus haut") «[Situation en Tunisie](http://www.nutrition.rns.tn/alimentation/situation.htm) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.nutrition.rns.tn%2Falimentation%2Fsituation.htm "archive sur Wikiwix")]», sur nutrition.rns.tn (consulté le 18 janvier 2019).
+  357. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-360 "Revenir plus haut") Hanene Mabrouk-Hali, «[Les Tunisiens les 2e plus gros consommateurs de pâtes dans le monde, avec 16 kg/an](https://www.mangeonsbien.com/savoir-plus/le-saviez-vous/tunisiens-2e-plus-gros-consommateurs-de-pates-monde-16-kg-an/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.mangeonsbien.com%2Fsavoir-plus%2Fle-saviez-vous%2Ftunisiens-2e-plus-gros-consommateurs-de-pates-monde-16-kg-an%2F "archive sur Wikiwix")]», sur mangeonsbien.com, 25 octobre 2017 (consulté le 25 mars 2025).
+  358. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-361 "Revenir plus haut") Ridha Bergaoui, «[Tunisie: des boulangeries agréées et des boulangeries-pâtisseries pour le bonheur du citoyen](https://www.leaders.com.tn/article/35030-des-boulangeries-agreees-et-des-boulangeries-patisseries-pour-le-bonheur-du-citoyen) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.leaders.com.tn%2Farticle%2F35030-des-boulangeries-agreees-et-des-boulangeries-patisseries-pour-le-bonheur-du-citoyen "archive sur Wikiwix")]», sur [Leaders](https://fr.wikipedia.org/wiki/Leaders_\(Tunisie\) "Leaders \(Tunisie\)"), 31 juillet 2023 (consulté le 28 février 2026).
+  359. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-362 "Revenir plus haut") «[Tunisie: le pain _tabouna_ traditionnel est-il devenu aujourd'hui un luxe?](https://www.leconomistemaghrebin.com/2018/09/02/tunisie-le-pain-tabouna-traditionnel-devenu-un-luxe/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.leconomistemaghrebin.com%2F2018%2F09%2F02%2Ftunisie-le-pain-tabouna-traditionnel-devenu-un-luxe%2F "archive sur Wikiwix")]», sur leconomistemaghrebin.com, 2 septembre 2018 (consulté le 28 février 2026).
+  360. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-363 "Revenir plus haut") Abir Chemli, «La cuisine tunisienne figure au Top 3 arabe, et au Top 30 mondial», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 18 février 2026 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2026/02/18/la-cuisine-tunisienne-figure-au-top-3-arabe-et-au-top-30-mondial/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2026%2F02%2F18%2Fla-cuisine-tunisienne-figure-au-top-3-arabe-et-au-top-30-mondial%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  361. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-364 "Revenir plus haut") «À l'occasion du Mouled: le «zgougou» sur un nuage», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 22 août 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2025/08/22/a-loccasion-du-mouled-le-zgougou-sur-un-nuage/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2025%2F08%2F22%2Fa-loccasion-du-mouled-le-zgougou-sur-un-nuage%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  362. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-street_365-0 "Revenir plus haut") «Mes humeurs: le street food, un must populaire», _[La Presse de Tunisie](https://fr.wikipedia.org/wiki/La_Presse_de_Tunisie "La Presse de Tunisie")_ ,‎ 18 octobre 2025 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-9991](https://portal.issn.org/resource/ISSN/0330-9991), [lire en ligne](https://www.lapresse.tn/2025/10/18/mes-humeurs-le-street-food-un-must-populaire/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lapresse.tn%2F2025%2F10%2F18%2Fmes-humeurs-le-street-food-un-must-populaire%2F "archive sur Wikiwix")], consulté le 28 février 2026).
+  363. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-366 "Revenir plus haut") Hajer Cherni, «[Tunisie: _zlabia_ et _mkharek_ , le duo incontournable des soirées ramadanesques](https://www.aa.com.tr/fr/afrique/tunisie-zlabia-et-mkharek-le-duo-incontournable-des-soir%C3%A9es-ramadanesques-/2862105) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.aa.com.tr%2Ffr%2Fafrique%2Ftunisie-zlabia-et-mkharek-le-duo-incontournable-des-soir%25C3%25A9es-ramadanesques-%2F2862105 "archive sur Wikiwix")]», sur [Agence Anadolu](https://fr.wikipedia.org/wiki/Agence_Anadolu "Agence Anadolu"), 3 avril 2023 (consulté le 28 février 2026).
+  364. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-portail_367-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-portail_367-1) [3](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-portail_367-2) [4](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-portail_367-3) «[Statistiques du sport en Tunisie](https://web.archive.org/web/20080627012927/http://www.sport.tn/fo/fr/global.php?menu1=12)», sur _sport.tn_ (version du 27 juin 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  365. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-368 "Revenir plus haut") «[En direct du monde. En Tunisie, les défenseurs du vélo tentent d'en développer la pratique](https://www.radiofrance.fr/franceinfo/podcasts/en-direct-du-monde/en-direct-du-monde-en-tunisie-les-defenseurs-du-velo-tentent-d-en-developper-la-pratique-5348807) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.radiofrance.fr%2Ffranceinfo%2Fpodcasts%2Fen-direct-du-monde%2Fen-direct-du-monde-en-tunisie-les-defenseurs-du-velo-tentent-d-en-developper-la-pratique-5348807 "archive sur Wikiwix")]», sur [Radio France](https://fr.wikipedia.org/wiki/Radio_France "Radio France"), 4 juillet 2017 (consulté le 25 mars 2025).
+  366. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-369 "Revenir plus haut") «[Championnat du monde juniors de la FIFA, Tunisie 1977](https://fr.fifa.com/u20worldcup/archive/tunisia1977/index.html) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Ffr.fifa.com%2Fu20worldcup%2Farchive%2Ftunisia1977%2Findex.html "archive sur Wikiwix")]», sur [FIFA](https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_de_football_association "Fédération internationale de football association") (consulté le 18 janvier 2019).
+  367. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-370 "Revenir plus haut") (en) «[African Nations Cup 1965](http://www.rsssf.com/tables/65a.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.rsssf.com%2Ftables%2F65a.html "archive sur Wikiwix")]», sur [Rec.Sport.Soccer Statistics Foundation](https://fr.wikipedia.org/wiki/Rec.Sport.Soccer_Statistics_Foundation "Rec.Sport.Soccer Statistics Foundation") (consulté le 18 janvier 2019).
+  368. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-371 "Revenir plus haut") (en) «[African Nations Cup 1994](http://www.rsssf.com/tables/94a.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.rsssf.com%2Ftables%2F94a.html "archive sur Wikiwix")]», sur [Rec.Sport.Soccer Statistics Foundation](https://fr.wikipedia.org/wiki/Rec.Sport.Soccer_Statistics_Foundation "Rec.Sport.Soccer Statistics Foundation") (consulté le 18 janvier 2019).
+  369. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-372 "Revenir plus haut") (en) «[African Nations Cup 2004](http://www.rsssf.com/tables/04a.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.rsssf.com%2Ftables%2F04a.html "archive sur Wikiwix")]», sur [Rec.Sport.Soccer Statistics Foundation](https://fr.wikipedia.org/wiki/Rec.Sport.Soccer_Statistics_Foundation "Rec.Sport.Soccer Statistics Foundation") (consulté le 18 janvier 2019).
+  370. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-373 "Revenir plus haut") (en) «[Mohamed Gammoudi](https://web.archive.org/web/20080126100103/http://www.sporting-heroes.net/athletics-heroes/displayhero.asp?HeroID=1553)», sur _sporting-heroes.net_ (version du 26 janvier 2008 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  371. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-374 "Revenir plus haut") «[Judo: l'équipe nationale de Tunisie en stage à Paris](https://www.rfi.fr/fr/sports/20150410-judo-equipe-nationale-tunisie-stage-paris-jaballah) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rfi.fr%2Ffr%2Fsports%2F20150410-judo-equipe-nationale-tunisie-stage-paris-jaballah "archive sur Wikiwix")]», sur [RFI](https://fr.wikipedia.org/wiki/Radio_France_internationale "Radio France internationale"), 10 avril 2015 (consulté le 12 décembre 2021).
+  372. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-375 "Revenir plus haut") «[Jeux olympiques: le nageur tunisien Oussama Mellouli sera finalement bien à Tokyo](https://www.rfi.fr/fr/sports/20210722-jeux-olympiques-le-nageur-tunisien-oussama-mellouli-sera-finalement-bien-%C3%A0-tokyo) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rfi.fr%2Ffr%2Fsports%2F20210722-jeux-olympiques-le-nageur-tunisien-oussama-mellouli-sera-finalement-bien-%25C3%25A0-tokyo "archive sur Wikiwix")]», sur [RFI](https://fr.wikipedia.org/wiki/Radio_France_internationale "Radio France internationale"), 22 juillet 2021 (consulté le 12 décembre 2021).
+  373. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-376 "Revenir plus haut") «[Tennis: Ons Jabeur officiellement 2e mondiale](https://www.webmanagercenter.com/2022/06/26/488725/tennis-ons-jabeur-officiellement-2e-mondiale/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.webmanagercenter.com%2F2022%2F06%2F26%2F488725%2Ftennis-ons-jabeur-officiellement-2e-mondiale%2F "archive sur Wikiwix")]», sur webmanagercenter.com, 26 juin 2022 (consulté le 1er juillet 2022).
+  374. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-377 "Revenir plus haut") Genc Burimi, «[Handball/CAN 2012: les Tunisiens restent champions d'Afrique](https://www.rfi.fr/fr/sports/20120120-handball-can-2012-tunisie-reste-championne-afrique) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rfi.fr%2Ffr%2Fsports%2F20120120-handball-can-2012-tunisie-reste-championne-afrique "archive sur Wikiwix")]», sur [RFI](https://fr.wikipedia.org/wiki/Radio_France_internationale "Radio France internationale"), 20 janvier 2012 (consulté le 19 novembre 2017).
+  375. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-378 "Revenir plus haut") «[Volley: la Tunisie championne d'Afrique pour la 10e fois](https://www.rfi.fr/fr/sports/20190729-volley-ball-tunisie-championne-afrique-10e-fois-cameroun) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.rfi.fr%2Ffr%2Fsports%2F20190729-volley-ball-tunisie-championne-afrique-10e-fois-cameroun "archive sur Wikiwix")]», sur [RFI](https://fr.wikipedia.org/wiki/Radio_France_internationale "Radio France internationale"), 29 juillet 2019 (consulté le 12 décembre 2021).
+  376. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-379 "Revenir plus haut") Abdoulaye A. Sall, «Afrobasket 2021: la Tunisie sur le toit du basket-ball africain», _[Le Point](https://fr.wikipedia.org/wiki/Le_Point "Le Point")_ ,‎ 6 septembre 2021 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0242-6005](https://portal.issn.org/resource/ISSN/0242-6005), [lire en ligne](https://www.lepoint.fr/afrique/afrobasket-2021-la-tunisie-sur-le-toit-du-basket-ball-africain-06-09-2021-2441797_3826.php) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.lepoint.fr%2Fafrique%2Fafrobasket-2021-la-tunisie-sur-le-toit-du-basket-ball-africain-06-09-2021-2441797_3826.php "archive sur Wikiwix")], consulté le 17 avril 2023).
+  377. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-380 "Revenir plus haut") [Sophie Bessis](https://fr.wikipedia.org/wiki/Sophie_Bessis "Sophie Bessis"), «Le féminisme institutionnel en Tunisie», _[Clio. Histoire‚ femmes et sociétés](https://fr.wikipedia.org/wiki/Clio._Femmes,_genre,_histoire "Clio. Femmes, genre, histoire")_ , no9,‎ 1999 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[1252-7017](https://portal.issn.org/resource/ISSN/1252-7017), [lire en ligne](http://clio.revues.org/document286.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fclio.revues.org%2Fdocument286.html "archive sur Wikiwix")], consulté le 19 janvier 2019).
+  378. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-381 "Revenir plus haut") «Décret du 26 mars 2011, fixant les jours fériés donnant lieu à congé au profit du personnel de l'État, des collectivités locales et des établissements publics à caractère administratif», _[Journal officiel de la République tunisienne](https://fr.wikipedia.org/wiki/Journal_officiel_de_la_R%C3%A9publique_tunisienne "Journal officiel de la République tunisienne")_ , no21,‎ 29 mars 2011, p.389 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[0330-7921](https://portal.issn.org/resource/ISSN/0330-7921)).
+  379. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-382 "Revenir plus haut") «[Le 17 décembre, officiellement fête de la Révolution](https://www.mosaiquefm.net/fr/actualite-national-tunisie/993068/17-decembre-officiellement-fete-de-la-revolution) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.mosaiquefm.net%2Ffr%2Factualite-national-tunisie%2F993068%2F17-decembre-officiellement-fete-de-la-revolution "archive sur Wikiwix")]», sur [Mosaïque FM](https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_\(Tunisie\) "Mosaïque FM \(Tunisie\)"), 7 décembre 2021 (consulté le 26 mai 2022).
+
+
+## Liens externes
+Sur les autres projets Wikimedia:
+  * [Tunisie](https://commons.wikimedia.org/wiki/Category:Tunisia?uselang=fr), sur Wikimedia Commons
+  * [Tunisie](https://fr.wiktionary.org/wiki/Tunisie "wikt:Tunisie"), sur le Wiktionnaire
+  * [Tunisie](https://fr.wikisource.org/wiki/Cat%C3%A9gorie:Tunisie "s:Catégorie:Tunisie"), sur Wikisource
+  * [Tunisie](https://fr.wikinews.org/wiki/Page:Tunisie "n:Page:Tunisie"), sur Wikinews
+  * [Tunisie](https://fr.wikivoyage.org/wiki/Tunisie "voy:Tunisie"), sur Wikivoyage
+
+
+  * Archives conservées par[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#P485 "Voir et modifier les données sur Wikidata"): [archives nationales de Tunisie](https://fr.wikipedia.org/wiki/Archives_nationales_de_Tunisie "Archives nationales de Tunisie")
+  * Ressources relatives à la vie publique[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Nominations au _Journal officiel_](http://jorfsearch.steinertriples.ch/Q948)
+    * [Parlement du Royaume-Uni](https://beta.parliament.uk/people/N3QmLxSq)
+  * Ressources relatives à la géographie[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Marine Gazetteer](http://www.marineregions.org/gazetteer.php?p=details&id=2214)
+    * [Mindat.org](https://www.mindat.org/loc-7230.html)
+  * Ressources relatives aux beaux-arts[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Biblissima](https://data.biblissima.fr/entity/Q26878)
+    * [Grove Art Online](https://doi.org/10.1093/gao/9781884446054.article.T086545)
+  * Ressource relative au spectacle[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [_Archives suisses des arts de la scène_](https://data.performing-arts.ch/p/7452ed8f-030e-447f-9203-e4437f995686)
+  * Ressource relative au vivant[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Invasive Species Compendium](https://www.cabi.org/isc/datasheet/108584)
+  * Ressource relative à la santé[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Medical Subject Headings](https://meshb.nlm.nih.gov/record/ui?ui=D014416)
+  * Ressource relative à la bande dessinée[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [Comic Vine](https://comicvine.gamespot.com/wd/4020-56305/)
+  * Ressource relative à l'audiovisuel[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [France 24](https://www.france24.com/fr/tag/tunisie/)
+  * Ressource relative à la musique[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [MusicBrainz](https://musicbrainz.org/area/58955071-67c1-3491-8dec-48d28f824bda)
+  * Notices dans des dictionnaires ou encyclopédies généralistes[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [_Britannica_](https://www.britannica.com/place/Tunisia) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.britannica.com%2Fplace%2FTunisia "archive sur Wikiwix")]
+    * [_Brockhaus_](https://brockhaus.de/ecs/enzy/article/tunesien) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbrockhaus.de%2Fecs%2Fenzy%2Farticle%2Ftunesien "archive sur Wikiwix")]
+    * [_Den Store Danske Encyklopædi_](https://denstoredanske.lex.dk//Tunesien/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fdenstoredanske.lex.dk%2F%2FTunesien%2F "archive sur Wikiwix")]
+    * [_Dizionario di Storia_](https://www.treccani.it/enciclopedia/tunisia_\(Dizionario-di-Storia\)/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.treccani.it%2Fenciclopedia%2Ftunisia_\(Dizionario-di-Storia\)%2F "archive sur Wikiwix")]
+    * [_Enciclopedia italiana_](https://www.treccani.it/enciclopedia/tunisia_\(Enciclopedia-Italiana\)/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.treccani.it%2Fenciclopedia%2Ftunisia_\(Enciclopedia-Italiana\)%2F "archive sur Wikiwix")]
+    * [_Enciclopedia De Agostini_](http://www.sapere.it/enciclopedia/Tunis%C3%ACa.html) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.sapere.it%2Fenciclopedia%2FTunis%25C3%25ACa.html "archive sur Wikiwix")]
+    * [_Gran Enciclopèdia Catalana_](https://www.enciclopedia.cat/EC-GEC-0067912.xml) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.enciclopedia.cat%2FEC-GEC-0067912.xml "archive sur Wikiwix")]
+    * [_Hrvatska Enciklopedija_](http://www.enciklopedija.hr/Natuknica.aspx?ID=62694) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.enciklopedija.hr%2FNatuknica.aspx%3FID%3D62694 "archive sur Wikiwix")]
+    * [_Internetowa encyklopedia PWN_](https://encyklopedia.pwn.pl/haslo/;4169165) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fencyklopedia.pwn.pl%2Fhaslo%2F%3B4169165 "archive sur Wikiwix")]
+    * [_Nationalencyklopedin_](https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/tunisien) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.ne.se%2Fuppslagsverk%2Fencyklopedi%2Fl%25C3%25A5ng%2Ftunisien "archive sur Wikiwix")]
+    * [_Proleksis enciklopedija_](https://proleksis.lzmk.hr/49413) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fproleksis.lzmk.hr%2F49413 "archive sur Wikiwix")]
+    * [_Store norske leksikon_](https://snl.no/Tunisia) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fsnl.no%2FTunisia "archive sur Wikiwix")]
+    * [_Treccani_](http://www.treccani.it/enciclopedia/tunisia) [[archive](https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fwww.treccani.it%2Fenciclopedia%2Ftunisia "archive sur Wikiwix")]
+  * [Notices d'autorité](https://fr.wikipedia.org/wiki/Autorit%C3%A9_\(sciences_de_l'information\) "Autorité \(sciences de l'information\)")[![Voir et modifier les données sur Wikidata](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948?uselang=fr#identifiers "Voir et modifier les données sur Wikidata"): 
+    * [VIAF](https://viaf.org/viaf/134854386)
+    * [ISNI](https://isni.org/isni/0000000121102127)
+    * [BnF](https://catalogue.bnf.fr/ark:/12148/cb11865659f) ([données](https://data.bnf.fr/ark:/12148/cb11865659f))
+    * [IdRef](https://www.idref.fr/026402491)
+    * [LCCN](https://id.loc.gov/authorities/n79065220)
+    * [GND](https://d-nb.info/gnd/4061206-5)
+    * [Japon](https://id.ndl.go.jp/auth/ndlna/00573914)
+    * [Israël](https://www.nli.org.il/en/authorities/987007564238105171)
+    * [Suède](https://libris.kb.se/auth/159965)
+    * [Australie](http://nla.gov.au/anbd.aut-an35557955)
+    * [Norvège](https://authority.bibsys.no/authority/rest/authorities/html/2035287)
+    * [Croatie](http://katalog.nsk.hr/F/?func=direct&doc_number=000193662&local_base=nsk10)
+    * [Tchéquie](https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ge128596)
+
+  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Pays_d'Afrique "Modèle:Palette Pays d'Afrique")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Pays_d%27Afrique&action=edit) [États souverains](https://fr.wikipedia.org/wiki/Liste_des_pays_du_monde "Liste des pays du monde"), [dépendances et territoires à souveraineté spéciale](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9pendances_et_territoires_%C3%A0_souverainet%C3%A9_sp%C3%A9ciale "Liste des dépendances et territoires à souveraineté spéciale") d'[Afrique](https://fr.wikipedia.org/wiki/Afrique "Afrique")  |  
+| --- |  
+| États souverains entièrement situés en Afrique  |   
+ |  **[Afrique du Nord](https://fr.wikipedia.org/wiki/Afrique_du_Nord "Afrique du Nord")**  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Africa-countries-northern.svg/120px-Africa-countries-northern.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Africa-countries-northern.svg?uselang=fr)  | 
+  * [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+
+ |  **[Afrique de l’Ouest](https://fr.wikipedia.org/wiki/Afrique_de_l'Ouest "Afrique de l'Ouest")**  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Africa-countries-western.svg/120px-Africa-countries-western.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Africa-countries-western.svg?uselang=fr)  | 
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Burkina Faso](https://fr.wikipedia.org/wiki/Burkina_Faso "Burkina Faso")
+  * [Cap-Vert](https://fr.wikipedia.org/wiki/Cap-Vert "Cap-Vert")
+  * [Côte d’Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Ghana](https://fr.wikipedia.org/wiki/Ghana "Ghana")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Liberia](https://fr.wikipedia.org/wiki/Liberia "Liberia")
+  * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
+  * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+
+ |  
+| --- | --- | --- | --- |  
+|  **[Afrique centrale](https://fr.wikipedia.org/wiki/Afrique_centrale "Afrique centrale")**  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Africa-countries-central.svg/120px-Africa-countries-central.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Africa-countries-central.svg?uselang=fr)  | 
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [République centrafricaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_centrafricaine "République centrafricaine")
+  * [République du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_du_Congo "République du Congo")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [Guinée équatoriale](https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale "Guinée équatoriale")
+  * [Sao Tomé-et-Principe](https://fr.wikipedia.org/wiki/Sao_Tom%C3%A9-et-Principe "Sao Tomé-et-Principe")
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+
+ |  **[Afrique de l’Est](https://fr.wikipedia.org/wiki/Afrique_de_l'Est "Afrique de l'Est")**  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Africa-countries-eastern.svg/120px-Africa-countries-eastern.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Africa-countries-eastern.svg?uselang=fr)  | 
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Érythrée](https://fr.wikipedia.org/wiki/%C3%89rythr%C3%A9e "Érythrée")
+  * [Éthiopie](https://fr.wikipedia.org/wiki/%C3%89thiopie "Éthiopie")
+  * [Kenya](https://fr.wikipedia.org/wiki/Kenya "Kenya")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Seychelles](https://fr.wikipedia.org/wiki/Seychelles "Seychelles")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan du Sud](https://fr.wikipedia.org/wiki/Soudan_du_Sud "Soudan du Sud")
+  * [Tanzanie](https://fr.wikipedia.org/wiki/Tanzanie "Tanzanie")
+
+ |  
+|  **[Afrique australe](https://fr.wikipedia.org/wiki/Afrique_australe "Afrique australe")**  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Africa-countries-southern.svg/120px-Africa-countries-southern.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Africa-countries-southern.svg?uselang=fr)  | 
+  * [Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud")
+  * [Angola](https://fr.wikipedia.org/wiki/Angola "Angola")
+  * [Botswana](https://fr.wikipedia.org/wiki/Botswana "Botswana")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Lesotho](https://fr.wikipedia.org/wiki/Lesotho "Lesotho")
+  * [Madagascar](https://fr.wikipedia.org/wiki/Madagascar "Madagascar")
+  * [Malawi](https://fr.wikipedia.org/wiki/Malawi "Malawi")
+  * [Maurice](https://fr.wikipedia.org/wiki/Maurice_\(pays\) "Maurice \(pays\)")
+  * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
+  * [Namibie](https://fr.wikipedia.org/wiki/Namibie "Namibie")
+  * [Zambie](https://fr.wikipedia.org/wiki/Zambie "Zambie")
+  * [Zimbabwe](https://fr.wikipedia.org/wiki/Zimbabwe "Zimbabwe")
+
+ |  
+ |  
+| Territoires disputés  
+ou non reconnus  | 
+  * [Bir Tawil](https://fr.wikipedia.org/wiki/Bir_Tawil "Bir Tawil") ([Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte") ou [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan") suivant les interprétations)
+  * [Somaliland](https://fr.wikipedia.org/wiki/Somaliland "Somaliland")
+  * [Sahara occidental](https://fr.wikipedia.org/wiki/Sahara_occidental "Sahara occidental") (entre le [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc") et la [république arabe sahraouie démocratique](https://fr.wikipedia.org/wiki/R%C3%A9publique_arabe_sahraouie_d%C3%A9mocratique "République arabe sahraouie démocratique"))
+  * [Saillant de Wadi Halfa](https://fr.wikipedia.org/wiki/Saillant_de_Wadi_Halfa "Saillant de Wadi Halfa") (disputé entre l'[Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte") et le [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan"))
+  * [Triangle de Hala'ib](https://fr.wikipedia.org/wiki/Triangle_de_Hala'ib "Triangle de Hala'ib") (administré par l'[Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte"), contesté par le [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan"))
+
+ |  
+| [Dépendances et territoires  
+à souveraineté spéciale](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9pendances_et_territoires_%C3%A0_souverainet%C3%A9_sp%C3%A9ciale "Liste des dépendances et territoires à souveraineté spéciale")  | 
+  * [Canaries](https://fr.wikipedia.org/wiki/%C3%8Eles_Canaries "Îles Canaries")
+    * [communauté autonome d'Espagne](https://fr.wikipedia.org/wiki/Communaut%C3%A9s_autonomes_d'Espagne "Communautés autonomes d'Espagne")
+  * [Ceuta](https://fr.wikipedia.org/wiki/Ceuta "Ceuta"), [Melilla](https://fr.wikipedia.org/wiki/Melilla "Melilla") et [Plazas de soberanía](https://fr.wikipedia.org/wiki/Plazas_de_soberan%C3%ADa "Plazas de soberanía")
+    * [Espagne](https://fr.wikipedia.org/wiki/Espagne "Espagne")
+  * [Archipel des Chagos](https://fr.wikipedia.org/wiki/Archipel_des_Chagos "Archipel des Chagos")
+    * [territoire britannique de l'océan Indien](https://fr.wikipedia.org/wiki/Territoire_britannique_de_l'oc%C3%A9an_Indien "Territoire britannique de l'océan Indien")
+  * [Îles Éparses de l'océan Indien](https://fr.wikipedia.org/wiki/%C3%8Eles_%C3%89parses_de_l'oc%C3%A9an_Indien "Îles Éparses de l'océan Indien")
+    * [territoire d'outre-mer](https://fr.wikipedia.org/wiki/Territoire_d'outre-mer_\(France\) "Territoire d'outre-mer \(France\)") [français](https://fr.wikipedia.org/wiki/France "France")
+  * [Madère](https://fr.wikipedia.org/wiki/Mad%C3%A8re "Madère")
+    * région autonome du [Portugal](https://fr.wikipedia.org/wiki/Portugal "Portugal")
+  * [Mayotte](https://fr.wikipedia.org/wiki/Mayotte "Mayotte") et [La Réunion](https://fr.wikipedia.org/wiki/La_R%C3%A9union "La Réunion")
+    * [départements et régions d'outre-mer](https://fr.wikipedia.org/wiki/D%C3%A9partements_et_r%C3%A9gions_d'outre-mer "Départements et régions d'outre-mer") [français](https://fr.wikipedia.org/wiki/France "France")
+  * [Sainte-Hélène, Ascension et Tristan da Cunha](https://fr.wikipedia.org/wiki/Sainte-H%C3%A9l%C3%A8ne,_Ascension_et_Tristan_da_Cunha "Sainte-Hélène, Ascension et Tristan da Cunha")
+    * [territoire d'outre-mer](https://fr.wikipedia.org/wiki/Territoire_britannique_d'outre-mer "Territoire britannique d'outre-mer") du [Royaume-Uni](https://fr.wikipedia.org/wiki/Royaume-Uni "Royaume-Uni")
+  * [Îles Selvagens](https://fr.wikipedia.org/wiki/%C3%8Eles_Selvagens "Îles Selvagens") (dépendances de la région de [Madère](https://fr.wikipedia.org/wiki/Mad%C3%A8re "Madère"))
+
+ |  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Pays_d'Afrique_et_organisations_africaines "Modèle:Palette Pays d'Afrique et organisations africaines")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Pays_d%27Afrique_et_organisations_africaines&action=edit) [Pays](https://fr.wikipedia.org/wiki/Liste_des_pays_du_monde "Liste des pays du monde") d'[Afrique](https://fr.wikipedia.org/wiki/Afrique "Afrique") et [organisations africaines](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Organisation_africaine "Catégorie:Organisation africaine")  |  
+| --- |  
+| _Les dates correspondent aux dates de fondation des organisations_  |  
+|  [Union africaine](https://fr.wikipedia.org/wiki/Union_africaine "Union africaine") — 9 juillet 2002  
+(anc. [OUA](https://fr.wikipedia.org/wiki/Organisation_de_l'unit%C3%A9_africaine "Organisation de l'unité africaine") — 25 mai 1963)  | 55 États membres: 
+  * [Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud")
+  * [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
+  * [Angola](https://fr.wikipedia.org/wiki/Angola "Angola")
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Botswana](https://fr.wikipedia.org/wiki/Botswana "Botswana")
+  * [Burkina Faso](https://fr.wikipedia.org/wiki/Burkina_Faso "Burkina Faso")
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [Cap-Vert](https://fr.wikipedia.org/wiki/Cap-Vert "Cap-Vert")
+  * [République centrafricaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_centrafricaine "République centrafricaine")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [République du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_du_Congo "République du Congo")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+  * [Érythrée](https://fr.wikipedia.org/wiki/%C3%89rythr%C3%A9e "Érythrée")
+  * [Éthiopie](https://fr.wikipedia.org/wiki/%C3%89thiopie "Éthiopie")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Ghana](https://fr.wikipedia.org/wiki/Ghana "Ghana")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Guinée équatoriale](https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale "Guinée équatoriale")
+  * [Kenya](https://fr.wikipedia.org/wiki/Kenya "Kenya")
+  * [Lesotho](https://fr.wikipedia.org/wiki/Lesotho "Lesotho")
+  * [Liberia](https://fr.wikipedia.org/wiki/Liberia "Liberia")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [Madagascar](https://fr.wikipedia.org/wiki/Madagascar "Madagascar")
+  * [Malawi](https://fr.wikipedia.org/wiki/Malawi "Malawi")
+  * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Maurice](https://fr.wikipedia.org/wiki/Maurice_\(pays\) "Maurice \(pays\)")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
+  * [Namibie](https://fr.wikipedia.org/wiki/Namibie "Namibie")
+  * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
+  * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [République arabe sahraouie démocratique](https://fr.wikipedia.org/wiki/R%C3%A9publique_arabe_sahraouie_d%C3%A9mocratique "République arabe sahraouie démocratique")
+  * [Sao Tomé-et-Principe](https://fr.wikipedia.org/wiki/Sao_Tom%C3%A9-et-Principe "Sao Tomé-et-Principe")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Seychelles](https://fr.wikipedia.org/wiki/Seychelles "Seychelles")
+  * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
+  * [Soudan du Sud](https://fr.wikipedia.org/wiki/Soudan_du_Sud "Soudan du Sud")
+  * [Tanzanie](https://fr.wikipedia.org/wiki/Tanzanie "Tanzanie")
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+  * [Zambie](https://fr.wikipedia.org/wiki/Zambie "Zambie")
+  * [Zimbabwe](https://fr.wikipedia.org/wiki/Zimbabwe "Zimbabwe")
+
+ |  
+|  [UMA](https://fr.wikipedia.org/wiki/Union_du_Maghreb_arabe "Union du Maghreb arabe") — 17 février 1989  | 5 États membres: 
+  * [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+
+ |  
+|  [COMESA](https://fr.wikipedia.org/wiki/March%C3%A9_commun_de_l'Afrique_orientale_et_australe "Marché commun de l'Afrique orientale et australe") — _décembre 1994_  | 22 États membres: 
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+  * [Érythrée](https://fr.wikipedia.org/wiki/%C3%89rythr%C3%A9e "Érythrée")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Éthiopie](https://fr.wikipedia.org/wiki/%C3%89thiopie "Éthiopie")
+  * [Kenya](https://fr.wikipedia.org/wiki/Kenya "Kenya")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [Madagascar](https://fr.wikipedia.org/wiki/Madagascar "Madagascar")
+  * [Malawi](https://fr.wikipedia.org/wiki/Malawi "Malawi")
+  * [Maurice](https://fr.wikipedia.org/wiki/Maurice_\(pays\) "Maurice \(pays\)")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Seychelles](https://fr.wikipedia.org/wiki/Seychelles "Seychelles")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
+  * [Tanzanie](https://fr.wikipedia.org/wiki/Tanzanie "Tanzanie")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+  * [Zambie](https://fr.wikipedia.org/wiki/Zambie "Zambie")
+  * [Zimbabwe](https://fr.wikipedia.org/wiki/Zimbabwe "Zimbabwe")
+
+ |  
+|  [CEDEAO](https://fr.wikipedia.org/wiki/Communaut%C3%A9_%C3%A9conomique_des_%C3%89tats_de_l'Afrique_de_l'Ouest "Communauté économique des États de l'Afrique de l'Ouest") — _28 mai 1975_  | 15 États membres: 
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Burkina Faso](https://fr.wikipedia.org/wiki/Burkina_Faso "Burkina Faso")
+  * [Cap-Vert](https://fr.wikipedia.org/wiki/Cap-Vert "Cap-Vert")
+  * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Ghana](https://fr.wikipedia.org/wiki/Ghana "Ghana")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Liberia](https://fr.wikipedia.org/wiki/Liberia "Liberia")
+  * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
+  * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
+  * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+
+ |  
+| Zone [franc CFA](https://fr.wikipedia.org/wiki/Franc_CFA "Franc CFA")  |   
+ |  [UEMOA](https://fr.wikipedia.org/wiki/Union_%C3%A9conomique_et_mon%C3%A9taire_ouest-africaine "Union économique et monétaire ouest-africaine") — _10 janvier 1994_  | 8 États membres: 
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Burkina Faso](https://fr.wikipedia.org/wiki/Burkina_Faso "Burkina Faso")
+  * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
+  * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+
+ |  
+| --- | --- |  
+|  [CEMAC](https://fr.wikipedia.org/wiki/Communaut%C3%A9_%C3%A9conomique_et_mon%C3%A9taire_de_l'Afrique_centrale "Communauté économique et monétaire de l'Afrique centrale") — _16 mars 1994_  | 6 États membres: 
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [République centrafricaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_centrafricaine "République centrafricaine")
+  * [Guinée équatoriale](https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale "Guinée équatoriale")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [République du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_du_Congo "République du Congo")
+
+ |  
+ |  
+|  [ZMOA](https://fr.wikipedia.org/wiki/Zone_mon%C3%A9taire_ouest-africaine "Zone monétaire ouest-africaine") — _20 avril 2000_  | 6 États membres: 
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Ghana](https://fr.wikipedia.org/wiki/Ghana "Ghana")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Liberia](https://fr.wikipedia.org/wiki/Liberia "Liberia")
+  * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
+
+ |  
+|  [CEEAC](https://fr.wikipedia.org/wiki/Communaut%C3%A9_%C3%A9conomique_des_%C3%89tats_de_l'Afrique_centrale "Communauté économique des États de l'Afrique centrale") — _18 octobre 1983_  | 11 États membres: 
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [République centrafricaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_centrafricaine "République centrafricaine")
+  * [Guinée équatoriale](https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale "Guinée équatoriale")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [République du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_du_Congo "République du Congo")
+  * [Sao Tomé-et-Principe](https://fr.wikipedia.org/wiki/Sao_Tom%C3%A9-et-Principe "Sao Tomé-et-Principe")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [Angola](https://fr.wikipedia.org/wiki/Angola "Angola")
+
+ |  
+|  [CEPGL](https://fr.wikipedia.org/wiki/Communaut%C3%A9_%C3%A9conomique_des_pays_des_Grands_Lacs "Communauté économique des pays des Grands Lacs") — _20 septembre 1976_  | 3 États membres: 
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+
+ |  
+|  [IGAD](https://fr.wikipedia.org/wiki/Autorit%C3%A9_intergouvernementale_pour_le_d%C3%A9veloppement "Autorité intergouvernementale pour le développement") — _21 mars 1996_  | 7 États membres: 
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Éthiopie](https://fr.wikipedia.org/wiki/%C3%89thiopie "Éthiopie")
+  * [Kenya](https://fr.wikipedia.org/wiki/Kenya "Kenya")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
+  * [Soudan du Sud](https://fr.wikipedia.org/wiki/Soudan_du_Sud "Soudan du Sud")
+
+ |  
+|  [EAC](https://fr.wikipedia.org/wiki/Communaut%C3%A9_d'Afrique_de_l'Est "Communauté d'Afrique de l'Est") — _7 juillet 2000_  | 6 États membres: 
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [Kenya](https://fr.wikipedia.org/wiki/Kenya "Kenya")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Soudan du Sud](https://fr.wikipedia.org/wiki/Soudan_du_Sud "Soudan du Sud")
+  * [Tanzanie](https://fr.wikipedia.org/wiki/Tanzanie "Tanzanie")
+
+ |  
+|  [SADC](https://fr.wikipedia.org/wiki/Communaut%C3%A9_de_d%C3%A9veloppement_d'Afrique_australe "Communauté de développement d'Afrique australe") — _17 août 1992_  | 16 États membres: 
+  * [Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud")
+  * [Angola](https://fr.wikipedia.org/wiki/Angola "Angola")
+  * [Botswana](https://fr.wikipedia.org/wiki/Botswana "Botswana")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Lesotho](https://fr.wikipedia.org/wiki/Lesotho "Lesotho")
+  * [Madagascar](https://fr.wikipedia.org/wiki/Madagascar "Madagascar")
+  * [Malawi](https://fr.wikipedia.org/wiki/Malawi "Malawi")
+  * [Maurice](https://fr.wikipedia.org/wiki/Maurice_\(pays\) "Maurice \(pays\)")
+  * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
+  * [Namibie](https://fr.wikipedia.org/wiki/Namibie "Namibie")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [Seychelles](https://fr.wikipedia.org/wiki/Seychelles "Seychelles")
+  * [Tanzanie](https://fr.wikipedia.org/wiki/Tanzanie "Tanzanie")
+  * [Zambie](https://fr.wikipedia.org/wiki/Zambie "Zambie")
+  * [Zimbabwe](https://fr.wikipedia.org/wiki/Zimbabwe "Zimbabwe")
+
+ |  
+|  [SACU](https://fr.wikipedia.org/wiki/Union_douani%C3%A8re_d'Afrique_australe "Union douanière d'Afrique australe") — _11 décembre 1969_  | 5 États membres: 
+  * [Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud")
+  * [Botswana](https://fr.wikipedia.org/wiki/Botswana "Botswana")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Lesotho](https://fr.wikipedia.org/wiki/Lesotho "Lesotho")
+  * [Namibie](https://fr.wikipedia.org/wiki/Namibie "Namibie")
+
+ |  
+|  [CMA](https://fr.wikipedia.org/wiki/Aire_mon%C3%A9taire_commune "Aire monétaire commune") — _juillet 1986_  | 4 États membres: 
+  * [Afrique du Sud](https://fr.wikipedia.org/wiki/Afrique_du_Sud "Afrique du Sud")
+  * [Eswatini](https://fr.wikipedia.org/wiki/Eswatini "Eswatini")
+  * [Lesotho](https://fr.wikipedia.org/wiki/Lesotho "Lesotho")
+  * [Namibie](https://fr.wikipedia.org/wiki/Namibie "Namibie")
+
+ |  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Ligue_arabe "Modèle:Palette Ligue arabe")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Ligue_arabe&action=edit) [![Drapeau de la Ligue arabe](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_the_Arab_League.svg/20px-Flag_of_the_Arab_League.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_the_Arab_League.svg?uselang=fr "Drapeau de la Ligue arabe") [Ligue des États arabes](https://fr.wikipedia.org/wiki/Ligue_arabe "Ligue arabe")  |  
+| --- |  
+| Institutions  | 
+  * [Conseil](https://fr.wikipedia.org/wiki/Conseil_de_la_Ligue_arabe "Conseil de la Ligue arabe")
+  * [Parlement](https://fr.wikipedia.org/wiki/Parlement_arabe "Parlement arabe")
+  * [Conseil de défense](https://fr.wikipedia.org/wiki/Conseil_de_d%C3%A9fense_de_la_Ligue_arabe "Conseil de défense de la Ligue arabe")
+  * [Conseil économique et social](https://fr.wikipedia.org/wiki/Conseil_%C3%A9conomique_et_social_de_la_Ligue_arabe "Conseil économique et social de la Ligue arabe")
+
+ | [![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Emblem_of_the_Arab_League.svg/120px-Emblem_of_the_Arab_League.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Emblem_of_the_Arab_League.svg?uselang=fr)  |  
+| États membres  | 
+  * [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
+  * [Arabie saoudite](https://fr.wikipedia.org/wiki/Arabie_saoudite "Arabie saoudite")
+  * [Bahreïn](https://fr.wikipedia.org/wiki/Bahre%C3%AFn "Bahreïn")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+  * [Émirats arabes unis](https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis "Émirats arabes unis")
+  * [Irak](https://fr.wikipedia.org/wiki/Irak "Irak")
+  * [Jordanie](https://fr.wikipedia.org/wiki/Jordanie "Jordanie")
+  * [Koweït](https://fr.wikipedia.org/wiki/Kowe%C3%AFt "Koweït")
+  * [Liban](https://fr.wikipedia.org/wiki/Liban "Liban")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [Oman](https://fr.wikipedia.org/wiki/Oman "Oman")
+  * [Palestine](https://fr.wikipedia.org/wiki/Palestine_\(%C3%89tat\) "Palestine \(État\)")
+  * [Qatar](https://fr.wikipedia.org/wiki/Qatar "Qatar")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
+  * [Syrie](https://fr.wikipedia.org/wiki/Syrie "Syrie")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+  * [Yémen](https://fr.wikipedia.org/wiki/Y%C3%A9men "Yémen")
+
+ |  
+| Secrétaires généraux  | 
+  * [Abdul Rahman Hassan Azzam](https://fr.wikipedia.org/wiki/Abdul_Rahman_Hassan_Azzam "Abdul Rahman Hassan Azzam") (1949–1952)
+  * [Mohamed Abdul Khalek Hassouna](https://fr.wikipedia.org/wiki/Mohamed_Abdul_Khalek_Hassouna "Mohamed Abdul Khalek Hassouna") (1952–1972)
+  * [Mahmoud Riad](https://fr.wikipedia.org/wiki/Mahmoud_Riad "Mahmoud Riad") (1972–1979)
+  * [Chedli Klibi](https://fr.wikipedia.org/wiki/Chedli_Klibi "Chedli Klibi") (1979–1990)
+  * [Ahmed Asmat Abdel-Megid](https://fr.wikipedia.org/wiki/Ahmed_Asmat_Abdel-Megid "Ahmed Asmat Abdel-Megid") (1991–2001)
+  * [Amr Moussa](https://fr.wikipedia.org/wiki/Amr_Moussa "Amr Moussa") (2001–2011)
+  * [Nabil el-Arabi](https://fr.wikipedia.org/wiki/Nabil_el-Arabi "Nabil el-Arabi") (2011-2016)
+  * [Ahmed Aboul Gheit](https://fr.wikipedia.org/wiki/Ahmed_Aboul_Gheit "Ahmed Aboul Gheit") (depuis 2016)
+
+ |  
+| Sommets  | 
+  * [Premier sommet en Égypte (1946)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1946 "Sommet de la Ligue arabe de 1946")
+  * [Second sommet au Liban (1956)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1956?action=edit&redlink=1 "Sommet de la Ligue arabe de 1956 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201956%20\(%D9%84%D8%A8%D9%86%D8%A7%D9%86\) "ar:القمة العربية 1956 \(لبنان\)")
+  * [Caire (1964)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1964_au_Caire?action=edit&redlink=1 "Sommet de la Ligue arabe de 1964 au Caire \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201964%20\(%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9\) "ar:القمة العربية 1964 \(القاهرة\)")
+  * [Alexandrie (1964)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1964_en_Alexandrie?action=edit&redlink=1 "Sommet de la Ligue arabe de 1964 en Alexandrie \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D9%85%D8%A4%D8%AA%D9%85%D8%B1%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201964%20\(%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9\) "ar:مؤتمر قمة الدول العربية 1964 \(الإسكندرية\)")
+  * [Casablanca (1965)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1965?action=edit&redlink=1 "Sommet de la Ligue arabe de 1965 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201965%20\(%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1\) "ar:القمة العربية 1965 \(الدار البيضاء\)")
+  * [Khartoum (1967)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1967 "Sommet de la Ligue arabe de 1967")
+  * [Rabat (1969)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1969?action=edit&redlink=1 "Sommet de la Ligue arabe de 1969 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201969%20\(%D8%A7%D9%84%D8%B1%D8%A8%D8%A7%D8%B7\) "ar:القمة العربية 1969 \(الرباط\)")
+  * [Caire (1970)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1970 "Sommet de la Ligue arabe de 1970")
+  * [Alger (1973)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1973?action=edit&redlink=1 "Sommet de la Ligue arabe de 1973 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201973%20\(%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1\) "ar:القمة العربية 1973 \(الجزائر\)")
+  * [Rabat (1974)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1974 "Sommet de la Ligue arabe de 1974")
+  * [Riyad (1976)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1976_%C3%A0_Riyad?action=edit&redlink=1 "Sommet de la Ligue arabe de 1976 à Riyad \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201976%20\(%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6\) "ar:القمة العربية 1976 \(الرياض\)")
+  * [Caire (1976)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1976_au_Caire?action=edit&redlink=1 "Sommet de la Ligue arabe de 1976 au Caire \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201976%20\(%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9\) "ar:القمة العربية 1976 \(القاهرة\)")
+  * [Bagdad (1978)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1978?action=edit&redlink=1 "Sommet de la Ligue arabe de 1978 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201978%20\(%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF\) "ar:القمة العربية 1978 \(بغداد\)")
+  * [Tunis (1979)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1979?action=edit&redlink=1 "Sommet de la Ligue arabe de 1979 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201979%20\(%D8%AA%D9%88%D9%86%D8%B3\) "ar:القمة العربية 1979 \(تونس\)")
+  * [Amman (1980)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1980?action=edit&redlink=1 "Sommet de la Ligue arabe de 1980 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201980%20\(%D8%B9%D9%85%D8%A7%D9%86\) "ar:القمة العربية 1980 \(عمان\)")
+  * [Fès (1981)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1981?action=edit&redlink=1 "Sommet de la Ligue arabe de 1981 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201981%20\(%D9%81%D8%A7%D8%B3\) "ar:القمة العربية 1981 \(فاس\)")
+  * [Fès (1982)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1982?action=edit&redlink=1 "Sommet de la Ligue arabe de 1982 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201982 "ar:القمة العربية 1982")
+  * [Casablanca (1985)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1985?action=edit&redlink=1 "Sommet de la Ligue arabe de 1985 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201985%20\(%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1\) "ar:القمة العربية 1985 \(الدار البيضاء\)")
+  * [Amman (1987)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1987?action=edit&redlink=1 "Sommet de la Ligue arabe de 1987 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201987%20\(%D8%B9%D9%85%D8%A7%D9%86\) "ar:القمة العربية 1987 \(عمان\)")
+  * [Alger (1988)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1988?action=edit&redlink=1 "Sommet de la Ligue arabe de 1988 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201988%20\(%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1\) "ar:القمة العربية 1988 \(الجزائر\)")
+  * [Casablanca (1989)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1989?action=edit&redlink=1 "Sommet de la Ligue arabe de 1989 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201989%20\(%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1\) "ar:القمة العربية 1989 \(الدار البيضاء\)")
+  * [Bagdad (1990)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1990_%C3%A0_Bagdad?action=edit&redlink=1 "Sommet de la Ligue arabe de 1990 à Bagdad \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201990%20\(%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF\) "ar:القمة العربية 1990 \(بغداد\)")
+  * [Caire (1990)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1990_au_Caire?action=edit&redlink=1 "Sommet de la Ligue arabe de 1990 au Caire \(page inexistante\)")
+  * [Caire (1996)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_1996?action=edit&redlink=1 "Sommet de la Ligue arabe de 1996 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%201996 "ar:القمة العربية 1996")
+  * [Caire (2000)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2000?action=edit&redlink=1 "Sommet de la Ligue arabe de 2000 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202000 "ar:القمة العربية 2000")
+  * [Amman (2001)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2001?action=edit&redlink=1 "Sommet de la Ligue arabe de 2001 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202001%20\(%D8%B9%D9%85%D8%A7%D9%86\) "ar:القمة العربية 2001 \(عمان\)")
+  * [Beyrouth (2002)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2002 "Sommet de la Ligue arabe de 2002")
+  * [Charm el-Cheikh (2003)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2003 "Sommet de la Ligue arabe de 2003")
+  * [Tunis (2004)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2004?action=edit&redlink=1 "Sommet de la Ligue arabe de 2004 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202004%20\(%D8%AA%D9%88%D9%86%D8%B3\) "ar:القمة العربية 2004 \(تونس\)")
+  * [Alger (2005)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2005 "Sommet de la Ligue arabe de 2005")
+  * [Khartoum (2006)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2006?action=edit&redlink=1 "Sommet de la Ligue arabe de 2006 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202006%20\(%D8%A7%D9%84%D8%AE%D8%B1%D8%B7%D9%88%D9%85\) "ar:القمة العربية 2006 \(الخرطوم\)")
+  * [Riyad (2007)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2007?action=edit&redlink=1 "Sommet de la Ligue arabe de 2007 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202007%20\(%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6\) "ar:القمة العربية 2007 \(الرياض\)")
+  * [Damas (2008)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2008?action=edit&redlink=1 "Sommet de la Ligue arabe de 2008 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202008%20\(%D8%AF%D9%85%D8%B4%D9%82\) "ar:القمة العربية 2008 \(دمشق\)")
+  * [Doha (2009)](https://fr.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_2009_\(%D8%A7%D9%84%D8%AF%D9%88%D8%AD%D8%A9\)-fr=Sommet_de_la_Ligue_arabe_de_2009?action=edit&redlink=1 "القمة العربية 2009 \(الدوحة\)-fr=Sommet de la Ligue arabe de 2009 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202009%20\(%D8%A7%D9%84%D8%AF%D9%88%D8%AD%D8%A9\)-fr=Sommet%20de%20la%20Ligue%20arabe%20de%202009 "ar:القمة العربية 2009 \(الدوحة\)-fr=Sommet de la Ligue arabe de 2009")
+  * [Syrte (2010)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2010?action=edit&redlink=1 "Sommet de la Ligue arabe de 2010 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202010%20\(%D8%B3%D8%B1%D8%AA\) "ar:القمة العربية 2010 \(سرت\)")
+  * [Bagdad (2012)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2012?action=edit&redlink=1 "Sommet de la Ligue arabe de 2012 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202012%20\(%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF\) "ar:القمة العربية 2012 \(بغداد\)")
+  * [Doha (2013)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2013 "Sommet de la Ligue arabe de 2013")
+  * [Koweït (2014)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2014 "Sommet de la Ligue arabe de 2014")
+  * [Charm el-Cheikh (2015)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2015 "Sommet de la Ligue arabe de 2015")
+  * [Nouakchott (2016)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2016 "Sommet de la Ligue arabe de 2016")
+  * [Mer Morte (2017)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2017 "Sommet de la Ligue arabe de 2017")
+  * [Dhahran (2018)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2018 "Sommet de la Ligue arabe de 2018")
+  * [Tunis (2019)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2019 "Sommet de la Ligue arabe de 2019")
+  * [La Mecque (2019)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2019_%C3%A0_la_Mecque?action=edit&redlink=1 "Sommet de la Ligue arabe de 2019 à la Mecque \(page inexistante\)")
+  * [Alger (2022)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2022 "Sommet de la Ligue arabe de 2022")
+  * [Djeddah (2023)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2023 "Sommet de la Ligue arabe de 2023")
+  * [Riyad (2023)](https://fr.wikipedia.org/wiki/Sommet_extraordinaire_arabo-islamique_de_2023 "Sommet extraordinaire arabo-islamique de 2023")
+  * [Bahreïn (2024)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2024?action=edit&redlink=1 "Sommet de la Ligue arabe de 2024 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202024 "ar:القمة العربية 2024")
+  * [Bagdad (2025)](https://fr.wikipedia.org/wiki/Sommet_de_la_Ligue_arabe_de_2025?action=edit&redlink=1 "Sommet de la Ligue arabe de 2025 \(page inexistante\)") [(ar)](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%202025 "ar:القمة العربية 2025")
+
+ |  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Organisation_de_la_coop%C3%A9ration_islamique "Modèle:Palette Organisation de la coopération islamique")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Organisation_de_la_coop%C3%A9ration_islamique&action=edit) [Organisation de la coopération islamique](https://fr.wikipedia.org/wiki/Organisation_de_la_coop%C3%A9ration_islamique "Organisation de la coopération islamique")  |  
+| --- |  
+| États membres  | 
+  * [Afghanistan](https://fr.wikipedia.org/wiki/Afghanistan "Afghanistan")
+  * [Albanie](https://fr.wikipedia.org/wiki/Albanie "Albanie")
+  * [Arabie saoudite](https://fr.wikipedia.org/wiki/Arabie_saoudite "Arabie saoudite")
+  * [Azerbaïdjan](https://fr.wikipedia.org/wiki/Azerba%C3%AFdjan "Azerbaïdjan")
+  * [Bangladesh](https://fr.wikipedia.org/wiki/Bangladesh "Bangladesh")
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Brunei](https://fr.wikipedia.org/wiki/Brunei "Brunei")
+  * [Burkina Faso](https://fr.wikipedia.org/wiki/Burkina_Faso "Burkina Faso")
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Émirats arabes unis](https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis "Émirats arabes unis")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Guyana](https://fr.wikipedia.org/wiki/Guyana "Guyana")
+  * [Indonésie](https://fr.wikipedia.org/wiki/Indon%C3%A9sie "Indonésie")
+  * [Iran](https://fr.wikipedia.org/wiki/Iran "Iran")
+  * [Kazakhstan](https://fr.wikipedia.org/wiki/Kazakhstan "Kazakhstan")
+  * [Kirghizistan](https://fr.wikipedia.org/wiki/Kirghizistan "Kirghizistan")
+  * [Malaisie](https://fr.wikipedia.org/wiki/Malaisie "Malaisie")
+  * [Maldives](https://fr.wikipedia.org/wiki/Maldives "Maldives")
+  * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
+  * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
+  * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
+  * [Ouzbékistan](https://fr.wikipedia.org/wiki/Ouzb%C3%A9kistan "Ouzbékistan")
+  * [Pakistan](https://fr.wikipedia.org/wiki/Pakistan "Pakistan")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
+  * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Suriname](https://fr.wikipedia.org/wiki/Suriname "Suriname")
+  * [Tadjikistan](https://fr.wikipedia.org/wiki/Tadjikistan "Tadjikistan")
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+  * [Turkménistan](https://fr.wikipedia.org/wiki/Turkm%C3%A9nistan "Turkménistan")
+  * [Turquie](https://fr.wikipedia.org/wiki/Turquie "Turquie")
+
+ | [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/OIC_Logo_since_2011.svg/250px-OIC_Logo_since_2011.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:OIC_Logo_since_2011.svg?uselang=fr)  |  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole "Modèle:Palette Organisation des pays arabes exportateurs de pétrole")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole&action=edit) [Organisation des pays arabes exportateurs de pétrole](https://fr.wikipedia.org/wiki/Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole "Organisation des pays arabes exportateurs de pétrole")  |  
+| --- |  
+| Pays membres  | 
+  * [![Drapeau de l'Arabie saoudite](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/20px-Flag_of_Saudi_Arabia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg?uselang=fr "Drapeau de l'Arabie saoudite") [Arabie saoudite](https://fr.wikipedia.org/wiki/Arabie_saoudite "Arabie saoudite")
+  * [![Drapeau du Koweït](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/20px-Flag_of_Kuwait.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Kuwait.svg?uselang=fr "Drapeau du Koweït") [Koweït](https://fr.wikipedia.org/wiki/Kowe%C3%AFt "Koweït")
+  * [![Drapeau de la Libye](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Libya.svg/20px-Flag_of_Libya.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Libya.svg?uselang=fr "Drapeau de la Libye") [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
+  * [![Drapeau de l'Algérie](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/20px-Flag_of_Algeria.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg?uselang=fr "Drapeau de l'Algérie") [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
+  * [![Drapeau de Bahreïn](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/20px-Flag_of_Bahrain.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Bahrain.svg?uselang=fr "Drapeau de Bahreïn") [Bahreïn](https://fr.wikipedia.org/wiki/Bahre%C3%AFn "Bahreïn")
+  * [![Drapeau des Émirats arabes unis](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/20px-Flag_of_the_United_Arab_Emirates.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Arab_Emirates.svg?uselang=fr "Drapeau des Émirats arabes unis") [Émirats arabes unis](https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis "Émirats arabes unis")
+  * [![Drapeau du Qatar](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/20px-Flag_of_Qatar.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Qatar.svg?uselang=fr "Drapeau du Qatar") [Qatar](https://fr.wikipedia.org/wiki/Qatar "Qatar")
+  * [![Drapeau de l'Irak](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/20px-Flag_of_Iraq.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Iraq.svg?uselang=fr "Drapeau de l'Irak") [Irak](https://fr.wikipedia.org/wiki/Irak "Irak")
+  * [![Drapeau de la Syrie](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Syria_%282025-%29.svg/20px-Flag_of_Syria_%282025-%29.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Syria_\(2025-\).svg?uselang=fr "Drapeau de la Syrie") [Syrie](https://fr.wikipedia.org/wiki/Syrie "Syrie")
+  * [![Drapeau de l'Égypte](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/20px-Flag_of_Egypt.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Egypt.svg?uselang=fr "Drapeau de l'Égypte") [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+
+ |  
+| Ancien pays membre  | 
+  * [![Drapeau de la Tunisie](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/20px-Flag_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg?uselang=fr "Drapeau de la Tunisie") [Tunisie](https://fr.wikipedia.org/wiki/Tunisie) (1982-1986)
+
+ |  
+| Pays membres potentiels  | 
+  * [![Drapeau de la Mauritanie](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/20px-Flag_of_Mauritania.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Mauritania.svg?uselang=fr "Drapeau de la Mauritanie") [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [![Drapeau d'Oman](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/20px-Flag_of_Oman.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Oman.svg?uselang=fr "Drapeau d'Oman") [Oman](https://fr.wikipedia.org/wiki/Oman "Oman")
+  * [![Drapeau du Yémen](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Yemen.svg/20px-Flag_of_Yemen.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Flag_of_Yemen.svg?uselang=fr "Drapeau du Yémen") [Yémen](https://fr.wikipedia.org/wiki/Y%C3%A9men "Yémen")
+
+ |  
+|  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Organisation_internationale_de_la_francophonie "Modèle:Palette Organisation internationale de la francophonie")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Organisation_internationale_de_la_francophonie&action=edit) [Organisation internationale de la francophonie](https://fr.wikipedia.org/wiki/Organisation_internationale_de_la_francophonie "Organisation internationale de la francophonie")  |  
+| --- |  
+| [Liste des 90 États et gouvernements membres](https://fr.wikipedia.org/wiki/%C3%89tats_et_gouvernements_participant_%C3%A0_l'Organisation_internationale_de_la_francophonie "États et gouvernements participant à l'Organisation internationale de la francophonie")  |   
+ | [Membres  
+de plein droit](https://fr.wikipedia.org/wiki/%C3%89tats_et_gouvernements_participant_%C3%A0_l'Organisation_internationale_de_la_francophonie "États et gouvernements participant à l'Organisation internationale de la francophonie")  | 
+  * [Albanie](https://fr.wikipedia.org/wiki/Albanie "Albanie")
+  * [Andorre](https://fr.wikipedia.org/wiki/Andorre "Andorre")
+  * [Arménie](https://fr.wikipedia.org/wiki/Arm%C3%A9nie "Arménie")
+  * [Belgique](https://fr.wikipedia.org/wiki/Belgique "Belgique")
+  * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
+  * [Bulgarie](https://fr.wikipedia.org/wiki/Bulgarie "Bulgarie")
+  * [Burundi](https://fr.wikipedia.org/wiki/Burundi "Burundi")
+  * [Cambodge](https://fr.wikipedia.org/wiki/Cambodge "Cambodge")
+  * [Cameroun](https://fr.wikipedia.org/wiki/Cameroun "Cameroun")
+  * [Canada](https://fr.wikipedia.org/wiki/Canada "Canada")
+  * [Cap-Vert](https://fr.wikipedia.org/wiki/Cap-Vert "Cap-Vert")
+  * [République centrafricaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_centrafricaine "République centrafricaine")
+  * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
+  * [République démocratique du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo "République démocratique du Congo")
+  * [République du Congo](https://fr.wikipedia.org/wiki/R%C3%A9publique_du_Congo "République du Congo")
+  * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
+  * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Dominique](https://fr.wikipedia.org/wiki/Dominique_\(pays\) "Dominique \(pays\)")
+  * [Chypre](https://fr.wikipedia.org/wiki/Chypre_\(pays\) "Chypre \(pays\)")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
+  * [France](https://fr.wikipedia.org/wiki/France "France")
+  * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
+  * [Ghana](https://fr.wikipedia.org/wiki/Ghana "Ghana")
+  * [Grèce](https://fr.wikipedia.org/wiki/Gr%C3%A8ce "Grèce")
+  * [Guinée](https://fr.wikipedia.org/wiki/Guin%C3%A9e "Guinée")
+  * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
+  * [Guinée équatoriale](https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale "Guinée équatoriale")
+  * [Haïti](https://fr.wikipedia.org/wiki/Ha%C3%AFti "Haïti")
+  * [Laos](https://fr.wikipedia.org/wiki/Laos "Laos")
+  * [Liban](https://fr.wikipedia.org/wiki/Liban "Liban")
+  * [Luxembourg](https://fr.wikipedia.org/wiki/Luxembourg "Luxembourg")
+  * [Macédoine du Nord](https://fr.wikipedia.org/wiki/Mac%C3%A9doine_du_Nord "Macédoine du Nord")
+  * [Madagascar](https://fr.wikipedia.org/wiki/Madagascar "Madagascar")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
+  * [Maurice](https://fr.wikipedia.org/wiki/Maurice_\(pays\) "Maurice \(pays\)")
+  * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Moldavie](https://fr.wikipedia.org/wiki/Moldavie "Moldavie")
+  * [Monaco](https://fr.wikipedia.org/wiki/Monaco "Monaco")
+  * [Nouveau-Brunswick](https://fr.wikipedia.org/wiki/Nouveau-Brunswick "Nouveau-Brunswick")
+  * [Québec](https://fr.wikipedia.org/wiki/Qu%C3%A9bec "Québec")
+  * [Roumanie](https://fr.wikipedia.org/wiki/Roumanie "Roumanie")
+  * [Rwanda](https://fr.wikipedia.org/wiki/Rwanda "Rwanda")
+  * [Sainte-Lucie](https://fr.wikipedia.org/wiki/Sainte-Lucie "Sainte-Lucie")
+  * [Sao Tomé-et-Principe](https://fr.wikipedia.org/wiki/Sao_Tom%C3%A9-et-Principe "Sao Tomé-et-Principe")
+  * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
+  * [Seychelles](https://fr.wikipedia.org/wiki/Seychelles "Seychelles")
+  * [Suisse](https://fr.wikipedia.org/wiki/Suisse "Suisse")
+  * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
+  * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
+  * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
+  * [Vanuatu](https://fr.wikipedia.org/wiki/Vanuatu "Vanuatu")
+  * [Vietnam](https://fr.wikipedia.org/wiki/Vietnam "Vietnam")
+  * [Wallonie-Bruxelles](https://fr.wikipedia.org/wiki/Communaut%C3%A9_fran%C3%A7aise_de_Belgique "Communauté française de Belgique")
+
+ |  
+| --- | --- |  
+| [Associés](https://fr.wikipedia.org/wiki/%C3%89tats_et_gouvernements_participant_%C3%A0_l'Organisation_internationale_de_la_francophonie "États et gouvernements participant à l'Organisation internationale de la francophonie")  | 
+  * [Émirats arabes unis](https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis "Émirats arabes unis")
+  * [Kosovo](https://fr.wikipedia.org/wiki/Kosovo "Kosovo")
+  * [Nouvelle-Calédonie](https://fr.wikipedia.org/wiki/Nouvelle-Cal%C3%A9donie "Nouvelle-Calédonie")
+  * [Serbie](https://fr.wikipedia.org/wiki/Serbie "Serbie")
+  * [Qatar](https://fr.wikipedia.org/wiki/Qatar "Qatar")
+
+ |  
+| [Observateurs](https://fr.wikipedia.org/wiki/%C3%89tats_et_gouvernements_participant_%C3%A0_l'Organisation_internationale_de_la_francophonie "États et gouvernements participant à l'Organisation internationale de la francophonie")  | 
+  * [Angola](https://fr.wikipedia.org/wiki/Angola "Angola")
+  * [Argentine](https://fr.wikipedia.org/wiki/Argentine "Argentine")
+  * [Autriche](https://fr.wikipedia.org/wiki/Autriche "Autriche")
+  * [Bosnie-Herzégovine](https://fr.wikipedia.org/wiki/Bosnie-Herz%C3%A9govine "Bosnie-Herzégovine")
+  * [Chili](https://fr.wikipedia.org/wiki/Chili "Chili")
+  * [Corée du Sud](https://fr.wikipedia.org/wiki/Cor%C3%A9e_du_Sud "Corée du Sud")
+  * [Costa Rica](https://fr.wikipedia.org/wiki/Costa_Rica "Costa Rica")
+  * [Croatie](https://fr.wikipedia.org/wiki/Croatie "Croatie")
+  * [Estonie](https://fr.wikipedia.org/wiki/Estonie "Estonie")
+  * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
+  * [Géorgie](https://fr.wikipedia.org/wiki/G%C3%A9orgie_\(pays\) "Géorgie \(pays\)")
+  * [Hongrie](https://fr.wikipedia.org/wiki/Hongrie "Hongrie")
+  * [Irlande](https://fr.wikipedia.org/wiki/Irlande_\(pays\) "Irlande \(pays\)")
+  * [Lettonie](https://fr.wikipedia.org/wiki/Lettonie "Lettonie")
+  * [Lituanie](https://fr.wikipedia.org/wiki/Lituanie "Lituanie")
+  * [Louisiane](https://fr.wikipedia.org/wiki/Louisiane "Louisiane")
+  * [Malte](https://fr.wikipedia.org/wiki/Malte "Malte")
+  * [Mexique](https://fr.wikipedia.org/wiki/Mexique "Mexique")
+  * [Monténégro](https://fr.wikipedia.org/wiki/Mont%C3%A9n%C3%A9gro "Monténégro")
+  * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
+  * [Nouvelle-Écosse](https://fr.wikipedia.org/wiki/Nouvelle-%C3%89cosse "Nouvelle-Écosse")
+  * [Ontario](https://fr.wikipedia.org/wiki/Ontario "Ontario")
+  * [Pologne](https://fr.wikipedia.org/wiki/Pologne "Pologne")
+  * [Polynésie française](https://fr.wikipedia.org/wiki/Polyn%C3%A9sie_fran%C3%A7aise "Polynésie française")
+  * [Sarre](https://fr.wikipedia.org/wiki/Sarre_\(land\) "Sarre \(land\)")
+  * [Slovaquie](https://fr.wikipedia.org/wiki/Slovaquie "Slovaquie")
+  * [Slovénie](https://fr.wikipedia.org/wiki/Slov%C3%A9nie "Slovénie")
+  * [Tchéquie](https://fr.wikipedia.org/wiki/Tch%C3%A9quie "Tchéquie")
+  * [République dominicaine](https://fr.wikipedia.org/wiki/R%C3%A9publique_dominicaine "République dominicaine")
+  * [Thaïlande](https://fr.wikipedia.org/wiki/Tha%C3%AFlande "Thaïlande")
+  * [Ukraine](https://fr.wikipedia.org/wiki/Ukraine "Ukraine")
+  * [Uruguay](https://fr.wikipedia.org/wiki/Uruguay "Uruguay")
+
+ |  
+| [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emblem_of_La_Francophonie.svg/120px-Emblem_of_La_Francophonie.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:Emblem_of_La_Francophonie.svg?uselang=fr)  |  
+| Opérateurs  | 
+  * [Agence universitaire de la francophonie](https://fr.wikipedia.org/wiki/Agence_universitaire_de_la_Francophonie "Agence universitaire de la Francophonie")
+  * [TV5 Monde](https://fr.wikipedia.org/wiki/TV5_Monde "TV5 Monde")
+  * [Université Senghor d'Alexandrie](https://fr.wikipedia.org/wiki/Universit%C3%A9_Senghor "Université Senghor")
+  * [Association internationale des maires francophones](https://fr.wikipedia.org/wiki/Association_internationale_des_maires_francophones "Association internationale des maires francophones")
+
+ |  
+| Relations permanentes  | 
+  * [Nations unies](https://fr.wikipedia.org/wiki/Relations_entre_l'Organisation_internationale_de_la_francophonie_et_les_Nations_unies "Relations entre l'Organisation internationale de la francophonie et les Nations unies")
+  * [Union africaine](https://fr.wikipedia.org/wiki/Relations_entre_l'Organisation_internationale_de_la_francophonie_et_l'Union_africaine "Relations entre l'Organisation internationale de la francophonie et l'Union africaine")
+  * [Union européenne](https://fr.wikipedia.org/wiki/Relations_entre_l'Organisation_internationale_de_la_francophonie_et_l'Union_europ%C3%A9enne "Relations entre l'Organisation internationale de la francophonie et l'Union européenne")
+
+ |  
+| [Secrétaires généraux](https://fr.wikipedia.org/wiki/Secr%C3%A9taire_g%C3%A9n%C3%A9ral_de_la_Francophonie "Secrétaire général de la Francophonie")  | 
+  * [Boutros Boutros-Ghali](https://fr.wikipedia.org/wiki/Boutros_Boutros-Ghali "Boutros Boutros-Ghali") (1997-2002)
+  * [Abdou Diouf](https://fr.wikipedia.org/wiki/Abdou_Diouf "Abdou Diouf") (2003-2014)
+  * [Michaëlle Jean](https://fr.wikipedia.org/wiki/Micha%C3%ABlle_Jean "Michaëlle Jean") (2015-2018)
+  * [Louise Mushikiwabo](https://fr.wikipedia.org/wiki/Louise_Mushikiwabo "Louise Mushikiwabo") (depuis 2019)
+
+ |  
+| 
+  * [Assemblée parlementaire de la francophonie](https://fr.wikipedia.org/wiki/Assembl%C3%A9e_parlementaire_de_la_francophonie "Assemblée parlementaire de la francophonie")
+  * [Observatoire de la langue française](https://fr.wikipedia.org/wiki/Observatoire_de_la_langue_fran%C3%A7aise "Observatoire de la langue française")
+  * [Sommet de la francophonie](https://fr.wikipedia.org/wiki/Sommet_de_la_francophonie "Sommet de la francophonie")
+
+ |  
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/40px-Flag_of_Tunisia.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Tunisie "Portail de la Tunisie") [Portail de la Tunisie](https://fr.wikipedia.org/wiki/Portail:Tunisie "Portail:Tunisie")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/40px-Africa_%28orthographic_projection%29.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Afrique "Portail de l’Afrique") [Portail de l’Afrique](https://fr.wikipedia.org/wiki/Portail:Afrique "Portail:Afrique")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_the_Arab_League.svg/40px-Flag_of_the_Arab_League.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Monde_arabe "Portail du monde arabe") [Portail du monde arabe](https://fr.wikipedia.org/wiki/Portail:Monde_arabe "Portail:Monde arabe")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Berber_flag.svg/40px-Berber_flag.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Berb%C3%A8res "Portail des Berbères") [Portail des Berbères](https://fr.wikipedia.org/wiki/Portail:Berb%C3%A8res "Portail:Berbères")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Portal_Maghreb_icon.svg/40px-Portal_Maghreb_icon.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Maghreb "Portail du Maghreb") [Portail du Maghreb](https://fr.wikipedia.org/wiki/Portail:Maghreb "Portail:Maghreb")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Emblem_of_La_Francophonie.svg/40px-Emblem_of_La_Francophonie.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:Langue_fran%C3%A7aise_et_francophonie "Portail de la langue française et de la francophonie") [Portail de la langue française et de la francophonie](https://fr.wikipedia.org/wiki/Portail:Langue_fran%C3%A7aise_et_francophonie "Portail:Langue française et francophonie")
+  * [![icône décorative](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Circle-icons-globe.svg/40px-Circle-icons-globe.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://fr.wikipedia.org/wiki/Portail:G%C3%A9ographie "Portail de la géographie") [Portail de la géographie](https://fr.wikipedia.org/wiki/Portail:G%C3%A9ographie "Portail:Géographie")
+
+
+Cet article est reconnu comme «[article de qualité](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contenus_de_qualit%C3%A9 "Wikipédia:Contenus de qualité")» depuis sa [version du 6 décembre 2006](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=12327472) ([comparer avec la version actuelle](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=12327472&diff=cur)).   
+Pour toute information complémentaire, consulter sa [page de discussion](https://fr.wikipedia.org/wiki/Discussion:Tunisie "Discussion:Tunisie") et le [vote l'ayant promu](https://fr.wikipedia.org/wiki/Discussion:Tunisie/Article_de_qualit%C3%A9 "Discussion:Tunisie/Article de qualité").
+La version du 6 décembre 2006 de cet article a été reconnue comme «**article de qualité** », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
+Ce document provient de « [https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239035599](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239035599) ».
+[Catégorie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Accueil "Catégorie:Accueil") : 
+  * [Tunisie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Tunisie "Catégorie:Tunisie")
+
+[+]
+Catégories cachées : 
+  * [Page en semi-protection longue](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_en_semi-protection_longue "Catégorie:Page en semi-protection longue")
+  * [Article de qualité géolocalisé en Tunisie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_de_qualit%C3%A9_g%C3%A9olocalis%C3%A9_en_Tunisie "Catégorie:Article de qualité géolocalisé en Tunisie")
+  * [Page utilisant l'extension Phonos](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_l%27extension_Phonos "Catégorie:Page utilisant l'extension Phonos")
+  * [Article utilisant une Infobox](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_utilisant_une_Infobox "Catégorie:Article utilisant une Infobox")
+  * [Article contenant un appel à traduction en anglais](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_anglais "Catégorie:Article contenant un appel à traduction en anglais")
+  * [Recension temporaire pour le modèle Ouvrage](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Recension_temporaire_pour_le_mod%C3%A8le_Ouvrage "Catégorie:Recension temporaire pour le modèle Ouvrage")
+  * [Article contenant un appel à traduction en espagnol](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_espagnol "Catégorie:Article contenant un appel à traduction en espagnol")
+  * [Catégorie Commons avec lien local identique sur Wikidata](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Cat%C3%A9gorie_Commons_avec_lien_local_identique_sur_Wikidata "Catégorie:Catégorie Commons avec lien local identique sur Wikidata")
+  * [Page utilisant P485](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P485 "Catégorie:Page utilisant P485")
+  * [Page utilisant P6413](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P6413 "Catégorie:Page utilisant P6413")
+  * [Page utilisant P6213](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P6213 "Catégorie:Page utilisant P6213")
+  * [Page pointant vers des bases externes](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_externes "Catégorie:Page pointant vers des bases externes")
+  * [Page pointant vers des bases relatives à la vie publique](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_la_vie_publique "Catégorie:Page pointant vers des bases relatives à la vie publique")
+  * [Page utilisant P3006](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P3006 "Catégorie:Page utilisant P3006")
+  * [Page utilisant P6265](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P6265 "Catégorie:Page utilisant P6265")
+  * [Page pointant vers des bases relatives à la géographie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_la_g%C3%A9ographie "Catégorie:Page pointant vers des bases relatives à la géographie")
+  * [Page utilisant P11493](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P11493 "Catégorie:Page utilisant P11493")
+  * [Page utilisant P8406](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P8406 "Catégorie:Page utilisant P8406")
+  * [Page pointant vers des bases relatives aux beaux-arts](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_aux_beaux-arts "Catégorie:Page pointant vers des bases relatives aux beaux-arts")
+  * [Page utilisant P8974](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P8974 "Catégorie:Page utilisant P8974")
+  * [Page pointant vers des bases relatives au spectacle](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_au_spectacle "Catégorie:Page pointant vers des bases relatives au spectacle")
+  * [Page utilisant P5698](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P5698 "Catégorie:Page utilisant P5698")
+  * [Page pointant vers des bases relatives au vivant](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_au_vivant "Catégorie:Page pointant vers des bases relatives au vivant")
+  * [Page utilisant P486](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P486 "Catégorie:Page utilisant P486")
+  * [Page pointant vers des bases relatives à la santé](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_la_sant%C3%A9 "Catégorie:Page pointant vers des bases relatives à la santé")
+  * [Page utilisant P5905](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P5905 "Catégorie:Page utilisant P5905")
+  * [Page pointant vers des bases relatives à la bande dessinée](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_la_bande_dessin%C3%A9e "Catégorie:Page pointant vers des bases relatives à la bande dessinée")
+  * [Page utilisant P9346](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P9346 "Catégorie:Page utilisant P9346")
+  * [Page pointant vers des bases relatives à l'audiovisuel](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_l%27audiovisuel "Catégorie:Page pointant vers des bases relatives à l'audiovisuel")
+  * [Page utilisant P982](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P982 "Catégorie:Page utilisant P982")
+  * [Page pointant vers des bases relatives à la musique](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_bases_relatives_%C3%A0_la_musique "Catégorie:Page pointant vers des bases relatives à la musique")
+  * [Page utilisant P1417](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P1417 "Catégorie:Page utilisant P1417")
+  * [Page utilisant P5019](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P5019 "Catégorie:Page utilisant P5019")
+  * [Page utilisant P8313](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P8313 "Catégorie:Page utilisant P8313")
+  * [Page utilisant P6404](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P6404 "Catégorie:Page utilisant P6404")
+  * [Page utilisant P4223](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P4223 "Catégorie:Page utilisant P4223")
+  * [Page utilisant P6706](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P6706 "Catégorie:Page utilisant P6706")
+  * [Page utilisant P1296](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P1296 "Catégorie:Page utilisant P1296")
+  * [Page utilisant P7982](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P7982 "Catégorie:Page utilisant P7982")
+  * [Page utilisant P7305](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P7305 "Catégorie:Page utilisant P7305")
+  * [Page utilisant P3222](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P3222 "Catégorie:Page utilisant P3222")
+  * [Page utilisant P8349](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P8349 "Catégorie:Page utilisant P8349")
+  * [Page utilisant P4342](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P4342 "Catégorie:Page utilisant P4342")
+  * [Page utilisant P3365](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_P3365 "Catégorie:Page utilisant P3365")
+  * [Page pointant vers des dictionnaires ou encyclopédies généralistes](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_pointant_vers_des_dictionnaires_ou_encyclop%C3%A9dies_g%C3%A9n%C3%A9ralistes "Catégorie:Page pointant vers des dictionnaires ou encyclopédies généralistes")
+  * [Article de Wikipédia avec notice d'autorité](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_de_Wikip%C3%A9dia_avec_notice_d%27autorit%C3%A9 "Catégorie:Article de Wikipédia avec notice d'autorité")
+  * [Article contenant un appel à traduction en arabe](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_arabe "Catégorie:Article contenant un appel à traduction en arabe")
+  * [Portail:Tunisie/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Tunisie/Articles_li%C3%A9s "Catégorie:Portail:Tunisie/Articles liés")
+  * [Portail:Maghreb/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Maghreb/Articles_li%C3%A9s "Catégorie:Portail:Maghreb/Articles liés")
+  * [Portail:Afrique/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Afrique/Articles_li%C3%A9s "Catégorie:Portail:Afrique/Articles liés")
+  * [Portail:Monde arabe/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Monde_arabe/Articles_li%C3%A9s "Catégorie:Portail:Monde arabe/Articles liés")
+  * [Portail:Berbères/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Berb%C3%A8res/Articles_li%C3%A9s "Catégorie:Portail:Berbères/Articles liés")
+  * [Portail:Langue française et francophonie/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Langue_fran%C3%A7aise_et_francophonie/Articles_li%C3%A9s "Catégorie:Portail:Langue française et francophonie/Articles liés")
+  * [Portail:Langues/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:Langues/Articles_li%C3%A9s "Catégorie:Portail:Langues/Articles liés")
+  * [Portail:Géographie/Articles liés](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Portail:G%C3%A9ographie/Articles_li%C3%A9s "Catégorie:Portail:Géographie/Articles liés")
+  * [Article de qualité en ourdou](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_de_qualit%C3%A9_en_ourdou "Catégorie:Article de qualité en ourdou")
+  * [Article de qualité en malais](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_de_qualit%C3%A9_en_malais "Catégorie:Article de qualité en malais")
+  * [Article de qualité](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_de_qualit%C3%A9 "Catégorie:Article de qualité")
+  * [Page avec des cartes](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_avec_des_cartes "Catégorie:Page avec des cartes")
+
+
+  * La dernière modification de cette page a été faite le 28 août 2026 à 20:21.
+  * La page a été rendue avec [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
+  * [Droit d'auteur](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia "Wikipédia:Citation et réutilisation du contenu de Wikipédia") : les textes sont disponibles sous [licence Creative Commons attribution, partage dans les mêmes conditions](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; d’autres conditions peuvent s’appliquer. Voyez les [conditions d’utilisation](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/fr) pour plus de détails, ainsi que les [crédits graphiques](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Cr%C3%A9dits_graphiques "Wikipédia:Crédits graphiques"). En cas de réutilisation des textes de cette page, voyez [comment citer les auteurs et mentionner la licence](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Citer/Tunisie "Spécial:Citer/Tunisie").  
+Wikipedia® est une marque déposée de la [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), organisation de bienfaisance régie par le paragraphe [501(c)(3)](https://fr.wikipedia.org/wiki/501c "501c") du code fiscal des États-Unis.  
+
+
+
+  * [Politique de confidentialité](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/fr)
+  * [À propos de Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:%C3%80_propos_de_Wikip%C3%A9dia)
+  * [Avertissements](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Avertissements_g%C3%A9n%C3%A9raux)
+  * [Contact](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact)
+  * [Contacts juridiques & sécurité](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
+  * [Code de conduite](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
+  * [Développeurs](https://developer.wikimedia.org)
+  * [Statistiques](https://stats.wikimedia.org/#/fr.wikipedia.org)
+  * [Déclaration sur les témoins (cookies)](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
+  * [Version mobile](https://fr.wikipedia.org/w/index.php?title=Tunisie&mobileaction=toggle_view_mobile)
+  * [Modifier les paramètres d’aperçu](https://fr.wikipedia.org/wiki/Tunisie)
+
+
+  * [![Wikimedia Foundation](https://fr.wikipedia.org/static/images/footer/wikimedia.svg)](https://www.wikimedia.org/)
+  * [![Powered by MediaWiki](https://fr.wikipedia.org/w/resources/assets/mediawiki_compact.svg)](https://www.mediawiki.org/)
+
+
+Rechercher
 Tunisie
-: feu vert à l'ATI pour gérer le .tounes
-», sur
-tekiano.com
-,
-12 août 2010
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-États membres
-», sur
-Organisation des Nations unies
-(consulté le
-22 mars 2025
-)
-.
-↑
-Commission nationale de toponymie
-,
-Pays, territoires et villes du monde
-, Paris,
-Conseil national de l'information géolocalisée
-,
-2021
-, 34
-p.
-(
-présentation en ligne
-,
-lire en ligne
-)
-,
-p.
-33
-.
-↑
-Victor Silvera, «
-Le régime constitutionnel de la Tunisie
-: la Constitution du
-1
-er
-juin 1959
-»,
-Revue française de science politique
-,
-vol.
-10,
-n
-o
-2,
-‎
-1960
-,
-p.
-377
-(
-ISSN
-0035-2950
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Michel Camau et
-Vincent Geisser
-,
-Habib Bourguiba
-: la trace et l'héritage
-, Paris,
-Éditions Karthala
-,
-2004
-, 663
-p.
-(
-ISBN
-978-2845865068
-,
-lire en ligne
-)
-,
-p.
-211
-.
-↑
-Marc Imbeault
-et Gérard A. Montifroy,
-Géopolitique et pouvoirs
-: des pouvoirs de la géopolitique à la géopolitique des pouvoirs
-, Lausanne,
-Éditions L'Âge d'Homme
-,
-2003
-, 129
-p.
-(
-ISBN
-978-2825117835
-,
-lire en ligne
-)
-,
-p.
-62
-.
-↑
-Xavier Harel, «
-Tunisie
-: l'empire économique des Trabelsi et Ben Ali menacé
-»,
-La Tribune
-,
-‎
-18 janvier 2011
-(
-ISSN
-1760-4869
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: une étude de la Banque mondiale dévoile la manipulation de la réglementation par les anciens responsables du régime
-», sur
-Banque mondiale
-,
-27 mars 2014
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Pierre Prier, «
-L'exil doré de Ben Ali en Arabie saoudite
-»,
-Le Figaro
-,
-‎
-14 janvier 2013
-(
-ISSN
-0182-5852
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: les Ben Ali coulent des jours paisibles en Arabie saoudite
-», sur
-tunisienumerique.com
-,
-15 janvier 2013
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Membres actuels
-», sur
-Organisation des Nations unies
-(consulté le
-14 août 2022
-)
-.
-↑
-Khalil Jelassi, «
-Othmane Jerandi fait le bilan du mandat de la Tunisie en tant que membre non permanent du Conseil de sécurité des Nations Unies
-: «
-Nous avons réussi à défendre les causes justes
-»
-»,
-La Presse de Tunisie
-,
-‎
-8 janvier 2022
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-27 août 2024
-)
-.
-↑
-(en)
-Adrian Room,
-Placenames of the World
-: Origins and Meanings of the Names for 6,600 Countries, Cities, Territories, Natural Features and Historic Sites
-, Jefferson,
-McFarland & Company
-,
-2006
-, 433
-p.
-(
-ISBN
-978-0786422487
-)
-,
-p.
-385
-.
-↑
-(en)
-«
-Standard country or area codes for statistical use (M49)
-», sur
-unstats.un.org
-,
-Organisation des Nations unies
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-«
-Africa: What's in a name?
-», sur
-sahistory.org.za
-,
-20 mai 2015
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Ifriqiya
-», sur
-Éditions Larousse
-(consulté le
-28 février 2026
-)
-.
-↑
-Ahmed Siraj,
-«
-Ifrîkiyya
-»
-, dans
-Gabriel Camps
-(
-dir.
-),
-Encyclopédie berbère
-,
-vol.
-24
-:
-Ida – Issamadanen
-, Aix-en-Provence,
-Édisud
-,
-2001
-(
-ISBN
-2-7449-0207-1
-,
-lire en ligne
-)
-,
-p.
-3660-3666
-.
-↑
-Abdennour Benantar,
-Les initiatives de sécurité au Maghreb et au Sahel
-: le G5 Sahel mis à l'épreuve
-, Paris,
-Éditions L'Harmattan
-,
-2019
-, 280
-p.
-(
-ISBN
-978-2140121890
-,
-lire en ligne
-)
-,
-p.
-17
-.
-↑
-«
-Nouveaux chiffres sur le littoral tunisien
-»
-[
-PDF
-]
-, sur
-apal.nat.tn
-(consulté le
-8 avril 2020
-)
-.
-↑
-«
-Principaux indicateurs de l'agriculture tunisienne
-: les ressources en terre
-»
-, sur
-agriportail.tn
-(version du
-4 juin 2013
-sur
-archive.org
-)
-.
-↑
-(en)
-R.H. Hughes et J.S. Hughes,
-A Directory of African Wetlands
-, Gland,
-Union internationale pour la conservation de la nature
-,
-1992
-, 820
-p.
-(
-ISBN
-978-2880329495
-,
-lire en ligne
-)
-,
-p.
-75
-.
-1
-2
-Ministère de l'Environnement
-, «
-5
-e
-rapport national sur la biodiversité
-»
-[
-PDF
-]
-, sur
-Convention sur la diversité biologique
-,
-juillet 2014
-(consulté le
-28 février 2026
-)
-,
-p.
-5
-.
-↑
-«
-Nouveaux chiffres sur le littoral tunisien
-»
-[PDF]
-, sur
-Agence de protection et d'aménagement du littoral
-,
-p.
-2
-(archivé sur
-archive.org
-)
-.
-↑
-«
-Projet SMAP III Tunisie
-»
-[
-PDF
-]
-, sur
-awsassets.panda.org
-,
-juin 2006
-(consulté le
-28 février 2026
-)
-,
-p.
-2
-.
-↑
-«
-Tunisie
-: géographie physique
-», sur
-Éditions Larousse
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Le pays en un coup d'œil
-», sur
-Organisation des Nations unies pour l'alimentation et l'agriculture
-(consulté le
-28 février 2026
-)
-.
-1
-2
-«
-La Tunisie face aux changements climatiques
-: évaluation et actions pour accroître la résilience et le développement
-»
-[
-PDF
-]
-, sur
-documents1.worldbank.org
-,
-Banque mondiale
-(consulté le
-28 février 2026
-)
-,
-p.
-29 et 43
-.
-↑
-Aïcha Teyeb, Leïla Dehmani, Afifa Ben Ezzine, Chekib Kerkeni et Lanouar Kaabi, «
-Étude des performances d'un capteur stockeur cylindro-parabolique
-»,
-Revue des énergies renouvelables
-,
-vol.
-9,
-n
-o
-3,
-‎
-2006
-,
-p.
-135
-(
-ISSN
-1112-2242
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Chekib Kerkeni, K. Hamdi, Leïla Dehmani et A. Belghith, «
-Étude des performances thermiques à long terme d'un système solaire de chauffage de l'eau sanitaire
-»,
-6
-e
-journées internationales de l'énergie thermique
-,
-‎
-19-22 avril 1993,
-p.
-345-351
-(
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-La Tunisie porte le nombre de ses parcs nationaux de 8 à 15
-», sur
-investir-en-tunisie.net
-,
-6 avril 2010
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Parc national de l'Ichkeul
-», sur
-whc.unesco.org
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Louis Pouillon, «
-Tunisie
-: les enjeux de la transition énergétique
-», sur
-arabnews.fr
-,
-20 mai 2022
-(consulté le
-22 mai 2022
-)
-.
-↑
-«
-La Tunisie en première ligne du changement climatique
-», sur
-France Culture
-,
-8 décembre 2019
-(consulté le
-14 janvier 2021
-)
-.
-↑
-Matthias Raynal, «
-En Tunisie, le principal fleuve est empoisonné par l'industrie
-», sur
-Reporterre
-,
-13 janvier 2021
-(consulté le
-14 janvier 2021
-)
-.
-↑
-«
-Données générales sur la population
-»
-, sur
-Institut national de la statistique
-(version du
-24 septembre 2015
-sur
-archive.org
-)
-.
-↑
-«
-Taux d'urbanisation en Tunisie de 2008 à 2018
-», sur
-statista.com
-(consulté le
-28 mars 2024
-)
-.
-↑
-Houda Laroussi,
-Micro-crédit et lien social en Tunisie
-: la solidarité instituée
-, Paris,
-Éditions Karthala
-,
-2009
-, 312
-p.
-(
-ISBN
-978-2811131302
-,
-lire en ligne
-)
-,
-p.
-58
-.
-↑
-«
-Loi organique n°89-11 du 4 février 1989, relative aux Conseils régionaux
-»,
-Journal officiel de la République tunisienne
-,
-n
-o
-10,
-‎
-10 février 1989
-,
-p.
-218-221
-(
-ISSN
-0330-7921
-,
-lire en ligne
-[
-PDF
-]
-)
-.
-↑
-«
-Le nouveau découpage territorial est publié au JORT
-: 85 nouvelles municipalités
-», sur
-Leaders
-,
-29 mai 2016
-(consulté le
-3 mars 2020
-)
-.
-↑
-(en)
-Lahcen Achy, «
-Tunisia's Economic Challenges
-»,
-The Carnegie Papers
-,
-‎
-décembre 2011
-,
-p.
-8
-(
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Ahmed Moro et
-Bernard Kalaora
-(
-dir.
-),
-Le désert
-: de l'écologie du divin au développement durable
-, Paris,
-Éditions L'Harmattan
-,
-2006
-, 266
-p.
-(
-ISBN
-978-2747596770
-,
-lire en ligne
-)
-,
-p.
-110
-.
-↑
-Michel Gruet
-, «
-Le gisement d'El Guettar et sa flore
-»,
-Libyca
-,
-‎
-1958
-,
-p.
-79-126
-(
-ISSN
-0459-3030
-)
-.
-↑
-«
-Hermaïon
-»
-, sur
-Institut national du patrimoine
-(version du
-14 juin 2020
-sur
-archive.org
-)
-.
-↑
-Marcel Otte
-, Denis Vialou et Patrick Plumet,
-La Préhistoire
-, Louvain-la-Neuve,
-De Boeck
-,
-2003
-, 369
-p.
-(
-ISBN
-978-2804144173
-)
-,
-p.
-176
-.
-↑
-Georges Larrouy, «
-La place de l'anthropobiologie dans l'étude du peuplement berbère. Affirmations, contradictions, conclusions
-», sur
-didac.ehu.es
-(consulté le
-20 janvier 2019
-)
-.
-↑
-Magdeleine Moureau et Gérald Brace,
-Dictionnaire des sciences de la Terre
-, Paris, Technip,
-2000
-, 1096
-p.
-(
-ISBN
-978-2710807490
-)
-,
-p.
-76
-.
-↑
-Mohamed-Habib Daghari-Ounissi,
-Tunisie, habiter sa différence
-, Paris,
-Éditions L'Harmattan
-,
-coll.
-«
-Histoire et perspectives méditerranéennes
-»,
-2002
-, 212
-p.
-(
-ISBN
-978-2747521864
-,
-lire en ligne
-)
-,
-p.
-32
-.
-↑
-(en)
-Lloyd Cabot Briggs,
-Tribes of the Sahara
-, Cambridge,
-Harvard University Press
-,
-1960
-, 295
-p.
-(
-ISBN
-978-0674908703
-)
-,
-p.
-34-36
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-«
-Tunisie
-»
-, sur
-Encarta
-(version du
-16 février 2009
-sur
-archive.org
-)
-.
-↑
-Michel Quitout,
-Les langues orales dans les pays méditerranéens
-: situation, enseignement et recherche
-, Paris,
-Éditions L'Harmattan
-,
-2001
-, 178
-p.
-(
-ISBN
-978-2747507509
-,
-lire en ligne
-)
-,
-p.
-43
-.
-↑
-En particulier entre les Puniques et les populations locales selon
-Hédi Dridi
-,
-Carthage et le monde punique
-, Paris,
-Les Belles Lettres
-,
-2006
-, 288
-p.
-(
-ISBN
-978-2251410333
-)
-,
-p.
-28
-.
-↑
-Yves Lacoste
-et
-Camille Lacoste-Dujardin
-(
-dir.
-),
-L'état du Maghreb
-, Paris,
-La Découverte
-,
-coll.
-«
-L'État du monde
-»,
-1991
-, 572
-p.
-(
-ISBN
-978-2707120144
-)
-,
-p.
-118
-.
-↑
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-39
-.
-↑
-Véronique Krings,
-La civilisation phénicienne et punique
-: manuel de recherche
-, Leyde,
-Éditions Brill
-,
-1995
-, 923
-p.
-(
-ISBN
-978-9004100688
-,
-lire en ligne
-)
-,
-p.
-112
-.
-↑
-Attilio Gaudio,
-Les Îles Canaries
-, Paris,
-Éditions Karthala
-,
-1995
-, 216
-p.
-(
-ISBN
-978-2865375585
-,
-lire en ligne
-)
-,
-p.
-23
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-38
-.
-↑
-Anne Zali et Annie Berthier (
-dir.
-),
-L'aventure des écritures
-, Paris,
-Bibliothèque nationale de France
-,
-1997
-, 176
-p.
-(
-ISBN
-978-2717720235
-)
-,
-p.
-100
-.
-1
-2
-Jacques Simon
-,
-Algérie
-: le passé, l'Algérie française, la révolution (1954-1958)
-, Paris,
-Éditions L'Harmattan
-,
-2007
-, 520
-p.
-(
-ISBN
-978-2296028586
-)
-,
-p.
-13
-.
-1
-2
-3
-Philippe Lemarchand (
-dir.
-),
-L'Afrique et l'Europe
-: atlas du
-XX
-e
-siècle
-, Paris,
-Éditions Complexe
-,
-1994
-, 252
-p.
-(
-ISBN
-978-2870275184
-)
-,
-p.
-238
-.
-1
-2
-Dominique Arnauld,
-Histoire du christianisme en Afrique
-: les sept premiers siècles
-, Paris,
-Éditions Karthala
-,
-2001
-, 380
-p.
-(
-ISBN
-978-2845861909
-,
-lire en ligne
-)
-,
-p.
-58
-.
-↑
-Voir à ce sujet le travail de
-Marcel Le Glay
-,
-Saturne africain
-, Paris, De Boccard,
-1966
-, 522
-p.
-↑
-Claude Lepelley
-,
-Rome et l'intégration de l'Empire, 44 av. J.-C.-260 apr. J.-C.
-: approches régionales du Haut-Empire romain
-,
-t.
-2, Paris,
-Presses universitaires de France
-,
-1998
-, 640
-p.
-(
-ISBN
-978-2130487111
-)
-,
-p.
-102
-.
-↑
-Fethi Bejaoui, «
-La Carthage de saint Augustin
-»,
-Connaissance des arts
-,
-n
-o
-69 «
-Carthage (hors-série)
-»,
-‎
-1995
-,
-p.
-55
-(
-ISSN
-2102-5371
-)
-.
-↑
-(en)
-J. Patout Burns,
-Christianity in Roman Africa
-: The Development of Its Practices and Beliefs
-, Grand Rapids, Eerdmans,
-2014
-, 670
-p.
-(
-ISBN
-978-1467440370
-)
-.
-↑
-(en)
-W. H. C. Frend
-(en)
-,
-The Donatist Church
-: A Movement of Protest in Roman North Africa
-, Oxford,
-Oxford University Press
-,
-1952
-, 360
-p.
-↑
-(en)
-Brent Shaw
-(en)
-,
-Sacred Violence
-: African Christians and Sectarian Hatred in the Age of Augustine
-, Cambridge,
-Cambridge University Press
-,
-2011
-, 930
-p.
-(
-ISBN
-978-0521127257
-)
-.
-↑
-Serge Lancel
-,
-Saint Augustin
-, Paris,
-Fayard
-,
-1999
-, 792
-p.
-(
-ISBN
-978-2702831526
-)
-.
-↑
-(en)
-David Rankin,
-Tertullian and the Church
-, Cambridge,
-Cambridge University Press
-,
-1995
-, 248
-p.
-(
-ISBN
-978-0521480673
-)
-.
-↑
-Aïcha Ben Abed
-, «
-Carthage. Capitale de l'Africa
-»,
-Connaissance des arts
-,
-n
-o
-69 «
-Carthage (hors-série)
-»,
-‎
-1995
-,
-p.
-44
-(
-ISSN
-2102-5371
-)
-.
-↑
-Hélène Ménard,
-Maintenir l'ordre à Rome
-:
-II
-e
-–
-IV
-e
-siècles ap. J.-C.
-, Seyssel, Champ Vallon,
-2004
-, 286
-p.
-(
-ISBN
-978-2876734036
-)
-,
-p.
-251
-.
-↑
-Moncef Ben Moussa
-,
-La production de sigillées africaines
-: recherches d'histoire et d'archéologie en Tunisie septentrionale et centrale
-, Barcelone,
-Université de Barcelone
-,
-2007
-, 119
-p.
-(
-ISBN
-8447531767
-,
-lire en ligne
-)
-,
-p.
-22
-.
-1
-2
-3
-Encyclopédie 360
-,
-vol.
-12, Paris,
-Éditions Rombaldi
-/
-Paris Match
-,
-1970
-,
-p.
-161
-.
-↑
-Guillaume Bernard
-,
-Introduction à l'histoire du droit et des institutions
-, Levallois-Perret, Studyrama,
-2004
-, 461
-p.
-(
-ISBN
-978-2844724427
-)
-,
-p.
-70
-.
-↑
-Alban Gautier,
-100 dates qui ont fait le monde
-: 3 000 ans de mondialisation
-, Paris, Studyrama,
-2005
-, 270
-p.
-(
-ISBN
-978-2844726575
-,
-lire en ligne
-)
-,
-p.
-105
-.
-↑
-Arnauld 2001
-,
-p.
-274
-.
-1
-2
-Ephrem-Isa Yousif,
-Les chroniqueurs syriaques
-, Paris,
-Éditions L'Harmattan
-,
-2002
-, 468
-p.
-(
-ISBN
-978-2747527095
-,
-lire en ligne
-)
-,
-p.
-75
-.
-1
-2
-3
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-42
-.
-1
-2
-3
-4
-5
-6
-Collectif,
-L'encyclopédie nomade 2006
-, Paris,
-Éditions Larousse
-,
-2005
-, 1388
-p.
-(
-ISBN
-978-2035202505
-)
-,
-p.
-107
-.
-↑
-Liliane Ennabli
-,
-«
-Carthage chrétienne
-»
-, dans
-Encyclopædia Universalis
-, Paris, Encyclopædia Universalis,
-2002
-(
-ISBN
-978-2852295506
-)
-,
-p.
-1041 et suiv.
-.
-1
-2
-3
-(ar)
-Abdelaziz Thâalbi
-,
-Histoire de l'Afrique du Nord
-, Beyrouth, Maison de l'Occident islamique,
-1987
-,
-p.
-32-42
-.
-1
-2
-3
-Michel Quitout,
-Parlons l'arabe tunisien
-: langue et culture
-, Paris,
-Éditions L'Harmattan
-,
-2002
-, 206
-p.
-(
-ISBN
-978-2747528863
-,
-lire en ligne
-)
-,
-p.
-11
-.
-1
-2
-Hédi Slim
-,
-Histoire générale de la Tunisie
-,
-t.
-I
-:
-L'Antiquité
-, Paris,
-Maisonneuve et Larose
-,
-2003
-, 549
-p.
-(
-ISBN
-978-2706816956
-)
-,
-p.
-421
-.
-1
-2
-3
-Yousif 2002
-,
-p.
-358
-.
-1
-2
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-43
-.
-↑
-Ibn Khaldoun
-(
-trad.
-William Mac Guckin de Slane
-),
-Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale
-, Alger, Berti,
-2003
-.
-1
-2
-3
-4
-5
-6
-Quitout 2002
-,
-p.
-12
-.
-1
-2
-Jacques Thiry,
-Le Sahara libyen dans l'Afrique du nord médiévale
-, Louvain,
-Peeters Publishers
-,
-1995
-, 604
-p.
-(
-ISBN
-978-9068317398
-,
-lire en ligne
-)
-,
-p.
-166
-.
-↑
-Rafik Saïd,
-La Politique culturelle en Tunisie
-, Paris,
-Unesco
-,
-1970
-, 56
-p.
-(
-lire en ligne
-)
-,
-p.
-14
-.
-↑
-Paul Sebag
-,
-Tunis
-: histoire d'une ville
-, Tunis,
-Éditions L'Harmattan
-,
-1998
-, 688
-p.
-(
-ISBN
-978-2738466105
-,
-lire en ligne
-)
-,
-p.
-87
-.
-1
-2
-3
-4
-5
-6
-François Decret
-, «
-Les invasions hilaliennes en Ifrîqiya
-», sur
-clio.fr
-,
-septembre 2003
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Matt King,
-Dynasties intertwined
-: the Zirids of Ifriqiya and the Normans of Sicily
-, Ithaca,
-Cornell University Press
-,
-2023
-, 235
-p.
-(
-ISBN
-978-1501763489
-)
-,
-p.
-60
-.
-↑
-Les sources arabes sont compillés par
-(it)
-Michele Amari
-,
-Biblioteca arabo-sicula
-, Rome/Turin, Ermanno Loesher,
-1880
-, 570
-p.
-(
-lire en ligne
-)
-.
-↑
-(en)
-Hubert Houben
-,
-Roger II of Sicily
-: A Ruler Between East and West
-, Cambridge,
-Cambridge University Press
-,
-2002
-, 231
-p.
-(
-ISBN
-978-0521655736
-,
-lire en ligne
-)
-,
-p.
-83
-.
-↑
-(en)
-Charles Dalli,
-«
-Bridging Europe and Africa: Norman Sicily's Other Kingdom
-»
-, dans
-Bridging the Gaps: Sources, Methodology, and Approaches to Religion in History
-, Pise, Pisa University Press,
-2008
-(
-ISBN
-978-8884925541
-)
-,
-p.
-79
-.
-↑
-Claude Horrut,
-Ibn Khaldun, un islam des Lumières
-?
-, Paris,
-Éditions Complexe
-,
-coll.
-«
-Théorie politique
-»,
-2006
-, 260
-p.
-(
-ISBN
-978-2870279984
-,
-lire en ligne
-)
-,
-p.
-208
-.
-1
-2
-3
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-44
-.
-↑
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-44-45
-.
-↑
-(en)
-Collectif (
-trad.
-Noemí García Millán),
-Ibn Khaldun
-: The Mediterranean in the
-14th
-century: rise and fall of Empires
-, Séville,
-Fondation José Manuel Lara
-(es)
-,
-2006
-, 455
-p.
-(
-ISBN
-978-8496556348
-,
-lire en ligne
-)
-,
-p.
-86
-.
-1
-2
-Pierre Bonte
-,
-Al-Ansâb, la quête des origines
-: anthropologie historique de la société tribale arabe
-, Paris,
-Maison des Sciences de l'Homme
-,
-1991
-, 260
-p.
-(
-ISBN
-978-2735104260
-)
-,
-p.
-115
-.
-1
-2
-3
-4
-Noura Borsali, «
-Tricentenaire de la dynastie husseinite (15 juillet 1705 - 25 juillet 1957)
-: les beys de Tunis à l'épreuve du temps et de l'Histoire
-»,
-Réalités
-,
-‎
-27 mai 2008
-.
-↑
-Pierre Pinta,
-La Libye
-, Paris,
-Éditions Karthala
-,
-2006
-, 342
-p.
-(
-ISBN
-978-2845867161
-,
-lire en ligne
-)
-,
-p.
-15
-résume ainsi cette situation
-:
-«
-Ces derniers
-[les Mérinides]
-firent leur entrée dans Tunis en même temps que la peste
-»
-.
-↑
-(en)
-William Spencer,
-Algiers in the Age of the Corsairs
-, Norman,
-University of Oklahoma Press
-,
-1976
-, 184
-p.
-(
-ISBN
-978-0806113340
-)
-,
-p.
-18
-.
-↑
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-51
-.
-↑
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-46
-.
-↑
-«
-La dynastie mouradite
-»
-, sur
-histoiredelafrique.fr
-(version du
-5 mai 2016
-sur
-archive.org
-)
-.
-↑
-Nadia Sebaï,
-Mustafa Saheb Ettabaâ
-: un haut dignitaire beylical dans la Tunisie du
-XIX
-e
-siècle
-, Carthage, Cartaginoiseries,
-2007
-, 94
-p.
-(
-ISBN
-978-9973704047
-,
-lire en ligne
-)
-,
-p.
-11
-.
-↑
-«
-Afrique. De Tunis, le 13 May
-»,
-Gazette de Cologne
-,
-‎
-30 juin 1752
-,
-p.
-1-2
-(
-lire en ligne
-, consulté le
-20 novembre 2020
-)
-.
-↑
-Paul Sebag
-,
-Histoire des Juifs de Tunisie
-: des origines à nos jours
-, Paris,
-Éditions L'Harmattan
-,
-1991
-, 335
-p.
-(
-ISBN
-978-2296240360
-,
-lire en ligne
-)
-,
-p.
-94-95
-.
-1
-2
-3
-4
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-54
-.
-↑
-Sebag 1991
-,
-p.
-118
-.
-1
-2
-Hedia Khadhar, «
-La Révolution française, le Pacte fondamental et la première Constitution tunisienne de 1861
-»,
-Revue des mondes musulmans et de la Méditerranée
-,
-vol.
-52-53,
-‎
-1989
-,
-p.
-132-137
-(
-ISSN
-0997-1327
-,
-DOI
-10.3406/remmm.1989.2294
-,
-lire en ligne
-, consulté le
-14 février 2019
-)
-.
-↑
-«
-Constitution du 26 avril 1861
-», sur
-mjp.univ-perp.fr
-,
-Université de Perpignan
-(consulté le
-22 mars 2025
-)
-.
-↑
-Sebag 1991
-,
-p.
-120-129
-.
-↑
-Hédi Slim
-,
-Ammar Mahjoubi
-, Khaled Belkhodja et
-Abdelmajid Ennabli
-,
-Histoire générale de la Tunisie
-,
-vol.
-III
-:
-Les temps modernes
-, Tunis, Sud Éditions,
-2007
-, 495
-p.
-(
-ISBN
-978-9973844217
-)
-,
-p.
-153
-.
-↑
-Ali Bamba, «
-Tunisie
-: l'exposition Italianisances au Palais Ahmed Bey de La Marsa
-», sur
-Africanews
-,
-14 octobre 2025
-(consulté le
-28 février 2026
-)
-.
-↑
-Jacques Revault
-,
-Palais et demeures de Tunis (XVIII
-e
-et XIX
-e
-siècles)
-, Paris, Éditions du Centre national de la recherche scientifique,
-1971
-, 648
-p.
-(
-lire en ligne
-)
-,
-p.
-52, 54, 57-58 et 62-64
-.
-1
-2
-3
-4
-5
-6
-7
-Collectif 2005
-,
-p.
-708
-.
-↑
-Jean-François Martin,
-Histoire de la Tunisie contemporaine
-: de Ferry à Bourguiba, 1881-1956
-, Paris,
-Éditions L'Harmattan
-,
-2003
-, 276
-p.
-(
-ISBN
-978-2747546263
-,
-lire en ligne
-)
-,
-p.
-41-43
-.
-↑
-Hachemi Karoui et Ali Mahjoubi,
-Quand le Soleil s'est levé à l'ouest
-: Tunisie 1881, impérialisme et résistance
-, Tunis, Cérès Productions,
-1983
-, 193
-p.
-(
-ISBN
-978-2857030102
-)
-,
-p.
-86
-.
-↑
-John P. Entelis (professeur à l'
-université Fordham
-) prétend — sans citer ses sources — que Sadok Bey a été menacé de mort selon
-Michel Camau et
-Vincent Geisser
-,
-Habib Bourguiba
-: la trace et l'héritage
-, Paris,
-Éditions Karthala
-,
-2004
-, 664
-p.
-(
-ISBN
-978-2845865068
-,
-lire en ligne
-)
-,
-p.
-227
-.
-↑
-«
-Traité du Bardo du 12 mai 1881
-», sur
-axl.cefan.ulaval.ca
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Hédi Saïdi et
-Janine Ponty
-,
-Mémoire de l'immigration et histoire coloniale
-, Paris,
-Éditions L'Harmattan
-,
-2007
-, 194
-p.
-(
-ISBN
-978-2296024199
-,
-lire en ligne
-)
-,
-p.
-117
-.
-1
-2
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-56
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-Quitout 2002
-,
-p.
-13
-.
-1
-2
-3
-4
-Frédéric Angleviel (
-dir.
-),
-Chants pour l'au-delà des mers
-: mélanges en l'honneur du professeur Jean Martin
-, Paris,
-Éditions L'Harmattan
-,
-2008
-, 528
-p.
-(
-ISBN
-978-2296054080
-,
-lire en ligne
-)
-,
-p.
-13
-.
-↑
-René Clozier, «
-Les sociétés milliardaires en France
-»,
-L'Information géographique
-,
-vol.
-14,
-n
-os
-14-2,
-‎
-1950
-,
-p.
-69
-(
-ISSN
-0020-0093
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Camau et Geisser 2004
-,
-p.
-227-228
-.
-1
-2
-3
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-57
-.
-1
-2
-Angleviel 2008
-,
-p.
-14
-.
-↑
-Angleviel 2008
-,
-p.
-15
-.
-1
-2
-3
-4
-5
-Kamel Labidi, «
-La longue descente aux enfers de la Tunisie
-»,
-Le Monde diplomatique
-,
-n
-o
-624,
-‎
-mars 2006
-,
-p.
-10-11
-(
-ISSN
-0026-9395
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-1
-2
-3
-4
-Sophie Chautard,
-Les dictateurs du
-XX
-e
-siècle
-, Levallois-Perret, Studyrama,
-2006
-, 223
-p.
-(
-ISBN
-978-2844727855
-)
-,
-p.
-165
-.
-1
-2
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-60
-.
-1
-2
-3
-4
-Khalifa Chater
-,
-«
-Le rappel d'une épopée spécifique du peuple tunisien
-»
-, sur
-afkaronline.org
-,
-mars-avril 2006
-(version du
-13 février 2009
-sur
-archive.org
-)
-.
-↑
-«
-Mars-mai 43
-: victoire alliée en Tunisie
-», sur
-Institut national de l'audiovisuel
-,
-1
-er
-janvier 1943
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Saïd Mestiri
-,
-Le ministère Chenik à la poursuite de l'autonomie interne
-, Tunis, Arcs Éditions,
-1991
-, 262
-p.
-(
-ISBN
-978-9973740045
-)
-,
-p.
-177
-.
-↑
-Mestiri 1991
-,
-p.
-189
-.
-↑
-Mestiri 1991
-,
-p.
-207
-.
-↑
-Mestiri 1991
-,
-p.
-217
-.
-1
-2
-3
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-61
-.
-↑
-Mestiri 1991
-,
-p.
-248
-.
-↑
-Charles-André Julien
-,
-Et la Tunisie devint indépendante
-: 1951-1957
-, Paris, Jeune Afrique,
-1985
-, 215
-p.
-(
-ISBN
-978-2852583726
-)
-,
-p.
-63
-.
-↑
-Claude Liauzu
-,
-L'Europe et l'Afrique méditerranéenne
-: de Suez (1869) à nos jours
-, Paris,
-Éditions Complexe
-,
-1994
-, 297
-p.
-(
-ISBN
-978-2870275146
-,
-lire en ligne
-)
-,
-p.
-156
-.
-1
-2
-3
-4
-Chautard 2006
-,
-p.
-166
-.
-1
-2
-Camau et Geisser 2004
-,
-p.
-229
-.
-↑
-«
-Voyage du Président Mendès France en Tunisie
-»
-[
-vidéo
-]
-, sur
-Institut national de l'audiovisuel
-,
-5 août 1954
-(consulté le
-22 mars 2025
-)
-.
-↑
-«
-Décret du 13 août 1956 portant promulgation du Code du statut personnel
-»,
-Journal officiel tunisien
-,
-n
-o
-104,
-‎
-28 décembre 1956
-,
-p.
-1742
-(
-ISSN
-0330-7921
-,
-lire en ligne
-[
-PDF
-]
-)
-.
-↑
-«
-Proclamation de la république en Tunisie
-», sur
-Institut national de l'audiovisuel
-,
-31 juillet 1957
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-3
-4
-5
-6
-Lacoste et Lacoste-Dujardin 1991
-,
-p.
-74
-.
-↑
-Chautard 2006
-,
-p.
-167
-.
-1
-2
-Sebag 1991
-,
-p.
-297
-.
-↑
-Colette Zytnicki
-,
-«
-Gérer la rupture
-: les institutions sociales juives de France face aux migrations de juifs tunisiens (1950-1970)
-»
-, dans
-Juifs et musulmans de Tunisie
-: fraternité et déchirements
-, Paris, Somogy,
-2003
-(
-ISBN
-978-2850566325
-)
-,
-p.
-337
-.
-↑
-Frédéric Lasserre et Aline Lechaume (
-dir.
-),
-Le territoire pensé
-: géographie des représentations territoriales
-, Québec,
-Presses de l'Université du Québec
-,
-2003
-, 346
-p.
-(
-ISBN
-978-2760512245
-)
-,
-p.
-125
-.
-1
-2
-(en)
-«
-Jews in Islamic Countries: Tunisia
-», sur
-Jewish Virtual Library
-(consulté le
-19 novembre 2017
-)
-.
-↑
-Ridha Kéfi
-, «
-L'émigration des juifs tunisiens vers Israël (1948-1967)
-»,
-Jeune Afrique
-,
-‎
-29 août 2005
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-Jean-Pierre Séréni, «
-Économie tunisienne. Les leçons oubliées de l'expérience Ben Salah
-», sur
-Orient XXI
-,
-8 septembre 2019
-(consulté le
-29 septembre 2019
-)
-.
-↑
-Examens de l'OCDE des politiques de l'investissement (Tunisie)
-, Paris, OECD Publishing,
-2012
-, 166
-p.
-(
-ISBN
-978-9264179431
-,
-lire en ligne
-)
-,
-p.
-83
-.
-↑
-Moncef Marzouki
-,
-Dictateurs en sursis
-: une voie démocratique pour le monde arabe
-, Ivry-sur-Seine,
-Éditions de l'Atelier
-,
-2009
-, 191
-p.
-(
-ISBN
-978-2708240476
-,
-lire en ligne
-)
-,
-p.
-21
-.
-1
-2
-3
-4
-Chautard 2006
-,
-p.
-169
-.
-1
-2
-(en)
-Lois Gottesman,
-«
-Jews in the Middle East
-»
-, dans
-American Jewish Year Book
-, New York,
-American Jewish Committee
-,
-1985
-(
-lire en ligne
-)
-,
-p.
-308
-.
-↑
-(en)
-«
-Policeman shoots into Jewish quarter
-», sur
-upi.com
-,
-8 octobre 1985
-(consulté le
-2 novembre 2023
-)
-.
-↑
-(en)
-Country Reports on Human Rights Practices for 1982
-, Washington,
-Département d'État des États-Unis
-,
-1983
-,
-p.
-1290-1291
-.
-↑
-(en)
-Country Reports on Human Rights Practices for 1985
-, Washington,
-Département d'État des États-Unis
-,
-1986
-,
-p.
-1321
-.
-1
-2
-Samir Gharbi, «
-Radiographie d'une élection
-»,
-Jeune Afrique
-,
-‎
-2 novembre 1999
-(
-ISSN
-1950-1285
-)
-.
-↑
-«
-Zine el-Abidine Ben Ali
-»
-, sur
-Encarta
-(version du
-28 mars 2008
-sur
-archive.org
-)
-:
-«
-avance le chiffre de 99,80
-%.
-»
-1
-2
-Camau et Geisser 2004
-,
-p.
-241
-.
-↑
-Myriam Catusse, Blandine Destremau et Éric Verdier,
-L'État face aux débordements du social au Maghreb
-: formation, travail et protection sociale
-, Paris,
-Éditions Karthala
-,
-2010
-, 458
-p.
-(
-ISBN
-978-2811103194
-,
-lire en ligne
-)
-,
-p.
-173
-.
-↑
-Baudouin Loos, «
-L'irrésistible ascension de Leila
-»,
-Le Soir
-,
-‎
-26 octobre 2009
-(
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie - Mohamed Sakher El Materi devient député
-», sur
-businessnews.com.tn
-,
-26 octobre 2009
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-Benjamin MacQueen,
-An Introduction to Middle East Politics
-: Continuity, Change, Conflict and Co-operation
-, New York, Sage Publications,
-2013
-, 448
-p.
-(
-ISBN
-978-1446275566
-,
-lire en ligne
-)
-,
-p.
-365
-.
-↑
-Gérard-François Dumont
-, «
-Tunisie
-: si Ben Ali avait appris la géopolitique des populations
-»,
-Population et Avenir
-,
-n
-o
-702,
-‎
-mars-avril 2011
-,
-p.
-3
-(
-ISSN
-0223-5706
-,
-lire en ligne
-, consulté le
-19 janvier 2019
-)
-.
-↑
-Julie Calleeuw, «
-Tunisie
-: les Trabelsi, une «
-quasi-mafia
-»
-», sur
-Radio-télévision belge de la Communauté française
-,
-14 janvier 2011
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie - L'état d'urgence est décrété dans l'ensemble du pays
-»,
-Le Point
-,
-‎
-14 janvier 2011
-(
-ISSN
-0242-6005
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Ben Ali en route vers Malte… avant Paris
-?
-»,
-L'Express
-,
-‎
-14 janvier 2011
-(
-ISSN
-0014-5270
-,
-lire en ligne
-, consulté le
-22 mars 2025
-)
-.
-↑
-«
-Après le départ de Ben Ali, la Tunisie se tourne vers l'avenir
-»,
-Le Parisien
-,
-‎
-15 janvier 2011
-(
-ISSN
-0767-3558
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Les 24 membres du nouveau gouvernement tunisien
-»,
-Le Parisien
-,
-‎
-17 janvier 2011
-(
-ISSN
-0767-3558
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: le gouverneur de la banque centrale limogé
-»,
-Le Parisien
-,
-‎
-17 janvier 2011
-(
-ISSN
-0767-3558
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: le gouvernement d'union nationale explose déjà
-»,
-Le Nouvel Obs
-,
-‎
-18 janvier 2011
-(
-ISSN
-0029-4713
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: le président et le PM quittent le RCD
-», sur
-Europe 1
-,
-18 janvier 2011
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: manifestations pour exiger la dissolution du parti de Ben Ali
-»,
-Le Monde
-,
-‎
-17 janvier 2011
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: les ministres quittent le parti de Ben Ali
-»,
-Le Parisien
-,
-‎
-20 janvier 2011
-(
-ISSN
-0767-3558
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Le Premier ministre tunisien démissionne, remplacé par Béji Caïd Essebsi
-»,
-Le Monde
-,
-‎
-27 février 2011
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-Pierre Boisselet, «
-Béji Caïd Essebsi remplace Mohamed Ghannouchi au poste de Premier ministre
-»,
-Jeune Afrique
-,
-‎
-28 février 2011
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Tunisie
-: deux morts dans l'attaque de l'ambassade américaine
-», sur
-RFI
-,
-15 septembre 2012
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: l'état d'urgence prolongé de 3 mois après des affrontements avec des salafistes
-»,
-Le Monde
-,
-‎
-1
-er
-novembre 2012
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Présidentielle en Tunisie
-: Essebsi récolte 39,46
-% des suffrages
-»,
-Le Figaro
-,
-‎
-25 novembre 2014
-(
-ISSN
-0182-5852
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-1
-2
-«
-Tunisie
-: le candidat laïque Béji Caïd Essebsi remporte la présidentielle avec 55,68
-% des voix
-», sur
-France Info
-,
-25 novembre 2014
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-(en)
-«
-The Nobel Peace Prize 2015
-», sur
-Prix Nobel
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Charles Nicolle
-reçoit le
-prix Nobel de physiologie ou médecine
-1928
-«
-pour ses travaux sur le
-typhus
-»
-à la tête de l'
-Institut Pasteur de Tunis
-.
-↑
-«
-L'ONU salue l'attribution du Prix Nobel de la paix au Quartet du dialogue national tunisien
-», sur
-Organisation des Nations unies
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Le Prix Nobel qui vient d'être remis à la Tunisie consacre la réussite de la transition démocratique
-», sur
-Président de la République française
-(consulté le
-8 octobre 2022
-)
-.
-↑
-«
-L'inflation atteint 5,7
-% en août 2017, le taux le plus élevé depuis 2015 (INS)
-», sur
-HuffPost Maghreb
-,
-8 septembre 2017
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: la dette publique grimpe à 66,9
-% du PIB
-», sur
-HuffPost Maghreb
-,
-7 septembre 2017
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Manifestations, grèves, violences
-: comprendre la crise en Tunisie en quatre questions
-»,
-Le Figaro
-,
-‎
-11 janvier 2018
-(
-ISSN
-0182-5852
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-: le point sur les mouvements sociaux qui grondent
-», sur
-France Info
-,
-10 janvier 2018
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Nuit d'émeutes en Tunisie
-», sur
-France Info
-,
-10 janvier 2018
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-3
-Thierry Brésillon, «
-Une Tunisie contre l'autre
-»,
-Le Monde diplomatique
-,
-n
-o
-776,
-‎
-novembre 2018
-,
-p.
-11
-(
-ISSN
-0026-9395
-,
-lire en ligne
-, consulté le
-13 novembre 2019
-)
-.
-↑
-«
-Élections législatives en Tunisie
-: le parti d'inspiration islamiste Ennahda en tête mais loin de la majorité
-»,
-Le Monde
-,
-‎
-10 octobre 2019
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-13 février 2020
-)
-.
-↑
-Frédéric Bobin, Mohamed Haddad et Lilia Blaise, «
-Élection présidentielle en Tunisie
-: Kaïs Saïed, ou le nouveau paradigme tunisien
-»,
-Le Monde
-,
-‎
-13 octobre 2019
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-13 février 2020
-)
-.
-↑
-«
-Kais Saied prend tous les pouvoirs en main, suspend le parlement, limoge Mechichi et s'érige en chef de l'exécutif et du parquet
-», sur
-Leaders
-,
-25 juillet 2021
-(consulté le
-25 juillet 2021
-)
-.
-↑
-«
-Le président de la République publie des dispositions exceptionnelles
-», sur
-Mosaïque FM
-,
-22 septembre 2021
-(consulté le
-22 septembre 2021
-)
-.
-↑
-«
-Tunisie
-: Kaïs Saïed renforce les pouvoirs de la présidence
-»,
-Le Figaro
-,
-‎
-22 septembre 2021
-(
-ISSN
-0182-5852
-,
-lire en ligne
-, consulté le
-23 septembre 2021
-)
-.
-↑
-«
-Kaïs Saïed, seul maître à bord en Tunisie
-»,
-Le Temps
-,
-‎
-23 septembre 2021
-(
-ISSN
-1423-3967
-,
-lire en ligne
-, consulté le
-23 septembre 2021
-)
-.
-↑
-«
-En Tunisie, le président Saïed annonce un référendum constitutionnel pour l'été 2022
-»,
-Le Monde
-,
-‎
-14 décembre 2021
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-31 mai 2022
-)
-.
-↑
-«
-Les résultats officiels du référendum
-», sur
-tunisienumerique.com
-,
-26 juillet 2022
-(consulté le
-26 juillet 2022
-)
-.
-↑
-«
-Loi n°59-57 du
-1
-er
-juin 1959, portant promulgation de la Constitution
-»,
-Journal officiel de la République tunisienne
-,
-n
-o
-30,
-‎
-1
-er
-juin 1959
-,
-p.
-746-759
-(
-ISSN
-0330-7921
-,
-lire en ligne
-[
-PDF
-]
-)
-.
-↑
-«
-Constitution tunisienne du
-1
-er
-1959 (version de 2008)
-», sur
-mjp.univ-perp.fr
-,
-Université de Perpignan
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Maria Cristina Paciello, «
-Tunisia: Changes and Challenges of Political Transition
-»
-[
-PDF
-]
-, sur
-constitutionnet.org
-,
-mai 2011
-(consulté le
-28 février 2026
-)
-,
-p.
-2
-.
-↑
-«
-Rapport du Groupe de travail sur l'Examen périodique universel de la Tunisie
-»
-[
-PDF
-]
-, sur
-UPR Info
-(consulté le
-22 mars 2025
-)
-.
-↑
-(en)
-John Esposito
-,
-Tamara Sonn
-(en)
-et
-John Obert Voll
-(en)
-,
-Islam and Democracy after the Arab Spring
-, Oxford,
-Oxford University Press
-,
-2016
-, 306
-p.
-(
-ISBN
-978-0195147988
-,
-lire en ligne
-)
-,
-p.
-174–201
-.
-↑
-«
-Tunisie
-», sur
-perspective.usherbrooke.ca
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Harold D. Nelson,
-Tunisia
-: a country study
-, Washington,
-American University
-,
-coll.
-«
-Library of Congress Country Studies
-(en)
-»,
-1986
-, 90
-p.
-(
-ISSN
-1057-5294
-,
-lire en ligne
-)
-, xvi
-.
-↑
-«
-Constitution du 27 janvier 2014
-», sur
-mjp.univ-perp.fr
-,
-Université de Perpignan
-(consulté le
-10 avril 2022
-)
-.
-↑
-(en)
-«
-Tunisia
-», sur
-Transparency International
-,
-2025
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-En Tunisie, Najla Bouden nommée première ministre
-»,
-Le Monde
-,
-‎
-29 septembre 2021
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-Thomas Paillaute, «
-Vague d'arrestations en Tunisie, diversion ou complot
-?
-»,
-Jeune Afrique
-,
-‎
-3 mars 2023
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-24 février 2024
-)
-.
-↑
-Mathieu Galtier
-, «
-Arrestations d'opposants en Tunisie
-: «On a basculé dans une paranoïa d'État»
-»,
-Libération
-,
-‎
-10 février 2024
-(
-ISSN
-0335-1793
-,
-lire en ligne
-, consulté le
-24 février 2024
-)
-.
-↑
-Mathieu Galtier
-, «
-Tunisie
-: tensions entre le président Kaïs Saïed et les diplomates européens sur fond de répression politique
-»,
-Libération
-,
-‎
-17 septembre 2023
-(
-ISSN
-0335-1793
-,
-lire en ligne
-, consulté le
-24 février 2024
-)
-.
-↑
-Joseph Bemba,
-Dictionnaire de la justice internationale, de la paix et du développement durable
-: principaux termes et expressions
-, Paris,
-Éditions L'Harmattan
-,
-2011
-, 454
-p.
-(
-ISBN
-978-2296468856
-,
-lire en ligne
-)
-,
-p.
-45
-.
-↑
-«
-Discours de Jéricho du président tunisien
-», sur
-perspective.usherbrooke.ca
-,
-3 mars 1965
-(consulté le
-20 janvier 2019
-)
-.
-1
-2
-3
-4
-5
-(en)
-«
-Tunisia
-», sur
-2009-2017.state.gov
-,
-Département d'État des États-Unis
-,
-9 mars 2012
-(consulté le
-28 février 2026
-)
-.
-↑
-Frida Dahmani, «
-Il y a quarante ans, Israël bombardait le siège de l'OLP à Tunis
-»,
-Jeune Afrique
-,
-‎
-29 août 2005
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Tunisie
-: la visite d'une délégation israélienne est entourée d'une extrême discrétion
-»,
-Le Monde
-,
-‎
-22 septembre 1993
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-Recueil de jurisprudence internationale concernant le droit de la mer
-, New York, United Nations Publications,
-2008
-, 264
-p.
-(
-ISBN
-978-9212334325
-,
-lire en ligne
-)
-,
-p.
-59-64
-.
-↑
-Riad Meddeb,
-Les entreprises multinationales dans l'industrie du textile-habillement en Tunisie
-: l'impact économique et social
-, Genève,
-Organisation internationale du travail
-,
-1998
-, 46
-p.
-(
-ISBN
-978-9222110926
-,
-lire en ligne
-)
-,
-p.
-30
-.
-↑
-«
-21
-e
-séance plénière de la 55
-e
-session de l'Assemblée générale
-», sur
-docs.un.org
-,
-Organisation des Nations unies
-,
-18 septembre 2000
-(consulté le
-28 février 2026
-)
-,
-p.
-17-18
-.
-↑
-«
-Résolution 57/265
-: création du Fonds de solidarité mondial
-», sur
-docs.un.org
-,
-Organisation des Nations unies
-,
-20 décembre 2002
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-«
-Données sur l'armée tunisienne
-»
-[PDF]
-, sur
-inss.org.il
-(version du
-20 novembre 2008
-sur
-archive.org
-)
-.
-↑
-«
-Maintien de la paix
-: une spécialité tunisienne
-»,
-Jeune Afrique
-,
-‎
-24 juin 2007
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-«
-Droits et libertés
-»
-, sur
-majles.marsad.tn
-(version du
-23 mars 2019
-sur
-archive.org
-)
-.
-1
-2
-3
-«
-Chapitre premier - Dispositions générales
-», sur
-jurisitetunisie.com
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-3
-4
-«
-Pouvoir judiciaire
-»
-, sur
-majles.marsad.tn
-(version du
-23 mars 2019
-sur
-archive.org
-)
-.
-1
-2
-«
-Conventions internationales et protocoles facultatifs ratifiés par la Tunisie
-», sur
-onu-tn.org
-,
-3 février 2011
-(consulté le
-19 janvier 2019
-)
-.
-↑
-AFP
-, «
-Contre le terrorisme, la Tunisie rétablit la peine capitale
-»,
-Libération
-,
-‎
-25 juillet 2015
-(
-ISSN
-0335-1793
-,
-lire en ligne
-, consulté le
-23 mars 2025
-)
-.
-↑
-«
-Structure du PIB en 2010
-»
-, sur
-investintunisia.tn
-(version du
-15 juin 2011
-sur
-archive.org
-)
-.
-↑
-André Wilmots,
-De Bourguiba à Ben Ali
-: l'étonnant parcours économique de la Tunisie (1960-2000)
-, Paris,
-Éditions L'Harmattan
-,
-2003
-, 148
-p.
-(
-ISBN
-978-2747548403
-,
-lire en ligne
-)
-,
-p.
-17
-.
-↑
-«
-Évolution de la population active selon le sexe
-», sur
-Institut national de la statistique
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Wilmots 2003
-,
-p.
-75-76
-.
-↑
-Jean-Pierre Sereni, «
-Comment Ben Ali a pillé la Tunisie en toute légalité
-», sur
-Orient XXI
-,
-9 avril 2014
-(consulté le
-4 septembre 2020
-)
-.
-1
-2
-Olfa Lamloum
-, «
-En Tunisie, les braises persistantes de l'esprit de révolte
-»,
-Le Monde diplomatique
-,
-‎
-janvier 2021
-,
-p.
-6-7
-(
-ISSN
-0026-9395
-,
-lire en ligne
-, consulté le
-16 janvier 2022
-)
-.
-↑
-Le Bilan du Monde
-, Paris, Le Monde,
-2024
-(
-ISBN
-978-2368041598
-)
-,
-p.
-147
-.
-↑
-«
-Indice mondial de l'innovation 2025
-: quelles sont les économies les plus innovantes en 2025
-?
-», sur
-Organisation mondiale de la propriété intellectuelle
-,
-2025
-(consulté le
-9 octobre 2025
-)
-.
-↑
-Maurice Wolkowitsch, «
-L'émigration des Français de Tunisie
-»,
-Annales de géographie
-,
-vol.
-68,
-n
-o
-367,
-‎
-1959
-,
-p.
-253-257
-(
-ISSN
-0003-4010
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Wilmots 2003
-,
-p.
-11-12
-.
-1
-2
-3
-4
-Christian Morrisson et Béchir Talbi,
-La croissance de l'économie tunisienne en longue période
-, Paris,
-Organisation de coopération et de développement économiques
-,
-1996
-, 149
-p.
-(
-ISBN
-978-9264249257
-)
-.
-1
-2
-(en)
-Emma Murphy,
-Economic and political change in Tunisia
-: From Bourguiba to Ben Ali
-, Londres,
-Palgrave Macmillan
-,
-1999
-, 285
-p.
-(
-ISBN
-9780-333983584
-,
-lire en ligne
-)
-.
-↑
-Wilmots 2003
-,
-p.
-94
-.
-↑
-Wilmots 2003
-,
-p.
-103
-.
-↑
-Wilmots 2003
-,
-p.
-53
-.
-↑
-Michel Camau et
-Vincent Geisser
-,
-Le syndrome autoritaire
-: politique en Tunisie de Bourguiba à Ben Ali
-, Paris,
-Presses de Sciences Po
-,
-2003
-, 365
-p.
-(
-ISBN
-978-2724608793
-)
-.
-↑
-«
-Bilan global des privatisations
-»
-, sur
-privatisation.gov.tn
-(version du
-8 janvier 2007
-sur
-archive.org
-)
-.
-1
-2
-Chloé Hoorman, «
-Le grand bain de la mondialisation
-»,
-L'Express
-,
-‎
-10 janvier 2005
-(
-ISSN
-0014-5270
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Défis de la Tunisie
-»
-, sur
-tn.undp.org
-(version du
-6 juin 2007
-sur
-archive.org
-)
-.
-↑
-Nadia Hachimi Alaoui, «
-En Tunisie, le malaise de la génération Ben Ali
-»,
-Libération
-,
-‎
-28 avril 2008
-(
-ISSN
-0335-1793
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-Samir Gharbi, «
-Un mariage de raison
-»,
-Jeune Afrique
-,
-‎
-23 mars 2008
-,
-p.
-74
-(
-ISSN
-1950-1285
-)
-.
-↑
-Julien Clémençot, «
-Tunisie
-: empire familial cherche repreneurs
-»,
-Jeune Afrique
-,
-‎
-26 janvier 2011
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-24 février 2024
-)
-.
-↑
-Abdelaziz Barrouhi, «
-Pour 500 millions de consommateurs de plus
-»,
-Jeune Afrique
-,
-‎
-25 mars 2008
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-«
-Agroalimentaire
-: la Tunisie devient le
-2
-e
-producteur mondial d'huile d'olive
-», sur
-webmanagercenter.com
-,
-15 janvier 2015
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Statistiques du secteur oléicole – Février 2025
-», sur
-internationaloliveoil.org
-(consulté le
-23 mars 2025
-)
-.
-↑
-«
-Établissements publics
-»
-, sur
-onagri.nat.tn
-(version du
-10 juillet 2007
-sur
-archive.org
-)
-.
-↑
-«
-Colloque Sénat-Ubifrance sur la Tunisie - 24 juin 2004
-», sur
-senat.fr
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie – Tourisme
-: forcing pour la promotion du tourisme durable
-», sur
-tunisienumerique.com
-,
-5 janvier 2024
-(consulté le
-5 janvier 2024
-)
-.
-1
-2
-(en)
-«
-Destruction of the Mediterranean by mass tourism poses a challenge for industry, warns WWF
-», sur
-wwf.panda.org
-,
-1
-er
-mars 2001
-(consulté le
-1
-er
-janvier 2023
-)
-.
-↑
-«
-Magasin Général
-: En attendant la privatisation…
-»
-, sur
-investir-en-tunisie.net
-(version du
-4 janvier 2009
-sur
-archive.org
-)
-.
-1
-2
-3
-«
-Organisation des canaux de distribution
-»
-, sur
-laposte-export-solutions.com
-(version du
-1
-er
-juin 2007
-sur
-archive.org
-)
-.
-↑
-Amira Gasmi, «
-Prévision du trafic aérien de passagers
-: mise en évidence de la méthode de combinaison de prévisions
-»,
-Les Cahiers scientifiques du transport
-,
-n
-o
-65,
-‎
-2014
-,
-p.
-97-123
-(
-ISSN
-1150-8809
-,
-lire en ligne
-[
-PDF
-]
-, consulté le
-28 février 2026
-)
-.
-↑
-(en)
-«
-Tunisia Plans $1 Billion Expansion of Its Main International Airport
-», sur
-ecofinagency.com
-,
-14 novembre 2025
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Chiffres
-»
-, sur
-Société nationale des chemins de fer tunisiens
-(version du
-31 janvier 2018
-sur
-archive.org
-)
-.
-↑
-Imprimerie officielle de la République tunisienne, «
-Code de la route et ses textes d'application
-»
-[
-PDF
-]
-, sur
-droit-afrique.com
-(consulté le
-13 juillet 2018
-)
-.
-1
-2
-«
-Télécom et Internet en Tunisie
-»
-, sur
-medibtikar.eu
-(version du
-19 janvier 2008
-sur
-archive.org
-)
-.
-↑
-«
-Abonnements à la téléphonie fixe - Tunisie
-», sur
-donnees.banquemondiale.org
-,
-Banque mondiale
-(consulté le
-11 avril 2025
-)
-.
-↑
-«
-Abonnements à la téléphonie mobile - Tunisie
-», sur
-donnees.banquemondiale.org
-,
-Banque mondiale
-(consulté le
-11 avril 2025
-)
-.
-↑
-«
-Utilisateurs d'Internet (% de la population) - Tunisie
-», sur
-donnees.banquemondiale.org
-,
-Banque mondiale
-(consulté le
-11 avril 2025
-)
-.
-↑
-Monia Bamri, «
-Tunisie Telecom, leader incontesté sur le marché de la téléphonie fixe en Tunisie
-», sur
-webdo.tn
-,
-10 mars 2025
-(consulté le
-11 avril 2025
-)
-.
-↑
-«
-Ooredoo confirme son leadership, Orange en progression, Tunisie Télécom en recul
-», sur
-tunisienumerique.com
-,
-10 mars 2025
-(consulté le
-11 avril 2025
-)
-.
-↑
-Chokri Gharbi, «
-Tunisie
-: des actions ciblées pour les secteurs énergivores
-»,
-La Presse de Tunisie
-,
-‎
-25 août 2006
-(
-ISSN
-0330-9991
-)
-.
-↑
-Depuis 1994, la Compagnie des phosphates de Gafsa et le Groupe chimique tunisien sont gérées par le même président-directeur général et leurs directions générales commerciales ont été fusionnées.
-↑
-«
-Les gisements de phosphates dans le monde
-», sur
-Organisation des Nations unies pour l'alimentation et l'agriculture
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-(en)
-«
-Tunisia
-», sur
-Central Intelligence Agency
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Julien Clémençot, «
-La Tunisie met les gaz
-»,
-Jeune Afrique
-,
-‎
-27 septembre 2012
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-Louis Pouillon, «
-Tunisie
-: les enjeux de la transition énergétique
-», sur
-arabnews.fr
-,
-20 mai 2022
-(consulté le
-25 mai 2022
-)
-.
-↑
-«
-La Tunisie, sixième plus grand importateur africain de panneaux solaires chinois
-»,
-La Presse de Tunisie
-,
-‎
-1
-er
-septembre 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-1
-er
-septembre 2025
-)
-.
-↑
-Samir Aounallah
-,
-L'Antiquité tunisienne
-: de la fondation d'Utique à la chute de Carthage, dix-huit siècles d'histoire (1101 avant J.-C. — 698 après J.-C.)
-, Tunis, Nirvana,
-2020
-, 384
-p.
-(
-ISBN
-978-9938530575
-,
-lire en ligne
-)
-.
-↑
-(en)
-«
-Tunisia
-», sur
-Encyclopædia Britannica Online
-(consulté le
-16 novembre 2022
-)
-.
-↑
-Selon
-Gabriel Camps
-,
-Les Berbères
-: mémoire et identité
-, Paris, Errance,
-1995
-, 260
-p.
-(
-ISBN
-978-2877721059
-)
-,
-p.
-102
-,
-«
-en renforçant par leur présence la part de population nomade, les Arabes arrivés au
-X
-e
-siècle ont été d'un poids insignifiant sur le plan démographique, mais déterminant sur le plan culturel et socio-économique
-»
-.
-↑
-Marc Côte, «
-Les montagnes du Maghreb
-: un cas de déterminisme géographique
-?
-»
-[
-PDF
-]
-, sur
-cafe-geo.net
-,
-15 novembre 2001
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-«
-Tunisia's Constitution of 2014
-»
-[
-PDF
-]
-, sur
-constituteproject.org
-(consulté le
-28 février 2026
-)
-.
-1
-2
-3
-4
-5
-(en)
-«
-2022 Report on International Religious Freedom: Tunisia
-», sur
-Département d'État des États-Unis
-(consulté le
-28 février 2026
-)
-.
-↑
-Geneviève Bédoucha,
-«
-L'État face aux razzias de ses anciens nomades
-: sédentarisation et détribalisation dans le Sahara tunisien
-»
-, dans
-Pierre Bonte
-,
-Édouard Conte
-et Paul Dresch,
-Émirs et présidents
-: figures de la parenté et du politique dans le monde arabe
-, Paris,
-CNRS Éditions
-,
-2001
-(
-ISBN
-978-2271058256
-,
-lire en ligne
-)
-,
-p.
-247-271
-.
-↑
-«
-La Tunisie possède la population la plus vieille d'Afrique
-!
-»
-, sur
-HuffPost Maghreb
-,
-12 septembre 2014
-(version du
-13 septembre 2014
-sur
-archive.org
-)
-.
-↑
-«
-Répartition de la communauté tunisienne à l'étranger (2012)
-»
-[
-PDF
-]
-, sur
-ote.nat.tn
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Dans l'impasse en Tunisie, de plus en plus de migrants rapatriés dans leur pays d'origine
-»,
-Le Monde
-,
-‎
-27 juin 2024
-(
-ISSN
-0395-2037
-,
-lire en ligne
-, consulté le
-30 juin 2024
-)
-.
-↑
-«
-Recensement général de la population et de l'habitat 2014
-»
-[
-PDF
-]
-, sur
-beta.ins.tn
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Tunisie
-»
-, sur
-Encarta
-(version du
-9 février 2009
-sur
-archive.org
-)
-.
-↑
-[vidéo]
-«
-Ibadites de Djerba
-: l'autre islam tunisien
-, film de Agnès De Féo, Sasana Productions, 2015
-», sur
-YouTube
-.
-↑
-Jamel Arfaoui,
-«
-La tolérance religieuse fleurit sur l'île tunisienne de Djerba
-»
-, sur
-magharebia.com
-,
-6 juin 2008
-(version du
-26 novembre 2010
-sur
-archive.org
-)
-.
-↑
-Mourad Sellami, «
-La tolérance religieuse en Tunisie
-», sur
-unmondelibre.org
-,
-28 avril 2008
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Sebag 1991
-,
-p.
-12
-.
-↑
-Carmel Camilleri, «
-Famille et modernité en Tunisie
-»,
-Revue tunisienne de sciences sociales
-,
-n
-o
-11,
-‎
-1967
-(
-ISSN
-0035-4333
-)
-.
-1
-2
-«
-Tunisie
-»
-, sur
-tlfq.ulaval.ca
-(version du
-7 juin 2011
-sur
-archive.org
-)
-.
-↑
-Taïeb Baccouche
-(
-préf.
-André Martinet
-),
-Travaux de phonologie
-: parlers de Djemmal, Gabès, Mahdia (Tunisie) et Tréviso (Italie)
-, Tunis,
-Centre d'études et de recherches économiques et sociales
-,
-1969
-, 157
-p.
-↑
-Juliette Garmadi-Le Cloirec, «
-Remarques sur la syntaxe du français de Tunisie
-»,
-Langue française
-,
-vol.
-68,
-‎
-1977
-,
-p.
-86
-(
-ISSN
-0023-8368
-,
-lire en ligne
-, consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-Albert J. Borg et Marie Azzopardi-Alexander,
-Maltese
-, New York,
-Routledge
-,
-1996
-, 395
-p.
-(
-ISBN
-978-0415022439
-,
-lire en ligne
-)
-,
-p.
-XIII
-.
-1
-2
-3
-4
-5
-Samy Ghorbal, «
-Le français a-t-il encore un avenir
-?
-»,
-Jeune Afrique
-,
-‎
-27 avril 2008
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-«
-Tunisie
-», sur
-francophonie.org
-(consulté le
-18 janvier 2019
-)
-.
-↑
-«
-Collectivités adhérentes et associations nationales de régions
-»
-[
-PDF
-]
-, sur
-regions-francophones.com
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Christian Valantin (
-dir.
-),
-La Francophonie dans le monde
-: 2006-2007
-, Paris,
-Nathan
-,
-2007
-, 320
-p.
-(
-ISBN
-978-2098821774
-,
-lire en ligne
-)
-,
-p.
-16
-.
-↑
-(ar)
-«
-القنوات الإذاعية العمومية
-» [«
-Stations de radio publiques
-»], sur
-Haute Autorité indépendante de la communication audiovisuelle
-(consulté le
-28 février 2026
-)
-.
-↑
-(ar)
-«
-القنوات الإذاعية الخاصة
-» [«
-Stations de radio privées
-»], sur
-Haute Autorité indépendante de la communication audiovisuelle
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Tunisie – 111 partis autorisés et 162 autres refusés
-!
-», sur
-businessnews.com.tn
-,
-20 septembre 2011
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-«
-Loi d'orientation de l'éducation et de l'enseignement scolaire
-»
-[PDF]
-, sur
-planipolis.iiep.unesco.org
-(version du
-28 avril 2014
-sur
-archive.org
-)
-.
-1
-2
-3
-4
-5
-«
-Accompagnement d'un élève non francophone
-: le système éducatif tunisien
-»
-, sur
-ac-nancy-metz.fr
-(version du
-6 mars 2012
-sur
-archive.org
-)
-.
-↑
-C'est en 1996 qu'est prise la décision que l'élève doit effectuer au moins neuf ans d'enseignement avant de pouvoir quitter le système scolaire.
-↑
-Samir Gharbi, «
-Réformes en terrain sensible
-»,
-Jeune Afrique
-,
-‎
-21 septembre 2008
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-Noah Yarrow, «
-L'éducation en Tunisie
-: la technologie, un outil pour améliorer l'école
-», sur
-blogs.worldbank.org
-,
-24 octobre 2017
-(consulté le
-16 septembre 2021
-)
-.
-↑
-Camille Lafrance, «
-Coronavirus
-: le cri d'alarme des médecins tunisiens
-»,
-Jeune Afrique
-,
-‎
-25 septembre 2020
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-↑
-Nehed Jendoubi, «
-Tunisie
-: le nombre de cas de Covid-19 explose depuis le début du ramadan
-»,
-Jeune Afrique
-,
-‎
-23 avril 2021
-(
-ISSN
-1950-1285
-,
-lire en ligne
-, consulté le
-1
-er
-octobre 2021
-)
-.
-1
-2
-3
-4
-5
-6
-(en)
-Joseph Fahim, «
-10 great Tunisian films
-», sur
-British Film Institute
-,
-18 mai 2023
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Les Silences du palais
-», sur
-Festival de Cannes
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-«
-Prizes of the International Jury 2016
-», sur
-Berlinale
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Jill Serjeant, «
-Tunisia makes Oscars history with 'The Man Who Sold His Skin' nomination
-», sur
-Reuters
-,
-15 mars 2021
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-«
-Four Daughters
-– Festival de Cannes 2023 Official Selection
-», sur
-Festival de Cannes
-(consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Jake Coyle, «
-Oscar nominations 2024: ‘Four Daughters' earns documentary nod
-», sur
-Associated Press
-,
-23 janvier 2024
-(consulté le
-28 février 2026
-)
-.
-1
-2
-3
-«
-Théâtre municipal de Tunis
-»
-, sur
-saisonstunisiennes.com
-(version du
-22 juin 2007
-sur
-archive.org
-)
-.
-↑
-Saïd 1970
-,
-p.
-53
-.
-↑
-Saïd 1970
-,
-p.
-47
-.
-1
-2
-«
-Quatrième art
-»
-, sur
-saisonstunisiennes.com
-(version du
-19 mai 2008
-sur
-archive.org
-)
-.
-1
-2
-«
-Théâtre municipal de Tunis
-»
-, sur
-saisonstunisiennes.com
-(version du
-15 juillet 2011
-sur
-archive.org
-)
-.
-1
-2
-3
-4
-«
-Art et culture : un pays pour les peintres
-»
-, sur
-guides.tangka.com
-(version du
-25 janvier 2011
-sur
-archive.org
-)
-.
-↑
-«
-Le livre culturel
-»
-, sur
-culture.tn
-(version du
-23 août 2009
-sur
-archive.org
-)
-.
-↑
-«
-Guellala (île de Djerba)
-»
-, sur
-Encarta
-(version du
-8 avril 2008
-sur
-archive.org
-)
-.
-↑
-Tunisie
-, Paris,
-Michelin
-,
-2005
-, 352
-p.
-(
-ISBN
-978-2067109766
-)
-,
-p.
-293
-.
-↑
-«
-Portail national de l'artisanat tunisien
-»
-, sur
-artisanat.nat.tn
-(version du
-30 mars 2008
-sur
-archive.org
-)
-.
-↑
-«
-Quand les portes cloutées de Tunis racontent l'Histoire la Tunisie
-», sur
-Leaders
-,
-19 octobre 2019
-(consulté le
-28 février 2026
-)
-.
-↑
-Fatma Zaghouani, «
-Tapis kairouanais
-: la relance grâce à la dynamique touristique
-»,
-La Presse de Tunisie
-,
-‎
-24 janvier 2026
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-(en)
-Aïcha Ben Abed Ben Khader
-,
-Tunisian mosaics
-: treasures from Roman Africa
-, Los Angeles,
-Getty Conservation Institute
-,
-2006
-, 138
-p.
-(
-ISBN
-978-0892368570
-)
-.
-1
-2
-«
-Costume traditionnel
-»
-, sur
-artisanat.nat.tn
-(version du
-16 février 2008
-sur
-archive.org
-)
-.
-1
-2
-«
-Portail national de l'artisanat tunisien
-»
-, sur
-artisanat.nat.tn
-(version du
-30 mars 2008
-sur
-archive.org
-)
-.
-↑
-Pierre-Yves Mercier, Vincent Noyoux et
-Fawzia Zouari
-,
-GEOGuide Tunisie
-, Paris, Gallimard Loisirs,
-2010
-, 408
-p.
-(
-ISBN
-978-2742426379
-)
-,
-p.
-407
-.
-↑
-«
-Jasmin d'hiver
-», sur
-aujardin.info
-(consulté le
-18 janvier 2019
-)
-.
-1
-2
-«
-Festivals d'été en Tunisie
-: c'est l'heure du choix
-»,
-La Presse de Tunisie
-,
-‎
-13 juin 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Retour aux sources et décloisonnement des espaces
-»,
-La Presse de Tunisie
-,
-‎
-8 février 2019
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-Asma Drissi, «
-Sicca Jazz 2026
-: le jazz comme boussole, Le Kef comme territoire
-»,
-La Presse de Tunisie
-,
-‎
-2 février 2026
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Programme du Tabarka Jazz Festival (20 au 24 août 2019)
-», sur
-Kapitalis
-,
-22 juillet 2019
-(consulté le
-28 février 2026
-)
-.
-↑
-Meysem Marrouki, «
-JCC 2025
-: retour aux sources
-»,
-La Presse de Tunisie
-,
-‎
-5 décembre 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-Rihab Boukhayatia, «
-Les JCC ont-elles définitivement perdu leur aura
-?
-», sur
-Nawaat
-,
-25 décembre 2025
-(consulté le
-28 février 2026
-)
-.
-↑
-Hafedh Trabelsi, «
-Douz – 57
-e
-édition du festival international du Sahara
-: quand la tradition devient le moteur d'une région
-»,
-La Presse de Tunisie
-,
-‎
-24 décembre 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-1
-2
-3
-Christel Brion, «
-Les 1 001 délices de Tunis
-»,
-Le Nouvel Obs
-,
-‎
-15 novembre 2020
-(
-ISSN
-0029-4713
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-1
-2
-3
-4
-5
-6
-Hella Lahbib, «
-Tunisie
-: entre influences et identité - La cuisine tunisienne, un art de la transformation
-»,
-La Presse de Tunisie
-,
-‎
-30 juin 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Situation en Tunisie
-», sur
-nutrition.rns.tn
-(consulté le
-18 janvier 2019
-)
-.
-↑
-Hanene Mabrouk-Hali, «
-Les Tunisiens les
-2
-e
-plus gros consommateurs de pâtes dans le monde, avec 16 kg/an
-», sur
-mangeonsbien.com
-,
-25 octobre 2017
-(consulté le
-25 mars 2025
-)
-.
-↑
-Ridha Bergaoui, «
-Tunisie
-: des boulangeries agréées et des boulangeries-pâtisseries pour le bonheur du citoyen
-», sur
-Leaders
-,
-31 juillet 2023
-(consulté le
-28 février 2026
-)
-.
-↑
-«
-Tunisie
-: le pain
-tabouna
-traditionnel est-il devenu aujourd'hui un luxe
-?
-», sur
-leconomistemaghrebin.com
-,
-2 septembre 2018
-(consulté le
-28 février 2026
-)
-.
-↑
-Abir Chemli, «
-La cuisine tunisienne figure au Top 3 arabe, et au Top 30 mondial
-»,
-La Presse de Tunisie
-,
-‎
-18 février 2026
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-À l'occasion du Mouled
-: le «
-zgougou
-» sur un nuage
-»,
-La Presse de Tunisie
-,
-‎
-22 août 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-«
-Mes humeurs
-: le street food, un must populaire
-»,
-La Presse de Tunisie
-,
-‎
-18 octobre 2025
-(
-ISSN
-0330-9991
-,
-lire en ligne
-, consulté le
-28 février 2026
-)
-.
-↑
-Hajer Cherni, «
-Tunisie
-:
-zlabia
-et
-mkharek
-, le duo incontournable des soirées ramadanesques
-», sur
-Agence Anadolu
-,
-3 avril 2023
-(consulté le
-28 février 2026
-)
-.
-1
-2
-3
-4
-«
-Statistiques du sport en Tunisie
-»
-, sur
-sport.tn
-(version du
-27 juin 2008
-sur
-archive.org
-)
-.
-↑
-«
-En direct du monde. En Tunisie, les défenseurs du vélo tentent d'en développer la pratique
-», sur
-Radio France
-,
-4 juillet 2017
-(consulté le
-25 mars 2025
-)
-.
-↑
-«
-Championnat du monde juniors de la FIFA, Tunisie 1977
-», sur
-FIFA
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-«
-African Nations Cup 1965
-», sur
-Rec.Sport.Soccer Statistics Foundation
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-«
-African Nations Cup 1994
-», sur
-Rec.Sport.Soccer Statistics Foundation
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-«
-African Nations Cup 2004
-», sur
-Rec.Sport.Soccer Statistics Foundation
-(consulté le
-18 janvier 2019
-)
-.
-↑
-(en)
-«
-Mohamed Gammoudi
-»
-, sur
-sporting-heroes.net
-(version du
-26 janvier 2008
-sur
-archive.org
-)
-.
-↑
-«
-Judo
-: l'équipe nationale de Tunisie en stage à Paris
-», sur
-RFI
-,
-10 avril 2015
-(consulté le
-12 décembre 2021
-)
-.
-↑
-«
-Jeux olympiques
-: le nageur tunisien Oussama Mellouli sera finalement bien à Tokyo
-», sur
-RFI
-,
-22 juillet 2021
-(consulté le
-12 décembre 2021
-)
-.
-↑
-«
-Tennis
-: Ons Jabeur officiellement 2
-e
-mondiale
-», sur
-webmanagercenter.com
-,
-26 juin 2022
-(consulté le
-1
-er
-juillet 2022
-)
-.
-↑
-Genc Burimi, «
-Handball/CAN 2012
-: les Tunisiens restent champions d'Afrique
-», sur
-RFI
-,
-20 janvier 2012
-(consulté le
-19 novembre 2017
-)
-.
-↑
-«
-Volley
-: la Tunisie championne d'Afrique pour la 10
-e
-fois
-», sur
-RFI
-,
-29 juillet 2019
-(consulté le
-12 décembre 2021
-)
-.
-↑
-Abdoulaye A. Sall, «
-Afrobasket 2021
-: la Tunisie sur le toit du basket-ball africain
-»,
-Le Point
-,
-‎
-6 septembre 2021
-(
-ISSN
-0242-6005
-,
-lire en ligne
-, consulté le
-17 avril 2023
-)
-.
-↑
-Sophie Bessis
-, «
-Le féminisme institutionnel en Tunisie
-»,
-Clio. Histoire‚ femmes et sociétés
-,
-n
-o
-9,
-‎
-1999
-(
-ISSN
-1252-7017
-,
-lire en ligne
-, consulté le
-19 janvier 2019
-)
-.
-↑
-«
-Décret du 26 mars 2011, fixant les jours fériés donnant lieu à congé au profit du personnel de l'État, des collectivités locales et des établissements publics à caractère administratif
-»,
-Journal officiel de la République tunisienne
-,
-n
-o
-21,
-‎
-29 mars 2011
-,
-p.
-389
-(
-ISSN
-0330-7921
-)
-.
-↑
-«
-Le 17 décembre, officiellement fête de la Révolution
-», sur
-Mosaïque FM
-,
-7 décembre 2021
-(consulté le
-26 mai 2022
-)
-.
-Liens externes
-Sur les autres projets Wikimedia
-:
-Tunisie
-, sur
-Wikimedia Commons
-Tunisie
-,
-sur le
-Wiktionnaire
-Tunisie
-,
-sur
-Wikisource
-Tunisie
-,
-sur
-Wikinews
-Tunisie
-,
-sur
-Wikivoyage
-Archives conservées par
-:
-archives nationales de Tunisie
-Ressources relatives à la vie publique
-:
-Nominations au
-Journal officiel
-Parlement du Royaume-Uni
-Ressources relatives à la géographie
-:
-Marine Gazetteer
-Mindat.org
-Ressources relatives aux beaux-arts
-:
-Biblissima
-Grove Art Online
-Ressource relative au spectacle
-:
-Archives suisses des arts de la scène
-Ressource relative au vivant
-:
-Invasive Species Compendium
-Ressource relative à la santé
-:
-Medical Subject Headings
-Ressource relative à la bande dessinée
-:
-Comic Vine
-Ressource relative à l'audiovisuel
-:
-France 24
-Ressource relative à la musique
-:
-MusicBrainz
-Notices dans des dictionnaires ou encyclopédies généralistes
-:
-Britannica
-Brockhaus
-Den Store Danske Encyklopædi
-Dizionario di Storia
-Enciclopedia italiana
-Enciclopedia De Agostini
-Gran Enciclopèdia Catalana
-Hrvatska Enciklopedija
-Internetowa encyklopedia PWN
-Nationalencyklopedin
-Proleksis enciklopedija
-Store norske leksikon
-Treccani
-Notices d'autorité
-:
-VIAF
-ISNI
-BnF
-(
-données
-)
-IdRef
-LCCN
-GND
-Japon
-Israël
-Suède
-Australie
-Norvège
-Croatie
-Tchéquie
-v
-·
-m
-États souverains
-,
-dépendances et territoires à souveraineté spéciale
-d'
-Afrique
-États souverains entièrement situés en Afrique
-Afrique du Nord
-Algérie
-Égypte
-Libye
-Maroc
-Soudan
-Tunisie
-Afrique de l’Ouest
-Bénin
-Burkina Faso
-Cap-Vert
-Côte d’Ivoire
-Gambie
-Ghana
-Guinée
-Guinée-Bissau
-Liberia
-Mali
-Mauritanie
-Niger
-Nigeria
-Sénégal
-Sierra Leone
-Togo
-Afrique centrale
-Cameroun
-République centrafricaine
-République du Congo
-République démocratique du Congo
-Gabon
-Guinée équatoriale
-Sao Tomé-et-Principe
-Tchad
-Afrique de l’Est
-Burundi
-Djibouti
-Érythrée
-Éthiopie
-Kenya
-Ouganda
-Rwanda
-Seychelles
-Somalie
-Soudan du Sud
-Tanzanie
-Afrique australe
-Afrique du Sud
-Angola
-Botswana
-Comores
-Eswatini
-Lesotho
-Madagascar
-Malawi
-Maurice
-Mozambique
-Namibie
-Zambie
-Zimbabwe
-Territoires disputés
-ou non reconnus
-Bir Tawil
-(
-Égypte
-ou
-Soudan
-suivant les interprétations)
-Somaliland
-Sahara occidental
-(entre le
-Maroc
-et la
-république arabe sahraouie démocratique
-)
-Saillant de Wadi Halfa
-(disputé entre l'
-Égypte
-et le
-Soudan
-)
-Triangle de Hala'ib
-(administré par l'
-Égypte
-, contesté par le
-Soudan
-)
-Dépendances et territoires
-à souveraineté spéciale
-Canaries
-communauté autonome d'Espagne
-Ceuta
-,
-Melilla
-et
-Plazas de soberanía
-Espagne
-Archipel des Chagos
-territoire britannique de l'océan Indien
-Îles Éparses de l'océan Indien
-territoire d'outre-mer
-français
-Madère
-région autonome du
-Portugal
-Mayotte
-et
-La Réunion
-départements et régions d'outre-mer
-français
-Sainte-Hélène, Ascension et Tristan da Cunha
-territoire d'outre-mer
-du
-Royaume-Uni
-Îles Selvagens
-(dépendances de la région de
-Madère
-)
-v
-·
-m
-Pays
-d'
-Afrique
-et
-organisations africaines
-Les dates correspondent aux dates de fondation des organisations
-Union africaine
-—
-9 juillet 2002
-(
-anc.
-OUA
-—
-25 mai 1963
-)
-55 États membres
-:
-Afrique du Sud
-Algérie
-Angola
-Bénin
-Botswana
-Burkina Faso
-Burundi
-Cameroun
-Cap-Vert
-République centrafricaine
-Comores
-République du Congo
-République démocratique du Congo
-Côte d'Ivoire
-Djibouti
-Égypte
-Érythrée
-Éthiopie
-Eswatini
-Gabon
-Gambie
-Ghana
-Guinée
-Guinée-Bissau
-Guinée équatoriale
-Kenya
-Lesotho
-Liberia
-Libye
-Madagascar
-Malawi
-Mali
-Maroc
-Maurice
-Mauritanie
-Mozambique
-Namibie
-Niger
-Nigeria
-Ouganda
-Rwanda
-République arabe sahraouie démocratique
-Sao Tomé-et-Principe
-Sénégal
-Seychelles
-Sierra Leone
-Somalie
-Soudan
-Soudan du Sud
-Tanzanie
-Tchad
-Togo
-Tunisie
-Zambie
-Zimbabwe
-UMA
-—
-17 février 1989
-5 États membres
-:
-Algérie
-Libye
-Maroc
-Mauritanie
-Tunisie
-COMESA
-—
-décembre 1994
-22 États membres
-:
-Burundi
-Comores
-République démocratique du Congo
-Djibouti
-Égypte
-Érythrée
-Eswatini
-Éthiopie
-Kenya
-Libye
-Madagascar
-Malawi
-Maurice
-Ouganda
-Rwanda
-Seychelles
-Somalie
-Soudan
-Tanzanie
-Tunisie
-Zambie
-Zimbabwe
-CEDEAO
-—
-28 mai 1975
-15 États membres
-:
-Bénin
-Burkina Faso
-Cap-Vert
-Côte d'Ivoire
-Gambie
-Ghana
-Guinée
-Guinée-Bissau
-Liberia
-Mali
-Niger
-Nigeria
-Sénégal
-Sierra Leone
-Togo
-Zone
-franc CFA
-UEMOA
-—
-10 janvier 1994
-8 États membres
-:
-Bénin
-Burkina Faso
-Côte d'Ivoire
-Guinée-Bissau
-Mali
-Niger
-Sénégal
-Togo
-CEMAC
-—
-16 mars 1994
-6 États membres
-:
-Tchad
-Cameroun
-République centrafricaine
-Guinée équatoriale
-Gabon
-République du Congo
-ZMOA
-—
-20 avril 2000
-6 États membres
-:
-Gambie
-Ghana
-Guinée
-Liberia
-Nigeria
-Sierra Leone
-CEEAC
-—
-18 octobre 1983
-11 États membres
-:
-Tchad
-Cameroun
-République centrafricaine
-Guinée équatoriale
-Gabon
-République du Congo
-Sao Tomé-et-Principe
-Rwanda
-Burundi
-République démocratique du Congo
-Angola
-CEPGL
-—
-20 septembre 1976
-3 États membres
-:
-Rwanda
-Burundi
-République démocratique du Congo
-IGAD
-—
-21 mars 1996
-7 États membres
-:
-Djibouti
-Éthiopie
-Kenya
-Ouganda
-Somalie
-Soudan
-Soudan du Sud
-EAC
-—
-7 juillet 2000
-6 États membres
-:
-Burundi
-Kenya
-Ouganda
-Rwanda
-Soudan du Sud
-Tanzanie
-SADC
-—
-17 août 1992
-16 États membres
-:
-Afrique du Sud
-Angola
-Botswana
-Comores
-Eswatini
-Lesotho
-Madagascar
-Malawi
-Maurice
-Mozambique
-Namibie
-République démocratique du Congo
-Seychelles
-Tanzanie
-Zambie
-Zimbabwe
-SACU
-—
-11 décembre 1969
-5 États membres
-:
-Afrique du Sud
-Botswana
-Eswatini
-Lesotho
-Namibie
-CMA
-—
-juillet 1986
-4 États membres
-:
-Afrique du Sud
-Eswatini
-Lesotho
-Namibie
-v
-·
-m
-Ligue des États arabes
-Institutions
-Conseil
-Parlement
-Conseil de défense
-Conseil économique et social
-États membres
-Algérie
-Arabie saoudite
-Bahreïn
-Comores
-Djibouti
-Égypte
-Émirats arabes unis
-Irak
-Jordanie
-Koweït
-Liban
-Libye
-Maroc
-Mauritanie
-Oman
-Palestine
-Qatar
-Somalie
-Soudan
-Syrie
-Tunisie
-Yémen
-Secrétaires généraux
-Abdul Rahman Hassan Azzam
-(1949–1952)
-Mohamed Abdul Khalek Hassouna
-(1952–1972)
-Mahmoud Riad
-(1972–1979)
-Chedli Klibi
-(1979–1990)
-Ahmed Asmat Abdel-Megid
-(1991–2001)
-Amr Moussa
-(2001–2011)
-Nabil el-Arabi
-(2011-2016)
-Ahmed Aboul Gheit
-(depuis 2016)
-Sommets
-Premier sommet en Égypte (1946)
-Second sommet au Liban (1956)
-(ar)
-Caire (1964)
-(ar)
-Alexandrie (1964)
-(ar)
-Casablanca (1965)
-(ar)
-Khartoum (1967)
-Rabat (1969)
-(ar)
-Caire (1970)
-Alger (1973)
-(ar)
-Rabat (1974)
-Riyad (1976)
-(ar)
-Caire (1976)
-(ar)
-Bagdad (1978)
-(ar)
-Tunis (1979)
-(ar)
-Amman (1980)
-(ar)
-Fès (1981)
-(ar)
-Fès (1982)
-(ar)
-Casablanca (1985)
-(ar)
-Amman (1987)
-(ar)
-Alger (1988)
-(ar)
-Casablanca (1989)
-(ar)
-Bagdad (1990)
-(ar)
-Caire (1990)
-Caire (1996)
-(ar)
-Caire (2000)
-(ar)
-Amman (2001)
-(ar)
-Beyrouth (2002)
-Charm el-Cheikh (2003)
-Tunis (2004)
-(ar)
-Alger (2005)
-Khartoum (2006)
-(ar)
-Riyad (2007)
-(ar)
-Damas (2008)
-(ar)
-Doha (2009)
-(ar)
-Syrte (2010)
-(ar)
-Bagdad (2012)
-(ar)
-Doha (2013)
-Koweït (2014)
-Charm el-Cheikh (2015)
-Nouakchott (2016)
-Mer Morte (2017)
-Dhahran (2018)
-Tunis (2019)
-La Mecque (2019)
-Alger (2022)
-Djeddah (2023)
-Riyad (2023)
-Bahreïn (2024)
-(ar)
-Bagdad (2025)
-(ar)
-v
-·
-m
-Organisation de la coopération islamique
-États membres
-Afghanistan
-Albanie
-Arabie saoudite
-Azerbaïdjan
-Bangladesh
-Bénin
-Brunei
-Burkina Faso
-Cameroun
-Comores
-Côte d'Ivoire
-Djibouti
-Émirats arabes unis
-Gabon
-Gambie
-Guinée
-Guinée-Bissau
-Guyana
-Indonésie
-Iran
-Kazakhstan
-Kirghizistan
-Malaisie
-Maldives
-Mali
-Maroc
-Mozambique
-Niger
-Nigeria
-Ouganda
-Ouzbékistan
-Pakistan
-Sénégal
-Sierra Leone
-Somalie
-Suriname
-Tadjikistan
-Tchad
-Togo
-Turkménistan
-Turquie
-v
-·
-m
-Organisation des pays arabes exportateurs de pétrole
-Pays membres
-Arabie saoudite
-Koweït
-Libye
-Algérie
-Bahreïn
-Émirats arabes unis
-Qatar
-Irak
-Syrie
-Égypte
-Ancien pays membre
-Tunisie
-(1982-1986)
-Pays membres potentiels
-Mauritanie
-Oman
-Yémen
-v
-·
-m
-Organisation internationale de la francophonie
-Liste des 90 États et gouvernements membres
-Membres
-de plein droit
-Albanie
-Andorre
-Arménie
-Belgique
-Bénin
-Bulgarie
-Burundi
-Cambodge
-Cameroun
-Canada
-Cap-Vert
-République centrafricaine
-Comores
-République démocratique du Congo
-République du Congo
-Côte d'Ivoire
-Djibouti
-Dominique
-Chypre
-Égypte
-France
-Gabon
-Ghana
-Grèce
-Guinée
-Guinée-Bissau
-Guinée équatoriale
-Haïti
-Laos
-Liban
-Luxembourg
-Macédoine du Nord
-Madagascar
-Mauritanie
-Maurice
-Maroc
-Moldavie
-Monaco
-Nouveau-Brunswick
-Québec
-Roumanie
-Rwanda
-Sainte-Lucie
-Sao Tomé-et-Principe
-Sénégal
-Seychelles
-Suisse
-Tchad
-Togo
-Tunisie
-Vanuatu
-Vietnam
-Wallonie-Bruxelles
-Associés
-Émirats arabes unis
-Kosovo
-Nouvelle-Calédonie
-Serbie
-Qatar
-Observateurs
-Angola
-Argentine
-Autriche
-Bosnie-Herzégovine
-Chili
-Corée du Sud
-Costa Rica
-Croatie
-Estonie
-Gambie
-Géorgie
-Hongrie
-Irlande
-Lettonie
-Lituanie
-Louisiane
-Malte
-Mexique
-Monténégro
-Mozambique
-Nouvelle-Écosse
-Ontario
-Pologne
-Polynésie française
-Sarre
-Slovaquie
-Slovénie
-Tchéquie
-République dominicaine
-Thaïlande
-Ukraine
-Uruguay
-Opérateurs
-Agence universitaire de la francophonie
-TV5 Monde
-Université Senghor d'Alexandrie
-Association internationale des maires francophones
-Relations permanentes
-Nations unies
-Union africaine
-Union européenne
-Secrétaires généraux
-Boutros Boutros-Ghali
-(1997-2002)
-Abdou Diouf
-(2003-2014)
-Michaëlle Jean
-(2015-2018)
-Louise Mushikiwabo
-(depuis 2019)
-Assemblée parlementaire de la francophonie
-Observatoire de la langue française
-Sommet de la francophonie
-Portail de la Tunisie
-Portail de l’Afrique
-Portail du monde arabe
-Portail des Berbères
-Portail du Maghreb
-Portail de la langue française et de la francophonie
-Portail de la géographie
-Cet article est reconnu comme «
-article de qualité
-» depuis sa
-version du 6 décembre 2006
-(
-comparer avec la version actuelle
-)
-.
-Pour toute information complémentaire, consulter sa
-page de discussion
-et le
-vote l'ayant promu
-.
-La version du 6 décembre 2006 de cet article a été reconnue comme «
-article de qualité
-», c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
-Ce document provient de «
-https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=238779197
-».
+[ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie)
+270 langues [ Ajouter un sujet ](https://fr.wikipedia.org/wiki/Tunisie)
+  *[(ar)]: Langue : arabe
+  *[92e]: Quatre-vingt-douzième (nonante-deuxième)
+  *[hab.]: habitants
+  *[78e]: Soixante-dix-huitième (septante-huitième)
+  *[105e]: Cent-cinquième
+  *[62e]: Soixante-deuxième
+  *[91e]: Quatre-vingt-onzième (nonante et unième)
+  *[km]: kilomètre
+  *[IIIe]: 3ᵉ siècle
+  *[av. J.-C.]: avant Jésus-Christ
+  *[XVIe]: 16ᵉ siècle
+  *[XVIIe]: 17ᵉ siècle
+  *[km2]: kilomètre carré
+  *[m]: Modifier ce modèle. Merci de prévisualiser avant de sauvegarder.
+  *[mm]: millimètre
+  *[°C]: degré Celsius
+  *[[hectares](https://fr.wikipedia.org/wiki/Hectare "Hectare")]: hectares
+  *[kg]: kilogramme
+  *[m3]: mètre cube
+  *[No]: Numéro
+  *[no]: numéro
+  *[VIIIe]: 8ᵉ millénaire avant Jésus-Christ
+  *[Ve]: 5ᵉ siècle 
+  *[etc.]: et cetera
+  *[IIe]: 2ᵉ siècle 
+  *[Ier]: premier
+  *[IVe]: 4ᵉ siècle 
+  *[VIe]: 6ᵉ siècle
+  *[VIIe]: 7ᵉ siècle
+  *[[Bédouins](https://fr.wikipedia.org/wiki/B%C3%A9douins "Bédouins")]: Bédouins
+  *[XIIe]: 12ᵉ siècle
+  *[[janissaires](https://fr.wikipedia.org/wiki/Janissaire "Janissaire")]: janissaires
+  *[XIXe]: 19ᵉ siècle
+  *[XVIIIe]: 18ᵉ siècle
+  *[XXe]: 20ᵉ siècle
+  *[1er]: premier
+  *[39e]: Trente-neuvième
+  *[16e]: Seizième
+  *[art.]: article(s)
+  *[76e]: Soixante-seizième (septante-sixième)
+  *[2e]: Deuxième
+  *[3e]: Troisième
+  *[[croisiéristes](https://fr.wikipedia.org/wiki/Navire_de_croisi%C3%A8re "Navire de croisière")]: croisiéristes
+  *[km/h]: kilomètre par heure
+  *[MW]: mégawatt
+  *[XIe]: 11ᵉ siècle
+  *[XVe]: 15ᵉ siècle
+  *[dir.]: directeur de publication
+  *[vol.]: volume
+  *[p.]: page
+  *[(en)]: Langue : anglais
+  *[et al.]: et alii (et d’autres)
+  *[[PDF]]: Document au format Portable Document Format (PDF)
+  *[6 e]: Sixième
+  *[coll.]: collection
+  *[t.]: tome
+  *[trad.]: traduction
+  *[(it)]: Langue : italien
+  *[14th]: Fourteenth
+  *[nos]: numéros
+  *[[vidéo]]: Vidéo au format mpg, avi…
+  *[Xe]: 10ᵉ siècle
+  *[préf.]: préface
+  *[v]: Voir ce modèle.
+  *[anc.]: anciennement

@@ -1,6711 +1,1212 @@
-Country in North Africa
-This article is about the country. For the board game, see
-Tunisia (board game)
-.
-Republic of Tunisia
-الجمهورية التونسية
-(
-Arabic
-)
-al-Jumhūriyyah at-Tūnisiyyah
-Flag
-Coat of arms
-Motto:
-حرية، نظام، عدالة
-"
-Ḥurrīyah, Niẓām, 'Adālah
-"
-"
-Freedom, Order, Justice
-"
-Anthem:
-حماة الحمى
-"
-Humat al-Hima
-"
-(English:
-"Defenders of the Homeland"
-)
-Show globe
-Show map of Tunisia
-Capital
-and largest city
-Tunis
-36°49′N
-10°11′E
-﻿
-/
-﻿
-36.817°N 10.183°E
-﻿
-/
-36.817; 10.183
-Official
-languages
-Arabic
-[
-1
-]
-Local vernacular
-Tunisian Arabic
-[
-2
-]
-Minority Dialects
-:
-Jerba Berber
-(Chelha)
-Matmata Berber
-Judeo-Tunisian Arabic
-(UNESCO CR)
-[
-3
-]
-[
-4
-]
-[
-5
-]
-[
-6
-]
-[
-7
-]
-[
-8
-]
-[
-9
-]
-[
-10
-]
-[
-11
-]
-Foreign languages
-French
-and
-English
-[
-a
-]
-Ethnic
-groups
-(2021)
-[
-14
-]
-98%
-Arabs
-[
-14
-]
-1%
-Berbers
-[
-15
-]
-[
-16
-]
-1%
-Jews
-and others
-[
-17
-]
-Religion
-[
-14
-]
-99%
-Sunni Islam
-1%
-others
-(incl.
-Christians
-,
-Judaism
-,
-Shia Islam
-, and
-Baha’i
-)
-[
-18
-]
-[
-19
-]
-Demonym
-Tunisian
-Government
-Unitary
-presidential republic
-•
-President
-Kais Saied
-•
-Prime Minister
-Sara Zaafarani
-Legislature
-Parliament
-•
-Upper house
-National Council of Regions and Districts
-•
-Lower house
-Assembly of the Representatives of the People
-Establishment
-•
-Aghlabid Emirate
-800
-•
-Hafsid Sultanate
-1229
-•
-Beylik of Tunis
-15 July 1705
-•
-French protectorate
-12 May 1881
-•
-Independence
-and
-Kingdom
-20 March 1956
-•
-Republic declaration
-25 July 1957
-Area
-•
-Total
-163,610
-km
-2
-(63,170
-sq
-mi)
-(
-91st
-)
-•
-Water
-(%)
-5.04
-Population
-•
-2024
-census
-11,972,169
-[
-20
-]
-•
-Density
-79/km
-2
-(204.6/sq
-mi)
-(
-134th
-)
-GDP
-(
-PPP
-)
-2025
-estimate
-•
-Total
-$183.73 billion
-[
-21
-]
-(
-84th
-)
-•
-Per capita
-$14,780
-[
-21
-]
-(
-111th
-)
-GDP
-(nominal)
-2025
-estimate
-•
-Total
-$56.290 billion
-[
-21
-]
-(
-90th
-)
-•
-Per capita
-$4,530
-[
-21
-]
-(
-121st
-)
-Gini
-(2021)
-33.7
-[
-22
-]
-medium inequality
-HDI
-(2023)
-0.746
-[
-23
-]
-high
-(
-105th
-)
-Currency
-Tunisian dinar
-(
-TND
-)
-Time zone
-UTC
-+1
-(
-CET
-)
-Date format
-dd/mm/yyyy
-Calling code
-+216
-ISO 3166 code
-TN
-Internet TLD
-.tn
-.تونس
-[
-24
-]
-Tunisia
-,
-[
-b
-]
-officially the
-Republic of Tunisia
-,
-[
-c
-]
-[
-26
-]
-is a country in the
-Maghreb
-region of
-North Africa
-. It is bordered by
-Algeria
-to the west and southwest,
-Libya
-to the southeast, and the
-Mediterranean Sea
-to the north and east. Tunisia also shares maritime borders with
-Italy
-through the islands of
-Sicily
-and
-Sardinia
-to the north and
-Malta
-to the east. It features the archaeological sites of
-Carthage
-dating back to the 9th century BC, as well as the Great Mosque of
-Kairouan
-. Known for its ancient architecture,
-souks
-, and blue coasts, it covers
-163,610
-km
-2
-(63,170
-sq
-mi)
-, and has a population of 12.1 million. It contains the eastern end of the
-Atlas Mountains
-and the northern reaches of the
-Sahara
-desert; much of its remaining territory is
-arable land
-. Its
-1,300
-km (810
-mi)
-of coastline includes the African conjunction of the western and eastern parts of the
-Mediterranean Basin
-. Tunisia is home to Africa's northernmost point,
-Cape Angela
-. Located on the northeastern coast,
-Tunis
-is the capital of the country, which is itself named after Tunis. The official language of Tunisia is
-Arabic
-. The vast majority of Tunisia's population is
-Arab
-and
-Muslim
-. Vernacular
-Tunisian Arabic
-is the most spoken language, and
-French
-serves as an administrative and educational language in some contexts, but has no official status.
-Beginning in early antiquity, Tunisia was inhabited by the indigenous
-Berbers
-. The
-Phoenicians
-, a
-Semitic people
-, began to arrive in the 12th century BC,
-settling on the coast and establishing several settlements
-, of which
-Carthage
-emerged as the most powerful by the 7th century BC. The descendants of the Phoenician settlers came to be known as the
-Punic people
-.
-Ancient Carthage
-was a major
-mercantile
-empire and a military rival to the
-Roman Republic
-until 146 BC when it was
-defeated
-by the Romans who occupied Tunisia for most of the next 800 years. The Romans introduced
-Christianity
-and left architectural legacies like the
-Amphitheatre of El Jem
-. In the 7th century AD,
-Arab Muslims conquered
-Tunisia and
-settled with their tribes and families
-, bringing
-Islam
-and
-Arab culture
-. A later large-scale
-Arab migration
-of
-Banu Hilal
-and
-Banu Sulaym
-tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely
-Arabised
-.
-[
-27
-]
-Then, in 1546, the
-Ottoman Empire
-established control, holding sway until 1881, when the
-French conquered Tunisia
-. In 1956,
-Tunisia gained independence
-as the Tunisian Republic. Today,
-Tunisia's culture
-and identity are rooted in this centuries-long intersection of different cultures and ethnicities.
-In 2011, the
-Tunisian Revolution
-, which was triggered by dissatisfaction with the lack of freedom and
-democracy
-under the 24-year rule of President
-Zine El Abidine Ben Ali
-, overthrew his regime and catalyzed the broader
-Arab Spring
-movement across the region. Free multiparty parliamentary
-elections
-were held shortly thereafter; the country again voted for parliament on 26 October 2014,
-[
-28
-]
-and for president on 23 November 2014.
-[
-29
-]
-From 2014 to 2020, it was considered the only democratic state in the
-Arab world
-, according to
-The Economist Democracy Index
-.
-[
-30
-]
-[
-d
-]
-After
-democratic backsliding
-under President
-Kais Saied
-, Tunisia was rated a
-hybrid regime
-in 2022
-[
-31
-]
-and as of 2025 it no longer has free and fair elections according to
-Freedom House
-.
-[
-32
-]
-It is one of the few countries in Africa ranking high on the
-Human Development Index
-, with one of the
-highest per capita incomes
-on the continent, ranking 129th in
-GDP per capita
-income.
-Tunisia is well integrated into the international community. It is a member of the
-United Nations
-,
-Organisation internationale de la Francophonie
-, the
-Arab League
-, the
-Organisation of Islamic Cooperation
-, the
-African Union
-, the
-Common Market for Eastern and Southern Africa
-, the
-Non-Aligned Movement
-, the
-International Criminal Court
-, the
-Group of 77
-, among others. It maintains close economic and political relations with some European countries, particularly with
-France
-and
-Italy
-,
-[
-33
-]
-[
-34
-]
-due to their geographical proximity. Tunisia also has an
-association agreement
-with the
-European Union
-and has attained the status of a
-major non-NATO ally
-of the
-United States
-.
-Etymology
-See also:
-Tunis §
-Etymology
-The word
-Tunisia
-is derived from
-Tunis
-, a central urban hub and the capital of modern-day Tunisia. The present form of the name, with its
-Latinate
-suffix
--ia
-, evolved from
-French
-Tunisie
-,
-[
-35
-]
-[
-36
-]
-in turn generally associated with the
-Berber
-root
-ⵜⵏⵙ
-, transcribed
-tns
-, which means "to lay down" or "encampment".
-[
-37
-]
-It is sometimes also associated with the
-Carthage goddess
-Tanith
-(or Tunit),
-[
-35
-]
-[
-38
-]
-and the ancient city of Tynes.
-[
-39
-]
-[
-40
-]
-The French derivative
-Tunisie
-was adopted in some European languages with slight modifications, introducing a distinctive name to designate the country. Other languages have left the name untouched, such as the
-Russian
-Туни́с
-(
-Tunís
-) and
-Spanish
-Túnez
-. In this case, the same name is used for both country and city, as with the
-Arabic
-تونس
-, and only by context can one tell the difference.
-[
-35
-]
-In English, Tunisia before independence was also often called simply "Tunis", a name that persisted until the 1940s;
-[
-e
-]
-under French influence, the neologism "Tunisia", adapted from
-Tunisie
-, gradually took hold.
-[
-35
-]
-The adjective "Tunisian" first appeared in English in 1825;
-[
-46
-]
-the previous adjectival form was "Tunisine".
-[
-47
-]
-History
-Main article:
-History of Tunisia
-Antiquity
-Main articles:
-Capsian culture
-and
-Ancient Carthage
-Farming methods reached the
-Nile Valley
-from the
-Fertile Crescent
-region about 5000 BC, and spread to the
-Maghreb
-by about 4000 BC. Agricultural communities in the humid coastal plains of central Tunisia then were ancestors of today's
-Berber
-tribes.
-Carthaginian
-dependencies and protectorates through the
-Punic Wars
-It was believed in ancient times that Africa was originally populated by
-Gaetulians
-and Libyans, both nomadic peoples. According to the Roman historian
-Sallust
-, the demigod Hercules died in Spain and his polyglot eastern army was left to settle the land, with some
-migrating
-to Africa. Persians went to the West and intermarried with the Gaetulians and became the Numidians. The Medes settled and were known as Mauri, later Moors.
-[
-48
-]
-The Numidians and Moors belonged to the race from which the Berbers are descended. The translated meaning of Numidian is Nomad and indeed the people were semi-nomadic until the reign of
-Masinissa
-of the Massyli tribe.
-[
-49
-]
-[
-50
-]
-[
-51
-]
-At the beginning of recorded history, Tunisia was inhabited by
-Berber
-tribes. Its coast was settled by
-Phoenicians
-starting as early as the 12th century BC (
-Bizerte
-,
-Utica
-). The city of
-Carthage
-was founded in the 9th century BC by Phoenicians. Legend says that
-Dido
-from Tyre, now in modern-day Lebanon, founded the city in 814 BC, as retold by the
-Greek
-writer
-Timaeus of Tauromenium
-. The settlers of Carthage brought their culture and religion from Phoenicia, now present-day
-Lebanon
-and adjacent areas.
-[
-52
-]
-Statue of the Carthaginian general
-Hannibal Barca
-After the series of wars with Greek city-states of Sicily in the 5th century BC, Carthage rose to power and eventually became the dominant civilization in the Western
-Mediterranean
-. The people of Carthage worshipped a pantheon of Middle Eastern gods including
-Baal
-and
-Tanit
-. Tanit's symbol, a simple female figure with extended arms and long dress, is a popular icon found in ancient sites. The founders of Carthage also established a
-Tophet
-, which was altered in Roman times.
-A Carthaginian invasion of Italy led by
-Hannibal
-during the
-Second Punic War
-,  one of a series of wars with
-Rome
-, nearly crippled the rise of Roman power. From the conclusion of the Second Punic War in 202 BC, Carthage functioned as a client state of the Roman Republic for another 50 years.
-[
-53
-]
-Ruins of a 2nd-century temple in
-Dougga
-, one of nine
-World Heritage Sites in Tunisia
-Following the
-Battle of Carthage
-which began in 149 BC during the
-Third Punic War
-, Carthage was conquered by Rome in 146 BC.
-[
-54
-]
-Following its conquest, the Romans renamed Carthage to
-Africa
-, incorporating it as a province.
-Berber bishop
-Donatus Magnus
-was the founder of a Christian group known as the
-Donatists
-.
-[
-55
-]
-During the 5th and 6th centuries (from 430 to 533 AD), the Germanic
-Vandals
-invaded and ruled over a kingdom in Northwest Africa that included present-day Tripoli. The region was easily reconquered in 533–534 AD, during the rule of Emperor
-Justinian I
-, by the
-Eastern Romans
-led by General
-Belisarius
-,
-[
-56
-]
-preluding a 165-year era of
-Byzantine rule
-.
-Middle Ages
-Main article:
-History of medieval Tunisia
-Uqba ibn Nafi
-led the
-Umayyad
-conquest of Tunisia in the late 7th century.
-Sometime between the second half of the 7th century and the early part of the 8th century,
-Arab
-Muslim conquest occurred in the region
-. They founded the first Islamic city in Northwest Africa,
-Kairouan
-. It was there in 670 AD that the
-Mosque of Uqba
-, or the Great Mosque of Kairouan, was constructed.
-[
-57
-]
-This mosque is the oldest and most prestigious sanctuary in the Muslim West with the oldest standing
-minaret
-in the world;
-[
-58
-]
-it is also considered a masterpiece of Islamic art and architecture.
-[
-59
-]
-The
-Arab migration to the Maghreb
-began during this time.
-The region in its entirety was taken in 695, retaken by the Byzantine Eastern Romans in 697, but lost permanently in 698. The transition from a Latin-speaking Christian Berber society to a Muslim and mostly Arabic-speaking society took over 400 years (the equivalent process in Egypt and the Fertile Crescent took 600 years) and resulted in the final disappearance of Christianity and Latin in the 12th or 13th century. The majority of the population were not Muslim until quite late in the 9th century; a vast majority were during the 10th. Also, some Tunisian Christians emigrated; some richer members of society did so after the conquest in 698 and others were welcomed by Norman rulers to Sicily or Italy in the 11th and 12th centuries – the logical destination because of the 1200 year close connection between the two regions.
-[
-60
-]
-The Arab governors of Tunis founded the
-Aghlabid dynasty
-, which ruled Tunisia,
-Tripolitania
-and eastern Algeria from 800 to 909.
-[
-61
-]
-Tunisia flourished under Arab rule when extensive systems were constructed to supply towns with water for household use and irrigation that promoted agriculture (especially olive production).
-[
-61
-]
-[
-62
-]
-This prosperity permitted luxurious court life and was marked by the construction of new palace cities such as al-Abbasiya (809) and Raq Adda (877).
-[
-61
-]
-Domes of the
-Great Mosque of Kairouan
-. Founded in 670, it dates in its present form largely from the Aghlabid period (9th century). It is the oldest mosque in the
-Maghreb
-.
-After conquering
-Cairo
-, the
-Fatimids
-abandoned Tunisia and parts of Eastern Algeria to the local
-Zirids
-(972–1148).
-[
-63
-]
-Zirid Tunisia flourished in many areas: agriculture, industry, trade, and religious and secular learning.
-[
-64
-]
-Management by the later Zirid
-emirs
-was neglectful though, and political instability was connected to the decline of Tunisian trade and agriculture.
-[
-61
-]
-[
-65
-]
-[
-66
-]
-The depredation of the Tunisian campaigns by the
-Banu Hilal
-, a warlike Arab tribe encouraged by the Fatimids of Egypt to seize Northwest Africa, sent the region's rural and urban economic life into further decline.
-[
-63
-]
-Consequently, the region underwent rapid urbanisation as famines depopulated the countryside and industry shifted from agriculture to manufactures.
-[
-67
-]
-The Arab historian
-Ibn Khaldun
-wrote that the lands ravaged by Banu Hilal invaders had become completely arid desert.
-[
-65
-]
-[
-68
-]
-The main Tunisian cities were conquered by the
-Normans
-of
-Sicily
-under the
-Kingdom of Africa
-in the 12th century, but following
-the conquest of Tunisia
-in 1159–1160 by the
-Almohads
-the Normans were evacuated to Sicily. Communities of Tunisian Christians would still exist in
-Nefzaoua
-up to the 14th century.
-[
-69
-]
-The Almohads initially ruled over Tunisia through a governor, usually a near relative of the Caliph. Despite the prestige of the new masters, the country was still unruly, with continuous rioting and fighting between the townsfolk and wandering Arabs and Turks, the latter being subjects of the Muslim Armenian adventurer Karakush. Also, Tunisia was occupied by
-Ayyubids
-between 1182 and 1183 and again between 1184 and 1187.
-[
-70
-]
-The greatest threat to Almohad rule in Tunisia was the
-Banu Ghaniya
-, relatives of the
-Almoravids
-, who from their base in
-Mallorca
-tried to restore Almoravid rule over the Maghreb. Around 1200 they succeeded in extending their rule over the whole of Tunisia until they were crushed by Almohad troops in 1207. After this success, the Almohads installed Walid Abu Hafs as the governor of Tunisia. Tunisia remained part of the Almohad state, until 1230 when the son of Abu Hafs declared himself independent.
-During the reign of the
-Hafsid dynasty
-from their capital Tunis, fruitful commercial relationships were established with several Christian Mediterranean states.
-[
-71
-]
-In the late 16th century the coast became a
-pirate
-stronghold.
-Ottoman Tunisia
-Main article:
-Ottoman Tunisia
-Conquest of Tunis
-by
-Charles V
-and liberation of Christian
-galley slaves
-in 1535
-In the last years of the
-Hafsid dynasty
-, Spain seized many of the coastal cities, but these were recovered by the
-Ottoman Empire
-.
-The
-first Ottoman conquest of Tunis
-took place in 1534 under the command of
-Barbarossa Hayreddin Pasha
-, the younger brother of Oruç Reis, who was the
-Kapudan Pasha
-of the
-Ottoman Fleet
-during the reign of
-Suleiman the Magnificent
-. However, it was not until the
-final Ottoman reconquest of Tunis from Spain
-in 1574 under Kapudan Pasha
-Uluç Ali Reis
-that the Ottomans permanently acquired the former
-Hafsid Tunisia
-, retaining it until the
-French conquest of Tunisia
-in 1881.
-Initially under Turkish rule from Algiers, soon the
-Ottoman Porte
-appointed directly for
-Tunis
-a governor called the
-Pasha
-supported by
-janissary
-forces. Before long, however, Tunisia became in effect an autonomous province, under the local
-bey
-. Under its
-Turkish
-governors, the beys, Tunisia attained virtual independence. The
-Hussein dynasty
-of beys, established in 1705, lasted until 1957.
-[
-72
-]
-This evolution of status was from time to time challenged without success by Algiers. During this era, the governing councils controlling Tunisia remained largely composed of a foreign elite who continued to conduct state business in the
-Turkish language
-.
-St Louis Cathedral – Carthage – Tunisia – 1899
-Attacks on European shipping were made by
-corsairs
-, primarily from Algiers, but also from Tunis and
-Tripoli
-, yet after a long period of declining raids the growing power of the European states finally forced its termination.
-The
-plague epidemics
-ravaged Tunisia in 1784–1785, 1796–1797 and 1818–1820.
-[
-73
-]
-In the 19th century, the rulers of Tunisia became aware of the ongoing efforts at political and social
-reform in the Ottoman capital
-. The Bey of Tunis then, by his own lights but informed by the Turkish example, attempted to effect a modernizing reform of institutions and the economy.
-[
-74
-]
-Tunisian international debt grew unmanageable. This was the reason or pretext for French forces to establish a
-protectorate
-in 1881.
-[
-75
-]
-[
-76
-]
-French Protectorate of Tunisia (1881–1956)
-Main article:
-French protectorate of Tunisia
-British tank moves through Tunis after the city was taken from Axis troops, 8 May 1943.
-In 1869, Tunisia declared itself bankrupt and an international financial commission took control over its economy. In 1881, using the pretext of a Tunisian incursion into
-Algeria
-, the French invaded with an army of about 36,000 and forced the Bey of Tunis,
-Muhammad III as-Sadiq
-, to agree to the terms of the 1881
-Treaty of Bardo
-.
-[
-77
-]
-With this treaty, Tunisia was officially made a
-French protectorate
-, over the objections of Italy. European settlements in the country were actively encouraged; the number of
-French
-colonists grew from 34,000 in 1906 to 144,000 in 1945. In 1910 there were also 105,000
-Italians in Tunisia
-.
-[
-78
-]
-During the
-Second World War
-, the protectorate of Tunisia was controlled by the collaborationist
-Vichy
-government in Metropolitan France. The antisemitic
-Statute on Jews
-enacted by the Vichy government was also implemented in Vichy-controlled Northwest Africa and other overseas French territories. Thus, the persecution and murder of the Jews from 1940 to 1943 was part of
-the Holocaust
-in France.
-From November 1942 until May 1943, Vichy-controlled Tunisia was occupied by Germany.
-SS
-Commander
-Walter Rauff
-continued to implement the "Final Solution" there. From 1942 to 1943, Tunisia was the scene of the
-Tunisia Campaign
-, a series of battles between the
-Axis
-and
-Allied
-forces. The battle opened with initial success by the German and Italian forces, but the massive supply and numerical superiority of the Allies led to the
-Axis surrender
-on 13 May 1943.
-[
-79
-]
-[
-80
-]
-The six-month campaign of Tunisia's liberation from Axis occupation signalled the end of the war in Africa.
-Struggle for independence (1943–1956)
-After the liberation of Tunisia from the Germans, the French regained control over the government and made participation in a nationalist party illegal once more.
-[
-81
-]
-Moncef Bey
-, who was popular amongst Tunisians, was deposed by the French.
-[
-81
-]
-The French claimed that his removal was due to him being sympathetic to the Axis countries during German occupation, but the real reason is up for debate.
-[
-81
-]
-In 1945 after escaping French surveillance, Tunisian nationalist
-Habib Bourguiba
-arrived in
-Cairo
-.
-[
-81
-]
-While there, he was able to make contact with the
-Arab League
-.
-[
-81
-]
-Later in 1946, after traveling to other Middle Eastern countries, he made his way to the United States to speak to both the
-United Nations
-at their headquarters at
-Lake Success
-and
-U.S. State Department
-officials in
-Washington D.C.
-, pleading the case of the Tunisian nationalists.
-[
-81
-]
-As part of postwar Tunisia, a new all-Tunisian labor organization was formed, the
-Union Générale des Travailleurs (UGTT)
-.
-[
-81
-]
-This was one of the stronger components of the nationalist group
-Neo-Destour
-.
-[
-81
-]
-Habib Bourguiba made his way to the United States on 13 September 1949.
-[
-82
-]
-He attended the
-American Federation of Labor
-meeting in
-San Francisco
-, California.
-[
-82
-]
-The French were opposed to his presence there, and the US feared political change in North Africa due to the looming presence of possible
-Soviet Union
-communist expansion.
-[
-82
-]
-Bourguiba continued to plead to foreign leaders when he traveled to Italy on 6 November 1951.
-[
-82
-]
-His contacts included
-Alberto Mellini Ponce De León
-,
-Mario Toscano
-, and
-Licinio Vestri
-.
-[
-82
-]
-De León was an old friend of Bourguiba who had helped free him from German captivity, Toscano was the head of the
-Ufficio Studi e Documentazione
-in the
-Ministry of Foreign Affairs
-, and Vestri was an
-Africanist
-scholar.
-[
-82
-]
-Despite his best efforts, the Italians remained neutral as they did not want to ruin relations with
-NATO
-ally France, nor did they want to hamper any possibility of future relations with Tunisia as it served as a key part of the
-Mediterranean
-.
-[
-82
-]
-The French Resident General in Tunisia,
-Jean de Hautecloque
-[
-de
-;
-fr
-]
-left Tunis to go to Paris on 25 August 1953, when he was replaced by
-Pierre Voizard
-.
-[
-83
-]
-Voizard had previously been the French Minister to
-Monaco
-.
-[
-83
-]
-A month after his arrival in Tunis on 26 September 1953, Voizard made many changes to ease tensions in Tunisia.
-[
-83
-]
-He lifted press censorship and freed several political prisoners.
-[
-83
-]
-He also restored the full powers of civil authorities and raised the state of siege in the
-Sahel
-.
-[
-83
-]
-On 26 January 1954, Voizard announced that there would soon be new reforms in favor of granting more sovereignty to Tunisians while insuring the interests of the French and French citizens in Tunisia, at the Cercle Republicain d'outre Mer in Paris.
-[
-83
-]
-The Neo-Destour group was not in favor of these reforms if they themselves were not involved in their creation.
-[
-83
-]
-They also demanded the freedom of Bourguiba who was imprisoned on the Isle of Galete.
-[
-83
-]
-Post-independence (1956–2011)
-Main article:
-History of modern Tunisia
-Habib Bourguiba
-was the first president of Tunisia, from 1957 to 1987.
-Tunisia achieved independence from France on 20 March 1956 with
-Habib Bourguiba
-as Prime Minister.
-[
-84
-]
-20 March is celebrated annually as Tunisian Independence Day.
-[
-85
-]
-A year later, Tunisia was declared a republic, with Bourguiba as
-the first President
-.
-[
-86
-]
-From independence in 1956 until the 2011 revolution, the government and the
-Constitutional Democratic Rally
-(RCD), formerly
-Neo Destour
-and the
-Socialist Destourian Party
-, were effectively one. Following a report by
-Amnesty International
-,
-The Guardian
-called Tunisia "one of the most modern but repressive countries in the Arab world".
-[
-87
-]
-On 12 May 1964, Tunisia nationalized foreign farmlands.
-[
-88
-]
-Immediately after, France canceled all financial assistance for the country, which was to amount to more than $40 million.
-[
-88
-]
-This led to the Tunisian National Assembly passing a bill that required all residents of the country to subscribe to a "popular loan" in proportion to their income.
-[
-88
-]
-From 1977 until 2005, Tunisia was a shooting location for five films of the
-Star Wars
-film franchise.
-In 1982, Tunisia became the center of the
-Palestine Liberation Organization
-, based in the capital Tunis. On 1 October 1985, the
-Israeli Air Force
-bombed the PLO Headquarters
-, killing at least 60 people.
-[
-89
-]
-Zine El Abidine Ben Ali
-, president of Tunisia from 1987 to 2011
-In November 1987, doctors declared Bourguiba unfit to rule
-[
-90
-]
-and, in a bloodless coup d'état, Prime Minister
-Zine El Abidine Ben Ali
-assumed the presidency
-[
-86
-]
-in accordance with Article 57 of the
-Tunisian constitution
-.
-[
-91
-]
-The anniversary of Ben Ali's succession, 7 November, was celebrated as a national holiday. He was consistently re-elected with enormous majorities every five years (well over 80 percent of the vote), the last being 25 October 2009,
-[
-92
-]
-until he fled the country amid popular unrest in January 2011.
-Ben Ali and his family were accused of corruption
-[
-93
-]
-and plundering the country's money. Economic liberalisation provided further opportunities for financial mismanagement,
-[
-94
-]
-while corrupt members of the Trabelsi family, most notably in the cases of
-Imed Trabelsi
-and
-Belhassen Trabelsi
-, controlled much of the business sector in the country.
-[
-95
-]
-The First Lady
-Leila Ben Ali
-was described as an "unabashed
-shopaholic
-" who used the state airplane to make frequent unofficial trips to Europe's fashion capitals.
-[
-96
-]
-Tunisia refused a French request for the extradition of two of the President's nephews, from Leila's side, who were accused by the French State prosecutor of having stolen two mega-yachts from a French marina.
-[
-97
-]
-According to
-Le Monde
-, Ben Ali's son-in-law was being primed to eventually take over the country.
-[
-98
-]
-Independent human rights groups, such as
-Amnesty International
-,
-Freedom House
-, and Protection International, documented that basic human and political rights were not respected.
-[
-99
-]
-[
-100
-]
-The regime obstructed in any way possible the work of local human rights organizations.
-[
-101
-]
-In 2008, in terms of
-press freedom
-, Tunisia was ranked 143rd out of 173.
-[
-102
-]
-Post-revolution (since 2011)
-See also:
-Tunisian Revolution
-Tunis on 14 January 2011 during the
-Tunisian Revolution
-The Tunisian Revolution
-[
-103
-]
-[
-104
-]
-was an intensive campaign of
-civil resistance
-that was precipitated by high
-unemployment
-,
-food inflation
-,
-corruption
-,
-[
-105
-]
-a lack of
-freedom of speech
-and other
-political freedoms
-[
-106
-]
-and poor
-living conditions
-. Labour unions were said to be an integral part of the protests.
-[
-107
-]
-The protests inspired the
-Arab Spring
-, a wave of similar actions throughout the Arab world. The catalyst for mass demonstrations was the death of
-Mohamed Bouazizi
-, a 26-year-old Tunisian street vendor, who set himself afire on 17 December 2010 in protest at the confiscation of his wares and the humiliation inflicted on him by a municipal official named
-Faida Hamdy
-. Anger and violence intensified following Bouazizi's death on 4 January 2011, ultimately leading longtime
-President
-Zine El Abidine Ben Ali
-to resign and flee the country on 14 January 2011, after 23 years in power.
-[
-108
-]
-Protests continued for banning of the ruling party and the eviction of all its members from the transitional government formed by
-Mohammed Ghannouchi
-. Eventually the new government gave in to the demands. A Tunis court banned the ex-ruling party RCD and confiscated all its resources. A decree by the minister of the interior banned the "political police", special forces which were used to intimidate and persecute political activists.
-[
-109
-]
-On 3 March 2011, the interim president announced that
-elections to a Constituent Assembly
-would be held on 24 July 2011.
-[
-110
-]
-On 9 June 2011, the prime minister announced the election would be postponed until 23 October 2011.
-[
-111
-]
-International and internal observers declared the vote free and fair. The
-Ennahda Movement
-, formerly banned under the Ben Ali regime, came out of the election as the largest party, with 89 seats out of a total of 217.
-[
-112
-]
-On 12 December 2011, former dissident and veteran human rights activist
-Moncef Marzouki
-was elected president.
-[
-113
-]
-In March 2012, Ennahda declared it will not support making sharia the main source of legislation in the new constitution, maintaining the secular nature of the state. Ennahda's stance on the issue was criticized by hardline Islamists, who wanted strict sharia, but was welcomed by secular parties.
-[
-114
-]
-On 6 February 2013,
-Chokri Belaid
-, the leader of the leftist opposition and prominent critic of Ennahda, was assassinated.
-[
-115
-]
-In 2014, President
-Moncef Marzouki
-established Tunisia's
-Truth and Dignity Commission
-, as a key part of creating a national reconciliation.
-[
-116
-]
-Tunisia was hit by two terror attacks on foreign tourists in 2015,
-first killing 22 people
-at the
-Bardo National Museum
-, and
-later killing 38 people
-at the
-Sousse
-beachfront. Tunisian president
-Beji Caid Essebsi
-renewed the state of emergency in October for three more months.
-[
-117
-]
-The
-Tunisian National Dialogue Quartet
-won the 2015
-Nobel Peace Prize
-for its work in building a peaceful, pluralistic political order in Tunisia.
-[
-118
-]
-Presidency of Kais Saied (2019–present)
-Tunisia's first democratically elected president
-Beji Caid Essebsi
-died in July 2019.
-[
-119
-]
-Following him,
-Kais Saied
-became Tunisia's president after a landslide victory in the
-2019 Tunisian presidential elections
-in October.
-[
-120
-]
-On 23 October 2019, Saied was sworn in as Tunisia's new president.
-[
-121
-]
-On 25 July 2021, amid ongoing demonstrations concerning government dysfunction and corruption and rises in
-COVID-19
-cases, Kais Saied unilaterally
-suspended parliament, dismissed the prime minister and withdrew immunity of parliament members
-.
-[
-122
-]
-[
-123
-]
-In September 2021, Saied said he would appoint a committee to help draft new constitutional amendments.
-[
-124
-]
-[
-f
-]
-On 29 September, he named
-Najla Bouden
-as the new prime minister and tasked her with forming a
-cabinet
-, which was sworn in on 11 October.
-[
-125
-]
-[
-126
-]
-On 3 February 2022, Tunisia was voted to the African Union's (AU) Peace and Security Council for the term 2022–2024, according to the Tunisian Foreign Ministry. The poll took place on the fringes of the AU Executive Council's 40th ordinary session, which was held in the Ethiopian capital of Addis Ababa, according to the ministry.
-[
-127
-]
-In February 2022, Tunisia and the International Monetary Fund held preliminary negotiations in the hopes of securing a multibillion-dollar bailout for an economy beset by recession, public debt, inflation, and unemployment.
-[
-128
-]
-In April 2023, the Tunisian government closed the headquarters of the
-Ennahda
-party and arrested its leader
-Rached Ghannouchi
-.
-[
-129
-]
-In October 2023
-Abir Moussi
-, head of the
-Free Destourian Party (FDL)
-, became the latest prominent opponent of president Saied to have been detained or imprisoned.
-[
-130
-]
-[
-131
-]
-[
-132
-]
-[
-133
-]
-The FDL had emerged from the
-Democratic Constitutional Assembly
-.
-In September 2023 Saied had asked to postpone a visit by a delegation of the
-EU commission
-to discuss migration
-[
-134
-]
-according to
-Minister of the Interior
-Kamel Feki
-.
-[
-135
-]
-Meanwhile, human rights organisations were criticizing the July migration agreement.
-[
-135
-]
-[
-136
-]
-[
-137
-]
-Feki said that Tunisia, which is one of the most important transit countries for people on their way to Europe,
-[
-138
-]
-cannot act as a border guard for other countries.
-[
-139
-]
-[
-138
-]
-In October 2023 Saied turned down 127 million in EU aid
-[
-140
-]
-saying that the amount was small and doesn't square with a deal signed three months ago.
-[
-141
-]
-[
-142
-]
-This in turn caused surprise in Brussels.
-[
-143
-]
-In April 2025, Tunisia dismantled dozens of makeshift camps housing African migrants, displacing as many as 7,000 people.
-[
-144
-]
-[
-145
-]
-On 6 October 2024, President Kais Saied won a second term with more than 90% of the vote in a
-presidential election
-with a 28.8% turnout. Five political parties had urged people to boycott the elections.
-[
-146
-]
-Geography
-Main article:
-Geography of Tunisia
-Köppen climate classification
-in Tunisia. The climate is Mediterranean towards the coast in the north, while most of the country is desert.
-Tunisia is situated on the
-Mediterranean
-coast of Northwest Africa, midway between the Atlantic Ocean and the
-Nile Delta
-. It is bordered by
-Algeria
-on the west (965
-km) and southwest and
-Libya
-on the south east (459
-km).
-[
-147
-]
-It lies between latitudes
-30°
-and
-38°N
-, and longitudes
-7°
-and
-12°E
-. An abrupt southward turn of the Mediterranean coast in northern Tunisia gives the country two distinctive Mediterranean coasts, west–east in the north, and north–south in the east.
-Though it is relatively small in size, Tunisia has great environmental diversity due to its north–south extent. Its east–west extent is limited. Differences in Tunisia, like the rest of the Maghreb, are largely north–south environmental differences defined by sharply decreasing rainfall southward from any point. The Dorsal, the eastern extension of the Atlas Mountains, runs across Tunisia in a northeasterly direction from the Algerian border in the west to the Cape Bon peninsula in the east. North of the Dorsal is the Tell, a region characterized by low, rolling hills and plains, again an extension of mountains to the west in Algeria. In the
-Khroumerie
-, the northwestern corner of the Tunisian Tell, elevations reach
-1,050 metres (3,440
-ft)
-and snow occurs in winter.
-The
-Sahel
-, a broadening coastal plain along Tunisia's eastern Mediterranean coast, is among the world's premier areas of olive cultivation. Inland from the Sahel, between the Dorsal and a range of hills south of Gafsa, are the
-Steppes
-. Much of the southern region is
-semi-arid
-and
-desert
-.
-Tunisia has a coastline
-1,148 kilometres (713
-mi)
-long. In maritime terms, the country claims a contiguous zone of
-24 nautical miles (44 kilometres)
-, and a territorial sea of
-12 nautical miles (22 kilometres)
-.
-[
-148
-]
-The city of Tunis is built on a hill slope down to the lake of Tunis. These hills contain places such as Notre-Dame de Tunis, Ras Tabia, La Rabta, La Kasbah, Montfleury and La Manoubia with altitudes just above 50 metres (160 feet). The city is located at the crossroads of a narrow strip of land between Lake Tunis and Séjoumi.
-[
-149
-]
-Tunisia was the eighteenth most water stressed country in the world in 2022.
-Tunisia's climate
-is
-Mediterranean
-in the north, with mild rainy winters and hot, dry summers.
-[
-150
-]
-The south of the country is desert. The terrain in the north is mountainous, which, moving south, gives way to a hot, dry central
-plain
-. The south is
-semiarid
-, and merges into the
-Sahara
-. A series of
-salt lakes
-, known as
-chotts
-or
-shatts
-, lie in an east–west line at the northern edge of the Sahara, extending from the
-Gulf of Gabes
-into
-Algeria
-. The lowest point is
-Chott el Djerid
-at
-17 metres (56
-ft)
-below sea level and the highest is
-Jebel ech Chambi
-at
-1,544 metres (5,066
-ft)
-.
-[
-151
-]
-Tunisia is home to five terrestrial ecoregions:
-Mediterranean conifer and mixed forests
-,
-Saharan halophytics
-,
-Mediterranean dry woodlands and steppe
-,
-Mediterranean woodlands and forests
-, and
-North Saharan steppe and woodlands
-.
-[
-152
-]
-Government and politics
-Main article:
-Politics of Tunisia
-Kais Saied
-,
-President
-Sara Zaafarani
-,
-Prime Minister
-Tunisia is a
-presidential republic
-with a
-president
-serving as
-head of state
-, a
-prime minister
-as
-head of government
-, a
-bicameral
-parliament
-, and a
-civil law court system
-. The
-Constitution of Tunisia
-, adopted 26 January 2014, guarantees rights for women and states that the President's religion "shall be Islam". In October 2014 Tunisia held its first elections under the new constitution following the Arab Spring.
-[
-153
-]
-Tunisia was the only
-democracy in North Africa
-until 2021. After a
-democratic backsliding
-, the country now classifies as "hybrid regime" in the
-Democracy Index (The Economist)
-.
-[
-154
-]
-Between 2020 and 2022 the
-V-Dem Democracy indices
-score for electoral democracy dropped from 0.727 to 0.307.
-[
-155
-]
-After the
-2022 constitutional referendum
-, Tunisia became a
-unitary
-presidential
-republic
-.
-The number of legalized
-political parties in Tunisia
-has grown considerably since the revolution. There are now over 100 legal parties, including several that existed under the former regime. During the rule of Ben Ali, only three functioned as independent opposition parties: the
-PDP
-,
-FDTL
-, and
-Tajdid
-. While some older parties are well-established and can draw on previous party structures, many of the 100-plus parties extant as of February 2012 are small.
-[
-156
-]
-Rare for the Arab world, women held more than 20% of seats in the country's pre-revolution bicameral parliament.
-[
-157
-]
-In the 2011 constituent assembly, women held between 24% and 31% of all seats.
-[
-158
-]
-[
-159
-]
-Tunisia is included in the European Union's
-European Neighbourhood Policy
-(ENP), which aims at bringing the
-EU
-and its neighbours closer. On 23 November 2014, Tunisia held its first presidential election following the Arab Spring in 2011.
-[
-160
-]
-The Tunisian legal system is heavily influenced by
-French civil law
-, while the law of personal status is based on Islamic law.
-[
-161
-]
-Sharia
-courts were abolished in 1956.
-[
-161
-]
-A
-Code of Personal Status
-was adopted shortly after independence in 1956, which, among other things, gave women full legal status (allowing them to run and own businesses, have bank accounts, and seek passports under their own authority). The code outlawed the practices of polygamy and repudiation and a husband's right to unilaterally divorce his wife.
-[
-162
-]
-Further reforms in 1993 included a provision to allow Tunisian women to transmit citizenship even if they are married to a foreigner and living abroad.
-[
-163
-]
-The Law of Personal Status is applied to all Tunisians regardless of their religion.
-[
-161
-]
-The Code of Personal Status remains one of the most progressive civil codes in North Africa and the Muslim world.
-[
-164
-]
-On 25 May 2022, President Kais Saied issued a decree for change of constitution by 25 July.
-[
-165
-]
-The
-referendum
-was held that day to a low turnout of 30% of voters, the overwhelming majority of whom accepted the new constitution, strengthening significantly the presidential powers.
-[
-166
-]
-Maghreb countries have toughened their tone towards Europe recently.
-[
-167
-]
-Foreign relations
-Main article:
-Foreign relations of Tunisia
-Tunisia maintains diplomatic relations with over 160+ countries. Former President
-Zine El Abidine Ben Ali
-has maintained its long-time policy of seeking good relations with the West, while playing an active role in
-Arab
-and
-African
-regional bodies. President
-Habib Bourguiba
-took a nonaligned stance but emphasized close relations with the European Union,
-Pakistan
-, and the
-United States
-.
-[
-168
-]
-Military
-Main article:
-Tunisian Armed Forces
-Tunisian military force
-As of 2008
-[
-update
-]
-, Tunisia had an army of 27,000 personnel equipped with 84 main battle tanks and 48 light tanks. The navy had 4,800 personnel operating 25 patrol boats and 6 other craft. The
-Tunisian Air Force
-has 154 aircraft and 4 UAVs. Paramilitary forces consisted of a 12,000-member national guard.
-[
-169
-]
-Tunisia's military spending was 1.6% of GDP
-as of 2006
-[
-update
-]
-. The army is responsible for national defence and also internal security. Tunisia has participated in peacekeeping efforts in the DROC and Ethiopia/Eritrea.
-[
-170
-]
-United Nations
-peacekeeping deployments for the Tunisian armed forces have been in Cambodia (
-UNTAC
-), Namibia (
-UNTAG
-), Somalia, Rwanda, Burundi, Western Sahara (
-MINURSO
-) and the 1960s mission in the Congo,
-ONUC
-.
-The military has historically played a professional, apolitical role in defending the country from external threats. Since January 2011 and at the direction of the executive branch, the military has taken on increasing responsibility for domestic security and humanitarian crisis response.
-[
-156
-]
-Tunisia is the 73rd most peaceful country in the world, according to the 2024
-Global Peace Index
-.
-[
-171
-]
-Administrative divisions
-Main articles:
-Subdivisions of Tunisia
-,
-Governorates of Tunisia
-, and
-Delegations of Tunisia
-Mediterranean sea
-Djerba
-Kerkennah
-Jendouba
-Bizerte
-Kef
-Béja
-Kasserine
-Gafsa
-Tozeur
-Kebili
-Tataouine
-Medenine
-Gabès
-Sfax
-Mahdia
-Monastir
-Sousse
-Nabeul
-Sidi Bouzid
-Kairouan
-Siliana
-Zaghouan
-Manouba
-Ben Arous
-Ariana
-Tunis
-Tunisia is subdivided into 24
-governorates
-(
-Wilaya
-), which are further divided into 264 "
-delegations
-" or "
-districts
-" (
-mutamadiyat
-), and further subdivided into
-municipalities
-(
-baladiyats
-)
-[
-172
-]
-and sectors (
-imadats
-).
-[
-173
-]
-Economy
-Main article:
-Economy of Tunisia
-GDP per capita development of Tunisia
-Ranked the most competitive economy in Africa by the
-World Economic Forum
-in 2009,
-[
-174
-]
-Tunisia is an export-oriented country in the process of liberalizing and privatizing an economy that, while averaging 5% GDP growth since the early 1990s, has suffered from corruption benefiting politically connected elites.
-[
-175
-]
-Tunisia's Penal Code criminalises several forms of corruption, including active and passive bribery, abuse of office, extortion and conflicts of interest, but the anti-corruption framework is not effectively enforced.
-[
-176
-]
-However, according to the
-Corruption Perceptions Index
-published annually by
-Transparency International
-, Tunisia was ranked the least corrupt North African country in 2016, with a score of 41. Tunisia has a diverse economy, ranging from agriculture, mining, manufacturing, and petroleum products, to
-tourism
-, which accounted for 7% of the total GDP and 370,000 jobs in 2009.
-[
-177
-]
-In 2008 it had an economy of US$41 billion in nominal terms, and $82 billion in
-PPP
-.
-[
-14
-]
-The agricultural sector accounts for 11.6% of the GDP, industry 25.7%, and services 62.8%. The industrial sector is mainly made up of clothing and footwear manufacturing, production of car parts, and electric machinery. Although Tunisia managed an average 5% growth over the last decade, it continues to suffer from a high unemployment rate, especially among youth.
-[
-178
-]
-[
-179
-]
-[
-180
-]
-The European Union remains Tunisia's first trading partner, currently accounting for 72.5% of Tunisian imports and 75% of Tunisian exports. Tunisia is one of the European Union's most established trading partners in the
-Mediterranean region
-and ranks as the EU's 30th largest trading partner. Tunisia was the first Mediterranean country to sign an Association Agreement with the European Union, in July 1995, although even before the date of entry came into force, Tunisia started dismantling tariffs on bilateral EU trade. Tunisia finalised the tariffs dismantling for industrial products in 2008 and therefore was the first non-EU Mediterranean country to enter in a free trade area with the EU.
-[
-181
-]
-The consequences of the
-Russian invasion of Ukraine
-for the global
-food supply
-are being felt particularly strongly in Tunisia.
-[
-182
-]
-[
-183
-]
-In June 2023 the
-World Bank Group
-lent Tunisia $268.4 million to finance
-ELMED
-, an electrical interconnection project with
-Italy
-to import electricity generated from
-renewable energy sources
-to
-Sicily
-and the EU via a 600
-Megawatt
-undersea cable
-.
-[
-184
-]
-Tunisia was ranked 76th in the
-Global Innovation Index
-in 2025.
-[
-185
-]
-[
-186
-]
-Tourism
-Main article:
-Tourism in Tunisia
-Sidi Bou Said
-Among Tunisia's tourist attractions are its cosmopolitan capital city of
-Tunis
-, the ancient ruins of
-Carthage
-, the Muslim and Jewish quarters of
-Djerba
-, coastal resorts outside of
-Monastir
-, and the night life-driven city of
-Hammamet
-.
-[
-187
-]
-According to
-The New York Times
-, Tunisia is "known for its golden beaches, sunny weather and affordable luxuries".
-[
-188
-]
-[
-189
-]
-[
-190
-]
-[
-191
-]
-[
-192
-]
-[
-193
-]
-Energy
-Main article:
-Energy in Tunisia
-Sources of electricity production in Tunisia
-[
-194
-]
-Thermal steam (44.0%)
-Combined cycle (43.0%)
-Gas turbine (11.0%)
-Wind, hydroelectric, solar (2.00%)
-Tunisia's current power production capacity is estimated at 5,944
-MW
-installed in 25 power plants as of 2024. Tunisia produced 19,520
-GWh
-in 2022. State owned power utility company
-STEG
-(Société Tunisienne d'Electricité et de Gas) controls 92.1% of the country's installed power production capacity and produces 83.5% of the electricity.
-[
-195
-]
-Oil production began in 1966 in Tunisia. In 2006 there were 12 oil fields.
-[
-196
-]
-The main field is
-El Borma
-.
-[
-197
-]
-The production rate of crude oil in Tunisia was
-29,200 barrels per day (4,640
-m
-3
-/d)
-at the end of September 2024.
-[
-198
-]
-Tunisia had
-plans for two nuclear power stations
-, to be operational by 2020. Both facilities are projected to produce 900–1000
-MW
-. France is set to become an important partner in Tunisia's nuclear power plans, having signed an agreement, along with other partners, to deliver training and technology.
-[
-199
-]
-[
-200
-]
-As of 2015
-[
-update
-]
-, Tunisia has abandoned these plans. Instead, Tunisia is considering other options to diversify its energy mix, such as renewable energies, coal, shale gas, liquified natural gas and constructing a submarine power interconnection with Italy.
-[
-201
-]
-According to the Tunisian Solar Plan (which is Tunisia's Renewable Energy Strategy not limited to solar, contrary to what its title may suggest), proposed by the
-National Agency for Energy Conservation
-(
-Archived
-21 October 2015 at the
-Wayback Machine
-), Tunisia's objective is to reach a share of 30% of renewable energies in the electricity mix by 2030, most of which should be accounted for by wind power and photovoltaics.
-[
-202
-]
-As of 2015
-[
-update
-]
-, Tunisia had a total renewable capacity of 312 MW (245 MW wind, 62 MW hydropower, 15 MW photovoltaics.)
-[
-203
-]
-[
-204
-]
-Transport
-Main article:
-Transport in Tunisia
-The country maintains
-19,232 kilometres (11,950
-mi)
-of roads,
-[
-14
-]
-with three highways: the
-A1
-from Tunis to Sfax (works ongoing for Sfax-Libya),
-A3
-Tunis-Beja (works ongoing Beja – Boussalem, studies ongoing Boussalem – Algeria) and
-A4
-Tunis – Bizerte. There are 29 airports in Tunisia, with
-Tunis Carthage International Airport
-and
-Djerba–Zarzis International Airport
-being the most important ones. A new airport,
-Enfidha – Hammamet International Airport
-opened in 2011. The airport is located north of Sousse at Enfidha and is to mainly serve the resorts of Hamammet and Port El Kantaoui, together with inland cities such as Kairouan. Five airlines are headquartered in Tunisia:
-Tunisair
-,
-Syphax Airlines
-,
-Karthago Airlines
-,
-Nouvelair
-, and
-Tunisair Express
-. The railway network is operated by
-SNCFT
-and amounts to
-2,135 kilometres (1,327
-mi)
-in total.
-[
-14
-]
-The Tunis area is served by a
-Light rail
-network named
-Metro Leger
-which is managed by Transtu.
-Water supply and sanitation
-Main article:
-Water supply and sanitation in Tunisia
-Tunisia has achieved the highest access rates to water supply and sanitation
-services in the Middle East and North Africa.
-As of 2011
-[
-update
-]
-, access to
-safe drinking water became close to universal approaching 100% in urban
-areas and 90% in rural areas.
-[
-205
-]
-Tunisia provides good quality drinking water throughout the year.
-[
-206
-]
-Responsibility for the water supply systems in urban areas and large rural centers is assigned to the
-Sociéte Nationale d'Exploitation et de Distribution des Eaux
-(SONEDE), a national water supply authority that is an autonomous public entity under the Ministry of Agriculture. Planning, design, and supervision of small and medium water supplies in the remaining rural areas are the responsibility of the
-Direction Générale du Génie Rurale
-(DGGR).
-In 1974, ONAS was established to manage the sanitation sector. Since 1993, ONAS has had the status of a main operator for the protection of the water environment and combating pollution. The rate of non-revenue water is the lowest in the region at 21% in 2012.
-[
-207
-]
-Demographics
-Main articles:
-Tunisians
-,
-Demographics of Tunisia
-, and
-List of cities in Tunisia
-Population pyramid
-Arabs leaving mosque in Tunis c. 1899
-Tunisian students
-According to the CIA, as of 2021, Tunisia has a population of 11,811,335 inhabitants.
-[
-14
-]
-The government has supported a successful
-family planning
-program that has reduced the population growth rate to just over 1% per annum, contributing to Tunisia's economic and social stability.
-[
-156
-]
-v
-t
-e
-Largest cities or towns in Tunisia
-According to the 2014 Census
-[
-208
-]
-Rank
-Name
-Governorate
-Pop.
-1
-Tunis
-Tunis
-1,066,961
-2
-Sfax
-Sfax
-341,999
-3
-Sousse
-Sousse
-314,071
-4
-Ettadhamen-Mnihla
-Ariana
-196,298
-5
-Kairouan
-Kairouan
-186,653
-6
-Gabès
-Gabès
-152,921
-7
-Bizerte
-Bizerte
-142,966
-8
-La Soukra
-Ariana
-129,693
-9
-Aryanah
-Ariana
-123,079
-10
-Sakiet Eddaïer
-Sfax
-113,776
-Ethnic groups
-The first people known to history in what is now Tunisia were the
-Berbers
-. Numerous civilizations and peoples have invaded, migrated to, or have been assimilated into the population over the millennia, with influences of population from
-Phoenicians
-/
-Carthaginians
-,
-Romans
-,
-Vandals
-,
-Arabs
-,
-Spaniards
-,
-Ottoman Turks
-and
-Janissaries
-, and
-French
-. There was a continuing inflow of nomadic
-Arab tribes
-from the
-Arabian Peninsula
-.
-[
-63
-]
-Tunisia's population is predominantly
-Arab
--
-Berber
-or
-Arabized
-Berber (over 95%), with genetic studies showing dominant North African paternal lineages (E-M81
-haplogroup
-~71%) overlaid by Middle Eastern Arab input (J-M267 ~30–35%).
-[
-209
-]
-[
-210
-]
-[
-211
-]
-The CIA World Factbook estimates Arabs 98%, Europeans 1%, and
-Jews
-/other 1%, but no official ethnic census has been conducted since 1956 (which recorded 95% Arabs/Berbers, 7% Europeans, 3% Jews), and current minorities include ~1,000–1,500 Jews (mainly Djerba) and untracked Black Tunisians (est. 10–15% in south).
-[
-14
-]
-[
-212
-]
-[
-213
-]
-[
-214
-]
-Black Tunisians are mostly descended from
-sub-Saharan Africans
-brought to Tunisia as part of the
-slave trade
-.
-[
-215
-]
-[
-216
-]
-[
-217
-]
-Amazighs
-are generally concentrated in the
-Dahar mountains
-and on the island of
-Djerba
-in the southeast, and in the
-Khroumire
-mountainous region in the north-west. An important number of genetic and other historical studies point to the predominance of the Amazighs in Tunisia.
-[
-218
-]
-An
-Ottoman
-influence has been particularly significant in forming the
-Turco-Tunisian
-community. Other peoples have also migrated to Tunisia during different time periods, including West Africans,
-Greeks
-,
-Romans
-,
-Vandals
-,
-Phoenicians
-(
-Punics
-),
-Jews
-, and French and Italians.
-[
-219
-]
-By 1870, the distinction between the Arabic-speaking population and the Turkish elite had blurred.
-[
-220
-]
-After the
-Reconquista
-and expulsion of non-Christians and
-Moriscos
-from Spain, many Spanish
-Muslims
-and Jews arrived in Tunisia. According to Matthew Carr, "As many as eighty thousand Moriscos settled in Tunisia, most of them in and around the capital, Tunis, which still contains a quarter known as Zuqaq al-Andalus, or Andalusia Alley."
-[
-221
-]
-From the late 19th century to the period after World War II, Tunisia was home to large populations of
-French
-and
-Italians
-(255,000
-Europeans
-in 1956),
-[
-222
-]
-although nearly all of them, along with the Jewish population, left after Tunisia became independent. The
-history of the Jews in Tunisia
-goes back some 2,000 years. In 1948, the Jewish population was estimated at 105,000, but by 2013 only about 1000 remained.
-[
-223
-]
-Languages
-Main article:
-Languages of Tunisia
-Arabic
-is the
-official language
-of Tunisia.
-Tunisian Arabic
-, known as Tounsi,
-[
-224
-]
-is the national, vernacular
-variety of Arabic
-used by the public.
-[
-225
-]
-There is also a small minority of speakers of
-Berber languages
-known collectively as Jebbali or Shelha in the country. Actively spoken Berber languages are
-Jerba Berber
-on the island of
-Djerba
-and
-Matmata Berber
-in the city of
-Matmata
-. The
-Sened language
-is extinct.
-[
-226
-]
-[
-227
-]
-Speakers of
-Berber dialects
-were 2% of the population.
-[
-228
-]
-French
-also plays a major role in Tunisian society, despite having no official status. It is widely used in education (e.g., as the language of instruction in the sciences in secondary school), the press, and business. In 2022, there were 6,321,000 French-speakers in Tunisia, or about 52% of the population.
-[
-229
-]
-Italian
-is understood and spoken by a small part of the
-Tunisian
-population.
-[
-230
-]
-Shop signs, menus and road signs in Tunisia are generally written in both Arabic and French.
-[
-231
-]
-Religion
-Main article:
-Religion in Tunisia
-Religion in Tunisia (
-ARDA
-2020 est.)
-[
-232
-]
-Sunni
-(97.5%)
-Other Muslim
-(2.00%)
-Christianity
-(0.20%)
-None
-(0.27%)
-Other (0.03%)
-Al-Zaytuna Mosque
-in Tunis
-Tunisia's constitution declares
-Islam
-as the official
-state religion
-—and the absolute majority of its population, or around 98%, report to be
-Muslims
-, while some 2% follow predominantly
-Christianity
-or
-Judaism
-.
-[
-14
-]
-According to a 2018 survey conducted by the
-Arab Barometer
-, the vast majority of Tunisians (99.4%) continue to identify as Muslim.
-[
-233
-]
-The survey also found that more than one third of Tunisians identify as non-religious. The percentage of Tunisians identifying themselves as non-religious has recently increased from around 12% in 2013 to around 33% in 2018, making Tunisia the least religious country in the Arab world.
-[
-234
-]
-Nearly half of young Tunisians described themselves as non-religious, according to that same survey.
-[
-235
-]
-However, as of July 2022, new surveys by the Arab Barometer say otherwise, particularly BBC's programme,
-The Newsroom
-journalists highlighting that the previously noted wave of those saying they were not religious has been, in fact, "reversed".
-[
-236
-]
-The most recent 2021 Arab Barometer survey reported that 44% of Tunisians consider themselves religious, 37% somewhat religious, and 19% non-religious.
-[
-233
-]
-Tunisians enjoy a significant degree of religious freedom, a right enshrined and protected in its constitution, which guarantees the freedom of thoughts, beliefs and to practice one's religion.
-[
-237
-]
-The country has a secular culture where religion is separated from not only political, but also public life. Individual Tunisians are tolerant of religious freedom and generally do not inquire about a person's personal beliefs.
-[
-237
-]
-The bulk of Tunisians belong to the
-Maliki school
-of
-Sunni Islam
-, and their
-mosques
-are easily recognizable by square minarets. However, the
-Turks
-brought with them the teaching of the
-Hanafi school
-during
-Ottoman rule
-, which still survives among
-families of Turkish descent
-today; their mosques traditionally have octagonal minarets.
-[
-238
-]
-Sunnis form the majority, with
-non-denominational Muslims
-being the second largest group of Muslims,
-[
-239
-]
-[
-full citation needed
-]
-followed by
-Ibadite
-Amazighs
-.
-[
-240
-]
-[
-241
-]
-Cathedral of St. Vincent de Paul
-,
-Tunis
-The
-Church of Carthage
-, in particular, became significant in the
-history of Christianity
-, playing a key role in the development of
-Christian philosophy
-and
-theology
-, and producing many prominent religious scholars and theologians.
-[
-242
-]
-Prior to independence, Tunisia was home to more than
-250,000 Christians
-(mostly of Italian and Maltese ancestry).
-[
-243
-]
-Many Christian Italian settlers left to Italy or France after independence from France.
-[
-244
-]
-Today, Tunisia's sizable
-Christian
-community of something over 35,000
-[
-245
-]
-[
-246
-]
-is composed mainly of
-Catholics
-(22,000), and to a lesser degree
-Protestants
-.
-Berber Christians
-continued to live in some
-Nefzaoua
-villages up until the early fifteenth century,
-[
-247
-]
-and the community of
-Tunisian Christians
-existed in the town of
-Tozeur
-up to the 18th century.
-[
-69
-]
-The International Religious Freedom Report for 2007 estimates that thousands of Tunisian Muslims have
-converted to Christianity
-.
-[
-248
-]
-[
-249
-]
-Judaism
-is the third largest religion, with between 1,000 and 1,400 members.
-[
-250
-]
-[
-251
-]
-One third of the Jewish population lives in and around the capital. The remainder lives on the island of
-Djerba
-with 39 synagogues where the Jewish community dates back 2,600 years,
-[
-252
-]
-in Sfax, and in Hammam-Lif.
-[
-237
-]
-Djerba, an island in the
-Gulf of Gabès
-, is home to
-El Ghriba synagogue
-, which is one of the
-oldest synagogues in the world
-and the oldest continuously used. Many Jews consider it a pilgrimage site, with celebrations taking place there once a year due to its age and the legend that the synagogue was built using stones from
-Solomon's Temple
-.
-[
-253
-]
-Although
-antisemitic
-violence has been reported,
-[
-254
-]
-Tunisia and
-Morocco
-are said to be the Arab countries most accepting of their Jewish populations.
-[
-255
-]
-There is also a
-Baháʼí Faith
-community.
-[
-256
-]
-Education
-Main article:
-Education in Tunisia
-Sadiki College
-in
-Tunis
-Literacy rate of Tunisia population, 15 years and older, 1985–2015. UNESCO Institute of Statistics
-The total adult literacy rate in 2008 was 78%
-[
-257
-]
-and this rate goes up to 97.3% when considering only people from 15 to 24 years old.
-[
-258
-]
-[
-full citation needed
-]
-Education is given a high priority and accounts for 6% of
-GNP
-. A basic education for children between the ages of 6 and 16 has been compulsory since 1991. Tunisia ranked 17th in the category of "quality of the [higher] educational system" and 21st in the category of "quality of primary education" in
-The Global Competitiveness Report
-2008–09, released by the World Economic Forum.
-[
-259
-]
-While children generally acquire
-Tunisian Arabic
-at home, when they enter school at age six, they are taught to read and write in
-Standard Arabic
-. From the age of 8, they are taught French while English is introduced at the age of 11.
-[
-260
-]
-The four years of secondary education are open to all holders of
-Diplôme de Fin d'Études de l'Enseignement de Base
-where the students focus on entering university level or join the workforce after completion. The Enseignement secondaire is divided into two stages: general academic and specialized. The higher education system in Tunisia has experienced a rapid expansion and the number of students has more than tripled over the past 10 years from approximately 102,000 in 1995 to 365,000 in 2005. The gross enrollment rate at the tertiary level in 2007 was 31 percent, with gender parity index of GER of 1.5.
-[
-259
-]
-Culture
-Main article:
-Culture of Tunisia
-Municipal Theatre
-The culture of Tunisia is mixed due to its long established history of outside influence from people – such as Phoenicians, Romans, Vandals, Byzantines, Arabs, Siculo-Normans, Turks, Italians, Maltese and the French – who all left their mark on the country.
-[
-261
-]
-Painting
-The birth of Tunisian contemporary painting is strongly linked to the School of Tunis, established by a group of artists from Tunisia united by the desire to incorporate native themes and rejecting the influence of Orientalist colonial painting. It was founded in 1949 and brings together French and Tunisian Muslims, Christians and Jews. Pierre Boucherle was its main instigator, along with
-Yahia Turki
-,
-Abdelaziz Gorgi
-, Moses Levy, Ammar Farhat, and Jules Lellouche. Given its doctrine, some members have therefore turned to the sources of aesthetic Arab-Muslim art, such as miniature Islamic architecture, etc. Expressionist paintings by Amara Debbache, Jellal Ben Abdallah, and Ali Ben Salem are recognized while abstract art captures the imagination of painters like Edgar Naccache, Nello Levy, and
-Hedi Turki
-.
-[
-262
-]
-After independence in 1956, the art movement in Tunisia was propelled by the dynamics of nation building and by artists serving the state. A Ministry of Culture was established, under the leadership of ministers such as
-Habib Boularès
-who oversaw art and education and power.
-[
-262
-]
-Artists gained international recognition such as
-Hatem El Mekki
-or
-Zoubeir Turki
-and influenced a generation of new young painters. Sadok Gmech draws his inspiration from national wealth while Moncef Ben Amor turns to fantasy. In another development, Youssef Rekik reused the technique of painting on glass and founded
-Nja Mahdaoui
-calligraphy with its mystical dimension.
-[
-262
-]
-There are currently fifty art galleries housing exhibitions of Tunisian and international artists.
-[
-263
-]
-These galleries include Gallery Yahia in Tunis and Carthage Essaadi gallery.
-[
-263
-]
-A new exposition opened in an old monarchal palace in Bardo dubbed the "awakening of a nation". The exposition boasts documents and artifacts from the Tunisian reformist monarchial rule in mid-19th century.
-[
-264
-]
-Literature
-Main article:
-Tunisian literature
-Abdelwahab Meddeb
-, a Tunisian French-language poet and novelist
-Tunisian literature exists in two forms: Arabic and French. Arabic literature dates back to the 7th century with the arrival of Arab civilization in the region. It is more important in both volume and value than French literature, which was introduced during the French protectorate from 1881.
-[
-265
-]
-Among the literary figures include
-Ali Douagi
-, who has produced more than 150 radio stories, over 500 poems and folk songs and nearly 15 plays,
-[
-266
-]
-Khraief Bashir, an Arabic novelist who published many notable books in the 1930s and which caused a scandal because the dialogues were written in Tunisian dialect,
-[
-266
-]
-and others such as Moncef Ghachem,
-Mohamed Salah Ben Mrad
-, or
-Mahmoud Messadi
-.
-As for poetry, Tunisian poetry typically opts for nonconformity and innovation with poets such as
-Aboul-Qacem Echebbi
-.
-As for literature in French, it is characterized by its critical approach. Contrary to the pessimism of
-Albert Memmi
-, who predicted that Tunisian literature was sentenced to die young,
-[
-267
-]
-a high number of Tunisian writers are abroad including
-Abdelwahab Meddeb
-, Bakri Tahar,
-Mustapha Tlili
-, Hele Beji, or Mellah Fawzi. Themes of wandering, exile, heartbreak, disconnection, memory, and representation are often focuses of Tunisian literature.
-[
-268
-]
-[
-269
-]
-The
-national bibliography
-lists 1249 non-school books published in 2002 in Tunisia, with 885 titles in Arabic.
-[
-270
-]
-In 2006 this figure had increased to 1,500 and 1,700 in 2007.
-[
-271
-]
-Nearly a third of the books are published for children.
-[
-272
-]
-Music
-Main article:
-Music of Tunisia
-Rachidia orchestra playing traditional music in Tunis Theater
-At the beginning of the 20th century, musical activity was dominated by the liturgical repertoire associated with different religious brotherhoods and secular repertoire which consisted of instrumental pieces and songs in different Andalusian forms and styles of origins, essentially borrowing characteristics of musical language. In 1930
-The Rachidia
-was founded, well known thanks to artists from the Jewish community. The founding in 1934 of a musical school helped revive Arab Andalusian music largely to a social and cultural revival led by the elite of the time who became aware of the risks of loss of the musical heritage and which they believed threatened the foundations of Tunisian national identity. The institution did not take long to assemble a group of musicians, poets, scholars. The creation of
-Radio Tunis
-in 1938 allowed musicians a greater opportunity to disseminate their works, with the station employing a policy of promoting Tunisian musicians exclusively.
-[
-273
-]
-Notable Tunisian musicians include
-Saber Rebaï
-,
-Dhafer Youssef
-,
-Belgacem Bouguenna
-,
-Sonia M'barek
-,
-Latifa
-,
-Salah El Mahdi
-,
-Anouar Brahem
-,
-Emel Mathlouthi
-and
-Lotfi Bouchnak
-.
-Festivals
-Main article:
-List of festivals in Tunisia
-Hundreds of international festivals, national, regional or local punctuate the calendar year. Music and theatrical festivals dominate the national cultural scene.
-Several festivals take place annually in summer: the
-International Festival of Carthage
-in July, the International Festival of Arts of Mahr from late July to early August, and the International Festival of Hammamet in July and August.
-The
-Carthage Film Festival
-is held in October and November of every other year, alternating with the Carthage Theatre Festival. It was created in 1966
-[
-274
-]
-by the Tunisian Minister of Culture to showcase films from the
-Maghreb
-, Africa and the Middle East. In order to be eligible for the competition, a film must have a director of African or Middle Eastern nationality, and have been produced at least two years before entry. The grand prize is the
-Tanit d'or
-, or "Golden Tanit", named for the
-lunar goddess
-of ancient
-Carthage
-; the award is in the shape of her symbol, a trapezium surmounted by a horizontal line and a circle.
-The
-International Festival of the Sahara
-, celebrated annually at the end of December, honors the cultural traditions associated with the Tunisian desert. This attracts many tourists and musicians from all around the world, as well as horsemen who flaunt their saddles and local fabrics and skills.
-There are also a number of musical festivals; some honor traditional Tunisian music, while others, including the
-Tabarka Jazz Festival
-, focus on other genres.
-In the city of Sousse, the
-Carnival of Awussu
-is an annual festive and cultural event that unfolds each 24 July.  It is a parade of symbolic chariots,
-fanfares
-and folk groups from Tunisia and elsewhere which takes place near the beach of Boujaafar, at the eve of the beginning of '
-Awussu
-(the word designating the
-heat wave
-of the month of August according to the
-Berber calendar
-). Originally it was a
-Pagan
-feast (
-Neptunalia
-) celebrating the god of the seas,
-Neptune
-in the
-Roman province of Africa
-, and might even go back to
-Phoenician
-times: the appellation Awussu is a possible deformation of
-Oceanus
-.
-[
-275
-]
-Omek Tannou
-is an ancient Tunisian
-rainmaking festival
-which was inherited from
-Punic
-and
-Berber
-traditions involving invocations of the goddess
-Tanit
-. It features the ritual use of the
-sculpted
-head of a woman (somewhat resembling the head of a girl's
-doll
-), which is carried in procession between the houses of a village during periods of
-drought
-by children singing the refrain
-أمك طانقو يا نساء طلبت ربي عالشتاء
-(transliteration:
-amk ṭangu ya nsaʾ tlbt rbi ʿalshta'a
-), "Amek tango, o women, ask God to rain". This song varies according to the region because the term
-shta
-designates rain only in certain urban areas. Each housewife then pours a little water on the statuette, invoking rain.
-Media
-Main article:
-Media of Tunisia
-Headquarters of
-Télévision Tunisienne
-since March 2010
-The TV media has long remained under the domination of the
-Establishment of the Broadcasting Authority Tunisia
-(ERTT) and its predecessor, the Tunisian Radio and Television, founded in 1957. On 7 November 2006, President Zine el-Abidine Ben Ali announced the demerger of the business into two separate companies, which became effective on 31 August 2007. Until then, ERTT managed all public television stations (
-Télévision Tunisienne 1
-as well as Télévision Tunisienne 2 which had replaced the defunct RTT 2) and four national radio stations (
-Radio Tunis
-, Tunisia Radio Culture, Youth and
-RTCI
-) and five regional stations in Sfax, Monastir, Gafsa, Le Kef and Tataouine. Most programs are in Arabic, but some are in French. Growth in private sector radio and television broadcasting has seen the creation of numerous operations including Radio Mosaique FM, Jawhara FM, Zaytuna FM,
-Hannibal TV
-, Ettounsiya TV, and
-Nessma TV
-.
-[
-276
-]
-[
-277
-]
-In 2007, some 245 newspapers and magazines (compared to only 91 in 1987) are 90% owned by private groups and independents.
-[
-278
-]
-The Tunisian political parties have the right to publish their own newspapers, but those of the opposition parties have very limited editions (like Al Mawkif or Mouwatinoun). Before the recent democratic transition, although freedom of the press was formally guaranteed by the constitution, almost all newspapers have in practice followed the government line report. Critical approach to the activities of the president, government and the Constitutional Democratic Rally Party (then in power) were suppressed. In essence, the media was dominated by state authorities through the
-Agence Tunis Afrique Presse
-. This has changed since, as the media censorship by the authorities have been largely abolished, and self-censorship has significantly decreased.
-[
-279
-]
-Nonetheless, the current regulatory framework and social and political culture mean that the future of press and media freedom is still unclear.
-[
-279
-]
-In September 2022 Tunisian president Kais Saied signed
-Decree Law 54
-, which purported to combat "
-false information and rumours
-" on the Internet. Article 24 of the decree gives up to five years imprisonment and a fine of up to 50,000
-dinar
-for anyone found to be spreading such information. This is doubled if the offending statement is made about a state official.
-[
-280
-]
-Sports
-Main article:
-Sport in Tunisia
-Stade Hammadi Agrebi
-in
-Radès
-Football
-is the most popular sport in Tunisia. The
-Tunisia national football team
-, also known as "The Eagles of Carthage", won the
-2004 African Cup of Nations
-(
-ACN
-) as hosts.
-[
-281
-]
-[
-282
-]
-They also represented Africa in the
-2005 FIFA Cup of Confederations
-, which was held in Germany, but they could not go beyond the first round.
-Their premier football league is the
-Tunisian Ligue Professionnelle 1
-. The main clubs are
-Espérance Sportive de Tunis
-,
-Étoile Sportive du Sahel
-,
-Club Africain
-,
-Club Sportif Sfaxien
-,
-Union Sportive Monastirienne
-,
-Stade Tunisien
-, and
-CA Bizertin
-.
-The
-Tunisia men's national handball team
-has participated in several handball world championships. In 2005, Tunisia came fourth. The
-national league
-consists of about 12 teams, with
-Club Africain
-and
-Espérance
-dominating. The most famous Tunisian handball player is
-Wissem Hmam
-. In the
-2005 Handball Championship in Tunis
-, Wissem Hmam was ranked as the top scorer of the tournament. The Tunisian national handball team won the African Cup ten times, being the team dominating this competition. The Tunisians won the 2018 African Cup in Gabon by defeating Egypt.
-[
-283
-]
-Tunisia's national basketball team
-has emerged as a top side in Africa. The team won the
-2011 Afrobasket
-and hosted Africa's top basketball event in 1965, 1987 and 2015. Tunisia was one of the continent's pioneers in basketball as it established one of Africa's first competitive leagues.
-[
-284
-]
-[
-285
-]
-[
-286
-]
-In
-boxing
-,
-Victor "Young" Perez
-was world champion in the flyweight weight class in 1931 and 1932.
-[
-287
-]
-In the
-2008 Summer Olympics
-, Tunisian
-Oussama Mellouli
-won a gold medal in 1500 meter freestyle.
-[
-288
-]
-In the
-2012 Summer Olympics
-, he won a bronze medal in the 1500 meter freestyle and a gold medal in the
-men's marathon swim
-at a distance of 10 kilometers.
-In 2012, Tunisia participated for the seventh time in its history in the
-Summer Paralympic Games
-. Their national team finished the competition with 19 medals; 9 golds, 5 silvers and 5 bronzes. Tunisia was classified 14th on the
-Paralympics medal table
-and 5th in
-Athletics
-.
-Throughout the years 2021 to 2023, tennis saw a spike of popularity in Tunisia and other Arabic countries as tennis player
-Ons Jabeur
-rapidly moved up the rankings reaching a career high ranking of number 3, and making 3 grand slam finals, including 2 at
-Wimbledon
-.
-See also
-Outline of Tunisia
-Architecture of Tunisia
-Notes
-↑
-English is taught from fourth grade,
-[
-12
-]
-and there is a notable increase in its usage among the youth and a growing demand in the workforce.
-[
-13
-]
-↑
-Pronunciation:
-UK
-:
-/
-tj
-uː
-ˈ
-n
-ɪ
-z
-i
-ə
-,
--
-ˈ
-n
-ɪ
-s
--/
-,
-US
-:
-/-
-ˈ
-n
-iː
-ʒ
-ə
-,
--
-ˈ
-n
-iː
-ʃ
-ə
-,
--
-ˈ
-n
-ɪ
-ʒ
-ə
-,
--
-ˈ
-n
-ɪ
-ʃ
-ə
-/
-;
-[
-25
-]
-Arabic
-:
-تونس
-Tūnis
-ⓘ
-,
-pronounced
-[
-tuː.nɪs
-]
-ⓘ
-;
-French
-:
-Tunisie
-,
-pronounced
-[
-ty.ni.zi
-]
-ⓘ
-↑
-Arabic
-:
-الجمهورية التونسية
-al-Jumhūrīya at-Tūnisīya
-ⓘ
-;
-French
-:
-République tunisienne
-,
-pronounced
-[
-ʁe.py.blik
-ty.ni.zjɛn
-]
-. The native Arabic official name translates more closely to "Tunisian Republic", as does the commonly used French translation, but the English translation "Republic of Tunisia" is used in English even by the Tunisian government for official purposes (e.g., the designation used by the Tunisian embassy in Washington, D.C.)
-↑
-Lebanon
-and
-Iraq
-are
-confessional democracies
-.
-↑
-The
-Encyclopædia Britannica
-reads "TUNIS, Regency of, formerly one of the Barbary states of north Africa, but since 1881 a dependency of France,..." in its 1875–1889 ninth edition,
-[
-41
-]
-but a 1902–1903 supplement (the tenth edition) and its celebrated eleventh edition (which reads "TUNISIA (Regency of Tunis), a country of North Africa, under the protection of France,..."
-[
-42
-]
-).
+Main menu
+move to sidebar hide
+Navigation 
+  * [Main page](https://en.wikipedia.org/wiki/Main_Page "Visit the main page \[alt-z\]")
+  * [Contents](https://en.wikipedia.org/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+  * [Current events](https://en.wikipedia.org/wiki/Portal:Current_events "Articles related to current events")
+  * [Random article](https://en.wikipedia.org/wiki/Special:Random "Visit a randomly selected article \[alt-x\]")
+  * [About Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+  * [Contact us](https://en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
 
-The
-New International Encyclopedia
-1905 and 1916 editions read "TUNIS (Fr.
-Tunisie
-). A French protectorate in North Africa.",
-[
-43
-]
-[
-44
-]
-while the 1928 supplement reads "TUNIS or
+
+Contribute 
+  * [Help](https://en.wikipedia.org/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+  * [Learn to edit](https://en.wikipedia.org/wiki/Help:Introduction "Learn how to edit Wikipedia")
+  * [Community portal](https://en.wikipedia.org/wiki/Wikipedia:Community_portal "The hub for editors")
+  * [Recent changes](https://en.wikipedia.org/wiki/Special:RecentChanges "A list of recent changes to Wikipedia \[alt-r\]")
+  * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+  * [Special pages](https://en.wikipedia.org/wiki/Special:SpecialPages "A list of all special pages \[alt-q\]")
+
+
+[ ![](https://en.wikipedia.org/static/images/icons/enwiki-25.svg) ![Wikipedia](https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg) ![The Free Encyclopedia](https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en-25.svg) ](https://en.wikipedia.org/wiki/Main_Page)
+[ ](https://en.wikipedia.org/wiki/Special:Search "Search Wikipedia \[alt-f\]")
+Search
+Appearance
+move to sidebar hide
+Text
+  * Small
+Standard
+Large
+
+This page always uses small font size
+Width
+  * Standard
+Wide
+
+The content is as wide as possible for your browser window.
+Color 
+  * Automatic
+Light
+Dark
+
+This page is always in light mode.
+  * [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [Create account](https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Tunisia "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
+
+
+  * [ Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [ Create account](https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Tunisia "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
+
+
+[ ![Wiki Education logo](https://upload.wikimedia.org/wikipedia/commons/a/ac/Wiki_Education_Foundation_logo.svg) "The coolest thing I've done in 10 years teaching" — run a Wikipedia Assignment in your next college course with free support! ](https://en.wikipedia.org/wiki/Wikipedia:Teaching_with_Wiki_Education)
+## Contents
+move to sidebar hide
+  * [ (Top) ](https://en.wikipedia.org/wiki/Tunisia)
+  * [ 1 Etymology ](https://en.wikipedia.org/wiki/Tunisia#Etymology)
+  * [ 2 History ](https://en.wikipedia.org/wiki/Tunisia#History) Toggle History subsection
+    * [ 2.1 Antiquity ](https://en.wikipedia.org/wiki/Tunisia#Antiquity)
+    * [ 2.2 Middle Ages ](https://en.wikipedia.org/wiki/Tunisia#Middle_Ages)
+    * [ 2.3 Ottoman Tunisia ](https://en.wikipedia.org/wiki/Tunisia#Ottoman_Tunisia)
+    * [ 2.4 French Protectorate of Tunisia (1881–1956) ](https://en.wikipedia.org/wiki/Tunisia#French_Protectorate_of_Tunisia_\(1881%E2%80%931956\))
+    * [ 2.5 Struggle for independence (1943–1956) ](https://en.wikipedia.org/wiki/Tunisia#Struggle_for_independence_\(1943%E2%80%931956\))
+    * [ 2.6 Post-independence (1956–2011) ](https://en.wikipedia.org/wiki/Tunisia#Post-independence_\(1956%E2%80%932011\))
+    * [ 2.7 Post-revolution (since 2011) ](https://en.wikipedia.org/wiki/Tunisia#Post-revolution_\(since_2011\))
+      * [ 2.7.1 Presidency of Kais Saied (2019–present) ](https://en.wikipedia.org/wiki/Tunisia#Presidency_of_Kais_Saied_\(2019%E2%80%93present\))
+  * [ 3 Geography ](https://en.wikipedia.org/wiki/Tunisia#Geography)
+  * [ 4 Government and politics ](https://en.wikipedia.org/wiki/Tunisia#Government_and_politics) Toggle Government and politics subsection
+    * [ 4.1 Foreign relations ](https://en.wikipedia.org/wiki/Tunisia#Foreign_relations)
+    * [ 4.2 Military ](https://en.wikipedia.org/wiki/Tunisia#Military)
+    * [ 4.3 Administrative divisions ](https://en.wikipedia.org/wiki/Tunisia#Administrative_divisions)
+  * [ 5 Economy ](https://en.wikipedia.org/wiki/Tunisia#Economy) Toggle Economy subsection
+    * [ 5.1 Tourism ](https://en.wikipedia.org/wiki/Tunisia#Tourism)
+    * [ 5.2 Energy ](https://en.wikipedia.org/wiki/Tunisia#Energy)
+    * [ 5.3 Transport ](https://en.wikipedia.org/wiki/Tunisia#Transport)
+    * [ 5.4 Water supply and sanitation ](https://en.wikipedia.org/wiki/Tunisia#Water_supply_and_sanitation)
+  * [ 6 Demographics ](https://en.wikipedia.org/wiki/Tunisia#Demographics) Toggle Demographics subsection
+    * [ 6.1 Ethnic groups ](https://en.wikipedia.org/wiki/Tunisia#Ethnic_groups)
+    * [ 6.2 Languages ](https://en.wikipedia.org/wiki/Tunisia#Languages)
+    * [ 6.3 Religion ](https://en.wikipedia.org/wiki/Tunisia#Religion)
+    * [ 6.4 Education ](https://en.wikipedia.org/wiki/Tunisia#Education)
+  * [ 7 Culture ](https://en.wikipedia.org/wiki/Tunisia#Culture) Toggle Culture subsection
+    * [ 7.1 Painting ](https://en.wikipedia.org/wiki/Tunisia#Painting)
+    * [ 7.2 Literature ](https://en.wikipedia.org/wiki/Tunisia#Literature)
+    * [ 7.3 Music ](https://en.wikipedia.org/wiki/Tunisia#Music)
+    * [ 7.4 Festivals ](https://en.wikipedia.org/wiki/Tunisia#Festivals)
+    * [ 7.5 Media ](https://en.wikipedia.org/wiki/Tunisia#Media)
+    * [ 7.6 Sports ](https://en.wikipedia.org/wiki/Tunisia#Sports)
+  * [ 8 See also ](https://en.wikipedia.org/wiki/Tunisia#See_also)
+  * [ 9 Notes ](https://en.wikipedia.org/wiki/Tunisia#Notes)
+  * [ 10 References ](https://en.wikipedia.org/wiki/Tunisia#References)
+  * [ 11 Further reading ](https://en.wikipedia.org/wiki/Tunisia#Further_reading)
+  * [ 12 External links ](https://en.wikipedia.org/wiki/Tunisia#External_links) Toggle External links subsection
+    * [ 12.1 Government ](https://en.wikipedia.org/wiki/Tunisia#Government)
+    * [ 12.2 History ](https://en.wikipedia.org/wiki/Tunisia#History_2)
+    * [ 12.3 Tourism ](https://en.wikipedia.org/wiki/Tunisia#Tourism_2)
+    * [ 12.4 Maps ](https://en.wikipedia.org/wiki/Tunisia#Maps)
+
+
+# Tunisia
+270 languages
+  * [Аԥсшәа](https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Abkhazian")
+  * [Acèh](https://ace.wikipedia.org/wiki/Tunisia "Tunisia – Acehnese")
+  * [Адыгабзэ](https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Adyghe")
+  * [Afrikaans](https://af.wikipedia.org/wiki/Tunisi%C3%AB "Tunisië – Afrikaans")
+  * [Alemannisch](https://als.wikipedia.org/wiki/Tunesien "Tunesien – Alemannic")
+  * [አማርኛ](https://am.wikipedia.org/wiki/%E1%89%B1%E1%8A%92%E1%8B%9A%E1%8B%AB "ቱኒዚያ – Amharic")
+  * [Pangcah](https://ami.wikipedia.org/wiki/Tunisia "Tunisia – Amis")
+  * [Aragonés](https://an.wikipedia.org/wiki/Tunicia "Tunicia – Aragonese")
+  * [Ænglisc](https://ang.wikipedia.org/wiki/Tunisland "Tunisland – Old English")
+  * [Obolo](https://ann.wikipedia.org/wiki/Tunisia "Tunisia – Obolo")
+  * [अंगिका](https://anp.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A5%80%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्यूनीशिया – Angika")
+  * [العربية](https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Arabic")
+  * [ܐܪܡܝܐ](https://arc.wikipedia.org/wiki/%DC%AC%DC%98%DC%A2%DC%A3_\(%DC%90%DC%AC%DC%AA%DC%90\) "ܬܘܢܣ \(ܐܬܪܐ\) – Aramaic")
+  * [الدارجة](https://ary.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Moroccan Arabic")
+  * [مصرى](https://arz.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Egyptian Arabic")
+  * [অসমীয়া](https://as.wikipedia.org/wiki/%E0%A6%A4%E0%A7%81%E0%A6%A8%E0%A6%BF%E0%A6%9B%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তুনিছিয়া – Assamese")
+  * [Asturianu](https://ast.wikipedia.org/wiki/Tunicia "Tunicia – Asturian")
+  * [Kotava](https://avk.wikipedia.org/wiki/Tunusa "Tunusa – Kotava")
+  * [Azərbaycanca](https://az.wikipedia.org/wiki/Tunis "Tunis – Azerbaijani")
+  * [تۆرکجه](https://azb.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%DB%8C%D8%B3 "تونیس – South Azerbaijani")
+  * [Башҡортса](https://ba.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Bashkir")
+  * [Basa Bali](https://ban.wikipedia.org/wiki/Tunisia "Tunisia – Balinese")
+  * [Boarisch](https://bar.wikipedia.org/wiki/Tunesien "Tunesien – Bavarian")
+  * [Žemaitėška](https://bat-smg.wikipedia.org/wiki/Ton%C4%97sos "Tonėsos – Samogitian")
+  * [Bikol Central](https://bcl.wikipedia.org/wiki/Tunisya "Tunisya – Central Bikol")
+  * [Беларуская (тарашкевіца)](https://be-tarask.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – Belarusian \(Taraškievica orthography\)")
+  * [Беларуская](https://be.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – Belarusian")
+  * [Betawi](https://bew.wikipedia.org/wiki/Tunis "Tunis – Betawi")
+  * [Български](https://bg.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Bulgarian")
+  * [भोजपुरी](https://bh.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A5%80%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्यूनीशिया – Bhojpuri")
+  * [Bislama](https://bi.wikipedia.org/wiki/Tunisia "Tunisia – Bislama")
+  * [Banjar](https://bjn.wikipedia.org/wiki/Tunisia "Tunisia – Banjar")
+  * [Bamanankan](https://bm.wikipedia.org/wiki/Tunizi "Tunizi – Bambara")
+  * [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BF%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তিউনিসিয়া – Bangla")
+  * [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%8F%E0%BD%B4%E0%BC%8B%E0%BD%93%E0%BD%B2%E0%BC%8B%E0%BD%A4%E0%BD%B2%E0%BC%8B%E0%BD%A1%E0%BC%8D "ཏུ་ནི་ཤི་ཡ། – Tibetan")
+  * [বিষ্ণুপ্রিয়া মণিপুরী](https://bpy.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BF%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE "তিউনিসিয়া – Bishnupriya")
+  * [Brezhoneg](https://br.wikipedia.org/wiki/Tunizia "Tunizia – Breton")
+  * [Bosanski](https://bs.wikipedia.org/wiki/Tunis "Tunis – Bosnian")
+  * [Basa Ugi](https://bug.wikipedia.org/wiki/%E1%A8%88%E1%A8%9A%E1%A8%95%E1%A8%98%E1%A8%8A%E1%A8%99%E1%A8%94 "ᨈᨚᨕᨘᨊᨙᨔ – Buginese")
+  * [Буряад](https://bxr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Russia Buriat")
+  * [Català](https://ca.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – Catalan")
+  * [Chavacano de Zamboanga](https://cbk-zam.wikipedia.org/wiki/T%C3%BAnez "Túnez – Chavacano")
+  * [閩東語 / Mìng-dĕ̤ng-ngṳ̄](https://cdo.wikipedia.org/wiki/Tunisia "Tunisia – Mindong")
+  * [Нохчийн](https://ce.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Chechen")
+  * [Cebuano](https://ceb.wikipedia.org/wiki/Tunisia "Tunisia – Cebuano")
+  * [کوردی](https://ckb.wikipedia.org/wiki/%D8%AA%D9%88%D9%88%D9%86%D8%B3 "توونس – Central Kurdish")
+  * [Corsu](https://co.wikipedia.org/wiki/Tunisia "Tunisia – Corsican")
+  * [Qırımtatarca](https://crh.wikipedia.org/wiki/Tunis "Tunis – Crimean Tatar")
+  * [Čeština](https://cs.wikipedia.org/wiki/Tunisko "Tunisko – Czech")
+  * [Kaszëbsczi](https://csb.wikipedia.org/wiki/Tunezj%C3%B4 "Tunezjô – Kashubian")
+  * [Чӑвашла](https://cv.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Chuvash")
+  * [Cymraeg](https://cy.wikipedia.org/wiki/Tiwnisia "Tiwnisia – Welsh")
+  * [Dansk](https://da.wikipedia.org/wiki/Tunesien "Tunesien – Danish")
+  * [Dagbanli](https://dag.wikipedia.org/wiki/Tunisia "Tunisia – Dagbani")
+  * [Deutsch](https://de.wikipedia.org/wiki/Tunesien "Tunesien – German")
+  * [Zazaki](https://diq.wikipedia.org/wiki/Tun%C4%B1s "Tunıs – Dimli")
+  * [Dolnoserbski](https://dsb.wikipedia.org/wiki/Tuneziska "Tuneziska – Lower Sorbian")
+  * [डोटेली](https://dty.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – Doteli")
+  * [ދިވެހިބަސް](https://dv.wikipedia.org/wiki/%DE%8C%DE%AB%DE%82%DE%A8%DE%90%DE%B0 "ތޫނިސް – Divehi")
+  * [ཇོང་ཁ](https://dz.wikipedia.org/wiki/%E0%BD%8A%E0%BD%B4%E0%BC%8B%E0%BD%93%E0%BD%B2%E0%BC%8B%E0%BD%A6%E0%BD%B2%E0%BC%8D "ཊུ་ནི་སི། – Dzongkha")
+  * [Eʋegbe](https://ee.wikipedia.org/wiki/Tunisia "Tunisia – Ewe")
+  * [Ελληνικά](https://el.wikipedia.org/wiki/%CE%A4%CF%85%CE%BD%CE%B7%CF%83%CE%AF%CE%B1 "Τυνησία – Greek")
+  * [Emiliàn e rumagnòl](https://eml.wikipedia.org/wiki/T%C3%BCni%E1%B9%A1ia "Tüniṡia – Emiliano-Romagnolo")
+  * [Esperanto](https://eo.wikipedia.org/wiki/Tunizio "Tunizio – Esperanto")
+  * [Español](https://es.wikipedia.org/wiki/T%C3%BAnez "Túnez – Spanish")
+  * [Eesti](https://et.wikipedia.org/wiki/Tuneesia "Tuneesia – Estonian")
+  * [Euskara](https://eu.wikipedia.org/wiki/Tunisia "Tunisia – Basque")
+  * [Estremeñu](https://ext.wikipedia.org/wiki/T%C3%BAnis "Túnis – Extremaduran")
+  * [فارسی](https://fa.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Persian")
+  * [Fulfulde](https://ff.wikipedia.org/wiki/Tuniisi "Tuniisi – Fula")
+  * [Suomi](https://fi.wikipedia.org/wiki/Tunisia "Tunisia – Finnish")
+  * [Võro](https://fiu-vro.wikipedia.org/wiki/Tuneesi%C3%A4 "Tuneesiä – Võro")
+  * [Føroyskt](https://fo.wikipedia.org/wiki/Tunesia "Tunesia – Faroese")
+  * [Fɔ̀ngbè](https://fon.wikipedia.org/wiki/Tunisiet%C3%B2 "Tunisietò – Fon")
+  * [Français](https://fr.wikipedia.org/wiki/Tunisie "Tunisie – French")
+  * [Arpetan](https://frp.wikipedia.org/wiki/Tunisia "Tunisia – Arpitan")
+  * [Nordfriisk](https://frr.wikipedia.org/wiki/Tuneesien "Tuneesien – Northern Frisian")
+  * [Frysk](https://fy.wikipedia.org/wiki/Tuneezje "Tuneezje – Western Frisian")
+  * [Gaeilge](https://ga.wikipedia.org/wiki/An_T%C3%BAin%C3%A9is "An Túinéis – Irish")
+  * [Gagauz](https://gag.wikipedia.org/wiki/Tunis "Tunis – Gagauz")
+  * [Kriyòl gwiyannen](https://gcr.wikipedia.org/wiki/Tinizi "Tinizi – Guianan Creole")
+  * [Gàidhlig](https://gd.wikipedia.org/wiki/Tuinisia "Tuinisia – Scottish Gaelic")
+  * [Galego](https://gl.wikipedia.org/wiki/Tunisia "Tunisia – Galician")
+  * [گیلکی](https://glk.wikipedia.org/wiki/%D8%AA%DB%8A%D9%86%D8%B3 "تۊنس – Gilaki")
+  * [Avañe'ẽ](https://gn.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – Guarani")
+  * [गोंयची कोंकणी / Gõychi Konknni](https://gom.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिशिया – Goan Konkani")
+  * [Bahasa Hulontalo](https://gor.wikipedia.org/wiki/Tunisia "Tunisia – Gorontalo")
+  * [Ghanaian Pidgin](https://gpe.wikipedia.org/wiki/Tunisia "Tunisia – Ghanaian Pidgin")
+  * [ગુજરાતી](https://gu.wikipedia.org/wiki/%E0%AA%9F%E0%AB%8D%E0%AA%AF%E0%AB%81%E0%AA%A8%E0%AA%BF%E0%AA%B6%E0%AA%BF%E0%AA%AF%E0%AA%BE "ટ્યુનિશિયા – Gujarati")
+  * [Gaelg](https://gv.wikipedia.org/wiki/Yn_Tooneesh "Yn Tooneesh – Manx")
+  * [Hausa](https://ha.wikipedia.org/wiki/Tunisiya "Tunisiya – Hausa")
+  * [客家語 / Hak-kâ-ngî](https://hak.wikipedia.org/wiki/Tunisia "Tunisia – Hakka Chinese")
+  * [Hawaiʻi](https://haw.wikipedia.org/wiki/Tunisia "Tunisia – Hawaiian")
+  * [עברית](https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%A0%D7%99%D7%A1%D7%99%D7%94 "תוניסיה – Hebrew")
+  * [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%A4%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A5%80%E0%A4%AF%E0%A4%BE "तूनिसीया – Hindi")
+  * [Fiji Hindi](https://hif.wikipedia.org/wiki/Tunisia "Tunisia – Fiji Hindi")
+  * [Hrvatski](https://hr.wikipedia.org/wiki/Tunis "Tunis – Croatian")
+  * [Hornjoserbsce](https://hsb.wikipedia.org/wiki/Tuneziska "Tuneziska – Upper Sorbian")
+  * [Kreyòl ayisyen](https://ht.wikipedia.org/wiki/Tinizi "Tinizi – Haitian Creole")
+  * [Magyar](https://hu.wikipedia.org/wiki/Tun%C3%A9zia "Tunézia – Hungarian")
+  * [Հայերեն](https://hy.wikipedia.org/wiki/%D4%B9%D5%B8%D6%82%D5%B6%D5%AB%D5%BD "Թունիս – Armenian")
+  * [Արեւմտահայերէն](https://hyw.wikipedia.org/wiki/%D4%B9%D5%B8%D6%82%D5%B6%D5%B8%D6%82%D5%A6 "Թունուզ – Western Armenian")
+  * [Interlingua](https://ia.wikipedia.org/wiki/Tunisia "Tunisia – Interlingua")
+  * [Jaku Iban](https://iba.wikipedia.org/wiki/Tunisia "Tunisia – Iban")
+  * [Bahasa Indonesia](https://id.wikipedia.org/wiki/Tunisia "Tunisia – Indonesian")
+  * [Interlingue](https://ie.wikipedia.org/wiki/Tunisia "Tunisia – Interlingue")
+  * [Igbo](https://ig.wikipedia.org/wiki/Tunisia "Tunisia – Igbo")
+  * [Ilokano](https://ilo.wikipedia.org/wiki/Tunisia "Tunisia – Iloko")
+  * [Ido](https://io.wikipedia.org/wiki/Tunizia "Tunizia – Ido")
+  * [Íslenska](https://is.wikipedia.org/wiki/T%C3%BAnis "Túnis – Icelandic")
+  * [Italiano](https://it.wikipedia.org/wiki/Tunisia "Tunisia – Italian")
+  * [日本語](https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A5%E3%83%8B%E3%82%B8%E3%82%A2 "チュニジア – Japanese")
+  * [Patois](https://jam.wikipedia.org/wiki/Tunisia "Tunisia – Jamaican Creole English")
+  * [La .lojban.](https://jbo.wikipedia.org/wiki/tunis "tunis – Lojban")
+  * [Jawa](https://jv.wikipedia.org/wiki/Tunis_\(nagara\) "Tunis \(nagara\) – Javanese")
+  * [ქართული](https://ka.wikipedia.org/wiki/%E1%83%A2%E1%83%A3%E1%83%9C%E1%83%98%E1%83%A1%E1%83%98 "ტუნისი – Georgian")
+  * [Qaraqalpaqsha](https://kaa.wikipedia.org/wiki/Tunis "Tunis – Kara-Kalpak")
+  * [Taqbaylit](https://kab.wikipedia.org/wiki/Tunes "Tunes – Kabyle")
+  * [Jju](https://kaj.wikipedia.org/wiki/Tunisiya "Tunisiya – Jju")
+  * [Kabɩyɛ](https://kbp.wikipedia.org/wiki/Tuniizii "Tuniizii – Kabiye")
+  * [Tyap](https://kcg.wikipedia.org/wiki/Tuni%CC%B1siya "Tuni̱siya – Tyap")
+  * [Kongo](https://kg.wikipedia.org/wiki/Tunisia "Tunisia – Kongo")
+  * [Kumoring](https://kge.wikipedia.org/wiki/Tunisia "Tunisia – Komering")
+  * [Gĩkũyũ](https://ki.wikipedia.org/wiki/Tunisia "Tunisia – Kikuyu")
+  * [Қазақша](https://kk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Kazakh")
+  * [ភាសាខ្មែរ](https://km.wikipedia.org/wiki/%E1%9E%91%E1%9E%BB%E1%9E%99%E1%9E%93%E1%9E%B8%E1%9E%9F%E1%9F%8A%E1%9E%B8 "ទុយនីស៊ី – Khmer")
+  * [ಕನ್ನಡ](https://kn.wikipedia.org/wiki/%E0%B2%9F%E0%B3%81%E0%B2%A8%E0%B3%80%E0%B2%B6%E0%B2%BF%E0%B2%AF "ಟುನೀಶಿಯ – Kannada")
+  * [Yerwa Kanuri](https://knc.wikipedia.org/wiki/Tunisia "Tunisia – Central Kanuri")
+  * [한국어](https://ko.wikipedia.org/wiki/%ED%8A%80%EB%8B%88%EC%A7%80 "튀니지 – Korean")
+  * [Къарачай-малкъар](https://krc.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Karachay-Balkar")
+  * [کٲشُر](https://ks.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Kashmiri")
+  * [Kurdî](https://ku.wikipedia.org/wiki/T%C3%BBnis "Tûnis – Kurdish")
+  * [Kernowek](https://kw.wikipedia.org/wiki/Tunisi "Tunisi – Cornish")
+  * [Кыргызча](https://ky.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Kyrgyz")
+  * [Latina](https://la.wikipedia.org/wiki/Tunesia "Tunesia – Latin")
+  * [Ladino](https://lad.wikipedia.org/wiki/Tunesia "Tunesia – Ladino")
+  * [Lëtzebuergesch](https://lb.wikipedia.org/wiki/Tunesien "Tunesien – Luxembourgish")
+  * [Лезги](https://lez.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Lezghian")
+  * [Lingua Franca Nova](https://lfn.wikipedia.org/wiki/Tunis "Tunis – Lingua Franca Nova")
+  * [Luganda](https://lg.wikipedia.org/wiki/Tunisia "Tunisia – Ganda")
+  * [Limburgs](https://li.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – Limburgish")
+  * [Ligure](https://lij.wikipedia.org/wiki/Tunixia "Tunixia – Ligurian")
+  * [Ladin](https://lld.wikipedia.org/wiki/Tunisia "Tunisia – Ladin")
+  * [Lombard](https://lmo.wikipedia.org/wiki/T%C3%BCnisia "Tünisia – Lombard")
+  * [Lingála](https://ln.wikipedia.org/wiki/Tunisia "Tunisia – Lingala")
+  * [ລາວ](https://lo.wikipedia.org/wiki/%E0%BA%9B%E0%BA%B0%E0%BB%80%E0%BA%97%E0%BA%94%E0%BA%95%E0%BA%B9%E0%BA%99%E0%BA%B4%E0%BB%80%E0%BA%8A%E0%BA%8D "ປະເທດຕູນິເຊຍ – Lao")
+  * [Lietuvių](https://lt.wikipedia.org/wiki/Tunisas "Tunisas – Lithuanian")
+  * [Latviešu](https://lv.wikipedia.org/wiki/Tunisija "Tunisija – Latvian")
+  * [Madhurâ](https://mad.wikipedia.org/wiki/Tunisia "Tunisia – Madurese")
+  * [Мокшень](https://mdf.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81%D0%B8%D1%8F "Тунисия – Moksha")
+  * [Malagasy](https://mg.wikipedia.org/wiki/Tonizia "Tonizia – Malagasy")
+  * [Олык марий](https://mhr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Eastern Mari")
+  * [Māori](https://mi.wikipedia.org/wiki/T%C5%ABnihia "Tūnihia – Māori")
+  * [Minangkabau](https://min.wikipedia.org/wiki/Tunisia "Tunisia – Minangkabau")
+  * [Македонски](https://mk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Macedonian")
+  * [മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%9F%E0%B5%81%E0%B4%A3%E0%B5%80%E0%B4%B7%E0%B5%8D%E0%B4%AF "ടുണീഷ്യ – Malayalam")
+  * [Монгол](https://mn.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Mongolian")
+  * [ꯃꯤꯇꯩ ꯂꯣꯟ](https://mni.wikipedia.org/wiki/%EA%AF%87%EA%AF%A8%EA%AF%85%EA%AF%A4%EA%AF%81%EA%AF%A4%EA%AF%8C%EA%AF%A5 "ꯇꯨꯅꯤꯁꯤꯌꯥ – Manipuri")
+  * [मराठी](https://mr.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – Marathi")
+  * [Кырык мары](https://mrj.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Western Mari")
+  * [Bahasa Melayu](https://ms.wikipedia.org/wiki/Tunisia "Tunisia – Malay")
+  * [Malti](https://mt.wikipedia.org/wiki/Tune%C5%BCija "Tuneżija – Maltese")
+  * [Mirandés](https://mwl.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – Mirandese")
+  * [မြန်မာဘာသာ](https://my.wikipedia.org/wiki/%E1%80%90%E1%80%B0%E1%80%94%E1%80%AE%E1%80%B8%E1%80%9B%E1%80%BE%E1%80%AC%E1%80%B8%E1%80%94%E1%80%AD%E1%80%AF%E1%80%84%E1%80%BA%E1%80%84%E1%80%B6 "တူနီးရှားနိုင်ငံ – Burmese")
+  * [Эрзянь](https://myv.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Erzya")
+  * [مازِرونی](https://mzn.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Mazanderani")
+  * [Nedersaksies](https://nds-nl.wikipedia.org/wiki/Tunesie "Tunesie – Low Saxon")
+  * [Plattdüütsch](https://nds.wikipedia.org/wiki/Tunesien "Tunesien – Low German")
+  * [नेपाली](https://ne.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – Nepali")
+  * [नेपाल भाषा](https://new.wikipedia.org/wiki/%E0%A4%9F%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B8%E0%A4%BF%E0%A4%AF%E0%A4%BE "ट्युनिसिया – Newari")
+  * [Nederlands](https://nl.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – Dutch")
+  * [Norsk nynorsk](https://nn.wikipedia.org/wiki/Tunisia "Tunisia – Norwegian Nynorsk")
+  * [Norsk bokmål](https://no.wikipedia.org/wiki/Tunisia "Tunisia – Norwegian Bokmål")
+  * [Novial](https://nov.wikipedia.org/wiki/Tunisia "Tunisia – Novial")
+  * [Sesotho sa Leboa](https://nso.wikipedia.org/wiki/Tunisia "Tunisia – Northern Sotho")
+  * [Nupe](https://nup.wikipedia.org/wiki/Tunusia "Tunusia – Nupe")
+  * [Diné bizaad](https://nv.wikipedia.org/wiki/Gh%C4%85%CC%81%C4%85%CC%81%CA%BCask%CA%BCidii_Bi%C5%82ikahii_Bik%C3%A9yah_Y%C3%A1zh%C3%AD "Ghą́ą́ʼaskʼidii Biłikahii Bikéyah Yázhí – Navajo")
+  * [Occitan](https://oc.wikipedia.org/wiki/Tunisia "Tunisia – Occitan")
+  * [Livvinkarjala](https://olo.wikipedia.org/wiki/Tunisu "Tunisu – Livvi-Karelian")
+  * [Oromoo](https://om.wikipedia.org/wiki/Tuniisiyaa "Tuniisiyaa – Oromo")
+  * [ଓଡ଼ିଆ](https://or.wikipedia.org/wiki/%E0%AC%9F%E0%AD%8D%E0%AD%9F%E0%AD%81%E0%AC%A8%E0%AC%BF%E0%AC%B8%E0%AC%BF%E0%AC%86 "ଟ୍ୟୁନିସିଆ – Odia")
+  * [Ирон](https://os.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Ossetic")
+  * [ਪੰਜਾਬੀ](https://pa.wikipedia.org/wiki/%E0%A8%9F%E0%A9%81%E0%A8%A8%E0%A9%80%E0%A8%B8%E0%A8%BC%E0%A9%80%E0%A8%86 "ਟੁਨੀਸ਼ੀਆ – Punjabi")
+  * [Kapampangan](https://pam.wikipedia.org/wiki/T%C3%BAnes "Túnes – Pampanga")
+  * [Papiamentu](https://pap.wikipedia.org/wiki/Tunesia "Tunesia – Papiamento")
+  * [Picard](https://pcd.wikipedia.org/wiki/Tunisie "Tunisie – Picard")
+  * [Polski](https://pl.wikipedia.org/wiki/Tunezja "Tunezja – Polish")
+  * [Piemontèis](https://pms.wikipedia.org/wiki/Tunis%C3%ACa "Tunisìa – Piedmontese")
+  * [پنجابی](https://pnb.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Western Punjabi")
+  * [Ποντιακά](https://pnt.wikipedia.org/wiki/%CE%A4%CF%85%CE%BD%CE%B7%CF%83%CE%AF%CE%B1%CE%BD "Τυνησίαν – Pontic")
+  * [پښتو](https://ps.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Pashto")
+  * [Português](https://pt.wikipedia.org/wiki/Tun%C3%ADsia "Tunísia – Portuguese")
+  * [Runa Simi](https://qu.wikipedia.org/wiki/Tunisya "Tunisya – Quechua")
+  * [Rumantsch](https://rm.wikipedia.org/wiki/Tunesia "Tunesia – Romansh")
+  * [Română](https://ro.wikipedia.org/wiki/Tunisia "Tunisia – Romanian")
+  * [Русский](https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Russian")
+  * [Русиньскый](https://rue.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Rusyn")
+  * [Ikinyarwanda](https://rw.wikipedia.org/wiki/Tunisiya "Tunisiya – Kinyarwanda")
+  * [संस्कृतम्](https://sa.wikipedia.org/wiki/%E0%A4%9F%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%BE "टुनिशिया – Sanskrit")
+  * [Саха тыла](https://sah.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Yakut")
+  * [Sardu](https://sc.wikipedia.org/wiki/Tunisia "Tunisia – Sardinian")
+  * [Sicilianu](https://scn.wikipedia.org/wiki/Tunis%C3%ACa "Tunisìa – Sicilian")
+  * [Scots](https://sco.wikipedia.org/wiki/Tunisie "Tunisie – Scots")
+  * [سنڌي](https://sd.wikipedia.org/wiki/%D8%AA%D9%8A%D9%88%D9%86%D8%B3 "تيونس – Sindhi")
+  * [Davvisámegiella](https://se.wikipedia.org/wiki/Tunisia "Tunisia – Northern Sami")
+  * [Sängö](https://sg.wikipedia.org/wiki/Tuniz%C3%AFi "Tunizïi – Sango")
+  * [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Tunis "Tunis – Serbo-Croatian")
+  * [Taclḥit](https://shi.wikipedia.org/wiki/Tuns "Tuns – Tachelhit")
+  * [တႆး](https://shn.wikipedia.org/wiki/%E1%80%99%E1%80%AD%E1%80%B0%E1%80%84%E1%80%BA%E1%80%B8%E1%80%90%E1%80%B0%E1%82%87%E1%81%BC%E1%80%AE%E1%80%B8%E1%80%9E%E1%80%BB%E1%82%83%E1%80%B8 "မိူင်းတူႇၼီးသျႃး – Shan")
+  * [සිංහල](https://si.wikipedia.org/wiki/%E0%B6%A7%E0%B7%92%E0%B6%BA%E0%B7%94%E0%B6%B1%E0%B7%93%E0%B7%83%E0%B7%92%E0%B6%BA%E0%B7%8F%E0%B7%80 "ටියුනීසියාව – Sinhala")
+  * [Simple English](https://simple.wikipedia.org/wiki/Tunisia "Tunisia – Simple English")
+  * [Slovenčina](https://sk.wikipedia.org/wiki/Tunisko "Tunisko – Slovak")
+  * [Slovenščina](https://sl.wikipedia.org/wiki/Tunizija "Tunizija – Slovenian")
+  * [Gagana Samoa](https://sm.wikipedia.org/wiki/Tunisia "Tunisia – Samoan")
+  * [Anarâškielâ](https://smn.wikipedia.org/wiki/Tunisia "Tunisia – Inari Sami")
+  * [ChiShona](https://sn.wikipedia.org/wiki/Tunisia "Tunisia – Shona")
+  * [Soomaaliga](https://so.wikipedia.org/wiki/Tunisiya "Tunisiya – Somali")
+  * [Shqip](https://sq.wikipedia.org/wiki/Tunizia "Tunizia – Albanian")
+  * [Српски / srpski](https://sr.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Serbian")
+  * [SiSwati](https://ss.wikipedia.org/wiki/IThunisiya "IThunisiya – Swati")
+  * [Sesotho](https://st.wikipedia.org/wiki/Tunisia "Tunisia – Southern Sotho")
+  * [Seeltersk](https://stq.wikipedia.org/wiki/Tunesien "Tunesien – Saterland Frisian")
+  * [Sunda](https://su.wikipedia.org/wiki/Tunisia "Tunisia – Sundanese")
+  * [Svenska](https://sv.wikipedia.org/wiki/Tunisien "Tunisien – Swedish")
+  * [Kiswahili](https://sw.wikipedia.org/wiki/Tunisia "Tunisia – Swahili")
+  * [ꠍꠤꠟꠐꠤ](https://syl.wikipedia.org/wiki/%EA%A0%94%EA%A0%A4%EA%A0%83%EA%A0%98%EA%A0%A4%EA%A0%A1%EA%A0%A4%EA%A0%80 "ꠔꠤꠃꠘꠤꠡꠤꠀ – Sylheti")
+  * [Ślůnski](https://szl.wikipedia.org/wiki/T%C5%AFnezyjo "Tůnezyjo – Silesian")
+  * [Sakizaya](https://szy.wikipedia.org/wiki/Tunisia "Tunisia – Sakizaya")
+  * [தமிழ்](https://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AF%82%E0%AE%A9%E0%AE%BF%E0%AE%9A%E0%AE%BF%E0%AE%AF%E0%AE%BE "தூனிசியா – Tamil")
+  * [Tayal](https://tay.wikipedia.org/wiki/Tunisia "Tunisia – Atayal")
+  * [తెలుగు](https://te.wikipedia.org/wiki/%E0%B0%9F%E0%B1%8D%E0%B0%AF%E0%B1%81%E0%B0%A8%E0%B1%80%E0%B0%B7%E0%B0%BF%E0%B0%AF%E0%B0%BE "ట్యునీషియా – Telugu")
+  * [Тоҷикӣ](https://tg.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Tajik")
+  * [ไทย](https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%95%E0%B8%B9%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2 "ประเทศตูนิเซีย – Thai")
+  * [ትግርኛ](https://ti.wikipedia.org/wiki/%E1%89%B1%E1%8A%92%E1%8B%9D%E1%8B%AB "ቱኒዝያ – Tigrinya")
+  * [Türkmençe](https://tk.wikipedia.org/wiki/Tunis "Tunis – Turkmen")
+  * [Tagalog](https://tl.wikipedia.org/wiki/Tunisia "Tunisia – Tagalog")
+  * [Tolışi](https://tly.wikipedia.org/wiki/Tunis "Tunis – Talysh")
+  * [Setswana](https://tn.wikipedia.org/wiki/Tunisia "Tunisia – Tswana")
+  * [Toki pona](https://tok.wikipedia.org/wiki/ma_Tuni "ma Tuni – Toki Pona")
+  * [Türkçe](https://tr.wikipedia.org/wiki/Tunus "Tunus – Turkish")
+  * [Seediq](https://trv.wikipedia.org/wiki/Tunisia "Tunisia – Taroko")
+  * [Xitsonga](https://ts.wikipedia.org/wiki/Tunisia "Tunisia – Tsonga")
+  * [Татарча / tatarça](https://tt.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Tatar")
+  * [ChiTumbuka](https://tum.wikipedia.org/wiki/Tunisia "Tunisia – Tumbuka")
+  * [Twi](https://tw.wikipedia.org/wiki/Tunisia "Tunisia – Twi")
+  * [Удмурт](https://udm.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81_\(%D0%BA%D1%83%D0%BD\) "Тунис \(кун\) – Udmurt")
+  * [ئۇيغۇرچە / Uyghurche](https://ug.wikipedia.org/wiki/%D8%AA%DB%87%D9%86%D9%89%D8%B3 "تۇنىس – Uyghur")
+  * [Українська](https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D1%96%D1%81 "Туніс – Ukrainian")
+  * [اردو](https://ur.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3 "تونس – Urdu")
+  * [Oʻzbekcha / ўзбекча](https://uz.wikipedia.org/wiki/Tunis "Tunis – Uzbek")
+  * [Vèneto](https://vec.wikipedia.org/wiki/Tuniz%C3%ACa "Tunizìa – Venetian")
+  * [Vepsän kel’](https://vep.wikipedia.org/wiki/Tunis "Tunis – Veps")
+  * [Tiếng Việt](https://vi.wikipedia.org/wiki/Tunisia "Tunisia – Vietnamese")
+  * [West-Vlams](https://vls.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – West Flemish")
+  * [Volapük](https://vo.wikipedia.org/wiki/T%C3%BCnis%C3%A4n "Tünisän – Volapük")
+  * [Walon](https://wa.wikipedia.org/wiki/Tunizeye "Tunizeye – Walloon")
+  * [Winaray](https://war.wikipedia.org/wiki/Tunisia "Tunisia – Waray")
+  * [Wolof](https://wo.wikipedia.org/wiki/Tiniisi "Tiniisi – Wolof")
+  * [吴语](https://wuu.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E6%96%AF "突尼斯 – Wu")
+  * [მარგალური](https://xmf.wikipedia.org/wiki/%E1%83%A2%E1%83%A3%E1%83%9C%E1%83%98%E1%83%A1%E1%83%98 "ტუნისი – Mingrelian")
+  * [ייִדיש](https://yi.wikipedia.org/wiki/%D7%98%D7%95%D7%A0%D7%99%D7%A1%D7%99%D7%A2 "טוניסיע – Yiddish")
+  * [Yorùbá](https://yo.wikipedia.org/wiki/Tunisia "Tunisia – Yoruba")
+  * [Vahcuengh](https://za.wikipedia.org/wiki/Tunisia "Tunisia – Zhuang")
+  * [Zeêuws](https://zea.wikipedia.org/wiki/Tunesi%C3%AB "Tunesië – Zeelandic")
+  * [ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ](https://zgh.wikipedia.org/wiki/%E2%B5%9C%E2%B5%93%E2%B5%8F%E2%B5%99 "ⵜⵓⵏⵙ – Standard Moroccan Tamazight")
+  * [文言](https://zh-classical.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E6%96%AF "突尼斯 – Literary Chinese")
+  * [閩南語 / Bân-lâm-gí](https://zh-min-nan.wikipedia.org/wiki/Tunisia "Tunisia – Minnan")
+  * [粵語](https://zh-yue.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E8%A5%BF%E4%BA%9E "突尼西亞 – Cantonese")
+  * [中文](https://zh.wikipedia.org/wiki/%E7%AA%81%E5%B0%BC%E8%A5%BF%E4%BA%9E "突尼西亞 – Chinese")
+  * [IsiZulu](https://zu.wikipedia.org/wiki/IThuniziya "IThuniziya – Zulu")
+
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Edit interlanguage links")
+  * [Article](https://en.wikipedia.org/wiki/Tunisia "View the content page \[alt-c\]")
+  * [Talk](https://en.wikipedia.org/wiki/Talk:Tunisia "Discuss improvements to the content page \[alt-t\]")
+
+
+English
+  * [Read](https://en.wikipedia.org/wiki/Tunisia)
+  * [View source](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit "This page is protected.
+You can view its source \[alt-e\]")
+  * [View history](https://en.wikipedia.org/w/index.php?title=Tunisia&action=history "Past revisions of this page \[alt-h\]")
+
+
+Tools
+move to sidebar hide
+Actions 
+  * [ Read](https://en.wikipedia.org/wiki/Tunisia)
+  * [ View source](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit "This page is protected.
+You can view its source \[alt-e\]")
+  * [ View history](https://en.wikipedia.org/w/index.php?title=Tunisia&action=history "Past revisions of this page \[alt-h\]")
+
+
+General 
+  * [What links here](https://en.wikipedia.org/wiki/Special:WhatLinksHere/Tunisia "List of all English Wikipedia pages containing links to this page \[alt-j\]")
+  * [Related changes](https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Tunisia "Recent changes in pages linked from this page \[alt-k\]")
+  * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[alt-u\]")
+  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457 "Permanent link to this revision of this page")
+  * [Page information](https://en.wikipedia.org/w/index.php?title=Tunisia&action=info "More information about this page")
+  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Tunisia&id=1368892457&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTunisia)
+  * [Switch to legacy parser](https://en.wikipedia.org/w/index.php?title=Tunisia&useparsoid=0)
+  * [Expand all](https://en.wikipedia.org/wiki/Tunisia "Expand all collapsible elements on the current page")
+  * [Edit interlanguage links](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Edit interlanguage links")
+
+
+Print/export 
+  * [Download as PDF](https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Tunisia&action=show-download-screen "Download this page as a PDF file")
+  * [Printable version](https://en.wikipedia.org/w/index.php?title=Tunisia&printable=yes "Printable version of this page \[alt-p\]")
+
+
+In other projects 
+  * [Wikimedia Commons](https://commons.wikimedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3_/_Tunest_/_Tunisie)
+  * [Wikinews](https://en.wikinews.org/wiki/Category:Tunisia)
+  * [Wikiquote](https://en.wikiquote.org/wiki/Tunisia)
+  * [Wikivoyage](https://en.wikivoyage.org/wiki/Tunisia)
+  * [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q948 "Structured data on this page hosted by Wikidata \[alt-g\]")
+
+
+[Coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system "Geographic coordinate system"): ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[34°N 9°E﻿ / ﻿34°N 9°E﻿ / 34; 9](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=34_N_9_E_scale:5000000)
+[![Page semi-protected](https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Semi-protection-shackle.svg/20px-Semi-protection-shackle.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/Wikipedia:Protection_policy#semi "This article is semi-protected.")
+From Wikipedia, the free encyclopedia
+Country in North Africa
+This article is about the country. For the board game, see [Tunisia (board game)](https://en.wikipedia.org/wiki/Tunisia_\(board_game\) "Tunisia \(board game\)").  
+|  Republic of Tunisia
+  * الجمهورية التونسية([Arabic](https://en.wikipedia.org/wiki/Arabic_language "Arabic language"))  
+_al-Jumhūriyyah at-Tūnisiyyah_
+
+ |  
+| --- |  
+|  [![Flag of Tunisia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/250px-Flag_of_Tunisia.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Flag_of_Tunisia.svg "Flag of Tunisia") [Flag](https://en.wikipedia.org/wiki/Flag_of_Tunisia "Flag of Tunisia") [![Coat of arms of Tunisia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Coat_of_arms_of_Tunisia.svg/120px-Coat_of_arms_of_Tunisia.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Coat_of_arms_of_Tunisia.svg "Coat of arms of Tunisia") [ Coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia "Coat of arms of Tunisia")  |  
+|  **Motto:** حرية، نظام، عدالة  
+"_Ḥurrīyah, Niẓām, 'Adālah_ "  
+"[Freedom, Order, Justice](https://en.wikipedia.org/wiki/Freedom,_Order,_Justice "Freedom, Order, Justice")" |  
+|  **Anthem:** حماة الحمى  
+"[Humat al-Hima](https://en.wikipedia.org/wiki/Humat_al-Hima "Humat al-Hima")"  
+(English: "Defenders of the Homeland"  
+ |  
+|  [![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tunisia_location_%28orthographic_projection%29.svg/250px-Tunisia_location_%28orthographic_projection%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_location_\(orthographic_projection\).svg) [![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tunisia_-_Location_Map_%282013%29_-_TUN_-_UNOCHA.svg/330px-Tunisia_-_Location_Map_%282013%29_-_TUN_-_UNOCHA.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_-_Location_Map_\(2013\)_-_TUN_-_UNOCHA.svg) Show globeShow map of TunisiaShow both  |  
+| Capitaland largest city  |  [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis")  
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[36°49′N 10°11′E﻿ / ﻿36.817°N 10.183°E﻿ / 36.817; 10.183](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=36_49_N_10_11_E_type:city)  |  
+| Officiallanguages  |  [Arabic](https://en.wikipedia.org/wiki/Modern_Standard_Arabic "Modern Standard Arabic")[[1]](https://en.wikipedia.org/wiki/Tunisia#cite_note-art1-1)  |  
+| Local vernacular  |  [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic")[[2]](https://en.wikipedia.org/wiki/Tunisia#cite_note-2) Minority Dialects: [Jerba Berber](https://en.wikipedia.org/wiki/Jerba_Berber "Jerba Berber") (Chelha) [Matmata Berber](https://en.wikipedia.org/wiki/Matmata_Berber "Matmata Berber") [Judeo-Tunisian Arabic](https://en.wikipedia.org/wiki/Judeo-Tunisian_Arabic "Judeo-Tunisian Arabic") (UNESCO CR) [[3]](https://en.wikipedia.org/wiki/Tunisia#cite_note-3)[[4]](https://en.wikipedia.org/wiki/Tunisia#cite_note-4)[[5]](https://en.wikipedia.org/wiki/Tunisia#cite_note-5)[[6]](https://en.wikipedia.org/wiki/Tunisia#cite_note-6)[[7]](https://en.wikipedia.org/wiki/Tunisia#cite_note-7)[[8]](https://en.wikipedia.org/wiki/Tunisia#cite_note-8)[[9]](https://en.wikipedia.org/wiki/Tunisia#cite_note-9)[[10]](https://en.wikipedia.org/wiki/Tunisia#cite_note-10)[[11]](https://en.wikipedia.org/wiki/Tunisia#cite_note-11)  |  
+| Foreign languages  |  [French](https://en.wikipedia.org/wiki/French_language "French language") and [English](https://en.wikipedia.org/wiki/English_language "English language")[[a]](https://en.wikipedia.org/wiki/Tunisia#cite_note-14)  |  
+|  [Ethnicgroups](https://en.wikipedia.org/wiki/Ethnic_group "Ethnic group") (2021)[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15)  | 
+  * 98% [Arabs](https://en.wikipedia.org/wiki/Arabs "Arabs")[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15)
+  * 1% [Berbers](https://en.wikipedia.org/wiki/Berbers "Berbers")[[15]](https://en.wikipedia.org/wiki/Tunisia#cite_note-16)[[16]](https://en.wikipedia.org/wiki/Tunisia#cite_note-17)
+  * 1% [Jews](https://en.wikipedia.org/wiki/Jews "Jews") and others[[17]](https://en.wikipedia.org/wiki/Tunisia#cite_note-18)
+
+ |  
+| Religion [[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15)  | 
+  * 99% [Sunni Islam](https://en.wikipedia.org/wiki/Islam_in_Tunisia "Islam in Tunisia")
+  * 1% [others](https://en.wikipedia.org/wiki/Demographics_of_Tunisia "Demographics of Tunisia") (incl. [Christians](https://en.wikipedia.org/wiki/Religion_in_Tunisia#Christianity "Religion in Tunisia"), [Judaism](https://en.wikipedia.org/wiki/History_of_the_Jews_in_Tunisia "History of the Jews in Tunisia"), [Shia Islam](https://en.wikipedia.org/wiki/Shia_Islam "Shia Islam"), and [Baha’i](https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith_in_Tunisia "Baháʼí Faith in Tunisia"))[[18]](https://en.wikipedia.org/wiki/Tunisia#cite_note-19)[[19]](https://en.wikipedia.org/wiki/Tunisia#cite_note-20)
+
+ |  
+| [Demonym](https://en.wikipedia.org/wiki/Demonym "Demonym")  | [Tunisian](https://en.wikipedia.org/wiki/Tunisians "Tunisians")  |  
+| [Government](https://en.wikipedia.org/wiki/Politics_of_Tunisia "Politics of Tunisia")  | Unitary [presidential republic](https://en.wikipedia.org/wiki/Presidential_republic "Presidential republic")  |  
+|  |  
+| •[President](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia")  | [Kais Saied](https://en.wikipedia.org/wiki/Kais_Saied "Kais Saied")  |  
+| •[Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Tunisia "Prime Minister of Tunisia")  | [Sara Zaafarani](https://en.wikipedia.org/wiki/Sara_Zaafarani "Sara Zaafarani")  |  
+|   |  
+| Legislature  | [Parliament](https://en.wikipedia.org/wiki/Parliament_of_Tunisia "Parliament of Tunisia")  |  
+| •[Upper house](https://en.wikipedia.org/wiki/Upper_house "Upper house")  | [National Council of Regions and Districts](https://en.wikipedia.org/wiki/National_Council_of_Regions_and_Districts "National Council of Regions and Districts")  |  
+| •[Lower house](https://en.wikipedia.org/wiki/Lower_house "Lower house")  | [Assembly of the Representatives of the People](https://en.wikipedia.org/wiki/Assembly_of_the_Representatives_of_the_People "Assembly of the Representatives of the People")  |  
+| [Establishment](https://en.wikipedia.org/wiki/History_of_Tunisia "History of Tunisia") |  
+|  |  
+| •[Aghlabid Emirate](https://en.wikipedia.org/wiki/Aghlabids "Aghlabids")  | 800  |  
+| •[Hafsid Sultanate](https://en.wikipedia.org/wiki/Hafsids "Hafsids")  | 1229  |  
+| •[Beylik of Tunis](https://en.wikipedia.org/wiki/Beylik_of_Tunis "Beylik of Tunis")  | 15 July 1705  |  
+| •[French protectorate ](https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia "French protectorate of Tunisia")  | 12 May 1881  |  
+| •[Independence](https://en.wikipedia.org/wiki/Tunisian_independence "Tunisian independence") and [Kingdom](https://en.wikipedia.org/wiki/Kingdom_of_Tunisia "Kingdom of Tunisia")  | 20 March 1956  |  
+| •[Republic declaration](https://en.wikipedia.org/wiki/History_of_modern_Tunisia "History of modern Tunisia")  | 25 July 1957  |  
+|   |  
+| [Area ](https://en.wikipedia.org/wiki/Geography_of_Tunisia "Geography of Tunisia") |  
+| •Total  | 163,610km2 (63,170sqmi)([91st](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area "List of countries and dependencies by area"))  |  
+| •Water(%)  | 5.04  |  
+| [Population](https://en.wikipedia.org/wiki/Demographics_of_Tunisia "Demographics of Tunisia") |  
+| •2024census  |  ![Neutral increase](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Increase_Neutral.svg/20px-Increase_Neutral.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 11,972,169[[20]](https://en.wikipedia.org/wiki/Tunisia#cite_note-21)  |  
+| •Density  | 79/km2 (204.6/sqmi)([134th](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density "List of countries and dependencies by population density"))  |  
+|  [GDP](https://en.wikipedia.org/wiki/Gross_domestic_product "Gross domestic product")([PPP](https://en.wikipedia.org/wiki/Purchasing_power_parity "Purchasing power parity"))  | 2025estimate  |  
+| •Total  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) $183.73 billion[[21]](https://en.wikipedia.org/wiki/Tunisia#cite_note-WEOD2504-22)([84th](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_\(PPP\) "List of countries by GDP \(PPP\)"))  |  
+| •Per capita  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) $14,780[[21]](https://en.wikipedia.org/wiki/Tunisia#cite_note-WEOD2504-22)([111th](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_\(PPP\)_per_capita "List of countries by GDP \(PPP\) per capita"))  |  
+|  [GDP](https://en.wikipedia.org/wiki/Gross_domestic_product "Gross domestic product")(nominal)  | 2025estimate  |  
+| •Total  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) $56.290 billion[[21]](https://en.wikipedia.org/wiki/Tunisia#cite_note-WEOD2504-22)([90th](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_\(nominal\) "List of countries by GDP \(nominal\)"))  |  
+| •Per capita  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) $4,530[[21]](https://en.wikipedia.org/wiki/Tunisia#cite_note-WEOD2504-22)([121st](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_\(nominal\)_per_capita "List of countries by GDP \(nominal\) per capita"))  |  
+|  [Gini](https://en.wikipedia.org/wiki/Gini_coefficient "Gini coefficient")(2021)  |  ![Positive decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)33.7[[22]](https://en.wikipedia.org/wiki/Tunisia#cite_note-23)  
+medium inequality  |  
+|  [HDI](https://en.wikipedia.org/wiki/Human_Development_Index "Human Development Index")(2023)  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)0.746[[23]](https://en.wikipedia.org/wiki/Tunisia#cite_note-24)  
+high([105th](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index "List of countries by Human Development Index"))  |  
+| Currency  |  [Tunisian dinar](https://en.wikipedia.org/wiki/Tunisian_dinar "Tunisian dinar") ([TND](https://en.wikipedia.org/wiki/ISO_4217 "ISO 4217"))  |  
+| Time zone  |  [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time "Coordinated Universal Time")+1 ([CET](https://en.wikipedia.org/wiki/Central_European_Time "Central European Time"))  |  
+| Date format  | dd/mm/yyyy  |  
+| [Calling code](https://en.wikipedia.org/wiki/Telephone_numbers_in_Tunisia "Telephone numbers in Tunisia")  | [+216](https://en.wikipedia.org/wiki/Telephone_numbers_in_Tunisia "Telephone numbers in Tunisia")  |  
+| [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166 "ISO 3166")  | [TN](https://en.wikipedia.org/wiki/ISO_3166-2:TN "ISO 3166-2:TN")  |  
+| [Internet TLD](https://en.wikipedia.org/wiki/Country_code_top-level_domain "Country code top-level domain")  | 
+  * [.tn](https://en.wikipedia.org/wiki/.tn ".tn")
+  * [.تونس](https://en.wikipedia.org/wiki/Internationalized_country_code_top-level_domain "Internationalized country code top-level domain")[[24]](https://en.wikipedia.org/wiki/Tunisia#cite_note-iana-25)
+
+ |  
+**Tunisia** ,[[b]](https://en.wikipedia.org/wiki/Tunisia#cite_note-27) officially the **Republic of Tunisia** ,[[c]](https://en.wikipedia.org/wiki/Tunisia#cite_note-28)[[26]](https://en.wikipedia.org/wiki/Tunisia#cite_note-29) is a country in the [Maghreb](https://en.wikipedia.org/wiki/Maghreb "Maghreb") region of [North Africa](https://en.wikipedia.org/wiki/North_Africa "North Africa"). It is bordered by [Algeria](https://en.wikipedia.org/wiki/Algeria "Algeria") to the west and southwest, [Libya](https://en.wikipedia.org/wiki/Libya "Libya") to the southeast, and the [Mediterranean Sea](https://en.wikipedia.org/wiki/Mediterranean_Sea "Mediterranean Sea") to the north and east. Tunisia also shares maritime borders with [Italy](https://en.wikipedia.org/wiki/Italy "Italy") through the islands of [Sicily](https://en.wikipedia.org/wiki/Sicily "Sicily") and [Sardinia](https://en.wikipedia.org/wiki/Sardinia "Sardinia") to the north and [Malta](https://en.wikipedia.org/wiki/Malta "Malta") to the east. It features the archaeological sites of [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage") dating back to the 9th century BC, as well as the Great Mosque of [Kairouan](https://en.wikipedia.org/wiki/Kairouan "Kairouan"). Known for its ancient architecture, [souks](https://en.wikipedia.org/wiki/Souks_of_Tunis "Souks of Tunis"), and blue coasts, it covers 163,610km2 (63,170sqmi), and has a population of 12.1 million. It contains the eastern end of the [Atlas Mountains](https://en.wikipedia.org/wiki/Atlas_Mountains "Atlas Mountains") and the northern reaches of the [Sahara](https://en.wikipedia.org/wiki/Sahara "Sahara") desert; much of its remaining territory is [arable land](https://en.wikipedia.org/wiki/Arable_land "Arable land"). Its 1,300km (810mi) of coastline includes the African conjunction of the western and eastern parts of the [Mediterranean Basin](https://en.wikipedia.org/wiki/Mediterranean_Basin "Mediterranean Basin"). Tunisia is home to Africa's northernmost point, [Cape Angela](https://en.wikipedia.org/wiki/Cape_Angela "Cape Angela"). Located on the northeastern coast, [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis") is the capital of the country, which is itself named after Tunis. The official language of Tunisia is [Arabic](https://en.wikipedia.org/wiki/Modern_Standard_Arabic "Modern Standard Arabic"). The vast majority of Tunisia's population is [Arab](https://en.wikipedia.org/wiki/Arabs "Arabs") and [Muslim](https://en.wikipedia.org/wiki/Muslims "Muslims"). Vernacular [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic") is the most spoken language, and [French](https://en.wikipedia.org/wiki/French_language "French language") serves as an administrative and educational language in some contexts, but has no official status.
+Beginning in early antiquity, Tunisia was inhabited by the indigenous [Berbers](https://en.wikipedia.org/wiki/Berbers "Berbers"). The [Phoenicians](https://en.wikipedia.org/wiki/Phoenicia "Phoenicia"), a [Semitic people](https://en.wikipedia.org/wiki/Ancient_Semitic-speaking_peoples "Ancient Semitic-speaking peoples"), began to arrive in the 12th century BC, [settling on the coast and establishing several settlements](https://en.wikipedia.org/wiki/Phoenician_settlement_of_North_Africa "Phoenician settlement of North Africa"), of which [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage") emerged as the most powerful by the 7th century BC. The descendants of the Phoenician settlers came to be known as the [Punic people](https://en.wikipedia.org/wiki/Punic_people "Punic people"). [Ancient Carthage](https://en.wikipedia.org/wiki/Ancient_Carthage "Ancient Carthage") was a major [mercantile](https://en.wikipedia.org/wiki/Trade "Trade") empire and a military rival to the [Roman Republic](https://en.wikipedia.org/wiki/Roman_Republic "Roman Republic") until 146 BC when it was [defeated](https://en.wikipedia.org/wiki/Siege_of_Carthage_\(Third_Punic_War\) "Siege of Carthage \(Third Punic War\)") by the Romans who occupied Tunisia for most of the next 800 years. The Romans introduced [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity") and left architectural legacies like the [Amphitheatre of El Jem](https://en.wikipedia.org/wiki/Amphitheatre_of_El_Jem "Amphitheatre of El Jem"). In the 7th century AD, [Arab Muslims conquered](https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Maghreb "Muslim conquest of the Maghreb") Tunisia and [settled with their tribes and families](https://en.wikipedia.org/wiki/Arab_migrations_to_the_Maghreb "Arab migrations to the Maghreb"), bringing [Islam](https://en.wikipedia.org/wiki/Islam "Islam") and [Arab culture](https://en.wikipedia.org/wiki/Arab_culture "Arab culture"). A later large-scale [Arab migration](https://en.wikipedia.org/wiki/Arab_migrations_to_the_Maghreb#Banu_Hilal_and_Banu_Sulaym_\(11th_century\) "Arab migrations to the Maghreb") of [Banu Hilal](https://en.wikipedia.org/wiki/Banu_Hilal "Banu Hilal") and [Banu Sulaym](https://en.wikipedia.org/wiki/Banu_Sulaym "Banu Sulaym") tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely [Arabised](https://en.wikipedia.org/wiki/Arabisation "Arabisation").[[27]](https://en.wikipedia.org/wiki/Tunisia#cite_note-30) Then, in 1546, the [Ottoman Empire](https://en.wikipedia.org/wiki/Ottoman_Empire "Ottoman Empire") established control, holding sway until 1881, when the [French conquered Tunisia](https://en.wikipedia.org/wiki/French_conquest_of_Tunisia "French conquest of Tunisia"). In 1956, [Tunisia gained independence](https://en.wikipedia.org/wiki/Tunisian_independence "Tunisian independence") as the Tunisian Republic. Today, [Tunisia's culture](https://en.wikipedia.org/wiki/Culture_of_Tunisia "Culture of Tunisia") and identity are rooted in this centuries-long intersection of different cultures and ethnicities.
+In 2011, the [Tunisian Revolution](https://en.wikipedia.org/wiki/Tunisian_Revolution "Tunisian Revolution"), which was triggered by dissatisfaction with the lack of freedom and [democracy](https://en.wikipedia.org/wiki/Democracy "Democracy") under the 24-year rule of President [Zine El Abidine Ben Ali](https://en.wikipedia.org/wiki/Zine_El_Abidine_Ben_Ali "Zine El Abidine Ben Ali"), overthrew his regime and catalyzed the broader [Arab Spring](https://en.wikipedia.org/wiki/Arab_Spring "Arab Spring") movement across the region. Free multiparty parliamentary [elections](https://en.wikipedia.org/wiki/2011_Tunisian_Constituent_Assembly_election "2011 Tunisian Constituent Assembly election") were held shortly thereafter; the country again voted for parliament on 26 October 2014,[[28]](https://en.wikipedia.org/wiki/Tunisia#cite_note-31) and for president on 23 November 2014.[[29]](https://en.wikipedia.org/wiki/Tunisia#cite_note-32) From 2014 to 2020, it was considered the only democratic state in the [Arab world](https://en.wikipedia.org/wiki/Arab_world "Arab world"), according to _[The Economist Democracy Index](https://en.wikipedia.org/wiki/The_Economist_Democracy_Index "The Economist Democracy Index")_.[[30]](https://en.wikipedia.org/wiki/Tunisia#cite_note-33)[[d]](https://en.wikipedia.org/wiki/Tunisia#cite_note-34) After [democratic backsliding](https://en.wikipedia.org/wiki/Democratic_backsliding "Democratic backsliding") under President [Kais Saied](https://en.wikipedia.org/wiki/Kais_Saied "Kais Saied"), Tunisia was rated a [hybrid regime](https://en.wikipedia.org/wiki/Hybrid_regime "Hybrid regime") in 2022[[31]](https://en.wikipedia.org/wiki/Tunisia#cite_note-35) and as of 2025 it no longer has free and fair elections according to [Freedom House](https://en.wikipedia.org/wiki/Freedom_House "Freedom House").[[32]](https://en.wikipedia.org/wiki/Tunisia#cite_note-36) It is one of the few countries in Africa ranking high on the [Human Development Index](https://en.wikipedia.org/wiki/Human_Development_Index "Human Development Index"), with one of the [highest per capita incomes](https://en.wikipedia.org/wiki/List_of_African_countries_by_GDP_\(PPP\)_per_capita "List of African countries by GDP \(PPP\) per capita") on the continent, ranking 129th in [GDP per capita](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_\(nominal\)_per_capita "List of countries by GDP \(nominal\) per capita") income.
+Tunisia is well integrated into the international community. It is a member of the [United Nations](https://en.wikipedia.org/wiki/United_Nations "United Nations"), _[Organisation internationale de la Francophonie](https://en.wikipedia.org/wiki/Organisation_internationale_de_la_Francophonie "Organisation internationale de la Francophonie")_[Arab League](https://en.wikipedia.org/wiki/Arab_League "Arab League"), the [Organisation of Islamic Cooperation](https://en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation "Organisation of Islamic Cooperation"), the [African Union](https://en.wikipedia.org/wiki/African_Union "African Union"), the [Common Market for Eastern and Southern Africa](https://en.wikipedia.org/wiki/Common_Market_for_Eastern_and_Southern_Africa "Common Market for Eastern and Southern Africa"), the [Non-Aligned Movement](https://en.wikipedia.org/wiki/Non-Aligned_Movement "Non-Aligned Movement"), the [International Criminal Court](https://en.wikipedia.org/wiki/International_Criminal_Court "International Criminal Court"), the [Group of 77](https://en.wikipedia.org/wiki/Group_of_77 "Group of 77"), among others. It maintains close economic and political relations with some European countries, particularly with [France](https://en.wikipedia.org/wiki/France%E2%80%93Tunisia_relations "France–Tunisia relations") and [Italy](https://en.wikipedia.org/wiki/Italy%E2%80%93Tunisia_relations "Italy–Tunisia relations"),[[33]](https://en.wikipedia.org/wiki/Tunisia#cite_note-37)[[34]](https://en.wikipedia.org/wiki/Tunisia#cite_note-38) due to their geographical proximity. Tunisia also has an [association agreement](https://en.wikipedia.org/wiki/European_Union_Association_Agreement "European Union Association Agreement") with the [European Union](https://en.wikipedia.org/wiki/European_Union "European Union") and has attained the status of a [major non-NATO ally](https://en.wikipedia.org/wiki/Major_non-NATO_ally "Major non-NATO ally") of the [United States](https://en.wikipedia.org/wiki/United_States "United States").
+## Etymology
+See also: [Tunis §Etymology](https://en.wikipedia.org/wiki/Tunis#Etymology "Tunis")
+The word _Tunisia_ is derived from [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis"), a central urban hub and the capital of modern-day Tunisia. The present form of the name, with its [Latinate](https://en.wikipedia.org/wiki/Latin "Latin") suffix _-ia_ , evolved from [French](https://en.wikipedia.org/wiki/French_language "French language") _Tunisie_[[35]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Adrian-39)[[36]](https://en.wikipedia.org/wiki/Tunisia#cite_note-40) in turn generally associated with the [Berber](https://en.wikipedia.org/wiki/Berber_languages "Berber languages") root ⵜⵏⵙ _tns_[[37]](https://en.wikipedia.org/wiki/Tunisia#cite_note-peter-ross-41) It is sometimes also associated with the [Carthage goddess](https://en.wikipedia.org/wiki/Carthaginian_religion "Carthaginian religion") [Tanith](https://en.wikipedia.org/wiki/Tanit "Tanit") (or Tunit),[[35]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Adrian-39)[[38]](https://en.wikipedia.org/wiki/Tunisia#cite_note-42) and the ancient city of Tynes.[[39]](https://en.wikipedia.org/wiki/Tunisia#cite_note-ej-brill-43)[[40]](https://en.wikipedia.org/wiki/Tunisia#cite_note-hann-war-44)
+The French derivative _Tunisie_[Russian](https://en.wikipedia.org/wiki/Russian_language "Russian language") Туни́с _Tunís_) and [Spanish](https://en.wikipedia.org/wiki/Spanish_language "Spanish language") _Túnez_[Arabic](https://en.wikipedia.org/wiki/Arabic "Arabic") تونس[[35]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Adrian-39)
+In English, Tunisia before independence was also often called simply "Tunis", a name that persisted until the 1940s;[[e]](https://en.wikipedia.org/wiki/Tunisia#cite_note-50) under French influence, the neologism "Tunisia", adapted from _Tunisie_ , gradually took hold.[[35]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Adrian-39) The adjective "Tunisian" first appeared in English in 1825;[[46]](https://en.wikipedia.org/wiki/Tunisia#cite_note-51) the previous adjectival form was "Tunisine".[[47]](https://en.wikipedia.org/wiki/Tunisia#cite_note-52)
+## History
+Main article: [History of Tunisia](https://en.wikipedia.org/wiki/History_of_Tunisia "History of Tunisia")
+### Antiquity
+Main articles: [Capsian culture](https://en.wikipedia.org/wiki/Capsian_culture "Capsian culture") and [Ancient Carthage](https://en.wikipedia.org/wiki/Ancient_Carthage "Ancient Carthage")
+Farming methods reached the [Nile Valley](https://en.wikipedia.org/wiki/Nile "Nile") from the [Fertile Crescent](https://en.wikipedia.org/wiki/Fertile_Crescent "Fertile Crescent") region about 5000 BC, and spread to the [Maghreb](https://en.wikipedia.org/wiki/Maghreb "Maghreb") by about 4000 BC. Agricultural communities in the humid coastal plains of central Tunisia then were ancestors of today's [Berber](https://en.wikipedia.org/wiki/Berber_people "Berber people") tribes.
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carthaginianempire.PNG/330px-Carthaginianempire.PNG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Carthaginianempire.PNG)[Carthaginian](https://en.wikipedia.org/wiki/Punic_people "Punic people") dependencies and protectorates through the [Punic Wars](https://en.wikipedia.org/wiki/Punic_Wars "Punic Wars")
+It was believed in ancient times that Africa was originally populated by [Gaetulians](https://en.wikipedia.org/wiki/Gaetuli "Gaetuli") and Libyans, both nomadic peoples. According to the Roman historian [Sallust](https://en.wikipedia.org/wiki/Sallust "Sallust"), the demigod Hercules died in Spain and his polyglot eastern army was left to settle the land, with some [migrating](https://en.wikipedia.org/wiki/Human_migration "Human migration") to Africa. Persians went to the West and intermarried with the Gaetulians and became the Numidians. The Medes settled and were known as Mauri, later Moors.[[48]](https://en.wikipedia.org/wiki/Tunisia#cite_note-53)
+The Numidians and Moors belonged to the race from which the Berbers are descended. The translated meaning of Numidian is Nomad and indeed the people were semi-nomadic until the reign of [Masinissa](https://en.wikipedia.org/wiki/Masinissa "Masinissa") of the Massyli tribe.[[49]](https://en.wikipedia.org/wiki/Tunisia#cite_note-54)[[50]](https://en.wikipedia.org/wiki/Tunisia#cite_note-55)[[51]](https://en.wikipedia.org/wiki/Tunisia#cite_note-56)
+At the beginning of recorded history, Tunisia was inhabited by [Berber](https://en.wikipedia.org/wiki/Berber_people "Berber people") tribes. Its coast was settled by [Phoenicians](https://en.wikipedia.org/wiki/Phoenicia "Phoenicia") starting as early as the 12th century BC ([Bizerte](https://en.wikipedia.org/wiki/Bizerte "Bizerte"), [Utica](https://en.wikipedia.org/wiki/Utica,_Tunisia "Utica, Tunisia")). The city of [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage") was founded in the 9th century BC by Phoenicians. Legend says that [Dido](https://en.wikipedia.org/wiki/Dido_\(Queen_of_Carthage\) "Dido \(Queen of Carthage\)") from Tyre, now in modern-day Lebanon, founded the city in 814 BC, as retold by the [Greek](https://en.wikipedia.org/wiki/Greeks "Greeks") writer [Timaeus of Tauromenium](https://en.wikipedia.org/wiki/Timaeus_\(historian\) "Timaeus \(historian\)"). The settlers of Carthage brought their culture and religion from Phoenicia, now present-day [Lebanon](https://en.wikipedia.org/wiki/Lebanon "Lebanon") and adjacent areas.[[52]](https://en.wikipedia.org/wiki/Tunisia#cite_note-57)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mommsen_p265.jpg/250px-Mommsen_p265.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Mommsen_p265.jpg)Statue of the Carthaginian general [Hannibal Barca](https://en.wikipedia.org/wiki/Hannibal "Hannibal")
+After the series of wars with Greek city-states of Sicily in the 5th century BC, Carthage rose to power and eventually became the dominant civilization in the Western [Mediterranean](https://en.wikipedia.org/wiki/Mediterranean "Mediterranean"). The people of Carthage worshipped a pantheon of Middle Eastern gods including [Baal](https://en.wikipedia.org/wiki/Baal "Baal") and [Tanit](https://en.wikipedia.org/wiki/Tanit "Tanit"). Tanit's symbol, a simple female figure with extended arms and long dress, is a popular icon found in ancient sites. The founders of Carthage also established a [Tophet](https://en.wikipedia.org/wiki/Tophet "Tophet"), which was altered in Roman times.
+A Carthaginian invasion of Italy led by [Hannibal](https://en.wikipedia.org/wiki/Hannibal "Hannibal") during the [Second Punic War](https://en.wikipedia.org/wiki/Second_Punic_War "Second Punic War"), one of a series of wars with [Rome](https://en.wikipedia.org/wiki/Roman_Republic "Roman Republic"), nearly crippled the rise of Roman power. From the conclusion of the Second Punic War in 202 BC, Carthage functioned as a client state of the Roman Republic for another 50 years.[[53]](https://en.wikipedia.org/wiki/Tunisia#cite_note-58)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Temple_du_Capitole_%28Dougga%29.JPG/250px-Temple_du_Capitole_%28Dougga%29.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Temple_du_Capitole_\(Dougga\).JPG)Ruins of a 2nd-century temple in [Dougga](https://en.wikipedia.org/wiki/Dougga "Dougga"), one of nine [World Heritage Sites in Tunisia](https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Tunisia "List of World Heritage Sites in Tunisia")
+Following the [Battle of Carthage](https://en.wikipedia.org/wiki/Battle_of_Carthage_\(c._149_BC\) "Battle of Carthage \(c. 149 BC\)") which began in 149 BC during the [Third Punic War](https://en.wikipedia.org/wiki/Third_Punic_War "Third Punic War"), Carthage was conquered by Rome in 146 BC.[[54]](https://en.wikipedia.org/wiki/Tunisia#cite_note-FOOTNOTESteel20139%E2%80%9310-59) Following its conquest, the Romans renamed Carthage to [Africa](https://en.wikipedia.org/wiki/Africa_\(Roman_province\) "Africa \(Roman province\)"), incorporating it as a province.
+Berber bishop [Donatus Magnus](https://en.wikipedia.org/wiki/Donatus_Magnus "Donatus Magnus") was the founder of a Christian group known as the [Donatists](https://en.wikipedia.org/wiki/Donatist "Donatist").[[55]](https://en.wikipedia.org/wiki/Tunisia#cite_note-60) During the 5th and 6th centuries (from 430 to 533 AD), the Germanic [Vandals](https://en.wikipedia.org/wiki/Vandals "Vandals") invaded and ruled over a kingdom in Northwest Africa that included present-day Tripoli. The region was easily reconquered in 533–534 AD, during the rule of Emperor [Justinian I](https://en.wikipedia.org/wiki/Justinian_I "Justinian I"), by the [Eastern Romans](https://en.wikipedia.org/wiki/Byzantine_Empire "Byzantine Empire") led by General [Belisarius](https://en.wikipedia.org/wiki/Belisarius "Belisarius"),[[56]](https://en.wikipedia.org/wiki/Tunisia#cite_note-61) preluding a 165-year era of [Byzantine rule](https://en.wikipedia.org/wiki/Byzantine_North_Africa "Byzantine North Africa").
+### Middle Ages
+Main article: [History of medieval Tunisia](https://en.wikipedia.org/wiki/History_of_medieval_Tunisia "History of medieval Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Statue_de_Okba_ibn_Nafi_al_Fihri_en_Alg%C3%A9rie.jpg/250px-Statue_de_Okba_ibn_Nafi_al_Fihri_en_Alg%C3%A9rie.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Statue_de_Okba_ibn_Nafi_al_Fihri_en_Alg%C3%A9rie.jpg)[Uqba ibn Nafi](https://en.wikipedia.org/wiki/Uqba_ibn_Nafi "Uqba ibn Nafi") led the [Umayyad](https://en.wikipedia.org/wiki/Umayyad "Umayyad") conquest of Tunisia in the late 7th century.
+Sometime between the second half of the 7th century and the early part of the 8th century, [Arab](https://en.wikipedia.org/wiki/Arab "Arab") [Muslim conquest occurred in the region](https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Maghreb "Muslim conquest of the Maghreb"). They founded the first Islamic city in Northwest Africa, [Kairouan](https://en.wikipedia.org/wiki/Kairouan "Kairouan"). It was there in 670 AD that the [Mosque of Uqba](https://en.wikipedia.org/wiki/Mosque_of_Uqba "Mosque of Uqba"), or the Great Mosque of Kairouan, was constructed.[[57]](https://en.wikipedia.org/wiki/Tunisia#cite_note-62) This mosque is the oldest and most prestigious sanctuary in the Muslim West with the oldest standing [minaret](https://en.wikipedia.org/wiki/Minaret "Minaret") in the world;[[58]](https://en.wikipedia.org/wiki/Tunisia#cite_note-63) it is also considered a masterpiece of Islamic art and architecture.[[59]](https://en.wikipedia.org/wiki/Tunisia#cite_note-64) The [Arab migration to the Maghreb](https://en.wikipedia.org/wiki/Arab_migration_to_the_Maghreb "Arab migration to the Maghreb") began during this time.
+The region in its entirety was taken in 695, retaken by the Byzantine Eastern Romans in 697, but lost permanently in 698. The transition from a Latin-speaking Christian Berber society to a Muslim and mostly Arabic-speaking society took over 400 years (the equivalent process in Egypt and the Fertile Crescent took 600 years) and resulted in the final disappearance of Christianity and Latin in the 12th or 13th century. The majority of the population were not Muslim until quite late in the 9th century; a vast majority were during the 10th. Also, some Tunisian Christians emigrated; some richer members of society did so after the conquest in 698 and others were welcomed by Norman rulers to Sicily or Italy in the 11th and 12th centuries – the logical destination because of the 1200 year close connection between the two regions.[[60]](https://en.wikipedia.org/wiki/Tunisia#cite_note-65)
+The Arab governors of Tunis founded the [Aghlabid dynasty](https://en.wikipedia.org/wiki/Aghlabids "Aghlabids"), which ruled Tunisia, [Tripolitania](https://en.wikipedia.org/wiki/Tripolitania "Tripolitania") and eastern Algeria from 800 to 909.[[61]](https://en.wikipedia.org/wiki/Tunisia#cite_note-lapidus-66) Tunisia flourished under Arab rule when extensive systems were constructed to supply towns with water for household use and irrigation that promoted agriculture (especially olive production).[[61]](https://en.wikipedia.org/wiki/Tunisia#cite_note-lapidus-66)[[62]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tunisia-lp-67) This prosperity permitted luxurious court life and was marked by the construction of new palace cities such as al-Abbasiya (809) and Raq Adda (877).[[61]](https://en.wikipedia.org/wiki/Tunisia#cite_note-lapidus-66)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panorama_of_the_courtyard_of_the_Great_Mosque_of_Kairouan.jpg/330px-Panorama_of_the_courtyard_of_the_Great_Mosque_of_Kairouan.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Panorama_of_the_courtyard_of_the_Great_Mosque_of_Kairouan.jpg)Domes of the [Great Mosque of Kairouan](https://en.wikipedia.org/wiki/Mosque_of_Uqba "Mosque of Uqba"). Founded in 670, it dates in its present form largely from the Aghlabid period (9th century). It is the oldest mosque in the [Maghreb](https://en.wikipedia.org/wiki/Maghreb "Maghreb").
+After conquering [Cairo](https://en.wikipedia.org/wiki/Cairo "Cairo"), the [Fatimids](https://en.wikipedia.org/wiki/Fatimids "Fatimids") abandoned Tunisia and parts of Eastern Algeria to the local [Zirids](https://en.wikipedia.org/wiki/Zirids "Zirids") (972–1148).[[63]](https://en.wikipedia.org/wiki/Tunisia#cite_note-stearns-68) Zirid Tunisia flourished in many areas: agriculture, industry, trade, and religious and secular learning.[[64]](https://en.wikipedia.org/wiki/Tunisia#cite_note-locfatamids-69) Management by the later Zirid [emirs](https://en.wikipedia.org/wiki/Emirs "Emirs") was neglectful though, and political instability was connected to the decline of Tunisian trade and agriculture.[[61]](https://en.wikipedia.org/wiki/Tunisia#cite_note-lapidus-66)[[65]](https://en.wikipedia.org/wiki/Tunisia#cite_note-islamic-dynasties-70)[[66]](https://en.wikipedia.org/wiki/Tunisia#cite_note-history-of-africa-71)
+The depredation of the Tunisian campaigns by the [Banu Hilal](https://en.wikipedia.org/wiki/Banu_Hilal "Banu Hilal"), a warlike Arab tribe encouraged by the Fatimids of Egypt to seize Northwest Africa, sent the region's rural and urban economic life into further decline.[[63]](https://en.wikipedia.org/wiki/Tunisia#cite_note-stearns-68) Consequently, the region underwent rapid urbanisation as famines depopulated the countryside and industry shifted from agriculture to manufactures.[[67]](https://en.wikipedia.org/wiki/Tunisia#cite_note-72) The Arab historian [Ibn Khaldun](https://en.wikipedia.org/wiki/Ibn_Khaldun "Ibn Khaldun") wrote that the lands ravaged by Banu Hilal invaders had become completely arid desert.[[65]](https://en.wikipedia.org/wiki/Tunisia#cite_note-islamic-dynasties-70)[[68]](https://en.wikipedia.org/wiki/Tunisia#cite_note-73)
+The main Tunisian cities were conquered by the [Normans](https://en.wikipedia.org/wiki/Normans "Normans") of [Sicily](https://en.wikipedia.org/wiki/Sicily "Sicily") under the [Kingdom of Africa](https://en.wikipedia.org/wiki/Kingdom_of_Africa "Kingdom of Africa") in the 12th century, but following [the conquest of Tunisia](https://en.wikipedia.org/wiki/Almohad_conquest_of_Ifriqiya "Almohad conquest of Ifriqiya") in 1159–1160 by the [Almohads](https://en.wikipedia.org/wiki/Almohads "Almohads") the Normans were evacuated to Sicily. Communities of Tunisian Christians would still exist in [Nefzaoua](https://en.wikipedia.org/wiki/Nefzaoua "Nefzaoua") up to the 14th century.[[69]](https://en.wikipedia.org/wiki/Tunisia#cite_note-hrbek-74) The Almohads initially ruled over Tunisia through a governor, usually a near relative of the Caliph. Despite the prestige of the new masters, the country was still unruly, with continuous rioting and fighting between the townsfolk and wandering Arabs and Turks, the latter being subjects of the Muslim Armenian adventurer Karakush. Also, Tunisia was occupied by [Ayyubids](https://en.wikipedia.org/wiki/Ayyubids "Ayyubids") between 1182 and 1183 and again between 1184 and 1187.[[70]](https://en.wikipedia.org/wiki/Tunisia#cite_note-75)
+The greatest threat to Almohad rule in Tunisia was the [Banu Ghaniya](https://en.wikipedia.org/wiki/Banu_Ghaniya "Banu Ghaniya"), relatives of the [Almoravids](https://en.wikipedia.org/wiki/Almoravids "Almoravids"), who from their base in [Mallorca](https://en.wikipedia.org/wiki/Mallorca "Mallorca") tried to restore Almoravid rule over the Maghreb. Around 1200 they succeeded in extending their rule over the whole of Tunisia until they were crushed by Almohad troops in 1207. After this success, the Almohads installed Walid Abu Hafs as the governor of Tunisia. Tunisia remained part of the Almohad state, until 1230 when the son of Abu Hafs declared himself independent.
+During the reign of the [Hafsid dynasty](https://en.wikipedia.org/wiki/Hafsid_dynasty "Hafsid dynasty") from their capital Tunis, fruitful commercial relationships were established with several Christian Mediterranean states.[[71]](https://en.wikipedia.org/wiki/Tunisia#cite_note-76) In the late 16th century the coast became a [pirate](https://en.wikipedia.org/wiki/Pirate "Pirate") stronghold.
+### Ottoman Tunisia
+Main article: [Ottoman Tunisia](https://en.wikipedia.org/wiki/Ottoman_Tunisia "Ottoman Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Frans_Hogenberg_battle_of_Tunis.jpg/250px-Frans_Hogenberg_battle_of_Tunis.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Frans_Hogenberg_battle_of_Tunis.jpg)[Conquest of Tunis](https://en.wikipedia.org/wiki/Conquest_of_Tunis_\(1535\) "Conquest of Tunis \(1535\)") by [Charles V](https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor "Charles V, Holy Roman Emperor") and liberation of Christian [galley slaves](https://en.wikipedia.org/wiki/Galley_slave "Galley slave") in 1535
+In the last years of the [Hafsid dynasty](https://en.wikipedia.org/wiki/Hafsid_dynasty "Hafsid dynasty"), Spain seized many of the coastal cities, but these were recovered by the [Ottoman Empire](https://en.wikipedia.org/wiki/Ottoman_Empire "Ottoman Empire").
+The [first Ottoman conquest of Tunis](https://en.wikipedia.org/wiki/Conquest_of_Tunis_\(1534\) "Conquest of Tunis \(1534\)") took place in 1534 under the command of [Barbarossa Hayreddin Pasha](https://en.wikipedia.org/wiki/Hayreddin_Barbarossa "Hayreddin Barbarossa"), the younger brother of Oruç Reis, who was the [Kapudan Pasha](https://en.wikipedia.org/wiki/Kapudan_Pasha "Kapudan Pasha") of the [Ottoman Fleet](https://en.wikipedia.org/wiki/Ottoman_Navy "Ottoman Navy") during the reign of [Suleiman the Magnificent](https://en.wikipedia.org/wiki/Suleiman_the_Magnificent "Suleiman the Magnificent"). However, it was not until the [final Ottoman reconquest of Tunis from Spain](https://en.wikipedia.org/wiki/Conquest_of_Tunis_\(1574\) "Conquest of Tunis \(1574\)") in 1574 under Kapudan Pasha [Uluç Ali Reis](https://en.wikipedia.org/wiki/Ulu%C3%A7_Ali_Reis "Uluç Ali Reis") that the Ottomans permanently acquired the former [Hafsid Tunisia](https://en.wikipedia.org/wiki/History_of_medieval_Tunisia#Hafsid_dynasty_of_Tunis "History of medieval Tunisia"), retaining it until the [French conquest of Tunisia](https://en.wikipedia.org/wiki/French_conquest_of_Tunisia "French conquest of Tunisia") in 1881.
+Initially under Turkish rule from Algiers, soon the [Ottoman Porte](https://en.wikipedia.org/wiki/Ottoman_Porte "Ottoman Porte") appointed directly for [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis") a governor called the [Pasha](https://en.wikipedia.org/wiki/Pasha "Pasha") supported by [janissary](https://en.wikipedia.org/wiki/Janissary "Janissary") forces. Before long, however, Tunisia became in effect an autonomous province, under the local [bey](https://en.wikipedia.org/wiki/Bey "Bey"). Under its [Turkish](https://en.wikipedia.org/wiki/Turkish_People "Turkish People") governors, the beys, Tunisia attained virtual independence. The [Hussein dynasty](https://en.wikipedia.org/wiki/Husainid_Dynasty "Husainid Dynasty") of beys, established in 1705, lasted until 1957.[[72]](https://en.wikipedia.org/wiki/Tunisia#cite_note-77) This evolution of status was from time to time challenged without success by Algiers. During this era, the governing councils controlling Tunisia remained largely composed of a foreign elite who continued to conduct state business in the [Turkish language](https://en.wikipedia.org/wiki/Turkish_language "Turkish language").
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_Cathedral_-_Carthage_-_Tunisia_-_1899.jpg/250px-St_Louis_Cathedral_-_Carthage_-_Tunisia_-_1899.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:St_Louis_Cathedral_-_Carthage_-_Tunisia_-_1899.jpg)St Louis Cathedral – Carthage – Tunisia – 1899
+Attacks on European shipping were made by [corsairs](https://en.wikipedia.org/wiki/Barbary_corsairs "Barbary corsairs"), primarily from Algiers, but also from Tunis and [Tripoli](https://en.wikipedia.org/wiki/Tripoli,_Libya "Tripoli, Libya"), yet after a long period of declining raids the growing power of the European states finally forced its termination.
+The [plague epidemics](https://en.wikipedia.org/wiki/Second_plague_pandemic "Second plague pandemic") ravaged Tunisia in 1784–1785, 1796–1797 and 1818–1820.[[73]](https://en.wikipedia.org/wiki/Tunisia#cite_note-78)
+In the 19th century, the rulers of Tunisia became aware of the ongoing efforts at political and social [reform in the Ottoman capital](https://en.wikipedia.org/wiki/Tanzimat "Tanzimat"). The Bey of Tunis then, by his own lights but informed by the Turkish example, attempted to effect a modernizing reform of institutions and the economy.[[74]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Clancy-Smith1997-79) Tunisian international debt grew unmanageable. This was the reason or pretext for French forces to establish a [protectorate](https://en.wikipedia.org/wiki/History_of_French_era_Tunisia "History of French era Tunisia") in 1881.[[75]](https://en.wikipedia.org/wiki/Tunisia#cite_note-80)[[76]](https://en.wikipedia.org/wiki/Tunisia#cite_note-81)
+### French Protectorate of Tunisia (1881–1956)
+Main article: [French protectorate of Tunisia](https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia "French protectorate of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/A_Churchill_tank_and_other_vehicles_parade_through_Tunis%2C_8_May_1943._NA2880.jpg/250px-A_Churchill_tank_and_other_vehicles_parade_through_Tunis%2C_8_May_1943._NA2880.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:A_Churchill_tank_and_other_vehicles_parade_through_Tunis,_8_May_1943._NA2880.jpg)British tank moves through Tunis after the city was taken from Axis troops, 8 May 1943.
+In 1869, Tunisia declared itself bankrupt and an international financial commission took control over its economy. In 1881, using the pretext of a Tunisian incursion into [Algeria](https://en.wikipedia.org/wiki/Algeria "Algeria"), the French invaded with an army of about 36,000 and forced the Bey of Tunis, [Muhammad III as-Sadiq](https://en.wikipedia.org/wiki/Muhammad_III_as-Sadiq "Muhammad III as-Sadiq"), to agree to the terms of the 1881 [Treaty of Bardo](https://en.wikipedia.org/wiki/Treaty_of_Bardo "Treaty of Bardo").[[77]](https://en.wikipedia.org/wiki/Tunisia#cite_note-82) With this treaty, Tunisia was officially made a [French protectorate](https://en.wikipedia.org/wiki/French_occupation_of_Tunisia "French occupation of Tunisia"), over the objections of Italy. European settlements in the country were actively encouraged; the number of [French](https://en.wikipedia.org/wiki/French_people "French people") colonists grew from 34,000 in 1906 to 144,000 in 1945. In 1910 there were also 105,000 [Italians in Tunisia](https://en.wikipedia.org/wiki/Italian_Tunisians "Italian Tunisians").[[78]](https://en.wikipedia.org/wiki/Tunisia#cite_note-83)
+During the [Second World War](https://en.wikipedia.org/wiki/World_War_II "World War II"), the protectorate of Tunisia was controlled by the collaborationist [Vichy](https://en.wikipedia.org/wiki/Vichy_France "Vichy France") government in Metropolitan France. The antisemitic [Statute on Jews](https://en.wikipedia.org/wiki/Vichy_anti-Jewish_legislation "Vichy anti-Jewish legislation") enacted by the Vichy government was also implemented in Vichy-controlled Northwest Africa and other overseas French territories. Thus, the persecution and murder of the Jews from 1940 to 1943 was part of [the Holocaust](https://en.wikipedia.org/wiki/The_Holocaust "The Holocaust") in France.
+From November 1942 until May 1943, Vichy-controlled Tunisia was occupied by Germany. [SS](https://en.wikipedia.org/wiki/Schutzstaffel "Schutzstaffel") Commander [Walter Rauff](https://en.wikipedia.org/wiki/Walter_Rauff "Walter Rauff") continued to implement the "Final Solution" there. From 1942 to 1943, Tunisia was the scene of the [Tunisia Campaign](https://en.wikipedia.org/wiki/Tunisia_Campaign "Tunisia Campaign"), a series of battles between the [Axis](https://en.wikipedia.org/wiki/Axis_powers "Axis powers") and [Allied](https://en.wikipedia.org/wiki/Allies_of_World_War_II "Allies of World War II") forces. The battle opened with initial success by the German and Italian forces, but the massive supply and numerical superiority of the Allies led to the [Axis surrender](https://en.wikipedia.org/wiki/Tunisian_Campaign "Tunisian Campaign") on 13 May 1943.[[79]](https://en.wikipedia.org/wiki/Tunisia#cite_note-84)[[80]](https://en.wikipedia.org/wiki/Tunisia#cite_note-85) The six-month campaign of Tunisia's liberation from Axis occupation signalled the end of the war in Africa.
+### Struggle for independence (1943–1956)
+After the liberation of Tunisia from the Germans, the French regained control over the government and made participation in a nationalist party illegal once more.[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86) [Moncef Bey](https://en.wikipedia.org/wiki/Moncef_Bey "Moncef Bey"), who was popular amongst Tunisians, was deposed by the French.[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86) The French claimed that his removal was due to him being sympathetic to the Axis countries during German occupation, but the real reason is up for debate.[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86)
+In 1945 after escaping French surveillance, Tunisian nationalist [Habib Bourguiba](https://en.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") arrived in [Cairo](https://en.wikipedia.org/wiki/Cairo "Cairo").[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86) While there, he was able to make contact with the [Arab League](https://en.wikipedia.org/wiki/Arab_League "Arab League").[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86) Later in 1946, after traveling to other Middle Eastern countries, he made his way to the United States to speak to both the [United Nations](https://en.wikipedia.org/wiki/United_Nations "United Nations") at their headquarters at [Lake Success](https://en.wikipedia.org/wiki/Lake_Success,_New_York "Lake Success, New York") and [U.S. State Department](https://en.wikipedia.org/wiki/United_States_Department_of_State "United States Department of State") officials in [Washington D.C.](https://en.wikipedia.org/wiki/Washington,_D.C. "Washington, D.C."), pleading the case of the Tunisian nationalists.[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86)
+As part of postwar Tunisia, a new all-Tunisian labor organization was formed, the [Union Générale des Travailleurs (UGTT)](https://en.wikipedia.org/wiki/Tunisian_General_Labour_Union "Tunisian General Labour Union").[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86) This was one of the stronger components of the nationalist group [Neo-Destour](https://en.wikipedia.org/wiki/Neo-Destour "Neo-Destour").[[81]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:02-86)
+Habib Bourguiba made his way to the United States on 13 September 1949.[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87) He attended the [American Federation of Labor](https://en.wikipedia.org/wiki/American_Federation_of_Labor "American Federation of Labor") meeting in [San Francisco](https://en.wikipedia.org/wiki/San_Francisco "San Francisco"), California.[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87) The French were opposed to his presence there, and the US feared political change in North Africa due to the looming presence of possible [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union "Soviet Union") communist expansion.[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87)
+Bourguiba continued to plead to foreign leaders when he traveled to Italy on 6 November 1951.[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87) His contacts included [Alberto Mellini Ponce De León](https://en.wikipedia.org/wiki/Alberto_Mellini_Ponce_De_Le%C3%B3n?action=edit&redlink=1 "Alberto Mellini Ponce De León \(page does not exist\)"), [Mario Toscano](https://en.wikipedia.org/wiki/Mario_Toscano?action=edit&redlink=1 "Mario Toscano \(page does not exist\)"), and [Licinio Vestri](https://en.wikipedia.org/wiki/Licinio_Vestri?action=edit&redlink=1 "Licinio Vestri \(page does not exist\)").[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87) De León was an old friend of Bourguiba who had helped free him from German captivity, Toscano was the head of the _Ufficio Studi e Documentazione_ in the [Ministry of Foreign Affairs](https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_\(Italy\) "Ministry of Foreign Affairs \(Italy\)"), and Vestri was an [Africanist](https://en.wikipedia.org/wiki/Africanist_\(discipline\) "Africanist \(discipline\)") scholar.[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87) Despite his best efforts, the Italians remained neutral as they did not want to ruin relations with [NATO](https://en.wikipedia.org/wiki/NATO "NATO") ally France, nor did they want to hamper any possibility of future relations with Tunisia as it served as a key part of the [Mediterranean](https://en.wikipedia.org/wiki/Mediterranean_Sea "Mediterranean Sea").[[82]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:12-87)
+The French Resident General in Tunisia, [Jean de Hautecloque](https://en.wikipedia.org/wiki/Jean_de_Hautecloque?action=edit&redlink=1 "Jean de Hautecloque \(page does not exist\)")[[de](https://de.wikipedia.org/wiki/Jean%20de%20Hauteclocque "de:Jean de Hauteclocque"); [fr](https://fr.wikipedia.org/wiki/Jean%20de%20Hautecloque "fr:Jean de Hautecloque")] left Tunis to go to Paris on 25 August 1953, when he was replaced by [Pierre Voizard](https://en.wikipedia.org/wiki/Pierre_Voizard "Pierre Voizard").[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) Voizard had previously been the French Minister to [Monaco](https://en.wikipedia.org/wiki/Monaco "Monaco").[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) A month after his arrival in Tunis on 26 September 1953, Voizard made many changes to ease tensions in Tunisia.[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) He lifted press censorship and freed several political prisoners.[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) He also restored the full powers of civil authorities and raised the state of siege in the [Sahel](https://en.wikipedia.org/wiki/Sahel,_Tunisia "Sahel, Tunisia").[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88)
+On 26 January 1954, Voizard announced that there would soon be new reforms in favor of granting more sovereignty to Tunisians while insuring the interests of the French and French citizens in Tunisia, at the Cercle Republicain d'outre Mer in Paris.[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) The Neo-Destour group was not in favor of these reforms if they themselves were not involved in their creation.[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88) They also demanded the freedom of Bourguiba who was imprisoned on the Isle of Galete.[[83]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:2-88)
+### Post-independence (1956–2011)
+Main article: [History of modern Tunisia](https://en.wikipedia.org/wiki/History_of_modern_Tunisia "History of modern Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Habib_Bourguiba_portrait4.jpg/250px-Habib_Bourguiba_portrait4.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Habib_Bourguiba_portrait4.jpg)[Habib Bourguiba](https://en.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") was the first president of Tunisia, from 1957 to 1987.
+Tunisia achieved independence from France on 20 March 1956 with [Habib Bourguiba](https://en.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") as Prime Minister.[[84]](https://en.wikipedia.org/wiki/Tunisia#cite_note-89) 20 March is celebrated annually as Tunisian Independence Day.[[85]](https://en.wikipedia.org/wiki/Tunisia#cite_note-90) A year later, Tunisia was declared a republic, with Bourguiba as [the first President](https://en.wikipedia.org/wiki/List_of_Presidents_of_Tunisia "List of Presidents of Tunisia").[[86]](https://en.wikipedia.org/wiki/Tunisia#cite_note-BBC-91) From independence in 1956 until the 2011 revolution, the government and the [Constitutional Democratic Rally](https://en.wikipedia.org/wiki/Constitutional_Democratic_Rally "Constitutional Democratic Rally") (RCD), formerly [Neo Destour](https://en.wikipedia.org/wiki/Neo_Destour "Neo Destour") and the [Socialist Destourian Party](https://en.wikipedia.org/wiki/Socialist_Destourian_Party "Socialist Destourian Party"), were effectively one. Following a report by [Amnesty International](https://en.wikipedia.org/wiki/Amnesty_International "Amnesty International"), _[The Guardian](https://en.wikipedia.org/wiki/The_Guardian "The Guardian")_ called Tunisia "one of the most modern but repressive countries in the Arab world".[[87]](https://en.wikipedia.org/wiki/Tunisia#cite_note-92) On 12 May 1964, Tunisia nationalized foreign farmlands.[[88]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:1-93) Immediately after, France canceled all financial assistance for the country, which was to amount to more than $40 million.[[88]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:1-93) This led to the Tunisian National Assembly passing a bill that required all residents of the country to subscribe to a "popular loan" in proportion to their income.[[88]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:1-93) From 1977 until 2005, Tunisia was a shooting location for five films of the _[Star Wars](https://en.wikipedia.org/wiki/Star_Wars_\(franchise\) "Star Wars \(franchise\)")_ film franchise.
+In 1982, Tunisia became the center of the [Palestine Liberation Organization](https://en.wikipedia.org/wiki/Palestine_Liberation_Organization "Palestine Liberation Organization"), based in the capital Tunis. On 1 October 1985, the [Israeli Air Force](https://en.wikipedia.org/wiki/Israeli_Air_Force "Israeli Air Force") [bombed the PLO Headquarters](https://en.wikipedia.org/wiki/Operation_Wooden_Leg "Operation Wooden Leg"), killing at least 60 people.[[89]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:22-94)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Zine_El_Abidine_Ben_Ali.jpg/250px-Zine_El_Abidine_Ben_Ali.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Zine_El_Abidine_Ben_Ali.jpg)[Zine El Abidine Ben Ali](https://en.wikipedia.org/wiki/Zine_El_Abidine_Ben_Ali "Zine El Abidine Ben Ali"), president of Tunisia from 1987 to 2011
+In November 1987, doctors declared Bourguiba unfit to rule[[90]](https://en.wikipedia.org/wiki/Tunisia#cite_note-95) and, in a bloodless coup d'état, Prime Minister [Zine El Abidine Ben Ali](https://en.wikipedia.org/wiki/Zine_El_Abidine_Ben_Ali "Zine El Abidine Ben Ali") assumed the presidency[[86]](https://en.wikipedia.org/wiki/Tunisia#cite_note-BBC-91) in accordance with Article 57 of the [Tunisian constitution](https://en.wikipedia.org/wiki/Tunisian_constitution "Tunisian constitution").[[91]](https://en.wikipedia.org/wiki/Tunisia#cite_note-96) The anniversary of Ben Ali's succession, 7 November, was celebrated as a national holiday. He was consistently re-elected with enormous majorities every five years (well over 80 percent of the vote), the last being 25 October 2009,[[92]](https://en.wikipedia.org/wiki/Tunisia#cite_note-97) until he fled the country amid popular unrest in January 2011.
+Ben Ali and his family were accused of corruption[[93]](https://en.wikipedia.org/wiki/Tunisia#cite_note-sandiegounion-tribune.com-98) and plundering the country's money. Economic liberalisation provided further opportunities for financial mismanagement,[[94]](https://en.wikipedia.org/wiki/Tunisia#cite_note-99) while corrupt members of the Trabelsi family, most notably in the cases of [Imed Trabelsi](https://en.wikipedia.org/wiki/Imed_Trabelsi "Imed Trabelsi") and [Belhassen Trabelsi](https://en.wikipedia.org/wiki/Belhassen_Trabelsi "Belhassen Trabelsi"), controlled much of the business sector in the country.[[95]](https://en.wikipedia.org/wiki/Tunisia#cite_note-100) The First Lady [Leila Ben Ali](https://en.wikipedia.org/wiki/Leila_Ben_Ali "Leila Ben Ali") was described as an "unabashed [shopaholic](https://en.wikipedia.org/wiki/Oniomania "Oniomania")" who used the state airplane to make frequent unofficial trips to Europe's fashion capitals.[[96]](https://en.wikipedia.org/wiki/Tunisia#cite_note-101) Tunisia refused a French request for the extradition of two of the President's nephews, from Leila's side, who were accused by the French State prosecutor of having stolen two mega-yachts from a French marina.[[97]](https://en.wikipedia.org/wiki/Tunisia#cite_note-102) According to _[Le Monde](https://en.wikipedia.org/wiki/Le_Monde "Le Monde")_ , Ben Ali's son-in-law was being primed to eventually take over the country.[[98]](https://en.wikipedia.org/wiki/Tunisia#cite_note-103)
+Independent human rights groups, such as [Amnesty International](https://en.wikipedia.org/wiki/Amnesty_International "Amnesty International"), [Freedom House](https://en.wikipedia.org/wiki/Freedom_House "Freedom House"), and Protection International, documented that basic human and political rights were not respected.[[99]](https://en.wikipedia.org/wiki/Tunisia#cite_note-104)[[100]](https://en.wikipedia.org/wiki/Tunisia#cite_note-105) The regime obstructed in any way possible the work of local human rights organizations.[[101]](https://en.wikipedia.org/wiki/Tunisia#cite_note-106) In 2008, in terms of [press freedom](https://en.wikipedia.org/wiki/Press_freedom "Press freedom"), Tunisia was ranked 143rd out of 173.[[102]](https://en.wikipedia.org/wiki/Tunisia#cite_note-107)
+### Post-revolution (since 2011)
+See also: [Tunisian Revolution](https://en.wikipedia.org/wiki/Tunisian_Revolution "Tunisian Revolution")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Tunisia_Unrest_-_VOA_-_Tunis_14_Jan_2011_%282%29.jpg/250px-Tunisia_Unrest_-_VOA_-_Tunis_14_Jan_2011_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_Unrest_-_VOA_-_Tunis_14_Jan_2011_\(2\).jpg)Tunis on 14 January 2011 during the [Tunisian Revolution](https://en.wikipedia.org/wiki/Tunisian_Revolution "Tunisian Revolution")
+The Tunisian Revolution[[103]](https://en.wikipedia.org/wiki/Tunisia#cite_note-108)[[104]](https://en.wikipedia.org/wiki/Tunisia#cite_note-109) was an intensive campaign of [civil resistance](https://en.wikipedia.org/wiki/Civil_resistance "Civil resistance") that was precipitated by high [unemployment](https://en.wikipedia.org/wiki/Unemployment "Unemployment"), [food inflation](https://en.wikipedia.org/wiki/Food_inflation "Food inflation"), [corruption](https://en.wikipedia.org/wiki/Corruption "Corruption"),[[105]](https://en.wikipedia.org/wiki/Tunisia#cite_note-110) a lack of [freedom of speech](https://en.wikipedia.org/wiki/Freedom_of_speech "Freedom of speech") and other [political freedoms](https://en.wikipedia.org/wiki/Political_freedom "Political freedom")[[106]](https://en.wikipedia.org/wiki/Tunisia#cite_note-111) and poor [living conditions](https://en.wikipedia.org/wiki/Living_conditions "Living conditions"). Labour unions were said to be an integral part of the protests.[[107]](https://en.wikipedia.org/wiki/Tunisia#cite_note-112) The protests inspired the [Arab Spring](https://en.wikipedia.org/wiki/Arab_Spring "Arab Spring"), a wave of similar actions throughout the Arab world. The catalyst for mass demonstrations was the death of [Mohamed Bouazizi](https://en.wikipedia.org/wiki/Mohamed_Bouazizi "Mohamed Bouazizi"), a 26-year-old Tunisian street vendor, who set himself afire on 17 December 2010 in protest at the confiscation of his wares and the humiliation inflicted on him by a municipal official named [Faida Hamdy](https://en.wikipedia.org/wiki/Faida_Hamdy "Faida Hamdy"). Anger and violence intensified following Bouazizi's death on 4 January 2011, ultimately leading longtime [President](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia") [Zine El Abidine Ben Ali](https://en.wikipedia.org/wiki/Zine_El_Abidine_Ben_Ali "Zine El Abidine Ben Ali") to resign and flee the country on 14 January 2011, after 23 years in power.[[108]](https://en.wikipedia.org/wiki/Tunisia#cite_note-113)
+Protests continued for banning of the ruling party and the eviction of all its members from the transitional government formed by [Mohammed Ghannouchi](https://en.wikipedia.org/wiki/Mohamed_Ghannouchi "Mohamed Ghannouchi"). Eventually the new government gave in to the demands. A Tunis court banned the ex-ruling party RCD and confiscated all its resources. A decree by the minister of the interior banned the "political police", special forces which were used to intimidate and persecute political activists.[[109]](https://en.wikipedia.org/wiki/Tunisia#cite_note-114)
+On 3 March 2011, the interim president announced that [elections to a Constituent Assembly](https://en.wikipedia.org/wiki/Tunisian_Constituent_Assembly_election,_2011 "Tunisian Constituent Assembly election, 2011") would be held on 24 July 2011.[[110]](https://en.wikipedia.org/wiki/Tunisia#cite_note-115) On 9 June 2011, the prime minister announced the election would be postponed until 23 October 2011.[[111]](https://en.wikipedia.org/wiki/Tunisia#cite_note-116) International and internal observers declared the vote free and fair. The [Ennahda Movement](https://en.wikipedia.org/wiki/Ennahda_Movement "Ennahda Movement"), formerly banned under the Ben Ali regime, came out of the election as the largest party, with 89 seats out of a total of 217.[[112]](https://en.wikipedia.org/wiki/Tunisia#cite_note-117) On 12 December 2011, former dissident and veteran human rights activist [Moncef Marzouki](https://en.wikipedia.org/wiki/Moncef_Marzouki "Moncef Marzouki") was elected president.[[113]](https://en.wikipedia.org/wiki/Tunisia#cite_note-118) In March 2012, Ennahda declared it will not support making sharia the main source of legislation in the new constitution, maintaining the secular nature of the state. Ennahda's stance on the issue was criticized by hardline Islamists, who wanted strict sharia, but was welcomed by secular parties.[[114]](https://en.wikipedia.org/wiki/Tunisia#cite_note-119) On 6 February 2013, [Chokri Belaid](https://en.wikipedia.org/wiki/Chokri_Belaid "Chokri Belaid"), the leader of the leftist opposition and prominent critic of Ennahda, was assassinated.[[115]](https://en.wikipedia.org/wiki/Tunisia#cite_note-120) In 2014, President [Moncef Marzouki](https://en.wikipedia.org/wiki/Moncef_Marzouki "Moncef Marzouki") established Tunisia's [Truth and Dignity Commission](https://en.wikipedia.org/wiki/Truth_and_Dignity_Commission_\(Tunisia\) "Truth and Dignity Commission \(Tunisia\)"), as a key part of creating a national reconciliation.[[116]](https://en.wikipedia.org/wiki/Tunisia#cite_note-121)
+Tunisia was hit by two terror attacks on foreign tourists in 2015, [first killing 22 people](https://en.wikipedia.org/wiki/Bardo_National_Museum_attack "Bardo National Museum attack") at the [Bardo National Museum](https://en.wikipedia.org/wiki/Bardo_National_Museum_\(Tunis\) "Bardo National Museum \(Tunis\)"), and [later killing 38 people](https://en.wikipedia.org/wiki/2015_Sousse_attacks "2015 Sousse attacks") at the [Sousse](https://en.wikipedia.org/wiki/Sousse "Sousse") beachfront. Tunisian president [Beji Caid Essebsi](https://en.wikipedia.org/wiki/Beji_Caid_Essebsi "Beji Caid Essebsi") renewed the state of emergency in October for three more months.[[117]](https://en.wikipedia.org/wiki/Tunisia#cite_note-122) The [Tunisian National Dialogue Quartet](https://en.wikipedia.org/wiki/Tunisian_National_Dialogue_Quartet "Tunisian National Dialogue Quartet") won the 2015 [Nobel Peace Prize](https://en.wikipedia.org/wiki/Nobel_Peace_Prize "Nobel Peace Prize") for its work in building a peaceful, pluralistic political order in Tunisia.[[118]](https://en.wikipedia.org/wiki/Tunisia#cite_note-123)
+#### Presidency of Kais Saied (2019–present)
+Tunisia's first democratically elected president [Beji Caid Essebsi](https://en.wikipedia.org/wiki/Beji_Caid_Essebsi "Beji Caid Essebsi") died in July 2019.[[119]](https://en.wikipedia.org/wiki/Tunisia#cite_note-124) Following him, [Kais Saied](https://en.wikipedia.org/wiki/Kais_Saied "Kais Saied") became Tunisia's president after a landslide victory in the [2019 Tunisian presidential elections](https://en.wikipedia.org/wiki/2019_Tunisian_presidential_election "2019 Tunisian presidential election") in October.[[120]](https://en.wikipedia.org/wiki/Tunisia#cite_note-125) On 23 October 2019, Saied was sworn in as Tunisia's new president.[[121]](https://en.wikipedia.org/wiki/Tunisia#cite_note-126)
+On 25 July 2021, amid ongoing demonstrations concerning government dysfunction and corruption and rises in [COVID-19](https://en.wikipedia.org/wiki/COVID-19 "COVID-19") cases, Kais Saied unilaterally [suspended parliament, dismissed the prime minister and withdrew immunity of parliament members](https://en.wikipedia.org/wiki/2021_Tunisian_political_crisis "2021 Tunisian political crisis").[[122]](https://en.wikipedia.org/wiki/Tunisia#cite_note-127)[[123]](https://en.wikipedia.org/wiki/Tunisia#cite_note-128) In September 2021, Saied said he would appoint a committee to help draft new constitutional amendments.[[124]](https://en.wikipedia.org/wiki/Tunisia#cite_note-129)[[f]](https://en.wikipedia.org/wiki/Tunisia#cite_note-130) On 29 September, he named [Najla Bouden](https://en.wikipedia.org/wiki/Najla_Bouden "Najla Bouden") as the new prime minister and tasked her with forming a [cabinet](https://en.wikipedia.org/wiki/Bouden_Cabinet "Bouden Cabinet"), which was sworn in on 11 October.[[125]](https://en.wikipedia.org/wiki/Tunisia#cite_note-131)[[126]](https://en.wikipedia.org/wiki/Tunisia#cite_note-132) On 3 February 2022, Tunisia was voted to the African Union's (AU) Peace and Security Council for the term 2022–2024, according to the Tunisian Foreign Ministry. The poll took place on the fringes of the AU Executive Council's 40th ordinary session, which was held in the Ethiopian capital of Addis Ababa, according to the ministry.[[127]](https://en.wikipedia.org/wiki/Tunisia#cite_note-133)
+In February 2022, Tunisia and the International Monetary Fund held preliminary negotiations in the hopes of securing a multibillion-dollar bailout for an economy beset by recession, public debt, inflation, and unemployment.[[128]](https://en.wikipedia.org/wiki/Tunisia#cite_note-134)
+In April 2023, the Tunisian government closed the headquarters of the [Ennahda](https://en.wikipedia.org/wiki/Ennahda "Ennahda") party and arrested its leader [Rached Ghannouchi](https://en.wikipedia.org/wiki/Rached_Ghannouchi "Rached Ghannouchi").[[129]](https://en.wikipedia.org/wiki/Tunisia#cite_note-135) In October 2023 [Abir Moussi](https://en.wikipedia.org/wiki/Abir_Moussi "Abir Moussi"), head of the [Free Destourian Party (FDL)](https://en.wikipedia.org/wiki/Free_Destourian_Party "Free Destourian Party"), became the latest prominent opponent of president Saied to have been detained or imprisoned.[[130]](https://en.wikipedia.org/wiki/Tunisia#cite_note-136)[[131]](https://en.wikipedia.org/wiki/Tunisia#cite_note-137)[[132]](https://en.wikipedia.org/wiki/Tunisia#cite_note-138)[[133]](https://en.wikipedia.org/wiki/Tunisia#cite_note-139) The FDL had emerged from the [Democratic Constitutional Assembly](https://en.wikipedia.org/wiki/Democratic_Constitutional_Rally "Democratic Constitutional Rally").
+In September 2023 Saied had asked to postpone a visit by a delegation of the [EU commission](https://en.wikipedia.org/wiki/European_Commission "European Commission") to discuss migration[[134]](https://en.wikipedia.org/wiki/Tunisia#cite_note-140) according to [Minister of the Interior](https://en.wikipedia.org/wiki/Ministry_of_the_Interior_\(Tunisia\) "Ministry of the Interior \(Tunisia\)") [Kamel Feki](https://en.wikipedia.org/wiki/Kamel_Feki "Kamel Feki").[[135]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:3-141) Meanwhile, human rights organisations were criticizing the July migration agreement.[[135]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:3-141)[[136]](https://en.wikipedia.org/wiki/Tunisia#cite_note-142)[[137]](https://en.wikipedia.org/wiki/Tunisia#cite_note-143) Feki said that Tunisia, which is one of the most important transit countries for people on their way to Europe,[[138]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:4-144) cannot act as a border guard for other countries.[[139]](https://en.wikipedia.org/wiki/Tunisia#cite_note-145)[[138]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:4-144) In October 2023 Saied turned down 127 million in EU aid[[140]](https://en.wikipedia.org/wiki/Tunisia#cite_note-146) saying that the amount was small and doesn't square with a deal signed three months ago.[[141]](https://en.wikipedia.org/wiki/Tunisia#cite_note-147)[[142]](https://en.wikipedia.org/wiki/Tunisia#cite_note-148) This in turn caused surprise in Brussels.[[143]](https://en.wikipedia.org/wiki/Tunisia#cite_note-149) In April 2025, Tunisia dismantled dozens of makeshift camps housing African migrants, displacing as many as 7,000 people.[[144]](https://en.wikipedia.org/wiki/Tunisia#cite_note-150)[[145]](https://en.wikipedia.org/wiki/Tunisia#cite_note-151)
+On 6 October 2024, President Kais Saied won a second term with more than 90% of the vote in a [presidential election](https://en.wikipedia.org/wiki/2024_Tunisian_presidential_election "2024 Tunisian presidential election") with a 28.8% turnout. Five political parties had urged people to boycott the elections.[[146]](https://en.wikipedia.org/wiki/Tunisia#cite_note-152)
+## Geography
+Main article: [Geography of Tunisia](https://en.wikipedia.org/wiki/Geography_of_Tunisia "Geography of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Koppen-Geiger_Map_TUN_present.svg/330px-Koppen-Geiger_Map_TUN_present.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Koppen-Geiger_Map_TUN_present.svg)[Köppen climate classification](https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification "Köppen climate classification") in Tunisia. The climate is Mediterranean towards the coast in the north, while most of the country is desert.
+Tunisia is situated on the [Mediterranean](https://en.wikipedia.org/wiki/Mediterranean "Mediterranean") coast of Northwest Africa, midway between the Atlantic Ocean and the [Nile Delta](https://en.wikipedia.org/wiki/Nile_Delta "Nile Delta"). It is bordered by [Algeria](https://en.wikipedia.org/wiki/Algeria "Algeria") on the west (965km) and southwest and [Libya](https://en.wikipedia.org/wiki/Libya "Libya") on the south east (459km).[[147]](https://en.wikipedia.org/wiki/Tunisia#cite_note-153) It lies between latitudes [30°](https://en.wikipedia.org/wiki/30th_parallel_north "30th parallel north") and [38°N](https://en.wikipedia.org/wiki/38th_parallel_north "38th parallel north"), and longitudes [7°](https://en.wikipedia.org/wiki/7th_meridian_east "7th meridian east") and [12°E](https://en.wikipedia.org/wiki/12th_meridian_east "12th meridian east"). An abrupt southward turn of the Mediterranean coast in northern Tunisia gives the country two distinctive Mediterranean coasts, west–east in the north, and north–south in the east.
+Though it is relatively small in size, Tunisia has great environmental diversity due to its north–south extent. Its east–west extent is limited. Differences in Tunisia, like the rest of the Maghreb, are largely north–south environmental differences defined by sharply decreasing rainfall southward from any point. The Dorsal, the eastern extension of the Atlas Mountains, runs across Tunisia in a northeasterly direction from the Algerian border in the west to the Cape Bon peninsula in the east. North of the Dorsal is the Tell, a region characterized by low, rolling hills and plains, again an extension of mountains to the west in Algeria. In the [Khroumerie](https://en.wikipedia.org/wiki/Khroumire "Khroumire"), the northwestern corner of the Tunisian Tell, elevations reach 1,050 metres (3,440ft) and snow occurs in winter.
+The [Sahel](https://en.wikipedia.org/wiki/Sahel,_Tunisia "Sahel, Tunisia"), a broadening coastal plain along Tunisia's eastern Mediterranean coast, is among the world's premier areas of olive cultivation. Inland from the Sahel, between the Dorsal and a range of hills south of Gafsa, are the [Steppes](https://en.wikipedia.org/wiki/Steppes "Steppes"). Much of the southern region is [semi-arid](https://en.wikipedia.org/wiki/Semi-arid "Semi-arid") and [desert](https://en.wikipedia.org/wiki/Desert "Desert").
+Tunisia has a coastline 1,148 kilometres (713mi) long. In maritime terms, the country claims a contiguous zone of 24 nautical miles (44 kilometres), and a territorial sea of 12 nautical miles (22 kilometres).[[148]](https://en.wikipedia.org/wiki/Tunisia#cite_note-154) The city of Tunis is built on a hill slope down to the lake of Tunis. These hills contain places such as Notre-Dame de Tunis, Ras Tabia, La Rabta, La Kasbah, Montfleury and La Manoubia with altitudes just above 50 metres (160 feet). The city is located at the crossroads of a narrow strip of land between Lake Tunis and Séjoumi.[[149]](https://en.wikipedia.org/wiki/Tunisia#cite_note-155)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Water_stress%2C_top_countries_%282022%29.svg/250px-Water_stress%2C_top_countries_%282022%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Water_stress,_top_countries_\(2022\).svg)Tunisia was the eighteenth most water stressed country in the world in 2022.
+[Tunisia's climate](https://en.wikipedia.org/wiki/Climate_in_Tunisia "Climate in Tunisia") is [Mediterranean](https://en.wikipedia.org/wiki/Mediterranean_climate "Mediterranean climate") in the north, with mild rainy winters and hot, dry summers.[[150]](https://en.wikipedia.org/wiki/Tunisia#cite_note-156) The south of the country is desert. The terrain in the north is mountainous, which, moving south, gives way to a hot, dry central [plain](https://en.wikipedia.org/wiki/Plain "Plain"). The south is [semiarid](https://en.wikipedia.org/wiki/Semiarid "Semiarid"), and merges into the [Sahara](https://en.wikipedia.org/wiki/Sahara "Sahara"). A series of [salt lakes](https://en.wikipedia.org/wiki/Tunisian_salt_lakes "Tunisian salt lakes"), known as _chotts_ or _shatts_ , lie in an east–west line at the northern edge of the Sahara, extending from the [Gulf of Gabes](https://en.wikipedia.org/wiki/Gulf_of_Gabes "Gulf of Gabes") into [Algeria](https://en.wikipedia.org/wiki/Algeria "Algeria"). The lowest point is [Chott el Djerid](https://en.wikipedia.org/wiki/Chott_el_Djerid "Chott el Djerid") at 17 metres (56ft) below sea level and the highest is [Jebel ech Chambi](https://en.wikipedia.org/wiki/Jebel_ech_Chambi "Jebel ech Chambi") at 1,544 metres (5,066ft).[[151]](https://en.wikipedia.org/wiki/Tunisia#cite_note-157)
+Tunisia is home to five terrestrial ecoregions: [Mediterranean conifer and mixed forests](https://en.wikipedia.org/wiki/Mediterranean_conifer_and_mixed_forests "Mediterranean conifer and mixed forests"), [Saharan halophytics](https://en.wikipedia.org/wiki/Saharan_halophytics "Saharan halophytics"), [Mediterranean dry woodlands and steppe](https://en.wikipedia.org/wiki/Mediterranean_dry_woodlands_and_steppe "Mediterranean dry woodlands and steppe"), [Mediterranean woodlands and forests](https://en.wikipedia.org/wiki/Mediterranean_woodlands_and_forests "Mediterranean woodlands and forests"), and [North Saharan steppe and woodlands](https://en.wikipedia.org/wiki/North_Saharan_steppe_and_woodlands "North Saharan steppe and woodlands").[[152]](https://en.wikipedia.org/wiki/Tunisia#cite_note-DinersteinOlson2017-158)
+## Government and politics
+Main article: [Politics of Tunisia](https://en.wikipedia.org/wiki/Politics_of_Tunisia "Politics of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Kais_Saied_2023.jpg/250px-Kais_Saied_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Kais_Saied_2023.jpg)
+[Kais Saied](https://en.wikipedia.org/wiki/Kais_Saied "Kais Saied"), [President](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Sara_Zaafarani_%28cropped%29.jpg/250px-Sara_Zaafarani_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Sara_Zaafarani_\(cropped\).jpg)
+[Sara Zaafarani](https://en.wikipedia.org/wiki/Sara_Zaafarani "Sara Zaafarani"), [Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Tunisia "Prime Minister of Tunisia")
+Tunisia is a [presidential republic](https://en.wikipedia.org/wiki/Presidential_system "Presidential system") with a [president](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia") serving as [head of state](https://en.wikipedia.org/wiki/Head_of_state "Head of state"), a [prime minister](https://en.wikipedia.org/wiki/Prime_Minister_of_the_Republic_of_Tunisia "Prime Minister of the Republic of Tunisia") as [head of government](https://en.wikipedia.org/wiki/Head_of_government "Head of government"), a [bicameral](https://en.wikipedia.org/wiki/Bicameralism "Bicameralism") [parliament](https://en.wikipedia.org/wiki/Parliament_of_Tunisia "Parliament of Tunisia"), and a [civil law court system](https://en.wikipedia.org/wiki/Civil_law_\(legal_system\) "Civil law \(legal system\)"). The [Constitution of Tunisia](https://en.wikipedia.org/wiki/Constitution_of_Tunisia "Constitution of Tunisia"), adopted 26 January 2014, guarantees rights for women and states that the President's religion "shall be Islam". In October 2014 Tunisia held its first elections under the new constitution following the Arab Spring.[[153]](https://en.wikipedia.org/wiki/Tunisia#cite_note-159) Tunisia was the only [democracy in North Africa](https://en.wikipedia.org/wiki/Democracy_in_Africa "Democracy in Africa") until 2021. After a [democratic backsliding](https://en.wikipedia.org/wiki/Democratic_backsliding "Democratic backsliding"), the country now classifies as "hybrid regime" in the [Democracy Index (The Economist)](https://en.wikipedia.org/wiki/Democracy_Index "Democracy Index").[[154]](https://en.wikipedia.org/wiki/Tunisia#cite_note-160) Between 2020 and 2022 the [V-Dem Democracy indices](https://en.wikipedia.org/wiki/V-Dem_Democracy_indices "V-Dem Democracy indices") score for electoral democracy dropped from 0.727 to 0.307.[[155]](https://en.wikipedia.org/wiki/Tunisia#cite_note-vdem_dataset-161) After the [2022 constitutional referendum](https://en.wikipedia.org/wiki/2022_Tunisian_constitutional_referendum "2022 Tunisian constitutional referendum"), Tunisia became a [unitary](https://en.wikipedia.org/wiki/Unitary_state "Unitary state") [presidential](https://en.wikipedia.org/wiki/Presidential_republic "Presidential republic") [republic](https://en.wikipedia.org/wiki/Republic "Republic").
+The number of legalized [political parties in Tunisia](https://en.wikipedia.org/wiki/Political_parties_in_Tunisia "Political parties in Tunisia") has grown considerably since the revolution. There are now over 100 legal parties, including several that existed under the former regime. During the rule of Ben Ali, only three functioned as independent opposition parties: the [PDP](https://en.wikipedia.org/wiki/Progressive_Democratic_Party_\(Tunisia\) "Progressive Democratic Party \(Tunisia\)"), [FDTL](https://en.wikipedia.org/wiki/Democratic_Forum_for_Labour_and_Liberties "Democratic Forum for Labour and Liberties"), and [Tajdid](https://en.wikipedia.org/wiki/Ettajdid_Movement "Ettajdid Movement"). While some older parties are well-established and can draw on previous party structures, many of the 100-plus parties extant as of February 2012 are small.[[156]](https://en.wikipedia.org/wiki/Tunisia#cite_note-cnsd-162)
+Rare for the Arab world, women held more than 20% of seats in the country's pre-revolution bicameral parliament.[[157]](https://en.wikipedia.org/wiki/Tunisia#cite_note-163) In the 2011 constituent assembly, women held between 24% and 31% of all seats.[[158]](https://en.wikipedia.org/wiki/Tunisia#cite_note-164)[[159]](https://en.wikipedia.org/wiki/Tunisia#cite_note-165) Tunisia is included in the European Union's [European Neighbourhood Policy](https://en.wikipedia.org/wiki/European_Neighbourhood_Policy "European Neighbourhood Policy") (ENP), which aims at bringing the [EU](https://en.wikipedia.org/wiki/European_Union "European Union") and its neighbours closer. On 23 November 2014, Tunisia held its first presidential election following the Arab Spring in 2011.[[160]](https://en.wikipedia.org/wiki/Tunisia#cite_note-166) The Tunisian legal system is heavily influenced by [French civil law](https://en.wikipedia.org/wiki/French_civil_law "French civil law"), while the law of personal status is based on Islamic law.[[161]](https://en.wikipedia.org/wiki/Tunisia#cite_note-ri-law-167) [Sharia](https://en.wikipedia.org/wiki/Sharia "Sharia") courts were abolished in 1956.[[161]](https://en.wikipedia.org/wiki/Tunisia#cite_note-ri-law-167)
+A [Code of Personal Status](https://en.wikipedia.org/wiki/Code_of_Personal_Status_\(Tunisia\) "Code of Personal Status \(Tunisia\)") was adopted shortly after independence in 1956, which, among other things, gave women full legal status (allowing them to run and own businesses, have bank accounts, and seek passports under their own authority). The code outlawed the practices of polygamy and repudiation and a husband's right to unilaterally divorce his wife.[[162]](https://en.wikipedia.org/wiki/Tunisia#cite_note-168) Further reforms in 1993 included a provision to allow Tunisian women to transmit citizenship even if they are married to a foreigner and living abroad.[[163]](https://en.wikipedia.org/wiki/Tunisia#cite_note-169) The Law of Personal Status is applied to all Tunisians regardless of their religion.[[161]](https://en.wikipedia.org/wiki/Tunisia#cite_note-ri-law-167) The Code of Personal Status remains one of the most progressive civil codes in North Africa and the Muslim world.[[164]](https://en.wikipedia.org/wiki/Tunisia#cite_note-170) On 25 May 2022, President Kais Saied issued a decree for change of constitution by 25 July.[[165]](https://en.wikipedia.org/wiki/Tunisia#cite_note-171) The [referendum](https://en.wikipedia.org/wiki/2022_Tunisian_constitutional_referendum "2022 Tunisian constitutional referendum") was held that day to a low turnout of 30% of voters, the overwhelming majority of whom accepted the new constitution, strengthening significantly the presidential powers.[[166]](https://en.wikipedia.org/wiki/Tunisia#cite_note-172) Maghreb countries have toughened their tone towards Europe recently.[[167]](https://en.wikipedia.org/wiki/Tunisia#cite_note-173)
+### Foreign relations
+Main article: [Foreign relations of Tunisia](https://en.wikipedia.org/wiki/Foreign_relations_of_Tunisia "Foreign relations of Tunisia")
+Tunisia maintains diplomatic relations with over 160+ countries. Former President [Zine El Abidine Ben Ali](https://en.wikipedia.org/wiki/Zine_El_Abidine_Ben_Ali "Zine El Abidine Ben Ali") has maintained its long-time policy of seeking good relations with the West, while playing an active role in [Arab](https://en.wikipedia.org/wiki/Arab "Arab") and [African](https://en.wikipedia.org/wiki/Africa "Africa") regional bodies. President [Habib Bourguiba](https://en.wikipedia.org/wiki/Habib_Bourguiba "Habib Bourguiba") took a nonaligned stance but emphasized close relations with the European Union, [Pakistan](https://en.wikipedia.org/wiki/Pakistan "Pakistan"), and the [United States](https://en.wikipedia.org/wiki/United_States "United States").[[168]](https://en.wikipedia.org/wiki/Tunisia#cite_note-174)
+### Military
+Main article: [Tunisian Armed Forces](https://en.wikipedia.org/wiki/Tunisian_Armed_Forces "Tunisian Armed Forces")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/DM-SD-01-05601.jpg/250px-DM-SD-01-05601.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:DM-SD-01-05601.jpg)Tunisian military force
+As of 2008[[update]](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit)[Tunisian Air Force](https://en.wikipedia.org/wiki/Tunisian_Air_Force "Tunisian Air Force") has 154 aircraft and 4 UAVs. Paramilitary forces consisted of a 12,000-member national guard.[[169]](https://en.wikipedia.org/wiki/Tunisia#cite_note-175) Tunisia's military spending was 1.6% of GDP as of 2006[[update]](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit)[[170]](https://en.wikipedia.org/wiki/Tunisia#cite_note-176) [United Nations](https://en.wikipedia.org/wiki/United_Nations "United Nations") peacekeeping deployments for the Tunisian armed forces have been in Cambodia ([UNTAC](https://en.wikipedia.org/wiki/UNTAC "UNTAC")), Namibia ([UNTAG](https://en.wikipedia.org/wiki/UNTAG "UNTAG")), Somalia, Rwanda, Burundi, Western Sahara ([MINURSO](https://en.wikipedia.org/wiki/MINURSO "MINURSO")) and the 1960s mission in the Congo, [ONUC](https://en.wikipedia.org/wiki/ONUC "ONUC").
+The military has historically played a professional, apolitical role in defending the country from external threats. Since January 2011 and at the direction of the executive branch, the military has taken on increasing responsibility for domestic security and humanitarian crisis response.[[156]](https://en.wikipedia.org/wiki/Tunisia#cite_note-cnsd-162)
+Tunisia is the 73rd most peaceful country in the world, according to the 2024 [Global Peace Index](https://en.wikipedia.org/wiki/Global_Peace_Index "Global Peace Index").[[171]](https://en.wikipedia.org/wiki/Tunisia#cite_note-177)
+### Administrative divisions
+Main articles: [Subdivisions of Tunisia](https://en.wikipedia.org/wiki/Subdivisions_of_Tunisia "Subdivisions of Tunisia"), [Governorates of Tunisia](https://en.wikipedia.org/wiki/Governorates_of_Tunisia "Governorates of Tunisia"), and [Delegations of Tunisia](https://en.wikipedia.org/wiki/Delegations_of_Tunisia "Delegations of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Medium_map_tunisia.png/500px-Medium_map_tunisia.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Medium_map_tunisia.png)
+Tunisia is subdivided into 24 [governorates](https://en.wikipedia.org/wiki/Governorate "Governorate") (_Wilaya_), which are further divided into 264 "[delegations](https://en.wikipedia.org/wiki/Delegations_of_Tunisia "Delegations of Tunisia")" or "[districts](https://en.wikipedia.org/wiki/District "District")" (_mutamadiyat_), and further subdivided into [municipalities](https://en.wikipedia.org/wiki/Municipality "Municipality") (_baladiyats_)[[172]](https://en.wikipedia.org/wiki/Tunisia#cite_note-178) and sectors (_imadats_).[[173]](https://en.wikipedia.org/wiki/Tunisia#cite_note-179)
+## Economy
+Main article: [Economy of Tunisia](https://en.wikipedia.org/wiki/Economy_of_Tunisia "Economy of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/GDP_per_capita_development_of_Tunisia.svg/330px-GDP_per_capita_development_of_Tunisia.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:GDP_per_capita_development_of_Tunisia.svg)GDP per capita development of Tunisia
+Ranked the most competitive economy in Africa by the [World Economic Forum](https://en.wikipedia.org/wiki/World_Economic_Forum "World Economic Forum") in 2009,[[174]](https://en.wikipedia.org/wiki/Tunisia#cite_note-180) Tunisia is an export-oriented country in the process of liberalizing and privatizing an economy that, while averaging 5% GDP growth since the early 1990s, has suffered from corruption benefiting politically connected elites.[[175]](https://en.wikipedia.org/wiki/Tunisia#cite_note-181) Tunisia's Penal Code criminalises several forms of corruption, including active and passive bribery, abuse of office, extortion and conflicts of interest, but the anti-corruption framework is not effectively enforced.[[176]](https://en.wikipedia.org/wiki/Tunisia#cite_note-182) However, according to the [Corruption Perceptions Index](https://en.wikipedia.org/wiki/Corruption_Perceptions_Index "Corruption Perceptions Index") published annually by [Transparency International](https://en.wikipedia.org/wiki/Transparency_International "Transparency International"), Tunisia was ranked the least corrupt North African country in 2016, with a score of 41. Tunisia has a diverse economy, ranging from agriculture, mining, manufacturing, and petroleum products, to [tourism](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia"), which accounted for 7% of the total GDP and 370,000 jobs in 2009.[[177]](https://en.wikipedia.org/wiki/Tunisia#cite_note-183) In 2008 it had an economy of US$41 billion in nominal terms, and $82 billion in [PPP](https://en.wikipedia.org/wiki/Purchasing_power_parity "Purchasing power parity").[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15)
+The agricultural sector accounts for 11.6% of the GDP, industry 25.7%, and services 62.8%. The industrial sector is mainly made up of clothing and footwear manufacturing, production of car parts, and electric machinery. Although Tunisia managed an average 5% growth over the last decade, it continues to suffer from a high unemployment rate, especially among youth.[[178]](https://en.wikipedia.org/wiki/Tunisia#cite_note-184)[[179]](https://en.wikipedia.org/wiki/Tunisia#cite_note-185)[[180]](https://en.wikipedia.org/wiki/Tunisia#cite_note-186)
+The European Union remains Tunisia's first trading partner, currently accounting for 72.5% of Tunisian imports and 75% of Tunisian exports. Tunisia is one of the European Union's most established trading partners in the [Mediterranean region](https://en.wikipedia.org/wiki/Mediterranean_region "Mediterranean region") and ranks as the EU's 30th largest trading partner. Tunisia was the first Mediterranean country to sign an Association Agreement with the European Union, in July 1995, although even before the date of entry came into force, Tunisia started dismantling tariffs on bilateral EU trade. Tunisia finalised the tariffs dismantling for industrial products in 2008 and therefore was the first non-EU Mediterranean country to enter in a free trade area with the EU.[[181]](https://en.wikipedia.org/wiki/Tunisia#cite_note-187)
+The consequences of the [Russian invasion of Ukraine](https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine "Russian invasion of Ukraine") for the global [food supply](https://en.wikipedia.org/wiki/Food_supply "Food supply") are being felt particularly strongly in Tunisia.[[182]](https://en.wikipedia.org/wiki/Tunisia#cite_note-188)[[183]](https://en.wikipedia.org/wiki/Tunisia#cite_note-189)
+In June 2023 the [World Bank Group](https://en.wikipedia.org/wiki/World_Bank_Group "World Bank Group") lent Tunisia $268.4 million to finance [ELMED](https://en.wikipedia.org/wiki/ELMED_interconnector "ELMED interconnector"), an electrical interconnection project with [Italy](https://en.wikipedia.org/wiki/Italy "Italy") to import electricity generated from [renewable energy sources](https://en.wikipedia.org/wiki/Energy_transition "Energy transition") to [Sicily](https://en.wikipedia.org/wiki/Sicily "Sicily") and the EU via a 600 [Megawatt](https://en.wikipedia.org/wiki/MegaWatt "MegaWatt") [undersea cable](https://en.wikipedia.org/wiki/Undersea_cable "Undersea cable").[[184]](https://en.wikipedia.org/wiki/Tunisia#cite_note-190)
+Tunisia was ranked 76th in the [Global Innovation Index](https://en.wikipedia.org/wiki/Global_Innovation_Index "Global Innovation Index") in 2025.[[185]](https://en.wikipedia.org/wiki/Tunisia#cite_note-191)[[186]](https://en.wikipedia.org/wiki/Tunisia#cite_note-192)
+### Tourism
+Main article: [Tourism in Tunisia](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Tunezja%2C_Sidi_Bou_Said_-_panoramio_%2810%29.jpg/250px-Tunezja%2C_Sidi_Bou_Said_-_panoramio_%2810%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunezja,_Sidi_Bou_Said_-_panoramio_\(10\).jpg)Sidi Bou Said
+Among Tunisia's tourist attractions are its cosmopolitan capital city of [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis"), the ancient ruins of [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage"), the Muslim and Jewish quarters of [Djerba](https://en.wikipedia.org/wiki/Djerba "Djerba"), coastal resorts outside of [Monastir](https://en.wikipedia.org/wiki/Monastir,_Tunisia "Monastir, Tunisia"), and the night life-driven city of [Hammamet](https://en.wikipedia.org/wiki/Hammamet,_Tunisia "Hammamet, Tunisia").[[187]](https://en.wikipedia.org/wiki/Tunisia#cite_note-193) According to _The New York Times_ , Tunisia is "known for its golden beaches, sunny weather and affordable luxuries".[[188]](https://en.wikipedia.org/wiki/Tunisia#cite_note-194)[[189]](https://en.wikipedia.org/wiki/Tunisia#cite_note-195)[[190]](https://en.wikipedia.org/wiki/Tunisia#cite_note-196)[[191]](https://en.wikipedia.org/wiki/Tunisia#cite_note-197)[[192]](https://en.wikipedia.org/wiki/Tunisia#cite_note-198)[[193]](https://en.wikipedia.org/wiki/Tunisia#cite_note-199)
+### Energy
+Main article: [Energy in Tunisia](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
+**Sources of electricity production in Tunisia**[[194]](https://en.wikipedia.org/wiki/Tunisia#cite_note-200)
+  1. Thermal steam (44.0%)
+  2. Combined cycle (43.0%)
+  3. Gas turbine (11.0%)
+  4. Wind, hydroelectric, solar (2.00%)
+
+
+Tunisia's current power production capacity is estimated at 5,944 [MW](https://en.wikipedia.org/wiki/Mega_watt "Mega watt") installed in 25 power plants as of 2024. Tunisia produced 19,520 [GWh](https://en.wikipedia.org/wiki/Gigawatt-hour "Gigawatt-hour") in 2022. State owned power utility company [STEG](https://en.wikipedia.org/wiki/Tunisian_Company_of_Electricity_and_Gas "Tunisian Company of Electricity and Gas") (Société Tunisienne d'Electricité et de Gas) controls 92.1% of the country's installed power production capacity and produces 83.5% of the electricity.[[195]](https://en.wikipedia.org/wiki/Tunisia#cite_note-201)
+Oil production began in 1966 in Tunisia. In 2006 there were 12 oil fields.[[196]](https://en.wikipedia.org/wiki/Tunisia#cite_note-MBendi_economical_information-202) The main field is [El Borma](https://en.wikipedia.org/wiki/El_Borma "El Borma").[[197]](https://en.wikipedia.org/wiki/Tunisia#cite_note-203) The production rate of crude oil in Tunisia was 29,200 barrels per day (4,640m3/d) at the end of September 2024.[[198]](https://en.wikipedia.org/wiki/Tunisia#cite_note-204)
+Tunisia had [plans for two nuclear power stations](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia"), to be operational by 2020. Both facilities are projected to produce 900–1000 [MW](https://en.wikipedia.org/wiki/Watt#Megawatt "Watt"). France is set to become an important partner in Tunisia's nuclear power plans, having signed an agreement, along with other partners, to deliver training and technology.[[199]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Reuters-205)[[200]](https://en.wikipedia.org/wiki/Tunisia#cite_note-African_manager-206) As of 2015[[update]](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit)[[201]](https://en.wikipedia.org/wiki/Tunisia#cite_note-207)
+According to the Tunisian Solar Plan (which is Tunisia's Renewable Energy Strategy not limited to solar, contrary to what its title may suggest), proposed by the [National Agency for Energy Conservation](http://www.anme.nat.tn/index.php?id=3) ([Archived](https://web.archive.org/web/20151021061924/http://www.anme.nat.tn/index.php?id=3) 21 October 2015 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine")[[202]](https://en.wikipedia.org/wiki/Tunisia#cite_note-208) As of 2015[[update]](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit)[[203]](https://en.wikipedia.org/wiki/Tunisia#cite_note-209)[[204]](https://en.wikipedia.org/wiki/Tunisia#cite_note-210)
+### Transport
+Main article: [Transport in Tunisia](https://en.wikipedia.org/wiki/Transport_in_Tunisia "Transport in Tunisia")
+The country maintains 19,232 kilometres (11,950mi) of roads,[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15) with three highways: the [A1](https://en.wikipedia.org/wiki/A1_motorway_\(Tunisia\) "A1 motorway \(Tunisia\)") from Tunis to Sfax (works ongoing for Sfax-Libya), [A3](https://en.wikipedia.org/wiki/A3_motorway_\(Tunisia\) "A3 motorway \(Tunisia\)") Tunis-Beja (works ongoing Beja – Boussalem, studies ongoing Boussalem – Algeria) and [A4](https://en.wikipedia.org/wiki/A4_motorway_\(Tunisia\) "A4 motorway \(Tunisia\)") Tunis – Bizerte. There are 29 airports in Tunisia, with [Tunis Carthage International Airport](https://en.wikipedia.org/wiki/Tunis_Carthage_International_Airport "Tunis Carthage International Airport") and [Djerba–Zarzis International Airport](https://en.wikipedia.org/wiki/Djerba%E2%80%93Zarzis_International_Airport "Djerba–Zarzis International Airport") being the most important ones. A new airport, [Enfidha – Hammamet International Airport](https://en.wikipedia.org/wiki/Enfidha_%E2%80%93_Hammamet_International_Airport "Enfidha – Hammamet International Airport") opened in 2011. The airport is located north of Sousse at Enfidha and is to mainly serve the resorts of Hamammet and Port El Kantaoui, together with inland cities such as Kairouan. Five airlines are headquartered in Tunisia: [Tunisair](https://en.wikipedia.org/wiki/Tunisair "Tunisair"), [Syphax Airlines](https://en.wikipedia.org/wiki/Syphax_Airlines "Syphax Airlines"), [Karthago Airlines](https://en.wikipedia.org/wiki/Karthago_Airlines "Karthago Airlines"), [Nouvelair](https://en.wikipedia.org/wiki/Nouvelair "Nouvelair"), and [Tunisair Express](https://en.wikipedia.org/wiki/Tunisair_Express "Tunisair Express"). The railway network is operated by [SNCFT](https://en.wikipedia.org/wiki/SNCFT "SNCFT") and amounts to 2,135 kilometres (1,327mi) in total.[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15) The Tunis area is served by a [Light rail](https://en.wikipedia.org/wiki/Light_rail "Light rail") network named _Metro Leger_ which is managed by Transtu.
+### Water supply and sanitation
+Main article: [Water supply and sanitation in Tunisia](https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_Tunisia "Water supply and sanitation in Tunisia")
+Tunisia has achieved the highest access rates to water supply and sanitation services in the Middle East and North Africa. As of 2011[[update]](https://en.wikipedia.org/w/index.php?title=Tunisia&action=edit)[[205]](https://en.wikipedia.org/wiki/Tunisia#cite_note-JMP-211) Tunisia provides good quality drinking water throughout the year.[[206]](https://en.wikipedia.org/wiki/Tunisia#cite_note-PSP-212)
+Responsibility for the water supply systems in urban areas and large rural centers is assigned to the _Sociéte Nationale d'Exploitation et de Distribution des Eaux_ (SONEDE), a national water supply authority that is an autonomous public entity under the Ministry of Agriculture. Planning, design, and supervision of small and medium water supplies in the remaining rural areas are the responsibility of the _Direction Générale du Génie Rurale_ (DGGR).
+In 1974, ONAS was established to manage the sanitation sector. Since 1993, ONAS has had the status of a main operator for the protection of the water environment and combating pollution. The rate of non-revenue water is the lowest in the region at 21% in 2012.[[207]](https://en.wikipedia.org/wiki/Tunisia#cite_note-SONEDE_Chiffres-213)
+## Demographics
+Main articles: [Tunisians](https://en.wikipedia.org/wiki/Tunisians "Tunisians"), [Demographics of Tunisia](https://en.wikipedia.org/wiki/Demographics_of_Tunisia "Demographics of Tunisia"), and [List of cities in Tunisia](https://en.wikipedia.org/wiki/List_of_cities_in_Tunisia "List of cities in Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bev%C3%B6lkerungspyramide_Tunesien_2016.png/330px-Bev%C3%B6lkerungspyramide_Tunesien_2016.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Bev%C3%B6lkerungspyramide_Tunesien_2016.png)Population pyramid [![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Arabs_leaving_mosque%2C_Tunis%2C_Tunisia-LCCN2001699400.jpg/250px-Arabs_leaving_mosque%2C_Tunis%2C_Tunisia-LCCN2001699400.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Arabs_leaving_mosque,_Tunis,_Tunisia-LCCN2001699400.jpg)Arabs leaving mosque in Tunis c. 1899 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/World_Book_Day_in_Tunisia_2012.jpg/250px-World_Book_Day_in_Tunisia_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:World_Book_Day_in_Tunisia_2012.jpg)Tunisian students
+According to the CIA, as of 2021, Tunisia has a population of 11,811,335 inhabitants.[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15) The government has supported a successful [family planning](https://en.wikipedia.org/wiki/Family_planning "Family planning") program that has reduced the population growth rate to just over 1% per annum, contributing to Tunisia's economic and social stability.[[156]](https://en.wikipedia.org/wiki/Tunisia#cite_note-cnsd-162)  
+| 
+  * [v](https://en.wikipedia.org/wiki/Template:Largest_cities_of_Tunisia "Template:Largest cities of Tunisia")
+  * [t](https://en.wikipedia.org/wiki/Template_talk:Largest_cities_of_Tunisia "Template talk:Largest cities of Tunisia")
+  * [e](https://en.wikipedia.org/wiki/Special:EditPage/Template:Largest_cities_of_Tunisia "Special:EditPage/Template:Largest cities of Tunisia")
+
+Largest cities or towns in Tunisia  
+According to the 2014 Census[[208]](https://en.wikipedia.org/wiki/Tunisia#cite_note-214)  |  
+| --- |  
+| Rank  | [Name](https://en.wikipedia.org/wiki/List_of_cities_in_Tunisia "List of cities in Tunisia")  | [Governorate](https://en.wikipedia.org/wiki/Governorates_of_Tunisia "Governorates of Tunisia")  | Pop.   |  
+| 1  | [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis")  | [Tunis](https://en.wikipedia.org/wiki/Tunis_Governorate "Tunis Governorate")  | 1,066,961  |  
+| 2  | [Sfax](https://en.wikipedia.org/wiki/Sfax "Sfax")  | [Sfax](https://en.wikipedia.org/wiki/Sfax_Governorate "Sfax Governorate")  | 341,999  |  
+| 3  | [Sousse](https://en.wikipedia.org/wiki/Sousse "Sousse")  | [Sousse](https://en.wikipedia.org/wiki/Sousse_Governorate "Sousse Governorate")  | 314,071  |  
+| 4  | [Ettadhamen-Mnihla](https://en.wikipedia.org/wiki/Ettadhamen-Mnihla "Ettadhamen-Mnihla")  | [Ariana](https://en.wikipedia.org/wiki/Ariana_Governorate "Ariana Governorate")  | 196,298  |  
+| 5  | [Kairouan](https://en.wikipedia.org/wiki/Kairouan "Kairouan")  | [Kairouan](https://en.wikipedia.org/wiki/Kairouan_Governorate "Kairouan Governorate")  | 186,653  |  
+| 6  | [Gabès](https://en.wikipedia.org/wiki/Gab%C3%A8s "Gabès")  | [Gabès](https://en.wikipedia.org/wiki/Gab%C3%A8s_Governorate "Gabès Governorate")  | 152,921  |  
+| 7  | [Bizerte](https://en.wikipedia.org/wiki/Bizerte "Bizerte")  | [Bizerte](https://en.wikipedia.org/wiki/Bizerte_Governorate "Bizerte Governorate")  | 142,966  |  
+| 8  | [La Soukra](https://en.wikipedia.org/wiki/La_Soukra "La Soukra")  | [Ariana](https://en.wikipedia.org/wiki/Ariana_Governorate "Ariana Governorate")  | 129,693  |  
+| 9  | [Aryanah](https://en.wikipedia.org/wiki/Aryanah "Aryanah")  | [Ariana](https://en.wikipedia.org/wiki/Ariana_Governorate "Ariana Governorate")  | 123,079  |  
+| 10  | [Sakiet Eddaïer](https://en.wikipedia.org/wiki/Sakiet_Edda%C3%AFer "Sakiet Eddaïer")  | [Sfax](https://en.wikipedia.org/wiki/Sfax_Governorate "Sfax Governorate")  | 113,776  |  
+### Ethnic groups
+The first people known to history in what is now Tunisia were the [Berbers](https://en.wikipedia.org/wiki/Berbers "Berbers"). Numerous civilizations and peoples have invaded, migrated to, or have been assimilated into the population over the millennia, with influences of population from [Phoenicians](https://en.wikipedia.org/wiki/Phoenicians "Phoenicians")/[Carthaginians](https://en.wikipedia.org/wiki/Carthaginians "Carthaginians"), [Romans](https://en.wikipedia.org/wiki/Roman_Republic "Roman Republic"), [Vandals](https://en.wikipedia.org/wiki/Vandals "Vandals"), [Arabs](https://en.wikipedia.org/wiki/Arabs "Arabs"), [Spaniards](https://en.wikipedia.org/wiki/Spaniard "Spaniard"), [Ottoman Turks](https://en.wikipedia.org/wiki/Ottoman_Empire "Ottoman Empire") and [Janissaries](https://en.wikipedia.org/wiki/Janissaries "Janissaries"), and [French](https://en.wikipedia.org/wiki/French_people "French people"). There was a continuing inflow of nomadic [Arab tribes](https://en.wikipedia.org/wiki/Banu_Hilal "Banu Hilal") from the [Arabian Peninsula](https://en.wikipedia.org/wiki/Arabian_Peninsula "Arabian Peninsula").[[63]](https://en.wikipedia.org/wiki/Tunisia#cite_note-stearns-68)
+Tunisia's population is predominantly [Arab](https://en.wikipedia.org/wiki/Arabs "Arabs")-[Berber](https://en.wikipedia.org/wiki/Berbers "Berbers") or [Arabized](https://en.wikipedia.org/wiki/Arabization "Arabization") Berber (over 95%), with genetic studies showing dominant North African paternal lineages (E-M81 [haplogroup](https://en.wikipedia.org/wiki/Haplogroup "Haplogroup") ~71%) overlaid by Middle Eastern Arab input (J-M267 ~30–35%).[[209]](https://en.wikipedia.org/wiki/Tunisia#cite_note-215)[[210]](https://en.wikipedia.org/wiki/Tunisia#cite_note-216)[[211]](https://en.wikipedia.org/wiki/Tunisia#cite_note-217) The CIA World Factbook estimates Arabs 98%, Europeans 1%, and [Jews](https://en.wikipedia.org/wiki/Jews "Jews")/other 1%, but no official ethnic census has been conducted since 1956 (which recorded 95% Arabs/Berbers, 7% Europeans, 3% Jews), and current minorities include ~1,000–1,500 Jews (mainly Djerba) and untracked Black Tunisians (est. 10–15% in south).[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15)[[212]](https://en.wikipedia.org/wiki/Tunisia#cite_note-WJC-218)[[213]](https://en.wikipedia.org/wiki/Tunisia#cite_note-219)[[214]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Popber1p-220)
+Black Tunisians are mostly descended from [sub-Saharan Africans](https://en.wikipedia.org/wiki/Sub-Saharan_Africa "Sub-Saharan Africa") brought to Tunisia as part of the [slave trade](https://en.wikipedia.org/wiki/Slavery_in_Tunisia "Slavery in Tunisia").[[215]](https://en.wikipedia.org/wiki/Tunisia#cite_note-AJrev-221)[[216]](https://en.wikipedia.org/wiki/Tunisia#cite_note-222)[[217]](https://en.wikipedia.org/wiki/Tunisia#cite_note-223)
+[Amazighs](https://en.wikipedia.org/wiki/Amazighs "Amazighs") are generally concentrated in the [Dahar mountains](https://en.wikipedia.org/wiki/Jebel_Dahar "Jebel Dahar") and on the island of [Djerba](https://en.wikipedia.org/wiki/Djerba "Djerba") in the southeast, and in the [Khroumire](https://en.wikipedia.org/wiki/Khroumire "Khroumire") mountainous region in the north-west. An important number of genetic and other historical studies point to the predominance of the Amazighs in Tunisia.[[218]](https://en.wikipedia.org/wiki/Tunisia#cite_note-224)
+An [Ottoman](https://en.wikipedia.org/wiki/Ottoman_Empire "Ottoman Empire") influence has been particularly significant in forming the [Turco-Tunisian](https://en.wikipedia.org/wiki/Turks_in_Tunisia "Turks in Tunisia") community. Other peoples have also migrated to Tunisia during different time periods, including West Africans, [Greeks](https://en.wikipedia.org/wiki/Greeks "Greeks"), [Romans](https://en.wikipedia.org/wiki/Ancient_Rome "Ancient Rome"), [Vandals](https://en.wikipedia.org/wiki/Vandals "Vandals"), [Phoenicians](https://en.wikipedia.org/wiki/Phoenicians "Phoenicians") ([Punics](https://en.wikipedia.org/wiki/Punic "Punic")), [Jews](https://en.wikipedia.org/wiki/Jews "Jews"), and French and Italians.[[219]](https://en.wikipedia.org/wiki/Tunisia#cite_note-225) By 1870, the distinction between the Arabic-speaking population and the Turkish elite had blurred.[[220]](https://en.wikipedia.org/wiki/Tunisia#cite_note-226)
+After the [Reconquista](https://en.wikipedia.org/wiki/Reconquista "Reconquista") and expulsion of non-Christians and [Moriscos](https://en.wikipedia.org/wiki/Morisco "Morisco") from Spain, many Spanish [Muslims](https://en.wikipedia.org/wiki/Muslims "Muslims") and Jews arrived in Tunisia. According to Matthew Carr, "As many as eighty thousand Moriscos settled in Tunisia, most of them in and around the capital, Tunis, which still contains a quarter known as Zuqaq al-Andalus, or Andalusia Alley."[[221]](https://en.wikipedia.org/wiki/Tunisia#cite_note-227)
+From the late 19th century to the period after World War II, Tunisia was home to large populations of [French](https://en.wikipedia.org/wiki/French_people "French people") and [Italians](https://en.wikipedia.org/wiki/Italian_Tunisians "Italian Tunisians") (255,000 [Europeans](https://en.wikipedia.org/wiki/European_Tunisians "European Tunisians") in 1956),[[222]](https://en.wikipedia.org/wiki/Tunisia#cite_note-228) although nearly all of them, along with the Jewish population, left after Tunisia became independent. The [history of the Jews in Tunisia](https://en.wikipedia.org/wiki/History_of_the_Jews_in_Tunisia "History of the Jews in Tunisia") goes back some 2,000 years. In 1948, the Jewish population was estimated at 105,000, but by 2013 only about 1000 remained.[[223]](https://en.wikipedia.org/wiki/Tunisia#cite_note-229)
+### Languages
+Main article: [Languages of Tunisia](https://en.wikipedia.org/wiki/Languages_of_Tunisia "Languages of Tunisia")
+[Arabic](https://en.wikipedia.org/wiki/Arabic "Arabic") is the [official language](https://en.wikipedia.org/wiki/Official_language "Official language") of Tunisia. [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic"), known as Tounsi,[[224]](https://en.wikipedia.org/wiki/Tunisia#cite_note-sayahi-230) is the national, vernacular [variety of Arabic](https://en.wikipedia.org/wiki/Varieties_of_Arabic "Varieties of Arabic") used by the public.[[225]](https://en.wikipedia.org/wiki/Tunisia#cite_note-231) There is also a small minority of speakers of [Berber languages](https://en.wikipedia.org/wiki/Berber_language "Berber language") known collectively as Jebbali or Shelha in the country. Actively spoken Berber languages are [Jerba Berber](https://en.wikipedia.org/wiki/Jerba_Berber "Jerba Berber") on the island of [Djerba](https://en.wikipedia.org/wiki/Djerba "Djerba") and [Matmata Berber](https://en.wikipedia.org/wiki/Matmata_Berber "Matmata Berber") in the city of [Matmata](https://en.wikipedia.org/wiki/Matmata,_Tunisia "Matmata, Tunisia"). The [Sened language](https://en.wikipedia.org/wiki/Sened_language "Sened language") is extinct.[[226]](https://en.wikipedia.org/wiki/Tunisia#cite_note-232)[[227]](https://en.wikipedia.org/wiki/Tunisia#cite_note-233) Speakers of [Berber dialects](https://en.wikipedia.org/wiki/Berber_languages "Berber languages") were 2% of the population.[[228]](https://en.wikipedia.org/wiki/Tunisia#cite_note-234)
+[French](https://en.wikipedia.org/wiki/French_language "French language") also plays a major role in Tunisian society, despite having no official status. It is widely used in education (e.g., as the language of instruction in the sciences in secondary school), the press, and business. In 2022, there were 6,321,000 French-speakers in Tunisia, or about 52% of the population.[[229]](https://en.wikipedia.org/wiki/Tunisia#cite_note-235) [Italian](https://en.wikipedia.org/wiki/Italian_language "Italian language") is understood and spoken by a small part of the [Tunisian](https://en.wikipedia.org/wiki/Tunisian_people "Tunisian people") population.[[230]](https://en.wikipedia.org/wiki/Tunisia#cite_note-236) Shop signs, menus and road signs in Tunisia are generally written in both Arabic and French.[[231]](https://en.wikipedia.org/wiki/Tunisia#cite_note-237)
+### Religion
+Main article: [Religion in Tunisia](https://en.wikipedia.org/wiki/Religion_in_Tunisia "Religion in Tunisia")
+Religion in Tunisia ([ARDA](https://en.wikipedia.org/wiki/Association_of_Religion_Data_Archives "Association of Religion Data Archives") 2020 est.)[[232]](https://en.wikipedia.org/wiki/Tunisia#cite_note-238)
+  1. [Sunni](https://en.wikipedia.org/wiki/Sunni "Sunni") (97.5%)
+  2. [Other Muslim](https://en.wikipedia.org/wiki/Islam "Islam") (2.00%)
+  3. [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity") (0.20%)
+  4. [None](https://en.wikipedia.org/wiki/Irreligion "Irreligion") (0.27%)
+  5. Other (0.03%)
+
+
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mosqu%C3%A9e_Zitouna_Kassus-2.jpg/250px-Mosqu%C3%A9e_Zitouna_Kassus-2.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Mosqu%C3%A9e_Zitouna_Kassus-2.jpg)[Al-Zaytuna Mosque](https://en.wikipedia.org/wiki/Al-Zaytuna_Mosque "Al-Zaytuna Mosque") in Tunis
+Tunisia's constitution declares [Islam](https://en.wikipedia.org/wiki/Islam "Islam") as the official [state religion](https://en.wikipedia.org/wiki/State_religion "State religion")—and the absolute majority of its population, or around 98%, report to be [Muslims](https://en.wikipedia.org/wiki/Muslims "Muslims"), while some 2% follow predominantly [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity") or [Judaism](https://en.wikipedia.org/wiki/Judaism "Judaism").[[14]](https://en.wikipedia.org/wiki/Tunisia#cite_note-CIA-15) According to a 2018 survey conducted by the [Arab Barometer](https://en.wikipedia.org/wiki/Arab_Barometer "Arab Barometer"), the vast majority of Tunisians (99.4%) continue to identify as Muslim.[[233]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:0-239) The survey also found that more than one third of Tunisians identify as non-religious. The percentage of Tunisians identifying themselves as non-religious has recently increased from around 12% in 2013 to around 33% in 2018, making Tunisia the least religious country in the Arab world.[[234]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:The_Arab_world_in_seven_charts-240) Nearly half of young Tunisians described themselves as non-religious, according to that same survey.[[235]](https://en.wikipedia.org/wiki/Tunisia#cite_note-arabbarometer.org-241) However, as of July 2022, new surveys by the Arab Barometer say otherwise, particularly BBC's programme, _The Newsroom_ journalists highlighting that the previously noted wave of those saying they were not religious has been, in fact, "reversed".[[236]](https://en.wikipedia.org/wiki/Tunisia#cite_note-242) The most recent 2021 Arab Barometer survey reported that 44% of Tunisians consider themselves religious, 37% somewhat religious, and 19% non-religious.[[233]](https://en.wikipedia.org/wiki/Tunisia#cite_note-:0-239)
+Tunisians enjoy a significant degree of religious freedom, a right enshrined and protected in its constitution, which guarantees the freedom of thoughts, beliefs and to practice one's religion.[[237]](https://en.wikipedia.org/wiki/Tunisia#cite_note-irfrtun-243) The country has a secular culture where religion is separated from not only political, but also public life. Individual Tunisians are tolerant of religious freedom and generally do not inquire about a person's personal beliefs.[[237]](https://en.wikipedia.org/wiki/Tunisia#cite_note-irfrtun-243)
+The bulk of Tunisians belong to the [Maliki school](https://en.wikipedia.org/wiki/Maliki "Maliki") of [Sunni Islam](https://en.wikipedia.org/wiki/Sunni_Islam "Sunni Islam"), and their [mosques](https://en.wikipedia.org/wiki/Mosques "Mosques") are easily recognizable by square minarets. However, the [Turks](https://en.wikipedia.org/wiki/Turkish_people "Turkish people") brought with them the teaching of the [Hanafi school](https://en.wikipedia.org/wiki/Hanafi "Hanafi") during [Ottoman rule](https://en.wikipedia.org/wiki/Ottoman_Empire "Ottoman Empire"), which still survives among [families of Turkish descent](https://en.wikipedia.org/wiki/Turks_in_Tunisia "Turks in Tunisia") today; their mosques traditionally have octagonal minarets.[[238]](https://en.wikipedia.org/wiki/Tunisia#cite_note-244) Sunnis form the majority, with [non-denominational Muslims](https://en.wikipedia.org/wiki/Non-denominational_Muslims "Non-denominational Muslims") being the second largest group of Muslims,[[239]](https://en.wikipedia.org/wiki/Tunisia#cite_note-245)[_[full citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources#What_information_to_include "Wikipedia:Citing sources")_] followed by [Ibadite](https://en.wikipedia.org/wiki/Ibadite "Ibadite") [Amazighs](https://en.wikipedia.org/wiki/Amazigh "Amazigh").[[240]](https://en.wikipedia.org/wiki/Tunisia#cite_note-246)[[241]](https://en.wikipedia.org/wiki/Tunisia#cite_note-247)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Catedral_de_Tunis_%282413055515%29.jpg/250px-Catedral_de_Tunis_%282413055515%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Catedral_de_Tunis_\(2413055515\).jpg)[Cathedral of St. Vincent de Paul](https://en.wikipedia.org/wiki/Cathedral_of_St._Vincent_de_Paul "Cathedral of St. Vincent de Paul"), [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis")
+The [Church of Carthage](https://en.wikipedia.org/wiki/Church_of_Carthage "Church of Carthage"), in particular, became significant in the [history of Christianity](https://en.wikipedia.org/wiki/History_of_Christianity "History of Christianity"), playing a key role in the development of [Christian philosophy](https://en.wikipedia.org/wiki/Christian_philosophy "Christian philosophy") and [theology](https://en.wikipedia.org/wiki/Theology "Theology"), and producing many prominent religious scholars and theologians.[[242]](https://en.wikipedia.org/wiki/Tunisia#cite_note-248) Prior to independence, Tunisia was home to more than [250,000 Christians](https://en.wikipedia.org/wiki/European_Tunisians "European Tunisians") (mostly of Italian and Maltese ancestry).[[243]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Decolonization-249) Many Christian Italian settlers left to Italy or France after independence from France.[[244]](https://en.wikipedia.org/wiki/Tunisia#cite_note-250) Today, Tunisia's sizable [Christian](https://en.wikipedia.org/wiki/Christians "Christians") community of something over 35,000[[245]](https://en.wikipedia.org/wiki/Tunisia#cite_note-251)[[246]](https://en.wikipedia.org/wiki/Tunisia#cite_note-252) is composed mainly of [Catholics](https://en.wikipedia.org/wiki/Catholics "Catholics") (22,000), and to a lesser degree [Protestants](https://en.wikipedia.org/wiki/Protestantism "Protestantism"). [Berber Christians](https://en.wikipedia.org/wiki/Berber_Christians "Berber Christians") continued to live in some [Nefzaoua](https://en.wikipedia.org/wiki/Nefzaoua "Nefzaoua") villages up until the early fifteenth century,[[247]](https://en.wikipedia.org/wiki/Tunisia#cite_note-253) and the community of [Tunisian Christians](https://en.wikipedia.org/wiki/Christianity_in_Africa "Christianity in Africa") existed in the town of [Tozeur](https://en.wikipedia.org/wiki/Tozeur "Tozeur") up to the 18th century.[[69]](https://en.wikipedia.org/wiki/Tunisia#cite_note-hrbek-74) The International Religious Freedom Report for 2007 estimates that thousands of Tunisian Muslims have [converted to Christianity](https://en.wikipedia.org/wiki/Conversion_to_Christianity "Conversion to Christianity").[[248]](https://en.wikipedia.org/wiki/Tunisia#cite_note-report-254)[[249]](https://en.wikipedia.org/wiki/Tunisia#cite_note-255)
+[Judaism](https://en.wikipedia.org/wiki/Judaism "Judaism") is the third largest religion, with between 1,000 and 1,400 members.[[250]](https://en.wikipedia.org/wiki/Tunisia#cite_note-256)[[251]](https://en.wikipedia.org/wiki/Tunisia#cite_note-257) One third of the Jewish population lives in and around the capital. The remainder lives on the island of [Djerba](https://en.wikipedia.org/wiki/Djerba "Djerba") with 39 synagogues where the Jewish community dates back 2,600 years,[[252]](https://en.wikipedia.org/wiki/Tunisia#cite_note-258) in Sfax, and in Hammam-Lif.[[237]](https://en.wikipedia.org/wiki/Tunisia#cite_note-irfrtun-243) Djerba, an island in the [Gulf of Gabès](https://en.wikipedia.org/wiki/Gulf_of_Gab%C3%A8s "Gulf of Gabès"), is home to [El Ghriba synagogue](https://en.wikipedia.org/wiki/El_Ghriba_synagogue "El Ghriba synagogue"), which is one of the [oldest synagogues in the world](https://en.wikipedia.org/wiki/Oldest_synagogues_in_the_World "Oldest synagogues in the World") and the oldest continuously used. Many Jews consider it a pilgrimage site, with celebrations taking place there once a year due to its age and the legend that the synagogue was built using stones from [Solomon's Temple](https://en.wikipedia.org/wiki/Solomon's_Temple "Solomon's Temple").[[253]](https://en.wikipedia.org/wiki/Tunisia#cite_note-259) Although [antisemitic](https://en.wikipedia.org/wiki/Antisemitism_in_Tunisia "Antisemitism in Tunisia") violence has been reported,[[254]](https://en.wikipedia.org/wiki/Tunisia#cite_note-260) Tunisia and [Morocco](https://en.wikipedia.org/wiki/Morocco "Morocco") are said to be the Arab countries most accepting of their Jewish populations.[[255]](https://en.wikipedia.org/wiki/Tunisia#cite_note-261)
+There is also a [Baháʼí Faith](https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith "Baháʼí Faith") community.[[256]](https://en.wikipedia.org/wiki/Tunisia#cite_note-262)
+### Education
+Main article: [Education in Tunisia](https://en.wikipedia.org/wiki/Education_in_Tunisia "Education in Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coll%C3%A8ge_Sadiki-Kassus.jpg/250px-Coll%C3%A8ge_Sadiki-Kassus.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Coll%C3%A8ge_Sadiki-Kassus.jpg)[Sadiki College](https://en.wikipedia.org/wiki/Sadiki_College "Sadiki College") in [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis") [![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/UIS_Literacy_Rate_Tunisia_population_plus15_1985_2015.png/250px-UIS_Literacy_Rate_Tunisia_population_plus15_1985_2015.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:UIS_Literacy_Rate_Tunisia_population_plus15_1985_2015.png)Literacy rate of Tunisia population, 15 years and older, 1985–2015. UNESCO Institute of Statistics
+The total adult literacy rate in 2008 was 78%[[257]](https://en.wikipedia.org/wiki/Tunisia#cite_note-unescolit-263) and this rate goes up to 97.3% when considering only people from 15 to 24 years old.[[258]](https://en.wikipedia.org/wiki/Tunisia#cite_note-264)[_[full citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources#What_information_to_include "Wikipedia:Citing sources")_] Education is given a high priority and accounts for 6% of [GNP](https://en.wikipedia.org/wiki/Gross_national_product "Gross national product"). A basic education for children between the ages of 6 and 16 has been compulsory since 1991. Tunisia ranked 17th in the category of "quality of the [higher] educational system" and 21st in the category of "quality of primary education" in [The Global Competitiveness Report](https://en.wikipedia.org/wiki/The_Global_Competitiveness_Report "The Global Competitiveness Report") 2008–09, released by the World Economic Forum.[[259]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Weforum.org-265)
+While children generally acquire [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic") at home, when they enter school at age six, they are taught to read and write in [Standard Arabic](https://en.wikipedia.org/wiki/Standard_Arabic "Standard Arabic"). From the age of 8, they are taught French while English is introduced at the age of 11.[[260]](https://en.wikipedia.org/wiki/Tunisia#cite_note-266)
+The four years of secondary education are open to all holders of Diplôme de Fin d'Études de l'Enseignement de Base[[259]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Weforum.org-265)
+## Culture
+Main article: [Culture of Tunisia](https://en.wikipedia.org/wiki/Culture_of_Tunisia "Culture of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Le_th%C3%A9%C3%A2tre_de_Tunis_%283301451272%29.jpg/250px-Le_th%C3%A9%C3%A2tre_de_Tunis_%283301451272%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Le_th%C3%A9%C3%A2tre_de_Tunis_\(3301451272\).jpg)Municipal Theatre
+The culture of Tunisia is mixed due to its long established history of outside influence from people – such as Phoenicians, Romans, Vandals, Byzantines, Arabs, Siculo-Normans, Turks, Italians, Maltese and the French – who all left their mark on the country.[[261]](https://en.wikipedia.org/wiki/Tunisia#cite_note-Rombaldi-267)
+### Painting
+The birth of Tunisian contemporary painting is strongly linked to the School of Tunis, established by a group of artists from Tunisia united by the desire to incorporate native themes and rejecting the influence of Orientalist colonial painting. It was founded in 1949 and brings together French and Tunisian Muslims, Christians and Jews. Pierre Boucherle was its main instigator, along with [Yahia Turki](https://en.wikipedia.org/wiki/Yahia_Turki "Yahia Turki"), [Abdelaziz Gorgi](https://en.wikipedia.org/wiki/Abdelaziz_Gorgi "Abdelaziz Gorgi"), Moses Levy, Ammar Farhat, and Jules Lellouche. Given its doctrine, some members have therefore turned to the sources of aesthetic Arab-Muslim art, such as miniature Islamic architecture, etc. Expressionist paintings by Amara Debbache, Jellal Ben Abdallah, and Ali Ben Salem are recognized while abstract art captures the imagination of painters like Edgar Naccache, Nello Levy, and [Hedi Turki](https://en.wikipedia.org/wiki/Hedi_Turki "Hedi Turki").[[262]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tangka3-268)
+After independence in 1956, the art movement in Tunisia was propelled by the dynamics of nation building and by artists serving the state. A Ministry of Culture was established, under the leadership of ministers such as [Habib Boularès](https://en.wikipedia.org/wiki/Habib_Boular%C3%A8s "Habib Boularès") who oversaw art and education and power.[[262]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tangka3-268) Artists gained international recognition such as [Hatem El Mekki](https://en.wikipedia.org/wiki/Hatem_El_Mekki "Hatem El Mekki") or [Zoubeir Turki](https://en.wikipedia.org/wiki/Zoubeir_Turki "Zoubeir Turki") and influenced a generation of new young painters. Sadok Gmech draws his inspiration from national wealth while Moncef Ben Amor turns to fantasy. In another development, Youssef Rekik reused the technique of painting on glass and founded [Nja Mahdaoui](https://en.wikipedia.org/wiki/Nja_Mahdaoui "Nja Mahdaoui") calligraphy with its mystical dimension.[[262]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tangka3-268)
+There are currently fifty art galleries housing exhibitions of Tunisian and international artists.[[263]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tunisia_online-269) These galleries include Gallery Yahia in Tunis and Carthage Essaadi gallery.[[263]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tunisia_online-269)
+A new exposition opened in an old monarchal palace in Bardo dubbed the "awakening of a nation". The exposition boasts documents and artifacts from the Tunisian reformist monarchial rule in mid-19th century.[[264]](https://en.wikipedia.org/wiki/Tunisia#cite_note-270)
+### Literature
+Main article: [Tunisian literature](https://en.wikipedia.org/wiki/Tunisian_literature "Tunisian literature")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Abdelwahab_Meddeb_-_Com%C3%A9die_du_Livre_2011_-_Montpellier_-_P1150907.jpg/250px-Abdelwahab_Meddeb_-_Com%C3%A9die_du_Livre_2011_-_Montpellier_-_P1150907.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Abdelwahab_Meddeb_-_Com%C3%A9die_du_Livre_2011_-_Montpellier_-_P1150907.jpg)[Abdelwahab Meddeb](https://en.wikipedia.org/wiki/Abdelwahab_Meddeb "Abdelwahab Meddeb"), a Tunisian French-language poet and novelist
+Tunisian literature exists in two forms: Arabic and French. Arabic literature dates back to the 7th century with the arrival of Arab civilization in the region. It is more important in both volume and value than French literature, which was introduced during the French protectorate from 1881.[[265]](https://en.wikipedia.org/wiki/Tunisia#cite_note-271)
+Among the literary figures include [Ali Douagi](https://en.wikipedia.org/wiki/Ali_Douagi "Ali Douagi"), who has produced more than 150 radio stories, over 500 poems and folk songs and nearly 15 plays,[[266]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tangka2-272) Khraief Bashir, an Arabic novelist who published many notable books in the 1930s and which caused a scandal because the dialogues were written in Tunisian dialect,[[266]](https://en.wikipedia.org/wiki/Tunisia#cite_note-tangka2-272) and others such as Moncef Ghachem, [Mohamed Salah Ben Mrad](https://en.wikipedia.org/wiki/Mohamed_Salah_Ben_Mrad "Mohamed Salah Ben Mrad"), or [Mahmoud Messadi](https://en.wikipedia.org/wiki/Mahmoud_Messadi "Mahmoud Messadi").
+As for poetry, Tunisian poetry typically opts for nonconformity and innovation with poets such as [Aboul-Qacem Echebbi](https://en.wikipedia.org/wiki/Aboul-Qacem_Echebbi "Aboul-Qacem Echebbi").
+As for literature in French, it is characterized by its critical approach. Contrary to the pessimism of [Albert Memmi](https://en.wikipedia.org/wiki/Albert_Memmi "Albert Memmi"), who predicted that Tunisian literature was sentenced to die young,[[267]](https://en.wikipedia.org/wiki/Tunisia#cite_note-273) a high number of Tunisian writers are abroad including [Abdelwahab Meddeb](https://en.wikipedia.org/wiki/Abdelwahab_Meddeb "Abdelwahab Meddeb"), Bakri Tahar, [Mustapha Tlili](https://en.wikipedia.org/wiki/Mustapha_Tlili "Mustapha Tlili"), Hele Beji, or Mellah Fawzi. Themes of wandering, exile, heartbreak, disconnection, memory, and representation are often focuses of Tunisian literature.[[268]](https://en.wikipedia.org/wiki/Tunisia#cite_note-274)[[269]](https://en.wikipedia.org/wiki/Tunisia#cite_note-275)
+The [national bibliography](https://en.wikipedia.org/wiki/National_bibliography "National bibliography") lists 1249 non-school books published in 2002 in Tunisia, with 885 titles in Arabic.[[270]](https://en.wikipedia.org/wiki/Tunisia#cite_note-litt%C3%A9rature-276) In 2006 this figure had increased to 1,500 and 1,700 in 2007.[[271]](https://en.wikipedia.org/wiki/Tunisia#cite_note-hzreal-277) Nearly a third of the books are published for children.[[272]](https://en.wikipedia.org/wiki/Tunisia#cite_note-278)
+### Music
+Main article: [Music of Tunisia](https://en.wikipedia.org/wiki/Music_of_Tunisia "Music of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Zied_Gharsa_et_la_Rachidia.jpg/250px-Zied_Gharsa_et_la_Rachidia.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Zied_Gharsa_et_la_Rachidia.jpg)Rachidia orchestra playing traditional music in Tunis Theater
+At the beginning of the 20th century, musical activity was dominated by the liturgical repertoire associated with different religious brotherhoods and secular repertoire which consisted of instrumental pieces and songs in different Andalusian forms and styles of origins, essentially borrowing characteristics of musical language. In 1930 [The Rachidia](https://en.wikipedia.org/wiki/The_Rachidia "The Rachidia") was founded, well known thanks to artists from the Jewish community. The founding in 1934 of a musical school helped revive Arab Andalusian music largely to a social and cultural revival led by the elite of the time who became aware of the risks of loss of the musical heritage and which they believed threatened the foundations of Tunisian national identity. The institution did not take long to assemble a group of musicians, poets, scholars. The creation of [Radio Tunis](https://en.wikipedia.org/wiki/Radio_Tunis "Radio Tunis") in 1938 allowed musicians a greater opportunity to disseminate their works, with the station employing a policy of promoting Tunisian musicians exclusively.[[273]](https://en.wikipedia.org/wiki/Tunisia#cite_note-279)
+Notable Tunisian musicians include [Saber Rebaï](https://en.wikipedia.org/wiki/Saber_Reba%C3%AF "Saber Rebaï"), [Dhafer Youssef](https://en.wikipedia.org/wiki/Dhafer_Youssef "Dhafer Youssef"), [Belgacem Bouguenna](https://en.wikipedia.org/wiki/Belgacem_Bouguenna "Belgacem Bouguenna"), [Sonia M'barek](https://en.wikipedia.org/wiki/Sonia_M'barek "Sonia M'barek"), [Latifa](https://en.wikipedia.org/wiki/Latifa_\(singer\) "Latifa \(singer\)"), [Salah El Mahdi](https://en.wikipedia.org/wiki/Salah_El_Mahdi "Salah El Mahdi"), [Anouar Brahem](https://en.wikipedia.org/wiki/Anouar_Brahem "Anouar Brahem"), [Emel Mathlouthi](https://en.wikipedia.org/wiki/Emel_Mathlouthi "Emel Mathlouthi") and [Lotfi Bouchnak](https://en.wikipedia.org/wiki/Lotfi_Bouchnak "Lotfi Bouchnak").
+### Festivals
+Main article: [List of festivals in Tunisia](https://en.wikipedia.org/wiki/List_of_festivals_in_Tunisia "List of festivals in Tunisia")
+Hundreds of international festivals, national, regional or local punctuate the calendar year. Music and theatrical festivals dominate the national cultural scene.
+Several festivals take place annually in summer: the [International Festival of Carthage](https://en.wikipedia.org/wiki/International_Festival_of_Carthage "International Festival of Carthage") in July, the International Festival of Arts of Mahr from late July to early August, and the International Festival of Hammamet in July and August.
+The [Carthage Film Festival](https://en.wikipedia.org/wiki/Carthage_Film_Festival "Carthage Film Festival") is held in October and November of every other year, alternating with the Carthage Theatre Festival. It was created in 1966[[274]](https://en.wikipedia.org/wiki/Tunisia#cite_note-280) by the Tunisian Minister of Culture to showcase films from the [Maghreb](https://en.wikipedia.org/wiki/Maghreb "Maghreb"), Africa and the Middle East. In order to be eligible for the competition, a film must have a director of African or Middle Eastern nationality, and have been produced at least two years before entry. The grand prize is the _[Tanit d'or](https://en.wikipedia.org/wiki/Tanit_d'or "Tanit d'or")_ , or "Golden Tanit", named for the [lunar goddess](https://en.wikipedia.org/wiki/Tanit "Tanit") of ancient [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage"); the award is in the shape of her symbol, a trapezium surmounted by a horizontal line and a circle.
+The [International Festival of the Sahara](https://en.wikipedia.org/wiki/International_Festival_of_the_Sahara "International Festival of the Sahara"), celebrated annually at the end of December, honors the cultural traditions associated with the Tunisian desert. This attracts many tourists and musicians from all around the world, as well as horsemen who flaunt their saddles and local fabrics and skills.
+There are also a number of musical festivals; some honor traditional Tunisian music, while others, including the [Tabarka Jazz Festival](https://en.wikipedia.org/wiki/Tabarka_Jazz_Festival "Tabarka Jazz Festival"), focus on other genres.
+In the city of Sousse, the [Carnival of Awussu](https://en.wikipedia.org/wiki/Carnival_of_Awussu "Carnival of Awussu") is an annual festive and cultural event that unfolds each 24 July. It is a parade of symbolic chariots, [fanfares](https://en.wikipedia.org/wiki/Fanfare "Fanfare") and folk groups from Tunisia and elsewhere which takes place near the beach of Boujaafar, at the eve of the beginning of '_Awussu_ (the word designating the [heat wave](https://en.wikipedia.org/wiki/Heat_wave "Heat wave") of the month of August according to the [Berber calendar](https://en.wikipedia.org/wiki/Berber_calendar "Berber calendar")). Originally it was a [Pagan](https://en.wikipedia.org/wiki/Pagan "Pagan") feast ([Neptunalia](https://en.wikipedia.org/wiki/Neptunalia "Neptunalia")) celebrating the god of the seas, [Neptune](https://en.wikipedia.org/wiki/Neptune_\(mythology\) "Neptune \(mythology\)") in the [Roman province of Africa](https://en.wikipedia.org/wiki/Roman_province_of_Africa "Roman province of Africa"), and might even go back to [Phoenician](https://en.wikipedia.org/wiki/Phoenicia "Phoenicia") times: the appellation Awussu is a possible deformation of [Oceanus](https://en.wikipedia.org/wiki/Oceanus "Oceanus").[[275]](https://en.wikipedia.org/wiki/Tunisia#cite_note-281)
+[Omek Tannou](https://en.wikipedia.org/wiki/Omek_Tannou "Omek Tannou") is an ancient Tunisian [rainmaking festival](https://en.wikipedia.org/wiki/Rainmaking_\(ritual\) "Rainmaking \(ritual\)") which was inherited from [Punic](https://en.wikipedia.org/wiki/Punic "Punic") and [Berber](https://en.wikipedia.org/wiki/Berbers "Berbers") traditions involving invocations of the goddess [Tanit](https://en.wikipedia.org/wiki/Tanit "Tanit"). It features the ritual use of the [sculpted](https://en.wikipedia.org/wiki/Sculpture "Sculpture") head of a woman (somewhat resembling the head of a girl's [doll](https://en.wikipedia.org/wiki/Doll "Doll")), which is carried in procession between the houses of a village during periods of [drought](https://en.wikipedia.org/wiki/Drought "Drought") by children singing the refrain أمك طانقو يا نساء طلبت ربي عالشتاء _amk ṭangu ya nsaʾ tlbt rbi ʿalshta'a_), "Amek tango, o women, ask God to rain". This song varies according to the region because the term _shta_ designates rain only in certain urban areas. Each housewife then pours a little water on the statuette, invoking rain.
+### Media
+Main article: [Media of Tunisia](https://en.wikipedia.org/wiki/Media_of_Tunisia "Media of Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/BatimentTelevisionTunisienneAvril2012.jpg/250px-BatimentTelevisionTunisienneAvril2012.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:BatimentTelevisionTunisienneAvril2012.jpg)Headquarters of [Télévision Tunisienne](https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_Tunisienne "Télévision Tunisienne") since March 2010
+The TV media has long remained under the domination of the [Establishment of the Broadcasting Authority Tunisia](https://en.wikipedia.org/wiki/ERTT "ERTT") (ERTT) and its predecessor, the Tunisian Radio and Television, founded in 1957. On 7 November 2006, President Zine el-Abidine Ben Ali announced the demerger of the business into two separate companies, which became effective on 31 August 2007. Until then, ERTT managed all public television stations ([Télévision Tunisienne 1](https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_Tunisienne_1 "Télévision Tunisienne 1") as well as Télévision Tunisienne 2 which had replaced the defunct RTT 2) and four national radio stations ([Radio Tunis](https://en.wikipedia.org/wiki/Radio_Tunis "Radio Tunis"), Tunisia Radio Culture, Youth and [RTCI](https://en.wikipedia.org/wiki/Radio_Tunis_Cha%C3%AEne_Internationale "Radio Tunis Chaîne Internationale")) and five regional stations in Sfax, Monastir, Gafsa, Le Kef and Tataouine. Most programs are in Arabic, but some are in French. Growth in private sector radio and television broadcasting has seen the creation of numerous operations including Radio Mosaique FM, Jawhara FM, Zaytuna FM, [Hannibal TV](https://en.wikipedia.org/wiki/Hannibal_TV "Hannibal TV"), Ettounsiya TV, and [Nessma TV](https://en.wikipedia.org/wiki/Nessma_TV "Nessma TV").[[276]](https://en.wikipedia.org/wiki/Tunisia#cite_note-282)[[277]](https://en.wikipedia.org/wiki/Tunisia#cite_note-283)
+In 2007, some 245 newspapers and magazines (compared to only 91 in 1987) are 90% owned by private groups and independents.[[278]](https://en.wikipedia.org/wiki/Tunisia#cite_note-284) The Tunisian political parties have the right to publish their own newspapers, but those of the opposition parties have very limited editions (like Al Mawkif or Mouwatinoun). Before the recent democratic transition, although freedom of the press was formally guaranteed by the constitution, almost all newspapers have in practice followed the government line report. Critical approach to the activities of the president, government and the Constitutional Democratic Rally Party (then in power) were suppressed. In essence, the media was dominated by state authorities through the [Agence Tunis Afrique Presse](https://en.wikipedia.org/wiki/Agence_Tunis_Afrique_Presse "Agence Tunis Afrique Presse"). This has changed since, as the media censorship by the authorities have been largely abolished, and self-censorship has significantly decreased.[[279]](https://en.wikipedia.org/wiki/Tunisia#cite_note-freedomhouse.org-285) Nonetheless, the current regulatory framework and social and political culture mean that the future of press and media freedom is still unclear.[[279]](https://en.wikipedia.org/wiki/Tunisia#cite_note-freedomhouse.org-285) In September 2022 Tunisian president Kais Saied signed [Decree Law 54](https://en.wikipedia.org/wiki/Decree_Law_54_\(Tunisia\) "Decree Law 54 \(Tunisia\)"), which purported to combat "[false information and rumours](https://en.wikipedia.org/wiki/Fake_news "Fake news")" on the Internet. Article 24 of the decree gives up to five years imprisonment and a fine of up to 50,000 [dinar](https://en.wikipedia.org/wiki/Tunisian_dinar "Tunisian dinar") for anyone found to be spreading such information. This is doubled if the offending statement is made about a state official.[[280]](https://en.wikipedia.org/wiki/Tunisia#cite_note-286)
+### Sports
+Main article: [Sport in Tunisia](https://en.wikipedia.org/wiki/Sport_in_Tunisia "Sport in Tunisia")
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/CA_-_Rad%C3%A8s.jpg/250px-CA_-_Rad%C3%A8s.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:CA_-_Rad%C3%A8s.jpg)[Stade Hammadi Agrebi](https://en.wikipedia.org/wiki/Stade_Olympique_Hammadi_Agrebi "Stade Olympique Hammadi Agrebi") in [Radès](https://en.wikipedia.org/wiki/Rad%C3%A8s "Radès")
+[Football](https://en.wikipedia.org/wiki/Association_football "Association football") is the most popular sport in Tunisia. The [Tunisia national football team](https://en.wikipedia.org/wiki/Tunisia_national_football_team "Tunisia national football team"), also known as "The Eagles of Carthage", won the [2004 African Cup of Nations](https://en.wikipedia.org/wiki/2004_African_Cup_of_Nations "2004 African Cup of Nations") ([ACN](https://en.wikipedia.org/wiki/Africa_Cup_of_Nations "Africa Cup of Nations")) as hosts.[[281]](https://en.wikipedia.org/wiki/Tunisia#cite_note-287)[[282]](https://en.wikipedia.org/wiki/Tunisia#cite_note-288) They also represented Africa in the [2005 FIFA Cup of Confederations](https://en.wikipedia.org/wiki/2005_FIFA_Confederations_Cup "2005 FIFA Confederations Cup"), which was held in Germany, but they could not go beyond the first round.
+Their premier football league is the [Tunisian Ligue Professionnelle 1](https://en.wikipedia.org/wiki/Tunisian_Ligue_Professionnelle_1 "Tunisian Ligue Professionnelle 1"). The main clubs are [Espérance Sportive de Tunis](https://en.wikipedia.org/wiki/Esp%C3%A9rance_Sportive_de_Tunis "Espérance Sportive de Tunis"), [Étoile Sportive du Sahel](https://en.wikipedia.org/wiki/%C3%89toile_Sportive_du_Sahel "Étoile Sportive du Sahel"), [Club Africain](https://en.wikipedia.org/wiki/Club_Africain "Club Africain"), [Club Sportif Sfaxien](https://en.wikipedia.org/wiki/Club_Sportif_Sfaxien "Club Sportif Sfaxien"), [Union Sportive Monastirienne](https://en.wikipedia.org/wiki/US_Monastir_\(football\) "US Monastir \(football\)"), [Stade Tunisien](https://en.wikipedia.org/wiki/Stade_Tunisien "Stade Tunisien"), and [CA Bizertin](https://en.wikipedia.org/wiki/CA_Bizertin "CA Bizertin").
+The [Tunisia men's national handball team](https://en.wikipedia.org/wiki/Tunisia_men's_national_handball_team "Tunisia men's national handball team") has participated in several handball world championships. In 2005, Tunisia came fourth. The [national league](https://en.wikipedia.org/wiki/Tunisian_Handball_League "Tunisian Handball League") consists of about 12 teams, with [Club Africain](https://en.wikipedia.org/wiki/Club_Africain_\(handball\) "Club Africain \(handball\)") and [Espérance](https://en.wikipedia.org/wiki/Esp%C3%A9rance_Sportive_de_Tunis_\(handball\) "Espérance Sportive de Tunis \(handball\)") dominating. The most famous Tunisian handball player is [Wissem Hmam](https://en.wikipedia.org/wiki/Wissem_Hmam "Wissem Hmam"). In the [2005 Handball Championship in Tunis](https://en.wikipedia.org/wiki/2005_World_Men's_Handball_Championship "2005 World Men's Handball Championship"), Wissem Hmam was ranked as the top scorer of the tournament. The Tunisian national handball team won the African Cup ten times, being the team dominating this competition. The Tunisians won the 2018 African Cup in Gabon by defeating Egypt.[[283]](https://en.wikipedia.org/wiki/Tunisia#cite_note-289)
+[Tunisia's national basketball team](https://en.wikipedia.org/wiki/Tunisia's_national_basketball_team "Tunisia's national basketball team") has emerged as a top side in Africa. The team won the [2011 Afrobasket](https://en.wikipedia.org/wiki/2011_Afrobasket "2011 Afrobasket") and hosted Africa's top basketball event in 1965, 1987 and 2015. Tunisia was one of the continent's pioneers in basketball as it established one of Africa's first competitive leagues.[[284]](https://en.wikipedia.org/wiki/Tunisia#cite_note-290)[[285]](https://en.wikipedia.org/wiki/Tunisia#cite_note-291)[[286]](https://en.wikipedia.org/wiki/Tunisia#cite_note-292)
+In [boxing](https://en.wikipedia.org/wiki/Boxing "Boxing"), [Victor "Young" Perez](https://en.wikipedia.org/wiki/Victor_Perez_\(Tunisian_boxer\) "Victor Perez \(Tunisian boxer\)") was world champion in the flyweight weight class in 1931 and 1932.[[287]](https://en.wikipedia.org/wiki/Tunisia#cite_note-293)
+In the [2008 Summer Olympics](https://en.wikipedia.org/wiki/2008_Summer_Olympics "2008 Summer Olympics"), Tunisian [Oussama Mellouli](https://en.wikipedia.org/wiki/Oussama_Mellouli "Oussama Mellouli") won a gold medal in 1500 meter freestyle.[[288]](https://en.wikipedia.org/wiki/Tunisia#cite_note-294) In the [2012 Summer Olympics](https://en.wikipedia.org/wiki/2012_Summer_Olympics "2012 Summer Olympics"), he won a bronze medal in the 1500 meter freestyle and a gold medal in the [men's marathon swim](https://en.wikipedia.org/wiki/Swimming_at_the_2012_Summer_Olympics_%E2%80%93_Men's_marathon_10_kilometre "Swimming at the 2012 Summer Olympics – Men's marathon 10 kilometre") at a distance of 10 kilometers.
+In 2012, Tunisia participated for the seventh time in its history in the [Summer Paralympic Games](https://en.wikipedia.org/wiki/Summer_Paralympic_Games "Summer Paralympic Games"). Their national team finished the competition with 19 medals; 9 golds, 5 silvers and 5 bronzes. Tunisia was classified 14th on the [Paralympics medal table](https://en.wikipedia.org/wiki/2012_Summer_Paralympics_medal_table "2012 Summer Paralympics medal table") and 5th in [Athletics](https://en.wikipedia.org/wiki/2012_Summer_Paralympics_medal_table "2012 Summer Paralympics medal table").
+Throughout the years 2021 to 2023, tennis saw a spike of popularity in Tunisia and other Arabic countries as tennis player [Ons Jabeur](https://en.wikipedia.org/wiki/Ons_Jabeur "Ons Jabeur") rapidly moved up the rankings reaching a career high ranking of number 3, and making 3 grand slam finals, including 2 at [Wimbledon](https://en.wikipedia.org/wiki/2023_Wimbledon_Championships "2023 Wimbledon Championships").
+## See also
+  * [Outline of Tunisia](https://en.wikipedia.org/wiki/Outline_of_Tunisia "Outline of Tunisia")
+  * [Architecture of Tunisia](https://en.wikipedia.org/wiki/Architecture_of_Tunisia "Architecture of Tunisia")
+
+
+## Notes
+  1. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-14 "Jump up") English is taught from fourth grade,[[12]](https://en.wikipedia.org/wiki/Tunisia#cite_note-12) and there is a notable increase in its usage among the youth and a growing demand in the workforce.[[13]](https://en.wikipedia.org/wiki/Tunisia#cite_note-13)
+  2. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-27 "Jump up") Pronunciation: [UK](https://en.wikipedia.org/wiki/British_English "British English"): , [US](https://en.wikipedia.org/wiki/American_English "American English"): ;[[25]](https://en.wikipedia.org/wiki/Tunisia#cite_note-26) [Arabic](https://en.wikipedia.org/wiki/Arabic_language "Arabic language"): تونس _[Tūnis](https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Tounes_bel_tounsi.wav/Tounes_bel_tounsi.wav.mp3 "Play audio")[ⓘ](https://en.wikipedia.org/wiki/File:Tounes_bel_tounsi.wav "File:Tounes bel tounsi.wav")_, pronounced [[tuː.nɪs]](https://en.wikipedia.org/wiki/Help:IPA/Arabic "Help:IPA/Arabic") [](https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e9/LL-Q56426_%28ary%29-Fenakhay-%D8%AA%D9%88%D9%86%D8%B3.wav/LL-Q56426_%28ary%29-Fenakhay-%D8%AA%D9%88%D9%86%D8%B3.wav.mp3 "Play audio")[ⓘ](https://en.wikipedia.org/wiki/File:LL-Q56426_\(ary\)-Fenakhay-%D8%AA%D9%88%D9%86%D8%B3.wav "File:LL-Q56426 \(ary\)-Fenakhay-تونس.wav")[French](https://en.wikipedia.org/wiki/French_language "French language"): _Tunisie_ pronounced [[ty.ni.zi]](https://en.wikipedia.org/wiki/Help:IPA/French "Help:IPA/French") [](https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b6/LL-Q150_%28fra%29-GrandCelinien-Tunisie.wav/LL-Q150_%28fra%29-GrandCelinien-Tunisie.wav.mp3 "Play audio")[ⓘ](https://en.wikipedia.org/wiki/File:LL-Q150_\(fra\)-GrandCelinien-Tunisie.wav "File:LL-Q150 \(fra\)-GrandCelinien-Tunisie.wav")
+  3. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-28 "Jump up") [Arabic](https://en.wikipedia.org/wiki/Arabic_language "Arabic language"): الجمهورية التونسية _[al-Jumhūrīya at-Tūnisīya](https://upload.wikimedia.org/wikipedia/commons/transcoded/4/45/Tounesjmr.wav/Tounesjmr.wav.mp3 "Play audio")[ⓘ](https://en.wikipedia.org/wiki/File:Tounesjmr.wav "File:Tounesjmr.wav")_; [French](https://en.wikipedia.org/wiki/French_language "French language"): _République tunisienne_ pronounced [[ʁe.py.blikty.ni.zjɛn]](https://en.wikipedia.org/wiki/Help:IPA/French "Help:IPA/French")
+  4. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-34 "Jump up") [Lebanon](https://en.wikipedia.org/wiki/Lebanon "Lebanon") and [Iraq](https://en.wikipedia.org/wiki/Iraq "Iraq") are [confessional democracies](https://en.wikipedia.org/wiki/Confessionalism_\(politics\) "Confessionalism \(politics\)").
+  5. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-50 "Jump up") The _[Encyclopædia Britannica](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica "Encyclopædia Britannica")_ reads "TUNIS, Regency of, formerly one of the Barbary states of north Africa, but since 1881 a dependency of France,..." in its 1875–1889 ninth edition,[[41]](https://en.wikipedia.org/wiki/Tunisia#cite_note-45) but a 1902–1903 supplement (the tenth edition) and its celebrated eleventh edition (which reads "TUNISIA (Regency of Tunis), a country of North Africa, under the protection of France,..."[[42]](https://en.wikipedia.org/wiki/Tunisia#cite_note-46)). The _[New International Encyclopedia](https://en.wikipedia.org/wiki/New_International_Encyclopedia "New International Encyclopedia")_ 1905 and 1916 editions read "TUNIS (Fr. _Tunisie_). A French protectorate in North Africa.",[[43]](https://en.wikipedia.org/wiki/Tunisia#cite_note-47)[[44]](https://en.wikipedia.org/wiki/Tunisia#cite_note-48) while the 1928 supplement reads "TUNIS or Tunisia. A French protectorate in North Africa..."[[45]](https://en.wikipedia.org/wiki/Tunisia#cite_note-49)
+  6. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-130 "Jump up") The new constitution, which increased presidential powers, was passed in a [referendum](https://en.wikipedia.org/wiki/2022_Tunisian_constitutional_referendum "2022 Tunisian constitutional referendum") the following year with a turnout of only around 30%, amidst a widespread boycott.
+
+
+## References
+  1. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-art1_1-0 "Jump up") ["Tunisian Constitution, Article 1"](https://web.archive.org/web/20140209234154/http://www.anc.tn/site/main/AR/docs/constit_proj_26012014.pdf) (PDF). 26 January 2014. Archived from [the original](http://www.anc.tn/site/main/AR/docs/constit_proj_26012014.pdf) (PDF) on 9 February 2014. Retrieved 10 February 2014. Translation by the University of Bern: "Tunisia is a free State, independent and sovereign; its religion is the Islam, its language is Arabic, and its form is the Republic."
+  2. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-2 "Jump up") [Arabic, Tunisian Spoken](http://www.ethnologue.com/language/aeb). Ethnologue (19 February 1999). Retrieved on 5 September 2015.
+  3. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-3 "Jump up") ["Atlas of the world's languages in danger: North Africa and the Middle East"](https://unesdoc.unesco.org/ark:/48223/pf0000212023).
+  4. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-4 "Jump up") ["Endangered Languages"](https://www.theguardian.com/news/datablog/2011/apr/15/language-extinct-endangered).
+  5. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-5 "Jump up") ["Tunisia Language Status"](https://www.ethnologue.com/country/TN/languages).
+  6. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-6 "Jump up") ["OLAC resources in and about the Nafusi language"](http://www.language-archives.org/language/jbn).
+  7. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-7 "Jump up") ["Language Classification"](https://glottolog.org/resource/languoid/id/nafu1238).
+  8. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-8 "Jump up") ["Languages of Tunisia"](https://www.britannica.com/place/Tunisia/Languages).
+  9. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-9 "Jump up") ["What Languages Are Spoken In Tunisia?"](https://www.worldatlas.com/articles/what-languages-are-spoken-in-tunisia.html).
+  10. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-10 "Jump up") Stone, Russell A.; Simmons, John (1976). [_Change in Tunisia: Studies in the Social Sciences_](https://books.google.com/books?id=QDq4YV0VT00C&q=Berber-speaking+migrant+communities&pg=PA109). SUNY Press. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[9780873953115](https://en.wikipedia.org/wiki/Special:BookSources/9780873953115 "Special:BookSources/9780873953115").
+  11. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-11 "Jump up") Gabsi, Z. (2003). [_An outline of the Shilha (Berber) vernacular of Douiret (Southern Tunisia)_](http://researchdirect.uws.edu.au/islandora/object/uws:573). PhD Thesis, Western Sydney University.
+  12. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-12 "Jump up") ["CurriculumOFENGLISH"](https://cnp.com.tn/arabic/PDF/CurriculumOFENGLISH.pdf) (PDF). 2019.
+  13. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-13 "Jump up") Abdeljaoued, Marii (2023). ["English-medium instruction in Tunisia: Perspectives of students"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10063842). _Frontiers in Psychology_. **14** 1112255. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.3389/fpsyg.2023.1112255](https://doi.org/10.3389%2Ffpsyg.2023.1112255). [PMC](https://en.wikipedia.org/wiki/PMC_\(identifier\) "PMC \(identifier\)")[10063842](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10063842). [PMID](https://en.wikipedia.org/wiki/PMID_\(identifier\) "PMID \(identifier\)")[37008855](https://pubmed.ncbi.nlm.nih.gov/37008855).
+  14. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-3) [5](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-4) [6](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-5) [7](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-6) [8](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-7) [9](https://en.wikipedia.org/wiki/Tunisia#cite_ref-CIA_15-8) ["Tunisia CIA World Factbook"](https://web.archive.org/web/20210110024851/https://www.cia.gov/the-world-factbook/countries/tunisia). 13 March 2024. Archived from [the original](https://www.cia.gov/the-world-factbook/countries/tunisia/) on 10 January 2021.
+  15. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-16 "Jump up") ["Berbers Populations Distribution"](https://news.bbc.co.uk/2/hi/africa/3509799.stm). 12 March 2004.
+  16. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-17 "Jump up") ["Q&A: The Berbers"](https://news.bbc.co.uk/2/hi/africa/3509799.stm). 12 March 2004.
+  17. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-18 "Jump up") ["The Jews of Tunisia"](http://www.pjvoice.com/v27/27006tunisia.aspx). _www.pjvoice.com_.
+  18. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-19 "Jump up") ["New survey reveals drop-off in religiosity across Arab world, especially North Africa"](https://www.middleeasteye.net/news/new-survey-reveals-drop-religiousity-across-arab-world-especially-north-africa).
+  19. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-20 "Jump up") ["2. Young adults around the world are less religious by several measures"](https://www.pewresearch.org/religion/2018/06/13/young-adults-around-the-world-are-less-religious-by-several-measures/). 13 June 2018.
+  20. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-21 "Jump up") ["National Institute of Statistics"](https://www.ins.tn/en/enquetes/population-and-housing-census-2024).
+  21. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-WEOD2504_22-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-WEOD2504_22-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-WEOD2504_22-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-WEOD2504_22-3) ["World Economic Outlook Database, April 2025"](https://www.imf.org/en/Publications/WEO/weo-database/2025/april).
+  22. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-23 "Jump up") ["GINI index"](http://data.worldbank.org/indicator/SI.POV.GINI/). World Bank. Retrieved 19 January 2013.
+  23. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-24 "Jump up") [_Human Development Report 2025 - A matter of choice: People and possibilities in the age of AI_](https://web.archive.org/web/20250506064128/https://hdr.undp.org/content/human-development-report-2025). United Nations Development Programme. 6 May 2025. Archived from [the original](https://hdr.undp.org/content/human-development-report-2025) on 6 May 2025. Retrieved 6 May 2025.
+  24. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-iana_25-0 "Jump up") ["Report on the Delegation of تونس"](https://web.archive.org/web/20120531054928/https://www.iana.org/reports/2010/tunis-report-16jul2010.html). Internet Corporation for Assigned Names and Numbers. 2010. Archived from [the original](https://www.iana.org/reports/2010/tunis-report-16jul2010.html) on 31 May 2012. Retrieved 8 November 2010.
+  25. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-26 "Jump up") Wells, John C. (2008), _Longman Pronunciation Dictionary_ (3rded.), Longman, [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-4058-8118-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-4058-8118-0 "Special:BookSources/978-1-4058-8118-0")
+  26. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-29 "Jump up") ["Embassy of the Republic of Tunisia"](https://www.tunisianembassy.org/). Embassy of the Republic of Tunisia. Retrieved 30 September 2021.
+  27. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-30 "Jump up") Holes, Clive (2018). [_Arabic Historical Dialectology: Linguistic and Sociolinguistic Approaches_](https://books.google.com/books?id=pzRtDwAAQBAJ). Oxford University Press. p.42. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-19-100506-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-100506-0 "Special:BookSources/978-0-19-100506-0").
+  28. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-31 "Jump up") ["Tunisie: les législatives fixées au 26 octobre et la présidentielle au 23 novembre"](http://www.jeuneafrique.com/Article/ARTJAWEB20140625141745/) [Tunisia: legislative elections fixed for 26 October and presidential elections for 23 November]. _Jeune Afrique_ (in French). 25 June 2014.
+  29. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-32 "Jump up") ["Tunisia holds first post-revolution presidential poll"](https://www.bbc.co.uk/news/world-africa-30165471). _BBC News_. 23 November 2014.
+  30. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-33 "Jump up") ["Democracy Index 2021"](https://infographics.economist.com/2022/democracy-index-2021/index.html). _The Economist_. Retrieved 22 February 2022.
+  31. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-35 "Jump up") ["Democracy Index 2021: The China challenge"](https://web.archive.org/web/20221108091515/https://www.eiu.com/n/campaigns/democracy-index-2021/). _Economist Intelligence Unit_. pp.6–7. Archived from [the original](https://www.eiu.com/n/campaigns/democracy-index-2021/) on 8 November 2022. Retrieved 2 March 2022.
+  32. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-36 "Jump up") ["Tunisia: Freedom in the World 2025 Country Report"](https://freedomhouse.org/country/tunisia/freedom-world/2025). _Freedom House_. Retrieved 3 November 2025.
+  33. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-37 "Jump up") (in French)["Pourquoi l'Italie de Matteo Renzi se tourne vers la Tunisie avant l'Europe"](http://www.jolpress.com/italie-matteo-renzi-tunisie-article-824677.html) (Why Matteo Renzi's Italy is turning to Tunisia before Europe). JOL Journalism Online Press (28 February 2014). [Archived](https://web.archive.org/web/20180810115035/http://www.jolpress.com/italie-matteo-renzi-tunisie-article-824677.html) 10 August 2018 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine")
+  34. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-38 "Jump up") Ghanmi, Monia (12 September 2014). ["La Tunisie renforce ses relations avec l'Italie"](https://web.archive.org/web/20140914025940/http://magharebia.com/fr/articles/awi/articles/2014/09/12/feature-02) [Tunisia strengthens relations with Italy]. _Magharebia_ (in French). Archived from [the original](http://magharebia.com/fr/articles/awi/articles/2014/09/12/feature-02) on 14 September 2014.
+  35. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Adrian_39-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Adrian_39-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Adrian_39-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Adrian_39-3) Room, Adrian (2006). ["Tunisia"](https://archive.org/details/placenamesofworl02edroom/page/385/mode/1up). _Placenames of the World: Origins and Meanings of the Names for 6,600 Countries, Cities, Territories, Natural Features, and Historic Sites_. McFarland. p.385. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7864-2248-7](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7864-2248-7 "Special:BookSources/978-0-7864-2248-7").
+  36. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-40 "Jump up") Everett-Heath, John (2005). ["Tunisia"](https://archive.org/details/concisedictionar0000ever/page/534/mode/1up). _The Concise Dictionary of World Place-names_. Oxford University Press. p.534. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-19-860537-9](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-860537-9 "Special:BookSources/978-0-19-860537-9").
+  37. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-peter-ross_41-0 "Jump up") Rossi, Peter M.; White, Wayne Edward (1980). _Articles on the Middle East, 1947–1971: A Cumulation of the Bibliographies from the Middle East Journal_. Pierian Press, [University of Michigan](https://en.wikipedia.org/wiki/University_of_Michigan "University of Michigan"). p.132.
+  38. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-42 "Jump up") Taylor, Isaac (2008). _Names and Their Histories: A Handbook of Historical Geography and Topographical Nomenclature_. BiblioBazaar, LLC. p.281. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-559-29668-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-559-29668-0 "Special:BookSources/978-0-559-29668-0").
+  39. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-ej-brill_43-0 "Jump up") Houtsma, Martijn Theodoor (1987). _E.J. Brill's First Encyclopaedia of Islam, 1913–1936_. Brill. p.838. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-90-04-08265-6](https://en.wikipedia.org/wiki/Special:BookSources/978-90-04-08265-6 "Special:BookSources/978-90-04-08265-6").
+  40. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-hann-war_44-0 "Jump up") [Livy](https://en.wikipedia.org/wiki/Livy "Livy") (2006). Yardley, John & Hoyos, Dexter (eds.). _[History of Rome](https://en.wikipedia.org/wiki/Ab_urbe_condita_\(Livy\) "Ab urbe condita \(Livy\)")_. Vol.Hannibal's War: Books Twenty-one to Thirty. Oxford University Press. p.705. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-19-283159-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-283159-0 "Special:BookSources/978-0-19-283159-0").
+  41. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-45 "Jump up") Baynes, T. S.; Smith, W. R., eds. (1888). ["Tunis, Regency of"](https://en.wikisource.org/wiki/Encyclop%C3%A6dia_Britannica,_Ninth_Edition/Tunis,_Regency_of). _[Encyclopædia Britannica](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica "Encyclopædia Britannica")_. Vol.XXIII (9thed.). New York: Charles Scribner's Sons. p.619.
+  42. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-46 "Jump up") [Chisholm, Hugh](https://en.wikipedia.org/wiki/Hugh_Chisholm "Hugh Chisholm"), ed. (1911). ["Tunisia"](https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tunisia). _[Encyclopædia Britannica](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Eleventh_Edition "Encyclopædia Britannica Eleventh Edition")_. Vol.XXVII (11thed.). Cambridge University Press. p.393.
+  43. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-47 "Jump up") ["Tunis"](https://archive.org/details/newinternational19gilm/page/535/mode/1up). _The New International Encyclopædia_. Vol.XIX. Dodd, Mead and Company. 1905. p.535.
+  44. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-48 "Jump up") ["Tunis"](https://babel.hathitrust.org/cgi/pt?id=njp.32101064517301&seq=617). _The New International Encyclopædia_. Vol.XXII. Dodd, Mead and Company. 1916. p.545.
+  45. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-49 "Jump up") ["Tunis"](https://archive.org/details/newinternational008261mbp/page/n454/mode/1up). _The New International Encyclopædia_. Vol.XXV. Dodd, Mead and Company. 1928. p.1311.
+  46. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-51 "Jump up") "Tunisian". _[Oxford English Dictionary](https://en.wikipedia.org/wiki/Oxford_English_Dictionary "Oxford English Dictionary")_. Vol.18 (2nded.). [Oxford University Press](https://en.wikipedia.org/wiki/Oxford_University_Press "Oxford University Press"). 1989. p.674. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[0-19-861230-3](https://en.wikipedia.org/wiki/Special:BookSources/0-19-861230-3 "Special:BookSources/0-19-861230-3").
+  47. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-52 "Jump up") "Tunisine". _[Oxford English Dictionary](https://en.wikipedia.org/wiki/Oxford_English_Dictionary "Oxford English Dictionary")_. Vol.18 (2nded.). [Oxford University Press](https://en.wikipedia.org/wiki/Oxford_University_Press "Oxford University Press"). 1989. p.674. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[0-19-861230-3](https://en.wikipedia.org/wiki/Special:BookSources/0-19-861230-3 "Special:BookSources/0-19-861230-3").
+  48. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-53 "Jump up") Banjamin Isaac, _The Invention of Racism in Classical Antiquity_ , Princeton University Press, 2013 p.147
+  49. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-54 "Jump up") ["Carthage and the Numidians"](https://web.archive.org/web/20120331154523/http://hannibalbarca.webspace.virginmedia.com/carthage-numidians.htm). Hannibalbarca.webspace.virginmedia.com. Archived from [the original](http://hannibalbarca.webspace.virginmedia.com/carthage-numidians.htm) on 31 March 2012. Retrieved 28 October 2011.
+  50. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-55 "Jump up") ["Numidians (DBA II/40) and Moors (DBA II/57)"](https://web.archive.org/web/20110927024947/http://www.fanaticus.org/DBA/armies/II40-57.html). Fanaticus.org. 12 December 2001. Archived from the original on 27 September 2011. Retrieved 28 October 2011.
+  51. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-56 "Jump up") ["Numidia (ancient region, Africa)"](http://www.britannica.com/EBchecked/topic/422426/Numidia). _Britannica Online Encyclopedia_. Retrieved 28 October 2011.
+  52. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-57 "Jump up") ["The City of Carthage: From Dido to the Arab Conquest"](https://web.archive.org/web/20120810075556/http://www.shca.ed.ac.uk/Administration/Committees/documents/TheCityofCarthage.pdf) (PDF). Archived from [the original](http://www.shca.ed.ac.uk/Administration/Committees/documents/TheCityofCarthage.pdf) (PDF) on 10 August 2012. Retrieved 8 January 2013.
+  53. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-58 "Jump up") [Appian](https://en.wikipedia.org/wiki/Appian "Appian"). [_The Punic Wars_](https://www.livius.org/sources/content/appian/appian-the-punic-wars/). livius.org
+  54. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-FOOTNOTESteel20139%E2%80%9310_59-0 "Jump up") [Steel 2013](https://en.wikipedia.org/wiki/Tunisia#CITEREFSteel2013), p.9–10.
+  55. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-60 "Jump up") ["Donatist"](http://www.britannica.com/EBchecked/topic/169009/Donatist). _Encyclopædia Britannica_.
+  56. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-61 "Jump up") Bury, John Bagnell (1958) _History of the Later Roman Empire from the Death of Theodosius I. to the Death of Justinian_ , Part 2, Courier Corporation. pp.124–148
+  57. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-62 "Jump up") Davidson, Linda Kay; Gitlitz, David Martin (2002). [_Pilgrimage: From the Ganges to Graceland: An Encyclopedia_](https://books.google.com/books?id=YVYkrNhPMQkC&pg=PA302). ABC-CLIO. p.302. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-57607-004-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-57607-004-8 "Special:BookSources/978-1-57607-004-8").
+  58. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-63 "Jump up") Bosworth, Clifford Edmund (2007). [_Historic Cities of the Islamic World_](https://books.google.com/books?id=UB4uSVt3ulUC&pg=PA264). Brill. p.264. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-90-04-15388-2](https://en.wikipedia.org/wiki/Special:BookSources/978-90-04-15388-2 "Special:BookSources/978-90-04-15388-2").
+  59. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-64 "Jump up") ["Kairouan inscription as World Heritage"](https://web.archive.org/web/20120422091651/http://www.kairouan.org/en/culture/unesco.htm). Kairouan.org. Archived from [the original](http://www.kairouan.org/en/culture/unesco.htm) on 22 April 2012. Retrieved 2 May 2010.
+  60. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-65 "Jump up") Jonathan Conant (2012). _Staying Roman, Conquest and Identity in Africa and the Mediterranean, 439–700_. Cambridge University Press. pp. 358–378. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-107-53072-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-107-53072-0 "Special:BookSources/978-1-107-53072-0")
+  61. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-lapidus_66-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-lapidus_66-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-lapidus_66-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-lapidus_66-3) Lapidus, Ira M. (2002). [_A History of Islamic Societies_](https://books.google.com/books?id=I3mVUEzm8xMC&pg=302). Cambridge University Press. pp.302–303. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-521-77933-3](https://en.wikipedia.org/wiki/Special:BookSources/978-0-521-77933-3 "Special:BookSources/978-0-521-77933-3").
+  62. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tunisia-lp_67-0 "Jump up") Ham, Anthony; Hole, Abigail; Willett, David. (2004). _Tunisia_ (3rded.). [Lonely Planet](https://en.wikipedia.org/wiki/Lonely_Planet "Lonely Planet"). p.65. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-74104-189-7](https://en.wikipedia.org/wiki/Special:BookSources/978-1-74104-189-7 "Special:BookSources/978-1-74104-189-7").
+  63. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-stearns_68-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-stearns_68-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-stearns_68-2) Stearns, Peter N.; Leonard Langer, William (2001). _The Encyclopedia of World History: Ancient, Medieval, and Modern, Chronologically Arranged_ (6thed.). [Houghton Mifflin Harcourt](https://en.wikipedia.org/wiki/Houghton_Mifflin_Harcourt "Houghton Mifflin Harcourt"). pp.129–131. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-395-65237-4](https://en.wikipedia.org/wiki/Special:BookSources/978-0-395-65237-4 "Special:BookSources/978-0-395-65237-4").
+  64. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-locfatamids_69-0 "Jump up") Houtsma, M. Th. (1987). [_E. J. Brill's First Encyclopaedia of Islam, 1913–1936_](https://books.google.com/books?id=wpM3AAAAIAAJ&pg=PA852). BRILL. p.852. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-90-04-08265-6](https://en.wikipedia.org/wiki/Special:BookSources/978-90-04-08265-6 "Special:BookSources/978-90-04-08265-6").
+  65. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-islamic-dynasties_70-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-islamic-dynasties_70-1) Singh, Nagendra Kr (2000). _International encyclopaedia of islamic dynasties_. Vol.4: A Continuing Series. Anmol. pp.105–112. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-81-261-0403-1](https://en.wikipedia.org/wiki/Special:BookSources/978-81-261-0403-1 "Special:BookSources/978-81-261-0403-1").
+  66. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-history-of-africa_71-0 "Jump up") Ki-Zerbo, J.; Mokhtar, G.; Boahen, A. Adu; Hrbek, I. (1992). _General history of Africa_. James Currey Publishers. pp.171–173. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-85255-093-9](https://en.wikipedia.org/wiki/Special:BookSources/978-0-85255-093-9 "Special:BookSources/978-0-85255-093-9").
+  67. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-72 "Jump up") Abulafia, _The Norman Kingdom of Africa_ , 27.
+  68. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-73 "Jump up") ["Populations Crises and Population Cycles, Claire Russell and W.M.S. Russell"](https://web.archive.org/web/20130527170154/http://www.galtoninstitute.org.uk/Newsletters/GINL9603/PopCrises3.htm). Galtoninstitute.org.uk. Archived from [the original](http://www.galtoninstitute.org.uk/Newsletters/GINL9603/PopCrises3.htm) on 27 May 2013. Retrieved 19 January 2013.
+  69. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-hrbek_74-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-hrbek_74-1) Hrbek, Ivan (1992). [_Africa from the Seventh to the Eleventh Century_](https://books.google.com/books?id=qDFcD0BuekQC&pg=PA34). UNESCO. International Scientific Committee for the Drafting of a General History of Africa. J. Currey. p.34. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[0-85255-093-6](https://en.wikipedia.org/wiki/Special:BookSources/0-85255-093-6 "Special:BookSources/0-85255-093-6").
+  70. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-75 "Jump up") Baadj, Amar (2013). ["Saladin and the Ayyubid Campaigns in the Maghrib"](https://doi.org/10.3989%2Falqantara.2013.010). _Al-Qanṭara_. **34** (2): 267–295. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.3989/alqantara.2013.010](https://doi.org/10.3989%2Falqantara.2013.010). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0211-3589](https://search.worldcat.org/issn/0211-3589).
+  71. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-76 "Jump up") Bosworth, Clifford Edmund (2004). [_The New Islamic Dynasties: A Chronological and Genealogical Manual_](https://books.google.com/books?id=mKpz_2CkoWEC&pg=PA46). Edinburgh University Press. p.46. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7486-2137-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7486-2137-8 "Special:BookSources/978-0-7486-2137-8").
+  72. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-77 "Jump up") Bosworth, Clifford Edmund (2004). [_The New Islamic Dynasties: A Chronological and Genealogical Manual_](https://books.google.com/books?id=mKpz_2CkoWEC&pg=PA55). Edinburgh University Press. p.55. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7486-2137-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7486-2137-8 "Special:BookSources/978-0-7486-2137-8").
+  73. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-78 "Jump up") Panzac, Daniel (2005). [_Barbary Corsairs: The End of a Legend, 1800–1820_](https://books.google.com/books?id=_dyeFP5Hyc4C&pg=PA309). BRILL. p.309. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-90-04-12594-0](https://en.wikipedia.org/wiki/Special:BookSources/978-90-04-12594-0 "Special:BookSources/978-90-04-12594-0").
+  74. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Clancy-Smith1997_79-0 "Jump up") Clancy-Smith, Julia A. (1997). [_Rebel and Saint: Muslim Notables, Populist Protest, Colonial Encounters (Algeria and Tunisia, 1800–1904)_](https://books.google.com/books?id=ApCtcGPHOxIC&pg=PA157). University of California Press. p.157. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-520-92037-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-520-92037-8 "Special:BookSources/978-0-520-92037-8").
+  75. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-80 "Jump up") Toussaint, Eric (13 June 2016). ["Debt: how France appropriated Tunisia"](https://web.archive.org/web/20250909061005/https://www.cadtm.org/Debt-how-France-appropriated). _CADTM_. Archived from [the original](https://www.cadtm.org/Debt-how-France-appropriated) on 9 September 2025. Retrieved 23 September 2025.
+  76. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-81 "Jump up") ["Modern History of the Arab Countries by Vladimir Borisovich Lutsky 1969"](https://www.marxists.org/subject/arab-world/lutsky/ch21.htm). _www.marxists.org_. Retrieved 23 September 2025.
+  77. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-82 "Jump up") Gearon, Eamonn (2011). [_The Sahara: A Cultural History_](https://books.google.com/books?id=TKh_21ZERH4C&pg=PA117). Oxford University Press. p.117. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-19-986195-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-986195-8 "Special:BookSources/978-0-19-986195-8").
+  78. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-83 "Jump up") Ion Smeaton Munro (1933). _Through fascism to world power: a history of the revolution in Italy_. A. Maclehose & co. p.221.
+  79. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-84 "Jump up") [Williamson, Gordon](https://en.wikipedia.org/wiki/Gordon_Williamson_\(writer\) "Gordon Williamson \(writer\)") (1991). [_Afrikakorps 1941–43_](https://books.google.com/books?id=h1c44ccxC_sC&pg=PA24). Osprey. p.24. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-85532-130-4](https://en.wikipedia.org/wiki/Special:BookSources/978-1-85532-130-4 "Special:BookSources/978-1-85532-130-4"). [Archived](https://web.archive.org/web/20140101065726/https://books.google.com/books?id=h1c44ccxC_sC&pg=PA24) from the original on 1 January 2014. Retrieved 20 June 2015.
+  80. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-85 "Jump up") Palmer, Michael A. (2010). [_The German Wars: A Concise History, 1859–1945_](https://books.google.com/books?id=4eHKE9NIwbMC&pg=PA199). Zenith Imprint. p.199. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7603-3780-6](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7603-3780-6 "Special:BookSources/978-0-7603-3780-6").
+  81. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-3) [5](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-4) [6](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-5) [7](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-6) [8](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:02_86-7) Rivlin, Benjamin (1952). "The Tunisian Nationalist Movement: Four Decades of Evolution". _Middle East Journal_. **6** (2): 167–193. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0026-3141](https://search.worldcat.org/issn/0026-3141). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR \(identifier\)")[4322381](https://www.jstor.org/stable/4322381).
+  82. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-3) [5](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-4) [6](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-5) [7](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:12_87-6) Houssi, Leila El (2017). "The History and Evolution of Independence Movements in Tunisia". _Oriente Moderno_. **97** (1): 67–88. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1163/22138617-12340139](https://doi.org/10.1163%2F22138617-12340139). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0030-5472](https://search.worldcat.org/issn/0030-5472). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR \(identifier\)")[48572291](https://www.jstor.org/stable/48572291).
+  83. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-2) [4](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-3) [5](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-4) [6](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-5) [7](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-6) [8](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:2_88-7) Levy, Henry L. (1955). "TUNISIA". _The American Jewish Year Book_. **56** : 435–445. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0065-8987](https://search.worldcat.org/issn/0065-8987). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR \(identifier\)")[23604900](https://www.jstor.org/stable/23604900).
+  84. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-89 "Jump up") ["Tunisia profile"](https://www.bbc.com/news/world-africa-14107720). _BBC News_. 1 November 2017. Retrieved 5 April 2020.
+  85. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-90 "Jump up") ["Tunisia Celebrates Independence Day"](https://allafrica.com/view/group/main/main/id/00016135.html). _[AllAfrica.com](https://en.wikipedia.org/wiki/AllAfrica.com "AllAfrica.com")_. 20 March 2012. [Archived](https://web.archive.org/web/20150708180546/https://allafrica.com/view/group/main/main/id/00016135.html) from the original on 8 July 2015. Retrieved 19 March 2019.
+  86. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-BBC_91-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-BBC_91-1) ["Habib Bourguiba: Father of Tunisia"](https://news.bbc.co.uk/2/hi/obituaries/703907.stm). BBC. 6 April 2000.
+  87. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-92 "Jump up") Black, Ian (13 July 2010). ["Amnesty International censures Tunisia over human rights"](https://www.theguardian.com/world/2010/jul/13/amnesty-criticises-tunisia-human-rights). _The Guardian_. London. Retrieved 19 January 2013.
+  88. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:1_93-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:1_93-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:1_93-2) ["Tunisia Will Seek Loan From Public"](https://www.proquest.com/docview/115791987). _[The New York Times](https://en.wikipedia.org/wiki/The_New_York_Times "The New York Times")_. 23 May 1964. [ProQuest](https://en.wikipedia.org/wiki/ProQuest "ProQuest")[115791987](https://www.proquest.com/docview/115791987).
+  89. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:22_94-0 "Jump up") Prial, Frank J. (3 October 1985). ["Tunisia's Leader Bitter at the U.S."](https://www.nytimes.com/1985/10/03/world/tunisia-s-leader-bitter-at-the-us.html) _The New York Times_.
+  90. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-95 "Jump up") ["Habib Bourguiba: Father of Tunisia"](https://news.bbc.co.uk/2/hi/obituaries/703907.stm). _BBC News_ (obituary). Retrieved 20 July 2018.
+  91. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-96 "Jump up") AP (7 November 1987). ["A Coup Is Reported in Tunisia"](https://www.nytimes.com/1987/11/07/world/a-coup-is-reported-in-tunisia.html?pagewanted=1). _[The New York Times](https://en.wikipedia.org/wiki/The_New_York_Times "The New York Times")_. Retrieved 2 May 2010.
+  92. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-97 "Jump up") Vely, Yannick (23 November 2009). ["Ben Ali, sans discussion"](http://www.parismatch.com/Actu/International/Ben-Ali-tunisie-election-143751). ParisMatch.com. Retrieved 2 May 2010.
+  93. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-sandiegounion-tribune.com_98-0 "Jump up") Ganley, Elaine; Barchfield, Jenny (17 January 2011). ["Tunisians hail fall of ex-leader's corrupt family"](https://web.archive.org/web/20110716003853/http://www.sandiegounion-tribune.com/news/2011/jan/17/tunisians-hail-fall-of-ex-leaders-corrupt-family/). _U-T San Diego_. Sandiegounion-tribune.com. Archived from [the original](http://www.sandiegounion-tribune.com/news/2011/jan/17/tunisians-hail-fall-of-ex-leaders-corrupt-family/) on 16 July 2011.
+  94. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-99 "Jump up") Tsourapas, Gerasimos (2013). "The Other Side of a Neoliberal Miracle: Economic Reform and Political De-Liberalization in Ben Ali's Tunisia". _Mediterranean Politics_. **18** (1): 23–41. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1080/13629395.2012.761475](https://doi.org/10.1080%2F13629395.2012.761475). [S2CID](https://en.wikipedia.org/wiki/S2CID_\(identifier\) "S2CID \(identifier\)")[154822868](https://api.semanticscholar.org/CorpusID:154822868).
+  95. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-100 "Jump up") ["Tunisie: comment s'enrichit le clan Ben Ali?"](https://web.archive.org/web/20101008174858/http://www.radicalparty.org/it/node/5065065) [Tunisia: how did the Ben Ali clan get rich?] (in French). RadicalParty.org. Archived from [the original](http://www.radicalparty.org/it/node/5065065) on 8 October 2010. Retrieved 2 May 2010.
+  96. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-101 "Jump up") ["Caught in the Net: Tunisia's First Lady"](https://foreignpolicy.com/articles/2007/12/13/caught_in_the_net_tunisias_first_lady). _Foreign Policy_. 13 December 2007.
+  97. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-102 "Jump up") ["Ajaccio – Un trafic de yachts entre la France et la Tunisie en procès"](https://web.archive.org/web/20160303204309/http://lci.tf1.fr/france/justice/2009-09/un-trafic-de-yachts-entre-la-france-et-la-tunisie-en-proces-4865862.html) (in French). 30 September 2009. Archived from [the original](http://lci.tf1.fr/france/justice/2009-09/un-trafic-de-yachts-entre-la-france-et-la-tunisie-en-proces-4865862.html) on 3 March 2016.
+  98. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-103 "Jump up") Florence Beaugé (24 October 2009). ["Le parcours fulgurant de Sakhr El-Materi, gendre du président tunisien Ben Ali"](https://web.archive.org/web/20110121043720/http://www.tunisiawatch.com/?p=1141) [The meteoric career of Sakhr El-Materi, son-in-law of Tunisian President Ben Ali]. _Le Monde_ (in French). Archived from [the original](http://www.tunisiawatch.com/?p=1141) on 21 January 2011. Retrieved 2 May 2010.
+  99. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-104 "Jump up") ["Tunisia"](https://web.archive.org/web/20100509172440/http://www.amnesty.org/en/region/tunisia). Amnesty International. Archived from [the original](https://www.amnesty.org/en/region/tunisia) on 9 May 2010. Retrieved 2 May 2010.
+  100. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-105 "Jump up") ["Protectionline.org"](https://web.archive.org/web/20110429093617/http://www.protectionline.org/Kamel-Jendoubi-Sihem-Bensedrine.html). Protectionline.org. 18 January 2010. Archived from [the original](http://www.protectionline.org/Kamel-Jendoubi-Sihem-Bensedrine.html) on 29 April 2011. Retrieved 2 May 2010.
+  101. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-106 "Jump up") ["Droits de l'Homme: après le harcèlement, l'asphyxie"](https://web.archive.org/web/20130505125306/http://www.rfi.fr/actufr/articles/053/article_27950.asp) [Human rights: after harassment, asphyxiation] (in French). RFI.fr. 16 December 2004. Archived from [the original](http://www.rfi.fr/actufr/articles/053/article_27950.asp) on 5 May 2013. Retrieved 2 May 2010.
+  102. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-107 "Jump up") ["Dans le monde de l'après-11 septembre, seule la paix protège les libertés"](https://web.archive.org/web/20110114230027/http://fr.rsf.org/dans-le-monde-de-l-apres-11-22-10-2008,28879). RSF.org. 22 October 2008. Archived from [the original](http://fr.rsf.org/dans-le-monde-de-l-apres-11-22-10-2008,28879) on 14 January 2011. Retrieved 2 May 2010.
+  103. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-108 "Jump up") [Yasmine Ryan](https://en.wikipedia.org/wiki/Yasmine_Ryan "Yasmine Ryan") (26 January 2011). ["How Tunisia's revolution began"](http://english.aljazeera.net/indepth/features/2011/01/2011126121815985483.html). Al Jazeera English. Retrieved 13 February 2011.
+  104. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-109 "Jump up") ["Wikileaks might have triggered Tunis' revolution"](http://www.alarabiya.net/articles/2011/01/15/133592.html). _Alarabiya_. 15 January 2011. Retrieved 13 February 2011.
+  105. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-110 "Jump up") Spencer, Richard (13 January 2011). ["Tunisia riots: Reform or be overthrown, US tells Arab states amid fresh riots"](https://wayback.archive-it.org/all/20171010045358/http://www.telegraph.co.uk/news/worldnews/africaandindianocean/tunisia/8258077/Tunisia-riots-Reform-or-be-overthrown-US-tells-Arab-states-amid-fresh-riots.html). _The Telegraph_. London. Archived from [the original](https://www.telegraph.co.uk/news/worldnews/africaandindianocean/tunisia/8258077/Tunisia-riots-US-warns-Middle-East-to-reform-or-be-overthrown.html) on 10 October 2017. Retrieved 14 January 2011.
+  106. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-111 "Jump up") Ryan, Yasmine (14 January 2011). ["Tunisia's bitter cyberwar"](http://english.aljazeera.net/indepth/features/2011/01/20111614145839362.html). _Al Jazeera English_. Retrieved 16 January 2011.
+  107. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-112 "Jump up") ["Trade unions: the revolutionary social network at play in Egypt and Tunisia"](http://www.defenddemocracy.org/index.php?option=com_content&task=view&id=11792083&Itemid=347). Defenddemocracy.org. Retrieved 11 February 2011.
+  108. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-113 "Jump up") Tripp, Charles (2013). _The power and the people: paths of resistance in the Middle East_. New York: Cambridge University Press. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-521-80965-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-521-80965-8 "Special:BookSources/978-0-521-80965-8"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC \(identifier\)")[780063882](https://search.worldcat.org/oclc/780063882).
+  109. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-114 "Jump up") ["When fleeing Tunisia, don't forget the gold"](https://www.koreatimes.co.kr/www/news/opinon/2011/01/137_80292.html). _Korea Times_. 25 January 2011. Retrieved 19 January 2013.
+  110. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-115 "Jump up") "Interim President Announces Election of National Constituent Assembly on July 24". _Tunis Afrique Presse_. 3 March 2011.
+  111. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-116 "Jump up") "Tunisian PM Announces October Date for Elections". _BBC Monitoring Middle East_. 9 June 2011.
+  112. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-117 "Jump up") El Amrani, Issandr; Lindsey, Ursula (8 November 2011). ["Tunisia Moves to the Next Stage"](https://web.archive.org/web/20180915101944/https://www.merip.org/mero/mero110811). _Middle East Report_. [Middle East Research and Information Project](https://en.wikipedia.org/wiki/Middle_East_Research_and_Information_Project "Middle East Research and Information Project"). Archived from [the original](http://merip.org/mero/mero110811) on 15 September 2018. Retrieved 1 January 2019.
+  113. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-118 "Jump up") Zavis, Alexandra (13 December 2011). ["Former dissident sworn in as Tunisia's president"](http://latimesblogs.latimes.com/world_now/2011/12/tunisia-president-moncef-marzouki.html). _Los Angeles Times_. Retrieved 13 December 2011.
+  114. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-119 "Jump up") ["Tunisia's constitution will not be based on Sharia: Islamist party"](http://www.alarabiya.net/articles/2012/03/27/203529.html). Al Arabiya. 27 March 2012. Retrieved 18 February 2013.
+  115. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-120 "Jump up") Fleishman, Jeffrey (6 February 2013). ["Tunisian opposition leader Chokri Belaid shot dead outside his home"](https://www.latimes.com/news/la-fg-wn-tunisian-leader-assassinated-20130206,0,4371497.story). _Los Angeles Times_. Retrieved 18 February 2013.
+  116. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-121 "Jump up") ["Tunisia launches Truth and Dignity Commission"](https://web.archive.org/web/20190401030751/https://www.undp.org/content/undp/en/home/presscenter/articles/2014/06/09/tunisia-launches-truth-and-dignity-commission.html). _UNDP_. 9 June 2014. Archived from [the original](http://www.undp.org/content/undp/en/home/presscenter/articles/2014/06/09/tunisia-launches-truth-and-dignity-commission.html) on 1 April 2019. Retrieved 22 December 2016.
+  117. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-122 "Jump up") ["The real reason Tunisia renewed its state of emergency"](https://web.archive.org/web/20161220140248/http://www.al-monitor.com/pulse/originals/2016/10/why-is-the-state-of-emergency-renewed-three-times-tunisia.html). Archived from [the original](https://www.al-monitor.com/pulse/originals/2016/10/why-is-the-state-of-emergency-renewed-three-times-tunisia.html) on 20 December 2016.
+  118. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-123 "Jump up") "The Nobel Peace Prize 2015". Nobel Foundation. Retrieved 15 December 2016.
+  119. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-124 "Jump up") ["Tunisian President Beji Caid Essebsi dies aged 92"](https://www.france24.com/en/20190725-tunisia-president-essebsi-dies-aged-92). _France 24_. 25 July 2019.
+  120. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-125 "Jump up") ["Tunisia election: Kais Saied to become president"](https://www.bbc.com/news/world-africa-50032460). _BBC News_. 14 October 2019. Retrieved 26 March 2021.
+  121. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-126 "Jump up") ["Tunisia's new president sworn in after surprise election win"](https://www.france24.com/en/20191023-tunisia-s-new-president-sworn-in-after-surprise-election-win). _France 24_. 23 October 2019.
+  122. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-127 "Jump up") Yee, Vivian (26 July 2021). ["Tunisia's Democracy Verges on Dissolution as President Moves to Take Control"](https://ghostarchive.org/archive/20211228/https://www.nytimes.com/2021/07/26/world/middleeast/tunisia-government-dismissed-protests.html). _The New York Times_. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0362-4331](https://search.worldcat.org/issn/0362-4331). Archived from [the original](https://www.nytimes.com/2021/07/26/world/middleeast/tunisia-government-dismissed-protests.html) on 28 December 2021. Retrieved 26 July 2021.
+  123. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-128 "Jump up") ["Tunisian president sacks PM, suspends parliament after violent protests"](https://www.france24.com/en/live-news/20210725-tunisian-president-saied-sacks-prime-minister-mechichi-suspends-parliament). _France 24_. 25 July 2021. Retrieved 26 July 2021.
+  124. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-129 "Jump up") ["Tunisian president moves to cement one-man rule"](https://www.cnn.com/2021/09/23/africa/tunisian-president-reforms-political-system-intl/index.html). _CNN_. Reuters. 23 September 2021. Retrieved 24 September 2021.
+  125. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-131 "Jump up") Amara, Tarek; Mcdowall, Angus (29 September 2021). ["Tunisian leader names new PM with little experience at crisis moment"](https://www.reuters.com/world/africa/tunisian-president-names-romdhane-prime-minister-2021-09-29/). _Reuters_. Retrieved 13 October 2021.
+  126. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-132 "Jump up") ["New Tunisian government sworn in"](https://www.aa.com.tr/en/africa/new-tunisian-government-sworn-in/2388732). _Anadolu Agency_. Tunis. 11 October 2021. Retrieved 13 October 2021.
+  127. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-133 "Jump up") ["Tunisia elected member of African Union security council"](http://www.xinhuanet.com/english/africa/20220204/6e6021e10aa54258a50dc2edf902b6ad/c.html). Xinhua. 4 February 2022. Retrieved 4 February 2022.
+  128. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-134 "Jump up") ["Tunisia's talks with the IMF: What's at stake?"](https://www.aljazeera.com/news/2022/2/18/tunisias-talks-with-the-imf-whats-at-stake). _Al Jazeera_. AFP. 18 February 2022. Retrieved 20 February 2022.
+  129. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-135 "Jump up") ["Tunisia closes offices of opposition party Ennahdha after arresting leader"](https://www.france24.com/en/africa/20230417-ennahda-leader-ghannouchi-detained-by-tunisian-police-party-says). _France 24_. 17 April 2023. Retrieved 18 April 2023.
+  130. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-136 "Jump up") ["Tunisia arrests opposition figure as crackdown escalates – DW – 10/04/2023"](https://www.dw.com/en/tunisia-arrests-opposition-figure-as-crackdown-escalates/a-66994968). _dw.com_. Retrieved 5 October 2023.
+  131. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-137 "Jump up") ["En Tunisie, l'opposante Abir Moussi placée en détention"](https://www.lemonde.fr/afrique/article/2023/10/04/en-tunisie-l-opposante-abir-moussi-placee-en-detention_6192365_3212.html). _Le Monde.fr_ (in French). 4 October 2023. Retrieved 5 October 2023.
+  132. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-138 "Jump up") ["Tunisia detains Abir Moussi, prominent opponent of president"](https://arab.news/222h9). _Arab News_. 4 October 2023. Retrieved 5 October 2023.
+  133. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-139 "Jump up") red, ORF at/Agenturen (4 October 2023). ["Tunesien: Erneut Oppositionspolitikerin festgenommen"](https://orf.at/stories/3333468/). _news.ORF.at_ (in German). Retrieved 5 October 2023.
+  134. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-140 "Jump up") ["EU, Tunisia sign €1 billion deal to fight illegal migration – DW – 07/16/2023"](https://www.dw.com/en/eu-tunisia-sign-1-billion-deal-to-fight-illegal-migration/a-66249005). _dw.com_. Retrieved 30 September 2023.
+  135. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:3_141-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:3_141-1) red, ORF at/Agenturen (30 September 2023). ["Tunesien verschiebt Besuch von EU-Delegation zu Migration"](https://orf.at/stories/3333060/). _news.ORF.at_ (in German). Retrieved 30 September 2023.
+  136. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-142 "Jump up") ["EU Commission Should Stop Ignoring Tunisia's Abuses Against Migrants | Human Rights Watch"](https://www.hrw.org/news/2023/09/28/eu-commission-should-stop-ignoring-tunisias-abuses-against-migrants). 28 September 2023. Retrieved 30 September 2023.
+  137. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-143 "Jump up") ["Migration as a weapon: Is Tunisia blackmailing the EU? – DW – 09/20/2023"](https://www.dw.com/en/migration-as-a-weapon-is-tunisia-blackmailing-the-eu/a-66874950). _dw.com_. Retrieved 30 September 2023.
+  138. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:4_144-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:4_144-1) red, ORF at/Agenturen (1 October 2023). ["Tunesien will nicht Grenzen anderer Länder überwachen"](https://orf.at/stories/3333136/). _news.ORF.at_ (in German). Retrieved 1 October 2023.
+  139. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-145 "Jump up") Redazione (1 October 2023). ["La Tunisia: non possiamo proteggere le frontiere di altri paesi"](https://askanews.it/2023/10/01/la-tunisia-non-possiamo-proteggere-le-frontiere-di-altri-paesi). _Il Domani d'Italia_ (in Italian). Retrieved 1 October 2023.
+  140. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-146 "Jump up") red, ORF at/Agenturen (3 October 2023). ["Tunesien lehnt EU-Finanzhilfe wegen Migrationsabkommens ab"](https://orf.at/stories/3333324/). _news.ORF.at_ (in German). Retrieved 3 October 2023.
+  141. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-147 "Jump up") Amara, Tarek (2 October 2023). ["Tunisia rejects EU financial aid, casting doubt on an immigration deal"](https://www.reuters.com/world/tunisia-rejects-eu-financial-aid-casting-doubt-an-immigration-deal-2023-10-02/). _Reuters_. Retrieved 3 October 2023.
+  142. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-148 "Jump up") AfricaNews (3 October 2023). ["Tunisia: President Kais Saied rejects EU financial aid on immigration"](https://www.africanews.com/2023/10/03/tunisia-president-kais-saied-rejects-eu-financial-aid-on-immigration-deal/). _Africanews_. Retrieved 3 October 2023.
+  143. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-149 "Jump up") ["Tunisia can 'wire back' EU money if it doesn't want it: Commissioner"](https://www.euronews.com/my-europe/2023/10/05/tunisia-is-free-to-wire-back-eu-money-if-it-doesnt-want-it-says-european-commissioner). _euronews_. 5 October 2023. Retrieved 7 October 2023.
+  144. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-150 "Jump up") ["Tunisian Authorities Raze Refugee Camps That Housed 7,000"](https://www.democracynow.org/2025/4/25/headlines/tunisian_authorities_raze_refugee_camps_that_housed_7_000). _Democracy Now!_. Retrieved 1 May 2025.
+  145. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-151 "Jump up") ["Tunisia dismantles encampments housing migrants stranded en route to Europe"](https://apnews.com/article/migrants-tunisia-coast-camps-d92fe18ebf792ae8ff8dacd6256a05c2). _AP News_. 10 April 2025. Retrieved 1 May 2025.
+  146. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-152 "Jump up") ["Tunisia election: Kais Saied secures second term with 91% of votes"](https://www.bbc.com/news/articles/cx25ree1g18o). _www.bbc.com_.
+  147. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-153 "Jump up") ["Présentation générale du pays"](https://web.archive.org/web/20221106135908/https://scid.tn/fr/profil-environnemental/presentation-generale-du-pays.html). 2002. Archived from [the original](https://scid.tn/fr/profil-environnemental/presentation-generale-du-pays.html) on 6 November 2022. Retrieved 6 November 2022.
+  148. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-154 "Jump up") Ewan W., Anderson (2003). [_International Boundaries: Geopolitical Atlas_](https://books.google.com/books?id=E7-menNPxREC&pg=PA816). Psychology Press. p.816. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-57958-375-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-57958-375-0 "Special:BookSources/978-1-57958-375-0").
+  149. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-155 "Jump up") ["Visit Tunis, Tunisia"](https://web.archive.org/web/20210418193746/https://visitafrica.site/tunis.html). _visitafrica.site_. Archived from [the original](https://visitafrica.site/tunis.html) on 18 April 2021. Retrieved 13 April 2021.
+  150. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-156 "Jump up") ["Climate of Tunisia"](https://web.archive.org/web/20110209110533/http://www.bbc.co.uk/weather/world/country_guides/results.shtml?tt=TT000720). BBC. Archived from [the original](https://www.bbc.co.uk/weather/world/country_guides/results.shtml?tt=TT000720) on 9 February 2011. Retrieved 2 May 2010.
+  151. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-157 "Jump up") Aldosari, Ali (2006). [_Middle East, western Asia, and northern Africa_](https://books.google.com/books?id=j894miuOqc4C&pg=PA1270). Marshall Cavendish. pp.1270–. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7614-7571-2](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7614-7571-2 "Special:BookSources/978-0-7614-7571-2").
+  152. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-DinersteinOlson2017_158-0 "Jump up") Dinerstein, Eric; etal. (2017). ["An Ecoregion-Based Approach to Protecting Half the Terrestrial Realm"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5451287). _BioScience_. **67** (6): 534–545. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1093/biosci/bix014](https://doi.org/10.1093%2Fbiosci%2Fbix014). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[0006-3568](https://search.worldcat.org/issn/0006-3568). [PMC](https://en.wikipedia.org/wiki/PMC_\(identifier\) "PMC \(identifier\)")[5451287](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5451287). [PMID](https://en.wikipedia.org/wiki/PMID_\(identifier\) "PMID \(identifier\)")[28608869](https://pubmed.ncbi.nlm.nih.gov/28608869).
+  153. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-159 "Jump up") ["Tunisia holds first election under new constitution"](https://www.bbc.co.uk/news/world-africa-29771109). _BBC News_. 26 October 2014. Retrieved 26 October 2014.
+  154. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-160 "Jump up") ["EIU Democracy Index 2019"](https://infographics.economist.com/2019/DemocracyIndex/). _infographics.economist.com_.
+  155. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-vdem_dataset_161-0 "Jump up") Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, Nazifa Alizada, David Altman, Michael Bernhard, Agnes Cornell, M. Steven Fish, Lisa Gastaldi, Haakon Gjerløw, Adam Glynn, Allen Hicken, Garry Hindle, Nina Ilchenko, Joshua Krusell, Anna Lührmann, Seraphine F. Maerz, Kyle L. Marquardt, Kelly McMann, Valeriya Mechkova, Juraj Medzihorsky, Pamela Paxton, Daniel Pemstein, Josefine Pernes, Johannes von Römer, Brigitte Seim, Rachel Sigman, Svend-Erik Skaaning, Jeffrey Staton, Aksel Sundström, Eitan Tzelgov, Yi-ting Wang, Tore Wig, Steven Wilson and Daniel Ziblatt. 2021. "V-Dem [Country–Year/Country–Date] Dataset v11.1" Varieties of Democracy (V-Dem) Project. <https://doi.org/10.23696/vdemds21>.
+  156. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-cnsd_162-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-cnsd_162-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-cnsd_162-2) ![Public Domain](https://upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/20px-PD-icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) This article incorporates text from this source, which is in the [public domain](https://en.wikipedia.org/wiki/Public_domain "Public domain"):["Tunisia (03/09/12)"](https://2009-2017.state.gov/outofdate/bgn/tunisia/196390.htm). US Department of State. 9 March 2012.
+  157. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-163 "Jump up") ["TUNISIA. Majlis Al-Nuwab (Chamber of Deputies)"](http://www.ipu.org/parline/reports/2321_E.htm). Inter-Parliamentary Union. Retrieved 19 January 2013.
+  158. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-164 "Jump up") ["49 femmes élues à l'assemblée constituante: 24% des 217 sièges"](http://www.leaders.com.tn/article/49-femmes-elues-a-l-assemblee-constituante-24-des-217-sieges). _Leaders_. 28 October 2011. Retrieved 27 October 2014.
+  159. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-165 "Jump up") Ben Hamadi, Monia (29 April 2014). ["Tunisie: Selma Znaidi, une femme de plus à l'Assemblée"](https://web.archive.org/web/20141028103854/http://www.huffpostmaghreb.com/2014/04/29/tunisie-femme-assemblee_n_5233556.html). _Al Huffington Post_. Archived from the original on 28 October 2014. Retrieved 27 October 2014.
+  160. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-166 "Jump up") ["Tunisia holds first post-revolution presidential poll"](https://www.bbc.co.uk/news/world-africa-30165471). _BBC News_. 23 November 2014. Retrieved 23 November 2014.
+  161. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-ri-law_167-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-ri-law_167-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-ri-law_167-2) ["Tunisia"](https://web.archive.org/web/20140429215144/http://www.reunite.org/edit/files/Islamic%20Resource/Tunisia%20Text.pdf) (PDF). Reunite International. Archived from [the original](http://www.reunite.org/edit/files/Islamic%20Resource/Tunisia%20Text.pdf) (PDF) on 29 April 2014. Retrieved 18 February 2013.
+  162. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-168 "Jump up") ["State Department page on Tunisia"](https://2009-2017.state.gov/r/pa/ei/bgn/5439.htm). US Department of State. 19 March 2009. Retrieved 2 May 2010.
+  163. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-169 "Jump up") [_Major Trends Affecting Families: A Background Document_](https://books.google.com/books?id=hZEip6FAiWYC&pg=PA190). United Nations Publications. 2003. p.190. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-92-1-130252-3](https://en.wikipedia.org/wiki/Special:BookSources/978-92-1-130252-3 "Special:BookSources/978-92-1-130252-3"). [Archived](https://web.archive.org/web/20130509152444/https://books.google.com/books?id=hZEip6FAiWYC&pg=PA190) from the original on 9 May 2013. Retrieved 10 February 2013.
+  164. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-170 "Jump up") Tamanna, Nowrin (December 2008). "Personal status laws in Morocco and Tunisia: a comparative exploration of the possibilities for equality-enhancing reform in Bangladesh". _[Feminist Legal Studies](https://en.wikipedia.org/wiki/Feminist_Legal_Studies "Feminist Legal Studies")_. **16** (3): 323–343. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1007/s10691-008-9099-9](https://doi.org/10.1007%2Fs10691-008-9099-9). [S2CID](https://en.wikipedia.org/wiki/S2CID_\(identifier\) "S2CID \(identifier\)")[144717130](https://api.semanticscholar.org/CorpusID:144717130).
+  165. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-171 "Jump up") Amara, Tarek (25 May 2022). ["Tunisian president decrees a referendum for new constitution"](https://www.reuters.com/world/africa/tunisian-president-decrees-referendum-new-constitution-2022-05-25/). _Reuters_. Retrieved 26 May 2022.
+  166. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-172 "Jump up") ["Tunisia referendum: Voters give president near unchecked power"](https://www.bbc.com/news/world-africa-62314305). _BBC News_. 27 July 2022.
+  167. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-173 "Jump up") ["EU-Maghreb ties: Reversing the old power asymmetry – DW – 10/07/2023"](https://www.dw.com/en/eu-maghreb-relations-reversing-the-old-power-asymmetry/a-67021970). _dw.com_. Retrieved 8 October 2023.
+  168. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-174 "Jump up") ["Maghrebi Foreign Policies – A Comparative Analysis"](https://www.iemed.org/publication/maghrebi-foreign-policies-a-comparative-analysis/). [Archived](https://web.archive.org/web/20211204020505/https://www.iemed.org/publication/maghrebi-foreign-policies-a-comparative-analysis/) from the original on 4 December 2021. Retrieved 23 September 2025.
+  169. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-175 "Jump up") International Institute for Strategic Studies (February 2008). _The Military Balance 2008_. Taylor & Francis Group. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-85743-461-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-85743-461-3 "Special:BookSources/978-1-85743-461-3").
+  170. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-176 "Jump up") ["Tunisia – Armed forces"](http://www.nationsencyclopedia.com/Africa/Tunisia-ARMED-FORCES.html). Nationsencyclopedia.com. 18 January 2011. Retrieved 8 January 2013.
+  171. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-177 "Jump up") ["2024 Global Peace Index"](https://www.economicsandpeace.org/wp-content/uploads/2024/06/GPI-2024-web.pdf) (PDF).
+  172. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-178 "Jump up") ["Tunisia Governorates"](https://web.archive.org/web/20230927124246/https://www.statoids.org/en/tn/admin-levels/l1/map/tunisia/governates). Statoids.com. Archived from [the original](https://www.statoids.org/en/tn/admin-levels/l1/map/tunisia/governates) on 27 September 2023. Retrieved 2 May 2010.
+  173. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-179 "Jump up") ["Portail de l'industrie Tunisienne"](https://web.archive.org/web/20130106172919/http://www.tunisieindustrie.nat.tn/Fr/doc.asp?mcat=12&mrub=105&msrub=204&dev=true) (in French). Tunisieindustrie.nat.tn. Archived from [the original](http://www.tunisieindustrie.nat.tn/fr/doc.asp?mcat=12&mrub=105&msrub=204&dev=true) on 6 January 2013. Retrieved 19 January 2013.
+  174. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-180 "Jump up") ["The Global Competitiveness Index 2009–2010 rankings"](https://web.archive.org/web/20101030003958/http://www.weforum.org/pdf/GCR09/GCR20092010fullrankings.pdf) (PDF). _weforum.org_. Archived from [the original](http://www.weforum.org/pdf/GCR09/GCR20092010fullrankings.pdf) (PDF) on 30 October 2010. Retrieved 16 September 2009.
+  175. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-181 "Jump up") ["GTZ in Tunisia"](https://web.archive.org/web/20110511202245/http://www.gtz.de/en/weltweit/maghreb-naher-osten/681.htm). _gtz.de_. GTZ. Archived from [the original](http://www.gtz.de/en/weltweit/maghreb-naher-osten/681.htm) on 11 May 2011. Retrieved 20 October 2010.
+  176. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-182 "Jump up") ["Tunisia Corruption Profile"](https://web.archive.org/web/20150714162225/http://www.business-anti-corruption.com/country-profiles/middle-east-north-africa/tunisia/show-all.aspx). _Business Anti-Corruption Portal_. Archived from [the original](http://www.business-anti-corruption.com/country-profiles/middle-east-north-africa/tunisia/show-all.aspx) on 14 July 2015. Retrieved 14 July 2015.
+  177. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-183 "Jump up") ["Trouble in paradise: How one vendor unmasked the 'economic miracle'"](http://mobile.france24.com/en/20110111-tunisia-protests-tourism-trouble-paradise-unmasked-tunisian-economic-miracle). France24. 11 January 2011. Retrieved 28 October 2011.
+  178. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-184 "Jump up") Haouas, Ilham; Sayre, Edward; Yagoubi, Mahmoud (September 2012). ["Youth Unemployment in Tunisia: Characteristics and Policy Responses"](https://meea.sites.luc.edu/volume14/PDFS/Youth_employment_in_Tunisia.pdf) (PDF). _Topics in Middle Eastern and African Economies_. **14**. Retrieved 10 January 2024.
+  179. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-185 "Jump up") "Youth Inactivity and Unemployment". [Tunisia: Breaking the Barriers to Youth Inclusion](https://www.worldbank.org/content/dam/Worldbank/document/MNA/tunisia/breaking_the_barriers_to_youth_inclusion_eng_chap3.pdf) (PDF) (Report). [World Bank](https://en.wikipedia.org/wiki/World_Bank "World Bank"). 1 November 2014. Retrieved 10 January 2024.
+  180. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-186 "Jump up") Arous, Mohamed (14 September 2022). ["To Support Youth, Tunisia Needs a New Approach to Development"](https://web.archive.org/web/20220915104450/https://www.usip.org/blog/2022/09/support-youth-tunisia-needs-new-approach-development). [United States Institute of Peace](https://en.wikipedia.org/wiki/United_States_Institute_of_Peace "United States Institute of Peace"). Archived from [the original](https://www.usip.org/blog/2022/09/support-youth-tunisia-needs-new-approach-development) on 15 September 2022. Retrieved 10 January 2024.
+  181. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-187 "Jump up") ["Bilateral relations Tunisia EU"](http://ec.europa.eu/trade/issues/bilateral/countries/tunisia/index_en.htm). _europa.eu_. [Archived](https://web.archive.org/web/20070607231004/http://ec.europa.eu/trade/issues/bilateral/countries/tunisia/index_en.htm) from the original on 7 June 2007. Retrieved 16 September 2009.
+  182. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-188 "Jump up") ["Tunesien: Was Saïed mit der rassistischen Gewalt zu tun hat"](https://www.zdf.de/uri/cb376837-8d43-4d52-b3ea-c25a5bd6d183). _www.zdf.de_ (in German). 11 March 2023. [Archived](https://web.archive.org/web/20231005065655/https://www.zdf.de/nachrichten/politik/tunesien-rassismus-gewalt-migration-100.html) from the original on 5 October 2023. Retrieved 2 October 2023.
+  183. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-189 "Jump up") ["The impact of the Russian-Ukrainian war on the Tunisian food system - Rosa Luxemburg Stiftung"](https://rosaluxna.org/publications/the-impact-of-the-russian-ukrainian-war-on-the-tunisian-food-system/). Retrieved 2 October 2023.
+  184. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-190 "Jump up") ["World Bank lends Tunisia $268 million for power line with Italy"](https://www.reuters.com/world/africa/world-bank-lends-tunisia-268-mln-power-line-with-italy-2023-06-22/). _Reuters_. 22 June 2023. Retrieved 1 October 2023.
+  185. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-191 "Jump up") ["GII Innovation Ecosystems & Data Explorer 2025"](https://www.wipo.int/gii-ranking/en/tunisia). _WIPO_. Retrieved 16 October 2025.
+  186. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-192 "Jump up") Dutta, Soumitra; Lanvin, Bruno (2025). [_Global Innovation Index 2025: Innovation at a Crossroads_](https://www.wipo.int/web-publications/global-innovation-index-2025/en/index.html). [World Intellectual Property Organization](https://en.wikipedia.org/wiki/World_Intellectual_Property_Organization "World Intellectual Property Organization"). p.19. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.34667/tind.58864](https://doi.org/10.34667%2Ftind.58864). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-92-805-3797-0](https://en.wikipedia.org/wiki/Special:BookSources/978-92-805-3797-0 "Special:BookSources/978-92-805-3797-0"). Retrieved 17 October 2025.
+  187. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-193 "Jump up") ["Hammamet"](https://web.archive.org/web/20220903235240/https://www.tunisiatourism.info/en/destination/hammamet). _TunisiaTourism.info_ (in French). Archived from [the original](https://www.tunisiatourism.info/en/destination/hammamet) on 3 September 2022. Retrieved 25 August 2022.
+  188. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-194 "Jump up") Glusac, Elaine (22 November 2009). ["A Night, and Day, In Tunisia at a New Resort"](https://query.nytimes.com/gst/fullpage.html?res=9F0DE4D81538F931A15752C1A96F9C8B63). _The New York Times_.
+  189. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-195 "Jump up") Herve (5 January 2025). ["Tunisia: Tourism Revenues Up by 7.8%"](https://web.archive.org/web/20250625075011/https://www.capmad.com/tourism-en/tunisia-tourism-revenues-up-by-7-8/). _Capmad.com_. Archived from [the original](https://www.capmad.com/tourism-en/tunisia-tourism-revenues-up-by-7-8/) on 25 June 2025. Retrieved 23 September 2025.
+  190. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-196 "Jump up") ["Travel & Tourism set to inject TND 23BN into Tunisia's economy this year"](https://wttc.org/news/travel-and-tourism-set-to-inject-tnd-23bn-into-tunisias-economy-this-year). _wttc.org_. Retrieved 23 September 2025.
+  191. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-197 "Jump up") ["Topic: Tourism in Tunisia"](https://www.statista.com/topics/8270/tourism-in-tunisia/). _Statista_. Retrieved 23 September 2025.
+  192. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-198 "Jump up") ["Tunisia Tourism Sector Research Highlights - Oxford Business Group"](https://oxfordbusinessgroup.com/explore-market-research/africa/tunisia/tourism/). 12 December 2022. Retrieved 23 September 2025.
+  193. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-199 "Jump up") ["Statistiques | INS"](https://ins.tn/en/statistiques/130). _www.ins.tn_. [Archived](https://web.archive.org/web/20250809114413/https://ins.tn/en/statistiques/130) from the original on 9 August 2025. Retrieved 23 September 2025.
+  194. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-200 "Jump up") Arfa, M. Othman Ben. ["Effort national de maitrise de l'energie: contribution de la steg"](https://web.archive.org/web/20110716055823/http://www.steg.com.tn/journee_sidi_salem/maitrise_energie.pdf) (PDF). _steg.com.tn_. Archived from [the original](http://www.steg.com.tn/journee_sidi_salem/maitrise_energie.pdf) (PDF) on 16 July 2011. Retrieved 12 November 2009.
+  195. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-201 "Jump up") ["Tunisia - Electrical Power Systems and Renewable Energy"](https://www.trade.gov/country-commercial-guides/tunisia-electrical-power-systems-and-renewable-energy#:~:text=Tunisia%20has%20a%20current%20power,produces%2083.5%25%20of%20the%20electricity.). _International Trade Administration_. 15 April 2024. Retrieved 9 March 2025.
+  196. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-MBendi_economical_information_202-0 "Jump up") ["MBendi oilfields in Tunisia"](https://web.archive.org/web/20060513163641/http://www.mbendi.com/indy/oilg/af/tu/p0005.htm). _mbendi.com_. Archived from [the original](http://www.mbendi.com/indy/oilg/af/tu/p0005.htm) on 13 May 2006. Retrieved 31 October 2009.
+  197. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-203 "Jump up") ["Oil and Gas in Tunisia"](https://web.archive.org/web/20060513163641/http://www.mbendi.com/indy/oilg/af/tu/p0005.htm). _mbendi.com_. Archived from [the original](http://www.mbendi.com/indy/oilg/af/tu/p0005.htm) on 13 May 2006. Retrieved 9 October 2009.
+  198. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-204 "Jump up") ["Tunisia: Oil production down 14 percent"](https://www.agenzianova.com/en/news/Tunisia-oil-production-down-14-percent/). _www.agenzianova.com_. Nova Agency. 18 November 2024.
+  199. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Reuters_205-0 "Jump up") ["Tunisias nuclear plans"](https://web.archive.org/web/20160101182904/http://uk.reuters.com/article/idUKLN941296). _Reuters_. 23 April 2009. Archived from [the original](http://uk.reuters.com/article/idUKLN941296) on 1 January 2016.
+  200. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-African_manager_206-0 "Jump up") ["Tunisia: A civil nuclear station of 1000 Megawatt and two sites are selected"](https://web.archive.org/web/20110514052549/http://www.africanmanager.com/site_eng/detail_article.php?art_id=12263). _africanmanager.com_. Archived from [the original](http://www.africanmanager.com/site_eng/detail_article.php?art_id=12263) on 14 May 2011. Retrieved 4 November 2009.
+  201. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-207 "Jump up") ["Débat national sur l'Énergie"](https://web.archive.org/web/20150915080856/http://www.tunisieindustrie.gov.tn/debat-national-energie/debat-energie.html). Archived from [the original](http://www.tunisieindustrie.gov.tn/debat-national-energie/debat-energie.html) on 15 September 2015. Retrieved 15 September 2015.
+  202. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-208 "Jump up") [Nouvelle version du plan solaire tunisien](http://www.anme.nat.tn/fileadmin/user1/doc/DEP/Rapport_final__PST.pdf) [Archived](https://web.archive.org/web/20180504032751/http://www.anme.nat.tn/index.php?id=3) 4 May 2018 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine")
+  203. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-209 "Jump up") ["Tunisia Energy Situation"](https://energypedia.info/wiki/Tunisia_Energy_Situation). _energypedia.info_.
+  204. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-210 "Jump up") [Production de l'électricité en Tunisie](https://web.archive.org/web/20190808035301/http://www.oitsfax.org/files/AApresentationHDR20140323.pdf). oitsfax.org
+  205. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-JMP_211-0 "Jump up") [World Health Organization](https://en.wikipedia.org/wiki/World_Health_Organization "World Health Organization"); UNICEF. ["Joint Monitoring Programme for Drinking Water Supply and Sanitation"](https://web.archive.org/web/20080216075751/http://www.wssinfo.org/). Archived from [the original](https://www.wssinfo.org) on 16 February 2008. Retrieved 27 December 2012.
+  206. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-PSP_212-0 "Jump up") (in French)["Étude sur la participation privée dans les infrastructures en Tunisie"](http://www-wds.worldbank.org/external/default/main?pagePK=64193027&piPK=64187937&theSitePK=523679&menuPK=64187510&searchMenuPK=64187283&theSitePK=523679&entityID=000012009_20041201140320&searchMenuPK=64187283&theSitePK=523679). [Archived](https://web.archive.org/web/20120305195148/http://www-wds.worldbank.org/external/default/main?pagePK=64193027&piPK=64187937&theSitePK=523679&menuPK=64187510&searchMenuPK=64187283&theSitePK=523679&entityID=000012009_20041201140320&searchMenuPK=64187283&theSitePK=523679) 5 March 2012 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine")
+  207. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-SONEDE_Chiffres_213-0 "Jump up") ["Chiffres clés"](https://web.archive.org/web/20131202193502/http://www.sonede.com.tn/index.php?id=43). SONEDE. Archived from [the original](http://www.sonede.com.tn/index.php?id=43) on 2 December 2013. Retrieved 27 December 2013.
+  208. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-214 "Jump up") <http://citypopulation.de/Tunisia-Cities.html>
+  209. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-215 "Jump up") Fadhlaoui-Zid, Karima; Martinez-Cruz, Begoña; Khodjet-el-khil, Houssein; Mendizabal, Isabel; Benammar-Elgaaied, Amel; Comas, David (October 2011). ["Genetic structure of Tunisian ethnic groups revealed by paternal lineages"](https://pubmed.ncbi.nlm.nih.gov/21915847). _American Journal of Physical Anthropology_. **146** (2): 271–280. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1002/ajpa.21581](https://doi.org/10.1002%2Fajpa.21581). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[1096-8644](https://search.worldcat.org/issn/1096-8644). [PMID](https://en.wikipedia.org/wiki/PMID_\(identifier\) "PMID \(identifier\)")[21915847](https://pubmed.ncbi.nlm.nih.gov/21915847).
+  210. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-216 "Jump up") Hajjej, Abdelhafidh; Almawi, Wassim Y.; Hattab, Lasmar; El-Gaaied, Amel; Hmida, Slama (March 2017). ["The investigation of the origin of Southern Tunisians using HLA genes"](https://www.nature.com/articles/jhg2016146). _Journal of Human Genetics_. **62** (3): 419–429. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1038/jhg.2016.146](https://doi.org/10.1038%2Fjhg.2016.146). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[1435-232X](https://search.worldcat.org/issn/1435-232X).
+  211. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-217 "Jump up") Elkamel, Sarra; Marques, Sofia L.; Alvarez, Luis; Gomes, Veronica; Boussetta, Sami; Mourali-Chebil, Soufia; Khodjet-El-Khil, Houssein; Cherni, Lotfi; Benammar-Elgaaied, Amel; Prata, Maria J. (3 August 2021). ["Insights into the Middle Eastern paternal genetic pool in Tunisia: high prevalence of T-M70 haplogroup in an Arab population"](https://www.nature.com/articles/s41598-021-95144-x). _Scientific Reports_. **11** (1): 15728. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1038/s41598-021-95144-x](https://doi.org/10.1038%2Fs41598-021-95144-x). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[2045-2322](https://search.worldcat.org/issn/2045-2322). [PMC](https://en.wikipedia.org/wiki/PMC_\(identifier\) "PMC \(identifier\)")[8333252](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8333252).
+  212. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-WJC_218-0 "Jump up") ["Community in Tunisia"](https://www.worldjewishcongress.org/en/about/communities/TN). _World Jewish Congress_.
+  213. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-219 "Jump up") ["Evolution of population growth in Tunisia during the years 1956 and 2024 - Arkam 🌍️"](https://www.arkam.africa/content/evolution-de-la-croissance-dmographique-en-tunisie-au-cours-des-annes-1956-et-2024). _Arkam_. Retrieved 4 May 2026.
+  214. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Popber1p_220-0 "Jump up") ["Q&A: The Berbers"](https://news.bbc.co.uk/2/hi/africa/3509799.stm). _BBC News_. 12 March 2004. Retrieved 19 January 2013.
+  215. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-AJrev_221-0 "Jump up") ["Tunisia 'needs a cultural revolution' to combat racism"](https://www.aljazeera.com/news/2018/10/15/tunisia-needs-a-cultural-revolution-to-combat-racism). _[Al Jazeera](https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network "Al Jazeera Media Network")_. 2018.
+  216. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-222 "Jump up") ["What's in a name? How the legacy of slavery endures in Tunisia"](https://www.theguardian.com/global-development/2020/nov/07/whats-in-a-name-how-the-legacy-of-slavery-endures-in-tunisia). _The Guardian_. 7 November 2020. Retrieved 29 October 2021.
+  217. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-223 "Jump up") ["Tunisia court rules that 81-year-old can drop slave name"](https://www.reuters.com/article/us-tunisia-rights-race-trfn-idUSKBN2741GY). _Reuters_. 19 October 2020. Retrieved 29 October 2021.
+  218. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-224 "Jump up") ["Indigenous Peoples in Tunisia"](https://web.archive.org/web/20210418190646/https://www.iwgia.org/en/tunesia/1016-indigenous-peoples-in-tunisia). _www.iwgia.org_. Archived from [the original](https://www.iwgia.org/en/tunesia/1016-indigenous-peoples-in-tunisia) on 18 April 2021. Retrieved 25 February 2019.
+  219. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-225 "Jump up") ["Tunisia – Land | history – geography"](https://www.britannica.com/place/Tunisia/Land#toc46604). _Encyclopædia Britannica_. Retrieved 7 July 2017.
+  220. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-226 "Jump up") Green, Arnold H. (1978), _The Tunisian Ulama 1873–1915: Social Structure and Response to Ideological Currents_ , Brill, p.69, [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-90-04-05687-9](https://en.wikipedia.org/wiki/Special:BookSources/978-90-04-05687-9 "Special:BookSources/978-90-04-05687-9")
+  221. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-227 "Jump up") Carr, Matthew (2009). [_Blood and faith: the purging of Muslim Spain_](https://books.google.com/books?id=netlOtzI6R8C&pg=PA290). The New Press. p.290. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-59558-361-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-59558-361-1 "Special:BookSources/978-1-59558-361-1").
+  222. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-228 "Jump up") Maddison, Angus (2007). [_Contours of the World Economy 1–2030 AD: Essays in Macro-Economic History_](https://books.google.com/books?id=EeWy7a6nAHcC&pg=PA214). Oxford University Press. p.214. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-19-922721-1](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-922721-1 "Special:BookSources/978-0-19-922721-1"). Retrieved 26 January 2013.
+  223. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-229 "Jump up") ["The Jews of Tunisia"](https://www.jewishvirtuallibrary.org/jsource/anti-semitism/tunisjews.html). _Jewish Virtual Library_. Retrieved 11 July 2014.
+  224. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-sayahi_230-0 "Jump up") Sayahi, Lotfi (2014). [_Diglossia and Language Contact: Language Variation and Change in North Africa_](https://books.google.com/books?id=ygFeAwAAQBAJ&pg=PA227). Cambridge University Press. p.227. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-139-86707-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-139-86707-8 "Special:BookSources/978-1-139-86707-8").
+  225. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-231 "Jump up") Albert J. Borg; Marie Azzopardi-Alexander (1997). [_Maltese_](https://books.google.com/books?id=igAOAAAAQAAJ&pg=PR13). Routledge. p.13. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-415-02243-9](https://en.wikipedia.org/wiki/Special:BookSources/978-0-415-02243-9 "Special:BookSources/978-0-415-02243-9"). Retrieved 24 February 2013. "The immediate source for the Arabic vernacular spoken in Malta was Muslim Sicily, but its ultimate origin appears to have been Tunisia. In fact, Maltese displays some areal traits typical of Maghrebine Arabic, although during the past eight hundred years of independent evolution it has drifted apart from Tunisian Arabic."
+  226. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-232 "Jump up") ["An outline of the Shilha (Berber) vernacular of Douiret (Southern Tunisia)"](https://web.archive.org/web/20080526135310/http://library.uws.edu.au/adt-NUWS/public/adt-NUWS20040707.092709/). Australian Digital Theses Program. 26 May 2008. Archived from [the original](http://library.uws.edu.au/adt-NUWS/public/adt-NUWS20040707.092709/) on 26 May 2008. Retrieved 19 January 2013.
+  227. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-233 "Jump up") Volk, Lucia (2015). [_The Middle East in the World: An Introduction_](https://books.google.com/books?id=iK-gBgAAQBAJ&q=shelha+in+tunisia&pg=PT473). Routledge. p.473. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-317-50173-2](https://en.wikipedia.org/wiki/Special:BookSources/978-1-317-50173-2 "Special:BookSources/978-1-317-50173-2").
+  228. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-234 "Jump up") [_Owen's Commerce & Travel and International Register_](https://books.google.com/books?id=EkYjAQAAMAAJ). Owen's Commerce & Travel Limited. 1964. p.273. Retrieved 7 January 2018.
+  229. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-235 "Jump up") ["La langue française dans le monde / édition 2022"](https://www.francophonie.org/sites/default/files/2023-03/Rapport-La-langue-francaise-dans-le-monde_VF-2022.pdf) [The French Language around the World / 2022 Edition] (PDF). _[Organisation internationale de la francophonie](https://en.wikipedia.org/wiki/Organisation_internationale_de_la_francophonie "Organisation internationale de la francophonie")_ (in French). Retrieved 14 November 2025.
+  230. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-236 "Jump up") McGuinness, Justin (2002). [_Footprint Tunisia Handbook: The Travel Guide_](https://books.google.com/books?id=f5r2KD61loIC). Globe Pequot Press. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-903471-28-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-903471-28-9 "Special:BookSources/978-1-903471-28-9"). Retrieved 26 January 2013.
+  231. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-237 "Jump up") ["Tunisian Languages"](https://web.archive.org/web/20130605221847/http://www.tunisia-tourism.org/tunisian-languages/). Tunisia-tourism.org. Archived from [the original](http://www.tunisia-tourism.org/tunisian-languages/) on 5 June 2013. Retrieved 13 September 2013.
+  232. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-238 "Jump up") ["Religions in Tunisia | Arda"](https://www.thearda.com/world-religion/national-profiles?u=225c). _www.thearda.com_. Retrieved 7 January 2026.
+  233. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:0_239-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:0_239-1) ["Data Analysis Tool – Arab Barometer"](https://www.arabbarometer.org/survey-data/data-analysis-tool/). Retrieved 13 November 2022.
+  234. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-:The_Arab_world_in_seven_charts_240-0 "Jump up") ["The Arab world in seven charts: Are Arabs turning their backs on religion?"](https://www.bbc.com/news/world-middle-east-48703377). _BBC News_. 23 June 2019. Retrieved 3 April 2021.
+  235. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-arabbarometer.org_241-0 "Jump up") ["Young Arabs are Changing their Beliefs and Perceptions: New Survey"](https://www.arabbarometer.org/media-news/young-arabs-are-changing-their-beliefs-and-perceptions-new-survey/). Retrieved 3 April 2021.
+  236. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-242 "Jump up") ["The Newsroom: The Arab World Survey 2021–2022 – Arab Barometer"](https://www.arabbarometer.org/media-news/the-newsroom-the-arab-world-survey-2021-2022/). Retrieved 5 February 2023.
+  237. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-irfrtun_243-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-irfrtun_243-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-irfrtun_243-2) Bureau of Democracy, Human Rights, and Labor (2008). "Report on Tunisia". [_International Religious Freedom Report 2008_](https://2001-2009.state.gov/g/drl/rls/irf/2008/108494.htm). US State Department.
+  238. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-244 "Jump up") Jacobs, Daniel; Morris, Peter (2002). _The Rough Guide to Tunisia_. Rough Guides. p.460. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-85828-748-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-85828-748-5 "Special:BookSources/978-1-85828-748-5").
+  239. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-245 "Jump up") [Chapter 1: Religious Affiliation](https://www.pewforum.org/2012/08/09/the-worlds-muslims-unity-and-diversity-1-religious-affiliation/#identity) retrieved 4 September 2013
+  240. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-246 "Jump up") Brugnatelli, Vermondo (2005). ["Studi berberi e mediterranei. Miscellanea offerta in onore di Luigi Serra, a cura di A.M. Di Tolla"](http://boa.unimib.it/bitstream/10281/2954/3/BerberIbaditePoem.pdf) [A new Berber Ibadite poem] (PDF). _Studi Magrebini_. **3** : 131–142.
+  241. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-247 "Jump up") ["Les mosquées ibadites du Maghreb"](http://remmm.revues.org/6253) [The Ibadi mosques of the Maghreb]. Remmm.revues.org. Retrieved on 5 September 2015.
+  242. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-248 "Jump up") Trombley, Frank (2006). "Overview: the geographical spread of Christianity". In Mitchell, Margaret M.; Young, Francis M. (eds.). _The Cambridge History of Christianity_. Vol.1. Cambridge University Press. pp.302–313. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1017/CHOL9780521812443](https://doi.org/10.1017%2FCHOL9780521812443). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-139-05413-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-139-05413-3 "Special:BookSources/978-1-139-05413-3").
+  243. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Decolonization_249-0 "Jump up") Greenberg, Udi; A. Foster, Elizabeth (2023). _Decolonization and the Remaking of Christianity_. Pennsylvania: University of Pennsylvania Press. p.105. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[9781512824971](https://en.wikipedia.org/wiki/Special:BookSources/9781512824971 "Special:BookSources/9781512824971").
+  244. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-250 "Jump up") F. Nyrop, Richard (1972). _Area Handbook for Morocco_. University of Illinois Urbana-Champaign. p.97. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-8108-8493-9](https://en.wikipedia.org/wiki/Special:BookSources/978-0-8108-8493-9 "Special:BookSources/978-0-8108-8493-9").
+  245. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-251 "Jump up") ["Christians in Tunisia: Cause for Concern"](https://en.qantara.de/content/christians-in-tunisia-cause-for-concern). _Qantara.de - Dialogue with the Islamic World_. 9 October 2013. [Archived](https://web.archive.org/web/20140211212128/https://en.qantara.de/content/christians-in-tunisia-cause-for-concern) from the original on 11 February 2014. Retrieved 13 May 2020.
+  246. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-252 "Jump up") ["Tunisia 2018 International Religious Freedom Report"](https://www.state.gov/wp-content/uploads/2019/05/TUNISIA-2018-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf) (PDF).
+  247. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-253 "Jump up") Fr Andrew Phillips. ["The Last Christians of North-West Africa: Some Lessons For Orthodox Today"](http://www.orthodoxengland.org.uk/maghreb.htm). Orthodox England. Retrieved 8 January 2013.
+  248. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-report_254-0 "Jump up") ![Public Domain](https://upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/20px-PD-icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) This article incorporates text from this source, which is in the [public domain](https://en.wikipedia.org/wiki/Public_domain "Public domain"):["International Religious Freedom Report 2007: Tunisia"](https://2001-2009.state.gov/g/drl/rls/irf/2007/90222.htm). United States [Bureau of Democracy, Human Rights and Labor](https://en.wikipedia.org/wiki/Bureau_of_Democracy,_Human_Rights_and_Labor "Bureau of Democracy, Human Rights and Labor") (14 September 2007).
+  249. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-255 "Jump up") Johnstone, Patrick; Miller, Duane Alexander (2015). ["Believers in Christ from a Muslim Background: A Global Census"](https://www.academia.edu/16338087). _Interdisciplinary Journal of Research on Religion_. **11** : 8. Retrieved 30 October 2015.
+  250. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-256 "Jump up") ["Tunisia"](https://www.state.gov/reports/2019-report-on-international-religious-freedom/tunisia/). United States Department of State. Retrieved 19 December 2020.
+  251. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-257 "Jump up") ["Jews of Tunisia"](https://www.jewishvirtuallibrary.org/jews-of-tunisia#1). _Jewish Virtual Library_. Retrieved 19 December 2020.
+  252. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-258 "Jump up") ["Pilgrims flock to Tunisia's Djerba Jewish festival | Lamine Ghanmi"](https://thearabweekly.com/pilgrims-flock-tunisias-djerba-jewish-festival). _Arab Weekly_. Retrieved 17 March 2020.
+  253. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-259 "Jump up") Gruber, Samuel (1 May 1999). _Synagogues_. Metro Books.
+  254. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-260 "Jump up") ["Tunisia: Jewish population determined to stay despite anti-Semitic violence"](https://www.dw.com/en/tunisia-jewish-population-determined-to-stay-despite-anti-semitic-violence/a-42105135). _[Deutsche Welle](https://en.wikipedia.org/wiki/Deutsche_Welle "Deutsche Welle")_. 11 January 2018.
+  255. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-261 "Jump up") Harris, David A. (13 March 2010). ["Usurping History"](https://web.archive.org/web/20100420093318/http://www.aish.com/jw/me/87098057.html). _aishcom_. Aish.com. Archived from [the original](http://www.aish.com/jw/me/87098057.html) on 20 April 2010. Retrieved 2 May 2010.
+  256. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-262 "Jump up") ["United in our diversity"](https://news.bahai.org/story/1584/). Bahai.org. 22 February 2022. Retrieved 10 May 2023.
+  257. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-unescolit_263-0 "Jump up") ["National adult literacy rates (15+), youth literacy rates (15–24) and elderly literacy rates (65+)"](https://web.archive.org/web/20131029183908/http://stats.uis.unesco.org/unesco/TableViewer/tableView.aspx?ReportId=210). UNESCO Institute for Statistics. Archived from [the original](http://stats.uis.unesco.org/unesco/TableViewer/tableView.aspx?ReportId=210) on 29 October 2013. Retrieved 18 January 2013.
+  258. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-264 "Jump up") ["Tunisia – Literacy rate"](https://www.indexmundi.com/facts/tunisia/literacy-rate). _www.indexmundi.com_.
+  259. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Weforum.org_265-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Weforum.org_265-1) ["The Global Competitiveness Report 2008–2009"](https://web.archive.org/web/20080619083349/http://www.weforum.org/en/initiatives/gcp/Global%2BCompetitiveness%2BReport/index.htm). World Economic Forum. Archived from [the original](http://www.weforum.org/en/initiatives/gcp/Global%20Competitiveness%20Report/index.htm) on 19 June 2008. Retrieved 2 May 2010.
+  260. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-266 "Jump up") ["The Tunisia K-12 Education System – Basic and Secondary Education"](https://www.tunisiaeducation.info/k12/tunisia-k-12-education-system.html). _www.tunisiaeducation.info_. Retrieved 16 March 2021.
+  261. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-Rombaldi_267-0 "Jump up") _Encyclopédie 360_ , éd. Rombaldi / Paris Match, 1970, vol. 12, p. 161–2
+  262. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tangka3_268-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tangka3_268-1) [3](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tangka3_268-2) ["Un pays pour les peintres"](https://web.archive.org/web/20111007040510/http://guides.tangka.com/tunisie/Chapt8Sub1.htm) [A country for painters] (in French). Guide Tangka. 7 October 2011. Archived from [the original](http://guides.tangka.com/tunisie/Chapt8Sub1.htm) on 7 October 2011. Retrieved 26 January 2013.
+  263. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tunisia_online_269-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tunisia_online_269-1) ["Culture de la Tunisie"](https://web.archive.org/web/20010210043336/http://www.tunisiaonline.com/culture/culture1.html). Tunisia Online. 10 February 2001. Archived from [the original](http://www.tunisiaonline.com/culture/culture1.html) on 10 February 2001. Retrieved 19 January 2013.
+  264. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-270 "Jump up") ["A Tunis, une exposition réveille l'histoire précoloniale du pays"](http://www.lemonde.fr/afrique/article/2016/12/09/a-tunis-une-exposition-reveille-l-histoire-precoloniale-du-pays_5046481_3212.html) [In Tunis, an exhibition awakens the precolonial history of thecountry] (in French).
+  265. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-271 "Jump up") ["La littérature tunisienne de langue française (Mémoire vive)"](https://web.archive.org/web/20071224065850/http://www.francophonie.philo.ulg.ac.be/TUN.Lettres). 24 December 2007. Archived from [the original](http://www.francophonie.philo.ulg.ac.be/TUN.Lettres) on 24 December 2007. Retrieved 26 January 2013.
+  266. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tangka2_272-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-tangka2_272-1) ["Fantaisie arabe et poésie"](https://web.archive.org/web/20111007040510/http://guides.tangka.com/tunisie/Chapt8Sub1.htm). Guide Tangka. 7 October 2011. Archived from [the original](http://guides.tangka.com/tunisie/Chapt8Sub1.htm) on 7 October 2011. Retrieved 26 January 2013.
+  267. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-273 "Jump up") ["Littérature francophone"](https://web.archive.org/web/20111007040510/http://guides.tangka.com/tunisie/Chapt8Sub1.htm). Guide Tangka. 7 October 2011. Archived from [the original](http://guides.tangka.com/tunisie/Chapt8Sub1.htm) on 7 October 2011. Retrieved 26 January 2013.
+  268. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-274 "Jump up") Omri, Mohamed-Salah. ["Memory and Representation in the Novels of Fawzi Mellah"](https://www.academia.edu/11655649). _[International Journal of Francophone Studies](https://en.wikipedia.org/wiki/International_Journal_of_Francophone_Studies "International Journal of Francophone Studies")_. **3** (1): 33–41. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN \(identifier\)")[1368-2679](https://search.worldcat.org/issn/1368-2679). Retrieved 10 January 2024.
+  269. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-275 "Jump up") Pardey, Charlotte (2022). _Oscillating Bodies: Understanding Tunisian Society through its Novels (1956–2011)_. Literatures in Context. Vol.47: Oscillating Bodies. [Dr. Ludwig Reichert Verlag](https://de.wikipedia.org/wiki/Dr.%20Ludwig%20Reichert%20Verlag "de:Dr. Ludwig Reichert Verlag"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.29091/9783752005028](https://doi.org/10.29091%2F9783752005028). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-3-95490-380-1](https://en.wikipedia.org/wiki/Special:BookSources/978-3-95490-380-1 "Special:BookSources/978-3-95490-380-1").
+  270. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-litt%C3%A9rature_276-0 "Jump up") ["Littérature tunisienne"](https://web.archive.org/web/20051229022530/http://www.culture.tn/culture/HTML/pagedentree/livre.htm). Ministère de la Culture et de la Sauvegarde du patrimoine. 29 December 2005. Archived from [the original](http://www.culture.tn/culture/HTML/pagedentree/livre.htm) on 29 December 2005. Retrieved 19 January 2013.
+  271. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-hzreal_277-0 "Jump up") ["2009, l'année des rendez-vous culturels importants"](http://www.realites.com.tn/home/Realites-Lire-Article?=&a=1085258), _Réalités_ , 18 November 2008 [_[dead link](https://en.wikipedia.org/wiki/Wikipedia:Link_rot "Wikipedia:Link rot")_]
+  272. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-278 "Jump up") Badri, Balghis (15 February 2017). _Women's Activism in Africa: Struggles for Rights and Representation_. Zed Books. p.8. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-78360-911-6](https://en.wikipedia.org/wiki/Special:BookSources/978-1-78360-911-6 "Special:BookSources/978-1-78360-911-6").
+  273. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-279 "Jump up") Davis, Ruth (October 1996). "The art/popular music paradigm and the Tunisian _Ma'lūf_ ". _Popular Music_. **15** (3). [Cambridge University Press](https://en.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"): 313–323. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi \(identifier\)"):[10.1017/S0261143000008308](https://doi.org/10.1017%2FS0261143000008308). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR \(identifier\)")[931332](https://www.jstor.org/stable/931332). [S2CID](https://en.wikipedia.org/wiki/S2CID_\(identifier\) "S2CID \(identifier\)")[193235351](https://api.semanticscholar.org/CorpusID:193235351).
+  274. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-280 "Jump up") ["Carthage Film Festival prepares to launch"](http://www.magharebia.com/cocoon/awi/xhtml1/en_GB/features/awi/features/2008/10/20/feature-02). Magharebia. 20 October 2008. Retrieved 11 September 2009.
+  275. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-281 "Jump up") ["Le Carnaval d'Aoussou à Sousse, Tunisie"](https://www.voyage-tunisie.info/carnaval-daoussou-a-sousse-tunisie/). 2 July 2017.
+  276. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-282 "Jump up") Houda Trabelsi (5 October 2010). ["Shems FM hits Tunisia airwaves"](http://www.magharebia.com/cocoon/awi/xhtml1/en_GB/features/awi/features/2010/10/05/feature-02). Magharebia.com. Retrieved 19 January 2013.
+  277. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-283 "Jump up") ["Television TV in Tunisia"](https://web.archive.org/web/20121030143827/http://www.tunispro.net/tunisia/tv-in-tunisia.htm). TunisPro. Archived from [the original](http://www.tunispro.net/tunisia/tv-in-tunisia.htm) on 30 October 2012. Retrieved 19 January 2013.
+  278. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-284 "Jump up") ["Presse et communication en Tunisie"](https://web.archive.org/web/20120319175508/http://www.tunisie.com/media/) (in French). Tunisie.com. Archived from [the original](http://www.tunisie.com/media/) on 19 March 2012. Retrieved 19 January 2013.
+  279. [1](https://en.wikipedia.org/wiki/Tunisia#cite_ref-freedomhouse.org_285-0) [2](https://en.wikipedia.org/wiki/Tunisia#cite_ref-freedomhouse.org_285-1) ["Tunisia"](https://web.archive.org/web/20190421134753/https://freedomhouse.org/report/freedom-press/2015/tunisia). 23 April 2015. Archived from [the original](https://freedomhouse.org/report/freedom-press/2015/tunisia) on 21 April 2019. Retrieved 24 December 2015.
+  280. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-286 "Jump up") ["تونس: مرسوم رئاسي يقضي بالسجن 5 سنوات لكل من ينشر "أخبارا كاذبة" أو "إشاعات""](https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D8%A8%D9%8A%D8%A9/20220917-%D8%AA%D9%88%D9%86%D8%B3-%D9%85%D8%B1%D8%B3%D9%88%D9%85-%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A-%D9%8A%D9%82%D8%B6%D9%8A-%D8%A8%D8%A7%D9%84%D8%B3%D8%AC%D9%86-5-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%84%D9%83%D9%84-%D9%85%D9%86-%D9%8A%D9%86%D8%B4%D8%B1-%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7-%D9%83%D8%A7%D8%B0%D8%A8%D8%A9-%D8%A3%D9%88-%D8%A5%D8%B4%D8%A7%D8%B9%D8%A7%D8%AA) [Tunisia: Presidential Decree Imposing a Five-Year Imprisonment for Anyone Who Spreads "False News" or "Rumours"]. _فرانس 24 /[France 24](https://en.wikipedia.org/wiki/France_24 "France 24")_ (in Arabic). 17 September 2022. Retrieved 18 July 2023.
+  281. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-287 "Jump up") ["Tunisia win Cup of Nations"](https://news.bbc.co.uk/sport2/hi/football/africa/3485991.stm). _BBC News_. 14 February 2004. Retrieved 19 January 2013.
+  282. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-288 "Jump up") ["Previous winners of major international cups And tournaments: the African Cup of Nations"](http://www.napit.co.uk/viewus/infobank/football/africiannationscup.php). Napit.co.uk. Retrieved 8 January 2013.
+  283. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-289 "Jump up") ["Tunisian handball team wins 2010 African Cup of Nations"](http://www.tunisiadaily.com/2010/02/20/tunisian-handball-team-wins-2010-african-cup-of-nations-tunisia-online-news.html). Tunisia Daily. 20 February 2010. Retrieved 8 January 2013.`{{cite web[](https://en.wikipedia.org/wiki/Template:Cite_web "Template:Cite web")}}`: CS1 maint: deprecated archival service ([link](https://en.wikipedia.org/wiki/Category:CS1_maint:_deprecated_archival_service "Category:CS1 maint: deprecated archival service"))
+  284. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-290 "Jump up") Nxumalo, Lee (20 December 2020). ["Basketball's next frontier is Africa"](https://web.archive.org/web/20210116062357/https://www.newframe.com/basketballs-next-frontier-is-africa/). _New Frame_. Archived from [the original](https://www.newframe.com/basketballs-next-frontier-is-africa/) on 16 January 2021. Retrieved 11 January 2021.
+  285. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-291 "Jump up") ["Team Profile: Is a three-peat in sight for Tunisia?"](https://www.fiba.basketball/en/events/fiba-afrobasket-2025/news/team-profile-is-a-three-peat-in-sight-for-tunisia). _www.fiba.basketball_. 6 August 2025. Retrieved 24 September 2025.
+  286. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-292 "Jump up") ["Tunisia: FIBA Men's AfroBasket 2025 Qualifiers Team Preview | AfricaBasket"](https://www.africabasket.net/articles/tunisia-fiba-mens-afrobasket-2025-qualifiers-team-preview). _www.africabasket.net_. Retrieved 24 September 2025.
+  287. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-293 "Jump up") Gilbert E. Odd (1989). _Encyclopedia of Boxing_. Book Sales. p.108. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-1-55521-395-4](https://en.wikipedia.org/wiki/Special:BookSources/978-1-55521-395-4 "Special:BookSources/978-1-55521-395-4").
+  288. [↑](https://en.wikipedia.org/wiki/Tunisia#cite_ref-294 "Jump up") Lohn, John (2010). [_Historical Dictionary of Competitive Swimming_](https://books.google.com/books?id=RWLKhp7HEkMC&pg=PA95). Scarecrow Press. p.95. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-8108-6775-8](https://en.wikipedia.org/wiki/Special:BookSources/978-0-8108-6775-8 "Special:BookSources/978-0-8108-6775-8").
+
+
+## Further reading
+  * Steel, Catherine (2013). [_The End of the Roman Republic 146 to 44 BC_](https://books.google.com/books?id=X9iqBgAAQBAJ). [Edinburgh University Press](https://en.wikipedia.org/wiki/Edinburgh_University_Press "Edinburgh University Press"). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)")[978-0-7486-2902-2](https://en.wikipedia.org/wiki/Special:BookSources/978-0-7486-2902-2 "Special:BookSources/978-0-7486-2902-2"). Retrieved 21 November 2022.
+
+
+## External links
+[Library resources](https://en.wikipedia.org/wiki/Wikipedia:The_Wikipedia_Library "Wikipedia:The Wikipedia Library") about   
+**Tunisia**
+* * *
+  * [Resources in your library](https://ftl.toolforge.org/cgi-bin/ftl?st=wp&su=Tunisia)
+  * [Resources in other libraries](https://ftl.toolforge.org/cgi-bin/ftl?st=wp&su=Tunisia&library=0CHOOSE0)
+
+
+  * [Key Development Forecasts for Tunisia](https://www.ifs.du.edu/ifs/frm_CountryProfile.aspx?Country=TN) from [International Futures](https://en.wikipedia.org/wiki/International_Futures "International Futures")
+
+
+### Government
+  * [Tunisia Government Portal](http://www.tunisie.gov.tn) – gateway to government sites
+  * [Presidency](https://www.carthage.tn) – official website of the president of Tunisia
+  * [Prime Minister](https://pm.gov.tn) – official website of the prime minister of Tunisia
+  * [Statistics](https://www.ins.tn) – official website of National Institute of Statistics
+
+
+### History
+  * ["History"](https://www.inp2020.tn/ar/inp_tunisie/les-traces-de-lhomme-en-tunisie/) – Tunisian History at National Heritage Institute
+
+
+### Tourism
+  * [Discover Tunisia](https://www.discovertunisia.com/en) – Tunisia's official tourism portal
+
+
+### Maps
+  * ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/20px-Internet-web-browser.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)[Wikimedia Atlas of Tunisia](https://commons.wikimedia.org/wiki/Atlas%20of%20Tunisia "commons:Atlas of Tunisia")
+  * [![icon](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/20px-Openstreetmap_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Openstreetmap_logo.svg) Geographic data related to [Tunisia](https://www.openstreetmap.org/relation/192757) at [OpenStreetMap](https://en.wikipedia.org/wiki/OpenStreetMap "OpenStreetMap")
+
+  
+|  show
+  * [v](https://en.wikipedia.org/wiki/Template:Tunisia_topics "Template:Tunisia topics")
+  * [t](https://en.wikipedia.org/wiki/Template_talk:Tunisia_topics "Template talk:Tunisia topics")
+  * [e](https://en.wikipedia.org/wiki/Special:EditPage/Template:Tunisia_topics "Special:EditPage/Template:Tunisia topics")
+
+[Tunisia](https://en.wikipedia.org/wiki/Tunisia)articles  |  
+| --- |  
+|  showRelated articles  |  
+| --- |  
+[Portals](https://en.wikipedia.org/wiki/Wikipedia:Contents/Portals "Wikipedia:Contents/Portals"):
+  * [![map](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/20px-Africa_%28orthographic_projection%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Africa_\(orthographic_projection\).svg) [Africa](https://en.wikipedia.org/wiki/Portal:Africa "Portal:Africa")
+  * [![icon](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/P_countries-vector.svg/40px-P_countries-vector.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:P_countries-vector.svg) [Countries](https://en.wikipedia.org/wiki/Portal:Countries "Portal:Countries")
+
+
+**Tunisia** at Wikipedia's [sister projects](https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_sister_projects "Wikipedia:Wikimedia sister projects"):
+  * [![Wikimedia Commons logo](https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Commons-logo.svg)[**Media**](https://commons.wikimedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3%20/%20Tunest%20/%20Tunisie "c:تونس / Tunest / Tunisie") from Commons
+  * ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/20px-Wikiquote-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)[**Quotations**](https://en.wikiquote.org/wiki/Tunisia "q:Tunisia") from Wikiquote
+  * [![Wikivoyage logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/20px-Wikivoyage-Logo-v3-icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Wikivoyage-Logo-v3-icon.svg)[**Travel guides**](https://en.wikivoyage.org/wiki/Tunisia "voy:Tunisia") from Wikivoyage
+
+  
+|  show [Authority control databases](https://en.wikipedia.org/wiki/Help:Authority_control "Help:Authority control") [![Edit this at Wikidata](https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948#identifiers "Edit this at Wikidata")  |  
+| --- |  
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png) WikiMiniAtlas
+[34°N 9°E﻿ / ﻿34°N 9°E﻿ / 34; 9](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=34_N_9_E_scale:5000000)
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457](https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457)"
+[Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 
+  * [Tunisia](https://en.wikipedia.org/wiki/Category:Tunisia "Category:Tunisia")
+  * [1956 establishments in Tunisia](https://en.wikipedia.org/wiki/Category:1956_establishments_in_Tunisia "Category:1956 establishments in Tunisia")
+  * [Countries and territories where Arabic is an official language](https://en.wikipedia.org/wiki/Category:Countries_and_territories_where_Arabic_is_an_official_language "Category:Countries and territories where Arabic is an official language")
+  * [Countries in Africa](https://en.wikipedia.org/wiki/Category:Countries_in_Africa "Category:Countries in Africa")
+  * [Maghrebi countries](https://en.wikipedia.org/wiki/Category:Maghrebi_countries "Category:Maghrebi countries")
+  * [Member states of the African Union](https://en.wikipedia.org/wiki/Category:Member_states_of_the_African_Union "Category:Member states of the African Union")
+  * [Member states of the Arab League](https://en.wikipedia.org/wiki/Category:Member_states_of_the_Arab_League "Category:Member states of the Arab League")
+  * [Member states of the Organisation internationale de la Francophonie](https://en.wikipedia.org/wiki/Category:Member_states_of_the_Organisation_internationale_de_la_Francophonie "Category:Member states of the Organisation internationale de la Francophonie")
+  * [Member states of the Organisation of Islamic Cooperation](https://en.wikipedia.org/wiki/Category:Member_states_of_the_Organisation_of_Islamic_Cooperation "Category:Member states of the Organisation of Islamic Cooperation")
+  * [Member states of the Union for the Mediterranean](https://en.wikipedia.org/wiki/Category:Member_states_of_the_Union_for_the_Mediterranean "Category:Member states of the Union for the Mediterranean")
+  * [Member states of the United Nations](https://en.wikipedia.org/wiki/Category:Member_states_of_the_United_Nations "Category:Member states of the United Nations")
+  * [Countries in North Africa](https://en.wikipedia.org/wiki/Category:Countries_in_North_Africa "Category:Countries in North Africa")
+  * [Saharan countries](https://en.wikipedia.org/wiki/Category:Saharan_countries "Category:Saharan countries")
+  * [States and territories established in 1956](https://en.wikipedia.org/wiki/Category:States_and_territories_established_in_1956 "Category:States and territories established in 1956")
+
+
+Hidden categories: 
+  * [Articles with short description](https://en.wikipedia.org/wiki/Category:Articles_with_short_description "Category:Articles with short description")
+  * [Short description matches Wikidata](https://en.wikipedia.org/wiki/Category:Short_description_matches_Wikidata "Category:Short description matches Wikidata")
+  * [Wikipedia indefinitely semi-protected pages](https://en.wikipedia.org/wiki/Category:Wikipedia_indefinitely_semi-protected_pages "Category:Wikipedia indefinitely semi-protected pages")
+  * [Wikipedia indefinitely move-protected pages](https://en.wikipedia.org/wiki/Category:Wikipedia_indefinitely_move-protected_pages "Category:Wikipedia indefinitely move-protected pages")
+  * [Use dmy dates from July 2024](https://en.wikipedia.org/wiki/Category:Use_dmy_dates_from_July_2024 "Category:Use dmy dates from July 2024")
+  * [Articles containing Arabic-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Arabic-language_text "Category:Articles containing Arabic-language text")
+  * [Articles containing explicitly cited English-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_explicitly_cited_English-language_text "Category:Articles containing explicitly cited English-language text")
+  * [Pages using gadget WikiMiniAtlas](https://en.wikipedia.org/wiki/Category:Pages_using_gadget_WikiMiniAtlas "Category:Pages using gadget WikiMiniAtlas")
+  * [Pages using the Phonos extension](https://en.wikipedia.org/wiki/Category:Pages_using_the_Phonos_extension "Category:Pages using the Phonos extension")
+  * [Pages with Arabic IPA](https://en.wikipedia.org/wiki/Category:Pages_with_Arabic_IPA "Category:Pages with Arabic IPA")
+  * [Pages including recorded pronunciations](https://en.wikipedia.org/wiki/Category:Pages_including_recorded_pronunciations "Category:Pages including recorded pronunciations")
+  * [Articles containing French-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_French-language_text "Category:Articles containing French-language text")
+  * [Pages with French IPA](https://en.wikipedia.org/wiki/Category:Pages_with_French_IPA "Category:Pages with French IPA")
+  * [CS1 French-language sources (fr)](https://en.wikipedia.org/wiki/Category:CS1_French-language_sources_\(fr\) "Category:CS1 French-language sources \(fr\)")
+  * [Articles with French-language sources (fr)](https://en.wikipedia.org/wiki/Category:Articles_with_French-language_sources_\(fr\) "Category:Articles with French-language sources \(fr\)")
+  * [Webarchive template wayback links](https://en.wikipedia.org/wiki/Category:Webarchive_template_wayback_links "Category:Webarchive template wayback links")
+  * [Articles with text in Berber languages](https://en.wikipedia.org/wiki/Category:Articles_with_text_in_Berber_languages "Category:Articles with text in Berber languages")
+  * [CS1: long volume value](https://en.wikipedia.org/wiki/Category:CS1:_long_volume_value "Category:CS1: long volume value")
+  * [Articles containing Russian-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Russian-language_text "Category:Articles containing Russian-language text")
+  * [Articles containing Spanish-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Spanish-language_text "Category:Articles containing Spanish-language text")
+  * [Wikipedia articles incorporating a citation from EB9](https://en.wikipedia.org/wiki/Category:Wikipedia_articles_incorporating_a_citation_from_EB9 "Category:Wikipedia articles incorporating a citation from EB9")
+  * [Wikipedia articles incorporating a citation from the 1911 Encyclopaedia Britannica with Wikisource reference](https://en.wikipedia.org/wiki/Category:Wikipedia_articles_incorporating_a_citation_from_the_1911_Encyclopaedia_Britannica_with_Wikisource_reference "Category:Wikipedia articles incorporating a citation from the 1911 Encyclopaedia Britannica with Wikisource reference")
+  * [CS1: unfit URL](https://en.wikipedia.org/wiki/Category:CS1:_unfit_URL "Category:CS1: unfit URL")
+  * [CS1 German-language sources (de)](https://en.wikipedia.org/wiki/Category:CS1_German-language_sources_\(de\) "Category:CS1 German-language sources \(de\)")
+  * [CS1 Italian-language sources (it)](https://en.wikipedia.org/wiki/Category:CS1_Italian-language_sources_\(it\) "Category:CS1 Italian-language sources \(it\)")
+  * [Pages using multiple image with auto scaled images](https://en.wikipedia.org/wiki/Category:Pages_using_multiple_image_with_auto_scaled_images "Category:Pages using multiple image with auto scaled images")
+  * [Source attribution](https://en.wikipedia.org/wiki/Category:Source_attribution "Category:Source attribution")
+  * [Articles containing potentially dated statements from 2008](https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2008 "Category:Articles containing potentially dated statements from 2008")
+  * [All articles containing potentially dated statements](https://en.wikipedia.org/wiki/Category:All_articles_containing_potentially_dated_statements "Category:All articles containing potentially dated statements")
+  * [Articles containing potentially dated statements from 2006](https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2006 "Category:Articles containing potentially dated statements from 2006")
+  * [Articles containing potentially dated statements from 2015](https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2015 "Category:Articles containing potentially dated statements from 2015")
+  * [Articles containing potentially dated statements from 2011](https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2011 "Category:Articles containing potentially dated statements from 2011")
+  * [All articles with incomplete citations](https://en.wikipedia.org/wiki/Category:All_articles_with_incomplete_citations "Category:All articles with incomplete citations")
+  * [Articles with incomplete citations from June 2022](https://en.wikipedia.org/wiki/Category:Articles_with_incomplete_citations_from_June_2022 "Category:Articles with incomplete citations from June 2022")
+  * [All articles with dead external links](https://en.wikipedia.org/wiki/Category:All_articles_with_dead_external_links "Category:All articles with dead external links")
+  * [Articles with dead external links from June 2016](https://en.wikipedia.org/wiki/Category:Articles_with_dead_external_links_from_June_2016 "Category:Articles with dead external links from June 2016")
+  * [Articles containing Tunisian Arabic-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Tunisian_Arabic-language_text "Category:Articles containing Tunisian Arabic-language text")
+  * [CS1 Arabic-language sources (ar)](https://en.wikipedia.org/wiki/Category:CS1_Arabic-language_sources_\(ar\) "Category:CS1 Arabic-language sources \(ar\)")
+  * [CS1 maint: deprecated archival service](https://en.wikipedia.org/wiki/Category:CS1_maint:_deprecated_archival_service "Category:CS1 maint: deprecated archival service")
+  * [Pages using Sister project links with hidden wikidata](https://en.wikipedia.org/wiki/Category:Pages_using_Sister_project_links_with_hidden_wikidata "Category:Pages using Sister project links with hidden wikidata")
+  * [Coordinates on Wikidata](https://en.wikipedia.org/wiki/Category:Coordinates_on_Wikidata "Category:Coordinates on Wikidata")
+
+
+  * This page was last edited on 11 August 2026, at 17:45 (UTC).
+  * Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
+  * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
+
+
+  * [Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
+  * [About Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:About)
+  * [Disclaimers](https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer)
+  * [Contact Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Contact_us)
+  * [Legal & safety contacts](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
+  * [Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
+  * [Developers](https://developer.wikimedia.org)
+  * [Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
+  * [Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
+  * [Mobile view](https://en.wikipedia.org/w/index.php?title=Tunisia&mobileaction=toggle_view_mobile)
+  * [Edit preview settings](https://en.wikipedia.org/wiki/Tunisia)
+
+
+  * [![Wikimedia Foundation](https://en.wikipedia.org/static/images/footer/wikimedia.svg)](https://www.wikimedia.org/)
+  * [![Powered by MediaWiki](https://en.wikipedia.org/w/resources/assets/mediawiki_compact.svg)](https://www.mediawiki.org/)
+
+
+Search
 Tunisia
-. A French protectorate in North Africa..."
-[
-45
-]
-↑
-The new constitution, which increased presidential powers, was passed in a
-referendum
-the following year with a turnout of only around 30%, amidst a widespread boycott.
-References
-↑
-"Tunisian Constitution, Article 1"
-(PDF)
-. 26 January 2014. Archived from
-the original
-(PDF)
-on 9 February 2014
-. Retrieved
-10 February
-2014
-.
-Translation by the University of Bern: "Tunisia is a free State, independent and sovereign; its religion is the Islam, its language is Arabic, and its form is the Republic."
-↑
-Arabic, Tunisian Spoken
-. Ethnologue (19 February 1999). Retrieved on 5 September 2015.
-↑
-"Atlas of the world's languages in danger
-: North Africa and the Middle East"
-.
-↑
-"Endangered Languages"
-.
-↑
-"Tunisia Language Status"
-.
-↑
-"OLAC resources in and about the Nafusi language"
-.
-↑
-"Language Classification"
-.
-↑
-"Languages of Tunisia"
-.
-↑
-"What Languages Are Spoken In Tunisia?"
-.
-↑
-Stone, Russell A.; Simmons, John (1976).
-Change in Tunisia: Studies in the Social Sciences
-. SUNY Press.
-ISBN
-9780873953115
-.
-↑
-Gabsi, Z. (2003).
-An outline of the Shilha (Berber) vernacular of Douiret (Southern Tunisia)
-. PhD Thesis, Western Sydney University.
-↑
-"CurriculumOFENGLISH"
-(PDF)
-. 2019.
-↑
-Abdeljaoued, Marii (2023).
-"English-medium instruction in Tunisia: Perspectives of students"
-.
-Frontiers in Psychology
-.
-14
-1112255.
-doi
-:
-10.3389/fpsyg.2023.1112255
-.
-PMC
-10063842
-.
-PMID
-37008855
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-"Tunisia CIA World Factbook"
-. 13 March 2024. Archived from
-the original
-on 10 January 2021.
-↑
-"Berbers Populations Distribution"
-. 12 March 2004.
-↑
-"Q&A: The Berbers"
-. 12 March 2004.
-↑
-"The Jews of Tunisia"
-.
-www.pjvoice.com
-.
-↑
-"New survey reveals drop-off in religiosity across Arab world, especially North Africa"
-.
-↑
-"2. Young adults around the world are less religious by several measures"
-. 13 June 2018.
-↑
-"National Institute of Statistics"
-.
-1
-2
-3
-4
-"World Economic Outlook Database, April 2025"
-.
-↑
-"GINI index"
-. World Bank
-. Retrieved
-19 January
-2013
-.
-↑
-Human Development Report 2025 - A matter of choice: People and possibilities in the age of AI
-. United Nations Development Programme. 6 May 2025. Archived from
-the original
-on 6 May 2025
-. Retrieved
-6 May
-2025
-.
-↑
-"Report on the Delegation of تونس"
-. Internet Corporation for Assigned Names and Numbers. 2010. Archived from
-the original
-on 31 May 2012
-. Retrieved
-8 November
-2010
-.
-↑
-Wells, John C. (2008),
-Longman Pronunciation Dictionary
-(3rd
-ed.), Longman,
-ISBN
-978-1-4058-8118-0
-↑
-"Embassy of the Republic of Tunisia"
-. Embassy of the Republic of Tunisia
-. Retrieved
-30 September
-2021
-.
-↑
-Holes, Clive (2018).
-Arabic Historical Dialectology: Linguistic and Sociolinguistic Approaches
-. Oxford University Press. p.
-42.
-ISBN
-978-0-19-100506-0
-.
-↑
-"Tunisie: les législatives fixées au 26 octobre et la présidentielle au 23 novembre"
-[
-Tunisia: legislative elections fixed for 26 October and presidential elections for 23 November
-]
-.
-Jeune Afrique
-(in French). 25 June 2014.
-↑
-"Tunisia holds first post-revolution presidential poll"
-.
-BBC News
-. 23 November 2014.
-↑
-"Democracy Index 2021"
-.
-The Economist
-. Retrieved
-22 February
-2022
-.
-↑
-"Democracy Index 2021: The China challenge"
-.
-Economist Intelligence Unit
-. pp.
-6–
-7. Archived from
-the original
-on 8 November 2022
-. Retrieved
-2 March
-2022
-.
-↑
-"Tunisia: Freedom in the World 2025 Country Report"
-.
-Freedom House
-. Retrieved
-3 November
-2025
-.
-↑
-(in French)
-"Pourquoi l'Italie de Matteo Renzi se tourne vers la Tunisie avant l'Europe"
-(Why Matteo Renzi's Italy is turning to Tunisia before Europe). JOL Journalism Online Press (28 February 2014).
-Archived
-10 August 2018 at the
-Wayback Machine
-. Retrieved on 5 September 2015.
-↑
-Ghanmi, Monia (12 September 2014).
-"La Tunisie renforce ses relations avec l'Italie"
-[
-Tunisia strengthens relations with Italy
-]
-.
-Magharebia
-(in French). Archived from
-the original
-on 14 September 2014.
-1
-2
-3
-4
-Room, Adrian (2006).
-"Tunisia"
-.
-Placenames of the World: Origins and Meanings of the Names for 6,600 Countries, Cities, Territories, Natural Features, and Historic Sites
-. McFarland. p.
-385.
-ISBN
-978-0-7864-2248-7
-.
-↑
-Everett-Heath, John (2005).
-"Tunisia"
-.
-The Concise Dictionary of World Place-names
-. Oxford University Press. p.
-534.
-ISBN
-978-0-19-860537-9
-.
-↑
-Rossi, Peter M.; White, Wayne Edward (1980).
-Articles on the Middle East, 1947–1971: A Cumulation of the Bibliographies from the Middle East Journal
-. Pierian Press,
-University of Michigan
-. p.
-132.
-↑
-Taylor, Isaac (2008).
-Names and Their Histories: A Handbook of Historical Geography and Topographical Nomenclature
-. BiblioBazaar, LLC. p.
-281.
-ISBN
-978-0-559-29668-0
-.
-↑
-Houtsma, Martijn Theodoor (1987).
-E.J. Brill's First Encyclopaedia of Islam, 1913–1936
-. Brill. p.
-838.
-ISBN
-978-90-04-08265-6
-.
-↑
-Livy
-(2006). Yardley, John & Hoyos, Dexter (eds.).
-History of Rome
-. Vol.
-Hannibal's War: Books Twenty-one to Thirty. Oxford University Press. p.
-705.
-ISBN
-978-0-19-283159-0
-.
-↑
-Baynes, T. S.; Smith, W. R., eds. (1888).
-"Tunis, Regency of"
-.
-Encyclopædia Britannica
-. Vol.
-XXIII (9th
-ed.). New York: Charles Scribner's Sons. p.
-619.
-↑
-Chisholm, Hugh
-, ed. (1911).
-"Tunisia"
-.
-Encyclopædia Britannica
-. Vol.
-XXVII (11th
-ed.). Cambridge University Press. p.
-393.
-↑
-"Tunis"
-.
-The New International Encyclopædia
-. Vol.
-XIX. Dodd, Mead and Company. 1905. p.
-535.
-↑
-"Tunis"
-.
-The New International Encyclopædia
-. Vol.
-XXII. Dodd, Mead and Company. 1916. p.
-545.
-↑
-"Tunis"
-.
-The New International Encyclopædia
-. Vol.
-XXV. Dodd, Mead and Company. 1928. p.
-1311.
-↑
-"Tunisian".
-Oxford English Dictionary
-. Vol.
-18 (2nd
-ed.).
-Oxford University Press
-. 1989. p.
-674.
-ISBN
-0-19-861230-3
-.
-↑
-"Tunisine".
-Oxford English Dictionary
-. Vol.
-18 (2nd
-ed.).
-Oxford University Press
-. 1989. p.
-674.
-ISBN
-0-19-861230-3
-.
-↑
-Banjamin Isaac,
-The Invention of Racism in Classical Antiquity
-, Princeton University Press, 2013 p.147
-↑
-"Carthage and the Numidians"
-. Hannibalbarca.webspace.virginmedia.com. Archived from
-the original
-on 31 March 2012
-. Retrieved
-28 October
-2011
-.
-↑
-"Numidians (DBA II/40) and Moors (DBA II/57)"
-. Fanaticus.org. 12 December 2001. Archived from the original on 27 September 2011
-. Retrieved
-28 October
-2011
-.
-↑
-"Numidia (ancient region, Africa)"
-.
-Britannica Online Encyclopedia
-. Retrieved
-28 October
-2011
-.
-↑
-"The City of Carthage: From Dido to the Arab Conquest"
-(PDF)
-. Archived from
-the original
-(PDF)
-on 10 August 2012
-. Retrieved
-8 January
-2013
-.
-↑
-Appian
-.
-The Punic
-Wars
-. livius.org
-↑
-Steel 2013
-, p.
-9–10.
-↑
-"Donatist"
-.
-Encyclopædia Britannica
-.
-↑
-Bury, John Bagnell (1958)
-History of the Later Roman Empire from the Death of Theodosius I. to the Death of Justinian
-, Part 2, Courier Corporation. pp.124–148
-↑
-Davidson, Linda Kay; Gitlitz, David Martin (2002).
-Pilgrimage: From the Ganges to Graceland: An Encyclopedia
-. ABC-CLIO. p.
-302.
-ISBN
-978-1-57607-004-8
-.
-↑
-Bosworth, Clifford Edmund (2007).
-Historic Cities of the Islamic World
-. Brill. p.
-264.
-ISBN
-978-90-04-15388-2
-.
-↑
-"Kairouan inscription as World Heritage"
-. Kairouan.org. Archived from
-the original
-on 22 April 2012
-. Retrieved
-2 May
-2010
-.
-↑
-Jonathan Conant (2012).
-Staying Roman, Conquest and Identity in Africa and the Mediterranean, 439–700
-. Cambridge University Press. pp. 358–378.
-ISBN
-978-1-107-53072-0
-1
-2
-3
-4
-Lapidus, Ira M. (2002).
-A History of Islamic Societies
-. Cambridge University Press. pp.
-302–
-303.
-ISBN
-978-0-521-77933-3
-.
-↑
-Ham, Anthony; Hole, Abigail; Willett, David. (2004).
-Tunisia
-(3rd
-ed.).
-Lonely Planet
-. p.
-65.
-ISBN
-978-1-74104-189-7
-.
-1
-2
-3
-Stearns, Peter N.; Leonard Langer, William (2001).
-The Encyclopedia of World History: Ancient, Medieval, and Modern, Chronologically Arranged
-(6th
-ed.).
-Houghton Mifflin Harcourt
-. pp.
-129–
-131.
-ISBN
-978-0-395-65237-4
-.
-↑
-Houtsma, M. Th. (1987).
-E. J. Brill's First Encyclopaedia of Islam, 1913–1936
-. BRILL. p.
-852.
-ISBN
-978-90-04-08265-6
-.
-1
-2
-Singh, Nagendra Kr (2000).
-International encyclopaedia of islamic dynasties
-. Vol.
-4: A Continuing Series. Anmol. pp.
-105–
-112.
-ISBN
-978-81-261-0403-1
-.
-↑
-Ki-Zerbo, J.; Mokhtar, G.; Boahen, A. Adu; Hrbek, I. (1992).
-General history of Africa
-. James Currey Publishers. pp.
-171–
-173.
-ISBN
-978-0-85255-093-9
-.
-↑
-Abulafia,
-The Norman Kingdom of Africa
-, 27.
-↑
-"Populations Crises and Population Cycles, Claire Russell and W.M.S. Russell"
-. Galtoninstitute.org.uk. Archived from
-the original
-on 27 May 2013
-. Retrieved
-19 January
-2013
-.
-1
-2
-Hrbek, Ivan (1992).
-Africa from the Seventh to the Eleventh Century
-. UNESCO. International Scientific Committee for the Drafting of a General History of Africa. J. Currey. p.
-34.
-ISBN
-0-85255-093-6
-.
-↑
-Baadj, Amar (2013).
-"Saladin and the Ayyubid Campaigns in the Maghrib"
-.
-Al-Qanṭara
-.
-34
-(2):
-267–
-295.
-doi
-:
-10.3989/alqantara.2013.010
-.
-ISSN
-0211-3589
-.
-↑
-Bosworth, Clifford Edmund (2004).
-The New Islamic Dynasties: A Chronological and Genealogical Manual
-. Edinburgh University Press. p.
-46.
-ISBN
-978-0-7486-2137-8
-.
-↑
-Bosworth, Clifford Edmund (2004).
-The New Islamic Dynasties: A Chronological and Genealogical Manual
-. Edinburgh University Press. p.
-55.
-ISBN
-978-0-7486-2137-8
-.
-↑
-Panzac, Daniel (2005).
-Barbary Corsairs: The End of a Legend, 1800–1820
-. BRILL. p.
-309.
-ISBN
-978-90-04-12594-0
-.
-↑
-Clancy-Smith, Julia A. (1997).
-Rebel and Saint: Muslim Notables, Populist Protest, Colonial Encounters (Algeria and Tunisia, 1800–1904)
-. University of California Press. p.
-157.
-ISBN
-978-0-520-92037-8
-.
-↑
-Toussaint, Eric (13 June 2016).
-"Debt: how France appropriated Tunisia"
-.
-CADTM
-. Archived from
-the original
-on 9 September 2025
-. Retrieved
-23 September
-2025
-.
-↑
-"Modern History of the Arab Countries by Vladimir Borisovich Lutsky 1969"
-.
-www.marxists.org
-. Retrieved
-23 September
-2025
-.
-↑
-Gearon, Eamonn (2011).
-The Sahara: A Cultural History
-. Oxford University Press. p.
-117.
-ISBN
-978-0-19-986195-8
-.
-↑
-Ion Smeaton Munro (1933).
-Through fascism to world power: a history of the revolution in Italy
-. A. Maclehose & co. p.
-221.
-↑
-Williamson, Gordon
-(1991).
-Afrikakorps 1941–43
-. Osprey. p.
-24.
-ISBN
-978-1-85532-130-4
-.
-Archived
-from the original on 1 January 2014
-. Retrieved
-20 June
-2015
-.
-↑
-Palmer, Michael A. (2010).
-The German Wars: A Concise History, 1859–1945
-. Zenith Imprint. p.
-199.
-ISBN
-978-0-7603-3780-6
-.
-1
-2
-3
-4
-5
-6
-7
-8
-Rivlin, Benjamin (1952). "The Tunisian Nationalist Movement: Four Decades of Evolution".
-Middle East Journal
-.
-6
-(2):
-167–
-193.
-ISSN
-0026-3141
-.
-JSTOR
-4322381
-.
-1
-2
-3
-4
-5
-6
-7
-Houssi, Leila El (2017). "The History and Evolution of Independence Movements in Tunisia".
-Oriente Moderno
-.
-97
-(1):
-67–
-88.
-doi
-:
-10.1163/22138617-12340139
-.
-ISSN
-0030-5472
-.
-JSTOR
-48572291
-.
-1
-2
-3
-4
-5
-6
-7
-8
-Levy, Henry L. (1955). "TUNISIA".
-The American Jewish Year Book
-.
-56
-:
-435–
-445.
-ISSN
-0065-8987
-.
-JSTOR
-23604900
-.
-↑
-"Tunisia profile"
-.
-BBC News
-. 1 November 2017
-. Retrieved
-5 April
-2020
-.
-↑
-"Tunisia Celebrates Independence Day"
-.
-AllAfrica.com
-. 20 March 2012.
-Archived
-from the original on 8 July 2015
-. Retrieved
-19 March
-2019
-.
-1
-2
-"Habib Bourguiba: Father of Tunisia"
-. BBC. 6 April 2000.
-↑
-Black, Ian (13 July 2010).
-"Amnesty International censures Tunisia over human rights"
-.
-The Guardian
-. London
-. Retrieved
-19 January
-2013
-.
-1
-2
-3
-"Tunisia Will Seek Loan From Public"
-.
-The New York Times
-. 23 May 1964.
-ProQuest
-115791987
-.
-↑
-Prial, Frank J. (3 October 1985).
-"Tunisia's Leader Bitter at the U.S."
-The New York Times
-.
-↑
-"Habib Bourguiba: Father of Tunisia"
-.
-BBC News
-(obituary)
-. Retrieved
-20 July
-2018
-.
-↑
-AP (7 November 1987).
-"A Coup Is Reported in Tunisia"
-.
-The New York Times
-. Retrieved
-2 May
-2010
-.
-↑
-Vely, Yannick (23 November 2009).
-"Ben Ali, sans discussion"
-. ParisMatch.com
-. Retrieved
-2 May
-2010
-.
-↑
-Ganley, Elaine; Barchfield, Jenny (17 January 2011).
-"Tunisians hail fall of ex-leader's corrupt family"
-.
-U-T San Diego
-. Sandiegounion-tribune.com. Archived from
-the original
-on 16 July 2011.
-↑
-Tsourapas, Gerasimos (2013). "The Other Side of a Neoliberal Miracle: Economic Reform and Political De-Liberalization in Ben Ali's Tunisia".
-Mediterranean Politics
-.
-18
-(1):
-23–
-41.
-doi
-:
-10.1080/13629395.2012.761475
-.
-S2CID
-154822868
-.
-↑
-"Tunisie: comment s'enrichit le clan Ben Ali?"
-[
-Tunisia: how did the Ben Ali clan get rich?
-]
-(in French). RadicalParty.org. Archived from
-the original
-on 8 October 2010
-. Retrieved
-2 May
-2010
-.
-↑
-"Caught in the Net: Tunisia's First Lady"
-.
-Foreign Policy
-. 13 December 2007.
-↑
-"Ajaccio – Un trafic de yachts entre la France et la Tunisie en procès"
-(in French). 30 September 2009. Archived from
-the original
-on 3 March 2016.
-↑
-Florence Beaugé (24 October 2009).
-"Le parcours fulgurant de Sakhr El-Materi, gendre du président tunisien Ben Ali"
-[
-The meteoric career of Sakhr El-Materi, son-in-law of Tunisian President Ben Ali
-]
-.
-Le Monde
-(in French). Archived from
-the original
-on 21 January 2011
-. Retrieved
-2 May
-2010
-.
-↑
-"Tunisia"
-. Amnesty International. Archived from
-the original
-on 9 May 2010
-. Retrieved
-2 May
-2010
-.
-↑
-"Protectionline.org"
-. Protectionline.org. 18 January 2010. Archived from
-the original
-on 29 April 2011
-. Retrieved
-2 May
-2010
-.
-↑
-"Droits de l'Homme: après le harcèlement, l'asphyxie"
-[
-Human rights: after harassment, asphyxiation
-]
-(in French). RFI.fr. 16 December 2004. Archived from
-the original
-on 5 May 2013
-. Retrieved
-2 May
-2010
-.
-↑
-"Dans le monde de l'après-11 septembre, seule la paix protège les libertés"
-. RSF.org. 22 October 2008. Archived from
-the original
-on 14 January 2011
-. Retrieved
-2 May
-2010
-.
-↑
-Yasmine Ryan
-(26 January 2011).
-"How Tunisia's revolution began"
-. Al Jazeera English
-. Retrieved
-13 February
-2011
-.
-↑
-"Wikileaks might have triggered Tunis' revolution"
-.
-Alarabiya
-. 15 January 2011
-. Retrieved
-13 February
-2011
-.
-↑
-Spencer, Richard (13 January 2011).
-"Tunisia riots: Reform or be overthrown, US tells Arab states amid fresh riots"
-.
-The Telegraph
-. London. Archived from
-the original
-on 10 October 2017
-. Retrieved
-14 January
-2011
-.
-↑
-Ryan, Yasmine (14 January 2011).
-"Tunisia's bitter cyberwar"
-.
-Al Jazeera English
-. Retrieved
-16 January
-2011
-.
-↑
-"Trade unions: the revolutionary social network at play in Egypt and Tunisia"
-. Defenddemocracy.org
-. Retrieved
-11 February
-2011
-.
-↑
-Tripp, Charles (2013).
-The power and the people: paths of resistance in the Middle East
-. New York: Cambridge University Press.
-ISBN
-978-0-521-80965-8
-.
-OCLC
-780063882
-.
-↑
-"When fleeing Tunisia, don't forget the gold"
-.
-Korea Times
-. 25 January 2011
-. Retrieved
-19 January
-2013
-.
-↑
-"Interim President Announces Election of National Constituent Assembly on July 24".
-Tunis Afrique Presse
-. 3 March 2011.
-↑
-"Tunisian PM Announces October Date for Elections".
-BBC Monitoring Middle East
-. 9 June 2011.
-↑
-El Amrani, Issandr; Lindsey, Ursula (8 November 2011).
-"Tunisia Moves to the Next Stage"
-.
-Middle East Report
-.
-Middle East Research and Information Project
-. Archived from
-the original
-on 15 September 2018
-. Retrieved
-1 January
-2019
-.
-↑
-Zavis, Alexandra (13 December 2011).
-"Former dissident sworn in as Tunisia's president"
-.
-Los Angeles Times
-. Retrieved
-13 December
-2011
-.
-↑
-"Tunisia's constitution will not be based on Sharia: Islamist party"
-. Al Arabiya. 27 March 2012
-. Retrieved
-18 February
-2013
-.
-↑
-Fleishman, Jeffrey (6 February 2013).
-"Tunisian opposition leader Chokri Belaid shot dead outside his home"
-.
-Los Angeles Times
-. Retrieved
-18 February
-2013
-.
-↑
-"Tunisia launches Truth and Dignity Commission"
-.
-UNDP
-. 9 June 2014. Archived from
-the original
-on 1 April 2019
-. Retrieved
-22 December
-2016
-.
-↑
-"The real reason Tunisia renewed its state of emergency"
-. Archived from
-the original
-on 20 December 2016.
-↑
-"The Nobel Peace Prize 2015". Nobel Foundation. Retrieved 15 December 2016.
-↑
-"Tunisian President Beji Caid Essebsi dies aged 92"
-.
-France 24
-. 25 July 2019.
-↑
-"Tunisia election: Kais Saied to become president"
-.
-BBC News
-. 14 October 2019
-. Retrieved
-26 March
-2021
-.
-↑
-"Tunisia's new president sworn in after surprise election win"
-.
-France 24
-. 23 October 2019.
-↑
-Yee, Vivian (26 July 2021).
-"Tunisia's Democracy Verges on Dissolution as President Moves to Take Control"
-.
-The New York Times
-.
-ISSN
-0362-4331
-. Archived from
-the original
-on 28 December 2021
-. Retrieved
-26 July
-2021
-.
-↑
-"Tunisian president sacks PM, suspends parliament after violent protests"
-.
-France 24
-. 25 July 2021
-. Retrieved
-26 July
-2021
-.
-↑
-"Tunisian president moves to cement one-man rule"
-.
-CNN
-. Reuters. 23 September 2021
-. Retrieved
-24 September
-2021
-.
-↑
-Amara, Tarek; Mcdowall, Angus (29 September 2021).
-"Tunisian leader names new PM with little experience at crisis moment"
-.
-Reuters
-. Retrieved
-13 October
-2021
-.
-↑
-"New Tunisian government sworn in"
-.
-Anadolu Agency
-. Tunis. 11 October 2021
-. Retrieved
-13 October
-2021
-.
-↑
-"Tunisia elected member of African Union security council"
-. Xinhua. 4 February 2022
-. Retrieved
-4 February
-2022
-.
-↑
-"Tunisia's talks with the IMF: What's at stake?"
-.
-Al Jazeera
-. AFP. 18 February 2022
-. Retrieved
-20 February
-2022
-.
-↑
-"Tunisia closes offices of opposition party Ennahdha after arresting leader"
-.
-France 24
-. 17 April 2023
-. Retrieved
-18 April
-2023
-.
-↑
-"Tunisia arrests opposition figure as crackdown escalates – DW – 10/04/2023"
-.
-dw.com
-. Retrieved
-5 October
-2023
-.
-↑
-"En Tunisie, l'opposante Abir Moussi placée en détention"
-.
-Le Monde.fr
-(in French). 4 October 2023
-. Retrieved
-5 October
-2023
-.
-↑
-"Tunisia detains Abir Moussi, prominent opponent of president"
-.
-Arab News
-. 4 October 2023
-. Retrieved
-5 October
-2023
-.
-↑
-red, ORF at/Agenturen (4 October 2023).
-"Tunesien: Erneut Oppositionspolitikerin festgenommen"
-.
-news.ORF.at
-(in German)
-. Retrieved
-5 October
-2023
-.
-↑
-"EU, Tunisia sign €1 billion deal to fight illegal migration – DW – 07/16/2023"
-.
-dw.com
-. Retrieved
-30 September
-2023
-.
-1
-2
-red, ORF at/Agenturen (30 September 2023).
-"Tunesien verschiebt Besuch von EU-Delegation zu Migration"
-.
-news.ORF.at
-(in German)
-. Retrieved
-30 September
-2023
-.
-↑
-"EU Commission Should Stop Ignoring Tunisia's Abuses Against Migrants | Human Rights Watch"
-. 28 September 2023
-. Retrieved
-30 September
-2023
-.
-↑
-"Migration as a weapon: Is Tunisia blackmailing the EU? – DW – 09/20/2023"
-.
-dw.com
-. Retrieved
-30 September
-2023
-.
-1
-2
-red, ORF at/Agenturen (1 October 2023).
-"Tunesien will nicht Grenzen anderer Länder überwachen"
-.
-news.ORF.at
-(in German)
-. Retrieved
-1 October
-2023
-.
-↑
-Redazione (1 October 2023).
-"La Tunisia: non possiamo proteggere le frontiere di altri paesi"
-.
-Il Domani d'Italia
-(in Italian)
-. Retrieved
-1 October
-2023
-.
-↑
-red, ORF at/Agenturen (3 October 2023).
-"Tunesien lehnt EU-Finanzhilfe wegen Migrationsabkommens ab"
-.
-news.ORF.at
-(in German)
-. Retrieved
-3 October
-2023
-.
-↑
-Amara, Tarek (2 October 2023).
-"Tunisia rejects EU financial aid, casting doubt on an immigration deal"
-.
-Reuters
-. Retrieved
-3 October
-2023
-.
-↑
-AfricaNews (3 October 2023).
-"Tunisia: President Kais Saied rejects EU financial aid on immigration"
-.
-Africanews
-. Retrieved
-3 October
-2023
-.
-↑
-"Tunisia can 'wire back' EU money if it doesn't want it: Commissioner"
-.
-euronews
-. 5 October 2023
-. Retrieved
-7 October
-2023
-.
-↑
-"Tunisian Authorities Raze Refugee Camps That Housed 7,000"
-.
-Democracy Now!
-. Retrieved
-1 May
-2025
-.
-↑
-"Tunisia dismantles encampments housing migrants stranded en route to Europe"
-.
-AP News
-. 10 April 2025
-. Retrieved
-1 May
-2025
-.
-↑
-"Tunisia election: Kais Saied secures second term with 91% of votes"
-.
-www.bbc.com
-.
-↑
-"Présentation générale du pays"
-. 2002. Archived from
-the original
-on 6 November 2022
-. Retrieved
-6 November
-2022
-.
-↑
-Ewan W., Anderson (2003).
-International Boundaries: Geopolitical Atlas
-. Psychology Press. p.
-816.
-ISBN
-978-1-57958-375-0
-.
-↑
-"Visit Tunis, Tunisia"
-.
-visitafrica.site
-. Archived from
-the original
-on 18 April 2021
-. Retrieved
-13 April
-2021
-.
-↑
-"Climate of Tunisia"
-. BBC. Archived from
-the original
-on 9 February 2011
-. Retrieved
-2 May
-2010
-.
-↑
-Aldosari, Ali (2006).
-Middle East, western Asia, and northern Africa
-. Marshall Cavendish. pp.
-1270–.
-ISBN
-978-0-7614-7571-2
-.
-↑
-Dinerstein, Eric; et
-al. (2017).
-"An Ecoregion-Based Approach to Protecting Half the Terrestrial Realm"
-.
-BioScience
-.
-67
-(6):
-534–
-545.
-doi
-:
-10.1093/biosci/bix014
-.
-ISSN
-0006-3568
-.
-PMC
-5451287
-.
-PMID
-28608869
-.
-↑
-"Tunisia holds first election under new constitution"
-.
-BBC News
-. 26 October 2014
-. Retrieved
-26 October
-2014
-.
-↑
-"EIU Democracy Index 2019"
-.
-infographics.economist.com
-.
-↑
-Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, Nazifa Alizada, David Altman, Michael Bernhard, Agnes Cornell, M. Steven Fish, Lisa Gastaldi, Haakon Gjerløw, Adam Glynn, Allen Hicken, Garry Hindle, Nina Ilchenko, Joshua Krusell, Anna Lührmann, Seraphine F. Maerz, Kyle L. Marquardt, Kelly McMann, Valeriya Mechkova, Juraj Medzihorsky, Pamela Paxton, Daniel Pemstein, Josefine Pernes, Johannes von Römer, Brigitte Seim, Rachel Sigman, Svend-Erik Skaaning, Jeffrey Staton, Aksel Sundström, Eitan Tzelgov, Yi-ting Wang, Tore Wig, Steven Wilson and Daniel Ziblatt. 2021. "V-Dem [Country–Year/Country–Date] Dataset v11.1" Varieties of Democracy (V-Dem) Project.
-https://doi.org/10.23696/vdemds21
-.
-1
-2
-3
-This article incorporates text from this source, which is in the
-public domain
-:
-"Tunisia (03/09/12)"
-. US Department of State. 9 March 2012.
-↑
-"TUNISIA. Majlis Al-Nuwab (Chamber of Deputies)"
-. Inter-Parliamentary Union
-. Retrieved
-19 January
-2013
-.
-↑
-"49 femmes élues à l'assemblée constituante: 24% des 217 sièges"
-.
-Leaders
-. 28 October 2011
-. Retrieved
-27 October
-2014
-.
-↑
-Ben Hamadi, Monia (29 April 2014).
-"Tunisie: Selma Znaidi, une femme de plus à l'Assemblée"
-.
-Al Huffington Post
-. Archived from the original on 28 October 2014
-. Retrieved
-27 October
-2014
-.
-↑
-"Tunisia holds first post-revolution presidential poll"
-.
-BBC News
-. 23 November 2014
-. Retrieved
-23 November
-2014
-.
-1
-2
-3
-"Tunisia"
-(PDF)
-. Reunite International. Archived from
-the original
-(PDF)
-on 29 April 2014
-. Retrieved
-18 February
-2013
-.
-↑
-"State Department page on Tunisia"
-. US Department of State. 19 March 2009
-. Retrieved
-2 May
-2010
-.
-↑
-Major Trends Affecting Families: A Background Document
-. United Nations Publications. 2003. p.
-190.
-ISBN
-978-92-1-130252-3
-.
-Archived
-from the original on 9 May 2013
-. Retrieved
-10 February
-2013
-.
-↑
-Tamanna, Nowrin (December 2008). "Personal status laws in Morocco and Tunisia: a comparative exploration of the possibilities for equality-enhancing reform in Bangladesh".
-Feminist Legal Studies
-.
-16
-(3):
-323–
-343.
-doi
-:
-10.1007/s10691-008-9099-9
-.
-S2CID
-144717130
-.
-↑
-Amara, Tarek (25 May 2022).
-"Tunisian president decrees a referendum for new constitution"
-.
-Reuters
-. Retrieved
-26 May
-2022
-.
-↑
-"Tunisia referendum: Voters give president near unchecked power"
-.
-BBC News
-. 27 July 2022.
-↑
-"EU-Maghreb ties: Reversing the old power asymmetry – DW – 10/07/2023"
-.
-dw.com
-. Retrieved
-8 October
-2023
-.
-↑
-"Maghrebi Foreign Policies – A Comparative Analysis"
-.
-Archived
-from the original on 4 December 2021
-. Retrieved
-23 September
-2025
-.
-↑
-International Institute for Strategic Studies (February 2008).
-The Military Balance 2008
-. Taylor & Francis Group.
-ISBN
-978-1-85743-461-3
-.
-↑
-"Tunisia – Armed forces"
-. Nationsencyclopedia.com. 18 January 2011
-. Retrieved
-8 January
-2013
-.
-↑
-"2024 Global Peace Index"
-(PDF)
-.
-↑
-"Tunisia Governorates"
-. Statoids.com. Archived from
-the original
-on 27 September 2023
-. Retrieved
-2 May
-2010
-.
-↑
-"Portail de l'industrie Tunisienne"
-(in French). Tunisieindustrie.nat.tn. Archived from
-the original
-on 6 January 2013
-. Retrieved
-19 January
-2013
-.
-↑
-"The Global Competitiveness Index 2009–2010 rankings"
-(PDF)
-.
-weforum.org
-. Archived from
-the original
-(PDF)
-on 30 October 2010
-. Retrieved
-16 September
-2009
-.
-↑
-"GTZ in Tunisia"
-.
-gtz.de
-. GTZ. Archived from
-the original
-on 11 May 2011
-. Retrieved
-20 October
-2010
-.
-↑
-"Tunisia Corruption Profile"
-.
-Business Anti-Corruption Portal
-. Archived from
-the original
-on 14 July 2015
-. Retrieved
-14 July
-2015
-.
-↑
-"Trouble in paradise: How one vendor unmasked the 'economic miracle'
-"
-. France24. 11 January 2011
-. Retrieved
-28 October
-2011
-.
-↑
-Haouas, Ilham; Sayre, Edward; Yagoubi, Mahmoud (September 2012).
-"Youth Unemployment in Tunisia: Characteristics and Policy Responses"
-(PDF)
-.
-Topics in Middle Eastern and African Economies
-.
-14
-. Retrieved
-10 January
-2024
-.
-↑
-"Youth Inactivity and Unemployment".
-Tunisia: Breaking the Barriers to Youth Inclusion
-(PDF)
-(Report).
-World Bank
-. 1 November 2014
-. Retrieved
-10 January
-2024
-.
-↑
-Arous, Mohamed (14 September 2022).
-"To Support Youth, Tunisia Needs a New Approach to Development"
-.
-United States Institute of Peace
-. Archived from
-the original
-on 15 September 2022
-. Retrieved
-10 January
-2024
-.
-↑
-"Bilateral relations Tunisia EU"
-.
-europa.eu
-.
-Archived
-from the original on 7 June 2007
-. Retrieved
-16 September
-2009
-.
-↑
-"Tunesien: Was Saïed mit der rassistischen Gewalt zu tun hat"
-.
-www.zdf.de
-(in German). 11 March 2023.
-Archived
-from the original on 5 October 2023
-. Retrieved
-2 October
-2023
-.
-↑
-"The impact of the Russian-Ukrainian war on the Tunisian food system - Rosa Luxemburg Stiftung"
-. Retrieved
-2 October
-2023
-.
-↑
-"World Bank lends Tunisia $268 million for power line with Italy"
-.
-Reuters
-. 22 June 2023
-. Retrieved
-1 October
-2023
-.
-↑
-"GII Innovation Ecosystems & Data Explorer 2025"
-.
-WIPO
-. Retrieved
-16 October
-2025
-.
-↑
-Dutta, Soumitra; Lanvin, Bruno (2025).
-Global Innovation Index 2025: Innovation at a Crossroads
-.
-World Intellectual Property Organization
-. p.
-19.
-doi
-:
-10.34667/tind.58864
-.
-ISBN
-978-92-805-3797-0
-. Retrieved
-17 October
-2025
-.
-↑
-"Hammamet"
-.
-TunisiaTourism.info
-(in French). Archived from
-the original
-on 3 September 2022
-. Retrieved
-25 August
-2022
-.
-↑
-Glusac, Elaine (22 November 2009).
-"A Night, and Day, In Tunisia at a New Resort"
-.
-The New York Times
-.
-↑
-Herve (5 January 2025).
-"Tunisia
-: Tourism Revenues Up by 7.8
-%"
-.
-Capmad.com
-. Archived from
-the original
-on 25 June 2025
-. Retrieved
-23 September
-2025
-.
-↑
-"Travel & Tourism set to inject TND 23BN into Tunisia's economy this year"
-.
-wttc.org
-. Retrieved
-23 September
-2025
-.
-↑
-"Topic: Tourism in Tunisia"
-.
-Statista
-. Retrieved
-23 September
-2025
-.
-↑
-"Tunisia Tourism Sector Research Highlights - Oxford Business Group"
-. 12 December 2022
-. Retrieved
-23 September
-2025
-.
-↑
-"Statistiques | INS"
-.
-www.ins.tn
-.
-Archived
-from the original on 9 August 2025
-. Retrieved
-23 September
-2025
-.
-↑
-Arfa, M. Othman Ben.
-"Effort national de maitrise de l'energie: contribution de la steg"
-(PDF)
-.
-steg.com.tn
-. Archived from
-the original
-(PDF)
-on 16 July 2011
-. Retrieved
-12 November
-2009
-.
-↑
-"Tunisia - Electrical Power Systems and Renewable Energy"
-.
-International Trade Administration
-. 15 April 2024
-. Retrieved
-9 March
-2025
-.
-↑
-"MBendi oilfields in Tunisia"
-.
-mbendi.com
-. Archived from
-the original
-on 13 May 2006
-. Retrieved
-31 October
-2009
-.
-↑
-"Oil and Gas in Tunisia"
-.
-mbendi.com
-. Archived from
-the original
-on 13 May 2006
-. Retrieved
-9 October
-2009
-.
-↑
-"Tunisia: Oil production down 14 percent"
-.
-www.agenzianova.com
-. Nova Agency. 18 November 2024.
-↑
-"Tunisias nuclear plans"
-.
-Reuters
-. 23 April 2009. Archived from
-the original
-on 1 January 2016.
-↑
-"Tunisia: A civil nuclear station of 1000 Megawatt and two sites are selected"
-.
-africanmanager.com
-. Archived from
-the original
-on 14 May 2011
-. Retrieved
-4 November
-2009
-.
-↑
-"Débat national sur l'Énergie"
-. Archived from
-the original
-on 15 September 2015
-. Retrieved
-15 September
-2015
-.
-↑
-Nouvelle version du plan solaire tunisien
-Archived
-4 May 2018 at the
-Wayback Machine
-. anme.nat.tn (April 2012)
-↑
-"Tunisia Energy Situation"
-.
-energypedia.info
-.
-↑
-Production de l'électricité en Tunisie
-. oitsfax.org
-↑
-World Health Organization
-; UNICEF.
-"Joint Monitoring Programme for Drinking Water Supply and Sanitation"
-. Archived from
-the original
-on 16 February 2008
-. Retrieved
-27 December
-2012
-.
-↑
-(in French)
-Ministère du Developpement et de la Cooperation Internationale, Banque Mondiale et Programme "Participation Privee dans les infrastructures mediterreeanees" (PPMI):
-"Étude sur la participation privée dans les infrastructures en Tunisie"
-.
-Archived
-5 March 2012 at the
-Wayback Machine
-, Volume III, 2004, accessed on 21 March 2010
-↑
-"Chiffres clés"
-. SONEDE. Archived from
-the original
-on 2 December 2013
-. Retrieved
-27 December
-2013
-.
-↑
-http://citypopulation.de/Tunisia-Cities.html
-↑
-Fadhlaoui-Zid, Karima; Martinez-Cruz, Begoña; Khodjet-el-khil, Houssein; Mendizabal, Isabel; Benammar-Elgaaied, Amel; Comas, David (October 2011).
-"Genetic structure of Tunisian ethnic groups revealed by paternal lineages"
-.
-American Journal of Physical Anthropology
-.
-146
-(2):
-271–
-280.
-doi
-:
-10.1002/ajpa.21581
-.
-ISSN
-1096-8644
-.
-PMID
-21915847
-.
-↑
-Hajjej, Abdelhafidh; Almawi, Wassim Y.; Hattab, Lasmar; El-Gaaied, Amel; Hmida, Slama (March 2017).
-"The investigation of the origin of Southern Tunisians using HLA genes"
-.
-Journal of Human Genetics
-.
-62
-(3):
-419–
-429.
-doi
-:
-10.1038/jhg.2016.146
-.
-ISSN
-1435-232X
-.
-↑
-Elkamel, Sarra; Marques, Sofia L.; Alvarez, Luis; Gomes, Veronica; Boussetta, Sami; Mourali-Chebil, Soufia; Khodjet-El-Khil, Houssein; Cherni, Lotfi; Benammar-Elgaaied, Amel; Prata, Maria J. (3 August 2021).
-"Insights into the Middle Eastern paternal genetic pool in Tunisia: high prevalence of T-M70 haplogroup in an Arab population"
-.
-Scientific Reports
-.
-11
-(1): 15728.
-doi
-:
-10.1038/s41598-021-95144-x
-.
-ISSN
-2045-2322
-.
-PMC
-8333252
-.
-↑
-"Community in Tunisia"
-.
-World Jewish Congress
-.
-↑
-"Evolution of population growth in Tunisia during the years 1956 and 2024 - Arkam 🌍️"
-.
-Arkam
-. Retrieved
-4 May
-2026
-.
-↑
-"Q&A: The Berbers"
-.
-BBC News
-. 12 March 2004
-. Retrieved
-19 January
-2013
-.
-↑
-"Tunisia 'needs a cultural revolution' to combat racism"
-.
-Al Jazeera
-. 2018.
-↑
-"What's in a name? How the legacy of slavery endures in Tunisia"
-.
-The Guardian
-. 7 November 2020
-. Retrieved
-29 October
-2021
-.
-↑
-"Tunisia court rules that 81-year-old can drop slave name"
-.
-Reuters
-. 19 October 2020
-. Retrieved
-29 October
-2021
-.
-↑
-"Indigenous Peoples in Tunisia"
-.
-www.iwgia.org
-. Archived from
-the original
-on 18 April 2021
-. Retrieved
-25 February
-2019
-.
-↑
-"Tunisia – Land | history – geography"
-.
-Encyclopædia Britannica
-. Retrieved
-7 July
-2017
-.
-↑
-Green, Arnold H. (1978),
-The Tunisian Ulama 1873–1915: Social Structure and Response to Ideological Currents
-, Brill, p.
-69,
-ISBN
-978-90-04-05687-9
-↑
-Carr, Matthew (2009).
-Blood and faith: the purging of Muslim Spain
-. The New Press. p.
-290.
-ISBN
-978-1-59558-361-1
-.
-↑
-Maddison, Angus (2007).
-Contours of the World Economy 1–2030 AD: Essays in Macro-Economic History
-. Oxford University Press. p.
-214.
-ISBN
-978-0-19-922721-1
-. Retrieved
-26 January
-2013
-.
-↑
-"The Jews of Tunisia"
-.
-Jewish Virtual Library
-. Retrieved
-11 July
-2014
-.
-↑
-Sayahi, Lotfi (2014).
-Diglossia and Language Contact: Language Variation and Change in North Africa
-. Cambridge University Press. p.
-227.
-ISBN
-978-1-139-86707-8
-.
-↑
-Albert J. Borg; Marie Azzopardi-Alexander (1997).
-Maltese
-. Routledge. p.
-13.
-ISBN
-978-0-415-02243-9
-. Retrieved
-24 February
-2013
-.
-The immediate source for the Arabic vernacular spoken in Malta was Muslim Sicily, but its ultimate origin appears to have been Tunisia. In fact, Maltese displays some areal traits typical of Maghrebine Arabic, although during the past eight hundred years of independent evolution it has drifted apart from Tunisian Arabic.
-↑
-"An outline of the Shilha (Berber) vernacular of Douiret (Southern Tunisia)"
-. Australian Digital Theses Program. 26 May 2008. Archived from
-the original
-on 26 May 2008
-. Retrieved
-19 January
-2013
-.
-↑
-Volk, Lucia (2015).
-The Middle East in the World: An Introduction
-. Routledge. p.
-473.
-ISBN
-978-1-317-50173-2
-.
-↑
-Owen's Commerce & Travel and International Register
-. Owen's Commerce & Travel Limited. 1964. p.
-273
-. Retrieved
-7 January
-2018
-.
-↑
-"La langue française dans le monde / édition 2022"
-[
-The French Language around the World / 2022 Edition
-]
-(PDF)
-.
-Organisation internationale de la francophonie
-(in French)
-. Retrieved
-14 November
-2025
-.
-↑
-McGuinness, Justin (2002).
-Footprint Tunisia Handbook: The Travel Guide
-. Globe Pequot Press.
-ISBN
-978-1-903471-28-9
-. Retrieved
-26 January
-2013
-.
-↑
-"Tunisian Languages"
-. Tunisia-tourism.org. Archived from
-the original
-on 5 June 2013
-. Retrieved
-13 September
-2013
-.
-↑
-"Religions in Tunisia
-|
-Arda"
-.
-www.thearda.com
-. Retrieved
-7 January
-2026
-.
-1
-2
-"Data Analysis Tool – Arab Barometer"
-. Retrieved
-13 November
-2022
-.
-↑
-"The Arab world in seven charts: Are Arabs turning their backs on religion?"
-.
-BBC News
-. 23 June 2019
-. Retrieved
-3 April
-2021
-.
-↑
-"Young Arabs are Changing their Beliefs and Perceptions: New Survey"
-. Retrieved
-3 April
-2021
-.
-↑
-"The Newsroom: The Arab World Survey 2021–2022 – Arab Barometer"
-. Retrieved
-5 February
-2023
-.
-1
-2
-3
-Bureau of Democracy, Human Rights, and Labor (2008). "Report on Tunisia".
-International Religious Freedom Report 2008
-. US State Department.
-↑
-Jacobs, Daniel; Morris, Peter (2002).
-The Rough Guide to Tunisia
-. Rough Guides. p.
-460.
-ISBN
-978-1-85828-748-5
-.
-↑
-Chapter 1: Religious Affiliation
-retrieved 4 September 2013
-↑
-Brugnatelli, Vermondo (2005).
-"Studi berberi e mediterranei. Miscellanea offerta in onore di Luigi Serra, a cura di A.M. Di Tolla"
-[
-A new Berber Ibadite poem
-]
-(PDF)
-.
-Studi Magrebini
-.
-3
-:
-131–
-142.
-↑
-"Les mosquées ibadites du Maghreb"
-[The Ibadi mosques of the Maghreb]. Remmm.revues.org. Retrieved on 5 September 2015.
-↑
-Trombley, Frank (2006). "Overview: the geographical spread of Christianity". In Mitchell, Margaret M.; Young, Francis M. (eds.).
-The Cambridge History of Christianity
-. Vol.
-1. Cambridge University Press. pp.
-302–
-313.
-doi
-:
-10.1017/CHOL9780521812443
-.
-ISBN
-978-1-139-05413-3
-.
-↑
-Greenberg, Udi; A. Foster, Elizabeth (2023).
-Decolonization and the Remaking of Christianity
-. Pennsylvania: University of Pennsylvania Press. p.
-105.
-ISBN
-9781512824971
-.
-↑
-F. Nyrop, Richard (1972).
-Area Handbook for Morocco
-. University of Illinois Urbana-Champaign. p.
-97.
-ISBN
-978-0-8108-8493-9
-.
-↑
-"Christians in Tunisia: Cause for Concern"
-.
-Qantara.de - Dialogue with the Islamic World
-. 9 October 2013.
-Archived
-from the original on 11 February 2014
-. Retrieved
-13 May
-2020
-.
-↑
-"Tunisia 2018 International Religious Freedom Report"
-(PDF)
-.
-↑
-Fr Andrew Phillips.
-"The Last Christians of North-West Africa: Some Lessons For Orthodox Today"
-. Orthodox England
-. Retrieved
-8 January
-2013
-.
-↑
-This article incorporates text from this source, which is in the
-public domain
-:
-"International Religious Freedom Report 2007: Tunisia"
-. United States
-Bureau of Democracy, Human Rights and Labor
-(14 September 2007).
-↑
-Johnstone, Patrick; Miller, Duane Alexander (2015).
-"Believers in Christ from a Muslim Background: A Global Census"
-.
-Interdisciplinary Journal of Research on Religion
-.
-11
-: 8
-. Retrieved
-30 October
-2015
-.
-↑
-"Tunisia"
-. United States Department of State
-. Retrieved
-19 December
-2020
-.
-↑
-"Jews of Tunisia"
-.
-Jewish Virtual Library
-. Retrieved
-19 December
-2020
-.
-↑
-"Pilgrims flock to Tunisia's Djerba Jewish festival | Lamine Ghanmi"
-.
-Arab Weekly
-. Retrieved
-17 March
-2020
-.
-↑
-Gruber, Samuel (1 May 1999).
-Synagogues
-. Metro Books.
-↑
-"Tunisia: Jewish population determined to stay despite anti-Semitic violence"
-.
-Deutsche Welle
-. 11 January 2018.
-↑
-Harris, David A. (13 March 2010).
-"Usurping History"
-.
-aishcom
-. Aish.com. Archived from
-the original
-on 20 April 2010
-. Retrieved
-2 May
-2010
-.
-↑
-"United in our diversity"
-. Bahai.org. 22 February 2022
-. Retrieved
-10 May
-2023
-.
-↑
-"National adult literacy rates (15+), youth literacy rates (15–24) and elderly literacy rates (65+)"
-. UNESCO Institute for Statistics. Archived from
-the original
-on 29 October 2013
-. Retrieved
-18 January
-2013
-.
-↑
-"Tunisia – Literacy rate"
-.
-www.indexmundi.com
-.
-1
-2
-"The Global Competitiveness Report 2008–2009"
-. World Economic Forum. Archived from
-the original
-on 19 June 2008
-. Retrieved
-2 May
-2010
-.
-↑
-"The Tunisia K-12 Education System – Basic and Secondary Education"
-.
-www.tunisiaeducation.info
-. Retrieved
-16 March
-2021
-.
-↑
-Encyclopédie 360
-, éd. Rombaldi / Paris Match, 1970, vol. 12, p. 161–2
-1
-2
-3
-"Un pays pour les peintres"
-[
-A country for painters
-]
-(in French). Guide Tangka. 7 October 2011. Archived from
-the original
-on 7 October 2011
-. Retrieved
-26 January
-2013
-.
-1
-2
-"Culture de la Tunisie"
-. Tunisia Online. 10 February 2001. Archived from
-the original
-on 10 February 2001
-. Retrieved
-19 January
-2013
-.
-↑
-"A Tunis, une exposition réveille l'histoire précoloniale du pays"
-[
-In Tunis, an exhibition awakens the precolonial history of thecountry
-]
-(in French).
-↑
-"La littérature tunisienne de langue française (Mémoire vive)"
-. 24 December 2007. Archived from
-the original
-on 24 December 2007
-. Retrieved
-26 January
-2013
-.
-1
-2
-"Fantaisie arabe et poésie"
-. Guide Tangka. 7 October 2011. Archived from
-the original
-on 7 October 2011
-. Retrieved
-26 January
-2013
-.
-↑
-"Littérature francophone"
-. Guide Tangka. 7 October 2011. Archived from
-the original
-on 7 October 2011
-. Retrieved
-26 January
-2013
-.
-↑
-Omri, Mohamed-Salah.
-"Memory and Representation in the Novels of Fawzi Mellah"
-.
-International Journal of Francophone Studies
-.
-3
-(1):
-33–
-41.
-ISSN
-1368-2679
-. Retrieved
-10 January
-2024
-.
-↑
-Pardey, Charlotte (2022).
-Oscillating Bodies: Understanding Tunisian Society through its Novels (1956–2011)
-. Literatures in Context. Vol.
-47: Oscillating Bodies.
-Dr. Ludwig Reichert Verlag
-.
-doi
-:
-10.29091/9783752005028
-.
-ISBN
-978-3-95490-380-1
-.
-↑
-"Littérature tunisienne"
-. Ministère de la Culture et de la Sauvegarde du patrimoine. 29 December 2005. Archived from
-the original
-on 29 December 2005
-. Retrieved
-19 January
-2013
-.
-↑
-"2009, l'année des rendez-vous culturels importants"
-,
-Réalités
-, 18 November 2008
-[
-dead link
-]
-↑
-Badri, Balghis (15 February 2017).
-Women's Activism in Africa: Struggles for Rights and Representation
-. Zed Books. p.
-8.
-ISBN
-978-1-78360-911-6
-.
-↑
-Davis, Ruth (October 1996). "The art/popular music paradigm and the Tunisian
-Ma'lūf
-".
-Popular Music
-.
-15
-(3).
-Cambridge University Press
-:
-313–
-323.
-doi
-:
-10.1017/S0261143000008308
-.
-JSTOR
-931332
-.
-S2CID
-193235351
-.
-↑
-"Carthage Film Festival prepares to launch"
-. Magharebia. 20 October 2008
-. Retrieved
-11 September
-2009
-.
-↑
-"Le Carnaval d'Aoussou à Sousse, Tunisie"
-. 2 July 2017.
-↑
-Houda Trabelsi (5 October 2010).
-"Shems FM hits Tunisia airwaves"
-. Magharebia.com
-. Retrieved
-19 January
-2013
-.
-↑
-"Television TV in Tunisia"
-. TunisPro. Archived from
-the original
-on 30 October 2012
-. Retrieved
-19 January
-2013
-.
-↑
-"Presse et communication en Tunisie"
-(in French). Tunisie.com. Archived from
-the original
-on 19 March 2012
-. Retrieved
-19 January
-2013
-.
-1
-2
-"Tunisia"
-. 23 April 2015. Archived from
-the original
-on 21 April 2019
-. Retrieved
-24 December
-2015
-.
-↑
-"تونس: مرسوم رئاسي يقضي بالسجن 5 سنوات لكل من ينشر "أخبارا كاذبة" أو "إشاعات"
-"
-[
-Tunisia: Presidential Decree Imposing a Five-Year Imprisonment for Anyone Who Spreads "False News" or "Rumours"
-]
-.
-فرانس 24 /
-France 24
-(in Arabic). 17 September 2022
-. Retrieved
-18 July
-2023
-.
-↑
-"Tunisia win Cup of Nations"
-.
-BBC News
-. 14 February 2004
-. Retrieved
-19 January
-2013
-.
-↑
-"Previous winners of major international cups And tournaments: the African Cup of Nations"
-. Napit.co.uk
-. Retrieved
-8 January
-2013
-.
-↑
-"Tunisian handball team wins 2010 African Cup of Nations"
-. Tunisia Daily. 20 February 2010
-. Retrieved
-8 January
-2013
-.
-{{
-cite web
-}}
-:  CS1 maint: deprecated archival service (
-link
-)
-↑
-Nxumalo, Lee (20 December 2020).
-"Basketball's next frontier is Africa"
-.
-New Frame
-. Archived from
-the original
-on 16 January 2021
-. Retrieved
-11 January
-2021
-.
-↑
-"Team Profile: Is a three-peat in sight for Tunisia?"
-.
-www.fiba.basketball
-. 6 August 2025
-. Retrieved
-24 September
-2025
-.
-↑
-"Tunisia: FIBA Men's AfroBasket 2025 Qualifiers Team Preview | AfricaBasket"
-.
-www.africabasket.net
-. Retrieved
-24 September
-2025
-.
-↑
-Gilbert E. Odd (1989).
-Encyclopedia of Boxing
-. Book Sales. p.
-108.
-ISBN
-978-1-55521-395-4
-.
-↑
-Lohn, John (2010).
-Historical Dictionary of Competitive Swimming
-. Scarecrow Press. p.
-95.
-ISBN
-978-0-8108-6775-8
-.
-Further reading
-Steel, Catherine (2013).
-The End of the Roman Republic 146 to 44 BC
-.
-Edinburgh University Press
-.
-ISBN
-978-0-7486-2902-2
-. Retrieved
-21 November
-2022
-.
-External links
-Library resources
-about
-Tunisia
-Resources in your library
-Resources in other libraries
-Key Development Forecasts for Tunisia
-from
-International Futures
-Government
-Tunisia Government Portal
-– gateway to government sites
-Presidency
-– official website of the president of Tunisia
-Prime Minister
-– official website of the prime minister of Tunisia
-Statistics
-– official website of National Institute of Statistics
-History
-"History"
-– Tunisian History at National Heritage Institute
-Tourism
-Discover Tunisia
-– Tunisia's official tourism portal
-Maps
-Wikimedia Atlas of Tunisia
-Geographic data related to
-Tunisia
-at
-OpenStreetMap
-v
-t
-e
-Tunisia
-articles
-History
-Early history
-Capsian culture
-Ancient Carthage
-Punic Wars
-First War
-Second War
-Third War
-Byzantine Empire
-Medieval history
-Muslim conquest
-Fatimid Caliphate
-Hafsids
-Regency of Tunis
-Muradid
-Husaynids
-French protectorate
-National movement
-Naturalization issue
-Protests of 9 April
-Tunisian campaign
-Independence declaration
-Kingdom of Tunisia
-Republic declaration
-1987 coup d'état
-Tunisian revolution
-2013–14 political crisis
-2018 Tunisian protests
-COVID-19 pandemic
-2021 Tunisian protests
-25 July 2021 self-coup
-Geography
-Administrative divisions
-Governorates
-Cities
-Subdivisions
-Regions
-North East
-North West
-Sahel
-Central West
-South East
-Djerid
-Wildlife
-Ecoregions
-World Heritage Sites
-Museums
-Demographics
-Tunisians
-Tunisian diaspora
-Climate
-Politics
-President of the Republic
-List
-Prime Minister
-List
-Cabinet
-Constitution
-Fundamental Pact
-1861
-1959
-2014
-2022
-Foreign relations
-Armed Forces
-Army
-Air Force
-Navy
-Parliament
-National Council of Regions and Districts
-Assembly of the Representatives of the People
-Political parties
-Elections
-Independent High Authority for Elections
-Economy
-Bourse de Tunis
-Central Bank of Tunisia
-Tunisian dinar
-Banking in Tunisia
-Agriculture
-Energy
-Natural resources
-Water supply and sanitation
-Tourism
-Industry
-Telecommunications
-Transport
-Roads
-Rail transport
-Traditional crafts
-Major projects
-Society
-Education
-Baccalaureate
-Higher education
-Languages
-Tunisian Arabic
-Media
-Television
-Radio stations
-Internet
-Newspapers
-Censorship
-Human rights
-Abortion
-LGBT
-Women
-Polygamy
-Religion
-Islam
-Christianity
-Judaism
-Health
-Public holidays
-Culture
-Arts
-Cinema
-Music
-Literature
-Sport
-Football
-Cuisine
-National symbols
-Flag
-National anthem
-Coat of arms
-Motto
-Category
-WikiProject
-Commons
-Related articles
-v
-t
-e
-Governorates and regions of Tunisia
-Governorates
-Ariana
-Béja
-Ben Arous
-Bizerte
-Gabès
-Gafsa
-Jendouba
-Kairouan
-Kasserine
-Kebili
-Kef
-Mahdia
-Manouba
-Medenine
-Monastir
-Nabeul
-Sfax
-Sidi Bouzid
-Siliana
-Sousse
-Tataouine
-Tozeur
-Tunis
-Zaghouan
-Regions
-North West
-North East
-Central West
-Central East
-South West
-South East
-WikiProject Tunisia
-v
-t
-e
-Countries and territories
-of
-Africa
-Sovereign states
-Algeria
-Angola
-Benin
-Botswana
-Burkina Faso
-Burundi
-Cameroon
-Cape Verde
-Central African Republic
-Chad
-Comoros
-Democratic Republic of the Congo
-Republic of the Congo
-Djibouti
-Egypt
-(partly in Asia)
-Equatorial Guinea
-Eritrea
-Eswatini
-Ethiopia
-Gabon
-The Gambia
-Ghana
-Guinea
-Guinea-Bissau
-Ivory Coast
-Kenya
-Lesotho
-Liberia
-Libya
-Madagascar
-Malawi
-Mali
-Mauritania
-Mauritius
-Morocco
-Mozambique
-Namibia
-Niger
-Nigeria
-Rwanda
-São Tomé and Príncipe
-Senegal
-Seychelles
-Sierra Leone
-Somalia
-South Africa
-South Sudan
-Sudan
-Tanzania
-Togo
-Tunisia
-Uganda
-Zambia
-Zimbabwe
-States with limited
-recognition
-Sahrawi Arab Democratic Republic
-(
-unclear sovereignty
-)
-Somaliland
-Dependent
-territories
-France
-Îles Éparses
-United Kingdom
-Saint Helena, Ascension and Tristan da Cunha
-African territories
-fully part of
-non-African states
-France
-Mayotte
-Réunion
-Italy
-Pantelleria
-Pelagian Islands
-Portugal
-Madeira
-Savage Islands
-Spain
-Canary Islands
-Ceuta
-Melilla
-Plazas de soberanía
-Yemen
-Socotra
-Category
-Africa portal
-v
-t
-e
-Countries and territories of
-North Africa
-Sovereign states
-Algeria
-Egypt
-Libya
-Morocco
-Sudan
-Tunisia
-Partially recognized state
-Sahrawi Arab Democratic Republic
-Territories
-Morocco
-/
-SADR
-Western Sahara
-1
-Spain
-Canary Islands
-Ceuta
-2
-Melilla
-2
-Alboran
-Alhucemas
-2
-Chafarinas
-2
-Vélez de la Gomera
-2
-Portugal
-Madeira
-Savage Islands
-3
-Sudan
-/
-Egypt
-Hala'ib Triangle
-4
-Wadi Halfa Salient
-4
-Bir Tawil
-5
-Sudan
-/
-South Sudan
-Abyei
-6
-Kafia Kingi
-6
-Italy
-Pantelleria
-Pelagian Islands
-Libya
-/
-Chad
-Aouzou Strip
-7
-Morocco
-/
-Spain
-Perejil
-8
-1
-Entirely claimed by both Morocco and the
-SADR
-.
-2
-Spanish exclaves claimed by Morocco.
-3
-Portuguese archipelago claimed by Spain.
-4
-Disputed between Egypt and the Sudan.
-5
-Unclaimed territory
-located between Egypt and the Sudan.
-6
-Disputed between South Sudan and the Sudan.
-7
-Part of Chad, formerly claimed by Libya.
-8
-Disputed between Morocco and Spain
-v
-t
-e
-Countries and territories of the
-Mediterranean Sea
-Sovereign states
-Albania
-Algeria
-Bosnia and Herzegovina
-Croatia
-Cyprus
-Egypt
-France
-Greece
-Israel
-Italy
-Lebanon
-Libya
-Malta
-Monaco
-Montenegro
-Morocco
-Slovenia
-Spain
-Syria
-Tunisia
-Turkey
-States with limited recognition
-Northern Cyprus
-Palestine
-Dependencies
-and other territories
-Akrotiri and Dhekelia
-(
-UK
-)
-Gibraltar
-(UK)
-Ceuta
-and
-Melilla
-(Spain)
-Marginal seas
-Adriatic Sea
-Aegean Sea
-Alboran Sea
-Balearic Sea
-Ionian Sea
-Levantine Sea
-Libyan Sea
-Ligurian Sea
-Sea of Crete
-Sea of Marmara
-Sea of Sardinia
-Thracian Sea
-Tyrrhenian Sea
-v
-t
-e
-Arab League
-Arab League
-Lists
-Politics
-Charter
-Council
-Flag
-Geography
-Headquarters
-History
-Military
-United States Central Command
-(
-United States military bases
-)
-Joint Defence Council
-Parliament
-Arab Union
-Membership
-Members
-by population
-Algeria
-Bahrain
-Comoros
-Djibouti
-Egypt
-Iraq
-Jordan
-Kuwait
-Lebanon
-Libya
-Mauritania
-Morocco
-Oman
-Palestine
-Qatar
-Saudi Arabia
-Somalia
-Sudan
-Syria
-Tunisia
-United Arab Emirates
-Yemen
-Observers
-Armenia
-Brazil
-Chad
-Eritrea
-Greece
-India
-Venezuela
-Candidates
-South Sudan
-Diplomacy
-Arab Peace Initiative
-Arab League monitors in Syria
-Arab League–European Union relations
-Foreign relations
-Life
-Demographics
-Economy
-GDP
-Economic and Social Council
-Institutions
-Sport
-Pan-Arabism
-Union of Arab National Olympic Committees
-Pan Arab Games
-v
-t
-e
-African Union
-History
-Pan-Africanism
-Decolonisation of Africa
-Union of African States
-Casablanca Group
-Monrovia Group
-African and Malagasy Union
-Abuja Treaty
-Sirte Declaration
-Lome Summit
-Organisation of African Unity
-Chairperson
-Secretary General
-Geography
-Borders
-Extreme points
-Member states
-Regions
-Organs
-Executive Council
-Permanent Representatives' Committee
-Specialized Technical Committees
-Assembly
-Chairperson
-Commission
-Chairperson
-Deputy Chairperson
-AUCC
-2025 election
-Pan-African Parliament
-Bureau
-Secretariat
-Gallagher Estate
-African Court of Justice
-African Court on Human and Peoples' Rights
-ECOSOCC Committees
-Department of Education, Science, Technology and Innovation
-Department of Political Affairs, Peace and Security
-Department of Infrastructure and Energy
-Department of Health, Humanitarian Affairs and Social Development
-HR, Sciences and Technology
-Department of Agriculture, Rural Development, and Blue Economy
-Department of Economic Development, Trade, Tourism, Industry, Mining
-Cross-Cutting Programs
-Financial institutions
-African Central Bank
-African Monetary Fund
-African Investment Bank
-Pan-African Payment and Settlement System
-Peace and Security Council
-ACIRC
-African Standby Force
-Panel of the Wise
-UNAMID
-AMIB
-AMIS
-AMISOM
-MISCA
-Specialised agencies and institutions
-Africa Centres for Disease Control and Prevention
-African Civil Aviation Commission
-African Energy Commission
-Afripol
-African Space Agency
-Politics
-APRM
-Foreign relations
-African Charter on Human and Peoples' Rights
-African Commission on Human and Peoples' Rights
-Enlargement
-United States Africa Command
-(
-United States military bases
-)
-United States ambassadors
-African Union–Ethiopia relations
-Symbols
-Anthem
-Emblem
-Flag
-Passport
-Economy
-Currencies
-(
-Gold standard
-)
-Development Bank
-African Economic Community
-NEPAD
-African Continental Free Trade Area
-Africa–CARICOM Summit
-Single African Air Transport Market
-Trans-African Highway network
-Culture
-Africa Day/Africa–Caribbean (CARICOM) Day
-African Border Day
-Theory
-Afro
-Federal Africa
-United States of Latin Africa
-East African Federation
-Category
-v
-t
-e
-Community of Sahel–Saharan States (CEN-SAD)
-Benin
-Burkina Faso
-Cape Verde
-Central African Republic
-Chad
-Comoros
-Djibouti
-Egypt
-Eritrea
-Gambia
-Ghana
-Guinea
-Guinea-Bissau
-Ivory Coast
-Kenya
-Libya
-Mali
-Mauritania
-Morocco
-Niger
-Nigeria
-Senegal
-Sierra Leone
-Somalia
-Sudan
-Togo
-Tunisia
-v
-t
-e
-Organisation of Islamic Cooperation
-(OIC)
-Secretary-General of the Organisation of Islamic Cooperation
-:
-Hissein Brahim Taha
-Member states
-Members
-Afghanistan
-Albania
-Algeria
-Azerbaijan
-Bahrain
-Bangladesh
-Benin
-Burkina Faso
-Brunei
-Cameroon
-Chad
-Comoros
-Djibouti
-Egypt
-Gabon
-Gambia
-Guinea
-Guinea-Bissau
-Guyana
-Indonesia
-Iran
-Iraq
-Ivory Coast
-Jordan
-Kazakhstan
-Kuwait
-Kyrgyzstan
-Lebanon
-Libya
-Malaysia
-Maldives
-Mali
-Mauritania
-Morocco
-Mozambique
-Niger
-Nigeria
-Oman
-Pakistan
-Palestine
-Qatar
-Saudi Arabia
-Senegal
-Sierra Leone
-Somalia
-Sudan
-Suriname
-Syria
-Tajikistan
-Togo
-Tunisia
-Turkey
-Turkmenistan
-Uganda
-Uzbekistan
-United Arab Emirates
-Yemen
-Observers
-Countries
-and territories
-Bosnia and Herzegovina
-Central African Republic
-Northern Cyprus
-1
-Russia
-Thailand
-Muslim
-communities
-Moro National Liberation Front
-International
-organizations
-Economic Cooperation Organization
-African Union
-Arab League
-Non-Aligned Movement
-United Nations
-History
-Declarations
-Abuja Declaration (1989)
-Cairo Declaration on Human Rights in Islam
-(1990)
-OIC Resolution 10/11
-(2008)
-OIC Council of Foreign Ministers Resolution 10/37
-(2010)
-Sessions
-Extraordinary
-First
-Second
-Third
-Fourth
-Fifth
-Sixth
-Seventh
-Eighth
-Ninth
-Arab–Islamic (2023)
-Arab–Islamic (2024)
-Arab–Islamic (2025)
-Demographics
-Economy
-GDP
-GDP per capita
-Exports
-Imports
-Population
-Largest cities
-Education
-1
-As the "Turkish Cypriot State".
-v
-t
-e
-Organisation internationale de la Francophonie
-Members
-Members
-Albania
-Andorra
-Armenia
-Belgium
-Benin
-Bulgaria
-Burundi
-Cambodia
-Cameroon
-Canada
-Cape Verde
-Central African Republic
-Chad
-Comoros
-Cyprus
-Democratic Republic of the Congo
-Republic of the Congo
-Djibouti
-Dominica
-Egypt
-Equatorial Guinea
-France
-Gabon
-Ghana
-Greece
-Guinea-Bissau
-Haiti
-Ivory Coast
-Laos
-Lebanon
-Luxembourg
-North Macedonia
-Madagascar
-Mauritania
-Mauritius
-Moldova
-Monaco
-Morocco
-Qatar
-Romania
-Rwanda
-Saint Lucia
-São Tomé and Príncipe
-Senegal
-Seychelles
-Switzerland
-Togo
-Tunisia
-Vanuatu
-Vietnam
-National/regional members
-French Community of Belgium
-New Brunswick
-Quebec
-Associate members
-Kosovo
-New Caledonia
-Qatar
-Serbia
-United Arab Emirates
-Observers
-Angola
-Argentina
-Austria
-Bosnia and Herzegovina
-Chile
-Costa Rica
-Croatia
-Czechia
-Dominican Republic
-Estonia
-French Polynesia
-Gambia
-Georgia
-Hungary
-Ireland
-Latvia
-Lithuania
-Louisiana
-Malta
-Mexico
-Montenegro
-Mozambique
-Nova Scotia
-Ontario
-Poland
-Saarland
-Slovakia
-Slovenia
-South Korea
-Thailand
-Ukraine
-Uruguay
-Suspended members
-Burkina Faso
-Guinea
-Mali
-Niger
-Organization
-Assemblée parlementaire de la Francophonie
-Agence de Coopération Culturelle et Technique
-Agence universitaire de la Francophonie
-Culture
-French language
-UN French Language Day
-International Francophonie Day
-Jeux de la Francophonie
-Prix des cinq continents de la francophonie
-AFFOI
-TV5Monde
-LGBT rights
-Related
-Francophone economy
-Senghor University
-Category
-Portals
-:
-Africa
-Countries
-Tunisia
-at Wikipedia's
-sister projects
-:
-Media
-from Commons
-Quotations
-from Wikiquote
-Travel guides
-from Wikivoyage
-Authority control databases
-International
-ISNI
-VIAF
-2
-GND
-FAST
-WorldCat
-National
-United States
-France
-BnF data
-Japan
-Czech Republic
-Norway
-Sweden
-Israel
-2
-Croatia
-Geographic
-MusicBrainz area
-Artists
-KulturNav
-People
-Trove
-UK Parliament
-Other
-IdRef
-2
-NARA
-İslâm Ansiklopedisi
-Yale LUX
-34°N
-9°E
-﻿
-/
-﻿
-34°N 9°E
-﻿
-/
-34; 9
-Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457
-"
+[ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia)
+270 languages [ Add topic ](https://en.wikipedia.org/wiki/Tunisia)
+[](https://en.wikipedia.org/wiki/Tunisia?action=edit)
+  *[v]: View this template
+  *[t]: Discuss this template
+  *[e]: Edit this template
