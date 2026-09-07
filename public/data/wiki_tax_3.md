@@ -2668,11 +2668,13 @@ Minister of the Crown
 Status
 Secretary of State
 Great Office of State
-Member of
+Member
+of
 Cabinet
 Privy Council
 National Security Council
-Reports to
+Reports
+to
 The Prime Minister
 Residence
 No. 1 Carlton Gardens
@@ -2688,12 +2690,14 @@ The Monarch
 (on the advice of the
 Prime Minister
 )
-Term length
+Term
+length
 At His Majesty's pleasure
 Formation
 27 March 1782 (as Secretary of State for Foreign Affairs)
 2 September 2020 (as Secretary of State for Foreign, Commonwealth and Development Affairs)
-First holder
+First
+holder
 Charles James Fox
 (as Secretary of State for Foreign Affairs)
 Deputy

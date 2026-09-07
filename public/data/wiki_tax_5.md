@@ -1117,33 +1117,40 @@ Curaçao
 6%, 7% or 9%
 Taxation in Curaçao
 Cyprus
-[
-44
-]
 15%
-0%
-35%
-20%
-19%
-(standard)
-5% or 0%
-(reduced rates)
-Taxation in Cyprus
-Czech Republic
 [
 94
 ]
+0%
+35%
 [
 95
 ]
-21%
+20%
 [
 96
+]
+19% (standard)
+9%, 5%, 3% or 0% (reduced rates)
+[
+97
+]
+Taxation in Cyprus
+Czech Republic
+[
+98
+]
+[
+99
+]
+21%
+[
+100
 ]
 20.1%
 (15% deductible tax + 45% healthcare and social security if an employee, 22.5% if self-employed)
 [
-97
+101
 ]
 45.7%
 (peaks for employee gross annual income of $90,000 or more)
@@ -1160,14 +1167,14 @@ No
 21%
 (standard)
 [
-98
+102
 ]
 12%
 (reduced)
 Taxation in the Czech Republic
 Denmark
 [
-99
+103
 ]
 22–25%
 (depending on business)
@@ -1176,14 +1183,14 @@ Denmark
 DKK
 46,000 / US$7,245 / €6,172 per year is deductible)
 [
-100
+104
 ]
 [
-101
+105
 ]
 52.07%
 [
-102
+106
 ]
 42%
 No
@@ -1205,7 +1212,7 @@ Taxation in Djibouti
 Dominica
 25%
 [
-103
+107
 ]
 0%
 35%
@@ -1217,7 +1224,7 @@ Dominican Republic
 25%
 27%
 [
-104
+108
 ]
 18%
 Taxation in the Dominican Republic
@@ -1233,14 +1240,14 @@ Taxation in East Timor
 Ecuador
 25%
 [
-105
+109
 ]
 0%
 35%
 35%
 35%
 [
-106
+110
 ]
 12%
 (standard)
@@ -1251,7 +1258,7 @@ Ecuador
 Taxation in Ecuador
 Egypt
 [
-107
+111
 ]
 22.5%
 (on taxable corporate profits)
@@ -1288,7 +1295,7 @@ N/a
 Taxation in Eritrea
 Estonia
 [
-108
+112
 ]
 0%
 (20% on distribution or 14% on distribution below the 3 previous years average)
@@ -1311,18 +1318,18 @@ Eswatini (Swaziland)
 27.5%
 0%
 [
-109
+113
 ]
 33%
 [
-109
+113
 ]
 15%
 Taxation in Eswatini
 Ethiopia
 30%
 [
-110
+114
 ]
 0%
 35%
@@ -1341,7 +1348,7 @@ Faroe Islands
 20%
 0%
 [
-111
+115
 ]
 Taxation in the Faroe Islands
 Federated States of Micronesia
@@ -1356,7 +1363,7 @@ Taxation in Micronesia
 Fiji
 20%
 [
-112
+116
 ]
 0%
 20%
@@ -1365,17 +1372,17 @@ Taxation in Fiji
 Finland
 20%
 [
-113
+117
 ]
 18%
 (from 2027)
 [
-114
+118
 ]
 8.4%
 (social security tax)
 [
-115
+119
 ]
 53.61%
 (in
@@ -1384,7 +1391,7 @@ for the members of the
 Orthodox Church of Finland
 : 31.25% national tax rate + 23.5% municipal tax + 9.9% social security tax + 2.1% church tax)
 [
-116
+120
 ]
 34%
 No
@@ -1393,7 +1400,7 @@ No
 ]
 33%
 [
-117
+121
 ]
 25.5%
 (standard)
@@ -1418,13 +1425,13 @@ CRDS
 PER
 )
 [
-118
+122
 ]
 [
-119
+123
 ]
 [
-120
+124
 ]
 31,4%
 (+4% for high earners)
@@ -1434,7 +1441,7 @@ Yes
 ]
 0-60%
 [
-121
+125
 ]
 20%
 (standard)
@@ -1471,7 +1478,7 @@ Germany
 30%
 (15% corporate tax (+ 5.5% solidarity surcharge) + 7% to 17% trade tax)
 [
-122
+126
 ]
 19.6%
 (social security contributions)
@@ -1487,7 +1494,7 @@ Inactive
 Yes
 50%
 [
-123
+127
 ]
 19%
 (standard)
@@ -1496,7 +1503,7 @@ Yes
 Taxation in Germany
 Georgia
 [
-124
+128
 ]
 0%
 (15% on distribution of profit)
@@ -1504,7 +1511,7 @@ Georgia
 (5% on dividend, interest and royalty)
 0%
 [
-125
+129
 ]
 18%
 Taxation in Georgia
@@ -1577,22 +1584,22 @@ Taxation in Guatemala
 Guernsey
 0%
 [
-126
+130
 ]
 0%
 (earning under £658.67 per month)
 [
-127
+131
 ]
 20%
 (+ 6.6–11.3% Social Security)
 [
-127
+131
 ]
 Document duty charged on real estate transfers from estates.
 0%
 [
-128
+132
 ]
 Taxation in Guernsey
 Guinea
@@ -1618,12 +1625,12 @@ Guyana
 25%
 (chargeable income under $3,120,000 GYD)
 [
-129
+133
 ]
 35%
 (chargeable income over $3,120,000 GYD)
 [
-129
+133
 ]
 14%
 (standard)
@@ -1633,16 +1640,16 @@ Taxation in Guyana
 Haiti
 30%
 [
-130
+134
 ]
 0%
 30%
 [
-131
+135
 ]
 10%
 [
-130
+134
 ]
 Taxation in Haiti
 Honduras
@@ -1656,7 +1663,7 @@ N/a
 Taxation in Honduras
 Hong Kong
 [
-132
+136
 ]
 16.5%
 (over
@@ -1680,7 +1687,7 @@ No
 ]
 18%
 [
-133
+137
 ]
 27%
 (standard)
@@ -1697,7 +1704,7 @@ Iceland
 31.48%
 (On income up to 446.136 ISK)
 [
-134
+138
 ]
 46.28%
 22%
@@ -1715,7 +1722,7 @@ India
 15–22%
 (excludes surcharge & cess)
 [
-135
+139
 ]
 0%
 (₹ 0 - 400,000 + 12% of basic salary for epf or social security)
@@ -1736,10 +1743,10 @@ India
 GST rates in India
 )
 [
-136
+140
 ]
 [
-137
+141
 ]
 Taxation in India
 Indonesia
@@ -1757,11 +1764,11 @@ Taxation in Iran
 Iraq
 15%
 [
-138
+142
 ]
 3%
 [
-139
+143
 ]
 15%
 300%
@@ -1773,7 +1780,7 @@ Iraq
 10%
 (Deluxe and first class restaurants and hotels)
 [
-140
+144
 ]
 Taxation in Iraq
 Ireland
@@ -1789,7 +1796,7 @@ No
 ]
 33%
 [
-141
+145
 ]
 23%
 (goods)
@@ -1810,7 +1817,7 @@ Taxation in the Isle of Man
 Israel
 23%
 [
-142
+146
 ]
 0%
 (for monthly income under 6,330₪)
@@ -1870,11 +1877,11 @@ Jamaica
 Taxation in Jamaica
 Japan
 [
-143
+147
 ]
 29.74%
 [
-144
+148
 ]
 15.105%
 (10% local + 5.105% national)
@@ -1887,7 +1894,7 @@ No
 ]
 55%
 [
-145
+149
 ]
 10%
 (standard)
@@ -1902,12 +1909,12 @@ Jersey
 0%
 20%
 [
-146
+150
 ]
 Stamp duty on probate starting at £50, rising progressively.
 5%
 [
-147
+151
 ]
 Taxation in Jersey
 Jordan
@@ -1918,7 +1925,7 @@ Jordan
 0%
 25%
 [
-148
+152
 ]
 16%
 Taxation in Jordan
@@ -1928,7 +1935,7 @@ Kazakhstan
 ]
 20%
 [
-122
+126
 ]
 [
 2
@@ -1940,13 +1947,13 @@ Kazakhstan
 (non-residents)
 16%
 [
-149
+153
 ]
 Taxation in Kazakhstan
 Kenya
 30%
 [
-122
+126
 ]
 10%
 35%
@@ -1968,7 +1975,7 @@ N/a
 Taxation in Kiribati
 Kosovo
 [
-150
+154
 ]
 10%
 0%
@@ -1979,7 +1986,7 @@ Kuwait
 7.5–16%
 (Rate of 15% typically applies except for regions under Saudi control where it's 7.5% tax, plus add a possible 1% tax for Zakat)
 [
-151
+155
 ]
 0%
 0%
@@ -1987,20 +1994,20 @@ Kuwait
 Taxation in Kuwait
 North Korea
 [
-152
+156
 ]
 25%
 0%
 20%
 10%
 [
-153
+157
 ]
 Taxation in North Korea
 Kyrgyzstan
 10%
 [
-154
+158
 ]
 10%
 12%
@@ -2020,16 +2027,16 @@ Latvia
 0%
 (20% on distribution of profit)
 [
-155
+159
 ]
 20%
 [
-156
+160
 ]
 31.4%
 20%
 [
-157
+161
 ]
 No
 [
@@ -2042,7 +2049,7 @@ No
 5%
 (Fresh fruits and vegetables, books, newspapers)
 [
-158
+162
 ]
 Taxation in Latvia
 Lebanon
@@ -2066,7 +2073,7 @@ Taxation in Lesotho
 Liberia
 25%
 [
-159
+163
 ]
 —
 N/a
@@ -2079,7 +2086,7 @@ Libya
 24.5%
 (20% + 4% Jehad tax + 0.5% corporate income tax to pay for stamp duties)
 [
-160
+164
 ]
 —
 N/a
@@ -2090,19 +2097,19 @@ N/a
 Taxation in Libya
 Liechtenstein
 [
-161
+165
 ]
 [
-162
+166
 ]
 12.5%
 3%
 [
-163
+167
 ]
 22.4%
 [
-164
+168
 ]
 0%
 (share sales)
@@ -2115,7 +2122,7 @@ Liechtenstein
 2.5%
 (reduced)
 [
-165
+169
 ]
 Taxation in Liechtenstein
 Lithuania
@@ -2124,7 +2131,7 @@ citation needed
 ]
 15%
 [
-166
+170
 ]
 31.2%
 42.77%
@@ -2146,21 +2153,21 @@ Luxembourg
 28.69%
 (17% income tax + 1.19% unemployment fund contribution + 6.0–10.5% municipal trade tax
 [
-167
+171
 ]
 8%
 44.2%
 (42%
 [
-168
+172
 ]
 + 3.78% unemployment fund surcharge)
 [
-169
+173
 ]
 No
 [
-170
+174
 ]
 0%
 17%
@@ -2176,11 +2183,11 @@ Macau
 0%
 12%
 [
-171
+175
 ]
 0%
 [
-172
+176
 ]
 Taxation in Macau
 Madagascar
@@ -2220,7 +2227,7 @@ SMEs
 22%
 (standard)
 [
-173
+177
 ]
 Taxation in Madeira
 Malawi
@@ -2228,7 +2235,7 @@ Malawi
 0%
 35%
 [
-174
+178
 ]
 —
 N/a
@@ -2241,22 +2248,22 @@ Malaysia
 0%
 30%
 [
-175
+179
 ]
 (+ 11% for
 EPF
 [
-176
+180
 ]
 + 0.5% for
 SOCSO
 [
-177
+181
 ]
 )
 2-10%
 [
-178
+182
 ]
 10%
 (standard rate for goods)
@@ -2265,16 +2272,16 @@ SOCSO
 5%
 (reduced rate for goods)
 [
-179
+183
 ]
 Taxation in Malaysia
 Maldives
 [
-180
+184
 ]
 8–15%
 [
-181
+185
 ]
 0%
 0%
@@ -2283,7 +2290,7 @@ Maldives
 (nationals)
 6%
 [
-182
+186
 ]
 Taxation in the Maldives
 Mali
@@ -2310,7 +2317,7 @@ Marshall Islands
 0%
 12%
 [
-183
+187
 ]
 2–4%
 [
@@ -2339,7 +2346,7 @@ Mexico
 ]
 30%
 [
-184
+188
 ]
 1.92%
 35%
@@ -2358,7 +2365,7 @@ Moldova
 12%
 12%
 [
-185
+189
 ]
 12%
 (+ 24% for social security)
@@ -2373,11 +2380,11 @@ Monaco
 0%
 (25% for companies generating more than 25% of their turnover outside Monaco)
 [
-186
+190
 ]
 0%
 [
-187
+191
 ]
 20%
 (standard)
@@ -2386,7 +2393,7 @@ Monaco
 5.5%
 (basic products)
 [
-188
+192
 ]
 Taxation in Monaco
 Mongolia
@@ -2397,29 +2404,29 @@ Taxation in Mongolia
 Montenegro
 9%
 [
-189
+193
 ]
 [
-190
+194
 ]
 9%
 (first €720)
 [
-190
+194
 ]
 12.65%
 (11% national tax + 15% municipality surtax on income tax)
 [
-190
+194
 ]
 15%
 (entrepreneurs on their worldwide income)
 [
-191
+195
 ]
 21%
 [
-192
+196
 ]
 7%
 (essential goods - basic foodstufs, water, pharmaceuticals, books, tourism services, etc.)
@@ -2438,22 +2445,22 @@ Taxation in Montserrat
 Morocco
 10–31%
 [
-122
+126
 ]
 [
-193
+197
 ]
 0%
 38%
 [
-193
+197
 ]
 20%
 (standard)
 14%, 10%, 7%
 (reduced rates)
 [
-194
+198
 ]
 Taxation in Morocco
 Mozambique
@@ -2477,19 +2484,19 @@ Taxation in Myanmar
 Namibia
 32%
 [
-195
+199
 ]
 0%
 [
-195
+199
 ]
 37%
 [
-195
+199
 ]
 15%
 [
-195
+199
 ]
 Taxation in Namibia
 Nauru
@@ -2514,17 +2521,17 @@ Nepal
 36%
 (Including 20% additional tax)
 [
-196
+200
 ]
 13%
 (standard)
 [
-197
+201
 ]
 288%
 (for imported vehicles)
 [
-198
+202
 ]
 Taxation in Nepal
 Netherlands
@@ -2532,14 +2539,14 @@ Netherlands
 (on EBT surplus over €200,000)
 19%
 [
-199
+203
 ]
 (on EBT under €200,000)
 0%
 (first €8,700 per year is tax free)
 49.5%
 [
-200
+204
 ]
 36%
 No
@@ -2551,7 +2558,7 @@ No
 20%, 18%, 10%
 (total value < €154.179)
 [
-201
+205
 ]
 [
 Note 4
@@ -2565,11 +2572,11 @@ New Zealand
 28%
 10.5%
 [
-202
+206
 ]
 39%
 [
-203
+207
 ]
 No
 [
@@ -2580,7 +2587,7 @@ No
 Taxation in New Zealand
 New Caledonia
 [
-204
+208
 ]
 30%
 0%
@@ -2589,7 +2596,7 @@ New Caledonia
 25%
 (non-residents)
 [
-205
+209
 ]
 —
 N/a
@@ -2606,7 +2613,7 @@ Taxation in Nicaragua
 Niger
 30%
 [
-206
+210
 ]
 —
 N/a
@@ -2614,7 +2621,7 @@ N/a
 N/a
 7%
 [
-206
+210
 ]
 Taxation in Niger
 Nigeria
@@ -2639,7 +2646,7 @@ N/a
 N/a
 0%
 [
-207
+211
 ]
 —
 N/a
@@ -2658,24 +2665,24 @@ North Macedonia
 Taxation in North Macedonia
 Norway
 [
-208
+212
 ]
 22%
 [
-209
+213
 ]
 0%
 (for yearly income under 100,000 NOK)
 [
-210
+214
 ]
 47.4%
 [
-211
+215
 ]
 37.84%
 [
-212
+216
 ]
 Yes
 [
@@ -2684,7 +2691,7 @@ Yes
 Varies by municipality
 0%
 [
-213
+217
 ]
 25%
 (standard rate)
@@ -2693,16 +2700,16 @@ Varies by municipality
 12%
 (transportation, cinema and hotel services)
 [
-214
+218
 ]
 Taxation in Norway
 Oman
 15%
 [
-215
+219
 ]
 [
-216
+220
 ]
 0%
 5%
@@ -2711,17 +2718,17 @@ Pakistan
 1.25%
 (minimum)
 [
-217
+221
 ]
 20%
 (small)
 [
-218
+222
 ]
 29%
 (corporate)
 [
-219
+223
 ]
 0%
 (under Rs 600,000 per annum)
@@ -2730,7 +2737,7 @@ Pakistan
 15%
 Exempt
 [
-220
+224
 ]
 0%
 18%
@@ -2748,7 +2755,7 @@ N/a
 N/a
 0%
 [
-221
+225
 ]
 —
 N/a
@@ -2812,11 +2819,11 @@ Philippines
 35%
 5-10%
 [
-222
+226
 ]
 6%
 [
-223
+227
 ]
 12%
 (standard)
@@ -2827,34 +2834,34 @@ Pitcairn Islands
 0%
 0%
 [
-224
+228
 ]
 0%
 Taxation in the Pitcairn Islands
 Poland
 [
-225
+229
 ]
 19%
 (9% for small taxpayer, those with revenue in a given tax year not exceeding the equivalent of €1.2 million and that have "small taxpayer" status)
 [
-225
+229
 ]
 9%
 (under 30.000 złotych per year, 0% income tax
 [
-226
+230
 ]
 ,
 9% Health Insurance(non-deductible)
 [
-227
+231
 ]
 )
 41% or 45%
 (32% + 9% health insurance + 4% solidarity tax above 1.000.000 złotych per year)
 [
-228
+232
 ]
 23.9% or 27.9%
 (self employed: not deduction first 30.000 złotych, 19% + 4.9% health insurance +4% solidarity tax above 1 million złotych)
@@ -2891,7 +2898,7 @@ Taxation in Portugal
 Puerto Rico
 20%
 [
-229
+233
 ]
 0%
 (16% proposed)
@@ -2910,12 +2917,12 @@ Romania
 16%
 (or 1% revenue for micro-entities with at least one employee, or 3% for micro-enterprises with no employees)
 [
-230
+234
 ]
 35%
 (25% social security (CAS) + 10% health insurance (CASS) + 0% income tax for people with disabilities. 0% income tax for IT workers earning less than 10000 RON).
 [
-230
+234
 ]
 45%
 (25% social security (CAS) + 10% health insurance (CASS) + 10% income tax after CAS and CASS)
@@ -2924,7 +2931,7 @@ Self employed (PFA):
 RON
 22,800 for the whole year + 10% income tax)
 [
-230
+234
 ]
 10%
 19%
@@ -2949,18 +2956,18 @@ Russia
 22%
 (earning over 50 million roubles a year)
 [
-231
+235
 ]
 35%
 (non-residents)
 0%
 [
-232
+236
 ]
 22%
 (standard)
 [
-233
+237
 ]
 10%
 (books, certain items of food and children goods)
@@ -2976,7 +2983,7 @@ Taxation in Rwanda
 Saint Kitts and Nevis
 33%
 [
-234
+238
 ]
 0%
 —
@@ -3056,7 +3063,7 @@ Taxation in São Tomé and Príncipe
 Sark
 0%
 [
-235
+239
 ]
 0%
 0%
@@ -3067,7 +3074,7 @@ Document duty charged on real estate transfers from estates performed by a Guern
 Taxation in Sark
 Saudi Arabia
 [
-236
+240
 ]
 2.5%
 (fully Saudi national owned businesses)
@@ -3090,27 +3097,27 @@ Senegal
 Taxation in Senegal
 Serbia
 [
-237
+241
 ]
 15%
 [
-238
+242
 ]
 10%
 25%
 (additional contributions for state health, pension and unemployment funds)
 [
-239
+243
 ]
 15%
 0%
 20%
 (standard)
 [
-240
+244
 ]
 [
-241
+245
 ]
 10% or 0%
 (reduced rates)
@@ -3135,14 +3142,14 @@ Taxation in Sierra Leone
 Singapore
 17%
 [
-242
+246
 ]
 0%
 22%
 (+20% tax on pension)
 0%
 [
-243
+247
 ]
 9%
 Taxation in Singapore
@@ -3160,7 +3167,7 @@ Slovakia
 21%
 25%
 [
-244
+248
 ]
 25%
 No
@@ -3171,7 +3178,7 @@ No
 23%
 (standard)
 [
-245
+249
 ]
 19%
 (electricity, non-basic foodstuffs, selected catering services)
@@ -3210,7 +3217,7 @@ Taxation in the Solomon Islands
 Somalia
 30%
 [
-246
+250
 ]
 0%
 18%
@@ -3219,7 +3226,7 @@ Taxation in Somalia
 South Africa
 28%
 [
-247
+251
 ]
 0%
 (below threshold)
@@ -3227,11 +3234,11 @@ South Africa
 18%
 25%
 [
-248
+252
 ]
 15%
 [
-249
+253
 ]
 Taxation in South Africa
 South Georgia and the South Sandwich Islands
@@ -3255,22 +3262,22 @@ South Korea
 ]
 24.2%
 [
-122
+126
 ]
 7.8%
 (6% + 1.8%
 [
-250
+254
 ]
 )
 53.4%
 (42%
 [
-251
+255
 ]
 + 11.4%
 [
-250
+254
 ]
 )
 No
@@ -3279,7 +3286,7 @@ No
 ]
 50%
 [
-252
+256
 ]
 10%
 Taxation in South Korea
@@ -3331,7 +3338,7 @@ Sri Lanka
 ]
 15–30%
 [
-122
+126
 ]
 0%
 36%
@@ -3340,7 +3347,7 @@ LKR
 3 million)
 10%
 [
-253
+257
 ]
 12%
 (standard)
@@ -3353,19 +3360,19 @@ Sudan
 15%
 (most other companies)
 [
-254
+258
 ]
 Taxation in Sudan
 Suriname
 36%
 [
-255
+259
 ]
 8%
 (first SRD2,646 per year is deductible)
 38%
 [
-256
+260
 ]
 —
 N/a
@@ -3373,56 +3380,56 @@ Taxation in Suriname
 Svalbard
 16%
 [
-257
+261
 ]
 [
-258
+262
 ]
 8%
 [
-259
+263
 ]
 22%
 [
-259
+263
 ]
 0%
 [
-260
+264
 ]
 0%
 0%
 [
-261
+265
 ]
 Taxation in Norway
 Sweden
 20.6%
 [
-262
+266
 ]
 [
-263
+267
 ]
 7.1%
 [
-264
+268
 ]
 (first 25,100 SEK per year is deductible)
 [
-262
+266
 ]
 48% to 54%
 [
-264
+268
 ]
 (depending on municipality)
 [
-265
+269
 ]
 30%
 [
-262
+266
 ]
 No
 [
@@ -3434,7 +3441,7 @@ No
 12% or 6%
 (reduced rates)
 [
-266
+270
 ]
 Taxation in Sweden
 Switzerland
@@ -3443,34 +3450,34 @@ Switzerland
 ]
 17.92%
 [
-122
+126
 ]
 0%
 62.855%
 10.6%
 (mandatory social security contributions)
 [
-267
+271
 ]
 11.5%
 (federal)
 [
-268
+272
 ]
 28.025%
 (cantonal, Geneva)
 [
-269
+273
 ]
 9.69%
 (communal, Avully and Chancy, both canton of Geneva)
 [
-269
+273
 ]
 3.04%
 (church tax, roman catholic and protestant in Geneva)
 [
-269
+273
 ]
 Yes
 [
@@ -3478,7 +3485,7 @@ Yes
 ]
 0%
 [
-270
+274
 ]
 8.1%
 (standard)
@@ -3501,22 +3508,22 @@ Taiwan
 ]
 20%
 [
-271
+275
 ]
 5%
 40%
 20%
 [
-272
+276
 ]
 5%
 [
-273
+277
 ]
 Taxation in Taiwan
 Tajikistan
 [
-274
+278
 ]
 13%
 (residents)
@@ -3577,7 +3584,7 @@ Trinidad and Tobago
 , 30%
 (annual chargeable income over $1 million)
 [
-275
+279
 ]
 n/a
 n/a
@@ -3608,7 +3615,7 @@ No
 ]
 1–30%
 [
-276
+280
 ]
 20%
 (standard)
@@ -3650,7 +3657,7 @@ Taxation in Tuvalu
 Uganda
 30%
 [
-277
+281
 ]
 —
 N/a
@@ -3658,17 +3665,17 @@ N/a
 N/a
 18%
 [
-278
+282
 ]
 Taxation in Uganda
 Ukraine
 18%
 [
-279
+283
 ]
 0%
 [
-280
+284
 ]
 18%
 (common rate)
@@ -3677,7 +3684,7 @@ Ukraine
 22%
 (social security)
 [
-281
+285
 ]
 18%
 2%
@@ -3687,52 +3694,52 @@ United Arab Emirates
 0%
 (free zone companies,
 [
-282
+286
 ]
 as well as mainland companies with less than 375,000 AED a year in profit,
 [
-283
+287
 ]
 may need to fill out a tax return)
 9%
 (for mainland companies with a net profit over AED 375,000 annually, taxation paid to other countries credited towards UAE taxation, tax return required)
 [
-283
+287
 ]
 0%
 [
-284
+288
 ]
 0%
 [
-285
+289
 ]
 5%
 [
-284
+288
 ]
 Taxation in the United Arab Emirates
 United Kingdom
 [
-286
+290
 ]
 19–25%
 [
-287
+291
 ]
 0%
 (up to £12,570)
 [
-288
+292
 ]
 47%
 (45% + 2% employee National Insurance, Scotland is even 48%+2%)
 [
-289
+293
 ]
 24%
 [
-290
+294
 ]
 No
 [
@@ -3740,7 +3747,7 @@ No
 ]
 40%
 [
-291
+295
 ]
 20%
 (standard)
@@ -3749,7 +3756,7 @@ No
 0%
 (life necessities, public transport, children's clothing, books and periodicals)
 [
-292
+296
 ]
 Taxation in the United Kingdom
 United States
@@ -3778,7 +3785,7 @@ New York City
 37%
 Nine states with no state income tax
 [
-293
+297
 ]
 (37% + 0%)
 20%
@@ -3788,12 +3795,12 @@ No
 ]
 0–3.64%
 [
-294
+298
 ]
 18–40%
 (federal with offset against individual State Estate and Inheritance Taxes)
 [
-295
+299
 ]
 0–11.5%
 Taxation in the United States
@@ -3805,7 +3812,7 @@ Uruguay
 0%
 36%
 [
-296
+300
 ]
 22%
 (standard)
@@ -3851,18 +3858,18 @@ Vietnam
 5%
 35%
 [
-297
+301
 ]
 10%
 [
-298
+302
 ]
 10%
 Taxation in Vietnam
 British Virgin Islands
 0%
 [
-299
+303
 ]
 0%
 —
@@ -3871,7 +3878,7 @@ Taxation in the British Virgin Islands
 U.S. Virgin Islands
 21–38.50%
 [
-300
+304
 ]
 Taxation in the United States Virgin Islands
 Wallis and Futuna
@@ -3883,7 +3890,7 @@ Taxation in Wallis and Futuna
 Yemen
 20%
 [
-301
+305
 ]
 10%
 15%
@@ -3892,7 +3899,7 @@ Taxation in Yemen
 Zambia
 30%
 [
-302
+306
 ]
 10%
 30%
@@ -4454,7 +4461,6 @@ on October 2, 2013.
 17
 18
 19
-20
 "Revision, skat og rådgivning
 |
 KPMG
@@ -4887,6 +4893,30 @@ the original
 on 2013-07-17
 . Retrieved
 2014-03-15
+.
+↑
+"Cyprus - corporate income tax"
+.
+PWC
+. 4 August 2026
+. Retrieved
+2 September
+2026
+.
+↑
+"Cyprus - Individual - Taxes on personal income"
+.
+PwC
+.
+↑
+"Cyprus - Individual - Other taxes"
+.
+PwC
+.
+↑
+"Cyprus - Corporate - Other taxes"
+.
+PwC
 .
 ↑
 "Tax System – EURAXESS Czech Republic"
@@ -6722,7 +6752,7 @@ Education spending as percentage of government spending
 List of international rankings
 Lists by country
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=List_of_countries_by_tax_rates&oldid=1370605628
+https://en.wikipedia.org/w/index.php?title=List_of_countries_by_tax_rates&oldid=1372868516
 "
 Categories
 :

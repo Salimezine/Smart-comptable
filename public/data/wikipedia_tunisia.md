@@ -50,7 +50,6 @@ This page is always in light mode.
   * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
 
 
-[ ![Wiki Education logo](https://upload.wikimedia.org/wikipedia/commons/a/ac/Wiki_Education_Foundation_logo.svg) "The coolest thing I've done in 10 years teaching" — run a Wikipedia Assignment in your next college course with free support! ](https://en.wikipedia.org/wiki/Wikipedia:Teaching_with_Wiki_Education)
 ## Contents
 move to sidebar hide
   * [ (Top) ](https://en.wikipedia.org/wiki/Tunisia)

@@ -578,7 +578,9 @@ Anna Perenna
 Latium
 , home to Aeneas' settlement of
 Lavinium
-. However, Aeneas' wife Lavinia became jealous. She planned to murder Anna, but Dido's unkempt, blood-soaked ghost appeared before her sister's bed as she slept, begging her to flee. Anna obeyed and was swept away by the
+. However, Aeneas' wife
+Lavinia
+became jealous. She planned to murder Anna, but Dido's unkempt, blood-soaked ghost appeared before her sister's bed as she slept, begging her to flee. Anna obeyed and was swept away by the
 river god
 Numicus
 and transformed into a river
@@ -2070,7 +2072,7 @@ Other
 IdRef
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Dido&oldid=1368350378
+https://en.wikipedia.org/w/index.php?title=Dido&oldid=1373506675
 "
 Categories
 :

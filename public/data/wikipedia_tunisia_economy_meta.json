@@ -2,9 +2,9 @@
   "title": "Economy of Tunisia - Wikipedia",
   "description": null,
   "url": "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
-  "crawled_at": "2026-08-31",
-  "markdown_length": 125444,
-  "links_found": 309,
+  "crawled_at": "2026-09-07",
+  "markdown_length": 124812,
+  "links_found": 307,
   "links": {
     "internal": [
       "https://en.wikipedia.org/wiki/Main_Page",
@@ -22,11 +22,11 @@
       "https://en.wikipedia.org/wiki/Special:Search",
       "https://en.wikipedia.org/w/index.php?returnto=Economy+of+Tunisia&title=Special%3ACreateAccount",
       "https://en.wikipedia.org/w/index.php?returnto=Economy+of+Tunisia&title=Special%3AUserLogin",
-      "https://en.wikipedia.org/wiki/Wikipedia:Teaching_with_Wiki_Education",
       "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
       "https://ar.wikipedia.org/wiki/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF_%D8%AA%D9%88%D9%86%D8%B3",
       "https://ast.wikipedia.org/wiki/Econom%C3%ADa_de_Tunicia",
-      "https://be.wikipedia.org/wiki/%D0%AD%D0%BA%D0%B0%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B0_%D0%A2%D1%83%D0%BD%D1%96%D1%81%D0%B0"
+      "https://be.wikipedia.org/wiki/%D0%AD%D0%BA%D0%B0%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B0_%D0%A2%D1%83%D0%BD%D1%96%D1%81%D0%B0",
+      "https://ca.wikipedia.org/wiki/Economia_de_Tun%C3%ADsia"
     ],
     "external": [
       "https://donate.wikimedia.org/?uselang=en&wmf_campaign=en.wikipedia.org&wmf_medium=sidebar&wmf_source=donate",

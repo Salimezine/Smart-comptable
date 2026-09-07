@@ -2,9 +2,9 @@
   "title": "Tunisia - Wikipedia",
   "description": null,
   "url": "https://en.wikipedia.org/wiki/Tunisia",
-  "crawled_at": "2026-08-31",
-  "markdown_length": 318911,
-  "links_found": 1478,
+  "crawled_at": "2026-09-07",
+  "markdown_length": 318599,
+  "links_found": 1477,
   "links": {
     "internal": [
       "https://en.wikipedia.org/wiki/Main_Page",
@@ -22,11 +22,11 @@
       "https://en.wikipedia.org/wiki/Special:Search",
       "https://en.wikipedia.org/w/index.php?returnto=Tunisia&title=Special%3ACreateAccount",
       "https://en.wikipedia.org/w/index.php?returnto=Tunisia&title=Special%3AUserLogin",
-      "https://en.wikipedia.org/wiki/Wikipedia:Teaching_with_Wiki_Education",
       "https://en.wikipedia.org/wiki/Tunisia",
       "https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81",
       "https://ace.wikipedia.org/wiki/Tunisia",
-      "https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81"
+      "https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81",
+      "https://af.wikipedia.org/wiki/Tunisi%C3%AB"
     ],
     "external": [
       "https://donate.wikimedia.org/?uselang=en&wmf_campaign=en.wikipedia.org&wmf_medium=sidebar&wmf_source=donate",

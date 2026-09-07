@@ -50,7 +50,6 @@ This page is always in light mode.
   * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Economy+of+Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
 
 
-[ ![Wiki Education logo](https://upload.wikimedia.org/wikipedia/commons/a/ac/Wiki_Education_Foundation_logo.svg) "The coolest thing I've done in 10 years teaching" — run a Wikipedia Assignment in your next college course with free support! ](https://en.wikipedia.org/wiki/Wikipedia:Teaching_with_Wiki_Education)
 ## Contents
 move to sidebar hide
   * [ (Top) ](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
@@ -116,9 +115,9 @@ General
   * [What links here](https://en.wikipedia.org/wiki/Special:WhatLinksHere/Economy_of_Tunisia "List of all English Wikipedia pages containing links to this page \[alt-j\]")
   * [Related changes](https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Economy_of_Tunisia "Recent changes in pages linked from this page \[alt-k\]")
   * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[alt-u\]")
-  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1370468393 "Permanent link to this revision of this page")
+  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1373065982 "Permanent link to this revision of this page")
   * [Page information](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=info "More information about this page")
-  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1370468393&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1373065982&wpFormIdentifier=titleform "Information on how to cite this page")
   * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEconomy_of_Tunisia)
   * [Switch to legacy parser](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&useparsoid=0)
   * [Expand all](https://en.wikipedia.org/wiki/Economy_of_Tunisia "Expand all collapsible elements on the current page")
@@ -146,7 +145,7 @@ From Wikipedia, the free encyclopedia
 _([Learn how and when to remove this message](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_
  |  
 Economy of Tunisia  
-|  [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tunisie_Amen_Banque.JPG/330px-Tunisie_Amen_Banque.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisie_Amen_Banque.JPG)Amen Bank, one of the biggest banks in the country  |  
+|  [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tunisie_Amen_Banque.JPG/250px-Tunisie_Amen_Banque.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisie_Amen_Banque.JPG)Amen Bank, one of the biggest banks in the country  |  
 | --- |  
 | Currency  |  [Tunisian dinar](https://en.wikipedia.org/wiki/Tunisian_dinar "Tunisian dinar") (TND, د.ت  |  
 | [Fiscal year](https://en.wikipedia.org/wiki/Fiscal_year "Fiscal year")  | [Calendar year](https://en.wikipedia.org/wiki/Calendar_year "Calendar year")  |  
@@ -197,7 +196,7 @@ Economy of Tunisia
   * 17.5% on less than $5.50/day (2015)[[8]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-8)
 
  |  
-| [Gini coefficient](https://en.wikipedia.org/wiki/Gini_coefficient "Gini coefficient")  | 32.8 medium (2015)[[9]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-9)  |  
+| [Gini coefficient](https://en.wikipedia.org/wiki/Gini_coefficient "Gini coefficient")  | 33.7 medium (2021)[[9]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-9)  |  
 | [Human Development Index](https://en.wikipedia.org/wiki/Human_Development_Index "Human Development Index")  | 
   * ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 0.746 high (2023)[[10]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-10) ([105th](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index "List of countries by Human Development Index"))
   * ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 0.595 medium [IHDI](https://en.wikipedia.org/wiki/List_of_countries_by_inequality-adjusted_HDI "List of countries by inequality-adjusted HDI") (2023)[[11]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-11)
@@ -215,9 +214,9 @@ Economy of Tunisia
   * (2014 est.)[[5]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-CIAWFTS-5)
 
  |  
-| [Unemployment](https://en.wikipedia.org/wiki/Unemployment "Unemployment")  |  ![Negative increase](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 16.2% (2024)[[14]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-WB_Unemployment-14)  |  
-| [Youth unemployment](https://en.wikipedia.org/wiki/Youth_unemployment "Youth unemployment")  |  ![Positive decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 38.1% (2025)[[15]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-c275-15)  |  
-| [Average net salary](https://en.wikipedia.org/wiki/National_average_salary "National average salary")  | $360 monthly (2023)[[16]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-16)  |  
+| [Unemployment](https://en.wikipedia.org/wiki/Unemployment "Unemployment")  |  ![Positive decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 14.9% (2026, Q2)[[14]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-WB_Unemployment-14)  |  
+| [Youth unemployment](https://en.wikipedia.org/wiki/Youth_unemployment "Youth unemployment")  |  ![Positive decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 38.0% (2026)[[15]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-c275-15)  |  
+| [Average net salary](https://en.wikipedia.org/wiki/National_average_salary "National average salary")  | $328 monthly (2026)[[16]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-16)  |  
 | Main industries  |  [petroleum](https://en.wikipedia.org/wiki/Petroleum "Petroleum"), [mining](https://en.wikipedia.org/wiki/Mining "Mining") (particularly [phosphate](https://en.wikipedia.org/wiki/Phosphate "Phosphate"), [iron ore](https://en.wikipedia.org/wiki/Iron_ore "Iron ore")), [tourism](https://en.wikipedia.org/wiki/Tourism "Tourism"), [textile](https://en.wikipedia.org/wiki/Textile "Textile"), [footwear](https://en.wikipedia.org/wiki/Footwear "Footwear"), [agriculture](https://en.wikipedia.org/wiki/Agriculture "Agriculture"), [beverages](https://en.wikipedia.org/wiki/Drink "Drink"), [olive oil](https://en.wikipedia.org/wiki/Olive_oil "Olive oil")  |  
 | External |  
 | Exports  |  ![Decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Decrease2.svg/20px-Decrease2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) $23.3 billion USD (2024)[[17]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-OECexport-17)  |  
@@ -344,7 +343,7 @@ The following table shows the main economic indicators in 1980–2017. Inflation
 | 2017  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)135.4  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)11,755  |  ![Decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Decrease2.svg/20px-Decrease2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)42.2  |  ![Increase](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)1.9%  |  ![Negative increase](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)5.3%  |  ![Positive decrease](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Decrease_Positive.svg/20px-Decrease_Positive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)15.3%  |  ![Negative increase](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)71.3%  |  
 ## External trade and investment
 [[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=2 "Edit section: External trade and investment")]
-[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/2006Tunisian_exports.PNG/250px-2006Tunisian_exports.PNG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:2006Tunisian_exports.PNG)Tunisian exports in 2006 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tunisia_Product_Exports_%282019%29.svg/250px-Tunisia_Product_Exports_%282019%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_Product_Exports_\(2019\).svg)Tunisia product exports (2019)
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/2006Tunisian_exports.PNG/250px-2006Tunisian_exports.PNG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:2006Tunisian_exports.PNG)Tunisian exports in 2006
 In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for [balance-of-payments](https://en.wikipedia.org/wiki/Balance-of-payments "Balance-of-payments") support. In January 2003 [Standard & Poor's](https://en.wikipedia.org/wiki/Standard_&_Poor's "Standard & Poor's") affirmed its investment grade credit ratings for Tunisia. The [World Economic Forum](https://en.wikipedia.org/wiki/World_Economic_Forum "World Economic Forum") 2002-03 ranked Tunisia 34th in the Global Competitiveness Index Ratings (two places behind [South Africa](https://en.wikipedia.org/wiki/South_Africa "South Africa"), the continent's leader). In April 2002, Tunisia's first [US dollar](https://en.wikipedia.org/wiki/United_States_dollar "United States dollar")-denominated [sovereign bond](https://en.wikipedia.org/wiki/Sovereign_bond "Sovereign bond") issue since 1997 raised $458 million, with maturity in 2012.
 The [Bourse de Tunis](https://en.wikipedia.org/wiki/Bourse_de_Tunis "Bourse de Tunis") is under the control of the state-run Financial Market Council and lists over 50 companies. The government offers substantial tax incentives to encourage companies to join the exchange, and expansion is occurring.
 The Tunisian government adopted a unified investment code in 1993 to attract foreign capital. More than 1,600 export-oriented [joint venture](https://en.wikipedia.org/wiki/Joint_venture "Joint venture") firms operate in Tunisia to take advantage of relatively low labor costs and preferential access to nearby European markets. Economic links are closest with European countries, which dominate Tunisia's trade. Tunisia's [currency](https://en.wikipedia.org/wiki/Currency "Currency"), the dinar, is not traded outside Tunisia. However, partial convertibility exists for bona fide commercial and investment transaction. Certain restrictions still limit operations carried out by Tunisian residents.
@@ -490,7 +489,7 @@ In addition to smaller productions of other agricultural products, like [almond]
 
 [Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia")articles  |  
 | --- |  
-Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1370468393](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1370468393)"
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1373065982](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1373065982)"
 [Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 
   * [African Union member economies](https://en.wikipedia.org/wiki/Category:African_Union_member_economies "Category:African Union member economies")
   * [Economy of Tunisia](https://en.wikipedia.org/wiki/Category:Economy_of_Tunisia "Category:Economy of Tunisia")
@@ -513,7 +512,7 @@ Hidden categories:
   * [Articles containing Tunisian Arabic-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Tunisian_Arabic-language_text "Category:Articles containing Tunisian Arabic-language text")
 
 
-  * This page was last edited on 21 August 2026, at 07:22 (UTC).
+  * This page was last edited on 3 September 2026, at 21:28 (UTC).
   * Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
   * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
 
