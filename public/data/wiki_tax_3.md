@@ -1,525 +1,1716 @@
-Tunisia–United Kingdom relations - Wikipedia
+French conquest of Tunisia - Wikipedia
 Jump to content
 Search
 Search
-Tunisia–United Kingdom relations
-2 languages
+French conquest of Tunisia
+15 languages
 العربية
+Беларуская
+Català
+Eesti
+Français
 עברית
+Bahasa Indonesia
+Italiano
+日本語
+한국어
+मराठी
+Português
+Русский
+Türkçe
+中文
 Edit links
 From Wikipedia, the free encyclopedia
-Bilateral relations
-Tunisia–United Kingdom relations
+Conquest of Tunisia by the French
+French conquest of Tunisia
+Part of the
+Scramble for Africa
+Capture of
+Tunis
+in October 1881
+Date
+28 April – 23 December 1881
+Location
 Tunisia
-United Kingdom
-Diplomatic mission
-Embassy of Tunisia, London
-Embassy of the United Kingdom, Tunis
-British Foreign Secretary
-David Lammy
-with Tunisian Foreign Minister Mohamed Ali Nafti in Tunis, January 2025.
-Tunisia–United Kingdom relations
-are the foreign and
-bilateral
-relations between the
-Republic of Tunisia
-and the
-United Kingdom of Great Britain and Northern Ireland
+Result
+French victory
+Tunisia becomes a
+French protectorate
+Belligerents
+France
+Ottoman Beylik of Tunisia
+Commanders and leaders
+Forgemol de Bostquénard
+Jules Aimé Bréart
+Muhammad III
+Ali III
+Strength
+28,000 men
+Unknown
+Casualties and losses
+Unknown
+Unknown
+v
+t
+e
+Scramble for Africa
+South Africa (1879)
+South Africa (1880)
+Tunisia (1881)
+Sudan (1881)
+Egypt (1882)
+Wassoulou (1883)
+Madagascar (1883)
+Guinea-Bissau (1886)
+Equatoria (1886–89)
+Somalia (1890s–1908)
+Eritrea (1889)
+Viye (1890)
+Dahomey (1890)
+Mashonaland (1890)
+Katanga (1891−92)
+Dahomey (1892)
+Matabeleland (1893)
+Morocco (1893–94)
+Morocco (1893–1894)
+Wassoulou (1894)
+Congo (1895)
+Mozambique (1895)
+Gaza (1895)
+Asante (1895)
+South Africa (1895)
+Maputo (1896)
+Ethiopia (1896)
+Matabeleland (1896)
+Zanzibar (1896)
+Benin (1897)
+Wassoulou (1898)
+Chad (1898)
+Fashoda (1898)
+South Africa (1899)
+Somaliland (1900)
+Aro (1901)
+Barue (1902)
+Angola (1902)
+Namibia (1904)
+Tanganyika (1905)
+Morocco (1905–06)
+South Africa (1906)
+Morocco (1907–34)
+Mufilo (1907)
+Morocco (1909)
+Ouaddai (1909)
+Morocco (1911)
+Morocco (1911)
+Libya (1911–12)
+South Africa (1914)
+Libya (1915-17)
+Darfur (1916)
+The
+French conquest of Tunisia
+occurred in two phases in 1881: the first (28 April – 12 May) consisting of the invasion and securing of the country before the signing of a treaty of protection, and the second (10 June – 28 October) consisting of the suppression of a rebellion. The
+French protectorate of Tunisia
+that was established lasted until the
+independence of Tunisia
+on 20 March 1956.
+Context
+[
+edit
+]
+Early contacts
+[
+edit
+]
+Tunisia
+had been a province of the
+Ottoman Empire
+since the
+Conquest of Tunis (1574)
+, although with great autonomy under the authority of a
+Bey
 .
-Both countries share common membership of the
-International Criminal Court
-, the
-United Nations
-, the
-World Health Organization
-, and the
-World Trade Organization
-. Bilaterally the two countries have an
-Association Agreement
-,
 [
 1
 ]
-a Double Taxation Convention,
+In 1770,
+Brigadier
+Rafélis de Broves
+bombarded the cities of
+Bizerte
+,
+Porto Farina
+and
+Monastir
+in retaliation for acts of piracy.
 [
 2
 ]
-and an Investment Agreement.
+In the 19th century Tunisian commercial contacts with
+Europe
+were numerous, and there was a population of French, Italian and British
+expatriates
+in the country, that was
+represented by
+Consulates
+.  France had also made a major loan to Tunisia in the mid-19th century.
 [
 3
 ]
-Economic relations
+The Tunisian government was weak, with an inefficient
+tax system
+that only brought it one-fifth of the tax collected. The economy was crippled with a series of droughts and the elimination of
+corsairs
+by Western fleets. Lastly, Tunisians had little control on foreign trade as old 16th century agreements with European powers limited custom taxes to 3%. As a result, its small industry was devastated by imports, especially in the area of
+textiles
+.
+[
+1
+]
+Colonial competition
 [
 edit
 ]
-Tunisia–United Kingdom Association Agreement
-Association Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and the Republic of Tunisia, of the other part
-Type
-Free trade agreement
-Context
-Trade continuity agreement
-between Tunisia and the United Kingdom
-Signed
-4 October 2019
-Location
-London,
-England
-, United Kingdom
-Effective
-1 January 2021
-Negotiators
-Nabil Ben Khedher
-Louise de Sousa
-Parties
-Tunisia
+Following the
+Franco-Prussian War
+of 1870–71, France's international prestige was severely damaged, and both
+Italy
+and the
 United Kingdom
-Language
-Arabic
-English
-French
-The Association Agreement between the United Kingdom and Tunisia was signed on 4 October 2020 in London. The Tunisia–United Kingdom Association Agreement was established to safeguard and enhance trade relations between the UK and Tunisia following the UK's withdrawal from the European Union. Both governments were directly represented at its signing. The agreement is bilingual, with English and French texts holding equal validity and authority. It ensures tariff-free trade on goods, promotes cooperation on regulations and standards, and preserves vital economic ties between the two parties. The use of both languages in its administration supports clarity and effective implementation. This accord guarantees continuity and stability in trade, bringing mutual economic benefits to both the UK and Tunisia.
-From 1 March 1998 until 30 December 2020, trade between Tunisia and the UK was governed by the
-European Communities–Tunisia Euro-Mediterranean Association Agreement
-, while the United Kingdom was a
-member
-of the
-European Union
-.
+attempted to reinforce their influence in Tunisia. The Italian representative failed through clumsiness, but the British representative
+Sir Richard Wood
+was more successful. In order to limit French influence, Wood obtained the reinstatement of Tunisia as a province of the
+Ottoman Empire
+in 1871, although the region's autonomy was also guaranteed.
 [
 4
 ]
+Great Britain continued to try to exert influence through commercial ventures, but these were not successful.
+[
+4
+]
+There were also various Tunisian land ownership disputes among France, Britain and Italy.
 [
 5
 ]
-Following the
-withdrawal of the United Kingdom from the European Union
-, the UK and Tunisia signed the Tunisia–United Kingdom Association Agreement on 15 October 2020. The Tunisia–United Kingdom Association Agreement is a
-continuity trade agreement
-, based on the EU free trade agreement, which entered into force on 1 January 2021. Trade value between Tunisia and the United Kingdom was worth £678 million in 2022.
+The French wished to take control of Tunisia, which neighboured their existing colony of
+Algeria
+, and to suppress Italian and British influence there. At the
+Congress of Berlin
+in 1878, a diplomatic arrangement was made for France to take over Tunisia while Great Britain obtained control of
+Cyprus
+from the Ottomans.
+[
+1
+]
+[
+4
+]
+Subsequently, the use of Tunisian territory as a sanctuary by rebel
+Khroumir
+bands gave a pretext for the military intervention.
+[
+5
+]
 [
 6
 ]
-Diplomatic missions
+Occupation
 [
 edit
 ]
-Tunisia maintains an
-embassy
-in
-London
-.
+Capture of Sfax
+by French troops (top), and the
+Battle of Djebel Haddeda
+(bottom), 1881
+On 28 April 1881, 28,000 men under General
+Forgemol de Bostquénard
+entered Tunisia. On 1 May, the city of
+Bizerte
+surrendered to the 8,000 men of
+Jules Aimé Bréart
 [
-7
+fr
 ]
-The United Kingdom maintains an embassy in
+, who then continued to
 Tunis
 .
 [
-8
+6
+]
+Bréart entered Tunis between May 3 and May 6, 1881. He had in his possession the
+Bardo Treaty
+establishing a
+protectorate on Tunis
+, which had just been cabled to him by the French government. On May 11, Bréart, the general consul
+Théodore Roustan
+, and General Pierre Léon Mauraud, accompanied by an armed escort, presented the treaty to
+Muhammad III as-Sadiq
+(Sadok Bey),
+Bey of Tunis
+between 1859 and 1881, who resided in Ksar Saïd. Surprised, Sadok Bey requested several hours for reflection, and immediately gathered his cabinet. Some of its members insisted that the bey should escape towards
+Kairouan
+to organize resistance, but Sadok Bey decided to accept the protectorate. The Bardo Treaty was signed by both parties on 12 May 1881.
+[
+5
+]
+French
+Chasseurs d'Afrique
+on outpost in Tunis, 1881
+An insurrection soon broke out in the south on 10 June 1881, and then in
+Sfax
+. 6
+ironclads
+were dispatched from
+Toulon
+(
+Colbert
+,
+Friedland
+,
+Marengo
+,
+Trident
+,
+Revanche
+, and
+Surveillante
+) to join the French Navy ships in Tunisian waters.  In Sfax, three ironclads from the
+Division of the Levant
+were already present (
+Alma
+,
+Reine Blanche
+, and
+La Galissonnière
+), together with four cannon boats.
+[
+6
+]
+Sfax was bombarded, and on 16 July the city was invested after hard fighting, with 7 dead and 32 wounded for the French.
+[
+6
+]
+At
+Kairouan
+32,000 men, 6,000 horses and 20,000 tons of supplies and material were landed.  Kairouan was taken without a fight on 28 October 1881.
+[
+6
+]
+Consequences
+[
+edit
+]
+Great Britain and
+Germany
+silently approved the invasion of the country, while
+Italy protested in vain
+.
+[
+5
+]
+Tunisia thus became a
+French protectorate
+, with great powers for the French, the French Resident being simultaneously
+Prime Minister
+, controller of the State's finances, and
+Commander in Chief
+of its armed forces.
+[
+5
+]
+In 1882,
+Paul Cambon
+energetically took advantage of his position as Resident, leaving the Bey essentially powerless, and in effect administering Tunisia as another French colony.
+[
+5
+]
+The French established an important naval base at Bizerte in 1898.
+[
+6
+]
+Italy would respond with the 1911–12
+Italo-Turkish War
+leading to the Italian occupation of
+Libya
+.
+[
+citation needed
 ]
 See also
 [
 edit
 ]
-2015 Sousse attacks
-Foreign relations of Tunisia
-Foreign relations of the United Kingdom
-Free trade agreements of the United Kingdom
-References
+History of French-era Tunisia
+French conquest of Algeria
+French conquest of Morocco
+Notes
 [
 edit
 ]
-↑
-Murrison, Andrew; Burns, Conor (4 October 2019).
-"UK and Tunisia sign continuity agreement"
-.
-GOV.UK
-.
-Archived
-from the original on 4 October 2019
-. Retrieved
-22 March
-2024
+1
+2
+3
+Aldrich 1996
+, p.
+29
 .
 ↑
-HM Revenue and Customs (2 January 2014).
-"Tunisia: tax treaties"
-.
-GOV.UK
-.
-Archived
-from the original on 31 July 2025
-. Retrieved
-22 September
-2025
-.
-↑
-"Tunisia - United Kingdom BIT (1989)"
-.
-UN Trade and Development
-.
-Archived
-from the original on 7 December 2022
-. Retrieved
-1 July
-2024
+Houtsma, M Th (1993),
+First Encyclopaedia of Islam, 1913–1936
+, E.J. Brill, p.
+735,
+ISBN
+9004097961
+,
+archived
+from the original on 2014-05-02
 .
 ↑
-"Euro-Mediterranean Agreement establishing an Association between the European Communities and their Member States, of the one part, and the Republic of Tunisia, of the other part"
+Aldrich 1996
+, p.
+28
 .
-Council of the European Union
+1
+2
+3
+Fage, JD (1975),
+The Cambridge history of Africa
+, Cambridge University Press, p.
+179,
+ISBN
+9780521228039
+,
+archived
+from the original on 2014-01-11
 .
-Archived
-from the original on 3 July 2025
-. Retrieved
-3 July
-2025
+1
+2
+3
+4
+5
+6
+Aldrich 1996
+, p.
+30
 .
-↑
-"EU - Tunisia"
+1
+2
+3
+4
+5
+6
+Randier 2006
+, p.
+395.
+Bibliography
+[
+edit
+]
+Aldrich, Robert (15 Sep 1996),
+Greater France: a history of French overseas expansion
+, European Studies, Basingstoke-London: Palgrave Macmillan,
+ISBN
+978-0-312-16000-5
+Randier (2006),
+La Royale
+, Babouji,
+ISBN
+2-35261-022-2
 .
-World Trade Organization
-.
-Archived
-from the original on 24 June 2025
-. Retrieved
-3 July
-2025
-.
-↑
-Department for International Trade (3 November 2022).
-"UK trade agreements in effect"
-.
-GOV.UK
-. Archived from
-the original
-on 17 January 2024
-. Retrieved
-9 February
-2024
-.
-↑
-Diplomat Magazine (1 November 2014).
-"Tunisia"
-.
-Diplomat Magazine
-.
-Archived
-from the original on 9 August 2025
-. Retrieved
-22 September
-2025
-.
-↑
-"British Embassy Tunis"
-.
-GOV.UK
-.
-Archived
-from the original on 13 May 2024
-. Retrieved
-1 July
-2024
-.
+External links
+[
+edit
+]
+Media related to
+French conquest of Tunisia
+at Wikimedia Commons
 v
 t
 e
-Foreign relations of Tunisia
-Africa
-Algeria
-Egypt
-Libya
-Morocco
-Americas
-Mexico
-United States
-Asia
-Bangladesh
-China
-India
-Indonesia
-Iran
-Israel
-Malaysia
-Pakistan
-Palestine
-Qatar
-Saudi Arabia
-Syria
-Turkey
-Europe
-France
-Greece
-Italy
-Kosovo
-Malta
-Poland
-Russia
-Spain
-Sweden
-Ukraine
-United Kingdom
-Related topics
-Ministry of Foreign Affairs
-Diplomatic missions of
-/
-in Tunisia
-European Union relations
-Tunisian diaspora
-Tunisian Ministry of Foreign Affairs
-v
-t
-e
-Foreign relations of the United Kingdom
-Bilateral relations
-Africa
-Algeria
-Angola
-Benin
-Botswana
-Cameroon
-Democratic Republic of the Congo
-Egypt
-Eritrea
-Eswatini
-Ethiopia
-Gabon
-The Gambia
-Ghana
-Ivory Coast
-Kenya
-Lesotho
-Liberia
-Libya
-Madagascar
-Malawi
-Mauritius
-Morocco
-Mozambique
-Namibia
-Nigeria
-Rwanda
-Senegal
-Seychelles
-Sierra Leone
-Somalia
-Somaliland
-South Africa
-South Sudan
-Sudan
-Tanzania
-Togo
 Tunisia
-Uganda
-Zambia
-Zimbabwe
-Asia
-Afghanistan
-Bahrain
-Bangladesh
-Brunei
-Cambodia
-China
-Hong Kong
-India
-Indonesia
-Iran
-Iraq
-Israel
-Japan
-Jordan
-Kazakhstan
-Kyrgyzstan
-Kuwait
-Laos
-Lebanon
-Malaysia
-Maldives
-Mongolia
-Myanmar
-Nepal
-North Korea
-Oman
-Pakistan
-Palestine
-Philippines
-Qatar
-Saudi Arabia
-Singapore
-South Korea
-Sri Lanka
-Syria
-Taiwan
-Tajikistan
-Thailand
-Timor-Leste
-Turkmenistan
-United Arab Emirates
-Uzbekistan
-Vietnam
-Yemen
-Europe
-Albania
-Andorra
-Armenia
-Austria
-Azerbaijan
-Belgium
-Bosnia and Herzegovina
-Bulgaria
-Croatia
-Cyprus
-Czech Republic
-Denmark
-Faroe Islands
-Greenland
-Estonia
-Finland
-France
-Georgia
-Germany
-Greece
-Holy See
-Hungary
-Iceland
-Ireland
-Italy
-Kosovo
-Latvia
-Liechtenstein
-Lithuania
-Luxembourg
-Malta
-Moldova
-Monaco
-Montenegro
-Netherlands
-North Macedonia
-Norway
-Poland
-Portugal
-Romania
-Russia
-San Marino
-Serbia
-Slovakia
-Slovenia
-Spain
-Sweden
-Switzerland
-Turkey
-Ukraine
-North America
-Antigua and Barbuda
-Barbados
-Bahamas
-Belize
+articles
+History
+Early history
+Capsian culture
+Ancient Carthage
+Punic Wars
+First War
+Second War
+Third War
+Byzantine Empire
+Medieval history
+Muslim conquest
+Fatimid Caliphate
+Hafsids
+Regency of Tunis
+Muradid
+Husaynids
+French protectorate
+National movement
+Naturalization issue
+Protests of 9 April
+Tunisian campaign
+Independence declaration
+Kingdom of Tunisia
+Republic declaration
+1987 coup d'état
+Tunisian revolution
+2013–14 political crisis
+2018 Tunisian protests
+COVID-19 pandemic
+2021 Tunisian protests
+25 July 2021 self-coup
+Geography
+Administrative divisions
+Governorates
+Cities
+Subdivisions
+Regions
+North East
+North West
+Sahel
+Central West
+South East
+Djerid
+Wildlife
+Ecoregions
+World Heritage Sites
+Museums
+Demographics
+Tunisians
+Tunisian diaspora
+Climate
+Politics
+President of the Republic
+List
+Prime Minister
+List
+Cabinet
+Constitution
+Fundamental Pact
+1861
+1959
+2014
+2022
+Foreign relations
+Armed Forces
+Army
+Air Force
+Navy
+Parliament
+National Council of Regions and Districts
+Assembly of the Representatives of the People
+Political parties
+Elections
+Independent High Authority for Elections
+Economy
+Bourse de Tunis
+Central Bank of Tunisia
+Tunisian dinar
+Banking in Tunisia
+Agriculture
+Energy
+Natural resources
+Water supply and sanitation
+Tourism
+Industry
+Telecommunications
+Transport
+Roads
+Rail transport
+Traditional crafts
+Major projects
+Society
+Education
+Baccalaureate
+Higher education
+Languages
+Tunisian Arabic
+Media
+Television
+Radio stations
+Internet
+Newspapers
+Censorship
+Human rights
+Abortion
+LGBT
+Women
+Polygamy
+Religion
+Islam
+Christianity
+Judaism
+Health
+Public holidays
+Culture
+Arts
+Cinema
+Music
+Literature
+Sport
+Football
+Cuisine
+National symbols
+Flag
+National anthem
+Coat of arms
+Motto
+Category
+WikiProject
+Commons
+v
+t
+e
+French overseas empire
+Former
+v
+t
+e
+Former French colonies
+in Africa and the Indian Ocean
+North Africa
+Algeria
+Morocco
+Tunisia
+West Africa
+Côte d'Ivoire
+Dahomey
+Sudan
+Guinea
+Mauritania
+Arguin Island
+Niger
+Senegal
+Four Communes
+Upper Volta
+Togoland
+James Island
+Albreda
+Equatorial Africa
+Chad
+Gabon
+Middle Congo
+Ubangi-Shari
+Cameroons
+Comoros
+Anjouan
+Grande Comore
+Mohéli
+Somaliland (Djibouti)
+Madagascar
+Isle de France
+v
+t
+e
+Former French colonies
+in the Americas
+French North America
+Acadia
+Louisiana
 Canada
-Costa Rica
-Cuba
+Terre
+Neuve
+French Florida
+French Texas
+French Caribbean
 Dominica
-Dominican Republic
-El Salvador
 Grenada
-Guatemala
-Haiti
-Honduras
-Jamaica
-Mexico
-Nicaragua
-Panama
+The Grenadines
+Saint-Domingue
+Haïti
+,
+Dominican Republic
 Saint Kitts and Nevis
 Saint Lucia
-Saint Vincent and the Grenadines
-Trinidad and Tobago
-United States
-Special Relationship
+Saint Vincent
+Tobago
+Virgin Islands
+Equinoctial France
+Berbice
+France Antarctique
+Inini
+French colonization of the Americas
+French West India Company
+v
+t
+e
+Former French colonies
+in Asia and Oceania
+French India
+Chandernagor
+Coromandel Coast
+Madras
+Mahé
+Pondichéry
+Karaikal
+Yanaon
+Indochinese Union
+Cambodia
+Laos
+Vietnam
+Cochinchina
+Annam
+Tonkin
+Kouang-Tchéou-Wan
+Mandate for Syria
+and the Lebanon
+State of Syria
+Aleppo
+Damascus
+Alawite State
+Greater Lebanon
+Jabal al-Druze
+Sanjak of Alexandretta
 Oceania
-Australia
-Fiji
-Kiribati
-Nauru
-New Zealand
-Papua New Guinea
-Samoa
-Solomon Islands
-Tonga
-Tuvalu
+New Hebrides
 Vanuatu
+Port Louis-Philippe (Akaroa)
+France–Asia relations
+Louis XIV's East India Company
+Present
+v
+t
+e
+Overseas France
+Inhabited territories
+Overseas
+regions
+1
+French Guiana
+Guadeloupe
+Martinique
+Mayotte
+2
+Réunion
+Overseas
+collectivities
+French Polynesia
+Saint Barthélemy
+Saint Martin
+Saint Pierre and Miquelon
+Wallis and Futuna
+Sui generis
+collectivity
+New Caledonia
+Uninhabited territories
+North Pacific Ocean
+Clipperton Island
+Overseas territory
+(
+French Southern
+and Antarctic Lands
+)
+Adélie Land
+Crozet Islands
+Kerguelen Islands
+Saint Paul
+and
+Amsterdam Islands
+Scattered Islands in
+the Indian Ocean
+Bassas da India
+3
+Europa Island
+3
+Glorioso Islands
+2, 3
+Banc du Geyser
+Juan de Nova Island
+3
+Tromelin Island
+4
+1
+Also known as
+overseas departments
+2
+Claimed by the
+Comoros
+3
+Claimed by
+Madagascar
+4
+Claimed by
+Mauritius
+v
+t
+e
+French colonial conflicts
+16th century
+North America
+South Carolina (1562)
+Florida (1562–65)
+Florida (1568)
 South America
-Argentina
-Bolivia
-Brazil
-Chile
-Colombia
-Ecuador
-Guyana
-Paraguay
-Peru
-Suriname
-Uruguay
-Venezuela
-Dependencies
-Bermuda
-United States
-Cayman Islands
-India
-United States
-Gibraltar
-Isle of Man
-Ireland
-Montserrat
-Turks and Caicos Islands
-Canada
-Former
-Rhodesia
-Soviet Union
-Yugoslavia
-Historical
+Brazil (1531)
+Brazil (1555–67)
+Brazil (1590–04)
+17th century
+Africa
+Morocco (1629)
+Senegal (1659–77)
+Djidjelli (1664)
+Algiers (1682)
+Algiers (1683)
+Algiers (1688)
+Americas
+Beaver Wars (1609–1701)
+Brazil (1612–15)
+North America (1627–29)
+West Indies (1635–59)
+Carib Expulsion (1660)
+Texas (1685–89)
+King William's War (1689–97)
+Santo Domingo (1691)
+Asia
+Siam (1687–90)
+18th century
+Africa
+West Africa (1758–63)
+Morocco (1765)
+Americas
+Queen Anne's War (1702–13)
+Chickasaw Wars (1721–52)
+Dummer's War (1721–25)
+Natchez revolt (1729)
+King George's War (1744–48)
+Nova Scotia (1749–55)
+French and Indian War (1754–60)
+North America (1778–83)
+Caribbean (1778–83)
+Haitian Revolution (1791–1804)
+Santo Domingo (1795–1809)
+Asia
+Burma–France relations (1729–56)
+India (1746–48)
+India (1749–54)
+India (1756–63)
+Vietnam (1777–1820)
+East Indies (1778–83)
+East Indies (1793–1801)
+Egypt and Syria (1798–1801)
+19th century
+Africa
+Indian Ocean (1809–11)
+Algeria (1830–47)
+Algeria (1835–1903)
+Morocco (1844)
+Salé (1851)
+French conquest of Senegal (1854)
+Tunisia (1881)
+Madagascar (1883)
+Ivory Coast (1883–98)
+First Franco-Dahomean War (1890)
+Second Franco-Dahomean War (1892–94)
+Second Madagascar expedition (1895)
+Menalamba rebellion (1895–1903)
+Voulet–Chanoine Mission (1898–1900)
+Americas
+West Indies (1804–10)
+Río de la Plata (1838–40)
+Mexico (1838–39)
+Argentina–Uruguay (1845–50)
+Intervention in Mexico (1861–67)
+Asia & Pacific Ocean
+Moluccas (1810)
+Java (1811)
+Philippines (1844–45)
+Tourane (1847)
+Franco-Tahitian War (1844–47)
+Tourane (1856)
+Second Opium War (1856-60)
+Cochinchina Campaign (1858–62)
+Japan (1863–64)
+Korea (1866)
+Tonkin (1873–74)
+Tonkin Campaign (1883–86)
+Sino-French War (1884–85)
+Tonkin (1886–96)
+Leewards War (1888–97)
+Franco-Siamese crisis (1893)
+20th century
+Africa
+Wadai War (1906–11)
+Casablanca (1907)
+Morocco (1911–12)
+Zaian War (1914–21)
+Volta-Bani War (1915–16)
+Kaocen revolt (1916–17)
+Rif War (1920–26)
+Kongo-Wara rebellion (1928–31)
+Malagasy Uprising (1947–48)
+Tunisian independence (1952–56)
+Algerian War (1954–62)
+Cameroon War (1955–64)
+Suez Crisis (1956)
+Ifni War (1957–58)
+Bizerte crisis (1961)
+Asia
+Boxer Rebellion (1901)
+Holy Man's Rebellion (1901–36)
+Vietnam (1916)
+Vietnam (1917–18)
+Vietnam (1918–21)
+Syria (1919–21)
+Cilicia (1920–21)
+Syria (1925–27)
+Tonkin (1930)
+Annam (1930–31)
+Indochina (1940)
+Franco-Thai War (1940–41)
+Cochinchina (1940)
+Indochina (March 1945)
+South Vietnam (1945–46)
+North Vietnam (summer 1946)
+First Indochina War (1946–54)
+Pacific
+Ouvéa cave hostage taking (1988)
+v
+t
+e
+International relations (1814–1919)
+Great powers
+Austria-Hungary
 France
-Spain
+Germany
+Italy
+Japan
+Russia
+United Kingdom
 United States
-Multilateral relations
-Commonwealth of Nations
-Comprehensive and Progressive Agreement for Trans-Pacific Partnership
-European Union
-Gulf Cooperation Council
-International Monetary Fund
-Latin America
-League of Nations
-NATO
-United Nations
-Diplomacy
-History
-1814–1919
-British entry into World War I
-Foreign, Commonwealth and Development Office
-Foreign Secretary
-Diplomatic missions of
-/
-in the United Kingdom
-Prime Ministerial overseas trips
-Category
-Commons
+Alliances
+Holy Alliance
+Triple Alliance
+Dual Alliance
+Triple Entente
+Franco-Russian Alliance
+Entente Cordiale
+Anglo-Russian Convention
+Anglo-Japanese Alliance
+League of the Three Emperors
+Eight-Nation Alliance
+Balkan League
+Trends
+European balance of power
+Ottoman decline
+Eastern question
+Spread of nationalism
+Sovereign debt
+French–German enmity
+Revanchism
+Pax Britannica
+New Imperialism
+Scramble for Africa
+Egyptian Lever
+In Asia
+Great Game
+China
+Japan
+Pan-Slavism
+Great Rapprochement
+Second Industrial Revolution
+Industrial warfare
+Treaties and
+agreements
+Congress of Vienna
+Treaty of Versailles (1871)
+Treaty of Frankfurt
+Treaty of Berlin
+Reinsurance Treaty
+Treaty of Paris
+Treaty of Björkö
+Taft–Katsura agreement
+Hague Conventions
+Martens Clause
+Japan–Korea Treaty of 1905
+Japan–Korea Annexation Treaty
+Racconigi agreement
+1917 Franco-Russian agreement
+Events
+Formation of Romania
+Unification of Germany
+Unification of Italy
+Great Eastern Crisis
+Congress of Berlin
+Berlin Conference
+Kronstadt–Toulon naval visits
+Weltpolitik
+Naval arms races
+Anglo-German
+Dreadnought
+German Naval Laws
+Austro-Italian
+Fashoda Incident
+Annexation of Hawaii
+Venezuela Naval Blockade
+Alaska boundary dispute
+First Moroccan Crisis
+Algeciras Conference
+Agadir Crisis
+Treaty of Fes
+Bosnian Crisis
+July Crisis
+Wars
+Russo-Turkish
+Anglo-Egyptian
+First Sino-Japanese
+Spanish–American
+Banana Wars
+Philippine–American
+Boxer Rebellion
+Second Boer
+Russo-Japanese
+Italo-Turkish
+Balkan Wars
+First
+Second
+Albanian Revolts
+First
+Second
+Third
+World War I
+v
+t
+e
+Great Eastern Crisis
+Wars and conflicts
+Montenegrin
+Herzegovina uprising (1875–1877)
+Montenegrin–Ottoman War (1876–1878)
+Serb
+Herzegovina uprising (1875–1877)
+Serbian–Turkish Wars (1876–1878)
+Kumanovo uprising
+Bulgarian
+Stara Zagora Uprising
+April Uprising of 1876
+Razlovci uprising
+Kresna–Razlog uprising
+Greek
+1878 Macedonian rebellion
+Epirus Revolt of 1878
+Cretan revolt (1878)
+Russo-Turkish War (1877–1878)
+Romanian War of Independence
+Austro-Hungarian campaign in Bosnia and Herzegovina in 1878
+Expulsion of the Albanians, 1877–1878
+International
+agreements
+Berlin Memorandum
+Reichstadt Agreement
+Constantinople Conference
+Budapest Convention of 1877
+Treaty of San Stefano
+Cyprus Convention
+Congress of Berlin
+and
+Treaty of Berlin (1878)
+See also
+Bulgarian Exarchate
+Deligrad Event
+Niš Committee
+1876 Ottoman coup d'état
+First Constitutional Era (Ottoman Empire)
+Opalchentsi
+Eastern Question
+Provisional Russian Administration in Bulgaria
+British Cyprus
+League of Prizren
+Battles for Plav and Gusinje
+Pact of Halepa
+Dual Alliance (1879)
+Brsjak revolt
+Austro–Serbian Alliance of 1881
+French conquest of Tunisia
+Convention of Constantinople (1881)
+British Occupation of Egypt
+Marche slave
+Anna Karenina
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Tunisia–United_Kingdom_relations&oldid=1366759087
+https://en.wikipedia.org/w/index.php?title=French_conquest_of_Tunisia&oldid=1370620382
 "
 Categories
 :
-Tunisia–United Kingdom relations
-Bilateral relations of Tunisia
-Bilateral relations of the United Kingdom
+1880s in Tunisia
+1881 in Africa
+French colonisation in Africa
+French military occupations
+1881 conflicts
+Wars involving France
+Wars involving Tunisia
+French Third Republic
+History of Overseas France
+France–Tunisia relations
+19th-century military history of France
+Resistance to the French colonial empire
+African resistance to colonialism
 Hidden categories:
 Articles with short description
 Short description is different from Wikidata
-Use British English from September 2025
-All Wikipedia articles written in British English
-Use dmy dates from September 2025
+All articles with unsourced statements
+Articles with unsourced statements from May 2021
+Commons category link is on Wikidata
 Search
 Search
-Tunisia–United Kingdom relations
-2 languages
+French conquest of Tunisia
+15 languages
 Add topic
+
+---
+
+Tunis - Wikipedia
+Jump to content
+Search
+Search
+Tunis
+157 languages
+Acèh
+Адыгабзэ
+Afrikaans
+Alemannisch
+አማርኛ
+Aragonés
+Ænglisc
+العربية
+ܐܪܡܝܐ
+الدارجة
+مصرى
+Asturianu
+Kotava
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Basa Bali
+Беларуская (тарашкевіца)
+Беларуская
+Български
+বাংলা
+བོད་ཡིག
+Brezhoneg
+Bosanski
+Català
+閩東語 / Mìng-dĕ̤ng-ngṳ̄
+Нохчийн
+Cebuano
+کوردی
+Čeština
+Чӑвашла
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+Estremeñu
+فارسی
+Suomi
+Français
+Arpetan
+Nordfriisk
+Frysk
+Gaeilge
+Gàidhlig
+Galego
+Hausa
+客家語 / Hak-kâ-ngî
+עברית
+हिन्दी
+Fiji Hindi
+Hrvatski
+Hornjoserbsce
+Kreyòl ayisyen
+Magyar
+Հայերեն
+Interlingua
+Bahasa Indonesia
+Interlingue
+Ido
+Íslenska
+Italiano
+日本語
+Jawa
+ქართული
+Taqbaylit
+Kabɩyɛ
+Kongo
+Kumoring
+Қазақша
+Yerwa Kanuri
+한국어
+Kurdî
+Latina
+Lëtzebuergesch
+Ligure
+Lombard
+Lietuvių
+Latviešu
+Мокшень
+Malagasy
+Minangkabau
+Македонски
+മലയാളം
+Монгол
+मराठी
+Кырык мары
+Bahasa Melayu
+Malti
+Эрзянь
+مازِرونی
+नेपाली
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+Ирон
+ਪੰਜਾਬੀ
+Papiamentu
+Picard
+Polski
+Piemontèis
+پنجابی
+پښتو
+Português
+Pinayuanan
+Runa Simi
+Română
+Русский
+Саха тыла
+Sardu
+Sicilianu
+Scots
+سنڌي
+Srpskohrvatski / српскохрватски
+Simple English
+Slovenčina
+Slovenščina
+Anarâškielâ
+ChiShona
+Soomaaliga
+Shqip
+Српски / srpski
+Svenska
+Kiswahili
+Ślůnski
+தமிழ்
+Тоҷикӣ
+ไทย
+Tagalog
+Tolışi
+Türkçe
+Татарча / tatarça
+Twi
+Удмурт
+ئۇيغۇرچە / Uyghurche
+Українська
+اردو
+Oʻzbekcha / ўзбекча
+Vèneto
+Vepsän kel’
+Tiếng Việt
+Volapük
+Walon
+Winaray
+Wolof
+吴语
+მარგალური
+ייִדיש
+Yorùbá
+閩南語 / Bân-lâm-gí
+粵語
+中文
+IsiZulu
+Edit links
+Coordinates
+:
+36°48′23″N
+10°10′54″E
+﻿
+/
+﻿
+36.80639°N 10.18167°E
+﻿
+/
+36.80639; 10.18167
+From Wikipedia, the free encyclopedia
+Capital and largest city of Tunisia
+For other uses, see
+Tunis (disambiguation)
+.
+Capital city in Tunis Governorate, Tunisia
+Tunis
+تونس
+Capital city
+Medina Quarter
+Al-Zaytuna Mosque
+Dar Othman
+Baths of Antoninus
+Acropolium
+Bardo National Museum
+Avenue Habib Bourguiba
+Flag
+Coat of arms
+Tunis
+Location in
+Tunisia
+and
+Africa
+Show map of Tunisia
+Tunis
+Tunis (Mediterranean)
+Show map of Mediterranean
+Tunis
+Tunis (Africa)
+Show map of Africa
+Coordinates:
+36°48′23″N
+10°10′54″E
+﻿
+/
+﻿
+36.80639°N 10.18167°E
+﻿
+/
+36.80639; 10.18167
+Country
+Tunisia
+Governorate
+Tunis Governorate
+Delegation(s)
+El Bab Bhar, Bab Souika, Cité El Khadra, Djebel Jelloud, El Kabaria, El Menzah, El Omrane, El Omrane Superieur, El Ouardia, Ettahrir, Ezzouhour, Hraïria, Medina, Séjoumi, Sidi El Bechir
+Established
+698 AD
+Government
+•
+Mayor
+Imed Boukhris
+(
+Independent
+)
+Area
+[
+1
+]
+[
+citation needed
+]
+•
+Capital city
+212
+km
+2
+(82
+sq
+mi)
+•
+Metro
+2,668
+km
+2
+(1,030
+sq
+mi)
+Highest
+elevation
+41
+m (135
+ft)
+Lowest
+elevation
+4
+m (13
+ft)
+Population
+(2024-01-01)
+[
+1
+]
+•
+Capital city
+693,210
+•
+Rank
+1st
+•
+Density
+5,794/km
+2
+(15,010/sq
+mi)
+•
+Urban
+1,110,000
+•
+Metro
+2,885,040
+Demonym(s)
+Arabic
+:
+تونسي
+Tounsi
+French
+:
+Tunisois
+GDP (PPP, constant 2015 values)
+•
+Year
+2024
+•
+Total (Urban)
+$14.1
+billion
+[
+2
+]
+•
+Per capita
+$12,500
+Time
+zone
+UTC+01:00
+(
+Central European Time
+)
+•
+Summer (
+DST
+)
+(Not Observed)
+Postal code
+1xxx, 2xxx
+Calling code
+71
+ISO 3166 code
+TN-11
+,
+TN-12
+,
+TN-13
+and
+TN-14
+geoTLD
+.tn
+Website
+Official website
+Tunis
+(
+Arabic
+:
+تونس
+,
+Tūnis
+ⓘ
+) is the
+capital
+and largest city of
+Tunisia
+. The greater metropolitan area of Tunis, often referred to as "
+Grand Tunis
+", has about 2,700,000 inhabitants.
+As of 2020
+[
+update
+]
+, it was the third-largest city in the
+Maghreb
+region (after
+Casablanca
+and
+Algiers
+) and the
+fifteenth-largest
+in the
+Arab world
+.
+Situated on the
+Gulf of Tunis
+, behind the
+Lake of Tunis
+and the port of
+La Goulette
+(Ḥalq il-Wād), the city extends along the coastal plain and the hills that surround it. At its core lies the
+Medina
+, a
+World Heritage Site
+. East of the Medina, through the Sea Gate (also known as the
+Bab el Bhar
+and the
+Porte de France
+), begins the modern part of the city called "Ville Nouvelle", traversed by the grand
+Avenue Habib Bourguiba
+(often referred to by media and travel guides as "the Tunisian
+Champs-Élysées
+"), where the colonial-era buildings provide a clear contrast to smaller, older structures. Further east by the sea lie the suburbs of
+Carthage
+,
+La Marsa
+, and
+Sidi Bou Said
+.
+As the capital of the country, Tunis is the focus of Tunisian political and administrative life and also the center of the country's commercial and cultural activities.
+Etymology
+[
+edit
+]
+Tunis
+is the transcription of the
+Arabic
+name
+تونس
+which can be pronounced as "Tūnus", "Tūnas", or "Tūnis". All three variations were mentioned by the 12th-century
+Arab
+geographer
+Yaqut al-Hamawi
+in his
+Mu'jam al-Bûldan
+(
+Dictionary of Countries
+).
+Different explanations exist for the origin of the name
+Tunis
+. Some scholars relate it to the Carthaginian goddess
+Tanith
+('Tanit or Tanut), as many ancient cities were named after patron deities.
+[
+3
+]
+[
+4
+]
+Some scholars claim that it originated from
+Tynes
+, which was mentioned by
+Diodorus Siculus
+and
+Polybius
+in the course of descriptions of a location resembling present-day Al-Kasbah, Tunis's old Berber village.
+[
+5
+]
+[
+6
+]
+Another possibility is that it was derived from the
+Berber
+verbal root
+ens
+which means "to lie down" or "to pass the night".
+[
+7
+]
+[
+8
+]
+The term
+Tunis
+can possibly mean "camp at night", "camp", or "stop", or may have referred to as "the last stop before Carthage" by people who were journeying to Carthage by land. There are also some mentions in ancient Roman sources of such names of nearby towns as
+Thinisa in Numidia
+(now
+El Kala
+),
+Thunusuda
+(now
+Sidi-Meskin
+),
+Thinissut
+(now Bir Bouregba),
+Thunisa
+(now
+Ras Jebel
+) and
+Cartennae
+(now
+Ténès
+). As all of these Berber villages were situated on Roman roads, they undoubtedly served as rest-stations or stops.
+[
+9
+]
+History
+[
+edit
+]
+For a chronological guide, see
+Timeline of Tunis
+.
+Carthage and early settlements
+[
+edit
+]
+Main articles:
+Carthage
+,
+Ancient Carthage
+, and
+History of Carthage
+Ruins of the Roman
+Baths of Antoninus
+in Carthage.
+The historical study of Carthage is difficult. Because its culture and records were destroyed by the Romans at the end of the
+Third Punic War
+, very few Carthaginian
+primary historical sources
+survive. While there are a few ancient translations of
+Punic
+texts into Greek and
+Latin
+, as well as
+inscriptions on monuments and buildings discovered in Northwest Africa
+,
+[
+10
+]
+the main sources are
+Greek
+and
+Roman
+historians, including
+Livy
+,
+Polybius
+,
+Appian
+,
+Cornelius Nepos
+,
+Silius Italicus
+,
+Plutarch
+,
+Dio Cassius
+, and
+Herodotus
+. These writers belonged to peoples in competition, and often in conflict, with Carthage.
+[
+11
+]
+Greek cities contended with Carthage over
+Sicily
+,
+[
+12
+]
+and the
+Romans
+fought three wars
+against Carthage
+.
+[
+13
+]
+Not surprisingly, their accounts of Carthage are extremely hostile; while there were a few Greek authors who took a favourable view, these works have been lost.
+[
+11
+]
+The area was originally a Berber settlement.
+[
+14
+]
+The existence of settlements in and around the area of Tunis is attested by sources dating from the 4th century BC.
+[
+15
+]
+Situated on a hill, its location served as an excellent point from which the comings and goings of naval and caravan traffic to and from Carthage could be observed. It was one of the first towns in the region to fall under Carthaginian control, and in the centuries that followed the settlement was mentioned in the military histories associated with
+Carthage
+. Thus, during Agathocles' expedition, which landed at
+Cape Bon
+in 310 BC, the town changed hands on various occasions.
+[
+citation needed
+]
+During the
+Mercenary War
+, it is possible that the town served as a center for the native population of the area,
+[
+15
+]
+and that its population was mainly composed of peasants, fishermen, and craftsmen. Compared to the ancient ruins of Carthage, the town's ancient ruins are not as large. According to
+Strabo
+, it was destroyed by the Romans in 146 BC during the
+Third Punic War
+. Both the town and Carthage were destroyed; the former, however, was rebuilt first
+[
+16
+]
+under the rule of
+Augustus
+and became an important town under Roman control and the center of a booming agricultural industry. The township is mentioned as
+Thuni
+in the
+Tabula Peutingeriana
+.
+[
+16
+]
+In the system of Roman roads for the
+Roman province of Africa
+, the town had the title of
+mutatio
+("way station, resting place").
+[
+16
+]
+The borough, increasingly Romanized, was also eventually Christianized and became the seat of a
+bishop
+. However, it remained modestly sized compared to Carthage during this time.
+[
+17
+]
+Foundation and early Islamic period
+[
+edit
+]
+Courtyard of
+Zaytuna Mosque
+, founded in the late 7th century by the Umayyad dynasty
+In the late 7th century, the Arab Muslims conquered the region, and in 698 a commune and a mosque were established at the outskirts of the ancient ruins, founded by
+Hassan ibn al-Nu'man
+, which would become the city of Tunis and the
+Zaytuna Mosque
+.
+[
+18
+]
+The
+Medina of Tunis
+, the oldest section of the city, dates from this period, during which the region was conquered by the
+Umayyad Caliphate
+. The city had the natural advantage of coastal access, via the
+Mediterranean
+, to the major ports of southern Europe. Early on, Tunis played a military role; the Umayyads recognized the strategic importance of its proximity to the
+Strait of Sicily
+, with a dockyard built upon the founding of the city by order of Caliph
+Abd al-Malik
+. From the beginning of the 8th century, Tunis was the
+administrative center
+of the area: it became the Umayyad, and later the
+Abbasids
+'
+naval
+base in the western
+Mediterranean Sea
+, and took on considerable military importance.
+[
+17
+]
+Under the
+Aghlabids
+, the city gained significance and benefited from economic improvements and became one of the most important in the caliphate,
+[
+17
+]
+and was briefly the national capital from the end of the reign of
+Ibrahim II
+, from 902 until 909,
+[
+19
+]
+when control over
+Ifriqiya
+was handed to the newly founded
+Fatimid Caliphate
+.
+Local opposition to the authorities began to intensify in Septembe
 
 ---
 
@@ -1398,1935 +2589,522 @@ In English, Tunisia before independence was also often called simply "Tuni
 
 ---
 
-List of diplomatic missions in London - Wikipedia
+Beylik of Tunis - Wikipedia
 Jump to content
 Search
 Search
-List of diplomatic missions in London
-Add languages
-Add links
-From Wikipedia, the free encyclopedia
-(Redirected from
-Embassy of Tunisia, London
-)
-This is a list of the 165 resident
-embassies
-in
-London
-. For other diplomatic missions in the
-United Kingdom
-, see
-List of diplomatic missions in the United Kingdom
-.
-Embassies and High Commissions
-[
-edit
-]
-Embassy/High Commission
-Location
-Neighbourhood
-Image
-Notes
-Albania
-33 St George’s Drive
-51°29′26″N
-0°08′39″W
-﻿
-/
-﻿
-51.490667°N 0.144028°W
-﻿
-/
-51.490667; -0.144028
-Pimlico
-[
-1
-]
-Algeria
-1–3 Riding House Street
-51°31′06″N
-0°08′34″W
-﻿
-/
-﻿
-51.518222°N 0.142722°W
-﻿
-/
-51.518222; -0.142722
-Westminster
-[
-2
-]
-Angola
-22 Dorset Street
-51°31′09″N
-0°09′29″W
-﻿
-/
-﻿
-51.51925°N 0.158028°W
-﻿
-/
-51.51925; -0.158028
-Marylebone
-[
-3
-]
-Antigua and Barbuda
-45 Crawford Place
-51°31′08″N
-0°09′55″W
-﻿
-/
-﻿
-51.518917°N 0.165194°W
-﻿
-/
-51.518917; -0.165194
-Marylebone
-[
-4
-]
-Argentina
-65 Brook Street
-51°30′45″N
-0°08′55″W
-﻿
-/
-﻿
-51.512472°N 0.14875°W
-﻿
-/
-51.512472; -0.14875
-Mayfair
-[
-5
-]
-Armenia
-25A Cheniston Gardens
-51°29′56″N
-0°11′35″W
-﻿
-/
-﻿
-51.499°N 0.193°W
-﻿
-/
-51.499; -0.193
-South Kensington
-[
-6
-]
-Australia
-Australia House
-, Strand
-51°30′46″N
-0°06′57″W
-﻿
-/
-﻿
-51.512889°N 0.115722°W
-﻿
-/
-51.512889; -0.115722
-Aldwych
-[
-7
-]
-Austria
-18 Belgrave Square
-51°29′55″N
-0°09′17″W
-﻿
-/
-﻿
-51.4985°N 0.154694°W
-﻿
-/
-51.4985; -0.154694
-Belgravia
-[
-8
-]
-Azerbaijan
-66 Holland Park
-51°30′23″N
-0°12′25″W
-﻿
-/
-﻿
-51.5064077°N 0.2068935°W
-﻿
-/
-51.5064077; -0.2068935
-Holland Park
-[
-9
-]
-Bahamas
-10 Chesterfield Street
-51°30′26″N
-0°08′55″W
-﻿
-/
-﻿
-51.507167°N 0.148611°W
-﻿
-/
-51.507167; -0.148611
-Mayfair
-[
-10
-]
-Bahrain
-30 Belgrave Square
-Belgravia
-[
-11
-]
-Bangladesh
-28 Queen's Gate
-Kensington
-[
-12
-]
-Barbados
-1 Great Russell Street
-51°31′02″N
-0°07′51″W
-﻿
-/
-﻿
-51.5171°N 0.1308°W
-﻿
-/
-51.5171; -0.1308
-Bloomsbury
-[
-13
-]
-Belarus
-6 Kensington Court
-South Kensington
-[
-14
-]
-Belize
-45 Crawford Place
-Marylebone
-[
-15
-]
-Belgium
-17 Grosvenor Crescent
-Belgravia
-[
-16
-]
-Bolivia
-106 Eaton Square
-Belgravia
-[
-17
-]
-Bosnia and Herzegovina
-5-7 Lexham Gardens
-South Kensington
-[
-18
-]
-Botswana
-6 Stratford Pl
-Marylebone
-[
-19
-]
-Brazil
-14/16 Cockspur Street
-Westminster
-[
-20
-]
-Brunei
-19-20 Belgrave Square
-Belgravia
-[
-21
-]
-Bulgaria
-186–188 Queen's Gate
-South Kensington
-[
-22
-]
-Burundi
-58–59 Trafalgar Square
-51°30′26″N
-0°07′42″W
-﻿
-/
-﻿
-51.5072°N 0.1283°W
-﻿
-/
-51.5072; -0.1283
-Trafalgar Square
-[
-23
-]
-Cambodia
-64 Brondesbury Park
-Willesden
-[
-24
-]
-Cameroon
-84 Holland Park
-Holland Park
-[
-25
-]
-Canada
-Trafalgar Square
-(
-Canada House
-)
-51°30′28″N
-0°07′46″W
-﻿
-/
-﻿
-51.5079°N 0.1295°W
-﻿
-/
-51.5079; -0.1295
-Trafalgar Square
-[
-26
-]
-Chile
-37-41 Old Queen Street
-Westminster
-[
-27
-]
-China
-49–51 Portland Place
-51°31′16″N
-0°08′44″W
-﻿
-/
-﻿
-51.52102°N 0.14548°W
-﻿
-/
-51.52102; -0.14548
-Marylebone
-[
-28
-]
-Colombia
-3 Hans Crescent
-Knightsbridge
-[
-29
-]
-Democratic Republic of the Congo
-281 Gray's Inn Road
-51°31′2.4″N
-0°8′30.2″W
-﻿
-/
-﻿
-51.517333°N 0.141722°W
-﻿
-/
-51.517333; -0.141722
-Fitzrovia
-[
-30
-]
-Republic of the Congo
-101 New Street Hill
-51°25′21.3″N
-0°1′56.5″E
-﻿
-/
-﻿
-51.422583°N 0.032361°E
-﻿
-/
-51.422583; 0.032361
-Bromley
-Costa Rica
-23 Woodstock St
-Mayfair
-[
-31
-]
-Croatia
-21 Conway Street
-51°31′24″N
-0°8′28.5″W
-﻿
-/
-﻿
-51.52333°N 0.141250°W
-﻿
-/
-51.52333; -0.141250
-Fitzrovia
-[
-32
-]
-Cuba
-167 High Holborn
-51°30′58.1″N
-0°7′31.4″W
-﻿
-/
-﻿
-51.516139°N 0.125389°W
-﻿
-/
-51.516139; -0.125389
-St Giles
-[
-33
-]
-Cyprus
-13 St James's Square
-51°30′26.8″N
-0°8′11.2″W
-﻿
-/
-﻿
-51.507444°N 0.136444°W
-﻿
-/
-51.507444; -0.136444
-St James's
-[
-34
-]
-Czech Republic
-26-30 Kensington Palace Gardens
-Notting Hill Gate
-[
-35
-]
-Denmark
-55 Sloane Street
-Knightsbridge
-[
-36
-]
-Dominica
-1
-Collingham Gardens
-South Kensington
-[
-37
-]
-Dominican Republic
-81 Cromwell Road
-South Kensington
-[
-38
-]
-Ecuador
-3 Hans Crescent
-Knightsbridge
-[
-39
-]
-Egypt
-26 South Street
-Mayfair
-[
-40
-]
-El Salvador
-8 Dorset Square
-Marylebone
-[
-41
-]
-Equatorial Guinea
-13 Park Place
-St James's
-[
-42
-]
-Eritrea
-96 White Lion Street
-Islington
-[
-43
-]
-Estonia
-44 Queen's Gate Terrace
-South Kensington
-[
-44
-]
-Eswatini
-20 Buckingham Gate
-Westminster
-[
-45
-]
-Ethiopia
-17 Princes Gate
-South Kensington
-[
-46
-]
-Fiji
-34 Hyde Park Gate
-South Kensington
-?
-[
-47
-]
-Finland
-38 Chesham Place
-Belgravia
-[
-48
-]
-France
-58 Knightsbridge
-Knightsbridge
-[
-49
-]
-Gabon
-27 Elvaston Place
-South Kensington
-[
-50
-]
-Gambia
-92 Ledbury Road
-Bayswater
-[
-51
-]
-Georgia
-20 St. George's Square
-Pimlico
-[
-52
-]
-Germany
-23 Belgrave Square
-Belgravia
-[
-53
-]
-Ghana
-13 Belgrave Square
-Belgravia
-[
-54
-]
-Greece
-1A Holland Park
-Holland Park
-[
-55
-]
-Grenada
-45 Bedford Row
-Holborn
-[
-56
-]
-Guatemala
-105A Westbourne Grove
-Notting Hill
-[
-57
-]
-Guinea
-239 Old Marylebone Road
-Marylebone
-[
-58
-]
-Guyana
-3 Palace Court
-51°30′36.2″N
-0°11′30.8″W
-﻿
-/
-﻿
-51.510056°N 0.191889°W
-﻿
-/
-51.510056; -0.191889
-Bayswater
-[
-59
-]
-Haiti
-21 Bloomsbury Way
-Holborn
-[
-60
-]
-Holy See
-54 Parkside
-Wimbledon
-[
-61
-]
-Honduras
-4th Floor 136, Baker Street
-Marylebone
-[
-62
-]
-Hungary
-35 Eaton Place
-Belgravia
-[
-63
-]
-Iceland
-2A Hans Street
-51°29′52″N
-0°09′34″W
-﻿
-/
-﻿
-51.4978°N 0.1594°W
-﻿
-/
-51.4978; -0.1594
-Knightsbridge
-[
-64
-]
-India
-India House
-51°30′45″N
-0°07′06″W
-﻿
-/
-﻿
-51.5125°N 0.1183°W
-﻿
-/
-51.5125; -0.1183
-Aldwych
-[
-65
-]
-Indonesia
-30 Great Peter Street
-Westminster
-[
-66
-]
-Iran
-16 Prince's Gate
-51°30′06″N
-0°10′20″W
-﻿
-/
-﻿
-51.50153°N 0.17231°W
-﻿
-/
-51.50153; -0.17231
-South Kensington
-[
-67
-]
-Iraq
-21 Queen's Gate
-South Kensington
-[
-68
-]
-Ireland
-17 Grosvenor Place
-Belgravia
-[
-69
-]
-Israel
-2 Palace Green
-51°30′11″N
-0°11′22″W
-﻿
-/
-﻿
-51.503056°N 0.189444°W
-﻿
-/
-51.503056; -0.189444
-South Kensington
-[
-70
-]
-Italy
-4-5 Buckingham Gate
-Westminster
-[
-71
-]
-Ivory Coast
-2 Upper Belgrave Street
-Belgravia
-[
-72
-]
-Jamaica
-1-2 Prince Consort Road
-South Kensington
-[
-73
-]
-Japan
-101–104 Piccadilly
-Mayfair
-[
-74
-]
-Jordan
-6 Upper Phillimore Gardens
-Holland Park
-[
-75
-]
-Kazakhstan
-125 Pall Mall
-51°30′27″N
-0°07′51″W
-﻿
-/
-﻿
-51.507528°N 0.130972°W
-﻿
-/
-51.507528; -0.130972
-St James's
-[
-76
-]
-Kenya
-45 Portland Place
-Marylebone
-[
-77
-]
-Kosovo
-8 John Street
-51°31′19.06″N
-0°6′53.89″W
-﻿
-/
-﻿
-51.5219611°N 0.1149694°W
-﻿
-/
-51.5219611; -0.1149694
-Holborn
-[
-78
-]
-Kuwait
-2 Albert Gate
-Knightsbridge
-[
-79
-]
-Kyrgyzstan
-Ascot House, 119 Crawford Street
-Marylebone
-[
-80
-]
-Laos
-49 Porchester Terrace
-Bayswater
-[
-81
-]
-Latvia
-45 Nottingham Place
-Marylebone
-[
-82
-]
-Lebanon
-21 Kensington Palace Gardens
-Holland Park
-[
-83
-]
-Lesotho
-7 Chesham Place
-Belgravia
-[
-84
-]
-Liberia
-23 Fitzroy Square
-51°31′22.4″N
-0°8′26.8″W
-﻿
-/
-﻿
-51.522889°N 0.140778°W
-﻿
-/
-51.522889; -0.140778
-Fitzrovia
-[
-85
-]
-Libya
-15 Knightsbridge
-Knightsbridge
-[
-86
-]
-Lithuania
-2 Bessborough Gardens
-Pimlico
-[
-87
-]
-Luxembourg
-27 Wilton Crescent
-Belgravia
-[
-88
-]
-Madagascar
-One Knightsbridge Green, 5th Floor
-Knightsbridge
-[
-89
-]
-Malawi
-36 John Street
-51°31′17.3″N
-0°6′54.4″W
-﻿
-/
-﻿
-51.521472°N 0.115111°W
-﻿
-/
-51.521472; -0.115111
-Holborn
-[
-90
-]
-Malaysia
-45 Belgrave Square
-Belgravia
-[
-91
-]
-Maldives
-22 Nottingham Place
-Marylebone
-[
-92
-]
-Malta
-36-38 Piccadilly
-Mayfair
-[
-93
-]
-Mauritania
-Carlyle House, 235–237 Vauxhall Bridge Road
-Victoria
-[
-94
-]
-Mauritius
-32/33 Elvaston Place
-South Kensington
-[
-95
-]
-Mexico
-16 St. George Street
-Mayfair
-[
-96
-]
-Moldova
-55 Catherine Place
-Westminster
-[
-97
-]
-Monaco
-7 Upper Grosvenor Street
-Mayfair
-[
-98
-]
-Mongolia
-7-8 Kensington Court
-South Kensington
-[
-99
-]
-Montenegro
-47 De Vere Gardens
-Kensington
-[
-100
-]
-Morocco
-6 Grosvenor Gardens
-Belgravia
-[
-101
-]
-Mozambique
-21 Fitzroy Square
-51°31′22.6″N
-0°8′27.45″W
-﻿
-/
-﻿
-51.522944°N 0.1409583°W
-﻿
-/
-51.522944; -0.1409583
-Fitzrovia
-[
-102
-]
-Myanmar
-19A Charles Street
-Mayfair
-[
-103
-]
-Namibia
-6 Chandos Street
-Marylebone
-[
-104
-]
-Nepal
-12a Kensington Palace Gardens
-Holland Park
-[
-105
-]
-Netherlands
-38 Hyde Park Gate
-South Kensington
-[
-106
-]
-New Zealand
-80 Haymarket
-51°30′28″N
-0°07′54″W
-﻿
-/
-﻿
-51.5077°N 0.1318°W
-﻿
-/
-51.5077; -0.1318
-St James's
-[
-107
-]
-Nigeria
-9 Northumberland Avenue
-Westminster
-[
-108
-]
-North Korea
-73 Gunnersbury Avenue
-51°30′11″N
-0°17′21″W
-﻿
-/
-﻿
-51.5031°N 0.28915°W
-﻿
-/
-51.5031; -0.28915
-Ealing
-North Macedonia
-64-65 Vincent Square
-Westminster
-[
-109
-]
-Norway
-25 Belgrave Square
-Belgravia
-[
-110
-]
-Oman
-167 Queen's Gate
-South Kensington
-[
-111
-]
-Pakistan
-35–36 Lowndes Square
-Belgravia
-[
-112
-]
-Palestine
-5 Galena Road
-Hammersmith
-Panama
-40 Hertford Street
-Mayfair
-[
-113
-]
-Papua New Guinea
-14 Waterloo Place
-51°30′26.8″N
-0°7′59.7″W
-﻿
-/
-﻿
-51.507444°N 0.133250°W
-﻿
-/
-51.507444; -0.133250
-St James's
-[
-114
-]
-Paraguay
-81 Cromwell Road
-South Kensington
-[
-115
-]
-Peru
-15 Buckingham Gate London
-Westminster
-[
-116
-]
-Philippines
-6-11 Suffolk Street
-Westminster
-[
-117
-]
-Poland
-47 Portland Place
-Marylebone
-[
-118
-]
-Portugal
-11 Belgrave Square
-Belgravia
-[
-119
-]
-Qatar
-1 South Audley Street
-Mayfair
-[
-120
-]
-Romania
-4 Palace Green
-South Kensington
-[
-121
-]
-Russia
-6/7 Kensington Palace Gardens
-51°30′28″N
-0°11′27″W
-﻿
-/
-﻿
-51.507806°N 0.190944°W
-﻿
-/
-51.507806; -0.190944
-Kensington
-[
-122
-]
-Rwanda
-120-122 Seymour Place
-Marylebone
-[
-123
-]
-Saint Kitts and Nevis
-10 Kensington Ct.
-Kensington
-[
-124
-]
-Saint Lucia
-1 Collingham Gardens
-South Kensington
-[
-125
-]
-Saint Vincent and the Grenadines
-10 Kensington Ct.
-Kensington
-[
-126
-]
-Saudi Arabia
-30 Charles Street
-Mayfair
-[
-127
-]
-Senegal
-47 Bedford Row
-Holborn
-[
-128
-]
-Serbia
-28 Belgrave Square
-Belgravia
-[
-129
-]
-Seychelles
-130-132 Buckingham Palace Road
-Victoria
-[
-130
-]
-Sierra Leone
-41 Eagle Street
-51°31′7.7″N
-0°7′2.7″W
-﻿
-/
-﻿
-51.518806°N 0.117417°W
-﻿
-/
-51.518806; -0.117417
-Holborn
-[
-131
-]
-Singapore
-9 Wilton Crescent
-Belgravia
-[
-132
-]
-Slovakia
-25 Kensington Palace Gardens
-Notting Hill Gate
-[
-133
-]
-Slovenia
-17 Dartmouth Street
-Westminster
-[
-134
-]
-Somalia
-259-269 Old Marylebone Road
-Marylebone
-[
-135
-]
-South Africa
-South Africa House
-51°30′30″N
-0°07′37″W
-﻿
-/
-﻿
-51.5082°N 0.1269°W
-﻿
-/
-51.5082; -0.1269
-Trafalgar Square
-[
-136
-]
-South Korea
-60 Buckingham Gate
-51°29′53″N
-0°08′12″W
-﻿
-/
-﻿
-51.498028°N 0.136583°W
-﻿
-/
-51.498028; -0.136583
-Westminster
-[
-137
-]
-South Sudan
-22-25 Portman Close
-Marylebone
-[
-138
-]
-Spain
-24 Belgrave Square
-Belgravia
-[
-139
-]
-Sri Lanka
-13 Hyde Park Gardens
-Bay
-
----
-
-Foreign Secretary (United Kingdom) - Wikipedia
-Jump to content
-Search
-Search
-Foreign Secretary (United Kingdom)
-31 languages
-مصرى
-Беларуская
-Català
+Beylik of Tunis
+20 languages
+العربية
+Asturianu
+Azərbaycanca
 Čeština
+Dansk
 Ελληνικά
 Español
 Eesti
 فارسی
-Suomi
 Français
 עברית
 Bahasa Indonesia
-Italiano
 日本語
 한국어
-Lietuvių
-Македонски
-Bahasa Melayu
-Nederlands
-Norsk bokmål
-Polski
-Português
-Română
-Русский
 Simple English
 Svenska
-ไทย
 Türkçe
 Українська
-粵語
+閩南語 / Bân-lâm-gí
 中文
 Edit links
 From Wikipedia, the free encyclopedia
-Member of the Cabinet of the United Kingdom
-United Kingdom
-Secretary of State for Foreign, Commonwealth and Development Affairs
-Royal Arms
-of
-His Majesty's Government
-Incumbent
-Ed Miliband
-since
-20 July 2026
-Foreign, Commonwealth and Development Office
-Style
-Foreign Secretary
-(informal)
-The Right Honourable
-(within the UK and Commonwealth)
-His Excellency
-(diplomatic)
-Type
-Minister of the Crown
-Status
-Secretary of State
-Great Office of State
-Member
-of
-Cabinet
-Privy Council
-National Security Council
-Reports
-to
-The Prime Minister
-Residence
-No. 1 Carlton Gardens
-(official)
-Chevening
-(country house)
-Seat
-King Charles Street
-Nominator
-The Prime Minister
-Appointer
-The Monarch
-(on the advice of the
-Prime Minister
+North African monarchy (1705–1881)
+Beylik of Tunis
+بايلك تونس
+(
+Arabic
 )
-Term
-length
-At His Majesty's pleasure
-Formation
-27 March 1782 (as Secretary of State for Foreign Affairs)
-2 September 2020 (as Secretary of State for Foreign, Commonwealth and Development Affairs)
-First
-holder
-Charles James Fox
-(as Secretary of State for Foreign Affairs)
-Deputy
-Minister of State for Development
-Salary
-£106,363 per annum (2022)
+1705–1881
+Flag
+Coat of arms
+Motto:
+يا ذا الألطاف الخفية احفظ هذه المملكة التونسية
+"Oh God of hidden kindness, save this Kingdom of Tunis"
+Anthem:
+Salam al-Bey
+(Beylical Anthem)
+Kingdom
+(Beylik)
+of Tunis in 1707
+Status
+Constitutional monarchy
+(1861-1864)
+Capital
+Tunis
+Common
+languages
+Tunisian
+Arabic
+Judeo-Tunisian
+Berber
+Religion
+Islam
+(majority)
+Judaism
+Christianity
+Government
+Constitutional Monarchy
+Bey
+•
+1705–1735
+Hussein I
+•
+1859–1881
+Muhammad III
+Prime Minister
+•
+1759–1782
+Rejeb Khaznadar
+•
+1878–1881
+Mustapha Ben Ismaïl
+Legislature
+Supreme Council
+Historical era
+Late modern period
+•
+Hussein I rise to power
+15 July 1705
+•
+Protectorate established
+12 May 1881
+Currency
+Tunisian rial
+Preceded by
+Succeeded by
+Eyalet of Tunis
+French protectorate of Tunisia
+Today part of
+Tunisia
+The
+Beylik of Tunis
+(
+Arabic
+:
+بايلك تونس
+) was the legal form of present-day
+Tunisia
+, between 1705 and 1881.
 [
 1
 ]
-Website
-gov
-.uk
-/government
-/ministers
-/secretary-of-state-for-foreign-commonwealth-and-development-affairs
-This article is part of
+It was ruled by the
+Husainid dynasty
+until the establishment of the
+French protectorate of Tunisia
+. The term
+beylik
+refers to the monarch, who was called the
+Bey of Tunis
+. Under the protectorate, the latter remained nominally the head of state, with the Husainids remaining as largely symbolic sovereigns.
+[
+2
+]
+[
+3
+]
+[
+4
+]
+The Beys remained faithful to the
+Sublime Porte
+, but reigned as monarchs after gradually gaining independence from the Ottoman Empire. Between 1861 and 1864, the Beylik of Tunis became a
+constitutional monarchy
+after adopting the first constitution in
+Africa
+and the
+Arab world
+. The country had its own currency and an independent army, and in 1831 it adopted its flag, which is still in use today.
+[
+5
+]
+The Husainid dynasty continued to rule Tunisia, even after the establishment of the French protectorate in 1881, and remained in existence until the republic was declared on 25 July 1957, one year after independence.
+History
+[
+edit
+]
+Part of
 a series
-on
-Politics of the United Kingdom
-Constitution
-Magna Carta
-Bill of Rights
-Treaty of Union
+on the
+History of
+Tunisia
+Prehistoric
+Prehistory
+Ancient
+Carthage
+12th C.
+–
+146 BC
+1st Roman
 (
-Acts of Union
+Province
 )
-Parliamentary sovereignty
-Rule of law
-Separation of powers
-Other constitutional principles
-The Crown
-The Monarch
-(
-list
-)
-King
-Charles III
-Heir apparent
-William, Prince of Wales
-Royal family
-Succession
-Prerogative
-Counsellors of State
-Republicanism in the United Kingdom
-Executive
-Privy Council
-Charles III
-(
-King-in-Council
-)
-Lord President
-Alan Campbell
-(
-L
-)
-HM Government
-Cabinet
-(
-list
-)
-Burnham ministry
-(
-L
-)
-Prime Minister
-(
-list
-)
-Andy Burnham
-(
-L
-)
-Departments
-Ministers
-Agencies
-Legislature
-UK Parliament
-(
-King-in-Parliament
-)
-King
-Charles III
-House of Lords
-Lord Speaker
-The Lord Forsyth of Drumlean
-House of Commons
-Speaker
-Sir Lindsay Hoyle
-Leader of the Opposition
-Kemi Badenoch
-(
-C
-)
-59th Parliament
-Opposition
-MPs
-List of MPs
-Judiciary
-Charles III
-(
-King-on-the-Bench
-)
-Supreme Court
-President
-The Lord Reed of Allermuir
-Deputy President
-Lord Sales
-Justices of the Supreme Court
-United Kingdom
-England and Wales
-Scotland
-Northern Ireland
-Elections
-and
-referendums
-Censorship
-UK Parliament constituencies
-(
-2023 review of Westminster constituencies
-)
-Political parties
-Political Parties, Elections and Referendums Act 2000
-Dissolution and Calling of Parliament Act 2022
-Scottish Parliament constituencies and electoral regions
-Senedd constituencies
-UK general elections
-1801 co-option
-1802
-1806
-1807
-1812
-1818
-1820
-1826
-1830
-1831
-1832–33
-1835
-1837
-1841
-1847
-1852
-1857
-1859
-1865
-1868
-1874
-1880
-1885
-1886
-1892
-1895
-1900
-1906
-1910 (Jan–Feb)
-1910 (Dec)
-1918
-1922
-1923
-1924
-1929
-1931
-1935
-1945
-1950
-1951
-1955
-1959
-1964
-1966
-1970
-1974 (Feb)
-1974 (Oct)
-1979
-1983
-1987
-1992
-1997
-2001
-2005
-2010
-2015
-2017
-2019
-2024
-Endorsements
-2010
-2015
-2017
-2019
-2024
-European Parliament elections (1979–2019)
-1979
-1984
-1989
-1994
-1999
-2004
-2009
-2014
-2019
-Scottish Parliament elections
-1999
-2003
-2007
-2011
-2016
-2021
-2026
-Northern Ireland Assembly elections
-1998
-2003
-2007
-2011
-2016
-2017
-2022
-Next
-Senedd elections
-1999
-2003
-2007
-2011
-2016
-2021
-2026
-UK-wide referendums
-1975
-2011
-2016
-Devolution
-Intergovernmental relations in the United Kingdom
-Legislative consent motions
-Prime Minister and Heads of Devolved Governments Council
-Council of the Nations and Regions
-Opposition to devolution
-England
-Devolution
-Governance of England
-Minister for English Devolution
-Mayoral Council for England
-Strategic authorities
-Greater London Authority
-Combined authorities and combined county authorities
-Strategic authority mayors
-Northern Ireland
-Northern Ireland Act 1998
-(
-2006 Act
-)
-First Minister
-Michelle O'Neill
-Deputy First Minister
-Emma Little-Pengelly
-Executive
-Assembly
-Act of the Northern Ireland Assembly
-Law of Northern Ireland
-Scotland
-Scottish devolution
-1997 referendum
-Scotland Act 1998
-(
-2012 Act
-,
-2016 Act
-)
-First Minister
-John Swinney
-Government
-Scottish Parliament
-Act of the Scottish Parliament
-Scottish statutory instrument
-Scots law
-Wales
-Welsh devolution
-1997 referendum
-(
-2011 referendum on law-making powers
-)
-Government of Wales Act 1998
-(
-2006 Act
-,
-Wales Act 2014
-,
-Wales Act 2017
-)
-First Minister
-Rhun ap Iorwerth
-Government
-Senedd
-Measure of the National Assembly for Wales
-(1999–2011)
-Act of Senedd Cymru
-Welsh law
-Local government
-England
-History
-Subdivisions
-Regions
-Ceremonial counties
-(
-list
-)
-Metropolitan and non-metropolitan counties
-Metropolitan county
-Non-metropolitan county
-Greater London
-Districts
-(
-list
-)
-Metropolitan Borough
-Non-metropolitan District
-London Borough
-Unitary authorities
-(
-list
-)
-Civil parishes
-(
-list
-)
-Historic counties
-Northern Ireland
-History
-Subdivisions
-:
-Counties
-Districts
-Scotland
-History
-Subdivisions
-:
-Sheriffdoms
-Council areas
-Community council areas
-Civil parishes
-Shires of Scotland
-Wales
-History
-Preserved counties
-Principal areas
-Communities
-(
-list
-)
-Historic counties
-Crown Dependencies
-Bailiwick of Guernsey
-Guernsey
-Alderney
-Sark
-Bailiwick of Jersey
-Isle of Man
-British Islands
-Common Travel Area
-UK–CD Customs Union
-Overseas Territories
-Akrotiri and Dhekelia
-Anguilla
-Bermuda
-British Antarctic Territory
-British Indian Ocean Territory
-British Virgin Islands
-Cayman Islands
-Falkland Islands
-Gibraltar
-Montserrat
-Pitcairn Islands
-Saint Helena, Ascension and Tristan da Cunha
-Saint Helena
-Ascension Island
-Tristan da Cunha
-South Georgia and the South Sandwich Islands
-Turks and Caicos Islands
-British Overseas Territories citizen
-Visa requirements
-Visa policies
-British Overseas Territories Act 2002
-UK–OT JMC
-Chagos Archipelago sovereignty dispute
-Gibraltar sovereignty dispute
-Falkland Islands sovereignty dispute
-Foreign relations
-Foreign, Commonwealth and Development Office
-Foreign policy
-(
-history
-)
-Diplomatic missions of
+146 BC
+–
+435
+Vandal
+435
+–
+534
+2nd Roman (Byzantine)
 /
-in the United Kingdom
-UK passport
-British National (Overseas) passport
-Visa requirements
-UK–CD Customs Union
-Visa policy
-Free trade agreements
-Australia
-Barbados
-Belgium
-Belize
-Brunei
-Canada
-China
-Hong Kong
-Cyprus
-Denmark
-France
-Germany
-India
-Israel
-Italy
-Japan
-Kenya
-Malaysia
-Malta
-Netherlands
-New Zealand
-Norway
-Russia
-Saudi Arabia
-Singapore
-Spain
-South Africa
-Palestine
-Pakistan
-Poland
-Portugal
-United States
-Zimbabwe
-Ireland
-politics of Northern Ireland
-Good Friday Agreement
-UK–Ireland border
-Northern Ireland Protocol
-British–Irish Council
-Devolved administrations
-of Scotland
-of Wales
-of Greater London
-European Union
-(
-history
-)
-Brexit
-Post-Brexit United Kingdom relations with the European Union
-UK–EU withdrawal agreement
-The Commonwealth
-member states
-United Kingdom and the United Nations
-United Nations Security Council
-P5
-NATO
-G20
-G7
-United Kingdom
+Byzantine North Africa
+534
+–
+698
+Prefecture
+534
+–
+590
+Exarchate
+590
+–
+698
+Early Islamic
+Umayyad
+698
+–
+750
+Abbasid
+750
+–
+800
+Aghlabid
+800
+–
+909
+Fatimid
+909
+–
+973
+Medieval
+Zirid
+973
+–
+1148
+Norman
+1148
+–
+1160
+Almohad
+1160
+–
+1229
+Hafsid
+1229
+–
+1574
+Early modern
+Ottoman
+1574
+–
+1705
+Husainid
+1705
+–
+1881
+Modern
+French rule
+1881
+–
+1956
+Kingdom of Tunisia
+1956
+–
+1957
+Bourguiba rule
+1957
+–
+1987
+Ben Ali coup
+1987
+Ben Ali rule
+1987
+–
+2011
+Tunisian revolution
+2010
+–
+2011
+Political crisis
+2013
+–
+2014
+COVID-19 pandemic
+2020
+Saied self-coup
+2021
+Africa
 portal
-Politics
+•
+History
 portal
 v
 t
 e
-The
-secretary of state for foreign, commonwealth and development affairs
-, commonly known as the
-foreign secretary
-, is a
-secretary of state
-in the
-Government of the United Kingdom
-, with responsibility for the
-Foreign, Commonwealth and Development Office
-.
-[
-2
-]
-The role is one of the most senior ministers in the UK Government and is a
-Great Office of State
-. The incumbent is a member of the
-Cabinet of the United Kingdom
-and
-National Security Council
-, and reports directly to the
-prime minister
-.
-The officeholder works alongside the other
-Foreign Office ministers
-. The corresponding
-shadow minister
-is the
-shadow foreign secretary
-. The
-Foreign Affairs Select Committee
-also evaluates the secretary of state's performance.
-[
-3
-]
-The current foreign secretary is
-Ed Miliband
-. He was appointed by Prime Minister
-Andy Burnham
-on 20 July 2026.
-Responsibilities
+Establishment of the beylik (1705–1735)
 [
 edit
 ]
-The foreign secretary is responsible for overseeing the United Kingdom's foreign policy and international relations. The role broadly corresponds to that of a
-foreign minister
-in many other countries, while also encompassing additional responsibilities.
-The foreign secretary's remit includes:
-Conducting relations with foreign states and international organisations
-[
-4
-]
-Promoting British interests abroad
-[
-5
-]
-Overseeing matters pertaining to the
-Commonwealth of Nations
-and the
-British Overseas Territories
-[
-5
-]
-Responsibility for the activities of the
-Secret Intelligence Service
-(MI6) and the
-Government Communications Headquarters
-(GCHQ),
+Following the
+Revolutions of Tunis
+which saw
+Ibrahim Sharif
+overthrow
+Muradids'
+power, the latter became the first
+bey
+to combine this function with that of
+Pasha
+. Taken to
+Algiers
+following a defeat against the
+Dey of Algiers
+, and unable to put an end to the troubles which agitated the country, he was a victim, on 10 July 1705 of a
+coup
+of
+Al-Husayn I ibn Ali
+, who took the name of
+Hussein I
+.
+Hussein I reigned alone over Tunisia, establishing a real
+monarchy
+and became
+Possessor of the Kingdom of Tunis
+, disposing over all his subjects the right of high and low justice. His decrees and decisions had the force of
+law
+.
 [
 6
 ]
-including ministerial authorisation of certain intelligence operations
-Residence
-[
-edit
-]
-The
-official residence
-of the foreign secretary is
-1 Carlton Gardens
-in
-London
-.
+As
+Bey of Tunis
+he sought to be perceived as a popular Muslim interested in local issues and prosperity. He appointed as
+qadi
+a Tunisian
+Maliki
+jurist, instead of an
+Hanafi
+preferred by the Ottomans. He also restricted the legal prerogatives of the
+janissary
+and the Dey. Under Hussein I, support was provided to agriculture, especially planting olive orchards. Public works were undertaken, e.g., mosques and
+madrassa
+(schools). His popularity was demonstrated in 1715 when the
+kapudan-pasha
+of the Ottoman fleet sailed to Tunis with a new governor to replace him; instead Hussein I summoned council, composed of local civil and military leaders, who backed him against the Ottoman Empire, which then acquiesced.
 [
 7
 ]
-The foreign secretary also has the use of
-Chevening House
-, a
-country house
-in
-Kent
+Wars and crisis to take the throne (1735–1807)
+[
+edit
+]
+In 1735,
+Ali I
+gained access to the throne by dethroning his uncle
+Hussein I
+who was killed by his great-nephew Younès in 1740.
+[
+8
+]
+In 1756, Ali I was in turn overthrown by the two sons of his predecessor who seized Tunis with the help of the governor of
+Constantine
+:
+Muhammad I Rashid
+(1756–1759) and
+Ali II
+(1759–1782).
+[
+9
+]
+Algerian attempts to overthrow the Beys did not end until 1807, with a victory for the Tunisians led by
+Hammouda I
 .
 [
 8
 ]
-History
+Stability and reforms (1807–1869)
 [
 edit
 ]
-History of English and British government departments with responsibility for foreign affairs and those with responsibility for the colonies, dominions and the Commonwealth
-Northern Department
-1660–1782
-Secretaries
-—
-Undersecretaries
-Southern Department
-1660–1768
-Secretaries
-—
-Undersecretaries
-—
-Southern Department
-1768–1782
-Secretaries
-—
-Undersecretaries
-1782: diplomatic responsibilities transferred to new Foreign Office
-Colonial Office
-1768–1782
-Secretaries
-—
-Undersecretaries
-Foreign Office
-1782–1968
-Secretaries
-—
-Ministers
-—
-Undersecretaries
-Home Office
-1782–1794
-Secretaries
-—
-Undersecretaries
-War Office
-1794–1801
-Secretaries
-—
-Undersecretaries
-War and Colonial Office
-1801–1854
-Secretaries
-—
-Undersecretaries
-Colonial Office
-1854–1925
-Secretaries
-—
-Undersecretaries
-India Office
-1858–1937
-Secretaries
-—
-Undersecretaries
-Colonial Office
-1925–1966
-Secretaries
-—
-Ministers
-—
-Undersecretaries
-Dominions Office
-1925–1947
-Secretaries
-—
-Undersecret
+In the 19th century, the country underwent profound reforms, thanks to the reformist action of
+Kheireddine Pacha
+and his close advisers: the Minister of the Interior
+General Rustum
+, the Minister of Instruction
+General Hussein
+, the Minister
+Bin Diyaf
+and the
+ulama
+Mahmoud Kabadou
+,
+Salem Bouhageb
+and
+Mokhtar Chouikha
+.
+These reforms included the
+abolition of slavery
+, the foundation of the
+military school of Bardo
+in 1840, the
+Sadiki College
+in 1875, and the adoption in 1861 of the first
+constitution
+of
+Africa
+and the
+Arab world
+, becoming a
+constitutional monarchy
+.
+[
+10
+]
+Financial crisis and foreign interference (1869–1881)
+[
+edit
+]
+The financial crises in the country followed, with
+Mustapha Khaznadar
+as prime minister, which constituted an opportunity for European intervention in Tunisia. Thus, the Financial Commission, an international financial committee, was formed in 1869,
+[
+11
+]
+under pressure from some European countries, in a circumstance in which the Tunisian financial crisis intensified and it became impossible for the state to pay its foreign debts, which at that time amounted to 125 million
+francs
+.
+This committee was placed under the chairmanship of the reformed minister
+Kheireddine Pacha
+, and later devolved to
+Mustapha Ben Ismail
+, and it also included representatives of the creditor countries (
+Italy
+,
+England
+, and
+France
+). The Commission was one of the manifestations of foreign interference in the internal affairs of Tunisia by subjecting its finances to international control. The country's revenues were divided into two parts, one part allocated to the state's expenditures and the other to the payment of its debts. So the Bey was restricted, he could no longer grant any concession or conclude any loan agreement except with the approval of the Commission, which acted as a Tunisian
+Ministry of Finance
+. This facilitated the conclusion of a
+bilateral treaty
+between Tunisia and France in 1881 stipulating France's protection of Tunisia, and consequently, the
+French protectorate
+was established.
+Government
+[
+edit
+]
+Bey of
+Tunis
+Beylical Flag
+Muhammad III
+The Bey who was before the French protectorate in 1881
+Details
+First
+monarch
+Hussein I
+Last
+monarch
+Muhammad VIII
+Formation
+15 July 1705
+Abolition
+20 March 1956
+Residence
+Beylical Palace of Bardo
+Appointer
+Hereditary
+Pretender
+Prince Ali
+The Beylik of Tunis was a
+constitutional
+(1861–1864) and
+hereditary monarchy
+with legislative power being exercised by the monarch in conjunction with Supreme Council.
+Bey
+[
+edit
+]
+The Bey is considered the leader of the
+Husainid dynasty
+, the head of the state, the symbol of its unity, and the protector of its borders. He also exercises power through the government and the Supreme Council, as stipulated in Article 12 of the 1861 Constitution.
+[
+12
+]
+What distinguishes the system of government at that time, is that the monarch is responsible before Supreme Council in accordance with Article 11 of the Constitution, which is one of the first countries in the world to stipulate it.
+[
+12
+]
+Article 13 of the constitution affirmed that the Bey
+(monarch)
+is the supreme commander of the Tunisian armed forces, and Article 9 affirmed as well that the 1857 Fundamental Pact must be respected by him.
+[
+12
+]
+Although the constitution limited his powers, he had the ability to appoint members of the Supreme Council, in addition to the fact that laws are issued in his name.
+The Bey must be the eldest of the Husainid dynasty. The second after him becomes
+Bey El Mahalla
+(Bey of the Camp)
+, which was a title for the
+heir apparent
+to throne. The title came the style of
+Highness
+. The last person to carry this title was
+Prince Husain Bey, Bey al-Mahalla
+.
+Prime minister
+[
+edit
+]
+The
+prime minister of Tunisia
+during the era of the Beylik is the head of the government who was responsible for its affairs and was appointed and dismissed by the
+Bey
+. This office was created in 1759 with the beginning of the rule of
+Ali II
+and
+Rejeb Khaznadar
+was the first to take it, becoming the first prime minister in the history of Tunisia.
+With its creation, this office was the preserve of the
+Mamluks
+of foreign origin who were brought to Tunisia at a young age in order to serve the
+Royal Family
+and the
+Makhzen
+, such as
+Mustapha Khaznadar
+,
+Kheireddine Pacha
+and others.
+Mohammed Aziz Bouattour
+is considered the first
+indigenous
+Tunisian to hold the office in 1882; he is the longest-serving prime minister in the history of Tunisia with a period of nearly 25 years, and during his term, the
+French protectorate
+was established in Tunisia.
+The Prime Minister of Tunisia had an important authority in the 19th century, as everything related to the Royal Family was kept in his office according to Article 2 of the Constitution.
+[
+12
+]
+The Prime Minister, based on Section 9 of the Constitution, prepares the budget presented to him by the
+Ministry of Finance
+and submits it to Parliament in accordance with Article 64.
+[
+12
+]
+Legislature
+[
+edit
+]
+The Tunisian parliament was called the
+Supreme 

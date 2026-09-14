@@ -508,9 +508,7 @@ Dido was enraged by this betrayal, and could no longer bear to live.
 [
 23
 ]
-She had her sister
-Anna
-build a
+She had her sister Anna build a
 pyre
 under the pretense of burning all that reminded her of Aeneas, including weapons and clothes that he had left behind, and the couch she called their bridal bed. When Dido saw Aeneas' fleet leaving, she cursed him and proclaimed endless hate between Carthage and the descendants of
 Troy
@@ -2072,7 +2070,7 @@ Other
 IdRef
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Dido&oldid=1373506675
+https://en.wikipedia.org/w/index.php?title=Dido&oldid=1374715286
 "
 Categories
 :

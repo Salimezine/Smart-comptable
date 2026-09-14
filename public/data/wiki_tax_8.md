@@ -3174,7 +3174,7 @@ Jump to content
 Search
 Search
 Académie Française
-73 languages
+74 languages
 Afrikaans
 Alemannisch
 العربية
@@ -3219,6 +3219,7 @@ Latina
 Lëtzebuergesch
 Lingua Franca Nova
 Latviešu
+Македонски
 Bahasa Melayu
 Nederlands
 Norsk nynorsk
@@ -3600,7 +3601,7 @@ Académie Française
 Arsène Houssaye
 devised the expression "forty-first seat" for deserving individuals who were never elected to the
 Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca
+, either because their candidacies were rejected, because they were never candidates, or because they died before appro
 
 ---
 
@@ -3609,7 +3610,7 @@ Jump to content
 Search
 Search
 Académie Française
-73 languages
+74 languages
 Afrikaans
 Alemannisch
 العربية
@@ -3654,6 +3655,7 @@ Latina
 Lëtzebuergesch
 Lingua Franca Nova
 Latviešu
+Македонски
 Bahasa Melayu
 Nederlands
 Norsk nynorsk
@@ -4035,4 +4037,4 @@ Académie Française
 Arsène Houssaye
 devised the expression "forty-first seat" for deserving individuals who were never elected to the
 Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appropriate vaca
+, either because their candidacies were rejected, because they were never candidates, or because they died before appro

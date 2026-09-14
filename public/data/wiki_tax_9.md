@@ -5464,18 +5464,16 @@ Bible
 8
 ]
 [
-non-primary source needed
+9
 ]
 ancient
 Vedic texts
 ,
 [
-9
+10
 ]
 [
-better
-source
-needed
+11
 ]
 [
 page
@@ -5486,16 +5484,16 @@ Bronze-age
 Hittite Empire
 ,
 [
-10
+12
 ]
 and the
 Persian Empire
 .
 [
-11
+13
 ]
 [
-12
+14
 ]
 Roman and civil law
 [
@@ -5517,7 +5515,7 @@ publicani
 Augustus
 ; after which, each province was obliged to pay 1% tax on wealth and a flat rate on each adult. This brought about regular census and shifted the tax system more towards taxing an individual's income rather than wealth.
 [
-13
+15
 ]
 Islamic law
 [
@@ -5531,7 +5529,10 @@ Jizya
 poll tax
 on conquered non-Muslims).
 [
-citation needed
+16
+]
+[
+17
 ]
 Modern history
 [
@@ -5541,7 +5542,7 @@ Numerous records of government tax collection in Europe since at least the 17th 
 production
 numbers are not as readily available.
 [
-14
+18
 ]
 Taxation as a percentage of production of final goods may have reached 15–20% during the 17th century in places such as
 France
@@ -5555,20 +5556,24 @@ citation needed
 ]
 During the war-filled years of the eighteenth and early nineteenth century, tax rates in Europe increased dramatically as war became more expensive and governments became more centralized and adept at gathering taxes. This increase was greatest in England.
 [
-15
+19
 ]
 Effective tax rates
 were higher in Britain than France in the years before the
 French Revolution
 , but they were mostly placed on international trade. In France, taxes were lower but the burden was mainly on landowners, individuals, and internal trade and thus created far more resentment.
 [
-16
+20
 ]
 Obsolete forms
 [
 edit
 ]
 Obsolete forms of taxation include:
+[
+citation needed
+]
+In monetary economies prio
 
 ---
 
