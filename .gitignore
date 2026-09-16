@@ -35,9 +35,6 @@ public/pdf.worker.min.js
 test_*.mjs
 test_*.js
 
-# Old backend (replaced by elfatoora-middleware)
-backend/
-
 # Submodule: elfatoora-middleware (separate repo)
 elfatoora-middleware/
 
