@@ -3289,6 +3289,15 @@ Tanith
 [
 4
 ]
+However, the placename is attested on Neo-Punic coins as 𐤕𐤅𐤍𐤑𐤍
+TWNṢN
+, which is spelled differently from 𐤕𐤉𐤍𐤕
+TYNT
+("Tanit"), making any connection between the two impossible
+.
+[
+5
+]
 Some scholars claim that it originated from
 Tynes
 , which was mentioned by
@@ -3297,10 +3306,10 @@ and
 Polybius
 in the course of descriptions of a location resembling present-day Al-Kasbah, Tunis's old Berber village.
 [
-5
+6
 ]
 [
-6
+7
 ]
 Another possibility is that it was derived from the
 Berber
@@ -3308,10 +3317,10 @@ verbal root
 ens
 which means "to lie down" or "to pass the night".
 [
-7
+8
 ]
 [
-8
+9
 ]
 The term
 Tunis
@@ -3335,7 +3344,7 @@ Cartennae
 Ténès
 ). As all of these Berber villages were situated on Roman roads, they undoubtedly served as rest-stations or stops.
 [
-9
+10
 ]
 History
 [
@@ -3369,7 +3378,7 @@ Latin
 inscriptions on monuments and buildings discovered in Northwest Africa
 ,
 [
-10
+11
 ]
 the main sources are
 Greek
@@ -3393,13 +3402,13 @@ Dio Cassius
 Herodotus
 . These writers belonged to peoples in competition, and often in conflict, with Carthage.
 [
-11
+12
 ]
 Greek cities contended with Carthage over
 Sicily
 ,
 [
-12
+13
 ]
 and the
 Romans
@@ -3407,19 +3416,19 @@ fought three wars
 against Carthage
 .
 [
-13
+14
 ]
 Not surprisingly, their accounts of Carthage are extremely hostile; while there were a few Greek authors who took a favourable view, these works have been lost.
 [
-11
+12
 ]
 The area was originally a Berber settlement.
 [
-14
+15
 ]
 The existence of settlements in and around the area of Tunis is attested by sources dating from the 4th century BC.
 [
-15
+16
 ]
 Situated on a hill, its location served as an excellent point from which the comings and goings of naval and caravan traffic to and from Carthage could be observed. It was one of the first towns in the region to fall under Carthaginian control, and in the centuries that followed the settlement was mentioned in the military histories associated with
 Carthage
@@ -3433,7 +3442,7 @@ During the
 Mercenary War
 , it is possible that the town served as a center for the native population of the area,
 [
-15
+16
 ]
 and that its population was mainly composed of peasants, fishermen, and craftsmen. Compared to the ancient ruins of Carthage, the town's ancient ruins are not as large. According to
 Strabo
@@ -3441,7 +3450,7 @@ Strabo
 Third Punic War
 . Both the town and Carthage were destroyed; the former, however, was rebuilt first
 [
-16
+17
 ]
 under the rule of
 Augustus
@@ -3451,7 +3460,7 @@ in the
 Tabula Peutingeriana
 .
 [
-16
+17
 ]
 In the system of Roman roads for the
 Roman province of Africa
@@ -3459,13 +3468,13 @@ Roman province of Africa
 mutatio
 ("way station, resting place").
 [
-16
+17
 ]
 The borough, increasingly Romanized, was also eventually Christianized and became the seat of a
 bishop
 . However, it remained modestly sized compared to Carthage during this time.
 [
-17
+18
 ]
 Foundation and early Islamic period
 [
@@ -3480,7 +3489,7 @@ Hassan ibn al-Nu'man
 Zaytuna Mosque
 .
 [
-18
+19
 ]
 The
 Medina of Tunis
@@ -3502,23 +3511,13 @@ base in the western
 Mediterranean Sea
 , and took on considerable military importance.
 [
-17
+18
 ]
 Under the
 Aghlabids
 , the city gained significance and benefited from economic improvements and became one of the most important in the caliphate,
 [
-17
+18
 ]
 and was briefly the national capital from the end of the reign of
-Ibrahim II
-, from 902 until 909,
-[
-19
-]
-when control over
-Ifriqiya
-was handed to the newly founded
-Fatimid Caliphate
-.
-Local opposition to the authorities began to intensify in Septembe
+I

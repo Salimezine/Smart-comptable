@@ -417,7 +417,7 @@ In other projects
   * [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q948 "Structured data on this page hosted by Wikidata \[alt-g\]")
 
 
-[Coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system "Geographic coordinate system"): ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[34°N 9°E﻿ / ﻿34°N 9°E﻿ / 34; 9](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=34_N_9_E_scale:5000000)
+[Coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system "Geographic coordinate system"): ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[34°N 9°E﻿ / ﻿34°N 9°E﻿ / 34; 9](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=34_N_9_E_scale:5000000)
 [![Page semi-protected](https://thumb.wikimedia.org/wikipedia/en/thumb/1/1b/Semi-protection-shackle.svg/20px-Semi-protection-shackle.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/Wikipedia:Protection_policy#semi "This article is semi-protected.")
 From Wikipedia, the free encyclopedia
 Country in North Africa
@@ -438,7 +438,7 @@ _al-Jumhūriyyah at-Tūnisiyyah_
  |  
 |  [![](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Tunisia_location_%28orthographic_projection%29.svg/250px-Tunisia_location_%28orthographic_projection%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_location_\(orthographic_projection\).svg) [![](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tunisia_-_Location_Map_%282013%29_-_TUN_-_UNOCHA.svg/330px-Tunisia_-_Location_Map_%282013%29_-_TUN_-_UNOCHA.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Tunisia_-_Location_Map_\(2013\)_-_TUN_-_UNOCHA.svg) Show globeShow map of TunisiaShow both  |  
 | Capitaland largest city  |  [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis")  
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[36°49′N 10°11′E﻿ / ﻿36.817°N 10.183°E﻿ / 36.817; 10.183](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=36_49_N_10_11_E_type:city)  |  
+![](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png)[36°49′N 10°11′E﻿ / ﻿36.817°N 10.183°E﻿ / 36.817; 10.183](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=36_49_N_10_11_E_type:city)  |  
 | Officiallanguages  |  [Arabic](https://en.wikipedia.org/wiki/Modern_Standard_Arabic "Modern Standard Arabic")[[1]](https://en.wikipedia.org/wiki/Tunisia#cite_note-art1-1)  |  
 | Local vernacular  |  [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic")[[2]](https://en.wikipedia.org/wiki/Tunisia#cite_note-2) Minority Dialects: [Jerba Berber](https://en.wikipedia.org/wiki/Jerba_Berber "Jerba Berber") (Chelha) [Matmata Berber](https://en.wikipedia.org/wiki/Matmata_Berber "Matmata Berber") [Judeo-Tunisian Arabic](https://en.wikipedia.org/wiki/Judeo-Tunisian_Arabic "Judeo-Tunisian Arabic") (UNESCO CR) [[3]](https://en.wikipedia.org/wiki/Tunisia#cite_note-3)[[4]](https://en.wikipedia.org/wiki/Tunisia#cite_note-4)[[5]](https://en.wikipedia.org/wiki/Tunisia#cite_note-5)[[6]](https://en.wikipedia.org/wiki/Tunisia#cite_note-6)[[7]](https://en.wikipedia.org/wiki/Tunisia#cite_note-7)[[8]](https://en.wikipedia.org/wiki/Tunisia#cite_note-8)[[9]](https://en.wikipedia.org/wiki/Tunisia#cite_note-9)[[10]](https://en.wikipedia.org/wiki/Tunisia#cite_note-10)[[11]](https://en.wikipedia.org/wiki/Tunisia#cite_note-11)  |  
 | Foreign languages  |  [French](https://en.wikipedia.org/wiki/French_language "French language") and [English](https://en.wikipedia.org/wiki/English_language "English language")[[a]](https://en.wikipedia.org/wiki/Tunisia#cite_note-14)  |  
@@ -1115,7 +1115,7 @@ Throughout the years 2021 to 2023, tennis saw a spike of popularity in Tunisia a
   
 |  show [Authority control databases](https://en.wikipedia.org/wiki/Help:Authority_control "Help:Authority control") [![Edit this at Wikidata](https://thumb.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://www.wikidata.org/wiki/Q948#identifiers "Edit this at Wikidata")  |  
 | --- |  
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png) WikiMiniAtlas
+![](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/WMA_button2b.png/20px-WMA_button2b.png) WikiMiniAtlas
 [34°N 9°E﻿ / ﻿34°N 9°E﻿ / 34; 9](https://geohack.toolforge.org/geohack.php?pagename=Tunisia&params=34_N_9_E_scale:5000000)
 Retrieved from "[https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457](https://en.wikipedia.org/w/index.php?title=Tunisia&oldid=1368892457)"
 [Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 

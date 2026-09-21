@@ -51,64 +51,13 @@ Part of
 a series
 on
 Jews
-and
-Judaism
 Etymology
 Who is a Jew?
 Jewish studies
-Religion
-God in Judaism
-(
-names
-)
-Principles of faith
-Mitzvot
-(
-613
-)
-Halakha
-Shabbat
-Holidays
-Prayer
-Tzedakah
-Land
-of Israel
-Brit
-Bar
-and bat mitzvah
-Marriage
-Bereavement
-Baal teshuva
-Off the derech
-Philosophy
-Ethics
-Kabbalah
-Messiah
-Claimants
-Customs
-Rites
-Synagogue
-Rabbi
-Texts
-Tanakh
-Torah
-Nevi'im
-Ketuvim
-Talmud
-Mishnah
-Gemara
-Rabbinic
-Midrash
-Tosefta
-Targum
-Beit Yosef
-Mishneh Torah
-Tur
-Shulchan Aruch
-Zohar
 History
 General
 Timeline
+Index
 Land of Israel
 Name "Judea"
 Historical population
@@ -413,6 +362,77 @@ Guam
 New
 Zealand
 Palau
+Culture
+Customs
+Minyan
+Wedding
+Clothing
+Niddah
+Pidyon haben
+Kashrut
+Shidduch
+Surnames
+Ashkenazi
+Sephardic
+Zeved habat
+Conversion
+to Judaism
+Art
+Ancient
+Yiddish theatre
+Dance
+Humour
+Music
+Religious
+Secular
+Cuisine
+American
+Ashkenazi
+Bukharan
+Ethiopian
+Israeli
+Israelite
+Mizrahi
+Sephardic
+Literature
+Israeli
+Yiddish
+Judeo-Tat
+American
+Religion
+Outline
+God in Judaism
+(
+names
+)
+Principles of faith
+Mitzvot
+(
+613
+)
+Halakha
+Shabbat
+Holidays
+Prayer
+Tzedakah
+Land
+of Israel
+Brit
+Bar
+and bat mitzvah
+Marriage
+Bereavement
+Baal teshuva
+Off the derech
+Philosophy
+Ethics
+Kabbalah
+Messiah
+Claimants
+Customs
+Rites
+Synagogue
+Rabbi
 Denominations
 Orthodox
 Haredi
@@ -429,44 +449,23 @@ Renewal
 Science
 Karaite
 Haymanot
-Culture
-Customs
-Minyan
-Wedding
-Clothing
-Niddah
-Pidyon haben
-Kashrut
-Shidduch
-Zeved habat
-Conversion
-to Judaism
-Music
-Religious
-Secular
-Art
-Ancient
-Yiddish theatre
-Dance
-Humour
-Cuisine
-American
-Ashkenazi
-Bukharan
-Ethiopian
-Israeli
-Israelite
-Mizrahi
-Sephardic
-Literature
-Israeli
-Yiddish
-Judeo-Tat
-American
-Surnames
-Ashkenazi
-Mizrahi
-Sephardic
+Texts
+Tanakh
+Torah
+Nevi'im
+Ketuvim
+Talmud
+Mishnah
+Gemara
+Rabbinic
+Midrash
+Tosefta
+Targum
+Beit Yosef
+Mishneh Torah
+Tur
+Shulchan Aruch
+Zohar
 Languages
 Hebrew
 Biblical
@@ -862,43 +861,6 @@ into Tunis took place.
 [
 citation needed
 ]
-Genetic studies of Jews in Tunisia
-[
-edit
-]
-Main article:
-Genetic studies on Jews
-Numerous studies have been conducted on the genetics of Jews in general, on North African Jews in particular, and specifically on Jews of Tunisian origin.
-[
-25
-]
-[
-26
-]
-[
-27
-]
-They conclude that "the closest genetic neighbors to most Jewish groups were the
-Palestinians
-,
-Bedouins
-, and
-Druze
-in addition to the Southern Europeans".
-[
-25
-]
-And that
-:
-The findings support the historical record of Middle Eastern Jews settling in North Africa during classical antiquity, converting non-Jews to Judaism and marrying local populations, thereby forming distinct populations that stayed largely intact for more than two millennia. [...] Two major subgroups within this overall population were identified – Moroccan/Algerian Jews and Djerban (Tunisian)/Libyan Jews. 
-The two subgroups varied in their degree of European mixture, with Moroccan/Algerian Jews tending to be more related to Europeans, which most likely resulted from the expulsion of Sephardi Jews from Spain during the Inquisition starting in 1492.
-[
-28
-]
-Furthermore, "The Tunisian Jews exhibited two apparent clusters—one with proximity to Libyan and Djerban Jews and the other proximal to the Moroccan and Algerian Jews."
-[
-26
-]
 Under Roman rule
 [
 edit
@@ -919,7 +881,7 @@ and
 Greek
 .
 [
-29
+25
 ]
 "Sinagoga"
 ,
@@ -947,7 +909,7 @@ at the synagogue. They also practiced frequent
 ritual ablutions
 . A distinctive feature of Jewish women in Carthage was covering their heads.
 [
-30
+26
 ]
 Tertullian further maintains that Jewish worship was
 protected by Roman law
@@ -963,11 +925,11 @@ appeared only in a few phrases, such as greetings (e.g.,
 Shalom
 ).
 [
-30
+26
 ]
 "Judaism, in Carthage as elsewhere, exerted a great influence on local populations: crowds gathered for the Saturday sermon, and pagans and Christians sometimes observed the Shabbat and other festivals and conversions were widespread".
 [
-30
+26
 ]
 Despite some
 controversies
@@ -981,10 +943,10 @@ Gammarth
 necropolis
 discovered in the late 19th century.
 [
-31
+27
 ]
 [
-30
+26
 ]
 The decoration of necropolises and magical tablets, which combine pagan
 abjurations
@@ -1002,22 +964,22 @@ as
 sancta synagoga naronitana
 ("holy synagogue of Naro") and motifs common across Roman Africa, attests to the affluence of its Israelite members and the quality of their interactions with other populations.
 [
-32
+28
 ]
 [
-33
+29
 ]
 Another synagogue, dating to the 5th century, was discovered in Clipea (modern-day
 Kélibia
 ).
 [
-34
+30
 ]
 Other Jewish communities are attested by epigraphic or literary references to Utique, Chemtou, Hadrumète or Thusuros (present
 Tozeur
 ).
 [
-35
+31
 ]
 As elsewhere in the
 Roman Empire
@@ -1029,7 +991,7 @@ after hundreds of years of subjection and would have adopted Latinized names, wo
 togas
 , and spoken Latin.
 [
-36
+32
 ]
 According to
 St. Augustine
@@ -1039,32 +1001,32 @@ circumcision
 modesty of dress
 ),
 [
-37
+33
 ]
 [
-36
+32
 ]
 distinguished them from the rest of the population. Some devoted themselves to translation for Christian clients and to the study of the Law; many rabbis were originally from Carthage.
 [
-38
+34
 ]
 Others worked in agriculture, livestock and trade.
 Their situation was modified by the
 Edict of Milan
 (313), which legalized Christianity.
 [
-39
+35
 ]
 Jews were gradually excluded from most public functions and proselytism was severely punished.
 [
-39
+35
 ]
 The construction of new synagogues was prohibited towards the end of the fourth century, and by the fifth century even the upkeep of existing ones was subject by law to the approval of the imperial administration.
 [
-40
+36
 ]
 [
-41
+37
 ]
 Access to civil service positions was also restricted, and it was prohibited to disinherit Jewish children who
 converted to Christianity
@@ -1078,7 +1040,7 @@ However, various councils held by the
 Church of Carthage
 , in advising Christians not to follow certain practices of their Jewish neighbors, serve as testimony as to their ongoing influence.
 [
-40
+36
 ]
 From Vandal peace to Byzantine repression
 [
@@ -1107,7 +1069,7 @@ Justinian's victory in 535 began the period of the
 Exarchate of Carthage
 ,
 [
-42
+38
 ]
 which favored
 Nicene Christianity
@@ -1119,7 +1081,7 @@ Donatists
 pagans
 . Jews were once again stigmatized and excluded from public office. Jewish synagogues and pagan temples were converted into churches, their worship banned, and their gatherings prohibited.
 [
-43
+39
 ]
 The administration strictly enforced the
 Theodosian Code
@@ -1127,7 +1089,7 @@ against them, leading to
 forced conversions
 .
 [
-43
+39
 ]
 Although Emperor
 Maurice
@@ -1137,7 +1099,7 @@ mandating
 baptism
 .
 [
-43
+39
 ]
 Some Jews reportedly fled cities under
 Eastern Roman
@@ -1145,23 +1107,23 @@ control to settle in mountain regions or
 oases
 at the edge of the desert.
 [
-43
+39
 ]
 There, with the support of
 Berber
 tribes,
 [
-42
+38
 ]
 they resisted Roman rule, converting many Berbers to Judaism through proselytism.
 [
-44
+40
 ]
 However, it is possible that the Judaization of the Berbers occurred four centuries earlier, following the arrival of Jews fleeing the repression of the revolt in
 Cyrenaica
 .
 [
-44
+40
 ]
 This transition may have happened gradually through a
 syncretism
@@ -1169,7 +1131,7 @@ of Jewish and pagan practices, including the worship of
 Tanit
 , which persisted after the fall of Carthage.
 [
-45
+41
 ]
 This supports the legend of the Judeo-Berber queen of the
 Aurès Mountains
@@ -1184,28 +1146,28 @@ Ibn Khaldun
 confirmed their existence on the eve of the
 Muslim conquest of the Maghreb
 [
-44
+40
 ]
 based on 11th-century Arab chronicles.
 [
-46
+42
 ]
 However, this version is heavily contested: Haïm Zeev Hirschberg notes that Ibn Khaldun wrote his work centuries after the events, and
 Mohamed Talbi
 points out that the French translation is not entirely accurate, as it fails to convey Ibn Khaldun's sense of possibility.
 [
-42
+38
 ]
 Gabriel Camps
 also asserts that the Djerawa and Nefzaouas mentioned
 [
-47
+43
 ]
 were Christians allied with the Eastern Romans before the advent of
 Islam
 .
 [
-48
+44
 ]
 [
 page
@@ -1215,7 +1177,7 @@ Regardless, while the hypothesis of mass tribal
 conversion
 to Judaism seems fragile, individual conversions appear more likely.
 [
-42
+38
 ]
 Middle Ages
 [
@@ -1231,19 +1193,19 @@ With the Arab conquest and the arrival of Islam in Tunisia in the eighth century
 People of the Book
 " (including Jews and Christians) were given a choice between conversion to Islam (which some Jewish Berbers have done)
 [
-49
+45
 ]
 and legal status as
 dhimmi
 .
 [
-42
+38
 ]
 The dhimmi is a term for non-Muslims, originally Jews and Christians as People of the Book, who live in an Islamic state and refers to the state's obligation to protect the lives of these communities as well as their freedom of religion and right to administer their own laws in certain regards (i.e. the Jewish halakhic courts), in return for the payment of the
 jizya
 , the poll tax.
 [
-50
+46
 ]
 As well as several obligation and restrictions as refraining from building new places of worship. In addition,
 dhimmis
@@ -1253,10 +1215,10 @@ and could not marry Muslim women, although the reverse was permitted if the Jewi
 dhimmi
 individuals were required to treat Muslims and Islam with respect and humility. Any violation of this pact could result in expulsion or even death.
 [
-50
+46
 ]
 [
-51
+47
 ]
 Cultural heyday of Tunisian Jews (9th to 11th centuries)
 [
@@ -1273,7 +1235,7 @@ and then
 Fatimid dynasties
 .
 [
-52
+48
 ]
 Of the three principal Jewish communities that came into prominence by the 10th century,
 Ifriqiya
@@ -1281,7 +1243,7 @@ Ifriqiya
 Shi'ite
 caliphate of the Fatimids in 909. The Fatimids, in general, were more tolerant towards dhimmi subjects than interpretations in orthodox Sunni Islam.
 [
-52
+48
 ]
 Jews were employed in the civil service, sumptuary laws for non-Muslims were repealed, and the discriminatory tariffs were not imposed.
 Jews worked in the service of the dynasty, as treasurers, doctors, or tax collectors but their situation remained precarious.
@@ -1294,7 +1256,7 @@ Abbasid Empire
 Talmudic academies in Babylonia
 .
 [
-52
+48
 ]
 The Kairouan community became an important intermediary between communities in
 Spain
@@ -1316,18 +1278,18 @@ in Arabic which would enrich the medieval medicine through their translation by
 Constantine the African
 , adapting the teachings of the Alexandrian school to the Jewish dogma.
 [
-53
+49
 ]
 Israeli's works in Arabic were studied in their Hebrew and Latin translations in both medieval and Renaissance Europe.
 [
-52
+48
 ]
 Dunash ibn Tamim
 , his disciple, was the author (or final editor) wrote, along other works, a philosophical commentary on the
 Sefer Yetzirah
 , where he developed conceptions close to his master's thought.
 [
-54
+50
 ]
 Another disciple, Ishaq ibn Imran is considered the founder of the philosophical and medical school of
 Ifriqiya
@@ -1343,29 +1305,29 @@ Bari
 Jerusalem Talmud
 .
 [
-52
+48
 ]
 His son and disciple
 Chananel ben Chushiel
 was one of the major commentators of the Talmud in the Middle Ages.
 [
-55
+51
 ]
 After his death, his work was continued by another disciple of his father whom
 Ignác Goldziher
 calls Jewish mutazilite: Nissim ben Jacob,
 [
-56
+52
 ]
 the only one among the sages of Kairouan to bear the title of
 Gaon
 ,
 [
-55
+51
 ]
 also wrote an important commentary on the Talmud and the Hibbour Yafe Mehayeshoua, which is perhaps the first tales collection in Jewish literature.
 [
-57
+53
 ]
 On the political level, the community emancipated itself from the
 exile
@@ -1373,7 +1335,7 @@ of
 Baghdad
 at the beginning of the eleventh century and acquired its first secular chief.
 [
-58
+54
 ]
 Each community was placed under the authority of a council of notables headed by a chief (
 naggid
@@ -1381,7 +1343,7 @@ naggid
 dayan
 ), etc.
 [
-59
+55
 ]
 The maggid of Kairouan undoubtedly had the ascendancy over those of the communities of smaller size.
 The Jews participate greatly in the exchanges with
@@ -1390,11 +1352,11 @@ Al-Andalus
 Egypt
 , and the broader Middle East.
 [
-60
+56
 ]
 Grouped in separate quarters (although many Jews settled in the Muslim districts of Kairouan during the Fatimid period),
 [
-61
+57
 ]
 they had house of prayer, schools and a court.
 The port cities of
@@ -1409,40 +1371,40 @@ saw a steady influx of Jewish immigrants from the
 Levant
 to the end of the eleventh century,
 [
-58
+54
 ]
 and their communities participated in these economic and intellectual exchanges.
 [
-62
+58
 ]
 Monopolizing the goldsmiths' and jewelers' crafts, they also worked in the textile industry, as tailors, tanners and shoemakers,
 [
-63
+59
 ]
 while the smallest rural communities practiced agriculture (saffron,
 henna
 , vine, etc.) or breeding of nomadic animals.
 [
-64
+60
 ]
 Nevertheless, the attitude of Islamic authorities regarding ghiyār (differentiation of non-Muslims from Muslims) begun to harden and in the late ninth century the Aghlabid ruler but also Maliki qadi of Kairuoan issued decrees that ordered dhimmis to wear a
 white patch
 on the shoulder of their garment.
 [
-65
+61
 ]
 [
-66
+62
 ]
 The patch for Jews had the image of an ape, an image based on Quranic interpretation that became standard in anti-dhimmi propaganda and was polemic when referring to Jews. It is not clear how long these humiliating decrees remained in force, but it is clear that the purpose of the patch was not merely ghiyār, but also dhull (humiliation) in keeping with the Quranic injunction (Sura 9:29) that non-Muslims should be humbled.
 [
-65
+61
 ]
 The departure of the Fatimids to Egypt in 972 led their
 Zirid
 vassals to seize power and eventually break their bonds of political and religious submission in the middle of the eleventh century.
 [
-67
+63
 ]
 The
 Banu Hilal
@@ -1450,7 +1412,7 @@ and the
 Banu Sulaym
 , were sent in retaliation against Tunisia by the Fatimids, took Kairouan in 1057 and plundered it.
 [
-68
+64
 ]
 Combined with the triumph of
 Sunnism
@@ -1460,13 +1422,13 @@ gaonate
 Levant
 ,
 [
-67
+63
 ]
 with the elites having already accompanied the Fatimid court in
 Cairo
 .
 [
-69
+65
 ]
 Jews migrated to the coastal cities of Gabes, Sfax, Mahdia, Sousse and Tunis, but also to
 Béjaïa
@@ -1476,7 +1438,7 @@ and
 Beni Hammad Fort
 .
 [
-69
+65
 ]
 Persecution and decline under Almohad rule (12th–13th centuries)
 [
@@ -1486,7 +1448,7 @@ The conquest of Tunisia by the
 Almohad Caliphate
 in the 1150s proved disastrous to the Jews of Tunis. The city itself was captured in 1159 after refusing to surrender.
 [
-70
+66
 ]
 The rise of the
 Almohad Caliphate
@@ -1494,7 +1456,7 @@ shook both the Jewish communities of Tunisia and the Muslims attached to the cul
 heretics
 .
 [
-71
+67
 ]
 Jews were forced to
 apostasy
@@ -1506,13 +1468,13 @@ Abd al-Mu'min
 ]
 Abd al-Mu'min's harsh treatment of the residents of Tunis asked as a deterrent to the rulers of other provincial towns. In addition to forcing Christians and Jews to convert or die, half the property of all Muslims in Tunis was confiscated by the Almohad treasury.
 [
-72
+68
 ]
 Many massacres took place, despite many formal conversions by the pronunciation of the
 Shahada
 .
 [
-71
+67
 ]
 Indeed,
 many Jews, while outwardly professing Islam, remained faithful to their religion
@@ -1520,7 +1482,7 @@ many Jews, while outwardly professing Islam, remained faithful to their religion
 Rabbi Moses ben Maimon
 .
 [
-73
+69
 ]
 Jewish practices disappeared from the Maghreb from 1165 to 1230.
 [
@@ -1528,13 +1490,13 @@ citation needed
 ]
 Still they were saddened by the sincere adherence of some to Islam, fears of persecution and the relativization of any religious affiliation.
 [
-71
+67
 ]
 This Islamization of the morals and doctrines of the Jews of Tunisia, meant they as 'dhimmis' (after the disappearance of Christianity in the Maghreb around 1150) isolated from their other coreligionists, and was strongly criticized by the
 Maimonides
 .
 [
-74
+70
 ]
 The first Almohad, 'Abd al-Mu'min, claimed that
 Muhammad
@@ -1544,7 +1506,7 @@ had not come, they were to be forced to embrace Islam. Accordingly, Jews as well
 special garb, with a yellow cloth for a head-covering
 .
 [
-75
+71
 ]
 Throughout this, Jewish communities in Tunisia maintained connections throughout and beyond the Maghreb, particularly those in the Italian peninsula. Both a
 genizah
@@ -1552,11 +1514,11 @@ fragment from the 1220s and two letters in 1227 to the mayor of
 Pisa
 attest to the presence of commercial relations between the Jewish communities in Tunis and Pisa.
 [
-76
+72
 ]
 In 1267, a man named Moses of Tunis served as an Arabic interpreter to Genoese traders living in the city.
 [
-77
+73
 ]
 These connections persisted for many years; surviving records include a treaty between
 Florence
@@ -1568,7 +1530,7 @@ Majorca
 Barcelona
 into the 15th century.
 [
-78
+74
 ]
 Under the Hafsids, Spanish and Ottomans (1236–1603)
 [
@@ -1580,15 +1542,15 @@ Hafsid dynasty
 Almohad dynasty
 ,
 [
-79
+75
 ]
 the condition of the Jews improved. Jews could again practice their religion and thus reconstituted the communities that existed before the Almohad period.
 [
-80
+76
 ]
 Systematic persecution, social exclusion and hindrance to worship disappeared,
 [
-81
+77
 ]
 but the
 dhimma
@@ -1596,7 +1558,7 @@ was strict, especially in matters of dress. The Hafsids followed late Almohad pr
 shikliyyun
 .
 [
-75
+71
 ]
 Besides
 Kairouan
@@ -1630,7 +1592,7 @@ Maliki
 Sunnism
 with little tolerance towards the "people of the book" meant material and spiritual misery.
 [
-82
+78
 ]
 The massive settlement of Jewish-Spanish scholars fleeing from the
 Castile
@@ -1642,7 +1604,7 @@ Morocco
 Simeon ben Zemah Duran
 .
 [
-83
+79
 ]
 In 1360, a treaty was declared between
 Abu Ishaq Ibrahim II
@@ -1650,11 +1612,11 @@ and
 Peter IV of Aragon
 ; the treaty included repeated mentions of both Christian and Jewish subjects, as well as guarantees of safety on roads and protection against bandits.
 [
-84
+80
 ]
 Another article of the treaty started that no Tunisian Jew or Muslim was to be arrested in Aragon after the treaty had been concluded and, if any such prisoners were found, they were to be released.
 [
-84
+80
 ]
 Possibly in response to the increasing Jewish participation in trade, the population of the Jewish community in Tunisia increased in the 14th century. According to a letter addressed to
 Simeon ben Zemah Duran
@@ -1662,7 +1624,7 @@ Simeon ben Zemah Duran
 funduq
 .
 [
-85
+81
 ]
 The
 pogroms of 1391
@@ -1672,11 +1634,11 @@ and
 Mallorca
 to Tunisia (and Algeria), further increasing the population.
 [
-86
+82
 ]
 In the fifteenth century, each community was autonomous – recognized by power from the moment it counts at least ten major men – and has its own institutions; Their communal affairs were directed by a chief (zaken ha-yehudim) nominated by the government, and assisted by a council of notables (gdolei ha-qahal) made up of the most educated and wealthy family heads.
 [
-87
+83
 ]
 The chief's functions consisted in the administration of
 justice
@@ -1699,7 +1661,7 @@ by the Spaniards in 1535, many Jews were made prisoners and sold as slaves in se
 Koca Sinan Pasha
 .
 [
-88
+84
 ]
 During the Spanish occupation of the Tunisian coasts (1535–74) the Jewish communities of
 Bizerte
@@ -1758,7 +1720,7 @@ Mordecai Manuel Noah
 , gave the following account of the situation of the Tunisian Jews:
 With all the apparent oppression, the Jews are the leading men; they are in Barbary the principal mechanics, they are at the head of the custom-house, they farm the revenues; the exportation of various articles, and the monopoly of various merchandise, are secured to them by purchase, they control the mint and regulate the coinage of money, they keep the bey's jewels and valuable articles, and are his treasurers, secretaries, and interpreters; the little known of arts, science, and medicine is confined to the Jews. If a Jew commits a crime, if the punishment affects his life, these people, so national, always purchase his pardon; the disgrace of one affects the whole community; they are ever in the presence of the bey, every minister has two or three Jewish agents, and when they unite to attain an object, it cannot be prevented. These people, then, whatever may be said of their oppression, possess a very controlling influence, their friendship is worthy of being preserved by public functionaries, and their opposition is to be dreaded.
 [
-89
+85
 ]
 Granas and Tuansa
 [
@@ -1770,7 +1732,7 @@ families who had re-embraced Judaism after settling in Livorno at the end of the
 Tuscany
 to settle in Tunisia as part of the establishment of trade relations.
 [
-90
+86
 ]
 These new arrivals, called
 Granas
@@ -1788,51 +1750,51 @@ indigenous coreligionists
 Twansa
 .
 [
-91
+87
 ]
 [
-92
+88
 ]
 They spoke and wrote
 Tuscan
 , and sometimes still Spanish, forming a highly influential economic and cultural elite within the broader Italian community.
 [
-93
+89
 ]
 [
-91
+87
 ]
 Their surnames reflect their Spanish or Portuguese origins.
 [
-93
+89
 ]
 Tunisian Jewish woman in ceremonial attire (1908).
 Quickly introduced to the Beylic Court, they performed executive functions of court – collectors of taxes, treasurers and intermediaries without authority over
 [
-94
+90
 ]
 – and noble professions in medicine, finance or diplomacy. Even if they settled in the same neighborhoods, they had virtually no connection with the Tuansa, to which Jews from the rest of the
 Mediterranean Basin
 have assimilated. The Tuansa spoke the Judeo-Tunisian dialect, and occupied a modest social position. This is why, contrary to what was happening elsewhere in the Maghreb, these new populations were hardly accepted,
 [
-95
+91
 ]
 which gradually leads to the division of the Jewish community into two groups.
 In this context, the Jews played a major role in the economic life of the country, in commerce and crafts, but also in trading and banking. Despite the tariffs being higher than those paid by Muslim or Christian traders (10% vs. 3%), the Granas managed to control and prosper trade with Livorno.
 [
-96
+92
 ]
 Their trading houses also engaged in
 credit
 banking activities
 [
-96
+92
 ]
 and participated in the purchase of Christian slaves captured by
 privateers
 and resold.
 [
-97
+93
 ]
 The Tuansa saw themselves conceding the monopoly of the leather trade by the
 Muradid
@@ -1844,11 +1806,11 @@ souks of Tunis
 , thus shipping imported products from Europe under the leadership of a Muslim amine, or in the Jewish quarter.
 In 1710, a century of friction between the two groups led to a coup de force of the Livornese community, with a tacit agreement of the authorities.
 [
-95
+91
 ]
 By creating its own community institutions, it creates a schism with the indigenous population.
 [
-95
+91
 ]
 Each of them had their council of notables, their
 grand rabbi
@@ -1856,7 +1818,7 @@ grand rabbi
 rabbinical court
 , synagogues, schools, butcher's shop and a separate cemetery.
 [
-98
+94
 ]
 This state of affairs was endorsed by a
 takkanah
@@ -1864,58 +1826,58 @@ takkanah
 Isaac Lumbroso
 .
 [
-98
+94
 ]
 This agreement was renewed in 1784 before being annulled in 1899.
 [
-99
+95
 ]
 This takkanah sets, among other rules, the fact that every Israelite from a Muslim country was attached to the Tuansa, while every Israelite from a Christian country was from the Granas.
 [
-95
+91
 ]
 Moreover, the Granas – a richer community, although only 8% of the total population – then accounted for one third of the payment of the
 jizya
 against two-thirds for the Tuansa.
 [
-98
+94
 ]
-[
-95
-]
-This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.
-[
-100
-]
-The socio-cultural and economic differences between these two communities have increased in the nineteenth century.
 [
 91
 ]
+This last point indicated that the Livornese community, previously protected by the European consuls, has sufficiently integrated into Tunisia so that its members were considered dhimmis and taxed like the Tuansa.
+[
+96
+]
+The socio-cultural and economic differences between these two communities have increased in the nineteenth century.
+[
+87
+]
 The Granas, due to their European origins and higher standard of living, but also to their economic, family and cultural ties with Livorno,
 [
-100
+96
 ]
 found it difficult to cope with their indigenous coreligionists, the Tuansa, who were considered less "civilized". The Granas were an important contributions whereas they represented only a minority of the Jews of Tunisia.
 [
-98
+94
 ]
 On the other hand, indigenous elites didn't wish to give up their power to newcomers, unlike their Maghreb neighbors, probably due to the later arrival of the Granas in Tunisia.
 [
-101
+97
 ]
 The Granas also differed geographically from the Tuansa, settling in the European district of Tunis, thus avoiding the
 Hara
 , and more culturally approach the Europeans than their co-religionists.
 [
-102
+98
 ]
 However, the two groups keep the same rites and uses with only a few variants and, outside Tunis, the same community institutions continue to serve all the faithful. Moreover, all the Jews remain under the authority of a single qaid
 [
-103
+99
 ]
 chosen from the Tuansa, presumably to avoid interference with foreigners.
 [
-104
+100
 ]
 Harassment and discrimination
 [
@@ -1925,13 +1887,13 @@ During the seventeenth and eighteenth centuries, Jews were still subjected to ha
 Hanafi
 courts.
 [
-105
+101
 ]
 Jews were still subjected to the collective payment of the jizya – the annual amount of which varied according to the year, from 10,332
 piastres
 in 1756 to 4,572 piastres in 1806 – and had to pay additional taxes (ghrâma) whenever the sovereign's treasury was in difficulty, as the Muslims sometimes did.
 [
-105
+101
 ]
 Moreover, they were periodically obliged to carry out public works and were subjected to forced labor which affected mainly the poorest of the communities. Regarding dress code, the
 chechia
@@ -1943,15 +1905,15 @@ The Granas, dressed in European fashion, wore wigs and round hats like Christian
 El Ghriba Synagogue in Djerba.
 At the beginning of the eighteenth century, the political status of the Jews improved somewhat thanks to the growing influence of the political agents of the European powers who, seeking to improve the living conditions of the Christian residents, also pleaded the Jews. But if the wealthy Jews – who held positions in administration or trade – succeeded in being respected, especially through the protection of influential Muslim personalities,
 [
-106
+102
 ]
 poor Jews were often victims of bullying and even murder, and the authorities didn't seem to intervene.
 [
-107
+103
 ]
 An observer declared that the Jews were recognized "not only in their black costume, but also in the imprint of a curse they carry on their foreheads".
 [
-107
+103
 ]
 However, despite this difficult climate, Jews were not subjected to outbreaks of religious
 fanaticism
@@ -1961,20 +1923,20 @@ massacres
 looting
 accompanied by violence was occasionally reported, it always occurred in the context of unrest affecting the broader population, such as in June 1752 and September 1756 in Tunis.
 [
-108
+104
 ]
 Furthermore, there were no instances of mass expulsions,
 [
-109
+105
 ]
 and Jews enjoyed an almost complete
 freedom of religion
 — often involving their Muslim neighbors in their celebrations
 [
-106
+102
 ]
 [
-110
+106
 ]
 — in contrast to the practices in Europe at the time.
 At the end of the eighteenth century,
@@ -1996,25 +1958,25 @@ Communities were structured under the authority of a leader of the "Jewish natio
 qaid
 charge of the Jews (qdyd el yihud) and that of Receiver General of Finance under the authority of the Treasurer of the Kingdom (khaznadar).
 [
-111
+107
 ]
 He was an intermediary between the bey and his community and therefore enjoyed entry to the court. He had a very important bureaucratic power over those co-religionaries in whom he apportioned the payment of the jizya
 [
-112
+108
 ]
 – of which they were collectively liable – according to the resources of each household. It also refers to those who performed the duties imposed by the authorities.
 [
-109
+105
 ]
 Tunis Jewish Hospital
 (1912).
 A state farmer, surrounded by some of the most fortunate and educated notables, also collected taxes such as the tithes, the tax on kosher meat and the offerings of the faithful.
 [
-109
+105
 ]
 These allow him to pay for his services, those of his deputies and the rabbis-judges
 [
-112
+108
 ]
 and finance the synagogues, the schools linked to them, the
 ritual abattoir
@@ -2024,27 +1986,27 @@ cemetery
 rabbinical court
 , which were only in large cities
 [
-100
+96
 ]
 under the presidency of the Grand Rabbi.
 [
-109
+105
 ]
 Administrator of the affairs of the community designated the local secular or religious leaders – with the written approval of the Tunisian authorities – and gives them broad orientations.
 [
-112
+108
 ]
 From the reign of
 Abu l-Hasan Ali I
 (1735–1756), he also served as treasurer of the Bey
 [
-104
+100
 ]
 and many of the key posts in the administration of finance – collection of taxes and customs duties, scheduling of expenditure, handling of cash, keeping books of account or paying the salaries of the
 Janissaries
 – were occupied by Jewish agents.
 [
-113
+109
 ]
 Religious authorities
 [
@@ -2060,13 +2022,13 @@ Shulchan Aruch
 Talmud
 . The rabbinic jurisdictions deal with personal status matters, but also with civil and commercial cases when only Jews were concerned, whether the faults were religious or secular.
 [
-103
+99
 ]
 In small towns, the
 dayan
 was responsible for rendering justice, with the rabbinical court serving as a chamber of appeal.
 [
-100
+96
 ]
 One of the most rigorous penalties that the latter could pronounce was the
 herem
@@ -2074,17 +2036,17 @@ herem
 excommunication
 , made public in the synagogue.
 [
-103
+99
 ]
 However, some questioned the authority of the religious leaders: a Jewish broker, working for a French
 trading house
 and condemned to beating in May 1827 for invoking the name of God,
 [
-114
+110
 ]
 appealed the decision to the consul of France. Following the protest of the latter to the bey, it was decided that the rabbinical court would no longer pronounce sentence for religious offense to a Jew placed under French protection.
 [
-114
+110
 ]
 Renewal of ideas
 [
@@ -2092,11 +2054,11 @@ edit
 ]
 On the intellectual level, the growing exchanges between Jews from Tunisia and Livorno facilitated the circulation of printed works in Tuscany and their widespread distribution in Tunisia and the rest of the Maghreb.
 [
-115
+111
 ]
 This led to an important revival of the Tunisian Hebrew studies at the beginning of the eighteenth century, embodied in particular by the rabbis Semah Sarfati, Abraham Ha-Cohen, Abraham Benmoussa, Abraham Taïeb and Joseph Cohen-Tanugi.
 [
-116
+112
 ]
 Among the works of the
 Chumash
@@ -2123,15 +2085,15 @@ Nehorai Jarmon
 Mishneh Torah
 of Moses Maimonides
 [
-117
+113
 ]
 [
-118
+114
 ]
 Erekh ha-Shoulhan (1791–1891) by Isaac Taïeb, a book dealing with the laws and commenting on the
 Shulchan Aruch
 [
-119
+115
 ]
 Mishha di-Ributa (1805) by Messaoud-Raphael El-Fassi, an important commentary by Choulhan Aroukh, accompanied by works by his sons Haym and Solomon;
 Mishkenot ha-Roim (1860) and Hayyim va-Chesed (1873) by Ouziel El-Haik, a collection of 1,499
@@ -2141,19 +2103,19 @@ With the exception of Isaac Lumbroso's Zera Itshak, all the works were printed i
 Chaim Yosef David Azulai
 , who visited Tunis in 1773–74, noted that the city had some 300 young talmudists and considered that the rabbis he met "had very extensive knowledge".
 [
-120
+116
 ]
 Jewish-Arabic texts also celebrate legendary figures such as the poet Rabbi Fraji Chaouat, famous for his extensive Hebrew
 diwan
 , and Rabbi Yossef El Maarabi.
 [
-121
+117
 ]
 A long poem also recounts the epidemic of
 plague
 that struck the country in the 17th century.
 [
-122
+118
 ]
 Aborted reforms of the nineteenth century
 [
@@ -2169,27 +2131,27 @@ Arabic
 Hebrew
 . Moreover, they generally adhered strictly to religious precepts due to their exclusively religious education.
 [
-123
+119
 ]
 They had little knowledge of Arab-Muslim literature, unlike Jews in other Muslim countries.
 [
-124
+120
 ]
 Nevertheless, interactions between Tunis and Europe contributed to a certain desire for emancipation and freedom in their assigned dress. Mahmoud Bey then decided in January 1823 to require all Jews living in Tunisia to wear a
 skullcap
 .
 [
-125
+121
 ]
 A Jew from
 Gibraltar
 who refused the decree was beaten.
 [
-126
+122
 ]
 His protest to his consul triggered a strong reaction from the United Kingdom.
 [
-125
+121
 ]
 This situation benefited the Granas, who secured the replacement of the
 chechia
@@ -2199,16 +2161,16 @@ kbîbes
 sefseri
 for their women, as a way to distinguish themselves from the Twansa, who were still required to wear black skullcaps.
 [
-127
+123
 ]
 [
-125
+121
 ]
 However, this concession contradicted a relatively strict policy adopted by the authorities during the early decades of the century, as reported by the bey's physician, Louis Franck, and the United States consul
 Mordecai Manuel Noah
 .
 [
-127
+123
 ]
 Entrance to the
 souk El Grana
@@ -2219,11 +2181,11 @@ medina of Tunis
 (early 20th century).
 In socio-economic terms, the Jewish population was highly heterogeneous. In the country's ports, European Jewish merchants, along with Christians, controlled foreign trade and dominated more than half of the commercial houses operating in the country.
 [
-128
+124
 ]
 Alongside this affluent class of merchants and bankers, primarily Livornese, was a middle class of traders and artisans.
 [
-129
+125
 ]
 These Jews played a significant role in retail trade, particularly in the capital, where they were heavily concentrated in two
 souks
@@ -2231,17 +2193,17 @@ of the
 medina
 : one specializing in colonial goods, hardware, and items imported from Paris, and another specializing in draperies and silk fabrics from England and France.
 [
-130
+126
 ]
 Many were also engaged in Tunisian handicrafts, such as working gold and silver, over which they held a monopoly, as well as tailoring and shoemaking.
 [
-130
+126
 ]
 They also served as
 lenders
 to farmers and artisans.
 [
-129
+125
 ]
 In rural areas such as
 Nabeul
@@ -2251,13 +2213,13 @@ Gabès
 date palm
 farming, fruit tree cultivation, and livestock farming.
 [
-129
+125
 ]
 There was also a poor class of Jews who lived off small trades and could not survive without the
 charity organized by their community
 .
 [
-129
+125
 ]
 European influences
 [
@@ -2267,13 +2229,13 @@ The inclusion of Jews in the
 French Declaration of the Rights of Man and of the Citizen
 on September 27, 1791, and the Napoleonic decrees of 1808, fostered a certain sympathy for France among the Jews of Tunisia, who were all subjects of the bey,
 [
-131
+127
 ]
 For instance, the Spanish
 chargé d'affaires
 reported in 1809 that "the Jews are the most fervent supporters of Napoleon."
 [
-131
+127
 ]
 It was even reported that some Jews, including Granas following the example of their co-religionists in Italy, wore a
 tricolor cockade
@@ -2285,7 +2247,7 @@ Tuscany
 Napoleon I
 , under French protection.
 [
-131
+127
 ]
 Napoleon had liberated the Jewish ghettos in Italy and simultaneously abolished discrimination against
 Jews in Italy
@@ -2294,7 +2256,7 @@ In this context, article 2 of the treaty signed on July 10, 1822, with the
 Grand Duchy of Tuscany
 set the duration of the Granas’ stay in Tunisia to two years; beyond this period, they fell under the sovereignty of the bey and were considered equal to the Twansa.
 [
-132
+128
 ]
 Reforms
 [
@@ -2304,13 +2266,13 @@ At the same time, as Tunisia gradually opened to external influences but also fa
 Ahmed I Bey
 initiated a policy of reforms.
 [
-133
+129
 ]
 Under an act amending the 1822 Tunisian-Tuscan treaty, signed on November 2, 1846, the Granas who settled in Tunisia after the treaty, or those who would arrive later, were granted the right to retain their
 Tuscan
 nationality without any time limitation, unlike the Granas who had arrived before 1822.
 [
-134
+130
 ]
 This provision encouraged many Granas of Italian origin to emigrate to Tunisia, where they formed a foreign minority—90 individuals in 1848, reinforced by a few French and British Jews—under the protection of the
 Tuscan consul
@@ -2320,14 +2282,14 @@ Hara
 unification of Italy
 also benefited from this provision.
 [
-135
+131
 ]
 [
-136
+132
 ]
 From then on, political action was seen as a means to end the exceptional status affecting Jews, representing "a true rupture in the mental universe of Jewish communities, a rupture that broke the old world of submission to the order of things."
 [
-137
+133
 ]
 In 1853, the caid of the Tunisian Jewish community,
 Nessim Samama
@@ -2335,7 +2297,7 @@ Nessim Samama
 forced labor
 obligations that had previously burdened his co-religionists.
 [
-138
+134
 ]
 Residual discrimination
 [
@@ -2345,21 +2307,21 @@ Despite everything, Jews remained subject to the payment of the
 jizya
 and exceptional taxes demanded by the bey as needed, and they also faced discrimination.
 [
-139
+135
 ]
 In terms of clothing, they were required to wear a black
 chechia
 instead of a red one, a black or dark blue turban instead of a white one, and black shoes instead of brightly colored ones.
 [
-140
+136
 ]
 They were not allowed to live outside the neighborhoods assigned to them and could not own real estate.
 [
-140
+136
 ]
 Finally, when they were victims of harassment or violence, they did not always receive reparations for the harm suffered.
 [
-140
+136
 ]
 Sfez affair
 [
@@ -2367,7 +2329,7 @@ edit
 ]
 However, the relationship between Jews and Muslims changed radically from the mid-century due to the intrusion of European colonial powers in Tunisia, particularly France. These powers relied on the presence of Jews to promote their economic and commercial interests, as their situation—often marked by unfair treatment in Tunisian courts—served as a pretext for exerting pressure on the bey.
 [
-141
+137
 ]
 The Sfez affair in 1857 illustrates this new context and provided an opportunity for France and the United Kingdom to intervene in the name of defending human rights and fighting
 absolutism
@@ -2375,7 +2337,7 @@ and
 fanaticism
 to advance their interests.
 [
-142
+138
 ]
 Batou Sfez was a Jewish
 coachman
@@ -2383,13 +2345,13 @@ serving the
 caïd
 of his community, Nessim Samama.
 [
-140
+136
 ]
 Following a traffic incident and an altercation with a Muslim, he was accused of insulting
 Islam
 , with witnesses later confirming the scene before a notary.
 [
-140
+136
 ]
 Charged and found guilty under
 Maliki
@@ -2403,13 +2365,13 @@ and
 decapitation
 , and was executed by sword on June 24.
 [
-140
+136
 ]
 The ruler
 Mohammed Bey
 sought through this act to appease resentment stemming from the execution of a Muslim accused of killing a Jew and to demonstrate that his justice system treated all subjects fairly.
 [
-143
+139
 ]
 Nevertheless, the severity of the sentence caused great consternation within the Jewish community and among the French and British
 consuls
@@ -2419,7 +2381,7 @@ and Richard Wood. They used the incident to pressure the ruler into adopting lib
 Ottoman Empire
 in 1839.
 [
-144
+140
 ]
 Moreover, the historian Ibn Abi Dhiaf referred to Tunisian Jews as "brothers in the homeland" (
 Ikhwanoun fil watan
@@ -2438,44 +2400,44 @@ in the roadstead of Tunis forced the bey to proclaim the
 Fundamental Pact
 on September 10, 1857,
 [
-142
+138
 ]
 [
-145
+141
 ]
 with the support of Ibn Abi Dhiaf.
 [
-133
+129
 ]
 [
-146
+142
 ]
 He seemed to represent the most favorable attitude towards Jews among the reformers, while others were more skeptical.
 [
-147
+143
 ]
 The text radically changed the status of non-Muslims:
 [
-141
+137
 ]
 Tunisian Jews, previously considered second-class subjects, escaped the secular status of
 dhimma
 .
 [
-148
+144
 ]
 [
-149
+145
 ]
 Article 1 guaranteed "complete security" for persons and their property; Article 4 stated that "Jewish subjects will not be coerced into changing their religion and will not be prevented from practicing their faith"; Article 6 specified that "when the criminal court rules on the penalty incurred by a Jewish subject, Jewish
 assessors
 will also be appointed to the said court";
 [
-150
+146
 ]
 and Article 8 stated that all Tunisians, regardless of faith, now enjoyed the same rights and duties. Free access to property ownership and public office was also guaranteed to all.
 [
-151
+147
 ]
 The
 beylical
@@ -2483,13 +2445,13 @@ decree of September 15, 1858, authorized Jews to wear a red
 chechia
 like Muslims and explicitly granted them the right to acquire real estate outside designated quarters.
 [
-149
+145
 ]
 Additionally, it appears that the
 jizya
 ceased to be collected with the introduction of the mejba, which applied to all the bey's subjects, and that customs duties were now based on the origin or destination of goods rather than the merchant's religion.
 [
-152
+148
 ]
 Jewish girls wearing a
 qufiya
@@ -2497,31 +2459,31 @@ in Tunis (1887).
 Sadok Bey
 , successor to Mohammed Bey, replaced the text with an organic law, equivalent to a full-fledged constitution, on April 21, 1861, and supplemented it on February 25, 1862, with a civil and criminal code.
 [
-142
+138
 ]
 However, rising public expenditures due to new institutions and public works led to an increase in the mejba tax, sparking a revolt in April 1864, exacerbated by
 embezzlement
 and worsening economic conditions. During these events, Jews—accused of benefiting from these reforms—were physically attacked, their property targeted, and synagogues vandalized in Sousse, Gabès, Nabeul, Sfax, and Djerba.
 [
-153
+149
 ]
 These disturbances lasted several years, with further outbreaks of violence in Tunis in 1869, where 17 Jews were killed without their murderers being brought to justice.
 Bennot Smadja, "Jewish guide" of Tunis (May 1889).
 Although the constitution was suspended shortly after the revolt—ultimately suppressed—the previous reforms remained in effect, and Jews who suffered losses were compensated by the government.
 [
-154
+150
 ]
 Nevertheless, Tunisian courts continued to show particular severity towards Jews, leading Jewish notables to seek the protection of consuls.
 [
-148
+144
 ]
 Crimes against Jews also went unpunished.
 [
-155
+151
 ]
 The country became a battleground for European influence, with some Jewish notables receiving protection patents that allowed them to retain Tunisian nationality while placing themselves under the jurisdiction of consular courts. The European powers that favored these protections could thereby justify their interventions in the country's internal affairs.
 [
-156
+152
 ]
 Hamsa
 displayed in Djerba.
@@ -2534,21 +2496,21 @@ transcribed in
 Hebrew script
 but similar to that spoken by Muslims, except for a few pronunciation variations, a reduced emphasis on certain emphatic consonants, and rare Hebrew borrowings strictly in a religious context.
 [
-157
+153
 ]
 At the same time, despite growing criticism of the traditional education system, Talmudic studies still produced notable rabbis such as Judah Lévy, Joseph Borgel, Joshua Bessis, Abraham Cohen, and Abraham Hagège.
 [
-158
+154
 ]
 In terms of clothing, both groups had adopted Muslim dress with slight variations (men were required to wear dark-colored turbans, and women wore a pointed headdress called
 qufiya
 )
 [
-159
+155
 ]
 even recently arrived Granas and wealthy Twansa wore European-style clothing.
 [
-160
+156
 ]
 Religious observance remained strong: Saturday was a rest day,
 religious holidays
@@ -2564,7 +2526,7 @@ or the fear of
 djinns
 —shared with Muslims.
 [
-161
+157
 ]
 Cultural changes
 [
@@ -2614,11 +2576,11 @@ Liberté, égalité, fraternité
 Judeo-Arabic
 as the mother tongue of the Jews of French Tunisia.
 [
-162
+158
 ]
 Additionally, more Jewish children began attending state schools throughout the country, which slowly lead to the diffusion of French culture and lifestyle within the Jewish community.
 [
-163
+159
 ]
 Political status
 [
@@ -2630,25 +2592,25 @@ antisemitism
 La Tunisie française
 frequently published attacks.
 [
-164
+160
 ]
 From March 26 to 29, 1898, a fight between Jews and Arabs escalated into riots during which Jews were assaulted, their homes looted, and their shops ransacked, without police intervention (a form of "
 pogrom
 "). Despite convictions being handed down, the responsibility for the unrest was never clearly established.
 [
-165
+161
 ]
 The tense context of the
 Dreyfus affair
 further added to fears of violence, though its resolution helped strengthen the Jews' attachment to France and encouraged them to make demands.
 [
-166
+162
 ]
 While the French presence led to the continued
 francization
 of the Jewish community, the desired rapprochement sought by its elites was not without challenges.
 [
-167
+163
 ]
 Extending French jurisdiction to Tunisian Jews, along with the abolition of the
 rabbinical court
@@ -2656,50 +2618,50 @@ and the possibility of individual
 naturalization
 , became key priorities for the modernist intelligentsia who had attended French universities.
 [
-168
+164
 ]
 These priorities were first articulated by Mardochée Smaja in 1905 and later championed in the weekly newspaper
 La Justice
 founded in 1907.
 [
-169
+165
 ]
 Although representatives of the French community in Tunisia supported these ideas, the protectorate administration, the French government under the
 French Third Republic
 , and conservative rabbinical authorities, backed by the most popular factions of the Jewish community, opposed them. Modernist Muslims also criticized these reforms, seeing them as undermining sovereignty and creating inequality among citizens of the same state.
 [
-170
+166
 ]
 Proposals to reform naturalization requirements faced hostility from authorities seeking to encourage French settlement and protect relations with the government and Muslim population.
 [
-171
+167
 ]
 Community institution reforms were also rejected, as authorities feared they might come under the control of the Granas, who were sympathetic to Italy.
 [
-167
+163
 ]
 Though the colonial authorities sought support within the community to strengthen their authority, this secular and liberal elite was quickly excluded from influential positions.
 Facing Italian ambitions over Tunisia and the desire to increase the number of French settlers, a relaxation of naturalization conditions for Tunisian subjects was finally decided on October 3, 1910.
 [
-172
+168
 ]
 Although the process remained selective and individual, it opened the possibility for Jews to become French citizens. Tunisian subjects over 21 who demonstrated fluency in French were eligible for naturalization if they met one of the following conditions: voluntary service in the
 French Armed Forces
 , earning a diploma, prize, or medal in higher education, marriage to a Frenchwoman with children, rendering important services to French interests in Tunisia for over ten years, or rendering exceptional services to France.
 [
-173
+169
 ]
 These strict conditions kept the number of naturalizations low (93 between 1911 and 1914), respecting the opinions of both French and Muslim populations in Tunisia; however, they fell short of Jewish community expectations.
 [
-174
+170
 ]
 Community organizational reforms were also implemented: the position of caid was abolished, and the Relief and Welfare Fund of Tunis was entrusted to an administrative committee appointed by ministerial decree; all cities with significant communities were given similar structures.
 [
-175
+171
 ]
 After an intermediate period, the protectorate administration recognized only one chief rabbi from the Twansa community, whose authority was extended across the country, bringing initial unity to the country's community institutions.
 [
-176
+172
 ]
 Socio-economic integration
 [
@@ -2707,84 +2669,84 @@ edit
 ]
 Due to its intermediate socio-cultural position, the francized native Jewish elite identified with republican and secular values, rejecting the existing Arab and Muslim order.
 [
-177
+173
 ]
 This position allowed for both the social and cultural advancement of the community and the preservation of a strong identity through partnerships with other communities and guarantees provided by France.
 [
-177
+173
 ]
 The ideology of the republican school also inspired great enthusiasm within the community.
 [
-177
+173
 ]
 The universalist culture it transmitted offered an escape from national questions while providing a path out of domination through socio-professional advancement after centuries of relative stagnation, leading to the acquisition of a more valued social status.
 [
-177
+173
 ]
 However this attitude was not universally shared among Tunisian Jews. In October 1900, a group "belonging to two traditions, the Portuguese and the Tunisian", sent a letter to
 Zadoc Kahn
 , the chief rabbi of France and honorary president of the Alliance Israélite Universelle, voicing their anger at the Alliance itself, at the education and values it promoted, and at its attempts to displace and usurp their own traditions with French ones.
 [
-178
+174
 ]
 The authors wrote, "Do not forget that the Jews of Tunisia are not merely Jews, which in itself separates them from the French, but they are also Eastern Jews, Arab Jews, and as such so dramatically different from the French".
 [
-178
+174
 ]
 Tunisian Jewish couple (early 20th century).
 The relative opening of society, with the emergence of independent social spaces such as schools, cafés, theaters, and sports clubs, contributed to the emancipation of individuals from their groups and religion
 [
-179
+175
 ]
 and the decline of traditional Judeo-Arab culture,
 [
-180
+176
 ]
 which nevertheless persisted in rural communities. While new synagogues were built in all cities, a notable decline in religious practice was observed, even if it remained the domain of a minority
 [
-181
+177
 ]
 among the wealthy and educated. This phenomenon was associated with a reduction in knowledge of
 Hebrew
 due to its absence from public school curriculums,
 [
-182
+178
 ]
 where a majority of children of both genders were enrolled, although
 Talmud Torah
 schools continued to operate in major cities.
 [
-183
+179
 ]
 Jewish family in Tunis listening to music on a Saturday evening.
 By the end of the century, families with sufficient financial resources sent their children to secondary or even higher education.
 [
-184
+180
 ]
 At the same time, the community prospered by taking advantage of the colonial economy.
 [
-185
+181
 ]
 While Jews continued to practice traditional trades in commerce, trading, and craftsmanship, young people graduating from schools and training centers were increasingly employed in workshops, shops, and offices.
 [
-186
+182
 ]
 They also joined the network of bank and insurance branches established by French companies, ventured into new professions, participated in the creation of early industries, or started agricultural enterprises.
 [
-187
+183
 ]
 The proportion of employees increased significantly as young people fluent in French had sufficient mastery of the
 Arabic dialect
 to act as intermediaries between their French employers and Tunisian clients.
 [
-186
+182
 ]
 The next generation was encouraged to go beyond primary education and enter liberal professions, such as medicine, pharmacy, or law, often after studying in France or Italy.
 [
-188
+184
 ]
 [
-189
+185
 ]
 Westernized Jewish families abandoned their traditional dwellings (
 oukalas
@@ -2792,13 +2754,13 @@ oukalas
 Hara of Tunis
 to settle in individual apartments on its outskirts or, for the wealthiest, in the new neighborhoods of Tunis.
 [
-190
+186
 ]
 These economic transformations led to a restructuring of Jewish society: a commercial, industrial, and even agricultural
 bourgeoisie
 ; a liberal class (lawyers, doctors, pharmacists, and architects); a middle class (traders, artisans, employees, and civil servants); a still-small working class; and a mass of unqualified laborers, the sick, and the disabled with modest means, who survived only through community support and were often concentrated in the Hara.
 [
-191
+187
 ]
 Cultural integration
 [
@@ -2815,36 +2777,36 @@ of new generations. As a result, French became a maternal language alongside Ara
 social mobility
 .
 [
-192
+188
 ]
 [
-193
+189
 ]
 At the same time, European first names replaced Hebrew or Arabic ones,
 [
-194
+190
 ]
 European clothing was adopted, weekly work rhythms were embraced,
 [
-124
+120
 ]
 and superstitious beliefs and practices shared with Muslims were abandoned.
 [
-195
+191
 ]
 Women also emancipated themselves through changes in clothing, although at a slower pace than men and with intergenerational and intrafamilial gaps.
 [
-190
+186
 ]
 Many Tunisian Jews became eligible for French citizenship under the
 Morinaud laws
 of 1923.
 [
-196
+192
 ]
 Simultaneously, marital and paternal authority was moderated by the development of female education, the growing influence of modernist values, and the higher education levels of new generations.
 [
-190
+186
 ]
 Additionally, the age of marriage increased,
 consanguineous marriages
@@ -2854,7 +2816,7 @@ became more distinct from
 extended families
 .
 [
-180
+176
 ]
 First page of
 The Count of Monte Cristo
@@ -2867,7 +2829,7 @@ With the dissemination of Hebrew printing in Tunis, a few years after the establ
 prose
 essays, and journalism.
 [
-197
+193
 ]
 Many individuals found their vocation as poets,
 songwriters
@@ -2875,39 +2837,39 @@ songwriters
 periodicals
 in Judeo-Tunisian Arabic
 [
-198
+194
 ]
 emerged, although this phenomenon faded quickly after
 World War I
 .
 [
-199
+195
 ]
 [
-200
+196
 ]
 Religious works, Arabic literature, folklore, translations of European literature, and original creations were published.
 [
-198
+194
 ]
 Habiba Msika
 .
 Other writings, often long ballads or rhymed narratives, described events within the community, whether social, cultural, or domestic, but especially the evolving customs and behaviors of a modernizing community.
 [
-199
+195
 ]
 Distributed as leaflets or small booklets, these texts were sometimes written in loosely transcribed
 Latin characters
 and were always based on popular tunes.
 [
-199
+195
 ]
 Quickly, traditional local poetic genres emerged.
 [
-199
+195
 ]
 [
-201
+197
 ]
 In a
 bibliography
@@ -2915,13 +2877,13 @@ compiled between 1904 and 1907 by
 Eusèbe Vassel
 ,
 [
-202
+198
 ]
 he cataloged poetic works by prolific pioneers like
 Simah Levy
 .
 [
-203
+199
 ]
 Vassel also cited
 Haï Vita Sitruk
@@ -2929,7 +2891,7 @@ and
 Malzouma on the Disappointments of This World,
 written by an anonymous author.
 [
-203
+199
 ]
 Hundreds of popular poems, initially composed in Tunis and later in other communities like
 Djerba
@@ -2937,13 +2899,13 @@ and
 Sousse
 , told Jewish traditions in a novel way that some traditionalist authors considered "threatening".
 [
-203
+199
 ]
 These creations also allowed, for the first time in printed form, the dissemination of lyrical or romantic texts, influenced by both local production and
 Arab-Muslim works
 from Egypt, which were very popular in Tunisia at the time.
 [
-200
+196
 ]
 During this period, Jewish artists like
 Leïla Sfez
@@ -2953,16 +2915,16 @@ Habiba Msika
 Tunisian music
 .
 [
-204
+200
 ]
 [
-205
+201
 ]
 A cultural shift also occurred with the emergence of Jewish painters such as
 Moses Levy
 , Maurice Bismouth, David Junès, and Jules Lellouche.
 [
-205
+201
 ]
 [
 additional citation(s) needed
@@ -2991,14 +2953,14 @@ in
 World War II
 .
 [
-206
+202
 ]
 Under the rule of Pétain's collaborationist regime, the Jews of Vichy France and Vichy Tunisia were subjected to the two
 antisemitic
 Statut des Juifs
 (Jewish Statutes of October 3, 1940, and June 2, 1941), like the Jews in mainland France.
 [
-196
+192
 ]
 Thus, discriminatory legislation defined the Jews, restricted them in the public service, in educational institutions and journalism, and in liberal professions (numerus clausus), counted them (Jewish census), and forced them to register their property to be subsequently
 aryanized
@@ -3012,7 +2974,7 @@ to check the matter of the
 Jewish question
 .
 [
-196
+192
 ]
 According to an article on the
 United States Holocaust Memorial Museum
@@ -3020,7 +2982,7 @@ United States Holocaust Memorial Museum
 Holocaust
 in France's three North African territories (the three departments, 91, 92, and 93, in French Algeria, the two French protectorates of Morocco and Tunisia) is intrinsically tied to France's fate during this period."
 [
-207
+203
 ]
 Holocaust scholar
 Martin Gilbert
@@ -3029,7 +2991,7 @@ French North Africa
 was an integral part of the Holocaust in France.
 "The German government was unable to implement in Tunisia the 'Final Solution' that it had already decided to apply to the Jewish question. Nazi Germany could not organize the extermination of the Jewish population on-site without risking revealing to the world what it intended to conceal for as long as possible. Nor could it consider transporting the Jews of Tunisia to the extermination camps established in Eastern Europe, as this would have required using ships and planes that were needed for more pressing military needs."
 [
-208
+204
 ]
 The Jews of Vichy-French North Africa were relatively fortunate because their distance from
 Nazi concentration camps
@@ -3094,7 +3056,7 @@ t
 e
 When the Nazis invaded Vichy Tunisia, the country was home to some 100,000 Jews.
 [
-209
+205
 ]
 According to
 Yad Vashem
@@ -3104,10 +3066,10 @@ yellow badge
 labor camps
 , where 265 are known to have been murdered.
 [
-210
+206
 ]
 [
-211
+207
 ]
 An additional 160 Jews of Tunisia living in France were sent to
 extermination camps
@@ -3117,7 +3079,7 @@ Khaled Abdul-Wahab
 Righteous Among the Nations
 award.
 [
-212
+208
 ]
 Post-War period
 [
@@ -3125,13 +3087,13 @@ edit
 ]
 Between the end of World War II and the independence of Tunisia in March 1956, there was deep debate in the Tunisian Jewish community over Zionism.
 [
-213
+209
 ]
 Anti-Jewish attacks in
 Hafsia
 in 1952 and conflict surrounding the independence struggle resulted in the first wave of emigration.
 [
-214
+210
 ]
 Continued emigration
 [
@@ -3142,7 +3104,7 @@ In June 1950, the AIU services recorded a Jewish population of 5,500 people in S
 Enfidaville
 .
 [
-215
+211
 ]
 After the emigration of their main leaders to Israel in 1952, they were dismantled but reconstituted in 1955 by the
 Mossad
@@ -3150,26 +3112,26 @@ and its armed branch, known as
 Misgeret
 .
 [
-216
+212
 ]
 Shlomo Havillio, chief commander of
 Misgeret
 in Paris between 1955 and 1960 and responsible for operations in the Maghreb, later admitted that "the initial fears about possible reactions from Tunisian nationalists against Jews were much more imaginary than real [...] The only concern could come from the presence of revolutionaries in Tunisian society after independence."
 [
-216
+212
 ]
 In this context, the leaders of the
 Neo Destour
 , while not supporting Zionism, stated they would not prevent Jews from leaving Tunisia for Israel.
 [
-217
+213
 ]
 For instance,
 Habib Bourguiba
 declared in August 1954:
 The Neo-Destourians are entirely opposed to antisemitism and discrimination against Tunisian Jews. They stand for full equality of rights [...] The Tunisian government and the Neo-Destourians will do everything to ensure the well-being of Jews, but if some Jews prefer to emigrate to Israel for one reason or another, we will not make any difficulties for them.
 [
-218
+214
 ]
 Upon its legalization in Tunisia, the
 Jewish Agency
@@ -3177,7 +3139,7 @@ opened a special office in
 Tunis
 and later branches in other cities.
 [
-216
+212
 ]
 These offices, run by Israeli representatives and local Jewish activists, organized the emigration of a significant portion of the Jewish populations from cities such as Sousse, Sfax, and Tunis, as well as southern regions like
 Ben Gardane
@@ -3191,27 +3153,27 @@ Gabès
 Djerba
 .
 [
-216
+212
 ]
 This phenomenon primarily affected the more traditionalist and poorer communities with little to lose.
 [
-219
+215
 ]
 In total, over 25,000 individuals emigrated between 1948 and 1955.
 [
-219
+215
 ]
 Consequently, the Jewish population declined by 18.6% over ten years, with decreases of 7.7% in the Tunis region, 33.5% in the North, 26.9% in the center, 38.9% in the South, and 44.4% in the extreme South.
 [
-220
+216
 ]
 While the less assimilated, working-class groups primarily emigrated to Israel, the intellectual elite split between France and Israel.
 [
-221
+217
 ]
 The cultured and now French-speaking Livornese community saw few members ultimately settle in Italy.
 [
-221
+217
 ]
 Independence of Tunisia
 [
@@ -3221,23 +3183,23 @@ Main article:
 June 1967 Tunis riots
 In post-independence Tunisia, the economic and political situation led to the departure of most Jews who had chosen to remain in the country after independence.
 [
-214
+210
 ]
 Most lawyers, affected by the Arabization of the judicial system, decided to settle in France, where their clientele relocates, as did doctors and dental surgeons.
 [
-222
+218
 ]
 Public officials were excluded from certain ministries, such as Foreign Affairs, National Defense, and State Security, and did not always benefit from promotions based on seniority and competence.
 [
-223
+219
 ]
 Furthermore, the administration systematically favored companies owned by Muslim Tunisians, while businesses owned by Jewish Tunisians were subjected to stricter tax audits and heavier taxation.
 [
-223
+219
 ]
 The socialist turn in the government's economic policy ultimately stifles most of these businesses, which had disappeared by the early 1970s.
 [
-224
+220
 ]
 In this context, the
 Bizerte crisis
@@ -3249,14 +3211,14 @@ citation needed
 ]
 This led to the departure of 4500 people from the country in 1962.
 [
-225
+221
 ]
 [
-226
+222
 ]
 It was followed by an even larger wave of emigration,
 [
-227
+223
 ]
 including the singer
 Acher Mizrahi
@@ -3268,7 +3230,7 @@ Grand Synagogue of Tunis
 Torah scrolls
 were burned. However, there were no reports of violence against individuals.
 [
-225
+221
 ]
 Despite President Bourguiba's condemnation of the events, apologies to Tunisia's chief rabbi Mordekhai Meiss Cohen,
 [
@@ -3276,33 +3238,33 @@ citation needed
 ]
 and promises the same evening to uphold the rights and safety of the community,
 [
-225
+221
 ]
 [
-227
+223
 ]
 an additional 7000 Jews emigrated to France and
 2,362
 to Israel.
 [
-216
+212
 ]
 In general, the Jewish population that remains, about 12,000 people (including
 10,000
 of Tunisian nationality), three-quarters of whom are concentrated in the Tunis region at the beginning of the 1970s,
 [
-228
+224
 ]
 consists of bourgeois families with substantial wealth justifying their presence in Tunisia, members of the middle class convinced they can continue practicing their profession under similar conditions, members of the intelligentsia wanting to contribute to the country's development, and individuals unable to find better opportunities abroad due to a lack of resources.
 [
-227
+223
 ]
 [
-229
+225
 ]
 In 1971, the assassination of a rabbi in the heart of the capital triggered a new wave of emigration.
 [
-81
+77
 ]
 The
 Yom Kippur War
@@ -3318,7 +3280,7 @@ by the
 Israeli Air Force
 on October 1, 1985, further spurred additional waves of emigration.
 [
-227
+223
 ]
 Several incidents also occurred, such as during
 Yom Kippur
@@ -3330,21 +3292,21 @@ Ben Gardane
 Djerba
 .
 [
-230
+226
 ]
 In October 1983, the
 Zarzis Synagogue
 was ravaged by a fire attributed by the Jewish community to extremist groups.
 [
-230
+226
 ]
 In 1985, a soldier guarding the Ghriba synagogue in Djerba opened fire on worshippers, killing five people, including four Jews.
 [
-231
+227
 ]
 According to Frédéric Lasserre and Aline Lechaume, the shooter was a policeman on duty outside a synagogue on the island who, officially described as acting "in a fit of madness," killed two worshippers and injured six.
 [
-227
+223
 ]
 Another incident occurred toward the end of President Bourguiba's tenure: the
 Club Med
@@ -3354,18 +3316,18 @@ was vandalized after an operator had vacationers sing the
 Israeli national anthem
 .
 [
-227
+223
 ]
 Following these incidents, the government implemented measures to protect the Jewish community.
 [
-232
+228
 ]
 [
-233
+229
 ]
 Following independence, a mixed picture emerged.
 [
-214
+210
 ]
 Arab Spring (post-2011)
 [
@@ -3385,15 +3347,15 @@ Rached Ghannouchi
 Djerba
 , assuring them that they have nothing to worry about in a democratic Tunisia, where the Islamists would play a larger role. He even sent gifts to the Jewish nursing homes in Tunis.
 [
-234
+230
 ]
 In November 2012, the community asked for the army's protection when a policeman was arrested after plotting to kidnap a young Jew for a ransom.
 [
-235
+231
 ]
 In 2011, the Israeli cabinet announced that it had allocated funding to help Tunisian Jews move to Israel due to growing manifestations of antisemitism and the difficult economic situation.
 [
-236
+232
 ]
 In January 2014, the Ennahda-led government voluntarily stepped aside and a transitional government, appointed to rule during the drafting of the
 new constitution
@@ -3408,22 +3370,22 @@ in
 Djerba
 were officially reinstated and maintained under heightened security measures.
 [
-237
+233
 ]
 [
-238
+234
 ]
 [
-239
+235
 ]
 Attendance remained low with an estimated 200 International visitors, shadowed by the 2023
 attack
 that killed two worshipers.
 [
-240
+236
 ]
 [
-241
+237
 ]
 Education and culture
 [
@@ -3437,11 +3399,11 @@ in the coastal city of
 Zarzis
 .  The Jewish community also has two homes for the aged. Tunisia's first Jewish museum opened in 2012.
 [
-242
+238
 ]
 In 2015, Tunis' last kosher restaurant closed due to security concerns.
 [
-243
+239
 ]
 Synagogues
 [
@@ -3458,7 +3420,7 @@ in the village of
 Hara Sghira
 on Djerba. The current building was constructed in late 19th or early 20th century, but the site is believed to have had a synagogue on it for the past 1,900 years.
 [
-244
+240
 ]
 Tunisian Jews have for centuries made an annual pilgrimage to the synagogue on
 Lag Ba'Omer
@@ -3474,6 +3436,26 @@ until his death on December 3, 2004. Memorial services were held at the Beit Mor
 La Goulette
 , Tunis, and the El Ghriba synagogue on the island of Djerba.
 [
+241
+]
+[
+242
+]
+[
+243
+]
+In May 2023, a Tunisian police officer
+killed four in a shooting
+near El Ghriba synagogue on Djerba, also the site of 2002's Ghriba synagogue bombing. An attacker fired a gun into a crowd visiting the house of worship during an annual pilgrimage event.
+[
+244
+]
+In October 2023, during pro-Palestine protests riots sparked by blame on Israel for the
+Al-Ahli Arab Hospital bombing
+, hundreds of rioters hammered away the building's walls, set fire and planted Palestinian flags at the site of a historic synagogue in Tunisia,
+El Hamma Synagogue
+, with videos showing people attacking it without police intervention.
+[
 245
 ]
 [
@@ -3482,25 +3464,42 @@ La Goulette
 [
 247
 ]
-In May 2023, a Tunisian police officer
-killed four in a shooting
-near El Ghriba synagogue on Djerba, also the site of 2002's Ghriba synagogue bombing. An attacker fired a gun into a crowd visiting the house of worship during an annual pilgrimage event.
+Genetic studies of Jews in Tunisia
+[
+edit
+]
+Main article:
+Genetic studies on Jews
+Numerous studies have been conducted on the genetics of Jews in general, on North African Jews in particular, and specifically on Jews of Tunisian origin.
 [
 248
 ]
-In October 2023, during pro-Palestine protests riots sparked by blame on Israel for the
-Al-Ahli Arab Hospital bombing
-, hundreds of rioters hammered away the building's walls, set fire and planted Palestinian flags at the site of a historic synagogue in Tunisia,
-El Hamma Synagogue
-, with videos showing people attacking it without police intervention.
 [
 249
 ]
 [
 250
 ]
+They conclude that "the closest genetic neighbors to most Jewish groups were the
+Palestinians
+,
+Bedouins
+, and
+Druze
+in addition to the Southern Europeans".
+[
+248
+]
+And that
+:
+The findings support the historical record of Middle Eastern Jews settling in North Africa during classical antiquity, converting non-Jews to Judaism and marrying local populations, thereby forming distinct populations that stayed largely intact for more than two millennia. [...] Two major subgroups within this overall population were identified – Moroccan/Algerian Jews and Djerban (Tunisian)/Libyan Jews. 
+The two subgroups varied in their degree of European mixture, with Moroccan/Algerian Jews tending to be more related to Europeans, which most likely resulted from the expulsion of Sephardi Jews from Spain during the Inquisition starting in 1492.
 [
 251
+]
+Furthermore, "The Tunisian Jews exhibited two apparent clusters—one with proximity to Libyan and Djerban Jews and the other proximal to the Moroccan and Algerian Jews."
+[
+249
 ]
 Films and documentaries
 [
@@ -3529,7 +3528,7 @@ See also
 edit
 ]
 History of the Jews in Africa
-Regions:
+Regions
 [
 edit
 ]
@@ -3538,7 +3537,7 @@ History of the Jews in East Africa
 History of the Jews in North Africa
 History of the Jews in Southern Africa
 History of the Jews in West Africa
-Topics:
+Topics
 [
 edit
 ]
@@ -3772,78 +3771,6 @@ doi
 .
 ISSN
 0951-8967
-.
-1
-2
-Kopelman NM, Stone L, Wang C, Gefel D, Feldman MW, Hillel J, Rosenberg NA (December 2009).
-"Genomic microsatellites identify shared Jewish ancestry intermediate between Middle Eastern and European populations"
-.
-BMC Genetics
-.
-10
-80.
-doi
-:
-10.1186/1471-2156-10-80
-.
-PMC
-2797531
-.
-PMID
-19995433
-.
-1
-2
-Ostrer H, Skorecki K (February 2013).
-"The population genetics of the Jewish people"
-.
-Human Genetics
-.
-132
-(2):
-119–
-131.
-doi
-:
-10.1007/s00439-012-1235-6
-.
-PMC
-3427049
-.
-PMID
-22359220
-.
-↑
-Campbell CL, Palamara PF, Dubrovsky M, Botigué LR, Fellous M, Atzmon G, Oddoux C, Pearlman A, Haber M, Ostrer H (August 2012).
-"North African Jewish and non-Jewish populations form distinctive, orthogonal clusters"
-.
-Proceedings of the National Academy of Sciences of the United States of America
-.
-109
-(34):
-13865–
-13870.
-Bibcode
-:
-2012PNAS..10913865C
-.
-doi
-:
-10.1073/pnas.1204840109
-.
-PMC
-3543766
-.
-PMID
-22869736
-.
-↑
-"Study completes genetic map of N. African Jews"
-.
-The Jerusalem Post
-. Retrieved
-December 8,
-2024
 .
 ↑
 Samama, Thierry (2020),
@@ -5383,6 +5310,78 @@ www.jewishrefugees.org.uk
 December 26,
 2024
 .
+1
+2
+Kopelman NM, Stone L, Wang C, Gefel D, Feldman MW, Hillel J, Rosenberg NA (December 2009).
+"Genomic microsatellites identify shared Jewish ancestry intermediate between Middle Eastern and European populations"
+.
+BMC Genetics
+.
+10
+80.
+doi
+:
+10.1186/1471-2156-10-80
+.
+PMC
+2797531
+.
+PMID
+19995433
+.
+1
+2
+Ostrer H, Skorecki K (February 2013).
+"The population genetics of the Jewish people"
+.
+Human Genetics
+.
+132
+(2):
+119–
+131.
+doi
+:
+10.1007/s00439-012-1235-6
+.
+PMC
+3427049
+.
+PMID
+22359220
+.
+↑
+Campbell CL, Palamara PF, Dubrovsky M, Botigué LR, Fellous M, Atzmon G, Oddoux C, Pearlman A, Haber M, Ostrer H (August 2012).
+"North African Jewish and non-Jewish populations form distinctive, orthogonal clusters"
+.
+Proceedings of the National Academy of Sciences of the United States of America
+.
+109
+(34):
+13865–
+13870.
+Bibcode
+:
+2012PNAS..10913865C
+.
+doi
+:
+10.1073/pnas.1204840109
+.
+PMC
+3543766
+.
+PMID
+22869736
+.
+↑
+"Study completes genetic map of N. African Jews"
+.
+The Jerusalem Post
+. Retrieved
+December 8,
+2024
+.
 ↑
 "The Jews of Djerba: A Pilgrimage to Ghriba"
 .
@@ -6018,7 +6017,7 @@ Major communal organizations
 American Sephardi Federation
 Sephardi Community Council
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=History_of_the_Jews_in_Tunisia&oldid=1368559839
+https://en.wikipedia.org/w/index.php?title=History_of_the_Jews_in_Tunisia&oldid=1375830513
 "
 Categories
 :
@@ -6031,7 +6030,6 @@ Short description is different from Wikidata
 Use mdy dates from May 2026
 "Related ethnic groups" needing confirmation
 Articles using infobox ethnic group with image parameters
-Pages using infobox ethnic group with deprecated parameters
 Pages using sidebar with the child parameter
 All articles with unsourced statements
 Articles with unsourced statements from December 2024

@@ -440,6 +440,7 @@ Fiji
 Kiribati
 Nauru
 New Zealand
+Niue
 Papua New Guinea
 Samoa
 Solomon Islands
