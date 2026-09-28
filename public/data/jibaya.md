@@ -69,6 +69,8 @@ Menu
 
 
 [ FR ](https://jibaya.tn/ "FR")
+## Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produits fabriqués localement avec leurs similaires importés.
+[ En savoir plus ](https://jibaya.tn/docs/note-commune-n05-commentaire-des-dispositions-de-larticle-60-de-la-loi-n-2025-17-du-12-decembre-2025-portant-loi-de-finances-pour-lannee-2026-relatives-a-lalign/)
 ## Avis: Nouvelles fonctionnalités à la plateforme TEJ
 [ En savoir plus ](https://jibaya.tn/blog/avis-nouvelles-fonctionnalites-a-la-plateforme-tej/)
 ## Nouveau !
@@ -80,6 +82,8 @@ Menu
 [ En savoir plus ](https://jibaya.tn/ar/docs/note-commune-n01-2026/)
 ## Note commune N°05: L’alignement de la fiscalité en matière de la taxe pour la protection de l’environnement de certains produits fabriqués localement avec leurs similaires importés.
 [ En savoir plus ](https://jibaya.tn/docs/note-commune-n05-commentaire-des-dispositions-de-larticle-60-de-la-loi-n-2025-17-du-12-decembre-2025-portant-loi-de-finances-pour-lannee-2026-relatives-a-lalign/)
+## Avis: Nouvelles fonctionnalités à la plateforme TEJ
+[ En savoir plus ](https://jibaya.tn/blog/avis-nouvelles-fonctionnalites-a-la-plateforme-tej/)
 ## Bienvenue dans le portail de l'administration fiscale tunisienne
 ## Choisissez l'espace qui vous convient
 ## Espace particulier
@@ -109,6 +113,11 @@ Dans le cadre de la poursuite de ses efforts de...
 [→](https://jibaya.tn/blog/avis-la-dgi-informe/)
 Load More
 [VOIR TOUS LES ARTICLES ->](https://jibaya.tn/actualites/)
+[ ](http://www.registre.finances.gov.tn/)
+[ ](http://www.gbo.tn/)
+[ ](https://www.douane.gov.tn/)
+[ ](https://www.registre-entreprises.tn/rne-public/#/)
+[ ](https://www.autoentrepreneur.tn/public/home)
 [ ](http://www.cimf.tn/)
 [ ](http://www.finances.gov.tn/fr)
 [ ](http://www.registre.finances.gov.tn/)
@@ -116,6 +125,11 @@ Load More
 [ ](https://www.douane.gov.tn/)
 [ ](https://www.registre-entreprises.tn/rne-public/#/)
 [ ](https://www.autoentrepreneur.tn/public/home)
+[ ](http://www.cimf.tn/)
+[ ](http://www.finances.gov.tn/fr)
+[ ](http://www.registre.finances.gov.tn/)
+[ ](http://www.gbo.tn/)
+[ ](https://www.douane.gov.tn/)
 ![](https://jibaya.tn/wp-content/uploads/2023/03/logo-jibaya-white-01.png)
 ## Accès rapide
   * [ Actualités et communiqués ](https://jibaya.tn/actualites/)

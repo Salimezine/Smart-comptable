@@ -734,7 +734,7 @@ zero-rated
 30
 ]
 US trade tariffs with major trading partners
-A country's national VAT may been seen as a
+A country's national VAT may be seen as a
 tariff
 on imported goods. The American Manufacturing Trade Action Coalition in the United States consider VAT charges on US products when VAT rebates are offered for products from other countries to be an
 unfair trade practice
@@ -4835,7 +4835,7 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1372238451
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1376520162
 "
 Categories
 :

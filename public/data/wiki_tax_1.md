@@ -2682,8 +2682,6 @@ No. 1 Carlton Gardens
 (official)
 Chevening
 (country house)
-Seat
-King Charles Street
 Nominator
 The Prime Minister
 Appointer
@@ -3330,4 +3328,7 @@ Dominions Office
 1925–1947
 Secretaries
 —
-Undersecret
+Undersecretaries
+India Office
+and
+Bu

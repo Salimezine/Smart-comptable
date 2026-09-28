@@ -2,9 +2,9 @@
   "title": "Economy of Tunisia - Wikipedia",
   "description": null,
   "url": "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
-  "crawled_at": "2026-09-21",
-  "markdown_length": 125196,
-  "links_found": 308,
+  "crawled_at": "2026-09-28",
+  "markdown_length": 168360,
+  "links_found": 545,
   "links": {
     "internal": [
       "https://en.wikipedia.org/wiki/Main_Page",
@@ -23,13 +23,24 @@
       "https://en.wikipedia.org/w/index.php?returnto=Economy+of+Tunisia&title=Special%3ACreateAccount",
       "https://en.wikipedia.org/w/index.php?returnto=Economy+of+Tunisia&title=Special%3AUserLogin",
       "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
+      "https://en.wikipedia.org/wiki/Special:CreateAccount?campaign=wtg-enUS-2025",
       "https://ar.wikipedia.org/wiki/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF_%D8%AA%D9%88%D9%86%D8%B3",
       "https://ast.wikipedia.org/wiki/Econom%C3%ADa_de_Tunicia",
-      "https://be.wikipedia.org/wiki/%D0%AD%D0%BA%D0%B0%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B0_%D0%A2%D1%83%D0%BD%D1%96%D1%81%D0%B0",
-      "https://ca.wikipedia.org/wiki/Economia_de_Tun%C3%ADsia"
+      "https://be.wikipedia.org/wiki/%D0%AD%D0%BA%D0%B0%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B0_%D0%A2%D1%83%D0%BD%D1%96%D1%81%D0%B0"
     ],
     "external": [
       "https://donate.wikimedia.org/?uselang=en&wmf_campaign=en.wikipedia.org&wmf_medium=sidebar&wmf_source=donate",
+      "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en",
+      "https://www.charitynavigator.org/ein/200049703",
+      "https://app.candid.org/profile/6971754/wikimedia-foundation-inc-20-0049703",
+      "https://wikimediafoundation.org/give/donor-frequently-asked-questions/",
+      "https://wikimediafoundation.org/give/",
+      "https://wikimediafoundation.org/give/manage-your-donation/",
+      "https://foundation.wikimedia.org/wiki/Policy:Donor_SMS_Supplementary_Terms",
+      "https://wikimediafoundation.org/annualreports/current/",
+      "https://wikimediafoundation.org/give/donor-advised-funds/",
+      "https://wikimediafoundation.org/give/individual-retirement-account/",
+      "https://wikimediafoundation.org/give/workplace-giving/",
       "https://www.wikidata.org/wiki/Special:EntityPage/Q2914386",
       "https://commons.wikimedia.org/wiki/Category:Economy_of_Tunisia",
       "https://www.imf.org/external/pubs/ft/weo/2019/01/weodata/weoselco.aspx?g=2200&sg=All+countries+%2F+Emerging+market+and+developing+economies",
@@ -37,18 +48,7 @@
       "https://www.worldometers.info/world-population/tunisia-population/locations=TN&name_desc=false",
       "https://www.imf.org/external/pubs/ft/weo/2023/02/weodata/weorept.aspx?a=&br=1&c=744&ds=.&ey=2021&grp=0&pr.x=35&pr.y=13&s=NGDPD%2CPPPGDP%2CNGDPDPC%2CPPPPC%2CPCPIPCH&scsm=1&sort=country&ssd=1&sy=2017",
       "https://www.statista.com/statistics/524575/share-of-economic-sectors-in-the-gdp-in-tunisia/",
-      "https://data.worldbank.org/country/TN",
-      "https://data.worldbank.org/indicator/SI.POV.NAHC?locations=TN",
-      "https://data.worldbank.org/indicator/SI.POV.UMIC?locations=TN",
-      "https://data.worldbank.org/indicator/SI.POV.GINI?locations=TN",
-      "https://hdr.undp.org/sites/default/files/Country-Profiles/TUN.pdf",
-      "http://hdr.undp.org/en/content/table-3-inequality-adjusted-human-development-index-ihdi",
-      "https://data.worldbank.org/indicator/SL.TLF.TOTL.IN?locations=TN",
-      "https://data.worldbank.org/indicator/SL.EMP.TOTL.SP.ZS?locations=TN",
-      "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=TN",
-      "https://data.worldbank.org/indicator/SL.UEM.1524.ZS",
-      "https://www.numbeo.com/cost-of-living/country_price_rankings?displayCurrency=USD&itemId=105",
-      "https://oec.world/en/visualize/tree_map/hs22/export/tun/show/all/2024"
+      "https://data.worldbank.org/country/TN"
     ]
   }
 }

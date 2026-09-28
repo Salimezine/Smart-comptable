@@ -806,7 +806,7 @@ Jump to content
 Search
 Search
 Israel
-291 languages
+292 languages
 Аԥсшәа
 Acèh
 Адыгабзэ
@@ -887,6 +887,7 @@ Føroyskt
 Français
 Arpetan
 Nordfriisk
+Furlan
 Frysk
 Gaeilge
 Gagauz
@@ -1171,9 +1172,6 @@ limited recognition
 )
 [
 fn 1
-]
-[
-8
 ]
 [
 fn 2
@@ -1765,7 +1763,7 @@ Arabic
 Dawlat Isrāʼīl
 ,
 [
-d
+
 
 ---
 

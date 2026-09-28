@@ -402,9 +402,9 @@ Général
   * [Pages liées](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Pages_li%C3%A9es/Tunisie "Liste des pages liées qui pointent sur celle-ci \[alt-j\]")
   * [Suivi des pages liées](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Suivi_des_liens/Tunisie "Liste des modifications récentes des pages appelées par celle-ci \[alt-k\]")
   * [Téléverser un fichier](https://fr.wikipedia.org/wiki/Aide:Importer_un_fichier "Téléverser des fichiers \[alt-u\]")
-  * [Lien permanent](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239471775 "Adresse permanente de cette version de cette page")
+  * [Lien permanent](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239737991 "Adresse permanente de cette version de cette page")
   * [Informations sur la page](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=info "Davantage d’informations sur cette page")
-  * [Citer cette page](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Citer&page=Tunisie&id=239471775&wpFormIdentifier=titleform "Informations sur la manière de citer cette page")
+  * [Citer cette page](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Citer&page=Tunisie&id=239737991&wpFormIdentifier=titleform "Informations sur la manière de citer cette page")
   * [Obtenir l'URL raccourcie](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:UrlShortener&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FTunisie)
   * [Utiliser l'ancien analyseur](https://fr.wikipedia.org/w/index.php?title=Tunisie&useparsoid=0)
   * [Tout développer](https://fr.wikipedia.org/wiki/Tunisie "Développer tous les éléments réductibles de la page actuelle")
@@ -1012,7 +1012,7 @@ Article détaillé: [Fêtes et jours fériés en Tunisie](https://fr.wikipedia.o
   69. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-71 "Revenir plus haut") Fethi Bejaoui, «La Carthage de saint Augustin», _[Connaissance des arts](https://fr.wikipedia.org/wiki/Connaissance_des_arts "Connaissance des arts")_ , no69 «Carthage (hors-série)»,‎ 1995, p.55 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[2102-5371](https://portal.issn.org/resource/ISSN/2102-5371)).
   70. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-72 "Revenir plus haut") (en) J. Patout Burns, Christianity in Roman Africa: The Development of Its Practices and Beliefs, Grand Rapids, Eerdmans, 2014, 670p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-1467440370](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-1467440370 "Spécial:Ouvrages de référence/978-1467440370")).
   71. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-73 "Revenir plus haut") (en) [W. H. C. Frend](https://fr.wikipedia.org/wiki/W._H._C._Frend?action=edit&redlink=1 "W. H. C. Frend \(page inexistante\)") [(en)](https://en.wikipedia.org/wiki/W.%20H.%20C.%20Frend "en:W. H. C. Frend")The Donatist Church: A Movement of Protest in Roman North Africa, Oxford, [Oxford University Press](https://fr.wikipedia.org/wiki/Oxford_University_Press "Oxford University Press"), 1952, 360p.
-  72. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-74 "Revenir plus haut") (en) [Brent Shaw](https://fr.wikipedia.org/wiki/Brent_Shaw "Brent Shaw")Sacred Violence: African Christians and Sectarian Hatred in the Age of Augustine, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 2011, 930p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521127257](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521127257 "Spécial:Ouvrages de référence/978-0521127257")).
+  72. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-74 "Revenir plus haut") (en) [Brent Shaw](https://fr.wikipedia.org/wiki/Brent_Shaw "Brent Shaw"), Sacred Violence: African Christians and Sectarian Hatred in the Age of Augustine, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 2011, 930p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521127257](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521127257 "Spécial:Ouvrages de référence/978-0521127257")).
   73. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-75 "Revenir plus haut") [Serge Lancel](https://fr.wikipedia.org/wiki/Serge_Lancel "Serge Lancel"), Saint Augustin, Paris, [Fayard](https://fr.wikipedia.org/wiki/Librairie_Arth%C3%A8me_Fayard "Librairie Arthème Fayard"), 1999, 792p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-2702831526](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2702831526 "Spécial:Ouvrages de référence/978-2702831526")).
   74. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-76 "Revenir plus haut") (en) David Rankin, Tertullian and the Church, Cambridge, [Cambridge University Press](https://fr.wikipedia.org/wiki/Cambridge_University_Press "Cambridge University Press"), 1995, 248p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number")[978-0521480673](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-0521480673 "Spécial:Ouvrages de référence/978-0521480673")).
   75. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-77 "Revenir plus haut") [Aïcha Ben Abed](https://fr.wikipedia.org/wiki/A%C3%AFcha_Ben_Abed "Aïcha Ben Abed"), «Carthage. Capitale de l'Africa», _[Connaissance des arts](https://fr.wikipedia.org/wiki/Connaissance_des_arts "Connaissance des arts")_ , no69 «Carthage (hors-série)»,‎ 1995, p.44 ([ISSN](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number "International Standard Serial Number")[2102-5371](https://portal.issn.org/resource/ISSN/2102-5371)).
@@ -1808,8 +1808,10 @@ ou non reconnus  |
 | États membres  | 
   * [Afghanistan](https://fr.wikipedia.org/wiki/Afghanistan "Afghanistan")
   * [Albanie](https://fr.wikipedia.org/wiki/Albanie "Albanie")
+  * [Algérie](https://fr.wikipedia.org/wiki/Alg%C3%A9rie "Algérie")
   * [Arabie saoudite](https://fr.wikipedia.org/wiki/Arabie_saoudite "Arabie saoudite")
   * [Azerbaïdjan](https://fr.wikipedia.org/wiki/Azerba%C3%AFdjan "Azerbaïdjan")
+  * [Bahreïn](https://fr.wikipedia.org/wiki/Bahre%C3%AFn "Bahreïn")
   * [Bangladesh](https://fr.wikipedia.org/wiki/Bangladesh "Bangladesh")
   * [Bénin](https://fr.wikipedia.org/wiki/B%C3%A9nin "Bénin")
   * [Brunei](https://fr.wikipedia.org/wiki/Brunei "Brunei")
@@ -1818,6 +1820,7 @@ ou non reconnus  |
   * [Comores](https://fr.wikipedia.org/wiki/Comores_\(pays\) "Comores \(pays\)")
   * [Côte d'Ivoire](https://fr.wikipedia.org/wiki/C%C3%B4te_d'Ivoire "Côte d'Ivoire")
   * [Djibouti](https://fr.wikipedia.org/wiki/Djibouti "Djibouti")
+  * [Égypte](https://fr.wikipedia.org/wiki/%C3%89gypte "Égypte")
   * [Émirats arabes unis](https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis "Émirats arabes unis")
   * [Gabon](https://fr.wikipedia.org/wiki/Gabon "Gabon")
   * [Gambie](https://fr.wikipedia.org/wiki/Gambie "Gambie")
@@ -1825,29 +1828,41 @@ ou non reconnus  |
   * [Guinée-Bissau](https://fr.wikipedia.org/wiki/Guin%C3%A9e-Bissau "Guinée-Bissau")
   * [Guyana](https://fr.wikipedia.org/wiki/Guyana "Guyana")
   * [Indonésie](https://fr.wikipedia.org/wiki/Indon%C3%A9sie "Indonésie")
+  * [Irak](https://fr.wikipedia.org/wiki/Irak "Irak")
   * [Iran](https://fr.wikipedia.org/wiki/Iran "Iran")
+  * [Jordanie](https://fr.wikipedia.org/wiki/Jordanie "Jordanie")
   * [Kazakhstan](https://fr.wikipedia.org/wiki/Kazakhstan "Kazakhstan")
   * [Kirghizistan](https://fr.wikipedia.org/wiki/Kirghizistan "Kirghizistan")
+  * [Koweït](https://fr.wikipedia.org/wiki/Kowe%C3%AFt "Koweït")
+  * [Liban](https://fr.wikipedia.org/wiki/Liban "Liban")
+  * [Libye](https://fr.wikipedia.org/wiki/Libye "Libye")
   * [Malaisie](https://fr.wikipedia.org/wiki/Malaisie "Malaisie")
   * [Maldives](https://fr.wikipedia.org/wiki/Maldives "Maldives")
   * [Mali](https://fr.wikipedia.org/wiki/Mali "Mali")
   * [Maroc](https://fr.wikipedia.org/wiki/Maroc "Maroc")
+  * [Mauritanie](https://fr.wikipedia.org/wiki/Mauritanie "Mauritanie")
   * [Mozambique](https://fr.wikipedia.org/wiki/Mozambique "Mozambique")
   * [Niger](https://fr.wikipedia.org/wiki/Niger "Niger")
   * [Nigeria](https://fr.wikipedia.org/wiki/Nigeria "Nigeria")
+  * [Oman](https://fr.wikipedia.org/wiki/Oman "Oman")
   * [Ouganda](https://fr.wikipedia.org/wiki/Ouganda "Ouganda")
   * [Ouzbékistan](https://fr.wikipedia.org/wiki/Ouzb%C3%A9kistan "Ouzbékistan")
   * [Pakistan](https://fr.wikipedia.org/wiki/Pakistan "Pakistan")
+  * [Palestine](https://fr.wikipedia.org/wiki/Palestine_\(%C3%89tat\) "Palestine \(État\)")
+  * [Qatar](https://fr.wikipedia.org/wiki/Qatar "Qatar")
   * [Sénégal](https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal "Sénégal")
   * [Sierra Leone](https://fr.wikipedia.org/wiki/Sierra_Leone "Sierra Leone")
   * [Somalie](https://fr.wikipedia.org/wiki/Somalie "Somalie")
+  * [Soudan](https://fr.wikipedia.org/wiki/Soudan "Soudan")
   * [Suriname](https://fr.wikipedia.org/wiki/Suriname "Suriname")
+  * [Syrie](https://fr.wikipedia.org/wiki/Syrie "Syrie")
   * [Tadjikistan](https://fr.wikipedia.org/wiki/Tadjikistan "Tadjikistan")
   * [Tchad](https://fr.wikipedia.org/wiki/Tchad "Tchad")
   * [Togo](https://fr.wikipedia.org/wiki/Togo "Togo")
   * [Tunisie](https://fr.wikipedia.org/wiki/Tunisie)
   * [Turkménistan](https://fr.wikipedia.org/wiki/Turkm%C3%A9nistan "Turkménistan")
   * [Turquie](https://fr.wikipedia.org/wiki/Turquie "Turquie")
+  * [Yémen](https://fr.wikipedia.org/wiki/Y%C3%A9men "Yémen")
 
  | [![](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/OIC_Logo_since_2011.svg/250px-OIC_Logo_since_2011.svg.png?utm_source=fr.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://commons.wikimedia.org/wiki/File:OIC_Logo_since_2011.svg?uselang=fr)  |  
 |  [[afficher]](javascript:) [v](https://fr.wikipedia.org/wiki/Mod%C3%A8le:Palette_Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole "Modèle:Palette Organisation des pays arabes exportateurs de pétrole")· [m](https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole&action=edit) [Organisation des pays arabes exportateurs de pétrole](https://fr.wikipedia.org/wiki/Organisation_des_pays_arabes_exportateurs_de_p%C3%A9trole "Organisation des pays arabes exportateurs de pétrole")  |  
@@ -2018,7 +2033,7 @@ de plein droit](https://fr.wikipedia.org/wiki/%C3%89tats_et_gouvernements_partic
 Cet article est reconnu comme «[article de qualité](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contenus_de_qualit%C3%A9 "Wikipédia:Contenus de qualité")» depuis sa [version du 6 décembre 2006](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=12327472) ([comparer avec la version actuelle](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=12327472&diff=cur)).   
 Pour toute information complémentaire, consulter sa [page de discussion](https://fr.wikipedia.org/wiki/Discussion:Tunisie "Discussion:Tunisie") et le [vote l'ayant promu](https://fr.wikipedia.org/wiki/Discussion:Tunisie/Article_de_qualit%C3%A9 "Discussion:Tunisie/Article de qualité").
 La version du 6 décembre 2006 de cet article a été reconnue comme «**article de qualité** », c'est-à-dire qu'elle répond à des critères de qualité concernant le style, la clarté, la pertinence, la citation des sources et l'illustration.
-Ce document provient de « [https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239471775](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239471775) ».
+Ce document provient de « [https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239737991](https://fr.wikipedia.org/w/index.php?title=Tunisie&oldid=239737991) ».
 [Catégorie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Accueil "Catégorie:Accueil") : 
   * [Tunisie](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Tunisie "Catégorie:Tunisie")
 
@@ -2029,7 +2044,6 @@ Catégories cachées :
   * [Page utilisant l'extension Phonos](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_l%27extension_Phonos "Catégorie:Page utilisant l'extension Phonos")
   * [Article utilisant une Infobox](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_utilisant_une_Infobox "Catégorie:Article utilisant une Infobox")
   * [Article contenant un appel à traduction en anglais](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_anglais "Catégorie:Article contenant un appel à traduction en anglais")
-  * [Page utilisant Lien pour un article existant](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_utilisant_Lien_pour_un_article_existant "Catégorie:Page utilisant Lien pour un article existant")
   * [Recension temporaire pour le modèle Ouvrage](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Recension_temporaire_pour_le_mod%C3%A8le_Ouvrage "Catégorie:Recension temporaire pour le modèle Ouvrage")
   * [Article contenant un appel à traduction en espagnol](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_espagnol "Catégorie:Article contenant un appel à traduction en espagnol")
   * [Catégorie Commons avec lien local identique sur Wikidata](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Cat%C3%A9gorie_Commons_avec_lien_local_identique_sur_Wikidata "Catégorie:Catégorie Commons avec lien local identique sur Wikidata")
@@ -2086,7 +2100,7 @@ Catégories cachées :
   * [Page avec des cartes](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Page_avec_des_cartes "Catégorie:Page avec des cartes")
 
 
-  * La dernière modification de cette page a été faite le 13 septembre 2026 à 22:18.
+  * La dernière modification de cette page a été faite le 23 septembre 2026 à 01:15.
   * La page a été rendue avec [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
   * [Droit d'auteur](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia "Wikipédia:Citation et réutilisation du contenu de Wikipédia") : les textes sont disponibles sous [licence Creative Commons attribution, partage dans les mêmes conditions](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; d’autres conditions peuvent s’appliquer. Voyez les [conditions d’utilisation](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/fr) pour plus de détails, ainsi que les [crédits graphiques](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Cr%C3%A9dits_graphiques "Wikipédia:Crédits graphiques"). En cas de réutilisation des textes de cette page, voyez [comment citer les auteurs et mentionner la licence](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Citer/Tunisie "Spécial:Citer/Tunisie").  
 Wikipedia® est une marque déposée de la [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), organisation de bienfaisance régie par le paragraphe [501(c)(3)](https://fr.wikipedia.org/wiki/501c "501c") du code fiscal des États-Unis.  

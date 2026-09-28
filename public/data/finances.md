@@ -32,6 +32,10 @@ Consultation publique portant sur le projet de la norme des comptes de l’Etat 
 Comptes Publics
 Le CNNCP organise une consultation publique sur le projet de la norme des comptes de l’Etat « L’état des flux de trésorerie »
 Avis et communiqués
+21 Septembre 2026
+-
+Concours de recrutement de la 45ème promotion de l'IEDF : liste des candidats tunisiens admissibles convoqués pour passer l’épreuve orale
+Concours de recrutement de la 45ème promotion de l'IEDF : liste des candidats tunisiens admissibles convoqués pour…
 12 Août 2026
 -
 Avis de consultation publique portant sur le projet de la norme des comptes des établissements publics soumis au code de la comptabilité publique « Les stocks »
@@ -44,10 +48,6 @@ Prolongation du délai de dépôt des candidatures pour le Choix des Administrat
 -
 Prolongation du délai de dépôt des candidatures pour le Choix des Administrateurs Représentant l’Etat et les  Participants Publics aux Conseils d’Administration des Banques Publiques
 Prolongation du délai de dépôt des candidatures pour le Choix des Administrateurs Représentant l’Etat et les…
-10 Avril 2026
--
-Choix des Administrateurs Représentant l’Etat et les  Participants Publics aux Conseils d’Administration des Banques Publiques / Avis
-Choix des Administrateurs Représentant l’Etat et les  Participants Publics aux Conseils d’Administration des Banques…
 Voir tous les communiqués
 Chiffres clés
 79624

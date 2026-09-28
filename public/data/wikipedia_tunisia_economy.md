@@ -50,19 +50,129 @@ This page is always in light mode.
   * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Economy+of+Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
 
 
+The internet's changing. 
+September 28: An important update for readers in the United States. 
+Thank you for visiting Wikipedia this Monday, September 28. This year, Wikipedia has seen fewer visitors and fewer new supporters, so your visit today means a lot. You only had a small chance of seeing our message. We don't take your attention for granted, but today we're asking you to give $2.75 if you can. 
+Like public libraries and food banks, we exist to serve everyone, not profit from your attention. That's why we don't run ads or put knowledge behind a paywall. Less than 2% of readers donate. If Wikipedia has given you at least $2.75 worth of knowledge, please give today. 
+Wikipedia is free to use, but not free to provide. An unprecedented rise in hardware costs is making the essential equipment needed to keep Wikipedia available to everyone much more expensive. Your donation helps our nonprofit meet those costs while keeping Wikipedia free and independent. Thank you. 
+Wikimedia Foundation
+Proud host of Wikipedia and other free knowledge projects 
+**Please select an amount ( USD)**. The average donation in the United States is around $13. Many first-time donors give $2.75. If you've never given, all that matters is that you're choosing to stand up for free, open information. For that, you have our gratitude.
+$2.75 $15 $25 $50 $100 $250 $500 Other 
+Maybe later 
+Thank you for joining the 2% of readers who give. 
+Your donation isn't just supporting a website; it's investing in the world's largest collaborative project of human intelligence—written by humans, for humans. Please join the small percentage of readers who give what they can to help keep Wikipedia strong and growing. Thank you. 
+Please select an amount (USD). The average donation in the United States is around $13. 
+  * $2.75
+  * $15
+  * $25
+  * $50
+  * $100
+  * $250
+  * $500
+  * Other ($) 
+
+How often would you like to donate?
+  * Once
+  * Monthly
+  * Yearly
+
+
+Support Wikipedia year-round
+Thanks for your generous support
+Please select a payment method
+Recommended
+Donate with Online Banking
+More of your donation goes to Wikimedia Foundation
+![Donate via Trustly](https://upload.wikimedia.org/wikipedia/donate/c/cb/Trustly_donate_wiki.png) ![Donate via Trustly](https://upload.wikimedia.org/wikipedia/donate/c/c2/Trustly_donate_wiki_dark.png)
+or
+Credit / Debit Card Visa Mastercard American Express JCB Discover
+PayPal
+Venmo
+Apple Pay
+Google Pay
+I'll generously add a little to cover the transaction fees so you can keep 100% of my donation. 
+Can we follow up and let you know if we need your help again? The support and advice we get from donors in the United States is priceless, but many donors don't let us stay in touch. Will you commit today, this Monday, to staying in touch with the Wikimedia Foundation?
+  * Yes 
+  * No 
+
+
+Sorry to hear that. We don't email often; would you consider changing your mind?
+Thanks for changing your mind! We’ll respect your inbox.
+We will send you email updates and tell you if the Wikimedia Foundation needs your support or advice in the future. Your information is handled in accordance with our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en). Each email you receive will include easy unsubscribe options. 
+Continue Donate one time Donate monthly Donate yearly
+Please select an amount (minimum $1)
+We cannot accept donations greater than 25000 USD through our website. Please contact our major gifts staff at benefactors@wikimedia.org.
+Please select a payment method
+Please select an email option
+Top-rated and trustworthy
+[ ![Charity Navigator Four Star](https://upload.wikimedia.org/wikipedia/donate/1/15/Charity-navigator.png) ](https://www.charitynavigator.org/ein/200049703) [ ![Platinum Transparency 2025 - Candid](https://upload.wikimedia.org/wikipedia/donate/6/6b/Candid-seal-platinum-2025.svg) ](https://app.candid.org/profile/6971754/wikimedia-foundation-inc-20-0049703)
+[Problems donating?](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#problems-donating) | [Frequently asked questions](https://wikimediafoundation.org/give/donor-frequently-asked-questions/) | [Where your donation goes](https://en.wikipedia.org/wiki/Economy_of_Tunisia) | [Other ways to give](https://wikimediafoundation.org/give/#ways-to-give)
+We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the [Wikimedia Foundation](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility) and its service providers in the USA and elsewhere. Donations to the Wikimedia Foundation are likely not tax-deductible outside the USA. We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en). The Wikimedia Foundation is a nonprofit, [tax-exempt organization](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the Wikimedia Foundation and its service providers in the U.S. and elsewhere. The Wikimedia Foundation is a recognized [public welfare institution (ANBI)](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). If you make a recurring donation, you will be debited by the Wikimedia Foundation until you notify us to stop. We’ll send you an email which will include a link to [easy cancellation instructions](https://wikimediafoundation.org/give/manage-your-donation/).
+Almost done: Please, make it monthly. 
+Monthly support is the best way to ensure that Wikipedia keeps thriving.
+No thanks! I'll make a one-time donation of  Yes, I'll donate each month  Yes, I'll donate monthly, but for a different amount 
+Thank you for your support!
+Enter your monthly donation amount
+Please select an amount (minimum $1)
+We cannot accept donations greater than 25000 USD through our website. Please contact our major gifts staff at benefactors@wikimedia.org.
+Donate monthly 
+[Problems donating?](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#problems-donating) | [Frequently asked questions](https://wikimediafoundation.org/give/donor-frequently-asked-questions/) | [Where your donation goes](https://en.wikipedia.org/wiki/Economy_of_Tunisia) | [Other ways to give](https://wikimediafoundation.org/give/#ways-to-give) | [I already donated](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
+We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the [Wikimedia Foundation](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility) and its service providers in the USA and elsewhere. Donations to the Wikimedia Foundation are likely not tax-deductible outside the USA. We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en). The Wikimedia Foundation is a nonprofit, [tax-exempt organization](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the Wikimedia Foundation and its service providers in the U.S. and elsewhere. The Wikimedia Foundation is a recognized [public welfare institution (ANBI)](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). If you make a recurring donation, you will be debited by the Wikimedia Foundation until you notify us to stop. We’ll send you an email which will include a link to [easy cancellation instructions](https://wikimediafoundation.org/give/manage-your-donation/).
+Sorry to interrupt, but we can't show this to everyone. In fact, only a small fraction will see it. Please, donate $2.75. 
+No, but maybe later when I have more time Yes, I'll donate $2.75
+How would you like to be reminded?
+Whether you give now or later, any contribution helps. We can send you an email or text message reminder to join the 2% of readers who donate.
+Send me an email Send me a text message
+Send me an email reminder 
+We’ll gladly send you an email reminder and get out of your way so you can get back to reading. 
+Email address Submit
+Please enter a valid email address i.e. name@domain.com 
+We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en). The Wikimedia Foundation is a nonprofit, [tax-exempt organization](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the Wikimedia Foundation and its service providers in the U.S. and elsewhere. The Wikimedia Foundation is a recognized [public welfare institution (ANBI)](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility). We never sell your information. By submitting, you are agreeing to our [donor privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Donor_privacy_policy?uselang=en) and to sharing your information with the [Wikimedia Foundation](https://wikimediafoundation.org/give/donor-frequently-asked-questions/#tax-deductibility) and its service providers in the USA and elsewhere. Donations to the Wikimedia Foundation are likely not tax-deductible outside the USA.
+Send me a reminder
+We’ll gladly send you a reminder and get out of your way so you can get back to reading.
+Mobile phone number I would like to receive text messages such as donation reminders and appeals from Wikimedia at the number I have provided.  Submit
+Please enter a valid phone number e.g. (201) 555-0123 
+Please check the box to consent to receive messages. 
+By participating, you consent to receive recurring updates through automated text messages from Wikimedia to the phone number you provide. Message frequency varies. For text messages, Msg&Data rates may apply. Text STOP to cancel or HELP for help. [Terms of Service and Privacy Policy.](https://foundation.wikimedia.org/wiki/Policy:Donor_SMS_Supplementary_Terms)
+Thank you! We will send you a reminder. 
+🎉 Thank you for donating recently! 🎉 
+![](https://upload.wikimedia.org/wikipedia/donate/4/43/Badge-one-time.png) ![](https://upload.wikimedia.org/wikipedia/donate/4/4f/Badge-monthly.png) ![](https://upload.wikimedia.org/wikipedia/donate/d/de/Badge-workplace-giving.png) ![](https://upload.wikimedia.org/wikipedia/donate/7/73/Badge-daf.png) ![](https://upload.wikimedia.org/wikipedia/donate/6/6a/Badge-cga.png) ![](https://upload.wikimedia.org/wikipedia/donate/8/81/Badge-endowment.png)
+Your support means the world to us. We'll hide banners in this browser for one month. 
+Close 
+Where your donation goes
+Accountability and transparency are core values at the Wikimedia Foundation. We manage funds and resources to ensure that every contribution supports our mission. We have earned the Platinum Seal of Transparency from Candid (formerly GuideStar), and Charity Navigator awarded us its highest rating. You can [read our most recent annual report](https://wikimediafoundation.org/annualreports/current/) for more information about our financial health. 
+45% $85.4M Technology 32% $60.7M Support 12% $22.8M Fundraising 11% $20.9M General $189.7M Total Funding
+45% Investment in Technology 
+Nearly half of our budget goes toward supporting the technology that powers Wikipedia and other Wikimedia projects. We are constantly working to enhance the user experience for both contributors and readers, improve site security, and ensure reliable access to our websites globally. This infrastructure and product support sustain one of the top ten most visited websites in the world, all at a fraction of the cost of popular for-profit websites. 
+32% Support for Volunteers 
+The global reach of Wikimedia projects is made possible by the hard work of volunteers from across the globe. We provide grants, legal support, and other resources to help build vibrant volunteer communities. Additionally, we promote community engagement through outreach initiatives and advocate for the growth and protection of free knowledge. 
+12% Allocation to Fundraising Efforts 
+Donor support is crucial to sustaining Wikipedia and our other free knowledge endeavors. Our team is committed to efficient and effective fundraising throughout the year, ensuring that every contribution helps advance our mission. 
+11% General and Administrative Expenses 
+Operational costs are essential for the smooth management and governance of the Wikimedia Foundation. These expenses help us recruit top talent and support staff around the world, empowering them to carry out the mission of the Wikimedia Foundation. 
+Other ways to give
+[ ![](https://upload.wikimedia.org/wikipedia/donate/7/73/Badge-daf.png) Donor-Advised Fund (DAF) Unlock tax benefits by directing your donation via your Donor-Advised Fund (DAF) ](https://wikimediafoundation.org/give/donor-advised-funds/) [ ![](https://upload.wikimedia.org/wikipedia/donate/a/ad/Badge-ira.png) Individual Retirement Account (IRA) Qualified Charitable Distributions from a tax efficient eligible IRA ](https://wikimediafoundation.org/give/individual-retirement-account/) [ ![](https://upload.wikimedia.org/wikipedia/donate/d/de/Badge-workplace-giving.png) Workplace Giving Involve your employer and increase the impact of your donation ](https://wikimediafoundation.org/give/workplace-giving/) [ ![](https://upload.wikimedia.org/wikipedia/donate/e/ed/WP20Symbols_MediaWiki.svg) Try Editing Wikipedia Editing Wikipedia is easier than you might think! You will get suggestions and help as you start. ](https://en.wikipedia.org/wiki/Special:CreateAccount?campaign=wtg-enUS-2025)
+[More ways to give](https://wikimediafoundation.org/give/#ways-to-give)
 ## Contents
 move to sidebar hide
   * [ (Top) ](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
   * [ 1 Historical trend ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Historical_trend)
-  * [ 2 External trade and investment ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#External_trade_and_investment) Toggle External trade and investment subsection
+  * [ 2 External trade and investment ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#External_trade_and_investment)
     * [ 2.1 Loan guarantee ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Loan_guarantee)
-  * [ 3 Energy ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Energy) Toggle Energy subsection
-    * [ 3.1 Electricity ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Electricity)
-  * [ 4 Economic structure ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Economic_structure) Toggle Economic structure subsection
-    * [ 4.1 Agriculture ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Agriculture)
-  * [ 5 See also ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#See_also)
-  * [ 6 References ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#References)
-  * [ 7 External links ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#External_links)
+  * [ 3 Sectors ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Sectors)
+    * [ 3.1 Agriculture ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Agriculture)
+    * [ 3.2 Mining ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Mining)
+    * [ 3.3 Tourism ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Tourism)
+  * [ 4 Infrastructure ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Infrastructure)
+    * [ 4.1 Energy ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Energy)
+    * [ 4.2 Electricity ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Electricity)
+    * [ 4.3 Transport ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Transport)
+    * [ 4.4 Telecommunications ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Telecommunications)
+  * [ 5 Economic structure ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#Economic_structure)
+  * [ 6 See also ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#See_also)
+  * [ 7 References ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#References)
+  * [ 8 External links ](https://en.wikipedia.org/wiki/Economy_of_Tunisia#External_links)
 
 
 # Economy of Tunisia
@@ -115,9 +225,9 @@ General
   * [What links here](https://en.wikipedia.org/wiki/Special:WhatLinksHere/Economy_of_Tunisia "List of all English Wikipedia pages containing links to this page \[alt-j\]")
   * [Related changes](https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Economy_of_Tunisia "Recent changes in pages linked from this page \[alt-k\]")
   * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[alt-u\]")
-  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1375990891 "Permanent link to this revision of this page")
+  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1376652199 "Permanent link to this revision of this page")
   * [Page information](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=info "More information about this page")
-  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1375990891&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1376652199&wpFormIdentifier=titleform "Information on how to cite this page")
   * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEconomy_of_Tunisia)
   * [Switch to legacy parser](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&useparsoid=0)
   * [Expand all](https://en.wikipedia.org/wiki/Economy_of_Tunisia "Expand all collapsible elements on the current page")
@@ -140,7 +250,14 @@ From Wikipedia, the free encyclopedia
 | --- | --- |  
 | ![](https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)  | This article **has an unclear[citation style](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources#Citation_style "Wikipedia:Citing sources")**. The references used may be made clearer with a different or consistent style of [citation](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources "Wikipedia:Citing sources") and [footnoting](https://en.wikipedia.org/wiki/Help:Footnotes "Help:Footnotes"). _( July 2022)__([Learn how and when to remove this message](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_  |  
 | --- | --- |  
-| [![icon](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Translation_to_english_arrow.svg/60px-Translation_to_english_arrow.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Translation_to_english_arrow.svg)  |  showYou can help **expand this article with text translated from[the corresponding article](https://fr.wikipedia.org/wiki/%C3%89conomie%20de%20la%20Tunisie "fr:Économie de la Tunisie") in French**. _(April 2026)_ Click [show] for important translation instructions.  |  
+| [![icon](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Translation_to_english_arrow.svg/60px-Translation_to_english_arrow.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Translation_to_english_arrow.svg)  |  showYou can help **expand this article with text translated from[the corresponding article](https://fr.wikipedia.org/wiki/%C3%89conomie%20de%20la%20Tunisie "fr:Économie de la Tunisie") in French**. _(April 2026)_ Click [show] for important translation instructions.
+  * Consider **[adding a topic](https://en.wikipedia.org/wiki/Template:Expand_French#Topics_and_categorization "Template:Expand French")** to this template: there are already 1,324 articles in the [main category](https://en.wikipedia.org/wiki/Category:Articles_needing_translation_from_French_Wikipedia "Category:Articles needing translation from French Wikipedia"), and specifying`|topic=` will aid in categorization.
+  * Do not translate text that appears unreliable or low-quality. If possible, verify the text with references provided in the foreign-language article.
+  * You **must** provide [copyright attribution](https://en.wikipedia.org/wiki/Wikipedia:Copying_within_Wikipedia "Wikipedia:Copying within Wikipedia") in the [edit summary](https://en.wikipedia.org/wiki/Help:Edit_summary "Help:Edit summary") accompanying your translation by providing an [interlanguage link](https://en.wikipedia.org/wiki/Help:Interlanguage_links "Help:Interlanguage links") to the source of your translation. A model attribution edit summary is `Content in this edit is translated from the existing French Wikipedia article at [[:Fr:Économie de la Tunisie]]; see its history for attribution.`
+  * You may also add the template `{{Translated|Fr|Économie de la Tunisie}}` to the [talk page](https://en.wikipedia.org/wiki/Talk:Economy_of_Tunisia "Talk:Economy of Tunisia").
+  * For more guidance, see [Wikipedia:Translation](https://en.wikipedia.org/wiki/Wikipedia:Translation "Wikipedia:Translation").
+
+ |  
 | --- | --- |  
 _([Learn how and when to remove this message](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_
  |  
@@ -383,32 +500,10 @@ The support would consist of the U.S. guarantee of Tunisian government-issued de
 The ceremony took place at the World Bank immediately following the meeting of Finance Ministers of the [Deauville Partnership with Arab Countries in Transition](https://en.wikipedia.org/wiki/Deauville_Partnership_with_Arab_Countries_in_Transition?action=edit&redlink=1 "Deauville Partnership with Arab Countries in Transition \(page does not exist\)").
 Microfinance institutions, such as Enda Tamweel, exist to assist those who are unable to access the regular banking system. This comprises those living in rural or impoverished regions where the informal sector thrives, accounting for 34% of Tunisia's GDP.[[40]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-:37-40)[[41]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-:38-41)
 Enda Tamweel has made over 3 million microloans to over 900,000 people in the 30 years since its inception, infusing more than €1.6 billion into the local economy.[[40]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-:37-40)[[41]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-:38-41)
-## Energy
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=4 "Edit section: Energy")]
-Main article: [Energy in Tunisia](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
-Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).[[42]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-42) As July 2026 multiple regional grid failure occurred as consequences of extreme high summer temperatures, exceeding 49°C, widespread forest fires damaging cables and sub-station, lack of proper maintenance of the grid and high demand overcoming national power generation capabilities.
-### Electricity
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=5 "Edit section: Electricity")]
-  * **Production:** 16.13 Billion kWh (2011)[[43]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-43)
-  * **Production by source:**
-    * _fossil fuel:_ 96.8% (2010)
-    * _hydro:_ 1.7% (2010)
-    * _other:_ 1.5% (2010)
-  * **Consumption:** 13.29 billion kWh (2010)
-  * **Exports:** None (2010)
-  * **Imports:** 19 million kWh (2010)
-
-
-## Economic structure
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=6 "Edit section: Economic structure")]
-In 2017, the breakdown by economic sector is as follows:  
-| Economy sector  | contribution to GDP  |  
-| --- | --- |  
-| **Agriculture**  | 10,1%  |  
-| **Industry**  | 26,2%  |  
-| **Services**  | 63,8%  |  
+## Sectors
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=4 "Edit section: Sectors")]
 ### Agriculture
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=7 "Edit section: Agriculture")]
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=5 "Edit section: Agriculture")]
 [![](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Sfax_oliviers.jpg/250px-Sfax_oliviers.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Sfax_oliviers.jpg)Olive grove in [Sfax](https://en.wikipedia.org/wiki/Sfax "Sfax"), Tunisia
 **Agriculture - products:** [olives](https://en.wikipedia.org/wiki/Olive "Olive"), [grain](https://en.wikipedia.org/wiki/Cereal "Cereal"), [tomatoes](https://en.wikipedia.org/wiki/Tomato "Tomato"), [citrus fruit](https://en.wikipedia.org/wiki/Citrus_fruit "Citrus fruit"), [sugar beets](https://en.wikipedia.org/wiki/Sugar_beet "Sugar beet"), [dates](https://en.wikipedia.org/wiki/Date_\(fruit\) "Date \(fruit\)"), [almonds](https://en.wikipedia.org/wiki/Almond "Almond").
 In 2018, Tunisia produced:
@@ -430,21 +525,71 @@ In 2018, Tunisia produced:
   * 102 thousand tons of [melon](https://en.wikipedia.org/wiki/Melon "Melon").
 
 
-In addition to smaller productions of other agricultural products, like [almond](https://en.wikipedia.org/wiki/Almond "Almond") (66 thousand tons) and [sugar beet](https://en.wikipedia.org/wiki/Sugar_beet "Sugar beet") (76 thousand tons).[[44]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-44)
+In addition to smaller productions of other agricultural products, like [almond](https://en.wikipedia.org/wiki/Almond "Almond") (66 thousand tons) and [sugar beet](https://en.wikipedia.org/wiki/Sugar_beet "Sugar beet") (76 thousand tons).[[42]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-42)
+### Mining
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=6 "Edit section: Mining")]
+Main article: [Mining industry of Tunisia](https://en.wikipedia.org/wiki/Mining_industry_of_Tunisia "Mining industry of Tunisia")
+This section is an excerpt from [Mining industry of Tunisia](https://en.wikipedia.org/wiki/Mining_industry_of_Tunisia "Mining industry of Tunisia").[[edit](https://en.wikipedia.org/w/index.php?title=Mining_industry_of_Tunisia&action=edit)]
+[![](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Zarzis2007_img_5821.jpg/250px-Zarzis2007_img_5821.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Zarzis2007_img_5821.jpg)[Salt evaporation pond](https://en.wikipedia.org/wiki/Salt_evaporation_pond "Salt evaporation pond") operations at [Zarzis](https://en.wikipedia.org/wiki/Zarzis "Zarzis")
+The [mining industry of Tunisia](https://en.wikipedia.org/wiki/Mining_industry_of_Tunisia "Mining industry of Tunisia") focuses mainly on [phosphate](https://en.wikipedia.org/wiki/Phosphate "Phosphate") products such as [fertilizer](https://en.wikipedia.org/wiki/Fertilizer "Fertilizer"), industrial minerals ([gypsum](https://en.wikipedia.org/wiki/Gypsum "Gypsum"), [clay](https://en.wikipedia.org/wiki/Clay "Clay"), [lime](https://en.wikipedia.org/wiki/Lime_\(material\) "Lime \(material\)")), [iron ore](https://en.wikipedia.org/wiki/Iron_ore "Iron ore"), and [salt](https://en.wikipedia.org/wiki/Salt "Salt"). Mine ownership is limited to the [Government of Tunisia](https://en.wikipedia.org/wiki/Government_of_Tunisia "Government of Tunisia"), although [operation by private entities](https://en.wikipedia.org/wiki/Subcontractor "Subcontractor") is encouraged.
+### Tourism
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=7 "Edit section: Tourism")]
+Main article: [Tourism in Tunisia](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia")
+This section is an excerpt from [Tourism in Tunisia](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia").[[edit](https://en.wikipedia.org/w/index.php?title=Tourism_in_Tunisia&action=edit)]
+[![](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/SidBS_%2847%29.JPG/250px-SidBS_%2847%29.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:SidBS_\(47\).JPG)[Sidi Bou Saïd](https://en.wikipedia.org/wiki/Sidi_Bou_Sa%C3%AFd "Sidi Bou Saïd"), a major tourist destination
+[Tourism in Tunisia](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia") is a major industry, attracting around 9.4 million arrivals annually from the year 2016 to 2020, making it one of the most visited countries in [Africa](https://en.wikipedia.org/wiki/Africa "Africa"). 
+Among Tunisia's tourist attractions are its cosmopolitan capital city of [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis"), the ancient ruins of [Carthage](https://en.wikipedia.org/wiki/Carthage "Carthage"), the Muslim and Jewish quarters of [Djerba](https://en.wikipedia.org/wiki/Djerba "Djerba"), and coastal resorts outside [Monastir](https://en.wikipedia.org/wiki/Monastir,_Tunisia "Monastir, Tunisia"). According to _[The New York Times](https://en.wikipedia.org/wiki/The_New_York_Times "The New York Times")_ , Tunisia is known for its "golden beaches, sunny weather, and affordable luxuries."[[43]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-43)
+## Infrastructure
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=8 "Edit section: Infrastructure")]
+### Energy
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=9 "Edit section: Energy")]
+Main article: [Energy in Tunisia](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
+Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).[[44]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-44) As July 2026 multiple regional grid failure occurred as consequences of extreme high summer temperatures, exceeding 49°C, widespread forest fires damaging cables and sub-station, lack of proper maintenance of the grid and high demand overcoming national power generation capabilities.
+### Electricity
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=10 "Edit section: Electricity")]
+  * **Production:** 16.13 Billion kWh (2011)[[45]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-45)
+  * **Production by source:**
+    * _fossil fuel:_ 96.8% (2010)
+    * _hydro:_ 1.7% (2010)
+    * _other:_ 1.5% (2010)
+  * **Consumption:** 13.29 billion kWh (2010)
+  * **Exports:** None (2010)
+  * **Imports:** 19 million kWh (2010)
+
+
+### Transport
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=11 "Edit section: Transport")]
+Main article: [Transport in Tunisia](https://en.wikipedia.org/wiki/Transport_in_Tunisia "Transport in Tunisia")
+This section is an excerpt from [Transport in Tunisia](https://en.wikipedia.org/wiki/Transport_in_Tunisia "Transport in Tunisia").[[edit](https://en.wikipedia.org/w/index.php?title=Transport_in_Tunisia&action=edit)]
+[![](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Autoroute_Tunis-Beja.jpg/250px-Autoroute_Tunis-Beja.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Autoroute_Tunis-Beja.jpg)[Autoroute A4](https://en.wikipedia.org/wiki/A4_motorway_\(Tunisia\) "A4 motorway \(Tunisia\)") on (May 2008)
+Tunisia has a number of international airports to service its sizable tourist trade. [Tunis](https://en.wikipedia.org/wiki/Tunis "Tunis") is the center of the transport system as the largest city having the largest port and a light transit system.
+### Telecommunications
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=12 "Edit section: Telecommunications")]
+Main article: [Telecommunications in Tunisia](https://en.wikipedia.org/wiki/Telecommunications_in_Tunisia "Telecommunications in Tunisia")
+This section is an excerpt from [Telecommunications in Tunisia](https://en.wikipedia.org/wiki/Telecommunications_in_Tunisia "Telecommunications in Tunisia").[[edit](https://en.wikipedia.org/w/index.php?title=Telecommunications_in_Tunisia&action=edit)]
+[Telecommunications in Tunisia](https://en.wikipedia.org/wiki/Telecommunications_in_Tunisia "Telecommunications in Tunisia") includes telephones (fixed and mobile), radio, television, and the Internet. The [Ministry of Communication Technologies](https://en.wikipedia.org/wiki/Ministry_of_Communication_Technologies_\(Tunisia\) "Ministry of Communication Technologies \(Tunisia\)"), a cabinet-level [governmental agency](https://en.wikipedia.org/wiki/Government_of_Tunisia "Government of Tunisia"), is in charge of organizing the sector.
+## Economic structure
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=13 "Edit section: Economic structure")]
+In 2017, the breakdown by economic sector is as follows:  
+| Economy sector  | contribution to GDP  |  
+| --- | --- |  
+| **Agriculture**  | 10,1%  |  
+| **Industry**  | 26,2%  |  
+| **Services**  | 63,8%  |  
 ## See also
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=8 "Edit section: See also")]
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=14 "Edit section: See also")]
   * [Economy of Africa](https://en.wikipedia.org/wiki/Economy_of_Africa "Economy of Africa")
   * [List of companies based in Tunisia](https://en.wikipedia.org/wiki/List_of_companies_based_in_Tunisia "List of companies based in Tunisia")
   * United Nations Economic Commission for: [Africa](https://en.wikipedia.org/wiki/United_Nations_Economic_Commission_for_Africa "United Nations Economic Commission for Africa") & [Western Asia](https://en.wikipedia.org/wiki/United_Nations_Economic_and_Social_Commission_for_Western_Asia "United Nations Economic and Social Commission for Western Asia")
 
 
 ## References
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=9 "Edit section: References")]
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=15 "Edit section: References")]
   1. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-1 "Jump up") ["World Economic Outlook Database, April 2019"](https://www.imf.org/external/pubs/ft/weo/2019/01/weodata/weoselco.aspx?g=2200&sg=All+countries+%2f+Emerging+market+and+developing+economies). _IMF.org_. [International Monetary Fund](https://en.wikipedia.org/wiki/International_Monetary_Fund "International Monetary Fund"). Retrieved 29 September 2019.
   2. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-2 "Jump up") ["World Bank Country and Lending Groups"](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups). _datahelpdesk.worldbank.org_. [World Bank](https://en.wikipedia.org/wiki/World_Bank "World Bank"). Retrieved 29 September 2019.
   3. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-3 "Jump up") ["Population, total - Tunisia"](https://www.worldometers.info/world-population/tunisia-population/locations=TN&name_desc=false). _data.worldbank.org_. [World Bank](https://en.wikipedia.org/wiki/World_Bank "World Bank"). Retrieved 3 October 2019.
-  4. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-2) [4](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-3) [5](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-4) ["World Economic Outlook Database, October 2025"](https://www.imf.org/external/pubs/ft/weo/2023/02/weodata/weorept.aspx?pr.x=35&pr.y=13&sy=2017&ey=2021&scsm=1&ssd=1&sort=country&ds=.&br=1&c=744&s=NGDPD%2CPPPGDP%2CNGDPDPC%2CPPPPC%2CPCPIPCH&grp=0&a=). _IMF.org_. Retrieved 18 October 2025.
-  5. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-2) [4](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-3) [5](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-4) [6](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-5) [7](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-6) [8](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-7) [9](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-8) [10](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-9) ["The World Factbook"](https://www.statista.com/statistics/524575/share-of-economic-sectors-in-the-gdp-in-tunisia/). _CIA.gov_. [Central Intelligence Agency](https://en.wikipedia.org/wiki/Central_Intelligence_Agency "Central Intelligence Agency"). Retrieved 12 May 2019.
+  4. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-2) [4](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-3) [5](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-IMFWEOTN_4-4) ["World Economic Outlook Database, October 2025"](https://www.imf.org/external/pubs/ft/weo/2023/02/weodata/weorept.aspx?pr.x=35&pr.y=13&sy=2017&ey=2021&scsm=1&ssd=1&sort=country&ds=.&br=1&c=744&s=NGDPD%2CPPPGDP%2CNGDPDPC%2CPPPPC%2CPCPIPCH&grp=0&a=). _IMF.org_. Retrieved 18 October 2025.
+  5. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-2) [4](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-3) [5](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-4) [6](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-5) [7](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-6) [8](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-7) [9](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-8) [10](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-CIAWFTS_5-9) ["The World Factbook"](https://www.statista.com/statistics/524575/share-of-economic-sectors-in-the-gdp-in-tunisia/). _CIA.gov_. [Central Intelligence Agency](https://en.wikipedia.org/wiki/Central_Intelligence_Agency "Central Intelligence Agency"). Retrieved 12 May 2019.
   6. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-6 "Jump up") ["Tunisia Data"](https://data.worldbank.org/country/TN). World Bank. Retrieved 21 August 2026.
   7. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-7 "Jump up") ["Poverty headcount ratio at national poverty lines (% of population) - Tunisia"](https://data.worldbank.org/indicator/SI.POV.NAHC?locations=TN). _data.worldbank.org_. World Bank. Retrieved 20 March 2020.
   8. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-8 "Jump up") ["Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population) - Tunisia"](https://data.worldbank.org/indicator/SI.POV.UMIC?locations=TN). _data.worldbank.org_. World Bank. Retrieved 20 March 2020.
@@ -456,10 +601,10 @@ In addition to smaller productions of other agricultural products, like [almond]
   14. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-WB_Unemployment_14-0 "Jump up") ["Unemployment, total (% of total labor force) (modeled ILO estimate) - Tunisia"](https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=TN). [World Bank](https://en.wikipedia.org/wiki/World_Bank "World Bank"). Retrieved 18 January 2026.
   15. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-c275_15-0 "Jump up") ["Unemployment, youth total (% of total labor force ages 15-24)"](https://data.worldbank.org/indicator/SL.UEM.1524.ZS). _World Bank Open Data_. 2026. Retrieved 15 June 2026.
   16. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-16 "Jump up") ["Rankings by Country of Average Monthly Net Salary (After Tax) (Salaries And Financing)"](https://www.numbeo.com/cost-of-living/country_price_rankings?itemId=105&displayCurrency=USD). _www.numbeo.com_.
-  17. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECexport_17-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECexport_17-1) ["Export partners of Tunisia"](https://oec.world/en/visualize/tree_map/hs22/export/tun/show/all/2024). The Observatory of Economic Complexity. Retrieved 4 February 2026.
-  18. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECimport_18-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECimport_18-1) ["Import partners of Tunisia"](https://oec.world/en/visualize/tree_map/hs22/import/tun/show/all/2024). The Observatory of Economic Complexity. Retrieved 4 February 2026.
+  17. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECexport_17-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECexport_17-1) ["Export partners of Tunisia"](https://oec.world/en/visualize/tree_map/hs22/export/tun/show/all/2024). The Observatory of Economic Complexity. Retrieved 4 February 2026.
+  18. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECimport_18-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-OECimport_18-1) ["Import partners of Tunisia"](https://oec.world/en/visualize/tree_map/hs22/import/tun/show/all/2024). The Observatory of Economic Complexity. Retrieved 4 February 2026.
   19. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-19 "Jump up") ["Sovereigns rating list"](http://www.standardandpoors.com/ratings/sovereigns/ratings-list/en/eu/?subSectorCode=39). Standard & Poor's. Retrieved 26 May 2011.
-  20. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-2) Rogers, Simon; Sedghi, Ami (15 April 2011). ["How Fitch, Moody's and S&P rate each country's credit rating"](https://www.theguardian.com/news/datablog/2010/apr/30/credit-ratings-country-fitch-moodys-standard). _The Guardian_. Retrieved 28 May 2011.
+  20. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-1) [3](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-guardian_20-2) Rogers, Simon; Sedghi, Ami (15 April 2011). ["How Fitch, Moody's and S&P rate each country's credit rating"](https://www.theguardian.com/news/datablog/2010/apr/30/credit-ratings-country-fitch-moodys-standard). _The Guardian_. Retrieved 28 May 2011.
   21. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-21 "Jump up") ["World Bank country classifications by income level for 2024-2025"](https://blogs.worldbank.org/en/opendata/world-bank-country-classifications-by-income-level-for-2024-2025). _World Bank Blogs_. Retrieved 9 July 2026.
   22. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-22 "Jump up") ["Economic and political overview in Tunisia"](https://international.groupecreditagricole.com/en/international-support/tunisia/economic-overview). _international.groupecreditagricole.com_. Retrieved 9 July 2026.
   23. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-23 "Jump up") ["World Bank Open Data"](https://data.worldbank.org/). _World Bank Open Data_. Retrieved 9 July 2026.
@@ -479,15 +624,16 @@ In addition to smaller productions of other agricultural products, like [almond]
   37. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-37 "Jump up") ["Treasury Secretary Geithner and Tunisian Finance Minister Dimassi Sign Declaration to Work Toward U.S. Loan Guarantee for Tunisia"](http://www.treasury.gov/press-center/press-releases/Pages/tg1542.aspx). U.S. Department of the Treasury. Retrieved 13 June 2012.
   38. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-38 "Jump up") [Timothy Geithner](https://en.wikipedia.org/wiki/Timothy_Geithner "Timothy Geithner")
   39. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-39 "Jump up") ["FAQs: U.S. Loan Guarantee for Tunisia"](http://content.govdelivery.com/attachments/USTREAS/2012/04/20/file_attachments/107830/Tunisia%2BFAQ.pdf) (PDF). U.S. Department of the Treasury. [Archived](https://web.archive.org/web/20140727043012/http://content.govdelivery.com/attachments/USTREAS/2012/04/20/file_attachments/107830/Tunisia%2BFAQ.pdf) (PDF) from the original on 27 July 2014. Retrieved 13 September 2012.
-  40. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:37_40-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:37_40-1) ["A helping hand for young entrepreneurs in Tunisia"](https://www.eib.org/en/stories/young-entrepreneurs-tunisia-microfinance). _European Investment Bank_. Retrieved 15 July 2021.
-  41. [1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:38_41-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:38_41-1) ["EBRD, Enda Tamweel and Attijari Bank supporting microfinance in Tunisia"](https://www.ebrd.com/news/2021/ebrd-enda-tamweel-and-attijari-bank-supporting-microfinance-in-tunisia-.html). _www.ebrd.com_. Retrieved 15 July 2021.
-  42. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-42 "Jump up") ["Tunisia Energy Situation - energypedia"](https://energypedia.info/wiki/Tunisia_Energy_Situation). _energypedia.info_. Retrieved 14 October 2021.
-  43. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-43 "Jump up") ["Nation Master"](http://www.nationmaster.com/country-info/profiles/Tunisia/Energy/All-stats).
-  44. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-44 "Jump up") [Tunisia production in 2018, by FAO](http://www.fao.org/faostat/en/#data/QC/)
+  40. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:37_40-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:37_40-1) ["A helping hand for young entrepreneurs in Tunisia"](https://www.eib.org/en/stories/young-entrepreneurs-tunisia-microfinance). _European Investment Bank_. Retrieved 15 July 2021.
+  41. [Jump up to: 1](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:38_41-0) [2](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-:38_41-1) ["EBRD, Enda Tamweel and Attijari Bank supporting microfinance in Tunisia"](https://www.ebrd.com/news/2021/ebrd-enda-tamweel-and-attijari-bank-supporting-microfinance-in-tunisia-.html). _www.ebrd.com_. Retrieved 15 July 2021.
+  42. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-42 "Jump up") [Tunisia production in 2018, by FAO](http://www.fao.org/faostat/en/#data/QC/)
+  43. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-43 "Jump up") Cite error: There are `<ref>` tags on this page without content in them (see the [help page](https://en.wikipedia.org/wiki/Help:Cite_errors/Cite_error_ref_no_input "Help:Cite errors/Cite error ref no input")).
+  44. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-44 "Jump up") ["Tunisia Energy Situation - energypedia"](https://energypedia.info/wiki/Tunisia_Energy_Situation). _energypedia.info_. Retrieved 14 October 2021.
+  45. [↑](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_ref-45 "Jump up") ["Nation Master"](http://www.nationmaster.com/country-info/profiles/Tunisia/Energy/All-stats).
 
 
 ## External links
-[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=10 "Edit section: External links")]
+[[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=16 "Edit section: External links")]
   * [Historic Growth Trend of Tunisia's Economy, 1962 – 2007](http://www.nawaat.org/portail/2009/04/10/historic-growth-trend-of-tunisias-economy-1962-2007/)
   * [Economy of Tunisia](http://lebanese-economy-forum.com/world-facts/show/ts-economy/) extracted from the CIA factbook public data
 
@@ -504,6 +650,78 @@ In addition to smaller productions of other agricultural products, like [almond]
 
 [Economy of Africa ](https://en.wikipedia.org/wiki/Economy_of_Africa "Economy of Africa")  |  
 | --- |  
+| Sovereign states  | 
+  * [Algeria](https://en.wikipedia.org/wiki/Economy_of_Algeria "Economy of Algeria")
+  * [Angola](https://en.wikipedia.org/wiki/Economy_of_Angola "Economy of Angola")
+  * [Benin](https://en.wikipedia.org/wiki/Economy_of_Benin "Economy of Benin")
+  * [Botswana](https://en.wikipedia.org/wiki/Economy_of_Botswana "Economy of Botswana")
+  * [Burkina Faso](https://en.wikipedia.org/wiki/Economy_of_Burkina_Faso "Economy of Burkina Faso")
+  * [Burundi](https://en.wikipedia.org/wiki/Economy_of_Burundi "Economy of Burundi")
+  * [Cameroon](https://en.wikipedia.org/wiki/Economy_of_Cameroon "Economy of Cameroon")
+  * [Cape Verde](https://en.wikipedia.org/wiki/Economy_of_Cape_Verde "Economy of Cape Verde")
+  * [Central African Republic](https://en.wikipedia.org/wiki/Economy_of_the_Central_African_Republic "Economy of the Central African Republic")
+  * [Chad](https://en.wikipedia.org/wiki/Economy_of_Chad "Economy of Chad")
+  * [Comoros](https://en.wikipedia.org/wiki/Economy_of_the_Comoros "Economy of the Comoros")
+  * [Democratic Republic of the Congo](https://en.wikipedia.org/wiki/Economy_of_the_Democratic_Republic_of_the_Congo "Economy of the Democratic Republic of the Congo")
+  * [Republic of the Congo](https://en.wikipedia.org/wiki/Economy_of_the_Republic_of_the_Congo "Economy of the Republic of the Congo")
+  * [Djibouti](https://en.wikipedia.org/wiki/Economy_of_Djibouti "Economy of Djibouti")
+  * [Egypt](https://en.wikipedia.org/wiki/Economy_of_Egypt "Economy of Egypt")
+  * [Equatorial Guinea](https://en.wikipedia.org/wiki/Economy_of_Equatorial_Guinea "Economy of Equatorial Guinea")
+  * [Eritrea](https://en.wikipedia.org/wiki/Economy_of_Eritrea "Economy of Eritrea")
+  * [Eswatini](https://en.wikipedia.org/wiki/Economy_of_Eswatini "Economy of Eswatini")
+  * [Ethiopia](https://en.wikipedia.org/wiki/Economy_of_Ethiopia "Economy of Ethiopia")
+  * [Gabon](https://en.wikipedia.org/wiki/Economy_of_Gabon "Economy of Gabon")
+  * [The Gambia](https://en.wikipedia.org/wiki/Economy_of_the_Gambia "Economy of the Gambia")
+  * [Ghana](https://en.wikipedia.org/wiki/Economy_of_Ghana "Economy of Ghana")
+  * [Guinea](https://en.wikipedia.org/wiki/Economy_of_Guinea "Economy of Guinea")
+  * [Guinea-Bissau](https://en.wikipedia.org/wiki/Economy_of_Guinea-Bissau "Economy of Guinea-Bissau")
+  * [Ivory Coast](https://en.wikipedia.org/wiki/Economy_of_Ivory_Coast "Economy of Ivory Coast")
+  * [Kenya](https://en.wikipedia.org/wiki/Economy_of_Kenya "Economy of Kenya")
+  * [Lesotho](https://en.wikipedia.org/wiki/Economy_of_Lesotho "Economy of Lesotho")
+  * [Liberia](https://en.wikipedia.org/wiki/Economy_of_Liberia "Economy of Liberia")
+  * [Libya](https://en.wikipedia.org/wiki/Economy_of_Libya "Economy of Libya")
+  * [Madagascar](https://en.wikipedia.org/wiki/Economy_of_Madagascar "Economy of Madagascar")
+  * [Malawi](https://en.wikipedia.org/wiki/Economy_of_Malawi "Economy of Malawi")
+  * [Mali](https://en.wikipedia.org/wiki/Economy_of_Mali "Economy of Mali")
+  * [Mauritania](https://en.wikipedia.org/wiki/Economy_of_Mauritania "Economy of Mauritania")
+  * [Mauritius](https://en.wikipedia.org/wiki/Economy_of_Mauritius "Economy of Mauritius")
+  * [Morocco](https://en.wikipedia.org/wiki/Economy_of_Morocco "Economy of Morocco")
+  * [Mozambique](https://en.wikipedia.org/wiki/Economy_of_Mozambique "Economy of Mozambique")
+  * [Namibia](https://en.wikipedia.org/wiki/Economy_of_Namibia "Economy of Namibia")
+  * [Niger](https://en.wikipedia.org/wiki/Economy_of_Niger "Economy of Niger")
+  * [Nigeria](https://en.wikipedia.org/wiki/Economy_of_Nigeria "Economy of Nigeria")
+  * [Rwanda](https://en.wikipedia.org/wiki/Economy_of_Rwanda "Economy of Rwanda")
+  * [São Tomé and Príncipe](https://en.wikipedia.org/wiki/Economy_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe "Economy of São Tomé and Príncipe")
+  * [Senegal](https://en.wikipedia.org/wiki/Economy_of_Senegal "Economy of Senegal")
+  * [Seychelles](https://en.wikipedia.org/wiki/Economy_of_Seychelles "Economy of Seychelles")
+  * [Sierra Leone](https://en.wikipedia.org/wiki/Economy_of_Sierra_Leone "Economy of Sierra Leone")
+  * [Somalia](https://en.wikipedia.org/wiki/Economy_of_Somalia "Economy of Somalia")
+  * [South Africa](https://en.wikipedia.org/wiki/Economy_of_South_Africa "Economy of South Africa")
+  * [South Sudan](https://en.wikipedia.org/wiki/Economy_of_South_Sudan "Economy of South Sudan")
+  * [Sudan](https://en.wikipedia.org/wiki/Economy_of_Sudan "Economy of Sudan")
+  * [Tanzania](https://en.wikipedia.org/wiki/Economy_of_Tanzania "Economy of Tanzania")
+  * [Togo](https://en.wikipedia.org/wiki/Economy_of_Togo "Economy of Togo")
+  * [Tunisia](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
+  * [Uganda](https://en.wikipedia.org/wiki/Economy_of_Uganda "Economy of Uganda")
+  * [Zambia](https://en.wikipedia.org/wiki/Economy_of_Zambia "Economy of Zambia")
+  * [Zimbabwe](https://en.wikipedia.org/wiki/Economy_of_Zimbabwe "Economy of Zimbabwe")
+
+ |  
+| States with limited  
+recognition  | 
+  * [Sahrawi Arab Democratic Republic](https://en.wikipedia.org/wiki/Economy_of_the_Sahrawi_Arab_Democratic_Republic "Economy of the Sahrawi Arab Democratic Republic")
+  * [Somaliland](https://en.wikipedia.org/wiki/Economy_of_Somaliland "Economy of Somaliland")
+
+ |  
+| Dependencies and  
+other territories  | 
+  * [Canary Islands](https://en.wikipedia.org/wiki/Economy_of_the_Canary_Islands "Economy of the Canary Islands")/ [Ceuta](https://en.wikipedia.org/wiki/Economy_of_Ceuta "Economy of Ceuta")/ [Melilla](https://en.wikipedia.org/wiki/Economy_of_Melilla "Economy of Melilla")(Spain)
+  * [Madeira](https://en.wikipedia.org/wiki/Economy_of_Madeira "Economy of Madeira")(Portugal)
+  * [Mayotte](https://en.wikipedia.org/wiki/Economy_of_Mayotte "Economy of Mayotte")/ [Réunion](https://en.wikipedia.org/wiki/Economy_of_R%C3%A9union "Economy of Réunion")(France)
+  * [Saint Helena](https://en.wikipedia.org/wiki/Economy_of_Saint_Helena "Economy of Saint Helena")/ [Ascension Island](https://en.wikipedia.org/wiki/Economy_of_Ascension_Island "Economy of Ascension Island")/ [Tristan da Cunha](https://en.wikipedia.org/wiki/Economy_of_Tristan_da_Cunha "Economy of Tristan da Cunha")(United Kingdom)
+  * [Western Sahara](https://en.wikipedia.org/wiki/Economy_of_Western_Sahara "Economy of Western Sahara")
+
+ |  
 |  show
   * [v](https://en.wikipedia.org/wiki/Template:Tunisia_topics "Template:Tunisia topics")
   * [t](https://en.wikipedia.org/wiki/Template_talk:Tunisia_topics "Template talk:Tunisia topics")
@@ -511,7 +729,164 @@ In addition to smaller productions of other agricultural products, like [almond]
 
 [Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia")articles  |  
 | --- |  
-Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1375990891](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1375990891)"
+| [History](https://en.wikipedia.org/wiki/History_of_Tunisia "History of Tunisia")  | 
+  * [Early history](https://en.wikipedia.org/wiki/History_of_early_Tunisia "History of early Tunisia")
+    * [Capsian culture](https://en.wikipedia.org/wiki/Capsian_culture "Capsian culture")
+  * [Ancient Carthage](https://en.wikipedia.org/wiki/Ancient_Carthage "Ancient Carthage")
+  * [Punic Wars](https://en.wikipedia.org/wiki/Punic_Wars "Punic Wars")
+    * [First War](https://en.wikipedia.org/wiki/First_Punic_War "First Punic War")
+    * [Second War](https://en.wikipedia.org/wiki/Second_Punic_War "Second Punic War")
+    * [Third War](https://en.wikipedia.org/wiki/Third_Punic_War "Third Punic War")
+  * [Byzantine Empire](https://en.wikipedia.org/wiki/Byzantine_Empire "Byzantine Empire")
+  * [Medieval history](https://en.wikipedia.org/wiki/History_of_medieval_Tunisia "History of medieval Tunisia")
+  * [Muslim conquest](https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Maghreb "Muslim conquest of the Maghreb")
+  * [Fatimid Caliphate](https://en.wikipedia.org/wiki/Fatimid_Caliphate "Fatimid Caliphate")
+  * [Hafsids](https://en.wikipedia.org/wiki/Hafsid_dynasty "Hafsid dynasty")
+  * [Regency of Tunis](https://en.wikipedia.org/wiki/Ottoman_Tunisia "Ottoman Tunisia")
+    * [Muradid](https://en.wikipedia.org/wiki/Muradid_dynasty "Muradid dynasty")
+    * [Husaynids](https://en.wikipedia.org/wiki/Husaynids "Husaynids")
+  * [French protectorate](https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia "French protectorate of Tunisia")
+    * [National movement](https://en.wikipedia.org/wiki/Tunisian_national_movement "Tunisian national movement")
+    * [Naturalization issue](https://en.wikipedia.org/wiki/Tunisian_naturalization_issue "Tunisian naturalization issue")
+    * [Protests of 9 April](https://en.wikipedia.org/wiki/1938_Tunisian_protests?action=edit&redlink=1 "1938 Tunisian protests \(page does not exist\)")
+    * [Tunisian campaign](https://en.wikipedia.org/wiki/Tunisian_campaign "Tunisian campaign")
+  * [Independence declaration](https://en.wikipedia.org/wiki/Tunisian_independence "Tunisian independence")
+  * [Kingdom of Tunisia](https://en.wikipedia.org/wiki/Kingdom_of_Tunisia "Kingdom of Tunisia")
+  * [Republic declaration](https://en.wikipedia.org/wiki/Kingdom_of_Tunisia#Declaration_of_the_republic "Kingdom of Tunisia")
+  * [1987 coup d'état](https://en.wikipedia.org/wiki/1987_Tunisian_coup_d'%C3%A9tat "1987 Tunisian coup d'état")
+  * [Tunisian revolution](https://en.wikipedia.org/wiki/Tunisian_revolution "Tunisian revolution")
+    * [2013–14 political crisis](https://en.wikipedia.org/wiki/2013%E2%80%932014_Tunisian_political_crisis "2013–2014 Tunisian political crisis")
+    * [2018 Tunisian protests](https://en.wikipedia.org/wiki/2018_Tunisian_protests "2018 Tunisian protests")
+    * [COVID-19 pandemic](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Tunisia "COVID-19 pandemic in Tunisia")
+    * [2021 Tunisian protests](https://en.wikipedia.org/wiki/2021_Tunisian_protests "2021 Tunisian protests")
+    * [25 July 2021 self-coup](https://en.wikipedia.org/wiki/2021_Tunisian_self-coup "2021 Tunisian self-coup")
+
+ |  
+| [Geography](https://en.wikipedia.org/wiki/Geography_of_Tunisia "Geography of Tunisia")  |   
+ | 
+  * Administrative divisions 
+    * [Governorates](https://en.wikipedia.org/wiki/Governorates_of_Tunisia "Governorates of Tunisia")
+    * [Cities](https://en.wikipedia.org/wiki/List_of_cities_in_Tunisia "List of cities in Tunisia")
+    * [Subdivisions](https://en.wikipedia.org/wiki/Subdivisions_of_Tunisia "Subdivisions of Tunisia")
+  * Regions 
+    * [North East](https://en.wikipedia.org/wiki/North_East_Tunisia "North East Tunisia")
+    * [North West](https://en.wikipedia.org/wiki/North_West_Tunisia "North West Tunisia")
+    * [Sahel](https://en.wikipedia.org/wiki/Sahel,_Tunisia "Sahel, Tunisia")
+    * [Central West](https://en.wikipedia.org/wiki/Central_West_Tunisia "Central West Tunisia")
+    * [South East](https://en.wikipedia.org/wiki/South_East_Tunisia "South East Tunisia")
+    * [Djerid](https://en.wikipedia.org/wiki/Djerid "Djerid")
+  * [Wildlife](https://en.wikipedia.org/wiki/Wildlife_of_Tunisia "Wildlife of Tunisia")
+    * [Ecoregions](https://en.wikipedia.org/wiki/List_of_ecoregions_in_Tunisia "List of ecoregions in Tunisia")
+  * [World Heritage Sites](https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Tunisia "List of World Heritage Sites in Tunisia")
+  * [Museums](https://en.wikipedia.org/wiki/List_of_museums_in_Tunisia "List of museums in Tunisia")
+  * [Demographics](https://en.wikipedia.org/wiki/Demographics_of_Tunisia "Demographics of Tunisia")
+    * [Tunisians](https://en.wikipedia.org/wiki/Tunisians "Tunisians")
+    * [Tunisian diaspora](https://en.wikipedia.org/wiki/Tunisian_diaspora "Tunisian diaspora")
+  * [Climate](https://en.wikipedia.org/wiki/Climate_of_Tunisia "Climate of Tunisia")
+
+ |  
+| --- |  
+ |  
+| [Politics](https://en.wikipedia.org/wiki/Politics_of_Tunisia "Politics of Tunisia")  |   
+ | 
+  * [President of the Republic](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia")
+    * [List](https://en.wikipedia.org/wiki/List_of_presidents_of_Tunisia "List of presidents of Tunisia")
+  * [Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Tunisia "Prime Minister of Tunisia")
+    * [List](https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Tunisia "List of prime ministers of Tunisia")
+    * [Cabinet](https://en.wikipedia.org/wiki/Hachani_Cabinet "Hachani Cabinet")
+  * [Constitution](https://en.wikipedia.org/wiki/Constitution_of_Tunisia "Constitution of Tunisia")
+    * [Fundamental Pact](https://en.wikipedia.org/wiki/Tunisian_Fundamental_Pact_of_1857 "Tunisian Fundamental Pact of 1857")
+    * [1861](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_1861 "Tunisian Constitution of 1861")
+    * [1959](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_1959 "Tunisian Constitution of 1959")
+    * [2014](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_2014 "Tunisian Constitution of 2014")
+    * [2022](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_2022 "Tunisian Constitution of 2022")
+  * [Foreign relations](https://en.wikipedia.org/wiki/Foreign_relations_of_Tunisia "Foreign relations of Tunisia")
+  * [Armed Forces](https://en.wikipedia.org/wiki/Tunisian_Armed_Forces "Tunisian Armed Forces")
+    * [Army](https://en.wikipedia.org/wiki/Tunisian_Army "Tunisian Army")
+    * [Air Force](https://en.wikipedia.org/wiki/Tunisian_Air_Force "Tunisian Air Force")
+    * [Navy](https://en.wikipedia.org/wiki/Tunisian_Navy "Tunisian Navy")
+  * [Parliament](https://en.wikipedia.org/wiki/Parliament_of_Tunisia "Parliament of Tunisia")
+    * [National Council of Regions and Districts](https://en.wikipedia.org/wiki/National_Council_of_Regions_and_Districts "National Council of Regions and Districts")
+    * [Assembly of the Representatives of the People](https://en.wikipedia.org/wiki/Assembly_of_the_Representatives_of_the_People "Assembly of the Representatives of the People")
+  * [Political parties](https://en.wikipedia.org/wiki/List_of_political_parties_in_Tunisia "List of political parties in Tunisia")
+  * [Elections](https://en.wikipedia.org/wiki/Elections_in_Tunisia "Elections in Tunisia")
+    * [Independent High Authority for Elections](https://en.wikipedia.org/wiki/Independent_High_Authority_for_Elections "Independent High Authority for Elections")
+
+ |  
+| --- |  
+ |  
+| [Economy](https://en.wikipedia.org/wiki/Economy_of_Tunisia)  |   
+ | 
+  * [Bourse de Tunis](https://en.wikipedia.org/wiki/Bourse_de_Tunis "Bourse de Tunis")
+    * [Central Bank of Tunisia](https://en.wikipedia.org/wiki/Central_Bank_of_Tunisia "Central Bank of Tunisia")
+    * [Tunisian dinar](https://en.wikipedia.org/wiki/Tunisian_dinar "Tunisian dinar")
+    * [Banking in Tunisia](https://en.wikipedia.org/wiki/Banking_in_Tunisia "Banking in Tunisia")
+  * [Agriculture](https://en.wikipedia.org/wiki/Agriculture_in_Tunisia "Agriculture in Tunisia")
+  * [Energy](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
+    * [Natural resources](https://en.wikipedia.org/wiki/Natural_resources_in_Tunisia?action=edit&redlink=1 "Natural resources in Tunisia \(page does not exist\)")
+    * [Water supply and sanitation](https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_Tunisia "Water supply and sanitation in Tunisia")
+  * [Tourism](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia")
+  * [Industry](https://en.wikipedia.org/wiki/Industry_in_Tunisia?action=edit&redlink=1 "Industry in Tunisia \(page does not exist\)")
+  * [Telecommunications](https://en.wikipedia.org/wiki/Telecommunications_in_Tunisia "Telecommunications in Tunisia")
+  * [Transport](https://en.wikipedia.org/wiki/Transport_in_Tunisia "Transport in Tunisia")
+    * [Roads](https://en.wikipedia.org/wiki/List_of_roads_in_Tunisia?action=edit&redlink=1 "List of roads in Tunisia \(page does not exist\)")
+    * [Rail transport](https://en.wikipedia.org/wiki/Rail_transport_in_Tunisia "Rail transport in Tunisia")
+  * [Traditional crafts](https://en.wikipedia.org/wiki/Tunisian_traditional_crafts?action=edit&redlink=1 "Tunisian traditional crafts \(page does not exist\)")
+  * [Major projects](https://en.wikipedia.org/wiki/Major_projects_in_Tunisia?action=edit&redlink=1 "Major projects in Tunisia \(page does not exist\)")
+
+ |  
+| --- |  
+ |  
+| [Society](https://en.wikipedia.org/wiki/Category:Society_of_Tunisia "Category:Society of Tunisia")  |   
+ | 
+  * [Education](https://en.wikipedia.org/wiki/Education_in_Tunisia "Education in Tunisia")
+    * [Baccalaureate](https://en.wikipedia.org/wiki/Tunisian_Baccalaureate "Tunisian Baccalaureate")
+    * [Higher education](https://en.wikipedia.org/wiki/Higher_education_in_Tunisia "Higher education in Tunisia")
+  * [Languages](https://en.wikipedia.org/wiki/Languages_of_Tunisia "Languages of Tunisia")
+    * [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic")
+  * [Media](https://en.wikipedia.org/wiki/Mass_media_in_Tunisia "Mass media in Tunisia")
+    * [Television](https://en.wikipedia.org/wiki/Television_in_Tunisia "Television in Tunisia")
+    * [Radio stations](https://en.wikipedia.org/wiki/List_of_radio_stations_in_Tunisia "List of radio stations in Tunisia")
+    * [Internet](https://en.wikipedia.org/wiki/Internet_in_Tunisia "Internet in Tunisia")
+    * [Newspapers](https://en.wikipedia.org/wiki/List_of_newspapers_in_Tunisia "List of newspapers in Tunisia")
+    * [Censorship](https://en.wikipedia.org/wiki/Censorship_in_Tunisia "Censorship in Tunisia")
+  * [Human rights](https://en.wikipedia.org/wiki/Human_rights_in_Tunisia "Human rights in Tunisia")
+    * [Abortion](https://en.wikipedia.org/wiki/Abortion_in_Tunisia "Abortion in Tunisia")
+    * [LGBT](https://en.wikipedia.org/wiki/LGBT_rights_in_Tunisia "LGBT rights in Tunisia")
+    * [Women](https://en.wikipedia.org/wiki/Women_in_Tunisia "Women in Tunisia")
+    * [Polygamy](https://en.wikipedia.org/wiki/Polygamy_in_Tunisia "Polygamy in Tunisia")
+  * [Religion](https://en.wikipedia.org/wiki/Religion_in_Tunisia "Religion in Tunisia")
+    * [Islam](https://en.wikipedia.org/wiki/Islam_in_Tunisia "Islam in Tunisia")
+    * [Christianity](https://en.wikipedia.org/wiki/Christianity_in_Tunisia "Christianity in Tunisia")
+    * [Judaism](https://en.wikipedia.org/wiki/History_of_the_Jews_in_Tunisia "History of the Jews in Tunisia")
+  * [Health](https://en.wikipedia.org/wiki/Health_in_Tunisia "Health in Tunisia")
+  * [Public holidays](https://en.wikipedia.org/wiki/Public_holidays_in_Tunisia "Public holidays in Tunisia")
+
+ |  
+| --- |  
+| [Culture](https://en.wikipedia.org/wiki/Culture_of_Tunisia "Culture of Tunisia")  | 
+  * Arts 
+    * [Cinema](https://en.wikipedia.org/wiki/Cinema_of_Tunisia "Cinema of Tunisia")
+    * [Music](https://en.wikipedia.org/wiki/Music_of_Tunisia "Music of Tunisia")
+    * [Literature](https://en.wikipedia.org/wiki/Tunisian_literature "Tunisian literature")
+  * [Sport](https://en.wikipedia.org/wiki/Sport_in_Tunisia "Sport in Tunisia")
+    * [Football](https://en.wikipedia.org/wiki/Football_in_Tunisia "Football in Tunisia")
+  * [Cuisine](https://en.wikipedia.org/wiki/Tunisian_cuisine "Tunisian cuisine")
+  * National symbols 
+    * [Flag](https://en.wikipedia.org/wiki/Flag_of_Tunisia "Flag of Tunisia")
+    * [National anthem](https://en.wikipedia.org/wiki/Humat_al-Hima "Humat al-Hima")
+    * [Coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia "Coat of arms of Tunisia")
+    * [Motto](https://en.wikipedia.org/wiki/Freedom,_Order,_Justice "Freedom, Order, Justice")
+
+ |  
+ |  
+| 
+  * ![](https://thumb.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/20px-Symbol_category_class.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) [Category](https://en.wikipedia.org/wiki/Category:Tunisia "Category:Tunisia")
+  * ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/20px-People_icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) [WikiProject](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tunisia "Wikipedia:WikiProject Tunisia")
+  * [![](https://thumb.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Commons-logo.svg "Commons page") [Commons](https://commons.wikimedia.org/wiki/Category:Tunisia "commons:Category:Tunisia")
+
+ |  
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1376652199](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1376652199)"
 [Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 
   * [African Union member economies](https://en.wikipedia.org/wiki/Category:African_Union_member_economies "Category:African Union member economies")
   * [Economy of Tunisia](https://en.wikipedia.org/wiki/Category:Economy_of_Tunisia "Category:Economy of Tunisia")
@@ -532,9 +907,11 @@ Hidden categories:
   * [Articles with multiple maintenance issues](https://en.wikipedia.org/wiki/Category:Articles_with_multiple_maintenance_issues "Category:Articles with multiple maintenance issues")
   * [Use dmy dates from April 2026](https://en.wikipedia.org/wiki/Category:Use_dmy_dates_from_April_2026 "Category:Use dmy dates from April 2026")
   * [Articles containing Tunisian Arabic-language text](https://en.wikipedia.org/wiki/Category:Articles_containing_Tunisian_Arabic-language_text "Category:Articles containing Tunisian Arabic-language text")
+  * [Articles with excerpts](https://en.wikipedia.org/wiki/Category:Articles_with_excerpts "Category:Articles with excerpts")
+  * [Pages with reference errors](https://en.wikipedia.org/wiki/Category:Pages_with_reference_errors "Category:Pages with reference errors")
 
 
-  * This page was last edited on 21 September 2026, at 09:00 (UTC).
+  * This page was last edited on 25 September 2026, at 13:17 (UTC).
   * Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
   * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
 
