@@ -1,9 +1,9 @@
 {
   "source": "wikipedia_tunisia_economy",
-  "crawled_at": "2026-09-28",
+  "crawled_at": "2026-10-05",
   "taux": {
     "rs": {
-      "taux": "2%, 2%, 100%, 2%, 45%",
+      "taux": "8%, 3%, 3%, 2.5%, 2.1%",
       "label": "Retenues à la source",
       "type": "rs"
     }

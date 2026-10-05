@@ -47,6 +47,7 @@ Cette page est toujours en mode clair.
   * [ Se connecter](https://fr.wikipedia.org/w/index.php?title=Sp%C3%A9cial:Connexion&returnto=Tunisie "Nous vous encourageons à vous connecter ; ce n’est cependant pas obligatoire. \[alt-o\]")
 
 
+[ Wiki Loves Monuments : photographiez un monument historique, aidez Wikipédia et gagnez ! En apprendre plus ![](https://fr.wikipedia.org/wiki/Tunisie) ](https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2026_in_the_United_States)
 ## Sommaire
 déplacer vers la barre latérale masquer
   * [ Début ](https://fr.wikipedia.org/wiki/Tunisie)

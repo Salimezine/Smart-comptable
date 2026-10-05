@@ -1388,9 +1388,13 @@ Tunisian Arabic
 is the most spoken language, and
 French
 serves as an administrative and educational language in some contexts, but has no official status.
-Beginning in early antiquity, Tunisia was inhabited by the indigenous
+Beginning in early antiquity, Tunisia was inhabited by the indigenous Numidian people who were later subsumed by the Amazighs or
 Berbers
-. The
+.
+[
+27
+]
+The
 Phoenicians
 , a
 Semitic people
@@ -1430,7 +1434,7 @@ tribes in the 11th-12th centuries accelerated this process. By around the 15th c
 Arabised
 .
 [
-27
+28
 ]
 Then, in 1546, the
 Ottoman Empire
@@ -1453,11 +1457,11 @@ movement across the region. Free multiparty parliamentary
 elections
 were held shortly thereafter; the country again voted for parliament on 26 October 2014,
 [
-28
+29
 ]
 and for president on 23 November 2014.
 [
-29
+30
 ]
 From 2014 to 2020, it was considered the only democratic state in the
 Arab world
@@ -1465,7 +1469,7 @@ Arab world
 The Economist Democracy Index
 .
 [
-30
+31
 ]
 [
 d
@@ -1478,13 +1482,13 @@ Kais Saied
 hybrid regime
 in 2022
 [
-31
+32
 ]
 and as of 2025 it no longer has free and fair elections according to
 Freedom House
 .
 [
-32
+33
 ]
 It is one of the few countries in Africa ranking high on the
 Human Development Index
@@ -1517,10 +1521,10 @@ and
 Italy
 ,
 [
-33
+34
 ]
 [
-34
+35
 ]
 due to their geographical proximity. Tunisia also has an
 association agreement
@@ -1548,10 +1552,10 @@ French
 Tunisie
 ,
 [
-35
+36
 ]
 [
-36
+37
 ]
 in turn generally associated with the
 Berber
@@ -1561,24 +1565,24 @@ root
 tns
 , which means "to lay down" or "encampment".
 [
-37
+38
 ]
 It is sometimes also associated with the
 Carthage goddess
 Tanith
 (or Tunit),
 [
-35
+36
 ]
-[
-38
-]
-and the ancient city of Tynes.
 [
 39
 ]
+and the ancient city of Tynes.
 [
 40
+]
+[
+41
 ]
 The French derivative
 Tunisie
@@ -1595,9 +1599,9 @@ Arabic
 تونس
 , and only by context can one tell the difference.
 [
-35
+36
 ]
-In English, Tunisia before independence was also often called simply "Tuni
+In Engli
 
 ---
 

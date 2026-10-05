@@ -64,7 +64,7 @@ Protectorat français de Tunisie
 (
 French
 )
-الحماية الفرنسية بتونس
+الحماية الفرنسية في تونس
 (
 Arabic
 )
@@ -157,7 +157,10 @@ Protectorat français de Tunisie
 Arabic
 :
 الحماية الفرنسية في تونس
-al-ḥimāya al-Fransīya fī Tūnis
+,
+romanized
+:
+al-Ḥimāya al-Faransiyya fī Tūnis
 ), officially the
 Regency of Tunis
 [
@@ -1823,7 +1826,7 @@ Yale LUX
 /
 36.8333; 10.1500
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1371089262
+https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1378198947
 "
 Categories
 :
@@ -3264,20 +3267,6 @@ Etymology
 [
 edit
 ]
-Tunis
-is the transcription of the
-Arabic
-name
-تونس
-which can be pronounced as "Tūnus", "Tūnas", or "Tūnis". All three variations were mentioned by the 12th-century
-Arab
-geographer
-Yaqut al-Hamawi
-in his
-Mu'jam al-Bûldan
-(
-Dictionary of Countries
-).
 Different explanations exist for the origin of the name
 Tunis
 . Some scholars relate it to the Carthaginian goddess
@@ -3520,4 +3509,17 @@ Aghlabids
 18
 ]
 and was briefly the national capital from the end of the reign of
-I
+Ibrahim II
+, from 902 until 909,
+[
+20
+]
+when control over
+Ifriqiya
+was handed to the newly founded
+Fatimid Caliphate
+.
+Local opposition to the authorities began to intensify in September 945, when
+Kharijite
+insurgents
+occupied Tunis, resulting in gen

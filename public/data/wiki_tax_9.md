@@ -4835,7 +4835,7 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1376520162
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1378038240
 "
 Categories
 :
@@ -5879,6 +5879,7 @@ Quesnay
 Ramsey
 Ricardo
 Robinson
+Romer
 Samuelson
 Sargent
 Smith
@@ -6085,7 +6086,7 @@ Contractionary fiscal policy
 recession
 and
 unemployment
-above the
+abo
 
 ---
 

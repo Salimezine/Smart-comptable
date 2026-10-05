@@ -699,7 +699,7 @@ Unreferenced
 }
 –  typically placed by the code you would see when wikitext (source) editing:
 {{Unreferenced|date=
-September
+October
 2026
 }}
 .
@@ -739,7 +739,7 @@ scholar
 ·
 JSTOR
 (
-September 2026
+October 2026
 )
 (
 Learn how and when to remove this message
@@ -866,7 +866,7 @@ Delete the template:
 If you are editing using VisualEditor
 : Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
 If you are editing wikitext ("source" editing)
-: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the exam
+: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example 
 
 ---
 
