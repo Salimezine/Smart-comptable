@@ -1,3106 +1,6498 @@
-Economy of Tunisia - Wikipedia
+Value-added tax - Wikipedia
 Jump to content
 Search
 Search
-Economy of Tunisia
-23 languages
+Value-added tax
+81 languages
+Afrikaans
+Alemannisch
 العربية
-Asturianu
+Azərbaycanca
+Башҡортса
+Беларуская (тарашкевіца)
 Беларуская
+Български
+বাংলা
+Brezhoneg
+Bosanski
 Català
-کوردی
+Čeština
+Чӑвашла
+Cymraeg
+Dansk
 Deutsch
+Ελληνικά
+Esperanto
 Español
+Eesti
+Euskara
 فارسی
+Suomi
 Français
+Gaeilge
 Galego
 עברית
+हिन्दी
+Hrvatski
+Magyar
 Հայերեն
+Interlingua
 Bahasa Indonesia
 Ido
+Íslenska
 Italiano
+日本語
+ქართული
+Қазақша
 한국어
+Кыргызча
+Lëtzebuergesch
+Ladin
+Lombard
+ລາວ
 Lietuvių
+Latviešu
+Македонски
+മലയാളം
 Bahasa Melayu
-Occitan
+नेपाली
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+ਪੰਜਾਬੀ
+Papiamentu
+Polski
+پښتو
 Português
+Română
 Русский
+Sardu
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Sunda
+Svenska
+தமிழ்
+Тоҷикӣ
+ไทย
 Türkçe
+Татарча / tatarça
 Українська
+Oʻzbekcha / ўзбекча
+Tiếng Việt
+Walon
+吴语
+中文
 Edit links
 From Wikipedia, the free encyclopedia
-This article has multiple issues.
-Please help
-improve it
-or discuss these issues on the
-talk page
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+Form of consumption tax
+"VAT" redirects here. For the identifier for value-added tax, see
+VAT identification number
+. For other uses, see
+Vat
 .
+A map of countries and territories by their VAT status, 2025
+No VAT
+VAT
+A
+value-added tax
 (
-Learn how and when to remove these messages
-)
-This article needs to be
-updated
-.
-Please help update this article to reflect recent events or newly available information.
+VAT
+),
+goods and services tax
 (
-July 2022
-)
-This article
-has an unclear
-citation style
-.
-The references used may be made clearer with a different or consistent style of
-citation
-and
-footnoting
-.
+GST
+), or
+general consumption tax
 (
-July 2022
-)
-(
-Learn how and when to remove this message
-)
-You can help
-expand this article with text translated from
-the corresponding article
-in French
-.
-(April 2026)
-Click [show] for important translation instructions.
-Consider
-adding a topic
-to this template: there are already 1,342 articles in the
-main category
-, and specifying
-|
-topic
-=
-will aid in categorization.
-Do not translate text that appears unreliable or low-quality. If possible, verify the text with references provided in the foreign-language article.
-You
-must
-provide
-copyright attribution
-in the
-edit summary
-accompanying your translation by providing an
-interlanguage link
-to the source of your translation. A model attribution edit summary is
-Content in this edit is translated from the existing French Wikipedia article at [[:Fr:Économie de la Tunisie]]; see its history for attribution.
-You may also add the template
-{{Translated|Fr|Économie de la Tunisie}}
-to the
-talk page
-.
-For more guidance, see
-Wikipedia:Translation
-.
-(
-Learn how and when to remove this message
-)
-Economy of
-Tunisia
-Amen Bank, one of the biggest banks in the country
-Currency
-Tunisian dinar
-(TND,
-د.ت
-)
-Fiscal year
-Calendar year
-Trade organisations
-African Union
-,
-AfCFTA
-(signed),
-WTO
-,
-COMESA
-,
-CEN-SAD
-,
-AMU
-Country group
-Developing/Emerging
+GCT
+) is a consumption tax that is levied on the value added at each stage of a product's production and distribution. VAT is similar to, and is often compared with, a
+sales tax
+. VAT is an
+indirect tax
+because individuals do not pay it directly to the government; instead, suppliers act as intermediaries by collecting the tax from customers at the point of sale and remitting it to the government. Specific goods and services are typically exempted in various jurisdictions.
+Products exported to other countries are typically exempted from the tax, typically via a rebate to the exporter. VAT is usually implemented as a destination-based tax, with the tax rate determined by the customer's location. VAT raises about a fifth of total tax revenues worldwide and among the members of the
+Organisation for Economic Co-operation and Development
+(OECD).
 [
 1
 ]
-Lower-middle income economy
+:
+14
+As of January 2025, 175 of the
+193 countries
+with UN membership employ a VAT, including all OECD members except the
+United States
+.
+[
+1
+]
+:
+14
+History
+[
+edit
+]
+German industrialist
+Georg Wilhelm von Siemens
+proposed the concept of a value-added tax in 1918 to replace the German
+turnover tax
+. However, the turnover tax was not replaced until 1968.
 [
 2
 ]
-Statistics
-Population
-12,386,642 (2025)
+The modern variation of VAT was first implemented by
+Maurice Lauré
+, joint director of the French tax authority, who implemented VAT on 10 April 1954 in France's
+Ivory Coast
+colony. Assessing the experiment as successful, France introduced it domestically in 1958.
 [
 3
 ]
-GDP
-$60.43 billion (nominal est, 2026)
+Initially directed at large businesses, it was extended over time to include all business sectors. In France it is the largest source of state finance, accounting for nearly 50% of state revenues.
 [
 4
 ]
-$193.55 billion (
-PPP
-, 2026)
-[
-4
-]
-GDP rank
-89st (nominal, 2026)
-84st (PPP, 2026)
-GDP growth
-2.5%
-(2025)
-2.1%
-(2026e)
-1.6%
-(2027f)
-[
-4
-]
-GDP per capita
-$4,826 (nominal, est, 2026)
-[
-4
-]
-$15,456 (PPP, 2026)
-[
-4
-]
-GDP per capita
-rank
-123st (nominal, 2026)
-112st (PPP, 2026)
-GDP by sector
-agriculture
-:
-10.05%
-industry
-:
-21.69%
-services
-:
-68.26%
-(2020)
+A Belgian VAT receipt
+Following creation of the
+European Economic Community
+in 1957, the Fiscal and Financial Committee set up by the
+European Commission
+in 1960 under the chairmanship of Professor
+Fritz Neumark
+made its priority objective the elimination of distortions to competition caused by disparities in national indirect tax systems.
 [
 5
 ]
-Inflation
-(
-CPI
-)
-5.2% (2025)
 [
 6
 ]
-Population below national
-poverty line
-15.2% (2015)
+The Neumark Report published in 1962 concluded that France's VAT model would be the simplest and most effective indirect tax system. This led to the EEC issuing two VAT directives, adopted in April 1967, providing a blueprint for introducing VAT across the EEC, following which, other member states (initially Belgium, Italy, Luxembourg, the Netherlands and West Germany) introduced VAT.
+[
+2
+]
+Implementation
+[
+edit
+]
+VAT can be accounts-based or invoice-based.
 [
 7
 ]
-17.5% on less than $5.50/day (2015)
+All VAT-collecting countries except Japan use the invoice method.
 [
 8
 ]
-Gini coefficient
-33.7
-medium
-(2021)
 [
 9
 ]
-Human Development Index
-0.746
-high
-(2023)
 [
 10
 ]
-(
-105th
-)
-0.595
-medium
-IHDI
-(2023)
+Using invoices, each seller pays VAT on their sales and passes the buyer an invoice that indicates the amount of tax paid excluding deductions (input tax). Buyers who themselves add value and resell the product pay VAT on their own sales (output tax). The difference between output tax and input tax is the amount paid to the government (or refunded, in the case of a negative amount).
+Using accounts, the tax is calculated as a percentage of the difference between sales and purchases from taxed accounts.
+[
+8
+]
+[
+9
+]
+[
+10
+]
+Incentives
+[
+edit
+]
+VAT provides an incentive for businesses to register and keep invoices, and it does this in the form of zero-rated goods and VAT exemption on goods not resold.
 [
 11
 ]
-Labour force
-4,246,885 (2024)
+Through registration, a business documents its purchases, making them eligible for a VAT credit.
+The main benefits of VAT are that in relation to many other forms of taxation, it does not distort firms' production decisions, it is difficult to evade, and it generates a substantial amount of revenue.
 [
 12
 ]
-36% employment rate (2024)
+Comparison with sales tax
+[
+edit
+]
+Three examples below demonstrate the chain of transactions between the raw materials producer and the final consumer, in which
+the government levies no tax
+the government levies sales tax
+the government levies a Value-Added Tax.
+Example 1: Untaxed
+A manufacturer spends $1.00 on
+raw materials
+and uses them to make a widget.
+The manufacturer sells the widget to a retailer for $1.20 (Gross margin: $0.20)
+The retailer sells the widget to an end consumer for $1.50 (Gross margin: $0.30)
+Example 2:  10% sales tax
+The raw materials producer sells $1 of raw materials for a widget to a manufacturer, checking that the buyer is not an end consumer
+The manufacturer sells a widget to a retailer for $1.20, checking that the buyer is not an end consumer (Tax paid: $0, Gross margin: $0.20)
+The retailer sells the widget to a consumer ($1.50 × 1.10) = $1.65 (Tax paid: $.15, Gross margin: $0.30)
+The end consumer pays 10% ($0.15) extra, compared to the no taxation scheme, and the government collects this amount.
+The retailer pays no tax directly, but the retailer has to do the tax-related paperwork.
+Suppliers and manufacturers have the administrative burden of providing correct state exemption certifications that the retailer must verify and maintain.
+The manufacturer is responsible for ensuring that their buyers are only intermediates and not end consumers (otherwise the manufacturer charges the tax).
+The retailer tracks what is taxable and what is not, along with the various tax rates in each location where it operates.
+Example 3: 10% Value-Added Tax
+The raw materials producer sells $1 of raw materials for a widget to a manufacturer for ($1 × 1.10) = $1.10. (Tax paid: $0.10)
+The manufacturer sells a widget to a retailer for ($1.20 × 1.10) = $1.32 (Tax paid: $0.12 - $0.10 = $0.02, Gross margin: $1.32 – $1.10 – $0.02 = $0.20)
+The retailer sells a widget to a consumer for ($1.50 × 1.10) = $1.65 (Tax paid: $0.15
+minus
+$0.12) = $0.03, Gross margin: $1.65 – $1.32 – $0.03 = $0.30)
+The taxes paid by both the manufacturer and the retailer to the government are 10% of the
+values added
+by their respective business practices, i.e. the 10% of the difference between their buying price and selling price. For example, the
+value added
+by the manufacturer is $1.20 minus $1.00 = $0.20. The manufacturer pays 10% of $.20 = $0.02.
+The consumer has paid, and the government received, the same dollar amount as with a sales tax. The gross margins, in dollar amount, remain the same as with a sales tax. The end consumer pays the same final price as with a sales tax.
+At each stage of production, the seller collects a tax and the buyer pays that tax. The buyer can then be reimbursed for paying the tax, but only by successfully selling the value-added product to the buyer at the next stage. If the retailer fails to sell some of its inventory, it suffers a greater financial loss in the VAT scheme, in comparison to the sales tax regulatory system, by having paid a higher price for the product it failed to sell.
+The gross margins of the manufacturer and retailer are a smaller percent of the total perspective. If the cost of raw material production were shown, this would also be true of the raw material supplier's gross margin on a percentage basis.
+Each business is responsible for handling the necessary tax paperwork, and incur the increased accounting costs for collecting the tax. However, businesses have no obligation to request certifications from intermediate purchasers (who are not end consumers), or to provide such certifications to their suppliers.
+Compliance
+[
+edit
+]
+One primary reason for the institution of a VAT versus sales tax is to ensure compliance. Because sales tax is only submitted at the final sale to the consumer, the government has little information to verify that a sale has been made or at what price, making enforcement difficult. The retailer and consumer have an incentive to evade the tax with little risk of discovery. With any transaction, the seller is financially motivated to assume the buyer is an intermediate, not a consumer (and therefore, not subject to the sales tax), even if this may result in illegal tax evasion.
 [
 13
 ]
-Labour force by occupation
-agriculture
-: 14.8%
-industry
-: 33.2%
-services
-: 51.7%
-(2014 est.)
+By comparison, with VAT every transaction is reported to the government (either through a submission of tax, a reimbursement claim, or both), a trail of information is created for government which helps motivate compliance and facilitate any potential audit. The materials producer, manufacturer, and retailer all know that the others down the chain will submit reimbursement claims, so a failure to report the transaction and pay the tax is likely to draw attention from authorities. Even if retailers evade charging the VAT from the consumer, the government still receives the income at prior stages.
 [
-5
+13
 ]
-Unemployment
-14.9% (2026, Q2)
+On the contrary, if a seller accidentally charge sales tax to an intermediate buyer, the end price to the consumer will increase.
+[
+13
+]
+Business structure
+[
+edit
+]
+VAT has no effect on how businesses organize, because the same amount of tax is collected regardless of how many times goods change hands before arriving at the ultimate consumer. By contrast,
+sales taxes
+, when collected on intermediate transactions in addition to final consumption, encourage businesses to
+vertically integrate
+to reduce the number of transactions and thereby reduce the amount of tax paid.
 [
 14
 ]
-Youth unemployment
-38.0% (2026)
 [
 15
 ]
-Average net salary
-$328 monthly (2026)
+Because of the difficulty of exempting intermediate transactions in a sales tax, VAT has been gaining favor over traditional sales taxes.
+[
+citation needed
+]
+However, it is uncommon for sales taxes to be collected at every stage, as it is only levied as a final tax on the consumer, not the reseller.
+Governance structure
+[
+edit
+]
+VAT is collected at the national level. In countries such as India and the United States, sales tax is collected at the point of sale by the local jurisdiction, leading them to prefer the latter method.
+Accounting
+[
+edit
+]
+The main disadvantage of VAT is the extra accounting required by those in the supply chain. However, payment of VAT is made simpler when the VAT system has few, if any, exemptions (such as with GST in
+New Zealand
+).
 [
 16
 ]
-Main industries
-petroleum
-,
-mining
-(particularly
-phosphate
-,
-iron ore
-),
-tourism
-,
-textile
-,
-footwear
-,
-agriculture
-,
-beverages
-,
-olive oil
-External
-Exports
-$23.3 billion USD (2024)
+Effects
+[
+edit
+]
+4 May 2010 "Campaña no más IVA" in Spain
+Regressivity
+[
+edit
+]
+VAT has been criticized by opponents as a
+regressive tax
+, meaning that the poor pay more, as a percentage of their income, relative to the wealthier individuals, given the higher
+marginal propensity to consume
+among the poor.
 [
 17
 ]
-Export goods
-clothing, semi-finished goods and textiles, agricultural products, mechanical goods, phosphates and chemicals, hydrocarbons, electrical equipment
-Main export partners
-EU
-70.17%
-France
-23.2%
-Italy
-16.6%
-Germany
-13.4%
-Spain
-4.75%
-Poland
-1.76%
-United States
-4.69%
-Libya
-3.38%
-United Kingdom
-2.79%
-Algeria
-2.34%
-China
-1.80% (2024)
-[
-17
-]
-Imports
-$26.4 billion USD (2024)
+Defenders reply that relating taxation levels to income is an arbitrary standard and that the VAT is in fact a
+proportional tax
+. An
+OECD
+study found that VAT could even be slightly progressive.
 [
 18
 ]
-Import goods
-textiles, machinery and equipment, hydrocarbons, chemicals, foodstuffs
-Main import partners
-EU
-47.87%
-France
-12.6%
-Italy
-12.3%
-Germany
-7.77%
-Spain
-3.93%
-Greece
-1.66%
-China
-11.4%
-Algeria
-7.39%
-Russia
-6.65%
-Turkey
-4.59%
-United States
-2.38% (2024)
-[
-18
-]
-FDI
-stock
-$37.95 billion (31 December 2017 est.)
-[
-5
-]
-Abroad: $285 million (31 December 2017 est.)
-[
-5
-]
-Current account
-−$2.690 billion (2019)
-Gross
-external debt
-$30.19 billion (31 December 2017 est.)
-[
-5
-]
-Public finance
-Government debt
-70.3% of GDP (2017 est.)
-[
-5
-]
-Foreign reserves
-$8.5 billion (23 December 2023 est.)
-[
-5
-]
-Budget balance
-−5.8% (of GDP) (2017 est.)
-[
-5
-]
-Revenue
-10.957 billion (2022 est.)
-[
-5
-]
-Spending
-12.523 billion (2022 est.)
-[
-5
-]
-Credit rating
-Standard & Poor's
-:
 [
 19
 ]
+VAT's effective regressivity can be reduced by applying a lower rate to products that are more likely to be consumed by the poor.
+[
+17
+]
+Some countries compensate by implementing transfer payments targeted to the poor.
 [
 20
 ]
-BBB (Domestic)
-BBB- (Foreign)
-BBB (T&C Assessment)
-Outlook: Negative
-Moody's
-:
+Deadweight loss
 [
-20
+edit
 ]
-Baa3
-Outlook: Negative
-Fitch
-:
-[
-20
-]
-BBB
-Outlook: Negative
-All values, unless otherwise stated, are in
-US dollars
-.
-Tunisia
-is considered a
-developing economy
-, classified as a Lower-middle Income country by the World Bank in 2023.
+The incidence of VAT may not fall entirely on consumers as traders tend to absorb VAT so as to maintain sales volumes. Conversely, not all cuts in VAT are passed on in lower prices. VAT consequently leads to a deadweight loss if cutting prices pushes a business below the margin of profitability. The effect can be seen when VAT is cut or abolished. Sweden reduced VAT on restaurant meals from 25% to 12%, creating 11,000 additional jobs.
 [
 21
 ]
-In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but
-backsliding
-and increasing terrorist attacks made it lose this status in 2015.
+Churning
+[
+edit
+]
+Because VAT is included in the price index to which state benefits such as pensions and welfare payments are linked in some countries, as well as public sector pay, some of the apparent revenue is churned – i.e. taxpayers are given the money to pay the tax, reducing net revenue.
 [
 22
 ]
-Liberalisation
-efforts started in 1986 after three decades of
-dirigisme
-and state control of the economy. From the 1st of January 2008 onwards, the country opened up to international trade with the adoption of the
-free trade agreement
-with the
-European Union
-in 1995, a process which increased in scale after the 2011
-Arab Spring
-and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.
-Tunisia's economic growth has depended on
-oil
-,
-phosphates
-,
-agri-food products
-,
-car parts manufacturing
-, and
-tourism
-.
-Compared to other countries in the
-Maghreb
-region (
-Algeria
-and
-Morocco
-), Tunisia placed second in GDP per capita and total development until 2022, but now places third.
+Business cashflow
+[
+edit
+]
+Refund delays by the tax administration can damage businesses.
 [
 23
 ]
-In the 2007
-World Economic Forum
-meeting on
-Africa
-(13 to 15 June 2007), Tunisia was recognised as the most
-competitive
-economy in Africa, and the 29th out of 128 at the global level (from 30th in 2006).
+Compliance costs
+[
+edit
+]
+Compliance costs are seen as a burden on business.
 [
 24
 ]
-The year 2015 was marked by terrorist attacks in Tunisia which are likely to affect economic growth, especially in tourism, one of the main sectors.
+In the UK, compliance costs for VAT have been estimated to be about 4% of the yield, with greater impacts on smaller businesses.
 [
 25
 ]
-Historical trend
+Under a sales tax system, only businesses selling to the end-user are required to collect tax and bear the accounting cost of collecting the tax. Under VAT, manufacturers and wholesale companies also incur accounting expenses to handle the additional paperwork required for collecting VAT, increasing overhead costs and prices.
+Fraud
 [
 edit
 ]
-GDP per capita soared by more than 380% in the seventies (1970–1980: USD 280–1,369). But this proved unsustainable and it collapsed to a cumulative 10% growth in the turbulent eighties (1980–1990: USD 1,369–1,507), rising again to almost 50% cumulative growth in the nineties (1990–2000: USD 1,507–2,245), signifying the impact of successful diversification.
+VAT offers distinctive opportunities for evasion and fraud, especially through abuse of the credit and refund mechanism.
 [
 26
 ]
-Growing
-foreign debt
-and the
-foreign exchange
-crisis in the mid-1980s led the government to launch a
-structural adjustment
-program to liberalize prices, reduce
-tariffs
-, and reorient Tunisia toward a
-market economy
-in 1986. Tunisia's economic reform program was lauded as a model by
-international financial institutions
-. The government liberalized prices, reduced tariffs, lowered debt-service-to-exports and debt-to-
-GDP
-ratios, and extended the average maturity of its $10 billion foreign debt. Structural adjustment brought additional lending from the
-World Bank
-and other Western creditors. In 1990, Tunisia acceded to the
-General Agreement on Tariffs and Trade
-(GATT) and is a member of the
-World Trade Organization
-(WTO).
-In 1996 Tunisia entered into an "Association Agreement" with the
-European Union
-(EU) which removed tariffs and other
-trade barriers
-on most goods by 2008. In conjunction with the Association Agreement, the EU is assisting the Tunisian government's
-Mise A Niveau
-(upgrading) program to enhance the productivity of Tunisian businesses and prepare for competition in the global marketplace.
-The government totally or partially privatized around 160
-state-owned enterprises
-after the
-privatization
-program was launched in 1987. Although the program is supported by the GATT, the government had to move carefully to avoid mass firings.
-Unemployment
-continued to plague Tunisia's economy and was aggravated by a rapidly growing workforce. An estimated 55% of the population is under the age of 25. Officially, 15.2% of the Tunisian workforce is unemployed.
-In 2011, after the
-Arab Spring
-, the economy slumped but then recovered with 2.81% GDP growth in 2014. However, unemployment is still one of the major issues with 15.2% of the labor force unemployed as of the first quarter of 2014. Tunisia's political transition gained new momentum in early 2014, with the resolution of a political deadlock, the adoption of a new Constitution and the appointment of a new government. The
-national dialogue platform
-, brokered by key civil society organizations, played a crucial role in gathering all major political parties. This consensus will allow for further reform in the economy and public sector.
-In 2015, the
-Bardo National Museum attack
-led to the collapse of the third largest sector of Tunisia's economy;
+VAT overclaim fraud reached as high as 34% in Romania.
 [
 27
 ]
-tourism
-. Tunisian tourist workers in Tunis have said that "tourism is dead, it is completely dead", expressing the severe drop in tourism after the attack.
+Exports are generally
+zero-rated
+, creating opportunity for fraud. In Europe, the main source of problems is
+carousel fraud
+.
+[
+citation needed
+]
+This fraud originated in the 1970s in the
+Benelux
+countries. VAT fraud then became a major problem in the
+UK
+.
 [
 28
 ]
-The number of
-ragpickers
-in Tunisia is increasing due to the continuing high level of unemployment, the loss of purchasing power of the most disadvantaged families, and the explosion of plastic waste due to new consumption habits. Ragpickers do not benefit from
-social protection
-, granted to professions with a legal status and may be subject to the exploitation of the
-Recycling
-industry.
+Similar fraud possibilities exist inside a country. To avoid this, countries such as Sweden hold the major owner of a limited company personally responsible.
 [
 29
 ]
-In January 2023, Marouane Abassi, governor of the Central Bank of Tunisia, warned that without an agreement with the IMF, his country would not be able to withstand the surge in prices and would not be able to maintain its growth rates.
+Trade effects
+[
+edit
+]
+If a county's exported goods are exempt from domestic VAT (
+zero-rated
+) or VAT rebated, this can motivate an increase in the export of goods.
 [
 30
 ]
-The following table shows the main economic indicators in 1980–2026. Inflation under 5% is in green. Figures for 2026 are IMF projections.
+US trade tariffs with major trading partners
+A country's national VAT may be seen as a
+tariff
+on imported goods. The American Manufacturing Trade Action Coalition in the United States consider VAT charges on US products when VAT rebates are offered for products from other countries to be an
+unfair trade practice
+. AMTAC claims that so-called "border tax disadvantage" is the greatest contributing factor to the US
+current account deficit
+, and estimated this disadvantage to US producers and service providers to be $518 billion in 2008 alone. US politicians such as congressman
+Bill Pascrell
+, advocate either changing WTO rules relating to VAT or rebating VAT charged on US exporters.
 [
 31
 ]
-Year
-GDP
-(in Bil. US$ PPP)
-GDP per capita
-(in US$ PPP)
-GDP
-(in bil. US$ nominal)
-GDP growth
-(real)
-Inflation rate
-(in Percent)
-Unemployment
-(in Percent)
-Government debt
-(in
-% of GDP)
-1980
-13.3
-2,045
-9.6
-7.4%
-10.0%
-n/a
-n/a
-1981
-15.4
-2,297
-9.2
-5.5%
-8.9%
-n/a
-n/a
-1982
-16.3
-2,369
-8.9
-−0.5%
-13.7%
-n/a
-n/a
-1983
-17.7
-2,517
-9.2
-4.7%
-9.0%
-n/a
-n/a
-1984
-19.4
-2,726
-9.1
-5.7%
-8.6%
-n/a
-n/a
-1985
-21.1
-2,877
-9.2
-5.7%
-7.6%
-n/a
-n/a
-1986
-21.3
-2,784
-9.9
-−1.5%
-6.2%
-n/a
-n/a
-1987
-23.2
-2,980
-10.7
-6.7%
-8.2%
-n/a
-n/a
-1988
-24.1
-3,036
-11.1
-0.1%
-7.2%
-n/a
-n/a
-1989
-25.7
-3,179
-11.1
-2.6%
-7.7%
-n/a
-n/a
-1990
-28.5
-3,425
-14.1
-7.1%
-6.5%
-16.2%
-n/a
-1991
-30.7
-3,611
-14.9
-4.1%
-7.7%
-16.2%
-63.3%
-1992
-33.9
-3,906
-17.8
-8.0%
-5.5%
-16.2%
-62.1%
-1993
-35.6
-4,016
-16.7
-2.5%
-4.0%
-16.3%
-63.8%
-1994
-37.7
-4,175
-17.9
-3.6%
-5.4%
-16.3%
-63.9%
-1995
-39.5
-4,309
-20.6
-2.7%
-6.2%
-16.2%
-65.6%
-1996
-43.0
-4,621
-22.3
-6.9%
-3.7%
-16.1%
-66.8%
-1997
-46.2
-4,903
-21.8
-5.7%
-3.6%
-15.9%
-66.6%
-1998
-49.0
-5,138
-22.9
-5.0%
-3.1%
-16.1%
-58.2%
-1999
-52.7
-5,459
-24.1
-6.0%
-2.8%
-16.0%
-61.9%
-2000
-56.2
-5,758
-22.5
-4.3%
-2.8%
-15.7%
-62.9%
-2001
-59.7
-6,046
-23.1
-3.8%
-1.9%
-15.1%
-52.2%
-2002
-61.4
-6,158
-24.3
-1.3%
-2.7%
-15.3%
-51.6%
-2003
-65.6
-6,509
-28.8
-4.7%
-2.7%
-14.5%
-52.6%
-2004
-71.5
-7,035
-32.7
-6.2%
-3.7%
-14.2%
-51.6%
-2005
-76.3
-7,443
-33.9
-3.5%
-1.9%
-12.8%
-50.0%
-2006
-82.8
-8,004
-36.1
-5.2%
-4.1%
-12.5%
-45.7%
-2007
-90.8
-8,693
-40.8
-6.7%
-3.4%
-12.4%
-42.7%
-2008
-96.4
-9,147
-47.0
-4.2%
-4.9%
-12.4%
-41.4%
-2009
-100.0
-9,388
-45.6
-3.0%
-3.5%
-13.3%
-40.3%
-2010
-104.8
-9,730
-46.2
-3.5%
-4.4%
-13.0%
-38.8%
-2011
-104.7
-9,620
-48.1
-−2.0%
-3.2%
-18.9%
-43.3%
-2012
-111.2
-10,098
-47.3
-4.2%
-4.6%
-16.7%
-49.0%
-2013
-115.8
-10,395
-48.7
-2.4%
-5.4%
-15.3%
-45.6%
-2014
-121.5
-10,774
-50.3
-3.1%
-4.6%
-15.0%
-50.7%
-2015
-123.8
-10,856
-45.8
-1.0%
-4.4%
-15.4%
-52.4%
-2016
-126.4
-10,960
-44.4
-1.1%
-3.6%
-15.5%
-58.9%
-2017
-131.5
-11,289
-42.2
-2.3%
-5.3%
-15.5%
-67.1%
-2018
-139.3
-11,841
-42.7
-2.6%
-7.3%
-15.5%
-72.9%
-2019
-148.4
-12,495
-41.9
-1.6%
-6.7%
-14.9%
-67.3%
-2020
-142.7
-11,918
-42.5
-−9.0%
-5.6%
-17.4%
-77.7%
-2021
-149.1
-12,375
-46.8
-4.7%
-5.7%
-16.2%
-79.7%
-2022
-164.0
-13,531
-44.6
-2.7%
-8.3%
-15.2%
-83.0%
-2023
-170.5
-13,971
-48.5
-0.2%
-9.3%
-16.4%
-84.0%
-2024
-177.5
-14,462
-51.3
-1.6%
-7.0%
-16.0%
-85.7%
-2025
-187.1
-15,154
-57.6
-2.5%
-5.3%
-15.2%
-81.3%
-2026
-196.6
-15,833
-60.7
-2.1%
-6.5%
-n/a
-84.9%
-External trade and investment
-[
-edit
-]
-Exports of Tunisia by product category (2019)
-Chemical products
-Transportation
-Machines
-Mineral products
-Plastics and rubbers
-Metals
-Foodstuffs
-Precious metals
-Textiles
-Instruments
-Animal products
-Vegetable products
-Paper goods
-Footwear and headwear
-Miscellaneous
-Stone and glass
-Wood products
-Animal and vegetable bi-products
-Animal hides
-Arts and antiques
-Weapons
-Tunisian exports in 2006
-In 1992, Tunisia re-entered the private international capital market for the first time in 6 years, securing a $10-million line of credit for
-balance-of-payments
-support. In January 2003
-Standard & Poor's
-affirmed its investment grade credit ratings for Tunisia. The
-World Economic Forum
-2002-03 ranked Tunisia 34th in the Global Competitiveness Index Ratings (two places behind
-South Africa
-, the continent's leader). In April 2002, Tunisia's first
-US dollar
--denominated
-sovereign bond
-issue since 1997 raised $458 million, with maturity in 2012.
-The
-Bourse de Tunis
-is under the control of the state-run Financial Market Council and lists over 50 companies. The government offers substantial tax incentives to encourage companies to join the exchange, and expansion is occurring.
-The Tunisian government adopted a unified investment code in 1993 to attract foreign capital. More than 1,600 export-oriented
-joint venture
-firms operate in Tunisia to take advantage of relatively low labor costs and preferential access to nearby European markets. Economic links are closest with European countries, which dominate Tunisia's trade. Tunisia's
-currency
-, the dinar, is not traded outside Tunisia. However, partial convertibility exists for bona fide commercial and investment transaction. Certain restrictions still limit operations carried out by Tunisian residents.
-The stock
-market capitalisation
-of listed companies in Tunisia was valued at $5.3 Billion in 2007, 15% of 2007 GDP, by the
-World Bank
-.
+A business tax rebate for exports was proposed in the 2016
+GOP
+tax reform policy paper.
 [
 32
 ]
-For 2007, foreign direct investment totaled TN Dinar 2 billion in 2007, or 5.18% of the total volume of investment in the country. This figure is up 35.7% from 2006 and includes 271 new foreign enterprises and the expansion of 222 others already based in the country.
-The economic growth rate seen for 2007, at 6.3% is the highest achieved in a decade.
-On 29 and 30 November, Tunisia held an investment conference with country chiefs from all around the world with pledges that have reached $30 billion to finance new public projects.
 [
 33
 ]
-As of 2022, Tunisia's government is in need of international help as the economy grapples with a crisis in public finances that has raised fears it may default on debt and has contributed to shortages of food and fuel, according to government critics. As a result, the government announced in December 2022 that they expect to reduce its fiscal deficit to 5.5% in 2023 from a forecast 7.7% this year, driven by austerity measures that could pave the way for a final deal with the International Monetary Fund on a rescue package.
+The assertion that this "border adjustment" would be compatible with the rules of the WTO is controversial; it was alleged that the proposed tax would favour domestically produced goods as they would be taxed less than imports, to a degree varying across sectors. For example, the wage component of the cost of domestically produced goods would not be taxed.
 [
 34
 ]
-In 2025, Tunisia severed ties with the IMF.
+A 2021 study reported that value-added taxes within the EU were unlikely to distort trade flows.
 [
 35
 ]
-Tunisia's exports to Libya, exceeding 18% growth between 2020 and 2024.
+Around the world
+[
+edit
+]
+Standard VAT rate by country
+No VAT
+~5%
+~10%
+~15%
+~20%
+~25%
+Armenia
+[
+edit
+]
+Main article:
+Taxation in Armenia
+The VAT rate is 20%. However, the expanded application is zero VAT for many operations and transactions. That zero VAT is the source of controversies between its trading partners, mainly Russia, which is against the zero VAT and promotes wider use of tax credits. VAT is replaced with fixed payments, which are utilized for many taxpayers, operations, and transactions. Legislation is based largely on the EU VAT Directive's principles.
 [
 36
 ]
-Loan guarantee
+The system is input-output based. Producers are allowed to subtract VAT on their inputs from the VAT they charge on their outputs and report the difference.
 [
-edit
+36
 ]
-Source:
+VAT is purchased quarterly. An exception occurs for taxpayers who state monthly payments. VAT is disbursed to the state's budget on the 20th day of the month after the tax period.
 [
 37
 ]
-On 20 April 2012, U.S. Treasury Secretary
+The law took effect on 1 January 2022.
 [
 38
 ]
-and Tunisian Finance Minister
-Houcine Dimassi
-signed a declaration of intent
+Australia
+[
+edit
+]
+Main article:
+Goods and services tax (Australia)
+The goods and services tax (GST) is a VAT introduced in Australia in 2000. Revenue is redistributed to the states and territories via the Commonwealth Grants Commission process. This works as a program of
+horizontal fiscal equalisation
+. The rate is set at 10%, although many domestically consumed items are effectively zero-rated (GST-free) such as fresh food, education, health services, certain medical products, as well as government charges and fees that are effectively taxes.
+[
+citation needed
+]
+Bangladesh
+[
+edit
+]
+Main article:
+Taxation in Bangladesh
+VAT was introduced in 1991, replacing sales tax and most excise duties. The Value Added Tax Act, 1991 triggered VAT starting on 10 July 1991, which is observed as National VAT Day.
 [
 39
 ]
-to move forward on a U.S. loan guarantee for Tunisia. The U.S. Government would provide this loan guarantee to enable the Tunisian government to access significant market financing at affordable rates and favorable maturities with the backing of a U.S. guarantee of principal and interest (up to 100 percent).
-The support would consist of the U.S. guarantee of Tunisian government-issued debt (or of bank loans made to the Government of Tunisia).  This guarantee will significantly reduce the Tunisian government's borrowing costs at a time when market access has become more expensive for many emerging market countries.  In the weeks ahead, both governments intend to make progress on a loan guarantee agreement that would allow Tunisia to move forward with a debt issuance.
-The ceremony took place at the World Bank immediately following the meeting of Finance Ministers of the
-Deauville Partnership with Arab Countries in Transition
-.
-Microfinance institutions, such as Enda Tamweel, exist to assist those who are unable to access the regular banking system. This comprises those living in rural or impoverished regions where the informal sector thrives, accounting for 34% of Tunisia's GDP.
 [
 40
 ]
 [
 41
 ]
-Enda Tamweel has made over 3 million microloans to over 900,000 people in the 30 years since its inception, infusing more than €1.6 billion into the local economy.
-[
-40
-]
-[
-41
-]
-Sectors
-[
-edit
-]
-Agriculture
-[
-edit
-]
-Olive grove in
-Sfax
-, Tunisia
-Agriculture - products:
-olives
-,
-grain
-,
-tomatoes
-,
-citrus fruit
-,
-sugar beets
-,
-dates
-,
-almonds
-.
-In 2018, Tunisia produced:
-1.5 million tons of
-wheat
-;
-1.3 million tons of
-tomato
-(16th largest producer in the world);
-825 thousand tons of
-olives
-(7th largest producer in the world);
-700 thousand tons of
-barley
-;
-548 thousand tons of
-watermelon
-;
-450 thousand tons of
-onion
-;
-426 thousand tons of
-pepper
-;
-423 thousand tons of
-potato
-;
-241 thousand tons of
-date
-(10th largest producer in the world);
-217 thousand tons of
-carrots
-;
-146 thousand tons of
-grape
-;
-144 thousand tons of
-orange
-;
-118 thousand tons of
-peach
-;
-114 thousand tons of
-apple
-;
-104 thousand tons of
-grapefruit
-;
-102 thousand tons of
-melon
-.
-In addition to smaller productions of other agricultural products, like
-almond
-(66 thousand tons) and
-sugar beet
-(76 thousand tons).
 [
 42
 ]
-Mining
-[
-edit
-]
-Main article:
-Mining industry of Tunisia
-This section is an excerpt from
-Mining industry of Tunisia
-.
-[
-edit
-]
-Salt evaporation pond
-operations at
-Zarzis
-The
-mining industry of Tunisia
-focuses mainly on
-phosphate
-products such as
-fertilizer
-, industrial minerals (
-gypsum
-,
-clay
-,
-lime
-),
-iron ore
-, and
-salt
-. Mine ownership is limited to the
-Government of Tunisia
-, although
-operation by private entities
-is encouraged.
-Tourism
-[
-edit
-]
-Main article:
-Tourism in Tunisia
-This section is an excerpt from
-Tourism in Tunisia
-.
-[
-edit
-]
-Sidi Bou Saïd
-, a major tourist destination
-Tourism in Tunisia
-is a major industry, attracting around 9.4 million arrivals annually from the year 2016 to 2020, making it one of the most visited countries in
-Africa
-.
-Among Tunisia's tourist attractions are its cosmopolitan capital city of
-Tunis
-, the ancient ruins of
-Carthage
-, the Muslim and Jewish quarters of
-Djerba
-, and coastal resorts outside
-Monastir
-. According to
-The New York Times
-, Tunisia is known for its "golden beaches, sunny weather, and affordable luxuries."
+VAT became the largest source of government revenue, totaling about 56%. The standard rate is 15%. Export is zero rated. Several reduced rates, locally called Truncated Rates, apply to service sectors and range from 1.5% to 10%. The Value Added Tax and Supplementary Duty Act of 2012 automated administration.
 [
 43
 ]
-Infrastructure
 [
-edit
+40
 ]
-Energy
-[
-edit
-]
-Main article:
-Energy in Tunisia
-Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).
+The
+National Board of Revenue
+(NBR) administers VAT. Other rules and acts include Development Surcharge and Levy (Imposition and Collection) Act, 2015;
 [
 44
 ]
-As July 2026 multiple regional grid failure occurred as consequences of extreme high summer temperatures, exceeding 49
-°C, widespread forest fires damaging cables and sub-station, lack of proper maintenance of the grid and high demand overcoming national power generation capabilities.
-Electricity
-[
-edit
-]
-Production:
-16.13 Billion kWh (2011)
+and Value Added Tax and Supplementary Duty Rules, 2016.
 [
 45
 ]
-Production by source:
-fossil fuel:
-96.8% (2010)
-hydro:
-1.7% (2010)
-other:
-1.5% (2010)
-Consumption:
-13.29 billion kWh (2010)
-Exports:
-None (2010)
-Imports:
-19 million kWh (2010)
-Transport
+Anyone who collects VAT becomes a VAT Trustee if they: register and collect a Business Identification Number (BIN) from the NBR; submit VAT returns on time; offer VAT receipts; store all cash-memos; and use the VAT rebate system responsibly. VAT Mentors work in the VAT or Customs department and deal with trustees. The VAT rate is a flat 15%.
+Barbados
 [
 edit
 ]
 Main article:
-Transport in Tunisia
-This section is an excerpt from
-Transport in Tunisia
+Economy of Barbados §
+Taxation
+VAT was introduced on 1 January 1997 and replaced 11 other taxes.
+[
+46
+]
+The original rate of 15% was increased to 17.5% in 2011.
+[
+47
+]
+The rate on restaurant and hotel accommodations is between 10% and 15% while certain foods and goods are zero-rated.
+[
+48
+]
+The revenue is collected by the
+Barbados Revenue Authority
 .
 [
-edit
+49
 ]
-Autoroute A4
-on (May 2008)
-Tunisia has a number of international airports to service its sizable tourist trade.
-Tunis
-is the center of the transport system as the largest city having the largest port and a light transit system.
-Telecommunications
+Bulgaria
 [
 edit
 ]
 Main article:
-Telecommunications in Tunisia
+Taxation in Bulgaria
+VAT was 20% as of 2023. A reduced rate of 9% applies to baby foods and hygiene products, as well as on books. A permanent rate of 9% applies to physical or electronic periodicals, such as newspapers and magazines.
+Canada
+[
+edit
+]
+Main articles:
+Goods and services tax (Canada)
+and
+Harmonized sales tax
+Goods and Services Tax (GST) is a national sales tax introduced in 1991 at a rate of 7%, later reduced to 5%. A
+Harmonized Sales Tax
+(HST) that combines the GST and provincial sales tax, is collected in
+New Brunswick
+(15%),
+Newfoundland
+(15%),
+Nova Scotia
+(14%),
+Ontario
+(13%) and
+Prince Edward Island
+(15%), while
+British Columbia
+had a 12% HST until 2013.
+Quebec
+has a de facto 14.975% HST: it follows the same rules as the GST, and both are collected by
+Revenu Québec
+.
+Advertised and posted prices generally exclude taxes, which are calculated at the time of payment; common exceptions are motor fuels, the posted prices for which include sales and
+excise
+taxes, and items in vending machines as well as alcohol in monopoly stores. Basic groceries, prescription drugs, inward/outbound transportation and medical devices are zero-rated. Other provinces that do not have a HST may have a
+Provincial Sales Tax
+(PST), which are collected in British Columbia (7%),
+Manitoba
+(7%) and
+Saskatchewan
+(6%).
+Alberta
+and all three territories do not collect either a HST or PST.
+Chile
+[
+edit
+]
+VAT was introduced in Chile in 1974 under Decreto Ley 825.
+[
+50
+]
+From 1998 there was implemented a 18% tax.
+[
+51
+]
+Since October 2003, the standard VAT rate has been 19%, applying to the majority of goods and some services. However certain items have been subjected to additional tax, for instance, alcoholic beverages (between 20.5= – 31.5% for fermented to distilled products), jewellery (15%), pyrotechnic items (50% or more for the first sale or import) or soft drinks with high sugar (18%). As of 2023, the VAT tax includes majority of services excluding Education, Health and Transport, as well as taxpayers issuing fee receipts.
+[
+52
+]
+This tax makes the 41.2% of the total revenue of the country.
+[
+53
+]
+China
+[
+edit
+]
+Main article:
+Taxation in China
+VAT produces the largest share of China's tax revenue. In 2019, VAT accounted for 40% of the total tax revenue.
+[
+54
+]
+:
+305
+In 1984 the
+State Council
+announced that China would begin collecting VAT.
+[
+55
+]
+:
+37
+For a decade, it was imposed only on certain categories of goods and at differing rates.
+[
+55
+]
+:
+37
+In 1994, VAT became universally imposed on production, wholesale, retain, and importation of all goods.
+[
+55
+]
+:
+37
+In 2016, business tax was replaced with VAT nationwide.
+[
+55
+]
+:
+28
+VAT's significance to China's tax revenues increased drastically after this.
+[
+55
+]
+:
+358–359
+Czech Republic
+[
+edit
+]
+In 1993, a standard rate of 23% and a reduced rate of 5% for non-alcoholic beverages, sewerage, heat, and public transport was introduced. In 2015, rates were revised to 21% for the standard rate, and 15% and 10% reduced rates. The lowest reduced rate primarily targeted baby food, medicines, vaccines, books, and music shops, while maintaining a similar redistribution of goods and services for the other rates.
+In 2024, a law aimed at reducing the national debt featured return to two rates: a standard rate of 21% and a reduced rate of 12%. Goods and services were redistributed among different tax rates.
+There was only one service that shifted from the standard rate to the reduced rate and that was non-regular land passenger bus services. These are not taxi services, which apply a VAT rate of 21%. Books and printed materials, including electronic books, were zero rated.
+Several services were moved from reduced rates to the standard rate. Examples include hairdressers and barbers, bicycle repairs, footwear and clothing repairs, freelance journalists and models, cleaning services, and municipal waste.
+[
+56
+]
+[
+57
+]
+[
+58
+]
+European Union
+[
+edit
+]
+Main article:
+European Union value added tax
+The
+European Union VAT
+is mandatory for
+member states of the European Union
+. The EU VAT asks where supply and consumption occurs, which determines which state collects VAT and at what rate.
+Each state must comply with EU VAT law,
+[
+59
+]
+which requires a minimum standard rate of 15% and one or two reduced rates not to be below 5%. Some EU members have a 0% VAT rate on certain items; these states agreed this as part of their accession (for example, newspapers and certain magazines in Belgium). Certain goods and services must be exempt from VAT (for example, postal services, medical care, lending, insurance, betting), and certain other items are exempt from VAT by default, but states may opt to charge VAT on them (such as land and certain financial services). Luxembourg charges the lowest rate, 17%, and Hungary charges the highest rate, 27%. Only Denmark has no reduced rate.
+[
+60
+]
+Gulf Cooperation Council
+[
+edit
+]
+Main article:
+Gulf Cooperation Council
+The
+United Arab Emirates
+(UAE) on 1 January 2018 implemented VAT. For companies whose annual revenues exceed $102,000 (Dhs 375,000), registration is mandatory. GCC countries agreed to an introductory rate of 5%.
+[
+61
+]
+[
+62
+]
+[
+63
+]
+Saudi Arabia
+'s VAT system uses a 15% rate.
+[
+64
+]
+Hungary
+[
+edit
+]
+Hungary
+'s standard VAT rate is 27%
+[
+65
+]
+, the highest in the
+European Union
+.
+[
+66
+]
+Lower rates of 18%, 5%, and 0% apply to certain goods and services.
+[
+65
+]
+India
+[
+edit
+]
+Further information:
+Value-added taxation in India
+VAT was introduced on 1 April 2005. Of the then 28 states, eight did not immediately introduce VAT. Rates were 5% and 14.5%.
+Tamil Nadu
+introduced VAT on 1 January 2007. Under the
+BJP
+government, it was replaced by a national
+Goods and Services Tax (GST)
+according to the
+One Hundred and First Amendment of the Constitution of India
+.
+Iran (Islamic Republic Of)
+[
+edit
+]
+Under the Iranian Islamic
+Resistive economy
+VAT is universally collected, paid twice 12% by consumer at
+Point of sale
+terminals purchases and also by the producers/manufacturers paid electronically at once, around 2% of government VAT profit goes to food electronic coupon stamps
+National Credit Network
+program, during
+Iranian economic crisis
+in December 2025 in the 2026 fiscal budget it was raised by 3%.
+[
+67
+]
+[
+68
+]
+Indonesia
+[
+edit
+]
 This section is an excerpt from
-Telecommunications in Tunisia
+Taxation in Indonesia § Value Added Taxation/Goods and Services Taxation
 .
 [
 edit
 ]
-Telecommunications in Tunisia
-includes telephones (fixed and mobile), radio, television, and the Internet. The
-Ministry of Communication Technologies
-, a cabinet-level
-governmental agency
-, is in charge of organizing the sector.
-Economic structure
+Per 1 January 2025, maximum Goods and Services Tax (
+GST
+) is levied at the rate of 12% at point of sale. Sales and services tax are exempt from cottage economies and industries.
+A VAT rate of zero percent is applied to the following taxable events:
+export for taxable goods
+export for intangible taxable goods
+export for taxable services
+VAT base on equivalent to the sale price/service fee or import/export value.
+Italy
 [
 edit
 ]
-In 2017, the breakdown by economic sector is as follows:
-Economy sector
-contribution to GDP
-Agriculture
-10,1
+This section is an excerpt from
+Taxation in Italy § Value added tax
+.
+[
+edit
+]
+Supermarket receipt showing three categories of IVA
+Value added tax or VAT, (in Italian
+Imposta sul valore aggiunto
+, or IVA) is a consumption tax charged at a standard rate of 22 percent, which came in on 1 July 2013 (previously 21 percent).
+The first reduced VAT rate (10 percent) applies to water supplies, passenger transport, admission to cultural and sports events, hotels, restaurants and some foodstuff. The second reduced VAT rate (5 percent) applies to some foodstuff and social services. The super-reduced VAT rate (4 percent) applies to TV licenses, newspapers, periodicals, books and medical equipment for the disabled. A zero VAT rate (0 percent) applies to intra-community and international transport.
+The filing deadline for VAT returns is 30 April of the next year.
+[
+69
+]
+Israel
+[
+edit
+]
+This section is an excerpt from
+Taxation in Israel § Value-added tax
+.
+[
+edit
+]
+Value-added tax (VAT) in Israel, is applied to most goods and services, including imported goods and services. From 1 January 2025 the standard rate was increased to 18% from 17%.
+[
+70
+]
+It had been decreased to 17% from 18% on 1 October 2015.
+[
+71
+]
+[
+72
+]
+It had been raised from 16% to 17% on 1 September 2012,
+[
+73
+]
+and to 18% on 2 June 2013.
+[
+74
+]
+Certain items, such as exported goods and the provision of certain services to non-residents are zero-rated. VAT on imported goods is levied on value plus customs duty, purchase tax and other levies.
+[
+75
+]
+[
+76
+]
+Multinational companies that provide services to Israel through the
+Internet
+, such as
+Google
+and
+Facebook
+, must pay VAT.
+[
+77
+]
+Electronic filing of VAT is mandatory.
+[
+78
+]
+Japan
+[
+edit
+]
+Further information:
+Taxation in Japan
+VAT, referred to as consumption tax, was implemented in Japan in 1989.
+[
+79
+]
+Tax authorities debated VAT in the 1960s and 1970s but decided against it at the time.
+[
+79
+]
+The standard rate is 10%. Food, beverages, newspaper subscriptions with certain criteria and other necessities qualify for a rate of 8%. Transactions including land sales or lease, securities sales and the provision of public services are exempt.
+[
+80
+]
+Malaysia
+[
+edit
+]
+This section is an excerpt from
+Goods and Services Tax (Malaysia)
+.
+[
+edit
+]
+The
+Goods and Services Tax
+(GST) is an abolished value-added tax in
+Malaysia
+. GST is levied on most transactions in the production process, but is refunded with exception of Blocked Input Tax, to all parties in the chain of production other than the final consumer.
+The existing standard rate for GST effective from 1 April 2015 is 6%. Many domestically consumed items such as fresh foods, water and electricity are zero-rated, while some supplies such as education and health services are GST exempted.
+After
+Pakatan Harapan
+won the
+2018 Malaysian general election
+, GST was reduced to 0% on 1 June 2018.
+[
+81
+]
+The then Government of Malaysia tabled the first reading of the Bill to repeal GST in Parliament on 31 July 2018 (Dewan Rakyat).
+[
+82
+]
+GST was replaced with the Sales Tax and Service Tax starting 1 September 2018.
+Mexico
+[
+edit
+]
+The existing sales tax (
+Spanish:
+impuesto a las ventas
+) was replaced by VAT (
+Spanish:
+Impuesto al Valor Agregado
+, IVA) on 1 January 1980. As of 2010, the general VAT rate was 16%. This rate was applied all over Mexico except for border regions (i.e. the United States border, or Belize and Guatemala), where the rate was 11%. Books, food, and medicines are zero-rated. Some services such as medical care are zero-rated. In 2014 the favorable tax rate for border regions was eliminated and the rate increased to 16% across the country.
+Nepal
+[
+edit
+]
+This section is an excerpt from
+Value added tax (Nepal)
+.
+[
+edit
+]
+Value Added Tax
+(VAT) is an indirect tax levied on the value creation or addition. The concept of VAT in
+Nepal
+was introduced in
+FY
+2049/50 but the act was developed in
+BS
+2050. VAT was implemented in 1998 and is the major source of government revenue.
+[
+83
+]
+[
+84
+]
+It is administered by the Inland Revenue Department of Nepal.
+New Zealand
+[
+edit
+]
+This section is an excerpt from
+Goods and Services Tax (New Zealand)
+.
+[
+edit
+]
+Goods and Services Tax
+(GST;
+Māori
+:
+Tāke hokohoko
+) is a value-added tax or
+consumption tax
+for
+goods and services
+consumed in
+New Zealand
+.
+GST in New Zealand is designed to be a broad-based system with few exemptions, such as for rents collected on residential rental properties, donations, precious metals and financial services.
+[
+85
+]
+It normally makes up around 30% of tax revenue in New Zealand.
+[
+86
+]
+The rate for GST, effective since 1 October 2010 is 15%.
+[
+87
+]
+This 15% tax is applied to the final price of the product or service being purchased and goods and services are advertised as GST inclusive. 
+Reduced rate GST (9%) applies to hotel accommodation on a long-term basis (longer than 4 weeks).
+Zero rate GST (0%) applies to exports and related services; land transactions; international transportation.
+Financial services, real estate and precious metals are also exempt.
+Nordic countries
+[
+edit
+]
+"MOMS" redirects here. For other uses, see
+Mom (disambiguation)
+.
+MOMS (
+Danish
+:
+merværdiafgift
+, formerly
+meromsætningsafgift
+),
+Norwegian
+:
+merverdiavgift
+(
+bokmål
+) or
+meirverdiavgift
+(
+nynorsk
+) (abbreviated
+MVA
+),
+Swedish
+:
+Mervärdes- och OMSättningsskatt
+(until the early 1970s labeled as OMS
+OMSättningsskatt
+only),
+Icelandic
+:
+virðisaukaskattur
+(abbreviated
+VSK
+),
+Faroese
+:
+meirvirðisgjald
+(abbreviated
+MVG
+) or Finnish:
+arvonlisävero
+(abbreviated
+ALV
+) are the Nordic terms for
+VAT
+. Like other countries' sales and VAT, it is an
+indirect tax
+.
+Year
+Tax level (Denmark)
+Name
+1962
+9%
+OMS
+1967
+10%
+MOMS
+1968
+12.5658%
+MOMS
+1970
+15%
+MOMS
+1977
+18%
+MOMS
+1978
+20.25%
+MOMS
+1980
+22%
+MOMS
+1992
+25%
+MOMS
+Denmark has the highest VAT, alongside Norway, Sweden, and Croatia.  VAT is generally applied at one rate, 25%, with few exceptions. Services such as public transport, health care, newspapers, rent (the lessor can voluntarily register as a VAT payer, except for residential premises), and travel agencies.
+In Finland, the standard rate is 25.5%.
+[
+88
+]
+A 14% rate is applied on groceries, animal feed, and restaurant and catering services. A 10% rate is applied on books, newspapers and magazines, pharmaceutical products,
+sports and fitness services, entrance fees to cultural, entertainment and sporting events,
+passenger transport services, accommodation services, and royalties for television and public radio activities.
+Åland
+, an autonomous area, is considered to be outside the EU VAT area, although its VAT rate is the same as for Finland. Goods brought from Åland to Finland or other EU countries are considered to be imports. This enables tax-free sales onboard passenger ships.
+In Iceland, VAT is 24% for most goods and services. An 11% rate is applied for hotel and guesthouse stays,
+licence fees
+for radio stations (namely
+RÚV
+), newspapers and magazines, books; hot water, electricity and oil for heating houses, food for human consumption (but not alcoholic beverages), access to
+toll roads
+and music.
+[
+89
+]
+In Norway, the general rate is 25%, 15% on foodstuffs, and 12% on hotels and holiday homes, on some transport services, cinemas.
+[
+90
+]
+Financial services, health services, social services and educational services,
+[
+91
+]
+newspapers, books and periodicals are zero-rated.
+[
+92
+]
+Svalbard
+has no VAT because of a clause in the
+Svalbard Treaty
+.
+In Sweden, VAT is 25% for most goods and services, 12% for foods including restaurants, and hotels. It is 6% for printed matter, cultural services, and transport of private persons. Zero-rated services including public (but not private) education, health, dental care. Dance event tickets are 25%, concerts and stage shows are 6%, while some types of cultural events are 0%.
+MOMS replaced OMS (Danish
+omsætningsafgift
+, Swedish
+omsättningsskatt
+) in 1967, which was a tax applied exclusively for retailers.
+Philippines
+[
+edit
+]
+Main article:
+Taxation in the Philippines
+This section is an excerpt from
+Taxation in the Philippines § Value-added tax
+.
+[
+edit
+]
+The standard value-added tax (VAT) rate since 2006 is 12%, when
+Republic Act No. 9337
+came into effect;
+[
+93
+]
+[
+94
+]
+[
+95
+]
+previously, it had been 10% when it was first introduced by president
+Corazon Aquino
+in 1988 upon issuing Executive Order No. 273.
+[
+96
+]
+In 2018, the VAT threshold of annual sales was changed from ₱1,919,500 to ₱3,000,000
+[
+97
+]
+[
+98
+]
+as a result of the passage of the Tax Reform for Inclusion and Acceleration (TRAIN) Law.
+Poland
+[
+edit
+]
+VAT was introduced in 1993. The standard rate is 23%. Items and services eligible for an 8% include certain food products, newspapers, goods and services related to agriculture, medicine, sport, and culture. The complete list is in Annex 3 to the VAT Act. A 5% applies to basic food items (such as meat, fruits, vegetables, dairy and bakery products), children's items, hygiene products, and books. Exported goods, international transport services, supply of specific computer hardware to educational institutions, vessels, and air transport are zero rated. Taxi services have flat-rate tax of 4%. Flat-rate farmers supplying agricultural goods to VAT taxable entities are eligible for a 7% refund.
+[
+99
+]
+Romania
+[
+edit
+]
+Value-added tax (in Romanian
+Taxa pe valoarea adăugată
+, or TVA) in Romania is a consumption tax charged at a standard rate of 21%. A single reduced rate of 11% applies to most foodstuffs (alcoholic beverages excluded) and utilities.
+[
+100
+]
+Russia
+[
+edit
+]
+Further information:
+Taxation in Russia
+The VAT rate is 20% with exemptions for some services (for example, medical care). VAT payers include organizations (industrial and financial, state and municipal enterprises, institutions, business partnerships, insurance companies and banks), enterprises with foreign investments, individual entrepreneurs, international associations, and foreign entities with operations in the Russian Federation, non-commercial organizations that conduct commercial activities, and those who move goods across the border of the Customs Union.
+[
+101
+]
+[
+102
+]
+[
+103
+]
+In September 2025
+MinFin
+proposed to raise the VAT rate from 20% to 22% for 2026.
+[
+104
+]
+Singapore
+[
+edit
+]
+This section is an excerpt from
+Goods and Services Tax (Singapore)
+.
+[
+edit
+]
+Goods and Services Tax
+(GST) in
+Singapore
+is 9% levied on local sales, import of goods, as well as most supplies of goods and services. Exemptions are given for the sales and leases of residential properties, importation and local supply of investment precious metals and most financial services.
+[
+105
+]
+Export of goods and international services are zero-rated. GST is also absorbed by the government for public healthcare services, such as at public hospitals and polyclinics.
+Slovakia
+[
+edit
+]
+The standard rate is 23%. A 5% rate primarily applies to essential goods such as (healthy) food, medicine, and books.
+[
+106
+]
+Spain
+[
+edit
+]
+This section is an excerpt from
+Taxation in Spain § Value added tax
+.
+[
+edit
+]
+VAT (IVA in Spanish:
+impuesto sobre el valor añadido
+or
+impuesto sobre el valor agregado
+) is due on any supply of goods or services sold in Spain (mainland Spain and Balearic Islands only). The current normal rate is 21% which applies to all goods which do not qualify for a reduced rate or are exempt. There are two lower rates of 10% and 4%. The 10% rate is payable on most drinks, hotel services, and cultural events. The 4% rate is payable on food, books and medicines. The Spanish African territories of Ceuta, Melilla and the Canary Islands have other taxes equivalent to the VAT, but with lower tax rates
+[
+107
+]
+An EU directive means that all countries of the
+European Union
+have VAT. All exempt goods and services are listed below.
+Education provided by the state
+Tutoring
+Sporting services
+Cultural services
+Insurance
+Postal stamps
+Artists, writers, and composers
+As of January 1, 2013, new properties are taxed at a reduced rate of 10%. Second-hand properties are not subject to VAT, but a
+transfer tax
+, known as
+Impuestos Sobre Transmisiones Patrimoniales
+or ITP. The tax is levied by the autonomous regional governments and therefore varies by region. The rate varies from 6% to 8%.
+[
+107
+]
+South Africa
+[
+edit
+]
+South Africa applies a standard VAT rate of 15%, with specific zero-rated and exempt items; recent case law has clarified the treatment of certain entertainment expenses for VAT input claims.
+[
+108
+]
+This section is an excerpt from
+Taxation in South Africa § Value-Added Tax (VAT)
+.
+[
+edit
+]
+The VAT component of the tax revenue SARS collected in 2017/18 can be further broken down into Domestic VAT and Imported VAT, as per the table below:
+Breakdown of tax revenues on VAT 2017/18
+Type of tax
+Amounts in Rands
+Percentage of total
+Domestic VAT
+R 336.2 bn
+68.8%
+Import VAT
+R 152.8 bn
+31.2%
+VAT Refunds
+(R 191.0 bn)
+-39.1%
+Total
+R 298 bn
+100%
+Switzerland and Liechtenstein
+[
+edit
+]
+Further information:
+Taxation in Switzerland §
+Value added tax
+This section is an excerpt from
+Taxation in Switzerland § Value added tax
+.
+[
+edit
+]
+The
+value added tax
+(VAT;
+Mehrwertsteuer / Taxe sur la valeur ajoutée / Imposta sul valore aggiunto
+) is one of the Confederation's principal sources of funding. It is levied at a rate of 8.1 percent on most commercial exchanges of goods and services. Certain exchanges are subject to a reduced VAT of 2.6 percent:
+Foodstuffs (except alcoholic beverages)
+Cattle, poultry, fish
+Seeds, living plants, cut flowers
+Grains
+Animal feed and fertilizer
+Medications
+Newspapers, magazines, books and other printed products without advertising character of the kinds to be stipulated by the Federal Council
+Services of radio and television companies (exception: the normal rate applies for services of a commercial nature)
+A special rate of 3.8% is in use in the hotel industry.
+[
+109
+]
+Yet other exchanges, including those of medical, educational and cultural services, are tax-exempt; as are goods delivered and services provided abroad.
+[
+110
+]
+The party providing the service or delivering the goods is liable for the payment of the VAT, but the tax is usually passed on to the customer as part of the price.
+[
+111
+]
+In 2014 total revenue from VAT was nearly CHF 11
+billion
+(short scale) on CHF 866 billion of taxable sales. In 2013 the revenue and sales were CHF 10.3 billion and 858 billion respectively.
+[
+112
+]
+Taiwan
+[
+edit
+]
+Main article:
+Taxation in Taiwan
+VAT in Taiwan is 5%. It is levied on all goods and services. Exceptions include exports, vessels, aircraft used in international transportation, and deep-sea fishing boats.
+[
+113
+]
+Trinidad and Tobago
+[
+edit
+]
+VAT is 12.5%.
+Ukraine
+[
+edit
+]
+This section is an excerpt from
+Taxation in Ukraine § Value added tax
+.
+[
+edit
+]
+Value added tax is levied on the supply of goods and service in Ukraine and on the import and export of goods and auxiliary services. Supplies to and from Crimea are treated as exports and imports for value added tax purposes. The standard VAT rate is 20% for domestic supplies and imported goods (including auxiliary services). A 7% rate applies to supplies of pharmaceuticals and healthcare products. Exported goods and auxiliary services are zero-rated. For VAT purposes, services that are included in the customs value of imported and exported goods are considered auxiliary services. Certain supplies are not subject to VAT, including: issues of securities; insurance services; reorganization of legal entities; transfers and returns of property under operating lease arrangements; currency exchange; and imports and exports with a custom value of less than 150 EUR. VAT-exempt supplies include published periodicals; student notebooks, textbooks, books and certain educational services; certain public transport services; the provision of software products (until January 1. 2023); and the provision of healthcare services by licensed institutions. Registration is required (for residents and non-residents) if value of taxable supplies of goods or services exceeds ₴1 million during any 12-month period. A legal entity may apply for voluntary registration if it has no VAT-able activities or if the volume of its VAT-able transactions is less than the registration threshold. Although not specifically provided for in the Tax Code, in practice a nonresident entity must register for Ukrainian VAT purposes via representative office (RO) and/or permanent establishment (PE) in Ukraine.
+United Kingdom
+[
+edit
+]
+Further information:
+Value-added tax in the United Kingdom
+The United Kingdom introduced VAT in 1973 after joining the EEC.
+[
+2
+]
+The current standard rate for VAT in the United Kingdom since 2011 is 20%. Some goods and services have a reduced rate of 5% or are zero-rated (0%).
+[
+114
+]
+Others may be exempt.
+United States
+[
+edit
+]
+Further information:
+Sales taxes in the United States
+In the United States no federal VAT is in effect. Instead,
+sales and use taxes are used in most states
+.
+[
+115
+]
+[
+116
+]
+However, two states have enacted a form of VAT in lieu of a business income tax:
+Michigan
+used a form of VAT known as the "Single Business Tax" (SBT) from 1975 until voter-initiated legislation repealed it, replaced by the Michigan Business Tax in 2008.
+[
+117
+]
+Hawaii
+has a 4%
+General Excise Tax
+(GET) that is charged on gross business income. Individual counties add a .5% surcharge. Unlike a VAT, rebates are not available, such that items incur the tax each time they are (re)sold.
+[
+118
+]
+Puerto Rico
+replaced its 6% sales tax with a 10.5% VAT beginning 1 April 2016, leaving in place its 1% municipal sales and use tax. Materials imported for manufacturing are exempt.
+[
+119
+]
+[
+120
+]
+[
+121
+]
+Discussions about a federal VAT
+[
+edit
+]
+Former 2020 Democratic presidential candidate
+Andrew Yang
+advocated for a national VAT in order to pay for his
+universal basic income
+proposal. A national subtraction-method VAT, often referred to as a "flat tax", has been repeatedly proposed as a replacement of the corporate income tax.
+[
+8
+]
+[
+9
+]
+[
+10
+]
+A
+border-adjustment tax
+(BAT) was proposed by the
+Republican Party
+in 2016.
+[
+122
+]
+[
+33
+]
+:
+27
+[
+123
+]
+Vietnam
+[
+edit
+]
+All organizations and individuals producing and trading VAT taxable goods and services pay VAT, regardless of whether they have Vietnam-resident establishments.
+Vietnam has three VAT rates: 0 percent, 5 percent and 10 percent. 10 percent is the standard rate.
+A variety of goods and service transactions qualify for VAT exemption.
+[
+124
+]
+Tax rates
+[
+edit
+]
+Standard VAT or sales tax rate
+General government
+revenue, in
+% of
+GDP
+, from VAT. For this data, the
+variance
+of GDP per capita with purchasing power parity (PPP) is explained in 3% by tax revenue.
+See also:
+List of countries by tax rates
+Examples by continent
+[
+edit
+]
+European Union countries
+[
+edit
+]
+EU VAT Tax Rates
+Country
+Standard rate (current)
+[
+125
+]
+Reduced rate (current)
+Abbreviation
+Local name
+Austria
+20
 %
-Industry
-26,2
+10
+% for rental for the purpose of habitation, food, garbage collection, most transportation, etc.
+13% for plants, live animals and animal food, art, wine (if bought directly from the winemaker), etc.
+[
+126
+]
+MwSt./USt.
+MehrwertSteuer/UmsatzSteuer
+Belgium
+21
 %
-Services
-63,8
+[
+127
+]
+12
+% or 6% (for food or live necessary consumables) or 0% in some cases
+BTW
+TVA
+MwSt
+Belasting over de Toegevoegde Waarde
+Taxe sur la Valeur Ajoutée
+MehrwertSteuer
+Bulgaria
+20
 %
+9
+% (hotels) or 0%
+ДДС
+Данък Добавена Cтойност
+Croatia
+25
+%
+13
+% (since 1 January 2014) or 5% (since 1 January 2013)
+PDV
+Porez na Dodanu Vrijednost
+Cyprus
+19
+%
+[
+128
+]
+5
+% (8% for taxi and bus transportation)
+ΦΠΑ
+Φόρος Προστιθέμενης Αξίας
+Czech Republic
+21
+%
+[
+129
+]
+15
+% (food, public transport) or
+10
+% (medicines, pharmaceuticals, books and baby foodstuffs)
+DPH
+Daň z přidané hodnoty
+Denmark
+25
+%
+[
+130
+]
+0%
+Moms
+Meromsætningsafgift
+Estonia
+24
+%
+9
+%
+Km
+Käibemaks
+Finland
+25.5
+%
+14
+% (groceries, restaurants, medicines, cultural services and events, passenger transport, hotels, books) or 10% (newspapers and magazines )
+ALV
+Moms
+Arvonlisävero (Finnish)
+Mervärdesskatt (Swedish)
+France
+20
+%
+10
+% or 5.5% or 2.1%
+TVA
+Taxe sur la Valeur Ajoutée
+Germany
+19
+% (
+Heligoland
+0%)
+[
+131
+]
+7
+%
+[
+citation needed
+]
+for foodstuffs (except luxury-), books, flowers etc., 0% for postage stamps. (Heligoland always 0%)
+MwSt./USt.
+MehrwertSteuer/UmsatzSteuer
+Greece
+24
+%
+[
+132
+]
+(16% on Aegean islands)
+13
+% (6.5% for hotels, books and pharmaceutical products)
+(8% and 4% on Aegean islands)
+ΦΠΑ
+Φόρος Προστιθέμενης Αξίας
+Hungary
+27
+%
+[
+133
+]
+18
+% (milk and dairy products, cereal products, hotels, tickets to outdoor music events) or 5% (pharmaceutical products, medical equipment, books and periodicals, some meat products, district heating, heating based on renewable sources, live music performance under certain circumstances) or 0% (postal services, medical services, mother's milk, etc.)
+[
+134
+]
+áfa
+Általános Forgalmi Adó
+Ireland
+23
+%
+[
+135
+]
+13.5
+% or 9.0% or 4.8% or 0%
+CBl
+VAT
+Cáin Bhreisluacha (Irish)
+Value Added Tax (English)
+Italy
+22
+% (
+Livigno
+0%)
+[
+136
+]
+10
+% (hotels, bars, restaurants and other tourism products, certain foodstuffs, plant protection products and special works of building restoration, home-use utilities: electricity, gas used for cooking and water) or 4% (e.g. grocery staples, daily or periodical press and books, works for the elimination of architectural barriers, some kinds of seeds, fertilizers)
+IVA
+Imposta sul Valore Aggiunto
+Latvia
+21
+%
+12
+% or 0%
+PVN
+Pievienotās Vērtības Nodoklis
+Lithuania
+21
+%
+9
+% or 5%
+PVM
+Pridėtinės Vertės Mokestis
+Luxembourg
+17
+%
+[
+137
+]
+14
+% on certain wines, 8% on public utilities, or 3% on books and press, food (including restaurant meals), children's clothing, hotel stays, and public transit
+[
+137
+]
+TVA
+MwSt./USt
+MS
+Taxe sur la Valeur Ajoutée
+Mehrwertsteuer/Umsatzsteuer
+Méiwäert Steier
+Malta
+18
+%
+7
+% or 5% or 0%
+TVM
+VAT
+Taxxa tal-Valur Miżjud
+Value Added Tax
+Netherlands
+21
+%
+9
+% for special categories of products and services like food, medicine and art.
+0% for products and services that are already taxed in other countries or systems, for excise goods, and for fish.
+BTW/Ob
+Belasting over de Toegevoegde Waarde/ Omzetbelasting/ Voorbelasting
+Poland
+23
+%
+[
+128
+]
+[
+138
+]
+8
+% for beauty services, renovation and construction services, food services, food, tickets for public transportation (domestic connections).
+5% for food, some agricultural products, medical services, cultural services, sports and recreation services.
+0% for imported goods not covered by customs duties, tickets for public transportation (international connections) and services for repairing, processing or refining raw materials.
+[
+139
+]
+[
+140
+]
+[
+141
+]
+PTU
+Podatek od Towarów i Usług
+Portugal
+23
+%
+[
+142
+]
+[
+143
+]
+22% in
+Madeira
+and 18% in
+Azores
+[
+142
+]
+[
+143
+]
+13
+% for processed food, provision of services, and others such as oil and diesel, climate action focused goods and musical instruments and 6% for food products, agricultural services, and other deemed essential products such as farmaceutical products and public transport
+[
+144
+]
+12% or 5% in Madeira and 9% or 4% in Azores
+[
+142
+]
+[
+143
+]
+IVA
+Imposto sobre o Valor Acrescentado
+Romania
+19
+%
+[
+145
+]
+9
+% (food and non-alcoholic drinks) or 5% (buyers of new homes under special conditions)
+TVA
+Taxa pe Valoarea Adăugată
+Slovakia
+23
+%
+19
+% or 5%
+DPH
+Daň z Pridanej Hodnoty
+Slovenia
+22
+%
+[
+146
+]
+9.5
+%
+DDV
+Davek na Dodano Vrednost
+Spain
+21
+%
+7% in
+Canary Islands
+(not part of
+EU VAT area
+)
+10
+%
+(10% from 1 September 2012
+[
+147
+]
+)
+or 4%
+[
+136
+]
+[
+148
+]
+3% or 0% in Canary Islands
+IVA
+IGIC
+Impuesto sobre el Valor Añadido
+Impuesto General Indirecto Canario
+Sweden
+25
+%
+12
+% (e.g. food, hotels and restaurants), 6% (e.g. books, passenger transport, cultural events and activities), 0% (e.g. insurance, financial services, health care, dental care, prescription drugs, immovable property)
+[
+149
+]
+[
+150
+]
+MOMS
+Mervärdes- och OMSättningsskatt
+Non-European Union countries
+[
+edit
+]
+Country
+Standard rate (current)
+Reduced rate (current)
+Local name
+Albania
+[
+151
+]
+20%
+6% (accommodation services) or 0% (postal, medical, dental and welfare services)
+TVSH =
+Tatimi mbi Vlerën e Shtuar
+Algeria
+19%
+The reduced VAT rate in Algeria is currently 9%. It applies to basic goods and services such as food, medicine, and transportation.
+TVA = Taxe sur la Valeur Ajoutée
+(الضريبة على القيمة المضافة)
+Andorra
+[
+152
+]
+4.5%
+1%
+IGI =
+Impost General Indirecte
+Angola
+[
+153
+]
+14%
+5% which applies to the import and supply of certain goods (products of the Basic Basket listed in Annex I of the VAT Code and agricultural inputs)
+IVA =
+Imposto Sobre o Valor Acrescentado
+Antigua and Barbuda
+15%
+?
+Argentina
+21%
+10.5% or 0%
+IVA =
+Impuesto al Valor Agregado
+Armenia
+20%
+0%
+AAH = Avelacvats Arzheqi Hark
+ԱԱՀ = Ավելացված արժեքի հարկ
+Australia
+10%
+0
+% fresh food, medical services, medicines and medical devices, education services, childcare, water and sewerage, government taxes & permits and many government charges, precious metals, second-hand goods and many other types of goods. Rebates for exported goods and GST taxed business inputs are also available
+GST =
+Goods and Services Tax
+Azerbaijan
+18%
+10.5% or 0%
+ƏDV =
+Əlavə dəyər vergisi
+Bahamas
+[
+154
+]
+[
+155
+]
+12%
+12% or 0% (including but not limited to exports of goods or services, services to a foreign going vessel providing international commercial services, consumable goods for commercially scheduled foreign going vessels/aircraft, copyright, etc.)
+VAT = Value Added Tax
+Bahrain
+10%
+0% (pharmacies and medical services, road transport, education service, Oil and gas derivatives, Vegetables and fruits, National exports)
+(VAT) ضريبة القيمة المضافة
+Bangladesh
+15%
+4% for supplier, 4.5% for ITES, 5% for electricity, 5.5% for construction firm, etc.
+Musok = Mullo songzojon kor
+মূসক = "মূল্য সংযোজন কর"
+Barbados
+17.5%
+VAT = Value Added Tax
+Belarus
+20%
+10% or 0.5%
+ПДВ =
+Падатак на дададзеную вартасьць
+Belize
+12.5%
+?
+Benin
+18%
+?
+Bolivia
+13%
+IVA =
+Impuesto al Valor Agregado
+Bosnia and Herzegovina
+17%
+PDV =
+Porez na dodanu vrijednost
+Botswana
+14%
+[
+156
+]
+?
+Brazil
+20% (IPI) + 19% (ICMS) average + 3% (ISS) average
+0%
+*IPI – 20% =
+Imposto sobre produtos industrializados (Tax over industrialized products) – Federal Tax
+ICMS – 17 to 25% =
+Imposto sobre circulação e serviços (tax over commercialization and services) – State Tax
+ISS – 2 to 5% =
+Imposto sobre serviço de qualquer natureza (tax over any service)
+–
+City tax
+Burkina Faso
+18%
+?
+Burundi
+18%
+?
+Cambodia
+10%
+?
+Cameroon
+19.25%
+?
+Canada
+5% GST + 0–9.975% PST or 13-15% HST depending on province.
+0%
+[
+a
+]
+on GST or HST for Prescription drugs, medical devices, basic groceries, agricultural/fishing products, exported or foreign goods, services and travel. Other exemptions exist for PSTs and vary by province.
+GST =
+Goods and Services Tax
+TPS =
+Taxe sur les produits et services
+HST
+[
+b
+]
+=
+Harmonized Sales Tax
+PST =
+Provincial Sales Tax
+Cape Verde
+15%
+?
+Central African Republic
+19%
+?
+Chad
+18%
+?
+Chile
+19%
+IVA =
+Impuesto al Valor Agregado
+China
+[
+c
+]
+13%
+9% for foods, printed matter, and households fuels; 6% for service; or 3% for non-VAT
+增值税 (zēng zhí shuì)
+Colombia
+19%
+IVA =
+Impuesto al Valor Agregado
+Costa Rica
+13%
+IVA =
+Impuesto al Valor Agregado
+Democratic Republic of the Congo
+16%
+?
+Dominica
+15%
+?
+Dominican Republic
+18%
+12% or 0%
+ITBIS =
+Impuesto sobre Transferencia de Bienes Industrializados y Servicios
+Ecuador
+15%
+[
+157
+]
+0%
+IVA =
+Impuesto al Valor Agregado
+Egypt
+14% (15% on communication services)
+VAT = Value Added Tax
+(الضريبة على القيمة المضافة)
+El Salvador
+13%
+IVA =
+Impuesto al Valor Agregado
+o "Impuesto a la Transferencia de Bienes Muebles y a la Prestación de Servicios"
+Equatorial Guinea
+15%
+IVA =
+Impuesto sobre el Valor Añadido
+Eswatini
+[
+158
+]
+15%
+Ethiopia
+15%
+VAT = Value Added Tax
+Faroe Islands
+25%
+MVG =
+Meirvirðisgjald
+Fiji
+15%
+0%
+VAT =
+Value Added Tax
+Gabon
+18%
+TVA =
+Taxe sur la Valeur Ajoutée
+Gambia
+[
+159
+]
+15%
+VAT = Value Added Tax
+Georgia
+18%
+0%
+DGhG =
+Damatebuli Ghirebulebis gadasakhadi
+დღგ = დამატებული ღირებულების გადასახადი
+Ghana
+15%
+VAT = Value Added Tax plus National Health Insurance Levy (NHIL; 2.5%)
+Grenada
+15%
+?
+Guatemala
+12%
+IVA =
+Impuesto al Valor Agregado
+Guinea
+18%
+?
+Guinea-Bissau
+15%
+?
+Guyana
+16%
+0%
+VAT =
+Value Added Tax
+Haiti
+10%
+?
+Honduras
+15% (4% additional on tourism tax)
+[
+160
+]
+ISV = Impuesto Sobre Ventas
+Iceland
+24%
+11%
+[
+d
+]
+VSK
+,
+VASK
+=
+Virðisaukaskattur
+India
+[
+e
+]
+[
+161
+]
+18%
+5%
+VAT =
+Value Added Tax
+Indonesia
+[
+162
+]
+12%
+12%, 0% for primary groceries, medical services, financial services, education and also insurance
+PPN =
+Pajak Pertambahan Nilai
+Iran
+9%
+VAT =
+Value Added Tax
+(مالیات بر ارزش افزوده)
+Isle of Man
+20%
+?
+Israel
+[
+f
+]
+18%
+[
+g
+]
+(0% in
+Eilat
+)
+0% (fruits and vegetables, tourism services for foreign citizens, intellectual property, diamonds, flights and apartments renting)
+Ma'am =
+מס ערך מוסף, מע"מ
+Ivory Coast
+18%
+?
+Jamaica
+[
+164
+]
+15%
+GCT =
+General Consumption Tax
+Japan
+10%
+8% (groceries, Subscription newspaper)
+shōhizei
+(
+消費税
+)
+("consumption tax")
+Jersey
+[
+h
+]
+5%
+0%
+GST =
+Goods and Services Tax
+Jordan
+16%
+GST =
+Goods and Sales Tax
+Kazakhstan
+12%
+ҚCҚ =
+Қосылған құнға салынатын салық
+(Kazakh)
+VAT =
+Value Added Tax
+Kenya
+16%
+?
+Kyrgyzstan
+20%
+?
+Laos
+10%
+?
+Lebanon
+11%
+TVA = Taxe sur la Valeur Ajoutée
+(الضريبة على القيمة المضافة)
+Lesotho
+14%
+?
+Liechtenstein
+[
+165
+]
+8.1%
+3.8% (lodging services) or 2.6%
+MWST =
+Mehrwertsteuer
+Madagascar
+20%
+TVA =
+Taxe sur la Valeur Ajoutée
+, HASS =
+Hetra Amin'ny Sandan'ny Sandany
+Malawi
+16.5%
+?
+Malaysia
+[
+i
+]
+8%
+0% for fresh foods, education, healthcare, land public transportation and medicines. Sales and Services Tax (SST) was reintroduced by the Malaysian Government on 1 September 2018 to replace the Goods and Services Tax (GST) which had only been introduced just over three years before that, on 1 April 2015.
+[
+167
+]
+SST =
+Sales and Services Tax
+CJP = Cukai Jualan dan Perkhidmatan
+GST =
+Goods and Services Tax (Malaysia)
+Maldives
+6%
+0%
+GST =
+Goods and services tax
+(Government Tax)
+Mali
+18%
+?
+Mauritania
+14%
+TVA = Taxe sur la Valeur Ajoutée
+(الضريبة على القيمة المضافة)
+Mauritius
+15%
+VAT =
+Value Added Tax
+, TVA =
+Taxe sur la Valeur Ajoutée
+, TVA =
+Tax lor Valer Azoute
+Mexico
+16%
+0% on books, food and medicines.
+IVA =
+Impuesto al Valor Agregado
+Moldova
+20%
+8%, 5% or 0%
+TVA =
+Taxa pe Valoarea Adăugată
+Monaco
+[
+168
+]
+19.6%
+5.6%
+TVA =
+Taxe sur la valeur ajoutée
+Mongolia
+10%
+0%
+VAT =
+Нэмэгдсэн өртгийн албан татвар
+Montenegro
+21%
+7%
+PDV =
+Porez na dodatu vrijednost
+Morocco
+20%
+TVA = Taxe sur Valeur Ajoutée
+(الضريبة على القيمة المضافة)
+Mozambique
+[
+169
+]
+16%
+IVA =
+Imposto Sobre o Valor Acrescentado
+Namibia
+15%
+0%
+VAT =
+Value Added Tax
+Nepal
+13%
+0%
+VAT =
+Value Added Taxes
+New Zealand
+15%
+0% (donated goods and services sold by non-profits, financial services, rental payments for residential properties, supply of fine metals, and penalty interest).
+[
+170
+]
+GST =
+Goods and Services Tax
+Nicaragua
+15%
+?
+Niger
+19%
+?
+Nigeria
+7.5%
+?
+Niue
+5%
+?
+North Macedonia
+18%
+5% or 0%
+ДДВ =
+Данок на додадена вредност
+, DDV =
+Danok na dodadena vrednost
+Norway
+25%
+15% (food), 12% (public transport, hotel, cinema) and 0% for electric cars (until 2018)
+[
+171
+]
+MVA =
+Merverdiavgift
+(bokmål) or
+meirverdiavgift
+(nynorsk) (informally
+moms
+)
+Pakistan
+[
+172
+]
+18%
+1% or 0%
+GST =
+General Sales Tax
+Palau
+10%
+[
+173
+]
+PGST =
+Palau Goods & Services Tax
+Palestine
+16%
+VAT =
+Value Added Tax
+Panama
+7%
+0%
+ITBMS =
+Impuesto de Transferencia de Bienes Muebles y Servicios
+Papua New Guinea
+10%
+?
+Paraguay
+10%
+5%
+IVA=
+Impuesto al Valor Agregado
+Peru
+18%
+IGV – 16% =
+Impuesto General a la Ventas
+IPM – 2%
+Impuesto de Promocion Municipal
+Philippines
+12%
+[
+j
+]
+6% on petroleum products, and electricity and water services
+0% for senior citizens (all who are aged 60 and above) on medicines, professional fees for physicians, medical and dental services, transportation fares, admission fees charged by theaters and amusement centers, and funeral and burial services after the death of the senior citizen
+RVAT =
+Reformed Value Added Tax
+, locally known as
+Karagdagang Buwis / Dungag nga Buhis
+Republic of Congo
+16%
+?
+Russia
+20%
+10% (essential food, goods for children and medical products)
+[
+175
+]
+or 0%
+НДС =
+Налог на добавленную стоимость
+, NDS =
+Nalog na dobavlennuyu stoimost'
+Rwanda
+18%
+0%
+VAT =
+Value Added Tax
+, TVA =
+Taxe sur la Valeur Ajoutée
+, UN =
+Umusoro ku Nyongeramusaruro
+Saint Kitts and Nevis
+17%
+VAT =
+Value Added Tax
+Saint Vincent and the Grenadines
+15%
+?
+Samoa
+15%
+VAT =
+Value Added Tax
+, LFT =
+Lafoga Fa'aopoopo Tau
+Saudi Arabia
+15%
+ضريبة القيمة المضافة (VAT)
+Senegal
+18%
+?
+Serbia
+20%
+[
+176
+]
+10%
+[
+177
+]
+or 0%
+ПДВ =
+Порез на додату вредност
+, PDV =
+Porez na dodatu vrednost
+Seychelles
+15%
+?
+Sierra Leone
+15%
+?
+Singapore
+9%
+0% for public healthcare services, such as at public hospitals and polyclinics, with GST absorbed by the government.
+GST =
+Goods and Services Tax
+South Africa
+15%
+0% on basic foodstuffs such as bread, additionally on goods donated not for gain; goods or services used for educational purposes, such as school computers; membership contributions to an employee organization (such as labour union dues); and rent paid on a house by a renter to a landlord.
+[
+178
+]
+VAT =
+Valued Added Tax
+; BTW =
+Belasting op toegevoegde waarde
+South Korea
+10%
+0% (essential foodstuffs)
+VAT =
+bugagachise
+(
+Korean
+:
+부가가치세
+;
+Hanja
+:
+附加價値稅
+)
+Sri Lanka
+[
+179
+]
+18%
+0%
+VAT =
+Valued Added Tax
+has been in effect in Sri Lanka since 2001. On the 2001 budget, the rates have been revised to 12% and 0% from the previous 20%, 12% and 0%
+Sudan
+17%
+?
+Switzerland
+8.1%
+[
+180
+]
+3.8% (hotel sector) and 2.6% (essential foodstuff, books, newspapers, medical supplies)
+[
+180
+]
+MWST =
+Mehrwertsteuer
+, TVA =
+Taxe sur la valeur ajoutée
+, IVA =
+Imposta sul valore aggiunto
+, TPV =
+Taglia sin la Plivalur
+Taiwan
+5%
+營業稅 yíng yè shuì (business tax) / 加值型營業稅 jiā zhí xíng yíng yè shuì (value-added business tax)
+Tajikistan
+20%
+?
+Tanzania
+18%
+?
+Thailand
+10%
+7%
+VAT =
+Value Added Tax
+, ภาษีมูลค่าเพิ่ม
+Togo
+18%
+?
+Tonga
+15%
+VAT =
+Value Added Tax
+, TTM =
+Tukuhau Tānaki Mahuʻinga
+Trinidad and Tobago
+12.5%
+0%
+?
+Tunisia
+[
+181
+]
+19%
+TVA =
+Taxe sur la Valeur Ajoutée
+آداء على القيمة المضافة
+Turkey
+20%
+10% or 1%
+KDV =
+Katma değer vergisi
+Turkmenistan
+15%
+GGS =
+Goşulan Gymmatlyk Salgydy
+Uganda
+18%
+?
+Ukraine
+20%
+7% or 0%
+ПДВ =
+Податок на додану вартість
+, PDV =
+Podatok na dodanu vartist'
+United Arab Emirates
+5%
+ضريبة القيمة المضافة
+United Kingdom
+20
+%
+[
+182
+]
+0% in
+Guernsey
+and
+Gibraltar
+(not part of
+EU VAT area
+)
+5
+% residential energy/insulation/renovations,
+feminine hygiene
+products,
+child safety seats
+and
+mobility aids
+and 0% for life necessities
+–
+basic food, water,
+prescription medications
+,
+medical equipment
+and
+medical supply
+, public transport, children's clothing, books and periodicals. Also 0% for new building construction (but standard rate for building demolition, modifications, renovation etc.)
+[
+183
+]
+VAT =
+Value Added Tax
+TAW = Treth Ar Werth (Welsh)
+Uruguay
+22%
+18% or 0%
+IVA =
+Impuesto al Valor Agregado
+Uzbekistan
+12%
+QQS = Qoʻshilgan Qiymat Soligʻi
+Vanuatu
+[
+184
+]
+15%
+?
+Venezuela
+[
+185
+]
+16%
+11%
+IVA =
+Impuesto al Valor Agregado
+Vietnam
+10%
+5% or 0%
+GTGT =
+Giá Trị Gia Tăng
+Zambia
+16%
+VAT =
+Value Added Tax
+Zimbabwe
+15%
+VAT =
+Value Added Tax
+Yemen
+[
+186
+]
+5%
+آداء على القيمة المضافة
+↑
+No reduced rate, but rebates generally available for certain services
+↑
+HST is a combined federal/provincial sales tax collected in some provinces. GST is a 5% federal sales tax collected separately if there is a PST. 5% of HSTs go to the federal government and the remainder to the province.
+↑
+These taxes do not apply in Hong Kong and
+Macau
+, which are
+financially
+independent and VAT-free as
+special administrative regions
+.
+↑
+The reduced rate was 14% until 1 March 2007, when it was lowered to 7%, and later changed to 11%. The reduced rate applies to heating costs, printed matter, restaurant bills, hotel stays, and most food.
+↑
+VAT is not implemented in 2 of India's 28 states.
+↑
+Except Eilat, where VAT is not raised.
+[
+163
+]
+↑
+The VAT in Israel is in a state of flux. It was reduced from 18% to 17% in March 2004, to 16.5% in September 2005, then to 15.5% in July 2006. It was then raised back to 16.5% in July 2009, and lowered to the rate of 16% in January 2010. It was then raised again to 17% on 1 September 2012, and once again on 2 June 2013, to 18%. It was reduced from 18% to 17% in October 2015. And finally increased to 18% on 1 January 2025.
+↑
+The introduction of a goods and sales tax of 3% on 6 May 2008 was to replace revenue from Company Income Tax following a reduction in rates.
+↑
+In the 2014 Budget, the government announced that GST would be introduced in April 2015. Piped water, power supply (the first 200 units per month for domestic consumers), transportation services, education, and health services are tax-exempt. However, many details have not yet been confirmed.
+[
+166
+]
+↑
+The
+President of the Philippines
+has the power to raise the tax to 12% after 1 January 2006. The tax was raised to 12% on 1 February.
+[
+174
+]
+VAT-free countries and territories
+[
+edit
+]
+As of January 2022, the countries and territories listed remained VAT-free.
+[
+citation needed
+]
+Country
+[
+187
+]
+Notes
+Akrotiri and Dhekelia
+British Overseas Territory
+Anguilla
+British Overseas Territory
+Bermuda
+British Overseas Territory
+British Antarctic Territory
+British Overseas Territory
+British Indian Ocean Territory
+British Overseas Territory
+British Virgin Islands
+British Overseas Territory
+Brunei
+—
+N/a
+Cayman Islands
+British Overseas Territory
+Cuba
+—
+N/a
+Falkland Islands
+British Overseas Territory
+Gibraltar
+British Overseas Territory
+Guernsey
+British Crown Dependency
+Greenland
+Constituent country of the
+Kingdom of Denmark
+Hong Kong
+Special administrative region of China
+Iraq
+—
+N/a
+Kiribati
+—
+N/a
+Libya
+—
+N/a
+Macau
+Special administrative region of China
+Maldives
+—
+N/a
+Marshall Islands
+—
+N/a
+Micronesia
+—
+N/a
+Montserrat
+British Overseas Territory
+Myanmar
+—
+N/a
+Nauru
+—
+N/a
+North Korea
+—
+N/a
+Pitcairn Islands
+British Overseas Territory
+Saint Helena, Ascension and Tristan da Cunha
+British Overseas Territory
+San Marino
+—
+N/a
+Sao Tome and Principe
+—
+N/a
+Solomon Islands
+—
+N/a
+Somalia
+—
+N/a
+South Georgia and the South Sandwich Islands
+British Overseas Territory
+Svalbard
+—
+N/a
+Syria
+—
+N/a
+Timor Leste
+—
+N/a
+Turks and Caicos Islands
+British Overseas Territory
+Tuvalu
+—
+N/a
+United States
+Sales taxes
+are collected by most states and some cities, counties, and Native American reservations. The federal government collects
+excise tax
+on some goods, but does not collect a nationwide sales tax.
+Vatican City
+—
+N/a
 See also
 [
 edit
 ]
-Economy of Africa
-List of companies based in Tunisia
-United Nations Economic Commission for:
-Africa
-&
-Western Asia
+Excise
+Flat tax
+Georgism
+Gross receipts tax
+Henry George
+Import One-Stop Shop
+(IOSS)
+Income tax
+Land value tax
+Missing trader fraud
+(Carousel VAT Fraud)
+Progressive tax
+Single tax
+X tax
+General:
+List of countries by tax rates
 References
 [
 edit
 ]
-↑
-"World Economic Outlook Database, April 2019"
+1
+2
+Consumption Tax Trends 2018: VAT/GST and excise rates, trends and policy issues
+. Secretary-General of the OECD. 2018.
+doi
+:
+10.1787/ctt-2018-en
 .
-IMF.org
+ISBN
+978-92-64-22394-3
+.
+S2CID
+239487087
+. Archived from
+the original
+on 27 November 2017
+. Retrieved
+24 September
+2016
+.
+1
+2
+3
+ICAEW Insights (18 September 2024).
+"A brief history of VAT in Europe and the UK"
+.
+ICAEW
+. Retrieved
+11 October
+2024
+.
+↑
+Helgason, Agnar Freyr (2017). "Unleashing the 'money machine': the domestic political foundations of VAT adoption".
+Socio-Economic Review
+.
+15
+(4):
+797–
+813.
+doi
+:
+10.1093/ser/mwx004
+.
+↑
+"Les recettes fiscales"
+.
+Le budget et les comptes de l'État
+(in French).
+Minister of the Economy, Industry and Employment (France)
+. 30 October 2009. Archived from
+the original
+on 2 January 2010
+. Retrieved
+15 May
+2009
+.
+la TVA représente 125,4
+milliards d'euros, soit 49,7% des recettes fiscales nettes de l'État.
+↑
+M.A.G. van Meerhaeghe
+,
+Taxation and the European Community
+, Economia delle Scelte Pubbliche, Vol. VII, 1989-1/2, pp.
+18–19.
+↑
+Europäische Wirtschaftsgemeinschaft – Kommission: Bericht des Steuer- und Finanzausschusses (Neumark Bericht), Brüssel 1963.
+↑
+Bodin, Jean-Paul; Ebril, Liam P.; Keen, Michael; Summers, Victoria P. (5 November 2001).
+The Modern VAT
 .
 International Monetary Fund
+.
+ISBN
+978-1-58906-026-5
 . Retrieved
-29 September
-2019
-.
-↑
-"World Bank Country and Lending Groups"
-.
-datahelpdesk.worldbank.org
-.
-World Bank
-. Retrieved
-29 September
-2019
-.
-↑
-"Population, total - Tunisia"
-.
-data.worldbank.org
-.
-World Bank
-. Retrieved
-3 October
-2019
-.
-1
-2
-3
-4
-5
-"World Economic Outlook Database, October 2025"
-.
-IMF.org
-. Retrieved
-18 October
-2025
-.
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-"The World Factbook"
-.
-CIA.gov
-.
-Central Intelligence Agency
-. Retrieved
-12 May
-2019
-.
-↑
-"Tunisia Data"
-. World Bank
-. Retrieved
-21 August
-2026
-.
-↑
-"Poverty headcount ratio at national poverty lines (% of population) - Tunisia"
-.
-data.worldbank.org
-. World Bank
-. Retrieved
-20 March
-2020
-.
-↑
-"Poverty headcount ratio at $5.50 a day (2011 PPP) (% of population) - Tunisia"
-.
-data.worldbank.org
-. World Bank
-. Retrieved
-20 March
-2020
-.
-↑
-"GINI index (World Bank estimate)"
-.
-data.worldbank.org
-.
-World Bank
-. Retrieved
-12 May
-2019
-.
-↑
-"Human Development Index (HDI)"
-(PDF)
-.
-hdr.undp.org
-.
-HDRO (Human Development Report Office)
-United Nations Development Programme
-. Retrieved
-8 May
-2025
-.
-↑
-"Inequality-adjusted Human Development Index (IHDI)"
-.
-hdr.undp.org
-.
-HDRO (Human Development Report Office)
-United Nations Development Programme
-. Retrieved
-8 May
-2025
-.
-↑
-"Labor force, total - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Employment to population ratio, 15+, total (%) (modeled ILO estimate) - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Unemployment, total (% of total labor force) (modeled ILO estimate) - Tunisia"
-.
-World Bank
-. Retrieved
-18 January
-2026
-.
-↑
-"Unemployment, youth total (% of total labor force ages 15-24)"
-.
-World Bank Open Data
-. 2026
-. Retrieved
-15 June
-2026
-.
-↑
-"Rankings by Country of Average Monthly Net Salary (After Tax) (Salaries And Financing)"
-.
-www.numbeo.com
-.
-1
-2
-"Export partners of Tunisia"
-. The Observatory of Economic Complexity
-. Retrieved
-4 February
-2026
-.
-1
-2
-"Import partners of Tunisia"
-. The Observatory of Economic Complexity
-. Retrieved
-4 February
-2026
-.
-↑
-"Sovereigns rating list"
-. Standard & Poor's
-. Retrieved
-26 May
-2011
-.
-1
-2
-3
-Rogers, Simon; Sedghi, Ami (15 April 2011).
-"How Fitch, Moody's and S&P rate each country's credit rating"
-.
-The Guardian
-. Retrieved
-28 May
-2011
-.
-↑
-"World Bank country classifications by income level for 2024-2025"
-.
-World Bank Blogs
-. Retrieved
-9 July
-2026
-.
-↑
-"Economic and political overview in Tunisia"
-.
-international.groupecreditagricole.com
-. Retrieved
-9 July
-2026
-.
-↑
-"World Bank Open Data"
-.
-World Bank Open Data
-. Retrieved
-9 July
-2026
-.
-↑
-"Annual Report 2007-2008"
-.
-World Economic Forum
-. Archived from
-the original
-on 14 April 2026
-. Retrieved
-9 July
-2026
-.
-↑
-"Tunisia Economy, Politics and GDP Growth Summary - The Economist Intelligence Unit"
-.
-country.eiu.com
-.
-↑
-"Tunisia: GDP per capita"
-.
-Index Mundi
-. Retrieved
-2 July
+30 April
 2012
 .
-↑
-"CIA World Factbook"
-.
-cia.gov
-. CIA. Archived from
-the original
-on 10 January 2021
-. Retrieved
-16 July
-2015
-.
-↑
-"Tunisia's tourism grappling with job losses"
-.
-BBC World
-. 15 July 2015
-. Retrieved
-16 July
-2015
-.
-↑
-"A Tunis, les chiffonniers sortent de l'ombre"
-.
-Le Monde
-. 28 May 2019
-. Retrieved
-11 April
-2022
-.
-↑
-"Le gouverneur de la Banque centrale de Tunisie s'inquiète pour 2023"
-.
-Jeune Afrique
-. 5 January 2025
-. Retrieved
-12 October
-2025
-.
-↑
-"World Economic Outlook (April 2026) – Tunisia"
-.
-IMF Data Mapper
-. International Monetary Fund
-. Retrieved
-4 October
-2026
-.
-↑
-"Data - Finance"
-. Archived from
-the original
-on 5 December 2006
-. Retrieved
-2009-12-31
-.
-↑
-"Hoping to preserve democracy, Tunisia woos foreign investors"
-. Archived from
-the original
-on 30 November 2016.
-↑
-Amara, Tarek (23 December 2022).
-"Tunisia seeks to cut fiscal deficit to 5.5% in 2023, led by economic reforms"
-.
-Reuters
-. Retrieved
-28 December
-2022
-.
-↑
-"Defiant in Debt: Breaking Free from Global Purse in Tunisia - Daily Euro Times"
-.
-dailyeurotimes.com
-. 4 March 2025
-. Retrieved
-5 March
-2025
-.
-↑
-"Tunisia reports marked growth in exports to Libya"
-.
-Libyan Express
-. 24 April 2025
-. Retrieved
-24 April
-2025
-.
-↑
-"Treasury Secretary Geithner and Tunisian Finance Minister Dimassi Sign Declaration to Work Toward U.S. Loan Guarantee for Tunisia"
-. U.S. Department of the Treasury
-. Retrieved
-13 June
-2012
-.
-↑
-Timothy Geithner
-↑
-"FAQs: U.S. Loan Guarantee for Tunisia"
+1
+2
+3
+Bickley, James M. (3 January 2008).
+"Value-Added Tax: A New U.S. Revenue Source?"
 (PDF)
-. U.S. Department of the Treasury.
+(Report).
+Congressional Research Service
+. pp.
+1, 3. RL33619.
 Archived
 (PDF)
-from the original on 27 July 2014
+from the original on 28 June 2016
 . Retrieved
-13 September
+24 September
+2016
+.
+1
+2
+3
+Cole, Alan (29 October 2015).
+"Ted Cruz's "Business Flat Tax:" A Primer"
+.
+Tax Policy Blog
+. Tax Foundation
+. Retrieved
+24 September
+2016
+.
+1
+2
+3
+Beram, Philip.
+An Introduction to the Value Added Tax (VAT)
+(PDF)
+(Report).
+United States Chamber of Commerce
+.
+Archived
+(PDF)
+from the original on 24 September 2016
+. Retrieved
+24 September
+2016
+.
+↑
+Minh Le, Tuan (1 May 2003).
+Value Added Taxation: Mechanism, Design, and Policy Issues
+. World Bank.
+S2CID
+9409506
+.
+the mechanism provides strong incentives for firms to keep invoices
+↑
+Brockmeyer, Anne; Mascagni, Giulia; Nair, Vedanth; Waseem, Mazhar; Almunia, Miguel (2024).
+"Does the Value-Added Tax Add Value? Lessons Using Administrative Data from a Diverse Set of Countries"
+.
+Journal of Economic Perspectives
+.
+38
+(1):
+107–
+132.
+doi
+:
+10.1257/jep.38.1.107
+.
+ISSN
+0895-3309
+.
+1
+2
+3
+"Why is the VAT administratively superior to a retail sales tax?"
+.
+Tax Policy Briefing Book
+.
+Tax Policy Center
+. Retrieved
+23 September
+2025
+.
+↑
+Stigler, George J (1952).
+Readings in price theory
+. Chicago: R. D. Irwin. pp.
+338–
+339.
+↑
+Ghosh, Pulak; Jacob, Martin; Kang, Ya; Zhang, Jian (2025). "Consumption Tax and Corporate Product Mix Decisions".
+SSRN Electronic Journal
+.
+doi
+:
+10.2139/ssrn.5159703
+.
+↑
+kristenbickerstaff (21 December 2020).
+"What is the difference between sales tax and VAT?"
+.
+Tax & Accounting Blog Posts by Thomson Reuters
+. Retrieved
+20 July
+2023
+.
+1
+2
+"Options for Reducing the Deficit: 2019 to 2028"
+. Congressional Budget Office. 13 December 2018
+. Retrieved
+1 March
+2020
+.
+↑
+Brys, Bert; Colin, Céline; Melo, Gioia de; Rehm, Yannic; Sicsic, Michaël (2022).
+OECD Taxation Working Papers: Reassessing the regressivity of the VAT
+(Report). OECD Taxation Working Papers. Organisation for Economic Co-Operation and Development (OECD).
+doi
+:
+10.1787/22235558
+.
+ISSN
+2223-5558
+.
+↑
+Enache, Cristina (13 August 2020).
+"Contrary to Popular Belief, Value-Added Taxes Found to Be Slightly Progressive"
+.
+Tax Foundation
+.
+↑
+Chia-Tern Huey Min (October 2004)
+GST in Singapore: Policy Rationale, Implementation Strategy & Technical Design
+, Singapore Ministry of Finance.
+↑
+"Rätt lagat? Effekter av sänkt moms på restaurang- och cateringtjänster i Sverige"
+(PDF)
+.
+nationalekonomi.se
+. Archived from
+the original
+(PDF)
+on 24 May 2023
+. Retrieved
+5 October
+2023
+.
+↑
+Law, Henry (30 September 2022).
+"The dead loss of VAT - September 2022"
+. Land Value Tax Campaign.
+↑
+"The impact of VAT compliance on business"
+(PDF)
+. PriceWaterhouseCoopers. September 2010.
+↑
+"The impact of VAT compliance on business"
+(PDF)
+. PricewaterhouseCoopers
+. Retrieved
+30 May
+2022
+.
+↑
+Abolins, Jon (1 May 2002).
+"VAT Software: compliance costs"
+.
+Accountancy Daily
+.
+↑
+Crawford, Ian; Keen, Michael; Smith, Stephen.
+"Value Added Tax and Excises"
+(PDF)
+.
+Institute for Fiscal Studies
+. Archived from
+the original
+(PDF)
+on 15 August 2022
+. Retrieved
+28 July
+2021
+.
+↑
+"VAT Gap - European Commission"
+.
+taxation-customs.ec.europa.eu
+.
+↑
+O'Grady, Sean (26 July 2007) "
+Carousel fraud 'has cost UK up to £16bn'
+",
+The Independent
+.
+↑
+"Now is the Time to Reform the Income Tax with a VAT!
+|
+Economy in Crisis"
+. Archived from
+the original
+on 23 March 2016
+. Retrieved
+17 March
+2016
+.
+↑
+"China to increase export tax rebates on 397 products"
+. Reuters. 7 September 2018
+. Retrieved
+9 April
+2025
+.
+↑
+"Border Adjusted Taxation / Value Added Tax (VAT)"
+. Amtacdc.org
+. Retrieved
+30 April
 2012
 .
+↑
+Thiessen, Marc A. (17 January 2017).
+"Yes, Trump can make Mexico pay for the border wall. Here's how"
+.
+The Washington Post
+. Retrieved
+17 January
+2017
+.
 1
 2
-"A helping hand for young entrepreneurs in Tunisia"
+"A Better Way— Our Vision for a Confident America"
+(PDF)
 .
-European Investment Bank
+Republican Party
+. 24 June 2016. Archived from
+the original
+(PDF)
+on 16 January 2017
 . Retrieved
-15 July
+17 January
+2017
+.
+↑
+Freund, Caroline
+(18 January 2017).
+"Trump Is Right: 'Border Adjustment' Tax Is Complicated"
+.
+BloombergView
+. Bloomberg LP
+. Retrieved
+19 January
+2017
+.
+↑
+Benzarti, Youssef; Tazhitdinova, Alisa (2021).
+"Do Value-Added Taxes Affect International Trade Flows? Evidence from 30 Years of Tax Reforms"
+(PDF)
+.
+American Economic Journal: Economic Policy
+.
+13
+(4):
+469–
+489.
+doi
+:
+10.1257/pol.20190492
+.
+ISSN
+1945-7731
+.
+S2CID
+240240194
+.
+1
+2
+"Armenia - Corporate - Other taxes"
+.
+taxsummaries.pwc.com
+.
+↑
+The tax system in Armenia: Economy: Armenia travel, history, Archeology
+&
+Ecology: Tourarmenia: Travel guide to Armenia. THE TAX SYSTEM IN ARMENIA | Economy | Armenia Travel, History, Archeology
+&
+Ecology | TourArmenia | Travel Guide to Armenia. (n.d.). Retrieved 3 December 2022.
+↑
+"Armenia to change VAT rules covering digital services supplied by non-residents"
+. Vertex, Inc. 14 March 2022
+. Retrieved
+3 December
+2022
+.
+↑
+"5.pdf"
+(PDF)
+.
+National Board of Revenue
+.
+1
+2
+"বাংলাদেশ জাতীয় সংসদ"
+(PDF)
+.
+National Board of Revenue
+. Retrieved
+5 October
+2023
+.
+↑
+"8.pdf"
+(PDF)
+.
+National Board of Revenue
+.
+↑
+"13.pdf"
+(PDF)
+.
+National Board of Revenue
+.
+↑
+"NBR seeks extension of time, cost for VAT online project"
+.
+New Age
+. 8 August 2017. p.
+1.
+↑
+"Microsoft Word - 3472-Act-20-National Parliament-21 November 2015_9075-9077"
+(PDF)
+.
+National Board of Revenue
+. Retrieved
+5 October
+2023
+.
+↑
+"VATR2016"
+(PDF)
+.
+National Board of Revenue
+. Retrieved
+5 October
+2023
+.
+↑
+"Import Tariffs"
+. International Trade Administration. 25 September 2021
+. Retrieved
+3 March
+2022
+.
+↑
+"Caribbean National Budgets | 2011 Barbados Budget Address"
+.
+caribbeanelections.com
+. Archived from
+the original
+on 3 March 2022
+. Retrieved
+3 March
+2022
+.
+↑
+"Barbados Taxes"
+.
+barbados.org
+. Retrieved
+3 March
+2022
+.
+↑
+"Value Added Tax (V.A.T.)"
+.
+bra.gov.bb
+. Archived from
+the original
+on 3 March 2022
+. Retrieved
+3 March
+2022
+.
+↑
+"Ley No. 825 Sobre Impuesto a las Ventas y Servicios"
+.
+sii.cl
+. Retrieved
+26 March
+2023
+.
+↑
+"SII | Servicio de Impuestos Internos"
+.
+sii.cl
+. Retrieved
+16 April
+2024
+.
+↑
+Musto, Luke (28 June 2022).
+"Chile Tax Law Update: VAT to be levied on services"
+. Harris Gomez Group Pty Ltd
+. Retrieved
+16 April
+2024
+.
+↑
+"¿Cómo es el Sistema Tributario de Chile? - Programa de Educación Fiscal - SII Educa"
+.
+sii.cl
+(in Spanish). Archived from
+the original
+on 26 March 2023
+. Retrieved
+26 March
+2023
+.
+↑
+Lan, Xiaohuan (2024).
+How China Works: An Introduction to China's State-led Economic Development
+. Translated by Topp, Gary.
+Palgrave Macmillan
+.
+doi
+:
+10.1007/978-981-97-0080-6
+.
+ISBN
+978-981-97-0079-0
+.
+1
+2
+3
+4
+5
+Lin, Shuanglin (2022).
+China's Public Finance: Reforms, Challenges, and Options
+. New York, NY:
+Cambridge University Press
+.
+ISBN
+978-1-009-09902-8
+.
+↑
+"Informace GFŘ ke změnám sazeb DPH od 1. 1. 2024"
+.
+Finanční správa České republiky
+(in Czech)
+. Retrieved
+16 April
+2024
+.
+↑
+"Sazby daně z přidané hodnoty a změny DPH | Aktuálně.cz"
+.
+Aktuálně.cz - Víte, co se právě děje
+(in Czech). 1 April 2015
+. Retrieved
+16 April
+2024
+.
+↑
+"Změny DPH přehledně. Tady je kompletní seznam"
+.
+Peníze.cz
+(in Czech)
+. Retrieved
+16 April
+2024
+.
+↑
+Directive 2006/112/EC
+↑
+"VAT rates applied in the Member States of the European Union"
+(PDF)
+.
+European Commission
+. 1 January 2021
+. Retrieved
+3 July
+2021
+.
+↑
+Thacker, Sunil (2008–2009). "Taxation in the Gulf: Introduction of a Value Added Tax".
+Michigan State Journal of International Law
+.
+17
+(3): 721.
+SSRN
+1435988
+.
+↑
+Diaa, Sarah (15 June 2016).
+"UAE outlines VAT threshold for firms in Phase 1"
+.
+Gulf News
+.
+↑
+PricewaterhouseCoopers.
+"UAE to implement VAT on 1 January 2018"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 26 October 2020
+. Retrieved
+18 September
+2020
+.
+↑
+"Saudi Arabia triples VAT to support coronavirus-hit economy"
+.
+BBC News
+. 11 May 2020.
+1
+2
+"Hungary - Corporate - Other taxes"
+.
+Taxsummaries.pwc.com
+. Retrieved
+11 June
+2026
+.
+↑
+Doruch, Michał (3 April 2023).
+"VAT Hungary 2026"
+.
+Taxology.co
+. Retrieved
+11 June
+2026
+.
+↑
+رییس سازمان امور مالیاتی: همه اصناف مشمول قانون مالیات بر ارزش افزوده می‌شوند
+, 6 November 2025
+↑
+افزایش مالیات بر ارزش افزوده به ۱۲ درصد
+↑
+"Italy - Value-added tax (VAT)"
+.
+TaxSummaries
+. 2018.
+↑
+"Israel's VAT Rate to Increase to 18% Starting January 2025 – VATupdate"
+. Retrieved
+24 July
+2025
+.
+↑
+Israel Lowered the Value-added Tax, but Consumers May Have Little to Celebrate
+↑
+"Israel – VAT rate reduced to 17%"
+.
+↑
+Taxation and Investment in Israel 2012
+Section 5.1, page 15
+↑
+VAT hits 18% high for third time in Israel's history
+↑
+Israel Highlights 2014
+Archived
+2014-09-11 at the
+Wayback Machine
+Section - "Value added tax", page 3
+↑
+"Imported Goods Taxes and Levies 2020"
+.
+Zipy 2020-7-29
+.
+↑
+Wainer, David (11 April 2016).
+"Israel to Levy New Taxes on Google, Facebook in Policy Shift"
+. Technology.
+Bloomberg News
+. Retrieved
+21 September
+2024
+.
+↑
+VAT/GST electronic filing and data extraction
+Section - "Is electronic filing of periodic VAT/GST returns mandatory or optional?", p. 11
+1
+2
+Takahashi, Ryotaro (2024).
+"Tale of a Missed Opportunity: Japan's Delay in Implementing a Value-Added Tax"
+.
+Social Science History
+.
+48
+(3):
+545–
+569.
+doi
+:
+10.1017/ssh.2024.1
+.
+ISSN
+0145-5532
+.
+↑
+"Japan - Corporate - Other taxes"
+.
+taxsummaries.pwc.com
+. Retrieved
+16 April
+2024
+.
+↑
+"Malaysia to remove GST for consumers on Jun 1"
+.
+Channel NewsAsia
+.
+Mediacorp
+. 16 May 2018. Archived from
+the original
+on 16 May 2018
+. Retrieved
+26 June
+2018
+.
+↑
+"Bill to repeal GST tabled in Parliament for first reading"
+.
+The Star
+.
+↑
+"Major revenue sources under central govt"
+.
+kathmandupost.com
+. Retrieved
+9 March
+2026
+.
+↑
+"Nepal Development Update"
+.
+World Bank
+. Retrieved
+9 March
+2026
+.
+↑
+"Exempt supplies (GST on exempt, zero-rated, special supplies and receiving remote services)"
+.
+Inland Revenue
+. Retrieved
+7 March
+2020
+.
+↑
+"Publication search | The Treasury New Zealand"
+.
+www.treasury.govt.nz
+. 7 November 2024
+. Retrieved
+2 December
+2024
+.
+↑
+"What GST is"
+.
+Inland Revenue
+. Retrieved
+7 March
+2020
+.
+↑
+"Rates of VAT"
+. 1 September 2024.
+↑
+"The Value Added Tax Act with subsequent amendments"
+(PDF)
+.
+Ministry of Finance and Economic Affairs
+. 9 October 2014.
+↑
+"Main features of the Government's tax programme for 2011"
+.
+Ministry of Finance
+. 5 October 2010. Archived from
+the original
+on 26 December 2018
+. Retrieved
+4 December
+2010
+.
+↑
+"Merverdiavgiftsloven §§ 6–21 to 6–33"
+(in Norwegian). lovdata.no
+. Retrieved
+28 November
+2010
+.
+↑
+"Merverdiavgiftsloven §§ 6-1 to 6–20"
+(in Norwegian). lovdata.no
+. Retrieved
+28 November
+2010
+.
+↑
+"Republic Act 8424—Tax Reform Act of 1997"
+.
+The Corpus Juris
+. Retrieved
+20 November
+2018
+.
+↑
+"12% VAT now in effect"
+.
+GMA News
+. 1 February 2006
+. Retrieved
+8 January
+2018
+.
+↑
+"R.A. 9337"
+.
+lawphil.net
+. Retrieved
+29 January
+2026
+.
+↑
+"Executive Order No. 273"
+.
+lawphil.net
+. Retrieved
+29 January
+2026
+.
+↑
+RR No. 13-2018
+, www.bir.gov.ph, 2018 Revenue Regulations
+↑
+How to Compute Income Tax Due Under the TRAIN Law
+, www.cpadavao.com, Posted May 22, 2019
+↑
+"List of VAT rates"
+.
+podatki.gov.pl
+. Retrieved
+16 April
+2024
+.
+↑
+"Legea nr. 227/2015 privind Codul fiscal - ART. 291 - Cotele"
+(in Romanian).
+ANAF
+. Retrieved
+13 August
+2025
+.
+↑
+"Russian Federation - Other taxes impacting corporate entities"
+.
+taxsummaries.pwc.com
+. Archived from
+the original
+on 16 June 2018
+. Retrieved
+15 June
+2018
+.
+↑
+"Налоговый кодекс Российской Федерации. Часть вторая от 5 августа 2000 г. N 117-ФЗ"
+[
+Russian Federation Tax Code, Part 2 5 August 2000 N 117 Federal Law
+]
+.
+Российская Газета
+.
+3. Налогообложение производится по налоговой ставке 18 процентов в случаях, не указанных в пунктах 1, 2 и 4 настоящей статьи.
+↑
+TAX CODE OF THE RUSSIAN FEDERATION PART II, Article 164 Tax Rates
+(PDF)
+. Russian Ministry of Finance. p.
+41.
+↑
+"НДС в России поднимут до 22% ради «финансирования обороны и безопасности». Как это отразится на потребителях?"
+.
+www.bbc.com
+(in Russian). BBC
+. Retrieved
+25 September
+2025
+.
+↑
+"Overview of GST in Singapore"
+.
+3ecpa.com.sg
+. Retrieved
+27 June
+2017
+.
+↑
+Removčíková, Libuša (6 December 2024).
+"Výška DPH na Slovensku: v sadzbách vládne zmätok"
+.
+Podnikajte.sk
+(in Slovak)
+. Retrieved
+13 April
+2025
+.
+1
+2
+"IVA (VAT) rates in Spain"
+. Archived from
+the original
+on 10 April 2015
+. Retrieved
+4 April
+2015
+.
+↑
+(Tax Court
+2024),
+Text
+.
+↑
+Amonn, 179.
+↑
+Amonn, 172.
+↑
+Amonn, 169.
+↑
+"Mehrwertsteuer nach Wirtschaftssektoren"
+(in German).
+Swiss Federal Statistical Office
+. 12 June 2016. Archived from
+the original
+on 29 December 2016.
+↑
+PricewaterhouseCoopers.
+"Taiwan Pocket Tax Book"
+.
+PwC
+(in Chinese (Taiwan))
+. Retrieved
+16 April
+2024
+.
+↑
+"What is VAT and how does it work?"
+. BBC News. 24 September 2020.
+↑
+Trinova Corp. v. Michigan Dept. of Treasury
+,
+498
+U.S.
+358
+, 362
+(
+United States Supreme Court
+1991)
+("Although in Europe and Latin America VAT's are common,...in the United States they are much studied but little used").
+↑
+Gulino, Denny (18 September 2015).
+"Puerto Rico May Finally Get Attention of Republican Lawmakers"
+. MNI. Archived from
+the original
+on 12 June 2016
+. Retrieved
+9 February
+2016
+.
+The concept of a value added tax in any form as part of the U.S. tax regime has consistently raised the hackles of Republican policy makers and even some Democrats because of fears it could add to the tax burden rather than just redistribute it to consumption from earnings. For decades one of the most hotly debated tax policy topics, a VAT imposes a sales tax at every stage where value is added.
+↑
+Outline of the Michigan Tax System
+, Citizens Research Council of Michigan,
+January 2011
+Archived
+5 December 2014 at the
+Wayback Machine
+↑
+"General Excise Tax (GET) Information | Department of Taxation"
+. Retrieved
+11 May
+2024
+.
+↑
+"Puerto Rico adopts VAT system and broadens sales and use tax"
+(PDF)
+. PricewaterhouseCoopers. 26 June 2015
+. Retrieved
+9 February
+2016
+.
+↑
+Harpaz, Joe (17 September 2015).
+"Puerto Rico Brings First-Ever Value-Added Tax to the U.S."
+Forbes
+. Retrieved
+9 February
+2016
+.
+↑
+"Examining Puerto Rico Tax Regime Changes: Addition of Value Added Tax and Amendments to Sales and Use, Income Taxes"
+.
+Bloomberg BNA
+. 11 January 2016
+. Retrieved
+9 February
+2016
+.
+Puerto Rico's adoption of a VAT represents a major shift in tax policy and renders the Commonwealth as the first U.S. jurisdiction to adopt this tax regime.
+↑
+Ryan Ellis (5 January 2017),
+"Tax Reform, Border Adjustability, and Territoriality: When tax and fiscal policy meets political reality"
+,
+Forbes
+, retrieved
+18 February
+2017
+↑
+William G. Gale (7 February 2017).
+"A quick guide to the 'border adjustments' tax"
+.
+Brookings Institution
+. Retrieved
+17 February
+2017
+.
+↑
+"Vietnam – indirect tax guide"
+. KPMG. 19 September 2023.
+↑
+"VAT rules and rates: standard, special & reduced rates"
+.
+Your Europe
+. Retrieved
+14 July
+2025
+.
+↑
+"BMF - Umsatzsteuer Info zum Steuerreformgesetz 2015/2016"
+.
+bmf.gv.at
+. Retrieved
+25 November
+2016
+.
+↑
+"2016 AGN VAT Brochure - European Comparison"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 9 October 2016
+. Retrieved
+13 October
+2016
+.
+1
+2
+"2016 AGN VAT Brochure - European Comparison"
+(PDF)
+. Archived from
+the original
+(PDF)
+on 9 October 2016
+. Retrieved
+13 October
+2016
+.
+↑
+Companies welcome VAT resolved
+. Prague Monitor (27 December 2012). Retrieved 14 June 2013.
+↑
+Tax in Denmark: An introduction – for new citizens
+Archived
+24 September 2015 at the
+Wayback Machine
+. SKAT.dk (November 2005)
+↑
+"Change in VAT"
+.
+Deutsche Post
+.
+[
+dead link
+]
+↑
+Οι νέοι συντελεστές ΦΠΑ από 1 Ιουλίου
+. Madata.GR (9 October 2008). Retrieved 14 June 2013.
+↑
+Index – Gazdaság – Uniós csúcsra emeljük az áfát
+. Index.hu (16 September 2011). Retrieved 14 June 2013.
+↑
+Áfa kulcsok és a tevékenység közérdekű vagy egyéb sajátos jellegére tekintettel adómentes tevékenységek köre 2015. január 1-jétől
+(PDF; in Hungarian)
+↑
+VAT Rates
+. Revenue.ie. Retrieved 14 June 2013.
+1
+2
+"2014 EU VAT rates"
+. VAT Live
+. Retrieved
+13 November
+2010
+.
+1
+2
+"Portail de la fiscalité indirecte - Luxembourg"
+(PDF)
+. 6 June 2023.
+↑
+Prezydent podpisał ustawę okołobudżetową – VAT wzrośnie do 23 proc
+. Wyborcza.biz (14 December 2010). Retrieved 14 June 2013.
+↑
+Sara Kuleta.
+"Podatek VAT w Polsce – podatek od towarów i usług"
+(in Polish).
+Ernst & Young
+. Retrieved
+26 June
+2025
+.
+↑
+"Ustawa z dn. 11 marca 2004 r. o podatku od towarów i usług"
+(PDF)
+.
+Internetowy System Aktów Prawnych
+(in Polish)
+. Retrieved
+26 June
+2025
+.
+↑
+"List of VAT rates"
+.
+podatki.gov.pl
+. Retrieved
+26 June
+2025
+.
+1
+2
+3
+"CAPÍTULO IV | Taxas | Artigo 18.º | Taxas do imposto"
+.
+info.portaldasfinancas.gov.pt
+. Retrieved
+10 October
 2021
 .
 1
 2
-"EBRD, Enda Tamweel and Attijari Bank supporting microfinance in Tunisia"
+3
+"Código do Imposto sobre o Valor Acrescentado"
 .
-www.ebrd.com
+Diário da República Eletrónico
+(in Portuguese)
 . Retrieved
-15 July
+10 October
 2021
 .
 ↑
-Tunisia production in 2018, by FAO
-↑
-Cite error: There are
-<ref>
-tags on this page without content in them (see the
-help page
-).
-↑
-"Tunisia Energy Situation - energypedia"
+"Disposições finais"
 .
-energypedia.info
+info.portaldasfinancas.gov.pt
 . Retrieved
-14 October
+10 October
 2021
 .
 ↑
-"Nation Master"
+Andra, Timu (3 September 2015).
+"Romania Passes Scaled-Down Tax Cuts After Warnings Over Budget"
 .
+Bloomberg
+. Retrieved
+4 January
+2016
+.
+↑
+"Pravilnik o spremembah in dopolnitvah Pravilnika o izvajanju Zakona o davku na dodano vrednost"
+. Ministry of Finance. 24 June 2013
+. Retrieved
+1 July
+2013
+.
+↑
+"Spain raises VAT from 18% to 21% 1 September 2012"
+. VAT Live. 13 July 2012
+. Retrieved
+8 August
+2012
+.
+↑
+"Dr. Freda Lewis-Hall Joins Pfizer As Chief Medical Officer - London Stock Exchange"
+. Archived from
+the original
+on 19 July 2009.
+↑
+"Swedish VAT compliance and rates"
+. VAT Live
+. Retrieved
+25 January
+2014
+.
+↑
+"Momsen - hur fungerar den?
+|
+Skatteverket"
+. Skatteverket.se. 1 January 2014
+. Retrieved
+25 January
+2014
+.
+↑
+"Albania - Other taxes impacting corporate entities"
+. PwC. 6 September 2019.
+Archived
+from the original on 16 December 2019
+. Retrieved
+16 December
+2019
+.
+↑
+"Andorra crea un IVA con un tipo general del 4,5% y uno reducido del 1%"
+.
+La Vanguardia
+. 4 July 2010
+. Retrieved
+13 October
+2010
+.
+{{
+cite news
+}}
+:  CS1 maint: deprecated archival service (
+link
+)
+↑
+"Angola Tax Changes for 2021"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"The Government of The Bahamas - VAT Bahamas"
+.
+VAT Bahamas
+. 5 June 2015
+. Retrieved
+5 June
+2015
+.
+↑
+"Bahamas Planning to Introduce 7.5 Percent Value Added Tax in 2015"
+.
+Caribbean Journal
+. 30 May 2014
+. Retrieved
+27 December
+2015
+.
+↑
+"Botswana Standard Tax"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"Tipos de IVA que existen en Ecuador 2026: tarifas y ejemplos"
+.
+Factuplan
+(in Spanish). 13 May 2026
+. Retrieved
+1 June
+2026
+.
+↑
+"VAT Rates in Eswatini"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"Gambia Revenue Authority - VAT"
+.
+Gambia Revenue Authority
+. 19 December 2014. Archived from
+the original
+on 17 October 2015
+. Retrieved
+6 June
+2015
+.
+↑
+"2019 Worldwide VAT, GST and Sales Tax Guide - XMLQS"
+(PDF)
+. Ernst & Young.
+↑
+"VAT Rates in India"
+.
+wise.com
+. Retrieved
+8 January
+2025
+.
+↑
+"VAT Rates in Indonesia"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+VAT in Eilat
+Archived
+25 September 2009 at the
+Wayback Machine
+, ECCB
+↑
+"VAT Rates in Jamaica"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"VAT Rates in Liechtenstein"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+Song, Sophie (25 October 2013).
+"Malaysia Budget 2014: 6% New Tax Effective April 2015, Sugar Subsidy Abolished"
+.
+International Business Times
+.
+↑
+"Transitioning into sales tax and service tax – clarifying the confusion | ACCA Global"
+.
+accaglobal.com
+. Retrieved
+2 December
+2021
+.
+↑
+"Monaco capital gains tax rates, and property income tax"
+. Globalpropertyguide.com
+. Retrieved
+30 April
+2012
+.
+↑
+"VAT Rates in Mozambique"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"Exempt supplies"
+.
+IRD
+. Government of New Zealand
+. Retrieved
+18 July
+2018
+.
+↑
+"Norway confirms electric car incentives until 2018"
+. Thegreencarwebsite.co.uk. Archived from
+the original
+on 18 August 2014
+. Retrieved
+25 January
+2014
+.
+↑
+"VAT Rates in Pakistan"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"Palau Goods & Services Tax (PGST) – PalauGov.pw"
+. Retrieved
+10 January
+2023
+.
+↑
+Bureau of Internal Revenue Website
+. Bir.gov.ph. Retrieved 14 June 2013.
+↑
+"Value-added tax to rise from 18% to 20% in Russia"
+. Retrieved
+13 January
+2019
+.
+↑
+Blic Online | Opšta stopa PDV od 1. oktobra biće 20 odsto
+. Blic.rs. Retrieved 14 June 2013.
+↑
+"Od danas veća niža stopa PDV-a"
+.
+B92.net
+. January 2014.
+↑
+"Value-Added Tax"
+.
+sars.gov.za
+. Retrieved
+20 May
+2016
+.
+↑
+"Sri Lanka: Amendments to VAT law enacted"
+. KPMG. Archived from
+the original
+on 17 January 2025
+. Retrieved
+8 January
+2025
+.
+1
+2
+"Value-added tax, VAT rates and registration"
+.
+ch.ch
+.
+↑
+"VAT Rates in Tunisia"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"Budget: How the rise in VAT will work"
+.
+BBC News
+. 23 June 2010
+. Retrieved
+2 November
+2010
+.
+↑
+"VAT rates on different goods and services - Detailed guidance - GOV.UK"
+.
+gov.uk
+. Retrieved
+4 August
+2016
+.
+↑
+"VAT Rates in Vanuatu"
+.
+customsinlandrevenue.gov.vu
+. Retrieved
+8 January
+2025
+.
+↑
+"VAT Rates in Venezuela"
+.
+taxsummaries.pwc.com
+. Retrieved
+8 January
+2025
+.
+↑
+"VAT Rates in Yemen"
+.
+rivermate.com
+. Retrieved
+8 January
+2025
+.
+↑
+"TAX RATES"
+. taxrates web site
+. Retrieved
+3 November
+2011
+.
+Scholarly sources
+[
+edit
+]
+"Lög nr. 50/1988 um virðisaukaskatt"
+(in Icelandic). 1988. Archived from
+the original
+on 9 October 2007
+. Retrieved
+5 September
+2007
+.
+Ahmed, Ehtisham and Nicholas Stern. 1991. The Theory and Practice of Tax Reform in Developing Countries (Cambridge University Press).
+Bird, Richard M. and P.-P. Gendron .1998. "Dual VATs and Cross-border Trade: Two Problems, One Solution?" International Tax and Public Finance, 5: 429–42.
+Bird, Richard M. and P.-P. Gendron .2000. "CVAT, VIVAT and Dual VAT; Vertical 'Sharing' and Interstate Trade", International Tax and Public Finance, 7: 753–61.
+Keen, Michael and S. Smith .2000. "Viva VIVAT!" International Tax and Public Finance, 7: 741–51.
+Keen, Michael and S. Smith .1996. "The Future of Value-added Tax in the European Union", Economic Policy, 23: 375–411.
+McLure, Charles E. (1993) "The Brazilian Tax Assignment Problem: Ends, Means, and Constraints", in A Reforma Fiscal no Brasil (São Paulo: Fundaçäo Instituto de Pesquisas Econômicas).
+McLure, Charles E. 2000. "Implementing Subnational VATs on Internal Trade: The Compensating VAT (CVAT)", International Tax and Public Finance, 7: 723–40.
+Muller, Nichole. 2007. Indisches Recht mit Schwerpunkt auf gewerblichem Rechtsschutz im Rahmen eines Projektgeschäfts in Indien,
+IBL Review
+, VOL. 12, Institute of International Business and law, Germany.
+Law-and-business.de
+Muller, Nichole. 2007. Indian law with emphasis on commercial legal insurance within the scope of a project business in India.
+IBL Review
+, VOL. 12, Institute of International Business and law, Germany.
+MOMS, Politikens Nudansk Leksikon 2002,
+ISBN
+978-87-604-1578-4
+.
+OECD. 2008.
+Consumption Tax Trends 2008: VAT/GST and Excise Rates, Trends and Administration Issues
+. Paris: OECD.
+Serra, J. and J. Afonso. 1999. "Fiscal Federalism Brazilian Style: Some Reflections", Paper presented to Forum of Federations, Mont Tremblant, Canada, October 1999.
+Shome, Parthasarathi and
+Paul Bernd Spahn
+(1996) "Brazil: Fiscal Federalism and Value Added Tax Reform", Working Paper No. 11, National Institute of Public Finance and Policy, New Delhi
+Silvani, Carlos and Paulo dos Santos (1996) "Administrative Aspects of Brazil's Consumption Tax Reform", International VAT Monitor, 7: 123–32.
+Tait, Alan A. (1988) Value Added Tax: International Practice and Problems (Washington: International Monetary Fund).
+Saudi Arabia Increases Value Added Tax (VAT) will be increase to 15% from 5% as of July 2020.
+Archived
+27 October 2020 at the
+Wayback Machine
 External links
 [
 edit
 ]
-Historic Growth Trend of Tunisia's Economy, 1962 – 2007
-Economy of Tunisia
-extracted from the CIA factbook public data
-Portals
-:
-Africa
-Business and economics
+The dictionary definition of
+value added tax
+at Wiktionary
 v
 t
 e
-Economy of Africa
-Sovereign states
-Algeria
-Angola
-Benin
-Botswana
-Burkina Faso
-Burundi
-Cameroon
-Cape Verde
-Central African Republic
-Chad
-Comoros
-Democratic Republic of the Congo
-Republic of the Congo
-Djibouti
-Egypt
-Equatorial Guinea
-Eritrea
-Eswatini
-Ethiopia
-Gabon
-The Gambia
-Ghana
-Guinea
-Guinea-Bissau
-Ivory Coast
-Kenya
-Lesotho
-Liberia
-Libya
-Madagascar
-Malawi
-Mali
-Mauritania
-Mauritius
-Morocco
-Mozambique
-Namibia
-Niger
-Nigeria
-Rwanda
-São Tomé and Príncipe
-Senegal
-Seychelles
-Sierra Leone
-Somalia
-South Africa
-South Sudan
-Sudan
-Tanzania
-Togo
-Tunisia
-Uganda
-Zambia
-Zimbabwe
-States with limited
-recognition
-Sahrawi Arab Democratic Republic
-Somaliland
-Dependencies and
-other territories
-Canary Islands
-/
-Ceuta
-/
-Melilla
-(Spain)
-Madeira
-(Portugal)
-Mayotte
-/
-Réunion
-(France)
-Saint Helena
-/
-Ascension Island
-/
-Tristan da Cunha
-(United Kingdom)
-Western Sahara
-v
-t
-e
-Tunisia
-articles
-History
-Early history
-Capsian culture
-Ancient Carthage
-Punic Wars
-First War
-Second War
-Third War
-Byzantine Empire
-Medieval history
-Muslim conquest
-Fatimid Caliphate
-Hafsids
-Regency of Tunis
-Muradid
-Husaynids
-French protectorate
-National movement
-Naturalization issue
-Protests of 9 April
-Tunisian campaign
-Independence declaration
-Kingdom of Tunisia
-Republic declaration
-1987 coup d'état
-Tunisian revolution
-2013–14 political crisis
-2018 Tunisian protests
+Globalization
+Journals
+Outline
+Studies
+Aspects
+Alter-globalization
+Anti-globalization movement
+left
+right
+Cultural globalization
+Deglobalization
+Democratic globalization
+Economic globalization
+Economic integration
+Environmental globalization
+Financial integration
+Fiscal union
+Global citizenship
+education
+Global financial system
+Global governance
+Global health
+law
+Global migration
+Global politics
+Global workforce
+Globality
+Harmonisation of law
+History of
+archaic
+early modern
+Military globalization
+Political globalization
+Regional integration
+Trade bloc
+Trade globalization
+Issues
+Global
+Balance of trade
+Capital outflow
+Capital flight
+Climate change
+Climate justice
+Climate migration
+Criticisms
+Foreign ownership
+Disease
 COVID-19 pandemic
-2021 Tunisian protests
-25 July 2021 self-coup
-Geography
-Administrative divisions
-Governorates
-Cities
-Subdivisions
-Regions
-North East
-North West
-Sahel
-Central West
-South East
-Djerid
-Wildlife
-Ecoregions
-World Heritage Sites
-Museums
-Demographics
-Tunisians
-Tunisian diaspora
-Climate
-Politics
-President of the Republic
-List
-Prime Minister
-List
-Cabinet
-Constitution
-Fundamental Pact
-1861
-1959
-2014
-2022
-Foreign relations
-Armed Forces
-Army
-Air Force
-Navy
-Parliament
-National Council of Regions and Districts
-Assembly of the Representatives of the People
-Political parties
-Elections
-Independent High Authority for Elections
-Economy
-Bourse de Tunis
-Central Bank of Tunisia
-Tunisian dinar
-Banking in Tunisia
-Agriculture
-Energy
-Natural resources
-Water supply and sanitation
-Tourism
-Industry
-Telecommunications
-Transport
-Roads
-Rail transport
-Traditional crafts
-Major projects
-Society
-Education
-Baccalaureate
-Higher education
-Languages
-Tunisian Arabic
-Media
-Television
-Radio stations
-Internet
-Newspapers
-Censorship
+Digital divide
+Labor arbitrage
+Monetary sovereignty
+Multilingualism
+Population
+Tariff engineering
+Tax havens
+Offshore financial centres
+Tax inversions
+Trafficking
+arms
+children
+drugs
+endangered species
+human
+sex
+Value-added tax
+Water crisis
+Other
+Brain drain
+reverse
+Care drain
+Development aid
+Economic inequality
+Endangered languages
+Fair trade
+Forced displacement
 Human rights
-Abortion
-LGBT
-Women
-Polygamy
-Religion
-Islam
-Christianity
-Judaism
-Health
-Public holidays
-Culture
-Arts
-Cinema
-Music
-Literature
-Sport
-Football
-Cuisine
-National symbols
-Flag
-National anthem
-Coat of arms
-Motto
+Illicit financial flows
+Imperialism
+academic
+cultural
+linguistic
+media
+scientific
+social
+Invasive species
+Investor-state disputes
+McDonaldization
+New international division of labour
+North–South divide
+Offshoring
+Race to the bottom
+pollution havens
+Reverse discrimination
+Transnational crime
+Westernization
+World war
+Theories
+Capital accumulation
+Dependency
+Development
+Earth system
+Fiscal localism
+Free trade
+Globalism
+Modernization
+ecological
+history of
+Neoliberalism
+Primitive accumulation
+Social change
+World history
+World-systems
+Notable
+scholars
+Economics
+David Autor
+Richard Baldwin
+Ravi Batra
+Jagdish Bhagwati
+Robert Brenner
+Jayati Ghosh
+Michael Hudson
+Branko Milanović
+Kevin O'Rourke
+Thomas Piketty
+Dani Rodrik
+Jeffrey Sachs
+Amartya Sen
+Joseph Stiglitz
+Political
+economy
+Samir Amin
+Giovanni Arrighi
+Robert W. Cox
+Andre Gunder Frank
+Stephen Gill
+Barry K. Gills
+Peter Gowan
+David Harvey
+Ronen Palan
+Susan Strange
+Robert Wade
+Politics/
+sociology
+Arjun Appadurai
+Daniele Archibugi
+K. Anthony Appiah
+Ulrich Beck
+Walden Bello
+Jean Baudrillard
+Zygmunt Bauman
+Manuel Castells
+Christopher Chase-Dunn
+Alfred Crosby
+Nancy Fraser
+Susan George
+Anthony Giddens
+Michael Hardt
+David Held
+Paul Hirst
+L. H. M. Ling
+Antonio Negri
+George Ritzer
+Saskia Sassen
+John Urry
+Immanuel Wallerstein
+Other
+Noam Chomsky
+Thomas Friedman
+Naomi Klein
+John R. Saul
+Vandana Shiva
 Category
-WikiProject
-Commons
+Business
+portal
+Authority control databases
+International
+GND
+National
+United States
+France
+BnF data
+Japan
+Czech Republic
+Israel
+Other
+Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1378451558
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1378038240
 "
 Categories
 :
-African Union member economies
-Economy of Tunisia
-Economy of the Arab League
-World Trade Organization member economies
+Value-added taxes
+Tax terms
 Hidden categories:
+Pages using sidebar with the child parameter
 Articles with short description
-Short description is different from Wikidata
-Wikipedia articles in need of updating from July 2022
-All Wikipedia articles in need of updating
-Wikipedia references cleanup from July 2022
-All articles needing references cleanup
-Articles covered by WikiProject Wikify from July 2022
-All articles covered by WikiProject Wikify
-Articles needing translation from French Wikipedia
-Articles with multiple maintenance issues
-Use dmy dates from April 2026
-Articles containing Tunisian Arabic-language text
+Short description matches Wikidata
+Use dmy dates from September 2021
+CS1 French-language sources (fr)
+All articles with unsourced statements
+Articles with unsourced statements from January 2026
+Articles with unsourced statements from December 2007
+Articles with unsourced statements from August 2026
+CS1 Spanish-language sources (es)
+CS1 Czech-language sources (cs)
 Articles with excerpts
-Pages with reference errors
+Webarchive template wayback links
+Articles containing Spanish-language text
+Articles containing Danish-language text
+Articles containing Norwegian-language text
+Articles containing Nynorsk-language text
+Articles containing Swedish-language text
+Articles containing Icelandic-language text
+Articles containing Faroese-language text
+Articles containing Finnish-language text
+CS1 Norwegian-language sources (no)
+CS1 Romanian-language sources (ro)
+CS1 Russian-language sources (ru)
+CS1 Slovak-language sources (sk)
+Pages using cite court with unknown parameters
+CS1 German-language sources (de)
+CS1 Chinese (Taiwan)-language sources (zh-tw)
+All articles with dead external links
+Articles with dead external links from October 2025
+Articles with unsourced statements from November 2021
+CS1 Polish-language sources (pl)
+CS1 Portuguese-language sources (pt)
+CS1 maint: deprecated archival service
+Articles containing Japanese-language text
+Articles containing Korean-language text
+Articles with unsourced statements from January 2022
+CS1 Icelandic-language sources (is)
 Search
 Search
-Economy of Tunisia
-23 languages
+Value-added tax
+81 languages
 Add topic
 
 ---
 
-Help:Maintenance template removal - Wikipedia
+Tax - Wikipedia
 Jump to content
 Search
 Search
-Help
-:
-Maintenance template removal
-28 languages
+Tax
+146 languages
+Acèh
 Afrikaans
+Alemannisch
+አማርኛ
+Aragonés
 العربية
-বাংলা
-کوردی
-Dansk
-Eesti
-فارسی
-Français
-ગુજરાતી
-Հայերեն
-Bahasa Indonesia
-नेपाली
-ਪੰਜਾਬੀ
-Português
-Русский
-سنڌي
-සිංහල
-Simple English
-Soomaaliga
-Shqip
-Српски / srpski
-తెలుగు
-ไทย
-Türkçe
-Українська
-اردو
-Oʻzbekcha / ўзбекча
-中文
-Edit links
-From Wikipedia, the free encyclopedia
-How-to-guide on addressing and removing maintenance templates
-Further information:
-Wikipedia:Responsible tagging
-and
-Wikipedia:Tag bombing
-This help page is a
-how-to guide
-.
-It explains concepts or processes used by the Wikipedia community. It is not one of
-Wikipedia's policies or guidelines
-and may reflect varying levels of
-consensus
-.
-Shortcuts
-WP:MTR
-WP:MTR
-H:MTR
-H:MTR
-This page in a nutshell:
-If you come across a maintenance template, you can help Wikipedia! If you understand the problem flagged by the template and have reasonably fixed it, you can remove the template manually; it will
-not
-be removed automatically.
-Legitimate Wikipedia editors will never offer to remove maintenance templates in exchange for money. See the
-paid editing scam warning
-.
-Many Wikipedia pages display
-maintenance templates
-that identify problems. You may have arrived at this help page after clicking a link on a maintenance template saying "
-Learn how and when to remove this message
-".
-Maintenance templates are added and removed by volunteers. This help page explains the process for examining and removing such templates.
-Overview
-Maintenance templates
-(or "tags") are not removed automatically. Even if you fix the issue(s) described in a maintenance template, the tag will remain in the article until you or someone else
-manually removes it
-. The mechanics of removal are usually as simple as clicking "Edit" at the top of the page or in the section you fixed, removing the code that produces the display of the template, leaving an
-edit summary
-, and saving the page.
-You should
-not
-remove maintenance templates until the issue flagged by the template is remedied first—that is, until the maintenance tag is no longer valid—unless it truly did not belong in the first place. Maintenance templates are
-not
-to be used to express your personal opinion.
-Wikipedia works because of the efforts of volunteers just like you, making
-bold edits
-to help build this encyclopedia. Fixing problems and then removing maintenance templates when you are done is important in that effort.
-Addressing the flagged problem
-Shortcuts
-WP:TEMPREMOVE
-WP:TEMPREMOVE
-H:TEMPREMOVE
-H:TEMPREMOVE
-We don't know which maintenance tag brought you to this page, and thus what specific problem needs attention. However, every maintenance template contains links to help pages, policies, guidelines, or other relevant pages that provide information on the problem the template was placed to flag. You will also find guidance on some of the more common templates
-below
-.
-Many common templates address problems with article citations and references, or the
-lack
-thereof — this is because reliable sourcing is the lifeblood of Wikipedia articles and at the core of all of Wikipedia's content policies and guidelines, such as
-notability
-,
-verifiability
-,
-neutral point of view
-, and
-no original research
-. But a host of other issues may also be flagged with maintenance templates, including
-tone
-and
-style of writing
-,
-structure and formatting
-,
-lack of links
-to or
-from other articles
-, compliance with Wikipedia's
-manual of style
-, and absence or content of a
-lead section
-.
-Please make sure the issue has been resolved before removing the template. That does require some effort on your part—to understand both the problem and how to solve it.
-An example
-If the issue flagged by the maintenance template is that the article contains no references, a
-citation needed
-template might be used
-{
-{
-Unreferenced
-}
-}
-–  typically placed by the code you would see when wikitext (source) editing:
-{{Unreferenced|date=
-October
-2026
-}}
-.
-It is important to understand that what you see when
-reading
-an article, and what you see when
-editing
-it, are different unless you're in Visual editing mode. Thus, the above code, only seen when doing source editing, results in the
-display
-of the '
-called
-' template below:
-Example:
-This article
-does not
-cite
-any
-sources
-.
-Please help
-improve this article
-by
-adding citations to reliable sources
-. Unsourced material may be challenged and
-removed
-.
-Find sources:
-"Maintenance template removal"
-–
-news
-·
-newspapers
-·
-books
-·
-scholar
-·
-JSTOR
-(
-October 2026
-)
-(
-Learn how and when to remove this message
-)
-This template contains several
-links
-, indicated by the words and phrases in blue. Three of these links are to pages that, when explored, provide context and resources for you to understand
-why
-the template was placed on the page, and
-how
-to address the issue of the article being
-unreferenced
-:
-"cite", which links to the content guideline
-Wikipedia:Citing sources
-;
-"sources", which links to the policy
-Wikipedia:Verifiability
-; and
-"adding citations to reliable sources", which links to a help page providing a
-how-to guide to the basics of citing references
-.
-Whatever maintenance tag brought you to this help page should likewise contain relevant explanatory links addressed to whatever
-its issue is
-. Read these explanatory and contextual pages to learn about the problem and what it is you need to do to take care of it. Again, some of the more common maintenance templates seen are addressed in the
-specific template guidance section below
-.
-When to remove
-Shortcut
-WP:WTRMT
-WP:WTRMT
-Maintenance templates are not meant to be in articles permanently. Any user without a
-conflict of interest
-may remove a maintenance template in any of the following circumstances:
-When the issue has been adequately addressed;
-Upon determining that the issue has been resolved (perhaps by someone else);
-If it reasonably appears that the template did not belong when placed or was added in error. Consider first discussing the matter with the original placer of the template (unless this user is no longer active on Wikipedia). In any case, if the issue appears contentious, seek
-consensus
-on the
-talk page
-;
-When an article talk  page discussion has not been initiated (for templates requesting it);
-When there is consensus on the talk page (or elsewhere) as to how to address the flagged issue, and you are reasonably implementing those changes. (It is good practice to note the location of the consensus in the
-edit summary
-accompanying your removal, ideally with a
-link
-to the location);
-When it can reasonably be concluded that the template is no longer relevant, such as a
-{
-{
-Current
-}
-}
-template appearing in an article that no longer documents a current event;
-If the maintenance template is of a type that requires support but is not fully supported. For example, neutrality-related templates such as
-{
-{
-COI
-}
-}
-(associated with the
-conflict of interest guideline
-) or
-{
-{
-POV
-}
-}
-(associated with the
-neutral point of view policy
-) strongly recommend that the tagging editor initiate a discussion (generally on the article's talk page) to support the placement of the tag. If the tagging editor failed to do so, or the discussion is dormant, and there is no other support for the template, it can be removed. A
-{
-{
-notability
-}
-}
-tag may be removed and may not be re-added if an article has passed an
-Wikipedia:Articles for deletion
-review.
-You may remove a template when according to your best judgment the lack of edits and/or talk page discussion should be interpreted as the issue not worth fixing (as a form of "
-silent consensus
-"). Please note there is currently no consensus for
-general
-age-related removal of maintenance templates
-–
-that is, removing a template purely or chiefly because it is old is
-not
-considered a sufficient argument. An exception is that removing POV-related templates whose discussions have gone dormant is encouraged, as addressed in the bullet point immediately above.
-Lastly, there are times when a person attempting to address a maintenance template that flags some fundamental matter may find that the issue
-cannot
-actually be addressed. For example, if an article is flagged as lacking citations to
-reliable
-,
-secondary
-sources, written by
-third-parties
-to the topic, and a user seeing the maintenance templates discovers that such sources appear
-not to exist
-, that usually means the article should be
-deleted
-. In such cases, it is not so much that the template does not belong and should be removed, but rather that flagging the page for maintenance will never address the more critical issue that the page itself does not belong on Wikipedia at all.
-When not to remove
-Shortcuts
-WP:WNTRMT
-WP:WNTRMT
-WP:MAINTENANCEDISAGREEMENT
-WP:MAINTENANCEDISAGREEMENT
-You should not remove maintenance templates if any of the following apply:
-You do not understand the issues raised by the template;
-The issue has not yet been resolved;
-There is ongoing activity or discussion related to the template issue;
-The problem that the maintenance template flags is plainly and unambiguously required for a proper article under
-Wikipedia's policies and guidelines
-;
-You have been paid to edit the article or have some other
-conflict of interest
-(some exceptions apply: see individual template documentation).
-Removal
-Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
-Click on "edit" or "edit source" at the top of the page or
-section
-where the template is.
-Delete the template:
-If you are editing using VisualEditor
-: Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
-If you are editing wikitext ("source" editing)
-: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example 
-
----
-
-Help:Maintenance template removal - Wikipedia
-Jump to content
-Search
-Search
-Help
-:
-Maintenance template removal
-28 languages
-Afrikaans
-العربية
-বাংলা
-کوردی
-Dansk
-Eesti
-فارسی
-Français
-ગુજરાતી
-Հայերեն
-Bahasa Indonesia
-नेपाली
-ਪੰਜਾਬੀ
-Português
-Русский
-سنڌي
-සිංහල
-Simple English
-Soomaaliga
-Shqip
-Српски / srpski
-తెలుగు
-ไทย
-Türkçe
-Українська
-اردو
-Oʻzbekcha / ўзбекча
-中文
-Edit links
-From Wikipedia, the free encyclopedia
-How-to-guide on addressing and removing maintenance templates
-Further information:
-Wikipedia:Responsible tagging
-and
-Wikipedia:Tag bombing
-This help page is a
-how-to guide
-.
-It explains concepts or processes used by the Wikipedia community. It is not one of
-Wikipedia's policies or guidelines
-and may reflect varying levels of
-consensus
-.
-Shortcuts
-WP:MTR
-WP:MTR
-H:MTR
-H:MTR
-This page in a nutshell:
-If you come across a maintenance template, you can help Wikipedia! If you understand the problem flagged by the template and have reasonably fixed it, you can remove the template manually; it will
-not
-be removed automatically.
-Legitimate Wikipedia editors will never offer to remove maintenance templates in exchange for money. See the
-paid editing scam warning
-.
-Many Wikipedia pages display
-maintenance templates
-that identify problems. You may have arrived at this help page after clicking a link on a maintenance template saying "
-Learn how and when to remove this message
-".
-Maintenance templates are added and removed by volunteers. This help page explains the process for examining and removing such templates.
-Overview
-Maintenance templates
-(or "tags") are not removed automatically. Even if you fix the issue(s) described in a maintenance template, the tag will remain in the article until you or someone else
-manually removes it
-. The mechanics of removal are usually as simple as clicking "Edit" at the top of the page or in the section you fixed, removing the code that produces the display of the template, leaving an
-edit summary
-, and saving the page.
-You should
-not
-remove maintenance templates until the issue flagged by the template is remedied first—that is, until the maintenance tag is no longer valid—unless it truly did not belong in the first place. Maintenance templates are
-not
-to be used to express your personal opinion.
-Wikipedia works because of the efforts of volunteers just like you, making
-bold edits
-to help build this encyclopedia. Fixing problems and then removing maintenance templates when you are done is important in that effort.
-Addressing the flagged problem
-Shortcuts
-WP:TEMPREMOVE
-WP:TEMPREMOVE
-H:TEMPREMOVE
-H:TEMPREMOVE
-We don't know which maintenance tag brought you to this page, and thus what specific problem needs attention. However, every maintenance template contains links to help pages, policies, guidelines, or other relevant pages that provide information on the problem the template was placed to flag. You will also find guidance on some of the more common templates
-below
-.
-Many common templates address problems with article citations and references, or the
-lack
-thereof — this is because reliable sourcing is the lifeblood of Wikipedia articles and at the core of all of Wikipedia's content policies and guidelines, such as
-notability
-,
-verifiability
-,
-neutral point of view
-, and
-no original research
-. But a host of other issues may also be flagged with maintenance templates, including
-tone
-and
-style of writing
-,
-structure and formatting
-,
-lack of links
-to or
-from other articles
-, compliance with Wikipedia's
-manual of style
-, and absence or content of a
-lead section
-.
-Please make sure the issue has been resolved before removing the template. That does require some effort on your part—to understand both the problem and how to solve it.
-An example
-If the issue flagged by the maintenance template is that the article contains no references, a
-citation needed
-template might be used
-{
-{
-Unreferenced
-}
-}
-–  typically placed by the code you would see when wikitext (source) editing:
-{{Unreferenced|date=
-October
-2026
-}}
-.
-It is important to understand that what you see when
-reading
-an article, and what you see when
-editing
-it, are different unless you're in Visual editing mode. Thus, the above code, only seen when doing source editing, results in the
-display
-of the '
-called
-' template below:
-Example:
-This article
-does not
-cite
-any
-sources
-.
-Please help
-improve this article
-by
-adding citations to reliable sources
-. Unsourced material may be challenged and
-removed
-.
-Find sources:
-"Maintenance template removal"
-–
-news
-·
-newspapers
-·
-books
-·
-scholar
-·
-JSTOR
-(
-October 2026
-)
-(
-Learn how and when to remove this message
-)
-This template contains several
-links
-, indicated by the words and phrases in blue. Three of these links are to pages that, when explored, provide context and resources for you to understand
-why
-the template was placed on the page, and
-how
-to address the issue of the article being
-unreferenced
-:
-"cite", which links to the content guideline
-Wikipedia:Citing sources
-;
-"sources", which links to the policy
-Wikipedia:Verifiability
-; and
-"adding citations to reliable sources", which links to a help page providing a
-how-to guide to the basics of citing references
-.
-Whatever maintenance tag brought you to this help page should likewise contain relevant explanatory links addressed to whatever
-its issue is
-. Read these explanatory and contextual pages to learn about the problem and what it is you need to do to take care of it. Again, some of the more common maintenance templates seen are addressed in the
-specific template guidance section below
-.
-When to remove
-Shortcut
-WP:WTRMT
-WP:WTRMT
-Maintenance templates are not meant to be in articles permanently. Any user without a
-conflict of interest
-may remove a maintenance template in any of the following circumstances:
-When the issue has been adequately addressed;
-Upon determining that the issue has been resolved (perhaps by someone else);
-If it reasonably appears that the template did not belong when placed or was added in error. Consider first discussing the matter with the original placer of the template (unless this user is no longer active on Wikipedia). In any case, if the issue appears contentious, seek
-consensus
-on the
-talk page
-;
-When an article talk  page discussion has not been initiated (for templates requesting it);
-When there is consensus on the talk page (or elsewhere) as to how to address the flagged issue, and you are reasonably implementing those changes. (It is good practice to note the location of the consensus in the
-edit summary
-accompanying your removal, ideally with a
-link
-to the location);
-When it can reasonably be concluded that the template is no longer relevant, such as a
-{
-{
-Current
-}
-}
-template appearing in an article that no longer documents a current event;
-If the maintenance template is of a type that requires support but is not fully supported. For example, neutrality-related templates such as
-{
-{
-COI
-}
-}
-(associated with the
-conflict of interest guideline
-) or
-{
-{
-POV
-}
-}
-(associated with the
-neutral point of view policy
-) strongly recommend that the tagging editor initiate a discussion (generally on the article's talk page) to support the placement of the tag. If the tagging editor failed to do so, or the discussion is dormant, and there is no other support for the template, it can be removed. A
-{
-{
-notability
-}
-}
-tag may be removed and may not be re-added if an article has passed an
-Wikipedia:Articles for deletion
-review.
-You may remove a template when according to your best judgment the lack of edits and/or talk page discussion should be interpreted as the issue not worth fixing (as a form of "
-silent consensus
-"). Please note there is currently no consensus for
-general
-age-related removal of maintenance templates
-–
-that is, removing a template purely or chiefly because it is old is
-not
-considered a sufficient argument. An exception is that removing POV-related templates whose discussions have gone dormant is encouraged, as addressed in the bullet point immediately above.
-Lastly, there are times when a person attempting to address a maintenance template that flags some fundamental matter may find that the issue
-cannot
-actually be addressed. For example, if an article is flagged as lacking citations to
-reliable
-,
-secondary
-sources, written by
-third-parties
-to the topic, and a user seeing the maintenance templates discovers that such sources appear
-not to exist
-, that usually means the article should be
-deleted
-. In such cases, it is not so much that the template does not belong and should be removed, but rather that flagging the page for maintenance will never address the more critical issue that the page itself does not belong on Wikipedia at all.
-When not to remove
-Shortcuts
-WP:WNTRMT
-WP:WNTRMT
-WP:MAINTENANCEDISAGREEMENT
-WP:MAINTENANCEDISAGREEMENT
-You should not remove maintenance templates if any of the following apply:
-You do not understand the issues raised by the template;
-The issue has not yet been resolved;
-There is ongoing activity or discussion related to the template issue;
-The problem that the maintenance template flags is plainly and unambiguously required for a proper article under
-Wikipedia's policies and guidelines
-;
-You have been paid to edit the article or have some other
-conflict of interest
-(some exceptions apply: see individual template documentation).
-Removal
-Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
-Click on "edit" or "edit source" at the top of the page or
-section
-where the template is.
-Delete the template:
-If you are editing using VisualEditor
-: Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
-If you are editing wikitext ("source" editing)
-: Delete the template code. The template code you see in this edit mode will usually be in the following form, as in the example 
-
----
-
-Tunisian dinar - Wikipedia
-Jump to content
-Search
-Search
-Tunisian dinar
-48 languages
-العربية
+ܐܪܡܝܐ
 مصرى
+অসমীয়া
+Asturianu
+Azərbaycanca
+تۆرکجه
+Башҡортса
+Basa Bali
+Žemaitėška
 Беларуская (тарашкевіца)
 Беларуская
+Betawi
 Български
-বিষ্ণুপ্রিয়া মণিপুরী
+বাংলা
+Brezhoneg
+Bosanski
+Batak Mandailing
+Буряад
 Català
+Нохчийн
+کوردی
+Qırımtatarca
 Čeština
+Чӑвашла
 Cymraeg
-Dagbanli
+Dansk
 Deutsch
+Ελληνικά
 Esperanto
 Español
 Eesti
+Euskara
 فارسی
 Suomi
+Fɔ̀ngbè
 Français
+Frysk
+Gaeilge
+Kriyòl gwiyannen
+Galego
+Gungbe
 Hausa
 עברית
+हिन्दी
+Fiji Hindi
 Hrvatski
+Kreyòl ayisyen
 Magyar
 Հայերեն
+Interlingua
+Jaku Iban
 Bahasa Indonesia
-Igbo
+Ilokano
+Ido
+Íslenska
+Medžuslovjansky
 Italiano
 日本語
+Patois
+Jawa
+ქართული
+Qaraqalpaqsha
+Gĩkũyũ
+Қазақша
+ಕನ್ನಡ
+Yerwa Kanuri
 한국어
+Къарачай-малкъар
+Kurdî
+Kernowek
+Кыргызча
+Latina
+Lëtzebuergesch
+Limburgs
+Ladin
+ລາວ
 Lietuvių
+Latviešu
+Madhurâ
+Malagasy
+Minangkabau
+Македонски
+മലയാളം
+Монгол
 मराठी
 Bahasa Melayu
+မြန်မာဘာသာ
+Plattdüütsch
+नेपाली
+नेपाल भाषा
 Nederlands
+Norsk nynorsk
 Norsk bokmål
+Occitan
+Ирон
+ਪੰਜਾਬੀ
 Polski
+Piemontèis
+پنجابی
+پښتو
 Português
+Runa Simi
+Română
 Русский
+Русиньскый
 Саха тыла
+ᱥᱟᱱᱛᱟᱲᱤ
+سنڌي
+Srpskohrvatski / српскохрватски
+සිංහල
+Simple English
+Slovenčina
 Slovenščina
+ChiShona
+Soomaaliga
+Shqip
 Српски / srpski
+Sunda
 Svenska
+Kiswahili
+தமிழ்
+తెలుగు
 Тоҷикӣ
 ไทย
+Tagalog
 Türkçe
+Татарча / tatarça
+Тыва дыл
 Українська
 اردو
-მარგალური
-Yorùbá
+Oʻzbekcha / ўзбекча
+Tiếng Việt
+Winaray
+吴语
+ייִדיש
+文言
 閩南語 / Bân-lâm-gí
+粵語
 中文
+IsiZulu
 Edit links
 From Wikipedia, the free encyclopedia
-Currency of Tunisia
-Tunisian dinar
-دينار تونسي
-(
-Arabic
-)
-50 Tunisian dinars (2022)
-ISO 4217
-Code
-TND (numeric:
-788
-)
-Subunit
-0.001
-Units of account
-Symbol
-د.ت
-‎
-(Tunisian Arabic) or
-DT
-(Latin)
-Subunit
+Compulsory contribution to state revenue
+For other uses, see
+Tax (disambiguation)
+.
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+A
+tax
+is a mandatory financial charge or levy imposed on an individual or
+legal entity
+by a
+governmental
+organization to support
+government spending
+and
+public expenditures
+collectively or to
+regulate
+economic activity through measures designed to mitigate negative
+externalities
+.
+[
 1
-⁄
-1000
-milim or millime
-Denominations
-Banknotes
-Freq. used
-5, 10, 20, 50 dinars
-Coins
-Freq. used
-50, 100, 200 millimes
-1
-⁄
+]
+Tax compliance
+refers to policy actions and individual behavior aimed at ensuring that taxpayers are paying the right amount of tax at the right time and securing the correct tax allowances and tax relief.
+[
 2
-, 1, 2, 5 dinars
-Rarely used
-5, 10, 20 millimes
-Demographics
-User(s)
-Tunisia
-Issuance
-Central bank
-Central Bank of Tunisia
-Website
-www
-.bct
-.gov
-.tn
-Valuation
-Inflation
-4.9% (
-Nov. 2020
-)
-Source
-"L'Institut National de la Statistique. Inflation (glissement Annuel)"
-.
-www.ins.tn
-(in French)
-. Retrieved
-2020-12-14
-.
-The
-dinar
-(
-Arabic
-:
-دينار
-,
-ISO 4217
-code: TND) is the national currency of
-Tunisia
-. It is subdivided into 1000 milim or millimes (
-ملّيم
-), colloquially called "Franc". The abbreviation
-DT
-is often used in Tunisia, although writing "dinar" after the amount is also acceptable (TND is less colloquial, and tends to be used more in financial circles); the abbreviation
-TD
-is also mentioned in a few places, but is less frequently used, given the common use of the French language in Tunisia, and the French derivation of
-DT
-(i.e.,
-dinar tunisien
-). It can also stand for "Dinaar Tounsi".
-Etymology
-[
-edit
 ]
-The name "dinar" is derived from the Roman
-denarius
-, used in the
-Africa province
-, the ancient territory of
-Carthage
-, Tunisia.
-[
-1
-]
+In economic terms (
+circular flow of income
+), taxation transfers wealth from households or businesses to the government. This affects
+economic growth
+and
+welfare
+, which can be increased (known as
+fiscal multiplier
+) or decreased (known as
+excess burden of taxation
+).
+Certain countries (usually small in size or population, which results in a smaller infrastructure and social expenditure) function as
+tax havens
+by imposing minimal taxes on the personal income of individuals and corporate income. These tax havens attract capital from abroad (particularly from larger economies) while resulting in loss of tax revenues within other non-haven countries (through
+base erosion and profit shifting
+).
 History
 [
 edit
 ]
-The dinar was introduced in 1960, having been established as a unit of account in 1958. It replaced the
-franc
-at a rate of 1,000
-F = 1 dinar. The dinar did not follow the
-devaluation
+Egyptian
+peasants
+seized for
+non-payment of taxes
+. (
+Pyramid Age
+)
+The first known system of taxation was in
+Ancient Egypt
+around 3000–2800 BC, in the
+First Dynasty
 of the
-French franc in 1958
-, thus the exchange rate peg was abandoned. Instead a peg to the
-United States dollar
-of 1 dinar =
-US$2.38
-was established which was maintained until 1964, when the dinar devalued to 1 dinar =
-$1.90
-. This second rate was held until the
-dollar was devalued in 1971
+Old Kingdom of Egypt
 .
-Tunisia had a historically low inflation. The dinar was less volatile in 2000–2010 than the currencies of its oil-importing neighbors, Egypt and Morocco. Inflation was 4.9% in fiscal year 2007–08 and 3.5% in fiscal year 2008–09.
-[
-citation needed
-]
-However, the value of the currency has been falling since then, and between 2008 and 2018, the dinar depreciated by about 55% against the U.S. dollar, from
-$0.76
-to
-$0.34
-, and about 46% against the
-euro
-, from
-€0.55
-to
-€0.30
-.
-Coins
-[
-edit
-]
-In 1960, aluminium 1, 2 and 5 millime and brass 10, 20, 50 and 100 millime coins were introduced. The 1 and 2 millimes were last issued in 1990 and 1983 respectively, and are no longer legal tender. In 1968, nickel
-1
-⁄
-2
-dinar coins were introduced, replaced by smaller, cupro-nickel pieces in 1976, when cupro-nickel 1 dinar coins were also introduced. Bimetallic 5 dinar coins were introduced in 2002.
-Coins
-in circulation are
-[
-2
-]
-(link included current and historic coins and banknotes)
-5 millimes
-10 millimes
-20 millimes
-50 millimes
-100 millimes
-200 millimes
-1
-⁄
-2
-dinar
-1 dinar
-2 dinars
-5 dinars
-On 26 December 2013, two new tridecagonal coins were introduced: 200 millimes (copper-zinc, 29
-mm diameter, 1.80
-mm thickness, 9.4 gr. weight) and 2 dinar (copper-nickel, 29.4
-mm diameter, 1.90
-mm thickness, 11.2 gr. weight).
 [
 3
 ]
-Coins in circulation
-Image
-Value
-5 millimes
-10 millimes
-20 millimes
-50 millimes
-100 millimes
-200 millimes
-1
-⁄
-2
-dinar (500 millimes)
-1 dinar (1000 millimes)
-2 dinars (2000 millimes)
-5 dinars (5000 millimes)
-Banknotes
-[
-edit
-]
-On 3 November 1958, banknotes were introduced by the
-Central Bank of Tunisia
-in denominations of
-1
-⁄
-2
-, 1 and 5 dinars.
+The earliest and most widespread forms of taxation were the
+corvée
+and the
+tithe
+: The corvée was
+forced labor
+provided to the state by peasants too poor to pay other forms of taxation (
+labor
+in
+ancient Egyptian
+is a synonym for taxes).
 [
 4
 ]
-The designs of these denominations were changed with a series of notes dated 1-6-1965, but issued on 3 March 1966. A 10-dinar note dated 1-6-1969 was issued on 2 January 1970. The last
-1
-⁄
-2
--dinar notes were dated 1973-10-15 whilst the last 1-dinar notes were dated 1980-10-15. 20-dinar notes dated 1980-10-15 were introduced on 26 December 1984. 30-dinar notes were issued between 1997 and 2011. 50-dinar notes dated 2008 were issued on 25 July 2009.
+Records from the time document that the Pharaoh would conduct a biennial tour of the kingdom, collecting tithes from the people.
 [
 5
 ]
-On 8 November 2005, an updated version of the frequently used 10-dinar note was issued.
-After the fall of the Ben Ali regime in Tunisia on 14 January 2011, a new set of banknotes was issued progressively to replace the banknotes bearing motifs of the Ben Ali regime; on 31 December 2019, those notes issued prior to 2011 were completely demonetized.
+The
+Rosetta Stone
+, whose decipherment led to the contemporary understanding of hieroglyphics, was itself a decree issued by
+Ptolemy V
+that contained tax concessions.
 [
 6
 ]
-Previous issues had ceased to be used for several years beforehand but were still exchangeable at the Central Bank until that date.
-A second redesigned series was issued from 2017, beginning with a redesigned 20-dinar note issued in 2017 and a redesigned 10-dinar note in 2020. As of 2020, the 20 and 50 dinar notes issued 2011 and the 5 and 10 dinar notes issued 2013 were in use as well as the new series. At that time, 50 dinar notes were withdrawn from circulation when sent to the Central Bank in the course of their circulation while a new design hadn't been confirmed yet.
+[
+better
+source
+needed
+]
 [
 7
 ]
-In 2022, new banknotes of 5 and 50 dinars were introduced.
+[
+non-primary source needed
+]
+Early examples of taxation are also seen in the
+Bible
+,
 [
 8
 ]
 [
 9
 ]
-Demonetized banknotes (1992–2008 Series)
-Image
-Value
-Main color
-Description
-Obverse
-Reverse
-Obverse
-Reverse
-5 dinars
-Green
-Hannibal
-, Port Punique (Carthage)
-Motif commemorating the overthrow of
-Habib Bourguiba
-on
-7 November 1987
-10 dinars
-Blue
-Ibn Khaldoun
-10 dinars
-Elissa (
-Dido
-) Instituted after the United Nations IT conference in Tunis 2006.
-Sbeitla temple
-, satellite dish
-20 dinars
-Purple
-Kheireddine Et-Tounsi
-Motif commemorating the overthrow of
-Habib Bourguiba
-on
-7 November 1987
-30 dinars
-Green, orange
-Aboul-Qacem Echebbi
-Tunisian farm with goats and ”TRENTE DINARS” written above
-50 dinars
-Green and purple
-Ibn Rachik
-, the City of Culture building
-Rades bridge over ship canal to Tunis,
-Enfidha-Hammamet International Airport
-(formerly
-Zine el-Abidine ben Ali Airport
-; renamed after President el-Abidine left the country in 2011)
-2011–2013 Series
-Image
-Value
-Main color
-Description
-Obverse
-Reverse
-Obverse
-Reverse
-5 dinars
-Lime Green
-City of Carthage; Carthaginian general, Hannibal wearing a helmet
-Carthaginian ships
-10 dinars
-Blue and Yellow
-Aboul-Qacem Echebbi
-Arches of Medesa Bacchia school in
-Tunis
-20 dinars
-Red, blue, and yellow
-Kheireddine Et-Tounsi
-, Ksar Ouled Soltane fortified granary in Tataouine district
-L’École Sadiki (Sadiki College) building in Tunis
-50 dinars
-Green, blue, and orange
-Ibn Rachik
-, Musée de la Monnaie (Currency Museum) building in Tunis
-Place Gouvernement la Kasbah, central square in Tunis
-Current banknotes (2017–2022 series)
-Image
-Value
-Size
-Main Color
-Description
-Year of Introduction
-Obverse
-Reverse
-Obverse
-Reverse
-5 dinars
-143 × 70
-mm
-Green
-Slaheddine el Amami
-Roman aqueducts in
-Zaghouan
-2022
-10 dinars
-148 × 73
-mm
-Blue
-Tewhida Ben Sheikh
-Berber pottery and jewelry
-2020
-20 dinars
-153 × 76
-mm
-Red
-Farhat Hached
-Amphitheater of
-El Djem
-2017
-50 dinars
-158 × 79
-mm
-Brown
-Hedi Nouira
-Building of the Central Bank of Tunisia
-2022
-Popular nomenclature
-[
-edit
-]
-Tunisians sometimes informally do not use the main unit (dinar) when mentioning the prices of goods, instead they use the sub-unit (milim). Accordingly, one dinar and a half is often referred to as
-khomstach en miya
-(literally fifteen hundred). This applies to all prices below 2 dinars. 50 dinar is often referred to as
-khamsin alf
-(fifty thousand). This convention is used even for higher prices, for example 70,000 dinars would be called
-sab'in maliun
-(seventy million). "Francs" is also still heard from time to time, 1,000 of them colloquially representing a single dinar.
-In addition to that, Tunisians tend to use the word "frank" instead of millime. For example, 100 millimes (0.1 dinars) is referred to as "miyat frank" (literally 100 franks). The word Frank originated from the French colonial era.
-Currency restrictions
-[
-edit
-]
-It is a criminal offense in
-Tunisia
-to import or export dinars, as it is a closed currency.
+ancient
+Vedic texts
+,
 [
 10
 ]
-Every year, each citizen can convert into foreign currency up to 6,000 Tunisian dinars before departure from the country. Therefore, prices at
-duty-free shops
-are in convertible currencies such as
-euros
-,
-US dollars
-and
-British pounds
-. There are many converting
-ATMs
-in the country for tourists.
 [
 11
 ]
-Current TND exchange rates
-From
-Google Finance
-:
-AUD
-CAD
-CHF
-CNY
-EUR
-GBP
-HKD
-JPY
-USD
-From
-Yahoo! Finance
-:
-AUD
-CAD
-CHF
-CNY
-EUR
-GBP
-HKD
-JPY
-USD
-From
-XE.com
-:
-AUD
-CAD
-CHF
-CNY
-EUR
-GBP
-HKD
-JPY
-USD
-From OANDA:
-AUD
-CAD
-CHF
-CNY
-EUR
-GBP
-HKD
-JPY
-USD
+[
+page
+needed
+]
+the
+Bronze-age
+Hittite Empire
+,
+[
+12
+]
+and the
+Persian Empire
+.
+[
+13
+]
+[
+14
+]
+Roman and civil law
+[
+edit
+]
+In the
+Roman Republic
+,
+taxes were collected
+from individuals at the rate of between 1% and 3% of the assessed value of their total property. However, since it was extremely difficult to facilitate the collection of the tax, the government auctioned it every year. The winning tax farmers (called
+publicani
+) paid the tax revenue to the government in advance and then kept the taxes collected from individuals. The
+publicani
+paid the tax revenue in coins, but collected the taxes using other
+exchange media
+, thus relieving the government of the work to carry out the currency conversion themselves. The revenue payment essentially worked as a loan to the government, which paid interest on it. Although this scheme was a profitable enterprise for the government as well as the
+publicani
+, it was later replaced by a direct tax system by the emperor
+Augustus
+; after which, each province was obliged to pay 1% tax on wealth and a flat rate on each adult. This brought about regular census and shifted the tax system more towards taxing an individual's income rather than wealth.
+[
+15
+]
+Islamic law
+[
+edit
+]
+Islamic rulers imposed
+Zakat
+(a tax on Muslims) and
+Jizya
+(a
+poll tax
+on conquered non-Muslims).
+[
+16
+]
+[
+17
+]
+Modern history
+[
+edit
+]
+Numerous records of government tax collection in Europe since at least the 17th century are still available today. But taxation levels are hard to compare to the size and flow of the economy since
+production
+numbers are not as readily available.
+[
+18
+]
+Taxation as a percentage of production of final goods may have reached 15–20% during the 17th century in places such as
+France
+, the
+Netherlands
+, and
+Scandinavia
+.
+[
+citation needed
+]
+During the war-filled years of the eighteenth and early nineteenth century, tax rates in Europe increased dramatically as war became more expensive and governments became more centralized and adept at gathering taxes. This increase was greatest in England.
+[
+19
+]
+Effective tax rates
+were higher in Britain than France in the years before the
+French Revolution
+, but they were mostly placed on international trade. In France, taxes were lower but the burden was mainly on landowners, individuals, and internal trade and thus created far more resentment.
+[
+20
+]
+Obsolete forms
+[
+edit
+]
+Obsolete forms of taxation include:
+[
+citation needed
+]
+In monetary economies prio
+
+---
+
+Fiscal policy - Wikipedia
+Jump to content
+Search
+Search
+Fiscal policy
+63 languages
+العربية
+Azərbaycanca
+Беларуская
+Български
+বাংলা
+Bosanski
+Català
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Ελληνικά
+Esperanto
+Español
+Eesti
+Euskara
+فارسی
+Suomi
+Føroyskt
+Français
+עברית
+हिन्दी
+Magyar
+Հայերեն
+Bahasa Indonesia
+Italiano
+日本語
+Қазақша
+ភាសាខ្មែរ
+한국어
+Кыргызча
+ລາວ
+Lietuvių
+Latviešu
+Македонски
+नेपाली
+Nederlands
+Norsk nynorsk
+Norsk bokmål
+Occitan
+Polski
+پښتو
+Português
+Română
+Русский
+Simple English
+Slovenčina
+Slovenščina
+Shqip
+Српски / srpski
+Svenska
+தமிழ்
+ไทย
+Türkçe
+Татарча / tatarça
+Українська
+Oʻzbekcha / ўзбекча
+Vèneto
+Tiếng Việt
+Winaray
+吴语
+粵語
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+Use of government revenue collection and expenditure to influence a country's economy
+This article is part of
+a series
+on
+Public finance
+Policies
+Agricultural
+Economic
+Energy
+Industrial
+Investment
+Social
+Trade
+Fiscal
+Monetary
+Policy mix
+Fiscal policy
+Budget
+policy
+Debt
+internal
+Deficit
+/
+surplus
+Finance ministry
+Fiscal gap
+Fiscal transparency
+Fiscal union
+Revenue
+Spending
+deficit
+Redistribution
+Tax
+Monetary policy
+Bank reserves
+requirements
+Discount window
+Gold reserves
+Interest rate
+Monetary authority
+central bank
+currency board
+Monetary base
+Monetary (currency) union
+Money supply
+Trade policy
+Balance of trade
+Free trade
+Gains from trade
+Non-tariff barrier
+Protectionism
+Tariff
+Trade bloc
+Trade creation
+Trade diversion
+Trade
+/
+commerce ministry
+Revenue
+Spending
+Non-tax revenue
+Tax revenue
+Discretionary spending
+Mandatory spending
+Optimum
+Balanced budget
+amendment
+Economic growth
+Fiscal illusion
+Price stability
+Wagner's law
+Reform
+Fiscal adjustment
+Monetary reform
+Economics
+portal
+Politics
+portal
+v
+t
+e
+Part of
+a series
+on
+Macroeconomics
+Basic concepts
+Output and measurement
+Growth
+Business cycle
+Financial crisis
+Recession
+Depression
+National accounts
+SNA
+GDP
+GNI
+NNI
+Output gap
+Unemployment
+Money and prices
+Exchange rate
+Inflation
+Cost-push
+Deflation
+Demand-pull
+Disinflation
+Price level
+Shrinkflation
+Stagflation
+Interest rate
+Liquidity trap
+Money
+Creation
+Demand
+Liquidity preference
+Endogenous
+Supply
+Dynamics and theory
+Aggregate demand
+Effective demand
+Aggregate supply
+Balance of payments
+Expectations
+Adaptive
+Rational
+Government debt
+Investment
+Saving
+Microfoundations
+Nominal rigidity
+Shocks
+Demand
+Supply
+Policies
+Fiscal
+Austerity
+Government spending
+Welfare spending
+Stimulus
+Tax policy
+Monetary
+Central bank
+Inflation targeting
+Open market operation
+Quantitative easing
+Commercial
+Capital control
+Free trade
+Protectionism
+Tariff
+Models
+Accelerator
+AD–AS
+Arrow–Debreu
+Endogenous growth
+General equilibrium
+DSGE
+Harrod–Domar
+IS–LM
+Keynesian cross
+Matching
+Multiplier
+Mundell–Fleming
+NAIRU
+Overlapping generations
+Overshooting
+Phillips curve
+Quantity theory of money
+Ramsey–Cass–Koopmans
+Solow–Swan
+Taylor rule
+Schools
+Mainstream
+Keynesian
+New
+Monetarism
+New classical
+RBC
+New neoclassical synthesis
+Saltwater and freshwater
+Stockholm
+Heterodox
+Austrian
+Chartalism
+MMT
+Disequilibrium
+Ecological
+Market monetarism
+Marxian
+Post-Keynesian
+Circuitism
+Structuralist
+Supply-side
+People
+Barro
+Bernanke
+Blanchard
+Diamond
+Domar
+Fisher
+Frisch
+Friedman
+Hansen
+Harrod
+Hayek
+Hicks
+Kaldor
+Kalecki
+Keynes
+Klein
+Krugman
+Kuznets
+Kydland
+Lerner
+Lucas
+Malthus
+Mankiw
+Marx
+Minsky
+Mitchell
+Modigliani
+Mundell
+Myrdal
+Nordhaus
+Okun
+Phelps
+Prescott
+Quesnay
+Ramsey
+Ricardo
+Robinson
+Romer
+Samuelson
+Sargent
+Smith
+Solow
+Stiglitz
+Stone
+Taylor
+Tinbergen
+Tobin
+Walras
+Wicksell
+Related fields
+Development economics
+Econometrics
+Economic statistics
+Evolutionary economics
+International economics
+Monetary economics
+Public finance
+See also
+Economics
+Applied
+Macroeconomic model
+Mathematical economics
+Microeconomics
+Political economy
+Publications in macroeconomics
+Economics
+portal
+Business
+portal
+v
+t
+e
+In
+economics
+and
+political science
+,
+fiscal policy
+is the use of
+government revenue
+collection (
+taxes
+or
+tax cuts
+) and
+expenditure
+to influence a country's economy. The use of government revenue expenditures to influence
+macroeconomic
+variables developed in reaction to the
+Great Depression
+of the 1930s, when the previous
+laissez-faire
+approach to economic management became unworkable. Fiscal policy is based on the theories of the British economist
+John Maynard Keynes
+, whose
+Keynesian economics
+theorised that government changes in the levels of taxation and government spending influence
+aggregate demand
+and the level of economic activity. Fiscal and
+monetary policy
+are the key strategies used by a country's government and
+central bank
+to advance its economic objectives. The combination of these policies enables these authorities to target
+inflation
+and to increase
+employment
+. In modern economies, inflation is conventionally considered "healthy" in the range of 2%–3%. Additionally, it is designed to try to keep
+GDP
+growth at 2%–3% and the unemployment rate near the
+natural unemployment rate
+of 4%–5%.
+[
+1
+]
+This implies that fiscal policy is used to stabilise the economy over the course of the
+business cycle
+.
+[
+2
+]
+[
+3
+]
+Changes in the level and composition of taxation and government spending can affect macroeconomic variables, including:
+aggregate demand
+and the level of economic activity
+saving
+and
+investment
+income distribution
+allocation of resources
+.
+Fiscal policy can be distinguished from
+monetary policy
+, in that fiscal policy deals with taxation and government spending and is often administered by a government department
+[
+4
+]
+;
+[
+5
+]
+[
+6
+]
+while monetary policy deals with the
+money supply
+,
+interest rates
+and is often administered by a country's
+central bank
+. Both fiscal and monetary policies influence a country's economic performance
+[
+7
+]
+.
+[
+5
+]
+[
+8
+]
+Monetary/fiscal debate
+[
+edit
+]
+Main article:
+Monetary/fiscal debate
+Since the 1970s, it became clear that monetary policy performance has some benefits over fiscal policy due to the fact that it reduces political influence, as it is set by the central bank (to have an expanding economy before the general election, politicians might cut the interest rates). Additionally, fiscal policy can potentially have more supply-side effects on the economy: to reduce inflation, the measures of increasing taxes and lowering spending would not be preferred, so the government might be reluctant to use these. Monetary policy is generally quicker to implement as interest rates can be set every month, while the decision to increase government spending might take time to figure out which area the money should be spent on.
+[
+9
+]
+The recession of the 2000s decade shows that monetary policy also has certain limitations. A
+liquidity trap
+occurs when interest rate cuts are insufficient as a demand booster as banks do not want to lend and the consumers are reluctant to increase spending due to negative expectations for the economy. Government spending is responsible for creating the demand in the economy and can provide a kick-start to get the economy out of the recession. When a deep recession takes place, it is not sufficient to rely just on monetary policy to restore the
+economic equilibrium.
+[
+9
+]
+Each side of these two policies has its differences, therefore, combining aspects of both policies to deal with economic problems has become a solution that is now used by the US. These policies have limited effects; however, fiscal policy seems to have a greater effect over the long-run period, while monetary policy tends to have a short-run success.
+[
+10
+]
+In 2000, a survey of 298 members of the
+American Economic Association
+(AEA) found that while 84 percent generally agreed with the statement "Fiscal policy has a
+significant stimulative impact
+on a less than
+fully employed
+economy", 71 percent also generally agreed with the statement "
+Management
+of the
+business cycle
+should be left to the
+Federal Reserve
+;
+activist fiscal policy
+should be avoided."
+[
+11
+]
+In 2011, a follow-up survey of 568 AEA members found that the previous consensus about the latter proposition had dissolved and was by then roughly evenly disputed.
+[
+12
+]
+Stances
+[
+edit
+]
+See also:
+Procyclical and countercyclical variables §
+Economic policy making
+Depending on the state of the economy, fiscal policy may reach for different objectives: its focus can be to restrict economic growth by mediating inflation or, in turn, increase economic growth by decreasing
+taxes
+, encouraging spending on different projects that act as stimuli to
+economic growth
+and enabling borrowing and spending.
+The three stances of fiscal policy are the following:
+[
+13
+]
+Neutral fiscal policy
+is usually undertaken when an economy is in neither a
+recession
+nor an
+expansion
+. The amount of government
+deficit spending
+(the excess not financed by tax
+revenue
+) is roughly the same as it has been on average over time, so no changes to it are occurring that would have an effect on the level of
+economic activity
+.
+Expansionary fiscal policy
+is used by the government when trying to balance the contraction phase in the
+business cycle
+. It involves government spending exceeding tax revenue by more than it has tended to, and is usually undertaken during recessions. Examples of expansionary fiscal policy measures include increased government spending on
+public works
+(e.g., building schools) and providing the residents of the economy with tax cuts to increase their purchasing power (in order to fix a decrease in the demand).
+Contractionary fiscal policy
+, on the other hand, is a measure to increase tax rates and decrease government spending. It occurs when government deficit spending is lower than usual. This has the potential to slow economic growth if inflation, which was caused by a significant increase in aggregate demand and the supply of money, is excessive. By reducing the economy's amount of aggregate income, the available amount for consumers to spend is also reduced. So, contractionary fiscal policy measures are employed when unsustainable growth takes place, leading to inflation, high prices of investment,
+recession
+and
+unemployment
+abo
+
+---
+
+Property tax equalization - Wikipedia
+Jump to content
+Search
+Search
+Property tax equalization
+2 languages
+Azərbaycanca
+Português
+Edit links
+From Wikipedia, the free encyclopedia
+Process used in calculation of property taxes
+This article is about equalization of assessed values for property taxes. For equalization of workers' taxes between countries, see
+Tax equalization
+.
+This article
+needs attention from an expert in taxation
+. The specific problem is:
+It will be difficult to explain this subject, its history, and methods in lay terms without some skill.
+WikiProject Taxation
+may be able to help recruit an expert.
+(
+December 2019
+)
+Part of a series on
+Taxation
+An aspect of
+fiscal policy
+Policies
+Economic justice
+Government revenue
+Property tax equalization
+Tax revenue
+Non-tax revenue
+Tax law
+Tax bracket
+Flat tax
+Tax burden
+Tax threshold
+Taxation as theft
+Tax shift
+Tax cut
+Tax advantage
+Tax incentive
+Tax reform
+Double taxation
+Tax harmonization
+Tax competition
+Voluntary taxation
+Representation
+Economics
+General theory
+Excess burden
+Tax efficiency
+Tax incidence
+Laffer curve
+Optimal tax
+Price effect
+Theories
+Optimal capital income taxation
+Distribution of tax
+Tax rate
+Burden
+Flat
+Progressive
+Regressive
+Proportional
+Collection
+Economic nexus in the United States
+Revenue service
+Revenue stamp
+Tax assessment
+Taxable income
+Tax lien
+Tax refund
+Tax shield
+Tax residence
+Tax preparation
+Tax protester
+Tax investigation
+Tax collector
+Tax withholding
+Private tax collection
+Noncompliance
+Legal
+tax avoidance
+Base erosion and profit shifting
+(BEPS)
+Double Irish
+Single Malt
+CAIA
+Dutch Sandwich
+Estate planning
+Fuel dye
+Repatriation tax avoidance
+Share repurchase
+Tariff engineering
+Tax credit
+Tax deduction
+Tax exemption
+Taxpayer groups
+Tax holiday
+Tax inversion
+Tax farming
+Tax patent
+Tax shelter
+Illegal
+tax evasion
+Tax amnesty
+Black market
+Debtors' prison
+Tax exile
+Smuggling
+Tax resistance
+Transfer mispricing
+Unreported employment
+Locations
+Tax havens
+Corporate havens
+Offshore financial centres
+(OFCs)
+Offshore magic circle
+Conduit and sink OFCs
+Financial centres
+Financial Secrecy Index
+Major examples
+Ireland as a tax haven
+Ireland v. Commission
+Leprechaun economics
+Liechtenstein tax affair
+Luxembourg Leaks
+Offshore Leaks
+Paradise Papers
+Panama Papers
+Swiss Leaks
+United States as a tax haven
+Panama as a tax haven
+Types
+Direct
+Indirect
+Per unit
+Ad valorem
+Aviation
+Airport improvement
+Landing
+Solidarity
+Capital gains
+Exit
+Consumption
+Departure
+Hotel
+Sales
+Stamp
+Television
+Tourist
+Value-added
+Digital goods
+Dividend
+Environmental tax
+Carbon
+Eco-tariff
+Landfill
+Natural resources consumption
+Severance
+Steering
+Stumpage
+Excise
+Alcohol
+Fat
+Meat
+Sin
+Sugary drink
+Tobacco
+General
+Georgist
+Gift
+Gross receipts
+Hidden
+Hypothecated
+Income
+Inheritance (estate)
+Internet tax
+Land value
+Luxury
+Mining
+On childlessness
+Payroll
+Pigouvian
+Property
+Resource rent
+Single
+Stealth
+Surtax
+Turnover
+Use
+User charge
+/
+fee
+Congestion
+Fuel
+Road
+/
+GNSS
+Toll
+Vehicle miles traveled
+Corporate profit
+Excess profits
+Windfall
+Negative (income)
+Wealth
+International
+Financial transaction tax
+ATTAC
+Currency transaction tax
+European Union Common Consolidated Corporate Tax Base
+(CCCTB)
+Global minimum corporate tax rate
+Robin Hood tax
+Tobin tax
+Spahn tax
+Tax equalization
+Tax treaty
+Exchange of Information
+Permanent establishment
+Transfer pricing
+European Union FTT
+Foreign revenue rule
+Trade
+Custom
+Duty
+Tariff
+Import
+Export
+Tariff war
+Free trade
+Free-trade zone
+Trade agreement
+ATA Carnet
+Research
+Academic
+Mihir A. Desai
+Dhammika Dharmapala
+James R. Hines Jr.
+Ronen Palan
+Joel Slemrod
+Gabriel Zucman
+Advocacy groups
+Institute on Taxation and Economic Policy
+(ITEP)
+Oxfam
+(UK)
+Tax Foundation
+(US)
+Tax Justice Network
+(TJN)
+Tax Policy Center
+(US)
+Religious
+Church tax
+Eight per thousand
+Teind
+Tithe
+Fiscus Judaicus
+Leibzoll
+Temple tax
+Tolerance tax
+Jizya
+Kharaj
+Khums
+Nisab
+Zakat
+By country
+All countries
+List of countries by tax rates
+Tax revenue to GDP ratio
+Tax rates in Europe
+Individual countries
+Albania
+Algeria
+Argentina
+Armenia
+Australia
+Azerbaijan
+Bangladesh
+Bhutan
+Brazil
+Bulgaria
+BVI
+Canada
+China
+Colombia
+Croatia
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Iceland
+India
+Indonesia
+Iran
+Ireland
+Israel
+Italy
+Japan
+Kazakhstan
+Lithuania
+Malta
+Morocco
+Namibia
+Netherlands
+New Zealand
+Norway
+Pakistan
+Palestine
+Peru
+Philippines
+Poland
+Portugal
+Russia
+South Africa
+Sri Lanka
+Sweden
+Switzerland
+Taiwan
+Tanzania
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Business
+portal
+Money
+portal
+v
+t
+e
+Equalization is a step in
+property taxation
+to bring a uniformity to
+tax assessment
+levels across different geographical areas or classes of properties.  Equalization is usually in the form of a uniform percentage of increase or decrease to each area or class of property.
+[
+1
+]
+Attempts at explicit equalization in tax assessments date back at least as early as 1799.
+[
+2
+]
 See also
 [
 edit
 ]
-Africa portal
-Money portal
-Numismatics portal
-Economy of Tunisia
-Carthaginian coinage
-Denarius
-Tunisian rial
-or piastre
-Tunisian franc
-Algerian dinar
-Libyan dinar
+Fair market value
 References
 [
 edit
 ]
 ↑
-"Roman silver coins: denarius"
-.
-www.valocchi.it
+"Publication 136: Property Assessment and Equalization"
+(PDF)
+. Springfield, Illinois:
+Illinois Department of Revenue
+. May 2019. p.
+4
 . Retrieved
-18 April
-2026
+2019-12-29
 .
 ↑
-"Currency Museum of the Central Bank"
+"Equalization"
+. Trenton, New Jersey: New Jersey State League of Municipalities
+. Retrieved
+2019-12-29
 .
-Central Bank of Tunisia
-. December 12, 2004. Archived from
-the original
-on December 12, 2004.
-↑
+This
+tax
+-related article is a
+stub
+. You can help Wikipedia by
+adding missing information
+.
+v
+t
+e
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Property_tax_equalization&oldid=1249296646
 "
-Tunisie: Deux nouvelles pièces de monnaie en circulation
-[
-link removed
-]
-",
-Al Huffington Post
-Maghreb
-, 26 december 2013
-↑
-Linzmayer, Owen (2013). "Tunisia".
-The Banknote Book
-. San Francisco, CA: www.BanknoteNews.com.
-↑
-Tunisia
-BanknoteNews.com. Accessed on 2009-09-28.
-↑
-"Tunisia - Demonetized banknotes"
-. 20 December 2019.
-↑
-"Tunisie
-: La BCT étudie le retrait des billets de 50 dinars"
-.
-↑
-"Tunisia new 5-dinar note (B537a) confirmed introduced on 28.04.2022 – BanknoteNews"
-. 3 May 2022.
-↑
-"Tunisia new 50-dinar note (B540a) confirmed introduced on 28.04.2022 – Bank
+Categories
+:
+Evaluation methods
+Property taxes
+Tax law
+Tax stubs
+Hidden categories:
+Articles with short description
+Short description is different from Wikidata
+Articles needing expert attention from December 2019
+All articles needing expert attention
+Taxation articles needing expert attention
+Pages using sidebar with the child parameter
+All stub articles
+Search
+Search
+Property tax equalization
+2 languages
+Add topic

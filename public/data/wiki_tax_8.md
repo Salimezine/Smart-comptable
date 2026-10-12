@@ -2139,24 +2139,31 @@ Mr. Miersch (Photography).
 [
 70
 ]
+1888
+:
+Sofya Kovalevskaya
+for her work on the study of a rigid body.
+[
+71
+]
 1896
 :
 Jacques Hadamard
 for his work in Geodesics.
 [
-71
+72
 ]
 1929
 :
 Henri Benard
 for his work on eddies in fluid dynamics.
 [
-72
+73
 ]
 1992
 : Monique Pick.
 [
-73
+74
 ]
 References
 [
@@ -2651,6 +2658,13 @@ champollion-adec.net
 2021
 .
 ↑
+Audin, Michèle (2008).
+Souvenirs sur Sofia Kovalevskaya
+. Orizzonti. Paris: Calvage & Mounet.
+ISBN
+978-2-916352-05-3
+.
+↑
 "Jacques Hadamard"
 .
 theses.univ-lyon2.fr/
@@ -2671,7 +2685,7 @@ lesia.obspm.fr
 2021
 .
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Prix_Bordin&oldid=1356725698
+https://en.wikipedia.org/w/index.php?title=Prix_Bordin&oldid=1379520832
 "
 Categories
 :

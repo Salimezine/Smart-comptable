@@ -50,7 +50,7 @@ This page is always in light mode.
   * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Economy+of+Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
 
 
-[ ![Banner logo](https://upload.wikimedia.org/wikipedia/commons/9/93/WikiLatinos_logo.png) Thousands of Latino trailblazers are missing or half-written on Wikipedia. Help fix the gap, Sep 15 to Oct 15! ](https://en.wikipedia.org/wiki/Event:404:_Historia_Not_Found)
+[ Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month! Learn more ![](https://en.wikipedia.org/wiki/Economy_of_Tunisia) ](https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2026_in_the_United_States)
 ## Contents
 move to sidebar hide
   * [ (Top) ](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
@@ -122,13 +122,13 @@ General
   * [What links here](https://en.wikipedia.org/wiki/Special:WhatLinksHere/Economy_of_Tunisia "List of all English Wikipedia pages containing links to this page \[alt-j\]")
   * [Related changes](https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Economy_of_Tunisia "Recent changes in pages linked from this page \[alt-k\]")
   * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[alt-u\]")
-  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1378451558 "Permanent link to this revision of this page")
+  * [Permanent link](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1379244545 "Permanent link to this revision of this page")
   * [Page information](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=info "More information about this page")
-  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1378451558&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Economy_of_Tunisia&id=1379244545&wpFormIdentifier=titleform "Information on how to cite this page")
   * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEconomy_of_Tunisia)
   * [Switch to legacy parser](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&useparsoid=0)
-  * [Expand all](https://en.wikipedia.org/wiki/Economy_of_Tunisia "Expand all collapsible elements on the current page")
   * [Edit interlanguage links](https://www.wikidata.org/wiki/Special:EntityPage/Q2914386#sitelinks-wikipedia "Edit interlanguage links")
+  * [Expand all](https://en.wikipedia.org/wiki/Economy_of_Tunisia "Expand all collapsible elements on the current page")
 
 
 Print/export 
@@ -143,18 +143,11 @@ In other projects
 
 From Wikipedia, the free encyclopedia  
 | ![](https://thumb.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)  |  hide**This article has multiple issues.** Please help **[improve it](https://en.wikipedia.org/wiki/Special:EditPage/Economy_of_Tunisia "Special:EditPage/Economy of Tunisia")** or discuss these issues on the **[talk page](https://en.wikipedia.org/wiki/Talk:Economy_of_Tunisia "Talk:Economy of Tunisia")**. _([Learn how and when to remove these messages](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_  
- | ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/60px-Ambox_current_red.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)  | This article needs to be **updated**. Please help update this article to reflect recent events or newly available information. _( July 2022)_  |  
+ | ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/60px-Ambox_current_red_Asia_Australia.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)  | This article needs to be **updated**. Please help update this article to reflect recent events or newly available information. _( July 2022)_  |  
 | --- | --- |  
 | ![](https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)  | This article **has an unclear[citation style](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources#Citation_style "Wikipedia:Citing sources")**. The references used may be made clearer with a different or consistent style of [citation](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources "Wikipedia:Citing sources") and [footnoting](https://en.wikipedia.org/wiki/Help:Footnotes "Help:Footnotes"). _( July 2022)__([Learn how and when to remove this message](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_  |  
 | --- | --- |  
-| [![icon](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Translation_to_english_arrow.svg/60px-Translation_to_english_arrow.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Translation_to_english_arrow.svg)  |  showYou can help **expand this article with text translated from[the corresponding article](https://fr.wikipedia.org/wiki/%C3%89conomie%20de%20la%20Tunisie "fr:Économie de la Tunisie") in French**. _(April 2026)_ Click [show] for important translation instructions.
-  * Consider **[adding a topic](https://en.wikipedia.org/wiki/Template:Expand_French#Topics_and_categorization "Template:Expand French")** to this template: there are already 1,342 articles in the [main category](https://en.wikipedia.org/wiki/Category:Articles_needing_translation_from_French_Wikipedia "Category:Articles needing translation from French Wikipedia"), and specifying`|topic=` will aid in categorization.
-  * Do not translate text that appears unreliable or low-quality. If possible, verify the text with references provided in the foreign-language article.
-  * You **must** provide [copyright attribution](https://en.wikipedia.org/wiki/Wikipedia:Copying_within_Wikipedia "Wikipedia:Copying within Wikipedia") in the [edit summary](https://en.wikipedia.org/wiki/Help:Edit_summary "Help:Edit summary") accompanying your translation by providing an [interlanguage link](https://en.wikipedia.org/wiki/Help:Interlanguage_links "Help:Interlanguage links") to the source of your translation. A model attribution edit summary is `Content in this edit is translated from the existing French Wikipedia article at [[:Fr:Économie de la Tunisie]]; see its history for attribution.`
-  * You may also add the template `{{Translated|Fr|Économie de la Tunisie}}` to the [talk page](https://en.wikipedia.org/wiki/Talk:Economy_of_Tunisia "Talk:Economy of Tunisia").
-  * For more guidance, see [Wikipedia:Translation](https://en.wikipedia.org/wiki/Wikipedia:Translation "Wikipedia:Translation").
-
- |  
+| [![icon](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Translation_to_english_arrow.svg/60px-Translation_to_english_arrow.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Translation_to_english_arrow.svg)  |  showYou can help **expand this article with text translated from[the corresponding article](https://fr.wikipedia.org/wiki/%C3%89conomie%20de%20la%20Tunisie "fr:Économie de la Tunisie") in French**. _(April 2026)_ Click [show] for important translation instructions.  |  
 | --- | --- |  
 _([Learn how and when to remove this message](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_
  |  
@@ -293,7 +286,7 @@ Economy of Tunisia
 
  |  
 |  _All values, unless otherwise stated, are in[US dollars](https://en.wikipedia.org/wiki/United_States_dollar "United States dollar")._  |  
-[Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia") is considered a [developing economy](https://en.wikipedia.org/wiki/Developing_country "Developing country"), classified as a Lower-middle Income country by the World Bank in 2023.[[21]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-21) In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but [backsliding](https://en.wikipedia.org/wiki/Democratic_backsliding "Democratic backsliding") and increasing terrorist attacks made it lose this status in 2015.[[22]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-22) [Liberalisation](https://en.wikipedia.org/wiki/Liberalization "Liberalization") efforts started in 1986 after three decades of [dirigisme](https://en.wikipedia.org/wiki/Dirigisme "Dirigisme") and state control of the economy. From the 1st of January 2008 onwards, the country opened up to international trade with the adoption of the [free trade agreement](https://en.wikipedia.org/wiki/Free_trade_agreement "Free trade agreement") with the [European Union](https://en.wikipedia.org/wiki/European_Union "European Union") in 1995, a process which increased in scale after the 2011 [Arab Spring](https://en.wikipedia.org/wiki/Arab_Spring "Arab Spring") and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.
+[Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia") is considered a [developing economy](https://en.wikipedia.org/wiki/Developing_country "Developing country"), classified as a Lower-middle Income country by the World Bank in 2023.[[21]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-21) In 2010, liberalisation efforts led to its graduation to the status of Upper-middle Income country, but [backsliding](https://en.wikipedia.org/wiki/Democratic_backsliding "Democratic backsliding") and increasing terrorist attacks made it lose this status in 2015.[[22]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-22) [Liberalisation](https://en.wikipedia.org/wiki/Liberalization "Liberalization") efforts started in 1986 after three decades of [dirigisme](https://en.wikipedia.org/wiki/Dirigisme "Dirigisme") and state control of the economy. From 1 January 2008 onwards, the country opened up to international trade with the adoption of the [free trade agreement](https://en.wikipedia.org/wiki/Free_trade_agreement "Free trade agreement") with the [European Union](https://en.wikipedia.org/wiki/European_Union "European Union") in 1995, a process which increased in scale after the 2011 [Arab Spring](https://en.wikipedia.org/wiki/Arab_Spring "Arab Spring") and subsequent political reforms. Prudent economic and fiscal planning has resulted in moderate but sustained growth for over a decade.
 Tunisia's economic growth has depended on [oil](https://en.wikipedia.org/wiki/Petroleum "Petroleum"), [phosphates](https://en.wikipedia.org/wiki/Phosphate "Phosphate"), [agri-food products](https://en.wikipedia.org/wiki/Agriculture "Agriculture"), [car parts manufacturing](https://en.wikipedia.org/wiki/Car_parts_manufacturing "Car parts manufacturing"), and [tourism](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia").
 Compared to other countries in the [Maghreb](https://en.wikipedia.org/wiki/Maghreb "Maghreb") region ([Algeria](https://en.wikipedia.org/wiki/Algeria "Algeria") and [Morocco](https://en.wikipedia.org/wiki/Morocco "Morocco")), Tunisia placed second in GDP per capita and total development until 2022, but now places third.[[23]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-23)
 In the 2007 [World Economic Forum](https://en.wikipedia.org/wiki/World_Economic_Forum "World Economic Forum") meeting on [Africa](https://en.wikipedia.org/wiki/Africa "Africa") (13 to 15 June 2007), Tunisia was recognised as the most [competitive](https://en.wikipedia.org/wiki/Competitive_economy "Competitive economy") economy in Africa, and the 29th out of 128 at the global level (from 30th in 2006).[[24]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-24)
@@ -557,78 +550,6 @@ In 2017, the breakdown by economic sector is as follows:
 
 [Economy of Africa ](https://en.wikipedia.org/wiki/Economy_of_Africa "Economy of Africa")  |  
 | --- |  
-| Sovereign states  | 
-  * [Algeria](https://en.wikipedia.org/wiki/Economy_of_Algeria "Economy of Algeria")
-  * [Angola](https://en.wikipedia.org/wiki/Economy_of_Angola "Economy of Angola")
-  * [Benin](https://en.wikipedia.org/wiki/Economy_of_Benin "Economy of Benin")
-  * [Botswana](https://en.wikipedia.org/wiki/Economy_of_Botswana "Economy of Botswana")
-  * [Burkina Faso](https://en.wikipedia.org/wiki/Economy_of_Burkina_Faso "Economy of Burkina Faso")
-  * [Burundi](https://en.wikipedia.org/wiki/Economy_of_Burundi "Economy of Burundi")
-  * [Cameroon](https://en.wikipedia.org/wiki/Economy_of_Cameroon "Economy of Cameroon")
-  * [Cape Verde](https://en.wikipedia.org/wiki/Economy_of_Cape_Verde "Economy of Cape Verde")
-  * [Central African Republic](https://en.wikipedia.org/wiki/Economy_of_the_Central_African_Republic "Economy of the Central African Republic")
-  * [Chad](https://en.wikipedia.org/wiki/Economy_of_Chad "Economy of Chad")
-  * [Comoros](https://en.wikipedia.org/wiki/Economy_of_the_Comoros "Economy of the Comoros")
-  * [Democratic Republic of the Congo](https://en.wikipedia.org/wiki/Economy_of_the_Democratic_Republic_of_the_Congo "Economy of the Democratic Republic of the Congo")
-  * [Republic of the Congo](https://en.wikipedia.org/wiki/Economy_of_the_Republic_of_the_Congo "Economy of the Republic of the Congo")
-  * [Djibouti](https://en.wikipedia.org/wiki/Economy_of_Djibouti "Economy of Djibouti")
-  * [Egypt](https://en.wikipedia.org/wiki/Economy_of_Egypt "Economy of Egypt")
-  * [Equatorial Guinea](https://en.wikipedia.org/wiki/Economy_of_Equatorial_Guinea "Economy of Equatorial Guinea")
-  * [Eritrea](https://en.wikipedia.org/wiki/Economy_of_Eritrea "Economy of Eritrea")
-  * [Eswatini](https://en.wikipedia.org/wiki/Economy_of_Eswatini "Economy of Eswatini")
-  * [Ethiopia](https://en.wikipedia.org/wiki/Economy_of_Ethiopia "Economy of Ethiopia")
-  * [Gabon](https://en.wikipedia.org/wiki/Economy_of_Gabon "Economy of Gabon")
-  * [The Gambia](https://en.wikipedia.org/wiki/Economy_of_the_Gambia "Economy of the Gambia")
-  * [Ghana](https://en.wikipedia.org/wiki/Economy_of_Ghana "Economy of Ghana")
-  * [Guinea](https://en.wikipedia.org/wiki/Economy_of_Guinea "Economy of Guinea")
-  * [Guinea-Bissau](https://en.wikipedia.org/wiki/Economy_of_Guinea-Bissau "Economy of Guinea-Bissau")
-  * [Ivory Coast](https://en.wikipedia.org/wiki/Economy_of_Ivory_Coast "Economy of Ivory Coast")
-  * [Kenya](https://en.wikipedia.org/wiki/Economy_of_Kenya "Economy of Kenya")
-  * [Lesotho](https://en.wikipedia.org/wiki/Economy_of_Lesotho "Economy of Lesotho")
-  * [Liberia](https://en.wikipedia.org/wiki/Economy_of_Liberia "Economy of Liberia")
-  * [Libya](https://en.wikipedia.org/wiki/Economy_of_Libya "Economy of Libya")
-  * [Madagascar](https://en.wikipedia.org/wiki/Economy_of_Madagascar "Economy of Madagascar")
-  * [Malawi](https://en.wikipedia.org/wiki/Economy_of_Malawi "Economy of Malawi")
-  * [Mali](https://en.wikipedia.org/wiki/Economy_of_Mali "Economy of Mali")
-  * [Mauritania](https://en.wikipedia.org/wiki/Economy_of_Mauritania "Economy of Mauritania")
-  * [Mauritius](https://en.wikipedia.org/wiki/Economy_of_Mauritius "Economy of Mauritius")
-  * [Morocco](https://en.wikipedia.org/wiki/Economy_of_Morocco "Economy of Morocco")
-  * [Mozambique](https://en.wikipedia.org/wiki/Economy_of_Mozambique "Economy of Mozambique")
-  * [Namibia](https://en.wikipedia.org/wiki/Economy_of_Namibia "Economy of Namibia")
-  * [Niger](https://en.wikipedia.org/wiki/Economy_of_Niger "Economy of Niger")
-  * [Nigeria](https://en.wikipedia.org/wiki/Economy_of_Nigeria "Economy of Nigeria")
-  * [Rwanda](https://en.wikipedia.org/wiki/Economy_of_Rwanda "Economy of Rwanda")
-  * [São Tomé and Príncipe](https://en.wikipedia.org/wiki/Economy_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe "Economy of São Tomé and Príncipe")
-  * [Senegal](https://en.wikipedia.org/wiki/Economy_of_Senegal "Economy of Senegal")
-  * [Seychelles](https://en.wikipedia.org/wiki/Economy_of_Seychelles "Economy of Seychelles")
-  * [Sierra Leone](https://en.wikipedia.org/wiki/Economy_of_Sierra_Leone "Economy of Sierra Leone")
-  * [Somalia](https://en.wikipedia.org/wiki/Economy_of_Somalia "Economy of Somalia")
-  * [South Africa](https://en.wikipedia.org/wiki/Economy_of_South_Africa "Economy of South Africa")
-  * [South Sudan](https://en.wikipedia.org/wiki/Economy_of_South_Sudan "Economy of South Sudan")
-  * [Sudan](https://en.wikipedia.org/wiki/Economy_of_Sudan "Economy of Sudan")
-  * [Tanzania](https://en.wikipedia.org/wiki/Economy_of_Tanzania "Economy of Tanzania")
-  * [Togo](https://en.wikipedia.org/wiki/Economy_of_Togo "Economy of Togo")
-  * [Tunisia](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
-  * [Uganda](https://en.wikipedia.org/wiki/Economy_of_Uganda "Economy of Uganda")
-  * [Zambia](https://en.wikipedia.org/wiki/Economy_of_Zambia "Economy of Zambia")
-  * [Zimbabwe](https://en.wikipedia.org/wiki/Economy_of_Zimbabwe "Economy of Zimbabwe")
-
- |  
-| States with limited  
-recognition  | 
-  * [Sahrawi Arab Democratic Republic](https://en.wikipedia.org/wiki/Economy_of_the_Sahrawi_Arab_Democratic_Republic "Economy of the Sahrawi Arab Democratic Republic")
-  * [Somaliland](https://en.wikipedia.org/wiki/Economy_of_Somaliland "Economy of Somaliland")
-
- |  
-| Dependencies and  
-other territories  | 
-  * [Canary Islands](https://en.wikipedia.org/wiki/Economy_of_the_Canary_Islands "Economy of the Canary Islands")/ [Ceuta](https://en.wikipedia.org/wiki/Economy_of_Ceuta "Economy of Ceuta")/ [Melilla](https://en.wikipedia.org/wiki/Economy_of_Melilla "Economy of Melilla")(Spain)
-  * [Madeira](https://en.wikipedia.org/wiki/Economy_of_Madeira "Economy of Madeira")(Portugal)
-  * [Mayotte](https://en.wikipedia.org/wiki/Economy_of_Mayotte "Economy of Mayotte")/ [Réunion](https://en.wikipedia.org/wiki/Economy_of_R%C3%A9union "Economy of Réunion")(France)
-  * [Saint Helena](https://en.wikipedia.org/wiki/Economy_of_Saint_Helena "Economy of Saint Helena")/ [Ascension Island](https://en.wikipedia.org/wiki/Economy_of_Ascension_Island "Economy of Ascension Island")/ [Tristan da Cunha](https://en.wikipedia.org/wiki/Economy_of_Tristan_da_Cunha "Economy of Tristan da Cunha")(United Kingdom)
-  * [Western Sahara](https://en.wikipedia.org/wiki/Economy_of_Western_Sahara "Economy of Western Sahara")
-
- |  
 |  show
   * [v](https://en.wikipedia.org/wiki/Template:Tunisia_topics "Template:Tunisia topics")
   * [t](https://en.wikipedia.org/wiki/Template_talk:Tunisia_topics "Template talk:Tunisia topics")
@@ -636,164 +557,7 @@ other territories  |
 
 [Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia")articles  |  
 | --- |  
-| [History](https://en.wikipedia.org/wiki/History_of_Tunisia "History of Tunisia")  | 
-  * [Early history](https://en.wikipedia.org/wiki/History_of_early_Tunisia "History of early Tunisia")
-    * [Capsian culture](https://en.wikipedia.org/wiki/Capsian_culture "Capsian culture")
-  * [Ancient Carthage](https://en.wikipedia.org/wiki/Ancient_Carthage "Ancient Carthage")
-  * [Punic Wars](https://en.wikipedia.org/wiki/Punic_Wars "Punic Wars")
-    * [First War](https://en.wikipedia.org/wiki/First_Punic_War "First Punic War")
-    * [Second War](https://en.wikipedia.org/wiki/Second_Punic_War "Second Punic War")
-    * [Third War](https://en.wikipedia.org/wiki/Third_Punic_War "Third Punic War")
-  * [Byzantine Empire](https://en.wikipedia.org/wiki/Byzantine_Empire "Byzantine Empire")
-  * [Medieval history](https://en.wikipedia.org/wiki/History_of_medieval_Tunisia "History of medieval Tunisia")
-  * [Muslim conquest](https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Maghreb "Muslim conquest of the Maghreb")
-  * [Fatimid Caliphate](https://en.wikipedia.org/wiki/Fatimid_Caliphate "Fatimid Caliphate")
-  * [Hafsids](https://en.wikipedia.org/wiki/Hafsid_dynasty "Hafsid dynasty")
-  * [Regency of Tunis](https://en.wikipedia.org/wiki/Ottoman_Tunisia "Ottoman Tunisia")
-    * [Muradid](https://en.wikipedia.org/wiki/Muradid_dynasty "Muradid dynasty")
-    * [Husaynids](https://en.wikipedia.org/wiki/Husaynids "Husaynids")
-  * [French protectorate](https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia "French protectorate of Tunisia")
-    * [National movement](https://en.wikipedia.org/wiki/Tunisian_national_movement "Tunisian national movement")
-    * [Naturalization issue](https://en.wikipedia.org/wiki/Tunisian_naturalization_issue "Tunisian naturalization issue")
-    * [Protests of 9 April](https://en.wikipedia.org/wiki/1938_Tunisian_protests?action=edit&redlink=1 "1938 Tunisian protests \(page does not exist\)")
-    * [Tunisian campaign](https://en.wikipedia.org/wiki/Tunisian_campaign "Tunisian campaign")
-  * [Independence declaration](https://en.wikipedia.org/wiki/Tunisian_independence "Tunisian independence")
-  * [Kingdom of Tunisia](https://en.wikipedia.org/wiki/Kingdom_of_Tunisia "Kingdom of Tunisia")
-  * [Republic declaration](https://en.wikipedia.org/wiki/Kingdom_of_Tunisia#Declaration_of_the_republic "Kingdom of Tunisia")
-  * [1987 coup d'état](https://en.wikipedia.org/wiki/1987_Tunisian_coup_d'%C3%A9tat "1987 Tunisian coup d'état")
-  * [Tunisian revolution](https://en.wikipedia.org/wiki/Tunisian_revolution "Tunisian revolution")
-    * [2013–14 political crisis](https://en.wikipedia.org/wiki/2013%E2%80%932014_Tunisian_political_crisis "2013–2014 Tunisian political crisis")
-    * [2018 Tunisian protests](https://en.wikipedia.org/wiki/2018_Tunisian_protests "2018 Tunisian protests")
-    * [COVID-19 pandemic](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Tunisia "COVID-19 pandemic in Tunisia")
-    * [2021 Tunisian protests](https://en.wikipedia.org/wiki/2021_Tunisian_protests "2021 Tunisian protests")
-    * [25 July 2021 self-coup](https://en.wikipedia.org/wiki/2021_Tunisian_self-coup "2021 Tunisian self-coup")
-
- |  
-| [Geography](https://en.wikipedia.org/wiki/Geography_of_Tunisia "Geography of Tunisia")  |   
- | 
-  * Administrative divisions 
-    * [Governorates](https://en.wikipedia.org/wiki/Governorates_of_Tunisia "Governorates of Tunisia")
-    * [Cities](https://en.wikipedia.org/wiki/List_of_cities_in_Tunisia "List of cities in Tunisia")
-    * [Subdivisions](https://en.wikipedia.org/wiki/Subdivisions_of_Tunisia "Subdivisions of Tunisia")
-  * Regions 
-    * [North East](https://en.wikipedia.org/wiki/North_East_Tunisia "North East Tunisia")
-    * [North West](https://en.wikipedia.org/wiki/North_West_Tunisia "North West Tunisia")
-    * [Sahel](https://en.wikipedia.org/wiki/Sahel,_Tunisia "Sahel, Tunisia")
-    * [Central West](https://en.wikipedia.org/wiki/Central_West_Tunisia "Central West Tunisia")
-    * [South East](https://en.wikipedia.org/wiki/South_East_Tunisia "South East Tunisia")
-    * [Djerid](https://en.wikipedia.org/wiki/Djerid "Djerid")
-  * [Wildlife](https://en.wikipedia.org/wiki/Wildlife_of_Tunisia "Wildlife of Tunisia")
-    * [Ecoregions](https://en.wikipedia.org/wiki/List_of_ecoregions_in_Tunisia "List of ecoregions in Tunisia")
-  * [World Heritage Sites](https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Tunisia "List of World Heritage Sites in Tunisia")
-  * [Museums](https://en.wikipedia.org/wiki/List_of_museums_in_Tunisia "List of museums in Tunisia")
-  * [Demographics](https://en.wikipedia.org/wiki/Demographics_of_Tunisia "Demographics of Tunisia")
-    * [Tunisians](https://en.wikipedia.org/wiki/Tunisians "Tunisians")
-    * [Tunisian diaspora](https://en.wikipedia.org/wiki/Tunisian_diaspora "Tunisian diaspora")
-  * [Climate](https://en.wikipedia.org/wiki/Climate_of_Tunisia "Climate of Tunisia")
-
- |  
-| --- |  
- |  
-| [Politics](https://en.wikipedia.org/wiki/Politics_of_Tunisia "Politics of Tunisia")  |   
- | 
-  * [President of the Republic](https://en.wikipedia.org/wiki/President_of_Tunisia "President of Tunisia")
-    * [List](https://en.wikipedia.org/wiki/List_of_presidents_of_Tunisia "List of presidents of Tunisia")
-  * [Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Tunisia "Prime Minister of Tunisia")
-    * [List](https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Tunisia "List of prime ministers of Tunisia")
-    * [Cabinet](https://en.wikipedia.org/wiki/Hachani_Cabinet "Hachani Cabinet")
-  * [Constitution](https://en.wikipedia.org/wiki/Constitution_of_Tunisia "Constitution of Tunisia")
-    * [Fundamental Pact](https://en.wikipedia.org/wiki/Tunisian_Fundamental_Pact_of_1857 "Tunisian Fundamental Pact of 1857")
-    * [1861](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_1861 "Tunisian Constitution of 1861")
-    * [1959](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_1959 "Tunisian Constitution of 1959")
-    * [2014](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_2014 "Tunisian Constitution of 2014")
-    * [2022](https://en.wikipedia.org/wiki/Tunisian_Constitution_of_2022 "Tunisian Constitution of 2022")
-  * [Foreign relations](https://en.wikipedia.org/wiki/Foreign_relations_of_Tunisia "Foreign relations of Tunisia")
-  * [Armed Forces](https://en.wikipedia.org/wiki/Tunisian_Armed_Forces "Tunisian Armed Forces")
-    * [Army](https://en.wikipedia.org/wiki/Tunisian_Army "Tunisian Army")
-    * [Air Force](https://en.wikipedia.org/wiki/Tunisian_Air_Force "Tunisian Air Force")
-    * [Navy](https://en.wikipedia.org/wiki/Tunisian_Navy "Tunisian Navy")
-  * [Parliament](https://en.wikipedia.org/wiki/Parliament_of_Tunisia "Parliament of Tunisia")
-    * [National Council of Regions and Districts](https://en.wikipedia.org/wiki/National_Council_of_Regions_and_Districts "National Council of Regions and Districts")
-    * [Assembly of the Representatives of the People](https://en.wikipedia.org/wiki/Assembly_of_the_Representatives_of_the_People "Assembly of the Representatives of the People")
-  * [Political parties](https://en.wikipedia.org/wiki/List_of_political_parties_in_Tunisia "List of political parties in Tunisia")
-  * [Elections](https://en.wikipedia.org/wiki/Elections_in_Tunisia "Elections in Tunisia")
-    * [Independent High Authority for Elections](https://en.wikipedia.org/wiki/Independent_High_Authority_for_Elections "Independent High Authority for Elections")
-
- |  
-| --- |  
- |  
-| [Economy](https://en.wikipedia.org/wiki/Economy_of_Tunisia)  |   
- | 
-  * [Bourse de Tunis](https://en.wikipedia.org/wiki/Bourse_de_Tunis "Bourse de Tunis")
-    * [Central Bank of Tunisia](https://en.wikipedia.org/wiki/Central_Bank_of_Tunisia "Central Bank of Tunisia")
-    * [Tunisian dinar](https://en.wikipedia.org/wiki/Tunisian_dinar "Tunisian dinar")
-    * [Banking in Tunisia](https://en.wikipedia.org/wiki/Banking_in_Tunisia "Banking in Tunisia")
-  * [Agriculture](https://en.wikipedia.org/wiki/Agriculture_in_Tunisia "Agriculture in Tunisia")
-  * [Energy](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
-    * [Natural resources](https://en.wikipedia.org/wiki/Natural_resources_in_Tunisia?action=edit&redlink=1 "Natural resources in Tunisia \(page does not exist\)")
-    * [Water supply and sanitation](https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_Tunisia "Water supply and sanitation in Tunisia")
-  * [Tourism](https://en.wikipedia.org/wiki/Tourism_in_Tunisia "Tourism in Tunisia")
-  * [Industry](https://en.wikipedia.org/wiki/Industry_in_Tunisia?action=edit&redlink=1 "Industry in Tunisia \(page does not exist\)")
-  * [Telecommunications](https://en.wikipedia.org/wiki/Telecommunications_in_Tunisia "Telecommunications in Tunisia")
-  * [Transport](https://en.wikipedia.org/wiki/Transport_in_Tunisia "Transport in Tunisia")
-    * [Roads](https://en.wikipedia.org/wiki/List_of_roads_in_Tunisia?action=edit&redlink=1 "List of roads in Tunisia \(page does not exist\)")
-    * [Rail transport](https://en.wikipedia.org/wiki/Rail_transport_in_Tunisia "Rail transport in Tunisia")
-  * [Traditional crafts](https://en.wikipedia.org/wiki/Tunisian_traditional_crafts?action=edit&redlink=1 "Tunisian traditional crafts \(page does not exist\)")
-  * [Major projects](https://en.wikipedia.org/wiki/Major_projects_in_Tunisia?action=edit&redlink=1 "Major projects in Tunisia \(page does not exist\)")
-
- |  
-| --- |  
- |  
-| [Society](https://en.wikipedia.org/wiki/Category:Society_of_Tunisia "Category:Society of Tunisia")  |   
- | 
-  * [Education](https://en.wikipedia.org/wiki/Education_in_Tunisia "Education in Tunisia")
-    * [Baccalaureate](https://en.wikipedia.org/wiki/Tunisian_Baccalaureate "Tunisian Baccalaureate")
-    * [Higher education](https://en.wikipedia.org/wiki/Higher_education_in_Tunisia "Higher education in Tunisia")
-  * [Languages](https://en.wikipedia.org/wiki/Languages_of_Tunisia "Languages of Tunisia")
-    * [Tunisian Arabic](https://en.wikipedia.org/wiki/Tunisian_Arabic "Tunisian Arabic")
-  * [Media](https://en.wikipedia.org/wiki/Mass_media_in_Tunisia "Mass media in Tunisia")
-    * [Television](https://en.wikipedia.org/wiki/Television_in_Tunisia "Television in Tunisia")
-    * [Radio stations](https://en.wikipedia.org/wiki/List_of_radio_stations_in_Tunisia "List of radio stations in Tunisia")
-    * [Internet](https://en.wikipedia.org/wiki/Internet_in_Tunisia "Internet in Tunisia")
-    * [Newspapers](https://en.wikipedia.org/wiki/List_of_newspapers_in_Tunisia "List of newspapers in Tunisia")
-    * [Censorship](https://en.wikipedia.org/wiki/Censorship_in_Tunisia "Censorship in Tunisia")
-  * [Human rights](https://en.wikipedia.org/wiki/Human_rights_in_Tunisia "Human rights in Tunisia")
-    * [Abortion](https://en.wikipedia.org/wiki/Abortion_in_Tunisia "Abortion in Tunisia")
-    * [LGBT](https://en.wikipedia.org/wiki/LGBT_rights_in_Tunisia "LGBT rights in Tunisia")
-    * [Women](https://en.wikipedia.org/wiki/Women_in_Tunisia "Women in Tunisia")
-    * [Polygamy](https://en.wikipedia.org/wiki/Polygamy_in_Tunisia "Polygamy in Tunisia")
-  * [Religion](https://en.wikipedia.org/wiki/Religion_in_Tunisia "Religion in Tunisia")
-    * [Islam](https://en.wikipedia.org/wiki/Islam_in_Tunisia "Islam in Tunisia")
-    * [Christianity](https://en.wikipedia.org/wiki/Christianity_in_Tunisia "Christianity in Tunisia")
-    * [Judaism](https://en.wikipedia.org/wiki/History_of_the_Jews_in_Tunisia "History of the Jews in Tunisia")
-  * [Health](https://en.wikipedia.org/wiki/Health_in_Tunisia "Health in Tunisia")
-  * [Public holidays](https://en.wikipedia.org/wiki/Public_holidays_in_Tunisia "Public holidays in Tunisia")
-
- |  
-| --- |  
-| [Culture](https://en.wikipedia.org/wiki/Culture_of_Tunisia "Culture of Tunisia")  | 
-  * Arts 
-    * [Cinema](https://en.wikipedia.org/wiki/Cinema_of_Tunisia "Cinema of Tunisia")
-    * [Music](https://en.wikipedia.org/wiki/Music_of_Tunisia "Music of Tunisia")
-    * [Literature](https://en.wikipedia.org/wiki/Tunisian_literature "Tunisian literature")
-  * [Sport](https://en.wikipedia.org/wiki/Sport_in_Tunisia "Sport in Tunisia")
-    * [Football](https://en.wikipedia.org/wiki/Football_in_Tunisia "Football in Tunisia")
-  * [Cuisine](https://en.wikipedia.org/wiki/Tunisian_cuisine "Tunisian cuisine")
-  * National symbols 
-    * [Flag](https://en.wikipedia.org/wiki/Flag_of_Tunisia "Flag of Tunisia")
-    * [National anthem](https://en.wikipedia.org/wiki/Humat_al-Hima "Humat al-Hima")
-    * [Coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia "Coat of arms of Tunisia")
-    * [Motto](https://en.wikipedia.org/wiki/Freedom,_Order,_Justice "Freedom, Order, Justice")
-
- |  
- |  
-| 
-  * ![](https://thumb.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/20px-Symbol_category_class.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) [Category](https://en.wikipedia.org/wiki/Category:Tunisia "Category:Tunisia")
-  * ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/20px-People_icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) [WikiProject](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tunisia "Wikipedia:WikiProject Tunisia")
-  * [![](https://thumb.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Commons-logo.svg "Commons page") [Commons](https://commons.wikimedia.org/wiki/Category:Tunisia "commons:Category:Tunisia")
-
- |  
-Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1378451558](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1378451558)"
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1379244545](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1379244545)"
 [Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 
   * [African Union member economies](https://en.wikipedia.org/wiki/Category:African_Union_member_economies "Category:African Union member economies")
   * [Economy of Tunisia](https://en.wikipedia.org/wiki/Category:Economy_of_Tunisia "Category:Economy of Tunisia")
@@ -818,7 +582,7 @@ Hidden categories:
   * [Pages with reference errors](https://en.wikipedia.org/wiki/Category:Pages_with_reference_errors "Category:Pages with reference errors")
 
 
-  * This page was last edited on 4 October 2026, at 15:37 (UTC).
+  * This page was last edited on 8 October 2026, at 20:38 (UTC).
   * Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
   * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
 
