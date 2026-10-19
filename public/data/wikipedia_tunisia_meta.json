@@ -2,9 +2,9 @@
   "title": "Tunisia - Wikipedia",
   "description": null,
   "url": "https://en.wikipedia.org/wiki/Tunisia",
-  "crawled_at": "2026-10-12",
-  "markdown_length": 318905,
-  "links_found": 1478,
+  "crawled_at": "2026-10-19",
+  "markdown_length": 319440,
+  "links_found": 1481,
   "links": {
     "internal": [
       "https://en.wikipedia.org/wiki/Main_Page",
@@ -22,15 +22,16 @@
       "https://en.wikipedia.org/wiki/Special:Search",
       "https://en.wikipedia.org/w/index.php?returnto=Tunisia&title=Special%3ACreateAccount",
       "https://en.wikipedia.org/w/index.php?returnto=Tunisia&title=Special%3AUserLogin",
-      "https://en.wikipedia.org/wiki/Event:404:_Historia_Not_Found",
       "https://en.wikipedia.org/wiki/Tunisia",
       "https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81",
       "https://ace.wikipedia.org/wiki/Tunisia",
-      "https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81"
+      "https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81",
+      "https://af.wikipedia.org/wiki/Tunisi%C3%AB"
     ],
     "external": [
       "https://donate.wikimedia.org/?uselang=en&wmf_campaign=en.wikipedia.org&wmf_medium=sidebar&wmf_source=donate",
       "https://www.wikidata.org/wiki/Special:EntityPage/Q948",
+      "javascript:print();",
       "https://commons.wikimedia.org/wiki/%D8%AA%D9%88%D9%86%D8%B3_/_Tunest_/_Tunisie",
       "https://en.wikinews.org/wiki/Category:Tunisia",
       "https://en.wikiquote.org/wiki/Tunisia",
@@ -47,8 +48,7 @@
       "http://www.anc.tn/site/main/AR/docs/constit_proj_26012014.pdf",
       "http://www.ethnologue.com/language/aeb",
       "https://unesdoc.unesco.org/ark:/48223/pf0000212023",
-      "https://www.theguardian.com/news/datablog/2011/apr/15/language-extinct-endangered",
-      "https://www.ethnologue.com/country/TN/languages"
+      "https://www.theguardian.com/news/datablog/2011/apr/15/language-extinct-endangered"
     ]
   }
 }

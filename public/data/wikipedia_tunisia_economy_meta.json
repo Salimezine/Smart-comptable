@@ -2,9 +2,9 @@
   "title": "Economy of Tunisia - Wikipedia",
   "description": null,
   "url": "https://en.wikipedia.org/wiki/Economy_of_Tunisia",
-  "crawled_at": "2026-10-12",
-  "markdown_length": 144863,
-  "links_found": 345,
+  "crawled_at": "2026-10-19",
+  "markdown_length": 144526,
+  "links_found": 344,
   "links": {
     "internal": [
       "https://en.wikipedia.org/wiki/Main_Page",
@@ -30,8 +30,8 @@
     ],
     "external": [
       "https://donate.wikimedia.org/?uselang=en&wmf_campaign=en.wikipedia.org&wmf_medium=sidebar&wmf_source=donate",
-      "https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2026_in_the_United_States",
       "https://www.wikidata.org/wiki/Special:EntityPage/Q2914386",
+      "javascript:print();",
       "https://commons.wikimedia.org/wiki/Category:Economy_of_Tunisia",
       "https://www.imf.org/external/pubs/ft/weo/2019/01/weodata/weoselco.aspx?g=2200&sg=All+countries+%2F+Emerging+market+and+developing+economies",
       "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups",

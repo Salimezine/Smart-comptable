@@ -818,7 +818,11 @@ in April 1922, he had a reputation for being close to the people. From 10 August
 Jean-Pierre Esteva
 by presenting him with a memorandum grouping together 16 demands inspired by his nationalist friends. On 15 September, the
 Vichy government
-sent an end of inadmissibility in response to the monarch. On 12 October, it was the absence of Tunisians among the French directors of the administration that provoked his anger.
+sent an end of inadmissibility in response to the monarch. On 12 October
+[
+40
+]
+, it was the absence of Tunisians among the French directors of the administration that provoked his anger.
 The end of the
 World War II
 meant the return in force of the French protectorate in Tunisia. The first victim was Moncef Bey who took advantage of the weakening of the French to publicize the Tunisian cause. Little suspected of having collaborated with the
@@ -833,7 +837,7 @@ in the
 Franco-Algerian
 South.
 [
-40
+41
 ]
 He was replaced by
 Lamine Bey
@@ -849,7 +853,7 @@ Tunisian independence
 Habib Bourguiba giving a speech in the city of Bizerte, 1952
 Decolonisation proved a protracted and controversial affair. In Tunisia, nationalists demanded the return of the deposed Bey and institutional reform.
 [
-41
+42
 ]
 In 1945, the two
 Destour
@@ -861,11 +865,11 @@ switched their aim to independence. Fearing arrest, Bourguiba spent much of the 
 Cairo
 , where in 1950, he issued a seven-point manifesto demanding the restitution of Tunisian sovereignty and election of a national assembly.
 [
-41
+42
 ]
 A conciliatory French government acknowledged the desirability of autonomy, although it warned that this would come only at an unspecified time in the future; Paris proposed French and Tunisian "co-sovereignty" over the protectorate. An accord signed the next year, which granted increased powers to Tunisian officials, fell short of satisfying nationalists and outraged settlers. New French prime ministers took a harder line and kept Bourguiba under house arrest from 1951 to 1954.
 [
-41
+42
 ]
 A general strike in 1952 led to violent confrontation between the French and Tunisians, including guerrilla attacks by nationalists. Yet another change in French government, the appointment of
 Pierre Mendès-France
@@ -883,7 +887,7 @@ under
 Muhammad VIII al-Amin
 on 20 March.
 [
-42
+43
 ]
 See also
 [
@@ -1117,6 +1121,15 @@ Perkins 2004, p. 105.
 1
 2
 Perkins 1986, p. 180.
+↑
+"Moncef Bey, le souverain nationaliste"
+.
+Leaders
+(in French)
+. Retrieved
+13 October
+2026
+.
 ↑
 Bessis, Juliette (1983).
 "Sur Moncef Bey et le moncefisme
@@ -1826,7 +1839,7 @@ Yale LUX
 /
 36.8333; 10.1500
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1378198947
+https://en.wikipedia.org/w/index.php?title=French_protectorate_of_Tunisia&oldid=1380019363
 "
 Categories
 :
@@ -1855,6 +1868,7 @@ All articles with unsourced statements
 Articles with unsourced statements from November 2024
 Articles needing additional references from September 2025
 All articles needing additional references
+CS1 French-language sources (fr)
 Commons category link is on Wikidata
 Pages using gadget WikiMiniAtlas
 Coordinates on Wikidata
@@ -2539,7 +2553,7 @@ Cham
 ]
 A plaque on the building on
 Place Broglie
-where De Dietrich's house once stood commemorates the event.
+where de Dietrich's house once stood commemorates the event.
 [
 13
 ]

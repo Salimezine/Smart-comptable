@@ -50,7 +50,6 @@ This page is always in light mode.
   * [ Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Economy+of+Tunisia "You're encouraged to log in; however, it's not mandatory. \[alt-o\]")
 
 
-[ Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month! Learn more ![](https://en.wikipedia.org/wiki/Economy_of_Tunisia) ](https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2026_in_the_United_States)
 ## Contents
 move to sidebar hide
   * [ (Top) ](https://en.wikipedia.org/wiki/Economy_of_Tunisia)
@@ -133,7 +132,7 @@ General
 
 Print/export 
   * [Download as PDF](https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Economy_of_Tunisia&action=show-download-screen "Download this page as a PDF file")
-  * [Printable version](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&printable=yes "Printable version of this page \[alt-p\]")
+  * [Printable version](javascript:print\(\); "Printable version of this page \[alt-p\]")
 
 
 In other projects 
@@ -175,9 +174,9 @@ Economy of Tunisia
 
  |  
 | [GDP growth](https://en.wikipedia.org/wiki/Economic_growth "Economic growth")  | 
-  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 2.5%(2025)
-  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 2.1%(2026e)
-  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 1.6%(2027f)[[4]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-IMFWEOTN-4)
+  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 2.5% (2025)
+  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 2.1% (2026e)
+  * ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail) 1.6% (2027f)[[4]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-IMFWEOTN-4)
 
  |  
 | GDP per capita  | 
@@ -309,7 +308,7 @@ The following table shows the main economic indicators in 1980–2026. Inflation
 (real)  | Inflation rate  
 (in Percent)  | Unemployment   
 (in Percent)  | Government debt  
-(in% of GDP)  |  
+(in % of GDP)  |  
 | --- | --- | --- | --- | --- | --- | --- | --- |  
 | 1980  | 13.3  | 2,045  | 9.6  |  ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)7.4%  |  ![Negative increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)10.0%  | n/a  | n/a  |  
 | 1981  |  ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)15.4  |  ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)2,297  |  ![Decrease](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Decrease2.svg/20px-Decrease2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)9.2  |  ![Increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/20px-Increase2.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)5.5%  |  ![Negative increase](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/20px-Increase_Negative.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)8.9%  | n/a  | n/a  |  
@@ -444,7 +443,7 @@ Among Tunisia's tourist attractions are its cosmopolitan capital city of [Tunis]
 ### Energy
 [[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=9 "Edit section: Energy")]
 Main article: [Energy in Tunisia](https://en.wikipedia.org/wiki/Energy_in_Tunisia "Energy in Tunisia")
-Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).[[44]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-44) As July 2026 multiple regional grid failure occurred as consequences of extreme high summer temperatures, exceeding 49°C, widespread forest fires damaging cables and sub-station, lack of proper maintenance of the grid and high demand overcoming national power generation capabilities.
+Tunisia's natural resources are modest when compared to those of its neighbors: Algeria and Libya. This modesty in natural resources forced the country to import oil, which contributed to the rise in the cost of gasoline: on 26 April 2006, the liter crossed the bar of one dinar to sell for 1.50 Tunisian dinars. (a price equivalent to European prices from the point of view of purchasing power parity).[[44]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-44) As July 2026 multiple regional grid failure occurred as consequences of extreme high summer temperatures, exceeding 49 °C, widespread forest fires damaging cables and sub-station, lack of proper maintenance of the grid and high demand overcoming national power generation capabilities.
 ### Electricity
 [[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=10 "Edit section: Electricity")]
   * **Production:** 16.13 Billion kWh (2011)[[45]](https://en.wikipedia.org/wiki/Economy_of_Tunisia#cite_note-45)
@@ -473,9 +472,9 @@ This section is an excerpt from [Telecommunications in Tunisia](https://en.wikip
 In 2017, the breakdown by economic sector is as follows:  
 | Economy sector  | contribution to GDP  |  
 | --- | --- |  
-| **Agriculture**  | 10,1%  |  
-| **Industry**  | 26,2%  |  
-| **Services**  | 63,8%  |  
+| **Agriculture**  | 10,1 %  |  
+| **Industry**  | 26,2 %  |  
+| **Services**  | 63,8 %  |  
 ## See also
 [[edit](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&action=edit&section=14 "Edit section: See also")]
   * [Economy of Africa](https://en.wikipedia.org/wiki/Economy_of_Africa "Economy of Africa")
@@ -555,7 +554,7 @@ In 2017, the breakdown by economic sector is as follows:
   * [t](https://en.wikipedia.org/wiki/Template_talk:Tunisia_topics "Template talk:Tunisia topics")
   * [e](https://en.wikipedia.org/wiki/Special:EditPage/Template:Tunisia_topics "Special:EditPage/Template:Tunisia topics")
 
-[Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia")articles  |  
+[Tunisia](https://en.wikipedia.org/wiki/Tunisia "Tunisia") articles  |  
 | --- |  
 Retrieved from "[https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1379244545](https://en.wikipedia.org/w/index.php?title=Economy_of_Tunisia&oldid=1379244545)"
 [Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 

@@ -116,7 +116,7 @@ Bar Kokhba Revolt
 Rabbinic period
 and Middle Ages
 Rabbinic Judaism
-History of the Jews in the Byzantine Empire
+Jews in the Byzantine Empire
 Christianity
 and Judaism
 (
@@ -6509,8 +6509,26 @@ Lower house
 Assembly of the Representatives of the People
 Establishment
 •
+Ancient Carthage
+814 BC
+•
+Roman Africa
+146 BC
+•
+Vandal Kingdom
+439
+•
+Exarchate of Africa
+591
+•
 Aghlabid Emirate
 800
+•
+Fatimid Caliphate
+909
+•
+Zirid Emirate
+972
 •
 Hafsid Sultanate
 1229
@@ -6925,14 +6943,7 @@ Tunís
 ) and
 Spanish
 Túnez
-. In this case, the same name is used for both country and city, as with the
-Arabic
-تونس
-, and only by context can one tell the difference.
-[
-36
-]
-In Engli
+. In this case, 
 
 ---
 
@@ -8065,8 +8076,26 @@ Lower house
 Assembly of the Representatives of the People
 Establishment
 •
+Ancient Carthage
+814 BC
+•
+Roman Africa
+146 BC
+•
+Vandal Kingdom
+439
+•
+Exarchate of Africa
+591
+•
 Aghlabid Emirate
 800
+•
+Fatimid Caliphate
+909
+•
+Zirid Emirate
+972
 •
 Hafsid Sultanate
 1229
@@ -8481,11 +8510,4 @@ Tunís
 ) and
 Spanish
 Túnez
-. In this case, the same name is used for both country and city, as with the
-Arabic
-تونس
-, and only by context can one tell the difference.
-[
-36
-]
-In Engli
+. In this case, 

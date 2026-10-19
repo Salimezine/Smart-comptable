@@ -1178,8 +1178,26 @@ Lower house
 Assembly of the Representatives of the People
 Establishment
 •
+Ancient Carthage
+814 BC
+•
+Roman Africa
+146 BC
+•
+Vandal Kingdom
+439
+•
+Exarchate of Africa
+591
+•
 Aghlabid Emirate
 800
+•
+Fatimid Caliphate
+909
+•
+Zirid Emirate
+972
 •
 Hafsid Sultanate
 1229
@@ -1594,14 +1612,7 @@ Tunís
 ) and
 Spanish
 Túnez
-. In this case, the same name is used for both country and city, as with the
-Arabic
-تونس
-, and only by context can one tell the difference.
-[
-36
-]
-In Engli
+. In this case, 
 
 ---
 
@@ -1707,7 +1718,7 @@ Beylik of Tunis
 Arabic
 :
 بايلك تونس
-) was the legal form of present-day
+) was the legal form of
 Tunisia
 , between 1705 and 1881.
 [
@@ -2123,7 +2134,9 @@ Legislature
 edit
 ]
 The Tunisian parliament was called the
-Supreme 
+Supreme Council
+(
+Ar
 
 ---
 
