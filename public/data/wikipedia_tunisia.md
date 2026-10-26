@@ -400,8 +400,8 @@ General
   * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Tunisia&id=1380030123&wpFormIdentifier=titleform "Information on how to cite this page")
   * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTunisia)
   * [Switch to legacy parser](https://en.wikipedia.org/w/index.php?title=Tunisia&useparsoid=0)
-  * [Edit interlanguage links](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Edit interlanguage links")
   * [Expand all](https://en.wikipedia.org/wiki/Tunisia "Expand all collapsible elements on the current page")
+  * [Edit interlanguage links](https://www.wikidata.org/wiki/Special:EntityPage/Q948#sitelinks-wikipedia "Edit interlanguage links")
 
 
 Print/export 

@@ -3882,8 +3882,8 @@ years, 68
 days
 3
 Kais Saied
-6
-years, 361
+7
+years, 3
 days
 4
 Beji Caid Essebsi
@@ -4016,7 +4016,7 @@ Sahel
 Central West
 South East
 Djerid
-Wildli
+Wildlife
 
 ---
 
@@ -4083,7 +4083,7 @@ President of Tunisia since 2019
 His Excellency
 Kaïs Saïed
 قيس سعيد
-Official portrait, 2019
+Saied in 2023
 5th
 President of Tunisia
 Incumbent
@@ -4545,4 +4545,4 @@ Saied refused to stay at the
 presidential palace
 in Carthage, preferring his villa in Mnihla, located in the
 governorate of Ariana
-. On 30 October, he appointed di
+. On 30 October, he appointed diplomat Tar

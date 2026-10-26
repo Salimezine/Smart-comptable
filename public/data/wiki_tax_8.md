@@ -3327,13 +3327,16 @@ French pronunciation:
 akademi
 fʁɑ̃sɛːz
 ]
-), also known as the
+), written as
+Académie française
+in French , also colloquially known as the
 French Academy
-, is the principal
+in English, is the principal
 French
 council for matters pertaining to the
 French language
-. The
+.
+The
 Académie
 was officially established in 1635 by
 Cardinal Richelieu
@@ -3356,6 +3359,9 @@ Napoleon Bonaparte
 It is the oldest of the five
 académies
 of the institute. The body has the duty of acting as an official authority on the language; it is tasked with publishing an official dictionary of the language.
+[
+citation needed
+]
 The
 Académie
 comprises forty members, known as
@@ -3487,7 +3493,7 @@ The
 Académie Française
 has forty seats, each of which is assigned a separate number. Candidates make their applications for a specific seat, not to the
 Académie
-in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, it is not uncommon that potential candidates refuse to apply for particular seats because they dislike the predecessors.
+in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, potential candidates often refuse, however, to apply for a particular seat because they dislike its predecessors.
 [
 citation needed
 ]
@@ -3507,13 +3513,16 @@ One of the
 immortels
 is chosen by their colleagues to be the
 Académie
-'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but holds the ability to resign; they may thereafter be styled as "Honorary Perpetual Secretary", with three post-
+'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but he or she is allowed to resign, after which they are styled as "Honorary Perpetual Secretary", with three post-
 World War II
 Perpetual Secretaries having previously resigned due to old age. The Perpetual Secretary acts as a chairperson and chief representative of the
 Académie
 . The two other officers, a Director and a Chancellor, are elected for three-month terms. The most senior member, by date of election, is the Dean of the
 Académie
 .
+[
+citation needed
+]
 New members are elected by the
 Académie
 itself; the original members were appointed. When a seat becomes vacant, a person may apply to the Secretary if they wish to become a candidate. Alternatively, existing members may nominate other candidates. A candidate is elected by a majority of votes from voting members. A
@@ -3522,7 +3531,17 @@ is twenty members. If no candidate receives an absolute majority, another electi
 Académie
 , the President of France, grants their approval. The President's approbation is only a formality.
 [
-b
+citation needed
+]
+In 1958, the candidacy of
+Paul Morand
+was controversial due to the opposition of
+Charles de Gaulle
+. Morand was eventually elected ten years later, but he was received without the customary visit, at the time of investiture, to the Palace
+Élysée
+.
+[
+citation needed
 ]
 Raymond Poincaré
 was one of the five French heads of state who became members of the
@@ -3545,6 +3564,9 @@ Georges Clemenceau
 refused to be received, as he feared being received by his enemy,
 Raymond Poincaré
 .
+[
+citation needed
+]
 Members remain in the Académie for life. The council may dismiss an academician for grave misconduct. The first dismissal occurred in 1638, when
 Auger de Moléon de Granier
 was expelled for theft. The most recent dismissals occurred at the end of
@@ -3562,60 +3584,53 @@ Vichy regime
 . In total, 20 members have been expelled from the
 Académie
 .
-There have been a total of 742
+[
+citation needed
+]
+Out of a total of 742
 immortels
-,
+so far,
 [
 2
 ]
-of whom eleven have been women;
+eleven have been women. In 1980,
 Marguerite Yourcenar
-was the first woman to be elected, in 1980, but there have been 25 unsuccessful female candidacies, dating from 1874. Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
+was the first woman to be elected. Since 1874, 25 unsuccessful female candidacies have been put forth.
+[
+citation needed
+]
+Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
 Académie
 has included numerous politicians, lawyers, scientists, historians, philosophers, and senior
 Roman Catholic
-clergymen. Five French heads of state have been members –
+clergymen. Five French heads of state have been members:
 Adolphe Thiers
-,
+;
 Raymond Poincaré
-,
+;
 Paul Deschanel
-,
+;
 Philippe Pétain
-, and
+; and
 Valéry Giscard d'Estaing
-– and one foreign head of state, the poet
+.
+[
+citation needed
+]
+In 1983, one foreign head of state, the poet
 Léopold Sédar Senghor
 of
 Senegal
-, who was also the first African elected, in 1983.
+, was also the first African elected.
 [
 5
 ]
-Other famous members include
+Other famous members have included:
 Voltaire
 ;
 Montesquieu
 ;
-Victor Hugo
-;
-Alexandre Dumas, fils
-;
-Émile Littré
-;
-Louis Pasteur
-;
-Louis de Broglie
-; and
-Henri Poincaré
-.
-Many notable French writers have not become members of the
-Académie Française
-. In 1855, the writer
-Arsène Houssaye
-devised the expression "forty-first seat" for deserving individuals who were never elected to the
-Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appro
+Victor Hu
 
 ---
 
@@ -3763,13 +3778,16 @@ French pronunciation:
 akademi
 fʁɑ̃sɛːz
 ]
-), also known as the
+), written as
+Académie française
+in French , also colloquially known as the
 French Academy
-, is the principal
+in English, is the principal
 French
 council for matters pertaining to the
 French language
-. The
+.
+The
 Académie
 was officially established in 1635 by
 Cardinal Richelieu
@@ -3792,6 +3810,9 @@ Napoleon Bonaparte
 It is the oldest of the five
 académies
 of the institute. The body has the duty of acting as an official authority on the language; it is tasked with publishing an official dictionary of the language.
+[
+citation needed
+]
 The
 Académie
 comprises forty members, known as
@@ -3923,7 +3944,7 @@ The
 Académie Française
 has forty seats, each of which is assigned a separate number. Candidates make their applications for a specific seat, not to the
 Académie
-in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, it is not uncommon that potential candidates refuse to apply for particular seats because they dislike the predecessors.
+in general: if several seats are vacant, a candidate may apply separately for each. Since a newly elected member is required to eulogize their predecessor in the installation ceremony, potential candidates often refuse, however, to apply for a particular seat because they dislike its predecessors.
 [
 citation needed
 ]
@@ -3943,13 +3964,16 @@ One of the
 immortels
 is chosen by their colleagues to be the
 Académie
-'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but holds the ability to resign; they may thereafter be styled as "Honorary Perpetual Secretary", with three post-
+'s Perpetual Secretary. The Secretary is called "Perpetual", as the holder serves for life, but he or she is allowed to resign, after which they are styled as "Honorary Perpetual Secretary", with three post-
 World War II
 Perpetual Secretaries having previously resigned due to old age. The Perpetual Secretary acts as a chairperson and chief representative of the
 Académie
 . The two other officers, a Director and a Chancellor, are elected for three-month terms. The most senior member, by date of election, is the Dean of the
 Académie
 .
+[
+citation needed
+]
 New members are elected by the
 Académie
 itself; the original members were appointed. When a seat becomes vacant, a person may apply to the Secretary if they wish to become a candidate. Alternatively, existing members may nominate other candidates. A candidate is elected by a majority of votes from voting members. A
@@ -3958,7 +3982,17 @@ is twenty members. If no candidate receives an absolute majority, another electi
 Académie
 , the President of France, grants their approval. The President's approbation is only a formality.
 [
-b
+citation needed
+]
+In 1958, the candidacy of
+Paul Morand
+was controversial due to the opposition of
+Charles de Gaulle
+. Morand was eventually elected ten years later, but he was received without the customary visit, at the time of investiture, to the Palace
+Élysée
+.
+[
+citation needed
 ]
 Raymond Poincaré
 was one of the five French heads of state who became members of the
@@ -3981,6 +4015,9 @@ Georges Clemenceau
 refused to be received, as he feared being received by his enemy,
 Raymond Poincaré
 .
+[
+citation needed
+]
 Members remain in the Académie for life. The council may dismiss an academician for grave misconduct. The first dismissal occurred in 1638, when
 Auger de Moléon de Granier
 was expelled for theft. The most recent dismissals occurred at the end of
@@ -3998,57 +4035,50 @@ Vichy regime
 . In total, 20 members have been expelled from the
 Académie
 .
-There have been a total of 742
+[
+citation needed
+]
+Out of a total of 742
 immortels
-,
+so far,
 [
 2
 ]
-of whom eleven have been women;
+eleven have been women. In 1980,
 Marguerite Yourcenar
-was the first woman to be elected, in 1980, but there have been 25 unsuccessful female candidacies, dating from 1874. Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
+was the first woman to be elected. Since 1874, 25 unsuccessful female candidacies have been put forth.
+[
+citation needed
+]
+Individuals who are not citizens of France may be, and have been, elected. Moreover, although most academicians are writers, it is not necessary to be a member of the literary profession to become a member. The
 Académie
 has included numerous politicians, lawyers, scientists, historians, philosophers, and senior
 Roman Catholic
-clergymen. Five French heads of state have been members –
+clergymen. Five French heads of state have been members:
 Adolphe Thiers
-,
+;
 Raymond Poincaré
-,
+;
 Paul Deschanel
-,
+;
 Philippe Pétain
-, and
+; and
 Valéry Giscard d'Estaing
-– and one foreign head of state, the poet
+.
+[
+citation needed
+]
+In 1983, one foreign head of state, the poet
 Léopold Sédar Senghor
 of
 Senegal
-, who was also the first African elected, in 1983.
+, was also the first African elected.
 [
 5
 ]
-Other famous members include
+Other famous members have included:
 Voltaire
 ;
 Montesquieu
 ;
-Victor Hugo
-;
-Alexandre Dumas, fils
-;
-Émile Littré
-;
-Louis Pasteur
-;
-Louis de Broglie
-; and
-Henri Poincaré
-.
-Many notable French writers have not become members of the
-Académie Française
-. In 1855, the writer
-Arsène Houssaye
-devised the expression "forty-first seat" for deserving individuals who were never elected to the
-Académie
-, either because their candidacies were rejected, because they were never candidates, or because they died before appro
+Victor Hu

@@ -504,17 +504,17 @@ Most people who see this message have done nothing wrong.
 Some kinds of blocks restrict editing from specific service providers or telecom companies in response to recent abuse or vandalism, and can sometimes affect other users who are unrelated to that abuse. Review the information below for assistance if you do not believe that you have done anything wrong.
 This block affects editing on all Wikimedia wikis.
 The IP address or range
-40.84.0.0/16
+135.119.0.0/16
 has been globally
 blocked
 by
-‪Jon Kolbert‬
+‪XXBlackburnXx‬
 for the following reason(s):
 Open proxy/Webhost
 : See the
 help page
-if you are affected
-This block will expire on 18:28, 12 November 2028. Your current IP address is 40.84.216.84.
+if you are affected:
+This block will expire on 00:16, 5 December 2028. Your current IP address is 135.119.21.211.
 Even while globally blocked, you will
 usually
 still be able to edit pages on
@@ -576,7 +576,7 @@ He was also a shareholder and board member of a number of newspapers, including 
 [[Image:Ecole filles indigenes 1914.jpg|thumb|School for Tunisian girls in 1914]]
 For Abdeljelil Zaouche, education was the key to reviving economic growth and social stability. It was the only means of ensuring that positions in the civil service would be opened to Tunisians (from which they were excluded at the time) and a necessary prelude to building a competent and independent judiciary. Zaouche summarised his position by citing [[Georges Jacques Danton|Danton]]: "After bread, education is the first need of the people." Tunisians, he argued, needed a basic education in the Arabic language, "to preserve his place in his own country." He also advocated reformed kouttab schools and mixed Franco-Arab institutions.<ref name="colo">Abdeljelil Zaouche, ''L'enseignement arabe en Tunisie'', tome XX, éd. Société d'éditions maritimes et coloniales, Paris, 1932</ref> He also argued for access for Tunisians to modern education institutions both in Tunisia and in France.  He published a number of brochures, including "Native Education" (''L'enseignement des indigènes'') (1900) and "The Franco-Arab School" in which he argued for education for both sexes and all classes. The education of women was a theme to which he frequently returned in his speaking and writing,<ref name="congres">Propos d'Abdeljelil Zaouche tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref> and which was also taken up by other Young Tunisian spokesmen such as [[Sadok Zmerli]] and [[Khairallah Ben Mustapha]].<ref>Propos de Khairallah Ben Mustapha tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref>
 
-He was a member of the Commission on the Modernisation of Teaching at the [[University of Ez-Zitouna]] after the student strike of 1910, as well as on the mixed (Franco-Tunisian) C
+He was a member of the Commission on the Modernisation of Teaching at the [[University of Ez-Zitouna]] after the student strike of 1910, as well as on the mixed (Franco-Tunis
 
 ---
 
