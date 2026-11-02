@@ -1413,9 +1413,9 @@ Jordan
 to the east, and
 Egypt
 to the southwest.
-Israel's western coast
+Israel's west coast
 lies on the
-Mediterranean Sea
+Mediterranean
 , its southern tip reaches the
 Red Sea
 , and to the east is
@@ -1457,15 +1457,13 @@ to the
 Ottomans
 .
 European antisemitism
-in the late 19th century galvanised
+in the 19th century galvanised
 Zionism
 , which sought to establish a
 homeland for the Jewish people
 in Palestine and gained British support with the
 Balfour Declaration
-. After
-World War I
-, Britain occupied the region and established
+. After World War I, Britain occupied the region and established
 Mandatory Palestine
 in 1920. Increased
 Jewish immigration
@@ -1484,9 +1482,7 @@ between Jews and the Arab-majority population,
 ]
 which escalated into
 a civil war
-in 1947 after the
-United Nations
-(UN)
+in 1947 after the UN
 proposed partitioning
 the land between them.
 After the
@@ -1497,7 +1493,7 @@ on 14 May 1948. Neighbouring Arab states invaded the area the next day, beginnin
 First Arab–Israeli War
 . The
 1949 armistice
-left Israel controlling more territory than had been allocated to it under the UN partition plan.
+left Israel controlling more territory than had been allocated to it under the UN plan.
 [
 27
 ]
@@ -1530,7 +1526,7 @@ Nakba
 [
 32
 ]
-while Israel's population increased greatly over the following decades as the country received an influx of
+while Israel's population increased over the following decades as the country received
 Jews who emigrated, fled or were expelled from the Arab world
 .
 [
@@ -1549,7 +1545,7 @@ and the Syrian
 Golan Heights
 . Peace treaties were signed with
 Egypt
-in 1979 (the Sinai being returned in 1982) and
+in 1979 and
 Jordan
 in 1994. The 1993
 Oslo Accords
@@ -1608,7 +1604,7 @@ parliament
 government
 , led by the
 prime minister
-, and elects the largely ceremonial
+, and elects the ceremonial
 president
 .
 [
@@ -1630,7 +1626,7 @@ and
 [
 43
 ]
-One of the world's most
+One of the most
 technologically advanced
 countries,
 [
@@ -1761,7 +1757,24 @@ proposed names
 including
 Land of Israel
 (
-Eretz Is
+Eretz Israel
+),
+Ever
+(from ancestor
+Eber
+),
+Zion
+, and
+Judea
+, were considered but rejected.
+[
+55
+]
+[
+56
+]
+The name
+Isra
 
 ---
 

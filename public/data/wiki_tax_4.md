@@ -3178,7 +3178,7 @@ v
 t
 e
 The
-secretary of state for foreign, commonwealth and development affairs
+secretary of state for foreign, Commonwealth and development affairs
 , commonly known as the
 foreign secretary
 , is a

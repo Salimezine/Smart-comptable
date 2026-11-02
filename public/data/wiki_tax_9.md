@@ -742,7 +742,7 @@ unfair trade practice
 current account deficit
 , and estimated this disadvantage to US producers and service providers to be $518 billion in 2008 alone. US politicians such as congressman
 Bill Pascrell
-, advocate either changing WTO rules relating to VAT or rebating VAT charged on US exporters.
+advocate either changing WTO rules relating to VAT or rebating VAT charged on US exporters.
 [
 31
 ]
@@ -4835,7 +4835,7 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1378038240
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1383180132
 "
 Categories
 :
@@ -4893,7 +4893,7 @@ Jump to content
 Search
 Search
 Tax
-146 languages
+145 languages
 Acèh
 Afrikaans
 Alemannisch
@@ -5021,7 +5021,6 @@ Sunda
 Svenska
 Kiswahili
 தமிழ்
-తెలుగు
 Тоҷикӣ
 ไทย
 Tagalog
@@ -5573,7 +5572,7 @@ Obsolete forms of taxation include:
 [
 citation needed
 ]
-In monetary economies prio
+In monetary economies prior to fi
 
 ---
 

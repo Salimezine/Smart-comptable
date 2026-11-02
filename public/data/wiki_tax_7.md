@@ -485,98 +485,23 @@ Add topic
 
 ---
 
-View source for Abdeljelil Zaouche - Wikipedia
+Editing Abdeljelil Zaouche - Wikipedia
 Jump to content
 Search
 Search
-View source for Abdeljelil Zaouche
+Editing Abdeljelil Zaouche
 Add languages
-←
-Abdeljelil Zaouche
-You do not have permission to edit this page, for the following reason:
-This IP address range has been
-globally blocked
+The editor will now load. If you still see this message after a few seconds, please
+refresh the page
 .
-This does not affect your ability to
-read
-Wikipedia pages.
-Most people who see this message have done nothing wrong.
-Some kinds of blocks restrict editing from specific service providers or telecom companies in response to recent abuse or vandalism, and can sometimes affect other users who are unrelated to that abuse. Review the information below for assistance if you do not believe that you have done anything wrong.
-This block affects editing on all Wikimedia wikis.
-The IP address or range
-135.119.0.0/16
-has been globally
-blocked
-by
-‪XXBlackburnXx‬
-for the following reason(s):
-Open proxy/Webhost
-: See the
-help page
-if you are affected:
-This block will expire on 00:16, 5 December 2028. Your current IP address is 135.119.21.211.
-Even while globally blocked, you will
-usually
-still be able to edit pages on
-Meta-Wiki
-.
-If you believe you were blocked by mistake, you can find additional information and instructions in the
-Stewards Block Wizard
-.
-Other useful links:
-Global blocks
-·
-Help:I have been blocked
-You can view and copy the source of this page:
-{{Short description|Tunisian politician (1873–1947)}}
-{{More footnotes|date=May 2018}}
-{{Use dmy dates|date=July 2022}}
-{{Infobox person
-| name          = Abdeljelil Zaouche
-| native_name   = {{Nobold|عبد الجليل الزّاوش}}
-| image         = abdeljelil zaouche 2.jpg
-| alt           = 
-| caption       =
-| birth_name    = 
-| birth_date    = {{Birth date|1873|12|15|df=y}}
-| birth_place   = [[La Marsa]], [[Beylik of Tunis]]
-| death_date    = {{Death date and age|1947|1|3|1873|12|15|df=y}}
-| death_place   = [[Tunis]], [[French protectorate of Tunisia]]
-| other_names   = 
-| occupation    = Politician 
-| years_active  = 
-| known_for     = 
-| notable_works = 
-}}
-
-'''Abdeljelil Zaouche''' ({{Langx|ar|عبد الجليل الزّاوش}}; 15 December 1873 – 3 January 1947) was a Tunisian politician, reformer, and campaigner in the [[Tunisian independence]] movement.
-
-== Youth ==
-Zaouche was born into a wealthy bourgeois family which had arrived in Tunis from [[Andalucia]] via [[Algeria]] in the eighteenth century. His father, [[Tahar Zaouche (général)|Tahar]], and his uncle, [[Hassan Zaouche|Hassan]], occupied high-ranking positions under [[Ali III ibn al-Husayn|Ali Bey]]. They were, respectively, General of the royal guard and Brigadier-General in charge of tax-raising. He was born in his family's mansion in La Marsa to an Italian mother.<ref>Daniel Goldstein, ''Libération ou annexion. Aux chemins croisés de l’histoire tunisienne, 1914–1922'', éd. Maison tunisienne de l’édition, Tunis, 1978, {{p.|18}}</ref>
-
-His secondary education was at the [[Lycée Carnot de Tunis|Collège Saint-Charles]] in Tunis and then the [[lycée Louis-le-Grand]] in [[Paris]] where he took his [[baccalauréat]]. In 1894, he matriculated at the law faculty in Paris while also studying at the [[Institut d'études politiques de Paris|Institut des sciences politiques]] and the [[Collège de France]]. Strongly influenced by [[Jean Jaurès]], he was also a pupil of [[Émile Durkheim]], [[Émile Boutroux]], [[Henri Poincaré]], [[Antoine Aulard]] and [[Ernest Lavisse]].<ref>Sadok Zmerli, ''Figures tunisiennes. Les successeurs'', éd. Maison tunisienne de l'édition, Tunis, 1967, {{p.|207}}</ref> He graduated in law and returned to Tunis in 1900, where he involved himself in public affairs.
-
-In 1901, together with the Ramella brothers, he founded a flour mill, and in 1903, he hosted a visit by [[Muhammad Abduh]].<ref name="Brown">{{cite thesis |last=Brown |first=Stuart |date=1976 |title=The Young Tunisians |type=PhD |publisher=McGill University |url=http://digitool.library.mcgill.ca/webclient/StreamGate?folder_id=0&dvs=1524513737737~872 |access-date=23 April 2018}}</ref> In 1903, he set up the first scientific press in the Arab world, ''Al Matbâa Al Ilmiya''.<ref name="CTHS">{{cite web|title=ZAOUCHE Abdeljelil|url=http://cths.fr/an/savant.php?id=104313|website=CTHS.fr|publisher=CTHS-La France savante|access-date=13 May 2018}}</ref>
-
-== Economic reform and political campaigns==
-[[Image:From mustapha kemal to zaouche.jpg|thumb|Letter from Mustafa Kamil Pasha to Zaouche (1906)]]
-Zaouche was noted for the emphasis he placed on economic issues – agriculture, manufactures and trade. He devoted much of his work to advancing professional qualifications, management standards, creativity and competitiveness. In 1908, Zaouche took part in the first mixed session of the [[Tunisian Consultative Conference]] and chose to be a rapporteur and member of the Finance Commission of the Tunisian section of this body.
-
-From its first session, Zaouche demanded the suppression of the mejba ([[poll tax]]), which accounted for a sixth of the government's income and was used to pay a number of officials. including [[caïd]]s, khalifas and [[Sheikh|cheikh]]s.<ref name="Brown"/> Tunisia's declining agriculture made the mejba ever more unbearable to the people, and had triggered a number of uprisings, including the major [[Mejba Revolt]] of 1864–65. His proposals for replacement sources of public income included reductions in taxes on labour and increases in taxes on (colonial) capital as well as on mining and extractive industries.<ref name="conference">Interventions personnelles des 11 et 19 novembre 1907 à la Conférence consultative.</ref> These proposals were vigorously opposed by the French colonials who dominated the Conference.
-
-In 1910, a loan was proposed to fund the extension of the railway network, which was to be repaid by additional taxes on the Tunisian population. Zaouche used this as an opportunity to renew his attacks on French capital, arguing that the infrastructure paid for by ordinary Tunisians would bring them little benefit.<ref>Rapports sur l'emprunt de la ligne de chemin de fer publiés par la Conférence consultative en 1910</ref> If a loan was to be taken out, he argued, part of it should directly benefit Tunisians by being invested in schools and basic training.<ref>Rapport sur l'économie et l'apprentissage publié par la Conférence consultative en 1910</ref>
-
-Zaouche also served as a member of the Higher Government Council (Conseil Supérieur du Gouvernement) (1911–1912) as well as on various bodies such as the Commission for the Revival of Indigenous Arts, and the Mixed (i.e. Franco-Tunisian) Commission for the Collège Sadiki. At the same time, Zaouche spoke out about issues in public administration and argued for republican principles. He sought to preserve the integrity and distinctiveness of Tunisian institutions by emphasising the importance of appointing individuals of competence, probity and independence. He was a co-founder of the [[Collège Sadiki]] alumni association and of the Cercle tunisien (an intellectual club interested in current affairs which sought to articulate the defence of Tunisian interests), and President of the [[Khaldounia]].<ref name="Brown"/>
-
-He was also a shareholder and board member of a number of newspapers, including ''[[La Dépêche tunisienne]]'', ''Le Progrès'', ''La Poste tunisienne'', ''L'Autonome'' and, in Paris, of '' Le Temps''.<ref name="CTHS" /> Zaouche also edited a number of articles for the socialist daily ''Le Libéral''. He was one of the founders of the nationalist [[Young Tunisians|Young Tunisian]] movement, and had links with the [[Young Turks]], with reforming [[Egyptian nationalism|Egyptian nationalist]]s such as [[Muhammad Abduh]] and [[Mustafa Kamil Pasha]], as well as with supporters of [[panarabism]] like [[Pierre Loti]] and [[Charles Géniaux]]. For the five years that ''[[Le Tunisien]]'' was published, he campaigned alongside [[Ali Bach Hamba]] — whose first cousin Chérifa he married — and other Young Tunisians, producing a steady stream of articles highly critical of the [[French Protectorate of Tunisia]].
-
-== Educational reform ==
-
-[[Image:Khaldounia zaouche lasram et sfar.jpg|thumb|[[Béchir Sfar]], Zaouche et [[Mohamed Lasram]] at the Khaldounia (1908)]]
-[[Image:Ecole filles indigenes 1914.jpg|thumb|School for Tunisian girls in 1914]]
-For Abdeljelil Zaouche, education was the key to reviving economic growth and social stability. It was the only means of ensuring that positions in the civil service would be opened to Tunisians (from which they were excluded at the time) and a necessary prelude to building a competent and independent judiciary. Zaouche summarised his position by citing [[Georges Jacques Danton|Danton]]: "After bread, education is the first need of the people." Tunisians, he argued, needed a basic education in the Arabic language, "to preserve his place in his own country." He also advocated reformed kouttab schools and mixed Franco-Arab institutions.<ref name="colo">Abdeljelil Zaouche, ''L'enseignement arabe en Tunisie'', tome XX, éd. Société d'éditions maritimes et coloniales, Paris, 1932</ref> He also argued for access for Tunisians to modern education institutions both in Tunisia and in France.  He published a number of brochures, including "Native Education" (''L'enseignement des indigènes'') (1900) and "The Franco-Arab School" in which he argued for education for both sexes and all classes. The education of women was a theme to which he frequently returned in his speaking and writing,<ref name="congres">Propos d'Abdeljelil Zaouche tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref> and which was also taken up by other Young Tunisian spokesmen such as [[Sadok Zmerli]] and [[Khairallah Ben Mustapha]].<ref>Propos de Khairallah Ben Mustapha tenus lors du Congrès de l'Afrique du nord organisé à Paris en 1908</ref>
-
-He was a member of the Commission on the Modernisation of Teaching at the [[University of Ez-Zitouna]] after the student strike of 1910, as well as on the mixed (Franco-Tunis
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Abdeljelil_Zaouche&oldid=1346398673
+"
+Search
+Search
+Editing Abdeljelil Zaouche
+Add languages
+Add topic
 
 ---
 
@@ -711,7 +636,7 @@ Unreferenced
 }
 –  typically placed by the code you would see when wikitext (source) editing:
 {{Unreferenced|date=
-October
+November
 2026
 }}
 .
@@ -751,7 +676,7 @@ scholar
 ·
 JSTOR
 (
-October 2026
+November 2026
 )
 (
 Learn how and when to remove this message
@@ -870,7 +795,7 @@ You have been paid to edit the article or have some other
 conflict of interest
 (some exceptions apply: see individual template documentation).
 Removal
-Have you carefully read the help pages and thoroughly fixed the problem? Or have you made a considered decision that the template is no longer applicable or never was? Great! Now, to remove the maintenance template:
+Have you carefully read the help pages and thoroughly fixed the problem? Alternatively, have you made a considered decision that the template is no longer applicable or never was? If so, to remove the maintenance template:
 Click on "edit" or "edit source" at the top of the page or
 section
 where the template is.
@@ -878,7 +803,7 @@ Delete the template:
 If you are editing using VisualEditor
 : Click on the template (tag), which will then turn blue. Press the "Delete" or backspace key on your keyboard.
 If you are editing wikitext ("source" editing)
-: Delete the template code. The template code you see in this edit mode will usually be in the following
+: Delete the template code. The template code you see in this edit mode will usually be in the 
 
 ---
 
@@ -1138,7 +1063,6 @@ Saied self-coup
 2021
 Africa
 portal
-•
 History
 portal
 v
@@ -1402,4 +1326,4 @@ edit
 The Tunisian parliament was called the
 Supreme Council
 (
-Ar
+Arab

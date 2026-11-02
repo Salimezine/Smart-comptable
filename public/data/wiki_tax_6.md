@@ -1872,7 +1872,6 @@ Saied self-coup
 2021
 Africa
 portal
-•
 History
 portal
 v
@@ -2136,7 +2135,7 @@ edit
 The Tunisian parliament was called the
 Supreme Council
 (
-Ar
+Arab
 
 ---
 

@@ -1063,7 +1063,7 @@ Jump to content
 Search
 Search
 Tunis
-157 languages
+159 languages
 Acèh
 Адыгабзэ
 Afrikaans
@@ -1181,6 +1181,7 @@ Sardu
 Sicilianu
 Scots
 سنڌي
+Davvisámegiella
 Srpskohrvatski / српскохрватски
 Simple English
 Slovenčina
@@ -1200,6 +1201,7 @@ Tagalog
 Tolışi
 Türkçe
 Татарча / tatarça
+ChiTumbuka
 Twi
 Удмурт
 ئۇيغۇرچە / Uyghurche
@@ -1706,8 +1708,7 @@ Ifriqiya
 was handed to the newly founded
 Fatimid Caliphate
 .
-Local opposition to the authorities began to intensify in September 945, when
-
+Local opposition to the authorities began to intens
 
 ---
 
@@ -2857,7 +2858,6 @@ Saied self-coup
 2021
 Africa
 portal
-•
 History
 portal
 v
@@ -3121,4 +3121,4 @@ edit
 The Tunisian parliament was called the
 Supreme Council
 (
-Ar
+Arab

@@ -7078,7 +7078,7 @@ home language
 ]
 Those in France typically use
 French
-as their primary language, while the few still left in Tunisia tend to use standard Tunisian Arabic in their everyday lives.
+as their primary language, while the few still left in Tunisia tend to use either French or Tunisian Arabic in their everyday lives.
 [
 3
 ]
@@ -7620,7 +7620,7 @@ passive form
 10
 ]
 The informal lack of
-subject–
+
 
 ---
 

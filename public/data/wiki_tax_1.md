@@ -2007,7 +2007,6 @@ Saied self-coup
 2021
 Africa
 portal
-•
 History
 portal
 v
@@ -2280,7 +2279,7 @@ had built a rail line running from
 Tunis
 west 1,600
 km to Algiers, passing through the fertile
-Medje
+Medjerd
 
 ---
 
@@ -2444,7 +2443,7 @@ Claude Joseph Rouget de Lisle
 in
 Strasbourg
 after the
-First French Republic
+Kingdom of the French
 declared war against
 Austria
 , and was originally titled "
@@ -2891,7 +2890,7 @@ Jump to content
 Search
 Search
 Tunis
-157 languages
+159 languages
 Acèh
 Адыгабзэ
 Afrikaans
@@ -3009,6 +3008,7 @@ Sardu
 Sicilianu
 Scots
 سنڌي
+Davvisámegiella
 Srpskohrvatski / српскохрватски
 Simple English
 Slovenčina
@@ -3028,6 +3028,7 @@ Tagalog
 Tolışi
 Türkçe
 Татарча / tatarça
+ChiTumbuka
 Twi
 Удмурт
 ئۇيغۇرچە / Uyghurche
@@ -3534,4 +3535,4 @@ Ifriqiya
 was handed to the newly founded
 Fatimid Caliphate
 .
-Local opposition to the authorities began to intensify in September 945, when
+Local opposition to the authorities began to intens
