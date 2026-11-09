@@ -3285,7 +3285,9 @@ Readings in price theory
 338–
 339.
 ↑
-Ghosh, Pulak; Jacob, Martin; Kang, Ya; Zhang, Jian (2025). "Consumption Tax and Corporate Product Mix Decisions".
+Ghosh, Pulak; Jacob, Martin; Kang, Ya; Zhang, Jian (2025).
+"Consumption Tax and Corporate Product Mix Decisions"
+.
 SSRN Electronic Journal
 .
 doi
@@ -4835,7 +4837,7 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1383180132
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1384608680
 "
 Categories
 :

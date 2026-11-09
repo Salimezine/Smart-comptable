@@ -387,6 +387,7 @@ français
   * [Voir le texte source](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=edit "Cette page est protégée.
 Vous pouvez toutefois en visualiser la source. \[alt-e\]")
   * [Voir l’historique](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=history "Historique des versions de cette page \[alt-h\]")
+  * [ ](https://fr.wikipedia.org/wiki/Tunisie "Ajouter cette page à vos éléments enregistrées")
 
 
 Outils
@@ -396,6 +397,7 @@ Actions
   * [ Voir le texte source](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=edit "Cette page est protégée.
 Vous pouvez toutefois en visualiser la source. \[alt-e\]")
   * [ Voir l’historique](https://fr.wikipedia.org/w/index.php?title=Tunisie&action=history "Historique des versions de cette page \[alt-h\]")
+  * [ Enregistrer](https://fr.wikipedia.org/wiki/Tunisie "Ajouter cette page à vos éléments enregistrées")
 
 
 Général 

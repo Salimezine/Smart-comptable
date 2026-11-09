@@ -1120,25 +1120,6 @@ Jacob
 . For other uses, see
 Israel (disambiguation)
 .
-This article
-may be
-too long
-to read and navigate comfortably
-.  When this tag was added, its
-readable prose size
-was 15,500 words.
-Consider
-splitting
-content into sub-articles,
-condensing
-it, or adding
-subheadings
-. Please discuss this issue on the article's
-talk page
-.
-(
-October 2026
-)
 State of Israel
 מְדִינַת יִשְׂרָאֵל
 (
@@ -1188,7 +1169,7 @@ fn 2
 Official language
 Hebrew
 [
-10
+15
 ]
 Special status
 Arabic
@@ -1199,7 +1180,7 @@ Ethnic
 groups
 (2025 est.)
 [
-14
+19
 ]
 71.9%
 Jews
@@ -1210,7 +1191,7 @@ others
 Religion
 (2023 est.)
 [
-15
+20
 ]
 73.7%
 Judaism
@@ -1243,10 +1224,10 @@ Area
 Total
 22,072 or 20,770
 [
-16
+21
 ]
 [
-17
+22
 ]
 km
 2
@@ -1264,14 +1245,14 @@ Water
 (%)
 2.71
 [
-18
+23
 ]
 Population
 •
 2026 estimate
 10,147,200
 [
-19
+24
 ]
 (
 93rd
@@ -1281,7 +1262,7 @@ Population
 census
 9,601,720
 [
-20
+25
 ]
 [
 fn 5
@@ -1305,7 +1286,7 @@ estimate
 Total
 $619.724 billion
 [
-21
+26
 ]
 (
 49th
@@ -1314,7 +1295,7 @@ $619.724 billion
 Per capita
 $60,100
 [
-21
+26
 ]
 (
 35th
@@ -1327,7 +1308,7 @@ estimate
 Total
 $746.982 billion
 [
-21
+26
 ]
 (
 24th
@@ -1336,7 +1317,7 @@ $746.982 billion
 Per capita
 $72,441
 [
-21
+26
 ]
 (
 12th
@@ -1345,14 +1326,14 @@ Gini
 (2021)
 37.9
 [
-22
+27
 ]
 medium inequality
 HDI
 (2023)
 0.919
 [
-23
+28
 ]
 very high
 (
@@ -1413,9 +1394,9 @@ Jordan
 to the east, and
 Egypt
 to the southwest.
-Israel's west coast
+Israel's western coast
 lies on the
-Mediterranean
+Mediterranean Sea
 , its southern tip reaches the
 Red Sea
 , and to the east is
@@ -1428,7 +1409,7 @@ is the government seat and
 proclaimed capital
 ,
 [
-24
+29
 ]
 while
 Tel Aviv
@@ -1457,13 +1438,15 @@ to the
 Ottomans
 .
 European antisemitism
-in the 19th century galvanised
+in the late 19th century galvanised
 Zionism
 , which sought to establish a
 homeland for the Jewish people
 in Palestine and gained British support with the
 Balfour Declaration
-. After World War I, Britain occupied the region and established
+. After
+World War I
+, Britain occupied the region and established
 Mandatory Palestine
 in 1920. Increased
 Jewish immigration
@@ -1475,14 +1458,16 @@ led to
 intercommunal conflict
 between Jews and the Arab-majority population,
 [
-25
+30
 ]
 [
-26
+31
 ]
 which escalated into
 a civil war
-in 1947 after the UN
+in 1947 after the
+United Nations
+(UN)
 proposed partitioning
 the land between them.
 After the
@@ -1493,9 +1478,9 @@ on 14 May 1948. Neighbouring Arab states invaded the area the next day, beginnin
 First Arab–Israeli War
 . The
 1949 armistice
-left Israel controlling more territory than had been allocated to it under the UN plan.
+left Israel controlling more territory than had been allocated to it under the UN partition plan.
 [
-27
+32
 ]
 No independent Palestinian Arab state was established, leaving
 Gaza under Egyptian control
@@ -1503,13 +1488,13 @@ and the
 West Bank ruled by Jordan
 .
 [
-27
+32
 ]
 [
-28
+33
 ]
 [
-29
+34
 ]
 Most
 Palestinian Arabs
@@ -1518,22 +1503,22 @@ during the
 Nakba
 ,
 [
-30
+35
 ]
 [
-31
+36
 ]
 [
-32
+37
 ]
-while Israel's population increased over the following decades as the country received
+while Israel's population increased greatly over the following decades as the country received an influx of
 Jews who emigrated, fled or were expelled from the Arab world
 .
 [
-33
+38
 ]
 [
-34
+39
 ]
 After the 1967
 Six-Day War
@@ -1545,7 +1530,7 @@ and the Syrian
 Golan Heights
 . Peace treaties were signed with
 Egypt
-in 1979 and
+in 1979 (the Sinai being returned in 1982) and
 Jordan
 in 1994. The 1993
 Oslo Accords
@@ -1565,10 +1550,10 @@ constitutes a system of
 apartheid
 .
 [
-35
+40
 ]
 [
-36
+41
 ]
 After the
 Hamas
@@ -1578,19 +1563,19 @@ October 7 attacks
 genocide against Palestinians in Gaza
 .
 [
-37
+42
 ]
 Israel has
 denied
 that its actions constitute genocide.
 [
-38
+43
 ]
 [
-39
+44
 ]
 [
-40
+45
 ]
 The
 Basic Laws of Israel
@@ -1604,15 +1589,15 @@ parliament
 government
 , led by the
 prime minister
-, and elects the ceremonial
+, and elects the largely ceremonial
 president
 .
 [
-41
+46
 ]
 Israel has one of the Middle East's largest economies,
 [
-42
+47
 ]
 one of Asia's highest living standards
 , and globally ranks
@@ -1621,26 +1606,26 @@ and
 12th in nominal GDP per capita
 .
 [
-21
+26
 ]
 [
-43
+48
 ]
-One of the most
+One of the world's most
 technologically advanced
 countries,
 [
-44
+49
 ]
 Israel allocates a larger share of
 its economy
 to research and development
 than any other state
 [
-45
+50
 ]
 [
-46
+51
 ]
 and is believed to
 possess nuclear weapons
@@ -1691,7 +1676,7 @@ with the
 Angel of the Lord
 .
 [
-47
+52
 ]
 The earliest known archaeological artefact to mention the word
 Israel
@@ -1701,19 +1686,19 @@ of
 ancient Egypt
 (dated to the late-13th century BCE).
 [
-48
+53
 ]
 [
-49
+54
 ]
 [
-50
+55
 ]
 [
 fn 6
 ]
 [
-52
+57
 ]
 Under the
 British Mandate
@@ -1721,10 +1706,10 @@ British Mandate
 Palestine
 .
 [
-53
+58
 ]
 [
-54
+59
 ]
 Upon
 establishment in 1948
@@ -1768,13 +1753,25 @@ Zion
 Judea
 , were considered but rejected.
 [
-55
+60
 ]
 [
-56
+61
 ]
 The name
-Isra
+Israel
+was suggested by
+David Ben-Gurion
+and passed by a vote of 6–3.
+[
+62
+]
+[
+63
+]
+In the early weeks after establishment, the government chose the term
+Israeli
+to denote a citizen
 
 ---
 

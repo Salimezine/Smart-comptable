@@ -1,1059 +1,311 @@
-French conquest of Tunisia - Wikipedia
+Jacob Chemla - Wikipedia
 Jump to content
 Search
 Search
-French conquest of Tunisia
-15 languages
+Jacob Chemla
+8 languages
 العربية
-Беларуская
-Català
-Eesti
+مصرى
 Français
+Hausa
 עברית
 Bahasa Indonesia
-Italiano
-日本語
-한국어
-मराठी
-Português
-Русский
-Türkçe
-中文
+Igbo
+Kiswahili
 Edit links
 From Wikipedia, the free encyclopedia
-Conquest of Tunisia by the French
-French conquest of Tunisia
-Part of the
-Scramble for Africa
-Capture of
-Tunis
-in October 1881
-Date
-28 April – 23 December 1881
-Location
-Tunisia
-Result
-French victory
-Tunisia becomes a
-French protectorate
-Belligerents
-France
-Ottoman Beylik of Tunisia
-Commanders and leaders
-Forgemol de Bostquénard
-Jules Aimé Bréart
-Muhammad III
-Ali III
-Strength
-28,000 men
-Unknown
-Casualties and losses
-Unknown
-Unknown
-v
-t
-e
-Scramble for Africa
-South Africa (1879)
-South Africa (1880)
-Tunisia (1881)
-Sudan (1881)
-Egypt (1882)
-Wassoulou (1883)
-Madagascar (1883)
-Guinea-Bissau (1886)
-Equatoria (1886–89)
-Somalia (1890s–1908)
-Eritrea (1889)
-Viye (1890)
-Dahomey (1890)
-Mashonaland (1890)
-Katanga (1891−92)
-Dahomey (1892)
-Matabeleland (1893)
-Morocco (1893–94)
-Morocco (1893–1894)
-Wassoulou (1894)
-Congo (1895)
-Mozambique (1895)
-Gaza (1895)
-Asante (1895)
-South Africa (1895)
-Maputo (1896)
-Ethiopia (1896)
-Matabeleland (1896)
-Zanzibar (1896)
-Benin (1897)
-Wassoulou (1898)
-Chad (1898)
-Fashoda (1898)
-South Africa (1899)
-Dervish (1900)
-Aro (1901)
-Barue (1902)
-Angola (1902)
-Namibia (1904)
-Tanganyika (1905)
-Morocco (1905–06)
-South Africa (1906)
-Morocco (1907–34)
-Mufilo (1907)
-Morocco (1909)
-Ouaddai (1909)
-Morocco (1911)
-Morocco (1911)
-Libya (1911–12)
-South Africa (1914)
-Libya (1915-17)
-Darfur (1916)
-The
-French conquest of Tunisia
-occurred in two phases in 1881: the first (28 April – 12 May) consisting of the invasion and securing of the country before the signing of a treaty of protection, and the second (10 June – 28 October) consisting of the suppression of a rebellion. The
-French protectorate of Tunisia
-that was established lasted until the
-independence of Tunisia
-on 20 March 1956.
-Context
-[
-edit
-]
-Early contacts
-[
-edit
-]
-Tunisia
-had been a province of the
-Ottoman Empire
-since the
-Conquest of Tunis (1574)
-, although with great autonomy under the authority of a
-Bey
-.
-[
-1
-]
-In 1770,
-Brigadier
-Rafélis de Broves
-bombarded the cities of
-Bizerte
-,
-Porto Farina
-and
-Monastir
-in retaliation for acts of piracy.
-[
-2
-]
-In the 19th century Tunisian commercial contacts with
-Europe
-were numerous, and there was a population of French, Italian and British
-expatriates
-in the country, that was
-represented by
-Consulates
-.  France had also made a major loan to Tunisia in the mid-19th century.
-[
-3
-]
-The Tunisian government was weak, with an inefficient
-tax system
-that only brought it one-fifth of the tax collected. The economy was crippled with a series of droughts and the elimination of
-corsairs
-by Western fleets. Lastly, Tunisians had little control on foreign trade as old 16th century agreements with European powers limited custom taxes to 3%. As a result, its small industry was devastated by imports, especially in the area of
-textiles
-.
-[
-1
-]
-Colonial competition
-[
-edit
-]
-Following the
-Franco-Prussian War
-of 1870–71, France's international prestige was severely damaged, and both
-Italy
-and the
-United Kingdom
-attempted to reinforce their influence in Tunisia. The Italian representative failed through clumsiness, but the British representative
-Sir Richard Wood
-was more successful. In order to limit French influence, Wood obtained the reinstatement of Tunisia as a province of the
-Ottoman Empire
-in 1871, although the region's autonomy was also guaranteed.
-[
-4
-]
-Great Britain continued to try to exert influence through commercial ventures, but these were not successful.
-[
-4
-]
-There were also various Tunisian land ownership disputes among France, Britain and Italy.
-[
-5
-]
-The French wished to take control of Tunisia, which neighboured their existing colony of
-Algeria
-, and to suppress Italian and British influence there. At the
-Congress of Berlin
-in 1878, a diplomatic arrangement was made for France to take over Tunisia while Great Britain obtained control of
-Cyprus
-from the Ottomans.
-[
-1
-]
-[
-4
-]
-Subsequently, the use of Tunisian territory as a sanctuary by rebel
-Khroumir
-bands gave a pretext for the military intervention.
-[
-5
-]
-[
-6
-]
-Occupation
-[
-edit
-]
-Capture of Sfax
-by French troops (top), and the
-Battle of Djebel Haddeda
-(bottom), 1881
-On 28 April 1881, 28,000 men under General
-Forgemol de Bostquénard
-entered Tunisia. On 1 May, the city of
-Bizerte
-surrendered to the 8,000 men of
-Jules Aimé Bréart
-[
-fr
-]
-, who then continued to
-Tunis
-.
-[
-6
-]
-Bréart entered Tunis between May 3 and May 6, 1881. He had in his possession the
-Bardo Treaty
-establishing a
-protectorate on Tunis
-, which had just been cabled to him by the French government. On May 11, Bréart, the general consul
-Théodore Roustan
-, and General Pierre Léon Mauraud, accompanied by an armed escort, presented the treaty to
-Muhammad III as-Sadiq
-(Sadok Bey),
-Bey of Tunis
-between 1859 and 1881, who resided in Ksar Saïd. Surprised, Sadok Bey requested several hours for reflection, and immediately gathered his cabinet. Some of its members insisted that the bey should escape towards
-Kairouan
-to organize resistance, but Sadok Bey decided to accept the protectorate. The Bardo Treaty was signed by both parties on 12 May 1881.
-[
-5
-]
-French
-Chasseurs d'Afrique
-on outpost in Tunis, 1881
-An insurrection soon broke out in the south on 10 June 1881, and then in
-Sfax
-. 6
-ironclads
-were dispatched from
-Toulon
+Tunisian ceramist (1858–1938)
+Jacob Chemla
+Portrait of Jacob Chemla
+Born
+May 1858
 (
-Colbert
-,
-Friedland
-,
-Marengo
-,
-Trident
-,
-Revanche
-, and
-Surveillante
-) to join the French Navy ships in Tunisian waters.  In Sfax, three ironclads from the
-Division of the Levant
-were already present (
-Alma
-,
-Reine Blanche
-, and
-La Galissonnière
-), together with four cannon boats.
+1858-05
+)
+Tunis
+, Tunisia
+Died
+1938
+Occupations
+Artist, author, journalist, translator
+Known
+for
+Ceramics
+Jacob Chemla
+(
+Arabic
+:
+يعقوب شملا
+; 1858–1938)
 [
-6
-]
-Sfax was bombarded, and on 16 July the city was invested after hard fighting, with 7 dead and 32 wounded for the French.
-[
-6
-]
-At
-Kairouan
-32,000 men, 6,000 horses and 20,000 tons of supplies and material were landed.  Kairouan was taken without a fight on 28 October 1881.
-[
-6
-]
-Consequences
-[
-edit
-]
-Great Britain and
-Germany
-silently approved the invasion of the country, while
-Italy protested in vain
-.
-[
-5
-]
-Tunisia thus became a
-French protectorate
-, with great powers for the French, the French Resident being simultaneously
-Prime Minister
-, controller of the State's finances, and
-Commander in Chief
-of its armed forces.
-[
-5
-]
-In 1882,
-Paul Cambon
-energetically took advantage of his position as Resident, leaving the Bey essentially powerless, and in effect administering Tunisia as another French colony.
-[
-5
-]
-The French established an important naval base at Bizerte in 1898.
-[
-6
-]
-Italy would respond with the 1911–12
-Italo-Turkish War
-leading to the Italian occupation of
-Libya
-.
-[
-citation needed
-]
-See also
-[
-edit
-]
-History of French-era Tunisia
-French conquest of Algeria
-French conquest of Morocco
-Notes
-[
-edit
-]
 1
-2
-3
-Aldrich 1996
-, p.
-29
+]
+was a
+Tunisian Jewish
+ceramic artist
+, as well as an author, journalist and translator in
+Judeo-Tunisian Arabic
 .
-↑
-Houtsma, M Th (1993),
-First Encyclopaedia of Islam, 1913–1936
-, E.J. Brill, p.
-735,
-ISBN
-9004097961
+Biography
+[
+edit
+]
+While the Chemla family was originally from
+Djerba
 ,
-archived
-from the original on 2014-05-02
-.
-↑
-Aldrich 1996
-, p.
-28
-.
-1
+[
 2
+]
+Jacob Chemla served as a legal representative for litigants of the
+Beth din
+of
+Tunis
+. Chemla was an active philanthropist in the Jewish community of Tunis, serving as a founding member of the
+Jewish Hospital of Tunis
+among other ventures.
+Journalist, author, translator
+[
+edit
+]
+First page of Chemla's translation of
+The Count of Monte Cristo
+in
+Judeo-Tunisian Arabic
+In 1878, Chemla began a career in journalism with his brother-in-law,
+Messaoud Maarek
+. For over thirty years, until 1925, he helped bring in a period of growth in
+Judeo-Tunisian Arabic
+literature. He published two novels,
+Amour et malice
+(Love and Malice) in 1912 and
+Les Cœurs purs
+(The Pure Hearts) in 1923. Chemla translated multiple titles into
+Hebrew
+and
+Judeo-Tunisian Arabic
+, including
+The Jews of Spain at the Time of the Inquisition
+and
+The Count of Monte Cristo
+, which he originally released as a serial and later in full during the 1880s.
+Ceramics
+[
+edit
+]
+Chemla is perhaps most well known around Tunisia for his activities in ceramics. His father  Haïm Chemla was named by the
+Bey
+during the 1860s as the tax collector for the Artisans of Tunis (who would often pay in kind with donations of pottery). Haim Chemla would often pay the Bey the equivalent tax in cash while re-selling the pottery he had collected.
+[
 3
-Fage, JD (1975),
-The Cambridge history of Africa
-, Cambridge University Press, p.
-179,
-ISBN
-9780521228039
-,
-archived
-from the original on 2014-01-11
+]
+Jacob Chemla's tiles in Santa Barbara (CA) courthouse
+Jacob Chemla followed in his father's footsteps around 1880, when he opened a shop in the Place des Potiers à Tunis,.
+[
+2
+]
+[
+4
+]
+In 1887, the Tunisian government contracted him to help revive traditional ceramics.
+[
+2
+]
+In the
+Interwar period
+, production was moved to
+French Algeria
+and the
+United States
+, and the company presented at expositions in 1925, 1931 and 1937. Chemla's ceramic tiles decorated the homes of the rich in Tunis,
+Sidi Bou Said
+and
+La Marsa
 .
+[
+3
+]
+Starting in the 1910, his success extended to the USA and his ceramic tiles became features in the rich private homes architecture from Florida to California, but also decorated businesses such as the black-owned
+Renaissance Ballroom & Casino
+"Rennie" established by William H. Roach, the New-York
+Hotel McAlpin
+(the largest hotel in the world for its time), the
+Royal Hawaiian Hotel
+in Honolulu,
+[
+5
+]
+but also the Santa Barbara Court House.
+[
+6
+]
+He brought in his sons Victor (1892-1954), Albert (1894-1963) and Moïse (Mouche) (1897-1977) to the family business.
+[
+2
+]
+After the death of Victor and Albert's departure for
+Algeria
+in the 1930s, Moise succeeded his father and renamed the business
+Les fils de J. Chemla
+(Sons of Jacob Chemla), which operated as a family business until 1966. In the 1960s,
+President of Tunisia
+Habib Bourguiba
+contracted the company to install ceramic panels at
+Carthage Palace
+.
+References
+[
+edit
+]
+↑
+The date given in the file upon his award of the title
+Knight of the Legion of Honour
+in 1926.
 1
 2
 3
 4
-5
-6
-Aldrich 1996
-, p.
-30
+Hatem Bourial (25 December 2015).
+"La saga de Jacob Chemla"
+.
+webdo.tn
+(in French). Archived from
+the original
+on 2017-01-06
+. Retrieved
+5 January
+2017
 .
 1
 2
-3
-4
-5
-6
-Randier 2006
-, p.
-395.
+"Pot à couvercle"
+.
+mahj.org
+(in French). Archived from
+the original
+on 6 January 2017
+. Retrieved
+5 January
+2017
+.
+↑
+Le papier à en-tête commercial de son entreprise indique 1881 comme date de fondation.
+↑
+Stoolman, Jessie.
+"Southern California 'Spanish Revival' By Way of Tunis – Sephardic Los Angeles"
+. Retrieved
+2023-04-09
+.
+↑
+Santa Barbara Courthouse Docent Council.
+"Stairwell"
+.
+sbcourthouse.org
+. Retrieved
+2023-04-09
+.
 Bibliography
 [
 edit
 ]
-Aldrich, Robert (15 Sep 1996),
-Greater France: a history of French overseas expansion
-, European Studies, Basingstoke-London: Palgrave Macmillan,
+Jacques Chemla; Monique Goffard; Lucette Valensi (2015).
+Un siècle de céramique d'art en Tunisie
+(in French). Paris: Éditions de l'Éclat. p.
+207.
 ISBN
-978-0-312-16000-5
-Randier (2006),
-La Royale
-, Babouji,
-ISBN
-2-35261-022-2
+978-2841623778
 .
 External links
 [
 edit
 ]
-Media related to
-French conquest of Tunisia
-at Wikimedia Commons
-v
-t
-e
-Tunisia
-articles
-History
-Early history
-Capsian culture
-Ancient Carthage
-Punic Wars
-First War
-Second War
-Third War
-Byzantine Empire
-Medieval history
-Muslim conquest
-Fatimid Caliphate
-Hafsids
-Regency of Tunis
-Muradid
-Husaynids
-French protectorate
-National movement
-Naturalization issue
-Protests of 9 April
-Tunisian campaign
-Independence declaration
-Kingdom of Tunisia
-Republic declaration
-1987 coup d'état
-Tunisian revolution
-2013–14 political crisis
-2018 Tunisian protests
-COVID-19 pandemic
-2021 Tunisian protests
-25 July 2021 self-coup
-Geography
-Administrative divisions
-Governorates
-Cities
-Subdivisions
-Regions
-North East
-North West
-Sahel
-Central West
-South East
-Djerid
-Wildlife
-Ecoregions
-World Heritage Sites
-Museums
-Demographics
-Tunisians
-Tunisian diaspora
-Climate
-Politics
-President of the Republic
-List
-Prime Minister
-List
-Cabinet
-Constitution
-Fundamental Pact
-1861
-1959
-2014
-2022
-Foreign relations
-Armed Forces
-Army
-Air Force
-Navy
-Parliament
-National Council of Regions and Districts
-Assembly of the Representatives of the People
-Political parties
-Elections
-Independent High Authority for Elections
-Economy
-Bourse de Tunis
-Central Bank of Tunisia
-Tunisian dinar
-Banking in Tunisia
-Agriculture
-Energy
-Natural resources
-Water supply and sanitation
-Tourism
-Industry
-Telecommunications
-Transport
-Roads
-Rail transport
-Traditional crafts
-Major projects
-Society
-Education
-Baccalaureate
-Higher education
-Languages
-Tunisian Arabic
-Media
-Television
-Radio stations
-Internet
-Newspapers
-Censorship
-Human rights
-Abortion
-LGBT
-Women
-Polygamy
-Religion
-Islam
-Christianity
-Judaism
-Health
-Public holidays
-Culture
-Arts
-Cinema
-Music
-Literature
-Sport
-Football
-Cuisine
-National symbols
-Flag
-National anthem
-Coat of arms
-Motto
-Category
-WikiProject
-Commons
-v
-t
-e
-French overseas empire
-Former
-v
-t
-e
-Former French colonies
-in Africa and the Indian Ocean
-North Africa
-Algeria
-Morocco
-Tunisia
-West Africa
-Côte d'Ivoire
-Dahomey
-Sudan
-Guinea
-Mauritania
-Arguin Island
-Niger
-Senegal
-Four Communes
-Upper Volta
-Togoland
-James Island
-Albreda
-Equatorial Africa
-Chad
-Gabon
-Middle Congo
-Ubangi-Shari
-Cameroons
-Comoros
-Anjouan
-Grande Comore
-Mohéli
-Somaliland (Djibouti)
-Madagascar
-Isle de France
-v
-t
-e
-Former French colonies
-in the Americas
-French North America
-Acadia
-Louisiana
-Canada
-Terre
-Neuve
-French Florida
-French Texas
-French Caribbean
-Dominica
-Grenada
-The Grenadines
-Saint-Domingue
-Haïti
-,
-Dominican Republic
-Saint Kitts and Nevis
-Saint Lucia
-Saint Vincent
-Tobago
-Virgin Islands
-Equinoctial France
-Berbice
-France Antarctique
-Inini
-French colonization of the Americas
-French West India Company
-v
-t
-e
-Former French colonies
-in Asia and Oceania
-French India
-Chandernagor
-Coromandel Coast
-Madras
-Mahé
-Pondichéry
-Karaikal
-Yanaon
-Indochinese Union
-Cambodia
-Laos
-Vietnam
-Cochinchina
-Annam
-Tonkin
-Kouang-Tchéou-Wan
-Mandate for Syria
-and the Lebanon
-State of Syria
-Aleppo
-Damascus
-Alawite State
-Greater Lebanon
-Jabal al-Druze
-Sanjak of Alexandretta
-Oceania
-New Hebrides
-Vanuatu
-Port Louis-Philippe (Akaroa)
-France–Asia relations
-Louis XIV's East India Company
-Present
-v
-t
-e
-Overseas France
-Inhabited territories
-Overseas
-regions
-1
-French Guiana
-Guadeloupe
-Martinique
-Mayotte
-2
-Réunion
-Overseas
-collectivities
-French Polynesia
-Saint Barthélemy
-Saint Martin
-Saint Pierre and Miquelon
-Wallis and Futuna
-Sui generis
-collectivity
-New Caledonia
-Uninhabited territories
-North Pacific Ocean
-Clipperton Island
-Overseas territory
-(
-French Southern
-and Antarctic Lands
-)
-Adélie Land
-Crozet Islands
-Kerguelen Islands
-Saint Paul
-and
-Amsterdam Islands
-Scattered Islands in
-the Indian Ocean
-Bassas da India
-3
-Europa Island
-3
-Glorioso Islands
-2, 3
-Banc du Geyser
-Juan de Nova Island
-3
-Tromelin Island
-4
-1
-Also known as
-overseas departments
-2
-Claimed by the
-Comoros
-3
-Claimed by
-Madagascar
-4
-Claimed by
-Mauritius
-v
-t
-e
-French colonial conflicts
-16th century
-North America
-South Carolina (1562)
-Florida (1562–65)
-Florida (1568)
-South America
-Brazil (1531)
-Brazil (1555–67)
-Brazil (1590–04)
-17th century
+Marc-Alain Ouaknin; Monique Goffard; Lucette Valensi (13 December 2015).
+"Héritages tunisiens"
+.
+franceculture.fr
+(in French)
+. Retrieved
+5 January
+2017
+.
+Monique Goffard; Moncef Guellaty; Francois Pouillon; Lucette Valensi; Michel Valensi (November 2015).
+"Les céramistes juifs de Tunis"
+.
+akadem.org
+(in French)
+. Retrieved
+5 January
+2017
+.
+André Chemla (October 2002).
+"L'histoire de la céramique des Chemla"
+.
+chemla.org
+(in French). Archived from
+the original
+on 6 July 2013
+. Retrieved
+5 January
+2017
+.
+Monique Goffard; Lucette Valensi; Jacques Chemla.
+"La céramique
+: une histoire de famille"
+.
+chemla.org
+(in French). Archived from
+the original
+on 25 October 2017
+. Retrieved
+5 January
+2017
+.
+Portals
+:
+Biography
 Africa
-Morocco (1629)
-Senegal (1659–77)
-Djidjelli (1664)
-Algiers (1682)
-Algiers (1683)
-Algiers (1688)
-Americas
-Beaver Wars (1609–1701)
-Brazil (1612–15)
-North America (1627–29)
-West Indies (1635–59)
-Carib Expulsion (1660)
-Texas (1685–89)
-King William's War (1689–97)
-Santo Domingo (1691)
-Asia
-Siam (1687–90)
-18th century
-Africa
-West Africa (1758–63)
-Morocco (1765)
-Americas
-Queen Anne's War (1702–13)
-Chickasaw Wars (1721–52)
-Dummer's War (1721–25)
-Natchez revolt (1729)
-King George's War (1744–48)
-Nova Scotia (1749–55)
-French and Indian War (1754–60)
-North America (1778–83)
-Caribbean (1778–83)
-Haitian Revolution (1791–1804)
-Santo Domingo (1795–1809)
-Asia
-Burma–France relations (1729–56)
-India (1746–48)
-India (1749–54)
-India (1756–63)
-Vietnam (1777–1820)
-East Indies (1778–83)
-East Indies (1793–1801)
-Egypt and Syria (1798–1801)
-19th century
-Africa
-Indian Ocean (1809–11)
-Algeria (1830–47)
-Algeria (1835–1903)
-Morocco (1844)
-Salé (1851)
-French conquest of Senegal (1854)
-Tunisia (1881)
-Madagascar (1883)
-Ivory Coast (1883–98)
-First Franco-Dahomean War (1890)
-Second Franco-Dahomean War (1892–94)
-Second Madagascar expedition (1895)
-Menalamba rebellion (1895–1903)
-Voulet–Chanoine Mission (1898–1900)
-Americas
-West Indies (1804–10)
-Río de la Plata (1838–40)
-Mexico (1838–39)
-Argentina–Uruguay (1845–50)
-Intervention in Mexico (1861–67)
-Asia & Pacific Ocean
-Moluccas (1810)
-Java (1811)
-Philippines (1844–45)
-Tourane (1847)
-Franco-Tahitian War (1844–47)
-Tourane (1856)
-Second Opium War (1856-60)
-Cochinchina Campaign (1858–62)
-Japan (1863–64)
-Korea (1866)
-Tonkin (1873–74)
-Tonkin Campaign (1883–86)
-Sino-French War (1884–85)
-Tonkin (1886–96)
-Leewards War (1888–97)
-Franco-Siamese crisis (1893)
-20th century
-Africa
-Wadai War (1906–11)
-Casablanca (1907)
-Morocco (1911–12)
-Zaian War (1914–21)
-Volta-Bani War (1915–16)
-Kaocen revolt (1916–17)
-Rif War (1920–26)
-Kongo-Wara rebellion (1928–31)
-Malagasy Uprising (1947–48)
-Tunisian independence (1952–56)
-Algerian War (1954–62)
-Cameroon War (1955–64)
-Suez Crisis (1956)
-Ifni War (1957–58)
-Bizerte crisis (1961)
-Asia
-Boxer Rebellion (1901)
-Holy Man's Rebellion (1901–36)
-Vietnam (1916)
-Vietnam (1917–18)
-Vietnam (1918–21)
-Syria (1919–21)
-Cilicia (1920–21)
-Syria (1925–27)
-Tonkin (1930)
-Annam (1930–31)
-Indochina (1940)
-Franco-Thai War (1940–41)
-Cochinchina (1940)
-Indochina (March 1945)
-South Vietnam (1945–46)
-North Vietnam (summer 1946)
-First Indochina War (1946–54)
-Pacific
-Ouvéa cave hostage taking (1988)
-v
-t
-e
-International relations (1814–1919)
-Great powers
-Austria-Hungary
-France
-Germany
-Italy
-Japan
-Russia
-United Kingdom
-United States
-Alliances
-Holy Alliance
-Triple Alliance
-Dual Alliance
-Triple Entente
-Franco-Russian Alliance
-Entente Cordiale
-Anglo-Russian Convention
-Anglo-Japanese Alliance
-League of the Three Emperors
-Eight-Nation Alliance
-Balkan League
-Trends
-European balance of power
-Ottoman decline
-Eastern question
-Spread of nationalism
-Sovereign debt
-French–German enmity
-Revanchism
-Pax Britannica
-New Imperialism
-Scramble for Africa
-Egyptian Lever
-In Asia
-Great Game
-China
-Japan
-Pan-Slavism
-Great Rapprochement
-Second Industrial Revolution
-Industrial warfare
-Treaties and
-agreements
-Congress of Vienna
-Treaty of Versailles (1871)
-Treaty of Frankfurt
-Treaty of Berlin
-Reinsurance Treaty
-Treaty of Paris
-Treaty of Björkö
-Taft–Katsura agreement
-Hague Conventions
-Martens Clause
-Japan–Korea Treaty of 1905
-Japan–Korea Annexation Treaty
-Racconigi agreement
-1917 Franco-Russian agreement
-Events
-Formation of Romania
-Unification of Germany
-Unification of Italy
-Great Eastern Crisis
-Congress of Berlin
-Berlin Conference
-Kronstadt–Toulon naval visits
-Weltpolitik
-Naval arms races
-Anglo-German
-Dreadnought
-German Naval Laws
-Austro-Italian
-Fashoda Incident
-Annexation of Hawaii
-Venezuela Naval Blockade
-Alaska boundary dispute
-First Moroccan Crisis
-Algeciras Conference
-Agadir Crisis
-Treaty of Fes
-Bosnian Crisis
-July Crisis
-Wars
-Russo-Turkish
-Anglo-Egyptian
-First Sino-Japanese
-Spanish–American
-Banana Wars
-Philippine–American
-Boxer Rebellion
-Second Boer
-Russo-Japanese
-Italo-Turkish
-Balkan Wars
-First
-Second
-Albanian Revolts
-First
-Second
-Third
-World War I
-v
-t
-e
-Great Eastern Crisis
-Wars and conflicts
-Montenegrin
-Herzegovina uprising (1875–1877)
-Montenegrin–Ottoman War (1876–1878)
-Serb
-Herzegovina uprising (1875–1877)
-Serbian–Turkish Wars (1876–1878)
-Kumanovo uprising
-Bulgarian
-Stara Zagora Uprising
-April Uprising of 1876
-Razlovci uprising
-Kresna–Razlog uprising
-Greek
-1878 Macedonian rebellion
-Epirus Revolt of 1878
-Cretan revolt (1878)
-Russo-Turkish War (1877–1878)
-Romanian War of Independence
-Austro-Hungarian campaign in Bosnia and Herzegovina in 1878
-Expulsion of the Albanians, 1877–1878
+Authority control databases
 International
-agreements
-Berlin Memorandum
-Reichstadt Agreement
-Constantinople Conference
-Budapest Convention of 1877
-Treaty of San Stefano
-Cyprus Convention
-Congress of Berlin
-and
-Treaty of Berlin (1878)
-See also
-Bulgarian Exarchate
-Deligrad Event
-Niš Committee
-1876 Ottoman coup d'état
-First Constitutional Era (Ottoman Empire)
-Opalchentsi
-Eastern Question
-Provisional Russian Administration in Bulgaria
-British Cyprus
-League of Prizren
-Battles for Plav and Gusinje
-Pact of Halepa
-Dual Alliance (1879)
-Brsjak revolt
-Austro–Serbian Alliance of 1881
-French conquest of Tunisia
-Convention of Constantinople (1881)
-British Occupation of Egypt
-Marche slave
-Anna Karenina
+ISNI
+VIAF
+WorldCat
+National
+United States
+Israel
+People
+Léonore
+Other
+Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=French_conquest_of_Tunisia&oldid=1370620382
+https://en.wikipedia.org/w/index.php?title=Jacob_Chemla&oldid=1381133809
 "
 Categories
 :
-1880s in Tunisia
-1881 in Africa
-French colonisation in Africa
-French military occupations
-1881 conflicts
-Wars involving France
-Wars involving Tunisia
-French Third Republic
-History of Overseas France
-France–Tunisia relations
-19th-century military history of France
-Resistance to the French colonial empire
-African resistance to colonialism
+1858 births
+1938 deaths
+19th-century Tunisian people
+20th-century Tunisian people
+Judeo-Arabic-language writers
+People from Djerba
+Artists from Tunis
+Tunisian artists
+Tunisian ceramists
+Tunisian translators
+Tunisian writers
+Tunisian journalists
+Tunisian Jews
+Tunisian male writers
+Jewish artists
 Hidden categories:
 Articles with short description
 Short description is different from Wikidata
-All articles with unsourced statements
-Articles with unsourced statements from May 2021
-Commons category link is on Wikidata
+Pages where birth or death is being automatically determined
+Articles with hCards
+Articles containing Arabic-language text
+CS1 French-language sources (fr)
 Search
 Search
-French conquest of Tunisia
-15 languages
+Jacob Chemla
+8 languages
 Add topic
 
 ---
@@ -1712,1413 +964,1165 @@ Local opposition to the authorities began to intens
 
 ---
 
-Tunisia - Wikipedia
+History of the Jews in Tunisia - Wikipedia
 Jump to content
 Search
 Search
-Tunisia
-270 languages
-Аԥсшәа
-Acèh
-Адыгабзэ
-Afrikaans
-Alemannisch
-አማርኛ
-Pangcah
-Aragonés
-Ænglisc
-Obolo
-अंगिका
+History of the Jews in Tunisia
+11 languages
 العربية
-ܐܪܡܝܐ
-الدارجة
-مصرى
-অসমীয়া
-Asturianu
-Kotava
-Azərbaycanca
-تۆرکجه
-Башҡортса
-Basa Bali
-Boarisch
-Žemaitėška
-Bikol Central
-Беларуская (тарашкевіца)
-Беларуская
-Betawi
-Български
-भोजपुरी
-Bislama
-Banjar
-Bamanankan
-বাংলা
-བོད་ཡིག
-বিষ্ণুপ্রিয়া মণিপুরী
-Brezhoneg
-Bosanski
-Basa Ugi
-Буряад
-Català
-Chavacano de Zamboanga
-閩東語 / Mìng-dĕ̤ng-ngṳ̄
-Нохчийн
-Cebuano
-کوردی
-Corsu
-Qırımtatarca
 Čeština
-Kaszëbsczi
-Чӑвашла
-Cymraeg
-Dansk
-Dagbanli
 Deutsch
-Zazaki
-Dolnoserbski
-डोटेली
-ދިވެހިބަސް
-ཇོང་ཁ
-Eʋegbe
-Ελληνικά
-Emiliàn e rumagnòl
-Esperanto
-Español
-Eesti
-Euskara
-Estremeñu
-فارسی
-Fulfulde
 Suomi
-Võro
-Føroyskt
-Fɔ̀ngbè
 Français
-Arpetan
-Nordfriisk
-Frysk
-Gaeilge
-Gagauz
-Kriyòl gwiyannen
-Gàidhlig
-Galego
-گیلکی
-Avañe'ẽ
-गोंयची कोंकणी / Gõychi Konknni
-Bahasa Hulontalo
-Ghanaian Pidgin
-ગુજરાતી
-Gaelg
-Hausa
-客家語 / Hak-kâ-ngî
-Hawaiʻi
 עברית
-हिन्दी
-Fiji Hindi
-Hrvatski
-Hornjoserbsce
-Kreyòl ayisyen
-Magyar
-Հայերեն
-Արեւմտահայերէն
-Interlingua
-Jaku Iban
 Bahasa Indonesia
-Interlingue
-Igbo
-Ilokano
-Ido
-Íslenska
 Italiano
-日本語
-Patois
-La .lojban.
-Jawa
-ქართული
-Qaraqalpaqsha
-Taqbaylit
-Jju
-Kabɩyɛ
-Tyap
-Kongo
-Kumoring
-Gĩkũyũ
-Қазақша
-ភាសាខ្មែរ
-ಕನ್ನಡ
-Yerwa Kanuri
-한국어
-Къарачай-малкъар
-کٲشُر
-Kurdî
-Kernowek
-Кыргызча
-Latina
 Ladino
-Lëtzebuergesch
-Лезги
-Lingua Franca Nova
-Luganda
-Limburgs
-Ligure
-Ladin
-Lombard
-Lingála
-ລາວ
-Lietuvių
-Latviešu
-Madhurâ
-Мокшень
-Malagasy
-Олык марий
-Māori
-Minangkabau
-Македонски
-മലയാളം
-Монгол
-ꯃꯤꯇꯩ ꯂꯣꯟ
-मराठी
-Кырык мары
-Bahasa Melayu
-Malti
-Mirandés
-မြန်မာဘာသာ
-Эрзянь
-مازِرونی
-Nedersaksies
-Plattdüütsch
-नेपाली
-नेपाल भाषा
-Nederlands
-Norsk nynorsk
-Norsk bokmål
-Novial
-Sesotho sa Leboa
-Nupe
-Diné bizaad
-Occitan
-Livvinkarjala
-Oromoo
-ଓଡ଼ିଆ
-Ирон
-ਪੰਜਾਬੀ
-Kapampangan
-Papiamentu
-Picard
-Polski
-Piemontèis
-پنجابی
-Ποντιακά
-پښتو
 Português
-Runa Simi
-Rumantsch
-Română
-Русский
-Русиньскый
-Ikinyarwanda
-संस्कृतम्
-Саха тыла
-Sardu
-Sicilianu
-Scots
-سنڌي
-Davvisámegiella
-Sängö
-Srpskohrvatski / српскохрватски
-Taclḥit
-တႆး
-සිංහල
-Simple English
-Slovenčina
-Slovenščina
-Gagana Samoa
-Anarâškielâ
-ChiShona
-Soomaaliga
-Shqip
-Српски / srpski
-SiSwati
-Sesotho
-Seeltersk
-Sunda
-Svenska
-Kiswahili
-ꠍꠤꠟꠐꠤ
-Ślůnski
-Sakizaya
-தமிழ்
-Tayal
-తెలుగు
-Тоҷикӣ
-ไทย
-ትግርኛ
-Türkmençe
-Tagalog
-Tolışi
-Setswana
-Toki pona
 Türkçe
-Seediq
-Xitsonga
-Татарча / tatarça
-ChiTumbuka
-Twi
-Удмурт
-ئۇيغۇرچە / Uyghurche
-Українська
-اردو
-Oʻzbekcha / ўзбекча
-Vèneto
-Vepsän kel’
-Tiếng Việt
-West-Vlams
-Volapük
-Walon
-Winaray
-Wolof
-吴语
-მარგალური
-ייִדיש
-Yorùbá
-Vahcuengh
-Zeêuws
-ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ
-文言
-閩南語 / Bân-lâm-gí
-粵語
-中文
-IsiZulu
 Edit links
-Coordinates
-:
-34°N
-9°E
-﻿
-/
-﻿
-34°N 9°E
-﻿
-/
-34; 9
 From Wikipedia, the free encyclopedia
-Country in North Africa
-This article is about the country. For the board game, see
-Tunisia (board game)
-.
-Republic of Tunisia
-الجمهورية التونسية
+(Redirected from
+Tunisian Jewish
+)
+Ethnic group
+Tunisian Jews
+יהדות תוניסיה
+Jews of Tunis,
+c.
+1900
+Total population
+50,000–300,000
+Regions with significant populations
+Israel,
+Tunisia
+, United States, Canada, France
+Languages
+Hebrew
+,
+Arabic
+,
+Judeo-Tunisian Arabic
+, English, French,
+Berber
+Religion
+Judaism
+Related ethnic groups
+Jews,
+Maghrebi Jews
+,
+Mizrahi Jews
+The location of
+Tunisia
+in Africa
+Part of
+a series
+on
+Jews
+Etymology
+Who is a Jew?
+Jewish studies
+History
+General
+Timeline
+Index
+Land of Israel
+Name "Judea"
+Historical population
+History of Israel
+Modern historiography
+Leaders
+Antisemitism
+Anti-Judaism
+Persecution
+Ancient Israel and Judah
+Twelve Tribes of Israel
+Israelites
+Kingdom
+of Judah
+Kingdom of Israel
+Jerusalem
 (
-Arabic
+in
+Judaism
+timeline
 )
-al-Jumhūriyyah at-Tūnisiyyah
-Flag
-Coat of arms
-Motto:
-حرية، نظام، عدالة
-"
-Ḥurrīyah, Niẓām, 'Adālah
-"
-"
-Freedom, Order, Justice
-"
-Anthem:
-حماة الحمى
-"
-Humat al-Hima
-"
-(English:
-"Defenders of the Homeland"
+Temple
+in Jerusalem
+(
+First
+Second
 )
-Show globe
-Show map of Tunisia
-Capital
-and largest city
-Tunis
-36°49′N
-10°11′E
-﻿
-/
-﻿
-36.817°N 10.183°E
-﻿
-/
-36.817; 10.183
-Official
-languages
-Arabic
+Assyrian captivity
+Babylonian captivity
+Second Temple period
+Yehud
+Maccabean Revolt
+Hasmonean dynasty
+Sanhedrin
+Schisms
+(
+Pharisees
+,
+Sadducees
+,
+Essenes
+,
+Zealots
+,
+Sicarii
+)
+Second Temple Judaism
+(
+Hellenistic Judaism
+)
+Jewish–Roman wars
+Great Revolt
+Provisional government
+Diaspora Revolt
+Bar Kokhba Revolt
+Rabbinic period
+and Middle Ages
+Rabbinic Judaism
+Jews in the Byzantine Empire
+Christianity
+and Judaism
+(
+Jews and Christmas
+)
+Hinduism
+and Judaism
+Islamic–Jewish
+relations
+Middle Ages
+Golden Age
+Expulsion from Spain
+Modern era
+Haskalah
+Sabbateans
+Hasidism
+Jewish atheism
+Emancipation
+Old Yishuv
+Zionism
+Soviet Union
+The Holocaust
+State of Israel
+History
+Arab–Israeli
+conflict
+Communities
+Ashkenazim
+Galician
+Litvak
+Mizrahim
+Sephardim
+Teimanim (Yemenite Jews)
+Beta Israel
+Gruzinim (Georgian Jews)
+Juhurim (Mountain Jews)
+Bukharim
+Italkim
+Romanyotim
+Cochinim
+Bene Israel
+Berber
+Crimean Karaites
+Krymchaks
+Kaifeng Jews
+Related groups
+Bnei Anusim
+Lemba
+Igbo Jews
+Samaritans
+Crypto-Jews
+Anusim
+Dönmeh
+Marranos
+Neofiti
+Xueta
+Mosaic Arabs
+Subbotniks
+Noahides
+Population
+Judaism by country
+Lists of Jews
+Diaspora
+Historical population by country
+Population by city
+Genetic studies
+Peoplehood
+Israel
+and
+Palestine
+Old Yishuv
+New Yishuv
+Israeli Jews
+Palestinian Jews
+Africa
+Algeria
+Angola
+Botswana
+Cameroon
+Cape Verde
+Benin
+Democratic Republic of the Congo
+Djibouti
+Egypt
+Ethiopia
+Beta Israel
+Eritrea
+Eswatini
+Gabon
+Gambia
+Ghana
+Guinea
+Guinea-Bissau
+Ivory Coast
+Kenya
+Libya
+Madagascar
+Malawi
+Mali
+Mauritius
+Morocco
+Mozambique
+Namibia
+Nigeria
+Igbo
+Republic of the Congo
+São Tomé and Príncipe
+Sierra Leone
+Somalia
+South Africa
+Sudan
+Tanzania
+Tunisia
+Uganda
+Abayudaya
+West Africa
+Zambia
+Zimbabwe
+Asia
+Afghanistan
+Armenia
+Azerbaijan
+Bahrain
+Cambodia
+China
+Georgia
+Hong Kong
+India
+Indonesia
+Iran
+Iraq
+Israel
+Japan
+Jordan
+Kazakhstan
+Kurdistan
+Kuwait
+Kyrgyzstan
+Lebanon
+Malaysia
+Mongolia
+Myanmar
+Nepal
+Oman
+Pakistan
+Philippines
+Qatar
+Saudi Arabia
+South Korea
+Singapore
+Sri Lanka
+Syria
+Tajikistan
+Taiwan
+Thailand
+Turkey
+United Arab Emirates
+Uzbekistan
+Vietnam
+Yemen
+Europe
+Albania
+Austria
+Belarus
+Belgium
+Bosnia and Herzegovina
+Bulgaria
+Croatia
+Cyprus
+Czechia
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Romaniote
+Hungary
+Iceland
+Ireland
+Italy
+Italkim
+Latvia
+Liechtenstein
+Lithuania
+Luxembourg
+Moldova
+Montenegro
+Netherlands
+North Macedonia
+Norway
+Poland
+Portugal
+Romania
+Russia
+Soviet Union
+Serbia
+Slovakia
+Slovenia
+Spain
+Sephardic
+Sweden
+Switzerland
+Ukraine
+United Kingdom
+England
+Scotland
+Wales
+Northern America
+Canada
+Greenland
+United States
+Latin America and Caribbean
+Argentina
+Bolivia
+Brazil
+Chile
+Colombia
+Costa Rica
+Cuba
+Dominican Republic
+Ecuador
+El
+Salvador
+Guatemala
+Guyana
+Haiti
+Honduras
+Jamaica
+Mexico
+Nicaragua
+Panama
+Paraguay
+Peru
+Puerto Rico
+Suriname
+Uruguay
+Venezuela
+Oceania
+Australia
+Fiji
+Guam
+New
+Zealand
+Palau
+Culture
+Customs
+Minyan
+Wedding
+Clothing
+Niddah
+Pidyon haben
+Kashrut
+Shidduch
+Surnames
+Ashkenazi
+Sephardic
+Zeved habat
+Conversion
+to Judaism
+Art
+Ancient
+Yiddish theatre
+Dance
+Humour
+Music
+Religious
+Secular
+Cuisine
+American
+Ashkenazi
+Bukharan
+Ethiopian
+Israeli
+Israelite
+Mizrahi
+Sephardic
+Literature
+Israeli
+Yiddish
+Judeo-Tat
+American
+Religion
+Outline
+God in Judaism
+(
+names
+)
+Principles of faith
+Mitzvot
+(
+613
+)
+Halakha
+Shabbat
+Holidays
+Prayer
+Tzedakah
+Land
+of Israel
+Brit
+Bar
+and bat mitzvah
+Marriage
+Bereavement
+Baal teshuva
+Off the derech
+Philosophy
+Ethics
+Kabbalah
+Messiah
+Claimants
+Customs
+Rites
+Synagogue
+Rabbi
+Denominations
+Orthodox
+Haredi
+Hasidic
+Modern
+Open
+Traditional
+Conservadox
+Conservative
+Reform
+Reconstructionist
+Humanistic
+Renewal
+Science
+Karaite
+Haymanot
+Texts
+Tanakh
+Torah
+Nevi'im
+Ketuvim
+Talmud
+Mishnah
+Gemara
+Rabbinic
+Midrash
+Tosefta
+Targum
+Beit Yosef
+Mishneh Torah
+Tur
+Shulchan Aruch
+Zohar
+Languages
+Hebrew
+Biblical
+Mishnaic
+Medieval
+Modern
+Bukharian
+Ghardaïa Sign
+Jewish Koine Greek
+Judeo-Arabic
+Judeo-Aramaic
+Judeo-Berber
+Judeo-Gascon
+Judaeo-Georgian
+Judaeo-Iranian
+Judeo-Italian
+Judeo-Malayalam
+Judaeo-Spanish
+Judeo-Tat
+Knaanic
+Shassi
+Yeshivish
+Yevanic
+Yiddish
+Zarphatic
+Politics
+Jewish political movements
+Autonomism
+Bundism
+Conservatism
+Feminism
+Leftism
+Secularism
+Territorialism
+World Agudath Israel
+Zionism
+General
+Green
+Labor
+Kahanism
+Maximalism
+Neo-Zionism
+Religious
+Revisionist
+Post-Zionism
+Category
+Portal
+v
+t
+e
+The
+history of the
+Jews
+in
+Tunisia
+dates back nearly two thousand years to the
+Punic era
+. The Jewish community of
+Tunisia
+grew following successive waves of immigration and proselytism
 [
 1
 ]
-Local vernacular
-Tunisian Arabic
+before its development was hampered by the imposition of anti-Jewish measures in the
+Byzantine Empire
+in late antiquity. After the
+Muslim conquest of Tunisia
+, Tunisian Jews experienced periods of relative freedom or cultural apogee
 [
 2
 ]
-Minority Dialects
-:
-Jerba Berber
-(Chelha)
-Matmata Berber
-Judeo-Tunisian Arabic
-(UNESCO CR)
+which were followed by periods of more marked discrimination and persecution.
 [
 3
 ]
+Under Muslim rule, Jews were granted legal status as
+dhimmi
+, which legally assured protections of life, property, and freedom of religion, but imposed an increased
+tax burden
+on them. The community developed
+its own dialect of Arabic
+, but the use of Judeo-Tunisian Arabic has declined due to the community's relocation from Tunisia.
 [
 4
 ]
+The arrival of Jews expelled from the
+Iberian Peninsula
+, often through
+Livorno
+, greatly influenced the community's composition, inter-group relations, and customs.
+The economic, social and cultural position of the community was significantly compromised during the
+Second World War
+due to the occupation of the
+French protectorate of Tunisia
+by the
+Axis powers
+.
 [
 5
 ]
+The
+Israeli Declaration of Independence
+in 1948 and the ensuing
+1948 Arab–Israeli War
+provoked a widespread
+antisemitic
+backlash in the
+Arab world
+, to which was added nationalist agitation, the nationalization of enterprises, the
+Arabization
+of education and the Arabization of part of the administration.   Prior to Tunisian independence in 1956, the Jewish population was estimated at 105,000 individuals.
 [
 6
 ]
+These Jews lived mainly in Tunis, with communities also present on the island of
+Djerba
+.
+Jews left Tunisia en masse
+in subsequent years due notably to the
+Bizerte crisis
+in 1961 and the
+Six-Day War
+in 1967.
 [
 7
 ]
+The population had declined to 1500 by 2017.
 [
 8
 ]
+The
+Jewish diaspora
+of Tunisia is divided between Israel and France, where it has preserved its community identity through its traditions, mostly dependent on
+Sephardic law and customs
+, but retaining its own specific characteristics.
 [
 9
 ]
+Djerbian Judaism in particular is considered to be more faithful to tradition because it remained outside the sphere of influence of the modernist currents.
 [
 10
 ]
+The Tunisian Jews who have
+relocated to Israel
+have
+switched
+to using Hebrew as their
+home language
+.
+[
+4
+]
+Tunisian Jews living in France
+typically use French as their first language, while the few still left in Tunisia tend to use either French or Judeo-Tunisian Arabic in their everyday lives.
 [
 11
 ]
-Foreign languages
-French
+Historiography
+[
+edit
+]
+Further information:
+History of the Jews in Carthage
 and
-English
+History of the Jews in Kairouan
+The history of the Jews of Tunisia (until the establishment of the French protectorate) was first studied by
+David Cazès
+in 1888 in his
+Essay on the History of the Israelites of Tunisia
+,
+André Chouraqui
+(1952), and later by Haim Zeev Hirschberg (1965),
 [
-a
+12
 ]
-Ethnic
-groups
-(2021)
+in the more general context of North African Judaism.
+[
+13
+]
+The research on the subject was then enriched by Robert Attal and Yitzhak Avrahami. In addition, various institutions, including the
+Israel Folktale Archives in University of Haifa
+, the
+Hebrew University of Jerusalem
+, and the
+Ben Zvi Institute
+, have collected material evidence (traditional clothing, embroidery, lace, jewelry, etc.), traditions (folk tales, liturgical songs, etc.), and manuscripts as well as Judeo-Arabic books and newspapers.
 [
 14
 ]
-98%
-Arabs
-[
-14
-]
-1%
-Berbers
+Paul Sebag is the first to provide in his 1991 book
+History of the Jews of Tunisia: from origins to our days
+a first development entirely devoted to the history of this community.
 [
 15
 ]
 [
 16
 ]
-1%
-Jews
-and others
+In Tunisia, following the thesis of Abdelkrim Allagui, a group under the direction of Habib Kazdaghli and Abdelhamid Largueche brought the subject into the field of national academic research. Founded in Paris on June 3, 1997, the Society of Jewish History of Tunisia contributes to the research on the Jews of Tunisia and transmits their history through conferences, symposia and exhibitions.
+[
+citation needed
+]
+According to
+Michel Abitbol
+, the study of Judaism in Tunisia has grown rapidly during the progressive dissolution of the Jewish community in the context of decolonization and the evolution of the Arab-Israeli conflict while Habib Kazdaghli believes that the departure of the Jewish community is the cause of the low number of studies which are relevant to the topic.
 [
 17
 ]
-Religion
-[
-14
-]
-99%
-Sunni Islam
-1%
-others
-(incl.
-Christians
-,
-Judaism
-,
-Shia Islam
-, and
-Baha’i
-)
-[
-18
-]
-[
-19
-]
-Demonym
-Tunisian
-Government
-Unitary
-presidential republic
-•
-President
-Kais Saied
-•
-Prime Minister
-Sara Zaafarani
-Legislature
-Parliament
-•
-Upper house
-National Council of Regions and Districts
-•
-Lower house
-Assembly of the Representatives of the People
-Establishment
-•
-Ancient Carthage
-814 BC
-•
-Roman Africa
-146 BC
-•
-Vandal Kingdom
-439
-•
-Exarchate of Africa
-591
-•
-Aghlabid Emirate
-800
-•
-Fatimid Caliphate
-909
-•
-Zirid Emirate
-972
-•
-Hafsid Sultanate
-1229
-•
-Beylik of Tunis
-15 July 1705
-•
-French protectorate
-12 May 1881
-•
-Independence
-and
-Kingdom
-20 March 1956
-•
-Republic declaration
-25 July 1957
-Area
-•
-Total
-163,610
-km
-2
-(63,170
-sq
-mi)
-(
-91st
-)
-•
-Water
-(%)
-5.04
-Population
-•
-2024
-census
-11,972,169
-[
-20
-]
-•
-Density
-79/km
-2
-(204.6/sq
-mi)
-(
-134th
-)
-GDP
-(
-PPP
-)
-2025
-estimate
-•
-Total
-$183.73 billion
-[
-21
-]
-(
-84th
-)
-•
-Per capita
-$14,780
-[
-21
-]
-(
-111th
-)
-GDP
-(nominal)
-2025
-estimate
-•
-Total
-$56.290 billion
-[
-21
-]
-(
-90th
-)
-•
-Per capita
-$4,530
-[
-21
-]
-(
-121st
-)
-Gini
-(2021)
-33.7
-[
-22
-]
-medium inequality
-HDI
-(2023)
-0.746
-[
-23
-]
-high
-(
-105th
-)
-Currency
-Tunisian dinar
-(
-TND
-)
-Time zone
-UTC
-+1
-(
-CET
-)
-Date format
-dd/mm/yyyy
-Calling code
-+216
-ISO 3166 code
-TN
-Internet TLD
-.tn
-.تونس
-[
-24
-]
-Tunisia
-,
-[
-b
-]
-officially the
-Republic of Tunisia
-,
-[
-c
-]
-[
-26
-]
-is a country in the
-Maghreb
-region of
-North Africa
-. It is bordered by
-Algeria
-to the west and southwest,
-Libya
-to the southeast, and the
-Mediterranean Sea
-to the north and east. Tunisia also shares maritime borders with
-Italy
-through the islands of
-Sicily
-and
-Sardinia
-to the north and
-Malta
-to the east. It features the archaeological sites of
-Carthage
-dating back to the 9th century BC, as well as the Great Mosque of
-Kairouan
-. Known for its ancient architecture,
-souks
-, and blue coasts, it covers
-163,610
-km
-2
-(63,170
-sq
-mi)
-, and has a population of 12.1 million. It contains the eastern end of the
-Atlas Mountains
-and the northern reaches of the
-Sahara
-desert; much of its remaining territory is
-arable land
-. Its
-1,300
-km (810
-mi)
-of coastline includes the African conjunction of the western and eastern parts of the
-Mediterranean Basin
-. Tunisia is home to Africa's northernmost point,
-Cape Angela
-. Located on the northeastern coast,
-Tunis
-is the capital of the country, which is itself named after Tunis. The official language of Tunisia is
-Arabic
-. The vast majority of Tunisia's population is
-Arab
-and
-Muslim
-. Vernacular
-Tunisian Arabic
-is the most spoken language, and
-French
-serves as an administrative and educational language in some contexts, but has no official status.
-Beginning in early antiquity, Tunisia was inhabited by the indigenous Numidian people who were later subsumed by the Amazighs or
-Berbers
-.
-[
-27
-]
-The
-Phoenicians
-, a
-Semitic people
-, began to arrive in the 12th century BC,
-settling on the coast and establishing several settlements
-, of which
-Carthage
-emerged as the most powerful by the 7th century BC. The descendants of the Phoenician settlers came to be known as the
-Punic people
-.
-Ancient Carthage
-was a major
-mercantile
-empire and a military rival to the
-Roman Republic
-until 146 BC when it was
-defeated
-by the Romans who occupied Tunisia for most of the next 800 years. The Romans introduced
-Christianity
-and left architectural legacies like the
-Amphitheatre of El Jem
-. In the 7th century AD,
-Arab Muslims conquered
-Tunisia and
-settled with their tribes and families
-, bringing
-Islam
-and
-Arab culture
-. A later large-scale
-Arab migration
-of
-Banu Hilal
-and
-Banu Sulaym
-tribes in the 11th-12th centuries accelerated this process. By around the 15th century, the region of modern-day Tunisia had already been almost completely
-Arabised
-.
-[
-28
-]
-Then, in 1546, the
-Ottoman Empire
-established control, holding sway until 1881, when the
-French conquered Tunisia
-. In 1956,
-Tunisia gained independence
-as the Tunisian Republic. Today,
-Tunisia's culture
-and identity are rooted in this centuries-long intersection of different cultures and ethnicities.
-In 2011, the
-Tunisian Revolution
-, which was triggered by dissatisfaction with the lack of freedom and
-democracy
-under the 24-year rule of President
-Zine El Abidine Ben Ali
-, overthrew his regime and catalyzed the broader
-Arab Spring
-movement across the region. Free multiparty parliamentary
-elections
-were held shortly thereafter; the country again voted for parliament on 26 October 2014,
-[
-29
-]
-and for president on 23 November 2014.
-[
-30
-]
-From 2014 to 2020, it was considered the only democratic state in the
-Arab world
-, according to
-The Economist Democracy Index
-.
-[
-31
-]
-[
-d
-]
-After
-democratic backsliding
-under President
-Kais Saied
-, Tunisia was rated a
-hybrid regime
-in 2022
-[
-32
-]
-and as of 2025 it no longer has free and fair elections according to
-Freedom House
-.
-[
-33
-]
-It is one of the few countries in Africa ranking high on the
-Human Development Index
-, with one of the
-highest per capita incomes
-on the continent, ranking 129th in
-GDP per capita
-income.
-Tunisia is well integrated into the international community. It is a member of the
-United Nations
-,
-Organisation internationale de la Francophonie
-, the
-Arab League
-, the
-Organisation of Islamic Cooperation
-, the
-African Union
-, the
-Common Market for Eastern and Southern Africa
-, the
-Non-Aligned Movement
-, the
-International Criminal Court
-, the
-Group of 77
-, among others. It maintains close economic and political relations with some European countries, particularly with
-France
-and
-Italy
-,
-[
-34
-]
-[
-35
-]
-due to their geographical proximity. Tunisia also has an
-association agreement
-with the
-European Union
-and has attained the status of a
-major non-NATO ally
-of the
-United States
-.
-Etymology
-See also:
-Tunis §
-Etymology
-The word
-Tunisia
-is derived from
-Tunis
-, a central urban hub and the capital of modern-day Tunisia. The present form of the name, with its
-Latinate
-suffix
--ia
-, evolved from
-French
-Tunisie
-,
-[
-36
-]
-[
-37
-]
-in turn generally associated with the
-Berber
-root
-ⵜⵏⵙ
-, transcribed
-tns
-, which means "to lay down" or "encampment".
-[
-38
-]
-It is sometimes also associated with the
-Carthage goddess
-Tanith
-(or Tunit),
-[
-36
-]
-[
-39
-]
-and the ancient city of Tynes.
-[
-40
-]
-[
-41
-]
-The French derivative
-Tunisie
-was adopted in some European languages with slight modifications, introducing a distinctive name to designate the country. Other languages have left the name untouched, such as the
-Russian
-Туни́с
-(
-Tunís
-) and
-Spanish
-Túnez
-. In this case, 
+Kazdaghli, however, points out that the publication of them has increased since the 1990s, due to their authors' attachment to this community, and the belief that the Jews originated
 
 ---
 
-Beylik of Tunis - Wikipedia
+Ceramic art - Wikipedia
 Jump to content
 Search
 Search
-Beylik of Tunis
-20 languages
+Ceramic art
+22 languages
 العربية
-Asturianu
 Azərbaycanca
-Čeština
-Dansk
+বাংলা
 Ελληνικά
-Español
-Eesti
 فارسی
 Français
-עברית
+हिन्दी
 Bahasa Indonesia
 日本語
 한국어
-Simple English
-Svenska
-Türkçe
+Lietuvių
+Македонски
+Bahasa Melayu
+မြန်မာဘာသာ
+Polski
+Română
+සිංහල
+Slovenščina
 Українська
-閩南語 / Bân-lâm-gí
+Tiếng Việt
+粵語
 中文
 Edit links
 From Wikipedia, the free encyclopedia
-North African monarchy (1705–1881)
-Beylik of Tunis
-بايلك تونس
-(
-Arabic
+(Redirected from
+Ceramic artist
 )
-1705–1881
-Flag
-Coat of arms
-Motto:
-يا ذا الألطاف الخفية احفظ هذه المملكة التونسية
-"Oh God of hidden kindness, save this Kingdom of Tunis"
-Anthem:
-Salam al-Bey
-(Beylical Anthem)
-Kingdom
-(Beylik)
-of Tunis in 1707
-Status
-Constitutional monarchy
-(1861-1864)
-Capital
-Tunis
-Common
-languages
-Tunisian
-Arabic
-Judeo-Tunisian
-Berber
-Religion
-Islam
-(majority)
-Judaism
-Christianity
-Government
-Constitutional Monarchy
-Bey
-•
-1705–1735
-Hussein I
-•
-1859–1881
-Muhammad III
-Prime Minister
-•
-1759–1782
-Rejeb Khaznadar
-•
-1878–1881
-Mustapha Ben Ismaïl
-Legislature
-Supreme Council
-Historical era
-Late modern period
-•
-Hussein I rise to power
-15 July 1705
-•
-Protectorate established
-12 May 1881
-Currency
-Tunisian rial
-Preceded by
-Succeeded by
-Eyalet of Tunis
-French protectorate of Tunisia
-Today part of
-Tunisia
-The
-Beylik of Tunis
-(
-Arabic
-:
-بايلك تونس
-) was the legal form of
-Tunisia
-, between 1705 and 1881.
+Decorative objects made from clay and other raw materials by the process of pottery
+Etruscan
+: Diomedes and Polyxena, from the Etruscan amphora of the Pontic group,
+c.
+540
+–
+530
+BCE
+–
+From
+Vulci
+The Music Lesson
+, gold anchor,
+Chelsea porcelain
+, c. 1765, with
+bocage
+background. 15 3/8 × 12 1/4 × 8 3/4 inches, 22 lb. (39.1 × 31.1 × 22.2 cm, 10 kg).
+different version, different angle
+.
+Chinese
+Jun ware
+wheel-thrown
+stoneware
+bowl with blue glaze and purple splashes,
+Jin dynasty
+, 1127–1234
+16th century Turkish
+Iznik
+tiles, which would have originally formed part of a much larger group
+Ceramic art
+, one of the
+plastic arts
+, is art made from
+ceramic
+materials,
 [
 1
 ]
-It was ruled by the
-Husainid dynasty
-until the establishment of the
-French protectorate of Tunisia
-. The term
-beylik
-refers to the monarch, who was called the
-Bey of Tunis
-. Under the protectorate, the latter remained nominally the head of state, with the Husainids remaining as largely symbolic sovereigns.
+including clay.
+Ceramic art
+may take forms such as
+pottery
+,
+tiles
+,
+figurines
+,
+sculptures
+, and
+tableware
+. While some ceramic products are considered
+fine art
+, others are considered
+decorative
+,
+industrial
+, or
+applied
+art objects.
+Ceramics
+may also be considered
+artefacts
+in
+archaeology
+. People design, manufacture, and decorate pottery in pottery or ceramic factories. Some pottery is regarded as
+art pottery
+.
 [
 2
 ]
+In one-person pottery studios, ceramists or potters produce
+studio pottery
+. Ceramics exclude
+glass
+and
+mosaics
+made from glass
+tesserae
+.
 [
 3
 ]
+In Britain and the United States, modern ceramics as an art took its inspiration in the early twentieth century from the
+Arts and Crafts
+movement, leading to the revival of pottery considered as a specifically modern craft. Such crafts emphasized traditional non-industrial production techniques, faithfulness to the material, the skills of the individual maker, attention to utility, and an absence of excessive decoration that was typical to the Victorian era.
 [
 4
 ]
-The Beys remained faithful to the
-Sublime Porte
-, but reigned as monarchs after gradually gaining independence from the Ottoman Empire. Between 1861 and 1864, the Beylik of Tunis became a
-constitutional monarchy
-after adopting the first constitution in
-Africa
-and the
-Arab world
-. The country had its own currency and an independent army, and in 1831 it adopted its flag, which is still in use today.
+The word "ceramics" comes from the Greek
+keramikos
+(κεραμεικός), meaning "pottery", which in turn comes from
+keramos
+(κέραμος) meaning "potter's clay".
 [
 5
 ]
-The Husainid dynasty continued to rule Tunisia, even after the establishment of the French protectorate in 1881, and remained in existence until the republic was declared on 25 July 1957, one year after independence.
-History
+Most traditional ceramic products were made from
+clay
+(or clay mixed with other materials), shaped and subjected to heat, and tableware and decorative ceramics are generally still made this way. In modern ceramic engineering usage, ceramics is the art and science of making objects from inorganic, non-metallic materials by the action of heat. It excludes
+glass
+and
+mosaic
+made from glass
+tesserae
+.
+There is a long history of ceramic art in almost all developed cultures, and often ceramic objects are all the artistic evidence left from vanished cultures, like that of the
+Nok
+in Africa over 2,000 years ago.  Cultures especially noted for ceramics include the
+Chinese
+,
+Cretan
+,
+Greek
+,
+Persian
+,
+Mayan
+,
+Japanese
+, and
+Korean
+cultures, as well as the modern Western cultures.
+Elements of ceramic art, upon which different degrees of emphasis have been placed at different times, are the shape of the object, its decoration by painting, carving and other methods, and the glazing found on most ceramics.
+Materials
 [
 edit
 ]
-Part of
-a series
-on the
-History of
-Tunisia
-Prehistoric
-Prehistory
-Ancient
-Carthage
-12th C.
-–
-146 BC
-1st Roman
-(
-Province
-)
-146 BC
-–
-435
-Vandal
-435
-–
-534
-2nd Roman (Byzantine)
-/
-Byzantine North Africa
-534
-–
-698
-Prefecture
-534
-–
-590
-Exarchate
-590
-–
-698
-Early Islamic
-Umayyad
-698
-–
-750
-Abbasid
-750
-–
-800
-Aghlabid
-800
-–
-909
-Fatimid
-909
-–
-973
-Medieval
-Zirid
-973
-–
-1148
-Norman
-1148
-–
-1160
-Almohad
-1160
-–
-1229
-Hafsid
-1229
-–
-1574
-Early modern
-Ottoman
-1574
-–
-1705
-Husainid
-1705
-–
-1881
-Modern
-French rule
-1881
-–
-1956
-Kingdom of Tunisia
-1956
-–
-1957
-Bourguiba rule
-1957
-–
-1987
-Ben Ali coup
-1987
-Ben Ali rule
-1987
-–
-2011
-Tunisian revolution
-2010
-–
-2011
-Political crisis
-2013
-–
-2014
-COVID-19 pandemic
-2020
-Saied self-coup
-2021
-Africa
-portal
-History
-portal
-v
-t
-e
-Establishment of the beylik (1705–1735)
+Main articles:
+Earthenware
+,
+Stoneware
+,
+Porcelain
+, and
+Bone china
+Different types of
+clay
+, when used with different
+minerals
+and firing conditions, are used to produce different types of ceramic, including earthenware, stoneware, porcelain and bone china.
+Earthenware
 [
 edit
 ]
-Following the
-Revolutions of Tunis
-which saw
-Ibrahim Sharif
-overthrow
-Muradids'
-power, the latter became the first
-bey
-to combine this function with that of
-Pasha
-. Taken to
-Algiers
-following a defeat against the
-Dey of Algiers
-, and unable to put an end to the troubles which agitated the country, he was a victim, on 10 July 1705 of a
-coup
-of
-Al-Husayn I ibn Ali
-, who took the name of
-Hussein I
-.
-Hussein I reigned alone over Tunisia, establishing a real
-monarchy
-and became
-Possessor of the Kingdom of Tunis
-, disposing over all his subjects the right of high and low justice. His decrees and decisions had the force of
-law
-.
+Earthenware
+is
+pottery
+that has not been fired to
+vitrification
+and is thus permeable to water.
 [
 6
 ]
-As
-Bey of Tunis
-he sought to be perceived as a popular Muslim interested in local issues and prosperity. He appointed as
-qadi
-a Tunisian
-Maliki
-jurist, instead of an
-Hanafi
-preferred by the Ottomans. He also restricted the legal prerogatives of the
-janissary
-and the Dey. Under Hussein I, support was provided to agriculture, especially planting olive orchards. Public works were undertaken, e.g., mosques and
-madrassa
-(schools). His popularity was demonstrated in 1715 when the
-kapudan-pasha
-of the Ottoman fleet sailed to Tunis with a new governor to replace him; instead Hussein I summoned council, composed of local civil and military leaders, who backed him against the Ottoman Empire, which then acquiesced.
+Many types of pottery have been made from it from the earliest times, and until the 18th century it was the most common type of pottery outside the far East. Earthenware is often made from clay,
+quartz
+and
+feldspar
+.
+Terracotta
+, a type of
+earthenware
+, is a
+clay
+-based unglazed or glazed
+ceramic
+,
 [
 7
 ]
-Wars and crisis to take the throne (1735–1807)
-[
-edit
-]
-In 1735,
-Ali I
-gained access to the throne by dethroning his uncle
-Hussein I
-who was killed by his great-nephew Younès in 1740.
+where the fired body is porous.
 [
 8
 ]
-In 1756, Ali I was in turn overthrown by the two sons of his predecessor who seized Tunis with the help of the governor of
-Constantine
-:
-Muhammad I Rashid
-(1756–1759) and
-Ali II
-(1759–1782).
 [
 9
 ]
-Algerian attempts to overthrow the Beys did not end until 1807, with a victory for the Tunisians led by
-Hammouda I
-.
-[
-8
-]
-Stability and reforms (1807–1869)
-[
-edit
-]
-In the 19th century, the country underwent profound reforms, thanks to the reformist action of
-Kheireddine Pacha
-and his close advisers: the Minister of the Interior
-General Rustum
-, the Minister of Instruction
-General Hussein
-, the Minister
-Bin Diyaf
-and the
-ulama
-Mahmoud Kabadou
-,
-Salem Bouhageb
-and
-Mokhtar Chouikha
-.
-These reforms included the
-abolition of slavery
-, the foundation of the
-military school of Bardo
-in 1840, the
-Sadiki College
-in 1875, and the adoption in 1861 of the first
-constitution
-of
-Africa
-and the
-Arab world
-, becoming a
-constitutional monarchy
-.
 [
 10
 ]
-Financial crisis and foreign interference (1869–1881)
-[
-edit
-]
-The financial crises in the country followed, with
-Mustapha Khaznadar
-as prime minister, which constituted an opportunity for European intervention in Tunisia. Thus, the Financial Commission, an international financial committee, was formed in 1869,
 [
 11
 ]
-under pressure from some European countries, in a circumstance in which the Tunisian financial crisis intensified and it became impossible for the state to pay its foreign debts, which at that time amounted to 125 million
-francs
-.
-This committee was placed under the chairmanship of the reformed minister
-Kheireddine Pacha
-, and later devolved to
-Mustapha Ben Ismail
-, and it also included representatives of the creditor countries (
-Italy
-,
-England
-, and
-France
-). The Commission was one of the manifestations of foreign interference in the internal affairs of Tunisia by subjecting its finances to international control. The country's revenues were divided into two parts, one part allocated to the state's expenditures and the other to the payment of its debts. So the Bey was restricted, he could no longer grant any concession or conclude any loan agreement except with the approval of the Commission, which acted as a Tunisian
-Ministry of Finance
-. This facilitated the conclusion of a
-bilateral treaty
-between Tunisia and France in 1881 stipulating France's protection of Tunisia, and consequently, the
-French protectorate
-was established.
-Government
+Its uses include utilitarian vessels,
+flower pots
+, water and waste water pipes, bricks, and surface embellishment in
+building construction
+.  Terracotta has been a common medium for ceramic art (
+see below
+).
+Stoneware
 [
 edit
 ]
-Bey of
-Tunis
-Beylical Flag
-Muhammad III
-The Bey who was before the French protectorate in 1881
-Details
-First
-monarch
-Hussein I
-Last
-monarch
-Muhammad VIII
-Formation
-15 July 1705
-Abolition
-20 March 1956
-Residence
-Beylical Palace of Bardo
-Appointer
-Hereditary
-Pretender
-Prince Ali
-The Beylik of Tunis was a
-constitutional
-(1861–1864) and
-hereditary monarchy
-with legislative power being exercised by the monarch in conjunction with Supreme Council.
-Bey
+Stoneware
+is a
+vitreous
+or semi-vitreous
+ceramic
+made primarily from stoneware clay or non-
+refractory
+fire clay.
+[
+12
+]
+Stoneware is fired at high temperatures.
+[
+13
+]
+Vitrified or not, it is nonporous;
+[
+14
+]
+it may or may not be glazed.
+[
+15
+]
+One widely recognised definition is from the
+Combined Nomenclature
+of the European Communities, a European industry standard states "Stoneware, which, though dense, impermeable and hard enough to resist scratching by a steel point, differs from
+porcelain
+because it is more
+opaque
+, and normally only partially vitrified. It may be vitreous or semi-vitreous. It is usually coloured grey or brownish because of impurities in the clay used for its manufacture, and is normally glazed."
+[
+14
+]
+Porcelain
 [
 edit
 ]
-The Bey is considered the leader of the
-Husainid dynasty
-, the head of the state, the symbol of its unity, and the protector of its borders. He also exercises power through the government and the Supreme Council, as stipulated in Article 12 of the 1861 Constitution.
-[
-12
-]
-What distinguishes the system of government at that time, is that the monarch is responsible before Supreme Council in accordance with Article 11 of the Constitution, which is one of the first countries in the world to stipulate it.
-[
-12
-]
-Article 13 of the constitution affirmed that the Bey
-(monarch)
-is the supreme commander of the Tunisian armed forces, and Article 9 affirmed as well that the 1857 Fundamental Pact must be respected by him.
-[
-12
-]
-Although the constitution limited his powers, he had the ability to appoint members of the Supreme Council, in addition to the fact that laws are issued in his name.
-The Bey must be the eldest of the Husainid dynasty. The second after him becomes
-Bey El Mahalla
-(Bey of the Camp)
-, which was a title for the
-heir apparent
-to throne. The title came the style of
-Highness
-. The last person to carry this title was
-Prince Husain Bey, Bey al-Mahalla
-.
-Prime minister
-[
-edit
-]
-The
-prime minister of Tunisia
-during the era of the Beylik is the head of the government who was responsible for its affairs and was appointed and dismissed by the
-Bey
-. This office was created in 1759 with the beginning of the rule of
-Ali II
+Porcelain
+is a
+ceramic
+material made by heating materials, generally including
+kaolin
+, in a
+kiln
+to temperatures between
+1,200 and 1,400
+°C (2,200 and 2,600
+°F)
+. The toughness, strength and translucence of porcelain, relative to other types of
+pottery
+, arises mainly from
+vitrification
+and the formation of the mineral
+mullite
+within the body at these high temperatures.
+Properties
+associated with porcelain include low
+permeability
 and
-Rejeb Khaznadar
-was the first to take it, becoming the first prime minister in the history of Tunisia.
-With its creation, this office was the preserve of the
-Mamluks
-of foreign origin who were brought to Tunisia at a young age in order to serve the
-Royal Family
-and the
-Makhzen
-, such as
-Mustapha Khaznadar
+elasticity
+; considerable
+strength
 ,
-Kheireddine Pacha
-and others.
-Mohammed Aziz Bouattour
-is considered the first
-indigenous
-Tunisian to hold the office in 1882; he is the longest-serving prime minister in the history of Tunisia with a period of nearly 25 years, and during his term, the
-French protectorate
-was established in Tunisia.
-The Prime Minister of Tunisia had an important authority in the 19th century, as everything related to the Royal Family was kept in his office according to Article 2 of the Constitution.
+hardness
+,
+toughness
+,
+whiteness
+,
+translucency
+and
+resonance
+; and a high resistance to chemical attack and
+thermal shock
+.  Porcelain has been described as being "completely vitrified, hard, impermeable (even before glazing), white or artificially coloured, translucent (except when of considerable thickness), and resonant". However, the term
+porcelain
+lacks a universal definition and has "been applied in a very unsystematic fashion to substances of diverse kinds which have only certain surface-qualities in common".
 [
-12
+16
 ]
-The Prime Minister, based on Section 9 of the Constitution, prepares the budget presented to him by the
-Ministry of Finance
-and submits it to Parliament in accordance with Article 64.
-[
-12
-]
-Legislature
+Bone china
 [
 edit
 ]
-The Tunisian parliament was called the
-Supreme Council
-(
-Arab
+Bone china
+is a type of
+soft-paste porcelain
+that is composed of
+bone ash
+,
+feldspathic material
+, and
+kaolin
+. It has been defined as
+ware with a translucent body
+containing a minimum of 30% of phosphate derived from animal bone and calculated calcium phosphate.
+[
+14
+]
+[
+clarification needed
+]
+Developed by English potter
+Josiah Spode
+, bone china is known for its high levels of whiteness and translucency,
+[
+17
+]
+and very high mechanical strength and chip resistance.
+[
+18
+]
+Its high strength allows it to be produced in thinner cross-sections than other types of porcelain.
+[
+17
+]
+Like
+stoneware
+it is
+vitrified
+, but is translucent due to differing mineral properties.
+[
+19
+]
+From its initial development and up to the later part of the twentieth century, bone china was almost exclusively an English product, with production being effectively localised in
+Stoke-on-Trent
+.
+[
+18
+]
+Most major English firms made or still make it, including
+Mintons
+,
+Coalport
+,
+Spode
+,
+Royal Crown Derby
+,
+Royal Doulton
+,
+Wedgwood
+and
+Worcester
+.  In the UK, references to "china" or "porcelain" can refer to bone china, and "English porcelain" has been used as a term for it, both in the UK and around the world.
+[
+20
+]
+Fine china is not necessarily bone china, and is a term used to refer to ware which does not contain bone ash.
+[
+14
+]
+Surface treatments
+[
+edit
+]
+Painted
+Capodimonte porcelain
+jar by (or in the style of) Giovanni Caselli with three figures of
+Pulcinella
+from the
+commedia dell'arte
+, 1745–1750. 16.2 cm high
+Further information:
+Pottery §
+Decoration
+Painting
+[
+edit
+]
+Main article:
+China painting
+China painting, or porcelain painting is the decoration of glazed
+porcelain
+objects such as plates, bowls, vases or statues. The body of the object may be
+hard-paste porcelain
+, developed in China in the 7th or 8th century, or
+soft-paste porcelain
+(often
+bone china
+), developed in 18th-century Europe. The broader term ceramic painting includes painted decoration on
+lead-glazed earthenware
+such as
+creamware
+or
+tin-glazed pottery
+such as
+maiolica
+or
+faience
+.  Typically the body is first fired in a kiln to convert it into a hard porous
+biscuit
+.
+Underglaze
+decoration may then be applied, followed by
+ceramic glaze
+, which is fired so it bonds to the body. The glazed porcelain may then be decorated with
+overglaze
+painting and fired again at a lower temperature to bond the paint with the glaze. Decoration may be applied by brush or by
+stenciling
+,
+transfer printing
+,
+lithography
+and
+screen printing
+.
+[
+21
+]
+Slipware
+[
+edit
+]
+Main article:
+Slipware
+Slipware is a type of
+pottery
+identified by its primary decorating process where
+slip
+is placed onto the leather-hard clay body surface before firing by dipping, painting or splashing.  Slip is an aqueous suspension of a clay body, which is a mixture of
+clays
+and other minerals such as
+quartz
+,
+feldspar
+and
+mica
+.  A coating of white or coloured slip, known as an engobe, can be applied to the article to improve its appearance, to give a smoother surface to a rough body, mask an inferior colour or for decorative effect. Slips or engobes can also be applied by painting techniques, in isolation or in several layers and colours.
+Sgraffito
+involves scratching through a layer of coloured
+slip
+to reveal a different colour or the base body underneath. Several layers of slip and/or sgraffito can be done while the pot is still in an unfired state.  One colour of slip can be fired, before a second is applied, and prior to the scratching or incising decoration. This is particularly useful if the base body is not of the desired colour or texture.
+[
+22
+]
+Terra sigillata
+[
+edit
+]
+Ancient Roman pottery
+, mould-decorated
+terra sigillata
+bowl from Gaul (
+Metz
+in France)
+Main articles:
+Ancient Roman pottery
+and
+Terra sigillata
+In sharp contrast to the archaeological usage, in which the term
+terra sigillata
+refers to a whole class of pottery, in contemporary ceramic art, 'terra sigillata' describes only a watery refined slip use
