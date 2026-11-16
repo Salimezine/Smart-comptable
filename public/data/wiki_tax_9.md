@@ -579,7 +579,7 @@ By comparison, with VAT every transaction is reported to the government (either 
 [
 13
 ]
-On the contrary, if a seller accidentally charge sales tax to an intermediate buyer, the end price to the consumer will increase.
+On the contrary, if a seller accidentally charges sales tax to an intermediate buyer, the end price to the consumer will increase.
 [
 13
 ]
@@ -736,7 +736,7 @@ zero-rated
 US trade tariffs with major trading partners
 A country's national VAT may be seen as a
 tariff
-on imported goods. The American Manufacturing Trade Action Coalition in the United States consider VAT charges on US products when VAT rebates are offered for products from other countries to be an
+on imported goods. The American Manufacturing Trade Action Coalition in the United States considers VAT charges on US products when VAT rebates are offered for products from other countries to be an
 unfair trade practice
 . AMTAC claims that so-called "border tax disadvantage" is the greatest contributing factor to the US
 current account deficit
@@ -914,7 +914,7 @@ Manitoba
 Saskatchewan
 (6%).
 Alberta
-and all three territories do not collect either a HST or PST.
+and all three territories do not collect either an HST or a PST.
 Chile
 [
 edit
@@ -927,7 +927,7 @@ From 1998 there was implemented a 18% tax.
 [
 51
 ]
-Since October 2003, the standard VAT rate has been 19%, applying to the majority of goods and some services. However certain items have been subjected to additional tax, for instance, alcoholic beverages (between 20.5= – 31.5% for fermented to distilled products), jewellery (15%), pyrotechnic items (50% or more for the first sale or import) or soft drinks with high sugar (18%). As of 2023, the VAT tax includes majority of services excluding Education, Health and Transport, as well as taxpayers issuing fee receipts.
+Since October 2003, the standard VAT rate has been 19%, applying to the majority of goods and some services. However certain items have been subjected to additional tax, for instance, alcoholic beverages (between 20.5–31.5% for fermented to distilled products), jewellery (15%), pyrotechnic items (50% or more for the first sale or import) or soft drinks with high sugar (18%). As of 2023, the VAT tax includes majority of services excluding Education, Health and Transport, as well as taxpayers issuing fee receipts.
 [
 52
 ]
@@ -4837,7 +4837,7 @@ Israel
 Other
 Yale LUX
 Retrieved from "
-https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1384608680
+https://en.wikipedia.org/w/index.php?title=Value-added_tax&oldid=1385039791
 "
 Categories
 :

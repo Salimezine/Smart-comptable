@@ -731,7 +731,7 @@ Jump to content
 Search
 Search
 Tunisia
-270 languages
+271 languages
 Аԥсшәа
 Acèh
 Адыгабзэ
@@ -821,6 +821,7 @@ Avañe'ẽ
 Bahasa Hulontalo
 Ghanaian Pidgin
 ગુજરાતી
+Farefare
 Gaelg
 Hausa
 客家語 / Hak-kâ-ngî
@@ -1612,7 +1613,7 @@ Tunís
 ) and
 Spanish
 Túnez
-. In this case, 
+. In th
 
 ---
 
@@ -2212,6 +2213,7 @@ Learn how and when to remove this message
 Medina of Tunis
 UNESCO World Heritage Site
 Roofs of the Medina
+Map credit
 Location within Tunisia
 Location
 Tunis
@@ -2555,4 +2557,4 @@ The
 Youssef Dey Mosque
 functioned first as an oratory before becoming a mosque in 1631, and is the first mosque of the
 Ottoman-Turkish
-period. The Hammouda-Pacha mosque, built in 1655, was the second mosque of the Hanefite rite built in Tunis while the Sidi Mahrez mosque is the largest mosque of this type in the country. Built from 1692 to 1697, it is Ottoman-inspired and recalls some Istanbul mosques such as the Blue Mosque (erected between 1609 and
+period. The Hammouda-Pacha mosque, built in 1655, was the second mosque of the Hanefite rite built in Tunis while the Sidi Mahrez mosque is the largest mosque of this type in the country. Built from 1692 to 1697, it is Ottoman-inspired and recalls some Istanbul mosques such as the Blue Mosque (erected betwe

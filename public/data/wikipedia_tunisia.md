@@ -97,7 +97,7 @@ move to sidebar hide
 
 
 # Tunisia
-270 languages
+271 languages
   * [Аԥсшәа](https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Abkhazian")
   * [Acèh](https://ace.wikipedia.org/wiki/Tunisia "Tunisia – Acehnese")
   * [Адыгабзэ](https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – Adyghe")
@@ -187,6 +187,7 @@ move to sidebar hide
   * [Bahasa Hulontalo](https://gor.wikipedia.org/wiki/Tunisia "Tunisia – Gorontalo")
   * [Ghanaian Pidgin](https://gpe.wikipedia.org/wiki/Tunisia "Tunisia – Ghanaian Pidgin")
   * [ગુજરાતી](https://gu.wikipedia.org/wiki/%E0%AA%9F%E0%AB%8D%E0%AA%AF%E0%AB%81%E0%AA%A8%E0%AA%BF%E0%AA%B6%E0%AA%BF%E0%AA%AF%E0%AA%BE "ટ્યુનિશિયા – Gujarati")
+  * [Farefare](https://gur.wikipedia.org/wiki/Tunisia "Tunisia – Frafra")
   * [Gaelg](https://gv.wikipedia.org/wiki/Yn_Tooneesh "Yn Tooneesh – Manx")
   * [Hausa](https://ha.wikipedia.org/wiki/Tunisiya "Tunisiya – Hausa")
   * [客家語 / Hak-kâ-ngî](https://hak.wikipedia.org/wiki/Tunisia "Tunisia – Hakka Chinese")
@@ -1218,7 +1219,7 @@ Hidden categories:
 Search
 Tunisia
 [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia) [ ](https://en.wikipedia.org/wiki/Tunisia)
-270 languages [ Add topic ](https://en.wikipedia.org/wiki/Tunisia)
+271 languages [ Add topic ](https://en.wikipedia.org/wiki/Tunisia)
 [](https://en.wikipedia.org/wiki/Tunisia?action=edit)
   *[v]: View this template
   *[t]: Discuss this template

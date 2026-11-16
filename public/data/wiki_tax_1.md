@@ -529,7 +529,7 @@ Jump to content
 Search
 Search
 Tunisia
-270 languages
+271 languages
 Аԥсшәа
 Acèh
 Адыгабзэ
@@ -619,6 +619,7 @@ Avañe'ẽ
 Bahasa Hulontalo
 Ghanaian Pidgin
 ગુજરાતી
+Farefare
 Gaelg
 Hausa
 客家語 / Hak-kâ-ngî
@@ -1410,7 +1411,7 @@ Tunís
 ) and
 Spanish
 Túnez
-. In this case, 
+. In th
 
 ---
 

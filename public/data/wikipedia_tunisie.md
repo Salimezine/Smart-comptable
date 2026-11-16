@@ -104,7 +104,7 @@ déplacer vers la barre latérale masquer
 
 
 # Tunisie
-270 langues
+271 langues
   * [Аԥсшәа](https://ab.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – abkhaze")
   * [Acèh](https://ace.wikipedia.org/wiki/Tunisia "Tunisia – aceh")
   * [Адыгабзэ](https://ady.wikipedia.org/wiki/%D0%A2%D1%83%D0%BD%D0%B8%D1%81 "Тунис – adyguéen")
@@ -194,6 +194,7 @@ déplacer vers la barre latérale masquer
   * [Bahasa Hulontalo](https://gor.wikipedia.org/wiki/Tunisia "Tunisia – gorontalo")
   * [Ghanaian Pidgin](https://gpe.wikipedia.org/wiki/Tunisia "Tunisia – Ghanaian Pidgin")
   * [ગુજરાતી](https://gu.wikipedia.org/wiki/%E0%AA%9F%E0%AB%8D%E0%AA%AF%E0%AB%81%E0%AA%A8%E0%AA%BF%E0%AA%B6%E0%AA%BF%E0%AA%AF%E0%AA%BE "ટ્યુનિશિયા – goudjarati")
+  * [Farefare](https://gur.wikipedia.org/wiki/Tunisia "Tunisia – gurenne")
   * [Gaelg](https://gv.wikipedia.org/wiki/Yn_Tooneesh "Yn Tooneesh – mannois")
   * [Hausa](https://ha.wikipedia.org/wiki/Tunisiya "Tunisiya – haoussa")
   * [客家語 / Hak-kâ-ngî](https://hak.wikipedia.org/wiki/Tunisia "Tunisia – hakka")
@@ -971,7 +972,7 @@ Article détaillé : [Fêtes et jours fériés en Tunisie](https://fr.wikipedia.
   26. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-27 "Revenir plus haut") « [Principaux indicateurs de l'agriculture tunisienne : les ressources en terre](https://web.archive.org/web/20130604064020/http://www.agriportail.tn/index.php?option=com_content&task=view&id=98&Itemid=62) », sur _agriportail.tn_ (version du 4 juin 2013 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
   27. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-28 "Revenir plus haut") (en) R.H. Hughes et J.S. Hughes, A Directory of African Wetlands, Gland, [Union internationale pour la conservation de la nature](https://fr.wikipedia.org/wiki/Union_internationale_pour_la_conservation_de_la_nature "Union internationale pour la conservation de la nature"), 1992, 820 p. ([ISBN](https://fr.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number") [978-2880329495](https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Ouvrages_de_r%C3%A9f%C3%A9rence/978-2880329495 "Spécial:Ouvrages de référence/978-2880329495"), [lire en ligne](https://books.google.com/books?id=VLjafeXa3gMC&pg=PA75) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DVLjafeXa3gMC%26pg%3DPA75 "archive sur Wikiwix")]), p. 75.
   28. [1](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cbd_29-0) [2](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-cbd_29-1) [Ministère de l'Environnement](https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l'Environnement_\(Tunisie\) "Ministère de l'Environnement \(Tunisie\)"), « [5e rapport national sur la biodiversité](https://www.cbd.int/doc/world/tn/tn-nr-05-fr.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.cbd.int%2Fdoc%2Fworld%2Ftn%2Ftn-nr-05-fr.pdf "archive sur Wikiwix")] » [PDF], sur [Convention sur la diversité biologique](https://fr.wikipedia.org/wiki/Convention_sur_la_diversit%C3%A9_biologique "Convention sur la diversité biologique"), juillet 2014 (consulté le 28 février 2026), p. 5.
-  29. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-30 "Revenir plus haut") « [Nouveaux chiffres sur le littoral tunisien](https://web.archive.org/web/20161108100410/https://www.apal.nat.tn/site_web/indicateurs/nouveaux-chiffres%20_littorale-2015.pdf) » [PDF], sur _[Agence de protection et d'aménagement du littoral](https://fr.wikipedia.org/wiki/Agence_de_protection_et_d'am%C3%A9nagement_du_littoral "Agence de protection et d'aménagement du littoral")_ , p. 2 (archivé sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
+  29. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-30 "Revenir plus haut") « [Nouveaux chiffres sur le littoral tunisien](https://web.archive.org/web/20161108100410/https://www.apal.nat.tn/site_web/indicateurs/nouveaux-chiffres%20_littorale-2015.pdf) » [PDF], sur _[Agence de protection et d'aménagement du littoral](https://fr.wikipedia.org/wiki/Agence_de_protection_et_d'am%C3%A9nagement_du_littoral "Agence de protection et d'aménagement du littoral")_ , p. 2 (version du 8 novembre 2016 sur [archive.org](https://fr.wikipedia.org/wiki/Internet_Archive "Internet Archive")).
   30. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-31 "Revenir plus haut") « [Projet SMAP III Tunisie](https://awsassets.panda.org/downloads/brochure_smap_iii_tunisie___june_2006___final.pdf) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fawsassets.panda.org%2Fdownloads%2Fbrochure_smap_iii_tunisie___june_2006___final.pdf "archive sur Wikiwix")] » [PDF], sur awsassets.panda.org, juin 2006 (consulté le 28 février 2026), p. 2.
   31. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-32 "Revenir plus haut") « [Tunisie : géographie physique](https://www.larousse.fr/encyclopedie/divers/Tunisie_g%C3%A9ographie_physique/186996) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.larousse.fr%2Fencyclopedie%2Fdivers%2FTunisie_g%25C3%25A9ographie_physique%2F186996 "archive sur Wikiwix")] », sur [Éditions Larousse](https://fr.wikipedia.org/wiki/%C3%89ditions_Larousse "Éditions Larousse") (consulté le 28 février 2026).
   32. [↑](https://fr.wikipedia.org/wiki/Tunisie#cite_ref-33 "Revenir plus haut") « [Le pays en un coup d'œil](https://www.fao.org/tunisie/notre-bureau/lesotho-at-a-glance/en/) [[archive](https://archive.wikiwix.com/cache/?url=https%3A%2F%2Fwww.fao.org%2Ftunisie%2Fnotre-bureau%2Flesotho-at-a-glance%2Fen%2F "archive sur Wikiwix")] », sur [Organisation des Nations unies pour l'alimentation et l'agriculture](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l'alimentation_et_l'agriculture "Organisation des Nations unies pour l'alimentation et l'agriculture") (consulté le 28 février 2026).
@@ -2130,7 +2131,7 @@ Wikipedia® est une marque déposée de la [Wikimedia Foundation, Inc.](https://
 Rechercher
 Tunisie
 [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie) [ ](https://fr.wikipedia.org/wiki/Tunisie)
-270 langues [ Ajouter un sujet ](https://fr.wikipedia.org/wiki/Tunisie)
+271 langues [ Ajouter un sujet ](https://fr.wikipedia.org/wiki/Tunisie)
   *[(ar)]: Langue : arabe
   *[92e]: Quatre-vingt-douzième (nonante-deuxième)
   *[hab.]: habitants

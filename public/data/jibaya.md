@@ -34,7 +34,7 @@ Menu
   * [CONTACT](https://jibaya.tn/contact/)
 
 
-[ FR ](https://jibaya.tn/ "FR")
+[FR](https://jibaya.tn/ "FR")
 [ ![logojibaya-removebg-preview](https://jibaya.tn/wp-content/uploads/2023/03/logojibaya-removebg-preview.png) ](https://jibaya.tn)
   * [ADMINISTRATION FISCALE](https://jibaya.tn/)
     * [Direction Générale des Impôts](https://jibaya.tn/dgi/)
@@ -68,7 +68,7 @@ Menu
   * [CONTACT](https://jibaya.tn/contact/)
 
 
-[ FR ](https://jibaya.tn/ "FR")
+[FR](https://jibaya.tn/ "FR")
 ## Création d'un nouveau bureau de contrôle des impôts à Aïn Zaghouan
 [ En savoir plus ](https://jibaya.tn/blog/creation-dun-nouveau-bureau-de-controle-des-impots-a-ain-zaghouan/)
 ## Nouveau !
@@ -93,21 +93,21 @@ Bienvenue dans votre espace professionnel ! Déclarez vos revenus, gérez vos ob
 ![](https://jibaya.tn/wp-content/uploads/2023/12/7-1.png)
 ![](https://jibaya.tn/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-23-at-11.14.39-AM.jpeg)
 ## Actualités et communiqués 
+[](https://jibaya.tn/blog/la-fiscalite-10-10-une-realisation-educative-et-fiscale-record-qui-ancre-la-culture-citoyenne-chez-plus-de-20-000-eleves-tunisiens/)
+## [La Fiscalité 10/10 » : Une réalisation éducative et fiscale record qui ancre la culture citoyenne chez plus de 20 000 élèves tunisiens](https://jibaya.tn/blog/la-fiscalite-10-10-une-realisation-educative-et-fiscale-record-qui-ancre-la-culture-citoyenne-chez-plus-de-20-000-eleves-tunisiens/ "La Fiscalité 10/10 » : Une réalisation éducative et fiscale record qui ancre la culture citoyenne chez plus de 20 000 élèves tunisiens")
+11/11/2026
+La Direction Générale des Impôts (DGI), en étroite collaboration avec...
+[→](https://jibaya.tn/blog/la-fiscalite-10-10-une-realisation-educative-et-fiscale-record-qui-ancre-la-culture-citoyenne-chez-plus-de-20-000-eleves-tunisiens/)
+[](https://jibaya.tn/blog/la-direction-generale-des-impots-participe-a-la-16e-edition-du-siat-2026/)
+## [La Direction Générale des Impôts participe à la 16e édition du SIAT 2026](https://jibaya.tn/blog/la-direction-generale-des-impots-participe-a-la-16e-edition-du-siat-2026/ "La Direction Générale des Impôts participe à la 16e édition du SIAT 2026")
+30/10/2026
+À l’instar des éditions précédentes, la Direction Générale des Impôts...
+[→](https://jibaya.tn/blog/la-direction-generale-des-impots-participe-a-la-16e-edition-du-siat-2026/)
 [](https://jibaya.tn/blog/creation-dun-nouveau-bureau-de-controle-des-impots-a-ain-zaghouan/)
 ## [Création d’un nouveau bureau de contrôle des impôts à Aïn Zaghouan](https://jibaya.tn/blog/creation-dun-nouveau-bureau-de-controle-des-impots-a-ain-zaghouan/ "Création d’un nouveau bureau de contrôle des impôts à Aïn Zaghouan")
 07/10/2026
 En vertu d’une décision émise par la ministre des Finances...
 [→](https://jibaya.tn/blog/creation-dun-nouveau-bureau-de-controle-des-impots-a-ain-zaghouan/)
-[](https://jibaya.tn/blog/avis-nouvelles-fonctionnalites-a-la-plateforme-tej/)
-## [Avis: Nouvelles fonctionnalités à la plateforme TEJ](https://jibaya.tn/blog/avis-nouvelles-fonctionnalites-a-la-plateforme-tej/ "Avis: Nouvelles fonctionnalités à la plateforme TEJ")
-09/09/2026
-Dans le cadre de sa stratégie de digitalisation de l’administration...
-[→](https://jibaya.tn/blog/avis-nouvelles-fonctionnalites-a-la-plateforme-tej/)
-[](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/)
-## [Plateforme DEXEL: votre matricule fiscal plus rapide, plus facile et plus sûre](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/ "Plateforme DEXEL: votre matricule fiscal plus rapide, plus facile et plus sûre")
-12/08/2026
-Désormais, les particuliers et les professionnels peuvent effectuer toutes les...
-[→](https://jibaya.tn/blog/plateforme-dexel-votre-matricule-fiscal-plus-rapide-plus-facile-et-plus-sure/)
 Load More
 [VOIR TOUS LES ARTICLES ->](https://jibaya.tn/actualites/)
 [ ](http://www.cimf.tn/)
